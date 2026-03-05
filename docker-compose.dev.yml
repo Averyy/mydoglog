@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres:16
+    container_name: mydoglog-db-dev
+    restart: unless-stopped
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_DB: mydoglog
+      POSTGRES_USER: mydoglog
+      POSTGRES_PASSWORD: password
+    volumes:
+      - mydoglog_pg_dev_data_persistent:/var/lib/postgresql/data
+
+volumes:
+  mydoglog_pg_dev_data_persistent:

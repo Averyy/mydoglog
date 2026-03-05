@@ -1,0 +1,607 @@
+{
+  "brand": "Now Fresh",
+  "website_url": "https://www.nowfresh.com",
+  "scraped_at": "2026-03-04T03:17:11.447700+00:00",
+  "scraper_version": "0.1.0",
+  "stats": {
+    "product_count": 22,
+    "by_channel": {
+      "retail": 22
+    },
+    "by_type": {
+      "wet": 4,
+      "dry": 18
+    }
+  },
+  "products": [
+    {
+      "name": "Small Breed Shredded Chicken & Broth Grain-Free Wet Dog Food",
+      "brand": "Now Fresh",
+      "url": "https://www.nowfresh.com/en-ca/dog-food/wet/small-breed-chicken-broth-blend-grain-free-wet-food",
+      "channel": "retail",
+      "product_type": "wet",
+      "product_line": "Small Breed",
+      "ingredients_raw": "de-boned chicken, chicken broth, sunflower oil, tapioca, calcium sulphate, sodium hexametaphosphate, marine microalgae oil, flaxseed, choline chloride, minerals (zinc proteinate, ferrous fumarate, sodium selenite, copper proteinate, manganese proteinate, potassium iodide), salt, vitamins (vitamin E supplement, thiamine mononitrate, niacin, vitamin A supplement, d-calcium pantothenate, pyridoxine hydrochloride, riboflavin, vitamin B12 supplement, vitamin D3 supplement, folic acid), potassium chloride, magnesium sulphate, parsley, taurine",
+      "guaranteed_analysis": {
+        "crude_protein_min": 11.0,
+        "crude_fat_min": 3.5,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 82.0,
+        "taurine_min": 0.01,
+        "omega_3_min": 0.3
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "848 kcal/kg, 67 kcal/pouch",
+      "images": [
+        "/products/now-fresh/now-fresh-wet-small-breed-shredded-chicken-broth-grain-free-wet-dog-food.jpg"
+      ],
+      "source_id": "FG00705"
+    },
+    {
+      "name": "Senior Chicken & Salmon Pâté Grain-Free Wet Dog Food",
+      "brand": "Now Fresh",
+      "url": "https://www.nowfresh.com/en-ca/dog-food/wet/senior-dogs-chicken-salmon-pate-grain-free-wet-food",
+      "channel": "retail",
+      "product_type": "wet",
+      "product_line": "Senior",
+      "ingredients_raw": "de-boned chicken, chicken broth, de-boned duck, de-boned salmon, tapioca, carrots, pumpkin, sodium tripolyphosphate, calcium sulphate, flaxseed, cranberries, potassium chloride, psyllium husk, choline chloride, marine microalgae oil, minerals (zinc proteinate, ferrous fumarate, copper proteinate, manganese proteinate, potassium iodide), vitamins (vitamin E supplement, thiamine mononitrate, niacin, vitamin A supplement, d-calcium pantothenate, pyridoxine hydrochloride, riboflavin, vitamin B12 supplement, vitamin D3 supplement, folic acid), magnesium sulphate, salt, L-carnitine, New Zealand green mussels, taurine",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 78.0,
+        "taurine_min": 0.01,
+        "omega_3_min": 0.08,
+        "l_carnitine_min": 80.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1032 kcal/kg, 81 kcal/pouch",
+      "images": [
+        "/products/now-fresh/now-fresh-wet-senior-chicken-salmon-p-t-grain-free-wet-dog-food.jpg"
+      ],
+      "source_id": "FG00703"
+    },
+    {
+      "name": "All Ages & Breeds Ground Chicken & Rice Wet Dog Food with Grains",
+      "brand": "Now Fresh",
+      "url": "https://www.nowfresh.com/en-ca/dog-food/wet/all-ages-breeds-chicken-rice-dinner-wet-food",
+      "channel": "retail",
+      "product_type": "wet",
+      "product_line": "All Ages & Breeds",
+      "ingredients_raw": "de-boned chicken, chicken broth, carrots, peas, brown rice, tapioca, calcium sulphate, sodium tripolyphosphate, flaxseed, salt, marine microalgae oil, potassium chloride, minerals (zinc proteinate, ferrous fumarate, sodium selenite, copper proteinate, manganese proteinate, potassium iodide), choline chloride, vitamins (vitamin E supplement, thiamine mononitrate, niacin, vitamin A supplement, d-calcium pantothenate, pyridoxine hydrochloride, riboflavin, vitamin B12 supplement, vitamin D3 supplement, folic acid), magnesium sulphate, taurine",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.0,
+        "crude_fat_min": 6.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 78.0,
+        "taurine_min": 0.01,
+        "omega_3_min": 0.1
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1170 kcal/kg, 92 kcal/pouch",
+      "images": [
+        "/products/now-fresh/now-fresh-wet-all-ages-breeds-ground-chicken-rice-wet-dog-food-with-grains.jpg"
+      ],
+      "source_id": "FG00704"
+    },
+    {
+      "name": "All Ages & Breeds Ground Beef & Rice Wet Dog Food with Grains",
+      "brand": "Now Fresh",
+      "url": "https://www.nowfresh.com/en-ca/dog-food/wet/all-ages-breeds-beef-rice-dinner-wet-food",
+      "channel": "retail",
+      "product_type": "wet",
+      "product_line": "All Ages & Breeds",
+      "ingredients_raw": "de-boned beef, beef broth, sweet potatoes, green beans, brown rice, calcium sulphate, tapioca, sodium tripolyphosphate, sunflower oil, flaxseed, potassium chloride, choline chloride, salt, vitamins (vitamin E supplement, thiamine mononitrate, niacin, vitamin A supplement, d-calcium pantothenate, pyridoxine hydrochloride, riboflavin, vitamin B12 supplement, vitamin D3 supplement, folic acid), minerals (zinc proteinate, ferrous fumarate, sodium selenite, copper proteinate, manganese proteinate, potassium iodide), magnesium sulphate, marine microalgae oil, taurine",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.0,
+        "crude_fat_min": 7.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 78.0,
+        "taurine_min": 0.01,
+        "omega_3_min": 0.05,
+        "omega_6_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1170 kcal/kg, 92 kcal/pouch",
+      "images": [
+        "/products/now-fresh/now-fresh-wet-all-ages-breeds-ground-beef-rice-wet-dog-food-with-grains.jpg"
+      ],
+      "source_id": "FG00702"
+    },
+    {
+      "name": "Adult Good Gravy Beef Coated in Bone Broth for Dogs",
+      "brand": "Now Fresh",
+      "url": "https://www.nowfresh.com/en-ca/dog-food/good-gravy/beef-recipe-for-adults",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Adult",
+      "ingredients_raw": "de-boned beef, peas, potatoes, rye, oatmeal, pea flour, whole dried egg, canola oil (preserved with mixed tocopherols), flaxseed, natural flavour, coconut oil (preserved with mixed tocopherols), millet, monocalcium phosphate, calcium carbonate, alfalfa, quinoa, sorghum, tomato, guar gum, carob powder, turkey bone broth, pumpkin, squash, sweet potatoes, carrots, lentils, broccoli, blueberries, papayas, blackberries, pomegranate, bananas, cranberries, cottage cheese, apples, pea fibre, salt, DL-methionine, dried chicory root, choline chloride, potassium chloride, vitamins (vitamin E supplement, L-ascorbyl-2-polyphosphate (a source of vitamin C), niacin, d-calcium pantothenate, vitamin A supplement, thiamine mononitrate, riboflavin, beta-carotene, vitamin B12 supplement, biotin, pyridoxine hydrochloride, vitamin D3 supplement, folic acid), minerals (ferrous sulphate, zinc proteinate, iron proteinate, selenium yeast, zinc oxide, copper sulphate, manganese proteinate, copper proteinate, manganous oxide, calcium iodate), taurine, dried Lactobacillus acidophilus fermentation product, dried Enterococcus faecium fermentation product, L-lysine, yucca schidigera extract, L-carnitine, dried rosemary",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "calcium_min": 0.9,
+        "phosphorus_min": 0.6,
+        "l_carnitine_min": 100.0,
+        "taurine_min": 0.1,
+        "omega_6_min": 1.4,
+        "omega_3_min": 0.7
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3703 kcal/kg, 407 kcal/cup",
+      "images": [
+        "/products/now-fresh/now-fresh-dry-adult-good-gravy-beef-coated-in-bone-broth-for-dogs.jpg"
+      ],
+      "source_id": "FG00654"
+    },
+    {
+      "name": "Senior Good Gravy Beef Coated in Bone Broth for Dogs",
+      "brand": "Now Fresh",
+      "url": "https://www.nowfresh.com/en-ca/dog-food/good-gravy/beef-recipe-for-seniors",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Senior",
+      "ingredients_raw": "de-boned beef, peas, oatmeal, rye, whole dried egg, potatoes, pea flour, flaxseed, pea fibre, apples, natural flavour, canola oil (preserved with mixed tocopherols), calcium carbonate, millet, monocalcium phosphate, coconut oil (preserved with mixed tocopherols), alfalfa, quinoa, sorghum, tomato, guar gum, carob powder, turkey bone broth, pumpkin, squash, sweet potatoes, carrots, lentils, broccoli, blueberries, papayas, blackberries, pomegranate, bananas, cranberries, cottage cheese, salt, DL-methionine, marine microalgae oil, dried chicory root, choline chloride, potassium chloride, vitamins (vitamin E supplement, L-ascorbyl-2-polyphosphate (a source of vitamin C), niacin, d-calcium pantothenate, vitamin A supplement, thiamine mononitrate, riboflavin, beta-carotene, vitamin B12 supplement, biotin, pyridoxine hydrochloride, vitamin D3 supplement, folic acid), minerals (ferrous sulphate, zinc proteinate, iron proteinate, selenium yeast, zinc oxide, copper sulphate, manganese proteinate, copper proteinate, manganous oxide, calcium iodate), taurine, dried Lactobacillus acidophilus fermentation product, dried Enterococcus faecium fermentation product, L-lysine, glucosamine hydrochloride, New Zealand green mussels, yucca schidigera extract, chondroitin sulphate, L-carnitine, dried rosemary",
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 7.5,
+        "moisture_max": 10.0,
+        "calcium_min": 0.8,
+        "phosphorus_min": 0.4,
+        "glucosamine_min": 400.0,
+        "chondroitin_min": 100.0,
+        "l_carnitine_min": 100.0,
+        "taurine_min": 0.1,
+        "omega_6_min": 1.0,
+        "omega_3_min": 0.8
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3410 kcal/kg, 375 kcal/cup",
+      "images": [
+        "/products/now-fresh/now-fresh-dry-senior-good-gravy-beef-coated-in-bone-broth-for-dogs.jpg"
+      ],
+      "source_id": "FG00657"
+    },
+    {
+      "name": "Small Breed Adult Good Gravy Salmon Coated in Bone Broth for Dogs",
+      "brand": "Now Fresh",
+      "url": "https://www.nowfresh.com/en-ca/dog-food/good-gravy/premium-quality-salmon-recipe-for-small-breed-adult-dogs",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Small Breed Adult",
+      "ingredients_raw": "de-boned salmon, peas, oatmeal, rye, potatoes, pea flour, whole dried egg, canola oil (preserved with mixed tocopherols), flaxseed, natural flavour, coconut oil (preserved with mixed tocopherols), pea fibre, calcium carbonate, apples, monocalcium phosphate, millet, quinoa, sorghum, alfalfa, tomato, guar gum, sodium tripolyphosphate, carob powder, turkey bone broth, pumpkin, squash, sweet potatoes, carrots, lentils, broccoli, blueberries, papayas, blackberries, pomegranate, bananas, cranberries, salt, dried chicory root, choline chloride, parsley, peppermint, green tea extract, vitamins (vitamin E supplement, L-ascorbyl-2-polyphosphate (a source of vitamin C), niacin, d-calcium pantothenate, vitamin A supplement, thiamine mononitrate, riboflavin, beta-carotene, vitamin B12 supplement, biotin, pyridoxine hydrochloride, vitamin D3 supplement, folic acid), minerals (ferrous sulphate, zinc proteinate, iron proteinate, selenium yeast, zinc oxide, copper sulphate, manganese proteinate, copper proteinate, manganous oxide, calcium iodate), taurine, dried Lactobacillus acidophilus fermentation product, dried Enterococcus faecium fermentation product, DL-methionine, L-lysine, yucca schidigera extract, L-carnitine, dried rosemary",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 0.9,
+        "phosphorus_min": 0.6,
+        "l_carnitine_min": 100.0,
+        "taurine_min": 0.1,
+        "omega_6_min": 2.0,
+        "omega_3_min": 1.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3735 kcal/kg, 411 kcal/cup",
+      "images": [
+        "/products/now-fresh/now-fresh-dry-small-breed-adult-good-gravy-salmon-coated-in-bone-broth-for-dogs.jpg"
+      ],
+      "source_id": "FG00650"
+    },
+    {
+      "name": "Adult Good Gravy Salmon Coated in Bone Broth for Dogs",
+      "brand": "Now Fresh",
+      "url": "https://www.nowfresh.com/en-ca/dog-food/good-gravy/premium-quality-salmon-recipe-for-adult-dogs",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Adult",
+      "ingredients_raw": "de-boned salmon, peas, oatmeal, rye, potatoes, pea flour, canola oil (preserved with mixed tocopherols), whole dried egg, natural flavour, flaxseed, coconut oil (preserved with mixed tocopherols), pea fibre, monocalcium phosphate, calcium carbonate, millet, alfalfa, quinoa, sorghum, tomato, guar gum, carob powder, turkey bone broth, pumpkin, squash, sweet potatoes, carrots, lentils, broccoli, blueberries, papayas, blackberries, pomegranate, bananas, cranberries, cottage cheese, apples, salt, dried chicory root, choline chloride, vitamins (vitamin E supplement, L-ascorbyl-2-polyphosphate (a source of vitamin C), niacin, d-calcium pantothenate, vitamin A supplement, thiamine mononitrate, riboflavin, beta-carotene, vitamin B12 supplement, biotin, pyridoxine hydrochloride, vitamin D3 supplement, folic acid), minerals (ferrous sulphate, zinc proteinate, iron proteinate, selenium yeast, zinc oxide, copper sulphate, manganese proteinate, copper proteinate, manganous oxide, calcium iodate), taurine, dried Lactobacillus acidophilus fermentation product, dried Enterococcus faecium fermentation product, DL-methionine, L-lysine, yucca schidigera extract, potassium chloride, L-carnitine, dried rosemary",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "calcium_min": 0.9,
+        "phosphorus_min": 0.6,
+        "l_carnitine_min": 100.0,
+        "taurine_min": 0.1,
+        "omega_6_min": 1.8,
+        "omega_3_min": 1.1
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3685 kcal/kg, 405 kcal/cup",
+      "images": [
+        "/products/now-fresh/now-fresh-dry-adult-good-gravy-salmon-coated-in-bone-broth-for-dogs.jpg"
+      ],
+      "source_id": "FG00642"
+    },
+    {
+      "name": "Small Breed Adult Good Gravy Chicken Coated in Bone Broth for Dogs",
+      "brand": "Now Fresh",
+      "url": "https://www.nowfresh.com/en-ca/dog-food/good-gravy/chicken-recipe-for-small-breed-adults",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Small Breed Adult",
+      "ingredients_raw": "de-boned chicken, peas, potatoes, oatmeal, rye, pea flour, canola oil (preserved with mixed tocopherols), natural flavour, whole dried egg, flaxseed, coconut oil (preserved with mixed tocopherols), calcium carbonate, monocalcium phosphate, apples, pea fibre, millet, quinoa, sorghum, alfalfa, tomato, guar gum, sodium tripolyphosphate, carob powder, turkey bone broth, pumpkin, squash, sweet potatoes, carrots, lentils, broccoli, blueberries, papayas, blackberries, pomegranate, bananas, cranberries, salt, dried chicory root, choline chloride, parsley, peppermint, green tea extract, vitamins (vitamin E supplement, L-ascorbyl-2-polyphosphate (a source of vitamin C), niacin, d-calcium pantothenate, vitamin A supplement, thiamine mononitrate, riboflavin, beta-carotene, vitamin B12 supplement, biotin, pyridoxine hydrochloride, vitamin D3 supplement, folic acid), minerals (ferrous sulphate, zinc proteinate, iron proteinate, selenium yeast, zinc oxide, copper sulphate, manganese proteinate, copper proteinate, manganous oxide, calcium iodate), taurine, dried Lactobacillus acidophilus fermentation product, dried Enterococcus faecium fermentation product, DL-methionine, L-lysine, potassium chloride, yucca schidigera extract, L-carnitine, dried rosemary",
+      "guaranteed_analysis": {
+        "crude_protein_min": 27.0,
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.7,
+        "l_carnitine_min": 100.0,
+        "taurine_min": 0.1,
+        "omega_6_min": 2.0,
+        "omega_3_min": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3735 kcal/kg, 411 kcal/cup",
+      "images": [
+        "/products/now-fresh/now-fresh-dry-small-breed-adult-good-gravy-chicken-coated-in-bone-broth-for-dogs.jpg"
+      ],
+      "source_id": "FG00646"
+    },
+    {
+      "name": "Adult Good Gravy Chicken Coated in Bone Broth for Dogs",
+      "brand": "Now Fresh",
+      "url": "https://www.nowfresh.com/en-ca/dog-food/good-gravy/cage-free-chicken-recipe-for-adult-dogs",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Adult",
+      "ingredients_raw": "de-boned chicken, peas, oatmeal, rye, potatoes, pea flour, whole dried egg, canola oil (preserved with mixed tocopherols), flaxseed, natural flavour, coconut oil (preserved with mixed tocopherols), monocalcium phosphate, millet, calcium carbonate, alfalfa, quinoa, sorghum, tomato, guar gum, carob powder, turkey bone broth, pumpkin, squash, sweet potatoes, carrots, lentils, broccoli, blueberries, papayas, blackberries, pomegranate, bananas, cranberries, cottage cheese, apples, pea fibre, salt, dried chicory root, choline chloride, vitamins (vitamin E supplement, L-ascorbyl-2-polyphosphate (a source of vitamin C), niacin, d-calcium pantothenate, vitamin A supplement, thiamine mononitrate, riboflavin, beta-carotene, vitamin B12 supplement, biotin, pyridoxine hydrochloride, vitamin D3 supplement, folic acid), minerals (ferrous sulphate, zinc proteinate, iron proteinate, selenium yeast, zinc oxide, copper sulphate, manganese proteinate, copper proteinate, manganous oxide, calcium iodate), taurine, dried Lactobacillus acidophilus fermentation product, dried Enterococcus faecium fermentation product, DL-methionine, L-lysine, yucca schidigera extract, potassium chloride, L-carnitine, dried rosemary",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.7,
+        "l_carnitine_min": 100.0,
+        "taurine_min": 0.1,
+        "omega_6_min": 2.0,
+        "omega_3_min": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3685 kcal/kg, 405 kcal/cup",
+      "images": [
+        "/products/now-fresh/now-fresh-dry-adult-good-gravy-chicken-coated-in-bone-broth-for-dogs.jpg"
+      ],
+      "source_id": "FG00638"
+    },
+    {
+      "name": "Small Breed Senior Turkey, Salmon & Duck Grain-Free Dry Dog Food",
+      "brand": "Now Fresh",
+      "url": "https://www.nowfresh.com/en-ca/dog-food/dry/grain-free-small-breed-senior-recipe-with-turkey-salmon-duck",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Small Breed Senior",
+      "ingredients_raw": "de-boned turkey, potatoes, peas, potato flour, pea flour, whole dried egg, flaxseed, natural flavour, canola oil (preserved with mixed tocopherols), de-boned salmon, de-boned duck, pea fibre, calcium carbonate, apples, tomato, coconut oil (preserved with mixed tocopherols), suncured alfalfa, carrots, pumpkin, sweet potatoes, squash, bananas, blueberries, cranberries, blackberries, pomegranate, papayas, lentils, broccoli, sodium tripolyphosphate, dried chicory root, salt, choline chloride, taurine, vitamins (vitamin E supplement, L-ascorbyl-2-polyphosphate (a source of vitamin C), niacin, d-calcium pantothenate, vitamin A supplement, thiamine mononitrate, riboflavin, beta-carotene, vitamin B12 supplement, biotin, pyridoxine hydrochloride, vitamin D3 supplement, folic acid), minerals (ferrous sulphate, zinc proteinate, iron proteinate, selenium yeast, zinc oxide, copper sulphate, manganese proteinate, copper proteinate, manganous oxide, calcium iodate), dried Lactobacillus acidophilus fermentation product, dried Enterococcus faecium fermentation product, DL-methionine, L-lysine, monocalcium phosphate, glucosamine hydrochloride, New Zealand green mussels, chondroitin sulphate, parsley, peppermint, green tea extract, L-carnitine, dried rosemary",
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 5.5,
+        "moisture_max": 10.0,
+        "phosphorus_min": 0.4,
+        "glucosamine_min": 400.0,
+        "chondroitin_min": 100.0,
+        "l_carnitine_min": 100.0,
+        "taurine_min": 0.1,
+        "omega_6_min": 2.0,
+        "omega_3_min": 0.7
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3406 kcal/kg, 375 kcal/cup",
+      "images": [
+        "/products/now-fresh/now-fresh-dry-small-breed-senior-turkey-salmon-duck-grain-free-dry-dog-food.jpg"
+      ],
+      "source_id": "2304204"
+    },
+    {
+      "name": "Small Breed Puppy Turkey, Salmon & Duck Grain-Free Dry Dog Food",
+      "brand": "Now Fresh",
+      "url": "https://www.nowfresh.com/en-ca/dog-food/dry/grain-free-small-breed-puppy-recipe-with-turkey-salmon-duck",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Small Breed Puppy",
+      "ingredients_raw": "de-boned turkey, whole dried egg, peas, pea flour, potatoes, potato flour, canola oil (preserved with mixed tocopherols), natural flavour, monocalcium phosphate, coconut oil (preserved with mixed tocopherols), de-boned salmon, de-boned duck, flaxseed, apples, pea fibre, calcium carbonate, suncured alfalfa, tomato, carrots, pumpkin, sweet potatoes, squash, bananas, blueberries, cranberries, blackberries, pomegranate, papayas, lentils, broccoli, salt, marine microalgae oil, dried chicory root, choline chloride, taurine, vitamins (vitamin E supplement, L-ascorbyl-2-polyphosphate (a source of vitamin C), niacin, d-calcium pantothenate, vitamin A supplement, thiamine mononitrate, riboflavin, beta-carotene, vitamin B12 supplement, biotin, pyridoxine hydrochloride, vitamin D3 supplement, folic acid), minerals (ferrous sulphate, zinc proteinate, iron proteinate, selenium yeast, zinc oxide, copper sulphate, manganese proteinate, copper proteinate, manganous oxide, calcium iodate), dried Lactobacillus acidophilus fermentation product, dried Enterococcus faecium fermentation product, DL-methionine, L-lysine, potassium chloride, L-carnitine, dried rosemary",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.0,
+        "crude_fat_min": 18.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "epa_min": 0.2,
+        "calcium_min": 1.1,
+        "phosphorus_min": 1.0,
+        "l_carnitine_min": 100.0,
+        "taurine_min": 0.1,
+        "omega_6_min": 2.8,
+        "omega_3_min": 0.8
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3773 kcal/kg, 415 kcal/cup",
+      "images": [
+        "/products/now-fresh/now-fresh-dry-small-breed-puppy-turkey-salmon-duck-grain-free-dry-dog-food.jpg"
+      ],
+      "source_id": "2304104"
+    },
+    {
+      "name": "Small Breed Adult Trout, Salmon & Herring Grain-Free Dry Dog Food",
+      "brand": "Now Fresh",
+      "url": "https://www.nowfresh.com/en-ca/dog-food/dry/grain-free-small-breed-adult-recipe-with-trout-salmon-herring",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Small Breed Adult",
+      "ingredients_raw": "de-boned trout, whole dried egg, potatoes, peas, potato flour, pea flour, flaxseed, canola oil (preserved with mixed tocopherols), natural flavour, de-boned salmon, de-boned herring, coconut oil (preserved with mixed tocopherols), calcium carbonate, pea fibre, apples, monocalcium phosphate, tomato, suncured alfalfa, carrots, pumpkin, sweet potatoes, squash, bananas, blueberries, cranberries, blackberries, pomegranate, papayas, lentils, broccoli, salt, sodium tripolyphosphate, dried chicory root, choline chloride, vitamins (vitamin E supplement, L-ascorbyl-2-polyphosphate (a source of vitamin C), niacin, d-calcium pantothenate, vitamin A supplement, thiamine mononitrate, riboflavin, beta-carotene, vitamin B12 supplement, biotin, pyridoxine hydrochloride, vitamin D3 supplement, folic acid), minerals (ferrous sulphate, zinc proteinate, iron proteinate, selenium yeast, zinc oxide, copper sulphate, manganese proteinate, copper proteinate, manganous oxide, calcium iodate), taurine, dried Lactobacillus acidophilus fermentation product, dried Enterococcus faecium fermentation product, DL-methionine, L-lysine, parsley, peppermint, green tea extract, yucca schidigera extract, dried rosemary",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "calcium_min": 0.9,
+        "phosphorus_min": 0.5,
+        "taurine_min": 0.1,
+        "omega_6_min": 1.8,
+        "omega_3_min": 0.6
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3657 kcal/kg, 421 kcal/cup",
+      "images": [
+        "/products/now-fresh/now-fresh-dry-small-breed-adult-trout-salmon-herring-grain-free-dry-dog-food.jpg"
+      ],
+      "source_id": "2304304"
+    },
+    {
+      "name": "Small Breed Adult Turkey, Salmon & Duck Grain-Free Dry Dog Food",
+      "brand": "Now Fresh",
+      "url": "https://www.nowfresh.com/en-ca/dog-food/dry/grain-free-small-breed-adult-recipe-with-turkey-salmon-duck",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Small Breed Adult",
+      "ingredients_raw": "de-boned turkey, whole dried egg, peas, potatoes, potato flour, pea flour, natural flavour, flaxseed, canola oil (preserved with mixed tocopherols), de-boned salmon, de-boned duck, calcium carbonate, coconut oil (preserved with mixed tocopherols), apples, pea fibre, monocalcium phosphate, tomato, suncured alfalfa, carrots, pumpkin, sweet potatoes, squash, bananas, blueberries, cranberries, blackberries, pomegranate, papayas, lentils, broccoli, sodium tripolyphosphate, salt, dried chicory root, choline chloride, vitamins (vitamin E supplement, L-ascorbyl-2-polyphosphate (a source of vitamin C), niacin, d-calcium pantothenate, vitamin A supplement, thiamine mononitrate, riboflavin, beta-carotene, vitamin B12 supplement, biotin, pyridoxine hydrochloride, vitamin D3 supplement, folic acid), minerals (ferrous sulphate, zinc proteinate, iron proteinate, selenium yeast, zinc oxide, copper sulphate, manganese proteinate, copper proteinate, manganous oxide, calcium iodate), taurine, dried Lactobacillus acidophilus fermentation product, dried Enterococcus faecium fermentation product, DL-methionine, L-lysine, potassium chloride, parsley, peppermint, green tea extract, yucca schidigera extract, L-carnitine, dried rosemary",
+      "guaranteed_analysis": {
+        "crude_protein_min": 27.0,
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "calcium_min": 1.2,
+        "phosphorus_min": 0.7,
+        "l_carnitine_min": 100.0,
+        "taurine_min": 0.1,
+        "omega_6_min": 2.6,
+        "omega_3_min": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3711 kcal/kg, 408 kcal/cup",
+      "images": [
+        "/products/now-fresh/now-fresh-dry-small-breed-adult-turkey-salmon-duck-grain-free-dry-dog-food.jpg"
+      ],
+      "source_id": "2304004"
+    },
+    {
+      "name": "Senior Turkey, Salmon & Duck Grain-Free Dry Dog Food",
+      "brand": "Now Fresh",
+      "url": "https://www.nowfresh.com/en-ca/dog-food/dry/grain-free-senior-recipe-with-turkey-salmon-duck",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Senior",
+      "ingredients_raw": "de-boned turkey, peas, potatoes, potato flour, pea fibre, whole dried egg, natural flavour, apples, flaxseed, de-boned salmon, de-boned duck, calcium carbonate, canola oil (preserved with mixed tocopherols), tomato, suncured alfalfa, coconut oil (preserved with mixed tocopherols), monocalcium phosphate, carrots, pumpkin, sweet potatoes, squash, bananas, blueberries, cranberries, blackberries, pomegranate, papayas, lentils, broccoli, salt, dried chicory root, choline chloride, vitamins (vitamin E supplement, L-ascorbyl-2-polyphosphate (a source of vitamin C), niacin, d-calcium pantothenate, vitamin A supplement, thiamine mononitrate, riboflavin, beta-carotene, vitamin B12 supplement, biotin, pyridoxine hydrochloride, vitamin D3 supplement, folic acid), minerals (ferrous sulphate, zinc proteinate, iron proteinate, selenium yeast, zinc oxide, copper sulphate, manganese proteinate, copper proteinate, manganous oxide, calcium iodate), taurine, DL-methionine, dried Lactobacillus acidophilus fermentation product, dried Enterococcus faecium fermentation product, L-lysine, potassium chloride, glucosamine hydrochloride, New Zealand green mussels, yucca schidigera extract, chondroitin sulphate, L-carnitine, dried rosemary",
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 11.0,
+        "crude_fiber_max": 7.0,
+        "moisture_max": 10.0,
+        "phosphorus_min": 0.4,
+        "glucosamine_min": 400.0,
+        "chondroitin_min": 100.0,
+        "l_carnitine_min": 100.0,
+        "taurine_min": 0.1,
+        "omega_6_min": 1.8,
+        "omega_3_min": 0.6
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3321 kcal/kg, 365 kcal/cup",
+      "images": [
+        "/products/now-fresh/now-fresh-dry-senior-turkey-salmon-duck-grain-free-dry-dog-food.jpg"
+      ],
+      "source_id": "2303204"
+    },
+    {
+      "name": "Puppy Turkey, Salmon & Duck Grain-Free Dry Dog Food",
+      "brand": "Now Fresh",
+      "url": "https://www.nowfresh.com/en-ca/dog-food/dry/grain-free-puppy-recipe-with-turkey-salmon-duck",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Puppy",
+      "ingredients_raw": "de-boned turkey, peas, potatoes, whole dried egg, potato flour, canola oil (preserved with mixed tocopherols), flaxseed, pea fibre, monocalcium phosphate, natural flavour, coconut oil (preserved with mixed tocopherols), de-boned salmon, de-boned duck, calcium carbonate, apples, suncured alfalfa, tomato, carrots, pumpkin, sweet potatoes, squash, bananas, blueberries, cranberries, blackberries, pomegranate, papayas, lentils, broccoli, cottage cheese, salt, marine microalgae oil, dried chicory root, choline chloride, vitamins (vitamin E supplement, L-ascorbyl-2-polyphosphate (a source of vitamin C), niacin, d-calcium pantothenate, vitamin A supplement, thiamine mononitrate, riboflavin, beta-carotene, vitamin B12 supplement, biotin, pyridoxine hydrochloride, vitamin D3 supplement, folic acid), minerals (ferrous sulphate, zinc proteinate, iron proteinate, selenium yeast, zinc oxide, copper sulphate, manganese proteinate, copper proteinate, manganous oxide, calcium iodate), taurine, DL-methionine, dried Lactobacillus acidophilus fermentation product, dried Enterococcus faecium fermentation product, L-lysine, potassium chloride, yucca schidigera extract, dried rosemary",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.0,
+        "crude_fat_min": 18.0,
+        "crude_fiber_max": 3.5,
+        "moisture_max": 10.0,
+        "epa_min": 0.2,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "taurine_min": 0.1,
+        "omega_6_min": 2.7,
+        "omega_3_min": 1.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3764 kcal/kg, 414 kcal/cup",
+      "images": [
+        "/products/now-fresh/now-fresh-dry-puppy-turkey-salmon-duck-grain-free-dry-dog-food.jpg"
+      ],
+      "source_id": "2303104"
+    },
+    {
+      "name": "Large Breed Senior Turkey, Salmon & Duck Grain-Free Dry Dog Food",
+      "brand": "Now Fresh",
+      "url": "https://www.nowfresh.com/en-ca/dog-food/dry/grain-free-large-breed-senior-recipe-with-turkey-salmon-duck",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Large Breed Senior",
+      "ingredients_raw": "de-boned turkey, potatoes, peas, whole dried egg, potato flour, tapioca, flaxseed, apples, pea fibre, de-boned salmon, de-boned duck, sweet potatoes, natural flavour, calcium carbonate, canola oil (preserved with mixed tocopherols), suncured alfalfa, monocalcium phosphate, coconut oil (preserved with mixed tocopherols), carrots, pumpkin, squash, bananas, blueberries, cranberries, blackberries, pomegranate, papayas, lentils, broccoli, spinach, salt, dried chicory root, choline chloride, taurine, vitamins (vitamin E supplement, L-ascorbyl-2-polyphosphate (a source of vitamin C), niacin, d-calcium pantothenate, vitamin A supplement, thiamine mononitrate, riboflavin, beta-carotene, vitamin B12 supplement, biotin, pyridoxine hydrochloride, vitamin D3 supplement, folic acid), minerals (ferrous sulphate, zinc proteinate, iron proteinate, selenium yeast, zinc oxide, copper sulphate, manganese proteinate, copper proteinate, manganous oxide, calcium iodate), dried Lactobacillus acidophilus fermentation product, dried Enterococcus faecium fermentation product, glucosamine hydrochloride, DL-methionine, L-lysine, potassium chloride, chondroitin sulphate, New Zealand green mussels, yucca schidigera extract, L-carnitine, dried rosemary, green tea extract, peppermint, parsley, rosehips, zedoary, dandelion, chamomile, ginger, turmeric, fennel, juniper berries, licorice, cardamom, cloves",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 11.0,
+        "crude_fiber_max": 5.5,
+        "moisture_max": 10.0,
+        "calcium_min": 0.9,
+        "phosphorus_min": 0.4,
+        "glucosamine_min": 1000.0,
+        "chondroitin_min": 280.0,
+        "l_carnitine_min": 200.0,
+        "taurine_min": 0.15,
+        "omega_6_min": 1.8,
+        "omega_3_min": 0.7
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3417 kcal/kg, 376 kcal/cup",
+      "images": [
+        "/products/now-fresh/now-fresh-dry-large-breed-senior-turkey-salmon-duck-grain-free-dry-dog-food.jpg"
+      ],
+      "source_id": "2305225"
+    },
+    {
+      "name": "Large Breed Puppy Turkey, Salmon & Duck Grain-Free Dry Dog Food",
+      "brand": "Now Fresh",
+      "url": "https://www.nowfresh.com/en-ca/dog-food/dry/grain-free-large-breed-puppy-recipe-with-turkey-salmon-duck",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Large Breed Puppy",
+      "ingredients_raw": "de-boned turkey, whole dried egg, peas, potatoes, potato flour, tapioca, canola oil (preserved with mixed tocopherols), flaxseed, monocalcium phosphate, sweet potatoes, natural flavour, de-boned salmon, de-boned duck, coconut oil (preserved with mixed tocopherols), suncured alfalfa, calcium carbonate, apples, pea fibre, salt, marine microalgae oil, carrots, pumpkin, squash, bananas, blueberries, cranberries, blackberries, pomegranate, papayas, lentils, broccoli, spinach, dried chicory root, potassium chloride, choline chloride, taurine, vitamins (vitamin E supplement, L-ascorbyl-2-polyphosphate (a source of vitamin C), niacin, d-calcium pantothenate, vitamin A supplement, thiamine mononitrate, riboflavin, beta-carotene, vitamin B12 supplement, biotin, pyridoxine hydrochloride, vitamin D3 supplement, folic acid), minerals (ferrous sulphate, zinc proteinate, iron proteinate, selenium yeast, zinc oxide, copper sulphate, manganese proteinate, copper proteinate, manganous oxide, calcium iodate), dried Lactobacillus acidophilus fermentation product, dried Enterococcus faecium fermentation product, DL-methionine, L-lysine, New Zealand green mussels, yucca schidigera extract, L-carnitine, dried rosemary, green tea extract, peppermint, parsley, rosehips, zedoary, dandelion, chamomile, ginger, turmeric, fennel, juniper berries, licorice, cardamom, cloves",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 3.5,
+        "moisture_max": 10.0,
+        "epa_min": 0.2,
+        "calcium_min": 1.1,
+        "phosphorus_min": 1.0,
+        "l_carnitine_min": 200.0,
+        "taurine_min": 0.15,
+        "omega_6_min": 2.5,
+        "omega_3_min": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3662 kcal/kg, 403 kcal/cup",
+      "images": [
+        "/products/now-fresh/now-fresh-dry-large-breed-puppy-turkey-salmon-duck-grain-free-dry-dog-food.jpg"
+      ],
+      "source_id": "2305112"
+    },
+    {
+      "name": "Large Breed Adult Turkey, Salmon & Duck Grain-Free Dry Dog Food",
+      "brand": "Now Fresh",
+      "url": "https://www.nowfresh.com/en-ca/dog-food/dry/grain-free-large-breed-adult-recipe-with-turkey-salmon-duck",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Large Breed Adult",
+      "ingredients_raw": "de-boned turkey, whole dried egg, potatoes, peas, potato flour, tapioca, pea flour, flaxseed, de-boned salmon, de-boned duck, sweet potatoes, natural flavour, monocalcium phosphate, canola oil (preserved with mixed tocopherols), apples, pea fibre, calcium carbonate, coconut oil (preserved with mixed tocopherols), suncured alfalfa, carrots, pumpkin, squash, bananas, blueberries, cranberries, blackberries, pomegranate, papayas, lentils, broccoli, spinach, dried chicory root, salt, choline chloride, taurine, vitamins (vitamin E supplement, L-ascorbyl-2-polyphosphate (a source of vitamin C), niacin, d-calcium pantothenate, vitamin A supplement, thiamine mononitrate, riboflavin, beta-carotene, vitamin B12 supplement, biotin, pyridoxine hydrochloride, vitamin D3 supplement, folic acid), minerals (ferrous sulphate, zinc proteinate, iron proteinate, selenium yeast, zinc oxide, copper sulphate, manganese proteinate, copper proteinate, manganous oxide, calcium iodate), dried Lactobacillus acidophilus fermentation product, dried Enterococcus faecium fermentation product, glucosamine hydrochloride, DL-methionine, L-lysine, potassium chloride, chondroitin sulphate, L-carnitine, New Zealand green mussels, yucca schidigera extract, dried rosemary, green tea extract, peppermint, parsley, rosehips, zedoary, dandelion, chamomile, ginger, turmeric, fennel, juniper berries, licorice, cardamom, cloves",
+      "guaranteed_analysis": {
+        "crude_protein_min": 27.0,
+        "crude_fat_min": 13.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8,
+        "glucosamine_min": 800.0,
+        "chondroitin_min": 240.0,
+        "l_carnitine_min": 200.0,
+        "taurine_min": 0.15,
+        "omega_6_min": 2.0,
+        "omega_3_min": 0.7
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3573 kcal/kg, 393 kcal/cup",
+      "images": [
+        "/products/now-fresh/now-fresh-dry-large-breed-adult-turkey-salmon-duck-grain-free-dry-dog-food.jpg"
+      ],
+      "source_id": "2305012"
+    },
+    {
+      "name": "Adult Lamb & Pork Grain-Free Dry Dog Food",
+      "brand": "Now Fresh",
+      "url": "https://www.nowfresh.com/en-ca/dog-food/dry/grain-free-adult-recipe-with-lamb-pork",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Adult",
+      "ingredients_raw": "de-boned lamb, whole dried egg, potatoes, peas, pea flour, potato flour, de-boned pork, flaxseed, canola oil (preserved with mixed tocopherols), natural flavour, coconut oil (preserved with mixed tocopherols), calcium carbonate, apples, sweet potatoes, pea fibre, monocalcium phosphate, suncured alfalfa, tomato, carrots, pumpkin, squash, bananas, blueberries, cranberries, blackberries, pomegranate, papayas, lentils, broccoli, salt, dried chicory root, choline chloride, vitamins (vitamin E supplement, L-ascorbyl-2-polyphosphate (a source of vitamin C), niacin, d-calcium pantothenate, vitamin A supplement, thiamine mononitrate, riboflavin, beta-carotene, vitamin B12 supplement, biotin, pyridoxine hydrochloride, vitamin D3 supplement, folic acid), minerals (ferrous sulphate, zinc proteinate, iron proteinate, selenium yeast, zinc oxide, copper sulphate, manganese proteinate, copper proteinate, manganous oxide, calcium iodate), taurine, dried Lactobacillus acidophilus fermentation product, dried Enterococcus faecium fermentation product, DL-methionine, L-lysine, potassium chloride, L-carnitine, dried rosemary",
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.6,
+        "l_carnitine_min": 100.0,
+        "taurine_min": 0.1,
+        "omega_6_min": 2.5,
+        "omega_3_min": 0.9
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3639 kcal/kg, 400 kcal/cup",
+      "images": [
+        "/products/now-fresh/now-fresh-dry-adult-lamb-pork-grain-free-dry-dog-food.jpg"
+      ],
+      "source_id": "2303404"
+    },
+    {
+      "name": "Adult Trout, Salmon & Herring Grain-Free Dry Dog Food",
+      "brand": "Now Fresh",
+      "url": "https://www.nowfresh.com/en-ca/dog-food/dry/grain-free-adult-recipe-with-trout-salmon-herring",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Adult",
+      "ingredients_raw": "de-boned trout, whole dried egg, peas, potatoes, pea flour, potato flour, flaxseed, canola oil (preserved with mixed tocopherols), natural flavour, de-boned salmon, de-boned herring, calcium carbonate, monocalcium phosphate, apples, coconut oil (preserved with mixed tocopherols), tomato, suncured alfalfa, pea fibre, carrots, pumpkin, sweet potatoes, squash, bananas, blueberries, cranberries, blackberries, pomegranate, papayas, lentils, broccoli, dried chicory root, salt, choline chloride, vitamins (vitamin E supplement, L-ascorbyl-2-polyphosphate (a source of vitamin C), niacin, d-calcium pantothenate, vitamin A supplement, thiamine mononitrate, riboflavin, beta-carotene, vitamin B12 supplement, biotin, pyridoxine hydrochloride, vitamin D3 supplement, folic acid), minerals (ferrous sulphate, zinc proteinate, iron proteinate, selenium yeast, zinc oxide, copper sulphate, manganese proteinate, copper proteinate, manganous oxide, calcium iodate), taurine, dried Lactobacillus acidophilus fermentation product, dried Enterococcus faecium fermentation product, DL-methionine, L-lysine, potassium chloride, L-carnitine, dried rosemary",
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 0.9,
+        "phosphorus_min": 0.6,
+        "l_carnitine_min": 100.0,
+        "taurine_min": 0.1,
+        "omega_6_min": 1.6,
+        "omega_3_min": 0.6
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3539 kcal/kg, 389 kcal/cup",
+      "images": [
+        "/products/now-fresh/now-fresh-dry-adult-trout-salmon-herring-grain-free-dry-dog-food.jpg"
+      ],
+      "source_id": "2303304"
+    },
+    {
+      "name": "Adult Turkey, Salmon & Duck Grain-Free Dry Dog Food",
+      "brand": "Now Fresh",
+      "url": "https://www.nowfresh.com/en-ca/dog-food/dry/grain-free-adult-recipe-with-turkey-salmon-duck",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Adult",
+      "ingredients_raw": "de-boned turkey, potatoes, peas, whole dried egg, potato flour, pea fibre, flaxseed, apples, natural flavour, canola oil (preserved with mixed tocopherols), de-boned salmon, de-boned duck, calcium carbonate, monocalcium phosphate, coconut oil (preserved with mixed tocopherols), suncured alfalfa, tomato, carrots, pumpkin, sweet potatoes, squash, bananas, blueberries, cranberries, blackberries, pomegranate, papayas, lentils, broccoli, cottage cheese, salt, dried chicory root, choline chloride, vitamins (vitamin E supplement, L-ascorbyl-2-polyphosphate (a source of vitamin C), niacin, d-calcium pantothenate, vitamin A supplement, thiamine mononitrate, riboflavin, beta-carotene, vitamin B12 supplement, biotin, pyridoxine hydrochloride, vitamin D3 supplement, folic acid), minerals (ferrous sulphate, zinc proteinate, iron proteinate, selenium yeast, zinc oxide, copper sulphate, manganese proteinate, copper proteinate, manganous oxide, calcium iodate), taurine, dried Lactobacillus acidophilus fermentation product, dried Enterococcus faecium fermentation product, DL-methionine, L-lysine, potassium chloride, yucca schidigera extract, L-carnitine, dried rosemary",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.1,
+        "phosphorus_min": 0.7,
+        "l_carnitine_min": 100.0,
+        "taurine_min": 0.1,
+        "omega_6_min": 2.5,
+        "omega_3_min": 0.9
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3670 kcal/kg, 404 kcal/cup",
+      "images": [
+        "/products/now-fresh/now-fresh-dry-adult-turkey-salmon-duck-grain-free-dry-dog-food.jpg"
+      ],
+      "source_id": "2303004"
+    }
+  ]
+}

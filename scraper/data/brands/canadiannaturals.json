@@ -1,0 +1,489 @@
+{
+  "brand": "Canadian Naturals",
+  "website_url": "https://canadiannaturals.com",
+  "scraped_at": "2026-03-04T13:18:39.475948+00:00",
+  "scraper_version": "0.1.0",
+  "stats": {
+    "product_count": 20,
+    "by_channel": {
+      "retail": 20
+    },
+    "by_type": {
+      "dry": 20
+    }
+  },
+  "products": [
+    {
+      "name": "Chicken & Brown Rice Recipe for Dogs",
+      "brand": "Canadian Naturals",
+      "url": "https://canadiannaturals.com/team/chicken-rice",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Value Series",
+      "ingredients_raw": "Chicken meal, ground oats, brown rice, potato, chicken fat (stabilized with mixed tocopherols, a natural source of vitamin E), millet, rye, fresh chicken, chicken cartilage (natural source of glucosamine), natural flavour, whole dried egg, flaxseed, Canadian salmon meal, Canadian salmon oil , tomato pomace, calcium carbonate, potassium chloride, dicalcium phosphate, sodium chloride, lecithin, kelp, chicory root extract, cranberry, alfalfa, spinach, sweet potato, broccoli, blueberries, apples, bananas, pears, vitamin (vitamin A, vitamin D3, vitamin E, niacin, vitamin C, inositol, d-calcium pantothenate, thiamine mononitrate, riboflavin, beta carotene, pyridoxine hydrochloride, folic acid, vitamin K, biotin, vitamin B12 supplement), minerals (zinc proteinate, ferrous sulfate, iron proteinate, zinc oxide, copper proteinate, copper sulfate,manganese proteinate, manganous oxide, calcium iodate, sodium selenite), probiotics (lactobacillus acidophilus, lactobacillus casei, enterococcus faecium, bifidobacterium thermophilum), DL methionine, yucca schidigera extract, rosemary, turmeric, paprika, garlic, cinnamon, chamomile, capsicum.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 3.5,
+        "moisture_max": 10.0,
+        "calcium_min": 1.6,
+        "omega_6_min": 2.1,
+        "omega_3_min": 0.4,
+        "phosphorus_min": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3746 kcal/kg, 400 kcal/cup",
+      "images": [
+        "/products/canadian-naturals/canadian-naturals-dry-chicken-brown-rice-recipe-for-dogs.png"
+      ]
+    },
+    {
+      "name": "Chicken Recipe for Small Breed Dogs",
+      "brand": "Canadian Naturals",
+      "url": "https://canadiannaturals.com/team/chicken-small-breed",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Value Series",
+      "ingredients_raw": "Deboned chicken, peas, lentils, chickpeas, chicken meal, chicken fat ( preserved with mixed tocopherols and citric acid ), sweet potatoes, salmon meal, natural flavour, flaxseed, calcium carbonate, whole dried egg, tomato pomace, alfalfa, dicalcium phosphate, brewer’s yeast, salt, potassium chloride, apple, blueberry, carrot, spinach, tomato, cranberry, broccoli, pumpkin, banana, zinc sulfate, ferrous sulfate, zinc proteinate, iron proteinate, copper sulfate, manganous oxide, copper proteinate, manganese proteinate, calcium iodate, sodium selenite,vitamin A, vitamin D3, vitamin E, niacin, calcium pantothenate, riboflavin, thiamine, pyridoxine, folic acid, vitamin B12, choline chloride, rosemary extract, calcium propionate, lactobacillus acidophilus fermentation product, Lactobacillus casei fermentation product, Bifido bacterium bifidium thermophilum fermentation product, enterococcus faecium fermentation product, L-lysine, DL-methionine, L-carnitine, yucca schidigera extract, lecithin, peppermint, garlic, parsley, green tea extract, turmeric, thyme, rosemary, cayenne, cinnamon, chamomile.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "calcium_min": 1.6,
+        "omega_6_min": 2.8,
+        "omega_3_min": 0.63,
+        "phosphorus_min": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3593 kcal/kg, 383 kcal/cup",
+      "images": [
+        "/products/canadian-naturals/canadian-naturals-dry-chicken-recipe-for-small-breed-dogs.png"
+      ]
+    },
+    {
+      "name": "Fresh Whitefish Recipe for Dogs",
+      "brand": "Canadian Naturals",
+      "url": "https://canadiannaturals.com/team/fresh-whitefish",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Value Series",
+      "ingredients_raw": "Whitefish, peas, chicken meal, potatoes, pea starch, chicken fat (preserved with mixed tocopherols and citric acid), alfalfa, natural flavour, flaxseed, calcium carbonate, red lentils, salt, vitamin A supplement, vitamin D3 supplement, vitamin E supplement, niacin, calcium pantothenate, riboflavin, thiamine mononitrate, pyridoxine hydrochloride, folic acid, vitamin B12 supplement, zinc sulfate, ferrous sulfate, zinc proteinate, iron proteinate, copper sulfate, manganous oxide, copper proteinate, manganese proteinate, calcium iodate, sodium selenite, choline chloride, chicory, apples, blueberries, carrots, spinach, tomato, sweet potatoes, cranberries, broccoli, pumpkin, bananas, dried Lactobacillus acidophilus fermentation product, dried Lactobacillus casei fermentation product, dried Bifidobacterium fermentation product, dried Enterococcus faecium fermentation product, yucca schidigera extract, peppermint, garlic, parsley, green tea extract, turmeric, thyme, rosemary, cayenne, cinnamon, chamomile.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.2,
+        "omega_6_min": 2.4,
+        "omega_3_min": 0.75,
+        "phosphorus_min": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3640 kcal/kg, 387 kcal/cup",
+      "images": [
+        "/products/canadian-naturals/canadian-naturals-dry-fresh-whitefish-recipe-for-dogs.png"
+      ]
+    },
+    {
+      "name": "Lamb & Brown Rice Recipe for Dogs",
+      "brand": "Canadian Naturals",
+      "url": "https://canadiannaturals.com/team/lamb-rice",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Value Series",
+      "ingredients_raw": "Lamb meal, peas, pearled barley, oat groats, brown rice, flaxseed, canola oil (preserved with mixed tocopherols and citric acid), natural flavour, salt, potassium chloride, choline chloride, taurine, zinc sulphate, ferrous sulphate, vitamin E supplement, zinc proteinate, iron proteinate, niacinamide, calcium pantothenate, copper sulphate, manganous oxide, vitamin A supplement, copper proteinate, riboflavin, thiamine mononitrate, manganese proteinate, pyridoxine hydrochloride, vitamin D3 supplement, calcium iodate, folic acid, sodium selenite, vitamin B12 supplement, rosemary extract.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 22.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.5,
+        "omega_6_min": 2.8,
+        "omega_3_min": 2.4,
+        "phosphorus_min": 0.92
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3556 kcal/kg, 378 kcal/cup",
+      "images": [
+        "/products/canadian-naturals/canadian-naturals-dry-lamb-brown-rice-recipe-for-dogs.png"
+      ]
+    },
+    {
+      "name": "Lamb & Brown Rice Recipe for Large Breed Dogs",
+      "brand": "Canadian Naturals",
+      "url": "https://canadiannaturals.com/team/lamb-rice-large-breed",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Value Series",
+      "ingredients_raw": "Lamb meal, pearled barley, peas, oatmeal, flaxseed, canola oil (preserved with mixed tocopherols and citric acid), brown rice, pea protein, natural flavour, dicalcium phosphate, salt, calcium carbonate, potassium chloride, Choline chloride, vitamin A supplement, vitamin D3 supplement, vitamin E supplement, niacin, calcium pantothenate, riboflavin, thiamine mononitrate, pyridoxine hydrochloride, folic acid, vitamin B12 supplement, zinc sulfate, ferrous sulfate, zinc proteinate, iron proteinate, copper sulfate, manganous oxide, copper proteinate, manganese proteinate, calcium iodate, sodium selenite, calcium propionate, rosemary, glucosamine hydrochloride, taurine, DL-methionine, chondroitin sulfate.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 3.8,
+        "moisture_max": 10.0,
+        "omega_6_min": 2.8,
+        "omega_3_min": 2.4
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3551 kcal/kg, 378 kcal/cup",
+      "images": [
+        "/products/canadian-naturals/canadian-naturals-dry-lamb-brown-rice-recipe-for-large-breed-dogs.png"
+      ]
+    },
+    {
+      "name": "Omega Fresh Deboned Angus Beef Recipe for Dogs",
+      "brand": "Canadian Naturals",
+      "url": "https://canadiannaturals.com/team/omega-fresh-deboned-angus-beef",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Omega Fresh",
+      "ingredients_raw": "Fresh deboned angus beef, deboned salmon, salmon meal, pork meal, green peas, red lentils, chickpeas, green lentils, yellow peas, salmon oil (preserved with mixed tocopherols), flaxseed, sun-cured alfalfa meal, natural fish flavour, dicalcium phosphate, salt, apples, blueberries, cranberries, bananas, carrots, spinach, tomato, broccoli, pumpkin, chia seeds, potassium chloride, zinc sulfate, ferrous sulfate, zinc proteinate, iron proteinate, copper sulfate, manganous oxide, copper proteinate, manganese proteinate, calcium iodate, sodium selenite,vitamin A supplement, vitamin D3 supplement, vitamin E supplement, niacin, calcium pantothenate, riboflavin, thiamine mononitrate, pyridoxine hydrochloride, folic acid, vitamin B12 supplement, rosemary extract, choline chloride, chicory root extract, calcium propionate, algae, dried Lactobacillus acidophilus fermentation product, dried Lactobacillus casei fermentation product, dried Bifidobacterium fermentation product, dried Enterococcus faecium fermentation product, yucca schidigera extract.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 31.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.6,
+        "omega_6_min": 2.0,
+        "omega_3_min": 2.1,
+        "phosphorus_min": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3839 kcal/kg, 436 kcal/cup",
+      "images": [
+        "/products/canadian-naturals/canadian-naturals-dry-omega-fresh-deboned-angus-beef-recipe-for-dogs.png"
+      ]
+    },
+    {
+      "name": "Omega Fresh Deboned Chicken Recipe for Dogs",
+      "brand": "Canadian Naturals",
+      "url": "https://canadiannaturals.com/team/omega-fresh-deboned-chicken",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Omega Fresh",
+      "ingredients_raw": "Fresh deboned chicken, deboned salmon, chicken meal, green peas, red lentils, chickpeas, green lentils, yellow peas, salmon oil (preserved with mixed tocopherols), sun-cured alfalfa meal, flaxseed, natural chicken flavour, calcium carbonate, salmon meal, salt, apples, blueberries, cranberries, bananas, carrots, spinach, tomato, broccoli, pumpkin, dicalcium phosphate, chia seeds, potassium chloride, zinc sulfate, ferrous sulfate, zinc proteinate, iron proteinate, copper sulfate, manganous oxide,copper proteinate, manganese proteinate, calcium iodate, sodium selenite, vitamin A supplement, vitamin D3 supplement, vitamin E supplement, niacin, calcium pantothenate, riboflavin, thiamine mononitrate, pyridoxine hydrochloride, folic acid, vitamin B12 supplement, rosemary extract, choline chloride, chicory root extract, calcium propionate, algae, dried Lactobacillus acidophilus fermentation product, dried Lactobacillus casei fermentation product, dried Bifidobacterium fermentation product, dried Enterococcus faecium fermentation product, yucca schidigera extract.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 31.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.9,
+        "omega_6_min": 2.2,
+        "omega_3_min": 2.2,
+        "phosphorus_min": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3757 kcal/kg, 426 kcal/cup",
+      "images": [
+        "/products/canadian-naturals/canadian-naturals-dry-omega-fresh-deboned-chicken-recipe-for-dogs.png"
+      ]
+    },
+    {
+      "name": "Pork & Brown Rice Recipe for Dogs",
+      "brand": "Canadian Naturals",
+      "url": "https://canadiannaturals.com/team/pork-rice",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Value Series",
+      "ingredients_raw": "Pork meal, oatmeal, brown rice, peas, pork fat (preserved with mixed tocopherols and citric acid), natural flavour, calcium carbonate, sodium chloride, apples, blueberries, carrots, spinach, tomato, sweet potatoes, cranberries, broccoli, pumpkin, bananas, zinc sulfate, ferrous sulfate, zinc proteinate, iron proteinate, copper sulfate, manganous oxide, copper proteinate, manganese proteinate, calcium iodate, sodium selenite, vitamin A supplement, vitamin D3 supplement, vitamin E supplement, niacin, calcium pantothenate, riboflavin, thiamine mononitrate, pyridoxine hydrochloride, folic acid, vitamin B12 supplement, potassium chloride, choline chloride, dried Lactobacillus acidophilus fermentation product, dried Lactobacillus casei fermentation product, dried Bifidobacterium fermentation product, dried Enterococcus faecium fermentation product, DL- methionine, yucca schidigera extract, peppermint, garlic, parsley, green tea extract, turmeric, thyme, rosemary, cayenne, cinnamon, chamomile.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 22.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.6,
+        "omega_6_min": 2.1,
+        "omega_3_min": 0.5,
+        "phosphorus_min": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3604 kcal/kg, 383 kcal/cup",
+      "images": [
+        "/products/canadian-naturals/canadian-naturals-dry-pork-brown-rice-recipe-for-dogs.png"
+      ]
+    },
+    {
+      "name": "Pork & Squash Recipe for Dogs",
+      "brand": "Canadian Naturals",
+      "url": "https://canadiannaturals.com/team/pork-squash-dog-recipe",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Limited Ingredient",
+      "ingredients_raw": "Deboned pork, pork meal, sweet potatoes, chickpeas, squash, potatoes, canola oil ( preserved with mixed tocopherols and citric acid )flaxseed, natural flavour, sodium chloride, choline chloride, potassium chloride, Vitamin A, vitamin D3, vitamin E, niacin, calcium pantothenate, riboflavin, thiamine, pyridoxine, folic acid, vitamin B12, Zinc sulfate, ferrous sulfate, zinc proteinate, iron proteinate, copper sulfate, manganous oxide, copper proteinate, manganese proteinate, calcium iodate, sodium selenite, calcium propionate, rosemary extract, DL-methionine, L-lysine, taurine.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 29.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.4,
+        "omega_6_min": 2.1,
+        "omega_3_min": 1.2,
+        "phosphorus_min": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3586 kcal/kg, 381 kcal/cup",
+      "images": [
+        "/products/canadian-naturals/canadian-naturals-dry-pork-squash-recipe-for-dogs.png"
+      ]
+    },
+    {
+      "name": "Potato & Duck Recipe for Dogs",
+      "brand": "Canadian Naturals",
+      "url": "https://canadiannaturals.com/team/potato-duck-dog-recipe",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Limited Ingredient",
+      "ingredients_raw": "Potato, duck meal, flaxseed, canola oil (preserved with mixed tocopherols and citric acid), natural flavour, salmon oil (preserved with mixed tocopherols and citric acid), salt, choline chloride, potassium chloride, L-lysine, DL-methionine, taurine, zinc sulphate, ferrous sulphate, vitamin E supplement, zinc proteinate, iron proteinate, niacinamide, calcium pantothenate, copper sulphate, ascorbic acid (vitamin C), inositol, manganous oxide, vitamin A supplement, copper proteinate, riboflavin, thiamine mononitrate, manganese proteinate, pyridoxine hydrochloride, beta-carotene, vitamin D3 supplement, calcium iodate, folic acid, sodium selenite, menadione sodium bisulfite complex (source of vitamin K activity), biotin, vitamin B12 supplement, rosemary extract.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 22.0,
+        "crude_fat_min": 10.0,
+        "crude_fiber_max": 3.5,
+        "moisture_max": 10.0,
+        "calcium_min": 1.5,
+        "phosphorus_min": 1.0,
+        "omega_6_min": 1.7,
+        "omega_3_min": 0.75
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3470 kcal/kg, 369 kcal/cup",
+      "images": [
+        "/products/canadian-naturals/canadian-naturals-dry-potato-duck-recipe-for-dogs.png"
+      ]
+    },
+    {
+      "name": "Red Meat Recipe for Dogs",
+      "brand": "Canadian Naturals",
+      "url": "https://canadiannaturals.com/team/red-meat",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Value Series",
+      "ingredients_raw": "Pork meal, peas, pea starch, pork fat (preserved with mixed tocopherols and citric acid), potatoes, alfalfa, lamb meal, natural flavour, flaxseed, red lentils, calcium carbonate, salt, vitamin A supplement, vitamin D3 supplement, vitamin E supplement, niacin, calcium pantothenate, riboflavin, thiamine mononitrate, pyridoxine hydrochloride, folic acid, vitamin B12 supplement, zinc sulfate, ferrous sulfate, zinc proteinate, iron proteinate, copper sulfate, manganous oxide, copper proteinate, manganese proteinate, calcium iodate, sodium selenite, choline chloride, chicory, apples, blueberries, carrots, spinach, tomato, sweet potatoes, cranberries, broccoli, pumpkin, bananas, dried Lactobacillus acidophilus fermentation product, dried Lactobacillus casei fermentation product, dried Bifidobacterium fermentation product, dried Enterococcus faecium fermentation product, yucca schidigera extract, peppermint, garlic, parsley, green tea extract, turmeric, thyme, rosemary, cayenne, cinnamon, chamomile.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 22.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.2,
+        "omega_6_min": 2.2,
+        "omega_3_min": 0.38,
+        "phosphorus_min": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3693 kcal/kg, 393 kcal/cup",
+      "images": [
+        "/products/canadian-naturals/canadian-naturals-dry-red-meat-recipe-for-dogs.png"
+      ]
+    },
+    {
+      "name": "Red Meat Recipe for Large Breed Dogs",
+      "brand": "Canadian Naturals",
+      "url": "https://canadiannaturals.com/team/red-meat-large-breed",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Value Series",
+      "ingredients_raw": "Pork meal, peas, pea starch, pork fat ( preserved with mixed tocopherols and citric acid ), potatoes, lamb meal, alfalfa, red lentils, natural flavour, flaxseed, calcium carbonate, salt, vitamin A supplement, vitamin D3 supplement, vitamin E supplement, niacin, calcium pantothenate, riboflavin, thiamine mononitrate, pyridoxine hydrochloride, folic acid, vitamin B12 supplement, zinc sulfate, ferrous sulfate, zinc proteinate, iron proteinate, copper sulfate, manganous oxide, copper proteinate, manganese proteinate, calcium iodate, sodium selenite, choline chloride, chicory, pumpkin, blueberries, bananas, apples, cranberries, carrots, spinach, tomato, sweet potatoes, broccoli, dried Lactobacillus acidophilus fermentation product, dried Lactobacillus casei fermentation product, dried Bifidobacterium fermentation product, dried Enterococcus faecium fermentation product, glucosamine hydrochloride, yucca schidigera extract, peppermint, garlic, parsley, green tea extract, turmeric, thyme, rosemary, cayenne, cinnamon, chamomile, chondroitin sulfate.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.2,
+        "omega_6_min": 2.5,
+        "omega_3_min": 0.34,
+        "phosphorus_min": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3693 kcal/kg, 393 kcal/cup",
+      "images": [
+        "/products/canadian-naturals/canadian-naturals-dry-red-meat-recipe-for-large-breed-dogs.png"
+      ]
+    },
+    {
+      "name": "Red Meat Senior Recipe for Dogs",
+      "brand": "Canadian Naturals",
+      "url": "https://canadiannaturals.com/team/red-meat-senior",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Value Series",
+      "ingredients_raw": "Pork meal, peas, pea starch, pork fat (preserved with mixed tocopherols and citric acid), alfalfa, red lentils, potatoes, lamb meal, natural pork flavour, flaxseed, salt, calcium carbonate, choline chloride, vitamin A supplement, vitamin D3 supplement, vitamin E supplement, niacin, calcium pantothenate, riboflavin, thiamine mononitrate, pyridoxine hydrochloride, folic acid, vitamin B12 supplement, zinc sulfate, ferrous sulfate, zinc proteinate, iron proteinate, copper sulfate, manganous oxide, copper proteinate, manganese proteinate, calcium iodate, sodium selenite, glucosamine hydrochloride, apple, blueberry, carrot, spinach, tomato, sweet potato, cranberry, broccoli, pumpkin, banana, chicory, dried Lactobacillus acidophilus fermentation product, dried Lactobacillus casei fermentation product, dried Bifidobacterium bifidum fermentation product, dried Enterococcus faecium fermentation product, potassium chloride, chondroitin sulfate, DL-methionine, yucca schidigera extract, peppermint, garlic, parsley, green tea extract, turmeric, thyme, rosemary, cayenne, cinnamon, chamomile.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 23.0,
+        "crude_fat_min": 13.0,
+        "crude_fiber_max": 3.8,
+        "moisture_max": 10.0,
+        "omega_6_min": 2.1,
+        "omega_3_min": 0.27
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3693 kcal/kg, 393 kcal/cup",
+      "images": [
+        "/products/canadian-naturals/canadian-naturals-dry-red-meat-senior-recipe-for-dogs.jpg"
+      ]
+    },
+    {
+      "name": "Roasted Chicken Recipe for Dogs",
+      "brand": "Canadian Naturals",
+      "url": "https://canadiannaturals.com/team/roasted-chicken-recipe",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Value Series",
+      "ingredients_raw": "Chicken meal, peas, pea starch, Chicken fat (preserved with mixed tocopherols and citric acid), red lentils, potatoes, alfalfa, natural flavour, calcium carbonate, flaxseed, salt, vitamin A supplement, vitamin D3 supplement, vitamin E supplement, niacin, calcium pantothenate, riboflavin, thiamine mononitrate, pyridoxine hydrochloride, folic acid, vitamin B12 supplement, zinc sulfate, ferrous sulfate, zinc proteinate, iron proteinate, copper sulfate, manganous oxide, copper proteinate, manganese proteinate, calcium iodate, sodium selenite, choline chloride, potassium chloride, chicory, apples, blueberries, carrots, spinach, tomato, sweet potatoes, cranberries, broccoli, pumpkin, bananas, dried Lactobacillus acidophilus fermentation product, dried Lactobacillus casei fermentation product, dried Bifidobacterium fermentation product, dried Enterococcus faecium fermentation product, yucca schidigera extract, peppermint, garlic, parsley, green tea extract, turmeric, thyme, rosemary, cayenne, cinnamon, chamomile.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.3,
+        "omega_6_min": 2.8,
+        "omega_3_min": 0.27,
+        "phosphorus_min": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3716 kcal/kg, 395 kcal/cup",
+      "images": [
+        "/products/canadian-naturals/canadian-naturals-dry-roasted-chicken-recipe-for-dogs.png"
+      ]
+    },
+    {
+      "name": "Sweet Potato & Salmon Recipe for Dogs",
+      "brand": "Canadian Naturals",
+      "url": "https://canadiannaturals.com/team/sweet-potato-salmon-recipe",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Limited Ingredient",
+      "ingredients_raw": "Sweet potato, salmon meal, potato, flaxseed, canola oil (preserved with mixed tocopherols and citric acid), natural flavour, salmon oil (preserved with mixed tocopherols and citric acid), salt, potassium chloride, choline chloride, taurine, L-lysine, DL-methionine, zinc sulphate, ferrous sulphate, vitamin E supplement, zinc proteinate, iron proteinate, niacinamide, calcium pantothenate, copper sulphate, manganous oxide, vitamin A supplement, copper proteinate, riboflavin, thiamine mononitrate, manganese proteinate, pyridoxine hydrochloride, vitamin D3 supplement, calcium iodate, folic acid, sodium selenite, vitamin B12 supplement, rosemary extract.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 22.0,
+        "crude_fat_min": 10.0,
+        "crude_fiber_max": 3.5,
+        "moisture_max": 10.0,
+        "calcium_min": 1.3,
+        "omega_6_min": 1.2,
+        "omega_3_min": 1.0,
+        "phosphorus_min": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3470 kcal/kg, 369 kcal/cup",
+      "images": [
+        "/products/canadian-naturals/canadian-naturals-dry-sweet-potato-salmon-recipe-for-dogs.png"
+      ]
+    },
+    {
+      "name": "Sweet Potato & Venison Recipe for Dogs",
+      "brand": "Canadian Naturals",
+      "url": "https://canadiannaturals.com/team/sweet-potato-venison-recipe",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Limited Ingredient",
+      "ingredients_raw": "Sweet potato, venison meal, peas, pea protein, potato, flaxseed, canola oil ( preserved with mixed tocopherols and citric acid ), dicalcium phosphate, calcium cabonate , natural flavour, salt, choline chloride, L-lysine, DL-methionine, taurine, vitamin A supplement, vitamin D3 supplement, vitamin E supplement, thiamine mononitrate, riboflavin, pantothenic acid, niacinamide, pyridoxine hydrochloride, folic acid, biotin, iron sulfate, iron proteinate, copper sulfate, copper proteinate, manganous oxide, manganese proteinate, zinc sulfate, zinc proteinate, calcium iodate, sodium selenite, rosemary extract.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 22.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 4.9,
+        "moisture_max": 10.0,
+        "calcium_min": 1.6,
+        "omega_6_min": 1.9,
+        "omega_3_min": 1.0,
+        "phosphorus_min": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3391 kcal/kg, 361 kcal/cup",
+      "images": [
+        "/products/canadian-naturals/canadian-naturals-dry-sweet-potato-venison-recipe-for-dogs.png"
+      ]
+    },
+    {
+      "name": "Turkey & Salmon Recipe for Dogs",
+      "brand": "Canadian Naturals",
+      "url": "https://canadiannaturals.com/team/turkey-salmon-dog-recipe",
+      "channel": "retail",
+      "product_type": "dry",
+      "ingredients_raw": "Fresh turkey, turkey meal, brown rice, dehulled barley, oatmeal, salmon meal, potato, chicken fat ( preserved with mixed tocopherols, a natural source of vitamin E), whole dried egg, flaxseed, natural flavour, rice bran, tomato fibre, sweet potato, alfalfa, spinach, broccoli, apple, blueberries, pears, bananas, lecithin, potassium chloride, chicory root extract, salt, glucosamine hydrochloride, choline chloride, calcium carbonate, vitamin A supplement, vitamin D3 supplement, vitamin E supplement, niacin, calcium pantothenate, riboflavin, thiamine mononitrate, pyridoxine hydrochloride, folic acid, vitamin B12 supplement, zinc sulfate, ferrous sulfate, zinc proteinate, iron proteinate, copper sulfate, manganous oxide, copper proteinate, manganese proteinate, calcium iodate, sodium selenite, methylsulfonylmethane (MSM), dried Lactobacillus acidophilus fermentation product, dried Lactobacillus casei fermentation product, dried Bifidobacterium fermentation product, dried Enterococcus faecium fermentation product, chondroitin sulfate, taurine, DL-methionine, L-carnitine, yucca schidigera extract, rosemary, garlic, cinnamon, paprika, capsicum, chamomile, turmeric, dandelion.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.3,
+        "omega_6_min": 2.8,
+        "omega_3_min": 0.45,
+        "phosphorus_min": 1.1
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3806 kcal/kg, 405 kcal/cup",
+      "images": [
+        "/products/canadian-naturals/canadian-naturals-dry-turkey-salmon-recipe-for-dogs.png"
+      ]
+    },
+    {
+      "name": "Turkey & Salmon Recipe for Large Breed Dogs",
+      "brand": "Canadian Naturals",
+      "url": "https://canadiannaturals.com/team/turkey-salmon-dog-recipe-large-breed",
+      "channel": "retail",
+      "product_type": "dry",
+      "ingredients_raw": "Fresh turkey, turkey meal, brown rice, dehulled barley, oatmeal, salmon meal, potato, chicken fat ( preserved with mixed tocopherols, a natural source of vitamin E), whole dried egg, flaxseed, natural flavour, rice bran, tomato fibre, sweet potato, alfalfa, spinach, broccoli, apple, blueberries, pears, bananas, lecithin, potassium chloride, chicory root extract, salt, glucosamine hydrochloride, choline chloride, calcium carbonate, vitamin A supplement, vitamin D3 supplement, vitamin E supplement, niacin, calcium pantothenate, riboflavin, thiamine mononitrate, pyridoxine hydrochloride, folic acid, vitamin B12 supplement, zinc sulfate, ferrous sulfate, zinc proteinate, iron proteinate, copper sulfate, manganous oxide, copper proteinate, manganese proteinate, calcium iodate, sodium selenite, methylsulfonylmethane (MSM), dried Lactobacillus acidophilus fermentation product, dried Lactobacillus casei fermentation product, dried Bifidobacterium fermentation product, dried Enterococcus faecium fermentation product, chondroitin sulfate, taurine, DL-methionine, L-carnitine, yucca schidigera extract, rosemary, garlic, cinnamon, paprika, capsicum, chamomile, turmeric, dandelion.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 27.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 3.5,
+        "moisture_max": 10.0,
+        "calcium_min": 1.3,
+        "phosphorus_min": 1.2,
+        "omega_6_min": 2.0,
+        "omega_3_min": 0.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3653 kcal/kg, 418 kcal/cup",
+      "images": [
+        "/products/canadian-naturals/canadian-naturals-dry-turkey-salmon-recipe-for-large-breed-dogs.png"
+      ]
+    },
+    {
+      "name": "Turkey & Salmon Recipe for Senior Dogs",
+      "brand": "Canadian Naturals",
+      "url": "https://canadiannaturals.com/team/turkey-salmon-dog-recipe-senior",
+      "channel": "retail",
+      "product_type": "dry",
+      "ingredients_raw": "Fresh turkey, turkey meal, brown rice, dehulled barley, oatmeal, potato, salmon meal, chicken fat(preserved with mixed tocopherols, a natural source of vitamin E), flaxseed, tomato fibre, natural flavour, whole dried egg, salmon oil, rice bran, alfalfa, sweet potato, spinach, broccoli, apple, blueberries, pears, bananas, lecithin, chicory root extract, sodium tripolyphosphate, potassium chloride, salt, glucosamine hydrochloride, choline chloride, calcium carbonate, vitamin A supplement, vitamin D3 supplement, vitamin E supplement, niacin, calcium pantothenate, riboflavin, thiamine mononitrate, pyridoxine hydrochloride, folic acid, vitamin B12 supplement, zinc sulfate, ferrous sulfate, zinc proteinate, iron proteinate, copper sulfate, manganous oxide, copper proteinate, manganese proteinate, calcium iodate, sodium selenite, methylsulfonylmethane (MSM), dried Lactobacillus acidophilus fermentation product, dried Lactobacillus casei fermentation product, dried Bifidobacterium fermentation product, dried Enterococcus faecium fermentation product, ), chondroitin sulfate, taurine, DL-methionine, L-carnitine, yucca schidigera extract, rosemary, garlic, cinnamon, paprika, capsicum, chamomile, turmeric, dandelion.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 22.0,
+        "crude_fat_min": 11.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "omega_6_min": 1.2,
+        "omega_3_min": 0.6
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3547 kcal/kg, 378 kcal/cup",
+      "images": [
+        "/products/canadian-naturals/canadian-naturals-dry-turkey-salmon-recipe-for-senior-dogs.png"
+      ]
+    },
+    {
+      "name": "Turkey & Salmon Recipe for Small Breed Dogs",
+      "brand": "Canadian Naturals",
+      "url": "https://canadiannaturals.com/team/turkey-salmon-dog-recipe-small-bite",
+      "channel": "retail",
+      "product_type": "dry",
+      "ingredients_raw": "Fresh turkey, turkey meal, potato, oatmeal, brown rice, dehulled barley, chicken fat(preserved with mixed tocopherols, a natural source of vitamin E), salmon meal, tomato pomace, natural flavour, flaxseed, whole dried egg, brewer's yeast, sweet potato, canola oil, alfalfa, spinach, broccoli, apple, blueberries, pears, bananas, dicalcium phosphate, lecithin, potassium chloride, calcium carbonate, salt, choline chloride, vitamin A supplement, vitamin D3 supplement, vitamin E supplement, niacin, calcium pantothenate, riboflavin, thiamine mononitrate, pyridoxine hydrochloride, folic acid, vitamin B12 supplement, zinc sulfate, ferrous sulfate, zinc proteinate, iron proteinate, copper sulfate, manganous oxide, copper proteinate, manganese proteinate, calcium iodate, sodium selenite, dried Lactobacillus acidophilus fermentation product, dried Lactobacillus casei fermentation product, dried Bifidobacterium fermentation product, dried Enterococcus faecium fermentation product, glucosamine hydrochloride, DL-methionine, L-lysine, L-carnitine, yucca schidigera extract, rosemary, garlic, cinnamon, paprika, capsicum, chamomile, turmeric, dandelion.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.3,
+        "omega_6_min": 2.8,
+        "omega_3_min": 0.45,
+        "phosphorus_min": 1.1
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3806 kcal/kg, 405 kcal/cup",
+      "images": [
+        "/products/canadian-naturals/canadian-naturals-dry-turkey-salmon-recipe-for-small-breed-dogs.png"
+      ]
+    }
+  ]
+}

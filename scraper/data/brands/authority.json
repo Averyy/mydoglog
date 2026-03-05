@@ -1,0 +1,1735 @@
+{
+  "brand": "Authority",
+  "website_url": "https://www.petsmart.ca",
+  "scraped_at": "2026-03-05T18:46:41.055749+00:00",
+  "scraper_version": "0.1.0",
+  "stats": {
+    "product_count": 45,
+    "by_channel": {
+      "retail": 45
+    },
+    "by_type": {
+      "wet": 14,
+      "supplements": 2,
+      "dry": 29
+    }
+  },
+  "products": [
+    {
+      "name": "Beef & Vegetable Entree Adult Dog Wet Food - Grain Free",
+      "brand": "Authority",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/authority-beef-and-vegetable-entree-adult-dog-wet-food---grain-free-55-oz-87300.html",
+      "channel": "retail",
+      "product_type": "wet",
+      "product_line": "Everyday Health",
+      "life_stage": "adult",
+      "source_id": "5360043",
+      "images": [
+        "/products/authority/authority-wet-beef-vegetable-entree-adult-dog-wet-food-grain-free.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "5.5 oz",
+          "sku": "5360043"
+        }
+      ],
+      "ingredients_raw": "Beef Broth, Beef, Chicken, Chicken Liver, Green Beans, Carrots, Dried Egg Product, Dried Plain Beet Pulp, Potatoes, Ground Chickpeas, Ground Flaxseed, Sunflower Oil, Potassium Chloride, Pumpkin, Minerals (Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Sodium Selenite, Cobalt Proteinate, Potassium Iodide), Salt, Blueberries, Cranberries, Quinoa Seeds, Xanthan Gum, Cassia Gum, Vitamins (Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, D-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Choline Chloride, Inulin, L-Ascorbyl-2-Polyphosphate, Fish Oil (Preserved With Mixed Tocopherols)",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.0,
+        "crude_fat_min": 6.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 78.0,
+        "omega_6_min": 0.85,
+        "omega_3_min": 0.1
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1154 kcal/kg, 182 kcal/can"
+    },
+    {
+      "name": "Chicken & Carrot Entree Adult Dog Wet Food - Grain Free",
+      "brand": "Authority",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/authority-chicken-and-carrot-entree-adult-dog-wet-food---grain-free-55-oz-87298.html",
+      "channel": "retail",
+      "product_type": "wet",
+      "product_line": "Everyday Health",
+      "life_stage": "adult",
+      "source_id": "5360041",
+      "images": [
+        "/products/authority/authority-wet-chicken-carrot-entree-adult-dog-wet-food-grain-free.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "5.5 oz",
+          "sku": "5360041"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Broth, Chicken Liver, Carrots, Dried Plain Beet Pulp, Dried Egg Product, Potatoes, Ground Chickpeas, Ground Flaxseed, Potassium Chloride, Pumpkin, Minerals (Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Sodium Selenite, Cobalt Proteinate, Potassium Iodide), Salt, Cranberries, Blueberries, Quinoa Seeds, Xanthan Gum, Cassia Gum, Vitamins (Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, D-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Choline Chloride, Fish Oil (Preserved With Mixed Tocopherols), Inulin, L-Ascorbyl-2-Polyphosphate",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.0,
+        "crude_fat_min": 6.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 78.0,
+        "omega_6_min": 1.0,
+        "omega_3_min": 0.13
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1142 kcal/kg, 178 kcal/can"
+    },
+    {
+      "name": "Chicken & Carrot Entree Puppy Wet Dog Food - Grain Free",
+      "brand": "Authority",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/authority-chicken-and-carrot-entree-puppy-wet-dog-food---grain-free-55-oz-87299.html",
+      "channel": "retail",
+      "product_type": "wet",
+      "product_line": "Everyday Health",
+      "life_stage": "puppy",
+      "source_id": "5360042",
+      "images": [
+        "/products/authority/authority-wet-chicken-carrot-entree-puppy-wet-dog-food-grain-free.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "5.5 oz",
+          "sku": "5360042"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Broth, Chicken Liver, Turkey, Carrots, Dried Egg Product, Pea Protein, Dried Plain Beet Pulp, Potatoes, Ground Chickpeas, Ground Flaxseed, Fish Oil (Preserved With Mixed Tocopherols) (Source Of EPA And DHA), Potassium Chloride, Pumpkin, Minerals (Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Sodium Selenite, Cobalt Proteinate, Potassium Iodide), Salt, Blueberries, Cranberries, Quinoa Seeds, Xanthan Gum, Cassia Gum, Vitamins (Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, D-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Sodium Tripolyphosphate, Choline Chloride, Inulin, L-Ascorbyl-2-Polyphosphate, Magnesium Sulfate",
+      "guaranteed_analysis": {
+        "crude_protein_min": 10.0,
+        "crude_fat_min": 6.5,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 78.0,
+        "omega_6_min": 0.6,
+        "omega_3_min": 0.1
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1142 kcal/kg, 178 kcal/can"
+    },
+    {
+      "name": "Chicken & Vegetable Entree Senior 7+ Wet Dog Food - Grain Free",
+      "brand": "Authority",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/authority-chicken-and-vegetable-entree-senior-7-wet-dog-food---grain-free-55-oz-87301.html",
+      "channel": "retail",
+      "product_type": "wet",
+      "product_line": "Everyday Health",
+      "life_stage": "senior",
+      "source_id": "5360044",
+      "images": [
+        "/products/authority/authority-wet-chicken-vegetable-entree-senior-7-wet-dog-food-grain-free.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "5.5 oz",
+          "sku": "5360044"
+        }
+      ],
+      "ingredients_raw": "Chicken (Source Of Glucosamine Hydrochloride & Chondroitin Sulfate), Chicken Broth, Chicken Liver, Carrots, Dried Plain Beet Pulp, Potatoes, Ground Chickpeas, Ground Flaxseed, Powdered Cellulose, Dried Egg Product, Potassium Chloride, Pumpkin, Minerals (Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Sodium Selenite, Cobalt Proteinate, Potassium Iodide), Blueberries, Cranberries, Quinoa Seeds, Xanthan Gum, Cassia Gum, Vitamins (Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, D-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Salt, Choline Chloride, Inulin, L-Ascorbyl-2-Polyphosphate, Fish Oil (Preserved With Mixed Tocopherols), L-Carnitine",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 6.5,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 78.0,
+        "omega_6_min": 1.1,
+        "omega_3_min": 0.15
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1133 kcal/kg, 177 kcal/can"
+    },
+    {
+      "name": "Digestive Support All Life Stage Wet Dog Food",
+      "brand": "Authority",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/authority-digestive-support-all-life-stage-wet-dog-food---55-oz-63383.html",
+      "channel": "retail",
+      "product_type": "wet",
+      "product_line": "Digestive Support",
+      "life_stage": "all",
+      "source_id": "5309004",
+      "images": [
+        "/products/authority/authority-wet-digestive-support-all-life-stage-wet-dog-food.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "5.5 Oz",
+          "upc": "0737257933996",
+          "sku": "5309004"
+        }
+      ],
+      "ingredients_raw": "Pumpkin, Water Sufficient for Processing",
+      "guaranteed_analysis": {
+        "crude_protein_min": 1.0,
+        "crude_fat_min": 0.03,
+        "crude_fiber_max": 3.5,
+        "moisture_max": 92.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "275 kcal/kg, 43 kcal/can"
+    },
+    {
+      "name": "Everyday Health Adult Wet Dog Food",
+      "brand": "Authority",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/authority-everyday-health-adult-wet-dog-food---13-oz-51068.html",
+      "channel": "retail",
+      "product_type": "wet",
+      "product_line": "Everyday Health",
+      "life_stage": "adult",
+      "source_id": "5278696",
+      "images": [
+        "/products/authority/authority-wet-everyday-health-adult-wet-dog-food.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "13 Oz",
+          "upc": "0737257779792",
+          "sku": "5278696"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "13 Oz",
+          "upc": "0737257779808",
+          "sku": "5278698"
+        }
+      ],
+      "ingredients_raw": "Beef Broth, Beef, Beef Liver, Chicken, Rice, Dried Egg Product, Potato Starch, Wheat Gluten, Canola Oil, Corn Starch, Guar Gum, Dried Plain Beet Pulp, Natural Flavor, Calcium Carbonate, Salt, Sodium Phosphate, Potassium Chloride, Vitamins (Vitamin E Supplement, Thiamine Nitrate, Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid) Minerals (Ferrous Sulfate, Zinc Oxide, Copper Proteinate, Sodium Selenite, Manganese Sulfate, Potassium Iodide), Choline Chloride",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 4.5,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 80.0,
+        "omega_6_min": 0.5,
+        "omega_3_min": 0.05
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1055 kcal/kg, 388 kcal/can"
+    },
+    {
+      "name": "Everyday Health Adult Wet Dog Food",
+      "brand": "Authority",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/authority-everyday-health-adult-wet-dog-food---13-oz-51069.html",
+      "channel": "retail",
+      "product_type": "wet",
+      "product_line": "Everyday Health",
+      "life_stage": "adult",
+      "source_id": "5278697",
+      "images": [
+        "/products/authority/authority-wet-everyday-health-adult-wet-dog-food.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "13 Oz",
+          "upc": "0737257779785",
+          "sku": "5278697"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "13 Oz",
+          "upc": "0737257779860",
+          "sku": "5278699"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "13 Oz",
+          "upc": "0737257779853",
+          "sku": "5278701"
+        }
+      ],
+      "ingredients_raw": "Turkey Broth, Turkey, Chicken, Chicken Liver, Brewers Rice, Canola Oil, Rice Flour, Dried Plain Beet Pulp, Dried Egg Product, Guar Gum, Potassium Chloride, Carrageenan, Salt, Vitamins (Vitamin E Supplement, Thiamine Nitrate, Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid) Minerals (Ferrous Sulfate, Zinc Oxide, Copper Proteinate, Sodium Selenite, Manganese Sulfate, Potassium Iodide) Choline Chloride",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 4.5,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 78.0,
+        "ash_max": 2.5,
+        "omega_6_min": 0.75,
+        "omega_3_min": 0.075
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1139 kcal/kg, 420 kcal/can"
+    },
+    {
+      "name": "Everyday Health Chicken & Rice Entree Puppy Wet Dog Food",
+      "brand": "Authority",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/authority-everyday-health-chicken-and-rice-entree-puppy-wet-dog-food---13-oz-51056.html",
+      "channel": "retail",
+      "product_type": "wet",
+      "product_line": "Everyday Health",
+      "life_stage": "puppy",
+      "source_id": "5278684",
+      "images": [
+        "/products/authority/authority-wet-everyday-health-chicken-rice-entree-puppy-wet-dog-food.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "13 oz",
+          "upc": "0737257779761",
+          "sku": "5278684"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Broth, Chicken Liver, Dried Ground Peas, Brewers Rice, Rice Gluten, Dried Egg Product, Menhaden Fish Oil, Dried Plain Beet Pulp, Guar Gum, Natural Flavor, Dicacalcium Phosphate, Potassium Chloride, Salt, Carrageenan, Vitamins (Vitamin E Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid) Minerals (Ferrous Sulfate, Zinc Oxide, Copper Proteinate, Sodium Selenite, Manganese Sulfate, Potassium Iodide), Choline Chloride, L-Ascorbyl-2-Polyphosphate, Canola Oil",
+      "guaranteed_analysis": {
+        "crude_protein_min": 10.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 78.0,
+        "ash_max": 3.0,
+        "epa_min": 0.04,
+        "dha_min": 0.04,
+        "omega_6_min": 0.8,
+        "omega_3_min": 0.1
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1164 kcal/kg, 430 kcal/can"
+    },
+    {
+      "name": "Everyday Health Chicken & Rice Entree Senior 7+ Wet Dog Food",
+      "brand": "Authority",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/authority-everyday-health-chicken-and-rice-entree-senior-7-wet-dog-food---13-oz-51058.html",
+      "channel": "retail",
+      "product_type": "wet",
+      "product_line": "Everyday Health",
+      "life_stage": "senior",
+      "source_id": "5278708",
+      "images": [
+        "/products/authority/authority-wet-everyday-health-chicken-rice-entree-senior-7-wet-dog-food.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "13 oz",
+          "upc": "0737257779815",
+          "sku": "5278708"
+        }
+      ],
+      "ingredients_raw": "Chicken Broth, Chicken, Chicken Liver, Brewers Rice, Dried Plain Beet Pulp, Rice Flour, Rice Gluten, Dried Egg Product, Guar Gum, Carrageenan, Potassium Chloride, Salt, Canola Oil, Choline Chloride, Vitamins (Vitamin E Supplement, Thiamine Nitrate, Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid) Minerals (Ferrous Sulfate, Zinc Oxide, Copper Proteinate, Sodium Selenite, Manganese Sulfate, Potassium Iodide) Fish Oil",
+      "guaranteed_analysis": {
+        "crude_protein_min": 6.0,
+        "crude_fat_min": 3.5,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 78.0,
+        "omega_6_min": 0.6,
+        "omega_3_min": 0.06
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "989 kcal/kg, 364 kcal/can"
+    },
+    {
+      "name": "Healthy Weight All Life Stages Dog Food Supplement Topper - Pumpkin, Oatmeal & Spinach",
+      "brand": "Authority",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/authority-healthy-weight-all-life-stages-dog-food-supplement-topper---pumpkin-oatmeal-and-spinach-80294.html",
+      "channel": "retail",
+      "product_type": "supplements",
+      "product_line": "Healthy Weight",
+      "life_stage": "all",
+      "source_id": "5348102",
+      "images": [
+        "/products/authority/authority-supplements-healthy-weight-all-life-stages-dog-food-supplement-topper-pumpkin-oatmeal-spinac.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0196481056862",
+          "sku": "5348102"
+        }
+      ],
+      "ingredients_raw": "Pumpkin, Ground Oatmeal, Inulin, Dried Tomato Pomace, Spinach, Choline Chloride, Blueberry, Cinnamon, Calcium Carbonate, Calcium Pantothenate (Source Of Vitamin B5), Pyridoxine Hydrochloride (Source Of Vitamin B6), Folic Acid (Vitamin B9), Riboflavin (Vitamin B2)",
+      "guaranteed_analysis": {
+        "crude_protein_min": 0.3,
+        "crude_fat_min": 0.1,
+        "crude_fat_max": 0.7,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 95.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "279 kcal/kg, 119 kcal/can"
+    },
+    {
+      "name": "Healthy Weight Chicken Entree Adult Dog Wet Food",
+      "brand": "Authority",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/authority-healthy-weight-chicken-entree-adult-dog-wet-food---13-oz-80288.html",
+      "channel": "retail",
+      "product_type": "wet",
+      "product_line": "Healthy Weight",
+      "life_stage": "adult",
+      "source_id": "5348096",
+      "images": [
+        "/products/authority/authority-wet-healthy-weight-chicken-entree-adult-dog-wet-food.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "13 oz",
+          "upc": "0196481056619",
+          "sku": "5348096"
+        }
+      ],
+      "ingredients_raw": "Chicken Broth, Carrots, Chicken, Pork Liver, Peas, Wheat Gluten, Spinach, Powdered Cellulose, Potato Starch, Guar Gum, Rice, Flaxseed Meal, Salt, Natural Chicken Liver Flavor, Dried Tomato Pomace, Dried Plain Beet Pulp, Natural Flavor, Sodium Phosphate, Inulin, Potassium Chloride, Vitamins (Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, D-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Zinc Oxide, Ferrous Sulfate, Copper Proteinate, Sodium Selenite, Manganese Sulfate, Potassium Iodide), Choline Chloride, Taurine, Calcium Carbonate, L-Carnitine, Xanthan Gum, L-Ascorbyl-2-Polyphosphate",
+      "guaranteed_analysis": {
+        "crude_protein_min": 4.0,
+        "crude_fat_min": 1.5,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 84.0,
+        "omega_6_min": 0.75,
+        "omega_3_min": 0.075
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "796 kcal/kg, 294 kcal/can"
+    },
+    {
+      "name": "Sensitive Stomach & Skin Chicken Entree Adult Dog Wet Food",
+      "brand": "Authority",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/authority-sensitive-stomach-and-skin-chicken-entree-adult-dog-wet-food---13-oz-80290.html",
+      "channel": "retail",
+      "product_type": "wet",
+      "product_line": "Sensitive Stomach & Skin",
+      "life_stage": "adult",
+      "source_id": "5348098",
+      "images": [
+        "/products/authority/authority-wet-sensitive-stomach-skin-chicken-entree-adult-dog-wet-food.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "13 oz",
+          "upc": "0196481056596",
+          "sku": "5348098"
+        }
+      ],
+      "ingredients_raw": "Chicken Broth, Chicken, Turkey Liver, Green Beans, Carrots, Dried Peas, Turkey Heart, Potato Starch, Dried Egg Product, Pea Protein, Dried Plain Beet Pulp, Powdered Cellulose, Dried Tomato Pomace, Natural Chicken Liver Flavor, Guar Gum, Salt, Potassium Chloride, Fish Oil (Preserved With Mixed Tocopherols), Carrageenan, Calcium Carbonate, Vitamins (Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, D-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Zinc Oxide, Ferrous Sulfate, Copper Proteinate, Sodium Selenite, Manganese Sulfate, Potassium Iodide), Choline Chloride, Taurine, Tricalcium Phosphate, L-Ascorbyl-2-Polyphosphate, L-Carnitine",
+      "guaranteed_analysis": {
+        "crude_protein_min": 5.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0,
+        "omega_6_min": 0.75,
+        "omega_3_min": 0.075
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "982 kcal/kg, 362 kcal/can"
+    },
+    {
+      "name": "Sensitive Stomach & Skin Cuts in Gravy Adult Wet Dog Food - Lamb",
+      "brand": "Authority",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/authority-sensitive-stomach-and-skin-cuts-in-gravy-adult-wet-dog-food---lamb-13-oz-87319.html",
+      "channel": "retail",
+      "product_type": "wet",
+      "product_line": "Sensitive Stomach & Skin",
+      "life_stage": "adult",
+      "source_id": "5360289",
+      "images": [
+        "/products/authority/authority-wet-sensitive-stomach-skin-cuts-in-gravy-adult-wet-dog-food-lamb.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "13 oz",
+          "upc": "0196481089419",
+          "sku": "5360289"
+        }
+      ],
+      "ingredients_raw": "Lamb, Lamb Broth, Beef Broth, Animal Liver, Beef, Carrots, Dried Egg Product, Potato Starch, Green Beans, Natural Flavor, Guar Gum, Ground Flaxseed, Salt, Brewers Dried Yeast, Sunflower Oil, Sodium Phosphate, Potassium Chloride, Dried Plain Beet Pulp, Blueberries, Cranberries, Inulin, Vitamins (Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Oxide, Copper Proteinate, Sodium Selenite, Manganese Sulfate, Potassium Iodide), Choline Chloride, Magnesium Sulfate, Fish Oil (Preserved With Mixed Tocopherols), Calcium Carbonate",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.5,
+        "crude_fat_min": 6.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 82.0,
+        "omega_6_min": 0.3,
+        "omega_3_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1094 kcal/kg, 403 kcal/can"
+    },
+    {
+      "name": "Sensitive Stomach & Skin Turkey Entree Adult Wet Dog Food",
+      "brand": "Authority",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/authority-sensitive-stomach-and-skin-turkey-entree-adult-wet-dog-food---13-oz-80289.html",
+      "channel": "retail",
+      "product_type": "wet",
+      "product_line": "Sensitive Stomach & Skin",
+      "life_stage": "adult",
+      "source_id": "5348097",
+      "images": [
+        "/products/authority/authority-wet-sensitive-stomach-skin-turkey-entree-adult-wet-dog-food.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "13 oz",
+          "upc": "0196481056602",
+          "sku": "5348097"
+        }
+      ],
+      "ingredients_raw": "Chicken Broth, Turkey, Carrots, Pork Liver, Rice, Chicken, Wheat Gluten, Potato Starch, Spinach, Peas, Guar Gum, Natural Chicken Liver Flavor, Powdered Cellulose, Flaxseed Meal, Dried Plain Beet Pulp, Fish Oil (Preserved With Mixed Tocopherols), Salt, Natural Flavor, Sodium Phosphate, Inulin, Potassium Chloride, Calcium Carbonate, Choline Chloride, Vitamins (Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, D-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Zinc Oxide, Ferrous Sulfate, Copper Proteinate, Sodium Selenite, Manganese Sulfate, Potassium Iodide), Sunflower Oil, L-Carnitine, L-Ascorbyl-2-Polyphosphate",
+      "guaranteed_analysis": {
+        "crude_protein_min": 2.8,
+        "crude_fat_min": 1.9,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 86.0,
+        "omega_6_min": 0.6,
+        "omega_3_min": 0.1
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "908 kcal/kg, 335 kcal/can"
+    },
+    {
+      "name": "Sensitive Stomach & Skin Whitefish & Salmon Entree Adult Wet Dog Food",
+      "brand": "Authority",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/authority-sensitive-stomach-and-skin-whitefish-and-salmon-entree-adult-wet-dog-food---13-oz-80291.html",
+      "channel": "retail",
+      "product_type": "wet",
+      "product_line": "Sensitive Stomach & Skin",
+      "life_stage": "adult",
+      "source_id": "5348099",
+      "images": [
+        "/products/authority/authority-wet-sensitive-stomach-skin-whitefish-salmon-entree-adult-wet-dog-food.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "13 oz",
+          "upc": "0196481056640",
+          "sku": "5348099"
+        }
+      ],
+      "ingredients_raw": "Chicken Broth, Whitefish, Carrots, Turkey, Potatoes, Green Beans, Pea Protein, Salmon, Potato Starch, Dried Plain Beet Pulp, Dried Egg Product, Chicken Fat, Sunflower Oil, Natural Chicken Liver Flavor, Guar Gum, Salt, Potassium Chloride, Carrageenan, Vitamins (Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, D-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Zinc Oxide, Ferrous Sulfate, Copper Proteinate, Sodium Selenite, Manganese Sulfate, Potassium Iodide), Choline Chloride, Taurine, L-Ascorbyl-2-Polyphosphate, Calcium Carbonate, Tricalcium Phosphate, L-Carnitine",
+      "guaranteed_analysis": {
+        "crude_protein_min": 4.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 78.0,
+        "omega_6_min": 1.0,
+        "omega_3_min": 0.3
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1044 kcal/kg, 385 kcal/can"
+    },
+    {
+      "name": "Digestive Support Adult Dog Dry Food - Chicken & Rice",
+      "brand": "Authority",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/authority-digestive-support-adult-dog-dry-food---chicken-and-rice-80313.html",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Digestive Support",
+      "life_stage": "adult",
+      "source_id": "5348625",
+      "images": [
+        "/products/authority/authority-dry-digestive-support-adult-dog-dry-food-chicken-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0196481057951",
+          "sku": "5348625"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0196481057906",
+          "sku": "5348628"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0196481057968",
+          "sku": "5348630"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Meal, Dried Green Peas, Ground Brown Rice, Oatmeal, Chicken Fat (Preserved With Mixed Tocopherols), Brewers Dried Yeast, Dried Plain Beet Pulp, Flaxseed Meal, Pea Fiber, Natural Flavor, Dried Bacillus Coagulans Fermentation Product, Salmon Oil (Preserved With Mixed Tocopherols), Yeast Culture, Sodium Hexametaphosphate, Potassium Chloride, Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid), Choline Chloride, Minerals (Zinc Sulfate, Ferrous Sulfate, Copper Sulfate, Manganese Sulfate, Sodium Selenite, Calcium Iodate), Rosemary Extract, L-Ascorbyl-2-Polyphosphate",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 10.0,
+        "crude_fiber_max": 7.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8,
+        "omega_6_min": 2.0,
+        "omega_3_min": 0.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3600 kcal/kg, 409 kcal/cup"
+    },
+    {
+      "name": "Everyday Health Adult Dry Dog Food - Chicken & Rice",
+      "brand": "Authority",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/authority-everyday-health-adult-dry-dog-food---chicken-and-rice-49285.html",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Everyday Health",
+      "life_stage": "adult",
+      "source_id": "5279182",
+      "images": [
+        "/products/authority/authority-dry-everyday-health-adult-dry-dog-food-chicken-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257782792",
+          "sku": "5279182"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257782549",
+          "sku": "5279183"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257782747",
+          "sku": "5279195"
+        }
+      ],
+      "ingredients_raw": "Deboned Chicken, Chicken Meal, Brown Rice, Corn, Soybean Meal, Chicken Fat (Preserved With Mixed Tocopherols), Oatmeal, Dried Plain Beet Pulp, Natural Flavor, Canola Oil (Preserved with Mixed Tocopherols), Dried Egg Product, Dicalcium Phosphate, Potassium Chloride, Sodium Hexametaphosphate, Minerals (Zinc Sulfate, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Sodium Selenite), Inulin. Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Calcium Iodate, Folic Acid), Choline Chloride, Citric Acid (A Preservative), Mixed Tocopherols (A Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.5,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.1,
+        "phosphorus_min": 0.8,
+        "omega_6_min": 2.5,
+        "omega_3_min": 0.25
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3633 kcal/kg, 362 kcal/cup"
+    },
+    {
+      "name": "Everyday Health Adult Dry Dog Food - Lamb & Rice",
+      "brand": "Authority",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/authority-everyday-health-adult-dry-dog-food---lamb-and-rice-34-lb-49284.html",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Everyday Health",
+      "life_stage": "adult",
+      "source_id": "5279180",
+      "images": [
+        "/products/authority/authority-dry-everyday-health-adult-dry-dog-food-lamb-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "34 lb",
+          "upc": "0737257782624",
+          "sku": "5279180"
+        }
+      ],
+      "ingredients_raw": "Deboned Lamb, Lamb Meal, Brown Rice, Wheat, Wheat Germ Meal, Soybean Meal, Oatmeal, Brewers Rice, Chicken Fat (Preserved With Mixed Tocopherols), Rice Bran, Natural Flavor, Flaxseed, Sodium Hexametaphosphate, Minerals (Zinc Sulfate, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Sodium Selenite), Inulin, Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Calcium Iodate, Folic Acid), Taurine, Potassium Chloride, Choline Chloride, Citric Acid (A Preservative), Mixed Tocopherols (A Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 22.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.1,
+        "phosphorus_min": 1.0,
+        "omega_6_min": 2.0,
+        "omega_3_min": 0.3
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3585 kcal/kg, 360 kcal/cup"
+    },
+    {
+      "name": "Everyday Health All Life Stages Dry Dog Food - Chicken & Rice",
+      "brand": "Authority",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/authority-everyday-health-all-life-stages-dry-dog-food---chicken-and-rice-49288.html",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Everyday Health",
+      "life_stage": "all",
+      "source_id": "5279200",
+      "images": [
+        "/products/authority/authority-dry-everyday-health-all-life-stages-dry-dog-food-chicken-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257782822",
+          "sku": "5279200"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257782297",
+          "sku": "5279201"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257782532",
+          "sku": "5279202"
+        }
+      ],
+      "ingredients_raw": "Deboned Chicken, Chicken Meal, Brown Rice, Corn, Soybean Meal, Chicken Fat (Preserved With Mixed Tocopherols), Oatmeal, Dried Plain Beet Pulp, Natural Flavor, Dicalcium Phosphate, Fish Oil (Preserved With Mixed Tocopherols), Dried Egg Product, Potassium Chloride, Salt, Sodium Hexametaphosphate, Minerals (Zinc Sulfate, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Sodium Selenite), Choline Chloride, Inulin, Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Calcium Iodate, Folic Acid), Citric Acid (A Preservative), Mixed Tocopherols (A Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.025,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "omega_6_min": 2.5,
+        "omega_3_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3615 kcal/kg, 377 kcal/cup"
+    },
+    {
+      "name": "Everyday Health High Performance All Life Stages Dry Dog Food - Chicken & Rice",
+      "brand": "Authority",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/authority-everyday-health-high-performance-all-life-stages-dry-dog-food---chicken-and-rice-80286.html",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "High Performance",
+      "life_stage": "all",
+      "source_id": "5347829",
+      "images": [
+        "/products/authority/authority-dry-everyday-health-high-performance-all-life-stages-dry-dog-food-chicken-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0196481056176",
+          "sku": "5347829"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0196481056169",
+          "sku": "5347830"
+        }
+      ],
+      "ingredients_raw": "Deboned Chicken, Chicken Meal (Source Of Glucosamine), Brown Rice, Whole Barley, Turkey Meal, Chicken Fat (Preserved With Mixed Tocopherols), Grain Sorghum, Dried Yeast, Corn Gluten Meal, Dried Plain Beet Pulp, Natural Flavor, Flaxseed, Menhaden Fish Oil, Salt, Potassium Chloride, Dried Chicory Root, Choline Chloride, Taurine, Chicken Cartilage, Sodium Hexametaphosphate, Iron Proteinate, Zinc Proteinate, Copper Proteinate, Ferrous Sulfate, Zinc Sulfate, Manganese Sulfate, Copper Sulfate, Potassium Iodide, Manganese Proteinate, Sodium Selenite, Vitamin E Supplement, Vitamin A Supplement, Niacin, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid, Citric Acid (A Preservative), L-Carnitine",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 20.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 10.0,
+        "epa_min": 0.05,
+        "dha_min": 0.1,
+        "calcium_min": 2.0,
+        "phosphorus_min": 1.0,
+        "omega_6_min": 3.0,
+        "omega_3_min": 0.8
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3823 kcal/kg, 434 kcal/cup"
+    },
+    {
+      "name": "Everyday Health Large Breed Adult Dry Dog Food - Chicken & Rice",
+      "brand": "Authority",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/authority-everyday-health-large-breed-adult-dry-dog-food---chicken-and-rice-49281.html",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Everyday Health",
+      "life_stage": "adult",
+      "source_id": "5279156",
+      "images": [
+        "/products/authority/authority-dry-everyday-health-large-breed-adult-dry-dog-food-chicken-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257782501",
+          "sku": "5279156"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257782303",
+          "sku": "5279157"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0196481089549",
+          "sku": "5360304"
+        }
+      ],
+      "ingredients_raw": "Deboned Chicken, Chicken Meal, Brown Rice, Corn, Oat Groats, Corn Gluten Meal, Dried Plain Beet Pulp, Natural Flavor, Chicken Fat (Preserved With Mixed Tocopherols), Canola Oil (Preserved With Mixed Tocopherols), Dried Egg Product, Dicalcium Phosphate, Potassium Chloride, Sodium Hexametaphosphate, Minerals (Sodium Chloride, Zinc Sulfate, Iron Sulfate, Copper Sulfate, Manganese Sulfate, Sodium Selenite), Inulin, Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Calcium Iodate, Vitamin D3 Supplement, Folic Acid), Dried Chicken Cartilage (Source Of Glucosamine And Chondroitin Sulfate), Choline Chloride, Citric Acid (A Preservative), Mixed Tocopherols (A Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.1,
+        "phosphorus_min": 0.9,
+        "omega_6_min": 2.3,
+        "omega_3_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3539 kcal/kg, 355 kcal/cup"
+    },
+    {
+      "name": "Everyday Health Large Breed Adult Dry Dog Food - Lamb & Rice",
+      "brand": "Authority",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/authority-everyday-health-large-breed-adult-dry-dog-food---lamb-and-rice-34-lb-49267.html",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Everyday Health",
+      "life_stage": "adult",
+      "source_id": "5278893",
+      "images": [
+        "/products/authority/authority-dry-everyday-health-large-breed-adult-dry-dog-food-lamb-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "34 lb",
+          "upc": "0737257780767",
+          "sku": "5278893"
+        }
+      ],
+      "ingredients_raw": "Deboned Lamb, Lamb Meal, Brown Rice, Corn, Oat Groats, Corn Gluten Meal, Pearled Barley, Brewers Rice, Chicken Fat, Natural Flavor, Fish Meal, Dried Plain Beet Pulp, Dried Egg Product, Potassium Chloride, Choline Chloride, Sodium Hexametaphosphate, Dried Chicken Cartilage, Inulin, Vitamin E Supplement, Zinc Sulfate, L-Ascorbyl-2-Polyphosphate, Ferrous Sulfate, Calcium Carbonate, Copper Sulfate, Niacin Supplement, Manganese Sulfate, D-Calcium Pantothenate, Vitamin A Supplement, Biotin, Rosemary Extract, Sodium Selenite, Riboflavin Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Calcium Iodate, Vitamin D3 Supplement, Folic Acid",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "omega_6_min": 1.5,
+        "omega_3_min": 0.4
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3594 kcal/kg, 375 kcal/cup"
+    },
+    {
+      "name": "Everyday Health Large Breed Puppy Dry Dog Food - Chicken & Rice",
+      "brand": "Authority",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/authority-everyday-health-large-breed-puppy-dry-dog-food---chicken-and-rice-49265.html",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Everyday Health",
+      "life_stage": "puppy",
+      "source_id": "5278886",
+      "images": [
+        "/products/authority/authority-dry-everyday-health-large-breed-puppy-dry-dog-food-chicken-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257779976",
+          "sku": "5278886"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257780750",
+          "sku": "5278887"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257780804",
+          "sku": "5278888"
+        }
+      ],
+      "ingredients_raw": "Deboned Chicken, Chicken Meal, Brown Rice, Corn, Oat Groats, Corn Gluten Meal, Dried Plain Bet Pulp, Natural Flavor, Chicken Fat, Fish Oil, Canola Oil, Dried Egg Product, Salt, Potassium Chloride, Sodium Hexametaphosphate, Inulin, Choline Chloride, Dried Chicken Cartilage (Source Of Glucosamine And Chondroitin Sulfate), Vitamin E Supplement, Zinc Sulfate, Ferrous Sulfate, Calcium Carbonate, L-Ascorbyl-2-Polyphosphate, Rosemary Extract, Copper Sulfate, Manganese Sulfate, Niacin Supplement, D-Calcium Pantothenate, Vitamin A Supplement, Biotin, Riboflavin Supplement, Sodium Selenite, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Calcium Iodate, Vitamin D3 Supplement, Folic Acid",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 13.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 10.0,
+        "epa_min": 0.1,
+        "dha_min": 0.1,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "omega_6_min": 2.4,
+        "omega_3_min": 0.3
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3610 kcal/kg, 376 kcal/cup"
+    },
+    {
+      "name": "Everyday Health Large Breed Senior 7+ Dry Dog Food - Chicken & Rice",
+      "brand": "Authority",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/authority-everyday-health-large-breed-senior-7-dry-dog-food---chicken-and-rice-49278.html",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Everyday Health",
+      "life_stage": "senior",
+      "source_id": "5279174",
+      "images": [
+        "/products/authority/authority-dry-everyday-health-large-breed-senior-7-dry-dog-food-chicken-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257782617",
+          "sku": "5279174"
+        }
+      ],
+      "ingredients_raw": "Deboned Chicken, Chicken Meal, Brown Rice, Corn, Oat Groats, Dried Plain Beet Pulp, Corn Gluten Meal, Natural Flavor, Brewers Rice, Chicken Fat, Fish Oil, Powdered Cellulose, Dried Egg Product, Potassium Chloride, Sodium Hexametaphosphate, Minerals (Zinc Sulfate, Ferrous Sulfate, Copper Sulfate, Manganese Sulfate, Calcium Carbonate, Sodium Selenite, Calcium Iodate), Inulin, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate, Niacin Supplement, Vitamin A Supplement, D-Calcium Pantothenate, Riboflavin Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Thiamine Mononitrate, Folic Acid, Biotin, Vitamin B12 Supplement), Choline Chloride Dried Chicken Cartilage (Source Of Glucosamine And Chondroitin Sulfate), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 23.0,
+        "crude_fat_min": 10.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.1,
+        "calcium_min": 0.9,
+        "phosphorus_min": 0.8,
+        "omega_6_min": 2.3,
+        "omega_3_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3430 kcal/kg, 357 kcal/cup"
+    },
+    {
+      "name": "Everyday Health Puppy Dry Dog Food - Chicken & Rice",
+      "brand": "Authority",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/authority-everyday-health-puppy-dry-dog-food---chicken-and-rice-49268.html",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Everyday Health",
+      "life_stage": "puppy",
+      "source_id": "5278894",
+      "images": [
+        "/products/authority/authority-dry-everyday-health-puppy-dry-dog-food-chicken-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257780682",
+          "sku": "5278894"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257780675",
+          "sku": "5278895"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257779969",
+          "sku": "5278896"
+        }
+      ],
+      "ingredients_raw": "Deboned Chicken, Chicken Meal, Brown Rice, Corn, Corn Gluten Meal, Soybean Meal, Chicken Fat (Preserved With Mixed Tocopherols), Dried Plain Beet Pulp, Natural Flavor, Fish Oil (Preserved With Mixed Tocopherols), Dicalcium Phosphate, Canola Oil, Dried Egg Product, Oatmeal, Potassium Chloride, Salt Sodium Hexametaphosphate Minerals (Zinc Sulfate Ferrous Sulfate Manganese Sulfate Copper Sulfate Sodium Selenite) Inulin Vitamins (Vitamin E Supplement Vitamin A Supplement Niacin Supplement d-Calcium Pantothenate Riboflavin Supplement Thiamine Mononitrate Biotin Vitamin B12 Supplement Pyridoxine Hydrochloride Vitamin D3 Supplement Calcium Iodate Folic Acid) Choline Chloride Citric Acid (A Preservative) Mixed Tocopherols (A Preservative) Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 29.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 10.0,
+        "epa_min": 0.04,
+        "dha_min": 0.05,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "omega_6_min": 2.8,
+        "omega_3_min": 0.35
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3771 kcal/kg, 372 kcal/cup"
+    },
+    {
+      "name": "Everyday Health Senior 7+ Dry Dog Food - Chicken & Rice",
+      "brand": "Authority",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/authority-everyday-health-senior-7-dry-dog-food---chicken-and-rice-49286.html",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Everyday Health",
+      "life_stage": "senior",
+      "source_id": "5279196",
+      "images": [
+        "/products/authority/authority-dry-everyday-health-senior-7-dry-dog-food-chicken-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257782815",
+          "sku": "5279196"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257782358",
+          "sku": "5279198"
+        }
+      ],
+      "ingredients_raw": "Deboned Chicken, Chicken Meal, Brown Rice, Oatmeal, Corn, Soybean Meal, Brewers Rice, Dried Plain Beet Pulp, Chicken Fat (Preserved With Mixed Tocopherols), Natural Flavor, Fish Oil (Preserved With Mixed Tocopherols), Powdered Cellulose, Dried Egg Product, Potassium Chloride, Sodium Hexametaphosphate, Minerals (Zinc Sulfate, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Sodium Selenite), Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Calcium Iodate, Folic Acid), Inulin, Choline Chloride, Citric Acid (A Preservative), Mixed Tocopherols (A Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 23.0,
+        "crude_fat_min": 10.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "epa_min": 0.05,
+        "dha_min": 0.1,
+        "calcium_min": 0.9,
+        "phosphorus_min": 0.7,
+        "omega_6_min": 2.0,
+        "omega_3_min": 0.15
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3455 kcal/kg, 347 kcal/cup"
+    },
+    {
+      "name": "Everyday Health Small Breed Adult Dry Dog Food - Chicken & Rice",
+      "brand": "Authority",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/authority-everyday-health-small-breed-adult-dry-dog-food---chicken-and-rice-49282.html",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Everyday Health",
+      "life_stage": "adult",
+      "source_id": "5279160",
+      "images": [
+        "/products/authority/authority-dry-everyday-health-small-breed-adult-dry-dog-food-chicken-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257782396",
+          "sku": "5279160"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257782518",
+          "sku": "5279161"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257782280",
+          "sku": "5279164"
+        }
+      ],
+      "ingredients_raw": "Deboned Chicken, Chicken Meal, Brown Rice, Corn, Soybean Meal, Oatmeal, Chicken Fat (Preserved with Mixed Tocopherols), Dried Plain Beet Pulp, Natural Flavor, Canola Oil (Preserved with Mixed Tocopherols), Dried Egg Product, Dicalcium Phosphate, Potassium Chloride, Sodium Hexametaphosphate, Minerals (Zinc Sulfate, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Sodium Selenite), Inulin. Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Calcium Iodate, Folic Acid), Choline Chloride, Citric Acid (A Preservative), Mixed Tocopherols (A Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.1,
+        "phosphorus_min": 0.8,
+        "omega_6_min": 2.5,
+        "omega_3_min": 0.25
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3600 kcal/kg, 362 kcal/cup"
+    },
+    {
+      "name": "Everyday Health Small Breed Puppy Dry Dog Food - Chicken & Rice",
+      "brand": "Authority",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/authority-everyday-health-small-breed-puppy-dry-dog-food---chicken-and-rice-6-lb-49266.html",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Everyday Health",
+      "life_stage": "puppy",
+      "source_id": "5278890",
+      "images": [
+        "/products/authority/authority-dry-everyday-health-small-breed-puppy-dry-dog-food-chicken-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "6 lb",
+          "upc": "0737257780781",
+          "sku": "5278890"
+        }
+      ],
+      "ingredients_raw": "Deboned Chicken, Chicken Meal, Brown Rice, Corn, Corn Gluten Meal, Soybean Meal, Chicken Fat (Preserved With Mixed Tocopherols), Dried Plain Beet Pulp, Natural Flavor, Fish Oil (Preserved With Mixed Tocopherols), Dicalcium Phosphate, CanolaOil, Dried Egg Product, Oatmeal, Potassium Chloride, Salt, Sodium Hexametaphosphate, Minerals: Zinc Sulfate, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Sodium Selenite, Inulin, Vitamins: Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Calcium Iodate, Folic Acid, Choline Chloride, Citric Acid (A Preservative), Mixed Tocopherols (A Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.5,
+        "crude_fat_min": 18.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "epa_min": 0.05,
+        "dha_min": 0.05,
+        "calcium_min": 0.9,
+        "phosphorus_min": 0.7,
+        "omega_6_min": 2.5,
+        "omega_3_min": 0.1
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3703 kcal/kg, 386 kcal/cup"
+    },
+    {
+      "name": "Everyday Health Small Breed Senior 7+ Dry Dog Food - Chicken & Rice",
+      "brand": "Authority",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/authority-everyday-health-small-breed-senior-7-dry-dog-food---chicken-and-rice-49279.html",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Everyday Health",
+      "life_stage": "senior",
+      "source_id": "5279176",
+      "images": [
+        "/products/authority/authority-dry-everyday-health-small-breed-senior-7-dry-dog-food-chicken-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257782334",
+          "sku": "5279176"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257782709",
+          "sku": "5279177"
+        }
+      ],
+      "ingredients_raw": "Deboned Chicken, Chicken Meal, Brown Rice, Corn, Soybean Meal, Brewers Rice, Dried Plain Beet Pulp, Chicken Fat (Preserved With Mixed Tocopherols), Natural Flavor, Fish Oil (Preserved With Mixed Tocopherols), Canola Oil, Sodium Hexametaphosphate, Flaxseed, Dried Egg Product, Potassium Chloride, Inulin, Minerals (Zinc Sulfate, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Sodium Selenite), Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Calcium Iodate, Folic Acid), Chicken Cartilage, Choline Chloride, Citric Acid (A Preservative), Mixed Tocopherols (A Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.5,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "epa_min": 0.05,
+        "dha_min": 0.05,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8,
+        "taurine_min": 0.15,
+        "omega_6_min": 1.2,
+        "omega_3_min": 0.3
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3530 kcal/kg, 354 kcal/cup"
+    },
+    {
+      "name": "Everyday Health Tender Blends Adult Dry Dog Food - Beef & Rice",
+      "brand": "Authority",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/authority-everyday-health-tender-blends-adult-dry-dog-food---beef-and-rice-87323.html",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Everyday Health",
+      "life_stage": "adult",
+      "source_id": "5360307",
+      "images": [
+        "/products/authority/authority-dry-everyday-health-tender-blends-adult-dry-dog-food-beef-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0196481089518",
+          "sku": "5360307"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0196481089464",
+          "sku": "5360308"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0196481089440",
+          "sku": "5360313"
+        }
+      ],
+      "ingredients_raw": "Beef, Brown Rice, Chicken Meal, Oatmeal, Corn, Soy Flour, Chicken Fat (Preserved With Mixed Tocopherols), Soybean Meal, Corn Protein Meal, Natural Flavor, Brewers Rice, Dried Plain Beet Pulp, Vegetable Glycerin, Dried Egg Product, Dicalcium Phosphate, Potassium Chloride, Sodium Hexametaphosphate, Minerals (Sodium Chloride, Zinc Sulfate, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Sodium Selenite), Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Calcium Iodate, Folic Acid),Choline Chloride, Inulin, Dried Cultured Whey, Citric Acid (A Preservative), Mixed Tocopherols (A Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "omega_6_min": 2.0,
+        "omega_3_min": 0.1
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3630 kcal/kg, 371 kcal/cup"
+    },
+    {
+      "name": "Everyday Health Tender Blends Adult Dry Dog Food - Chicken & Rice",
+      "brand": "Authority",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/authority-everyday-health-tender-blends-adult-dry-dog-food---chicken-and-rice-87324.html",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Everyday Health",
+      "life_stage": "adult",
+      "source_id": "5360309",
+      "images": [
+        "/products/authority/authority-dry-everyday-health-tender-blends-adult-dry-dog-food-chicken-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0196481089501",
+          "sku": "5360309"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0196481089457",
+          "sku": "5360310"
+        }
+      ],
+      "ingredients_raw": "Chicken, Brown Rice, Chicken Meal, Corn, Soybean Meal, Soy Flour, Chicken Fat (Preserved With Mixed Tocopherols), Oatmeal, Dried Plain Beet Pulp, Natural Flavor, Vegetable Glycerin, Vegetable Oil (Preserved With Mixed Tocopherols), Dried Egg Product, Dicalcium Phosphate, Potassium Chloride, Sodium Hexametaphosphate, Minerals (Sodium Chloride, Zinc Sulfate, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Sodium Selenite), Inulin, Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Calcium Iodate, Folic Acid), Choline Chloride, Dried Cultured Whey, Citric Acid (A Preservative), Mixed Tocopherols (A Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "omega_6_min": 2.5,
+        "omega_3_min": 0.1
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3610 kcal/kg, 363 kcal/cup"
+    },
+    {
+      "name": "Everyday Health Tender Blends Adult Dry Dog Food - Salmon & Rice",
+      "brand": "Authority",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/authority-everyday-health-tender-blends-adult-dry-dog-food---salmon-and-rice-87325.html",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Everyday Health",
+      "life_stage": "adult",
+      "source_id": "5360311",
+      "images": [
+        "/products/authority/authority-dry-everyday-health-tender-blends-adult-dry-dog-food-salmon-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0196481089471",
+          "sku": "5360311"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0196481089495",
+          "sku": "5360312"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0196481089426",
+          "sku": "5360314"
+        }
+      ],
+      "ingredients_raw": "Salmon, Brown Rice, Chicken Meal, Oatmeal, Corn, Soy Flour, Chicken Fat (Preserved With Mixed Tocopherols), Soybean Meal, Corn Protein Meal, Natural Flavor, Brewers Rice, Dried Plain Beet Pulp, Vegetable Glycerin, Dried Egg Product, Dicalcium Phosphate, Potassium Chloride, Sodium Hexametaphosphate, Minerals (Sodium Chloride, Zinc Sulfate, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Sodium Selenite), Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Calcium Iodate, Folic Acid), Choline Chloride, Inulin, Dried Cultured Whey, Citric Acid (A Preservative), Mixed Tocopherols (A Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "omega_6_min": 2.0,
+        "omega_3_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3640 kcal/kg, 372 kcal/cup"
+    },
+    {
+      "name": "Healthy Weight Adult Dog Dry Food - Chicken & Rice",
+      "brand": "Authority",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/authority-healthy-weight-adult-dog-dry-food---chicken-and-rice-80303.html",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Healthy Weight",
+      "life_stage": "adult",
+      "source_id": "5348615",
+      "images": [
+        "/products/authority/authority-dry-healthy-weight-adult-dog-dry-food-chicken-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0196481057784",
+          "sku": "5348615"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0196481057982",
+          "sku": "5348629"
+        }
+      ],
+      "ingredients_raw": "Deboned Chicken, Chicken Meal, Brown Rice, Pearled Barley, Peas, Oatmeal, Turkey Meal, Powdered Cellulose, Soybean Meal, Natural Flavor, Pea Fiber, Dried Plain Beet Pulp, Chicken Fat (Preserved With Mixed Tocopherols), Flaxseed, Potassium Chloride, Sodium Hexametaphosphate, Choline Chloride, Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Calcium Iodate, Folic Acid), Minerals (Zinc Sulfate, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Sodium Selenite), Fish Oil (Preserved With Mixed Tocopherols), L-Carnitine, Citric Acid(Preservative), Mixed Tocopherols(Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 9.0,
+        "crude_fiber_max": 9.0,
+        "moisture_max": 10.0,
+        "calcium_min": 0.8,
+        "phosphorus_min": 0.6,
+        "omega_6_min": 1.0,
+        "omega_3_min": 0.1
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3075 kcal/kg, 309 kcal/cup"
+    },
+    {
+      "name": "Healthy Weight Adult Dog Dry Food - Chicken & Rice",
+      "brand": "Authority",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/authority-healthy-weight-adult-dog-dry-food---chicken-and-rice-80314.html",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Healthy Weight",
+      "life_stage": "adult",
+      "source_id": "5348626",
+      "images": [
+        "/products/authority/authority-dry-healthy-weight-adult-dog-dry-food-chicken-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0196481057913",
+          "sku": "5348626"
+        }
+      ],
+      "ingredients_raw": "Deboned Chicken, Chicken Meal, Brown Rice, Pearled Barley, Peas, Oatmeal, Turkey Meal, Powdered Cellulose, Soybean Meal, Natural Flavor, Pea Fiber, Dried Plain Beet Pulp, Chicken Fat (Preserved With Mixed Tocopherols), Flaxseed, Potassium Chloride, Sodium Hexametaphosphate, Choline Chloride, Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Calcium Iodate, Folic Acid), Minerals (Zinc Sulfate, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Sodium Selenite), Fish Oil (Preserved With Mixed Tocopherols), L-Carnitine, Citric Acid (Preservative), Mixed Tocopherols (Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 9.0,
+        "crude_fiber_max": 9.0,
+        "moisture_max": 10.0,
+        "calcium_min": 0.8,
+        "phosphorus_min": 0.6,
+        "omega_6_min": 1.0,
+        "omega_3_min": 0.1
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3075 kcal/kg, 309 kcal/cup"
+    },
+    {
+      "name": "Healthy Weight Large Breed Adult Dog Dry Food - Chicken & Rice",
+      "brand": "Authority",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/authority-healthy-weight-large-breed-adult-dog-dry-food---chicken-and-rice-34-lb-80302.html",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Healthy Weight",
+      "life_stage": "adult",
+      "source_id": "5348243",
+      "images": [
+        "/products/authority/authority-dry-healthy-weight-large-breed-adult-dog-dry-food-chicken-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "34 lb",
+          "upc": "0196481057791",
+          "sku": "5348243"
+        }
+      ],
+      "ingredients_raw": "Deboned Chicken, Chicken Meal, Brown Rice, Pearled Barley, Peas, Oatmeal, Turkey Meal, Powdered Cellulose, Soybean Meal, Natural Flavor, Pea Fiber, Dried Plain Beet Pulp, Chicken Fat (Preserved With Mixed Tocopherols), Flaxseed, Potassium Chloride, Sodium Hexametaphosphate, Choline Chloride, Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Calcium Iodate, Folic Acid), Minerals (Zinc Sulfate, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Sodium Selenite), Fish Oil (Preserved With Mixed Tocopherols), L-Carnitine, Citric Acid(Preservative), Mixed Tocopherols(Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 9.0,
+        "crude_fiber_max": 9.0,
+        "moisture_max": 10.0,
+        "calcium_min": 0.8,
+        "phosphorus_min": 0.6,
+        "omega_6_min": 1.0,
+        "omega_3_min": 0.1
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3075 kcal/kg, 309 kcal/cup"
+    },
+    {
+      "name": "High Performance All Life Stages Dry Dog Food - Turkey, Pea, Salmon, & Duck",
+      "brand": "Authority",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/authority-high-performance-all-life-stages-dry-dog-food---turkey-pea-salmon-and-duck-30-lb-80316.html",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "High Performance",
+      "life_stage": "all",
+      "source_id": "5348627",
+      "images": [
+        "/products/authority/authority-dry-high-performance-all-life-stages-dry-dog-food-turkey-pea-salmon-duck.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "30 lb",
+          "upc": "0196481057944",
+          "sku": "5348627"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "30 lb",
+          "upc": "0196481057937",
+          "sku": "5348631"
+        }
+      ],
+      "ingredients_raw": "Deboned Turkey, Chicken Meal, Dried Peas, Turkey Meal, Chicken Fat (Preserved With Mixed Tocopherols), Dried Lentils, Dried Plain Beet Pulp, Tapioca Starch, Dried Potatoes, Flaxseeds, Natural Flavor, Deboned Duck, Deboned Salmon, Fish Oil (Preserved With Mixed Tocopherols) (Source Of DHA), Potassium Chloride, Salt, Choline Chloride, Dried Chicken Cartilage (Source Of Glucosamine And Chondroitin Sulfate), Sodium Hexametaphosphate, Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-Calcium Pantothenate, Riboflavin Supplement, Thiamin Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Zinc Sulfate, Ferrous Sulfate, Copper Sulfate, Manganese Sulfate, Sodium Selenite), Taurine, Inulin, L-Carnitine, L-Ascorbyl-2-Polyphosphate, Calcium Carbonate, Calcium Iodate, Citric Acid (A Preservative), Mixed Tocopherols (A Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 20.0,
+        "crude_fiber_max": 6.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.1,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "taurine_min": 0.1,
+        "omega_6_min": 2.5,
+        "omega_3_min": 0.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3887 kcal/kg"
+    },
+    {
+      "name": "Sensitive Stomach & Skin Adult Dog Dry Food - Lamb & Rice",
+      "brand": "Authority",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/authority-sensitive-stomach-and-skin-adult-dog-dry-food---lamb-and-rice-63379.html",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Sensitive Stomach & Skin",
+      "life_stage": "adult",
+      "source_id": "5309277",
+      "images": [
+        "/products/authority/authority-dry-sensitive-stomach-skin-adult-dog-dry-food-lamb-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257936355",
+          "sku": "5309277"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257936331",
+          "sku": "5309278"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0196481057739",
+          "sku": "5348620"
+        }
+      ],
+      "ingredients_raw": "Deboned Lamb, Fish Meal, Brown Rice, Wheat, Wheat Germ Meal, Soybean Meal, Canola Oil (Preserved With Mixed Tocopherols), Brewers Rice, Corn Protein Concentrate, Natural Flavor, Rice Bran, Oatmeal, Flaxseed, Salt, Fish Oil (Preserved with Mixed Tocopherols), Calcium Carbonate, Sodium Hexametaphosphate, Dicalcium Phosphate, Potassium Chloride, Minerals (Zinc Sulfate, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Sodium Selenite), Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Calcium Iodate, Folic Acid), L-Threonine, Choline Chloride, Taurine, Citric Acid (A Preservative), Mixed Tocopherols (A Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 5.0,
+        "taurine_min": 0.1,
+        "omega_3_min": 0.4
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3620 kcal/kg, 405 kcal/cup"
+    },
+    {
+      "name": "Sensitive Stomach & Skin Adult Dry Dog Food - Chicken & Rice",
+      "brand": "Authority",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/authority-sensitive-stomach-and-skin-adult-dry-dog-food---chicken-and-rice-87318.html",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Sensitive Stomach & Skin",
+      "life_stage": "adult",
+      "source_id": "5360287",
+      "images": [
+        "/products/authority/authority-dry-sensitive-stomach-skin-adult-dry-dog-food-chicken-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0196481089532",
+          "sku": "5360287"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0196481089525",
+          "sku": "5360288"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Meal, Brown Rice, Wheat, Corn Gluten Meal, Chicken Fat (Preserved With Mixed Tocopherols), Whole Flaxseed, Barley, Dried Plain Beet Pulp, Oatmeal, Natural Flavor, Salmon Oil (Preserved With Mixed Tocopherols), Salt, Sodium Hexametaphosphate, Inulin, Potassium Chloride, Minerals (Ferrous Sulphate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Calcium Carbonate, Copper Sulphate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate), Vitamins (Vitamin E Supplement, L-Ascorbyl-2-polyphosphate, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), L-Threonine, Taurine, Choline Chloride, Mixed Tocopherols (A Preservative), Citric Acid (A Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "omega_6_min": 2.6,
+        "omega_3_min": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3495 kcal/kg, 385 kcal/cup"
+    },
+    {
+      "name": "Sensitive Stomach & Skin All Life Stages Dry Dog Food - Salmon & Rice",
+      "brand": "Authority",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/authority-sensitive-stomach-and-skin-all-life-stages-dry-dog-food---salmon-and-rice-63377.html",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Sensitive Stomach & Skin",
+      "life_stage": "all",
+      "source_id": "5309271",
+      "images": [
+        "/products/authority/authority-dry-sensitive-stomach-skin-all-life-stages-dry-dog-food-salmon-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257936324",
+          "sku": "5309271"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257936263",
+          "sku": "5309275"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257936225",
+          "sku": "5309276"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0196481089433",
+          "sku": "5360306"
+        }
+      ],
+      "ingredients_raw": "Salmon, Fish Meal, Brown Rice, Wheat, Wheat Germ Meal, Vegetable Oil (Preserved with Mixed Tocopherols), Corn Gluten Meal, Soybean Meal, Rice Bran, Brewers Rice, Oatmeal, Natural Flavor, Flaxseed, Calcium Carbonate, Fish Oil (Preserved with Mixed Tocopherols), Salt, Sodium Hexametaphosphate, Minerals (Zinc Sulfate, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Sodium Selenite), Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Calcium Iodate, Folic Acid), Choline Chloride, L-Threonine, Potassium Chloride, Taurine, Citric Acid (A Preservative), Mixed Tocopherols (A Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "epa_min": 0.1,
+        "dha_min": 0.1,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "omega_6_min": 2.0,
+        "omega_3_min": 0.4
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3645 kcal/kg, 366 kcal/cup"
+    },
+    {
+      "name": "Sensitive Stomach & Skin Large Breed Adult Dog Dry Food - Lamb & Rice",
+      "brand": "Authority",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/authority-sensitive-stomach-and-skin-large-breed-adult-dog-dry-food---lamb-and-rice-34-lb-80305.html",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Sensitive Stomach & Skin",
+      "life_stage": "adult",
+      "source_id": "5348617",
+      "images": [
+        "/products/authority/authority-dry-sensitive-stomach-skin-large-breed-adult-dog-dry-food-lamb-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "34 lb",
+          "upc": "0196481057753",
+          "sku": "5348617"
+        }
+      ],
+      "ingredients_raw": "Deboned Lamb, Fish Meal, Brown Rice, Wheat, Wheat Germ Meal, Soybean Meal, Canola Oil (Preserved With Mixed Tocopherols), Brewers Rice, Corn Protein Concentrate, Natural Flavor, Rice Bran, Oatmeal, Flaxseed, Salt, Fish Oil (Preserved With Mixed Tocopherols), Calcium Carbonate, Sodium Hexametaphosphate, Dicalcium Phosphate, Potassium Chloride, Minerals (Zinc Sulfate, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Sodium Selenite), Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Calcium Iodate, Folic Acid), L-Thiamine, Choline Chloride, Taurine, Citric Acid (A Preservative), Mixed Tocopherols (A Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.9,
+        "taurine_min": 0.1,
+        "omega_6_min": 2.0,
+        "omega_3_min": 0.4
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3620 kcal/kg, 405 kcal/cup"
+    },
+    {
+      "name": "Sensitive Stomach & Skin Large Breed Adult Dog Dry Food - Salmon & Rice",
+      "brand": "Authority",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/authority-sensitive-stomach-and-skin-large-breed-adult-dog-dry-food---salmon-and-rice-73796.html",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Sensitive Stomach & Skin",
+      "life_stage": "adult",
+      "source_id": "5333996",
+      "images": [
+        "/products/authority/authority-dry-sensitive-stomach-skin-large-breed-adult-dog-dry-food-salmon-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0196481014657",
+          "sku": "5333996"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0196481014640",
+          "sku": "5333997"
+        }
+      ],
+      "ingredients_raw": "Salmon, Fish Meal (Source Of Glucosamine And Chondroitin Sulfate), Brown Rice, Ground Wheat, Wheat Germ Meal, Vegetable Oil (Preserved With Mixed Tocopherols), Corn Protein Meal, Soybean Meal, Rice Bran, Brewers Rice, Oatmeal, Natural Flavor, Flaxseeds, Calcium Carbonate, Fish Oil (Preserved With Mixed Tocopherols), Salt, Sodium Hexametaphosphate, Minerals (Zinc Sulfate, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Sodium Selenite), Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, CalciumIodate, Folic Acid), Choline Chloride, L-Threonine, Potassium Chloride, Taurine, Citric Acid (A Preservative), Mixed Tocopherols (A Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "taurine_min": 0.1,
+        "omega_3_min": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3645 kcal/kg, 366 kcal/cup"
+    },
+    {
+      "name": "Sensitive Stomach & Skin Large Breed Puppy Dry Dog Food - Salmon & Rice",
+      "brand": "Authority",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/authority-sensitive-stomach-and-skin-large-breed-puppy-dry-dog-food---salmon-and-rice-34-lb-80304.html",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Sensitive Stomach & Skin",
+      "life_stage": "puppy",
+      "source_id": "5348616",
+      "images": [
+        "/products/authority/authority-dry-sensitive-stomach-skin-large-breed-puppy-dry-dog-food-salmon-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "34 lb",
+          "upc": "0196481057760",
+          "sku": "5348616"
+        }
+      ],
+      "ingredients_raw": "Salmon, Fish Meal, Brown Rice, Wheat, Wheat Germ Meal, Canola Oil (Preserved With Mixed Tocopherols), Corn Gluten Meal, Soybean Meal, Rice Bran, Brewers Rice, Oatmeal, Natural Flavor, Flaxseed, Calcium Carbonate, Fish Oil (Preserved With Mixed Tocopherols), Salt, Sodium Hexametaphosphate, Minerals (Zinc Sulfate, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Sodium Selenite), Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Calcium Iodate, Folic Acid), Choline Chloride, L-Threonine, Potassium Chloride, Taurine, Citric Acid (Preservative), Mixed Tocopherols (Preservative), Rosemary Extract)",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "epa_min": 0.1,
+        "dha_min": 0.1,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.9,
+        "taurine_min": 0.1,
+        "omega_6_min": 2.0,
+        "omega_3_min": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3645 kcal/kg, 366 kcal/cup"
+    },
+    {
+      "name": "Sensitive Stomach & Skin Puppy Dry Dog Food - Salmon & Rice",
+      "brand": "Authority",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/authority-sensitive-stomach-and-skin-puppy-dry-dog-food---salmon-and-rice-73797.html",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Sensitive Stomach & Skin",
+      "life_stage": "puppy",
+      "source_id": "5333998",
+      "images": [
+        "/products/authority/authority-dry-sensitive-stomach-skin-puppy-dry-dog-food-salmon-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0196481014633",
+          "sku": "5333998"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0196481014664",
+          "sku": "5333999"
+        }
+      ],
+      "ingredients_raw": "Salmon, Fish Meal, Brown Rice, Ground Wheat, Wheat Germ Meal, Vegetable Oil (Preserved With Mixed Tocopherols), Corn Protein Meal, Soybean Meal, Rice Bran, Brewers Rice, Oatmeal, Natural Flavor, Flaxseeds, Calcium Carbonate, Fish Oil (Preserved With Mixed Tocopherols), Salt, Sodium Hexametaphosphate, Minerals (Zinc Sulfate, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Sodium Selenite), Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Calcium Iodate, Folic Acid), Choline Chloride, L-Threonine, Potassium Chloride, Taurine, Citric Acid (A Preservative), Mixed Tocopherols (A Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "epa_min": 0.1,
+        "dha_min": 0.1,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "taurine_min": 0.1,
+        "omega_3_min": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3645 kcal/kg, 380 kcal/cup"
+    },
+    {
+      "name": "Sensitive Stomach & Skin Small Breed Adult Dog Dry Food Salmon & Rice",
+      "brand": "Authority",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/authority-sensitive-stomach-and-skin-small-breed-adult-dog-dry-food-salmon-and-rice---6-lb-80306.html",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Sensitive Stomach & Skin",
+      "life_stage": "adult",
+      "source_id": "5348618",
+      "images": [
+        "/products/authority/authority-dry-sensitive-stomach-skin-small-breed-adult-dog-dry-food-salmon-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "6 LB",
+          "upc": "0196481057746",
+          "sku": "5348618"
+        }
+      ],
+      "ingredients_raw": "Salmon, Fish Meal, Brown Rice, Wheat, Wheat Germ Meal, Canola Oil (Preserved With Mixed Tocopherols), Corn Gluten Meal, Soybean Meal, Rice Bran, Brewers Rice, Oatmeal, Natural Flavor, Flaxseed, Calcium Carbonate, Fish Oil (Preserved With Mixed Tocopherols), Salt, Sodium Hexametaphosphate, Minerals (Zinc Sulfate, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Sodium Selenite), Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Calcium Iodate, Folic Acid), Choline Chloride, L-Threonine, Potassium Chloride, taurine, citric acid (preservative), mixed tocopherols (preservative), rosemary extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.9,
+        "taurine_min": 0.1,
+        "omega_6_min": 2.0,
+        "omega_3_min": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3640 kcal/kg, 380 kcal/cup"
+    },
+    {
+      "name": "Digestive Support All Life Stages Wet Dog Food Supplement Topper - Pumpkin",
+      "brand": "Authority",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/authority-digestive-support-all-life-stages-wet-dog-food-supplement-topper---pumpkin-15-oz-64934.html",
+      "channel": "retail",
+      "product_type": "supplements",
+      "product_line": "Digestive Support",
+      "life_stage": "all",
+      "source_id": "5309002",
+      "images": [
+        "/products/authority/authority-supplements-digestive-support-all-life-stages-wet-dog-food-supplement-topper-pumpkin.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "15 oz",
+          "upc": "0737257935211",
+          "sku": "5309002"
+        }
+      ],
+      "ingredients_raw": "Pumpkin",
+      "guaranteed_analysis": {
+        "crude_protein_min": 1.0,
+        "crude_fat_min": 0.5,
+        "crude_fiber_max": 3.9,
+        "moisture_max": 90.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "263 kcal/kg, 111 kcal/can"
+    }
+  ]
+}

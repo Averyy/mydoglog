@@ -1,0 +1,5140 @@
+{
+  "families": {
+    "algae": {
+      "source_group": "other",
+      "members": {
+        "algae": {
+          "form": "raw"
+        },
+        "algae (source of DHA)": {
+          "form": "raw"
+        },
+        "Dried Marine Microalgae": {
+          "form": "dried"
+        },
+        "marine algae": {
+          "form": "raw"
+        },
+        "marine microalgae": {
+          "form": "raw"
+        },
+        "Marine Microalgae (source of DHA)": {
+          "form": "raw"
+        },
+        "marine microalgae oil": {
+          "form": "oil"
+        },
+        "spirulina": {
+          "form": "raw"
+        },
+        "algal oil": {
+          "form": "oil"
+        },
+        "Dried Kelp": {
+          "form": "dried"
+        },
+        "Kelp": {
+          "form": "raw"
+        }
+      }
+    },
+    "apple": {
+      "source_group": "fruit",
+      "members": {
+        "apple": {
+          "form": "whole"
+        },
+        "apple fibre": {
+          "form": "fiber"
+        },
+        "Apples": {
+          "form": "whole"
+        },
+        "apples*": {
+          "form": "whole"
+        },
+        "Dried Apple": {
+          "form": "dried"
+        },
+        "Dried Apples": {
+          "form": "dried"
+        },
+        "fresh apples": {
+          "form": "raw"
+        },
+        "fresh apples (4%)": {
+          "form": "raw"
+        },
+        "fresh whole apples": {
+          "form": "whole"
+        },
+        "whole apples": {
+          "form": "whole"
+        },
+        "Apple Pomace": {
+          "form": "fiber"
+        },
+        "Dried Apple Fibre": {
+          "form": "fiber"
+        },
+        "Dried Apple Pomace": {
+          "form": "fiber"
+        }
+      }
+    },
+    "arctic_char": {
+      "source_group": "fish",
+      "members": {
+        "Arctic Char": {
+          "form": "raw"
+        },
+        "raw arctic char": {
+          "form": "raw"
+        }
+      }
+    },
+    "avocado": {
+      "source_group": "fruit",
+      "members": {
+        "avocado": {
+          "form": "whole"
+        }
+      }
+    },
+    "banana": {
+      "source_group": "fruit",
+      "members": {
+        "Banana": {
+          "form": "whole"
+        },
+        "bananas": {
+          "form": "whole"
+        },
+        "Dried banana": {
+          "form": "dried"
+        }
+      }
+    },
+    "barley": {
+      "source_group": "grain",
+      "members": {
+        "Barley": {
+          "form": "whole"
+        },
+        "Barley Grass": {
+          "form": "whole"
+        },
+        "barley*": {
+          "form": "whole"
+        },
+        "Cracked Pearled Barley": {
+          "form": "whole"
+        },
+        "dehulled barley": {
+          "form": "whole"
+        },
+        "Ground Barley": {
+          "form": "ground"
+        },
+        "Malted Barley Flour": {
+          "form": "flour"
+        },
+        "pearl barley": {
+          "form": "whole"
+        },
+        "Pearled Barley": {
+          "form": "whole"
+        },
+        "Whole Barley": {
+          "form": "whole"
+        },
+        "Whole Grain Barley": {
+          "form": "whole"
+        }
+      }
+    },
+    "bean": {
+      "source_group": "legume",
+      "members": {
+        "Black Beans": {
+          "form": "whole"
+        },
+        "fava bean": {
+          "form": "whole"
+        },
+        "fava bean protein": {
+          "form": "concentrate"
+        },
+        "Fava Beans": {
+          "form": "whole"
+        },
+        "fava protein": {
+          "form": "concentrate"
+        },
+        "Navy Beans": {
+          "form": "whole"
+        },
+        "pinto bean flour": {
+          "form": "flour"
+        },
+        "whole navy beans": {
+          "form": "whole"
+        },
+        "whole pinto beans": {
+          "form": "whole"
+        },
+        "black bean": {
+          "form": "whole"
+        }
+      }
+    },
+    "beef": {
+      "source_group": "red_meat",
+      "members": {
+        "Beef": {
+          "form": "raw"
+        },
+        "Beef and Chicken Broth": {
+          "form": "broth"
+        },
+        "beef bone": {
+          "form": "organ"
+        },
+        "beef bone broth": {
+          "form": "broth"
+        },
+        "Beef Broth": {
+          "form": "broth"
+        },
+        "Beef By-Products": {
+          "form": "by_product"
+        },
+        "Beef Fat": {
+          "form": "fat"
+        },
+        "beef fat (2%)": {
+          "form": "fat"
+        },
+        "beef fat (5%)": {
+          "form": "fat"
+        },
+        "Beef Flavor": {
+          "form": "derivative"
+        },
+        "Natural Beef Stew Flavour": {
+          "form": "derivative"
+        },
+        "beef kidney": {
+          "form": "organ"
+        },
+        "Beef Liver": {
+          "form": "organ"
+        },
+        "beef lung": {
+          "form": "organ"
+        },
+        "Beef Meal": {
+          "form": "meal"
+        },
+        "beef meal (13%)": {
+          "form": "meal"
+        },
+        "beef meal (8%)": {
+          "form": "meal"
+        },
+        "beef spleen": {
+          "form": "organ"
+        },
+        "beef tripe": {
+          "form": "organ"
+        },
+        "Beefhide": {
+          "form": "raw"
+        },
+        "Certified Humane Beef": {
+          "form": "raw"
+        },
+        "Certified Humane Beef Liver": {
+          "form": "organ"
+        },
+        "de-boned beef": {
+          "form": "raw"
+        },
+        "Deboned Beef": {
+          "form": "raw"
+        },
+        "Dehydrated Beef (4%)": {
+          "form": "dried"
+        },
+        "dehydrated beef (5%)": {
+          "form": "dried"
+        },
+        "Dried Beef Bone Broth": {
+          "form": "broth"
+        },
+        "freeze-dried beef and liver": {
+          "form": "organ"
+        },
+        "freeze-dried beef liver": {
+          "form": "organ"
+        },
+        "Fresh deboned angus beef": {
+          "form": "raw"
+        },
+        "G.A.P. Step 4 Beef": {
+          "form": "raw"
+        },
+        "G.A.P. Step 4 Beef Bone Broth": {
+          "form": "broth"
+        },
+        "G.A.P. Step 4 Beef Liver": {
+          "form": "organ"
+        },
+        "G.A.P. Step 4 Ground Beef Bone": {
+          "form": "organ"
+        },
+        "Humanely Raised Beef": {
+          "form": "raw"
+        },
+        "Humanely Raised Beef Hearts": {
+          "form": "organ"
+        },
+        "Humanely Raised Beef Kidneys": {
+          "form": "organ"
+        },
+        "Humanely Raised Ground Beef Bone": {
+          "form": "organ"
+        },
+        "Raw beef (13%)": {
+          "form": "raw"
+        },
+        "Raw Beef (16%)": {
+          "form": "raw"
+        },
+        "Raw beef (18.5%)": {
+          "form": "raw"
+        },
+        "raw beef (6%)": {
+          "form": "raw"
+        },
+        "Raw beef (9%)": {
+          "form": "raw"
+        },
+        "Raw Beef Kidney (1%)": {
+          "form": "organ"
+        },
+        "raw beef kidney (1.5%)": {
+          "form": "organ"
+        },
+        "raw beef liver (4%)": {
+          "form": "organ"
+        },
+        "raw beef liver (5%)": {
+          "form": "organ"
+        },
+        "Raw Beef Liver (7%)": {
+          "form": "organ"
+        },
+        "raw beef organs (liver, kidney) (4%)": {
+          "form": "organ"
+        },
+        "Raw Beef Tripe (1%)": {
+          "form": "organ"
+        },
+        "raw beef tripe (1.5%)": {
+          "form": "organ"
+        },
+        "Raw beef": {
+          "form": "raw"
+        },
+        "raw beef kidney": {
+          "form": "organ"
+        },
+        "raw beef liver": {
+          "form": "organ"
+        },
+        "raw beef tripe": {
+          "form": "organ"
+        },
+        "raw beef organs (liver, kidney)": {
+          "form": "organ"
+        },
+        "dehydrated beef": {
+          "form": "dried"
+        },
+        "Natural Top Sirloin Flavour": {
+          "form": "derivative"
+        },
+        "Natural Porterhouse Flavour": {
+          "form": "derivative"
+        },
+        "Natural Prime Rib Flavour": {
+          "form": "derivative"
+        },
+        "Natural New York Strip Flavour": {
+          "form": "derivative"
+        },
+        "Natural Filet Mignon Flavour": {
+          "form": "derivative"
+        },
+        "Beef fat preserved with mixed-tocopherols": {
+          "form": "fat"
+        },
+        "Beef tallow preserved with mixed-tocopherols": {
+          "form": "fat"
+        }
+      }
+    },
+    "beet": {
+      "source_group": "root",
+      "members": {
+        "Beet Root": {
+          "form": "whole"
+        },
+        "fresh beet greens": {
+          "form": "raw"
+        }
+      }
+    },
+    "bison": {
+      "source_group": "red_meat",
+      "members": {
+        "Bison": {
+          "form": "raw"
+        },
+        "Buffalo": {
+          "form": "raw"
+        },
+        "deboned bison": {
+          "form": "raw"
+        },
+        "Humanely Raised Bison": {
+          "form": "raw"
+        },
+        "raw bison (2%)": {
+          "form": "raw"
+        },
+        "Roasted Bison": {
+          "form": "raw"
+        },
+        "Water Buffalo": {
+          "form": "raw"
+        }
+      }
+    },
+    "blackberry": {
+      "source_group": "fruit",
+      "members": {
+        "blackberries": {
+          "form": "whole"
+        }
+      }
+    },
+    "blueberry": {
+      "source_group": "fruit",
+      "members": {
+        "Blueberries": {
+          "form": "whole"
+        },
+        "blueberry": {
+          "form": "whole"
+        },
+        "Dried Blueberries": {
+          "form": "dried"
+        },
+        "Dried Ground Blueberries": {
+          "form": "dried"
+        },
+        "fresh whole blueberries": {
+          "form": "whole"
+        },
+        "Organic Blueberries": {
+          "form": "whole"
+        },
+        "whole blueberries": {
+          "form": "whole"
+        }
+      }
+    },
+    "borage": {
+      "source_group": "seed",
+      "members": {
+        "borage oil": {
+          "form": "oil"
+        }
+      }
+    },
+    "broccoli": {
+      "source_group": "vegetable",
+      "members": {
+        "broccoli": {
+          "form": "whole"
+        }
+      }
+    },
+    "canola": {
+      "source_group": "seed",
+      "members": {
+        "Canola Meal": {
+          "form": "meal"
+        },
+        "Canola Oil": {
+          "form": "oil"
+        },
+        "Canola Oil (source of Omega 6 Fatty Acids)": {
+          "form": "oil"
+        },
+        "canola oil ( preserved with mixed tocopherols and citric acid )": {
+          "form": "oil"
+        },
+        "canola oil ( preserved with mixed tocopherols and citric acid )flaxseed": {
+          "form": "oil"
+        },
+        "Canola Oil (preserve with Mixed Tocopherols and Citric Acid)": {
+          "form": "oil"
+        },
+        "Canola Oil (preserved with Mixed Tocopherols and Citric Acid)": {
+          "form": "oil"
+        },
+        "canola oil (preserved with mixed tocopherols)": {
+          "form": "oil"
+        }
+      }
+    },
+    "capelin": {
+      "source_group": "fish",
+      "members": {
+        "Capelin": {
+          "form": "raw"
+        },
+        "Capelin Broth": {
+          "form": "broth"
+        }
+      }
+    },
+    "carrot": {
+      "source_group": "vegetable",
+      "members": {
+        "Carrot": {
+          "form": "whole"
+        },
+        "Carrots": {
+          "form": "whole"
+        },
+        "Carrots (Dried)": {
+          "form": "dried"
+        },
+        "carrots*": {
+          "form": "whole"
+        },
+        "Dried Carrot": {
+          "form": "dried"
+        },
+        "Dried Carrots": {
+          "form": "dried"
+        },
+        "fresh carrots": {
+          "form": "raw"
+        },
+        "fresh whole carrots": {
+          "form": "whole"
+        },
+        "Organic Carrots": {
+          "form": "whole"
+        }
+      }
+    },
+    "chia": {
+      "source_group": "seed",
+      "members": {
+        "chia": {
+          "form": "whole"
+        },
+        "Chia Seed": {
+          "form": "whole"
+        },
+        "Chia Seeds": {
+          "form": "whole"
+        }
+      }
+    },
+    "chicken": {
+      "source_group": "poultry",
+      "members": {
+        "100% Animal Welfare Certified Chicken": {
+          "form": "raw"
+        },
+        "Boneless chicken": {
+          "form": "raw"
+        },
+        "Chicken": {
+          "form": "raw"
+        },
+        "Chicken (source of Glucosamine and Chondroitin Sulfate)": {
+          "form": "raw"
+        },
+        "Chicken (Source Of Glucosamine Hydrochloride & Chondroitin Sulfate)": {
+          "form": "raw"
+        },
+        "Chicken (Source Of Glucosamine Hydrochloride And Chondroitin Sulfate)": {
+          "form": "raw"
+        },
+        "chicken bone broth": {
+          "form": "broth"
+        },
+        "Chicken Broth": {
+          "form": "broth"
+        },
+        "Chicken By-Product": {
+          "form": "by_product"
+        },
+        "chicken by-product meal": {
+          "form": "meal"
+        },
+        "Chicken By-Product Meal (source of Glucosamine and Chondroitin Sulfate)": {
+          "form": "meal"
+        },
+        "Chicken By-Product Meal (source of Glucosamine and Chondrotin Sulfate)": {
+          "form": "meal"
+        },
+        "chicken by-products": {
+          "form": "by_product"
+        },
+        "Chicken Byproduct Meal (Source of Glucosamine and Chondroitin Sulfate)": {
+          "form": "meal"
+        },
+        "Chicken Cartilage": {
+          "form": "raw"
+        },
+        "chicken cartilage (a source of chondroitin sulphate)": {
+          "form": "raw"
+        },
+        "chicken cartilage (natural source of glucosamine)": {
+          "form": "raw"
+        },
+        "Chicken Cartilage (source of Chondroitin Sulfate)": {
+          "form": "raw"
+        },
+        "chicken fat": {
+          "form": "fat"
+        },
+        "chicken fat (0.5%)": {
+          "form": "fat"
+        },
+        "chicken fat (1%)": {
+          "form": "fat"
+        },
+        "chicken fat (1.5%)": {
+          "form": "fat"
+        },
+        "chicken fat (2%)": {
+          "form": "fat"
+        },
+        "chicken fat (3%)": {
+          "form": "fat"
+        },
+        "chicken fat (4%)": {
+          "form": "fat"
+        },
+        "chicken fat (6%)": {
+          "form": "fat"
+        },
+        "chicken fat (7%)": {
+          "form": "fat"
+        },
+        "chicken fat (8%)": {
+          "form": "fat"
+        },
+        "Chicken Gizzards": {
+          "form": "organ"
+        },
+        "chicken heart": {
+          "form": "organ"
+        },
+        "Chicken Hearts": {
+          "form": "organ"
+        },
+        "Chicken Liver": {
+          "form": "organ"
+        },
+        "Chicken Liver & Heart": {
+          "form": "organ"
+        },
+        "Chicken Liver and Duck": {
+          "form": "organ"
+        },
+        "Chicken Liver Flavor": {
+          "form": "derivative"
+        },
+        "Chicken Liver Flavour": {
+          "form": "derivative"
+        },
+        "Chicken Meal": {
+          "form": "meal"
+        },
+        "chicken meal (13%)": {
+          "form": "meal"
+        },
+        "chicken meal (14%)": {
+          "form": "meal"
+        },
+        "chicken meal (15%)": {
+          "form": "meal"
+        },
+        "chicken meal (16.5%)": {
+          "form": "meal"
+        },
+        "chicken meal (17%)": {
+          "form": "meal"
+        },
+        "chicken meal (18%)": {
+          "form": "meal"
+        },
+        "chicken meal (19%)": {
+          "form": "meal"
+        },
+        "chicken meal (20%)": {
+          "form": "meal"
+        },
+        "chicken meal (21%)": {
+          "form": "meal"
+        },
+        "Chicken meal (25%)": {
+          "form": "meal"
+        },
+        "chicken meal (9%)": {
+          "form": "meal"
+        },
+        "Chicken Meal (source of Chondroitin Sulfate)": {
+          "form": "meal"
+        },
+        "Chicken Meal (source of Glucosamine and Chondroitin Sulfate)": {
+          "form": "meal"
+        },
+        "Chicken Meal (source of Glucosamine)": {
+          "form": "meal"
+        },
+        "de-boned chicken": {
+          "form": "raw"
+        },
+        "Deboned Chicken": {
+          "form": "raw"
+        },
+        "dehydrated chicken": {
+          "form": "dried"
+        },
+        "dehydrated chicken (4%)": {
+          "form": "dried"
+        },
+        "dehydrated chicken (5%)": {
+          "form": "dried"
+        },
+        "Dehydrated Chicken (7%)": {
+          "form": "dried"
+        },
+        "dehydrated chicken liver": {
+          "form": "organ"
+        },
+        "dehydrated chicken liver (0.5%)": {
+          "form": "organ"
+        },
+        "dehydrated chicken liver (4%)": {
+          "form": "organ"
+        },
+        "Dehydrated Chicken Liver (7%)": {
+          "form": "organ"
+        },
+        "Dried Chicken": {
+          "form": "dried"
+        },
+        "Dried Chicken Cartilage": {
+          "form": "dried"
+        },
+        "Dried Chicken Cartilage (Source Of Glucosamine And Chondroitin Sulfate)": {
+          "form": "dried"
+        },
+        "egg and chicken flavor": {
+          "form": "derivative"
+        },
+        "Egg and Chicken Flavour": {
+          "form": "derivative"
+        },
+        "freeze-dried chicken": {
+          "form": "dried"
+        },
+        "freeze-dried chicken and liver": {
+          "form": "organ"
+        },
+        "freeze-dried chicken liver": {
+          "form": "organ"
+        },
+        "fresh chicken": {
+          "form": "raw"
+        },
+        "Fresh chicken (11%)": {
+          "form": "raw"
+        },
+        "Fresh chicken (13%)": {
+          "form": "raw"
+        },
+        "Fresh chicken (14%)": {
+          "form": "raw"
+        },
+        "Fresh chicken (16%)": {
+          "form": "raw"
+        },
+        "Fresh chicken (17%)": {
+          "form": "raw"
+        },
+        "Fresh chicken (18%)": {
+          "form": "raw"
+        },
+        "fresh chicken (18.5%)": {
+          "form": "raw"
+        },
+        "Fresh chicken (19%)": {
+          "form": "raw"
+        },
+        "Fresh chicken (19.5%)": {
+          "form": "raw"
+        },
+        "Fresh chicken (21%)": {
+          "form": "raw"
+        },
+        "Fresh chicken (22%)": {
+          "form": "raw"
+        },
+        "Fresh chicken (25%)": {
+          "form": "raw"
+        },
+        "Fresh chicken (29%)": {
+          "form": "raw"
+        },
+        "fresh chicken (8%)": {
+          "form": "raw"
+        },
+        "fresh chicken giblets (heart, liver) (4%)": {
+          "form": "organ"
+        },
+        "fresh chicken giblets (heart, liver) (6%)": {
+          "form": "organ"
+        },
+        "fresh chicken giblets (liver, heart) (10%)": {
+          "form": "organ"
+        },
+        "fresh chicken giblets (liver, heart) (4%)": {
+          "form": "organ"
+        },
+        "fresh chicken giblets (liver, heart) (5%)": {
+          "form": "organ"
+        },
+        "fresh chicken giblets (liver, heart) (6%)": {
+          "form": "organ"
+        },
+        "fresh chicken giblets (liver, heart) (6.5%)": {
+          "form": "organ"
+        },
+        "fresh chicken giblets (liver, heart) (7%)": {
+          "form": "organ"
+        },
+        "fresh chicken giblets (liver, heart) (9%)": {
+          "form": "organ"
+        },
+        "Fresh Chicken Giblets (Liver, Heart, Gizzard) (7%)": {
+          "form": "organ"
+        },
+        "fresh chicken giblets (liver, heart, gizzard)(6%)": {
+          "form": "organ"
+        },
+        "Fresh deboned chicken": {
+          "form": "raw"
+        },
+        "G.A.P. Step 2 Chicken": {
+          "form": "raw"
+        },
+        "G.A.P. Step 2 Chicken Bone Broth": {
+          "form": "broth"
+        },
+        "G.A.P. Step 2 Chicken Livers": {
+          "form": "organ"
+        },
+        "G.A.P. Step 2 Chicken Meal": {
+          "form": "meal"
+        },
+        "G.A.P. Step 2 Chicken Necks": {
+          "form": "raw"
+        },
+        "G.A.P. Step 2 Chicken with Ground Bone": {
+          "form": "organ"
+        },
+        "Humanely Raised Chicken": {
+          "form": "raw"
+        },
+        "Hydrolyzed Chicken": {
+          "form": "hydrolyzed",
+          "is_hydrolyzed": true
+        },
+        "Hydrolyzed Chicken Flavor": {
+          "form": "hydrolyzed",
+          "is_hydrolyzed": true
+        },
+        "hydrolyzed chicken giblets": {
+          "form": "hydrolyzed",
+          "is_hydrolyzed": true
+        },
+        "Hydrolyzed Chicken Liver": {
+          "form": "hydrolyzed",
+          "is_hydrolyzed": true
+        },
+        "Chicken with ground bone": {
+          "form": "raw"
+        },
+        "chicken giblets (liver, heart, gizzard)": {
+          "form": "raw"
+        },
+        "fresh chicken giblets (heart, liver)": {
+          "form": "organ"
+        },
+        "fresh chicken giblets (liver, heart)": {
+          "form": "organ"
+        },
+        "fresh chicken giblets (liver, heart, gizzard)": {
+          "form": "organ"
+        },
+        "chicken breast": {
+          "form": "raw"
+        },
+        "Natural Chicken Flavor": {
+          "form": "derivative"
+        },
+        "natural chicken flavour": {
+          "form": "derivative"
+        },
+        "Natural Chicken Liver Flavor": {
+          "form": "derivative"
+        },
+        "Natural Rotisserie Chicken Flavour": {
+          "form": "derivative"
+        },
+        "Natural Grilled Chicken Flavour": {
+          "form": "derivative"
+        },
+        "chicken fat ( preserved with mixed tocopherols and citric acid )": {
+          "form": "fat"
+        },
+        "chicken fat ( preserved with mixed tocopherols, a natural source of vitamin E)": {
+          "form": "fat"
+        },
+        "Chicken Fat (preserved with Mixed Tocopherols and Citric Acid)": {
+          "form": "fat"
+        },
+        "Chicken Fat (preserved with Mixed Tocopherols)": {
+          "form": "fat"
+        },
+        "chicken fat (stabilized with mixed tocopherols, a natural source of vitamin E)": {
+          "form": "fat"
+        },
+        "chicken fat(preserved with mixed tocopherols, a natural source of vitamin E)": {
+          "form": "fat"
+        }
+      }
+    },
+    "chickpea": {
+      "source_group": "legume",
+      "members": {
+        "chickpeas": {
+          "form": "whole"
+        },
+        "chickpeas*": {
+          "form": "whole"
+        },
+        "dried chickpeas": {
+          "form": "dried"
+        },
+        "Garbanzo Beans": {
+          "form": "whole"
+        },
+        "Garbanzo Beans (Chickpeas)": {
+          "form": "whole"
+        },
+        "Ground Chickpeas": {
+          "form": "ground"
+        },
+        "whole chickpeas": {
+          "form": "whole"
+        },
+        "chickpea fibre": {
+          "form": "fiber"
+        }
+      }
+    },
+    "clam": {
+      "source_group": "fish",
+      "members": {
+        "clams": {
+          "form": "raw"
+        }
+      }
+    },
+    "coconut": {
+      "source_group": "seed",
+      "members": {
+        "Coconut": {
+          "form": "whole"
+        },
+        "Coconut Meal": {
+          "form": "meal"
+        },
+        "Coconut Oil": {
+          "form": "oil"
+        }
+      }
+    },
+    "cod": {
+      "source_group": "fish",
+      "members": {
+        "cod": {
+          "form": "raw"
+        },
+        "Cod Broth": {
+          "form": "broth"
+        },
+        "Cod Liver Oil": {
+          "form": "oil"
+        },
+        "Cod Liver Oil 475 mg (Provides Omega-3 Fatty Acids (EPA & DHA) 60 mg)": {
+          "form": "oil"
+        },
+        "Cod Skins": {
+          "form": "derivative"
+        },
+        "de-boned cod": {
+          "form": "raw"
+        },
+        "freeze- dried cod liver": {
+          "form": "organ"
+        },
+        "freeze-dried cod and liver": {
+          "form": "organ"
+        },
+        "freeze-dried cod liver": {
+          "form": "organ"
+        },
+        "Wild-Caught Cod": {
+          "form": "raw"
+        }
+      }
+    },
+    "collard": {
+      "source_group": "vegetable",
+      "members": {
+        "collard greens": {
+          "form": "whole"
+        }
+      }
+    },
+    "corn": {
+      "source_group": "grain",
+      "members": {
+        "corn": {
+          "form": "whole"
+        },
+        "corn flour": {
+          "form": "flour"
+        },
+        "Corn Germ Meal": {
+          "form": "by_product"
+        },
+        "Corn Gluten Meal": {
+          "form": "meal"
+        },
+        "corn grits": {
+          "form": "ground"
+        },
+        "corn meal": {
+          "form": "meal"
+        },
+        "corn oil": {
+          "form": "oil"
+        },
+        "Corn Protein Concentrate": {
+          "form": "concentrate"
+        },
+        "Corn Protein Meal": {
+          "form": "meal"
+        },
+        "Corn Starch": {
+          "form": "starch"
+        },
+        "Ground Corn": {
+          "form": "ground"
+        },
+        "Ground Whole Grain Corn": {
+          "form": "ground"
+        },
+        "Ground Yellow Corn": {
+          "form": "ground"
+        },
+        "Hydrolyzed Corn Protein": {
+          "form": "hydrolyzed",
+          "is_hydrolyzed": true
+        },
+        "Whole Grain Corn": {
+          "form": "whole"
+        },
+        "Corn Starch-Modified": {
+          "form": "starch"
+        },
+        "modified corn starch": {
+          "form": "starch"
+        },
+        "Corn Syrup": {
+          "form": "derivative"
+        },
+        "High Fructose Corn Syrup": {
+          "form": "derivative"
+        },
+        "Hydrogenated Corn Syrup": {
+          "form": "derivative"
+        }
+      }
+    },
+    "cranberry": {
+      "source_group": "fruit",
+      "members": {
+        "Cranberries": {
+          "form": "whole"
+        },
+        "cranberry": {
+          "form": "whole"
+        },
+        "Dried Cranberries": {
+          "form": "dried"
+        },
+        "fresh whole cranberries": {
+          "form": "whole"
+        },
+        "Organic Cranberries": {
+          "form": "whole"
+        },
+        "Pressed Cranberries": {
+          "form": "whole"
+        },
+        "whole cranberries": {
+          "form": "whole"
+        },
+        "dehydrated cranberries": {
+          "form": "dried"
+        }
+      }
+    },
+    "crocodile": {
+      "source_group": "exotic",
+      "members": {
+        "alligator": {
+          "form": "raw"
+        }
+      }
+    },
+    "dairy": {
+      "source_group": "dairy",
+      "members": {
+        "casein": {
+          "form": "raw"
+        },
+        "Cheddar Cheese": {
+          "form": "raw"
+        },
+        "Cheddar Cheese Powder": {
+          "form": "raw"
+        },
+        "cheese": {
+          "form": "raw"
+        },
+        "Cheese Powder": {
+          "form": "raw"
+        },
+        "Cheese Powder (source of cheddar cheese flavour)": {
+          "form": "derivative"
+        },
+        "Cheese Powder (source of cheese flavour)": {
+          "form": "derivative"
+        },
+        "cottage cheese": {
+          "form": "raw"
+        },
+        "Dried Cheddar Cheese Powder": {
+          "form": "dried"
+        },
+        "Dried Cheese": {
+          "form": "dried"
+        },
+        "Dried Cultured Milk": {
+          "form": "dried"
+        },
+        "Dried Cultured Skim Milk": {
+          "form": "dried"
+        },
+        "Dried Cultured Whey": {
+          "form": "dried"
+        },
+        "dried hydrolyzed casein": {
+          "form": "hydrolyzed",
+          "is_hydrolyzed": true
+        },
+        "Dried Monterey Jack Cheese Powder": {
+          "form": "dried"
+        },
+        "Dried Skim Milk": {
+          "form": "dried"
+        },
+        "Dried Swiss Cheese Powder": {
+          "form": "dried"
+        },
+        "Dried Whey": {
+          "form": "dried"
+        },
+        "Dried Whey Protein Concentrate": {
+          "form": "concentrate"
+        },
+        "Whey protein concentrate": {
+          "form": "concentrate"
+        },
+        "Yogurt": {
+          "form": "raw"
+        }
+      }
+    },
+    "duck": {
+      "source_group": "poultry",
+      "members": {
+        "de-boned duck": {
+          "form": "raw"
+        },
+        "Deboned Duck": {
+          "form": "raw"
+        },
+        "Duck": {
+          "form": "raw"
+        },
+        "duck broth": {
+          "form": "broth"
+        },
+        "duck by-product meal": {
+          "form": "meal"
+        },
+        "duck fat": {
+          "form": "fat"
+        },
+        "duck fat (8%)": {
+          "form": "fat"
+        },
+        "duck liver": {
+          "form": "organ"
+        },
+        "Duck Meal": {
+          "form": "meal"
+        },
+        "duck meal (17%)": {
+          "form": "meal"
+        },
+        "Duck with ground bone": {
+          "form": "organ"
+        },
+        "freeze-dried duck": {
+          "form": "dried"
+        },
+        "freeze-dried duck and liver": {
+          "form": "organ"
+        },
+        "Raw duck (17%)": {
+          "form": "raw"
+        },
+        "raw duck (8.5%)": {
+          "form": "raw"
+        },
+        "raw duck liver (16%)": {
+          "form": "organ"
+        },
+        "raw duck liver (4%)": {
+          "form": "organ"
+        },
+        "Roasted Duck": {
+          "form": "raw"
+        },
+        "raw duck": {
+          "form": "raw"
+        },
+        "raw duck liver": {
+          "form": "organ"
+        }
+      }
+    },
+    "egg": {
+      "source_group": "egg",
+      "members": {
+        "dehydrated egg": {
+          "form": "dried"
+        },
+        "dehydrated egg (4%)": {
+          "form": "dried"
+        },
+        "Dried Egg": {
+          "form": "dried"
+        },
+        "Dried Egg Product": {
+          "form": "dried"
+        },
+        "Dried Egg White": {
+          "form": "dried"
+        },
+        "dried egg whites": {
+          "form": "dried"
+        },
+        "Egg Product": {
+          "form": "raw"
+        },
+        "Egg Product (Dried)": {
+          "form": "dried"
+        },
+        "Egg Whites": {
+          "form": "raw"
+        },
+        "Egg Yolks": {
+          "form": "raw"
+        },
+        "eggs": {
+          "form": "raw"
+        },
+        "eggs (4%)": {
+          "form": "raw"
+        },
+        "fresh egg (4%)": {
+          "form": "raw"
+        },
+        "Fresh Eggs (3%)": {
+          "form": "raw"
+        },
+        "fresh eggs (4%)": {
+          "form": "raw"
+        },
+        "fresh eggs (5%)": {
+          "form": "raw"
+        },
+        "fresh eggs (6%)": {
+          "form": "raw"
+        },
+        "fresh eggs (8%)": {
+          "form": "raw"
+        },
+        "fresh whole eggs": {
+          "form": "whole"
+        },
+        "Humanely Raised Dried Whole Egg": {
+          "form": "dried"
+        },
+        "Spray Dried Egg Product": {
+          "form": "dried"
+        },
+        "Sprayed Dried Egg Product": {
+          "form": "dried"
+        },
+        "whole dried egg": {
+          "form": "dried"
+        },
+        "whole eggs": {
+          "form": "whole"
+        },
+        "fresh egg": {
+          "form": "raw"
+        },
+        "fresh eggs": {
+          "form": "raw"
+        }
+      }
+    },
+    "elk": {
+      "source_group": "exotic",
+      "members": {
+        "100% naturally-shed elk antler": {
+          "form": "raw"
+        },
+        "ground elk antler": {
+          "form": "ground"
+        }
+      }
+    },
+    "flaxseed": {
+      "source_group": "seed",
+      "members": {
+        "Flax Seed": {
+          "form": "whole"
+        },
+        "Flaxseed": {
+          "form": "whole"
+        },
+        "Flaxseed (source of Omega 3 & 6 Fatty Acids)": {
+          "form": "whole"
+        },
+        "Flaxseed (source of Omega 3 & Omega 6 Fatty Acids)": {
+          "form": "whole"
+        },
+        "Flaxseed (source of Omega 3 and 6 Fatty Acids)": {
+          "form": "whole"
+        },
+        "Flaxseed (source of Omega 3 and Omega 6 Fatty Acids)": {
+          "form": "whole"
+        },
+        "Flaxseed (source of Omega 3 Fatty Acids)": {
+          "form": "whole"
+        },
+        "Flaxseed (source of Omega 6 Fatty Acids)": {
+          "form": "whole"
+        },
+        "Flaxseed Meal": {
+          "form": "meal"
+        },
+        "Flaxseed Oil": {
+          "form": "oil"
+        },
+        "flaxseed*": {
+          "form": "whole"
+        },
+        "Flaxseeds": {
+          "form": "whole"
+        },
+        "Ground Flaxseed": {
+          "form": "ground"
+        },
+        "Ground Flaxseeds": {
+          "form": "ground"
+        },
+        "Ground Whole Flaxseed": {
+          "form": "ground"
+        },
+        "Whole Flaxseed": {
+          "form": "whole"
+        }
+      }
+    },
+    "flounder": {
+      "source_group": "fish",
+      "members": {
+        "flounder": {
+          "form": "raw"
+        },
+        "raw flounder (4%)": {
+          "form": "raw"
+        },
+        "raw flounder (6%)": {
+          "form": "raw"
+        },
+        "raw flounder (9%)": {
+          "form": "raw"
+        },
+        "raw flounder": {
+          "form": "raw"
+        }
+      }
+    },
+    "goat": {
+      "source_group": "red_meat",
+      "members": {
+        "goat": {
+          "form": "raw"
+        },
+        "goat kidney": {
+          "form": "organ"
+        },
+        "goat liver": {
+          "form": "organ"
+        },
+        "goat tripe": {
+          "form": "organ"
+        },
+        "raw goat": {
+          "form": "raw"
+        }
+      }
+    },
+    "green_bean": {
+      "source_group": "vegetable",
+      "members": {
+        "Dried Green Beans": {
+          "form": "dried"
+        },
+        "Green Beans": {
+          "form": "whole"
+        },
+        "Green Beans (Dried)": {
+          "form": "dried"
+        },
+        "string beans": {
+          "form": "whole"
+        }
+      }
+    },
+    "haddock": {
+      "source_group": "fish",
+      "members": {
+        "Haddock": {
+          "form": "raw"
+        }
+      }
+    },
+    "hake": {
+      "source_group": "fish",
+      "members": {
+        "hake": {
+          "form": "raw"
+        },
+        "raw hake (4%)": {
+          "form": "raw"
+        },
+        "raw whole hake (10%)": {
+          "form": "whole"
+        },
+        "raw whole hake (4%)": {
+          "form": "whole"
+        },
+        "raw whole hake (4.5%)": {
+          "form": "whole"
+        },
+        "raw whole hake (5%)": {
+          "form": "whole"
+        },
+        "Raw Whole Hake (7%)": {
+          "form": "whole"
+        },
+        "raw whole hake (8%)": {
+          "form": "whole"
+        },
+        "raw hake": {
+          "form": "raw"
+        },
+        "raw whole hake": {
+          "form": "whole"
+        }
+      }
+    },
+    "hemp": {
+      "source_group": "seed",
+      "members": {
+        "Hemp Seed Oil": {
+          "form": "oil"
+        }
+      }
+    },
+    "herring": {
+      "source_group": "fish",
+      "members": {
+        "de-boned herring": {
+          "form": "raw"
+        },
+        "deboned herring": {
+          "form": "raw"
+        },
+        "Dehydrated Herring (2%)": {
+          "form": "dried"
+        },
+        "dehydrated herring (4%)": {
+          "form": "dried"
+        },
+        "dehydrated herring (4.5%)": {
+          "form": "dried"
+        },
+        "dehydrated herring (5%)": {
+          "form": "dried"
+        },
+        "Dehydrated Herring (7%)": {
+          "form": "dried"
+        },
+        "herring": {
+          "form": "raw"
+        },
+        "Herring Meal": {
+          "form": "meal"
+        },
+        "herring meal (18%)": {
+          "form": "meal"
+        },
+        "herring meal (2.5%)": {
+          "form": "meal"
+        },
+        "Herring meal (21%)": {
+          "form": "meal"
+        },
+        "herring meal (3%)": {
+          "form": "meal"
+        },
+        "herring meal (4%)": {
+          "form": "meal"
+        },
+        "herring meal (5%)": {
+          "form": "meal"
+        },
+        "herring meal (7%)": {
+          "form": "meal"
+        },
+        "herring meal (9%)": {
+          "form": "meal"
+        },
+        "herring oil (4%)": {
+          "form": "oil"
+        },
+        "Ocean Herring": {
+          "form": "raw"
+        },
+        "raw whole herring (10%)": {
+          "form": "whole"
+        },
+        "Raw whole herring (14%)": {
+          "form": "whole"
+        },
+        "raw whole herring (4%)": {
+          "form": "whole"
+        },
+        "raw whole herring (5%)": {
+          "form": "whole"
+        },
+        "raw whole herring (6%)": {
+          "form": "whole"
+        },
+        "Raw Whole Herring (7%)": {
+          "form": "whole"
+        },
+        "whole herring": {
+          "form": "whole"
+        },
+        "dehydrated herring": {
+          "form": "dried"
+        },
+        "herring oil": {
+          "form": "oil"
+        },
+        "raw whole herring": {
+          "form": "whole"
+        }
+      }
+    },
+    "kale": {
+      "source_group": "vegetable",
+      "members": {
+        "fresh kale": {
+          "form": "raw"
+        },
+        "Kale": {
+          "form": "whole"
+        },
+        "Organic Kale": {
+          "form": "whole"
+        }
+      }
+    },
+    "kangaroo": {
+      "source_group": "exotic",
+      "members": {
+        "dried kangaroo": {
+          "form": "dried"
+        },
+        "Kangaroo": {
+          "form": "raw"
+        },
+        "kangaroo liver": {
+          "form": "organ"
+        },
+        "Kangaroo Meal": {
+          "form": "meal"
+        }
+      }
+    },
+    "lamb": {
+      "source_group": "red_meat",
+      "members": {
+        "100% Animal Welfare Certified Lamb": {
+          "form": "raw"
+        },
+        "de-boned lamb": {
+          "form": "raw"
+        },
+        "Deboned Lamb": {
+          "form": "raw"
+        },
+        "dehydrated lamb (5%)": {
+          "form": "dried"
+        },
+        "freeze-dried lamb": {
+          "form": "dried"
+        },
+        "freeze-dried lamb and liver": {
+          "form": "organ"
+        },
+        "G.A.P. Step 4 Ground Lamb Bone": {
+          "form": "organ"
+        },
+        "G.A.P. Step 4 Lamb": {
+          "form": "raw"
+        },
+        "G.A.P. Step 4 Lamb Heart": {
+          "form": "organ"
+        },
+        "G.A.P. Step 4 Lamb Liver": {
+          "form": "organ"
+        },
+        "Lamb": {
+          "form": "raw"
+        },
+        "Lamb and Chicken Broth": {
+          "form": "broth"
+        },
+        "Lamb Broth": {
+          "form": "broth"
+        },
+        "lamb kidney": {
+          "form": "organ"
+        },
+        "lamb liver": {
+          "form": "organ"
+        },
+        "Lamb Meal": {
+          "form": "meal"
+        },
+        "Lamb meal (18%)": {
+          "form": "meal"
+        },
+        "lamb meal (8%)": {
+          "form": "meal"
+        },
+        "lamb tripe": {
+          "form": "organ"
+        },
+        "Raw lamb (21%)": {
+          "form": "raw"
+        },
+        "raw lamb (7%)": {
+          "form": "raw"
+        },
+        "raw lamb (8%)": {
+          "form": "raw"
+        },
+        "Raw Lamb (8.5%)": {
+          "form": "raw"
+        },
+        "raw lamb kidney (1%)": {
+          "form": "organ"
+        },
+        "raw lamb liver (0.5%)": {
+          "form": "organ"
+        },
+        "raw lamb liver (1.5%)": {
+          "form": "organ"
+        },
+        "raw lamb liver (4%)": {
+          "form": "organ"
+        },
+        "raw lamb organs (liver, kidney, tripe) (16%)": {
+          "form": "organ"
+        },
+        "raw lamb tripe (0.5%)": {
+          "form": "organ"
+        },
+        "raw lamb tripe (1%)": {
+          "form": "organ"
+        },
+        "Roasted Lamb": {
+          "form": "raw"
+        },
+        "Raw lamb": {
+          "form": "raw"
+        },
+        "raw lamb kidney": {
+          "form": "organ"
+        },
+        "raw lamb liver": {
+          "form": "organ"
+        },
+        "raw lamb tripe": {
+          "form": "organ"
+        },
+        "raw lamb organs (liver, kidney, tripe)": {
+          "form": "organ"
+        },
+        "lamb bone broth": {
+          "form": "broth"
+        },
+        "dehydrated lamb": {
+          "form": "dried"
+        },
+        "dehydrated mutton": {
+          "form": "dried"
+        },
+        "Natural Lamb Flavor": {
+          "form": "derivative"
+        },
+        "natural lamb flavour": {
+          "form": "derivative"
+        }
+      }
+    },
+    "lentil": {
+      "source_group": "legume",
+      "members": {
+        "Dried Lentils": {
+          "form": "dried"
+        },
+        "Green Lentils": {
+          "form": "whole"
+        },
+        "lentils": {
+          "form": "whole"
+        },
+        "red lentils": {
+          "form": "whole"
+        },
+        "whole green lentil": {
+          "form": "whole"
+        },
+        "whole green lentils": {
+          "form": "whole"
+        },
+        "whole lentils": {
+          "form": "whole"
+        },
+        "whole red lentils": {
+          "form": "whole"
+        },
+        "lentil fibre": {
+          "form": "fiber"
+        }
+      }
+    },
+    "mackerel": {
+      "source_group": "fish",
+      "members": {
+        "dehydrated mackerel": {
+          "form": "dried"
+        },
+        "dehydrated mackerel (4%)": {
+          "form": "dried"
+        },
+        "dehydrated mackerel (5%)": {
+          "form": "dried"
+        },
+        "mackerel": {
+          "form": "raw"
+        },
+        "mackerel meal": {
+          "form": "meal"
+        },
+        "mackerel meal (7%)": {
+          "form": "meal"
+        },
+        "Ocean Mackerel": {
+          "form": "raw"
+        },
+        "raw whole mackerel (11%)": {
+          "form": "whole"
+        },
+        "raw whole mackerel (5%)": {
+          "form": "whole"
+        },
+        "whole mackerel": {
+          "form": "whole"
+        },
+        "raw whole mackerel": {
+          "form": "whole"
+        }
+      }
+    },
+    "menhaden": {
+      "source_group": "fish",
+      "members": {
+        "Menhaden Fish Meal": {
+          "form": "meal"
+        },
+        "Menhaden Fish Meal (source of Omega 3 Fatty Acids)": {
+          "form": "meal"
+        },
+        "Menhaden Fish Oil": {
+          "form": "oil"
+        },
+        "Menhaden Meal": {
+          "form": "meal"
+        },
+        "Ocean Menhaden Fish Meal": {
+          "form": "meal"
+        }
+      }
+    },
+    "millet": {
+      "source_group": "grain",
+      "members": {
+        "Millet": {
+          "form": "whole"
+        },
+        "whole millet": {
+          "form": "whole"
+        }
+      }
+    },
+    "mussel": {
+      "source_group": "fish",
+      "members": {
+        "New Zealand Green Lipped Mussel": {
+          "form": "raw"
+        },
+        "New Zealand Green Mussel": {
+          "form": "raw"
+        },
+        "New Zealand green mussels": {
+          "form": "raw"
+        },
+        "freeze-dried green mussels": {
+          "form": "dried"
+        }
+      }
+    },
+    "oat": {
+      "source_group": "grain",
+      "members": {
+        "Ground Oatmeal": {
+          "form": "ground"
+        },
+        "ground oats": {
+          "form": "ground"
+        },
+        "Oat Fiber": {
+          "form": "fiber"
+        },
+        "Oat Fibre": {
+          "form": "fiber"
+        },
+        "Oat Flour": {
+          "form": "flour"
+        },
+        "oat groats": {
+          "form": "whole"
+        },
+        "oat groats (18%)": {
+          "form": "whole"
+        },
+        "oat groats (21%)": {
+          "form": "whole"
+        },
+        "oat groats (25%)": {
+          "form": "whole"
+        },
+        "Oat Hulls": {
+          "form": "fiber"
+        },
+        "Oat Meal": {
+          "form": "meal"
+        },
+        "Oatmeal": {
+          "form": "whole"
+        },
+        "Oats": {
+          "form": "whole"
+        },
+        "oats*": {
+          "form": "whole"
+        },
+        "steel cut oats": {
+          "form": "whole"
+        },
+        "Whole Grain Oats": {
+          "form": "whole"
+        },
+        "Whole Oat Meal": {
+          "form": "meal"
+        },
+        "whole oats": {
+          "form": "whole"
+        },
+        "whole oats (4%)": {
+          "form": "whole"
+        },
+        "whole oats (5%)": {
+          "form": "whole"
+        },
+        "oat bran": {
+          "form": "bran"
+        }
+      }
+    },
+    "papaya": {
+      "source_group": "fruit",
+      "members": {
+        "papaya": {
+          "form": "whole"
+        },
+        "papayas": {
+          "form": "whole"
+        }
+      }
+    },
+    "pea": {
+      "source_group": "legume",
+      "members": {
+        "Dried Green Peas": {
+          "form": "dried"
+        },
+        "Dried Ground Peas": {
+          "form": "dried"
+        },
+        "Dried Peas": {
+          "form": "dried"
+        },
+        "Field Peas": {
+          "form": "whole"
+        },
+        "Green Peas": {
+          "form": "whole"
+        },
+        "pea fiber": {
+          "form": "fiber"
+        },
+        "Pea Fibre": {
+          "form": "fiber"
+        },
+        "pea flour": {
+          "form": "flour"
+        },
+        "Pea Protein": {
+          "form": "concentrate"
+        },
+        "Pea Starch": {
+          "form": "starch"
+        },
+        "Peas": {
+          "form": "whole"
+        },
+        "Peas (Dried)": {
+          "form": "dried"
+        },
+        "whole green peas": {
+          "form": "whole"
+        },
+        "whole peas": {
+          "form": "whole"
+        },
+        "whole yellow peas": {
+          "form": "whole"
+        },
+        "Yellow Peas": {
+          "form": "whole"
+        }
+      }
+    },
+    "peanut": {
+      "source_group": "legume",
+      "members": {
+        "Peanut Butter": {
+          "form": "whole"
+        },
+        "Peanuts": {
+          "form": "whole"
+        }
+      }
+    },
+    "pear": {
+      "source_group": "fruit",
+      "members": {
+        "fresh pears": {
+          "form": "raw"
+        },
+        "fresh pears (4%)": {
+          "form": "raw"
+        },
+        "fresh whole pears": {
+          "form": "whole"
+        },
+        "organic pear": {
+          "form": "whole"
+        },
+        "pears": {
+          "form": "whole"
+        },
+        "whole pears": {
+          "form": "whole"
+        },
+        "organic pears": {
+          "form": "raw"
+        }
+      }
+    },
+    "pepper": {
+      "source_group": "vegetable",
+      "members": {
+        "bell peppers": {
+          "form": "whole"
+        },
+        "Red Bell Pepper": {
+          "form": "whole"
+        },
+        "Red Peppers": {
+          "form": "whole"
+        }
+      }
+    },
+    "perch": {
+      "source_group": "fish",
+      "members": {
+        "perch": {
+          "form": "raw"
+        }
+      }
+    },
+    "pike": {
+      "source_group": "fish",
+      "members": {
+        "northern pike": {
+          "form": "raw"
+        }
+      }
+    },
+    "pilchard": {
+      "source_group": "fish",
+      "members": {
+        "Raw whole pilchard (18%)": {
+          "form": "whole"
+        },
+        "whole pilchard": {
+          "form": "whole"
+        }
+      }
+    },
+    "pineapple": {
+      "source_group": "fruit",
+      "members": {
+        "pineapple": {
+          "form": "whole"
+        }
+      }
+    },
+    "pollock": {
+      "source_group": "fish",
+      "members": {
+        "de-boned Alaskan pollock": {
+          "form": "raw"
+        },
+        "dehydrated pollock (5%)": {
+          "form": "dried"
+        },
+        "Dehydrated Pollock (7%)": {
+          "form": "dried"
+        },
+        "Pollock": {
+          "form": "raw"
+        },
+        "Pollock Broth": {
+          "form": "broth"
+        },
+        "pollock meal (18%)": {
+          "form": "meal"
+        },
+        "pollock meal (5%)": {
+          "form": "meal"
+        },
+        "pollock oil": {
+          "form": "oil"
+        },
+        "pollock oil (0.5%)": {
+          "form": "oil"
+        },
+        "pollock oil (1%)": {
+          "form": "oil"
+        },
+        "Wild-Alaskan Pollock": {
+          "form": "raw"
+        },
+        "Wild-Caught Pollock": {
+          "form": "raw"
+        },
+        "dehydrated pollock": {
+          "form": "dried"
+        },
+        "pollock meal": {
+          "form": "meal"
+        }
+      }
+    },
+    "pomegranate": {
+      "source_group": "fruit",
+      "members": {
+        "pomegranate": {
+          "form": "whole"
+        },
+        "pomegranates": {
+          "form": "whole"
+        }
+      }
+    },
+    "pork": {
+      "source_group": "red_meat",
+      "members": {
+        "100% Animal Welfare Certified Pork": {
+          "form": "raw"
+        },
+        "Bacon": {
+          "form": "raw"
+        },
+        "Bacon Fat (preserved with BHA and citric acid)": {
+          "form": "fat"
+        },
+        "de-boned pork": {
+          "form": "raw"
+        },
+        "deboned pork": {
+          "form": "raw"
+        },
+        "dehydrated pork (3.5%)": {
+          "form": "dried"
+        },
+        "Dehydrated Pork Liver (1%)": {
+          "form": "organ"
+        },
+        "dried pork liver": {
+          "form": "organ"
+        },
+        "freeze-dried pork": {
+          "form": "dried"
+        },
+        "G.A.P. Step 1 Pork": {
+          "form": "raw"
+        },
+        "G.A.P. Step 1 Pork Bones": {
+          "form": "raw"
+        },
+        "G.A.P. Step 1 Pork Hearts": {
+          "form": "organ"
+        },
+        "G.A.P. Step 1 Pork Liver": {
+          "form": "organ"
+        },
+        "G.A.P. Step 1 Pork Neck Bones": {
+          "form": "raw"
+        },
+        "Pork": {
+          "form": "raw"
+        },
+        "Pork And Bone Meal": {
+          "form": "meal"
+        },
+        "pork broth": {
+          "form": "broth"
+        },
+        "pork by-products": {
+          "form": "by_product"
+        },
+        "pork digest": {
+          "form": "derivative"
+        },
+        "pork digest (source of collagen)": {
+          "form": "derivative"
+        },
+        "pork fat": {
+          "form": "fat"
+        },
+        "pork fat (11%)": {
+          "form": "fat"
+        },
+        "Pork Fat (4%)": {
+          "form": "fat"
+        },
+        "pork fat (5%)": {
+          "form": "fat"
+        },
+        "pork fat (6%)": {
+          "form": "fat"
+        },
+        "pork fat (7%)": {
+          "form": "fat"
+        },
+        "pork fat (8%)": {
+          "form": "fat"
+        },
+        "Pork Flavor": {
+          "form": "derivative"
+        },
+        "pork heart": {
+          "form": "organ"
+        },
+        "pork kidney": {
+          "form": "organ"
+        },
+        "Pork Liver": {
+          "form": "organ"
+        },
+        "pork liver (3%)": {
+          "form": "organ"
+        },
+        "Pork Liver and Lamb Liver": {
+          "form": "organ"
+        },
+        "Pork Liver Flavor": {
+          "form": "derivative"
+        },
+        "pork lung": {
+          "form": "organ"
+        },
+        "Pork Lungs": {
+          "form": "organ"
+        },
+        "pork meal": {
+          "form": "meal"
+        },
+        "pork meal (10%)": {
+          "form": "meal"
+        },
+        "pork meal (17%)": {
+          "form": "meal"
+        },
+        "pork meal (5%)": {
+          "form": "meal"
+        },
+        "pork meal (7%)": {
+          "form": "meal"
+        },
+        "pork meal (8%)": {
+          "form": "meal"
+        },
+        "Pork Protein Isolate": {
+          "form": "concentrate"
+        },
+        "Raw pork (17%)": {
+          "form": "raw"
+        },
+        "raw pork (4%)": {
+          "form": "raw"
+        },
+        "raw pork (6%)": {
+          "form": "raw"
+        },
+        "raw pork (7%)": {
+          "form": "raw"
+        },
+        "raw pork (8%)": {
+          "form": "raw"
+        },
+        "raw pork (9%)": {
+          "form": "raw"
+        },
+        "raw pork liver (1%)": {
+          "form": "organ"
+        },
+        "raw pork liver (17%)": {
+          "form": "organ"
+        },
+        "raw pork liver (4%)": {
+          "form": "organ"
+        },
+        "raw pork liver (5%)": {
+          "form": "organ"
+        },
+        "raw pork organs (liver, kidney) (5%)": {
+          "form": "organ"
+        },
+        "spray dried pork stock": {
+          "form": "dried"
+        },
+        "Technical Pork Gelatin": {
+          "form": "raw"
+        },
+        "raw pork": {
+          "form": "raw"
+        },
+        "raw pork liver": {
+          "form": "organ"
+        },
+        "dehydrated pork liver": {
+          "form": "dried"
+        },
+        "raw pork organs (liver, kidney)": {
+          "form": "organ"
+        },
+        "natural pork flavor": {
+          "form": "derivative"
+        },
+        "natural pork flavour": {
+          "form": "derivative"
+        },
+        "Pork Gelatin": {
+          "form": "derivative"
+        },
+        "pork plasma": {
+          "form": "derivative"
+        },
+        "pork fat ( preserved with mixed tocopherols and citric acid )": {
+          "form": "fat"
+        },
+        "pork fat (preserved with mixed tocopherols and citric acid)": {
+          "form": "fat"
+        },
+        "pork fat (preserved with mixed tocopherols)": {
+          "form": "fat"
+        },
+        "Natural Bacon Flavour": {
+          "form": "derivative"
+        }
+      }
+    },
+    "potato": {
+      "source_group": "root",
+      "members": {
+        "Burbank Potato": {
+          "form": "whole"
+        },
+        "Dried Potato": {
+          "form": "dried"
+        },
+        "dried potatoes": {
+          "form": "dried"
+        },
+        "Norkotah Potato": {
+          "form": "whole"
+        },
+        "Potato": {
+          "form": "whole"
+        },
+        "potato flour": {
+          "form": "flour"
+        },
+        "Potato Protein": {
+          "form": "concentrate"
+        },
+        "Potato Starch": {
+          "form": "starch"
+        },
+        "Potatoes": {
+          "form": "whole"
+        }
+      }
+    },
+    "pumpkin": {
+      "source_group": "fruit",
+      "members": {
+        "dehydrated pumpkin": {
+          "form": "dried"
+        },
+        "Dried Pumpkin": {
+          "form": "dried"
+        },
+        "freeze-dried pumpkin": {
+          "form": "dried"
+        },
+        "fresh whole pumpkin": {
+          "form": "whole"
+        },
+        "Organic Pumpkin": {
+          "form": "whole"
+        },
+        "Organic Pumpkin Seeds": {
+          "form": "whole"
+        },
+        "Pumpkin": {
+          "form": "whole"
+        },
+        "pumpkin seed": {
+          "form": "whole"
+        },
+        "whole pumpkin": {
+          "form": "whole"
+        }
+      }
+    },
+    "quail": {
+      "source_group": "poultry",
+      "members": {
+        "Quail": {
+          "form": "raw"
+        },
+        "raw quail (4%)": {
+          "form": "raw"
+        },
+        "Roasted Quail": {
+          "form": "raw"
+        },
+        "raw quail": {
+          "form": "raw"
+        }
+      }
+    },
+    "quinoa": {
+      "source_group": "grain",
+      "members": {
+        "Quinoa": {
+          "form": "whole"
+        },
+        "Quinoa Seed": {
+          "form": "whole"
+        },
+        "Quinoa Seeds": {
+          "form": "whole"
+        }
+      }
+    },
+    "rabbit": {
+      "source_group": "exotic",
+      "members": {
+        "dried rabbit": {
+          "form": "dried"
+        },
+        "Rabbit": {
+          "form": "raw"
+        },
+        "Rabbit Meal": {
+          "form": "meal"
+        }
+      }
+    },
+    "raspberry": {
+      "source_group": "fruit",
+      "members": {
+        "Raspberries": {
+          "form": "whole"
+        }
+      }
+    },
+    "rice": {
+      "source_group": "grain",
+      "members": {
+        "Brewers Rice": {
+          "form": "by_product"
+        },
+        "brewers rice flour": {
+          "form": "flour"
+        },
+        "Brown Rice": {
+          "form": "whole"
+        },
+        "Brown Rice Flour": {
+          "form": "flour"
+        },
+        "Ground Brown Rice": {
+          "form": "ground"
+        },
+        "ground rice": {
+          "form": "ground"
+        },
+        "Long Grain Rice": {
+          "form": "whole"
+        },
+        "Rice": {
+          "form": "whole"
+        },
+        "Rice Bran": {
+          "form": "bran"
+        },
+        "Rice Flour": {
+          "form": "flour"
+        },
+        "Rice Gluten": {
+          "form": "gluten"
+        },
+        "Rice Hulls": {
+          "form": "fiber"
+        },
+        "Rice Protein Concentrate": {
+          "form": "concentrate"
+        },
+        "Rice Starch": {
+          "form": "starch"
+        },
+        "white rice": {
+          "form": "whole"
+        },
+        "whole brown rice": {
+          "form": "whole"
+        },
+        "Whole Grain Brown Rice": {
+          "form": "whole"
+        },
+        "Wild Rice": {
+          "form": "whole"
+        },
+        "red rice": {
+          "form": "whole"
+        },
+        "Modified Rice Starch": {
+          "form": "starch"
+        }
+      }
+    },
+    "rockfish": {
+      "source_group": "fish",
+      "members": {
+        "Ocean Rockfish": {
+          "form": "raw"
+        },
+        "raw whole rockfish (4.5%)": {
+          "form": "whole"
+        },
+        "raw whole rockfish (6%)": {
+          "form": "whole"
+        },
+        "rockfish": {
+          "form": "raw"
+        },
+        "sebastes": {
+          "form": "raw"
+        },
+        "raw whole rockfish": {
+          "form": "whole"
+        }
+      }
+    },
+    "rye": {
+      "source_group": "grain",
+      "members": {
+        "Rye": {
+          "form": "whole"
+        }
+      }
+    },
+    "safflower": {
+      "source_group": "seed",
+      "members": {
+        "Gamma-Linolenic Acid Safflower Oil": {
+          "form": "oil"
+        },
+        "GLA safflower oil": {
+          "form": "oil"
+        }
+      }
+    },
+    "salmon": {
+      "source_group": "fish",
+      "members": {
+        "Boneless/skinless Salmon": {
+          "form": "raw"
+        },
+        "Canadian salmon meal": {
+          "form": "meal"
+        },
+        "Canadian salmon oil": {
+          "form": "oil"
+        },
+        "de-boned salmon": {
+          "form": "raw"
+        },
+        "Deboned Salmon": {
+          "form": "raw"
+        },
+        "Dehydrated Salmon (4%)": {
+          "form": "dried"
+        },
+        "freeze-dried salmon": {
+          "form": "dried"
+        },
+        "hydrolyzed salmon": {
+          "form": "hydrolyzed",
+          "is_hydrolyzed": true
+        },
+        "Raw salmon (19%)": {
+          "form": "raw"
+        },
+        "raw salmon (5%)": {
+          "form": "raw"
+        },
+        "Raw Salmon (7%)": {
+          "form": "raw"
+        },
+        "Salmon": {
+          "form": "raw"
+        },
+        "Salmon Broth": {
+          "form": "broth"
+        },
+        "Salmon Hydrolysate": {
+          "form": "hydrolyzed",
+          "is_hydrolyzed": true
+        },
+        "Salmon Meal": {
+          "form": "meal"
+        },
+        "Salmon Meal (source of Glucosamine and Chondroitin Sulfate)": {
+          "form": "meal"
+        },
+        "Salmon Meal (source of Omega 3 Fatty Acids)": {
+          "form": "meal"
+        },
+        "Salmon Oil": {
+          "form": "oil"
+        },
+        "Salmon Oil (a source of DHA)": {
+          "form": "oil"
+        },
+        "salmon oil (natural source of DHA)": {
+          "form": "oil"
+        },
+        "salmon oil (source of DHA)": {
+          "form": "oil"
+        },
+        "Smoke-Flavored Salmon": {
+          "form": "derivative"
+        },
+        "Wild-Alaskan Salmon Oil": {
+          "form": "oil"
+        },
+        "Wild-Caught Pacific Salmon": {
+          "form": "raw"
+        },
+        "Wild-Caught Salmon": {
+          "form": "raw"
+        },
+        "Raw salmon": {
+          "form": "raw"
+        },
+        "dehydrated salmon": {
+          "form": "raw"
+        },
+        "Salmon Oil (preserved with Mixed Tocopherols and Citric Acid)": {
+          "form": "oil"
+        },
+        "Salmon Oil (Preserved with Mixed Tocopherols)": {
+          "form": "oil"
+        }
+      }
+    },
+    "sardine": {
+      "source_group": "fish",
+      "members": {
+        "Dehydrated Sardine (2%)": {
+          "form": "dried"
+        },
+        "dehydrated sardine (3.5%)": {
+          "form": "dried"
+        },
+        "dehydrated sardine (4%)": {
+          "form": "dried"
+        },
+        "dehydrated sardine (4.5%)": {
+          "form": "dried"
+        },
+        "dehydrated sardine (5%)": {
+          "form": "dried"
+        },
+        "Dehydrated Sardine (7%)": {
+          "form": "dried"
+        },
+        "dehydrated sardine": {
+          "form": "dried"
+        },
+        "whole sardine": {
+          "form": "raw"
+        },
+        "Raw whole pilchard": {
+          "form": "raw"
+        }
+      }
+    },
+    "saskatoon_berry": {
+      "source_group": "fruit",
+      "members": {
+        "fresh whole saskatoon berries": {
+          "form": "whole"
+        },
+        "whole saskatoon berries": {
+          "form": "whole"
+        }
+      }
+    },
+    "shrimp": {
+      "source_group": "fish",
+      "members": {
+        "Shrimp Meal": {
+          "form": "meal"
+        },
+        "Shrimp Meal (source of Glucosamine and Chondroitin Sulfate)": {
+          "form": "meal"
+        },
+        "shrimps": {
+          "form": "raw"
+        },
+        "shrimp": {
+          "form": "raw"
+        }
+      }
+    },
+    "sole": {
+      "source_group": "fish",
+      "members": {
+        "raw whole sole (6%)": {
+          "form": "whole"
+        },
+        "sole": {
+          "form": "raw"
+        },
+        "raw whole sole": {
+          "form": "whole"
+        }
+      }
+    },
+    "sorghum": {
+      "source_group": "grain",
+      "members": {
+        "Grain Sorghum": {
+          "form": "whole"
+        },
+        "ground grain sorghum": {
+          "form": "ground"
+        },
+        "Ground Whole Grain Sorghum": {
+          "form": "ground"
+        },
+        "Milo": {
+          "form": "whole"
+        },
+        "Sorghum": {
+          "form": "whole"
+        },
+        "Sorghum (Milo)": {
+          "form": "whole"
+        },
+        "Whole Grain Sorghum": {
+          "form": "whole"
+        },
+        "whole sorghum": {
+          "form": "whole"
+        }
+      }
+    },
+    "soy": {
+      "source_group": "legume",
+      "members": {
+        "hydrolyzed soy protein": {
+          "form": "hydrolyzed",
+          "is_hydrolyzed": true
+        },
+        "hydrolyzed soy protein isolate": {
+          "form": "hydrolyzed",
+          "is_hydrolyzed": true
+        },
+        "Soy Flakes": {
+          "form": "whole"
+        },
+        "Soy Flour": {
+          "form": "flour"
+        },
+        "Soy Grits": {
+          "form": "ground"
+        },
+        "Soy lecithin": {
+          "form": "whole"
+        },
+        "Soy Protein Concentrate": {
+          "form": "concentrate"
+        },
+        "soy protein isolate": {
+          "form": "concentrate"
+        },
+        "soybean germ meal": {
+          "form": "meal"
+        },
+        "Soybean Hulls": {
+          "form": "fiber"
+        },
+        "Soybean Meal": {
+          "form": "meal"
+        },
+        "Soybean Mill Run": {
+          "form": "whole"
+        },
+        "Soybean Oil": {
+          "form": "oil"
+        }
+      }
+    },
+    "spinach": {
+      "source_group": "vegetable",
+      "members": {
+        "Dried Spinach": {
+          "form": "dried"
+        },
+        "fresh spinach": {
+          "form": "raw"
+        },
+        "Organic Spinach": {
+          "form": "whole"
+        },
+        "Spinach": {
+          "form": "whole"
+        },
+        "Spinach (Dried)": {
+          "form": "dried"
+        }
+      }
+    },
+    "squash": {
+      "source_group": "fruit",
+      "members": {
+        "butternut squash": {
+          "form": "whole"
+        },
+        "fresh whole butternut squash": {
+          "form": "whole"
+        },
+        "fresh whole butternut squash (4%)": {
+          "form": "whole"
+        },
+        "Organic Butternut Squash": {
+          "form": "whole"
+        },
+        "squash": {
+          "form": "whole"
+        },
+        "whole butternut squash": {
+          "form": "whole"
+        }
+      }
+    },
+    "sunflower": {
+      "source_group": "seed",
+      "members": {
+        "Organic Sunflower Seeds": {
+          "form": "whole"
+        },
+        "Sunflower Lecithin": {
+          "form": "whole"
+        },
+        "Sunflower Oil": {
+          "form": "oil"
+        },
+        "Sunflower Oil (source of Omega 6 Fatty Acids)": {
+          "form": "oil"
+        },
+        "Sunﬂower Oil": {
+          "form": "oil"
+        }
+      }
+    },
+    "sweet_potato": {
+      "source_group": "root",
+      "members": {
+        "dehydrated sweet potato": {
+          "form": "dried"
+        },
+        "dehydrated sweet potato (4%)": {
+          "form": "dried"
+        },
+        "dehydrated sweet potato (8%)": {
+          "form": "dried"
+        },
+        "Dried Sweet Potato": {
+          "form": "dried"
+        },
+        "Dried Sweet Potatoes": {
+          "form": "dried"
+        },
+        "Dried Yam": {
+          "form": "dried"
+        },
+        "freeze- dried sweet potatoes": {
+          "form": "dried"
+        },
+        "freeze-dried sweet potatoes": {
+          "form": "dried"
+        },
+        "Sweet Potato": {
+          "form": "whole"
+        },
+        "sweet potato flour": {
+          "form": "flour"
+        },
+        "Sweet Potatoes": {
+          "form": "whole"
+        },
+        "Sweet Potatoes (Dried)": {
+          "form": "dried"
+        },
+        "sweet potatoes*": {
+          "form": "whole"
+        }
+      }
+    },
+    "tapioca": {
+      "source_group": "root",
+      "members": {
+        "Cassava Root Flour": {
+          "form": "flour"
+        },
+        "tapioca": {
+          "form": "whole"
+        },
+        "Tapioca Starch": {
+          "form": "starch"
+        },
+        "modified tapioca starch": {
+          "form": "starch"
+        }
+      }
+    },
+    "tomato": {
+      "source_group": "fruit",
+      "members": {
+        "cherry tomatoes": {
+          "form": "whole"
+        },
+        "tomato": {
+          "form": "whole"
+        },
+        "tomato fibre": {
+          "form": "fiber"
+        },
+        "Tomatoes": {
+          "form": "whole"
+        },
+        "Tomatoes (Dried)": {
+          "form": "dried"
+        }
+      }
+    },
+    "trout": {
+      "source_group": "fish",
+      "members": {
+        "de-boned trout": {
+          "form": "raw"
+        },
+        "rainbow trout": {
+          "form": "raw"
+        },
+        "raw trout (4%)": {
+          "form": "raw"
+        },
+        "trout": {
+          "form": "raw"
+        },
+        "raw trout": {
+          "form": "raw"
+        },
+        "raw steelhead trout": {
+          "form": "raw"
+        }
+      }
+    },
+    "tuna": {
+      "source_group": "fish",
+      "members": {
+        "Tuna": {
+          "form": "raw"
+        },
+        "Tuna and Amberjack": {
+          "form": "raw"
+        }
+      }
+    },
+    "turkey": {
+      "source_group": "poultry",
+      "members": {
+        "Boneless turkey": {
+          "form": "raw"
+        },
+        "de-boned turkey": {
+          "form": "raw"
+        },
+        "Deboned Turkey": {
+          "form": "raw"
+        },
+        "dehydrated turkey": {
+          "form": "dried"
+        },
+        "Dehydrated Turkey (2%)": {
+          "form": "dried"
+        },
+        "dehydrated turkey (4%)": {
+          "form": "dried"
+        },
+        "dehydrated turkey (5%)": {
+          "form": "dried"
+        },
+        "Fresh turkey": {
+          "form": "raw"
+        },
+        "G.A.P. Step 1 Turkey": {
+          "form": "raw"
+        },
+        "G.A.P. Step 1 Turkey Livers": {
+          "form": "organ"
+        },
+        "G.A.P. Step 1 Turkey with Ground Bone": {
+          "form": "organ"
+        },
+        "G.A.P. Step 2 Turkey Bone Broth": {
+          "form": "broth"
+        },
+        "G.A.P. Step 2 Turkey Gizzards": {
+          "form": "organ"
+        },
+        "G.A.P. Step 2 Turkey Livers": {
+          "form": "organ"
+        },
+        "G.A.P. Step 2 Turkey Necks": {
+          "form": "raw"
+        },
+        "raw turkey (0.5%)": {
+          "form": "raw"
+        },
+        "raw turkey (11%)": {
+          "form": "raw"
+        },
+        "Raw turkey (19%)": {
+          "form": "raw"
+        },
+        "raw turkey (4%)": {
+          "form": "raw"
+        },
+        "raw turkey (4.5%)": {
+          "form": "raw"
+        },
+        "raw turkey (6%)": {
+          "form": "raw"
+        },
+        "Raw Turkey (7%)": {
+          "form": "raw"
+        },
+        "raw turkey (8%)": {
+          "form": "raw"
+        },
+        "raw turkey (9%)": {
+          "form": "raw"
+        },
+        "raw turkey liver (0.5%)": {
+          "form": "organ"
+        },
+        "raw turkey liver (1%)": {
+          "form": "organ"
+        },
+        "raw turkey liver (1.5%)": {
+          "form": "organ"
+        },
+        "Raw Turkey Liver (3%)": {
+          "form": "organ"
+        },
+        "raw turkey liver (4%)": {
+          "form": "organ"
+        },
+        "raw turkey liver (5%)": {
+          "form": "organ"
+        },
+        "raw turkey livers (0.5%)": {
+          "form": "organ"
+        },
+        "raw turkey livers (1%)": {
+          "form": "organ"
+        },
+        "Smoke-Flavored Turkey": {
+          "form": "derivative"
+        },
+        "Turkey": {
+          "form": "raw"
+        },
+        "Turkey (source of Glucosamine and Chondroitin Sulfate)": {
+          "form": "raw"
+        },
+        "turkey bone broth": {
+          "form": "broth"
+        },
+        "Turkey Broth": {
+          "form": "broth"
+        },
+        "Turkey Giblets": {
+          "form": "organ"
+        },
+        "turkey giblets (liver, heart, gizzard)": {
+          "form": "organ"
+        },
+        "Turkey Heart": {
+          "form": "organ"
+        },
+        "Turkey Liver": {
+          "form": "organ"
+        },
+        "Turkey Meal": {
+          "form": "meal"
+        },
+        "turkey meal (2%)": {
+          "form": "meal"
+        },
+        "turkey meal (4%)": {
+          "form": "meal"
+        },
+        "turkey meal (5%)": {
+          "form": "meal"
+        },
+        "turkey meal (6%)": {
+          "form": "meal"
+        },
+        "turkey meal (6.5%)": {
+          "form": "meal"
+        },
+        "turkey meal (7%)": {
+          "form": "meal"
+        },
+        "turkey with ground bone": {
+          "form": "organ"
+        },
+        "raw turkey": {
+          "form": "raw"
+        },
+        "raw turkey liver": {
+          "form": "organ"
+        },
+        "raw turkey livers": {
+          "form": "organ"
+        },
+        "Natural Roasted Turkey Flavour": {
+          "form": "derivative"
+        }
+      }
+    },
+    "turnip": {
+      "source_group": "vegetable",
+      "members": {
+        "fresh turnip greens": {
+          "form": "raw"
+        }
+      }
+    },
+    "venison": {
+      "source_group": "red_meat",
+      "members": {
+        "Certified Humane Venison": {
+          "form": "raw"
+        },
+        "de-boned venison": {
+          "form": "raw"
+        },
+        "Roasted Venison": {
+          "form": "raw"
+        },
+        "Venison": {
+          "form": "raw"
+        },
+        "Venison Broth": {
+          "form": "broth"
+        },
+        "Venison By-Products": {
+          "form": "by_product"
+        },
+        "venison kidney": {
+          "form": "organ"
+        },
+        "Venison Liver": {
+          "form": "organ"
+        },
+        "Venison Meal": {
+          "form": "meal"
+        },
+        "venison tripe": {
+          "form": "organ"
+        },
+        "raw venison": {
+          "form": "raw"
+        }
+      }
+    },
+    "wheat": {
+      "source_group": "grain",
+      "members": {
+        "gelatinized wheat flour": {
+          "form": "flour"
+        },
+        "Ground Wheat": {
+          "form": "ground"
+        },
+        "Ground Whole Wheat": {
+          "form": "ground"
+        },
+        "pasta": {
+          "form": "whole"
+        },
+        "spelt": {
+          "form": "whole"
+        },
+        "wheat": {
+          "form": "whole"
+        },
+        "Wheat Bran": {
+          "form": "bran"
+        },
+        "Wheat Flour": {
+          "form": "flour"
+        },
+        "Wheat Germ Meal": {
+          "form": "meal"
+        },
+        "wheat gluten": {
+          "form": "gluten"
+        },
+        "Wheat Starch": {
+          "form": "starch"
+        },
+        "Whole Grain Wheat": {
+          "form": "whole"
+        }
+      }
+    },
+    "whitefish": {
+      "source_group": "fish",
+      "members": {
+        "blue whiting meal": {
+          "form": "meal"
+        },
+        "blue whiting meal (7%)": {
+          "form": "meal"
+        },
+        "dehydrated blue whiting (4%)": {
+          "form": "dried"
+        },
+        "dehydrated whitefish (4%)": {
+          "form": "dried"
+        },
+        "dehydrated whitefish (5%)": {
+          "form": "dried"
+        },
+        "Ocean Whitefish": {
+          "form": "raw"
+        },
+        "Ocean Whitefish Meal": {
+          "form": "meal"
+        },
+        "White Fish": {
+          "form": "raw"
+        },
+        "white fish meal": {
+          "form": "meal"
+        },
+        "White Fish Oil (1%)": {
+          "form": "oil"
+        },
+        "Whitefish": {
+          "form": "raw"
+        },
+        "Whitefish (source of Omega 3 and 6 Fatty Acids)": {
+          "form": "fat"
+        },
+        "Whitefish Broth": {
+          "form": "broth"
+        },
+        "Whitefish Meal": {
+          "form": "meal"
+        },
+        "whitefish oil (0.5%)": {
+          "form": "oil"
+        },
+        "Whitefish Oil (1%)": {
+          "form": "oil"
+        },
+        "whitefish oil (2%)": {
+          "form": "oil"
+        },
+        "dehydrated whitefish": {
+          "form": "dried"
+        },
+        "dehydrated blue whiting": {
+          "form": "dried"
+        },
+        "white fish oil": {
+          "form": "oil"
+        },
+        "whitefish oil": {
+          "form": "oil"
+        }
+      }
+    },
+    "wild_boar": {
+      "source_group": "red_meat",
+      "members": {
+        "boar heart": {
+          "form": "organ"
+        },
+        "boar liver": {
+          "form": "organ"
+        },
+        "de-boned wild boar": {
+          "form": "raw"
+        },
+        "deboned wild boar": {
+          "form": "raw"
+        },
+        "wild boar": {
+          "form": "raw"
+        },
+        "wild boar heart": {
+          "form": "organ"
+        },
+        "wild boar liver": {
+          "form": "organ"
+        }
+      }
+    },
+    "zucchini": {
+      "source_group": "vegetable",
+      "members": {
+        "fresh whole zucchini": {
+          "form": "whole"
+        },
+        "fresh zucchini": {
+          "form": "raw"
+        },
+        "Zucchini": {
+          "form": "whole"
+        }
+      }
+    }
+  },
+  "cross_reactivity_groups": {
+    "poultry": [
+      "chicken",
+      "duck",
+      "quail",
+      "turkey"
+    ],
+    "ruminant": [
+      "beef",
+      "bison",
+      "lamb",
+      "venison",
+      "goat"
+    ],
+    "pork": [
+      "pork",
+      "wild_boar"
+    ],
+    "fish": [
+      "arctic_char",
+      "capelin",
+      "clam",
+      "cod",
+      "flounder",
+      "haddock",
+      "hake",
+      "herring",
+      "mackerel",
+      "menhaden",
+      "perch",
+      "pike",
+      "pilchard",
+      "pollock",
+      "rockfish",
+      "salmon",
+      "sardine",
+      "shrimp",
+      "sole",
+      "trout",
+      "tuna",
+      "whitefish"
+    ],
+    "exotic": [
+      "crocodile",
+      "elk",
+      "goat",
+      "kangaroo",
+      "rabbit",
+      "wild_boar"
+    ],
+    "shellfish": [
+      "clam",
+      "mussel",
+      "shrimp"
+    ]
+  },
+  "ambiguous": {
+    "Animal Digest": {
+      "could_be": [
+        "any"
+      ],
+      "source_group": "animal"
+    },
+    "Animal Fat": {
+      "could_be": [
+        "beef",
+        "pork",
+        "chicken"
+      ],
+      "source_group": "animal"
+    },
+    "Animal Liver": {
+      "could_be": [
+        "beef",
+        "pork",
+        "chicken"
+      ],
+      "source_group": "animal"
+    },
+    "Fish": {
+      "could_be": [
+        "salmon",
+        "herring",
+        "whitefish",
+        "menhaden"
+      ],
+      "source_group": "fish"
+    },
+    "Fish Bone Broth": {
+      "could_be": [
+        "salmon",
+        "herring",
+        "whitefish"
+      ],
+      "source_group": "fish"
+    },
+    "Fish Broth": {
+      "could_be": [
+        "salmon",
+        "herring",
+        "whitefish"
+      ],
+      "source_group": "fish"
+    },
+    "Fish Flavor": {
+      "could_be": [
+        "salmon",
+        "herring",
+        "whitefish",
+        "menhaden"
+      ],
+      "source_group": "fish"
+    },
+    "Fish Meal": {
+      "could_be": [
+        "salmon",
+        "herring",
+        "whitefish",
+        "menhaden"
+      ],
+      "source_group": "fish"
+    },
+    "Fish Meal (Source Of Glucosamine And Chondroitin Sulfate)": {
+      "could_be": [
+        "salmon",
+        "herring",
+        "whitefish",
+        "menhaden"
+      ],
+      "source_group": "fish"
+    },
+    "Fish Meal (source of ARA-Arachidonic Acid)": {
+      "could_be": [
+        "salmon",
+        "herring",
+        "whitefish",
+        "menhaden"
+      ],
+      "source_group": "fish"
+    },
+    "Fish Meal (source of Omega 3 Fatty Acids)": {
+      "could_be": [
+        "salmon",
+        "herring",
+        "whitefish",
+        "menhaden"
+      ],
+      "source_group": "fish"
+    },
+    "Fish Oil (Source Of DHA)": {
+      "could_be": [
+        "salmon",
+        "herring",
+        "menhaden",
+        "anchovy"
+      ],
+      "source_group": "fish"
+    },
+    "Fish Oil (source of ARA Arachidonic Acid and DHA-Docosahexaenoic Acid)": {
+      "could_be": [
+        "salmon",
+        "herring",
+        "menhaden",
+        "anchovy"
+      ],
+      "source_group": "fish"
+    },
+    "Fish Oil (source of ARA-Arachidonic Acid and DHA-Docosahexaenoic Acid)": {
+      "could_be": [
+        "salmon",
+        "herring",
+        "menhaden",
+        "anchovy"
+      ],
+      "source_group": "fish"
+    },
+    "Fish Oil (source of DHA - Docosahexaenoic Acid)": {
+      "could_be": [
+        "salmon",
+        "herring",
+        "menhaden",
+        "anchovy"
+      ],
+      "source_group": "fish"
+    },
+    "Fish Oil (source of DHA-Docosahexaenoic Acid and EPA-Eicosapentaenoic Acid)": {
+      "could_be": [
+        "salmon",
+        "herring",
+        "menhaden",
+        "anchovy"
+      ],
+      "source_group": "fish"
+    },
+    "Fish Oil (source of DHA-Docosahexaenoic Acid)": {
+      "could_be": [
+        "salmon",
+        "herring",
+        "menhaden",
+        "anchovy"
+      ],
+      "source_group": "fish"
+    },
+    "Fish Oil (source of DHA-Docosahexanoic Acid)": {
+      "could_be": [
+        "salmon",
+        "herring",
+        "menhaden",
+        "anchovy"
+      ],
+      "source_group": "fish"
+    },
+    "Fish Oil (source of EPA- Eicosapentaenoic Acid)": {
+      "could_be": [
+        "salmon",
+        "herring",
+        "menhaden",
+        "anchovy"
+      ],
+      "source_group": "fish"
+    },
+    "Fish Oil (source of EPA-Eicosapentaenoic Acid)": {
+      "could_be": [
+        "salmon",
+        "herring",
+        "menhaden",
+        "anchovy"
+      ],
+      "source_group": "fish"
+    },
+    "Fish Oil (source of Eicosapentaenoic Acid)": {
+      "could_be": [
+        "salmon",
+        "herring",
+        "menhaden",
+        "anchovy"
+      ],
+      "source_group": "fish"
+    },
+    "Fish Oil (source of Omega 3 Fatty Acids)": {
+      "could_be": [
+        "salmon",
+        "herring",
+        "menhaden",
+        "anchovy"
+      ],
+      "source_group": "fish"
+    },
+    "Liver": {
+      "could_be": [
+        "beef",
+        "pork",
+        "chicken"
+      ],
+      "source_group": "animal"
+    },
+    "Meat By-Products": {
+      "could_be": [
+        "beef",
+        "pork",
+        "lamb"
+      ],
+      "source_group": "mammal"
+    },
+    "Meat and Bone Meal": {
+      "could_be": [
+        "beef",
+        "pork",
+        "lamb"
+      ],
+      "source_group": "mammal"
+    },
+    "Natural Cheeseburger Flavour": {
+      "could_be": [
+        "beef",
+        "dairy"
+      ],
+      "source_group": "red_meat"
+    },
+    "Natural Flavor": {
+      "could_be": [
+        "any"
+      ],
+      "source_group": "unknown"
+    },
+    "Natural Flavor (fish and yeast)": {
+      "could_be": [
+        "salmon",
+        "herring",
+        "whitefish"
+      ],
+      "source_group": "fish"
+    },
+    "Natural Flavor (fish)": {
+      "could_be": [
+        "salmon",
+        "herring",
+        "whitefish"
+      ],
+      "source_group": "fish"
+    },
+    "Natural Flavor (plant)": {
+      "could_be": [
+        "any"
+      ],
+      "source_group": "unknown"
+    },
+    "Natural Flavor (yeast)": {
+      "could_be": [
+        "any"
+      ],
+      "source_group": "unknown"
+    },
+    "Natural Flavour": {
+      "could_be": [
+        "any"
+      ],
+      "source_group": "unknown"
+    },
+    "Natural Flavours": {
+      "could_be": [
+        "any"
+      ],
+      "source_group": "unknown"
+    },
+    "Ocean Fish Meal": {
+      "could_be": [
+        "salmon",
+        "herring",
+        "whitefish",
+        "menhaden"
+      ],
+      "source_group": "fish"
+    },
+    "Oceanfish": {
+      "could_be": [
+        "salmon",
+        "herring",
+        "whitefish",
+        "menhaden"
+      ],
+      "source_group": "fish"
+    },
+    "Pacific Ocean Fish Meal": {
+      "could_be": [
+        "salmon",
+        "herring",
+        "whitefish",
+        "menhaden"
+      ],
+      "source_group": "fish"
+    },
+    "Poultry Broth": {
+      "could_be": [
+        "chicken",
+        "turkey",
+        "duck"
+      ],
+      "source_group": "poultry"
+    },
+    "Poultry By-Product": {
+      "could_be": [
+        "chicken",
+        "turkey",
+        "duck"
+      ],
+      "source_group": "poultry"
+    },
+    "Poultry By-Product Meal": {
+      "could_be": [
+        "chicken",
+        "turkey",
+        "duck"
+      ],
+      "source_group": "poultry"
+    },
+    "Poultry Hearts": {
+      "could_be": [
+        "chicken",
+        "turkey",
+        "duck"
+      ],
+      "source_group": "poultry"
+    },
+    "Poultry Liver": {
+      "could_be": [
+        "chicken",
+        "turkey",
+        "duck"
+      ],
+      "source_group": "poultry"
+    },
+    "Poultry and Pork Digest": {
+      "could_be": [
+        "chicken",
+        "turkey",
+        "duck",
+        "pork"
+      ],
+      "source_group": "animal"
+    },
+    "animal fat (preserved with TBHQ and citric acid)": {
+      "could_be": [
+        "beef",
+        "pork",
+        "chicken"
+      ],
+      "source_group": "animal"
+    },
+    "fish oil": {
+      "could_be": [
+        "salmon",
+        "herring",
+        "menhaden",
+        "anchovy"
+      ],
+      "source_group": "fish"
+    },
+    "fish oil (1%)": {
+      "could_be": [
+        "salmon",
+        "herring",
+        "menhaden",
+        "anchovy"
+      ],
+      "source_group": "fish"
+    },
+    "fish oil (2%)": {
+      "could_be": [
+        "salmon",
+        "herring",
+        "menhaden",
+        "anchovy"
+      ],
+      "source_group": "fish"
+    },
+    "fish oil (3%)": {
+      "could_be": [
+        "salmon",
+        "herring",
+        "menhaden",
+        "anchovy"
+      ],
+      "source_group": "fish"
+    },
+    "fish oil (3.5%)": {
+      "could_be": [
+        "salmon",
+        "herring",
+        "menhaden",
+        "anchovy"
+      ],
+      "source_group": "fish"
+    },
+    "fish oil (4%)": {
+      "could_be": [
+        "salmon",
+        "herring",
+        "menhaden",
+        "anchovy"
+      ],
+      "source_group": "fish"
+    },
+    "fish oil (5%)": {
+      "could_be": [
+        "salmon",
+        "herring",
+        "menhaden",
+        "anchovy"
+      ],
+      "source_group": "fish"
+    },
+    "fish oil (6%)": {
+      "could_be": [
+        "salmon",
+        "herring",
+        "menhaden",
+        "anchovy"
+      ],
+      "source_group": "fish"
+    },
+    "hydrolyzed fish protein concentrate": {
+      "could_be": [
+        "salmon",
+        "herring",
+        "whitefish",
+        "menhaden"
+      ],
+      "source_group": "fish"
+    },
+    "hydrolyzed poultry by-products aggregate": {
+      "could_be": [
+        "chicken",
+        "turkey",
+        "duck"
+      ],
+      "source_group": "poultry"
+    },
+    "liver flavor": {
+      "could_be": [
+        "beef",
+        "pork",
+        "chicken"
+      ],
+      "source_group": "animal"
+    },
+    "meat broth": {
+      "could_be": [
+        "beef",
+        "pork",
+        "lamb"
+      ],
+      "source_group": "mammal"
+    },
+    "meat   by-products": {
+      "could_be": [
+        "beef",
+        "pork",
+        "lamb"
+      ],
+      "source_group": "mammal"
+    },
+    "mutton meal": {
+      "could_be": [
+        "lamb",
+        "goat"
+      ],
+      "source_group": "mammal"
+    },
+    "natural avor": {
+      "could_be": [
+        "any"
+      ],
+      "source_group": "unknown"
+    },
+    "natural fish flavor": {
+      "could_be": [
+        "salmon",
+        "herring",
+        "whitefish",
+        "menhaden"
+      ],
+      "source_group": "fish"
+    },
+    "natural fish flavour": {
+      "could_be": [
+        "salmon",
+        "herring",
+        "whitefish",
+        "menhaden"
+      ],
+      "source_group": "fish"
+    },
+    "natural flavoring": {
+      "could_be": [
+        "any"
+      ],
+      "source_group": "unknown"
+    },
+    "natural flavors": {
+      "could_be": [
+        "any"
+      ],
+      "source_group": "unknown"
+    },
+    "natural flavors (ONLY FOR MEXICO: including cow milk)": {
+      "could_be": [
+        "any"
+      ],
+      "source_group": "unknown"
+    },
+    "natural flavors (ONLY FOR MEXICO: including poultry, cow milk, pork)": {
+      "could_be": [
+        "any"
+      ],
+      "source_group": "unknown"
+    },
+    "natural flavors (Only for mexico: including pork and poultry)": {
+      "could_be": [
+        "any"
+      ],
+      "source_group": "unknown"
+    },
+    "natural flavors (Only for mexico: including pork, poultry and cow milk)": {
+      "could_be": [
+        "any"
+      ],
+      "source_group": "unknown"
+    },
+    "natural flavors (only for Mexico: poultry)": {
+      "could_be": [
+        "any"
+      ],
+      "source_group": "unknown"
+    },
+    "natural flavors dried chicory root": {
+      "could_be": [
+        "any"
+      ],
+      "source_group": "unknown"
+    },
+    "ocean fish": {
+      "could_be": [
+        "salmon",
+        "herring",
+        "whitefish",
+        "menhaden"
+      ],
+      "source_group": "fish"
+    },
+    "raw freshwater lake fish* (4%)": {
+      "could_be": [
+        "whitefish",
+        "trout",
+        "perch"
+      ],
+      "source_group": "fish"
+    },
+    "raw freshwater lake fish* (5%)": {
+      "could_be": [
+        "whitefish",
+        "trout",
+        "perch"
+      ],
+      "source_group": "fish"
+    },
+    "raw freshwater lake fish* (6%)": {
+      "could_be": [
+        "whitefish",
+        "trout",
+        "perch"
+      ],
+      "source_group": "fish"
+    }
+  },
+  "ignore_for_correlation": [
+    "(preserved with mixed tocopherols)",
+    ")",
+    "), chondroitin sulfate, taurine, DL-methionine, L-carnitine, yucca schidigera extract, rosemary, garlic, cinnamon, paprika, capsicum, chamomile, turmeric, dandelion",
+    "*Upcycled Ingredient",
+    "3a300 Vitamin C: 0.15mg. Zootechnical additives: 4b1707 Enterococcus faecium DSM 10663/NCIMB 10415: 1 x 109 CFU",
+    "3a314 Niacin: 200 mg",
+    "3a314 Niacin: 200mg",
+    "3a314 Vitamin B3: 50 mg",
+    "3a316 Folic acid: 7mg",
+    "3a316 Vitamin B9: 0.75 mg",
+    "3a370 Taurine: 500mg",
+    "3a671 Vitamin D3: 500 IU",
+    "3a672a Vitamin A: 3750 IU",
+    "3a700 Vitamin E: 100 IU. Zootechnical additives: 4b1707 Enterococcus faecium NCIMB 10415 1x10^9 CFU",
+    "3a700 Vitamin E: 375 IU",
+    "3a700 Vitamin E: 385 IU",
+    "3a700 Vitamin E: 90 IU. Zootechnical additives: 4b1707 Enterococcus faecium NCIMB 10415 1x10^9 CFU",
+    "3a821 Vitamin B1: 100mg",
+    "3a821 Vitamin B1: 19.6 mg",
+    "3a821 Vitamin B1: 25mg",
+    "3a821 Vitamin B1: 9.8mg",
+    "3a825i Vitamin B2: 20mg",
+    "3a825i Vitamin B2:10 mg",
+    "3a831 Vitamin B6: 35mg",
+    "3a831 Vitamin B6: 7.5mg",
+    "3a841 Calcium-D-Pantothenate: 60mg",
+    "3a841 Vitamin B5: 10 mg",
+    "3a841 Vitamin B5: 8mg",
+    "3b406 (Copper (II): 11mg)",
+    "3b406 (Copper: 11mg)",
+    "3b406 (Copper: 16.5mg)",
+    "3b606 (Zinc: 105mg)",
+    "3b606 (Zinc: 150mg)",
+    "3b606 (Zinc: 75 mg)",
+    "6-Strain Probiotic Blend",
+    "Acetic Acid",
+    "acide folique (vitamine B9)",
+    "Active Ingredient per sachet (1g): Bifidobacterium longum BL999 1x10^9 CFU . Inactive Ingredients: Animal Digest",
+    "Active Ingredients Per Chew (2.5 grams): Glucosamine Hydrochloride 122.5 mg",
+    "Active Ingredients Per Chew (5.0 grams): Glucosamine Hydrochloride 245 mg",
+    "Active Ingredients per Sachet (1 g):  Enterococcus faecium  (SF68) 1x10^8 CFU. Inactive Ingredients: Animal digest",
+    "Active Ingredients per sachet (2 g): Psyllium husk 1.0 g",
+    "Active Ingredients: Bacillus subtillis",
+    "Active Ingredients: Glucosamine hydrochloride (shrimp)",
+    "Active Ingredients: L-tryptophan",
+    "Active Ingredients: Omega-3 fatty acids (Schizochytrium spp. algae)",
+    "Active Ingredients: per 1.77 g Tablet: Enterococcus faecium (SF68) 1x10^8 CFU. Inactive Ingredients: Acacia Gum",
+    "Active Ingredients: Per 5 g Chew: Psyllium Husk 450 mg",
+    "Added Colour",
+    "Agar Agar",
+    "agar-agar",
+    "ail",
+    "alfalfa",
+    "Alfalfa Nutrient Concentrate",
+    "aloe vera",
+    "althea root",
+    "animal fat preserved with mixed-tocopherols",
+    "Annatto Colour",
+    "apple cider vinegar",
+    "arôme naturel",
+    "Ascorbic Acid",
+    "ascorbic acid (vitamin C)",
+    "Astaxanthin",
+    "Bacillus coagulans 2 x 10^8 CFU . Postbiotic Active Blend 36 mg: Lactobacillus fermentum Not Less than 17 mg",
+    "Bacillus licheniformis",
+    "Bacillus subtilis",
+    "Beta Carotene",
+    "Beta-Carotene",
+    "Betaine",
+    "BHA (a preservative)",
+    "BHT (a preservative)",
+    "Bifido bacterium bifidium thermophilum fermentation product",
+    "Bifidobacterium bifidum",
+    "BioPerine",
+    "Biotin",
+    "biotin (Vitamin B-7)",
+    "Biotin (Vitamin B7)",
+    "Biotin 2.5 mg",
+    "biotine (vitamine B7)",
+    "Black Soldier Fly Larva Meal",
+    "bleuets",
+    "Blue 2",
+    "blueberry fiber",
+    "botanicals (ginger root, pumpkin, turmeric, carrot, broccoli, apple, cranberry, blueberry, butternut squash, spinach, licorice root, pomegranate, peppermint leaf)",
+    "botanicals (ginger root, turmeric, carrot, broccoli, apple, cranberry, blueberry, butternut squash, spinach, licorice root, pomegranate, peppermint leaf)",
+    "bovine colostrum",
+    "Brewer's Dried Yeast",
+    "brewer's yeast",
+    "brewer's yeast. A-9301-C",
+    "brewer's yeast. A-9304-C",
+    "Brewers Dried Yeast",
+    "brewers yeast",
+    "brewer’s dried yeast",
+    "brewer’s yeast",
+    "Bromelain",
+    "Brown Sugar",
+    "buffered vinegar",
+    "burdock root",
+    "Calcium Ascorbate",
+    "Calcium Ascorbate (Vitamin C)",
+    "calcium cabonate",
+    "Calcium Carbonate",
+    "Calcium Chloride",
+    "calcium D-pantothenate",
+    "Calcium Gluconate",
+    "Calcium Iodate",
+    "Calcium Lactate",
+    "calcium pantothenate",
+    "Calcium Pantothenate (Source Of Vitamin B5)",
+    "calcium pantothenate (Vitamin B-5)",
+    "Calcium Pantothenate (Vitamin B5)",
+    "calcium pantothenate   (Vitamin B-5)",
+    "Calcium Phosphate",
+    "Calcium Propionate",
+    "Calcium Propionate (a preservative)",
+    "calcium propionate (a preservative). A251419",
+    "calcium propionate (preservative)",
+    "Calcium Stearate",
+    "calcium sulfate",
+    "calcium sulphate",
+    "calcium   sulfate",
+    "Cane Molasses",
+    "Cane Sugar",
+    "canneberges",
+    "capsicum",
+    "Caramel color",
+    "Caramel Colour",
+    "carbonate de calcium",
+    "cardamom",
+    "Carmine",
+    "carob",
+    "carob bean gum",
+    "carob powder",
+    "carotene",
+    "carottes",
+    "Carrageenan",
+    "Cassia Gum",
+    "cayenne",
+    "celery powder",
+    "celery seed powder",
+    "Cellulose",
+    "Chaga Mushroom",
+    "chamomile",
+    "chicory",
+    "Chicory Root",
+    "Chicory Root Extract",
+    "Chicory Root Inulin",
+    "chlorhydrate de glucosamine",
+    "chlorhydrate de pyridoxine (vitamine B6)",
+    "chlorure de choline",
+    "chlorure de potassium",
+    "Choline Chloride",
+    "Choline chloride (choline): 1050 mg",
+    "Choline chloride (choline): 700 mg",
+    "Choline Chloride Dried Chicken Cartilage (Source Of Glucosamine And Chondroitin Sulfate)",
+    "chondroitin sulfate",
+    "chondroitin sulfate (porcine)",
+    "chondroitin sulphate",
+    "Chondroitin Sulphate 160 mg",
+    "Chondroitin Sulphate 80 mg",
+    "chélate d’acide aminé de cuivre",
+    "chélate d’acide aminé de fer",
+    "chélate d’acide aminé de manganèse",
+    "chélate d’acide aminé de zinc",
+    "Cinnamon",
+    "citric acid",
+    "Citric Acid (A Preservative)",
+    "citric acid (preservative)",
+    "Citric Acid and Mixed Tocopherols",
+    "Citric Acid for Freshness",
+    "Citric Acid(Preservative)",
+    "citrus fiber",
+    "cloves",
+    "Cobalt Amino Acid Chelate",
+    "Cobalt Proteinate",
+    "Coconut Glycerin",
+    "coconut oil (preserved with mixed tocopherols)",
+    "Color Added",
+    "concentré nutritif de luzerne",
+    "conservé avec un mélange de tocophérols",
+    "Copper Amino Acid Chelate",
+    "Copper Proteinate",
+    "Copper proteinate: 10 mg",
+    "Copper proteinate: 11 mg",
+    "Copper proteinate: 5 mg",
+    "Copper proteinate: 5.5 mg",
+    "Copper Sulfate",
+    "Copper Sulphate",
+    "curcubita maxima (pumpkin)",
+    "curcuma",
+    "curcuma longa (turmeric root)",
+    "Cysteine",
+    "cystine",
+    "D",
+    "D-a-tocopherol (Vitamin E)",
+    "D-calcium Pantothenate",
+    "D-pantothenic Acid",
+    "Dandelion",
+    "Dandelion Greens",
+    "Dehydrated Alfalfa Meal",
+    "Dehydrated Beets (added for Colour)",
+    "Dextrose",
+    "Dicacalcium Phosphate",
+    "Dicalcium Carbonate",
+    "Dicalcium Phosphate",
+    "Direct Dehydrated Alfalfa Pellets",
+    "Disodium Phosphate",
+    "DL methionine",
+    "DL- methionine",
+    "DL-Methionine",
+    "DL-méthionine",
+    "DLmethionine",
+    "DL–Methionine",
+    "Docosahexaenoic acid (DHA)",
+    "dreid Bifidobacterium animalis lactis fermentation product",
+    "Dried Aspergillus niger fermentation extract",
+    "dried Aspergillus oryzae fermentation extract",
+    "Dried Bacillus Coagulans",
+    "Dried Bacillus Coagulans Fermentation Product",
+    "Dried Bacillus coagulans Fermentation Product (GGut)",
+    "dried Bacillus licheniformis fermentation product",
+    "Dried Bacillus subtilis fermentation extract",
+    "Dried Bacillus Subtilis Fermentation Product",
+    "Dried Bacillus subtilis Fermentation Product (GGut)",
+    "Dried Beet Pulp",
+    "Dried Bifidobacterium Animalis Fermentation Product",
+    "Dried Bifidobacterium bifidum Fermentation Product",
+    "Dried Bifidobacterium bifidum Fermentation Product (GGut)",
+    "dried Bifidobacterium fermentation product",
+    "dried Bifidobacterium longum fermentation product",
+    "Dried Bifidobacterium longum Fermentation Product (GGut)",
+    "dried black soldier fly larvae",
+    "dried blueberry pomace",
+    "dried celery",
+    "Dried Chicory Root",
+    "Dried Chicory Root Extract",
+    "Dried Citrus Pulp",
+    "Dried Colostrum",
+    "dried cranberry pomace",
+    "dried Enterococcus faecium fermentation product",
+    "Dried Garlic",
+    "dried Lactobacillus acidophilus \nfermentation product",
+    "dried Lactobacillus acidophilus fermentation product",
+    "Dried Lactobacillus acidophilus Fermentation Product  (GGut)",
+    "Dried Lactobacillus brevis Fermentation Product",
+    "Dried Lactobacillus brevis Fermentations Product",
+    "Dried Lactobacillus brevis Fermentations Product  (GGut)",
+    "dried Lactobacillus casei fermentation product",
+    "Dried Lactobacillus casei Fermentation Product  (GGut)",
+    "Dried Lactobacillus Delbrueckii Fermentation Product",
+    "Dried Lactobacillus fermentum Fermentation Product",
+    "Dried Lactobacillus fermentum Fermentation Product  (GGut)",
+    "dried Lactobacillus helveticus fermentation product",
+    "Dried Lactobacillus Plantarum Fermentation Product",
+    "Dried Lactobacillus plantarum Fermentation Product  (GGut)",
+    "Dried Lactobacillus reuteri Fermentation Product",
+    "Dried Lactobacillus reuteri Fermentation Product  (GGut)",
+    "Dried Lactococcus lactis Fermentation Product",
+    "Dried Lactococcus lactis Fermentation Product  (GGut)",
+    "dried miscanthus grass",
+    "Dried Onion",
+    "Dried Orange Pulp",
+    "dried plain beet pulp",
+    "Dried Plain Bet Pulp",
+    "dried porcine plasma",
+    "dried rosemary",
+    "Dried Streptococcus thermophilus Fermentation Product",
+    "Dried Streptococcus thermophilus Fermentation Product  (GGut)",
+    "Dried Tomato Pomace",
+    "Dried Trichoderma longibrachiatum fermentation extract",
+    "Dried Yeast",
+    "Dried Yeast Extract",
+    "EDTA",
+    "Eicosapentaenoic acid (EPA)",
+    "enterococcus faecium fermentation product",
+    "Enterococcus faecium SF68 1x10^8 CFU . Inactive Ingredients: Animal digest",
+    "Ethoxyquin (a preservative)",
+    "extrait de fermentation de Bacillus subtilis séché",
+    "extrait de fermentation de Trichoderma longibrachiatum séché",
+    "extrait de fermentation d’Aspergillus niger séché",
+    "extrait de yucca schidigera",
+    "farine de poisson (source d’acides gras oméga-3)",
+    "farine de poulet",
+    "farine d’avoine",
+    "fennel",
+    "Fennel Seed",
+    "Fenugreek Seeds",
+    "ferrous",
+    "Ferrous Sulfate",
+    "Ferrous Sulphate",
+    "fibre de pois",
+    "Fish Oil (preserved with Mixed Tocopherols and Citric Acid)",
+    "Fish Oil (Preserved With Mixed Tocopherols)",
+    "Fish Oil (Preserved With Mixed Tocopherols) (Source Of DHA)",
+    "Fish Oil (Preserved With Mixed Tocopherols) (Source Of EPA And DHA)",
+    "Fish Oil (Preserved With MixedTocopherols)",
+    "Folic Acid",
+    "folic acid (Vitamin B-9)",
+    "Folic Acid (Vitamin B9)",
+    "folic   acid (Vitamin B-9)",
+    "freeze-dried kelp",
+    "Fructooligocaccharide",
+    "fructooligosaccharide",
+    "Fructooligosaccharide Powder",
+    "fructooligosaccharides",
+    "Fructooligosaccharides (FOS)",
+    "fructoolligosaccharide",
+    "fruit juice",
+    "Garlic",
+    "Garlic Oil",
+    "Garlic Oil. D569922",
+    "Garlic Oil. D849722",
+    "Garlic Oil. D849822",
+    "Garlic Oil. D849922",
+    "Garlic Oil. F868122",
+    "Garlic Powder",
+    "garlic   powder",
+    "Gelatin",
+    "Gelatin (source of Collagen)",
+    "ginger",
+    "Ginger Root",
+    "glucosamine hydrochloride",
+    "glucosamine sulfate",
+    "glucosamine sulphate",
+    "Glucosamine Hydrochloride",
+    "Glycerin",
+    "glycerine",
+    "Glyceryl Monostearate",
+    "glycine",
+    "graines de lin (source d’acides gras oméga-6)",
+    "granules de luzerne déshydratée",
+    "gras de poulet (conservé avec un mélange de tocophérols)",
+    "Green Lipped Mussel",
+    "green tea",
+    "green tea extract",
+    "ground ginger",
+    "ground miscanthus grass",
+    "Ground Pecan Shells",
+    "Guar Gum",
+    "Gum Arabic",
+    "herbe d’orge",
+    "herring oil (preserved with mixed tocopherols)",
+    "hickory flavor",
+    "histidine",
+    "honey",
+    "huile de romarin",
+    "Hyaluronic Acid 4 mg. Inactive Ingredients: Animal Digest",
+    "Hyaluronic Acid 8 mg. Inactive Ingredients: Animal Digest",
+    "Hydrolyzed Collagen 120 mg",
+    "Hydrolyzed Collagen 240 mg",
+    "hydrolyzed yeast",
+    "hydrolyzed yeast (source of betaglucans)",
+    "Hydroxypropyl Cellulose",
+    "inositol",
+    "Inulin",
+    "inulin (FOS) (chicory root)",
+    "Inulin. Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Calcium Iodate, Folic Acid)",
+    "iodate de calcium",
+    "Iodized Salt",
+    "Iron Amino Acid Chelate",
+    "Iron Oxide color",
+    "Iron Proteinate",
+    "Iron Sulfate",
+    "juniper berries",
+    "juniper berry extract",
+    "jus de légumes pour la couleur",
+    "L ascorbyl-2-polyphosphate (source of vitamin C)",
+    "L lysine",
+    "L-arginine",
+    "L-Ascorbyl- 2-Polyphosphate (source of Vitamin C)",
+    "L-ascorbyl-2 polyphosphate",
+    "L-ascorbyl-2 polyphosphate (source of vitamin C)",
+    "L-Ascorbyl-2-Polyphosphate",
+    "L-ascorbyl-2-polyphosphate (source de vitamine C)",
+    "L-Ascorbyl-2-Polyphosphate (source of Vitamin C)",
+    "L-Ascorbyl-2-Polyphosphate (Vitamin C)",
+    "L-Carnitine",
+    "L-carnitine: 75mg. Zootechnical additives: Enterococcus faecium DSM 10663/ NCIMB 10415 10^9 CFU",
+    "L-Cysteine",
+    "L-cystine",
+    "L-Glutamine 110 mg",
+    "L-Leucine",
+    "L-Lysine",
+    "L-lysine chondroitin sulfate",
+    "L-Lysine Monohydrochloride",
+    "L-Methionine",
+    "L-theanine",
+    "L-Thiamine",
+    "L-Threonie",
+    "L-Threonine",
+    "L-thréonine",
+    "L-Tryptophan",
+    "L-tyrosine",
+    "Lactic Acid",
+    "Lactobacillus acidophilus",
+    "lactobacillus acidophilus fermentation product",
+    "Lactobacillus casei",
+    "Lactobacillus casei fermentation product",
+    "Lactobacillus delbrueckii Not Less than 17 mg. Inactive Ingredients: Animal Digest",
+    "Lactobacillus fermentum",
+    "Lactobacillus plantarum",
+    "Lactobacillus reuteri",
+    "lactose",
+    "lavender",
+    "lecithin",
+    "Leucine",
+    "levure séchée",
+    "licorice",
+    "licorice extract",
+    "licorice root",
+    "Lipoic Acid",
+    "Locust Bean Gum",
+    "magnesium",
+    "Magnesium (Magnesium Gluconate)",
+    "magnesium oxide",
+    "Magnesium Proteinate",
+    "Magnesium Stearate",
+    "Magnesium Sulfate",
+    "magnesium sulphate",
+    "Maltodextrin",
+    "Maltodextrin. B251921C",
+    "Manganese Amino Acid Chelate",
+    "Manganese Proteinate",
+    "Manganese Sulfate",
+    "Manganese Sulphate",
+    "manganous oxide",
+    "mannan-oligosaccharides",
+    "Maple Sugar",
+    "Maple Syrup",
+    "marigold",
+    "marigold extract (Tagetes erecta\nL.)",
+    "marigold extract (Tagetes erecta L.)",
+    "marshmallow root",
+    "Medium Chain Triglyceride Vegetable Oil (MCTS)",
+    "menadione dimethylpyridional bisulfite",
+    "menadione sodium bisulfite complex",
+    "menadione sodium bisulfite complex (source of vitamin K activity)",
+    "menadione sodium bisulfite complex (Vitamin K)",
+    "Menadione Sodium Bisulphate Complex (Source Of Vitamin K Activity)",
+    "menadione sodium bisulte complex (Vitamin K)",
+    "Methyl sulfonyl methane (MSM)",
+    "methylsulfonylmethane (MSM)",
+    "Microcrystalline Cellulose",
+    "Microcrystalline Cellulose. D930723C",
+    "milk thistle",
+    "Minerals",
+    "Minerals (Ferrous Sulfate, Zinc Oxide, Copper Proteinate, Sodium Selenite, Manganese Sulfate, Potassium Iodide)",
+    "minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganese Sulfate, Calcium Iodate)",
+    "minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganese Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite)",
+    "minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite)",
+    "minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Manganese Sulfate, Calcium Iodate, Sodium Selenite)",
+    "minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Sodium Selenite, Calcium Iodate)",
+    "minerals (Ferrous Sulfate, Zinc Oxide, Manganese Sulfate, Copper Sulfate, Calcium Iodate)",
+    "Minerals (Ferrous Sulfate, Zinc Oxide, Sodium Selenite, Manganese Sulfate, Cooper Sulfate, Potassium Iodide, Manganous Oxide)",
+    "Minerals (Ferrous Sulfate, Zinc Oxide, Sodium Selenite, Manganese Sulfate, Copper Sulfate, Manganous Oxide, Potassium Iodide)",
+    "Minerals (Ferrous Sulfate, Zinc Oxide, Sodium Selenite, Manganese Sulfate, Copper Sulfate, Potassium Iodide, Manganous Oxide)",
+    "Minerals (Ferrous Sulfate, Zinc Oxide, Sodium Selenite, Manganese Sulfate, Manganous Oxide, Potassium Iodide)",
+    "Minerals (Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Calcium Carbonate, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate)",
+    "Minerals (Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate)",
+    "Minerals (Ferrous Sulphate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Calcium Carbonate, Copper Sulphate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate)",
+    "minerals (ferrous sulphate, zinc proteinate, iron proteinate, selenium yeast, zinc oxide, copper sulphate, manganese proteinate, copper proteinate, manganous oxide, calcium iodate)",
+    "minerals (iron proteinate, copper proteinate, manganese proteinate, zinc proteinate, sodium selenite)",
+    "minerals (Manganese Sulfate, Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Calcium Iodate, Sodium Selenite)",
+    "Minerals (Potassium Chloride, Magnesium Proteinate, Zinc Sulfate, Selenium, Copper Proteinate, Manganese Sulfate, Copper Sulfate, Potassium Iodide)",
+    "Minerals (Sodium Chloride, Zinc Sulfate, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Sodium Selenite)",
+    "Minerals (Sodium Chloride, Zinc Sulfate, Iron Sulfate, Copper Sulfate, Manganese Sulfate, Sodium Selenite)",
+    "minerals (zinc amino acid chelate, iron amino acid chelate, selenium yeast, copper amino acid chelate, manganese amino acid chelate, cobalt amino acid chelate, potassium iodide)",
+    "Minerals (Zinc Oxide, Ferrous Sulfate, Copper Proteinate, Sodium Selenite, Manganese Sulfate, Potassium Iodide)",
+    "minerals (Zinc Oxide, Ferrous Sulfate, Copper Sulfate, Manganese Sulfate, Manganous Oxide, Calcium Iodate)",
+    "minerals (Zinc Oxide, Ferrous Sulfate, Copper Sulfate, Manganese Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite)",
+    "minerals (Zinc Oxide, Ferrous Sulfate, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite)",
+    "minerals (Zinc Oxide, Ferrous Sulfate, Copper Sulfate, Manganous Oxide, Manganese Sulfate, Calcium Iodate, Sodium Selenite)",
+    "minerals (Zinc Oxide, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate)",
+    "minerals (zinc oxide, ferrous sulfate, manganous oxide, copper sulfate, calcium iodate, sodium selenite)",
+    "minerals (Zinc Oxide, Ferrous Sulfate, Manganous Oxide, Manganese Sulfate, Calcium Iodate, Copper Sulfate, Sodium Selenite)",
+    "Minerals (Zinc oxide, Iron Glycine Complex, Copper Sulfate, Sodium Selenite, Manganese Sulfate, Potassium Iodide)",
+    "minerals (Zinc Oxide, Manganese Sulfate, Ferrous Sulfate, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite)",
+    "minerals (Zinc Oxide, Manganous Oxide, Calcium Iodate, Sodium Selenite)",
+    "Minerals (Zinc Oxide, Reduced Iron, Sodium Selenite, Manganese Sulfate, Copper Amino Acid Complex, Potassium Iodide)",
+    "minerals (zinc proteinate, copper proteinate)",
+    "minerals (zinc proteinate, ferrous fumarate, copper proteinate, manganese proteinate, potassium iodide)",
+    "minerals (zinc proteinate, ferrous fumarate, sodium selenite, copper proteinate, manganese proteinate, potassium iodide)",
+    "minerals (zinc proteinate, ferrous sulfate, iron proteinate, zinc oxide, copper proteinate, copper sulfate,manganese proteinate, manganous oxide, calcium iodate, sodium selenite)",
+    "Minerals (Zinc Proteinate, Iron Proteinate, Copper Proteinate, Cobalt Proteinate, Manganese Proteinate, Sodium Selenite, Potassium Iodide)",
+    "minerals (zinc proteinate, iron proteinate, copper proteinate, manganese proteinate, calcium iodate, selenium yeast)",
+    "Minerals (Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Sodium Selenite, Cobalt Proteinate, Potassium Iodide)",
+    "minerals (zinc proteinate, iron proteinate, manganese proteinate, copper proteinate, selenium yeast, calcium iodate)",
+    "minerals (zinc proteinate, iron proteinate, manganese proteinate, copper proteinate, sodium selenite, calcium iodate)",
+    "Minerals (Zinc Sulfate, Ferrous Sulfate, Copper Sulfate, Manganese Sulfate, Calcium Carbonate, Sodium Selenite, Calcium Iodate)",
+    "Minerals (Zinc Sulfate, Ferrous Sulfate, Copper Sulfate, Manganese Sulfate, Sodium Selenite)",
+    "Minerals (Zinc Sulfate, Ferrous Sulfate, Copper Sulfate, Manganese Sulfate, Sodium Selenite, Calcium Iodate)",
+    "Minerals (Zinc Sulfate, Ferrous Sulfate, Copper Sulfate, Zinc Proteinate, Manganese Sulfate, Iron Proteinate, Manganese Proteinate, Copper Proteinate, Sodium Selenite, Calcium Iodate)",
+    "Minerals (Zinc Sulfate, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Sodium Selenite)",
+    "Minerals (Zinc Sulfate, Ferrous Sulfate, Zinc Proteinate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Manganese Proteinate, Manganese Sulfate, Copper Proteinate, Calcium Iodate, Calcium Carbonate)",
+    "Minerals (Zinc Sulfate, Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Sodium Selenite, Manganese Proteinate, Manganese Sulfate, Copper Proteinate, Calcium Iodate, Calcium Carbonate)",
+    "minerals (zinc sulfate, zinc proteinate, iron proteinate, ferrous sulfate, copper proteinate, copper sulfate, manganese proteinate, manganous oxide, calcium iodate, sodium selenite)",
+    "minerals (zinc sulfate, zinc proteinate, iron proteinate, ferrous sulphate, copper proteinate, copper sulfate, manganese proteinate, manganous oxide, calcium iodate, sodium selenite)",
+    "Minerals (Zinc Sulphate, Ferrous Sulphate, Copper Sulphate, Zinc Proteinate, Manganese Sulphate, Iron Proteinate, Manganese Proteinate, Copper Proteinate, Sodium Selenite, Calcium Iodate)",
+    "minerals [zinc oxide, zinc proteinate, iron proteinate, ferrous sulfate, copper proteinate, copper sulfate, manganese proteinate, manganese oxide, calcium iodate, sodium selenite]",
+    "Minerals [Zinc Sulfate, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate, Sodium Selenite]",
+    "minerals [zinc sulfate, zinc proteinate, iron proteinate, ferrous sulfate, copper proteinate, copper sulfate, manganese proteinate, manganese oxide, calcium iodate, sodium selenite]",
+    "minerals [zinc sulfate, zinc proteinate, iron proteinate, ferrous sulfate, copper proteinate, copper sulfate, manganese proteinate, manganous oxide, calcium iodate, sodium selenite]",
+    "minerals/vitamins (zinc proteinate, vitamin E supplement, iron proteinate, ferrous sulfate, biotin, copper proteinate, sodium selenite, niacin, D-calcium pantothenate, manganous oxide, riboflavin, vitamin A acetate, thiamine mononitrate, vitamin B12 supplement, pyridoxine hydrochlordie, calcium iodate, vitamin D3 supplement, folic acid)",
+    "minerals/vitamins: (zinc proteinate, vitamin E supplement, iron proteinate, ferrous sulfate, biotin, copper proteinate, sodium selenite, niacin, D-calcium pantothenate, manganous oxide, riboflavin, vitamin A acetate, thiamine mononitrate, vitamin B12 supplement, pyridoxine hydrochlordie, calcium iodate, vitamin D3 supplement, folic acid)",
+    "Minerals: Zinc Sulfate",
+    "Miscanthus Grass",
+    "Mixed Tocopherol (preservative)",
+    "mixed tocopherols",
+    "Mixed Tocopherols (a natural preservative)",
+    "Mixed Tocopherols (A Preservative)",
+    "mixed tocopherols (preservative)",
+    "Mixed Tocopherols for freshness",
+    "Mixed Tocopherols(Preservative)",
+    "Mixed-Tocopherols",
+    "Mono And Dicalcium Phosphate",
+    "mono- and di-glycerides",
+    "monocalcium phosphate",
+    "Monodicalcium phosphate",
+    "mononitrate de thiamine (vitamine B1)",
+    "Monosodium Phosphate",
+    "Montmorillonite Clay",
+    "N-butyric acid",
+    "Natural and artificial peanut butter flavour",
+    "Natural and artificial smoked flavours",
+    "Natural and artificial vanilla flavour",
+    "Natural Grill Flavour",
+    "natural hickory smoke flavor",
+    "Natural Hickory Smoke Flavour",
+    "Natural Peanut Flavour",
+    "Natural Roasted Flavor",
+    "Natural Smoke Flavor",
+    "Natural Smoke Flavour",
+    "Natural Smoked Flavour",
+    "Natural Vegetable Flavor",
+    "Niacin",
+    "Niacin (Vitamin\nB3)",
+    "niacin (Vitamin B-3)",
+    "Niacin (Vitamin B3)",
+    "Niacin Supplement",
+    "Niacin Supplement (Vitamin B3)",
+    "niacinamide",
+    "niacine (vitamine B3)",
+    "Oil of Rosemary",
+    "Oil of Rosemary. Bœuf désossé",
+    "olive oil",
+    "Olive Oil (preserved with Mixed Tocopherols and Citric Acid)",
+    "Omega-3 Fatty Acids 30 mg",
+    "Omega-3 Fatty Acids 60 mg",
+    "Oregano",
+    "Organic Apple Cider Vinegar",
+    "organic guar gum",
+    "Organic Honey",
+    "orge",
+    "pantothenate calcium",
+    "Pantothenic Acid",
+    "pantothénate de calcium (vitamine B5)",
+    "paprika",
+    "Paprika (for color)",
+    "Paprika Oleoresin (for colour)",
+    "ParActin",
+    "Parsley",
+    "parsley flakes",
+    "partially hydrogenated canola oil preserved with TBHQ",
+    "Partially hydrogenated vegetable oil",
+    "passiflora incarnata (passion flower)",
+    "Passion Flower",
+    "patates douces",
+    "peppermint",
+    "peppermint leaf",
+    "perna canaliculus (green lipped mussel)",
+    "persil",
+    "Phosphoric Acid",
+    "pimpinella anisum (aniseed)",
+    "Plain Beet Pulp",
+    "pois",
+    "pommes de terre",
+    "Porcine plasma",
+    "Potassium Alginate",
+    "Potassium Chloride",
+    "Potassium Citrate",
+    "potassium iodate",
+    "Potassium Iodide",
+    "potassium sorbate",
+    "potassium sorbate (a preservative)",
+    "powdered cellulose",
+    "powdered psyllium seed husk",
+    "preserved with Citric Acid and Mixed Tocopherols",
+    "preserved with Lactic Acid",
+    "preserved with Lactic Acid and Mixed Tocopherols",
+    "preserved with Mixed Tocopherols",
+    "preserved with Mixed Tocopherols & Oil of Rosemary",
+    "preserved with mixed tocopherols and citric acid",
+    "preserved with mixed-tocopherols",
+    "preserved with Phosphoric Acid",
+    "probiotics (lactobacillus acidophilus, lactobacillus casei, enterococcus faecium, bifidobacterium thermophilum)",
+    "produit de fermentation de Lactobacillus acidophilus séché",
+    "produit de fermentation d’Enterococcus faecium séché",
+    "protéines de pois",
+    "psyllium husk",
+    "psyllium seed husk",
+    "pulpe de tomates séchées",
+    "pyridoxine",
+    "Pyridoxine Hydrochloride",
+    "Pyridoxine Hydrochloride (Source Of Vitamin B6)",
+    "pyridoxine hydrochloride (Vitamin B-6)",
+    "Pyridoxine Hydrochloride (Vitamin B6)",
+    "pyridoxine hydrochloride   (Vitamin B-6)",
+    "pyridoxine supplement",
+    "PyridoxineHydrochloride",
+    "Quercetin",
+    "racine de chicorée séchée",
+    "Red 40",
+    "Reishi Mushroom",
+    "riboavin supplement (Vitamin B-2)",
+    "Riboflavin",
+    "Riboflavin (Vitamin B2)",
+    "Riboflavin (Vitamin B2) Vitamin D3 Supplement",
+    "Riboflavin Supplement",
+    "Riboflavin Supplement (B2)",
+    "riboflavin supplement (Vitamin B-2)",
+    "Riboflavin Supplement (Vitamin B2)",
+    "riboflavin   supplement (Vitamin B-2)",
+    "riboflavine (vitamine B2)",
+    "Riboﬂavin (Vitamin B2)",
+    "riz brun",
+    "rosehip",
+    "rosehips",
+    "rosehips. *varied mix of raw tullibee",
+    "rosemary",
+    "rosemary extract",
+    "Rosemary Extract)",
+    "rosemary  extract",
+    "Sage",
+    "Salt",
+    "salt calcium carbonate",
+    "Salt Sodium Hexametaphosphate Minerals (Zinc Sulfate Ferrous Sulfate Manganese Sulfate Copper Sulfate Sodium Selenite) Inulin Vitamins (Vitamin E Supplement Vitamin A Supplement Niacin Supplement d-Calcium Pantothenate Riboflavin Supplement Thiamine Mononitrate Biotin Vitamin B12 Supplement Pyridoxine Hydrochloride Vitamin D3 Supplement Calcium Iodate Folic Acid) Choline Chloride Citric Acid (A Preservative) Mixed Tocopherols (A Preservative) Rosemary Extract",
+    "sarsaparilla root",
+    "sea salt",
+    "seasoning",
+    "sel",
+    "Selenium Yeast",
+    "sh oil",
+    "Silicon Dioxide",
+    "smoke flavor",
+    "Sodium\nSelenite",
+    "sodium aluminosilicate",
+    "Sodium Ascorbate",
+    "sodium benzoate",
+    "Sodium Bicarbonate",
+    "sodium bisulfate",
+    "sodium carbonate",
+    "Sodium Caseinate",
+    "Sodium Chloride",
+    "sodium erythrobate",
+    "Sodium Hexametaphosphate",
+    "Sodium Nitrate (For Colour Retention)",
+    "Sodium Nitrite (For Color Retention)",
+    "Sodium Nitrite (For Colour Retention)",
+    "Sodium Phosphate",
+    "Sodium Propionate",
+    "Sodium Pyrophosphate",
+    "Sodium Selenite",
+    "sodium selenite. A251323",
+    "sodium selenite. A258724",
+    "sodium selenite. A456523 Calorie Content (Calculated) 2",
+    "sodium selenite. A456623",
+    "sodium selenite. B259422",
+    "sodium selenite. B263823",
+    "sodium selenite. B264023",
+    "sodium selenite. B264123",
+    "sodium selenite. C259123",
+    "sodium selenite. C259220",
+    "sodium selenite. C262721",
+    "sodium selenite. C263421",
+    "sodium selenite. C458920",
+    "sodium selenite. D258920",
+    "sodium selenite. D259320",
+    "sodium selenite. D262122",
+    "sodium selenite. D262222",
+    "sodium selenite. D262422",
+    "sodium selenite. D262823",
+    "sodium selenite. D262923",
+    "sodium selenite. D263223",
+    "sodium selenite. E262022",
+    "sodium selenite. E262523",
+    "sodium selenite. E262621",
+    "sodium selenite. E263122",
+    "sodium selenite. E263521",
+    "sodium selenite. F259023",
+    "sodium selenite. F263023",
+    "sodium selenite. F263323",
+    "sodium selenite.  A259621",
+    "sodium silico aluminate",
+    "sodium tripolyphosphate",
+    "Sorbic Acid",
+    "sorbic acid (a preservative)",
+    "Spearmint",
+    "Spearmint Extract",
+    "Sufficient Water For Processing",
+    "Sugar",
+    "sulfate de cuivre",
+    "sulfate de fer",
+    "sulfate de manganèse",
+    "sulfate de zinc",
+    "Sun Cured Alfalfa",
+    "sun-cured alfalfa",
+    "sun-cured alfalfa meal",
+    "suncured alfalfa",
+    "Sunflower Oil (Preserved with Mixed Tocopherols)",
+    "Supplement",
+    "supplément de vitamine A",
+    "supplément de vitamine B12",
+    "supplément de vitamine D3",
+    "supplément de vitamine E",
+    "sélénite de sodium",
+    "taurin",
+    "Taurine",
+    "Taurine: 1000 mg",
+    "Taurine: 400 mg",
+    "Taurine: 500 mg",
+    "Taurine: 750 mg",
+    "Tetra Sodium Pyrophosphate",
+    "thiamine",
+    "Thiamine Hydrochloride",
+    "Thiamine Mononitrate",
+    "Thiamine Mononitrate (B1)",
+    "thiamine mononitrate (Vitamin B-1)",
+    "Thiamine Mononitrate (Vitamin B1)",
+    "thiamine   mononitrate (Vitamin B-1)",
+    "Threonine",
+    "thyme",
+    "Tocopherols",
+    "Tomato Pomace",
+    "trace minerals [zinc oxide, ferrous sulfate, manganous oxide, copper sulfate, sodium selenite, calcium iodate]",
+    "trace minerals [zinc oxide, ferrous sulfate, zinc proteinate, copper sulfate, calcium iodate, manganous oxide, sodium selenite]",
+    "trace minerals [zinc oxide, ferrous sulfate, zinc proteinate, copper sulfate, manganous oxide, sodium selenite, calcium iodate]",
+    "trace minerals [zinc oxide, ferrous sulfate, zinc proteinate, manganous oxide, manganese proteinate, copper sulfate, calcium iodate, sodium selenite, copper proteinate]",
+    "trace minerals [zinc oxide, zinc proteinate, ferrous sulfate, copper sulfate, manganese proteinate, manganous oxide, sodium selenite, calcium iodate, copper proteinate]",
+    "trace minerals [zinc proteinate, ferrous sulfate, manganous oxide, sodium selenite, calcium iodate]",
+    "trace minerals [zinc proteinate, manganese proteinate, ferrous sulfate, zinc oxide,\nmanganous oxide, copper sulfate, sodium selenite, calcium iodate, copper proteinate]",
+    "trace minerals [zinc proteinate, manganese proteinate, ferrous sulfate, zinc oxide, manganous oxide, copper sulfate, calcium iodate, sodium selenite, copper proteinate]",
+    "trace minerals [zinc proteinate, manganese proteinate, zinc oxide, ferrous sulfate, manganous oxide, copper sulfate, calcium iodate, sodium selenite, copper proteinate]",
+    "trace minerals [zinc proteinate, manganese proteinate, zinc oxide, ferrous sulfate, manganous oxide, copper sulfate, sodium selenite, calcium iodate, copper proteinate]",
+    "trace minerals [zinc proteinate, zinc oxide, ferrous sulfate, copper sulfate, manganese proteinate, manganous oxide, sodium selenite, calcium iodate, copper proteinate]",
+    "trace minerals [zinc proteinate, zinc oxide, ferrous sulfate, manganese proteinate, copper sulfate, manganous oxide, sodium selenite, calcium iodate, copper proteinate]",
+    "trace minerals [zinc proteinate, zinc oxide, ferrous sulfate, manganese proteinate, manganous oxide, copper sulfate, calcium iodate, sodium selenite, copper proteinate]",
+    "trace minerals [zinc proteinate, zinc oxide, ferrous sulfate, manganese proteinate, manganous oxide, copper sulfate, copper proteinate, calcium iodate]",
+    "trace minerals [zinc proteinate, zinc oxide, ferrous sulfate, manganese proteinate, manganous oxide, copper sulfate, sodium selenite, calcium iodate, copper proteinate]",
+    "trace minerals [zinc proteinate, zinc oxide, manganese proteinate, ferrous sulfate, manganous oxide, copper sulfate, calcium iodate, sodium selenite, copper proteinate]",
+    "trace minerals [zinc proteinate, zinc oxide, manganese proteinate, ferrous sulfate, manganous oxide, copper sulfate, sodium selenite, calcium iodate, copper proteinate]",
+    "trace minerals [zinc proteinate, zinc oxide, manganese proteinate, manganous oxide, copper sulfate, ferrous sulfate, sodium selenite, copper proteinate, calcium iodate]",
+    "trace minerals[zinc oxide, ferrous sulfate, zinc proteinate, copper sulfate, calcium iodate, manganous oxide, sodium selenite]",
+    "trace minerals[zinc oxide, ferrous sulfate, zinc proteinate, copper sulfate, manganous oxide, sodium selenite, calcium iodate]",
+    "trace minerals[zinc oxide, manganese proteinate, ferrous sulfate, copper proteinate, calcium iodate, sodium selenite]",
+    "trace minerals[zinc proteinate, zinc oxide, ferrous sulfate, manganese proteinate, manganous oxide, copper sulfate, calcium iodate, sodium selenite, copper proteinate]",
+    "trace minerals[zinc proteinate,zinc oxide, manganese proteinate, ferrous sulfate, manganous oxide, copper sulfate, calcium iodate, sodium selenite, copper proteinate]",
+    "trace minerals[zinc proteinate, ferrous sulfate, manganous oxide, sodium selenite, calcium iodate]",
+    "trace minerals[zinc proteinate, ferrous sulfate, zinc oxide, manganese proteinate, copper sulfate, manganous oxide, sodium selenite, copper proteinate]",
+    "trace minerals[zinc proteinate, ferrous sulfate, zinc oxide, manganous oxide, sodium selenite, copper sulfate, calcium iodate]",
+    "trace minerals[zinc proteinate, manganese proteinate, ferrous sulfate, zinc oxide, manganous oxide, copper sulfate,calcium iodate, sodium selenite, copper proteinate]",
+    "trace minerals[zinc proteinate, manganese proteinate, ferrous sulfate, zinc oxide, manganous oxide, copper sulfate, sodium selenite, calcium iodate, copper proteinate]",
+    "trace minerals[zinc proteinate, manganese proteinate, zinc oxide, ferrous sulfate, copper sulfate, manganous oxide, sodium selenite, copper proteinate, calcium iodate]",
+    "trace minerals[zinc proteinate, manganese proteinate, zinc oxide, ferrous sulfate, manganous oxide, copper sulfate, sodium selenite, calcium iodate, copper proteinate]",
+    "trace minerals[zinc proteinate, zinc oxide, ferrous sulfate, manganese proteinate, manganous oxide, copper sulfate, sodium selenite, calcium iodate, copper proteinate]",
+    "trace minerals[zinc proteinate, zinc oxide, ferrous sulfate, manganous oxide, manganese proteinate, copper sulfate, sodium selenite, calcium iodate, copper proteinate]",
+    "trace minerals[zinc proteinate, zinc oxide, manganese proteinate,manganous oxide, copper sulfate, ferrous sulfate, sodium selenite,copper proteinate, calcium iodate]",
+    "trace minerals[zinc proteinate, zinc oxide, manganese proteinate, ferrous sulfate, manganous oxide, copper sulfate, calcium iodate, sodium selenite, copper proteinate]",
+    "trace minerals[zinc proteinate, zinc oxide, manganese proteinate, ferrous sulfate, manganous oxide, copper sulfate, sodium selenite, calcium iodate, copper proteinate]",
+    "trace minerals[zinc proteinate, zinc oxide, manganese proteinate, manganous oxide, copper sulfate, ferrous sulfate, sodium selenite, copper proteinate, calcium iodate]",
+    "trace minerals [zinc proteinate, zinc oxide, ferrous sulfate, manganese proteinate, manganous oxide, copper sulfate, sodium selenite, calcium iodate, copper proteinate]",
+    "trace minerals [zinc proteinate, zinc oxide, ferrous sulfate, manganous oxide, manganese proteinate, copper sulfate, sodium selenite, calcium iodate, copper proteinate]",
+    "Tricalcium Phosphate",
+    "tricalcium   phosphate",
+    "tryptophan",
+    "Turmeric",
+    "turmeric extract",
+    "turmeric. vitamins (vitamin E supplement, vitamin A supplement, niacin, calcium pantothenate, riboflavin, pyridoxine hydrochloride, thiamine mononitrate, biotin, vitamin B 12  supplement, vitamin D 3  supplement, folic acid)",
+    "Valerian Root",
+    "valeriana officinalis (valerian root)",
+    "vanilla flavour",
+    "varech séché",
+    "Vegan Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [Source Of Vitamin C], Niacin Supplement, D-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid)",
+    "Vegetable Broth",
+    "Vegetable Glycerin",
+    "vegetable glycerine",
+    "vegetable juice",
+    "Vegetable Juice (Colour)",
+    "Vegetable Juice for color",
+    "Vegetable Juice for Colour",
+    "vegetable oil",
+    "Vegetable Oil (Preserved With Mixed Tocopherols)",
+    "vegetable oil (source of medium-chain triglycerides)",
+    "Vinegar",
+    "Vinegar Powder",
+    "vitamin (vitamin A, vitamin D3, vitamin E, niacin, vitamin C, inositol, d-calcium pantothenate, thiamine mononitrate, riboflavin, beta carotene, pyridoxine hydrochloride, folic acid, vitamin K, biotin, vitamin B12 supplement)",
+    "vitamin A",
+    "vitamin A \nsupplement",
+    "Vitamin A Supplement",
+    "Vitamin A: 1875 IU",
+    "Vitamin A: 3750 IU",
+    "Vitamin A: 5625 IU",
+    "Vitamin A: 7500 IU",
+    "vitamin and mineral mixture",
+    "Vitamin A Supplement",
+    "vitamin B 12 supplement",
+    "vitamin B 12  supplement",
+    "Vitamin B-12 Supplement",
+    "Vitamin B12",
+    "Vitamin B12 Supplement",
+    "Vitamin B12: 0.1 mg",
+    "Vitamin B12: 0.15 mg",
+    "Vitamin B12: 0.2 mg",
+    "Vitamin B12: 0.2mg",
+    "Vitamin B12 Supplement",
+    "Vitamin B1: 100 mg",
+    "Vitamin B1: 25 mg",
+    "Vitamin B1: 25mg",
+    "Vitamin B1: 50 mg",
+    "Vitamin B1: 75 mg",
+    "Vitamin B1: 75mg",
+    "Vitamin B2: 10 mg",
+    "Vitamin B2: 15 mg",
+    "Vitamin B2: 15mg",
+    "Vitamin B2: 20 mg",
+    "Vitamin B3: 100 mg",
+    "Vitamin B3: 150 mg",
+    "Vitamin B3: 200 mg",
+    "Vitamin B3: 50 mg",
+    "Vitamin B5: 30 mg",
+    "Vitamin B5: 45 mg",
+    "Vitamin B5: 60 mg",
+    "Vitamin B5: 8 mg",
+    "Vitamin B5: 8mg",
+    "Vitamin B6: 17.5 mg",
+    "Vitamin B6: 26 mg",
+    "Vitamin B6: 26.25 mg",
+    "Vitamin B6: 35 mg",
+    "Vitamin B6: 7.5 mg",
+    "Vitamin B6: 7.5mg",
+    "Vitamin B9: 0.75 mg",
+    "Vitamin B9: 3.5 mg",
+    "Vitamin B9: 5.25 mg",
+    "Vitamin B9: 7 mg",
+    "Vitamin C (Ascorbic Acid)",
+    "Vitamin C: 0.15 mg. Zootechnical additives: 4b1707 Enterococcus faecium DSM 10663/NCIMB 10415: 1 x 10^9 CFU",
+    "Vitamin C: 0.15 Mg. Zootechnical Additives: 4b1707 Enterococcus Faecium Dsm 10663/ncimb 10415: 1 X 10^9cfu",
+    "Vitamin C: 0.15 mg. Zootechnical additives: 4b1707 Enterococcus faecium DSM 10663/NCIMB 10415: 1 x 10⁹ CFU",
+    "Vitamin C: 0.15mg. Zootechnical additives: 4b1707 Enterococcus faecium DSM 10663/NCIMB 10415: 1 x 10^9CFU",
+    "vitamin D 3 supplement",
+    "vitamin D 3  supplement",
+    "Vitamin D-3 supplement",
+    "Vitamin D2 Supplement",
+    "vitamin D3",
+    "Vitamin D3 Supplement",
+    "Vitamin D3: 1000 IU",
+    "Vitamin D3: 250 IU",
+    "Vitamin D3: 500 IU",
+    "Vitamin D3: 750 IU",
+    "Vitamin D: 250 IU",
+    "vitamin E",
+    "Vitamin E 60 mg",
+    "Vitamin E Supplement",
+    "Vitamin E: 115 IU. Zootechnical additives: 4b1707 Enterococcus faecium NCIMB 10415 2.2x10^6 CFU",
+    "Vitamin E: 150 IU. Zootechnical additives: Enterococcus faecium DSM 10663/NCIMB 10415: 1x10^9 CFU",
+    "Vitamin E: 175 IU. Zootechnical additives: Enterococcus faecium DSM 10663/NCIMB 10415: 1x10^9 CFU",
+    "Vitamin E: 250 IU. Zootechnical additives: Enterococcus faecium DSM 10663/NCIMB 10415: 1x10^9 CFU",
+    "Vitamin E: 450 IU",
+    "Vitamin E: 470 IU. Zootechnical additives: Enterococcus faecium DSM 10663/NCIMB 10415: 1x10^9 CF",
+    "Vitamin E: 475 IU",
+    "Vitamin E: 500 IU",
+    "Vitamin E: 500 IU. Zootechnical additives: Enterococcus faecium DSM 10663/ NCIMB 10415 1x10^9 CFU",
+    "Vitamin E: 500 IU. Zootechnical additives: Enterococcus faecium DSM 10663/ NCIMB 10415 1x10^9 CFU./p>",
+    "Vitamin E: 500 IU. Zootechnical additives: Enterococcus faecium DSM 10663/NCIMB 10415: 1 x 10^9 CFU",
+    "Vitamin E: 500 IU. Zootechnical additives: Enterococcus faecium DSM 10663/NCIMB 10415: 1x10^9 CFU",
+    "Vitamin E: 500 IU. Zootechnical additives: Zootechnical additives: Enterococcus faecium DSM 10663/ NCIMB 10415 1x10^9 CFU",
+    "Vitamin E: 525 IU. Zootechnical additives: Enterococcus faecium DSM 10663/NCIMB 10415: 1x10^9 CFU",
+    "Vitamin E: 550 IU",
+    "vitamin E\\ supplement",
+    "Vitamins",
+    "Vitamins (Choline Chloride, Vitamin E Supplement, Thiamine Mononitrate, Calcium Pantothenate, Biotin, Riboflavin Supplement, Vitamin A Supplement, Vitamin D3 Supplement, Vitamin B12 Supplement)",
+    "Vitamins (D-Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Folic Acid)",
+    "Vitamins (L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid)",
+    "vitamins (L-ascorbyl-2-polyphosphate, vitamin E supplement, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, thiamine mononitrate, vitamin B12 supplement, menadione sodium bisulfite complex, pyridoxine hydrochloride, biotin, vitamin D3 supplement, folic acid)",
+    "Vitamins (Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid)",
+    "Vitamins (Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid)",
+    "vitamins (thiamine mononitrate, vitamin E supplement, niacin supplement, D-calcium pantothenate, vitamin A supplement, riboflavin supplement, biotin, vitamin B12 supplement, pyridoxine hydrochloride, vitamin D3 supplement, folic acid)",
+    "vitamins (thiamine mononitrate, vitamin E supplement, niacin, D-calcium pantothenate, vitamin A supplement, riboflavin supplement, biotin, vitamin B12 supplement, pyridoxine hydrochloride, vitamin D3 supplement, folic acid)",
+    "vitamins (vitamin A supplement, vitamin D3 supplement, vitamin E supplement, niacin, D-calcium pantothenate, riboflavin, thiamine mononitrate, vitamin B12 supplement)",
+    "vitamins (vitamin A supplement, vitamin D3 supplement, vitamin E supplement, niacin, d-calcium pantothenate, thiamine mononitrate, riboflavin, pyridoxine hydrochloride, folic acid, biotin, vitamin B12 supplement)",
+    "vitamins (vitamin A supplement, vitamin D3 supplement, vitamin E supplement, niacin, L-ascorbyl-2-polyphosphate (a source of vitamin C), d-calcium pantothenate, thiamine mononitrate, beta-carotene, riboflavin, pyridoxine hydrochloride, folic acid, biotin, vitamin B12 supplement)",
+    "vitamins (vitamin A supplement, vitamin D3 supplement, vitamin E supplement, niacin,D-calcium pantothenate, riboflavin, thiamine mononitrate, vitamin B12supplement)",
+    "vitamins (Vitamin E Supplement, Ascorbic Acid (source of Vitamin C), L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Vitamin A Supplement, Calcium Pantothenate, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Riboflavin Supplement, Biotin, Vitamin D3 Supplement, Menadione Sodium Bisulfite Complex (source of Vitamin K), Folic Acid)",
+    "vitamins (Vitamin E Supplement, Ascorbic Acid (source of Vitamin C), L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Vitamin A Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Riboflavin Supplement, Biotin, Menadione Sodium Bisulfite Complex (source of Vitamin K), Folic Acid, Vitamin D3 Supplement)",
+    "vitamins (Vitamin E Supplement, Ascorbic Acid (source of Vitamin C), Thiamine Mononitrate, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Vitamin A Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Riboflavin Supplement, Biotin, Menadione Sodium Bisulfite Complex (source of Vitamin K), Folic Acid, Vitamin D3 Supplement)",
+    "vitamins (vitamin E supplement, ascorbic acid (source of vitamin C), thiamine mononitrate, niacin supplement, calcium pantothenate, vitamin B12 supplement, pyridoxine hydrochloride, biotin, riboflavin supplement, folic acid)",
+    "vitamins (Vitamin E Supplement, Ascorbic Acid (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Menadione Sodium Bisulfite Complex (source of Vitamin K), Pyridoxine Hydrochloride, Calcium Pantothenate, Vitamin B12 Supplement, Riboflavin Supplement, Vitamin A Supplement, Biotin, Folic Acid)",
+    "vitamins (Vitamin E Supplement, Ascorbic Acid (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Pyridoxine Hydrochloride, Calcium Pantothenate, Vitamin B12 Supplement, Riboflavin Supplement, Biotin, Vitamin D3 Supplement, Folic Acid)",
+    "vitamins (Vitamin E Supplement, Ascorbic Acid (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Vitamin A Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Riboflavin Supplement, Biotin, Menadione Sodium Bisulfite Complex (source of Vitamin K), Folic Acid, Vitamin D3 Supplement)",
+    "Vitamins (Vitamin E Supplement, Ascorbic Acid, Calcium Pantothenate, Biotin, Thiamine Mononitrate (source of Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin, Riboflavin Supplement (source of Vitamin B2), Pyridoxine Hydrochloride (source of Vitamin B6), Vitamin D3 Supplement, Folic Acid)",
+    "Vitamins (Vitamin E Supplement, Ascorbic Acid, D-Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Folic Acid)",
+    "Vitamins (Vitamin E Supplement, Ascorbic Acid, D-Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin, Riboflavin (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6),Vitamin D3 Supplement, Folic Acid)",
+    "Vitamins (Vitamin E Supplement, Ascorbic Acid, D-Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Folic Acid)",
+    "vitamins (vitamin E supplement, L-ascorbyl-2-polyphosphate (a source of vitamin C), niacin, d-calcium pantothenate, vitamin A supplement, thiamine mononitrate, riboflavin, beta-carotene, vitamin B12 supplement, biotin, pyridoxine hydrochloride, vitamin D3 supplement, folic acid)",
+    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Ascorbic Acid (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Riboflavin Supplement, Menadione Sodium Bisulfite Complex (source of Vitamin K), Biotin, Folic Acid, Vitamin D3 Supplement)",
+    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Ascorbic Acid (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin D3 Supplement, Riboflavin Supplement, Folic Acid)",
+    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Ascorbic Acid (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Vitamin A Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Riboflavin Supplement, Biotin, Menadione Sodium Bisulfite Complex (source of Vitamin K), Folic Acid, Vitamin D3 Supplement)",
+    "Vitamins (Vitamin E Supplement, L-ascorbyl-2-polyphosphate (source of Vitamin C), D-Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Folic Acid)",
+    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Calcium Pantothenate, Pyridoxine Hydrochloride, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement)",
+    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Calcium Pantothenate, Vitamin A Supplement, Pyridoxine Hydrochloride, Biotin, Riboflavin Supplement, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement)",
+    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement)",
+    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Pyridoxine Hydrochloride, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement)",
+    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Biotin, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement)",
+    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Biotin, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement, Menadione Sodium Bisulfite Complex (source of Vitamin K))",
+    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Riboflavin Supplement, Folic Acid, Vitamin D3 Supplement)",
+    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Riboflavin Supplement, Vitamin D3 Supplement, Folic Acid)",
+    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Biotin, Vitamin B12 Supplement, Riboflavin Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement)",
+    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Riboflavin Supplement, Folic Acid, Vitamin D3 Supplement, Menadione Sodium Bisulfite Complex (source of Vitamin K))",
+    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Riboflavin Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, Menadione Sodium Bisulfite Complex (source of Vitamin K))",
+    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement)",
+    "Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin, Calcium Pantothenate, Vitamin A Supplement, Riboflavin, Vitamin B12 Supplement, Thiamine Mononitrate, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid)",
+    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Ascorbic Acid (source of Vitamin C), Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin A Supplement, Biotin, Riboflavin Supplement, Folic Acid, Menadione Sodium Bisulfite Complex (source of Vitamin K), Vitamin D3 Supplement)",
+    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Ascorbic Acid (source of Vitamin C), Niacin Supplement, Vitamin A Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Riboflavin Supplement, Menadione Sodium Bisulfite Complex (source of Vitamin K), Biotin, Folic Acid, Vitamin D3 Supplement)",
+    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Riboflavin Supplement, Folic Acid, Vitamin D3 Supplement)",
+    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement)",
+    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Biotin, Folic Acid, Vitamin D3 Supplement)",
+    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Riboflavin Supplement, Folic Acid)",
+    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Riboflavin Supplement, Folic Acid, Vitamin D3 Supplement)",
+    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Riboflavin Supplement, Menadione Sodium Bisulfite Complex (source of Vitamin K), Folic Acid)",
+    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Riboflavin Supplement, Vitamin D3 Supplement, Folic Acid)",
+    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin D3 Supplement, Riboflavin Supplement, Folic Acid)",
+    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Menadione Sodium Bisulfite Complex (source of Vitamin K), Riboflavin Supplement, Biotin, Folic Acid)",
+    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Menadione Sodium Bisulfite Complex (source of Vitamin K), Pyridoxine Hydrochloride, Calcium Pantothenate, Vitamin B12 Supplement, Riboflavin Supplement, Vitamin D3 Supplement, Folic Acid, Biotin)",
+    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Pyridoxine Hydrochloride, Calcium Pantothenate, Vitamin B12 Supplement, Riboflavin Supplement, Menadione Sodium Bisulfite Complex (source of Vitamin K), Biotin, Vitamin D3 Supplement, Folic Acid)",
+    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Vitamin A Supplement, Calcium Pantothenate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Riboflavin Supplement, Folic Acid)",
+    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Pyridoxine Hydrochloride, Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Biotin, Riboflavin Supplement, Vitamin D3 Supplement, Folic Acid)",
+    "Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid)",
+    "Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin, Calcium Pantothenate, Vitamin A Supplement, Riboflavin, Vitamin B12 Supplement, Thiamin Mononitrate, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid)",
+    "Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin, Calcium Pantothenate, Vitamin A Supplement, Riboflavin, Vitamin B12 Supplement, Thiamine Mononitrate, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid)",
+    "Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [Vitamin C], Calcium Pantothenate, Biotin, Thiamine Mononitrate [Vitamin B1], Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement [Vitamin B2], Pyridoxine Hydrochloride [Vitamin B6], Vitamin D3 Supplement, Folic Acid)",
+    "Vitamins (Vitamin E Supplement, L-Ascorbyl-2-polyphosphate, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid)",
+    "vitamins (vitamin E supplement, L-ascorbyl-2-polyphosphate, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, thiamine mononitrate, vitamin B12 supplement, menadione sodium bisulfite complex, pyridoxine hydrochloride, biotin, vitamin D3 supplement, folic acid)",
+    "vitamins (vitamin E supplement, L-ascorbyl-2-polyphosphate, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, thiamine mononitrate, vitamin B12 supplement,menadione sodium bisulfite complex, pyridoxine hydrochloride, biotin, vitamin D3 supplement, folic acid)",
+    "Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate, Niacin Supplement, Vitamin A Supplement, D-Calcium Pantothenate, Riboflavin Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Thiamine Mononitrate, Folic Acid, Biotin, Vitamin B12 Supplement)",
+    "Vitamins (Vitamin E Supplement, Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid)",
+    "vitamins (Vitamin E Supplement, Niacin Supplement, Thiamine Mononitrate, Calcium Pantothenate, Pyridoxine Hydrochloride, Vitamin A Supplement, Biotin, Riboflavin Supplement, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement)",
+    "vitamins (Vitamin E Supplement, Niacin Supplement, Thiamine Mononitrate, Pyridoxine Hydrochloride, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Vitamin A Supplement, Folic Acid, Vitamin D3 Supplement)",
+    "vitamins (Vitamin E Supplement, Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Riboflavin Supplement, Folic Acid, Vitamin D3 Supplement)",
+    "Vitamins (Vitamin E Supplement, Niacin, Calcium Pantothenate, Vitamin A Supplement, Riboflavin, Vitamin B12 Supplement, Thiamine Mononitrate, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid)",
+    "Vitamins (Vitamin E Supplement, Niacin, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin, Vitamin B12 Supplement, Thiamine Mononitrate, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid)",
+    "vitamins (vitamin E supplement, niacin, thiamine mononitrate, riboflavin, calcium pantothenate, pyridoxine hydrochloride, folic acid, vitamin B12 supplement)",
+    "Vitamins (Vitamin E Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid) Minerals (Ferrous Sulfate, Zinc Oxide, Copper Proteinate, Sodium Selenite, Manganese Sulfate, Potassium Iodide)",
+    "vitamins (Vitamin E Supplement, Thiamine Mononitrate, Ascorbic Acid (source of Vitamin C), L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Vitamin A Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Riboflavin Supplement, Menadione Sodium Bisulfite Complex (source of Vitamin K), Biotin, Folic Acid, Vitamin D3 Supplement)",
+    "vitamins (vitamin E supplement, thiamine mononitrate, ascorbic acid (source of vitamin C), niacin supplement, calcium pantothenate, vitamin A supplement, vitamin B12 supplement, pyridoxine hydrochloride, menadione sodium bisulfate complex (source of vitamin K), riboflavin supplement, biotin, folic acid, vitamin D3 supplement)",
+    "vitamins (Vitamin E Supplement, Thiamine Mononitrate, Ascorbic Acid (source of Vitamin C), Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin D3 Supplement, Riboflavin Supplement, Folic Acid)",
+    "vitamins (Vitamin E Supplement, Thiamine Mononitrate, Ascorbic Acid (source of Vitamin C), Niacin Supplement, Pyridoxine Hydrochloride, Calcium Pantothenate, Vitamin B12 Supplement, Riboflavin Supplement, Biotin, Folic Acid)",
+    "vitamins (Vitamin E Supplement, Thiamine Mononitrate, Ascorbic Acid (source of Vitamin C), Niacin Supplement, Pyridoxine Hydrochloride, Menadione Sodium Bisulfite Complex (source of Vitamin K), Calcium Pantothenate, Vitamin B12 Supplement, Riboflavin Supplement, Biotin, Folic Acid, Vitamin D3 Supplement)",
+    "vitamins (Vitamin E Supplement, Thiamine Mononitrate, Ascorbic Acid (source of Vitamin C), Niacin Supplement, Vitamin A Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Riboflavin Supplement, Biotin, Menadione Sodium Bisulfite Complex (source of Vitamin K), Folic Acid, Vitamin D3 Supplement)",
+    "vitamins (vitamin E supplement, thiamine mononitrate, L-Ascorbyl-2-Polyphosphate (source of vitamin C), ascorbic acid (source of vitamin C), niacin supplement, calcium pantothenate, vitamin B12 supplement, pyridoxine hydrochloride, vitamin A supplement, biotin, riboflavin supplement, folic acid, menadione sodium bisulfate complex (source of vitamin K), vitamin D3 supplement)",
+    "vitamins (Vitamin E Supplement, Thiamine Mononitrate, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Ascorbic Acid (source of Vitamin C), Niacin Supplement, Vitamin A Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Riboflavin Supplement, Menadione Sodium Bisulfite Complex (source of Vitamin K), Biotin, Folic Acid, Vitamin D3 Supplement)",
+    "vitamins (Vitamin E Supplement, Thiamine Mononitrate, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Ascorbic Acid (source of Vitamin C), Menadione Sodium Bisulfite Complex (source of Vitamin K), Pyridoxine Hydrochloride, Calcium Pantothenate, Vitamin B12 Supplement, Vitamin A Supplement, Riboflavin Supplement, Folic Acid, Biotin, Vitamin D3 Supplement)",
+    "vitamins (Vitamin E Supplement, Thiamine Mononitrate, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Pyridoxine Hydrochloride, Riboflavin Supplement, Vitamin B12 Supplement, Biotin, Folic Acid, Vitamin D3 Supplement)",
+    "vitamins (Vitamin E Supplement, Thiamine Mononitrate, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Riboflavin Supplement, Menadione Sodium Bisulfite Complex (source of Vitamin K), Folic Acid, Vitamin D3 Supplement)",
+    "vitamins (Vitamin E Supplement, Thiamine Mononitrate, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Riboflavin Supplement, Menadione Sodium Bisulfite Complex (source of Vitamin K), Vitamin D3 Supplement, Folic Acid)",
+    "vitamins (Vitamin E Supplement, Thiamine Mononitrate, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Riboflavin Supplement, Vitamin D3 Supplement, Folic Acid)",
+    "vitamins (Vitamin E Supplement, Thiamine Mononitrate, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Menadione Sodium Bisulfite Complex (source of Vitamin K), Pyridoxine Hydrochloride, Calcium Pantothenate, Vitamin B12 Supplement, Riboflavin Supplement, Biotin, Vitamin D3 Supplement, Folic Acid)",
+    "vitamins (Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Riboflavin Supplement, Folic Acid, Vitamin D3 Supplement)",
+    "vitamins (Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Riboflavin Supplement, Vitamin D3 Supplement, Folic Acid)",
+    "Vitamins (Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, D-Calcium Pantothenate, Vitamin A Supplement, Pyridoxine Hydrochloride, Riboflavin Supplement, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Biotin)",
+    "Vitamins (Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, D-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid)",
+    "Vitamins (Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, D-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement,Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, FolicAcid)",
+    "vitamins (Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, Pyridoxine Hydrochloride, Calcium Pantothenate, Vitamin B12 Supplement, Riboflavin Supplement, Biotin, Vitamin D3 Supplement, Folic Acid)",
+    "vitamins (vitamin E supplement, thiamine mononitrate, niacin, vitamin A supplement, d-calcium pantothenate, pyridoxine hydrochloride, riboflavin, vitamin B12 supplement, vitamin D3 supplement, folic acid)",
+    "vitamins (Vitamin E Supplement, Thiamine Mononitrate, Pyridoxine Hydrochloride, Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Riboflavin Supplement, Biotin, Folic Acid, Vitamin D3 Supplement)",
+    "Vitamins (Vitamin E Supplement, Thiamine Nitrate, Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid) Minerals (Ferrous Sulfate, Zinc Oxide, Copper Proteinate, Sodium Selenite, Manganese Sulfate, Potassium Iodide)",
+    "Vitamins (Vitamin E Supplement, Thiamine Nitrate, Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid) Minerals (Ferrous Sulfate, Zinc Oxide, Copper Proteinate, Sodium Selenite, Manganese Sulfate, Potassium Iodide) Choline Chloride",
+    "Vitamins (Vitamin E Supplement, Thiamine Nitrate, Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid) Minerals (Ferrous Sulfate, Zinc Oxide, Copper Proteinate, Sodium Selenite, Manganese Sulfate, Potassium Iodide) Fish Oil",
+    "Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-Calcium Pantothenate, Riboflavin Supplement, Thiamin Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid)",
+    "Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Calcium Iodate, Folic Acid)",
+    "Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, CalciumIodate, Folic Acid)",
+    "Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid)",
+    "Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Calcium Iodate, Folic Acid)",
+    "Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-Calcium Pantothenate, Thiamine Mononitrate, Beta-Carotene, Biotin, Vitamin D3 Supplement, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid)",
+    "vitamins (vitamin E supplement, vitamin A supplement, niacin, calcium pantothenate, riboflavin, pyridoxine hydrochloride thiamine mononitrate, biotin, vitamin B 12  supplement, vitamin D 3  supplement, folic acid)",
+    "vitamins (vitamin E supplement, vitamin A supplement, niacin, calcium pantothenate, riboflavin, pyridoxine hydrochloride, thiamine mononitrate, biotin, vitamin B 12  supplement, vitamin D 3  supplement, folic acid)",
+    "vitamins (vitamin E supplement, vitamin A supplement, niacin, calcium pantothenate, riboflavin, pyridoxine hydrochloride, thiamine mononitrate, biotin, vitamin B 12  supplement, vitamin D 3  supplement, folic acid)",
+    "Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Calcium Iodate, Vitamin D3 Supplement, Folic Acid)",
+    "vitamins (Vitamin ESupplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement)",
+    "vitamins [DL-alpha tocopherol acetate (source of vitamin E), biotin, D-calcium pantothenate, vitamin A acetate, niacin supplement, pyridoxine hydrochloride (vitamin B6), thiamine mononitrate (vitamin B1), vitamin B12 supplement, riboflavin supplement, vitamin D3 supplement, folic acid]",
+    "vitamins [DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), biotin, D-calcium pantothenate, pyridoxine hydrochloride (vitamin B6), vitamin A acetate, niacin supplement, folic acid, thiamine mononitrate (vitamin B1), vitamin B12 supplement, riboflavin supplement, vitamin D3 supplement]",
+    "vitamins [DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), biotin, D-calcium pantothenate, pyridoxine hydrochloride (vitamin B6), vitamin A acetate, riboflavin supplement, niacin supplement, folic acid, vitamin B12 supplement, thiamine mononitrate (vitamin B1), vitamin D3 supplement]",
+    "vitamins [DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), biotin, D-calcium pantothenate, vitamin A acetate, niacin supplement, folic acid, pyridoxine hydrochloride (vitamin B6), vitamin B12 supplement, thiamine mononitrate (vitamin B1), vitamin D3 supplement, riboflavin supplement]",
+    "vitamins [DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), biotin, D-calcium pantothenate, vitamin A acetate, niacin supplement, pyridoxine hydrochloride (vitamin B6), thiamine mononitrate (vitamin B1), vitamin B12 supplement, riboflavin supplement, vitamin D3 supplement, folic acid]",
+    "vitamins [DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), biotin, D-calcium pantothenate, vitamin A acetate, niacin supplement, pyridoxine hydrochloride (vitamin B6), vitamin B12 supplement, thiamine mononitrate (vitamin B1), vitamin D3 supplement, riboflavin supplement, folic acid]",
+    "vitamins [DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), biotin, D-calcium pantothenate, vitamin A acetate, pyridoxine hydrochloride (vitamin B6), folic acid, niacin supplement, vitamin B12 supplement, thiamine mononitrate (vitamin B1), vitamin D3 supplement, riboflavin supplement]",
+    "vitamins [DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), biotin, D-calcium pantothenate, vitamin A acetate, pyridoxine hydrochloride (vitamin B6), niacin supplement, folic acid, thiamine mononitrate (vitamin B1), vitamin B12 supplement, riboflavin supplement, vitamin D3 supplement]",
+    "vitamins [DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), biotin, D-calcium pantothenate, vitamin A acetate, pyridoxine hydrochloride (vitamin B6), niacin supplement, folic acid, vitamin B12 supplement, thiamine mononitrate (vitamin B1), vitamin D3 supplement, riboflavin supplement]",
+    "vitamins [DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), biotin, D-calcium pantothenate, vitamin A acetate, riboflavin supplement, niacin supplement, vitamin B12 supplement, pyridoxine hydrochloride (vitamin B6), thiamine mononitrate (vitamin B1), vitamin D3 supplement, folic acid]",
+    "vitamins [DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), biotin, niacin supplement, D-calcium pantothenate, pyridoxine hydrochloride (vitamin B6), riboflavin supplement, vitamin A acetate, thiamine mononitrate (vitamin B1), folic acid, vitamin B12 supplement, vitamin D3 supplement, menadione sodium bisulfite complex]",
+    "vitamins [DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), niacin supplement, biotin, riboflavin supplement, D-calcium pantothenate, pyridoxine hydrochloride (vitamin B6), thiamine mononitrate (vitamin B1), vitamin A acetate, vitamin B12 supplement, folic acid, vitamin D3 supplement]",
+    "vitamins [DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), niacin supplement, D-calcium pantothenate, biotin, pyridoxine hydrochloride (vitamin B6), riboflavin supplement, thiamine mononitrate (vitamin B1), vitamin A acetate, vitamin B12 supplement, folic acid, vitamin D3 supplement]",
+    "vitamins [DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), niacin supplement, D-calcium pantothenate, biotin, thiamine mononitrate (vitamin B1), riboflavin supplement, pyridoxine hydrochloride (vitamin B6), vitamin B12 supplement, folic acid, vitamin D3 supplement]",
+    "vitamins [DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), niacin supplement, thiamine mononitrate (vitamin B1), D-calcium pantothenate, biotin, riboflavin supplement, pyridoxine hydrochloride (vitamin B6), vitamin B12 supplement, folic acid, vitamin D3 supplement]",
+    "vitamins [DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), thiamine mononitrate (vitamin B1), biotin, niacin supplement, D-calcium pantothenate, riboflavin supplement, pyridoxine hydrochloride (vitamin B6), vitamin B12 supplement, folic acid, vitamin D3 supplement]",
+    "vitamins [DL-alpha tocopherol acetate (source of vitamin E), niacin supplement, biotin, riboflavin supplement, D-calcium pantothenate, thiamine mononitrate (vitamin B1), pyridoxine hydrochloride (vitamin B6), vitamin A acetate, vitamin B12 supplement, folic acid, vitamin D3 supplement]",
+    "vitamins [DL-alpha tocopherol acetate (source of vitamin E), niacin supplement, D-calcium pantothenate, biotin, pyridoxine hydrochloride (vitamin B6), riboflavin supplement, thiamine mononitrate (vitamin B1), vitamin A acetate, folic acid, vitamin B12 supplement, vitamin D3 supplement]",
+    "vitamins [DL-alpha tocopherol acetate (source of vitamin E), niacin supplement, D-calcium pantothenate, biotin, pyridoxine hydrochloride (vitamin B6), riboflavin supplement, thiamine mononitrate (vitamin B1), vitamin A acetate, vitamin B12 supplement, folic acid]",
+    "vitamins [DL-alpha tocopherol acetate (source of vitamin E), niacin supplement, L-ascorbyl-2-\npolyphosphate (source of vitamin C), D-calcium pantothenate, biotin, pyridoxine hydrochloride (vitamin B6), riboflavin\nsupplement, thiamine mononitrate (vitamin B1), vitamin A acetate, folic acid, vitamin B12 supplement, vitamin D3\nsupplement]",
+    "vitamins [DL-alpha tocopherol acetate (source of vitamin E), niacin supplement, L-ascorbyl-2-polyphosphate (source of vitamin C), D-calcium pantothenate, biotin, pyridoxine hydrochloride (vitamin B6), riboflavin supplement, thiamine mononitrate (vitamin B1), vitamin A acetate, folic acid, vitamin B12 supplement, menadione sodium bisulfite complex, vitamin D3 supplement]",
+    "vitamins [DL-alpha tocopherol acetate (source of vitamin E), niacin supplement, L-ascorbyl-2-polyphosphate (source of vitamin C), D-calcium pantothenate, biotin, pyridoxine hydrochloride (vitamin B6), riboflavin supplement, thiamine mononitrate (vitamin B1), vitamin A acetate, folic acid, vitamin B12 supplement, vitamin D3 supplement]",
+    "vitamins [DL-alpha tocopherol acetate (source of vitamin E), niacin supplement, L-ascorbyl-2-polyphosphate (source of vitamin C), D-calcium pantothenate, biotin, pyridoxine hydrochloride (vitamin B6), riboflavin supplement, thiamine mononitrate (vitamin B1), vitamin A acetate, vitamin B12 supplement, folic acid, vitamin D3 supplement]",
+    "vitamins [DL-alpha tocopherol acetate (source of vitamin E), niacin supplement, L-ascorbyl-2-polyphosphate (source of vitamin C), D-calcium pantothenate, biotin, pyridoxine hydrochloride (vitamin B6), riboflavin supplement, thiamine mononitrate (vitamin B1), vitamin A acetate, vitamin B12 supplement, folic acid]",
+    "vitamins [DL-alpha tocopherol acetate (source of vitamin E), thiamine mononitrate (vitamin B1), biotin, niacin supplement, D-calcium pantothenate, riboflavin supplement, pyridoxine hydrochloride (vitamin B6), vitamin B12 supplement, folic acid, vitamin D3 supplement]",
+    "vitamins [L-ascorbyl-2-polyphosphate (source of vitamin C), DL-alpha tocopherol acetate (source of vitamin E), niacin supplement, biotin, D-calcium pantothenate, thiamine mononitrate (vitamin B1), riboflavin supplement, pyridoxine hydrochloride (vitamin B6), folic acid, vitamin B12 supplement, vitamin D3 supplement]",
+    "vitamins [L-ascorbyl-2-polyphosphate (source of vitamin C), DL-alpha tocopherol acetate (source of vitamin E), niacin supplement, biotin, D-calcium pantothenate, thiamine mononitrate (vitamin B1), riboflavin supplement, pyridoxine hydrochloride (vitamin B6), vitamin B12 supplement, folic acid, vitamin D3 supplement]",
+    "vitamins [L-ascorbyl-2-polyphosphate (source of vitamin C), DL-alpha tocopherol acetate (source of vitamin E), niacin supplement, D-calcium pantothenate, biotin, pyridoxine hydrochloride (vitamin B6), riboflavin supplement, thiamine mononitrate (vitamin B1), vitamin A acetate, folic acid, vitamin B12 supplement, vitamin D3 supplement]",
+    "vitamins [L-ascorbyl-2-polyphosphate (source of vitamin C), DL-alpha tocopherol acetate (source of vitamin E), niacin supplement, D-calcium pantothenate, biotin, thiamine mononitrate (vitamin B1), pyridoxine hydrochloride (vitamin B6), riboflavin supplement, vitamin B12 supplement, vitamin A acetate, folic acid, vitamin D3 supplement]",
+    "vitamins [L-ascorbyl-2-polyphosphate (source of vitamin C), DL-alpha tocopherol acetate (source of vitamin E), niacin supplement, D-calcium pantothenate, biotin, thiamine mononitrate (vitamin B1), riboflavin supplement, pyridoxine hydrochloride (vitamin B6), vitamin B12 supplement, folic acid, vitamin D3 supplement]",
+    "vitamins [L-ascorbyl-2-polyphosphate (source of vitamin C), DL-alpha tocopherol acetate (source of vitamin E), thiamine mononitrate (vitamin B1), biotin, niacin supplement, D-calcium pantothenate, riboflavin supplement, pyridoxine hydrochloride (vitamin B6), vitamin B12 supplement, folic acid, vitamin D3 supplement, menadione sodium bisulfite complex]",
+    "vitamins [L-ascorbyl-2-polyphosphate (source of vitamin C), DL-alpha tocopherol acetate (source of vitamin E), thiamine mononitrate (vitamin B1), biotin, niacin supplement, D-calcium pantothenate, riboflavin supplement, pyridoxine hydrochloride (vitamin B6), vitamin B12 supplement, folic acid, vitamin D3 supplement]",
+    "vitamins [L-ascorbyl-2-polyphosphate (source of vitamin C), DL-alpha tocopherol acetate (source of vitamin E), thiamine mononitrate (vitamin B1), niacin supplement, biotin, D-calcium pantothenate, riboflavin supplement, pyridoxine hydrochloride (vitamin B6), vitamin B12 supplement, folic acid, vitamin D3 supplement]",
+    "vitamins [L-ascorbyl-2-polyphosphate (source of vitamin C), niacin supplement, DL-alpha tocopherol acetate (source of vitamin E), biotin, D-calcium pantothenate, thiamine mononitrate (vitamin B1), riboflavin supplement, pyridoxine hydrochloride (vitamin B6), vitamin B12 supplement, folic acid, vitamin D3 supplement]",
+    "vitamins [L-ascorbyl-2-polyphosphate (source of vitamin C), niacin supplement, DL-alpha tocopherol acetate (source of vitamin E), vitamin E supplement, D-calcium pantothenate, biotin, pyridoxine hydrochloride (vitamin B6), riboflavin supplement, thiamine mononitrate (vitamin B1), vitamin A acetate, folic acid, vitamin B12 supplement, vitamin D3 supplement]",
+    "vitamins [vitamin E supplement, ascorbic acid (vitamin C), vitamin A supplement, niacin, calcium pantothenate, inositol, riboflavin, pyridoxine hydrochloride, thiamine mononitrate, biotin, vitamin B 12  supplement, vitamin D 3 supplement, folic acid]",
+    "vitamins [vitamin E supplement, ascorbic acid (vitamin C), vitamin A supplement, niacin, calcium pantothenate, inositol, riboflavin, pyridoxine hydrochloride, thiamine mononitrate, biotin, vitamin B 12  supplement, vitamin D 3  supplement, folic acid]",
+    "vitamins [vitamin E supplement, DL-alpha tocopherol acetate (source of vitamin E), biotin, D-calcium pantothenate, vitamin A acetate, niacin supplement, pyridoxine hydrochloride (vitamin B6), thiamine mononitrate (vitamin B1), vitamin B12 supplement, riboflavin supplement, vitamin D3 supplement, folic acid]",
+    "Vitamins [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Thiamine Mononitrate (Vitamin B-1), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Menadione Sodium Bisulfite Complex (Vitamin K), Vitamin D-3 Supplement, Biotin (Vitamin B-7)]",
+    "vitamins [vitamin E supplement, vitamin A supplement, niacin, calcium pantothenate, riboflavin, pyridoxine hydrochloride, thiamine mononitrate, biotin, vitamin B 12 supplement, vitamin D 3 supplement, folic acid]",
+    "vitamins [vitamin E supplement, vitamin A supplement, niacin, calcium pantothenate, riboflavin, pyridoxine hydrochloride, thiamine mononitrate, biotin, vitamin B12 supplement, vitamin D3 supplement, folic acid]",
+    "vitamins and minerals",
+    "Vitamins. A850923",
+    "Vitamins. E850023",
+    "Vitamins: Vitamin E Supplement",
+    "vitamins[DL-alpha tocopherol acetate (source of vitamin E), biotin, D-calcium pantothenate, vitamin A acetate, niacin supplement, pyridoxine hydrochloride (vitamin B6), thiamine mononitrate (vitamin B1), vitamin B12 supplement, riboflavin supplement, vitamin D3 supplement, folic acid]",
+    "vitamins[DL-alpha tocopherol acetate (source of vitamin E), biotin, D-calcium pantothenate, vitamin A acetate, niacin supplement, pyridoxine hydrochloride (vitamin B6),thiamine mononitrate (vitamin B1), vitamin B12 supplement, riboflavin supplement, vitamin D3 supplement, folic acid]",
+    "vitamins[DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), biotin, D-calcium pantothenate, pyridoxine hydrochloride (vitamin B6), vitamin A acetate, riboflavin supplement, niacin supplement, folic acid, vitamin B12 supplement, thiamine mononitrate (vitamin B1), vitamin D3 supplement]",
+    "vitamins[DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), biotin, D-calcium pantothenate, vitamin A acetate, niacin supplement, folic acid, pyridoxine hydrochloride (vitamin B6), vitamin B12 supplement, thiamine mononitrate (vitamin B1), vitamin D3 supplement, riboflavin supplement]",
+    "vitamins[DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), biotin, D-calcium pantothenate, vitamin A acetate, pyridoxine hydrochloride (vitamin B6), folic acid, niacin supplement, vitamin B12 supplement, thiamine mononitrate (vitamin B1), vitamin D3 supplement, riboflavin supplement]",
+    "vitamins[DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), biotin, D-calcium pantothenate, vitamin A acetate, pyridoxine hydrochloride (vitamin B6), niacin supplement, folic acid, thiamine mononitrate (vitamin B1), vitamin B12 supplement, riboflavin supplement, vitamin D3 supplement]",
+    "vitamins[DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), biotin, D-calcium pantothenate, vitamin A acetate, riboflavin supplement, niacin supplement, vitamin B12 supplement, pyridoxine hydrochloride (vitamin B6), thiamine mononitrate (vitamin B1), vitamin D3 supplement, folic acid]",
+    "vitamins[DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), biotin, niacin supplement, D-calcium pantothenate, pyridoxine hydrochloride (vitamin B6), riboflavin supplement, vitamin A acetate, folic acid, thiamine mononitrate (vitamin B1), vitamin B12 supplement, vitamin D3 supplement, menadione sodium bisulfite complex]",
+    "vitamins[DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), niacin supplement, biotin, riboflavin supplement, D-calcium pantothenate, thiamine mononitrate (vitamin B1), pyridoxine hydrochloride (vitamin B6), vitamin A acetate, vitamin B12 supplement, folic acid, vitamin D3 supplement]",
+    "vitamins[DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), niacin supplement, D-calcium pantothenate, biotin, pyridoxine hydrochloride (vitamin B6), riboflavin supplement, thiamine mononitrate (vitamin B1), vitamin A acetate, folic acid, vitamin B12 supplement, vitamin D3 supplement]",
+    "vitamins[DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), niacin supplement, D-calcium pantothenate, biotin, pyridoxine hydrochloride (vitamin B6), riboflavin supplement, thiamine mononitrate (vitamin B1), vitamin A acetate, vitamin B12 supplement, folic acid, vitamin D3 supplement]",
+    "vitamins[DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), niacin supplement, vitamin B12 supplement, D-calcium pantothenate, biotin, pyridoxine hydrochloride (vitamin B6), riboflavin supplement, thiamine mononitrate (vitamin B1), vitamin A acetate, folic acid, vitamin D3 supplement]",
+    "vitamins[DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), thiamine mononitrate (vitamin B1), niacin supplement, biotin, D-calcium pantothenate, riboflavin supplement, pyridoxine hydrochloride (vitamin B6), vitamin B12 supplement, folic acid, vitamin D3 supplement, menadione sodium bisulfite complex]",
+    "vitamins[DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), thiamine mononitrate (vitamin B1), niacin supplement, biotin, D-calcium pantothenate, riboflavin supplement, pyridoxine hydrochloride (vitamin B6), vitamin B12 supplement, folic acid, vitamin D3 supplement]",
+    "vitamins[DL-alpha tocopherol acetate (source of vitamin E), niacin supplement,L-ascorbyl-2-polyphosphate (source of vitamin C), D-calcium pantothenate, biotin, pyridoxine hydrochloride (vitamin B6),riboflavin supplement, thiamine mononitrate (vitamin B1), vitamin A acetate, vitamin B12 supplement, folic acid]",
+    "vitamins[DL-alpha tocopherol acetate (source of vitamin E), niacin supplement, L-ascorbyl-2-polyphosphate (source of vitamin C), D-calcium pantothenate, biotin, pyridoxine hydrochloride (vitamin B6), riboflavin supplement, thiamine mononitrate (vitamin B1), vitamin A acetate, folic acid, vitamin B12 supplement, vitamin D3 supplement]",
+    "vitamins[DL-alpha tocopherol acetate (source of vitamin E), niacin supplement, L-ascorbyl-2-polyphosphate (source of vitamin C), D-calcium pantothenate, biotin, pyridoxine hydrochloride (vitamin B6), riboflavin supplement, thiamine mononitrate (vitamin B1), vitamin A acetate, vitamin B12 supplement, folic acid, vitamin D3 supplement]",
+    "vitamins[DL-alpha tocopherol acetate (source of vitamin E), niacin supplement, L-ascorbyl-2-polyphosphate (source of vitamin C), D-calcium pantothenate, pyridoxine hydrochloride (vitamin B6), thiamine mononitrate (vitamin B1), riboflavin supplement, folic acid, vitamin A acetate, biotin, vitamin D3 supplement, vitamin B12 supplement]",
+    "vitamins[DL-alpha tocopherol acetate (source of vitamin E), thiamine mononitrate (vitamin B1), biotin, niacin supplement, D-calcium pantothenate, riboflavin supplement, pyridoxine hydrochloride (vitamin B6), vitamin B12 supplement, folic acid, vitamin D3 supplement]",
+    "vitamins[L-ascorbyl-2-polyphosphate (source of vitamin C), DL-alpha tocopherol acetate (source of vitamin E), biotin, D-calcium pantothenate, vitamin A acetate, riboflavin supplement, niacin supplement, vitamin B12 supplement, pyridoxine hydrochloride (vitamin B6), thiamine mononitrate (vitamin B1), vitamin D3 supplement, folic acid, menadione sodium bisulfite complex]",
+    "vitamins[L-ascorbyl-2-polyphosphate (source of vitamin C), DL-alpha tocopherol acetate (source of vitamin E), biotin, D-calcium pantothenate, vitamin A acetate, riboflavin supplement, niacin supplement, vitamin B12 supplement, pyridoxine hydrochloride (vitamin B6), thiamine mononitrate (vitamin B1), vitamin D3 supplement, folic acid]",
+    "vitamins[L-ascorbyl-2-polyphosphate (source of vitamin C), DL-alpha tocopherol acetate (source of vitamin E), niacin supplement, D-calcium pantothenate, biotin, thiamine mononitrate (vitamin B1), riboflavin supplement, pyridoxine hydrochloride (vitamin B6), vitamin B12 supplement, folic acid, vitamin D3 supplement]",
+    "vitamins[L-ascorbyl-2-polyphosphate (source of vitamin C), DL-alpha tocopherol acetate (source of vitamin E), niacin supplement, thiamine mononitrate (vitamin B1), D-calcium pantothenate, biotin, riboflavin supplement, pyridoxine hydrochloride (vitamin B6), vitamin B12 supplement, folic acid, vitamin D3 supplement]",
+    "vitamins[L-ascorbyl-2-polyphosphate (source of vitamin C), DL-alpha tocopherol acetate (source of vitamin E), thiamine mononitrate (vitamin B1), biotin, niacin supplement, D-calcium pantothenate, riboflavin supplement, pyridoxine hydrochloride (vitamin B6), vitamin B12 supplement, folic acid, vitamin D3 supplement]",
+    "vitamins[L-ascorbyl-2-polyphosphate (source of vitamin C), DL-alpha tocopherol acetate (source of vitamin E), thiamine mononitrate (vitamin B1), niacin supplement, biotin, D-calcium pantothenate, riboflavin supplement, pyridoxine hydrochloride (vitamin B6), vitamin B12 supplement, folic acid, vitamin D3 supplement]",
+    "vitamins [DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), biotin, D-calcium pantothenate, vitamin A acetate, niacin supplement, pyridoxine hydrochloride (vitamin B6), thiamine mononitrate (vitamin B1), vitamin B12 supplement, riboflavin supplement, vitamin D3 supplement, folic acid]",
+    "vitamins [DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), biotin, D-calcium pantothenate, vitamin A acetate, pyridoxine hydrochloride (vitamin B6), niacin supplement, folic acid, thiamine mononitrate (vitamin B1), vitamin B12 supplement, riboflavin supplement, vitamin D3 supplement]",
+    "Water",
+    "Water sufficient for processing",
+    "Water. A-9306-C",
+    "Xanthan Gum",
+    "xylose",
+    "Yeast (S. Cerevisiae)",
+    "Yeast Culture",
+    "yeast extract",
+    "yeast extract (source of MOS)",
+    "Yeast. A930823C",
+    "Yellow #5",
+    "Yellow #6",
+    "Yellow 5",
+    "Yellow 6",
+    "Yucca Schidigera Extract",
+    "zedoary",
+    "Zinc (zinc oxide)",
+    "Zinc Amino Acid Chelate",
+    "Zinc Bisglycinate 12 mg (Provides Zinc 2.7 mg)",
+    "Zinc Methionine Complex",
+    "Zinc Oxide",
+    "Zinc Propionate",
+    "Zinc Proteinate",
+    "Zinc proteinate: 105 mg",
+    "Zinc proteinate: 112.5 mg",
+    "Zinc proteinate: 150 mg",
+    "Zinc proteinate: 160 mg",
+    "Zinc proteinate: 75 mg",
+    "Zinc Sulfate",
+    "Zinc Sulphate",
+    "Zinc-Methionine complex",
+    "zingiber officinale (ginger root)",
+    "β-glucans",
+    "vitamins (thiamine mononitrate, vitamin E supplement, niacin supplement, calcium pantothenate, vitamin A supplement, riboflavin supplement, biotin, vitamin B12 supplement, pyridoxine hydrochloride, vitamin D3 supplement, folic acid)",
+    "vitamins (thiamine mononitrate, vitamin E supplement, niacin supplement, D-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin B12 supplement, pyridoxine hydrochloride, biotin, folic acid, vitamin D3 supplement)",
+    "vitamins (thiamine mononitrate, vitamin E supplement, niacin supplement, D-calcium pantothenate, vitamin A supplement, riboflavin supplement, biotin, vitamin B12 supplement, pyridox",
+    "vitamins (thiamine mononitrate, vitamin E supplement, niacin, calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin B12 supplement, pyridoxine hydrochloride, biotin, folic acid, vitamin D3 supplement)",
+    "vitamins (thiamine supplement, vitamin E supplement, niacin supplement, D-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin B12 supplement, pyridoxine hydrochloride, biotin, folic acid, vitamin D3 supplement)",
+    "vitamins (vitamin E supplement, niacin supplement, D-calcium pantothenate, thiamine mononitrate, riboflavin supplement, vitamin A supplement, vitamin B12 supplement, pyridoxine hydrochloride, biotin, vitamin D3 supplement, folic acid)",
+    "vitamins (vitamin E supplement, thiamine mononitrate, niacin supplement, calcium pantothenate, vitamin A supplement, riboflavin supplement, biotin, vitamin B12 supplement, pyridoxine hydrochloride, vitamin D3 supplement, folic acid)",
+    "vitamins [vitamin E supplement, thiamine mononitrate, niacin, pyridoxine hydrochloride, calcium pantothenate, riboflavin supplement, vitamin A supplement, folic acid, biotin, vitamin B12 supplement, vitamin D3 supplement]",
+    "Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin, Vitamin B12 Supplement, Thiamin Mononitrate, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid)",
+    "vitamins[DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), biotin, D-calcium pantothenate, pyridoxine hydrochloride (vitamin B6), vitamin A acetate, riboflavin supplement, niacin supplement, folic acid, vitamin B12 supplement, thiamine mononitrate (vitamin B1), vitamin D3 supplement]",
+    "vitamins[DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), niacin supplement, biotin, riboflavin supplement, D-calcium pantothenate, thiamine mononitrate (vitamin B1), pyridoxine hydrochloride (vitamin B6), vitamin B12 supplement, vitamin A acetate, vitamin D3 supplement, folic acid]",
+    "vitamins[DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), niacin supplement, D-calcium pantothenate, biotin, pyridoxine hydrochloride (vitamin B6), riboflavin supplement, thiamine mononitrate (vitamin B1), vitamin A acetate, vitamin B12 supplement, folic acid, vitamin D3 supplement]",
+    "minerals (zinc proteinate, iron proteinate, selenium yeast, cobalt proteinate, copper proteinate, manganese proteinate, potassium iodide)",
+    "minerals (zinc proteinate, iron proteinate, selenium yeast, copper proteinate, cobalt proteinate, manganese proteinate, potassium iodide)",
+    "minerals (zinc proteinate, iron proteinate, selenium yeast, copper proteinate, manganese proteinate, cobalt proteinate, potassium iodide)",
+    "minerals (zinc proteinate, iron proteinate, selenium yeast, copper proteinate, manganese proteinate, potassium iodide)",
+    "minerals [potassium chloride, magnesium sulfate, zinc amino acid chelate, iron amino acid chelate, manganese amino acid chelate, copper amino acid chelate, potassium iodide]",
+    "trace minerals[zinc proteinate, zinc oxide, ferrous sulfate, manganese proteinate, manganous oxide, copper sulfate, sodium selenite, calcium iodate, copper proteinate]",
+    "trace minerals[zinc proteinate, zinc oxide, manganese proteinate, ferrous sulfate, manganous oxide, copper sulfate, sodium selenite, calcium iodate, copper proteinate]",
+    "L-ascorbyl-2 polyphosphate (vitamin C)",
+    "turmeric root",
+    "rosemary extrac",
+    "Paprika (for colour)",
+    "Paprika (For Colour)"
+  ]
+}

@@ -1,0 +1,550 @@
+{
+  "brand": "Taste of the Wild",
+  "website_url": "https://www.tasteofthewildpetfood.com",
+  "scraped_at": "2026-03-04T14:24:20.477285+00:00",
+  "scraper_version": "0.1.0",
+  "stats": {
+    "product_count": 21,
+    "by_channel": {
+      "retail": 21
+    },
+    "by_type": {
+      "dry": 16,
+      "wet": 5
+    }
+  },
+  "products": [
+    {
+      "name": "Ancient Mountain Canine Recipe with Roasted Lamb",
+      "brand": "Taste of the Wild",
+      "url": "https://www.tasteofthewildpetfood.com/dog/ancient-grains/ancient-mountain-with-roasted-lamb",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Ancient Grains",
+      "ingredients_raw": "Lamb, Lamb Meal, Grain Sorghum, Millet, Cracked Pearled Barley, Dried Yeast, Canola Oil (preserved with mixed tocopherols), Whole Grain Brown Rice, Egg Product, Roasted Lamb, Natural Flavor, Dried Tomato Pomace, Salmon Oil (a source of DHA), Quinoa, Chia Seed, Salt, Potassium Chloride, DL-Methionine, Choline Chloride, Taurine, Dried Chicory Root, Tomatoes, Blueberries, Raspberries, Yucca Schidigera Extract, L-Carnitine, Dried Lactobacillus Plantarum Fermentation Product, Dried Bacillus Subtilis Fermentation Product, Dried Lactobacillus Acidophilus Fermentation Product, Dried Enterococcus Faecium Fermentation Product, Dried Bifidobacterium Animalis Fermentation Product, Vitamin E Supplement, Iron Proteinate, Zinc Proteinate, Copper Proteinate, Ferrous Sulfate, Zinc Sulfate, Manganese Sulfate, Copper Sulfate, Potassium Iodide, Thiamine Mononitrate, Manganese Proteinate, Ascorbic Acid, Vitamin A Supplement, Biotin, Niacin, Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Riboflavin, Vitamin D3 Supplement, Folic Acid",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.05,
+        "l_carnitine_min": 100.0,
+        "taurine_min": 0.12,
+        "omega_6_min": 2.8,
+        "omega_3_min": 0.4,
+        "glucosamine_min": 750.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3625 kcal/kg, 411 kcal/cup",
+      "aafco_statement": "Taste of the Wild Ancient Mountain Canine Recipe with Roasted Lamb is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages, including growth of large size dogs (70 lb. or more as an adult).",
+      "life_stage": "all life stages",
+      "images": [
+        "/products/taste-of-the-wild/taste-of-the-wild-dry-ancient-mountain-canine-recipe-with-roasted-lamb.png"
+      ]
+    },
+    {
+      "name": "Ancient Prairie Canine Recipe with Roasted Bison & Roasted Venison",
+      "brand": "Taste of the Wild",
+      "url": "https://www.tasteofthewildpetfood.com/dog/ancient-grains/ancient-prairie-with-roasted-bison-roasted-venison",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Ancient Grains",
+      "ingredients_raw": "Water Buffalo, Pork, Chicken Meal, Grain Sorghum, Millet, Chicken Fat (preserved with mixed tocopherols), Cracked Pearled Barley, Dried Yeast, Roasted Bison, Roasted Venison, Natural Flavor, Flaxseed, Beef, Quinoa, Chia Seed, Dried Tomato Pomace, Salmon Oil (a source of DHA), Dicalcium Phosphate, Calcium Carbonate, Salt, Potassium Chloride, DL-Methionine, Choline Chloride, Taurine, Dried Chicory Root, Tomatoes, Blueberries, Raspberries, Yucca Schidigera Extract, L-Carnitine, Dried Lactobacillus Plantarum Fermentation Product, Dried Bacillus Subtilis Fermentation Product, Dried Lactobacillus Acidophilus Fermentation Product, Dried Enterococcus Faecium Fermentation Product, Dried Bifidobacterium Animalis Fermentation Product, Vitamin E Supplement, Iron Proteinate, Zinc Proteinate, Copper Proteinate, Ferrous Sulfate, Zinc Sulfate, Manganese Sulfate, Copper Sulfate, Potassium Iodide, Thiamine Mononitrate, Manganese Proteinate, Ascorbic Acid, Vitamin A Supplement, Biotin, Niacin, Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Riboflavin, Vitamin D3 Supplement, Folic Acid",
+      "guaranteed_analysis": {
+        "crude_protein_min": 32.0,
+        "crude_fat_min": 18.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.05,
+        "l_carnitine_min": 100.0,
+        "taurine_min": 0.12,
+        "omega_6_min": 3.0,
+        "omega_3_min": 0.6,
+        "glucosamine_min": 750.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3920 kcal/kg, 445 kcal/cup",
+      "aafco_statement": "Taste of the Wild Ancient Prairie Canine Recipe with Roasted Bison & Roasted Venison is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages, including growth of large size dogs (70 lb. or more as an adult).",
+      "life_stage": "all life stages",
+      "images": [
+        "/products/taste-of-the-wild/taste-of-the-wild-dry-ancient-prairie-canine-recipe-with-roasted-bison-roasted-venison.webp"
+      ]
+    },
+    {
+      "name": "Ancient Stream Canine Recipe with Smoke-Flavored Salmon",
+      "brand": "Taste of the Wild",
+      "url": "https://www.tasteofthewildpetfood.com/dog/ancient-grains/ancient-stream-with-smoke-flavored-salmon",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Ancient Grains",
+      "ingredients_raw": "Salmon, Salmon Meal, Fish Meal, Grain Sorghum, Millet, Cracked Pearled Barley, Dried Yeast, Canola Oil (preserved with mixed tocopherols), Whole Grain Brown Rice, Smoke-Flavored Salmon, Natural Flavor, Dried Tomato Pomace, Salmon Oil (a source of DHA), Quinoa, Chia Seed, Salt, Potassium Chloride, DL-Methionine, Choline Chloride, Taurine, Dried Chicory Root, Tomatoes, Blueberries, Raspberries, Yucca Schidigera Extract, L-Carnitine, Dried Lactobacillus Plantarum Fermentation Product, Dried Bacillus Subtilis Fermentation Product, Dried Lactobacillus Acidophilus Fermentation Product, Dried Enterococcus Faecium Fermentation Product, Dried Bifidobacterium Animalis Fermentation Product, Vitamin E Supplement, Iron Proteinate, Zinc Proteinate, Copper Proteinate, Ferrous Sulfate, Zinc Sulfate, Manganese Sulfate, Copper Sulfate, Potassium Iodide, Thiamine Mononitrate, Manganese Proteinate, Ascorbic Acid, Vitamin A Supplement, Biotin, Niacin, Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Riboflavin, Vitamin D3 Supplement, Folic Acid",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.05,
+        "l_carnitine_min": 100.0,
+        "taurine_min": 0.12,
+        "omega_6_min": 2.8,
+        "omega_3_min": 0.6
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3640 kcal/kg, 413 kcal/cup",
+      "aafco_statement": "Taste of the Wild Ancient Stream Canine Recipe with Smoke-Flavored Salmon is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages, including growth of large size dogs (70 lb. or more as an adult).",
+      "life_stage": "all life stages",
+      "images": [
+        "/products/taste-of-the-wild/taste-of-the-wild-dry-ancient-stream-canine-recipe-with-smoke-flavored-salmon.webp"
+      ]
+    },
+    {
+      "name": "Ancient Wetlands Canine Recipe with Roasted Fowl",
+      "brand": "Taste of the Wild",
+      "url": "https://www.tasteofthewildpetfood.com/dog/ancient-grains/ancient-wetlands-with-roasted-fowl",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Ancient Grains",
+      "ingredients_raw": "Duck, Duck Meal, Chicken Meal, Grain Sorghum, Millet, Dried Yeast, Cracked Pearled Barley, Chicken Fat (preserved with mixed tocopherols), Egg Product, Natural Flavor, Roasted Quail, Roasted Duck, Smoke-Flavored Turkey, Quinoa, Chia Seed, Dried Tomato Pomace, Salmon Oil (a source of DHA), Salt, Potassium Chloride, DL-Methionine, Choline Chloride, Taurine, Dried Chicory Root, Tomatoes, Blueberries, Raspberries, Yucca Schidigera Extract, L-Carnitine, Dried Lactobacillus Plantarum Fermentation Product, Dried Bacillus Subtilis Fermentation Product, Dried Lactobacillus Acidophilus Fermentation Product, Dried Enterococcus Faecium Fermentation Product, Dried Bifidobacterium Animalis Fermentation Product, Vitamin E Supplement, Iron Proteinate, Zinc Proteinate, Copper Proteinate, Ferrous Sulfate, Zinc Sulfate, Manganese Sulfate, Copper Sulfate, Potassium Iodide, Thiamine Mononitrate, Manganese Proteinate, Ascorbic Acid, Vitamin A Supplement, Biotin, Niacin, Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Riboflavin, Vitamin D3 Supplement, Folic Acid",
+      "guaranteed_analysis": {
+        "crude_protein_min": 32.0,
+        "crude_fat_min": 18.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.05,
+        "l_carnitine_min": 100.0,
+        "taurine_min": 0.12,
+        "omega_6_min": 2.8,
+        "omega_3_min": 0.6,
+        "glucosamine_min": 750.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3750 kcal/kg, 425 kcal/cup",
+      "aafco_statement": "Taste of the Wild Ancient Wetlands Canine Recipe with Roasted Fowl is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages, including growth of large size dogs (70 lb. or more as an adult).",
+      "life_stage": "all life stages",
+      "images": [
+        "/products/taste-of-the-wild/taste-of-the-wild-dry-ancient-wetlands-canine-recipe-with-roasted-fowl.webp"
+      ]
+    },
+    {
+      "name": "Appalachian Valley Small Breed Canine Recipe with Venison & Garbanzo Beans",
+      "brand": "Taste of the Wild",
+      "url": "https://www.tasteofthewildpetfood.com/dog/grain-free/appalachian-valley-small-breed-with-venison-garbanzo-beans",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Taste of the Wild",
+      "ingredients_raw": "Venison, Lamb Meal, Garbanzo Beans, Peas, Lentils, Pea Protein, Canola Oil (preserved with mixed tocopherols), Egg Product, Duck Meal, Pea Flour, Dried Tomato Pomace, Natural Flavor, Fish Meal, Salt, Choline Chloride, Taurine, Dried Chicory Root, Tomatoes, Blueberries, Raspberries, Yucca Schidigera Extract, Dried Lactobacillus Plantarum Fermentation Product, Dried Bacillus Subtilis Fermentation Product, Dried Lactobacillus Acidophilus Fermentation Product, Dried Enterococcus Faecium Fermentation Product, Dried Bifidobacterium Animalis Fermentation Product, Vitamin E Supplement, Iron Proteinate, Zinc Proteinate, Copper Proteinate, Ferrous Sulfate, Zinc Sulfate, Manganese Sulfate, Copper Sulfate, Potassium Iodide, Thiamine Mononitrate, Manganese Proteinate, Ascorbic Acid, Vitamin A Supplement, Biotin, Niacin, Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Riboflavin, Vitamin D3 Supplement, Folic Acid",
+      "guaranteed_analysis": {
+        "crude_protein_min": 32.0,
+        "crude_fat_min": 18.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "taurine_min": 0.12,
+        "omega_6_min": 2.8,
+        "omega_3_min": 0.3
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3719 kcal/kg, 422 kcal/cup",
+      "aafco_statement": "Taste of the Wild Appalachian Valley Small Breed Canine Recipe is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for maintenance.",
+      "life_stage": "adult",
+      "images": [
+        "/products/taste-of-the-wild/taste-of-the-wild-dry-appalachian-valley-small-breed-canine-recipe-with-venison-garbanzo-beans.png"
+      ]
+    },
+    {
+      "name": "High Prairie Puppy Recipe with Roasted Bison & Roasted Venison",
+      "brand": "Taste of the Wild",
+      "url": "https://www.tasteofthewildpetfood.com/dog/grain-free/high-prairie-puppy-with-roasted-bison-roasted-venison",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Taste of the Wild",
+      "ingredients_raw": "Water Buffalo, Lamb Meal, Sweet Potatoes, Egg Product, Garbanzo Beans, Peas, Pea Flour, Chicken Fat (preserved with mixed tocopherols), Dried Yeast, Roasted Bison, Roasted Venison, Beef, Dried Tomato Pomace, Natural Flavor, Flaxseed, Fish Meal, Salmon Oil (a source of DHA), Salt, DL-Methionine, Potassium Chloride, Choline Chloride, Taurine, Dried Chicory Root, Yucca Schidigera Extract, Tomatoes, Blueberries, Raspberries, Dried Lactobacillus Plantarum Fermentation Product, Dried Bacillus Subtilis Fermentation Product, Dried Lactobacillus Acidophilus Fermentation Product, Dried Enterococcus Faecium Fermentation Product, Dried Bifidobacterium Animalis Fermentation Product, Vitamin E Supplement, Iron Proteinate, Zinc Proteinate, Copper Proteinate, Ferrous Sulfate, Zinc Sulfate, Manganese Sulfate, Copper Sulfate, Potassium Iodide, Thiamine Mononitrate, Manganese Proteinate, Ascorbic Acid, Vitamin A Supplement, Biotin, Niacin, Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Riboflavin, Vitamin D3 Supplement, Folic Acid",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.0,
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.05,
+        "taurine_min": 0.12,
+        "omega_6_min": 2.8,
+        "omega_3_min": 0.3
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3656 kcal/kg, 415 kcal/cup",
+      "aafco_statement": "Taste of the Wild High Prairie Puppy Recipe is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages including growth of large size dogs (70 lb. or more as an adult).",
+      "life_stage": "puppy",
+      "images": [
+        "/products/taste-of-the-wild/taste-of-the-wild-dry-high-prairie-puppy-recipe-with-roasted-bison-roasted-venison.png"
+      ]
+    },
+    {
+      "name": "High Prairie Canine Recipe with Bison in Gravy",
+      "brand": "Taste of the Wild",
+      "url": "https://www.tasteofthewildpetfood.com/dog/grain-free/high-prairie-with-bison-gravy",
+      "channel": "retail",
+      "product_type": "wet",
+      "sub_brand": "Taste of the Wild",
+      "ingredients_raw": "Beef, Lamb Broth, Beef Broth, Vegetable Broth, Pork Liver, Bison, Dried Egg Whites, Potatoes, Peas, Dried Egg Product, Potato Starch, Lamb, Venison, Ocean Fish, Guar Gum, Sunflower Oil, Natural Flavor, Sweet Potatoes, Tricalcium Phosphate, Sodium Phosphate, Salt, Calcium Carbonate, Potassium Chloride, Inulin, Tomatoes, Blueberries, Raspberries, Taurine, Choline Chloride, Zinc Amino Acid Chelate, Yucca Schidigera Extract, Iron Amino Acid Chelate, Xanthan Gum, Thiamine Mononitrate, Natural Roasted Flavor, Vitamin E Supplement, Copper Amino Acid Chelate, Cobalt Amino Acid Chelate, Manganese Amino Acid Chelate, Sodium Selenite, Niacin Supplement, D-calcium Pantothenate, Riboflavin Supplement, Vitamin D3 Supplement, Biotin, Vitamin B12 Supplement, Potassium Iodide, Vitamin A Supplement, Pyridoxine Hydrochloride, Folic Acid",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 3.5,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "895 kcal/kg, 335 kcal/can",
+      "aafco_statement": "Taste of the Wild High Prairie Canine Recipe With Bison in Gravy is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for growth and maintenance including growth of large size dogs (70 lbs. or more as an adult).",
+      "life_stage": "all life stages",
+      "images": [
+        "/products/taste-of-the-wild/taste-of-the-wild-wet-high-prairie-canine-recipe-with-bison-in-gravy.webp"
+      ]
+    },
+    {
+      "name": "High Prairie Canine Recipe with Roasted Bison & Roasted Venison",
+      "brand": "Taste of the Wild",
+      "url": "https://www.tasteofthewildpetfood.com/dog/grain-free/high-prairie-with-roasted-bison-roasted-venison",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Taste of the Wild",
+      "ingredients_raw": "Water Buffalo, Lamb Meal, Chicken Meal, Sweet Potatoes, Peas, Pea Flour, Chicken Fat (preserved with mixed tocopherols), Egg Product, Roasted Bison, Roasted Venison, Beef, Natural Flavor, Dried Tomato Pomace, Fish Meal, Salt, Choline Chloride, Taurine, Dried Chicory Root, Tomatoes, Blueberries, Raspberries, Yucca Schidigera Extract, Dried Lactobacillus Plantarum Fermentation Product, Dried Bacillus Subtilis Fermentation Product, Dried Lactobacillus Acidophilus Fermentation Product, Dried Enterococcus Faecium Fermentation Product, Dried Bifidobacterium Animalis Fermentation Product, Vitamin E Supplement, Iron Proteinate, Zinc Proteinate, Copper Proteinate, Ferrous Sulfate, Zinc Sulfate, Manganese Sulfate, Copper Sulfate, Potassium Iodide, Thiamine Mononitrate, Manganese Proteinate, Ascorbic Acid, Vitamin A Supplement, Biotin, Niacin, Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Riboflavin, Vitamin D3 Supplement, Folic Acid",
+      "guaranteed_analysis": {
+        "crude_protein_min": 32.0,
+        "crude_fat_min": 18.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "taurine_min": 0.12,
+        "omega_6_min": 2.8,
+        "omega_3_min": 0.3
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3719 kcal/kg, 422 kcal/cup",
+      "aafco_statement": "Taste of the Wild High Prairie Canine Recipe is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for maintenance.",
+      "life_stage": "adult",
+      "images": [
+        "/products/taste-of-the-wild/taste-of-the-wild-dry-high-prairie-canine-recipe-with-roasted-bison-roasted-venison.png"
+      ]
+    },
+    {
+      "name": "Pacific Stream Puppy Recipe with Smoke-Flavored Salmon",
+      "brand": "Taste of the Wild",
+      "url": "https://www.tasteofthewildpetfood.com/dog/grain-free/pacific-stream-puppy-with-smoke-flavored-salmon",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Taste of the Wild",
+      "ingredients_raw": "Salmon, Fish Meal, Sweet Potatoes, Peas, Pea Flour, Canola Oil (preserved with mixed tocopherols), Lentils, Salmon Meal, Dried Yeast, Smoke-Flavored Salmon, Natural Flavor, Salmon Oil (a source of DHA), Dried Tomato Pomace, Dicalcium Phosphate, Salt, Potassium Chloride, DL-Methionine, Choline Chloride, Taurine, Dried Chicory Root, Yucca Schidigera Extract, Tomatoes, Blueberries, Raspberries, Dried Lactobacillus Plantarum Fermentation Product, Dried Bacillus Subtilis Fermentation Product, Dried Lactobacillus Acidophilus Fermentation Product, Dried Enterococcus Faecium Fermentation Product, Dried Bifidobacterium Animalis Fermentation Product, Vitamin E Supplement, Iron Proteinate, Zinc Proteinate, Copper Proteinate, Ferrous Sulfate, Zinc Sulfate, Manganese Sulfate, Copper Sulfate, Potassium Iodide, Thiamine Mononitrate, Manganese Proteinate, Ascorbic Acid, Vitamin A Supplement, Biotin, Niacin, Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Riboflavin, Vitamin D3 Supplement, Folic Acid",
+      "guaranteed_analysis": {
+        "crude_protein_min": 27.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.05,
+        "taurine_min": 0.12,
+        "omega_6_min": 2.4,
+        "omega_3_min": 0.3
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3600 kcal/kg, 408 kcal/cup",
+      "aafco_statement": "Taste of the Wild Pacific Stream Puppy Recipe is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages including growth of large size dogs (70 lb. or more as an adult).",
+      "life_stage": "puppy",
+      "images": [
+        "/products/taste-of-the-wild/taste-of-the-wild-dry-pacific-stream-puppy-recipe-with-smoke-flavored-salmon.png"
+      ]
+    },
+    {
+      "name": "Pacific Stream Canine Recipe with Salmon in Gravy",
+      "brand": "Taste of the Wild",
+      "url": "https://www.tasteofthewildpetfood.com/dog/grain-free/pacific-stream-with-salmon-gravy",
+      "channel": "retail",
+      "product_type": "wet",
+      "sub_brand": "Taste of the Wild",
+      "ingredients_raw": "Whitefish, Fish Broth, Turkey Broth, Water Sufficient for Processing, Turkey, Turkey Liver, Dried Egg Whites, Salmon, Dried Ground Peas, Potatoes, Peas, Potato Starch, Guar Gum, Natural Flavor, Salt, Pea Protein, Sodium Phosphate, Tricalcium Phosphate, Potassium Chloride, Inulin, Tomatoes, Sweet Potatoes, Blueberries, Raspberries, Calcium Carbonate, Taurine, Choline Chloride, Yucca Schidigera Extract, Zinc Amino Acid Chelate, Iron Amino Acid Chelate, Xanthan Gum, Thiamine Mononitrate, Vitamin E Supplement, Copper Amino Acid Chelate, Manganese Amino Acid Chelate, Sodium Selenite, Cobalt Amino Acid Chelate, Niacin Supplement, D-calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Potassium Iodide, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.5,
+        "crude_fat_min": 3.5,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "924 kcal/kg, 346 kcal/can",
+      "aafco_statement": "Taste of the Wild Pacific Stream Canine Recipe With Salmon in Gravy is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for growth and maintenance including growth of large size dogs (70 lbs. or more as an adult).",
+      "life_stage": "all life stages",
+      "images": [
+        "/products/taste-of-the-wild/taste-of-the-wild-wet-pacific-stream-canine-recipe-with-salmon-in-gravy.webp"
+      ]
+    },
+    {
+      "name": "Pacific Stream Canine Recipe with Smoke-Flavored Salmon",
+      "brand": "Taste of the Wild",
+      "url": "https://www.tasteofthewildpetfood.com/dog/grain-free/pacific-stream-with-smoke-flavored-salmon",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Taste of the Wild",
+      "ingredients_raw": "Salmon, Fish Meal, Sweet Potatoes, Peas, Pea Flour, Lentils, Canola Oil (preserved with mixed tocopherols), Salmon Meal, Smoke-Flavored Salmon, Natural Flavor, Dried Tomato Pomace, Salt, DL-Methionine, Choline Chloride, Taurine, Dried Chicory Root, Tomatoes, Blueberries, Raspberries, Yucca Schidigera Extract, Dried Lactobacillus Plantarum Fermentation Product, Dried Bacillus Subtilis Fermentation Product, Dried Lactobacillus Acidophilus Fermentation Product, Dried Enterococcus Faecium Fermentation Product, Dried Bifidobacterium Animalis Fermentation Product, Vitamin E Supplement, Iron Proteinate, Zinc Proteinate, Copper Proteinate, Ferrous Sulfate, Zinc Sulfate, Manganese Sulfate, Copper Sulfate, Potassium Iodide, Thiamine Mononitrate, Manganese Proteinate, Ascorbic Acid, Vitamin A Supplement, Biotin, Niacin, Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Riboflavin, Vitamin D3 Supplement, Folic Acid",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "taurine_min": 0.12,
+        "omega_6_min": 2.4,
+        "omega_3_min": 0.3
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3600 kcal/kg, 408 kcal/cup",
+      "aafco_statement": "Taste of the Wild Pacific Stream Canine Recipe is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for maintenance.",
+      "life_stage": "adult",
+      "images": [
+        "/products/taste-of-the-wild/taste-of-the-wild-dry-pacific-stream-canine-recipe-with-smoke-flavored-salmon.webp"
+      ]
+    },
+    {
+      "name": "Pine Forest Canine Recipe with Venison & Legumes",
+      "brand": "Taste of the Wild",
+      "url": "https://www.tasteofthewildpetfood.com/dog/grain-free/pine-forest-with-venison-legumes",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Taste of the Wild",
+      "ingredients_raw": "Venison, Lamb Meal, Garbanzo Beans, Peas, Lentils, Pea Flour, Dried Yeast, Egg Product, Canola Oil (preserved with mixed tocopherols), Dried Tomato Pomace, Natural Flavor, Fish Meal, Salmon Oil (a source of DHA), Salt, DL-Methionine, Choline Chloride, Taurine, Dried Chicory Root, Tomatoes, Blueberries, Raspberries, Yucca Schidigera Extract, Dried Lactobacillus Plantarum Fermentation Product, Dried Bacillus Subtilis Fermentation Product, Dried Lactobacillus Acidophilus Fermentation Product, Dried Enterococcus Faecium Fermentation Product, Dried Bifidobacterium Animalis Fermentation Product, Vitamin E Supplement, Iron Proteinate, Zinc Proteinate, Copper Proteinate, Ferrous Sulfate, Zinc Sulfate, Manganese Sulfate, Copper Sulfate, Potassium Iodide, Thiamine Mononitrate, Manganese Proteinate, Ascorbic Acid, Vitamin A Supplement, Biotin, Niacin, Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Riboflavin, Vitamin D3 Supplement, Folic Acid",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "dha_min": 0.05,
+        "taurine_min": 0.12,
+        "omega_6_min": 2.8,
+        "omega_3_min": 0.3
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3600 kcal/kg, 408 kcal/cup",
+      "aafco_statement": "Taste of the Wild Pine Forest Canine Recipe is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages including growth of large size dogs (70 lb. or more as an adult).",
+      "life_stage": "all life stages",
+      "images": [
+        "/products/taste-of-the-wild/taste-of-the-wild-dry-pine-forest-canine-recipe-with-venison-legumes.webp"
+      ]
+    },
+    {
+      "name": "Sierra Mountain Canine Recipe with Lamb in Gravy",
+      "brand": "Taste of the Wild",
+      "url": "https://www.tasteofthewildpetfood.com/dog/grain-free/sierra-mountain-with-lamb-gravy",
+      "channel": "retail",
+      "product_type": "wet",
+      "sub_brand": "Taste of the Wild",
+      "ingredients_raw": "Lamb, Lamb Broth, Beef Broth, Vegetable Broth, Pork Liver, Dried Egg Whites, Potatoes, Peas, Dried Egg Product, Potato Starch, Guar Gum, Natural Flavor, Tricalcium Phosphate, Sweet Potatoes, Sunflower Oil, Sodium Phosphate, Salt, Potassium Chloride, Calcium Carbonate, Inulin, Tomatoes, Blueberries, Raspberries, Taurine, Choline Chloride, Magnesium Sulfate, Zinc Amino Acid Chelate, Yucca Schidigera Extract, Iron Amino Acid Chelate, Menhaden Fish Oil, Xanthan Gum, Natural Roasted Flavor, Vitamin E Supplement, Copper Amino Acid Chelate, Cobalt Amino Acid Chelate, Manganese Amino Acid Chelate, Sodium Selenite, Thiamine Mononitrate, Niacin Supplement, D-calcium Pantothenate, Riboflavin Supplement, Vitamin D3 Supplement, Biotin, Vitamin B12 Supplement, Vitamin A Supplement, Pyridoxine Hydrochloride, Potassium Iodide, Folic Acid",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 4.5,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1030 kcal/kg, 385 kcal/can",
+      "aafco_statement": "Taste of the Wild Sierra Mountain Canine Recipe With Lamb in Gravy is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for growth and maintenance except for growth of large size dogs (70 lbs. or more as an adult).",
+      "life_stage": "all life stages",
+      "images": [
+        "/products/taste-of-the-wild/taste-of-the-wild-wet-sierra-mountain-canine-recipe-with-lamb-in-gravy.webp"
+      ]
+    },
+    {
+      "name": "Sierra Mountain Canine Recipe with Roasted Lamb",
+      "brand": "Taste of the Wild",
+      "url": "https://www.tasteofthewildpetfood.com/dog/grain-free/sierra-mountain-with-roasted-lamb",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Taste of the Wild",
+      "ingredients_raw": "Lamb, Lamb Meal, Sweet Potatoes, Egg Product, Lentils, Garbanzo Beans, Peas, Pea Flour, Canola Oil (preserved with mixed tocopherols), Dried Yeast, Roasted Lamb, Dried Tomato Pomace, Natural Flavor, Salmon Oil (a source of DHA), DL-Methionine, Salt, Potassium Chloride, Choline Chloride, Taurine, Dried Chicory Root, Tomatoes, Blueberries, Raspberries, Yucca Schidigera Extract, Dried Lactobacillus Plantarum Fermentation Product, Dried Bacillus Subtilis Fermentation Product, Dried Lactobacillus Acidophilus Fermentation Product, Dried Enterococcus Faecium Fermentation Product, Dried Bifidobacterium Animalis Fermentation Product, Vitamin E Supplement, Iron Proteinate, Zinc Proteinate, Copper Proteinate, Ferrous Sulfate, Zinc Sulfate, Manganese Sulfate, Copper Sulfate, Potassium Iodide, Thiamine Mononitrate, Manganese Proteinate, Ascorbic Acid, Vitamin A Supplement, Biotin, Niacin, Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Riboflavin, Vitamin D3 Supplement, Folic Acid",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.05,
+        "taurine_min": 0.12,
+        "omega_6_min": 2.4,
+        "omega_3_min": 0.3
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3611 kcal/kg, 410 kcal/cup",
+      "aafco_statement": "Taste of the Wild Sierra Mountain Canine Recipe is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages including growth of large size dogs (70 lb. or more as an adult).",
+      "life_stage": "all life stages",
+      "images": [
+        "/products/taste-of-the-wild/taste-of-the-wild-dry-sierra-mountain-canine-recipe-with-roasted-lamb.png"
+      ]
+    },
+    {
+      "name": "Southwest Canyon Canine Recipe with Beef in Gravy",
+      "brand": "Taste of the Wild",
+      "url": "https://www.tasteofthewildpetfood.com/dog/grain-free/southwest-canyon-with-beef-gravy",
+      "channel": "retail",
+      "product_type": "wet",
+      "sub_brand": "Taste of the Wild",
+      "ingredients_raw": "Beef, Beef Broth, Lamb Broth, Vegetable Broth, Beef Liver, Dried Egg Whites, Peas, Dried Egg Product, Lamb, Potato Starch, Wild Boar, Guar Gum, Sunflower Oil, Chickpeas, Natural Flavor, Tricalcium Phosphate, Sodium Phosphate, Salt, Calcium Carbonate, Potassium Chloride, Inulin, Tomatoes, Sweet Potatoes, Blueberries, Raspberries, Taurine, Choline Chloride, Flaxseed Oil, Yucca Schidigera Extract, Zinc Amino Acid Chelate, Iron Amino Acid Chelate, Menhaden Fish Oil, Xanthan Gum, Vitamin E Supplement, Copper Amino Acid Chelate, Manganese Amino Acid Chelate, Sodium Selenite, Thiamine Mononitrate, Cobalt Amino Acid Chelate, Niacin Supplement, D-calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Potassium Iodide, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.0,
+        "crude_fat_min": 3.5,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "894 kcal/kg, 334 kcal/can",
+      "aafco_statement": "Taste of the Wild Southwest Canyon Canine Recipe With Beef in Gravy is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for growth and maintenance including growth of large size dogs (70 lbs. or more as an adult).",
+      "life_stage": "all life stages",
+      "images": [
+        "/products/taste-of-the-wild/taste-of-the-wild-wet-southwest-canyon-canine-recipe-with-beef-in-gravy.webp"
+      ]
+    },
+    {
+      "name": "Southwest Canyon Canine Recipe with Wild Boar",
+      "brand": "Taste of the Wild",
+      "url": "https://www.tasteofthewildpetfood.com/dog/grain-free/southwest-canyon-with-wild-boar",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Taste of the Wild",
+      "ingredients_raw": "Beef, Peas, Garbanzo Beans, Lamb Meal, Canola Oil (preserved with mixed tocopherols), Egg Product, Wild Boar, Fish Meal, Pea Flour, Dried Yeast, Dried Tomato Pomace, Natural Flavor, Flaxseed, Salmon Oil (a source of DHA), Salt, Choline Chloride, Taurine, Dried Chicory Root, Tomatoes, Blueberries, Raspberries, Yucca Schidigera Extract, Dried Lactobacillus Plantarum Fermentation Product, Dried Bacillus Subtilis Fermentation Product, Dried Lactobacillus Acidophilus Fermentation Product, Dried Enterococcus Faecium Fermentation Product, Dried Bifidobacterium Animalis Fermentation Product, Vitamin E Supplement, Iron Proteinate, Zinc Proteinate, Copper Proteinate, Ferrous Sulfate, Zinc Sulfate, Manganese Sulfate, Copper Sulfate, Potassium Iodide, Thiamine Mononitrate, Manganese Proteinate, Ascorbic Acid, Vitamin A Supplement, Biotin, Niacin, Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Riboflavin, Vitamin D3 Supplement, Folic Acid",
+      "guaranteed_analysis": {
+        "crude_protein_min": 29.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.05,
+        "taurine_min": 0.12,
+        "omega_6_min": 2.4,
+        "omega_3_min": 0.3
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3600 kcal/kg, 408 kcal/cup",
+      "aafco_statement": "Taste of the Wild Southwest Canyon Canine Recipe is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages including growth of large size dogs (70 lb. or more as an adult).",
+      "life_stage": "all life stages",
+      "images": [
+        "/products/taste-of-the-wild/taste-of-the-wild-dry-southwest-canyon-canine-recipe-with-wild-boar.png"
+      ]
+    },
+    {
+      "name": "Wetlands Canine Recipe with Fowl in Gravy",
+      "brand": "Taste of the Wild",
+      "url": "https://www.tasteofthewildpetfood.com/dog/grain-free/wetlands-with-fowl-gravy",
+      "channel": "retail",
+      "product_type": "wet",
+      "sub_brand": "Taste of the Wild",
+      "ingredients_raw": "Duck, Duck Broth, Chicken Broth, Fish Broth, Chicken Liver, Chicken, Dried Egg Whites, Potatoes, Peas, Dried Egg Product, Potato Starch, Quail, Turkey, Ocean Fish, Guar Gum, Natural Flavor, Sodium Phosphate, Salt, Flaxseed Oil, Potassium Chloride, Inulin, Tomatoes, Sweet Potatoes, Blueberries, Raspberries, Taurine, Choline Chloride, Zinc Amino Acid Chelate, Yucca Schidigera Extract, Iron Amino Acid Chelate, Xanthan Gum, Thiamine Mononitrate, Natural Roasted Flavor, Natural Smoke Flavor, Vitamin E Supplement, Copper Amino Acid Chelate, Manganese Amino Acid Chelate, Sodium Selenite, Cobalt Amino Acid Chelate, Niacin Supplement, D-calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Potassium Iodide, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 3.5,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "893 kcal/kg, 334 kcal/can",
+      "aafco_statement": "Taste of the Wild Wetlands Canine Recipe With Fowl in Gravy is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for growth and maintenance including growth of large size dogs (70 lbs. or more as an adult).",
+      "life_stage": "all life stages",
+      "images": [
+        "/products/taste-of-the-wild/taste-of-the-wild-wet-wetlands-canine-recipe-with-fowl-in-gravy.webp"
+      ]
+    },
+    {
+      "name": "Wetlands Canine Recipe with Roasted Fowl",
+      "brand": "Taste of the Wild",
+      "url": "https://www.tasteofthewildpetfood.com/dog/grain-free/wetlands-with-roasted-fowl",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Taste of the Wild",
+      "ingredients_raw": "Duck, Duck Meal, Chicken Meal, Sweet Potatoes, Peas, Pea Flour, Chicken Fat (preserved with mixed tocopherols), Egg Product, Natural Flavor, Fish Meal, Roasted Quail, Roasted Duck, Smoke-Flavored Turkey, Dried Tomato Pomace, Salt, Choline Chloride, Taurine, Dried Chicory Root, Tomatoes, Blueberries, Raspberries, Yucca Schidigera Extract, Dried Lactobacillus Plantarum Fermentation Product, Dried Bacillus Subtilis Fermentation Product, Dried Lactobacillus Acidophilus Fermentation Product, Dried Enterococcus Faecium Fermentation Product, Dried Bifidobacterium Animalis Fermentation Product, Vitamin E Supplement, Iron Proteinate, Zinc Proteinate, Copper Proteinate, Ferrous Sulfate, Zinc Sulfate, Manganese Sulfate, Copper Sulfate, Potassium Iodide, Thiamine Mononitrate, Manganese Proteinate, Ascorbic Acid, Vitamin A Supplement, Biotin, Niacin, Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Riboflavin, Vitamin D3 Supplement, Folic Acid",
+      "guaranteed_analysis": {
+        "crude_protein_min": 32.0,
+        "crude_fat_min": 18.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "taurine_min": 0.12,
+        "omega_6_min": 2.4,
+        "omega_3_min": 0.4
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3750 kcal/kg, 425 kcal/cup",
+      "aafco_statement": "Taste of the Wild Wetlands Canine Recipe is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for maintenance.",
+      "life_stage": "adult",
+      "images": [
+        "/products/taste-of-the-wild/taste-of-the-wild-dry-wetlands-canine-recipe-with-roasted-fowl.webp"
+      ]
+    },
+    {
+      "name": "Angus Beef Limited Ingredient Recipe for Dogs",
+      "brand": "Taste of the Wild",
+      "url": "https://www.tasteofthewildpetfood.com/dog/prey/angus-beef-limited-ingredient-for-dogs",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "PREY",
+      "ingredients_raw": "Beef, Lentils, Dried Tomato Pomace, Chicken Fat (preserved with mixed tocopherols), Natural Flavor, Dicalcium Phosphate, Salmon Oil (a source of DHA), Salt, DL-Methionine, Choline Chloride, Taurine, L-Carnitine, Dried Lactobacillus Plantarum Fermentation Product, Dried Bacillus Subtilis Fermentation Product, Dried Lactobacillus Acidophilus Fermentation Product, Dried Enterococcus Faecium Fermentation Product, Dried Bifidobacterium Animalis Fermentation Product, Vitamin E Supplement, Iron Proteinate, Zinc Proteinate, Copper Proteinate, Ferrous Sulfate, Zinc Sulfate, Manganese Sulfate, Copper Sulfate, Potassium Iodide, Thiamine Mononitrate, Manganese Proteinate, Ascorbic Acid, Vitamin A Supplement, Biotin, Niacin, Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Riboflavin, Vitamin D3 Supplement, Folic Acid",
+      "guaranteed_analysis": {
+        "crude_protein_min": 27.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.05,
+        "taurine_min": 0.12,
+        "l_carnitine_min": 500.0,
+        "omega_6_min": 2.5,
+        "omega_3_min": 0.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3630 kcal/kg, 412 kcal/cup",
+      "aafco_statement": "Taste of the Wild PREY Angus Beef Recipe for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages, including growth of large size dogs (70 lb. or more as an adult).",
+      "life_stage": "all life stages",
+      "images": [
+        "/products/taste-of-the-wild/taste-of-the-wild-dry-angus-beef-limited-ingredient-recipe-for-dogs.png"
+      ]
+    },
+    {
+      "name": "Trout Limited Ingredient Recipe for Dogs",
+      "brand": "Taste of the Wild",
+      "url": "https://www.tasteofthewildpetfood.com/dog/prey/trout-limited-ingredient-for-dogs",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "PREY",
+      "ingredients_raw": "Trout, Lentils, Dried Tomato Pomace, Chicken Fat (preserved with mixed tocopherols), Natural Flavor, Dicalcium Phosphate, Calcium Carbonate, Salmon Oil (a source of DHA), Salt, DL-Methionine, Choline Chloride, Taurine, L-Carnitine, Dried Lactobacillus Plantarum Fermentation Product, Dried Bacillus Subtilis Fermentation Product, Dried Lactobacillus Acidophilus Fermentation Product, Dried Enterococcus Faecium Fermentation Product, Dried Bifidobacterium Animalis Fermentation Product, Vitamin E Supplement, Iron Proteinate, Zinc Proteinate, Copper Proteinate, Ferrous Sulfate, Zinc Sulfate, Manganese Sulfate, Copper Sulfate, Potassium Iodide, Thiamine Mononitrate, Manganese Proteinate, Ascorbic Acid, Vitamin A Supplement, Biotin, Niacin, Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Riboflavin, Vitamin D3 Supplement, Folic Acid",
+      "guaranteed_analysis": {
+        "crude_protein_min": 27.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.05,
+        "taurine_min": 0.12,
+        "l_carnitine_min": 500.0,
+        "omega_6_min": 2.5,
+        "omega_3_min": 0.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3592 kcal/kg, 407 kcal/cup",
+      "aafco_statement": "Taste of the Wild PREY Trout Recipe for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages, including growth of large size dogs (70 lb. or more as an adult).",
+      "life_stage": "all life stages",
+      "images": [
+        "/products/taste-of-the-wild/taste-of-the-wild-dry-trout-limited-ingredient-recipe-for-dogs.png"
+      ]
+    },
+    {
+      "name": "Turkey Limited Ingredient Recipe for Dogs",
+      "brand": "Taste of the Wild",
+      "url": "https://www.tasteofthewildpetfood.com/dog/prey/turkey-limited-ingredient-for-dogs",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "PREY",
+      "ingredients_raw": "Turkey, Lentils, Dried Tomato Pomace, Chicken Fat (preserved with mixed tocopherols), Natural Flavor, Dicalcium Phosphate, Salmon Oil (a source of DHA), Salt, DL-Methionine, Choline Chloride, Taurine, L-Carnitine, Dried Lactobacillus Plantarum Fermentation Product, Dried Bacillus Subtilis Fermentation Product, Dried Lactobacillus Acidophilus Fermentation Product, Dried Enterococcus Faecium Fermentation Product, Dried Bifidobacterium Animalis Fermentation Product, Vitamin E Supplement, Iron Proteinate, Zinc Proteinate, Copper Proteinate, Ferrous Sulfate, Zinc Sulfate, Manganese Sulfate, Copper Sulfate, Potassium Iodide, Thiamine Mononitrate, Manganese Proteinate, Ascorbic Acid, Vitamin A Supplement, Biotin, Niacin, Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Riboflavin, Vitamin D3 Supplement, Folic Acid",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.05,
+        "taurine_min": 0.12,
+        "l_carnitine_min": 500.0,
+        "omega_6_min": 2.5,
+        "omega_3_min": 0.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3670 kcal/kg, 416 kcal/cup",
+      "aafco_statement": "Taste of the Wild PREY Turkey Recipe for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages, including growth of large size dogs (70 lb. or more as an adult).",
+      "life_stage": "all life stages",
+      "images": [
+        "/products/taste-of-the-wild/taste-of-the-wild-dry-turkey-limited-ingredient-recipe-for-dogs.png"
+      ]
+    }
+  ]
+}

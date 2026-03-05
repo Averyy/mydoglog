@@ -1,0 +1,23 @@
+[project]
+name = "mydoglog-scraper"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "wafer-py[browser]>=0.1.7",
+    "beautifulsoup4>=4.12",
+    "lxml>=5.0",
+    "psycopg2-binary>=2.9",
+    "httpx>=0.27",
+    "Pillow>=10.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+]
+
+[tool.uv]
+prerelease = "allow"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

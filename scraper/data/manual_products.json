@@ -1,0 +1,125 @@
+{
+  "brand": "Manual",
+  "website_url": "",
+  "scraped_at": "2026-03-02T00:00:00+00:00",
+  "scraper_version": "0.1.0",
+  "stats": {
+    "product_count": 6,
+    "by_channel": {
+      "seed": 6
+    },
+    "by_type": {
+      "whole_food": 6
+    }
+  },
+  "products": [
+    {
+      "name": "Boiled Chicken Breast",
+      "brand": "Whole Food",
+      "url": "",
+      "channel": "seed",
+      "product_type": "whole_food",
+      "ingredients_raw": "Chicken",
+      "life_stage": "all",
+      "images": [],
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.5,
+        "crude_fat_min": 3.2,
+        "crude_fiber_max": 0.0,
+        "moisture_max": 65.3
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1510 kcal/kg"
+    },
+    {
+      "name": "Cooked White Rice",
+      "brand": "Whole Food",
+      "url": "",
+      "channel": "seed",
+      "product_type": "whole_food",
+      "ingredients_raw": "White Rice",
+      "life_stage": "all",
+      "images": [],
+      "guaranteed_analysis": {
+        "crude_protein_min": 2.7,
+        "crude_fat_min": 0.3,
+        "crude_fiber_max": 0.2,
+        "moisture_max": 68.4
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1300 kcal/kg"
+    },
+    {
+      "name": "Cooked Carrots",
+      "brand": "Whole Food",
+      "url": "",
+      "channel": "seed",
+      "product_type": "whole_food",
+      "ingredients_raw": "Carrots",
+      "life_stage": "all",
+      "images": [],
+      "guaranteed_analysis": {
+        "crude_protein_min": 0.8,
+        "crude_fat_min": 0.2,
+        "crude_fiber_max": 1.8,
+        "moisture_max": 90.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "350 kcal/kg"
+    },
+    {
+      "name": "Cooked Broccoli",
+      "brand": "Whole Food",
+      "url": "",
+      "channel": "seed",
+      "product_type": "whole_food",
+      "ingredients_raw": "Broccoli",
+      "life_stage": "all",
+      "images": [],
+      "guaranteed_analysis": {
+        "crude_protein_min": 2.4,
+        "crude_fat_min": 0.4,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 89.3
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "350 kcal/kg"
+    },
+    {
+      "name": "Banana",
+      "brand": "Whole Food",
+      "url": "",
+      "channel": "seed",
+      "product_type": "whole_food",
+      "ingredients_raw": "Banana",
+      "life_stage": "all",
+      "images": [],
+      "guaranteed_analysis": {
+        "crude_protein_min": 1.1,
+        "crude_fat_min": 0.3,
+        "crude_fiber_max": 1.6,
+        "moisture_max": 74.9
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "890 kcal/kg"
+    },
+    {
+      "name": "Blueberries",
+      "brand": "Whole Food",
+      "url": "",
+      "channel": "seed",
+      "product_type": "whole_food",
+      "ingredients_raw": "Blueberries",
+      "life_stage": "all",
+      "images": [],
+      "guaranteed_analysis": {
+        "crude_protein_min": 0.7,
+        "crude_fat_min": 0.3,
+        "crude_fiber_max": 1.4,
+        "moisture_max": 84.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "570 kcal/kg"
+    }
+  ]
+}

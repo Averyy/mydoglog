@@ -1,0 +1,737 @@
+{
+  "brand": "Iams",
+  "website_url": "https://www.petsmart.ca",
+  "scraped_at": "2026-03-04T15:40:09.406871+00:00",
+  "scraper_version": "0.1.0",
+  "stats": {
+    "product_count": 21,
+    "by_channel": {
+      "retail": 21
+    },
+    "by_type": {
+      "wet": 5,
+      "dry": 16
+    }
+  },
+  "products": [
+    {
+      "name": "Iams Proactive Health Adult Dog Wet Food - Beef with Rice",
+      "brand": "Iams",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/iams-proactive-health-adult-dog-wet-food---beef-with-rice-74337.html",
+      "channel": "retail",
+      "product_type": "wet",
+      "sub_brand": "Proactive Health",
+      "life_stage": "adult",
+      "source_id": "5335560",
+      "images": [
+        "/products/iams/iams-wet-iams-proactive-health-adult-dog-wet-food-beef-with-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0019014806461",
+          "sku": "5335560"
+        }
+      ],
+      "ingredients_raw": "Chicken, Sufficient Water For Processing, Meat By-Products, Animal Liver, Beef, Brown Rice, Flax Seed, Minerals (Potassium Chloride, Magnesium Proteinate, Zinc Sulfate, Selenium, Copper Proteinate, Manganese Sulfate, Copper Sulfate, Potassium Iodide), Added Colour, Carrageenan, Sodium Tripolyphosphate, Dried Yam, Natural Smoke Flavour, Xanthan Gum, Vitamins (Choline Chloride, Vitamin E Supplement, Thiamine Mononitrate, Calcium Pantothenate, Biotin, Riboflavin Supplement, Vitamin A Supplement, Vitamin D3 Supplement, Vitamin B12 Supplement), Guar Gum, Fish Oil, Sodium Nitrite (For Colour Retention)",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 6.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 78.0,
+        "omega_6_min": 0.8,
+        "omega_3_min": 0.1
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1032 kcal/kg, 381 kcal/can"
+    },
+    {
+      "name": "Iams Proactive Health Adult Dog Wet Food - Lamb & Rice Classic Ground",
+      "brand": "Iams",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/iams-proactive-health-adult-dog-wet-food---lamb-and-rice-classic-ground-74334.html",
+      "channel": "retail",
+      "product_type": "wet",
+      "sub_brand": "Proactive Health",
+      "life_stage": "adult",
+      "source_id": "5335557",
+      "images": [
+        "/products/iams/iams-wet-iams-proactive-health-adult-dog-wet-food-lamb-rice-classic-ground.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0019014806485",
+          "sku": "5335557"
+        }
+      ],
+      "ingredients_raw": "Chicken, Sufficient Water For Processing, Meat By-Products, Animal Liver, Lamb, Brown Rice, Flax Seed, Minerals (Potassium Chloride, Magnesium Proteinate, Zinc Sulfate, Selenium, Copper Proteinate, Manganese Sulfate, Copper Sulfate, Potassium Iodide), Carrageenan, Added Colour, Sodium Tripolyphosphate, Dried Yam, Xanthan Gum, Vitamins (Choline Chloride, Vitamin E Supplement, Thiamine Mononitrate, Calcium Pantothenate, Biotin, Riboflavin Supplement, Vitamin A Supplement, Vitamin D3 Supplement, Vitamin B12 Supplement), Guar Gum, Fish Oil, Sodium Nitrate (For Colour Retention)",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 6.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 78.0,
+        "omega_6_min": 0.8,
+        "omega_3_min": 0.1
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1045 kcal/kg, 385 kcal/can"
+    },
+    {
+      "name": "Iams Proactive Health Adult Wet Dog Food - Beef, Rice & Vegetables",
+      "brand": "Iams",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/iams-proactive-health-adult-wet-dog-food---beef-rice-and-vegetables-74336.html",
+      "channel": "retail",
+      "product_type": "wet",
+      "sub_brand": "Proactive Health",
+      "life_stage": "adult",
+      "source_id": "5335559",
+      "images": [
+        "/products/iams/iams-wet-iams-proactive-health-adult-wet-dog-food-beef-rice-vegetables.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0019014806423",
+          "sku": "5335559"
+        }
+      ],
+      "ingredients_raw": "Sufficient Water For Processing, Chicken, Meat By-Products, Animal Liver, Wheat Flour, Wheat Gluten, Beef, Flax Seed, Salt, Rice, Dried Carrots, Dried Green Beans, Minerals (Potassium Chloride, Magnesium Proteinate, Zinc Sulfate, Selenium, Copper Proteinate, Manganese Sulfate, Copper Sulfate, Potassium Iodide), Guar Gum, Added Colour, Sodium Tripolyphosphate, Natural Smoke Flavour, Vitamins (Choline Chloride, Vitamin E Supplement, Thiamine Mononitrate, Calcium Pantothenate, Biotin, Riboflavin Supplement, Vitamin A Supplement, Vitamin D3 Supplement, Vitamin B12 Supplement), Xanthan Gum, Fish Oil, Sodium Nitrite (For Color Retention)",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 82.0,
+        "omega_6_min": 0.8,
+        "omega_3_min": 0.1
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "800 kcal/kg, 295 kcal/can"
+    },
+    {
+      "name": "Iams Proactive Health Adult Wet Dog Food - Chicken with Grain",
+      "brand": "Iams",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/iams-proactive-health-adult-wet-dog-food---chicken-with-grain-74333.html",
+      "channel": "retail",
+      "product_type": "wet",
+      "sub_brand": "Proactive Health",
+      "life_stage": "adult",
+      "source_id": "5335556",
+      "images": [
+        "/products/iams/iams-wet-iams-proactive-health-adult-wet-dog-food-chicken-with-grain.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0019014806447",
+          "sku": "5335556"
+        }
+      ],
+      "ingredients_raw": "Chicken, Sufficient Water For Processing, Meat By-Products, Animal Liver, Brown Rice, Flax Seed, Minerals (Potassium Chloride, Magnesium Proteinate, Zinc Sulfate, Selenium, Copper Proteinate, Manganese Sulfate, Copper Sulfate, Potassium Iodide), Carrageenan, Sodium Tripolyphosphate, Dried Yam, Xanthan Gum, Vitamins (Choline Chloride, Vitamin E Supplement, Thiamine Mononitrate, Calcium Pantothenate, Biotin, Riboflavin Supplement, Vitamin A Supplement, Vitamin D3 Supplement, Vitamin B12 Supplement), Guar Gum, Fish Oil, Yellow #6, Yellow #5",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 6.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 78.0,
+        "omega_6_min": 0.8,
+        "omega_3_min": 0.1
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1024 kcal/kg, 378 kcal/can"
+    },
+    {
+      "name": "IAMS Wet Puppy Food - Classic Ground Chicken and Rice Recipe",
+      "brand": "Iams",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/iams-wet-puppy-food---classic-ground-chicken-and-rice-recipe-90916.html",
+      "channel": "retail",
+      "product_type": "wet",
+      "life_stage": "puppy",
+      "source_id": "5363888",
+      "images": [
+        "/products/iams/iams-wet-iams-wet-puppy-food-classic-ground-chicken-and-rice-recipe.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0019014808588",
+          "sku": "5363888"
+        }
+      ],
+      "ingredients_raw": "Chicken, Meat By-Products, Animal Liver, Dried Egg Product, Brown Rice, Dried Tomato Pomace, Fish Oil (Source Of DHA), Flaxseed, Dried Plain Beet Pulp, Minerals, Calcium Carbonate, Carrageenan, Sodium Tripolyphosphate, Dried Yam, Xanthan Gum, Vitamins, Guar Gum, Sodium Nitrite (For Colour Retention), Water.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.0,
+        "crude_fat_min": 8.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0,
+        "dha_min": 0.02,
+        "omega_6_min": 0.8,
+        "omega_3_min": 0.1
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1231 kcal/kg, 454 kcal/can"
+    },
+    {
+      "name": "IAMS Adult Dry Dog Food - Beef and Rice Recipe",
+      "brand": "Iams",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/iams-adult-dry-dog-food---beef-and-rice-recipe-90915.html",
+      "channel": "retail",
+      "product_type": "dry",
+      "life_stage": "adult",
+      "source_id": "5363887",
+      "images": [
+        "/products/iams/iams-dry-iams-adult-dry-dog-food-beef-and-rice-recipe.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0019014808281",
+          "sku": "5363887"
+        }
+      ],
+      "ingredients_raw": "Beef, Chicken By-Product Meal, Brewers Rice, Ground Whole Grain Corn, Ground Whole Grain Sorghum, Ground Barley, Chicken Fat (preserved with Mixed Tocopherols), Soybean Meal, Chicken Meal, Dried Plain Beet Pulp, Corn Protein Meal, Natural Flavours, Flaxseed, Dried Egg Product, Caramel Colour, Potassium Chloride, Carrots, Fructooligosaccharide Powder, Choline Chloride, Vitamins (Vitamin E Supplement, L-ascorbyl-2-polyphosphate (source of Vitamin C), D-Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Oxide, Sodium Selenite, Manganese Sulfate, Copper Sulfate, Potassium Iodide, Manganous Oxide), Citric Acid (preservative), Mixed Tocopherols (preservative), Rosemary Extract.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 13.5,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 0.75,
+        "omega_6_min": 2.5,
+        "omega_3_min": 0.3
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3662 kcal/kg, 381 kcal/cup"
+    },
+    {
+      "name": "IAMS Adult Dry Dog Food Proactive Heath - Beef and Rice Minichuncks",
+      "brand": "Iams",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/iams-adult-dry-dog-food-proactive-heath---beef-and-rice-minichuncks-90919.html",
+      "channel": "retail",
+      "product_type": "dry",
+      "life_stage": "adult",
+      "source_id": "5363891",
+      "images": [
+        "/products/iams/iams-dry-iams-adult-dry-dog-food-proactive-heath-beef-and-rice-minichuncks.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0019014808335",
+          "sku": "5363891"
+        }
+      ],
+      "ingredients_raw": "Beef, Chicken By-Product Meal, Brewers Rice, Ground Whole Grain Corn, Ground Whole Grain Sorghum, Ground Barley, Chicken Fat (preserved with Mixed Tocopherols), Soybean Meal, Chicken Meal, Dried Plain Beet Pulp, Corn Protein Meal, Natural Flavours, Flaxseed, Dried Egg Product, Caramel Colour, Potassium Chloride, Carrots, Fructooligosaccharide Powder, Choline Chloride, Vitamins (Vitamin E Supplement, L-ascorbyl-2-polyphosphate (source of Vitamin C), D-Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Oxide, Sodium Selenite, Manganese Sulfate, Copper Sulfate, Potassium Iodide, Manganous Oxide), Citric Acid (preservative), Mixed Tocopherols (preservative), Rosemary Extract.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 13.5,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 0.75,
+        "omega_6_min": 2.5,
+        "omega_3_min": 0.3
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3662 kcal/kg, 381 kcal/cup"
+    },
+    {
+      "name": "IAMS Advanced Health Adult Dry Dog Food - Skin & Coat Care, Chicken & Salmon",
+      "brand": "Iams",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/iams-advanced-health-adult-dry-dog-food---skin-and-coat-care-chicken-and-salmon-75835.html",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Advanced Health",
+      "life_stage": "adult",
+      "source_id": "5338931",
+      "images": [
+        "/products/iams/iams-dry-iams-advanced-health-adult-dry-dog-food-skin-coat-care-chicken-salmon.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0019014807000",
+          "sku": "5338931"
+        }
+      ],
+      "ingredients_raw": "Chicken, Ground Whole Grain Corn, Ground Whole Grain Sorghum, Chicken By-Product Meal, Ground Barley, Salmon, Dried Plain Beet Pulp, Natural Flavour, Chicken Fat (preserved with Mixed Tocopherols), Dried Egg Product, Caramel Colour, Potassium Chloride, Fish Oil (preserved with Mixed Tocopherols), Dried Bacillus subtilis Fermentation Product, Choline Chloride, Fructooligosaccharides, Zinc-Methionine complex, DL-Methionine, Vitamins (Vitamin E Supplement, Ascorbic Acid, D-Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Oxide, Sodium Selenite, Manganese Sulfate, Cooper Sulfate, Potassium Iodide, Manganous Oxide), Citric Acid (preservative), Mixed Tocopherols (preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 13.5,
+        "crude_fiber_max": 3.5,
+        "moisture_max": 10.0,
+        "calcium_min": 1.0,
+        "omega_6_min": 3.0,
+        "omega_3_min": 0.375
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3664 kcal/kg, 373 kcal/cup"
+    },
+    {
+      "name": "IAMS Advanced Health Mobility Support Adult Dry Dog Food - Chicken & Whole Grain",
+      "brand": "Iams",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/iams-advanced-health-mobility-support-adult-dry-dog-food---chicken-and-whole-grain-83404.html",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Advanced Health",
+      "life_stage": "adult",
+      "source_id": "5351498",
+      "images": [
+        "/products/iams/iams-dry-iams-advanced-health-mobility-support-adult-dry-dog-food-chicken-whole-grain.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0019014807895",
+          "sku": "5351498"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0019014807918",
+          "sku": "5351499"
+        }
+      ],
+      "ingredients_raw": "Chicken, Ground Whole Grain Corn, Ground Whole Grain Sorghum, Chicken Byproduct Meal (Source of Glucosamine and Chondroitin Sulfate), Ground Barley, Dried Plain Beet Pulp, Natural Flavour, Fish Oil, Marine Microalgae, Dried Egg Product, Calcium Carbonate, Potassium Chloride, Salt, Caramel Colour, DL-Methionine, Fructooligosaccharides,Dried Bacillus subtilis Fermentation Product, Dicalcium Phosphate, Choline Chloride, Vitamin E Supplement, Vitamin C (Ascorbic Acid), L-Carnitine, Minerals (Ferrous Sulfate, Zinc Oxide, Sodium Selenite, Manganese Sulfate, Copper Sulfate, Potassium Iodide, Manganous Oxide), Vitamins (D-Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Folic Acid), Citric Acid (preservative), Mixed Tocopherols (preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 21.0,
+        "crude_fat_min": 13.5,
+        "crude_fiber_max": 3.5,
+        "moisture_max": 10.0,
+        "epa_min": 0.25,
+        "calcium_min": 1.0,
+        "omega_6_min": 2.5,
+        "omega_3_min": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3608 kcal/kg, 375 kcal/cup"
+    },
+    {
+      "name": "Iams Healthy Weight Control Adult Dry Dog Food with Real Chicken",
+      "brand": "Iams",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/iams-healthy-weight-control-adult-dry-dog-food-with-real-chicken-3473.html",
+      "channel": "retail",
+      "product_type": "dry",
+      "life_stage": "adult",
+      "source_id": "5197078",
+      "images": [
+        "/products/iams/iams-dry-iams-healthy-weight-control-adult-dry-dog-food-with-real-chicken.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0019014700677",
+          "sku": "5197078"
+        }
+      ],
+      "ingredients_raw": "Chicken, Ground Barley, Ground Whole Grain Corn, Ground Whole Grain Sorghum, Chicken By-Product Meal, Soybean Meal, Dried Plain Beet Pulp, Natural Flavor, Potassium Chloride, Flaxseed, Dicalcium Phosphate, Caramel Color, Salt, DL-Methionine, Carrots, Calcium Carbonate, Choline Chloride, Fructooligosaccharides, Vitamins (Vitamin E Supplement, Ascorbic Acid, D-Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Oxide, Sodium Selenite, Manganese Sulfate, Copper Sulfate, Potassium Iodide, Manganous Oxide), Mixed Tocopherols (preservative), Citric Acid (preservative), L-Carnitine, Rosemary Extract",
+      "guaranteed_analysis": {
+        "l_carnitine_min": 100.0,
+        "crude_protein_min": 20.0,
+        "crude_fat_min": 9.0,
+        "crude_fat_max": 11.5,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "omega_6_min": 2.25
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3380 kcal/kg, 304 kcal/cup"
+    },
+    {
+      "name": "IAMS Proactive Health Adult Dry Dog Food - Beef & Rice",
+      "brand": "Iams",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/iams-proactive-health-adult-dry-dog-food---beef-and-rice-90913.html",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Proactive Health",
+      "life_stage": "adult",
+      "source_id": "5363885",
+      "images": [
+        "/products/iams/iams-dry-iams-proactive-health-adult-dry-dog-food-beef-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0019014808359",
+          "sku": "5363885"
+        }
+      ],
+      "ingredients_raw": "Beef, Chicken By-Product Meal, Brewers Rice, Ground Whole Grain Corn, Ground Whole Grain Sorghum, Ground Barley, Chicken Fat (preserved with Mixed Tocopherols), Soybean Meal, Chicken Meal, Dried Plain Beet Pulp, Corn Protein Meal, Natural Flavours, Flaxseed, Dried Egg Product, Caramel Colour, Potassium Chloride, Carrots, Fructooligosaccharide Powder, Choline Chloride, Vitamins (Vitamin E Supplement, L-ascorbyl-2-polyphosphate (source of Vitamin C), D-Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Oxide, Sodium Selenite, Manganese Sulfate, Copper Sulfate, Potassium Iodide, Manganous Oxide), Citric Acid (preservative), Mixed Tocopherols (preservative), Rosemary Extract.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 13.5,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 0.75,
+        "omega_6_min": 2.5,
+        "omega_3_min": 0.3
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3662 kcal/kg, 381 kcal/cup"
+    },
+    {
+      "name": "Iams Proactive Health Large Breed Adult Dry Dog Food with Real Chicken & Whole Grains",
+      "brand": "Iams",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/iams-proactive-health-large-breed-adult-dry-dog-food-with-real-chicken-and-whole-grains-3469.html",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Proactive Health",
+      "life_stage": "adult",
+      "breed_size": "Large",
+      "source_id": "5197053",
+      "images": [
+        "/products/iams/iams-dry-iams-proactive-health-large-breed-adult-dry-dog-food-with-real-chicken-whole-gra.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0019014610976",
+          "sku": "5197053"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0019014700721",
+          "sku": "5197082"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0019014708215",
+          "sku": "5308660"
+        }
+      ],
+      "ingredients_raw": "Chicken, Ground Barley, Ground Whole Grain Corn, Chicken By-Product Meal (source of Glucosamine and Chondrotin Sulfate), Ground Whole Grain Sorghum, Soybean Meal, Dried Plain Beet Pulp, Natural Flavor, Brewers Dried Yeast, Dried Egg Product, Chicken Fat (preserved with Mixed Tocopherols), Flaxseed, Peas, Caramel Color, DL-Methionine, Potassium Chloride, Fructooligosaccharides, Choline Chloride, Dicalcium Phosphate, Carrots, Mixed Tocopherol (preservative), Citric Acid (preservative), Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [Vitamin C], Calcium Pantothenate, Biotin, Thiamine Mononitrate [Vitamin B1], Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement [Vitamin B2], Pyridoxine Hydrochloride [Vitamin B6], Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Oxide, Sodium Selenite, Manganese Sulfate, Copper Sulfate, Potassium Iodide, Manganous Oxide), Rosemary Extract.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 22.5,
+        "crude_fat_min": 12.5,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 0.9,
+        "phosphorus_min": 0.7,
+        "omega_6_min": 2.9,
+        "omega_3_min": 0.3
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3561 kcal/kg"
+    },
+    {
+      "name": "Iams Proactive Health Minichunks Adult Dry Dog Food with Real Chicken & Whole Grains",
+      "brand": "Iams",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/iams-proactive-health-minichunks-adult-dry-dog-food-with-real-chicken-and-whole-grains-68886.html",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Proactive Health",
+      "life_stage": "adult",
+      "source_id": "5242704",
+      "images": [
+        "/products/iams/iams-dry-iams-proactive-health-minichunks-adult-dry-dog-food-with-real-chicken-whole-grai.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0019014711086",
+          "sku": "5242704"
+        }
+      ],
+      "ingredients_raw": "Chicken, Ground Whole Grain Corn, Ground Whole Grain Sorghum, Chicken By-Product Meal, Soybean Meal, Dried Plain Beet Pulp, Natural Flavors, Chicken Fat (preserved with Mixed Tocopherols), Dried Egg Product, Flaxseed, Caramel Color, Carrots, Potassium Chloride, Fructooligosaccharides, Choline Chloride, Vitamins (Vitamin E Supplement, Ascorbic Acid, D-Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Oxide, Sodium Selenite, Manganese Sulfate, Copper Sulfate, Potassium Iodide, Manganous Oxide), Citric Acid (preservative), Mixed Tocopherols (preservative), Rosemary Extract.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.05,
+        "omega_6_min": 3.25
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3654 kcal/kg, 380 kcal/cup"
+    },
+    {
+      "name": "Iams Proactive Health Minichunks Adult Dry Dog Food with Real Lamb & Rice",
+      "brand": "Iams",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/iams-proactive-health-minichunks-adult-dry-dog-food-with-real-lamb-and-rice-52895.html",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Proactive Health",
+      "life_stage": "adult",
+      "source_id": "5282201",
+      "images": [
+        "/products/iams/iams-dry-iams-proactive-health-minichunks-adult-dry-dog-food-with-real-lamb-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0019014803712",
+          "sku": "5282201"
+        }
+      ],
+      "ingredients_raw": "Lamb, Brewers Rice, Chicken By-Product Meal, Ground Barley, Ground Whole Grain Corn, Ground Whole Grain Sorghum, Chicken Fat (preserved with Mixed Tocopherols), Chicken Meal, Soybean Meal, Corn Gluten Meal, Dried Plain Beet Pulp, Natural Flavours, Dried Egg Product, Flaxseed, Caramel Colour, Potassium Chloride, Carrots, Fructooligosaccharides, Choline Chloride, Vitamins (Vitamin E Supplement, Ascorbic Acid, D-Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Folic Acid), Calcium Carbonate, Minerals (Ferrous Sulfate, Zinc Oxide, Sodium Selenite, Manganese Sulfate, Copper Sulfate, Potassium Iodide, Manganous Oxide), Mixed Tocopherols (preservative), Citric Acid (preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "omega_6_min": 2.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3656 kcal/kg, 381 kcal/cup"
+    },
+    {
+      "name": "Iams Proactive Health Minichunks Adult Dry Dog Food with Real Lamb & Ricece",
+      "brand": "Iams",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/iams-proactive-health-minichunks-adult-dry-dog-food-with-real-lamb-and-ricece-71977.html",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Proactive Health",
+      "life_stage": "adult",
+      "source_id": "5326527",
+      "images": [
+        "/products/iams/iams-dry-iams-proactive-health-minichunks-adult-dry-dog-food-with-real-lamb-ricece.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0019014805792",
+          "sku": "5326527"
+        }
+      ],
+      "ingredients_raw": "Lamb, Brewers Rice, Chicken By-Product Meal, Ground Barley, Ground Whole Grain Corn, Ground Whole Grain Sorghum, Chicken Fat (preserved with Mixed Tocopherols), Chicken Meal, Soybean Meal, Corn Gluten Meal, Dried Plain Beet Pulp, Natural Flavours, Dried Egg Product, Flaxseed, Caramel Colour, Potassium Chloride, Carrots, Fructooligosaccharides, Choline Chloride, Vitamins (Vitamin E Supplement, Ascorbic Acid, D-Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Folic Acid), Calcium Carbonate, Minerals (Ferrous Sulfate, Zinc Oxide, Sodium Selenite, Manganese Sulfate, Copper Sulfate, Potassium Iodide, Manganous Oxide), Mixed Tocopherols (preservative), Citric Acid (preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "omega_6_min": 2.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3656 kcal/kg, 381 kcal/cup"
+    },
+    {
+      "name": "Iams Puppy Large Breed Dry Dog Food Chicken & Whole Grains Recipe",
+      "brand": "Iams",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/iams-puppy-large-breed-dry-dog-food-chicken-and-whole-grains-recipe-3654.html",
+      "channel": "retail",
+      "product_type": "dry",
+      "life_stage": "puppy",
+      "breed_size": "Large",
+      "source_id": "5197054",
+      "images": [
+        "/products/iams/iams-dry-iams-puppy-large-breed-dry-dog-food-chicken-whole-grains-recipe.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0019014610945",
+          "sku": "5197054"
+        }
+      ],
+      "ingredients_raw": "Chicken, Ground Whole Grain Corn, Chicken By-Product Meal (source of Glucosamine and Chondroitin Sulfate), Ground Whole Grain Sorghum, Dried Plain Beet Pulp, Brewers Rice, Soybean Meal, Natural Flavor, Corn Gluten Meal, Fish Oil (preserved with Mixed Tocopherols), Dried Egg Product, Caramel Color, Dicalcium Phosphate, Salt, Carrots, Choline Chloride, Potassium Chloride, Fructooligosaccharides, Vitamins (Vitamin E Supplement, Ascorbic Acid, D-Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Oxide, Sodium Selenite, Manganese Sulfate, Copper Sulfate, Potassium Iodide, Manganous Oxide), Mixed Tocopherols (preservative), Citric Acid (preservative), Rosemary Extract.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.2,
+        "phosphorus_min": 0.9,
+        "omega_6_min": 3.0,
+        "omega_3_min": 0.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3633 kcal/kg, 378 kcal/cup"
+    },
+    {
+      "name": "Iams Small Breed Adult Dry Dog Food - Chicken",
+      "brand": "Iams",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/iams-small-breed-adult-dry-dog-food---chicken-52896.html",
+      "channel": "retail",
+      "product_type": "dry",
+      "life_stage": "adult",
+      "breed_size": "Small",
+      "source_id": "5282197",
+      "images": [
+        "/products/iams/iams-dry-iams-small-breed-adult-dry-dog-food-chicken.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0019014803804",
+          "sku": "5282197"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken By-Product Meal, Ground Whole Grain Corn, Ground Whole Grain Sorghum, Dried Plain Beet Pulp, Chicken Fat (Preserved with Mixed Tocopherols), Natural Flavor, Brewers Dried Yeast, Dried Egg Product, Flaxseed, Caramel Color, Sodium Hexametaphosphate, Potassium Chloride, Carrots, Calcium Carbonate, Choline Chloride, Fructooligosaccharides, Mixed Tocopherols (Preservative), Vitamins (Vitamin E Supplement, Ascorbic Acid, Calcium Pantothenate, Biotin, Thiamine Mononitrate (source of Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin, Riboflavin Supplement (source of Vitamin B2), Pyridoxine Hydrochloride (source of Vitamin B6), Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Oxide, Sodium Selenite, Manganese Sulfate, Manganous Oxide, Potassium Iodide), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 27.0,
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.1,
+        "phosphorus_min": 0.85,
+        "omega_6_min": 2.4
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3773 kcal/kg, 393 kcal/cup"
+    },
+    {
+      "name": "IAMS Advanced Health Adult Dry Dog Food - Chicken",
+      "brand": "Iams",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/iamsandtrade-advanced-health-adult-dry-dog-food---chicken-71968.html",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Advanced Health",
+      "life_stage": "adult",
+      "source_id": "5326064",
+      "images": [
+        "/products/iams/iams-dry-iams-advanced-health-adult-dry-dog-food-chicken.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0019014806027",
+          "sku": "5326064"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0019014805884",
+          "sku": "5326198"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken By-Product Meal, Ground Whole Grain Corn, Ground Whole Grain Sorghum, Ground Barley, Dried Plain Beet Pulp, Natural Flavour, Dried Egg Product, Fructooligosaccharides, Ground Flaxseed, Chicken Fat (Preserved with Mixed Tocopherols), Sodium Hexametaphosphate, Caramel Colour, Potassium Chloride, Dried Bacillus subtilis Fermentation Product, Carrots, Choline Chloride, Calcium Carbonate, DL-Methionine, Vitamins (Vitamin E Supplement, Ascorbic Acid, Calcium Pantothenate, Biotin, Thiamine Mononitrate (source of Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin, Riboflavin Supplement (source of Vitamin B2), Pyridoxine Hydrochloride (source of Vitamin B6), Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Oxide, Sodium Selenite, Manganese Sulfate, Copper Sulfate, Manganous Oxide, Potassium Iodide), Citric Acid (Preservative), Mixed Tocopherols (Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.0,
+        "omega_6_min": 3.0,
+        "omega_3_min": 0.38
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3654 kcal/kg, 372 kcal/cup"
+    },
+    {
+      "name": "IAMS Proactive Health Adult Dry Dog Food - High-Protein, Mini Chunks, Chicken & Whole Grains",
+      "brand": "Iams",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/iamsandtrade-proactive-health-adult-dry-dog-food---high-protein-mini-chunks-chicken-and-whole-grains-3470.html",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Proactive Health",
+      "life_stage": "adult",
+      "source_id": "5196589",
+      "images": [
+        "/products/iams/iams-dry-iams-proactive-health-adult-dry-dog-food-high-protein-mini-chunks-chicken-whole.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0019014610907",
+          "sku": "5196589"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0019014700714",
+          "sku": "5197081"
+        }
+      ],
+      "ingredients_raw": "Chicken, Ground Whole Grain Corn, Ground Whole Grain Sorghum , Chicken By-Product Meal, Soybean Meal, Dried Plain Beet Pulp, Natural Flavors, Brewers Dried Yeast, Dried Egg Product, Chicken Fat (preserved with Mixed Tocopherols), Flaxseed, Peas, Caramel Color, Potassium Chloride, Fructooligosaccharides, Choline Chloride, Carrots, Mixed Tocopherols (preservative), Citric Acid (preservative), Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [Vitamin C], Calcium Pantothenate, Biotin, Thiamine Mononitrate [Vitamin B1], Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement [Vitamin B2], Pyridoxine Hydrochloride [Vitamin B6], Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Oxide, Sodium Selenite, Manganese Sulfate, Copper Sulfate, Potassium Iodide, Manganous Oxide), Rosemary Extract.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 14.5,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "omega_6_min": 3.25,
+        "omega_3_min": 0.35
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3688 kcal/kg, 393 kcal/cup"
+    },
+    {
+      "name": "IAMS Proactive Health Adult Senior Dry Dog Food - Healthy Aging, Chicken & Whole Grains",
+      "brand": "Iams",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/iamsandtrade-proactive-health-adult-senior-dry-dog-food---healthy-aging-chicken-and-whole-grains-3465.html",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Proactive Health",
+      "life_stage": "senior",
+      "source_id": "5197052",
+      "images": [
+        "/products/iams/iams-dry-iams-proactive-health-adult-senior-dry-dog-food-healthy-aging-chicken-whole-grai.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0019014612062",
+          "sku": "5197052"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken By-Product Meal, Ground Barley, Ground Whole Grain Corn, Ground Whole Grain Sorghum, Soybean Meal, Dried Plain Beet Pulp, Natural Flavor, Dried Egg Product, Calcium Carbonate, Marine Microalgae (source of DHA), Caramel Color, Potassium Chloride, L-Lysine, Chicken Fat (preserved with Mixed Tocopherols), Carrots, Choline Chloride, Fructooligosaccharides, Vitamins (Vitamin E Supplement, Ascorbic Acid, D-Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin, Riboflavin (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6),Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Oxide, Sodium Selenite, Manganese Sulfate, Copper Sulfate, Potassium Iodide, Manganous Oxide), Beta Carotene, Mixed Tocopherols (preservative), Citric Acid (preservative), L-Carnitine, Rosemary Extract.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 10.5,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.05,
+        "omega_6_min": 2.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3428 kcal/kg, 349 kcal/cup"
+    },
+    {
+      "name": "IAMS Proactive Health Puppy Dry Dog Food - Healthy Development, Chicken & Whole Grains",
+      "brand": "Iams",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/iamsandtrade-proactive-health-puppy-dry-dog-food---healthy-development-chicken-and-whole-grains-3471.html",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Proactive Health",
+      "life_stage": "puppy",
+      "source_id": "5210687",
+      "images": [
+        "/products/iams/iams-dry-iams-proactive-health-puppy-dry-dog-food-healthy-development-chicken-whole-grain.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0019014704200",
+          "sku": "5210687"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0019014711109",
+          "sku": "5242798"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken By-Product Meal, Ground Whole Grain Corn, Ground Whole Grain Sorghum, Brewers Rice, Dried Plain Beet Pulp, Soybean Meal, Chicken Fat (preserved with Mixed Tocopherols), Natural Flavor, Fish Oil (preserved with Mixed Tocopherols), Dried Egg Product, Salt, Dicalcium Phosphate, Caramel Color, Carrots, Potassium Chloride, Fructooligosaccharides, Choline Chloride, Vitamins (Vitamin E Supplement, Ascorbic Acid, D-Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Oxide, Sodium Selenite, Manganese Sulfate, Copper Sulfate, Potassium Iodide, Manganous Oxide), Mixed Tocopherols (preservative), Citric Acid (preservative), Rosemary Extract.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 29.0,
+        "crude_fat_min": 17.5,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "omega_6_min": 3.5,
+        "omega_3_min": 0.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3773 kcal/kg, 397 kcal/cup"
+    }
+  ]
+}

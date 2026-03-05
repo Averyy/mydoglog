@@ -1,0 +1,2188 @@
+{
+  "brand": "Performatrin",
+  "website_url": "https://www.petvalu.ca",
+  "scraped_at": "2026-03-04T00:34:00.528456+00:00",
+  "scraper_version": "0.1.0",
+  "stats": {
+    "product_count": 93,
+    "by_channel": {
+      "retail": 93
+    },
+    "by_type": {
+      "dry": 67,
+      "wet": 26
+    }
+  },
+  "products": [
+    {
+      "name": "Performatrin Naturals Beef & Barley Healthy Grains Recipe Adult Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-naturals-beef-barley-healthy-grains-recipe-adult-dog-food/FCM05496",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Naturals",
+      "ingredients_raw": "Beef, Pork Meal, Barley, Chicken Meal, Oatmeal, Chicken Fat (preserved with Mixed Tocopherols), Flaxseed, Dehydrated Alfalfa Meal, Dried Plain Beet Pulp, Millet, Natural Flavor, Salt, Choline Chloride, Potassium Chloride, Taurine, Chicory Root Extract, Dried Yeast Extract, Calcium Carbonate, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin, Vitamin B12 Supplement, Thiamin Mononitrate, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Zinc Sulfate, Ferrous Sulfate, Copper Sulfate, Zinc Proteinate, Manganese Sulfate, Iron Proteinate, Manganese Proteinate, Copper Proteinate, Sodium Selenite, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 2.0,
+        "taurine_min": 0.15,
+        "omega_6_min": 2.5,
+        "omega_3_min": 0.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "439 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-naturals-beef-barley-healthy-grains-recipe-adult-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Naturals Beef & Barley Recipe Adult Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-naturals-beef-barley-recipe-adult-dog-food/FCM07211",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Naturals",
+      "ingredients_raw": "Beef, Pork Meal, Pearled Barley, Chicken Meal, Oatmeal, Chicken Fat (preserved with Mixed Tocopherols), Flaxseeds, Dehydrated Alfalfa Meal, Dried Plain Beet Pulp, Millet, Natural Flavour, Salt, Choline Chloride, Potassium Chloride, Taurine, Chicory Root Extract, Dried Yeast Extract, Calcium Carbonate, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin, Calcium Pantothenate, Vitamin A Supplement, Riboflavin, Vitamin B12 Supplement, Thiamin Mononitrate, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Zinc Sulphate, Ferrous Sulphate, Copper Sulphate, Zinc Proteinate, Manganese Sulphate, Iron Proteinate, Manganese Proteinate, Copper Proteinate, Sodium Selenite, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 2.0,
+        "phosphorus_min": 1.2,
+        "taurine_min": 0.15,
+        "omega_6_min": 2.5,
+        "omega_3_min": 0.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3760 kcal/kg, 490 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-naturals-beef-barley-recipe-adult-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Naturals Beef & Veggies Recipe Adult Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-naturals-beef-veggies-recipe-adult-dog-food/FCM07205",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Naturals",
+      "ingredients_raw": "Beef, Pork Meal, Peas, Chicken Meal, Pea Starch, Chicken Fat (Preserved With Mixed Tocopherols), Navy Beans, Flaxseeds, Tapioca, Dried Tomato Pomace, Dried Plain Beet Pulp, Natural Flavour, Dehydrated Alfalfa Meal, Salt, Choline Chloride, Taurine, Chicory Root Extract, Dried Yeast Extract, Calcium Carbonate, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Vitamins (Vitamin E Supplement, Niacin, Calcium Pantothenate, Vitamin A Supplement, Riboflavin, Vitamin B12 Supplement, Thiamine Mononitrate, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Zinc Sulfate, Ferrous Sulfate, Copper Sulfate, Zinc Proteinate, Manganese Sulfate, Iron Proteinate, Manganese Proteinate, Copper Proteinate, Sodium Selenite, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.6,
+        "phosphorus_min": 1.0,
+        "taurine_min": 0.2,
+        "omega_6_min": 2.25,
+        "omega_3_min": 0.8
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3760 kcal/kg, 490 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-naturals-beef-veggies-recipe-adult-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Naturals Beef & Veggies Recipe Pate Adult Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-naturals-beef-veggies-recipe-pate-adult-dog-food/FCM07439",
+      "channel": "retail",
+      "product_type": "wet",
+      "sub_brand": "Performatrin Naturals",
+      "ingredients_raw": "Beef, Beef Broth, Pork Liver, Pea Protein, Carrots, Peas, Agar Agar, Canola Oil, Salmon Oil, Flaxseeds, Lentils, Salt, Yucca Schidigera Extract, Dicalcium Phosphate, Taurine, Potassium Chloride, Choline Chloride, Pea Fiber, Calcium Carbonate, Zinc Proteinate, L-Ascorbyl-2-Polyphosphate (Source Of Vitamin C), Vitamin E Supplement, Ferrous Sulfate, Zinc Sulfate, Iron Proteinate, Copper Proteinate, Thiamine Mononitrate, Niacin Supplement, D-Calcium Pantothenate, Vitamin A Supplement, Manganese Sulfate, Riboflavin Supplement, Manganese Proteinate, Vitamin D3 Supplement, Sodium Selenite, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Calcium Iodate, Folic Acid.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 6.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1237 kcal/kg",
+      "images": [
+        "/products/performatrin/performatrin-wet-performatrin-naturals-beef-veggies-recipe-pate-adult-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Naturals Chicken & Oatmeal Recipe Adult Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-naturals-chicken-oatmeal-recipe-adult-dog-food/FCM07212",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Naturals",
+      "ingredients_raw": "Chicken, Chicken Meal, Oatmeal, Pearled Barley, Chicken Fat (preserved with Mixed Tocopherols), Dried Egg Product, Flaxseeds, Dehydrated Alfalfa Meal, Millet, Dried Plain Beet Pulp, Natural Flavour, Salt, Choline Chloride, Potassium Chloride, Taurine, Chicory Root Extract, Dried Yeast Extract, Calcium Carbonate, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin, Calcium Pantothenate, Vitamin A Supplement, Riboflavin, Vitamin B12 Supplement, Thiamin Mononitrate, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Zinc Sulphate, Ferrous Sulphate, Copper Sulphate, Zinc Proteinate, Manganese Sulphate, Iron Proteinate, Manganese Proteinate, Copper Proteinate, Sodium Selenite, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 5.5,
+        "moisture_max": 10.0,
+        "calcium_min": 1.3,
+        "phosphorus_min": 0.9,
+        "taurine_min": 0.15,
+        "omega_6_min": 2.5,
+        "omega_3_min": 0.75
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3760 kcal/kg, 490 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-naturals-chicken-oatmeal-recipe-adult-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Naturals Chicken & Veggies Grain-Free Recipe Adult Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-naturals-chicken-veggies-grain-free-recipe-adult-dog-food/FCM02409",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Naturals",
+      "ingredients_raw": "Chicken, Chicken Meal, Peas, Pea Starch, Chicken Fat (preserved with Mixed Tocopherols), Navy Beans, Tapioca, Tomato Pomace, Pea Protein, Dried Plain Beet Pulp, Natural Flavor, Flaxseed, Dehydrated Alfalfa Meal, Salt, Choline Chloride, Chicory Root Extract, Dried Yeast Extract, Taurine, Calcium Carbonate, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Vitamins (Vitamin E Supplement, Niacin, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin, Vitamin B12 Supplement, Thiamine Mononitrate, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Zinc Sulfate, Ferrous Sulfate, Copper Sulfate, Zinc Proteinate, Manganese Sulfate, Iron Proteinate, Manganese Proteinate, Copper Proteinate, Sodium Selenite, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.3,
+        "taurine_min": 0.2,
+        "omega_6_min": 2.5,
+        "omega_3_min": 0.75
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "444 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-naturals-chicken-veggies-grain-free-recipe-adult-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Naturals Chicken & Veggies Grain-Free Recipe Puppy Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-naturals-chicken-veggies-grain-free-recipe-puppy-dog-food/FCM02414",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Naturals",
+      "ingredients_raw": "Chicken, Chicken Meal, Peas, Chicken Fat (preserved with Mixed Tocopherols), Pea Protein, Pea Starch, Navy Beans, Tapioca, Tomato Pomace, Dried Plain Beet Pulp, Natural Flavor, Flaxseed, Herring Oil (preserved with Mixed Tocopherols), Salt, Choline Chloride, Chicory Root Extract, Dried Yeast Extract, Taurine, Calcium Carbonate, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Vitamins (Vitamin E Supplement, Niacin, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin, Vitamin B12 Supplement, Thiamine Mononitrate, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Zinc Sulfate, Ferrous Sulfate, Copper Sulfate, Zinc Proteinate, Manganese Sulfate, Iron Proteinate, Manganese Proteinate, Copper Proteinate, Sodium Selenite, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 27.0,
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.1,
+        "calcium_min": 1.2,
+        "taurine_min": 0.2,
+        "omega_6_min": 3.0,
+        "omega_3_min": 0.75
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "480 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-naturals-chicken-veggies-grain-free-recipe-puppy-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Naturals Chicken & Veggies Grain-Free Recipe Small Breed Adult Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-naturals-chicken-veggies-grain-free-recipe-small-breed-adult-dog-food/FCM02412",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Naturals",
+      "ingredients_raw": "Chicken, Chicken Meal, Peas, Chicken Fat (preserved with Mixed Tocopherols), Pea Starch, Navy Beans, Tapioca, Tomato Pomace, Dried Plain Beet Pulp, Natural Flavor, Flaxseed, Dehydrated Alfalfa Meal, Salt, Choline Chloride, Chicory Root Extract, Dried Yeast Extract, Taurine, Calcium Carbonate, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Vitamins (Vitamin E Supplement, Niacin, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin, Vitamin B12 Supplement, Thiamine Mononitrate, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Zinc Sulfate, Ferrous Sulfate, Copper Sulfate, Zinc Proteinate, Manganese Sulfate, Iron Proteinate, Manganese Proteinate, Copper Proteinate, Sodium Selenite, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.3,
+        "taurine_min": 0.2,
+        "omega_6_min": 3.0,
+        "omega_3_min": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "470 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-naturals-chicken-veggies-grain-free-recipe-small-breed-adult-dog-fo.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Naturals Chicken & Veggies Recipe Adult Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-naturals-chicken-veggies-recipe-adult-dog-food/FCM07206",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Naturals",
+      "ingredients_raw": "Chicken, Chicken Meal, Peas, Pea Starch, Chicken Fat (Preserved With Mixed Tocopherols), Navy Beans, Tapioca, Flaxseeds, Dried Tomato Pomace, Pea Protein, Dried Plain Beet Pulp, Natural Flavour, Dehydrated Alfalfa Meal, Salt, Choline Chloride, Chicory Root Extract, Dried Yeast Extract, Taurine, Calcium Carbonate, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Vitamins (Vitamin E Supplement, Niacin, Calcium Pantothenate, Vitamin A Supplement, Riboflavin, Vitamin B12 Supplement, Thiamine Mononitrate, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Zinc Sulfate, Ferrous Sulfate, Copper Sulfate, Zinc Proteinate, Manganese Sulfate, Iron Proteinate, Manganese Proteinate, Copper Proteinate, Sodium Selenite, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.3,
+        "phosphorus_min": 0.9,
+        "taurine_min": 0.2,
+        "omega_6_min": 2.5,
+        "omega_3_min": 0.75
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3760 kcal/kg, 490 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-naturals-chicken-veggies-recipe-adult-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Naturals Chicken & Veggies Recipe Puppy Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-naturals-chicken-veggies-recipe-puppy-dog-food/FCM07207",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Naturals",
+      "ingredients_raw": "Chicken, Chicken Meal, Peas, Chicken Fat (Preserved With Mixed Tocopherols), Pea Protein, Pea Starch, Navy Beans, Flaxseeds, Herring Oil (Preserved With Mixed Tocopherols), Tapioca, Dried Tomato Pomace, Dried Plain Beet Pulp, Natural Flavour, Salt, Choline Chloride, Taurine, Chicory Root Extract, Dried Yeast Extract, Calcium Carbonate, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Vitamins (Vitamin E Supplement, Niacin, Calcium Pantothenate, Vitamin A Supplement, Riboflavin, Vitamin B12 Supplement, Thiamine Mononitrate, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Zinc Sulfate, Ferrous Sulfate, Copper Sulfate, Zinc Proteinate, Manganese Sulfate, Iron Proteinate, Manganese Proteinate, Copper Proteinate, Sodium Selenite, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 27.0,
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.2,
+        "phosphorus_min": 0.9,
+        "taurine_min": 0.2,
+        "omega_6_min": 3.0,
+        "omega_3_min": 0.75
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3760 kcal/kg, 490 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-naturals-chicken-veggies-recipe-puppy-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Naturals Salmon & Veggies Grain-Free Recipe Adult Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-naturals-salmon-veggies-grain-free-recipe-adult-dog-food/FCM02411",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Naturals",
+      "ingredients_raw": "Salmon, Menhaden Fish Meal, Peas, Pea Starch, Navy Beans, Canola Oil (preserved with Mixed Tocopherols), Pea Protein, Tapioca, Tomato Pomace, Dried Plain Beet Pulp, Natural Flavor, Flaxseed, Dehydrated Alfalfa Meal, Salt, Choline Chloride, Chicory Root Extract, Dried Yeast Extract, Taurine, Calcium Carbonate, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Vitamins (Vitamin E Supplement, Niacin, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin, Vitamin B12 Supplement, Thiamine Mononitrate, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Zinc Sulfate, Ferrous Sulfate, Copper Sulfate, Zinc Proteinate, Manganese Sulfate, Iron Proteinate, Manganese Proteinate, Copper Proteinate, Sodium Selenite, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 6.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.1,
+        "taurine_min": 0.2,
+        "omega_6_min": 2.5,
+        "omega_3_min": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "442 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-naturals-salmon-veggies-grain-free-recipe-adult-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Naturals Salmon & Veggies Recipe Adult Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-naturals-salmon-veggies-recipe-adult-dog-food/FCM07209",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Naturals",
+      "ingredients_raw": "Salmon, Menhaden Fish Meal, Peas, Pea Starch, Navy Beans, Canola Oil (Preserved With Mixed Tocopherols), Pea Protein, Tapioca, Dried Tomato Pomace, Dried Plain Beet Pulp, Natural Flavour, Flaxseeds, Dehydrated Alfalfa Meal, Salt, Choline Chloride, Taurine, Chicory Root Extract, Dried Yeast Extract, Calcium Carbonate, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Vitamins (Vitamin E Supplement, Niacin, Calcium Pantothenate, Vitamin A Supplement, Riboflavin, Vitamin B12 Supplement, Thiamine Mononitrate, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Zinc Sulfate, Ferrous Sulfate, Copper Sulfate, Zinc Proteinate, Manganese Sulfate, Iron Proteinate, Manganese Proteinate, Copper Proteinate, Sodium Selenite, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.1,
+        "phosphorus_min": 0.8,
+        "taurine_min": 0.2,
+        "omega_6_min": 2.5,
+        "omega_3_min": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3760 kcal/kg, 490 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-naturals-salmon-veggies-recipe-adult-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Naturals Salmon & Veggies Recipe Pate Adult Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-naturals-salmon-veggies-recipe-pate-adult-dog-food/FCM07440",
+      "channel": "retail",
+      "product_type": "wet",
+      "sub_brand": "Performatrin Naturals",
+      "ingredients_raw": "Salmon Broth, Salmon, Pork Liver, Pea Protein, Carrots, Dried Egg Product, Peas, Canola Oil, Agar Agar, Lentils, Salt, Flaxseeds, Yucca Schidigera Extract, Calcium Carbonate, Potassium Chloride, Choline Chloride, Taurine, Dicalcium Phosphate, Pea Fiber, Zinc Proteinate, L-Ascorbyl-2-Polyphosphate (Source Of Vitamin C), Vitamin E Supplement, Ferrous Sulfate, Zinc Sulfate, Iron Proteinate, Copper Proteinate, Thiamine Mononitrate, Niacin Supplement, D-Calcium Pantothenate, Vitamin A Supplement, Manganese Sulfate, Riboflavin Supplement, Manganese Proteinate, Vitamin D3 Supplement, Sodium Selenite, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Calcium Iodate, Folic Acid.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.5,
+        "crude_fat_min": 5.5,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1247 kcal/kg",
+      "images": [
+        "/products/performatrin/performatrin-wet-performatrin-naturals-salmon-veggies-recipe-pate-adult-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Naturals Salmon & Veggies Recipe Small Breed Adult Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-naturals-salmon-veggies-recipe-small-breed-adult-dog-food/FCM07210",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Naturals",
+      "ingredients_raw": "Salmon, Menhaden Fish Meal, Peas, Canola Oil (Preserved With Mixed Tocopherols), Pea Starch, Navy Beans, Tapioca, Dried Tomato Pomace, Dried Plain Beet Pulp, Natural Flavour, Flaxseeds, Dehydrated Alfalfa Meal, Salt, Choline Chloride, Chicory Root Extract, Dried Yeast Extract, Taurine, Calcium Carbonate, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Vitamins (Vitamin E Supplement, Niacin, Calcium Pantothenate, Vitamin A Supplement, Riboflavin, Vitamin B12 Supplement, Thiamine Mononitrate, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Zinc Sulfate, Ferrous Sulfate, Copper Sulfate, Zinc Proteinate, Manganese Sulfate, Iron Proteinate, Manganese Proteinate, Copper Proteinate, Sodium Selenite, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.2,
+        "phosphorus_min": 0.9,
+        "taurine_min": 0.2,
+        "omega_6_min": 2.75,
+        "omega_3_min": 1.25
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3760 kcal/kg, 490 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-naturals-salmon-veggies-recipe-small-breed-adult-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Naturals Turkey & Veggies Recipe Pate Adult Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-naturals-turkey-veggies-recipe-pate-adult-dog-food/FCM07438",
+      "channel": "retail",
+      "product_type": "wet",
+      "sub_brand": "Performatrin Naturals",
+      "ingredients_raw": "Turkey, Pork Liver, Turkey Broth, Carrots, Peas, Salmon Oil, Canola Oil, Agar Agar, Calcium Carbonate, Lentils, Flaxseeds, Sodium Tripolyphosphate, Salt, Yucca Schidigera Extract, Potassium Chloride, Choline Chloride, Dicalcium Phosphate, Pea Fiber, Zinc Proteinate, L-Ascorbyl-2-Polyphosphate (Source Of Vitamin C), Vitamin E Supplement, Ferrous Sulfate, Zinc Sulfate, Iron Proteinate, Copper Proteinate, Thiamine Mononitrate, Niacin Supplement, D-Calcium Pantothenate, Vitamin A Supplement, Manganese Sulfate, Riboflavin Supplement, Manganese Proteinate, Vitamin D3 Supplement, Sodium Selenite, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Calcium Iodate, Folic Acid.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 5.5,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1092 kcal/kg",
+      "images": [
+        "/products/performatrin/performatrin-wet-performatrin-naturals-turkey-veggies-recipe-pate-adult-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Prime Chicken Formula Pate Adult Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-prime-chicken-formula-pate-adult-dog-food/FCM06841",
+      "channel": "retail",
+      "product_type": "wet",
+      "sub_brand": "Performatrin Prime",
+      "ingredients_raw": "Chicken, Chicken Broth, Chicken Liver, Brown Rice, Guar Gum, Ground Flaxseeds, Salt, Potassium Chloride, Cassia Gum, Xanthan Gum, Choline Chloride, Dried Kelp, Zinc Proteinate, Garlic Powder, Iron Proteinate, Parsley, Rosemary, Inulin, Sage, Fennel, Thyme, Yucca Schidigera Extract, Vitamin E Supplement, Copper Proteinate, Manganese Proteinate, Sodium Selenite, Thiamine Mononitrate, Cobalt Proteinate, Niacin Supplement, D-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Potassium Iodide, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 10.0,
+        "crude_fat_min": 7.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 78.0,
+        "omega_6_min": 1.0,
+        "omega_3_min": 0.1
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "434 kcal/can",
+      "images": [
+        "/products/performatrin/performatrin-wet-performatrin-prime-chicken-formula-pate-adult-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Prime Chicken Formula Pate Senior Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-prime-chicken-formula-pate-senior-dog-food/FCM06838",
+      "channel": "retail",
+      "product_type": "wet",
+      "sub_brand": "Performatrin Prime",
+      "ingredients_raw": "Chicken Broth, Chicken (Source Of Glucosamine And Chondroitin Sulfate), Chicken Liver, Oceanfish, Oatmeal, Dried Egg Product, Brown Rice, Ground Flaxseeds, Guar Gum, Sunflower Oil, Potassium Chloride, Choline Chloride, Dried Kelp, Zinc Proteinate, Cassia Gum, Xanthan Gum, Iron Proteinate, Garlic Powder, Parsley, Rosemary, Inulin, Thiamine Mononitrate, Sage, Fennel, Thyme, L-Carnitine, Yucca Schidigera Extract, Vitamin E Supplement, Copper Proteinate, Manganese Proteinate, Sodium Selenite, Cobalt Proteinate, Niacin Supplement, D-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Potassium Iodide, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 6.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0,
+        "omega_6_min": 1.0,
+        "omega_3_min": 0.1
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "439 kcal/can",
+      "images": [
+        "/products/performatrin/performatrin-wet-performatrin-prime-chicken-formula-pate-senior-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Prime Chicken & Rice Formula Adult Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-prime-chicken-rice-formula-adult-dog-food/FCM06789",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Prime",
+      "ingredients_raw": "Chicken, Chicken Meal, Rice, Ground Corn, Oatmeal, Pearled Barley, Chicken Fat (preserved with Mixed Tocopherols and Citric Acid), Corn Gluten Meal, Menhaden Meal, Dried Plain Beet Pulp, Natural Chicken Flavor, Sprayed Dried Egg Product, Flaxseeds, Oat Hulls, Potassium Chloride, Salt, Dried Yeast, Chicory Root Extract, Dried Kelp, Sodium Hexametaphosphate, Choline Chloride, DL-Methionine, Ginger, Oregano, Yucca Schidigera Extract, Dandelion, Parsley, Chamomile, Rosemary Extract, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.15,
+        "phosphorus_min": 0.8,
+        "taurine_min": 0.15,
+        "omega_6_min": 2.5,
+        "omega_3_min": 0.4
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "405 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-prime-chicken-rice-formula-adult-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Prime Chicken & Rice Formula Large Breed Adult Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-prime-chicken-rice-formula-large-breed-adult-dog-food/FCM06790",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Prime",
+      "ingredients_raw": "Chicken, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Rice, Pearled Barley, Oatmeal, Ground Corn, Corn Gluten Meal, Chicken Fat (preserved with Mixed Tocopherols and Citric Acid), Dried Beet Pulp, Menhaden Meal, Natural Chicken Flavor, Salmon Oil (preserved with Mixed Tocopherols and Citric Acid), Flaxseeds, Sprayed Dried Egg Product, Oat Hulls, Salt, Potassium Chloride, Dried Yeast, Chicory Root Extract, Dried Kelp, Sodium Hexametaphosphate, Taurine, Choline Chloride, DL-Methionine, Ginger, Oregano, Yucca Schidigera Extract, Dandelion, Parsley, Chamomile, Rosemary Extract, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.7,
+        "taurine_min": 0.15,
+        "omega_6_min": 2.0,
+        "omega_3_min": 0.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "389 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-prime-chicken-rice-formula-large-breed-adult-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Prime Chicken & Rice Formula Large Breed Puppy Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-prime-chicken-rice-formula-large-breed-puppy-dog-food/FCM06787",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Prime",
+      "ingredients_raw": "Chicken, Chicken Meal, Rice, Ground Corn, Oatmeal, Pearled Barley, Corn Gluten Meal, Menhaden Meal, Chicken Fat (preserved with Mixed Tocopherols and Citric Acid), Salmon Oil (preserved with Mixed Tocopherols and Citric Acid), Dried Plain Beet Pulp, Natural Chicken Flavor, Spray Dried Egg Product, Flaxseeds, Monocalcium Phosphate, Oat Hulls, Potassium Chloride, Salt, Dried Yeast, Chicory Root Extract, Dried Kelp, Sodium Hexametaphosphate, Taurine, Choline Chloride, DL-Methionine, Citric Acid, Ginger, Oregano, Yucca Schidigera Extract, Dandelion, Parsley, Chamomile, Rosemary Extract, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.1,
+        "phosphorus_min": 0.8,
+        "taurine_min": 0.15,
+        "omega_6_min": 2.25,
+        "omega_3_min": 0.75
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "407 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-prime-chicken-rice-formula-large-breed-puppy-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Prime Chicken & Rice Formula Large Breed Senior Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-prime-chicken-rice-formula-large-breed-senior-dog-food/FCM06793",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Prime",
+      "ingredients_raw": "Chicken, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Rice, Ground Corn, Pearled Barley, Oatmeal, Corn Gluten Meal, Rye, Dried Plain Beet Pulp, Chicken Fat (preserved with Mixed Tocopherols and Citric Acid), Salmon Oil (preserved with Mixed Tocopherols and Citric Acid), Menhaden Meal, Natural Chicken Flavor, Flaxseeds, Sprayed Dried Egg Product, Oat Hulls, Potassium Chloride, Dried Yeast, Chicory Root Extract, Dried Kelp, Taurine, Choline Chloride, Salt, DL-Methionine, Ginger, Oregano, Yucca Schidigera Extract, Dandelion, L-Carnitine, Parsley, Chamomile, Rosemary Extract, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Calcium Carbonate, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 10.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 0.8,
+        "phosphorus_min": 0.6,
+        "taurine_min": 0.15,
+        "omega_6_min": 1.6,
+        "omega_3_min": 0.6
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "380 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-prime-chicken-rice-formula-large-breed-senior-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Prime Chicken & Rice Formula Puppy Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-prime-chicken-rice-formula-puppy-dog-food/FCM06786",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Prime",
+      "ingredients_raw": "Chicken, Chicken Meal, Rice, Ground Corn, Corn Gluten Meal, Chicken Fat (preserved with Mixed Tocopherols and Citric Acid), Pearled Barley, Menhaden Meal, Salmon Oil (preserved with Mixed Tocopherols and Citric Acid), Dried Plain Beet Pulp, Natural Chicken Flavor, Sprayed Dried Egg Product, Flaxseeds, Oat Hulls, Potassium Chloride, Monocalcium Phosphate, Salt, Dried Yeast, Chicory Root Extract, Dried Kelp, Sodium Hexametaphosphate, Taurine, Choline Chloride, DL-Methionine, Citric Acid, Ginger, Oregano, Yucca Schidigera Extract, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Dandelion, Parsley, Chamomile, Rosemary Extract, Vitamins (Vitamin E Supplement, Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.0,
+        "crude_fat_min": 18.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.3,
+        "phosphorus_min": 0.95,
+        "taurine_min": 0.15,
+        "omega_6_min": 3.0,
+        "omega_3_min": 0.8
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "427 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-prime-chicken-rice-formula-puppy-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Prime Chicken & Rice Formula Senior Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-prime-chicken-rice-formula-senior-dog-food/FCM06792",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Prime",
+      "ingredients_raw": "Chicken, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Rice, Pearled Barley, Ground Corn, Oatmeal, Corn Gluten Meal, Rye, Menhaden Meal, Chicken Fat (preserved with Mixed Tocopherols and Citric Acid), Dried Plain Beet Pulp, Salmon Oil (preserved with Mixed Tocopherols and Citric Acid), Natural Chicken Flavor, Flaxseeds, Spray Dried Egg Product, Oat Hulls, Potassium Chloride, Dried Yeast, Chicory Root Extract, Dried Kelp, Taurine, Choline Chloride, Salt, DL-Methionine, Ginger, Oregano, Yucca Schidigera Extract, L-Carnitine, Dandelion, Parsley, Chamomile, Rosemary Extract, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 11.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 0.8,
+        "phosphorus_min": 0.6,
+        "taurine_min": 0.15,
+        "omega_6_min": 1.75,
+        "omega_3_min": 0.65
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "378 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-prime-chicken-rice-formula-senior-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Prime Chicken & Rice Formula Small Breed Adult Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-prime-chicken-rice-formula-small-breed-adult-dog-food/FCM06788",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Prime",
+      "ingredients_raw": "Chicken, Chicken Meal, Rice, Ground Corn, Corn Gluten Meal, Pearled Barley, Chicken Fat (preserved with Mixed Tocopherols and Citric Acid), Oatmeal, Menhaden Meal, Dried Plain Beet Pulp, Natural Chicken Flavor, Sprayed Dried Egg Product, Flaxseeds, Oat Hulls, Potassium Chloride, Salt, Yeast Extract, Chicory Root Extract, Dried Kelp, Sodium Hexametaphosphate, Choline Chloride, DL-Methionine, Ginger, Oregano, Yucca Schidigera Extract, Dandelion, Parsley, Chamomile, Rosemary Extract, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "calcium_min": 1.2,
+        "phosphorus_min": 0.8,
+        "taurine_min": 0.15,
+        "omega_6_min": 2.75,
+        "omega_3_min": 0.45
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "437 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-prime-chicken-rice-formula-small-breed-adult-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Prime Chicken & Rice Formula Small Breed Puppy Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-prime-chicken-rice-formula-small-breed-puppy-dog-food/FCM06785",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Prime",
+      "ingredients_raw": "Chicken, Chicken Meal, Rice, Ground Corn, Chicken Fat (preserved with Mixed Tocopherols and Citric Acid), Corn Gluten Meal, Herring Meal, Pearled Barley, Dried Plain Beet Pulp, Salmon Oil (preserved with Mixed Tocopherols and Citric Acid), Spray Dried Egg Product, Natural Chicken Flavor, Flaxseeds, Oat Hulls, Potassium Chloride, Salt, Yeast Extract, Chicory Root Extract, Dried Kelp, Sodium Hexametaphosphate, Choline Chloride, Taurine, DL-Methionine, Citric Acid, Ginger, Oregano, Yucca Schidigera Extract, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Dandelion, Parsley, Chamomile, Rosemary Extract, Vitamins (Vitamin E Supplement, Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 20.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.4,
+        "phosphorus_min": 1.0,
+        "taurine_min": 0.15,
+        "omega_6_min": 3.25,
+        "omega_3_min": 0.8
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "472 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-prime-chicken-rice-formula-small-breed-puppy-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Prime Chicken & Rice Formula Small Breed Senior Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-prime-chicken-rice-formula-small-breed-senior-dog-food/FCM06791",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Prime",
+      "ingredients_raw": "Chicken, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Rice, Ground Corn, Pearled Barley, Oatmeal, Corn Gluten Meal , Chicken Fat (preserved with Mixed Tocopherols and Citric Acid), Menhaden Meal, Rye, Dried Plain Beet Pulp, Natural Flavor, Salmon Oil (preserved with Mixed Tocopherols and Citric Acid), Sprayed Dried Egg Product, Flaxseeds, Oat Hulls, Potassium Chloride, Yeast Extract, Chicory Root Extract, Dried Kelp, Taurine, Choline Chloride, DL-Methionine, Ginger, Oregano, Yucca Schidigera Extract, L-Carnitine, Dandelion, Parsley, Chamomile, Rosemary Extract, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 0.9,
+        "phosphorus_min": 0.7,
+        "taurine_min": 0.15,
+        "omega_6_min": 2.0,
+        "omega_3_min": 0.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "415 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-prime-chicken-rice-formula-small-breed-senior-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Prime Grain-Free Chicken & Potato Formula Adult Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-prime-grain-free-chicken-potato-formula-adult-dog-food/FCM06794",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Prime",
+      "ingredients_raw": "Chicken, Chicken Meal, Peas, Potato, Chicken Fat (preserved with Mixed Tocopherols and Citric Acid), Dehydrated Alfalfa Meal, Natural Chicken Flavor, Menhaden Meal, Sprayed Dried Egg Product, Dried Tomato Pomace, Cellulose, Flaxseeds, Salt, DL-Methionine, Chicory Root Extract, Dried Kelp, Sodium Hexametaphosphate, Choline Chloride, Taurine, Dried Yeast, Ginger, Oregano, Yucca Schidigera Extract, Dandelion, Parsley, Chamomile, Rosemary Extract, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Calcium Carbonate, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 27.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.2,
+        "phosphorus_min": 0.9,
+        "taurine_min": 0.15,
+        "omega_6_min": 2.5,
+        "omega_3_min": 0.4
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "376 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-prime-grain-free-chicken-potato-formula-adult-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Prime Healthy Weight Chicken Formula Pate Adult Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-prime-healthy-weight-chicken-formula-pate-adult-dog-food/FCM06840",
+      "channel": "retail",
+      "product_type": "wet",
+      "sub_brand": "Performatrin Prime",
+      "ingredients_raw": "Chicken Broth, Chicken, Chicken Liver & Heart, Ocean Fish, Potato Protein, Rice Flour, Salmon Oil, Guar Gum, Salt, Potassium Chloride, Flaxseeds, Choline Chloride, Pea Fiber, Cassia Gum, Xanthan Gum, Magnesium Proteinate, Inulin, Calcium Carbonate, Ginger, Blueberry, Cranberry, Pumpkin, Apple Pomace, Zinc Proteinate, L-Ascorbyl-2-Polyphosphate (Source Of Vitamin C), Vitamin E Supplement, Ferrous Sulfate, Zinc Sulfate, Iron Proteinate, Copper Proteinate, L-Carnitine, Yucca Schidigera Extract, Thiamine Mononitrate, Vitamin A Supplement, Niacin Supplement, D-Calcium Pantothenate, Manganese Sulfate, Manganese Proteinate, Riboflavin Supplement, Sodium Selenite, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Vitamin B12, Calcium Iodate, Folic Acid.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 3.5,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 78.0,
+        "omega_6_min": 0.8,
+        "omega_3_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "987 kcal/kg, 369 kcal/can",
+      "images": [
+        "/products/performatrin/performatrin-wet-performatrin-prime-healthy-weight-chicken-formula-pate-adult-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Prime Healthy Weight Chicken & Rice Formula Adult Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-prime-healthy-weight-chicken-rice-formula-adult-dog-food/FCM06796",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Prime",
+      "ingredients_raw": "Chicken, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Rice, Ground Corn, Pearled Barley, Oatmeal, Corn Gluten Meal, Rice Hulls, Dried Plain Beet Pulp, Chicken Fat (preserved with Mixed Tocopherols and Citric Acid), Menhaden Meal, Natural Flavor, Sprayed Dried Egg Product, Oat Hulls, Flaxseeds, Potassium Chloride, Salt, Dried Yeast, Chicory Root Extract, Dried Kelp, Sodium Hexametaphosphate, Taurine, Choline Chloride, DL-Methionine, L-Carnitine, Ginger, Oregano, Yucca Schidigera Extract, Dandelion, Parsley, Chamomile, Rosemary Extract, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 9.0,
+        "crude_fat_max": 11.0,
+        "crude_fiber_max": 7.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8,
+        "taurine_min": 0.15,
+        "omega_6_min": 1.5,
+        "omega_3_min": 0.3
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "343 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-prime-healthy-weight-chicken-rice-formula-adult-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Prime Healthy Weight Chicken & Rice Formula Large Breed Adult Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-prime-healthy-weight-chicken-rice-formula-large-breed-adult-dog-food/FCM06797",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Prime",
+      "ingredients_raw": "Chicken, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Rice, Pearled Barley, Ground Corn, Oatmeal, Corn Gluten Meal, Rice Hulls, Dried Plain Beet Pulp, Chicken Fat (preserved with Mixed Tocopherols and Citric Acid), Natural Chicken Flavor, Menhaden Meal, Sprayed Dried Egg Product, Oat Hulls, Flaxseeds, Salt, Potassium Chloride, Dried Yeast, Chicory Root Extract, Dried Kelp, Sodium Hexametaphosphate, Taurine, Choline Chloride, DL-Methionine, L-Carnitine, Ginger, Oregano, Yucca Schidigera Extract, Dandelion, Parsley, Chamomile, Rosemary Extract, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 23.0,
+        "crude_fat_min": 8.0,
+        "crude_fat_max": 10.0,
+        "crude_fiber_max": 7.5,
+        "moisture_max": 10.0,
+        "calcium_min": 0.9,
+        "phosphorus_min": 0.65,
+        "taurine_min": 0.15,
+        "omega_6_min": 1.3,
+        "omega_3_min": 0.3
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "335 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-prime-healthy-weight-chicken-rice-formula-large-breed-adult-dog-foo.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Prime Healthy Weight Chicken & Rice Formula Small Breed Adult Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-prime-healthy-weight-chicken-rice-formula-small-breed-adult-dog-food/FCM06795",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Prime",
+      "ingredients_raw": "Chicken, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Rice, Pearled Barley, Ground Corn, Oatmeal, Corn Gluten Meal, Chicken Fat (preserved with Mixed Tocopherols and Citric Acid), Rice Hulls, Menhaden Meal, Dried Plain Beet Pulp, Natural Chicken Flavor, Sprayed Dried Egg Product, Flaxseeds, Oat Hulls, Potassium Chloride, Salt, Yeast Extract, Chicory Root Extract, Dried Kelp, Sodium Hexametaphosphate, Taurine, Choline Chloride, DL-Methionine, L-Carnitine, Ginger, Oregano, Yucca Schidigera Extract, Dandelion, Parsley, Chamomile, Rosemary Extract, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 10.0,
+        "crude_fat_max": 12.0,
+        "crude_fiber_max": 6.5,
+        "moisture_max": 10.0,
+        "calcium_min": 1.1,
+        "phosphorus_min": 0.8,
+        "taurine_min": 0.15,
+        "omega_6_min": 1.6,
+        "omega_3_min": 0.35
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "375 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-prime-healthy-weight-chicken-rice-formula-small-breed-adult-dog-foo.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Prime Healthy Weight Lamb Meal & Brown Rice Formula Adult Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-prime-healthy-weight-lamb-meal-brown-rice-formula-adult-dog-food/FCM06800",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Prime",
+      "ingredients_raw": "Lamb Meal, Oatmeal, Peas, Brown Rice, Pearled Barley, Pea Protein, Rice Bran, Canola Oil (preserved with Mixed Tocopherols and Citric Acid), Natural Lamb Flavor, Rice Hulls, Dried Plain Beet Pulp, Spray Dried Egg Product, Dried Tomato Pomace, Fish Oil (preserved with Mixed Tocopherols and Citric Acid), Salt, Dried Kelp, Chicory Root Extract, Choline Chloride, Taurine, Sodium Hexametaphosphate, Potassium Chloride, Dried Carrots, Yeast Extract, L-Lysine, DL-Methionine, Glucosamine Hydrochloride, Chondroitin Sulphate, L-Carnitine, Yucca Schidigera Extract, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin, Calcium Pantothenate, Vitamin A Supplement, Riboflavin, Vitamin B12 Supplement, Thiamine Mononitrate, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Zinc Sulfate, Ferrous Sulfate, Zinc Proteinate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Manganese Proteinate, Manganese Sulfate, Copper Proteinate, Calcium Iodate, Calcium Carbonate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 22.0,
+        "crude_fat_min": 8.0,
+        "crude_fat_max": 10.0,
+        "crude_fiber_max": 6.0,
+        "moisture_max": 10.0,
+        "taurine_min": 0.15,
+        "omega_6_min": 1.2,
+        "omega_3_min": 0.3
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "338 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-prime-healthy-weight-lamb-meal-brown-rice-formula-adult-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Prime Hip & Joint Support Chicken Formula Pate Adult Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-prime-hip-joint-support-chicken-formula-pate-adult-dog-food/FCM08618",
+      "channel": "retail",
+      "product_type": "wet",
+      "sub_brand": "Performatrin Prime",
+      "ingredients_raw": "Chicken (Source Of Glucosamine Hydrochloride And Chondroitin Sulfate), Chicken Broth, Turkey Broth, Poultry Liver, Duck, Turkey, Brown Rice Flour, Carrots, Pea Protein, Peas, Oatmeal, Poultry Hearts, Ground Flaxseed, Natural Flavor, Fish Oil (Preserved With Mixed Tocopherols), Guar Gum, Xanthan Gum, Cassia Gum, Salt, Potassium Chloride, Blueberries, Cranberries, Minerals (Zinc Proteinate, Iron Proteinate, Copper Proteinate, Cobalt Proteinate, Manganese Proteinate, Sodium Selenite, Potassium Iodide), Calcium Carbonate, Inulin, Vitamins (Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, D-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Choline Chloride, Yucca Schidigera Extract, L-Ascorbyl-2-Polyphosphate,Sunflower Oil, L-Carnitine.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0,
+        "omega_6_min": 0.8,
+        "omega_3_min": 0.15
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1059 kcal/kg, 396 kcal/can",
+      "images": [
+        "/products/performatrin/performatrin-wet-performatrin-prime-hip-joint-support-chicken-formula-pate-adult-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Prime Lamb Meal & Brown Rice Formula Adult Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-prime-lamb-meal-brown-rice-formula-adult-dog-food/FCM06802",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Prime",
+      "ingredients_raw": "Lamb Meal, Brown Rice, Oatmeal, Peas, Pearled Barley, Spray Dried Egg Product, Rice Bran, Canola Oil (preserved with Mixed Tocopherols and Citric Acid), Dried Plain Beet Pulp, Natural Lamb Flavor, Fish Oil (preserved with Mixed Tocopherols and Citric Acid), Salt, Dried Tomato Pomace, Potassium Chloride, Choline Chloride, Dried Kelp, Chicory Root Extract, Taurine, Sodium Hexametaphosphate, Dried Carrots, Yeast Extract, L-Lysine, DL-Methionine, Yucca Schidigera Extract, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin, Calcium Pantothenate, Vitamin A Supplement, Riboflavin, Vitamin B12 Supplement, Thiamine Mononitrate, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Zinc Sulfate, Ferrous Sulfate, Zinc Proteinate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Manganese Proteinate, Manganese Sulfate, Copper Proteinate, Calcium Iodate, Calcium Carbonate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 22.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "taurine_min": 0.15,
+        "omega_6_min": 2.0,
+        "omega_3_min": 0.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "375 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-prime-lamb-meal-brown-rice-formula-adult-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Prime Lamb Meal & Brown Rice Formula Puppy Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-prime-lamb-meal-brown-rice-formula-puppy-dog-food/FCM06801",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Prime",
+      "ingredients_raw": "Lamb Meal, Peas, Brown Rice, Spray Dried Egg Product, Oatmeal, Pearled Barley, Canola Oil (preserved with Mixed Tocopherols and Citric Acid), Rice Bran, Menhaden Fish Meal, Natural Lamb Flavor, Dried Plain Beet Pulp, Fish Oil (preserved with Mixed Tocopherols and Citric Acid), Dried Tomato Pomace, Salt, Potassium Chloride, Choline Chloride, Dried Kelp, Chicory Root Extract, Sodium Hexametaphosphate, L-Threonine, Taurine, Dried Carrots, Yeast Extract, L-Lysine, DL-Methionine, Yucca Schidigera Extract, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin, Calcium Pantothenate, Vitamin A Supplement, Riboflavin, Vitamin B12 Supplement, Thiamine Mononitrate, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Zinc Sulfate, Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Sodium Selenite, Manganese Proteinate, Manganese Sulfate, Copper Proteinate, Calcium Iodate, Calcium Carbonate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.1,
+        "taurine_min": 0.15,
+        "omega_6_min": 2.3,
+        "omega_3_min": 0.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "389 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-prime-lamb-meal-brown-rice-formula-puppy-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Prime Lamb Meal & Brown Rice Formula Senior Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-prime-lamb-meal-brown-rice-formula-senior-dog-food/FCM06803",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Prime",
+      "ingredients_raw": "Lamb Meal, Oatmeal, Peas, Brown Rice, Pearled Barley, Spray Dried Egg Product, Rice Bran, Canola Oil (preserved with Mixed Tocopherols and Citric Acid), Natural Lamb Flavor, Dried Plain Beet Pulp, Rice Hulls, Fish Oil (preserved with Mixed Tocopherols and Citric Acid), Dried Tomato Pomace, Potassium Chloride, Choline Chloride, Dried Kelp, Chicory Root Extract, Taurine, Dried Carrots, Yeast Extract, Glucosamine Hydrochloride, Salt, L-Lysine, DL-Methionine, Chondroitin Sulphate, L-Carnitine, Yucca Schidigera Extract, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin, Calcium Pantothenate, Vitamin A Supplement, Riboflavin, Vitamin B12 Supplement, Thiamine Mononitrate, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Zinc Sulfate, Ferrous Sulfate, Zinc Proteinate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Manganese Proteinate, Manganese Sulfate, Copper Proteinate, Calcium Iodate, Calcium Carbonate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 22.0,
+        "crude_fat_min": 10.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "taurine_min": 0.15,
+        "omega_6_min": 1.7,
+        "omega_3_min": 0.3
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "357 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-prime-lamb-meal-brown-rice-formula-senior-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Prime Oral Care Chicken & Rice Formula Adult Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-prime-oral-care-chicken-rice-formula-adult-dog-food/FCM08620",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Prime",
+      "ingredients_raw": "Chicken, Chicken Meal, Brown Rice, Oatmeal, Corn Gluten Meal, Pearled Barley, Rice, Chicken Fat (Preserved With Mixed Tocopherols And Citric Acid), Powdered Cellulose, Rice Hulls, Oat Hulls, Miscanthus Grass, Dried Plain Beet Pulp, Natural Flavour, Menhaden Meal, Salmon Oil (Preserved With Mixed Tocopherols And Citric Acid), Flaxseeds, Dried Kelp, Potassium Chloride, Sodium Hexametaphosphate, Chicory Root Extract, Salt, Sodium Tripolyphosphate, Vitamin E Supplement, Yeast Extract, Choline Chloride, Taurine, DL-Methionine, L-Ascorbyl-2-Polyphosphate (Source Of Vitamin C), Parsley, Zinc Methionine Complex, Peppermint Leaf, Green Tea Extract, Ginger, Oregano, Yucca Schidigera Extract, Cinnamon, Turmeric, Dandelion, Chamomile, Fennel Seed, Rosemary Extract, Vitamins (Niacin Supplement, D-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 22.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 9.0,
+        "moisture_max": 10.0,
+        "calcium_min": 0.75,
+        "phosphorus_min": 0.6,
+        "taurine_min": 0.15,
+        "omega_6_min": 2.0,
+        "omega_3_min": 0.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3525 kcal/kg, 367 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-prime-oral-care-chicken-rice-formula-adult-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Prime Sensitive Skin & Stomach Salmon & Oatmeal Formula Adult Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-prime-sensitive-skin-stomach-salmon-oatmeal-formula-adult-dog-food/FCM06798",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Prime",
+      "ingredients_raw": "Salmon, Oatmeal, Rice, Brown Rice, Whitefish Meal, Turkey Meal, Pearled Barley, Chicken Fat (preserved with Mixed Tocopherols and Citric Acid), Potato Protein, Natural Flavor, Dried Egg Product, Salmon Oil (preserved with Mixed Tocopherols and Citric Acid), Dried Plain Beet Pulp, Flaxseeds, Powdered Cellulose, Vitamin E Supplement, Salt, Potassium Chloride, Chicory Root Extract, Dried Kelp, Dried Yeast, Sodium Hexametaphosphate, Zinc Methionine Complex, Gamma-Linolenic Acid Safflower Oil, Choline Chloride, Taurine, Parsley, L-Ascorbyl-2-Polyphosphate (Source of Vitamin C), Ginger, Oregano, Biotin, Turmeric, Cinnamon, Yucca Schidigera Extract, Dandelion, Chamomile, Fennel, Green Tea Extract, Rosemary Extract, Vitamins (Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Calcium Carbonate, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.2,
+        "taurine_min": 0.15,
+        "omega_6_min": 1.8,
+        "omega_3_min": 0.9
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "391 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-prime-sensitive-skin-stomach-salmon-oatmeal-formula-adult-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Ultra Freeze-Dried Raw Coated Kibble Autumn Ranch Recipe Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-ultra-freeze-dried-raw-coated-kibble-autumn-ranch-recipe-dog-food/FCM07100",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Ultra",
+      "ingredients_raw": "Beef, Pork Meal, Whitefish Meal, Sweet Potato, Dried Potato, Tapioca, Canola Oil (preserved with Mixed Tocopherols and Citric Acid), Potato Protein, Lamb Meal, Chickpeas, Herring Meal, Flaxseeds, Natural Flavor, Lamb Liver, Spray Dried Egg Product, Dried Pumpkin, Dried Kelp, Beef Liver, Beef Kidney, Venison, Beef Tripe, Vitamin E Supplement, Dried Carrots, Dried Blueberries, Dried Apple Pomace, Dried Cranberries, Chicory Root Extract, Salt, Choline Chloride, Taurine, Dried Yeast, Ginger, Oregano, Yucca Schidigera Extract, Dandelion, Parsley, Chamomile, Rosemary Extract, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus casei Fermentation Product, Dried Bifidobacterium bifidum Fermentation Product, Dried Enterococcus faecium Fermentation Product, Vitamins (L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Calcium Carbonate, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 32.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.1,
+        "taurine_min": 0.2,
+        "omega_6_min": 2.0,
+        "omega_3_min": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3590 kcal/kg, 402 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-ultra-freeze-dried-raw-coated-kibble-autumn-ranch-recipe-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Ultra Freeze-Dried Raw Coated Kibble Spring Valley Recipe Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-ultra-freeze-dried-raw-coated-kibble-spring-valley-recipe-dog-food/FCM07101",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Ultra",
+      "ingredients_raw": "Chicken, Chicken Meal, Sweet Potato, Turkey Meal, Dried Potato, Tapioca, Chicken Fat (preserved with Mixed Tocopherols and Citric Acid), Whitefish Meal, Duck Meal, Flaxseed, Salmon Oil (preserved with Mixed Tocopherols and Citric Acid), Natural Flavor, Chicken Liver, Chickpeas, Spray Dried Egg Product, Dried Pumpkin, Dried Kelp, Quail, Chicken Gizzards, Duck, Vitamin E Supplement, Dried Carrots, Dried Blueberries, Dried Apple Pomace, Dried Cranberries, Chicory Root Extract, Salt, Choline Chloride, Dried Yeast, Taurine, Ginger, Oregano, Yucca Schidigera Extract, Dandelion, Parsley, Chamomile, Rosemary Extract, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus casei Fermentation Product, Dried Bifidobacterium bifidum Fermentation Product, Dried Enterococcus faecium Fermentation Product, Vitamins (L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Calcium Carbonate, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 34.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.1,
+        "taurine_min": 0.2,
+        "omega_6_min": 2.25,
+        "omega_3_min": 0.9
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3600 kcal/kg, 403 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-ultra-freeze-dried-raw-coated-kibble-spring-valley-recipe-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Ultra Grain-Free Beef in Gravy Recipe Adult Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-ultra-grain-free-beef-in-gravy-recipe-adult-dog-food/FCM08646",
+      "channel": "retail",
+      "product_type": "wet",
+      "sub_brand": "Performatrin Ultra",
+      "ingredients_raw": "Beef Broth, Water Sufficient For Processing, Beef, Potato Starch, Beef Lung, Pumpkin, Carrots, Sweet Potatoes, Sunflower Oil, Salt, Guar Gum, Potassium Chloride, Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-Calcium Pantothenate, Thiamine Mononitrate, Beta-Carotene, Biotin, Vitamin D3 Supplement, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid), Minerals (Zinc Oxide, Reduced Iron, Sodium Selenite, Manganese Sulfate, Copper Amino Acid Complex, Potassium Iodide), Magnesium Sulfate, Choline Chloride.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 5.5,
+        "crude_fat_min": 1.4,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 87.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "792 kcal/kg, 296 kcal/can",
+      "images": [
+        "/products/performatrin/performatrin-wet-performatrin-ultra-grain-free-beef-in-gravy-recipe-adult-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Ultra Grain-Free Beef Stew Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-ultra-grain-free-beef-stew-dog-food/FCM06728",
+      "channel": "retail",
+      "product_type": "wet",
+      "sub_brand": "Performatrin Ultra",
+      "ingredients_raw": "Beef Broth, Beef, Beef Liver, Potatoes, Dried Egg White, Green Beans, Peas, Dried Egg Product, Potato Starch, Carrots, Natural flavour, Red Peppers, Guar Gum, Tricalcium Phosphate, Pea Fiber, Salt, Calcium Carbonate, Brewers Dried Yeast, Sodium Phosphate, Potassium Chloride, Parsley, Sunflower Oil, Sodium Carbonate, Choline Chloride, Inulin, Oregano, Rosemary, Zinc Proteinate, Magnesium Sulfate, Iron Proteinate, Fish Oil (Preserved With Mixed Tocopherols), Cranberries, Apples, Blueberries, Yucca Schidigera Extract, Vitamin E Supplement, Copper Proteinate, Cobalt Proteinate, Manganese Proteinate, Sodium Selenite, Thiamine Mononitrate, Niacin Supplement, D-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Potassium Iodide, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "319 kcal/can",
+      "images": [
+        "/products/performatrin/performatrin-wet-performatrin-ultra-grain-free-beef-stew-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Ultra Grain-Free Chicken & Beef in Gravy Recipe Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-ultra-grain-free-chicken-beef-in-gravy-recipe-dog-food/FCM08644",
+      "channel": "retail",
+      "product_type": "wet",
+      "sub_brand": "Performatrin Ultra",
+      "ingredients_raw": "Chicken, Chicken Broth, Water Sufficient For Processing, Potato Starch, Beef, Pumpkin, Carrots, Sweet Potatoes, Sunflower Oil, Spinach, Salt, Guar Gum, Tricalcium Phosphate, Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-Calcium Pantothenate, Thiamine Mononitrate, Beta-Carotene, Biotin, Vitamin D3 Supplement, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid), Potassium Chloride, Minerals (Zinc Oxide, Reduced Iron, Sodium Selenite, Manganese Sulfate, Copper Amino Acid Complex, Potassium Iodide), Magnesium Sulfate, Choline Chloride.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.0,
+        "crude_fat_min": 1.4,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 87.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "882 kcal/kg, 329 kcal/can",
+      "images": [
+        "/products/performatrin/performatrin-wet-performatrin-ultra-grain-free-chicken-beef-in-gravy-recipe-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Ultra Grain-Free Chicken Dinner in Gravy Adult Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-ultra-grain-free-chicken-dinner-in-gravy-adult-dog-food/FCM08616",
+      "channel": "retail",
+      "product_type": "wet",
+      "sub_brand": "Performatrin Ultra",
+      "ingredients_raw": "Chicken, Potatoes, Chicken Broth, Carrots, Spinach, Peas, Tapioca Starch, Natural Flavor, Cane molasses, Fish Oil (Preserved With Mixed Tocopherols), Salt, Calcium Carbonate, Inulin, Potassium chloride, Yeast Culture, Vitamins (Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, D-Calcium Pantothenate, Vitamin A Supplement, Pyridoxine Hydrochloride, Riboflavin Supplement, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Biotin), Magnesium Sulfate, Minerals (Zinc oxide, Iron Glycine Complex, Copper Sulfate, Sodium Selenite, Manganese Sulfate, Potassium Iodide),Choline Chloride, L-Ascorbyl-2-Polyphosphate, Sunflower Oil.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1212 kcal/kg, 453 kcal/can",
+      "images": [
+        "/products/performatrin/performatrin-wet-performatrin-ultra-grain-free-chicken-dinner-in-gravy-adult-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Ultra Grain-Free Chicken in Gravy Recipe Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-ultra-grain-free-chicken-in-gravy-recipe-dog-food/FCM08643",
+      "channel": "retail",
+      "product_type": "wet",
+      "sub_brand": "Performatrin Ultra",
+      "ingredients_raw": "Chicken, Chicken Broth, Water Sufficient For Processing, Pumpkin, Tapioca Starch, Sunflower Oil, Salt, Guar Gum, Calcium Sulfate, Tricalcium Phosphate, Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-Calcium Pantothenate, Thiamine Mononitrate, Beta-Carotene, Biotin, Vitamin D3 Supplement, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid), Minerals (Zinc Oxide, Reduced Iron, Sodium Selenite, Manganese Sulfate, Copper Amino Acid Complex, Potassium Iodide), Choline Chloride, Magnesium Sulfate, Potassium Chloride.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 1.4,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 87.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "634 kcal/kg, 237 kcal/can",
+      "images": [
+        "/products/performatrin/performatrin-wet-performatrin-ultra-grain-free-chicken-in-gravy-recipe-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Ultra Grain-Free Chicken & Ocean Fish Stew Adult Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-ultra-grain-free-chicken-ocean-fish-stew-adult-dog-food/FCM08614",
+      "channel": "retail",
+      "product_type": "wet",
+      "sub_brand": "Performatrin Ultra",
+      "ingredients_raw": "Fish Broth, Chicken, Chicken Broth, Ocean Fish, Chicken Liver, Carrots, Dried Egg Whites, Peas, Potato Starch, Dried Egg Product, Salmon, Guar Gum, Ground Flaxseed, Natural Flavor, Dried Plain Beet Pulp, Salt, Sodium phosphate, Potassium Chloride, Sodium Carbonate, Choline Chloride, Zinc Proteinate, Iron Proteinate, Thiamine Mononitrate, Vitamin E Supplement, Copper Proteinate, Manganese Proteinate, Sodium Selenite, Cobalt Proteinate, Niacin Supplement, D-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Potassium Iodide, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 4.5,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 80.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "930 kcal/kg, 348 kcal/can",
+      "images": [
+        "/products/performatrin/performatrin-wet-performatrin-ultra-grain-free-chicken-ocean-fish-stew-adult-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Ultra Grain-Free Chicken Pate Senior Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-ultra-grain-free-chicken-pate-senior-dog-food/FCM06741",
+      "channel": "retail",
+      "product_type": "wet",
+      "sub_brand": "Performatrin Ultra",
+      "ingredients_raw": "Chicken , Vegetable Broth, Turkey , Chicken Liver, Potatoes, Peas, Whitefish, Green Beans, Pea Fiber, Carrots, Chicken Heart, Broccoli, Red Peppers, Guar Gum, Ground Flaxseed, Natural flavour, Inulin, Potassium Chloride, Salt, Cassia Gum, Xanthan Gum, Choline Chloride, Turmeric, Zinc Proteinate, Iron Proteinate, Yucca Schidigera Extract, Apples, Cranberries, Blueberries, L-Carnitine, Thiamine Mononitrate, Parsley, Oregano, Rosemary, Vitamin E Supplement, Copper Proteinate, Cobalt Proteinate, Manganese Proteinate, Sodium Selenite, Niacin Supplement, D-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Potassium Iodide, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 4.5,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "416 kcal/can",
+      "images": [
+        "/products/performatrin/performatrin-wet-performatrin-ultra-grain-free-chicken-pate-senior-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Ultra Grain-Free Foothills Recipe Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-ultra-grain-free-foothills-recipe-dog-food/FCM06331",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Ultra",
+      "ingredients_raw": "Beef, Pork Meal, Peas, Pea Protein, Tapioca, Herring Meal, Canola Oil (preserved with Mixed Tocopherols and Citric Acid), Lentils, Chickpeas, Venison Meal, Lamb Meal, Salmon Oil (preserved with Mixed Tocopherols and Citric Acid), Natural Flavour, Dried Tomato Pomace, Dehydrated Alfalfa Meal, Flaxseed, Pea Fibre, Salt, DL-Methionine, Chicory Root Extract, Dried Kelp, Choline Chloride, Taurine, Dried Yeast, Dried Carrots, Dried Sweet Potato, Dried Apple, Dried Blueberries, Dried Cranberries, Ginger, Oregano, Yucca Schidigera Extract, Dandelion, Parsley, Chamomile, Rosemary Extract, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus casei Fermentation Product, Dried Bifidobacterium bifidum Fermentation Product, Dried Enterococcus faecium Fermentation Product, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Calcium Carbonate, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 31.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.1,
+        "taurine_min": 0.2,
+        "omega_6_min": 1.85,
+        "omega_3_min": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "398 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-ultra-grain-free-foothills-recipe-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Ultra Grain-Free Foothills Recipe Small Bite Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-ultra-grain-free-foothills-recipe-small-bite-dog-food/FCM06332",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Ultra",
+      "ingredients_raw": "Beef, Pork Meal, Peas, Pea Protein, Tapioca, Herring Meal, Canola Oil (preserved with Mixed Tocopherols and Citric Acid), Lentils, Chickpeas, Venison Meal, Lamb Meal, Salmon Oil (preserved with Mixed Tocopherols and Citric Acid), Natural Flavour, Dried Tomato Pomace, Dehydrated Alfalfa Meal, Flaxseed, Pea Fibre, Salt, DL-Methionine, Chicory Root Extract, Dried Kelp, Choline Chloride, Taurine, Dried Yeast, Dried Carrots, Dried Sweet Potato, Dried Apple, Dried Blueberries, Dried Cranberries, Ginger, Oregano, Yucca Schidigera Extract, Dandelion, Parsley, Chamomile, Rosemary Extract, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus casei Fermentation Product, Dried Bifidobacterium bifidum Fermentation Product, Dried Enterococcus faecium Fermentation Product, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Calcium Carbonate, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 31.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.1,
+        "taurine_min": 0.2,
+        "omega_6_min": 1.85,
+        "omega_3_min": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "419 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-ultra-grain-free-foothills-recipe-small-bite-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Ultra Grain-Free Foothills Stew Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-ultra-grain-free-foothills-stew-dog-food/FCM06729",
+      "channel": "retail",
+      "product_type": "wet",
+      "sub_brand": "Performatrin Ultra",
+      "ingredients_raw": "Beef Broth, Beef, Pork Liver, Pork, Carrots, Green Beans, Dried Egg White, Dried Ground Peas, Chickpeas, Natural flavour, Guar Gum, Lamb, Venison, Red Peppers, Sunflower Oil, Salt, Dicalcium Phosphate, Calcium Carbonate, Fish Oil (Preserved With Mixed Tocopherols), Pea Fiber, Potassium Chloride, Sodium Phosphate, Parsley, Sodium Carbonate, Choline Chloride, Inulin, Magnesium Sulfate, Oregano, Rosemary, Zinc Proteinate, Iron Proteinate, Cranberries, Apples, Blueberries, Yucca Schidigera Extract, Vitamin E Supplement, Copper Proteinate, Cobalt Proteinate, Manganese Proteinate, Sodium Selenite, Thiamine Mononitrate, Niacin Supplement, D-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Potassium Iodide, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "319 kcal/can",
+      "images": [
+        "/products/performatrin/performatrin-wet-performatrin-ultra-grain-free-foothills-stew-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Ultra Grain-Free Hillside Recipe Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-ultra-grain-free-hillside-recipe-dog-food/FCM07191",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Ultra",
+      "ingredients_raw": "Turkey, Salmon Meal, Turkey Meal, Tapioca, Lentils, Chickpeas, Canola Oil (preserved with Mixed Tocopherols and Citric Acid), Rabbit Meal, Spray Dried Egg Product, Dehydrated Alfalfa Meal, Dried Tomato Pomace, Natural Flavour, Salmon Oil (preserved with Mixed Tocopherols and Citric Acid), Broccoli, Pumpkin, Dried Carrots, Monocalcium Phosphate, Kale, Cranberries, Apples, Blueberries, Chicory Root Extract, Dried Kelp, Salt, Dried Yeast, Ginger, Oregano, Yucca Schidigera Extract, Dandelion, Chamomile, Parsley, Taurine, Rosemary Extract, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus casei Fermentation Product, Dried Bifidobacterium bifidum Fermentation Product, Dried Enterococcus faecium Fermentation Product, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Calcium Carbonate, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 35.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.1,
+        "taurine_min": 0.2,
+        "omega_6_min": 2.25,
+        "omega_3_min": 0.75
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-ultra-grain-free-hillside-recipe-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Ultra Grain-Free Lamb & Beef Stew Adult Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-ultra-grain-free-lamb-beef-stew-adult-dog-food/FCM06774",
+      "channel": "retail",
+      "product_type": "wet",
+      "sub_brand": "Performatrin Ultra",
+      "ingredients_raw": "Lamb, Lamb Broth, Beef Broth, Beef Liver, Beef, Carrots, Dried Egg Product, Potato Starch, Green Beans, Natural Flavors, Guar Gum, Ground Flaxseed, Salt, Brewers Dried Yeast, Sunflower Oil, Sodium Phosphate, Potassium Chloride, Plain Beet Pulp, Blueberries, Cranberries, Inulin, Vitamins (Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, D-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Oxide, Copper Proteinate, Sodium Selenite, Manganese Sulfate, Potassium Iodide), Choline Chloride, Magnesium, Fish Oil (Preserved With Mixed Tocopherols), Calcium Carbonate.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.5,
+        "crude_fat_min": 6.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "409 kcal/can",
+      "images": [
+        "/products/performatrin/performatrin-wet-performatrin-ultra-grain-free-lamb-beef-stew-adult-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Ultra Grain-Free Ocean Recipe Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-ultra-grain-free-ocean-recipe-dog-food/FCM06335",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Ultra",
+      "ingredients_raw": "Ocean Whitefish, Herring Meal, Lentils, Dried Potato, Salmon Meal, Chickpeas, Peas, Canola Oil (preserved with Mixed Tocopherols and Citric Acid), Dehydrated Alfalfa Meal, Natural Flavour, Pea Fibre, Salt, Chicory Root Extract, Dried Kelp, Choline Chloride, Dried Yeast, Dried Carrots, Dried Sweet Potato, Dried Apples, Dried Blueberries, Dried Cranberries, Ginger, Oregano, Taurine, Yucca Schidigera Extract, Dandelion, Parsley, Chamomile, Rosemary Extract, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus casei Fermentation Product, Dried Bifidobacterium bifidum Fermentation Product, Dried Enterococcus faecium Fermentation Product, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Calcium Carbonate, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 32.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.2,
+        "taurine_min": 0.2,
+        "omega_6_min": 2.3,
+        "omega_3_min": 1.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "405 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-ultra-grain-free-ocean-recipe-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Ultra Grain-Free Original Pate Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-ultra-grain-free-original-pate-dog-food/FCM06740",
+      "channel": "retail",
+      "product_type": "wet",
+      "sub_brand": "Performatrin Ultra",
+      "ingredients_raw": "Turkey, Turkey Broth, Turkey Liver, Potatoes, Peas, Turkey Heart, Duck, Salmon, Green Beans, Carrots, Red Peppers, Guar Gum, Natural flavour, Dicalcium Phosphate, Salt, Potassium Chloride, Xanthan Gum, Cassia Gum, Fish Oil (Preserved With Mixed Tocopherols), Inulin, Choline Chloride, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Sunflower Oil, Cranberries, Apples, Blueberries, Thiamine Mononitrate,Oregano, Rosemary, Parsley, Yucca Schidigera Extract, Vitamin E Supplement, Copper Proteinate, Cobalt Proteinate, Manganese Proteinate, Sodium Selenite, Niacin Supplement, D-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Potassium Iodide, PyridoxineHydrochloride, Vitamin D3 Supplement, Folic Acid.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 7.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "418 kcal/can",
+      "images": [
+        "/products/performatrin/performatrin-wet-performatrin-ultra-grain-free-original-pate-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Ultra Grain-Free Original Recipe Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-ultra-grain-free-original-recipe-dog-food/FCM06336",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Ultra",
+      "ingredients_raw": "Turkey, Turkey Meal, Peas, Salmon Meal, Duck Meal, Sweet Potato, Spray Dried Egg Product, Potato, Potato Protein, Chicken Fat (preserved with Mixed Tocopherols and Citric Acid), Lentils, Natural Flavour, Salmon Oil (preserved with Mixed Tocopherols and Citric Acid), Dried Tomato Pomace, Pea Fibre, Salt, Pumpkin, Cranberries, Blueberries, Choline Chloride, Chicory Root Extract, Dried Kelp, Dehydrated Alfalfa Meal, DL-Methionine, Dried Yeast, Taurine, Spinach, Blackberries, Ginger, Oregano, Yucca Schidigera Extract, Dandelion, Chamomile, Parsley, Marigold Extract (Tagetes erecta L.), Green Tea Extract, Rosemary Extract, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus casei Fermentation Product, Dried Bifidobacterium bifidum Fermentation Product, Dried Enterococcus faecium Fermentation Product, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Calcium Carbonate, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 37.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.1,
+        "taurine_min": 0.2,
+        "omega_6_min": 2.4,
+        "omega_3_min": 0.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "410 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-ultra-grain-free-original-recipe-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Ultra Grain-Free Original Recipe Large Breed Adult Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-ultra-grain-free-original-recipe-large-breed-adult-dog-food/FCM06333",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Ultra",
+      "ingredients_raw": "Turkey, Turkey Meal, Chickpeas, Dried Potato, Lentils, Peas, Tapioca, Salmon Meal, Potato Protein, Chicken Fat (preserved with Mixed Tocopherols and Citric Acid), Spray Dried Egg Product, Duck Meal, Natural Flavour, Dried Tomato Pomace, Flaxseed, Dried Apple Pomace, Salmon Oil (preserved with Mixed Tocopherols and Citric Acid), Sweet Potato, Broccoli, Pumpkin, Carrots, Salt, Kale, Chicory Root Extract, Dried Kelp, Choline Chloride, Taurine, Apples, Blueberries, Cranberries, DL-Methionine, Dried Yeast, Glucosamine Hydrochloride, Chondroitin Sulfate, New Zealand Green Mussel, Parsley, Turmeric, Cinnamon, L-Carnitine, Yucca Schidigera Extract, Fennel, Green Tea Extract, Garlic, Rosemary Extract, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus casei Fermentation Product, Dried Bifidobacterium bifidum Fermentation Product, Dried Enterococcus faecium Fermentation Product, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Calcium Carbonate, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 5.5,
+        "moisture_max": 10.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.75,
+        "taurine_min": 0.2,
+        "omega_6_min": 1.75,
+        "omega_3_min": 0.75
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "363 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-ultra-grain-free-original-recipe-large-breed-adult-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Ultra Grain-Free Original Recipe Large Breed Puppy Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-ultra-grain-free-original-recipe-large-breed-puppy-dog-food/FCM06334",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Ultra",
+      "ingredients_raw": "Turkey, Turkey Meal, Lentils, Peas, Salmon Meal, Dried Potato, Chickpeas, Tapioca, Chicken Fat (preserved with Mixed Tocopherols and Citric Acid), Duck Meal, Spray Dried Egg Product, Potato Protein, Natural Flavour, Dried Tomato Pomace, Flaxseed, Dried Apple Pomace, Dried Whey Protein Concentrate, Salmon Oil (preserved with Mixed Tocopherols and Citric Acid), Sweet Potato, Broccoli, Pumpkin, Carrots, Salt, Kale, Chicken Cartilage, Chicory Root Extract, Dried Kelp, Choline Chloride, Apples, Blueberries, Cranberries, Potassium Chloride, DL-Methionine, Dried Yeast, Taurine, Parsley, New Zealand Green Mussel, Turmeric, Cinnamon, L-Carnitine, Yucca Schidigera Extract, Fennel, Monocalcium Phosphate, Green Tea Extract, Garlic, Rosemary Extract, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus casei Fermentation Product, Dried Bifidobacterium bifidum Fermentation Product, Dried Enterococcus faecium Fermentation Product, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Calcium Carbonate, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.1,
+        "phosphorus_min": 0.9,
+        "taurine_min": 0.2,
+        "omega_6_min": 1.8,
+        "omega_3_min": 0.85
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "381 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-ultra-grain-free-original-recipe-large-breed-puppy-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Ultra Grain-Free Original Recipe Puppy Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-ultra-grain-free-original-recipe-puppy-dog-food/FCM06337",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Ultra",
+      "ingredients_raw": "Turkey, Turkey Meal, Peas, Salmon Meal, Duck Meal, Sweet Potato, Spray Dried Egg Product, Potato, Potato Protein, Chicken Fat (preserved with Mixed Tocopherols and Citric Acid), Lentils, Natural Flavour, Salmon Oil (preserved with Mixed Tocopherols and Citric Acid), Dried Tomato Pomace, Pea Fibre, Salt, Pumpkin, Cranberries, Blueberries, Choline Chloride, Chicory Root Extract, Dried Kelp, Dehydrated Alfalfa Meal, DL-Methionine, Dried Yeast, Taurine, Spinach, Blackberries, Ginger, Oregano, Yucca Schidigera Extract, Dandelion, Chamomile, Parsley, Marigold Extract (Tagetes erecta L.), Green Tea Extract, Rosemary Extract, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus casei Fermentation Product, Dried Bifidobacterium bifidum Fermentation Product, Dried Enterococcus faecium Fermentation Product, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Calcium Carbonate, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 37.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.1,
+        "taurine_min": 0.2,
+        "omega_6_min": 2.4,
+        "omega_3_min": 0.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "410 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-ultra-grain-free-original-recipe-puppy-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Ultra Grain-Free Original Recipe Small Bite Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-ultra-grain-free-original-recipe-small-bite-dog-food/FCM06338",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Ultra",
+      "ingredients_raw": "Turkey, Turkey Meal, Peas, Salmon Meal, Duck Meal, Sweet Potato, Spray Dried Egg Product, Potato, Potato Protein, Chicken Fat (preserved with Mixed Tocopherols and Citric Acid), Lentils, Natural Flavour, Salmon Oil (preserved with Mixed Tocopherols and Citric Acid), Dried Tomato Pomace, Pea Fibre, Salt, Pumpkin, Cranberries, Blueberries, Choline Chloride, Chicory Root Extract, Dried Kelp, Dehydrated Alfalfa Meal, DL-Methionine, Dried Yeast, Taurine, Spinach, Blackberries, Ginger, Oregano, Yucca Schidigera Extract, Dandelion, Chamomile, Parsley, Marigold Extract (Tagetes erecta L.), Green Tea Extract, Rosemary Extract, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus casei Fermentation Product, Dried Bifidobacterium bifidum Fermentation Product, Dried Enterococcus faecium Fermentation Product, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Calcium Carbonate, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 37.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.1,
+        "taurine_min": 0.2,
+        "omega_6_min": 2.4,
+        "omega_3_min": 0.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "439 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-ultra-grain-free-original-recipe-small-bite-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Ultra Grain-Free Prairie Recipe Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-ultra-grain-free-prairie-recipe-dog-food/FCM06339",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Ultra",
+      "ingredients_raw": "Lamb, Duck Meal, Lentils, Lamb Meal, Peas, Pea Protein, Chickpeas, Canola Oil (preserved with Mixed Tocopherols and Citric Acid), Tapioca Starch, Dried Peas, Herring Meal, Dehydrated Alfalfa Meal, Salmon Oil (preserved with Mixed Tocopherols and Citric Acid), Natural Flavour, Flaxseed, Pea Fibre, Salt, Chicory Root Extract, Dried Kelp, Choline Chloride, Taurine, Dried Yeast, Dried Carrots, Dried Sweet Potato, Dried Apples, Dried Blueberries, Dried Cranberries, Ginger, Oregano, Yucca Schidigera Extract, Dandelion, Parsley, Chamomile, Rosemary Extract, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus casei Fermentation Product, Dried Bifidobacterium bifidum Fermentation Product, Dried Enterococcus faecium Fermentation Product, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Calcium Carbonate, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 32.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "dha_min": 0.1,
+        "taurine_min": 0.2,
+        "omega_6_min": 2.6,
+        "omega_3_min": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "397 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-ultra-grain-free-prairie-recipe-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Ultra Grain-Free Senior Recipe Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-ultra-grain-free-senior-recipe-dog-food/FCM06340",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Ultra",
+      "ingredients_raw": "Turkey (source of Glucosamine and Chondroitin Sulfate), Lentils, Peas, Dried Potato, Chickpeas, Tapioca, Duck Meal, Potato Protein, Chicken Fat (preserved with Mixed Tocopherols and Citric Acid), Chicken, Natural Flavour, Salmon Oil (preserved with Mixed Tocopherols and Citric Acid), Dried Tomato Pomace, Broccoli, Pumpkin, Flaxseed, Vitamin E Supplement, Kale, Dried Marine Microalgae, DL-Methionine, Chicory Root Extract, Dried Kelp, Choline Chloride, Taurine, Apples, Blueberries, Cranberries, Dried Yeast, New Zealand Green Mussel, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Parsley, Turmeric, Cinnamon, Yucca Schidigera Extract, L-Carnitine, Fennel Seed, Green Tea Extract, Garlic, Rosemary Extract, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus casei Fermentation Product, Dried Bifidobacterium bifidum Fermentation Product, Dried Enterococcus faecium Fermentation Product, Vitamins (Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Calcium Carbonate, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 23.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 6.0,
+        "moisture_max": 10.0,
+        "calcium_min": 0.55,
+        "phosphorus_min": 0.45,
+        "phosphorus_max": 0.55,
+        "taurine_min": 0.2,
+        "omega_6_min": 2.0,
+        "omega_3_min": 0.55
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "397 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-ultra-grain-free-senior-recipe-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Ultra Grain-Free Senior Recipe Small Bite Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-ultra-grain-free-senior-recipe-small-bite-dog-food/FCM06341",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Ultra",
+      "ingredients_raw": "Turkey (source of Glucosamine and Chondroitin Sulfate), Lentils, Peas, Dried Potato, Chickpeas, Tapioca, Duck Meal, Potato Protein, Chicken Fat (preserved with Mixed Tocopherols and Citric Acid), Chicken, Natural Flavour, Salmon Oil (preserved with Mixed Tocopherols and Citric Acid), Dried Tomato Pomace, Broccoli, Pumpkin, Flaxseed, Vitamin E Supplement, Kale, Dried Marine Microalgae, DL-Methionine, Chicory Root Extract, Dried Kelp, Choline Chloride, Taurine, Apples, Blueberries, Cranberries, Dried Yeast, New Zealand Green Mussel, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Parsley, Turmeric, Cinnamon, Yucca Schidigera Extract, L-Carnitine, Fennel Seed, Green Tea Extract, Garlic, Rosemary Extract, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus casei Fermentation Product, Dried Bifidobacterium bifidum Fermentation Product, Dried Enterococcus faecium Fermentation Product, Vitamins (Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Calcium Carbonate, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 23.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 6.0,
+        "moisture_max": 10.0,
+        "calcium_min": 0.55,
+        "phosphorus_min": 0.45,
+        "phosphorus_max": 0.55,
+        "taurine_min": 0.2,
+        "omega_6_min": 2.0,
+        "omega_3_min": 0.55
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "433 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-ultra-grain-free-senior-recipe-small-bite-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Ultra Grain-Free Venison Stew Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-ultra-grain-free-venison-stew-dog-food/FCM06731",
+      "channel": "retail",
+      "product_type": "wet",
+      "sub_brand": "Performatrin Ultra",
+      "ingredients_raw": "Venison Broth, Venison, Venison Liver, Pork, Potatoes, Dried Egg Whites, Green Beans, Peas, Potato Starch, Carrots, Dried Egg Product, Red Peppers, Sunflower Oil, Guar Gum, Pea Fiber, Salt, Natural flavour, Fish Oil (Preserved With Mixed Tocopherols), Brewers Dried Yeast, Potassium Chloride, Sodium Phosphate, Parsley, Magnesium Sulfate, Sodium Carbonate, Choline Chloride, Inulin, Oregano, Rosemary, Zinc Proteinate, Iron Proteinate, Cranberries, Apples, Blueberries, Yucca Schidigera Extract, Vitamin E Supplement, Copper Proteinate, Cobalt Proteinate, Manganese Proteinate, Sodium Selenite, Thiamine Mononitrate, Niacin Supplement, D-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Potassium Iodide, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 3.5,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "304 kcal/can",
+      "images": [
+        "/products/performatrin/performatrin-wet-performatrin-ultra-grain-free-venison-stew-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Ultra Limited Ingredient Chicken & Sweet Potato Pate Adult Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-ultra-limited-ingredient-chicken-sweet-potato-pate-adult-dog-food/FCM06736",
+      "channel": "retail",
+      "product_type": "wet",
+      "sub_brand": "Performatrin Ultra",
+      "ingredients_raw": "Chicken, Chicken Broth, Potato Protein, Sweet Potatoes, Sodium Tripolyphosphate, Guar Gum, Potassium Chloride, Salt, Calcium Carbonate, Choline Chloride, Magnesium Proteinate, Cassia Gum, Xanthan Gum, Pea Fiber, Zinc Proteinate, L-Ascorbyl-2-Polyphosphate (Source Of Vitamin C), Vitamin E Supplement, Ferrous Sulfate, Zinc Sulfate, Iron Proteinate, Copper Proteinate, Thiamine Mononitrate, Vitamin A Supplement, Niacin Supplement, D-Calcium Pantothenate, Manganese Sulfate, Riboflavin Supplement, Sodium Selenite, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Vitamin B12, Calcium Iodate, Folic Acid.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 7.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1097 kcal/kg, 410 kcal/can",
+      "images": [
+        "/products/performatrin/performatrin-wet-performatrin-ultra-limited-ingredient-chicken-sweet-potato-pate-adult-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Ultra Limited Ingredient Fish & Sweet Potato Pate Adult Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-ultra-limited-ingredient-fish-sweet-potato-pate-adult-dog-food/FCM06743",
+      "channel": "retail",
+      "product_type": "wet",
+      "sub_brand": "Performatrin Ultra",
+      "ingredients_raw": "Fish Broth, Fish, Potato Protein, Salmon Oil, Sweet Potato, Guar Gum, Dicalcium Phosphate, Salt, Choline Chloride, Magnesium Proteinate, Potassium Chloride, Xanthan Gum, Cassia Gum, Calcium Carbonate, Pea Fiber, Zinc Proteinate, L-Ascorbyl-2-Polyphosphate (Source Of Vitamin C), Vitamin E Supplement, Ferrous Sulfate, Zinc Sulfate, Iron Proteinate, Copper Proteinate, Thiamine Mononitrate, Vitamin A Supplement, Niacin Supplement, D-Calcium Pantothenate, Manganese Sulfate, Riboflavin Supplement, Sodium Selenite, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Vitamin B12 Supplement, Calcium Iodate, Folic Acid.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 10.0,
+        "crude_fat_min": 7.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1184 kcal/kg, 443 kcal/can",
+      "images": [
+        "/products/performatrin/performatrin-wet-performatrin-ultra-limited-ingredient-fish-sweet-potato-pate-adult-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Ultra Limited Ingredient Kangaroo Recipe Adult Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-ultra-limited-ingredient-kangaroo-recipe-adult-dog-food/FCM07083",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Ultra",
+      "ingredients_raw": "Kangaroo, Peas, Chickpeas, Dried Peas, Lentils, Kangaroo Meal, Pea Protein, Canola Oil (preserve with Mixed Tocopherols and Citric Acid), Dehydrated Alfalfa Meal, Flaxseeds, Coconut Oil, Natural Flavor, Salt, Marine Microalgae Oil, DL-Methionine, Choline Chloride, Taurine, Yucca Schidigera Extract, Rosemary Extract, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Calcium Carbonate, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 5.5,
+        "moisture_max": 10.0,
+        "dha_min": 0.05,
+        "taurine_min": 0.2,
+        "omega_6_min": 1.7,
+        "omega_3_min": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3460 kcal/kg, 388 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-ultra-limited-ingredient-kangaroo-recipe-adult-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Ultra Limited Ingredient Kangaroo Recipe Small Bite Adult Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-ultra-limited-ingredient-kangaroo-recipe-small-bite-adult-dog-food/FCM08623",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Ultra",
+      "ingredients_raw": "Kangaroo, Peas, Chickpeas, Dried Peas, Lentils, Kangaroo Meal, Pea Protein, Canola Oil (Preserve With Mixed Tocopherols And Citric Acid), Dehydrated Alfalfa Meal, Flaxseeds, Coconut Oil, Natural Flavour, Salt, Marine Microalgae Oil, DL-Methionine, Choline Chloride, Taurine, Yucca Schidigera Extract, Rosemary Extract, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [Source Of Vitamin C], Niacin Supplement, D-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Calcium Carbonate, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 5.5,
+        "moisture_max": 10.0,
+        "dha_min": 0.05,
+        "taurine_min": 0.2,
+        "omega_6_min": 1.7,
+        "omega_3_min": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3460 kcal/kg, 415 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-ultra-limited-ingredient-kangaroo-recipe-small-bite-adult-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Ultra Limited Ingredient Potato & Duck Recipe Adult Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-ultra-limited-ingredient-potato-duck-recipe-adult-dog-food/FCM06344",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Ultra",
+      "ingredients_raw": "Potato, Duck, Duck Meal, Potato Protein, Canola Oil (preserved with Mixed Tocopherols and Citric Acid), Natural Flavour, Dried Apple Pomace, Salt, Dried Marine Microalgae, Chicory Root Extract, DL-Methionine, Taurine, Choline Chloride, Yucca Schidigera Extract, Rosemary Extract, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Calcium Carbonate, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.05,
+        "taurine_min": 0.2,
+        "omega_6_min": 2.25,
+        "omega_3_min": 0.7
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "417 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-ultra-limited-ingredient-potato-duck-recipe-adult-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Ultra Limited Ingredient Potato & Salmon Recipe Adult Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-ultra-limited-ingredient-potato-salmon-recipe-adult-dog-food/FCM06346",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Ultra",
+      "ingredients_raw": "Potato, Salmon, Salmon Meal, Potato Protein, Canola Oil (preserved with Mixed Tocopherols and Citric Acid), Coconut Oil, Dried Apple Pomace, Natural Flavour, Salt, Choline Chloride, DL-Methionine, Chicory Root Extract, Yucca Schidigera Extract, Taurine, Rosemary Extract, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Calcium Carbonate, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 27.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.2,
+        "taurine_min": 0.2,
+        "omega_6_min": 2.1,
+        "omega_3_min": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "415 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-ultra-limited-ingredient-potato-salmon-recipe-adult-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Ultra Limited Ingredient Potato & Turkey Recipe Adult Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-ultra-limited-ingredient-potato-turkey-recipe-adult-dog-food/FCM06347",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Ultra",
+      "ingredients_raw": "Potato, Turkey, Turkey Meal, Canola Oil (preserved with Mixed Tocopherols and Citric Acid), Potato Protein, Natural Flavour, Dried Apple Pomace, Salt, Dried Marine Microalgae, DL-Methionine, Choline Chloride, Chicory Root Extract, Taurine, Yucca Schidigera Extract, Rosemary Extract, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Calcium Carbonate, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 27.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.05,
+        "taurine_min": 0.2,
+        "omega_6_min": 2.75,
+        "omega_3_min": 0.65
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "410 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-ultra-limited-ingredient-potato-turkey-recipe-adult-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Ultra Limited Ingredient Sweet Potato & Chicken Recipe Adult Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-ultra-limited-ingredient-sweet-potato-chicken-recipe-adult-dog-food/FCM06348",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Ultra",
+      "ingredients_raw": "Sweet Potato, Chicken, Chicken Meal, Peas, Chicken Fat (preserved with Mixed Tocopherols and Citric Acid), Natural Flavour, Pea Fibre, Flaxseed, Salmon Oil (preserved with Mixed Tocopherols and Citric Acid), Salt, DL-Methionine, Choline Chloride, Taurine, Yucca Schidigera Extract, Rosemary Extract, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Calcium Carbonate, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "dha_min": 0.05,
+        "taurine_min": 0.2,
+        "omega_6_min": 1.75,
+        "omega_3_min": 0.65
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "399 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-ultra-limited-ingredient-sweet-potato-chicken-recipe-adult-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Ultra Limited Ingredient Sweet Potato & Fish Recipe Adult Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-ultra-limited-ingredient-sweet-potato-fish-recipe-adult-dog-food/FCM06349",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Ultra",
+      "ingredients_raw": "Sweet Potato, Salmon, Salmon Meal, Dried Potato, Canola Oil (preserved with Mixed Tocopherols and Citric Acid), Natural Flavour, Flaxseed, Salmon Oil (preserved with Mixed Tocopherols and Citric Acid), Salt, Choline Chloride, DL-Methionine, Yucca Schidigera Extract, Taurine, Rosemary Extract, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Calcium Carbonate, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 23.0,
+        "crude_fat_min": 11.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.2,
+        "taurine_min": 0.2,
+        "omega_6_min": 1.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "388 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-ultra-limited-ingredient-sweet-potato-fish-recipe-adult-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Ultra Limited Ingredient Sweet Potato & Fish Recipe Small Bite Adult Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-ultra-limited-ingredient-sweet-potato-fish-recipe-small-bite-adult-dog-food/FCM06350",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Ultra",
+      "ingredients_raw": "Sweet Potato, Salmon, Salmon Meal, Dried Potato, Canola Oil (preserved with Mixed Tocopherols and Citric Acid), Natural Flavour, Flaxseed, Salmon Oil (preserved with Mixed Tocopherols and Citric Acid), Salt, Choline Chloride, DL-Methionine, Yucca Schidigera Extract, Taurine, Rosemary Extract, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Calcium Carbonate, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 23.0,
+        "crude_fat_min": 11.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.2,
+        "taurine_min": 0.2,
+        "omega_6_min": 1.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "415 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-ultra-limited-ingredient-sweet-potato-fish-recipe-small-bite-adult.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Ultra Limited Ingredient Sweet Potato & Venison Recipe Adult Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-ultra-limited-ingredient-sweet-potato-venison-recipe-adult-dog-food/FCM06351",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Ultra",
+      "ingredients_raw": "Sweet Potato, Venison, Peas, Pea Starch, Potato Protein, Pea Protein, Dried Peas, Venison Meal, Canola Oil (preserved with Mixed Tocopherols and Citric Acid), Coconut Oil, Flaxseed, Natural Flavour, Pea Fibre, Salt, Choline Chloride, DL-Methionine, Monocalcium Phosphate, Calcium Carbonate, Marine Microalgae Oil, Taurine, Yucca Schidigera Extract, Rosemary Extract, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 21.0,
+        "crude_fat_min": 11.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "dha_min": 0.05,
+        "taurine_min": 0.2,
+        "omega_6_min": 1.0,
+        "omega_3_min": 0.75
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "380 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-ultra-limited-ingredient-sweet-potato-venison-recipe-adult-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Ultra Limited Ingredient Turkey & Potato Pate Adult Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-ultra-limited-ingredient-turkey-potato-pate-adult-dog-food/FCM06738",
+      "channel": "retail",
+      "product_type": "wet",
+      "sub_brand": "Performatrin Ultra",
+      "ingredients_raw": "Turkey, Turkey Broth, Potato Protein, Potatoes, Guar Gum, Potassium Chloride, Salt, Choline Chloride, Magnesium Proteinate, Cassia Gum, Xanthan Gum, Pea Fiber, Calcium Carbonate, Zinc Proteinate, L-Ascorbyl-2-Polyphosphate (Source Of Vitamin C), Vitamin E Supplement, Ferrous Sulfate, Zinc Sulfate, Iron Proteinate, Copper Proteinate, Thiamine Mononitrate, Vitamin A Supplement, Niacin Supplement, D-Calcium Pantothenate, Manganese Sulfate, Manganese Proteinate, Riboflavin Supplement, Sodium Selenite, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Vitamin B12 Supplement, Calcium Iodate, Folic Acid.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 6.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1018 kcal/kg, 381 kcal/can",
+      "images": [
+        "/products/performatrin/performatrin-wet-performatrin-ultra-limited-ingredient-turkey-potato-pate-adult-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Ultra Limited Ingredient Venison & Sweet Potato Pate Adult Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-ultra-limited-ingredient-venison-sweet-potato-pate-adult-dog-food/FCM06742",
+      "channel": "retail",
+      "product_type": "wet",
+      "sub_brand": "Performatrin Ultra",
+      "ingredients_raw": "Venison Broth, Venison, Potato Protein, Sweet Potato, Canola Oil, Potatoes, Dicalcium Phosphate, Guar Gum, Calcium Carbonate, Salt, Choline Chloride, Cassia Gum, Xanthan Gum, Pea Fiber, Potassium Chloride, Zinc Proteinate, L-Ascorbyl-2-Polyphosphate (Source Of Vitamin C), Vitamin E Supplement, Ferrous Sulfate, Zinc Sulfate, Iron Proteinate, Copper Proteinate, Thiamine Mononitrate, Vitamin A Supplement, Niacin Supplement, D-Calcium Pantothenate, Manganese Sulfate, Manganese Proteinate, Riboflavin Supplement, Sodium Selenite, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Vitamin B12, Calcium Iodate, Folic Acid.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 10.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1094 kcal/kg, 409 kcal/can",
+      "images": [
+        "/products/performatrin/performatrin-wet-performatrin-ultra-limited-ingredient-venison-sweet-potato-pate-adult-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Ultra Petite Bowls Chicken Stew Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-ultra-petite-bowls-chicken-stew-dog-food/FCM06721",
+      "channel": "retail",
+      "product_type": "wet",
+      "sub_brand": "Performatrin Ultra",
+      "ingredients_raw": "Chicken Broth, Chicken, Chicken Liver, Dried Egg White, Potatoes, Carrots, Potato Starch, Green Beans, Peas, Chicken Heart, Natural flavour, Red Peppers, Pea Fiber, Guar Gum, Salt, Brewers Dried Yeast, Sodium Phosphate, Flaxseed Oil, Sunflower Oil, Potassium Chloride, Parsley, Sodium Carbonate, Choline Chloride, Inulin, Dried Kelp, Oregano, Rosemary, Zinc Proteinate, Magnesium Sulfate, Iron Proteinate, Fish Oil (Preserved With Mixed Tocopherols), Cranberries, Apples, Blueberries, Xanthan Gum, Yucca Schidigera Extract, Vitamin E Supplement, Copper Proteinate, Cobalt Proteinate, Manganese Proteinate, Sodium Selenite, Thiamine Mononitrate, Niacin Supplement, D-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Potassium Iodide, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "86 kcal/can",
+      "images": [
+        "/products/performatrin/performatrin-wet-performatrin-ultra-petite-bowls-chicken-stew-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Ultra Petite Bowls Turkey Stew Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-ultra-petite-bowls-turkey-stew-dog-food/FCM06720",
+      "channel": "retail",
+      "product_type": "wet",
+      "sub_brand": "Performatrin Ultra",
+      "ingredients_raw": "Turkey Broth, Turkey, Turkey Liver, Dried Egg White, Potatoes, Carrots, Potato Starch, Green Beans, Peas, Turkey Heart, Natural flavour, Red Peppers, Guar Gum, Salt, Pea Fiber, Brewers Dried Yeast, Sodium Phosphate, Potassium Chloride, Parsley, Flaxseed Oil, Sodium Carbonate, Choline Chloride, Inulin, Dried Kelp, Fish Oil (Preserved With Mixed Tocopherols), Oregano, Rosemary, Zinc Proteinate, Magnesium Sulfate, Iron Proteinate, Dicalcium Phosphate, Sunflower Oil, Cranberries, Apples, Blueberries, Xanthan Gum, Yucca Schidigera Extract, Vitamin E Supplement, Copper Proteinate, Cobalt Proteinate, Manganese Proteinate, Sodium Selenite, Thiamine Mononitrate, Niacin Supplement, D-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Potassium Iodide, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "83 kcal/can",
+      "images": [
+        "/products/performatrin/performatrin-wet-performatrin-ultra-petite-bowls-turkey-stew-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Ultra Wholesome Grains Chicken & Brown Rice Recipe Adult Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-ultra-wholesome-grains-chicken-brown-rice-recipe-adult-dog-food/FCM06323",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Ultra",
+      "ingredients_raw": "Chicken, Chicken Meal, Brown Rice, Oatmeal, Rice, Pearled Barley, Spray Dried Egg Product, Salmon Meal, Millet, Rye, Dried Tomato Pomace, Chicken Fat (preserved with Mixed Tocopherols and Citric Acid), Natural Flavour, Salmon Oil (preserved with Mixed Tocopherols and Citric Acid), Dehydrated Alfalfa Meal, Peas, Potassium Chloride, Salt, Flaxseed, Sweet Potatoes, Carrots, Cranberries, Chicory Root Extract, Dried Kelp, Choline Chloride, DL-Methionine, Taurine, Apples, Blueberries, Pumpkin, Dried Yeast, Blackberries, Spinach, Ginger, Oregano, Yucca Schidigera Extract, Dandelion, Parsley, Chamomile, Garlic, Rosemary Extract, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus casei Fermentation Product, Dried Bifidobacterium bifidum Fermentation Product, Dried Enterococcus faecium Fermentation Product, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Calcium Carbonate, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 22.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.7,
+        "taurine_min": 0.15,
+        "omega_6_min": 1.5,
+        "omega_3_min": 0.35
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "387 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-ultra-wholesome-grains-chicken-brown-rice-recipe-adult-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Ultra Wholesome Grains Chicken & Brown Rice Recipe Puppy Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-ultra-wholesome-grains-chicken-brown-rice-recipe-puppy-dog-food/FCM06352",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Ultra",
+      "ingredients_raw": "Chicken, Chicken Meal, Brown Rice, Oatmeal, Salmon Meal, Spray Dried Egg Product, Rice, Pearled Barley, Chicken Fat (preserved with Mixed Tocopherols and Citric Acid), Dried Tomato Pomace, Millet, Natural Flavour, Salmon Oil (preserved with Mixed Tocopherols and Citric Acid), Dehydrated Alfalfa Meal, Peas, Dried Skim Milk, Salt, Potassium Chloride, Sweet Potatoes, Carrots, Cranberries, Monocalcium Phosphate, Flaxseed, Chicory Root Extract, Dried Kelp, Choline Chloride, Pumpkin, Apples, Blueberries, DL-Methionine, Dried Yeast, Taurine, Blackberries, Spinach, Ginger, Oregano, Yucca Schidigera Extract, Dandelion, Parsley, Chamomile, Garlic, Rosemary Extract, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus casei Fermentation Product, Dried Bifidobacterium bifidum Fermentation Product, Dried Enterococcus faecium Fermentation Product, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.1,
+        "calcium_min": 1.2,
+        "phosphorus_min": 0.9,
+        "taurine_min": 0.15,
+        "omega_6_min": 2.0,
+        "omega_3_min": 0.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3770 kcal/kg, 415 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-ultra-wholesome-grains-chicken-brown-rice-recipe-puppy-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Ultra Wholesome Grains Chicken & Brown Rice Recipe Small Bite Adult Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-ultra-wholesome-grains-chicken-brown-rice-recipe-small-bite-adult-dog-food/FCM06324",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Ultra",
+      "ingredients_raw": "Chicken, Chicken Meal, Brown Rice, Oatmeal, Rice, Pearled Barley, Spray Dried Egg Product, Salmon Meal, Millet, Rye, Dried Tomato Pomace, Chicken Fat (preserved with Mixed Tocopherols and Citric Acid), Natural Flavour, Salmon Oil (preserved with Mixed Tocopherols and Citric Acid), Dehydrated Alfalfa Meal, Peas, Potassium Chloride, Salt, Flaxseed, Sweet Potatoes, Carrots, Cranberries, Chicory Root Extract, Dried Kelp, Choline Chloride, DL-Methionine, Taurine, Apples, Blueberries, Pumpkin, Dried Yeast, Blackberries, Spinach, Ginger, Oregano, Yucca Schidigera Extract, Dandelion, Parsley, Chamomile, Garlic, Rosemary Extract, Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus casei Fermentation Product, Dried Bifidobacterium bifidum Fermentation Product, Dried Enterococcus faecium Fermentation Product, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Calcium Carbonate, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 22.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.7,
+        "taurine_min": 0.15,
+        "omega_6_min": 1.5,
+        "omega_3_min": 0.35
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "415 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-ultra-wholesome-grains-chicken-brown-rice-recipe-small-bite-adult-d.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Ultra Wholesome Grains Healthy Weight Recipe with Salmon Adult Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-ultra-wholesome-grains-healthy-weight-recipe-with-salmon-adult-dog-food/FCM06342",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Ultra",
+      "ingredients_raw": "Salmon, Salmon Meal (source of Glucosamine and Chondroitin Sulfate), Brown Rice, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Oatmeal, Rice, Pearled Barley, Peas, Spray Dried Egg Product, Pea Protein, Dried Tomato Pomace, Natural Flavour, Pea Fibre, Dehydrated Alfalfa Meal, Chicken Fat (preserved with Mixed Tocopherols and Citric Acid), Dried Whey Protein Concentrate, Olive Oil (preserved with Mixed Tocopherols and Citric Acid), Salt, Sweet Potatoes, Carrots, Pumpkin, Cranberries, Chicken Cartilage (source of Chondroitin Sulfate), L-Leucine, Chicory Root Extract, Dried Kelp, Choline Chloride, Apples, Blueberries, Flaxseed, DL-Methionine, Dried Yeast, Taurine, Blackberries, Spinach, L-Carnitine, Ginger, Oregano, Yucca Schidigera Extract, Dandelion, Parsley, Chamomile, Green Tea Extract, Garlic, Rosemary Extract, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus casei Fermentation Product, Dried Bifidobacterium bifidum Fermentation Product, Dried Enterococcus faecium Fermentation Product, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Calcium Carbonate, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.0,
+        "crude_fat_min": 8.0,
+        "crude_fiber_max": 6.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8,
+        "taurine_min": 0.15,
+        "omega_6_min": 1.0,
+        "omega_3_min": 0.25
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "362 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-ultra-wholesome-grains-healthy-weight-recipe-with-salmon-adult-dog.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Ultra Wholesome Grains Healthy Weight Recipe with Salmon Small Bite Adult Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-ultra-wholesome-grains-healthy-weight-recipe-with-salmon-small-bite-adult-dog-food/FCM06343",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Ultra",
+      "ingredients_raw": "Salmon, Salmon Meal (source of Glucosamine and Chondroitin Sulfate), Brown Rice, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Oatmeal, Rice, Pearled Barley, Peas, Spray Dried Egg Product, Pea Protein, Dried Tomato Pomace, Natural Flavour, Pea Fibre, Dehydrated Alfalfa Meal, Chicken Fat (preserved with Mixed Tocopherols and Citric Acid), Dried Whey Protein Concentrate, Olive Oil (preserved with Mixed Tocopherols and Citric Acid), Salt, Sweet Potatoes, Carrots, Pumpkin, Cranberries, Chicken Cartilage (source of Chondroitin Sulfate), L-Leucine, Chicory Root Extract, Dried Kelp, Choline Chloride, Apples, Blueberries, Flaxseed, DL-Methionine, Dried Yeast, Taurine, Blackberries, Spinach, L-Carnitine, Ginger, Oregano, Yucca Schidigera Extract, Dandelion, Parsley, Chamomile, Green Tea Extract, Garlic, Rosemary Extract, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus casei Fermentation Product, Dried Bifidobacterium bifidum Fermentation Product, Dried Enterococcus faecium Fermentation Product, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Calcium Carbonate, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.0,
+        "crude_fat_min": 8.0,
+        "crude_fiber_max": 6.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8,
+        "taurine_min": 0.15,
+        "omega_6_min": 1.0,
+        "omega_3_min": 0.25
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "395 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-ultra-wholesome-grains-healthy-weight-recipe-with-salmon-small-bite.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Ultra Wholesome Grains Lamb & Beef Pate Adult Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-ultra-wholesome-grains-lamb-beef-pate-adult-dog-food/FCM06776",
+      "channel": "retail",
+      "product_type": "wet",
+      "sub_brand": "Performatrin Ultra",
+      "ingredients_raw": "Lamb, Beef, Lamb Broth, Beef Broth, Beef Liver, Peas, Carrots, Brown Rice Flour, Sweet Potatoes, Oatmeal, Barley, Ground Flaxseed, Guar Gum, Cassia Gum, Xanthan Gum, Sunflower Oil, Potassium Chloride, Salt, Blueberries, Cranberries, Minerals (Zinc Proteinate, Iron Proteinate, Copper Proteinate, Cobalt Proteinate, Manganese Proteinate, Sodium Selenite, Potassium Iodide), Vitamins (Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, D-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement,Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, FolicAcid), Choline Chloride, Magnesium Sulfate.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.5,
+        "crude_fat_min": 6.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "480 kcal/can",
+      "images": [
+        "/products/performatrin/performatrin-wet-performatrin-ultra-wholesome-grains-lamb-beef-pate-adult-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Ultra Wholesome Grains Lamb & Beef Stew Adult Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-ultra-wholesome-grains-lamb-beef-stew-adult-dog-food/FCM06775",
+      "channel": "retail",
+      "product_type": "wet",
+      "sub_brand": "Performatrin Ultra",
+      "ingredients_raw": "Lamb, Lamb Broth, Beef Broth, Beef Liver, Beef, Dried Egg Product, Peas, Potato Starch, Sweet Potatoes, Natural Flavors, Rice, Guar Gum, Red Peppers, Sunflower Oil, Salt, Brewers Dried Yeast, Sodium Phosphate, Potassium Chloride, Blueberries, Cranberries, Minerals (Zinc Proteinate, Iron Proteinate, Copper Proteinate, Cobalt Proteinate, Manganese Proteinate, Sodium Selenite, Potassium Iodide), Inulin, Garlic, Vitamins (Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, D-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Calcium Carbonate, Rosemary, Magnesium Sulfate, Fish Oil (Preserved With MixedTocopherols).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.5,
+        "crude_fat_min": 6.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "416 kcal/can",
+      "images": [
+        "/products/performatrin/performatrin-wet-performatrin-ultra-wholesome-grains-lamb-beef-stew-adult-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Ultra Wholesome Grains Lamb & Brown Rice Recipe Adult Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-ultra-wholesome-grains-lamb-brown-rice-recipe-adult-dog-food/FCM06325",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Ultra",
+      "ingredients_raw": "Lamb, Lamb Meal, Brown Rice, Oatmeal, Rice, Pearled Barley, Spray Dried Egg Product, Millet, Salmon Meal, Dried Tomato Pomace, Natural Flavour, Rye, Canola Oil (preserved with Mixed Tocopherols and Citric Acid), Dehydrated Alfalfa Meal, Salmon Oil (preserved with Mixed Tocopherols and Citric Acid), Peas, Potassium Chloride, Salt, Sweet Potatoes, Carrots, Cranberries, Chicory Root Extract, Dried Kelp, Flaxseed, Choline Chloride, DL-Methionine, Taurine, Apples, Blueberries, Pumpkin, Dried Yeast, Blackberries, Spinach, Ginger, Oregano, Yucca Schidigera Extract, Dandelion, Parsley, Chamomile, Garlic, Rosemary Extract, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus casei Fermentation Product, Dried Bifidobacterium bifidum Fermentation Product, Dried Enterococcus faecium Fermentation Product, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Calcium Carbonate, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 22.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8,
+        "taurine_min": 0.15,
+        "omega_6_min": 1.0,
+        "omega_3_min": 0.35
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "379 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-ultra-wholesome-grains-lamb-brown-rice-recipe-adult-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Ultra Wholesome Grains Lamb & Brown Rice Recipe Puppy Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-ultra-wholesome-grains-lamb-brown-rice-recipe-puppy-dog-food/FCM06353",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Ultra",
+      "ingredients_raw": "Lamb, Lamb Meal, Brown Rice, Oatmeal, Salmon Meal, Rice, Spray Dried Egg Product, Pearled Barley, Whitefish Meal, Canola Oil (preserved with Mixed Tocopherols and Citric Acid), Dried Tomato Pomace, Natural Flavour, Dehydrated Alfalfa Meal, Salmon Oil (preserved with mixed Tocopherols and Citric Acid), Peas, Dried Skim Milk, Salt, Potassium Chloride, Sweet Potatoes, Carrots, Cranberries, Chicory Root Extract, Dried Kelp, Flaxseed, Choline Chloride, Apples, Blueberries, Pumpkin, DL- Methionine, Dried Yeast, Taurine, Blackberries, Spinach, Ginger, Oregano, Yucca Schidigera Extract, Dandelion, Parsley, Chamomile, Garlic, Rosemary Extract, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus Casei Fermentation Product, Dried Bifidobacterium bifidum Fermentation Product, Dried Enterococcus faecium Fermentation Product, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [Source of Vitamin C], Niacin Supplement, D-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Calcium Carbonate, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.1,
+        "calcium_min": 1.2,
+        "phosphorus_min": 0.9,
+        "omega_6_min": 2.0,
+        "omega_3_min": 0.75,
+        "taurine_min": 0.15
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "408 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-ultra-wholesome-grains-lamb-brown-rice-recipe-puppy-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Ultra Wholesome Grains Lamb & Brown Rice Recipe Small Bite Adult Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-ultra-wholesome-grains-lamb-brown-rice-recipe-small-bite-adult-dog-food/FCM06326",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Ultra",
+      "ingredients_raw": "Lamb, Lamb Meal, Brown Rice, Oatmeal, Rice, Pearled Barley, Spray Dried Egg Product, Millet, Salmon Meal, Dried Tomato Pomace, Natural Flavour, Rye, Canola Oil (preserved with Mixed Tocopherols and Citric Acid), Dehydrated Alfalfa Meal, Salmon Oil (preserved with Mixed Tocopherols and Citric Acid), Peas, Potassium Chloride, Salt, Sweet Potatoes, Carrots, Cranberries, Chicory Root Extract, Dried Kelp, Flaxseed, Choline Chloride, DL-Methionine, Taurine, Apples, Blueberries, Pumpkin, Dried Yeast, Blackberries, Spinach, Ginger, Oregano, Yucca Schidigera Extract, Dandelion, Parsley, Chamomile, Garlic, Rosemary Extract, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus casei Fermentation Product, Dried Bifidobacterium bifidum Fermentation Product, Dried Enterococcus faecium Fermentation Product, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Calcium Carbonate, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 22.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8,
+        "omega_6_min": 1.0,
+        "omega_3_min": 0.35,
+        "taurine_min": 0.15
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "407 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-ultra-wholesome-grains-lamb-brown-rice-recipe-small-bite-adult-dog.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Ultra Wholesome Grains Meadow Recipe Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-ultra-wholesome-grains-meadow-recipe-dog-food/FCM06327",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Ultra",
+      "ingredients_raw": "Lamb, Herring Meal, Oatmeal, Pearled Barley, Duck Meal, Millet, Rye, Spray Dried Egg Product, Canola Oil (preserved with Mixed Tocopherols and Citric Acid), Quinoa, Natural Flavour, Dried Tomato Pomace, Flaxseed, Dehydrated Alfalfa Meal, Salmon Oil (preserved with Mixed Tocopherols and Citric Acid), Potassium Chloride, Monocalcium Phosphate, Chicory Root Extract, Dried Kelp, Choline Chloride, DL-Methionine, Dried Yeast, Taurine, Dried Sweet Potato, Dried Carrots, Dried Apples, Dried Cranberries, Dried Blueberries, Salt, Ginger, Oregano, Yucca Schidigera Extract, Dandelion, Chamomile, Parsley, Garlic, Rosemary Extract, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus casei Fermentation Product, Dried Bifidobacterium bifidum Fermentation Product, Dried Enterococcus faecium Fermentation Product, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Calcium Carbonate, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.1,
+        "taurine_min": 0.15,
+        "omega_6_min": 1.8,
+        "omega_3_min": 0.8
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-ultra-wholesome-grains-meadow-recipe-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Ultra Wholesome Grains Plant Based Recipe Adult Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-ultra-wholesome-grains-plant-based-recipe-adult-dog-food/FCM08601",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Ultra",
+      "ingredients_raw": "Brown Rice, Oatmeal, Pearled Barley, Potato Protein, Millet, Canola Oil (Preserved With Mixed Tocopherols), Dried Tomato Pomace, Coconut Oil, Natural Vegetable Flavor, Monocalcium Phosphate, Dehydrated Alfalfa Meal, Dried Carrots, Dried Spinach, Calcium Carbonate, DL-Methionine, Dried Pumpkin, Dried Blueberries, Potassium Chloride, Marine Microalgae Oil, L-Lysine, L-Threonine, Chicory Root Extract, Dried Kelp, Salt, Choline Chloride, Taurine, Dried Yeast, Parsley, Ginger, Oregano, Turmeric, Cinnamon, Dandelion, Yucca Schidigera Extract, Chamomile, Fennel Seed, Green Tea Extract, Rosemary Extract, Vegan Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [Source Of Vitamin C], Niacin Supplement, D-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Calcium Carbonate, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_fat_min": 10.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 0.5,
+        "phosphorus_min": 0.4,
+        "taurine_min": 0.15,
+        "omega_6_min": 1.5,
+        "omega_3_min": 0.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3450 kcal/kg, 380 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-ultra-wholesome-grains-plant-based-recipe-adult-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Ultra Wholesome Grains Stream Recipe Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-ultra-wholesome-grains-stream-recipe-dog-food/FCM06328",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Ultra",
+      "ingredients_raw": "Trout, Salmon Meal, Oatmeal, Pearled Barley, Turkey Meal, Spray Dried Egg Product, Millet, Rye, Quinoa, Natural Flavour, Canola Oil (preserved with Mixed Tocopherols and Citric Acid), Dried Tomato Pomace, Flaxseed, Dehydrated Alfalfa Meal, Salmon Oil (preserved with Mixed Tocopherols and Citric Acid), Monocalcium Phosphate, Potassium Chloride, Salt, Chicory Root Extract, Dried Kelp, Choline Chloride, DL-Methionine, Dried Yeast, Taurine, Dried Sweet Potato, Dried Carrots, Dried Apples, Dried Blueberries, Dried Cranberries, Ginger, Oregano, Yucca Schidigera Extract, Dandelion, Chamomile, Parsley, Garlic, Rosemary Extract, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus casei Fermentation Product, Dried Bifidobacterium bifidum Fermentation Product, Dried Enterococcus faecium Fermentation Product, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Calcium Carbonate, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.1,
+        "taurine_min": 0.15,
+        "omega_6_min": 1.8,
+        "omega_3_min": 0.8
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3690 kcal/kg, 406 kcal/cup",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-ultra-wholesome-grains-stream-recipe-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Ultra Wholesome Grains Woodlands Recipe Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-ultra-wholesome-grains-woodlands-recipe-dog-food/FCM06330",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Ultra",
+      "ingredients_raw": "Turkey, Salmon Meal, Oatmeal, Pearled Barley, Chicken Meal, Millet, Rye, Chicken Fat (preserved with Mixed Tocopherols and Citric Acid), Spray Dried Egg Product, Quinoa, Natural Flavour, Dried Tomato Pomace, Flaxseed, Dehydrated Alfalfa Meal, Dried Apple Pomace, Salmon Oil (preserved with Mixed Tocopherols and Citric Acid), Sweet Potato, Carrots, Salt, Pumpkin, Cranberries, Blueberries, Potassium Chloride, Chicory Root Extract, Dried Kelp, Choline Chloride, DL-Methionine, Dried Yeast, Taurine, Spinach, Blackberries, Ginger, Oregano, Yucca Schidigera Extract, L-Carnitine, Dandelion, Chamomile, Parsley, Green Tea Extract, Garlic, Rosemary Extract, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus casei Fermentation Product, Dried Bifidobacterium bifidum Fermentation Product, Dried Enterococcus faecium Fermentation Product, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Calcium Carbonate, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "dha_min": 0.1,
+        "taurine_min": 0.15,
+        "omega_6_min": 1.8,
+        "omega_3_min": 0.75
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-ultra-wholesome-grains-woodlands-recipe-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Performatrin Ultra Wholesome Grains Woodlands Recipe Large Breed Adult Dog Food",
+      "brand": "Performatrin",
+      "url": "https://www.petvalu.ca/product/performatrin-ultra-wholesome-grains-woodlands-recipe-large-breed-adult-dog-food/FCM06329",
+      "channel": "retail",
+      "product_type": "dry",
+      "sub_brand": "Performatrin Ultra",
+      "ingredients_raw": "Turkey, Salmon Meal, Oatmeal, Pearled Barley, Chicken Meal, Millet, Rye, Spray Dried Egg Product, Quinoa, Natural Flavour, Chicken Fat (preserved with Mixed Tocopherols and Citric Acid), Dried Tomato Pomace, Flaxseed, Dehydrated Alfalfa Meal, Dried Apple Pomace, Broccoli, Pumpkin, Salmon Oil (preserved with Mixed Tocopherols and Citric Acid), Sweet Potato, Carrots, Salt, Potassium Chloride, Kale, Chicory Root Extract, Dried Kelp, Choline Chloride, Apples, Blueberries, Cranberries, DL-Methionine, Dried Yeast, Taurine, Glucosamine Hydrochloride, Chondroitin Sulfate, New Zealand Green Mussel, Parsley, Turmeric, Cinnamon, L-Carnitine, Yucca Schidigera Extract, Fennel, Green Tea Extract, Garlic, Rosemary Extract, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus casei Fermentation Product, Dried Bifidobacterium bifidum Fermentation Product, Dried Enterococcus faecium Fermentation Product, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Calcium Carbonate, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 27.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8,
+        "taurine_min": 0.15,
+        "omega_6_min": 1.6,
+        "omega_3_min": 0.8
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "images": [
+        "/products/performatrin/performatrin-dry-performatrin-ultra-wholesome-grains-woodlands-recipe-large-breed-adult-dog-food.jpg"
+      ]
+    }
+  ]
+}

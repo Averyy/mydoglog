@@ -1,0 +1,3764 @@
+{
+  "brand": "Open Farm",
+  "website_url": "https://openfarmpet.com",
+  "scraped_at": "2026-03-04T15:50:40.471591+00:00",
+  "scraper_version": "0.1.0",
+  "stats": {
+    "product_count": 107,
+    "by_channel": {
+      "retail": 107
+    },
+    "by_type": {
+      "dry": 58,
+      "wet": 30,
+      "treats": 4,
+      "supplements": 15
+    }
+  },
+  "products": [
+    {
+      "name": "Epic Blend Salmon & Superfood Grain-Free Dog Kibble",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/epic-blend-salmon-superfood-grain-free-dog-kibble",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Epic Blend",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "Salmon, Menhaden Fish Meal, Peas, Potatoes, Herring Meal, Sunflower Oil, Flaxseed, Wild-Caught Pollock, Coconut Oil, Natural Flavor (yeast), Coconut Glycerin, Carrots, Sweet Potatoes, Salt, Tapioca, Cranberries, Blueberries, Pumpkin, Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Folic Acid, Broccoli, Choline Chloride, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Selenium Yeast, Calcium Iodate, Dried Chicory Root, Apples, Kale, Raspberries, Spinach, Turmeric, Cinnamon, Taurine, Fish bone broth, Dried Bacillus Coagulans Fermentation Product, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 16.5,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "dha_min": 0.1,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "omega_3_min": 0.5,
+        "omega_6_min": 1.25,
+        "taurine_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3690 kcal/kg, 436 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-dry-epic-blend-salmon-superfood-grain-free-dog-kibble.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 1.588,
+          "size_description": "3.5 lb",
+          "sku": "12028"
+        },
+        {
+          "size_kg": 8.165,
+          "size_description": "18 lb",
+          "sku": "12038"
+        }
+      ],
+      "source_id": "7581764583537"
+    },
+    {
+      "name": "RawMix Great Plains Ancient Grains Dog Kibble",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/rawmix-great-plains-ancient-grains-dog-kibble",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "RawMix",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "100% Animal Welfare Certified Lamb, Menhaden Fish Meal, Oats, Barley, Lamb Liver, Pumpkin, Coconut oil, Venison, Humanely Raised Bison, Humanely Raised Beef, Sunflower Oil, Natural Flavor (yeast), Whitefish Meal, Apples, Pork Liver, Salmon Oil, Carrots, Cranberries, 100% Animal Welfare Certified Pork, Pork Heart, Flaxseed, Potassium Chloride, Potatoes, Tapioca, Vitamin E Supplement, Niacin Supplement, D-calcium Pantothenate, Biotin, Riboflavin Supplement, Vitamin A Supplement, Thiamine Mononitrate, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Organic Butternut Squash, Dried Chicory Root, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Selenium Yeast, Calcium Iodate, Taurine, Beef Kidney, Organic Blueberries, Beef bone broth, Turmeric, Cinnamon, Organic Kale, Organic Spinach",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.2,
+        "calcium_min": 1.4,
+        "phosphorus_min": 1.0,
+        "omega_3_min": 0.4,
+        "omega_6_min": 1.5,
+        "taurine_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3720 kcal/kg, 444 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-dry-rawmix-great-plains-ancient-grains-dog-kibble.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 1.588,
+          "size_description": "3.5 lb",
+          "sku": "12026"
+        },
+        {
+          "size_kg": 9.072,
+          "size_description": "20 lb",
+          "sku": "12036"
+        }
+      ],
+      "source_id": "7581765075057"
+    },
+    {
+      "name": "GoodGut Harvest Chicken Dog Kibble",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/goodgut-harvest-chicken-dog-kibble",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "GoodGut",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "G.A.P. Step 2 Chicken, Menhaden Fish Meal, Oats, Barley, Flaxseed, Coconut Oil, Natural Flavor (yeast), Psyllium Seed Husk, Rice Bran, Dried Tomato Pomace, Dried Pumpkin, Dried Citrus Pulp, G.A.P. Step 2 Chicken Livers, Carrots, Cranberries, Dried Apples, Salmon Oil (Preserved with Mixed Tocopherols), Spinach, Yeast Culture, Taurine, Choline Chloride, Potassium Chloride, Salt, Vitamin E Supplement, Niacin Supplement, D-calcium Pantothenate, Biotin, Riboflavin Supplement, Vitamin A Supplement, Thiamine Mononitrate, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Dried Chicory Root, Apple Cider Vinegar, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Selenium Yeast, Calcium Iodate, Ascorbic Acid, Dried Bacillus subtilis Fermentation Product, New Zealand Green Lipped Mussel, Turmeric, Cinnamon, Dried Bacillus coagulans Fermentation Product, Dried Bifidobacterium bifidum Fermentation Product, Dried Bifidobacterium longum Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus brevis Fermentation Product, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus fermentum Fermentation Product, Dried Lactobacillus plantarum Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactococcus lactis Fermentation Product, Dried Streptococcus thermophilus Fermentation Product, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 14.5,
+        "crude_fiber_max": 5.5,
+        "moisture_max": 10.0,
+        "dha_min": 0.1,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "omega_3_min": 1.0,
+        "omega_6_min": 1.25,
+        "taurine_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3515 kcal/kg, 420 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-dry-goodgut-harvest-chicken-dog-kibble.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 1.588,
+          "size_description": "3.5 lb",
+          "sku": "12010"
+        },
+        {
+          "size_kg": 8.618,
+          "size_description": "19 lb",
+          "sku": "12015"
+        }
+      ],
+      "source_id": "7575699259505"
+    },
+    {
+      "name": "GoodGut Grass-Fed Beef Dog Kibble",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/goodgut-grass-fed-beef-dog-kibble",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "GoodGut",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "Certified Humane Beef, Herring Meal, Oats, Barley, Coconut Oil, Flaxseed, Natural Flavor (yeast), Psyllium Seed Husk, Rice Bran, Dried Tomato Pomace, Dried Pumpkin, Dried Citrus Pulp, Sunflower Oil, Certified Humane Beef Liver, Carrots, Cranberries, Dried Apples, Spinach, Yeast Culture, Potassium Chloride, Taurine, Vitamin E Supplement, Niacin Supplement, D-calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Thiamine Mononitrate, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Selenium Yeast, Calcium Iodate, Salmon Oil (Preserved with Mixed Tocopherols), Choline Chloride, Dried Chicory Root, Apple cider vinegar, DL-Methionine, Ascorbic Acid, Dried Bacillus subtilis Fermentation Product, New Zealand Green Lipped Mussel, Turmeric, Cinnamon, Dried Bacillus coagulans Fermentation Product, Dried Bifidobacterium bifidum Fermentation Product, Dried Bifidobacterium longum Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus brevis Fermentations Product, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus fermentum Fermentation Product, Dried Lactobacillus plantarum Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactococcus lactis Fermentation Product, Dried Streptococcus thermophilus Fermentation Product, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 17.4,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.25,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "omega_3_min": 1.0,
+        "omega_6_min": 1.25,
+        "taurine_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3675 kcal/kg, 438 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-dry-goodgut-grass-fed-beef-dog-kibble.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 1.588,
+          "size_description": "3.5 lb",
+          "sku": "12012"
+        },
+        {
+          "size_kg": 8.618,
+          "size_description": "19 lb",
+          "sku": "12017"
+        }
+      ],
+      "source_id": "7575699357809"
+    },
+    {
+      "name": "GoodGut Wild-Caught Salmon Dog Kibble",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/goodgut-wild-caught-salmon-dog-kibble",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "GoodGut",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "Wild-Caught Pacific Salmon, Menhaden Fish Meal, Oats, Barley, Coconut Oil, Sunflower Oil, Flaxseed, Natural Flavor (yeast), Psyllium Seed Husk, Rice Bran, Ocean Whitefish, Dried Tomato Pomace, Dried Pumpkin, Dried Citrus Pulp, Carrots, Cranberries, Dried Apples, Spinach, Yeast Culture, Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Taurine, Potassium Chloride, Apple cider vinegar, Dried Chicory Root, Choline Chloride, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Selenium Yeast, Calcium Iodate, Ascorbic Acid, Dried Bacillus subtilis Fermentation Product (GGut), New Zealand Green Lipped Mussel, Turmeric, Cinnamon, Dried Bacillus coagulans Fermentation Product (GGut), Dried Bifidobacterium bifidum Fermentation Product (GGut), Dried Bifidobacterium longum Fermentation Product (GGut), Dried Lactobacillus acidophilus Fermentation Product  (GGut), Dried Lactobacillus brevis Fermentations Product  (GGut), Dried Lactobacillus casei Fermentation Product  (GGut), Dried Lactobacillus fermentum Fermentation Product  (GGut), Dried Lactobacillus plantarum Fermentation Product  (GGut), Dried Lactobacillus reuteri Fermentation Product  (GGut), Dried Lactococcus lactis Fermentation Product  (GGut), Dried Streptococcus thermophilus Fermentation Product  (GGut), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 13.5,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.25,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "omega_3_min": 1.0,
+        "omega_6_min": 1.25,
+        "taurine_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3470 kcal/kg, 415 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-dry-goodgut-wild-caught-salmon-dog-kibble.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 1.588,
+          "size_description": "3.5 lb",
+          "sku": "12011"
+        },
+        {
+          "size_kg": 8.618,
+          "size_description": "19 lb",
+          "sku": "12016"
+        }
+      ],
+      "source_id": "7575699390577"
+    },
+    {
+      "name": "Epic Blend Beef & Superfood Grain-Free Dog Kibble",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/epic-blend-beef-superfood-grain-free-dog-kibble",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Epic Blend",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "Humanely Raised Beef, Menhaden Fish Meal, Potatoes, Peas, Herring Meal, Sunflower Oil, Beef Liver, Flaxseed, Coconut Oil, Sweet Potatoes, Natural Flavor (yeast), Coconut Glycerin, Carrots, Salt, Cranberries, Blueberries, Broccoli, Choline Chloride, Vitamin E Supplement, Niacin Supplement, D-calcium Pantothenate, Biotin, Riboflavin Supplement, Vitamin A Supplement, Thiamine Mononitrate, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Selenium Yeast, Calcium Iodate, Pumpkin, Apples, Salmon Oil, Kale, Raspberries, Spinach, Turmeric, Taurine, Beef bone broth, Cinnamon, Dried Bacillus Coagulans Fermentation Product, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 17.5,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "dha_min": 0.1,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "omega_3_min": 0.5,
+        "omega_6_min": 1.25,
+        "taurine_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3760 kcal/kg, 445 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-dry-epic-blend-beef-superfood-grain-free-dog-kibble.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 1.588,
+          "size_description": "3.5 lb",
+          "sku": "12029"
+        },
+        {
+          "size_kg": 8.165,
+          "size_description": "18 lb",
+          "sku": "12039"
+        }
+      ],
+      "source_id": "7581764550769"
+    },
+    {
+      "name": "Epic Blend Chicken & Superfood Grain-Free Dog Kibble",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/epic-blend-chicken-superfood-grain-free-dog-kibble",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Epic Blend",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "100% Animal Welfare Certified Chicken, Menhaden Fish Meal, Peas, Potatoes, Sweet Potatoes, Flaxseed, Chicken Liver, Coconut Oil, Natural Flavor (yeast), Coconut Glycerin, Sunflower Oil, Carrots, Pumpkin, Salt, Calcium Carbonate, Blueberries, Cranberries, Broccoli, Choline Chloride, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Niacin Supplement, D-calcium Pantothenate, Biotin, Riboflavin Supplement, Vitamin A Supplement, Thiamine Mononitrate, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Salmon Oil, Dried Chicory Root, Apples, Kale, Raspberries, Spinach, Taurine, Turmeric, Chicken bone broth, Cinnamon, Dried Bacillus Coagulans Fermentation Product, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 13.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "dha_min": 0.1,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "omega_3_min": 0.5,
+        "omega_6_min": 1.25,
+        "taurine_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3510 kcal/kg, 415 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-dry-epic-blend-chicken-superfood-grain-free-dog-kibble.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 1.588,
+          "size_description": "3.5 lb",
+          "sku": "12027"
+        },
+        {
+          "size_kg": 8.165,
+          "size_description": "18 lb",
+          "sku": "12037"
+        }
+      ],
+      "source_id": "7581764419697"
+    },
+    {
+      "name": "RawMix Ancient Grains Puppy Kibble",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/rawmix-ancient-grains-puppy-kibble",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "RawMix",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "Ocean Whitefish, Herring Meal, Barley, Oats, Menhaden Fish Meal, Sunflower Oil, Salmon, Ocean Rockfish, Pumpkin, Coconut Oil, Carrots, Natural Flavor (yeast), Apples, Tapioca, Cranberries, Potassium Chloride, Salt, Sweet Potatoes, Potatoes, Vitamin E Supplement, Niacin Supplement, D-calcium Pantothenate, Biotin, Riboflavin Supplement, Vitamin A Supplement, Thiamine Mononitrate, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Selenium Yeast, Calcium Iodate, Choline Chloride, Flaxseed, Taurine, Turmeric, Cinnamon, Organic Butternut Squash, Organic Blueberries, Fish bone broth, Organic Spinach, Organic Kale, Organic Apple Cider Vinegar, Organic Pumpkin Seeds, Organic Sunflower Seeds, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 31.0,
+        "crude_fat_min": 13.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.2,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "omega_3_min": 1.0,
+        "omega_6_min": 1.5,
+        "taurine_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3580 kcal/kg, 427 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-dry-rawmix-ancient-grains-puppy-kibble.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 1.588,
+          "size_description": "3.5 lb",
+          "sku": "12024"
+        },
+        {
+          "size_kg": 9.072,
+          "size_description": "20 lb",
+          "sku": "12034"
+        }
+      ],
+      "source_id": "7581765468273"
+    },
+    {
+      "name": "RawMix Grain-Free Puppy Kibble",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/rawmix-grain-free-puppy-kibble",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "RawMix",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "Ocean Whitefish, Herring Meal, Potatoes, Sweet Potatoes, Menhaden Fish Meal, Sunflower Oil, Salmon, Ocean Rockfish, Pumpkin, Coconut Oil, Carrots, Natural Flavor (yeast), Apples, Tapioca, Cranberries, Salt, Choline Chloride, Vitamin E Supplement, Niacin Supplement, D-calcium Pantothenate, Biotin, Riboflavin Supplement, Vitamin A Supplement, Thiamine Mononitrate, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Selenium Yeast, Calcium Iodate, Flaxseed, Taurine, Turmeric, Cinnamon, Organic Butternut Squash, Organic Blueberries, Fish bone broth, Organic Spinach, Organic Kale, Organic Apple Cider Vinegar, Organic Pumpkin Seeds, Organic Sunflower Seeds, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.2,
+        "calcium_min": 1.4,
+        "phosphorus_min": 1.0,
+        "omega_3_min": 0.4,
+        "omega_6_min": 1.5,
+        "taurine_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3720 kcal/kg, 444 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-dry-rawmix-grain-free-puppy-kibble.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 1.588,
+          "size_description": "3.5 lb",
+          "sku": "12023"
+        },
+        {
+          "size_kg": 9.072,
+          "size_description": "20 lb",
+          "sku": "12033"
+        }
+      ],
+      "source_id": "7581765304433"
+    },
+    {
+      "name": "RawMix Great Plains Grain-Free Dog Kibble",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/rawmix-great-plains-grain-free-dog-kibble",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "RawMix",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "100% Animal Welfare Certified Lamb, Menhaden Fish Meal, Potatoes, Sweet Potatoes, Lamb Liver, Whitefish Meal, Salmon Oil, Flaxseed, Pumpkin, Venison, Carrots, Humanely Raised Beef, Natural Flavor (yeast), Apples, Pork Liver, Humanely Raised Bison, Cranberries, Salt, 100% Animal Welfare Certified Pork, Coconut oil, Pork Heart, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Selenium Yeast, Calcium Iodate, Potassium Chloride, Tapioca, Organic Butternut Squash, Dried Chicory Root, Vitamin E Supplement, Niacin Supplement, D-calcium Pantothenate, Biotin, Riboflavin Supplement, Vitamin A Supplement, Thiamine Mononitrate, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Taurine, Beef Kidney, Organic Blueberries, Beef bone broth, Turmeric, Cinnamon, Organic Kale, Organic Spinach",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 17.5,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.2,
+        "calcium_min": 1.4,
+        "phosphorus_min": 1.0,
+        "omega_3_min": 0.4,
+        "omega_6_min": 1.5,
+        "taurine_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3710 kcal/kg, 442 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-dry-rawmix-great-plains-grain-free-dog-kibble.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 1.588,
+          "size_description": "3.5 lb",
+          "sku": "12025"
+        },
+        {
+          "size_kg": 9.072,
+          "size_description": "20 lb",
+          "sku": "12035"
+        }
+      ],
+      "source_id": "7581764780145"
+    },
+    {
+      "name": "Chicken & Grass-Fed Beef Hearty Stew Wet Dog Food",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/chicken-grass-fed-beef-hearty-stew-wet-dog-food",
+      "channel": "retail",
+      "product_type": "wet",
+      "product_line": "Hearty Stew",
+      "life_stage": "Adult",
+      "ingredients_raw": "G.A.P. Step 2 Chicken, Chicken Broth, Beef Broth, Certified Humane Beef, G.A.P. Step 2 Chicken Livers, Garbanzo Beans (Chickpeas), Carrots, Flaxseed, Pea Protein, Potatoes, Humanely Raised Dried Whole Egg, Agar Agar, Dicalcium Phosphate, Salmon Oil, Taurine, Potassium Chloride, Choline Chloride, Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, d-Calcium Pantothenate, Biotin, Vitamin A Supplement, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Sodium Selenite, Calcium Iodate, DL-Methionine",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.0,
+        "crude_fat_min": 4.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 84.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "780 kcal/kg",
+      "images": [
+        "/products/open-farm/open-farm-wet-chicken-grass-fed-beef-hearty-stew-wet-dog-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.354,
+          "size_description": "12.5 oz (Case of 12)",
+          "sku": "14068"
+        }
+      ],
+      "source_id": "7575698702449"
+    },
+    {
+      "name": "Turkey & Salmon Hearty Stew Wet Dog Food",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/turkey-salmon-hearty-stew-wet-dog-food",
+      "channel": "retail",
+      "product_type": "wet",
+      "product_line": "Hearty Stew",
+      "life_stage": "Adult",
+      "ingredients_raw": "G.A.P. Step 1 Turkey, Turkey Broth, Salmon Broth, Wild-Caught Pacific Salmon, G.A.P. Step 1 Turkey Livers, Garbanzo Beans (Chickpeas), Carrots, Flaxseed, Pea Protein, Potatoes, Humanely Raised Dried Whole Egg, Agar Agar, Dicalcium Phosphate, Taurine, Potassium Chloride, Choline Chloride, Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, d-Calcium Pantothenate, Biotin, Vitamin A Supplement, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Sodium Selenite, Calcium Iodate, DL-Methionine",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.0,
+        "crude_fat_min": 4.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 84.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "760 kcal/kg",
+      "images": [
+        "/products/open-farm/open-farm-wet-turkey-salmon-hearty-stew-wet-dog-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.354,
+          "size_description": "12.5 oz (Case of 12)",
+          "sku": "14067"
+        }
+      ],
+      "source_id": "7575698669681"
+    },
+    {
+      "name": "Harvest Chicken Hearty Stew Wet Dog Food",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/harvest-chicken-hearty-stew-wet-dog-food",
+      "channel": "retail",
+      "product_type": "wet",
+      "product_line": "Hearty Stew",
+      "life_stage": "Adult",
+      "ingredients_raw": "G.A.P. Step 2 Chicken, Chicken Broth, Vegetable Broth, G.A.P. Step 2 Chicken Livers, Chickpeas, Carrots, Flaxseed, Pea Protein, Potatoes, Humanely Raised Dried Whole Egg, Dicalcium Phosphate, Agar Agar, Salmon Oil, Taurine, Potassium Chloride, Choline Chloride, Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, D-calcium Pantothenate, Biotin, Vitamin A Supplement, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Sodium Selenite, Calcium Iodate",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.0,
+        "crude_fat_min": 4.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 84.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "750 kcal/kg",
+      "images": [
+        "/products/open-farm/open-farm-wet-harvest-chicken-hearty-stew-wet-dog-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.354,
+          "size_description": "12.5 oz (Case of 12)",
+          "sku": "14066"
+        }
+      ],
+      "source_id": "7575698604145"
+    },
+    {
+      "name": "Goodbowl Harvest Chicken & Grass-Fed Beef Pâté for Dogs",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/goodbowl%E2%84%A2-harvest-chicken-grass-fed-beef-pate-for-dogs",
+      "channel": "retail",
+      "product_type": "wet",
+      "product_line": "Goodbowl",
+      "life_stage": "Adult",
+      "ingredients_raw": "G.A.P. Step 2 Chicken, Chicken Broth, Oats, Barley, G.A.P. Step 2 Chicken Livers, Certified Humane Beef, Flaxseed, Carrots, Agar Agar, Potassium Chloride, Calcium Carbonate, Dried Chicory Root, Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, D-calcium Pantothenate, Biotin, Vitamin A Supplement, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement, Taurine, Spinach, Zinc Proteinate, Iron Proteinate, Copper Sulfate, Manganese Proteinate, Sodium Selenite, Choline Chloride, Turmeric",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.0,
+        "crude_fat_min": 4.5,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1020 kcal/kg",
+      "images": [
+        "/products/open-farm/open-farm-wet-goodbowl-harvest-chicken-grass-fed-beef-p-t-for-dogs.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.354,
+          "size_description": "12.5 oz (Case of 12)",
+          "sku": "14097"
+        }
+      ],
+      "source_id": "7575698538609"
+    },
+    {
+      "name": "Goodbowl Wild-Caught Whitefish & Salmon Pâté for Dogs",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/goodbowl%E2%84%A2-wild-caught-whitefish-salmon-pate-for-dogs",
+      "channel": "retail",
+      "product_type": "wet",
+      "product_line": "Goodbowl",
+      "life_stage": "Adult",
+      "ingredients_raw": "Ocean Whitefish, Fish Broth, Oats, Barley, Wild-Caught Pacific Salmon, Calcium Carbonate, Dicalcium Phosphate, Carrots, Agar Agar, Sunflower Oil, Potassium Chloride, Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, D-calcium Pantothenate, Biotin, Vitamin A Supplement, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement, Spinach, Zinc Proteinate, Iron Proteinate, Copper Sulfate, Manganese Proteinate, Sodium Selenite, Choline Chloride, Taurine, Turmeric",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "940 kcal/kg",
+      "images": [
+        "/products/open-farm/open-farm-wet-goodbowl-wild-caught-whitefish-salmon-p-t-for-dogs.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.354,
+          "size_description": "12.5 oz (Case of 12)",
+          "sku": "14098"
+        }
+      ],
+      "source_id": "7575698473073"
+    },
+    {
+      "name": "Goodbowl Harvest Chicken & Salmon Pâté for Dogs",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/goodbowl%E2%84%A2-harvest-chicken-salmon-pate-for-dogs",
+      "channel": "retail",
+      "product_type": "wet",
+      "product_line": "Goodbowl",
+      "life_stage": "Adult",
+      "ingredients_raw": "G.A.P. Step 2 Chicken, Chicken Broth, Oats, Barley, G.A.P. Step 2 Chicken Livers, Wild-Caught Pacific Salmon, Carrots, Flaxseed, Agar Agar, Calcium Carbonate, Potassium Chloride, Dried Chicory Root, Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, D-calcium Pantothenate, Biotin, Vitamin A Supplement, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement, Taurine, Spinach, Zinc Proteinate, Iron Proteinate, Copper Sulfate, Manganese Proteinate, Sodium Selenite, Choline Chloride, Turmeric",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.0,
+        "crude_fat_min": 4.5,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1000 kcal/kg",
+      "images": [
+        "/products/open-farm/open-farm-wet-goodbowl-harvest-chicken-salmon-p-t-for-dogs.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.354,
+          "size_description": "12.5 oz (Case of 12)",
+          "sku": "14096"
+        }
+      ],
+      "source_id": "7575698407537"
+    },
+    {
+      "name": "Goodbowl Homestead Turkey Pâté for Dogs",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/goodbowl%E2%84%A2-homestead-turkey-pate-for-dogs",
+      "channel": "retail",
+      "product_type": "wet",
+      "product_line": "Goodbowl",
+      "life_stage": "Adult",
+      "ingredients_raw": "G.A.P. Step 1 Turkey, Turkey Broth, Oats, Barley, G.A.P. Step 1 Turkey Livers, Flaxseed, Carrots, Agar Agar, Potassium Chloride, Dried Chicory Root, Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, D-calcium Pantothenate, Biotin, Vitamin A Supplement, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement, Taurine, Spinach, Choline Chloride, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Sodium Selenite, DL-Methionine, Turmeric",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1060 kcal/kg",
+      "images": [
+        "/products/open-farm/open-farm-wet-goodbowl-homestead-turkey-p-t-for-dogs.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.354,
+          "size_description": "12.5 oz (Case of 12)",
+          "sku": "14095"
+        }
+      ],
+      "source_id": "7575698276465"
+    },
+    {
+      "name": "Goodbowl Harvest Chicken Pâté for Dogs",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/goodbowl%E2%84%A2-harvest-chicken-pate-for-dogs",
+      "channel": "retail",
+      "product_type": "wet",
+      "product_line": "Goodbowl",
+      "life_stage": "Adult",
+      "ingredients_raw": "G.A.P. Step 2 Chicken, Chicken Broth, Oats, Barley, G.A.P. Step 2 Chicken Livers, Flaxseed, Carrots, Agar Agar, Calcium Carbonate, Potassium Chloride, Dried Chicory Root, Taurine, Spinach, Zinc Proteinate, Iron Proteinate, Copper Sulfate, Manganese Proteinate, Sodium Selenite, Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, D-calcium Pantothenate, Biotin, Vitamin A Supplement, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement, Choline Chloride, Turmeric",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.0,
+        "crude_fat_min": 4.5,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "970 kcal/kg",
+      "images": [
+        "/products/open-farm/open-farm-wet-goodbowl-harvest-chicken-p-t-for-dogs.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.354,
+          "size_description": "12.5 oz (Case of 12)",
+          "sku": "14094"
+        }
+      ],
+      "source_id": "7575698178161"
+    },
+    {
+      "name": "Chicken & Pollock Healthy Weight Pâté for Dogs",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/chicken-whitefish-healthy-weight-pate-for-dogs",
+      "channel": "retail",
+      "product_type": "wet",
+      "product_line": "Healthy Weight",
+      "life_stage": "Adult",
+      "ingredients_raw": "G.A.P. Step 2 Chicken, Wild-Caught Pollock, Chicken Broth, Pollock Broth, G.A.P. Step 2 Chicken Livers, Oats, Sweet Potatoes, Tapioca, Agar Agar, Calcium Carbonate, Dried Chicory Root, Fructooligosaccharides, Dried Pumpkin, Dried Apples, Carrots, Potassium Chloride, Choline Chloride, Vitamin E Supplement, Vitamin A Supplement, Niacinamide, Pantothenic Acid, Riboflavin Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Zinc Proteinate, Iron Proteinate, Copper Sulfate, Manganese Proteinate, Sodium Selenite, Taurine, L-Carnitine",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.5,
+        "crude_fat_min": 2.5,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 78.0,
+        "omega_3_min": 0.2,
+        "omega_6_min": 0.5,
+        "l_carnitine_min": 50.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "870 kcal/kg",
+      "images": [
+        "/products/open-farm/open-farm-wet-chicken-pollock-healthy-weight-p-t-for-dogs.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.354,
+          "size_description": "12.5 oz (Case of 12)",
+          "sku": "14042"
+        }
+      ],
+      "source_id": "7575698079857"
+    },
+    {
+      "name": "Wild-Caught Whitefish & Pollock Digestive Health Pâté for Dogs",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/wild-caught-whitefish-pollock-digestive-health-pate-for-dogs",
+      "channel": "retail",
+      "product_type": "wet",
+      "product_line": "Digestive Health",
+      "life_stage": "Adult",
+      "ingredients_raw": "Ocean Whitefish, Whitefish Broth, Wild-Caught Pollock, Pollock Broth, Oats, Dried Pumpkin, Flaxseed, Tapioca, Calcium Carbonate, Agar Agar, Vitamin E Supplement, Vitamin A Supplement, Niacinamide, Pantothenic Acid, Riboflavin Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Dried Chicory Root, Yeast Culture, Potassium Chloride, Fructooligosaccharides, Dried Apples, Carrots, Zinc Proteinate, Iron Proteinate, Copper Sulfate, Manganese Proteinate, Sodium Selenite, Choline Chloride, Taurine, Cinnamon, Turmeric",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 2.5,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 78.0,
+        "dha_min": 0.15,
+        "omega_3_min": 0.3,
+        "omega_6_min": 0.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "860 kcal/kg",
+      "images": [
+        "/products/open-farm/open-farm-wet-wild-caught-whitefish-pollock-digestive-health-p-t-for-dogs.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.354,
+          "size_description": "12.5 oz (Case of 12)",
+          "sku": "14041"
+        }
+      ],
+      "source_id": "7575697981553"
+    },
+    {
+      "name": "Wild-Caught Pollock & Salmon Skin & Coat Health Pâté for Dogs",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/wild-caught-pollock-salmon-skin-coat-health-pate-for-dogs",
+      "channel": "retail",
+      "product_type": "wet",
+      "product_line": "Skin & Coat Health",
+      "life_stage": "Adult",
+      "ingredients_raw": "Wild-Caught Pollock, Pollock Broth, Ocean Whitefish, Whitefish Broth, Oats, Wild-Caught Pacific Salmon, Brown Rice, Flaxseed, Tapioca, Biotin, Vitamin A Supplement, Ascorbic Acid, Vitamin E Supplement, Niacinamide, Pantothenic Acid, Riboflavin Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Agar Agar, Calcium Carbonate, Sunflower Oil, Potassium Chloride, Dried Pumpkin, Dried Apples, Carrots, Cranberries, Choline Chloride, Zinc Proteinate, Iron Proteinate, Copper Sulfate, Manganese Proteinate, Sodium Selenite, Taurine",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 2.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 78.0,
+        "dha_min": 0.2,
+        "omega_3_min": 0.4,
+        "omega_6_min": 0.6
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "830 kcal/kg",
+      "images": [
+        "/products/open-farm/open-farm-wet-wild-caught-pollock-salmon-skin-coat-health-p-t-for-dogs.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.354,
+          "size_description": "12.5 oz (Case of 12)",
+          "sku": "14040"
+        }
+      ],
+      "source_id": "7575697129585"
+    },
+    {
+      "name": "Icelandic Air-Dried Cod & Blueberry Dog Treat Bars",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/icelandic-air-dried-cod-blueberry-dog-treat-bars",
+      "channel": "retail",
+      "product_type": "treats",
+      "product_line": "Icelandic",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "Cod, Blueberries",
+      "guaranteed_analysis": {
+        "crude_protein_min": 60.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 0.5,
+        "moisture_max": 8.0,
+        "omega_3_min": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3491 kcal/kg, 29 kcal/treat",
+      "images": [
+        "/products/open-farm/open-farm-treats-icelandic-air-dried-cod-blueberry-dog-treat-bars.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.116,
+          "size_description": "4.1 oz",
+          "sku": "12190"
+        }
+      ],
+      "source_id": "7459827646577"
+    },
+    {
+      "name": "Icelandic Air-Dried Haddock & Blueberry Dog Treat Bars",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/icelandic-air-dried-haddock-blueberry-dog-treat-bars",
+      "channel": "retail",
+      "product_type": "treats",
+      "product_line": "Icelandic",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "Haddock, Blueberries",
+      "guaranteed_analysis": {
+        "crude_protein_min": 60.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 0.5,
+        "moisture_max": 8.0,
+        "omega_3_min": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3491 kcal/kg, 29 kcal/treat",
+      "images": [
+        "/products/open-farm/open-farm-treats-icelandic-air-dried-haddock-blueberry-dog-treat-bars.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.116,
+          "size_description": "4.1 oz",
+          "sku": "12191"
+        }
+      ],
+      "source_id": "7459828858993"
+    },
+    {
+      "name": "Icelandic Air-Dried Pollock & Blueberry Dog Treat Bars",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/icelandic-air-dried-pollock-blueberry-dog-treat-bars",
+      "channel": "retail",
+      "product_type": "treats",
+      "product_line": "Icelandic",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "Pollock, Blueberries",
+      "guaranteed_analysis": {
+        "crude_protein_min": 60.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 0.5,
+        "moisture_max": 8.0,
+        "omega_3_min": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3491 kcal/kg, 29 kcal/treat",
+      "images": [
+        "/products/open-farm/open-farm-treats-icelandic-air-dried-pollock-blueberry-dog-treat-bars.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.116,
+          "size_description": "4.1 oz",
+          "sku": "12192"
+        }
+      ],
+      "source_id": "7459829317745"
+    },
+    {
+      "name": "Icelandic Air-Dried Cod Skins Dog Treat Sticks",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/icelandic-air-dried-cod-skins-dog-treat-sticks",
+      "channel": "retail",
+      "product_type": "treats",
+      "product_line": "Icelandic",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "Cod Skins",
+      "guaranteed_analysis": {
+        "crude_protein_min": 80.0,
+        "crude_fat_min": 1.0,
+        "crude_fiber_max": 0.5,
+        "moisture_max": 10.0,
+        "omega_3_min": 0.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3148 kcal/kg",
+      "images": [
+        "/products/open-farm/open-farm-treats-icelandic-air-dried-cod-skins-dog-treat-sticks.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.139,
+          "size_description": "4.9 oz",
+          "sku": "12193"
+        }
+      ],
+      "source_id": "7459829743729"
+    },
+    {
+      "name": "Icelandic Cod & Herring Wet Food for Dogs",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/icelandic-cod-herring-wet-food-for-dogs",
+      "channel": "retail",
+      "product_type": "wet",
+      "product_line": "Icelandic",
+      "life_stage": "Adult",
+      "ingredients_raw": "Wild-Caught Cod, Cod Broth, Potatoes, Ocean Herring, Dried Blueberries, Sunflower Oil, Potassium Chloride, Choline Chloride, Magnesium Sulfate, Vitamin A Supplement, Vitamin E Supplement, Niacin Supplement, Folic Acid, D-calcium Pantothenate, Thiamine Mononitrate, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Zinc Sulfate, Iron Sulfate, Sodium Selenite, Copper Sulfate, Manganese Sulfate",
+      "guaranteed_analysis": {
+        "crude_protein_min": 6.0,
+        "crude_fat_min": 1.5,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "845 kcal/kg",
+      "images": [
+        "/products/open-farm/open-farm-wet-icelandic-cod-herring-wet-food-for-dogs.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.198,
+          "size_description": "7 oz (Case of 24)",
+          "sku": "14093"
+        }
+      ],
+      "source_id": "7387981545585"
+    },
+    {
+      "name": "Icelandic Salmon & Capelin Wet Food for Dogs",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/icelandic-salmon-capelin-wet-food-for-dogs",
+      "channel": "retail",
+      "product_type": "wet",
+      "product_line": "Icelandic",
+      "life_stage": "Adult",
+      "ingredients_raw": "Salmon, Salmon Broth, Capelin, Capelin Broth, Potatoes, Sunflower Oil, Kelp, Potassium Chloride, Choline Chloride, Magnesium Sulfate, Vitamin A Supplement, Vitamin E Supplement, Niacin Supplement, Folic Acid, D-calcium Pantothenate, Thiamine Mononitrate, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Zinc Sulfate, Iron Sulfate, Sodium Selenite, Copper Sulfate, Manganese Sulfate",
+      "guaranteed_analysis": {
+        "crude_protein_min": 5.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1020 kcal/kg",
+      "images": [
+        "/products/open-farm/open-farm-wet-icelandic-salmon-capelin-wet-food-for-dogs.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.198,
+          "size_description": "7 oz (Case of 24)",
+          "sku": "14092"
+        }
+      ],
+      "source_id": "7387981480049"
+    },
+    {
+      "name": "Icelandic Cod & Arctic Char Wet Food for Dogs",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/icelandic-cod-arctic-char-wet-food-for-dogs",
+      "channel": "retail",
+      "product_type": "wet",
+      "product_line": "Icelandic",
+      "life_stage": "Adult",
+      "ingredients_raw": "Wild-Caught Cod, Cod Broth, Potatoes, Arctic Char, Cranberries, Sunflower Oil, Potassium Chloride, Choline Chloride, Magnesium Sulfate, Vitamin A Supplement, Vitamin E Supplement, Niacin Supplement, Folic Acid, D-calcium Pantothenate, Thiamine Mononitrate, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Zinc Sulfate, Iron Sulfate, Sodium Selenite, Copper Sulfate, Manganese Sulfate",
+      "guaranteed_analysis": {
+        "crude_protein_min": 6.0,
+        "crude_fat_min": 1.5,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "900 kcal/kg",
+      "images": [
+        "/products/open-farm/open-farm-wet-icelandic-cod-arctic-char-wet-food-for-dogs.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.198,
+          "size_description": "7 oz (Case of 24)",
+          "sku": "14091"
+        }
+      ],
+      "source_id": "7387981414513"
+    },
+    {
+      "name": "Icelandic Salmon & Cod Wet Food for Dogs",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/icelandic-salmon-cod-wet-food-for-dogs",
+      "channel": "retail",
+      "product_type": "wet",
+      "product_line": "Icelandic",
+      "life_stage": "Adult",
+      "ingredients_raw": "Salmon, Wild-Caught Cod, Salmon Broth, Cod Broth, Garbanzo Beans (Chickpeas), Potatoes, Vegetable Broth, Sweet Potatoes, Sunflower Oil, Potassium Chloride, Choline Chloride, Magnesium Sulfate, Vitamin A Supplement, Vitamin E Supplement, Niacin Supplement, Folic Acid, D-calcium Pantothenate, Thiamine Mononitrate, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Zinc Sulfate, Iron Sulfate, Sodium Selenite, Copper Sulfate, Manganese Sulfate, Calcium Carbonate",
+      "guaranteed_analysis": {
+        "crude_protein_min": 6.5,
+        "crude_fat_min": 4.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1250 kcal/kg",
+      "images": [
+        "/products/open-farm/open-farm-wet-icelandic-salmon-cod-wet-food-for-dogs.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.198,
+          "size_description": "7 oz (Case of 24)",
+          "sku": "14090"
+        }
+      ],
+      "source_id": "7387981054065"
+    },
+    {
+      "name": "Wild-Caught Salmon & Ancient Grains Dog Kibble",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/wild-caught-salmon-ancient-grains-dry-dog-food",
+      "channel": "retail",
+      "product_type": "dry",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "Wild-caught Pacific salmon, Oats, Whitefish Meal, Sorghum, Quinoa, Coconut Oil, Herring Meal, Pumpkin, Natural Flavor (yeast), Millet, Carrots, Apples, Cranberries, Potassium Chloride, Salmon Oil, Salt, Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Dried Chicory Root, Choline Chloride, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Selenium Yeast, Calcium Iodate, Taurine, Mixed Tocopherols (a natural preservative), Cinnamon, Turmeric, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "dha_min": 0.11,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "omega_6_min": 1.25,
+        "omega_3_min": 0.4,
+        "taurine_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3745 kcal/kg, 424 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-dry-wild-caught-salmon-ancient-grains-dog-kibble.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 1.814,
+          "size_description": "4 lb",
+          "sku": "12539"
+        },
+        {
+          "size_kg": 4.99,
+          "size_description": "11 lb",
+          "sku": "12540"
+        },
+        {
+          "size_kg": 9.979,
+          "size_description": "22 lb",
+          "sku": "12541"
+        }
+      ],
+      "source_id": "4176826433649"
+    },
+    {
+      "name": "RawMix Open Prairie Grain-Free Dog Kibble",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/open-prairie-recipe-for-dogs",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "RawMix",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "G.A.P. Step 2 Chicken, G.A.P. Step 1 Turkey, Menhaden Fish Meal, Potatoes, Herring Meal, Sweet Potatoes, Tapioca, Coconut Oil, Sunflower Oil (Preserved with Mixed Tocopherols), Pumpkin, Natural Flavor (yeast), Carrots, Apples, Cranberries, G.A.P. Step 2 Chicken Livers, Potassium Chloride, G.A.P. Step 2 Chicken Necks, Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, Pantothenic Acid, Riboflavin Supplement, Vitamin D3 Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Magnesium Sulfate, Choline Chloride, Salmon Oil (Preserved with Mixed Tocopherols), Dried Chicory Root, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Selenium Yeast, Calcium Iodate, Taurine, Dried Kelp, Organic Butternut Squash, Organic Blueberries, G.A.P. Step 2 Turkey Gizzards, Montmorillonite Clay, Miscanthus Grass, G.A.P. Step 2 Chicken Bone Broth, Flaxseed, Cinnamon, Turmeric, Salt, Organic Spinach, Dandelion Greens, Organic Kale, Organic Apple Cider Vinegar, Organic Pumpkin Seeds, Organic Sunflower Seeds, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "dha_min": 0.11,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "omega_3_min": 0.4,
+        "omega_6_min": 3.0,
+        "taurine_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3810 kcal/kg, 405 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-dry-rawmix-open-prairie-grain-free-dog-kibble.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 1.588,
+          "size_description": "3.5 lb",
+          "sku": "12931"
+        },
+        {
+          "size_kg": 9.072,
+          "size_description": "20 lb",
+          "sku": "12941"
+        }
+      ],
+      "source_id": "6847254528113"
+    },
+    {
+      "name": "Goodbowl Harvest Chicken & Brown Rice Dog Kibble",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/goodbowl-harvest-chicken-brown-rice-recipe-for-dogs",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Goodbowl",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "G.A.P. Step 2 Chicken, G.A.P. Step 2 Chicken Meal, Brown Rice, Field Peas, Sorghum, Coconut Oil, Flaxseed, Natural Flavor (yeast), Salmon Oil, Salt, Dicalcium Phosphate, Pumpkin, Carrots, Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-calcium Pantothenate, Riboflavin Supplement, Vitamin D3 Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Potassium Chloride, Taurine, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Selenium Yeast, Calcium Iodate, Dried Chicory Root, L-Threonine, Choline Chloride, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "dha_min": 0.02,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "taurine_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3500 kcal/kg, 378 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-dry-goodbowl-harvest-chicken-brown-rice-dog-kibble.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 1.588,
+          "size_description": "3.5 lb",
+          "sku": "12000"
+        },
+        {
+          "size_kg": 9.979,
+          "size_description": "22 lb",
+          "sku": "12003"
+        }
+      ],
+      "source_id": "6963136725105"
+    },
+    {
+      "name": "Homestead Turkey Pâté for Dogs",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/homestead-turkey-pate-recipe-for-dogs",
+      "channel": "retail",
+      "product_type": "wet",
+      "life_stage": "Adult",
+      "ingredients_raw": "G.A.P. Step 1 Turkey, G.A.P. Step 2 Turkey Bone Broth, Potatoes, G.A.P. Step 2 Turkey Livers, Sweet Potatoes, Flaxseed, Tapioca, Agar Agar, Carrots, Dicalcium Phosphate, Dried Chicory Root, Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, Pantothenic Acid, Biotin, Vitamin A Supplement, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement, Zinc Amino Acid Chelate, Iron Amino Acid Chelate, Copper Sulfate, Manganese Amino Acid Chelate, Sodium Selenite, Calcium Iodate, Spinach, Choline Chloride, Taurine, Turmeric",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 5.5,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1154 kcal/kg, 409 kcal/can",
+      "images": [
+        "/products/open-farm/open-farm-wet-homestead-turkey-p-t-for-dogs.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.354,
+          "size_description": "12.5 oz (Case of 12)",
+          "sku": "15072"
+        }
+      ],
+      "source_id": "7011698245745"
+    },
+    {
+      "name": "Harvest Chicken Freeze Dried Raw Patties for Dogs",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/freeze-dried-chicken-patties",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Freeze Dried Raw",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "G.A.P. Step 2 Chicken with Ground Bone, G.A.P. Step 2 Chicken Livers, G.A.P. Step 2 Chicken Necks, Organic Butternut Squash, Organic Carrots, Organic Cranberries, Organic Blueberries, Montmorillonite Clay, Coconut Oil, Potassium Chloride, Salt, Choline Chloride, Dried Chicory Root, Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, Pantothenic Acid, Riboflavin Supplement, Vitamin D3 Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Organic Spinach, Organic Apple Cider Vinegar, Organic Kale, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Selenium Yeast, Calcium Iodate, Salmon Oil, Dried Kelp, Mixed Tocopherols (a preservative), Magnesium Sulfate, Organic Pumpkin Seeds, Organic Sunflower Seeds, Cinnamon, Turmeric, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 41.0,
+        "crude_fat_min": 38.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 5.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4928 kcal/kg",
+      "images": [
+        "/products/open-farm/open-farm-dry-harvest-chicken-freeze-dried-raw-patties-for-dogs.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.298,
+          "size_description": "10.5 oz",
+          "sku": "12901"
+        },
+        {
+          "size_kg": 0.496,
+          "size_description": "17.5 oz",
+          "sku": "12911"
+        }
+      ],
+      "source_id": "6834701762673"
+    },
+    {
+      "name": "Epic Blend Salmon & Superfood Dry Dog Food",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/epic-blend-salmon-superfood",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Epic Blend",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "Wild-Caught Pacific Salmon, Ocean Menhaden Fish Meal, Oats, Whole Grain Barley, Whitefish Meal, Sorghum (Milo), Flaxseed, Wild-Alaskan Pollock, Coconut Oil, Sweet Potatoes, Pumpkin, Natural Flavor (yeast), Coconut Glycerin, Sunflower Oil, Carrots, Blueberries, Cranberries, Dried Chicory Root, Broccoli, Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Salt, Taurine, Apples, Salmon Oil, Kale, Raspberries, Spinach, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Selenium Yeast, Calcium Iodate, Turmeric, Cinnamon, Fish Bone Broth, Dried Bacillus Coagulans Fermentation Product, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 12.5,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.15,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "omega_3_min": 0.5,
+        "omega_6_min": 1.25,
+        "taurine_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3500 kcal/kg, 414 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-dry-epic-blend-salmon-superfood-dry-dog-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 1.588,
+          "size_description": "3.5 lb",
+          "sku": "12021"
+        },
+        {
+          "size_kg": 8.165,
+          "size_description": "18 lb",
+          "sku": "12031"
+        }
+      ],
+      "source_id": "7366870499441"
+    },
+    {
+      "name": "Epic Blend Beef & Superfood Dry Dog Food",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/epic-blend-beef-superfood",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Epic Blend",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "Certified Humane Beef, Ocean Menhaden Fish Meal, Whitefish Meal, Oats, Whole Grain Barley, Sorghum (Milo), Flaxseed, Certified Humane Beef Liver, Coconut Oil, Pumpkin, Natural Flavor (yeast), Natural Flavor (plant), Coconut Glycerin, Carrots, Cranberries, Blueberries, Salt, Sunflower Oil, Broccoli, Taurine, Dried Chicory Root, Sweet Potatoes, Apples, Salmon Oil, Kale, Raspberries, Spinach, Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Selenium Yeast, Calcium Iodate, Turmeric, G.A.P. Step 4 Beef Bone Broth, Cinnamon, Dried Bacillus Coagulans Fermentation Product, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 14.5,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "dha_min": 0.1,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "omega_3_min": 0.5,
+        "omega_6_min": 1.25,
+        "taurine_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3550 kcal/kg, 420 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-dry-epic-blend-beef-superfood-dry-dog-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 1.588,
+          "size_description": "3.5 lb",
+          "sku": "12022"
+        },
+        {
+          "size_kg": 8.165,
+          "size_description": "18 lb",
+          "sku": "12032"
+        }
+      ],
+      "source_id": "7366870401137"
+    },
+    {
+      "name": "Epic Blend Chicken & Superfood Dry Dog Food",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/epic-blend-chicken-superfood",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Epic Blend",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "G.A.P. Step 2 Chicken, Ocean Menhaden Fish Meal, Oats, Sorghum (Milo), Flaxseed, G.A.P. Step 2 Chicken Livers, Whitefish Meal, Whole Grain Barley, Coconut Oil, Pumpkin, Sweet Potatoes, Natural Flavor (yeast), Natural Flavor (plant), Coconut Glycerin, Carrots, Salt, Blueberries, Cranberries, Dried Chicory Root, Broccoli, Taurine, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Selenium Yeast, Calcium Iodate, Apples, Salmon Oil, Kale, Raspberries, Spinach, Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Turmeric, Tricalcium Phosphate, G.A.P. Step 2 Chicken Bone Broth, Cinnamon, Dried Bacillus Coagulans Fermentation Product, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "dha_min": 0.1,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "omega_3_min": 0.5,
+        "omega_6_min": 1.25,
+        "taurine_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3550 kcal/kg, 420 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-dry-epic-blend-chicken-superfood-dry-dog-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 1.588,
+          "size_description": "3.5 lb",
+          "sku": "12020"
+        },
+        {
+          "size_kg": 8.165,
+          "size_description": "18 lb",
+          "sku": "12030"
+        }
+      ],
+      "source_id": "7366870335601"
+    },
+    {
+      "name": "Salmon & Oatmeal Skin & Coat Health Dog Kibble",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/skin-and-coat-salmon",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Skin & Coat Health",
+      "life_stage": "Adult",
+      "ingredients_raw": "Wild-caught Pacific salmon, Menhaden Fish Meal, Milo, Barley, Herring Meal, Oatmeal, Coconut Oil, Salmon Oil, Sunflower Oil, Natural Flavor (yeast), Flaxseed, Vitamin E Supplement, Niacin Supplement, Vitamin A Supplement, Pantothenic Acid, Riboflavin Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Biotin, Apples, Carrots, Blueberries, Taurine, Salt, Calcium Carbonate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Copper Proteinate, Manganese Proteinate, Calcium Iodate, Potassium Chloride, Mixed Tocopherols (a natural preservative), Choline Chloride, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 29.0,
+        "crude_fat_min": 13.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "omega_6_min": 1.8,
+        "dha_min": 0.4,
+        "epa_min": 0.4,
+        "omega_3_min": 1.4,
+        "taurine_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3500 kcal/kg, 430 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-dry-salmon-oatmeal-skin-coat-health-dog-kibble.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 1.814,
+          "size_description": "4 lb",
+          "sku": "12162"
+        },
+        {
+          "size_kg": 9.979,
+          "size_description": "22 lb",
+          "sku": "12172"
+        }
+      ],
+      "source_id": "7305994567793"
+    },
+    {
+      "name": "Chicken & Whitefish Healthy Weight Dog Kibble",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/healthy-weight-chicken-and-fish",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Healthy Weight",
+      "life_stage": "Adult",
+      "ingredients_raw": "G.A.P. Step 2 Chicken, Herring Meal, Barley, Millet, Ocean Whitefish, Ocean Whitefish Meal, Oat Fiber, Coconut Oil, G.A.P. Step 2 Chicken Livers, Pumpkin, Natural Flavor (yeast), Carrots, Potassium Chloride, Dicalcium Phosphate, Dried Chicory Root, Sunflower Oil, Choline Chloride, Fructooligosaccharides, Taurine, L-Carnitine, Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, Pantothenic Acid, Riboflavin Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Selenium Yeast, Calcium Iodate, Mixed Tocopherols (a natural preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 29.5,
+        "crude_fat_min": 8.5,
+        "crude_fiber_max": 10.0,
+        "moisture_max": 10.0,
+        "omega_6_min": 1.2,
+        "dha_min": 0.2,
+        "omega_3_min": 0.7,
+        "taurine_min": 0.2,
+        "l_carnitine_min": 750.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3000 kcal/kg, 340 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-dry-chicken-whitefish-healthy-weight-dog-kibble.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 1.814,
+          "size_description": "4 lb",
+          "sku": "12160"
+        },
+        {
+          "size_kg": 9.979,
+          "size_description": "22 lb",
+          "sku": "12170"
+        }
+      ],
+      "source_id": "7303773749361"
+    },
+    {
+      "name": "Surf and Turf Air Dried Recipe for Dogs",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/air-dried-surf-turf-dog-food",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Air Dried",
+      "life_stage": "Adult",
+      "ingredients_raw": "Ocean Whitefish, Humanely Raised Beef, Humanely Raised Beef Kidneys, G.A.P. Step 4 Beef Liver, Sweet Potatoes, Wild-Caught Pacific Salmon, Pumpkin, Natural Flavor (yeast), Sunflower Oil (Preserved with Mixed Tocopherols), Carrots, Flaxseed, Mixed Tocopherols (a natural preservative), Choline Chloride, Blueberries, Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, Pantothenic Acid, Riboflavin Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Zinc Amino Acid Chelate, Iron Amino Acid Chelate, Copper Sulfate, Manganese Amino Acid Chelate, Selenium Yeast, Calcium Iodate, G.A.P. Step 4 Beef Bone Broth, Taurine, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 29.0,
+        "crude_fat_min": 24.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 18.0,
+        "taurine_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4200 kcal/kg, 422 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-dry-surf-and-turf-air-dried-recipe-for-dogs.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.454,
+          "size_description": "1 lb",
+          "sku": "12972"
+        },
+        {
+          "size_kg": 0.907,
+          "size_description": "2 lb",
+          "sku": "12977"
+        }
+      ],
+      "source_id": "7223990616177"
+    },
+    {
+      "name": "Pollock & Lamb Air Dried Recipe for Dogs",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/air-dried-pollock-lamb-dog-food",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Air Dried",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "Wild-Alaskan Pollock, Ocean Whitefish, G.A.P. Step 4 Lamb, G.A.P. Step 4 Lamb Liver, Sweet Potatoes, Pumpkin, Flaxseed, Carrots, Natural Flavor (yeast), Coconut Oil, Sunflower Oil (Preserved with Mixed Tocopherols), Blueberries, G.A.P. Step 4 Beef Bone Broth, Mixed Tocopherols (a natural preservative), Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, Pantothenic Acid, Riboflavin Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Zinc Amino Acid Chelate, Iron Amino Acid Chelate, Copper Proteinate, Manganese Proteinate, Selenium Yeast, Calcium Iodate, Taurine, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 40.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 18.0,
+        "taurine_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3400 kcal/kg, 340 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-dry-pollock-lamb-air-dried-recipe-for-dogs.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.454,
+          "size_description": "1 lb",
+          "sku": "12971"
+        },
+        {
+          "size_kg": 0.907,
+          "size_description": "2 lb",
+          "sku": "12976"
+        }
+      ],
+      "source_id": "7224063295601"
+    },
+    {
+      "name": "Harvest Chicken Air Dried Recipe for Dogs",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/air-dried-chicken-dog-food",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Air Dried",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "G.A.P. Step 2 Chicken, G.A.P. Step 2 Chicken Livers, Sweet Potatoes, Pumpkin, Natural Flavor (yeast), Salmon Oil, Carrots, Calcium Carbonate, Dicalcium Phosphate, Salt, Blueberries, G.A.P. Step 2 Chicken Bone Broth, Flaxseed, Taurine, Mixed Tocopherols (a natural preservative), Zinc Amino Acid Chelate, Iron Amino Acid Chelate, Copper Sulfate, Manganese Amino Acid Chelate, Selenium Yeast, Calcium Iodate, Choline Chloride, Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, Pantothenic Acid, Riboflavin Supplement, Vitamin D3 Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 32.0,
+        "crude_fat_min": 28.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 18.0,
+        "taurine_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4100 kcal/kg, 412 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-dry-harvest-chicken-air-dried-recipe-for-dogs.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.454,
+          "size_description": "1 lb",
+          "sku": "12970"
+        },
+        {
+          "size_kg": 0.907,
+          "size_description": "2 lb",
+          "sku": "12975"
+        }
+      ],
+      "source_id": "7224032395377"
+    },
+    {
+      "name": "RawMix Open Prairie Freeze Dried Raw Morsels for Dogs",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/rawmix-open-prairie-freeze-dried-raw-dog",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "RawMix",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "G.A.P. Step 2 Chicken with Ground Bone, G.A.P. Step 1 Turkey, G.A.P. Step 2 Chicken Livers, G.A.P. Step 2 Chicken Necks, Montmorillonite Clay, Chicken Bone Broth, Salmon Oil, Organic Pumpkin, Organic Carrots, Coconut Oil, Salt, Potassium Chloride, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, Pantothenic Acid, Riboflavin Supplement, Vitamin D3 Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Choline Chloride, Taurine, Cinnamon, Turmeric, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 42.0,
+        "crude_fat_min": 36.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 7.0,
+        "taurine_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4879 kcal/kg, 243 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-dry-rawmix-open-prairie-freeze-dried-raw-morsels-for-dogs.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.383,
+          "size_description": "13.5 oz",
+          "sku": "12917"
+        }
+      ],
+      "source_id": "7162535706737"
+    },
+    {
+      "name": "RawMix Tide & Terrain Ancient Grains Dog Kibble",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/tide-terrain-rawmix-for-dogs",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "RawMix",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "Wild-Alaskan Pollock, Menhaden Fish Meal, Oats, Barley, Ocean Whitefish Meal, Coconut Oil, Humanely Raised Beef, Wild-Caught Pacific Salmon, Flaxseed, Pumpkin, Carrots, Natural Flavor (yeast), Sunflower Oil (Preserved with Mixed Tocopherols), G.A.P. Step 1 Pork, G.A.P. Step 1 Pork Liver, Apples, Salt, Cranberries, Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, Pantothenic Acid, Riboflavin Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Potatoes, Tapioca, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Humanely Raised Beef Kidneys, Taurine, G.A.P. Step 4 Beef Bone Broth, Cinnamon, Turmeric, Organic Butternut Squash, Organic Blueberries, Organic Spinach, Organic Kale, Organic Apple Cider Vinegar, Organic Pumpkin Seeds, Organic Sunflower Seeds, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "dha_min": 0.2,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "omega_3_min": 0.5,
+        "omega_6_min": 1.5,
+        "taurine_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3700 kcal/kg, 440 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-dry-rawmix-tide-terrain-ancient-grains-dog-kibble.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 1.588,
+          "size_description": "3.5 lb",
+          "sku": "12939"
+        },
+        {
+          "size_kg": 9.072,
+          "size_description": "20 lb",
+          "sku": "12949"
+        }
+      ],
+      "source_id": "7162517487729"
+    },
+    {
+      "name": "RawMix Tide & Terrain Grain-Free Dog Kibble",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/tide-terrain-grain-free-rawmix-for-dogs",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "RawMix",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "Wild-Alaskan Pollock, Ocean Whitefish Meal, Potatoes, Sweet Potatoes, Coconut Oil, Menhaden Fish Meal, Humanely Raised Beef, Wild-Caught Pacific Salmon, Flaxseed, Pumpkin, Sunflower Oil (Preserved with Mixed Tocopherols), Carrots, Natural Flavor (yeast), G.A.P. Step 1 Pork, G.A.P. Step 1 Pork Liver, Apples, Cranberries, Salt, Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, Pantothenic Acid, Riboflavin Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Tapioca, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Humanely Raised Beef Kidneys, Taurine, G.A.P. Step 4 Beef Bone Broth, Cinnamon, Turmeric, Organic Butternut Squash, Organic Blueberries, Organic Spinach, Organic Kale, Organic Apple Cider Vinegar, Organic Pumpkin Seeds, Organic Sunflower Seeds, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "dha_min": 0.2,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "omega_3_min": 0.5,
+        "omega_6_min": 1.5,
+        "taurine_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3750 kcal/kg, 450 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-dry-rawmix-tide-terrain-grain-free-dog-kibble.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 1.588,
+          "size_description": "3.5 lb",
+          "sku": "12938"
+        },
+        {
+          "size_kg": 9.072,
+          "size_description": "20 lb",
+          "sku": "12948"
+        }
+      ],
+      "source_id": "7162514473073"
+    },
+    {
+      "name": "RawMix Tide & Terrain Freeze Dried Raw Morsels for Dogs",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/rawmix-tide-terrain-freeze-dried-raw-dog",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "RawMix",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "Humanely Raised Beef, G.A.P. Step 4 Beef Liver, Wild-Alaskan Pollock, Humanely Raised Beef Kidneys, Wild-Caught Pacific Salmon, G.A.P. Step 4 Ground Beef Bone, Montmorillonite Clay, Sunflower Oil, Coconut Oil, Organic Pumpkin, Organic Carrots, G.A.P. Step 4 Beef Bone Broth, Salt, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Selenium Yeast, Calcium Iodate, Potassium Chloride, Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, Pantothenic Acid, Riboflavin Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Magnesium Sulfate, Taurine, Cinnamon, Turmeric, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 37.0,
+        "crude_fat_min": 32.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 7.0,
+        "taurine_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4645 kcal/kg, 231 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-dry-rawmix-tide-terrain-freeze-dried-raw-morsels-for-dogs.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.383,
+          "size_description": "13.5 oz",
+          "sku": "12919"
+        }
+      ],
+      "source_id": "7162548584561"
+    },
+    {
+      "name": "RawMix Front Range Freeze Dried Raw Morsels for Dogs",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/rawmix-front-range-freeze-dried-raw-dog",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "RawMix",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "Humanely Raised Beef, G.A.P. Step 1 Pork, G.A.P. Step 1 Pork Liver, G.A.P. Step 1 Pork Hearts, G.A.P. Step 4 Lamb, G.A.P. Step 1 Pork Bones, Montmorillonite Clay, Salmon Oil, G.A.P. Step 4 Beef Bone Broth, Organic Pumpkin, Organic Carrots, Coconut Oil, Salt, Potassium Chloride, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, Pantothenic Acid, Riboflavin Supplement, Vitamin D3 Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Taurine, Cinnamon, Turmeric, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 38.0,
+        "crude_fat_min": 35.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 7.0,
+        "taurine_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4759 kcal/kg, 237 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-dry-rawmix-front-range-freeze-dried-raw-morsels-for-dogs.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.383,
+          "size_description": "13.5 oz",
+          "sku": "12918"
+        }
+      ],
+      "source_id": "7162543964273"
+    },
+    {
+      "name": "RawMix Large Breed Ancient Grains Dog Kibble",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/large-breed-rawmix-for-dogs",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "RawMix",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "G.A.P. Step 2 Chicken, G.A.P. Step 2 Chicken Meal, Oats, Barley, Coconut Oil, Wild-Caught Pacific Salmon, G.A.P. Step 1 Turkey, Brown Rice, Flaxseed, Ocean Whitefish Meal, Pumpkin, Carrots, Natural Flavor (yeast), Apples, Salt, Calcium Carbonate, Potassium Chloride, Cranberries, Dicalcium Phosphate, Salmon Oil, Taurine, Potatoes, Tapioca, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Copper Proteinate, Manganese Proteinate, Calcium Iodate, G.A.P. Step 2 Chicken Livers, G.A.P. Step 2 Chicken Necks, Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin D3 Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Green Lipped Mussel, Choline Chloride, L-Carnitine, G.A.P. Step 2 Chicken Bone Broth, Cinnamon, Turmeric, Organic Butternut Squash, Organic Blueberries, Organic Spinach, Organic Kale, Organic Apple Cider Vinegar, Organic Pumpkin Seeds, Organic Sunflower Seeds, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 29.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "dha_min": 0.05,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "omega_3_min": 1.0,
+        "omega_6_min": 2.0,
+        "taurine_min": 0.2,
+        "l_carnitine_min": 100.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3600 kcal/kg, 435 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-dry-rawmix-large-breed-ancient-grains-dog-kibble.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 9.072,
+          "size_description": "20 lb",
+          "sku": "12947"
+        }
+      ],
+      "source_id": "7162527711345"
+    },
+    {
+      "name": "RawMix Large Breed Grain-Free Dog Kibble",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/large-breed-grain-free-rawmix-for-dogs",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "RawMix",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "G.A.P. Step 2 Chicken, G.A.P. Step 2 Chicken Meal, Potatoes, Sweet Potatoes, Coconut Oil, Wild-Caught Pacific Salmon, G.A.P. Step 1 Turkey, Flaxseed, Pumpkin, Ocean Whitefish Meal, Carrots, Natural Flavor (yeast), Apples, Salt, Cranberries, Calcium Carbonate, Salmon Oil, Dicalcium Phosphate, Taurine, Tapioca, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Copper Proteinate, Manganese Proteinate, Calcium Iodate, Choline Chloride, G.A.P. Step 2 Chicken Livers, G.A.P. Step 2 Chicken Necks, Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin D3 Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Green Lipped Mussel, Sunflower Oil, L-Carnitine, G.A.P. Step 2 Chicken Bone Broth, Cinnamon, Turmeric, Organic Butternut Squash, Organic Blueberries, Organic Spinach, Organic Kale, Organic Apple Cider Vinegar, Organic Pumpkin Seeds, Organic Sunflower Seeds, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "dha_min": 0.05,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "omega_3_min": 1.0,
+        "omega_6_min": 2.0,
+        "taurine_min": 0.2,
+        "l_carnitine_min": 100.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3650 kcal/kg, 435 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-dry-rawmix-large-breed-grain-free-dog-kibble.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 9.072,
+          "size_description": "20 lb",
+          "sku": "12946"
+        }
+      ],
+      "source_id": "7162518896753"
+    },
+    {
+      "name": "Salmon & Cod Topper for Dogs",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/salmon-cod-topper-for-dogs",
+      "channel": "retail",
+      "product_type": "wet",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "Salmon, Cod, Potato Starch",
+      "guaranteed_analysis": {
+        "crude_protein_min": 12.0,
+        "crude_fat_min": 4.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "images": [
+        "/products/open-farm/open-farm-wet-salmon-cod-topper-for-dogs.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.13,
+          "size_description": "4.59 oz (Case of 12)",
+          "sku": "14645"
+        }
+      ],
+      "source_id": "7013613961329"
+    },
+    {
+      "name": "Arctic Char Topper for Dogs",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/arctic-char-topper-for-dogs",
+      "channel": "retail",
+      "product_type": "wet",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "Arctic Char, Potato Starch",
+      "guaranteed_analysis": {
+        "crude_protein_min": 12.0,
+        "crude_fat_min": 8.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 72.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "images": [
+        "/products/open-farm/open-farm-wet-arctic-char-topper-for-dogs.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.13,
+          "size_description": "4.59 oz (Case of 12)",
+          "sku": "14644"
+        }
+      ],
+      "source_id": "7013608685681"
+    },
+    {
+      "name": "Salmon Topper for Dogs",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/salmon-topper-for-dogs",
+      "channel": "retail",
+      "product_type": "wet",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "Salmon, Potato Starch",
+      "guaranteed_analysis": {
+        "crude_protein_min": 10.0,
+        "crude_fat_min": 8.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "images": [
+        "/products/open-farm/open-farm-wet-salmon-topper-for-dogs.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.13,
+          "size_description": "4.59 oz (Case of 12)",
+          "sku": "14642"
+        }
+      ],
+      "source_id": "7013540823153"
+    },
+    {
+      "name": "Kind Earth Plant Pâté with Ancient Grains for Dogs",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/kind-earth-plant-pate-recipe-for-dogs",
+      "channel": "retail",
+      "product_type": "wet",
+      "product_line": "Kindearth",
+      "life_stage": "Adult",
+      "ingredients_raw": "Vegetable Broth, Oats, Garbanzo Beans (Chickpeas), Potato Protein, Natural Flavor, Carrots, Brown Rice, Flaxseed, Barley, Sunflower Oil, Agar Agar, Salt, Dicalcium Phosphate, Calcium Carbonate, Dried Chicory Root, Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, Pantothenic Acid, Biotin, Vitamin A Supplement, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement, Choline Chloride, Zinc Amino Acid Chelate, Iron Amino Acid Chelate, Copper Sulfate, Manganese Amino Acid Chelate, Sodium Selenite, Calcium Iodate, Potassium Chloride, Taurine, Turmeric",
+      "guaranteed_analysis": {
+        "crude_protein_min": 6.5,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1019 kcal/kg, 361 kcal/can",
+      "images": [
+        "/products/open-farm/open-farm-wet-kind-earth-plant-p-t-with-ancient-grains-for-dogs.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.354,
+          "size_description": "12.5 oz (Case of 12)",
+          "sku": "15075"
+        }
+      ],
+      "source_id": "7012036051057"
+    },
+    {
+      "name": "Surf & Turf Pâté for Dogs",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/surf-and-turf-pate-recipe-for-dogs",
+      "channel": "retail",
+      "product_type": "wet",
+      "life_stage": "Adult",
+      "ingredients_raw": "Ocean Whitefish, Fish Bone Broth, G.A.P. Step 4 Beef Bone Broth, Potatoes, G.A.P. Step 4 Beef Liver, Humanely Raised Beef, Sweet Potatoes, Flaxseed, Tapioca, Agar Agar, Sunflower Oil, Dried Chicory Root, Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, Pantothenic Acid, Biotin, Vitamin A Supplement, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement, Dicalcium Phosphate, Zinc Amino Acid Chelate, Iron Amino Acid Chelate, Manganese Amino Acid Chelate, Copper Sulfate, Sodium Selenite, Calcium Iodate, Spinach, Choline Chloride, Taurine, Turmeric",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.5,
+        "crude_fat_min": 2.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1019 kcal/kg, 361 kcal/can",
+      "images": [
+        "/products/open-farm/open-farm-wet-surf-turf-p-t-for-dogs.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.354,
+          "size_description": "12.5 oz (Case of 12)",
+          "sku": "15076"
+        }
+      ],
+      "source_id": "7012034871409"
+    },
+    {
+      "name": "Chicken & Grass-Fed Beef Pâté for Dogs",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/chicken-and-grass-fed-beef-pate-recipe-for-dogs",
+      "channel": "retail",
+      "product_type": "wet",
+      "life_stage": "Adult",
+      "ingredients_raw": "G.A.P. Step 2 Chicken, G.A.P. Step 2 Chicken Bone Broth, G.A.P. Step 4 Beef Bone Broth, G.A.P. Step 2 Chicken Livers, Humanely Raised Beef, Sweet Potatoes, Potatoes, Tapioca, Flaxseed, Carrots, Agar Agar, Dicalcium Phosphate, Potassium Chloride, Dried Chicory Root, Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, Pantothenic Acid, Biotin, Vitamin A Supplement, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement, Zinc Amino Acid Chelate, Iron Amino Acid Chelate, Copper Sulfate, Manganese Amino Acid Chelate, Sodium Selenite, Calcium Iodate, Spinach, Choline Chloride, Taurine, Turmeric",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.5,
+        "crude_fat_min": 6.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1154 kcal/kg, 409 kcal/can",
+      "images": [
+        "/products/open-farm/open-farm-wet-chicken-grass-fed-beef-p-t-for-dogs.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.354,
+          "size_description": "12.5 oz (Case of 12)",
+          "sku": "15073"
+        }
+      ],
+      "source_id": "7011719381105"
+    },
+    {
+      "name": "Chicken & Salmon Pâté for Dogs",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/chicken-and-salmon-pate-recipe-for-dogs",
+      "channel": "retail",
+      "product_type": "wet",
+      "life_stage": "Adult",
+      "ingredients_raw": "G.A.P. Step 2 Chicken, G.A.P. Step 2 Chicken Bone Broth, Potatoes, G.A.P. Step 2 Chicken Livers, Wild-Caught Pacific Salmon, Sweet Potatoes, Flaxseed, Tapioca, Agar Agar, Carrots, Dicalcium Phosphate, Potassium Chloride, Dried Chicory Root, Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, Pantothenic Acid, Biotin, Vitamin A Supplement, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement, Zinc Amino Acid Chelate, Iron Amino Acid Chelate, Copper Sulfate, Manganese Amino Acid Chelate, Sodium Selenite, Calcium Iodate, Spinach, Choline Chloride, Taurine, Turmeric",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.5,
+        "crude_fat_min": 5.5,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1159 kcal/kg, 410 kcal/can",
+      "images": [
+        "/products/open-farm/open-farm-wet-chicken-salmon-p-t-for-dogs.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.354,
+          "size_description": "12.5 oz (Case of 12)",
+          "sku": "15071"
+        }
+      ],
+      "source_id": "7011701358705"
+    },
+    {
+      "name": "Harvest Chicken Pâté for Dogs",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/harvest-chicken-pate-recipe-for-dogs",
+      "channel": "retail",
+      "product_type": "wet",
+      "life_stage": "Adult",
+      "ingredients_raw": "G.A.P. Step 2 Chicken, G.A.P. Step 2 Chicken Bone Broth, Potatoes, Chicken Liver, Sweet Potatoes, Flaxseed, Tapioca, Agar Agar, Carrots, Dicalcium Phosphate, Dried Chicory Root, Potassium Chloride, Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, Pantothenic Acid, Biotin, Vitamin A Supplement, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement, Zinc Amino Acid Chelate, Iron Amino Acid Chelate, Copper Sulfate, Manganese Amino Acid Chelate, Sodium Selenite, Calcium Iodate, Spinach, Choline Chloride, Taurine, Turmeric",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1082 kcal/kg, 383 kcal/can",
+      "images": [
+        "/products/open-farm/open-farm-wet-harvest-chicken-p-t-for-dogs.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.354,
+          "size_description": "12.5 oz (Case of 12)",
+          "sku": "15070"
+        }
+      ],
+      "source_id": "7011685728369"
+    },
+    {
+      "name": "Goodbowl Wild-Caught Salmon Freeze Dried Raw Morsels for Dogs",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/goodbowl-wild-caught-salmon-freeze-dried-raw-topper",
+      "channel": "retail",
+      "product_type": "supplements",
+      "product_line": "Goodbowl",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "Wild-Caught Pacific Salmon, Ocean Whitefish, Oats, Barley, Mixed Tocopherols (a natural preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 10.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 7.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3400 kcal/kg, 220 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-supplements-goodbowl-wild-caught-salmon-freeze-dried-raw-morsels-for-dogs.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.227,
+          "size_description": "8 oz",
+          "sku": "12906"
+        },
+        {
+          "size_kg": 0.652,
+          "size_description": "23 oz",
+          "sku": "12916"
+        },
+        {
+          "size_kg": 1.304,
+          "size_description": "46 oz",
+          "sku": "12926"
+        }
+      ],
+      "source_id": "6991298658417"
+    },
+    {
+      "name": "Goodbowl Harvest Chicken Freeze Dried Raw Morsels for Dogs",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/goodbowl-harvest-chicken-recipe-freeze-dried-raw-topper",
+      "channel": "retail",
+      "product_type": "supplements",
+      "product_line": "Goodbowl",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "G.A.P. Step 2 Chicken, G.A.P. Step 2 Chicken Livers, Oats, Barley, Mixed Tocopherols (a natural preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 32.0,
+        "crude_fat_min": 13.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 7.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3700 kcal/kg, 275 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-supplements-goodbowl-harvest-chicken-freeze-dried-raw-morsels-for-dogs.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.227,
+          "size_description": "8 oz",
+          "sku": "12904"
+        },
+        {
+          "size_kg": 0.652,
+          "size_description": "23  oz",
+          "sku": "12914"
+        },
+        {
+          "size_kg": 1.304,
+          "size_description": "46 oz",
+          "sku": "12924"
+        }
+      ],
+      "source_id": "6991295905905"
+    },
+    {
+      "name": "Goodbowl Grass-Fed Beef Freeze Dried Raw Morsels for Dogs",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/goodbowl-grass-fed-beef-freeze-dried-raw-topper",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Goodbowl",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "Humanely Raised Beef, G.A.P. Step 4 Beef Liver, Oats, Barley, Mixed Tocopherols (a natural preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 23.0,
+        "crude_fat_min": 21.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 7.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4100 kcal/kg, 335 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-dry-goodbowl-grass-fed-beef-freeze-dried-raw-morsels-for-dogs.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.227,
+          "size_description": "8 oz",
+          "sku": "12905"
+        },
+        {
+          "size_kg": 0.652,
+          "size_description": "23 oz",
+          "sku": "12915"
+        },
+        {
+          "size_kg": 1.304,
+          "size_description": "46 oz",
+          "sku": "12925"
+        }
+      ],
+      "source_id": "6991292366961"
+    },
+    {
+      "name": "Goodbowl Grass-Fed Beef & Brown Rice Dog Kibble",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/goodbowl-grass-fed-beef-brown-rice-recipe-for-dogs",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Goodbowl",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "Certified Humane Beef, Ocean Menhaden Fish Meal, Whole Grain Barley, Field Peas, Fava Beans, Brown Rice, Coconut Oil, Flaxseed, Sunflower Oil, Natural Flavor (yeast), Salt, Salmon Oil, Pumpkin, Carrots, Dicalcium Phosphate, Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-calcium Pantothenate, Riboflavin Supplement, Vitamin D3 Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Taurine, L-Threonine, Dried Chicory Root, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Selenium Yeast, Calcium Iodate, Choline Chloride, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "dha_min": 0.5,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "taurine_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3500 kcal/kg, 378 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-dry-goodbowl-grass-fed-beef-brown-rice-dog-kibble.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 1.588,
+          "size_description": "3.5 lb",
+          "sku": "12001"
+        },
+        {
+          "size_kg": 9.979,
+          "size_description": "22 lb",
+          "sku": "12004"
+        }
+      ],
+      "source_id": "6963142721649"
+    },
+    {
+      "name": "Goodbowl Wild-Caught Salmon & Brown Rice Dog Kibble",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/goodbowl-wild-caught-salmon-brown-rice-recipe-for-dogs",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Goodbowl",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "Wild-caught Pacific salmon, Ocean Menhaden Fish Meal, Field Peas, Fava Beans, Sorghum, Brown Rice, Sunflower Oil, Oats, Flaxseed, Natural Flavor (yeast), Dicalcium Phosphate, Coconut Oil, Pumpkin, Salt, Carrots, Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Selenium Yeast, Calcium Iodate, L-Threonine, Taurine, Dried Chicory Root, Choline Chloride, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "dha_min": 0.1,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "taurine_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3500 kcal/kg, 378 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-dry-goodbowl-wild-caught-salmon-brown-rice-dog-kibble.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 1.588,
+          "size_description": "3.5 lb",
+          "sku": "12002"
+        },
+        {
+          "size_kg": 9.979,
+          "size_description": "22 lb",
+          "sku": "12005"
+        }
+      ],
+      "source_id": "6963140919409"
+    },
+    {
+      "name": "New Zealand Venison & Ancient Grains Dog Kibble",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/new-zealand-venison-ancient-grains-dry-dog-food",
+      "channel": "retail",
+      "product_type": "dry",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "Certified Humane Venison, Oats, Ocean Menhaden Fish Meal, Whole Grain Barley, Sorghum, Millet, Whitefish Meal, Coconut Oil, Pumpkin, Natural Flavor (yeast), Carrots, Flaxseed, Apples, Salmon Oil, Sunflower Oil, Cranberries, Calcium Carbonate, Potassium Chloride, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Selenium Yeast, Calcium Iodate, Taurine, Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-calcium Pantothenate, Riboflavin Supplement, Vitamin D3 Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Dried Chicory Root, L-Threonine, Salt, Cinnamon, Turmeric, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "dha_min": 0.11,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "omega_3_min": 0.4,
+        "omega_6_min": 1.25,
+        "taurine_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3600 kcal/kg, 385 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-dry-new-zealand-venison-ancient-grains-dog-kibble.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 1.814,
+          "size_description": "4 lb",
+          "sku": "12103"
+        },
+        {
+          "size_kg": 9.979,
+          "size_description": "22 lb",
+          "sku": "12105"
+        }
+      ],
+      "source_id": "6952150237297"
+    },
+    {
+      "name": "RawMix Wild Ocean Ancient Grains Dog Kibble",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/wild-ocean-ancient-grains-for-dogs",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "RawMix",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "Ocean Whitefish, Menhaden Fish Meal, Barley, Brown Rice, Ocean Rockfish, Herring Meal, Wild-Caught Pacific Salmon, Coconut Oil, Sunflower Oil (Preserved with Mixed Tocopherols), Pumpkin, Natural Flavor (yeast), Carrots, Apples, Cranberries, Salt, Salmon Oil (Preserved with Mixed Tocopherols), Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, Pantothenic Acid, Riboflavin Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Potatoes, Tapioca, Dried Chicory Root, Choline Chloride, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Selenium Yeast, Calcium Iodate, Potassium Chloride, Taurine, Dried Kelp, Organic Butternut Squash, Magnesium Sulfate, Organic Blueberries, Montmorillonite Clay, Miscanthus Grass, Fish Bone Broth, Flaxseed, Cinnamon, Turmeric, Organic Spinach, Dandelion Greens, Organic Kale, Organic Apple Cider Vinegar, Organic Pumpkin Seeds, Organic Sunflower Seeds, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 31.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "dha_min": 0.15,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "omega_3_min": 0.5,
+        "omega_6_min": 2.0,
+        "taurine_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3695 kcal/kg, 380 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-dry-rawmix-wild-ocean-ancient-grains-dog-kibble.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 1.588,
+          "size_description": "3.5 lb",
+          "sku": "12935"
+        },
+        {
+          "size_kg": 9.072,
+          "size_description": "20 lb",
+          "sku": "12945"
+        }
+      ],
+      "source_id": "6847260885105"
+    },
+    {
+      "name": "RawMix Open Prairie Ancient Grains Dog Kibble",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/open-prairie-ancient-grains-for-dogs",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "RawMix",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "G.A.P. Step 2 Chicken, G.A.P. Step 1 Turkey, Menhaden Fish Meal, Barley, Brown Rice, Herring Meal, Coconut Oil, Pumpkin, Natural Flavor (yeast), Sunflower Oil (Preserved with Mixed Tocopherols), Carrots, Apples, Cranberries, G.A.P. Step 2 Chicken Livers, Potassium Chloride, G.A.P. Step 2 Chicken Necks, Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, Pantothenic Acid, Riboflavin Supplement, Vitamin D3 Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Choline Chloride, Potatoes, Tapioca, Dried Chicory Root, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Selenium Yeast, Calcium Iodate, Salt, Taurine, Dried Kelp, Organic Butternut Squash, Magnesium Sulfate, Organic Blueberries, Salmon Oil (Preserved with Mixed Tocopherols), G.A.P. Step 2 Turkey Gizzards, Montmorillonite Clay, Miscanthus Grass, G.A.P. Step 2 Chicken Bone Broth, Flaxseed, Cinnamon, Turmeric, Organic Spinach, Dandelion Greens, Organic Kale, Organic Apple Cider Vinegar, Organic Pumpkin Seeds, Organic Sunflower Seeds, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 31.0,
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "dha_min": 0.1,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "omega_3_min": 0.25,
+        "omega_6_min": 2.5,
+        "taurine_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3795 kcal/kg, 425 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-dry-rawmix-open-prairie-ancient-grains-dog-kibble.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 1.588,
+          "size_description": "3.5 lb",
+          "sku": "12934"
+        },
+        {
+          "size_kg": 9.072,
+          "size_description": "20 lb",
+          "sku": "12944"
+        }
+      ],
+      "source_id": "6847259377777"
+    },
+    {
+      "name": "RawMix Wild Ocean Grain-Free Dog Kibble",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/wild-ocean-recipe-for-dogs",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "RawMix",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "Ocean Whitefish, Menhaden Fish Meal, Potatoes, Wild-caught Pacific salmon, Sweet Potatoes, Herring Meal, Tapioca, Coconut Oil, Ocean Rockfish, Sunflower Oil (Preserved with Mixed Tocopherols), Pumpkin, Natural Flavor (yeast), Carrots, Apples, Cranberries, Salt, Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, Pantothenic Acid, Riboflavin Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Potassium Chloride, Choline Chloride, Dried Chicory Root, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Selenium Yeast, Calcium Iodate, Taurine, Dried Kelp, Organic Butternut Squash, Organic Blueberries, Montmorillonite Clay, Miscanthus Grass, Fish Bone Broth, Flaxseed, Cinnamon, Turmeric, Organic Spinach, Dandelion Greens, Organic Kale, Organic Apple Cider Vinegar, Organic Pumpkin Seeds, Organic Sunflower Seeds, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 31.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "dha_min": 0.15,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "omega_3_min": 0.5,
+        "omega_6_min": 2.0,
+        "taurine_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3695 kcal/kg, 380 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-dry-rawmix-wild-ocean-grain-free-dog-kibble.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 1.588,
+          "size_description": "3.5 lb",
+          "sku": "12932"
+        },
+        {
+          "size_kg": 9.072,
+          "size_description": "20 lb",
+          "sku": "12942"
+        }
+      ],
+      "source_id": "6847256461425"
+    },
+    {
+      "name": "RawMix Front Range Grain-Free Dog Kibble",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/front-range-recipe-for-dogs",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "RawMix",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "Humanely Raised Beef, Menhaden Fish Meal, Potatoes, Sweet Potatoes, G.A.P. Step 1 Pork, G.A.P. Step 4 Lamb, Herring Meal, Coconut Oil, Pumpkin, Natural Flavor (yeast), Carrots, Apples, Sunflower Oil (Preserved with Mixed Tocopherols), Cranberries, G.A.P. Step 1 Pork Liver, Tapioca, Salt, Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, Pantothenic Acid, Riboflavin Supplement, Vitamin D3 Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Choline Chloride, Dried Chicory Root, Salmon Oil (Preserved with Mixed Tocopherols), Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Selenium Yeast, Calcium Iodate, Magnesium Sulfate, Taurine, Dried Kelp, Organic Butternut Squash, Organic Blueberries, Humanely Raised Beef Kidneys, Montmorillonite Clay, Miscanthus Grass, Potassium Chloride, G.A.P. Step 4 Beef Bone Broth, Flaxseed, Cinnamon, Turmeric, Organic Spinach, Dandelion Greens, Organic Kale, Organic Apple Cider Vinegar, Organic Pumpkin Seeds, Organic Sunflower Seeds, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "dha_min": 0.11,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "omega_3_min": 0.4,
+        "omega_6_min": 1.5,
+        "taurine_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3545 kcal/kg, 405 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-dry-rawmix-front-range-grain-free-dog-kibble.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 1.588,
+          "size_description": "3.5 lb",
+          "sku": "12930"
+        },
+        {
+          "size_kg": 9.072,
+          "size_description": "20 lb",
+          "sku": "12940"
+        }
+      ],
+      "source_id": "6847252856945"
+    },
+    {
+      "name": "RawMix Front Range Ancient Grains Dog Kibble",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/front-range-ancient-grains-for-dogs",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "RawMix",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "Humanely Raised Beef, Menhaden Fish Meal, Barley, Brown Rice, G.A.P. Step 1 Pork, Herring Meal, Oats, G.A.P. Step 4 Lamb, Coconut Oil, Pumpkin, Natural Flavor (yeast), Carrots, Sunflower Oil (Preserved with Mixed Tocopherols), Apples, Cranberries, G.A.P. Step 1 Pork Liver, Potatoes, Tapioca, Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, Pantothenic Acid, Riboflavin Supplement, Vitamin D3 Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Salt, Potassium Chloride, Choline Chloride, Dried Chicory Root, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Selenium Yeast, Calcium Iodate, Magnesium Sulfate, Taurine, Dried Kelp, Organic Butternut Squash, Organic Blueberries, Salmon Oil (Preserved with Mixed Tocopherols), Humanely Raised Beef Kidneys, Montmorillonite Clay, Miscanthus Grass, G.A.P. Step 4 Beef Bone Broth, Flaxseed, Cinnamon, Turmeric, Organic Spinach, Dandelion Greens, Organic Kale, Organic Apple Cider Vinegar, Organic Pumpkin Seeds, Organic Sunflower Seeds, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 29.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "dha_min": 0.8,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "omega_3_min": 0.25,
+        "omega_6_min": 1.8,
+        "taurine_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3695 kcal/kg, 435 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-dry-rawmix-front-range-ancient-grains-dog-kibble.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 1.588,
+          "size_description": "3.5 lb",
+          "sku": "12933"
+        },
+        {
+          "size_kg": 9.072,
+          "size_description": "20 lb",
+          "sku": "12943"
+        }
+      ],
+      "source_id": "6847258132593"
+    },
+    {
+      "name": "Surf & Turf Freeze Dried Raw Patties for Dogs",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/surf-and-turf-patties",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Freeze Dried Raw",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "Humanely Raised Beef, Wild-Caught Salmon, Humanely Raised Beef Hearts, G.A.P. Step 4 Beef Liver, Humanely Raised Beef Kidneys, Organic Butternut Squash, Organic Carrots, Organic Cranberries, Organic Blueberries, Montmorillonite Clay, Dicalcium Phosphate, Coconut Oil, Dried Chicory Root, G.A.P. Step 4 Ground Beef Bone, Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, Pantothenic Acid, Riboflavin Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Salt, Potassium Chloride, Organic Spinach, Calcium Carbonate, Organic Apple Cider Vinegar, Organic Kale, Choline Chloride, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Selenium Yeast, Calcium Iodate, Salmon Oil, Dried Kelp, Mixed Tocopherols (a preservative), Magnesium Sulfate, Organic Pumpkin Seeds, Organic Sunflower Seeds, Cinnamon, Turmeric, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 37.0,
+        "crude_fat_min": 30.5,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 5.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4428 kcal/kg",
+      "images": [
+        "/products/open-farm/open-farm-dry-surf-turf-freeze-dried-raw-patties-for-dogs.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.298,
+          "size_description": "10.5 oz",
+          "sku": "12903"
+        },
+        {
+          "size_kg": 0.496,
+          "size_description": "17.5 oz",
+          "sku": "12913"
+        }
+      ],
+      "source_id": "6834702516337"
+    },
+    {
+      "name": "Homestead Turkey Freeze Dried Raw Patties for Dogs",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/freeze-dried-turkey-patties",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Freeze Dried Raw",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "G.A.P. Step 1 Turkey with Ground Bone, G.A.P. Step 2 Turkey Livers, G.A.P. Step 2 Turkey Necks, Organic Butternut Squash, Organic Carrots, Organic Cranberries, Organic Blueberries, G.A.P. Step 2 Turkey Gizzards, Montmorillonite Clay, Fenugreek Seeds, Coconut Oil, Potassium Chloride, Dried Chicory Root, Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, Pantothenic Acid, Riboflavin Supplement, Vitamin D3 Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Salt, Organic Spinach, Organic Apple Cider Vinegar, Organic Kale, Choline Chloride, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Selenium Yeast, Calcium Iodate, Dried Kelp, Mixed Tocopherols (a preservative), Organic Pumpkin Seeds, Organic Sunflower Seeds, Cinnamon, Turmeric, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 42.0,
+        "crude_fat_min": 30.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 5.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4612 kcal/kg",
+      "images": [
+        "/products/open-farm/open-farm-dry-homestead-turkey-freeze-dried-raw-patties-for-dogs.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.298,
+          "size_description": "10.5 oz",
+          "sku": "12900"
+        },
+        {
+          "size_kg": 0.496,
+          "size_description": "17.5 oz",
+          "sku": "12910"
+        }
+      ],
+      "source_id": "6834702319729"
+    },
+    {
+      "name": "Grass-Fed Beef Freeze Dried Raw Patties for Dogs",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/freeze-dried-beef-patties",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Freeze Dried Raw",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "Humanely Raised Beef, Humanely Raised Beef Hearts, G.A.P. Step 4 Beef Liver, Humanely Raised Beef Kidneys, Organic Butternut Squash, G.A.P. Step 4 Ground Beef Bone, Organic Carrots, Organic Cranberries, Organic Blueberries, Montmorillonite Clay, Dicalcium Phosphate, Calcium Carbonate, Coconut Oil, Salt, Dried Chicory Root, Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, Pantothenic Acid, Riboflavin Supplement, Vitamin D3 Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Potassium Chloride, Organic Spinach, Organic Apple Cider Vinegar, Organic Kale, Salmon Oil, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Selenium Yeast, Calcium Iodate, Dried Kelp, Mixed Tocopherols (a preservative), Choline Chloride, Organic Pumpkin Seeds, Organic Sunflower Seeds, Cinnamon, Turmeric, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 41.0,
+        "crude_fat_min": 38.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 5.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4928 kcal/kg",
+      "images": [
+        "/products/open-farm/open-farm-dry-grass-fed-beef-freeze-dried-raw-patties-for-dogs.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.298,
+          "size_description": "10.5 oz",
+          "sku": "12902"
+        },
+        {
+          "size_kg": 0.496,
+          "size_description": "17.5 oz",
+          "sku": "12912"
+        }
+      ],
+      "source_id": "6834678104177"
+    },
+    {
+      "name": "Small Breed Grain-Free Dog Kibble",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/small-breed-dry-dog-food",
+      "channel": "retail",
+      "product_type": "dry",
+      "ingredients_raw": "G.A.P. Step 2 Chicken, G.A.P. Step 1 Turkey, Ocean Menhaden Fish Meal, Herring Meal, Garbanzo Beans (Chickpeas), Sweet Potatoes, Natural Flavor (yeast), Coconut Oil, Pumpkin, Flaxseed, Kale, Carrots, Apples, Blueberries, Sunflower Oil, Miscanthus Grass, Cranberries, Dried Chicory Root, Choline Chloride, Salmon Oil, Calcium Carbonate, Potassium Chloride, Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-calcium Pantothenate, Riboflavin Supplement, Vitamin D3 Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Taurine, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Selenium Yeast, Calcium Iodate, Dried Kelp, Salt, New Zealand Green Lipped Mussel, Mixed Tocopherols (a natural preservative), Parsley, Peppermint, Cinnamon, Turmeric, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 34.0,
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.15,
+        "calcium_min": 1.5,
+        "phosphorus_min": 1.0,
+        "omega_3_min": 1.2,
+        "omega_6_min": 2.5,
+        "taurine_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3780 kcal/kg, 450 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-dry-small-breed-grain-free-dog-kibble.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 1.814,
+          "size_description": "4 lb",
+          "sku": "12805"
+        },
+        {
+          "size_kg": 4.99,
+          "size_description": "11 lb",
+          "sku": "12806"
+        }
+      ],
+      "source_id": "6825607037041"
+    },
+    {
+      "name": "Small Breed Ancient Grains Dog Kibble",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/ancient-grain-food-for-small-breeds",
+      "channel": "retail",
+      "product_type": "dry",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "Ocean Whitefish, Oats, Whitefish Meal, Millet, Quinoa, Brown Rice, Coconut Oil, Pumpkin, Herring Meal, Natural Flavor (yeast), Salmon Oil, Carrots, Apples, Cranberries, Salt, Sunflower Oil, Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Dried Chicory Root, Choline Chloride, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Selenium Yeast, Calcium Iodate, Potassium Chloride, Taurine, Mixed Tocopherols (a natural preservative), Cinnamon, Turmeric, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 27.5,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.15,
+        "calcium_min": 1.5,
+        "phosphorus_min": 1.0,
+        "omega_3_min": 1.2,
+        "omega_6_min": 2.5,
+        "taurine_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3750 kcal/kg, 436 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-dry-small-breed-ancient-grains-dog-kibble.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 1.814,
+          "size_description": "4 lb",
+          "sku": "12100"
+        },
+        {
+          "size_kg": 4.99,
+          "size_description": "11 lb",
+          "sku": "12101"
+        }
+      ],
+      "source_id": "6826310697073"
+    },
+    {
+      "name": "Farmer's Table Pork Grain-Free Dog Kibble",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/pork-dry-dog-food",
+      "channel": "retail",
+      "product_type": "dry",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "G.A.P. Step 1 Pork, Garbanzo Beans (Chickpeas), Whitefish Meal, Field Peas, Green Lentils, Ocean Menhaden Fish Meal, Sweet Potatoes, Coconut Oil, Tomato, Pumpkin, Natural Flavor (yeast), Flaxseed, Carrots, Apples, Sunflower Oil, Cranberries, Salt, Butternut Squash, Dried Chicory Root, Salmon Oil, Sun Cured Alfalfa, Choline Chloride, Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-calcium Pantothenate, Riboflavin Supplement, Vitamin D3 Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Selenium Yeast, Calcium Iodate, Dicalcium Phosphate, Beet Root, Taurine, Potassium Chloride, Mixed Tocopherols (a natural preservative), Cinnamon, Turmeric, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "dha_min": 0.11,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "omega_6_min": 1.25,
+        "omega_3_min": 0.45
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3521 kcal/kg, 387 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-dry-farmer-s-table-pork-grain-free-dog-kibble.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 1.814,
+          "size_description": "4 lb",
+          "sku": "12830"
+        },
+        {
+          "size_kg": 4.99,
+          "size_description": "11 lb",
+          "sku": "12831"
+        },
+        {
+          "size_kg": 9.979,
+          "size_description": "22 lb",
+          "sku": "12832"
+        }
+      ],
+      "source_id": "6814369579121"
+    },
+    {
+      "name": "Whitefish Grain-Free Dog Kibble",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/whitefish-dry-dog-food",
+      "channel": "retail",
+      "product_type": "dry",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "Ocean Whitefish, Garbanzo Beans (Chickpeas), Whitefish Meal, Field Peas, Green Lentils, Ocean Menhaden Fish Meal, Coconut Oil, Pumpkin, Tomato, Natural Flavor (yeast), Flaxseed, Carrots, Sunflower Oil, Apples, Cranberries, Salt, Dried Chicory Root, Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Choline Chloride, Sun Cured Alfalfa, Salmon Oil, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Selenium Yeast, Calcium Iodate, Taurine, Potassium Chloride, Mixed Tocopherols (a natural preservative), Cinnamon, Turmeric, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "dha_min": 0.11,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "omega_6_min": 1.25,
+        "omega_3_min": 0.4
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3437 kcal/kg, 390 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-dry-whitefish-grain-free-dog-kibble.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 1.814,
+          "size_description": "4 lb",
+          "sku": "12840"
+        },
+        {
+          "size_kg": 4.99,
+          "size_description": "11 lb",
+          "sku": "12841"
+        },
+        {
+          "size_kg": 9.979,
+          "size_description": "22 lb",
+          "sku": "12842"
+        }
+      ],
+      "source_id": "6814366564465"
+    },
+    {
+      "name": "Pasture-Raised Lamb Grain-Free Dog Kibble",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/lamb-dry-dog-food",
+      "channel": "retail",
+      "product_type": "dry",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "G.A.P. Step 4 Lamb, Garbanzo Beans (Chickpeas), Whitefish Meal, Field Peas, Herring Meal, Coconut Oil, Red Lentils, Green Lentils, Pumpkin, Natural Flavor (yeast), Carrots, Coconut Meal, Apples, Sunflower Oil, Salt, Cranberries, Dried Chicory Root, Salmon Oil, Sun Cured Alfalfa, Choline Chloride, Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-calcium Pantothenate, Riboflavin Supplement, Vitamin D3 Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Selenium Yeast, Calcium Iodate, Taurine, Mixed Tocopherols (a natural preservative), Cinnamon, Turmeric, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "dha_min": 0.11,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "taurine_min": 0.1,
+        "omega_6_min": 1.25,
+        "omega_3_min": 0.4
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3625 kcal/kg, 430 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-dry-pasture-raised-lamb-grain-free-dog-kibble.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 1.814,
+          "size_description": "4 lb",
+          "sku": "12850"
+        },
+        {
+          "size_kg": 4.99,
+          "size_description": "11 lb",
+          "sku": "12851"
+        },
+        {
+          "size_kg": 9.979,
+          "size_description": "22 lb",
+          "sku": "12852"
+        }
+      ],
+      "source_id": "6814364106865"
+    },
+    {
+      "name": "Senior Grain-Free Dog Kibble",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/senior-dry-dog-food",
+      "channel": "retail",
+      "product_type": "dry",
+      "life_stage": "Adult",
+      "ingredients_raw": "G.A.P. Step 1 Turkey, G.A.P. Step 2 Chicken, Sweet Potatoes, Whitefish Meal, Field Peas, Garbanzo Beans (Chickpeas), Herring Meal, Green Lentils, Coconut Oil, Flaxseed, Pumpkin, Natural Flavor (yeast), Salmon Oil, Red Lentils, Carrots, Apples, Dandelion Greens, Dicalcium Phosphate, Cranberries, Salt, Raspberries, Dried Chicory Root, Sun Cured Alfalfa, Taurine, Choline Chloride, Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-calcium Pantothenate, Riboflavin Supplement, Vitamin D3 Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Selenium Yeast, Calcium Iodate, Mixed Tocopherols (a natural preservative), Cinnamon, Turmeric, New Zealand Green Lipped Mussel, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 31.0,
+        "crude_fat_min": 12.5,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "dha_min": 0.1,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "omega_6_min": 2.0,
+        "omega_3_min": 0.4,
+        "glucosamine_min": 1300.0,
+        "chondroitin_min": 1550.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3600 kcal/kg, 401 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-dry-senior-grain-free-dog-kibble.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 1.814,
+          "size_description": "4 lb",
+          "sku": "12895"
+        },
+        {
+          "size_kg": 9.979,
+          "size_description": "22 lb",
+          "sku": "12897"
+        }
+      ],
+      "source_id": "6814358372465"
+    },
+    {
+      "name": "New Zealand Venison Grain-Free Dog Kibble",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/new-zealand-venison-dry-dog-food",
+      "channel": "retail",
+      "product_type": "dry",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "Certified Humane Venison, Field Peas, Whitefish Meal, Sweet Potatoes, Herring Meal, Garbanzo Beans (Chickpeas), Red Lentils, Green Lentils, Coconut Oil, Flaxseed, Pumpkin, Natural Flavor (yeast), Carrots, Apples, Sunflower Oil, Salmon Oil, Cranberries, Dried Chicory Root, Salt, Sun Cured Alfalfa, Choline Chloride, Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-calcium Pantothenate, Riboflavin Supplement, Vitamin D3 Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Selenium Yeast, Calcium Iodate, Taurine, Mixed Tocopherols (a natural preservative), Cinnamon, Turmeric, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "dha_min": 0.11,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "taurine_min": 0.2,
+        "omega_6_min": 1.25,
+        "omega_3_min": 0.4
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3670 kcal/kg, 440 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-dry-new-zealand-venison-grain-free-dog-kibble.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 1.814,
+          "size_description": "4 lb",
+          "sku": "12880"
+        },
+        {
+          "size_kg": 4.99,
+          "size_description": "11 lb",
+          "sku": "12881"
+        },
+        {
+          "size_kg": 9.979,
+          "size_description": "22 lb",
+          "sku": "12882"
+        }
+      ],
+      "source_id": "6814289854577"
+    },
+    {
+      "name": "Grass-Fed Beef Grain-Free Dog Kibble",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/dry-dog-food-with-beef",
+      "channel": "retail",
+      "product_type": "dry",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "Certified Humane Beef, Whitefish Meal, Field Peas, Sweet Potatoes, Certified Humane Beef Liver, Pumpkin, Coconut Oil, Garbanzo Beans (Chickpeas), Herring Meal, Red Lentils, Green Lentils, Flaxseed, Natural Flavor (yeast), Carrots, Apples, Sunflower Oil, Cranberries, Dried Chicory Root, Salt, Sun Cured Alfalfa, Salmon Oil, Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-calcium Pantothenate, Riboflavin Supplement, Vitamin D3 Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Choline Chloride, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Selenium Yeast, Calcium Iodate, Taurine, Calcium Carbonate, Mixed Tocopherols (a natural preservative), Potassium Chloride, Cinnamon, Turmeric, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "dha_min": 0.11,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "omega_6_min": 1.25,
+        "omega_3_min": 0.4
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3625 kcal/kg, 430 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-dry-grass-fed-beef-grain-free-dog-kibble.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 1.814,
+          "size_description": "4 lb",
+          "sku": "12870"
+        },
+        {
+          "size_kg": 4.99,
+          "size_description": "11 lb",
+          "sku": "12871"
+        },
+        {
+          "size_kg": 9.979,
+          "size_description": "22 lb",
+          "sku": "12872"
+        }
+      ],
+      "source_id": "6814271701105"
+    },
+    {
+      "name": "Homestead Turkey & Chicken Grain-Free Dog Kibble",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/chicken-and-turkey-dry-dog-food",
+      "channel": "retail",
+      "product_type": "dry",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "G.A.P. Step 1 Turkey, G.A.P. Step 2 Chicken, Whitefish Meal, Potatoes, Garbanzo Beans (Chickpeas), Green Lentils, Field Peas, Coconut Oil, Ocean Menhaden Fish Meal, Pumpkin, Tomato, Natural Flavor (yeast), Flaxseed, Carrots, Apples, Dried Chicory Root, Salmon Oil, Salt, Potassium Chloride, Sun Cured Alfalfa, Sunflower Oil, Choline Chloride, Vitamin A Supplement, Vitamin E Supplement, Niacin Supplement, D-calcium Pantothenate, Riboflavin Supplement, Vitamin D3 Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Selenium Yeast, Calcium Iodate, Taurine, Mixed Tocopherols (a natural preservative), Cinnamon, Turmeric, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "dha_min": 0.05,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "omega_6_min": 1.25,
+        "omega_3_min": 0.4
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3600 kcal/kg, 436 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-dry-homestead-turkey-chicken-grain-free-dog-kibble.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 1.814,
+          "size_description": "4 lb",
+          "sku": "12820"
+        },
+        {
+          "size_kg": 4.99,
+          "size_description": "11 lb",
+          "sku": "12821"
+        },
+        {
+          "size_kg": 9.979,
+          "size_description": "22 lb",
+          "sku": "12822"
+        }
+      ],
+      "source_id": "6814288511089"
+    },
+    {
+      "name": "Wild-Caught Salmon Grain-Free Dog Kibble",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/wild-caught-salmon-dry-dog-food",
+      "channel": "retail",
+      "product_type": "dry",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "Wild-caught Pacific salmon, Garbanzo Beans (Chickpeas), Whitefish Meal, Field Peas, Herring Meal, Red Lentils, Coconut Oil, Green Lentils, Coconut Meal, Pumpkin, Natural Flavor (yeast), Carrots, Sunflower Oil, Apples, Salt, Cranberries, Flaxseed, Dried Chicory Root, Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Salmon Oil, Sun Cured Alfalfa, Dicalcium Phosphate, Choline Chloride, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Selenium Yeast, Calcium Iodate, Taurine, Mixed Tocopherols (a natural preservative), Cinnamon, Turmeric, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "dha_min": 0.11,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "taurine_min": 0.1,
+        "omega_6_min": 1.25,
+        "omega_3_min": 0.4
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3600 kcal/kg, 420 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-dry-wild-caught-salmon-grain-free-dog-kibble.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 1.814,
+          "size_description": "4 lb",
+          "sku": "12860"
+        },
+        {
+          "size_kg": 4.99,
+          "size_description": "11 lb",
+          "sku": "12861"
+        },
+        {
+          "size_kg": 9.979,
+          "size_description": "22 lb",
+          "sku": "12862"
+        }
+      ],
+      "source_id": "6814283726961"
+    },
+    {
+      "name": "Kind Earth Plant-Based Dog Kibble",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/plant-based-dog-food",
+      "channel": "retail",
+      "product_type": "dry",
+      "product_line": "Kindearth",
+      "ingredients_raw": "Whole Grain Barley, Fava Beans, Oats, Dried Yeast, Sweet Potatoes, Potato Protein, Coconut Oil, Sunflower Oil, Flaxseed, Natural Flavor (plant), Tricalcium Phosphate, Pumpkin, Kale, Carrots, Dandelion Greens, Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, Pantothenic Acid, Vitamin D2 Supplement, Riboflavin Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Choline Chloride, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Selenium Yeast, Calcium Iodate, Potassium Chloride, Dried Kelp, Taurine, Salt, DL-Methionine, Mixed Tocopherols (a natural preservative), Cinnamon, Turmeric, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 22.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "calcium_min": 0.5,
+        "phosphorus_min": 0.4,
+        "taurine_min": 0.1,
+        "omega_3_min": 0.6,
+        "omega_6_min": 2.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3595 kcal/kg, 354 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-dry-kind-earth-plant-based-dog-kibble.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 1.588,
+          "size_description": "3.5 lb",
+          "sku": "12810"
+        },
+        {
+          "size_kg": 9.072,
+          "size_description": "20 lb",
+          "sku": "12811"
+        }
+      ],
+      "source_id": "6749854564465"
+    },
+    {
+      "name": "Immune Health Supplement Chews for Dogs",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/immune-supplements",
+      "channel": "retail",
+      "product_type": "supplements",
+      "life_stage": "Adult",
+      "ingredients_raw": "Turmeric, Apple Cider Vinegar, Chaga Mushroom, Reishi Mushroom, Bromelain, Quercetin, 6-Strain Probiotic Blend, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus fermentum Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus plantarum Fermentation Product, Dried Bifidobacterium bifidum Fermentation Product, Calcium Ascorbate, Coconut Oil, Carrots, Pumpkin, Sweet Potatoes, Mixed Tocopherols (a natural preservative), Natural Flavor (fish and yeast), Oat Flour, Honey, Sunflower Lecithin, Vegetable Glycerin, Water",
+      "images": [
+        "/products/open-farm/open-farm-supplements-immune-health-supplement-chews-for-dogs.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "90 chews",
+          "sku": "12704"
+        }
+      ],
+      "source_id": "6714594525297"
+    },
+    {
+      "name": "Probiotic Food Supplement Chews for Dogs",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/probiotic-supplements",
+      "channel": "retail",
+      "product_type": "supplements",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "Oat Flour, Dried Carrot, Vegetable Glycerin, Dried Sweet Potato, Sunflower Lecithin, Water, Coconut Oil, Organic Honey, Dried Pumpkin, Chicory Root, Ginger Root, Lactobacillus acidophilus, Lactobacillus casei, Lactobacillus fermentum, Lactobacillus reuteri, Lactobacillus plantarum, Bifidobacterium bifidum, Dried Bacillus Coagulans, Calcium Ascorbate (Vitamin C), Mixed Tocopherols, Natural Flavor",
+      "guaranteed_analysis": {
+        "crude_fat_min": 20.0,
+        "crude_fiber_max": 8.0,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "5000 kcal/kg, 20 kcal/treat",
+      "images": [
+        "/products/open-farm/open-farm-supplements-probiotic-food-supplement-chews-for-dogs.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "90 chews",
+          "sku": "12703"
+        }
+      ],
+      "source_id": "6714594099313"
+    },
+    {
+      "name": "Calming Health Supplement Chews for Dogs",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/calming-supplements",
+      "channel": "retail",
+      "product_type": "supplements",
+      "life_stage": "Adult",
+      "ingredients_raw": "Hemp Seed Oil, Passion Flower, Chamomile, Valerian Root, Ginger Root, L-Theanine, L-Tryptophan, Magnesium (Magnesium Gluconate), Calcium Ascorbate, Coconut Oil, Apples, Sweet Potatoes, Mixed Tocopherols (a natural preservative), Natural Flavor (fish and yeast), Oat Flour, Organic Honey, Sunflower Lecithin, Vegetable Glycerin, Water",
+      "images": [
+        "/products/open-farm/open-farm-supplements-calming-health-supplement-chews-for-dogs.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "90 chews",
+          "sku": "12702"
+        }
+      ],
+      "source_id": "6714593673329"
+    },
+    {
+      "name": "Skin & Coat Food Supplement Chews for Dogs",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/skin-and-coat-supplements",
+      "channel": "retail",
+      "product_type": "supplements",
+      "product_line": "Skin & Coat Health",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "Oat Flour, Sweet Potatoes, Sunflower Lecithin, Blueberries, Water, Vegetable Glycerin, Dried Kelp, Fish Oil, Wild-Alaskan Salmon Oil, Organic Honey, Cod Liver Oil, Coconut Oil, Calcium Ascorbate (Vitamin C), D-a-tocopherol (Vitamin E), Natural Flavor (yeast), Biotin (Vitamin B7)",
+      "guaranteed_analysis": {
+        "crude_fat_min": 21.0,
+        "moisture_max": 10.0,
+        "dha_min": 1.15,
+        "epa_min": 0.8,
+        "omega_6_min": 6.25
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "5500 kcal/kg, 22 kcal/treat",
+      "images": [
+        "/products/open-farm/open-farm-supplements-skin-coat-food-supplement-chews-for-dogs.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "90 chews",
+          "sku": "12701"
+        }
+      ],
+      "source_id": "6714593345649"
+    },
+    {
+      "name": "Hip & Joint Health Supplement Chews for Dogs",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/hip-and-joint-supplements",
+      "channel": "retail",
+      "product_type": "supplements",
+      "life_stage": "Adult",
+      "ingredients_raw": "Methylsulfonylmethane (MSM), Calcium Ascorbate (Vitamin C), Turmeric, Green Lipped Mussel, ParActin, Kelp, BioPerine, Coconut Oil, Carrots, Sweet Potatoes, Mixed Tocopherols (a natural preservative), Natural Flavor (fish and yeast), Oat Flour, Organic Honey, Sunflower Lecithin, Vegetable Glycerin, Water",
+      "images": [
+        "/products/open-farm/open-farm-supplements-hip-joint-health-supplement-chews-for-dogs.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "90 chews",
+          "sku": "12700"
+        }
+      ],
+      "source_id": "6714592297073"
+    },
+    {
+      "name": "Homestead Turkey Bone Broth For Dogs",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/turkey-bone-broth",
+      "channel": "retail",
+      "product_type": "supplements",
+      "product_line": "Bone Broth",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "G.A.P. Step 2 Turkey Bone Broth, Carrots, Pumpkin, Parsley, Turmeric, Cinnamon",
+      "calorie_content": "160 kcal/kg",
+      "images": [
+        "/products/open-farm/open-farm-supplements-homestead-turkey-bone-broth-for-dogs.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.34,
+          "size_description": "12 fl oz",
+          "sku": "12440"
+        },
+        {
+          "size_kg": 0.958,
+          "size_description": "33.8 fl oz",
+          "sku": "12446"
+        }
+      ],
+      "source_id": "2649259999345"
+    },
+    {
+      "name": "Harvest Chicken Bone Broth For Dogs",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/chicken-bone-broth",
+      "channel": "retail",
+      "product_type": "supplements",
+      "product_line": "Bone Broth",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "G.A.P. Step 2 Chicken Bone Broth, Carrots, Pumpkin, Parsley, Turmeric, Cinnamon",
+      "calorie_content": "160 kcal/kg",
+      "images": [
+        "/products/open-farm/open-farm-supplements-harvest-chicken-bone-broth-for-dogs.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.34,
+          "size_description": "12 fl oz",
+          "sku": "12441"
+        },
+        {
+          "size_kg": 0.958,
+          "size_description": "33.8 fl oz",
+          "sku": "12447"
+        }
+      ],
+      "source_id": "2649263898737"
+    },
+    {
+      "name": "Grass-Fed Beef Bone Broth For Dogs",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/bone-broth-for-dogs-beef",
+      "channel": "retail",
+      "product_type": "supplements",
+      "product_line": "Bone Broth",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "G.A.P. Step 4 Beef Bone Broth, Carrots, Pumpkin, Parsley, Turmeric, Cinnamon",
+      "calorie_content": "160 kcal/kg",
+      "images": [
+        "/products/open-farm/open-farm-supplements-grass-fed-beef-bone-broth-for-dogs.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.34,
+          "size_description": "12 fl oz",
+          "sku": "12442"
+        },
+        {
+          "size_kg": 0.958,
+          "size_description": "33.8 fl oz",
+          "sku": "12448"
+        }
+      ],
+      "source_id": "2628145184881"
+    },
+    {
+      "name": "Grass-Fed Beef Rustic Stew Wet Dog Food",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/grass-fed-beef-wet-dog-food",
+      "channel": "retail",
+      "product_type": "wet",
+      "product_line": "Rustic Stew",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "Certified Humane Beef, G.A.P. Step 4 Beef Bone Broth, Certified Humane Beef Liver, Spinach, Pumpkin, Red Lentils, Green Beans, Carrots, Coconut Oil, Agar Agar, Garbanzo Beans (Chickpeas), Sunflower Oil, Dried Chicory Root, Potassium Chloride, Tricalcium Phosphate, Salt, Vitamin A Supplement, Vitamin D3 Supplement, Vitamin E Supplement, D-calcium Pantothenate, Thiamine Mononitrate, Riboflavin Supplement, Folic Acid, Vitamin B12 Supplement, Zinc Amino Acid Chelate, Iron Amino Acid Chelate, Copper Amino Acid Chelate, Manganese Amino Acid Chelate, Sodium Selenite, Choline Chloride, Dried Kelp, Turmeric, Cinnamon",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 6.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "978 kcal/kg",
+      "images": [
+        "/products/open-farm/open-farm-wet-grass-fed-beef-rustic-stew-wet-dog-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.354,
+          "size_description": "12.5 oz (Case of 12)",
+          "sku": "12482"
+        }
+      ],
+      "source_id": "2275669311601"
+    },
+    {
+      "name": "Homestead Turkey Rustic Stew Wet Dog Food",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/turkey-wet-dog-food",
+      "channel": "retail",
+      "product_type": "wet",
+      "product_line": "Rustic Stew",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "G.A.P. Step 1 Turkey, G.A.P. Step 2 Turkey Bone Broth, Pumpkin, Carrots, Green Beans, Spinach, Red Lentils, Agar Agar, Garbanzo Beans (Chickpeas), Sunflower Oil, Coconut Oil, Dried Chicory Root, Salt, Potassium Chloride, Vitamin A Supplement, Vitamin D3 Supplement, Vitamin E Supplement, D-calcium Pantothenate, Thiamine Mononitrate, Riboflavin Supplement, Folic Acid, Vitamin B12 Supplement, Zinc Amino Acid Chelate, Iron Amino Acid Chelate, Copper Amino Acid Chelate, Manganese Amino Acid Chelate, Sodium Selenite, Choline Chloride, Dried Kelp, Turmeric, Cinnamon",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.0,
+        "crude_fat_min": 5.5,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1025 kcal/kg",
+      "images": [
+        "/products/open-farm/open-farm-wet-homestead-turkey-rustic-stew-wet-dog-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.354,
+          "size_description": "12.5 oz (Case of 12)",
+          "sku": "12480"
+        }
+      ],
+      "source_id": "2276207132785"
+    },
+    {
+      "name": "Harvest Chicken Rustic Stew Wet Dog Food",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/chicken-wet-dog-food",
+      "channel": "retail",
+      "product_type": "wet",
+      "product_line": "Rustic Stew",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "G.A.P. Step 2 Chicken, G.A.P. Step 2 Chicken Bone Broth, Spinach, Green Beans, Pumpkin, Carrots, Red Lentils, Chickpeas, Agar Agar, Sunflower Oil, Coconut Oil, Dried Chicory Root, Potassium Chloride, Salt, Vitamin A Supplement, Vitamin D3 Supplement, Vitamin E Supplement, D-calcium Pantothenate, Thiamine Mononitrate, Riboflavin Supplement, Folic Acid, Vitamin B12 Supplement, Zinc Amino Acid Chelate, Iron Amino Acid Chelate, Copper Amino Acid Chelate, Manganese Amino Acid Chelate, Sodium Selenite, Choline Chloride, Dried Kelp, Turmeric, Cinnamon",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1129 kcal/kg",
+      "images": [
+        "/products/open-farm/open-farm-wet-harvest-chicken-rustic-stew-wet-dog-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.354,
+          "size_description": "12.5 oz (Case of 12)",
+          "sku": "12481"
+        }
+      ],
+      "source_id": "2276207624305"
+    },
+    {
+      "name": "Chicken & Salmon Rustic Stew Wet Dog Food",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/chicken-salmon-wet-dog-food",
+      "channel": "retail",
+      "product_type": "wet",
+      "product_line": "Rustic Stew",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "G.A.P. Step 2 Chicken, G.A.P. Step 2 Chicken Bone Broth, Wild-Caught Pacific Salmon, Pumpkin, Green Beans, Spinach, Carrots, Coconut Oil, Red Lentils, Garbanzo Beans (Chickpeas), Sunflower Oil, Agar Agar, Chicory Root, Potassium Chloride, Salt, Vitamin A Supplement, Vitamin D3 Supplement, Vitamin E Supplement, D-calcium Pantothenate, Thiamine Mononitrate (B1), Riboflavin Supplement, Folic Acid, Vitamin B12 Supplement, Zinc Amino Acid Chelate, Iron Amino Acid Chelate, Copper Amino Acid Chelate, Manganese Amino Acid Chelate, Sodium Selenite, Choline Chloride, Kelp, Turmeric, Cinnamon",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 6.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1170 kcal/kg",
+      "images": [
+        "/products/open-farm/open-farm-wet-chicken-salmon-rustic-stew-wet-dog-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.354,
+          "size_description": "12.5 oz (Case of 12)",
+          "sku": "12483"
+        }
+      ],
+      "source_id": "2276208869489"
+    },
+    {
+      "name": "Herring & Mackerel Rustic Stew Wet Dog Food",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/herring-mackerel-wet-dog-food",
+      "channel": "retail",
+      "product_type": "wet",
+      "product_line": "Rustic Stew",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "Ocean Herring, Water Sufficient For Processing, Ocean Mackerel, Pumpkin, Red Lentils, Spinach, Green Beans, Garbanzo Beans (Chickpeas), Carrots, Sunflower Oil, Coconut Oil, Chicory Root, Potassium Chloride, Salt, Agar Agar, Vitamin A Supplement, Vitamin D3 Supplement, Vitamin E Supplement, D-calcium Pantothenate, Thiamine Mononitrate (B1), Riboflavin Supplement, Folic Acid, Vitamin B12 Supplement, Zinc Amino Acid Chelate, Iron Amino Acid Chelate, Copper Amino Acid Chelate, Manganese Amino Acid Chelate, Sodium Selenite, Choline Chloride, Kelp, Turmeric, Cinnamon",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 3.5,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "750 kcal/kg",
+      "images": [
+        "/products/open-farm/open-farm-wet-herring-mackerel-rustic-stew-wet-dog-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.354,
+          "size_description": "12.5 oz (Case of 12)",
+          "sku": "12484"
+        }
+      ],
+      "source_id": "2276209393777"
+    },
+    {
+      "name": "Wild-Caught Salmon Rustic Stew Wet Dog Food",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/wild-caught-salmon-wet-dog-food",
+      "channel": "retail",
+      "product_type": "wet",
+      "product_line": "Rustic Stew",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "Wild-Caught Pacific Salmon, Water Sufficient For Processing, Pumpkin, Carrots, Green Beans, Spinach, Red Lentils, Agar Agar, Garbanzo Beans (Chickpeas), Sunflower Oil, Coconut Oil, Dried Chicory Root, Potassium Chloride, Salt, Vitamin A Supplement, Vitamin D3 Supplement, Vitamin E Supplement, D-calcium Pantothenate, Thiamine Mononitrate, Riboflavin Supplement, Folic Acid, Vitamin B12 Supplement, Zinc Amino Acid Chelate, Iron Amino Acid Chelate, Copper Amino Acid Chelate, Manganese Amino Acid Chelate, Sodium Selenite, Choline Chloride, Dried Kelp, Turmeric, Cinnamon",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 6.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "790 kcal/kg",
+      "images": [
+        "/products/open-farm/open-farm-wet-wild-caught-salmon-rustic-stew-wet-dog-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.354,
+          "size_description": "12.5 oz (Case of 12)",
+          "sku": "12485"
+        }
+      ],
+      "source_id": "2276209852529"
+    },
+    {
+      "name": "Harvest Chicken Freeze Dried Raw Morsels for Dogs",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/freeze-dried-raw-chicken-dog-food",
+      "channel": "retail",
+      "product_type": "supplements",
+      "product_line": "Freeze Dried Raw",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "G.A.P. Step 2 Chicken with Ground Bone, G.A.P. Step 2 Chicken Livers, G.A.P. Step 2 Chicken Necks, Organic Butternut Squash, Organic Carrots, Organic Cranberries, Organic Blueberries, Montmorillonite Clay, Coconut Oil, Potassium Chloride, Salt, Choline Chloride, Dried Chicory Root, Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, Pantothenic Acid, Riboflavin Supplement, Vitamin D3 Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Organic Spinach, Organic Apple Cider Vinegar, Organic Kale, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Selenium Yeast, Calcium Iodate, Salmon Oil, Dried Kelp, Mixed Tocopherols (a preservative), Magnesium Sulfate, Organic Pumpkin Seeds, Organic Sunflower Seeds, Cinnamon, Turmeric, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 42.0,
+        "crude_fat_min": 40.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 5.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "5304 kcal/kg, 261 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-supplements-harvest-chicken-freeze-dried-raw-morsels-for-dogs.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.099,
+          "size_description": "3.5 oz",
+          "sku": "12601"
+        },
+        {
+          "size_kg": 0.383,
+          "size_description": "13.5 oz",
+          "sku": "12361"
+        },
+        {
+          "size_kg": 0.624,
+          "size_description": "22 oz",
+          "sku": "12413"
+        },
+        {
+          "size_kg": 0.893,
+          "size_description": "31.5 oz",
+          "sku": "12921"
+        }
+      ],
+      "source_id": "2276212310129"
+    },
+    {
+      "name": "Farmer's Table Pork Freeze Dried Raw Morsels for Dogs",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/freeze-dried-raw-pork-dog-food",
+      "channel": "retail",
+      "product_type": "supplements",
+      "product_line": "Freeze Dried Raw",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "G.A.P. Step 1 Pork, G.A.P. Step 1 Pork Hearts, G.A.P. Step 1 Pork Liver, G.A.P. Step 1 Pork Neck Bones, Organic Butternut Squash, Organic Carrots, Organic Cranberries, Organic Blueberries, Dicalcium Phosphate, Montmorillonite Clay, Coconut Oil, Fenugreek Seeds, Calcium Carbonate, Salmon Oil (Preserved with Mixed Tocopherols), Dried Chicory Root, Potassium Chloride, Salt, Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, Pantothenic Acid, Riboflavin Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Choline Chloride, Organic Spinach, Organic Kale, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Selenium Yeast, Calcium Iodate, Dried Kelp, Mixed Tocopherols (a natural preservative), Magnesium Sulfate, Organic Pumpkin Seeds, Organic Sunflower Seeds, Cinnamon, Turmeric, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 44.0,
+        "crude_fat_min": 35.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 5.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4821 kcal/kg, 237 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-supplements-farmer-s-table-pork-freeze-dried-raw-morsels-for-dogs.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.099,
+          "size_description": "3.5 oz",
+          "sku": "12605"
+        },
+        {
+          "size_kg": 0.383,
+          "size_description": "13.5 oz",
+          "sku": "12365"
+        },
+        {
+          "size_kg": 0.624,
+          "size_description": "22 oz",
+          "sku": "12417"
+        }
+      ],
+      "source_id": "2276212834417"
+    },
+    {
+      "name": "Pasture-Raised Lamb Freeze Dried Raw Morsels for Dogs",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/pasture-raised-lamb-freeze-dried-raw",
+      "channel": "retail",
+      "product_type": "supplements",
+      "product_line": "Freeze Dried Raw",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "G.A.P. Step 4 Lamb, G.A.P. Step 4 Lamb Liver, G.A.P. Step 4 Lamb Heart, G.A.P. Step 4 Ground Lamb Bone, Organic Butternut Squash, Organic Carrots, Organic Cranberries, Organic Blueberries, Montmorillonite Clay, Dicalcium Phosphate, Fenugreek Seeds, Potassium Chloride, Dried Chicory Root, Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, Pantothenic Acid, Riboflavin Supplement, Vitamin D3 Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Calcium Carbonate, Folic Acid, Sunflower Oil, Choline Chloride, Salt, Organic Spinach, Coconut Oil, Organic Apple Cider Vinegar, Organic Kale, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Selenium Yeast, Calcium Iodate, Dried Kelp, Salmon Oil, Mixed Tocopherols (a preservative), Magnesium Sulfate, Organic Pumpkin Seeds, Organic Sunflower Seeds, Cinnamon, Turmeric, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 37.0,
+        "crude_fat_min": 35.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 5.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4756 kcal/kg, 234 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-supplements-pasture-raised-lamb-freeze-dried-raw-morsels-for-dogs.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.099,
+          "size_description": "3.5 oz",
+          "sku": "12604"
+        },
+        {
+          "size_kg": 0.383,
+          "size_description": "13.5 oz",
+          "sku": "12364"
+        },
+        {
+          "size_kg": 0.624,
+          "size_description": "22 oz",
+          "sku": "12416"
+        }
+      ],
+      "source_id": "2276213162097"
+    },
+    {
+      "name": "Homestead Turkey & Ancient Grains Dog Kibble",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/turkey-and-grain-dry-dog-food",
+      "channel": "retail",
+      "product_type": "dry",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "G.A.P. Step 1 Turkey, Oats, Whitefish Meal, Sorghum, Quinoa, Coconut Oil, Pumpkin, Herring Meal, Natural Flavor (yeast), Brown Rice, Salmon Oil, Carrots, Apples, Cranberries, Salt, Potassium Chloride, Dried Chicory Root, Choline Chloride, Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-calcium Pantothenate, Riboflavin Supplement, Vitamin D3 Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Selenium Yeast, Calcium Iodate, Taurine, Mixed Tocopherols (a natural preservative), Cinnamon, Turmeric, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "dha_min": 0.11,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "omega_6_min": 1.25,
+        "omega_3_min": 0.4,
+        "taurine_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3750 kcal/kg, 425 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-dry-homestead-turkey-ancient-grains-dog-kibble.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 1.814,
+          "size_description": "4 lb",
+          "sku": "12530"
+        },
+        {
+          "size_kg": 4.99,
+          "size_description": "11 lb",
+          "sku": "12531"
+        },
+        {
+          "size_kg": 9.979,
+          "size_description": "22 lb",
+          "sku": "12532"
+        }
+      ],
+      "source_id": "4044656705649"
+    },
+    {
+      "name": "Harvest Chicken & Ancient Grains Dog Kibble",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/chicken-and-grain-dry-dog-food",
+      "channel": "retail",
+      "product_type": "dry",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "G.A.P. Step 2 Chicken, Oats, Whitefish Meal, Millet, Quinoa, Coconut Oil, Herring Meal, Sorghum, Pumpkin, Natural Flavor (yeast), Carrots, Apples, Salmon Oil, Cranberries, Salt, Choline Chloride, Dried Chicory Root, Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-calcium Pantothenate, Riboflavin Supplement, Vitamin D3 Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Selenium Yeast, Calcium Iodate, Potassium Chloride, Taurine, Mixed Tocopherols (a natural preservative), Cinnamon, Turmeric, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "dha_min": 0.11,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "omega_6_min": 50.0,
+        "omega_3_min": 0.4,
+        "taurine_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3730 kcal/kg, 420 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-dry-harvest-chicken-ancient-grains-dog-kibble.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 1.814,
+          "size_description": "4 lb",
+          "sku": "12533"
+        },
+        {
+          "size_kg": 4.99,
+          "size_description": "11 lb",
+          "sku": "12534"
+        },
+        {
+          "size_kg": 9.979,
+          "size_description": "22 lb",
+          "sku": "12535"
+        }
+      ],
+      "source_id": "4176817717361"
+    },
+    {
+      "name": "Pasture-Raised Lamb & Ancient Grains Dog Kibble",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/pasture-raised-lamb-ancient-grains-dry-dog-food",
+      "channel": "retail",
+      "product_type": "dry",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "G.A.P. Step 4 Lamb, Oats, Whitefish Meal, Millet, Brown Rice, Coconut Oil, Herring Meal, Pumpkin, Natural Flavor (fish), Quinoa, Carrots, Apples, Cranberries, Salmon Oil, Potassium Chloride, Salt, Dried Chicory Root, Choline Chloride, Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-calcium Pantothenate, Riboflavin Supplement, Vitamin D3 Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Selenium Yeast, Calcium Iodate, Taurine, Mixed Tocopherols (a natural preservative), Cinnamon, Turmeric, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "dha_min": 0.11,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "omega_6_min": 1.25,
+        "omega_3_min": 0.4,
+        "taurine_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3770 kcal/kg, 428 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-dry-pasture-raised-lamb-ancient-grains-dog-kibble.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 1.814,
+          "size_description": "4 lb",
+          "sku": "12536"
+        },
+        {
+          "size_kg": 4.99,
+          "size_description": "11 lb",
+          "sku": "12537"
+        },
+        {
+          "size_kg": 9.979,
+          "size_description": "22 lb",
+          "sku": "12538"
+        }
+      ],
+      "source_id": "4176832659569"
+    },
+    {
+      "name": "Grass-Fed Beef & Ancient Grains Dog Kibble",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/grass-fed-beef-ancient-grains-dry-dog-food",
+      "channel": "retail",
+      "product_type": "dry",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "Certified Humane Beef, Oats, Whitefish Meal, Millet, Quinoa, Brown Rice, Coconut Oil, Herring Meal, Pumpkin, Natural Flavor (yeast), Carrots, Apples, Cranberries, Salmon Oil, Salt, Potassium Chloride, Dried Chicory Root, Choline Chloride, Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-calcium Pantothenate, Riboflavin Supplement, Vitamin D3 Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Selenium Yeast, Calcium Iodate, Taurine, Mixed Tocopherols (a natural preservative), Cinnamon, Turmeric, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "dha_min": 0.11,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.2,
+        "omega_6_min": 1.25,
+        "omega_3_min": 0.4,
+        "taurine_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3790 kcal/kg, 431 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-dry-grass-fed-beef-ancient-grains-dog-kibble.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 1.814,
+          "size_description": "4 lb",
+          "sku": "12578"
+        },
+        {
+          "size_kg": 4.99,
+          "size_description": "11 lb",
+          "sku": "12579"
+        },
+        {
+          "size_kg": 9.979,
+          "size_description": "22 lb",
+          "sku": "12580"
+        }
+      ],
+      "source_id": "4410179027057"
+    },
+    {
+      "name": "Farmer's Table Pork & Ancient Grains Dog Kibble",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/farmers-table-pork-ancient-grains-dry-dog-food",
+      "channel": "retail",
+      "product_type": "dry",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "G.A.P. Step 1 Pork, Oats, Whitefish Meal, Millet, Brown Rice, Coconut Oil, Herring Meal, Quinoa, Pumpkin, Natural Flavor (yeast), Carrots, Apples, Cranberries, Salmon Oil, Potassium Chloride, Salt, Dried Chicory Root, Choline Chloride, Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-calcium Pantothenate, Riboflavin Supplement, Vitamin D3 Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Selenium Yeast, Calcium Iodate, Taurine, Mixed Tocopherols (a natural preservative), Cinnamon, Turmeric, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "dha_min": 0.11,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "omega_6_min": 1.25,
+        "omega_3_min": 0.4,
+        "taurine_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3750 kcal/kg, 426 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-dry-farmer-s-table-pork-ancient-grains-dog-kibble.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 1.814,
+          "size_description": "4 lb",
+          "sku": "12575"
+        },
+        {
+          "size_kg": 4.99,
+          "size_description": "11 lb",
+          "sku": "12576"
+        },
+        {
+          "size_kg": 9.979,
+          "size_description": "22 lb",
+          "sku": "12577"
+        }
+      ],
+      "source_id": "4421767495793"
+    },
+    {
+      "name": "Whitefish & Ancient Grains Dog Kibble",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/catch-of-the-season-whitefish-ancient-grains-dry-dog-food",
+      "channel": "retail",
+      "product_type": "dry",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "Ocean Whitefish, Oats, Whitefish Meal, Millet, Quinoa, Brown Rice, Coconut Oil, Pumpkin, Herring Meal, Natural Flavor (yeast), Salmon Oil, Carrots, Apples, Cranberries, Salt, Sunflower Oil, Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Dried Chicory Root, Choline Chloride, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Selenium Yeast, Calcium Iodate, Potassium Chloride, Taurine, Mixed Tocopherols (a natural preservative), Cinnamon, Turmeric, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "dha_min": 0.11,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "omega_6_min": 1.25,
+        "omega_3_min": 0.4,
+        "taurine_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3760 kcal/kg, 427 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-dry-whitefish-ancient-grains-dog-kibble.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 1.814,
+          "size_description": "4 lb",
+          "sku": "12572"
+        },
+        {
+          "size_kg": 4.99,
+          "size_description": "11 lb",
+          "sku": "12573"
+        },
+        {
+          "size_kg": 9.979,
+          "size_description": "22 lb",
+          "sku": "12574"
+        }
+      ],
+      "source_id": "4421778047089"
+    },
+    {
+      "name": "Surf & Turf Freeze Dried Raw Morsels for Dogs",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/surf-turf-freeze-dried-raw",
+      "channel": "retail",
+      "product_type": "supplements",
+      "product_line": "Freeze Dried Raw",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "Humanely Raised Beef, Wild-Caught Salmon, Humanely Raised Beef Hearts, G.A.P. Step 4 Beef Liver, Humanely Raised Beef Kidneys, Organic Butternut Squash, Organic Carrots, Organic Cranberries, Organic Blueberries, Montmorillonite Clay, Dicalcium Phosphate, Coconut Oil, Dried Chicory Root, Humanely Raised Ground Beef Bone, Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, Pantothenic Acid, Riboflavin Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Salt, Potassium Chloride, Organic Spinach, Calcium Carbonate, Organic Apple Cider Vinegar, Organic Kale, Choline Chloride, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Selenium Yeast, Calcium Iodate, Salmon Oil, Dried Kelp, Mixed Tocopherols (a preservative), Magnesium Sulfate, Organic Pumpkin Seeds, Organic Sunflower Seeds, Cinnamon, Turmeric, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 37.0,
+        "crude_fat_min": 30.5,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 5.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4428 kcal/kg, 218 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-supplements-surf-turf-freeze-dried-raw-morsels-for-dogs.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.099,
+          "size_description": "3.5 oz",
+          "sku": "12603"
+        },
+        {
+          "size_kg": 0.383,
+          "size_description": "13.5 oz",
+          "sku": "12363"
+        },
+        {
+          "size_kg": 0.624,
+          "size_description": "22 oz",
+          "sku": "12415"
+        }
+      ],
+      "source_id": "2276211916913"
+    },
+    {
+      "name": "Homestead Turkey Freeze Dried Raw Morsels for Dogs",
+      "brand": "Open Farm",
+      "url": "https://openfarmpet.com/products/homestead-turkey-freeze-dried-raw",
+      "channel": "retail",
+      "product_type": "supplements",
+      "product_line": "Freeze Dried Raw",
+      "life_stage": "All Life Stages",
+      "ingredients_raw": "G.A.P. Step 1 Turkey with Ground Bone, G.A.P. Step 2 Turkey Livers, G.A.P. Step 2 Turkey Necks, Organic Butternut Squash, Organic Carrots, Organic Cranberries, Organic Blueberries, G.A.P. Step 2 Turkey Gizzards, Montmorillonite Clay, Fenugreek Seeds, Coconut Oil, Potassium Chloride, Dried Chicory Root, Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, Pantothenic Acid, Riboflavin Supplement, Vitamin D3 Supplement, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Salt, Organic Spinach, Organic Apple Cider Vinegar, Organic Kale, Choline Chloride, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Selenium Yeast, Calcium Iodate, Dried Kelp, Mixed Tocopherols (a preservative), Organic Pumpkin Seeds, Organic Sunflower Seeds, Cinnamon, Turmeric, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 42.0,
+        "crude_fat_min": 30.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 5.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4612 kcal/kg, 227 kcal/cup",
+      "images": [
+        "/products/open-farm/open-farm-supplements-homestead-turkey-freeze-dried-raw-morsels-for-dogs.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.099,
+          "size_description": "3.5 oz",
+          "sku": "12600"
+        },
+        {
+          "size_kg": 0.383,
+          "size_description": "13.5 oz",
+          "sku": "12360"
+        },
+        {
+          "size_kg": 0.624,
+          "size_description": "22 oz",
+          "sku": "12412"
+        }
+      ],
+      "source_id": "2276211294321"
+    }
+  ]
+}
