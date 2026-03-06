@@ -15,6 +15,13 @@
       "when": 1772554615572,
       "tag": "0001_naive_firedrake",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1772807789207,
+      "tag": "0002_lame_prism",
+      "breakpoints": true
     }
   ]
 }

@@ -10,6 +10,8 @@ import {
   treatLogs,
   productIngredients,
   ingredients,
+  products,
+  brands,
   poopLogs,
   itchinessLogs,
   vomitLogs,
@@ -21,10 +23,14 @@ import {
 } from "@/lib/db"
 import { eq, and, gte, lte, sql, asc } from "drizzle-orm"
 import type { PlanPeriod } from "@/lib/feeding"
+import { parseDuration } from "@/lib/feeding"
+import { resolveIngredientKey, positionCategory } from "./engine"
 import type {
   CorrelationInput,
   ProductIngredientRecord,
+  IngredientProductEntry,
   RawFeedingPeriod,
+  RawBackfill,
 } from "./types"
 
 /**
@@ -42,6 +48,7 @@ export async function fetchCorrelationInput(
   const [
     dogRows,
     feedingRows,
+    backfillRows,
     treatRows,
     poopRows,
     itchRows,
@@ -56,7 +63,7 @@ export async function fetchCorrelationInput(
       .from(dogs)
       .where(eq(dogs.id, dogId)),
 
-    // All feeding periods (full history for transition detection)
+    // Non-backfill feeding periods (for day-by-day correlation)
     db
       .select({
         id: feedingPeriods.id,
@@ -67,7 +74,27 @@ export async function fetchCorrelationInput(
         createdAt: feedingPeriods.createdAt,
       })
       .from(feedingPeriods)
-      .where(eq(feedingPeriods.dogId, dogId)),
+      .where(
+        and(
+          eq(feedingPeriods.dogId, dogId),
+          eq(feedingPeriods.isBackfill, false),
+        ),
+      ),
+
+    // Backfill feeding periods (aggregate historical records — duration + scorecard only)
+    db
+      .select({
+        planGroupId: feedingPeriods.planGroupId,
+        productId: feedingPeriods.productId,
+        approximateDuration: feedingPeriods.approximateDuration,
+      })
+      .from(feedingPeriods)
+      .where(
+        and(
+          eq(feedingPeriods.dogId, dogId),
+          eq(feedingPeriods.isBackfill, true),
+        ),
+      ),
 
     // Treat logs in window
     db
@@ -174,9 +201,10 @@ export async function fetchCorrelationInput(
     createdAt: r.createdAt,
   }))
 
-  // -- Collect all product IDs from feeding + treats --
+  // -- Collect all product IDs from feeding + backfills + treats --
   const allProductIds = new Set<string>()
   for (const fp of rawFeeding) allProductIds.add(fp.productId)
+  for (const bf of backfillRows) allProductIds.add(bf.productId)
   for (const t of treatRows) allProductIds.add(t.productId)
 
   // -- Phase 2: queries depending on phase 1 results --
@@ -184,7 +212,9 @@ export async function fetchCorrelationInput(
   const dogLocation = dogRows[0]?.location ?? null
 
   // Fetch product ingredients and scorecards in parallel
-  const planGroupIds = [...new Set(rawFeeding.map((fp) => fp.planGroupId))]
+  const allPlanGroupIds = new Set(rawFeeding.map((fp) => fp.planGroupId))
+  for (const bf of backfillRows) allPlanGroupIds.add(bf.planGroupId)
+  const planGroupIds = [...allPlanGroupIds]
 
   const [ingredientRows, scorecardRows, pollenRows] = await Promise.all([
     // Product ingredients for all products
@@ -267,6 +297,23 @@ export async function fetchCorrelationInput(
     productIngredientMap.set(row.productId, list)
   }
 
+  // -- Build backfill entries with parsed durations and matched scorecards --
+  const backfills: RawBackfill[] = backfillRows
+    .map((bf) => {
+      const duration = bf.approximateDuration
+        ? parseDuration(bf.approximateDuration)
+        : null
+      const scorecard = scorecardRows.find(
+        (sc) => sc.planGroupId === bf.planGroupId,
+      )
+      return {
+        planGroupId: bf.planGroupId,
+        productId: bf.productId,
+        durationDays: duration?.days ?? 7, // fallback to 1 week
+        scorecard: scorecard ?? null,
+      }
+    })
+
   return {
     dogId,
     windowStart,
@@ -285,9 +332,76 @@ export async function fetchCorrelationInput(
       pollenIndex: r.pollenIndex != null ? Number(r.pollenIndex) : null,
     })),
     planPeriods,
+    backfills,
     crossReactivityGroups: crossReactivityRows.map((r) => ({
       groupName: r.groupName,
       families: r.families,
     })),
   }
+}
+
+/**
+ * Build an ingredient-key → product list map from the correlation input.
+ * Fetches product names + brand names for all product IDs in the input.
+ */
+export async function fetchIngredientProductMap(
+  input: CorrelationInput,
+): Promise<Map<string, IngredientProductEntry[]>> {
+  // Collect all product IDs
+  const allProductIds = new Set<string>()
+  for (const fp of input.feedingPeriods) allProductIds.add(fp.productId)
+  for (const t of input.treatLogs) allProductIds.add(t.productId)
+  for (const bf of input.backfills) allProductIds.add(bf.productId)
+
+  if (allProductIds.size === 0) return new Map()
+
+  const productIdList = [...allProductIds]
+
+  // Fetch product name + brand in one query
+  const productRows = await db
+    .select({
+      id: products.id,
+      name: products.name,
+      brandName: brands.name,
+    })
+    .from(products)
+    .innerJoin(brands, eq(products.brandId, brands.id))
+    .where(
+      sql`${products.id} IN (${sql.join(
+        productIdList.map((id) => sql`${id}`),
+        sql`, `,
+      )})`,
+    )
+
+  const productLookup = new Map(
+    productRows.map((r) => [r.id, { name: r.name, brandName: r.brandName }]),
+  )
+
+  // Build ingredient key → product entries
+  const result = new Map<string, IngredientProductEntry[]>()
+
+  for (const [productId, ings] of input.productIngredientMap) {
+    const product = productLookup.get(productId)
+    if (!product) continue
+
+    for (const pi of ings) {
+      const key = resolveIngredientKey(pi.ingredient)
+      if (key == null) continue
+
+      const entries = result.get(key) ?? []
+      // Avoid duplicate product entries for same key
+      if (!entries.some((e) => e.productId === productId)) {
+        entries.push({
+          productId,
+          productName: product.name,
+          brandName: product.brandName,
+          position: pi.position,
+          positionCategory: positionCategory(pi.position),
+        })
+      }
+      result.set(key, entries)
+    }
+  }
+
+  return result
 }

@@ -101,6 +101,7 @@ export async function GET(
         startDate: feedingPeriods.startDate,
         endDate: feedingPeriods.endDate,
         isBackfill: feedingPeriods.isBackfill,
+        approximateDuration: feedingPeriods.approximateDuration,
         productId: feedingPeriods.productId,
         quantity: feedingPeriods.quantity,
         quantityUnit: feedingPeriods.quantityUnit,
@@ -129,6 +130,7 @@ export async function GET(
           startDate: row.startDate,
           endDate: row.endDate,
           isBackfill: row.isBackfill,
+          approximateDuration: row.approximateDuration,
           items: [],
           scorecard: null,
           logStats: null,
@@ -198,14 +200,16 @@ export async function GET(
         }),
     )
 
-    // Resolve the active plan
+    // Resolve the active plan — backfills are historical only, never "active"
     const today = new Date().toISOString().split("T")[0]
-    const planPeriods: PlanPeriod[] = rows.map((r) => ({
-      planGroupId: r.planGroupId,
-      startDate: r.startDate,
-      endDate: r.endDate,
-      createdAt: r.createdAt.toISOString(),
-    }))
+    const planPeriods: PlanPeriod[] = rows
+      .filter((r) => !r.isBackfill)
+      .map((r) => ({
+        planGroupId: r.planGroupId,
+        startDate: r.startDate,
+        endDate: r.endDate,
+        createdAt: r.createdAt.toISOString(),
+      }))
     const activePlanGroupId = resolveActivePlan(planPeriods, today)
 
     // Categorize

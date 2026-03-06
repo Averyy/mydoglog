@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { FecalScorePickerHorizontal } from "@/components/fecal-score-picker"
+import { FecalScorePickerMulti } from "@/components/fecal-score-picker"
 import { EnumPicker } from "@/components/enum-picker"
 import { CollapsibleNotes } from "@/components/collapsible-notes"
 import { Button } from "@/components/ui/button"
@@ -48,7 +48,7 @@ const PRIMARY_REASON_OPTIONS = [
 ]
 
 export interface ScorecardData {
-  poopQuality: number | null
+  poopQuality: number[] | null
   gas: string | null
   vomiting: string | null
   palatability: string | null
@@ -62,14 +62,16 @@ interface FoodScorecardFormProps {
   onSave: (data: ScorecardData) => void
   onSkip: () => void
   initialData?: Partial<ScorecardData>
+  hideSkip?: boolean
 }
 
 export function FoodScorecardForm({
   onSave,
   onSkip,
   initialData,
+  hideSkip,
 }: FoodScorecardFormProps) {
-  const [poopQuality, setPoopQuality] = useState<number | null>(
+  const [poopQuality, setPoopQuality] = useState<number[] | null>(
     initialData?.poopQuality ?? null,
   )
   const [gas, setGas] = useState<string | null>(initialData?.gas ?? null)
@@ -111,7 +113,7 @@ export function FoodScorecardForm({
         <Label className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
           Poop quality
         </Label>
-        <FecalScorePickerHorizontal
+        <FecalScorePickerMulti
           value={poopQuality}
           onChange={setPoopQuality}
         />
@@ -224,9 +226,11 @@ export function FoodScorecardForm({
         <Button onClick={handleSave} className="flex-1">
           Save scorecard
         </Button>
-        <Button variant="outline" onClick={onSkip} className="flex-1">
-          Skip
-        </Button>
+        {!hideSkip && (
+          <Button variant="outline" onClick={onSkip} className="flex-1">
+            Skip
+          </Button>
+        )}
       </div>
     </div>
   )

@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server"
 import { db, products, brands, productIngredients, ingredients } from "@/lib/db"
 import { eq, asc } from "drizzle-orm"
+import { findSaltPosition } from "@/lib/ingredients"
 
 export async function GET(
   _request: NextRequest,
@@ -51,9 +52,12 @@ export async function GET(
       .where(eq(productIngredients.productId, id))
       .orderBy(asc(productIngredients.position))
 
+    const saltPosition = findSaltPosition(product.rawIngredientString ?? "")
+
     return NextResponse.json({
       ...product,
       ingredients: productIngs,
+      saltPosition,
     })
   } catch (error) {
     console.error("Error fetching product:", error)

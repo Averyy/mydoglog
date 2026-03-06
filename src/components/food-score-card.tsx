@@ -26,26 +26,26 @@ export function FoodScoreCard({
   return (
     <Card className={`overflow-hidden gap-0 py-0 ${className ?? ""}`}>
       {/* Product image showcase — warm khaki stage */}
-      <div className="flex items-center justify-center bg-muted px-4 py-4">
+      <div className="flex items-center justify-center bg-muted px-3 py-3">
         {imageUrl ? (
           <img
             src={largeImageUrl(imageUrl)}
             alt={productName}
-            className="h-44 w-auto object-contain mix-blend-multiply"
+            className="h-28 w-auto object-contain mix-blend-multiply"
           />
         ) : (
-          <div className="flex h-44 items-center justify-center">
+          <div className="flex h-28 items-center justify-center">
             <p className="text-xs text-muted-foreground">No image</p>
           </div>
         )}
       </div>
 
       {/* Product details */}
-      <CardContent className="flex flex-1 flex-col pt-4 pb-4">
+      <CardContent className="flex flex-1 flex-col pt-3 pb-3">
         <p className="text-[11px] font-medium uppercase tracking-[0.05em] text-text-tertiary">
           {brandName}
         </p>
-        <p className="mt-0.5 text-[15px] font-semibold leading-snug text-foreground">
+        <p className="mt-0.5 text-sm font-semibold leading-snug text-foreground">
           {productName}
         </p>
         {quantity && (

@@ -3,7 +3,7 @@ name = "mydoglog-scraper"
 version = "0.1.0"
 requires-python = ">=3.12"
 dependencies = [
-    "wafer-py[browser]>=0.1.7",
+    "wafer-py[browser]>=0.1.8",
     "beautifulsoup4>=4.12",
     "lxml>=5.0",
     "psycopg2-binary>=2.9",

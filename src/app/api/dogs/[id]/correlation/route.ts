@@ -1,8 +1,9 @@
 import { NextRequest, NextResponse } from "next/server"
 import { requireDogOwnership, isNextResponse } from "@/lib/api-helpers"
-import { fetchCorrelationInput } from "@/lib/correlation/query"
+import { fetchCorrelationInput, fetchIngredientProductMap } from "@/lib/correlation/query"
 import { runCorrelation } from "@/lib/correlation/engine"
 import { DEFAULT_CORRELATION_OPTIONS } from "@/lib/correlation/types"
+import type { IngredientProductEntry } from "@/lib/correlation/types"
 
 type RouteParams = { params: Promise<{ id: string }> }
 
@@ -28,9 +29,21 @@ export async function GET(
         .split("T")[0]
 
     const input = await fetchCorrelationInput(dogId, windowStart, windowEnd)
-    const result = runCorrelation(input, DEFAULT_CORRELATION_OPTIONS)
+    const [result, ingredientProductMap] = await Promise.all([
+      Promise.resolve(runCorrelation(input, DEFAULT_CORRELATION_OPTIONS)),
+      fetchIngredientProductMap(input),
+    ])
 
-    return NextResponse.json(result)
+    // Convert Map to plain object for JSON serialization
+    const ingredientProducts: Record<string, IngredientProductEntry[]> = {}
+    for (const [key, entries] of ingredientProductMap) {
+      ingredientProducts[key] = entries
+    }
+
+    return NextResponse.json({
+      ...result,
+      ingredientProducts,
+    })
   } catch (error) {
     console.error("Error fetching correlation data:", error)
     return NextResponse.json(

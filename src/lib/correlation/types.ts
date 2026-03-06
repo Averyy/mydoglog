@@ -12,6 +12,30 @@ import type { PlanPeriod } from "@/lib/feeding"
 export type Confidence = "high" | "medium" | "low" | "insufficient"
 
 // ---------------------------------------------------------------------------
+// Position categories
+// ---------------------------------------------------------------------------
+
+export type PositionCategory = "primary" | "secondary" | "minor" | "trace"
+
+// ---------------------------------------------------------------------------
+// Scoring constants
+// ---------------------------------------------------------------------------
+
+export interface ScoringConstants {
+  positionWeights: {
+    lambda: number
+  }
+  badDayMultiplier: number
+  goodDayMultiplier: number
+}
+
+export const DEFAULT_SCORING_CONSTANTS: ScoringConstants = {
+  positionWeights: { lambda: 0.15 },
+  badDayMultiplier: 3.0,
+  goodDayMultiplier: 1.0,
+}
+
+// ---------------------------------------------------------------------------
 // Ingredient records (from DB)
 // ---------------------------------------------------------------------------
 
@@ -40,6 +64,7 @@ export interface ActiveIngredient {
   ingredientIds: string[]
   bestPosition: number
   fromTreat: boolean
+  formType: string | null
 }
 
 /** Outcome signals for one calendar day. */
@@ -61,6 +86,7 @@ export interface DaySnapshot {
   outcome: DayOutcome
   isTransitionBuffer: boolean
   isExposureBuffer: boolean
+  isBackfill: boolean
 }
 
 // ---------------------------------------------------------------------------
@@ -70,19 +96,33 @@ export interface DaySnapshot {
 export interface IngredientScore {
   key: string
   dayCount: number
-  avgPoopScore: number | null
-  avgItchScore: number | null
+  weightedPoopScore: number | null
+  weightedItchScore: number | null
+  rawAvgPoopScore: number | null
+  rawAvgItchScore: number | null
   vomitCount: number
   badDayCount: number
   goodDayCount: number
   confidence: Confidence
   exposureFraction: number
   bestPosition: number
+  positionCategory: PositionCategory
   appearedInTreats: boolean
   excludedDays: number
   daysWithEventLogs: number
   daysWithScorecardOnly: number
+  daysWithBackfill: number
+  isAllergenicallyRelevant: boolean
   crossReactivityGroup?: string
+  crossReactivityWarning?: string
+}
+
+export interface IngredientProductEntry {
+  productId: string
+  productName: string
+  brandName: string
+  position: number
+  positionCategory: PositionCategory
 }
 
 export interface CorrelationOptions {
@@ -158,12 +198,20 @@ export interface RawMedication {
 
 export interface RawScorecard {
   planGroupId: string
-  poopQuality: number | null
+  poopQuality: number[] | null
 }
 
 export interface RawPollenLog {
   date: string
   pollenIndex: number | null
+}
+
+/** A backfill entry — aggregate historical record with duration + scorecard. */
+export interface RawBackfill {
+  planGroupId: string
+  productId: string
+  durationDays: number
+  scorecard: RawScorecard | null
 }
 
 /** Bundle of all raw data from the query layer. */
@@ -182,5 +230,6 @@ export interface CorrelationInput {
   scorecards: RawScorecard[]
   pollenLogs: RawPollenLog[]
   planPeriods: PlanPeriod[]
+  backfills: RawBackfill[]
   crossReactivityGroups: CrossReactivityGroup[]
 }

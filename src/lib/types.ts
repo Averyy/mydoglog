@@ -17,6 +17,7 @@ export interface FeedingPlanGroup {
   startDate: string
   endDate: string | null
   isBackfill: boolean
+  approximateDuration: string | null
   items: FeedingPlanItem[]
   scorecard: ScorecardSummary | null
   logStats: LogStats | null
@@ -46,7 +47,7 @@ export interface FeedingPlanItem {
 
 export interface ScorecardSummary {
   id: string
-  poopQuality: number | null
+  poopQuality: number[] | null
   gas: string | null
   vomiting: string | null
   palatability: string | null

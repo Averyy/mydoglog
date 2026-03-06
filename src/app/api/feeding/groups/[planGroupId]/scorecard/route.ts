@@ -76,7 +76,7 @@ export async function GET(
 }
 
 interface ScorecardBody {
-  poopQuality?: number | null
+  poopQuality?: number | number[] | null
   gas?: string | null
   vomiting?: string | null
   palatability?: string | null
@@ -97,12 +97,18 @@ export async function PUT(
 
     const body = (await request.json()) as ScorecardBody
 
-    // Validate enums
-    if (body.poopQuality != null && (body.poopQuality < 1 || body.poopQuality > 7)) {
-      return NextResponse.json(
-        { error: "poopQuality must be 1-7" },
-        { status: 400 },
-      )
+    // Normalize poopQuality: accept bare number or array
+    const rawPoop = body.poopQuality
+    let poopQuality: number[] | null = null
+    if (rawPoop != null) {
+      const arr = Array.isArray(rawPoop) ? rawPoop : [rawPoop]
+      if (arr.some((v) => !Number.isInteger(v) || v < 1 || v > 7)) {
+        return NextResponse.json(
+          { error: "poopQuality values must be integers 1-7" },
+          { status: 400 },
+        )
+      }
+      poopQuality = arr.sort((a, b) => a - b)
     }
     if (body.gas && !VALID_GAS.includes(body.gas as typeof VALID_GAS[number])) {
       return NextResponse.json({ error: "Invalid gas value" }, { status: 400 })
@@ -161,7 +167,7 @@ export async function PUT(
 
     const data = {
       planGroupId,
-      poopQuality: body.poopQuality ?? null,
+      poopQuality,
       gas: body.gas as typeof VALID_GAS[number] | null ?? null,
       vomiting: body.vomiting as typeof VALID_VOMITING[number] | null ?? null,
       palatability:

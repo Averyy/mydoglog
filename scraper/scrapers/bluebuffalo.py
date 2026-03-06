@@ -165,6 +165,39 @@ def _parse_json_ld(soup: BeautifulSoup) -> dict | None:
     return None
 
 
+_FRENCH_CHARS = re.compile(r"[àâéèêëïîôùûüçæœ]", re.IGNORECASE)
+
+
+def _strip_french_duplicates(names: list[str]) -> list[str]:
+    """Remove French-language duplicates from bilingual en-ca ingredient lists.
+
+    Some Blue Buffalo en-ca pages embed both English and French ingredient lists
+    in the ingredientsJson variable. The French entries (always in the second half)
+    are detected by accented characters (àâéèêëïîôùûüçæœ) and truncated.
+
+    Handles boundary entries where English and French are period-concatenated,
+    e.g. "Oil of Rosemary. Bœuf désossé" → keeps "Oil of Rosemary".
+    """
+    if len(names) < 4:
+        return names
+
+    midpoint = len(names) // 2
+    for i in range(midpoint, len(names)):
+        if _FRENCH_CHARS.search(names[i]):
+            result = names[:i]
+            # Handle boundary: last English + first French joined by period
+            boundary = names[i]
+            if "." in boundary:
+                parts = boundary.split(".")
+                english = [p.strip() for p in parts if p.strip() and not _FRENCH_CHARS.search(p)]
+                if english:
+                    result.append(english[0])
+            logger.debug(f"Stripped {len(names) - len(result)} French duplicates")
+            return result
+
+    return names
+
+
 def _parse_ingredients_json(html: str) -> str | None:
     """Extract ingredients from the ingredientsJson JS variable embedded in page HTML."""
     match = re.search(r"ingredientsJson\s*=\s*(\{.*?\})\s*;", html, re.DOTALL)
@@ -179,6 +212,7 @@ def _parse_ingredients_json(html: str) -> str | None:
                 for ing in ingredients
                 if isinstance(ing, dict) and ing.get("name")
             ]
+            names = _strip_french_duplicates(names)
             if names:
                 return ", ".join(names)
     except (json.JSONDecodeError, TypeError):

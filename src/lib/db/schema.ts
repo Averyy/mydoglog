@@ -407,7 +407,7 @@ export const foodScorecards = pgTable("food_scorecards", {
     .primaryKey()
     .$defaultFn(() => crypto.randomUUID()),
   planGroupId: text("plan_group_id").notNull(),
-  poopQuality: integer("poop_quality"),
+  poopQuality: integer("poop_quality").array(),
   gas: gasLevelEnum("gas"),
   vomiting: vomitingFreqEnum("vomiting"),
   palatability: palatabilityEnum("palatability"),

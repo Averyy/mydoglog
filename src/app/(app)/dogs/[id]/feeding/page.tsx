@@ -24,6 +24,11 @@ import { format, parseISO } from "date-fns"
 import { toast } from "sonner"
 import type { ActivePlan, FeedingPlanGroup, MedicationSummary, RoutineData } from "@/lib/types"
 
+/** Singularize "1 weeks" → "1 week", leave "2 weeks" as-is. */
+function formatApproximateDuration(raw: string): string {
+  return raw.replace(/^1\s+(\w+)s$/i, "1 $1")
+}
+
 function formatVerdict(verdict: string | null): { label: string; className: string } {
   switch (verdict) {
     case "up":
@@ -156,10 +161,15 @@ export default function FeedingPage() {
                     <div className="flex items-start justify-between gap-3">
                       <div className="min-w-0">
                         <p className="text-sm font-medium">
-                          {format(parseISO(group.startDate), "MMM d, yyyy")}
-                          {group.endDate
-                            ? ` — ${format(parseISO(group.endDate), "MMM d, yyyy")}`
-                            : " — Ongoing"}
+                          {group.isBackfill && group.approximateDuration
+                            ? `~${formatApproximateDuration(group.approximateDuration)}`
+                            : <>
+                                {format(parseISO(group.startDate), "MMM d, yyyy")}
+                                {group.endDate
+                                  ? ` — ${format(parseISO(group.endDate), "MMM d, yyyy")}`
+                                  : " — Ongoing"}
+                              </>
+                          }
                         </p>
                       </div>
                       <div className="flex items-center gap-2 shrink-0">

@@ -25,9 +25,10 @@ import {
 } from "@/components/food-scorecard-form"
 import { format, parseISO } from "date-fns"
 import { toast } from "sonner"
-import { Info, Pencil, Plus, Star } from "lucide-react"
+import { ChevronDown, ChevronRight, Info, Pencil, Plus, Star } from "lucide-react"
 import type { FeedingPlanGroup, LogStats, ProductSummary, ScorecardSummary } from "@/lib/types"
-import type { CorrelationResult, IngredientScore, Confidence } from "@/lib/correlation/types"
+import type { CorrelationResult, IngredientScore, PositionCategory, IngredientProductEntry } from "@/lib/correlation/types"
+import { COMMON_TRIGGERS, splitIngredients } from "@/lib/ingredients"
 
 // ── Label maps for scorecard display ──
 
@@ -63,6 +64,16 @@ const ITCH_SCORE_COLORS: Record<number, string> = {
 
 function poopScoreColor(avg: number): string {
   return POOP_SCORE_COLORS[Math.round(avg)] ?? "text-foreground"
+}
+
+function formatPoopQualityRange(scores: number[] | null): string | null {
+  if (!scores || scores.length === 0) return null
+  if (scores.length === 1) {
+    return `${scores[0]} \u2014 ${POOP_LABELS[scores[0]] ?? ""}`
+  }
+  const first = scores[0]
+  const last = scores[scores.length - 1]
+  return `${first}\u2013${last} \u00b7 ${POOP_LABELS[first] ?? ""} to ${POOP_LABELS[last] ?? ""}`
 }
 
 function itchScoreColor(avg: number): string {
@@ -142,6 +153,11 @@ function verdictBadgeVariant(verdict: string | null): { bg: string; text: string
   }
 }
 
+/** Singularize "1 weeks" → "1 week", leave "2 weeks" as-is. */
+function formatApproximateDuration(raw: string): string {
+  return raw.replace(/^1\s+(\w+)s$/i, "1 $1")
+}
+
 function formatDateRange(startDate: string, endDate: string | null): string {
   const start = format(parseISO(startDate), "MMM d, yyyy")
   if (!endDate) return `Active since ${start}`
@@ -155,7 +171,7 @@ function ScorecardDetails({ sc }: { sc: ScorecardSummary }): React.ReactElement 
   const badgeStyle = verdictBadgeVariant(sc.verdict)
 
   const rows: { label: string; value: string | null }[] = [
-    { label: "Poop", value: sc.poopQuality != null ? `${sc.poopQuality} — ${POOP_LABELS[sc.poopQuality] ?? ""}` : null },
+    { label: "Poop", value: formatPoopQualityRange(sc.poopQuality) },
     { label: "Gas", value: sc.gas ? GAS_LABELS[sc.gas] ?? sc.gas : null },
     { label: "Vomiting", value: sc.vomiting ? VOMITING_LABELS[sc.vomiting] ?? sc.vomiting : null },
     { label: "Palatability", value: sc.palatability ? PALATABILITY_LABELS[sc.palatability] ?? sc.palatability : null },
@@ -192,65 +208,346 @@ function ScorecardDetails({ sc }: { sc: ScorecardSummary }): React.ReactElement 
   )
 }
 
-// ── Confidence badge styling ──
+// ── Position category styling ──
 
-const CONFIDENCE_STYLES: Record<Confidence, { bg: string; text: string }> = {
-  high: { bg: "bg-score-excellent-bg", text: "text-score-excellent" },
-  medium: { bg: "bg-score-fair-bg", text: "text-score-fair" },
-  low: { bg: "bg-score-critical-bg", text: "text-score-critical" },
-  insufficient: { bg: "bg-muted", text: "text-muted-foreground" },
+const POSITION_LABELS: Record<PositionCategory, string> = {
+  primary: "Primary",
+  secondary: "Secondary",
+  minor: "Minor",
+  trace: "Trace",
+}
+
+// ── Extended correlation result type (includes ingredient-product map from API) ──
+
+interface ExtendedCorrelationResult extends CorrelationResult {
+  ingredientProducts?: Record<string, IngredientProductEntry[]>
 }
 
 // ── Ingredient analysis components ──
 
-function IngredientRow({ score }: { score: IngredientScore }): React.ReactElement {
-  const conf = CONFIDENCE_STYLES[score.confidence]
+function isSuspect(score: IngredientScore): boolean {
+  return score.weightedPoopScore != null && score.weightedPoopScore >= 4.5
+}
+
+/** Left border color based on score quality, not position. */
+function scoreBorderColor(score: IngredientScore): string {
+  const poop = score.weightedPoopScore
+  if (poop == null) return "border-l-text-tertiary"
+  if (poop >= 4.5) return "border-l-score-critical"
+  if (poop >= 3.5) return "border-l-score-fair"
+  return "border-l-score-excellent"
+}
+
+/** Human-readable display name for ingredient keys. */
+const AMBIGUOUS_DISPLAY_NAMES: Record<string, { label: string; hint: string }> = {
+  "poultry (ambiguous)": { label: "Unspecified poultry", hint: "Could be chicken, turkey, or duck" },
+  "red_meat (ambiguous)": { label: "Unspecified red meat", hint: "Could be beef, pork, lamb, bison, or venison" },
+  "fish (ambiguous)": { label: "Unspecified fish", hint: "Could be salmon, whitefish, herring, etc." },
+  "animal (ambiguous)": { label: "Unspecified animal protein", hint: "Species not declared — could be any animal" },
+  "other (ambiguous)": { label: "Unspecified animal protein", hint: "Species not declared — could be any animal" },
+  "mammal (ambiguous)": { label: "Unspecified mammal", hint: "Could be beef, pork, lamb, or other mammal" },
+}
+
+function displayIngredientKey(key: string): string {
+  return AMBIGUOUS_DISPLAY_NAMES[key]?.label ?? key
+}
+
+function ambiguousHint(key: string): string | null {
+  return AMBIGUOUS_DISPLAY_NAMES[key]?.hint ?? null
+}
+
+function IngredientRow({
+  score,
+  ingredientProducts,
+}: {
+  score: IngredientScore
+  ingredientProducts?: IngredientProductEntry[]
+}): React.ReactElement {
+  const [expanded, setExpanded] = useState(false)
+  const suspect = isSuspect(score)
+  const trigger = COMMON_TRIGGERS.find((t) => score.key === t.family || score.key.startsWith(t.family + " "))
 
   return (
-    <Card>
-      <CardContent className="flex items-center justify-between gap-3 py-3">
-        <div className="flex flex-wrap items-center gap-2 min-w-0">
+    <div>
+      <button
+        type="button"
+        onClick={() => setExpanded(!expanded)}
+        className={`flex w-full items-center gap-2 border-l-[3px] px-3 py-2.5 text-left transition-colors hover:bg-item-hover ${scoreBorderColor(score)}`}
+      >
+        <div className="flex flex-1 items-center gap-2 min-w-0 flex-wrap">
           <span className="text-sm font-medium text-foreground capitalize">
-            {score.key}
+            {displayIngredientKey(score.key)}
           </span>
-          <span className={`inline-flex items-center rounded-md px-2 py-0.5 text-[10px] font-medium ${conf.bg} ${conf.text}`}>
-            {score.confidence}
-          </span>
-          <span className="text-xs text-muted-foreground">
-            {score.dayCount} {score.dayCount === 1 ? "day" : "days"}
-          </span>
+          {ambiguousHint(score.key) ? (
+            <span className="text-[11px] text-text-tertiary">
+              · {ambiguousHint(score.key)}
+            </span>
+          ) : score.positionCategory !== "primary" ? (
+            <span className="text-[11px] text-text-tertiary">
+              · {POSITION_LABELS[score.positionCategory]}
+            </span>
+          ) : null}
           {score.appearedInTreats && (
-            <span className="text-[10px] text-muted-foreground">(from treats)</span>
+            <span className="text-[10px] text-muted-foreground">(treat)</span>
           )}
           {score.crossReactivityGroup && (
-            <Badge variant="outline" className="text-score-fair text-[10px]">
-              Cross-reactive: {score.crossReactivityGroup}
+            <Badge variant="outline" className="text-score-fair text-[10px] py-0">
+              {score.crossReactivityGroup}
+            </Badge>
+          )}
+          {score.crossReactivityWarning && !score.crossReactivityGroup && (
+            <Badge variant="outline" className="text-score-fair text-[10px] py-0">
+              Warning
             </Badge>
           )}
         </div>
-        <div className="flex items-baseline gap-4 shrink-0">
-          {score.avgPoopScore != null && (
-            <div className="flex items-baseline gap-1">
-              <span className={`text-lg font-bold tabular-nums ${poopScoreColor(score.avgPoopScore)}`}>
-                {score.avgPoopScore.toFixed(1)}
-              </span>
-              <span className="text-[10px] text-muted-foreground">stool</span>
-            </div>
+        <div className="flex items-center gap-3 shrink-0">
+          <span className="text-xs text-muted-foreground tabular-nums">
+            {score.dayCount}d
+          </span>
+          {score.weightedPoopScore != null && (
+            <span className={`text-sm font-bold tabular-nums ${poopScoreColor(score.weightedPoopScore)}`}>
+              {score.weightedPoopScore.toFixed(1)}
+            </span>
           )}
-          {score.avgItchScore != null && (
-            <div className="flex items-baseline gap-1">
-              <span className={`text-lg font-bold tabular-nums ${itchScoreColor(score.avgItchScore)}`}>
-                {score.avgItchScore.toFixed(1)}
-              </span>
-              <span className="text-[10px] text-muted-foreground">itch</span>
-            </div>
+          {score.weightedItchScore != null && (
+            <span className={`text-sm font-bold tabular-nums ${itchScoreColor(score.weightedItchScore)}`}>
+              {score.weightedItchScore.toFixed(1)}
+              <span className="text-[10px] font-normal text-muted-foreground ml-0.5">itch</span>
+            </span>
           )}
-          {score.avgPoopScore == null && score.avgItchScore == null && (
-            <span className="text-xs text-muted-foreground">No data</span>
+          {score.weightedPoopScore == null && score.weightedItchScore == null && (
+            <span className="text-xs text-muted-foreground">—</span>
           )}
+          <ChevronRight className={`size-3.5 text-muted-foreground transition-transform ${expanded ? "rotate-90" : ""}`} />
         </div>
-      </CardContent>
-    </Card>
+      </button>
+      {expanded && (
+        <div className="border-l-[3px] border-l-transparent bg-muted-subtle px-4 py-2.5 space-y-2">
+          {score.crossReactivityWarning && (
+            <p className="text-xs text-score-fair">
+              {score.crossReactivityWarning}
+            </p>
+          )}
+          {score.crossReactivityGroup && (
+            <p className="text-xs text-score-fair">
+              Part of the {score.crossReactivityGroup} cross-reactivity group — multiple proteins in this group show elevated scores
+            </p>
+          )}
+          {trigger && suspect && (
+            <p className="text-xs text-muted-foreground">
+              {capitalize(trigger.family)} is the #{COMMON_TRIGGERS.indexOf(trigger) + 1} most common food sensitivity in dogs ({trigger.percentage}% of cases)
+              {trigger.note ? ` — ${trigger.note.toLowerCase()}` : ""}
+            </p>
+          )}
+          {ingredientProducts && ingredientProducts.length > 0 && (
+            <div>
+              <p className="text-[11px] text-text-tertiary font-medium mb-1">Found in:</p>
+              <div className="space-y-0.5">
+                {ingredientProducts.map((entry) => (
+                  <p key={entry.productId} className="text-xs text-muted-foreground">
+                    {entry.brandName} {entry.productName}{" "}
+                    <span className="text-text-tertiary">
+                      (#{entry.position} — {POSITION_LABELS[entry.positionCategory].toLowerCase()})
+                    </span>
+                  </p>
+                ))}
+              </div>
+            </div>
+          )}
+          {score.vomitCount > 0 && (
+            <p className="text-xs text-score-critical">
+              {score.vomitCount} vomit {score.vomitCount === 1 ? "event" : "events"} during exposure
+            </p>
+          )}
+          <div className="flex flex-wrap gap-x-4 text-[11px] text-text-tertiary">
+            <span>{score.badDayCount} bad / {score.goodDayCount} good days</span>
+            {score.daysWithBackfill > 0 && <span>{score.daysWithBackfill}d backfill</span>}
+          </div>
+        </div>
+      )}
+    </div>
+  )
+}
+
+function capitalize(s: string): string {
+  return s.charAt(0).toUpperCase() + s.slice(1)
+}
+
+function sortByWeightedPoop(scores: IngredientScore[]): IngredientScore[] {
+  return [...scores].sort((a, b) => {
+    if (a.weightedPoopScore == null && b.weightedPoopScore == null) return 0
+    if (a.weightedPoopScore == null) return 1
+    if (b.weightedPoopScore == null) return -1
+    return b.weightedPoopScore - a.weightedPoopScore
+  })
+}
+
+// ── Product ingredient list (expandable per food card) ──
+
+/** Classified ingredient from DB (position is 1-indexed from the raw string). */
+interface ClassifiedIngredient {
+  position: number
+  normalizedName: string
+  family: string | null
+  sourceGroup: string | null
+  formType: string | null
+  isHydrolyzed: boolean
+}
+
+interface ProductIngredientListData {
+  /** All ingredients from the raw string, split in order. */
+  allIngredients: string[]
+  /** Classified ingredients from DB, keyed by 1-indexed position. */
+  classifiedByPosition: Map<number, ClassifiedIngredient>
+  saltPosition: number | null
+}
+
+/**
+ * Find the correlation score matching a classified ingredient.
+ * Handles both family-based keys (chicken, chicken (fat)) and
+ * ambiguous keys (fish (ambiguous), poultry (ambiguous)).
+ */
+function findScoreForIngredient(
+  classified: ClassifiedIngredient | undefined,
+  correlationScores: IngredientScore[],
+): IngredientScore | null {
+  if (!classified) return null
+
+  // Try family-based match first
+  if (classified.family) {
+    const match = correlationScores.find((s) => {
+      if (s.key === classified.family) return true
+      if (classified.isHydrolyzed && s.key === `${classified.family} (hydrolyzed)`) return true
+      if (classified.formType === "fat" && s.key === `${classified.family} (fat)`) return true
+      if (classified.formType === "oil" && s.key === `${classified.family} (oil)`) return true
+      return false
+    })
+    if (match) return match
+  }
+
+  // Try ambiguous match: sourceGroup (ambiguous)
+  if (!classified.family && classified.sourceGroup) {
+    const ambiguousKey = `${classified.sourceGroup} (ambiguous)`
+    const match = correlationScores.find((s) => s.key === ambiguousKey)
+    if (match) return match
+  }
+
+  return null
+}
+
+function ProductIngredientList({
+  productId,
+  correlationScores,
+}: {
+  productId: string
+  correlationScores: IngredientScore[]
+}): React.ReactElement {
+  const [data, setData] = useState<ProductIngredientListData | null>(null)
+  const [loading, setLoading] = useState(false)
+  const [expanded, setExpanded] = useState(false)
+
+  const fetchIngredients = useCallback(async () => {
+    if (data) return
+    setLoading(true)
+    try {
+      const res = await fetch(`/api/products/${productId}`)
+      if (res.ok) {
+        const result = await res.json()
+        const rawString: string = result.rawIngredientString ?? ""
+        const allIngredients = splitIngredients(rawString)
+
+        // Build lookup from position → classified ingredient
+        const classifiedByPosition = new Map<number, ClassifiedIngredient>()
+        for (const ing of (result.ingredients ?? []) as ClassifiedIngredient[]) {
+          classifiedByPosition.set(ing.position, ing)
+        }
+
+        setData({
+          allIngredients,
+          classifiedByPosition,
+          saltPosition: result.saltPosition ?? null,
+        })
+      }
+    } finally {
+      setLoading(false)
+    }
+  }, [productId, data])
+
+  function handleToggle(): void {
+    if (!expanded) fetchIngredients()
+    setExpanded(!expanded)
+  }
+
+  return (
+    <div>
+      <button
+        type="button"
+        onClick={handleToggle}
+        className="flex items-center gap-1 text-xs text-primary hover:underline underline-offset-2"
+      >
+        <ChevronDown className={`size-3 transition-transform ${expanded ? "rotate-0" : "-rotate-90"}`} />
+        {expanded ? "Hide" : "View"} ingredients
+      </button>
+      {expanded && (
+        <div className="mt-2">
+          {loading && (
+            <div className="space-y-1">
+              {Array.from({ length: 3 }).map((_, i) => (
+                <div key={i} className="h-4 w-48 animate-pulse rounded bg-muted" />
+              ))}
+            </div>
+          )}
+          {data && (() => {
+            const aboveSalt = data.saltPosition != null
+              ? data.allIngredients.slice(0, data.saltPosition)
+              : data.allIngredients
+            const belowSalt = data.saltPosition != null
+              ? data.allIngredients.slice(data.saltPosition)
+              : []
+
+            return (
+              <div className="space-y-1">
+                <ol className="space-y-0.5">
+                  {aboveSalt.map((rawName, idx) => {
+                    const position = idx + 1
+                    const classified = data.classifiedByPosition.get(position)
+                    const matchedScore = findScoreForIngredient(classified, correlationScores)
+                    const isBad = matchedScore?.weightedPoopScore != null && matchedScore.weightedPoopScore >= 4.5
+
+                    return (
+                      <li key={position}>
+                        <div className="flex items-baseline gap-1.5 text-xs text-foreground">
+                          <span className="tabular-nums text-text-tertiary w-5 text-right shrink-0">{position}.</span>
+                          <span className={isBad ? "font-medium text-score-critical" : ""}>
+                            {rawName}
+                          </span>
+                          {matchedScore?.weightedPoopScore != null && (
+                            <span className={`inline-block size-1.5 rounded-full ${poopScoreColor(matchedScore.weightedPoopScore).replace("text-", "bg-")}`} />
+                          )}
+                        </div>
+                      </li>
+                    )
+                  })}
+                </ol>
+                {belowSalt.length > 0 && (
+                  <>
+                    <div className="flex items-center gap-2 my-1.5">
+                      <div className="h-px flex-1 bg-border" />
+                      <span className="text-[10px] text-text-tertiary">Below 1%</span>
+                      <div className="h-px flex-1 bg-border" />
+                    </div>
+                    <p className="text-[10px] leading-snug text-text-tertiary">
+                      {belowSalt.join(", ")}
+                    </p>
+                  </>
+                )}
+              </div>
+            )
+          })()}
+        </div>
+      )}
+    </div>
   )
 }
 
@@ -258,16 +555,18 @@ function IngredientAnalysisSection({
   correlation,
   loading,
 }: {
-  correlation: CorrelationResult | null
+  correlation: ExtendedCorrelationResult | null
   loading: boolean
 }): React.ReactElement {
+  const [fatsExpanded, setFatsExpanded] = useState(false)
+
   if (loading) {
     return (
       <div className="space-y-3">
         <div className="h-5 w-40 animate-pulse rounded bg-muted" />
         <div className="h-3 w-56 animate-pulse rounded bg-muted" />
         {Array.from({ length: 5 }).map((_, i) => (
-          <div key={i} className="h-16 animate-pulse rounded-lg bg-muted" />
+          <div key={i} className="h-10 animate-pulse rounded-lg bg-muted" />
         ))}
       </div>
     )
@@ -299,7 +598,7 @@ function IngredientAnalysisSection({
         <Card>
           <CardContent className="py-6 text-center space-y-1">
             <p className="text-sm text-foreground">
-              {correlation.scoreableDays} of 3 scoreable days logged
+              Keep logging — patterns emerge after a few days of data.
             </p>
             <p className="text-xs text-muted-foreground">
               Log daily check-ins with poop or itch scores to unlock ingredient analysis.
@@ -310,21 +609,31 @@ function IngredientAnalysisSection({
     )
   }
 
-  // Sort by avgPoopScore descending (worst first), nulls last
-  const sorted = [...correlation.scores].sort((a, b) => {
-    if (a.avgPoopScore == null && b.avgPoopScore == null) return 0
-    if (a.avgPoopScore == null) return 1
-    if (b.avgPoopScore == null) return -1
-    return b.avgPoopScore - a.avgPoopScore
-  })
+  // Split into allergenically relevant vs fats/oils
+  const allergenScores = sortByWeightedPoop(
+    correlation.scores.filter((s) => s.isAllergenicallyRelevant),
+  )
+  const fatOilScores = sortByWeightedPoop(
+    correlation.scores.filter((s) => !s.isAllergenicallyRelevant),
+  )
 
-  // Low-variance detection: all poop scores within 0.5 of each other
-  const poopScores = sorted
-    .map((s) => s.avgPoopScore)
+  // Low-variance detection on allergen scores
+  const poopScores = allergenScores
+    .map((s) => s.weightedPoopScore)
     .filter((v): v is number => v != null)
   const isLowVariance =
     poopScores.length >= 2 &&
     Math.max(...poopScores) - Math.min(...poopScores) < 0.5
+
+  // Check if all scores have insufficient confidence (<5 effective days)
+  const allInsufficient = correlation.scores.every(
+    (s) => s.confidence === "insufficient",
+  )
+
+  // Find scored common triggers present in user's data
+  const triggersInData = COMMON_TRIGGERS.filter((t) =>
+    allergenScores.some((s) => s.key === t.family || s.key.startsWith(t.family + " ")),
+  )
 
   return (
     <div className="space-y-3">
@@ -336,7 +645,40 @@ function IngredientAnalysisSection({
           Last {correlation.totalDays} days · {correlation.scoreableDays} scoreable
         </p>
       </div>
-      {isLowVariance && (
+
+      {/* Common triggers reference — at the top */}
+      <div className="rounded-lg bg-muted px-3 py-2.5">
+        <p className="text-xs text-muted-foreground leading-relaxed">
+          <span className="font-medium text-foreground">Common triggers in dogs:</span>{" "}
+          {COMMON_TRIGGERS.map((t, i) => (
+            <span key={t.family}>
+              {i > 0 && ", "}
+              <span className={
+                triggersInData.some((ti) => ti.family === t.family) &&
+                allergenScores.some(
+                  (s) => (s.key === t.family || s.key.startsWith(t.family + " ")) && isSuspect(s),
+                )
+                  ? "font-medium text-score-critical"
+                  : ""
+              }>
+                {t.family} ({t.percentage}%)
+              </span>
+            </span>
+          ))}
+          <span className="text-text-tertiary"> — Mueller et al. 2016</span>
+        </p>
+      </div>
+
+      {allInsufficient && (
+        <div className="flex items-start gap-2 rounded-lg bg-score-fair-bg px-3 py-2">
+          <Info className="size-4 shrink-0 text-score-fair mt-0.5" />
+          <p className="text-xs text-score-fair">
+            Just getting started — keep logging to see patterns
+          </p>
+        </div>
+      )}
+
+      {isLowVariance && !allInsufficient && (
         <div className="flex items-start gap-2 rounded-lg bg-score-fair-bg px-3 py-2">
           <Info className="size-4 shrink-0 text-score-fair mt-0.5" />
           <p className="text-xs text-score-fair">
@@ -344,11 +686,49 @@ function IngredientAnalysisSection({
           </p>
         </div>
       )}
-      <div className="space-y-2">
-        {sorted.map((score) => (
-          <IngredientRow key={score.key} score={score} />
-        ))}
-      </div>
+
+      {/* Allergenically relevant ingredients — single card, compact rows */}
+      <Card className="overflow-hidden py-0 gap-0">
+        <div className="divide-y divide-border">
+          {allergenScores.map((score) => (
+            <IngredientRow
+              key={score.key}
+              score={score}
+              ingredientProducts={correlation.ingredientProducts?.[score.key]}
+            />
+          ))}
+        </div>
+      </Card>
+
+      {/* Fats & oils — collapsed by default */}
+      {fatOilScores.length > 0 && (
+        <div>
+          <button
+            type="button"
+            onClick={() => setFatsExpanded(!fatsExpanded)}
+            className="flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground transition-colors"
+          >
+            <ChevronDown
+              className={`size-3.5 transition-transform ${fatsExpanded ? "rotate-0" : "-rotate-90"}`}
+            />
+            Fats & oils ({fatOilScores.length})
+            <span className="text-text-tertiary ml-1">— not allergenic</span>
+          </button>
+          {fatsExpanded && (
+            <Card className="mt-2 overflow-hidden py-0 gap-0">
+              <div className="divide-y divide-border">
+                {fatOilScores.map((score) => (
+                  <IngredientRow
+                    key={score.key}
+                    score={score}
+                    ingredientProducts={correlation.ingredientProducts?.[score.key]}
+                  />
+                ))}
+              </div>
+            </Card>
+          )}
+        </div>
+      )}
     </div>
   )
 }
@@ -384,7 +764,7 @@ export default function FoodScorecardPage() {
   const [loading, setLoading] = useState(true)
 
   // Correlation
-  const [correlation, setCorrelation] = useState<CorrelationResult | null>(null)
+  const [correlation, setCorrelation] = useState<ExtendedCorrelationResult | null>(null)
   const [correlationLoading, setCorrelationLoading] = useState(true)
 
   // Score existing plan modal
@@ -417,7 +797,7 @@ export default function FoodScorecardPage() {
     try {
       const res = await fetch(`/api/dogs/${dogId}/correlation`)
       if (res.ok) {
-        const result: CorrelationResult = await res.json()
+        const result: ExtendedCorrelationResult = await res.json()
         setCorrelation(result)
       }
     } finally {
@@ -602,10 +982,11 @@ export default function FoodScorecardPage() {
         </Card>
       )}
 
-      {/* Active plan — one card per product */}
-      {data?.active && (
-        <div className="flex flex-wrap gap-4">
-          {data.active.items.map((item) => (
+      {/* All food cards in one container so they flow together */}
+      {hasContent && (
+        <div className="flex flex-wrap gap-3">
+          {/* Active plan cards */}
+          {data?.active?.items.map((item) => (
             <FoodScoreCard
               key={item.id}
               brandName={item.brandName}
@@ -613,7 +994,7 @@ export default function FoodScorecardPage() {
               imageUrl={item.imageUrl}
               quantity={item.quantity}
               quantityUnit={item.quantityUnit}
-              className="max-w-[380px] flex-1 basis-[300px] border-dashed"
+              className="basis-72 border-dashed"
             >
               <div className="flex flex-1 flex-col gap-3">
                 {data.active!.logStats && (
@@ -627,98 +1008,95 @@ export default function FoodScorecardPage() {
                     Current
                   </Badge>
                 </div>
+                <ProductIngredientList
+                  productId={item.productId}
+                  correlationScores={correlation?.scores ?? []}
+                />
               </div>
             </FoodScoreCard>
           ))}
-        </div>
-      )}
 
-      {/* Needs scoring — one card per product */}
-      {data && data.needsScoring.length > 0 && (
-        <div className="space-y-3">
-          <h2 className="text-xs font-medium uppercase tracking-[0.05em] text-muted-foreground">
-            Needs Scoring
-          </h2>
-          <div className="flex flex-wrap gap-4">
-            {data.needsScoring.flatMap((group) =>
-              group.items.map((item) => (
-                <FoodScoreCard
-                  key={item.id}
-                  brandName={item.brandName}
-                  productName={item.productName}
-                  imageUrl={item.imageUrl}
-                  quantity={item.quantity}
-                  quantityUnit={item.quantityUnit}
-                  className="max-w-[380px] flex-1 basis-[300px]"
-                >
-                  <div className="space-y-3">
-                    {group.logStats && (
-                      <LogStatsDisplay stats={group.logStats} />
-                    )}
+          {/* Needs scoring cards */}
+          {data?.needsScoring.flatMap((group) =>
+            group.items.map((item) => (
+              <FoodScoreCard
+                key={item.id}
+                brandName={item.brandName}
+                productName={item.productName}
+                imageUrl={item.imageUrl}
+                quantity={item.quantity}
+                quantityUnit={item.quantityUnit}
+                className="basis-72"
+              >
+                <div className="space-y-3">
+                  {group.logStats && (
+                    <LogStatsDisplay stats={group.logStats} />
+                  )}
+                  <p className="text-xs text-muted-foreground">
+                    {group.isBackfill && group.approximateDuration
+                      ? `~${group.approximateDuration} · Backfill`
+                      : formatDateRange(group.startDate, group.endDate)}
+                  </p>
+                  <ProductIngredientList
+                    productId={item.productId}
+                    correlationScores={correlation?.scores ?? []}
+                  />
+                  <Button
+                    size="sm"
+                    onClick={() => openScorecard(group)}
+                    className="w-full"
+                  >
+                    <Star className="size-4" />
+                    Rate this food
+                  </Button>
+                </div>
+              </FoodScoreCard>
+            )),
+          )}
+
+          {/* Scored cards */}
+          {data?.scored.flatMap((group) =>
+            group.items.map((item) => (
+              <FoodScoreCard
+                key={item.id}
+                brandName={item.brandName}
+                productName={item.productName}
+                imageUrl={item.imageUrl}
+                quantity={item.quantity}
+                quantityUnit={item.quantityUnit}
+                className="basis-72"
+              >
+                <div className="space-y-3">
+                  {group.logStats && (
+                    <LogStatsDisplay stats={group.logStats} />
+                  )}
+                  <div className="flex items-center justify-between gap-2">
                     <p className="text-xs text-muted-foreground">
-                      {formatDateRange(group.startDate, group.endDate)}
+                      {group.isBackfill && group.approximateDuration
+                        ? `~${formatApproximateDuration(group.approximateDuration)} · Backfill`
+                        : formatDateRange(group.startDate, group.endDate)}
                     </p>
-                    <Button
-                      size="sm"
+                    <button
+                      type="button"
                       onClick={() => openScorecard(group)}
-                      className="w-full"
+                      className="flex shrink-0 items-center gap-1 text-xs text-primary hover:underline underline-offset-2"
                     >
-                      <Star className="size-4" />
-                      Rate this food
-                    </Button>
+                      <Pencil className="size-3" />
+                      Edit
+                    </button>
                   </div>
-                </FoodScoreCard>
-              )),
-            )}
-          </div>
-        </div>
-      )}
-
-      {/* Scored — one card per product */}
-      {data && data.scored.length > 0 && (
-        <div className="space-y-3">
-          <h2 className="text-xs font-medium uppercase tracking-[0.05em] text-muted-foreground">
-            Scored
-          </h2>
-          <div className="flex flex-wrap gap-4">
-            {data.scored.flatMap((group) =>
-              group.items.map((item) => (
-                <FoodScoreCard
-                  key={item.id}
-                  brandName={item.brandName}
-                  productName={item.productName}
-                  imageUrl={item.imageUrl}
-                  quantity={item.quantity}
-                  quantityUnit={item.quantityUnit}
-                  className="max-w-[380px] flex-1 basis-[300px]"
-                >
-                  <div className="space-y-3">
-                    {group.logStats && (
-                      <LogStatsDisplay stats={group.logStats} />
-                    )}
-                    <div className="flex items-center justify-between gap-2">
-                      <p className="text-xs text-muted-foreground">
-                        {formatDateRange(group.startDate, group.endDate)}
-                        {group.isBackfill && " · Backfill"}
-                      </p>
-                      <button
-                        type="button"
-                        onClick={() => openScorecard(group)}
-                        className="flex shrink-0 items-center gap-1 text-xs text-primary hover:underline underline-offset-2"
-                      >
-                        <Pencil className="size-3" />
-                        Edit
-                      </button>
-                    </div>
-                    <Separator />
-                    {group.scorecard && (
-                      <ScorecardDetails sc={group.scorecard} />
-                    )}
-                  </div>
-                </FoodScoreCard>
-              )),
-            )}
-          </div>
+                  <Separator />
+                  {group.scorecard && (
+                    <ScorecardDetails sc={group.scorecard} />
+                  )}
+                  <ProductIngredientList
+                    productId={item.productId}
+                    correlationScores={correlation?.scores ?? []}
+                  />
+                </div>
+              </FoodScoreCard>
+            )),
+          )}
         </div>
       )}
 
@@ -818,6 +1196,7 @@ export default function FoodScorecardPage() {
           <FoodScorecardForm
             onSave={handleBackfillSave}
             onSkip={handleBackfillSkip}
+            hideSkip
           />
         )}
       </ResponsiveModal>

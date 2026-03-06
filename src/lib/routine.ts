@@ -18,17 +18,21 @@ export async function getActivePlanForDog(
       planGroupId: feedingPeriods.planGroupId,
       startDate: feedingPeriods.startDate,
       endDate: feedingPeriods.endDate,
+      isBackfill: feedingPeriods.isBackfill,
       createdAt: feedingPeriods.createdAt,
     })
     .from(feedingPeriods)
     .where(eq(feedingPeriods.dogId, dogId))
 
-  const planPeriods: PlanPeriod[] = allPeriods.map((p) => ({
-    planGroupId: p.planGroupId,
-    startDate: p.startDate,
-    endDate: p.endDate,
-    createdAt: p.createdAt.toISOString(),
-  }))
+  // Backfills are historical records only — never the "active" plan
+  const planPeriods: PlanPeriod[] = allPeriods
+    .filter((p) => !p.isBackfill)
+    .map((p) => ({
+      planGroupId: p.planGroupId,
+      startDate: p.startDate,
+      endDate: p.endDate,
+      createdAt: p.createdAt.toISOString(),
+    }))
 
   const activePlanGroupId = resolveActivePlan(planPeriods, today)
   if (!activePlanGroupId) return null

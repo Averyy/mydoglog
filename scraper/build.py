@@ -12,6 +12,7 @@ Usage:
 
 import json
 import os
+import re
 import sys
 from pathlib import Path
 from typing import Any
@@ -143,7 +144,7 @@ def parse_ingredients(raw: str) -> list[str]:
 
 class FamiliesLookup:
     """Case-insensitive lookup for ingredient families, ambiguous entries,
-    and the ignore list."""
+    and the ignore list (explicit + pattern-based)."""
 
     def __init__(self, data: dict[str, Any]) -> None:
         self.families_raw = data.get("families", {})
@@ -166,11 +167,41 @@ class FamiliesLookup:
             k.lower(): v for k, v in self.ambiguous_raw.items()
         }
 
-        # Case-insensitive ignore set
+        # Case-insensitive ignore set (explicit entries)
         self._ignore_set: set[str] = {s.lower() for s in self.ignore_raw}
 
+        # Compile ignore patterns from JSON
+        self._ignore_patterns: list[re.Pattern[str]] = [
+            re.compile(p) for p in data.get("ignore_patterns", [])
+        ]
+
     def is_ignored(self, ingredient_name: str) -> bool:
-        return ingredient_name.lower() in self._ignore_set
+        """Check if an ingredient should be ignored for correlation.
+
+        Family/ambiguous members are never ignored (even if a pattern matches).
+        Then checks explicit ignore set (O(1)), then regex patterns.
+        Also filters malformed entries (length <= 1).
+        """
+        key = ingredient_name.lower()
+
+        # Malformed entry filter
+        if len(key) <= 1:
+            return True
+
+        # Family/ambiguous members are never ignored
+        if key in self._member_lookup or key in self._ambiguous_lookup:
+            return False
+
+        # Explicit ignore set (fast O(1) check)
+        if key in self._ignore_set:
+            return True
+
+        # Pattern-based ignore
+        for pattern in self._ignore_patterns:
+            if pattern.search(ingredient_name):
+                return True
+
+        return False
 
     def lookup(self, ingredient_name: str) -> dict[str, Any] | None:
         """Look up an ingredient and return its resolved metadata.

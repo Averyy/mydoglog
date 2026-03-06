@@ -15,33 +15,81 @@ import type {
   CorrelationInput,
   CrossReactivityGroup,
   Confidence,
+  PositionCategory,
   ProductIngredientRecord,
 } from "./types"
+import { DEFAULT_SCORING_CONSTANTS } from "./types"
+
+// ---------------------------------------------------------------------------
+// Helpers
+// ---------------------------------------------------------------------------
+
+/** Average an array of scores, rounding to one decimal. */
+export function averageScores(scores: number[]): number {
+  const sum = scores.reduce((a, b) => a + b, 0)
+  return Math.round((sum / scores.length) * 10) / 10
+}
 
 // ---------------------------------------------------------------------------
 // Ingredient key resolution
 // ---------------------------------------------------------------------------
 
+const FAT_OIL_FORM_TYPES = new Set(["fat", "oil"])
+
 /**
  * Resolve an ingredient to its correlation key.
  *
  * 1. family + hydrolyzed → "family (hydrolyzed)"
- * 2. family + not hydrolyzed → "family"
- * 3. no family + sourceGroup → "sourceGroup (ambiguous)"
- * 4. no family + no sourceGroup → null (skip)
+ * 2. family + fat/oil form → "family (fat)" / "family (oil)" — separate from protein
+ * 3. family + other form → "family"
+ * 4. no family + sourceGroup → "sourceGroup (ambiguous)"
+ * 5. no family + no sourceGroup → null (skip)
  */
 export function resolveIngredientKey(
   ingredient: IngredientRecord,
 ): string | null {
   if (ingredient.family != null) {
-    return ingredient.isHydrolyzed
-      ? `${ingredient.family} (hydrolyzed)`
-      : ingredient.family
+    if (ingredient.isHydrolyzed) {
+      return `${ingredient.family} (hydrolyzed)`
+    }
+    if (ingredient.formType != null && FAT_OIL_FORM_TYPES.has(ingredient.formType)) {
+      return `${ingredient.family} (${ingredient.formType})`
+    }
+    return ingredient.family
   }
   if (ingredient.sourceGroup != null) {
     return `${ingredient.sourceGroup} (ambiguous)`
   }
   return null
+}
+
+/**
+ * Check whether a form type represents a fat/oil (non-allergenic).
+ */
+export function isNonAllergenicForm(formType: string | null): boolean {
+  return formType != null && FAT_OIL_FORM_TYPES.has(formType)
+}
+
+// ---------------------------------------------------------------------------
+// Position weighting
+// ---------------------------------------------------------------------------
+
+/**
+ * Exponential decay weight for ingredient position.
+ * Position 1 = 1.0, decays with lambda = 0.15.
+ */
+export function positionWeight(position: number): number {
+  return Math.exp(-DEFAULT_SCORING_CONSTANTS.positionWeights.lambda * (position - 1))
+}
+
+/**
+ * Categorize an ingredient position.
+ */
+export function positionCategory(position: number): PositionCategory {
+  if (position <= 4) return "primary"
+  if (position <= 10) return "secondary"
+  if (position <= 17) return "minor"
+  return "trace"
 }
 
 // ---------------------------------------------------------------------------
@@ -94,7 +142,7 @@ function resolveIngredientsForProducts(
 ): ActiveIngredient[] {
   const keyMap = new Map<
     string,
-    { ingredientIds: Set<string>; bestPosition: number; fromTreat: boolean }
+    { ingredientIds: Set<string>; bestPosition: number; fromTreat: boolean; formType: string | null }
   >()
 
   const processProduct = (productId: string, isTreat: boolean): void => {
@@ -117,6 +165,7 @@ function resolveIngredientsForProducts(
           ingredientIds: new Set([pi.ingredient.id]),
           bestPosition: pi.position,
           fromTreat: isTreat,
+          formType: pi.ingredient.formType,
         })
       }
     }
@@ -134,6 +183,7 @@ function resolveIngredientsForProducts(
     ingredientIds: Array.from(data.ingredientIds),
     bestPosition: data.bestPosition,
     fromTreat: data.fromTreat,
+    formType: data.formType,
   }))
 }
 
@@ -168,8 +218,8 @@ function buildDayOutcome(
       const scorecard = input.scorecards.find(
         (sc) => sc.planGroupId === activePlanGroupId,
       )
-      if (scorecard?.poopQuality != null) {
-        scorecardPoopFallback = scorecard.poopQuality
+      if (scorecard?.poopQuality != null && scorecard.poopQuality.length > 0) {
+        scorecardPoopFallback = averageScores(scorecard.poopQuality)
       }
     }
   }
@@ -243,11 +293,12 @@ export function buildDaySnapshots(
     )
 
     // Transition buffer: detect food product set change from previous day
-    if (prevProductIds != null) {
+    // Only triggers on actual switches (A→B), not initial start (∅→A)
+    if (prevProductIds != null && prevProductIds.size > 0) {
       const sameProducts =
         foodProductIds.size === prevProductIds.size &&
         [...foodProductIds].every((id) => prevProductIds!.has(id))
-      if (!sameProducts) {
+      if (!sameProducts && foodProductIds.size > 0) {
         transitionCountdown = options.transitionBufferDays
       }
     }
@@ -273,6 +324,7 @@ export function buildDaySnapshots(
       outcome,
       isTransitionBuffer,
       isExposureBuffer,
+      isBackfill: false,
     })
 
     prevProductIds = foodProductIds
@@ -288,12 +340,17 @@ export function buildDaySnapshots(
 export function computeConfidence(
   daysWithEventLogs: number,
   daysWithScorecardOnly: number,
+  daysWithBackfill: number,
 ): Confidence {
-  const total = daysWithEventLogs + daysWithScorecardOnly
-  if (daysWithEventLogs >= 14) return "high"
-  if (daysWithEventLogs >= 7) return "medium"
-  if (daysWithEventLogs >= 3) return "low"
-  if (total >= 3) return "low"
+  // Effective days: event logs at full weight, backfill at 0.5x, scorecard-only at 0.25x
+  const effectiveDays =
+    daysWithEventLogs +
+    daysWithBackfill * 0.5 +
+    daysWithScorecardOnly * 0.25
+
+  if (effectiveDays >= 56) return "high"
+  if (effectiveDays >= 30) return "medium"
+  if (effectiveDays >= 5) return "low"
   return "insufficient"
 }
 
@@ -302,16 +359,24 @@ export function computeConfidence(
 // ---------------------------------------------------------------------------
 
 interface IngredientAccumulator {
+  // Raw averages
   poopSum: number
   poopCount: number
   itchSum: number
   itchCount: number
+  // Weighted numerator/denominator
+  weightedPoopNumerator: number
+  weightedPoopDenominator: number
+  weightedItchNumerator: number
+  weightedItchDenominator: number
   vomitTotal: number
   dayCount: number
   bestPosition: number
   fromTreat: boolean
+  formType: string | null
   daysWithEventLogs: number
   daysWithScorecardOnly: number
+  daysWithBackfill: number
   badDays: number
   goodDays: number
 }
@@ -373,12 +438,18 @@ export function computeIngredientScores(
           poopCount: 0,
           itchSum: 0,
           itchCount: 0,
+          weightedPoopNumerator: 0,
+          weightedPoopDenominator: 0,
+          weightedItchNumerator: 0,
+          weightedItchDenominator: 0,
           vomitTotal: 0,
           dayCount: 0,
           bestPosition: ing.bestPosition,
           fromTreat: ing.fromTreat,
+          formType: ing.formType,
           daysWithEventLogs: 0,
           daysWithScorecardOnly: 0,
+          daysWithBackfill: 0,
           badDays: 0,
           goodDays: 0,
         }
@@ -391,22 +462,46 @@ export function computeIngredientScores(
       }
       if (ing.fromTreat) acc.fromTreat = true
 
+      const posWeight = positionWeight(ing.bestPosition)
+
       if (effectivePoop != null) {
+        // Raw average
         acc.poopSum += effectivePoop
         acc.poopCount++
+
+        // Weighted: bad days (>=5) count 3x, good days count 1x
+        const dayWeight = effectivePoop >= 5
+          ? DEFAULT_SCORING_CONSTANTS.badDayMultiplier
+          : DEFAULT_SCORING_CONSTANTS.goodDayMultiplier
+        acc.weightedPoopNumerator += effectivePoop * posWeight * dayWeight
+        acc.weightedPoopDenominator += posWeight * dayWeight
+
         if (effectivePoop >= 5) acc.badDays++
         if (effectivePoop <= 3) acc.goodDays++
       }
 
       if (snap.outcome.itchScore != null) {
+        // Raw average
         acc.itchSum += snap.outcome.itchScore
         acc.itchCount++
+
+        // Weighted: itch >= 4 is bad
+        const dayWeight = snap.outcome.itchScore >= 4
+          ? DEFAULT_SCORING_CONSTANTS.badDayMultiplier
+          : DEFAULT_SCORING_CONSTANTS.goodDayMultiplier
+        acc.weightedItchNumerator += snap.outcome.itchScore * posWeight * dayWeight
+        acc.weightedItchDenominator += posWeight * dayWeight
       }
 
       acc.vomitTotal += snap.outcome.vomitCount
 
-      if (hasEventLog) acc.daysWithEventLogs++
-      else if (hasScorecardOnly) acc.daysWithScorecardOnly++
+      if (snap.isBackfill) {
+        acc.daysWithBackfill++
+      } else if (hasEventLog) {
+        acc.daysWithEventLogs++
+      } else if (hasScorecardOnly) {
+        acc.daysWithScorecardOnly++
+      }
     }
   }
 
@@ -416,22 +511,32 @@ export function computeIngredientScores(
     results.push({
       key,
       dayCount: acc.dayCount,
-      avgPoopScore: acc.poopCount > 0 ? acc.poopSum / acc.poopCount : null,
-      avgItchScore: acc.itchCount > 0 ? acc.itchSum / acc.itchCount : null,
+      weightedPoopScore: acc.weightedPoopDenominator > 0
+        ? acc.weightedPoopNumerator / acc.weightedPoopDenominator
+        : null,
+      weightedItchScore: acc.weightedItchDenominator > 0
+        ? acc.weightedItchNumerator / acc.weightedItchDenominator
+        : null,
+      rawAvgPoopScore: acc.poopCount > 0 ? acc.poopSum / acc.poopCount : null,
+      rawAvgItchScore: acc.itchCount > 0 ? acc.itchSum / acc.itchCount : null,
       vomitCount: acc.vomitTotal,
       badDayCount: acc.badDays,
       goodDayCount: acc.goodDays,
       confidence: computeConfidence(
         acc.daysWithEventLogs,
         acc.daysWithScorecardOnly,
+        acc.daysWithBackfill,
       ),
       exposureFraction:
         totalScoreableDays > 0 ? acc.dayCount / totalScoreableDays : 0,
       bestPosition: acc.bestPosition,
+      positionCategory: positionCategory(acc.bestPosition),
       appearedInTreats: acc.fromTreat,
       excludedDays: excludedCount,
       daysWithEventLogs: acc.daysWithEventLogs,
       daysWithScorecardOnly: acc.daysWithScorecardOnly,
+      daysWithBackfill: acc.daysWithBackfill,
+      isAllergenicallyRelevant: !isNonAllergenicForm(acc.formType),
     })
   }
 
@@ -447,7 +552,28 @@ function extractFamilyFromKey(key: string): string | null {
   if (key.endsWith(" (hydrolyzed)")) {
     return key.slice(0, -" (hydrolyzed)".length)
   }
+  if (key.endsWith(" (fat)")) {
+    return key.slice(0, -" (fat)".length)
+  }
+  if (key.endsWith(" (oil)")) {
+    return key.slice(0, -" (oil)".length)
+  }
   return key
+}
+
+/**
+ * Check if a key represents a non-allergenic form (fat/oil).
+ */
+function isNonAllergenicKey(key: string): boolean {
+  return key.endsWith(" (fat)") || key.endsWith(" (oil)")
+}
+
+/**
+ * Extract the source group from an ambiguous key like "poultry (ambiguous)".
+ */
+function extractSourceGroupFromAmbiguousKey(key: string): string | null {
+  if (!key.endsWith(" (ambiguous)")) return null
+  return key.slice(0, -" (ambiguous)".length)
 }
 
 export function flagCrossReactivity(
@@ -460,7 +586,9 @@ export function flagCrossReactivity(
     const familySet = new Set(group.families)
 
     // Find all scores whose underlying family is in this group
+    // Skip non-allergenic forms — fat/oil can't trigger cross-reactivity
     const matchingScores = result.filter((s) => {
+      if (isNonAllergenicKey(s.key)) return false
       const family = extractFamilyFromKey(s.key)
       return family != null && familySet.has(family)
     })
@@ -470,12 +598,12 @@ export function flagCrossReactivity(
     for (const s of matchingScores) {
       const family = extractFamilyFromKey(s.key)!
       const isBad =
-        (s.avgPoopScore != null && s.avgPoopScore >= 4.0) ||
+        (s.weightedPoopScore != null && s.weightedPoopScore >= 4.0) ||
         (s.dayCount > 0 && s.badDayCount / s.dayCount > 0.3)
       if (isBad) badFamilies.add(family)
     }
 
-    // Annotate if 2+ families are bad
+    // Confirmed: 2+ families bad → flag with crossReactivityGroup
     if (badFamilies.size >= 2) {
       for (const s of matchingScores) {
         const family = extractFamilyFromKey(s.key)!
@@ -484,9 +612,106 @@ export function flagCrossReactivity(
         }
       }
     }
+
+    // Warning: 1 family bad → warn other families in the same group
+    if (badFamilies.size === 1) {
+      const badFamily = [...badFamilies][0]
+      for (const s of matchingScores) {
+        const family = extractFamilyFromKey(s.key)!
+        if (family !== badFamily) {
+          s.crossReactivityWarning = `${capitalize(badFamily)} scored poorly \u2014 ${capitalize(family)} is in the same ${group.groupName} family and may cause similar reactions`
+        }
+      }
+    }
+  }
+
+  // Handle ambiguous ingredients: if "poultry (ambiguous)" exists and any
+  // specific poultry family has bad signals, warn the ambiguous key
+  for (const s of result) {
+    const sourceGroup = extractSourceGroupFromAmbiguousKey(s.key)
+    if (sourceGroup == null) continue
+
+    // Find any group that matches this source group name
+    for (const group of groups) {
+      if (group.groupName !== sourceGroup) continue
+
+      const badInGroup = result.filter((other) => {
+        if (isNonAllergenicKey(other.key)) return false
+        const family = extractFamilyFromKey(other.key)
+        if (family == null || !new Set(group.families).has(family)) return false
+        return (
+          (other.weightedPoopScore != null && other.weightedPoopScore >= 4.0) ||
+          (other.dayCount > 0 && other.badDayCount / other.dayCount > 0.3)
+        )
+      })
+
+      if (badInGroup.length > 0) {
+        const badNames = badInGroup.map((b) => capitalize(extractFamilyFromKey(b.key)!)).join(", ")
+        s.crossReactivityWarning = `This could be any ${sourceGroup} protein \u2014 and ${badNames} scored poorly`
+      }
+    }
   }
 
   return result
+}
+
+function capitalize(s: string): string {
+  return s.charAt(0).toUpperCase() + s.slice(1)
+}
+
+// ---------------------------------------------------------------------------
+// Backfill snapshots — aggregate historical records, no real dates
+// ---------------------------------------------------------------------------
+
+/**
+ * Build virtual day snapshots from backfill entries.
+ *
+ * Backfills are dateless historical records: "I fed this food for ~N days,
+ * poop quality was X." Each backfill contributes N virtual snapshots with
+ * the scorecard's poop quality as the outcome (set as poopScore directly,
+ * not scorecardPoopFallback — backfill scorecards ARE the user's explicit
+ * report). These are never transition- or exposure-buffered.
+ */
+export function buildBackfillSnapshots(
+  input: CorrelationInput,
+): DaySnapshot[] {
+  const snapshots: DaySnapshot[] = []
+
+  for (const backfill of input.backfills) {
+    if (!backfill.scorecard?.poopQuality?.length) continue
+
+    const ingredients = resolveIngredientsForProducts(
+      new Set([backfill.productId]),
+      new Set(),
+      input.productIngredientMap,
+    )
+
+    if (ingredients.length === 0) continue
+
+    const avgPoop = averageScores(backfill.scorecard.poopQuality)
+
+    for (let i = 0; i < backfill.durationDays; i++) {
+      snapshots.push({
+        date: `backfill:${backfill.planGroupId}:${i}`,
+        ingredients,
+        outcome: {
+          poopScore: avgPoop,
+          itchScore: null,
+          vomitCount: 0,
+          scorecardPoopFallback: null,
+          onItchinessMedication: false,
+          onDigestiveMedication: false,
+          pollenIndex: null,
+          hasAccidentalExposure: false,
+        },
+        isTransitionBuffer: false,
+        isExposureBuffer: false,
+        isBackfill: true,
+      })
+    }
+  }
+
+  return snapshots
 }
 
 // ---------------------------------------------------------------------------
@@ -497,12 +722,17 @@ export function runCorrelation(
   input: CorrelationInput,
   options: CorrelationOptions,
 ): CorrelationResult {
-  const snapshots = buildDaySnapshots(input, options)
-  let scores = computeIngredientScores(snapshots, options)
+  const daySnapshots = buildDaySnapshots(input, options)
+  const backfillSnaps = buildBackfillSnapshots(input)
+
+  // Merge: day-by-day snapshots + backfill virtual snapshots
+  const allSnapshots = [...daySnapshots, ...backfillSnaps]
+
+  let scores = computeIngredientScores(allSnapshots, options)
   scores = flagCrossReactivity(scores, input.crossReactivityGroups)
 
   // Count scoreable days (same filtering as computeIngredientScores)
-  const scoreableDays = snapshots.filter((snap) => {
+  const scoreableDays = allSnapshots.filter((snap) => {
     if (snap.isTransitionBuffer || snap.isExposureBuffer) return false
     if (
       options.excludeMedicationPeriods &&
@@ -526,7 +756,7 @@ export function runCorrelation(
     dogId: input.dogId,
     windowStart: input.windowStart,
     windowEnd: input.windowEnd,
-    totalDays: snapshots.length,
+    totalDays: daySnapshots.length,
     scoreableDays,
     scores,
     options,

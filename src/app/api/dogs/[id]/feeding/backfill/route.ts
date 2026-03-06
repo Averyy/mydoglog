@@ -12,7 +12,7 @@ interface BackfillItem {
 }
 
 interface ScorecardInput {
-  poopQuality?: number | null
+  poopQuality?: number | number[] | null
   gas?: string | null
   vomiting?: string | null
   palatability?: string | null
@@ -57,7 +57,10 @@ export async function POST(
     }
 
     // Calculate start date from end date and duration
-    const endDate = body.endDate ?? new Date().toISOString().split("T")[0]
+    // Default to yesterday — backfills are historical and shouldn't overlap today
+    const yesterday = new Date()
+    yesterday.setDate(yesterday.getDate() - 1)
+    const endDate = body.endDate ?? yesterday.toISOString().split("T")[0]
     const endMs = new Date(endDate).getTime()
     const startMs = endMs - duration.days * 24 * 60 * 60 * 1000
     const startDate = new Date(startMs).toISOString().split("T")[0]
@@ -92,7 +95,11 @@ export async function POST(
     if (body.scorecard) {
       await db.insert(foodScorecards).values({
         planGroupId,
-        poopQuality: body.scorecard.poopQuality ?? null,
+        poopQuality: body.scorecard.poopQuality != null
+          ? (Array.isArray(body.scorecard.poopQuality)
+            ? body.scorecard.poopQuality
+            : [body.scorecard.poopQuality])
+          : null,
         gas: body.scorecard.gas as typeof foodScorecards.$inferInsert.gas,
         vomiting:
           body.scorecard.vomiting as typeof foodScorecards.$inferInsert.vomiting,
