@@ -33,6 +33,17 @@ import type {
   RawBackfill,
 } from "./types"
 
+// Cross-reactivity cache — static reference data, 5-minute TTL
+type CrossReactivityRow = typeof ingredientCrossReactivity.$inferSelect
+let _crossReactivityCache: { rows: CrossReactivityRow[]; at: number } | null = null
+async function getCrossReactivityGroups(): Promise<CrossReactivityRow[]> {
+  if (_crossReactivityCache && Date.now() - _crossReactivityCache.at < 300_000)
+    return _crossReactivityCache.rows
+  const rows = await db.select().from(ingredientCrossReactivity)
+  _crossReactivityCache = { rows, at: Date.now() }
+  return rows
+}
+
 /**
  * Fetch all data needed for correlation analysis.
  *
@@ -169,7 +180,7 @@ export async function fetchCorrelationInput(
         ),
       ),
 
-    // Medications (full history, ranges can span window)
+    // Medications overlapping the correlation window
     db
       .select({
         startDate: medications.startDate,
@@ -177,10 +188,16 @@ export async function fetchCorrelationInput(
         reason: medications.reason,
       })
       .from(medications)
-      .where(eq(medications.dogId, dogId)),
+      .where(
+        and(
+          eq(medications.dogId, dogId),
+          lte(medications.startDate, windowEnd),
+          sql`(${medications.endDate} IS NULL OR ${medications.endDate} >= ${windowStart})`,
+        ),
+      ),
 
-    // Cross-reactivity groups
-    db.select().from(ingredientCrossReactivity),
+    // Cross-reactivity groups (cached)
+    getCrossReactivityGroups(),
   ])
 
   // -- Convert feeding periods to raw format --
@@ -250,6 +267,7 @@ export async function fetchCorrelationInput(
           .select({
             planGroupId: foodScorecards.planGroupId,
             poopQuality: foodScorecards.poopQuality,
+            itchSeverity: foodScorecards.itchSeverity,
           })
           .from(foodScorecards)
           .where(

@@ -53,11 +53,13 @@ export function ProductPicker({
   const [page, setPage] = useState(1)
   const [hasMore, setHasMore] = useState(false)
   const [loaded, setLoaded] = useState(false)
+  const [loadError, setLoadError] = useState(false)
   const [brands, setBrands] = useState<BrandInfo[]>([])
   const [selectedBrandId, setSelectedBrandId] = useState<string | null>(null)
   const [failedImages, setFailedImages] = useState<Set<string>>(new Set())
   const debounceRef = useRef<ReturnType<typeof setTimeout>>(null)
   const sentinelRef = useRef<HTMLDivElement>(null)
+  const listRef = useRef<HTMLDivElement>(null)
   const queryRef = useRef(query)
   const brandIdRef = useRef(selectedBrandId)
 
@@ -79,7 +81,12 @@ export function ProductPicker({
           setResults(data.items ?? [])
           setHasMore(data.page < data.totalPages)
           setLoaded(true)
+          setLoadError(false)
+        } else {
+          setLoadError(true)
         }
+      } catch {
+        setLoadError(true)
       } finally {
         setLoading(false)
       }
@@ -110,26 +117,26 @@ export function ProductPicker({
     }
   }, [loadingMore, hasMore, page, productType])
 
-  // Fetch brands once on first open
+  // Eagerly fetch brands and initial products on mount (warms API routes in dev)
   useEffect(() => {
-    if (open && brands.length === 0) {
-      fetch("/api/brands")
-        .then((r) => r.json())
-        .then((data: BrandInfo[]) => {
-          setBrands(data.filter((b) => b.productCount > 0))
-        })
-        .catch(() => {})
-    }
-  }, [open, brands.length])
+    fetch("/api/brands")
+      .then((r) => r.json())
+      .then((data: BrandInfo[]) => {
+        setBrands(data.filter((b) => b.productCount > 0))
+      })
+      .catch(() => {})
+    search("", null)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
-  // Load initial results when opened
+  // Retry on error when opened
   useEffect(() => {
-    if (open && !loaded) {
+    if (open && loadError) {
       search(query, selectedBrandId)
     }
-  }, [open, loaded, search, query, selectedBrandId])
+  }, [open, loadError, search, query, selectedBrandId])
 
-  // Debounced search on query text change (skip if initial load hasn't happened yet)
+  // Debounced search on query text change
   useEffect(() => {
     if (!open || !loaded) return
     if (debounceRef.current) clearTimeout(debounceRef.current)
@@ -140,10 +147,11 @@ export function ProductPicker({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [query, search, open, loaded])
 
-  // IntersectionObserver for infinite scroll
+  // IntersectionObserver for infinite scroll — root must be the scroll container
   useEffect(() => {
     const sentinel = sentinelRef.current
-    if (!sentinel) return
+    const root = listRef.current
+    if (!sentinel || !root) return
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -151,7 +159,7 @@ export function ProductPicker({
           loadMore()
         }
       },
-      { threshold: 0.1 },
+      { root, threshold: 0.1 },
     )
     observer.observe(sentinel)
     return () => observer.disconnect()
@@ -266,8 +274,25 @@ export function ProductPicker({
               ))}
             </div>
           )}
-          <CommandList className="min-h-[200px]">
-            {loaded && !loading && results.length === 0 && (
+          <CommandList ref={listRef} className="min-h-[200px]">
+            {loading && results.length === 0 && (
+              <div className="flex items-center justify-center py-8">
+                <Loader2 className="size-5 animate-spin text-muted-foreground" />
+              </div>
+            )}
+            {!loading && loadError && results.length === 0 && (
+              <div className="py-6 text-center text-sm text-muted-foreground">
+                Failed to load products.{" "}
+                <button
+                  type="button"
+                  onClick={() => search(query, selectedBrandId)}
+                  className="text-primary underline underline-offset-2"
+                >
+                  Retry
+                </button>
+              </div>
+            )}
+            {loaded && !loading && !loadError && results.length === 0 && (
               <CommandEmpty>No products found.</CommandEmpty>
             )}
             {results.length > 0 && (

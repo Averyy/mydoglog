@@ -48,9 +48,10 @@ export interface FeedingPlanItem {
 export interface ScorecardSummary {
   id: string
   poopQuality: number[] | null
-  gas: string | null
+  itchSeverity: number[] | null
   vomiting: string | null
   palatability: string | null
+  digestiveImpact: string | null
   itchinessImpact: string | null
   verdict: string | null
   primaryReason: string | null

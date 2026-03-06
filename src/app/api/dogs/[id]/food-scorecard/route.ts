@@ -1,86 +1,138 @@
 import { NextRequest, NextResponse } from "next/server"
 import { requireDogOwnership, isNextResponse } from "@/lib/api-helpers"
 import { db, feedingPeriods, products, brands, foodScorecards, poopLogs, itchinessLogs, vomitLogs } from "@/lib/db"
-import { eq, sql, desc, and, gte, lte } from "drizzle-orm"
+import { eq, sql, desc } from "drizzle-orm"
 import { resolveActivePlan, type PlanPeriod } from "@/lib/feeding"
+import { fetchCorrelationInput, fetchIngredientProductMap } from "@/lib/correlation/query"
+import { runCorrelation } from "@/lib/correlation/engine"
+import { findSaltPosition, splitIngredients } from "@/lib/ingredients"
+import { DEFAULT_CORRELATION_OPTIONS } from "@/lib/correlation/types"
+import type { IngredientProductEntry } from "@/lib/correlation/types"
 import type { FeedingPlanGroup, FeedingPlanItem, LogStats } from "@/lib/types"
 
 type RouteParams = { params: Promise<{ id: string }> }
 
-/** Aggregate poop, itch, and vomit logs for a date range. */
-async function aggregateLogStats(
+interface DateRange {
+  key: string
+  startDate: string
+  endDate: string
+}
+
+/**
+ * Batch-aggregate poop, itch, and vomit log stats for multiple date ranges
+ * in a single SQL query using a ranges CTE.
+ * Replaces N×4 individual queries with 1 query.
+ */
+async function batchAggregateLogStats(
   dogId: string,
-  startDate: string,
-  endDate: string | null,
-): Promise<LogStats> {
-  const effectiveEnd = endDate ?? new Date().toISOString().split("T")[0]
+  ranges: DateRange[],
+): Promise<Map<string, LogStats>> {
+  if (ranges.length === 0) return new Map()
 
-  const [poopAgg, itchAgg, vomitAgg] = await Promise.all([
-    db
-      .select({
-        avg: sql<number | null>`round(avg(${poopLogs.firmnessScore})::numeric, 1)`,
-        count: sql<number>`count(*)::int`,
-      })
-      .from(poopLogs)
-      .where(
-        and(
-          eq(poopLogs.dogId, dogId),
-          gte(poopLogs.date, startDate),
-          lte(poopLogs.date, effectiveEnd),
-        ),
-      ),
-    db
-      .select({
-        avg: sql<number | null>`round(avg(${itchinessLogs.score})::numeric, 1)`,
-        count: sql<number>`count(*)::int`,
-      })
-      .from(itchinessLogs)
-      .where(
-        and(
-          eq(itchinessLogs.dogId, dogId),
-          gte(itchinessLogs.date, startDate),
-          lte(itchinessLogs.date, effectiveEnd),
-        ),
-      ),
-    db
-      .select({
-        count: sql<number>`count(*)::int`,
-      })
-      .from(vomitLogs)
-      .where(
-        and(
-          eq(vomitLogs.dogId, dogId),
-          gte(vomitLogs.date, startDate),
-          lte(vomitLogs.date, effectiveEnd),
-        ),
-      ),
-  ])
+  const rangeValues = ranges.map(
+    (r) => sql`(${r.key}, ${r.startDate}::date, ${r.endDate}::date)`,
+  )
 
-  // Count distinct days with any log data
-  const daysResult = await db.execute<{ days: number }>(sql`
-    SELECT count(DISTINCT d)::int AS days FROM (
-      SELECT ${poopLogs.date} AS d FROM ${poopLogs}
-        WHERE ${poopLogs.dogId} = ${dogId} AND ${poopLogs.date} >= ${startDate} AND ${poopLogs.date} <= ${effectiveEnd}
-      UNION
-      SELECT ${itchinessLogs.date} AS d FROM ${itchinessLogs}
-        WHERE ${itchinessLogs.dogId} = ${dogId} AND ${itchinessLogs.date} >= ${startDate} AND ${itchinessLogs.date} <= ${effectiveEnd}
-      UNION
-      SELECT ${vomitLogs.date} AS d FROM ${vomitLogs}
-        WHERE ${vomitLogs.dogId} = ${dogId} AND ${vomitLogs.date} >= ${startDate} AND ${vomitLogs.date} <= ${effectiveEnd}
-    ) sub
+  const result = await db.execute<{
+    range_key: string
+    poop_avg: string | null
+    poop_count: number
+    itch_avg: string | null
+    itch_count: number
+    vomit_count: number
+    days_with_data: number
+  }>(sql`
+    WITH ranges(range_key, range_start, range_end) AS (
+      VALUES ${sql.join(rangeValues, sql`, `)}
+    ),
+    poop_agg AS (
+      SELECT r.range_key,
+        round(avg(p.firmness_score)::numeric, 1) AS avg_score,
+        count(*)::int AS cnt
+      FROM ranges r
+      JOIN ${poopLogs} p ON p.dog_id = ${dogId} AND p.date >= r.range_start AND p.date <= r.range_end
+      GROUP BY r.range_key
+    ),
+    itch_agg AS (
+      SELECT r.range_key,
+        round(avg(i.score)::numeric, 1) AS avg_score,
+        count(*)::int AS cnt
+      FROM ranges r
+      JOIN ${itchinessLogs} i ON i.dog_id = ${dogId} AND i.date >= r.range_start AND i.date <= r.range_end
+      GROUP BY r.range_key
+    ),
+    vomit_agg AS (
+      SELECT r.range_key,
+        count(*)::int AS cnt
+      FROM ranges r
+      JOIN ${vomitLogs} v ON v.dog_id = ${dogId} AND v.date >= r.range_start AND v.date <= r.range_end
+      GROUP BY r.range_key
+    ),
+    days_agg AS (
+      SELECT range_key, count(DISTINCT log_date)::int AS days
+      FROM (
+        SELECT r.range_key, p.date AS log_date FROM ranges r
+          JOIN ${poopLogs} p ON p.dog_id = ${dogId} AND p.date >= r.range_start AND p.date <= r.range_end
+        UNION ALL
+        SELECT r.range_key, i.date FROM ranges r
+          JOIN ${itchinessLogs} i ON i.dog_id = ${dogId} AND i.date >= r.range_start AND i.date <= r.range_end
+        UNION ALL
+        SELECT r.range_key, v.date FROM ranges r
+          JOIN ${vomitLogs} v ON v.dog_id = ${dogId} AND v.date >= r.range_start AND v.date <= r.range_end
+      ) sub
+      GROUP BY range_key
+    )
+    SELECT
+      r.range_key,
+      pa.avg_score::text AS poop_avg,
+      COALESCE(pa.cnt, 0) AS poop_count,
+      ia.avg_score::text AS itch_avg,
+      COALESCE(ia.cnt, 0) AS itch_count,
+      COALESCE(va.cnt, 0) AS vomit_count,
+      COALESCE(da.days, 0) AS days_with_data
+    FROM ranges r
+    LEFT JOIN poop_agg pa ON pa.range_key = r.range_key
+    LEFT JOIN itch_agg ia ON ia.range_key = r.range_key
+    LEFT JOIN vomit_agg va ON va.range_key = r.range_key
+    LEFT JOIN days_agg da ON da.range_key = r.range_key
   `)
 
-  const avgPoop = poopAgg[0]?.avg
-  const avgItch = itchAgg[0]?.avg
-
-  return {
-    avgPoopScore: avgPoop != null ? Number(avgPoop) : null,
-    avgItchScore: avgItch != null ? Number(avgItch) : null,
-    poopLogCount: poopAgg[0]?.count ?? 0,
-    itchLogCount: itchAgg[0]?.count ?? 0,
-    vomitLogCount: vomitAgg[0]?.count ?? 0,
-    daysWithData: (daysResult.rows[0] as { days: number } | undefined)?.days ?? 0,
+  const map = new Map<string, LogStats>()
+  for (const row of result.rows) {
+    const r = row as {
+      range_key: string
+      poop_avg: string | null
+      poop_count: number
+      itch_avg: string | null
+      itch_count: number
+      vomit_count: number
+      days_with_data: number
+    }
+    map.set(r.range_key, {
+      avgPoopScore: r.poop_avg != null ? Number(r.poop_avg) : null,
+      avgItchScore: r.itch_avg != null ? Number(r.itch_avg) : null,
+      poopLogCount: Number(r.poop_count),
+      itchLogCount: Number(r.itch_count),
+      vomitLogCount: Number(r.vomit_count),
+      daysWithData: Number(r.days_with_data),
+    })
   }
+
+  // Fill in empty stats for ranges with no data
+  for (const range of ranges) {
+    if (!map.has(range.key)) {
+      map.set(range.key, {
+        avgPoopScore: null,
+        avgItchScore: null,
+        poopLogCount: 0,
+        itchLogCount: 0,
+        vomitLogCount: 0,
+        daysWithData: 0,
+      })
+    }
+  }
+
+  return map
 }
 
 export async function GET(
@@ -91,6 +143,8 @@ export async function GET(
     const { id } = await params
     const authResult = await requireDogOwnership(id)
     if (isNextResponse(authResult)) return authResult
+
+    const today = new Date().toISOString().split("T")[0]
 
     // Fetch all feeding periods with product data
     const rows = await db
@@ -159,49 +213,60 @@ export async function GET(
       group.items.push(item)
     }
 
-    // Fetch scorecards for all plan groups
+    // Fetch scorecards + batch log stats in parallel
+    const allGroups = [...groupMap.values()]
     const planGroupIds = [...groupMap.keys()]
-    if (planGroupIds.length > 0) {
-      const scorecards = await db
-        .select()
-        .from(foodScorecards)
-        .where(
-          sql`${foodScorecards.planGroupId} IN (${sql.join(
-            planGroupIds.map((pgId) => sql`${pgId}`),
-            sql`, `,
-          )})`,
-        )
 
-      for (const sc of scorecards) {
-        const group = groupMap.get(sc.planGroupId)
-        if (group) {
-          group.scorecard = {
-            id: sc.id,
-            poopQuality: sc.poopQuality,
-            gas: sc.gas,
-            vomiting: sc.vomiting,
-            palatability: sc.palatability,
-            itchinessImpact: sc.itchinessImpact,
-            verdict: sc.verdict,
-            primaryReason: sc.primaryReason,
-            notes: sc.notes,
-          }
-        }
-      }
+    const nonBackfillGroups = allGroups.filter((g) => !g.isBackfill)
+    const logRanges: DateRange[] = nonBackfillGroups.map((g) => ({
+      key: g.planGroupId,
+      startDate: g.startDate,
+      endDate: g.endDate ?? today,
+    }))
+
+    const [, logStatsMap] = await Promise.all([
+      // Fetch scorecards
+      planGroupIds.length > 0
+        ? db
+            .select()
+            .from(foodScorecards)
+            .where(
+              sql`${foodScorecards.planGroupId} IN (${sql.join(
+                planGroupIds.map((pgId) => sql`${pgId}`),
+                sql`, `,
+              )})`,
+            )
+            .then((scorecards) => {
+              for (const sc of scorecards) {
+                const group = groupMap.get(sc.planGroupId)
+                if (group) {
+                  group.scorecard = {
+                    id: sc.id,
+                    poopQuality: sc.poopQuality,
+                    itchSeverity: sc.itchSeverity,
+                    vomiting: sc.vomiting,
+                    palatability: sc.palatability,
+                    digestiveImpact: sc.digestiveImpact,
+                    itchinessImpact: sc.itchinessImpact,
+                    verdict: sc.verdict,
+                    primaryReason: sc.primaryReason,
+                    notes: sc.notes,
+                  }
+                }
+              }
+            })
+        : Promise.resolve(),
+
+      // Batch log stats (single query for all groups)
+      batchAggregateLogStats(id, logRanges),
+    ])
+
+    // Apply log stats to groups
+    for (const group of nonBackfillGroups) {
+      group.logStats = logStatsMap.get(group.planGroupId) ?? null
     }
 
-    // Aggregate log stats for each non-backfill group
-    const allGroups = [...groupMap.values()]
-    await Promise.all(
-      allGroups
-        .filter((g) => !g.isBackfill)
-        .map(async (group) => {
-          group.logStats = await aggregateLogStats(id, group.startDate, group.endDate)
-        }),
-    )
-
     // Resolve the active plan — backfills are historical only, never "active"
-    const today = new Date().toISOString().split("T")[0]
     const planPeriods: PlanPeriod[] = rows
       .filter((r) => !r.isBackfill)
       .map((r) => ({
@@ -227,7 +292,120 @@ export async function GET(
       }
     }
 
-    return NextResponse.json({ scored, needsScoring, active })
+    // -- Correlation: use full date range (earliest feeding period → today) --
+    let correlationData: {
+      correlation: ReturnType<typeof runCorrelation> extends infer R ? R : never
+      ingredientProducts: Record<string, IngredientProductEntry[]>
+    } | null = null
+
+    if (allGroups.length > 0) {
+      const earliestStart = allGroups.reduce(
+        (min, g) => (g.startDate < min ? g.startDate : min),
+        allGroups[0].startDate,
+      )
+      const correlationInput = await fetchCorrelationInput(id, earliestStart, today)
+      const [correlationResult, ingredientProductMap] = await Promise.all([
+        Promise.resolve(runCorrelation(correlationInput, DEFAULT_CORRELATION_OPTIONS)),
+        fetchIngredientProductMap(correlationInput),
+      ])
+
+      const ingredientProducts: Record<string, IngredientProductEntry[]> = {}
+      for (const [key, entries] of ingredientProductMap) {
+        ingredientProducts[key] = entries
+      }
+
+      correlationData = {
+        correlation: correlationResult,
+        ingredientProducts,
+      }
+    }
+
+    // -- Per-product ingredient data for inline display --
+    const allProductIds = new Set<string>()
+    for (const g of allGroups) {
+      for (const item of g.items) {
+        allProductIds.add(item.productId)
+      }
+    }
+
+    const productIngredientData: Record<string, {
+      allIngredients: string[]
+      classifiedByPosition: { position: number; normalizedName: string; family: string | null; sourceGroup: string | null; formType: string | null; isHydrolyzed: boolean }[]
+      saltPosition: number | null
+    }> = {}
+
+    if (allProductIds.size > 0) {
+      const productIdList = [...allProductIds]
+
+      const [rawStrings, ingredientRows] = await Promise.all([
+        db
+          .select({
+            id: products.id,
+            rawIngredientString: products.rawIngredientString,
+          })
+          .from(products)
+          .where(
+            sql`${products.id} IN (${sql.join(
+              productIdList.map((pid) => sql`${pid}`),
+              sql`, `,
+            )})`,
+          ),
+        db.execute<{
+          product_id: string
+          position: number
+          normalized_name: string
+          family: string | null
+          source_group: string | null
+          form_type: string | null
+          is_hydrolyzed: boolean
+        }>(sql`
+          SELECT pi.product_id, pi.position, i.normalized_name, i.family, i.source_group, i.form_type, i.is_hydrolyzed
+          FROM product_ingredients pi
+          JOIN ingredients i ON i.id = pi.ingredient_id
+          WHERE pi.product_id IN (${sql.join(
+            productIdList.map((pid) => sql`${pid}`),
+            sql`, `,
+          )})
+          ORDER BY pi.position ASC
+        `),
+      ])
+
+      const rawStringMap = new Map(rawStrings.map((r) => [r.id, r.rawIngredientString ?? ""]))
+
+      // Group ingredients by product
+      const ingByProduct = new Map<string, typeof ingredientRows.rows>()
+      for (const row of ingredientRows.rows) {
+        const list = ingByProduct.get(row.product_id) ?? []
+        list.push(row)
+        ingByProduct.set(row.product_id, list)
+      }
+
+      for (const pid of productIdList) {
+        const rawStr = rawStringMap.get(pid) ?? ""
+        const ings = ingByProduct.get(pid) ?? []
+        productIngredientData[pid] = {
+          allIngredients: splitIngredients(rawStr),
+          classifiedByPosition: ings.map((ing) => ({
+            position: ing.position,
+            normalizedName: ing.normalized_name,
+            family: ing.family,
+            sourceGroup: ing.source_group,
+            formType: ing.form_type,
+            isHydrolyzed: ing.is_hydrolyzed,
+          })),
+          saltPosition: findSaltPosition(rawStr),
+        }
+      }
+    }
+
+    return NextResponse.json({
+      scored,
+      needsScoring,
+      active,
+      correlation: correlationData?.correlation ?? null,
+      ingredientProducts: correlationData?.ingredientProducts ?? {},
+      productIngredients: productIngredientData,
+    })
   } catch (error) {
     console.error("Error fetching food scorecard data:", error)
     return NextResponse.json(

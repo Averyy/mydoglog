@@ -1,0 +1,1 @@
+ALTER TABLE "food_scorecards" ADD COLUMN "itch_severity" integer[];

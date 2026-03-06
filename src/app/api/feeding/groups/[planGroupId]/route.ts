@@ -54,7 +54,9 @@ export async function PATCH(
     const updates: Record<string, unknown> = { updatedAt: new Date() }
 
     if (body.planName !== undefined) updates.planName = body.planName
+    if (body.startDate !== undefined) updates.startDate = body.startDate
     if (body.endDate !== undefined) updates.endDate = body.endDate
+    if (body.productId !== undefined) updates.productId = body.productId
 
     await db
       .update(feedingPeriods)

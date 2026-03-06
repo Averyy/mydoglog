@@ -134,15 +134,15 @@ export function DogForm({ dog, onClose }: DogFormProps) {
         />
       </div>
       <div className="flex gap-3">
-        <Button type="submit" disabled={loading}>
-          {loading ? "Saving..." : dog ? "Update" : "Add dog"}
-        </Button>
         <Button
           type="button"
           variant="outline"
           onClick={() => onClose ? onClose() : router.push("/dogs")}
         >
           Cancel
+        </Button>
+        <Button type="submit" disabled={loading}>
+          {loading ? "Saving..." : dog ? "Update" : "Add dog"}
         </Button>
       </div>
     </form>

@@ -9,26 +9,27 @@ export interface CommonTrigger {
 }
 
 /**
- * Most common food allergens/sensitivities in dogs.
- * Source: Mueller et al. 2016, BMC Vet Research.
+ * Most common cutaneous adverse food reaction triggers in dogs.
+ * Source: Mueller et al. 2016, BMC Vet Research — skin reactions only.
  */
-export const COMMON_TRIGGERS: CommonTrigger[] = [
-  { family: "beef", percentage: 34, note: "Most common food allergen" },
+export const COMMON_SKIN_TRIGGERS: CommonTrigger[] = [
+  { family: "beef", percentage: 34, note: "Most common skin allergen" },
   { family: "dairy", percentage: 17, note: "Includes milk, cheese, whey" },
   { family: "chicken", percentage: 15, note: "All poultry forms (meal, by-product)" },
   { family: "wheat", percentage: 13, note: "Gluten-containing grain" },
+  { family: "soy", percentage: 6 },
   { family: "lamb", percentage: 5 },
-  { family: "soy", percentage: 4, note: "Common GI irritant" },
   { family: "corn", percentage: 4 },
   { family: "egg", percentage: 4 },
   { family: "pork", percentage: 2 },
   { family: "fish", percentage: 2 },
+  { family: "rice", percentage: 2 },
 ]
 
-const COMMON_TRIGGER_FAMILIES = new Set(COMMON_TRIGGERS.map((t) => t.family))
+const COMMON_SKIN_TRIGGER_FAMILIES = new Set(COMMON_SKIN_TRIGGERS.map((t) => t.family))
 
-export function isCommonTrigger(family: string): boolean {
-  return COMMON_TRIGGER_FAMILIES.has(family)
+export function isCommonSkinTrigger(family: string): boolean {
+  return COMMON_SKIN_TRIGGER_FAMILIES.has(family)
 }
 
 /**

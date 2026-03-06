@@ -6,7 +6,6 @@ import { eq, and } from "drizzle-orm"
 
 type RouteParams = { params: Promise<{ planGroupId: string }> }
 
-const VALID_GAS = ["none", "mild", "bad", "terrible"] as const
 const VALID_VOMITING = ["none", "occasional", "frequent"] as const
 const VALID_PALATABILITY = ["loved", "ate", "reluctant", "refused"] as const
 const VALID_ITCHINESS_IMPACT = ["better", "no_change", "worse"] as const
@@ -77,9 +76,10 @@ export async function GET(
 
 interface ScorecardBody {
   poopQuality?: number | number[] | null
-  gas?: string | null
+  itchSeverity?: number | number[] | null
   vomiting?: string | null
   palatability?: string | null
+  digestiveImpact?: string | null
   itchinessImpact?: string | null
   verdict?: string | null
   primaryReason?: string | null
@@ -110,8 +110,19 @@ export async function PUT(
       }
       poopQuality = arr.sort((a, b) => a - b)
     }
-    if (body.gas && !VALID_GAS.includes(body.gas as typeof VALID_GAS[number])) {
-      return NextResponse.json({ error: "Invalid gas value" }, { status: 400 })
+
+    // Normalize itchSeverity: accept bare number or array
+    const rawItch = body.itchSeverity
+    let itchSeverity: number[] | null = null
+    if (rawItch != null) {
+      const arr = Array.isArray(rawItch) ? rawItch : [rawItch]
+      if (arr.some((v) => !Number.isInteger(v) || v < 0 || v > 5)) {
+        return NextResponse.json(
+          { error: "itchSeverity values must be integers 0-5" },
+          { status: 400 },
+        )
+      }
+      itchSeverity = arr.sort((a, b) => a - b)
     }
     if (
       body.vomiting &&
@@ -130,6 +141,17 @@ export async function PUT(
     ) {
       return NextResponse.json(
         { error: "Invalid palatability value" },
+        { status: 400 },
+      )
+    }
+    if (
+      body.digestiveImpact &&
+      !VALID_ITCHINESS_IMPACT.includes(
+        body.digestiveImpact as typeof VALID_ITCHINESS_IMPACT[number],
+      )
+    ) {
+      return NextResponse.json(
+        { error: "Invalid digestiveImpact value" },
         { status: 400 },
       )
     }
@@ -168,10 +190,13 @@ export async function PUT(
     const data = {
       planGroupId,
       poopQuality,
-      gas: body.gas as typeof VALID_GAS[number] | null ?? null,
+      itchSeverity,
       vomiting: body.vomiting as typeof VALID_VOMITING[number] | null ?? null,
       palatability:
         body.palatability as typeof VALID_PALATABILITY[number] | null ?? null,
+      digestiveImpact:
+        body.digestiveImpact as typeof VALID_ITCHINESS_IMPACT[number] | null ??
+        null,
       itchinessImpact:
         body.itchinessImpact as typeof VALID_ITCHINESS_IMPACT[number] | null ??
         null,

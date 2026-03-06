@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { FecalScorePickerMulti } from "@/components/fecal-score-picker"
+import { ItchScorePickerMulti } from "@/components/itchiness-logger"
 import { EnumPicker } from "@/components/enum-picker"
 import { CollapsibleNotes } from "@/components/collapsible-notes"
 import { Button } from "@/components/ui/button"
@@ -10,13 +11,6 @@ import { Separator } from "@/components/ui/separator"
 import { ThumbsUp, ThumbsDown, Minus } from "lucide-react"
 import { cn } from "@/lib/utils"
 
-
-const GAS_OPTIONS = [
-  { value: "none", label: "None" },
-  { value: "mild", label: "Mild" },
-  { value: "bad", label: "Bad" },
-  { value: "terrible", label: "Terrible" },
-]
 
 const VOMITING_OPTIONS = [
   { value: "none", label: "None" },
@@ -31,7 +25,7 @@ const PALATABILITY_OPTIONS = [
   { value: "refused", label: "Refused" },
 ]
 
-const ITCHINESS_IMPACT_OPTIONS = [
+const IMPACT_OPTIONS = [
   { value: "better", label: "Better" },
   { value: "no_change", label: "No change" },
   { value: "worse", label: "Worse" },
@@ -40,7 +34,6 @@ const ITCHINESS_IMPACT_OPTIONS = [
 const PRIMARY_REASON_OPTIONS = [
   { value: "bad_poop", label: "Bad poop" },
   { value: "vomiting", label: "Vomiting" },
-  { value: "gas", label: "Gas" },
   { value: "itchiness", label: "Itchiness" },
   { value: "refused_to_eat", label: "Refused food" },
   { value: "too_expensive", label: "Too expensive" },
@@ -49,20 +42,26 @@ const PRIMARY_REASON_OPTIONS = [
 
 export interface ScorecardData {
   poopQuality: number[] | null
-  gas: string | null
+  itchSeverity: number[] | null
   vomiting: string | null
   palatability: string | null
+  digestiveImpact: string | null
   itchinessImpact: string | null
   verdict: string | null
   primaryReason: string | null
   notes: string | null
 }
 
+/** "food" = full scorecard, "supplement" = digestive/itch impact + verdict, "backfill" = poop + itch ranges + notes */
+export type ScorecardFormMode = "food" | "supplement" | "backfill"
+
 interface FoodScorecardFormProps {
   onSave: (data: ScorecardData) => void
   onSkip: () => void
   initialData?: Partial<ScorecardData>
   hideSkip?: boolean
+  skipLabel?: string
+  mode?: ScorecardFormMode
 }
 
 export function FoodScorecardForm({
@@ -70,16 +69,25 @@ export function FoodScorecardForm({
   onSkip,
   initialData,
   hideSkip,
+  skipLabel = "Skip",
+  mode = "food",
 }: FoodScorecardFormProps) {
+  const isFood = mode === "food"
+  const isBackfill = mode === "backfill"
   const [poopQuality, setPoopQuality] = useState<number[] | null>(
     initialData?.poopQuality ?? null,
   )
-  const [gas, setGas] = useState<string | null>(initialData?.gas ?? null)
+  const [itchSeverity, setItchSeverity] = useState<number[] | null>(
+    initialData?.itchSeverity ?? null,
+  )
   const [vomiting, setVomiting] = useState<string | null>(
     initialData?.vomiting ?? null,
   )
   const [palatability, setPalatability] = useState<string | null>(
     initialData?.palatability ?? null,
+  )
+  const [digestiveImpact, setDigestiveImpact] = useState<string | null>(
+    initialData?.digestiveImpact ?? null,
   )
   const [itchinessImpact, setItchinessImpact] = useState<string | null>(
     initialData?.itchinessImpact ?? null,
@@ -95,11 +103,26 @@ export function FoodScorecardForm({
   const showPrimaryReason = verdict === "mixed" || verdict === "down"
 
   function handleSave(): void {
+    if (isBackfill) {
+      onSave({
+        poopQuality,
+        itchSeverity,
+        vomiting: null,
+        palatability: null,
+        digestiveImpact: null,
+        itchinessImpact: null,
+        verdict: null,
+        primaryReason: null,
+        notes: notes.trim() || null,
+      })
+      return
+    }
     onSave({
-      poopQuality,
-      gas,
-      vomiting,
-      palatability,
+      poopQuality: isFood ? poopQuality : null,
+      itchSeverity: null,
+      vomiting: isFood ? vomiting : null,
+      palatability: isFood ? palatability : null,
+      digestiveImpact: !isFood ? digestiveImpact : null,
       itchinessImpact,
       verdict,
       primaryReason: showPrimaryReason ? primaryReason : null,
@@ -107,53 +130,104 @@ export function FoodScorecardForm({
     })
   }
 
+  if (isBackfill) {
+    return (
+      <div className="space-y-5">
+        <div className="space-y-2">
+          <Label className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
+            Poop quality
+          </Label>
+          <FecalScorePickerMulti
+            value={poopQuality}
+            onChange={setPoopQuality}
+          />
+        </div>
+
+        <div className="space-y-2">
+          <Label className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
+            Itch severity
+          </Label>
+          <ItchScorePickerMulti
+            value={itchSeverity}
+            onChange={setItchSeverity}
+          />
+        </div>
+
+        <CollapsibleNotes value={notes} onChange={setNotes} label="Add note" placeholder="Optional observations..." />
+
+        <div className="flex gap-2 pt-4">
+          {!hideSkip && (
+            <Button variant="outline" onClick={onSkip} className="flex-1">
+              {skipLabel}
+            </Button>
+          )}
+          <Button onClick={handleSave} disabled={poopQuality == null || itchSeverity == null} className="flex-1">
+            Save
+          </Button>
+        </div>
+      </div>
+    )
+  }
+
   return (
     <div className="space-y-5">
-      <div className="space-y-2">
-        <Label className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
-          Poop quality
-        </Label>
-        <FecalScorePickerMulti
-          value={poopQuality}
-          onChange={setPoopQuality}
-        />
-      </div>
+      {isFood && (
+        <div className="space-y-2">
+          <Label className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
+            Poop quality
+          </Label>
+          <FecalScorePickerMulti
+            value={poopQuality}
+            onChange={setPoopQuality}
+          />
+        </div>
+      )}
 
-      <div className="space-y-2">
-        <Label className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
-          Gas
-        </Label>
-        <EnumPicker options={GAS_OPTIONS} value={gas} onChange={setGas} />
-      </div>
+      {isFood && (
+        <div className="space-y-2">
+          <Label className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
+            Vomiting
+          </Label>
+          <EnumPicker
+            options={VOMITING_OPTIONS}
+            value={vomiting}
+            onChange={setVomiting}
+          />
+        </div>
+      )}
 
-      <div className="space-y-2">
-        <Label className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
-          Vomiting
-        </Label>
-        <EnumPicker
-          options={VOMITING_OPTIONS}
-          value={vomiting}
-          onChange={setVomiting}
-        />
-      </div>
+      {isFood && (
+        <div className="space-y-2">
+          <Label className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
+            Palatability
+          </Label>
+          <EnumPicker
+            options={PALATABILITY_OPTIONS}
+            value={palatability}
+            onChange={setPalatability}
+          />
+        </div>
+      )}
 
-      <div className="space-y-2">
-        <Label className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
-          Palatability
-        </Label>
-        <EnumPicker
-          options={PALATABILITY_OPTIONS}
-          value={palatability}
-          onChange={setPalatability}
-        />
-      </div>
+      {!isFood && (
+        <div className="space-y-2">
+          <Label className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
+            Digestive impact
+          </Label>
+          <EnumPicker
+            options={IMPACT_OPTIONS}
+            value={digestiveImpact}
+            onChange={setDigestiveImpact}
+          />
+        </div>
+      )}
 
       <div className="space-y-2">
         <Label className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
           Itchiness impact
         </Label>
         <EnumPicker
-          options={ITCHINESS_IMPACT_OPTIONS}
+          options={IMPACT_OPTIONS}
           value={itchinessImpact}
           onChange={setItchinessImpact}
         />
@@ -200,7 +274,9 @@ export function FoodScorecardForm({
             Primary reason
           </Label>
           <div className="flex flex-wrap gap-1.5">
-            {PRIMARY_REASON_OPTIONS.map((option) => (
+            {PRIMARY_REASON_OPTIONS
+              .filter((o) => isFood || o.value !== "bad_poop")
+              .map((option) => (
               <button
                 key={option.value}
                 type="button"
@@ -223,14 +299,14 @@ export function FoodScorecardForm({
       <CollapsibleNotes value={notes} onChange={setNotes} label="Add scorecard note" placeholder="Optional observations..." />
 
       <div className="flex gap-2 pt-4">
-        <Button onClick={handleSave} className="flex-1">
-          Save scorecard
-        </Button>
         {!hideSkip && (
           <Button variant="outline" onClick={onSkip} className="flex-1">
-            Skip
+            {skipLabel}
           </Button>
         )}
+        <Button onClick={handleSave} disabled={!verdict} className="flex-1">
+          Save scorecard
+        </Button>
       </div>
     </div>
   )

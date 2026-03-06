@@ -1,7 +1,7 @@
 {
   "brand": "Hill's",
   "website_url": "https://www.hillspet.ca",
-  "scraped_at": "2026-03-04T15:31:40.759582+00:00",
+  "scraped_at": "2026-03-06T18:03:16.199491+00:00",
   "scraper_version": "0.1.0",
   "stats": {
     "product_count": 144,
@@ -1660,6 +1660,7 @@
         "crude_fat_min": 16.7
       },
       "guaranteed_analysis_basis": "dry-matter",
+      "calorie_content": "278 kcal/kg",
       "health_tags": [
         "digestive_health"
       ],
@@ -1673,8 +1674,7 @@
           "sku": "052742086149"
         }
       ],
-      "source_id": "052742086149",
-      "calorie_content": "767 kcal/kg"
+      "source_id": "052742086149"
     },
     {
       "name": "Hill's Science Diet Adult Perfect Digestion Large Breed Chicken & Barley Recipe Dog Food",
@@ -1862,6 +1862,7 @@
         "crude_fat_min": 19.0
       },
       "guaranteed_analysis_basis": "dry-matter",
+      "calorie_content": "327 kcal/kg",
       "images": [
         "/products/hill-s/hill-s-wet-adult-wet-food.png"
       ],
@@ -1872,8 +1873,7 @@
           "sku": "052742143002"
         }
       ],
-      "source_id": "052742143002",
-      "calorie_content": "327 kcal/can"
+      "source_id": "052742143002"
     },
     {
       "name": "Adult Small Bites Chicken & Barley Recipe Dog Food",
@@ -2197,9 +2197,6 @@
       "channel": "retail",
       "product_type": "dry",
       "sub_brand": "Science Diet",
-      "images": [
-        "/products/hill-s/hill-s-dry-adult-small-mini-chicken-brown-rice-recipe-dog-food.png"
-      ],
       "calorie_content": "3699 kcal/kg, 357 kcal/cup",
       "ingredients_raw": "Chicken, Brown Rice, Whole Grain Wheat, Whole Grain Corn, Brewers Rice, Chicken Meal, Whole Grain Sorghum, Chicken Fat, Soybean Meal, Chicken Liver Flavor, Corn Protein Meal, Pork Liver Flavor, Flaxseed, Lactic Acid, Soybean Oil, Potassium Chloride, L-Lysine, Whole Grain Oats, Iodized Salt, Fructooligosaccharides (FOS), vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement), Pumpkin, Choline Chloride, DL-Methionine, Calcium Carbonate, Taurine, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Mixed Tocopherols for freshness, Natural Flavors, L-Carnitine, Beta-Carotene.",
       "guaranteed_analysis": {
@@ -2288,9 +2285,6 @@
       "channel": "retail",
       "product_type": "dry",
       "sub_brand": "Science Diet",
-      "images": [
-        "/products/hill-s/hill-s-dry-adult-healthy-mobility-chicken-meal-barley-brown-rice-recipe-dog-food.png"
-      ],
       "calorie_content": "3617 kcal/kg, 361 kcal/cup",
       "ingredients_raw": "Chicken Meal, Brewers Rice, Whole Grain Sorghum, Brown Rice, Whole Grain Wheat, Cracked Pearled Barley, Soybean Meal, Dried Beet Pulp, Chicken Fat, Chicken Liver Flavor, Soybean Oil, Corn Gluten Meal, Fish Oil, Flaxseed, Lactic Acid, Pork Liver Flavor, Potassium Chloride, Choline Chloride, DL-Methionine, Iodized Salt, Calcium Carbonate, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Riboflavin Supplement, Vitamin D3 Supplement, Folic Acid), minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Taurine, L-Lysine, Oat Fiber, Mixed Tocopherols for freshness, Natural Flavors, L-Carnitine, Beta-Carotene, Apples, Broccoli, Carrots, Cranberries, Green Peas.",
       "guaranteed_analysis": {
@@ -2363,7 +2357,7 @@
         }
       ],
       "source_id": "052742082790",
-      "calorie_content": "482 kcal/can"
+      "calorie_content": "495 kcal/kg"
     },
     {
       "name": "Puppy Large Breed Chicken & Brown Rice Recipe",
@@ -2838,7 +2832,7 @@
         }
       ],
       "source_id": "052742081397",
-      "calorie_content": "266 kcal/can"
+      "calorie_content": "448 kcal/kg"
     },
     {
       "name": "c/d Multicare Chicken Flavor Dog Food",
@@ -3091,7 +3085,7 @@
         }
       ],
       "source_id": "052742077338",
-      "calorie_content": "362 kcal/can"
+      "calorie_content": "405 kcal/kg"
     },
     {
       "name": "a/d with Chicken Wet Dog/Cat Food Wet Food",
@@ -3196,7 +3190,7 @@
         }
       ],
       "source_id": "052742077154",
-      "calorie_content": "286 kcal/can"
+      "calorie_content": "287 kcal/kg"
     },
     {
       "name": "i/d Chicken Flavor Dog Food",
@@ -3266,7 +3260,7 @@
         }
       ],
       "source_id": "052742078403",
-      "calorie_content": "276 kcal/can"
+      "calorie_content": "276 kcal/kg"
     },
     {
       "name": "i/d Turkey Recipe Dog Food Wet Food",
@@ -3449,7 +3443,7 @@
         }
       ],
       "source_id": "052742080277",
-      "calorie_content": "349 kcal/can"
+      "calorie_content": "328 kcal/kg"
     },
     {
       "name": "i/d Low Fat Dry Dog Food",
@@ -3527,7 +3521,7 @@
         }
       ],
       "source_id": "052742075167",
-      "calorie_content": "498 kcal/can"
+      "calorie_content": "470 kcal/kg"
     },
     {
       "name": "j/d Dry Dog Food",
@@ -3634,7 +3628,7 @@
         }
       ],
       "source_id": "052742077673",
-      "calorie_content": "155 kcal/can"
+      "calorie_content": "433 kcal/kg"
     },
     {
       "name": "k/d Beef & Vegetable Stew Dog Food Wet Food",
@@ -3944,7 +3938,7 @@
         }
       ],
       "source_id": "052742081373",
-      "calorie_content": "248 kcal/can"
+      "calorie_content": "248 kcal/kg"
     },
     {
       "name": "Metabolic Weight + j/d Chicken Flavor Dry Dog Food",
@@ -4015,7 +4009,7 @@
         }
       ],
       "source_id": "052742077093",
-      "calorie_content": "210 kcal/can"
+      "calorie_content": "225 kcal/kg"
     },
     {
       "name": "ONC Care Chicken & Vegetable Stew Dog Food Wet Food",
@@ -4047,7 +4041,7 @@
         }
       ],
       "source_id": "052742077116",
-      "calorie_content": "909 kcal/kg"
+      "calorie_content": "322 kcal/kg"
     },
     {
       "name": "ONC Care with Chicken Dry Dog Food",

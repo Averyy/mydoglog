@@ -63,8 +63,11 @@ export interface ActiveIngredient {
   key: string
   ingredientIds: string[]
   bestPosition: number
+  worstPosition: number
+  ingredientCount: number
   fromTreat: boolean
   formType: string | null
+  sourceGroup: string | null
 }
 
 /** Outcome signals for one calendar day. */
@@ -103,6 +106,10 @@ export interface IngredientScore {
   vomitCount: number
   badDayCount: number
   goodDayCount: number
+  badPoopDayCount: number
+  goodPoopDayCount: number
+  badItchDayCount: number
+  goodItchDayCount: number
   confidence: Confidence
   exposureFraction: number
   bestPosition: number
@@ -113,6 +120,7 @@ export interface IngredientScore {
   daysWithScorecardOnly: number
   daysWithBackfill: number
   isAllergenicallyRelevant: boolean
+  isSplit: boolean
   crossReactivityGroup?: string
   crossReactivityWarning?: string
 }
@@ -199,6 +207,7 @@ export interface RawMedication {
 export interface RawScorecard {
   planGroupId: string
   poopQuality: number[] | null
+  itchSeverity: number[] | null
 }
 
 export interface RawPollenLog {

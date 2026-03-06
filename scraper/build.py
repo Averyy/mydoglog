@@ -64,14 +64,15 @@ CHANNEL_MAP: dict[str, str] = {
 # source_group values allowed by the DB enum
 VALID_SOURCE_GROUPS = {
     "poultry", "red_meat", "fish", "grain", "legume",
-    "root", "fruit", "dairy", "egg", "other",
+    "root", "fruit", "dairy", "egg", "other", "additive",
+    "fiber", "vegetable", "seed",
 }
 
 SOURCE_GROUP_MAP: dict[str, str] = {
     "exotic": "other",
     "mammal": "red_meat",
-    "seed": "other",
-    "vegetable": "other",
+    "mollusk": "fish",
+    "crustacean": "fish",
     "animal": "other",
     "unknown": "other",
 }
@@ -79,17 +80,15 @@ SOURCE_GROUP_MAP: dict[str, str] = {
 # form_type values allowed by the DB enum
 VALID_FORM_TYPES = {
     "raw", "meal", "by_product", "fat", "oil", "hydrolyzed", "flour", "bran",
+    "protein_isolate", "starch", "fiber", "gluten",
 }
 
 FORM_TYPE_MAP: dict[str, str] = {
     "whole": "raw",
     "organ": "raw",
     "dried": "raw",
-    "concentrate": "raw",
-    "starch": "raw",
-    "fiber": "raw",
+    "concentrate": "protein_isolate",
     "broth": "raw",
-    "gluten": "raw",
     "derivative": "raw",
     "ground": "raw",
     "extract": "raw",
@@ -220,6 +219,7 @@ class FamiliesLookup:
                 "form": self._map_form(member_info.get("form", "raw")),
                 "is_hydrolyzed": member_info.get("is_hydrolyzed", False),
                 "is_ambiguous": False,
+                "category": family_data.get("category"),
             }
 
         # Check ambiguous
@@ -349,21 +349,23 @@ def upsert_ingredient(
     source_group: str | None,
     form_type: str | None,
     is_hydrolyzed: bool,
+    category: str | None = None,
 ) -> str:
     """Upsert an ingredient and return its id."""
     ingredient_id = str(uuid4())
     cur.execute(
         """
-        INSERT INTO ingredients (id, normalized_name, family, source_group, form_type, is_hydrolyzed)
-        VALUES (%s, %s, %s, %s, %s, %s)
+        INSERT INTO ingredients (id, normalized_name, family, source_group, form_type, is_hydrolyzed, category)
+        VALUES (%s, %s, %s, %s, %s, %s, %s)
         ON CONFLICT (normalized_name) DO UPDATE SET
             family = COALESCE(EXCLUDED.family, ingredients.family),
             source_group = COALESCE(EXCLUDED.source_group, ingredients.source_group),
             form_type = COALESCE(EXCLUDED.form_type, ingredients.form_type),
-            is_hydrolyzed = EXCLUDED.is_hydrolyzed
+            is_hydrolyzed = EXCLUDED.is_hydrolyzed,
+            category = COALESCE(EXCLUDED.category, ingredients.category)
         RETURNING id
         """,
-        (ingredient_id, normalized_name, family, source_group, form_type, is_hydrolyzed),
+        (ingredient_id, normalized_name, family, source_group, form_type, is_hydrolyzed, category),
     )
     row = cur.fetchone()
     return row[0]
@@ -531,7 +533,7 @@ def load_brand_file(
         clear_product_ingredients(cur, product_id)
 
         seen_ingredient_ids: set[str] = set()
-        for position, ingredient_name in enumerate(parsed):
+        for position, ingredient_name in enumerate(parsed, start=1):
             # Skip ignored ingredients
             if families.is_ignored(ingredient_name):
                 continue
@@ -545,6 +547,7 @@ def load_brand_file(
                     source_group=info["source_group"],
                     form_type=info["form"],
                     is_hydrolyzed=info["is_hydrolyzed"],
+                    category=info.get("category"),
                 )
             else:
                 # Unknown ingredient — still insert with minimal info
@@ -601,6 +604,7 @@ def main() -> None:
         "ingredients_unknown": 0,
         "discontinued": 0,
         "deleted": 0,
+        "orphaned_ingredients": 0,
     }
     unknown_ingredients: set[str] = set()
     loaded_product_keys: set[tuple[str, str]] = set()
@@ -646,6 +650,24 @@ def main() -> None:
         finally:
             cur.close()
 
+        # Clean orphaned ingredients (no product_ingredients links)
+        cur = conn.cursor()
+        try:
+            cur.execute(
+                """
+                DELETE FROM ingredients
+                WHERE id NOT IN (SELECT DISTINCT ingredient_id FROM product_ingredients)
+                RETURNING id
+                """
+            )
+            stats["orphaned_ingredients"] = cur.rowcount
+            conn.commit()
+        except Exception:
+            conn.rollback()
+            raise
+        finally:
+            cur.close()
+
     finally:
         conn.close()
 
@@ -664,6 +686,7 @@ def main() -> None:
     print(f"  Unknown unique:       {len(unknown_ingredients)}")
     print(f"  Discontinued:         {stats['discontinued']}")
     print(f"  Deleted (unreferenced): {stats['deleted']}")
+    print(f"  Orphaned ingredients:   {stats['orphaned_ingredients']}")
     print(f"=== Done ===")
 
 

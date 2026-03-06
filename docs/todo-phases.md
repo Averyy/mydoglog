@@ -50,31 +50,41 @@ See implementation plans:
 
 APIs for vomit/symptom/medication/exposure logging already exist. Remaining:
 
-- [ ] Vomiting log UI (type picker, time since meal)
-- [ ] Symptom log UI (type, severity, photo)
-- [ ] Accidental exposure log UI (description, ingredient picker + free text)
-- [ ] Medication tracking UI (name, dosage, date range, reason tag)
-- [ ] Food database browser (product cards, detail pages, type/channel/brand filters)
-- [ ] Timeline chart (food bars + poop/itch dots + pollen overlay + medication bars + exposure markers)
+- [ ] Medication tracking UI — structured catalog (52 meds, see `todo-medications.md`), medication picker in routine editor, free-text fallback for unlisted meds
+- [ ] Extend poop log with mucus/blood toggles (optional, high clinical signal — mucus = large bowel inflammation, blood = location indicator)
+- [ ] Dashboard timeline — unified view combining:
+  - **Time-series graph** (top): poop scores as dots (semantic colors), itch scores, temperature + pollen as background overlays
+  - **Gantt-style bars** (bottom): food periods, medication periods, supplement periods as horizontal bars showing what was active when
+  - Read together vertically — correlate score changes with food/med/environment transitions
 - [ ] LLM export (structured text dump for Claude, "Export for LLM" button on correlations page)
-- [ ] Extend correlation engine: accidental exposure exclusion zones, symptom correlation, medication on/off comparison
-- [ ] Full dashboard (7-day mini-chart with all data types, medication badges)
+- [ ] Extend correlation engine: medication on/off comparison (medication is the #1 confounding variable)
+
+### Skipped (not worth the complexity)
+
+- ~~Vomiting log UI~~ — rare for current dog, note in daily check-in if needed
+- ~~Symptom log UI~~ — mucus/blood covered by poop log extension above
+- ~~Accidental exposure log UI~~ — rare events, daily check-in notes suffice
+- ~~Food database browser~~ — product picker with search already exists, standalone browse page is vanity
+- ~~Full dashboard~~ — merged into dashboard timeline above
 
 ## Future Considerations
 
-Out of scope for initial build. See `mydoglog.md` for details.
+Out of scope for initial build. Roughly prioritized.
 
+- MCP server (Claude queries API routes directly — low effort, high personal value)
+- Weight history (track over time, currently just a single field)
+- Vet export (formatted reports for vet visits — replaces manual `peaches.md` notes)
+- Custom food builder (raw diets, home-cooked, niche brands)
 - General vet/health timeline (vaccinations, vet visits, surgical history)
 - Document uploads (PDFs for vet records, lab results)
-- Weight history (track over time, currently just a single field)
-- DogShare (invite caretakers with roles)
-- iOS app (SwiftUI, same API)
-- MCP server (Claude queries API routes directly)
-- Vet export (formatted reports for vet visits)
-- Custom food builder (raw diets, home-cooked, niche brands)
-- URL-based product import (paste Chewy/PetSmart URL, auto-scrape)
-- Barcode scanning (UPC lookup from phone camera)
-- Transition wizard (auto-generate graduated plans)
-- Meal-level logging (per-meal breakdown via meal_slot column)
-- Medication database (structured DB instead of free-text)
-- Reformulation tracking (snapshot ingredients on plan creation)
+
+### Skipped permanently
+
+- ~~DogShare~~ — multi-user RBAC for a personal app
+- ~~iOS app~~ — responsive web works fine
+- ~~Barcode scanning~~ — DB has 1,260+ products, search works
+- ~~URL-based product import~~ — scrapers already exist
+- ~~Transition wizard~~ — users follow vet guidance
+- ~~Meal-level logging~~ — daily granularity is sufficient
+- ~~Reformulation tracking~~ — rare event, not worth schema complexity
+- ~~Medication database~~ — moved to Phase 4 as medication tracking

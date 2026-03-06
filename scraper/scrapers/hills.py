@@ -566,22 +566,52 @@ def _parse_hills_weight(text: str) -> float | None:
 
 
 def _parse_images(soup: BeautifulSoup) -> list[str]:
-    """Extract product images from pxmshare CDN img tags.
+    """Extract product images from pxmshare CDN.
 
-    Hill's moved images to Colgate-Palmolive's PXM CDN. The old og:image URLs
-    (hillspet.ca/content/dam/pim) are dead (404/403). The correct URLs are in
-    <img> tags with src pointing to pxmshare.colgatepalmolive.com.
+    Hill's moved images to Colgate-Palmolive's PXM CDN. The canonical product
+    image is in <meta name="image"> tags (class="swiftype" or "elastic").
+    Fallback: <img> tags with src on pxmshare, but ONLY from the product
+    hero/gallery — NOT from "Related products" carousels at the bottom, which
+    contain images of completely different products.
     """
     seen: set[str] = set()
     images: list[str] = []
 
-    for img in soup.find_all("img"):
-        src = img.get("src", "")
+    # Strategy 1: <meta name="image"> — canonical product image
+    for meta in soup.find_all("meta", attrs={"name": "image"}):
+        src = meta.get("content", "")
         if src and "pxmshare.colgatepalmolive.com" in src and src not in seen:
-            # Upgrade to 2000px variant (CDN supports PNG_100/500/1000/2000)
             src = re.sub(r"/PNG_\d+/", "/PNG_2000/", src)
             seen.add(src)
             images.append(src)
+
+    if images:
+        return images
+
+    # Strategy 2: <img> tags — only from outside related-product sections
+    # Related products are in containers with "related" in their heading text
+    # or inside <a> tags linking to other product pages.
+    related_sections = set()
+    for heading in soup.find_all(["h2", "h3"], string=re.compile(r"related", re.I)):
+        parent = heading.find_parent(["section", "div"])
+        if parent:
+            related_sections.add(id(parent))
+
+    for img in soup.find_all("img"):
+        src = img.get("src", "")
+        if not src or "pxmshare.colgatepalmolive.com" not in src or src in seen:
+            continue
+        # Skip images inside <a> tags linking to other products (related/recommended)
+        parent_a = img.find_parent("a")
+        if parent_a and parent_a.get("href", "").startswith(("/en-ca/dog-food/", "http")):
+            continue
+        # Skip images inside related product sections
+        if any(img.find_parent(id=None) and id(p) in related_sections
+               for p in img.parents if p.name in ("section", "div")):
+            continue
+        src = re.sub(r"/PNG_\d+/", "/PNG_2000/", src)
+        seen.add(src)
+        images.append(src)
 
     return images
 
@@ -753,6 +783,15 @@ def scrape_hills(output_dir: Path) -> int:
             logger.info(f"  [{i + 1}/{len(urls)}] {url}")
             html = _fetch_product_page(session, url)
             if not html:
+                continue
+
+            # Detect dead/discontinued pages Hill's left in the sitemap
+            # (return 200 but with <h1>0</h1>, <h1>Not Found</h1>, or no content)
+            soup_check = BeautifulSoup(html, "lxml")
+            h1 = soup_check.find("h1")
+            h1_text = h1.get_text(strip=True) if h1 else ""
+            if not h1_text or h1_text in ("0", "Not Found"):
+                logger.info(f"  Skipped (dead page): {url}")
                 continue
 
             product = _parse_product(url, html)

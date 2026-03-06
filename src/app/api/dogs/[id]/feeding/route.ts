@@ -101,9 +101,10 @@ export async function GET(
           group.scorecard = {
             id: sc.id,
             poopQuality: sc.poopQuality,
-            gas: sc.gas,
+            itchSeverity: sc.itchSeverity,
             vomiting: sc.vomiting,
             palatability: sc.palatability,
+            digestiveImpact: sc.digestiveImpact,
             itchinessImpact: sc.itchinessImpact,
             verdict: sc.verdict,
             primaryReason: sc.primaryReason,

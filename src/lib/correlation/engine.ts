@@ -142,7 +142,7 @@ function resolveIngredientsForProducts(
 ): ActiveIngredient[] {
   const keyMap = new Map<
     string,
-    { ingredientIds: Set<string>; bestPosition: number; fromTreat: boolean; formType: string | null }
+    { ingredientIds: Set<string>; bestPosition: number; worstPosition: number; ingredientCount: number; fromTreat: boolean; formType: string | null; sourceGroup: string | null }
   >()
 
   const processProduct = (productId: string, isTreat: boolean): void => {
@@ -156,16 +156,23 @@ function resolveIngredientsForProducts(
       const existing = keyMap.get(key)
       if (existing) {
         existing.ingredientIds.add(pi.ingredient.id)
+        existing.ingredientCount++
         if (pi.position < existing.bestPosition) {
           existing.bestPosition = pi.position
+        }
+        if (pi.position > existing.worstPosition) {
+          existing.worstPosition = pi.position
         }
         if (isTreat) existing.fromTreat = true
       } else {
         keyMap.set(key, {
           ingredientIds: new Set([pi.ingredient.id]),
           bestPosition: pi.position,
+          worstPosition: pi.position,
+          ingredientCount: 1,
           fromTreat: isTreat,
           formType: pi.ingredient.formType,
+          sourceGroup: pi.ingredient.sourceGroup,
         })
       }
     }
@@ -182,8 +189,11 @@ function resolveIngredientsForProducts(
     key,
     ingredientIds: Array.from(data.ingredientIds),
     bestPosition: data.bestPosition,
+    worstPosition: data.worstPosition,
+    ingredientCount: data.ingredientCount,
     fromTreat: data.fromTreat,
     formType: data.formType,
+    sourceGroup: data.sourceGroup,
   }))
 }
 
@@ -374,11 +384,17 @@ interface IngredientAccumulator {
   bestPosition: number
   fromTreat: boolean
   formType: string | null
+  sourceGroup: string | null
+  isSplit: boolean
   daysWithEventLogs: number
   daysWithScorecardOnly: number
   daysWithBackfill: number
   badDays: number
   goodDays: number
+  badPoopDays: number
+  goodPoopDays: number
+  badItchDays: number
+  goodItchDays: number
 }
 
 export function computeIngredientScores(
@@ -447,13 +463,24 @@ export function computeIngredientScores(
           bestPosition: ing.bestPosition,
           fromTreat: ing.fromTreat,
           formType: ing.formType,
+          sourceGroup: ing.sourceGroup,
+          isSplit: false,
           daysWithEventLogs: 0,
           daysWithScorecardOnly: 0,
           daysWithBackfill: 0,
           badDays: 0,
           goodDays: 0,
+          badPoopDays: 0,
+          goodPoopDays: 0,
+          badItchDays: 0,
+          goodItchDays: 0,
         }
         accMap.set(ing.key, acc)
+      }
+
+      // Legume splitting: 3+ ingredients from same family in a product
+      if (ing.sourceGroup === "legume" && ing.ingredientCount >= 3) {
+        acc.isSplit = true
       }
 
       acc.dayCount++
@@ -469,15 +496,20 @@ export function computeIngredientScores(
         acc.poopSum += effectivePoop
         acc.poopCount++
 
+        // For additive source group, use minimum floor weight for GI track
+        const giPosWeight = ing.sourceGroup === "additive"
+          ? Math.max(posWeight, 0.5)
+          : posWeight
+
         // Weighted: bad days (>=5) count 3x, good days count 1x
         const dayWeight = effectivePoop >= 5
           ? DEFAULT_SCORING_CONSTANTS.badDayMultiplier
           : DEFAULT_SCORING_CONSTANTS.goodDayMultiplier
-        acc.weightedPoopNumerator += effectivePoop * posWeight * dayWeight
-        acc.weightedPoopDenominator += posWeight * dayWeight
+        acc.weightedPoopNumerator += effectivePoop * giPosWeight * dayWeight
+        acc.weightedPoopDenominator += giPosWeight * dayWeight
 
-        if (effectivePoop >= 5) acc.badDays++
-        if (effectivePoop <= 3) acc.goodDays++
+        if (effectivePoop >= 5) acc.badPoopDays++
+        if (effectivePoop <= 3) acc.goodPoopDays++
       }
 
       if (snap.outcome.itchScore != null) {
@@ -485,13 +517,25 @@ export function computeIngredientScores(
         acc.itchSum += snap.outcome.itchScore
         acc.itchCount++
 
-        // Weighted: itch >= 4 is bad
+        // Weighted: itch >= 4 is bad — standard position decay (additives don't cause skin reactions)
         const dayWeight = snap.outcome.itchScore >= 4
           ? DEFAULT_SCORING_CONSTANTS.badDayMultiplier
           : DEFAULT_SCORING_CONSTANTS.goodDayMultiplier
         acc.weightedItchNumerator += snap.outcome.itchScore * posWeight * dayWeight
         acc.weightedItchDenominator += posWeight * dayWeight
+
+        if (snap.outcome.itchScore >= 4) acc.badItchDays++
+        if (snap.outcome.itchScore <= 2) acc.goodItchDays++
       }
+
+      // Union counts: a day is "bad" if EITHER track is bad (counted once)
+      const poopBad = effectivePoop != null && effectivePoop >= 5
+      const itchBad = snap.outcome.itchScore != null && snap.outcome.itchScore >= 4
+      if (poopBad || itchBad) acc.badDays++
+
+      const poopGood = effectivePoop != null && effectivePoop <= 3
+      const itchGood = snap.outcome.itchScore != null && snap.outcome.itchScore <= 2
+      if (poopGood || itchGood) acc.goodDays++
 
       acc.vomitTotal += snap.outcome.vomitCount
 
@@ -522,6 +566,10 @@ export function computeIngredientScores(
       vomitCount: acc.vomitTotal,
       badDayCount: acc.badDays,
       goodDayCount: acc.goodDays,
+      badPoopDayCount: acc.badPoopDays,
+      goodPoopDayCount: acc.goodPoopDays,
+      badItchDayCount: acc.badItchDays,
+      goodItchDayCount: acc.goodItchDays,
       confidence: computeConfidence(
         acc.daysWithEventLogs,
         acc.daysWithScorecardOnly,
@@ -536,7 +584,8 @@ export function computeIngredientScores(
       daysWithEventLogs: acc.daysWithEventLogs,
       daysWithScorecardOnly: acc.daysWithScorecardOnly,
       daysWithBackfill: acc.daysWithBackfill,
-      isAllergenicallyRelevant: !isNonAllergenicForm(acc.formType),
+      isAllergenicallyRelevant: !isNonAllergenicForm(acc.formType) && acc.sourceGroup !== "additive",
+      isSplit: acc.isSplit,
     })
   }
 
@@ -593,13 +642,15 @@ export function flagCrossReactivity(
       return family != null && familySet.has(family)
     })
 
-    // Count distinct families with bad signals
+    // Count distinct families with bad signals (poop OR itch track)
     const badFamilies = new Set<string>()
     for (const s of matchingScores) {
       const family = extractFamilyFromKey(s.key)!
       const isBad =
         (s.weightedPoopScore != null && s.weightedPoopScore >= 4.0) ||
-        (s.dayCount > 0 && s.badDayCount / s.dayCount > 0.3)
+        (s.weightedItchScore != null && s.weightedItchScore >= 4.0) ||
+        (s.dayCount > 0 && s.badPoopDayCount / s.dayCount > 0.3) ||
+        (s.dayCount > 0 && s.badItchDayCount / s.dayCount > 0.3)
       if (isBad) badFamilies.add(family)
     }
 
@@ -641,7 +692,9 @@ export function flagCrossReactivity(
         if (family == null || !new Set(group.families).has(family)) return false
         return (
           (other.weightedPoopScore != null && other.weightedPoopScore >= 4.0) ||
-          (other.dayCount > 0 && other.badDayCount / other.dayCount > 0.3)
+          (other.weightedItchScore != null && other.weightedItchScore >= 4.0) ||
+          (other.dayCount > 0 && other.badPoopDayCount / other.dayCount > 0.3) ||
+          (other.dayCount > 0 && other.badItchDayCount / other.dayCount > 0.3)
         )
       })
 
@@ -678,7 +731,9 @@ export function buildBackfillSnapshots(
   const snapshots: DaySnapshot[] = []
 
   for (const backfill of input.backfills) {
-    if (!backfill.scorecard?.poopQuality?.length) continue
+    const hasPoopData = !!backfill.scorecard?.poopQuality?.length
+    const hasItchData = !!backfill.scorecard?.itchSeverity?.length
+    if (!hasPoopData && !hasItchData) continue
 
     const ingredients = resolveIngredientsForProducts(
       new Set([backfill.productId]),
@@ -688,7 +743,8 @@ export function buildBackfillSnapshots(
 
     if (ingredients.length === 0) continue
 
-    const avgPoop = averageScores(backfill.scorecard.poopQuality)
+    const avgPoop = hasPoopData ? averageScores(backfill.scorecard!.poopQuality!) : null
+    const avgItch = hasItchData ? averageScores(backfill.scorecard!.itchSeverity!) : null
 
     for (let i = 0; i < backfill.durationDays; i++) {
       snapshots.push({
@@ -696,7 +752,7 @@ export function buildBackfillSnapshots(
         ingredients,
         outcome: {
           poopScore: avgPoop,
-          itchScore: null,
+          itchScore: avgItch,
           vomitCount: 0,
           scorecardPoopFallback: null,
           onItchinessMedication: false,

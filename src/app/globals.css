@@ -249,3 +249,16 @@
 .scrollbar-none::-webkit-scrollbar {
   display: none;
 }
+
+/* Calendar day dot indicator for existing food entries */
+.rdp-day.day-has-food::after {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--color-text-tertiary);
+}

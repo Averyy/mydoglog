@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/popover"
 import { CalendarIcon } from "lucide-react"
 import { format, parse, isValid } from "date-fns"
-import { type DateRange } from "react-day-picker"
+import { type DateRange, type Matcher } from "react-day-picker"
 import { cn } from "@/lib/utils"
 
 interface DateRangePickerProps {
@@ -19,6 +19,10 @@ interface DateRangePickerProps {
   onChange: (from: string, to: string) => void
   placeholder?: string
   className?: string
+  disabled?: Matcher | Matcher[]
+  defaultMonth?: Date
+  modifiers?: Record<string, Matcher | Matcher[]>
+  modifiersClassNames?: Record<string, string>
 }
 
 function toDate(value: string): Date | undefined {
@@ -33,6 +37,10 @@ export function DateRangePicker({
   onChange,
   placeholder = "Pick a date",
   className,
+  disabled,
+  defaultMonth,
+  modifiers,
+  modifiersClassNames,
 }: DateRangePickerProps): React.ReactElement {
   const fromDate = toDate(from)
   const toDate_ = toDate(to)
@@ -79,11 +87,14 @@ export function DateRangePicker({
       <PopoverContent className="w-auto overflow-hidden p-0" align="start">
         <Calendar
           mode="range"
-          defaultMonth={fromDate}
+          defaultMonth={defaultMonth ?? fromDate}
           selected={range}
           onSelect={handleSelect}
           numberOfMonths={2}
           captionLayout="dropdown"
+          disabled={disabled}
+          modifiers={modifiers}
+          modifiersClassNames={modifiersClassNames}
         />
       </PopoverContent>
     </Popover>

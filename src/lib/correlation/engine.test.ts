@@ -361,7 +361,7 @@ describe("buildDaySnapshots", () => {
           createdAt: "2024-06-01T00:00:00Z",
         },
       ],
-      scorecards: [{ planGroupId: "plan-1", poopQuality: [4] }],
+      scorecards: [{ planGroupId: "plan-1", poopQuality: [4], itchSeverity: null }],
     })
     const snaps = buildDaySnapshots(input, opts)
     expect(snaps[0].outcome.scorecardPoopFallback).toBe(4)
@@ -391,7 +391,7 @@ describe("buildDaySnapshots", () => {
           createdAt: "2024-06-01T00:00:00Z",
         },
       ],
-      scorecards: [{ planGroupId: "plan-1", poopQuality: [5] }],
+      scorecards: [{ planGroupId: "plan-1", poopQuality: [5], itchSeverity: null }],
     })
     const snaps = buildDaySnapshots(input, opts)
     expect(snaps[0].outcome.poopScore).toBe(2)
@@ -420,7 +420,7 @@ describe("buildDaySnapshots", () => {
           createdAt: "2024-06-01T00:00:00Z",
         },
       ],
-      scorecards: [{ planGroupId: "plan-1", poopQuality: [3, 5] }],
+      scorecards: [{ planGroupId: "plan-1", poopQuality: [3, 5], itchSeverity: null }],
     })
     const snaps = buildDaySnapshots(input, opts)
     expect(snaps[0].outcome.scorecardPoopFallback).toBe(4)
@@ -736,8 +736,11 @@ describe("computeIngredientScores", () => {
     key: "chicken",
     ingredientIds: ["ing-1"],
     bestPosition: 1,
+    worstPosition: 1,
+    ingredientCount: 1,
     fromTreat: false,
     formType: null,
+    sourceGroup: null,
   }
 
   it("returns empty scores for empty snapshots", () => {
@@ -820,6 +823,8 @@ describe("computeIngredientScores", () => {
       key: "rice",
       ingredientIds: ["ing-2"],
       bestPosition: 2,
+      worstPosition: 2,
+      ingredientCount: 1,
       fromTreat: false,
       formType: null,
     }
@@ -928,6 +933,8 @@ describe("computeIngredientScores", () => {
       key: "chicken (fat)",
       ingredientIds: ["ing-fat"],
       bestPosition: 5,
+      worstPosition: 5,
+      ingredientCount: 1,
       fromTreat: false,
       formType: "fat",
     }
@@ -979,8 +986,11 @@ describe("asymmetric scoring", () => {
     key: "chicken",
     ingredientIds: ["ing-1"],
     bestPosition: 1,
+    worstPosition: 1,
+    ingredientCount: 1,
     fromTreat: false,
     formType: null,
+    sourceGroup: null,
   }
 
   it("bad days pull weighted score higher than raw average", () => {
@@ -1036,6 +1046,53 @@ describe("asymmetric scoring", () => {
     expect(scores[0].rawAvgPoopScore).toBeCloseTo(6.0, 5)
     expect(scores[0].weightedPoopScore).toBeCloseTo(6.0, 5)
   })
+
+  it("counts per-track bad/good days separately", () => {
+    const snapshots: DaySnapshot[] = [
+      // Day 1: bad poop, good itch
+      makeSnapshot({
+        date: "2024-06-01",
+        ingredients: [chickenActive],
+        outcome: { ...emptyOutcome, poopScore: 6, itchScore: 1 },
+      }),
+      // Day 2: good poop, bad itch
+      makeSnapshot({
+        date: "2024-06-02",
+        ingredients: [chickenActive],
+        outcome: { ...emptyOutcome, poopScore: 2, itchScore: 5 },
+      }),
+      // Day 3: good both
+      makeSnapshot({
+        date: "2024-06-03",
+        ingredients: [chickenActive],
+        outcome: { ...emptyOutcome, poopScore: 2, itchScore: 1 },
+      }),
+    ]
+    const scores = computeIngredientScores(snapshots, opts)
+    const score = scores[0]
+    expect(score.badPoopDayCount).toBe(1)
+    expect(score.goodPoopDayCount).toBe(2)
+    expect(score.badItchDayCount).toBe(1)
+    expect(score.goodItchDayCount).toBe(2)
+    // badDayCount is union of both tracks
+    expect(score.badDayCount).toBe(2)
+  })
+
+  it("itch-only days count for itch track but not poop track", () => {
+    const snapshots: DaySnapshot[] = [
+      makeSnapshot({
+        date: "2024-06-01",
+        ingredients: [chickenActive],
+        outcome: { ...emptyOutcome, poopScore: null, itchScore: 4 },
+      }),
+    ]
+    const scores = computeIngredientScores(snapshots, opts)
+    const score = scores[0]
+    expect(score.badPoopDayCount).toBe(0)
+    expect(score.goodPoopDayCount).toBe(0)
+    expect(score.badItchDayCount).toBe(1)
+    expect(score.goodItchDayCount).toBe(0)
+  })
 })
 
 // ---------------------------------------------------------------------------
@@ -1050,6 +1107,8 @@ describe("position weighting integration", () => {
       key: "chicken",
       ingredientIds: ["ing-1"],
       bestPosition: 1,
+      worstPosition: 1,
+      ingredientCount: 1,
       fromTreat: false,
       formType: null,
     }
@@ -1057,6 +1116,8 @@ describe("position weighting integration", () => {
       key: "carrot",
       ingredientIds: ["ing-2"],
       bestPosition: 15,
+      worstPosition: 15,
+      ingredientCount: 1,
       fromTreat: false,
       formType: null,
     }
@@ -1228,6 +1289,83 @@ describe("form-type separation", () => {
 })
 
 // ---------------------------------------------------------------------------
+// Legume splitting detection
+// ---------------------------------------------------------------------------
+
+describe("legume splitting detection", () => {
+  const opts = DEFAULT_CORRELATION_OPTIONS
+
+  it("sets isSplit when legume family has 3+ ingredients in a product", () => {
+    const peaActive: ActiveIngredient = {
+      key: "pea",
+      ingredientIds: ["pea-1", "pea-2", "pea-3"],
+      bestPosition: 3,
+      worstPosition: 12,
+      ingredientCount: 3,
+      fromTreat: false,
+      formType: null,
+      sourceGroup: "legume",
+    }
+
+    const snapshots: DaySnapshot[] = [
+      makeSnapshot({
+        ingredients: [peaActive],
+        outcome: { ...emptyOutcome, poopScore: 4 },
+      }),
+    ]
+
+    const scores = computeIngredientScores(snapshots, opts)
+    expect(scores[0].isSplit).toBe(true)
+  })
+
+  it("does not set isSplit for legume family with < 3 ingredients", () => {
+    const peaActive: ActiveIngredient = {
+      key: "pea",
+      ingredientIds: ["pea-1", "pea-2"],
+      bestPosition: 3,
+      worstPosition: 8,
+      ingredientCount: 2,
+      fromTreat: false,
+      formType: null,
+      sourceGroup: "legume",
+    }
+
+    const snapshots: DaySnapshot[] = [
+      makeSnapshot({
+        ingredients: [peaActive],
+        outcome: { ...emptyOutcome, poopScore: 4 },
+      }),
+    ]
+
+    const scores = computeIngredientScores(snapshots, opts)
+    expect(scores[0].isSplit).toBe(false)
+  })
+
+  it("does not set isSplit for non-legume family with 3+ ingredients", () => {
+    const chickenActive: ActiveIngredient = {
+      key: "chicken",
+      ingredientIds: ["ch-1", "ch-2", "ch-3"],
+      bestPosition: 1,
+      worstPosition: 10,
+      ingredientCount: 3,
+      fromTreat: false,
+      formType: null,
+      sourceGroup: "poultry",
+    }
+
+    const snapshots: DaySnapshot[] = [
+      makeSnapshot({
+        ingredients: [chickenActive],
+        outcome: { ...emptyOutcome, poopScore: 4 },
+      }),
+    ]
+
+    const scores = computeIngredientScores(snapshots, opts)
+    expect(scores[0].isSplit).toBe(false)
+  })
+})
+
+// ---------------------------------------------------------------------------
 // Backfill confidence
 // ---------------------------------------------------------------------------
 
@@ -1249,7 +1387,7 @@ describe("backfill confidence", () => {
           planGroupId: "plan-bf",
           productId: "prod-a",
           durationDays: 60,
-          scorecard: { planGroupId: "plan-bf", poopQuality: [3] },
+          scorecard: { planGroupId: "plan-bf", poopQuality: [3], itchSeverity: null },
         },
       ],
     })
@@ -1274,7 +1412,7 @@ describe("backfill confidence", () => {
           planGroupId: "plan-bf",
           productId: "prod-a",
           durationDays: 3,
-          scorecard: { planGroupId: "plan-bf", poopQuality: [4] },
+          scorecard: { planGroupId: "plan-bf", poopQuality: [4], itchSeverity: null },
         },
       ],
     })
@@ -1284,6 +1422,78 @@ describe("backfill confidence", () => {
     // Backfill sets poopScore directly, counted as backfill days
     expect(chickenScore.daysWithBackfill).toBe(3)
     expect(chickenScore.daysWithScorecardOnly).toBe(0)
+  })
+
+  it("backfill with both poop + itch scores both tracks", () => {
+    const chickenIng = makeIngredient({ id: "ing-chicken", family: "chicken" })
+    const productIngs = makeProductIngredients("prod-a", [
+      { position: 1, ingredient: chickenIng },
+    ])
+
+    const input = makeInput({
+      productIngredientMap: new Map([["prod-a", productIngs]]),
+      backfills: [
+        {
+          planGroupId: "plan-bf",
+          productId: "prod-a",
+          durationDays: 10,
+          scorecard: { planGroupId: "plan-bf", poopQuality: [3], itchSeverity: [2, 4] },
+        },
+      ],
+    })
+
+    const result = runCorrelation(input, opts)
+    const chickenScore = result.scores.find((s) => s.key === "chicken")!
+    expect(chickenScore.weightedPoopScore).not.toBeNull()
+    expect(chickenScore.weightedItchScore).not.toBeNull()
+    expect(chickenScore.daysWithBackfill).toBe(10)
+  })
+
+  it("backfill with itch-only scores itch, poop null", () => {
+    const chickenIng = makeIngredient({ id: "ing-chicken", family: "chicken" })
+    const productIngs = makeProductIngredients("prod-a", [
+      { position: 1, ingredient: chickenIng },
+    ])
+
+    const input = makeInput({
+      productIngredientMap: new Map([["prod-a", productIngs]]),
+      backfills: [
+        {
+          planGroupId: "plan-bf",
+          productId: "prod-a",
+          durationDays: 30,
+          scorecard: { planGroupId: "plan-bf", poopQuality: null, itchSeverity: [3] },
+        },
+      ],
+    })
+
+    const result = runCorrelation(input, opts)
+    const chickenScore = result.scores.find((s) => s.key === "chicken")!
+    expect(chickenScore.rawAvgPoopScore).toBeNull()
+    expect(chickenScore.weightedItchScore).not.toBeNull()
+    expect(chickenScore.daysWithBackfill).toBe(30)
+  })
+
+  it("backfill skipped when neither poop nor itch data", () => {
+    const chickenIng = makeIngredient({ id: "ing-chicken", family: "chicken" })
+    const productIngs = makeProductIngredients("prod-a", [
+      { position: 1, ingredient: chickenIng },
+    ])
+
+    const input = makeInput({
+      productIngredientMap: new Map([["prod-a", productIngs]]),
+      backfills: [
+        {
+          planGroupId: "plan-bf",
+          productId: "prod-a",
+          durationDays: 10,
+          scorecard: { planGroupId: "plan-bf", poopQuality: null, itchSeverity: null },
+        },
+      ],
+    })
+
+    const result = runCorrelation(input, opts)
+    expect(result.scores.length).toBe(0)
   })
 })
 
@@ -1308,6 +1518,10 @@ describe("flagCrossReactivity", () => {
       vomitCount: 0,
       badDayCount: 1,
       goodDayCount: 7,
+      badPoopDayCount: 1,
+      goodPoopDayCount: 7,
+      badItchDayCount: 0,
+      goodItchDayCount: 0,
       confidence: "medium",
       exposureFraction: 0.5,
       bestPosition: 1,
@@ -1318,15 +1532,16 @@ describe("flagCrossReactivity", () => {
       daysWithScorecardOnly: 0,
       daysWithBackfill: 0,
       isAllergenicallyRelevant: true,
+      isSplit: false,
       ...overrides,
     }
   }
 
   it("flags when 2+ families in group both have bad signals", () => {
     const scores: IngredientScore[] = [
-      makeScore({ key: "chicken", weightedPoopScore: 4.5, badDayCount: 5, dayCount: 10 }),
-      makeScore({ key: "turkey", weightedPoopScore: 4.2, badDayCount: 4, dayCount: 10 }),
-      makeScore({ key: "salmon", weightedPoopScore: 2.0, badDayCount: 0, dayCount: 10 }),
+      makeScore({ key: "chicken", weightedPoopScore: 4.5, badDayCount: 5, badPoopDayCount: 5, dayCount: 10 }),
+      makeScore({ key: "turkey", weightedPoopScore: 4.2, badDayCount: 4, badPoopDayCount: 4, dayCount: 10 }),
+      makeScore({ key: "salmon", weightedPoopScore: 2.0, badDayCount: 0, badPoopDayCount: 0, dayCount: 10 }),
     ]
     const result = flagCrossReactivity(scores, [poultryGroup])
     expect(result.find((s) => s.key === "chicken")!.crossReactivityGroup).toBe(
@@ -1342,8 +1557,8 @@ describe("flagCrossReactivity", () => {
 
   it("warns (not confirms) when only one family is bad", () => {
     const scores: IngredientScore[] = [
-      makeScore({ key: "chicken", weightedPoopScore: 5.0, badDayCount: 8, dayCount: 10 }),
-      makeScore({ key: "turkey", weightedPoopScore: 2.0, badDayCount: 0, dayCount: 10 }),
+      makeScore({ key: "chicken", weightedPoopScore: 5.0, badDayCount: 8, badPoopDayCount: 8, dayCount: 10 }),
+      makeScore({ key: "turkey", weightedPoopScore: 2.0, badDayCount: 0, badPoopDayCount: 0, dayCount: 10 }),
     ]
     const result = flagCrossReactivity(scores, [poultryGroup])
     // Chicken should NOT get confirmed group flag (only 1 bad family)
@@ -1360,8 +1575,8 @@ describe("flagCrossReactivity", () => {
 
   it("warns ambiguous keys when a family in the same group is bad", () => {
     const scores: IngredientScore[] = [
-      makeScore({ key: "chicken", weightedPoopScore: 5.0, badDayCount: 8, dayCount: 10 }),
-      makeScore({ key: "poultry (ambiguous)", weightedPoopScore: 3.0, badDayCount: 1, dayCount: 10 }),
+      makeScore({ key: "chicken", weightedPoopScore: 5.0, badDayCount: 8, badPoopDayCount: 8, dayCount: 10 }),
+      makeScore({ key: "poultry (ambiguous)", weightedPoopScore: 3.0, badDayCount: 1, badPoopDayCount: 1, dayCount: 10 }),
     ]
     const result = flagCrossReactivity(scores, [poultryGroup])
     const ambiguous = result.find((s) => s.key === "poultry (ambiguous)")!
@@ -1370,8 +1585,8 @@ describe("flagCrossReactivity", () => {
 
   it("does not flag families not in any group", () => {
     const scores: IngredientScore[] = [
-      makeScore({ key: "salmon", weightedPoopScore: 5.0, badDayCount: 8, dayCount: 10 }),
-      makeScore({ key: "trout", weightedPoopScore: 4.5, badDayCount: 5, dayCount: 10 }),
+      makeScore({ key: "salmon", weightedPoopScore: 5.0, badDayCount: 8, badPoopDayCount: 8, dayCount: 10 }),
+      makeScore({ key: "trout", weightedPoopScore: 4.5, badDayCount: 5, badPoopDayCount: 5, dayCount: 10 }),
     ]
     const result = flagCrossReactivity(scores, [poultryGroup])
     expect(
@@ -1384,21 +1599,43 @@ describe("flagCrossReactivity", () => {
 
   it("does not flag fat/oil forms for cross-reactivity", () => {
     const scores: IngredientScore[] = [
-      makeScore({ key: "chicken", weightedPoopScore: 4.5, badDayCount: 5, dayCount: 10 }),
+      makeScore({ key: "chicken", weightedPoopScore: 4.5, badDayCount: 5, badPoopDayCount: 5, dayCount: 10 }),
       makeScore({
         key: "chicken (fat)",
         weightedPoopScore: 4.5,
         badDayCount: 5,
+        badPoopDayCount: 5,
         dayCount: 10,
         isAllergenicallyRelevant: false,
       }),
-      makeScore({ key: "turkey", weightedPoopScore: 4.2, badDayCount: 4, dayCount: 10 }),
+      makeScore({ key: "turkey", weightedPoopScore: 4.2, badDayCount: 4, badPoopDayCount: 4, dayCount: 10 }),
     ]
     const result = flagCrossReactivity(scores, [poultryGroup])
     // chicken + turkey flagged, chicken (fat) NOT flagged
     expect(result.find((s) => s.key === "chicken")!.crossReactivityGroup).toBe("poultry")
     expect(result.find((s) => s.key === "turkey")!.crossReactivityGroup).toBe("poultry")
     expect(result.find((s) => s.key === "chicken (fat)")!.crossReactivityGroup).toBeUndefined()
+  })
+
+  it("triggers cross-reactivity on itch-only bad signals", () => {
+    const scores: IngredientScore[] = [
+      makeScore({ key: "chicken", weightedPoopScore: 2.0, weightedItchScore: 4.5, badDayCount: 0, badPoopDayCount: 0, badItchDayCount: 5, dayCount: 10 }),
+      makeScore({ key: "turkey", weightedPoopScore: 2.0, weightedItchScore: 4.2, badDayCount: 0, badPoopDayCount: 0, badItchDayCount: 4, dayCount: 10 }),
+    ]
+    const result = flagCrossReactivity(scores, [poultryGroup])
+    expect(result.find((s) => s.key === "chicken")!.crossReactivityGroup).toBe("poultry")
+    expect(result.find((s) => s.key === "turkey")!.crossReactivityGroup).toBe("poultry")
+  })
+
+  it("triggers cross-reactivity via badItchDayCount ratio", () => {
+    const scores: IngredientScore[] = [
+      makeScore({ key: "chicken", weightedPoopScore: 2.0, weightedItchScore: 3.0, badPoopDayCount: 0, badItchDayCount: 4, dayCount: 10 }),
+      makeScore({ key: "turkey", weightedPoopScore: 2.0, weightedItchScore: 3.0, badPoopDayCount: 0, badItchDayCount: 4, dayCount: 10 }),
+    ]
+    const result = flagCrossReactivity(scores, [poultryGroup])
+    // badItchDayCount/dayCount = 0.4 > 0.3, should trigger
+    expect(result.find((s) => s.key === "chicken")!.crossReactivityGroup).toBe("poultry")
+    expect(result.find((s) => s.key === "turkey")!.crossReactivityGroup).toBe("poultry")
   })
 })
 

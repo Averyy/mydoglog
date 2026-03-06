@@ -109,16 +109,29 @@ const APPROXIMATE_PATTERNS: Array<{ pattern: RegExp; multiplier: number }> = [
 ]
 
 /**
- * Parse a human-readable duration string into days.
- *
- * Examples:
- * - "3 weeks" → { days: 21 }
- * - "about 2 months" → { days: 60 }
- * - "a few weeks" → { days: 21 }
- * - "14 days" → { days: 14 }
- *
- * Returns null if the input cannot be parsed.
+ * Compute a human-readable duration string from an inclusive date range.
+ * E.g. "3 days", "2 weeks", "~3 months", "1 year"
  */
+export function durationFromRange(startDate: string, endDate: string): string {
+  const start = new Date(startDate)
+  const end = new Date(endDate)
+  const days = Math.round((end.getTime() - start.getTime()) / (24 * 60 * 60 * 1000)) + 1
+
+  if (days <= 0) return "0 days"
+  if (days === 1) return "1 day"
+  if (days < 14) return `${days} days`
+  if (days < 60) {
+    const weeks = Math.round(days / 7)
+    return `~${weeks} week${weeks === 1 ? "" : "s"}`
+  }
+  if (days < 365) {
+    const months = Math.round(days / 30)
+    return `~${months} month${months === 1 ? "" : "s"}`
+  }
+  const years = Math.round(days / 365)
+  return `~${years} year${years === 1 ? "" : "s"}`
+}
+
 export function parseDuration(input: string): { days: number } | null {
   const trimmed = input.trim()
   if (!trimmed) return null

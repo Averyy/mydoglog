@@ -183,7 +183,7 @@ Additives are **GI-track-only triggers** — no evidence they cause skin reactio
 - No dog-specific GI research. Zero nutritional benefit
 - **Evidence: Weak. Flag as unnecessary.**
 
-**Action: Create `additive` source group in ingredient_families.json. For additives, override position weight — even late-in-list presence is meaningful. Carrageenan and CMC especially should flag in GI correlation regardless of position.**
+**Status: `additive` source group implemented.** Carrageenan, CMC, guar_gum, xanthan_gum, locust_bean_gum, titanium_dioxide tracked as additive source group. Engine applies floor weight (0.5) for GI correlation regardless of position.
 
 #### E. Legume/Pulse Fermentation
 
@@ -196,7 +196,7 @@ Peas, lentils, chickpeas contain oligosaccharides (raffinose, stachyose, verbasc
 - Effect was subclinical in healthy dogs but relevant for dogs with sensitive GI tracts
 - **Evidence: Moderate for GI. Strong for digestibility reduction.**
 
-**Action: Already tracked as `legume` source group. Detect ingredient splitting (multiple pea/lentil fractions in same food). Flag when cumulative legume position is high.**
+**Status: Legume splitting detection implemented.** Engine tracks `ingredientCount` per family key. When 3+ ingredients from same legume family appear in a product, `isSplit = true` flags the ingredient with a UI warning.
 
 #### F. Fiber Type Mismatch
 
@@ -215,7 +215,7 @@ Different fiber sources have radically different effects. A dog doing poorly on 
 
 Butyrate from fermentable fiber is the preferred energy source for enterocytes with anti-inflammatory effects (Torres 2025; Moreno et al., JAVMA 2022). 68% of dogs with chronic large bowel diarrhea had complete resolution on fiber-supplemented diet (BMC Vet Res 2022).
 
-**Action: Future enhancement — create `fiber` source group. Track major fiber ingredients (beet pulp, pea fiber, cellulose, psyllium) for stool correlation.**
+**Status: `fiber` source group implemented.** Beet pulp (split from beet family), chicory, and psyllium are tracked as fiber source group. Cellulose and miscanthus not yet in families JSON (add when encountered as uncategorized).
 
 #### G. Carbohydrate/Processing Effects
 
@@ -363,40 +363,35 @@ Our daily check-in already captures appetite and vomiting. **Adding optional muc
 
 ---
 
-## Ingredient Families JSON — What to Change
+## Ingredient Families JSON — Current State
 
-### Current structure (no changes needed):
-- Families, source groups, forms, cross-reactivity groups, ambiguous ingredients, hydrolyzed flags — all sound
+### Implemented:
+- Families, source groups, forms, cross-reactivity groups, ambiguous ingredients, hydrolyzed flags
+- **`category` field** on each family: `protein`, `carb`, `fat`, `fiber`, `vitamin`, `mineral`, `additive` (or null for ambiguous families like yeast/herb/algae). Written to DB `ingredients.category` column via build.py.
+- **`additive` source group** — carrageenan, cmc, guar_gum, xanthan_gum, locust_bean_gum, titanium_dioxide. Position weight override in engine (min floor 0.5 for GI track).
+- **`fiber` source group** — beet_pulp, chicory, psyllium. GI track only — fiber type correlates with stool outcomes.
+- **`vegetable` source group** — alfalfa, broccoli, carrot, celery, collard, garlic, ginger, green_bean, kale, parsley, pepper, rosemary, spinach, tomato, turmeric, turnip, zucchini. No longer mapped to `other`.
+- **`seed` source group** — borage, canola, chia, coconut, flaxseed, hemp, olive, safflower, sunflower. No longer mapped to `other`.
+- **beet / beet_pulp split** — beet (root/carb) has whole beets; beet_pulp (fiber/fiber) has dried/plain beet pulp. Different nutritional roles.
+- **Expanded form_type enum** — `protein_isolate`, `starch`, `fiber`, `gluten` are now proper DB enum values. Previously mapped to `raw`, losing information. `concentrate` → `protein_isolate`.
 
-### Proposed additions:
+### Ingredient splitting detection:
+- When multiple ingredients from the same legume family appear in a product (e.g. peas + pea protein + pea starch + pea fiber), the engine tracks `ingredientCount` and `worstPosition` per family key.
+- If `ingredientCount >= 3` for a legume source group, `isSplit = true` is set on the IngredientScore.
+- UI shows informational warning: "This ingredient appears split across 3+ positions in some products."
 
-1. **New source group: `additive`** — for ingredients currently in ignore list with evidence of GI effects
-   - `carrageenan` family (kappa-carrageenan, iota-carrageenan, lambda-carrageenan)
-   - `cmc` family (cellulose gum, carboxymethylcellulose)
-   - `gum` family (guar gum, xanthan gum, locust bean gum, agar-agar)
-   - `colorant` family (titanium dioxide, Red 40, Yellow 5, Yellow 6)
-   - For additives, **override position weight** — even late-in-list presence is meaningful for GI correlation
-   - These should only contribute to GI track, not skin track
+### Remaining TODO:
 
-2. **New source group: `fiber`** (future enhancement)
-   - beet_pulp, pea_fiber, cellulose, psyllium, flaxseed_fiber, tomato_pomace, miscanthus_grass
-   - GI track only — fiber type correlates with stool outcomes
+1. **Fat % from GA data as a GI correlation input** — not just ingredient-level, but product-level fat content
+2. **Asymmetric evaluation minimums** — "bad" verdicts need no minimum (3-5 bad days is enough). "Good" verdicts need 2-4 weeks (GI) or 8 weeks (skin) to confirm absence of problems
 
-3. **Ingredient splitting detection** — when multiple pea/lentil fractions appear in same food (peas + pea protein + pea starch + pea fiber), flag cumulative legume load
-
-### Engine changes needed:
-
-1. **Separate `COMMON_TRIGGERS` into `COMMON_SKIN_TRIGGERS`** — only show Mueller data in itch context
-2. **No `COMMON_GI_TRIGGERS` list** — GI correlations should be purely data-driven from user logs (no reference ranking exists)
-3. **Fat % from GA data as a GI correlation input** — not just ingredient-level, but product-level fat content
-4. **Additive position weight override** — carrageenan at position 25 should still flag in GI track
-5. **Asymmetric evaluation minimums** — "bad" verdicts need no minimum (3-5 bad days is enough). "Good" verdicts need 2-4 weeks (GI) or 8 weeks (skin) to confirm absence of problems
-
-### No changes needed:
-- Fat/oil separation from protein — already correct
-- Hydrolyzed flagging — already correct
+### Already correct (no changes needed):
+- `COMMON_SKIN_TRIGGERS` (Mueller data) only shown in itch context — no `COMMON_GI_TRIGGERS` list (GI correlations are purely data-driven)
+- Fat/oil separation from protein
+- Hydrolyzed flagging
 - Cross-reactivity groups — biologically accurate
 - Position-based weighting for proteins — aligns with ingredient label regulation
+- Additive position weight override — carrageenan at position 25 flags in GI track (floor weight 0.5)
 
 ---
 

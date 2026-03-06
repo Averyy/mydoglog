@@ -52,6 +52,10 @@ export const ingredientFormEnum = pgEnum("ingredient_form", [
   "hydrolyzed",
   "flour",
   "bran",
+  "protein_isolate",
+  "starch",
+  "fiber",
+  "gluten",
 ])
 
 export const ingredientSourceGroupEnum = pgEnum("ingredient_source_group", [
@@ -65,6 +69,10 @@ export const ingredientSourceGroupEnum = pgEnum("ingredient_source_group", [
   "dairy",
   "egg",
   "other",
+  "additive",
+  "fiber",
+  "vegetable",
+  "seed",
 ])
 
 export const mealSlotEnum = pgEnum("meal_slot", [
@@ -83,13 +91,6 @@ export const quantityUnitEnum = pgEnum("quantity_unit", [
   "tbsp",
   "tsp",
   "ml",
-])
-
-export const gasLevelEnum = pgEnum("gas_level", [
-  "none",
-  "mild",
-  "bad",
-  "terrible",
 ])
 
 export const vomitingFreqEnum = pgEnum("vomiting_freq", [
@@ -377,6 +378,7 @@ export const feedingPeriods = pgTable(
   (table) => [
     index("idx_feeding_periods_dog").on(table.dogId),
     index("idx_feeding_periods_plan_group").on(table.dogId, table.planGroupId),
+    index("idx_feeding_periods_dog_start_created").on(table.dogId, table.startDate, table.createdAt),
   ],
 )
 
@@ -402,21 +404,26 @@ export const treatLogs = pgTable(
   (table) => [index("idx_treat_logs_dog_date").on(table.dogId, table.date)],
 )
 
-export const foodScorecards = pgTable("food_scorecards", {
-  id: text("id")
-    .primaryKey()
-    .$defaultFn(() => crypto.randomUUID()),
-  planGroupId: text("plan_group_id").notNull(),
-  poopQuality: integer("poop_quality").array(),
-  gas: gasLevelEnum("gas"),
-  vomiting: vomitingFreqEnum("vomiting"),
-  palatability: palatabilityEnum("palatability"),
-  itchinessImpact: itchinessImpactEnum("itchiness_impact"),
-  verdict: verdictEnum("verdict"),
-  primaryReason: primaryReasonEnum("primary_reason"),
-  notes: text("notes"),
-  createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
-})
+export const foodScorecards = pgTable(
+  "food_scorecards",
+  {
+    id: text("id")
+      .primaryKey()
+      .$defaultFn(() => crypto.randomUUID()),
+    planGroupId: text("plan_group_id").notNull(),
+    poopQuality: integer("poop_quality").array(),
+    itchSeverity: integer("itch_severity").array(),
+    vomiting: vomitingFreqEnum("vomiting"),
+    palatability: palatabilityEnum("palatability"),
+    digestiveImpact: itchinessImpactEnum("digestive_impact"),
+    itchinessImpact: itchinessImpactEnum("itchiness_impact"),
+    verdict: verdictEnum("verdict"),
+    primaryReason: primaryReasonEnum("primary_reason"),
+    notes: text("notes"),
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (table) => [index("idx_food_scorecards_plan_group").on(table.planGroupId)],
+)
 
 export const poopLogs = pgTable(
   "poop_logs",

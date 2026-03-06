@@ -1,7 +1,6 @@
-CREATE TYPE "public"."gas_level" AS ENUM('none', 'mild', 'bad', 'terrible');--> statement-breakpoint
 CREATE TYPE "public"."ingredient_category" AS ENUM('protein', 'carb', 'fat', 'fiber', 'vitamin', 'mineral', 'additive');--> statement-breakpoint
-CREATE TYPE "public"."ingredient_form" AS ENUM('raw', 'meal', 'by_product', 'fat', 'oil', 'hydrolyzed', 'flour', 'bran');--> statement-breakpoint
-CREATE TYPE "public"."ingredient_source_group" AS ENUM('poultry', 'red_meat', 'fish', 'grain', 'legume', 'root', 'fruit', 'dairy', 'egg', 'other');--> statement-breakpoint
+CREATE TYPE "public"."ingredient_form" AS ENUM('raw', 'meal', 'by_product', 'fat', 'oil', 'hydrolyzed', 'flour', 'bran', 'protein_isolate', 'starch', 'fiber', 'gluten');--> statement-breakpoint
+CREATE TYPE "public"."ingredient_source_group" AS ENUM('poultry', 'red_meat', 'fish', 'grain', 'legume', 'root', 'fruit', 'dairy', 'egg', 'other', 'additive', 'fiber', 'vegetable', 'seed');--> statement-breakpoint
 CREATE TYPE "public"."itchiness_impact" AS ENUM('better', 'no_change', 'worse');--> statement-breakpoint
 CREATE TYPE "public"."meal_slot" AS ENUM('breakfast', 'lunch', 'dinner', 'snack');--> statement-breakpoint
 CREATE TYPE "public"."medication_reason" AS ENUM('itchiness', 'digestive', 'other');--> statement-breakpoint
@@ -63,6 +62,7 @@ CREATE TABLE "dogs" (
 	"birth_date" date,
 	"weight_kg" numeric,
 	"location" text,
+	"postal_code" text,
 	"notes" text,
 	"created_at" timestamp with time zone DEFAULT now() NOT NULL,
 	"updated_at" timestamp with time zone DEFAULT now() NOT NULL
@@ -89,10 +89,10 @@ CREATE TABLE "feeding_periods" (
 CREATE TABLE "food_scorecards" (
 	"id" text PRIMARY KEY NOT NULL,
 	"plan_group_id" text NOT NULL,
-	"poop_quality" integer,
-	"gas" "gas_level",
+	"poop_quality" integer[],
 	"vomiting" "vomiting_freq",
 	"palatability" "palatability",
+	"digestive_impact" "itchiness_impact",
 	"itchiness_impact" "itchiness_impact",
 	"verdict" "verdict",
 	"primary_reason" "primary_reason",
@@ -287,6 +287,8 @@ CREATE INDEX "idx_exposures_dog_date" ON "accidental_exposures" USING btree ("do
 CREATE INDEX "idx_dogs_owner" ON "dogs" USING btree ("owner_id");--> statement-breakpoint
 CREATE INDEX "idx_feeding_periods_dog" ON "feeding_periods" USING btree ("dog_id");--> statement-breakpoint
 CREATE INDEX "idx_feeding_periods_plan_group" ON "feeding_periods" USING btree ("dog_id","plan_group_id");--> statement-breakpoint
+CREATE INDEX "idx_feeding_periods_dog_start_created" ON "feeding_periods" USING btree ("dog_id","start_date","created_at");--> statement-breakpoint
+CREATE INDEX "idx_food_scorecards_plan_group" ON "food_scorecards" USING btree ("plan_group_id");--> statement-breakpoint
 CREATE INDEX "idx_ingredient_normalized_name" ON "ingredients" USING btree ("normalized_name");--> statement-breakpoint
 CREATE INDEX "idx_itchiness_logs_dog_date" ON "itchiness_logs" USING btree ("dog_id","date");--> statement-breakpoint
 CREATE INDEX "idx_medications_dog" ON "medications" USING btree ("dog_id");--> statement-breakpoint

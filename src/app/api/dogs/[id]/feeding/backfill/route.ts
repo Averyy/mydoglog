@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server"
 import { requireDogOwnership, isNextResponse } from "@/lib/api-helpers"
 import { db, feedingPeriods, foodScorecards } from "@/lib/db"
-import { parseDuration } from "@/lib/feeding"
+import { durationFromRange } from "@/lib/feeding"
 
 type RouteParams = { params: Promise<{ id: string }> }
 
@@ -13,9 +13,10 @@ interface BackfillItem {
 
 interface ScorecardInput {
   poopQuality?: number | number[] | null
-  gas?: string | null
+  itchSeverity?: number | number[] | null
   vomiting?: string | null
   palatability?: string | null
+  digestiveImpact?: string | null
   itchinessImpact?: string | null
   verdict?: string | null
   primaryReason?: string | null
@@ -24,10 +25,15 @@ interface ScorecardInput {
 
 interface BackfillBody {
   items: BackfillItem[]
-  approximateDuration: string
-  endDate?: string
+  startDate: string
+  endDate: string
+  approximateDuration?: string
   planName?: string
   scorecard?: ScorecardInput
+}
+
+function isValidDate(s: string): boolean {
+  return /^\d{4}-\d{2}-\d{2}$/.test(s) && !isNaN(new Date(s).getTime())
 }
 
 export async function POST(
@@ -41,29 +47,30 @@ export async function POST(
 
     const body = (await request.json()) as BackfillBody
 
-    if (!body.items?.length || !body.approximateDuration) {
+    if (!body.items?.length || !body.startDate || !body.endDate) {
       return NextResponse.json(
-        { error: "items and approximateDuration are required" },
+        { error: "items, startDate, and endDate are required" },
         { status: 400 },
       )
     }
 
-    const duration = parseDuration(body.approximateDuration)
-    if (!duration) {
+    if (!isValidDate(body.startDate) || !isValidDate(body.endDate)) {
       return NextResponse.json(
-        { error: "Could not parse duration" },
+        { error: "Invalid date format (expected YYYY-MM-DD)" },
         { status: 400 },
       )
     }
 
-    // Calculate start date from end date and duration
-    // Default to yesterday — backfills are historical and shouldn't overlap today
-    const yesterday = new Date()
-    yesterday.setDate(yesterday.getDate() - 1)
-    const endDate = body.endDate ?? yesterday.toISOString().split("T")[0]
-    const endMs = new Date(endDate).getTime()
-    const startMs = endMs - duration.days * 24 * 60 * 60 * 1000
-    const startDate = new Date(startMs).toISOString().split("T")[0]
+    if (body.endDate < body.startDate) {
+      return NextResponse.json(
+        { error: "endDate must be >= startDate" },
+        { status: 400 },
+      )
+    }
+
+    const startDate = body.startDate
+    const endDate = body.endDate
+    const approximateDuration = body.approximateDuration ?? durationFromRange(startDate, endDate)
 
     const planGroupId = crypto.randomUUID()
 
@@ -75,7 +82,7 @@ export async function POST(
       planGroupId,
       planName: body.planName ?? null,
       isBackfill: true,
-      approximateDuration: body.approximateDuration,
+      approximateDuration,
       quantity: item.quantity ?? null,
       quantityUnit: item.quantityUnit as
         | "can"
@@ -100,12 +107,19 @@ export async function POST(
             ? body.scorecard.poopQuality
             : [body.scorecard.poopQuality])
           : null,
-        gas: body.scorecard.gas as typeof foodScorecards.$inferInsert.gas,
+        itchSeverity: body.scorecard.itchSeverity != null
+          ? (Array.isArray(body.scorecard.itchSeverity)
+            ? body.scorecard.itchSeverity
+            : [body.scorecard.itchSeverity])
+          : null,
         vomiting:
           body.scorecard.vomiting as typeof foodScorecards.$inferInsert.vomiting,
         palatability:
           body.scorecard
             .palatability as typeof foodScorecards.$inferInsert.palatability,
+        digestiveImpact:
+          body.scorecard
+            .digestiveImpact as typeof foodScorecards.$inferInsert.digestiveImpact,
         itchinessImpact:
           body.scorecard
             .itchinessImpact as typeof foodScorecards.$inferInsert.itchinessImpact,

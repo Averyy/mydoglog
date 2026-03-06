@@ -1,6 +1,6 @@
 {
-  "id": "f1f283ad-4ca7-4fb8-aef6-86236ae788e9",
-  "prevId": "a8db4147-1916-4c78-8315-3015e6febb84",
+  "id": "402fbfb0-349e-461d-9153-6b226b22c392",
+  "prevId": "44ba50b2-7abd-444a-a846-d56c62b6554e",
   "version": "7",
   "dialect": "postgresql",
   "tables": {
@@ -520,6 +520,33 @@
           "concurrently": false,
           "method": "btree",
           "with": {}
+        },
+        "idx_feeding_periods_dog_start_created": {
+          "name": "idx_feeding_periods_dog_start_created",
+          "columns": [
+            {
+              "expression": "dog_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            },
+            {
+              "expression": "start_date",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            },
+            {
+              "expression": "created_at",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
         }
       },
       "foreignKeys": {
@@ -574,14 +601,13 @@
         },
         "poop_quality": {
           "name": "poop_quality",
-          "type": "integer",
+          "type": "integer[]",
           "primaryKey": false,
           "notNull": false
         },
-        "gas": {
-          "name": "gas",
-          "type": "gas_level",
-          "typeSchema": "public",
+        "itch_severity": {
+          "name": "itch_severity",
+          "type": "integer[]",
           "primaryKey": false,
           "notNull": false
         },
@@ -595,6 +621,13 @@
         "palatability": {
           "name": "palatability",
           "type": "palatability",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "digestive_impact": {
+          "name": "digestive_impact",
+          "type": "itchiness_impact",
           "typeSchema": "public",
           "primaryKey": false,
           "notNull": false
@@ -634,7 +667,23 @@
           "default": "now()"
         }
       },
-      "indexes": {},
+      "indexes": {
+        "idx_food_scorecards_plan_group": {
+          "name": "idx_food_scorecards_plan_group",
+          "columns": [
+            {
+              "expression": "plan_group_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
       "foreignKeys": {},
       "compositePrimaryKeys": {},
       "uniqueConstraints": {},
@@ -1983,16 +2032,6 @@
     }
   },
   "enums": {
-    "public.gas_level": {
-      "name": "gas_level",
-      "schema": "public",
-      "values": [
-        "none",
-        "mild",
-        "bad",
-        "terrible"
-      ]
-    },
     "public.ingredient_category": {
       "name": "ingredient_category",
       "schema": "public",
@@ -2017,7 +2056,11 @@
         "oil",
         "hydrolyzed",
         "flour",
-        "bran"
+        "bran",
+        "protein_isolate",
+        "starch",
+        "fiber",
+        "gluten"
       ]
     },
     "public.ingredient_source_group": {
@@ -2033,7 +2076,11 @@
         "fruit",
         "dairy",
         "egg",
-        "other"
+        "other",
+        "additive",
+        "fiber",
+        "vegetable",
+        "seed"
       ]
     },
     "public.itchiness_impact": {

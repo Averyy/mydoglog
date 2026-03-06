@@ -27,7 +27,8 @@
         "Direct Dehydrated Alfalfa Pellets": {
           "form": "dried"
         }
-      }
+      },
+      "category": "carb"
     },
     "algae": {
       "source_group": "other",
@@ -109,7 +110,8 @@
         "Dried Apple Pomace": {
           "form": "fiber"
         }
-      }
+      },
+      "category": "carb"
     },
     "arctic_char": {
       "source_group": "fish",
@@ -120,7 +122,8 @@
         "raw arctic char": {
           "form": "raw"
         }
-      }
+      },
+      "category": "protein"
     },
     "avocado": {
       "source_group": "fruit",
@@ -128,7 +131,8 @@
         "avocado": {
           "form": "whole"
         }
-      }
+      },
+      "category": "fat"
     },
     "banana": {
       "source_group": "fruit",
@@ -142,7 +146,8 @@
         "Dried banana": {
           "form": "dried"
         }
-      }
+      },
+      "category": "carb"
     },
     "barley": {
       "source_group": "grain",
@@ -180,7 +185,8 @@
         "Whole Grain Barley": {
           "form": "whole"
         }
-      }
+      },
+      "category": "carb"
     },
     "bean": {
       "source_group": "legume",
@@ -215,7 +221,8 @@
         "black bean": {
           "form": "whole"
         }
-      }
+      },
+      "category": "carb"
     },
     "beef": {
       "source_group": "red_meat",
@@ -412,10 +419,12 @@
         "Beef tallow preserved with mixed-tocopherols": {
           "form": "fat"
         }
-      }
+      },
+      "category": "protein"
     },
     "beet": {
       "source_group": "root",
+      "category": "carb",
       "members": {
         "Beet Root": {
           "form": "whole"
@@ -423,6 +432,15 @@
         "fresh beet greens": {
           "form": "raw"
         },
+        "Dehydrated Beets (added for Colour)": {
+          "form": "dried"
+        }
+      }
+    },
+    "beet_pulp": {
+      "source_group": "fiber",
+      "category": "fiber",
+      "members": {
         "Dried Beet Pulp": {
           "form": "fiber"
         },
@@ -434,9 +452,6 @@
         },
         "Dried Plain Bet Pulp": {
           "form": "fiber"
-        },
-        "Dehydrated Beets (added for Colour)": {
-          "form": "dried"
         }
       }
     },
@@ -464,7 +479,8 @@
         "Water Buffalo": {
           "form": "raw"
         }
-      }
+      },
+      "category": "protein"
     },
     "blackberry": {
       "source_group": "fruit",
@@ -472,7 +488,8 @@
         "blackberries": {
           "form": "whole"
         }
-      }
+      },
+      "category": "carb"
     },
     "blueberry": {
       "source_group": "fruit",
@@ -504,7 +521,8 @@
         "dried blueberry pomace": {
           "form": "fiber"
         }
-      }
+      },
+      "category": "carb"
     },
     "borage": {
       "source_group": "seed",
@@ -512,7 +530,8 @@
         "borage oil": {
           "form": "oil"
         }
-      }
+      },
+      "category": "fat"
     },
     "broccoli": {
       "source_group": "vegetable",
@@ -520,7 +539,8 @@
         "broccoli": {
           "form": "whole"
         }
-      }
+      },
+      "category": "carb"
     },
     "canola": {
       "source_group": "seed",
@@ -549,7 +569,8 @@
         "canola oil (preserved with mixed tocopherols)": {
           "form": "oil"
         }
-      }
+      },
+      "category": "fat"
     },
     "capelin": {
       "source_group": "fish",
@@ -560,7 +581,26 @@
         "Capelin Broth": {
           "form": "broth"
         }
-      }
+      },
+      "category": "protein"
+    },
+    "carrageenan": {
+      "source_group": "additive",
+      "members": {
+        "Carrageenan": {
+          "form": "raw"
+        },
+        "carrageenan": {
+          "form": "raw"
+        },
+        "Kappa-Carrageenan": {
+          "form": "raw"
+        },
+        "Iota-Carrageenan": {
+          "form": "raw"
+        }
+      },
+      "category": "additive"
     },
     "carrot": {
       "source_group": "vegetable",
@@ -592,7 +632,8 @@
         "Organic Carrots": {
           "form": "whole"
         }
-      }
+      },
+      "category": "carb"
     },
     "celery": {
       "source_group": "vegetable",
@@ -606,7 +647,8 @@
         "dried celery": {
           "form": "dried"
         }
-      }
+      },
+      "category": "carb"
     },
     "chia": {
       "source_group": "seed",
@@ -620,7 +662,8 @@
         "Chia Seeds": {
           "form": "whole"
         }
-      }
+      },
+      "category": "fat"
     },
     "chicken": {
       "source_group": "poultry",
@@ -1001,7 +1044,8 @@
         "chicken fat(preserved with mixed tocopherols, a natural source of vitamin E)": {
           "form": "fat"
         }
-      }
+      },
+      "category": "protein"
     },
     "chickpea": {
       "source_group": "legume",
@@ -1030,10 +1074,11 @@
         "chickpea fibre": {
           "form": "fiber"
         }
-      }
+      },
+      "category": "carb"
     },
     "chicory": {
-      "source_group": "vegetable",
+      "source_group": "fiber",
       "members": {
         "Chicory Root": {
           "form": "raw"
@@ -1056,7 +1101,8 @@
         "inulin (FOS) (chicory root)": {
           "form": "extract"
         }
-      }
+      },
+      "category": "fiber"
     },
     "clam": {
       "source_group": "mollusk",
@@ -1064,7 +1110,23 @@
         "clams": {
           "form": "raw"
         }
-      }
+      },
+      "category": "protein"
+    },
+    "cmc": {
+      "source_group": "additive",
+      "members": {
+        "Cellulose Gum": {
+          "form": "raw"
+        },
+        "cellulose gum": {
+          "form": "raw"
+        },
+        "Carboxymethylcellulose": {
+          "form": "raw"
+        }
+      },
+      "category": "additive"
     },
     "coconut": {
       "source_group": "seed",
@@ -1081,7 +1143,8 @@
         "coconut oil (preserved with mixed tocopherols)": {
           "form": "oil"
         }
-      }
+      },
+      "category": "fat"
     },
     "cod": {
       "source_group": "fish",
@@ -1116,7 +1179,8 @@
         "Wild-Caught Cod": {
           "form": "raw"
         }
-      }
+      },
+      "category": "protein"
     },
     "collard": {
       "source_group": "vegetable",
@@ -1124,7 +1188,8 @@
         "collard greens": {
           "form": "whole"
         }
-      }
+      },
+      "category": "carb"
     },
     "corn": {
       "source_group": "grain",
@@ -1190,7 +1255,8 @@
         "Hydrogenated Corn Syrup": {
           "form": "derivative"
         }
-      }
+      },
+      "category": "carb"
     },
     "cranberry": {
       "source_group": "fruit",
@@ -1222,7 +1288,8 @@
         "dried cranberry pomace": {
           "form": "fiber"
         }
-      }
+      },
+      "category": "carb"
     },
     "crocodile": {
       "source_group": "exotic",
@@ -1230,7 +1297,8 @@
         "alligator": {
           "form": "raw"
         }
-      }
+      },
+      "category": "protein"
     },
     "dairy": {
       "source_group": "dairy",
@@ -1299,7 +1367,8 @@
         "Yogurt": {
           "form": "raw"
         }
-      }
+      },
+      "category": "protein"
     },
     "duck": {
       "source_group": "poultry",
@@ -1364,7 +1433,8 @@
         "raw duck liver": {
           "form": "organ"
         }
-      }
+      },
+      "category": "protein"
     },
     "egg": {
       "source_group": "egg",
@@ -1447,7 +1517,8 @@
         "fresh eggs": {
           "form": "raw"
         }
-      }
+      },
+      "category": "protein"
     },
     "elk": {
       "source_group": "exotic",
@@ -1458,7 +1529,8 @@
         "ground elk antler": {
           "form": "ground"
         }
-      }
+      },
+      "category": "protein"
     },
     "flaxseed": {
       "source_group": "seed",
@@ -1511,7 +1583,8 @@
         "Whole Flaxseed": {
           "form": "whole"
         }
-      }
+      },
+      "category": "fat"
     },
     "flounder": {
       "source_group": "fish",
@@ -1531,7 +1604,8 @@
         "raw flounder": {
           "form": "raw"
         }
-      }
+      },
+      "category": "protein"
     },
     "garlic": {
       "source_group": "vegetable",
@@ -1569,7 +1643,8 @@
         "garlic   powder": {
           "form": "ground"
         }
-      }
+      },
+      "category": "carb"
     },
     "ginger": {
       "source_group": "vegetable",
@@ -1586,7 +1661,8 @@
         "zingiber officinale (ginger root)": {
           "form": "raw"
         }
-      }
+      },
+      "category": "carb"
     },
     "goat": {
       "source_group": "red_meat",
@@ -1606,7 +1682,8 @@
         "raw goat": {
           "form": "raw"
         }
-      }
+      },
+      "category": "protein"
     },
     "green_bean": {
       "source_group": "vegetable",
@@ -1623,7 +1700,20 @@
         "string beans": {
           "form": "whole"
         }
-      }
+      },
+      "category": "carb"
+    },
+    "guar_gum": {
+      "source_group": "additive",
+      "members": {
+        "Guar Gum": {
+          "form": "raw"
+        },
+        "guar gum": {
+          "form": "raw"
+        }
+      },
+      "category": "additive"
     },
     "haddock": {
       "source_group": "fish",
@@ -1631,7 +1721,8 @@
         "Haddock": {
           "form": "raw"
         }
-      }
+      },
+      "category": "protein"
     },
     "hake": {
       "source_group": "fish",
@@ -1666,7 +1757,8 @@
         "raw whole hake": {
           "form": "whole"
         }
-      }
+      },
+      "category": "protein"
     },
     "hemp": {
       "source_group": "seed",
@@ -1674,7 +1766,8 @@
         "Hemp Seed Oil": {
           "form": "oil"
         }
-      }
+      },
+      "category": "fat"
     },
     "herb": {
       "source_group": "other",
@@ -1849,7 +1942,8 @@
         "raw whole herring": {
           "form": "whole"
         }
-      }
+      },
+      "category": "protein"
     },
     "honey": {
       "source_group": "other",
@@ -1874,7 +1968,8 @@
         "Organic Kale": {
           "form": "whole"
         }
-      }
+      },
+      "category": "carb"
     },
     "kangaroo": {
       "source_group": "exotic",
@@ -1891,7 +1986,8 @@
         "Kangaroo Meal": {
           "form": "meal"
         }
-      }
+      },
+      "category": "protein"
     },
     "lamb": {
       "source_group": "red_meat",
@@ -2019,7 +2115,8 @@
         "natural lamb flavour": {
           "form": "derivative"
         }
-      }
+      },
+      "category": "protein"
     },
     "lentil": {
       "source_group": "legume",
@@ -2051,7 +2148,26 @@
         "lentil fibre": {
           "form": "fiber"
         }
-      }
+      },
+      "category": "carb"
+    },
+    "locust_bean_gum": {
+      "source_group": "additive",
+      "members": {
+        "Locust Bean Gum": {
+          "form": "raw"
+        },
+        "locust bean gum": {
+          "form": "raw"
+        },
+        "Carob Bean Gum": {
+          "form": "raw"
+        },
+        "carob bean gum": {
+          "form": "raw"
+        }
+      },
+      "category": "additive"
     },
     "mackerel": {
       "source_group": "fish",
@@ -2089,7 +2205,8 @@
         "raw whole mackerel": {
           "form": "whole"
         }
-      }
+      },
+      "category": "protein"
     },
     "menhaden": {
       "source_group": "fish",
@@ -2109,7 +2226,8 @@
         "Ocean Menhaden Fish Meal": {
           "form": "meal"
         }
-      }
+      },
+      "category": "protein"
     },
     "millet": {
       "source_group": "grain",
@@ -2120,7 +2238,8 @@
         "whole millet": {
           "form": "whole"
         }
-      }
+      },
+      "category": "carb"
     },
     "mussel": {
       "source_group": "mollusk",
@@ -2143,7 +2262,8 @@
         "perna canaliculus (green lipped mussel)": {
           "form": "raw"
         }
-      }
+      },
+      "category": "protein"
     },
     "oat": {
       "source_group": "grain",
@@ -2210,8 +2330,12 @@
         },
         "oat bran": {
           "form": "bran"
+        },
+        "oat ber": {
+          "form": "fiber"
         }
-      }
+      },
+      "category": "carb"
     },
     "olive": {
       "source_group": "seed",
@@ -2222,7 +2346,8 @@
         "Olive Oil (preserved with Mixed Tocopherols and Citric Acid)": {
           "form": "oil"
         }
-      }
+      },
+      "category": "fat"
     },
     "papaya": {
       "source_group": "fruit",
@@ -2233,7 +2358,8 @@
         "papayas": {
           "form": "whole"
         }
-      }
+      },
+      "category": "carb"
     },
     "parsley": {
       "source_group": "vegetable",
@@ -2244,7 +2370,8 @@
         "parsley flakes": {
           "form": "dried"
         }
-      }
+      },
+      "category": "carb"
     },
     "pea": {
       "source_group": "legume",
@@ -2297,7 +2424,8 @@
         "Yellow Peas": {
           "form": "whole"
         }
-      }
+      },
+      "category": "carb"
     },
     "peanut": {
       "source_group": "legume",
@@ -2308,7 +2436,8 @@
         "Peanuts": {
           "form": "whole"
         }
-      }
+      },
+      "category": "carb"
     },
     "pear": {
       "source_group": "fruit",
@@ -2334,7 +2463,8 @@
         "organic pears": {
           "form": "raw"
         }
-      }
+      },
+      "category": "carb"
     },
     "pepper": {
       "source_group": "vegetable",
@@ -2348,7 +2478,8 @@
         "Red Peppers": {
           "form": "whole"
         }
-      }
+      },
+      "category": "carb"
     },
     "perch": {
       "source_group": "fish",
@@ -2356,7 +2487,8 @@
         "perch": {
           "form": "raw"
         }
-      }
+      },
+      "category": "protein"
     },
     "pike": {
       "source_group": "fish",
@@ -2364,7 +2496,8 @@
         "northern pike": {
           "form": "raw"
         }
-      }
+      },
+      "category": "protein"
     },
     "pilchard": {
       "source_group": "fish",
@@ -2375,7 +2508,8 @@
         "whole pilchard": {
           "form": "whole"
         }
-      }
+      },
+      "category": "protein"
     },
     "pineapple": {
       "source_group": "fruit",
@@ -2383,7 +2517,8 @@
         "pineapple": {
           "form": "whole"
         }
-      }
+      },
+      "category": "carb"
     },
     "pollock": {
       "source_group": "fish",
@@ -2430,7 +2565,8 @@
         "pollock meal": {
           "form": "meal"
         }
-      }
+      },
+      "category": "protein"
     },
     "pomegranate": {
       "source_group": "fruit",
@@ -2441,7 +2577,8 @@
         "pomegranates": {
           "form": "whole"
         }
-      }
+      },
+      "category": "carb"
     },
     "pork": {
       "source_group": "red_meat",
@@ -2650,7 +2787,8 @@
         "Natural Bacon Flavour": {
           "form": "derivative"
         }
-      }
+      },
+      "category": "protein"
     },
     "potato": {
       "source_group": "root",
@@ -2682,10 +2820,11 @@
         "Potatoes": {
           "form": "whole"
         }
-      }
+      },
+      "category": "carb"
     },
     "psyllium": {
-      "source_group": "other",
+      "source_group": "fiber",
       "members": {
         "psyllium husk": {
           "form": "fiber"
@@ -2696,7 +2835,8 @@
         "powdered psyllium seed husk": {
           "form": "fiber"
         }
-      }
+      },
+      "category": "fiber"
     },
     "pumpkin": {
       "source_group": "fruit",
@@ -2731,7 +2871,8 @@
         "curcubita maxima (pumpkin)": {
           "form": "raw"
         }
-      }
+      },
+      "category": "carb"
     },
     "quail": {
       "source_group": "poultry",
@@ -2748,7 +2889,8 @@
         "raw quail": {
           "form": "raw"
         }
-      }
+      },
+      "category": "protein"
     },
     "quinoa": {
       "source_group": "grain",
@@ -2762,7 +2904,8 @@
         "Quinoa Seeds": {
           "form": "whole"
         }
-      }
+      },
+      "category": "carb"
     },
     "rabbit": {
       "source_group": "exotic",
@@ -2776,7 +2919,8 @@
         "Rabbit Meal": {
           "form": "meal"
         }
-      }
+      },
+      "category": "protein"
     },
     "raspberry": {
       "source_group": "fruit",
@@ -2784,7 +2928,8 @@
         "Raspberries": {
           "form": "whole"
         }
-      }
+      },
+      "category": "carb"
     },
     "rice": {
       "source_group": "grain",
@@ -2849,7 +2994,8 @@
         "Modified Rice Starch": {
           "form": "starch"
         }
-      }
+      },
+      "category": "carb"
     },
     "rockfish": {
       "source_group": "fish",
@@ -2872,7 +3018,8 @@
         "raw whole rockfish": {
           "form": "whole"
         }
-      }
+      },
+      "category": "protein"
     },
     "rosemary": {
       "source_group": "vegetable",
@@ -2898,7 +3045,8 @@
         "Rosemary Extract)": {
           "form": "extract"
         }
-      }
+      },
+      "category": "carb"
     },
     "rye": {
       "source_group": "grain",
@@ -2906,7 +3054,8 @@
         "Rye": {
           "form": "whole"
         }
-      }
+      },
+      "category": "carb"
     },
     "safflower": {
       "source_group": "seed",
@@ -2917,7 +3066,8 @@
         "GLA safflower oil": {
           "form": "oil"
         }
-      }
+      },
+      "category": "fat"
     },
     "salmon": {
       "source_group": "fish",
@@ -3011,7 +3161,8 @@
         "Salmon Oil (Preserved with Mixed Tocopherols)": {
           "form": "oil"
         }
-      }
+      },
+      "category": "protein"
     },
     "sardine": {
       "source_group": "fish",
@@ -3043,7 +3194,8 @@
         "Raw whole pilchard": {
           "form": "raw"
         }
-      }
+      },
+      "category": "protein"
     },
     "saskatoon_berry": {
       "source_group": "fruit",
@@ -3054,7 +3206,8 @@
         "whole saskatoon berries": {
           "form": "whole"
         }
-      }
+      },
+      "category": "carb"
     },
     "shrimp": {
       "source_group": "crustacean",
@@ -3071,7 +3224,8 @@
         "shrimp": {
           "form": "raw"
         }
-      }
+      },
+      "category": "protein"
     },
     "sole": {
       "source_group": "fish",
@@ -3085,7 +3239,8 @@
         "raw whole sole": {
           "form": "whole"
         }
-      }
+      },
+      "category": "protein"
     },
     "sorghum": {
       "source_group": "grain",
@@ -3114,7 +3269,8 @@
         "whole sorghum": {
           "form": "whole"
         }
-      }
+      },
+      "category": "carb"
     },
     "soy": {
       "source_group": "legume",
@@ -3160,7 +3316,8 @@
         "Soybean Oil": {
           "form": "oil"
         }
-      }
+      },
+      "category": "carb"
     },
     "spinach": {
       "source_group": "vegetable",
@@ -3180,7 +3337,8 @@
         "Spinach (Dried)": {
           "form": "dried"
         }
-      }
+      },
+      "category": "carb"
     },
     "squash": {
       "source_group": "fruit",
@@ -3203,7 +3361,8 @@
         "whole butternut squash": {
           "form": "whole"
         }
-      }
+      },
+      "category": "carb"
     },
     "sunflower": {
       "source_group": "seed",
@@ -3226,7 +3385,8 @@
         "Sunflower Oil (Preserved with Mixed Tocopherols)": {
           "form": "oil"
         }
-      }
+      },
+      "category": "fat"
     },
     "sweet_potato": {
       "source_group": "root",
@@ -3270,7 +3430,8 @@
         "sweet potatoes*": {
           "form": "whole"
         }
-      }
+      },
+      "category": "carb"
     },
     "tapioca": {
       "source_group": "root",
@@ -3287,7 +3448,20 @@
         "modified tapioca starch": {
           "form": "starch"
         }
-      }
+      },
+      "category": "carb"
+    },
+    "titanium_dioxide": {
+      "source_group": "additive",
+      "members": {
+        "Titanium Dioxide": {
+          "form": "raw"
+        },
+        "titanium dioxide": {
+          "form": "raw"
+        }
+      },
+      "category": "additive"
     },
     "tomato": {
       "source_group": "fruit",
@@ -3313,7 +3487,8 @@
         "Dried Tomato Pomace": {
           "form": "fiber"
         }
-      }
+      },
+      "category": "carb"
     },
     "trout": {
       "source_group": "fish",
@@ -3336,7 +3511,8 @@
         "raw steelhead trout": {
           "form": "raw"
         }
-      }
+      },
+      "category": "protein"
     },
     "tuna": {
       "source_group": "fish",
@@ -3347,7 +3523,8 @@
         "Tuna and Amberjack": {
           "form": "raw"
         }
-      }
+      },
+      "category": "protein"
     },
     "turkey": {
       "source_group": "poultry",
@@ -3511,7 +3688,8 @@
         "Natural Roasted Turkey Flavour": {
           "form": "derivative"
         }
-      }
+      },
+      "category": "protein"
     },
     "turmeric": {
       "source_group": "vegetable",
@@ -3531,7 +3709,8 @@
         "curcuma": {
           "form": "raw"
         }
-      }
+      },
+      "category": "carb"
     },
     "turnip": {
       "source_group": "vegetable",
@@ -3539,7 +3718,8 @@
         "fresh turnip greens": {
           "form": "raw"
         }
-      }
+      },
+      "category": "carb"
     },
     "venison": {
       "source_group": "red_meat",
@@ -3577,7 +3757,8 @@
         "raw venison": {
           "form": "raw"
         }
-      }
+      },
+      "category": "protein"
     },
     "wheat": {
       "source_group": "grain",
@@ -3618,7 +3799,8 @@
         "Whole Grain Wheat": {
           "form": "whole"
         }
-      }
+      },
+      "category": "carb"
     },
     "whitefish": {
       "source_group": "fish",
@@ -3686,7 +3868,8 @@
         "whitefish oil": {
           "form": "oil"
         }
-      }
+      },
+      "category": "protein"
     },
     "wild_boar": {
       "source_group": "red_meat",
@@ -3712,7 +3895,20 @@
         "wild boar liver": {
           "form": "organ"
         }
-      }
+      },
+      "category": "protein"
+    },
+    "xanthan_gum": {
+      "source_group": "additive",
+      "members": {
+        "Xanthan Gum": {
+          "form": "raw"
+        },
+        "xanthan gum": {
+          "form": "raw"
+        }
+      },
+      "category": "additive"
     },
     "yeast": {
       "source_group": "other",
@@ -3781,7 +3977,8 @@
         "Zucchini": {
           "form": "whole"
         }
-      }
+      },
+      "category": "carb"
     }
   },
   "cross_reactivity_groups": {
@@ -4511,7 +4708,7 @@
     "(?i)^natural\\s+and\\s+artificial",
     "(?i)^(smoke|hickory)\\s+flavou?r",
     "(?i)^vanilla\\s+flavou?r",
-    "(?i)(guar|xanthan|cassia|locust\\s+bean|carob\\s+bean)\\s+gum|^agar\\b|^carrageenan$|^gum\\s+arabic",
+    "(?i)cassia\\s+gum|^agar\\b|^gum\\s+arabic",
     "(?i)^(glycerin|glycerine|glyceryl|dextrose|maltodextrin|lecithin)\\b",
     "(?i)^(microcrystalline\\s+)?cellulose$|^powdered\\s+cellulose|^hydroxypropyl\\s+cellulose",
     "(?i)^(gelatin|lactose)\\b",
