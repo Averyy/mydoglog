@@ -96,6 +96,7 @@
 5. **Pro Plan Veterinary Diets HA Hydrolyzed Chicken Flavour Canned** — current, months. Was working great, now declining.
 
 ## Key Patterns
+- **Supplements/toppers are small quantities (25-30g/meal)** — their scorecard scores reflect whatever primary food they're paired with, not their own effect. Pumpkin topper at 2.5 stool over 368 days is just a weighted average of every food it accompanied. The real signal is: removing it makes stool worse (protective fiber effect), but it can't override a bad food (salmon still hit 6 with pumpkin on board).
 - Itching worsened on chicken, beef, AND HA — likely environmental, not food-driven
 - Paw licking is primary itch symptom — signature of environmental/contact allergy
 - HA hydrolyzed diet initially resolved both GI and itch, but itch returned with spring (environmental)

@@ -102,13 +102,14 @@ Note: `topper` defaults to `wet` in FORMAT_MAP as a reasonable default. Once scr
 - Add `format: string | null` to `ProductSummary`
 - Add `format: string | null` to `FeedingPlanItem`
 
-### `src/lib/labels.ts`
-- `PRODUCT_TYPE_LABELS`: `{ food: "Food", treat: "Treat", supplement: "Supplement" }`
+### `src/lib/labels.ts` (lines 2-14)
+- `PRODUCT_TYPE_LABELS` (line 2): replace 8-value map → `{ food: "Food", treat: "Treat", supplement: "Supplement" }`
 - Add `PRODUCT_FORMAT_LABELS`: `{ dry: "Kibble", wet: "Wet" }`
-- Rename `SUPPLEMENT_PRODUCT_TYPES` → `NON_FOOD_TYPES = new Set(["treat", "supplement"])`
+- `SUPPLEMENT_PRODUCT_TYPES` (line 14): rename → `NON_FOOD_TYPES = new Set(["treat", "supplement"])`
+- Update all importers of `SUPPLEMENT_PRODUCT_TYPES` to use `NON_FOOD_TYPES`
 
-### `src/lib/nutrition.ts`
-- Rekey `TYPE_DEFAULT_UNITS` to use type+format combo:
+### `src/lib/nutrition.ts` (lines 88-133)
+- Rekey `TYPE_DEFAULT_UNITS` (line 88) to use type+format combo:
   ```ts
   food/dry → cup, g
   food/wet → can, g
@@ -116,34 +117,26 @@ Note: `topper` defaults to `wet` in FORMAT_MAP as a reasonable default. Once scr
   supplement/dry → scoop, g
   supplement/wet → tbsp, g
   ```
-- Update `getAvailableUnits(calorieContent, productType, productFormat)` — add `productFormat` param, use combined key for fallback
+- Update `getAvailableUnits` (line 104) signature: add `productFormat` param, use combined key for fallback
 
 ### `src/lib/correlation/engine.ts`
-- Update `estimateGrams` switch to use new type+format values:
-  ```ts
-  food/dry → 300, food/wet → 370
-  treat → 10
-  supplement/dry → 5, supplement/wet → 30
-  default → 200
-  ```
-- Lines 176-184: replace old 8-value switch
+- Line 831: change default `"dry_food"` → `"food"` in `const productType = info?.type ?? "dry_food"`
+- Note: `estimateGrams` (line 159) switches on `unit` (cup/can/scoop/etc), NOT product type — no changes needed there
 
 ### `src/lib/correlation/query.ts`
-- `productTypes` map (line 340-342): also store format → change to `Map<string, { type: string; format: string }>`
-- Line 309: select `format: products.format` alongside `type: products.type`
-- Line 342: default `"dry_food"` → `{ type: "food", format: "dry" }`
-- `fetchIngredientProductMap` (line 412-452): default `"dry_food"` → `"food"`
+- Line 311: add `format: products.format` to select alongside `type: products.type`
+- Lines 342-345: `productInfo` map — change type to `Map<string, { type: string; format: string; calorieContent: string | null }>`, default `"dry_food"` → `"food"`, add format default `"dry"`
+- Lines 402-468: `fetchIngredientProductMap` — line 421 add `format: products.format` to select, line 456 default `"dry_food"` → `"food"`
 
 ### `src/lib/correlation/types.ts`
 - `CorrelationInput.productTypes` comment: update from `"dry_food"` to `"food"`
 - `IngredientProductEntry.productType`: stays as-is (already `string`)
 
 ### `src/lib/correlation/engine.test.ts`
-- Line 93: `productTypes: new Map()` — stays as-is (empty map)
-- Any tests referencing `"dry_food"` in productTypes → update
+- Any tests referencing `"dry_food"` in productTypes → update to `"food"`
 
-### `src/app/api/products/route.ts`
-- `TYPE_KEYWORDS`: change values to filter on `format` column:
+### `src/app/api/products/route.ts` (lines 5-15)
+- `TYPE_KEYWORDS` (line 5): rename to `FORMAT_KEYWORDS`, change values to filter on `format` column:
   ```ts
   const FORMAT_KEYWORDS: Record<string, string> = {
     can: "wet", cans: "wet", wet: "wet", canned: "wet",
@@ -153,7 +146,7 @@ Note: `topper` defaults to `wet` in FORMAT_MAP as a reasonable default. Once scr
 - Search logic: when keyword matches, filter `products.format = X` (instead of `products.type`)
 - Add `format: products.format` to select query
 
-### `src/components/product-picker.tsx`
+### `src/components/product-picker.tsx` (line 169)
 - `formatType(type, calorieContent)` → `formatType(type, format, calorieContent)`:
   - `format === "wet"` → check calorie for pouch/box, default "Can"
   - `format === "dry"` && `type === "food"` → "Kibble"
@@ -161,31 +154,36 @@ Note: `topper` defaults to `wet` in FORMAT_MAP as a reasonable default. Once scr
   - `type === "supplement"` → "Supplement"
 
 ### `src/app/(app)/dogs/[id]/food-scorecard/page.tsx`
-- `NON_FOOD_TYPES`: simplify to `new Set(["treat", "supplement"])`
-- Remove import of old `SUPPLEMENT_PRODUCT_TYPES`, use `NON_FOOD_TYPES` or inline `type !== "food"` checks
-- `scorecardModeForGroup`: check `item.type !== "food"`
-- `rateLabel`: check `type === "treat"` → "Rate this treat", `type === "supplement"` → "Rate this supplement"
-- Backfill modal mode: check `backfillProduct?.product.type !== "food"`
-- "Found in:" rows: show type label when `type !== "food"`
-- Pass `productType` to `FoodScoreCard` — unchanged
+- Line 35: remove import of `SUPPLEMENT_PRODUCT_TYPES`, import `NON_FOOD_TYPES` instead
+- Line 1023: `NON_FOOD_TYPES` local definition → remove (use the one from labels.ts)
+- Line 1027: `scorecardModeForGroup` — change `SUPPLEMENT_PRODUCT_TYPES.has(item.type)` → `item.type !== "food"`
+- Line 1035, 1041, 1057: `NON_FOOD_TYPES.has(...)` → `type !== "food"` checks
+- Line 1315: `SUPPLEMENT_PRODUCT_TYPES.has(...)` → check `type === "treat"` → "Rate this treat", `type === "supplement"` → "Rate this supplement"
+- Line 1328: `SUPPLEMENT_PRODUCT_TYPES.has(...)` → `backfillProduct?.product.type !== "food"`
 
 ### `src/components/food-score-card.tsx`
-- Badge: show when `productType !== "food"` (instead of checking set membership)
+- Component was refactored — no longer accepts `productType` prop. Current props: `brandName`, `productName`, `imageUrl`, `isCurrent`, `dateLabel`, `className`, `children`
+- If supplement badge is still needed, re-add `productType` prop and show badge when `productType !== "food"`
+- Otherwise, badge logic may need to live in the parent page instead
 
 ### `src/app/api/dogs/[id]/feeding/route.ts`
-- Add `format: products.format` to select (line ~35)
-- Include in response item mapping
+- Line 35: add `format: products.format` alongside existing `productType: products.type`
+- Line 77: include `format` in response item mapping
 
 ### `src/app/api/dogs/[id]/food-scorecard/route.ts`
-- Add `format: products.format` to select
-- Include in response
+- Line 167: add `format: products.format` alongside `productType: products.type`
+- Line 208: include `format` in response mapping
 
 ### `src/lib/routine.ts`
-- Add `format: products.format` to select
-- Include in mapped output
+- Line 32: add `format: products.format` alongside `productType: products.type`
+- Line 62: include `format` in mapped output
+
+### `src/components/routine-editor.tsx`
+- Line 67: passes `type: from.type` to `PlanItem` — may need to also pass `format`
+- Line 208: calls `getAvailableUnits(calContent, item.product.type)` — update to pass format as third arg
 
 ### `src/components/treat-logger.tsx` + `src/components/daily-checkin.tsx`
-- `productType="treat"` — unchanged, still valid
+- `productType="treat"` — unchanged, still valid (line 452 in daily-checkin)
 
 ## Phase 4: Scraper JSON + scraper code
 

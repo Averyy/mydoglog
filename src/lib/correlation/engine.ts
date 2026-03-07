@@ -357,7 +357,10 @@ export function buildDaySnapshots(
 
   for (const date of dates) {
     // Collect active feeding periods and their gram estimates
+    // Exclude probiotics — their ingredients are therapeutic, not nutritional,
+    // and at trace quantities their scores just mirror whatever food they're paired with.
     const activePeriods = getActiveFeedingPeriods(input.feedingPeriods, date)
+      .filter((fp) => input.productInfo.get(fp.productId)?.type !== "probiotic")
     const foodProductIds = new Set(activePeriods.map((fp) => fp.productId))
 
     const productGrams = new Map<string, number>()
@@ -367,8 +370,10 @@ export function buildDaySnapshots(
       productGrams.set(fp.productId, (productGrams.get(fp.productId) ?? 0) + grams)
     }
 
-    // Collect treat products for this date with gram estimates
-    const treatLogsForDate = input.treatLogs.filter((t) => t.date === date)
+    // Collect treat products for this date with gram estimates (exclude probiotics)
+    const treatLogsForDate = input.treatLogs.filter(
+      (t) => t.date === date && input.productInfo.get(t.productId)?.type !== "probiotic",
+    )
     const treatProductIds = new Set(treatLogsForDate.map((t) => t.productId))
     for (const t of treatLogsForDate) {
       const info = input.productInfo.get(t.productId)
@@ -820,15 +825,18 @@ export function buildBackfillSnapshots(
   const snapshots: DaySnapshot[] = []
 
   for (const backfill of input.backfills) {
+    // Skip probiotics — therapeutic ingredients, not nutritional
+    const info = input.productInfo.get(backfill.productId)
+    const productType = info?.type ?? "dry_food"
+    if (productType === "probiotic") continue
+
     const hasPoopData = !!backfill.scorecard?.poopQuality?.length
     const hasItchData = !!backfill.scorecard?.itchSeverity?.length
     const hasDigestiveImpact = backfill.scorecard?.digestiveImpact != null
     const hasItchImpact = backfill.scorecard?.itchinessImpact != null
     if (!hasPoopData && !hasItchData && !hasDigestiveImpact && !hasItchImpact) continue
 
-    const info = input.productInfo.get(backfill.productId)
     const productGrams = estimateGrams(backfill.quantity, backfill.quantityUnit, info?.calorieContent ?? null)
-    const productType = info?.type ?? "dry_food"
 
     const backfillGrams = new Map([[backfill.productId, productGrams]])
 

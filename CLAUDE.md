@@ -23,6 +23,8 @@ Dog food + digestive health tracking app. Next.js monolith (TypeScript, React, B
 - All log tables have `date` (required) + `datetime` (nullable). 1 entry/day = daily summary, 2+ = individual events.
 - Only the scraper creates Ingredient records — never from user input.
 - Poop uses Purina 1-7 fecal scoring everywhere (PoopLog AND FoodScorecard). Score 2 = ideal.
+- **Supplements/toppers are small quantities** (~25-30g/meal). Their scorecard scores are essentially weighted averages of the primary foods they're paired with, not independent signals. Interpret topper scores as "present during" not "caused by."
+- **Probiotics are excluded from ingredient correlation** — their ingredients are therapeutic (bacterial strains), not nutritional triggers. At trace quantities their scores just mirror paired foods. Products with `type = "probiotic"` are skipped in the correlation engine.
 - **Responsive containers** — shadcn Drawer (slide-up) on mobile, Dialog (modal) on desktop. Same content component shared between both.
 - **Routine template** pre-fills daily log. Inactive days use the template as the implicit record for correlation.
 
