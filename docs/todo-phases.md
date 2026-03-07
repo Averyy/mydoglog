@@ -4,60 +4,25 @@ Living checklist. Update as work progresses.
 
 ---
 
-## Phase 0: Data Prep ✅
+## Phases 0–3 ✅ (Complete)
 
-- [x] Scraping — 1,260 products across 16 brands (see `dog-food-brands-canada.md`)
-- [x] `manual_products.json` — 6 whole foods (chicken, rice, carrots, broccoli, banana, blueberries)
-- [x] `ingredient_families.json` — AAFCO family/alias mappings (see `dog-food-ingredients.md`)
-
-## Phase 1: Foundation + Data Loading ✅
-
-- [x] Next.js scaffold (TypeScript, app router)
-- [x] Drizzle schema + migrations (all tables — products, users, dogs, logs)
-- [x] `build.py` — load brand JSONs + manual_products.json → PostgreSQL (ingredient parsing, normalization, upsert)
-- [x] `validate.py` — diff loaded products against myvetstore ground truth (`docs/myvetstore-products.md`)
-- [x] Better Auth (email/password, sessions in PostgreSQL)
-- [x] Dog CRUD (API + UI)
-- [x] Product search/browse API (read-only, filters by type/channel/brand)
-- [x] Photo upload infrastructure
-
-## Phase 2: Core Loop ✅
-
-- [x] Responsive logging container (Drawer on mobile, Dialog on desktop — shared content component)
-- [x] Product search/picker component (typeahead, used by routine editor + treat logger + food scorecard)
-- [x] Routine template management (food + supplements + medications)
-- [x] Daily Check-in form (Routine + Stool + Itchiness + Treats sections, pre-filled from routine template)
-- [x] Quick Poop flow (3-second: score + save, auto-timestamp)
-- [x] Quick Treat flow (3-second: product + save, auto-timestamp)
-- [x] Bottom nav `+` button → entry selector (Daily Check-in / Poop / Treat)
-- [x] Food Scorecard page (scored / needs scoring sections, backfill modal, log stats per period)
-- [x] Dashboard (active routine summary, entry points, dog switcher)
-- [ ] Pollen collection (cron endpoint, Ambee API — deferred, no urgency)
-
-## Phase 3: Analysis
-
-See implementation plans:
-- **Part 1 — Data Collection + Analysis Engine:** `docs/plan-correlation-part1.md`
-  - Correlation types, pure engine functions, DB query layer, tests
-  - Zero UI changes — purely the computation layer
-- **Part 2 — Displaying Correlation Data:** `docs/plan-correlation-part2.md`
-  - Correlation API endpoint + results page (problem/tolerated/inconclusive)
-  - Food scorecard improvements (ingredient tags, transition buffer, confidence badges)
-  - Nav integration (Insights tab)
-  - Minimal UI to verify engine output before investing in richer visualizations
+- **Phase 0 — Data Prep:** 1,260 products scraped across 16 brands, manual whole foods, AAFCO ingredient family mappings
+- **Phase 1 — Foundation:** Next.js + Drizzle + PostgreSQL, build.py product loader, Better Auth, dog CRUD, product search API
+- **Phase 2 — Core Loop:** Daily check-in / quick poop / quick treat flows, routine templates, food scorecard, dashboard, responsive drawer/dialog pattern
+- **Phase 3 — Analysis:** Correlation engine (ingredient-level, two-track skin/GI), correlation results page, food scorecard improvements, Insights tab
 
 ## Phase 4: Extended Logging + Visualization
 
-APIs for vomit/symptom/medication/exposure logging already exist. Remaining:
-
+- [ ] Pollen + weather collection — cron endpoint, daily high/low temp + pollen index stored per location
+- [ ] Season tracking — define seasons by temperature transitions + regional calendar (e.g. spring = sustained temps above X after winter lows, snowmelt window, fall = first sustained drop). Seasons are a confounder label on the timeline, not just calendar quarters. Key transitions: winter→spring (snowmelt, mold spike, pollen start), spring→summer, summer→fall, fall→winter. Consider latitude-aware thresholds (St. Catharines ≠ Calgary)
 - [ ] Medication tracking UI — structured catalog (52 meds, see `todo-medications.md`), medication picker in routine editor, free-text fallback for unlisted meds
 - [ ] Extend poop log with mucus/blood toggles (optional, high clinical signal — mucus = large bowel inflammation, blood = location indicator)
 - [ ] Dashboard timeline — unified view combining:
-  - **Time-series graph** (top): poop scores as dots (semantic colors), itch scores, temperature + pollen as background overlays
+  - **Time-series graph** (top): poop scores as dots (semantic colors), itch scores, temperature + pollen as background overlays, season bands as background shading
   - **Gantt-style bars** (bottom): food periods, medication periods, supplement periods as horizontal bars showing what was active when
-  - Read together vertically — correlate score changes with food/med/environment transitions
+  - Read together vertically — correlate score changes with food/med/environment/season transitions
 - [ ] LLM export (structured text dump for Claude, "Export for LLM" button on correlations page)
-- [ ] Extend correlation engine: medication on/off comparison (medication is the #1 confounding variable)
+- [ ] Extend correlation engine: medication on/off comparison, season-aware itch discounting (medication is the #1 confounding variable, season is #2 for itch)
 
 ### Skipped (not worth the complexity)
 

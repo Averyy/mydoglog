@@ -2,7 +2,7 @@
 
 Scrapes Canadian dog food product data from manufacturer websites into structured JSON.
 
-For brand-specific technical details (CSS selectors, URL patterns, parsing quirks), see `docs/dog-food-brands-canada.md`.
+For brand-specific technical details (CSS selectors, URL patterns, parsing quirks), see `docs/ref-dog-food-canada.md`.
 
 ## Setup
 
@@ -117,7 +117,7 @@ Product fields (see `scrapers/common.py` for TypedDicts):
 2. Register it in `scrapers/__init__.py`
 3. Add tests in `tests/test_{brand}.py` (focus on parsing logic, not integration)
 4. Follow existing patterns: use `wafer.SyncSession` for HTTP, `common.Product` TypedDict for output, `write_brand_json()` for file output
-5. Update `docs/dog-food-brands-canada.md` with brand details
+5. Update `docs/ref-dog-food-canada.md` with brand details
 
 ## Known Data Gaps
 

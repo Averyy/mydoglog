@@ -153,7 +153,7 @@ export default function FeedingPage() {
             Plan history
           </h2>
           <div className="space-y-2">
-            {planHistory.map((group) => {
+            {[...planHistory].sort((a, b) => (b.endDate ?? "9999-12-31").localeCompare(a.endDate ?? "9999-12-31")).map((group) => {
               const verdict = formatVerdict(group.scorecard?.verdict ?? null)
               return (
                 <Card key={group.planGroupId} className="py-0">
@@ -161,15 +161,15 @@ export default function FeedingPage() {
                     <div className="flex items-start justify-between gap-3">
                       <div className="min-w-0">
                         <p className="text-sm font-medium">
-                          {group.isBackfill && group.approximateDuration
-                            ? `~${formatApproximateDuration(group.approximateDuration)}`
-                            : <>
-                                {format(parseISO(group.startDate), "MMM d, yyyy")}
-                                {group.endDate
-                                  ? ` — ${format(parseISO(group.endDate), "MMM d, yyyy")}`
-                                  : " — Ongoing"}
-                              </>
-                          }
+                          {format(parseISO(group.startDate), "MMM d, yyyy")}
+                          {group.endDate
+                            ? ` — ${format(parseISO(group.endDate), "MMM d, yyyy")}`
+                            : " — Ongoing"}
+                          {group.isBackfill && group.approximateDuration && (
+                            <span className="text-muted-foreground font-normal">
+                              {" "}({formatApproximateDuration(group.approximateDuration)})
+                            </span>
+                          )}
                         </p>
                       </div>
                       <div className="flex items-center gap-2 shrink-0">
@@ -178,7 +178,7 @@ export default function FeedingPage() {
                             Backfill
                           </Badge>
                         )}
-                        {group.scorecard && (
+                        {group.scorecard?.verdict && (
                           <span className={`text-xs font-medium ${verdict.className}`}>
                             {verdict.label}
                           </span>

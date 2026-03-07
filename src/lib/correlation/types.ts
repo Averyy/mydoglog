@@ -62,6 +62,7 @@ export interface ProductIngredientRecord {
 export interface ActiveIngredient {
   key: string
   ingredientIds: string[]
+  productIds: string[]
   bestPosition: number
   worstPosition: number
   ingredientCount: number
@@ -121,6 +122,7 @@ export interface IngredientScore {
   daysWithBackfill: number
   isAllergenicallyRelevant: boolean
   isSplit: boolean
+  distinctProductCount: number
   crossReactivityGroup?: string
   crossReactivityWarning?: string
 }
@@ -131,6 +133,7 @@ export interface IngredientProductEntry {
   brandName: string
   position: number
   positionCategory: PositionCategory
+  productType: string
 }
 
 export interface CorrelationOptions {
@@ -153,6 +156,7 @@ export interface CorrelationResult {
   windowEnd: string
   totalDays: number
   scoreableDays: number
+  totalDistinctProducts: number
   scores: IngredientScore[]
   options: CorrelationOptions
 }

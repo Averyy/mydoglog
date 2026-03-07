@@ -381,6 +381,7 @@ export async function fetchIngredientProductMap(
       id: products.id,
       name: products.name,
       brandName: brands.name,
+      type: products.type,
     })
     .from(products)
     .innerJoin(brands, eq(products.brandId, brands.id))
@@ -392,7 +393,7 @@ export async function fetchIngredientProductMap(
     )
 
   const productLookup = new Map(
-    productRows.map((r) => [r.id, { name: r.name, brandName: r.brandName }]),
+    productRows.map((r) => [r.id, { name: r.name, brandName: r.brandName, type: r.type }]),
   )
 
   // Build ingredient key → product entries
@@ -415,6 +416,7 @@ export async function fetchIngredientProductMap(
           brandName: product.brandName,
           position: pi.position,
           positionCategory: positionCategory(pi.position),
+          productType: product.type ?? "dry_food",
         })
       }
       result.set(key, entries)

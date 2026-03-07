@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { Home, List, Plus, Star, Utensils } from "lucide-react"
+import { Home, Plus, Settings, Star, Utensils } from "lucide-react"
 import { cn, isNavActive } from "@/lib/utils"
 import { useActiveDog } from "@/components/active-dog-provider"
 import { toast } from "sonner"
@@ -17,16 +17,16 @@ interface NavItem {
 
 const NAV_LINKS: NavItem[] = [
   { label: "Home", icon: Home, href: "/" },
-  { label: "Dogs", icon: List, href: "/dogs" },
-  { label: "Log", icon: Plus, prominent: true },
   { label: "Routine", icon: Utensils, dogHref: (id) => `/dogs/${id}/feeding` },
+  { label: "Log", icon: Plus, prominent: true },
   { label: "Scorecard", icon: Star, dogHref: (id) => `/dogs/${id}/food-scorecard` },
+  { label: "Settings", icon: Settings, href: "/settings" },
 ]
 
 function resolveHref(link: NavItem, activeDogId: string | null): string {
   if (link.href) return link.href
   if (link.dogHref && activeDogId) return link.dogHref(activeDogId)
-  return "/dogs"
+  return "/settings"
 }
 
 export function DesktopNavLinks(): React.ReactElement {
@@ -37,6 +37,7 @@ export function DesktopNavLinks(): React.ReactElement {
     <nav className="flex items-center gap-6 text-sm text-text-secondary">
       {NAV_LINKS.filter((link) => !link.prominent).map((link) => {
         const href = resolveHref(link, activeDogId)
+        const isSettings = link.label === "Settings"
         return (
           <Link
             key={link.label}
@@ -46,7 +47,7 @@ export function DesktopNavLinks(): React.ReactElement {
               isNavActive(href, pathname) && "text-text-primary font-medium",
             )}
           >
-            {link.label}
+            {isSettings ? <Settings className="size-5" strokeWidth={1.5} /> : link.label}
           </Link>
         )
       })}

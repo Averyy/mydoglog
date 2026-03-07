@@ -735,6 +735,7 @@ describe("computeIngredientScores", () => {
   const chickenActive: ActiveIngredient = {
     key: "chicken",
     ingredientIds: ["ing-1"],
+    productIds: ["prod-a"],
     bestPosition: 1,
     worstPosition: 1,
     ingredientCount: 1,
@@ -822,6 +823,7 @@ describe("computeIngredientScores", () => {
     const riceActive: ActiveIngredient = {
       key: "rice",
       ingredientIds: ["ing-2"],
+      productIds: ["prod-a"],
       bestPosition: 2,
       worstPosition: 2,
       ingredientCount: 1,
@@ -932,6 +934,7 @@ describe("computeIngredientScores", () => {
     const fatActive: ActiveIngredient = {
       key: "chicken (fat)",
       ingredientIds: ["ing-fat"],
+      productIds: ["prod-a"],
       bestPosition: 5,
       worstPosition: 5,
       ingredientCount: 1,
@@ -985,6 +988,7 @@ describe("asymmetric scoring", () => {
   const chickenActive: ActiveIngredient = {
     key: "chicken",
     ingredientIds: ["ing-1"],
+    productIds: ["prod-a"],
     bestPosition: 1,
     worstPosition: 1,
     ingredientCount: 1,
@@ -1106,6 +1110,7 @@ describe("position weighting integration", () => {
     const pos1: ActiveIngredient = {
       key: "chicken",
       ingredientIds: ["ing-1"],
+      productIds: ["prod-a"],
       bestPosition: 1,
       worstPosition: 1,
       ingredientCount: 1,
@@ -1115,6 +1120,7 @@ describe("position weighting integration", () => {
     const pos15: ActiveIngredient = {
       key: "carrot",
       ingredientIds: ["ing-2"],
+      productIds: ["prod-a"],
       bestPosition: 15,
       worstPosition: 15,
       ingredientCount: 1,
@@ -1299,6 +1305,7 @@ describe("legume splitting detection", () => {
     const peaActive: ActiveIngredient = {
       key: "pea",
       ingredientIds: ["pea-1", "pea-2", "pea-3"],
+      productIds: ["prod-a"],
       bestPosition: 3,
       worstPosition: 12,
       ingredientCount: 3,
@@ -1322,6 +1329,7 @@ describe("legume splitting detection", () => {
     const peaActive: ActiveIngredient = {
       key: "pea",
       ingredientIds: ["pea-1", "pea-2"],
+      productIds: ["prod-a"],
       bestPosition: 3,
       worstPosition: 8,
       ingredientCount: 2,
@@ -1345,6 +1353,7 @@ describe("legume splitting detection", () => {
     const chickenActive: ActiveIngredient = {
       key: "chicken",
       ingredientIds: ["ch-1", "ch-2", "ch-3"],
+      productIds: ["prod-a"],
       bestPosition: 1,
       worstPosition: 10,
       ingredientCount: 3,
@@ -1362,6 +1371,121 @@ describe("legume splitting detection", () => {
 
     const scores = computeIngredientScores(snapshots, opts)
     expect(scores[0].isSplit).toBe(false)
+  })
+})
+
+// ---------------------------------------------------------------------------
+// Distinct product count (confounding detection)
+// ---------------------------------------------------------------------------
+
+describe("distinct product count", () => {
+  const opts = DEFAULT_CORRELATION_OPTIONS
+
+  it("single product gives distinctProductCount 1 for all ingredients", () => {
+    const chickenActive: ActiveIngredient = {
+      key: "chicken",
+      ingredientIds: ["ing-1"],
+      productIds: ["prod-a"],
+      bestPosition: 1,
+      worstPosition: 1,
+      ingredientCount: 1,
+      fromTreat: false,
+      formType: null,
+      sourceGroup: null,
+    }
+    const potatoActive: ActiveIngredient = {
+      key: "potato",
+      ingredientIds: ["ing-2"],
+      productIds: ["prod-a"],
+      bestPosition: 5,
+      worstPosition: 5,
+      ingredientCount: 1,
+      fromTreat: false,
+      formType: null,
+      sourceGroup: null,
+    }
+
+    const snapshots: DaySnapshot[] = [
+      makeSnapshot({
+        date: "2024-06-01",
+        ingredients: [chickenActive, potatoActive],
+        outcome: { ...emptyOutcome, poopScore: 6 },
+      }),
+    ]
+    const scores = computeIngredientScores(snapshots, opts)
+    expect(scores.find((s) => s.key === "chicken")!.distinctProductCount).toBe(1)
+    expect(scores.find((s) => s.key === "potato")!.distinctProductCount).toBe(1)
+  })
+
+  it("multi-product ingredient gets distinctProductCount > 1", () => {
+    const chickenA: ActiveIngredient = {
+      key: "chicken",
+      ingredientIds: ["ing-1"],
+      productIds: ["prod-a"],
+      bestPosition: 1,
+      worstPosition: 1,
+      ingredientCount: 1,
+      fromTreat: false,
+      formType: null,
+      sourceGroup: null,
+    }
+    const chickenB: ActiveIngredient = {
+      key: "chicken",
+      ingredientIds: ["ing-1"],
+      productIds: ["prod-b"],
+      bestPosition: 1,
+      worstPosition: 1,
+      ingredientCount: 1,
+      fromTreat: false,
+      formType: null,
+      sourceGroup: null,
+    }
+
+    const snapshots: DaySnapshot[] = [
+      makeSnapshot({
+        date: "2024-06-01",
+        ingredients: [chickenA],
+        outcome: { ...emptyOutcome, poopScore: 3 },
+      }),
+      makeSnapshot({
+        date: "2024-06-02",
+        ingredients: [chickenB],
+        outcome: { ...emptyOutcome, poopScore: 4 },
+      }),
+    ]
+    const scores = computeIngredientScores(snapshots, opts)
+    expect(scores.find((s) => s.key === "chicken")!.distinctProductCount).toBe(2)
+  })
+
+  it("runCorrelation sets totalDistinctProducts from scored snapshots", () => {
+    const chickenIng = makeIngredient({ id: "ing-chicken", family: "chicken" })
+    const riceIng = makeIngredient({ id: "ing-rice", normalizedName: "rice", family: "rice", sourceGroup: "grain" })
+
+    const input = makeInput({
+      windowStart: "2024-06-01",
+      windowEnd: "2024-06-01",
+      productIngredientMap: new Map([
+        ["prod-a", makeProductIngredients("prod-a", [{ position: 1, ingredient: chickenIng }])],
+        ["prod-b", makeProductIngredients("prod-b", [{ position: 1, ingredient: riceIng }])],
+      ]),
+      backfills: [
+        {
+          planGroupId: "plan-a",
+          productId: "prod-a",
+          durationDays: 10,
+          scorecard: { planGroupId: "plan-a", poopQuality: [3], itchSeverity: null },
+        },
+        {
+          planGroupId: "plan-b",
+          productId: "prod-b",
+          durationDays: 10,
+          scorecard: { planGroupId: "plan-b", poopQuality: [4], itchSeverity: null },
+        },
+      ],
+    })
+
+    const result = runCorrelation(input, opts)
+    expect(result.totalDistinctProducts).toBe(2)
   })
 })
 

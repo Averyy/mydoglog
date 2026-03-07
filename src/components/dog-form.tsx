@@ -57,7 +57,7 @@ export function DogForm({ dog, onClose }: DogFormProps) {
       if (onClose) {
         onClose()
       } else {
-        router.push("/dogs")
+        router.push("/settings")
       }
       router.refresh()
     } catch {
@@ -137,7 +137,7 @@ export function DogForm({ dog, onClose }: DogFormProps) {
         <Button
           type="button"
           variant="outline"
-          onClick={() => onClose ? onClose() : router.push("/dogs")}
+          onClick={() => onClose ? onClose() : router.push("/settings")}
         >
           Cancel
         </Button>

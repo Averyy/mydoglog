@@ -24,6 +24,7 @@ import { ChevronDown, ChevronRight, Info, Pencil, Plus, Star } from "lucide-reac
 import type { FeedingPlanGroup, LogStats, ProductSummary, ScorecardSummary } from "@/lib/types"
 import type { CorrelationResult, IngredientScore, PositionCategory, IngredientProductEntry } from "@/lib/correlation/types"
 import { COMMON_SKIN_TRIGGERS } from "@/lib/ingredients"
+import { PRODUCT_TYPE_LABELS, SUPPLEMENT_PRODUCT_TYPES } from "@/lib/labels"
 import { cn } from "@/lib/utils"
 
 // ── Label maps for scorecard display ──
@@ -50,7 +51,7 @@ const POOP_SCORE_COLORS: Record<number, string> = {
 }
 
 const ITCH_SCORE_COLORS: Record<number, string> = {
-  1: "text-score-excellent", 2: "text-score-good",
+  0: "text-score-excellent", 1: "text-score-excellent", 2: "text-score-good",
   3: "text-score-fair", 4: "text-score-poor",
   5: "text-score-critical",
 }
@@ -299,10 +300,12 @@ function ambiguousHint(key: string): string | null {
 function IngredientRow({
   score,
   ingredientProducts,
+  totalDistinctProducts,
   signalMode = "both",
 }: {
   score: IngredientScore
   ingredientProducts?: IngredientProductEntry[]
+  totalDistinctProducts: number
   signalMode?: SignalMode
 }): React.ReactElement {
   const [expanded, setExpanded] = useState(false)
@@ -342,6 +345,11 @@ function IngredientRow({
               Warning
             </Badge>
           )}
+          {score.distinctProductCount === 1 && totalDistinctProducts > 1 && (
+            <Badge variant="outline" className="text-text-tertiary text-[10px] py-0">
+              1 food
+            </Badge>
+          )}
         </div>
         <div className="flex items-center gap-3 shrink-0">
           <span className="text-xs text-muted-foreground tabular-nums">
@@ -379,6 +387,16 @@ function IngredientRow({
               This ingredient appears split across 3+ positions in some products, suggesting higher total content than any single position implies
             </p>
           )}
+          {score.distinctProductCount === 1 && totalDistinctProducts > 1 && (
+            <p className="text-xs text-muted-foreground">
+              Only appeared in one food — score may reflect other ingredients in that food
+            </p>
+          )}
+          {totalDistinctProducts > 2 && score.distinctProductCount / totalDistinctProducts >= 0.75 && (
+            <p className="text-xs text-muted-foreground">
+              Present in {score.distinctProductCount} of {totalDistinctProducts} foods — limited contrast for scoring
+            </p>
+          )}
           {trigger && suspectItch && (
             <p className="text-xs text-muted-foreground">
               {capitalize(trigger.family)} is the #{COMMON_SKIN_TRIGGERS.indexOf(trigger) + 1} most common skin allergen in dogs ({trigger.percentage}% of cases)
@@ -391,7 +409,10 @@ function IngredientRow({
               <div className="space-y-0.5">
                 {ingredientProducts.map((entry) => (
                   <p key={entry.productId} className="text-xs text-muted-foreground">
-                    {entry.brandName} {entry.productName}{" "}
+                    {entry.brandName} {entry.productName}
+                    {SUPPLEMENT_PRODUCT_TYPES.has(entry.productType) && (
+                      <span className="text-text-tertiary"> · {PRODUCT_TYPE_LABELS[entry.productType] ?? entry.productType}</span>
+                    )}{" "}
                     <span className="text-text-tertiary">
                       (#{entry.position} — {POSITION_LABELS[entry.positionCategory].toLowerCase()})
                     </span>
@@ -745,6 +766,7 @@ function IngredientAnalysisSection({
               key={score.key}
               score={score}
               ingredientProducts={correlation.ingredientProducts?.[score.key]}
+              totalDistinctProducts={correlation.totalDistinctProducts}
               signalMode={signalMode}
             />
           ))}
@@ -773,6 +795,7 @@ function IngredientAnalysisSection({
                     key={score.key}
                     score={score}
                     ingredientProducts={correlation.ingredientProducts?.[score.key]}
+                    totalDistinctProducts={correlation.totalDistinctProducts}
                   />
                 ))}
               </div>
@@ -1101,12 +1124,20 @@ export default function FoodScorecardPage() {
     return d
   }, [])
 
-  const NON_FOOD_TYPES = new Set(["treat", "supplement", "probiotic"])
-  const SUPPLEMENT_TYPES = new Set(["supplement", "probiotic"])
+  const NON_FOOD_TYPES = new Set(["treat", "supplement", "probiotic", "topper"])
 
   function scorecardModeForGroup(group: FeedingPlanGroup | null): ScorecardFormMode {
     if (!group) return "food"
-    return group.items.every((item) => SUPPLEMENT_TYPES.has(item.type ?? "")) ? "supplement" : "food"
+    return group.items.every((item) => SUPPLEMENT_PRODUCT_TYPES.has(item.type ?? "")) ? "supplement" : "food"
+  }
+
+  function rateLabel(group: FeedingPlanGroup): string {
+    if (!group.items.every((item) => SUPPLEMENT_PRODUCT_TYPES.has(item.type ?? ""))) {
+      return "Rate this food"
+    }
+    const type = group.items[0]?.type
+    if (type === "treat") return "Rate this treat"
+    return "Rate this supplement"
   }
 
   const existingPeriods = useMemo(() => {
@@ -1201,9 +1232,10 @@ export default function FoodScorecardPage() {
               brandName={item.brandName}
               productName={item.productName}
               imageUrl={item.imageUrl}
+              productType={item.type}
               quantity={item.quantity}
               quantityUnit={item.quantityUnit}
-              className="basis-72 border-dashed"
+              className="min-w-0 basis-72 grow border-dashed"
             >
               <div className="flex flex-1 flex-col gap-3">
                 {data.active!.logStats && (
@@ -1235,9 +1267,10 @@ export default function FoodScorecardPage() {
                   brandName={item.brandName}
                   productName={item.productName}
                   imageUrl={item.imageUrl}
+                  productType={item.type}
                   quantity={item.quantity}
                   quantityUnit={item.quantityUnit}
-                  className="basis-72"
+                  className="min-w-0 basis-72 grow"
                 >
                   {group.scorecard ? (
                     <div className="space-y-3">
@@ -1296,7 +1329,7 @@ export default function FoodScorecardPage() {
                         className="w-full"
                       >
                         <Star className="size-4" />
-                        Rate this food
+                        {rateLabel(group)}
                       </Button>
                     </div>
                   )}
@@ -1316,8 +1349,8 @@ export default function FoodScorecardPage() {
       <ResponsiveModal
         open={scoreModalOpen}
         onOpenChange={setScoreModalOpen}
-        title={selectedGroup?.scorecard ? "Edit scorecard" : "Rate this food"}
-        description="How did this food work out?"
+        title={selectedGroup?.scorecard ? "Edit scorecard" : (selectedGroup ? rateLabel(selectedGroup) : "Rate this food")}
+        description="How did this work out?"
         size="lg"
       >
         <FoodScorecardForm
@@ -1336,10 +1369,11 @@ export default function FoodScorecardPage() {
         onOpenChange={setBackfillOpen}
         title={backfillStep === "product"
           ? (editingGroup ? "Edit feeding period" : "Add past food")
-          : "Rate this food"}
+          : backfillProduct?.product.type === "treat" ? "Rate this treat"
+          : SUPPLEMENT_PRODUCT_TYPES.has(backfillProduct?.product.type ?? "") ? "Rate this supplement" : "Rate this food"}
         description={backfillStep === "product"
           ? (editingGroup ? "Update the food or date range." : "Add a food your dog has eaten before.")
-          : "How did this food work out?"}
+          : "How did this work out?"}
         size="lg"
       >
         {backfillStep === "product" ? (
@@ -1390,7 +1424,7 @@ export default function FoodScorecardPage() {
                   disabled={!backfillProduct.startDate || !backfillProduct.endDate || backfillSaving}
                   className="mt-2 w-full"
                 >
-                  Next — {editingGroup ? "Edit scorecard" : "Rate this food"}
+                  Next — {editingGroup ? "Edit scorecard" : backfillProduct?.product.type === "treat" ? "Rate this treat" : SUPPLEMENT_PRODUCT_TYPES.has(backfillProduct?.product.type ?? "") ? "Rate this supplement" : "Rate this food"}
                 </Button>
               </>
             )}
@@ -1403,7 +1437,7 @@ export default function FoodScorecardPage() {
             initialData={editingGroup?.scorecard ?? undefined}
             hideSkip={!editingGroup}
             skipLabel="Cancel"
-            mode="backfill"
+            mode={SUPPLEMENT_PRODUCT_TYPES.has(backfillProduct?.product.type ?? "") ? "supplement" : "backfill"}
           />
         )}
       </ResponsiveModal>

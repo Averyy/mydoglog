@@ -30,6 +30,8 @@ four_times_daily, three_times_daily, twice_daily, daily, every_other_day, weekly
 ### Modify `medications` table (user log)
 - Add `medication_product_id` (optional FK -> medication_products.id)
 - Add `interval` (dosing_interval enum, nullable)
+- Add `digestive_impact` (impact enum: better / no_change / worse, nullable) — subjective assessment when stopping a medication
+- Add `itchiness_impact` (impact enum: better / no_change / worse, nullable) — same enum
 
 ---
 
@@ -193,3 +195,6 @@ Enhancements:
 - [ ] `yarn db:generate` + migration
 - [ ] Update `build.py` to load medications seed data
 - [ ] Update routine editor UI to use medication picker (with fallback to free-text for unlisted meds)
+- [ ] Add digestiveImpact + itchinessImpact columns to medications table (reuse existing impact enum)
+- [ ] Show impact assessment prompt when stopping a medication (setting endDate)
+- [ ] Display impact badges on medication cards in routine view

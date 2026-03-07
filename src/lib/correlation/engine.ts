@@ -142,7 +142,7 @@ function resolveIngredientsForProducts(
 ): ActiveIngredient[] {
   const keyMap = new Map<
     string,
-    { ingredientIds: Set<string>; bestPosition: number; worstPosition: number; ingredientCount: number; fromTreat: boolean; formType: string | null; sourceGroup: string | null }
+    { ingredientIds: Set<string>; productIds: Set<string>; bestPosition: number; worstPosition: number; ingredientCount: number; fromTreat: boolean; formType: string | null; sourceGroup: string | null }
   >()
 
   const processProduct = (productId: string, isTreat: boolean): void => {
@@ -156,6 +156,7 @@ function resolveIngredientsForProducts(
       const existing = keyMap.get(key)
       if (existing) {
         existing.ingredientIds.add(pi.ingredient.id)
+        existing.productIds.add(productId)
         existing.ingredientCount++
         if (pi.position < existing.bestPosition) {
           existing.bestPosition = pi.position
@@ -167,6 +168,7 @@ function resolveIngredientsForProducts(
       } else {
         keyMap.set(key, {
           ingredientIds: new Set([pi.ingredient.id]),
+          productIds: new Set([productId]),
           bestPosition: pi.position,
           worstPosition: pi.position,
           ingredientCount: 1,
@@ -188,6 +190,7 @@ function resolveIngredientsForProducts(
   return Array.from(keyMap.entries()).map(([key, data]) => ({
     key,
     ingredientIds: Array.from(data.ingredientIds),
+    productIds: Array.from(data.productIds),
     bestPosition: data.bestPosition,
     worstPosition: data.worstPosition,
     ingredientCount: data.ingredientCount,
@@ -386,6 +389,7 @@ interface IngredientAccumulator {
   formType: string | null
   sourceGroup: string | null
   isSplit: boolean
+  productIds: Set<string>
   daysWithEventLogs: number
   daysWithScorecardOnly: number
   daysWithBackfill: number
@@ -465,6 +469,7 @@ export function computeIngredientScores(
           formType: ing.formType,
           sourceGroup: ing.sourceGroup,
           isSplit: false,
+          productIds: new Set<string>(),
           daysWithEventLogs: 0,
           daysWithScorecardOnly: 0,
           daysWithBackfill: 0,
@@ -484,6 +489,9 @@ export function computeIngredientScores(
       }
 
       acc.dayCount++
+      for (const pid of ing.productIds) {
+        acc.productIds.add(pid)
+      }
       if (ing.bestPosition < acc.bestPosition) {
         acc.bestPosition = ing.bestPosition
       }
@@ -586,6 +594,7 @@ export function computeIngredientScores(
       daysWithBackfill: acc.daysWithBackfill,
       isAllergenicallyRelevant: !isNonAllergenicForm(acc.formType) && acc.sourceGroup !== "additive",
       isSplit: acc.isSplit,
+      distinctProductCount: acc.productIds.size,
     })
   }
 
@@ -787,26 +796,31 @@ export function runCorrelation(
   let scores = computeIngredientScores(allSnapshots, options)
   scores = flagCrossReactivity(scores, input.crossReactivityGroups)
 
-  // Count scoreable days (same filtering as computeIngredientScores)
-  const scoreableDays = allSnapshots.filter((snap) => {
-    if (snap.isTransitionBuffer || snap.isExposureBuffer) return false
+  // Count scoreable days and collect distinct product IDs
+  const allProductIds = new Set<string>()
+  let scoreableDays = 0
+  for (const snap of allSnapshots) {
+    if (snap.isTransitionBuffer || snap.isExposureBuffer) continue
     if (
       options.excludeMedicationPeriods &&
       (snap.outcome.onItchinessMedication || snap.outcome.onDigestiveMedication)
     ) {
-      return false
+      continue
     }
-    if (snap.outcome.poopScore != null) return true
-    if (snap.outcome.itchScore != null) return true
-    if (snap.outcome.vomitCount > 0) return true
-    if (
-      options.includeScorecardFallback &&
-      snap.outcome.scorecardPoopFallback != null
-    ) {
-      return true
+    const isScoreable =
+      snap.outcome.poopScore != null ||
+      snap.outcome.itchScore != null ||
+      snap.outcome.vomitCount > 0 ||
+      (options.includeScorecardFallback && snap.outcome.scorecardPoopFallback != null)
+    if (isScoreable) {
+      scoreableDays++
+      for (const ing of snap.ingredients) {
+        for (const pid of ing.productIds) {
+          allProductIds.add(pid)
+        }
+      }
     }
-    return false
-  }).length
+  }
 
   return {
     dogId: input.dogId,
@@ -814,6 +828,7 @@ export function runCorrelation(
     windowEnd: input.windowEnd,
     totalDays: daySnapshots.length,
     scoreableDays,
+    totalDistinctProducts: allProductIds.size,
     scores,
     options,
   }

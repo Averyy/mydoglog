@@ -10,6 +10,9 @@ export const PRODUCT_TYPE_LABELS: Record<string, string> = {
   whole_food: "Whole food",
 }
 
+/** Product types that are supplements/toppers (not primary food). */
+export const SUPPLEMENT_PRODUCT_TYPES = new Set(["supplement", "probiotic", "topper", "treat"])
+
 /** Human-readable labels for medication reason enum values. */
 export const MEDICATION_REASON_LABELS: Record<string, string> = {
   itchiness: "Itchiness",
