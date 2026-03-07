@@ -302,8 +302,8 @@ export function RoutineEditorContent({
           mode: "starting_today",
           items: validPlanItems.map((item) => ({
             productId: item.product!.id,
-            quantity: item.quantity || undefined,
-            quantityUnit: item.quantity ? item.quantityUnit : undefined,
+            quantity: item.quantity || "1",
+            quantityUnit: item.quantityUnit,
           })),
         }
 

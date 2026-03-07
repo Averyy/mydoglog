@@ -77,8 +77,8 @@ interface TreatPostBody {
   productId: string
   date: string
   datetime?: string
-  quantity?: string
-  quantityUnit?: string
+  quantity: string
+  quantityUnit: string
   notes?: string
 }
 
@@ -100,6 +100,13 @@ export async function POST(
       )
     }
 
+    if (!body.quantity || !body.quantityUnit) {
+      return NextResponse.json(
+        { error: "quantity and quantityUnit are required" },
+        { status: 400 },
+      )
+    }
+
     const [created] = await db
       .insert(treatLogs)
       .values({
@@ -107,7 +114,7 @@ export async function POST(
         productId: body.productId,
         date: body.date,
         datetime: body.datetime ? new Date(body.datetime) : null,
-        quantity: body.quantity ?? null,
+        quantity: body.quantity,
         quantityUnit: body.quantityUnit as
           | "can"
           | "cup"
@@ -117,7 +124,7 @@ export async function POST(
           | "tbsp"
           | "tsp"
           | "ml"
-          | undefined,
+          | "treat",
         notes: body.notes?.trim() ?? null,
       })
       .returning()

@@ -90,6 +90,8 @@ export function TreatLoggerContent({
         productId: recent.productId,
         date: format(now, "yyyy-MM-dd"),
         datetime: now.toISOString(),
+        quantity: "1",
+        quantityUnit: "piece",
       }
 
       const res = await fetch(`/api/dogs/${dogId}/treats`, {
@@ -127,8 +129,8 @@ export function TreatLoggerContent({
         productId: product.id,
         date,
         datetime,
-        quantity: quantity || undefined,
-        quantityUnit: quantity ? quantityUnit : undefined,
+        quantity: quantity || "1",
+        quantityUnit,
       }
 
       const res = await fetch(`/api/dogs/${dogId}/treats`, {

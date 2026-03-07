@@ -7,19 +7,15 @@ type RouteParams = { params: Promise<{ id: string }> }
 
 interface BackfillItem {
   productId: string
-  quantity?: string
-  quantityUnit?: string
+  quantity: string
+  quantityUnit: string
 }
 
 interface ScorecardInput {
   poopQuality?: number | number[] | null
   itchSeverity?: number | number[] | null
-  vomiting?: string | null
-  palatability?: string | null
   digestiveImpact?: string | null
   itchinessImpact?: string | null
-  verdict?: string | null
-  primaryReason?: string | null
   notes?: string | null
 }
 
@@ -54,6 +50,15 @@ export async function POST(
       )
     }
 
+    for (const item of body.items) {
+      if (!item.quantity || !item.quantityUnit) {
+        return NextResponse.json(
+          { error: "quantity and quantityUnit are required for each item" },
+          { status: 400 },
+        )
+      }
+    }
+
     if (!isValidDate(body.startDate) || !isValidDate(body.endDate)) {
       return NextResponse.json(
         { error: "Invalid date format (expected YYYY-MM-DD)" },
@@ -83,7 +88,7 @@ export async function POST(
       planName: body.planName ?? null,
       isBackfill: true,
       approximateDuration,
-      quantity: item.quantity ?? null,
+      quantity: item.quantity,
       quantityUnit: item.quantityUnit as
         | "can"
         | "cup"
@@ -93,7 +98,7 @@ export async function POST(
         | "tbsp"
         | "tsp"
         | "ml"
-        | undefined,
+        | "treat",
     }))
 
     const created = await db.insert(feedingPeriods).values(rows).returning()
@@ -112,22 +117,12 @@ export async function POST(
             ? body.scorecard.itchSeverity
             : [body.scorecard.itchSeverity])
           : null,
-        vomiting:
-          body.scorecard.vomiting as typeof foodScorecards.$inferInsert.vomiting,
-        palatability:
-          body.scorecard
-            .palatability as typeof foodScorecards.$inferInsert.palatability,
         digestiveImpact:
           body.scorecard
             .digestiveImpact as typeof foodScorecards.$inferInsert.digestiveImpact,
         itchinessImpact:
           body.scorecard
             .itchinessImpact as typeof foodScorecards.$inferInsert.itchinessImpact,
-        verdict:
-          body.scorecard.verdict as typeof foodScorecards.$inferInsert.verdict,
-        primaryReason:
-          body.scorecard
-            .primaryReason as typeof foodScorecards.$inferInsert.primaryReason,
         notes: body.scorecard.notes ?? null,
       })
     }

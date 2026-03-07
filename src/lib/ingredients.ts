@@ -44,8 +44,13 @@ export function findSaltPosition(rawIngredientString: string): number | null {
 
   const items = splitIngredients(rawIngredientString)
   for (let i = 0; i < items.length; i++) {
-    const normalized = items[i].toLowerCase().trim()
-    if (normalized === "salt" || normalized === "salt." || normalized === "sea salt") {
+    const normalized = items[i].toLowerCase().trim().replace(/\.$/, "")
+    if (
+      normalized === "salt" ||
+      normalized === "sea salt" ||
+      normalized === "iodized salt" ||
+      normalized === "sodium chloride"
+    ) {
       return i + 1
     }
   }

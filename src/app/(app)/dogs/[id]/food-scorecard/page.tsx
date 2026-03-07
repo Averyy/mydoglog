@@ -6,9 +6,18 @@ import { useActiveDog } from "@/components/active-dog-provider"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
+import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import { Separator } from "@/components/ui/separator"
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select"
 import { FoodScoreCard } from "@/components/food-score-card"
+import { ScoreGrid, poopScoreColor, itchScoreColor } from "@/components/score-grid"
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
 import { ProductPicker } from "@/components/product-picker"
 import { ResponsiveModal } from "@/components/responsive-modal"
 import {
@@ -17,203 +26,31 @@ import {
   type ScorecardFormMode,
 } from "@/components/food-scorecard-form"
 import { DateRangePicker } from "@/components/date-range-picker"
-import { durationFromRange } from "@/lib/feeding"
-import { eachDayOfInterval, format, parseISO } from "date-fns"
+import { differenceInDays, eachDayOfInterval, format, parseISO } from "date-fns"
 import { toast } from "sonner"
-import { ChevronDown, ChevronRight, Info, Pencil, Plus, Star } from "lucide-react"
-import type { FeedingPlanGroup, LogStats, ProductSummary, ScorecardSummary } from "@/lib/types"
+import { ChevronDown, ChevronRight, ExternalLink, Info, Pencil, Plus } from "lucide-react"
+import type { FeedingPlanGroup, ProductSummary } from "@/lib/types"
 import type { CorrelationResult, IngredientScore, PositionCategory, IngredientProductEntry } from "@/lib/correlation/types"
 import { COMMON_SKIN_TRIGGERS } from "@/lib/ingredients"
-import { PRODUCT_TYPE_LABELS, SUPPLEMENT_PRODUCT_TYPES } from "@/lib/labels"
+import { PRODUCT_TYPE_LABELS, SUPPLEMENT_PRODUCT_TYPES, QUANTITY_UNIT_OPTIONS } from "@/lib/labels"
+import { getAvailableUnits } from "@/lib/nutrition"
 import { cn } from "@/lib/utils"
 
-// ── Label maps for scorecard display ──
-
-const VOMITING_LABELS: Record<string, string> = {
-  none: "None", occasional: "Occasional", frequent: "Frequent",
-}
-const PALATABILITY_LABELS: Record<string, string> = {
-  loved: "Loved", ate: "Ate", reluctant: "Reluctant", refused: "Refused",
-}
-const ITCHINESS_IMPACT_LABELS: Record<string, string> = {
-  better: "Better", no_change: "No change", worse: "Worse",
-}
-const POOP_LABELS: Record<number, string> = {
-  1: "Hard pellets", 2: "Ideal", 3: "Soft", 4: "Soggy",
-  5: "Soft piles", 6: "No shape", 7: "Liquid",
-}
-
-const POOP_SCORE_COLORS: Record<number, string> = {
-  1: "text-score-excellent", 2: "text-score-excellent",
-  3: "text-score-good", 4: "text-score-fair",
-  5: "text-score-fair", 6: "text-score-poor",
-  7: "text-score-critical",
-}
-
-const ITCH_SCORE_COLORS: Record<number, string> = {
-  0: "text-score-excellent", 1: "text-score-excellent", 2: "text-score-good",
-  3: "text-score-fair", 4: "text-score-poor",
-  5: "text-score-critical",
-}
-
-function poopScoreColor(avg: number): string {
-  return POOP_SCORE_COLORS[Math.round(avg)] ?? "text-foreground"
-}
-
-function formatPoopQualityRange(scores: number[] | null): string | null {
-  if (!scores || scores.length === 0) return null
-  if (scores.length === 1) {
-    return `${scores[0]} \u2014 ${POOP_LABELS[scores[0]] ?? ""}`
-  }
-  const first = scores[0]
-  const last = scores[scores.length - 1]
-  return `${first}\u2013${last} \u00b7 ${POOP_LABELS[first] ?? ""} to ${POOP_LABELS[last] ?? ""}`
-}
-
-const ITCH_LABELS: Record<number, string> = {
-  0: "None", 1: "Very mild", 2: "Mild", 3: "Moderate",
-  4: "Severe", 5: "Extreme",
-}
-
-function formatItchSeverityRange(scores: number[] | null): string | null {
-  if (!scores || scores.length === 0) return null
-  if (scores.length === 1) {
-    return `${scores[0]} \u2014 ${ITCH_LABELS[scores[0]] ?? ""}`
-  }
-  const first = scores[0]
-  const last = scores[scores.length - 1]
-  return `${first}\u2013${last} \u00b7 ${ITCH_LABELS[first] ?? ""} to ${ITCH_LABELS[last] ?? ""}`
-}
-
-function itchScoreColor(avg: number): string {
-  return ITCH_SCORE_COLORS[Math.round(avg)] ?? "text-foreground"
-}
-
-// ── Log stats display (computed from actual daily logs) ──
-
-function LogStatsDisplay({ stats }: { stats: LogStats }): React.ReactElement {
-  const hasAnyData = stats.daysWithData > 0
-
-  if (!hasAnyData) {
-    return (
-      <p className="text-xs text-muted-foreground">No daily logs during this period</p>
-    )
-  }
-
-  return (
-    <div className="flex flex-wrap gap-x-5 gap-y-1.5">
-      {stats.avgPoopScore != null && (
-        <div className="flex items-baseline gap-1.5">
-          <span className={`text-lg font-bold tabular-nums ${poopScoreColor(stats.avgPoopScore)}`}>
-            {stats.avgPoopScore}
-          </span>
-          <span className="text-xs text-muted-foreground">
-            avg stool <span className="text-text-tertiary">({stats.poopLogCount} {stats.poopLogCount === 1 ? "log" : "logs"})</span>
-          </span>
-        </div>
-      )}
-      {stats.avgItchScore != null && (
-        <div className="flex items-baseline gap-1.5">
-          <span className={`text-lg font-bold tabular-nums ${itchScoreColor(stats.avgItchScore)}`}>
-            {stats.avgItchScore}
-          </span>
-          <span className="text-xs text-muted-foreground">
-            avg itch <span className="text-text-tertiary">({stats.itchLogCount} {stats.itchLogCount === 1 ? "log" : "logs"})</span>
-          </span>
-        </div>
-      )}
-      {stats.vomitLogCount > 0 && (
-        <div className="flex items-baseline gap-1.5">
-          <span className="text-lg font-bold tabular-nums text-score-critical">
-            {stats.vomitLogCount}
-          </span>
-          <span className="text-xs text-muted-foreground">
-            {stats.vomitLogCount === 1 ? "vomit event" : "vomit events"}
-          </span>
-        </div>
-      )}
-    </div>
-  )
-}
-
-function formatVerdict(verdict: string | null): { label: string; className: string } {
-  switch (verdict) {
-    case "up":
-      return { label: "Good", className: "text-score-excellent" }
-    case "mixed":
-      return { label: "Mixed", className: "text-score-fair" }
-    case "down":
-      return { label: "Bad", className: "text-score-critical" }
-    default:
-      return { label: "No verdict", className: "text-muted-foreground" }
-  }
-}
-
-function verdictBadgeVariant(verdict: string | null): { bg: string; text: string } {
-  switch (verdict) {
-    case "up":
-      return { bg: "bg-score-excellent-bg", text: "text-score-excellent" }
-    case "mixed":
-      return { bg: "bg-score-fair-bg", text: "text-score-fair" }
-    case "down":
-      return { bg: "bg-score-critical-bg", text: "text-score-critical" }
-    default:
-      return { bg: "bg-muted", text: "text-muted-foreground" }
-  }
-}
-
-/** Singularize "1 weeks" → "1 week", leave "2 weeks" as-is. */
 function formatDateRange(startDate: string, endDate: string | null): string {
   const start = format(parseISO(startDate), "MMM d, yyyy")
-  if (!endDate) return `Active since ${start}`
-  return `${start} — ${format(parseISO(endDate), "MMM d, yyyy")}`
+  if (!endDate) return `Since ${start}`
+  return `${start} - ${format(parseISO(endDate), "MMM d, yyyy")}`
 }
 
-// ── Scorecard detail display ──
+function daysInRange(startDate: string, endDate: string | null): number {
+  const today = new Date().toISOString().split("T")[0]
+  return differenceInDays(parseISO(endDate ?? today), parseISO(startDate)) + 1
+}
 
-function ScorecardDetails({ sc }: { sc: ScorecardSummary }): React.ReactElement {
-  const verdict = formatVerdict(sc.verdict)
-  const badgeStyle = verdictBadgeVariant(sc.verdict)
-
-  const rows: { label: string; value: string | null }[] = [
-    { label: "Poop", value: formatPoopQualityRange(sc.poopQuality) },
-    { label: "Itch", value: formatItchSeverityRange(sc.itchSeverity) },
-    { label: "Vomiting", value: sc.vomiting ? VOMITING_LABELS[sc.vomiting] ?? sc.vomiting : null },
-    { label: "Palatability", value: sc.palatability ? PALATABILITY_LABELS[sc.palatability] ?? sc.palatability : null },
-    { label: "Digestive impact", value: sc.digestiveImpact ? ITCHINESS_IMPACT_LABELS[sc.digestiveImpact] ?? sc.digestiveImpact : null },
-    { label: "Itch impact", value: sc.itchinessImpact ? ITCHINESS_IMPACT_LABELS[sc.itchinessImpact] ?? sc.itchinessImpact : null },
-  ]
-
-  const filledRows = rows.filter((r) => r.value !== null)
-
-  return (
-    <div className="space-y-2">
-      {sc.verdict && (
-        <div className="flex items-center gap-2">
-          <span className={`inline-flex items-center rounded-md px-2 py-0.5 text-xs font-medium ${badgeStyle.bg} ${badgeStyle.text}`}>
-            {verdict.label}
-          </span>
-          {sc.primaryReason && (
-            <span className="text-xs text-muted-foreground">
-              {sc.primaryReason.replace(/_/g, " ")}
-            </span>
-          )}
-        </div>
-      )}
-      {filledRows.length > 0 && (
-        <div className="flex flex-wrap gap-x-4 gap-y-1">
-          {filledRows.map((r) => (
-            <p key={r.label} className="text-xs text-muted-foreground">
-              <span className="font-medium text-foreground">{r.label}:</span> {r.value}
-            </p>
-          ))}
-        </div>
-      )}
-      {sc.notes && (
-        <p className="text-xs italic text-muted-foreground">{sc.notes}</p>
-      )}
-    </div>
-  )
+/** Compute avg from scorecard range array (e.g. poopQuality [2,4] → 3.0) */
+function avgFromRange(scores: number[] | null): number | null {
+  if (!scores || scores.length === 0) return null
+  return Math.round(scores.reduce((a, b) => a + b, 0) / scores.length * 10) / 10
 }
 
 // ── Position category styling ──
@@ -229,6 +66,7 @@ const POSITION_LABELS: Record<PositionCategory, string> = {
 
 interface ExtendedCorrelationResult extends CorrelationResult {
   ingredientProducts?: Record<string, IngredientProductEntry[]>
+  giIngredientProducts?: Record<string, IngredientProductEntry[]>
 }
 
 // ── Per-product ingredient data (inlined from API, no lazy fetch) ──
@@ -284,13 +122,12 @@ const AMBIGUOUS_DISPLAY_NAMES: Record<string, { label: string; hint: string }> =
   "poultry (ambiguous)": { label: "Unspecified poultry", hint: "Could be chicken, turkey, or duck" },
   "red_meat (ambiguous)": { label: "Unspecified red meat", hint: "Could be beef, pork, lamb, bison, or venison" },
   "fish (ambiguous)": { label: "Unspecified fish", hint: "Could be salmon, whitefish, herring, etc." },
-  "animal (ambiguous)": { label: "Unspecified animal protein", hint: "Species not declared — could be any animal" },
-  "other (ambiguous)": { label: "Unspecified animal protein", hint: "Species not declared — could be any animal" },
+  "animal (ambiguous)": { label: "Unspecified animal protein", hint: "Species not declared — typically beef, pork, or chicken" },
   "mammal (ambiguous)": { label: "Unspecified mammal", hint: "Could be beef, pork, lamb, or other mammal" },
 }
 
 function displayIngredientKey(key: string): string {
-  return AMBIGUOUS_DISPLAY_NAMES[key]?.label ?? key
+  return AMBIGUOUS_DISPLAY_NAMES[key]?.label ?? key.replaceAll("_", " ")
 }
 
 function ambiguousHint(key: string): string | null {
@@ -332,9 +169,6 @@ function IngredientRow({
               · {POSITION_LABELS[score.positionCategory]}
             </span>
           ) : null}
-          {score.appearedInTreats && (
-            <span className="text-[10px] text-muted-foreground">(treat)</span>
-          )}
           {score.crossReactivityGroup && (
             <Badge variant="outline" className="text-score-fair text-[10px] py-0">
               {score.crossReactivityGroup}
@@ -407,16 +241,40 @@ function IngredientRow({
             <div>
               <p className="text-[11px] text-text-tertiary font-medium mb-1">Found in:</p>
               <div className="space-y-0.5">
-                {ingredientProducts.map((entry) => (
-                  <p key={entry.productId} className="text-xs text-muted-foreground">
-                    {entry.brandName} {entry.productName}
+                {ingredientProducts.map((entry, idx) => (
+                  <div key={`${entry.productId}-${entry.formKey ?? idx}`} className="text-xs text-muted-foreground">
+                    <span>{entry.brandName} {entry.productName}</span>
                     {SUPPLEMENT_PRODUCT_TYPES.has(entry.productType) && (
                       <span className="text-text-tertiary"> · {PRODUCT_TYPE_LABELS[entry.productType] ?? entry.productType}</span>
                     )}{" "}
                     <span className="text-text-tertiary">
-                      (#{entry.position} — {POSITION_LABELS[entry.positionCategory].toLowerCase()})
+                      (#{entry.position + 1} — {entry.formKey ? `${entry.formKey.replace(/[()]/g, "")}, ` : ""}{POSITION_LABELS[entry.positionCategory].toLowerCase()})
                     </span>
-                  </p>
+                    {(entry.avgPoopScore != null || entry.avgItchScore != null || entry.digestiveImpact || entry.itchinessImpact) && (
+                      <span className="text-text-tertiary">
+                        {" · "}
+                        {entry.avgPoopScore != null ? (
+                          <span className={entry.avgPoopScore >= 5 ? "text-score-critical" : entry.avgPoopScore >= 4 ? "text-score-fair" : "text-score-good"}>
+                            {entry.avgPoopScore} stool
+                          </span>
+                        ) : entry.digestiveImpact ? (
+                          <span className={entry.digestiveImpact === "worse" ? "text-score-critical" : entry.digestiveImpact === "better" ? "text-score-good" : ""}>
+                            stool: {entry.digestiveImpact.replace("_", " ")}
+                          </span>
+                        ) : null}
+                        {(entry.avgPoopScore != null || entry.digestiveImpact) && (entry.avgItchScore != null || entry.itchinessImpact) && " · "}
+                        {entry.avgItchScore != null ? (
+                          <span className={entry.avgItchScore >= 4 ? "text-score-critical" : entry.avgItchScore >= 3 ? "text-score-fair" : "text-score-good"}>
+                            {entry.avgItchScore} itch
+                          </span>
+                        ) : entry.itchinessImpact ? (
+                          <span className={entry.itchinessImpact === "worse" ? "text-score-critical" : entry.itchinessImpact === "better" ? "text-score-good" : ""}>
+                            itch: {entry.itchinessImpact.replace("_", " ")}
+                          </span>
+                        ) : null}
+                      </span>
+                    )}
+                  </div>
                 ))}
               </div>
             </div>
@@ -427,9 +285,9 @@ function IngredientRow({
             </p>
           )}
           <div className="flex flex-wrap gap-x-4 text-[11px] text-text-tertiary">
-            <span>GI: {score.badPoopDayCount} bad / {score.goodPoopDayCount} good</span>
+            <span>Stool: {score.badPoopDayCount} bad / {score.goodPoopDayCount} good</span>
             {(score.badItchDayCount > 0 || score.goodItchDayCount > 0) && (
-              <span>Skin: {score.badItchDayCount} bad / {score.goodItchDayCount} good</span>
+              <span>Itch: {score.badItchDayCount} bad / {score.goodItchDayCount} good</span>
             )}
             {score.daysWithBackfill > 0 && <span>{score.daysWithBackfill}d backfill</span>}
           </div>
@@ -525,74 +383,67 @@ function ProductIngredientList({
   data: ProductIngredientListData | undefined
   correlationScores: IngredientScore[]
 }): React.ReactElement {
-  const [expanded, setExpanded] = useState(false)
-
   if (!data) {
     return <></>
   }
 
+  const aboveSalt = data.saltPosition != null
+    ? data.allIngredients.slice(0, data.saltPosition)
+    : data.allIngredients
+  const belowSalt = data.saltPosition != null
+    ? data.allIngredients.slice(data.saltPosition)
+    : []
+
   return (
-    <div>
-      <button
-        type="button"
-        onClick={() => setExpanded(!expanded)}
-        className="flex items-center gap-1 text-xs text-primary hover:underline underline-offset-2"
-      >
-        <ChevronDown className={`size-3 transition-transform ${expanded ? "rotate-0" : "-rotate-90"}`} />
-        {expanded ? "Hide" : "View"} ingredients
-      </button>
-      {expanded && (
-        <div className="mt-2">
-          {(() => {
-            const aboveSalt = data.saltPosition != null
-              ? data.allIngredients.slice(0, data.saltPosition)
-              : data.allIngredients
-            const belowSalt = data.saltPosition != null
-              ? data.allIngredients.slice(data.saltPosition)
-              : []
+    <Popover>
+      <PopoverTrigger asChild>
+        <button
+          type="button"
+          className="flex items-center gap-1 text-xs text-primary hover:underline underline-offset-2"
+        >
+          View ingredients
+          <ChevronDown className="size-3" />
+        </button>
+      </PopoverTrigger>
+      <PopoverContent className="w-72 max-h-80 overflow-y-auto p-3" align="start">
+        <div className="space-y-1">
+          <ol className="space-y-0.5">
+            {aboveSalt.map((rawName, idx) => {
+              const position = idx + 1
+              const classified = data.classifiedByPosition.get(position)
+              const matchedScore = findScoreForIngredient(classified, correlationScores)
+              const isBad = matchedScore != null && isSuspect(matchedScore)
 
-            return (
-              <div className="space-y-1">
-                <ol className="space-y-0.5">
-                  {aboveSalt.map((rawName, idx) => {
-                    const position = idx + 1
-                    const classified = data.classifiedByPosition.get(position)
-                    const matchedScore = findScoreForIngredient(classified, correlationScores)
-                    const isBad = matchedScore != null && isSuspect(matchedScore)
-
-                    return (
-                      <li key={position}>
-                        <div className="flex items-baseline gap-1.5 text-xs text-foreground">
-                          <span className="tabular-nums text-text-tertiary w-5 text-right shrink-0">{position}.</span>
-                          <span className={isBad ? "font-medium text-score-critical" : ""}>
-                            {rawName}
-                          </span>
-                          {matchedScore?.weightedPoopScore != null && (
-                            <span className={`inline-block size-1.5 rounded-full ${poopScoreColor(matchedScore.weightedPoopScore).replace("text-", "bg-")}`} />
-                          )}
-                        </div>
-                      </li>
-                    )
-                  })}
-                </ol>
-                {belowSalt.length > 0 && (
-                  <>
-                    <div className="flex items-center gap-2 my-1.5">
-                      <div className="h-px flex-1 bg-border" />
-                      <span className="text-[10px] text-text-tertiary">Below 1%</span>
-                      <div className="h-px flex-1 bg-border" />
-                    </div>
-                    <p className="text-[10px] leading-snug text-text-tertiary">
-                      {belowSalt.join(", ")}
-                    </p>
-                  </>
-                )}
+              return (
+                <li key={position}>
+                  <div className="flex items-baseline gap-1.5 text-xs text-foreground">
+                    <span className="tabular-nums text-text-tertiary w-5 text-right shrink-0">{position}.</span>
+                    <span className={isBad ? "font-medium text-score-critical" : ""}>
+                      {rawName}
+                    </span>
+                    {matchedScore?.weightedPoopScore != null && (
+                      <span className={`inline-block size-1.5 rounded-full ${poopScoreColor(matchedScore.weightedPoopScore).replace("text-", "bg-")}`} />
+                    )}
+                  </div>
+                </li>
+              )
+            })}
+          </ol>
+          {belowSalt.length > 0 && (
+            <>
+              <div className="flex items-center gap-2 my-1.5">
+                <div className="h-px flex-1 bg-border" />
+                <span className="text-[10px] text-text-tertiary">Below 1%</span>
+                <div className="h-px flex-1 bg-border" />
               </div>
-            )
-          })()}
+              <p className="text-[10px] leading-snug text-text-tertiary">
+                {belowSalt.join(", ")}
+              </p>
+            </>
+          )}
         </div>
-      )}
-    </div>
+      </PopoverContent>
+    </Popover>
   )
 }
 
@@ -603,7 +454,7 @@ function IngredientAnalysisSection({
   correlation: ExtendedCorrelationResult | null
   loading: boolean
 }): React.ReactElement {
-  const [fatsExpanded, setFatsExpanded] = useState(false)
+  const [fatsExpanded, setFatsExpanded] = useState(true)
   const [signalMode, setSignalMode] = useState<SignalMode>("both")
 
   if (loading) {
@@ -655,15 +506,26 @@ function IngredientAnalysisSection({
     )
   }
 
-  // Split into allergenically relevant vs fats/oils
+  // In stool mode, use GI-merged scores (all forms combined, all GI-relevant)
+  const activeScores = signalMode === "stool"
+    ? correlation.giMergedScores
+    : correlation.scores
+  const activeIngredientProducts = signalMode === "stool"
+    ? correlation.giIngredientProducts
+    : correlation.ingredientProducts
+
+  // Split into allergenically relevant vs fats/oils (no fats section in stool mode)
   const allergenScores = sortBySignal(
-    correlation.scores.filter((s) => s.isAllergenicallyRelevant),
+    activeScores.filter((s) => s.isAllergenicallyRelevant
+      && !(signalMode === "stool" && s.positionCategory === "trace")),
     signalMode,
   )
-  const fatOilScores = sortBySignal(
-    correlation.scores.filter((s) => !s.isAllergenicallyRelevant),
-    signalMode,
-  )
+  const fatOilScores = signalMode === "stool"
+    ? []
+    : sortBySignal(
+        activeScores.filter((s) => !s.isAllergenicallyRelevant),
+        signalMode,
+      )
 
   // Low-variance detection on allergen scores
   const poopScores = allergenScores
@@ -705,7 +567,7 @@ function IngredientAnalysisSection({
               type="button"
               onClick={() => setSignalMode(value)}
               className={cn(
-                "px-2.5 py-1 text-[11px] font-medium transition-colors",
+                "px-3.5 py-1.5 text-xs font-medium transition-colors",
                 signalMode === value
                   ? "bg-primary text-primary-foreground"
                   : "hover:bg-item-hover text-muted-foreground",
@@ -717,28 +579,43 @@ function IngredientAnalysisSection({
         </div>
       </div>
 
-      {/* Common triggers reference — hidden in stool-only mode */}
-      {signalMode !== "stool" && <div className="rounded-lg bg-muted px-3 py-2.5">
-        <p className="text-xs text-muted-foreground leading-relaxed">
-          <span className="font-medium text-foreground">Common skin allergens:</span>{" "}
-          {COMMON_SKIN_TRIGGERS.map((t, i) => (
-            <span key={t.family}>
-              {i > 0 && ", "}
-              <span className={
-                triggersInData.some((ti) => ti.family === t.family) &&
-                allergenScores.some(
-                  (s) => (s.key === t.family || s.key.startsWith(t.family + " ")) && isSuspectItch(s),
-                )
-                  ? "font-medium text-score-critical"
-                  : ""
-              }>
-                {t.family} ({t.percentage}%)
+      {signalMode === "stool" ? (
+        <div className="rounded-lg bg-muted px-3 py-2.5">
+          <p className="text-xs text-muted-foreground leading-relaxed">
+            Ingredient forms (e.g. chicken, chicken fat, chicken oil) are merged. Hydrolyzed proteins are separated. Trace ingredients are hidden.
+          </p>
+        </div>
+      ) : (
+        <div className="rounded-lg bg-muted px-3 py-2.5">
+          <p className="text-xs text-muted-foreground leading-relaxed">
+            <span className="font-medium text-foreground">Common skin allergens:</span>{" "}
+            {COMMON_SKIN_TRIGGERS.map((t, i) => (
+              <span key={t.family}>
+                {i > 0 && ", "}
+                <span className={
+                  triggersInData.some((ti) => ti.family === t.family) &&
+                  allergenScores.some(
+                    (s) => (s.key === t.family || s.key.startsWith(t.family + " ")) && isSuspectItch(s),
+                  )
+                    ? "font-medium text-score-critical"
+                    : ""
+                }>
+                  {t.family} ({t.percentage}%)
+                </span>
               </span>
-            </span>
-          ))}
-          <span className="text-text-tertiary"> — Mueller et al. 2016 (skin only)</span>
-        </p>
-      </div>}
+            ))}
+            {" "}
+            <a
+              href="https://bmcvetres.biomedcentral.com/articles/10.1186/s12917-016-0633-8"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center text-text-tertiary hover:text-foreground transition-colors align-text-bottom"
+            >
+              <ExternalLink className="size-3" />
+            </a>
+          </p>
+        </div>
+      )}
 
       {allInsufficient && (
         <div className="flex items-start gap-2 rounded-lg bg-score-fair-bg px-3 py-2">
@@ -765,7 +642,7 @@ function IngredientAnalysisSection({
             <IngredientRow
               key={score.key}
               score={score}
-              ingredientProducts={correlation.ingredientProducts?.[score.key]}
+              ingredientProducts={activeIngredientProducts?.[score.key]}
               totalDistinctProducts={correlation.totalDistinctProducts}
               signalMode={signalMode}
             />
@@ -785,7 +662,7 @@ function IngredientAnalysisSection({
               className={`size-3.5 transition-transform ${fatsExpanded ? "rotate-0" : "-rotate-90"}`}
             />
             Fats & oils ({fatOilScores.length})
-            <span className="text-text-tertiary ml-1">— not allergenic</span>
+            <span className="text-text-tertiary ml-1">— not allergenic, but can affect digestion</span>
           </button>
           {fatsExpanded && (
             <Card className="mt-2 overflow-hidden py-0 gap-0">
@@ -794,7 +671,7 @@ function IngredientAnalysisSection({
                   <IngredientRow
                     key={score.key}
                     score={score}
-                    ingredientProducts={correlation.ingredientProducts?.[score.key]}
+                    ingredientProducts={activeIngredientProducts?.[score.key]}
                     totalDistinctProducts={correlation.totalDistinctProducts}
                   />
                 ))}
@@ -810,11 +687,11 @@ function IngredientAnalysisSection({
 // ── Types ──
 
 interface ScorecardPageData {
-  scored: FeedingPlanGroup[]
-  needsScoring: FeedingPlanGroup[]
+  past: FeedingPlanGroup[]
   active: FeedingPlanGroup | null
   correlation: CorrelationResult | null
   ingredientProducts: Record<string, IngredientProductEntry[]>
+  giIngredientProducts: Record<string, IngredientProductEntry[]>
   productIngredients: Record<string, {
     allIngredients: string[]
     classifiedByPosition: { position: number; normalizedName: string; family: string | null; sourceGroup: string | null; formType: string | null; isHydrolyzed: boolean }[]
@@ -830,6 +707,8 @@ interface BackfillProduct {
   product: ProductSummary
   startDate: string
   endDate: string
+  quantity: string
+  quantityUnit: string
 }
 
 // ── Page ──
@@ -877,6 +756,7 @@ export default function FoodScorecardPage() {
     return {
       ...data.correlation,
       ingredientProducts: data.ingredientProducts,
+      giIngredientProducts: data.giIngredientProducts,
     }
   }, [data])
 
@@ -964,6 +844,8 @@ export default function FoodScorecardPage() {
       },
       startDate: group.startDate,
       endDate: group.endDate ?? "",
+      quantity: item.quantity ?? "1",
+      quantityUnit: item.quantityUnit ?? (getAvailableUnits(null, item.type)?.[0]?.value ?? "cup"),
     })
     setBackfillStep("product")
     setBackfillOpen(true)
@@ -971,10 +853,14 @@ export default function FoodScorecardPage() {
 
   function handleBackfillProductSelected(product: ProductSummary | null): void {
     if (!product) return
+    const units = getAvailableUnits(product.calorieContent ?? null, product.type)
+    const defaultUnit = units?.[0]?.value ?? "cup"
     setBackfillProduct((prev) => ({
       product,
       startDate: prev?.startDate ?? "",
       endDate: prev?.endDate ?? "",
+      quantity: prev?.quantity ?? "1",
+      quantityUnit: prev?.product?.id === product.id ? (prev?.quantityUnit ?? defaultUnit) : defaultUnit,
     }))
   }
 
@@ -1019,7 +905,11 @@ export default function FoodScorecardPage() {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
-            items: [{ productId: backfillProduct.product.id }],
+            items: [{
+              productId: backfillProduct.product.id,
+              quantity: backfillProduct.quantity || "1",
+              quantityUnit: backfillProduct.quantityUnit,
+            }],
             startDate: backfillProduct.startDate,
             endDate: backfillProduct.endDate,
             scorecard: scorecardData,
@@ -1064,7 +954,11 @@ export default function FoodScorecardPage() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          items: [{ productId: backfillProduct.product.id }],
+          items: [{
+            productId: backfillProduct.product.id,
+            quantity: backfillProduct.quantity || "1",
+            quantityUnit: backfillProduct.quantityUnit,
+          }],
           startDate: backfillProduct.startDate,
           endDate: backfillProduct.endDate,
         }),
@@ -1098,6 +992,8 @@ export default function FoodScorecardPage() {
           startDate: backfillProduct.startDate,
           endDate: backfillProduct.endDate,
           productId: backfillProduct.product.id,
+          quantity: backfillProduct.quantity || "1",
+          quantityUnit: backfillProduct.quantityUnit,
         }),
       })
 
@@ -1131,18 +1027,9 @@ export default function FoodScorecardPage() {
     return group.items.every((item) => SUPPLEMENT_PRODUCT_TYPES.has(item.type ?? "")) ? "supplement" : "food"
   }
 
-  function rateLabel(group: FeedingPlanGroup): string {
-    if (!group.items.every((item) => SUPPLEMENT_PRODUCT_TYPES.has(item.type ?? ""))) {
-      return "Rate this food"
-    }
-    const type = group.items[0]?.type
-    if (type === "treat") return "Rate this treat"
-    return "Rate this supplement"
-  }
-
   const existingPeriods = useMemo(() => {
     if (!data) return []
-    const groups = [...data.scored, ...data.needsScoring]
+    const groups = [...data.past]
     if (data.active) groups.push(data.active)
     return groups
       .filter((g) => !g.items.every((item) => NON_FOOD_TYPES.has(item.type ?? "")))
@@ -1178,11 +1065,6 @@ export default function FoodScorecardPage() {
     return match?.label ?? null
   }, [backfillProduct?.startDate, backfillProduct?.endDate, backfillProduct?.product.type, editingGroup, existingPeriods])
 
-  const backfillDuration = useMemo(() => {
-    if (!backfillProduct?.startDate || !backfillProduct?.endDate) return null
-    return durationFromRange(backfillProduct.startDate, backfillProduct.endDate)
-  }, [backfillProduct?.startDate, backfillProduct?.endDate])
-
   // ── Render ──
 
   if (loading) {
@@ -1195,7 +1077,7 @@ export default function FoodScorecardPage() {
     )
   }
 
-  const hasContent = data && (data.active || data.needsScoring.length > 0 || data.scored.length > 0)
+  const hasContent = data && (data.active || data.past.length > 0)
 
   return (
     <div className="space-y-6">
@@ -1226,115 +1108,86 @@ export default function FoodScorecardPage() {
       {hasContent && (
         <div className="flex flex-wrap gap-3">
           {/* Active plan cards */}
-          {data?.active?.items.map((item) => (
-            <FoodScoreCard
-              key={item.id}
-              brandName={item.brandName}
-              productName={item.productName}
-              imageUrl={item.imageUrl}
-              productType={item.type}
-              quantity={item.quantity}
-              quantityUnit={item.quantityUnit}
-              className="min-w-0 basis-72 grow border-dashed"
-            >
-              <div className="flex flex-1 flex-col gap-3">
-                {data.active!.logStats && (
-                  <LogStatsDisplay stats={data.active!.logStats} />
-                )}
-                <div className="mt-auto flex items-center justify-between gap-2">
-                  <p className="text-xs text-muted-foreground">
-                    {formatDateRange(data.active!.startDate, null)}
-                  </p>
-                  <Badge variant="outline" className="shrink-0 text-[10px]">
-                    Current
-                  </Badge>
+          {data?.active?.items.map((item) => {
+            const stats = data.active!.logStats
+            const sc = data.active!.scorecard
+            const days = daysInRange(data.active!.startDate, null)
+            const avgStool = stats?.avgPoopScore ?? avgFromRange(sc?.poopQuality ?? null)
+            const avgItch = stats?.avgItchScore ?? avgFromRange(sc?.itchSeverity ?? null)
+            return (
+              <FoodScoreCard
+                key={item.id}
+                brandName={item.brandName}
+                productName={item.productName}
+                imageUrl={item.imageUrl}
+                isCurrent
+                dateLabel={formatDateRange(data.active!.startDate, null)}
+                className="min-w-0 basis-72 grow max-w-[calc(33.333%-0.5rem)] border-dashed"
+              >
+                <div className="-mx-4 bg-score-strip px-4 py-2">
+                  <ScoreGrid
+                    avgStool={avgStool}
+                    avgItch={avgItch}
+                    days={days}
+                    stoolImpact={sc?.digestiveImpact as "better" | "no_change" | "worse" | null}
+                    itchImpact={sc?.itchinessImpact as "better" | "no_change" | "worse" | null}
+                  />
                 </div>
-                <ProductIngredientList
-                  data={productIngredientDataMap.get(item.productId)}
-                  correlationScores={correlation?.scores ?? []}
-                />
-              </div>
-            </FoodScoreCard>
-          ))}
+                <div className="pt-3">
+                  <ProductIngredientList
+                    data={productIngredientDataMap.get(item.productId)}
+                    correlationScores={correlation?.scores ?? []}
+                  />
+                </div>
+              </FoodScoreCard>
+            )
+          })}
 
           {/* Past food cards — sorted by end date descending (most recent first) */}
-          {data && [...data.needsScoring, ...data.scored]
+          {data && [...data.past]
             .sort((a, b) => (b.endDate ?? "9999-12-31").localeCompare(a.endDate ?? "9999-12-31"))
             .flatMap((group) =>
-              group.items.map((item) => (
-                <FoodScoreCard
-                  key={item.id}
-                  brandName={item.brandName}
-                  productName={item.productName}
-                  imageUrl={item.imageUrl}
-                  productType={item.type}
-                  quantity={item.quantity}
-                  quantityUnit={item.quantityUnit}
-                  className="min-w-0 basis-72 grow"
-                >
-                  {group.scorecard ? (
-                    <div className="space-y-3">
-                      {group.logStats && (
-                        <LogStatsDisplay stats={group.logStats} />
-                      )}
-                      <div className="flex items-center justify-between gap-2">
-                        <p className="text-xs text-muted-foreground">
-                          {formatDateRange(group.startDate, group.endDate)}
-                          {group.isBackfill && " · Backfill"}
-                        </p>
-                        <button
-                          type="button"
-                          onClick={() => group.isBackfill ? openEditBackfill(group) : openScorecard(group)}
-                          className="flex shrink-0 items-center gap-1 text-xs text-primary hover:underline underline-offset-2"
-                        >
-                          <Pencil className="size-3" />
-                          Edit
-                        </button>
-                      </div>
-                      <Separator />
-                      <ScorecardDetails sc={group.scorecard} />
-                      <ProductIngredientList
-                        data={productIngredientDataMap.get(item.productId)}
-                        correlationScores={correlation?.scores ?? []}
+              group.items.map((item) => {
+                const stats = group.logStats
+                const sc = group.scorecard
+                const days = daysInRange(group.startDate, group.endDate)
+                const avgStool = stats?.avgPoopScore ?? avgFromRange(sc?.poopQuality ?? null)
+                const avgItch = stats?.avgItchScore ?? avgFromRange(sc?.itchSeverity ?? null)
+                return (
+                  <FoodScoreCard
+                    key={item.id}
+                    brandName={item.brandName}
+                    productName={item.productName}
+                    imageUrl={item.imageUrl}
+                    dateLabel={formatDateRange(group.startDate, group.endDate)}
+                    className="min-w-0 basis-72 grow max-w-[calc(33.333%-0.5rem)]"
+                  >
+                    <div className="-mx-4 bg-score-strip px-4 py-2">
+                      <ScoreGrid
+                        avgStool={avgStool}
+                        avgItch={avgItch}
+                        days={days}
+                        stoolImpact={sc?.digestiveImpact as "better" | "no_change" | "worse" | null}
+                        itchImpact={sc?.itchinessImpact as "better" | "no_change" | "worse" | null}
                       />
                     </div>
-                  ) : (
-                    <div className="space-y-3">
-                      {group.logStats && (
-                        <LogStatsDisplay stats={group.logStats} />
-                      )}
-                      <div className="flex items-center justify-between gap-2">
-                        <p className="text-xs text-muted-foreground">
-                          {formatDateRange(group.startDate, group.endDate)}
-                          {group.isBackfill && " · Backfill"}
-                        </p>
-                        {group.isBackfill && (
-                          <button
-                            type="button"
-                            onClick={() => openEditBackfill(group)}
-                            className="flex shrink-0 items-center gap-1 text-xs text-primary hover:underline underline-offset-2"
-                          >
-                            <Pencil className="size-3" />
-                            Edit
-                          </button>
-                        )}
-                      </div>
+                    <div className="pt-3 flex items-center justify-between gap-2">
                       <ProductIngredientList
                         data={productIngredientDataMap.get(item.productId)}
                         correlationScores={correlation?.scores ?? []}
                       />
-                      <Button
-                        size="sm"
+                      <button
+                        type="button"
                         onClick={() => group.isBackfill ? openEditBackfill(group) : openScorecard(group)}
-                        className="w-full"
+                        className="flex shrink-0 items-center gap-1 text-xs text-primary hover:underline underline-offset-2"
                       >
-                        <Star className="size-4" />
-                        {rateLabel(group)}
-                      </Button>
+                        <Pencil className="size-3" />
+                        Edit
+                      </button>
                     </div>
-                  )}
-                </FoodScoreCard>
-              )),
+                  </FoodScoreCard>
+                )
+              }),
             )}
         </div>
       )}
@@ -1349,7 +1202,7 @@ export default function FoodScorecardPage() {
       <ResponsiveModal
         open={scoreModalOpen}
         onOpenChange={setScoreModalOpen}
-        title={selectedGroup?.scorecard ? "Edit scorecard" : (selectedGroup ? rateLabel(selectedGroup) : "Rate this food")}
+        title={selectedGroup?.scorecard ? "Edit scorecard" : "Rate this food"}
         description="How did this work out?"
         size="lg"
       >
@@ -1369,8 +1222,7 @@ export default function FoodScorecardPage() {
         onOpenChange={setBackfillOpen}
         title={backfillStep === "product"
           ? (editingGroup ? "Edit feeding period" : "Add past food")
-          : backfillProduct?.product.type === "treat" ? "Rate this treat"
-          : SUPPLEMENT_PRODUCT_TYPES.has(backfillProduct?.product.type ?? "") ? "Rate this supplement" : "Rate this food"}
+          : "Rate this food"}
         description={backfillStep === "product"
           ? (editingGroup ? "Update the food or date range." : "Add a food your dog has eaten before.")
           : "How did this work out?"}
@@ -1408,9 +1260,6 @@ export default function FoodScorecardPage() {
                     modifiers={{ hasFood: existingFoodDates }}
                     modifiersClassNames={{ hasFood: "day-has-food" }}
                   />
-                  {backfillDuration && (
-                    <p className="text-sm text-muted-foreground">{backfillDuration}</p>
-                  )}
                   {backfillOverlap && (
                     <p className="flex items-center gap-1.5 text-sm text-score-fair">
                       <Info className="size-4 shrink-0" />
@@ -1419,12 +1268,51 @@ export default function FoodScorecardPage() {
                   )}
                 </div>
 
+                <div className="space-y-2">
+                  <Label className="text-xs font-medium uppercase tracking-[0.05em] text-muted-foreground">
+                    Daily amount
+                  </Label>
+                  <div className="flex gap-2">
+                    <Input
+                      type="number"
+                      step="0.25"
+                      min="0"
+                      placeholder="Qty"
+                      value={backfillProduct.quantity}
+                      onChange={(e) =>
+                        setBackfillProduct({ ...backfillProduct, quantity: e.target.value })
+                      }
+                      className="h-9 w-20"
+                    />
+                    <Select
+                      value={backfillProduct.quantityUnit}
+                      onValueChange={(v) =>
+                        setBackfillProduct({ ...backfillProduct, quantityUnit: v })
+                      }
+                    >
+                      <SelectTrigger size="sm" className="w-24">
+                        <SelectValue />
+                      </SelectTrigger>
+                      <SelectContent>
+                        {(getAvailableUnits(backfillProduct.product.calorieContent ?? null, backfillProduct.product.type) ??
+                          QUANTITY_UNIT_OPTIONS.map((o) => ({ value: o.value, label: o.label }))
+                        ).map((opt) => (
+                          <SelectItem key={opt.value} value={opt.value}>
+                            {opt.label}
+                          </SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                    <span className="self-center text-xs text-muted-foreground">/day</span>
+                  </div>
+                </div>
+
                 <Button
                   onClick={handleBackfillNext}
                   disabled={!backfillProduct.startDate || !backfillProduct.endDate || backfillSaving}
                   className="mt-2 w-full"
                 >
-                  Next — {editingGroup ? "Edit scorecard" : backfillProduct?.product.type === "treat" ? "Rate this treat" : SUPPLEMENT_PRODUCT_TYPES.has(backfillProduct?.product.type ?? "") ? "Rate this supplement" : "Rate this food"}
+                  Next — {editingGroup ? "Edit scorecard" : SUPPLEMENT_PRODUCT_TYPES.has(backfillProduct?.product.type ?? "") ? "Rate this supplement" : "Rate this food"}
                 </Button>
               </>
             )}

@@ -57,6 +57,8 @@ export async function PATCH(
     if (body.startDate !== undefined) updates.startDate = body.startDate
     if (body.endDate !== undefined) updates.endDate = body.endDate
     if (body.productId !== undefined) updates.productId = body.productId
+    if (body.quantity !== undefined) updates.quantity = body.quantity
+    if (body.quantityUnit !== undefined) updates.quantityUnit = body.quantityUnit
 
     await db
       .update(feedingPeriods)

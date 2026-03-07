@@ -83,6 +83,7 @@
   --color-foreground-muted-60: var(--foreground-muted-60);
   --color-border-light: var(--border-light);
   --color-muted-subtle: var(--muted-subtle);
+  --color-score-strip: var(--score-strip);
   --color-score-excellent-bg: var(--score-excellent-bg);
   --color-score-fair-bg: var(--score-fair-bg);
   --color-score-critical-bg: var(--score-critical-bg);
@@ -138,6 +139,7 @@
   --foreground-muted-60: #9B938A;
   --border-light: #ece7e1;
   --muted-subtle: #faf8f4;
+  --score-strip: #fff8ef;
   --score-excellent-bg: #eef2ee;
   --score-fair-bg: #fbf7ed;
   --score-critical-bg: #f9edeb;
@@ -189,6 +191,7 @@
   --foreground-muted-60: #9A9790;
   --border-light: #272520;
   --muted-subtle: #221f1a;
+  --score-strip: #2a2518;
   --score-excellent-bg: #22241d;
   --score-fair-bg: #2d2719;
   --score-critical-bg: #2a1d18;

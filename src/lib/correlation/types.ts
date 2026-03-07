@@ -69,6 +69,8 @@ export interface ActiveIngredient {
   fromTreat: boolean
   formType: string | null
   sourceGroup: string | null
+  /** Volume-weighted position weight (0–1). Accounts for product's share of daily intake. */
+  volumePositionWeight: number
 }
 
 /** Outcome signals for one calendar day. */
@@ -134,6 +136,12 @@ export interface IngredientProductEntry {
   position: number
   positionCategory: PositionCategory
   productType: string
+  avgPoopScore: number | null
+  avgItchScore: number | null
+  digestiveImpact: string | null
+  itchinessImpact: string | null
+  /** Original ingredient form key when merged into a family group (e.g. "corn (oil)"). */
+  formKey?: string
 }
 
 export interface CorrelationOptions {
@@ -158,6 +166,7 @@ export interface CorrelationResult {
   scoreableDays: number
   totalDistinctProducts: number
   scores: IngredientScore[]
+  giMergedScores: IngredientScore[]
   options: CorrelationOptions
 }
 
@@ -177,11 +186,15 @@ export interface RawFeedingPeriod {
   endDate: string | null
   planGroupId: string
   createdAt: string
+  quantity: number
+  quantityUnit: string
 }
 
 export interface RawTreatLog {
   date: string
   productId: string
+  quantity: number
+  quantityUnit: string
 }
 
 export interface RawPoopLog {
@@ -211,6 +224,8 @@ export interface RawMedication {
 export interface RawScorecard {
   planGroupId: string
   poopQuality: number[] | null
+  digestiveImpact: string | null
+  itchinessImpact: string | null
   itchSeverity: number[] | null
 }
 
@@ -224,6 +239,8 @@ export interface RawBackfill {
   planGroupId: string
   productId: string
   durationDays: number
+  quantity: number
+  quantityUnit: string
   scorecard: RawScorecard | null
 }
 
@@ -245,4 +262,6 @@ export interface CorrelationInput {
   planPeriods: PlanPeriod[]
   backfills: RawBackfill[]
   crossReactivityGroups: CrossReactivityGroup[]
+  /** Product ID → product info (type + calorie content). Used for gram estimation. */
+  productInfo: Map<string, { type: string; calorieContent: string | null }>
 }

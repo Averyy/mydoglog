@@ -16,7 +16,6 @@ Living checklist. Update as work progresses.
 - [ ] Pollen + weather collection — cron endpoint, daily high/low temp + pollen index stored per location
 - [ ] Season tracking — define seasons by temperature transitions + regional calendar (e.g. spring = sustained temps above X after winter lows, snowmelt window, fall = first sustained drop). Seasons are a confounder label on the timeline, not just calendar quarters. Key transitions: winter→spring (snowmelt, mold spike, pollen start), spring→summer, summer→fall, fall→winter. Consider latitude-aware thresholds (St. Catharines ≠ Calgary)
 - [ ] Medication tracking UI — structured catalog (52 meds, see `todo-medications.md`), medication picker in routine editor, free-text fallback for unlisted meds
-- [ ] Extend poop log with mucus/blood toggles (optional, high clinical signal — mucus = large bowel inflammation, blood = location indicator)
 - [ ] Dashboard timeline — unified view combining:
   - **Time-series graph** (top): poop scores as dots (semantic colors), itch scores, temperature + pollen as background overlays, season bands as background shading
   - **Gantt-style bars** (bottom): food periods, medication periods, supplement periods as horizontal bars showing what was active when

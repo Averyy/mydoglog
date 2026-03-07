@@ -102,12 +102,8 @@ export async function GET(
             id: sc.id,
             poopQuality: sc.poopQuality,
             itchSeverity: sc.itchSeverity,
-            vomiting: sc.vomiting,
-            palatability: sc.palatability,
             digestiveImpact: sc.digestiveImpact,
             itchinessImpact: sc.itchinessImpact,
-            verdict: sc.verdict,
-            primaryReason: sc.primaryReason,
             notes: sc.notes,
           }
         }
@@ -126,8 +122,8 @@ export async function GET(
 
 interface FeedingPostItem {
   productId: string
-  quantity?: string
-  quantityUnit?: string
+  quantity: string
+  quantityUnit: string
   mealSlot?: string
 }
 
@@ -155,6 +151,15 @@ export async function POST(
         { error: "mode and items are required" },
         { status: 400 },
       )
+    }
+
+    for (const item of body.items) {
+      if (!item.quantity || !item.quantityUnit) {
+        return NextResponse.json(
+          { error: "quantity and quantityUnit are required for each item" },
+          { status: 400 },
+        )
+      }
     }
 
     const today = new Date().toISOString().split("T")[0]
@@ -212,7 +217,7 @@ export async function POST(
         | "dinner"
         | "snack"
         | undefined,
-      quantity: item.quantity ?? null,
+      quantity: item.quantity,
       quantityUnit: item.quantityUnit as
         | "can"
         | "cup"
@@ -222,7 +227,7 @@ export async function POST(
         | "tbsp"
         | "tsp"
         | "ml"
-        | undefined,
+        | "treat",
       planGroupId,
       planName: body.planName ?? null,
       isBackfill: false,

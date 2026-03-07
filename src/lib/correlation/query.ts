@@ -83,6 +83,8 @@ export async function fetchCorrelationInput(
         endDate: feedingPeriods.endDate,
         planGroupId: feedingPeriods.planGroupId,
         createdAt: feedingPeriods.createdAt,
+        quantity: feedingPeriods.quantity,
+        quantityUnit: feedingPeriods.quantityUnit,
       })
       .from(feedingPeriods)
       .where(
@@ -98,6 +100,8 @@ export async function fetchCorrelationInput(
         planGroupId: feedingPeriods.planGroupId,
         productId: feedingPeriods.productId,
         approximateDuration: feedingPeriods.approximateDuration,
+        quantity: feedingPeriods.quantity,
+        quantityUnit: feedingPeriods.quantityUnit,
       })
       .from(feedingPeriods)
       .where(
@@ -112,6 +116,8 @@ export async function fetchCorrelationInput(
       .select({
         date: treatLogs.date,
         productId: treatLogs.productId,
+        quantity: treatLogs.quantity,
+        quantityUnit: treatLogs.quantityUnit,
       })
       .from(treatLogs)
       .where(
@@ -208,6 +214,8 @@ export async function fetchCorrelationInput(
     endDate: r.endDate,
     planGroupId: r.planGroupId,
     createdAt: r.createdAt.toISOString(),
+    quantity: Number(r.quantity),
+    quantityUnit: r.quantityUnit!,
   }))
 
   // -- Build planPeriods (same grouping as feeding.ts groupPlanPeriods) --
@@ -233,7 +241,7 @@ export async function fetchCorrelationInput(
   for (const bf of backfillRows) allPlanGroupIds.add(bf.planGroupId)
   const planGroupIds = [...allPlanGroupIds]
 
-  const [ingredientRows, scorecardRows, pollenRows] = await Promise.all([
+  const [ingredientRows, scorecardRows, pollenRows, productTypeRows] = await Promise.all([
     // Product ingredients for all products
     productIdList.length > 0
       ? db
@@ -268,6 +276,8 @@ export async function fetchCorrelationInput(
             planGroupId: foodScorecards.planGroupId,
             poopQuality: foodScorecards.poopQuality,
             itchSeverity: foodScorecards.itchSeverity,
+            digestiveImpact: foodScorecards.digestiveImpact,
+            itchinessImpact: foodScorecards.itchinessImpact,
           })
           .from(foodScorecards)
           .where(
@@ -294,6 +304,19 @@ export async function fetchCorrelationInput(
             ),
           )
       : Promise.resolve([]),
+
+    // Product types + calorie content for gram estimation
+    productIdList.length > 0
+      ? db
+          .select({ id: products.id, type: products.type, calorieContent: products.calorieContent })
+          .from(products)
+          .where(
+            sql`${products.id} IN (${sql.join(
+              productIdList.map((id) => sql`${id}`),
+              sql`, `,
+            )})`,
+          )
+      : Promise.resolve([]),
   ])
 
   // -- Build product ingredient map --
@@ -315,6 +338,12 @@ export async function fetchCorrelationInput(
     productIngredientMap.set(row.productId, list)
   }
 
+  // -- Build product info map --
+  const productInfo = new Map<string, { type: string; calorieContent: string | null }>()
+  for (const row of productTypeRows) {
+    productInfo.set(row.id, { type: row.type ?? "dry_food", calorieContent: row.calorieContent })
+  }
+
   // -- Build backfill entries with parsed durations and matched scorecards --
   const backfills: RawBackfill[] = backfillRows
     .map((bf) => {
@@ -328,6 +357,8 @@ export async function fetchCorrelationInput(
         planGroupId: bf.planGroupId,
         productId: bf.productId,
         durationDays: duration?.days ?? 7, // fallback to 1 week
+        quantity: Number(bf.quantity),
+        quantityUnit: bf.quantityUnit!,
         scorecard: scorecard ?? null,
       }
     })
@@ -337,7 +368,12 @@ export async function fetchCorrelationInput(
     windowStart,
     windowEnd,
     feedingPeriods: rawFeeding,
-    treatLogs: treatRows,
+    treatLogs: treatRows.map((r) => ({
+      date: r.date,
+      productId: r.productId,
+      quantity: Number(r.quantity),
+      quantityUnit: r.quantityUnit!,
+    })),
     productIngredientMap,
     poopLogs: poopRows,
     itchinessLogs: itchRows,
@@ -355,6 +391,7 @@ export async function fetchCorrelationInput(
       groupName: r.groupName,
       families: r.families,
     })),
+    productInfo,
   }
 }
 
@@ -417,6 +454,10 @@ export async function fetchIngredientProductMap(
           position: pi.position,
           positionCategory: positionCategory(pi.position),
           productType: product.type ?? "dry_food",
+          avgPoopScore: null,
+          avgItchScore: null,
+          digestiveImpact: null,
+          itchinessImpact: null,
         })
       }
       result.set(key, entries)

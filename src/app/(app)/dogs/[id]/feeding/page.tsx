@@ -29,18 +29,6 @@ function formatApproximateDuration(raw: string): string {
   return raw.replace(/^1\s+(\w+)s$/i, "1 $1")
 }
 
-function formatVerdict(verdict: string | null): { label: string; className: string } {
-  switch (verdict) {
-    case "up":
-      return { label: "Good", className: "text-score-excellent" }
-    case "mixed":
-      return { label: "Mixed", className: "text-score-fair" }
-    case "down":
-      return { label: "Bad", className: "text-score-critical" }
-    default:
-      return { label: "No verdict", className: "text-muted-foreground" }
-  }
-}
 
 export default function FeedingPage() {
   const params = useParams<{ id: string }>()
@@ -154,7 +142,6 @@ export default function FeedingPage() {
           </h2>
           <div className="space-y-2">
             {[...planHistory].sort((a, b) => (b.endDate ?? "9999-12-31").localeCompare(a.endDate ?? "9999-12-31")).map((group) => {
-              const verdict = formatVerdict(group.scorecard?.verdict ?? null)
               return (
                 <Card key={group.planGroupId} className="py-0">
                   <CardContent className="py-4 space-y-2">
@@ -177,11 +164,6 @@ export default function FeedingPage() {
                           <Badge variant="outline" className="text-[10px]">
                             Backfill
                           </Badge>
-                        )}
-                        {group.scorecard?.verdict && (
-                          <span className={`text-xs font-medium ${verdict.className}`}>
-                            {verdict.label}
-                          </span>
                         )}
                       </div>
                     </div>

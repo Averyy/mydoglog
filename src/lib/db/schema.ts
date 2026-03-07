@@ -91,20 +91,9 @@ export const quantityUnitEnum = pgEnum("quantity_unit", [
   "tbsp",
   "tsp",
   "ml",
+  "treat",
 ])
 
-export const vomitingFreqEnum = pgEnum("vomiting_freq", [
-  "none",
-  "occasional",
-  "frequent",
-])
-
-export const palatabilityEnum = pgEnum("palatability", [
-  "loved",
-  "ate",
-  "reluctant",
-  "refused",
-])
 
 export const itchinessImpactEnum = pgEnum("itchiness_impact", [
   "better",
@@ -112,17 +101,6 @@ export const itchinessImpactEnum = pgEnum("itchiness_impact", [
   "worse",
 ])
 
-export const verdictEnum = pgEnum("verdict", ["up", "mixed", "down"])
-
-export const primaryReasonEnum = pgEnum("primary_reason", [
-  "bad_poop",
-  "vomiting",
-  "gas",
-  "itchiness",
-  "refused_to_eat",
-  "too_expensive",
-  "other",
-])
 
 export const poopColorEnum = pgEnum("poop_color", [
   "brown",
@@ -365,8 +343,8 @@ export const feedingPeriods = pgTable(
     startDate: date("start_date").notNull(),
     endDate: date("end_date"),
     mealSlot: mealSlotEnum("meal_slot"),
-    quantity: numeric("quantity"),
-    quantityUnit: quantityUnitEnum("quantity_unit"),
+    quantity: numeric("quantity").notNull(),
+    quantityUnit: quantityUnitEnum("quantity_unit").notNull(),
     planGroupId: text("plan_group_id").notNull(),
     planName: text("plan_name"),
     isBackfill: boolean("is_backfill").notNull().default(false),
@@ -396,8 +374,8 @@ export const treatLogs = pgTable(
       .references(() => products.id),
     date: date("date").notNull(),
     datetime: timestamp("datetime", { withTimezone: true }),
-    quantity: numeric("quantity"),
-    quantityUnit: quantityUnitEnum("quantity_unit"),
+    quantity: numeric("quantity").notNull(),
+    quantityUnit: quantityUnitEnum("quantity_unit").notNull(),
     notes: text("notes"),
     createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
   },
@@ -413,12 +391,8 @@ export const foodScorecards = pgTable(
     planGroupId: text("plan_group_id").notNull(),
     poopQuality: integer("poop_quality").array(),
     itchSeverity: integer("itch_severity").array(),
-    vomiting: vomitingFreqEnum("vomiting"),
-    palatability: palatabilityEnum("palatability"),
     digestiveImpact: itchinessImpactEnum("digestive_impact"),
     itchinessImpact: itchinessImpactEnum("itchiness_impact"),
-    verdict: verdictEnum("verdict"),
-    primaryReason: primaryReasonEnum("primary_reason"),
     notes: text("notes"),
     createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
   },

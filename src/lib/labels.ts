@@ -27,6 +27,7 @@ export const QUANTITY_UNIT_OPTIONS = [
   { value: "g", label: "g" },
   { value: "scoop", label: "scoop" },
   { value: "piece", label: "piece" },
+  { value: "treat", label: "treat" },
   { value: "tbsp", label: "tbsp" },
   { value: "tsp", label: "tsp" },
   { value: "ml", label: "ml" },

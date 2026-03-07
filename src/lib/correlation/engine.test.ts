@@ -5,15 +5,16 @@ import {
   computeIngredientScores,
   computeConfidence,
   flagCrossReactivity,
+  mergeScoresForGI,
   runCorrelation,
   positionWeight,
   positionCategory,
   isNonAllergenicForm,
+  estimateGrams,
 } from "./engine"
 import type {
   IngredientRecord,
   CorrelationInput,
-  CorrelationOptions,
   DaySnapshot,
   DayOutcome,
   ActiveIngredient,
@@ -91,6 +92,7 @@ function makeInput(overrides: Partial<CorrelationInput> = {}): CorrelationInput 
     planPeriods: [],
     backfills: [],
     crossReactivityGroups: [],
+    productInfo: new Map(),
     ...overrides,
   }
 }
@@ -229,6 +231,38 @@ describe("isNonAllergenicForm", () => {
 })
 
 // ---------------------------------------------------------------------------
+// estimateGrams
+// ---------------------------------------------------------------------------
+
+describe("estimateGrams", () => {
+  it("uses calorie content for exact conversion (kcal/cup + kcal/kg)", () => {
+    // 336 kcal/cup ÷ 3774 kcal/kg × 1000 = ~89g per cup
+    const grams = estimateGrams(1, "cup", "3774 kcal/kg, 336 kcal/cup")
+    expect(grams).toBeCloseTo(89, 0)
+  })
+
+  it("falls back to rough multiplier without calorie data", () => {
+    expect(estimateGrams(2, "cup", null)).toBe(200)
+  })
+
+  it("passes through grams directly", () => {
+    expect(estimateGrams(50, "g", null)).toBe(50)
+  })
+
+  it("passes through ml directly", () => {
+    expect(estimateGrams(100, "ml", null)).toBe(100)
+  })
+
+  it("uses rough multiplier for treat unit", () => {
+    expect(estimateGrams(3, "treat", null)).toBe(15)
+  })
+
+  it("uses rough multiplier for can unit", () => {
+    expect(estimateGrams(1, "can", null)).toBe(370)
+  })
+})
+
+// ---------------------------------------------------------------------------
 // buildDaySnapshots
 // ---------------------------------------------------------------------------
 
@@ -300,6 +334,8 @@ describe("buildDaySnapshots", () => {
           endDate: "2024-06-02",
           planGroupId: "plan-1",
           createdAt: "2024-06-01T00:00:00Z",
+          quantity: 2,
+          quantityUnit: "cup",
         },
       ],
       productIngredientMap: ingredientMap,
@@ -351,6 +387,8 @@ describe("buildDaySnapshots", () => {
           endDate: null,
           planGroupId: "plan-1",
           createdAt: "2024-06-01T00:00:00Z",
+          quantity: 2,
+          quantityUnit: "cup",
         },
       ],
       planPeriods: [
@@ -361,7 +399,7 @@ describe("buildDaySnapshots", () => {
           createdAt: "2024-06-01T00:00:00Z",
         },
       ],
-      scorecards: [{ planGroupId: "plan-1", poopQuality: [4], itchSeverity: null }],
+      scorecards: [{ planGroupId: "plan-1", poopQuality: [4], itchSeverity: null, digestiveImpact: null, itchinessImpact: null }],
     })
     const snaps = buildDaySnapshots(input, opts)
     expect(snaps[0].outcome.scorecardPoopFallback).toBe(4)
@@ -381,6 +419,8 @@ describe("buildDaySnapshots", () => {
           endDate: null,
           planGroupId: "plan-1",
           createdAt: "2024-06-01T00:00:00Z",
+          quantity: 2,
+          quantityUnit: "cup",
         },
       ],
       planPeriods: [
@@ -391,7 +431,7 @@ describe("buildDaySnapshots", () => {
           createdAt: "2024-06-01T00:00:00Z",
         },
       ],
-      scorecards: [{ planGroupId: "plan-1", poopQuality: [5], itchSeverity: null }],
+      scorecards: [{ planGroupId: "plan-1", poopQuality: [5], itchSeverity: null, digestiveImpact: null, itchinessImpact: null }],
     })
     const snaps = buildDaySnapshots(input, opts)
     expect(snaps[0].outcome.poopScore).toBe(2)
@@ -410,6 +450,8 @@ describe("buildDaySnapshots", () => {
           endDate: null,
           planGroupId: "plan-1",
           createdAt: "2024-06-01T00:00:00Z",
+          quantity: 2,
+          quantityUnit: "cup",
         },
       ],
       planPeriods: [
@@ -420,7 +462,7 @@ describe("buildDaySnapshots", () => {
           createdAt: "2024-06-01T00:00:00Z",
         },
       ],
-      scorecards: [{ planGroupId: "plan-1", poopQuality: [3, 5], itchSeverity: null }],
+      scorecards: [{ planGroupId: "plan-1", poopQuality: [3, 5], itchSeverity: null, digestiveImpact: null, itchinessImpact: null }],
     })
     const snaps = buildDaySnapshots(input, opts)
     expect(snaps[0].outcome.scorecardPoopFallback).toBe(4)
@@ -435,7 +477,7 @@ describe("buildDaySnapshots", () => {
     const input = makeInput({
       windowStart: "2024-06-01",
       windowEnd: "2024-06-01",
-      treatLogs: [{ date: "2024-06-01", productId: "prod-treat" }],
+      treatLogs: [{ date: "2024-06-01", productId: "prod-treat", quantity: 1, quantityUnit: "piece" }],
       productIngredientMap: map,
     })
     const snaps = buildDaySnapshots(input, opts)
@@ -464,9 +506,11 @@ describe("buildDaySnapshots", () => {
           endDate: null,
           planGroupId: "plan-1",
           createdAt: "2024-06-01T00:00:00Z",
+          quantity: 2,
+          quantityUnit: "cup",
         },
       ],
-      treatLogs: [{ date: "2024-06-01", productId: "prod-treat-c" }],
+      treatLogs: [{ date: "2024-06-01", productId: "prod-treat-c", quantity: 1, quantityUnit: "piece" }],
       productIngredientMap: map,
     })
     const snaps = buildDaySnapshots(input, opts)
@@ -493,6 +537,8 @@ describe("buildDaySnapshots", () => {
           endDate: "2024-06-03",
           planGroupId: "plan-1",
           createdAt: "2024-06-01T00:00:00Z",
+          quantity: 2,
+          quantityUnit: "cup",
         },
         {
           id: "fp-2",
@@ -501,6 +547,8 @@ describe("buildDaySnapshots", () => {
           endDate: null,
           planGroupId: "plan-2",
           createdAt: "2024-06-04T00:00:00Z",
+          quantity: 2,
+          quantityUnit: "cup",
         },
       ],
       productIngredientMap: ingredientMap,
@@ -579,6 +627,8 @@ describe("buildDaySnapshots", () => {
           endDate: "2024-05-31",
           planGroupId: "plan-1",
           createdAt: "2024-05-01T00:00:00Z",
+          quantity: 2,
+          quantityUnit: "cup",
         },
       ],
       productIngredientMap: ingredientMap,
@@ -601,6 +651,8 @@ describe("buildDaySnapshots", () => {
           endDate: null,
           planGroupId: "plan-1",
           createdAt: "2024-06-01T00:00:00Z",
+          quantity: 2,
+          quantityUnit: "cup",
         },
         {
           id: "fp-2",
@@ -609,6 +661,8 @@ describe("buildDaySnapshots", () => {
           endDate: null,
           planGroupId: "plan-2",
           createdAt: "2024-06-01T00:00:00Z",
+          quantity: 2,
+          quantityUnit: "cup",
         },
       ],
       productIngredientMap: ingredientMap,
@@ -642,6 +696,8 @@ describe("buildDaySnapshots", () => {
           endDate: null,
           planGroupId: "plan-1",
           createdAt: "2024-06-01T00:00:00Z",
+          quantity: 2,
+          quantityUnit: "cup",
         },
       ],
       // Empty ingredient map — prod-unknown not in it
@@ -672,6 +728,8 @@ describe("buildDaySnapshots", () => {
           endDate: null,
           planGroupId: "plan-1",
           createdAt: "2024-06-01T00:00:00Z",
+          quantity: 2,
+          quantityUnit: "cup",
         },
       ],
       productIngredientMap: new Map([["prod-fat", productWithFat]]),
@@ -742,6 +800,7 @@ describe("computeIngredientScores", () => {
     fromTreat: false,
     formType: null,
     sourceGroup: null,
+    volumePositionWeight: positionWeight(1),
   }
 
   it("returns empty scores for empty snapshots", () => {
@@ -829,6 +888,8 @@ describe("computeIngredientScores", () => {
       ingredientCount: 1,
       fromTreat: false,
       formType: null,
+      sourceGroup: null,
+      volumePositionWeight: positionWeight(2),
     }
     const snapshots: DaySnapshot[] = [
       makeSnapshot({
@@ -940,6 +1001,8 @@ describe("computeIngredientScores", () => {
       ingredientCount: 1,
       fromTreat: false,
       formType: "fat",
+      sourceGroup: null,
+      volumePositionWeight: positionWeight(5),
     }
     const snapshots: DaySnapshot[] = [
       makeSnapshot({
@@ -995,6 +1058,7 @@ describe("asymmetric scoring", () => {
     fromTreat: false,
     formType: null,
     sourceGroup: null,
+    volumePositionWeight: positionWeight(1),
   }
 
   it("bad days pull weighted score higher than raw average", () => {
@@ -1116,6 +1180,8 @@ describe("position weighting integration", () => {
       ingredientCount: 1,
       fromTreat: false,
       formType: null,
+      sourceGroup: null,
+      volumePositionWeight: positionWeight(1),
     }
     const pos15: ActiveIngredient = {
       key: "carrot",
@@ -1126,6 +1192,8 @@ describe("position weighting integration", () => {
       ingredientCount: 1,
       fromTreat: false,
       formType: null,
+      sourceGroup: null,
+      volumePositionWeight: positionWeight(15),
     }
 
     // Both present on same days with one bad day
@@ -1197,6 +1265,8 @@ describe("form-type separation", () => {
           endDate: null,
           planGroupId: "plan-1",
           createdAt: "2024-06-01T00:00:00Z",
+          quantity: 2,
+          quantityUnit: "cup",
         },
       ],
       productIngredientMap: new Map([["prod-a", productIngs]]),
@@ -1242,6 +1312,8 @@ describe("form-type separation", () => {
           endDate: null,
           planGroupId: "plan-1",
           createdAt: "2024-06-01T00:00:00Z",
+          quantity: 2,
+          quantityUnit: "cup",
         },
       ],
       productIngredientMap: new Map([["prod-a", productIngs]]),
@@ -1281,6 +1353,8 @@ describe("form-type separation", () => {
           endDate: null,
           planGroupId: "plan-1",
           createdAt: "2024-06-01T00:00:00Z",
+          quantity: 2,
+          quantityUnit: "cup",
         },
       ],
       productIngredientMap: new Map([["prod-a", productIngs]]),
@@ -1312,6 +1386,7 @@ describe("legume splitting detection", () => {
       fromTreat: false,
       formType: null,
       sourceGroup: "legume",
+      volumePositionWeight: positionWeight(3),
     }
 
     const snapshots: DaySnapshot[] = [
@@ -1336,6 +1411,7 @@ describe("legume splitting detection", () => {
       fromTreat: false,
       formType: null,
       sourceGroup: "legume",
+      volumePositionWeight: positionWeight(3),
     }
 
     const snapshots: DaySnapshot[] = [
@@ -1360,6 +1436,7 @@ describe("legume splitting detection", () => {
       fromTreat: false,
       formType: null,
       sourceGroup: "poultry",
+      volumePositionWeight: positionWeight(1),
     }
 
     const snapshots: DaySnapshot[] = [
@@ -1392,6 +1469,7 @@ describe("distinct product count", () => {
       fromTreat: false,
       formType: null,
       sourceGroup: null,
+      volumePositionWeight: positionWeight(1),
     }
     const potatoActive: ActiveIngredient = {
       key: "potato",
@@ -1403,6 +1481,7 @@ describe("distinct product count", () => {
       fromTreat: false,
       formType: null,
       sourceGroup: null,
+      volumePositionWeight: positionWeight(5),
     }
 
     const snapshots: DaySnapshot[] = [
@@ -1428,6 +1507,7 @@ describe("distinct product count", () => {
       fromTreat: false,
       formType: null,
       sourceGroup: null,
+      volumePositionWeight: positionWeight(1),
     }
     const chickenB: ActiveIngredient = {
       key: "chicken",
@@ -1439,6 +1519,7 @@ describe("distinct product count", () => {
       fromTreat: false,
       formType: null,
       sourceGroup: null,
+      volumePositionWeight: positionWeight(1),
     }
 
     const snapshots: DaySnapshot[] = [
@@ -1473,13 +1554,17 @@ describe("distinct product count", () => {
           planGroupId: "plan-a",
           productId: "prod-a",
           durationDays: 10,
-          scorecard: { planGroupId: "plan-a", poopQuality: [3], itchSeverity: null },
+          quantity: 2,
+          quantityUnit: "cup",
+          scorecard: { planGroupId: "plan-a", poopQuality: [3], itchSeverity: null, digestiveImpact: null, itchinessImpact: null },
         },
         {
           planGroupId: "plan-b",
           productId: "prod-b",
           durationDays: 10,
-          scorecard: { planGroupId: "plan-b", poopQuality: [4], itchSeverity: null },
+          quantity: 2,
+          quantityUnit: "cup",
+          scorecard: { planGroupId: "plan-b", poopQuality: [4], itchSeverity: null, digestiveImpact: null, itchinessImpact: null },
         },
       ],
     })
@@ -1511,7 +1596,9 @@ describe("backfill confidence", () => {
           planGroupId: "plan-bf",
           productId: "prod-a",
           durationDays: 60,
-          scorecard: { planGroupId: "plan-bf", poopQuality: [3], itchSeverity: null },
+          quantity: 2,
+          quantityUnit: "cup",
+          scorecard: { planGroupId: "plan-bf", poopQuality: [3], itchSeverity: null, digestiveImpact: null, itchinessImpact: null },
         },
       ],
     })
@@ -1536,7 +1623,9 @@ describe("backfill confidence", () => {
           planGroupId: "plan-bf",
           productId: "prod-a",
           durationDays: 3,
-          scorecard: { planGroupId: "plan-bf", poopQuality: [4], itchSeverity: null },
+          quantity: 2,
+          quantityUnit: "cup",
+          scorecard: { planGroupId: "plan-bf", poopQuality: [4], itchSeverity: null, digestiveImpact: null, itchinessImpact: null },
         },
       ],
     })
@@ -1561,7 +1650,9 @@ describe("backfill confidence", () => {
           planGroupId: "plan-bf",
           productId: "prod-a",
           durationDays: 10,
-          scorecard: { planGroupId: "plan-bf", poopQuality: [3], itchSeverity: [2, 4] },
+          quantity: 2,
+          quantityUnit: "cup",
+          scorecard: { planGroupId: "plan-bf", poopQuality: [3], itchSeverity: [2, 4], digestiveImpact: null, itchinessImpact: null },
         },
       ],
     })
@@ -1586,7 +1677,9 @@ describe("backfill confidence", () => {
           planGroupId: "plan-bf",
           productId: "prod-a",
           durationDays: 30,
-          scorecard: { planGroupId: "plan-bf", poopQuality: null, itchSeverity: [3] },
+          quantity: 2,
+          quantityUnit: "cup",
+          scorecard: { planGroupId: "plan-bf", poopQuality: null, itchSeverity: [3], digestiveImpact: null, itchinessImpact: null },
         },
       ],
     })
@@ -1611,7 +1704,9 @@ describe("backfill confidence", () => {
           planGroupId: "plan-bf",
           productId: "prod-a",
           durationDays: 10,
-          scorecard: { planGroupId: "plan-bf", poopQuality: null, itchSeverity: null },
+          quantity: 2,
+          quantityUnit: "cup",
+          scorecard: { planGroupId: "plan-bf", poopQuality: null, itchSeverity: null, digestiveImpact: null, itchinessImpact: null },
         },
       ],
     })
@@ -1657,6 +1752,7 @@ describe("flagCrossReactivity", () => {
       daysWithBackfill: 0,
       isAllergenicallyRelevant: true,
       isSplit: false,
+      distinctProductCount: 1,
       ...overrides,
     }
   }
@@ -1785,6 +1881,8 @@ describe("runCorrelation", () => {
           endDate: null,
           planGroupId: "plan-1",
           createdAt: "2024-06-01T00:00:00Z",
+          quantity: 2,
+          quantityUnit: "cup",
         },
       ],
       productIngredientMap: new Map([["prod-a", productIngs]]),
@@ -1817,5 +1915,177 @@ describe("runCorrelation", () => {
     const result = runCorrelation(input, DEFAULT_CORRELATION_OPTIONS)
     expect(result.scores).toHaveLength(0)
     expect(result.totalDays).toBe(3)
+  })
+
+  it("populates giMergedScores that merge forms by family", () => {
+    const input = makeInput({
+      windowStart: "2024-06-01",
+      windowEnd: "2024-06-10",
+      feedingPeriods: [
+        { id: "fp1", productId: "prod1", startDate: "2024-06-01", endDate: null, planGroupId: "pg1", createdAt: "2024-01-01", quantity: 1, quantityUnit: "piece" },
+      ],
+      productIngredientMap: new Map([
+        ["prod1", makeProductIngredients("prod1", [
+          { position: 1, ingredient: makeIngredient({ id: "i1", normalizedName: "corn", family: "corn", formType: null }) },
+          { position: 5, ingredient: makeIngredient({ id: "i2", normalizedName: "corn oil", family: "corn", formType: "oil" }) },
+        ])],
+      ]),
+      poopLogs: Array.from({ length: 10 }, (_, i) => ({
+        date: `2024-06-${String(i + 1).padStart(2, "0")}`,
+        firmnessScore: 4,
+      })),
+    })
+    const result = runCorrelation(input, { ...DEFAULT_CORRELATION_OPTIONS, transitionBufferDays: 0 })
+
+    // Regular scores should have separate entries for "corn" and "corn (oil)"
+    expect(result.scores.find((s) => s.key === "corn")).toBeDefined()
+    expect(result.scores.find((s) => s.key === "corn (oil)")).toBeDefined()
+
+    // GI merged should combine into single "corn" entry
+    const merged = result.giMergedScores
+    const cornEntries = merged.filter((s) => s.key === "corn" || s.key === "corn (oil)")
+    expect(cornEntries).toHaveLength(1)
+    expect(cornEntries[0].key).toBe("corn")
+    expect(cornEntries[0].isAllergenicallyRelevant).toBe(true)
+  })
+})
+
+// ---------------------------------------------------------------------------
+// mergeScoresForGI
+// ---------------------------------------------------------------------------
+
+describe("mergeScoresForGI", () => {
+  function makeScore(overrides: Partial<IngredientScore>): IngredientScore {
+    return {
+      key: "chicken",
+      dayCount: 10,
+      weightedPoopScore: 3,
+      weightedItchScore: null,
+      rawAvgPoopScore: 3,
+      rawAvgItchScore: null,
+      vomitCount: 0,
+      badDayCount: 1,
+      goodDayCount: 7,
+      badPoopDayCount: 1,
+      goodPoopDayCount: 7,
+      badItchDayCount: 0,
+      goodItchDayCount: 0,
+      confidence: "medium",
+      exposureFraction: 0.5,
+      bestPosition: 1,
+      positionCategory: "primary",
+      appearedInTreats: false,
+      excludedDays: 0,
+      daysWithEventLogs: 10,
+      daysWithScorecardOnly: 0,
+      daysWithBackfill: 0,
+      isAllergenicallyRelevant: true,
+      isSplit: false,
+      distinctProductCount: 1,
+      ...overrides,
+    }
+  }
+
+  it("passes through single-form scores unchanged (except isAllergenicallyRelevant)", () => {
+    const scores = [
+      makeScore({ key: "chicken", isAllergenicallyRelevant: true }),
+      makeScore({ key: "rice", isAllergenicallyRelevant: true }),
+    ]
+    const merged = mergeScoresForGI(scores)
+    expect(merged).toHaveLength(2)
+    expect(merged.map((s) => s.key).sort()).toEqual(["chicken", "rice"])
+  })
+
+  it("marks fats/oils as allergenically relevant in GI mode", () => {
+    const scores = [
+      makeScore({ key: "chicken (fat)", isAllergenicallyRelevant: false }),
+    ]
+    const merged = mergeScoresForGI(scores)
+    expect(merged).toHaveLength(1)
+    expect(merged[0].key).toBe("chicken")
+    expect(merged[0].isAllergenicallyRelevant).toBe(true)
+  })
+
+  it("merges multiple forms of the same family into one entry", () => {
+    const scores = [
+      makeScore({ key: "corn", dayCount: 20, weightedPoopScore: 3.0, bestPosition: 2, distinctProductCount: 2 }),
+      makeScore({ key: "corn (oil)", dayCount: 15, weightedPoopScore: 4.0, bestPosition: 8, distinctProductCount: 1, isAllergenicallyRelevant: false }),
+      makeScore({ key: "corn (fat)", dayCount: 10, weightedPoopScore: 5.0, bestPosition: 12, distinctProductCount: 1, isAllergenicallyRelevant: false }),
+    ]
+    const merged = mergeScoresForGI(scores)
+    const cornEntries = merged.filter((s) => s.key.startsWith("corn"))
+    expect(cornEntries).toHaveLength(1)
+
+    const corn = cornEntries[0]
+    expect(corn.key).toBe("corn")
+    expect(corn.bestPosition).toBe(2) // min
+    expect(corn.positionCategory).toBe("primary") // recomputed from bestPosition 2
+    expect(corn.dayCount).toBe(20) // max
+    expect(corn.isAllergenicallyRelevant).toBe(true)
+    expect(corn.distinctProductCount).toBe(4) // sum: 2 + 1 + 1
+  })
+
+  it("computes day-count-weighted average for weighted scores", () => {
+    const scores = [
+      makeScore({ key: "corn", dayCount: 20, weightedPoopScore: 3.0 }),
+      makeScore({ key: "corn (oil)", dayCount: 10, weightedPoopScore: 6.0 }),
+    ]
+    const merged = mergeScoresForGI(scores)
+    const corn = merged.find((s) => s.key === "corn")!
+    // (3.0 * 20 + 6.0 * 10) / (20 + 10) = 120/30 = 4.0
+    expect(corn.weightedPoopScore).toBe(4.0)
+  })
+
+  it("passes through ambiguous keys unmodified", () => {
+    const scores = [
+      makeScore({ key: "poultry (ambiguous)", dayCount: 5 }),
+    ]
+    const merged = mergeScoresForGI(scores)
+    expect(merged).toHaveLength(1)
+    expect(merged[0].key).toBe("poultry (ambiguous)")
+    expect(merged[0].isAllergenicallyRelevant).toBe(true)
+  })
+
+  it("keeps hydrolyzed form separate from base family", () => {
+    const scores = [
+      makeScore({ key: "chicken", dayCount: 10, weightedPoopScore: 2.0 }),
+      makeScore({ key: "chicken (hydrolyzed)", dayCount: 5, weightedPoopScore: 1.5 }),
+    ]
+    const merged = mergeScoresForGI(scores)
+    const chickenEntries = merged.filter((s) => s.key.startsWith("chicken"))
+    expect(chickenEntries).toHaveLength(2)
+    expect(chickenEntries.map((s) => s.key).sort()).toEqual(["chicken", "chicken (hydrolyzed)"])
+    expect(chickenEntries.every((s) => s.isAllergenicallyRelevant)).toBe(true)
+  })
+
+  it("preserves crossReactivity from any form", () => {
+    const scores = [
+      makeScore({ key: "chicken", dayCount: 10, crossReactivityGroup: "poultry" }),
+      makeScore({ key: "chicken (fat)", dayCount: 5, isAllergenicallyRelevant: false }),
+    ]
+    const merged = mergeScoresForGI(scores)
+    const chicken = merged.find((s) => s.key === "chicken")!
+    expect(chicken.crossReactivityGroup).toBe("poultry")
+  })
+
+  it("uses max for day counts to avoid double-counting overlapping days", () => {
+    const scores = [
+      makeScore({ key: "corn", dayCount: 20, badDayCount: 5, goodDayCount: 12 }),
+      makeScore({ key: "corn (oil)", dayCount: 15, badDayCount: 8, goodDayCount: 6 }),
+    ]
+    const merged = mergeScoresForGI(scores)
+    const corn = merged.find((s) => s.key === "corn")!
+    expect(corn.dayCount).toBe(20)
+    expect(corn.badDayCount).toBe(8)
+    expect(corn.goodDayCount).toBe(12)
+  })
+
+  it("sets appearedInTreats true if any form appeared in treats", () => {
+    const scores = [
+      makeScore({ key: "chicken", appearedInTreats: false }),
+      makeScore({ key: "chicken (fat)", appearedInTreats: true }),
+    ]
+    const merged = mergeScoresForGI(scores)
+    expect(merged.find((s) => s.key === "chicken")!.appearedInTreats).toBe(true)
   })
 })
