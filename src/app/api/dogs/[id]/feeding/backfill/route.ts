@@ -25,7 +25,7 @@ interface BackfillBody {
   endDate: string
   approximateDuration?: string
   planName?: string
-  scorecard?: ScorecardInput
+  scorecard: ScorecardInput
 }
 
 function isValidDate(s: string): boolean {
@@ -73,6 +73,49 @@ export async function POST(
       )
     }
 
+    if (!body.scorecard?.poopQuality || !body.scorecard?.itchSeverity) {
+      return NextResponse.json(
+        { error: "scorecard with poopQuality and itchSeverity is required for backfills" },
+        { status: 400 },
+      )
+    }
+
+    const poopArr = Array.isArray(body.scorecard.poopQuality)
+      ? body.scorecard.poopQuality
+      : [body.scorecard.poopQuality]
+    const itchArr = Array.isArray(body.scorecard.itchSeverity)
+      ? body.scorecard.itchSeverity
+      : [body.scorecard.itchSeverity]
+
+    if (poopArr.length === 0 || itchArr.length === 0) {
+      return NextResponse.json(
+        { error: "scorecard poopQuality and itchSeverity must be non-empty arrays" },
+        { status: 400 },
+      )
+    }
+
+    if (poopArr.some((v) => v < 1 || v > 7)) {
+      return NextResponse.json(
+        { error: "poopQuality scores must be between 1 and 7" },
+        { status: 400 },
+      )
+    }
+
+    if (itchArr.some((v) => v < 0 || v > 5)) {
+      return NextResponse.json(
+        { error: "itchSeverity scores must be between 0 and 5" },
+        { status: 400 },
+      )
+    }
+
+    const notes = body.scorecard.notes ?? null
+    if (notes && notes.length > 2000) {
+      return NextResponse.json(
+        { error: "Notes must be 2000 characters or fewer" },
+        { status: 400 },
+      )
+    }
+
     const startDate = body.startDate
     const endDate = body.endDate
     const approximateDuration = body.approximateDuration ?? durationFromRange(startDate, endDate)
@@ -103,29 +146,15 @@ export async function POST(
 
     const created = await db.insert(feedingPeriods).values(rows).returning()
 
-    // Create optional scorecard
-    if (body.scorecard) {
-      await db.insert(foodScorecards).values({
-        planGroupId,
-        poopQuality: body.scorecard.poopQuality != null
-          ? (Array.isArray(body.scorecard.poopQuality)
-            ? body.scorecard.poopQuality
-            : [body.scorecard.poopQuality])
-          : null,
-        itchSeverity: body.scorecard.itchSeverity != null
-          ? (Array.isArray(body.scorecard.itchSeverity)
-            ? body.scorecard.itchSeverity
-            : [body.scorecard.itchSeverity])
-          : null,
-        digestiveImpact:
-          body.scorecard
-            .digestiveImpact as typeof foodScorecards.$inferInsert.digestiveImpact,
-        itchinessImpact:
-          body.scorecard
-            .itchinessImpact as typeof foodScorecards.$inferInsert.itchinessImpact,
-        notes: body.scorecard.notes ?? null,
-      })
-    }
+    // Create scorecard (required for backfills)
+    await db.insert(foodScorecards).values({
+      planGroupId,
+      poopQuality: poopArr.sort((a, b) => a - b),
+      itchSeverity: itchArr.sort((a, b) => a - b),
+      digestiveImpact: null,
+      itchinessImpact: null,
+      notes,
+    })
 
     return NextResponse.json(
       { planGroupId, items: created },

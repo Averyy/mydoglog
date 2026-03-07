@@ -6,18 +6,16 @@ import { eq, and } from "drizzle-orm"
 
 type RouteParams = { params: Promise<{ planGroupId: string }> }
 
-const VALID_ITCHINESS_IMPACT = ["better", "no_change", "worse"] as const
-
 async function verifyPlanOwnership(
   planGroupId: string,
-): Promise<{ userId: string } | NextResponse> {
+): Promise<{ userId: string; isBackfill: boolean } | NextResponse> {
   const session = await auth.api.getSession({ headers: await headers() })
   if (!session?.user) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 })
   }
 
   const [period] = await db
-    .select({ dogId: feedingPeriods.dogId })
+    .select({ dogId: feedingPeriods.dogId, isBackfill: feedingPeriods.isBackfill })
     .from(feedingPeriods)
     .where(eq(feedingPeriods.planGroupId, planGroupId))
     .limit(1)
@@ -35,7 +33,7 @@ async function verifyPlanOwnership(
     return NextResponse.json({ error: "Not found" }, { status: 404 })
   }
 
-  return { userId: session.user.id }
+  return { userId: session.user.id, isBackfill: period.isBackfill }
 }
 
 export async function GET(
@@ -65,8 +63,6 @@ export async function GET(
 interface ScorecardBody {
   poopQuality?: number | number[] | null
   itchSeverity?: number | number[] | null
-  digestiveImpact?: string | null
-  itchinessImpact?: string | null
   notes?: string | null
 }
 
@@ -78,6 +74,13 @@ export async function PUT(
     const { planGroupId } = await params
     const ownerResult = await verifyPlanOwnership(planGroupId)
     if (ownerResult instanceof NextResponse) return ownerResult
+
+    if (!ownerResult.isBackfill) {
+      return NextResponse.json(
+        { error: "Scorecards can only be saved for backfill periods" },
+        { status: 400 },
+      )
+    }
 
     const body = (await request.json()) as ScorecardBody
 
@@ -108,25 +111,11 @@ export async function PUT(
       }
       itchSeverity = arr.sort((a, b) => a - b)
     }
-    if (
-      body.digestiveImpact &&
-      !VALID_ITCHINESS_IMPACT.includes(
-        body.digestiveImpact as typeof VALID_ITCHINESS_IMPACT[number],
-      )
-    ) {
+
+    const notes = body.notes ?? null
+    if (notes && notes.length > 2000) {
       return NextResponse.json(
-        { error: "Invalid digestiveImpact value" },
-        { status: 400 },
-      )
-    }
-    if (
-      body.itchinessImpact &&
-      !VALID_ITCHINESS_IMPACT.includes(
-        body.itchinessImpact as typeof VALID_ITCHINESS_IMPACT[number],
-      )
-    ) {
-      return NextResponse.json(
-        { error: "Invalid itchinessImpact value" },
+        { error: "Notes must be 2000 characters or fewer" },
         { status: 400 },
       )
     }
@@ -135,13 +124,9 @@ export async function PUT(
       planGroupId,
       poopQuality,
       itchSeverity,
-      digestiveImpact:
-        body.digestiveImpact as typeof VALID_ITCHINESS_IMPACT[number] | null ??
-        null,
-      itchinessImpact:
-        body.itchinessImpact as typeof VALID_ITCHINESS_IMPACT[number] | null ??
-        null,
-      notes: body.notes ?? null,
+      digestiveImpact: null,
+      itchinessImpact: null,
+      notes,
     }
 
     // Upsert: delete existing, then insert

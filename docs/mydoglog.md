@@ -50,7 +50,7 @@ The **routine template** (food + supplements + medications) pre-fills the daily 
 
 ### Food Scorecard
 
-A dedicated page for reviewing and rating food history. Three sections: foods already rated (with verdict badges), foods fed but not yet rated, and the full product database for reference. Pull-based — the user reviews at their own pace.
+A dedicated page for viewing food history and ingredient analysis. Active plans show computed scores from daily logs. Past backfilled periods (food fed before the app existed) require a mandatory scorecard (poop quality range + itch severity range) since no daily logs exist. The correlation engine uses daily logs as the primary signal and falls back to scorecard data only for backfills.
 
 ### Two-Track Correlation Engine
 
@@ -94,7 +94,7 @@ See `CLAUDE.md` for development rules and patterns.
 **User side (app-managed):**
 - Users → Dogs → all logging tables
 - **FeedingPeriods** grouped by `plan_group_id` (a routine = a set of concurrent products)
-- **FoodScorecards** attach to plan groups (rate the whole routine, not individual products)
+- **FoodScorecards** attach to plan groups — only used for backfills (mandatory poop+itch ranges). Active plans derive scores from daily logs.
 - **PoopLogs, ItchinessLogs, TreatLogs, VomitLogs, SymptomLogs, Medications, AccidentalExposures** — all have `date` (required) + `datetime` (nullable). 1 entry/day = daily summary, 2+ = individual events.
 - **PollenLogs** — 1 per city per day, auto-collected
 

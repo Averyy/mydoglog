@@ -238,6 +238,8 @@ export interface RawPollenLog {
 export interface RawBackfill {
   planGroupId: string
   productId: string
+  startDate: string
+  endDate: string
   durationDays: number
   quantity: number
   quantityUnit: string

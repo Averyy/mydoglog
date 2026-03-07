@@ -127,7 +127,6 @@ interface RoutineEditorContentProps {
   currentPlan: ActivePlan | null
   currentMedications: MedicationSummary[]
   onSaved: () => void
-  onScorecardNeeded: (planGroupId: string) => void
 }
 
 export function RoutineEditorContent({
@@ -135,7 +134,6 @@ export function RoutineEditorContent({
   currentPlan,
   currentMedications,
   onSaved,
-  onScorecardNeeded,
 }: RoutineEditorContentProps): React.ReactElement {
   const [planItems, setPlanItems] = useState<PlanItem[]>(() =>
     currentPlan && currentPlan.items.length > 0
@@ -291,12 +289,6 @@ export function RoutineEditorContent({
         ? planItemsChanged(planItems, currentPlan.items)
         : validPlanItems.length > 0
 
-      if (productsChanged && currentPlan?.planGroupId) {
-        // Existing plan being replaced — prompt scorecard first
-        onScorecardNeeded(currentPlan.planGroupId)
-        return
-      }
-
       if (productsChanged && validPlanItems.length > 0) {
         const body = {
           mode: "starting_today",
@@ -423,6 +415,7 @@ export function RoutineEditorContent({
               value={item.product}
               onChange={(product) => updatePlanItem(item.key, { product })}
               inline
+              dogId={dogId}
             />
             <div className="flex items-center gap-2">
               <Input
@@ -568,7 +561,6 @@ interface RoutineEditorProps {
   currentPlan: ActivePlan | null
   currentMedications: MedicationSummary[]
   onSaved: () => void
-  onScorecardNeeded: (planGroupId: string) => void
 }
 
 export function RoutineEditor({
@@ -578,7 +570,6 @@ export function RoutineEditor({
   currentPlan,
   currentMedications,
   onSaved,
-  onScorecardNeeded,
 }: RoutineEditorProps): React.ReactElement {
   function handleSaved(): void {
     onOpenChange(false)
@@ -599,7 +590,6 @@ export function RoutineEditor({
           currentPlan={currentPlan}
           currentMedications={currentMedications}
           onSaved={handleSaved}
-          onScorecardNeeded={onScorecardNeeded}
         />
       )}
     </ResponsiveModal>

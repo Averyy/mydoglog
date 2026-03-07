@@ -18,41 +18,13 @@ import type {
   Confidence,
   PositionCategory,
   ProductIngredientRecord,
+  RawBackfill,
 } from "./types"
 import { DEFAULT_SCORING_CONSTANTS } from "./types"
 
 // ---------------------------------------------------------------------------
 // Helpers
 // ---------------------------------------------------------------------------
-
-/**
- * Convert qualitative digestive impact to a synthetic poop score (Purina 1-7, 2 = ideal).
- * Used for backfills that have impact ratings but no numeric poop quality arrays.
- *
- * "better" = actively improved digestion (e.g. pumpkin topper) → good score.
- * "no_change" = didn't upset stomach → no signal (null). Expected baseline for treats.
- * "worse" = caused digestive issues → bad score. Important signal.
- */
-function impactToPoopScore(impact: string): number | null {
-  switch (impact) {
-    case "better": return 2.5
-    case "worse": return 5.0
-    default: return null
-  }
-}
-
-/**
- * Convert qualitative itch impact to a synthetic itch score (1-5 scale, 1 = none).
- *
- * Only "worse" produces a score — treats don't treat skin conditions,
- * so "better" and "no_change" are not meaningful itch signals.
- */
-function impactToItchScore(impact: string): number | null {
-  switch (impact) {
-    case "worse": return 3.5
-    default: return null
-  }
-}
 
 /** Average an array of scores, rounding to one decimal. */
 export function averageScores(scores: number[]): number {
@@ -807,86 +779,116 @@ function capitalize(s: string): string {
 }
 
 // ---------------------------------------------------------------------------
-// Backfill snapshots — aggregate historical records, no real dates
+// Backfill snapshots — day-by-day with volume weighting
 // ---------------------------------------------------------------------------
 
 /**
  * Build virtual day snapshots from backfill entries.
  *
- * Backfills are dateless historical records: "I fed this food for ~N days,
- * poop quality was X." Each backfill contributes N virtual snapshots with
- * the scorecard's poop quality as the outcome (set as poopScore directly,
- * not scorecardPoopFallback — backfill scorecards ARE the user's explicit
- * report). These are never transition- or exposure-buffered.
+ * Enumerates real calendar dates across all backfills and processes each
+ * date like buildDaySnapshots: builds a combined gram map from all active
+ * backfills for that date, then calls resolveIngredientsForProducts for
+ * correct volume weighting. A 25g topper gets ~4% weight vs a 600g food.
+ *
+ * Scorecard outcomes are gram-weighted averages across active backfills.
+ * Dates within the daily-log window are skipped (daily logs are higher
+ * quality). Uses `backfill:YYYY-MM-DD` date keys.
  */
 export function buildBackfillSnapshots(
   input: CorrelationInput,
 ): DaySnapshot[] {
+  // Filter to backfills with scorecard data, excluding probiotics
+  const validBackfills = input.backfills.filter((bf) => {
+    const info = input.productInfo.get(bf.productId)
+    if (info?.type === "probiotic") return false
+    return (bf.scorecard?.poopQuality?.length ?? 0) > 0 ||
+           (bf.scorecard?.itchSeverity?.length ?? 0) > 0
+  })
+
+  if (validBackfills.length === 0) return []
+
+  // Find the full date range across all backfills
+  let minDate = validBackfills[0].startDate
+  let maxDate = validBackfills[0].endDate
+  for (let i = 1; i < validBackfills.length; i++) {
+    if (validBackfills[i].startDate < minDate) minDate = validBackfills[i].startDate
+    if (validBackfills[i].endDate > maxDate) maxDate = validBackfills[i].endDate
+  }
+
+  const dates = enumerateDates(minDate, maxDate)
   const snapshots: DaySnapshot[] = []
 
-  for (const backfill of input.backfills) {
-    // Skip probiotics — therapeutic ingredients, not nutritional
-    const info = input.productInfo.get(backfill.productId)
-    const productType = info?.type ?? "dry_food"
-    if (productType === "probiotic") continue
+  // Pre-compute grams per backfill (avoids re-computing for every date)
+  const backfillGrams = new Map<RawBackfill, number>()
+  for (const bf of validBackfills) {
+    const info = input.productInfo.get(bf.productId)
+    backfillGrams.set(bf, estimateGrams(bf.quantity, bf.quantityUnit, info?.calorieContent ?? null))
+  }
 
-    const hasPoopData = !!backfill.scorecard?.poopQuality?.length
-    const hasItchData = !!backfill.scorecard?.itchSeverity?.length
-    const hasDigestiveImpact = backfill.scorecard?.digestiveImpact != null
-    const hasItchImpact = backfill.scorecard?.itchinessImpact != null
-    if (!hasPoopData && !hasItchData && !hasDigestiveImpact && !hasItchImpact) continue
+  for (const date of dates) {
+    // Skip dates covered by the daily-log window (daily logs are higher quality)
+    if (date >= input.windowStart && date <= input.windowEnd) continue
 
-    const productGrams = estimateGrams(backfill.quantity, backfill.quantityUnit, info?.calorieContent ?? null)
+    const activeBackfills = validBackfills.filter(
+      (bf) => bf.startDate <= date && bf.endDate >= date,
+    )
+    if (activeBackfills.length === 0) continue
 
-    const backfillGrams = new Map([[backfill.productId, productGrams]])
+    // Build combined gram map
+    const productGrams = new Map<string, number>()
+    const treatProductIds = new Set<string>()
 
-    const isTreatProduct = productType === "treat"
+    for (const bf of activeBackfills) {
+      const grams = backfillGrams.get(bf)!
+      productGrams.set(bf.productId, (productGrams.get(bf.productId) ?? 0) + grams)
+      const info = input.productInfo.get(bf.productId)
+      if (info?.type === "treat") treatProductIds.add(bf.productId)
+    }
+
+    // Resolve ingredients with volume weighting (shared logic)
     const ingredients = resolveIngredientsForProducts(
-      backfillGrams,
-      isTreatProduct ? new Set([backfill.productId]) : new Set(),
+      productGrams,
+      treatProductIds,
       input.productIngredientMap,
     )
-
     if (ingredients.length === 0) continue
 
-    // Numeric arrays take priority; fall back to qualitative impact → synthetic score
-    // impactToPoopScore/impactToItchScore return null for "no_change" (no signal).
-    let avgPoop: number | null = null
-    if (hasPoopData) {
-      avgPoop = averageScores(backfill.scorecard!.poopQuality!)
-    } else if (hasDigestiveImpact) {
-      avgPoop = impactToPoopScore(backfill.scorecard!.digestiveImpact!)
+    // Build outcome: gram-weighted average of scorecard scores
+    let poopNumerator = 0, poopDenominator = 0
+    let itchNumerator = 0, itchDenominator = 0
+    for (const bf of activeBackfills) {
+      const grams = backfillGrams.get(bf)!
+      if (bf.scorecard?.poopQuality?.length) {
+        poopNumerator += averageScores(bf.scorecard.poopQuality) * grams
+        poopDenominator += grams
+      }
+      if (bf.scorecard?.itchSeverity?.length) {
+        itchNumerator += averageScores(bf.scorecard.itchSeverity) * grams
+        itchDenominator += grams
+      }
     }
 
-    let avgItch: number | null = null
-    if (hasItchData) {
-      avgItch = averageScores(backfill.scorecard!.itchSeverity!)
-    } else if (hasItchImpact) {
-      avgItch = impactToItchScore(backfill.scorecard!.itchinessImpact!)
-    }
-
-    // Skip if no scoreable outcome (e.g. "no_change" on both tracks)
+    const avgPoop = poopDenominator > 0 ? poopNumerator / poopDenominator : null
+    const avgItch = itchDenominator > 0 ? itchNumerator / itchDenominator : null
     if (avgPoop == null && avgItch == null) continue
 
-    for (let i = 0; i < backfill.durationDays; i++) {
-      snapshots.push({
-        date: `backfill:${backfill.planGroupId}:${i}`,
-        ingredients,
-        outcome: {
-          poopScore: avgPoop,
-          itchScore: avgItch,
-          vomitCount: 0,
-          scorecardPoopFallback: null,
-          onItchinessMedication: false,
-          onDigestiveMedication: false,
-          pollenIndex: null,
-          hasAccidentalExposure: false,
-        },
-        isTransitionBuffer: false,
-        isExposureBuffer: false,
-        isBackfill: true,
-      })
-    }
+    snapshots.push({
+      date: `backfill:${date}`,
+      ingredients,
+      outcome: {
+        poopScore: avgPoop,
+        itchScore: avgItch,
+        vomitCount: 0,
+        scorecardPoopFallback: null,
+        onItchinessMedication: false,
+        onDigestiveMedication: false,
+        pollenIndex: null,
+        hasAccidentalExposure: false,
+      },
+      isTransitionBuffer: false,
+      isExposureBuffer: false,
+      isBackfill: true,
+    })
   }
 
   return snapshots

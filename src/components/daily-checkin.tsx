@@ -46,13 +46,6 @@ interface TreatEntry {
   quantityUnit: string
 }
 
-interface RecentTreatProduct {
-  productId: string
-  productName: string
-  brandName: string
-  imageUrl: string | null
-}
-
 export function DailyCheckInContent({
   dogId,
   onSaved,
@@ -72,7 +65,6 @@ export function DailyCheckInContent({
 
   // Treats state
   const [treats, setTreats] = useState<TreatEntry[]>([])
-  const [recentTreats, setRecentTreats] = useState<RecentTreatProduct[]>([])
 
   // Existing check-in IDs for edit-on-reopen
   const [existingPoopId, setExistingPoopId] = useState<string | null>(null)
@@ -107,16 +99,25 @@ export function DailyCheckInContent({
         }
 
         if (data.treats?.length > 0) {
-          setTreats(
-            data.treats.map((t: { productId: string; productName: string; brandName: string; imageUrl: string | null; quantity: string | null; quantityUnit: string | null }) => ({
-              productId: t.productId,
-              productName: t.productName,
-              brandName: t.brandName,
-              imageUrl: t.imageUrl,
-              quantity: t.quantity ?? "1",
-              quantityUnit: t.quantityUnit ?? "piece",
-            })),
-          )
+          // Merge duplicate products by summing quantities
+          const merged = new Map<string, TreatEntry>()
+          for (const t of data.treats as { productId: string; productName: string; brandName: string; imageUrl: string | null; quantity: string | null; quantityUnit: string | null }[]) {
+            const existing = merged.get(t.productId)
+            const qty = Number(t.quantity ?? "1") || 1
+            if (existing) {
+              existing.quantity = String(Number(existing.quantity) + qty)
+            } else {
+              merged.set(t.productId, {
+                productId: t.productId,
+                productName: t.productName,
+                brandName: t.brandName,
+                imageUrl: t.imageUrl,
+                quantity: String(qty),
+                quantityUnit: t.quantityUnit ?? "piece",
+              })
+            }
+          }
+          setTreats(Array.from(merged.values()))
           setExistingTreatIds(data.treats.map((t: { id: string }) => t.id))
         }
       } catch {
@@ -144,21 +145,6 @@ export function DailyCheckInContent({
     load()
   }, [dogId])
 
-  // Fetch recent treats
-  useEffect(() => {
-    async function loadRecentTreats(): Promise<void> {
-      try {
-        const res = await fetch(`/api/dogs/${dogId}/treats?recent=5`)
-        if (res.ok) {
-          const data = await res.json()
-          setRecentTreats(data)
-        }
-      } catch {
-        // Non-critical
-      }
-    }
-    loadRecentTreats()
-  }, [dogId])
 
   function toggleBodyArea(area: string): void {
     setBodyAreas((prev) =>
@@ -181,25 +167,6 @@ export function DailyCheckInContent({
         quantityUnit: "piece",
       },
     ])
-  }
-
-  function toggleRecentTreat(recent: RecentTreatProduct): void {
-    const exists = treats.some((t) => t.productId === recent.productId)
-    if (exists) {
-      setTreats((prev) => prev.filter((t) => t.productId !== recent.productId))
-    } else {
-      setTreats((prev) => [
-        ...prev,
-        {
-          productId: recent.productId,
-          productName: recent.productName,
-          brandName: recent.brandName,
-          imageUrl: recent.imageUrl,
-          quantity: "1",
-          quantityUnit: "piece",
-        },
-      ])
-    }
   }
 
   function removeTreat(productId: string): void {
@@ -415,36 +382,6 @@ export function DailyCheckInContent({
           </AccordionTrigger>
           <AccordionContent>
             <div className="space-y-4">
-              {/* Recent treats as toggleable buttons */}
-              {recentTreats.length > 0 && (
-                <div className="space-y-2">
-                  <Label className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
-                    Recent
-                  </Label>
-                  <div className="flex flex-wrap gap-1.5">
-                    {recentTreats.map((recent) => {
-                      const isSelected = treats.some((t) => t.productId === recent.productId)
-                      return (
-                        <button
-                          key={recent.productId}
-                          type="button"
-                          onClick={() => toggleRecentTreat(recent)}
-                          className={cn(
-                            "rounded-md border px-2.5 py-1.5 text-xs font-medium transition-all",
-                            "focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-1 outline-none",
-                            isSelected
-                              ? "border-primary bg-primary text-primary-foreground"
-                              : "border-border hover:bg-secondary",
-                          )}
-                        >
-                          {recent.productName}
-                        </button>
-                      )
-                    })}
-                  </div>
-                </div>
-              )}
-
               {/* Search for new treat */}
               <ProductPicker
                 value={null}
@@ -452,14 +389,15 @@ export function DailyCheckInContent({
                 productType="treat"
                 placeholder="Search to add treats..."
                 inline
+                dogId={dogId}
               />
 
               {/* Added treats list */}
               {treats.length > 0 && (
                 <div className="space-y-1.5">
-                  {treats.map((treat) => (
+                  {treats.map((treat, idx) => (
                     <ProductItem
-                      key={treat.productId}
+                      key={`${treat.productId}-${idx}`}
                       brandName={treat.brandName}
                       productName={treat.productName}
                       imageUrl={treat.imageUrl}

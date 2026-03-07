@@ -23,7 +23,6 @@ import { ResponsiveModal } from "@/components/responsive-modal"
 import {
   FoodScorecardForm,
   type ScorecardData,
-  type ScorecardFormMode,
 } from "@/components/food-scorecard-form"
 import { DateRangePicker } from "@/components/date-range-picker"
 import { differenceInDays, eachDayOfInterval, format, parseISO } from "date-fns"
@@ -107,10 +106,13 @@ function needsMoreData(score: IngredientScore): boolean {
 function scoreBorderColor(score: IngredientScore, mode: SignalMode = "both"): string {
   const poop = mode !== "itch" ? score.weightedPoopScore : null
   const itch = mode !== "stool" ? score.weightedItchScore : null
+  // Round to match the score color thresholds used in ScoreGrid
+  const roundedPoop = poop != null ? Math.round(poop) : null
+  const roundedItch = itch != null ? Math.round(itch) : null
   const isCritical =
-    (poop != null && poop >= 4.5) || (itch != null && itch >= 4.0)
+    (roundedPoop != null && roundedPoop >= 5) || (roundedItch != null && roundedItch >= 4)
   const isFair =
-    (poop != null && poop >= 3.5) || (itch != null && itch >= 3.0)
+    (roundedPoop != null && roundedPoop >= 4) || (roundedItch != null && roundedItch >= 3)
   if (isCritical) return "border-l-score-critical"
   if (isFair) return "border-l-score-fair"
   if (poop == null && itch == null) return "border-l-text-tertiary"
@@ -673,6 +675,7 @@ function IngredientAnalysisSection({
                     score={score}
                     ingredientProducts={activeIngredientProducts?.[score.key]}
                     totalDistinctProducts={correlation.totalDistinctProducts}
+                    signalMode={signalMode}
                   />
                 ))}
               </div>
@@ -722,10 +725,6 @@ export default function FoodScorecardPage() {
 
   const [data, setData] = useState<ScorecardPageData | null>(null)
   const [loading, setLoading] = useState(true)
-
-  // Score existing plan modal
-  const [scoreModalOpen, setScoreModalOpen] = useState(false)
-  const [selectedGroup, setSelectedGroup] = useState<FeedingPlanGroup | null>(null)
 
   // Backfill modal
   const [backfillOpen, setBackfillOpen] = useState(false)
@@ -777,45 +776,6 @@ export default function FoodScorecardPage() {
     }
     return map
   }, [data])
-
-  // ── Score existing plan ──
-
-  function openScorecard(group: FeedingPlanGroup): void {
-    setSelectedGroup(group)
-    setScoreModalOpen(true)
-  }
-
-  async function handleScoreSave(scorecardData: ScorecardData): Promise<void> {
-    if (!selectedGroup) return
-
-    try {
-      const res = await fetch(
-        `/api/feeding/groups/${selectedGroup.planGroupId}/scorecard`,
-        {
-          method: "PUT",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(scorecardData),
-        },
-      )
-
-      if (!res.ok) {
-        toast.error("Failed to save scorecard")
-        return
-      }
-
-      toast.success("Scorecard saved")
-      setScoreModalOpen(false)
-      setSelectedGroup(null)
-      fetchData()
-    } catch {
-      toast.error("Something went wrong")
-    }
-  }
-
-  function handleScoreSkip(): void {
-    setScoreModalOpen(false)
-    setSelectedGroup(null)
-  }
 
   // ── Backfill flow ──
 
@@ -933,53 +893,6 @@ export default function FoodScorecardPage() {
     }
   }
 
-  function handleBackfillSkip(): void {
-    if (editingGroup) {
-      // Already saved product/dates in handleBackfillNext, just close
-      setBackfillOpen(false)
-      setBackfillProduct(null)
-      setEditingGroup(null)
-      return
-    }
-    if (!backfillProduct) return
-    handleBackfillSaveWithoutScorecard()
-  }
-
-  async function handleBackfillSaveWithoutScorecard(): Promise<void> {
-    if (!backfillProduct || !backfillProduct.startDate || !backfillProduct.endDate) return
-    setBackfillSaving(true)
-
-    try {
-      const res = await fetch(`/api/dogs/${dogId}/feeding/backfill`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          items: [{
-            productId: backfillProduct.product.id,
-            quantity: backfillProduct.quantity || "1",
-            quantityUnit: backfillProduct.quantityUnit,
-          }],
-          startDate: backfillProduct.startDate,
-          endDate: backfillProduct.endDate,
-        }),
-      })
-
-      if (!res.ok) {
-        toast.error("Failed to save")
-        return
-      }
-
-      toast.success("Past food added")
-      setBackfillOpen(false)
-      setBackfillProduct(null)
-      fetchData()
-    } catch {
-      toast.error("Something went wrong")
-    } finally {
-      setBackfillSaving(false)
-    }
-  }
-
   async function handleEditBackfillSave(): Promise<boolean> {
     if (!editingGroup || !backfillProduct || !backfillProduct.startDate || !backfillProduct.endDate) return false
     setBackfillSaving(true)
@@ -1022,11 +935,6 @@ export default function FoodScorecardPage() {
 
   const NON_FOOD_TYPES = new Set(["treat", "supplement", "probiotic", "topper"])
 
-  function scorecardModeForGroup(group: FeedingPlanGroup | null): ScorecardFormMode {
-    if (!group) return "food"
-    return group.items.every((item) => SUPPLEMENT_PRODUCT_TYPES.has(item.type ?? "")) ? "supplement" : "food"
-  }
-
   const existingPeriods = useMemo(() => {
     if (!data) return []
     const groups = [...data.past]
@@ -1064,6 +972,20 @@ export default function FoodScorecardPage() {
     })
     return match?.label ?? null
   }, [backfillProduct?.startDate, backfillProduct?.endDate, backfillProduct?.product.type, editingGroup, existingPeriods])
+
+  const activeLogOverlap = useMemo((): boolean => {
+    if (!backfillProduct?.startDate || !backfillProduct?.endDate) return false
+    if (!data) return false
+    const s = backfillProduct.startDate
+    const e = backfillProduct.endDate
+    const allGroups = [...data.past]
+    if (data.active) allGroups.push(data.active)
+    return allGroups.some((g) => {
+      if (g.isBackfill) return false
+      const pEnd = g.endDate ?? "9999-12-31"
+      return s <= pEnd && g.startDate <= e
+    })
+  }, [backfillProduct?.startDate, backfillProduct?.endDate, data])
 
   // ── Render ──
 
@@ -1129,8 +1051,6 @@ export default function FoodScorecardPage() {
                     avgStool={avgStool}
                     avgItch={avgItch}
                     days={days}
-                    stoolImpact={sc?.digestiveImpact as "better" | "no_change" | "worse" | null}
-                    itchImpact={sc?.itchinessImpact as "better" | "no_change" | "worse" | null}
                   />
                 </div>
                 <div className="pt-3">
@@ -1167,8 +1087,6 @@ export default function FoodScorecardPage() {
                         avgStool={avgStool}
                         avgItch={avgItch}
                         days={days}
-                        stoolImpact={sc?.digestiveImpact as "better" | "no_change" | "worse" | null}
-                        itchImpact={sc?.itchinessImpact as "better" | "no_change" | "worse" | null}
                       />
                     </div>
                     <div className="pt-3 flex items-center justify-between gap-2">
@@ -1176,14 +1094,16 @@ export default function FoodScorecardPage() {
                         data={productIngredientDataMap.get(item.productId)}
                         correlationScores={correlation?.scores ?? []}
                       />
-                      <button
-                        type="button"
-                        onClick={() => group.isBackfill ? openEditBackfill(group) : openScorecard(group)}
-                        className="flex shrink-0 items-center gap-1 text-xs text-primary hover:underline underline-offset-2"
-                      >
-                        <Pencil className="size-3" />
-                        Edit
-                      </button>
+                      {group.isBackfill && (
+                        <button
+                          type="button"
+                          onClick={() => openEditBackfill(group)}
+                          className="flex shrink-0 items-center gap-1 text-xs text-primary hover:underline underline-offset-2"
+                        >
+                          <Pencil className="size-3" />
+                          Edit
+                        </button>
+                      )}
                     </div>
                   </FoodScoreCard>
                 )
@@ -1197,24 +1117,6 @@ export default function FoodScorecardPage() {
         correlation={correlation}
         loading={loading}
       />
-
-      {/* Score existing plan modal */}
-      <ResponsiveModal
-        open={scoreModalOpen}
-        onOpenChange={setScoreModalOpen}
-        title={selectedGroup?.scorecard ? "Edit scorecard" : "Rate this food"}
-        description="How did this work out?"
-        size="lg"
-      >
-        <FoodScorecardForm
-          key={selectedGroup?.planGroupId}
-          onSave={handleScoreSave}
-          onSkip={handleScoreSkip}
-          initialData={selectedGroup?.scorecard ?? undefined}
-          skipLabel={selectedGroup?.scorecard ? "Cancel" : "Skip"}
-          mode={scorecardModeForGroup(selectedGroup)}
-        />
-      </ResponsiveModal>
 
       {/* Backfill modal */}
       <ResponsiveModal
@@ -1239,6 +1141,7 @@ export default function FoodScorecardPage() {
                 onChange={handleBackfillProductSelected}
                 placeholder="Search foods..."
                 inline
+                dogId={dogId}
               />
             </div>
 
@@ -1264,6 +1167,12 @@ export default function FoodScorecardPage() {
                     <p className="flex items-center gap-1.5 text-sm text-score-fair">
                       <Info className="size-4 shrink-0" />
                       Overlaps with {backfillOverlap}
+                    </p>
+                  )}
+                  {activeLogOverlap && (
+                    <p className="flex items-center gap-1.5 text-sm text-muted-foreground">
+                      <Info className="size-4 shrink-0" />
+                      Overlapping days with your logging period will use daily logs instead of this scorecard
                     </p>
                   )}
                 </div>
@@ -1312,7 +1221,7 @@ export default function FoodScorecardPage() {
                   disabled={!backfillProduct.startDate || !backfillProduct.endDate || backfillSaving}
                   className="mt-2 w-full"
                 >
-                  Next — {editingGroup ? "Edit scorecard" : SUPPLEMENT_PRODUCT_TYPES.has(backfillProduct?.product.type ?? "") ? "Rate this supplement" : "Rate this food"}
+                  Next — {editingGroup ? "Edit scorecard" : "Rate this food"}
                 </Button>
               </>
             )}
@@ -1321,11 +1230,7 @@ export default function FoodScorecardPage() {
           <FoodScorecardForm
             key={editingGroup?.planGroupId ?? "new"}
             onSave={handleBackfillSave}
-            onSkip={handleBackfillSkip}
             initialData={editingGroup?.scorecard ?? undefined}
-            hideSkip={!editingGroup}
-            skipLabel="Cancel"
-            mode={SUPPLEMENT_PRODUCT_TYPES.has(backfillProduct?.product.type ?? "") ? "supplement" : "backfill"}
           />
         )}
       </ResponsiveModal>

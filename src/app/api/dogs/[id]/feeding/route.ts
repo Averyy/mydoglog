@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server"
 import { requireDogOwnership, isNextResponse } from "@/lib/api-helpers"
-import { db, feedingPeriods, products, brands, foodScorecards } from "@/lib/db"
-import { eq, desc, sql } from "drizzle-orm"
+import { db, feedingPeriods, products, brands, foodScorecards, poopLogs, itchinessLogs, treatLogs } from "@/lib/db"
+import { eq, desc, sql, and, isNull } from "drizzle-orm"
 import type { FeedingPlanGroup, FeedingPlanItem } from "@/lib/types"
 
 type RouteParams = { params: Promise<{ id: string }> }
@@ -191,18 +191,60 @@ export async function POST(
         return NextResponse.json({ error: "Invalid mode" }, { status: 400 })
     }
 
-    // If starting_today, auto-end existing ongoing plans
+    // If starting_today, handle existing ongoing plans
     if (body.mode === "starting_today") {
       const yesterday = new Date()
       yesterday.setDate(yesterday.getDate() - 1)
       const yesterdayStr = yesterday.toISOString().split("T")[0]
 
-      await db
-        .update(feedingPeriods)
-        .set({ endDate: yesterdayStr, updatedAt: new Date() })
+      // Find existing ongoing plan group(s) to determine if they have logs
+      const ongoingPeriods = await db
+        .select({
+          planGroupId: feedingPeriods.planGroupId,
+          startDate: feedingPeriods.startDate,
+        })
+        .from(feedingPeriods)
         .where(
-          sql`${feedingPeriods.dogId} = ${dogId} AND ${feedingPeriods.endDate} IS NULL`,
+          and(
+            eq(feedingPeriods.dogId, dogId),
+            isNull(feedingPeriods.endDate),
+          ),
         )
+
+      // Get distinct plan group IDs
+      const ongoingGroupIds = [...new Set(ongoingPeriods.map((p) => p.planGroupId))]
+
+      // Wrap ongoing plan updates + new plan creation in a transaction
+      await db.transaction(async (tx) => {
+        for (const groupId of ongoingGroupIds) {
+          const groupPeriod = ongoingPeriods.find((p) => p.planGroupId === groupId)!
+
+          // Count daily logs for this period's date range
+          const [logCount] = await tx
+            .select({ count: sql<number>`count(*)` })
+            .from(
+              sql`(
+                SELECT 1 FROM ${poopLogs} WHERE ${poopLogs.dogId} = ${dogId} AND ${poopLogs.date} >= ${groupPeriod.startDate} AND ${poopLogs.date} <= ${yesterdayStr}
+                UNION ALL
+                SELECT 1 FROM ${itchinessLogs} WHERE ${itchinessLogs.dogId} = ${dogId} AND ${itchinessLogs.date} >= ${groupPeriod.startDate} AND ${itchinessLogs.date} <= ${yesterdayStr}
+                UNION ALL
+                SELECT 1 FROM ${treatLogs} WHERE ${treatLogs.dogId} = ${dogId} AND ${treatLogs.date} >= ${groupPeriod.startDate} AND ${treatLogs.date} <= ${yesterdayStr}
+              ) AS logs`,
+            )
+
+          if (Number(logCount.count) === 0) {
+            // No logs — delete the feeding periods and any scorecard
+            await tx.delete(foodScorecards).where(eq(foodScorecards.planGroupId, groupId))
+            await tx.delete(feedingPeriods).where(eq(feedingPeriods.planGroupId, groupId))
+          } else {
+            // Has logs — end-date as yesterday
+            await tx
+              .update(feedingPeriods)
+              .set({ endDate: yesterdayStr, updatedAt: new Date() })
+              .where(eq(feedingPeriods.planGroupId, groupId))
+          }
+        }
+      })
     }
 
     // Create feeding period rows for each item

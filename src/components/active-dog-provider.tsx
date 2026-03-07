@@ -1,6 +1,7 @@
 "use client"
 
-import { createContext, useContext, useState } from "react"
+import { createContext, useContext, useEffect, useState } from "react"
+import { prefetchProducts } from "@/components/product-picker"
 
 export type LogMode = "closed" | "selector" | "poop" | "treat" | "itch" | "checkin"
 
@@ -20,6 +21,11 @@ export function ActiveDogProvider({
 }): React.ReactElement {
   const [activeDogId, setActiveDogId] = useState<string | null>(null)
   const [logMode, setLogMode] = useState<LogMode>("closed")
+
+  // Warm product cache on app load so pickers open instantly
+  useEffect(() => {
+    prefetchProducts()
+  }, [])
 
   return (
     <ActiveDogContext.Provider

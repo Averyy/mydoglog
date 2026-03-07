@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect, useCallback, useRef } from "react"
+import { useState, useEffect, useMemo, useRef } from "react"
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
 import {
   Command,
@@ -12,21 +12,60 @@ import {
 } from "@/components/ui/command"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { ChevronsUpDown, Loader2 } from "lucide-react"
+import { ChevronsUpDown } from "lucide-react"
 import { cn, smallImageUrl } from "@/lib/utils"
 import { useIsMobile } from "@/hooks/use-is-mobile"
 import type { ProductSummary } from "@/lib/types"
 import { PRODUCT_TYPE_LABELS } from "@/lib/labels"
 import { parseCalorieContent } from "@/lib/nutrition"
 
-const PAGE_SIZE = 30
+// ── Module-level cache ──────────────────────────────────────────────────────
 
-interface BrandInfo {
-  id: string
-  name: string
-  logoUrl: string | null
-  productCount: number
+interface CacheEntry {
+  items: ProductSummary[]
+  timestamp: number
 }
+
+const productCache = new Map<string, CacheEntry>()
+const CACHE_TTL = 2 * 60 * 1000 // 2 minutes
+
+function getCacheKey(productType?: string): string {
+  return productType ?? "__all__"
+}
+
+/** In-flight fetch promises to avoid duplicate requests */
+const inflight = new Map<string, Promise<ProductSummary[]>>()
+
+/** Prefetch products into the module-level cache. Safe to call multiple times. */
+export function prefetchProducts(productType?: string): void {
+  const cacheKey = getCacheKey(productType)
+  const cached = productCache.get(cacheKey)
+  if (cached && Date.now() - cached.timestamp < CACHE_TTL) return
+  if (inflight.has(cacheKey)) return
+
+  const params = new URLSearchParams({ all: "true" })
+  if (productType) params.set("type", productType)
+
+  const promise = fetch(`/api/products?${params}`)
+    .then((r) => {
+      if (!r.ok) throw new Error(`Products fetch failed: ${r.status}`)
+      return r.json()
+    })
+    .then((data: { items: ProductSummary[] }) => {
+      const items = data.items ?? []
+      productCache.set(cacheKey, { items, timestamp: Date.now() })
+      inflight.delete(cacheKey)
+      return items
+    })
+    .catch(() => {
+      inflight.delete(cacheKey)
+      return [] as ProductSummary[]
+    })
+
+  inflight.set(cacheKey, promise)
+}
+
+// ── Types ───────────────────────────────────────────────────────────────────
 
 interface ProductPickerProps {
   value: ProductSummary | null
@@ -35,6 +74,8 @@ interface ProductPickerProps {
   placeholder?: string
   /** Render dropdown inline instead of in a portal. Use inside Dialog/Drawer. */
   inline?: boolean
+  /** Enables "Recent" filter chip; fetches recent product IDs for this dog */
+  dogId?: string
 }
 
 export function ProductPicker({
@@ -43,127 +84,179 @@ export function ProductPicker({
   productType,
   placeholder = "Search products...",
   inline = false,
+  dogId,
 }: ProductPickerProps): React.ReactElement {
   const isMobile = useIsMobile()
   const [open, setOpen] = useState(false)
   const [query, setQuery] = useState("")
-  const [results, setResults] = useState<ProductSummary[]>([])
-  const [loading, setLoading] = useState(false)
-  const [loadingMore, setLoadingMore] = useState(false)
-  const [page, setPage] = useState(1)
-  const [hasMore, setHasMore] = useState(false)
-  const [loaded, setLoaded] = useState(false)
+  const [allProducts, setAllProducts] = useState<ProductSummary[]>([])
+  const [loading, setLoading] = useState(true)
   const [loadError, setLoadError] = useState(false)
-  const [brands, setBrands] = useState<BrandInfo[]>([])
-  const [selectedBrandId, setSelectedBrandId] = useState<string | null>(null)
+  const [activeFilter, setActiveFilter] = useState<string>("all")
+  const [recentProductIds, setRecentProductIds] = useState<string[]>([])
   const [failedImages, setFailedImages] = useState<Set<string>>(new Set())
-  const debounceRef = useRef<ReturnType<typeof setTimeout>>(null)
-  const sentinelRef = useRef<HTMLDivElement>(null)
   const listRef = useRef<HTMLDivElement>(null)
-  const queryRef = useRef(query)
-  const brandIdRef = useRef(selectedBrandId)
+  const filterBarRef = useRef<HTMLDivElement>(null)
 
-  queryRef.current = query
-  brandIdRef.current = selectedBrandId
-
-  const search = useCallback(
-    async (q: string, brandId: string | null) => {
-      setLoading(true)
-      setPage(1)
-      try {
-        const params = new URLSearchParams({ limit: String(PAGE_SIZE), page: "1" })
-        if (q) params.set("q", q)
-        if (productType) params.set("type", productType)
-        if (brandId) params.set("brand_id", brandId)
-        const res = await fetch(`/api/products?${params}`)
-        if (res.ok) {
-          const data = await res.json()
-          setResults(data.items ?? [])
-          setHasMore(data.page < data.totalPages)
-          setLoaded(true)
+  /** Fetch (or re-fetch) products into state from cache/network. */
+  function fetchProducts(): void {
+    setLoading(true)
+    setLoadError(false)
+    productCache.delete(getCacheKey(productType))
+    prefetchProducts(productType)
+    const promise = inflight.get(getCacheKey(productType))
+    if (promise) {
+      promise
+        .then((items) => {
+          setAllProducts(items)
           setLoadError(false)
-        } else {
-          setLoadError(true)
-        }
-      } catch {
-        setLoadError(true)
-      } finally {
-        setLoading(false)
-      }
-    },
-    [productType],
-  )
-
-  const loadMore = useCallback(async () => {
-    if (loadingMore || !hasMore) return
-    const q = queryRef.current
-    const brandId = brandIdRef.current
-    const nextPage = page + 1
-    setLoadingMore(true)
-    try {
-      const params = new URLSearchParams({ limit: String(PAGE_SIZE), page: String(nextPage) })
-      if (q) params.set("q", q)
-      if (productType) params.set("type", productType)
-      if (brandId) params.set("brand_id", brandId)
-      const res = await fetch(`/api/products?${params}`)
-      if (res.ok) {
-        const data = await res.json()
-        setResults((prev) => [...prev, ...(data.items ?? [])])
-        setPage(nextPage)
-        setHasMore(data.page < data.totalPages)
-      }
-    } finally {
-      setLoadingMore(false)
+        })
+        .catch(() => setLoadError(true))
+        .finally(() => setLoading(false))
     }
-  }, [loadingMore, hasMore, page, productType])
+  }
 
-  // Eagerly fetch brands and initial products on mount (warms API routes in dev)
+  // Smart default filter each time popover opens
+  const valueRef = useRef(value)
+  valueRef.current = value
+  const recentIdsRef = useRef(recentProductIds)
+  recentIdsRef.current = recentProductIds
+  const allProductsRef = useRef(allProducts)
+  allProductsRef.current = allProducts
+
   useEffect(() => {
-    fetch("/api/brands")
-      .then((r) => r.json())
-      .then((data: BrandInfo[]) => {
-        setBrands(data.filter((b) => b.productCount > 0))
-      })
-      .catch(() => {})
-    search("", null)
+    if (!open) return
+    if (productType === "treat") {
+      setActiveFilter("all")
+    } else if (valueRef.current) {
+      // Resolve brandId — value may have empty brandId if constructed without it
+      const brandId = valueRef.current.brandId
+        || allProductsRef.current.find((p) => p.id === valueRef.current!.id)?.brandId
+      if (brandId) {
+        setActiveFilter(brandId)
+      } else if (dogId && recentIdsRef.current.length > 0) {
+        setActiveFilter("recent")
+      } else {
+        setActiveFilter("all")
+      }
+    } else if (dogId && recentIdsRef.current.length > 0) {
+      setActiveFilter("recent")
+    } else {
+      setActiveFilter("all")
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
+  }, [open])
+
+  // Scroll active filter chip to center (RAF ensures DOM has painted)
+  useEffect(() => {
+    if (!open) return
+    const id = requestAnimationFrame(() => {
+      const bar = filterBarRef.current
+      if (!bar) return
+      const active = bar.querySelector("[data-active-filter]") as HTMLElement | null
+      if (!active) return
+      const barRect = bar.getBoundingClientRect()
+      const chipRect = active.getBoundingClientRect()
+      const scrollLeft = active.offsetLeft - barRect.width / 2 + chipRect.width / 2
+      bar.scrollTo({ left: scrollLeft, behavior: "instant" })
+    })
+    return () => cancelAnimationFrame(id)
+  }, [open, activeFilter])
+
+  // Fetch all products (with cache) + brands on mount
+  useEffect(() => {
+    const cacheKey = getCacheKey(productType)
+    const cached = productCache.get(cacheKey)
+
+    if (cached && Date.now() - cached.timestamp < CACHE_TTL) {
+      setAllProducts(cached.items)
+      setLoading(false)
+    } else {
+      // Reuse in-flight prefetch if one exists, otherwise start a new fetch
+      const existing = inflight.get(cacheKey)
+      const promise = existing ?? (() => {
+        prefetchProducts(productType)
+        return inflight.get(cacheKey)!
+      })()
+
+      promise
+        .then((items) => {
+          setAllProducts(items)
+          setLoadError(false)
+        })
+        .catch(() => setLoadError(true))
+        .finally(() => setLoading(false))
+    }
+
+  }, [productType])
+
+  // Fetch recent product IDs when dogId is provided
+  useEffect(() => {
+    if (!dogId) return
+    const params = new URLSearchParams()
+    if (productType) params.set("type", productType)
+    const qs = params.toString()
+    fetch(`/api/dogs/${dogId}/products/recent${qs ? `?${qs}` : ""}`)
+      .then((r) => {
+        if (!r.ok) throw new Error(`Recent products fetch failed: ${r.status}`)
+        return r.json()
+      })
+      .then((ids: string[]) => setRecentProductIds(ids))
+      .catch(() => {})
+  }, [dogId, productType])
 
   // Retry on error when opened
   useEffect(() => {
-    if (open && loadError) {
-      search(query, selectedBrandId)
+    if (open && loadError) fetchProducts()
+  }, [open, loadError, productType])
+
+  // Client-side filtering
+  const filteredProducts = useMemo(() => {
+    let list = allProducts
+
+    // Apply filter
+    if (activeFilter === "recent") {
+      list = recentProductIds
+        .map((id) => list.find((p) => p.id === id))
+        .filter((p): p is ProductSummary => !!p)
+    } else if (activeFilter !== "all") {
+      // brandId filter
+      list = list.filter((p) => p.brandId === activeFilter)
     }
-  }, [open, loadError, search, query, selectedBrandId])
 
-  // Debounced search on query text change
-  useEffect(() => {
-    if (!open || !loaded) return
-    if (debounceRef.current) clearTimeout(debounceRef.current)
-    debounceRef.current = setTimeout(() => search(query, selectedBrandId), 250)
-    return () => {
-      if (debounceRef.current) clearTimeout(debounceRef.current)
+    // Apply text search
+    if (query.trim()) {
+      const terms = query
+        .toLowerCase()
+        .split(/\s+/)
+        .filter(Boolean)
+      list = list.filter((p) => {
+        const haystack = `${p.name} ${p.brandName}`.toLowerCase()
+        return terms.every((t) => haystack.includes(t))
+      })
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [query, search, open, loaded])
 
-  // IntersectionObserver for infinite scroll — root must be the scroll container
-  useEffect(() => {
-    const sentinel = sentinelRef.current
-    const root = listRef.current
-    if (!sentinel || !root) return
+    return list
+  }, [allProducts, activeFilter, recentProductIds, query])
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0]?.isIntersecting) {
-          loadMore()
-        }
-      },
-      { root, threshold: 0.1 },
-    )
-    observer.observe(sentinel)
-    return () => observer.disconnect()
-  }, [loadMore])
+  // Derive brands from loaded products — no separate fetch needed
+  const brands = useMemo(() => {
+    const map = new Map<string, { name: string; count: number }>()
+    for (const p of allProducts) {
+      const existing = map.get(p.brandId)
+      if (existing) {
+        existing.count++
+      } else {
+        map.set(p.brandId, { name: p.brandName, count: 1 })
+      }
+    }
+    return Array.from(map.entries())
+      .filter(([, v]) => v.count > 0)
+      .sort((a, b) => a[1].name.localeCompare(b[1].name))
+      .map(([id, v]) => ({ id, name: v.name }))
+  }, [allProducts])
+
+  const showRecentChip = !!dogId && recentProductIds.length > 0
 
   /** Show packaging-aware label when possible (e.g. "Can" instead of "Wet food"). */
   function formatType(type: string | null, calorieContent: string | null): string {
@@ -174,7 +267,6 @@ export function ProductPicker({
         if (parsed.pouch !== undefined) return "Pouch"
         if (parsed.box !== undefined) return "Box"
       }
-      // Default wet food to "Can" — virtually all wet dog food is canned
       return "Can"
     }
     return PRODUCT_TYPE_LABELS[type] ?? type.replace(/_/g, " ")
@@ -190,12 +282,6 @@ export function ProductPicker({
 
   function handleImageError(productId: string): void {
     setFailedImages((prev) => new Set(prev).add(productId))
-  }
-
-  function handleBrandToggle(brandId: string): void {
-    const next = selectedBrandId === brandId ? null : brandId
-    setSelectedBrandId(next)
-    search(query, next)
   }
 
   return (
@@ -241,63 +327,98 @@ export function ProductPicker({
         disablePortal={inline && isMobile}
         onWheel={inline && !isMobile ? (e) => e.stopPropagation() : undefined}
       >
-        <Command shouldFilter={false}>
+        <Command shouldFilter={false} value={value?.id ?? ""}>
           <CommandInput
             placeholder={placeholder}
             value={query}
             onValueChange={setQuery}
             className="h-11"
           />
-          {brands.length > 0 && (
-            <div className="flex gap-1.5 overflow-x-auto border-b px-2 py-2">
-              {brands.map((brand) => (
+          {(brands.length > 0 || showRecentChip) && (
+            <div ref={filterBarRef} className="flex gap-1.5 overflow-x-auto border-b px-2 py-2">
+              <button
+                type="button"
+                onClick={() => setActiveFilter("all")}
+                aria-pressed={activeFilter === "all"}
+                {...(activeFilter === "all" ? { "data-active-filter": "" } : {})}
+                className={cn(
+                  "shrink-0 rounded-md border px-2.5 py-1 text-xs font-medium transition-colors",
+                  activeFilter === "all"
+                    ? "border-foreground bg-foreground text-background"
+                    : "border-border hover:bg-item-hover",
+                )}
+              >
+                All
+              </button>
+              {showRecentChip && (
                 <button
-                  key={brand.id}
                   type="button"
-                  onClick={() => handleBrandToggle(brand.id)}
+                  onClick={() => setActiveFilter("recent")}
+                  aria-pressed={activeFilter === "recent"}
+                  {...(activeFilter === "recent" ? { "data-active-filter": "" } : {})}
                   className={cn(
-                    "flex shrink-0 items-center gap-1.5 rounded-md border px-2.5 py-1 text-xs font-medium transition-colors",
-                    selectedBrandId === brand.id
+                    "shrink-0 rounded-md border px-2.5 py-1 text-xs font-medium transition-colors",
+                    activeFilter === "recent"
                       ? "border-foreground bg-foreground text-background"
                       : "border-border hover:bg-item-hover",
                   )}
                 >
-                  {brand.logoUrl && (
-                    <img
-                      src={brand.logoUrl}
-                      alt=""
-                      className="size-4 shrink-0 rounded-sm object-contain"
-                    />
+                  Recent
+                </button>
+              )}
+              {brands.map((brand) => (
+                <button
+                  key={brand.id}
+                  type="button"
+                  onClick={() =>
+                    setActiveFilter(activeFilter === brand.id ? "all" : brand.id)
+                  }
+                  aria-pressed={activeFilter === brand.id}
+                  {...(activeFilter === brand.id ? { "data-active-filter": "" } : {})}
+                  className={cn(
+                    "shrink-0 rounded-md border px-2.5 py-1 text-xs font-medium transition-colors",
+                    activeFilter === brand.id
+                      ? "border-foreground bg-foreground text-background"
+                      : "border-border hover:bg-item-hover",
                   )}
+                >
                   {brand.name}
                 </button>
               ))}
             </div>
           )}
           <CommandList ref={listRef} className="min-h-[200px]">
-            {loading && results.length === 0 && (
-              <div className="flex items-center justify-center py-8">
-                <Loader2 className="size-5 animate-spin text-muted-foreground" />
+            {loading && (
+              <div className="p-1">
+                {Array.from({ length: 6 }).map((_, i) => (
+                  <div key={i} className="flex min-h-[48px] items-center gap-3 px-2 py-1.5">
+                    <div className="size-10 shrink-0 animate-pulse rounded bg-muted" />
+                    <div className="flex flex-1 flex-col gap-1.5">
+                      <div className="h-3.5 w-3/4 animate-pulse rounded bg-muted" />
+                      <div className="h-3 w-1/3 animate-pulse rounded bg-muted" />
+                    </div>
+                  </div>
+                ))}
               </div>
             )}
-            {!loading && loadError && results.length === 0 && (
+            {!loading && loadError && (
               <div className="py-6 text-center text-sm text-muted-foreground">
                 Failed to load products.{" "}
                 <button
                   type="button"
-                  onClick={() => search(query, selectedBrandId)}
+                  onClick={fetchProducts}
                   className="text-primary underline underline-offset-2"
                 >
                   Retry
                 </button>
               </div>
             )}
-            {loaded && !loading && !loadError && results.length === 0 && (
+            {!loading && !loadError && filteredProducts.length === 0 && (
               <CommandEmpty>No products found.</CommandEmpty>
             )}
-            {results.length > 0 && (
-              <CommandGroup className={cn(loading && "opacity-50 transition-opacity")}>
-                {results.map((product) => {
+            {filteredProducts.length > 0 && (
+              <CommandGroup>
+                {filteredProducts.map((product) => {
                   const imgFailed = failedImages.has(product.id)
                   return (
                     <CommandItem
@@ -308,7 +429,7 @@ export function ProductPicker({
                         setOpen(false)
                         setQuery("")
                       }}
-                      className="min-h-[48px] gap-3"
+                      className="min-h-[48px] gap-3 [content-visibility:auto] [contain-intrinsic-size:auto_48px]"
                       title={`${product.brandName} — ${product.name}`}
                     >
                       <div className="flex size-10 shrink-0 items-center justify-center overflow-hidden rounded bg-muted-subtle [&_img]:mix-blend-multiply">
@@ -340,13 +461,6 @@ export function ProductPicker({
                   )
                 })}
               </CommandGroup>
-            )}
-            {hasMore && (
-              <div ref={sentinelRef} className="flex items-center justify-center py-2">
-                {loadingMore && (
-                  <Loader2 className="size-4 animate-spin text-muted-foreground" />
-                )}
-              </div>
             )}
           </CommandList>
         </Command>

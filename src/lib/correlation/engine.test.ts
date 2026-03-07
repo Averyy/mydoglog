@@ -11,6 +11,7 @@ import {
   positionCategory,
   isNonAllergenicForm,
   estimateGrams,
+  buildBackfillSnapshots,
 } from "./engine"
 import type {
   IngredientRecord,
@@ -1553,6 +1554,8 @@ describe("distinct product count", () => {
         {
           planGroupId: "plan-a",
           productId: "prod-a",
+          startDate: "2024-01-01",
+          endDate: "2024-01-10",
           durationDays: 10,
           quantity: 2,
           quantityUnit: "cup",
@@ -1561,6 +1564,8 @@ describe("distinct product count", () => {
         {
           planGroupId: "plan-b",
           productId: "prod-b",
+          startDate: "2024-01-11",
+          endDate: "2024-01-20",
           durationDays: 10,
           quantity: 2,
           quantityUnit: "cup",
@@ -1595,6 +1600,8 @@ describe("backfill confidence", () => {
         {
           planGroupId: "plan-bf",
           productId: "prod-a",
+          startDate: "2024-01-01",
+          endDate: "2024-02-29",
           durationDays: 60,
           quantity: 2,
           quantityUnit: "cup",
@@ -1622,6 +1629,8 @@ describe("backfill confidence", () => {
         {
           planGroupId: "plan-bf",
           productId: "prod-a",
+          startDate: "2024-01-01",
+          endDate: "2024-01-03",
           durationDays: 3,
           quantity: 2,
           quantityUnit: "cup",
@@ -1649,6 +1658,8 @@ describe("backfill confidence", () => {
         {
           planGroupId: "plan-bf",
           productId: "prod-a",
+          startDate: "2024-01-01",
+          endDate: "2024-01-10",
           durationDays: 10,
           quantity: 2,
           quantityUnit: "cup",
@@ -1676,6 +1687,8 @@ describe("backfill confidence", () => {
         {
           planGroupId: "plan-bf",
           productId: "prod-a",
+          startDate: "2024-01-01",
+          endDate: "2024-01-30",
           durationDays: 30,
           quantity: 2,
           quantityUnit: "cup",
@@ -1703,6 +1716,8 @@ describe("backfill confidence", () => {
         {
           planGroupId: "plan-bf",
           productId: "prod-a",
+          startDate: "2024-01-01",
+          endDate: "2024-01-10",
           durationDays: 10,
           quantity: 2,
           quantityUnit: "cup",
@@ -1713,6 +1728,131 @@ describe("backfill confidence", () => {
 
     const result = runCorrelation(input, opts)
     expect(result.scores.length).toBe(0)
+  })
+
+  it("overlapping backfills share volume weighting on overlapping dates", () => {
+    // Food (30 days) partially overlaps supplement (11 days in the middle).
+    // On overlapping dates, both ingredients should appear with volume weighting.
+    // On non-overlapping dates, only the active product's ingredients should appear.
+    const chickenIng = makeIngredient({ id: "ing-chicken", family: "chicken" })
+    const pumpkinIng = makeIngredient({ id: "ing-pumpkin", family: "pumpkin" })
+    const foodIngs = makeProductIngredients("prod-food", [
+      { position: 1, ingredient: chickenIng },
+    ])
+    const suppIngs = makeProductIngredients("prod-supp", [
+      { position: 1, ingredient: pumpkinIng },
+    ])
+
+    const input = makeInput({
+      productIngredientMap: new Map([
+        ["prod-food", foodIngs],
+        ["prod-supp", suppIngs],
+      ]),
+      productInfo: new Map([
+        ["prod-food", { type: "dry_food", calorieContent: null }],
+        ["prod-supp", { type: "topper", calorieContent: null }],
+      ]),
+      backfills: [
+        {
+          planGroupId: "plan-food",
+          productId: "prod-food",
+          startDate: "2024-01-01",
+          endDate: "2024-01-30",
+          durationDays: 30,
+          quantity: 2,
+          quantityUnit: "cup",
+          scorecard: { planGroupId: "plan-food", poopQuality: [3], itchSeverity: [2], digestiveImpact: null, itchinessImpact: null },
+        },
+        {
+          planGroupId: "plan-supp",
+          productId: "prod-supp",
+          startDate: "2024-01-10",
+          endDate: "2024-01-20",
+          durationDays: 11,
+          quantity: 1,
+          quantityUnit: "scoop",
+          scorecard: { planGroupId: "plan-supp", poopQuality: [3], itchSeverity: [2], digestiveImpact: null, itchinessImpact: null },
+        },
+      ],
+    })
+
+    const snapshots = buildBackfillSnapshots(input)
+
+    // Food-only dates (Jan 1-9): only chicken, no pumpkin
+    const foodOnlySnapshot = snapshots.find((s) => s.date === "backfill:2024-01-01")!
+    expect(foodOnlySnapshot.ingredients.find((i) => i.key === "chicken")).toBeDefined()
+    expect(foodOnlySnapshot.ingredients.find((i) => i.key === "pumpkin")).toBeUndefined()
+
+    // Overlapping dates (Jan 10-20): both chicken AND pumpkin with volume weighting
+    const overlapSnapshot = snapshots.find((s) => s.date === "backfill:2024-01-15")!
+    expect(overlapSnapshot.ingredients.find((i) => i.key === "chicken")).toBeDefined()
+    expect(overlapSnapshot.ingredients.find((i) => i.key === "pumpkin")).toBeDefined()
+
+    // Food-only dates after overlap (Jan 21-30): only chicken
+    const foodAfterSnapshot = snapshots.find((s) => s.date === "backfill:2024-01-25")!
+    expect(foodAfterSnapshot.ingredients.find((i) => i.key === "chicken")).toBeDefined()
+    expect(foodAfterSnapshot.ingredients.find((i) => i.key === "pumpkin")).toBeUndefined()
+
+    // Total snapshot count = 30 (one per unique date across the full range)
+    expect(snapshots.length).toBe(30)
+  })
+
+  it("overlapping backfill topper gets lower volume weight than main food", () => {
+    // Salmon 600g + pumpkin 25g — pumpkin should get ~4% volume weight
+    const salmonIng = makeIngredient({ id: "ing-salmon", family: "salmon" })
+    const pumpkinIng = makeIngredient({ id: "ing-pumpkin", family: "pumpkin" })
+    const foodIngs = makeProductIngredients("prod-food", [
+      { position: 1, ingredient: salmonIng },
+    ])
+    const topperIngs = makeProductIngredients("prod-topper", [
+      { position: 1, ingredient: pumpkinIng },
+    ])
+
+    const input = makeInput({
+      productIngredientMap: new Map([
+        ["prod-food", foodIngs],
+        ["prod-topper", topperIngs],
+      ]),
+      productInfo: new Map([
+        ["prod-food", { type: "dry_food", calorieContent: null }],
+        ["prod-topper", { type: "topper", calorieContent: null }],
+      ]),
+      backfills: [
+        {
+          planGroupId: "plan-food",
+          productId: "prod-food",
+          startDate: "2024-01-01",
+          endDate: "2024-01-10",
+          durationDays: 10,
+          quantity: 600,
+          quantityUnit: "g",
+          scorecard: { planGroupId: "plan-food", poopQuality: [3], itchSeverity: null, digestiveImpact: null, itchinessImpact: null },
+        },
+        {
+          planGroupId: "plan-topper",
+          productId: "prod-topper",
+          startDate: "2024-01-01",
+          endDate: "2024-01-10",
+          durationDays: 10,
+          quantity: 25,
+          quantityUnit: "g",
+          scorecard: { planGroupId: "plan-topper", poopQuality: [3], itchSeverity: null, digestiveImpact: null, itchinessImpact: null },
+        },
+      ],
+    })
+
+    const snapshots = buildBackfillSnapshots(input)
+    expect(snapshots.length).toBe(10)
+
+    const day = snapshots[0]
+    const salmonWeight = day.ingredients.find((i) => i.key === "salmon")!.volumePositionWeight
+    const pumpkinWeight = day.ingredients.find((i) => i.key === "pumpkin")!.volumePositionWeight
+
+    // Salmon: 600/(600+25) ≈ 0.96, pumpkin: 25/(600+25) ≈ 0.04
+    // volumePositionWeight = positionWeight(1) * volumeFraction
+    expect(salmonWeight).toBeGreaterThan(0.9)
+    expect(pumpkinWeight).toBeLessThan(0.1)
+    expect(pumpkinWeight).toBeCloseTo(25 / 625, 2)
   })
 })
 

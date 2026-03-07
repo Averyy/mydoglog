@@ -26,6 +26,8 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
     const limit = Math.min(100, Math.max(1, parseInt(searchParams.get("limit") ?? "20")))
     const offset = (page - 1) * limit
 
+    const all = searchParams.get("all") === "true"
+
     const conditions = []
 
     if (!includeDiscontinued) {
@@ -63,20 +65,33 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
 
     const where = conditions.length > 0 ? and(...conditions) : undefined
 
+    const selectFields = {
+      id: products.id,
+      name: products.name,
+      brandName: brands.name,
+      brandId: products.brandId,
+      type: products.type,
+      channel: products.channel,
+      lifestage: products.lifestage,
+      imageUrl: sql<string | null>`${products.imageUrls}[1]`,
+      isDiscontinued: products.isDiscontinued,
+      calorieContent: products.calorieContent,
+    }
+
+    if (all) {
+      const items = await db
+        .select(selectFields)
+        .from(products)
+        .innerJoin(brands, eq(products.brandId, brands.id))
+        .where(where)
+        .orderBy(products.name)
+
+      return NextResponse.json({ items })
+    }
+
     const [items, [totalResult]] = await Promise.all([
       db
-        .select({
-          id: products.id,
-          name: products.name,
-          brandName: brands.name,
-          brandId: products.brandId,
-          type: products.type,
-          channel: products.channel,
-          lifestage: products.lifestage,
-          imageUrl: sql<string | null>`${products.imageUrls}[1]`,
-          isDiscontinued: products.isDiscontinued,
-          calorieContent: products.calorieContent,
-        })
+        .select(selectFields)
         .from(products)
         .innerJoin(brands, eq(products.brandId, brands.id))
         .where(where)

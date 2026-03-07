@@ -23,7 +23,6 @@ import {
 } from "@/lib/db"
 import { eq, and, gte, lte, sql, asc } from "drizzle-orm"
 import type { PlanPeriod } from "@/lib/feeding"
-import { parseDuration } from "@/lib/feeding"
 import { resolveIngredientKey, positionCategory } from "./engine"
 import type {
   CorrelationInput,
@@ -94,12 +93,13 @@ export async function fetchCorrelationInput(
         ),
       ),
 
-    // Backfill feeding periods (aggregate historical records — duration + scorecard only)
+    // Backfill feeding periods
     db
       .select({
         planGroupId: feedingPeriods.planGroupId,
         productId: feedingPeriods.productId,
-        approximateDuration: feedingPeriods.approximateDuration,
+        startDate: feedingPeriods.startDate,
+        endDate: feedingPeriods.endDate,
         quantity: feedingPeriods.quantity,
         quantityUnit: feedingPeriods.quantityUnit,
       })
@@ -344,19 +344,22 @@ export async function fetchCorrelationInput(
     productInfo.set(row.id, { type: row.type ?? "dry_food", calorieContent: row.calorieContent })
   }
 
-  // -- Build backfill entries with parsed durations and matched scorecards --
+  // -- Build backfill entries from actual date ranges --
   const backfills: RawBackfill[] = backfillRows
+    .filter((bf) => bf.endDate != null)
     .map((bf) => {
-      const duration = bf.approximateDuration
-        ? parseDuration(bf.approximateDuration)
-        : null
+      const start = new Date(bf.startDate)
+      const end = new Date(bf.endDate!)
+      const durationDays = Math.max(1, Math.round((end.getTime() - start.getTime()) / (1000 * 60 * 60 * 24)) + 1)
       const scorecard = scorecardRows.find(
         (sc) => sc.planGroupId === bf.planGroupId,
       )
       return {
         planGroupId: bf.planGroupId,
         productId: bf.productId,
-        durationDays: duration?.days ?? 7, // fallback to 1 week
+        startDate: bf.startDate,
+        endDate: bf.endDate!,
+        durationDays,
         quantity: Number(bf.quantity),
         quantityUnit: bf.quantityUnit!,
         scorecard: scorecard ?? null,

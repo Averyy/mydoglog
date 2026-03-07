@@ -10,6 +10,7 @@ Living checklist. Update as work progresses.
 - **Phase 1 — Foundation:** Next.js + Drizzle + PostgreSQL, build.py product loader, Better Auth, dog CRUD, product search API
 - **Phase 2 — Core Loop:** Daily check-in / quick poop / quick treat flows, routine templates, food scorecard, dashboard, responsive drawer/dialog pattern
 - **Phase 3 — Analysis:** Correlation engine (ingredient-level, two-track skin/GI), correlation results page, food scorecard improvements, Insights tab
+- **Phase 3.5 — Scorecard simplification:** Removed redundant scorecard from routine change flow (daily logs already capture this). Made scorecard mandatory for backfills (no skip). Zero-log feeding periods are deleted on routine change instead of kept as empty data. Active plans derive scores from daily logs only.
 
 ## Phase 4: Extended Logging + Visualization
 

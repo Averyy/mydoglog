@@ -16,6 +16,12 @@ Dog food + digestive health tracking app. Next.js monolith (TypeScript, React, B
 - **ALWAYS** think critically during discussions.
 - **NEVER** praise the user or compliment them except in rare circumstances where its deserved. It's a waste of tokens.
 
+## Dev Environment
+
+- Dev port: 3847 (`yarn dev`)
+- **Database:** PostgreSQL in Docker container `mydoglog-db-dev`, port 5433
+  - `docker exec mydoglog-db-dev psql -U mydoglog -d mydoglog -c "SQL"`
+
 ## App Patterns
 
 - **Two write paths, one DB** — scrapers write product tables (read-only from app), Next.js writes user/log tables. Never cross.

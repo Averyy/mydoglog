@@ -7,21 +7,9 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-  DialogDescription,
-} from "@/components/ui/dialog"
 import { ActivePlanCard } from "@/components/active-plan-card"
 import { RoutineEditor } from "@/components/routine-editor"
-import {
-  FoodScorecardForm,
-  type ScorecardData,
-} from "@/components/food-scorecard-form"
 import { format, parseISO } from "date-fns"
-import { toast } from "sonner"
 import type { ActivePlan, FeedingPlanGroup, MedicationSummary, RoutineData } from "@/lib/types"
 
 /** Singularize "1 weeks" → "1 week", leave "2 weeks" as-is. */
@@ -44,8 +32,6 @@ export default function FeedingPage() {
 
   // Dialog state
   const [routineEditorOpen, setRoutineEditorOpen] = useState(false)
-  const [scorecardOpen, setScorecardOpen] = useState(false)
-  const [scorecardPlanGroupId, setScorecardPlanGroupId] = useState<string | null>(null)
 
   const fetchData = useCallback(async () => {
     try {
@@ -71,43 +57,6 @@ export default function FeedingPage() {
   useEffect(() => {
     fetchData()
   }, [fetchData])
-
-  function handleScorecardNeeded(planGroupId: string): void {
-    setRoutineEditorOpen(false)
-    setScorecardPlanGroupId(planGroupId)
-    setScorecardOpen(true)
-  }
-
-  async function handleScorecardSave(data: ScorecardData): Promise<void> {
-    if (!scorecardPlanGroupId) return
-
-    try {
-      const res = await fetch(
-        `/api/feeding/groups/${scorecardPlanGroupId}/scorecard`,
-        {
-          method: "PUT",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(data),
-        },
-      )
-
-      if (!res.ok) {
-        toast.error("Failed to save scorecard")
-        return
-      }
-
-      toast.success("Scorecard saved")
-      setScorecardOpen(false)
-      setRoutineEditorOpen(true)
-    } catch {
-      toast.error("Something went wrong")
-    }
-  }
-
-  function handleScorecardSkip(): void {
-    setScorecardOpen(false)
-    setRoutineEditorOpen(true)
-  }
 
   if (loading) {
     return (
@@ -192,24 +141,7 @@ export default function FeedingPage() {
         currentPlan={activePlan}
         currentMedications={activeMedications}
         onSaved={fetchData}
-        onScorecardNeeded={handleScorecardNeeded}
       />
-
-      {/* Scorecard dialog */}
-      <Dialog open={scorecardOpen} onOpenChange={setScorecardOpen}>
-        <DialogContent className="max-h-[90vh] overflow-y-auto sm:max-w-lg">
-          <DialogHeader>
-            <DialogTitle>Rate previous food</DialogTitle>
-            <DialogDescription>
-              How did the previous food work out?
-            </DialogDescription>
-          </DialogHeader>
-          <FoodScorecardForm
-            onSave={handleScorecardSave}
-            onSkip={handleScorecardSkip}
-          />
-        </DialogContent>
-      </Dialog>
     </div>
   )
 }

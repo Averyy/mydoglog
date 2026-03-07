@@ -293,10 +293,15 @@ export async function GET(
     } | null = null
 
     if (allGroups.length > 0) {
-      const earliestStart = allGroups.reduce(
-        (min, g) => (g.startDate < min ? g.startDate : min),
-        allGroups[0].startDate,
-      )
+      // windowStart/windowEnd defines the daily-log window — only non-backfill groups.
+      // Backfill dates outside this window are handled by buildBackfillSnapshots.
+      const nonBackfillGroups = allGroups.filter((g) => !g.isBackfill)
+      const earliestStart = nonBackfillGroups.length > 0
+        ? nonBackfillGroups.reduce(
+            (min, g) => (g.startDate < min ? g.startDate : min),
+            nonBackfillGroups[0].startDate,
+          )
+        : today
       const correlationInput = await fetchCorrelationInput(id, earliestStart, today)
       const [correlationResult, ingredientProductMap] = await Promise.all([
         Promise.resolve(runCorrelation(correlationInput, DEFAULT_CORRELATION_OPTIONS)),

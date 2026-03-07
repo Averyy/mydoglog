@@ -1,10 +1,9 @@
 "use client"
 
-import { useState, useEffect, useCallback } from "react"
+import { useCallback, useEffect, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import { Separator } from "@/components/ui/separator"
 import {
   Select,
   SelectContent,
@@ -19,7 +18,7 @@ import { toast } from "sonner"
 import { format } from "date-fns"
 import type { ProductSummary } from "@/lib/types"
 
-interface RecentTreatProduct {
+interface LastTreatResponse {
   productId: string
   productName: string
   brandName: string
@@ -29,6 +28,7 @@ interface RecentTreatProduct {
   lifestage: string | null
   imageUrl: string | null
   isDiscontinued: boolean
+  lastUsed: string | null
 }
 
 interface TreatLoggerProps {
@@ -41,6 +41,24 @@ interface TreatLoggerProps {
 interface TreatLoggerContentProps {
   dogId: string
   onSaved: () => void
+}
+
+// Module-level cache: last selected treat per dog (with TTL)
+const TREAT_CACHE_TTL = 30 * 60 * 1000 // 30 minutes
+const lastTreatCache = new Map<string, { product: ProductSummary; timestamp: number }>()
+
+function getCachedTreat(dogId: string): ProductSummary | null {
+  const entry = lastTreatCache.get(dogId)
+  if (!entry) return null
+  if (Date.now() - entry.timestamp > TREAT_CACHE_TTL) {
+    lastTreatCache.delete(dogId)
+    return null
+  }
+  return entry.product
+}
+
+function setCachedTreat(dogId: string, product: ProductSummary): void {
+  lastTreatCache.set(dogId, { product, timestamp: Date.now() })
 }
 
 const UNIT_OPTIONS = [
@@ -56,63 +74,50 @@ export function TreatLoggerContent({
   dogId,
   onSaved,
 }: TreatLoggerContentProps): React.ReactElement {
-  const [recentTreats, setRecentTreats] = useState<RecentTreatProduct[]>([])
-  const [product, setProduct] = useState<ProductSummary | null>(null)
+  const [product, setProduct] = useState<ProductSummary | null>(
+    getCachedTreat(dogId),
+  )
   const [quantity, setQuantity] = useState("1")
   const [quantityUnit, setQuantityUnit] = useState("piece")
   const [date, setDate] = useState(format(new Date(), "yyyy-MM-dd"))
   const [time, setTime] = useState<string | null>(format(new Date(), "HH:mm"))
   const [saving, setSaving] = useState(false)
 
-  const fetchRecent = useCallback(async () => {
+  const fetchLastTreat = useCallback(async () => {
+    // Skip fetch if we already have a cached value
+    if (getCachedTreat(dogId)) return
     try {
-      const res = await fetch(`/api/dogs/${dogId}/treats?recent=5`)
+      const res = await fetch(`/api/dogs/${dogId}/treats?recent=1`)
       if (res.ok) {
-        const data = await res.json()
-        setRecentTreats(data)
+        const data = await res.json() as LastTreatResponse[]
+        if (data.length > 0) {
+          const last = data[0]
+          const p: ProductSummary = {
+            id: last.productId,
+            name: last.productName,
+            brandName: last.brandName,
+            brandId: last.brandId,
+            type: last.type,
+            channel: last.channel,
+            lifestage: last.lifestage,
+            imageUrl: last.imageUrl,
+            isDiscontinued: last.isDiscontinued,
+            calorieContent: null,
+          }
+          setCachedTreat(dogId, p)
+          setProduct(p)
+        }
       }
     } catch {
-      // Silently fail — recent treats are a convenience, not critical
+      // Silently fail
     }
   }, [dogId])
 
   useEffect(() => {
-    fetchRecent()
+    fetchLastTreat()
     setDate(format(new Date(), "yyyy-MM-dd"))
     setTime(format(new Date(), "HH:mm"))
-  }, [fetchRecent])
-
-  async function quickLog(recent: RecentTreatProduct): Promise<void> {
-    setSaving(true)
-    try {
-      const now = new Date()
-      const body = {
-        productId: recent.productId,
-        date: format(now, "yyyy-MM-dd"),
-        datetime: now.toISOString(),
-        quantity: "1",
-        quantityUnit: "piece",
-      }
-
-      const res = await fetch(`/api/dogs/${dogId}/treats`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(body),
-      })
-
-      if (!res.ok) {
-        toast.error("Failed to log treat")
-        return
-      }
-
-      toast.success("Treat logged")
-      onSaved()
-    } catch {
-      toast.error("Something went wrong")
-    } finally {
-      setSaving(false)
-    }
-  }
+  }, [fetchLastTreat])
 
   async function handleSave(): Promise<void> {
     if (!product) {
@@ -145,6 +150,7 @@ export function TreatLoggerContent({
       }
 
       toast.success("Treat logged")
+      setCachedTreat(dogId, product)
       resetForm()
       onSaved()
     } catch {
@@ -162,41 +168,7 @@ export function TreatLoggerContent({
 
   return (
     <div className="space-y-5">
-      {/* Recent treats — quick re-log */}
-      {recentTreats.length > 0 && (
-        <div className="space-y-1.5">
-          <Label className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
-            Recent
-          </Label>
-          <div className="space-y-0.5">
-            {recentTreats.map((treat) => (
-              <button
-                key={treat.productId}
-                type="button"
-                disabled={saving}
-                onClick={() => quickLog(treat)}
-                className="flex min-h-[44px] w-full items-center gap-3 rounded-md px-3 py-2 text-left transition-colors hover:bg-secondary focus-visible:ring-2 focus-visible:ring-ring outline-none"
-              >
-                <div className="min-w-0 flex-1">
-                  <p className="truncate text-sm font-medium">
-                    {treat.productName}
-                  </p>
-                  <p className="truncate text-xs text-muted-foreground">
-                    {treat.brandName}
-                  </p>
-                </div>
-                <span className="shrink-0 text-xs text-muted-foreground">
-                  Tap to log
-                </span>
-              </button>
-            ))}
-          </div>
-        </div>
-      )}
-
-      {recentTreats.length > 0 && <Separator />}
-
-      {/* New treat search */}
+      {/* Product selection */}
       <div className="space-y-2">
         <Label className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
           Search product
@@ -207,6 +179,7 @@ export function TreatLoggerContent({
           productType="treat"
           placeholder="Search treats..."
           inline
+          dogId={dogId}
         />
       </div>
 
