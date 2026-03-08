@@ -24,6 +24,16 @@ export const FECAL_SCORE_LABELS: Record<number, string> = {
   7: "Liquid",
 }
 
+/** Short human-readable labels for itch scores. */
+export const ITCH_SCORE_LABELS: Record<number, string> = {
+  0: "None",
+  1: "Very mild",
+  2: "Mild",
+  3: "Moderate",
+  4: "Severe",
+  5: "Extreme",
+}
+
 /** Human-readable labels for medication reason enum values. */
 export const MEDICATION_REASON_LABELS: Record<string, string> = {
   itchiness: "Itchiness",

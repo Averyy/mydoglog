@@ -57,6 +57,7 @@ Dog food + digestive health tracking app. Next.js monolith (TypeScript, React, B
 - shadcn/ui for components and tables. Tailwind styling. Don't create a component from scratch unless it doesn't exist. Ask the user for confirmation.
 - **Anything repeated across pages MUST be a component** — never hardcode the same markup twice. Style overrides belong at the component level (props/variants), not inline.
 - **NEVER use inline hex colors or opacity fractions** (e.g. `bg-primary/[0.08]`, `bg-[#f0f3f1]`, `hover:bg-black/[0.02]`). ALL colors MUST reference CSS variables defined in `globals.css` and registered in `@theme inline`. If a needed color doesn't exist, define a new token first (`:root` + `.dark` + `@theme inline`), then use it via Tailwind (`bg-item-hover`, `bg-item-active`, etc.).
+- **Icons:** Use [Line Awesome](https://react-icons.github.io/react-icons/icons/lia/) via `react-icons/lia` (e.g. `import { LiaHomeSolid } from "react-icons/lia"`). Do NOT use Lucide for new icons.
 - Mobile responsive essential (logging happens on phone in the yard)
 - ALWAYS invoke the `frontend-design` skill for UI work or UI review
 

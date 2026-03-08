@@ -2,8 +2,17 @@
 
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
 import { ChevronDown } from "lucide-react"
-import { poopScoreColor } from "@/components/score-grid"
-import { isSuspect } from "@/components/ingredient-row"
+const INGREDIENT_SCORE_COLORS: Record<number, string> = {
+  1: "text-score-excellent-text", 2: "text-score-excellent-text",
+  3: "text-score-good-text", 4: "text-score-fair-text",
+  5: "text-score-fair-text", 6: "text-score-poor-text",
+  7: "text-score-critical-text",
+}
+
+function ingredientScoreColor(avg: number): string {
+  return INGREDIENT_SCORE_COLORS[Math.round(avg)] ?? ""
+}
+
 import type { IngredientScore } from "@/lib/correlation/types"
 
 export interface ClassifiedIngredient {
@@ -83,18 +92,17 @@ export function ProductIngredientList({
               const position = idx + 1
               const classified = data.classifiedByPosition.get(position)
               const matchedScore = findScoreForIngredient(classified, correlationScores)
-              const isBad = matchedScore != null && isSuspect(matchedScore)
+              const scoreColor = matchedScore?.weightedPoopScore != null
+                ? ingredientScoreColor(matchedScore.weightedPoopScore)
+                : ""
 
               return (
                 <li key={position}>
                   <div className="flex items-baseline gap-1.5 text-xs text-foreground">
                     <span className="tabular-nums text-text-tertiary w-5 text-right shrink-0">{position}.</span>
-                    <span className={isBad ? "font-medium text-score-critical" : ""}>
+                    <span className={scoreColor}>
                       {rawName}
                     </span>
-                    {matchedScore?.weightedPoopScore != null && (
-                      <span className={`inline-block size-1.5 rounded-full ${poopScoreColor(matchedScore.weightedPoopScore).replace("text-", "bg-")}`} />
-                    )}
                   </div>
                 </li>
               )

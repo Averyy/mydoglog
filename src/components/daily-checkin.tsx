@@ -24,7 +24,7 @@ import {
 import { CollapsibleNotes } from "@/components/collapsible-notes"
 import { MedicationItem } from "@/components/medication-item"
 import { ProductItem } from "@/components/product-item"
-import { Check, X } from "lucide-react"
+import { LiaCheckSolid, LiaTimesSolid } from "react-icons/lia"
 import { toast } from "sonner"
 import { format } from "date-fns"
 import { cn } from "@/lib/utils"
@@ -288,14 +288,14 @@ export function DailyCheckInContent({
 
   const stoolBadge = stoolScore !== null ? (
     <Badge variant="outline" className="ml-auto mr-2 border-primary text-primary text-[10px]">
-      <Check className="size-3" />
+      <LiaCheckSolid className="size-3" />
       {FECAL_SCORES.find((s) => s.score === stoolScore)?.label}
     </Badge>
   ) : noneBadge
 
   const itchBadge = itchScore !== null ? (
     <Badge variant="outline" className="ml-auto mr-2 border-primary text-primary text-[10px]">
-      <Check className="size-3" />
+      <LiaCheckSolid className="size-3" />
       {ITCH_SCORES.find((s) => s.score === itchScore)?.label}
     </Badge>
   ) : noneBadge
@@ -306,14 +306,14 @@ export function DailyCheckInContent({
   }, 0)
   const treatBadge = treats.length > 0 ? (
     <Badge variant="outline" className="ml-auto mr-2 border-primary text-primary text-[10px]">
-      <Check className="size-3" />
+      <LiaCheckSolid className="size-3" />
       {treatTotalPieces > 0 ? `${treatTotalPieces} treat${treatTotalPieces !== 1 ? "s" : ""}` : "Treats"}
     </Badge>
   ) : noneBadge
 
   const mealPlanBadge = !routineLoading && routine && (routine.plan || routine.medications.length > 0) ? (
     <Badge variant="outline" className="ml-auto mr-2 border-primary text-primary text-[10px]">
-      <Check className="size-3" />
+      <LiaCheckSolid className="size-3" />
       Normal Routine
     </Badge>
   ) : null
@@ -432,7 +432,7 @@ export function DailyCheckInContent({
                         onClick={() => removeTreat(treat.productId)}
                         className="shrink-0 rounded-md p-1 text-muted-foreground hover:bg-secondary hover:text-foreground"
                       >
-                        <X className="size-4" />
+                        <LiaTimesSolid className="size-4" />
                       </button>
                     </ProductItem>
                   ))}

@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { useActiveDog } from "@/components/active-dog-provider"
-import { CalendarCheck, Clipboard, Cookie, Droplets } from "lucide-react"
+import { QuickLogGrid } from "@/components/quick-log-grid"
 import { LogFeed } from "@/components/log-feed"
 
 interface DogBasic {
@@ -58,27 +58,7 @@ export function DashboardClient({
       </div>
 
       {/* Quick-log grid */}
-      <div className="grid grid-cols-2 gap-3">
-        {([
-          { label: "Daily Check-in", icon: CalendarCheck, action: () => setLogMode("checkin") },
-          { label: "Log Stool", icon: Clipboard, action: () => setLogMode("poop") },
-          { label: "Log Itch", icon: Droplets, action: () => setLogMode("itch") },
-          { label: "Log Treat", icon: Cookie, action: () => setLogMode("treat") },
-        ] as const).map((item) => {
-          const Icon = item.icon
-          return (
-            <button
-              key={item.label}
-              type="button"
-              onClick={item.action}
-              className="flex min-h-[64px] flex-col items-center justify-center gap-1.5 rounded-lg border border-border bg-bg-primary px-4 py-3 text-text-secondary transition-colors hover:border-primary hover:bg-item-active hover:text-primary"
-            >
-              <Icon className="size-5" strokeWidth={1.5} />
-              <span className="text-[13px] font-medium">{item.label}</span>
-            </button>
-          )
-        })}
-      </div>
+      <QuickLogGrid dogId={activeDog.id} onSelect={setLogMode} />
 
       {/* Log feed */}
       <div className="space-y-3">

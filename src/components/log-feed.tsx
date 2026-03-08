@@ -1,11 +1,11 @@
 "use client"
 
 import { useState, useEffect, useCallback, useMemo } from "react"
-import { Clipboard, Cookie, Droplets } from "lucide-react"
+import { LiaCookieBiteSolid, LiaPoopSolid, LiaPawSolid } from "react-icons/lia"
 import { format, parseISO, isToday, isYesterday } from "date-fns"
 import { poopScoreColor, itchScoreColor } from "@/components/score-grid"
 import { Button } from "@/components/ui/button"
-import { FECAL_SCORE_LABELS } from "@/lib/labels"
+import { FECAL_SCORE_LABELS, ITCH_SCORE_LABELS } from "@/lib/labels"
 import type { LogFeedEntry, LogFeedResponse } from "@/lib/types"
 
 function formatTime(datetime: string | null): string | null {
@@ -69,6 +69,15 @@ export function LogFeed({ dogId }: { dogId: string }): React.ReactElement {
 
   useEffect(() => {
     fetchLogs()
+  }, [fetchLogs])
+
+  // Re-fetch after a log is saved
+  useEffect(() => {
+    function refresh(): void {
+      fetchLogs()
+    }
+    window.addEventListener("log-saved", refresh)
+    return () => window.removeEventListener("log-saved", refresh)
   }, [fetchLogs])
 
   function handleLoadMore(): void {
@@ -136,7 +145,7 @@ export function LogFeed({ dogId }: { dogId: string }): React.ReactElement {
       ))}
       {hasMore && (
         <Button
-          variant="ghost"
+          variant="secondary"
           size="sm"
           onClick={handleLoadMore}
           disabled={loadingMore}
@@ -156,13 +165,13 @@ function LogEntryRow({ entry }: { entry: LogFeedEntry }): React.ReactElement {
     const score = entry.data.firmnessScore as number
     return (
       <div className="flex items-center gap-3 rounded-lg border border-border px-3 py-2">
-        <Clipboard className="size-4 text-text-tertiary shrink-0" strokeWidth={1.5} />
+        <LiaPoopSolid className="size-5 text-text-tertiary shrink-0" />
         <div className="flex-1 min-w-0">
           <span className={`text-sm font-bold tabular-nums ${poopScoreColor(score)}`}>
             {score}
           </span>
           <span className="text-xs text-text-secondary ml-1.5">
-            {FECAL_SCORE_LABELS[score]}
+            {FECAL_SCORE_LABELS[score]} stool
           </span>
         </div>
         {time && <span className="text-[11px] text-text-tertiary shrink-0">{time}</span>}
@@ -174,12 +183,14 @@ function LogEntryRow({ entry }: { entry: LogFeedEntry }): React.ReactElement {
     const score = entry.data.score as number
     return (
       <div className="flex items-center gap-3 rounded-lg border border-border px-3 py-2">
-        <Droplets className="size-4 text-text-tertiary shrink-0" strokeWidth={1.5} />
+        <LiaPawSolid className="size-5 text-text-tertiary shrink-0" />
         <div className="flex-1 min-w-0">
           <span className={`text-sm font-bold tabular-nums ${itchScoreColor(score)}`}>
             {score}
           </span>
-          <span className="text-xs text-text-secondary ml-1.5">itch</span>
+          <span className="text-xs text-text-secondary ml-1.5">
+            {ITCH_SCORE_LABELS[score]} itch
+          </span>
         </div>
         {time && <span className="text-[11px] text-text-tertiary shrink-0">{time}</span>}
       </div>
@@ -192,7 +203,7 @@ function LogEntryRow({ entry }: { entry: LogFeedEntry }): React.ReactElement {
   const quantityUnit = entry.data.quantityUnit as string | null
   return (
     <div className="flex items-center gap-3 rounded-lg border border-border px-3 py-2">
-      <Cookie className="size-4 text-text-tertiary shrink-0" strokeWidth={1.5} />
+      <LiaCookieBiteSolid className="size-5 text-text-tertiary shrink-0" />
       <div className="flex-1 min-w-0">
         <span className="text-sm text-text-primary truncate">{productName}</span>
         {quantity != null && (

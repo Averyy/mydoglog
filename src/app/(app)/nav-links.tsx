@@ -2,7 +2,13 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { Home, Lightbulb, Plus, Settings, Utensils } from "lucide-react"
+import {
+  LiaHomeSolid,
+  LiaLightbulbSolid,
+  LiaPlusSolid,
+  LiaDogSolid,
+  LiaUtensilsSolid,
+} from "react-icons/lia"
 import { cn, isNavActive } from "@/lib/utils"
 import { useActiveDog } from "@/components/active-dog-provider"
 import { toast } from "sonner"
@@ -16,11 +22,11 @@ interface NavItem {
 }
 
 const NAV_LINKS: NavItem[] = [
-  { label: "Home", icon: Home, href: "/" },
-  { label: "Food", icon: Utensils, dogHref: (id) => `/dogs/${id}/food` },
-  { label: "Log", icon: Plus, prominent: true },
-  { label: "Insights", icon: Lightbulb, dogHref: (id) => `/dogs/${id}/insights` },
-  { label: "Settings", icon: Settings, href: "/settings" },
+  { label: "Home", icon: LiaHomeSolid, href: "/" },
+  { label: "Food", icon: LiaUtensilsSolid, dogHref: (id) => `/dogs/${id}/food` },
+  { label: "Log", icon: LiaPlusSolid, prominent: true },
+  { label: "Insights", icon: LiaLightbulbSolid, dogHref: (id) => `/dogs/${id}/insights` },
+  { label: "Settings", icon: LiaDogSolid, href: "/settings" },
 ]
 
 function resolveHref(link: NavItem, activeDogId: string | null): string | null {
@@ -61,7 +67,7 @@ export function DesktopNavLinks(): React.ReactElement {
               isNavActive(href, pathname) && "text-text-primary font-medium",
             )}
           >
-            {isSettings ? <><span className="sr-only">Settings</span><Settings className="size-5" strokeWidth={1.5} /></> : link.label}
+            {isSettings ? <><span className="sr-only">Settings</span><LiaDogSolid className="size-5" /></> : link.label}
           </Link>
         )
       })}
@@ -103,7 +109,7 @@ export function BottomNav(): React.ReactElement {
                 className="flex min-h-[44px] min-w-[44px] flex-col items-center justify-center gap-0.5"
               >
                 <span className="flex size-10 items-center justify-center rounded-full bg-primary text-primary-foreground">
-                  <Icon className="size-5" strokeWidth={1.5} />
+                  <Icon className="size-5" />
                 </span>
               </button>
             )
@@ -117,7 +123,7 @@ export function BottomNav(): React.ReactElement {
                 onClick={handleNoDog}
                 className="flex min-h-[44px] min-w-[44px] flex-col items-center justify-center gap-0.5 text-text-tertiary"
               >
-                <Icon className="size-5" strokeWidth={1.5} />
+                <Icon className="size-5" />
                 <span className="text-[10px] font-medium">{link.label}</span>
               </button>
             )
@@ -132,7 +138,7 @@ export function BottomNav(): React.ReactElement {
                 active ? "text-primary" : "text-text-tertiary",
               )}
             >
-              <Icon className="size-5" strokeWidth={1.5} />
+              <Icon className="size-5" />
               <span className="text-[10px] font-medium">{link.label}</span>
             </Link>
           )

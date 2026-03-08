@@ -1,25 +1,14 @@
 "use client"
 
 import { useRouter } from "next/navigation"
-import { Clipboard, Cookie, Droplets, CalendarCheck } from "lucide-react"
 import { ResponsiveModal } from "@/components/responsive-modal"
 import { QuickPoopLogger } from "@/components/quick-poop-logger"
 import { TreatLoggerContent } from "@/components/treat-logger"
 import { ItchinessLogger } from "@/components/itchiness-logger"
 import { DailyCheckInContent } from "@/components/daily-checkin"
+import { QuickLogGrid } from "@/components/quick-log-grid"
 import { useActiveDog, type LogMode } from "@/components/active-dog-provider"
 import { format } from "date-fns"
-
-const SELECTOR_OPTIONS: {
-  mode: LogMode
-  label: string
-  icon: typeof Clipboard
-}[] = [
-  { mode: "checkin", label: "Daily Check-in", icon: CalendarCheck },
-  { mode: "poop", label: "Log Stool", icon: Clipboard },
-  { mode: "itch", label: "Log Itchiness", icon: Droplets },
-  { mode: "treat", label: "Log Treat", icon: Cookie },
-]
 
 export function LogActionSheet(): React.ReactElement {
   const router = useRouter()
@@ -37,6 +26,7 @@ export function LogActionSheet(): React.ReactElement {
   function handleSaved(): void {
     close()
     router.refresh()
+    window.dispatchEvent(new Event("log-saved"))
   }
 
   return (
@@ -48,21 +38,10 @@ export function LogActionSheet(): React.ReactElement {
         title="New log entry"
         description="What would you like to log?"
       >
-        <div className="grid grid-cols-2 gap-3 py-2">
-          {SELECTOR_OPTIONS.map((opt) => {
-            const Icon = opt.icon
-            return (
-              <button
-                key={opt.label}
-                type="button"
-                onClick={() => selectOption(opt.mode)}
-                className="flex min-h-[80px] flex-col items-center justify-center gap-2 rounded-lg border border-border bg-bg-primary px-4 py-4 text-text-secondary transition-colors hover:border-accent hover:text-accent"
-              >
-                <Icon className="size-6" strokeWidth={1.5} />
-                <span className="text-[13px] font-medium">{opt.label}</span>
-              </button>
-            )
-          })}
+        <div className="py-2">
+          {activeDogId && (
+            <QuickLogGrid dogId={activeDogId} onSelect={selectOption} />
+          )}
         </div>
       </ResponsiveModal>
 

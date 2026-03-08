@@ -19,6 +19,11 @@
   --color-score-fair: #D4A944;
   --color-score-poor: #C97C5D;
   --color-score-critical: #B84A3A;
+  --color-score-excellent-text: #4A6E4E;
+  --color-score-good-text: #4A7A4F;
+  --color-score-fair-text: #9A7A1E;
+  --color-score-poor-text: #A8613D;
+  --color-score-critical-text: #963828;
   --color-exposure: #B84A3A;
   --color-medication: #8B7EB8;
   --color-food-period: #6B8C6F;

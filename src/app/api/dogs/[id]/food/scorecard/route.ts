@@ -438,16 +438,33 @@ export async function GET(
       for (const pid of productIdList) {
         const rawStr = rawStringMap.get(pid) ?? ""
         const ings = ingByProduct.get(pid) ?? []
+        const allIngredients = splitIngredients(rawStr)
+
+        // Build a name→classified lookup so we can match by ingredient name
+        // rather than relying on DB position (which skips unclassified items)
+        const ingByName = new Map(
+          ings.map((ing) => [ing.normalized_name.toLowerCase(), ing]),
+        )
+
+        const classifiedByPosition: typeof productIngredientData[string]["classifiedByPosition"] = []
+        for (let i = 0; i < allIngredients.length; i++) {
+          const rawName = allIngredients[i].toLowerCase().replace(/\.$/, "").trim()
+          const matched = ingByName.get(rawName)
+          if (matched) {
+            classifiedByPosition.push({
+              position: i + 1,
+              normalizedName: matched.normalized_name,
+              family: matched.family,
+              sourceGroup: matched.source_group,
+              formType: matched.form_type,
+              isHydrolyzed: matched.is_hydrolyzed,
+            })
+          }
+        }
+
         productIngredientData[pid] = {
-          allIngredients: splitIngredients(rawStr),
-          classifiedByPosition: ings.map((ing) => ({
-            position: ing.position,
-            normalizedName: ing.normalized_name,
-            family: ing.family,
-            sourceGroup: ing.source_group,
-            formType: ing.form_type,
-            isHydrolyzed: ing.is_hydrolyzed,
-          })),
+          allIngredients,
+          classifiedByPosition,
           saltPosition: findSaltPosition(rawStr),
         }
       }
