@@ -299,7 +299,7 @@ export function RoutineEditorContent({
           })),
         }
 
-        const res = await fetch(`/api/dogs/${dogId}/feeding`, {
+        const res = await fetch(`/api/dogs/${dogId}/food`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(body),

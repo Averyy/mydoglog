@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { Home, Plus, Settings, Star, Utensils } from "lucide-react"
+import { Home, Lightbulb, Plus, Settings, Utensils } from "lucide-react"
 import { cn, isNavActive } from "@/lib/utils"
 import { useActiveDog } from "@/components/active-dog-provider"
 import { toast } from "sonner"
@@ -17,16 +17,16 @@ interface NavItem {
 
 const NAV_LINKS: NavItem[] = [
   { label: "Home", icon: Home, href: "/" },
-  { label: "Routine", icon: Utensils, dogHref: (id) => `/dogs/${id}/feeding` },
+  { label: "Food", icon: Utensils, dogHref: (id) => `/dogs/${id}/food` },
   { label: "Log", icon: Plus, prominent: true },
-  { label: "Scorecard", icon: Star, dogHref: (id) => `/dogs/${id}/food-scorecard` },
+  { label: "Insights", icon: Lightbulb, dogHref: (id) => `/dogs/${id}/insights` },
   { label: "Settings", icon: Settings, href: "/settings" },
 ]
 
-function resolveHref(link: NavItem, activeDogId: string | null): string {
+function resolveHref(link: NavItem, activeDogId: string | null): string | null {
   if (link.href) return link.href
   if (link.dogHref && activeDogId) return link.dogHref(activeDogId)
-  return "/settings"
+  return null
 }
 
 export function DesktopNavLinks(): React.ReactElement {
@@ -38,6 +38,20 @@ export function DesktopNavLinks(): React.ReactElement {
       {NAV_LINKS.filter((link) => !link.prominent).map((link) => {
         const href = resolveHref(link, activeDogId)
         const isSettings = link.label === "Settings"
+
+        if (!href) {
+          return (
+            <button
+              key={link.label}
+              type="button"
+              onClick={() => toast.error("Add a dog first")}
+              className="transition-colors hover:text-text-primary"
+            >
+              {link.label}
+            </button>
+          )
+        }
+
         return (
           <Link
             key={link.label}
@@ -47,7 +61,7 @@ export function DesktopNavLinks(): React.ReactElement {
               isNavActive(href, pathname) && "text-text-primary font-medium",
             )}
           >
-            {isSettings ? <Settings className="size-5" strokeWidth={1.5} /> : link.label}
+            {isSettings ? <><span className="sr-only">Settings</span><Settings className="size-5" strokeWidth={1.5} /></> : link.label}
           </Link>
         )
       })}
@@ -67,13 +81,17 @@ export function BottomNav(): React.ReactElement {
     setLogMode("selector")
   }
 
+  function handleNoDog(): void {
+    toast.error("Add a dog first")
+  }
+
   return (
     <nav className="fixed inset-x-0 bottom-0 z-50 border-t border-border bg-bg-primary md:hidden">
       <div className="mx-auto flex h-16 max-w-lg items-center justify-around">
         {NAV_LINKS.map((link) => {
           const Icon = link.icon
           const href = resolveHref(link, activeDogId)
-          const active = isNavActive(href, pathname)
+          const active = href ? isNavActive(href, pathname) : false
 
           if (link.prominent) {
             return (
@@ -81,11 +99,26 @@ export function BottomNav(): React.ReactElement {
                 key={link.label}
                 type="button"
                 onClick={handleLogPress}
+                aria-label="Log"
                 className="flex min-h-[44px] min-w-[44px] flex-col items-center justify-center gap-0.5"
               >
                 <span className="flex size-10 items-center justify-center rounded-full bg-primary text-primary-foreground">
                   <Icon className="size-5" strokeWidth={1.5} />
                 </span>
+              </button>
+            )
+          }
+
+          if (!href) {
+            return (
+              <button
+                key={link.label}
+                type="button"
+                onClick={handleNoDog}
+                className="flex min-h-[44px] min-w-[44px] flex-col items-center justify-center gap-0.5 text-text-tertiary"
+              >
+                <Icon className="size-5" strokeWidth={1.5} />
+                <span className="text-[10px] font-medium">{link.label}</span>
               </button>
             )
           }

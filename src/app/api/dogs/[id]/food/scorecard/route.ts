@@ -3,11 +3,12 @@ import { requireDogOwnership, isNextResponse } from "@/lib/api-helpers"
 import { db, feedingPeriods, products, brands, foodScorecards, poopLogs, itchinessLogs, vomitLogs } from "@/lib/db"
 import { eq, sql, desc } from "drizzle-orm"
 import { resolveActivePlan, type PlanPeriod } from "@/lib/feeding"
-import { fetchCorrelationInput, fetchIngredientProductMap } from "@/lib/correlation/query"
-import { runCorrelation, extractFamilyFromKey } from "@/lib/correlation/engine"
+import { fetchCorrelationInput, fetchIngredientProductMap, buildGiIngredientProductMap } from "@/lib/correlation/query"
+import { runCorrelation } from "@/lib/correlation/engine"
 import { findSaltPosition, splitIngredients } from "@/lib/ingredients"
 import { DEFAULT_CORRELATION_OPTIONS } from "@/lib/correlation/types"
 import type { IngredientProductEntry } from "@/lib/correlation/types"
+import { avgFromRange } from "@/lib/food-helpers"
 import type { FeedingPlanGroup, FeedingPlanItem, LogStats } from "@/lib/types"
 
 type RouteParams = { params: Promise<{ id: string }> }
@@ -323,14 +324,14 @@ export async function GET(
         if (group.logStats?.avgPoopScore != null) {
           avgPoop = group.logStats.avgPoopScore
         } else if (group.scorecard?.poopQuality && group.scorecard.poopQuality.length > 0) {
-          avgPoop = Math.round(group.scorecard.poopQuality.reduce((a, b) => a + b, 0) / group.scorecard.poopQuality.length * 10) / 10
+          avgPoop = avgFromRange(group.scorecard.poopQuality)
         } else if (group.scorecard?.digestiveImpact) {
           digestiveImpact = group.scorecard.digestiveImpact
         }
         if (group.logStats?.avgItchScore != null) {
           avgItch = group.logStats.avgItchScore
         } else if (group.scorecard?.itchSeverity && group.scorecard.itchSeverity.length > 0) {
-          avgItch = Math.round(group.scorecard.itchSeverity.reduce((a, b) => a + b, 0) / group.scorecard.itchSeverity.length * 10) / 10
+          avgItch = avgFromRange(group.scorecard.itchSeverity)
         } else if (group.scorecard?.itchinessImpact) {
           itchinessImpact = group.scorecard.itchinessImpact
         }
@@ -365,39 +366,7 @@ export async function GET(
         ingredientProducts[key] = entries.map(enrichEntry)
       }
 
-      // Build GI-merged ingredient product map: union product entries by family
-      // Hydrolyzed keys stay separate — enzymatically distinct from parent protein
-      // When forms merge, tag entries with their original key so the UI can show them
-      const giIngredientProducts: Record<string, IngredientProductEntry[]> = {}
-      // First pass: group all keys by their target groupKey
-      const giGroupKeys = new Map<string, string[]>()
-      for (const [key] of ingredientProductMap) {
-        const groupKey = key.endsWith(" (hydrolyzed)")
-          ? key
-          : (extractFamilyFromKey(key) ?? key)
-        const keys = giGroupKeys.get(groupKey) ?? []
-        keys.push(key)
-        giGroupKeys.set(groupKey, keys)
-      }
-      // Second pass: build entries, tagging with formKey when multiple keys merge
-      for (const [groupKey, sourceKeys] of giGroupKeys) {
-        const hasMultipleForms = sourceKeys.length > 1
-        const existing: IngredientProductEntry[] = []
-        const seen = new Set<string>()
-        for (const key of sourceKeys) {
-          const entries = ingredientProductMap.get(key) ?? []
-          for (const entry of entries) {
-            const dedup = `${entry.productId}:${key}`
-            if (seen.has(dedup)) continue
-            seen.add(dedup)
-            existing.push({
-              ...enrichEntry(entry),
-              ...(hasMultipleForms ? { formKey: key } : {}),
-            })
-          }
-        }
-        giIngredientProducts[groupKey] = existing
-      }
+      const giIngredientProducts = buildGiIngredientProductMap(ingredientProductMap, enrichEntry)
 
       correlationData = {
         correlation: correlationResult,

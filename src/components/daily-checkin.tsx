@@ -131,7 +131,7 @@ export function DailyCheckInContent({
   useEffect(() => {
     async function load(): Promise<void> {
       try {
-        const res = await fetch(`/api/dogs/${dogId}/routine`)
+        const res = await fetch(`/api/dogs/${dogId}/food/routine`)
         if (res.ok) {
           const data: RoutineData = await res.json()
           setRoutine(data)

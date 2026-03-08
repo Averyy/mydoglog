@@ -72,6 +72,20 @@ export interface MedicationSummary {
   notes: string | null
 }
 
+export interface LogFeedEntry {
+  id: string
+  type: "poop" | "itch" | "treat"
+  date: string
+  datetime: string | null
+  data: Record<string, unknown>
+}
+
+export interface LogFeedResponse {
+  entries: LogFeedEntry[]
+  startDate: string
+  endDate: string
+}
+
 export interface RoutineData {
   plan: ActivePlan | null
   medications: MedicationSummary[]

@@ -13,6 +13,17 @@ export const PRODUCT_TYPE_LABELS: Record<string, string> = {
 /** Product types that are supplements/toppers (not primary food). */
 export const SUPPLEMENT_PRODUCT_TYPES = new Set(["supplement", "probiotic", "topper", "treat"])
 
+/** Short human-readable labels for Purina 1–7 fecal scores. */
+export const FECAL_SCORE_LABELS: Record<number, string> = {
+  1: "Hard pellets",
+  2: "Ideal",
+  3: "Soft",
+  4: "Soggy",
+  5: "Soft piles",
+  6: "No shape",
+  7: "Liquid",
+}
+
 /** Human-readable labels for medication reason enum values. */
 export const MEDICATION_REASON_LABELS: Record<string, string> = {
   itchiness: "Itchiness",

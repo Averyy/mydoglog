@@ -23,7 +23,7 @@ import {
 } from "@/lib/db"
 import { eq, and, gte, lte, sql, asc } from "drizzle-orm"
 import type { PlanPeriod } from "@/lib/feeding"
-import { resolveIngredientKey, positionCategory } from "./engine"
+import { resolveIngredientKey, positionCategory, extractFamilyFromKey } from "./engine"
 import type {
   CorrelationInput,
   ProductIngredientRecord,
@@ -468,4 +468,52 @@ export async function fetchIngredientProductMap(
   }
 
   return result
+}
+
+/**
+ * Build GI-merged ingredient product map: union product entries by family.
+ * Hydrolyzed keys stay separate — enzymatically distinct from parent protein.
+ * When forms merge, entries are tagged with their original `formKey`.
+ *
+ * @param enrichEntry Optional transform applied to each entry (e.g. adding per-product scores).
+ */
+export function buildGiIngredientProductMap(
+  ingredientProductMap: Map<string, IngredientProductEntry[]>,
+  enrichEntry?: (entry: IngredientProductEntry) => IngredientProductEntry,
+): Record<string, IngredientProductEntry[]> {
+  const enrich = enrichEntry ?? ((e: IngredientProductEntry) => e)
+  const giIngredientProducts: Record<string, IngredientProductEntry[]> = {}
+
+  // Group all keys by their target groupKey
+  const giGroupKeys = new Map<string, string[]>()
+  for (const [key] of ingredientProductMap) {
+    const groupKey = key.endsWith(" (hydrolyzed)")
+      ? key
+      : (extractFamilyFromKey(key) ?? key)
+    const keys = giGroupKeys.get(groupKey) ?? []
+    keys.push(key)
+    giGroupKeys.set(groupKey, keys)
+  }
+
+  // Build entries, tagging with formKey when multiple keys merge
+  for (const [groupKey, sourceKeys] of giGroupKeys) {
+    const hasMultipleForms = sourceKeys.length > 1
+    const existing: IngredientProductEntry[] = []
+    const seen = new Set<string>()
+    for (const key of sourceKeys) {
+      const entries = ingredientProductMap.get(key) ?? []
+      for (const entry of entries) {
+        const dedup = `${entry.productId}:${key}`
+        if (seen.has(dedup)) continue
+        seen.add(dedup)
+        existing.push({
+          ...enrich(entry),
+          ...(hasMultipleForms ? { formKey: key } : {}),
+        })
+      }
+    }
+    giIngredientProducts[groupKey] = existing
+  }
+
+  return giIngredientProducts
 }

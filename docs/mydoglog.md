@@ -48,9 +48,20 @@ Three entry points, one daily record:
 
 The **routine template** (food + supplements + medications) pre-fills the daily log. On days the user doesn't open the app, the template is the implicit record. Quick entries assume the routine is unchanged.
 
-### Food Scorecard
+### Pages
 
-A dedicated page for viewing food history and ingredient analysis. Active plans show computed scores from daily logs. Past backfilled periods (food fed before the app existed) require a mandatory scorecard (poop quality range + itch severity range) since no daily logs exist. The correlation engine uses daily logs as the primary signal and falls back to scorecard data only for backfills.
+| Page | Route | Purpose |
+|------|-------|---------|
+| **Home** | `/` | Quick-log grid (check-in, stool, itch, treat) + chronological log feed |
+| **Food** | `/dogs/[id]/food` | Active routine management + food history with inline scorecards |
+| **Insights** | `/dogs/[id]/insights` | Ingredient correlation analysis (GI + skin tracks) |
+| **Settings** | `/settings` | Dog management, account settings |
+
+**Home** shows the quick-log 2x2 grid and a chronological feed of recent manual entries (poop, itch, treat, check-in). No summary stats, no routine preview — just logging and recent history.
+
+**Food** merges routine management and food history into one page. Active plan card at the top (food + supplements + medications + edit routine button). Below: chronological list of past plan groups with inline scorecard display. Active plans derive scores from daily logs. Backfilled periods require mandatory scorecard entry (poop quality range + itch severity range).
+
+**Insights** shows ingredient-level correlation results with signal mode toggle (stool/itch/both). Expandable ingredient rows with product cross-reference and cross-reactivity info.
 
 ### Two-Track Correlation Engine
 
@@ -112,7 +123,7 @@ Purina Fecal Scoring Chart (1-7), the de facto North American veterinary standar
 
 ## Phases
 
-See `todo-phases.md` for the living checklist. Phases 0-3 (data prep, foundation, core loop, analysis) are complete. Phase 4 focuses on pollen/weather/seasons, medication tracking, the dashboard timeline, and LLM export.
+See `todo-phases.md` for the living checklist. Phases 0-3.6 (data prep, foundation, core loop, analysis, scorecard simplification, page reorg) are complete. Phase 4 focuses on pollen/weather/seasons, medication tracking, the dashboard timeline, and LLM export. Phase 5 adds pack-based sharing (multi-user access + public read-only links).
 
 ## Reference Docs
 
@@ -123,6 +134,10 @@ See `todo-phases.md` for the living checklist. Phases 0-3 (data prep, foundation
 | `ref-dog-food-canada.md` | Brand scraper status and technical reference |
 | `ref-ingredient-analytics.md` | Research-backed correlation methodology (two-track model, trigger categories, timelines, confounders) |
 | `todo-medications.md` | Medication catalog spec (52 meds across 5 categories) |
+| `todo-sharing.md` | Pack sharing spec (multi-user access + public links) |
+| `todo-scrapetype.md` | Product type/format split spec |
+| `todo-importexport.md` | Dev-only dog data export/import spec |
+| `todo-pagereorg.md` | Page reorganization spec (completed, kept as reference) |
 | `peaches.md` | Primary user's dog profile, food history, current issues, vet notes |
 | `mydoglog-branding.md` | Design system, color palette, typography, component patterns |
 | `ref-mar2026-myvetstore-pricing.md` | Ground truth for vet product scraper validation |

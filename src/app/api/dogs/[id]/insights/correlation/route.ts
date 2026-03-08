@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from "next/server"
 import { requireDogOwnership, isNextResponse } from "@/lib/api-helpers"
-import { fetchCorrelationInput, fetchIngredientProductMap } from "@/lib/correlation/query"
+import { db, feedingPeriods } from "@/lib/db"
+import { eq, and, asc } from "drizzle-orm"
+import { fetchCorrelationInput, fetchIngredientProductMap, buildGiIngredientProductMap } from "@/lib/correlation/query"
 import { runCorrelation } from "@/lib/correlation/engine"
 import { DEFAULT_CORRELATION_OPTIONS } from "@/lib/correlation/types"
 import type { IngredientProductEntry } from "@/lib/correlation/types"
@@ -8,7 +10,7 @@ import type { IngredientProductEntry } from "@/lib/correlation/types"
 type RouteParams = { params: Promise<{ id: string }> }
 
 export async function GET(
-  request: NextRequest,
+  _request: NextRequest,
   { params }: RouteParams,
 ): Promise<NextResponse> {
   try {
@@ -16,17 +18,24 @@ export async function GET(
     const authResult = await requireDogOwnership(dogId)
     if (isNextResponse(authResult)) return authResult
 
-    const { searchParams } = request.nextUrl
-    const from = searchParams.get("from")
-    const to = searchParams.get("to")
+    const today = new Date().toISOString().split("T")[0]
 
-    const now = new Date()
-    const windowEnd = to ?? now.toISOString().split("T")[0]
-    const windowStart =
-      from ??
-      new Date(now.getTime() - 90 * 24 * 60 * 60 * 1000)
-        .toISOString()
-        .split("T")[0]
+    // Window = earliest NON-BACKFILL feeding period → today.
+    // Backfill dates outside this window are included by buildBackfillSnapshots.
+    // Using ALL periods would make the window cover backfill dates, causing them
+    // to be skipped (engine line 830: dates inside window are excluded from backfill).
+    const earliestRow = await db
+      .select({ startDate: feedingPeriods.startDate })
+      .from(feedingPeriods)
+      .where(and(
+        eq(feedingPeriods.dogId, dogId),
+        eq(feedingPeriods.isBackfill, false),
+      ))
+      .orderBy(asc(feedingPeriods.startDate))
+      .limit(1)
+
+    const windowStart = earliestRow[0]?.startDate ?? today
+    const windowEnd = today
 
     const input = await fetchCorrelationInput(dogId, windowStart, windowEnd)
     const [result, ingredientProductMap] = await Promise.all([
@@ -40,9 +49,12 @@ export async function GET(
       ingredientProducts[key] = entries
     }
 
+    const giIngredientProducts = buildGiIngredientProductMap(ingredientProductMap)
+
     return NextResponse.json({
       ...result,
       ingredientProducts,
+      giIngredientProducts,
     })
   } catch (error) {
     console.error("Error fetching correlation data:", error)

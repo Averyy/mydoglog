@@ -4,13 +4,14 @@ Living checklist. Update as work progresses.
 
 ---
 
-## Phases 0–3 ✅ (Complete)
+## Phases 0–3.5 ✅ (Complete)
 
 - **Phase 0 — Data Prep:** 1,260 products scraped across 16 brands, manual whole foods, AAFCO ingredient family mappings
 - **Phase 1 — Foundation:** Next.js + Drizzle + PostgreSQL, build.py product loader, Better Auth, dog CRUD, product search API
 - **Phase 2 — Core Loop:** Daily check-in / quick poop / quick treat flows, routine templates, food scorecard, dashboard, responsive drawer/dialog pattern
 - **Phase 3 — Analysis:** Correlation engine (ingredient-level, two-track skin/GI), correlation results page, food scorecard improvements, Insights tab
 - **Phase 3.5 — Scorecard simplification:** Removed redundant scorecard from routine change flow (daily logs already capture this). Made scorecard mandatory for backfills (no skip). Zero-log feeding periods are deleted on routine change instead of kept as empty data. Active plans derive scores from daily logs only.
+- **Phase 3.6 — Page reorganization:** Three-page structure (Home/Food/Insights). Home = quick-log grid + log feed. Food = active routine + food history with inline scorecards. Insights = ingredient correlation analysis. Extracted components: `log-feed.tsx`, `ingredient-analysis-section.tsx`, `ingredient-row.tsx`, `product-ingredient-list.tsx`, `score-grid.tsx`. API routes reorganized under `/food/` and `/insights/`.
 
 ## Phase 4: Extended Logging + Visualization
 
@@ -32,6 +33,17 @@ Living checklist. Update as work progresses.
 - ~~Food database browser~~ — product picker with search already exists, standalone browse page is vanity
 - ~~Full dashboard~~ — merged into dashboard timeline above
 
+## Phase 5: Sharing & Pack Access
+
+See `todo-sharing.md` for full spec.
+
+- [ ] `pack_members` table + backfill from `ownerId` + drop `ownerId`
+- [ ] `shareToken` column on dogs
+- [ ] `requireDogOwnership()` → `requirePackAccess()` across all routes
+- [ ] Invite system (single-use codes, 1-week expiry)
+- [ ] Pack management UI (list members, remove, invite link)
+- [ ] Public share route (`/share/[token]`) — unauthenticated read-only view, 1hr cache
+
 ## Future Considerations
 
 Out of scope for initial build. Roughly prioritized.
@@ -45,7 +57,6 @@ Out of scope for initial build. Roughly prioritized.
 
 ### Skipped permanently
 
-- ~~DogShare~~ — multi-user RBAC for a personal app
 - ~~iOS app~~ — responsive web works fine
 - ~~Barcode scanning~~ — DB has 1,260+ products, search works
 - ~~URL-based product import~~ — scrapers already exist

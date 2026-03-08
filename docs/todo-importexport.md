@@ -102,3 +102,10 @@ Modify `src/app/(app)/settings/settings-client.tsx` to add export/import buttons
 - Product IDs are identical across dev and prod (both loaded by the same `build.py` from the same brand JSONs)
 - Import is destructive — same-name dog gets deleted and recreated, not merged
 - No conflict resolution needed — this is a one-way sync tool
+
+## Note: Sharing Migration
+
+When pack sharing lands (see `todo-sharing.md`), `ownerId` will be replaced by `pack_members`. This affects:
+- Export: `requireDogOwnership()` → `requirePackAccess()`
+- Import: inserting into `pack_members` instead of setting `ownerId` on dog creation
+- Delete-on-reimport: cascade still works via `pack_members` → dog
