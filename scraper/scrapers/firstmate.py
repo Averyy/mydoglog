@@ -105,29 +105,29 @@ def _detect_sub_brand(url: str, title: str) -> str | None:
     return "FirstMate"
 
 
-def _detect_product_type(url: str, title: str, wp_cats: list[int] | None = None) -> str:
-    """Detect product type from WP categories, URL, or title."""
-    # Prefer WP category data
-    if wp_cats:
-        if _CANNED_CAT in wp_cats:
-            return "wet"
-        if _TREATS_CAT in wp_cats:
-            return "treats"
+def _detect_type(url: str, title: str, wp_cats: list[int] | None = None) -> str:
+    """Detect product type: food, treat, or supplement."""
+    if wp_cats and _TREATS_CAT in wp_cats:
+        return "treat"
+    if "/treats/" in url.lower() or "treat" in title.lower():
+        return "treat"
+    return "food"
+
+
+def _detect_format(url: str, title: str, wp_cats: list[int] | None = None) -> str:
+    """Detect product format: dry or wet."""
+    if wp_cats and _CANNED_CAT in wp_cats:
+        return "wet"
 
     url_lower = url.lower()
     title_lower = title.lower()
 
-    # Canned/wet detection: check for can counts, oz sizes, and canned keywords
     if any(kw in url_lower for kw in ["/canned/", "canned"]):
         return "wet"
     if any(kw in title_lower for kw in ["12.2oz", "5.5oz", "3.2oz", "3oz"]):
         return "wet"
     if re.search(r"\d+\s*cans?\b", title_lower):
         return "wet"
-
-    # Treats
-    if "/treats/" in url_lower or "treat" in title_lower:
-        return "treats"
 
     return "dry"
 
@@ -424,7 +424,8 @@ def _parse_product(
         "brand": "FirstMate",
         "url": url,
         "channel": "retail",
-        "product_type": _detect_product_type(url, name, wp_cats),
+        "product_type": _detect_type(url, name, wp_cats),
+        "product_format": _detect_format(url, name, wp_cats),
     }
 
     sub_brand = _detect_sub_brand(url, name)

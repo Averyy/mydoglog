@@ -1,7 +1,7 @@
 {
   "brand": "Go! Solutions",
   "website_url": "https://www.go-solutions.com",
-  "scraped_at": "2026-03-03T23:38:56.663225+00:00",
+  "scraped_at": "2026-03-08T16:36:48.316587+00:00",
   "scraper_version": "0.1.0",
   "stats": {
     "product_count": 43,
@@ -9,10 +9,9 @@
       "retail": 43
     },
     "by_type": {
-      "dry": 24,
-      "supplements": 8,
-      "wet": 7,
-      "treats": 4
+      "food": 31,
+      "supplement": 8,
+      "treat": 4
     }
   },
   "products": [
@@ -21,7 +20,8 @@
       "brand": "Go! Solutions",
       "url": "https://www.go-solutions.com/en-ca/dog-food/dry/dental-immune-health-chicken-salmon-recipe-with-grains",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "Dental + Immune Health",
       "ingredients_raw": "chicken meal, barley, rye, oatmeal, chicken fat (preserved with mixed tocopherols), ground miscanthus grass, natural flavour, de-boned chicken, de-boned salmon, apples, sodium hexametaphosphate, vitamin E, potassium chloride, salt, marine microalgae oil, calcium carbonate, taurine, choline chloride, vitamins (vitamin E supplement, L-ascorbyl-2-polyphosphate (a source of vitamin C), niacin, d-calcium pantothenate, vitamin A supplement, thiamine mononitrate, riboflavin, beta-carotene, vitamin B12 supplement, biotin, pyridoxine hydrochloride, vitamin D3 supplement, folic acid), minerals (ferrous sulphate, zinc proteinate, iron proteinate, selenium yeast, zinc oxide, copper sulphate, manganese proteinate, copper proteinate, manganous oxide, calcium iodate), dried Lactobacillus acidophilus fermentation product, dried Enterococcus faecium fermentation product, yeast culture, parsley, peppermint, green tea extract, L-lysine, yucca schidigera extract, dried rosemary",
       "guaranteed_analysis": {
@@ -38,7 +38,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3533 kcal/kg, 282 kcal/cup",
       "images": [
-        "/products/go-solutions/go-solutions-dry-dental-immune-health-chicken-salmon-dog-food-with-grains.png"
+        "/products/go-solutions/go-solutions-food-dental-immune-health-chicken-salmon-dog-food-with-grains.png"
       ],
       "variants": [
         {
@@ -61,7 +61,8 @@
       "brand": "Go! Solutions",
       "url": "https://www.go-solutions.com/en-ca/dog-food/toppers/booster-immune-health-shredded-chicken-salmon-in-bone-broth",
       "channel": "retail",
-      "product_type": "supplements",
+      "product_type": "supplement",
+      "product_format": "wet",
       "product_line": "Immune Health",
       "ingredients_raw": "chicken, chicken broth, salmon broth, salmon, sunflower oil, carrots, pumpkin, tapioca, flaxseed, cranberries, blueberries, raspberries, marine microalgae oil, vitamin E supplement, yeast culture",
       "guaranteed_analysis": {
@@ -73,7 +74,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "710 kcal/kg, 56 kcal/pouch",
       "images": [
-        "/products/go-solutions/go-solutions-supplements-immune-health-shredded-chicken-salmon-in-bone-broth-booster-dog-food-topper.png"
+        "/products/go-solutions/go-solutions-supplement-immune-health-shredded-chicken-salmon-in-bone-broth-booster-dog-food-topper.png"
       ],
       "variants": [
         {
@@ -88,7 +89,8 @@
       "brand": "Go! Solutions",
       "url": "https://www.go-solutions.com/en-ca/dog-food/toppers/booster-immune-health-minced-chicken-with-gravy",
       "channel": "retail",
-      "product_type": "supplements",
+      "product_type": "supplement",
+      "product_format": "wet",
       "product_line": "Immune Health",
       "ingredients_raw": "chicken, chicken broth, peas, carrots, pumpkin, tapioca, water, sodium tripolyphosphate, flaxseed, salt, cranberries, blueberries, raspberries, marine microalgae oil, vitamin E supplement, yeast culture",
       "guaranteed_analysis": {
@@ -100,7 +102,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "860 kcal/kg, 68 kcal/pouch",
       "images": [
-        "/products/go-solutions/go-solutions-supplements-immune-health-minced-chicken-with-gravy-booster-dog-food-topper.png"
+        "/products/go-solutions/go-solutions-supplement-immune-health-minced-chicken-with-gravy-booster-dog-food-topper.png"
       ],
       "variants": [
         {
@@ -115,7 +117,8 @@
       "brand": "Go! Solutions",
       "url": "https://www.go-solutions.com/en-ca/dog-food/toppers/booster-tranquility-minced-chicken-with-gravy",
       "channel": "retail",
-      "product_type": "supplements",
+      "product_type": "supplement",
+      "product_format": "wet",
       "product_line": "Tranquility",
       "ingredients_raw": "chicken, chicken broth, peas, carrots, pumpkin, tapioca, water, sodium tripolyphosphate, flaxseed, cranberries, salt, marine microalgae oil, chamomile, L-tryptophan",
       "guaranteed_analysis": {
@@ -127,7 +130,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "895 kcal/kg, 70 kcal/pouch",
       "images": [
-        "/products/go-solutions/go-solutions-supplements-tranquility-minced-chicken-with-gravy-booster-dog-food-topper.png"
+        "/products/go-solutions/go-solutions-supplement-tranquility-minced-chicken-with-gravy-booster-dog-food-topper.png"
       ],
       "variants": [
         {
@@ -142,7 +145,8 @@
       "brand": "Go! Solutions",
       "url": "https://www.go-solutions.com/en-ca/dog-food/toppers/booster-tranquility-chicken-salmon-duck-stew",
       "channel": "retail",
-      "product_type": "supplements",
+      "product_type": "supplement",
+      "product_format": "wet",
       "product_line": "Tranquility",
       "ingredients_raw": "chicken, chicken broth, salmon broth, salmon, duck, peas, carrots, pumpkin, tapioca, sodium tripolyphosphate, flaxseed, cranberries, salt, marine microalgae oil, chamomile, L-tryptophan",
       "guaranteed_analysis": {
@@ -154,7 +158,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "955 kcal/kg, 75 kcal/pouch",
       "images": [
-        "/products/go-solutions/go-solutions-supplements-tranquility-chicken-salmon-duck-stew-booster-dog-food-topper.png"
+        "/products/go-solutions/go-solutions-supplement-tranquility-chicken-salmon-duck-stew-booster-dog-food-topper.png"
       ],
       "variants": [
         {
@@ -169,7 +173,8 @@
       "brand": "Go! Solutions",
       "url": "https://www.go-solutions.com/en-ca/dog-food/dry/weight-management-joint-care-grain-free-chicken-recipe",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "Weight Management + Joint Care",
       "ingredients_raw": "de-boned chicken, peas, chicken meal, potatoes, chickpeas, tapioca, pea fibre, chicken fat (preserved with mixed tocopherols), flaxseed, suncured alfalfa, natural flavour, psyllium husk, potato flour, apples, tomato, carrots, salt, dried chicory root, vitamins (vitamin E supplement, L-ascorbyl-2-polyphosphate (a source of vitamin C), niacin, d-calcium pantothenate, vitamin A supplement, thiamine mononitrate, riboflavin, beta-carotene, vitamin B12 supplement, biotin, pyridoxine hydrochloride, vitamin D3 supplement, folic acid), minerals (ferrous sulphate, zinc proteinate, iron proteinate, selenium yeast, zinc oxide, copper sulphate, manganese proteinate, copper proteinate, manganous oxide, calcium iodate), dried Enterococcus faecium fermentation product, dried Lactobacillus acidophilus fermentation product, taurine, DL-methionine, choline chloride, chicken cartilage (a source of chondroitin sulphate), glucosamine hydrochloride, chondroitin sulphate, New Zealand green mussels, L-carnitine, yucca schidigera extract, potassium chloride, dried rosemary",
       "guaranteed_analysis": {
@@ -189,7 +194,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3732 kcal/kg, 410 kcal/cup",
       "images": [
-        "/products/go-solutions/go-solutions-dry-weight-management-joint-care-chicken-grain-free-dry-dog-food.png"
+        "/products/go-solutions/go-solutions-food-weight-management-joint-care-chicken-grain-free-dry-dog-food.png"
       ],
       "variants": [
         {
@@ -212,7 +217,8 @@
       "brand": "Go! Solutions",
       "url": "https://www.go-solutions.com/en-ca/dog-food/toppers/booster-digestive-health-chicken-duck-pate",
       "channel": "retail",
-      "product_type": "supplements",
+      "product_type": "supplement",
+      "product_format": "wet",
       "product_line": "Digestive Health",
       "ingredients_raw": "chicken, chicken broth, duck, tapioca, peas, carrots, pumpkin, papaya, brown rice, yeast extract, flaxseed, cranberries, chia seeds, dried chicory root, psyllium husk, marine microalgae oil",
       "guaranteed_analysis": {
@@ -224,7 +230,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "1188 kcal/kg, 94 kcal/pouch",
       "images": [
-        "/products/go-solutions/go-solutions-supplements-digestive-health-chicken-duck-p-t-booster-dog-food-topper.png"
+        "/products/go-solutions/go-solutions-supplement-digestive-health-chicken-duck-p-t-booster-dog-food-topper.png"
       ],
       "variants": [
         {
@@ -239,7 +245,8 @@
       "brand": "Go! Solutions",
       "url": "https://www.go-solutions.com/en-ca/dog-food/toppers/booster-digestive-health-chicken-lamb-stew",
       "channel": "retail",
-      "product_type": "supplements",
+      "product_type": "supplement",
+      "product_format": "wet",
       "product_line": "Digestive Health",
       "ingredients_raw": "chicken, chicken broth, lamb, peas, tapioca, brown rice, carrots, pumpkin, papaya, yeast extract, sodium tripolyphosphate, flaxseed, cranberries, chia seeds, salt, dried chicory root, psyllium husk, marine microalgae oil",
       "guaranteed_analysis": {
@@ -251,7 +258,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "965 kcal/kg, 76 kcal/pouch",
       "images": [
-        "/products/go-solutions/go-solutions-supplements-digestive-health-chicken-lamb-stew-booster-dog-food-topper.png"
+        "/products/go-solutions/go-solutions-supplement-digestive-health-chicken-lamb-stew-booster-dog-food-topper.png"
       ],
       "variants": [
         {
@@ -266,7 +273,8 @@
       "brand": "Go! Solutions",
       "url": "https://www.go-solutions.com/en-ca/dog-food/toppers/booster-joint-care-minced-chicken-with-gravy",
       "channel": "retail",
-      "product_type": "supplements",
+      "product_type": "supplement",
+      "product_format": "wet",
       "product_line": "Joint Care",
       "ingredients_raw": "chicken, chicken broth, peas, carrots, pumpkin, tapioca, water, sodium tripolyphosphate, flaxseed, cranberries, salt, glucosamine sulphate, chondroitin sulphate, marine microalgae oil, vitamin E supplement",
       "guaranteed_analysis": {
@@ -280,7 +288,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "895 kcal/kg, 71 kcal/pouch",
       "images": [
-        "/products/go-solutions/go-solutions-supplements-joint-care-minced-chicken-with-gravy-booster-dog-food-topper.png"
+        "/products/go-solutions/go-solutions-supplement-joint-care-minced-chicken-with-gravy-booster-dog-food-topper.png"
       ],
       "variants": [
         {
@@ -295,7 +303,8 @@
       "brand": "Go! Solutions",
       "url": "https://www.go-solutions.com/en-ca/dog-food/toppers/booster-joint-care-chicken-salmon-duck-pate",
       "channel": "retail",
-      "product_type": "supplements",
+      "product_type": "supplement",
+      "product_format": "wet",
       "product_line": "Joint Care",
       "ingredients_raw": "chicken, chicken broth, salmon, duck, salmon broth, tapioca, peas, carrots, pumpkin, flaxseed, cranberries, marine microalgae oil, glucosamine sulphate, chondroitin sulphate, vitamin E supplement",
       "guaranteed_analysis": {
@@ -309,7 +318,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "1148 kcal/kg, 91 kcal/pouch",
       "images": [
-        "/products/go-solutions/go-solutions-supplements-joint-care-chicken-salmon-duck-p-t-booster-dog-food-topper.png"
+        "/products/go-solutions/go-solutions-supplement-joint-care-chicken-salmon-duck-p-t-booster-dog-food-topper.png"
       ],
       "variants": [
         {
@@ -324,7 +333,8 @@
       "brand": "Go! Solutions",
       "url": "https://www.go-solutions.com/en-ca/dog-food/dry/skin-coat-care-large-breed-adult-salmon-recipe-with-grains",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "Skin + Coat Care",
       "ingredients_raw": "salmon meal, oatmeal, potatoes, whole oats, deboned salmon, canola oil (preserved with mixed tocopherols), apples, carrots, cranberries, monocalcium phosphate, natural flavour, calcium carbonate, flaxseed, salt, potassium chloride, dried chicory root, choline chloride, taurine, dried Lactobacillus acidophilus fermentation product, dried Enterococcus faecium fermentation product, vitamins (vitamin E supplement, L-ascorbyl-2-polyphosphate (a source of vitamin C), niacin, d-calcium pantothenate, vitamin A supplement, thiamine mononitrate, riboflavin, beta-carotene, vitamin B12 supplement, biotin, pyridoxine hydrochloride, vitamin D3 supplement, folic acid), minerals (zinc proteinate, iron proteinate, manganese proteinate, copper proteinate, selenium yeast, calcium iodate), glucosamine hydrochloride, L-lysine, New Zealand green mussels, chondroitin sulphate, yucca schidigera extract, L-carnitine, dried rosemary",
       "guaranteed_analysis": {
@@ -344,7 +354,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3968 kcal/kg, 436 kcal/cup",
       "images": [
-        "/products/go-solutions/go-solutions-dry-skin-coat-care-large-breed-adult-salmon-dry-dog-food-with-grains.png"
+        "/products/go-solutions/go-solutions-food-skin-coat-care-large-breed-adult-salmon-dry-dog-food-with-grains.png"
       ],
       "variants": [
         {
@@ -363,7 +373,8 @@
       "brand": "Go! Solutions",
       "url": "https://www.go-solutions.com/en-ca/dog-food/dry/skin-coat-care-large-breed-puppy-salmon-recipe-with-grains",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "Skin + Coat Care",
       "ingredients_raw": "salmon meal, oatmeal, whole oats, potatoes, de-boned salmon, canola oil (preserved with mixed tocopherols), apples, carrots, cranberries, monocalcium phosphate, calcium carbonate, flaxseed, salt, natural flavour, potassium chloride, dried chicory root, choline chloride, taurine, dried Lactobacillus acidophilus fermentation product, dried Enterococcus faecium fermentation product, vitamins (vitamin E supplement, L-ascorbyl-2-polyphosphate (a source of vitamin C), niacin, d-calcium pantothenate, vitamin A supplement, thiamine mononitrate, riboflavin, beta-carotene, vitamin B12 supplement, biotin, pyridoxine hydrochloride, vitamin D3 supplement, folic acid), minerals (zinc proteinate, iron proteinate, manganese proteinate, copper proteinate, selenium yeast, calcium iodate), marine microalgae oil, L-lysine, New Zealand green mussels, yucca schidigera extract, L-carnitine, dried rosemary",
       "guaranteed_analysis": {
@@ -382,7 +393,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "4160 kcal/kg, 458 kcal/cup",
       "images": [
-        "/products/go-solutions/go-solutions-dry-skin-coat-care-large-breed-puppy-salmon-dry-dog-food-with-grains.png"
+        "/products/go-solutions/go-solutions-food-skin-coat-care-large-breed-puppy-salmon-dry-dog-food-with-grains.png"
       ],
       "variants": [
         {
@@ -401,7 +412,8 @@
       "brand": "Go! Solutions",
       "url": "https://www.go-solutions.com/en-ca/dog-food/dry/sensitivities-limited-ingredient-grain-free-turkey-recipe",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "Sensitivities",
       "ingredients_raw": "de-boned turkey, turkey meal, tapioca, peas, lentils, chickpeas, canola oil (preserved with mixed tocopherols), coconut oil (preserved with mixed tocopherols), natural flavour, dicalcium phosphate, salt, potassium chloride, dried chicory root, choline chloride, marine microalgae oil, vitamins (vitamin E supplement, L-ascorbyl-2-polyphosphate (a source of vitamin C), niacin, d-calcium pantothenate, vitamin A supplement, thiamine mononitrate, riboflavin, beta-carotene, vitamin B12 supplement, biotin, pyridoxine hydrochloride, vitamin D3 supplement, folic acid), minerals (ferrous sulphate, zinc proteinate, iron proteinate, selenium yeast, zinc oxide, copper sulphate, manganese proteinate, copper proteinate, manganous oxide, calcium iodate), taurine, dried rosemary",
       "guaranteed_analysis": {
@@ -417,7 +429,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "4098 kcal/kg, 451 kcal/cup",
       "images": [
-        "/products/go-solutions/go-solutions-dry-sensitivities-turkey-grain-free-limited-ingredient-dog-food.png"
+        "/products/go-solutions/go-solutions-food-sensitivities-turkey-grain-free-limited-ingredient-dog-food.png"
       ],
       "variants": [
         {
@@ -440,7 +452,8 @@
       "brand": "Go! Solutions",
       "url": "https://www.go-solutions.com/en-ca/dog-food/wet/sensitivities-limited-ingredient-grain-free-duck-pate",
       "channel": "retail",
-      "product_type": "wet",
+      "product_type": "food",
+      "product_format": "wet",
       "product_line": "Sensitivities",
       "ingredients_raw": "duck, duck broth, tapioca, dried egg whites, pumpkin, cranberries, flaxseed, salmon oil, sodium tripolyphosphate, cassia gum, guar gum, tricalcium phosphate, potassium chloride, vitamins (vitamin A supplement, vitamin D3 supplement, vitamin E supplement, niacin, d-calcium pantothenate, thiamine mononitrate, riboflavin, pyridoxine hydrochloride, folic acid, biotin, vitamin B12 supplement), minerals (zinc proteinate, iron proteinate, copper proteinate, manganese proteinate, calcium iodate, selenium yeast), choline chloride, taurine, salt",
       "guaranteed_analysis": {
@@ -452,7 +465,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "1003 kcal/kg",
       "images": [
-        "/products/go-solutions/go-solutions-wet-sensitivities-duck-p-t-grain-free-limited-ingredient-dog-food.png"
+        "/products/go-solutions/go-solutions-food-sensitivities-duck-p-t-grain-free-limited-ingredient-dog-food.png"
       ],
       "variants": [
         {
@@ -467,7 +480,8 @@
       "brand": "Go! Solutions",
       "url": "https://www.go-solutions.com/en-ca/dog-food/dry/sensitivities-limited-ingredient-grain-free-duck-recipe",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "Sensitivities",
       "ingredients_raw": "de-boned duck, duck meal, peas, lentils, tapioca, pea flour, canola oil (preserved with mixed tocopherols), chickpeas, natural flavour, coconut oil (preserved with mixed tocopherols), monocalcium phosphate, salt, calcium carbonate, potassium chloride, dried chicory root, choline chloride, marine microalgae oil, vitamins (vitamin E supplement, L-ascorbyl-2-polyphosphate (a source of vitamin C), niacin, d-calcium pantothenate, vitamin A supplement, thiamine mononitrate, riboflavin, beta-carotene, vitamin B12 supplement, biotin, pyridoxine hydrochloride, vitamin D3 supplement, folic acid), minerals (ferrous sulphate, zinc proteinate, iron proteinate, selenium yeast, zinc oxide, copper sulphate, manganese proteinate, copper proteinate, manganous oxide, calcium iodate), taurine, dried rosemary",
       "guaranteed_analysis": {
@@ -483,7 +497,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3991 kcal/kg, 439 kcal/cup",
       "images": [
-        "/products/go-solutions/go-solutions-dry-sensitivities-duck-grain-free-limited-ingredient-dog-food.png"
+        "/products/go-solutions/go-solutions-food-sensitivities-duck-grain-free-limited-ingredient-dog-food.png"
       ],
       "variants": [
         {
@@ -506,7 +520,8 @@
       "brand": "Go! Solutions",
       "url": "https://www.go-solutions.com/en-ca/dog-food/dry/carnivore-grain-free-salmon-cod-recipe",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "Carnivore",
       "ingredients_raw": "de-boned salmon, de-boned cod, salmon meal, peas, herring meal, pea flour, canola oil (preserved with mixed tocopherols), lentils, chickpeas, tapioca, natural flavour, de-boned trout, flaxseed, pea fibre, salmon oil, apples, carrots, cranberries, monocalcium phosphate, salt, dried chicory root, potassium chloride, dried Lactobacillus acidophilus fermentation product, dried Enterococcus faecium fermentation product, vitamins (vitamin A supplement, vitamin D3 supplement, vitamin E supplement, niacin, L-ascorbyl-2-polyphosphate (a source of vitamin C), d-calcium pantothenate, thiamine mononitrate, beta-carotene, riboflavin, pyridoxine hydrochloride, folic acid, biotin, vitamin B12 supplement), minerals (ferrous sulphate, zinc proteinate, iron proteinate, selenium yeast, zinc oxide, copper sulphate, manganese proteinate, copper proteinate, manganous oxide, calcium iodate), taurine, choline chloride, dried Aspergillus oryzae fermentation extract, dried Bacillus subtilis fermentation extract, yucca schidigera extract, dried rosemary",
       "guaranteed_analysis": {
@@ -522,7 +537,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "4134 kcal/kg, 455 kcal/cup",
       "images": [
-        "/products/go-solutions/go-solutions-dry-carnivore-salmon-cod-grain-free-dry-dog-food.png"
+        "/products/go-solutions/go-solutions-food-carnivore-salmon-cod-grain-free-dry-dog-food.png"
       ],
       "variants": [
         {
@@ -545,7 +560,8 @@
       "brand": "Go! Solutions",
       "url": "https://www.go-solutions.com/en-ca/dog-food/dry/carnivore-grain-free-chicken-turkey-duck-puppy-recipe",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "Carnivore",
       "ingredients_raw": "chicken meal, turkey meal, salmon meal, de-boned chicken, de-boned turkey, de-boned trout, potatoes, chicken fat (preserved with mixed tocopherols), peas, tapioca, lentils, duck meal, chickpeas, natural chicken flavour, whole dried egg, apples, herring meal, flaxseed, salmon oil, suncured alfalfa, de-boned duck, de-boned salmon, sweet potatoes, potassium chloride, pumpkin, carrots, bananas, blueberries, cranberries, broccoli, blackberries, squash, papayas, pomegranate, dried chicory root, dried Lactobacillus acidophilus fermentation product, dried Enterococcus faecium fermentation product, dried Aspergillus oryzae fermentation extract, dried Bacillus subtilis fermentation extract, choline chloride, vitamins (vitamin E supplement, L-ascorbyl-2-polyphosphate (a source of vitamin C), niacin, d-calcium pantothenate, vitamin A supplement, thiamine mononitrate, riboflavin, beta-carotene, vitamin B12 supplement, biotin, pyridoxine hydrochloride, vitamin D3 supplement, folic acid), minerals (ferrous sulphate, zinc proteinate, iron proteinate, selenium yeast, zinc oxide, copper sulphate, manganese proteinate, copper proteinate, manganous oxide, calcium iodate), salt, taurine, yucca schidigera extract, dried rosemary, green tea extract, peppermint, parsley, rosehips, zedoary, dandelion, chamomile, ginger, fennel, turmeric, juniper berries, licorice, cardamom, cloves",
       "guaranteed_analysis": {
@@ -562,7 +578,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "4100 kcal/kg, 451 kcal/cup",
       "images": [
-        "/products/go-solutions/go-solutions-dry-carnivore-chicken-turkey-duck-grain-free-puppy-food.png"
+        "/products/go-solutions/go-solutions-food-carnivore-chicken-turkey-duck-grain-free-puppy-food.png"
       ],
       "variants": [
         {
@@ -585,7 +601,8 @@
       "brand": "Go! Solutions",
       "url": "https://www.go-solutions.com/en-ca/dog-food/dry/sensitivities-limited-ingredient-grain-free-salmon-recipe",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "Sensitivities",
       "ingredients_raw": "de-boned salmon, salmon meal, tapioca, peas, lentils, chickpeas, pea flour, canola oil (preserved with mixed tocopherols), coconut oil (preserved with mixed tocopherols), calcium carbonate, dicalcium phosphate, natural fish flavour, salt, dried chicory root, choline chloride, potassium chloride, vitamins (vitamin E supplement, L-ascorbyl-2-polyphosphate (a source of vitamin C), niacin, d-calcium pantothenate, vitamin A supplement, thiamine mononitrate, riboflavin, beta-carotene, vitamin B12 supplement, biotin, pyridoxine hydrochloride, vitamin D3 supplement, folic acid), minerals (ferrous sulphate, zinc proteinate, iron proteinate, selenium yeast, zinc oxide, copper sulphate, manganese proteinate, copper proteinate, manganous oxide, calcium iodate), taurine, dried rosemary",
       "guaranteed_analysis": {
@@ -601,7 +618,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "4084 kcal/kg, 449 kcal/cup",
       "images": [
-        "/products/go-solutions/go-solutions-dry-sensitivities-salmon-grain-free-limited-ingredient-dog-food.png"
+        "/products/go-solutions/go-solutions-food-sensitivities-salmon-grain-free-limited-ingredient-dog-food.png"
       ],
       "variants": [
         {
@@ -624,7 +641,8 @@
       "brand": "Go! Solutions",
       "url": "https://www.go-solutions.com/en-ca/dog-food/dry/skin-coat-care-chicken-recipe-with-grains",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "Skin + Coat Care",
       "ingredients_raw": "chicken meal, de-boned chicken, whole brown rice, white rice, oatmeal, chicken fat (preserved with mixed tocopherols), salmon meal, natural chicken flavour, flaxseed, pea fibre, suncured alfalfa, apples, carrots, cranberries, salt, potassium chloride, dried chicory root, dried Lactobacillus acidophilus fermentation product, dried Enterococcus faecium fermentation product, vitamins (vitamin E supplement, L-ascorbyl-2-polyphosphate (a source of vitamin C), niacin, d-calcium pantothenate, vitamin A supplement, thiamine mononitrate, riboflavin, beta-carotene, vitamin B12 supplement, biotin, pyridoxine hydrochloride, vitamin D3 supplement, folic acid), minerals (zinc proteinate, iron proteinate, manganese proteinate, copper proteinate, selenium yeast, calcium iodate), taurine, DL-methionine, L-lysine, yucca schidigera extract, dried rosemary",
       "guaranteed_analysis": {
@@ -640,7 +658,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3889 kcal/kg, 467 kcal/cup",
       "images": [
-        "/products/go-solutions/go-solutions-dry-skin-coat-care-chicken-dry-dog-food-with-grains.png"
+        "/products/go-solutions/go-solutions-food-skin-coat-care-chicken-dry-dog-food-with-grains.png"
       ],
       "variants": [
         {
@@ -663,7 +681,8 @@
       "brand": "Go! Solutions",
       "url": "https://www.go-solutions.com/en-ca/dog-food/dry/skin-coat-care-duck-recipe-with-grains",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "Skin + Coat Care",
       "ingredients_raw": "duck meal, oatmeal, whole brown rice, whole oats, de-boned duck, canola oil (preserved with mixed tocopherols), apples, coconut oil (preserved with mixed tocopherols), natural flavour, dicalcium phosphate, salmon oil, flaxseed, salt, dried chicory root, quinoa, potassium chloride, choline chloride, carrots, cranberries, vitamins (vitamin E supplement, L-ascorbyl-2-polyphosphate (a source of vitamin C), niacin, d-calcium pantothenate, vitamin A supplement, thiamine mononitrate, riboflavin, beta-carotene, vitamin B12 supplement, biotin, pyridoxine hydrochloride, vitamin D3 supplement, folic acid), minerals (zinc proteinate, iron proteinate, manganese proteinate, copper proteinate, selenium yeast, calcium iodate), dried Lactobacillus acidophilus fermentation product, dried Enterococcus faecium fermentation product, taurine, L-lysine, yucca schidigera extract, dried rosemary",
       "guaranteed_analysis": {
@@ -679,7 +698,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3649 kcal/kg, 438 kcal/cup",
       "images": [
-        "/products/go-solutions/go-solutions-dry-skin-coat-care-duck-dry-dog-food-with-grains.png"
+        "/products/go-solutions/go-solutions-food-skin-coat-care-duck-dry-dog-food-with-grains.png"
       ],
       "variants": [
         {
@@ -702,7 +721,8 @@
       "brand": "Go! Solutions",
       "url": "https://www.go-solutions.com/en-ca/dog-food/treats/benefit-chews-weight-management-joint-care-chicken-recipe",
       "channel": "retail",
-      "product_type": "treats",
+      "product_type": "treat",
+      "product_format": "dry",
       "product_line": "Benefit Chews",
       "ingredients_raw": "chicken, sweet potatoes*, coconut glycerin, cane molasses, flaxseed*, salt, natural flavour, apples*, carrots*, dried chicory root, apple cider vinegar, psyllium husk, L-carnitine, turmeric, glucosamine hydrochloride, chondroitin sulphate, New Zealand green mussels, dried rosemary, *Upcycled Ingredient",
       "guaranteed_analysis": {
@@ -717,7 +737,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "2978 kcal/kg, 7 kcal/treat",
       "images": [
-        "/products/go-solutions/go-solutions-treats-benefit-chews-weight-management-joint-care-chicken-dog-treats.png"
+        "/products/go-solutions/go-solutions-treat-benefit-chews-weight-management-joint-care-chicken-dog-treats.png"
       ],
       "variants": [
         {
@@ -732,7 +752,8 @@
       "brand": "Go! Solutions",
       "url": "https://www.go-solutions.com/en-ca/dog-food/dry/digestion-gut-health-salmon-recipe-with-ancient-grains",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "Digestion + Gut Health",
       "ingredients_raw": "salmon meal, oatmeal, rye, whole oats, millet, canola oil (preserved with mixed tocopherols), de-boned salmon, flaxseed, natural flavour, tomato, monocalcium phosphate, psyllium husk, quinoa, apples, carrots, cranberries, salt, potassium chloride, calcium carbonate, yeast extract, hydrolyzed yeast, brewer's dried yeast, dried chicory root, ground grain sorghum, choline chloride, vitamins (vitamin E supplement, L-ascorbyl-2-polyphosphate (a source of vitamin C), niacin, d-calcium pantothenate, vitamin A supplement, thiamine mononitrate, riboflavin, beta-carotene, vitamin B12 supplement, biotin, pyridoxine hydrochloride, vitamin D3 supplement, folic acid), minerals (ferrous sulphate, zinc proteinate, iron proteinate, selenium yeast, zinc oxide, copper sulphate, manganese proteinate, copper proteinate, manganous oxide, calcium iodate), dried Bacillus coagulans fermentation product, taurine, L-lysine, DL-methionine, yucca schidigera extract, dried rosemary",
       "guaranteed_analysis": {
@@ -749,7 +770,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3947 kcal/kg, 434 kcal/cup",
       "images": [
-        "/products/go-solutions/go-solutions-dry-digestion-gut-health-salmon-dry-dog-food-with-grains.png"
+        "/products/go-solutions/go-solutions-food-digestion-gut-health-salmon-dry-dog-food-with-grains.png"
       ],
       "variants": [
         {
@@ -772,7 +793,8 @@
       "brand": "Go! Solutions",
       "url": "https://www.go-solutions.com/en-ca/dog-food/dry/carnivore-grain-free-chicken-turkey-duck-adult-recipe",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "Carnivore",
       "ingredients_raw": "chicken meal, turkey meal, salmon meal, de-boned chicken, de-boned turkey, de-boned trout, potatoes, peas, tapioca, lentils, chickpeas, chicken fat (preserved with mixed tocopherols), duck meal, natural chicken flavour, whole dried egg, apples, herring meal, salmon oil, suncured alfalfa, de-boned duck, de-boned salmon, sweet potatoes, flaxseed, potassium chloride, pumpkin, carrots, bananas, blueberries, cranberries, broccoli, blackberries, squash, papayas, pomegranate, dried chicory root, dried Lactobacillus acidophilus fermentation product, dried Enterococcus faecium fermentation product, dried Aspergillus oryzae fermentation extract, dried Bacillus subtilis fermentation extract, choline chloride, vitamins (vitamin E supplement, L-ascorbyl-2-polyphosphate (a source of vitamin C), niacin, d-calcium pantothenate, vitamin A supplement, thiamine mononitrate, riboflavin, beta-carotene, vitamin B12 supplement, biotin, pyridoxine hydrochloride, vitamin D3 supplement, folic acid), minerals (ferrous sulphate, zinc proteinate, iron proteinate, selenium yeast, zinc oxide, copper sulphate, manganese proteinate, copper proteinate, manganous oxide, calcium iodate), salt, taurine, yucca schidigera extract, dried rosemary, green tea extract, peppermint, parsley, rosehips, zedoary, dandelion, chamomile, ginger, fennel, turmeric, juniper berries, licorice, cardamom, cloves",
       "guaranteed_analysis": {
@@ -788,7 +810,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3951 kcal/kg, 435 kcal/cup",
       "images": [
-        "/products/go-solutions/go-solutions-dry-carnivore-chicken-turkey-duck-grain-free-adult-dog-food.png"
+        "/products/go-solutions/go-solutions-food-carnivore-chicken-turkey-duck-grain-free-adult-dog-food.png"
       ],
       "variants": [
         {
@@ -811,7 +833,8 @@
       "brand": "Go! Solutions",
       "url": "https://www.go-solutions.com/en-ca/dog-food/dry/carnivore-grain-free-chicken-turkey-duck-senior-recipe",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "Carnivore",
       "ingredients_raw": "chicken meal, turkey meal, salmon meal, de-boned chicken, de-boned turkey, de-boned trout, potatoes, peas, tapioca, lentils, chickpeas, pea fibre, chicken fat (preserved with mixed tocopherols), duck meal, natural chicken flavour, whole dried egg, apples, herring meal, flaxseed, salmon oil, suncured alfalfa, de-boned duck, de-boned salmon, sweet potatoes, potassium chloride, pumpkin, carrots, bananas, blueberries, cranberries, broccoli, blackberries, squash, papayas, pomegranate, glucosamine hydrochloride, dried chicory root, dried Lactobacillus acidophilus fermentation product, dried Enterococcus faecium fermentation product, dried Aspergillus oryzae fermentation extract, dried Bacillus subtilis fermentation extract, L-carnitine, choline chloride, vitamins (vitamin E supplement, L-ascorbyl-2-polyphosphate (a source of vitamin C), niacin, d-calcium pantothenate, vitamin A supplement, thiamine mononitrate, riboflavin, beta-carotene, vitamin B12 supplement, biotin, pyridoxine hydrochloride, vitamin D3 supplement, folic acid), minerals (ferrous sulphate, zinc proteinate, iron proteinate, selenium yeast, zinc oxide, copper sulphate, manganese proteinate, copper proteinate, manganous oxide, calcium iodate), salt, taurine, New Zealand green mussels, yucca schidigera extract, chondroitin sulphate, dried rosemary, green tea extract, peppermint, parsley, rosehips, zedoary, dandelion, chamomile, ginger, fennel, turmeric, juniper berries, licorice, cardamom, cloves",
       "guaranteed_analysis": {
@@ -829,7 +852,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3756 kcal/kg, 394 kcal/cup",
       "images": [
-        "/products/go-solutions/go-solutions-dry-carnivore-chicken-turkey-duck-grain-free-senior-dog-food.png"
+        "/products/go-solutions/go-solutions-food-carnivore-chicken-turkey-duck-grain-free-senior-dog-food.png"
       ],
       "variants": [
         {
@@ -852,7 +875,8 @@
       "brand": "Go! Solutions",
       "url": "https://www.go-solutions.com/en-ca/dog-food/dry/carnivore-grain-free-lamb-wild-boar-recipe",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "Carnivore",
       "ingredients_raw": "de-boned lamb, lamb meal, de-boned salmon, herring meal, lentils, peas, chickpeas, tapioca, salmon meal, chicken fat (preserved with mixed tocopherols), de-boned wild boar, natural flavour, flaxseed, salmon oil, dried chicory root, apples, carrots, cranberries, dried Lactobacillus acidophilus fermentation product, dried Enterococcus faecium fermentation product, vitamins (vitamin E supplement, L-ascorbyl-2-polyphosphate (a source of vitamin C), niacin, d-calcium pantothenate, vitamin A supplement, thiamine mononitrate, riboflavin, beta-carotene, vitamin B12 supplement, biotin, pyridoxine hydrochloride, vitamin D3 supplement, folic acid), minerals (ferrous sulphate, zinc proteinate, iron proteinate, selenium yeast, zinc oxide, copper sulphate, manganese proteinate, copper proteinate, manganous oxide, calcium iodate), potassium chloride, salt, choline chloride, taurine, dried Aspergillus oryzae fermentation extract, dried Bacillus subtilis fermentation extract, dried rosemary, yucca schidigera extract",
       "guaranteed_analysis": {
@@ -868,7 +892,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "4123 kcal/kg, 453 kcal/cup",
       "images": [
-        "/products/go-solutions/go-solutions-dry-carnivore-lamb-wild-boar-grain-free-dry-dog-food.png"
+        "/products/go-solutions/go-solutions-food-carnivore-lamb-wild-boar-grain-free-dry-dog-food.png"
       ],
       "variants": [
         {
@@ -891,7 +915,8 @@
       "brand": "Go! Solutions",
       "url": "https://www.go-solutions.com/en-ca/dog-food/wet/carnivore-grain-free-chicken-turkey-duck-stew",
       "channel": "retail",
-      "product_type": "wet",
+      "product_type": "food",
+      "product_format": "wet",
       "product_line": "Carnivore",
       "ingredients_raw": "de-boned chicken, chicken broth, turkey broth, chicken liver, potatoes, sweet potatoes, tapioca, de-boned turkey, duck, apples, salmon oil, tricalcium phosphate, flaxseed, salt, potassium chloride, vitamins (vitamin A supplement, vitamin D3 supplement, vitamin E supplement, niacin, d-calcium pantothenate, thiamine mononitrate, riboflavin, pyridoxine hydrochloride, folic acid, biotin, vitamin B12 supplement), minerals (zinc proteinate, iron proteinate, copper proteinate, manganese proteinate, calcium iodate, selenium yeast), taurine, choline chloride",
       "guaranteed_analysis": {
@@ -903,7 +928,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "793 kcal/kg",
       "images": [
-        "/products/go-solutions/go-solutions-wet-carnivore-chicken-turkey-duck-stew-grain-free-wet-dog-food.png"
+        "/products/go-solutions/go-solutions-food-carnivore-chicken-turkey-duck-stew-grain-free-wet-dog-food.png"
       ],
       "variants": [
         {
@@ -918,7 +943,8 @@
       "brand": "Go! Solutions",
       "url": "https://www.go-solutions.com/en-ca/dog-food/wet/carnivore-grain-free-shredded-lamb-wild-boar-recipe",
       "channel": "retail",
-      "product_type": "wet",
+      "product_type": "food",
+      "product_format": "wet",
       "product_line": "Carnivore",
       "ingredients_raw": "lamb, chicken, chicken broth, turkey broth, chicken liver, sweet potatoes, potatoes, wild boar, tapioca, pork plasma, apples, dried egg whites, salmon oil, flaxseed, sodium tripolyphosphate, cassia gum, guar gum, potassium chloride, vitamins (vitamin A supplement, vitamin D3 supplement, vitamin E supplement, niacin, d-calcium pantothenate, thiamine mononitrate, riboflavin, pyridoxine hydrochloride, folic acid, biotin, vitamin B12 supplement), minerals (zinc proteinate, iron proteinate, copper proteinate, manganese proteinate, calcium iodate, selenium yeast), choline chloride, salt, taurine, vegetable juice, fruit juice, paprika, turmeric",
       "guaranteed_analysis": {
@@ -930,7 +956,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "977 kcal/kg",
       "images": [
-        "/products/go-solutions/go-solutions-wet-carnivore-shredded-lamb-wild-boar-grain-free-wet-dog-food.png"
+        "/products/go-solutions/go-solutions-food-carnivore-shredded-lamb-wild-boar-grain-free-wet-dog-food.png"
       ],
       "variants": [
         {
@@ -945,7 +971,8 @@
       "brand": "Go! Solutions",
       "url": "https://www.go-solutions.com/en-ca/dog-food/dry/weight-management-joint-care-grain-free-salmon-recipe",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "Weight Management + Joint Care",
       "ingredients_raw": "de-boned salmon, peas, salmon meal, potatoes, chickpeas, tapioca, pea fibre, flaxseed, alfalfa, natural flavour, canola oil (preserved with mixed tocopherols), calcium carbonate, psyllium husk, coconut oil (preserved with mixed tocopherols), apples, tomato, carrots, dried chicory root, vitamins (vitamin E supplement, L-ascorbyl-2-polyphosphate (a source of vitamin C), niacin, d-calcium pantothenate, vitamin A supplement, thiamine mononitrate, riboflavin, beta-carotene, vitamin B12 supplement, biotin, pyridoxine hydrochloride, vitamin D3 supplement, folic acid), minerals (ferrous sulphate, zinc proteinate, iron proteinate, selenium yeast, zinc oxide, copper sulphate, manganese proteinate, copper proteinate, manganous oxide, calcium iodate), dried Enterococcus faecium fermentation product, dried Lactobacillus acidophilus fermentation product, taurine, DL-methionine, choline chloride, chicken cartilage, glucosamine hydrochloride, chondroitin sulphate, New Zealand green mussels, L-carnitine, yucca schidigera extract, potassium chloride, dried rosemary",
       "guaranteed_analysis": {
@@ -965,7 +992,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3732 kcal/kg, 410 kcal/cup",
       "images": [
-        "/products/go-solutions/go-solutions-dry-weight-management-joint-care-salmon-grain-free-dry-dog-food.png"
+        "/products/go-solutions/go-solutions-food-weight-management-joint-care-salmon-grain-free-dry-dog-food.png"
       ],
       "variants": [
         {
@@ -988,7 +1015,8 @@
       "brand": "Go! Solutions",
       "url": "https://www.go-solutions.com/en-ca/dog-food/dry/digestion-gut-health-chicken-recipe-with-ancient-grains",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "Digestion + Gut Health",
       "ingredients_raw": "chicken meal, oatmeal, rye, whole oats, de-boned chicken, millet, chicken fat (preserved with mixed tocopherols), flaxseed, natural flavour, tomato, psyllium husk, quinoa, apples, carrots, cranberries, salt, potassium chloride, yeast extract, hydrolyzed yeast, brewers dried yeast, ground grain sorghum, dried chicory root, choline chloride, marine microalgae oil, vitamins (vitamin E supplement, L-ascorbyl-2-polyphosphate (a source of vitamin C), niacin, d-calcium pantothenate, vitamin A supplement, thiamine mononitrate, riboflavin, beta-carotene, vitamin B12 supplement, biotin, pyridoxine hydrochloride, vitamin D3 supplement, folic acid), minerals (ferrous sulphate, zinc proteinate, iron proteinate, selenium yeast, zinc oxide, copper sulphate, manganese proteinate, copper proteinate, manganous oxide, calcium iodate), dried Bacillus coagulans fermentation product, taurine, L-lysine, DL-methionine, yucca schidigera extract, dried rosemary",
       "guaranteed_analysis": {
@@ -1005,7 +1033,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3947 kcal/kg, 434 kcal/cup",
       "images": [
-        "/products/go-solutions/go-solutions-dry-digestion-gut-health-chicken-dry-dog-food-with-grains.png"
+        "/products/go-solutions/go-solutions-food-digestion-gut-health-chicken-dry-dog-food-with-grains.png"
       ],
       "variants": [
         {
@@ -1028,7 +1056,8 @@
       "brand": "Go! Solutions",
       "url": "https://www.go-solutions.com/en-ca/dog-food/treats/benefit-chews-skin-coat-care-lamb-recipe",
       "channel": "retail",
-      "product_type": "treats",
+      "product_type": "treat",
+      "product_format": "dry",
       "product_line": "Benefit Chews",
       "ingredients_raw": "lamb, barley*, coconut glycerin, oats*, flaxseed*, natural flavour, salmon oil, apples*, carrots*, apple cider vinegar, marine microalgae oil, dried rosemary, *Upcycled Ingredient",
       "guaranteed_analysis": {
@@ -1042,7 +1071,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3735 kcal/kg, 9 kcal/treat",
       "images": [
-        "/products/go-solutions/go-solutions-treats-benefit-chews-skin-coat-care-lamb-dog-treats.png"
+        "/products/go-solutions/go-solutions-treat-benefit-chews-skin-coat-care-lamb-dog-treats.png"
       ],
       "variants": [
         {
@@ -1057,7 +1086,8 @@
       "brand": "Go! Solutions",
       "url": "https://www.go-solutions.com/en-ca/dog-food/treats/benefit-chews-sensitivities-limited-ingredient-salmon-recipe",
       "channel": "retail",
-      "product_type": "treats",
+      "product_type": "treat",
+      "product_format": "dry",
       "product_line": "Benefit Chews",
       "ingredients_raw": "salmon, chickpeas*, coconut glycerin, natural flavour, cane molasses, salt, dried rosemary, *Upcycled Ingredient",
       "guaranteed_analysis": {
@@ -1069,7 +1099,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3239 kcal/kg, 8 kcal/treat",
       "images": [
-        "/products/go-solutions/go-solutions-treats-benefit-chews-sensitivities-limited-ingredient-salmon-dog-treats.png"
+        "/products/go-solutions/go-solutions-treat-benefit-chews-sensitivities-limited-ingredient-salmon-dog-treats.png"
       ],
       "variants": [
         {
@@ -1084,7 +1114,8 @@
       "brand": "Go! Solutions",
       "url": "https://www.go-solutions.com/en-ca/dog-food/treats/benefit-chews-digestion-gut-health-salmon-recipe",
       "channel": "retail",
-      "product_type": "treats",
+      "product_type": "treat",
+      "product_format": "dry",
       "product_line": "Benefit Chews",
       "ingredients_raw": "salmon, barley*, oats*, coconut glycerin, cane molasses, apples*, carrots*, pumpkin, natural flavour, dried chicory root, dried Bacillus coagulans fermentation product, apple cider vinegar, psyllium husk, dried rosemary, *Upcycled Ingredient",
       "guaranteed_analysis": {
@@ -1096,7 +1127,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3050 kcal/kg, 8 kcal/treat",
       "images": [
-        "/products/go-solutions/go-solutions-treats-benefit-chews-digestion-gut-health-salmon-dog-treats.png"
+        "/products/go-solutions/go-solutions-treat-benefit-chews-digestion-gut-health-salmon-dog-treats.png"
       ],
       "variants": [
         {
@@ -1111,7 +1142,8 @@
       "brand": "Go! Solutions",
       "url": "https://www.go-solutions.com/en-ca/dog-food/dry/skin-coat-care-lamb-recipe-with-grains",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "Skin + Coat Care",
       "ingredients_raw": "lamb meal, oatmeal, whole brown rice, de-boned lamb, canola oil (preserved with mixed tocopherols), coconut oil (preserved with mixed tocopherols), natural lamb flavour, flaxseed, salmon oil, potassium chloride, salt, apples, carrots, cranberries, dried chicory root, dried Lactobacillus acidophilus fermentation product, dried Enterococcus faecium fermentation product, vitamins (vitamin E supplement, L-ascorbyl-2-polyphosphate (a source of vitamin C), niacin, d-calcium pantothenate, vitamin A supplement, thiamine mononitrate, riboflavin, beta-carotene, vitamin B12 supplement, biotin, pyridoxine hydrochloride, vitamin D3 supplement, folic acid), minerals (zinc proteinate, iron proteinate, manganese proteinate, copper proteinate, selenium yeast, calcium iodate), choline chloride, taurine, L-lysine, DL-methionine, yucca schidigera extract, dried rosemary",
       "guaranteed_analysis": {
@@ -1127,7 +1159,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "4098 kcal/kg, 451 kcal/cup",
       "images": [
-        "/products/go-solutions/go-solutions-dry-skin-coat-care-lamb-dry-dog-food-with-grains.png"
+        "/products/go-solutions/go-solutions-food-skin-coat-care-lamb-dry-dog-food-with-grains.png"
       ],
       "variants": [
         {
@@ -1150,7 +1182,8 @@
       "brand": "Go! Solutions",
       "url": "https://www.go-solutions.com/en-ca/dog-food/dry/skin-coat-care-salmon-recipe-with-grains",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "Skin + Coat Care",
       "ingredients_raw": "salmon meal, oatmeal, potatoes, whole oats, de-boned salmon, canola oil (preserved with mixed tocopherols), apples, carrots, cranberries, monocalcium phosphate, calcium carbonate, natural flavour, flaxseed, salt, potassium chloride, dried chicory root, choline chloride, vitamins (vitamin E supplement, L-ascorbyl-2-polyphosphate (a source of vitamin C), niacin, d-calcium pantothenate, vitamin A supplement, thiamine mononitrate, riboflavin, beta-carotene, vitamin B12 supplement, biotin, pyridoxine hydrochloride, vitamin D3 supplement, folic acid), minerals (zinc proteinate, iron proteinate, manganese proteinate, copper proteinate, selenium yeast, calcium iodate), taurine, dried Lactobacillus acidophilus fermentation product, dried Enterococcus faecium fermentation product, L-lysine, yucca schidigera extract, dried rosemary",
       "guaranteed_analysis": {
@@ -1166,7 +1199,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3561 kcal/kg, 427 kcal/cup",
       "images": [
-        "/products/go-solutions/go-solutions-dry-skin-coat-care-salmon-dry-dog-food-with-grains.png"
+        "/products/go-solutions/go-solutions-food-skin-coat-care-salmon-dry-dog-food-with-grains.png"
       ],
       "variants": [
         {
@@ -1189,7 +1222,8 @@
       "brand": "Go! Solutions",
       "url": "https://www.go-solutions.com/en-ca/dog-food/dry/skin-coat-care-turkey-recipe-with-grains",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "Skin + Coat Care",
       "ingredients_raw": "de-boned turkey, turkey meal, oatmeal, brown rice, whole oats, canola oil (preserved with mixed tocopherols), natural flavour, whole dried egg, coconut oil (preserved with mixed tocopherols), salmon oil, apples, carrots, cranberries, salt, potassium chloride, dried chicory root, dried Lactobacillus acidophilus fermentation product, dried Enterococcus faecium fermentation product, vitamins (vitamin E supplement, L-ascorbyl-2-polyphosphate (a source of vitamin C), niacin, d-calcium pantothenate, vitamin A supplement, thiamine mononitrate, riboflavin, beta-carotene, vitamin B12 supplement, biotin, pyridoxine hydrochloride, vitamin D3 supplement, folic acid), minerals (zinc proteinate, iron proteinate, manganese proteinate, copper proteinate, selenium yeast, calcium iodate), taurine, DL-methionine, L-lysine, yucca schidigera extract, dried rosemary",
       "guaranteed_analysis": {
@@ -1205,7 +1239,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "4038 kcal/kg, 444 kcal/cup",
       "images": [
-        "/products/go-solutions/go-solutions-dry-skin-coat-care-turkey-dry-dog-food-with-grains.png"
+        "/products/go-solutions/go-solutions-food-skin-coat-care-turkey-dry-dog-food-with-grains.png"
       ],
       "variants": [
         {
@@ -1224,7 +1258,8 @@
       "brand": "Go! Solutions",
       "url": "https://www.go-solutions.com/en-ca/dog-food/wet/sensitivities-limited-ingredient-grain-free-shredded-turkey-recipe",
       "channel": "retail",
-      "product_type": "wet",
+      "product_type": "food",
+      "product_format": "wet",
       "product_line": "Sensitivities",
       "ingredients_raw": "turkey, turkey broth, tapioca, pork plasma, cranberries, pumpkin, sodium tripolyphosphate, salmon oil, cassia gum, guar gum, potassium chloride, vitamins (vitamin A supplement, vitamin D3 supplement, vitamin E supplement, niacin, d-calcium pantothenate, thiamine mononitrate, riboflavin, pyridoxine hydrochloride, folic acid, biotin, vitamin B12 supplement), minerals (zinc proteinate, iron proteinate, copper proteinate, manganese proteinate, calcium iodate, selenium yeast), magnesium sulphate, salt, taurine",
       "guaranteed_analysis": {
@@ -1236,7 +1271,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "923 kcal/kg",
       "images": [
-        "/products/go-solutions/go-solutions-wet-sensitivities-shredded-turkey-grain-free-limited-ingredient-dog-food.png"
+        "/products/go-solutions/go-solutions-food-sensitivities-shredded-turkey-grain-free-limited-ingredient-dog-food.png"
       ],
       "variants": [
         {
@@ -1251,7 +1286,8 @@
       "brand": "Go! Solutions",
       "url": "https://www.go-solutions.com/en-ca/dog-food/wet/skin-coat-care-turkey-salmon-pate-with-grains",
       "channel": "retail",
-      "product_type": "wet",
+      "product_type": "food",
+      "product_format": "wet",
       "product_line": "Skin + Coat Care",
       "ingredients_raw": "turkey, turkey broth, chicken broth, salmon, tapioca, carrots, peas, sweet potatoes, brown rice, dried egg whites, potatoes, oats, flaxseed, pumpkin, cassia gum, guar gum, sodium tripolyphosphate, tricalcium phosphate, sunflower oil, potassium chloride, vitamins (vitamin A supplement, vitamin D3 supplement, vitamin E supplement, niacin, d-calcium pantothenate, thiamine mononitrate, riboflavin, pyridoxine hydrochloride, folic acid, biotin, vitamin B12 supplement), minerals (zinc proteinate, iron proteinate, copper proteinate, manganese proteinate, calcium iodate, selenium yeast), choline chloride, salt, taurine",
       "guaranteed_analysis": {
@@ -1265,7 +1301,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "1029 kcal/kg",
       "images": [
-        "/products/go-solutions/go-solutions-wet-skin-coat-care-turkey-salmon-p-t-wet-dog-food-with-grains.png"
+        "/products/go-solutions/go-solutions-food-skin-coat-care-turkey-salmon-p-t-wet-dog-food-with-grains.png"
       ],
       "variants": [
         {
@@ -1280,7 +1316,8 @@
       "brand": "Go! Solutions",
       "url": "https://www.go-solutions.com/en-ca/dog-food/wet/skin-coat-care-shredded-chicken-recipe-with-grains",
       "channel": "retail",
-      "product_type": "wet",
+      "product_type": "food",
+      "product_format": "wet",
       "product_line": "Skin + Coat Care",
       "ingredients_raw": "chicken, chicken broth, turkey broth, chicken liver, carrots, peas, tapioca, pork plasma, sweet potatoes, brown rice, sunflower oil, dried egg whites, oats, flaxseed, pumpkin, sodium tripolyphosphate, salmon oil, cassia gum, guar gum, tricalcium phosphate, potassium chloride, vitamins (vitamin A supplement, vitamin D3 supplement, vitamin E supplement, niacin, d-calcium pantothenate, thiamine mononitrate, riboflavin, pyridoxine hydrochloride, folic acid, biotin, vitamin B12 supplement), minerals (zinc proteinate, iron proteinate, copper proteinate, manganese proteinate, calcium iodate, selenium yeast), choline chloride, salt, taurine",
       "guaranteed_analysis": {
@@ -1294,7 +1331,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "905 kcal/kg",
       "images": [
-        "/products/go-solutions/go-solutions-wet-skin-coat-care-shredded-chicken-wet-dog-food-with-grains.png"
+        "/products/go-solutions/go-solutions-food-skin-coat-care-shredded-chicken-wet-dog-food-with-grains.png"
       ],
       "variants": [
         {
@@ -1309,7 +1346,8 @@
       "brand": "Go! Solutions",
       "url": "https://www.go-solutions.com/en-ca/dog-food/dry/sensitivities-limited-ingredient-grain-free-small-bites-salmon-recipe",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "Sensitivities",
       "ingredients_raw": "de-boned salmon, salmon meal, tapioca, peas, lentils, chickpeas, pea flour, canola oil (preserved with mixed tocopherols), coconut oil (preserved with mixed tocopherols), monocalcium phosphate, calcium carbonate, natural fish flavour, salt, dried chicory root, choline chloride, potassium chloride, vitamins (vitamin E supplement, L-ascorbyl-2-polyphosphate (a source of vitamin C), niacin, d-calcium pantothenate, vitamin A supplement, thiamine mononitrate, riboflavin, beta-carotene, vitamin B12 supplement, biotin, pyridoxine hydrochloride, vitamin D3 supplement, folic acid), minerals (ferrous sulphate, zinc proteinate, iron proteinate, selenium yeast, zinc oxide, copper sulphate, manganese proteinate, copper proteinate, manganous oxide, calcium iodate), taurine, dried rosemary",
       "guaranteed_analysis": {
@@ -1325,7 +1363,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3846 kcal/kg, 423 kcal/cup",
       "images": [
-        "/products/go-solutions/go-solutions-dry-sensitivities-small-bites-salmon-grain-free-limited-ingredient-dog-food.png"
+        "/products/go-solutions/go-solutions-food-sensitivities-small-bites-salmon-grain-free-limited-ingredient-dog-food.png"
       ],
       "variants": [
         {
@@ -1348,7 +1386,8 @@
       "brand": "Go! Solutions",
       "url": "https://www.go-solutions.com/en-ca/dog-food/dry/sensitivities-limited-ingredient-grain-free-venison-recipe",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "Sensitivities",
       "ingredients_raw": "de-boned venison, venison meal, tapioca, peas, pea flour, lentils, chickpeas, canola oil (preserved with mixed tocopherols), coconut oil (preserved with mixed tocopherols), dried chicory root, salt, potassium chloride, choline chloride, marine microalgae oil, vitamins (vitamin E supplement, L-ascorbyl-2-polyphosphate (a source of vitamin C), niacin, d-calcium pantothenate, vitamin A supplement, thiamine mononitrate, riboflavin, beta-carotene, vitamin B12 supplement, biotin, pyridoxine hydrochloride, vitamin D3 supplement, folic acid), minerals (ferrous sulphate, zinc proteinate, iron proteinate, selenium yeast, zinc oxide, copper sulphate, manganese proteinate, copper proteinate, manganous oxide, calcium iodate), DL-methionine, taurine, L-lysine, dried rosemary",
       "guaranteed_analysis": {
@@ -1364,7 +1403,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "4022 kcal/kg, 442 kcal/cup",
       "images": [
-        "/products/go-solutions/go-solutions-dry-sensitivities-venison-grain-free-limited-ingredient-dog-food.png"
+        "/products/go-solutions/go-solutions-food-sensitivities-venison-grain-free-limited-ingredient-dog-food.png"
       ],
       "variants": [
         {
@@ -1383,7 +1422,8 @@
       "brand": "Go! Solutions",
       "url": "https://www.go-solutions.com/en-ca/dog-food/dry/sensitivities-limited-ingredient-grain-free-lamb-recipe",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "Sensitivities",
       "ingredients_raw": "de-boned lamb, lamb meal, tapioca, peas, lentils, pea flour, chickpeas, canola oil (preserved with mixed tocopherols), coconut oil (preserved with mixed tocopherols), natural lamb flavour, salt, dried chicory root, potassium chloride, choline chloride, dicalcium phosphate, marine microalgae oil, vitamins (vitamin E supplement, L-ascorbyl-2-polyphosphate (a source of vitamin C), niacin, d-calcium pantothenate, vitamin A supplement, thiamine mononitrate, riboflavin, beta-carotene, vitamin B12 supplement, biotin, pyridoxine hydrochloride, vitamin D3 supplement, folic acid), minerals (ferrous sulphate, zinc proteinate, iron proteinate, selenium yeast, zinc oxide, copper sulphate, manganese proteinate, copper proteinate, manganous oxide, calcium iodate), DL-methionine, L-lysine, taurine, dried rosemary",
       "guaranteed_analysis": {
@@ -1399,7 +1439,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3953 kcal/kg, 435 kcal/cup",
       "images": [
-        "/products/go-solutions/go-solutions-dry-sensitivities-lamb-grain-free-limited-ingredient-dog-food.png"
+        "/products/go-solutions/go-solutions-food-sensitivities-lamb-grain-free-limited-ingredient-dog-food.png"
       ],
       "variants": [
         {
@@ -1422,7 +1462,8 @@
       "brand": "Go! Solutions",
       "url": "https://www.go-solutions.com/en-ca/dog-food/dry/sensitivities-limited-ingredient-grain-free-insect-recipe",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "Sensitivities",
       "ingredients_raw": "dried black soldier fly larvae, peas, lentils, chickpeas, tapioca, pea flour, canola oil (preserved with mixed tocopherols), coconut oil (preserved with mixed tocopherols), monocalcium phosphate, natural flavour, calcium carbonate, salt, dried chicory root, choline chloride, marine microalgae oil, vitamins (vitamin E supplement, L-ascorbyl-2-polyphosphate (a source of vitamin C), niacin, d-calcium pantothenate, vitamin A supplement, thiamine mononitrate, riboflavin, beta-carotene, vitamin B12 supplement, biotin, pyridoxine hydrochloride, vitamin D3 supplement, folic acid), minerals (ferrous sulphate, zinc proteinate, iron proteinate, selenium yeast, zinc oxide, copper sulphate, manganese proteinate, copper proteinate, manganous oxide, calcium iodate), DL-methionine, taurine, dried rosemary",
       "guaranteed_analysis": {
@@ -1438,7 +1479,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3968 kcal/kg, 436 kcal/cup",
       "images": [
-        "/products/go-solutions/go-solutions-dry-sensitivities-insect-grain-free-limited-ingredient-dog-food.png"
+        "/products/go-solutions/go-solutions-food-sensitivities-insect-grain-free-limited-ingredient-dog-food.png"
       ],
       "variants": [
         {
@@ -1461,7 +1502,8 @@
       "brand": "Go! Solutions",
       "url": "https://www.go-solutions.com/en-ca/dog-food/wet/skin-coat-care-pollock-pate-with-grains",
       "channel": "retail",
-      "product_type": "wet",
+      "product_type": "food",
+      "product_format": "wet",
       "product_line": "Skin + Coat Care",
       "ingredients_raw": "de-boned Alaskan pollock, turkey, salmon broth, turkey broth, tapioca, brown rice, sunflower oil, dried egg whites, carrots, peas, sweet potatoes, potatoes, oats, flaxseed, pumpkin, cassia gum, tricalcium phosphate, guar gum, potassium chloride, sodium tripolyphosphate, choline chloride, vitamins (vitamin A supplement, vitamin D3 supplement, vitamin E supplement, niacin, d-calcium pantothenate, thiamine mononitrate, riboflavin, pyridoxine hydrochloride, folic acid, biotin, vitamin B12 supplement), minerals (zinc proteinate, iron proteinate, copper proteinate, manganese proteinate, calcium iodate, selenium yeast), taurine, salt, magnesium sulphate",
       "guaranteed_analysis": {
@@ -1475,7 +1517,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "969 kcal/kg",
       "images": [
-        "/products/go-solutions/go-solutions-wet-skin-coat-care-pollock-p-t-wet-dog-food-with-grains.png"
+        "/products/go-solutions/go-solutions-food-skin-coat-care-pollock-p-t-wet-dog-food-with-grains.png"
       ],
       "variants": [
         {

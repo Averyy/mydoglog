@@ -41,18 +41,9 @@ DATABASE_URL = os.environ.get(
 # ---------------------------------------------------------------------------
 
 PRODUCT_TYPE_MAP: dict[str, str] = {
-    "dry": "dry_food",
-    "dry_food": "dry_food",
-    "wet": "wet_food",
-    "wet_food": "wet_food",
-    "treats": "treat",
+    "food": "food",
     "treat": "treat",
-    "topper": "topper",
     "supplement": "supplement",
-    "supplements": "supplement",
-    "probiotic": "probiotic",
-    "freeze_dried": "freeze_dried",
-    "whole_food": "whole_food",
 }
 
 CHANNEL_MAP: dict[str, str] = {
@@ -284,19 +275,25 @@ def upsert_product(
 ) -> str:
     """Upsert a product and return its id."""
     product_id = str(uuid4())
-    product_type = PRODUCT_TYPE_MAP.get(product.get("product_type", ""), None)
+    raw_type = product.get("product_type", "")
+    product_type = PRODUCT_TYPE_MAP.get(raw_type, None)
     channel = CHANNEL_MAP.get(product.get("channel", ""), None)
+
+    product_format = product.get("product_format")
+    if not product_format:
+        print(f"  WARNING: Missing product_format for {product.get('name', '?')}, defaulting to 'dry'", file=sys.stderr)
+        product_format = "dry"
 
     cur.execute(
         """
         INSERT INTO products (
-            id, brand_id, name, type, channel, lifestage,
+            id, brand_id, name, type, format, channel, lifestage,
             health_tags, raw_ingredient_string, guaranteed_analysis,
             calorie_content, image_urls, manufacturer_url,
             variants_json, scraped_from, scraped_at,
             is_discontinued, updated_at
         ) VALUES (
-            %s, %s, %s, %s, %s, %s,
+            %s, %s, %s, %s, %s, %s, %s,
             %s, %s, %s,
             %s, %s, %s,
             %s, %s, %s,
@@ -304,6 +301,7 @@ def upsert_product(
         )
         ON CONFLICT ON CONSTRAINT uq_product_name_brand DO UPDATE SET
             type = EXCLUDED.type,
+            format = EXCLUDED.format,
             channel = EXCLUDED.channel,
             lifestage = EXCLUDED.lifestage,
             health_tags = EXCLUDED.health_tags,
@@ -325,6 +323,7 @@ def upsert_product(
             brand_id,
             product["name"],
             product_type,
+            product_format,
             channel,
             product.get("life_stage"),
             product.get("health_tags"),

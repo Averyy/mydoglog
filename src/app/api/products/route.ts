@@ -2,16 +2,16 @@ import { NextRequest, NextResponse } from "next/server"
 import { db, products, brands } from "@/lib/db"
 import { and, eq, or, sql, count } from "drizzle-orm"
 
-const TYPE_KEYWORDS: Record<string, string> = {
-  can: "wet_food",
-  cans: "wet_food",
-  wet: "wet_food",
-  canned: "wet_food",
-  dry: "dry_food",
-  kibble: "dry_food",
-  kibbles: "dry_food",
-  bag: "dry_food",
-  bags: "dry_food",
+const FORMAT_KEYWORDS: Record<string, string> = {
+  can: "wet",
+  cans: "wet",
+  wet: "wet",
+  canned: "wet",
+  dry: "dry",
+  kibble: "dry",
+  kibbles: "dry",
+  bag: "dry",
+  bags: "dry",
 }
 
 export async function GET(request: NextRequest): Promise<NextResponse> {
@@ -37,16 +37,16 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
       const words = q.trim().split(/\s+/).filter(Boolean)
       for (const word of words) {
         const lower = word.toLowerCase()
-        const mappedType = TYPE_KEYWORDS[lower]
+        const mappedFormat = FORMAT_KEYWORDS[lower]
         // Strip apostrophes/punctuation for fuzzy matching (hills → hill's)
         const stripped = word.replace(/['']/g, "")
         const nameOrBrand = or(
           sql`replace(lower(${products.name}), '''', '') ILIKE ${"%" + stripped.toLowerCase() + "%"}`,
           sql`replace(lower(${brands.name}), '''', '') ILIKE ${"%" + stripped.toLowerCase() + "%"}`,
         )!
-        if (mappedType) {
+        if (mappedFormat) {
           conditions.push(
-            or(nameOrBrand, sql`${products.type} = ${mappedType}`)!,
+            or(nameOrBrand, sql`${products.format} = ${mappedFormat}`)!,
           )
         } else {
           conditions.push(nameOrBrand)
@@ -71,6 +71,7 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
       brandName: brands.name,
       brandId: products.brandId,
       type: products.type,
+      format: products.format,
       channel: products.channel,
       lifestage: products.lifestage,
       imageUrl: sql<string | null>`${products.imageUrls}[1]`,

@@ -1,8 +1,9 @@
 """Tests for scrapers.openfarm -- Open Farm parsing logic."""
 
 from scrapers.openfarm import (
+    _detect_format,
     _detect_product_line,
-    _detect_product_type,
+    _detect_type,
     _extract_tag_value,
     _is_dog_product,
     _parse_calorie_html,
@@ -36,21 +37,47 @@ class TestExtractTagValue:
         assert _extract_tag_value(["_protein::salmon"], "_lifestage::") is None
 
 
-class TestDetectProductType:
-    def test_dry_from_tag(self) -> None:
-        assert _detect_product_type(["_productType::dry"], "Recipe") == "dry"
+class TestDetectType:
+    def test_dry_is_food(self) -> None:
+        assert _detect_type(["_productType::dry"], "Recipe") == "food"
 
-    def test_wet_from_tag(self) -> None:
-        assert _detect_product_type(["_productType::wet"], "Recipe") == "wet"
+    def test_wet_is_food(self) -> None:
+        assert _detect_type(["_productType::wet"], "Recipe") == "food"
 
     def test_treats_from_tag(self) -> None:
-        assert _detect_product_type(["_productType::treat"], "Recipe") == "treats"
+        assert _detect_type(["_productType::treat"], "Recipe") == "treat"
+
+    def test_rawmix_is_food(self) -> None:
+        assert _detect_type(["_productType::rawmix"], "Recipe") == "food"
+
+    def test_default_food(self) -> None:
+        assert _detect_type([], "Recipe") == "food"
+
+    def test_supplement_from_title(self) -> None:
+        assert _detect_type([], "Bone Broth Recipe") == "supplement"
+
+    def test_topper_is_supplement(self) -> None:
+        assert _detect_type(["_productType::topper"], "Recipe") == "supplement"
+
+
+class TestDetectFormat:
+    def test_dry_from_tag(self) -> None:
+        assert _detect_format(["_productType::dry"], "Recipe") == "dry"
+
+    def test_wet_from_tag(self) -> None:
+        assert _detect_format(["_productType::wet"], "Recipe") == "wet"
 
     def test_rawmix_is_dry(self) -> None:
-        assert _detect_product_type(["_productType::rawmix"], "Recipe") == "dry"
+        assert _detect_format(["_productType::rawmix"], "Recipe") == "dry"
 
     def test_default_dry(self) -> None:
-        assert _detect_product_type([], "Recipe") == "dry"
+        assert _detect_format([], "Recipe") == "dry"
+
+    def test_pate_is_wet(self) -> None:
+        assert _detect_format([], "Chicken Pâté Recipe") == "wet"
+
+    def test_stew_is_wet(self) -> None:
+        assert _detect_format(["_productType::stew"], "Hearty Stew") == "wet"
 
 
 class TestDetectProductLine:
@@ -333,7 +360,7 @@ class TestParseProduct:
         assert result is not None
         assert result["name"] == "Homestead Turkey & Chicken Recipe"
         assert result["brand"] == "Open Farm"
-        assert result["product_type"] == "dry"
+        assert result["product_type"] == "food"
         assert result["product_line"] == "Original"
         assert result["life_stage"] == "Adult"
         assert result["source_id"] == "12345"

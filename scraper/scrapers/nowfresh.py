@@ -15,6 +15,7 @@ from wafer import SyncSession
 
 from .common import Product, write_brand_json
 from .gosolutions import (
+    _detect_product_format,
     _detect_product_type,
     _extract_next_data,
     _get_page_fields,
@@ -55,6 +56,7 @@ def _parse_product(fields: dict, slug: str) -> Product | None:
         "url": url,
         "channel": "retail",
         "product_type": _detect_product_type(slug),
+        "product_format": _detect_product_format(slug),
     }
 
     if product_line:

@@ -120,34 +120,44 @@ def _extract_all_tag_values(tags: list[str], prefix: str) -> list[str]:
     return values
 
 
-def _detect_product_type(tags: list[str], title: str) -> str:
-    """Detect product type from tags or title."""
-    tag_str = " ".join(t.lower() for t in tags)
+def _detect_type(tags: list[str], title: str) -> str:
+    """Detect product type: food, treat, or supplement."""
+    title_lower = title.lower()
 
+    # Treats — air-dried bars/sticks/biscuits
+    type_val = _extract_tag_value(tags, "_productType::")
+    if type_val and "treat" in type_val.lower():
+        return "treat"
+    if "treat" in title_lower:
+        return "treat"
+
+    # Supplements — health chews, bone broth, toppers
+    if "supplement" in title_lower or "bone broth" in title_lower:
+        return "supplement"
+    if type_val and ("topper" in type_val.lower() or "supplement" in type_val.lower()):
+        return "supplement"
+    if "topper" in title_lower:
+        return "supplement"
+
+    return "food"
+
+
+def _detect_format(tags: list[str], title: str) -> str:
+    """Detect product format: dry or wet."""
+    title_lower = title.lower()
+
+    # Wet: pâtés, stews, wet food, toppers, bone broth, rolls
     type_val = _extract_tag_value(tags, "_productType::")
     if type_val:
         type_lower = type_val.lower()
-        if "dry" in type_lower or "kibble" in type_lower:
-            return "dry"
         if "wet" in type_lower or "stew" in type_lower or "pate" in type_lower:
             return "wet"
-        if "treat" in type_lower:
-            return "treats"
-        if "freeze" in type_lower and "raw" in type_lower:
-            return "dry"
-        if "rawmix" in type_lower:
-            return "dry"
-        if "topper" in type_lower or "supplement" in type_lower:
-            return "supplements"
+        if "topper" in type_lower:
+            return "wet"
 
-    # Fallback: title and category tags
-    combined = f"{tag_str} {title.lower()}"
-    if "wet" in combined or "stew" in combined or "pate" in combined:
+    if any(kw in title_lower for kw in ("pâté", "pate", "stew", "wet food", "topper", "bone broth")):
         return "wet"
-    if "treat" in combined:
-        return "treats"
-    if "topper" in combined or "supplement" in combined:
-        return "supplements"
+
     return "dry"
 
 
@@ -339,7 +349,7 @@ def _parse_ga_html(html: str) -> GuaranteedAnalysis | None:
     soup = BeautifulSoup(html, "lxml")
     for table in soup.find_all("table"):
         table_text = table.get_text().lower()
-        if "crude protein" in table_text or "crude fat" in table_text:
+        if "protein" in table_text or "crude fat" in table_text:
             ga = parse_ga_html_table(str(table))
             if ga:
                 return ga
@@ -475,7 +485,8 @@ def _parse_product(
         "brand": "Open Farm",
         "url": f"{WEBSITE_URL}/products/{_url_encode_handle(handle)}",
         "channel": "retail",
-        "product_type": _detect_product_type(tags, title),
+        "product_type": _detect_type(tags, title),
+        "product_format": _detect_format(tags, title),
     }
 
     product_line = _detect_product_line(tags, title)

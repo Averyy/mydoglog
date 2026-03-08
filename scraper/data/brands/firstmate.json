@@ -1,7 +1,7 @@
 {
   "brand": "FirstMate",
   "website_url": "https://firstmate.com",
-  "scraped_at": "2026-03-04T13:58:24.598975+00:00",
+  "scraped_at": "2026-03-08T19:17:32.843643+00:00",
   "scraper_version": "0.1.0",
   "stats": {
     "product_count": 46,
@@ -9,9 +9,8 @@
       "retail": 46
     },
     "by_type": {
-      "wet": 13,
-      "treats": 5,
-      "dry": 28
+      "food": 41,
+      "treat": 5
     }
   },
   "products": [
@@ -20,9 +19,10 @@
       "brand": "FirstMate",
       "url": "https://firstmate.com/product/skoki-can-original-12-2oz-12-cans/",
       "channel": "retail",
-      "product_type": "wet",
+      "product_type": "food",
+      "product_format": "wet",
       "sub_brand": "FirstMate",
-      "ingredients_raw": "Water sufficient for processing, Boneless chicken, Pork, Dried Yeast, Rice, Potato, Porcine plasma, Salt, Calcium Carbonate, Monodicalcium phosphate, Potassium Chloride, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Calcium Iodate, Vitamin E Supplement, Niacin, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin, Biotin, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, D-calcium pantothenate, Taurine, Kale",
+      "ingredients_raw": "Water sufficient for processing, Boneless chicken, Pork, Dried Yeast, Rice, Potato, Porcine plasma, Salt, Calcium Carbonate, Monodicalcium phosphate, Potassium Chloride, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Calcium Iodate, Vitamin E Supplement, Niacin, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin, Biotin, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, D-calcium pantothenate, Taurine, Kale",
       "guaranteed_analysis": {
         "crude_protein_min": 10.0,
         "ash_max": 2.0,
@@ -36,7 +36,7 @@
       "calorie_content": "890 kcal/kg, 307 kcal/can",
       "aafco_statement": "SKOKI Original is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages including the growth of large size dogs (70lbs or more as an adult).",
       "images": [
-        "/products/firstmate/firstmate-wet-skoki-can-original-12-2oz-12-cans.png"
+        "/products/firstmate/firstmate-food-skoki-can-original-12-2oz-12-cans.png"
       ]
     },
     {
@@ -44,7 +44,8 @@
       "brand": "FirstMate",
       "url": "https://firstmate.com/product/mini-trainers-lamb-with-blueberry-treats/",
       "channel": "retail",
-      "product_type": "treats",
+      "product_type": "treat",
+      "product_format": "dry",
       "sub_brand": "FirstMate",
       "ingredients_raw": "Lamb Meal, Burbank Potato, Norkotah Potato, Chicken Fat (preserved with mixed tocopherols), Whole Blueberries, Brewer's Dried Yeast, Rosemary extract",
       "guaranteed_analysis": {
@@ -55,9 +56,9 @@
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3138 kcal/kg, 1 kcal/treat",
-      "aafco_statement": "FirstMate Mini Trainers Lamb with Blueberry Treats are suitable for all breeds and all life stages",
+      "aafco_statement": "First Mate Mini Trainers Lamb with Blueberry Treats are suitable for all breeds and all life stages",
       "images": [
-        "/products/firstmate/firstmate-treats-mini-trainers-lamb-with-blueberry-treats.png"
+        "/products/firstmate/firstmate-treat-mini-trainers-lamb-with-blueberry-treats.png"
       ]
     },
     {
@@ -65,9 +66,10 @@
       "brand": "FirstMate",
       "url": "https://firstmate.com/product/skoki-ranch-dog-food/",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "sub_brand": "FirstMate",
-      "ingredients_raw": "Beef Meal, oats, Rice, Potato, Pea Starch, Chicken Meal, Chicken Fat (preserved with mixed tocopherols), Tomato Pomace, Ocean Fish Meal, Chickpeas, Lentils, Peas, Lamb Meal, Brewer's Dried Yeast, Potassium Chloride, Threonine, Salt, Zinc Proteinate, Iron Proteinate, Calcium Carbonate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Niacin, Thiamine Mononitrate, Vitamin A Supplement, Riboflavin, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Choline Chloride, Calcium Propionate (a preservative), Rosemary extract",
+      "ingredients_raw": "Beef Meal, oats, Rice, Potato, Pea Starch, Chicken Meal, Chicken Fat (preserved with mixed tocopherols), Tomato Pomace, Ocean Fish Meal, Chickpeas, Lentils, Peas, Lamb Meal, Brewer's Dried Yeast, Potassium Chloride, Threonine, Salt, Zinc Proteinate, Iron Proteinate, Calcium Carbonate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Niacin, Thiamine Mononitrate, Vitamin A Supplement, Riboflavin, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Choline Chloride, Calcium Propionate (a preservative), Rosemary extract",
       "guaranteed_analysis": {
         "crude_protein_min": 24.0,
         "ash_max": 10.0,
@@ -81,7 +83,7 @@
       "calorie_content": "490 kcal/cup",
       "aafco_statement": "SKOKI Ranch is formulated to meet the nutritional guidelines established by the AAFCO Dog Food Nutrient Profiles for All Life Stages except for the growth of large sized dogs (70lbs or more as an adult)",
       "images": [
-        "/products/firstmate/firstmate-dry-skoki-ranch-dog-food.png"
+        "/products/firstmate/firstmate-food-skoki-ranch-dog-food.png"
       ]
     },
     {
@@ -89,9 +91,10 @@
       "brand": "FirstMate",
       "url": "https://firstmate.com/product/skoki-coastal-dog-food/",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "sub_brand": "FirstMate",
-      "ingredients_raw": "Ocean Fish Meal, oats, Rice, Pea Starch, Chicken Fat (preserved with mixed tocopherols), Tomato Pomace, Chickpeas, Lentils, Peas, Chicken Meal, Lamb Meal, Brewer's Dried Yeast, Potassium Chloride, Dicalcium Phosphate, Zinc Proteinate, Iron Proteinate, Calcium Carbonate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Niacin, Thiamine Mononitrate, D-pantothenic Acid, Vitamin A Supplement, Riboflavin, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Threonine, Choline Chloride, Calcium Propionate (a preservative), Rosemary extract",
+      "ingredients_raw": "Ocean Fish Meal, oats, Rice, Pea Starch, Chicken Fat (preserved with mixed tocopherols), Tomato Pomace, Chickpeas, Lentils, Peas, Chicken Meal, Lamb Meal, Brewer's Dried Yeast, Potassium Chloride, Dicalcium Phosphate, Zinc Proteinate, Iron Proteinate, Calcium Carbonate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Niacin, Thiamine Mononitrate, D-pantothenic Acid, Vitamin A Supplement, Riboflavin, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Threonine, Choline Chloride, Calcium Propionate (a preservative), Rosemary extract",
       "guaranteed_analysis": {
         "crude_protein_min": 24.0,
         "ash_max": 8.0,
@@ -105,7 +108,7 @@
       "calorie_content": "500 kcal/cup",
       "aafco_statement": "SKOKI Coastal is formulated to meet the nutritional guidelines established by the AAFCO Dog Food Nutrient Profiles for All Life Stages including the growth of large sized dogs (70lbs or more as an adult)",
       "images": [
-        "/products/firstmate/firstmate-dry-skoki-coastal-dog-food.png"
+        "/products/firstmate/firstmate-food-skoki-coastal-dog-food.png"
       ]
     },
     {
@@ -113,9 +116,10 @@
       "brand": "FirstMate",
       "url": "https://firstmate.com/product/pork-apple-formula-for-dogs-12-2oz-12-cans/",
       "channel": "retail",
-      "product_type": "wet",
+      "product_type": "food",
+      "product_format": "wet",
       "sub_brand": "FirstMate",
-      "ingredients_raw": "Water sufficient for processing, Pork, Dried Yeast, Porcine plasma, Apple, Potato, Salt, Calcium Carbonate, Monodicalcium phosphate, Choline chloride, Potassium chloride, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Calcium Iodate, Vitamin E Supplement, Niacin, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin, Biotin, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, D-calcium pantothenate, Taurine, Kale",
+      "ingredients_raw": "Water sufficient for processing, Pork, Dried Yeast, Porcine plasma, Apple, Potato, Salt, Calcium Carbonate, Monodicalcium phosphate, Choline chloride, Potassium chloride, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Calcium Iodate, Vitamin E Supplement, Niacin, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin, Biotin, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, D-calcium pantothenate, Taurine, Kale",
       "guaranteed_analysis": {
         "crude_protein_min": 8.0,
         "ash_max": 2.0,
@@ -127,9 +131,9 @@
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "1090 kcal/kg, 376 kcal/can",
-      "aafco_statement": "FirstMate Pork & Apple Formula is Formulated to meet the Nutritional Guidelines Established by the AAFCO Dog Food Nutrient Profiles for All Life Stages",
+      "aafco_statement": "First Mate Pork & Apple Formula is Formulated to meet the Nutritional Guidelines Established by the AAFCO Dog Food Nutrient Profiles for All Life Stages",
       "images": [
-        "/products/firstmate/firstmate-wet-limited-ingredient-pork-apple-formula-for-dogs-12-2oz-12-cans.png"
+        "/products/firstmate/firstmate-food-limited-ingredient-pork-apple-formula-for-dogs-12-2oz-12-cans.png"
       ]
     },
     {
@@ -137,9 +141,10 @@
       "brand": "FirstMate",
       "url": "https://firstmate.com/product/firstmate-pork-and-rice-formula-for-dogs-12-2oz-12-cans/",
       "channel": "retail",
-      "product_type": "wet",
+      "product_type": "food",
+      "product_format": "wet",
       "sub_brand": "FirstMate",
-      "ingredients_raw": "Water sufficient for processing, Pork, Dried Yeast, Porcine plasma, Apple, Rice, Salt, Calcium Carbonate, Monodicalcium phosphate, Choline chloride, Potassium chloride, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Calcium Iodate, Vitamin E Supplement, Niacin, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin, Biotin, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, D-calcium pantothenate, Taurine, Kale, Blueberries, Raspberries, Cranberries, Carrots",
+      "ingredients_raw": "Water sufficient for processing, Pork, Dried Yeast, Porcine plasma, Apple, Rice, Salt, Calcium Carbonate, Monodicalcium phosphate, Choline chloride, Potassium chloride, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Calcium Iodate, Vitamin E Supplement, Niacin, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin, Biotin, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, D-calcium pantothenate, Taurine, Kale, Blueberries, Raspberries, Cranberries, Carrots",
       "guaranteed_analysis": {
         "crude_protein_min": 8.0,
         "ash_max": 2.0,
@@ -151,9 +156,9 @@
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "1090 kcal/kg, 376 kcal/can",
-      "aafco_statement": "FirstMate Pork with Apple & Rice Formula is Formulated to meet the Nutritional Guidelines Established by the AAFCO Dog Food Nutrient Profiles for All Life Stages",
+      "aafco_statement": "First Mate Pork with Apple & Rice Formula is Formulated to meet the Nutritional Guidelines Established by the AAFCO Dog Food Nutrient Profiles for All Life Stages",
       "images": [
-        "/products/firstmate/firstmate-wet-firstmate-pork-and-rice-formula-for-dogs-12-2oz-12-cans.png"
+        "/products/firstmate/firstmate-food-firstmate-pork-and-rice-formula-for-dogs-12-2oz-12-cans.png"
       ]
     },
     {
@@ -161,9 +166,10 @@
       "brand": "FirstMate",
       "url": "https://firstmate.com/product/new-zealand-beef-meal-formula-small-bites/",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "sub_brand": "FirstMate",
-      "ingredients_raw": "Beef Meal, Burbank Potato, Norkotah Potato, Dried Yeast, Chicken Fat (preserved with mixed tocopherols), Tomato Pomace, Pumpkin, Potassium Chloride, Salt, Threonine, DL–Methionine, Choline Chloride, Blueberries, Cranberries, Raspberries, Calcium Propionate (a preservative), Taurine, Zinc Proteinate, Iron Proteinate, Calcium Carbonate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Niacin, Thiamine Mononitrate, Vitamin A Supplement, D-pantothenic Acid, Riboflavin, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Rosemary extract",
+      "ingredients_raw": "Beef Meal, Burbank Potato, Norkotah Potato, Dried Yeast, Chicken Fat (preserved with mixed tocopherols), Tomato Pomace, Pumpkin, Potassium Chloride, Salt, Threonine, DL–Methionine, Choline Chloride, Blueberries, Cranberries, Raspberries, Calcium Propionate (a preservative), Taurine, Zinc Proteinate, Iron Proteinate, Calcium Carbonate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Niacin, Thiamine Mononitrate, Vitamin A Supplement, D-pantothenic Acid, Riboflavin, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Rosemary extract",
       "guaranteed_analysis": {
         "crude_protein_min": 25.0,
         "ash_max": 10.0,
@@ -175,9 +181,9 @@
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3310 kcal/kg, 513 kcal/cup",
-      "aafco_statement": "FirstMate New Zealand Beef Meal Formula is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for Maintenance",
+      "aafco_statement": "First Mate New Zealand Beef Meal Formula is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for Maintenance",
       "images": [
-        "/products/firstmate/firstmate-dry-new-zealand-beef-meal-formula-small-bites.png"
+        "/products/firstmate/firstmate-food-new-zealand-beef-meal-formula-small-bites.png"
       ]
     },
     {
@@ -185,7 +191,8 @@
       "brand": "FirstMate",
       "url": "https://firstmate.com/product/beef-meal-blueberries-treats/",
       "channel": "retail",
-      "product_type": "treats",
+      "product_type": "treat",
+      "product_format": "dry",
       "sub_brand": "FirstMate",
       "ingredients_raw": "Beef Meal, Burbank Potato, Norkotah Potato, Dried Yeast, Chicken Fat (preserved with mixed tocopherols), Whole Blueberries, Calcium Propionate (a preservative), Rosemary extract",
       "guaranteed_analysis": {
@@ -196,9 +203,9 @@
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3225 kcal/kg, 5 kcal/treat",
-      "aafco_statement": "FirstMate Limited Ingredient Treats are suitable for all breeds and all life stages",
+      "aafco_statement": "First Mate Limited Ingredient Treats are suitable for all breeds and all life stages",
       "images": [
-        "/products/firstmate/firstmate-treats-beef-meal-blueberries-treats.png"
+        "/products/firstmate/firstmate-treat-beef-meal-blueberries-treats.png"
       ]
     },
     {
@@ -206,9 +213,10 @@
       "brand": "FirstMate",
       "url": "https://firstmate.com/product/new-zealand-beef-oats/",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "sub_brand": "FirstMate",
-      "ingredients_raw": "Beef Meal, Oatmeal, Brown Rice, Dried Yeast, Chicken Fat (preserved with mixed tocopherols), Pumpkin, Tomato Pomace, Potassium Chloride, Salt, Threonine, DL–Methionine, Choline Chloride, Blueberries, Cranberries, Raspberries, Calcium Propionate (a preservative), Taurine, Zinc Proteinate, Iron Proteinate, Calcium Carbonate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Niacin, Thiamine Mononitrate, Vitamin A Supplement, D-calcium pantothenate, Riboflavin, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Rosemary extract",
+      "ingredients_raw": "Beef Meal, Oatmeal, Brown Rice, Dried Yeast, Chicken Fat (preserved with mixed tocopherols), Pumpkin, Tomato Pomace, Potassium Chloride, Salt, Threonine, DL–Methionine, Choline Chloride, Blueberries, Cranberries, Raspberries, Calcium Propionate (a preservative), Taurine, Zinc Proteinate, Iron Proteinate, Calcium Carbonate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Niacin, Thiamine Mononitrate, Vitamin A Supplement, D-calcium pantothenate, Riboflavin, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Rosemary extract",
       "guaranteed_analysis": {
         "crude_protein_min": 25.0,
         "ash_max": 10.0,
@@ -220,9 +228,9 @@
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3305 kcal/kg, 510 kcal/cup",
-      "aafco_statement": "FirstMate New Zealand Beef Meal & Oats Formula is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for Maintenance.",
+      "aafco_statement": "First Mate New Zealand Beef Meal & Oats Formula is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for Maintenance.",
       "images": [
-        "/products/firstmate/firstmate-dry-new-zealand-beef-oats.png"
+        "/products/firstmate/firstmate-food-new-zealand-beef-oats.png"
       ]
     },
     {
@@ -230,9 +238,10 @@
       "brand": "FirstMate",
       "url": "https://firstmate.com/product/limited-ingredient-new-zealand-beef/",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "sub_brand": "FirstMate",
-      "ingredients_raw": "Beef Meal, Burbank Potato, Norkotah Potato, Dried Yeast, Chicken Fat (preserved with mixed tocopherols), Tomato Pomace, Pumpkin, Potassium Chloride, Salt, Threonine, DL–Methionine, Choline Chloride, Blueberries, Cranberries, Raspberries, Calcium Propionate (a preservative), Taurine, Zinc Proteinate, Iron Proteinate, Calcium Carbonate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Niacin, Thiamine Mononitrate, Vitamin A Supplement, D-calcium pantothenate, Riboflavin, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Rosemary extract",
+      "ingredients_raw": "Beef Meal, Burbank Potato, Norkotah Potato, Dried Yeast, Chicken Fat (preserved with mixed tocopherols), Tomato Pomace, Pumpkin, Potassium Chloride, Salt, Threonine, DL–Methionine, Choline Chloride, Blueberries, Cranberries, Raspberries, Calcium Propionate (a preservative), Taurine, Zinc Proteinate, Iron Proteinate, Calcium Carbonate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Niacin, Thiamine Mononitrate, Vitamin A Supplement, D-calcium pantothenate, Riboflavin, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Rosemary extract",
       "guaranteed_analysis": {
         "crude_protein_min": 25.0,
         "ash_max": 10.0,
@@ -244,9 +253,9 @@
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3310 kcal/kg, 513 kcal/cup",
-      "aafco_statement": "FirstMate New Zealand Beef Meal Formula is Formulated to meet the Nutritional Guidelines Established by the AAFCO Dog Food Nutrient Profiles for Maintenance.",
+      "aafco_statement": "First Mate New Zealand Beef Meal Formula is Formulated to meet the Nutritional Guidelines Established by the AAFCO Dog Food Nutrient Profiles for Maintenance.",
       "images": [
-        "/products/firstmate/firstmate-dry-limited-ingredient-new-zealand-beef.png"
+        "/products/firstmate/firstmate-food-limited-ingredient-new-zealand-beef.png"
       ]
     },
     {
@@ -254,9 +263,10 @@
       "brand": "FirstMate",
       "url": "https://firstmate.com/product/kasiks-cage-free-duck-meal-formula/",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "sub_brand": "KASIKS",
-      "ingredients_raw": "Duck Meal, Chickpeas, Lentils, Peas, Chicken Fat (preserved with mixed tocopherols), Tomato Pomace, Brewer's Dried Yeast, Potassium Chloride, Choline Chloride, DL–Methionine, Zinc Proteinate, Iron Proteinate, Calcium Carbonate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Niacin, Thiamine Mononitrate, D-pantothenic Acid, Vitamin A Supplement, Riboflavin, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, L-Threonie, Salt, Calcium Propionate (a preservative), Taurine, Blueberries, Raspberries, Cranberries, Rosemary extract, Coconut, Kale",
+      "ingredients_raw": "Duck Meal, Chickpeas, Lentils, Peas, Chicken Fat (preserved with mixed tocopherols), Tomato Pomace, Brewer's Dried Yeast, Potassium Chloride, Choline Chloride, DL–Methionine, Zinc Proteinate, Iron Proteinate, Calcium Carbonate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Niacin, Thiamine Mononitrate, D-pantothenic Acid, Vitamin A Supplement, Riboflavin, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, L-Threonie, Salt, Calcium Propionate (a preservative), Taurine, Blueberries, Raspberries, Cranberries, Rosemary extract, Coconut, Kale",
       "guaranteed_analysis": {
         "crude_protein_min": 30.0,
         "ash_max": 10.0,
@@ -270,7 +280,7 @@
       "calorie_content": "3120 kcal/kg, 485 kcal/cup",
       "aafco_statement": "KASIKS Cage Free Duck Meal Formula is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages except for growth of large size dogs (70lb. or more as an adult).",
       "images": [
-        "/products/firstmate/firstmate-dry-kasiks-cage-free-duck-meal-formula.png"
+        "/products/firstmate/firstmate-food-kasiks-cage-free-duck-meal-formula.png"
       ]
     },
     {
@@ -278,9 +288,10 @@
       "brand": "FirstMate",
       "url": "https://firstmate.com/product/cage-free-duck-meal-pumpkin-formula-small-bites/",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "sub_brand": "FirstMate",
-      "ingredients_raw": "Duck Meal, Burbank Potato, Norkotah Potato, Pumpkin, Chicken Fat (preserved with mixed tocopherols), Brewer's Dried Yeast, Potassium Chloride, Choline Chloride, DL–Methionine, Blueberries, Raspberries, Cranberries, Threonine, Calcium Propionate (a preservative), Taurine, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Niacin, Thiamine Mononitrate, Vitamin A Supplement, D-calcium pantothenate, Riboflavin, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Rosemary extract",
+      "ingredients_raw": "Duck Meal, Burbank Potato, Norkotah Potato, Pumpkin, Chicken Fat (preserved with mixed tocopherols), Brewer's Dried Yeast, Potassium Chloride, Choline Chloride, DL–Methionine, Blueberries, Raspberries, Cranberries, Threonine, Calcium Propionate (a preservative), Taurine, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Niacin, Thiamine Mononitrate, Vitamin A Supplement, D-calcium pantothenate, Riboflavin, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Rosemary extract",
       "guaranteed_analysis": {
         "crude_protein_min": 26.0,
         "ash_max": 10.0,
@@ -292,9 +303,9 @@
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3120 kcal/kg, 485 kcal/cup",
-      "aafco_statement": "FirstMate Cage Free Duck Meal & Pumpkin Formula is Formulated to meet the Nutritional Guidelines Established by the AAFCO Dog Food Nutrient Profiles for All Life Stages except for growth of large size dogs (70 lbs. or more as an adult).",
+      "aafco_statement": "First Mate Cage Free Duck Meal & Pumpkin Formula is Formulated to meet the Nutritional Guidelines Established by the AAFCO Dog Food Nutrient Profiles for All Life Stages except for growth of large size dogs (70 lbs. or more as an adult).",
       "images": [
-        "/products/firstmate/firstmate-dry-cage-free-duck-meal-pumpkin-formula-small-bites.png"
+        "/products/firstmate/firstmate-food-cage-free-duck-meal-pumpkin-formula-small-bites.png"
       ]
     },
     {
@@ -302,9 +313,10 @@
       "brand": "FirstMate",
       "url": "https://firstmate.com/product/senior-weight-control-formula/",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "sub_brand": "FirstMate",
-      "ingredients_raw": "Ocean Fish Meal, Oatmeal, Brown Rice, Tomato Pomace, Chicken Fat (preserved with mixed tocopherols), Brewer's Dried Yeast, Potassium Chloride, Choline Chloride, Blueberries, Raspberries, Cranberries, Calcium Propionate (a preservative), Zinc Proteinate, Iron Proteinate, Calcium Carbonate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Niacin, Thiamine Mononitrate, D-pantothenic Acid, Vitamin A Supplement, Riboflavin, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Rosemary extract",
+      "ingredients_raw": "Ocean Fish Meal, Oatmeal, Brown Rice, Tomato Pomace, Chicken Fat (preserved with mixed tocopherols), Brewer's Dried Yeast, Potassium Chloride, Choline Chloride, Blueberries, Raspberries, Cranberries, Calcium Propionate (a preservative), Zinc Proteinate, Iron Proteinate, Calcium Carbonate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Niacin, Thiamine Mononitrate, D-pantothenic Acid, Vitamin A Supplement, Riboflavin, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Rosemary extract",
       "guaranteed_analysis": {
         "crude_protein_min": 28.0,
         "ash_max": 8.0,
@@ -316,9 +328,9 @@
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3030 kcal/kg, 470 kcal/cup",
-      "aafco_statement": "FirstMate Wild Pacific Fish Meal and Oats Senior Formula is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for Maintenance.",
+      "aafco_statement": "First Mate Wild Pacific Fish Meal and Oats Senior Formula is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for Maintenance.",
       "images": [
-        "/products/firstmate/firstmate-dry-senior-weight-control-formula.png"
+        "/products/firstmate/firstmate-food-senior-weight-control-formula.png"
       ]
     },
     {
@@ -326,9 +338,10 @@
       "brand": "FirstMate",
       "url": "https://firstmate.com/product/large-breed-large-breed-puppy-formula/",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "sub_brand": "FirstMate",
-      "ingredients_raw": "Ocean Fish Meal, Oatmeal, Brown Rice, Chicken Fat (preserved with mixed tocopherols), Lamb Meal, Tomato Pomace, Brewer's Dried Yeast, Potassium Chloride, Dicalcium Phosphate, Choline Chloride, Blueberries, Raspberries, Cranberries, Calcium Propionate (a preservative), Zinc Proteinate, Iron Proteinate, Calcium Carbonate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Niacin, Thiamine Mononitrate, D-pantothenic Acid, Vitamin A Supplement, Riboflavin, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Rosemary extract",
+      "ingredients_raw": "Ocean Fish Meal, Oatmeal, Brown Rice, Chicken Fat (preserved with mixed tocopherols), Lamb Meal, Tomato Pomace, Brewer's Dried Yeast, Potassium Chloride, Dicalcium Phosphate, Choline Chloride, Blueberries, Raspberries, Cranberries, Calcium Propionate (a preservative), Zinc Proteinate, Iron Proteinate, Calcium Carbonate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Niacin, Thiamine Mononitrate, D-pantothenic Acid, Vitamin A Supplement, Riboflavin, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Rosemary extract",
       "guaranteed_analysis": {
         "crude_protein_min": 26.0,
         "ash_max": 9.0,
@@ -340,9 +353,9 @@
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3290 kcal/kg, 510 kcal/cup",
-      "aafco_statement": "FirstMate Large Breed & Large Breed Puppy Formula is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages including the growth of large size dogs (70 lb or more as an adult).",
+      "aafco_statement": "First Mate Large Breed & Large Breed Puppy Formula is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages including the growth of large size dogs (70 lb or more as an adult).",
       "images": [
-        "/products/firstmate/firstmate-dry-large-breed-large-breed-puppy-formula.png"
+        "/products/firstmate/firstmate-food-large-breed-large-breed-puppy-formula.png"
       ]
     },
     {
@@ -350,9 +363,10 @@
       "brand": "FirstMate",
       "url": "https://firstmate.com/product/cage-free-duck-oats-formula/",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "sub_brand": "FirstMate",
-      "ingredients_raw": "Duck Meal, Oatmeal, Brown Rice, Chicken Fat (preserved with mixed tocopherols), Tomato Pomace, Brewer's Dried Yeast, Potassium Chloride, Choline Chloride, Salt, Blueberries, Raspberries, Cranberries, L-Threonie, DL–Methionine, Calcium Propionate (a preservative), Zinc Proteinate, Iron Proteinate, Calcium Carbonate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Niacin, Thiamine Mononitrate, D-pantothenic Acid, Vitamin A Supplement, Riboflavin, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Rosemary extract",
+      "ingredients_raw": "Duck Meal, Oatmeal, Brown Rice, Chicken Fat (preserved with mixed tocopherols), Tomato Pomace, Brewer's Dried Yeast, Potassium Chloride, Choline Chloride, Salt, Blueberries, Raspberries, Cranberries, L-Threonie, DL–Methionine, Calcium Propionate (a preservative), Zinc Proteinate, Iron Proteinate, Calcium Carbonate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Niacin, Thiamine Mononitrate, D-pantothenic Acid, Vitamin A Supplement, Riboflavin, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Rosemary extract",
       "guaranteed_analysis": {
         "crude_protein_min": 26.0,
         "ash_max": 10.0,
@@ -364,9 +378,9 @@
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3160 kcal/kg, 490 kcal/cup",
-      "aafco_statement": "FirstMate Duck Meal & Oats Formula is formulated to meet the nutritional guidelines established by the AAFCO Dog Food Nutrient Profiles for All Life Stages except for the growth of large sized dogs (70lbs or more as an adult)",
+      "aafco_statement": "First Mate Duck Meal & Oats Formula is formulated to meet the nutritional guidelines established by the AAFCO Dog Food Nutrient Profiles for All Life Stages except for the growth of large sized dogs (70lbs or more as an adult)",
       "images": [
-        "/products/firstmate/firstmate-dry-cage-free-duck-oats-formula.png"
+        "/products/firstmate/firstmate-food-cage-free-duck-oats-formula.png"
       ]
     },
     {
@@ -374,9 +388,10 @@
       "brand": "FirstMate",
       "url": "https://firstmate.com/product/high-performance-active-dogs-puppies/",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "sub_brand": "FirstMate",
-      "ingredients_raw": "Chicken Meal, Pacific Ocean Fish Meal, Oatmeal, Brown Rice, Chicken Fat (preserved with mixed tocopherols), Tomato Pomace, Calcium Propionate (a preservative), Choline Chloride, Blueberries, Raspberries, Cranberries, Zinc Proteinate, Iron Proteinate, Calcium Carbonate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Riboflavin, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Yeast Extract, Rosemary extract",
+      "ingredients_raw": "Chicken Meal, Pacific Ocean Fish Meal, Oatmeal, Brown Rice, Chicken Fat (preserved with mixed tocopherols), Tomato Pomace, Calcium Propionate (a preservative), Choline Chloride, Blueberries, Raspberries, Cranberries, Zinc Proteinate, Iron Proteinate, Calcium Carbonate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Riboflavin, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Yeast Extract, Rosemary extract",
       "guaranteed_analysis": {
         "crude_protein_min": 32.0,
         "ash_max": 10.0,
@@ -388,9 +403,9 @@
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3560 kcal/kg, 550 kcal/cup",
-      "aafco_statement": "FirstMate High Performance for active dogs and puppies is Formulated to meet the Nutritional Guidelines established by the AAFCO Dog Food Nutrient Profiles for All Life Stages excluding the growth of large size dogs (70lbs or more as an adult).",
+      "aafco_statement": "First Mate High Performance for active dogs and puppies is Formulated to meet the Nutritional Guidelines established by the AAFCO Dog Food Nutrient Profiles for All Life Stages excluding the growth of large size dogs (70lbs or more as an adult).",
       "images": [
-        "/products/firstmate/firstmate-dry-high-performance-for-active-dogs-and-puppies.png"
+        "/products/firstmate/firstmate-food-high-performance-for-active-dogs-and-puppies.png"
       ]
     },
     {
@@ -398,9 +413,10 @@
       "brand": "FirstMate",
       "url": "https://firstmate.com/product/cage-free-duck-meal-pumpkin-formula/",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "sub_brand": "FirstMate",
-      "ingredients_raw": "Duck Meal, Burbank Potato, Norkotah Potato, Pumpkin, Chicken Fat (preserved with mixed tocopherols), Brewer's Dried Yeast, Potassium Chloride, Choline Chloride, DL–Methionine, Blueberries, Raspberries, Cranberries, Threonine, Calcium Propionate (a preservative), Taurine, Zinc Proteinate, Iron Proteinate, Calcium Carbonate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Niacin, Thiamine Mononitrate, Vitamin A Supplement, D-calcium pantothenate, Riboflavin, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Rosemary extract",
+      "ingredients_raw": "Duck Meal, Burbank Potato, Norkotah Potato, Pumpkin, Chicken Fat (preserved with mixed tocopherols), Brewer's Dried Yeast, Potassium Chloride, Choline Chloride, DL–Methionine, Blueberries, Raspberries, Cranberries, Threonine, Calcium Propionate (a preservative), Taurine, Zinc Proteinate, Iron Proteinate, Calcium Carbonate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Niacin, Thiamine Mononitrate, Vitamin A Supplement, D-calcium pantothenate, Riboflavin, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Rosemary extract",
       "guaranteed_analysis": {
         "crude_protein_min": 26.0,
         "ash_max": 10.0,
@@ -412,9 +428,9 @@
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3120 kcal/kg, 485 kcal/cup",
-      "aafco_statement": "FirstMate Cage Free Duck Meal & Pumpkin Formula is formulated to meet the nutritional guidelines established by the AAFCO Dog Food Nutrient Profiles for All Life Stages except for the growth of large sized dogs (70lbs or more as an adult)",
+      "aafco_statement": "First Mate Cage Free Duck Meal & Pumpkin Formula is formulated to meet the nutritional guidelines established by the AAFCO Dog Food Nutrient Profiles for All Life Stages except for the growth of large sized dogs (70lbs or more as an adult)",
       "images": [
-        "/products/firstmate/firstmate-dry-cage-free-duck-meal-pumpkin-formula.png"
+        "/products/firstmate/firstmate-food-cage-free-duck-meal-pumpkin-formula.png"
       ]
     },
     {
@@ -422,7 +438,8 @@
       "brand": "FirstMate",
       "url": "https://firstmate.com/product/free-range-grass-fed-lamb-blueberries-treats/",
       "channel": "retail",
-      "product_type": "treats",
+      "product_type": "treat",
+      "product_format": "dry",
       "sub_brand": "FirstMate",
       "ingredients_raw": "Lamb Meal, Burbank Potato, Norkotah Potato, Chicken Fat (preserved with mixed tocopherols), Whole Blueberries, Brewer's Dried Yeast, Rosemary extract",
       "guaranteed_analysis": {
@@ -433,9 +450,9 @@
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3138 kcal/kg, 5 kcal/treat",
-      "aafco_statement": "FirstMate Limited Ingredient Treats are suitable for all breeds and all life stages",
+      "aafco_statement": "First Mate Limited Ingredient Treats are suitable for all breeds and all life stages",
       "images": [
-        "/products/firstmate/firstmate-treats-free-range-grass-fed-lamb-blueberries-treats.png"
+        "/products/firstmate/firstmate-treat-free-range-grass-fed-lamb-blueberries-treats.png"
       ]
     },
     {
@@ -443,7 +460,8 @@
       "brand": "FirstMate",
       "url": "https://firstmate.com/product/wild-pacific-caught-fish-blueberries-treats/",
       "channel": "retail",
-      "product_type": "treats",
+      "product_type": "treat",
+      "product_format": "dry",
       "sub_brand": "FirstMate",
       "ingredients_raw": "Pacific Ocean Fish Meal, Burbank Potato, Norkotah Potato, Chicken Fat (preserved with mixed tocopherols), Whole Blueberries, Brewer's Dried Yeast, Rosemary extract",
       "guaranteed_analysis": {
@@ -454,9 +472,9 @@
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3225 kcal/kg, 5 kcal/treat",
-      "aafco_statement": "FirstMate Limited Ingredient Treats are suitable for all breeds and all life stages",
+      "aafco_statement": "First Mate Limited Ingredient Treats are suitable for all breeds and all life stages",
       "images": [
-        "/products/firstmate/firstmate-treats-wild-pacific-caught-fish-blueberries-treats.png"
+        "/products/firstmate/firstmate-treat-wild-pacific-caught-fish-blueberries-treats.png"
       ]
     },
     {
@@ -464,7 +482,8 @@
       "brand": "FirstMate",
       "url": "https://firstmate.com/product/cage-free-chicken-blueberries-treats/",
       "channel": "retail",
-      "product_type": "treats",
+      "product_type": "treat",
+      "product_format": "dry",
       "sub_brand": "FirstMate",
       "ingredients_raw": "Chicken Meal, Burbank Potato, Norkotah Potato, Chicken Fat (preserved with mixed tocopherols), Whole Blueberries, Rosemary extract",
       "guaranteed_analysis": {
@@ -475,9 +494,9 @@
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3215 kcal/kg, 5 kcal/treat",
-      "aafco_statement": "FirstMate Limited Ingredient Treats are suitable for all breeds and all life stages",
+      "aafco_statement": "First Mate Limited Ingredient Treats are suitable for all breeds and all life stages",
       "images": [
-        "/products/firstmate/firstmate-treats-cage-free-chicken-blueberries-treats.png"
+        "/products/firstmate/firstmate-treat-cage-free-chicken-blueberries-treats.png"
       ]
     },
     {
@@ -485,9 +504,10 @@
       "brand": "FirstMate",
       "url": "https://firstmate.com/product/australian-lamb-meal-formula-small-bites/",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "sub_brand": "FirstMate",
-      "ingredients_raw": "Lamb Meal, Burbank Potato, Norkotah Potato, Chicken Fat (preserved with mixed tocopherols), Tomato Pomace, Potassium Chloride, DL–Methionine, Threonine, Choline Chloride, Calcium Propionate (a preservative), Taurine, Blueberries, Raspberries, Cranberries, Zinc Proteinate, Iron Proteinate, Calcium Carbonate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Niacin, Thiamine Mononitrate, Vitamin A Supplement, D-pantothenic Acid, Riboflavin, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Yeast Extract, Rosemary extract",
+      "ingredients_raw": "Lamb Meal, Burbank Potato, Norkotah Potato, Chicken Fat (preserved with mixed tocopherols), Tomato Pomace, Potassium Chloride, DL–Methionine, Threonine, Choline Chloride, Calcium Propionate (a preservative), Taurine, Blueberries, Raspberries, Cranberries, Zinc Proteinate, Iron Proteinate, Calcium Carbonate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Niacin, Thiamine Mononitrate, Vitamin A Supplement, D-pantothenic Acid, Riboflavin, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Yeast Extract, Rosemary extract",
       "guaranteed_analysis": {
         "crude_protein_min": 24.0,
         "ash_max": 10.0,
@@ -499,9 +519,9 @@
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3190 kcal/kg, 480 kcal/cup",
-      "aafco_statement": "FirstMate Australian Lamb Meal Formula is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages except for the growth of large sized dogs (70lbs or more as an adult)",
+      "aafco_statement": "First Mate Australian Lamb Meal Formula is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages except for the growth of large sized dogs (70lbs or more as an adult)",
       "images": [
-        "/products/firstmate/firstmate-dry-australian-lamb-meal-formula-small-bites.png"
+        "/products/firstmate/firstmate-food-australian-lamb-meal-formula-small-bites.png"
       ]
     },
     {
@@ -509,9 +529,10 @@
       "brand": "FirstMate",
       "url": "https://firstmate.com/product/pacific-ocean-fish-meal-original-formula-small-bites/",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "sub_brand": "FirstMate",
-      "ingredients_raw": "Ocean Fish Meal, Burbank Potato, Norkotah Potato, Tomato Pomace, Chicken Fat (preserved with mixed tocopherols), Mixed Tocopherols, Dicalcium Phosphate, Choline Chloride, Calcium Propionate (a preservative), Zinc Proteinate, Iron Proteinate, Calcium Carbonate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Niacin, Thiamine Mononitrate, Vitamin A Supplement, D-pantothenic Acid, Riboflavin, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Taurine, Yeast Extract, Rosemary extract",
+      "ingredients_raw": "Ocean Fish Meal, Burbank Potato, Norkotah Potato, Tomato Pomace, Chicken Fat (preserved with mixed tocopherols), Mixed Tocopherols, Dicalcium Phosphate, Choline Chloride, Calcium Propionate (a preservative), Zinc Proteinate, Iron Proteinate, Calcium Carbonate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Niacin, Thiamine Mononitrate, Vitamin A Supplement, D-pantothenic Acid, Riboflavin, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Taurine, Yeast Extract, Rosemary extract",
       "guaranteed_analysis": {
         "crude_protein_min": 23.0,
         "ash_max": 9.0,
@@ -523,9 +544,9 @@
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3060 kcal/kg, 475 kcal/cup",
-      "aafco_statement": "FirstMate Pacific Ocean Fish Meal - Original Formula is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages including the growth of large size dogs (70lb. or more as an adult).",
+      "aafco_statement": "First Mate Pacific Ocean Fish Meal - Original Formula is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages including the growth of large size dogs (70lb. or more as an adult).",
       "images": [
-        "/products/firstmate/firstmate-dry-pacific-ocean-fish-meal-original-formula-small-bites.png"
+        "/products/firstmate/firstmate-food-pacific-ocean-fish-meal-original-formula-small-bites.png"
       ]
     },
     {
@@ -533,9 +554,10 @@
       "brand": "FirstMate",
       "url": "https://firstmate.com/product/chicken-meal-blueberries-formula-small-bites/",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "sub_brand": "FirstMate",
-      "ingredients_raw": "Chicken Meal, Burbank Potato, Norkotah Potato, Chicken Fat (preserved with mixed tocopherols), Whole Blueberries, Potassium Chloride, DL–Methionine, Choline Chloride, Calcium Propionate (a preservative), Zinc Proteinate, Iron Proteinate, Calcium Carbonate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Niacin, Thiamine Mononitrate, Vitamin A Supplement, D-pantothenic Acid, Riboflavin, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Taurine, Rosemary extract, Yeast Extract",
+      "ingredients_raw": "Chicken Meal, Burbank Potato, Norkotah Potato, Chicken Fat (preserved with mixed tocopherols), Whole Blueberries, Potassium Chloride, DL–Methionine, Choline Chloride, Calcium Propionate (a preservative), Zinc Proteinate, Iron Proteinate, Calcium Carbonate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Niacin, Thiamine Mononitrate, Vitamin A Supplement, D-pantothenic Acid, Riboflavin, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Taurine, Rosemary extract, Yeast Extract",
       "guaranteed_analysis": {
         "crude_protein_min": 25.0,
         "ash_max": 9.0,
@@ -547,9 +569,9 @@
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3400 kcal/kg, 527 kcal/cup",
-      "aafco_statement": "FirstMate Chicken Meal with Blueberries Formula is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages except for the growth of large sized dogs (70lbs or more as an adult)",
+      "aafco_statement": "First Mate Chicken Meal with Blueberries Formula is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages except for the growth of large sized dogs (70lbs or more as an adult)",
       "images": [
-        "/products/firstmate/firstmate-dry-limited-ingredient-chicken-meal-with-blueberries-formula-small-bites.png"
+        "/products/firstmate/firstmate-food-limited-ingredient-chicken-meal-with-blueberries-formula-small-bites.png"
       ]
     },
     {
@@ -557,9 +579,10 @@
       "brand": "FirstMate",
       "url": "https://firstmate.com/product/cage-free-chicken-rice-formula-12-cans/",
       "channel": "retail",
-      "product_type": "wet",
+      "product_type": "food",
+      "product_format": "wet",
       "sub_brand": "FirstMate",
-      "ingredients_raw": "Boneless chicken, Water sufficient for processing, Rice, Salt, Calcium Carbonate, Monodicalcium phosphate, Choline chloride, Potassium chloride, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Calcium Iodate, Vitamin E Supplement, Niacin, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin, Biotin, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, D-calcium pantothenate, Taurine, Kale, Blueberries, Raspberries, Cranberries, Carrots",
+      "ingredients_raw": "Boneless chicken, Water sufficient for processing, Rice, Salt, Calcium Carbonate, Monodicalcium phosphate, Choline chloride, Potassium chloride, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Calcium Iodate, Vitamin E Supplement, Niacin, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin, Biotin, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, D-calcium pantothenate, Taurine, Kale, Blueberries, Raspberries, Cranberries, Carrots",
       "guaranteed_analysis": {
         "crude_protein_min": 9.0,
         "ash_max": 2.3,
@@ -571,9 +594,9 @@
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "929 kcal/kg, 321 kcal/can",
-      "aafco_statement": "FirstMate Cage-free Chicken & Rice Formula is Formulated to meet the Nutritional Guidelines Established by the AAFCO Dog Food Nutrient Profiles for All Life Stages",
+      "aafco_statement": "First Mate Cage-free Chicken & Rice Formula is Formulated to meet the Nutritional Guidelines Established by the AAFCO Dog Food Nutrient Profiles for All Life Stages",
       "images": [
-        "/products/firstmate/firstmate-wet-cage-free-chicken-rice-formula-for-dogs-12-2oz-12-cans.png"
+        "/products/firstmate/firstmate-food-cage-free-chicken-rice-formula-for-dogs-12-2oz-12-cans.png"
       ]
     },
     {
@@ -581,9 +604,10 @@
       "brand": "FirstMate",
       "url": "https://firstmate.com/product/wild-pacific-salmon-rice-formula-dogs-12-cans/",
       "channel": "retail",
-      "product_type": "wet",
+      "product_type": "food",
+      "product_format": "wet",
       "sub_brand": "FirstMate",
-      "ingredients_raw": "Boneless/skinless Salmon, Water sufficient for processing, Rice, Salt, Calcium Carbonate, Monodicalcium phosphate, Choline chloride, Potassium chloride, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Calcium Iodate, Vitamin E Supplement, Niacin, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin, Biotin, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, D-calcium pantothenate, Taurine, Kale, Blueberries, Raspberries, Cranberries, Carrots",
+      "ingredients_raw": "Boneless/skinless Salmon, Water sufficient for processing, Rice, Salt, Calcium Carbonate, Monodicalcium phosphate, Choline chloride, Potassium chloride, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Calcium Iodate, Vitamin E Supplement, Niacin, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin, Biotin, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, D-calcium pantothenate, Taurine, Kale, Blueberries, Raspberries, Cranberries, Carrots",
       "guaranteed_analysis": {
         "crude_protein_min": 11.0,
         "ash_max": 2.0,
@@ -595,9 +619,9 @@
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "830 kcal/kg, 285 kcal/can",
-      "aafco_statement": "FirstMate Wild Pacific Salmon & Rice Formula is Formulated to meet the Nutritional Guidelines Established by the AAFCO Dog Food Nutrient Profiles for All Life Stages",
+      "aafco_statement": "First Mate Wild Pacific Salmon & Rice Formula is Formulated to meet the Nutritional Guidelines Established by the AAFCO Dog Food Nutrient Profiles for All Life Stages",
       "images": [
-        "/products/firstmate/firstmate-wet-wild-pacific-salmon-rice-formula-for-dogs-12-2oz-12-cans.png"
+        "/products/firstmate/firstmate-food-wild-pacific-salmon-rice-formula-for-dogs-12-2oz-12-cans.png"
       ]
     },
     {
@@ -605,9 +629,10 @@
       "brand": "FirstMate",
       "url": "https://firstmate.com/product/cage-free-turkey-rice-formula-dogs-12-cans/",
       "channel": "retail",
-      "product_type": "wet",
+      "product_type": "food",
+      "product_format": "wet",
       "sub_brand": "FirstMate",
-      "ingredients_raw": "Boneless turkey, Water sufficient for processing, Rice, Salt, Calcium Carbonate, Monodicalcium phosphate, Choline chloride, Potassium chloride, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Calcium Iodate, Vitamin E Supplement, Niacin, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin, Biotin, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, D-calcium pantothenate, Taurine, Kale, Blueberries, Raspberries, Cranberries, Carrots",
+      "ingredients_raw": "Boneless turkey, Water sufficient for processing, Rice, Salt, Calcium Carbonate, Monodicalcium phosphate, Choline chloride, Potassium chloride, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Calcium Iodate, Vitamin E Supplement, Niacin, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin, Biotin, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, D-calcium pantothenate, Taurine, Kale, Blueberries, Raspberries, Cranberries, Carrots",
       "guaranteed_analysis": {
         "crude_protein_min": 8.0,
         "ash_max": 2.0,
@@ -619,9 +644,9 @@
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "1090 kcal/kg, 376 kcal/can",
-      "aafco_statement": "FirstMate Cage-free Turkey & Rice Formula is Formulated to meet the Nutritional Guidelines Established by the AAFCO Dog Food Nutrient Profiles for All Life Stages",
+      "aafco_statement": "First Mate Cage-free Turkey & Rice Formula is Formulated to meet the Nutritional Guidelines Established by the AAFCO Dog Food Nutrient Profiles for All Life Stages",
       "images": [
-        "/products/firstmate/firstmate-wet-cage-free-turkey-rice-formula-for-dogs-12-2oz-12-cans.png"
+        "/products/firstmate/firstmate-food-cage-free-turkey-rice-formula-for-dogs-12-2oz-12-cans.png"
       ]
     },
     {
@@ -629,9 +654,10 @@
       "brand": "FirstMate",
       "url": "https://firstmate.com/product/free-range-lamb-oats-formula/",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "sub_brand": "FirstMate",
-      "ingredients_raw": "Lamb Meal, Oatmeal, Brown Rice, Chicken Fat (preserved with mixed tocopherols), Tomato Pomace, Brewer's Dried Yeast, Potassium Chloride, L-Threonie, DL–Methionine, Taurine, Choline Chloride, Calcium Propionate (a preservative), Blueberries, Raspberries, Cranberries, Zinc Proteinate, Iron Proteinate, Calcium Carbonate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Niacin, Thiamine Mononitrate, D-pantothenic Acid, Vitamin A Supplement, Riboflavin, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Rosemary extract",
+      "ingredients_raw": "Lamb Meal, Oatmeal, Brown Rice, Chicken Fat (preserved with mixed tocopherols), Tomato Pomace, Brewer's Dried Yeast, Potassium Chloride, L-Threonie, DL–Methionine, Taurine, Choline Chloride, Calcium Propionate (a preservative), Blueberries, Raspberries, Cranberries, Zinc Proteinate, Iron Proteinate, Calcium Carbonate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Niacin, Thiamine Mononitrate, D-pantothenic Acid, Vitamin A Supplement, Riboflavin, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Rosemary extract",
       "guaranteed_analysis": {
         "crude_protein_min": 25.0,
         "ash_max": 10.0,
@@ -643,9 +669,9 @@
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3160 kcal/kg, 490 kcal/cup",
-      "aafco_statement": "FirstMate Free Range Lamb Meal & Oats Formula is Formulated to meet the Nutritional Guidelines established by the AAFCO Dog Food Nutrient Profiles for All Life Stages excluding the growth of large size dogs (70lbs or more as an adult).",
+      "aafco_statement": "First Mate Free Range Lamb Meal & Oats Formula is Formulated to meet the Nutritional Guidelines established by the AAFCO Dog Food Nutrient Profiles for All Life Stages excluding the growth of large size dogs (70lbs or more as an adult).",
       "images": [
-        "/products/firstmate/firstmate-dry-free-range-lamb-oats-formula.png"
+        "/products/firstmate/firstmate-food-free-range-lamb-oats-formula.png"
       ]
     },
     {
@@ -653,9 +679,10 @@
       "brand": "FirstMate",
       "url": "https://firstmate.com/product/wild-pacific-caught-fish-oats-formula/",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "sub_brand": "FirstMate",
-      "ingredients_raw": "Ocean Fish Meal, Oatmeal, Brown Rice, Chicken Fat (preserved with mixed tocopherols), Tomato Pomace, Brewer's Dried Yeast, Dicalcium Phosphate, Calcium Propionate (a preservative), Blueberries, Raspberries, Cranberries, Zinc Proteinate, Iron Proteinate, Calcium Carbonate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Niacin, Thiamine Mononitrate, D-pantothenic Acid, Vitamin A Supplement, Riboflavin, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Rosemary extract",
+      "ingredients_raw": "Ocean Fish Meal, Oatmeal, Brown Rice, Chicken Fat (preserved with mixed tocopherols), Tomato Pomace, Brewer's Dried Yeast, Dicalcium Phosphate, Calcium Propionate (a preservative), Blueberries, Raspberries, Cranberries, Zinc Proteinate, Iron Proteinate, Calcium Carbonate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Niacin, Thiamine Mononitrate, D-pantothenic Acid, Vitamin A Supplement, Riboflavin, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Rosemary extract",
       "guaranteed_analysis": {
         "crude_protein_min": 28.0,
         "ash_max": 10.0,
@@ -667,9 +694,9 @@
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3160 kcal/kg, 490 kcal/cup",
-      "aafco_statement": "FirstMate Wild Pacific Caught Fish Meal & Oats Formula is Formulated to meet the Nutritional Guidelines established by the AAFCO Dog Food Nutrient Profiles for All Life Stages including the growth of large size dogs (70lbs or more as an adult).",
+      "aafco_statement": "First Mate Wild Pacific Caught Fish Meal & Oats Formula is Formulated to meet the Nutritional Guidelines established by the AAFCO Dog Food Nutrient Profiles for All Life Stages including the growth of large size dogs (70lbs or more as an adult).",
       "images": [
-        "/products/firstmate/firstmate-dry-wild-pacific-caught-fish-oats-formula.png"
+        "/products/firstmate/firstmate-food-wild-pacific-caught-fish-oats-formula.png"
       ]
     },
     {
@@ -677,9 +704,10 @@
       "brand": "FirstMate",
       "url": "https://firstmate.com/product/cage-free-chicken-meal-oats-formula/",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "sub_brand": "FirstMate",
-      "ingredients_raw": "Chicken Meal, Oatmeal, Brown Rice, Chicken Fat (preserved with mixed tocopherols), Tomato Pomace, Potassium Chloride, Choline Chloride, Calcium Propionate (a preservative), Blueberries, Raspberries, Cranberries, Zinc Proteinate, Iron Proteinate, Calcium Carbonate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Niacin, Thiamine Mononitrate, D-pantothenic Acid, Vitamin A Supplement, Riboflavin, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Yeast Extract, Rosemary extract",
+      "ingredients_raw": "Chicken Meal, Oatmeal, Brown Rice, Chicken Fat (preserved with mixed tocopherols), Tomato Pomace, Potassium Chloride, Choline Chloride, Calcium Propionate (a preservative), Blueberries, Raspberries, Cranberries, Zinc Proteinate, Iron Proteinate, Calcium Carbonate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Niacin, Thiamine Mononitrate, D-pantothenic Acid, Vitamin A Supplement, Riboflavin, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Yeast Extract, Rosemary extract",
       "guaranteed_analysis": {
         "crude_protein_min": 28.0,
         "ash_max": 10.0,
@@ -691,9 +719,9 @@
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3160 kcal/kg, 490 kcal/cup",
-      "aafco_statement": "FirstMate Cage Free Chicken Meal & Oats Formula is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages excluding the growth of large size dogs (70lbs or more as an adult).",
+      "aafco_statement": "First Mate Cage Free Chicken Meal & Oats Formula is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages excluding the growth of large size dogs (70lbs or more as an adult).",
       "images": [
-        "/products/firstmate/firstmate-dry-cage-free-chicken-meal-oats-formula.png"
+        "/products/firstmate/firstmate-food-cage-free-chicken-meal-oats-formula.png"
       ]
     },
     {
@@ -701,9 +729,10 @@
       "brand": "FirstMate",
       "url": "https://firstmate.com/product/kasiks-grub-formula-dogs-12-cans/",
       "channel": "retail",
-      "product_type": "wet",
+      "product_type": "food",
+      "product_format": "wet",
       "sub_brand": "KASIKS",
-      "ingredients_raw": "Boneless/skinless Salmon, Water sufficient for processing, Pea Starch, Black Soldier Fly Larva Meal, Salt, Calcium Carbonate, Monodicalcium phosphate, Choline chloride, Potassium chloride, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Calcium Iodate, Vitamin E Supplement, Niacin, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin, Biotin, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, D-calcium pantothenate, Taurine, Kale, Astaxanthin, Blueberries, Raspberries, Cranberries, Coconut",
+      "ingredients_raw": "Boneless/skinless Salmon, Water sufficient for processing, Pea Starch, Black Soldier Fly Larva Meal, Salt, Calcium Carbonate, Monodicalcium phosphate, Choline chloride, Potassium chloride, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Calcium Iodate, Vitamin E Supplement, Niacin, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin, Biotin, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, D-calcium pantothenate, Taurine, Kale, Astaxanthin, Blueberries, Raspberries, Cranberries, Coconut",
       "guaranteed_analysis": {
         "crude_protein_min": 12.0,
         "ash_max": 2.0,
@@ -717,7 +746,7 @@
       "calorie_content": "900 kcal/kg, 310 kcal/can",
       "aafco_statement": "KASIKS Fraser Valley Grub Formula is Formulated to meet the Nutritional Guidelines Established by the AAFCO Dog Food Nutrient Profiles for Adult Maintenance",
       "images": [
-        "/products/firstmate/firstmate-wet-kasiks-fraser-valley-grub-formula-for-dogs-12-2z-12-cans.png"
+        "/products/firstmate/firstmate-food-kasiks-fraser-valley-grub-formula-for-dogs-12-2z-12-cans.png"
       ]
     },
     {
@@ -725,9 +754,10 @@
       "brand": "FirstMate",
       "url": "https://firstmate.com/product/kasiks-wild-caught-coho-salmon-formula-12-cans/",
       "channel": "retail",
-      "product_type": "wet",
+      "product_type": "food",
+      "product_format": "wet",
       "sub_brand": "KASIKS",
-      "ingredients_raw": "Boneless/skinless Salmon, Water sufficient for processing, Pea Starch, Salt, Calcium Carbonate, Monodicalcium phosphate, Choline chloride, Potassium chloride, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Calcium Iodate, Vitamin E Supplement, Niacin, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin, Biotin, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, D-calcium pantothenate, Taurine, Kale, Blueberries, Raspberries, Cranberries, Coconut",
+      "ingredients_raw": "Boneless/skinless Salmon, Water sufficient for processing, Pea Starch, Salt, Calcium Carbonate, Monodicalcium phosphate, Choline chloride, Potassium chloride, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Calcium Iodate, Vitamin E Supplement, Niacin, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin, Biotin, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, D-calcium pantothenate, Taurine, Kale, Blueberries, Raspberries, Cranberries, Coconut",
       "guaranteed_analysis": {
         "crude_protein_min": 11.0,
         "ash_max": 2.0,
@@ -741,7 +771,7 @@
       "calorie_content": "861 kcal/kg, 297 kcal/can",
       "aafco_statement": "Kasiks Wild Coho Salmon Formula is Formulated to meet the Nutritional Guidelines Established by the AAFCO Dog Food Nutrient Profiles for All Life Stages including the growth of large size dogs (70 lbs. or more as an adult).",
       "images": [
-        "/products/firstmate/firstmate-wet-kasiks-wild-caught-coho-salmon-formula-for-dogs-12-2oz-12-cans.png"
+        "/products/firstmate/firstmate-food-kasiks-wild-caught-coho-salmon-formula-for-dogs-12-2oz-12-cans.png"
       ]
     },
     {
@@ -749,9 +779,10 @@
       "brand": "FirstMate",
       "url": "https://firstmate.com/product/kasiks-cage-free-turkey-formula-12-cans/",
       "channel": "retail",
-      "product_type": "wet",
+      "product_type": "food",
+      "product_format": "wet",
       "sub_brand": "KASIKS",
-      "ingredients_raw": "Boneless turkey, Water sufficient for processing, Pea Starch, Brewer's Dried Yeast, Salt, Calcium Carbonate, Monodicalcium phosphate, Choline chloride, Potassium chloride, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Calcium Iodate, Vitamin E Supplement, Niacin, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin, Biotin, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, D-calcium pantothenate, Taurine, Kale, Blueberries, Raspberries, Cranberries, Coconut",
+      "ingredients_raw": "Boneless turkey, Water sufficient for processing, Pea Starch, Brewer's Dried Yeast, Salt, Calcium Carbonate, Monodicalcium phosphate, Choline chloride, Potassium chloride, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Calcium Iodate, Vitamin E Supplement, Niacin, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin, Biotin, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, D-calcium pantothenate, Taurine, Kale, Blueberries, Raspberries, Cranberries, Coconut",
       "guaranteed_analysis": {
         "crude_protein_min": 8.0,
         "ash_max": 2.0,
@@ -765,7 +796,7 @@
       "calorie_content": "1090 kcal/kg, 376 kcal/can",
       "aafco_statement": "Kasiks Cage-Free Turkey Formula is Formulated to meet the Nutritional Guidelines Established by the AAFCO Dog Food Nutrient Profiles for All Life Stages including the growth of large size dogs (70 lbs. or more as an adult).",
       "images": [
-        "/products/firstmate/firstmate-wet-kasiks-cage-free-turkey-formula-for-dogs-12-2oz-12-cans.png"
+        "/products/firstmate/firstmate-food-kasiks-cage-free-turkey-formula-for-dogs-12-2oz-12-cans.png"
       ]
     },
     {
@@ -773,9 +804,10 @@
       "brand": "FirstMate",
       "url": "https://firstmate.com/product/kasiks-cage-free-chicken-formula-12-cans/",
       "channel": "retail",
-      "product_type": "wet",
+      "product_type": "food",
+      "product_format": "wet",
       "sub_brand": "KASIKS",
-      "ingredients_raw": "Boneless chicken, Water sufficient for processing, Pea Starch, Salt, Calcium Carbonate, Monodicalcium phosphate, Choline chloride, Potassium chloride, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Calcium Iodate, Vitamin E Supplement, Niacin, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin, Biotin, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, D-calcium pantothenate, Taurine, Kale, Blueberries, Raspberries, Cranberries, Coconut",
+      "ingredients_raw": "Boneless chicken, Water sufficient for processing, Pea Starch, Salt, Calcium Carbonate, Monodicalcium phosphate, Choline chloride, Potassium chloride, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Calcium Iodate, Vitamin E Supplement, Niacin, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin, Biotin, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, D-calcium pantothenate, Taurine, Kale, Blueberries, Raspberries, Cranberries, Coconut",
       "guaranteed_analysis": {
         "crude_protein_min": 9.0,
         "ash_max": 2.3,
@@ -789,7 +821,7 @@
       "calorie_content": "901 kcal/kg, 311 kcal/can",
       "aafco_statement": "Kasiks Cage-Free Chicken Formula is Formulated to meet the Nutritional Guidelines Established by the AAFCO Dog Food Nutrient Profiles for All Life Stages including the growth of large size dogs (70 lbs. or more as an adult).",
       "images": [
-        "/products/firstmate/firstmate-wet-kasiks-cage-free-chicken-formula-for-dogs-12-2oz-12-cans.png"
+        "/products/firstmate/firstmate-food-kasiks-cage-free-chicken-formula-for-dogs-12-2oz-12-cans.png"
       ]
     },
     {
@@ -797,9 +829,10 @@
       "brand": "FirstMate",
       "url": "https://firstmate.com/product/kasiks-free-range-lamb-meal-formula/",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "sub_brand": "KASIKS",
-      "ingredients_raw": "Lamb Meal, Chickpeas, Lentils, Peas, Tomato Pomace, Chicken Fat (preserved with mixed tocopherols), Salt, Potassium Chloride, DL–Methionine, Zinc Proteinate, Iron Proteinate, Calcium Carbonate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Niacin, Thiamine Mononitrate, D-pantothenic Acid, Vitamin A Supplement, Riboflavin, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Choline Chloride, Calcium Propionate (a preservative), Yeast Extract, Taurine, Blueberries, Raspberries, Cranberries, Rosemary extract, Coconut, Kale",
+      "ingredients_raw": "Lamb Meal, Chickpeas, Lentils, Peas, Tomato Pomace, Chicken Fat (preserved with mixed tocopherols), Salt, Potassium Chloride, DL–Methionine, Zinc Proteinate, Iron Proteinate, Calcium Carbonate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Niacin, Thiamine Mononitrate, D-pantothenic Acid, Vitamin A Supplement, Riboflavin, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Choline Chloride, Calcium Propionate (a preservative), Yeast Extract, Taurine, Blueberries, Raspberries, Cranberries, Rosemary extract, Coconut, Kale",
       "guaranteed_analysis": {
         "crude_protein_min": 28.0,
         "ash_max": 10.0,
@@ -813,7 +846,7 @@
       "calorie_content": "3120 kcal/kg, 485 kcal/cup",
       "aafco_statement": "KASIKS Free Range Lamb Meal Formula is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages except for growth of large size dogs (70lb. or more as an adult).",
       "images": [
-        "/products/firstmate/firstmate-dry-kasiks-free-range-lamb-meal-formula.png"
+        "/products/firstmate/firstmate-food-kasiks-free-range-lamb-meal-formula.png"
       ]
     },
     {
@@ -821,9 +854,10 @@
       "brand": "FirstMate",
       "url": "https://firstmate.com/product/kasiks-free-run-chicken-meal-formula/",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "sub_brand": "KASIKS",
-      "ingredients_raw": "Chicken Meal, Chickpeas, Lentils, Peas, Chicken Fat, Mixed Tocopherols, Tomato Pomace, Yeast Extract, Salt, Potassium Chloride, DL–Methionine, Zinc Proteinate, Iron Proteinate, Calcium Carbonate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Niacin, Thiamine Mononitrate, D-pantothenic Acid, Vitamin A Supplement, Riboflavin, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Choline Chloride, Calcium Propionate (a preservative), Taurine, Blueberries, Raspberries, Cranberries, Rosemary extract, Coconut, Kale",
+      "ingredients_raw": "Chicken Meal, Chickpeas, Lentils, Peas, Chicken Fat, Mixed Tocopherols, Tomato Pomace, Yeast Extract, Salt, Potassium Chloride, DL–Methionine, Zinc Proteinate, Iron Proteinate, Calcium Carbonate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Niacin, Thiamine Mononitrate, D-pantothenic Acid, Vitamin A Supplement, Riboflavin, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Choline Chloride, Calcium Propionate (a preservative), Taurine, Blueberries, Raspberries, Cranberries, Rosemary extract, Coconut, Kale",
       "guaranteed_analysis": {
         "crude_protein_min": 30.0,
         "ash_max": 10.0,
@@ -837,7 +871,7 @@
       "calorie_content": "3120 kcal/kg, 485 kcal/cup",
       "aafco_statement": "KASIKS Free Run Chicken Meal Formula is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages except for growth of large size dogs (70lb. or more as an adult).",
       "images": [
-        "/products/firstmate/firstmate-dry-kasiks-free-run-chicken-meal-formula.png"
+        "/products/firstmate/firstmate-food-kasiks-free-run-chicken-meal-formula.png"
       ]
     },
     {
@@ -845,9 +879,10 @@
       "brand": "FirstMate",
       "url": "https://firstmate.com/product/kasiks-wild-pacific-ocean-fish-meal-formula/",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "sub_brand": "KASIKS",
-      "ingredients_raw": "Pacific Ocean Fish Meal, Chickpeas, Lentils, Peas, Chicken Fat, Mixed Tocopherols, Tomato Pomace, Potassium Chloride, Dicalcium Phosphate, Salt, Zinc Proteinate, Iron Proteinate, Calcium Carbonate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Niacin, Thiamine Mononitrate, D-pantothenic Acid, Vitamin A Supplement, Riboflavin, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Choline Chloride, DL–Methionine, Calcium Propionate (a preservative), Yeast Extract, Taurine, Blueberries, Raspberries, Cranberries, Rosemary extract, Coconut, Kale",
+      "ingredients_raw": "Pacific Ocean Fish Meal, Chickpeas, Lentils, Peas, Chicken Fat, Mixed Tocopherols, Tomato Pomace, Potassium Chloride, Dicalcium Phosphate, Salt, Zinc Proteinate, Iron Proteinate, Calcium Carbonate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Niacin, Thiamine Mononitrate, D-pantothenic Acid, Vitamin A Supplement, Riboflavin, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Choline Chloride, DL–Methionine, Calcium Propionate (a preservative), Yeast Extract, Taurine, Blueberries, Raspberries, Cranberries, Rosemary extract, Coconut, Kale",
       "guaranteed_analysis": {
         "crude_protein_min": 30.0,
         "ash_max": 10.0,
@@ -861,7 +896,7 @@
       "calorie_content": "485 kcal/cup",
       "aafco_statement": "KASIKS Wild Pacific Ocean Fish Meal Formula is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages including growth of large size dogs (70lb. or more as an adult).",
       "images": [
-        "/products/firstmate/firstmate-dry-kasiks-wild-pacific-ocean-fish-meal-formula.png"
+        "/products/firstmate/firstmate-food-kasiks-wild-pacific-ocean-fish-meal-formula.png"
       ]
     },
     {
@@ -869,9 +904,10 @@
       "brand": "FirstMate",
       "url": "https://firstmate.com/product/skoki-dog-food/",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "sub_brand": "FirstMate",
-      "ingredients_raw": "Chicken Meal, oats, Rice, Chicken Fat, Mixed Tocopherols, Fish Meal, Lamb Meal, Tomato Pomace, Potassium Chloride, Choline Chloride, Calcium Propionate (a preservative), Zinc Proteinate, Iron Proteinate, Calcium Carbonate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Niacin, Thiamine Mononitrate, Vitamin A Supplement, D-pantothenic Acid, Riboflavin, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Rosemary extract",
+      "ingredients_raw": "Chicken Meal, oats, Rice, Chicken Fat, Mixed Tocopherols, Fish Meal, Lamb Meal, Tomato Pomace, Potassium Chloride, Choline Chloride, Calcium Propionate (a preservative), Zinc Proteinate, Iron Proteinate, Calcium Carbonate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Niacin, Thiamine Mononitrate, Vitamin A Supplement, D-pantothenic Acid, Riboflavin, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Rosemary extract",
       "guaranteed_analysis": {
         "crude_protein_min": 26.0,
         "ash_max": 8.0,
@@ -885,7 +921,7 @@
       "calorie_content": "516 kcal/cup",
       "aafco_statement": "SKOKI is formulated to meet the nutritional guidelines established by the AAFCO Dog Food Nutrient Profiles for All Life Stages except for the growth of large sized dogs (70lbs or more as an adult)",
       "images": [
-        "/products/firstmate/firstmate-dry-skoki-dog-food.png"
+        "/products/firstmate/firstmate-food-skoki-dog-food.png"
       ]
     },
     {
@@ -893,9 +929,10 @@
       "brand": "FirstMate",
       "url": "https://firstmate.com/product/wild-salmon-formula-for-dogs/",
       "channel": "retail",
-      "product_type": "wet",
+      "product_type": "food",
+      "product_format": "wet",
       "sub_brand": "FirstMate",
-      "ingredients_raw": "Boneless/skinless Salmon, Water sufficient for processing, Potato, Salt, Calcium Carbonate, Monodicalcium phosphate, Choline chloride, Potassium chloride, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Calcium Iodate, Vitamin E Supplement, Niacin, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin, Biotin, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, D-calcium pantothenate, Taurine, Kale",
+      "ingredients_raw": "Boneless/skinless Salmon, Water sufficient for processing, Potato, Salt, Calcium Carbonate, Monodicalcium phosphate, Choline chloride, Potassium chloride, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Calcium Iodate, Vitamin E Supplement, Niacin, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin, Biotin, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, D-calcium pantothenate, Taurine, Kale",
       "guaranteed_analysis": {
         "crude_protein_min": 11.0,
         "ash_max": 2.0,
@@ -907,9 +944,9 @@
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "840 kcal/kg, 290 kcal/can",
-      "aafco_statement": "FirstMate Wild Salmon Formula is Formulated to meet the Nutritional Guidelines Established by the AAFCO Dog Food Nutrient Profiles for All Life Stages",
+      "aafco_statement": "First Mate Wild Salmon Formula is Formulated to meet the Nutritional Guidelines Established by the AAFCO Dog Food Nutrient Profiles for All Life Stages",
       "images": [
-        "/products/firstmate/firstmate-wet-limited-ingredient-wild-salmon-formula-for-dogs-12-2oz-12-cans.png"
+        "/products/firstmate/firstmate-food-limited-ingredient-wild-salmon-formula-for-dogs-12-2oz-12-cans.png"
       ]
     },
     {
@@ -917,9 +954,10 @@
       "brand": "FirstMate",
       "url": "https://firstmate.com/product/free-run-turkey-formula-for-dogs/",
       "channel": "retail",
-      "product_type": "wet",
+      "product_type": "food",
+      "product_format": "wet",
       "sub_brand": "FirstMate",
-      "ingredients_raw": "Boneless turkey, Water sufficient for processing, Potato, Brewer's Dried Yeast, Salt, Calcium Carbonate, Monodicalcium phosphate, Choline chloride, Potassium chloride, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Calcium Iodate, Vitamin E Supplement, Niacin, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin, Biotin, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, D-calcium pantothenate, Taurine, Kale",
+      "ingredients_raw": "Boneless turkey, Water sufficient for processing, Potato, Brewer's Dried Yeast, Salt, Calcium Carbonate, Monodicalcium phosphate, Choline chloride, Potassium chloride, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Calcium Iodate, Vitamin E Supplement, Niacin, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin, Biotin, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, D-calcium pantothenate, Taurine, Kale",
       "guaranteed_analysis": {
         "crude_protein_min": 8.0,
         "ash_max": 2.0,
@@ -931,9 +969,9 @@
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "376 kcal/can",
-      "aafco_statement": "FirstMate Free Run Turkey Formula is Formulated to meet the Nutritional Guidelines Established by the AAFCO Dog Food Nutrient Profiles for All Life Stages",
+      "aafco_statement": "First Mate Free Run Turkey Formula is Formulated to meet the Nutritional Guidelines Established by the AAFCO Dog Food Nutrient Profiles for All Life Stages",
       "images": [
-        "/products/firstmate/firstmate-wet-limited-ingredient-cage-free-turkey-formula-for-dogs-12-2oz-12-cans.png"
+        "/products/firstmate/firstmate-food-limited-ingredient-cage-free-turkey-formula-for-dogs-12-2oz-12-cans.png"
       ]
     },
     {
@@ -941,9 +979,10 @@
       "brand": "FirstMate",
       "url": "https://firstmate.com/product/free-run-chicken-formula-for-dogs/",
       "channel": "retail",
-      "product_type": "wet",
+      "product_type": "food",
+      "product_format": "wet",
       "sub_brand": "FirstMate",
-      "ingredients_raw": "Boneless chicken, Water sufficient for processing, Potato, Salt, Calcium Carbonate, Monodicalcium phosphate, Choline chloride, Potassium chloride, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Calcium Iodate, Vitamin E Supplement, Niacin, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin, Biotin, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, D-calcium pantothenate, Taurine, Kale",
+      "ingredients_raw": "Boneless chicken, Water sufficient for processing, Potato, Salt, Calcium Carbonate, Monodicalcium phosphate, Choline chloride, Potassium chloride, Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Calcium Iodate, Vitamin E Supplement, Niacin, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin, Biotin, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, D-calcium pantothenate, Taurine, Kale",
       "guaranteed_analysis": {
         "crude_protein_min": 9.0,
         "ash_max": 2.3,
@@ -955,9 +994,9 @@
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "311 kcal/can",
-      "aafco_statement": "FirstMate Free Run Chicken Formula is Formulated to meet the Nutritional Guidelines Established by the AAFCO Dog Food Nutrient Profiles for All Life Stages",
+      "aafco_statement": "First Mate Free Run Chicken Formula is Formulated to meet the Nutritional Guidelines Established by the AAFCO Dog Food Nutrient Profiles for All Life Stages",
       "images": [
-        "/products/firstmate/firstmate-wet-limited-ingredient-cage-free-chicken-formula-for-dogs-12-cans.png"
+        "/products/firstmate/firstmate-food-limited-ingredient-cage-free-chicken-formula-for-dogs-12-cans.png"
       ]
     },
     {
@@ -965,9 +1004,10 @@
       "brand": "FirstMate",
       "url": "https://firstmate.com/product/chicken-meal-with-blueberries-formula/",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "sub_brand": "FirstMate",
-      "ingredients_raw": "Chicken Meal, Burbank Potato, Norkotah Potato, Chicken Fat (preserved with mixed tocopherols), Whole Blueberries, Potassium Chloride, DL–Methionine, Choline Chloride, Calcium Propionate (a preservative), Zinc Proteinate, Iron Proteinate, Calcium Carbonate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Niacin, Thiamine Mononitrate, Vitamin A Supplement, D-pantothenic Acid, Riboflavin, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Taurine, Rosemary extract, Yeast Extract",
+      "ingredients_raw": "Chicken Meal, Burbank Potato, Norkotah Potato, Chicken Fat (preserved with mixed tocopherols), Whole Blueberries, Potassium Chloride, DL–Methionine, Choline Chloride, Calcium Propionate (a preservative), Zinc Proteinate, Iron Proteinate, Calcium Carbonate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Niacin, Thiamine Mononitrate, Vitamin A Supplement, D-pantothenic Acid, Riboflavin, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Taurine, Rosemary extract, Yeast Extract",
       "guaranteed_analysis": {
         "crude_protein_min": 25.0,
         "ash_max": 9.0,
@@ -979,9 +1019,9 @@
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3400 kcal/kg, 527 kcal/cup",
-      "aafco_statement": "FirstMate Chicken Meal with Blueberries Formula is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages except for the growth of large sized dogs (70lbs or more as an adult)",
+      "aafco_statement": "First Mate Chicken Meal with Blueberries Formula is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages except for the growth of large sized dogs (70lbs or more as an adult)",
       "images": [
-        "/products/firstmate/firstmate-dry-limited-ingredient-chicken-meal-with-blueberries-formula.png"
+        "/products/firstmate/firstmate-food-limited-ingredient-chicken-meal-with-blueberries-formula.png"
       ]
     },
     {
@@ -989,9 +1029,10 @@
       "brand": "FirstMate",
       "url": "https://firstmate.com/product/australian-lamb-meal-formula/",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "sub_brand": "FirstMate",
-      "ingredients_raw": "Lamb Meal, Burbank Potato, Norkotah Potato, Chicken Fat (preserved with mixed tocopherols), Tomato Pomace, Potassium Chloride, DL–Methionine, Threonine, Choline Chloride, Calcium Propionate (a preservative), Taurine, Blueberries, Raspberries, Cranberries, Zinc Proteinate, Iron Proteinate, Calcium Carbonate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Niacin, Thiamine Mononitrate, Vitamin A Supplement, D-pantothenic Acid, Riboflavin, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Yeast Extract, Rosemary extract",
+      "ingredients_raw": "Lamb Meal, Burbank Potato, Norkotah Potato, Chicken Fat (preserved with mixed tocopherols), Tomato Pomace, Potassium Chloride, DL–Methionine, Threonine, Choline Chloride, Calcium Propionate (a preservative), Taurine, Blueberries, Raspberries, Cranberries, Zinc Proteinate, Iron Proteinate, Calcium Carbonate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Niacin, Thiamine Mononitrate, Vitamin A Supplement, D-pantothenic Acid, Riboflavin, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Yeast Extract, Rosemary extract",
       "guaranteed_analysis": {
         "crude_protein_min": 24.0,
         "ash_max": 10.0,
@@ -1003,9 +1044,9 @@
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3190 kcal/kg, 480 kcal/cup",
-      "aafco_statement": "FirstMate Australian Lamb Meal Formula is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages except for the growth of large sized dogs (70lbs or more as an adult)",
+      "aafco_statement": "First Mate Australian Lamb Meal Formula is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages except for the growth of large sized dogs (70lbs or more as an adult)",
       "images": [
-        "/products/firstmate/firstmate-dry-limited-ingredient-australian-lamb-meal-formula.png"
+        "/products/firstmate/firstmate-food-limited-ingredient-australian-lamb-meal-formula.png"
       ]
     },
     {
@@ -1013,9 +1054,10 @@
       "brand": "FirstMate",
       "url": "https://firstmate.com/product/pacific-ocean-fish-meal-large-breed-formula/",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "sub_brand": "FirstMate",
-      "ingredients_raw": "Ocean Fish Meal, Burbank Potato, Norkotah Potato, Chicken Fat (preserved with mixed tocopherols), Tomato Pomace, Dicalcium Phosphate, Choline Chloride, Calcium Propionate (a preservative), Zinc Proteinate, Iron Proteinate, Calcium Carbonate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Niacin, Thiamine Mononitrate, Vitamin A Supplement, D-pantothenic Acid, Riboflavin, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Taurine, Yeast Extract, Rosemary extract",
+      "ingredients_raw": "Ocean Fish Meal, Burbank Potato, Norkotah Potato, Chicken Fat (preserved with mixed tocopherols), Tomato Pomace, Dicalcium Phosphate, Choline Chloride, Calcium Propionate (a preservative), Zinc Proteinate, Iron Proteinate, Calcium Carbonate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Niacin, Thiamine Mononitrate, Vitamin A Supplement, D-pantothenic Acid, Riboflavin, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Taurine, Yeast Extract, Rosemary extract",
       "guaranteed_analysis": {
         "crude_protein_min": 25.0,
         "ash_max": 9.0,
@@ -1027,9 +1069,9 @@
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3160 kcal/kg, 490 kcal/cup",
-      "aafco_statement": "FirstMate Pacific Ocean Fish Meal - Large Breed Formula is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages including the growth of large size dogs (70lb. or more as an adult).",
+      "aafco_statement": "First Mate Pacific Ocean Fish Meal - Large Breed Formula is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages including the growth of large size dogs (70lb. or more as an adult).",
       "images": [
-        "/products/firstmate/firstmate-dry-limited-ingredient-pacific-ocean-fish-meal-large-breed-formula.png"
+        "/products/firstmate/firstmate-food-limited-ingredient-pacific-ocean-fish-meal-large-breed-formula.png"
       ]
     },
     {
@@ -1037,9 +1079,10 @@
       "brand": "FirstMate",
       "url": "https://firstmate.com/product/pacific-ocean-fish-weight-control-formula-for-dogsfirstmatepacific-ocean-fish-meal-weight-control-formula/",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "sub_brand": "FirstMate",
-      "ingredients_raw": "Burbank Potato, Norkotah Potato, Ocean Fish Meal, Tomato Pomace, Chicken Fat (preserved with mixed tocopherols), Dicalcium Phosphate, Choline Chloride, Calcium Propionate (a preservative), Zinc Proteinate, Iron Proteinate, Calcium Carbonate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Niacin, Thiamine Mononitrate, Vitamin A Supplement, D-pantothenic Acid, Riboflavin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Taurine, Glucosamine Hydrochloride, Yeast Extract, Rosemary extract",
+      "ingredients_raw": "Burbank Potato, Norkotah Potato, Ocean Fish Meal, Tomato Pomace, Chicken Fat (preserved with mixed tocopherols), Dicalcium Phosphate, Choline Chloride, Calcium Propionate (a preservative), Zinc Proteinate, Iron Proteinate, Calcium Carbonate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Niacin, Thiamine Mononitrate, Vitamin A Supplement, D-pantothenic Acid, Riboflavin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Taurine, Glucosamine Hydrochloride, Yeast Extract, Rosemary extract",
       "guaranteed_analysis": {
         "crude_protein_min": 18.0,
         "ash_max": 7.0,
@@ -1051,9 +1094,9 @@
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3030 kcal/kg, 470 kcal/cup",
-      "aafco_statement": "FirstMate Pacific Ocean Fish Meal - Weight Control Formula is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for Maintenance",
+      "aafco_statement": "First Mate Pacific Ocean Fish Meal - Weight Control Formula is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for Maintenance",
       "images": [
-        "/products/firstmate/firstmate-dry-limited-ingredient-pacific-ocean-fish-meal-weight-control-formula.png"
+        "/products/firstmate/firstmate-food-limited-ingredient-pacific-ocean-fish-meal-weight-control-formula.png"
       ]
     },
     {
@@ -1061,9 +1104,10 @@
       "brand": "FirstMate",
       "url": "https://firstmate.com/product/pacific-ocean-fish-meal-original-formula/",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "sub_brand": "FirstMate",
-      "ingredients_raw": "Ocean Fish Meal, Burbank Potato, Norkotah Potato, Tomato Pomace, Chicken Fat (preserved with mixed tocopherols), Dicalcium Phosphate, Choline Chloride, Calcium Propionate (a preservative), Zinc Proteinate, Iron Proteinate, Calcium Carbonate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Niacin, Thiamine Mononitrate, Vitamin A Supplement, D-pantothenic Acid, Riboflavin, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Taurine, Yeast Extract, Rosemary extract",
+      "ingredients_raw": "Ocean Fish Meal, Burbank Potato, Norkotah Potato, Tomato Pomace, Chicken Fat (preserved with mixed tocopherols), Dicalcium Phosphate, Choline Chloride, Calcium Propionate (a preservative), Zinc Proteinate, Iron Proteinate, Calcium Carbonate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Niacin, Thiamine Mononitrate, Vitamin A Supplement, D-pantothenic Acid, Riboflavin, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Taurine, Yeast Extract, Rosemary extract",
       "guaranteed_analysis": {
         "crude_protein_min": 23.0,
         "ash_max": 9.0,
@@ -1075,9 +1119,9 @@
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3060 kcal/kg, 475 kcal/cup",
-      "aafco_statement": "FirstMate Pacific Ocean Fish Meal - Original Formula is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages including the growth of large size dogs (70lb. or more as an adult).",
+      "aafco_statement": "First Mate Pacific Ocean Fish Meal - Original Formula is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages including the growth of large size dogs (70lb. or more as an adult).",
       "images": [
-        "/products/firstmate/firstmate-dry-limited-ingredient-pacific-ocean-fish-meal-original-formula.png"
+        "/products/firstmate/firstmate-food-limited-ingredient-pacific-ocean-fish-meal-original-formula.png"
       ]
     },
     {
@@ -1085,9 +1129,10 @@
       "brand": "FirstMate",
       "url": "https://firstmate.com/product/pacific-ocean-fish-meal-endurancepuppy-formula/",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "sub_brand": "FirstMate",
-      "ingredients_raw": "Ocean Fish Meal, Burbank Potato, Norkotah Potato, Chicken Fat (preserved with mixed tocopherols), Tomato Pomace, Dicalcium Phosphate, Choline Chloride, Calcium Propionate (a preservative), Zinc Proteinate, Iron Proteinate, Calcium Carbonate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Niacin, Thiamine Mononitrate, Vitamin A Supplement, D-pantothenic Acid, Riboflavin, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Taurine, Yeast Extract, Rosemary extract",
+      "ingredients_raw": "Ocean Fish Meal, Burbank Potato, Norkotah Potato, Chicken Fat (preserved with mixed tocopherols), Tomato Pomace, Dicalcium Phosphate, Choline Chloride, Calcium Propionate (a preservative), Zinc Proteinate, Iron Proteinate, Calcium Carbonate, Manganese Proteinate, Copper Proteinate, Selenium Yeast, Calcium Iodate, Vitamin E Supplement, Niacin, Thiamine Mononitrate, Vitamin A Supplement, D-pantothenic Acid, Riboflavin, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Taurine, Yeast Extract, Rosemary extract",
       "guaranteed_analysis": {
         "crude_protein_min": 28.0,
         "ash_max": 9.0,
@@ -1099,9 +1144,9 @@
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3460 kcal/kg, 540 kcal/cup",
-      "aafco_statement": "FirstMate Pacific Ocean Fish Meal - Endurance/Puppy Formula is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for Growth, including the growth of large size dogs (70 lb or more as an adult).",
+      "aafco_statement": "First Mate Pacific Ocean Fish Meal - Endurance/Puppy Formula is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for Growth, including the growth of large size dogs (70 lb or more as an adult).",
       "images": [
-        "/products/firstmate/firstmate-dry-limited-ingredient-pacific-ocean-fish-meal-endurance-puppy-formula.png"
+        "/products/firstmate/firstmate-food-limited-ingredient-pacific-ocean-fish-meal-endurance-puppy-formula.png"
       ]
     }
   ]

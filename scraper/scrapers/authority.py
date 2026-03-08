@@ -252,17 +252,27 @@ def _parse_calories(text: str) -> str | None:
     return None
 
 
-def _detect_product_type(url: str, name: str) -> str:
-    """Detect product type from URL path and name."""
+def _detect_type(url: str, name: str) -> str:
+    """Detect product type: food, treat, or supplement."""
     url_lower = url.lower()
     name_lower = name.lower()
 
     if "food-toppers" in url_lower or "supplement" in name_lower or "topper" in name_lower:
-        return "supplements"
-    if "canned-food" in url_lower:
-        return "wet"
+        return "supplement"
     if re.search(r"\btreat", url_lower + " " + name_lower):
-        return "treats"
+        return "treat"
+    return "food"
+
+
+def _detect_format(url: str, name: str) -> str:
+    """Detect product format: dry or wet."""
+    url_lower = url.lower()
+    name_lower = name.lower()
+
+    if "canned-food" in url_lower or "food-toppers" in url_lower:
+        return "wet"
+    if "wet" in name_lower:
+        return "wet"
     return "dry"
 
 
@@ -340,7 +350,8 @@ def _parse_product(url: str, html: str) -> Product | None:
         "brand": "Authority",
         "url": url,
         "channel": "retail",
-        "product_type": _detect_product_type(url, name),
+        "product_type": _detect_type(url, name),
+        "product_format": _detect_format(url, name),
         "product_line": _detect_product_line(name),
     }
 
@@ -406,6 +417,60 @@ def _parse_product(url: str, html: str) -> Product | None:
     return product
 
 
+def _primary_protein(ingredients_raw: str) -> str | None:
+    """Extract the primary protein name from the first ingredient."""
+    first = ingredients_raw.split(",")[0].strip()
+    # Strip "Broth" suffix (e.g. "Beef Broth" → "Beef")
+    first = re.sub(r"\s+Broth$", "", first, flags=re.IGNORECASE)
+    return first if first else None
+
+
+def _deduplicate_products(products: list[Product]) -> list[Product]:
+    """Disambiguate products with duplicate names.
+
+    - If two products share a name but have different ingredients, append the
+      primary protein to each name (e.g. "Wet Dog Food" → "Wet Dog Food - Beef").
+    - If they share a name AND identical ingredients, keep only the first.
+    """
+    from collections import Counter
+
+    name_counts = Counter(p["name"] for p in products)
+    duped_names = {n for n, c in name_counts.items() if c > 1}
+
+    if not duped_names:
+        return products
+
+    # Group duplicates by name to decide strategy
+    groups: dict[str, list[Product]] = {}
+    for p in products:
+        if p["name"] in duped_names:
+            groups.setdefault(p["name"], []).append(p)
+
+    def _normalize_ing(raw: str) -> str:
+        """Normalize ingredients for comparison (case, spacing, parens)."""
+        s = raw.lower().strip()
+        s = re.sub(r"\s*([()])\s*", r" \1 ", s)  # normalize space around parens
+        return re.sub(r"\s+", " ", s).strip()
+
+    # Build a set of products to skip (identical dupes) and a rename map
+    skip_urls: set[str] = set()
+    for base_name, group in groups.items():
+        ingredients = [_normalize_ing(p.get("ingredients_raw", "")) for p in group]
+        if len(set(ingredients)) == 1:
+            # All identical — keep first, skip rest
+            for p in group[1:]:
+                skip_urls.add(p["url"])
+                logger.info(f"  Skipping duplicate: {base_name} ({p['url']})")
+        else:
+            # Different recipes — append primary protein to each
+            for p in group:
+                protein = _primary_protein(p.get("ingredients_raw", ""))
+                if protein:
+                    p["name"] = f"{base_name} {protein}"
+
+    return [p for p in products if p["url"] not in skip_urls]
+
+
 def scrape_authority(output_dir: Path) -> int:
     """Scrape all Authority dog food products from PetSmart. Returns product count."""
     with SyncSession(rate_limit=1.0) as session:
@@ -422,6 +487,8 @@ def scrape_authority(output_dir: Path) -> int:
             product = _parse_product(url, resp.text)
             if product:
                 products.append(product)
+
+    products = _deduplicate_products(products)
 
     write_brand_json(
         "Authority", WEBSITE_URL, products, output_dir, slug="authority"

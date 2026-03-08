@@ -77,8 +77,18 @@ def _detect_sub_brand(url: str) -> str | None:
     return None
 
 
-def _detect_product_type(url: str, title: str) -> str:
-    """Detect product type from URL or title."""
+def _detect_type(url: str, title: str) -> str:
+    """Detect product type: food, treat, or supplement."""
+    combined = f"{url} {title}".lower()
+    if "treat" in combined:
+        return "treat"
+    if "topper" in combined:
+        return "supplement"
+    return "food"
+
+
+def _detect_format(url: str, title: str) -> str:
+    """Detect product format: dry or wet."""
     combined = f"{url} {title}".lower()
     if "canned" in combined or "gravy" in combined or "stew" in combined:
         return "wet"
@@ -88,10 +98,6 @@ def _detect_product_type(url: str, title: str) -> str:
     # Check for "can" but not "canine"
     if re.search(r"\bcan\b", combined) and "canine" not in combined:
         return "wet"
-    if "treat" in combined:
-        return "treats"
-    if "topper" in combined:
-        return "supplements"
     return "dry"
 
 
@@ -282,7 +288,8 @@ def _parse_product(url: str, html: str) -> Product | None:
         "brand": "Taste of the Wild",
         "url": url,
         "channel": "retail",
-        "product_type": _detect_product_type(url, name),
+        "product_type": _detect_type(url, name),
+        "product_format": _detect_format(url, name),
     }
 
     sub_brand = _detect_sub_brand(url)

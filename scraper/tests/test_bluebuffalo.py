@@ -8,7 +8,8 @@ from scrapers.bluebuffalo import (
     _BB_CHEWY_SKIP_KEYWORDS,
     _build_bb_chewy_query,
     _build_product_name,
-    _detect_product_type,
+    _detect_format,
+    _detect_type,
     _detect_sub_brand,
     _extract_js_template,
     _extract_name_qualifier,
@@ -302,18 +303,29 @@ class TestDetectSubBrand:
         assert _detect_sub_brand("BLUE Something", "/something/") is None
 
 
-class TestDetectProductType:
-    def test_dry_from_url(self) -> None:
-        assert _detect_product_type("/en-ca/dry-dog-food/lpf/chicken", "Chicken Recipe") == "dry"
+class TestDetectType:
+    def test_dry_is_food(self) -> None:
+        assert _detect_type("/en-ca/dry-dog-food/lpf/chicken", "Chicken Recipe") == "food"
 
-    def test_wet_from_url(self) -> None:
-        assert _detect_product_type("/en-ca/wet-dog-food/basics/turkey", "Turkey Recipe") == "wet"
+    def test_wet_is_food(self) -> None:
+        assert _detect_type("/en-ca/wet-dog-food/basics/turkey", "Turkey Recipe") == "food"
 
     def test_treats_from_url(self) -> None:
-        assert _detect_product_type("/en-ca/dog-treats/blue/bacon-stix", "Bacon Stix") == "treats"
+        assert _detect_type("/en-ca/dog-treats/blue/bacon-stix", "Bacon Stix") == "treat"
+
+
+class TestDetectFormat:
+    def test_dry_from_url(self) -> None:
+        assert _detect_format("/en-ca/dry-dog-food/lpf/chicken", "Chicken Recipe") == "dry"
+
+    def test_wet_from_url(self) -> None:
+        assert _detect_format("/en-ca/wet-dog-food/basics/turkey", "Turkey Recipe") == "wet"
 
     def test_stew_is_wet(self) -> None:
-        assert _detect_product_type("/en-ca/wet-dog-food/x/stew", "Wolf Creek Stew") == "wet"
+        assert _detect_format("/en-ca/wet-dog-food/x/stew", "Wolf Creek Stew") == "wet"
+
+    def test_treats_are_dry(self) -> None:
+        assert _detect_format("/en-ca/dog-treats/blue/bacon-stix", "Bacon Stix") == "dry"
 
 
 class TestParseProductIntegration:
@@ -332,7 +344,7 @@ class TestParseProductIntegration:
         assert product is not None
         assert product["name"] == "Life Protection Formula Chicken and Brown Rice Recipe"
         assert product["brand"] == "Blue Buffalo"
-        assert product["product_type"] == "dry"
+        assert product["product_type"] == "food"
         assert product["channel"] == "retail"
         assert product["sub_brand"] == "Life Protection"
         assert product["life_stage"] == "adult"
@@ -351,7 +363,7 @@ class TestParseProductIntegration:
         product = _parse_product(url, html)
         assert product is not None
         assert product["name"].endswith("Wet Food")
-        assert product["product_type"] == "wet"
+        assert product["product_type"] == "food"
 
     def test_large_breed_puppy_name(self) -> None:
         html = _make_page_html(

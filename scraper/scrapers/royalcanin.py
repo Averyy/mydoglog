@@ -45,13 +45,24 @@ _CHANNEL_MAP: dict[str, str] = {
 
 # Map digital_sub_category code to product type
 _TYPE_MAP: dict[str, str] = {
+    "dry_food": "food",
+    "dry": "food",
+    "wet_food": "food",
+    "wet": "food",
+    "treats": "treat",
+    "treat": "treat",
+    "supplement": "supplement",
+}
+
+# Map digital_sub_category code to product format
+_FORMAT_MAP: dict[str, str] = {
     "dry_food": "dry",
     "dry": "dry",
     "wet_food": "wet",
     "wet": "wet",
-    "treats": "treats",
-    "treat": "treats",
-    "supplement": "supplements",
+    "treats": "dry",
+    "treat": "dry",
+    "supplement": "dry",
 }
 
 
@@ -111,11 +122,8 @@ def _parse_channel(detail: dict) -> str:
     return "retail"
 
 
-def _parse_product_type(detail: dict) -> str:
-    """Determine product type from digital_sub_category.
-
-    digital_sub_category is a dict: {"code": "dry_food", "label": "Dry food"}
-    """
+def _parse_type(detail: dict) -> str:
+    """Determine product type from digital_sub_category."""
     sub_cat = detail.get("digital_sub_category", {})
     if isinstance(sub_cat, dict):
         code = sub_cat.get("code", "").lower()
@@ -128,7 +136,21 @@ def _parse_product_type(detail: dict) -> str:
     # Fallback: check family field
     family = str(detail.get("family", "")).lower()
     if family == "treat" or detail.get("is_treat"):
-        return "treats"
+        return "treat"
+
+    return "food"
+
+
+def _parse_format(detail: dict) -> str:
+    """Determine product format from digital_sub_category."""
+    sub_cat = detail.get("digital_sub_category", {})
+    if isinstance(sub_cat, dict):
+        code = sub_cat.get("code", "").lower()
+    else:
+        code = str(sub_cat).lower()
+
+    if code in _FORMAT_MAP:
+        return _FORMAT_MAP[code]
 
     return "dry"
 
@@ -363,7 +385,8 @@ def _parse_product(listing_item: dict, detail: dict) -> Product:
         "brand": "Royal Canin",
         "url": url,
         "channel": _parse_channel(detail),
-        "product_type": _parse_product_type(detail),
+        "product_type": _parse_type(detail),
+        "product_format": _parse_format(detail),
     }
 
     # Product line from range field

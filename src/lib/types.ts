@@ -4,6 +4,7 @@ export interface ProductSummary {
   brandName: string
   brandId: string
   type: string | null
+  format: string | null
   channel: string | null
   lifestage: string | null
   imageUrl: string | null
@@ -40,6 +41,7 @@ export interface FeedingPlanItem {
   brandName: string
   imageUrl: string | null
   type: string | null
+  format: string | null
   quantity: string | null
   quantityUnit: string | null
   mealSlot: string | null

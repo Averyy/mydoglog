@@ -117,13 +117,19 @@ def _detect_product_line(soup: BeautifulSoup) -> str | None:
     return None
 
 
-def _detect_product_type(url: str, title: str) -> str:
-    """Detect product type."""
+def _detect_type(url: str, title: str) -> str:
+    """Detect product type: food, treat, or supplement."""
+    combined = f"{url} {title}".lower()
+    if "treat" in combined:
+        return "treat"
+    return "food"
+
+
+def _detect_format(url: str, title: str) -> str:
+    """Detect product format: dry or wet."""
     combined = f"{url} {title}".lower()
     if "canned" in combined or "can " in combined or "stew" in combined:
         return "wet"
-    if "treat" in combined:
-        return "treats"
     return "dry"
 
 
@@ -415,7 +421,8 @@ def _parse_product(url: str, html: str) -> Product | None:
         "brand": "Canadian Naturals",
         "url": url,
         "channel": "retail",
-        "product_type": _detect_product_type(url, name),
+        "product_type": _detect_type(url, name),
+        "product_format": _detect_format(url, name),
     }
 
     product_line = _detect_product_line(soup)

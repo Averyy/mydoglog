@@ -1,7 +1,7 @@
 {
   "brand": "Iams",
   "website_url": "https://www.petsmart.ca",
-  "scraped_at": "2026-03-04T15:40:09.406871+00:00",
+  "scraped_at": "2026-03-08T20:04:17.584737+00:00",
   "scraper_version": "0.1.0",
   "stats": {
     "product_count": 21,
@@ -9,8 +9,7 @@
       "retail": 21
     },
     "by_type": {
-      "wet": 5,
-      "dry": 16
+      "food": 21
     }
   },
   "products": [
@@ -19,12 +18,13 @@
       "brand": "Iams",
       "url": "https://www.petsmart.ca/dog/food/canned-food/iams-proactive-health-adult-dog-wet-food---beef-with-rice-74337.html",
       "channel": "retail",
-      "product_type": "wet",
+      "product_type": "food",
+      "product_format": "wet",
       "sub_brand": "Proactive Health",
       "life_stage": "adult",
       "source_id": "5335560",
       "images": [
-        "/products/iams/iams-wet-iams-proactive-health-adult-dog-wet-food-beef-with-rice.jpg"
+        "/products/iams/iams-food-iams-proactive-health-adult-dog-wet-food-beef-with-rice.jpg"
       ],
       "variants": [
         {
@@ -51,12 +51,13 @@
       "brand": "Iams",
       "url": "https://www.petsmart.ca/dog/food/canned-food/iams-proactive-health-adult-dog-wet-food---lamb-and-rice-classic-ground-74334.html",
       "channel": "retail",
-      "product_type": "wet",
+      "product_type": "food",
+      "product_format": "wet",
       "sub_brand": "Proactive Health",
       "life_stage": "adult",
       "source_id": "5335557",
       "images": [
-        "/products/iams/iams-wet-iams-proactive-health-adult-dog-wet-food-lamb-rice-classic-ground.jpg"
+        "/products/iams/iams-food-iams-proactive-health-adult-dog-wet-food-lamb-rice-classic-ground.jpg"
       ],
       "variants": [
         {
@@ -83,12 +84,13 @@
       "brand": "Iams",
       "url": "https://www.petsmart.ca/dog/food/canned-food/iams-proactive-health-adult-wet-dog-food---beef-rice-and-vegetables-74336.html",
       "channel": "retail",
-      "product_type": "wet",
+      "product_type": "food",
+      "product_format": "wet",
       "sub_brand": "Proactive Health",
       "life_stage": "adult",
       "source_id": "5335559",
       "images": [
-        "/products/iams/iams-wet-iams-proactive-health-adult-wet-dog-food-beef-rice-vegetables.jpg"
+        "/products/iams/iams-food-iams-proactive-health-adult-wet-dog-food-beef-rice-vegetables.jpg"
       ],
       "variants": [
         {
@@ -115,12 +117,13 @@
       "brand": "Iams",
       "url": "https://www.petsmart.ca/dog/food/canned-food/iams-proactive-health-adult-wet-dog-food---chicken-with-grain-74333.html",
       "channel": "retail",
-      "product_type": "wet",
+      "product_type": "food",
+      "product_format": "wet",
       "sub_brand": "Proactive Health",
       "life_stage": "adult",
       "source_id": "5335556",
       "images": [
-        "/products/iams/iams-wet-iams-proactive-health-adult-wet-dog-food-chicken-with-grain.jpg"
+        "/products/iams/iams-food-iams-proactive-health-adult-wet-dog-food-chicken-with-grain.jpg"
       ],
       "variants": [
         {
@@ -147,11 +150,12 @@
       "brand": "Iams",
       "url": "https://www.petsmart.ca/dog/food/canned-food/iams-wet-puppy-food---classic-ground-chicken-and-rice-recipe-90916.html",
       "channel": "retail",
-      "product_type": "wet",
+      "product_type": "food",
+      "product_format": "wet",
       "life_stage": "puppy",
       "source_id": "5363888",
       "images": [
-        "/products/iams/iams-wet-iams-wet-puppy-food-classic-ground-chicken-and-rice-recipe.jpg"
+        "/products/iams/iams-food-iams-wet-puppy-food-classic-ground-chicken-and-rice-recipe.jpg"
       ],
       "variants": [
         {
@@ -179,11 +183,12 @@
       "brand": "Iams",
       "url": "https://www.petsmart.ca/dog/food/dry-food/iams-adult-dry-dog-food---beef-and-rice-recipe-90915.html",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "life_stage": "adult",
       "source_id": "5363887",
       "images": [
-        "/products/iams/iams-dry-iams-adult-dry-dog-food-beef-and-rice-recipe.jpg"
+        "/products/iams/iams-food-iams-adult-dry-dog-food-beef-and-rice-recipe.jpg"
       ],
       "variants": [
         {
@@ -211,11 +216,12 @@
       "brand": "Iams",
       "url": "https://www.petsmart.ca/dog/food/dry-food/iams-adult-dry-dog-food-proactive-heath---beef-and-rice-minichuncks-90919.html",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "life_stage": "adult",
       "source_id": "5363891",
       "images": [
-        "/products/iams/iams-dry-iams-adult-dry-dog-food-proactive-heath-beef-and-rice-minichuncks.jpg"
+        "/products/iams/iams-food-iams-adult-dry-dog-food-proactive-heath-beef-and-rice-minichuncks.jpg"
       ],
       "variants": [
         {
@@ -243,12 +249,13 @@
       "brand": "Iams",
       "url": "https://www.petsmart.ca/dog/food/dry-food/iams-advanced-health-adult-dry-dog-food---skin-and-coat-care-chicken-and-salmon-75835.html",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "sub_brand": "Advanced Health",
       "life_stage": "adult",
       "source_id": "5338931",
       "images": [
-        "/products/iams/iams-dry-iams-advanced-health-adult-dry-dog-food-skin-coat-care-chicken-salmon.jpg"
+        "/products/iams/iams-food-iams-advanced-health-adult-dry-dog-food-skin-coat-care-chicken-salmon.jpg"
       ],
       "variants": [
         {
@@ -276,12 +283,13 @@
       "brand": "Iams",
       "url": "https://www.petsmart.ca/dog/food/dry-food/iams-advanced-health-mobility-support-adult-dry-dog-food---chicken-and-whole-grain-83404.html",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "sub_brand": "Advanced Health",
       "life_stage": "adult",
       "source_id": "5351498",
       "images": [
-        "/products/iams/iams-dry-iams-advanced-health-mobility-support-adult-dry-dog-food-chicken-whole-grain.jpg"
+        "/products/iams/iams-food-iams-advanced-health-mobility-support-adult-dry-dog-food-chicken-whole-grain.jpg"
       ],
       "variants": [
         {
@@ -316,11 +324,12 @@
       "brand": "Iams",
       "url": "https://www.petsmart.ca/dog/food/dry-food/iams-healthy-weight-control-adult-dry-dog-food-with-real-chicken-3473.html",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "life_stage": "adult",
       "source_id": "5197078",
       "images": [
-        "/products/iams/iams-dry-iams-healthy-weight-control-adult-dry-dog-food-with-real-chicken.jpg"
+        "/products/iams/iams-food-iams-healthy-weight-control-adult-dry-dog-food-with-real-chicken.jpg"
       ],
       "variants": [
         {
@@ -348,12 +357,13 @@
       "brand": "Iams",
       "url": "https://www.petsmart.ca/dog/food/dry-food/iams-proactive-health-adult-dry-dog-food---beef-and-rice-90913.html",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "sub_brand": "Proactive Health",
       "life_stage": "adult",
       "source_id": "5363885",
       "images": [
-        "/products/iams/iams-dry-iams-proactive-health-adult-dry-dog-food-beef-rice.jpg"
+        "/products/iams/iams-food-iams-proactive-health-adult-dry-dog-food-beef-rice.jpg"
       ],
       "variants": [
         {
@@ -381,13 +391,14 @@
       "brand": "Iams",
       "url": "https://www.petsmart.ca/dog/food/dry-food/iams-proactive-health-large-breed-adult-dry-dog-food-with-real-chicken-and-whole-grains-3469.html",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "sub_brand": "Proactive Health",
       "life_stage": "adult",
       "breed_size": "Large",
       "source_id": "5197053",
       "images": [
-        "/products/iams/iams-dry-iams-proactive-health-large-breed-adult-dry-dog-food-with-real-chicken-whole-gra.jpg"
+        "/products/iams/iams-food-iams-proactive-health-large-breed-adult-dry-dog-food-with-real-chicken-whole-gra.jpg"
       ],
       "variants": [
         {
@@ -428,12 +439,13 @@
       "brand": "Iams",
       "url": "https://www.petsmart.ca/dog/food/dry-food/iams-proactive-health-minichunks-adult-dry-dog-food-with-real-chicken-and-whole-grains-68886.html",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "sub_brand": "Proactive Health",
       "life_stage": "adult",
       "source_id": "5242704",
       "images": [
-        "/products/iams/iams-dry-iams-proactive-health-minichunks-adult-dry-dog-food-with-real-chicken-whole-grai.jpg"
+        "/products/iams/iams-food-iams-proactive-health-minichunks-adult-dry-dog-food-with-real-chicken-whole-grai.jpg"
       ],
       "variants": [
         {
@@ -460,12 +472,13 @@
       "brand": "Iams",
       "url": "https://www.petsmart.ca/dog/food/dry-food/iams-proactive-health-minichunks-adult-dry-dog-food-with-real-lamb-and-rice-52895.html",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "sub_brand": "Proactive Health",
       "life_stage": "adult",
       "source_id": "5282201",
       "images": [
-        "/products/iams/iams-dry-iams-proactive-health-minichunks-adult-dry-dog-food-with-real-lamb-rice.jpg"
+        "/products/iams/iams-food-iams-proactive-health-minichunks-adult-dry-dog-food-with-real-lamb-rice.jpg"
       ],
       "variants": [
         {
@@ -491,12 +504,13 @@
       "brand": "Iams",
       "url": "https://www.petsmart.ca/dog/food/dry-food/iams-proactive-health-minichunks-adult-dry-dog-food-with-real-lamb-and-ricece-71977.html",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "sub_brand": "Proactive Health",
       "life_stage": "adult",
       "source_id": "5326527",
       "images": [
-        "/products/iams/iams-dry-iams-proactive-health-minichunks-adult-dry-dog-food-with-real-lamb-ricece.jpg"
+        "/products/iams/iams-food-iams-proactive-health-minichunks-adult-dry-dog-food-with-real-lamb-ricece.jpg"
       ],
       "variants": [
         {
@@ -522,12 +536,13 @@
       "brand": "Iams",
       "url": "https://www.petsmart.ca/dog/food/dry-food/iams-puppy-large-breed-dry-dog-food-chicken-and-whole-grains-recipe-3654.html",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "life_stage": "puppy",
       "breed_size": "Large",
       "source_id": "5197054",
       "images": [
-        "/products/iams/iams-dry-iams-puppy-large-breed-dry-dog-food-chicken-whole-grains-recipe.jpg"
+        "/products/iams/iams-food-iams-puppy-large-breed-dry-dog-food-chicken-whole-grains-recipe.jpg"
       ],
       "variants": [
         {
@@ -556,12 +571,13 @@
       "brand": "Iams",
       "url": "https://www.petsmart.ca/dog/food/dry-food/iams-small-breed-adult-dry-dog-food---chicken-52896.html",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "life_stage": "adult",
       "breed_size": "Small",
       "source_id": "5282197",
       "images": [
-        "/products/iams/iams-dry-iams-small-breed-adult-dry-dog-food-chicken.jpg"
+        "/products/iams/iams-food-iams-small-breed-adult-dry-dog-food-chicken.jpg"
       ],
       "variants": [
         {
@@ -589,12 +605,13 @@
       "brand": "Iams",
       "url": "https://www.petsmart.ca/dog/food/dry-food/iamsandtrade-advanced-health-adult-dry-dog-food---chicken-71968.html",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "sub_brand": "Advanced Health",
       "life_stage": "adult",
       "source_id": "5326064",
       "images": [
-        "/products/iams/iams-dry-iams-advanced-health-adult-dry-dog-food-chicken.jpg"
+        "/products/iams/iams-food-iams-advanced-health-adult-dry-dog-food-chicken.jpg"
       ],
       "variants": [
         {
@@ -628,12 +645,13 @@
       "brand": "Iams",
       "url": "https://www.petsmart.ca/dog/food/dry-food/iamsandtrade-proactive-health-adult-dry-dog-food---high-protein-mini-chunks-chicken-and-whole-grains-3470.html",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "sub_brand": "Proactive Health",
       "life_stage": "adult",
       "source_id": "5196589",
       "images": [
-        "/products/iams/iams-dry-iams-proactive-health-adult-dry-dog-food-high-protein-mini-chunks-chicken-whole.jpg"
+        "/products/iams/iams-food-iams-proactive-health-adult-dry-dog-food-high-protein-mini-chunks-chicken-whole.jpg"
       ],
       "variants": [
         {
@@ -666,12 +684,13 @@
       "brand": "Iams",
       "url": "https://www.petsmart.ca/dog/food/dry-food/iamsandtrade-proactive-health-adult-senior-dry-dog-food---healthy-aging-chicken-and-whole-grains-3465.html",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "sub_brand": "Proactive Health",
       "life_stage": "senior",
       "source_id": "5197052",
       "images": [
-        "/products/iams/iams-dry-iams-proactive-health-adult-senior-dry-dog-food-healthy-aging-chicken-whole-grai.jpg"
+        "/products/iams/iams-food-iams-proactive-health-adult-senior-dry-dog-food-healthy-aging-chicken-whole-grai.jpg"
       ],
       "variants": [
         {
@@ -698,12 +717,13 @@
       "brand": "Iams",
       "url": "https://www.petsmart.ca/dog/food/dry-food/iamsandtrade-proactive-health-puppy-dry-dog-food---healthy-development-chicken-and-whole-grains-3471.html",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "sub_brand": "Proactive Health",
       "life_stage": "puppy",
       "source_id": "5210687",
       "images": [
-        "/products/iams/iams-dry-iams-proactive-health-puppy-dry-dog-food-healthy-development-chicken-whole-grain.jpg"
+        "/products/iams/iams-food-iams-proactive-health-puppy-dry-dog-food-healthy-development-chicken-whole-grain.jpg"
       ],
       "variants": [
         {

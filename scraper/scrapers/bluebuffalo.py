@@ -139,13 +139,19 @@ def _detect_sub_brand(title: str, url: str) -> str | None:
     return None
 
 
-def _detect_product_type(url: str, title: str) -> str:
-    """Detect product type."""
+def _detect_type(url: str, title: str) -> str:
+    """Detect product type: food or treat."""
+    combined = f"{url} {title}".lower()
+    if "/treats" in combined or "treat" in combined or "biscuit" in combined:
+        return "treat"
+    return "food"
+
+
+def _detect_format(url: str, title: str) -> str:
+    """Detect product format: dry or wet."""
     combined = f"{url} {title}".lower()
     if "/wet" in combined or "stew" in combined or "can " in combined:
         return "wet"
-    if "/treats" in combined or "treat" in combined or "biscuit" in combined:
-        return "treats"
     return "dry"
 
 
@@ -463,11 +469,12 @@ def _parse_product(url: str, html: str) -> Product | None:
     if not name:
         return None
 
-    product_type = _detect_product_type(url, name)
+    product_type = _detect_type(url, name)
+    product_format = _detect_format(url, name)
 
     # Append product form to wet food names to distinguish from dry counterparts
     # (many recipes exist in both dry and wet versions with identical page titles)
-    if product_type == "wet":
+    if product_format == "wet":
         name = f"{name} Wet Food"
 
     product: Product = {
@@ -476,6 +483,7 @@ def _parse_product(url: str, html: str) -> Product | None:
         "url": url,
         "channel": "retail",
         "product_type": product_type,
+        "product_format": product_format,
     }
 
     sub_brand = _detect_sub_brand(name, url)

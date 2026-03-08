@@ -4,8 +4,9 @@ from bs4 import BeautifulSoup
 
 from scrapers.canadiannaturals import (
     _SUPPLEMENTARY_CALORIES,
+    _detect_format,
     _detect_product_line,
-    _detect_product_type,
+    _detect_type,
     _map_ga_field,
     _parse_ga_text,
     _parse_images,
@@ -297,15 +298,26 @@ class TestDetectProductLine:
         assert _detect_product_line(soup) is None
 
 
-class TestDetectProductType:
-    def test_dry(self) -> None:
-        assert _detect_product_type("https://example.com/team/chicken-rice", "Chicken & Rice") == "dry"
+class TestDetectType:
+    def test_dry_is_food(self) -> None:
+        assert _detect_type("https://example.com/team/chicken-rice", "Chicken & Rice") == "food"
 
-    def test_wet(self) -> None:
-        assert _detect_product_type("https://example.com/team/chicken-stew", "Chicken Stew") == "wet"
+    def test_wet_is_food(self) -> None:
+        assert _detect_type("https://example.com/team/chicken-stew", "Chicken Stew") == "food"
 
     def test_treats(self) -> None:
-        assert _detect_product_type("https://example.com/team/treats", "Chicken Treats") == "treats"
+        assert _detect_type("https://example.com/team/treats", "Chicken Treats") == "treat"
+
+
+class TestDetectFormat:
+    def test_dry(self) -> None:
+        assert _detect_format("https://example.com/team/chicken-rice", "Chicken & Rice") == "dry"
+
+    def test_stew_is_wet(self) -> None:
+        assert _detect_format("https://example.com/team/chicken-stew", "Chicken Stew") == "wet"
+
+    def test_treats_are_dry(self) -> None:
+        assert _detect_format("https://example.com/team/treats", "Chicken Treats") == "dry"
 
 
 class TestParseProduct:
@@ -316,7 +328,7 @@ class TestParseProduct:
         assert product["name"] == "Chicken & Brown Rice Recipe for Dogs"
         assert product["brand"] == "Canadian Naturals"
         assert product["channel"] == "retail"
-        assert product["product_type"] == "dry"
+        assert product["product_type"] == "food"
 
     def test_has_ingredients(self) -> None:
         product = _parse_product("https://canadiannaturals.com/team/chicken-rice", _FULL_PRODUCT_HTML)

@@ -18,7 +18,7 @@ import { format, parseISO } from "date-fns"
 import { Pencil, Plus } from "lucide-react"
 import type { ActivePlan, FeedingPlanGroup, MedicationSummary, RoutineData } from "@/lib/types"
 import type { CorrelationResult, IngredientProductEntry } from "@/lib/correlation/types"
-import { SUPPLEMENT_PRODUCT_TYPES } from "@/lib/labels"
+import { NON_FOOD_TYPES } from "@/lib/labels"
 
 /** Singularize "1 weeks" → "1 week", leave "2 weeks" as-is. */
 function formatApproximateDuration(raw: string): string {
@@ -125,13 +125,13 @@ export default function FoodPage(): React.ReactElement {
     const groups = [...data.past]
     if (data.active) groups.push(data.active)
     return groups
-      .filter((g) => !g.items.every((item) => SUPPLEMENT_PRODUCT_TYPES.has(item.type ?? "")))
+      .filter((g) => !g.items.every((item) => NON_FOOD_TYPES.has(item.type ?? "")))
       .map((g) => ({
         planGroupId: g.planGroupId,
         start: g.startDate,
         end: g.endDate,
         label: g.items
-          .filter((item) => !SUPPLEMENT_PRODUCT_TYPES.has(item.type ?? ""))
+          .filter((item) => !NON_FOOD_TYPES.has(item.type ?? ""))
           .map((item) => [item.brandName, item.productName].filter(Boolean).join(" "))
           .join(", "),
       }))

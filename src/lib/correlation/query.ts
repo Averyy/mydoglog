@@ -305,10 +305,10 @@ export async function fetchCorrelationInput(
           )
       : Promise.resolve([]),
 
-    // Product types + calorie content for gram estimation
+    // Product types + format + calorie content for gram estimation
     productIdList.length > 0
       ? db
-          .select({ id: products.id, type: products.type, calorieContent: products.calorieContent })
+          .select({ id: products.id, type: products.type, format: products.format, calorieContent: products.calorieContent })
           .from(products)
           .where(
             sql`${products.id} IN (${sql.join(
@@ -339,9 +339,9 @@ export async function fetchCorrelationInput(
   }
 
   // -- Build product info map --
-  const productInfo = new Map<string, { type: string; calorieContent: string | null }>()
+  const productInfo = new Map<string, { type: string; format: string; calorieContent: string | null }>()
   for (const row of productTypeRows) {
-    productInfo.set(row.id, { type: row.type ?? "dry_food", calorieContent: row.calorieContent })
+    productInfo.set(row.id, { type: row.type ?? "food", format: row.format ?? "dry", calorieContent: row.calorieContent })
   }
 
   // -- Build backfill entries from actual date ranges --
@@ -422,6 +422,7 @@ export async function fetchIngredientProductMap(
       name: products.name,
       brandName: brands.name,
       type: products.type,
+      format: products.format,
     })
     .from(products)
     .innerJoin(brands, eq(products.brandId, brands.id))
@@ -456,7 +457,7 @@ export async function fetchIngredientProductMap(
           brandName: product.brandName,
           position: pi.position,
           positionCategory: positionCategory(pi.position),
-          productType: product.type ?? "dry_food",
+          productType: product.type ?? "food",
           avgPoopScore: null,
           avgItchScore: null,
           digestiveImpact: null,

@@ -198,6 +198,7 @@ function LogEntryRow({ entry }: { entry: LogFeedEntry }): React.ReactElement {
   }
 
   // treat
+  const brandName = entry.data.brandName as string | undefined
   const productName = (entry.data.productName as string) ?? "Unknown treat"
   const quantity = entry.data.quantity as number | null
   const quantityUnit = entry.data.quantityUnit as string | null
@@ -205,7 +206,7 @@ function LogEntryRow({ entry }: { entry: LogFeedEntry }): React.ReactElement {
     <div className="flex items-center gap-3 rounded-lg border border-border px-3 py-2">
       <LiaCookieBiteSolid className="size-5 text-text-tertiary shrink-0" />
       <div className="flex-1 min-w-0">
-        <span className="text-sm text-text-primary truncate">{productName}</span>
+        <span className="text-sm text-text-primary truncate">{brandName ? `${brandName} ${productName}` : productName}</span>
         {quantity != null && (
           <span className="text-xs text-text-secondary ml-1.5">
             ×{quantity}{quantityUnit ? ` ${quantityUnit}` : ""}

@@ -33,6 +33,7 @@ export async function GET(
         brandName: brands.name,
         imageUrl: sql<string | null>`${products.imageUrls}[1]`,
         productType: products.type,
+        productFormat: products.format,
       })
       .from(feedingPeriods)
       .innerJoin(products, eq(feedingPeriods.productId, products.id))
@@ -75,6 +76,7 @@ export async function GET(
         brandName: row.brandName,
         imageUrl: row.imageUrl,
         type: row.productType,
+        format: row.productFormat,
         quantity: row.quantity,
         quantityUnit: row.quantityUnit,
         mealSlot: row.mealSlot,

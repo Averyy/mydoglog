@@ -27,6 +27,7 @@ export async function GET(
           brandName: brands.name,
           brandId: products.brandId,
           type: products.type,
+          format: products.format,
           channel: products.channel,
           lifestage: products.lifestage,
           imageUrl: sql<string | null>`${products.imageUrls}[1]`,

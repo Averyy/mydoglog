@@ -29,6 +29,13 @@
       "when": 1772905839587,
       "tag": "0003_loud_morlun",
       "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1772982586729,
+      "tag": "0004_quick_ego",
+      "breakpoints": true
     }
   ]
 }

@@ -40,18 +40,6 @@ WEBSITE_URL = "https://www.purina.ca"
 # Brand taxonomy IDs → vet channel
 _VET_BRAND_TIDS = {1560}  # PPVD (Pro Plan Veterinary Diets)
 
-# URL path patterns → product type
-_TYPE_PATTERNS: list[tuple[str, str]] = [
-    (r"/dry-dog-food/", "dry"),
-    (r"/dry-food/", "dry"),
-    (r"/wet-dog-food/", "wet"),
-    (r"/wet-food/", "wet"),
-    (r"/dog-treats/", "treats"),
-    (r"/treats/", "treats"),
-    (r"/dog-supplements/", "supplements"),
-    (r"/supplements/", "supplements"),
-    (r"/dog-food/", "dry"),  # fallback
-]
 
 # --- Static fallback data for products missing GA/calories on purina.ca ---
 # Sources: Chewy.ca, PetSmart US, Purina PDF spec sheets.
@@ -60,9 +48,11 @@ _TYPE_PATTERNS: list[tuple[str, str]] = [
 # Structure: URL path suffix → (GA dict or None, calorie string or None)
 # Only used when normal parsing returns no data for these fields.
 
-_FALLBACK_DATA: dict[str, tuple[GuaranteedAnalysis | None, str | None]] = {
+_FALLBACK_DATA: dict[str, tuple[str | None, GuaranteedAnalysis | None, str | None]] = {
+    # (ingredients_raw | None, GA | None, calorie_content | None)
     # Source: PetSmart.com US (item #5258024)
     "purina-pro-plan-veterinary-diets/dog/dry-food/ha-hydrolyzed-chicken-flavour-dry-canine-formula": (
+        None,
         {
             "crude_protein_min": 18.0,
             "crude_fat_min": 9.5,
@@ -76,6 +66,7 @@ _FALLBACK_DATA: dict[str, tuple[GuaranteedAnalysis | None, str | None]] = {
     ),
     # Source: Chewy.ca + Tractor Supply
     "dentalife/dogs/dental-chews/activfresh-daily-oral-chews-mini-dogs": (
+        None,
         {
             "crude_protein_min": 6.0,
             "crude_fat_min": 1.5,
@@ -86,6 +77,7 @@ _FALLBACK_DATA: dict[str, tuple[GuaranteedAnalysis | None, str | None]] = {
     ),
     # Source: Chewy.ca
     "dentalife/dogs/dental-chews/activfresh-daily-oral-chews-medium": (
+        None,
         {
             "crude_protein_min": 6.0,
             "crude_fat_min": 1.5,
@@ -96,6 +88,7 @@ _FALLBACK_DATA: dict[str, tuple[GuaranteedAnalysis | None, str | None]] = {
     ),
     # Source: Purina PDF spec sheet
     "beyond/dogs/wet-dog-food/beef-spinach-in-gravy": (
+        None,
         {
             "crude_protein_min": 8.0,
             "crude_fat_min": 2.5,
@@ -106,6 +99,7 @@ _FALLBACK_DATA: dict[str, tuple[GuaranteedAnalysis | None, str | None]] = {
     ),
     # Source: Chewy.ca
     "alpo/semi-moist-dog-food/moist-meaty-lamb": (
+        None,
         {
             "crude_protein_min": 18.0,
             "crude_fat_min": 7.0,
@@ -116,6 +110,7 @@ _FALLBACK_DATA: dict[str, tuple[GuaranteedAnalysis | None, str | None]] = {
     ),
     # Source: Chewy.ca
     "alpo/semi-moist-dog-food/moist-meaty-chicken": (
+        None,
         {
             "crude_protein_min": 18.0,
             "crude_fat_min": 7.0,
@@ -126,6 +121,7 @@ _FALLBACK_DATA: dict[str, tuple[GuaranteedAnalysis | None, str | None]] = {
     ),
     # Source: Chewy.ca + VetRxDirect
     "purina-pro-plan-veterinary-diets/dog/supplements/fortiflora-canine-probiotic-supplement": (
+        None,
         {
             "crude_protein_min": 43.0,
             "crude_fat_min": 10.0,
@@ -136,6 +132,7 @@ _FALLBACK_DATA: dict[str, tuple[GuaranteedAnalysis | None, str | None]] = {
     ),
     # Source: Chewy.ca + PetSmart
     "purina-pro-plan-veterinary-diets/dog/supplements/fortiflora-canine-probiotic-tablets": (
+        None,
         {
             "crude_protein_min": 16.5,
             "crude_fat_min": 4.5,
@@ -143,6 +140,36 @@ _FALLBACK_DATA: dict[str, tuple[GuaranteedAnalysis | None, str | None]] = {
             "moisture_max": 10.0,
         },
         "2.9 kcal/treat",
+    ),
+    # --- Vet supplements with no traditional GA (active/inactive ingredient format) ---
+    # Source: Chewy.ca — both sizes use identical formula
+    "purina-pro-plan-veterinary-diets/dog/treats/joint-care-canine-probiotic-supplement-small-medium": (
+        "Glucosamine Hydrochloride, Hydrolyzed Collagen, Chondroitin Sulphate, Omega-3 Fatty Acids, Hyaluronic Acid, Animal Digest, Brewer's Yeast, Citric Acid, Cod Liver Oil, Glycerin, Lecithin, Microcrystalline Cellulose, Natural Bacon Flavour, Silicon Dioxide, Sodium Chloride, Sodium Propionate, Tapioca Starch, Tocopherols, Water",
+        None,
+        None,
+    ),
+    "purina-pro-plan-veterinary-diets/dog/treats/joint-care-canine-probiotic-supplement-medium-large": (
+        "Glucosamine Hydrochloride, Hydrolyzed Collagen, Chondroitin Sulphate, Omega-3 Fatty Acids, Hyaluronic Acid, Animal Digest, Brewer's Yeast, Citric Acid, Cod Liver Oil, Glycerin, Lecithin, Microcrystalline Cellulose, Natural Bacon Flavour, Silicon Dioxide, Sodium Chloride, Sodium Propionate, Tapioca Starch, Tocopherols, Water",
+        None,
+        None,
+    ),
+    # Source: Pro Plan Vet Direct
+    "purina-pro-plan-veterinary-diets/dog/supplements/fortiflora-sa-synbiotic-action-canine-probiotic-supplement": (
+        "Psyllium Husk, Enterococcus Lactis SF68, Liver Flavor, Yeast",
+        None,
+        None,
+    ),
+    # Source: Chewy.ca
+    "purina-pro-plan-veterinary-diets/dog/supplements/calming-care-canine-probiotic-supplement": (
+        "Bifidobacterium Longum BL999, Animal Digest, Maltodextrin",
+        None,
+        None,
+    ),
+    # Source: Chewy.ca
+    "purina-pro-plan-veterinary-diets/dog/supplements/multi-care": (
+        "Psyllium Husk, L-Glutamine, Cod Liver Oil, Vitamin E, Zinc Bisglycinate, Biotin, Bacillus Coagulans, Lactobacillus Fermentum, Lactobacillus Delbrueckii, Animal Digest, Citric Acid, Glycerin, Lecithin, Microcrystalline Cellulose, Mixed-Tocopherols, Natural Flavour, Sodium Chloride, Tapioca Starch, Vinegar, Water, Yeast",
+        None,
+        None,
     ),
 }
 
@@ -261,21 +288,50 @@ def _detect_channel(page_data: dict, listing: dict | None = None) -> str:
 
 
 def _detect_type(url_path: str, title: str = "") -> str:
-    """Detect product type from URL path, with title fallback."""
-    for pattern, ptype in _TYPE_PATTERNS:
-        if re.search(pattern, url_path, re.IGNORECASE):
-            return ptype
-
-    # Title-based fallback for vet products with non-standard URLs
+    """Detect product type from URL path, with title overrides."""
+    url_lower = url_path.lower()
     title_lower = title.lower()
-    if "canned" in title_lower or "stew" in title_lower or "gravy" in title_lower:
-        return "wet"
-    if "treat" in title_lower:
-        return "treats"
-    if "supplement" in title_lower or "probiotic" in title_lower:
-        return "supplements"
 
-    return "dry"  # default
+    # Title overrides for products on wrong URL paths
+    if "supplement" in title_lower and "treat" not in title_lower:
+        return "supplement"
+
+    # URL patterns
+    if "/dog-supplements/" in url_lower or "/supplements/" in url_lower:
+        return "supplement"
+    if "/dog-treats/" in url_lower or "/treats/" in url_lower:
+        if "dog food" in title_lower:  # Purina site data errors
+            return "food"
+        return "treat"
+    if "/dental-chews/" in url_lower or "/dentalife/" in url_lower:
+        return "treat"
+
+    # Title fallback
+    if "treat" in title_lower or "chew" in title_lower or "snack" in title_lower:
+        return "treat"
+    if "probiotic" in title_lower:
+        return "supplement"
+
+    return "food"
+
+
+def _detect_format(url_path: str, title: str = "") -> str:
+    """Detect product format from URL path, with title fallback."""
+    url_lower = url_path.lower()
+    title_lower = title.lower()
+
+    if "/wet-dog-food/" in url_lower or "/wet-food/" in url_lower:
+        return "wet"
+    if "/semi-moist-dog-food/" in url_lower:
+        return "wet"
+    if "/dry-dog-food/" not in url_lower and "/dry-food/" not in url_lower:
+        if any(
+            kw in title_lower
+            for kw in ("canned", "stew", "gravy", "pâté", "pate", "entrée", "entree")
+        ):
+            return "wet"
+
+    return "dry"
 
 
 def _get_node(page_data: dict) -> dict | None:
@@ -572,6 +628,7 @@ def _parse_product(
         "url": f"{WEBSITE_URL}{url_path}" if url_path.startswith("/") else f"{WEBSITE_URL}/{url_path}",
         "channel": _detect_channel(page_data, listing),
         "product_type": _detect_type(url_path, title),
+        "product_format": _detect_format(url_path, title),
     }
 
     # Sub-brand
@@ -624,10 +681,12 @@ def _parse_product(
         if fallback.get("calorie_content") and not product.get("calorie_content"):
             product["calorie_content"] = fallback["calorie_content"]
 
-    # Static fallback for products where purina.ca has no GA/calories
+    # Static fallback for products where purina.ca has no data
     url_key = url_path.lstrip("/")
     if url_key in _FALLBACK_DATA:
-        fb_ga, fb_cal = _FALLBACK_DATA[url_key]
+        fb_ing, fb_ga, fb_cal = _FALLBACK_DATA[url_key]
+        if fb_ing and not product.get("ingredients_raw"):
+            product["ingredients_raw"] = fb_ing
         if fb_ga and not product.get("guaranteed_analysis"):
             product["guaranteed_analysis"] = fb_ga
             product["guaranteed_analysis_basis"] = "as-fed"
@@ -657,7 +716,8 @@ def _download_purina_images(
     brand_dir.mkdir(parents=True, exist_ok=True)
 
     downloaded = 0
-    for product in products:
+    total = len(products)
+    for i, product in enumerate(products):
         images = product.get("images")
         if not images or not images[0].startswith("http"):
             continue
@@ -670,6 +730,8 @@ def _download_purina_images(
             continue
 
         try:
+            if (i + 1) % 20 == 0 or i == total - 1:
+                logger.info(f"  Images: [{i + 1}/{total}] downloading...")
             resp = session.get(images[0])
             if not resp.ok:
                 logger.warning(f"Image {resp.status_code} for {product['name']}")

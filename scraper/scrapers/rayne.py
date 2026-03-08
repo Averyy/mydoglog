@@ -42,16 +42,29 @@ logger = logging.getLogger(__name__)
 PRODUCTS_URL = "https://raynenutrition.com/products.json"
 WEBSITE_URL = "https://raynenutrition.com"
 
-# Shopify product_type → our type
+# Shopify product_type → our product_type
 _TYPE_MAP: dict[str, str] = {
+    "dry": "food",
+    "wet": "food",
+    "canned": "food",
+    "stew": "food",
+    "roll": "food",
+    "treats": "treat",
+    "toppers": "supplement",
+    "meatballs": "treat",
+    "freeze-dried": "food",
+}
+
+# Shopify product_type → our product_format
+_FORMAT_MAP: dict[str, str] = {
     "dry": "dry",
     "wet": "wet",
     "canned": "wet",
     "stew": "wet",
     "roll": "wet",
-    "treats": "treats",
-    "toppers": "supplements",
-    "meatballs": "treats",
+    "treats": "dry",
+    "toppers": "wet",
+    "meatballs": "wet",
     "freeze-dried": "dry",
 }
 
@@ -65,9 +78,10 @@ _CAT_KEYWORDS = ["cat food", "cat ", "feline", " cats"]
 # Calorie data (kcal/kg and kcal/cup) from the PDF diet pages.
 # Last verified: 2026-03-02
 #
-# Structure: handle -> (GuaranteedAnalysis dict, calorie_content str or None)
+# Structure: handle -> (GuaranteedAnalysis dict, calorie_content str or None, basis str)
+# basis: "as-fed" (default) or "per-1000kcal" (g/1,000 kcal)
 
-_GA_DATA: dict[str, tuple[GuaranteedAnalysis, str | None]] = {
+_GA_DATA: dict[str, tuple[GuaranteedAnalysis, str | None] | tuple[GuaranteedAnalysis, str | None, str]] = {
     # --- DRY ---
     # Source: GA image + PDF (DS061-0720), chickpea formula
     "crocodilia-maint-canine-bag": (
@@ -288,13 +302,25 @@ _GA_DATA: dict[str, tuple[GuaranteedAnalysis, str | None]] = {
     # --- TREATS (calorie-only, g/1000 kcal format — no standard GA) ---
     # Source: diet page /treats
     "rayne-rewards-simple-ingredients-treats-pork": (
-        {},
+        {
+            "crude_protein_min": 40.0,
+            "crude_fat_min": 23.0,
+            "crude_fiber_max": 2.0,
+            "moisture_max": 20.0,
+        },
         "40 kcal/treat",
     ),
     "kangaroo-liver-treats": (
-        {},
-        "1.1 kcal/treat",
+        {
+            "crude_protein_min": 65.0,
+            "crude_fat_min": 10.0,
+            "crude_fiber_max": 1.0,
+            "moisture_max": 5.0,
+        },
+        "3756 kcal/kg, 1 kcal/treat",
     ),
+    # Meatballs: GA is published as g/1000kcal (not as-fed %). Without kcal/kg
+    # we can't convert to percentages, so we omit GA and store calories only.
     "rabbit-meatballs": (
         {},
         "25 kcal/treat",
@@ -305,19 +331,42 @@ _GA_DATA: dict[str, tuple[GuaranteedAnalysis, str | None]] = {
     ),
     # --- ROLLS ---
     # Source: diet page /treats (kcal/g as fed)
+    # Converted from g/1,000 kcal using 2200 kcal/kg
     "rabbit-fresh-roll-for-dogs": (
-        {},
+        {
+            "crude_protein_min": 13.9,
+            "crude_fat_min": 9.7,
+            "crude_fiber_max": 4.07,
+            "calcium_min": 0.75,
+            "phosphorus_min": 0.40,
+            "potassium_min": 0.79,
+            "sodium_min": 1.19,
+        },
         "2200 kcal/kg",
     ),
+    # Converted from g/1,000 kcal using 2500 kcal/kg
     "plant-based-fresh-roll-for-dogs": (
-        {},
+        {
+            "crude_protein_min": 15.5,
+            "crude_fat_min": 7.9,
+            "crude_fiber_max": 6.4,
+            "calcium_min": 0.80,
+            "phosphorus_min": 0.38,
+            "potassium_min": 0.75,
+            "sodium_min": 1.10,
+        },
         "2500 kcal/kg",
     ),
     # --- TOPPERS ---
     # Source: diet page /wellstridetreats
     "wellstride-treats-turkey-blueberries": (
-        {},
-        "6 kcal/treat",
+        {
+            "crude_protein_min": 25.0,
+            "crude_fat_min": 10.0,
+            "crude_fiber_max": 2.0,
+            "moisture_max": 20.0,
+        },
+        "3256 kcal/kg, 6 kcal/treat",
     ),
     "good-gravy-veggie": (
         {},
@@ -339,16 +388,24 @@ _SAMPLE_TO_MAIN: dict[str, str] = {
 }
 
 
-def _get_ga_and_calories(handle: str) -> tuple[GuaranteedAnalysis | None, str | None]:
-    """Look up GA and calorie data for a product by its Shopify handle."""
+def _get_ga_and_calories(handle: str) -> tuple[GuaranteedAnalysis | None, str | None, str]:
+    """Look up GA and calorie data for a product by its Shopify handle.
+
+    Returns (ga, calorie_content, basis) where basis is "as-fed" or "per-1000kcal".
+    """
+    def _unpack(entry: tuple) -> tuple[GuaranteedAnalysis | None, str | None, str]:
+        if len(entry) == 3:
+            return entry[0], entry[1], entry[2]  # type: ignore[return-value]
+        return entry[0], entry[1], "as-fed"
+
     # Direct match
     if handle in _GA_DATA:
-        return _GA_DATA[handle]
+        return _unpack(_GA_DATA[handle])
     # Sample → main product fallback
     main_handle = _SAMPLE_TO_MAIN.get(handle)
     if main_handle and main_handle in _GA_DATA:
-        return _GA_DATA[main_handle]
-    return None, None
+        return _unpack(_GA_DATA[main_handle])
+    return None, None, "as-fed"
 
 
 def _is_dog_product(product: dict) -> bool:
@@ -377,10 +434,16 @@ def _is_dog_product(product: dict) -> bool:
     return False
 
 
-def _detect_product_type(product: dict) -> str:
-    """Map Shopify product_type to our type."""
+def _detect_type(product: dict) -> str:
+    """Map Shopify product_type to our product type."""
     shopify_type = product.get("product_type", "").lower().strip()
-    return _TYPE_MAP.get(shopify_type, "dry")
+    return _TYPE_MAP.get(shopify_type, "food")
+
+
+def _detect_format(product: dict) -> str:
+    """Map Shopify product_type to our product format."""
+    shopify_type = product.get("product_type", "").lower().strip()
+    return _FORMAT_MAP.get(shopify_type, "dry")
 
 
 def _strip_marketing_copy(text: str) -> str:
@@ -488,7 +551,8 @@ def _parse_product(product: dict) -> Product | None:
         "sub_brand": "Rayne Clinical Nutrition",
         "url": url,
         "channel": "vet",
-        "product_type": _detect_product_type(product),
+        "product_type": _detect_type(product),
+        "product_format": _detect_format(product),
     }
 
     # Ingredients from body_html tab2
@@ -497,10 +561,10 @@ def _parse_product(product: dict) -> Product | None:
         result["ingredients_raw"] = ingredients
 
     # GA + calorie data from static lookup
-    ga, calorie_raw = _get_ga_and_calories(handle)
+    ga, calorie_raw, ga_basis = _get_ga_and_calories(handle)
     if ga:
         result["guaranteed_analysis"] = ga
-        result["guaranteed_analysis_basis"] = "as-fed"
+        result["guaranteed_analysis_basis"] = ga_basis
     if calorie_raw:
         normalized = normalize_calorie_content(calorie_raw)
         if normalized:

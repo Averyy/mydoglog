@@ -64,6 +64,8 @@ Cross-reactivity between chicken and fish clinically demonstrated (Bexley et al.
 
 Pure fats are non-allergenic (reactions target proteins, not lipids). Poorly rendered chicken fat can contain residual protein — some owners report "chicken-allergic" dogs reacting. Hydrolyzed diets containing chicken fat are generally tolerated. Our engine correctly separates fat/oil correlation keys from protein keys — **this separation matters for itch but not for GI** (where fat content itself is a trigger).
 
+In the GI (stool) view, fat/oil forms are merged back into their parent family using the **worst score (max)** across forms. This prevents low-volume forms (e.g. corn in a treat at 7% of daily intake) from diluting a bad signal from another form (e.g. corn oil in a main food). The merged row shows a per-form breakdown when expanded. This aligns with elimination diet principles: a bad signal from any form should flag the whole family.
+
 ### Skin-Specific Confounders
 
 - **Seasonal allergies cause 80-95% of atopic dermatitis** — food changes during pollen season produce false correlations
@@ -387,7 +389,7 @@ Our daily check-in already captures appetite and vomiting. **Adding optional muc
 
 ### Already correct (no changes needed):
 - `COMMON_SKIN_TRIGGERS` (Mueller data) only shown in itch context — no `COMMON_GI_TRIGGERS` list (GI correlations are purely data-driven)
-- Fat/oil separation from protein
+- Fat/oil separation from protein (itch/both view), worst-score merge into parent family (stool view) with per-form breakdown
 - Hydrolyzed flagging
 - Cross-reactivity groups — biologically accurate
 - Position-based weighting for proteins — aligns with ingredient label regulation

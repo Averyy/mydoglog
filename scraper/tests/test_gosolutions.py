@@ -1,6 +1,7 @@
 """Tests for scrapers.gosolutions — Go! Solutions parsing logic."""
 
 from scrapers.gosolutions import (
+    _detect_product_format,
     _detect_product_type,
     _parse_calorie_content,
     _parse_ga,
@@ -13,20 +14,34 @@ from scrapers.gosolutions import (
 
 
 class TestDetectProductType:
-    def test_dry(self) -> None:
-        assert _detect_product_type("dog-food/dry/some-recipe") == "dry"
+    def test_dry_is_food(self) -> None:
+        assert _detect_product_type("dog-food/dry/some-recipe") == "food"
 
-    def test_wet(self) -> None:
-        assert _detect_product_type("dog-food/wet/some-recipe") == "wet"
+    def test_wet_is_food(self) -> None:
+        assert _detect_product_type("dog-food/wet/some-recipe") == "food"
 
-    def test_toppers_are_supplements(self) -> None:
-        assert _detect_product_type("dog-food/toppers/some-topper") == "supplements"
+    def test_toppers_are_supplement(self) -> None:
+        assert _detect_product_type("dog-food/toppers/some-topper") == "supplement"
 
     def test_treats(self) -> None:
-        assert _detect_product_type("dog-food/treats/some-treat") == "treats"
+        assert _detect_product_type("dog-food/treats/some-treat") == "treat"
+
+    def test_default_food(self) -> None:
+        assert _detect_product_type("dog-food/unknown") == "food"
+
+
+class TestDetectProductFormat:
+    def test_dry(self) -> None:
+        assert _detect_product_format("dog-food/dry/some-recipe") == "dry"
+
+    def test_wet(self) -> None:
+        assert _detect_product_format("dog-food/wet/some-recipe") == "wet"
+
+    def test_toppers_are_wet(self) -> None:
+        assert _detect_product_format("dog-food/toppers/some-topper") == "wet"
 
     def test_default_dry(self) -> None:
-        assert _detect_product_type("dog-food/unknown") == "dry"
+        assert _detect_product_format("dog-food/unknown") == "dry"
 
 
 class TestParseIngredients:
@@ -264,7 +279,7 @@ class TestParseProduct:
         assert result is not None
         assert result["name"] == "Sensitivities - Turkey Grain-Free Limited Ingredient Dog Food"
         assert result["brand"] == "Go! Solutions"
-        assert result["product_type"] == "dry"
+        assert result["product_type"] == "food"
         assert result["product_line"] == "Sensitivities"
         assert result["ingredients_raw"] == "de-boned turkey, turkey meal"
         assert result["source_id"] == "1303121"

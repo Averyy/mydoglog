@@ -3,7 +3,8 @@
 from bs4 import BeautifulSoup
 
 from scrapers.performatrin import (
-    _detect_product_type,
+    _detect_format,
+    _detect_type,
     _detect_sub_brand,
     _get_tab_content,
     _is_cat_product,
@@ -93,33 +94,53 @@ class TestIsCatProduct:
         ) is True
 
 
-# --- _detect_product_type ---
+# --- _detect_type / _detect_format ---
 
 
-class TestDetectProductType:
+class TestDetectType:
+    def test_dry_is_food(self):
+        assert _detect_type(
+            "https://petvalu.ca/product/performatrin-ultra-original-recipe-dog-food/FCM06331",
+            "Performatrin Ultra Original Recipe Dog Food",
+        ) == "food"
+
+    def test_wet_is_food(self):
+        assert _detect_type(
+            "https://petvalu.ca/product/performatrin-ultra-beef-stew-dog-food/FCM06728",
+            "Performatrin Ultra Grain Free Beef Stew Dog Food",
+        ) == "food"
+
+    def test_treats(self):
+        assert _detect_type(
+            "https://petvalu.ca/product/performatrin-treats/FCM123",
+            "Performatrin Dog Treats",
+        ) == "treat"
+
+
+class TestDetectFormat:
     def test_dry_default(self):
-        assert _detect_product_type(
+        assert _detect_format(
             "https://petvalu.ca/product/performatrin-ultra-original-recipe-dog-food/FCM06331",
             "Performatrin Ultra Original Recipe Dog Food",
         ) == "dry"
 
-    def test_wet_stew(self):
-        assert _detect_product_type(
+    def test_stew_is_wet(self):
+        assert _detect_format(
             "https://petvalu.ca/product/performatrin-ultra-beef-stew-dog-food/FCM06728",
             "Performatrin Ultra Grain Free Beef Stew Dog Food",
         ) == "wet"
 
-    def test_wet_pate(self):
-        assert _detect_product_type(
+    def test_pate_is_wet(self):
+        assert _detect_format(
             "https://petvalu.ca/product/performatrin-ultra-chicken-pate/FCM06734",
             "Performatrin Ultra Chicken Pate Dog Food",
         ) == "wet"
 
-    def test_treats(self):
-        assert _detect_product_type(
+    def test_treats_are_dry(self):
+        assert _detect_format(
             "https://petvalu.ca/product/performatrin-treats/FCM123",
             "Performatrin Dog Treats",
-        ) == "treats"
+        ) == "dry"
 
 
 # --- _detect_sub_brand ---
@@ -318,7 +339,7 @@ class TestParseProduct:
         assert result["name"] == "Performatrin Ultra Grain Free Original Recipe Dog Food"
         assert result["brand"] == "Performatrin"
         assert result["channel"] == "retail"
-        assert result["product_type"] == "dry"
+        assert result["product_type"] == "food"
         assert result["sub_brand"] == "Performatrin Ultra"
         assert "ingredients_raw" in result
         assert "guaranteed_analysis" in result
@@ -338,7 +359,7 @@ class TestParseProduct:
             html,
         )
         assert result is not None
-        assert result["product_type"] == "wet"
+        assert result["product_type"] == "food"
 
     def test_cat_product_filtered(self):
         html = _make_page_html(

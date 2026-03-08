@@ -22,7 +22,7 @@ import { eachDayOfInterval, parseISO } from "date-fns"
 import { toast } from "sonner"
 import { Info } from "lucide-react"
 import type { FeedingPlanGroup, ProductSummary } from "@/lib/types"
-import { QUANTITY_UNIT_OPTIONS, SUPPLEMENT_PRODUCT_TYPES } from "@/lib/labels"
+import { QUANTITY_UNIT_OPTIONS, NON_FOOD_TYPES } from "@/lib/labels"
 import { getAvailableUnits } from "@/lib/nutrition"
 
 type BackfillStep = "product" | "scorecard"
@@ -79,6 +79,7 @@ export function BackfillModal({
           brandName: item.brandName,
           brandId: "",
           type: item.type,
+          format: item.format ?? null,
           channel: null,
           lifestage: null,
           imageUrl: item.imageUrl,
@@ -88,7 +89,7 @@ export function BackfillModal({
         startDate: editingGroup.startDate,
         endDate: editingGroup.endDate ?? "",
         quantity: item.quantity ?? "1",
-        quantityUnit: item.quantityUnit ?? (getAvailableUnits(null, item.type)?.[0]?.value ?? "cup"),
+        quantityUnit: item.quantityUnit ?? (getAvailableUnits(null, item.type, item.format)?.[0]?.value ?? "cup"),
       })
     } else {
       setProduct(null)
@@ -111,7 +112,7 @@ export function BackfillModal({
 
   const backfillOverlap = useMemo((): string | null => {
     if (!product?.startDate || !product?.endDate) return null
-    if (SUPPLEMENT_PRODUCT_TYPES.has(product.product.type ?? "")) return null
+    if (NON_FOOD_TYPES.has(product.product.type ?? "")) return null
     const s = product.startDate
     const e = product.endDate
     const match = existingPeriods.find((p) => {
@@ -135,7 +136,7 @@ export function BackfillModal({
 
   function handleProductSelected(p: ProductSummary | null): void {
     if (!p) return
-    const units = getAvailableUnits(p.calorieContent ?? null, p.type)
+    const units = getAvailableUnits(p.calorieContent ?? null, p.type, p.format)
     const defaultUnit = units?.[0]?.value ?? "cup"
     setProduct((prev) => ({
       product: p,
@@ -320,7 +321,7 @@ export function BackfillModal({
                       <SelectValue />
                     </SelectTrigger>
                     <SelectContent>
-                      {(getAvailableUnits(product.product.calorieContent ?? null, product.product.type) ??
+                      {(getAvailableUnits(product.product.calorieContent ?? null, product.product.type, product.product.format) ??
                         QUANTITY_UNIT_OPTIONS.map((o) => ({ value: o.value, label: o.label }))
                       ).map((opt) => (
                         <SelectItem key={opt.value} value={opt.value}>

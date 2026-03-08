@@ -1,7 +1,8 @@
 """Tests for scrapers.rayne — Rayne Clinical Nutrition parsing logic."""
 
 from scrapers.rayne import (
-    _detect_product_type,
+    _detect_format,
+    _detect_type,
     _get_ga_and_calories,
     _is_dog_product,
     _parse_ingredients,
@@ -25,27 +26,50 @@ class TestIsDogProduct:
         assert not _is_dog_product({"title": "Whole Food Pet Nutrition Brochure", "product_type": "Brochure"})
 
 
-class TestDetectProductType:
-    def test_dry(self) -> None:
-        assert _detect_product_type({"product_type": "Dry"}) == "dry"
+class TestDetectType:
+    def test_dry_is_food(self) -> None:
+        assert _detect_type({"product_type": "Dry"}) == "food"
 
-    def test_wet(self) -> None:
-        assert _detect_product_type({"product_type": "Wet"}) == "wet"
+    def test_wet_is_food(self) -> None:
+        assert _detect_type({"product_type": "Wet"}) == "food"
 
-    def test_stew_is_wet(self) -> None:
-        assert _detect_product_type({"product_type": "Stew"}) == "wet"
+    def test_stew_is_food(self) -> None:
+        assert _detect_type({"product_type": "Stew"}) == "food"
 
     def test_treats(self) -> None:
-        assert _detect_product_type({"product_type": "Treats"}) == "treats"
+        assert _detect_type({"product_type": "Treats"}) == "treat"
 
     def test_meatballs_are_treats(self) -> None:
-        assert _detect_product_type({"product_type": "Meatballs"}) == "treats"
+        assert _detect_type({"product_type": "Meatballs"}) == "treat"
 
     def test_toppers_are_supplements(self) -> None:
-        assert _detect_product_type({"product_type": "Toppers"}) == "supplements"
+        assert _detect_type({"product_type": "Toppers"}) == "supplement"
+
+    def test_freeze_dried_is_food(self) -> None:
+        assert _detect_type({"product_type": "Freeze-Dried"}) == "food"
+
+
+class TestDetectFormat:
+    def test_dry(self) -> None:
+        assert _detect_format({"product_type": "Dry"}) == "dry"
+
+    def test_wet(self) -> None:
+        assert _detect_format({"product_type": "Wet"}) == "wet"
+
+    def test_stew_is_wet(self) -> None:
+        assert _detect_format({"product_type": "Stew"}) == "wet"
+
+    def test_treats_are_dry(self) -> None:
+        assert _detect_format({"product_type": "Treats"}) == "dry"
+
+    def test_meatballs_are_wet(self) -> None:
+        assert _detect_format({"product_type": "Meatballs"}) == "wet"
+
+    def test_toppers_are_wet(self) -> None:
+        assert _detect_format({"product_type": "Toppers"}) == "wet"
 
     def test_freeze_dried_is_dry(self) -> None:
-        assert _detect_product_type({"product_type": "Freeze-Dried"}) == "dry"
+        assert _detect_format({"product_type": "Freeze-Dried"}) == "dry"
 
 
 class TestStripMarketingCopy:
@@ -138,7 +162,7 @@ class TestParseProduct:
         assert result["name"] == "Crocodilia-MAINT Dry Dog Food"
         assert result["brand"] == "Rayne"
         assert result["channel"] == "vet"
-        assert result["product_type"] == "dry"
+        assert result["product_type"] == "food"
         assert result["ingredients_raw"] == "Dried chickpeas, alligator"
         assert len(result["images"]) == 1
         assert len(result["variants"]) == 1

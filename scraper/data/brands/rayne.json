@@ -1,7 +1,7 @@
 {
   "brand": "Rayne",
   "website_url": "https://raynenutrition.com",
-  "scraped_at": "2026-03-03T23:37:53.932046+00:00",
+  "scraped_at": "2026-03-08T16:26:01.474293+00:00",
   "scraper_version": "0.1.0",
   "stats": {
     "product_count": 24,
@@ -9,10 +9,9 @@
       "vet": 24
     },
     "by_type": {
-      "dry": 7,
-      "treats": 7,
-      "wet": 9,
-      "supplements": 1
+      "food": 16,
+      "treat": 7,
+      "supplement": 1
     }
   },
   "products": [
@@ -22,7 +21,8 @@
       "sub_brand": "Rayne Clinical Nutrition",
       "url": "https://raynenutrition.com/products/crocodilia-maint-canine-bag",
       "channel": "vet",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "ingredients_raw": "Dried chickpeas, alligator, dried peas, potato flour, pea protein, natural flavor, sunflower oil, (preserved with mixed tocopherols), coconut oil, calcium carbonate, marine microalgae, fructooligosaccharides, salt, dicalcium phosphate, vitamins, dl-methionine, choline chloride, minerals, taurine, mixed tocopherols, rosemary extract.",
       "guaranteed_analysis": {
         "crude_protein_min": 20.9,
@@ -35,7 +35,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3524 kcal/kg, 378 kcal/cup",
       "images": [
-        "/products/rayne/rayne-dry-crocodilia-maint-dry-dog-food.png"
+        "/products/rayne/rayne-food-crocodilia-maint-dry-dog-food.png"
       ],
       "variants": [
         {
@@ -57,19 +57,19 @@
       "sub_brand": "Rayne Clinical Nutrition",
       "url": "https://raynenutrition.com/products/rabbit-dental-chews-for-dogs",
       "channel": "vet",
-      "product_type": "treats",
+      "product_type": "treat",
+      "product_format": "dry",
       "ingredients_raw": "Dried banana, potato flour, tapioca starch, vegetable glycerine, dried rabbit, natural flavoring, sodium hexametaphosphate, smoke flavor, citric acid, parsley flakes, buffered vinegar.",
       "guaranteed_analysis": {
-        "crude_protein_min": 6.4,
-        "crude_fat_min": 1.3,
-        "crude_fiber_max": 0.0,
-        "calcium_min": 0.2,
-        "phosphorus_min": 0.5
+        "crude_protein_min": 4.0,
+        "crude_fat_min": 0.5,
+        "crude_fiber_max": 2.5,
+        "moisture_max": 30.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "2845 kcal/kg, 43 kcal/treat",
       "images": [
-        "/products/rayne/rayne-treats-rabbit-dental-chews-for-dogs.png"
+        "/products/rayne/rayne-treat-rabbit-dental-chews-for-dogs.png"
       ],
       "variants": [
         {
@@ -91,7 +91,8 @@
       "sub_brand": "Rayne Clinical Nutrition",
       "url": "https://raynenutrition.com/products/rabbit-maint-canine-bag",
       "channel": "vet",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "ingredients_raw": "Rabbit, dried chickpeas, dried potatoes, potato protein, potato flour, natural flavor, coconut oil (preserved with mixed tocopherols), canola oil (preserved with mixed tocopherols), dicalcium phosphate, calcium carbonate, marine microalgae, salt, fructooligosaccharides, choline chloride, vitamins and minerals, taurine, mixed tocopherols, rosemary extract.",
       "guaranteed_analysis": {
         "crude_protein_min": 26.2,
@@ -104,7 +105,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3574 kcal/kg, 380 kcal/cup",
       "images": [
-        "/products/rayne/rayne-dry-rabbit-maint-dry-dog-food.png"
+        "/products/rayne/rayne-food-rabbit-maint-dry-dog-food.png"
       ],
       "variants": [
         {
@@ -126,11 +127,19 @@
       "sub_brand": "Rayne Clinical Nutrition",
       "url": "https://raynenutrition.com/products/rayne-rewards-simple-ingredients-treats-pork",
       "channel": "vet",
-      "product_type": "treats",
+      "product_type": "treat",
+      "product_format": "dry",
       "ingredients_raw": "Pork, cane molasses, sea salt, citric acid (preservative), mixed tocopherols (preservative)",
-      "calorie_content": "40 kcal/treat",
+      "guaranteed_analysis": {
+        "crude_protein_min": 40.0,
+        "crude_fat_min": 23.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 20.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3995 kcal/kg, 40 kcal/treat",
       "images": [
-        "/products/rayne/rayne-treats-pork-jerky-treats-for-dogs-and-cats.png"
+        "/products/rayne/rayne-treat-pork-jerky-treats-for-dogs-and-cats.png"
       ],
       "variants": [
         {
@@ -147,7 +156,8 @@
       "sub_brand": "Rayne Clinical Nutrition",
       "url": "https://raynenutrition.com/products/adult-health-rss-canine-bag",
       "channel": "vet",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "ingredients_raw": "Pork, brown rice, oatmeal, potato flour, pork meal, potato protein, canola oil, tomato pomace, dried pork liver, natural flavor, salt, marine microalgae, dl-methionine, potassium citrate, vitamins, choline chloride, minerals, mixed tocopherols, taurine, rosemary extract.",
       "guaranteed_analysis": {
         "crude_protein_min": 22.5,
@@ -160,7 +170,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3556 kcal/kg, 391 kcal/cup",
       "images": [
-        "/products/rayne/rayne-dry-adult-health-rss-dry-dog-food.png"
+        "/products/rayne/rayne-food-adult-health-rss-dry-dog-food.png"
       ],
       "variants": [
         {
@@ -182,11 +192,22 @@
       "sub_brand": "Rayne Clinical Nutrition",
       "url": "https://raynenutrition.com/products/plant-based-fresh-roll-for-dogs",
       "channel": "vet",
-      "product_type": "wet",
+      "product_type": "food",
+      "product_format": "wet",
       "ingredients_raw": "Garbanzo beans, vegetable broth, pea flour, water, dried miscanthus grass, millet, fava bean protein, salt, fava beans, brown rice, calcium carbonate, canola oil, vegetable glycerin, sunflower lecithin, hickory flavor, minerals/vitamins (zinc proteinate, vitamin E supplement, iron proteinate, ferrous sulfate, biotin, copper proteinate, sodium selenite, niacin, D-calcium pantothenate, manganous oxide, riboflavin, vitamin A acetate, thiamine mononitrate, vitamin B12 supplement, pyridoxine hydrochlordie, calcium iodate, vitamin D3 supplement, folic acid), hickory flavor, natural flavor, celery seed powder, fructooligosaccharides, brewers yeast, EDTA, potassium sorbate, sodium benzoate, seasoning, sodium erythrobate.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 15.5,
+        "crude_fat_min": 7.9,
+        "crude_fiber_max": 6.4,
+        "calcium_min": 0.8,
+        "phosphorus_min": 0.38,
+        "potassium_min": 0.75,
+        "sodium_min": 1.1
+      },
+      "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "2500 kcal/kg",
       "images": [
-        "/products/rayne/rayne-wet-plant-based-dog-food-roll.png"
+        "/products/rayne/rayne-food-plant-based-dog-food-roll.png"
       ],
       "variants": [
         {
@@ -203,11 +224,22 @@
       "sub_brand": "Rayne Clinical Nutrition",
       "url": "https://raynenutrition.com/products/rabbit-fresh-roll-for-dogs",
       "channel": "vet",
-      "product_type": "wet",
+      "product_type": "food",
+      "product_format": "wet",
       "ingredients_raw": "Rabbit, sweet potatoes, garbanzo beans, dried miscanthus grass, water, salt, fava bean protein, brown rice, calcium carbonate, canola oil, vegetable glycerin, sunflower lecithin, dicalcium phosphate, taurine, minerals/vitamins: (zinc proteinate, vitamin E supplement, iron proteinate, ferrous sulfate, biotin, copper proteinate, sodium selenite, niacin, D-calcium pantothenate, manganous oxide, riboflavin, vitamin A acetate, thiamine mononitrate, vitamin B12 supplement, pyridoxine hydrochlordie, calcium iodate, vitamin D3 supplement, folic acid), hickory flavor, natural flavor, celery seed powder, fructoolligosaccharide, brewers yeast, EDTA, potassium sorbate, sodium benzoate, seasoning, sodium erythrobate.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 13.9,
+        "crude_fat_min": 9.7,
+        "crude_fiber_max": 4.07,
+        "calcium_min": 0.75,
+        "phosphorus_min": 0.4,
+        "potassium_min": 0.79,
+        "sodium_min": 1.19
+      },
+      "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "2200 kcal/kg",
       "images": [
-        "/products/rayne/rayne-wet-rabbit-dog-food-roll.png"
+        "/products/rayne/rayne-food-rabbit-dog-food-roll.png"
       ],
       "variants": [
         {
@@ -224,11 +256,12 @@
       "sub_brand": "Rayne Clinical Nutrition",
       "url": "https://raynenutrition.com/products/rabbit-diag-dual-species-freeze-dried",
       "channel": "vet",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "ingredients_raw": "Rabbit, sweet potato flour, salt, mixed tocopherols, taurine, rosemary extract.",
       "calorie_content": "4156 kcal/kg, 192 kcal/cup",
       "images": [
-        "/products/rayne/rayne-dry-rabbit-diag-freeze-dried-food-for-dogs-and-cats.png"
+        "/products/rayne/rayne-food-rabbit-diag-freeze-dried-food-for-dogs-and-cats.png"
       ],
       "variants": [
         {
@@ -245,7 +278,8 @@
       "sub_brand": "Rayne Clinical Nutrition",
       "url": "https://raynenutrition.com/products/rayne-rewards-kangaroo-dental-chews",
       "channel": "vet",
-      "product_type": "treats",
+      "product_type": "treat",
+      "product_format": "dry",
       "ingredients_raw": "Dried banana, potato flour, tapioca starch, vegetable glycerine, dried kangaroo, natural flavoring, sodium hexametaphosphate, smoke flavor, citric acid, parsley flakes, buffered vinegar.",
       "guaranteed_analysis": {
         "crude_protein_min": 7.3,
@@ -257,7 +291,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3900 kcal/kg, 60 kcal/treat",
       "images": [
-        "/products/rayne/rayne-treats-kangaroo-dental-chews-for-dogs.png"
+        "/products/rayne/rayne-treat-kangaroo-dental-chews-for-dogs.png"
       ],
       "variants": [
         {
@@ -279,7 +313,8 @@
       "sub_brand": "Rayne Clinical Nutrition",
       "url": "https://raynenutrition.com/products/crocodilia-maint-canine-cans-1",
       "channel": "vet",
-      "product_type": "wet",
+      "product_type": "food",
+      "product_format": "wet",
       "ingredients_raw": "Water, alligator, dried potatoes, potato protein, dried sweet potatoes, potato starch, natural flavor, miscanthus grass, sunflower oil, dried celery, agar-agar, potassium chloride, marine microalgae oil, inulin, minerals, choline chloride, salt, taurine, vitamins.",
       "guaranteed_analysis": {
         "crude_protein_min": 7.0,
@@ -292,7 +327,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "994 kcal/kg, 367 kcal/can",
       "images": [
-        "/products/rayne/rayne-wet-crocodilia-maint-canned-pat-dog-food.png"
+        "/products/rayne/rayne-food-crocodilia-maint-canned-pat-dog-food.png"
       ],
       "variants": [
         {
@@ -304,16 +339,24 @@
       "source_id": "7742726635675"
     },
     {
-      "name": "WellStride Turkey with Blueberries Treats For Dogs",
+      "name": "Well Stride Turkey with Blueberries Treats For Dogs",
       "brand": "Rayne",
       "sub_brand": "Rayne Clinical Nutrition",
       "url": "https://raynenutrition.com/products/wellstride-treats-turkey-blueberries",
       "channel": "vet",
-      "product_type": "treats",
+      "product_type": "treat",
+      "product_format": "dry",
       "ingredients_raw": "Turkey, rice, gelatin, cane molasses, glycerine, marine algae, tomato pomace, blueberries, calcium carbonate, spinach, flaxseed, sunflower oil, potassium citrate, fructooligosaccharides, choline chloride, L-carnitine, mixed tocopherols, taurine, salt, vitamins, minerals, rosemary extract.",
-      "calorie_content": "6 kcal/treat",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 10.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 20.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3256 kcal/kg, 6 kcal/treat",
       "images": [
-        "/products/rayne/rayne-treats-wellstride-turkey-with-blueberries-treats-for-dogs.png"
+        "/products/rayne/rayne-treat-well-stride-turkey-with-blueberries-treats-for-dogs.png"
       ],
       "variants": [
         {
@@ -330,11 +373,12 @@
       "sub_brand": "Rayne Clinical Nutrition",
       "url": "https://raynenutrition.com/products/rabbit-diag-dual-species-cans-1",
       "channel": "vet",
-      "product_type": "wet",
+      "product_type": "food",
+      "product_format": "wet",
       "ingredients_raw": "Rabbit, water, potato starch, sunflower oil, dried celery, agar-agar, salt, taurine.",
       "calorie_content": "1051 kcal/kg, 388 kcal/can",
       "images": [
-        "/products/rayne/rayne-wet-rabbit-diag-canned-pat-for-dogs-and-cats.png"
+        "/products/rayne/rayne-food-rabbit-diag-canned-pat-for-dogs-and-cats.png"
       ],
       "variants": [
         {
@@ -351,11 +395,12 @@
       "sub_brand": "Rayne Clinical Nutrition",
       "url": "https://raynenutrition.com/products/rabbit-meatballs",
       "channel": "vet",
-      "product_type": "treats",
+      "product_type": "treat",
+      "product_format": "wet",
       "ingredients_raw": "Rabbit, pea flour, pinto bean flour, pea protein, salt, honey.",
       "calorie_content": "25 kcal/treat",
       "images": [
-        "/products/rayne/rayne-treats-rabbit-meatballs-for-dogs.png"
+        "/products/rayne/rayne-treat-rabbit-meatballs-for-dogs.png"
       ],
       "variants": [
         {
@@ -372,11 +417,12 @@
       "sub_brand": "Rayne Clinical Nutrition",
       "url": "https://raynenutrition.com/products/kangaroo-meatballs",
       "channel": "vet",
-      "product_type": "treats",
+      "product_type": "treat",
+      "product_format": "wet",
       "ingredients_raw": "Kangaroo, pinto bean flour, pea flour, pea protein, salt, honey, L-ascorbyl-2-polyphosphate (source of vitamin C).",
       "calorie_content": "22 kcal/treat",
       "images": [
-        "/products/rayne/rayne-treats-kangaroo-meatballs-for-dogs.png"
+        "/products/rayne/rayne-treat-kangaroo-meatballs-for-dogs.png"
       ],
       "variants": [
         {
@@ -393,11 +439,19 @@
       "sub_brand": "Rayne Clinical Nutrition",
       "url": "https://raynenutrition.com/products/kangaroo-liver-treats",
       "channel": "vet",
-      "product_type": "treats",
+      "product_type": "treat",
+      "product_format": "dry",
       "ingredients_raw": "Kangaroo liver.",
-      "calorie_content": "1 kcal/treat",
+      "guaranteed_analysis": {
+        "crude_protein_min": 65.0,
+        "crude_fat_min": 10.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 5.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3756 kcal/kg, 1 kcal/treat",
       "images": [
-        "/products/rayne/rayne-treats-kangaroo-freeze-dried-treats-for-dogs-and-cats.png"
+        "/products/rayne/rayne-treat-kangaroo-freeze-dried-treats-for-dogs-and-cats.png"
       ],
       "variants": [
         {
@@ -414,11 +468,12 @@
       "sub_brand": "Rayne Clinical Nutrition",
       "url": "https://raynenutrition.com/products/kangaroo-diag-dual-species-freeze-dried",
       "channel": "vet",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "ingredients_raw": "Kangaroo, sweet potato flour, kangaroo liver, salt, mixed tocopherols, taurine, rosemary extract.",
       "calorie_content": "3521 kcal/kg, 176 kcal/cup",
       "images": [
-        "/products/rayne/rayne-dry-kangaroo-diag-freeze-dried-food-for-dogs-and-cats.png"
+        "/products/rayne/rayne-food-kangaroo-diag-freeze-dried-food-for-dogs-and-cats.png"
       ],
       "variants": [
         {
@@ -435,7 +490,8 @@
       "sub_brand": "Rayne Clinical Nutrition",
       "url": "https://raynenutrition.com/products/low-fat-kangaroo-maint-canine-cans-1",
       "channel": "vet",
-      "product_type": "wet",
+      "product_type": "food",
+      "product_format": "wet",
       "ingredients_raw": "Kangaroo, water, dried sweet potatoes, kangaroo liver, dried potatoes, sunflower oil, agar-agar, dried celery, inulin, potassium chloride, salt, calcium carbonate, choline chloride, taurine, vitamins, minerals.",
       "guaranteed_analysis": {
         "crude_protein_min": 11.2,
@@ -446,9 +502,9 @@
         "taurine_min": 0.05
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "860 kcal/kg, 317 kcal/can",
+      "calorie_content": "850 kcal/kg, 314 kcal/can",
       "images": [
-        "/products/rayne/rayne-wet-low-fat-kangaroo-maint-canned-pat-dog-food.png"
+        "/products/rayne/rayne-food-low-fat-kangaroo-maint-canned-pat-dog-food.png"
       ],
       "variants": [
         {
@@ -465,7 +521,8 @@
       "sub_brand": "Rayne Clinical Nutrition",
       "url": "https://raynenutrition.com/products/plant-based-canine-chunky-stew",
       "channel": "vet",
-      "product_type": "wet",
+      "product_type": "food",
+      "product_format": "wet",
       "ingredients_raw": "Water, potato protein, sweet potato, dried chickpeas, fava bean protein, quinoa, potatoes, bell peppers, broccoli, black beans, potato starch, green beans, coconut oil, peas, dicalcium phosphate, pumpkin, millet, marine microalgae, natural flavoring, sunflower oil, salt, celery powder, l-threonine, fructooligosaccharide, flaxseed, calcium carbonate, vitamins, l-tryptophan, minerals, DL-methionine, taurine, l-carnitine, choline chloride, l-arginine, mixed tocopherols, rosemary extract.",
       "guaranteed_analysis": {
         "crude_protein_min": 8.2,
@@ -478,7 +535,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "1030 kcal/kg, 365 kcal/box",
       "images": [
-        "/products/rayne/rayne-wet-plant-based-chunky-stew-dog-food.png"
+        "/products/rayne/rayne-food-plant-based-chunky-stew-dog-food.png"
       ],
       "variants": [
         {
@@ -490,12 +547,13 @@
       "source_id": "7645892051099"
     },
     {
-      "name": "EcoDerm-BSFL Dry Dog Food",
+      "name": "Eco Derm-BSFL Dry Dog Food",
       "brand": "Rayne",
       "sub_brand": "Rayne Clinical Nutrition",
       "url": "https://raynenutrition.com/products/ecoderm-bsfl-canine-bag-1",
       "channel": "vet",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "ingredients_raw": "Dried black soldier fly larvae, quinoa, oats, millet, fava bean, fava protein, coconut oil, natural flavor, flaxseed, blueberry fiber, dried pumpkin, dicalcium phosphate, calcium carbonate, marine microalgae oil, salt, threonine, fructooligosaccharide, DL-methionine, choline chloride, minerals, taurine, vitamins, L-carnitine, tryptophan, mixed tocopherols, rosemary extract.",
       "guaranteed_analysis": {
         "crude_protein_min": 23.0,
@@ -508,7 +566,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3494 kcal/kg, 252 kcal/cup",
       "images": [
-        "/products/rayne/rayne-dry-ecoderm-bsfl-dry-dog-food.png"
+        "/products/rayne/rayne-food-eco-derm-bsfl-dry-dog-food.png"
       ],
       "variants": [
         {
@@ -525,7 +583,8 @@
       "sub_brand": "Rayne Clinical Nutrition",
       "url": "https://raynenutrition.com/products/skin-relief-canine-bag",
       "channel": "vet",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "ingredients_raw": "White Fish, oat groats, millet, potato protein, white fish meal, quinoa, tapioca starch, natural flavors, blueberry fiber, dried pumpkin, flaxseed, brewer’s dried yeast, miscanthus grass, sunflower oil, dicalcium phosphate, coconut oil, potassium chloride, marine microalgae oil, calcium carbonate, Dl-methionine, choline chloride, minerals, fructooligosaccharide, vitamins, L-carnitine, taurine, salt, mixed tocopherols, rosemary extract.",
       "guaranteed_analysis": {
         "crude_protein_min": 30.5,
@@ -539,7 +598,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3295 kcal/kg, 310 kcal/cup",
       "images": [
-        "/products/rayne/rayne-dry-skin-relief-dry-dog-food.png"
+        "/products/rayne/rayne-food-skin-relief-dry-dog-food.png"
       ],
       "variants": [
         {
@@ -561,7 +620,8 @@
       "sub_brand": "Rayne Clinical Nutrition",
       "url": "https://raynenutrition.com/products/rabbit-maint-canine-cans-1",
       "channel": "vet",
-      "product_type": "wet",
+      "product_type": "food",
+      "product_format": "wet",
       "ingredients_raw": "Rabbit, water, potato starch, agar-agar, dicalcium phosphate, dried celery, marine microalgae oil, inulin, potassium chloride, tricalcium phosphate, sunflower oil, salt, choline chloride, taurin, vitamins and minerals.",
       "guaranteed_analysis": {
         "crude_protein_min": 9.2,
@@ -572,9 +632,9 @@
         "taurine_min": 0.08
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "1027 kcal/kg, 379 kcal/can",
+      "calorie_content": "940 kcal/kg, 347 kcal/can",
       "images": [
-        "/products/rayne/rayne-wet-rabbit-maint-canned-pat-dog-food.png"
+        "/products/rayne/rayne-food-rabbit-maint-canned-pat-dog-food.png"
       ],
       "variants": [
         {
@@ -586,16 +646,17 @@
       "source_id": "7607149822107"
     },
     {
-      "name": "WellStride Good Gravy Veggie Topper for Dogs",
+      "name": "Well Stride Good Gravy Veggie Topper for Dogs",
       "brand": "Rayne",
       "sub_brand": "Rayne Clinical Nutrition",
       "url": "https://raynenutrition.com/products/good-gravy-veggie",
       "channel": "vet",
-      "product_type": "supplements",
+      "product_type": "supplement",
+      "product_format": "wet",
       "ingredients_raw": "Water, sweet potato, pumpkin seed, pineapple, pumpkin, tomato, natural flavor, spinach, glycine, chia, calcium lactate, guar gum, xylose, choline chloride, vitamin and mineral mixture.",
       "calorie_content": "540 kcal/kg, 22 kcal/pouch",
       "images": [
-        "/products/rayne/rayne-supplements-wellstride-good-gravy-veggie-topper-for-dogs.png"
+        "/products/rayne/rayne-supplement-well-stride-good-gravy-veggie-topper-for-dogs.png"
       ],
       "variants": [
         {
@@ -612,7 +673,8 @@
       "sub_brand": "Rayne Clinical Nutrition",
       "url": "https://raynenutrition.com/products/rabbit-maint-canine-stew",
       "channel": "vet",
-      "product_type": "wet",
+      "product_type": "food",
+      "product_format": "wet",
       "ingredients_raw": "Rabbit, water, sweet potatoes, red peppers, tapioca starch, celery powder, marine microalgae, monosodium phosphate, fructooligosaccharides, vitamins and minerals, salt, sunflower oil, choline chloride, taurine.",
       "guaranteed_analysis": {
         "crude_protein_min": 7.0,
@@ -625,7 +687,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "1040 kcal/kg, 368 kcal/box",
       "images": [
-        "/products/rayne/rayne-wet-rabbit-maint-chunky-stew-dog-food.png"
+        "/products/rayne/rayne-food-rabbit-maint-chunky-stew-dog-food.png"
       ],
       "variants": [
         {
@@ -642,11 +704,12 @@
       "sub_brand": "Rayne Clinical Nutrition",
       "url": "https://raynenutrition.com/products/kangaroo-diag-dual-species-chunky-stew",
       "channel": "vet",
-      "product_type": "wet",
+      "product_type": "food",
+      "product_format": "wet",
       "ingredients_raw": "Kangaroo, Water, Tapioca Starch, Salt, Taurine.",
       "calorie_content": "627 kcal/kg, 222 kcal/box",
       "images": [
-        "/products/rayne/rayne-wet-kangaroo-diag-chunky-stew-for-dogs-and-cats.png"
+        "/products/rayne/rayne-food-kangaroo-diag-chunky-stew-for-dogs-and-cats.png"
       ],
       "variants": [
         {

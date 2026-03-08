@@ -181,11 +181,62 @@ def _parse_ingredients(soup: BeautifulSoup) -> str | None:
 
 
 def _parse_ga(soup: BeautifulSoup) -> GuaranteedAnalysis | None:
-    """Parse GA from HTML table."""
+    """Parse GA from HTML table or analysis list.
+
+    Acana/Orijen pages use two formats:
+    - Master product pages: <table> with GA rows (rare on acana.com)
+    - SKU pages: <div class="analysis"> with <ul>/<li> items
+    """
+    # Strategy 1: HTML table
     for table in soup.find_all("table"):
         table_text = table.get_text().lower()
         if "crude protein" in table_text or "crude fat" in table_text:
             return parse_ga_html_table(str(table))
+
+    # Strategy 2: <div class="analysis"> with <ul>/<li>
+    # Two formats exist:
+    #   Wet/pâté: "Crude protein (min.)  8%" — has qualifier
+    #   Dry/kibble: "Crude protein  29%" — no qualifier
+    #   Dry also uses "Fat content" instead of "Crude fat"
+    analysis_div = soup.find("div", class_="analysis")
+    if analysis_div:
+        ga: GuaranteedAnalysis = {}
+        for li in analysis_div.find_all("li"):
+            li_text = li.get_text(strip=True)
+            if not li_text:
+                continue
+            # Extract nutrient name and percentage value
+            m = re.match(
+                r"(.+?)\s*(?:\((?:min|max)\.?\))?\s*(\d+\.?\d*)\s*%",
+                li_text,
+                re.IGNORECASE,
+            )
+            if not m:
+                continue
+            nutrient = clean_text(m.group(1)).lower()
+            value = float(m.group(2))
+            # Determine qualifier from text or infer from nutrient type
+            if "(min" in li_text.lower():
+                qualifier = "min"
+            elif "(max" in li_text.lower():
+                qualifier = "max"
+            elif "moisture" in nutrient or "fiber" in nutrient or "fibre" in nutrient or "ash" in nutrient:
+                qualifier = "max"
+            else:
+                qualifier = "min"
+
+            entry = {"value": value, "unit": "%", "qualifier": qualifier}
+            if "crude protein" in nutrient or nutrient == "protein":
+                ga["crude_protein"] = entry
+            elif nutrient in ("crude fat", "fat content", "fat"):
+                ga["crude_fat"] = entry
+            elif "crude fiber" in nutrient or "crude fibre" in nutrient:
+                ga["crude_fiber"] = entry
+            elif "moisture" in nutrient:
+                ga["moisture"] = entry
+        if ga:
+            return ga
+
     return None
 
 
@@ -205,6 +256,25 @@ def _parse_calorie_content(soup: BeautifulSoup) -> str | None:
         r"(\d[\d,]*)\s*(?:kcal|cal|mg)/kg"
         r".*?"
         r"(\d+)\s*(?:kcal|cal)/\s*(?:[\d/]+\s*g?\s*)?(?:cup|can|treat)",
+        text,
+        re.IGNORECASE | re.DOTALL,
+    )
+    if cal_match:
+        return normalize_calorie_content(cal_match.group(0))
+
+    # Alternate format: "3510 kcal/kg (421 kcal per 250ml/120g cup)"
+    # or: "1127 kcal/kg ( 409 Kcal per 363 g)"
+    cal_match = re.search(
+        r"(\d[\d,]*)\s*kcal/kg\s*\(\s*(\d+)\s*kcal\s+per\s+[^)]*\)",
+        text,
+        re.IGNORECASE,
+    )
+    if cal_match:
+        return normalize_calorie_content(cal_match.group(0))
+
+    # Treat format: "5520 kcal/kg or 5 kcal per individual treat"
+    cal_match = re.search(
+        r"(\d[\d,]*)\s*kcal/kg\s+or\s+(\d+)\s*kcal\s+per\s+(?:\w+\s+)?treat",
         text,
         re.IGNORECASE,
     )
@@ -248,6 +318,30 @@ def _detect_sub_brand(name: str, brand: str) -> str | None:
         if keyword in name_lower:
             return sub_brand
     return None
+
+
+def _detect_type(url: str, name: str) -> str:
+    """Detect product type: food or treat."""
+    combined = f"{url} {name}".lower()
+    if "treat" in combined or "snack" in combined:
+        return "treat"
+    return "food"
+
+
+def _detect_format(url: str, name: str) -> str:
+    """Detect product format: dry or wet."""
+    combined = f"{url} {name}".lower()
+    if (
+        "wet" in combined
+        or "stew" in combined
+        or "canned" in combined
+        or re.search(r"\bcan\b", combined)
+        or "pâté" in combined
+        or "pate" in combined
+        or "chunks" in combined
+    ):
+        return "wet"
+    return "dry"
 
 
 def _parse_images(soup: BeautifulSoup) -> list[str]:
@@ -312,7 +406,26 @@ def _parse_images(soup: BeautifulSoup) -> list[str]:
     return images
 
 
-def _parse_product(url: str, html: str, brand: str) -> Product | None:
+def _get_canonical_url(soup: BeautifulSoup, base_url: str) -> str | None:
+    """Extract canonical URL from a product page.
+
+    Demandware master pages link to SKU-specific canonical URLs that contain
+    the full nutritional data (GA, calories) not present on the master page.
+    """
+    link = soup.find("link", rel="canonical")
+    if link and isinstance(link, Tag):
+        href = link.get("href", "")
+        if isinstance(href, str) and href:
+            if href.startswith("/"):
+                return f"{base_url}{href}"
+            if href.startswith("http"):
+                return href
+    return None
+
+
+def _parse_product(
+    url: str, html: str, brand: str, session: SyncSession, base_url: str
+) -> Product | None:
     """Parse a product page."""
     soup = BeautifulSoup(html, "lxml")
 
@@ -332,35 +445,13 @@ def _parse_product(url: str, html: str, brand: str) -> Product | None:
         "brand": brand.title(),
         "url": url,
         "channel": "retail",
-        "product_type": "dry",
+        "product_type": _detect_type(url, name),
+        "product_format": _detect_format(url, name),
     }
-
-    # Detect product type from title/URL
-    combined = f"{url} {name}".lower()
-    if (
-        "wet" in combined
-        or "stew" in combined
-        or "canned" in combined
-        or re.search(r"\bcan\b", combined)
-        or "pâté" in combined
-        or "pate" in combined
-        or "chunks" in combined
-    ):
-        product["product_type"] = "wet"
-    elif "treat" in combined or "snack" in combined:
-        product["product_type"] = "treats"
-    elif "freeze" in combined and "dry" in combined:
-        product["product_type"] = "dry"
 
     sub_brand = _detect_sub_brand(name, brand)
     if sub_brand:
         product["sub_brand"] = sub_brand
-        # Strip sub_brand prefix when redundant (e.g. "Singles, Duck..." → "Duck...")
-        for prefix in [f"{sub_brand}, ", f"{sub_brand.upper()}, "]:
-            if name.startswith(prefix):
-                name = name[len(prefix):]
-                product["name"] = name
-                break
 
     ingredients = _parse_ingredients(soup)
     if ingredients:
@@ -374,6 +465,24 @@ def _parse_product(url: str, html: str, brand: str) -> Product | None:
     cal = _parse_calorie_content(soup)
     if cal:
         product["calorie_content"] = cal
+
+    # If GA or calories missing, try the canonical (SKU) URL which has full data
+    if not ga or not cal:
+        canonical = _get_canonical_url(soup, base_url)
+        if canonical and canonical != url:
+            logger.info(f"    Fetching canonical URL for GA/calories: {canonical}")
+            resp = session.get(canonical)
+            if resp.ok:
+                sku_soup = BeautifulSoup(resp.text, "lxml")
+                if not ga:
+                    ga = _parse_ga(sku_soup)
+                    if ga:
+                        product["guaranteed_analysis"] = ga
+                        product["guaranteed_analysis_basis"] = "as-fed"
+                if not cal:
+                    cal = _parse_calorie_content(sku_soup)
+                    if cal:
+                        product["calorie_content"] = cal
 
     images = _parse_images(soup)
     if images:
@@ -399,7 +508,7 @@ def scrape_acana(output_dir: Path) -> int:
                 if not resp.ok:
                     logger.warning(f"  Failed: {resp.status_code}")
                     continue
-                product = _parse_product(url, resp.text, brand)
+                product = _parse_product(url, resp.text, brand, session, base_url)
                 if product:
                     all_products.append(product)
 

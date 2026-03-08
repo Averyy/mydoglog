@@ -127,6 +127,8 @@ export interface IngredientScore {
   distinctProductCount: number
   crossReactivityGroup?: string
   crossReactivityWarning?: string
+  /** When GI-merged from multiple forms, shows per-form scores. */
+  formBreakdown?: { key: string; weightedPoopScore: number | null; weightedItchScore: number | null; dayCount: number }[]
 }
 
 export interface IngredientProductEntry {
@@ -264,6 +266,6 @@ export interface CorrelationInput {
   planPeriods: PlanPeriod[]
   backfills: RawBackfill[]
   crossReactivityGroups: CrossReactivityGroup[]
-  /** Product ID → product info (type + calorie content). Used for gram estimation. */
-  productInfo: Map<string, { type: string; calorieContent: string | null }>
+  /** Product ID → product info (type + format + calorie content). Used for gram estimation. */
+  productInfo: Map<string, { type: string; format: string; calorieContent: string | null }>
 }

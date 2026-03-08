@@ -109,33 +109,21 @@ class TestParseIngredients:
 
 
 class TestProductTypeMapping:
-    def test_dry_maps_to_dry_food(self) -> None:
-        assert PRODUCT_TYPE_MAP["dry"] == "dry_food"
+    def test_food_passthrough(self) -> None:
+        assert PRODUCT_TYPE_MAP["food"] == "food"
 
-    def test_wet_maps_to_wet_food(self) -> None:
-        assert PRODUCT_TYPE_MAP["wet"] == "wet_food"
+    def test_treat_passthrough(self) -> None:
+        assert PRODUCT_TYPE_MAP["treat"] == "treat"
 
-    def test_treats_maps_to_treat(self) -> None:
-        assert PRODUCT_TYPE_MAP["treats"] == "treat"
-
-    def test_supplements_maps_to_supplement(self) -> None:
-        assert PRODUCT_TYPE_MAP["supplements"] == "supplement"
-
-    def test_whole_food_passthrough(self) -> None:
-        assert PRODUCT_TYPE_MAP["whole_food"] == "whole_food"
-
-    def test_dry_food_passthrough(self) -> None:
-        assert PRODUCT_TYPE_MAP["dry_food"] == "dry_food"
+    def test_supplement_passthrough(self) -> None:
+        assert PRODUCT_TYPE_MAP["supplement"] == "supplement"
 
     def test_unknown_type_returns_none(self) -> None:
         assert PRODUCT_TYPE_MAP.get("mystery") is None
 
     def test_all_db_types_covered(self) -> None:
         """Every valid DB enum value should appear in the map's values."""
-        db_types = {
-            "dry_food", "wet_food", "treat", "topper",
-            "supplement", "probiotic", "freeze_dried", "whole_food",
-        }
+        db_types = {"food", "treat", "supplement"}
         mapped_values = set(PRODUCT_TYPE_MAP.values())
         assert mapped_values == db_types
 
@@ -406,7 +394,8 @@ class TestUpsertIdempotency:
 
         product = {
             "name": "Test Food",
-            "product_type": "dry",
+            "product_type": "food",
+            "product_format": "dry",
             "channel": "retail",
         }
         upsert_product(cur, "brand-id-1", product, "test.json", "2026-03-02T00:00:00Z")
@@ -441,7 +430,8 @@ class TestLoadBrandFile:
                 {
                     "name": "Test Kibble",
                     "brand": "TestBrand",
-                    "product_type": "dry",
+                    "product_type": "food",
+                    "product_format": "dry",
                     "channel": "retail",
                     "ingredients_raw": "Chicken, Rice, Peas",
                     "life_stage": "adult",
@@ -492,7 +482,8 @@ class TestLoadBrandFile:
                 {
                     "name": "Vitamin Food",
                     "brand": "TestBrand",
-                    "product_type": "dry",
+                    "product_type": "food",
+                    "product_format": "dry",
                     "channel": "retail",
                     "ingredients_raw": "Chicken, Vitamin A Supplement, Mixed Tocopherols for freshness.",
                 }
@@ -537,7 +528,8 @@ class TestLoadBrandFile:
                 {
                     "name": "Boiled Chicken Breast",
                     "brand": "Whole Food",
-                    "product_type": "whole_food",
+                    "product_type": "food",
+                    "product_format": "wet",
                     "channel": "seed",
                     "ingredients_raw": "Chicken",
                 }

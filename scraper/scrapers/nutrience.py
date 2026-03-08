@@ -116,17 +116,24 @@ def _detect_product_line(title: str, url: str) -> str | None:
     return None
 
 
-def _detect_product_type(url: str, title: str) -> str:
-    """Detect product type."""
+def _detect_type(url: str, title: str) -> str:
+    """Detect product type: food, treat, or supplement."""
     combined = f"{url} {title}".lower()
-    if "wet" in combined or "pate" in combined or "stew" in combined or "canned" in combined:
-        return "wet"
     if any(kw in combined for kw in ("treat", "chew", "antler", "biscuit", "jerky")):
-        return "treats"
-    if "topper" in combined or "supplement" in combined:
-        return "supplements"
-    if "freeze-dried" in combined or "freeze dried" in combined:
-        return "dry"
+        return "treat"
+    if any(kw in combined for kw in ("topper", "supplement")):
+        return "supplement"
+    return "food"
+
+
+def _detect_format(url: str, title: str) -> str:
+    """Detect product format: dry or wet."""
+    combined = f"{url} {title}".lower()
+    if any(
+        kw in combined
+        for kw in ("wet", "pâté", "pate", "stew", "canned", "ragu", "topper")
+    ):
+        return "wet"
     return "dry"
 
 
@@ -226,7 +233,15 @@ def _parse_calorie_content(soup: BeautifulSoup) -> str | None:
     # Broader calorie search
     match = re.search(r"calorie.*?(\d[\d,]*\s*kcal.*?)(?:\n|$)", text, re.IGNORECASE)
     if match:
-        return normalize_calorie_content(match.group(1))
+        result = normalize_calorie_content(match.group(1))
+        if result:
+            return result
+
+    # Fallback: kcal/100g (e.g. milk replacer powder) — convert to kcal/kg
+    match_100g = re.search(r"(\d[\d,]*)\s*kcal\s*/\s*100\s*g", text, re.IGNORECASE)
+    if match_100g:
+        kcal_per_kg = int(float(match_100g.group(1).replace(",", "")) * 10)
+        return f"{kcal_per_kg} kcal/kg"
 
     return None
 
@@ -246,6 +261,11 @@ def _parse_variants(soup: BeautifulSoup) -> list[Variant]:
             for line in match.group(1).split("\n"):
                 line = line.strip()
                 if not line:
+                    continue
+
+                # Skip lines that describe target dog weight, not product weight
+                # e.g. "For dogs under 14 kg"
+                if re.search(r"for\s+dogs?\s+(?:under|over|up\s+to)", line, re.IGNORECASE):
                     continue
 
                 # Parse weight
@@ -369,20 +389,18 @@ def _parse_product(
     if not name or len(name) < 3:
         return None
 
-    # Product type: prefer API "Food Type" attribute
-    product_type = "dry"
+    # Product type + format: use API "Food Type" attribute for format hints,
+    # but always use name-based detection for type (API attribute is too coarse —
+    # supplements, treats, and toppers all show as "Dry Food" or similar)
+    product_type = _detect_type(url, name)
+    product_format = _detect_format(url, name)
     if wc_product:
         food_type = _get_wc_attribute(wc_product, "Food Type")
         if food_type:
             ft = food_type.lower()
-            if "wet" in ft or "pate" in ft or "stew" in ft:
-                product_type = "wet"
-            elif "treat" in ft:
-                product_type = "treats"
-            elif "topper" in ft or "supplement" in ft:
-                product_type = "supplements"
-    else:
-        product_type = _detect_product_type(url, name)
+            # API format hints are reliable for wet detection
+            if any(kw in ft for kw in ("wet", "pate", "stew")):
+                product_format = "wet"
 
     product: Product = {
         "name": name,
@@ -390,6 +408,7 @@ def _parse_product(
         "url": url,
         "channel": "retail",
         "product_type": product_type,
+        "product_format": product_format,
     }
 
     # Product line: prefer API "Product Line" attribute

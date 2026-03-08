@@ -8,7 +8,8 @@ from scrapers.royalcanin import (
     _parse_images,
     _parse_ingredients,
     _parse_product,
-    _parse_product_type,
+    _parse_format,
+    _parse_type,
     _parse_variants,
     _parse_weight_kg,
 )
@@ -29,18 +30,29 @@ class TestParseChannel:
         assert _parse_channel({}) == "retail"
 
 
-class TestParseProductType:
+class TestParseType:
     def test_dry_food(self) -> None:
-        assert _parse_product_type({"digital_sub_category": {"code": "dry_food"}}) == "dry"
+        assert _parse_type({"digital_sub_category": {"code": "dry_food"}}) == "food"
 
     def test_wet_food(self) -> None:
-        assert _parse_product_type({"digital_sub_category": {"code": "wet_food"}}) == "wet"
+        assert _parse_type({"digital_sub_category": {"code": "wet_food"}}) == "food"
 
     def test_treats_from_family(self) -> None:
-        assert _parse_product_type({"digital_sub_category": {}, "is_treat": True}) == "treats"
+        assert _parse_type({"digital_sub_category": {}, "is_treat": True}) == "treat"
+
+    def test_default_food(self) -> None:
+        assert _parse_type({}) == "food"
+
+
+class TestParseFormat:
+    def test_dry_food(self) -> None:
+        assert _parse_format({"digital_sub_category": {"code": "dry_food"}}) == "dry"
+
+    def test_wet_food(self) -> None:
+        assert _parse_format({"digital_sub_category": {"code": "wet_food"}}) == "wet"
 
     def test_default_dry(self) -> None:
-        assert _parse_product_type({}) == "dry"
+        assert _parse_format({}) == "dry"
 
 
 class TestParseIngredients:
@@ -239,7 +251,7 @@ class TestParseProduct:
         assert product["name"] == "Gastrointestinal Low Fat Dry Dog Food"
         assert product["brand"] == "Royal Canin"
         assert product["channel"] == "vet"
-        assert product["product_type"] == "dry"
+        assert product["product_type"] == "food"
         assert product["source_id"] == "40467"
         assert product["ingredients_raw"] == "Brewers rice, chicken by-product meal"
         assert len(product["images"]) == 1
@@ -253,4 +265,4 @@ class TestParseProduct:
 
         assert product["name"] == "Basic Food"
         assert product["channel"] == "retail"
-        assert product["product_type"] == "dry"
+        assert product["product_type"] == "food"

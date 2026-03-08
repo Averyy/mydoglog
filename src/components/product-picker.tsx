@@ -97,6 +97,8 @@ export function ProductPicker({
   const [failedImages, setFailedImages] = useState<Set<string>>(new Set())
   const listRef = useRef<HTMLDivElement>(null)
   const filterBarRef = useRef<HTMLDivElement>(null)
+  /** True when the user manually clicked a filter chip (skip auto-scroll) */
+  const userClickedFilterRef = useRef(false)
 
   /** Fetch (or re-fetch) products into state from cache/network. */
   function fetchProducts(): void {
@@ -126,6 +128,7 @@ export function ProductPicker({
 
   useEffect(() => {
     if (!open) return
+    userClickedFilterRef.current = false
     if (productType === "treat") {
       setActiveFilter("all")
     } else if (valueRef.current) {
@@ -147,9 +150,9 @@ export function ProductPicker({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [open])
 
-  // Scroll active filter chip to center (RAF ensures DOM has painted)
+  // Scroll active filter chip to center only on auto-select (not manual clicks)
   useEffect(() => {
-    if (!open) return
+    if (!open || userClickedFilterRef.current) return
     const id = requestAnimationFrame(() => {
       const bar = filterBarRef.current
       if (!bar) return
@@ -259,9 +262,9 @@ export function ProductPicker({
   const showRecentChip = !!dogId && recentProductIds.length > 0
 
   /** Show packaging-aware label when possible (e.g. "Can" instead of "Wet food"). */
-  function formatType(type: string | null, calorieContent: string | null): string {
+  function formatType(type: string | null, format: string | null, calorieContent: string | null): string {
     if (!type) return ""
-    if (type === "wet_food") {
+    if (format === "wet") {
       if (calorieContent) {
         const parsed = parseCalorieContent(calorieContent)
         if (parsed.pouch !== undefined) return "Pouch"
@@ -269,7 +272,10 @@ export function ProductPicker({
       }
       return "Can"
     }
-    return PRODUCT_TYPE_LABELS[type] ?? type.replace(/_/g, " ")
+    if (format === "dry" && type === "food") return "Kibble"
+    if (type === "treat") return "Treat"
+    if (type === "supplement") return "Supplement"
+    return PRODUCT_TYPE_LABELS[type] ?? type
   }
 
   function stripBrandPrefix(name: string, brandName: string): string {
@@ -338,7 +344,7 @@ export function ProductPicker({
             <div ref={filterBarRef} className="flex gap-1.5 overflow-x-auto border-b px-2 py-2">
               <button
                 type="button"
-                onClick={() => setActiveFilter("all")}
+                onClick={() => { userClickedFilterRef.current = true; setActiveFilter("all") }}
                 aria-pressed={activeFilter === "all"}
                 {...(activeFilter === "all" ? { "data-active-filter": "" } : {})}
                 className={cn(
@@ -353,7 +359,7 @@ export function ProductPicker({
               {showRecentChip && (
                 <button
                   type="button"
-                  onClick={() => setActiveFilter("recent")}
+                  onClick={() => { userClickedFilterRef.current = true; setActiveFilter("recent") }}
                   aria-pressed={activeFilter === "recent"}
                   {...(activeFilter === "recent" ? { "data-active-filter": "" } : {})}
                   className={cn(
@@ -370,9 +376,10 @@ export function ProductPicker({
                 <button
                   key={brand.id}
                   type="button"
-                  onClick={() =>
+                  onClick={() => {
+                    userClickedFilterRef.current = true
                     setActiveFilter(activeFilter === brand.id ? "all" : brand.id)
-                  }
+                  }}
                   aria-pressed={activeFilter === brand.id}
                   {...(activeFilter === brand.id ? { "data-active-filter": "" } : {})}
                   className={cn(
@@ -454,7 +461,7 @@ export function ProductPicker({
                       </div>
                       {product.type && (
                         <Badge variant="secondary" className="shrink-0 text-[10px]">
-                          {formatType(product.type, product.calorieContent)}
+                          {formatType(product.type, product.format, product.calorieContent)}
                         </Badge>
                       )}
                     </CommandItem>

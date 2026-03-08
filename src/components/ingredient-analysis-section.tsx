@@ -165,7 +165,7 @@ export function IngredientAnalysisSection({
       {signalMode === "stool" ? (
         <div className="rounded-lg bg-muted px-3 py-2.5">
           <p className="text-xs text-muted-foreground leading-relaxed">
-            Ingredient forms (e.g. chicken, chicken fat, chicken oil) are merged. Hydrolyzed proteins are separated. Trace ingredients are hidden.
+            Ingredient forms (e.g. chicken, chicken fat, chicken oil) are merged using the worst score. Hydrolyzed proteins are separated. Trace ingredients are hidden.
           </p>
         </div>
       ) : (

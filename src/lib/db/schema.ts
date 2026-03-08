@@ -17,14 +17,14 @@ import {
 // ---------------------------------------------------------------------------
 
 export const productTypeEnum = pgEnum("product_type", [
-  "dry_food",
-  "wet_food",
+  "food",
   "treat",
-  "topper",
   "supplement",
-  "probiotic",
-  "freeze_dried",
-  "whole_food",
+])
+
+export const productFormatEnum = pgEnum("product_format", [
+  "dry",
+  "wet",
 ])
 
 export const productChannelEnum = pgEnum("product_channel", [
@@ -228,7 +228,8 @@ export const products = pgTable(
       .references(() => brands.id, { onDelete: "cascade" }),
     name: text("name").notNull(),
     description: text("description"),
-    type: productTypeEnum("type"),
+    type: productTypeEnum("type").notNull(),
+    format: productFormatEnum("format").notNull(),
     channel: productChannelEnum("channel"),
     lifestage: text("lifestage"),
     healthTags: text("health_tags").array(),

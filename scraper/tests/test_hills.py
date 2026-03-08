@@ -13,7 +13,8 @@ from scrapers.hills import (
     _parse_health_tags,
     _parse_hills_weight,
     _parse_ingredients,
-    _parse_product_type,
+    _detect_format,
+    _detect_type,
     _supplement_from_us_site,
 )
 
@@ -71,19 +72,31 @@ class TestParseChannel:
         assert _parse_channel(None) == "retail"
 
 
-class TestParseProductType:
+class TestDetectType:
     def test_from_datalayer(self) -> None:
-        assert _parse_product_type({"productForm": "dry"}, "") == "dry"
-        assert _parse_product_type({"productForm": "stew"}, "") == "wet"
-        assert _parse_product_type({"productForm": "canned"}, "") == "wet"
-        assert _parse_product_type({"productForm": "treat"}, "") == "treats"
+        assert _detect_type({"productForm": "dry"}, "") == "food"
+        assert _detect_type({"productForm": "stew"}, "") == "food"
+        assert _detect_type({"productForm": "canned"}, "") == "food"
+        assert _detect_type({"productForm": "treat"}, "") == "treat"
 
     def test_from_url_fallback(self) -> None:
-        assert _parse_product_type({}, "https://hillspet.ca/en-ca/dog-food/treats/something") == "treats"
+        assert _detect_type({}, "https://hillspet.ca/en-ca/dog-food/treats/something") == "treat"
+
+    def test_default_food(self) -> None:
+        assert _detect_type({}, "https://hillspet.ca/en-ca/dog-food/something") == "food"
+        assert _detect_type(None, "") == "food"
+
+
+class TestDetectFormat:
+    def test_from_datalayer(self) -> None:
+        assert _detect_format({"productForm": "dry"}, "") == "dry"
+        assert _detect_format({"productForm": "stew"}, "") == "wet"
+        assert _detect_format({"productForm": "canned"}, "") == "wet"
+        assert _detect_format({"productForm": "treat"}, "") == "dry"
 
     def test_default_dry(self) -> None:
-        assert _parse_product_type({}, "https://hillspet.ca/en-ca/dog-food/something") == "dry"
-        assert _parse_product_type(None, "") == "dry"
+        assert _detect_format({}, "https://hillspet.ca/en-ca/dog-food/something") == "dry"
+        assert _detect_format(None, "") == "dry"
 
 
 class TestParseHealthTags:
@@ -241,7 +254,7 @@ class TestIntegration:
         assert product["name"] == "Prescription Diet i/d Digestive Care Chicken Dry Dog Food"
         assert product["brand"] == "Hill's"
         assert product["channel"] == "vet"
-        assert product["product_type"] == "dry"
+        assert product["product_type"] == "food"
         assert product["sub_brand"] == "Prescription Diet"
         assert "digestive_health" in product["health_tags"]
         assert product["source_id"] == "BK34100"
@@ -262,7 +275,7 @@ class TestIntegration:
         product = _parse_product("https://hillspet.ca/en-ca/dog-food/sd-treat-peanut", html)
         assert product is not None
         assert product["channel"] == "retail"
-        assert product["product_type"] == "treats"
+        assert product["product_type"] == "treat"
         assert product["sub_brand"] == "Science Diet"
 
     def test_parse_product_no_h1_returns_none(self) -> None:

@@ -1749,8 +1749,8 @@ describe("backfill confidence", () => {
         ["prod-supp", suppIngs],
       ]),
       productInfo: new Map([
-        ["prod-food", { type: "dry_food", calorieContent: null }],
-        ["prod-supp", { type: "topper", calorieContent: null }],
+        ["prod-food", { type: "food", format: "dry", calorieContent: null }],
+        ["prod-supp", { type: "supplement", format: "dry", calorieContent: null }],
       ]),
       backfills: [
         {
@@ -1814,8 +1814,8 @@ describe("backfill confidence", () => {
         ["prod-topper", topperIngs],
       ]),
       productInfo: new Map([
-        ["prod-food", { type: "dry_food", calorieContent: null }],
-        ["prod-topper", { type: "topper", calorieContent: null }],
+        ["prod-food", { type: "food", format: "dry", calorieContent: null }],
+        ["prod-topper", { type: "supplement", format: "dry", calorieContent: null }],
       ]),
       backfills: [
         {
@@ -2165,15 +2165,15 @@ describe("mergeScoresForGI", () => {
     expect(corn.distinctProductCount).toBe(4) // sum: 2 + 1 + 1
   })
 
-  it("computes day-count-weighted average for weighted scores", () => {
+  it("uses worst (max) score across forms for elimination diet safety", () => {
     const scores = [
       makeScore({ key: "corn", dayCount: 20, weightedPoopScore: 3.0 }),
       makeScore({ key: "corn (oil)", dayCount: 10, weightedPoopScore: 6.0 }),
     ]
     const merged = mergeScoresForGI(scores)
     const corn = merged.find((s) => s.key === "corn")!
-    // (3.0 * 20 + 6.0 * 10) / (20 + 10) = 120/30 = 4.0
-    expect(corn.weightedPoopScore).toBe(4.0)
+    // worst score wins — 6.0 from corn oil surfaces, not averaged to 4.0
+    expect(corn.weightedPoopScore).toBe(6.0)
   })
 
   it("passes through ambiguous keys unmodified", () => {

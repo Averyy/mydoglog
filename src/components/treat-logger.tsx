@@ -24,6 +24,7 @@ interface LastTreatResponse {
   brandName: string
   brandId: string
   type: string | null
+  format: string | null
   channel: string | null
   lifestage: string | null
   imageUrl: string | null
@@ -98,6 +99,7 @@ export function TreatLoggerContent({
             brandName: last.brandName,
             brandId: last.brandId,
             type: last.type,
+            format: last.format ?? null,
             channel: last.channel,
             lifestage: last.lifestage,
             imageUrl: last.imageUrl,

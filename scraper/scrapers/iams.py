@@ -245,17 +245,27 @@ def _parse_calories(text: str) -> str | None:
     return None
 
 
-def _detect_product_type(url: str, name: str) -> str:
-    """Detect product type from URL path and name."""
+def _detect_type(url: str, name: str) -> str:
+    """Detect product type: food, treat, or supplement."""
     url_lower = url.lower()
     name_lower = name.lower()
 
     if "food-toppers" in url_lower or "supplement" in name_lower or "topper" in name_lower:
-        return "supplements"
-    if "canned-food" in url_lower:
-        return "wet"
+        return "supplement"
     if re.search(r"\btreat", url_lower + " " + name_lower):
-        return "treats"
+        return "treat"
+    return "food"
+
+
+def _detect_format(url: str, name: str) -> str:
+    """Detect product format: dry or wet."""
+    url_lower = url.lower()
+    name_lower = name.lower()
+
+    if "canned-food" in url_lower or "wet" in name_lower:
+        return "wet"
+    if "food-toppers" in url_lower or "topper" in name_lower:
+        return "wet"
     return "dry"
 
 
@@ -334,7 +344,8 @@ def _parse_product(url: str, html: str) -> Product | None:
         "brand": "Iams",
         "url": url,
         "channel": "retail",
-        "product_type": _detect_product_type(url, name),
+        "product_type": _detect_type(url, name),
+        "product_format": _detect_format(url, name),
     }
 
     sub_brand = _detect_sub_brand(name)

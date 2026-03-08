@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge"
 import { ChevronRight } from "lucide-react"
 import { poopScoreColor, itchScoreColor } from "@/components/score-grid"
 import { COMMON_SKIN_TRIGGERS } from "@/lib/ingredients"
-import { PRODUCT_TYPE_LABELS, SUPPLEMENT_PRODUCT_TYPES } from "@/lib/labels"
+import { PRODUCT_TYPE_LABELS, NON_FOOD_TYPES } from "@/lib/labels"
 import { POSITION_LABELS } from "@/lib/food-helpers"
 import type { IngredientScore, IngredientProductEntry } from "@/lib/correlation/types"
 
@@ -155,6 +155,22 @@ export function IngredientRow({
               This ingredient appears split across 3+ positions in some products, suggesting higher total content than any single position implies
             </p>
           )}
+          {score.formBreakdown && score.formBreakdown.length > 1 && (
+            <div className="flex flex-wrap gap-x-4 gap-y-0.5 text-xs text-muted-foreground">
+              {score.formBreakdown.map((form) => (
+                <span key={form.key}>
+                  <span className="capitalize">{form.key.replaceAll("_", " ")}</span>
+                  {": "}
+                  {form.weightedPoopScore != null ? (
+                    <span className={`font-medium ${poopScoreColor(form.weightedPoopScore)}`}>
+                      {form.weightedPoopScore.toFixed(1)}
+                    </span>
+                  ) : "—"}
+                  <span className="text-text-tertiary"> · {form.dayCount}d</span>
+                </span>
+              ))}
+            </div>
+          )}
           {score.distinctProductCount === 1 && totalDistinctProducts > 1 && (
             <p className="text-xs text-muted-foreground">
               Only appeared in one food — score may reflect other ingredients in that food
@@ -178,7 +194,7 @@ export function IngredientRow({
                 {ingredientProducts.map((entry, idx) => (
                   <div key={`${entry.productId}-${entry.formKey ?? idx}`} className="text-xs text-muted-foreground">
                     <span>{entry.brandName} {entry.productName}</span>
-                    {SUPPLEMENT_PRODUCT_TYPES.has(entry.productType) && (
+                    {NON_FOOD_TYPES.has(entry.productType) && (
                       <span className="text-text-tertiary"> · {PRODUCT_TYPE_LABELS[entry.productType] ?? entry.productType}</span>
                     )}{" "}
                     <span className="text-text-tertiary">

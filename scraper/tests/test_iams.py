@@ -2,8 +2,9 @@
 
 from scrapers.iams import (
     _detect_breed_size,
+    _detect_format,
     _detect_life_stage,
-    _detect_product_type,
+    _detect_type,
     _detect_sub_brand,
     _parse_calories,
     _parse_ga,
@@ -11,21 +12,35 @@ from scrapers.iams import (
 )
 
 
-# --- _detect_product_type ---
+# --- _detect_type / _detect_format ---
 
 
-class TestDetectProductType:
-    def test_dry_default(self):
-        assert _detect_product_type("/dog/food/dry-food/iams-foo.html", "Adult Dry Food") == "dry"
+class TestDetectType:
+    def test_dry_is_food(self):
+        assert _detect_type("/dog/food/dry-food/iams-foo.html", "Adult Dry Food") == "food"
 
-    def test_wet_from_url(self):
-        assert _detect_product_type("/dog/food/canned-food/iams-foo.html", "Beef with Rice") == "wet"
+    def test_wet_is_food(self):
+        assert _detect_type("/dog/food/canned-food/iams-foo.html", "Beef with Rice") == "food"
 
     def test_treats(self):
-        assert _detect_product_type("/dog/treats/iams-foo.html", "Dog Treats") == "treats"
+        assert _detect_type("/dog/treats/iams-foo.html", "Dog Treats") == "treat"
 
     def test_supplement(self):
-        assert _detect_product_type("/dog/food/food-toppers/iams-foo.html", "Food Topper") == "supplements"
+        assert _detect_type("/dog/food/food-toppers/iams-foo.html", "Food Topper") == "supplement"
+
+
+class TestDetectFormat:
+    def test_dry_default(self):
+        assert _detect_format("/dog/food/dry-food/iams-foo.html", "Adult Dry Food") == "dry"
+
+    def test_wet_from_url(self):
+        assert _detect_format("/dog/food/canned-food/iams-foo.html", "Beef with Rice") == "wet"
+
+    def test_treats_are_dry(self):
+        assert _detect_format("/dog/treats/iams-foo.html", "Dog Treats") == "dry"
+
+    def test_toppers_are_wet(self):
+        assert _detect_format("/dog/food/food-toppers/iams-foo.html", "Food Topper") == "wet"
 
 
 # --- _detect_life_stage ---

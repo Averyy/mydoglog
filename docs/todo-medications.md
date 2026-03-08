@@ -14,7 +14,7 @@ Research completed 2026-03-06 via 6 parallel agents + 4 audit agents. Scoped to 
 | category | medication_category enum | |
 | drug_class | text nullable | e.g. "isoxazoline", "NSAID" |
 | dosage_form | dosage_form enum | |
-| default_intervals | text[] | Array of dosing_interval values |
+| default_intervals | dosing_interval[] | Array of dosing_interval enum values (typed) |
 | description | text nullable | Standalone, no cross-references |
 | created_at | timestamp | |
 
@@ -30,8 +30,10 @@ four_times_daily, three_times_daily, twice_daily, daily, every_other_day, weekly
 ### Modify `medications` table (user log)
 - Add `medication_product_id` (optional FK -> medication_products.id)
 - Add `interval` (dosing_interval enum, nullable)
-- Add `digestive_impact` (impact enum: better / no_change / worse, nullable) — subjective assessment when stopping a medication
-- Add `itchiness_impact` (impact enum: better / no_change / worse, nullable) — same enum
+- Remove `reason` column — category from `medication_products` replaces it for catalog meds; free-text meds use `notes` for context
+- **Migration: nuke all existing medication records** — will be re-added manually via new Meds page
+
+Note: `digestive_impact` and `itchiness_impact` were proposed but never added to the schema — no columns to drop.
 
 ---
 
@@ -163,15 +165,66 @@ All NSAIDs have GI side effects (vomiting, diarrhea, ulceration) as their primar
 | Pain/NSAID | 9 | GI side effects are #1 safety concern with NSAIDs |
 | Steroid | 1 | Used for both allergies and GI (IBD) |
 
-**Not in catalog (use free-text):** anxiety, cardiac, thyroid, seizure, antibiotic, urinary, and any other medications. The routine editor's existing free-text medication field covers these.
+**Not in catalog (use free-text):** anxiety, cardiac, thyroid, seizure, antibiotic, urinary, and any other medications. The Meds page free-text fallback covers these. Free-text meds only require name + dosage + interval + dates (no category/drug class/dosage form) — keeps it low friction. Tradeoff: free-text meds won't trigger correlation caveats on scorecards.
+
+**Catalog maintenance:** Hand-maintained JSON, not scraped. No single scrapeable veterinary drug database exists. New drug approvals in relevant categories happen ~2-3/year — manual `medications.json` updates are sufficient.
 
 **New dosage_form value:** `collar` added for Seresto.
 
 ---
 
-## Future: Correlation Engine Integration
+## Navigation Changes
 
-Medications are the #1 confounding variable in food → poop/itch correlation. The structured `category` field tells us what each medication impacts:
+**Mobile bottom nav** stays at 5 items: **Home, Food, [Log], Insights, More**
+
+The current Settings nav item becomes **More** — a popover with two options:
+- **Meds** (with active count badge if meds are active)
+- **Settings**
+- Future items (LLM export, sharing, etc.) can be added to the popover later
+
+**Desktop top nav** has room for everything flat: Home, Food, Insights, Meds, Settings.
+
+---
+
+## Meds Page (`/dogs/[id]/meds`)
+
+Dedicated page for medication management. Medications are **completely removed** from the routine editor and daily check-in.
+
+### Layout
+- **Active meds** at top — card list of medications with no `endDate` (ongoing)
+- **Past meds** below — card list of medications with `endDate`, reverse chronological
+- **Add medication** button
+
+### Medication Card
+Same visual pattern as food cards (no picture/stats). Shows:
+- Medication name (from catalog or free-text)
+- Dosage (e.g. "4.25mg")
+- Interval (e.g. "Daily")
+- Start date
+- End date (past meds only)
+- Tap to edit
+
+### Add/Edit Medication
+- **Medication picker**: searchable from catalog (52 meds) + free-text fallback for unlisted meds
+- **Dosage**: free text (e.g. "4.25mg", "1 tablet")
+- **Interval**: dropdown from `dosing_interval` enum (pre-filled from catalog `default_intervals` if picking from catalog)
+- **Start date**: date picker (defaults to today)
+- **End date**: optional date picker (null = ongoing)
+- **Notes**: optional free text
+- **Remove**: sets end date to today (or a picked date) — soft delete, preserves history
+- No reason field — catalog meds derive context from `medication_products.category`, free-text meds use notes
+- No impact assessment — users see the effect in their stool/itch data directly
+
+### History View
+Simple chronological list (like the home page log feed but only meds). Each past med card shows the date range it was active. No timeline visualization initially — just the card list sorted by end date descending.
+
+---
+
+## Correlation Engine — Report Only (No Score Adjustments)
+
+Medications are the #1 confounding variable in food → poop/itch correlation, but actually adjusting scores is impractical: meds that *treat* GI issues vs meds that *cause* GI side effects require opposite adjustments, many dogs are on long-term meds so excluding those days loses most data, and there's no calibration data for weighting. Instead, **report medication context alongside scores** so users can interpret it themselves.
+
+The structured `category` field tells us what each medication impacts:
 
 | Category | Confounds |
 |---|---|
@@ -181,20 +234,67 @@ Medications are the #1 confounding variable in food → poop/itch correlation. T
 | steroid | both poop and itch |
 | parasite | poop scores (some cause GI upset) |
 
-Enhancements:
-- [ ] Flag feeding periods where medications started/stopped — add caveat to correlation results ("medication changed during this period")
-- [ ] Optionally exclude medication-change periods from correlation calculations to avoid false attributions
+**Decision: No calculation changes.** Remove `onDigestiveMedication` / `onItchnessMedication` flags from the correlation engine entirely — they were premature infrastructure that nothing uses. Remove `excludeMedicationPeriods` option too. The engine stops fetching/processing medications. If Phase 5 scorecard caveats are built later, they'll query medications + catalog directly rather than pre-computing per-day flags.
+
+### Reporting enhancements (display-only, future):
+- [ ] On scorecard: show caveat badge when a medication started/stopped during the feeding period (e.g. "GI medication changed" on poop scores, "Allergy medication changed" on itch scores) — uses `medication_products.category` to pick the right caveat
 - [ ] Surface medication timeline alongside poop/itch score charts so users can visually spot medication-driven changes
+
+### Deferred (revisit if needed):
+- Optionally exclude medication-change periods from correlation calculations
+- Weight/discount scores during medication periods
 
 ---
 
 ## Build Steps
 
+### Phase 1: Schema + Seed Data
 - [ ] Create `scraper/data/medications.json` seed file from tables above
-- [ ] Schema changes: new enums (`medication_category`, `dosage_form`, `dosing_interval`) + `medication_products` table + modify `medications` table
+- [ ] Schema changes: new enums (`medication_category`, `dosage_form`, `dosing_interval`) + `medication_products` table + modify `medications` table (add `medication_product_id` FK, `interval`; drop `reason`)
+- [ ] Migration: nuke all existing medication records (will be re-added manually)
 - [ ] `yarn db:generate` + migration
 - [ ] Update `build.py` to load medications seed data
-- [ ] Update routine editor UI to use medication picker (with fallback to free-text for unlisted meds)
-- [ ] Add digestiveImpact + itchinessImpact columns to medications table (reuse existing impact enum)
-- [ ] Show impact assessment prompt when stopping a medication (setting endDate)
-- [ ] Display impact badges on medication cards in routine view
+
+### Phase 2: Remove Meds from Existing UI
+
+**Components:**
+- [ ] `routine-editor.tsx` — remove entire medications section (state, handlers, save logic, render)
+- [ ] `daily-checkin.tsx` — remove medication display from routine accordion, remove `MedicationItem` import
+- [ ] `active-plan-card.tsx` — remove `medications` prop and medication display section
+- [ ] `medication-item.tsx` — keep pill icon, remove reason badge display (uses `MEDICATION_REASON_LABELS`)
+
+**Pages:**
+- [ ] `food/page.tsx` — remove `activeMedications` state and fetch logic, stop passing meds to ActivePlanCard
+- [ ] `food/routine/route.ts` — remove medications from routine API response
+
+**Lib:**
+- [ ] `labels.ts` — remove `MEDICATION_REASON_LABELS`
+- [ ] `types.ts` — update `MedicationSummary` for new schema (add `medicationProductId`, `interval`; drop `reason`), remove `medications` from `RoutineData`
+- [ ] `routine.ts` — remove `getActiveMedicationsForDog()` (will be replaced by Meds page fetch)
+- [ ] `schema.ts` — remove `medicationReasonEnum`, drop `reason` column from medications table
+
+**Correlation engine:**
+- [ ] `correlation/types.ts` — remove `onItchinessMedication`, `onDigestiveMedication` from `DayOutcome`; remove `excludeMedicationPeriods` from options; remove `RawMedication` interface; remove `medications` from `CorrelationInput`
+- [ ] `correlation/engine.ts` — remove medication flag computation (lines ~278-307), remove medication period exclusion logic (lines ~465-466, ~1026-1027), remove medication flags from backfill outcome (lines ~878-879)
+- [ ] `correlation/query.ts` — remove medication fetch query and `medications` import from schema
+- [ ] `correlation/engine.test.ts` — remove "sets medication flags correctly" test, remove "excludes medication periods when option enabled" test, remove `medications: []` from test fixtures, remove `onItchinessMedication`/`onDigestiveMedication` from `emptyOutcome`
+
+**API routes (keep, will be reused by Meds page):**
+- [ ] `api/dogs/[id]/medications/route.ts` — keep, update to remove `reason` field handling
+- [ ] `api/medications/[id]/route.ts` — keep, update to remove `reason` field handling
+
+### Phase 3: Navigation
+- [ ] Rename Settings nav item to "More" on mobile (popover with Meds + Settings)
+- [ ] Add Meds to desktop top nav
+- [ ] Create Meds page route (`/dogs/[id]/meds`)
+
+### Phase 4: Meds Page UI
+- [ ] Medication picker component (searchable catalog + free-text fallback)
+- [ ] Add/edit medication form (responsive modal — drawer on mobile, dialog on desktop)
+- [ ] Active meds card list (reuse pill icon from existing `medication-item.tsx`)
+- [ ] Past meds card list (reverse chronological by end date)
+- [ ] Medication card component (name, dosage, interval, dates — same visual pattern as food cards, no picture/stats)
+
+### Phase 5: Scorecard Caveats (display-only, future)
+- [ ] Detect med start/stop during feeding period in scorecard API
+- [ ] Show caveat badges on scorecard UI using `medication_products.category`

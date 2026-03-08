@@ -1,7 +1,7 @@
 {
   "brand": "Nutrience",
   "website_url": "https://nutrience.com",
-  "scraped_at": "2026-03-05T18:44:52.388953+00:00",
+  "scraped_at": "2026-03-08T19:26:05.205640+00:00",
   "scraper_version": "0.1.0",
   "stats": {
     "product_count": 81,
@@ -9,9 +9,9 @@
       "retail": 81
     },
     "by_type": {
-      "dry": 54,
-      "wet": 21,
-      "supplements": 6
+      "supplement": 16,
+      "food": 57,
+      "treat": 8
     }
   },
   "products": [
@@ -20,7 +20,8 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/calming-dog-supplement",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "supplement",
+      "product_format": "dry",
       "ingredients_raw": "Active Ingredients: L-tryptophan, L-theanine, zingiber officinale (ginger root), valeriana officinalis (valerian root), magnesium, passiflora incarnata (passion flower), Thiamine.",
       "variants": [
         {
@@ -30,7 +31,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-dry-calming-dog-supplement.png"
+        "/products/nutrience/nutrience-supplement-calming-dog-supplement.png"
       ]
     },
     {
@@ -38,7 +39,8 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/skin-coat-dog-supplement",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "supplement",
+      "product_format": "dry",
       "ingredients_raw": "Active Ingredients: Omega-3 fatty acids (Schizochytrium spp. algae), Docosahexaenoic acid (DHA), Eicosapentaenoic acid (EPA), Vitamin E, Zinc (zinc oxide), Biotin",
       "variants": [
         {
@@ -48,7 +50,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-dry-skin-coat-dog-supplement.png"
+        "/products/nutrience/nutrience-supplement-skin-coat-dog-supplement.png"
       ]
     },
     {
@@ -56,7 +58,8 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/probiotic-dog-supplement",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "supplement",
+      "product_format": "dry",
       "ingredients_raw": "Active Ingredients: Bacillus subtillis, inulin (FOS) (chicory root), curcubita maxima (pumpkin), zingiber officinale (ginger root), pimpinella anisum (aniseed).",
       "variants": [
         {
@@ -66,7 +69,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-dry-probiotic-dog-supplement.png"
+        "/products/nutrience/nutrience-supplement-probiotic-dog-supplement.png"
       ]
     },
     {
@@ -74,7 +77,8 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/hip-joint-dog-supplement",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "supplement",
+      "product_format": "dry",
       "ingredients_raw": "Active Ingredients: Glucosamine hydrochloride (shrimp), Methyl sulfonyl methane (MSM), chondroitin sulfate (porcine), perna canaliculus (green lipped mussel), curcuma longa (turmeric root), salmon oil.",
       "variants": [
         {
@@ -84,7 +88,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-dry-hip-joint-dog-supplement.png"
+        "/products/nutrience/nutrience-supplement-hip-joint-dog-supplement.png"
       ]
     },
     {
@@ -92,7 +96,8 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/freeze-dried-raw-beef-pumpkin-dog-food",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "SubZero",
       "ingredients_raw": "Beef, beef lung, beef liver, beef kidney, beef spleen, pumpkin, fish oil, dicalcium phosphate, apples, cranberries, ginger, sweet potatoes, dried kelp, salt, mixed tocopherols (a preservative), zinc proteinate, copper proteinate, manganese proteinate, dried Bacillus coagulans fermentation product.",
       "guaranteed_analysis": {
@@ -119,7 +124,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-dry-freeze-dried-raw-beef-pumpkin-dog-food.png"
+        "/products/nutrience/nutrience-food-freeze-dried-raw-beef-pumpkin-dog-food.png"
       ]
     },
     {
@@ -127,7 +132,8 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/trattoria-tonno-con-riso-tuna-with-rice-pate-for-dogs",
       "channel": "retail",
-      "product_type": "wet",
+      "product_type": "food",
+      "product_format": "wet",
       "product_line": "Trattoria",
       "ingredients_raw": "Tuna, meat broth, chicken, beef, pork, rice, vitamins (vitamin A supplement, vitamin D3 supplement, vitamin E supplement, niacin, D-calcium pantothenate, riboflavin, thiamine mononitrate, vitamin B12 supplement), minerals (iron proteinate, copper proteinate, manganese proteinate, zinc proteinate, sodium selenite), glucosamine sulfate, choline chloride, chondroitin sulfate, guar gum, xylose, olive oil.",
       "guaranteed_analysis": {
@@ -146,7 +152,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-wet-trattoria-tonno-con-riso-tuna-with-rice-p-t-for-dogs.png"
+        "/products/nutrience/nutrience-food-trattoria-tonno-con-riso-tuna-with-rice-p-t-for-dogs.png"
       ]
     },
     {
@@ -154,7 +160,8 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/tacchino-con-orzo-turkey-with-barley-pate-for-dogs",
       "channel": "retail",
-      "product_type": "wet",
+      "product_type": "food",
+      "product_format": "wet",
       "product_line": "Trattoria",
       "ingredients_raw": "Turkey, meat broth, chicken, beef, pork, barley, vitamins (vitamin A supplement, vitamin D3 supplement, vitamin E supplement, niacin,D-calcium pantothenate, riboflavin, thiamine mononitrate, vitamin B12supplement), minerals (iron proteinate, copper proteinate, manganese proteinate, zinc proteinate, sodium selenite), glucosamine sulfate, choline chloride, chondroitin sulfate, guar gum, xylose, olive oil.",
       "guaranteed_analysis": {
@@ -173,7 +180,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-wet-trattoria-tacchino-con-orzo-turkey-with-barley-p-t-for-dogs.png"
+        "/products/nutrience/nutrience-food-trattoria-tacchino-con-orzo-turkey-with-barley-p-t-for-dogs.png"
       ]
     },
     {
@@ -181,7 +188,8 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/agnello-con-patate-lamb-with-potatoes-pate-for-dogs",
       "channel": "retail",
-      "product_type": "wet",
+      "product_type": "food",
+      "product_format": "wet",
       "product_line": "Trattoria",
       "ingredients_raw": "Lamb, meat broth, chicken, beef, pork, potatoes, vitamins (vitamin A supplement, vitamin D3 supplement, vitamin E supplement, niacin, D-calcium pantothenate, riboflavin, thiamine mononitrate, vitamin B12 supplement), minerals (iron proteinate, copper proteinate, manganese proteinate, zinc proteinate, sodium selenite), glucosamine sulfate, choline chloride, chondroitin sulfate, guar gum, xylose, olive oil.",
       "guaranteed_analysis": {
@@ -200,7 +208,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-wet-trattoria-agnello-con-patate-lamb-with-potatoes-p-t-for-dogs.png"
+        "/products/nutrience/nutrience-food-trattoria-agnello-con-patate-lamb-with-potatoes-p-t-for-dogs.png"
       ]
     },
     {
@@ -208,7 +216,8 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/pork-apple-freeze-dried-raw-dog-food",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "SubZero",
       "ingredients_raw": "Pork, pork heart, pork lung, pork liver, pork kidney, apples, fish oil, tricalcium phosphate, cranberries, ginger, pumpkin, sweet potatoes, dried kelp, mixed tocopherols (a preservative), salt, zinc proteinate, copper proteinate, manganese proteinate, dried Bacillus coagulans fermentation product.",
       "guaranteed_analysis": {
@@ -235,7 +244,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-dry-freeze-dried-raw-pork-apple-dog-food.png"
+        "/products/nutrience/nutrience-food-freeze-dried-raw-pork-apple-dog-food.png"
       ]
     },
     {
@@ -243,7 +252,8 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/chicken-sweet-potato-freeze-dried-raw-dog-food",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "SubZero",
       "ingredients_raw": "Chicken, chicken heart, chicken liver, sweet potatoes, fish oil, apples, cranberries, ginger, pumpkin, dried kelp, salt, mixed tocopherols (a preservative), zinc proteinate, copper proteinate, manganese proteinate, dried Bacillus coagulans fermentation product.",
       "guaranteed_analysis": {
@@ -270,7 +280,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-dry-freeze-dried-raw-chicken-sweet-potato-dog-food.png"
+        "/products/nutrience/nutrience-food-freeze-dried-raw-chicken-sweet-potato-dog-food.png"
       ]
     },
     {
@@ -278,7 +288,8 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/lamb-pumpkin-limited-ingredient-dog-food",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "SubZero",
       "ingredients_raw": "Lamb, lamb meal, peas, lentils, chickpeas, pea protein, canola oil (preserved with mixed tocopherols and citric acid), pumpkin, sun-cured alfalfa meal, pea starch, natural flavor, freeze-dried lamb, dicalcium phosphate, ground Miscanthus grass, fish oil, calcium carbonate, salt, pea fiber, potassium chloride, choline chloride, taurine, DL-methionine, inulin, zinc proteinate, apples, blueberries, carrots, cranberries, ginger, vitamin E supplement, iron proteinate, L-ascorbyl-2 polyphosphate, niacin supplement, Yucca schidigera extract, dried Lactobacillus acidophilus fermentation product, dried Lactobacillus casei fermentation product, dried Enterococcus faecium fermentation product, dried Bifidobacterium bifidum fermentation product, d-calcium pantothenate, manganese proteinate, sunflower oil, copper proteinate, riboflavin supplement, vitamin A supplement, vitamin B12 supplement, menadione sodium bisulfite complex, pyridoxine supplement, thiamine mononitrate, biotin, sodium selenite, vitamin D3 supplement, calcium iodate, folic acid, rosemary extract.",
       "guaranteed_analysis": {
@@ -305,7 +316,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-dry-lamb-pumpkin-limited-ingredient-dog-food.png"
+        "/products/nutrience/nutrience-food-lamb-pumpkin-limited-ingredient-dog-food.png"
       ]
     },
     {
@@ -313,7 +324,8 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/duck-pear-limited-ingredient-dog-food",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "SubZero",
       "ingredients_raw": "Duck, duck meal, peas, lentils, chickpeas, pea starch, pea protein, canola oil (preserved with mixed tocopherols and citric acid), pears, natural flavor, freeze-dried duck, dicalcium phosphate, sun-cured alfalfa meal, fish oil, ground Miscanthus grass, salt, potassium chloride, pea fiber, DL-methionine, taurine, inulin, choline chloride, zinc proteinate, apples, blueberries, carrots, cranberries, ginger, pumpkin, L-threonine, vitamin E supplement, iron proteinate, L-ascorbyl-2 polyphosphate, niacin supplement, dried Lactobacillus acidophilus fermentation product, dried Lactobacillus casei fermentation product, dried Enterococcus faecium fermentation product, dried Bifidobacterium bifidum fermentation product, Yucca schidigera extract, d-calcium pantothenate, manganese proteinate, sunflower oil, copper proteinate, riboflavin supplement, vitamin A supplement, vitamin B12 supplement, menadione sodium bisulfite complex, pyridoxine hydrochloride, thiamine mononitrate, biotin, sodium selenite, vitamin D3 supplement, calcium iodate, folic acid, rosemary extract.",
       "guaranteed_analysis": {
@@ -340,7 +352,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-dry-duck-pear-limited-ingredient-dog-food.png"
+        "/products/nutrience/nutrience-food-duck-pear-limited-ingredient-dog-food.png"
       ]
     },
     {
@@ -348,7 +360,8 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/trattoria-buffalo-ragu",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "supplement",
+      "product_format": "wet",
       "product_line": "Trattoria",
       "ingredients_raw": "Buffalo, water sufficient for processing, carrots, potatoes, zucchini",
       "guaranteed_analysis": {
@@ -367,7 +380,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-dry-trattoria-buffalo-ragu-dog-food-topper.png"
+        "/products/nutrience/nutrience-supplement-trattoria-buffalo-ragu-dog-food-topper.png"
       ]
     },
     {
@@ -375,7 +388,8 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/trattoria-pork-ragu",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "supplement",
+      "product_format": "wet",
       "product_line": "Trattoria",
       "ingredients_raw": "Pork, water sufficient for processing, peas, cherry tomatoes",
       "guaranteed_analysis": {
@@ -394,7 +408,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-dry-trattoria-pork-ragu-dog-food-topper.png"
+        "/products/nutrience/nutrience-supplement-trattoria-pork-ragu-dog-food-topper.png"
       ]
     },
     {
@@ -402,7 +416,8 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/trattoria-beef-ragu",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "supplement",
+      "product_format": "wet",
       "product_line": "Trattoria",
       "ingredients_raw": "Beef, water sufficient for processing, carrots, zucchini",
       "guaranteed_analysis": {
@@ -421,7 +436,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-dry-trattoria-beef-ragu-dog-food-topper.png"
+        "/products/nutrience/nutrience-supplement-trattoria-beef-ragu-dog-food-topper.png"
       ]
     },
     {
@@ -429,7 +444,8 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/trattoria-chicken-ragu",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "supplement",
+      "product_format": "wet",
       "product_line": "Trattoria",
       "ingredients_raw": "Chicken, water sufficient for processing, potatoes, cherry tomatoes.",
       "guaranteed_analysis": {
@@ -448,7 +464,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-dry-trattoria-chicken-ragu-dog-food-topper.png"
+        "/products/nutrience/nutrience-supplement-trattoria-chicken-ragu-dog-food-topper.png"
       ]
     },
     {
@@ -456,7 +472,8 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/trattoria-pasta-bolognese",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "supplement",
+      "product_format": "wet",
       "product_line": "Trattoria",
       "ingredients_raw": "Water sufficient for processing, pasta, beef, pork, cheese, cherry tomatoes",
       "guaranteed_analysis": {
@@ -475,7 +492,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-dry-trattoria-pasta-bolognese-dog-food-topper.png"
+        "/products/nutrience/nutrience-supplement-trattoria-pasta-bolognese-dog-food-topper.png"
       ]
     },
     {
@@ -483,7 +500,8 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/trattoria-pasta-carbonara",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "supplement",
+      "product_format": "wet",
       "product_line": "Trattoria",
       "ingredients_raw": "Water sufficient for processing, pasta, pork, eggs, cheese, cherry tomatoes",
       "guaranteed_analysis": {
@@ -502,7 +520,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-dry-trattoria-pasta-carbonara-dog-food-topper.png"
+        "/products/nutrience/nutrience-supplement-trattoria-pasta-carbonara-dog-food-topper.png"
       ]
     },
     {
@@ -510,9 +528,10 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/healthy-adult-ocean-fish-dog-food",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "Infusion",
-      "ingredients_raw": "Ocean fish, chicken meal, oatmeal, pearl barley, peas, lentils, chicken fat, sun-cured alfalfa meal, natural chicken flavour, calcium carbonate, choline chloride, salt, calcium propionate (preservative), fish oil, lecithin, taurine, freeze-dried chicken, coconut oil, dried chicory root, yeast extract, potassium chloride, Yucca schidigera extract, DL-methionine, L-lysine, glucosamine hydrochloride, vitamin E\\ supplement, zinc proteinate, zinc sulfate, chondroitin sulfate, ferrous sulfate, iron proteinate, apple, blueberry, carrot, cranberry, ginger root, pumpkin, dried Bifidobacterium bifidum fermentation product, dried Enterococcus faecium fermentation product, dried Lactobacillus acidophilus fermentation product, dried Lactobacillus casei fermentation product, copper sulfate, copper proteinate, niacin supplement, vitamin A supplement, d-calcium pantothenate, manganese proteinate, manganous oxide, riboflavin, calcium iodate, sodium selenite, vitamin B12 supplement, thiamine mononitrate, pyridoxine hydrochloride, vitamin D3 supplement, folic acid, rosemary extract, preserved with mixed tocopherols and citric acid.",
+      "ingredients_raw": "Ocean fish, chicken meal, oatmeal, pearl barley, peas, lentils, chicken fat, sun-cured alfalfa meal, natural chicken flavour, calcium carbonate, choline chloride, salt, calcium propionate (preservative), fish oil, lecithin, taurine, freeze-dried chicken, coconut oil, dried chicory root, yeast extract, potassium chloride, Yucca schidigera extract, DL-methionine, L-lysine, glucosamine hydrochloride, vitamin E supplement, zinc proteinate, zinc sulfate, chondroitin sulfate, ferrous sulfate, iron proteinate, apple, blueberry, carrot, cranberry, ginger root, pumpkin, dried Bifidobacterium bifidum fermentation product, dried Enterococcus faecium fermentation product, dried Lactobacillus acidophilus fermentation product, dried Lactobacillus casei fermentation product, copper sulfate, copper proteinate, niacin supplement, vitamin A supplement, d-calcium pantothenate, manganese proteinate, manganous oxide, riboflavin, calcium iodate, sodium selenite, vitamin B12 supplement, thiamine mononitrate, pyridoxine hydrochloride, vitamin D3 supplement, folic acid, rosemary extract, preserved with mixed tocopherols and citric acid.",
       "guaranteed_analysis": {
         "crude_protein_min": 26.0,
         "crude_fat_min": 15.0,
@@ -539,7 +558,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-dry-healthy-adult-ocean-fish-dog-food.png"
+        "/products/nutrience/nutrience-food-healthy-adult-ocean-fish-dog-food.png"
       ]
     },
     {
@@ -547,7 +566,8 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/oral-health",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "Care",
       "ingredients_raw": "Chicken, chicken meal, lentils, chickpeas, tapioca, ground Miscanthus grass, peas, chicken fat, flaxseed, sun-cured alfalfa meal, coconut oil, natural flavour, monocalcium phosphate, pea protein, botanicals (ginger root, pumpkin, turmeric, carrot, broccoli, apple, cranberry, blueberry, butternut squash, spinach, licorice root, pomegranate, peppermint leaf), potassium chloride, salt, minerals (zinc proteinate, iron proteinate, manganese proteinate, copper proteinate, sodium selenite, calcium iodate), salmon oil, DL-methionine, L-threonine, L-tryptophan, sunflower lecithin, vitamins (L-ascorbyl-2-polyphosphate, vitamin E supplement, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, thiamine mononitrate, vitamin B12 supplement, menadione sodium bisulfite complex, pyridoxine hydrochloride, biotin, vitamin D3 supplement, folic acid), choline chloride, yeast extract, taurine, calcium carbonate, calcium propionate (preservative), L-tyrosine, sunflower oil, dried chicory root, L-carnitine, Yucca schidigera extract, dried Bacillus licheniformis fermentation product, dried Bacillus subtilis fermentation product, rosemary extract, preserved with mixed tocopherols and citric acid.",
       "guaranteed_analysis": {
@@ -571,7 +591,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-dry-care-oral-health-dental-food-for-dogs.png"
+        "/products/nutrience/nutrience-food-care-oral-health-dental-food-for-dogs.png"
       ]
     },
     {
@@ -579,7 +599,8 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/pork-apple-limited-ingredient-dog-food",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "SubZero",
       "ingredients_raw": "Pork, pork meal, pea starch, peas, lentils, chickpeas, pork fat (preserved with mixed tocopherols and citric acid), apples, sun-cured alfalfa meal, natural flavor, freeze-dried pork, dicalcium phosphate, fish oil, ground Miscanthus grass, salt, pea fiber, potassium chloride, choline chloride, taurine, inulin, zinc proteinate, DL-methionine, blueberries, carrots, cranberries, ginger, pumpkin, vitamin E supplement, iron proteinate, L-ascorbyl-2-polyphosphate, niacin supplement, dried Lactobacillus acidophilus fermentation product, dried Lactobacillus casei fermentation product, dried Enterococcus faecium fermentation product, dried Bifidobacterium bifidum fermentation product, Yucca schidigera extract, d-calcium pantothenate, manganese proteinate, sunflower oil, copper proteinate, riboflavin supplement, vitamin A supplement, vitamin B12 supplement, menadione sodium bisulfite complex, pyridoxine hydrochloride, thiamine mononitrate, biotin, canola oil, sodium selenite, vitamin D3 supplement, calcium iodate, folic acid, rosemary extract.",
       "guaranteed_analysis": {
@@ -606,7 +627,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-dry-pork-apple-limited-ingredient-dog-food.png"
+        "/products/nutrience/nutrience-food-pork-apple-limited-ingredient-dog-food.png"
       ]
     },
     {
@@ -614,9 +635,10 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/turkey-chicken-herring",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "Grain Free",
-      "ingredients_raw": "Deboned turkey, turkey meal, chicken meal, green peas, sweet potatoes, lentils, deboned chicken, deboned herring, chicken fat (preserved with mixed tocopherols), whole eggs, sun-cured alfalfa meal, tapioca, natural chicken flavour, chicken liver, salmon oil (source of DHA), coconut oil, pumpkin, butternut squash, carrots, spinach, broccoli, apples, pears, blueberries, cranberries, pomegranate, juniper berry extract, ginger, fennel,  peppermint leaf, licorice root, turmeric, vitamins [vitamin E supplement, ascorbic acid (vitamin C), vitamin A supplement, niacin, calcium pantothenate, inositol, riboflavin, pyridoxine hydrochloride, thiamine mononitrate, biotin, vitamin B 12  supplement, vitamin D 3  supplement, folic acid], minerals [zinc oxide, zinc proteinate, iron proteinate, ferrous sulfate, copper proteinate, copper sulfate, manganese proteinate, manganese oxide, calcium iodate, sodium selenite], dicalcium phosphate, salt, potassium chloride, lecithin, chicory root extract, choline chloride, DL-methionine, dried kelp, yeast extract, glucosamine hydrochloride, rosemary extract, yucca schidigera extract, taurine, L-lysine chondroitin sulfate, L-Carnitine, dried Lactobacillus plantarum fermentation product, dried Enterococcus faecium fermentation product, dried Bacillus subtilis fermentation product, dreid Bifidobacterium animalis lactis fermentation product, dried Lactobacillus casei fermentation product, dried Lactobacillus helveticus fermentation product, dried Bifidobacterium longum fermentation product, dried Lactobacillus acidophilus fermentation product.",
+      "ingredients_raw": "Deboned turkey, turkey meal, chicken meal, green peas, sweet potatoes, lentils, deboned chicken, deboned herring, chicken fat (preserved with mixed tocopherols), whole eggs, sun-cured alfalfa meal, tapioca, natural chicken flavour, chicken liver, salmon oil (source of DHA), coconut oil, pumpkin, butternut squash, carrots, spinach, broccoli, apples, pears, blueberries, cranberries, pomegranate, juniper berry extract, ginger, fennel, peppermint leaf, licorice root, turmeric, vitamins [vitamin E supplement, ascorbic acid (vitamin C), vitamin A supplement, niacin, calcium pantothenate, inositol, riboflavin, pyridoxine hydrochloride, thiamine mononitrate, biotin, vitamin B 12 supplement, vitamin D 3 supplement, folic acid], minerals [zinc oxide, zinc proteinate, iron proteinate, ferrous sulfate, copper proteinate, copper sulfate, manganese proteinate, manganese oxide, calcium iodate, sodium selenite], dicalcium phosphate, salt, potassium chloride, lecithin, chicory root extract, choline chloride, DL-methionine, dried kelp, yeast extract, glucosamine hydrochloride, rosemary extract, yucca schidigera extract, taurine, L-lysine chondroitin sulfate, L-Carnitine, dried Lactobacillus plantarum fermentation product, dried Enterococcus faecium fermentation product, dried Bacillus subtilis fermentation product, dreid Bifidobacterium animalis lactis fermentation product, dried Lactobacillus casei fermentation product, dried Lactobacillus helveticus fermentation product, dried Bifidobacterium longum fermentation product, dried Lactobacillus acidophilus fermentation product.",
       "guaranteed_analysis": {
         "crude_protein_min": 34.0,
         "crude_fat_min": 16.0,
@@ -642,7 +664,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-dry-turkey-chicken-herring-grain-free-dog-food.png"
+        "/products/nutrience/nutrience-food-turkey-chicken-herring-grain-free-dog-food.png"
       ]
     },
     {
@@ -650,7 +672,8 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/manzo-con-farro-beef-with-spelt-pate-for-dogs",
       "channel": "retail",
-      "product_type": "wet",
+      "product_type": "food",
+      "product_format": "wet",
       "product_line": "Trattoria",
       "ingredients_raw": "Beef, meat broth, chicken, pork, spelt, vitamins (vitamin A supplement, vitamin D3 supplement, vitamin E supplement, niacin, D-calcium pantothenate, riboflavin, thiamine mononitrate, vitamin B12 supplement), minerals (iron proteinate, copper proteinate, manganese proteinate, zinc proteinate, sodium selenite), glucosamine sulfate, choline chloride, chondroitin sulfate, guar gum, xylose, olive oil.",
       "guaranteed_analysis": {
@@ -669,7 +692,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-wet-trattoria-manzo-con-farro-beef-with-spelt-p-t-for-dogs.png"
+        "/products/nutrience/nutrience-food-trattoria-manzo-con-farro-beef-with-spelt-p-t-for-dogs.png"
       ]
     },
     {
@@ -677,9 +700,10 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/ocean-fish",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "Grain Free",
-      "ingredients_raw": "Salmon, herring, hake, sole, cod, flounder, sebastes, ocean whitefish meal, green peas, sweet potatoes, lentils, canola oil (preserved with mixed tocopherols), sun-cured alfalfa meal, natural fish flavor, salmon oil (source of DHA), coconut oil, pumpkin, butternut squash, carrots, spinach, broccoli, apples, blueberries, cranberries, pomegranate, juniper berry extract, ginger, fennel, chamomile, peppermint leaf, licorice root, turmeric, vitamins [vitamin E supplement, vitamin A supplement, niacin, calcium pantothenate, riboflavin, pyridoxine hydrochloride, thiamine mononitrate, biotin, vitamin B 12 supplement, vitamin D 3 supplement, folic acid], minerals [zinc sulfate, zinc proteinate, iron proteinate, ferrous sulfate, copper proteinate, copper sulfate, manganese proteinate, manganous oxide, calcium iodate, sodium selenite], potassium chloride, salt, dicalcium phosphate, DL-methionine, lecithin, L-lysine, choline chloride, dried kelp, chicory root extract, yucca schidigera extract, yeast extract, glucosamine hydrochloride, taurine, chondroitin sulfate, rosemary  extract, L-carnitine, dried Lactobacillus acidophilus fermentation product, dried Lactobacillus casei fermentation product, dried Bifidobacterium bifidum fermentation product, dried Enterococcus faecium fermentation product.",
+      "ingredients_raw": "Salmon, herring, hake, sole, cod, flounder, sebastes, ocean whitefish meal, green peas, sweet potatoes, lentils, canola oil (preserved with mixed tocopherols), sun-cured alfalfa meal, natural fish flavor, salmon oil (source of DHA), coconut oil, pumpkin, butternut squash, carrots, spinach, broccoli, apples, blueberries, cranberries, pomegranate, juniper berry extract, ginger, fennel, chamomile, peppermint leaf, licorice root, turmeric, vitamins [vitamin E supplement, vitamin A supplement, niacin, calcium pantothenate, riboflavin, pyridoxine hydrochloride, thiamine mononitrate, biotin, vitamin B 12 supplement, vitamin D 3 supplement, folic acid], minerals [zinc sulfate, zinc proteinate, iron proteinate, ferrous sulfate, copper proteinate, copper sulfate, manganese proteinate, manganous oxide, calcium iodate, sodium selenite], potassium chloride, salt, dicalcium phosphate, DL-methionine, lecithin, L-lysine, choline chloride, dried kelp, chicory root extract, yucca schidigera extract, yeast extract, glucosamine hydrochloride, taurine, chondroitin sulfate, rosemary extract, L-carnitine, dried Lactobacillus acidophilus fermentation product, dried Lactobacillus casei fermentation product, dried Bifidobacterium bifidum fermentation product, dried Enterococcus faecium fermentation product.",
       "guaranteed_analysis": {
         "crude_protein_min": 34.0,
         "crude_fat_min": 16.0,
@@ -705,7 +729,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-dry-ocean-fish-grain-free-dog-food.png"
+        "/products/nutrience/nutrience-food-ocean-fish-grain-free-dog-food.png"
       ]
     },
     {
@@ -713,9 +737,10 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/healthy-adult-2",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "Infusion",
-      "ingredients_raw": "Deboned chicken, chicken meal, steel cut oats, pearled barley, green peas, red lentils, chicken fat (preserved with mixed tocopherols), natural chicken flavour, sun-cured alfalfa meal, freeze-dried chicken liver, salmon oil, coconut oil, calcium carbonate, pumpkin, butternut squash, carrots, spinach, broccoli, apples, blueberries, cranberries, pomegranate, juniper berry extract, ginger, fennel, chamomile, peppermint leaf, licorice root, turmeric, vitamins (vitamin E supplement, vitamin A supplement, niacin, calcium pantothenate, riboflavin, pyridoxine hydrochloride, thiamine mononitrate, biotin, vitamin B 12  supplement, vitamin D 3  supplement, folic acid), minerals (zinc sulfate, zinc proteinate, iron proteinate, ferrous sulphate, copper proteinate, copper sulfate, manganese proteinate, manganous oxide, calcium iodate, sodium selenite), potassium chloride, salt, lecithin, choline chloride, chicory root extract, yeast extract, DL-methionine, L-lysine, glucosamine hydrochloride, chondroitin sulfate, rosemary extract, dried Lactobacillus acidophilus fermentation product, dried Lactobacillus casei fermentation product, dried Bifidobacterium bifidum fermentation product, dried Enterococcus faecium fermentation product.",
+      "ingredients_raw": "Deboned chicken, chicken meal, steel cut oats, pearled barley, green peas, red lentils, chicken fat (preserved with mixed tocopherols), natural chicken flavour, sun-cured alfalfa meal, freeze-dried chicken liver, salmon oil, coconut oil, calcium carbonate, pumpkin, butternut squash, carrots, spinach, broccoli, apples, blueberries, cranberries, pomegranate, juniper berry extract, ginger, fennel, chamomile, peppermint leaf, licorice root, turmeric, vitamins (vitamin E supplement, vitamin A supplement, niacin, calcium pantothenate, riboflavin, pyridoxine hydrochloride, thiamine mononitrate, biotin, vitamin B 12 supplement, vitamin D 3 supplement, folic acid), minerals (zinc sulfate, zinc proteinate, iron proteinate, ferrous sulphate, copper proteinate, copper sulfate, manganese proteinate, manganous oxide, calcium iodate, sodium selenite), potassium chloride, salt, lecithin, choline chloride, chicory root extract, yeast extract, DL-methionine, L-lysine, glucosamine hydrochloride, chondroitin sulfate, rosemary extract, dried Lactobacillus acidophilus fermentation product, dried Lactobacillus casei fermentation product, dried Bifidobacterium bifidum fermentation product, dried Enterococcus faecium fermentation product.",
       "guaranteed_analysis": {
         "crude_protein_min": 26.0,
         "crude_fat_min": 16.0,
@@ -741,15 +766,16 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-dry-healthy-adult-chicken-dog-food.png"
+        "/products/nutrience/nutrience-food-healthy-adult-chicken-dog-food.png"
       ]
     },
     {
-      "name": "SubZero Fraser Valley High Protein Puppy Food",
+      "name": "Sub Zero Fraser Valley High Protein Puppy Food",
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/puppy-fraser-valley-formula",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "SubZero",
       "ingredients_raw": "Deboned chicken, deboned turkey, chicken meal, turkey meal, chicken liver, turkey liver, peas, pea protein, chicken fat (preserved with mixed tocopherols and citric acid), salmon, cod, lentils, chickpeas, sweet potatoes, natural flavor, freeze-dried chicken, fish oil, sun-cured alfalfa meal, pea fiber, salt, taurine, inulin, potassium chloride, choline chloride, DL-methionine, freeze-dried sweet potatoes, freeze-dried pumpkin, freeze-dried green mussels, freeze-dried cod liver, freeze-dried kelp, zinc proteinate, apples, blueberries, carrots, cranberries, ginger, pumpkin, vitamin E supplement, iron proteinate, L-ascorbyl-2-polyphosphate, niacin supplement, dried Lactobacillus acidophilus fermentation product, dried Lactobacillus casei fermentation product, dried Enterococcus faecium fermentation product, dried Bifidobacterium bifidum fermentation product, Yucca schidigera extract, d-calcium pantothenate, manganese proteinate, sunflower oil, copper proteinate, riboflavin supplement, vitamin A supplement, vitamin B12 supplement, menadione sodium bisulfite complex, pyridoxine hydrochloride, thiamine mononitrate, biotin, canola oil, sodium selenite, vitamin D3 supplement, calcium iodate, folic acid, rosemary extract.",
       "guaranteed_analysis": {
@@ -777,15 +803,16 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-dry-subzero-fraser-valley-high-protein-puppy-food.png"
+        "/products/nutrience/nutrience-food-sub-zero-fraser-valley-high-protein-puppy-food.png"
       ]
     },
     {
-      "name": "SubZero Canadian Pacific High Protein Dog Food",
+      "name": "Sub Zero Canadian Pacific High Protein Dog Food",
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/canadian-pacific",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "SubZero",
       "ingredients_raw": "Salmon, cod, sole, rockfish, salmon meal, whitefish meal, peas, pea protein, canola oil (preserved with mixed tocopherols and citric acid), lentils, natural flavor, sun-cured alfalfa meal, freeze-dried salmon, dicalcium phosphate, fish oil, salt, pea fiber, taurine, choline chloride, potassium chloride, inulin, DL-methionine, freeze-dried sweet potatoes, freeze-dried pumpkin, freeze-dried green mussels, freeze-dried cod liver, freeze-dried kelp, zinc proteinate, apples, blueberries, carrots, cranberries, ginger, pumpkin, glucosamine hydrochloride, chondroitin sulfate, vitamin E supplement, iron proteinate, L-ascorbyl-2-polyphosphate, niacin supplement, dried Lactobacillus acidophilus fermentation product, dried Lactobacillus casei fermentation product, dried Enterococcus faecium fermentation product, dried Bifidobacterium bifidum fermentation product, Yucca schidigera extract, d-calcium pantothenate, manganese proteinate, sunflower oil, copper proteinate, riboflavin supplement, vitamin A supplement, vitamin B12 supplement, menadione sodium bisulfite complex, pyridoxine hydrochloride, thiamine mononitrate, biotin, sodium selenite, vitamin D3 supplement, calcium iodate, folic acid, rosemary extract.",
       "guaranteed_analysis": {
@@ -814,15 +841,16 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-dry-subzero-canadian-pacific-high-protein-dog-food.png"
+        "/products/nutrience/nutrience-food-sub-zero-canadian-pacific-high-protein-dog-food.png"
       ]
     },
     {
-      "name": "SubZero Canadian Pacific Fish Pâté for Dogs",
+      "name": "Sub Zero Canadian Pacific Fish Pâté for Dogs",
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/canadian-pacific-pate-2",
       "channel": "retail",
-      "product_type": "wet",
+      "product_type": "food",
+      "product_format": "wet",
       "product_line": "SubZero",
       "ingredients_raw": "Fish broth, flounder, sole, perch, pea protein, pork liver, salmon, canola oil, water sufficient for processing, peas, dicalcium phosphate, agar-agar, calcium carbonate, salt, choline chloride, pea fibre, yeast extract (source of MOS), inulin, dried apple pomace, dried blueberry pomace, dried carrots, dried cranberry pomace, dried pumpkin, ground ginger, zinc proteinate, L-ascorbyl-2-polyphosphate, vitamin E supplement, ferrous sulfate, zinc sulfate, iron proteinate, copper proteinate, thiamine mononitrate, niacin supplement, calcium D-pantothenate, vitamin A supplement, manganese sulfate, riboflavin supplement, manganese proteinate, vitamin D3 supplement, sodium selenite, vitamin B12 supplement, pyridoxine hydrochloride, calcium iodate, folic acid.",
       "guaranteed_analysis": {
@@ -841,7 +869,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-wet-subzero-canadian-pacific-fish-p-t-for-dogs.png"
+        "/products/nutrience/nutrience-food-sub-zero-canadian-pacific-fish-p-t-for-dogs.png"
       ]
     },
     {
@@ -849,7 +877,8 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/homestyle-surf-turf-dog-food-topper",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "supplement",
+      "product_format": "wet",
       "product_line": "Homestyle",
       "ingredients_raw": "Mackerel, water sufficient for processing, potato, peas, carrot, beef, shrimp, beef liver, sunflower oil, modified tapioca starch, salmon oil, algal oil, guar gum",
       "guaranteed_analysis": {
@@ -868,7 +897,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-dry-homestyle-surf-turf-dog-food-topper.png"
+        "/products/nutrience/nutrience-supplement-homestyle-surf-turf-dog-food-topper.png"
       ]
     },
     {
@@ -876,7 +905,8 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/homestyle-salmon-red-rice-dog-food-topper",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "supplement",
+      "product_format": "wet",
       "product_line": "Homestyle",
       "ingredients_raw": "Salmon, water sufficient for processing, carrot, red rice, potato, broccoli, beef liver, sunflower oil, modified tapioca starch, salmon oil, algal oil, guar gum",
       "guaranteed_analysis": {
@@ -895,7 +925,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-dry-homestyle-salmon-red-rice-dog-food-topper.png"
+        "/products/nutrience/nutrience-supplement-homestyle-salmon-red-rice-dog-food-topper.png"
       ]
     },
     {
@@ -903,7 +933,8 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/homestyle-chicken-buddha-dog-food-topper",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "supplement",
+      "product_format": "wet",
       "product_line": "Homestyle",
       "ingredients_raw": "Chicken breast, water sufficient for processing, sweet potato, chickpeas, string beans, quinoa, spinach, beef liver, sunflower oil, modified tapioca starch, salmon oil, algal oil, guar gum",
       "guaranteed_analysis": {
@@ -922,7 +953,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-dry-homestyle-chicken-buddha-dog-food-topper.png"
+        "/products/nutrience/nutrience-supplement-homestyle-chicken-buddha-dog-food-topper.png"
       ]
     },
     {
@@ -930,7 +961,8 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/homestyle-chicken-rice-dog-food-topper",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "supplement",
+      "product_format": "wet",
       "product_line": "Homestyle",
       "ingredients_raw": "Chicken breast, water sufficient for processing, white rice, peas, carrot, corn, beef liver, sunflower oil, modified tapioca starch, salmon oil, algal oil, guar gum",
       "guaranteed_analysis": {
@@ -949,7 +981,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-dry-homestyle-chicken-rice-dog-food-topper.png"
+        "/products/nutrience/nutrience-supplement-homestyle-chicken-rice-dog-food-topper.png"
       ]
     },
     {
@@ -957,7 +989,8 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/homestyle-chicken-florentine-dog-food-topper",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "supplement",
+      "product_format": "wet",
       "product_line": "Homestyle",
       "ingredients_raw": "Chicken breast, water sufficient for processing, pumpkin, potato, pasta, spinach, cheese, beef liver, sunflower oil, modified tapioca starch, salmon oil, algal oil, guar gum",
       "guaranteed_analysis": {
@@ -976,7 +1009,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-dry-homestyle-chicken-florentine-dog-food-topper.png"
+        "/products/nutrience/nutrience-supplement-homestyle-chicken-florentine-dog-food-topper.png"
       ]
     },
     {
@@ -984,7 +1017,8 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/homestyle-chicken-quinoa-dog-food-topper",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "supplement",
+      "product_format": "wet",
       "product_line": "Homestyle",
       "ingredients_raw": "Chicken breast, water sufficient for processing, black bean, sweet potato, corn, quinoa, beef liver, sunflower oil, modified tapioca starch, salmon oil, algal oil, guar gum",
       "guaranteed_analysis": {
@@ -1003,7 +1037,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-dry-homestyle-chicken-quinoa-dog-food-topper.png"
+        "/products/nutrience/nutrience-supplement-homestyle-chicken-quinoa-dog-food-topper.png"
       ]
     },
     {
@@ -1011,7 +1045,8 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/weight-management",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "Care",
       "ingredients_raw": "Chicken, chicken meal, chickpeas, lentils, peas, sun-cured alfalfa meal, ground Miscanthus grass, potato protein, flaxseed, chicken fat, tapioca, pea protein, coconut oil, natural flavour, botanicals (ginger root, pumpkin, turmeric, carrot, broccoli, apple, cranberry, blueberry, butternut squash, spinach, licorice root, pomegranate, peppermint leaf), potassium chloride, minerals (zinc proteinate, iron proteinate, manganese proteinate, copper proteinate, sodium selenite, calcium iodate), salmon oil, salt, DL-methionine, monocalcium phosphate, L-threonine, L-tryptophan, sunflower lecithin, choline chloride, yeast extract, vitamins (vitamin E supplement, L-ascorbyl-2-polyphosphate, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, thiamine mononitrate, vitamin B12 supplement,menadione sodium bisulfite complex, pyridoxine hydrochloride, biotin, vitamin D3 supplement, folic acid), taurine, calcium propionate (preservative), L-tyrosine, sunflower oil, dried chicory root, L-carnitine, Yucca schidigera extract, dried Bacillus licheniformis fermentation product, dried Bacillus subtilis fermentation product, rosemary extract, preserved with mixed tocopherols and citric acid.",
       "guaranteed_analysis": {
@@ -1035,7 +1070,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-dry-care-weight-management-food-for-dogs.png"
+        "/products/nutrience/nutrience-food-care-weight-management-food-for-dogs.png"
       ]
     },
     {
@@ -1043,7 +1078,8 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/sensitive-skin-stomach",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "Care",
       "ingredients_raw": "Salmon, chickpeas, hydrolyzed fish protein concentrate, sweet potatoes, peas, potato protein, lentils, canola oil, pumpkin, monocalcium phosphate, ground Miscanthus grass, calcium carbonate, tapioca, coconut oil, salt, natural flavour, pea protein, botanicals (ginger root, turmeric, carrot, broccoli, apple, cranberry, blueberry, butternut squash, spinach, licorice root, pomegranate, peppermint leaf), potassium chloride, minerals (zinc proteinate, iron proteinate, manganese proteinate, copper proteinate, sodium selenite, calcium iodate), flaxseed, salmon oil, DL-methionine, L-threonine, L-tryptophan, sunflower lecithin, choline chloride, yeast extract, vitamins (vitamin E supplement, L-ascorbyl-2-polyphosphate, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, thiamine mononitrate, vitamin B12 supplement, menadione sodium bisulfite complex, pyridoxine hydrochloride, biotin, vitamin D3 supplement, folic acid), taurine, calcium propionate (preservative), L-tyrosine, sunflower oil, dried chicory root, L-carnitine, Yucca schidigera extract, dried Bacillus licheniformis fermentation product, dried Bacillus subtilis fermentation product, rosemary extract, preserved with mixed tocopherols and citric acid.",
       "guaranteed_analysis": {
@@ -1069,7 +1105,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-dry-nutrience-care-skin-stomach-hypoallergenic-dog-food.png"
+        "/products/nutrience/nutrience-food-nutrience-care-skin-stomach-hypoallergenic-dog-food.png"
       ]
     },
     {
@@ -1077,7 +1113,8 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/calm-comfort",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "Care",
       "ingredients_raw": "Chicken, chicken meal, potatoes, peas, lentils, chickpeas, chicken fat, sun-cured alfalfa meal, ground Miscanthus grass, tapioca, monocalcium phosphate, flaxseed, salmon oil, coconut oil, natural flavour, pea protein, salt, botanicals (ginger root, pumpkin, turmeric, carrot, broccoli, apple, cranberry, blueberry, butternut squash, spinach, licorice root, pomegranate, peppermint leaf), potassium chloride, minerals (zinc proteinate, iron proteinate, manganese proteinate, copper proteinate, sodium selenite, calcium iodate), DL-methionine, calcium carbonate, L-threonine, L-tryptophan, sunflower lecithin, choline chloride, yeast extract, vitamins (vitamin E supplement, L-ascorbyl-2-polyphosphate, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, thiamine mononitrate, vitamin B12 supplement, menadione sodium bisulfite complex, pyridoxine hydrochloride, biotin, vitamin D3 supplement, folic acid), taurine, calcium propionate (preservative), L-tyrosine, sunflower oil, dried chicory root, L-carnitine, dried hydrolyzed casein, Yucca schidigera extract, dried Bacillus licheniformis fermentation product, dried Bacillus subtilis fermentation product, rosemary extract, preserved with mixed tocopherols and citric acid.",
       "guaranteed_analysis": {
@@ -1101,7 +1138,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-dry-nutrience-care-calm-comfort-anxiety-hyperactivity-dog-food.png"
+        "/products/nutrience/nutrience-food-nutrience-care-calm-comfort-anxiety-hyperactivity-dog-food.png"
       ]
     },
     {
@@ -1109,9 +1146,10 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/healthy-puppy-chicken",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "Infusion",
-      "ingredients_raw": "Deboned chicken, chicken meal, green peas, pearled barley, red lentils, steel cut oats, chicken fat (preserved with mixed tocopherols), natural chicken flavour, freeze-dried chicken liver, salmon oil (natural source of DHA), sun-cured alfalfa meal, calcium carbonate, carrots, spinach, broccoli, pumpkin, butternut squash, blueberries, cranberries, pomegranate, apples, juniper berry extract, ginger, fennel, chamomile, peppermint leaf, licorice root, turmeric, coconut oil, vitamins (vitamin E supplement, vitamin A supplement, niacin, calcium pantothenate, riboflavin, pyridoxine hydrochloride, thiamine mononitrate, biotin, vitamin B 12  supplement, vitamin D 3  supplement, folic acid), minerals (zinc sulfate, zinc proteinate, iron proteinate, ferrous sulfate, copper proteinate, copper sulfate, manganese proteinate, manganous oxide, calcium iodate, sodium selenite), potassium chloride, salt, lecithin, choline chloride, chicory root extract, yeast extract, DL-methionine, L-lysine, rosemary extract, dried Lactobacillus acidophilus fermentation product, dried Lactobacillus casei fermentation product, dried Bifidobacterium bifidum fermentation product, dried Enterococcus faecium fermentation product.",
+      "ingredients_raw": "Deboned chicken, chicken meal, green peas, pearled barley, red lentils, steel cut oats, chicken fat (preserved with mixed tocopherols), natural chicken flavour, freeze-dried chicken liver, salmon oil (natural source of DHA), sun-cured alfalfa meal, calcium carbonate, carrots, spinach, broccoli, pumpkin, butternut squash, blueberries, cranberries, pomegranate, apples, juniper berry extract, ginger, fennel, chamomile, peppermint leaf, licorice root, turmeric, coconut oil, vitamins (vitamin E supplement, vitamin A supplement, niacin, calcium pantothenate, riboflavin, pyridoxine hydrochloride, thiamine mononitrate, biotin, vitamin B 12 supplement, vitamin D 3 supplement, folic acid), minerals (zinc sulfate, zinc proteinate, iron proteinate, ferrous sulfate, copper proteinate, copper sulfate, manganese proteinate, manganous oxide, calcium iodate, sodium selenite), potassium chloride, salt, lecithin, choline chloride, chicory root extract, yeast extract, DL-methionine, L-lysine, rosemary extract, dried Lactobacillus acidophilus fermentation product, dried Lactobacillus casei fermentation product, dried Bifidobacterium bifidum fermentation product, dried Enterococcus faecium fermentation product.",
       "guaranteed_analysis": {
         "crude_protein_min": 28.0,
         "crude_fat_min": 18.0,
@@ -1136,7 +1174,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-dry-healthy-puppy-food-chicken.png"
+        "/products/nutrience/nutrience-food-healthy-puppy-food-chicken.png"
       ]
     },
     {
@@ -1144,9 +1182,10 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/calm-and-comfort",
       "channel": "retail",
-      "product_type": "wet",
+      "product_type": "food",
+      "product_format": "wet",
       "product_line": "Care",
-      "ingredients_raw": "Chicken, chicken broth, ocean fish, chicken liver, brown rice, peas, sweet potatoes, chickpeas, sun-cured alfalfa meal, calcium carbonate, agar-agar, sodium tripolyphosphate, lentils, flaxseed, tricalcium phosphate, Yucca schidigera extract, salt, salmon oil, pea fiber, dried kelp, zinc proteinate, L-ascorbyl-2-polyphosphate (source of vitamin C), vitamin E supplement, ferrous sulfate, zinc sulfate, iron proteinate, copper proteinate, inulin, chia seeds, ginger, aloe vera, apple, avocado, blueberry, carob, carrot, chamomile, cranberry, fennel seed, green tea, kale, marigold, papaya, paprika, parsley, pomegranate, pumpkin, rosemary, spirulina, thyme, tomato, turmeric,  spinach, thiamine mononitrate, niacin supplement, pyridoxine hydrochloride, vitamin A supplement, D-calcium pantothenate, manganese sulfate, manganese proteinate, riboflavin supplement, sodium selenite, vitamin D3 supplement, vitamin B12 supplement, calcium iodate, folic acid.",
+      "ingredients_raw": "Chicken, chicken broth, ocean fish, chicken liver, brown rice, peas, sweet potatoes, chickpeas, sun-cured alfalfa meal, calcium carbonate, agar-agar, sodium tripolyphosphate, lentils, flaxseed, tricalcium phosphate, Yucca schidigera extract, salt, salmon oil, pea fiber, dried kelp, zinc proteinate, L-ascorbyl-2-polyphosphate (source of vitamin C), vitamin E supplement, ferrous sulfate, zinc sulfate, iron proteinate, copper proteinate, inulin, chia seeds, ginger, aloe vera, apple, avocado, blueberry, carob, carrot, chamomile, cranberry, fennel seed, green tea, kale, marigold, papaya, paprika, parsley, pomegranate, pumpkin, rosemary, spirulina, thyme, tomato, turmeric, spinach, thiamine mononitrate, niacin supplement, pyridoxine hydrochloride, vitamin A supplement, D-calcium pantothenate, manganese sulfate, manganese proteinate, riboflavin supplement, sodium selenite, vitamin D3 supplement, vitamin B12 supplement, calcium iodate, folic acid.",
       "guaranteed_analysis": {
         "crude_protein_min": 6.0,
         "crude_fat_min": 3.0,
@@ -1163,15 +1202,16 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-wet-calm-comfort-wet-dog-food.png"
+        "/products/nutrience/nutrience-food-calm-comfort-wet-dog-food.png"
       ]
     },
     {
-      "name": "SubZero Prairie Red High Protein Dog Food",
+      "name": "Sub Zero Prairie Red High Protein Dog Food",
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/prairie-red-formula",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "SubZero",
       "ingredients_raw": "Deboned beef, deboned lamb, deboned wild boar, deboned pork, deboned bison, beef liver, pork liver, pork meal, peas, pork fat (preserved with mixed tocopherols and citric acid), pea protein, lamb meal, lentils, natural flavor, freeze-dried beef liver, salmon, cod, chickpeas, sweet potatoes, fish oil, sun-cured alfalfa meal, pea fiber, salt, potassium chloride, taurine, choline chloride, inulin, DL-methionine, freeze-dried sweet potatoes, freeze-dried pumpkin, freeze-dried green mussels, freeze- dried cod liver, freeze-dried kelp, zinc proteinate, apples, blueberries, carrots, cranberries, ginger, pumpkin, glucosamine hydrochloride, chondroitin sulfate, vitamin E supplement, iron proteinate, L-ascorbyl-2-polyphosphate, niacin supplement, dried Lactobacillus acidophilus fermentation product, dried Lactobacillus casei fermentation product, dried Enterococcus faecium fermentation product, dried Bifidobacterium bifidum fermentation product, Yucca schidigera extract, d-calcium pantothenate, manganese proteinate, sunflower oil, copper proteinate, riboflavin supplement, vitamin A supplement, vitamin B12 supplement, menadione sodium bisulfite complex, pyridoxine hydrochloride, thiamine mononitrate, biotin, canola oil, sodium selenite, vitamin D3 supplement, calcium iodate, folic acid, rosemary extract.",
       "guaranteed_analysis": {
@@ -1205,15 +1245,16 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-dry-subzero-prairie-red-high-protein-dog-food.png"
+        "/products/nutrience/nutrience-food-sub-zero-prairie-red-high-protein-dog-food.png"
       ]
     },
     {
-      "name": "SubZero Fraser Valley Chicken Pâté for Dogs",
+      "name": "Sub Zero Fraser Valley Chicken Pâté for Dogs",
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/fraser-valley-pate-2",
       "channel": "retail",
-      "product_type": "wet",
+      "product_type": "food",
+      "product_format": "wet",
       "product_line": "SubZero",
       "ingredients_raw": "Chicken, chicken broth, pork liver, turkey, salmon, pea protein, peas, water sufficient for processing, sodium tripolyphosphate, calcium carbonate, agar-agar, salmon oil, choline chloride, potassium chloride, salt, pea fibre, inulin, yeast extract (source of MOS), dried apple pomace, dried blueberry pomace, dried carrots, dried cranberry pomace, dried pumpkin, ground ginger, zinc proteinate, L-ascorbyl-2-polyphosphate, vitamin E supplement, ferrous sulfate, zinc sulfate, iron proteinate, copper proteinate, thiamine mononitrate, niacin supplement, calcium D-pantothenate, vitamin A supplement, manganese sulfate, riboflavin supplement, manganese proteinate, vitamin D3 supplement, sodium selenite, vitamin B12 supplement, pyridoxine hydrochloride, calcium iodate, folic acid.",
       "guaranteed_analysis": {
@@ -1232,15 +1273,16 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-wet-subzero-fraser-valley-chicken-p-t-for-dogs.png"
+        "/products/nutrience/nutrience-food-sub-zero-fraser-valley-chicken-p-t-for-dogs.png"
       ]
     },
     {
-      "name": "SubZero Prairie Red Beef Pâté for Dogs",
+      "name": "Sub Zero Prairie Red Beef Pâté for Dogs",
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/prairie-red-pate-2",
       "channel": "retail",
-      "product_type": "wet",
+      "product_type": "food",
+      "product_format": "wet",
       "product_line": "SubZero",
       "ingredients_raw": "Beef broth, beef, pork liver, pork, salmon, pea protein, water sufficient for processing, peas, dicalcium phosphate, agar-agar, calcium carbonate, salt, choline chloride, pea fibre, inulin, potassium chloride, yeast extract (source of MOS), dried apple pomace, dried blueberry pomace, dried carrots, dried cranberry pomace, dried pumpkin, ground ginger, zinc proteinate, L-ascorbyl-2-polyphosphate, vitamin E supplement, ferrous sulfate, zinc sulfate, iron proteinate, copper proteinate, thiamine mononitrate, niacin supplement, calcium D-pantothenate, vitamin A supplement, manganese sulfate, riboflavin supplement, manganese proteinate, vitamin D3 supplement, sodium selenite, vitamin B12 supplement, pyridoxine hydrochloride, calcium iodate, folic acid.",
       "guaranteed_analysis": {
@@ -1259,15 +1301,16 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-wet-subzero-prairie-red-beef-p-t-for-dogs.png"
+        "/products/nutrience/nutrience-food-sub-zero-prairie-red-beef-p-t-for-dogs.png"
       ]
     },
     {
-      "name": "SubZero Fraser Valley High Protein Dog Food",
+      "name": "Sub Zero Fraser Valley High Protein Dog Food",
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/fraser-valley-formula",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "SubZero",
       "ingredients_raw": "Deboned chicken, deboned turkey, chicken meal, turkey meal, chicken liver, turkey liver, peas, pea protein, chicken fat (preserved with mixed tocopherols and citric acid), salmon, cod, lentils, chickpeas, sweet potatoes, natural flavor, freeze-dried chicken, fish oil, sun-cured alfalfa meal, pea fiber, salt, taurine, inulin, potassium chloride, choline chloride, DL-methionine, freeze-dried sweet potatoes, freeze-dried pumpkin, freeze-dried green mussels, freeze-dried cod liver, freeze-dried kelp, zinc proteinate, apples, blueberries, carrots, cranberries, ginger, pumpkin, glucosamine hydrochloride, chondroitin sulfate, vitamin E supplement, iron proteinate, L-ascorbyl-2-polyphosphate, niacin supplement, dried Lactobacillus acidophilus fermentation product, dried Lactobacillus casei fermentation product, dried Enterococcus faecium fermentation product, dried Bifidobacterium bifidum fermentation product, Yucca schidigera extract, d-calcium pantothenate, manganese proteinate, sunflower oil, copper proteinate, riboflavin supplement, vitamin A supplement, vitamin B12 supplement, menadione sodium bisulfite complex, pyridoxine hydrochloride, thiamine mononitrate, biotin, canola oil, sodium selenite, vitamin D3 supplement, calcium iodate, folic acid, rosemary extract.",
       "guaranteed_analysis": {
@@ -1301,7 +1344,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-dry-subzero-fraser-valley-high-protein-dog-food.png"
+        "/products/nutrience/nutrience-food-sub-zero-fraser-valley-high-protein-dog-food.png"
       ]
     },
     {
@@ -1309,9 +1352,10 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/healthy-adult-small-breed",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "Infusion",
-      "ingredients_raw": "Deboned chicken, chicken meal, steel cut oats, pearled barley, green peas, red lentils, chicken fat (preserved with mixed tocopherols), natural chicken flavour, sun-cured alfalfa meal, freeze-dried chicken liver, salmon oil, coconut oil, calcium carbonate, pumpkin, butternut squash, carrots, spinach, broccoli, apples, blueberries, cranberries, pomegranate, juniper berry extract, ginger, fennel, chamomile, peppermint leaf, licorice root, turmeric. vitamins (vitamin E supplement, vitamin A supplement, niacin, calcium pantothenate, riboflavin, pyridoxine hydrochloride, thiamine mononitrate, biotin, vitamin B 12  supplement, vitamin D 3  supplement, folic acid), minerals (zinc sulfate, zinc proteinate, iron proteinate, ferrous sulphate, copper proteinate, copper sulfate, manganese proteinate, manganous oxide, calcium iodate, sodium selenite), potassium chloride, salt, lecithin, choline chloride, chicory root extract, yeast extract, DLmethionine, L-lysine, glucosamine hydrochloride, chondroitin sulfate, rosemary extract, dried Lactobacillus acidophilus fermentation product, dried Lactobacillus casei fermentation product, dried Bifidobacterium bifidum fermentation product, dried Enterococcus faecium fermentation product.",
+      "ingredients_raw": "Deboned chicken, chicken meal, steel cut oats, pearled barley, green peas, red lentils, chicken fat (preserved with mixed tocopherols), natural chicken flavour, sun-cured alfalfa meal, freeze-dried chicken liver, salmon oil, coconut oil, calcium carbonate, pumpkin, butternut squash, carrots, spinach, broccoli, apples, blueberries, cranberries, pomegranate, juniper berry extract, ginger, fennel, chamomile, peppermint leaf, licorice root, turmeric. vitamins (vitamin E supplement, vitamin A supplement, niacin, calcium pantothenate, riboflavin, pyridoxine hydrochloride, thiamine mononitrate, biotin, vitamin B 12 supplement, vitamin D 3 supplement, folic acid), minerals (zinc sulfate, zinc proteinate, iron proteinate, ferrous sulphate, copper proteinate, copper sulfate, manganese proteinate, manganous oxide, calcium iodate, sodium selenite), potassium chloride, salt, lecithin, choline chloride, chicory root extract, yeast extract, DLmethionine, L-lysine, glucosamine hydrochloride, chondroitin sulfate, rosemary extract, dried Lactobacillus acidophilus fermentation product, dried Lactobacillus casei fermentation product, dried Bifidobacterium bifidum fermentation product, dried Enterococcus faecium fermentation product.",
       "guaranteed_analysis": {
         "crude_protein_min": 28.0,
         "crude_fat_min": 18.0,
@@ -1337,7 +1381,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-dry-healthy-adult-small-breed-dog-food.png"
+        "/products/nutrience/nutrience-food-healthy-adult-small-breed-dog-food.png"
       ]
     },
     {
@@ -1345,9 +1389,10 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/pate-with-free-range-chicken-2",
       "channel": "retail",
-      "product_type": "wet",
+      "product_type": "food",
+      "product_format": "wet",
       "product_line": "Infusion",
-      "ingredients_raw": "Chicken, chicken broth, chicken liver, rice, green peas, red lentils, sun-cured alfalfa, freeze-dried chicken liver, salmon oil, coconut oil, guar gum, salt, choline chloride, carrageenan, cassia gum, pumpkin, butternut squash, carrots, spinach, broccoli, apples, blueberries, cranberries, pomegranate, juniper berry extract, ginger, fennel, chamomile, peppermint leaf, licorice root, turmeric, zinc proteinate, vitamin E supplement, L-ascorbyl-2-polyphosphate (source of vitamin C), ferrous sulfate, zinc sulfate, iron proteinate, copper proteinate, thiamine mononitrate, sodium selenite, niacin supplement, d-calcium pantothenate, vitamin A supplement, manganese sulfate, riboflavin supplement, manganese proteinate, vitamin D 3  supplement, vitamin B 12  supplement, pyridoxine hydrochloride, calcium iodate, folic acid.",
+      "ingredients_raw": "Chicken, chicken broth, chicken liver, rice, green peas, red lentils, sun-cured alfalfa, freeze-dried chicken liver, salmon oil, coconut oil, guar gum, salt, choline chloride, carrageenan, cassia gum, pumpkin, butternut squash, carrots, spinach, broccoli, apples, blueberries, cranberries, pomegranate, juniper berry extract, ginger, fennel, chamomile, peppermint leaf, licorice root, turmeric, zinc proteinate, vitamin E supplement, L-ascorbyl-2-polyphosphate (source of vitamin C), ferrous sulfate, zinc sulfate, iron proteinate, copper proteinate, thiamine mononitrate, sodium selenite, niacin supplement, d-calcium pantothenate, vitamin A supplement, manganese sulfate, riboflavin supplement, manganese proteinate, vitamin D 3 supplement, vitamin B 12 supplement, pyridoxine hydrochloride, calcium iodate, folic acid.",
       "guaranteed_analysis": {
         "crude_protein_min": 9.0,
         "crude_fat_min": 7.0,
@@ -1364,7 +1409,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-wet-p-t-with-free-range-chicken-wet-dog-food.png"
+        "/products/nutrience/nutrience-food-p-t-with-free-range-chicken-wet-dog-food.png"
       ]
     },
     {
@@ -1372,7 +1417,8 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/beef-liver-pork-liver-lamb-liver-2",
       "channel": "retail",
-      "product_type": "supplements",
+      "product_type": "treat",
+      "product_format": "dry",
       "product_line": "SubZero",
       "ingredients_raw": "Beef Liver, Pork Liver and Lamb Liver.",
       "guaranteed_analysis": {
@@ -1382,7 +1428,7 @@
         "moisture_max": 5.0
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "3460 kcal/kg, 2 kcal/treat",
+      "calorie_content": "3460 kcal/kg, 2.42 kcal/treat",
       "variants": [
         {
           "size_kg": 0.09,
@@ -1391,7 +1437,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-supplements-freeze-dried-beef-liver-pork-liver-lamb-liver-dog-treats.png"
+        "/products/nutrience/nutrience-treat-freeze-dried-beef-liver-pork-liver-lamb-liver-dog-treats.png"
       ]
     },
     {
@@ -1399,7 +1445,8 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/pork-lamb-duck-formula",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "Grain Free",
       "ingredients_raw": "Pork, lamb, deboned duck, pork meal, green peas, lentils, sweet potatoes, pork fat (preserved with mixed tocopherols), lamb meal, natural pork flavor, sun-cured alfalfa meal, salmon oil (source of DHA), coconut oil, pumpkin, butternut squash, carrots, spinach, broccoli, apples, blueberries, cranberries, pomegranate, juniper berry extract, ginger, fennel, chamomile, peppermint leaf, licorice root, turmeric, dicalcium phosphate, potassium chloride, salt, lecithin, choline chloride, vitamins [vitamin E supplement, vitamin A supplement, niacin, calcium pantothenate, riboflavin, pyridoxine hydrochloride, thiamine mononitrate, biotin, vitamin B 12 supplement, vitamin D 3 supplement, folic acid], minerals [zinc sulfate, zinc proteinate, iron proteinate, ferrous sulfate, copper proteinate, copper sulfate, manganese proteinate, manganous oxide, calcium iodate, sodium selenite], DL-methionine, yeast extract, chicory root extract, dried kelp, yucca schidigera extract, glucosamine hydrochloride, L-lysine, taurine, chondroitin sulfate, rosemary extract, L-carnitine, dried Lactobacillus acidophilus fermentation product, dried Lactobacillus casei fermentation product, dried Bifidobacterium bifidum fermentation product, dried Enterococcus faecium fermentation product.",
       "guaranteed_analysis": {
@@ -1427,7 +1474,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-dry-pork-lamb-duck-grain-free-dog-food.png"
+        "/products/nutrience/nutrience-food-pork-lamb-duck-grain-free-dog-food.png"
       ]
     },
     {
@@ -1435,18 +1482,12 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/elk-antler-medium-split",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "treat",
+      "product_format": "dry",
       "product_line": "Grain Free",
       "ingredients_raw": "100% naturally-shed elk antler, natural bacon flavour.",
-      "variants": [
-        {
-          "size_kg": 14.0,
-          "size_description": "For dogs under 14 kg(SKU-D6480)",
-          "sku": "D6480"
-        }
-      ],
       "images": [
-        "/products/nutrience/nutrience-dry-elk-antler-dog-chew-medium.png"
+        "/products/nutrience/nutrience-treat-elk-antler-dog-chew-medium.png"
       ]
     },
     {
@@ -1454,9 +1495,10 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/healthy-adult-beef",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "Infusion",
-      "ingredients_raw": "Deboned beef, pork meal, steel cut oats, pearled barley, green peas, red lentils, pork fat, lamb meal, natural pork flavour, sun-cured alfalfa meal, freeze-dried beef liver, salmon oil, coconut oil, calcium carbonate, pumpkin, butternut squash, carrots, spinach, broccoli, apples, blueberries, cranberries, pomegranate, juniper berry extract, ginger, fennel, chamomile, peppermint leaf, licorice root, turmeric, vitamins (vitamin E supplement, vitamin A supplement, niacin, calcium pantothenate, riboflavin, pyridoxine hydrochloride, thiamine mononitrate, biotin, vitamin B 12  supplement, vitamin D 3  supplement, folic acid), minerals (zinc sulfate, zinc proteinate, iron proteinate, ferrous sulfate, copper proteinate, copper sulfate, manganese proteinate, manganous oxide, calcium iodate, sodium selenite), potassium chloride, salt, lecithin, choline chloride, chicory root extract, yeast extract, DL-methionine, L-lysine, glucosamine hydrochloride, chondroitin sulfate, rosemary extract, dried Lactobacillus acidophilus fermentation product, dried Lactobacillus casei fermentation product, dried Bifidobacterium bifidum fermentation product, dried Enterococcus faecium fermentation product.",
+      "ingredients_raw": "Deboned beef, pork meal, steel cut oats, pearled barley, green peas, red lentils, pork fat, lamb meal, natural pork flavour, sun-cured alfalfa meal, freeze-dried beef liver, salmon oil, coconut oil, calcium carbonate, pumpkin, butternut squash, carrots, spinach, broccoli, apples, blueberries, cranberries, pomegranate, juniper berry extract, ginger, fennel, chamomile, peppermint leaf, licorice root, turmeric, vitamins (vitamin E supplement, vitamin A supplement, niacin, calcium pantothenate, riboflavin, pyridoxine hydrochloride, thiamine mononitrate, biotin, vitamin B 12 supplement, vitamin D 3 supplement, folic acid), minerals (zinc sulfate, zinc proteinate, iron proteinate, ferrous sulfate, copper proteinate, copper sulfate, manganese proteinate, manganous oxide, calcium iodate, sodium selenite), potassium chloride, salt, lecithin, choline chloride, chicory root extract, yeast extract, DL-methionine, L-lysine, glucosamine hydrochloride, chondroitin sulfate, rosemary extract, dried Lactobacillus acidophilus fermentation product, dried Lactobacillus casei fermentation product, dried Bifidobacterium bifidum fermentation product, dried Enterococcus faecium fermentation product.",
       "guaranteed_analysis": {
         "crude_protein_min": 26.0,
         "crude_fat_min": 16.0,
@@ -1487,7 +1529,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-dry-healthy-adult-beef-dog-food.png"
+        "/products/nutrience/nutrience-food-healthy-adult-beef-dog-food.png"
       ]
     },
     {
@@ -1495,9 +1537,10 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/lamb-meal-with-brown-rice-recipe",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "Original",
-      "ingredients_raw": "Lamb meal, barley, oatmeal, peas, brown rice, chicken meal, chicken fat (preserved with mixed tocopherols), dried beet pulp, natural lamb flavor, flaxseed, brewer’s yeast, salmon oil (source of DHA), blueberries, cranberries, carrots, vitamins [vitamin E supplement, vitamin A supplement, niacin, calcium pantothenate, riboflavin, pyridoxine hydrochloride, thiamine mononitrate, biotin, vitamin B12 supplement, vitamin D3 supplement, folic acid], minerals [zinc sulfate, zinc proteinate, iron proteinate, ferrous sulfate, copper proteinate, copper sulfate, manganese proteinate, manganese oxide, calcium iodate, sodium selenite], potassium chloride, salt, DL-methionine, L-lysine, lecithin, choline chloride, yeast extract, chicory root extract, glucosamine hydrochloride, chondroitin sulfate, rosemary extract.",
+      "ingredients_raw": "Lamb meal, barley, oatmeal, peas, brown rice, chicken meal, chicken fat (preserved with mixed tocopherols), dried beet pulp, natural lamb flavor, flaxseed, brewer's yeast, salmon oil (source of DHA), blueberries, cranberries, carrots, vitamins [vitamin E supplement, vitamin A supplement, niacin, calcium pantothenate, riboflavin, pyridoxine hydrochloride, thiamine mononitrate, biotin, vitamin B12 supplement, vitamin D3 supplement, folic acid], minerals [zinc sulfate, zinc proteinate, iron proteinate, ferrous sulfate, copper proteinate, copper sulfate, manganese proteinate, manganese oxide, calcium iodate, sodium selenite], potassium chloride, salt, DL-methionine, L-lysine, lecithin, choline chloride, yeast extract, chicory root extract, glucosamine hydrochloride, chondroitin sulfate, rosemary extract.",
       "guaranteed_analysis": {
         "crude_protein_min": 24.0,
         "crude_fat_min": 14.0,
@@ -1523,7 +1566,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-dry-lamb-meal-with-brown-rice-recipe-medium-breed.png"
+        "/products/nutrience/nutrience-food-lamb-meal-with-brown-rice-recipe-medium-breed.png"
       ]
     },
     {
@@ -1531,7 +1574,8 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/ocean-fish-pate-2",
       "channel": "retail",
-      "product_type": "wet",
+      "product_type": "food",
+      "product_format": "wet",
       "product_line": "Grain Free",
       "ingredients_raw": "Salmon, fish broth, ocean fish, herring, sweet potatoes, lentils, natural flavour, guar gum, choline chloride, salmon oil, coconut oil, salt, pumpkin, butternut squash, carrots, spinach, broccoli, apples, pears, blueberries, cranberries, pomegranates, juniper berry extract, ginger, fennel, green tea extract, peppermint leaf, licorice root, turmeric, potassium chloride, pea fiber, zinc proteinate, vitamin E supplement , L-ascorbyl-2-polyphosphate (source of vitamin C), ferrous sulfate, zinc sulfate, iron proteinate, copper proteinate, thiamine mononitrate, sodium selenite, niacin supplement, pantothenate calcium, vitamin A supplement, manganese sulfate, riboflavin supplement, manganese proteinate, vitamin D3 supplement, vitamin B12 supplement, pyridoxine hydrochloride, calcium iodate, folic acid.",
       "guaranteed_analysis": {
@@ -1552,7 +1596,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-wet-ocean-fish-p-t-for-dogs.png"
+        "/products/nutrience/nutrience-food-ocean-fish-p-t-for-dogs.png"
       ]
     },
     {
@@ -1560,9 +1604,10 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/chicken-meal-with-brown-rice-recipe",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "Original",
-      "ingredients_raw": "Chicken meal, brown rice, green peas, oatmeal, chicken fat (preserved with mixed tocopherols), dried beet pulp, natural chicken flavor, flaxseed, calcium carbonate, brewer’s yeast, salmon oil (source of DHA), blueberries, cranberries, carrots, vitamins [vitamin E supplement, vitamin A supplement, niacin, calcium pantothenate, riboflavin, pyridoxine hydrochloride, thiamine mononitrate, biotin, vitamin B12 supplement, vitamin D3 supplement, folic acid], minerals [zinc sulfate, zinc proteinate, iron proteinate, ferrous sulfate, copper proteinate, copper sulfate, manganese proteinate, manganese oxide, calcium iodate, sodium selenite], salt, potassium chloride, lecithin, choline chloride, DL methionine, L-lysine, yeast extract, chicory root extract, glucosamine hydrochloride, chondroitin sulfate, rosemary extract.",
+      "ingredients_raw": "Chicken meal, brown rice, green peas, oatmeal, chicken fat (preserved with mixed tocopherols), dried beet pulp, natural chicken flavor, flaxseed, calcium carbonate, brewer's yeast, salmon oil (source of DHA), blueberries, cranberries, carrots, vitamins [vitamin E supplement, vitamin A supplement, niacin, calcium pantothenate, riboflavin, pyridoxine hydrochloride, thiamine mononitrate, biotin, vitamin B12 supplement, vitamin D3 supplement, folic acid], minerals [zinc sulfate, zinc proteinate, iron proteinate, ferrous sulfate, copper proteinate, copper sulfate, manganese proteinate, manganese oxide, calcium iodate, sodium selenite], salt, potassium chloride, lecithin, choline chloride, DL methionine, L-lysine, yeast extract, chicory root extract, glucosamine hydrochloride, chondroitin sulfate, rosemary extract.",
       "guaranteed_analysis": {
         "crude_protein_min": 25.0,
         "crude_fat_min": 15.0,
@@ -1588,7 +1633,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-dry-chicken-meal-with-brown-rice-small-breed-dog-food.png"
+        "/products/nutrience/nutrience-food-chicken-meal-with-brown-rice-small-breed-dog-food.png"
       ]
     },
     {
@@ -1596,7 +1641,8 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/turkey-chicken-liver-pate-2",
       "channel": "retail",
-      "product_type": "wet",
+      "product_type": "food",
+      "product_format": "wet",
       "product_line": "Grain Free",
       "ingredients_raw": "Turkey, chicken, turkey broth, chicken liver, sweet potatoes, lentils, natural flavour, salmon oil, guar gum, coconut oil, calcium carbonate, potassium chloride, choline chloride, salt, calcium chloride, pumpkin, butternut squash, carrots, spinach, broccoli, apples, pears, blueberries, cranberries, pomegranates, juniper berry extract, ginger, fennel, green tea extract, peppermint leaf, licorice root, turmeric, pea fiber, zinc proteinate, vitamin E supplement , L-ascorbyl-2-polyphosphate (source of vitamin C), ferrous sulfate, zinc sulfate, iron proteinate, copper proteinate, thiamine mononitrate, sodium selenite, niacin supplement, pantothenate calcium, vitamin A supplement, manganese sulfate, riboflavin supplement, manganese proteinate, vitamin D3 supplement, vitamin B12 supplement, pyridoxine hydrochloride, calcium iodate, folic acid.",
       "guaranteed_analysis": {
@@ -1617,7 +1663,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-wet-turkey-chicken-liver-p-t.png"
+        "/products/nutrience/nutrience-food-turkey-chicken-liver-p-t.png"
       ]
     },
     {
@@ -1625,9 +1671,10 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/chicken-meal-with-brown-rice-recipe-2",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "Original",
-      "ingredients_raw": "Chicken meal, brown rice, green peas, oatmeal, chicken fat (preserved with mixed tocopherols), dried beet pulp, natural chicken flavor, flaxseed, calcium carbonate, brewer’s yeast, salmon oil (source of DHA), blueberries, cranberries, carrots, vitamins [vitamin E supplement, vitamin A supplement, niacin, calcium pantothenate, riboflavin, pyridoxine hydrochloride, thiamine mononitrate, biotin, vitamin B12 supplement, vitamin D3 supplement, folic acid], minerals [zinc sulfate, zinc proteinate, iron proteinate, ferrous sulfate, copper proteinate, copper sulfate, manganese proteinate, manganese oxide, calcium iodate, sodium selenite], potassium chloride, salt, lecithin, DL-methionine, L lysine, choline chloride, yeast extract, chicory root extract, glucosamine hydrochloride, chondroitin sulfate, rosemary extract.",
+      "ingredients_raw": "Chicken meal, brown rice, green peas, oatmeal, chicken fat (preserved with mixed tocopherols), dried beet pulp, natural chicken flavor, flaxseed, calcium carbonate, brewer's yeast, salmon oil (source of DHA), blueberries, cranberries, carrots, vitamins [vitamin E supplement, vitamin A supplement, niacin, calcium pantothenate, riboflavin, pyridoxine hydrochloride, thiamine mononitrate, biotin, vitamin B12 supplement, vitamin D3 supplement, folic acid], minerals [zinc sulfate, zinc proteinate, iron proteinate, ferrous sulfate, copper proteinate, copper sulfate, manganese proteinate, manganese oxide, calcium iodate, sodium selenite], potassium chloride, salt, lecithin, DL-methionine, L lysine, choline chloride, yeast extract, chicory root extract, glucosamine hydrochloride, chondroitin sulfate, rosemary extract.",
       "guaranteed_analysis": {
         "crude_protein_min": 24.0,
         "crude_fat_min": 14.0,
@@ -1648,7 +1695,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-dry-chicken-meal-with-brown-rice-medium-breed.png"
+        "/products/nutrience/nutrience-food-chicken-meal-with-brown-rice-medium-breed.png"
       ]
     },
     {
@@ -1656,9 +1703,10 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/small-breed-turkey-chicken-herring-formula",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "Grain Free",
-      "ingredients_raw": "Deboned turkey, turkey meal, chicken meal, green peas, sweet potatoes, lentils, deboned chicken, deboned herring, chicken fat (preserved with mixed tocopherols), whole eggs, sun-cured alfalfa meal, tapioca, natural chicken flavour, chicken liver, salmon oil (source of DHA), coconut oil, pumpkin, butternut squash, carrots, spinach, broccoli, apples, pears, blueberries, cranberries, pomegranate, juniper berry extract, ginger, fennel, peppermint leaf, licorice root, turmeric, vitamins [vitamin E supplement, ascorbic acid (vitamin C), vitamin A supplement, niacin, calcium pantothenate, inositol, riboflavin, pyridoxine hydrochloride, thiamine mononitrate, biotin, vitamin B 12  supplement, vitamin D 3 supplement, folic acid], minerals [zinc oxide, zinc proteinate, iron proteinate, ferrous sulfate, copper proteinate, copper sulfate, manganese proteinate, manganese oxide, calcium iodate, sodium selenite], dicalcium phosphate, salt, potassium chloride, lecithin, chicory root extract, choline chloride, DL-methionine, dried kelp, yeast extract, glucosamine hydrochloride, rosemary extract, yucca schidigera extract, taurine, L-lysine chondroitin sulfate, L-Carnitine, dried Lactobacillus plantarum fermentation product, dried Enterococcus faecium fermentation product, dried Bacillus subtilis fermentation product, dreid Bifidobacterium animalis lactis fermentation product, dried Lactobacillus casei fermentation product, dried Lactobacillus helveticus fermentation product, dried Bifidobacterium longum fermentation product, dried Lactobacillus acidophilus fermentation product.",
+      "ingredients_raw": "Deboned turkey, turkey meal, chicken meal, green peas, sweet potatoes, lentils, deboned chicken, deboned herring, chicken fat (preserved with mixed tocopherols), whole eggs, sun-cured alfalfa meal, tapioca, natural chicken flavour, chicken liver, salmon oil (source of DHA), coconut oil, pumpkin, butternut squash, carrots, spinach, broccoli, apples, pears, blueberries, cranberries, pomegranate, juniper berry extract, ginger, fennel, peppermint leaf, licorice root, turmeric, vitamins [vitamin E supplement, ascorbic acid (vitamin C), vitamin A supplement, niacin, calcium pantothenate, inositol, riboflavin, pyridoxine hydrochloride, thiamine mononitrate, biotin, vitamin B 12 supplement, vitamin D 3 supplement, folic acid], minerals [zinc oxide, zinc proteinate, iron proteinate, ferrous sulfate, copper proteinate, copper sulfate, manganese proteinate, manganese oxide, calcium iodate, sodium selenite], dicalcium phosphate, salt, potassium chloride, lecithin, chicory root extract, choline chloride, DL-methionine, dried kelp, yeast extract, glucosamine hydrochloride, rosemary extract, yucca schidigera extract, taurine, L-lysine chondroitin sulfate, L-Carnitine, dried Lactobacillus plantarum fermentation product, dried Enterococcus faecium fermentation product, dried Bacillus subtilis fermentation product, dreid Bifidobacterium animalis lactis fermentation product, dried Lactobacillus casei fermentation product, dried Lactobacillus helveticus fermentation product, dried Bifidobacterium longum fermentation product, dried Lactobacillus acidophilus fermentation product.",
       "guaranteed_analysis": {
         "crude_protein_min": 34.0,
         "crude_fat_min": 16.0,
@@ -1684,15 +1732,16 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-dry-turkey-chicken-herring-small-toy-breed-dog-food.png"
+        "/products/nutrience/nutrience-food-turkey-chicken-herring-small-toy-breed-dog-food.png"
       ]
     },
     {
-      "name": "SubZero Fraser Valley Pâté Puppy Food",
+      "name": "Sub Zero Fraser Valley Pâté Puppy Food",
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/puppy-fraser-valley-pate",
       "channel": "retail",
-      "product_type": "wet",
+      "product_type": "food",
+      "product_format": "wet",
       "product_line": "SubZero",
       "ingredients_raw": "Chicken, chicken broth, pork liver, turkey, salmon, pea protein, peas, water sufficient for processing, sodium tripolyphosphate, calcium carbonate, agar-agar, salmon oil, choline chloride, potassium chloride, salt, pea fibre, inulin, yeast extract (source of MOS), dried apple pomace, dried blueberry pomace, dried carrots, dried cranberry pomace, dried pumpkin, ground ginger, zinc proteinate, L-ascorbyl-2-polyphosphate, vitamin E supplement, ferrous sulfate, zinc sulfate, iron proteinate, copper proteinate, thiamine mononitrate, niacin supplement, calcium D-pantothenate, vitamin A supplement, manganese sulfate, riboflavin supplement, manganese proteinate, vitamin D3 supplement, sodium selenite, vitamin B12 supplement, pyridoxine hydrochloride, calcium iodate, folic acid.",
       "guaranteed_analysis": {
@@ -1711,7 +1760,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-wet-subzero-fraser-valley-p-t-puppy-food.png"
+        "/products/nutrience/nutrience-food-sub-zero-fraser-valley-p-t-puppy-food.png"
       ]
     },
     {
@@ -1719,9 +1768,10 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/chicken-meal-with-brown-rice-recipe-3",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "Original",
-      "ingredients_raw": "Chicken meal, brown rice, green peas, oatmeal, chicken fat (preserved with mixed tocopherols), dried beet pulp, natural chicken flavor, flaxseed, calcium carbonate, brewer’s yeast, salmon oil (source of DHA), blueberries, cranberries, carrots, vitamins [vitamin E supplement, vitamin A supplement, niacin, calcium pantothenate, riboflavin, pyridoxine hydrochloride, thiamine mononitrate, biotin, vitamin B12 supplement, vitamin D3 supplement, folic acid], minerals [zinc sulfate, zinc proteinate, iron proteinate, ferrous sulfate, copper proteinate, copper sulfate, manganese proteinate, manganese oxide, calcium iodate, sodium selenite], potassium chloride, salt, lecithin, DL methionine, L-lysine, choline chloride, yeast extract, chicory root extract, glucosamine hydrochloride, chondroitin sulfate, rosemary extract.",
+      "ingredients_raw": "Chicken meal, brown rice, green peas, oatmeal, chicken fat (preserved with mixed tocopherols), dried beet pulp, natural chicken flavor, flaxseed, calcium carbonate, brewer's yeast, salmon oil (source of DHA), blueberries, cranberries, carrots, vitamins [vitamin E supplement, vitamin A supplement, niacin, calcium pantothenate, riboflavin, pyridoxine hydrochloride, thiamine mononitrate, biotin, vitamin B12 supplement, vitamin D3 supplement, folic acid], minerals [zinc sulfate, zinc proteinate, iron proteinate, ferrous sulfate, copper proteinate, copper sulfate, manganese proteinate, manganese oxide, calcium iodate, sodium selenite], potassium chloride, salt, lecithin, DL methionine, L-lysine, choline chloride, yeast extract, chicory root extract, glucosamine hydrochloride, chondroitin sulfate, rosemary extract.",
       "guaranteed_analysis": {
         "crude_protein_min": 25.0,
         "crude_fat_min": 15.0,
@@ -1742,15 +1792,16 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-dry-chicken-meal-with-brown-rice-large-breed-dog-food.png"
+        "/products/nutrience/nutrience-food-chicken-meal-with-brown-rice-large-breed-dog-food.png"
       ]
     },
     {
-      "name": "SubZero Fraser Valley Small Breed Dog Food",
+      "name": "Sub Zero Fraser Valley Small Breed Dog Food",
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/small-breed-fraser-valley-formula",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "SubZero",
       "ingredients_raw": "Deboned chicken, deboned turkey, chicken meal, turkey meal, chicken liver, turkey liver, peas, pea protein, chicken fat (preserved with mixed tocopherols and citric acid), salmon, cod, lentils, chickpeas, sweet potatoes, natural flavor, freeze-dried chicken, fish oil, sun-cured alfalfa meal, pea fiber, salt, taurine, inulin, potassium chloride, choline chloride, DL-methionine, freeze-dried sweet potatoes, freeze-dried pumpkin, freeze-dried green mussels, freeze-dried cod liver, freeze-dried kelp, zinc proteinate, apples, blueberries, carrots, cranberries, ginger, pumpkin, glucosamine hydrochloride, chondroitin sulfate, vitamin E supplement, iron proteinate, L-ascorbyl-2-polyphosphate, niacin supplement, dried Lactobacillus acidophilus fermentation product, dried Lactobacillus casei fermentation product, dried Enterococcus faecium fermentation product, dried Bifidobacterium bifidum fermentation product, Yucca schidigera extract, d-calcium pantothenate, manganese proteinate, sunflower oil, copper proteinate, riboflavin supplement, vitamin A supplement, vitamin B12 supplement, menadione sodium bisulfite complex, pyridoxine hydrochloride, thiamine mononitrate, biotin, canola oil, sodium selenite, vitamin D3 supplement, calcium iodate, folic acid, rosemary extract.",
       "guaranteed_analysis": {
@@ -1779,7 +1830,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-dry-subzero-fraser-valley-small-breed-dog-food.png"
+        "/products/nutrience/nutrience-food-sub-zero-fraser-valley-small-breed-dog-food.png"
       ]
     },
     {
@@ -1787,7 +1838,8 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/pork-lamb-venison-pate",
       "channel": "retail",
-      "product_type": "wet",
+      "product_type": "food",
+      "product_format": "wet",
       "product_line": "Grain Free",
       "ingredients_raw": "Pork, pork broth, lamb, venison, sweet potatoes, lentils, natural flavour, guar gum, potassium chloride, choline chloride, salmon oil, coconut oil, salt, pumpkin, butternut squash, carrots, spinach, broccoli, apples, pears, blueberries, cranberries, pomegranates, juniper berry extract, ginger, fennel, green tea extract, peppermint leaf, licorice root, turmeric, pea fiber, zinc proteinate, vitamin E supplement , L-ascorbyl-2-polyphosphate (source of vitamin C), ferrous sulfate, zinc sulfate, iron proteinate, copper proteinate, thiamine mononitrate, sodium selenite, niacin supplement, pantothenate calcium, vitamin A supplement, manganese sulfate, riboflavin supplement, manganese proteinate, vitamin D 3 supplement, vitamin B 12 supplement, pyridoxine hydrochloride, calcium iodate, folic acid.",
       "guaranteed_analysis": {
@@ -1808,7 +1860,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-wet-pork-lamb-venison-p-t-for-dogs.png"
+        "/products/nutrience/nutrience-food-pork-lamb-venison-p-t-for-dogs.png"
       ]
     },
     {
@@ -1816,9 +1868,10 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/chicken-pate-with-brown-rice-vegetables-2",
       "channel": "retail",
-      "product_type": "wet",
+      "product_type": "food",
+      "product_format": "wet",
       "product_line": "Original",
-      "ingredients_raw": "Chicken, chicken broth, chicken liver, brown rice, carrots, flaxseed, peas, guar gum, salt, tricalcium phosphate, potassium chloride, choline chloride, cranberries, iron proteinate, copper proteinate, manganese proteinate, selenium yeast, calcium iodate, vitamin E supplement, thiamine mononitrate, niacin supplement, calcium pantothenate, biotin, vitamin A supplement, riboflavin supplement, vitamin B 12  supplement, pyridoxine hydrochloride, vitamin D 3  supplement, folic acid.",
+      "ingredients_raw": "Chicken, chicken broth, chicken liver, brown rice, carrots, flaxseed, peas, guar gum, salt, tricalcium phosphate, potassium chloride, choline chloride, cranberries, iron proteinate, copper proteinate, manganese proteinate, selenium yeast, calcium iodate, vitamin E supplement, thiamine mononitrate, niacin supplement, calcium pantothenate, biotin, vitamin A supplement, riboflavin supplement, vitamin B 12 supplement, pyridoxine hydrochloride, vitamin D 3 supplement, folic acid.",
       "guaranteed_analysis": {
         "crude_protein_min": 8.0,
         "crude_fat_min": 7.5,
@@ -1835,7 +1888,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-wet-chicken-p-t-for-dogs-with-brown-rice-vegetables.png"
+        "/products/nutrience/nutrience-food-chicken-p-t-for-dogs-with-brown-rice-vegetables.png"
       ]
     },
     {
@@ -1843,9 +1896,10 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/healthy-adult-large-breed",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "Infusion",
-      "ingredients_raw": "Deboned chicken, chicken meal, steel cut oats, pearled barley, green peas, red lentils, chicken fat (preserved with mixed tocopherols), natural chicken flavour, sun-cured alfalfa meal, freeze-dried chicken liver, salmon oil, coconut oil, calcium carbonate, pumpkin, butternut squash, carrots, spinach, broccoli, apples, blueberries, cranberries, pomegranate, juniper berry extract, ginger, fennel, chamomile, peppermint leaf, licorice root, turmeric, vitamins (vitamin E supplement, vitamin A supplement, niacin, calcium pantothenate, riboflavin, pyridoxine hydrochloride thiamine mononitrate, biotin, vitamin B 12  supplement, vitamin D 3  supplement, folic acid), minerals (zinc sulfate, zinc proteinate, iron proteinate, ferrous sulphate, copper proteinate, copper sulfate, manganese proteinate, manganous oxide, calcium iodate, sodium selenite), potassium chloride, salt, lecithin, choline chloride, chicory root extract, yeast extract, DL-methionine, L-lysine, glucosamine hydrochloride, chondroitin sulfate, rosemary extract, dried Lactobacillus acidophilus fermentation product, dried Lactobacillus casei fermentation product, dried Bifidobacterium bifidum fermentation product, dried Enterococcus faecium fermentation product.",
+      "ingredients_raw": "Deboned chicken, chicken meal, steel cut oats, pearled barley, green peas, red lentils, chicken fat (preserved with mixed tocopherols), natural chicken flavour, sun-cured alfalfa meal, freeze-dried chicken liver, salmon oil, coconut oil, calcium carbonate, pumpkin, butternut squash, carrots, spinach, broccoli, apples, blueberries, cranberries, pomegranate, juniper berry extract, ginger, fennel, chamomile, peppermint leaf, licorice root, turmeric, vitamins (vitamin E supplement, vitamin A supplement, niacin, calcium pantothenate, riboflavin, pyridoxine hydrochloride thiamine mononitrate, biotin, vitamin B 12 supplement, vitamin D 3 supplement, folic acid), minerals (zinc sulfate, zinc proteinate, iron proteinate, ferrous sulphate, copper proteinate, copper sulfate, manganese proteinate, manganous oxide, calcium iodate, sodium selenite), potassium chloride, salt, lecithin, choline chloride, chicory root extract, yeast extract, DL-methionine, L-lysine, glucosamine hydrochloride, chondroitin sulfate, rosemary extract, dried Lactobacillus acidophilus fermentation product, dried Lactobacillus casei fermentation product, dried Bifidobacterium bifidum fermentation product, dried Enterococcus faecium fermentation product.",
       "guaranteed_analysis": {
         "crude_protein_min": 28.0,
         "crude_fat_min": 18.0,
@@ -1866,15 +1920,16 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-dry-healthy-adult-large-breed-dog-food.png"
+        "/products/nutrience/nutrience-food-healthy-adult-large-breed-dog-food.png"
       ]
     },
     {
-      "name": "SubZero Fraser Valley Large Breed Dog Food",
+      "name": "Sub Zero Fraser Valley Large Breed Dog Food",
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/large-breed-fraser-valley-formula",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "SubZero",
       "ingredients_raw": "Deboned chicken, deboned turkey, chicken meal, turkey meal, chicken liver, turkey liver, peas, pea protein, chicken fat (preserved with mixed tocopherols and citric acid), salmon, cod, lentils, chickpeas, sweet potatoes, natural flavor, freeze-dried chicken, fish oil, sun-cured alfalfa meal, pea fiber, salt, taurine, inulin, potassium chloride, choline chloride, DL-methionine, freeze-dried sweet potatoes, freeze-dried pumpkin, freeze-dried green mussels, freeze-dried cod liver, freeze-dried kelp, zinc proteinate, apples, blueberries, carrots, cranberries, ginger, pumpkin, glucosamine hydrochloride, chondroitin sulfate, vitamin E supplement, iron proteinate, L-ascorbyl-2-polyphosphate, niacin supplement, dried Lactobacillus acidophilus fermentation product, dried Lactobacillus casei fermentation product, dried Enterococcus faecium fermentation product, dried Bifidobacterium bifidum fermentation product, Yucca schidigera extract, d-calcium pantothenate, manganese proteinate, sunflower oil, copper proteinate, riboflavin supplement, vitamin A supplement, vitamin B12 supplement, menadione sodium bisulfite complex, pyridoxine hydrochloride, thiamine mononitrate, biotin, canola oil, sodium selenite, vitamin D3 supplement, calcium iodate, folic acid, rosemary extract.",
       "guaranteed_analysis": {
@@ -1898,7 +1953,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-dry-subzero-fraser-valley-large-breed-dog-food.png"
+        "/products/nutrience/nutrience-food-sub-zero-fraser-valley-large-breed-dog-food.png"
       ]
     },
     {
@@ -1906,7 +1961,8 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/chicken-pate-with-brown-rice-vegetables",
       "channel": "retail",
-      "product_type": "wet",
+      "product_type": "food",
+      "product_format": "wet",
       "product_line": "Original",
       "ingredients_raw": "Chicken, chicken broth, chicken liver, fresh whole eggs, brown rice, natural flavour, carrots, canola oil, flaxseed, peas, guar gum, salt, pea fiber, zinc proteinate, vitamin E supplement, L-ascorbyl-2 polyphosphate (source of vitamin C), ferrous sulfate, zinc sulfate, iron proteinate, copper proteinate, thiamine mononitrate, sodium selenite, niacin supplement, pantothenate calcium, vitamin A supplement, manganese sulfate, riboflavin supplement, manganese proteinate, vitamin D 3 supplement, vitamin B 12 supplement, pyridoxine hydrochloride, calcium iodate, folic acid.",
       "guaranteed_analysis": {
@@ -1925,7 +1981,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-wet-nutrience-original-chicken-p-t-for-puppies.png"
+        "/products/nutrience/nutrience-food-nutrience-original-chicken-p-t-for-puppies.png"
       ]
     },
     {
@@ -1933,7 +1989,8 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/canadian-pacific-elk-antler-sticks",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "treat",
+      "product_format": "dry",
       "product_line": "SubZero",
       "ingredients_raw": "Sweet potato, ground elk antler, freeze-dried salmon, citrus fiber.",
       "guaranteed_analysis": {
@@ -1952,15 +2009,16 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-dry-canadian-pacific-elk-antler-sticks-dog-chews.png"
+        "/products/nutrience/nutrience-treat-canadian-pacific-elk-antler-sticks-dog-chews.png"
       ]
     },
     {
-      "name": "SubZero Prairie Red Large Breed Dog Food",
+      "name": "Sub Zero Prairie Red Large Breed Dog Food",
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/large-breed-prairie-red-formula",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "SubZero",
       "ingredients_raw": "Deboned beef, deboned lamb, deboned wild boar, deboned pork, deboned bison, beef liver, pork liver, pork meal, peas, pork fat (preserved with mixed tocopherols and citric acid), pea protein, lamb meal, lentils, natural flavor, freeze-dried beef liver, salmon, cod, chickpeas, sweet potatoes, fish oil, sun-cured alfalfa meal, pea fiber, salt, potassium chloride, taurine, choline chloride, inulin, DL-methionine, freeze-dried sweet potatoes, freeze-dried pumpkin, freeze-dried green mussels, freeze-dried cod liver, freeze-dried kelp, zinc proteinate, apples, blueberries, carrots, cranberries, ginger, pumpkin, glucosamine hydrochloride, chondroitin sulfate, vitamin E supplement, iron proteinate, L-ascorbyl-2-polyphosphate, niacin supplement, dried Lactobacillus acidophilus fermentation product, dried Lactobacillus casei fermentation product, dried Enterococcus faecium fermentation product, dried Bifidobacterium bifidum fermentation product, Yucca schidigera extract, d-calcium pantothenate, manganese proteinate, sunflower oil, copper proteinate, riboflavin supplement, vitamin A supplement, vitamin B12 supplement, menadione sodium bisulfite complex, pyridoxine hydrochloride, thiamine mononitrate, biotin, canola oil, sodium selenite, vitamin D3 supplement, calcium iodate, folic acid, rosemary extract.",
       "guaranteed_analysis": {
@@ -1984,7 +2042,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-dry-subzero-prairie-red-large-breed-dog-food.png"
+        "/products/nutrience/nutrience-food-sub-zero-prairie-red-large-breed-dog-food.png"
       ]
     },
     {
@@ -1992,7 +2050,8 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/freeze-dried-chicken-treats",
       "channel": "retail",
-      "product_type": "supplements",
+      "product_type": "treat",
+      "product_format": "dry",
       "product_line": "SubZero",
       "ingredients_raw": "Chicken",
       "guaranteed_analysis": {
@@ -2002,7 +2061,7 @@
         "moisture_max": 5.0
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "3550 kcal/kg, 1 kcal/treat",
+      "calorie_content": "3550 kcal/kg, 1.77 kcal/treat",
       "variants": [
         {
           "size_kg": 0.07,
@@ -2011,15 +2070,16 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-supplements-freeze-dried-chicken-dog-treats.png"
+        "/products/nutrience/nutrience-treat-freeze-dried-chicken-dog-treats.png"
       ]
     },
     {
-      "name": "SubZero Prairie Red Small Breed Dog Food",
+      "name": "Sub Zero Prairie Red Small Breed Dog Food",
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/small-breed-prairie-red-formula",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "SubZero",
       "ingredients_raw": "Deboned beef, deboned lamb, deboned wild boar, deboned pork, deboned bison, beef liver, pork liver, pork meal, peas, pork fat (preserved with mixed tocopherols and citric acid), pea protein, lamb meal, lentils, natural flavor, freeze-dried beef liver, salmon, cod, chickpeas, sweet potatoes, fish oil, sun-cured alfalfa meal, pea fiber, salt, potassium chloride, taurine, choline chloride, inulin, DL-methionine, freeze-dried sweet potatoes, freeze-dried pumpkin, freeze-dried green mussels, freeze- dried cod liver, freeze-dried kelp, zinc proteinate, apples, blueberries, carrots, cranberries, ginger, pumpkin, glucosamine hydrochloride, chondroitin sulfate, vitamin E supplement, iron proteinate, L-ascorbyl-2-polyphosphate, niacin supplement, dried Lactobacillus acidophilus fermentation product, dried Lactobacillus casei fermentation product, dried Enterococcus faecium fermentation product, dried Bifidobacterium bifidum fermentation product, Yucca schidigera extract, d-calcium pantothenate, manganese proteinate, sunflower oil, copper proteinate, riboflavin supplement, vitamin A supplement, vitamin B12 supplement, menadione sodium bisulfite complex, pyridoxine hydrochloride, thiamine mononitrate, biotin, canola oil, sodium selenite, vitamin D3 supplement, calcium iodate, folic acid, rosemary extract.",
       "guaranteed_analysis": {
@@ -2048,7 +2108,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-dry-subzero-prairie-red-small-breed-dog-food.png"
+        "/products/nutrience/nutrience-food-sub-zero-prairie-red-small-breed-dog-food.png"
       ]
     },
     {
@@ -2056,7 +2116,8 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/freeze-dried-chicken-chicken-liver-duck",
       "channel": "retail",
-      "product_type": "supplements",
+      "product_type": "treat",
+      "product_format": "dry",
       "product_line": "SubZero",
       "ingredients_raw": "Chicken, Chicken Liver and Duck.",
       "guaranteed_analysis": {
@@ -2066,7 +2127,7 @@
         "moisture_max": 5.0
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "3395 kcal/kg, 2 kcal/treat",
+      "calorie_content": "3395 kcal/kg, 2.03 kcal/treat",
       "variants": [
         {
           "size_kg": 0.07,
@@ -2075,15 +2136,16 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-supplements-freeze-dried-chicken-chicken-liver-duck-dog-treats.png"
+        "/products/nutrience/nutrience-treat-freeze-dried-chicken-chicken-liver-duck-dog-treats.png"
       ]
     },
     {
-      "name": "SubZero Northern Lakes Fish & Duck Dog Food",
+      "name": "Sub Zero Northern Lakes Fish & Duck Dog Food",
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/northern-lakes-formula",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "SubZero",
       "ingredients_raw": "Duck, trout, lamb, salmon meal, whitefish meal, peas, lentils, pork meal, pea protein, canola oil (preserved with mixed tocopherols and citric acid), chickpeas, sun-cured alfalfa meal, freeze-dried duck, salmon, cod, natural flavor, salt, fish oil, pea fiber, choline chloride, taurine, potassium chloride, inulin, zinc proteinate, DL methionine, freeze- dried sweet potatoes, freeze-dried pumpkin, freeze-dried green mussels, freeze-dried cod liver, freeze-dried kelp, apples, blueberries, carrots, cranberries, ginger, pumpkin, glucosamine hydrochloride, chondroitin sulfate, vitamin E supplement, iron proteinate, L-ascorbyl-2-polyphosphate, niacin supplement, dried Lactobacillus acidophilus fermentation product, dried Lactobacillus casei fermentation product, dried Enterococcus faecium fermentation product, dried Bifidobacterium bifidum fermentation product, Yucca schidigera extract, d-calcium pantothenate, manganese proteinate, sunflower oil, copper proteinate, riboflavin supplement, vitamin A supplement, vitamin B12 supplement, menadione sodium bisulfite complex, pyridoxine hydrochloride, thiamine mononitrate, biotin, sodium selenite, vitamin D3 supplement, calcium iodate, folic acid, rosemary extract.",
       "guaranteed_analysis": {
@@ -2112,7 +2174,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-dry-subzero-northern-lakes-fish-duck-dog-food.png"
+        "/products/nutrience/nutrience-food-sub-zero-northern-lakes-fish-duck-dog-food.png"
       ]
     },
     {
@@ -2120,7 +2182,8 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/freeze-dried-beef-liver-treats",
       "channel": "retail",
-      "product_type": "supplements",
+      "product_type": "treat",
+      "product_format": "dry",
       "product_line": "SubZero",
       "ingredients_raw": "Beef Liver",
       "guaranteed_analysis": {
@@ -2130,7 +2193,7 @@
         "moisture_max": 5.0
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "3480 kcal/kg, 1 kcal/treat",
+      "calorie_content": "3480 kcal/kg, 1.73 kcal/treat",
       "variants": [
         {
           "size_kg": 0.09,
@@ -2139,7 +2202,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-supplements-freeze-dried-beef-liver-treats-for-dogs.png"
+        "/products/nutrience/nutrience-treat-freeze-dried-beef-liver-treats-for-dogs.png"
       ]
     },
     {
@@ -2147,7 +2210,8 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/weight-control",
       "channel": "retail",
-      "product_type": "wet",
+      "product_type": "food",
+      "product_format": "wet",
       "product_line": "Care",
       "ingredients_raw": "Chicken, chicken broth, ocean fish, chicken liver, pea protein, peas, chickpeas, sun-cured alfalfa meal, sweet potatoes, agar-agar, sodium tripolyphosphate, tricalcium phosphate, lentils, calcium carbonate, salmon oil, flaxseed, salt, choline chloride, Yucca schidigera extract, DL-methionine, potassium chloride, pea fiber, dried kelp, taurine, zinc proteinate, L-ascorbyl-2-polyphosphate (source of vitamin C), vitamin E supplement, ferrous sulfate, zinc sulfate, iron proteinate, copper proteinate, inulin, chia seeds, ginger, aloe vera, apple, avocado, blueberry, carob, carrot, chamomile, cranberry, fennel seed, green tea, kale, marigold, papaya, paprika, parsley, pomegranate, pumpkin, rosemary, spirulina, thyme, tomato, turmeric, spinach, thiamine mononitrate, niacin supplement, pyridoxine hydrochloride, vitamin A supplement, D-calcium pantothenate, manganese sulfate, manganese proteinate, riboflavin supplement, sodium selenite, vitamin D3 supplement, vitamin B12 supplement, calcium iodate, folic acid.",
       "guaranteed_analysis": {
@@ -2166,7 +2230,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-wet-nutrience-care-weight-management-wet-dog-food.png"
+        "/products/nutrience/nutrience-food-nutrience-care-weight-management-wet-dog-food.png"
       ]
     },
     {
@@ -2174,7 +2238,8 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/sensitive-skin-and-stomach",
       "channel": "retail",
-      "product_type": "wet",
+      "product_type": "food",
+      "product_format": "wet",
       "product_line": "Care",
       "ingredients_raw": "Duck, duck broth, ocean fish, pea protein, pumpkin, salmon, peas, brown rice, canola oil, sweet potatoes, agar-agar, chickpeas, salmon oil, lentils, calcium carbonate, tricalcium phosphate, salt, lecithin, choline chloride, flaxseed, dried kelp, pea fiber, zinc proteinate, L ascorbyl-2-polyphosphate (source of vitamin C), vitamin E supplement, inulin, chia seeds, ginger, aloe vera, apple, avocado, blueberry, carob, carrot, chamomile, cranberry, fennel seed, green tea, kale, marigold, papaya, paprika, parsley, pomegranate, rosemary, spirulina, thyme, tomato, turmeric, sun-cured alfalfa meal, spinach, ferrous sulfate, zinc sulfate, iron proteinate, copper proteinate, thiamine mononitrate, niacin supplement, pyridoxine hydrochloride, vitamin A supplement, D-calcium pantothenate, manganese sulfate, manganese proteinate, riboflavin supplement, sodium selenite, vitamin D3 supplement, vitamin B12 supplement, calcium iodate, folic acid.",
       "guaranteed_analysis": {
@@ -2193,7 +2258,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-wet-sensitive-skin-stomach-hypoallergenic-wet-dog-food.png"
+        "/products/nutrience/nutrience-food-sensitive-skin-stomach-hypoallergenic-wet-dog-food.png"
       ]
     },
     {
@@ -2201,9 +2266,10 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/pate-with-yorkshire-pork",
       "channel": "retail",
-      "product_type": "wet",
+      "product_type": "food",
+      "product_format": "wet",
       "product_line": "Infusion",
-      "ingredients_raw": "Pork, pork broth, chicken, pork liver, rice, green peas, red lentils, sun-cured alfalfa, freeze-dried chicken liver, salmon oil, coconut oil, salt, choline chloride, potassium chloride, guar gum, carrageenan, cassia gum, calcium carbonate, pumpkin, butternut squash, carrots, spinach, broccoli, apples, blueberries, cranberries, pomegranate, juniper berry extract, ginger, fennel, chamomile, peppermint leaf, licorice root, turmeric, zinc proteinate, vitamin E supplement, L-ascorbyl-2-polyphosphate (source of vitamin C), ferrous sulfate, zinc sulfate, iron proteinate, copper proteinate, thiamine mononitrate, sodium selenite, niacin supplement, d-calcium pantothenate, vitamin A supplement, manganese sulfate, riboflavin supplement, manganese proteinate, vitamin D 3  supplement, vitamin B 12  supplement, pyridoxine hydrochloride, calcium iodate, folic acid.",
+      "ingredients_raw": "Pork, pork broth, chicken, pork liver, rice, green peas, red lentils, sun-cured alfalfa, freeze-dried chicken liver, salmon oil, coconut oil, salt, choline chloride, potassium chloride, guar gum, carrageenan, cassia gum, calcium carbonate, pumpkin, butternut squash, carrots, spinach, broccoli, apples, blueberries, cranberries, pomegranate, juniper berry extract, ginger, fennel, chamomile, peppermint leaf, licorice root, turmeric, zinc proteinate, vitamin E supplement, L-ascorbyl-2-polyphosphate (source of vitamin C), ferrous sulfate, zinc sulfate, iron proteinate, copper proteinate, thiamine mononitrate, sodium selenite, niacin supplement, d-calcium pantothenate, vitamin A supplement, manganese sulfate, riboflavin supplement, manganese proteinate, vitamin D 3 supplement, vitamin B 12 supplement, pyridoxine hydrochloride, calcium iodate, folic acid.",
       "guaranteed_analysis": {
         "crude_protein_min": 9.0,
         "crude_fat_min": 6.0,
@@ -2220,7 +2286,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-wet-infusion-p-t-with-yorkshire-pork-wet-dog-food.png"
+        "/products/nutrience/nutrience-food-infusion-p-t-with-yorkshire-pork-wet-dog-food.png"
       ]
     },
     {
@@ -2228,9 +2294,10 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/pate-with-brome-lake-duck",
       "channel": "retail",
-      "product_type": "wet",
+      "product_type": "food",
+      "product_format": "wet",
       "product_line": "Infusion",
-      "ingredients_raw": "Duck, duck broth, chicken, turkey, chicken liver, herring, rice, green peas, red lentils, sun-cured alfalfa, freeze-dried chicken liver, salmon oil, coconut oil, calcium carbonate, salt, choline chloride, guar gum, carrageenan, cassia gum, pumpkin, butternut squash, carrots, spinach, broccoli, apples, blueberries, cranberries, pomegranate, juniper berry extract, ginger, fennel, chamomile, peppermint leaf, licorice root, turmeric, zinc proteinate, vitamin E supplement, L-ascorbyl-2-polyphosphate (source of vitamin C), ferrous sulfate, zinc sulfate, iron proteinate, copper proteinate, thiamine mononitrate, sodium selenite, niacin supplement, d-calcium pantothenate, vitamin A supplement, manganese sulfate, riboflavin supplement, manganese proteinate, vitamin D 3  supplement, vitamin B 12  supplement, pyridoxine hydrochloride, calcium iodate, folic acid.",
+      "ingredients_raw": "Duck, duck broth, chicken, turkey, chicken liver, herring, rice, green peas, red lentils, sun-cured alfalfa, freeze-dried chicken liver, salmon oil, coconut oil, calcium carbonate, salt, choline chloride, guar gum, carrageenan, cassia gum, pumpkin, butternut squash, carrots, spinach, broccoli, apples, blueberries, cranberries, pomegranate, juniper berry extract, ginger, fennel, chamomile, peppermint leaf, licorice root, turmeric, zinc proteinate, vitamin E supplement, L-ascorbyl-2-polyphosphate (source of vitamin C), ferrous sulfate, zinc sulfate, iron proteinate, copper proteinate, thiamine mononitrate, sodium selenite, niacin supplement, d-calcium pantothenate, vitamin A supplement, manganese sulfate, riboflavin supplement, manganese proteinate, vitamin D 3 supplement, vitamin B 12 supplement, pyridoxine hydrochloride, calcium iodate, folic acid.",
       "guaranteed_analysis": {
         "crude_protein_min": 9.0,
         "crude_fat_min": 7.0,
@@ -2247,7 +2314,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-wet-infusion-p-t-with-brome-lake-duck-wet-dog-food.png"
+        "/products/nutrience/nutrience-food-infusion-p-t-with-brome-lake-duck-wet-dog-food.png"
       ]
     },
     {
@@ -2255,9 +2322,10 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/pate-with-canadian-angus-beef",
       "channel": "retail",
-      "product_type": "wet",
+      "product_type": "food",
+      "product_format": "wet",
       "product_line": "Infusion",
-      "ingredients_raw": "Beef, beef broth, chicken, pork, pork liver, rice, green peas, red lentils, sun-cured alfalfa, calcium carbonate, freeze-dried chicken liver, salmon oil, coconut oil, salt, choline chloride, guar gum, carrageenan, cassia gum, pumpkin, butternut squash, carrots, spinach, broccoli, apples, blueberries, cranberries, pomegranate, juniper berry extract, ginger, fennel, chamomile, peppermint leaf, licorice root, turmeric, zinc proteinate, vitamin E supplement, L-ascorbyl-2-polyphosphate (source of vitamin C), ferrous sulfate, zinc sulfate, iron proteinate, copper proteinate, thiamine mononitrate, sodium selenite, niacin supplement, d-calcium pantothenate, vitamin A supplement, manganese sulfate, riboflavin supplement, manganese proteinate, vitamin D 3  supplement, vitamin B 12  supplement, pyridoxine hydrochloride, calcium iodate, folic acid.",
+      "ingredients_raw": "Beef, beef broth, chicken, pork, pork liver, rice, green peas, red lentils, sun-cured alfalfa, calcium carbonate, freeze-dried chicken liver, salmon oil, coconut oil, salt, choline chloride, guar gum, carrageenan, cassia gum, pumpkin, butternut squash, carrots, spinach, broccoli, apples, blueberries, cranberries, pomegranate, juniper berry extract, ginger, fennel, chamomile, peppermint leaf, licorice root, turmeric, zinc proteinate, vitamin E supplement, L-ascorbyl-2-polyphosphate (source of vitamin C), ferrous sulfate, zinc sulfate, iron proteinate, copper proteinate, thiamine mononitrate, sodium selenite, niacin supplement, d-calcium pantothenate, vitamin A supplement, manganese sulfate, riboflavin supplement, manganese proteinate, vitamin D 3 supplement, vitamin B 12 supplement, pyridoxine hydrochloride, calcium iodate, folic acid.",
       "guaranteed_analysis": {
         "crude_protein_min": 9.0,
         "crude_fat_min": 5.0,
@@ -2274,7 +2342,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-wet-p-t-with-canadian-angus-beef-wet-dog-food.png"
+        "/products/nutrience/nutrience-food-p-t-with-canadian-angus-beef-wet-dog-food.png"
       ]
     },
     {
@@ -2282,15 +2350,16 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/healthy-puppy-chicken-meal-with-brown-rice-recipe",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "Original",
-      "ingredients_raw": "Chicken meal, brown rice, oatmeal, green peas, chicken fat (preserved with mixed tocopherols), dried beet pulp, egg product, natural chicken flavor, flaxseed, brewer’s yeast, salmon oil (source of DHA), blueberries, cranberries, carrots, vitamins [vitamin E supplement, vitamin A supplement, niacin, calcium pantothenate, riboflavin, pyridoxine hydrochloride, thiamine mononitrate, biotin, vitamin B12 supplement, vitamin D3 supplement, folic acid], minerals [zinc sulfate, zinc proteinate, iron proteinate, ferrous sulfate, copper proteinate, copper sulfate, manganese proteinate, manganese oxide, calcium iodate, sodium selenite], calcium carbonate, salt, potassium chloride, lecithin, choline chloride, DL methionine, L-lysine, yeast extract, chicory root extract, taurine, glucosamine hydrochloride, chondroitin sulfate, rosemary extract.",
+      "ingredients_raw": "Chicken meal, brown rice, oatmeal, green peas, chicken fat (preserved with mixed tocopherols), dried beet pulp, egg product, natural chicken flavor, flaxseed, brewer's yeast, salmon oil (source of DHA), blueberries, cranberries, carrots, vitamins [vitamin E supplement, vitamin A supplement, niacin, calcium pantothenate, riboflavin, pyridoxine hydrochloride, thiamine mononitrate, biotin, vitamin B12 supplement, vitamin D3 supplement, folic acid], minerals [zinc sulfate, zinc proteinate, iron proteinate, ferrous sulfate, copper proteinate, copper sulfate, manganese proteinate, manganese oxide, calcium iodate, sodium selenite], calcium carbonate, salt, potassium chloride, lecithin, choline chloride, DL methionine, L-lysine, yeast extract, chicory root extract, taurine, glucosamine hydrochloride, chondroitin sulfate, rosemary extract.",
       "guaranteed_analysis": {
         "crude_protein_min": 25.0,
         "crude_fat_min": 15.0,
         "crude_fiber_max": 4.0,
         "moisture_max": 10.0,
-        "taurine_min": 500.0,
+        "taurine_min": 0.05,
         "omega_6_min": 3.2,
         "omega_3_min": 0.4,
         "glucosamine_min": 200.0,
@@ -2312,7 +2381,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-dry-nutrience-healthy-puppy-food-chicken-meal-with-brown-rice.png"
+        "/products/nutrience/nutrience-food-nutrience-healthy-puppy-food-chicken-meal-with-brown-rice.png"
       ]
     },
     {
@@ -2320,7 +2389,8 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/salmon-tuna-amberjack",
       "channel": "retail",
-      "product_type": "supplements",
+      "product_type": "treat",
+      "product_format": "dry",
       "product_line": "SubZero",
       "ingredients_raw": "Salmon, Tuna and Amberjack.",
       "guaranteed_analysis": {
@@ -2330,7 +2400,7 @@
         "moisture_max": 5.0
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "3245 kcal/kg, 2 kcal/treat",
+      "calorie_content": "3245 kcal/kg, 2.27 kcal/treat",
       "variants": [
         {
           "size_kg": 0.07,
@@ -2339,15 +2409,16 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-supplements-freeze-dried-salmon-tuna-amberjack-dog-treats.png"
+        "/products/nutrience/nutrience-treat-freeze-dried-salmon-tuna-amberjack-dog-treats.png"
       ]
     },
     {
-      "name": "SubZero Northern Lakes Duck Pâté",
+      "name": "Sub Zero Northern Lakes Duck Pâté",
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/northern-lakes-pate",
       "channel": "retail",
-      "product_type": "wet",
+      "product_type": "food",
+      "product_format": "wet",
       "product_line": "SubZero",
       "ingredients_raw": "Duck, duck broth, trout, pea protein, salmon meal, canola oil, water sufficient for processing, sweet potatoes, peas, agar-agar, salt, choline chloride, potassium chloride, pea fibre, yeast extract (source of MOS), inulin, dried apple pomace, dried blueberry pomace, dried carrots, dried cranberry pomace, dried pumpkin, ground ginger, calcium carbonate, zinc proteinate, L-ascorbyl-2-polyphosphate, vitamin E supplement, ferrous sulfate, zinc sulfate, iron proteinate, copper proteinate, thiamine mononitrate, niacin supplement, calcium D-pantothenate, vitamin A supplement, manganese sulfate, riboflavin supplement, manganese proteinate, vitamin D3 supplement, sodium selenite, vitamin B12 supplement, pyridoxine hydrochloride, calcium iodate, folic acid.",
       "guaranteed_analysis": {
@@ -2366,7 +2437,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-wet-subzero-northern-lakes-duck-p-t.png"
+        "/products/nutrience/nutrience-food-sub-zero-northern-lakes-duck-p-t.png"
       ]
     },
     {
@@ -2374,9 +2445,10 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/healthy-senior-chicken",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "Infusion",
-      "ingredients_raw": "Deboned chicken, chicken meal, pearled barley, steel cut oats, red lentils, green peas, chicken fat (preserved with mixed tocopherols), natural chicken flavour, sun-cured alfalfa meal, freeze-dried chicken liver, salmon oil, coconut oil, calcium carbonate, pumpkin, butternut squash, carrots, broccoli, spinach, apples, pomegranate, blueberries, cranberries, juniper berry extract, ginger, fennel, chamomile, peppermint leaf, licorice root, turmeric, vitamins (vitamin E supplement, vitamin A supplement, niacin, calcium pantothenate, riboflavin, pyridoxine hydrochloride, thiamine mononitrate, biotin, vitamin B 12  supplement, vitamin D 3  supplement, folic acid), minerals (zinc sulfate, zinc proteinate, iron proteinate, ferrous sulfate, copper proteinate, copper sulfate, manganese proteinate, manganous oxide, calcium iodate, sodium selenite), potassium chloride, salt, lecithin, choline chloride, chicory root extract, yeast extract, DL-methionine, L-lysine, glucosamine hydrochloride, chondroitin sulfate, rosemary extract, dried Lactobacillus acidophilus fermentation product, dried Lactobacillus casei fermentation product, dried Bifidobacterium bifidum fermentation product, dried Enterococcus faecium fermentation product.",
+      "ingredients_raw": "Deboned chicken, chicken meal, pearled barley, steel cut oats, red lentils, green peas, chicken fat (preserved with mixed tocopherols), natural chicken flavour, sun-cured alfalfa meal, freeze-dried chicken liver, salmon oil, coconut oil, calcium carbonate, pumpkin, butternut squash, carrots, broccoli, spinach, apples, pomegranate, blueberries, cranberries, juniper berry extract, ginger, fennel, chamomile, peppermint leaf, licorice root, turmeric, vitamins (vitamin E supplement, vitamin A supplement, niacin, calcium pantothenate, riboflavin, pyridoxine hydrochloride, thiamine mononitrate, biotin, vitamin B 12 supplement, vitamin D 3 supplement, folic acid), minerals (zinc sulfate, zinc proteinate, iron proteinate, ferrous sulfate, copper proteinate, copper sulfate, manganese proteinate, manganous oxide, calcium iodate, sodium selenite), potassium chloride, salt, lecithin, choline chloride, chicory root extract, yeast extract, DL-methionine, L-lysine, glucosamine hydrochloride, chondroitin sulfate, rosemary extract, dried Lactobacillus acidophilus fermentation product, dried Lactobacillus casei fermentation product, dried Bifidobacterium bifidum fermentation product, dried Enterococcus faecium fermentation product.",
       "guaranteed_analysis": {
         "crude_protein_min": 28.0,
         "crude_fat_min": 14.0,
@@ -2397,7 +2469,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-dry-healthy-senior-dog-food-chicken.png"
+        "/products/nutrience/nutrience-food-healthy-senior-dog-food-chicken.png"
       ]
     },
     {
@@ -2405,7 +2477,8 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/puppy-milk-replacer",
       "channel": "retail",
-      "product_type": "dry",
+      "product_type": "food",
+      "product_format": "dry",
       "product_line": "Grain Free",
       "ingredients_raw": "Whey protein concentrate, pork fat, coconut oil, lactose, bovine colostrum, dicalcium phosphate, lecithin, mono- and di-glycerides, DL-methionine, calcium carbonate, L-tryptophan, taurine, β-glucans, mannan-oligosaccharides, Bacillus licheniformis, Bacillus subtilis, vanilla flavour, vitamin A supplement, thiamine hydrochloride, riboflavin, pyridoxine hydrochloride, vitamin B 12 supplement, d-calcium pantothenate, ascorbic acid, vitamin D3 supplement, vitamin E supplement, menadione dimethylpyridional bisulfite, niacin, biotin, salt, magnesium oxide, ferrous",
       "guaranteed_analysis": {
@@ -2415,10 +2488,11 @@
         "ash_max": 7.5,
         "calcium_min": 1.0,
         "phosphorus_min": 0.8,
-        "taurine_min": 500.0,
+        "taurine_min": 0.05,
         "moisture_max": 5.0
       },
       "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4600 kcal/kg",
       "variants": [
         {
           "size_kg": 0.34,
@@ -2427,7 +2501,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-dry-puppy-milk-replacer-formula.png"
+        "/products/nutrience/nutrience-food-puppy-milk-replacer-formula.png"
       ]
     },
     {
@@ -2435,7 +2509,8 @@
       "brand": "Nutrience",
       "url": "https://nutrience.com/products/freeze-dried-lamb-liver",
       "channel": "retail",
-      "product_type": "supplements",
+      "product_type": "treat",
+      "product_format": "dry",
       "product_line": "SubZero",
       "ingredients_raw": "Lamb Liver",
       "guaranteed_analysis": {
@@ -2445,7 +2520,7 @@
         "moisture_max": 5.0
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "3580 kcal/kg, 2 kcal/treat",
+      "calorie_content": "3580 kcal/kg, 2.50 kcal/treat",
       "variants": [
         {
           "size_kg": 0.09,
@@ -2454,7 +2529,7 @@
         }
       ],
       "images": [
-        "/products/nutrience/nutrience-supplements-freeze-dried-lamb-liver-dog-treats.png"
+        "/products/nutrience/nutrience-treat-freeze-dried-lamb-liver-dog-treats.png"
       ]
     }
   ]

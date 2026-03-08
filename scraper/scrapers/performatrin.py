@@ -138,14 +138,20 @@ def _fetch_product_urls(session: SyncSession) -> list[str]:
     return sorted(urls)
 
 
-def _detect_product_type(url: str, title: str) -> str:
-    """Detect product type from URL and title keywords."""
+def _detect_type(url: str, title: str) -> str:
+    """Detect product type (food/treat/supplement)."""
+    combined = f"{url} {title}".lower()
+    if "treat" in combined:
+        return "treat"
+    return "food"
+
+
+def _detect_format(url: str, title: str) -> str:
+    """Detect product format (dry/wet)."""
     combined = f"{url} {title}".lower()
     wet_keywords = ["wet", "can", "stew", "pate", "paté", "gravy", "dinner"]
     if any(kw in combined for kw in wet_keywords):
         return "wet"
-    if "treat" in combined:
-        return "treats"
     return "dry"
 
 
@@ -196,7 +202,7 @@ def _parse_ingredients(soup: BeautifulSoup) -> str | None:
         return None
 
     ing_text = clean_text(ing_div.get_text(separator=" "))
-    if len(ing_text) < 20:
+    if len(ing_text) < 3:
         return None
 
     # Strip leading "Ingredients:" prefix if present
@@ -365,7 +371,8 @@ def _parse_product(url: str, html: str) -> Product | None:
         "brand": "Performatrin",
         "url": url,
         "channel": "retail",
-        "product_type": _detect_product_type(url, name),
+        "product_type": _detect_type(url, name),
+        "product_format": _detect_format(url, name),
     }
 
     sub_brand = _detect_sub_brand(name)

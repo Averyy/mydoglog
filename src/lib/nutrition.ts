@@ -84,15 +84,13 @@ export interface AvailableUnit {
   label: string
 }
 
-/** Sensible default units per product type when calorie content is missing. */
+/** Sensible default units per product type+format combo when calorie content is missing. */
 const TYPE_DEFAULT_UNITS: Record<string, AvailableUnit[]> = {
-  dry_food: [{ value: "cup", label: "cup" }, { value: "g", label: "g" }],
-  wet_food: [{ value: "can", label: "can" }, { value: "g", label: "g" }],
-  treat: [{ value: "treat", label: "treat" }, { value: "g", label: "g" }],
-  freeze_dried: [{ value: "cup", label: "cup" }, { value: "g", label: "g" }],
-  topper: [{ value: "tbsp", label: "tbsp" }, { value: "g", label: "g" }],
-  supplement: [{ value: "scoop", label: "scoop" }, { value: "g", label: "g" }],
-  probiotic: [{ value: "scoop", label: "scoop" }, { value: "g", label: "g" }],
+  "food/dry": [{ value: "cup", label: "cup" }, { value: "g", label: "g" }],
+  "food/wet": [{ value: "can", label: "can" }, { value: "g", label: "g" }],
+  "treat": [{ value: "treat", label: "treat" }, { value: "g", label: "g" }],
+  "supplement/dry": [{ value: "scoop", label: "scoop" }, { value: "g", label: "g" }],
+  "supplement/wet": [{ value: "tbsp", label: "tbsp" }, { value: "g", label: "g" }],
 }
 
 /**
@@ -104,6 +102,7 @@ const TYPE_DEFAULT_UNITS: Record<string, AvailableUnit[]> = {
 export function getAvailableUnits(
   calorieContent: string | null,
   productType?: string | null,
+  productFormat?: string | null,
 ): AvailableUnit[] | null {
   if (calorieContent) {
     const parsed = parseCalorieContent(calorieContent)
@@ -124,9 +123,14 @@ export function getAvailableUnits(
     if (units.length > 0) return units
   }
 
-  // Fallback to sensible defaults by product type
-  if (productType && TYPE_DEFAULT_UNITS[productType]) {
-    return TYPE_DEFAULT_UNITS[productType]
+  // Fallback to sensible defaults by product type+format
+  if (productType) {
+    const comboKey = productFormat ? `${productType}/${productFormat}` : productType
+    if (TYPE_DEFAULT_UNITS[comboKey]) return TYPE_DEFAULT_UNITS[comboKey]
+    // Try type-only key (e.g. "treat" has no format dependency)
+    if (TYPE_DEFAULT_UNITS[productType]) return TYPE_DEFAULT_UNITS[productType]
+    // Last resort: try with default format "dry"
+    if (TYPE_DEFAULT_UNITS[`${productType}/dry`]) return TYPE_DEFAULT_UNITS[`${productType}/dry`]
   }
 
   return null

@@ -1,8 +1,9 @@
 """Tests for scrapers.tasteofthewild — Taste of the Wild parsing logic."""
 
 from scrapers.tasteofthewild import (
+    _detect_format,
     _detect_life_stage,
-    _detect_product_type,
+    _detect_type,
     _detect_sub_brand,
     _parse_aafco,
     _parse_calorie_content,
@@ -27,31 +28,48 @@ class TestDetectSubBrand:
         assert _detect_sub_brand("https://tasteofthewildpetfood.com/dog/grain-free/high-prairie") == "Taste of the Wild"
 
 
-class TestDetectProductType:
-    def test_dry(self) -> None:
-        assert _detect_product_type("https://example.com/dog/dry", "Prairie Recipe") == "dry"
+class TestDetectType:
+    def test_dry_is_food(self) -> None:
+        assert _detect_type("https://example.com/dog/dry", "Prairie Recipe") == "food"
 
-    def test_wet_from_url(self) -> None:
-        assert _detect_product_type("https://example.com/dog/wet-food", "Recipe") == "wet"
-
-    def test_wet_from_title(self) -> None:
-        assert _detect_product_type("https://example.com/dog/food", "Bison in Gravy Canine Recipe") == "wet"
+    def test_wet_is_food(self) -> None:
+        assert _detect_type("https://example.com/dog/wet-food", "Recipe") == "food"
 
     def test_treats_from_title(self) -> None:
-        assert _detect_product_type("https://example.com/dog/food", "Turkey Treats") == "treats"
+        assert _detect_type("https://example.com/dog/food", "Turkey Treats") == "treat"
+
+    def test_topper_is_supplement(self) -> None:
+        assert _detect_type("https://example.com/dog/food", "Beef Topper") == "supplement"
+
+    def test_wetlands_is_food(self) -> None:
+        assert _detect_type(
+            "https://example.com/dog/grain-free/wetlands-with-roasted-fowl",
+            "Wetlands Canine Recipe with Roasted Fowl",
+        ) == "food"
+
+
+class TestDetectFormat:
+    def test_dry(self) -> None:
+        assert _detect_format("https://example.com/dog/dry", "Prairie Recipe") == "dry"
+
+    def test_wet_from_url(self) -> None:
+        assert _detect_format("https://example.com/dog/wet-food", "Recipe") == "wet"
+
+    def test_gravy_is_wet(self) -> None:
+        assert _detect_format("https://example.com/dog/food", "Bison in Gravy Canine Recipe") == "wet"
 
     def test_wetlands_is_dry_not_wet(self) -> None:
         """'Wetlands' should NOT match 'wet' — it's a dry product name."""
-        assert _detect_product_type(
+        assert _detect_format(
             "https://example.com/dog/grain-free/wetlands-with-roasted-fowl",
             "Wetlands Canine Recipe with Roasted Fowl",
         ) == "dry"
 
     def test_canned_is_wet(self) -> None:
-        assert _detect_product_type("https://example.com/dog/canned", "Recipe") == "wet"
+        assert _detect_format("https://example.com/dog/canned", "Recipe") == "wet"
 
     def test_stew_is_wet(self) -> None:
-        assert _detect_product_type("https://example.com/dog/food", "Beef Stew Recipe") == "wet"
+        assert _detect_format("https://example.com/dog/food", "Beef Stew Recipe") == "wet"
 
 
 class TestParseIngredients:
@@ -338,7 +356,7 @@ class TestParseProduct:
         assert result["name"] == "High Prairie Canine Recipe with Roasted Bison & Roasted Venison"
         assert result["brand"] == "Taste of the Wild"
         assert result["sub_brand"] == "Taste of the Wild"
-        assert result["product_type"] == "dry"
+        assert result["product_type"] == "food"
         assert result["ingredients_raw"] == "Water Buffalo, Lamb Meal, Chicken Meal, Sweet Potatoes"
         assert result["guaranteed_analysis"]["crude_protein_min"] == 32.0
         assert result["aafco_statement"] is not None
@@ -356,7 +374,7 @@ class TestParseProduct:
         url = "https://www.tasteofthewildpetfood.com/dog/grain-free/wetlands-with-roasted-fowl"
         result = _parse_product(url, html)
         assert result is not None
-        assert result["product_type"] == "dry"
+        assert result["product_type"] == "food"
 
     def test_puppy_product_life_stage(self) -> None:
         """Puppy products should get life_stage='puppy'."""

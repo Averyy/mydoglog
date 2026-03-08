@@ -65,6 +65,7 @@ function createPlanItem(from?: FeedingPlanItem): PlanItem {
         brandName: from.brandName,
         brandId: "",
         type: from.type,
+        format: from.format ?? null,
         channel: null,
         lifestage: null,
         imageUrl: from.imageUrl,
@@ -203,7 +204,7 @@ export function RoutineEditorContent({
         if (!item.product) return item
         const detail = productDetails.get(item.product.id)
         const calContent = detail?.calorieContent ?? item.product.calorieContent ?? null
-        const available = getAvailableUnits(calContent, item.product.type)
+        const available = getAvailableUnits(calContent, item.product.type, item.product.format)
         if (!available) return item
         const validValues = available.map((u) => u.value)
         if (validValues.includes(item.quantityUnit)) return item
@@ -406,7 +407,7 @@ export function RoutineEditorContent({
           const detail = item.product ? productDetails.get(item.product.id) : undefined
           const calorieContent = detail?.calorieContent ?? item.product?.calorieContent ?? null
           const unitOptions: AvailableUnit[] =
-            getAvailableUnits(calorieContent, item.product?.type) ||
+            getAvailableUnits(calorieContent, item.product?.type, item.product?.format) ||
             QUANTITY_UNIT_OPTIONS.map((o) => ({ value: o.value, label: o.label }))
 
           return (

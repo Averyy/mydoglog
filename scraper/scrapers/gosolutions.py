@@ -85,14 +85,17 @@ def _get_page_fields(next_data: dict) -> dict:
 
 def _detect_product_type(slug: str) -> str:
     """Detect product type from URL slug."""
-    if "/dry/" in slug:
-        return "dry"
-    if "/wet/" in slug:
-        return "wet"
     if "/toppers/" in slug or "/topper/" in slug:
-        return "supplements"
+        return "supplement"
     if "/treats/" in slug or "/treat/" in slug:
-        return "treats"
+        return "treat"
+    return "food"
+
+
+def _detect_product_format(slug: str) -> str:
+    """Detect product format from URL slug."""
+    if "/wet/" in slug or "/toppers/" in slug or "/topper/" in slug:
+        return "wet"
     return "dry"
 
 
@@ -307,6 +310,7 @@ def _parse_product(fields: dict, slug: str) -> Product | None:
         "url": url,
         "channel": "retail",
         "product_type": _detect_product_type(slug),
+        "product_format": _detect_product_format(slug),
     }
 
     if product_line:

@@ -78,22 +78,22 @@ class TestDetectChannel:
 
 class TestDetectType:
     def test_dry_food(self) -> None:
-        assert _detect_type("/dogs/dry-dog-food/some-product") == "dry"
+        assert _detect_type("/dogs/dry-dog-food/some-product") == "food"
 
     def test_wet_food(self) -> None:
-        assert _detect_type("/dogs/wet-dog-food/some-product") == "wet"
+        assert _detect_type("/dogs/wet-dog-food/some-product") == "food"
 
     def test_treats(self) -> None:
-        assert _detect_type("/dogs/dog-treats/some-treat") == "treats"
+        assert _detect_type("/dogs/dog-treats/some-treat") == "treat"
 
     def test_supplements(self) -> None:
-        assert _detect_type("/dogs/dog-supplements/fortiflora") == "supplements"
+        assert _detect_type("/dogs/dog-supplements/fortiflora") == "supplement"
 
-    def test_generic_dog_food_defaults_dry(self) -> None:
-        assert _detect_type("/dogs/dog-food/something") == "dry"
+    def test_generic_dog_food_defaults_food(self) -> None:
+        assert _detect_type("/dogs/dog-food/something") == "food"
 
-    def test_no_match_defaults_dry(self) -> None:
-        assert _detect_type("/products/something") == "dry"
+    def test_no_match_defaults_food(self) -> None:
+        assert _detect_type("/products/something") == "food"
 
 
 class TestParseIngredients:
@@ -218,7 +218,7 @@ class TestParseProduct:
         assert product["name"] == "Pro Plan Sensitive Skin & Stomach Salmon & Rice"
         assert product["brand"] == "Purina"
         assert product["channel"] == "retail"
-        assert product["product_type"] == "dry"
+        assert product["product_type"] == "food"
         assert product["sub_brand"] == "Pro Plan"
         assert product["ingredients_raw"] == "Salmon, Brewers Rice"
         assert product["source_id"] == "038100191311"

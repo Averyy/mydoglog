@@ -9,7 +9,7 @@
       "seed": 6
     },
     "by_type": {
-      "whole_food": 6
+      "food": 6
     }
   },
   "products": [
@@ -18,7 +18,8 @@
       "brand": "Whole Food",
       "url": "",
       "channel": "seed",
-      "product_type": "whole_food",
+      "product_type": "food",
+      "product_format": "wet",
       "ingredients_raw": "Chicken",
       "life_stage": "all",
       "images": [],
@@ -36,7 +37,8 @@
       "brand": "Whole Food",
       "url": "",
       "channel": "seed",
-      "product_type": "whole_food",
+      "product_type": "food",
+      "product_format": "wet",
       "ingredients_raw": "White Rice",
       "life_stage": "all",
       "images": [],
@@ -54,7 +56,8 @@
       "brand": "Whole Food",
       "url": "",
       "channel": "seed",
-      "product_type": "whole_food",
+      "product_type": "food",
+      "product_format": "wet",
       "ingredients_raw": "Carrots",
       "life_stage": "all",
       "images": [],
@@ -72,7 +75,8 @@
       "brand": "Whole Food",
       "url": "",
       "channel": "seed",
-      "product_type": "whole_food",
+      "product_type": "food",
+      "product_format": "wet",
       "ingredients_raw": "Broccoli",
       "life_stage": "all",
       "images": [],
@@ -90,7 +94,8 @@
       "brand": "Whole Food",
       "url": "",
       "channel": "seed",
-      "product_type": "whole_food",
+      "product_type": "food",
+      "product_format": "wet",
       "ingredients_raw": "Banana",
       "life_stage": "all",
       "images": [],
@@ -108,7 +113,8 @@
       "brand": "Whole Food",
       "url": "",
       "channel": "seed",
-      "product_type": "whole_food",
+      "product_type": "food",
+      "product_format": "wet",
       "ingredients_raw": "Blueberries",
       "life_stage": "all",
       "images": [],

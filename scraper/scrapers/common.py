@@ -60,6 +60,11 @@ class GuaranteedAnalysis(TypedDict, total=False):
     dha_min: float
     l_carnitine_min: float
     taurine_min: float
+    potassium_min: float
+    sodium_min: float
+    sodium_max: float
+    copper_min: float
+    collagen_min: float
 
 
 class Variant(TypedDict):
@@ -76,7 +81,8 @@ class Product(TypedDict):
     product_line: NotRequired[str]
     url: str
     channel: str  # "retail" or "vet"
-    product_type: str  # "dry", "wet", "treats", "supplements"
+    product_type: str  # "food", "treat", or "supplement"
+    product_format: str  # "dry" or "wet"
     ingredients_raw: NotRequired[str]
     guaranteed_analysis: NotRequired[GuaranteedAnalysis]
     guaranteed_analysis_basis: NotRequired[str]  # "as-fed" or "dry-matter"
@@ -350,10 +356,15 @@ def clean_text(text: str) -> str:
     text = text.replace("\n", " ")
     # Strip trademark/copyright symbols
     text = text.replace("®", "").replace("©", "").replace("™", "")
+    # Normalize smart/curly quotes to straight quotes
+    text = text.replace("\u2018", "'").replace("\u2019", "'")  # ' '
+    text = text.replace("\u201c", '"').replace("\u201d", '"')  # " "
+    # Strip stray backslashes (encoding artifacts, e.g. "vitamin E\ supplement")
+    text = text.replace("\\", "")
     # Insert space at camelCase boundaries (e.g. "CanolaOil" → "Canola Oil")
     text = re.sub(r"([a-z])([A-Z])", r"\1 \2", text)
-    # Normalize whitespace: collapse runs, strip
-    text = re.sub(r"[ \t]+", " ", text)
+    # Normalize whitespace: collapse runs, strip (includes \xa0 non-breaking spaces)
+    text = re.sub(r"[\s]+", " ", text)
     return text.strip()
 
 
@@ -384,6 +395,14 @@ _GA_LABEL_MAP: dict[str, str] = {
     "l-carnitine": "l_carnitine",
     "taurine": "taurine",
     "linoleic acid": "omega_6",
+    "potassium": "potassium",
+    "sodium": "sodium",
+    "copper": "copper",
+    "protein": "crude_protein",
+    "fat": "crude_fat",
+    "fiber": "crude_fiber",
+    "fibre": "crude_fiber",
+    "collagen": "collagen",
 }
 
 # Suffixes that indicate min or max — ordered longest first to avoid partial replacement
@@ -468,26 +487,73 @@ def parse_ga_html_table(html: str) -> GuaranteedAnalysis:
                 suffix = "_min"
                 field_name = f"{field_base}{suffix}"
 
-        value = _extract_percentage(value_text)
-        if value is not None:
+        # Fields that are always stored in mg/kg (never percentages)
+        _MG_KG_FIELDS = {"glucosamine", "chondroitin", "l_carnitine", "collagen"}
+
+        ga_result = _extract_ga_value(value_text)
+        if ga_result is not None:
+            value, is_mg_kg = ga_result
+            # If the value is in mg/kg but the field normally uses percentages,
+            # convert: 1% = 10,000 mg/kg → value_pct = value / 10000 * 100
+            if is_mg_kg and field_base not in _MG_KG_FIELDS:
+                value = round(value / 10000, 4)
             ga[field_name] = value
+        else:
+            value = None
 
         # If 3+ columns, second might be min and third max
         if len(cell_texts) >= 3:
-            val2 = _extract_percentage(cell_texts[2])
-            if val2 is not None and value is not None:
+            val2_result = _extract_ga_value(cell_texts[2])
+            if val2_result is not None and value is not None:
+                val2, is_mg_kg2 = val2_result
+                if is_mg_kg2 and field_base not in _MG_KG_FIELDS:
+                    val2 = round(val2 / 10000, 4)
                 # First was min, second is max
                 ga[f"{field_base}_min"] = value
                 ga[f"{field_base}_max"] = val2
 
+    # Sanity check: percentage-based GA fields must be <= 100%.
+    # Fields like glucosamine/chondroitin/l_carnitine are in mg/kg
+    # and can exceed 100, so we only validate true percentage fields.
+    _PCT_FIELDS = {
+        "crude_protein", "crude_fat", "crude_fiber", "moisture", "ash",
+        "calcium", "phosphorus", "omega_6", "omega_3", "epa", "dha",
+        "taurine", "potassium", "sodium", "copper",
+    }
+    bad_keys = [
+        k for k, v in ga.items()
+        if any(k.startswith(f) for f in _PCT_FIELDS) and v > 100
+    ]
+    for k in bad_keys:
+        logger.warning(f"GA sanity check: dropping {k}={ga[k]} (>100%)")
+        del ga[k]
+
     return ga  # type: ignore[return-value]
 
 
-def _extract_percentage(text: str) -> float | None:
-    """Extract a percentage number from text like '26%', '26.0 %', '26'."""
-    m = re.search(r"(\d+\.?\d*)\s*%?", text)
+def _extract_ga_value(text: str) -> tuple[float, bool] | None:
+    """Extract a GA value from text like '26%', '26.0 %', '500 mg/kg'.
+
+    Returns (value, is_mg_kg) or None if no number found.
+    """
+    is_mg_kg = bool(re.search(r"mg\s*/\s*kg", text, re.IGNORECASE))
+    m = re.search(r"(\d+[\d,]*\.?\d*)\s*(?:%|mg)", text)
+    if not m:
+        m = re.search(r"(\d+[\d,]*\.?\d*)", text)
     if m:
-        return float(m.group(1))
+        value = float(m.group(1).replace(",", ""))
+        return (value, is_mg_kg)
+    return None
+
+
+def _extract_percentage(text: str) -> float | None:
+    """Extract a percentage number from text like '26%', '26.0 %', '26'.
+
+    Legacy wrapper — use _extract_ga_value for mg/kg awareness.
+    """
+    result = _extract_ga_value(text)
+    if result:
+        return result[0]
     return None
 
 
@@ -573,7 +639,13 @@ def normalize_calorie_content(raw: str) -> str | None:
     if kg_match:
         parts.append(f"{int(float(kg_match.group(1)))} kcal/kg")
     if cup_match:
-        parts.append(f"{int(float(cup_match.group(1)))} kcal/{cup_unit}")
+        val = float(cup_match.group(1))
+        # Preserve decimals for per-treat/per-piece values (e.g. 1.73 kcal/treat)
+        # but use int for cup/can/pouch where values are always whole numbers
+        if cup_unit == "treat" and val != int(val):
+            parts.append(f"{val:.2f} kcal/{cup_unit}")
+        else:
+            parts.append(f"{int(val)} kcal/{cup_unit}")
 
     return ", ".join(parts) if parts else raw.strip()
 

@@ -1,17 +1,18 @@
 /** Human-readable labels for product type enum values. */
 export const PRODUCT_TYPE_LABELS: Record<string, string> = {
-  dry_food: "Kibble",
-  wet_food: "Wet food",
+  food: "Food",
   treat: "Treat",
-  topper: "Topper",
   supplement: "Supplement",
-  probiotic: "Probiotic",
-  freeze_dried: "Freeze-dried",
-  whole_food: "Whole food",
 }
 
-/** Product types that are supplements/toppers (not primary food). */
-export const SUPPLEMENT_PRODUCT_TYPES = new Set(["supplement", "probiotic", "topper", "treat"])
+/** Human-readable labels for product format enum values. */
+export const PRODUCT_FORMAT_LABELS: Record<string, string> = {
+  dry: "Kibble",
+  wet: "Wet",
+}
+
+/** Product types that are not primary food. */
+export const NON_FOOD_TYPES = new Set(["treat", "supplement"])
 
 /** Short human-readable labels for Purina 1–7 fecal scores. */
 export const FECAL_SCORE_LABELS: Record<number, string> = {

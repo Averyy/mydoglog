@@ -77,7 +77,7 @@ _FALLBACK_DATA: dict[str, dict] = {
     "hills-natural-jerky-mini-strips-real-beef-adult-treats": {
         "calorie_content": "3061 kcal/kg, 16 kcal/treat",
     },
-    # --- WET FOOD (retail) — Source: Chewy ---
+    # --- WET FOOD (retail) — Source: hillspet.ca (par conserve values)
     # NOTE: Variety packs are excluded from scraping (individual products scraped separately)
     "science-diet-mature-adult-healthy-cuisine-beef-carrots-peas-stew-canned": {
         "calorie_content": "257 kcal/can",
@@ -86,13 +86,16 @@ _FALLBACK_DATA: dict[str, dict] = {
         "calorie_content": "305 kcal/can",
     },
     "science-diet-adult-perfect-digestion-chicken-vegetable-rice-stew-canned": {
-        "calorie_content": "767 kcal/kg",
+        "calorie_content": "278 kcal/can",
+    },
+    "science-diet-adult-chunks-gravy-chicken-vegetable-canned": {
+        "calorie_content": "327 kcal/can",
     },
     "science-diet-adult-salmon-canned": {
         "calorie_content": "369 kcal/can",
     },
     "science-diet-puppy-chicken-canned": {
-        "calorie_content": "482 kcal/can",
+        "calorie_content": "495 kcal/can",
     },
     # --- DRY (retail) — Source: Chewy.ca + hillspet.com (US) ---
     "science-diet-adult-healthy-mobility-dry": {
@@ -105,15 +108,15 @@ _FALLBACK_DATA: dict[str, dict] = {
         },
         "calorie_content": "3617 kcal/kg, 361 kcal/cup",
     },
-    # --- WET FOOD (vet) — Source: Chewy.com (US) ---
+    # --- WET FOOD (vet) — Source: hillspet.ca (par conserve values)
     "prescription-diet-cd-multicare-urinary-care-canned": {
-        "calorie_content": "266 kcal/can",
+        "calorie_content": "448 kcal/can",
     },
     "prescription-diet-dd-salmon-skin-care-canned": {
-        "calorie_content": "362 kcal/can",
+        "calorie_content": "405 kcal/can",
     },
     "prescription-diet-gastrointestinal-biome-chicken-vegetable-stew-digestive-care-canned": {
-        "calorie_content": "286 kcal/can",
+        "calorie_content": "287 kcal/can",
     },
     "prescription-diet-id-chicken-vegetable-stew-digestive-care-canned": {
         "calorie_content": "276 kcal/can",
@@ -122,22 +125,22 @@ _FALLBACK_DATA: dict[str, dict] = {
         "calorie_content": "375 kcal/can",
     },
     "prescription-diet-id-low-fat-digestive-care-canned": {
-        "calorie_content": "349 kcal/can",
+        "calorie_content": "328 kcal/can",
     },
     "prescription-diet-jd-joint-care-canned": {
-        "calorie_content": "498 kcal/can",
+        "calorie_content": "470 kcal/can",
     },
     "prescription-diet-kd-kidney-care-canned": {
-        "calorie_content": "155 kcal/can",
+        "calorie_content": "433 kcal/can",
     },
     "prescription-diet-metabolic-vegetable-chicken-stew-weight-management-canned": {
         "calorie_content": "248 kcal/can",
     },
     "prescription-diet-metabolic-mobility-vegetables-tuna-stew-weight-management-canned": {
-        "calorie_content": "210 kcal/can",
+        "calorie_content": "225 kcal/can",
     },
     "prescription-diet-onc-on-care-chicken-stew-restorative-care-canned": {
-        "calorie_content": "909 kcal/kg",
+        "calorie_content": "322 kcal/can",
     },
     "prescription-diet-zd-food-sensitivities-canned": {
         "calorie_content": "357 kcal/can",
@@ -170,14 +173,23 @@ _CHANNEL_MAP: dict[str, str] = {
     "pd": "vet",  # Prescription Diet
 }
 
-# productForm in dataLayer → product type
-_FORM_MAP: dict[str, str] = {
+# productForm in dataLayer → product type + format
+_TYPE_MAP: dict[str, str] = {
+    "dry": "food",
+    "stew": "food",
+    "canned": "food",
+    "wet": "food",
+    "treat": "treat",
+    "treats": "treat",
+}
+
+_FORMAT_MAP: dict[str, str] = {
     "dry": "dry",
     "stew": "wet",
     "canned": "wet",
     "wet": "wet",
-    "treat": "treats",
-    "treats": "treats",
+    "treat": "dry",
+    "treats": "dry",
 }
 
 # condition string fragments → health tags
@@ -388,6 +400,21 @@ def _parse_ga(soup: BeautifulSoup) -> GuaranteedAnalysis | None:
             if field and field not in ga:
                 ga[field] = value
 
+    # Sanity check: drop percentage fields >100% (same as parse_ga_html_table)
+    if ga:
+        _PCT_FIELDS = {
+            "crude_protein", "crude_fat", "crude_fiber", "moisture", "ash",
+            "calcium", "phosphorus", "omega_6", "omega_3", "epa", "dha",
+            "taurine", "potassium", "sodium", "copper",
+        }
+        bad_keys = [
+            k for k, v in ga.items()
+            if any(k.startswith(f) for f in _PCT_FIELDS) and v > 100
+        ]
+        for k in bad_keys:
+            logger.warning(f"Hills GA sanity check: dropping {k}={ga[k]} (>100%)")
+            del ga[k]
+
     return ga if ga else None
 
 
@@ -435,7 +462,6 @@ def _parse_calorie_content(soup: BeautifulSoup) -> str | None:
     text = clean_text(content_soup.get_text(separator=" "))
 
     # Wet food format: "{kcal} kcal / {size} {unit} ({grams} g) can"
-    # Check this first because normalize_calorie_content falls through to raw text
     m = re.search(
         r"(\d[\d,]*\.?\d*)\s*kcal\s*/\s*(\d+\.?\d*)\s*(oz|g)\b",
         text,
@@ -445,10 +471,30 @@ def _parse_calorie_content(soup: BeautifulSoup) -> str | None:
         kcal = m.group(1).replace(",", "")
         return f"{int(float(kcal))} kcal/can"
 
-    # Try standard kg/cup format
-    result = normalize_calorie_content(text)
-    if result and "kcal/" in (result or "") and len(result) < 60:
-        return result
+    # Hill's CMS serves French calorie text on some CA and US pages:
+    # "{kcal} kcal par conserve de {size} g ({oz} oz)"
+    m = re.search(
+        r"(\d[\d,]*\.?\d*)\s*kcal\s+par\s+conserve",
+        text,
+        re.IGNORECASE,
+    )
+    if m:
+        kcal = m.group(1).replace(",", "")
+        return f"{int(float(kcal))} kcal/can"
+
+    # Dry food format: standard kcal/kg + kcal/cup — but ONLY pass the
+    # calorie-specific line to normalizer, NOT the entire nutrient table.
+    # The full table contains "IU/kg" values (Vitamin E etc.) that cause
+    # normalize_calorie_content to produce false matches like "278 kcal/kg".
+    cal_line = re.search(
+        r"(\d[\d,]*\.?\d*\s*kcal\s*/\s*kg[^\n]*)",
+        text,
+        re.IGNORECASE,
+    )
+    if cal_line:
+        result = normalize_calorie_content(cal_line.group(1))
+        if result and "kcal/" in result and len(result) < 60:
+            return result
 
     return None
 
@@ -461,17 +507,29 @@ def _parse_channel(data_layer: dict | None) -> str:
     return _CHANNEL_MAP.get(brand, "retail")
 
 
-def _parse_product_type(data_layer: dict | None, url: str) -> str:
-    """Determine product type from dataLayer productForm or URL."""
+def _detect_type(data_layer: dict | None, url: str) -> str:
+    """Determine product type (food/treat) from dataLayer productForm or URL."""
     if data_layer:
         form = str(data_layer.get("productForm", "")).lower().strip()
-        if form in _FORM_MAP:
-            return _FORM_MAP[form]
+        if form in _TYPE_MAP:
+            return _TYPE_MAP[form]
 
     # Fallback: check URL
     url_lower = url.lower()
     if "/treats" in url_lower or "/treat" in url_lower:
-        return "treats"
+        return "treat"
+    return "food"
+
+
+def _detect_format(data_layer: dict | None, url: str) -> str:
+    """Determine product format (dry/wet) from dataLayer productForm or URL."""
+    if data_layer:
+        form = str(data_layer.get("productForm", "")).lower().strip()
+        if form in _FORMAT_MAP:
+            return _FORMAT_MAP[form]
+
+    # Fallback: check URL
+    url_lower = url.lower()
     if "/stew" in url_lower or "/canned" in url_lower or "/wet" in url_lower:
         return "wet"
     return "dry"
@@ -638,11 +696,12 @@ def _parse_product(url: str, html: str) -> Product | None:
     if not name or name in ("0", "Not Found") or len(name) < 3:
         return None
 
-    product_type = _parse_product_type(data_layer, url)
+    product_type = _detect_type(data_layer, url)
+    product_format = _detect_format(data_layer, url)
 
     # Append product form to wet food names to distinguish from dry counterparts
     # (e.g., "c/d Multicare Chicken Flavor Dog Food" exists as both dry and wet)
-    if product_type == "wet":
+    if product_format == "wet" and product_type == "food":
         name = f"{name} Wet Food"
 
     product: Product = {
@@ -651,6 +710,7 @@ def _parse_product(url: str, html: str) -> Product | None:
         "url": url,
         "channel": _parse_channel(data_layer),
         "product_type": product_type,
+        "product_format": product_format,
     }
 
     # Sub-brand from channel

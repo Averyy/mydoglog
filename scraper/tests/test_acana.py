@@ -190,7 +190,7 @@ class TestParseProduct:
         assert result["name"] == "ACANA Classics Prairie Poultry"
         assert result["brand"] == "Acana"
         assert result["channel"] == "retail"
-        assert result["product_type"] == "dry"
+        assert result["product_type"] == "food"
         assert "ingredients_raw" in result
         assert "guaranteed_analysis" in result
         assert "calorie_content" in result
@@ -200,14 +200,14 @@ class TestParseProduct:
         html = _make_page_html(h1="ACANA Premium Chunks Chicken in Bone Broth")
         result = _parse_product("https://homesalive.ca/acana-chunks", html, "acana")
         assert result is not None
-        assert result["product_type"] == "wet"
+        assert result["product_type"] == "food"
 
     def test_wet_type_can_word_boundary(self):
         """Ensure 'can' in 'acana' does not trigger wet type detection."""
         html = _make_page_html(h1="ACANA Classics Prairie Poultry")
         result = _parse_product("https://homesalive.ca/acana-classics", html, "acana")
         assert result is not None
-        assert result["product_type"] == "dry"
+        assert result["product_type"] == "food"
 
     def test_no_h1_returns_none(self):
         html = "<html><body><p>No heading</p></body></html>"

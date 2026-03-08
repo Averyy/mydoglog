@@ -1,8 +1,9 @@
 """Tests for scrapers.nutrience — Nutrience parsing logic."""
 
 from scrapers.nutrience import (
+    _detect_format,
     _detect_product_line,
-    _detect_product_type,
+    _detect_type,
     _parse_calorie_content,
     _parse_ga,
     _parse_images,
@@ -45,30 +46,35 @@ class TestDetectProductLine:
         assert _detect_product_line("Nutrience Dog Food", "") is None
 
 
-class TestDetectProductType:
-    def test_dry(self) -> None:
-        assert _detect_product_type("https://nutrience.com/products/subzero-canadian-pacific/", "SubZero Canadian Pacific") == "dry"
+class TestDetectType:
+    def test_food(self) -> None:
+        assert _detect_type("https://nutrience.com/products/subzero-canadian-pacific/", "SubZero Canadian Pacific") == "food"
 
-    def test_wet(self) -> None:
-        assert _detect_product_type("https://nutrience.com/products/subzero-pate/", "SubZero Pâté") == "wet"
+    def test_treat(self) -> None:
+        assert _detect_type("https://nutrience.com/products/treats/", "Freeze Dried Treats") == "treat"
 
-    def test_treats(self) -> None:
-        assert _detect_product_type("https://nutrience.com/products/treats/", "Freeze Dried Treats") == "treats"
+    def test_chew_is_treat(self) -> None:
+        assert _detect_type("https://nutrience.com/products/elk-antler-chew/", "Elk Antler Chew") == "treat"
 
-    def test_chew_is_treats(self) -> None:
-        assert _detect_product_type("https://nutrience.com/products/elk-antler-chew/", "Elk Antler Chew") == "treats"
+    def test_antler_is_treat(self) -> None:
+        assert _detect_type("https://nutrience.com/products/antler-dog/", "Antler Dog") == "treat"
 
-    def test_antler_is_treats(self) -> None:
-        assert _detect_product_type("https://nutrience.com/products/antler-dog/", "Antler Dog") == "treats"
-
-    def test_biscuit_is_treats(self) -> None:
-        assert _detect_product_type("https://nutrience.com/products/dog-biscuit/", "Dog Biscuit") == "treats"
+    def test_biscuit_is_treat(self) -> None:
+        assert _detect_type("https://nutrience.com/products/dog-biscuit/", "Dog Biscuit") == "treat"
 
     def test_supplement(self) -> None:
-        assert _detect_product_type("https://nutrience.com/products/calming-dog-supplement/", "Calming Dog Supplement") == "supplements"
+        assert _detect_type("https://nutrience.com/products/calming-dog-supplement/", "Calming Dog Supplement") == "supplement"
+
+
+class TestDetectFormat:
+    def test_dry(self) -> None:
+        assert _detect_format("https://nutrience.com/products/subzero-canadian-pacific/", "SubZero Canadian Pacific") == "dry"
+
+    def test_wet_pate(self) -> None:
+        assert _detect_format("https://nutrience.com/products/subzero-pate/", "SubZero Pâté") == "wet"
 
     def test_freeze_dried_is_dry(self) -> None:
-        assert _detect_product_type("https://nutrience.com/products/freeze-dried-raw-beef/", "Freeze-Dried Raw Beef") == "dry"
+        assert _detect_format("https://nutrience.com/products/freeze-dried-raw-beef/", "Freeze-Dried Raw Beef") == "dry"
 
 
 class TestParseIngredients:

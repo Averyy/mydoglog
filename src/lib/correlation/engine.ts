@@ -329,10 +329,7 @@ export function buildDaySnapshots(
 
   for (const date of dates) {
     // Collect active feeding periods and their gram estimates
-    // Exclude probiotics — their ingredients are therapeutic, not nutritional,
-    // and at trace quantities their scores just mirror whatever food they're paired with.
     const activePeriods = getActiveFeedingPeriods(input.feedingPeriods, date)
-      .filter((fp) => input.productInfo.get(fp.productId)?.type !== "probiotic")
     const foodProductIds = new Set(activePeriods.map((fp) => fp.productId))
 
     const productGrams = new Map<string, number>()
@@ -342,9 +339,9 @@ export function buildDaySnapshots(
       productGrams.set(fp.productId, (productGrams.get(fp.productId) ?? 0) + grams)
     }
 
-    // Collect treat products for this date with gram estimates (exclude probiotics)
+    // Collect treat products for this date with gram estimates
     const treatLogsForDate = input.treatLogs.filter(
-      (t) => t.date === date && input.productInfo.get(t.productId)?.type !== "probiotic",
+      (t) => t.date === date,
     )
     const treatProductIds = new Set(treatLogsForDate.map((t) => t.productId))
     for (const t of treatLogsForDate) {
@@ -797,10 +794,8 @@ function capitalize(s: string): string {
 export function buildBackfillSnapshots(
   input: CorrelationInput,
 ): DaySnapshot[] {
-  // Filter to backfills with scorecard data, excluding probiotics
+  // Filter to backfills with scorecard data
   const validBackfills = input.backfills.filter((bf) => {
-    const info = input.productInfo.get(bf.productId)
-    if (info?.type === "probiotic") return false
     return (bf.scorecard?.poopQuality?.length ?? 0) > 0 ||
            (bf.scorecard?.itchSeverity?.length ?? 0) > 0
   })
@@ -945,27 +940,21 @@ export function mergeScoresForGI(scores: IngredientScore[]): IngredientScore[] {
     const daysWithScorecardOnly = Math.max(...group.map((s) => s.daysWithScorecardOnly))
     const daysWithBackfill = Math.max(...group.map((s) => s.daysWithBackfill))
 
-    // Day-count-weighted average for weighted scores
-    const totalPoopWeight = group.reduce((sum, s) => sum + (s.weightedPoopScore != null ? s.dayCount : 0), 0)
-    const weightedPoopScore = totalPoopWeight > 0
-      ? group.reduce((sum, s) => sum + (s.weightedPoopScore != null ? s.weightedPoopScore * s.dayCount : 0), 0) / totalPoopWeight
-      : null
+    // Worst-score (max) across forms — for elimination diet purposes, a bad
+    // signal from any form should surface, not be averaged away by neutral data
+    // from low-volume forms (e.g. treats).
+    const poopScores = group.filter((s) => s.weightedPoopScore != null).map((s) => s.weightedPoopScore!)
+    const weightedPoopScore = poopScores.length > 0 ? Math.max(...poopScores) : null
 
-    const totalItchWeight = group.reduce((sum, s) => sum + (s.weightedItchScore != null ? s.dayCount : 0), 0)
-    const weightedItchScore = totalItchWeight > 0
-      ? group.reduce((sum, s) => sum + (s.weightedItchScore != null ? s.weightedItchScore * s.dayCount : 0), 0) / totalItchWeight
-      : null
+    const itchScores = group.filter((s) => s.weightedItchScore != null).map((s) => s.weightedItchScore!)
+    const weightedItchScore = itchScores.length > 0 ? Math.max(...itchScores) : null
 
-    // Raw averages — same day-count-weighted approach
-    const totalRawPoopWeight = group.reduce((sum, s) => sum + (s.rawAvgPoopScore != null ? s.dayCount : 0), 0)
-    const rawAvgPoopScore = totalRawPoopWeight > 0
-      ? group.reduce((sum, s) => sum + (s.rawAvgPoopScore != null ? s.rawAvgPoopScore * s.dayCount : 0), 0) / totalRawPoopWeight
-      : null
+    // Raw averages — same worst-score approach
+    const rawPoopScores = group.filter((s) => s.rawAvgPoopScore != null).map((s) => s.rawAvgPoopScore!)
+    const rawAvgPoopScore = rawPoopScores.length > 0 ? Math.max(...rawPoopScores) : null
 
-    const totalRawItchWeight = group.reduce((sum, s) => sum + (s.rawAvgItchScore != null ? s.dayCount : 0), 0)
-    const rawAvgItchScore = totalRawItchWeight > 0
-      ? group.reduce((sum, s) => sum + (s.rawAvgItchScore != null ? s.rawAvgItchScore * s.dayCount : 0), 0) / totalRawItchWeight
-      : null
+    const rawItchScores = group.filter((s) => s.rawAvgItchScore != null).map((s) => s.rawAvgItchScore!)
+    const rawAvgItchScore = rawItchScores.length > 0 ? Math.max(...rawItchScores) : null
 
     // Cross-reactivity: carry from any form that has them
     const crossReactivityGroup = group.find((s) => s.crossReactivityGroup)?.crossReactivityGroup
@@ -999,6 +988,12 @@ export function mergeScoresForGI(scores: IngredientScore[]): IngredientScore[] {
       distinctProductCount: group.reduce((sum, s) => sum + s.distinctProductCount, 0),
       crossReactivityGroup,
       crossReactivityWarning,
+      formBreakdown: group.map((s) => ({
+        key: s.key,
+        weightedPoopScore: s.weightedPoopScore,
+        weightedItchScore: s.weightedItchScore,
+        dayCount: s.dayCount,
+      })),
     })
   }
 

@@ -1,9 +1,9 @@
 """Tests for scrapers.firstmate — FirstMate parsing logic."""
 
 from scrapers.firstmate import (
-    _detect_product_type,
+    _detect_format,
+    _detect_type,
     _detect_sub_brand,
-    _is_dog_product,
     _parse_aafco,
     _parse_ga,
     _parse_ingredients,
@@ -20,64 +20,40 @@ class TestDetectSubBrand:
         assert _detect_sub_brand("https://firstmate.com/product/kasiks-salmon", "KASIKS Salmon Formula") == "KASIKS"
 
 
-class TestDetectProductType:
+class TestDetectType:
+    def test_dry_is_food(self) -> None:
+        assert _detect_type("https://firstmate.com/product/chicken-formula/", "Chicken Formula") == "food"
+
+    def test_canned_is_food(self) -> None:
+        assert _detect_type("https://firstmate.com/product/turkey-12oz/", "Turkey 12.2oz - 12 Cans") == "food"
+
+    def test_treats(self) -> None:
+        assert _detect_type("https://firstmate.com/product/chicken-treats/", "Chicken & Blueberries Treats") == "treat"
+
+
+class TestDetectFormat:
     def test_dry(self) -> None:
-        assert _detect_product_type("https://firstmate.com/product/chicken-formula/", "Chicken Formula") == "dry"
+        assert _detect_format("https://firstmate.com/product/chicken-formula/", "Chicken Formula") == "dry"
 
     def test_canned_url(self) -> None:
-        assert _detect_product_type("https://firstmate.com/product/turkey-12oz/", "Turkey 12.2oz - 12 Cans") == "wet"
+        assert _detect_format("https://firstmate.com/product/turkey-12oz/", "Turkey 12.2oz - 12 Cans") == "wet"
 
     def test_canned_by_can_count_in_title(self) -> None:
         """Products with '12 Cans' in the name should be classified as wet."""
-        assert _detect_product_type(
+        assert _detect_format(
             "https://firstmate.com/product/kasiks-cage-free-chicken-formula-12-cans/",
             "KASIKS Cage-Free Chicken Formula 12.2oz - 12 Cans",
         ) == "wet"
 
     def test_canned_24_cans(self) -> None:
-        assert _detect_product_type(
+        assert _detect_format(
             "https://firstmate.com/product/kasiks-grub-formula-cats-24-cans/",
             "KASIKS Grub Formula 5.5oz - 24 Cans",
         ) == "wet"
 
-    def test_treats(self) -> None:
-        assert _detect_product_type("https://firstmate.com/product/chicken-treats/", "Chicken & Blueberries Treats") == "treats"
+    def test_treats_are_dry(self) -> None:
+        assert _detect_format("https://firstmate.com/product/chicken-treats/", "Chicken & Blueberries Treats") == "dry"
 
-
-class TestIsDogProduct:
-    def test_dog_product_by_url(self) -> None:
-        html = '<html><body><h1>Wild Salmon Formula for Dogs</h1></body></html>'
-        soup = BeautifulSoup(html, "html.parser")
-        assert _is_dog_product("https://firstmate.com/product/wild-salmon-formula-for-dogs/", soup) is True
-
-    def test_cat_product_for_cats_url(self) -> None:
-        html = '<html><body><h1>Salmon Formula for Cats</h1></body></html>'
-        soup = BeautifulSoup(html, "html.parser")
-        assert _is_dog_product("https://firstmate.com/product/salmon-formula-for-cats/", soup) is False
-
-    def test_indoor_cat_formula_filtered(self) -> None:
-        """Indoor Cat Formula should be filtered out despite no 'for-cats' in URL."""
-        html = '<html><body><h1>Indoor Cat Formula</h1></body></html>'
-        soup = BeautifulSoup(html, "html.parser")
-        assert _is_dog_product("https://firstmate.com/product/indoor-cat-formula/", soup) is False
-
-    def test_cat_kitten_formula_filtered(self) -> None:
-        """Cat & Kitten Formula should be filtered out."""
-        html = '<html><body><h1>Cat &amp; Kitten Formula</h1></body></html>'
-        soup = BeautifulSoup(html, "html.parser")
-        assert _is_dog_product("https://firstmate.com/product/cat-kitten-formula/", soup) is False
-
-    def test_cats_cans_url_filtered(self) -> None:
-        """URLs ending in '-cats-24-cans' should be filtered out."""
-        html = '<html><body><h1>Wild Salmon Formula</h1></body></html>'
-        soup = BeautifulSoup(html, "html.parser")
-        assert _is_dog_product("https://firstmate.com/product/kasiks-grub-formula-cats-24-cans/", soup) is False
-
-    def test_dog_cans_not_filtered(self) -> None:
-        """URLs with '-12-cans' but no 'cat' should pass."""
-        html = '<html><body><h1>Wild Salmon Formula</h1><nav><a href="/dog-food/">Dog Food</a></nav></body></html>'
-        soup = BeautifulSoup(html, "html.parser")
-        assert _is_dog_product("https://firstmate.com/product/kasiks-cage-free-chicken-formula-12-cans/", soup) is True
 
 
 class TestParseIngredients:
@@ -302,7 +278,7 @@ class TestParseProduct:
         assert result["name"] == "Limited Ingredient Chicken Meal with Blueberries Formula"
         assert result["brand"] == "FirstMate"
         assert result["sub_brand"] == "FirstMate"
-        assert result["product_type"] == "dry"
+        assert result["product_type"] == "food"
         # Ingredients should be actual ingredients, not marketing
         assert "Chicken Meal" in result["ingredients_raw"]
         assert "Grain & Pea Free" not in result.get("ingredients_raw", "")
@@ -342,4 +318,4 @@ class TestParseProduct:
         url = "https://firstmate.com/product/kasiks-cage-free-chicken-formula-12-cans/"
         result = _parse_product(url, html)
         assert result is not None
-        assert result["product_type"] == "wet"
+        assert result["product_type"] == "food"

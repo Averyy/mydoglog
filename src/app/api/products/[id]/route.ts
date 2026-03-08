@@ -18,6 +18,7 @@ export async function GET(
         brandName: brands.name,
         description: products.description,
         type: products.type,
+        format: products.format,
         channel: products.channel,
         lifestage: products.lifestage,
         healthTags: products.healthTags,
