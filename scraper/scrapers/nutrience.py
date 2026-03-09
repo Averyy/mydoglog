@@ -148,11 +148,20 @@ def _parse_ingredients(soup: BeautifulSoup) -> str | None:
         if p_tag.get_text(strip=True).lower().startswith("ingredient"):
             inner_div = p_tag.find_next_sibling("div", class_="inner")
             if inner_div:
-                # Ingredient text is typically in a <p> inside the inner div,
-                # or directly as text content
-                inner_p = inner_div.find("p")
-                if inner_p:
-                    ing_text = clean_text(inner_p.get_text(separator=" "))
+                # Ingredient text is in <p> tags inside the inner div.
+                # Supplements have multiple <p> tags (Active + Excipient)
+                # with <strong> labels like "Active Ingredients:" to strip.
+                inner_ps = inner_div.find_all("p")
+                if inner_ps:
+                    parts: list[str] = []
+                    for ip in inner_ps:
+                        # Remove <strong> labels (e.g. "Active Ingredients:")
+                        for strong in ip.find_all("strong"):
+                            strong.decompose()
+                        text = clean_text(ip.get_text(separator=" "))
+                        if text:
+                            parts.append(text)
+                    ing_text = ", ".join(parts)
                 else:
                     ing_text = clean_text(inner_div.get_text(separator=" "))
                 # Threshold of 2 allows single-ingredient treats like "Beef Liver"

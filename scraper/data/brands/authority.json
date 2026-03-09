@@ -1,12 +1,12 @@
 {
   "brand": "Authority",
   "website_url": "https://www.petsmart.ca",
-  "scraped_at": "2026-03-08T20:11:18.323730+00:00",
+  "scraped_at": "2026-03-09T03:23:08.824643+00:00",
   "scraper_version": "0.1.0",
   "stats": {
     "product_count": 44,
     "by_channel": {
-      "retail": 45
+      "retail": 44
     },
     "by_type": {
       "food": 42,
@@ -184,7 +184,7 @@
       "life_stage": "adult",
       "source_id": "5278696",
       "images": [
-        "/products/authority/authority-food-everyday-health-adult-wet-dog-food.jpg"
+        "/products/authority/authority-food-everyday-health-adult-wet-dog-food-beef.jpg"
       ],
       "variants": [
         {
@@ -223,7 +223,7 @@
       "life_stage": "adult",
       "source_id": "5278697",
       "images": [
-        "/products/authority/authority-food-everyday-health-adult-wet-dog-food.jpg"
+        "/products/authority/authority-food-everyday-health-adult-wet-dog-food-turkey.jpg"
       ],
       "variants": [
         {
@@ -1132,7 +1132,7 @@
       "calorie_content": "3530 kcal/kg, 354 kcal/cup"
     },
     {
-      "name": "Everyday Health Tender Blends Adult Dry Dog Food",
+      "name": "Everyday Health Tender Blends Adult Dry Dog Food - Beef & Rice",
       "brand": "Authority",
       "url": "https://www.petsmart.ca/dog/food/dry-food/authority-everyday-health-tender-blends-adult-dry-dog-food---beef-and-rice-87323.html",
       "channel": "retail",
@@ -1337,7 +1337,7 @@
       "calorie_content": "3075 kcal/kg, 309 kcal/cup"
     },
     {
-      "name": "High Performance All Life Stages Dry Dog Food",
+      "name": "High Performance All Life Stages Dry Dog Food - Turkey, Pea, Salmon, & Duck",
       "brand": "Authority",
       "url": "https://www.petsmart.ca/dog/food/dry-food/authority-high-performance-all-life-stages-dry-dog-food---turkey-pea-salmon-and-duck-30-lb-80316.html",
       "channel": "retail",

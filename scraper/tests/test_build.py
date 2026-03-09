@@ -267,7 +267,7 @@ class TestFamiliesLookup:
     def test_source_group_mapping_seed(self) -> None:
         info = self.lookup.lookup("Flaxseed")
         assert info is not None
-        assert info["source_group"] == "other"  # seed -> other
+        assert info["source_group"] == "seed"
 
     def test_form_mapping_whole(self) -> None:
         info = self.lookup.lookup("apple")

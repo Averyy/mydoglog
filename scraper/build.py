@@ -21,6 +21,8 @@ from uuid import uuid4
 import psycopg2
 import psycopg2.extras
 
+from scrapers.common import IMAGES_DATA_DIR, _process_brand_images
+
 # ---------------------------------------------------------------------------
 # Paths
 # ---------------------------------------------------------------------------
@@ -669,6 +671,13 @@ def main() -> None:
 
     finally:
         conn.close()
+
+    # Re-process all brand images (source → small/large WebP)
+    print("\nProcessing product images...")
+    if IMAGES_DATA_DIR.is_dir():
+        for brand_dir in sorted(IMAGES_DATA_DIR.iterdir()):
+            if brand_dir.is_dir():
+                _process_brand_images(brand_dir.name)
 
     # Print unknown ingredients to stderr
     if unknown_ingredients:

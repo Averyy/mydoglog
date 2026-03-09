@@ -1,7 +1,7 @@
 {
   "brand": "Champion Petfoods",
   "website_url": "https://www.championpetfoods.com",
-  "scraped_at": "2026-03-08T18:42:38.037187+00:00",
+  "scraped_at": "2026-03-09T03:13:43.721960+00:00",
   "scraper_version": "0.1.0",
   "stats": {
     "product_count": 73,
@@ -15,7 +15,7 @@
   },
   "products": [
     {
-      "name": "Premium Pâté, Beef Recipe Wet Dog Food",
+      "name": "PREMIUM PÂTÉ, Beef Recipe Wet Dog Food",
       "brand": "Acana",
       "url": "https://www.acana.com/en-CA/dogs/dog-food/acana-premium-p%C3%A2t%C3%A9%2C-beef-recipe/premium-pate-dog-beef-recipe.html",
       "channel": "retail",
@@ -48,11 +48,11 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "1118 kcal/kg, 406 kcal/can",
       "images": [
-        "/products/acana/acana-food-beef-recipe-wet-dog-food.png"
+        "/products/acana/acana-food-premium-p-t-beef-recipe-wet-dog-food.png"
       ]
     },
     {
-      "name": "Premium Pâté, Duck Recipe Wet Dog Food",
+      "name": "PREMIUM PÂTÉ, Duck Recipe Wet Dog Food",
       "brand": "Acana",
       "url": "https://www.acana.com/en-CA/dogs/dog-food/acana-premium-p%C3%A2t%C3%A9%2C-duck-recipe/premium-pate-duck-recipe.html",
       "channel": "retail",
@@ -85,11 +85,11 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "1127 kcal/kg",
       "images": [
-        "/products/acana/acana-food-duck-recipe-wet-dog-food.png"
+        "/products/acana/acana-food-premium-p-t-duck-recipe-wet-dog-food.png"
       ]
     },
     {
-      "name": "Premium Pâté, Lamb Recipe Wet Dog Food",
+      "name": "PREMIUM PÂTÉ, Lamb Recipe Wet Dog Food",
       "brand": "Acana",
       "url": "https://www.acana.com/en-CA/dogs/dog-food/acana-premium-p%C3%A2t%C3%A9%2C-lamb-recipe/premium-pate-lamb-recipe.html",
       "channel": "retail",
@@ -122,11 +122,11 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "1271 kcal/kg, 461 kcal/can",
       "images": [
-        "/products/acana/acana-food-lamb-recipe-wet-dog-food.png"
+        "/products/acana/acana-food-premium-p-t-lamb-recipe-wet-dog-food.png"
       ]
     },
     {
-      "name": "Premium Pâté, Poultry Recipe Wet Dog Food",
+      "name": "PREMIUM PÂTÉ, Poultry Recipe Wet Dog Food",
       "brand": "Acana",
       "url": "https://www.acana.com/en-CA/dogs/dog-food/acana-premium-p%C3%A2t%C3%A9%2C-poultry-recipe/premium-pate-poultry-recipe.html",
       "channel": "retail",
@@ -159,7 +159,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "1168 kcal/kg, 424 kcal/can",
       "images": [
-        "/products/acana/acana-food-poultry-recipe-wet-dog-food.png"
+        "/products/acana/acana-food-premium-p-t-poultry-recipe-wet-dog-food.png"
       ]
     },
     {
@@ -304,7 +304,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3450 kcal/kg, 57 kcal/treat",
       "images": [
-        "/products/acana/acana-treat-beef-recipe-soft-chewy-treats.png"
+        "/products/acana/acana-treat-chewy-strips-beef-recipe-soft-chewy-treats.png"
       ]
     },
     {
@@ -341,7 +341,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3260 kcal/kg, 46 kcal/treat",
       "images": [
-        "/products/acana/acana-treat-chicken-recipe-soft-chewy-treats.png"
+        "/products/acana/acana-treat-chewy-strips-chicken-recipe-soft-chewy-treats.png"
       ]
     },
     {
@@ -378,7 +378,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3340 kcal/kg, 47 kcal/treat",
       "images": [
-        "/products/acana/acana-treat-salmon-recipe-soft-chewy-treats.png"
+        "/products/acana/acana-treat-chewy-strips-salmon-recipe-soft-chewy-treats.png"
       ]
     },
     {
@@ -415,7 +415,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3443 kcal/kg",
       "images": [
-        "/products/acana/acana-food-prairie-poultry-recipe-dry-dog-food.png"
+        "/products/acana/acana-food-classics-prairie-poultry-recipe-dry-dog-food.png"
       ]
     },
     {
@@ -452,7 +452,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3425 kcal/kg",
       "images": [
-        "/products/acana/acana-food-red-meat-recipe-dry-dog-food.png"
+        "/products/acana/acana-food-classics-red-meat-recipe-dry-dog-food.png"
       ]
     },
     {
@@ -489,7 +489,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3443 kcal/kg",
       "images": [
-        "/products/acana/acana-food-wild-coast-recipe-dry-dog-food.png"
+        "/products/acana/acana-food-classics-wild-coast-recipe-dry-dog-food.png"
       ]
     },
     {
@@ -814,7 +814,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3510 kcal/kg",
       "images": [
-        "/products/acana/acana-food-free-run-poultry-dry-dog-food.png"
+        "/products/acana/acana-food-healthy-grains-free-run-poultry-dry-dog-food.png"
       ]
     },
     {
@@ -851,7 +851,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3375 kcal/kg",
       "images": [
-        "/products/acana/acana-food-large-breed-recipe-dry-dog-food.png"
+        "/products/acana/acana-food-healthy-grains-large-breed-recipe-dry-dog-food.png"
       ]
     },
     {
@@ -888,7 +888,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3625 kcal/kg",
       "images": [
-        "/products/acana/acana-food-puppy-recipe-dry-dog-food.png"
+        "/products/acana/acana-food-healthy-grains-puppy-recipe-dry-dog-food.png"
       ]
     },
     {
@@ -925,7 +925,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3510 kcal/kg",
       "images": [
-        "/products/acana/acana-food-red-meat-recipe-dry-dog-food.png"
+        "/products/acana/acana-food-healthy-grains-red-meat-recipe-dry-dog-food.png"
       ]
     },
     {
@@ -962,7 +962,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3625 kcal/kg",
       "images": [
-        "/products/acana/acana-food-sea-to-farm-puppy-recipe-dry-dog-food.png"
+        "/products/acana/acana-food-healthy-grains-sea-to-farm-puppy-recipe-dry-dog-food.png"
       ]
     },
     {
@@ -999,7 +999,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3475 kcal/kg",
       "images": [
-        "/products/acana/acana-food-sea-to-stream-recipe-dry-dog-food.png"
+        "/products/acana/acana-food-healthy-grains-sea-to-stream-recipe-dry-dog-food.png"
       ]
     },
     {
@@ -1036,7 +1036,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3510 kcal/kg",
       "images": [
-        "/products/acana/acana-food-grasslands-dry-dog-food.png"
+        "/products/acana/acana-food-highest-protein-grasslands-dry-dog-food.png"
       ]
     },
     {
@@ -1073,7 +1073,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3545 kcal/kg",
       "images": [
-        "/products/acana/acana-food-pacifica-dry-dog-food.png"
+        "/products/acana/acana-food-highest-protein-pacifica-dry-dog-food.png"
       ]
     },
     {
@@ -1110,7 +1110,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3493 kcal/kg",
       "images": [
-        "/products/acana/acana-food-ranchlands-dry-dog-food.png"
+        "/products/acana/acana-food-highest-protein-ranchlands-dry-dog-food.png"
       ]
     },
     {
@@ -1147,7 +1147,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3545 kcal/kg",
       "images": [
-        "/products/acana/acana-food-wild-prairie-dry-dog-food.png"
+        "/products/acana/acana-food-highest-protein-wild-prairie-dry-dog-food.png"
       ]
     },
     {
@@ -1221,7 +1221,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "919 kcal/kg, 334 kcal/can",
       "images": [
-        "/products/acana/acana-food-beef-recipe-in-bone-broth-wet-dog-food.png"
+        "/products/acana/acana-food-premium-chunks-beef-recipe-in-bone-broth-wet-dog-food.png"
       ]
     },
     {
@@ -1258,7 +1258,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "1003 kcal/kg, 364 kcal/can",
       "images": [
-        "/products/acana/acana-food-duck-recipe-in-bone-broth-wet-dog-food.png"
+        "/products/acana/acana-food-premium-chunks-duck-recipe-in-bone-broth-wet-dog-food.png"
       ]
     },
     {
@@ -1295,7 +1295,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "1140 kcal/kg, 414 kcal/can",
       "images": [
-        "/products/acana/acana-food-lamb-recipe-in-bone-broth-wet-dog-food.png"
+        "/products/acana/acana-food-premium-chunks-lamb-recipe-in-bone-broth-wet-dog-food.png"
       ]
     },
     {
@@ -1332,7 +1332,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "890 kcal/kg, 323 kcal/can",
       "images": [
-        "/products/acana/acana-food-pork-recipe-in-bone-broth-wet-dog-food.png"
+        "/products/acana/acana-food-premium-chunks-pork-recipe-in-bone-broth-wet-dog-food.png"
       ]
     },
     {
@@ -1369,7 +1369,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "960 kcal/kg, 348 kcal/can",
       "images": [
-        "/products/acana/acana-food-poultry-recipe-in-bone-broth-wet-dog-food.png"
+        "/products/acana/acana-food-premium-chunks-poultry-recipe-in-bone-broth-wet-dog-food.png"
       ]
     },
     {
@@ -1406,7 +1406,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "1188 kcal/kg, 431 kcal/can",
       "images": [
-        "/products/acana/acana-food-puppy-recipe-in-bone-broth-wet-dog-food.png"
+        "/products/acana/acana-food-premium-p-t-puppy-recipe-in-bone-broth-wet-dog-food.png"
       ]
     },
     {
@@ -1587,7 +1587,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3405 kcal/kg",
       "images": [
-        "/products/acana/acana-food-duck-with-pear-recipe-dry-dog-food.png"
+        "/products/acana/acana-food-singles-duck-with-pear-recipe-dry-dog-food.png"
       ]
     },
     {
@@ -1624,7 +1624,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3405 kcal/kg",
       "images": [
-        "/products/acana/acana-food-lamb-with-apple-recipe-dry-dog-food.png"
+        "/products/acana/acana-food-singles-lamb-with-apple-recipe-dry-dog-food.png"
       ]
     },
     {
@@ -1661,7 +1661,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3405 kcal/kg",
       "images": [
-        "/products/acana/acana-food-pork-with-squash-recipe-dry-dog-food.png"
+        "/products/acana/acana-food-singles-pork-with-squash-recipe-dry-dog-food.png"
       ]
     },
     {
@@ -1735,7 +1735,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3980 kcal/kg",
       "images": [
-        "/products/orijen/orijen-food-original-dry-dog-food.png"
+        "/products/orijen/orijen-food-amazing-grains-original-dry-dog-food.png"
       ]
     },
     {
@@ -1772,7 +1772,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "4080 kcal/kg",
       "images": [
-        "/products/orijen/orijen-food-puppy-dry-dog-food.png"
+        "/products/orijen/orijen-food-amazing-grains-puppy-dry-dog-food.png"
       ]
     },
     {
@@ -1809,11 +1809,11 @@
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3920 kcal/kg",
       "images": [
-        "/products/orijen/orijen-food-regional-red-dry-dog-food.png"
+        "/products/orijen/orijen-food-amazing-grains-regional-red-dry-dog-food.png"
       ]
     },
     {
-      "name": "Freeze-Dried, Beef Recipe Freeze-Dried Dog Treats",
+      "name": "Beef Recipe Freeze-Dried Dog Treats",
       "brand": "Orijen",
       "url": "https://www.orijenpetfoods.com/en-CA/dogs/dog-food/beef-recipe/ns-ori-fdt-beef-dog.html",
       "channel": "retail",
@@ -1922,7 +1922,7 @@
       ]
     },
     {
-      "name": "Freeze-Dried, Duck Recipe Freeze-Dried Dog Treats",
+      "name": "Duck Recipe Freeze-Dried Dog Treats",
       "brand": "Orijen",
       "url": "https://www.orijenpetfoods.com/en-CA/dogs/dog-food/duck-recipe/ns-ori-fdt-duck.html",
       "channel": "retail",
@@ -1996,7 +1996,7 @@
       ]
     },
     {
-      "name": "Freeze-Dried, Lamb Recipe Freeze-Dried Dog Treats",
+      "name": "Lamb Recipe Freeze-Dried Dog Treats",
       "brand": "Orijen",
       "url": "https://www.orijenpetfoods.com/en-CA/dogs/dog-food/lamb-recipe/ns-ori-fdt-lamb.html",
       "channel": "retail",
@@ -2141,7 +2141,7 @@
       ]
     },
     {
-      "name": "Freeze-Dried, Original Freeze-Dried Dog Treats",
+      "name": "Original Freeze-Dried Dog Treats",
       "brand": "Orijen",
       "url": "https://www.orijenpetfoods.com/en-CA/dogs/dog-food/original/ns-ori-fdt-original.html",
       "channel": "retail",
@@ -2394,7 +2394,7 @@
       ]
     },
     {
-      "name": "Freeze-Dried, Regional Red Freeze-Dried Dog Treats",
+      "name": "Regional Red Freeze-Dried Dog Treats",
       "brand": "Orijen",
       "url": "https://www.orijenpetfoods.com/en-CA/dogs/dog-food/regional-red/ns-ori-fdt-regionalred.html",
       "channel": "retail",
@@ -2596,7 +2596,7 @@
       ]
     },
     {
-      "name": "Freeze-Dried, Tundra Freeze-Dried Dog Treats",
+      "name": "Tundra Freeze-Dried Dog Treats",
       "brand": "Orijen",
       "url": "https://www.orijenpetfoods.com/en-CA/dogs/dog-food/tundra/ns-ori-fdt-tundra.html",
       "channel": "retail",

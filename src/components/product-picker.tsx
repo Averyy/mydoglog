@@ -229,14 +229,26 @@ export function ProductPicker({
 
     // Apply text search
     if (query.trim()) {
+      const FORMAT_KEYWORDS: Record<string, string> = {
+        can: "wet", cans: "wet", wet: "wet", canned: "wet",
+        dry: "dry", kibble: "dry", kibbles: "dry", bag: "dry", bags: "dry",
+      }
       const terms = query
         .toLowerCase()
         .split(/\s+/)
         .filter(Boolean)
-      list = list.filter((p) => {
-        const haystack = `${p.name} ${p.brandName}`.toLowerCase()
-        return terms.every((t) => haystack.includes(t))
-      })
+      // Separate format-keyword terms from text-search terms
+      const formatFilters = terms.map((t) => FORMAT_KEYWORDS[t]).filter(Boolean)
+      const textTerms = terms.filter((t) => !FORMAT_KEYWORDS[t])
+      if (formatFilters.length > 0) {
+        list = list.filter((p) => formatFilters.some((f) => p.format === f))
+      }
+      if (textTerms.length > 0) {
+        list = list.filter((p) => {
+          const haystack = `${p.name} ${p.brandName}`.toLowerCase()
+          return textTerms.every((t) => haystack.includes(t))
+        })
+      }
     }
 
     return list

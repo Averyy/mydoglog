@@ -15,7 +15,7 @@ export async function GET(
     const authResult = await requireDogOwnership(dogId)
     if (isNextResponse(authResult)) return authResult
 
-    const today = new Date().toISOString().split("T")[0]
+    const today = new Date().toLocaleDateString("en-CA", { timeZone: "America/Toronto" })
 
     const [poopCount, itchCount, treatCount] = await Promise.all([
       db

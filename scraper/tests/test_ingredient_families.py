@@ -14,6 +14,7 @@ MANUAL_PATH = DATA_DIR / "manual_products.json"
 VALID_SOURCE_GROUPS = {
     "poultry", "red_meat", "fish", "grain", "legume", "root", "fruit",
     "vegetable", "dairy", "egg", "seed", "exotic", "other", "mammal",
+    "fiber", "additive", "mollusk", "crustacean", "animal", "unknown",
 }
 
 VALID_FORMS = {
@@ -84,6 +85,12 @@ def all_product_ingredients() -> set[str]:
 
 
 @pytest.fixture(scope="module")
+def ignore_patterns(families_data: dict) -> list[re.Pattern[str]]:
+    """Compile ignore patterns from JSON."""
+    return [re.compile(p) for p in families_data.get("ignore_patterns", [])]
+
+
+@pytest.fixture(scope="module")
 def lookup(families_data: dict) -> dict[str, tuple[str, str]]:
     """Build case-insensitive lookup: lowercase -> (section, name)."""
     lk = {}
@@ -97,26 +104,47 @@ def lookup(families_data: dict) -> dict[str, tuple[str, str]]:
     return lk
 
 
+def _is_classified(
+    ing: str,
+    lookup: dict[str, tuple[str, str]],
+    patterns: list[re.Pattern[str]],
+) -> bool:
+    """Check if ingredient is in lookup or matched by an ignore pattern."""
+    if ing.lower().strip() in lookup:
+        return True
+    for p in patterns:
+        if p.search(ing):
+            return True
+    return False
+
+
 class TestCoverage:
     """Every scraped ingredient must be classifiable."""
 
     def test_every_ingredient_can_be_looked_up(
-        self, all_product_ingredients: set[str], lookup: dict
+        self,
+        all_product_ingredients: set[str],
+        lookup: dict,
+        ignore_patterns: list[re.Pattern[str]],
     ) -> None:
         unmatched = []
         for ing in all_product_ingredients:
-            if ing.lower().strip() not in lookup:
+            if not _is_classified(ing, lookup, ignore_patterns):
                 unmatched.append(ing)
         assert unmatched == [], (
             f"{len(unmatched)} unhandled ingredients: {unmatched[:20]}"
         )
 
     def test_less_than_5_percent_unknown(
-        self, all_product_ingredients: set[str], lookup: dict
+        self,
+        all_product_ingredients: set[str],
+        lookup: dict,
+        ignore_patterns: list[re.Pattern[str]],
     ) -> None:
         total = len(all_product_ingredients)
         unmatched = sum(
-            1 for ing in all_product_ingredients if ing.lower().strip() not in lookup
+            1 for ing in all_product_ingredients
+            if not _is_classified(ing, lookup, ignore_patterns)
         )
         pct = (unmatched / total) * 100 if total > 0 else 0
         assert pct < 5, f"{pct:.1f}% unmatched (target <5%)"
@@ -286,6 +314,7 @@ class TestSpotCheck:
         brand_file: str,
         product_name_contains: str,
         lookup: dict,
+        patterns: list[re.Pattern[str]],
     ) -> list[str]:
         """Parse a product's ingredients and return any unmatched ones."""
         path = BRANDS_DIR / brand_file
@@ -296,49 +325,50 @@ class TestSpotCheck:
                 raw = product.get("ingredients_raw", "")
                 parsed = parse_ingredients(raw)
                 unmatched = [
-                    ing for ing in parsed if ing.lower().strip() not in lookup
+                    ing for ing in parsed
+                    if not _is_classified(ing, lookup, patterns)
                 ]
                 return unmatched
         pytest.fail(f"Product containing '{product_name_contains}' not found in {brand_file}")
 
-    def test_hills_zd(self, lookup: dict) -> None:
-        unmatched = self._check_product_ingredients("hills.json", "z/d", lookup)
+    def test_hills_zd(self, lookup: dict, ignore_patterns: list[re.Pattern[str]]) -> None:
+        unmatched = self._check_product_ingredients("hills.json", "z/d", lookup, ignore_patterns)
         assert unmatched == [], f"Unmatched in Hill's z/d: {unmatched}"
 
-    def test_purina_ha(self, lookup: dict) -> None:
-        unmatched = self._check_product_ingredients("purina.json", "HA Hydrolyzed", lookup)
+    def test_purina_ha(self, lookup: dict, ignore_patterns: list[re.Pattern[str]]) -> None:
+        unmatched = self._check_product_ingredients("purina.json", "HA Hydrolyzed", lookup, ignore_patterns)
         assert unmatched == [], f"Unmatched in Purina HA: {unmatched}"
 
-    def test_royalcanin_hp(self, lookup: dict) -> None:
+    def test_royalcanin_hp(self, lookup: dict, ignore_patterns: list[re.Pattern[str]]) -> None:
         unmatched = self._check_product_ingredients(
-            "royalcanin.json", "Hydrolyzed Protein", lookup
+            "royalcanin.json", "Hydrolyzed Protein", lookup, ignore_patterns
         )
         assert unmatched == [], f"Unmatched in Royal Canin HP: {unmatched}"
 
-    def test_acana_product(self, lookup: dict) -> None:
-        unmatched = self._check_product_ingredients("acana.json", "Chicken", lookup)
+    def test_acana_product(self, lookup: dict, ignore_patterns: list[re.Pattern[str]]) -> None:
+        unmatched = self._check_product_ingredients("acana.json", "Chicken", lookup, ignore_patterns)
         assert unmatched == [], f"Unmatched in Acana: {unmatched}"
 
-    def test_openfarm_product(self, lookup: dict) -> None:
-        unmatched = self._check_product_ingredients("openfarm.json", "Chicken", lookup)
+    def test_openfarm_product(self, lookup: dict, ignore_patterns: list[re.Pattern[str]]) -> None:
+        unmatched = self._check_product_ingredients("openfarm.json", "Chicken", lookup, ignore_patterns)
         assert unmatched == [], f"Unmatched in Open Farm: {unmatched}"
 
-    def test_bluebuffalo_product(self, lookup: dict) -> None:
-        unmatched = self._check_product_ingredients("bluebuffalo.json", "Chicken", lookup)
+    def test_bluebuffalo_product(self, lookup: dict, ignore_patterns: list[re.Pattern[str]]) -> None:
+        unmatched = self._check_product_ingredients("bluebuffalo.json", "Chicken", lookup, ignore_patterns)
         assert unmatched == [], f"Unmatched in Blue Buffalo: {unmatched}"
 
-    def test_rayne_product(self, lookup: dict) -> None:
-        unmatched = self._check_product_ingredients("rayne.json", "Rabbit", lookup)
+    def test_rayne_product(self, lookup: dict, ignore_patterns: list[re.Pattern[str]]) -> None:
+        unmatched = self._check_product_ingredients("rayne.json", "Rabbit", lookup, ignore_patterns)
         assert unmatched == [], f"Unmatched in Rayne: {unmatched}"
 
-    def test_firstmate_product(self, lookup: dict) -> None:
-        unmatched = self._check_product_ingredients("firstmate.json", "Salmon", lookup)
+    def test_firstmate_product(self, lookup: dict, ignore_patterns: list[re.Pattern[str]]) -> None:
+        unmatched = self._check_product_ingredients("firstmate.json", "Salmon", lookup, ignore_patterns)
         assert unmatched == [], f"Unmatched in FirstMate: {unmatched}"
 
-    def test_nutrience_product(self, lookup: dict) -> None:
-        unmatched = self._check_product_ingredients("nutrience.json", "Chicken", lookup)
+    def test_nutrience_product(self, lookup: dict, ignore_patterns: list[re.Pattern[str]]) -> None:
+        unmatched = self._check_product_ingredients("nutrience.json", "Chicken", lookup, ignore_patterns)
         assert unmatched == [], f"Unmatched in Nutrience: {unmatched}"
 
-    def test_iams_product(self, lookup: dict) -> None:
-        unmatched = self._check_product_ingredients("iams.json", "Chicken", lookup)
+    def test_iams_product(self, lookup: dict, ignore_patterns: list[re.Pattern[str]]) -> None:
+        unmatched = self._check_product_ingredients("iams.json", "Chicken", lookup, ignore_patterns)
         assert unmatched == [], f"Unmatched in Iams: {unmatched}"

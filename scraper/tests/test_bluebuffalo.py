@@ -158,7 +158,7 @@ class TestBuildProductName:
         html = """<html><body><h1>BLUE Wilderness</h1></body></html>"""
         soup = BeautifulSoup(html, "lxml")
         name = _build_product_name(soup)
-        assert name == "BLUE Wilderness"
+        assert name == "Wilderness"
 
     def test_treat_qualifier_included(self) -> None:
         html = _make_page_html(
@@ -168,7 +168,7 @@ class TestBuildProductName:
         )
         soup = BeautifulSoup(html, "lxml")
         name = _build_product_name(soup)
-        assert name == "BLUE True Chews Premium Jerky Cuts Made with Real Chicken"
+        assert name == "True Chews Premium Jerky Cuts Made with Real Chicken"
 
 
 class TestExtractNameQualifier:

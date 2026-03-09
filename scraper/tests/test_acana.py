@@ -2,6 +2,8 @@
 
 from bs4 import BeautifulSoup
 
+from unittest.mock import MagicMock
+
 from scrapers.acana import (
     _detect_sub_brand,
     _parse_calorie_content,
@@ -25,7 +27,7 @@ def _make_page_html(
 
     if ingredients:
         parts.append(
-            f'<div id="ingredients" data-role="content"><p>{ingredients}</p></div>'
+            f'<h3>Ingredients</h3><div><p>{ingredients}</p></div>'
         )
 
     if ga_table:
@@ -185,9 +187,9 @@ class TestParseProduct:
             calorie_text="3,493 kcal/kg, 419 kcal/cup",
             og_image="https://example.com/product.jpg",
         )
-        result = _parse_product("https://homesalive.ca/acana-classics-prairie-poultry", html, "acana")
+        result = _parse_product("https://homesalive.ca/acana-classics-prairie-poultry", html, "acana", MagicMock(), "https://www.acana.com")
         assert result is not None
-        assert result["name"] == "ACANA Classics Prairie Poultry"
+        assert result["name"] == "Classics Prairie Poultry"
         assert result["brand"] == "Acana"
         assert result["channel"] == "retail"
         assert result["product_type"] == "food"
@@ -198,23 +200,23 @@ class TestParseProduct:
 
     def test_wet_product_type(self):
         html = _make_page_html(h1="ACANA Premium Chunks Chicken in Bone Broth")
-        result = _parse_product("https://homesalive.ca/acana-chunks", html, "acana")
+        result = _parse_product("https://homesalive.ca/acana-chunks", html, "acana", MagicMock(), "https://www.acana.com")
         assert result is not None
         assert result["product_type"] == "food"
 
     def test_wet_type_can_word_boundary(self):
         """Ensure 'can' in 'acana' does not trigger wet type detection."""
         html = _make_page_html(h1="ACANA Classics Prairie Poultry")
-        result = _parse_product("https://homesalive.ca/acana-classics", html, "acana")
+        result = _parse_product("https://homesalive.ca/acana-classics", html, "acana", MagicMock(), "https://www.acana.com")
         assert result is not None
         assert result["product_type"] == "food"
 
     def test_no_h1_returns_none(self):
         html = "<html><body><p>No heading</p></body></html>"
-        assert _parse_product("https://example.com", html, "acana") is None
+        assert _parse_product("https://example.com", html, "acana", MagicMock(), "https://www.acana.com") is None
 
     def test_orijen_brand(self):
         html = _make_page_html(h1="ORIJEN Original Dog Food")
-        result = _parse_product("https://homesalive.ca/orijen-original", html, "orijen")
+        result = _parse_product("https://homesalive.ca/orijen-original", html, "orijen", MagicMock(), "https://www.orijenpetfoods.com")
         assert result is not None
         assert result["brand"] == "Orijen"

@@ -121,7 +121,7 @@ _FALLBACK_DATA: dict[str, tuple[str | None, GuaranteedAnalysis | None, str | Non
     ),
     # Source: Chewy.ca + VetRxDirect
     "purina-pro-plan-veterinary-diets/dog/supplements/fortiflora-canine-probiotic-supplement": (
-        None,
+        "Enterococcus Faecium SF68, Animal Digest, Brewer's Yeast",
         {
             "crude_protein_min": 43.0,
             "crude_fat_min": 10.0,
@@ -132,7 +132,7 @@ _FALLBACK_DATA: dict[str, tuple[str | None, GuaranteedAnalysis | None, str | Non
     ),
     # Source: Chewy.ca + PetSmart
     "purina-pro-plan-veterinary-diets/dog/supplements/fortiflora-canine-probiotic-tablets": (
-        None,
+        "Enterococcus Faecium SF68, Acacia Gum, Chicken Liver Flavour, Hydroxypropyl Cellulose, Magnesium Stearate, Microcrystalline Cellulose",
         {
             "crude_protein_min": 16.5,
             "crude_fat_min": 4.5,
@@ -685,7 +685,7 @@ def _parse_product(
     url_key = url_path.lstrip("/")
     if url_key in _FALLBACK_DATA:
         fb_ing, fb_ga, fb_cal = _FALLBACK_DATA[url_key]
-        if fb_ing and not product.get("ingredients_raw"):
+        if fb_ing:
             product["ingredients_raw"] = fb_ing
         if fb_ga and not product.get("guaranteed_analysis"):
             product["guaranteed_analysis"] = fb_ga

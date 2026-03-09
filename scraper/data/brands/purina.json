@@ -1,7 +1,7 @@
 {
   "brand": "Purina",
   "website_url": "https://www.purina.ca",
-  "scraped_at": "2026-03-08T17:19:11.156839+00:00",
+  "scraped_at": "2026-03-09T13:36:10.783191+00:00",
   "scraper_version": "0.1.0",
   "stats": {
     "product_count": 199,
@@ -266,7 +266,7 @@
       "source_id": "055800468284 "
     },
     {
-      "name": "Purina ONE +Plus Tender Cuts In Gravy Bone & Joint Health Chicken & Brown Rice Entrée Dog Food",
+      "name": "Purina ONE +Plus Tender Cuts In Gravy Bone & Joint Health Chicken & Brown Rice Entrée Dog Food",
       "brand": "Purina",
       "url": "https://www.purina.ca/purina-one/dogs/wet-dog-food/tender-cuts-gravy-chicken-rice-bone-joint",
       "channel": "retail",
@@ -299,7 +299,7 @@
       "source_id": "055800499066"
     },
     {
-      "name": "Purina ONE +Plus Tender Cuts In Gravy Heart & Brain Health Chicken & Brown Rice Entrée Dog Food",
+      "name": "Purina ONE +Plus Tender Cuts In Gravy Heart & Brain Health Chicken & Brown Rice Entrée Dog Food",
       "brand": "Purina",
       "url": "https://www.purina.ca/purina-one/dogs/wet-dog-food/tender-cuts-gravy-chicken-rice-heart-brain",
       "channel": "retail",
@@ -1576,7 +1576,7 @@
       "source_id": "055800216366"
     },
     {
-      "name": "Beggin’ Peanut Butter Flavour Dog Snacks",
+      "name": "Beggin' Peanut Butter Flavour Dog Snacks",
       "brand": "Purina",
       "url": "https://www.purina.ca/beggin/dog-treats/beggin-strips-bacon-peanut-butter",
       "channel": "retail",
@@ -1793,7 +1793,7 @@
       "source_id": "038100131904"
     },
     {
-      "name": "Beggin’ Chew-rific Bacon & Cheese Flavours Dog Snacks",
+      "name": "Beggin' Chew-rific Bacon & Cheese Flavours Dog Snacks",
       "brand": "Purina",
       "url": "https://www.purina.ca/beggin/dog-treats/chew-rific-bacon-cheese",
       "channel": "retail",
@@ -1827,7 +1827,7 @@
       "source_id": "055800269874"
     },
     {
-      "name": "Beggin’ Venison Flavour Dog Snacks",
+      "name": "Beggin' Venison Flavour Dog Snacks",
       "brand": "Purina",
       "url": "https://www.purina.ca/beggin/dog-treats/beggin-adventures-venison",
       "channel": "retail",
@@ -1842,7 +1842,7 @@
         "moisture_max": 23.0
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "2861 kcal/kg, 10 kcal/treat",
+      "calorie_content": "2861 kcal/kg, 10.70 kcal/treat",
       "images": [
         "/products/purina/purina-treat-beggin-venison-flavour-dog-snacks.webp"
       ],
@@ -1866,7 +1866,7 @@
       "source_id": "055800363756"
     },
     {
-      "name": "Beggin’ Strips Beef Flavour Dog Snacks",
+      "name": "Beggin' Strips Beef Flavour Dog Snacks",
       "brand": "Purina",
       "url": "https://www.purina.ca/beggin/dog-treats/beggin-strips-bacon-beef",
       "channel": "retail",
@@ -1900,7 +1900,7 @@
       "source_id": "055800317230"
     },
     {
-      "name": "Beggin’ Mini with Bacon Dog Snacks",
+      "name": "Beggin' Mini with Bacon Dog Snacks",
       "brand": "Purina",
       "url": "https://www.purina.ca/beggin/dog-treats/beggin-littles-small-dog-bacon",
       "channel": "retail",
@@ -1929,7 +1929,7 @@
       "source_id": "055800219244"
     },
     {
-      "name": "Beggin’ Strips Cheeseburger Flavour Dog Snacks",
+      "name": "Beggin' Strips Cheeseburger Flavour Dog Snacks",
       "brand": "Purina",
       "url": "https://www.purina.ca/beggin/dog-treats/strips-cheeseburger",
       "channel": "retail",
@@ -1963,7 +1963,7 @@
       "source_id": "055800272034"
     },
     {
-      "name": "Beggin’ Strips Cheese Flavour Dog Snacks",
+      "name": "Beggin' Strips Cheese Flavour Dog Snacks",
       "brand": "Purina",
       "url": "https://www.purina.ca/beggin/dog-treats/beggin-strips-bacon-cheese",
       "channel": "retail",
@@ -2007,7 +2007,7 @@
       "source_id": "055800316684"
     },
     {
-      "name": "Beggin’ Strips with Bacon Dog Snacks",
+      "name": "Beggin' Strips with Bacon Dog Snacks",
       "brand": "Purina",
       "url": "https://www.purina.ca/beggin/dog-treats/beggin-strips-bacon",
       "channel": "retail",
@@ -2433,7 +2433,7 @@
         "moisture_max": 25.0
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "2733 kcal/kg, 2 kcal/treat",
+      "calorie_content": "2733 kcal/kg, 2.20 kcal/treat",
       "images": [
         "/products/purina/purina-treat-purina-one-true-instinct-bites-with-venison.webp"
       ],
@@ -2464,11 +2464,11 @@
         "crude_protein_min": 19.0,
         "crude_fat_min": 6.5,
         "crude_fiber_max": 3.0,
-        "moisture_max": 28.0,
+        "moisture_max": 0.0,
         "dha_min": 0.05
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "2827 kcal/kg, 2 kcal/treat",
+      "calorie_content": "2827 kcal/kg, 2.90 kcal/treat",
       "images": [
         "/products/purina/purina-treat-purina-one-true-instinct-bites-with-salmon.webp"
       ],
@@ -2502,7 +2502,7 @@
         "moisture_max": 27.0
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "2931 kcal/kg, 2 kcal/treat",
+      "calorie_content": "2931 kcal/kg, 2.40 kcal/treat",
       "images": [
         "/products/purina/purina-treat-purina-one-true-instinct-bites-with-chicken.webp"
       ],
@@ -4297,7 +4297,7 @@
       "source_id": "038100183897"
     },
     {
-      "name": "Beggin’ Flavour Stix With Bacon & Peanut Butter Flavour Dog Snacks",
+      "name": "Beggin' Flavour Stix With Bacon & Peanut Butter Flavour Dog Snacks",
       "brand": "Purina",
       "url": "https://www.purina.ca/beggin/dogs/dog-treats/flavour-stix-bacon-peanut-butter",
       "channel": "retail",
@@ -4917,7 +4917,7 @@
       "source_id": "055800476074"
     },
     {
-      "name": "Beggin’ Flavour Stix With Bacon & Cheddar Jack Flavour Dog Snacks",
+      "name": "Beggin' Flavour Stix With Bacon & Cheddar Jack Flavour Dog Snacks",
       "brand": "Purina",
       "url": "https://www.purina.ca/beggin/dogs/dog-treats/flavour-stix-bacon-cheddar-jack",
       "channel": "retail",
@@ -5043,7 +5043,7 @@
       "ingredients_raw": "Turkey, Chicken Meal, Pea Starch, Cassava Root Flour, Canola Meal, Egg Product (Dried), Beef fat preserved with mixed-tocopherols, Dried Beet Pulp, Dried Yeast, Beef Broth, Pea Protein, Natural Flavours, Dried Apples, Potassium Chloride, Salt, Taurine, Calcium Carbonate, D, L-Methionine, Zinc Sulphate, Ferrous Sulphate, Manganese Sulphate, Copper Sulphate, Calcium Iodate, Sodium Selenite, Vitamin E Supplement, Niacin (Vitamin B3), Thiamine Mononitrate (Vitamin B1), Calcium Pantothenate (Vitamin B5), Vitamin A Supplement, Riboflavin Supplement (Vitamin B2), Vitamin B-12 Supplement, Pyridoxine Hydrochloride (Vitamin B6), Folic Acid (Vitamin B9), Menadione Sodium Bisulphate Complex (Source Of Vitamin K Activity), Biotin (Vitamin B7), Vitamin D3 Supplement, Choline Chloride",
       "guaranteed_analysis": {
         "crude_protein_min": 27.0,
-        "crude_fat_min": 16.0,
+        "crude_fat_min": 1.4,
         "crude_fiber_max": 5.0,
         "moisture_max": 12.0,
         "omega_6_min": 1.3,
@@ -5430,7 +5430,7 @@
           "upc": "038100105189 "
         }
       ],
-      "ingredients_raw": "Water, chicken, meat   by-products, wheat gluten, liver, rice, soy flour,   powdered cellulose, guar gum, locust bean gum,",
+      "ingredients_raw": "Water, chicken, meat by-products, wheat gluten, liver, rice, soy flour, powdered cellulose, guar gum, locust bean gum,",
       "source_id": "038100105189 "
     },
     {
@@ -5465,7 +5465,7 @@
           "upc": "038100193223 "
         }
       ],
-      "ingredients_raw": "Water, meat by-products, chicken,   rice, powdered cellulose, dextrose, vegetable oil (source of medium-chain triglycerides), fish oil, dried egg product, L-Lysine monohydrochloride, glycine, DL-Methionine, carrageenan, magnesium sulfate, locust bean gum, potassium chloride, garlic   powder, tricalcium phosphate, taurine, Vitamin E supplement, xanthan gum, zinc sulfate, L-carnitine, ferrous sulfate, niacin (Vitamin B-3), thiamine mononitrate (Vitamin B-1), calcium pantothenate (Vitamin B-5), copper sulfate, manganese sulfate,   pyridoxine hydrochloride (Vitamin B-6), Vitamin B-12 supplement, riboflavin supplement (Vitamin B-2), Vitamin A supplement, folic   acid (Vitamin B-9), Vitamin D-3 supplement, biotin (Vitamin B-7), potassium iodide, sodium selenite",
+      "ingredients_raw": "Water, meat by-products, chicken, rice, powdered cellulose, dextrose, vegetable oil (source of medium-chain triglycerides), fish oil, dried egg product, L-Lysine monohydrochloride, glycine, DL-Methionine, carrageenan, magnesium sulfate, locust bean gum, potassium chloride, garlic powder, tricalcium phosphate, taurine, Vitamin E supplement, xanthan gum, zinc sulfate, L-carnitine, ferrous sulfate, niacin (Vitamin B-3), thiamine mononitrate (Vitamin B-1), calcium pantothenate (Vitamin B-5), copper sulfate, manganese sulfate, pyridoxine hydrochloride (Vitamin B-6), Vitamin B-12 supplement, riboflavin supplement (Vitamin B-2), Vitamin A supplement, folic acid (Vitamin B-9), Vitamin D-3 supplement, biotin (Vitamin B-7), potassium iodide, sodium selenite",
       "source_id": "038100193223 "
     },
     {
@@ -5497,7 +5497,7 @@
           "upc": "038100105202 "
         }
       ],
-      "ingredients_raw": "Water, chicken, meat   by-products, wheat gluten, liver, rice, soy flour,   salmon, powdered cellulose, guar gum, locust bean gum, potassium chloride, tricalcium   phosphate, magnesium sulfate, choline chloride,   potassium citrate, calcium carbonate, calcium   sulfate, Vitamin E supplement, zinc sulfate,   niacin (Vitamin B-3), ferrous sulfate, thiamine   mononitrate (Vitamin B-1), calcium pantothenate   (Vitamin B-5), pyridoxine hydrochloride   (Vitamin B-6), copper sulfate, riboflavin   supplement (Vitamin B-2), manganese sulfate,   Vitamin B-12 supplement, biotin (Vitamin B-7),   folic acid (Vitamin B-9), Vitamin A supplement,   Vitamin D-3 supplement, potassium iodide,   sodium selenite",
+      "ingredients_raw": "Water, chicken, meat by-products, wheat gluten, liver, rice, soy flour, salmon, powdered cellulose, guar gum, locust bean gum, potassium chloride, tricalcium phosphate, magnesium sulfate, choline chloride, potassium citrate, calcium carbonate, calcium sulfate, Vitamin E supplement, zinc sulfate, niacin (Vitamin B-3), ferrous sulfate, thiamine mononitrate (Vitamin B-1), calcium pantothenate (Vitamin B-5), pyridoxine hydrochloride (Vitamin B-6), copper sulfate, riboflavin supplement (Vitamin B-2), manganese sulfate, Vitamin B-12 supplement, biotin (Vitamin B-7), folic acid (Vitamin B-9), Vitamin A supplement, Vitamin D-3 supplement, potassium iodide, sodium selenite",
       "source_id": "038100105202 "
     },
     {
@@ -5815,7 +5815,7 @@
         "moisture_max": 13.0,
         "glucosamine_max": 450.0,
         "omega_3_min": 0.8,
-        "glucosamine_min": 1.0
+        "glucosamine_min": 1000.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3200 kcal/kg",
@@ -5860,7 +5860,7 @@
           "upc": "055800369482"
         }
       ],
-      "ingredients_raw": "Active Ingredients per Sachet (1 g):  Enterococcus faecium  (SF68) 1x10^8 CFU. Inactive Ingredients: Animal digest, brewer's yeast. A-9301-C.",
+      "ingredients_raw": "Enterococcus Faecium SF68, Animal Digest, Brewer's Yeast",
       "guaranteed_analysis": {
         "crude_protein_min": 43.0,
         "crude_fat_min": 10.0,
@@ -6775,7 +6775,7 @@
       "images": [
         "/products/purina/purina-supplement-pro-plan-veterinary-supplements-forti-flora-canine-probiotic-tablets.webp"
       ],
-      "ingredients_raw": "Active Ingredients: per 1.77 g Tablet: Enterococcus faecium (SF68) 1x10^8 CFU. Inactive Ingredients: Acacia Gum, Chicken Liver Flavour, Hydroxypropyl Cellulose, Magnesium Stearate, Microcrystalline Cellulose",
+      "ingredients_raw": "Enterococcus Faecium SF68, Acacia Gum, Chicken Liver Flavour, Hydroxypropyl Cellulose, Magnesium Stearate, Microcrystalline Cellulose",
       "guaranteed_analysis": {
         "crude_protein_min": 16.5,
         "crude_fat_min": 4.5,
@@ -6783,7 +6783,7 @@
         "moisture_max": 10.0
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "2 kcal/treat",
+      "calorie_content": "2.90 kcal/treat",
       "source_id": "055800487452"
     },
     {

@@ -89,11 +89,18 @@
 - Only a controlled reintroduction (beef while on stable allergy medication during allergy season) can confirm this
 
 ## Food History (from scorecard, oldest first)
-1. **Pro Plan Puppy Chicken & Rice Entree Classic** — ~4 months. Poop 2-3, loved it. Made itching worse.
-2. **Pro Plan Sensitive Skin & Stomach Lamb & Oat Meal Entree In Gravy** — ~4 months. Poop 3-4 (soft to soggy). No itch change.
-3. **Pro Plan Complete Essentials Beef & Rice Entree Classic** — ~2 weeks. Poop 2 (ideal), loved it. Made itching worse (beef is #1 skin allergen at 34%).
-4. **Pro Plan Adult Sensitive Skin & Stomach Salmon & Rice Entree Classic** — ~1 week. Poop 6 (no shape). Bad.
-5. **Pro Plan Veterinary Diets HA Hydrolyzed Chicken Flavour Canned** — current, months. Was working great, now declining.
+1. **Pro Plan Puppy Chicken & Rice Entree Classic** — ~8 months (Oct 2023 – Jun 2024). Poop 3, itch 0.5. Made itching worse.
+2. **Pro Plan Adult Complete Essentials Chicken & Rice Entree Classic** — ~7 months (Jun 2024 – Dec 2024). Poop 3, itch 0.5.
+3. **Pro Plan Sensitive Skin & Stomach Lamb & Oat Meal Entree In Gravy** — ~7 months (Jan 2025 – Aug 2025). Poop 3.5, itch 1.
+4. **Pro Plan Adult Sensitive Skin & Stomach Salmon & Rice Entree Classic** — 1 week (Aug 10-16, 2025). Poop 6.5 (no shape). Bad.
+5. **Pro Plan Complete Essentials Beef & Rice Entree Classic** — 2 weeks (Aug 17-31, 2025). Poop 2 (ideal), loved it. Made itching worse (beef is #1 skin allergen at 34%).
+6. **Pro Plan Veterinary Diets HA Hydrolyzed Chicken Flavour Canned** — current, since Sep 1 2025. Was working great (poop 3, no itch all winter), now declining.
+
+### Puppy Food as an Option for Adults
+The puppy formula (food #1 above) gave good stool and Peaches loved it. It's safe for adults — AAFCO "growth" formulas meet or exceed adult maintenance requirements. The only concern is calorie density (1292 kcal/kg, 7% fat vs typical adult ~5-6%), so portions would need to be slightly smaller to avoid weight gain at 9.8kg. The puppy and beef formulas share a trait: very short, simple ingredient lists (chicken + liver + meat by-products + salmon + rice — no potato, beet pulp, oat, or complex additives). The simplicity itself may be why his gut tolerates them best.
+
+Verified ingredients (match Purina.ca source, Mar 2026):
+> Chicken, Liver, Meat By-Products, Water Sufficient for Processing, Salmon, Rice, Guar Gum, Salt, Carrageenan, Choline Chloride
 
 ## Key Patterns
 - **Supplements/toppers are small quantities (25-30g/meal)** — their scorecard scores reflect whatever primary food they're paired with, not their own effect. Pumpkin topper at 2.5 stool over 368 days is just a weighted average of every food it accompanied. The real signal is: removing it makes stool worse (protective fiber effect), but it can't override a bad food (salmon still hit 6 with pumpkin on board).

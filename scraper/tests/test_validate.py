@@ -5,7 +5,7 @@ from pathlib import Path
 from validate import parse_myvetstore_products, MANUFACTURER_TO_BRAND
 
 DOCS_DIR = Path(__file__).parent.parent.parent / "docs"
-MYVETSTORE_PATH = DOCS_DIR / "myvetstore-products.md"
+MYVETSTORE_PATH = DOCS_DIR / "ref-mar2026-myvetstore-pricing.md"
 
 
 class TestParseMyvetstoreProducts:

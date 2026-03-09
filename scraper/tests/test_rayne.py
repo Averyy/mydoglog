@@ -247,26 +247,26 @@ class TestParseProduct:
 
 class TestGetGaAndCalories:
     def test_direct_match(self) -> None:
-        ga, cal = _get_ga_and_calories("crocodilia-maint-canine-bag")
+        ga, cal, _basis = _get_ga_and_calories("crocodilia-maint-canine-bag")
         assert ga is not None
         assert ga["crude_protein_min"] == 20.9
         assert cal is not None
         assert "3524" in cal
 
     def test_sample_fallback(self) -> None:
-        ga, cal = _get_ga_and_calories("rabbit-maint-canine-bag-sample")
+        ga, cal, _basis = _get_ga_and_calories("rabbit-maint-canine-bag-sample")
         assert ga is not None
         assert ga["crude_protein_min"] == 26.2
         assert cal is not None
 
     def test_unknown_handle_returns_none(self) -> None:
-        ga, cal = _get_ga_and_calories("nonexistent-product")
+        ga, cal, _basis = _get_ga_and_calories("nonexistent-product")
         assert ga is None
         assert cal is None
 
     def test_wet_product_with_calories(self) -> None:
         """Wet canned products have GA and calorie data from diet pages."""
-        ga, cal = _get_ga_and_calories("crocodilia-maint-canine-cans-1")
+        ga, cal, _basis = _get_ga_and_calories("crocodilia-maint-canine-cans-1")
         assert ga is not None
         assert ga["crude_protein_min"] == 7.0
         assert cal is not None
@@ -284,7 +284,7 @@ class TestGetGaAndCalories:
             "growth-sensitive-gi-canine-bag",
         ]
         for handle in dry_handles:
-            ga, cal = _GA_DATA[handle]
+            ga, cal = _GA_DATA[handle][:2]
             assert ga is not None, f"{handle} missing GA"
             assert cal is not None, f"{handle} missing calorie data"
             assert "kcal/kg" in cal, f"{handle} calorie data missing kcal/kg"
@@ -299,13 +299,13 @@ class TestGetGaAndCalories:
             "kangaroo-diag-dual-species-freeze-dried",
         ]
         for handle in diag_handles:
-            ga, cal = _get_ga_and_calories(handle)
+            ga, cal, _basis = _get_ga_and_calories(handle)
             assert ga == {}, f"{handle} should have empty GA dict"
             assert cal is not None, f"{handle} missing calorie data"
 
     def test_dental_chews_have_ga(self) -> None:
         """Dental chews have full GA and calorie data."""
-        ga, cal = _get_ga_and_calories("rabbit-dental-chews-for-dogs")
+        ga, cal, _basis = _get_ga_and_calories("rabbit-dental-chews-for-dogs")
         assert ga is not None
         assert ga["crude_protein_min"] == 6.4
         assert cal is not None
@@ -315,7 +315,8 @@ class TestGetGaAndCalories:
         """Sanity check that GA values are in realistic ranges."""
         from scrapers.rayne import _GA_DATA
 
-        for handle, (ga, _cal) in _GA_DATA.items():
+        for handle, entry in _GA_DATA.items():
+            ga = entry[0]
             if not ga:  # Skip calorie-only entries (DIAG, treats)
                 continue
 
@@ -323,13 +324,13 @@ class TestGetGaAndCalories:
             fat = ga.get("crude_fat_min", 0)
             fiber = ga.get("crude_fiber_max", 0)
 
-            # Protein should be between 5% (wet) and 50% (dry)
-            assert 5.0 <= protein <= 50.0, (
-                f"{handle}: protein {protein}% outside 5-50% range"
+            # Protein should be between 5% (wet) and 70% (treats/freeze-dried)
+            assert 5.0 <= protein <= 70.0, (
+                f"{handle}: protein {protein}% outside 5-70% range"
             )
-            # Fat should be between 1% and 25%
-            assert 1.0 <= fat <= 25.0, (
-                f"{handle}: fat {fat}% outside 1-25% range"
+            # Fat should be between 1% and 30% (freeze-dried can be higher)
+            assert 1.0 <= fat <= 30.0, (
+                f"{handle}: fat {fat}% outside 1-30% range"
             )
             # Fiber should be between 0% and 10%
             assert 0.0 <= fiber <= 10.0, (

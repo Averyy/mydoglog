@@ -1,0 +1,1448 @@
+{
+  "brand": "Stella & Chewy's",
+  "website_url": "https://www.petsmart.ca",
+  "scraped_at": "2026-03-09T16:23:55.776525+00:00",
+  "scraper_version": "0.1.0",
+  "stats": {
+    "product_count": 42,
+    "by_channel": {
+      "retail": 42
+    },
+    "by_type": {
+      "food": 17,
+      "supplement": 20,
+      "treat": 5
+    }
+  },
+  "products": [
+    {
+      "name": "Lil Bites Savory Stews Small Breed Adult Wet Dog Food - Beef & Chicken",
+      "brand": "Stella & Chewy's",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/stella-and-chewys-lil-bites-savory-stews-small-breed-adult-wet-dog-food---beef-and-chicken-91768.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Lil Bites",
+      "life_stage": "adult",
+      "breed_size": "Small",
+      "source_id": "5368746",
+      "images": [
+        "/products/stella-chewy-s/stella-chewy-s-food-lil-bites-savory-stews-small-breed-adult-wet-dog-food-beef-chicken.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0810027370815",
+          "sku": "5368746"
+        }
+      ],
+      "ingredients_raw": "BEEF, CHICKEN, BEEF BROTH, CHICKEN BROTH, TAPIOCA, SUNFLOWER OIL, SALT, POTASSIUM CHLORIDE, CHOLINE CHLORIDE, VITAMIN E SUPPLEMENT, MAGNESIUM SULFATE, TAURINE, TURMERIC, SALMON OIL, ZINC OXIDE, REDUCED IRON, SODIUM SELENITE, VITAMIN B12 SUPPLEMENT, MANGANESE SULFATE, NIACIN SUPPLEMENT, d–CALCIUM PANTOTHENATE, THIAMINE MONONITRATE, VITAMIN A SUPPLEMENT, COPPERAMINO ACID COMPLEX, BIOTIN, RIBOFLAVIN SUPPLEMENT, PYRIDOXINE HYDROCHLORIDE, POTASSIUM IODIDE, BETA–CAROTENE, FOLIC ACID.",
+      "guaranteed_analysis": {
+        "crude_protein_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "922 kcal/kg"
+    },
+    {
+      "name": "Lil Bites Savory Stews Small Breed Adult Wet Dog Food - Chicken",
+      "brand": "Stella & Chewy's",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/stella-and-chewys-lil-bites-savory-stews-small-breed-adult-wet-dog-food---chicken-91769.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Lil Bites",
+      "life_stage": "adult",
+      "breed_size": "Small",
+      "source_id": "5368747",
+      "images": [
+        "/products/stella-chewy-s/stella-chewy-s-food-lil-bites-savory-stews-small-breed-adult-wet-dog-food-chicken.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0810027370808",
+          "sku": "5368747"
+        }
+      ],
+      "ingredients_raw": "CHICKEN, CHICKEN BROTH, TAPIOCA, SUNFLOWER OIL, TRICALCIUM PHOSPHATE, SALT, POTASSIUM CHLORIDE, CHOLINE CHLORIDE, VITAMIN E SUPPLEMENT, MAGNESIUM SULFATE, TAURINE, TURMERIC, SALMON OIL, ZINC OXIDE, REDUCED IRON, SODIUM SELENITE, MANGANESE SULFATE, VITAMIN B12 SUPPLEMENT, COPPER AMINO ACID COMPLEX, NIACIN SUPPLEMENT, d–CALCIUM PANTOTHENATE, THIAMINE MONONITRATE, VITAMIN A SUPPLEMENT, BIOTIN, RIBOFLAVIN SUPPLEMENT, PYRIDOXINE HYDROCHLORIDE, POTASSIUM IODIDE, BETA–CAROTENE, FOLIC ACID.",
+      "guaranteed_analysis": {
+        "crude_protein_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "890 kcal/kg"
+    },
+    {
+      "name": "Lil Bites Savory Stews Small Breed Adult Wet Dog Food - Chicken & Duck",
+      "brand": "Stella & Chewy's",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/stella-and-chewys-lil-bites-savory-stews-small-breed-adult-wet-dog-food---chicken-and-duck-91771.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Lil Bites",
+      "life_stage": "adult",
+      "breed_size": "Small",
+      "source_id": "5368749",
+      "images": [
+        "/products/stella-chewy-s/stella-chewy-s-food-lil-bites-savory-stews-small-breed-adult-wet-dog-food-chicken-duck.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0810027370839",
+          "sku": "5368749"
+        }
+      ],
+      "ingredients_raw": "CHICKEN, CHICKEN BROTH, DUCK, TAPIOCA, SUNFLOWER OIL, SALT, TRICALCIUM PHOSPHATE, POTASSIUM CHLORIDE, CHOLINE CHLORIDE, VITAMIN E SUPPLEMENT, TAURINE, TURMERIC, SALMON OIL, ZINC OXIDE, MAGNESIUM SULFATE, REDUCED IRON, SODIUM SELENITE, VITAMIN B12 SUPPLEMENT, MANGANESE SULFATE, COPPER AMINO ACID COMPLEX, NIACIN SUPPLEMENT, d–CALCIUM PANTOTHENATE, THIAMINE MONONITRATE, VITAMIN A SUPPLEMENT, BIOTIN, RIBOFLAVIN SUPPLEMENT, PYRIDOXINE HYDROCHLORIDE, POTASSIUM IODIDE, BETA–CAROTENE, FOLIC ACID.",
+      "guaranteed_analysis": {
+        "crude_protein_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "964 kcal/kg"
+    },
+    {
+      "name": "Freeze-Dried Raw Dinner Patties All Life Stages Dry Dog Food - Chewy's Chicken",
+      "brand": "Stella & Chewy's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/stella-and-chewys-freeze-dried-raw-dinner-patties-all-life-stages-dry-dog-food---chewys-chicken-91783.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Dinner Patties",
+      "life_stage": "all",
+      "source_id": "5368740",
+      "images": [
+        "/products/stella-chewy-s/stella-chewy-s-food-freeze-dried-raw-dinner-patties-all-life-stages-dry-dog-food-chewy-s-chicken.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0186011000045",
+          "sku": "5368740"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0186011000465",
+          "sku": "5368741"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0186011000052",
+          "sku": "5368742"
+        }
+      ],
+      "ingredients_raw": "Chicken with ground bone, chicken liver, chicken gizzard, pumpkin seed, organic cranberries, organic spinach, organic broccoli, organic beets, organic carrots, organic squash, organic blueberries, fenugreek seed, potassium chloride,dried kelp, sodium phosphate, tocopherols (preservative), choline chloride, salt, dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, zinc proteinate, iron proteinate, taurine, calcium carbonate, vitamin E supplement, thiamine mononitrate, copper proteinate, manganese proteinate, sodium selenite, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin D3 supplement, vitamin B12 supplement, pyridoxine hydrochloride, folic acid. Contains a source of live (viable) naturally occurring microorganisms.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 48.0,
+        "crude_fat_min": 28.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 5.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4420 kcal/kg"
+    },
+    {
+      "name": "Freeze-Dried Raw Dinner Patties All Life Stages Dry Dog Food - Dandy Lamb",
+      "brand": "Stella & Chewy's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/stella-and-chewys-freeze-dried-raw-dinner-patties-all-life-stages-dry-dog-food---dandy-lamb-91785.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Dinner Patties",
+      "life_stage": "all",
+      "source_id": "5368790",
+      "images": [
+        "/products/stella-chewy-s/stella-chewy-s-food-freeze-dried-raw-dinner-patties-all-life-stages-dry-dog-food-dandy-lamb.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0186011000182",
+          "sku": "5368790"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0186011001837",
+          "sku": "5368791"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0186011000175",
+          "sku": "5368792"
+        }
+      ],
+      "ingredients_raw": "Lamb, lamb liver, lamb spleen, lamb heart, lamb kidney, lamb bone, pumpkin seed, organic cranberries, organic spinach, organic broccoli, organic beets, organic carrots, organic squash, organic blueberries, fenugreek seed, potassium chloride, dried kelp, sodium phosphate, tocopherols (preservative), choline chloride, dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, zinc proteinate, iron proteinate, taurine, calcium carbonate, vitamin E supplement, thiamine mononitrate, copper proteinate, manganese proteinate, sodium selenite, niacin supplement, d–calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin D3 supplement, vitamin B12 supplement, pyridoxine hydrochloride, folic acid.Contains a source of live (viable) naturally occurring microorganisms.",
+      "guaranteed_analysis": {
+        "taurine_min": 95.0,
+        "crude_protein_max": 34.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "5270 kcal/kg"
+    },
+    {
+      "name": "Freeze-Dried Raw Dinner Patties All Life Stages Dry Dog Food - Duck",
+      "brand": "Stella & Chewy's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/stella-and-chewys-freeze-dried-raw-dinner-patties-all-life-stages-dry-dog-food---duck-91784.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Dinner Patties",
+      "life_stage": "all",
+      "source_id": "5368786",
+      "images": [
+        "/products/stella-chewy-s/stella-chewy-s-food-freeze-dried-raw-dinner-patties-all-life-stages-dry-dog-food-duck.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0186011000472",
+          "sku": "5368786"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0186011000335",
+          "sku": "5368787"
+        }
+      ],
+      "ingredients_raw": "Duck with ground bone, turkey, turkey liver, turkey heart, goose, turkey gizzard, pumpkin seed, organic cranberries, organic spinach, organic broccoli, organic beets, organic carrots, organic squash, organic blueberries, fenugreek seed, potassium chloride, dried kelp, sodium phosphate, tocopherols (preservative), choline chloride, salt, dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, zinc proteinate, iron proteinate, taurine, calcium carbonate, vitamin E supplement, thiamine mononitrate, copper proteinate, manganese proteinate, sodium selenite, niacin supplement, d–calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin D3 supplement, vitamin B12 supplement, pyridoxine hydrochloride, folic acid.Contains a source of live (viable) naturally occurring microorganisms.",
+      "guaranteed_analysis": {
+        "taurine_min": 95.0,
+        "crude_protein_max": 38.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "5370 kcal/kg"
+    },
+    {
+      "name": "Freeze-Dried Raw Dinner Patties All Life Stages Dry Dog Food - Super Beef",
+      "brand": "Stella & Chewy's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/stella-and-chewys-freeze-dried-raw-dinner-patties-all-life-stages-dry-dog-food---super-beef-91782.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Dinner Patties",
+      "life_stage": "all",
+      "source_id": "5368711",
+      "images": [
+        "/products/stella-chewy-s/stella-chewy-s-food-freeze-dried-raw-dinner-patties-all-life-stages-dry-dog-food-super-beef.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0186011000076",
+          "sku": "5368711"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0186011000458",
+          "sku": "5368712"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0186011000069",
+          "sku": "5368713"
+        }
+      ],
+      "ingredients_raw": "Beef, beef heart, beef kidney, beef tripe, beef liver, beef bone, pumpkin seed, organic cranberries, organic spinach, organic broccoli, organic beets, organic carrots, organic squash, organic blueberries, fenugreek seed, potassium chloride, dried kelp, sodium phosphate, tocopherols (preservative), choline chloride, dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, zinc proteinate, iron proteinate, taurine, calcium carbonate, vitamin E supplement, thiamine mononitrate, copper proteinate, manganese proteinate, sodium selenite, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin D3 supplement, vitamin B12 supplement, pyridoxine hydrochloride, folic acid. Contains a source of live (viable) naturally occurring microorganisms.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 41.0,
+        "crude_fat_min": 35.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 5.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4940 kcal/kg"
+    },
+    {
+      "name": "Freeze-Dried Raw Dinner Patties All Life Stages Dry Dog Food - Surf 'N Turf",
+      "brand": "Stella & Chewy's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/stella-and-chewys-freeze-dried-raw-dinner-patties-all-life-stages-dry-dog-food---surf-n-turf-91790.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Dinner Patties",
+      "life_stage": "all",
+      "source_id": "5368861",
+      "images": [
+        "/products/stella-chewy-s/stella-chewy-s-food-freeze-dried-raw-dinner-patties-all-life-stages-dry-dog-food-surf-n-turf.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0852301008540",
+          "sku": "5368861"
+        }
+      ],
+      "ingredients_raw": "Beef, whole ground salmon, beef liver, beef heart, beef bone, pumpkin seed, organic cranberries, organicspinach, organic broccoli, organic beets, organic carrots, organic squash, organic blueberries, fenugreek seed, potassium chloride, dried kelp, sodium phosphate, tocopherols (preservative), choline chloride, dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, zinc proteinate, iron proteinate, taurine, calcium carbonate, vitamin E supplement, thiamine mononitrate, copper proteinate, manganese proteinate, sodium selenite, niacin supplement, d–calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin B12 supplement, pyridoxine hydrochloride, folic acid.Contains a source of live (viable) naturally occurring microorganisms",
+      "guaranteed_analysis": {
+        "taurine_min": 95.0,
+        "crude_protein_max": 45.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "5104 kcal/kg"
+    },
+    {
+      "name": "Freeze-Dried Raw Dinner Patties All Life Stages Dry Dog Food - Tantalizing Turkey",
+      "brand": "Stella & Chewy's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/stella-and-chewys-freeze-dried-raw-dinner-patties-all-life-stages-dry-dog-food---tantalizing-turkey-91786.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Dinner Patties",
+      "life_stage": "all",
+      "source_id": "5368777",
+      "images": [
+        "/products/stella-chewy-s/stella-chewy-s-food-freeze-dried-raw-dinner-patties-all-life-stages-dry-dog-food-tantalizing-turkey.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0186011001752",
+          "sku": "5368777"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0186011001745",
+          "sku": "5368778"
+        }
+      ],
+      "ingredients_raw": "Turkey with ground bone, turkey liver, turkey gizzard, pumpkin seed, organic cranberries, organic spinach, organic broccoli, organic beets, organic carrots, organic squash, organic blueberries, salt, fenugreek seed, potassium chloride, dried kelp, sodium phosphate, tocopherols (preservative), choline chloride, dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, zinc proteinate, iron proteinate, taurine, calcium carbonate, vitamin E supplement, thiamine mononitrate, copper proteinate, manganese proteinate, sodium selenite, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin D3 supplement, vitamin B12 supplement, pyridoxine hydrochloride, folic acid. Contains a source of live (viable) naturally occurring microorganisms.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 40.0,
+        "crude_fat_min": 36.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 5.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "5100 kcal/kg"
+    },
+    {
+      "name": "Freeze-Dried Raw Dinner Patties Puppy Dry Dog Food - Beef & Salmon",
+      "brand": "Stella & Chewy's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/stella-and-chewys-freeze-dried-raw-dinner-patties-puppy-dry-dog-food---beef-and-salmon-91791.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Dinner Patties",
+      "life_stage": "puppy",
+      "source_id": "5368864",
+      "images": [
+        "/products/stella-chewy-s/stella-chewy-s-food-freeze-dried-raw-dinner-patties-puppy-dry-dog-food-beef-salmon.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0852301008090",
+          "sku": "5368864"
+        }
+      ],
+      "ingredients_raw": "Beef, salmon with ground bone, beef kidney, beef liver, beef tripe, pumpkin seed, organic cranberries, organic spinach, organic broccoli, organic beets, organic carrots, organic squash, organic blueberries, sunflower oil, fenugreek seed, chia seed, New Zealand green mussel powder, potassium chloride, dried kelp, sodium phosphate, tocopherols (preservative), choline chloride, L-Carnitine, turmeric, salt, dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, zinc proteinate, iron proteinate, taurine, calcium carbonate, tricalcium phosphate, vitamin E supplement, thiamine mononitrate, copper proteinate, manganese proteinate, sodium selenite, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin B12 supplement, pyridoxine hydrochloride, folic acid. Contains a source of live (viable) naturally occurring microorganisms.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 46.0,
+        "crude_fat_min": 34.5,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 5.0,
+        "dha_min": 0.1,
+        "omega_3_min": 0.75,
+        "omega_6_min": 1.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4828 kcal/kg"
+    },
+    {
+      "name": "Wild Red Raw Blend All Life Stages Dry Dog Food - Grain & Legume Free, Prairie",
+      "brand": "Stella & Chewy's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/stella-and-chewys-wild-red-raw-blend-all-life-stages-dry-dog-food---grain-and-legume-free-prairie-91789.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Wild Red Raw Blend",
+      "life_stage": "all",
+      "source_id": "5368859",
+      "images": [
+        "/products/stella-chewy-s/stella-chewy-s-food-wild-red-raw-blend-all-life-stages-dry-dog-food-grain-legume-free-prairie.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0810027372024",
+          "sku": "5368859"
+        }
+      ],
+      "ingredients_raw": "Chicken, turkey, chickenmeal, sweet potato, tapioca, natural chicken flavor, chicken liver, chicken fat (preserved with mixed tocopherols), tomato pomace, turkey meal, quail, guineafowl, goose, duck, chicken gizzards, pumpkin, chia seed, ground pumpkin seeds, organic cranberries, organic spinach, organic broccoli, organic beets, organic carrots, organic squash, organic blueberries, potassium chloride, salt, salmon oil, taurine, chicken cartilage, dried kelp, magnesium proteinate, thiamine mononitrate, vitamin E supplement, niacin supplement, d–calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin B12 supplement, vitamin D3 supplement, pyridoxine hydrochloride, folic acid, zinc proteinate, iron proteinate, copper proteinate, manganese proteinate, calcium iodate, sodium selenite, L–Threonine, tocopherols (preservative), dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, rosemary.Contains a source of live (viable) naturally occurring microorganisms",
+      "guaranteed_analysis": {
+        "taurine_min": 93.0,
+        "omega_6_max": 36.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3804 kcal/kg"
+    },
+    {
+      "name": "Wild Red Raw Blend All Life Stages Dry Dog Food - Grain & Legume Free, Red Meat",
+      "brand": "Stella & Chewy's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/stella-and-chewys-wild-red-raw-blend-all-life-stages-dry-dog-food---grain-and-legume-free-red-meat-91788.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Wild Red Raw Blend",
+      "life_stage": "all",
+      "source_id": "5368858",
+      "images": [
+        "/products/stella-chewy-s/stella-chewy-s-food-wild-red-raw-blend-all-life-stages-dry-dog-food-grain-legume-free-red-meat.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0810027372000",
+          "sku": "5368858"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0810027371850",
+          "sku": "5368863"
+        }
+      ],
+      "ingredients_raw": "Beef, pork, pork meal, sweet potato, tapioca, beef liver, natural pork flavor, pork fat (preserved with mixed tocopherols), lamb meal, ground flaxseed, tomato pomace, lamb, bison, venison, goat, beef kidney, beef tripe, pumpkin, organic broccoli, organic beets, organic carrots, organic squash, organic cranberries, organic spinach, organic blueberries, ground pumpkin seeds, chia seed, beef bone, potassium chloride, salt, choline chloride, salmon oil, taurine, beef cartilage, dried kelp, thiamine mononitrate, vitamin E supplement, niacin supplement, d–calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin B12 supplement, vitamin D3 supplement, pyridoxine hydrochloride, folic acid, L–Threonine, zinc proteinate, iron proteinate, copper proteinate, manganese proteinate, calcium iodate, sodium selenite, magnesium proteinate, tocopherols (preservative), dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, rosemary.Contains a source of live (viable) naturally occurring microorga",
+      "guaranteed_analysis": {
+        "taurine_min": 90.0,
+        "omega_6_max": 36.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3892 kcal/kg"
+    },
+    {
+      "name": "Wild Red Raw Coated All Life Stages Dry Dog Food - Grain & Legume Free, Ocean",
+      "brand": "Stella & Chewy's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/stella-and-chewys-wild-red-raw-coated-all-life-stages-dry-dog-food---grain-and-legume-free-ocean-91779.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Wild Red Raw Coated",
+      "life_stage": "all",
+      "source_id": "5368707",
+      "images": [
+        "/products/stella-chewy-s/stella-chewy-s-food-wild-red-raw-coated-all-life-stages-dry-dog-food-grain-legume-free-ocean.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0810027372123",
+          "sku": "5368707"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0810027371829",
+          "sku": "5368765"
+        }
+      ],
+      "ingredients_raw": "Trout, whitefish, whitefish meal, sweet potato, tapioca, salmon, sunflower oil, salmon meal, natural fish flavor, tomato pomace, ground flaxseed, cod, mackerel, herring, pumpkin, ground pumpkin seed, chia seed, organic cranberries, organic spinach, organic broccoli, organic beets, organic squash, organic blueberries, dicalcium phosphate, calcium carbonate, salt, potassium chloride, cod liver oil, salmon oil, choline chloride, taurine, gelatin, dried kelp, thiamine mononitrate, L–Threonine, vitamin E supplement, niacin supplement, d–calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin B12 supplement, pyridoxine hydrochloride, folic acid, zinc proteinate, iron proteinate, copper proteinate, manganese proteinate, calcium iodate, sodium selenite, tocopherols (preservative), dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, rosemary.Contains a source of live (viable) naturally occurring microorganisms",
+      "guaranteed_analysis": {
+        "taurine_min": 86.0,
+        "omega_6_max": 30.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3635 kcal/kg"
+    },
+    {
+      "name": "Wild Red Raw Coated All Life Stages Dry Dog Food - Grain & Legume Free, Prairie",
+      "brand": "Stella & Chewy's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/stella-and-chewys-wild-red-raw-coated-all-life-stages-dry-dog-food---grain-and-legume-free-prairie-91780.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Wild Red Raw Coated",
+      "life_stage": "all",
+      "source_id": "5368708",
+      "images": [
+        "/products/stella-chewy-s/stella-chewy-s-food-wild-red-raw-coated-all-life-stages-dry-dog-food-grain-legume-free-prairie.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0810027371805",
+          "sku": "5368708"
+        }
+      ],
+      "ingredients_raw": "Chicken, turkey, chicken meal, sweet potato, tapioca, natural chicken flavor, chicken fat (preserved with mixed tocopherols), chicken liver, tomato pomace, turkey meal, quail, guineafowl, goose, duck, chicken gizzards, pumpkin, ground pumpkin seeds, chia seed, organic cranberries, organic spinach, organic broccoli, organic beets, organic carrots, organic squash, organic blueberries, potassium chloride, salt, magnesium proteinate, salmon oil, taurine, chicken cartilage, L–Threonine, dried kelp, thiamine mononitrate, vitamin E supplement, niacin supplement, d–calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin B12 supplement, vitamin D3 supplement, pyridoxine hydrochloride, folic acid, zinc proteinate, iron proteinate, copper proteinate, manganese proteinate, calcium iodate, sodium selenite, tocopherols (preservative), dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, rosemary.Contains a source of live (viable) naturally occurring microorganisms",
+      "guaranteed_analysis": {
+        "taurine_min": 92.0,
+        "omega_6_max": 35.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3703 kcal/kg"
+    },
+    {
+      "name": "Wild Red Raw Coated All Life Stages Dry Dog Food - Grain & Legume Free, Red Meat",
+      "brand": "Stella & Chewy's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/stella-and-chewys-wild-red-raw-coated-all-life-stages-dry-dog-food---grain-and-legume-free-red-meat-91781.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Wild Red Raw Coated",
+      "life_stage": "all",
+      "source_id": "5368709",
+      "images": [
+        "/products/stella-chewy-s/stella-chewy-s-food-wild-red-raw-coated-all-life-stages-dry-dog-food-grain-legume-free-red-meat.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0810027371799",
+          "sku": "5368709"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0810027372062",
+          "sku": "5368710"
+        }
+      ],
+      "ingredients_raw": "Beef, pork, pork meal, sweet potato, tapioca, beef liver, natural pork flavor, pork fat (preserved withmixed tocopherols), lamb meal, ground flaxseed, tomato pomace, lamb, bison, venison, goat, beef kidney, beef tripe, pumpkin, organic broccoli, organic beets, organic carrots, organic squash, organic cranberries, organic spinach, organic blueberries, ground pumpkin seeds, chia seed, beef bone, potassium chloride, salt, choline chloride, salmon oil, taurine, beef cartilage, dried kelp, thiamine mononitrate, vitamin E supplement, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin B12 supplement, vitamin D3 supplement, pyridoxine hydrochloride, folic acid, L-Threonine, zinc proteinate, iron proteinate, copper proteinate, manganese proteinate, calcium iodate, sodium selenite, tocopherols (preservative), magnesium proteinate, dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, rosemary. Contains a source of live (viable) naturally occurring microorganisms",
+      "guaranteed_analysis": {
+        "crude_protein_min": 35.0,
+        "crude_fat_min": 16.5,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 12.0,
+        "omega_6_min": 1.75,
+        "omega_3_min": 0.5,
+        "taurine_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3826 kcal/kg, 413 kcal/cup"
+    },
+    {
+      "name": "Wild Red Raw Coated All Life Stages Dry Dog Food - Prairie Recipe",
+      "brand": "Stella & Chewy's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/stella-and-chewys-wild-red-raw-coated-all-life-stages-dry-dog-food---prairie-recipe-91777.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Wild Red Raw Coated",
+      "life_stage": "all",
+      "source_id": "5368763",
+      "images": [
+        "/products/stella-chewy-s/stella-chewy-s-food-wild-red-raw-coated-all-life-stages-dry-dog-food-prairie-recipe.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0810027372277",
+          "sku": "5368763"
+        }
+      ],
+      "ingredients_raw": "Chicken, turkey, chicken meal, barley, oatmeal, natural chicken flavor, chicken fat (preserved with mixed tocopherols),ground flaxseed, chicken liver, quail, guineafowl, goose, duck, turkey meal, chicken gizzards, tomato pomace, pumpkin, ground pumpkin seeds, chia seed, organic cranberries, organic spinach, organic broccoli, organic beets, organic carrots, organic squash, organic blueberries, potassium chloride, salt, taurine, salmon oil, chicken cartilage, calcium carbonate, choline chloride, dicalcium phosphate, dried kelp, thiamine mononitrate, vitamin E supplement, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin B12 supplement, vitamin D3 supplement, pyridoxine hydrochloride, folic acid, zinc proteinate, iron proteinate, copper proteinate, manganese proteinate, calcium iodate, sodium selenite, dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, tocopherols (preservative), rosemary. Contains a source of live (viable) naturally occurring microorganisms",
+      "guaranteed_analysis": {
+        "crude_protein_min": 35.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 12.0,
+        "omega_6_min": 3.25,
+        "omega_3_min": 0.75,
+        "taurine_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3728 kcal/kg, 402 kcal/cup"
+    },
+    {
+      "name": "Wild Red Raw Coated All Life Stages Dry Dog Food - Red Meat",
+      "brand": "Stella & Chewy's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/stella-and-chewys-wild-red-raw-coated-all-life-stages-dry-dog-food---red-meat-91778.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Wild Red Raw Coated",
+      "life_stage": "all",
+      "source_id": "5368764",
+      "images": [
+        "/products/stella-chewy-s/stella-chewy-s-food-wild-red-raw-coated-all-life-stages-dry-dog-food-red-meat.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0810027372253",
+          "sku": "5368764"
+        }
+      ],
+      "ingredients_raw": "- muscle meat, organ meats and cartilage. Supports whole body health with the right blend of vitamins, minerals and amino acids. Includes probiotics for digestive health and taurine for heart heath. No peas, lentils, by–product meals, artificial colors, flavors or preservatives added. Made in the USA. Item Number: 5368764 Brand: Stella & Chewy's, Stella & Chewy's Wild Red, Wild Red Food Type: Kibble Breed Size: All Life Stage: All Life Stages except for growth of large size dogs (70 lbs. or more as an adult) Nutritional Benefits: Wholesome grain recipe with no potatoes or legumes. No peas, lentils, by–product meals, artificial colors, flavors or preservatives added. Poultry Free Health Consideration: General Health Flavor: Red Meat ⁄ Beef Weight: 1. 3.5 lb 2. 12 cups Ingredients: Beef, pork, pork meal, barley, oatmeal, ground flaxseed, natural pork flavor, beef liver, pork fat (preserved with mixed tocopherols), lamb, bison, venison, goat, beef kidney, beef tripe, tomato pomace, pumpkin, organic broccoli, organic beets, organic carrots, organic squash, organic spinach, organic blueberries, ground pumpkin seeds, chia seed, beef bone, potassium chloride, salt, choline chloride, taurine, salmon oil, beef cartilage, calcium carbonate, dried kelp, thiamine mononitrate, vitamin E supplement, niacin supplement, d–calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin B12 supplement, vitamin D3 supplement, pyridoxine hydrochloride, folic acid, choline chloride, zinc proteinate, iron proteinate, copper proteinate, manganese proteinate, calcium iodate, sodium selenite, tocopherols (preservative), dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, rosemary.Contains a source of live (viable) naturally occurring microorganisms",
+      "guaranteed_analysis": {
+        "omega_6_max": 35.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3735 kcal/kg"
+    },
+    {
+      "name": "Bountiful Bone Broth All Life Stages Dog Food Topper - Beef",
+      "brand": "Stella & Chewy's",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/stella-and-chewys-bountiful-bone-broth-all-life-stages-dog-food-topper---beef-91739.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "sub_brand": "Bountiful Bone Broth",
+      "life_stage": "all",
+      "source_id": "5368727",
+      "images": [
+        "/products/stella-chewy-s/stella-chewy-s-supplement-bountiful-bone-broth-all-life-stages-dog-food-topper-beef.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0810027370709",
+          "sku": "5368727"
+        }
+      ],
+      "ingredients_raw": "Beef bone broth, squash, pumpkin, tapioca, gelatin, ginger, turmeric, cinnamon",
+      "guaranteed_analysis": {
+        "crude_protein_max": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "170 kcal/kg"
+    },
+    {
+      "name": "Bountiful Bone Broth All Life Stages Dog Food Topper - Chicken",
+      "brand": "Stella & Chewy's",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/stella-and-chewys-bountiful-bone-broth-all-life-stages-dog-food-topper---chicken-91740.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "sub_brand": "Bountiful Bone Broth",
+      "life_stage": "all",
+      "source_id": "5368728",
+      "images": [
+        "/products/stella-chewy-s/stella-chewy-s-supplement-bountiful-bone-broth-all-life-stages-dog-food-topper-chicken.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0810027370716",
+          "sku": "5368728"
+        }
+      ],
+      "ingredients_raw": "Chicken bone broth, squash, pumpkin, tapioca starch, gelatin, ginger, turmeric, cinnamon.",
+      "guaranteed_analysis": {
+        "crude_protein_max": 3.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "213 kcal/kg"
+    },
+    {
+      "name": "Breakfast Sprinkles All Life Stages Dog Food Topper - Bacon, Egg & Cheese",
+      "brand": "Stella & Chewy's",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/stella-and-chewys-breakfast-sprinkles-all-life-stages-dog-food-topper---bacon-egg-and-cheese-91766.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "dry",
+      "sub_brand": "Breakfast Sprinkles",
+      "life_stage": "all",
+      "source_id": "5368862",
+      "images": [
+        "/products/stella-chewy-s/stella-chewy-s-supplement-breakfast-sprinkles-all-life-stages-dog-food-topper-bacon-egg-cheese.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0810027374639",
+          "sku": "5368862"
+        }
+      ],
+      "ingredients_raw": "Bacon, Pork Heart, Pork Liver, Pork Kidney, Egg (Source of Omega–3 Fatty Acids), Dried Cheese, Tocopherols (Preservative), Natural Bacon Flavor, Dried Bacillus coagulans Fermentation Product. Contains a source of live (viable) naturally occurring microorganisms.",
+      "guaranteed_analysis": {
+        "calcium_min": 100.0,
+        "crude_protein_max": 42.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "5518 kcal/kg"
+    },
+    {
+      "name": "Freeze-Dried Raw Magical Dinner Dust All Life Stages Dog Food Topper - Bacon",
+      "brand": "Stella & Chewy's",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/stella-and-chewys-freeze-dried-raw-magical-dinner-dust-all-life-stages-dog-food-topper---bacon-91762.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "dry",
+      "sub_brand": "Magical Dinner Dust",
+      "life_stage": "all",
+      "source_id": "5368825",
+      "images": [
+        "/products/stella-chewy-s/stella-chewy-s-supplement-freeze-dried-raw-magical-dinner-dust-all-life-stages-dog-food-topper-bacon.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0810027370662",
+          "sku": "5368825"
+        }
+      ],
+      "ingredients_raw": "Bacon, pork, pork liver, beef liver, beef kidney, beef, natural bacon flavor, tocopherols (preservative).",
+      "guaranteed_analysis": {
+        "crude_protein_max": 38.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4760 kcal/kg"
+    },
+    {
+      "name": "Freeze-Dried Raw Magical Dinner Dust All Life Stages Dog Food Topper - Beef",
+      "brand": "Stella & Chewy's",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/stella-and-chewys-freeze-dried-raw-magical-dinner-dust-all-life-stages-dog-food-topper---beef-91760.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "dry",
+      "sub_brand": "Magical Dinner Dust",
+      "life_stage": "all",
+      "source_id": "5368783",
+      "images": [
+        "/products/stella-chewy-s/stella-chewy-s-supplement-freeze-dried-raw-magical-dinner-dust-all-life-stages-dog-food-topper-beef.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0852301008953",
+          "sku": "5368783"
+        }
+      ],
+      "ingredients_raw": "Beef, beef heart, beef kidney, beef tripe, beef liver, beef bone, pumpkin seed, organic cranberries, organic spinach, organic broccoli, organic beets, organic carrots, organic squash, organic blueberries, fenugreek seed, potassium chloride, dried kelp, sodium phosphate, tocopherols (preservative), choline chloride, dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, zinc proteinate, iron proteinate, taurine, calcium carbonate, vitamin E supplement, thiamine mononitrate, copper proteinate, manganese proteinate, sodium selenite, niacin supplement, d–calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin D3 supplement, vitamin B12 supplement, pyridoxine hydrochloride, folic acid.Contains a source of live (viable) naturally occurring microorganisms.",
+      "guaranteed_analysis": {
+        "taurine_min": 95.0,
+        "crude_protein_max": 41.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4940 kcal/kg"
+    },
+    {
+      "name": "Freeze-Dried Raw Magical Dinner Dust All Life Stages Dog Food Topper - Chicken",
+      "brand": "Stella & Chewy's",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/stella-and-chewys-freeze-dried-raw-magical-dinner-dust-all-life-stages-dog-food-topper---chicken-91761.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "dry",
+      "sub_brand": "Magical Dinner Dust",
+      "life_stage": "all",
+      "source_id": "5368784",
+      "images": [
+        "/products/stella-chewy-s/stella-chewy-s-supplement-freeze-dried-raw-magical-dinner-dust-all-life-stages-dog-food-topper-chicken.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0852301008960",
+          "sku": "5368784"
+        }
+      ],
+      "ingredients_raw": "Chicken with ground bone, chicken liver, chicken gizzard, pumpkin seed, organic cranberries, organic spinach, organic broccoli, organic beets, organic carrots, organic squash, organic blueberries, fenugreek seed, potassium chloride, dried kelp, sodium phosphate, tocopherols (preservative), choline chloride, salt, dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, zinc proteinate, iron proteinate, taurine, calcium carbonate, vitamin E supplement, thiamine mononitrate, copper proteinate, manganese proteinate, sodium selenite, niacin supplement, d–calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin D3 supplement, vitamin B12 supplement, pyridoxine hydrochloride, folic acid.Contains a source of live (viable) naturally occurring microorganisms.",
+      "guaranteed_analysis": {
+        "taurine_min": 95.0,
+        "crude_protein_max": 48.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4420 kcal/kg"
+    },
+    {
+      "name": "Freeze-Dried Raw Meal Mixers All Life Stages Dog Food Topper - Chewy's Chicken",
+      "brand": "Stella & Chewy's",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/stella-and-chewys-freeze-dried-raw-meal-mixers-all-life-stages-dog-food-topper---chewys-chicken-91754.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "dry",
+      "sub_brand": "Meal Mixers",
+      "life_stage": "all",
+      "source_id": "5368743",
+      "images": [
+        "/products/stella-chewy-s/stella-chewy-s-supplement-freeze-dried-raw-meal-mixers-all-life-stages-dog-food-topper-chewy-s-chicken.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0186011000366",
+          "sku": "5368743"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0186011000090",
+          "sku": "5368744"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0810027370259",
+          "sku": "5368785"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0810027372567",
+          "sku": "5368870"
+        }
+      ],
+      "ingredients_raw": "Chicken with ground bone, chicken liver, chicken gizzard, pumpkin seed, organic cranberries, organic spinach, organic broccoli, organic beets, organic carrots, organic squash, organic blueberries, fenugreek seed, potassium chloride, dried kelp, sodium phosphate, tocopherols (preservative), choline chloride, salt, dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, zinc proteinate, iron proteinate, taurine, calcium carbonate, vitamin E supplement, thiamine mononitrate, copper proteinate, manganese proteinate, sodium selenite, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin D3 supplement, vitamin B12 supplement, pyridoxine hydrochloride, folic acid. Contains a source of live (viable) naturally occurring microorganisms.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 48.0,
+        "crude_fat_min": 28.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 5.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4420 kcal/kg, 50 kcal/cup"
+    },
+    {
+      "name": "Freeze-Dried Raw Meal Mixers All Life Stages Dog Food Topper - Dandy Lamb",
+      "brand": "Stella & Chewy's",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/stella-and-chewys-freeze-dried-raw-meal-mixers-all-life-stages-dog-food-topper---dandy-lamb-91756.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "dry",
+      "sub_brand": "Meal Mixers",
+      "life_stage": "all",
+      "source_id": "5368793",
+      "images": [
+        "/products/stella-chewy-s/stella-chewy-s-supplement-freeze-dried-raw-meal-mixers-all-life-stages-dog-food-topper-dandy-lamb.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0186011001776",
+          "sku": "5368793"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0186011001769",
+          "sku": "5368794"
+        }
+      ],
+      "ingredients_raw": "Lamb, lamb liver, lamb spleen, lamb heart, lamb kidney, lamb bone, pumpkin seed, organic cranberries, organic spinach, organic broccoli, organic beets, organic carrots, organic squash, organic blueberries, fenugreek seed, potassium chloride, dried kelp, sodium phosphate, tocopherols (preservative), choline chloride, dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, zinc proteinate, iron proteinate, taurine, calcium carbonate, vitamin E supplement, thiamine mononitrate, copper proteinate, manganese proteinate, sodium selenite, niacin supplement, d–calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin D3 supplement, vitamin B12 supplement, pyridoxine hydrochloride, folic acid.Contains a source of live (viable) naturally occurring microorganisms.",
+      "guaranteed_analysis": {
+        "taurine_min": 95.0,
+        "crude_protein_max": 34.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "5270 kcal/kg"
+    },
+    {
+      "name": "Freeze-Dried Raw Meal Mixers All Life Stages Dog Food Topper - Duck",
+      "brand": "Stella & Chewy's",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/stella-and-chewys-freeze-dried-raw-meal-mixers-all-life-stages-dog-food-topper---duck-91755.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "dry",
+      "sub_brand": "Meal Mixers",
+      "life_stage": "all",
+      "source_id": "5368788",
+      "images": [
+        "/products/stella-chewy-s/stella-chewy-s-supplement-freeze-dried-raw-meal-mixers-all-life-stages-dog-food-topper-duck.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0186011000113",
+          "sku": "5368788"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0186011000106",
+          "sku": "5368789"
+        }
+      ],
+      "ingredients_raw": "Duck with ground bone, turkey, turkey liver, turkey heart, goose, turkey gizzard, pumpkin seed, organic cranberries, organic spinach, organic broccoli, organic beets, organic carrots, organic squash, organic blueberries, fenugreek seed, potassium chloride, dried kelp, sodium phosphate, tocopherols (preservative), choline chloride, salt, dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, zinc proteinate, iron proteinate, taurine, calcium carbonate, vitamin E supplement, thiamine mononitrate, copper proteinate, manganese proteinate, sodium selenite, niacin supplement, d–calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin D3 supplement, vitamin B12 supplement, pyridoxine hydrochloride, folic acid.Contains a source of live (viable) naturally occurring microorganisms.",
+      "guaranteed_analysis": {
+        "taurine_min": 95.0,
+        "crude_protein_max": 38.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "5370 kcal/kg"
+    },
+    {
+      "name": "Freeze-Dried Raw Meal Mixers All Life Stages Dog Food Topper - Salmon & Cod",
+      "brand": "Stella & Chewy's",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/stella-and-chewys-freeze-dried-raw-meal-mixers-all-life-stages-dog-food-topper---salmon-and-cod-91757.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "dry",
+      "sub_brand": "Meal Mixers",
+      "life_stage": "all",
+      "source_id": "5368776",
+      "images": [
+        "/products/stella-chewy-s/stella-chewy-s-supplement-freeze-dried-raw-meal-mixers-all-life-stages-dog-food-topper-salmon-cod.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0186011000236",
+          "sku": "5368776"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0186011000267",
+          "sku": "5368815"
+        }
+      ],
+      "ingredients_raw": "Ground salmon with bones, ground cod with bones, cod liver oil, pumpkin seed, organic cranberries, organic spinach, organic broccoli, organic beets, organic carrots, organic squash, organic blueberries, fenugreek seed, tocopherols (preservative), salt, dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product. Contains a source of live (viable) naturally occurring microorganisms.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 50.0,
+        "crude_fat_min": 22.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 5.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3953 kcal/kg, 45 kcal/cup"
+    },
+    {
+      "name": "Freeze-Dried Raw Meal Mixers All Life Stages Dog Food Topper - Super Beef",
+      "brand": "Stella & Chewy's",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/stella-and-chewys-freeze-dried-raw-meal-mixers-all-life-stages-dog-food-topper---super-beef-91753.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "dry",
+      "sub_brand": "Meal Mixers",
+      "life_stage": "all",
+      "source_id": "5368714",
+      "images": [
+        "/products/stella-chewy-s/stella-chewy-s-supplement-freeze-dried-raw-meal-mixers-all-life-stages-dog-food-topper-super-beef.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0186011000083",
+          "sku": "5368714"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0810027370242",
+          "sku": "5368739"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0186011000298",
+          "sku": "5368775"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0810027372635",
+          "sku": "5368873"
+        }
+      ],
+      "ingredients_raw": "Beef, beef heart, beef kidney, beef tripe, beef liver, beef bone, pumpkin seed, organic cranberries, organic spinach, organic broccoli, organic beets, organic carrots, organic squash, organic blueberries, fenugreek seed, potassium chloride, dried kelp, sodium phosphate, tocopherols (preservative), choline chloride, dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, zinc proteinate, iron proteinate, taurine, calcium carbonate, vitamin E supplement, thiamine mononitrate, copper proteinate, manganese proteinate, sodium selenite, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin D3 supplement, vitamin B12 supplement, pyridoxine hydrochloride, folic acid. Contains a source of live (viable) naturally occurring microorganisms.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 41.0,
+        "crude_fat_min": 35.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 5.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4940 kcal/kg, 56 kcal/cup"
+    },
+    {
+      "name": "Freeze-Dried Raw Meal Mixers All Life Stages Dog Food Topper - Surf 'N Turf",
+      "brand": "Stella & Chewy's",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/stella-and-chewys-freeze-dried-raw-meal-mixers-all-life-stages-dog-food-topper---surf-n-turf-91767.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "dry",
+      "sub_brand": "Meal Mixers",
+      "life_stage": "all",
+      "source_id": "5368865",
+      "images": [
+        "/products/stella-chewy-s/stella-chewy-s-supplement-freeze-dried-raw-meal-mixers-all-life-stages-dog-food-topper-surf-n-turf.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0810027373823",
+          "sku": "5368865"
+        }
+      ],
+      "ingredients_raw": "Beef, whole ground salmon, beef liver, beef heart, beef bone, pumpkin seed, organic cranberries, organic spinach, organic broccoli, organic beets, organic carrots, organic squash, organic blueberries, fenugreek seed, potassium chloride, dried kelp, sodium phosphate, tocopherols (preservative), choline chloride, dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, zinc proteinate, iron proteinate, taurine, calcium carbonate, vitamin E supplement, thiamine mononitrate, copper proteinate, manganese proteinate, sodium selenite, niacin supplement, d–calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin B12 supplement, pyridoxine hydrochloride, folic acid.Contains a source of live (viable) naturally occurring microorganisms.",
+      "guaranteed_analysis": {
+        "crude_protein_max": 45.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "5140 kcal/kg"
+    },
+    {
+      "name": "Freeze-Dried Raw Meal Mixers All Life Stages Dog Food Topper - Tantalizing Turkey",
+      "brand": "Stella & Chewy's",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/stella-and-chewys-freeze-dried-raw-meal-mixers-all-life-stages-dog-food-topper---tantalizing-turkey-91758.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "dry",
+      "sub_brand": "Meal Mixers",
+      "life_stage": "all",
+      "source_id": "5368779",
+      "images": [
+        "/products/stella-chewy-s/stella-chewy-s-supplement-freeze-dried-raw-meal-mixers-all-life-stages-dog-food-topper-tantalizing-turkey.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0810027372659",
+          "sku": "5368779"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0186011000229",
+          "sku": "5368780"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0186011000441",
+          "sku": "5368781"
+        }
+      ],
+      "ingredients_raw": "Turkey with ground bone, turkey liver, turkey gizzard, pumpkin seed, organic cranberries, organic spinach, organic broccoli, organic beets, organic carrots, organic squash, organic blueberries, salt, fenugreek seed, potassium chloride, dried kelp, sodium phosphate, tocopherols (preservative), choline chloride, dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, zinc proteinate, iron proteinate, taurine, calcium carbonate, vitamin E supplement, thiamine mononitrate, copper proteinate, manganese proteinate, sodium selenite, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin D3 supplement, vitamin B12 supplement, pyridoxine hydrochloride, folic acid. Contains a source of live (viable) naturally occurring microorganisms.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 40.0,
+        "crude_fat_min": 36.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 5.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "5100 kcal/kg, 232 kcal/cup"
+    },
+    {
+      "name": "Freeze-Dried Raw Meal Mixers Puppy Dog Food Topper - Beef & Salmon",
+      "brand": "Stella & Chewy's",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/stella-and-chewys-freeze-dried-raw-meal-mixers-puppy-dog-food-topper---beef-and-salmon-91759.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "dry",
+      "sub_brand": "Meal Mixers",
+      "life_stage": "puppy",
+      "source_id": "5368782",
+      "images": [
+        "/products/stella-chewy-s/stella-chewy-s-supplement-freeze-dried-raw-meal-mixers-puppy-dog-food-topper-beef-salmon.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0810027373793",
+          "sku": "5368782"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0810027373786",
+          "sku": "5368860"
+        }
+      ],
+      "ingredients_raw": "Beef, salmon with ground bone, beef kidney, beef liver, beef tripe, pumpkin seed, organic cranberries, organic spinach, organic broccoli, organic beets, organic carrots, organic squash, organic blueberries, sunflower oil, fenugreek seed, chia seed, New Zealand green mussel powder, potassium chloride, dried kelp, sodium phosphate, tocopherols (preservative), choline chloride, L-Carnitine, turmeric, salt, dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, zinc proteinate, iron proteinate, taurine, calcium carbonate, tricalcium phosphate, vitamin E supplement, thiamine mononitrate, copper proteinate, manganese proteinate, sodium selenite, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin B12 supplement, pyridoxine hydrochloride, folic acid. Contains a source of live (viable) naturally occurring microorganisms",
+      "guaranteed_analysis": {
+        "crude_protein_min": 46.0,
+        "crude_fat_min": 34.5,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 5.0,
+        "dha_min": 0.1,
+        "omega_3_min": 0.75,
+        "omega_6_min": 1.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4828 kcal/kg, 198 kcal/cup"
+    },
+    {
+      "name": "Stella's Shredrs Adult Dog Wet Food or Topper - Beef & Chicken",
+      "brand": "Stella & Chewy's",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/stella-and-chewys-stellas-shredrs-adult-dog-wet-food-or-topper---beef-and-chicken-91741.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "sub_brand": "Stella's Shredrs",
+      "life_stage": "adult",
+      "source_id": "5368729",
+      "images": [
+        "/products/stella-chewy-s/stella-chewy-s-supplement-stella-s-shredrs-adult-dog-wet-food-or-topper-beef-chicken.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0810027370792",
+          "sku": "5368729"
+        }
+      ],
+      "ingredients_raw": "Beef, Chicken, Beef Broth, Chicken Broth, Tapioca, Sunflower Oil, Salt, Potassium Chloride, Choline Chloride, Vitamin E Supplement, Magnesium Sulfate, Taurine, Zinc Oxide, Reduced Iron, Sodium Selenite, Vitamin B12 Supplement, Manganese Sulfate, Niacin Supplement, d–Calcium Pantothenate, Thiamine Mononitrate, Vitamin A Supplement, Copper Amino Acid Complex, Biotin, Riboflavin Supplement, Pyridoxine Hydrochloride, Potassium Iodide, Beta–Carotene, Folic Acid.",
+      "guaranteed_analysis": {
+        "crude_protein_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "920 kcal/kg"
+    },
+    {
+      "name": "Stella's Shredrs Adult Dog Wet Food or Topper - Beef & Lamb",
+      "brand": "Stella & Chewy's",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/stella-and-chewys-stellas-shredrs-adult-dog-wet-food-or-topper---beef-and-lamb-91747.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "sub_brand": "Stella's Shredrs",
+      "life_stage": "adult",
+      "source_id": "5368866",
+      "images": [
+        "/products/stella-chewy-s/stella-chewy-s-supplement-stella-s-shredrs-adult-dog-wet-food-or-topper-beef-lamb.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0810027374653",
+          "sku": "5368866"
+        }
+      ],
+      "ingredients_raw": "Beef, Beef Broth, Lamb Broth, Lamb, Sunflower Oil, Tapioca, Salt, Potassium Chloride, Minerals (Zinc Oxide, Reduced Iron, Sodium Selenite, Manganese Sulfate, Copper Amino Acid Complex, Potassium Iodide), Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d–Calcium Pantothenate, Thiamine Mononitrate, Beta–Carotene, Biotin, Vitamin D3 Supplement, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid), Choline Chloride, Magnesium Sulfate, Taurine.",
+      "guaranteed_analysis": {
+        "crude_protein_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1057 kcal/kg"
+    },
+    {
+      "name": "Stella's Shredrs Adult Dog Wet Food or Topper - Beef & Salmon",
+      "brand": "Stella & Chewy's",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/stella-and-chewys-stellas-shredrs-adult-dog-wet-food-or-topper---beef-and-salmon-91748.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "sub_brand": "Stella's Shredrs",
+      "life_stage": "adult",
+      "source_id": "5368867",
+      "images": [
+        "/products/stella-chewy-s/stella-chewy-s-supplement-stella-s-shredrs-adult-dog-wet-food-or-topper-beef-salmon.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0810027374677",
+          "sku": "5368867"
+        }
+      ],
+      "ingredients_raw": "Beef, Beef Broth, Fish Broth, Salmon, Sunflower Oil, Tapioca, Salt, Potassium Chloride, Minerals (Zinc Oxide, Reduced Iron, Sodium Selenite, Manganese Sulfate, Copper Amino Acid Complex, Potassium Iodide), Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d–Calcium Pantothenate, Thiamine Mononitrate, Beta–Carotene, Biotin, Vitamin D3 Supplement, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid), Choline Chloride, Magnesium Sulfate, Taurine.",
+      "guaranteed_analysis": {
+        "crude_protein_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "997 kcal/kg"
+    },
+    {
+      "name": "Stella's Shredrs Adult Dog Wet Food or Topper - Chicken",
+      "brand": "Stella & Chewy's",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/stella-and-chewys-stellas-shredrs-adult-dog-wet-food-or-topper---chicken-91742.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "sub_brand": "Stella's Shredrs",
+      "life_stage": "adult",
+      "source_id": "5368730",
+      "images": [
+        "/products/stella-chewy-s/stella-chewy-s-supplement-stella-s-shredrs-adult-dog-wet-food-or-topper-chicken.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0810027370747",
+          "sku": "5368730"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Broth, Tapioca, Sunflower Oil, Tricalcium Phosphate, Salt, Potassium Chloride, Choline Chloride, Vitamin E Supplement, Magnesium Sulfate, Taurine, Zinc Oxide, Reduced Iron, Sodium Selenite, Manganese Sulfate, Vitamin B12 Supplement, Copper Amino Acid Complex, Niacin Supplement, d–Calcium Pantothenate, Thiamine Mononitrate, Vitamin A Supplement, Biotin, Riboflavin Supplement, Pyridoxine Hydrochloride, Potassium Iodide, Beta–Carotene, Folic Acid.",
+      "guaranteed_analysis": {
+        "crude_protein_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "889 kcal/kg"
+    },
+    {
+      "name": "Stella's Solutions Digestive Support All Life Stages Dog Food Topper - Beef",
+      "brand": "Stella & Chewy's",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/stella-and-chewys-stellas-solutions-digestive-support-all-life-stages-dog-food-topper---beef-91763.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "dry",
+      "sub_brand": "Stella's Solutions",
+      "life_stage": "all",
+      "source_id": "5368827",
+      "images": [
+        "/products/stella-chewy-s/stella-chewy-s-supplement-stella-s-solutions-digestive-support-all-life-stages-dog-food-topper-beef.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0852301008649",
+          "sku": "5368827"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0810027372581",
+          "sku": "5368828"
+        }
+      ],
+      "ingredients_raw": "Item Number: 5368827 Brand: Stella & Chewy's, Stella's Solutions, Stella & Chewy's Stella's Solutions Food Type: Freeze Dried Breed Size: All Life Stage: All Life Stages Nutritional Option: Grain-Free, Pea-free, lentil-free, and potato-free Health Consideration: Digestion; General Health Flavor: Beef Weight: 13 oz NUTRITIONAL INFORMATION Ingredients: Beef, beef kidney, beef liver, coconut flour, pumpkin, flaxseed, pineapple stem, choline chloride, egg yolks, papaya, pineapple, avocado, dandelion greens, tocopherols (preservative), fenugreek seed, dried chicory root (source of inulin), dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, sodium phosphate, zinc proteinate, dried kelp, iron proteinate, taurine, calcium carbonate, vitamin E supplement, thiamine mononitrate, copper proteinate, manganese proteinate, sodium selenite, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin D3 supplement, vitamin B12 supplement, pyridoxine hydrochloride, folic acid. Contains a source of live (viable) naturally occurring microorganisms.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 36.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 5.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4513 kcal/kg, 200 kcal/cup"
+    },
+    {
+      "name": "Stella's Solutions Skin & Coat Support All Life Stages Dog Food Topper",
+      "brand": "Stella & Chewy's",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/stella-and-chewys-stellas-solutions-skin-and-coat-support-all-life-stages-dog-food-topper-91765.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "dry",
+      "sub_brand": "Stella's Solutions",
+      "life_stage": "all",
+      "source_id": "5368830",
+      "images": [
+        "/products/stella-chewy-s/stella-chewy-s-supplement-stella-s-solutions-skin-coat-support-all-life-stages-dog-food-topper.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0810027372673",
+          "sku": "5368830"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0852301008656",
+          "sku": "5368869"
+        }
+      ],
+      "ingredients_raw": "Item Number: 5368830 Brand: Stella & Chewy's, Stella's Solutions, Stella & Chewy's Stella's Solutions Food Type: Freeze Dried Breed Size: All Life Stage: All Life Stages Nutritional Option: Grain-Free, Pea-free, lentil-free, and potato-free Health Consideration: Skin & Coat; General Health Flavor: Lamb & Salmon Weight: 4.25 oz NUTRITIONAL INFORMATION Ingredients: Lamb, salmon, lamb heart, lamb liver, sunflower oil (preserved with mixed tocopherols), coconut flour, fenugreek seed, potassium chloride, pineapple stem, calcium carbonate, flaxseed, choline chloride, pineapple, tocopherols (preservative), sodium phosphate, zinc proteinate, dried kelp, iron proteinate, taurine, calcium carbonate, vitamin E supplement, thiamine mononitrate, copper proteinate, manganese proteinate, sodium selenite, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin D3 supplement, vitamin B12 supplement, pyridoxine hydrochloride, biotin, folic acid.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 32.0,
+        "crude_fat_min": 32.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 5.0,
+        "omega_6_min": 4.0,
+        "omega_3_min": 2.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "5238 kcal/kg, 236 kcal/cup"
+    },
+    {
+      "name": "Wild Red Jerky Nuggets Dog Treats",
+      "brand": "Stella & Chewy's",
+      "url": "https://www.petsmart.ca/dog/treats/jerky-treats/stella-and-chewys-wild-red-jerky-nuggets-dog-treats-6-oz-91840.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Wild Red",
+      "source_id": "5368761",
+      "images": [
+        "/products/stella-chewy-s/stella-chewy-s-treat-wild-red-jerky-nuggets-dog-treats.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "6 OZ",
+          "upc": "0810027372406",
+          "sku": "5368761"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "6 OZ",
+          "upc": "0186011000519",
+          "sku": "5368762"
+        }
+      ],
+      "ingredients_raw": "Chicken, duck, coconut glycerin, gelatin, salt, distilled vinegar, citric acid (a preservative), mixed tocopherols (preservative)",
+      "guaranteed_analysis": {
+        "crude_protein_max": 40.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4158 kcal/kg"
+    },
+    {
+      "name": "Stella and Chewy Crav'n Bac'n Bites Dog Treats",
+      "brand": "Stella & Chewy's",
+      "url": "https://www.petsmart.ca/dog/treats/soft-and-chewy-treats/stella-and-chewy-cravn-bacn-bites-dog-treats-825-oz-91841.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Crav'n Bac'n Bites",
+      "source_id": "5368759",
+      "images": [
+        "/products/stella-chewy-s/stella-chewy-s-treat-stella-and-chewy-crav-n-bac-n-bites-dog-treats.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "8.25 OZ",
+          "upc": "0810027370549",
+          "sku": "5368759"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "8.25 OZ",
+          "upc": "0810027370556",
+          "sku": "5368760"
+        }
+      ],
+      "ingredients_raw": "Bacon, beef, oatmeal, barley, sorghum, millet, brown rice, vegetable glycerin, brown rice syrup, salt, natural hickory smoke flavor, dried cultured whey, natural flavor, citric acid (preservative), distilled vinegar, gelatin, mixed tocopherols (preservative), rosemary extract.",
+      "guaranteed_analysis": {
+        "crude_protein_max": 8.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3217 kcal/kg"
+    },
+    {
+      "name": "Freeze Dried Dog Treats",
+      "brand": "Stella & Chewy's",
+      "url": "https://www.petsmart.ca/dog/treats/training-treats/stella-and-chewys-freeze-dried-dog-treats-3-oz-91843.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "source_id": "5368831",
+      "images": [
+        "/products/stella-chewy-s/stella-chewy-s-treat-freeze-dried-dog-treats.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "3 OZ",
+          "upc": "0852301008182",
+          "sku": "5368831"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "3 OZ",
+          "upc": "0852301008199",
+          "sku": "5368832"
+        }
+      ],
+      "ingredients_raw": "Beef Heart",
+      "guaranteed_analysis": {
+        "crude_protein_max": 64.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3480 kcal/kg"
+    },
+    {
+      "name": "Freeze Dried Wild Weenies Dog Treats Beef",
+      "brand": "Stella & Chewy's",
+      "url": "https://www.petsmart.ca/dog/treats/training-treats/stella-and-chewys-freeze-dried-wild-weenies-dog-treats-115-oz-91844.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Wild Weenies",
+      "source_id": "5368871",
+      "images": [
+        "/products/stella-chewy-s/stella-chewy-s-treat-freeze-dried-wild-weenies-dog-treats-beef.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "11.5 OZ",
+          "upc": "0852301008243",
+          "sku": "5368871"
+        }
+      ],
+      "ingredients_raw": "Beef, beef liver, beef kidney, sodium alginate, tocopherols (preservative).",
+      "guaranteed_analysis": {
+        "crude_protein_max": 40.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4561 kcal/kg"
+    },
+    {
+      "name": "Freeze Dried Wild Weenies Dog Treats Chicken",
+      "brand": "Stella & Chewy's",
+      "url": "https://www.petsmart.ca/dog/treats/training-treats/stella-and-chewys-freeze-dried-wild-weenies-dog-treats-325-oz-91842.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Wild Weenies",
+      "source_id": "5368835",
+      "images": [
+        "/products/stella-chewy-s/stella-chewy-s-treat-freeze-dried-wild-weenies-dog-treats-chicken.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "3.25 OZ",
+          "upc": "0810027370631",
+          "sku": "5368835"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "3.25 OZ",
+          "upc": "0852301008120",
+          "sku": "5368836"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "3.25 OZ",
+          "upc": "0852301008137",
+          "sku": "5368855"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "3.25 OZ",
+          "upc": "0852301008151",
+          "sku": "5368856"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "3.25 OZ",
+          "upc": "0852301008144",
+          "sku": "5368857"
+        }
+      ],
+      "ingredients_raw": "Chicken, chicken liver, chicken gizzard, sodium alginate, tocopherols (preservative).",
+      "guaranteed_analysis": {
+        "crude_protein_max": 40.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4165 kcal/kg"
+    }
+  ]
+}

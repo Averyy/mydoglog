@@ -124,7 +124,7 @@ class TestParseIngredients:
             }
         }
         result = _parse_ingredients(node)
-        assert result == "Chicken, RiceFlour"
+        assert result == "Chicken, Rice Flour"
 
 
 class TestParsePurinaWeight:

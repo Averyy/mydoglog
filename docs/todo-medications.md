@@ -1,6 +1,23 @@
-# Medications Feature — Final Spec
+# Medications Feature
+
+> Check git log to see what's been done. Continue from where you left off.
 
 Research completed 2026-03-06 via 6 parallel agents + 4 audit agents. Scoped to medications that impact GI or allergies (the app's core tracking loop). Users can still log other medications via free-text.
+
+## Definition of Done
+- [ ] `medication_products` table exists with 52 seeded medications across 5 categories
+- [ ] `medications` table has `medication_product_id` FK + `interval` column, no `reason` column
+- [ ] All medication code removed from routine editor, daily check-in, active plan card, food page, and correlation engine
+- [ ] Navigation updated: mobile "More" popover (Meds + Settings), desktop flat "Meds" link
+- [ ] `/dogs/[id]/meds` page shows active meds (no end date) and past meds (has end date, reverse chronological)
+- [ ] Add/edit medication form: searchable catalog picker + free-text fallback, dosage, interval dropdown (pre-filled from catalog defaults), start/end dates, notes
+- [ ] Medication API routes updated for new schema (no `reason`, added `medication_product_id` + `interval`)
+- [ ] `seed_medications.py` upserts catalog from `medications.json`, called by `build.py`
+- [ ] `yarn build` succeeds with no errors
+- [ ] All existing tests pass (correlation tests updated to remove medication references)
+- [ ] Refer to `docs/mydoglog-branding.md` before any UI work
+
+---
 
 ## Schema
 
@@ -33,11 +50,15 @@ four_times_daily, three_times_daily, twice_daily, daily, every_other_day, weekly
 - Remove `reason` column — category from `medication_products` replaces it for catalog meds; free-text meds use `notes` for context
 - **Migration: nuke all existing medication records** — will be re-added manually via new Meds page
 
+**`medications` table `name` column:** Kept for both catalog and free-text meds. Catalog meds copy name from `medication_products` at creation time (denormalized — no joins for display, catalog names won't change). Free-text meds: user types name directly. `medication_product_id` is null for free-text, populated for catalog.
+
 Note: `digestive_impact` and `itchiness_impact` were proposed but never added to the schema — no columns to drop.
 
 ---
 
-## Allergy (6)
+## Medication Catalog (52 total)
+
+### Allergy (6)
 
 | Name | Generic | Manufacturer | Form | Intervals | Description |
 |---|---|---|---|---|---|
@@ -48,11 +69,9 @@ Note: `digestive_impact` and `itchiness_impact` were proposed but never added to
 | Cortavance | hydrocortisone aceponate | Virbac | spray | daily | Topical corticosteroid spray for inflammatory and pruritic skin conditions. Short-course (7 consecutive days). Minimal systemic absorption. For localized flares/hot spots. |
 | Genesis Spray | triamcinolone acetonide | Virbac | spray | daily | Topical corticosteroid spray for pruritus associated with allergic dermatitis. FDA-approved veterinary product. Different active ingredient than Cortavance. |
 
----
+### Parasite Prevention (21)
 
-## Parasite Prevention (21)
-
-### Oral flea/tick
+#### Oral flea/tick
 
 | Name | Generic | Manufacturer | Form | Intervals | Description |
 |---|---|---|---|---|---|
@@ -66,7 +85,7 @@ Note: `digestive_impact` and `itchiness_impact` were proposed but never added to
 | Credelio Plus | lotilaner/milbemycin oxime | Elanco | chewable | monthly | Flea, tick, heartworm, and roundworm prevention. Also treats demodicosis. |
 | Credelio Quattro | lotilaner/moxidectin/praziquantel/pyrantel | Elanco | chewable | monthly | Flea, tick, heartworm, roundworm, hookworm, and tapeworm prevention. The only isoxazoline combo that covers tapeworms. FDA approved October 2024. |
 
-### Topical flea/tick
+#### Topical flea/tick
 
 | Name | Generic | Manufacturer | Form | Intervals | Description |
 |---|---|---|---|---|---|
@@ -75,13 +94,13 @@ Note: `digestive_impact` and `itchiness_impact` were proposed but never added to
 | K9 Advantix II | imidacloprid/permethrin/pyriproxyfen | Elanco | topical | monthly | Flea, tick, mosquito, biting fly, and lice treatment. Repels and kills on contact. TOXIC TO CATS. |
 | Frontline Plus | fipronil/(S)-methoprene | Boehringer Ingelheim | topical | monthly | Flea and tick treatment. Older product, now somewhat superseded by isoxazolines. |
 
-### Collar
+#### Collar
 
 | Name | Generic | Manufacturer | Form | Intervals | Description |
 |---|---|---|---|---|---|
 | Seresto | imidacloprid/flumethrin | Elanco | collar | every_8_months | Flea and tick prevention collar providing up to 8 months of protection. One of the most widely used flea/tick products by volume. Regulated by EPA (pesticide), not FDA. |
 
-### Heartworm-focused
+#### Heartworm-focused
 
 | Name | Generic | Manufacturer | Form | Intervals | Description |
 |---|---|---|---|---|---|
@@ -90,22 +109,20 @@ Note: `digestive_impact` and `itchiness_impact` were proposed but never added to
 | ProHeart 6 | moxidectin (sustained-release) | Zoetis | injection | every_6_months | Injectable heartworm preventative providing 6 months of protection. Also treats hookworms. Administered by veterinarian. |
 | ProHeart 12 | moxidectin (sustained-release) | Zoetis | injection | annually | Injectable heartworm preventative providing 12 months of protection. Also treats hookworms. FDA approved 2019. US only (not available in Canada). Administered by veterinarian. |
 
-### Injectable flea/tick
+#### Injectable flea/tick
 
 | Name | Generic | Manufacturer | Form | Intervals | Description |
 |---|---|---|---|---|---|
 | Bravecto Quantum | fluralaner (extended-release) | Merck | injection | annually | First annual flea and tick injectable for dogs. Single subcutaneous dose provides 12 months of protection. Approved in Canada 2025. Administered by veterinarian. |
 
-### Dewormers
+#### Dewormers
 
 | Name | Generic | Manufacturer | Form | Intervals | Description |
 |---|---|---|---|---|---|
 | Drontal Plus | praziquantel/pyrantel/febantel | Elanco | tablet | as_needed | Broad-spectrum dewormer for tapeworms (including Echinococcus), hookworms, roundworms, and whipworms. Treatment-focused, not a monthly preventative. |
 | Panacur | fenbendazole | Merck | powder | daily | Broad-spectrum dewormer for roundworms, hookworms, whipworms, and Taenia tapeworms. Given over 3-5 consecutive days. Also used off-label for Giardia. |
 
----
-
-## GI (15)
+### GI (15)
 
 | Name | Generic | Manufacturer | Form | Intervals | Description |
 |---|---|---|---|---|---|
@@ -125,9 +142,7 @@ Note: `digestive_impact` and `itchiness_impact` were proposed but never added to
 | Loperamide | loperamide | generic | tablet | twice_daily, three_times_daily | Antidiarrheal that slows intestinal motility. Available over-the-counter (Imodium). CONTRAINDICATED in dogs with MDR1/ABCB1 gene mutation (collies, Aussies, shelties) — can cause severe neurological toxicity. |
 | Pancrelipase | pancrelipase | various | powder | twice_daily | Pancreatic enzyme replacement (lipase, amylase, protease) for exocrine pancreatic insufficiency (EPI). Mixed directly into food with every meal. Also known as Viokase/Pancrezyme. |
 
----
-
-## Pain / NSAID (9)
+### Pain / NSAID (9)
 
 All NSAIDs have GI side effects (vomiting, diarrhea, ulceration) as their primary safety concern — directly impacts the app's poop tracking.
 
@@ -143,19 +158,13 @@ All NSAIDs have GI side effects (vomiting, diarrhea, ulceration) as their primar
 | Gabapentin | gabapentin | generic | capsule | twice_daily, three_times_daily, four_times_daily | Anticonvulsant used off-label for chronic and neuropathic pain. Often used as adjunct alongside NSAIDs for multimodal pain management. Also commonly used for anxiety. |
 | Tramadol | tramadol | generic | tablet | twice_daily, three_times_daily, four_times_daily | Synthetic opioid for moderate to moderately severe pain. Used as part of multimodal pain management. Controlled substance. |
 
----
-
-## Steroid (1)
+### Steroid (1)
 
 | Name | Generic | Manufacturer | Form | Intervals | Description |
 |---|---|---|---|---|---|
 | Prednisone | prednisone | generic | tablet | daily, twice_daily, every_other_day | Broad corticosteroid and immunosuppressant. Used across many conditions: allergies, IBD, immune-mediated disease. Taper required when discontinuing. Significant side effects with long-term use (increased thirst, appetite, urination). |
 
----
-
-## Summary
-
-**Total: 52 medications across 5 categories**
+### Catalog Summary
 
 | Category | Count | Why included |
 |---|---|---|
@@ -178,7 +187,7 @@ All NSAIDs have GI side effects (vomiting, diarrhea, ulceration) as their primar
 **Mobile bottom nav** stays at 5 items: **Home, Food, [Log], Insights, More**
 
 The current Settings nav item becomes **More** — a popover with two options:
-- **Meds** (with active count badge if meds are active)
+- **Meds**
 - **Settings**
 - Future items (LLM export, sharing, etc.) can be added to the popover later
 
@@ -246,55 +255,191 @@ The structured `category` field tells us what each medication impacts:
 
 ---
 
+## Approach
+
+Four sequential phases. Phase 1 is schema + seed data (backend only). Phase 2 surgically removes medications from all existing UI/engine code. Phase 3 adds navigation. Phase 4 builds the new Meds page UI. Each phase should `yarn build` cleanly before moving to the next.
+
+### Technologies & APIs
+- Drizzle ORM (schema, enums, migrations)
+- PostgreSQL (via Docker container `mydoglog-db-dev`, port 5433)
+- psycopg2-binary (Python seed script, raw SQL upserts)
+- shadcn/ui (Card, Button, Input, Select, Popover, Command for searchable picker)
+- Line Awesome icons via `react-icons/lia` (LiaPillsSolid or similar)
+- ResponsiveModal pattern (Drawer on mobile, Dialog on desktop)
+
+### Key Areas
+
+**Phase 1 files:**
+- `scraper/data/medications.json` — **new** seed data file (52 medications)
+- `scraper/seed_medications.py` — **new** seed script
+- `scraper/build.py` — add call to `seed_medications.py`
+- `src/lib/db/schema.ts` — new enums + `medicationProducts` table + modify `medications` table
+
+**Phase 2 files (removals):**
+- `src/components/routine-editor.tsx` — remove medication section
+- `src/components/daily-checkin.tsx` — remove medication display
+- `src/components/active-plan-card.tsx` — remove medications prop
+- `src/components/medication-item.tsx` — remove reason badge
+- `src/app/(app)/dogs/[id]/food/page.tsx` — remove medication fetch/state
+- `src/app/api/dogs/[id]/food/routine/route.ts` — remove medications from response
+- `src/lib/labels.ts` — remove `MEDICATION_REASON_LABELS`
+- `src/lib/types.ts` — update `MedicationSummary`, remove `medications` from `RoutineData`
+- `src/lib/routine.ts` — remove `getActiveMedicationsForDog()`
+- `src/lib/correlation/types.ts` — remove medication flags/interfaces
+- `src/lib/correlation/engine.ts` — remove medication logic
+- `src/lib/correlation/query.ts` — remove medication query
+- `src/lib/correlation/engine.test.ts` — remove medication tests
+- `src/app/api/dogs/[id]/medications/route.ts` — update for new schema
+- `src/app/api/medications/[id]/route.ts` — update for new schema
+
+**Phase 3 files (navigation):**
+- `src/app/(app)/nav-links.tsx` — Settings → More popover (mobile), add Meds (desktop)
+- `src/app/(app)/dogs/[id]/meds/page.tsx` — **new** page route
+
+**Phase 4 files (UI):**
+- `src/components/medication-picker.tsx` — **new** searchable catalog + free-text
+- `src/components/medication-form.tsx` — **new** add/edit form in ResponsiveModal
+- `src/components/medication-card.tsx` — **new** display card
+- `src/app/(app)/dogs/[id]/meds/page.tsx` — full page implementation
+- `src/app/api/medication-products/route.ts` — **new** GET endpoint for catalog search
+
+---
+
 ## Build Steps
 
 ### Phase 1: Schema + Seed Data
-- [ ] Create `scraper/data/medications.json` seed file from tables above
-- [ ] Schema changes: new enums (`medication_category`, `dosage_form`, `dosing_interval`) + `medication_products` table + modify `medications` table (add `medication_product_id` FK, `interval`; drop `reason`)
-- [ ] Migration: nuke all existing medication records (will be re-added manually)
-- [ ] `yarn db:generate` + migration
-- [ ] Update `build.py` to load medications seed data
+
+1. Create `scraper/data/medications.json` with all 52 medications from the catalog tables above. Structure each entry with: `name`, `generic_name`, `manufacturer`, `category`, `drug_class`, `dosage_form`, `default_intervals` (array), `description`.
+   **Verify**: JSON is valid, has 52 entries, counts match (6 allergy, 21 parasite, 15 GI, 9 pain, 1 steroid).
+
+2. Add three new enums to `schema.ts`: `medicationCategoryEnum` (allergy, parasite, gi, pain, steroid), `dosageFormEnum` (tablet, chewable, capsule, liquid, injection, topical, spray, powder, gel, collar), `dosingIntervalEnum` (15 values from spec).
+   **Verify**: Enums defined, no TypeScript errors.
+
+3. Add `medicationProducts` table to `schema.ts` with fields matching spec: `id` (text PK), `name`, `genericName`, `manufacturer` (nullable), `category` (enum), `drugClass` (nullable), `dosageForm` (enum), `defaultIntervals` (array of enum), `description` (nullable), `createdAt`.
+   **Verify**: Table definition compiles.
+
+4. Modify `medications` table in `schema.ts`: add `medicationProductId` (optional FK → medicationProducts.id), add `interval` (dosingIntervalEnum, nullable). Remove `reason` column and `medicationReasonEnum`.
+   **Verify**: Schema compiles, no references to `reason` or `medicationReasonEnum` remain in schema.
+
+5. Run `yarn db:generate` to create migration. Manually edit migration SQL to: (a) add the three new enums, (b) create `medication_products` table, (c) `DELETE FROM medications` to nuke existing records, (d) alter `medications` table (add columns, drop `reason` column + enum). Run migration locally.
+   **Verify**: `docker exec mydoglog-db-dev psql -U mydoglog -d mydoglog -c "\d medication_products"` shows correct columns. `SELECT count(*) FROM medications` returns 0.
+
+6. Create `scraper/seed_medications.py`: reads `medications.json`, connects to PostgreSQL (same connection pattern as `build.py` — localhost:5433, user mydoglog), upserts each medication into `medication_products` using `ON CONFLICT (name) DO UPDATE` (match on name since these are hand-maintained). Generate UUIDs with `uuid.uuid4()`.
+   **Verify**: `uv run python seed_medications.py` succeeds. `SELECT count(*) FROM medication_products` returns 52.
+
+7. Add call to `seed_medications.py` at the end of `build.py` (import and call the seed function, or subprocess call).
+   **Verify**: `cd scraper && uv run python build.py` completes without error, medication_products still has 52 rows.
+
+8. `yarn build` succeeds (will likely fail until Phase 2 removes `reason` references — that's expected, just note it).
 
 ### Phase 2: Remove Meds from Existing UI
 
-**Components:**
-- [ ] `routine-editor.tsx` — remove entire medications section (state, handlers, save logic, render)
-- [ ] `daily-checkin.tsx` — remove medication display from routine accordion, remove `MedicationItem` import
-- [ ] `active-plan-card.tsx` — remove `medications` prop and medication display section
-- [ ] `medication-item.tsx` — keep pill icon, remove reason badge display (uses `MEDICATION_REASON_LABELS`)
+1. **Schema cleanup**: Remove `medicationReasonEnum` from `schema.ts` (already done in Phase 1 step 4, but verify no lingering references).
+   **Verify**: `grep -r "medicationReason" src/` returns nothing.
 
-**Pages:**
-- [ ] `food/page.tsx` — remove `activeMedications` state and fetch logic, stop passing meds to ActivePlanCard
-- [ ] `food/routine/route.ts` — remove medications from routine API response
+2. **Types**: In `types.ts`, update `MedicationSummary` — remove `reason`, add `medicationProductId: string | null` and `interval: string | null`. Remove `medications` field from `RoutineData`.
+   **Verify**: TypeScript compiles for types.ts.
 
-**Lib:**
-- [ ] `labels.ts` — remove `MEDICATION_REASON_LABELS`
-- [ ] `types.ts` — update `MedicationSummary` for new schema (add `medicationProductId`, `interval`; drop `reason`), remove `medications` from `RoutineData`
-- [ ] `routine.ts` — remove `getActiveMedicationsForDog()` (will be replaced by Meds page fetch)
-- [ ] `schema.ts` — remove `medicationReasonEnum`, drop `reason` column from medications table
+3. **Labels**: Remove `MEDICATION_REASON_LABELS` from `labels.ts`.
+   **Verify**: No imports of `MEDICATION_REASON_LABELS` remain.
 
-**Correlation engine:**
-- [ ] `correlation/types.ts` — remove `onItchinessMedication`, `onDigestiveMedication` from `DayOutcome`; remove `excludeMedicationPeriods` from options; remove `RawMedication` interface; remove `medications` from `CorrelationInput`
-- [ ] `correlation/engine.ts` — remove medication flag computation (lines ~278-307), remove medication period exclusion logic (lines ~465-466, ~1026-1027), remove medication flags from backfill outcome (lines ~878-879)
-- [ ] `correlation/query.ts` — remove medication fetch query and `medications` import from schema
-- [ ] `correlation/engine.test.ts` — remove "sets medication flags correctly" test, remove "excludes medication periods when option enabled" test, remove `medications: []` from test fixtures, remove `onItchinessMedication`/`onDigestiveMedication` from `emptyOutcome`
+4. **Routine helpers**: In `routine.ts`, remove `getActiveMedicationsForDog()` function entirely.
+   **Verify**: No imports of `getActiveMedicationsForDog` remain.
 
-**API routes (keep, will be reused by Meds page):**
-- [ ] `api/dogs/[id]/medications/route.ts` — keep, update to remove `reason` field handling
-- [ ] `api/medications/[id]/route.ts` — keep, update to remove `reason` field handling
+5. **Routine API**: In `food/routine/route.ts`, remove the medications fetch. Return only `{ plan }` (no `medications` key).
+   **Verify**: Route compiles.
+
+6. **Components — routine-editor.tsx**: Remove all medication state (`medications`, `editingMedication`, etc.), medication handlers (`saveMedications`, medication form fields), and medication render sections. Keep only food plan editing.
+   **Verify**: Component compiles, no medication imports remain.
+
+7. **Components — daily-checkin.tsx**: Remove medication display from routine accordion, remove `MedicationItem` import.
+   **Verify**: Component compiles.
+
+8. **Components — active-plan-card.tsx**: Remove `medications` prop and medication display section.
+   **Verify**: Component compiles.
+
+9. **Components — medication-item.tsx**: Remove reason badge display and `MEDICATION_REASON_LABELS` import. Keep pill icon and basic name/dosage display (will be reused in Phase 4).
+   **Verify**: Component compiles.
+
+10. **Food page**: In `food/page.tsx`, remove `activeMedications` state, remove medication fetch logic, stop passing meds to `ActivePlanCard`.
+    **Verify**: Page compiles.
+
+11. **Correlation engine — types.ts**: Remove `onItchinessMedication` and `onDigestiveMedication` from `DayOutcome`. Remove `excludeMedicationPeriods` from options. Remove `RawMedication` interface. Remove `medications` from `CorrelationInput`.
+    **Verify**: Types compile.
+
+12. **Correlation engine — engine.ts**: Remove medication flag computation, medication period exclusion logic, and medication flags from backfill outcome construction.
+    **Verify**: Engine compiles.
+
+13. **Correlation engine — query.ts**: Remove medication fetch query and `medications` import from schema.
+    **Verify**: Query module compiles.
+
+14. **Correlation engine — engine.test.ts**: Remove medication-specific tests, remove `medications: []` from test fixtures, remove medication flags from `emptyOutcome` and other test helpers.
+    **Verify**: `yarn test` passes.
+
+15. **API routes**: Update `api/dogs/[id]/medications/route.ts` and `api/medications/[id]/route.ts` — remove `reason` field handling, add `medicationProductId` and `interval` to POST/PATCH handlers.
+    **Verify**: API routes compile.
+
+16. `yarn build` succeeds. `yarn test` passes.
+    **Verify**: Clean build output, all tests green.
 
 ### Phase 3: Navigation
-- [ ] Rename Settings nav item to "More" on mobile (popover with Meds + Settings)
-- [ ] Add Meds to desktop top nav
-- [ ] Create Meds page route (`/dogs/[id]/meds`)
+
+1. Read `docs/mydoglog-branding.md` for design system reference before any UI work.
+
+2. **Mobile nav**: In `nav-links.tsx`, change the Settings nav item to "More". Replace its direct link with a Popover containing two items: "Meds" (links to `/dogs/[id]/meds`) and "Settings" (links to `/settings`). Use appropriate Line Awesome icons (pill for Meds, gear for Settings).
+   **Verify**: Mobile nav renders "More" with working popover, both links navigate correctly.
+
+3. **Desktop nav**: Add "Meds" as a flat link in the desktop top nav bar (between Insights and Settings). Links to `/dogs/[id]/meds`.
+   **Verify**: Desktop nav shows Home, Food, Insights, Meds, Settings.
+
+4. **Create page route**: Create `src/app/(app)/dogs/[id]/meds/page.tsx` as a minimal placeholder (page title + empty state).
+   **Verify**: Navigating to `/dogs/[id]/meds` renders without error. `yarn build` succeeds.
 
 ### Phase 4: Meds Page UI
-- [ ] Medication picker component (searchable catalog + free-text fallback)
-- [ ] Add/edit medication form (responsive modal — drawer on mobile, dialog on desktop)
-- [ ] Active meds card list (reuse pill icon from existing `medication-item.tsx`)
-- [ ] Past meds card list (reverse chronological by end date)
-- [ ] Medication card component (name, dosage, interval, dates — same visual pattern as food cards, no picture/stats)
+
+1. Read `docs/mydoglog-branding.md` again for component patterns and color tokens.
+
+2. **Catalog API**: Create `src/app/api/medication-products/route.ts` — GET endpoint that returns all 52 medications from `medication_products` table, optionally filtered by search query param. Used by the medication picker.
+   **Verify**: `curl` returns 52 medications. Search param filters correctly.
+
+3. **Medication picker component**: Create `src/components/medication-picker.tsx` — searchable list using shadcn Command component. Shows catalog medications grouped or filtered by search. At the bottom, a "Use custom name" option that switches to free-text input. When a catalog med is selected, pre-fill `interval` from `default_intervals[0]`. Return selected medication product (or free-text name) to parent.
+   **Verify**: Component renders, search filters catalog, free-text fallback works, selection returns correct data.
+
+4. **Medication form component**: Create `src/components/medication-form.tsx` — add/edit form inside ResponsiveModal (Drawer on mobile, Dialog on desktop). Fields: medication picker (step 3), dosage (text input), interval (Select dropdown from `dosingIntervalEnum` values — pre-filled from catalog if applicable), start date (date picker, defaults to today), end date (optional date picker), notes (optional textarea). On save: POST to `/api/dogs/[id]/medications` (new) or PATCH to `/api/medications/[id]` (edit). On "Stop medication": PATCH with endDate = today.
+   **Verify**: Form opens in drawer (mobile) / dialog (desktop). Can create catalog med, create free-text med, edit existing med, stop a med.
+
+5. **Medication card component**: Create `src/components/medication-card.tsx` — displays a single medication. Shows: name, dosage, interval label, start date, end date (if past). Tap opens edit form. Same visual density as food cards (no picture/stats). Use pill icon from Line Awesome.
+   **Verify**: Card renders correctly for both active (no end date) and past (with end date) medications.
+
+6. **Meds page**: Implement `src/app/(app)/dogs/[id]/meds/page.tsx` fully. Fetches medications via GET `/api/dogs/[id]/medications`. Splits into active (endDate is null) and past (endDate is not null). Active meds at top as card list. Past meds below, sorted by endDate descending. "Add medication" button opens the form. Page title: "Medications".
+   **Verify**: Page loads, shows active/past sections, add button works, cards are tappable for edit.
+
+7. **Interval display labels**: Add human-readable labels for `dosingIntervalEnum` values to `labels.ts` (e.g., `twice_daily` → "Twice daily", `every_3_months` → "Every 3 months", `as_needed` → "As needed").
+   **Verify**: Interval labels display correctly on medication cards and in the interval dropdown.
+
+8. **Final build**: `yarn build` succeeds. Manual test: navigate to Meds page, add a catalog medication (e.g., "Zenrelia"), add a free-text medication, edit one, stop one, verify it moves to past section.
+   **Verify**: Full CRUD flow works end-to-end. Build is clean.
 
 ### Phase 5: Scorecard Caveats (display-only, future)
 - [ ] Detect med start/stop during feeding period in scorecard API
 - [ ] Show caveat badges on scorecard UI using `medication_products.category`
+
+---
+
+## Risks & Considerations
+- **Migration order matters**: The migration must create enums and `medication_products` table BEFORE altering `medications` (FK dependency). The `DELETE FROM medications` must happen BEFORE dropping the `reason` column.
+- **Drizzle enum arrays**: `defaultIntervals` on `medication_products` is an array of enum values. Drizzle supports this via `dosingIntervalEnum().array()` — verify this generates correct SQL.
+- **Phase 2 is destructive to existing UI**: Many components change simultaneously. Do Phase 2 in one pass and verify `yarn build` at the end, not piecemeal (intermediate states will have broken imports).
+- **The `medications` table `name` column stays**: Both catalog and free-text meds store the display name directly. For catalog meds, copy from `medication_products.name` at creation time.
+- **Popover navigation on mobile**: The "More" popover needs to work well on touch — test that it opens/closes correctly and doesn't interfere with the bottom nav bar positioning.
+
+## If Blocked
+- If Drizzle enum array type doesn't work: use `text().array()` instead and validate values at the application layer
+- If migration fails: check enum creation order — enums must exist before tables that reference them
+- If `seed_medications.py` can't connect: verify Docker container is running (`docker ps | grep mydoglog-db-dev`) and port 5433 is exposed
+- If the popover nav feels wrong on mobile: fall back to a simple slide-up sheet or secondary page instead
+- If tests fail after 3 attempts: document what's failing and stop
+- If `yarn build` fails on type errors after Phase 2: likely a missed reference to removed types — grep for the specific type name and clean up
+
+---
+**Completion Signal**: When ALL "Definition of Done" items are checked and verified, output: RALPH_COMPLETE

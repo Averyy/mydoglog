@@ -290,7 +290,8 @@ class TestParseProduct:
         assert "AAFCO" in result["aafco_statement"]
         assert len(result["aafco_statement"]) < 500
 
-    def test_cat_product_filtered(self) -> None:
+    def test_cat_product_parsed(self) -> None:
+        """Cat filtering happens at discovery, not in _parse_product."""
         html = """
         <html><body>
             <h1>Indoor Cat Formula</h1>
@@ -299,7 +300,8 @@ class TestParseProduct:
         """
         url = "https://firstmate.com/product/indoor-cat-formula/"
         result = _parse_product(url, html)
-        assert result is None
+        assert result is not None
+        assert result["name"] == "Indoor Cat Formula"
 
     def test_canned_product_type(self) -> None:
         html = """

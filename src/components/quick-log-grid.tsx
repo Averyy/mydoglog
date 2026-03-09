@@ -82,8 +82,8 @@ export function QuickLogGrid({ dogId, onSelect }: QuickLogGridProps): React.Reac
             <Icon className="size-6" />
             <span className="text-[13px] font-medium">{item.label}</span>
             {item.count != null && item.count > 0 && (
-              <div className="absolute top-1.5 right-1.5 flex h-4 min-w-4 items-center justify-center rounded-full bg-border px-1">
-                <span className="text-[10px] font-bold text-primary-foreground">{item.count}</span>
+              <div className="absolute top-1.5 right-1.5 flex h-4 min-w-4 items-center justify-center rounded-full bg-primary px-1">
+                <span className="text-[10px] font-bold text-background">{item.count}</span>
               </div>
             )}
           </button>

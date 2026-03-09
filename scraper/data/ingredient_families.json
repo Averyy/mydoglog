@@ -26,6 +26,9 @@
         },
         "Direct Dehydrated Alfalfa Pellets": {
           "form": "dried"
+        },
+        "Alfalfa Meal": {
+          "form": "meal"
         }
       },
       "category": "carb"
@@ -109,6 +112,9 @@
         },
         "Dried Apple Pomace": {
           "form": "fiber"
+        },
+        "Apple Powder": {
+          "form": "powder"
         }
       },
       "category": "carb"
@@ -183,6 +189,9 @@
           "form": "whole"
         },
         "Whole Grain Barley": {
+          "form": "whole"
+        },
+        "Malted Barley": {
           "form": "whole"
         }
       },
@@ -418,6 +427,36 @@
         },
         "Beef tallow preserved with mixed-tocopherols": {
           "form": "fat"
+        },
+        "100% Beef": {
+          "form": "raw"
+        },
+        "Beef Heart": {
+          "form": "heart"
+        },
+        "Beef Skin": {
+          "form": "skin"
+        },
+        "Beef Pizzle": {
+          "form": "raw"
+        },
+        "Beef Gelatin": {
+          "form": "gelatin"
+        },
+        "Beef Flavour": {
+          "form": "derivative"
+        },
+        "Collagen from Beefhide": {
+          "form": "derivative"
+        },
+        "Cooked Beef Bone Marrow": {
+          "form": "bone"
+        },
+        "beef cartilage": {
+          "form": "cartilage"
+        },
+        "TENDER BEEF: Beef": {
+          "form": "raw"
         }
       },
       "category": "protein"
@@ -434,6 +473,9 @@
         },
         "Dehydrated Beets (added for Colour)": {
           "form": "dried"
+        },
+        "organic beets": {
+          "form": "whole"
         }
       }
     },
@@ -520,6 +562,9 @@
         },
         "dried blueberry pomace": {
           "form": "fiber"
+        },
+        "Blueberry Powder": {
+          "form": "powder"
         }
       },
       "category": "carb"
@@ -538,9 +583,21 @@
       "members": {
         "broccoli": {
           "form": "whole"
+        },
+        "Organic Broccoli": {
+          "form": "whole"
         }
       },
       "category": "carb"
+    },
+    "cabbage": {
+      "source_group": "vegetable",
+      "category": "carb",
+      "members": {
+        "Cabbage": {
+          "form": "whole"
+        }
+      }
     },
     "canola": {
       "source_group": "seed",
@@ -588,9 +645,6 @@
       "source_group": "additive",
       "members": {
         "Carrageenan": {
-          "form": "raw"
-        },
-        "carrageenan": {
           "form": "raw"
         },
         "Kappa-Carrageenan": {
@@ -646,9 +700,21 @@
         },
         "dried celery": {
           "form": "dried"
+        },
+        "Celery": {
+          "form": "whole"
         }
       },
       "category": "carb"
+    },
+    "cherry": {
+      "source_group": "fruit",
+      "category": "carb",
+      "members": {
+        "Dried Cherries": {
+          "form": "dried"
+        }
+      }
     },
     "chia": {
       "source_group": "seed",
@@ -660,6 +726,9 @@
           "form": "whole"
         },
         "Chia Seeds": {
+          "form": "whole"
+        },
+        "Whole Chia Seed": {
           "form": "whole"
         }
       },
@@ -1043,6 +1112,30 @@
         },
         "chicken fat(preserved with mixed tocopherols, a natural source of vitamin E)": {
           "form": "fat"
+        },
+        "Chicken Livers": {
+          "form": "liver"
+        },
+        "Chicken Hearts And Livers": {
+          "form": "organ"
+        },
+        "Chicken Hearts (source of Biotin)": {
+          "form": "heart"
+        },
+        "Chicken Hearts (source of Taurine)": {
+          "form": "heart"
+        },
+        "Chicken By-Product Meal (Source of Glucosamine & Chondroitin Sulfate)": {
+          "form": "by_product"
+        },
+        "chicken gizzard": {
+          "form": "organ"
+        },
+        "chickenmeal": {
+          "form": "meal"
+        },
+        "Roasted Chicken Flavour": {
+          "form": "derivative"
         }
       },
       "category": "protein"
@@ -1100,6 +1193,9 @@
         },
         "inulin (FOS) (chicory root)": {
           "form": "extract"
+        },
+        "dried chicory root (source of inulin)": {
+          "form": "dried"
         }
       },
       "category": "fiber"
@@ -1117,9 +1213,6 @@
       "source_group": "additive",
       "members": {
         "Cellulose Gum": {
-          "form": "raw"
-        },
-        "cellulose gum": {
           "form": "raw"
         },
         "Carboxymethylcellulose": {
@@ -1142,6 +1235,15 @@
         },
         "coconut oil (preserved with mixed tocopherols)": {
           "form": "oil"
+        },
+        "Coconut Flakes": {
+          "form": "whole"
+        },
+        "Dried Coconut": {
+          "form": "dried"
+        },
+        "coconut flour": {
+          "form": "flour"
         }
       },
       "category": "fat"
@@ -1178,6 +1280,9 @@
         },
         "Wild-Caught Cod": {
           "form": "raw"
+        },
+        "ground cod with bones": {
+          "form": "ground"
         }
       },
       "category": "protein"
@@ -1287,6 +1392,9 @@
         },
         "dried cranberry pomace": {
           "form": "fiber"
+        },
+        "Cranberry Powder": {
+          "form": "powder"
         }
       },
       "category": "carb"
@@ -1366,6 +1474,15 @@
         },
         "Yogurt": {
           "form": "raw"
+        },
+        "bovine colostrum": {
+          "form": "raw"
+        },
+        "Dried Colostrum": {
+          "form": "dried"
+        },
+        "lactose": {
+          "form": "derivative"
         }
       },
       "category": "protein"
@@ -1432,6 +1549,9 @@
         },
         "raw duck liver": {
           "form": "organ"
+        },
+        "Duck Bone Broth": {
+          "form": "broth"
         }
       },
       "category": "protein"
@@ -1516,6 +1636,18 @@
         },
         "fresh eggs": {
           "form": "raw"
+        },
+        "Egg": {
+          "form": "whole"
+        },
+        "Whole Eggs (source of Vitamin E)": {
+          "form": "whole"
+        },
+        "Egg (Source of Omega–3 Fatty Acids)": {
+          "form": "whole"
+        },
+        "Enriched Egg Noodles (Semolina, Eggs, Niacin, Ferrous Sulfate, Thiamine Mononitrate, Riboflavin, Folic Acid)": {
+          "form": "whole"
         }
       },
       "category": "protein"
@@ -1531,6 +1663,18 @@
         }
       },
       "category": "protein"
+    },
+    "fenugreek": {
+      "source_group": "legume",
+      "category": "carb",
+      "members": {
+        "Fenugreek Seeds": {
+          "form": "whole"
+        },
+        "fenugreek seed": {
+          "form": "whole"
+        }
+      }
     },
     "flaxseed": {
       "source_group": "seed",
@@ -1582,6 +1726,12 @@
         },
         "Whole Flaxseed": {
           "form": "whole"
+        },
+        "ground whole axseed": {
+          "form": "ground"
+        },
+        "Flaxseed Oil (Preserved With Mixed Tocopherols)": {
+          "form": "oil"
         }
       },
       "category": "fat"
@@ -1685,6 +1835,15 @@
       },
       "category": "protein"
     },
+    "goose": {
+      "source_group": "poultry",
+      "category": "protein",
+      "members": {
+        "goose": {
+          "form": "raw"
+        }
+      }
+    },
     "green_bean": {
       "source_group": "vegetable",
       "members": {
@@ -1709,11 +1868,20 @@
         "Guar Gum": {
           "form": "raw"
         },
-        "guar gum": {
+        "organic guar gum": {
           "form": "raw"
         }
       },
       "category": "additive"
+    },
+    "guineafowl": {
+      "source_group": "poultry",
+      "category": "protein",
+      "members": {
+        "guineafowl": {
+          "form": "raw"
+        }
+      }
     },
     "haddock": {
       "source_group": "fish",
@@ -1844,9 +2012,6 @@
         "Paprika (for color)": {
           "form": "raw"
         },
-        "Paprika (for colour)": {
-          "form": "raw"
-        },
         "Paprika Oleoresin (for colour)": {
           "form": "extract"
         }
@@ -1967,6 +2132,9 @@
         },
         "Organic Kale": {
           "form": "whole"
+        },
+        "Dried Kale": {
+          "form": "dried"
         }
       },
       "category": "carb"
@@ -2114,6 +2282,21 @@
         },
         "natural lamb flavour": {
           "form": "derivative"
+        },
+        "Lamb Hearts": {
+          "form": "heart"
+        },
+        "lamb heart": {
+          "form": "heart"
+        },
+        "lamb bone": {
+          "form": "bone"
+        },
+        "lamb spleen": {
+          "form": "organ"
+        },
+        "Lamb Meal (source of Glucosamine and Chondroitin Sulfate)": {
+          "form": "meal"
         }
       },
       "category": "protein"
@@ -2157,13 +2340,7 @@
         "Locust Bean Gum": {
           "form": "raw"
         },
-        "locust bean gum": {
-          "form": "raw"
-        },
         "Carob Bean Gum": {
-          "form": "raw"
-        },
-        "carob bean gum": {
           "form": "raw"
         }
       },
@@ -2237,9 +2414,21 @@
         },
         "whole millet": {
           "form": "whole"
+        },
+        "Ground Millet": {
+          "form": "ground"
         }
       },
       "category": "carb"
+    },
+    "molasses": {
+      "source_group": "other",
+      "category": "carb",
+      "members": {
+        "Molasses": {
+          "form": "raw"
+        }
+      }
     },
     "mussel": {
       "source_group": "mollusk",
@@ -2261,6 +2450,9 @@
         },
         "perna canaliculus (green lipped mussel)": {
           "form": "raw"
+        },
+        "New Zealand green mussel powder": {
+          "form": "powder"
         }
       },
       "category": "protein"
@@ -2333,6 +2525,9 @@
         },
         "oat ber": {
           "form": "fiber"
+        },
+        "Whole Grain Oatmeal": {
+          "form": "whole"
         }
       },
       "category": "carb"
@@ -2348,6 +2543,18 @@
         }
       },
       "category": "fat"
+    },
+    "onion": {
+      "source_group": "vegetable",
+      "category": "carb",
+      "members": {
+        "Dried Onion": {
+          "form": "dried"
+        },
+        "onion powder": {
+          "form": "powder"
+        }
+      }
     },
     "papaya": {
       "source_group": "fruit",
@@ -2372,6 +2579,15 @@
         }
       },
       "category": "carb"
+    },
+    "parsnip": {
+      "source_group": "root",
+      "category": "carb",
+      "members": {
+        "Parsnip": {
+          "form": "whole"
+        }
+      }
     },
     "pea": {
       "source_group": "legume",
@@ -2423,6 +2639,15 @@
         },
         "Yellow Peas": {
           "form": "whole"
+        },
+        "pois": {
+          "form": "whole"
+        },
+        "fibre de pois": {
+          "form": "fiber"
+        },
+        "Split Peas": {
+          "form": "whole"
         }
       },
       "category": "carb"
@@ -2435,6 +2660,15 @@
         },
         "Peanuts": {
           "form": "whole"
+        },
+        "Peanut Flour": {
+          "form": "flour"
+        },
+        "Ground Roasted Peanuts": {
+          "form": "roasted"
+        },
+        "Peanut Oil (preserved with mixed Tocopherols)": {
+          "form": "oil"
         }
       },
       "category": "carb"
@@ -2516,6 +2750,9 @@
       "members": {
         "pineapple": {
           "form": "whole"
+        },
+        "pineapple stem": {
+          "form": "raw"
         }
       },
       "category": "carb"
@@ -2786,6 +3023,24 @@
         },
         "Natural Bacon Flavour": {
           "form": "derivative"
+        },
+        "Porcine plasma": {
+          "form": "plasma"
+        },
+        "dried porcine plasma": {
+          "form": "plasma"
+        },
+        "Dried Pork Broth": {
+          "form": "broth"
+        },
+        "Pork Fat Preserved With Mixed Tocopherols": {
+          "form": "fat"
+        },
+        "pork fat (preserved withmixed tocopherols)": {
+          "form": "fat"
+        },
+        "Natural Porcine Flavor": {
+          "form": "derivative"
         }
       },
       "category": "protein"
@@ -2819,9 +3074,27 @@
         },
         "Potatoes": {
           "form": "whole"
+        },
+        "Ground Potatoes": {
+          "form": "ground"
+        },
+        "Dried Ground Potatoes": {
+          "form": "dried"
+        },
+        "Whole Potatoes": {
+          "form": "whole"
         }
       },
       "category": "carb"
+    },
+    "propylene_glycol": {
+      "source_group": "additive",
+      "category": "carb",
+      "members": {
+        "propylene glycol": {
+          "form": "raw"
+        }
+      }
     },
     "psyllium": {
       "source_group": "fiber",
@@ -2870,6 +3143,15 @@
         },
         "curcubita maxima (pumpkin)": {
           "form": "raw"
+        },
+        "Pumpkin Powder": {
+          "form": "powder"
+        },
+        "ground pumpkin seed": {
+          "form": "whole"
+        },
+        "ground pumpkin seeds": {
+          "form": "whole"
         }
       },
       "category": "carb"
@@ -2993,6 +3275,12 @@
         },
         "Modified Rice Starch": {
           "form": "starch"
+        },
+        "Puffed Brown Rice": {
+          "form": "whole"
+        },
+        "brown rice syrup": {
+          "form": "derivative"
         }
       },
       "category": "carb"
@@ -3053,6 +3341,9 @@
       "members": {
         "Rye": {
           "form": "whole"
+        },
+        "Rye Flour": {
+          "form": "flour"
         }
       },
       "category": "carb"
@@ -3160,6 +3451,18 @@
         },
         "Salmon Oil (Preserved with Mixed Tocopherols)": {
           "form": "oil"
+        },
+        "Salmon Meal (a Natural Source Of DHA - Docosahexaenoic Acid)": {
+          "form": "meal"
+        },
+        "salmon with ground bone": {
+          "form": "raw"
+        },
+        "whole ground salmon": {
+          "form": "ground"
+        },
+        "Ground salmon with bones": {
+          "form": "ground"
         }
       },
       "category": "protein"
@@ -3336,6 +3639,9 @@
         },
         "Spinach (Dried)": {
           "form": "dried"
+        },
+        "organicspinach": {
+          "form": "whole"
         }
       },
       "category": "carb"
@@ -3359,6 +3665,9 @@
           "form": "whole"
         },
         "whole butternut squash": {
+          "form": "whole"
+        },
+        "organic squash": {
           "form": "whole"
         }
       },
@@ -3429,6 +3738,12 @@
         },
         "sweet potatoes*": {
           "form": "whole"
+        },
+        "White Sweet Potatoes": {
+          "form": "whole"
+        },
+        "Dried Yams": {
+          "form": "dried"
         }
       },
       "category": "carb"
@@ -3455,9 +3770,6 @@
       "source_group": "additive",
       "members": {
         "Titanium Dioxide": {
-          "form": "raw"
-        },
-        "titanium dioxide": {
           "form": "raw"
         }
       },
@@ -3486,6 +3798,15 @@
         },
         "Dried Tomato Pomace": {
           "form": "fiber"
+        },
+        "Dried Tomato": {
+          "form": "dried"
+        },
+        "Dried Tomatoes": {
+          "form": "dried"
+        },
+        "Tomato Powder": {
+          "form": "powder"
         }
       },
       "category": "carb"
@@ -3687,6 +4008,18 @@
         },
         "Natural Roasted Turkey Flavour": {
           "form": "derivative"
+        },
+        "Turkey Hearts": {
+          "form": "heart"
+        },
+        "Turkey Meal (source of Chondroitin Sulfate)": {
+          "form": "meal"
+        },
+        "Turkey Meal (source of Glucosamine)": {
+          "form": "meal"
+        },
+        "turkey gizzard": {
+          "form": "organ"
         }
       },
       "category": "protein"
@@ -3798,6 +4131,12 @@
         },
         "Whole Grain Wheat": {
           "form": "whole"
+        },
+        "Ground Whole Grain Wheat": {
+          "form": "ground"
+        },
+        "wheat protein": {
+          "form": "concentrate"
         }
       },
       "category": "carb"
@@ -3867,6 +4206,9 @@
         },
         "whitefish oil": {
           "form": "oil"
+        },
+        "Whitefish Meal (source of Glucosamine and Chondroitin Sulfate)": {
+          "form": "meal"
         }
       },
       "category": "protein"
@@ -3903,9 +4245,6 @@
       "members": {
         "Xanthan Gum": {
           "form": "raw"
-        },
-        "xanthan gum": {
-          "form": "raw"
         }
       },
       "category": "additive"
@@ -3929,9 +4268,6 @@
           "form": "raw"
         },
         "brewer’s dried yeast": {
-          "form": "dried"
-        },
-        "brewer's dried yeast": {
           "form": "dried"
         },
         "Dried Yeast": {
@@ -3961,6 +4297,12 @@
           "is_hydrolyzed": true
         },
         "Selenium Yeast": {
+          "form": "raw"
+        },
+        "Dried Brewers Yeast": {
+          "form": "dried"
+        },
+        "Yeast": {
           "form": "raw"
         }
       }
@@ -4672,6 +5014,186 @@
         "pollock"
       ],
       "source_group": "fish"
+    },
+    "Animal Fat (Preserved With Bha/Bht)": {
+      "could_be": [
+        "beef",
+        "pork",
+        "chicken"
+      ],
+      "source_group": "animal"
+    },
+    "Animal Fat (Preserved with BHA & Citric Acid)": {
+      "could_be": [
+        "beef",
+        "pork",
+        "chicken"
+      ],
+      "source_group": "animal"
+    },
+    "Animal Fat (Source of Omega 6 Fatty Acids [Preserved with BHA and Citric Acid])": {
+      "could_be": [
+        "beef",
+        "pork",
+        "chicken"
+      ],
+      "source_group": "animal"
+    },
+    "Animal Fat (Source of Omega 6 Fatty Acids) [Preserved with BHA/Citric Acid]": {
+      "could_be": [
+        "beef",
+        "pork",
+        "chicken"
+      ],
+      "source_group": "animal"
+    },
+    "Animal Plasma": {
+      "could_be": [
+        "beef",
+        "pork",
+        "chicken"
+      ],
+      "source_group": "animal"
+    },
+    "Spray Dried Animal Blood Cells": {
+      "could_be": [
+        "beef",
+        "pork",
+        "chicken"
+      ],
+      "source_group": "animal"
+    },
+    "Cooked Bone Marrow": {
+      "could_be": [
+        "beef",
+        "pork",
+        "lamb"
+      ],
+      "source_group": "mammal"
+    },
+    "- muscle meat": {
+      "could_be": [
+        "beef",
+        "pork",
+        "chicken",
+        "lamb"
+      ],
+      "source_group": "animal"
+    },
+    "Poultry By-Products": {
+      "could_be": [
+        "chicken",
+        "turkey",
+        "duck"
+      ],
+      "source_group": "poultry"
+    },
+    "Meat & Bone Meal": {
+      "could_be": [
+        "beef",
+        "pork",
+        "lamb"
+      ],
+      "source_group": "mammal"
+    },
+    "Dried Meat By-Products": {
+      "could_be": [
+        "beef",
+        "pork",
+        "lamb"
+      ],
+      "source_group": "mammal"
+    },
+    "dried meat by-products": {
+      "could_be": [
+        "beef",
+        "pork",
+        "lamb"
+      ],
+      "source_group": "mammal"
+    },
+    "natural flavors (ONLY FOR MEXICO: including poultry, pork and cow milk)": {
+      "could_be": [
+        "chicken",
+        "turkey",
+        "pork",
+        "dairy"
+      ],
+      "source_group": "animal"
+    },
+    "Natural Poultry Flavour": {
+      "could_be": [
+        "chicken",
+        "turkey",
+        "duck"
+      ],
+      "source_group": "poultry"
+    },
+    "natural poultry flavour": {
+      "could_be": [
+        "chicken",
+        "turkey",
+        "duck"
+      ],
+      "source_group": "poultry"
+    },
+    "Natural Flavour (Source of Chicken Flavour)": {
+      "could_be": [
+        "chicken"
+      ],
+      "source_group": "poultry"
+    },
+    "Natural Flavour (Source of Roasted Chicken Flavour)": {
+      "could_be": [
+        "chicken"
+      ],
+      "source_group": "poultry"
+    },
+    "Fish Oil ([Source of DHA] Preserved with Mixed Tocopherols)": {
+      "could_be": [
+        "salmon",
+        "herring",
+        "sardine",
+        "menhaden",
+        "pollock"
+      ],
+      "source_group": "fish"
+    },
+    "Natural Grilled Steak Flavour": {
+      "could_be": [
+        "beef"
+      ],
+      "source_group": "red_meat"
+    },
+    "Natural Filet Mignon Flavor": {
+      "could_be": [
+        "beef"
+      ],
+      "source_group": "red_meat"
+    },
+    "Grilled Filet Mignon Flavor": {
+      "could_be": [
+        "beef"
+      ],
+      "source_group": "red_meat"
+    },
+    "Natural Beef and Smoke Flavours": {
+      "could_be": [
+        "beef"
+      ],
+      "source_group": "red_meat"
+    },
+    "natural bacon flavor": {
+      "could_be": [
+        "pork"
+      ],
+      "source_group": "red_meat"
+    },
+    "Natural Bacon Flavor": {
+      "could_be": [
+        "pork"
+      ],
+      "source_group": "red_meat"
     }
   },
   "ignore_patterns": [
@@ -4691,7 +5213,7 @@
     "(?i)^probiotics?\\s*[(]",
     "(?i)fermentation\\s+(product|extract)",
     "(?i)^[34][ab]\\d{3}",
-    "(?i)^(dl-?\\s?|l-\\s?|l\\s)(lysine|carnitine|methionine|threonine|tryptophan|cysteine|cystine|ascorbyl|thiamine|threonie|leucine|arginine|glutamine|tyrosine|theanine)",
+    "(?i)^(dl[\\-\\u2013\\u2014]?\\s?|l[\\-\\u2013\\u2014]\\s?|l\\s)(lysine|carnitine|methionine|threonine|tryptophan|cysteine|cystine|ascorbyl|thiamine|threonie|leucine|arginine|glutamine|tyrosine|theanine)",
     "(?i)^(taurine?|threonine|leucine|isoleucine|histidine|cystine|cysteine|glycine|tryptophan|betaine|inositol|bromelain|quercetin|lipoic\\s+acid)\\b",
     "(?i)^dl.{0,3}methionine",
     "(?i)^mixed.?tocopherols?\\b",
@@ -4702,7 +5224,7 @@
     "(?i)^(red|blue|yellow)\\s*#?\\d",
     "(?i)(colou?r)\\s*(added)?\\s*$|^(added|caramel|annatto)\\s+colou?r|^carmine$",
     "(?i)vegetable\\s+juice\\s*(for|\\()*\\s*colou?r",
-    "(?i)^(astaxanthin|beta[- ]?carotene|carotene)$",
+    "(?i)^(astaxanthin|beta[\\- \\u2013\\u2014]?carotene|carotene)$",
     "(?i)[\\u00e0\\u00e2\\u00e9\\u00e8\\u00ea\\u00eb\\u00ef\\u00ee\\u00f4\\u00f9\\u00fb\\u00fc\\u00e7\\u00e6\\u0153]",
     "(?i)^natural\\s+(grill|hickory|peanut|roasted|smoke|smoked|vegetable)\\s+(smoke\\s+)?flavou?r",
     "(?i)^natural\\s+and\\s+artificial",
@@ -4711,13 +5233,13 @@
     "(?i)cassia\\s+gum|^agar\\b|^gum\\s+arabic",
     "(?i)^(glycerin|glycerine|glyceryl|dextrose|maltodextrin|lecithin)\\b",
     "(?i)^(microcrystalline\\s+)?cellulose$|^powdered\\s+cellulose|^hydroxypropyl\\s+cellulose",
-    "(?i)^(gelatin|lactose)\\b",
+    "(?i)^gelatin\\b",
     "(?i)^(sugar|brown\\s+sugar|cane\\s+(sugar|molasses)|maple\\s+(sugar|syrup)|coconut\\s+glycerin)$",
     "(?i)^mono.?\\s*and\\s*di",
     "(?i)^water(\\s+sufficient|\\.|$)",
     "(?i)sufficient.*processing",
     "(?i)^(iodized\\s+)?salt\\b|^sea\\s+salt$",
-    "(?i)^(glucosamine|chondroitin|hyaluronic|collagen)\\b",
+    "(?i)^(glucosamine|chondroitin|hyaluronic|collagen(?!\\s+from))\\b",
     "(?i)^methyl\\s*sulfonyl|^methylsulfonylmethane",
     "(?i)^active\\s+ingredient|^inactive\\s+ingredient",
     "(?i)fructo.?oligo.?saccharide|^inulin\\b|mannan.?oligosaccharide",
@@ -4731,98 +5253,170 @@
     "(?i)yucca\\s+schidigera",
     "(?i)^seasoning$",
     "(?i)^supplement$",
-    "(?i)^.{0,2}$"
+    "(?i)^.{0,2}$",
+    "(?i)^d[\\-\\u2013\\u2014]calcium\\s+pantothenate",
+    "(?i)^by[\\-\\u2013\\u2014]product\\s+meals?$",
+    "(?i)^INGREDIENTS:\\s",
+    "(?i)^Item\\s+Number:",
+    "(?i)^Species:\\s",
+    "(?i)^(SUPPORTS|WHEAT OR SOY|No Artificial|Made in|Real Meat First)",
+    "(?i)^minerals\\s+and\\s+(amino|other)",
+    "(?i)^and\\s+(Salmon|potato)\\s+Weight:",
+    "(?i)^(probiotics\\s+and|organ\\s+meats|purposefully|rosemary\\.\\s*Contains|rosemary\\.Contains|flavors\\s+or\\s+preservatives)",
+    "(?i)^Stella\\s+&\\s+Chewy'?s",
+    "(?i)^Stella'?s\\s+Solutions",
+    "(?i)^Wild\\s+Red\\s+Food\\s+Type:",
+    "(?i)^(Grain|Limited\\s+Ingredient).*Flavor:.*Weight:.*Ingredients:",
+    "(?i)^Sweet\\s+Potato\\s+&\\s+Green\\s+Bean.*Weight:.*Ingredients:",
+    "(?i)^wheat\\s+or\\s+soy\\s+protein",
+    "(?i)^Natural\\s+&\\s+Artificial",
+    "(?i)^hickory\\s+flavou?r",
+    "(?i)^and\\s+potato-free\\s+Health",
+    "(?i)^Grain[\\-\\u2013\\u2014]Free\\s+Flavor"
   ],
   "ignore_for_correlation": [
     "(preserved with mixed tocopherols)",
     "*Upcycled Ingredient",
     "6-Strain Probiotic Blend",
-    "BioPerine",
-    "Black Soldier Fly Larva Meal",
-    "Chaga Mushroom",
-    "Dicacalcium Phosphate",
-    "Dried Citrus Pulp",
-    "Dried Colostrum",
-    "Dried Onion",
-    "Dried Orange Pulp",
-    "Fenugreek Seeds",
-    "Fructooligocaccharide",
-    "Ground Pecan Shells",
-    "Hydrolyzed Collagen 120 mg",
-    "Hydrolyzed Collagen 240 mg",
-    "Magnesium (Magnesium Gluconate)",
-    "Miscanthus Grass",
-    "Monodicalcium phosphate",
-    "Montmorillonite Clay",
-    "ParActin",
-    "Passion Flower",
-    "Porcine plasma",
-    "Reishi Mushroom",
-    "Tetra Sodium Pyrophosphate",
-    "Valerian Root",
-    "Zinc-Methionine complex",
+    "A and D3 supplements",
+    "Acacia Gum",
     "acide folique (vitamine B9)",
-    "ail",
     "aloe vera",
     "althea root",
+    "antioxidants",
+    "artificial colors",
+    "Basil",
+    "bay leaves",
+    "Bio Perine",
+    "BioPerine",
+    "Black Soldier Fly Larva Meal",
     "bleuets",
     "botanicals (ginger root, pumpkin, turmeric, carrot, broccoli, apple, cranberry, blueberry, butternut squash, spinach, licorice root, pomegranate, peppermint leaf)",
     "botanicals (ginger root, turmeric, carrot, broccoli, apple, cranberry, blueberry, butternut squash, spinach, licorice root, pomegranate, peppermint leaf)",
-    "bovine colostrum",
     "burdock root",
     "calcium cabonate",
     "canneberges",
+    "Canola Oil (preserved With Mixed Tocopherols, A Natural Source Of Vitamin E)",
+    "Caramel",
     "carbonate de calcium",
+    "Carmel",
     "carob",
     "carob powder",
     "carottes",
+    "Cellulose Powder",
+    "cellulose powder",
+    "Chaga Mushroom",
     "chlorhydrate de glucosamine",
     "chlorhydrate de pyridoxine (vitamine B6)",
     "chlorure de choline",
     "chlorure de potassium",
     "citrus fiber",
+    "colours",
+    "copper lysine complex",
+    "COPPERAMINO ACID COMPLEX",
+    "Cumin",
+    "CUMIN",
+    "Di Calcium Phosphate",
+    "Dicacalcium Phosphate",
+    "DL-alpha tocopherol acetate (source of vitamin E)",
     "dried black soldier fly larvae",
+    "Dried Citrus Pulp",
     "dried miscanthus grass",
-    "dried porcine plasma",
+    "Dried Orange Pulp",
+    "Eucalyptus Oil",
     "farine de poulet",
     "farine d’avoine",
-    "fibre de pois",
+    "Fennel Powder",
+    "Ferrous Fumarate",
     "freeze-dried kelp",
+    "Fructooligocaccharide",
     "fructoolligosaccharide",
     "green tea",
     "green tea extract",
+    "Ground Cinnamon",
+    "Ground Cumin",
+    "Ground Fennel",
     "ground miscanthus grass",
+    "Ground Pecan Shells",
+    "Ground Peppermint",
     "herbe d’orge",
     "huile de romarin",
+    "Hydrolyzed Collagen",
+    "Hydrolyzed Collagen 120 mg",
+    "Hydrolyzed Collagen 240 mg",
     "iodate de calcium",
     "juniper berries",
     "juniper berry extract",
+    "Lemongrass Oil",
+    "lentil-free",
     "licorice",
     "licorice extract",
     "licorice root",
+    "Made in the USA",
     "magnesium",
+    "Magnesium (Magnesium Gluconate)",
+    "Marine Microalgae Oil (preserved with mixed tocopherols)",
     "marshmallow root",
     "milk thistle",
+    "Miscanthus Grass",
+    "Monodicalcium phosphate",
+    "Montmorillonite Clay",
     "orge",
+    "Papaya Powder",
+    "Par Actin",
+    "ParActin",
     "partially hydrogenated canola oil preserved with TBHQ",
     "passiflora incarnata (passion flower)",
+    "Passion Flower",
     "patates douces",
+    "Pea-free",
+    "Peppermint Leaf Powder",
+    "Peppermint Oil",
     "persil",
     "pimpinella anisum (aniseed)",
-    "pois",
+    "Poassium Chloride",
+    "Pomegranate Powder",
     "pommes de terre",
+    "Real Meat First",
+    "Reduced Iron",
+    "REDUCED IRON",
+    "Reishi Mushroom",
     "riz brun",
     "rosehip",
     "rosehips",
     "rosehips. *varied mix of raw tullibee",
+    "Rosemary Oil. 2",
     "sarsaparilla root",
     "sel",
+    "Sodium Acid Pyrophosphate",
+    "Sodium Metabisulfite (A Preservative)",
+    "Sodium Selenium",
+    "Sorbitol",
+    "Spearmint Extract. This is a naturally preserved product",
+    "Spearmint Extract. This is a naturally preserved product Manufactured in a facility that also processes grains",
+    "Spearmint Extract. This is a naturally preserved product.Manufactured in a facility that also processes grains",
+    "Spearmint Extract.This is a naturally preserved product",
+    "Spearmint Extract.This is a naturally preserved product Manufactured in a facility that also processes grains",
+    "Spearmint Oil",
     "sulfate de cuivre",
     "sulfate de fer",
     "sulfate de zinc",
+    "Sunflower Seed Lecithin",
+    "Tetra Sodium Pyrophosphate",
+    "Tetrasodium Pyrophosphate",
+    "Tocopherols (Preservative)",
+    "tocopherols (preservative)",
+    "Turmeric (spice)",
+    "Turmeric Spice",
+    "Turmeric Spice. 2",
+    "Valerian Root",
     "valeriana officinalis (valerian root)",
+    "Vitamin D3Supplement",
+    "Xanthan Gum. 2A26022",
     "xylose",
+    "Yucca Shidigera Extract",
     "zedoary",
+    "Zinc-Methionine complex",
     "β-glucans"
   ]
 }

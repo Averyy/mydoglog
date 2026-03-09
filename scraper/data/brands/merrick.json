@@ -1,0 +1,1396 @@
+{
+  "brand": "Merrick",
+  "website_url": "https://www.merrickpetcare.com",
+  "scraped_at": "2026-03-09T17:03:36.273525+00:00",
+  "scraper_version": "0.1.0",
+  "stats": {
+    "product_count": 59,
+    "by_channel": {
+      "retail": 59
+    },
+    "by_type": {
+      "food": 41,
+      "treat": 14,
+      "supplement": 4
+    }
+  },
+  "products": [
+    {
+      "name": "Limited Ingredient Diet Grain Free Real Lamb & Sweet Potato Recipe Dry Dog Food",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/shop/limited-ingredient-diet-grain-free-lamb-sweet-potato-dry-dog-food",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Limited Ingredient Diet",
+      "ingredients_raw": "Deboned Lamb, Lamb Meal, Sweet Potatoes, Potatoes, Peas, Canola Oil, Potato Protein, Pea Protein, Flaxseed, Natural Flavor, Miscanthus Grass, Dried Yeast, Potassium Chloride, Salt, Choline Chloride, MINERALS [Zinc Amino Acid Complex, Iron Amino Acid Complex, Sodium Selenite, Manganese Amino Acid Complex, Copper Amino Acid Complex, Calcium Iodate], DL-Methionine, Sunflower Oil, Taurine, VITAMINS [Vitamin E Supplement, Vitamin B-12 Supplement, Vitamin A Supplement, Niacin (Vitamin B-3), Thiamine Mononitrate (Vitamin B-1), Calcium Pantothenate (Vitamin B-5), Folic Acid (Vitamin B-9), Riboflavin Supplement (Vitamin B-2), Menadione Sodium Bisulfite Complex (Vitamin K), Pyridoxine Hydrochloride (Vitamin B-6), Biotin (Vitamin B-7), Vitamin D-3 Supplement], Mixed Tocopherols For Freshness.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 23.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 11.0,
+        "taurine_min": 0.17,
+        "omega_6_min": 1.75,
+        "omega_3_min": 0.9,
+        "glucosamine_min": 400.0,
+        "chondroitin_min": 400.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3632 kcal/kg, 450 kcal/cup",
+      "images": [
+        "/products/merrick/merrick-food-limited-ingredient-diet-grain-free-real-lamb-sweet-potato-recipe-dry-dog-food.png"
+      ]
+    },
+    {
+      "name": "Limited Ingredient Diet Grain Free Real Salmon & Sweet Potato Recipe Dry Dog Food",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/shop/limited-ingredient-diet-grain-free-salmon-sweet-potato-dry-dog-food",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Limited Ingredient Diet",
+      "ingredients_raw": "INGREDIENTS: Deboned Salmon, Salmon Meal, Brown Rice, Oat Meal, Barley, Sweet Potatoes, Canola Oil, Potato Protein, Natural Flavor, Flaxseed, Miscanthus Grass, Dried Yeast, Potassium Chloride, Salt, Choline Chloride, MINERALS [Zinc Amino Acid Complex, Iron Amino Acid Complex, Sodium Selenite, Manganese Amino Acid Complex, Copper Amino Acid Complex, Calcium Iodate], DL-Methionine, Sunflower Oil, Taurine, VITAMINS [Vitamin E Supplement, Vitamin B-12 Supplement, Vitamin A Supplement, Niacin (Vitamin B-3), Thiamine Mononitrate (Vitamin B-1), Calcium Pantothenate (Vitamin B-5), Folic Acid (Vitamin B-9), Riboflavin Supplement (Vitamin B-2), Menadione Sodium Bisulfite Complex (Vitamin K), Pyridoxine Hydrochloride (Vitamin B-6), Biotin (Vitamin B-7), Vitamin D-3 Supplement], Preserved With Mixed Tocopherols. C286524",
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 11.0,
+        "taurine_min": 0.17,
+        "omega_3_min": 0.6,
+        "chondroitin_min": 400.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3726 kcal/kg, 462 kcal/cup",
+      "images": [
+        "/products/merrick/merrick-food-limited-ingredient-diet-grain-free-real-salmon-sweet-potato-recipe-dry-dog-food.png"
+      ]
+    },
+    {
+      "name": "Limited Ingredient Diet Real Chicken & Brown Rice Recipe Dry Dog Food",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/shop/limited-ingredient-diet-chicken-brown-rice-dry-dog-food",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Limited Ingredient Diet",
+      "ingredients_raw": "Deboned chicken, chicken meal, brown rice, oat meal, barley, sweet potatoes, chicken fat, potato protein, flaxseed, natural flavor, miscanthus grass, dried yeast, potassium chloride, salt, choline chloride, MINERALS [zinc amino acid complex, iron amino acid complex, sodium selenite, manganese amino acid complex, copper amino acid complex, calcium iodate], DL-Methionine, sunflower oil, taurine, VITAMINS [Vitamin E supplement, Vitamin B-12 supplement, Vitamin A supplement, niacin (Vitamin B-3), thiamine mononitrate (Vitamin B-1), calcium pantothenate (Vitamin B-5), folic acid (Vitamin B-9), riboflavin supplement (Vitamin B-2), menadione sodium bisulfite complex (Vitamin K), pyridoxine hydrochloride (Vitamin B-6), biotin (Vitamin B-7), Vitamin D-3 supplement], preserved with mixed tocopherols. C286324",
+      "guaranteed_analysis": {
+        "crude_protein_min": 21.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 11.0,
+        "taurine_min": 0.17,
+        "omega_6_min": 2.9,
+        "omega_3_min": 0.6,
+        "glucosamine_min": 400.0,
+        "chondroitin_min": 400.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3806 kcal/kg, 472 kcal/cup",
+      "images": [
+        "/products/merrick/merrick-food-limited-ingredient-diet-real-chicken-brown-rice-recipe-dry-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Limited Ingredient Diet Real Salmon & Brown Rice Recipe Dry Dog Food",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/shop/limited-ingredient-diet-salmon-brown-rice-dry-dog-food",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Limited Ingredient Diet",
+      "ingredients_raw": "Deboned salmon, salmon meal, brown rice, oat meal, barley, sweet potatoes, canola oil, potato protein, natural flavor, flaxseed, miscanthus grass, dried yeast, potassium chloride, salt, choline chloride, MINERALS [zinc amino acid complex, iron amino acid complex, sodium selenite, manganese amino acid complex, copper amino acid complex, calcium iodate], DL-Methionine, sunflower oil, taurine, VITAMINS [Vitamin E supplement, Vitamin B-12 supplement, Vitamin A supplement, niacin (Vitamin B-3), thiamine mononitrate (Vitamin B-1), calcium pantothenate (Vitamin B-5), folic acid (Vitamin B-9), riboflavin supplement (Vitamin B-2), menadione sodium bisulfite complex (Vitamin K), pyridoxine hydrochloride (Vitamin B-6), biotin (Vitamin B-7), Vitamin D-3 supplement], preserved with mixed tocopherols. C286524",
+      "guaranteed_analysis": {
+        "crude_protein_min": 21.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 11.0,
+        "taurine_min": 0.17,
+        "omega_6_min": 2.6,
+        "omega_3_min": 1.0,
+        "glucosamine_min": 400.0,
+        "chondroitin_min": 400.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3726 kcal/kg, 462 kcal/cup",
+      "images": [
+        "/products/merrick/merrick-food-limited-ingredient-diet-real-salmon-brown-rice-recipe-dry-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Healthy Grains Real Chicken & Brown Rice Recipe Dry Dog Food",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/shop/healthy-grains-chicken-brown-rice-dry-dog-food",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Healthy Grains",
+      "ingredients_raw": "Deboned chicken, chicken meal, brown rice, barley, oat meal, turkey meal, chicken fat, salmon meal, quinoa, natural flavor, flaxseed, dried yeast, miscanthus grass, sunflower oil, potassium chloride, salt, dehydrated alfalfa meal, choline chloride, apples, carrots, MINERALS [iron amino acid complex, zinc amino acid complex, zinc sulfate, sodium selenite, manganese amino acid complex, copper amino acid complex, copper sulfate, potassium iodide, cobalt proteinate, cobalt carbonate], taurine, mixed tocopherols for freshness, salmon oil, yucca schidigera extract, VITAMINS [Vitamin E supplement, Vitamin B-12 supplement, Vitamin A supplement, calcium pantothenate (Vitamin B-5), thiamine mononitrate (Vitamin B-1), folic acid (Vitamin B-9), riboflavin supplement (Vitamin B-2), menadione sodium bisulfite complex (Vitamin K), niacin (Vitamin B-3), pyridoxine hydrochloride (Vitamin B-6), biotin (Vitamin B-7), Vitamin D-3 supplement], dried Enterococcus faecium fermentation product, dried Lactobacillus acidophilus fermentation product, dried Lactobacillus casei fermentation product, dried Lactobacillus plantarum fermentation product. F290723",
+      "guaranteed_analysis": {
+        "crude_protein_min": 27.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 3.5,
+        "moisture_max": 11.0,
+        "taurine_min": 0.17,
+        "omega_6_min": 2.6,
+        "omega_3_min": 0.3,
+        "glucosamine_min": 400.0,
+        "chondroitin_min": 400.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3660 kcal/kg, 434 kcal/cup",
+      "images": [
+        "/products/merrick/merrick-food-healthy-grains-real-chicken-brown-rice-recipe-dry-dog-food.png"
+      ]
+    },
+    {
+      "name": "Backcountry Raw Infused With Healthy Grains Pacific Catch Recipe Dry Dog Food",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/shop/backcountry-raw-infused-pacific-catch-dry-dog-food",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Backcountry",
+      "ingredients_raw": "Deboned Salmon, Salmon Meal, Brown Rice, Barley, Oat Meal, Whitefish Meal, Potato Protein, Pork Fat Preserved With Mixed Tocopherols, Natural Flavor, Potatoes, Whitefish, Flaxseed, Sunflower Oil, Miscanthus Grass, Dried Yeast, Potassium Chloride, Salt, Tapioca, Choline Chloride, MINERALS [Zinc Amino Acid Complex, Iron Amino Acid Complex, Sodium Selenite, Manganese Amino Acid Complex, Copper Amino Acid Complex, Calcium Iodate], DL-Methionine, Taurine, VITAMINS [Vitamin E Supplement, Vitamin B-12 Supplement, Vitamin A Supplement, Niacin (Vitamin B-3), Thiamine Mononitrate (Vitamin B-1), Calcium Pantothenate (Vitamin B-5), Folic Acid (Vitamin B-9), Riboflavin Supplement (Vitamin B-2), Menadione Sodium Bisulfite Complex (Vitamin K), Pyridoxine Hydrochloride (Vitamin B-6), Biotin (Vitamin B-7), Vitamin D-3 Supplement], Preserved With Mixed Tocopherols. C298025",
+      "guaranteed_analysis": {
+        "crude_protein_min": 32.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 11.0,
+        "taurine_min": 0.17,
+        "omega_3_min": 0.6,
+        "chondroitin_min": 400.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3799 kcal/kg, 477 kcal/cup",
+      "images": [
+        "/products/merrick/merrick-food-backcountry-raw-infused-with-healthy-grains-pacific-catch-recipe-dry-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Backcountry Raw Infused Puppy Recipe With Healthy Grains Dry Dog Food",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/shop/backcountry-raw-infused-healthy-grains-puppy-dry-dog-food",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Backcountry",
+      "life_stage": "puppy",
+      "ingredients_raw": "Deboned Chicken, Brown Rice, Chicken Meal, Barley, Oat Meal, Turkey Meal, Chicken Fat, Potato Protein, Salmon, Natural Flavor, Miscanthus Grass, Dried Yeast, Chicken Hearts And Livers, Salmon Oil, Tapioca Starch, Potassium Chloride, Salt, Choline Chloride, MINERALS [Zinc Amino Acid Complex, Iron Amino Acid Complex, Sodium Selenite, Manganese Amino Acid Complex, Copper Amino Acid Complex, Calcium Iodate], DL-Methionine, Sunflower Oil, Taurine, VITAMINS [Vitamin E Supplement, Vitamin B-12 Supplement, Vitamin A Supplement, Niacin (Vitamin B-3), Thiamine Mononitrate (Vitamin B-1), Calcium Pantothenate (Vitamin B-5), Folic Acid (Vitamin B-9), Riboflavin Supplement (Vitamin B-2), Menadione Sodium Bisulfite Complex (Vitamin K), Pyridoxine Hydrochloride (Vitamin B-6), Biotin (Vitamin B-7), Vitamin D-3 Supplement], Mixed Tocopherols For Freshness.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 3.5,
+        "moisture_max": 11.0,
+        "dha_min": 0.03,
+        "omega_6_min": 2.6,
+        "omega_3_min": 0.3,
+        "glucosamine_min": 400.0,
+        "chondroitin_min": 400.0,
+        "taurine_min": 0.17
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3764 kcal/kg, 480 kcal/cup",
+      "images": [
+        "/products/merrick/merrick-food-backcountry-raw-infused-puppy-recipe-with-healthy-grains-dry-dog-food.png"
+      ]
+    },
+    {
+      "name": "Backcountry Raw Infused Big Game Recipe Grain Free Dry Dog Food",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/shop/backcountry-raw-infused-big-game-dry-dog-food",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Backcountry",
+      "ingredients_raw": "Deboned Lamb, Chicken Meal, Turkey Meal, Sweet Potatoes, Potatoes, Peas, Pea Protein, Chicken Fat, Natural Flavor, Venison, Beef, Flaxseed, Beef Liver, Dried Yeast, Tapioca, Potassium Chloride, Salt, Choline Chloride, Minerals (Zinc Amino Acid Complex, Iron Amino Acid Complex, Sodium Selenite, Manganese Amino Acid Complex, Copper Amino Acid Complex, Calcium Iodate), DL-Methionine, Taurine, Vitamins (Vitamin E Supplement, Vitamin B12 Supplement, Vitamin A Supplement, Niacin, Thiamine Mononitrate, Riboflavin Supplement, d-Calcium Pantothenate, Folic Acid, Menadione Sodium Bisulfite Complex, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement), Mixed Tocopherols For Freshness. 2C37078",
+      "guaranteed_analysis": {
+        "crude_protein_min": 34.0,
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 3.5,
+        "taurine_min": 0.17,
+        "omega_6_min": 2.3,
+        "omega_3_min": 0.3,
+        "glucosamine_min": 400.0,
+        "chondroitin_min": 400.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3690 kcal/kg, 392 kcal/cup",
+      "images": [
+        "/products/merrick/merrick-food-backcountry-raw-infused-big-game-recipe-grain-free-dry-dog-food.png"
+      ]
+    },
+    {
+      "name": "Power Bites Real Chicken Recipe Dog Treats",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/shop/power-bites-chicken-dog-treats",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Power Bites",
+      "ingredients_raw": "Deboned chicken, peas, potatoes, potato protein, potato starch, glycerin, brown sugar, cane molasses, flaxseed, lecithin, dried cultured whey, salt, pea fiber, citric acid, vinegar, potassium chloride, natural smoke flavor, mixed tocopherols for freshness, apples, carrots, blueberries.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 11.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 32.0,
+        "omega_3_min": 0.25,
+        "omega_6_min": 0.25
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "2868 kcal/kg, 5.40 kcal/treat",
+      "images": [
+        "/products/merrick/merrick-treat-power-bites-real-chicken-recipe-dog-treats.jpg"
+      ]
+    },
+    {
+      "name": "Backcountry Raw Infused Great Plains Red Recipe Grain Free Dry Dog Food",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/shop/backcountry-raw-infused-great-plains-red-grain-free-dry-dog-food",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Backcountry",
+      "ingredients_raw": "Deboned Beef, Pork and Bone Meal, Salmon Meal, Sweet Potatoes, Potatoes, Peas, Pea Protein, Natural Flavor, Pork Fat, Potato Protein, Lamb, Sunflower Oil, Beef Liver, Flaxseed, Tapioca, Dried Yeast, Potassium Chloride, Salt, Choline Chloride, MINERALS (Zinc Amino Acid Complex, Iron Amino Acid Complex, Sodium Selenite, Manganese Amino Acid Complex, Copper Amino Acid Complex, Calcium Iodate), DL-Methionine, Taurine, Mixed Tocopherols for freshness, VITAMINS (Vitamin E Supplement, Vitamin B12 Supplement, Vitamin A Supplement, Niacin, Thiamine Mononitrate, Riboflavin Supplement, D-Calcium Pantothenate, Folic Acid, Menadione Sodium Bisulfite Complex, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement)",
+      "guaranteed_analysis": {
+        "crude_protein_min": 35.0,
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 3.5,
+        "moisture_max": 11.0,
+        "omega_6_min": 2.3,
+        "omega_3_min": 0.3,
+        "glucosamine_min": 400.0,
+        "chondroitin_min": 400.0,
+        "taurine_min": 0.17
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3710 kcal/kg, 394 kcal/cup",
+      "images": [
+        "/products/merrick/merrick-food-backcountry-raw-infused-great-plains-red-recipe-grain-free-dry-dog-food.png"
+      ]
+    },
+    {
+      "name": "Backcountry Raw Infused Large Breed Grain Free Dry Dog Food",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/shop/backcountry-raw-infused-large-breed-dry-dog-food",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Backcountry",
+      "breed_size": "large",
+      "ingredients_raw": "Deboned Chicken, Chicken Meal, Turkey Meal, Sweet Potatoes, Peas, Potatoes, Pea Protein, Chicken Fat, Natural Flavor, Lamb, Miscanthus Grass, Dried Yeast, Flaxseed, Tapioca Starch, Chicken Livers, Potassium Chloride, Salt, Chicken Hearts, Choline Chloride, MINERALS [Zinc Amino Acid Complex, Iron Amino Acid Complex, Sodium Selenite, Manganese Amino Acid Complex, Copper Amino Acid Complex, Calcium Iodate], Salmon Oil, DL-Methionine, Sunflower Oil, Taurine, VITAMINS [Vitamin E Supplement, Vitamin B-12 Supplement, Vitamin A Supplement, Niacin (Vitamin B-3), Thiamine Mononitrate (Vitamin B-1), Calcium Pantothenate (Vitamin B-5), Folic Acid (Vitamin B-9), Riboflavin Supplement (Vitamin B-2), Menadione Sodium Bisulfite Complex (Vitamin K), Pyridoxine Hydrochloride (Vitamin B-6), Biotin (Vitamin B-7), Vitamin D-3 Supplement], Gelatin, Mixed Tocopherols For Freshness.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 34.0,
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 3.5,
+        "taurine_min": 0.17,
+        "omega_6_min": 2.3,
+        "omega_3_min": 0.3,
+        "glucosamine_min": 400.0,
+        "chondroitin_min": 400.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3704 kcal/kg, 459 kcal/cup",
+      "images": [
+        "/products/merrick/merrick-food-backcountry-raw-infused-large-breed-grain-free-dry-dog-food.png"
+      ]
+    },
+    {
+      "name": "Backcountry Raw Infused Puppy Recipe Grain Free Dry Dog Food",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/shop/backcountry-raw-infused-puppy-dry-dog-food",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Backcountry",
+      "life_stage": "puppy",
+      "ingredients_raw": "Deboned Chicken, Chicken Meal, Sweet Potatoes, Potatoes, Turkey Meal, Peas, Chicken Fat, Pea Protein, Salmon, Natural Flavor, Miscanthus Grass, Dried Yeast, Chicken Hearts And Livers, Salmon Oil, Flaxseed, Tapioca Starch, Potassium Chloride, Salt, Choline Chloride, MINERALS [Zinc Amino Acid Complex, Iron Amino Acid Complex, Sodium Selenite, Manganese Amino Acid Complex, Copper Amino Acid Complex, Calcium Iodate], DL-Methionine, Sunflower Oil, Taurine, VITAMINS [Vitamin E Supplement, Vitamin B-12 Supplement, Vitamin A Supplement, Niacin (Vitamin B-3), Thiamine Mononitrate (Vitamin B-1), Calcium Pantothenate (Vitamin B-5), Folic Acid (Vitamin B-9), Riboflavin Supplement (Vitamin B-2), Menadione Sodium Bisulfite Complex (Vitamin K), Pyridoxine Hydrochloride (Vitamin B-6), Biotin (Vitamin B-7), Vitamin D-3 Supplement], Mixed Tocopherols For Freshness.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 3.5,
+        "moisture_max": 11.0,
+        "dha_min": 0.03,
+        "taurine_min": 0.17,
+        "omega_6_min": 2.8,
+        "omega_3_min": 0.3,
+        "glucosamine_min": 400.0,
+        "chondroitin_min": 400.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3626 kcal/kg, 462 kcal/cup",
+      "images": [
+        "/products/merrick/merrick-food-backcountry-raw-infused-puppy-recipe-grain-free-dry-dog-food.png"
+      ]
+    },
+    {
+      "name": "Slow-Cooked BBQ Kansas City Style with Chopped Pork Wet Dog Food",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/shop/slow-cooked-bbq-kansas-city-style-chopped-pork-wet-dog-food",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Slow-Cooked BBQ",
+      "ingredients_raw": "Deboned Pork, Beef Broth, Vegetable Broth, Pork Liver, Dried Egg Product, Potatoes, Carrots, Natural Porcine Flavor, Potato Starch, Guar Gum, Calcium Carbonate, Dried Tomato, Salt, Sunflower Oil, Fruit Juice Color, Sodium Phosphate, Potassium Chloride, Cane Molasses, Fish Oil (Preserved With Mixed Tocopherols), Flaxseed Oil, Natural Smoke Flavor, MINERALS [Zinc Proteinate, Iron Proteinate, Copper Proteinate, Cobalt Proteinate, Manganese Proteinate, Sodium Selenite, Potassium Iodide], Apple Cider vinegar, VITAMINS [Vitamin E Supplement, Thiamine Mononitrate (Vitamin B-1), Niacin Supplement (Vitamin B-3), Calcium Pantothenate (Vitamin B-5), Vitamin A Supplement (Vitamin B-2), Riboflavin Supplement (Vitamin B-2), Biotin (Vitamin B-7), Vitamin B-12 Supplement, Pyridoxine Hydrochloride (Vitamin B-6), Vitamin D-3 Supplement, Folic Acid (Vitamin B-9)], Choline Chloride, Magnesium Sulfate.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 1.5,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "812 kcal/kg, 292 kcal/can",
+      "images": [
+        "/products/merrick/merrick-food-slow-cooked-bbq-kansas-city-style-with-chopped-pork-wet-dog-food.png"
+      ]
+    },
+    {
+      "name": "Slow-Cooked BBQ Memphis Style with Glazed Chicken Wet Dog Food",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/shop/slow-cooked-bbq-memphis-style-glazed-chicken-wet-dog-food",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Slow-Cooked BBQ",
+      "ingredients_raw": "Deboned Chicken, Chicken Broth, Turkey Broth, Potatoes, Spinach, Dried Egg Product, Natural Flavor, Potato Starch, Guar Gum, Salt, Dried Tomato, Fruit Juice Color, Sunflower Oil, Fish Oil (Preserved With Mixed Tocopherols), Sodium Phosphate, Calcium Carbonate, Potassium Chloride, Natural Smoke Flavor, MINERALS [Zinc Proteinate, Iron Proteinate, Copper Proteinate, Cobalt Proteinate, Manganese Proteinate, Sodium Selenite, Potassium Iodide], VITAMINS [Vitamin E Supplement, Thiamine Mononitrate (Vitamin B-1), Niacin Supplement (Vitamin B-3),Calcium Pantothenate (Vitamin B-5), Vitamin A Supplement, Riboflavin Supplement (Vitamin B-2), Biotin (Vitamin B-7), Vitamin B-12 Supplement, Pyridoxine Hydrochloride (Vitamin B-6), Vitamin D-3 Supplement, Folic Acid (Vitamin B-9)], Cane Molasses, Cumin, Choline Chloride, Magnesium Sulfate.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 2.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1005 kcal/kg, 361 kcal/can",
+      "images": [
+        "/products/merrick/merrick-food-slow-cooked-bbq-memphis-style-with-glazed-chicken-wet-dog-food.png"
+      ]
+    },
+    {
+      "name": "Grain Free Chicken Bone Broth",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/shop/grain-free-chicken-broth-dog-cat-food-topper",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "sub_brand": "Bone Broth",
+      "ingredients_raw": "Chicken Bone Broth, Sweet Potato, Apple, Parsley, Turmeric (spice)",
+      "guaranteed_analysis": {
+        "crude_protein_min": 3.0,
+        "crude_fat_min": 0.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 97.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "images": [
+        "/products/merrick/merrick-supplement-grain-free-chicken-bone-broth.png"
+      ],
+      "calorie_content": "110 kcal/kg, 26 kcal/cup"
+    },
+    {
+      "name": "Grain Free Turkey Bone Broth",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/shop/grain-free-turkey-bone-broth-dog-cat-food-topper",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "sub_brand": "Bone Broth",
+      "ingredients_raw": "Turkey Bone Broth, Pumpkin, Cranberries, Parsley, Ginger",
+      "guaranteed_analysis": {
+        "crude_protein_min": 3.0,
+        "crude_fat_min": 0.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 97.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "images": [
+        "/products/merrick/merrick-supplement-grain-free-turkey-bone-broth.png"
+      ],
+      "calorie_content": "110 kcal/kg, 26 kcal/cup"
+    },
+    {
+      "name": "Power Bites Real Salmon Recipe Dog Treats",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/shop/power-bites-salmon-dog-treats",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Power Bites",
+      "ingredients_raw": "Salmon, Peas, Potatoes, Potato Protein, Potato Starch, Vegetable Glycerin, Brown Sugar, Cane Molasses, Flaxseed, Lecithin, Dried Cultured Whey, Salt, Pea Fiber, Citric Acid (A Preservative), Vinegar, Potassium Chloride, Natural Smoke Flavor, Mixed Tocopherols For Freshness, Carrots, Apples, Blueberries.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 11.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 32.0,
+        "omega_3_min": 0.25,
+        "omega_6_min": 0.25
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3008 kcal/kg, 5.70 kcal/treat",
+      "images": [
+        "/products/merrick/merrick-treat-power-bites-real-salmon-recipe-dog-treats.jpg"
+      ]
+    },
+    {
+      "name": "Slow-Cooked BBQ Kentucky Style with Chopped Lamb Wet Dog Food",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/shop/slow-cooked-bbq-kentucky-style-chopped-lamb-wet-dog-food",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Slow-Cooked BBQ",
+      "ingredients_raw": "Deboned Lamb, Beef Broth, Chicken Broth, Chicken, Red Peppers, Potatoes, Dried Egg Product, Natural Flavor, Potato Starch, Guar Gum, Salt, Dried Tomato, Fruit Juice Color, Sodium Phosphate, Sunflower Oil, Potassium Chloride, Natural Smoke Flavor, MINERALS [Zinc Proteinate, Iron Proteinate, Copper Proteinate, Cobalt Proteinate, Manganese Proteinate, Sodium Selenite, Potassium Iodide], Apple Cider Vinegar, VITAMINS [Vitamin E Supplement, Thiamine Mononitrate (Vitamin B-1), Niacin Supplement (Vitamin B-3), Calcium Pantothenate (Vitamin B-5), Vitamin A Supplement, Riboflavin Supplement (Vitamin B-2), Biotin (Vitamin B-7), Vitamin B-12 Supplement, Pyridoxine Hydrochloride (Vitamin B-6), Vitamin D-3 Supplement, Folic Acid (Vitamin B-9)], Rosemary, Sage, Thyme, Magnesium Sulfate, Choline Chloride, Calcium Carbonate.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1126 kcal/kg, 405 kcal/can",
+      "images": [
+        "/products/merrick/merrick-food-slow-cooked-bbq-kentucky-style-with-chopped-lamb-wet-dog-food.png"
+      ]
+    },
+    {
+      "name": "Healthy Grains Real Salmon & Brown Rice Recipe Dry Dog Food",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/shop/healthy-grains-salmon-dry-dog-food",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Healthy Grains",
+      "ingredients_raw": "Deboned Salmon, Chicken Meal, Brown Rice, Turkey Meal, Oat Meal, Barley, Chicken Fat, Flaxseed, Quinoa, Natural Flavor, Dried Yeast, Miscanthus Grass, Sunflower Oil, Potassium Chloride, Salt, Apples, Carrots, Alfalfa Meal, Choline Chloride, MINERALS [Iron Amino Acid Complex, Zinc Amino Acid Complex, Zinc Sulfate, Sodium Selenite, Manganese Amino Acid Complex, Copper Amino Acid Complex, Copper Sulfate, Potassium Iodide, Cobalt Proteinate, Cobalt Carbonate], Taurine, Mixed Tocopherols For Freshness, Salmon Oil, Yucca Schidigera Extract, VITAMINS [Vitamin E Supplement, Vitamin B-12 Supplement, Calcium Pantothenate (Vitamin B-5), Vitamin A Supplement, Thiamine Mononitrate (Vitamin B-1), Folic Acid (Vitamin B-9), Riboflavin Supplement (Vitamin B-2), Niacin (Vitamin B-3), Menadione Sodium Bisulfite Complex (Vitamin K), Pyridoxine Hydrochloride (Vitamin B-6), Biotin (Vitamin B-7), Vitamin D-3 Supplement], Rosemary Extract, Dried Enterococcus Faecium Fermentation Product, Dried Lactobacillus Acidophilus Fermentation Product, Dried Lactobacillus Casei Fermentation Product, Dried Lactobacillus Plantarum Fermentation Product.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 3.5,
+        "moisture_max": 11.0,
+        "taurine_min": 0.17,
+        "omega_6_min": 2.6,
+        "omega_3_min": 0.3,
+        "glucosamine_min": 400.0,
+        "chondroitin_min": 400.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3848 kcal/kg, 477 kcal/cup",
+      "images": [
+        "/products/merrick/merrick-food-healthy-grains-real-salmon-brown-rice-recipe-dry-dog-food.png"
+      ]
+    },
+    {
+      "name": "Kitchen Comforts Chicken Casserole",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/shop/kitchen-comforts-chicken-casserole-wet-dog-food",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Healthy Grains",
+      "ingredients_raw": "Deboned Chicken, Chicken Broth, Dried Egg Product, Brown Rice, Carrots, Green Beans, Sweet Potatoes, Natural Flavor, Agar-Agar, Guar Gum, Pea Protein, Salt, Ground Flaxseed, Potassium chloride, sodium phosphate, MINERALS [Zinc Proteinate, Iron Proteinate, Cobalt Proteinate, Copper Proteinate, Manganese Proteinate, Sodium Selenite, Potassium Iodide], Magnesium Sulfate, VITAMINS [Vitamin E Supplement, Thiamine Mononitrate (Vitamin B-1), Niacin Supplement (Vitamin B-3), Calcium Pantothenate (Vitamin B-5), Vitamin A Supplement, Pyridoxine Hydrochloride (Vitamin B-6), Riboflavin Supplement (Vitamin B-2), Biotin (Vitamin B-7), Vitamin B-12 Supplement, Vitamin D-3 Supplement, Folic Acid (Vitamin B-9)], Fish Oil (Preserved With Mixed Tocopherols), Calcium Carbonate, Choline Chloride, Rosemary, Sage, Thyme, Flaxseed Oil.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1162 kcal/kg, 418 kcal/can",
+      "images": [
+        "/products/merrick/merrick-food-kitchen-comforts-chicken-casserole.png"
+      ]
+    },
+    {
+      "name": "Kitchen Comforts Lamb Shepherd's Pie",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/shop/kitchen-comforts-lamb-shepherds-pie-wet-dog-food",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Healthy Grains",
+      "ingredients_raw": "Deboned Lamb, Beef Broth, Vegetable Broth, Beef, Brown Rice, Carrots, Green Peas, Potatoes, Natural Flavor, Dried Egg Product, Potato Starch, Salt, Guar Gum, Fruit Juice Color, Sodium Phosphate, Sunflower Oil, Calcium Carbonate, Potassium Chloride, MINERALS [Zinc Proteinate, Iron Proteinate, Cobalt Proteinate, Copper Proteinate, Manganese Proteinate, Sodium Selenite, Potassium Iodide], VITAMINS [Vitamin E Supplement, Thiamine Mononitrate (Vitamin B-1), Niacin Supplement (Vitamin B-3), Calcium Pantothenate (Vitamin B-5), Vitamin A Supplement, Pyridoxine Hydrochloride (Vitamin B-6), Riboflavin Supplement (Vitamin B-2), Biotin (Vitamin B-7), Vitamin B-12 Supplement, Vitamin D-3 Supplement, Folic Acid (Vitamin B-9)], Magnesium Sulfate, Flaxseed Oil, Fish Oil (Preserved With Mixed Tocopherols), Rosemary, Sage, Thyme, Choline Chloride, Xanthan Gum.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1114 kcal/kg, 401 kcal/can",
+      "images": [
+        "/products/merrick/merrick-food-kitchen-comforts-lamb-shepherd-s-pie.png"
+      ]
+    },
+    {
+      "name": "Kitchen Comforts Turkey Meatloaf",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/shop/kitchen-comforts-turkey-meatloaf-wet-dog-food",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Healthy Grains",
+      "ingredients_raw": "Deboned Turkey, Turkey Broth, Vegetable Broth, Chicken, Brown Rice, Carrots, Green Beans, Natural Flavor, Dried Egg Product, Tomato Powder, Potato Starch, Salt, Guar Gum, Fruit Juice Color, Sodium Phosphate, Potassium Chloride, Calcium Carbonate, MINERALS [Zinc Proteinate, Iron Proteinate, Cobalt Proteinate, Copper Proteinate, Manganese Proteinate, Sodium Selenite, Potassium Iodide], VITAMINS [Vitamin E Supplement, Thiamine Mononitrate (Vitamin B-1), Niacin Supplement (Vitamin B-3), Calcium Pantothenate (Vitamin B-5), Vitamin A Supplement, Pyridoxine Hydrochloride (Vitamin B-6), Riboflavin Supplement (Vitamin B-2), Biotin (Vitamin B-7), Vitamin B-12 Supplement, Vitamin D-3 Supplement, Folic Acid (Vitamin B-9)], Cumin, Flaxseed Oil, Choline Chloride, Xanthan Gum, Rosemary, Sage, Thyme, Magnesium Sulfate.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 4.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1013 kcal/kg, 364 kcal/can",
+      "images": [
+        "/products/merrick/merrick-food-kitchen-comforts-turkey-meatloaf.png"
+      ]
+    },
+    {
+      "name": "Lil' Plates Petite Pates Chicken Dinner Recipe Wet Dog Food",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/shop/lil-plates-petite-pates-chicken-wet-dog-food",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Lil' Plates",
+      "breed_size": "small",
+      "ingredients_raw": "Deboned Chicken, Chicken Broth, Chicken Liver, Carrots, Green Beans, Dried Egg Product, Natural Flavor, Flaxseed Oil, Choline Chloride, Potassium Chloride, Salt, Guar Gum, Vitamins (Vitamin E Supplement, Vitamin B12 Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Niacin, Vitamin D3 Supplement, Riboflavin Supplement, Folic Acid, Pyridoxine Hydrochloride, Biotin, Thiamine Mononitrate), Minerals (Zinc Amino Acid Complex, Iron Amino Acid Complex, Manganese Amino Acid Complex, Copper Amino Acid Complex, Potassium Iodate, Cobalt Glucoheptonate, Sodium Selenite), Xanthan Gum, Taurine, Rosemary, Sage, Thyme.",
+      "calorie_content": "1184 kcal/kg, 101 kcal/can",
+      "images": [
+        "/products/merrick/merrick-food-lil-plates-petite-pates-chicken-dinner-recipe-wet-dog-food.jpg"
+      ],
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 6.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed"
+    },
+    {
+      "name": "Lil' Plates Petite Pate Lamb Dinner Wet Dog Food",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/shop/lil-plates-petite-pates-lamb-wet-dog-food",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Lil' Plates",
+      "breed_size": "small",
+      "ingredients_raw": "Deboned Lamb, Beef Broth, Beef Liver, Dried Egg Product, Carrots, Green Beans, Natural Flavor, Flaxseed Oil, Choline Chloride, Potassium Chloride, Magnesium Sulfate, Salt, Guar Gum, Vitamins (Vitamin E Supplement, Vitamin B12 Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Niacin, Vitamin D3 Supplement, Riboflavin Supplement, Folic Acid, Pyridoxine Hydrochloride, Biotin, Thiamine Mononitrate), Minerals (Zinc Amino Acid Complex, Iron Amino Acid Complex, Manganese Amino Acid Complex, Copper Amino Acid Complex, Potassium Iodate, Cobalt Glucoheptonate, Sodium Selenite), Cumin, Xanthan Gum, Cinnamon, Taurine.",
+      "calorie_content": "1320 kcal/kg, 112 kcal/can",
+      "images": [
+        "/products/merrick/merrick-food-lil-plates-petite-pate-lamb-dinner-wet-dog-food.jpg"
+      ],
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.0,
+        "crude_fat_min": 6.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed"
+    },
+    {
+      "name": "Lil' Plates Petite Pate Turkey Dinner Wet Dog Food",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/shop/lil-plates-petite-pates-turkey-wet-dog-food",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Lil' Plates",
+      "breed_size": "small",
+      "ingredients_raw": "Deboned Turkey, Turkey Broth, Deboned Chicken, Turkey Liver, Carrots, Green Beans, Dried Egg Product, Natural Flavor, Flaxseed Oil, Salt, Choline Chloride, Potassium Chloride, Guar Gum, Magnesium Sulfate, Vitamins (Vitamin E Supplement, Vitamin B12 Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Niacin, Vitamin D3 Supplement, Riboflavin Supplement, Folic Acid, Pyridoxine Hydrochloride, Biotin, Thiamine Mononitrate), Xanthan Gum, Minerals (Zinc Amino Acid Complex, Iron Amino Acid Complex, Manganese Amino Acid Complex, Copper Amino Acid Complex, Potassium Iodate, Cobalt Glucoheptonate, Sodium Selenite), Taurine, Rosemary, Sage, Thyme.",
+      "calorie_content": "1266 kcal/kg, 108 kcal/can",
+      "images": [
+        "/products/merrick/merrick-food-lil-plates-petite-pate-turkey-dinner-wet-dog-food.jpg"
+      ],
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 6.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed"
+    },
+    {
+      "name": "Lil' Plates Grain Free Tiny Thanksgiving Day Dinner",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/shop/lil-plates-grain-free-tiny-thanksgiving-dinner-wet-dog-food",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Lil' Plates",
+      "breed_size": "small",
+      "ingredients_raw": "DEBONED TURKEY, TURKEY BROTH, CHICKEN BROTH, CHICKEN LIVER, DEBONED CHICKEN, DRIED EGG WHITES, POTATO STARCH, SWEET POTATOES, CARROTS, GREEN BEANS, APPLES, PEAS, POTATOES, GUAR GUM, TRICALCIUM PHOSPHATE, SUNFLOWER OIL, SODIUM PHOSPHATE, SALT, NATURAL FLAVOR, POTASSIUM CHLORIDE, MINERALS (ZINC AMINO ACID CHELATE, IRON AMINO ACID CHELATE, COPPER AMINO ACID CHELATE, MANGANESE AMINO ACID CHELATE, SODIUM SELENITE, COBALT AMINO ACID CHELATE, POTASSIUM IODIDE), VITAMINS (VITAMIN E SUPPLEMENT, THIAMINE MONONITRATE, NIACIN SUPPLEMENT, d-CALCIUM PANTOTHENATE, VITAMIN A SUPPLEMENT, RIBOFLAVIN SUPPLEMENT, BIOTIN, VITAMIN B12 SUPPLEMENT, PYRIDOXINE HYDROCHLORIDE,( VITAMIN B6), VITAMIN D3 SUPPLEMENT, FOLIC ACID), CHOLINE CHLORIDE, XANTHAN GUM.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 3.5,
+        "crude_fiber_max": 1.4,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "969 kcal/kg",
+      "images": [
+        "/products/merrick/merrick-food-lil-plates-grain-free-tiny-thanksgiving-day-dinner.png"
+      ]
+    },
+    {
+      "name": "Healthy Bites Grain Free Dog Treats, Soft Treats With Bone Broth for Dogs, Beef And Bone Broth Recipe",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/shop/healthy-bites-bone-broth-beef-dog-treats",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "sub_brand": "Healthy Bites",
+      "ingredients_raw": "Deboned Beef, Potatoes, Pea Fiber, Potato Protein, Potato Starch, Glycerin, Cane Sugar, Molasses, Dried Beef Bone Broth, Pumpkin, Lecithin, Dried Cultured Whey, Salt, Vitamin E Supplement, Citric Acid, Vinegar, Natural Hickory Smoke Flavor, Zinc Proteinate, Cinnamon, Turmeric, Blueberries, Preserved With Mixed Tocopherols. A277024",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.0,
+        "crude_fat_min": 2.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 28.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "2855 kcal/kg, 10 kcal/treat",
+      "images": [
+        "/products/merrick/merrick-supplement-healthy-bites-grain-free-dog-treats-soft-treats-with-bone-broth-for-dogs-beef-an.png"
+      ]
+    },
+    {
+      "name": "Healthy Bites Grain Free Dog Treats, Soft Treats With Bone Broth for Dogs, Chicken And Bone Broth Recipe",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/shop/healthy-bites-bone-broth-chicken-dog-treats",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "sub_brand": "Healthy Bites",
+      "ingredients_raw": "Deboned Chicken, Potatoes, Pea Fiber, Potato Protein, Potato Starch, Glycerin, Cane Sugar, Molasses, Chicken Bone Broth, Pumpkin, Lecithin, Dried Cultured Whey, Salt, Vitamin E Supplement, Citric Acid, Vinegar, Natural Hickory Smoke Flavor, Zinc Proteinate, Turmeric, Cinnamon, Blueberries, Preserved With Mixed Tocopherols. A276924",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 2.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 28.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "2886 kcal/kg, 9 kcal/treat",
+      "images": [
+        "/products/merrick/merrick-supplement-healthy-bites-grain-free-dog-treats-soft-treats-with-bone-broth-for-dogs-chicken.png"
+      ]
+    },
+    {
+      "name": "Lil' Plates Small Surfin' + Turfin' Supper in Gravy",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/shop/lil-plates-small-surfin-turfin-supper-wet-dog-food",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Lil' Plates",
+      "breed_size": "small",
+      "ingredients_raw": "BEEF, BEEF BROTH, SALMON BROTH, BEEF LIVER, GREEN BEANS, DRIED EGG WHITES, SALMON, POTATO STARCH, GUAR GUM, SUNFLOWER OIL, SODIUM PHOSPHATE, SALT, NATURAL FLAVOR, CALCIUM CARBONATE, POTASSIUM CHLORIDE, MINERALS (ZINC AMINO ACID CHELATE, IRON AMINO ACID CHELATE, COPPER AMINO ACID CHELATE, MANGANESE AMINO ACID CHELATE, SODIUM SELENITE, COBALT AMINO ACID CHELATE, POTASSIUM IODIDE), CHOLINE CHLORIDE, VITAMINS (THIAMINE MONONITRATE, VITAMIN E SUPPLEMENT, NIACIN SUPPLEMENT, d-CALCIUM PANTOTHENATE, VITAMIN A SUPPLEMENT, RIBOFLAVIN SUPPLEMENT, BIOTIN, VITAMIN B12 SUPPLEMENT, PYRIDOXINE HYDROCHLORIDE, VITAMIN D3 SUPPLEMENT, FOLIC ACID), CINNAMON, CUMIN, XANTHAN GUM.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.5,
+        "crude_fat_min": 3.5,
+        "crude_fiber_max": 1.4,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "895 kcal/kg, 89 kcal/pouch",
+      "images": [
+        "/products/merrick/merrick-food-lil-plates-small-surfin-turfin-supper-in-gravy.png"
+      ]
+    },
+    {
+      "name": "Fresh Kisses Infused With Coconut Oil + Botanical Oils - For Extra Small Dogs (5-15 Lbs) Dog Dental Chews",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/shop/fresh-kisses-coconut-botanical-oils-extra-small-dog-dental-treats",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Fresh Kisses",
+      "ingredients_raw": "Tapioca Starch, Pea Starch, Vegetable Glycerin, Water, Gelatin, Natural Flavor, Fruit Juice Color, Coconut Oil, Sunflower Seed Lecithin, Turmeric Spice, Peppermint Oil, Lemongrass Oil, Rosemary Oil. 2",
+      "guaranteed_analysis": {
+        "crude_protein_min": 13.0,
+        "crude_fat_min": 0.5,
+        "crude_fiber_max": 2.5,
+        "moisture_max": 18.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3900 kcal/kg, 34 kcal/treat",
+      "images": [
+        "/products/merrick/merrick-treat-fresh-kisses-infused-with-coconut-oil-botanical-oils-for-extra-small-dogs-5-15-l.png"
+      ]
+    },
+    {
+      "name": "Fresh Kisses Infused With Coconut Oil + Botanical Oils - For Small Dogs (15-25 Lbs) Dog Dental Chews",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/shop/fresh-kisses-coconut-botanical-oils-for-small-dog-dental-treats",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Fresh Kisses",
+      "ingredients_raw": "Tapioca Starch, Pea Starch, Vegetable Glycerin, Water, Gelatin, Natural Flavor, Fruit Juice Color, Coconut Oil, Sunflower Seed Lecithin, Turmeric Spice, Peppermint Oil, Lemongrass Oil, Rosemary Oil. 2",
+      "guaranteed_analysis": {
+        "crude_protein_min": 13.0,
+        "crude_fat_min": 0.5,
+        "crude_fiber_max": 2.5,
+        "moisture_max": 18.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3900 kcal/kg, 71 kcal/treat",
+      "images": [
+        "/products/merrick/merrick-treat-fresh-kisses-infused-with-coconut-oil-botanical-oils-for-small-dogs-15-25-lbs-do.png"
+      ]
+    },
+    {
+      "name": "Fresh Kisses Infused With Coconut Oil + Botanical Oils - For Large Dogs (50+ Lbs) Dog Dental Chews",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/shop/fresh-kisses-coconut-botanical-oils-large-dog-dental-treats",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Fresh Kisses",
+      "ingredients_raw": "Tapioca Starch, Pea Starch, Vegetable Glycerin, Water, Gelatin, Natural Flavor, Fruit Juice Color, Coconut Oil, Sunflower Seed Lecithin, Turmeric Spice, Peppermint Oil, Lemongrass Oil, Rosemary Oil. 2",
+      "guaranteed_analysis": {
+        "crude_protein_min": 13.0,
+        "crude_fat_min": 0.5,
+        "crude_fiber_max": 2.5,
+        "moisture_max": 18.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3900 kcal/kg, 186 kcal/treat",
+      "images": [
+        "/products/merrick/merrick-treat-fresh-kisses-infused-with-coconut-oil-botanical-oils-for-large-dogs-50-lbs-dog-d.png"
+      ]
+    },
+    {
+      "name": "Fresh Kisses Infused With Coconut Oil + Botanical Oils - For Medium Dogs (25-50 Lbs) Dog Dental Chews",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/shop/fresh-kisses-coconut-botanical-oils-medium-dog-dental-treats",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Fresh Kisses",
+      "ingredients_raw": "Tapioca Starch, Pea Starch, Vegetable Glycerin, Water, Gelatin, Natural Flavor, Fruit Juice Color, Coconut Oil, Sunflower Seed Lecithin, Turmeric Spice, Peppermint Oil, Lemongrass Oil, Rosemary Oil. 2",
+      "guaranteed_analysis": {
+        "crude_protein_min": 13.0,
+        "crude_fat_min": 0.5,
+        "crude_fiber_max": 2.5,
+        "moisture_max": 18.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3900 kcal/kg, 111 kcal/treat",
+      "images": [
+        "/products/merrick/merrick-treat-fresh-kisses-infused-with-coconut-oil-botanical-oils-for-medium-dogs-25-50-lbs-d.png"
+      ]
+    },
+    {
+      "name": "Fresh Kisses Infused With Mint - For Extra Small Dogs (5-15 Lbs) Dog Dental Chews",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/shop/fresh-kisses-mint-extra-small-dog-dental-treats",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Fresh Kisses",
+      "ingredients_raw": "Tapioca Starch, Pea Starch, Vegetable Glycerin, Water, Gelatin, Natural Flavor, Sunflower Seed Lecithin, Peppermint, Spearmint Oil, Turmeric Spice. 2",
+      "guaranteed_analysis": {
+        "crude_protein_min": 13.0,
+        "crude_fat_min": 0.5,
+        "crude_fiber_max": 2.5,
+        "moisture_max": 18.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3900 kcal/kg, 34 kcal/treat",
+      "images": [
+        "/products/merrick/merrick-treat-fresh-kisses-infused-with-mint-for-extra-small-dogs-5-15-lbs-dog-dental-chews.png"
+      ]
+    },
+    {
+      "name": "Fresh Kisses Infused With Mint - For Small Dogs (15-25 Lbs) Dog Dental Chews",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/shop/fresh-kisses-mint-small-dog-dental-treats",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Fresh Kisses",
+      "ingredients_raw": "Tapioca Starch, Pea Starch, Vegetable Glycerin, Water, Gelatin, Natural Flavor, Sunflower Seed Lecithin, Peppermint, Spearmint Oil, Turmeric Spice. 2",
+      "guaranteed_analysis": {
+        "crude_protein_min": 13.0,
+        "crude_fat_min": 0.5,
+        "crude_fiber_max": 2.5,
+        "moisture_max": 18.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3900 kcal/kg, 71 kcal/treat",
+      "images": [
+        "/products/merrick/merrick-treat-fresh-kisses-infused-with-mint-for-small-dogs-15-25-lbs-dog-dental-chews.png"
+      ]
+    },
+    {
+      "name": "Fresh Kisses Infused With Mint - For Medium Dogs (25-50 Lbs) Dog Dental Chews",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/shop/fresh-kisses-mint-medium-dog-dental-treats",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Fresh Kisses",
+      "ingredients_raw": "Tapioca Starch, Pea Starch, Vegetable Glycerin, Water, Gelatin, Natural Flavor, Sunflower Seed Lecithin, Peppermint, Spearmint Oil, Turmeric Spice. 2",
+      "guaranteed_analysis": {
+        "crude_protein_min": 13.0,
+        "crude_fat_min": 0.5,
+        "crude_fiber_max": 2.5,
+        "moisture_max": 18.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3900 kcal/kg, 111 kcal/treat",
+      "images": [
+        "/products/merrick/merrick-treat-fresh-kisses-infused-with-mint-for-medium-dogs-25-50-lbs-dog-dental-chews.png"
+      ]
+    },
+    {
+      "name": "Fresh Kisses Infused With Mint - For Large Dogs (50+ Lbs) Dog Dental Chews",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/shop/fresh-kisses-mint-large-dog-dental-treats",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Fresh Kisses",
+      "ingredients_raw": "Tapioca Starch, Pea Starch, Vegetable Glycerin, Water, Gelatin, Natural Flavor, Sunflower Seed Lecithin, Peppermint, Spearmint Oil, Turmeric Spice.",
+      "calorie_content": "3900 kcal/kg, 186 kcal/treat",
+      "images": [
+        "/products/merrick/merrick-treat-fresh-kisses-infused-with-mint-for-large-dogs-50-lbs-dog-dental-chews.png"
+      ],
+      "guaranteed_analysis": {
+        "crude_protein_min": 13.0,
+        "crude_fat_min": 0.5,
+        "crude_fiber_max": 2.5,
+        "moisture_max": 18.0
+      },
+      "guaranteed_analysis_basis": "as-fed"
+    },
+    {
+      "name": "Lil' Plates Lil' Chunky Chicken Recipe Dog Treats",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/shop/lil-plates-lil-chunky-chicken-dog-treats",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Lil' Plates",
+      "breed_size": "small",
+      "ingredients_raw": "Deboned Chicken, Peas, Potato Protein, Potato Starch, Potatoes, Vegetable Glycerin, Brown Sugar, Cane Molasses, Flaxseed, Lecithin, Dried Cultured Whey, Salt, Pea Fiber, Citric Acid For Freshness, Vinegar, Potassium Chloride, Natural Smoke Flavor, Mixed Tocopherols For Freshness, Apples, Carrots, Blueberries, Inulin.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 11.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 32.0,
+        "omega_3_min": 0.25,
+        "omega_6_min": 0.25
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "2868 kcal/kg, 1.70 kcal/treat",
+      "images": [
+        "/products/merrick/merrick-treat-lil-plates-lil-chunky-chicken-recipe-dog-treats.png"
+      ]
+    },
+    {
+      "name": "Lil' Plates Bitty Beef Recipe Dog Treats",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/shop/lil-plates-bitty-beef-dog-treats",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Lil' Plates",
+      "breed_size": "small",
+      "ingredients_raw": "Deboned Beef, Peas, Potato Protein, Potato Starch, Potatoes, Vegetable Glycerin, Brown Sugar, Cane Molasses, Flaxseed, Lecithin, Dried Cultured Whey, Salt, Pea Fiber, Citric Acid For Freshness, Vinegar, Potassium Chloride, Natural Smoke Flavor, Mixed Tocopherols For Freshness, Apples, Carrots, Blueberries, Inulin.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 11.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 32.0,
+        "omega_3_min": 0.25,
+        "omega_6_min": 0.25
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "2823 kcal/kg, 1.70 kcal/treat",
+      "images": [
+        "/products/merrick/merrick-treat-lil-plates-bitty-beef-recipe-dog-treats.png"
+      ]
+    },
+    {
+      "name": "Merrick Premium Grain Free Dry Adult Dog Food, Wholesome And Natural Kibble With Real Chicken And Sweet Potato - Canada",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/shop/canada/grain-free-chicken-sweet-potato-dry-dog-food",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Grain Free",
+      "ingredients_raw": "Deboned Chicken, Chicken Meal, Turkey Meal, Sweet Potatoes, Potatoes, Peas, Chicken Fat, Natural Flavor, Flaxseed, Dried Yeast, Potassium Chloride, Salt, Choline Chloride, Apples, Blueberries, Minerals (Zinc Amino Acid Complex, Iron Amino Acid Complex, Sodium Selenite, Manganese Amino Acid Complex, Copper Amino Acid Complex, Calcium Iodate), DL Methionine, Taurine, Vitamins (Vitamin E Supplement, Vitamin B12 Supplement, Vitamin A Supplement, Niacin, Thiamine Mononitrate, Riboflavin Supplement, d-Calcium Pantothenate, Folic Acid, Menadione Sodium Bisulfite Complex, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement), Mixed Tocopherols for freshness. 2C38474",
+      "guaranteed_analysis": {
+        "crude_protein_min": 32.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 3.5,
+        "moisture_max": 11.0,
+        "taurine_min": 0.17,
+        "omega_6_min": 3.0,
+        "omega_3_min": 0.3,
+        "glucosamine_min": 400.0,
+        "chondroitin_min": 400.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3592 kcal/kg, 381 kcal/cup",
+      "images": [
+        "/products/merrick/merrick-food-merrick-premium-grain-free-dry-adult-dog-food-wholesome-and-natural-kibble-with.png"
+      ]
+    },
+    {
+      "name": "Lil' Plates Teensy Turducken Recipe Dog Treats",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/shop/lil-plates-teensy-turducken-dog-treats",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Lil' Plates",
+      "breed_size": "small",
+      "ingredients_raw": "Turkey, Peas, Potato Protein, Potato Starch, Potatoes, Vegetable Glycerin, Brown Sugar, Cane Molasses, Flaxseed, Duck, Chicken, Lecithin, Dried Cultured Whey, Salt, Pea Fiber, Citric Acid For Freshness, Vinegar, Potassium Chloride, Natural Smoke Flavor, Mixed Tocopherols For Freshness, Apples, Carrots, Blueberries, Inulin.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 11.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 32.0,
+        "omega_3_min": 0.25,
+        "omega_6_min": 0.25
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "2824 kcal/kg, 1.70 kcal/treat",
+      "images": [
+        "/products/merrick/merrick-treat-lil-plates-teensy-turducken-recipe-dog-treats.png"
+      ]
+    },
+    {
+      "name": "Lil' Plates Small Salmon Recipe Dog Treats",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/shop/lil-plates-small-salmon-dog-treats",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Lil' Plates",
+      "breed_size": "small",
+      "ingredients_raw": "Salmon, Peas, Potato Protein, Potato Starch, Potatoes, Vegetable Glycerin, Brown Sugar, Cane Molasses, Flaxseed, Lecithin, Dried Cultured Whey, Salt, Pea Fiber, Citric Acid For Freshness, Vinegar, Potassium Chloride, Natural Smoke Flavor, Mixed Tocopherols For Freshness, Apples, Carrots, Blueberries, Inulin.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 11.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 32.0,
+        "omega_3_min": 0.25,
+        "omega_6_min": 0.25
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3008 kcal/kg, 1.80 kcal/treat",
+      "images": [
+        "/products/merrick/merrick-treat-lil-plates-small-salmon-recipe-dog-treats.png"
+      ]
+    },
+    {
+      "name": "Grain Free Real Beef & Sweet Potato Recipe Adult Dry Dog Food - Canada",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/canada/shop/grain-free-beef-sweet-potato-dry-dog-food",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Grain Free",
+      "ingredients_raw": "Deboned Beef, Pork And Bone Meal, Salmon Meal, Sweet Potatoes, Potatoes, Peas, Natural Flavor, Pea Protein, Pork Fat Preserved With Mixed Tocopherols, Potato Protein, Sunflower Oil, Miscanthus Grass, Dried Yeast, Flaxseed, Potassium Chloride, Salt, Choline Chloride, Apples, Blueberries, Salmon Oil, MINERALS [Zinc Amino Acid Complex, Iron Amino Acid Complex, Sodium Selenite, Manganese Amino Acid Complex, Copper Amino Acid Complex, Calcium Iodate], DL-Methionine, Taurine, VITAMINS [Vitamin E Supplement, Vitamin B-12 Supplement, Vitamin A Supplement, Niacin (Vitamin B-3), Thiamine Mononitrate (Vitamin B-1), Calcium Pantothenate (Vitamin B-5), Folic Acid (Vitamin B-9), Riboflavin Supplement (Vitamin B-2), Menadione Sodium Bisulfite Complex (Vitamin K), Pyridoxine Hydrochloride (Vitamin B-6), Biotin (Vitamin B-7), Vitamin D-3 Supplement], Preserved With Mixed Tocopherols. C278725",
+      "guaranteed_analysis": {
+        "crude_protein_min": 32.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 3.5,
+        "moisture_max": 11.0,
+        "taurine_min": 0.17,
+        "omega_6_min": 2.3,
+        "omega_3_min": 0.3,
+        "chondroitin_min": 400.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3676 kcal/kg, 455 kcal/cup",
+      "images": [
+        "/products/merrick/merrick-food-grain-free-real-beef-sweet-potato-recipe-adult-dry-dog-food-canada.png"
+      ]
+    },
+    {
+      "name": "Grain Free Real Salmon & Sweet Potato Recipe Adult Dry Dog Food - Canada",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/canada/shop/grain-free-salmon-sweet-potato-dry-dog-food",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Grain Free",
+      "ingredients_raw": "Deboned Salmon, Salmon Meal, Sweet Potatoes, Potatoes, Peas, Whitefish Meal, Potato Protein, Pork Fat Preserved With Mixed Tocopherols, Natural Flavor, Flaxseed, Sunflower Oil, Miscanthus Grass, Dried Yeast, Potassium Chloride, Salt, Apples, Blueberries, Choline Chloride, MINERALS [Zinc Amino Acid Complex, Iron Amino Acid Complex, Sodium Selenite, Manganese Amino Acid Complex, Copper Amino Acid Complex, Calcium Iodate], DL-Methionine, Taurine, VITAMINS [Vitamin E Supplement, Vitamin B-12 Supplement, Vitamin A Supplement, Niacin (Vitamin B-3), Thiamine Mononitrate (Vitamin B-1), Calcium Pantothenate (Vitamin B-5), Folic Acid (Vitamin B-9), Riboflavin Supplement (Vitamin B-2), Menadione Sodium Bisulfite Complex (Vitamin K), Pyridoxine Hydrochloride (Vitamin B-6), Biotin (Vitamin B-7), Vitamin D-3 Supplement], Preserved With Mixed Tocopherols.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 3.5,
+        "moisture_max": 11.0,
+        "taurine_min": 0.17,
+        "omega_6_min": 2.0,
+        "omega_3_min": 0.6,
+        "chondroitin_min": 400.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3686 kcal/kg, 457 kcal/cup",
+      "images": [
+        "/products/merrick/merrick-food-grain-free-real-salmon-sweet-potato-recipe-adult-dry-dog-food-canada.png"
+      ]
+    },
+    {
+      "name": "Grain Free Real Lamb & Sweet Potato Recipe Adult Dry Dog Food - Canada",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/canada/shop/grain-free-lamb-sweet-potato-dry-dog-food",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Grain Free",
+      "ingredients_raw": "Deboned Lamb, Chicken Meal, Turkey Meal, Sweet Potatoes, Potatoes, Peas, Chicken Fat, Natural Flavor, Whitefish Meal, Flaxseed, Dried Yeast, Potassium Chloride, Salt, Choline Chloride, Apples, Blueberries, Salmon Oil, Minerals (Zinc Amino Acid Complex, Iron Amino Acid Complex, Sodium Selenite, Manganese Amino Acid Complex, Copper Amino Acid Complex, Calcium Iodate), DL-Methionine, Taurine, Vitamins (Vitamin E Supplement, Vitamin B12 Supplement, Vitamin A Supplement, Niacin, Thiamine Mononitrate, Riboflavin Supplement, d-Calcium Pantothenate, Folic Acid, Menadione Sodium Bisulfite Complex, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement), Mixed Tocopherols for freshness. 2C38486",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 11.0,
+        "taurine_min": 0.17,
+        "omega_6_min": 2.1,
+        "omega_3_min": 0.3,
+        "glucosamine_min": 400.0,
+        "chondroitin_min": 400.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3705 ME kcal/kg or 393 ME kcal/cup",
+      "images": [
+        "/products/merrick/merrick-food-grain-free-real-lamb-sweet-potato-recipe-adult-dry-dog-food-canada.png"
+      ]
+    },
+    {
+      "name": "Backcountry Grain Free With Salmon and Whitefish Adult Dry Dog Food - Canada",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/canada/shop/backcountry-raw-infused-pacific-catch-grain-free-dry-dog-food",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Backcountry",
+      "ingredients_raw": "Deboned Salmon, Salmon Meal, Whitefish Meal, Sweet Potatoes, Potatoes, Peas, Pea Protein, Natural Flavor, Pork Fat, Whitefish, Sunflower Oil, Flaxseed, Dried Yeast, Tapioca, Potassium Chloride, Salt, Choline Chloride, Minerals (Zinc Amino Acid Complex, Iron Amino Acid Complex, Sodium Selenite, Manganese Amino Acid Complex, Copper Amino Acid Complex, Calcium Iodate), DL-Methionine, Taurine, Mixed Tocopherols for Freshness, Vitamins (Vitamin E Supplement, Vitamin B12 Supplement, Vitamin A Supplement, Niacin, Thiamine Mononitrate, Riboflavin Supplement, D-Calcium Pantothenate, Folic Acid, Menadione Sodium Bisulfite Complex, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement). 2C37070",
+      "guaranteed_analysis": {
+        "crude_protein_min": 32.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 3.5,
+        "moisture_max": 11.0,
+        "taurine_min": 0.17,
+        "omega_6_min": 2.3,
+        "omega_3_min": 0.3,
+        "glucosamine_min": 400.0,
+        "chondroitin_min": 400.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3 kcal/kg, 395 kcal/cup",
+      "images": [
+        "/products/merrick/merrick-food-backcountry-grain-free-with-salmon-and-whitefish-adult-dry-dog-food-canada.png"
+      ]
+    },
+    {
+      "name": "Backcountry Grain Free Game Bird Recipe Adult Dry Dog Food - Canada",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/canada/shop/backcountry-raw-infused-game-bird-dry-dog-food",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Backcountry",
+      "ingredients_raw": "Deboned Turkey, Turkey Meal, Chicken Meal, Sweet Potatoes, Potatoes, Peas, Chicken Fat, Pea Protein, Salmon Meal, Duck, Natural Flavor, Chicken, Chicken Liver, Tapioca, Dried Yeast, Potassium Chloride, Salt, Salmon Oil, Choline Chloride, Minerals (Zinc Amino Acid Complex, Iron Amino Acid Complex, Sodium Selenite, Manganese Amino Acid Complex, Copper Amino Acid Complex, Calcium Iodate), DL-Methionine, Taurine, Vitamins (Vitamin E Supplement, Vitamin B12 Supplement, Vitamin A Supplement, Niacin, Thiamine Mononitrate, Riboflavin Supplement, D-Calcium Pantothenate, Folic Acid, Menadione Sodium Bisulfite Complex, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement), Mixed Tocopherols for Freshness. 2C37072",
+      "guaranteed_analysis": {
+        "crude_protein_min": 34.0,
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 3.5,
+        "moisture_max": 11.0,
+        "taurine_min": 0.17,
+        "omega_6_min": 3.0,
+        "omega_3_min": 0.3,
+        "glucosamine_min": 400.0,
+        "chondroitin_min": 400.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3636 kcal/kg, 386 kcal/cup",
+      "images": [
+        "/products/merrick/merrick-food-backcountry-grain-free-game-bird-recipe-adult-dry-dog-food-canada.png"
+      ]
+    },
+    {
+      "name": "Lil' Plates Grain Free Real Chicken & Sweet Potato Recipe Adult Dry Dog Food - Canada",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/canada/shop/lil-plates-grain-free-chicken-sweet-potatoes-dry-dog-food",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Lil' Plates",
+      "breed_size": "small",
+      "ingredients_raw": "Deboned Chicken, Chicken Meal, Turkey Meal, Potatoes, Sweet Potatoes, Peas, Chicken Fat, Natural Flavor, Whitefish Meal, Miscanthus Grass, Dried Yeast, Flaxseed, Potassium Chloride, Salt, Choline Chloride, Apples, Salmon Oil, Blueberries, MINERALS [Zinc Amino Acid Complex, Iron Amino Acid Complex, Sodium Selenite, Manganese Amino Acid Complex, Copper Amino Acid Complex, Calcium Iodate], DL-Methionine, Sunflower Oil, Taurine, VITAMINS [Vitamin E Supplement, Vitamin B-12 Supplement, Vitamin A Supplement, Niacin (Vitamin B-3), Thiamine Mononitrate (Vitamin B-1), Calcium Pantothenate (Vitamin B-5), Folic Acid (Vitamin B-9), Riboflavin Supplement (Vitamin B-2), Menadione Sodium Bisulfite Complex (Vitamin K), Pyridoxine Hydrochloride (Vitamin B-6), Biotin (Vitamin B-7), Vitamin D-3 Supplement], Mixed Tocopherols For Freshness, Dried Bacillus Coagulans Fermentation Product, Rosemary Extract.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 32.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 3.5,
+        "moisture_max": 11.0,
+        "taurine_min": 0.17,
+        "omega_6_min": 2.8,
+        "omega_3_min": 0.3,
+        "glucosamine_min": 400.0,
+        "chondroitin_min": 400.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3553 kcal/kg, 440 kcal/cup",
+      "images": [
+        "/products/merrick/merrick-food-lil-plates-grain-free-real-chicken-sweet-potato-recipe-adult-dry-dog-food-canada.png"
+      ]
+    },
+    {
+      "name": "Lil' Plates Grain Free Real Salmon & Sweet Potato Recipe Adult Dry Dog Food - Canada",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/canada/shop/lil-plates-grain-free-salmon-sweet-potatoes-dry-dog-food",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Lil' Plates",
+      "breed_size": "small",
+      "ingredients_raw": "Deboned Salmon, Salmon Meal, Sweet Potatoes, Potatoes, Peas, Whitefish Meal, Pork Fat Preserved With Mixed Tocopherols, Potato Protein, Natural Flavor, Flaxseed, Miscanthus Grass, Sunflower Oil, Dried Yeast, Potassium Chloride, Salt, Apples, Blueberries, Choline Chloride, MINERALS [Zinc Amino Acid Complex, Iron Amino Acid Complex, Sodium Selenite, Manganese Amino Acid Complex, Copper Amino Acid Complex, Calcium Iodate], DL-Methionine, Taurine, VITAMINS [Vitamin E Supplement, Vitamin B-12 Supplement, Vitamin A Supplement, Niacin (Vitamin B-3), Thiamine Mononitrate (Vitamin B-1), Calcium Pantothenate (Vitamin B-5), Folic Acid (Vitamin B-9), Riboflavin Supplement (Vitamin B-2), Menadione Sodium Bisulfite Complex (Vitamin K), Pyridoxine Hydrochloride (Vitamin B-6), Biotin (Vitamin B-7), Vitamin D-3 Supplement], Preserved With Mixed Tocopherols, Dried Bacillus Coagulans Fermentation Product. C298224",
+      "guaranteed_analysis": {
+        "crude_protein_min": 31.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 3.5,
+        "moisture_max": 11.0,
+        "taurine_min": 0.17,
+        "omega_3_min": 0.6,
+        "chondroitin_min": 400.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3728 kcal/kg, 475 kcal/cup",
+      "images": [
+        "/products/merrick/merrick-food-lil-plates-grain-free-real-salmon-sweet-potato-recipe-adult-dry-dog-food-canada.png"
+      ]
+    },
+    {
+      "name": "Grain Free Grammy's Pot Pie In Gravy Adult Wet Dog Food - Canada",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/canada/shop/grain-free-grammys-pot-pie-wet-dog-food",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Grain Free",
+      "ingredients_raw": "Deboned Chicken, Chicken Broth, Dried Egg Product, Potatoes, Carrots, Apples, Peas, Natural Flavor, Agar Agar, Guar Gum, Potato Protein, Salt, Potato Starch, Sodium Phosphate, MINERALS [Zinc Proteinate, Iron Proteinate, Cobalt Proteinate, Copper Proteinate, Manganese Proteinate, Sodium Selenite, Potassium Iodide], Potassium Chloride, Magnesium Sulfate, VITAMINS [Vitamin E Supplement, Thiamine Mononitrate (Vitamin B-1), Niacin Supplement (Vitamin B-3), Calcium Pantothenate (Vitamin B-5), Vitamin A Supplement, Pyridoxine Hydrochloride (Vitamin B-6), Riboflavin Supplement (Vitamin B-2), Biotin (Vitamin B-7), Vitamin B-12 Supplement, Vitamin D-3 Supplement, Folic Acid (Vitamin B-9)], Fish Oil (Preserved With Mixed Tocopherols), Calcium Carbonate, Sunflower Oil, Choline Chloride, Rosemary, Sage, Thyme, Yucca Schidigera Extract.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 4.0,
+        "crude_fiber_max": 1.8,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1109 kcal/kg, 399 kcal/can",
+      "images": [
+        "/products/merrick/merrick-food-grain-free-grammy-s-pot-pie-in-gravy-adult-wet-dog-food-canada.png"
+      ]
+    },
+    {
+      "name": "Grain Free Turkey Dinner In Gravy Adult Wet Dog Food - Canada",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/canada/shop/grain-free-thanksgiving-dinner-wet-dog-food",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Grain Free",
+      "ingredients_raw": "Deboned Turkey, Turkey Broth, Chicken, Chicken Broth, Sweet Potatoes, Carrots, Green Beans, Apples, Dried Egg Product, Natural Flavor, Potato Protein, Salt, Guar Gum, Potato Starch, Potassium Chloride, Flaxseed Meal, MINERALS [Zinc Proteinate, Iron Proteinate, Copper Proteinate, Cobalt Proteinate, Manganese Proteinate, Sodium Selenite, Potassium Iodide], Magnesium Sulfate, VITAMINS [Vitamin E Supplement, Thiamine Mononitrate (Vitamin B-1), Niacin Supplement (Vitamin B-3), Calcium Pantothenate (Vitamin B-5), Vitamin A Supplement, Riboflavin Supplement (Vitamin B-2), Biotin (Vitamin B-7), Vitamin B-12 Supplement, Pyridoxine Hydrochloride (Vitamin B-6), Vitamin D-3 Supplement, Folic Acid (Vitamin B-9)], Rosemary, Sage, Thyme, Sodium Phosphate, Choline Chloride, Yucca Schidigera Extract, Calcium Carbonate.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 1.8,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1091 kcal/kg, 392 kcal/can",
+      "images": [
+        "/products/merrick/merrick-food-grain-free-turkey-dinner-in-gravy-adult-wet-dog-food-canada.png"
+      ]
+    },
+    {
+      "name": "Lil' Plates Grain Free Chicken Pot Pie In Gravy Wet Dog Food - Canada",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/canada/shop/lil-plates-grain-free-petite-pot-pie-wet-dog-food",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Lil' Plates",
+      "breed_size": "small",
+      "ingredients_raw": "Deboned Chicken, Chicken Broth, Turkey Broth, Chicken Liver, Dried Egg Whites, Potato Starch, Potatoes, Carrots, Peas, Apples, Guar Gum, Sunflower Oil, Tricalcium Phosphate, Salt, Sodium Phosphate, Natural Flavor, Potassium Chloride, Calcium Carbonate, Minerals (Zinc Amino Acid Chelate, Sodium Selenite, Cobalt Amino Acid Chelate, Potassium Iodide), Choline Chloride, Vitamins (Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Folic Acid), Xanthan Gum. 2A26022",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 1.4,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "929 kcal/kg",
+      "images": [
+        "/products/merrick/merrick-food-lil-plates-grain-free-chicken-pot-pie-in-gravy-wet-dog-food-canada.png"
+      ]
+    },
+    {
+      "name": "Grain Free Turducken In Gravy",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/shop/grain-free-turducken-in-gravy-wet-dog-food",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Grain Free",
+      "ingredients_raw": "Deboned Turkey, Chicken Broth, Duck, Chicken, Turkey Broth, Dried Egg Product, Sweet Potatoes, Carrots, Green Beans, Apples, Natural Flavor, Agar-Agar, Guar Gum, Salt, Potato Protein, Potato Starch, Flaxseed Oil, Potassium Chloride, Flaxseed Meal, MINERALS [Zinc Proteinate, Iron Proteinate, Copper Proteinate, Cobalt Proteinate, Manganese Proteinate, Sodium Selenite, Potassium Iodide], Magnesium Sulfate, VITAMINS [Vitamin E Supplement, Thiamine Mononitrate (Vitamin B-1), Niacin Supplement (Vitamin B-3), Calcium Pantothenate (Vitamin B-5), Vitamin A Supplement, Riboflavin Supplement (Vitamin B-2), Biotin (Vitamin B-7), Vitamin B-12 Supplement, Pyridoxine Hydrochloride (Vitamin B-6), Vitamin D-3 Supplement, Folic Acid(Vitamin B-9)], Rosemary, Sage, Thyme, Sodium Phosphate, Choline Chloride, Yucca Schidigera Extract, Calcium Carbonate.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 1.8,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1165 kcal/kg, 419 kcal/can",
+      "images": [
+        "/products/merrick/merrick-food-grain-free-turducken-in-gravy.png"
+      ]
+    },
+    {
+      "name": "Lil' Plates Grain Free Lamb Stew In Gravy Wet Dog Food - Canada",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/canada/shop/lil-plates-grain-free-little-lamb-chop-stew-wet-dog-food",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Lil' Plates",
+      "breed_size": "small",
+      "ingredients_raw": "Deboned Lamb, Lamb Broth, Beef Broth, Beef, Beef Liver, Dried Egg Whites, Sweet Potatoes, Carrots, Potato Starch, Peas, Guar Gum, Sunflower Oil, Sodium Phosphate, Salt, Potassium Chloride, Natural Flavor, Minerals (Zinc Amino Acid Chelate, Iron Amino Acid Chelate, Copper Amino Acid Chelate, Manganese Amino Acid Chelate, Sodium Selenite, Cobalt Amino Acid Chelate, Potassium Iodide), Choline Chloride, Vitamins (Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Cinnamon, Ground Cumin, Xanthan Gum. A293523",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 3.5,
+        "crude_fiber_max": 1.4,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1137 kcal/kg",
+      "images": [
+        "/products/merrick/merrick-food-lil-plates-grain-free-lamb-stew-in-gravy-wet-dog-food-canada.png"
+      ]
+    },
+    {
+      "name": "Grain Free Real Chicken Dinner",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/shop/grain-free-chicken-wet-dog-food",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Grain Free",
+      "ingredients_raw": "Deboned Chicken, Chicken Broth, Chicken Liver, Dried Egg Product, Natural Flavor, Salmon Oil, Locust Bean Gum, Potassium Chloride, Tricalcium Phosphate, Guar Gum, Sodium Tripolyphosphate, Minerals (Magnesium Sulfate, Zinc Sulfate, Ferrous Sulfate, Copper Sulfate, Manganese Sulfate, Potassium Iodide, Sodium Selenite), Choline Chloride, Calcium Carbonate, Taurine, Vitamins (Vitamin E Supplement, Niacin, Thiamine Mononitrate, Calcium Pantothenate, Pyridoxine Hydrochloride, Vitamin B-12 Supplement, Riboflavin Supplement, Vitamin A Supplement, Folic Acid, Vitamin D-3 Supplement, Biotin).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.0,
+        "crude_fat_min": 7.0,
+        "crude_fiber_max": 1.4,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1230 kcal/kg, 442 kcal/can",
+      "images": [
+        "/products/merrick/merrick-food-grain-free-real-chicken-dinner.jpg"
+      ]
+    },
+    {
+      "name": "Grain Free Real Duck Dinner",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/shop/grain-free-duck-wet-dog-food",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Grain Free",
+      "ingredients_raw": "Deboned Duck, Duck Liver, Turkey Broth, Dried Egg Product, Natural Flavor, Tricalcium Phosphate, Salmon Oil, Salt, Locust Bean Gum, Guar Gum, Choline Chloride, Potassium Chloride, Calcium Carbonate, Taurine, Vitamins (Vitamin E Supplement, Niacin, Thiamine Mononitrate, Calcium Pantothenate, Pyridoxine Hydrochloride, Vitamin B-12 Supplement, Riboflavin Supplement, Vitamin A Supplement, Folic Acid, Vitamin D-3 Supplement, Biotin), Minerals (Zinc Sulfate, Ferrous Sulfate, Copper Sulfate, Manganese Sulfate, Potassium Iodide, Sodium Selenite).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 2.0,
+        "crude_fiber_max": 1.4,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "996 kcal/kg, 358 kcal/can",
+      "images": [
+        "/products/merrick/merrick-food-grain-free-real-duck-dinner.jpg"
+      ]
+    },
+    {
+      "name": "Chunky Grain Free Carver's Delight Dinner in Gravy",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/shop/chunky-grain-free-carvers-delight-dinner-in-gravy-wet-dog-food",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Grain Free",
+      "ingredients_raw": "Deboned Chicken, Chicken Broth, Turkey Broth, Turkey, Potatoes, Carrots, Dried Egg Product, Natural Flavor, Potato Starch, Guar Gum, Salt, Sodium Phosphate, Calcium Carbonate, Potassium chloride, MINERALS [Zinc Proteinate, Iron Proteinate, Copper Proteinate, Cobalt Proteinate, Manganese Proteinate, Sodium Selenite, Potassium Iodide], Flaxseed Oil, Fish Oil (Preserved With Mixed Tocopherols), VITAMINS [Vitamin E Supplement, Thiamine Mononitrate (Vitamin B-1), Niacin Supplement (Vitamin B-3), Calcium Pantothenate (Vitamin B-5), Vitamin A Supplement, Riboflavin Supplement (Vitamin B-2), Biotin (Vitamin B-7), Vitamin B-12 Supplement, Pyridoxine Hydrochloride (Vitamin B-6), Vitamin D-3 Supplement, Folic Acid (Vitamin B-9)], Rosemary, Sage, Thyme, Choline Chloride, Magnesium Sulfate.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "969 kcal/kg, 348 kcal/can",
+      "images": [
+        "/products/merrick/merrick-food-chunky-grain-free-carver-s-delight-dinner-in-gravy.png"
+      ]
+    },
+    {
+      "name": "Grain Free Puppy Real Beef & Sweet Potato Recipe Dry Dog Food",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/shop/grain-free-beef-sweet-potato-puppy-dry-dog-food",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Grain Free",
+      "life_stage": "puppy",
+      "ingredients_raw": "Deboned beef, chicken meal, sweet potatoes, potatoes, peas, natural flavor, turkey meal, chicken fat, pea protein, miscanthus grass, dried yeast, salmon oil, flaxseed, potassium chloride, salt, choline chloride, MINERALS [zinc amino acid complex, iron amino acid complex, sodium selenite, manganese amino acid complex, copper amino acid complex, calcium iodate], apples, blueberries, DLMethionine, sunflower oil, taurine, VITAMINS [Vitamin E supplement, Vitamin B-12 supplement, Vitamin A supplement, niacin (Vitamin B-3), thiamine mononitrate (Vitamin B-1), calcium pantothenate (Vitamin B5), folic acid (Vitamin B-9), riboflavin supplement (Vitamin B-2), menadione sodium bisulfite complex (Vitamin K), pyridoxine hydrochloride (Vitamin B-6), biotin (Vitamin B-7), Vitamin D-3 supplement], mixed tocopherols for freshness.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 11.0,
+        "dha_min": 0.03,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "taurine_min": 0.17,
+        "omega_6_min": 2.0,
+        "omega_3_min": 0.3,
+        "glucosamine_min": 400.0,
+        "chondroitin_min": 400.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3564 kcal/kg, 454 kcal/cup",
+      "images": [
+        "/products/merrick/merrick-food-grain-free-puppy-real-beef-sweet-potato-recipe-dry-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Grain Free Puppy Real Chicken & Sweet Potato Recipe Dry Dog Food",
+      "brand": "Merrick",
+      "url": "https://www.merrickpetcare.com/shop/grain-free-chicken-sweet-potato-puppy-dry-dog-food",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Grain Free",
+      "life_stage": "puppy",
+      "ingredients_raw": "Deboned Chicken, Chicken Meal, Sweet Potatoes, Potatoes, Peas, Turkey Meal, Chicken Fat, Pea Protein, Natural Flavor, Dried Egg Product, Miscanthus Grass, Salmon Oil, Potato Protein, Dried Yeast, Flaxseed, Potassium Chloride, Salt, Choline Chloride, Apples, Blueberries, MINERALS [Zinc Amino Acid Complex, Iron Amino Acid Complex, Sodium Selenite, Manganese Amino Acid Complex, Copper Amino Acid Complex, Calcium Iodate], Dl-Methionine, Sunflower Oil, Taurine, VITAMINS [Vitamin E Supplement, Vitamin B-12 Supplement, Vitamin A Supplement, Niacin (Vitamin B-3), Thiamine Mononitrate (Vitamin B-1), Calcium Pantothenate (Vitamin B-5), Folic Acid (Vitamin B-9), Riboflavin Supplement (Vitamin B-2), Menadione Sodium Bisulfite Complex (Vitamin K), Pyridoxine Hydrochloride (Vitamin B-6), Biotin (Vitamin B-7), Vitamin D-3 Supplement], Mixed Tocopherols For Freshness.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 11.0,
+        "dha_min": 0.2,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "taurine_min": 0.17,
+        "omega_6_min": 3.0,
+        "omega_3_min": 0.4,
+        "glucosamine_min": 400.0,
+        "chondroitin_min": 400.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3664 kcal/kg, 400 kcal/cup",
+      "images": [
+        "/products/merrick/merrick-food-grain-free-puppy-real-chicken-sweet-potato-recipe-dry-dog-food.png"
+      ]
+    }
+  ]
+}

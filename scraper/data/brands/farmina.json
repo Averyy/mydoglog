@@ -1,0 +1,475 @@
+{
+  "brand": "Farmina",
+  "website_url": "https://www.farmina.com",
+  "scraped_at": "2026-03-09T18:29:39.011849+00:00",
+  "scraper_version": "0.1.0",
+  "stats": {
+    "product_count": 15,
+    "by_channel": {
+      "vet": 15
+    },
+    "by_type": {
+      "food": 15
+    }
+  },
+  "products": [
+    {
+      "name": "Recoup Wet Food Canine",
+      "brand": "Farmina",
+      "sub_brand": "Vet Life",
+      "url": "https://www.farmina.com/ca/eshop/dog-food/farmina-vet-life-canine/762-recoup-wet-food-canine.html",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "wet",
+      "health_tags": [
+        "recovery"
+      ],
+      "ingredients_raw": "chicken, sweet potatoes, hydrolyzed fish, chicken liver, sardines, tuna, egg yolk, quinoa seed, herring oil, chicken fat (preserved with mixed tocopherols), flaxseed, dicalcium phosphate, calcium carbonate, potassium chloride, inulin, yeast extract, pea fiber, salt, brewers dried yeast, green tea extract, vitamin A supplement, vitamin D3 supplement, vitamin E supplement, zinc methionine hydroxy analogue chelate, manganese methionine hydroxy analogue chelate, ferrous glycine, copper methionine hydroxy analogue chelate, selenium yeast, calcium iodate, taurine.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 11.6,
+        "crude_fat_min": 5.7,
+        "crude_fiber_max": 0.24,
+        "ash_max": 3.4,
+        "moisture_max": 73.0,
+        "calcium_min": 0.4,
+        "phosphorus_min": 0.25,
+        "omega_3_min": 0.1,
+        "omega_6_min": 0.7,
+        "epa_min": 0.03,
+        "dha_min": 0.04
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1111 kcal/kg, 330 kcal/can",
+      "images": [
+        "/products/farmina/farmina-food-recoup-wet-food-canine.png"
+      ]
+    },
+    {
+      "name": "Gastrointestinal Wet Food Canine",
+      "brand": "Farmina",
+      "sub_brand": "Vet Life",
+      "url": "https://www.farmina.com/ca/eshop/dog-food/farmina-vet-life-canine/763-gastrointestinal-wet-food-canine.html",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "wet",
+      "health_tags": [
+        "gastrointestinal"
+      ],
+      "ingredients_raw": "chicken, hydrolyzed fish, sweet potatoes, chicken liver, herring oil, sardines, tuna, egg yolk, quinoa seed, chicken fat (preserved with mixed tocopherols), dicalcium phosphate, calcium carbonate, flaxseed, potassium chloride, fructooligosaccharide, yeast extract, salt, pea fiber, brewers dried yeast, green tea extract, vitamin A supplement, vitamin D3 supplement, vitamin E supplement, zinc methionine hydroxy analogue chelate, manganese methionine hydroxy analogue chelate, ferrous glycine, copper methionine hydroxy analogue chelate, selenium yeast, calcium iodate, taurine.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.9,
+        "crude_fat_min": 4.0,
+        "crude_fiber_max": 0.2,
+        "ash_max": 2.6,
+        "moisture_max": 71.0,
+        "calcium_min": 0.27,
+        "phosphorus_min": 0.2,
+        "sodium_min": 0.17,
+        "potassium_min": 0.22
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1027 kcal/kg, 308 kcal/can",
+      "images": [
+        "/products/farmina/farmina-food-gastrointestinal-wet-food-canine.png"
+      ]
+    },
+    {
+      "name": "Urinary ST/Control Wet Food Canine",
+      "brand": "Farmina",
+      "sub_brand": "Vet Life",
+      "url": "https://www.farmina.com/ca/eshop/dog-food/farmina-vet-life-canine/764-urinary-st/control-wet-food-canine.html",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "wet",
+      "health_tags": [
+        "urinary"
+      ],
+      "ingredients_raw": "Chicken, hydrolyzed fish, egg yolk, sweet potatoes, chicken liver, sardines, tuna, quinoa seed, chicken fat (preserved with mixed tocopherols), herring oil, flaxseed, potassium chloride, calcium sulfate dihydrate, salt, fructooligosaccharide, yeast extract, brewers dried yeast, vitamin A supplement, vitamin D3 supplement, vitamin E supplement, zinc methionine hydroxy analogue chelate, manganese methionine hydroxy analogue chelate, ferrous glycine, copper methionine hydroxy analogue chelate, selenium yeast, calcium iodate, DL-Methionine, taurine.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.7,
+        "crude_fat_min": 4.6,
+        "crude_fiber_max": 0.3,
+        "ash_max": 1.9,
+        "moisture_max": 76.0,
+        "calcium_min": 0.1,
+        "phosphorus_min": 0.09,
+        "sodium_min": 0.2,
+        "potassium_min": 0.22,
+        "taurine_min": 0.12
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "993 kcal/kg, 297 kcal/can",
+      "images": [
+        "/products/farmina/farmina-food-urinary-st-control-wet-food-canine.png"
+      ]
+    },
+    {
+      "name": "Urinary ST/Management Wet Food Canine",
+      "brand": "Farmina",
+      "sub_brand": "Vet Life",
+      "url": "https://www.farmina.com/ca/eshop/dog-food/farmina-vet-life-canine/1080-urinary-st/management-wet-food-canine.html",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "wet",
+      "health_tags": [
+        "urinary"
+      ],
+      "ingredients_raw": "chicken, hydrolyzed fish, eggs, sweet potatoes, chicken liver, sardine, tuna, quinoa seed, chicken fat (preserved with mixed tocopherols), herring oil, flaxseed, potassium chloride, salt, calcium sulfate dihydrate, fructooligosaccharide, yeast extract, brewers dried yeast, glucosamine hydrochloride, vitamin A supplement, vitamin D3 supplement, vitamin E supplement, zinc methionine hydroxy analogue chelate, manganese methionine hydroxy analogue chelate, ferrous glycine, copper methionine hydroxy analogue chelate, selenium yeast, calcium iodate, DL-Methionine, taurine.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 3.5,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 78.0,
+        "ash_max": 3.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "986 kcal/kg, 296 kcal/can",
+      "images": [
+        "/products/farmina/farmina-food-urinary-st-management-wet-food-canine.png"
+      ]
+    },
+    {
+      "name": "Renal Wet Food Canine",
+      "brand": "Farmina",
+      "sub_brand": "Vet Life",
+      "url": "https://www.farmina.com/ca/eshop/dog-food/farmina-vet-life-canine/765-renal-wet-food-canine.html",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "wet",
+      "health_tags": [
+        "renal"
+      ],
+      "ingredients_raw": "Chicken, sweet potatoes, hydrolyzed fish, herring oil, chicken liver, sardines, chicken fat (preserved with mixed tocopherols), quinoa seed, egg yolk, calcium carbonate, pea fiber, fructooligosaccharide, potassium chloride, salt, psyllium seed husk, yucca schidigera extract, brewers dried yeast, potassium citrate, vitamin A supplement, vitamin D3 supplement, vitamin E supplement, zinc methionine hydroxy analogue chelate, manganese methionine hydroxy analogue chelate, ferrous glycine, copper methionine hydroxy analogue chelate, selenium yeast, calcium iodate, taurine.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 6.5,
+        "crude_fat_min": 7.5,
+        "crude_fiber_max": 1.0,
+        "ash_max": 2.5,
+        "moisture_max": 77.0,
+        "calcium_min": 0.2,
+        "phosphorus_min": 0.09,
+        "sodium_min": 0.09,
+        "potassium_min": 0.15,
+        "omega_3_min": 0.15,
+        "omega_6_min": 1.0,
+        "epa_min": 0.05,
+        "dha_min": 0.06
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1262 kcal/kg, 378 kcal/can",
+      "images": [
+        "/products/farmina/farmina-food-renal-wet-food-canine.png"
+      ]
+    },
+    {
+      "name": "HP Derma Canine Wet Food",
+      "brand": "Farmina",
+      "sub_brand": "Vet Life",
+      "url": "https://www.farmina.com/ca/eshop/dog-food/farmina-vet-life-canine/1081-hp-derma-canine-wet-food.html",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "wet",
+      "health_tags": [
+        "dermatology"
+      ],
+      "ingredients_raw": "sweet potato starch, hydrolyzed fish, herring oil, quinoa seed, flaxseed, powdered cellulose, potassium chloride, calcium carbonate, monocalcium phosphate, salt, vitamin A supplement, vitamin D3 supplement, vitamin E supplement, zinc methionine hydroxy analogue chelate, manganese methionine hydroxy analogue chelate, ferrous glycine, copper methionine hydroxy analogue chelate, selenium yeast, calcium iodate, DL-Methionine, taurine, L-Carnitine.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 4.0,
+        "crude_fat_min": 2.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 82.0,
+        "ash_max": 2.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "752 kcal/kg, 226 kcal/can",
+      "images": [
+        "/products/farmina/farmina-food-hp-derma-canine-wet-food.png"
+      ]
+    },
+    {
+      "name": "Derma Management with Duck Wet Food Canine",
+      "brand": "Farmina",
+      "sub_brand": "Vet Life",
+      "url": "https://www.farmina.com/ca/eshop/dog-food/farmina-vet-life-canine/767-derma-management-with-duck-wet-food-canine.html",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "wet",
+      "health_tags": [
+        "dermatology"
+      ],
+      "ingredients_raw": "Duck, sweet potatoes, hydrolyzed fish, quinoa seed, herring oil, powdered cellulose, calcium carbonate, dicalcium phosphate, potassium chloride, vitamin A supplement, vitamin D3 supplement, vitamin E supplement, zinc methionine hydroxy analogue chelate, manganese methionine hydroxy analogue chelate, ferrous glycine, copper methionine hydroxy analogue chelate, selenium yeast, calcium iodate, taurine.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.5,
+        "crude_fat_min": 8.4,
+        "crude_fiber_max": 0.2,
+        "ash_max": 2.3,
+        "moisture_max": 76.0,
+        "calcium_min": 0.18,
+        "phosphorus_min": 0.11,
+        "omega_6_min": 1.5,
+        "omega_3_min": 0.2,
+        "epa_min": 0.06,
+        "dha_min": 0.08
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1173 kcal/kg, 351 kcal/can",
+      "images": [
+        "/products/farmina/farmina-food-derma-management-with-duck-wet-food-canine.png"
+      ]
+    },
+    {
+      "name": "Gastrointestinal Canine",
+      "brand": "Farmina",
+      "sub_brand": "Vet Life",
+      "url": "https://www.farmina.com/ca/eshop/dog-food/farmina-vet-life-canine/736-gastrointestinal-canine.html",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "health_tags": [
+        "gastrointestinal"
+      ],
+      "ingredients_raw": "rice, sweet potatoes, dehydrated chicken, whole oats, chicken fat, dried whole eggs, dehydrated fish, dried beet pulp, herring oil, hydrolyzed fish, potassium chloride, inulin, fructooligosaccharide, yeast extract, calcium carbonate, salt, vitamin A supplement, vitamin D3 supplement, vitamin E supplement, ascorbic acid, niacin, calcium pantothenate, riboflavin, pyridoxine hydrochloride, thiamine hydrochloride, biotin, folic acid, vitamin B12 supplement, choline chloride, beta-carotene, zinc methionine hydroxy analogue chelate, manganese methionine hydroxy analogue chelate, ferrous glycine, copper methionine hydroxy analogue chelate, selenium yeast, calcium iodate, taurine, L-Carnitine, mixed tocopherols (a preservative).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 22.0,
+        "crude_fat_min": 9.5,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 9.0,
+        "ash_max": 7.5,
+        "calcium_min": 0.8,
+        "phosphorus_min": 0.5,
+        "potassium_min": 0.75,
+        "sodium_min": 0.35,
+        "omega_6_min": 2.3,
+        "omega_3_min": 0.35
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3507 kcal/kg, 333 kcal/cup",
+      "images": [
+        "/products/farmina/farmina-food-gastrointestinal-canine.png"
+      ]
+    },
+    {
+      "name": "Gastrointestinal HF canine",
+      "brand": "Farmina",
+      "sub_brand": "Vet Life",
+      "url": "https://www.farmina.com/ca/eshop/dog-food/farmina-vet-life-canine/1239-gastrointestinal-hf-canine.html",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "health_tags": [
+        "gastrointestinal"
+      ],
+      "ingredients_raw": "rice starch, hydrolyzed fish, herring oil, powdered cellulose, potassium chloride, inulin, fructooligosaccharide, yeast extract, calcium carbonate, monocalcium phosphate, salt, turmeric, vitamin A supplement, vitamin D3 supplement, vitamin E supplement, ascorbic acid, niacin, calcium pantothenate, riboflavin, pyridoxine hydrochloride, thiamine hydrochloride, biotin, folic acid, vitamin B12 supplement, choline chloride, beta-carotene, zinc methionine hydroxy analogue chelate, manganese methionine hydroxy analogue chelate, ferrous glycine, copper methionine hydroxy analogue chelate, selenium yeast, calcium iodate, DL-Methionine, taurine, mixed tocopherols (a preservative).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 17.5,
+        "crude_fat_min": 6.0,
+        "crude_fiber_max": 2.9,
+        "moisture_max": 9.0,
+        "ash_max": 6.3,
+        "epa_min": 0.15,
+        "dha_min": 0.2,
+        "calcium_min": 0.6,
+        "phosphorus_min": 0.4,
+        "potassium_min": 0.6,
+        "sodium_min": 0.2,
+        "omega_6_min": 1.3,
+        "omega_3_min": 0.9
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "237 kcal/cup",
+      "images": [
+        "/products/farmina/farmina-food-gastrointestinal-hf-canine.png"
+      ]
+    },
+    {
+      "name": "Urinary ST/Control canine",
+      "brand": "Farmina",
+      "sub_brand": "Vet Life",
+      "url": "https://www.farmina.com/ca/eshop/dog-food/farmina-vet-life-canine/737-urinary-st/control-canine.html",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "health_tags": [
+        "urinary"
+      ],
+      "ingredients_raw": "rice, dehydrated chicken, chicken fat, sweet potatoes, whole oats, dried whole eggs, flaxseed, hydrolyzed fish, herring oil, potassium chloride, powdered cellulose, calcium sulfate dihydrate, calcium carbonate, salt, vitamin A supplement, vitamin D3 supplement, vitamin E supplement, ascorbic acid, niacin, calcium pantothenate, riboflavin, pyridoxine hydrochloride, thiamine hydrochloride, biotin, folic acid, vitamin B12 supplement, choline chloride, beta-carotene, zinc methionine hydroxy analogue chelate, manganese methionine hydroxy analogue chelate, ferrous glycine, copper methionine hydroxy analogue chelate, selenium yeast, calcium iodate, DL-Methionine, taurine, L-Carnitine, mixed tocopherols (a preservative).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 18.5,
+        "crude_fat_min": 18.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 9.0,
+        "ash_max": 6.4,
+        "calcium_min": 0.65,
+        "phosphorus_min": 0.4,
+        "potassium_min": 0.6,
+        "sodium_min": 0.2,
+        "omega_6_min": 2.7,
+        "omega_3_min": 0.4
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3971 kcal/kg, 397 kcal/cup",
+      "images": [
+        "/products/farmina/farmina-food-urinary-st-control-canine.png"
+      ]
+    },
+    {
+      "name": "Urinary ST/Management Canine",
+      "brand": "Farmina",
+      "sub_brand": "Vet Life",
+      "url": "https://www.farmina.com/ca/eshop/dog-food/farmina-vet-life-canine/738-urinary-st/management-canine.html",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "health_tags": [
+        "urinary"
+      ],
+      "ingredients_raw": "Rice, dehydrated chicken, chicken fat, sweet potatoes, whole oats, dried whole eggs, flaxseed, hydrolyzed fish, herring oil, potassium chloride, powdered cellulose, calcium sulfate dihydrate, calcium carbonate, salt, glucosamine hydrochloride, vitamin A supplement, vitamin D3 supplement, vitamin E supplement, ascorbic acid, niacin, calcium pantothenate, riboflavin, pyridoxine hydrochloride, thiamine hydrochloride, biotin, folic acid, vitamin B12 supplement, choline chloride, beta-carotene, zinc methionine hydroxy analogue chelate, manganese methionine hydroxy analogue chelate, ferrous glycine, copper methionine hydroxy analogue chelate, selenium yeast, calcium iodate, DL-Methionine, taurine, L-Carnitine, mixed tocopherols (a preservative).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 18.5,
+        "crude_fat_min": 18.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 9.0,
+        "ash_max": 6.4,
+        "calcium_min": 0.65,
+        "phosphorus_min": 0.4,
+        "potassium_min": 0.6,
+        "sodium_min": 0.25,
+        "omega_6_min": 2.7,
+        "omega_3_min": 0.4
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3971 kcal/kg, 397 kcal/cup",
+      "images": [
+        "/products/farmina/farmina-food-urinary-st-management-canine.png"
+      ]
+    },
+    {
+      "name": "Renal Canine",
+      "brand": "Farmina",
+      "sub_brand": "Vet Life",
+      "url": "https://www.farmina.com/ca/eshop/dog-food/farmina-vet-life-canine/740-renal-canine.html",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "health_tags": [
+        "renal"
+      ],
+      "ingredients_raw": "sweet potatoes, rice, chicken fat, dried whole eggs, calcium carbonate, flaxseed, herring oil, hydrolyzed fish, salt, potassium chloride, vitamin A supplement, vitamin D3 supplement, vitamin E supplement, ascorbic acid, niacin, calcium pantothenate, riboflavin, pyridoxine hydrochloride, thiamine hydrochloride, biotin, folic acid, vitamin B12 supplement, choline chloride, beta-carotene, zinc methionine hydroxy analogue chelate, manganese methionine hydroxy analogue chelate, ferrous glycine, copper methionine hydroxy analogue chelate, selenium yeast, calcium iodate, L-Lysine, DL-Methionine, taurine, L-Carnitine, mixed tocopherols (a preservative).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 12.3,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 3.1,
+        "moisture_max": 9.0,
+        "ash_max": 5.5,
+        "calcium_min": 0.5,
+        "phosphorus_min": 0.2,
+        "potassium_min": 0.6,
+        "sodium_min": 0.1,
+        "omega_6_min": 2.5,
+        "omega_3_min": 0.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3799 kcal/kg, 361 kcal/cup",
+      "images": [
+        "/products/farmina/farmina-food-renal-canine.png"
+      ]
+    },
+    {
+      "name": "Caloric Control Canine",
+      "brand": "Farmina",
+      "sub_brand": "Vet Life",
+      "url": "https://www.farmina.com/ca/eshop/dog-food/farmina-vet-life-canine/741-caloric-control-canine.html",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "health_tags": [
+        "weight-management"
+      ],
+      "ingredients_raw": "whole spelt, dried beet pulp, dehydrated chicken, whole oats, chicken fat, dehydrated fish, flaxseed, hydrolyzed fish, powdered cellulose, herring oil, potassium chloride, salt, calcium carbonate, monocalcium phosphate, vitamin A supplement, vitamin D3 supplement, vitamin E supplement, ascorbic acid, niacin, calcium pantothenate, riboflavin, pyridoxine hydrochloride, thiamine hydrochloride, biotin, folic acid, vitamin B12 supplement, choline chloride, beta-carotene, zinc methionine hydroxy analogue chelate, manganese methionine hydroxy analogue chelate, ferrous glycine, copper methionine hydroxy analogue chelate, selenium yeast, calcium iodate, DL-Methionine, taurine, L-Carnitine, mixed tocopherols (a preservative).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 21.0,
+        "crude_fat_min": 5.5,
+        "crude_fiber_max": 9.5,
+        "moisture_max": 9.0,
+        "ash_max": 8.8,
+        "calcium_min": 0.9,
+        "phosphorus_min": 0.7,
+        "potassium_min": 0.6,
+        "sodium_min": 0.25,
+        "omega_6_min": 1.6,
+        "omega_3_min": 0.35
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3019 kcal/kg, 272 kcal/cup",
+      "images": [
+        "/products/farmina/farmina-food-caloric-control-canine.png"
+      ]
+    },
+    {
+      "name": "HP Derma Canine",
+      "brand": "Farmina",
+      "sub_brand": "Vet Life",
+      "url": "https://www.farmina.com/ca/eshop/dog-food/farmina-vet-life-canine/743-hp-derma-canine.html",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "health_tags": [
+        "dermatology"
+      ],
+      "ingredients_raw": "rice starch, hydrolyzed fish, herring oil, powdered cellulose, potassium chloride, calcium carbonate, monocalcium phosphate, salt, vitamin A supplement, vitamin D3 supplement, vitamin E supplement, ascorbic acid, niacin, calcium pantothenate, riboflavin, pyridoxine hydrochloride, thiamine hydrochloride, biotin, folic acid, vitamin B12 supplement, choline chloride, beta-carotene, zinc methionine hydroxy analogue chelate, manganese methionine hydroxy analogue chelate, ferrous glycine, copper methionine hydroxy analogue chelate, selenium yeast, calcium iodate, DL-Methionine, taurine, mixed tocopherols (a preservative).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 17.5,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 2.9,
+        "moisture_max": 9.0,
+        "ash_max": 6.3,
+        "epa_min": 0.35,
+        "dha_min": 0.45,
+        "calcium_min": 0.6,
+        "phosphorus_min": 0.4,
+        "potassium_min": 0.6,
+        "sodium_min": 0.2,
+        "omega_6_min": 2.0,
+        "omega_3_min": 1.55
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3778 kcal/kg, 397 kcal/cup",
+      "images": [
+        "/products/farmina/farmina-food-hp-derma-canine.png"
+      ]
+    },
+    {
+      "name": "Derma Management with Fish canine",
+      "brand": "Farmina",
+      "sub_brand": "Vet Life",
+      "url": "https://www.farmina.com/ca/eshop/dog-food/farmina-vet-life-canine/744-derma-management-with-fish-canine.html",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "health_tags": [
+        "dermatology"
+      ],
+      "ingredients_raw": "sweet potatoes, dehydrated fish, herring oil, calcium carbonate, monocalcium phosphate, salt, vitamin A supplement, vitamin D3 supplement, vitamin E supplement, ascorbic acid, niacin, calcium pantothenate, riboflavin, pyridoxine hydrochloride, thiamine hydrochloride, biotin, folic acid, vitamin B12 supplement, choline chloride, beta-carotene, zinc methionine hydroxy analogue chelate, manganese methionine hydroxy analogue chelate, ferrous glycine, copper methionine hydroxy analogue chelate, selenium yeast, calcium iodate, taurine, mixed tocopherols (a preservative).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 17.5,
+        "crude_fat_min": 11.0,
+        "crude_fiber_max": 3.5,
+        "moisture_max": 9.0,
+        "ash_max": 8.6,
+        "epa_min": 0.35,
+        "dha_min": 0.45,
+        "calcium_min": 0.6,
+        "phosphorus_min": 0.5,
+        "potassium_min": 0.9,
+        "sodium_min": 0.2,
+        "omega_6_min": 2.0,
+        "omega_3_min": 1.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3580 kcal/kg, 358 kcal/cup",
+      "images": [
+        "/products/farmina/farmina-food-derma-management-with-fish-canine.png"
+      ]
+    }
+  ]
+}

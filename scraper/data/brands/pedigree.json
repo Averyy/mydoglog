@@ -1,0 +1,970 @@
+{
+  "brand": "Pedigree",
+  "website_url": "https://www.petsmart.ca",
+  "scraped_at": "2026-03-09T15:07:07.053977+00:00",
+  "scraper_version": "0.1.0",
+  "stats": {
+    "product_count": 30,
+    "by_channel": {
+      "retail": 30
+    },
+    "by_type": {
+      "food": 15,
+      "supplement": 2,
+      "treat": 13
+    }
+  },
+  "products": [
+    {
+      "name": "Adult Dog Food - Beef, Chopped",
+      "brand": "Pedigree",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/pedigree-adult-dog-food---beef-chopped-53884.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "life_stage": "adult",
+      "source_id": "5289288",
+      "images": [
+        "/products/pedigree/pedigree-food-adult-dog-food-beef-chopped.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0058496443207",
+          "sku": "5289288"
+        }
+      ],
+      "ingredients_raw": "Sufficient Water For Processing, Chicken By-Products, Chicken, Meat By-Products, Animal Liver, Beef, Brewers Rice, Minerals (Potassium Chloride, Magnesium Proteinate, Zinc Sulfate, Copper Proteinate, Manganese Sulfate, Copper Sulfate, Potassium Iodide), Sodium Tripolyphosphate, Added Color, Carrageenan, Dried Yam, Natural Smoke Flavor, Guar Gum, Vitamins (Choline Chloride, Vitamin E Supplement, D-Calcium Pantothenate, Biotin, Thiamine Mononitrate [Vitamin B1], Vitamin A Supplement, Vitamin D3 Supplement), Xanthan Gum",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 6.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1063 kcal/kg, 399 kcal/can"
+    },
+    {
+      "name": "Adult Dog Food - Chicken, Chopped",
+      "brand": "Pedigree",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/pedigree-adult-dog-food---chicken-chopped-56029.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "life_stage": "adult",
+      "source_id": "5289289",
+      "images": [
+        "/products/pedigree/pedigree-food-adult-dog-food-chicken-chopped.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0058496441715",
+          "sku": "5289289"
+        }
+      ],
+      "ingredients_raw": "Chicken By-Products, Sufficient Water For Processing, Chicken, Meat By-Products, Animal Liver, Brewers Rice, Minerals (Potassium Chloride, Magnesium Proteinate, Zinc Sulfate, Copper Proteinate, Manganese Sulfate, Copper Sulfate, Potassium Iodide), Sodium Tripolyphosphate, Carrageenan, Dried Yam, Guar Gum, Vitamins (Choline Chloride, Vitamin E Supplement, D-Calcium Pantothenate, Biotin, Thiamine Mononitrate [Vitamin B1], Vitamin A Supplement, Vitamin D3 Supplement), Xanthan Gum, Natural Flavor",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 6.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1171 kcal/kg, 439 kcal/can"
+    },
+    {
+      "name": "Adult Dog Food - Filet Mignon, Chopped",
+      "brand": "Pedigree",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/pedigree-adult-dog-food---filet-mignon-chopped-56030.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "life_stage": "adult",
+      "source_id": "5289291",
+      "images": [
+        "/products/pedigree/pedigree-food-adult-dog-food-filet-mignon-chopped.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0058496442347",
+          "sku": "5289291"
+        }
+      ],
+      "ingredients_raw": "Chicken, Sufficient Water For Processing, Meat By-Products, Animal Liver, Brewers Rice, Beef, Minerals (Potassium Chloride, Magnesium Proteinate, Zinc Sulfate, Copper Proteinate, Manganese Sulfate, Copper Sulfate, Potassium Iodide), Sodium Tripolyphosphate, Added Color, Carrageenan, Dried Yam, Natural Smoke Flavor, Guar Gum, Vitamins (Choline Chloride, Vitamin E Supplement, Biotin, Calcium Pantothenate, Thiamine Mononitrate, Vitamin A Supplement, Vitamin D3 Supplement), Xanthan Gum, Natural Filet Mignon Flavor, Sodium Nitrite (For Color Retention). Product Varieties",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 6.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1030 kcal/kg, 386 kcal/can"
+    },
+    {
+      "name": "Choice Cuts In Sauce Adult Wet Dog Food Beef",
+      "brand": "Pedigree",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/pedigree-choice-cuts-in-sauce-adult-wet-dog-food-beef-12926.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "life_stage": "adult",
+      "source_id": "1211716",
+      "images": [
+        "/products/pedigree/pedigree-food-choice-cuts-in-sauce-adult-wet-dog-food-beef.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0058496782368",
+          "sku": "1211716"
+        }
+      ],
+      "ingredients_raw": "chicken, meat by-products, wheat flour, beef, liver, wheat protein, caramel colour, salt, natural flavours, guar gum, potassium chloride, magnesium proteinate, zinc sulphate, copper lysine complex, copper sulphate, potassium iodide, vegetable oil (source of linoleic acid), sodium tripolyphosphate, xanthan gum, vitamin E, A and D3 supplements, d-calcium pantothenate, thiamine mononitrate (vitamin B1), biotin, onion powder, bay leaves, garlic powder, sodium nitrite (for colour retention) and sufficient water for processing",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "884 kcal/kg, 553 kcal/can"
+    },
+    {
+      "name": "Choice Cuts In Sauce Adult Wet Dog Food Chicken",
+      "brand": "Pedigree",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/pedigree-choice-cuts-in-sauce-adult-wet-dog-food-chicken-21899.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "life_stage": "adult",
+      "source_id": "1211718",
+      "images": [
+        "/products/pedigree/pedigree-food-choice-cuts-in-sauce-adult-wet-dog-food-chicken.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0058496784362",
+          "sku": "1211718"
+        }
+      ],
+      "ingredients_raw": "chicken, meat by-products, wheat flour, liver, wheat protein, natural flavours, salt, guar gum, vegetable oil (source of linoleic acid), potassium chloride, magnesium proteinate, zinc sulphate, copper lysine complex, copper sulphate, potassium iodide, sodium tripolyphosphate, xanthan gum, colours, vitamin E, A and D3 supplements, d-calcium pantothenate, thiamine mononitrate (vitamin B1), biotin, onion powder, bay leaves, garlic powder and sufficient water for processing",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "884 kcal/kg, 557 kcal/can"
+    },
+    {
+      "name": "High Protein Adult Dog Food - Beef & Lamb",
+      "brand": "Pedigree",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/pedigree-high-protein-adult-dog-food---beef-and-lamb-64499.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "life_stage": "adult",
+      "source_id": "5308659",
+      "images": [
+        "/products/pedigree/pedigree-food-high-protein-adult-dog-food-beef-lamb.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0058496447694",
+          "sku": "5308659"
+        }
+      ],
+      "ingredients_raw": "Sufficient Water For Processing, Chicken, Meat By-Products, Wheat Flour, Wheat Gluten, Beef, Lamb, Added Color, Salt, Minerals (Potassium Chloride, Magnesium Sulfate, Zinc Sulfate, Copper Proteinate, Potassium Iodide, Manganese Sulfate, Selenium, Copper Sulfate), Guar Gum, Sodium Tripolyphosphate, Vitamins (Choline Chloride, Vitamin E Supplement, Thiamine Mononitrate, Calcium Pantothenate, Biotin, Riboflavin Supplement, Vitamin A Supplement, Vitamin D3 Supplement, Vitamin B12 Supplement), Natural Flavour, Xanthan Gum, Sodium Nitrite (For Color Retention)",
+      "guaranteed_analysis": {
+        "crude_protein_min": 11.0,
+        "crude_fiber_max": 1.0,
+        "crude_fat_min": 4.0,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "868 kcal/kg, 325 kcal/can"
+    },
+    {
+      "name": "Adult Dry Food - Roasted Chicken and Vegetable with Bacon Flavoured Bites",
+      "brand": "Pedigree",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/pedigree-adult-dry-food---roasted-chicken-and-vegetable-with-bacon-flavoured-bites-90920.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "source_id": "5363892",
+      "images": [
+        "/products/pedigree/pedigree-food-adult-dry-food-roasted-chicken-and-vegetable-with-bacon-flavoured-bites.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0058496470005",
+          "sku": "5363892"
+        }
+      ],
+      "ingredients_raw": "Ground Whole Grain Corn, Meat and Bone Meal, Soybean Meal, Corn Protein Meal, Animal Fat (Source of Omega 6 Fatty Acids [Preserved with BHA and Citric Acid]), Ground Whole Grain Wheat, Dried Plain Beet Pulp, Natural Flavour (Source of Roasted Chicken Flavour), Chicken By-Product Meal, Salt, Beef, Potassium Chloride, Calcium Carbonate, Choline Chloride, DL-Methionine, Dried Peas, Lamb Meal, Zinc Sulfate, L-Tryptophan, Vitamin E Supplement, Red 40, Yellow 5, Dried Carrots, Yellow 6, Blue 2, Copper Sulfate, Niacin Supplement (Vitamin B3), Sodium Selenite, Natural Bacon Flavour, Potassium Iodide, D-Calcium Pantothenate (Vitamin B5), Vitamin A Supplement, Riboflavin Supplement (Vitamin B2), Vitamin B12 Supplement, Thiamine Mononitrate (Vitamin B1), Vitamin D3 Supplement, Pyridoxine Hydrochloride (Vitamin B6), Folic Acid",
+      "guaranteed_analysis": {
+        "crude_protein_min": 22.0,
+        "crude_fat_min": 10.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 12.0,
+        "omega_6_min": 1.5,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3307 kcal/kg, 321 kcal/cup"
+    },
+    {
+      "name": "Dry Puppy Food - Chicken, Rice and Vegetables",
+      "brand": "Pedigree",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/pedigree-dry-puppy-food---chicken-rice-and-vegetables-90918.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "life_stage": "puppy",
+      "source_id": "5363890",
+      "images": [
+        "/products/pedigree/pedigree-food-dry-puppy-food-chicken-rice-and-vegetables.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0058496470197",
+          "sku": "5363890"
+        }
+      ],
+      "ingredients_raw": "Ground Whole Grain Corn, Chicken By-Product Meal, Ground Whole Grain Wheat, Soybean Meal, Brewers Rice, Animal Fat (Source of Omega 6 Fatty Acids [Preserved with BHA and Citric Acid]), Meat and Bone Meal, Natural Flavour (Source of Chicken Flavour), Dried Brewers Yeast, Salt, Monocalcium Phosphate, Fish Oil ([Source of DHA] Preserved with Mixed Tocopherols), Dried Plain Beet Pulp, Potassium Chloride, Calcium Carbonate, Choline Chloride, DL-Methionine, Dried Peas, Zinc Sulfate, L-Tryptophan, Vitamin E Supplement, Red 40, Dried Carrots, Yellow 5, Blue 2, Copper Sulfate, Yellow 6, Niacin Supplement (Vitamin B3), Sodium Selenite, Potassium Iodide, D-Calcium Pantothenate (Vitamin B5), Vitamin A Supplement, Riboflavin Supplement (Vitamin B2), Vitamin B12 Supplement, Thiamine Mononitrate (Vitamin B1), Vitamin D3 Supplement, Pyridoxine Hydrochloride (Vitamin B6), Folic Acid",
+      "guaranteed_analysis": {
+        "crude_protein_min": 27.0,
+        "crude_fat_min": 11.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 12.0,
+        "omega_6_min": 1.6,
+        "dha_min": 0.05,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3463 kcal/kg, 295 kcal/cup"
+    },
+    {
+      "name": "Dry Puppy Food - Chicken, Rice and Vegetables Recipe",
+      "brand": "Pedigree",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/pedigree-dry-puppy-food---chicken-rice-and-vegetables-recipe-90917.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "life_stage": "puppy",
+      "source_id": "5363889",
+      "images": [
+        "/products/pedigree/pedigree-food-dry-puppy-food-chicken-rice-and-vegetables-recipe.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0058496470159",
+          "sku": "5363889"
+        }
+      ],
+      "ingredients_raw": "Ground Whole Grain Corn, Chicken By-Product Meal, Ground Whole Grain Wheat, Soybean Meal, Brewers Rice, Animal Fat (Source of Omega 6 Fatty Acids [Preserved with BHA and Citric Acid]), Meat and Bone Meal, Natural Flavour (Source of Chicken Flavour), Dried Brewers Yeast, Salt, Monocalcium Phosphate, Fish Oil ([Source of DHA] Preserved with Mixed Tocopherols), Dried Plain Beet Pulp, Potassium Chloride, Calcium Carbonate, Choline Chloride, DL-Methionine, Dried Peas, Zinc Sulfate, L-Tryptophan, Vitamin E Supplement, Red 40, Dried Carrots, Yellow 5, Blue 2, Copper Sulfate, Yellow 6, Niacin Supplement (Vitamin B3), Sodium Selenite, Potassium Iodide, D-Calcium Pantothenate (Vitamin B5), Vitamin A Supplement, Riboflavin Supplement (Vitamin B2), Vitamin B12 Supplement, Thiamine Mononitrate (Vitamin B1), Vitamin D3 Supplement, Pyridoxine Hydrochloride (Vitamin B6), Folic Acid",
+      "guaranteed_analysis": {
+        "crude_protein_min": 27.0,
+        "crude_fat_min": 11.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 12.0,
+        "omega_6_min": 1.6,
+        "dha_min": 0.05,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3463 kcal/kg, 295 kcal/cup"
+    },
+    {
+      "name": "High Protein Small Dog+ Dry Food For Adult Dogs - Chicken & Vegetable Flavour With Calcium",
+      "brand": "Pedigree",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/pedigree-high-protein-small-dog-dry-food-for-adult-dogs---chicken-and-vegetable-flavour-with-calcium-62903.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "source_id": "5308269",
+      "images": [
+        "/products/pedigree/pedigree-food-high-protein-small-dog-dry-food-for-adult-dogs-chicken-vegetable-flavour-with-ca.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0058496442217",
+          "sku": "5308269"
+        }
+      ],
+      "ingredients_raw": "Corn, Meat & Bone Meal, Chicken By-Product Meal, Corn Gluten Meal, Animal Fat (Preserved with BHA & Citric Acid), Soybean Meal, Natural Flavour, Ground Wheat, Dried Plain Beet Pulp, Salt, Caramel Colour, Potassium Chloride, Choline Chloride, DL-Methionine, Dried Peas, Blue 2, Yellow 5, Yellow 6, Zinc Sulfate, Vitamin E Supplement, Niacin Supplement, Dried Carrots, Biotin, L-Tryptophan, BHA (preservative), Citric Acid (preservative), D-Calcium Pantothenate [Source of Vitamin B5], Riboflavin Supplement [Vitamin B2], Pyridoxine Hydrochloride [Vitamin B6], Copper Sulfate, Sodium Selenite, Vitamin A Supplement, Thiamine Mononitrate [Vitamin B1], Vitamin B12 Supplement, Potassium Iodide, Vitamin D3 Supplement, Folic Acid",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.5,
+        "crude_fat_min": 10.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 12.0,
+        "calcium_min": 0.8
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3445 kcal/kg, 319 kcal/cup"
+    },
+    {
+      "name": "Tender Bites Small Dog Dry Dog Food Chicken & Steak Flavour",
+      "brand": "Pedigree",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/pedigree-tender-bites-small-dog-dry-dog-food-chicken-and-steak-flavour-71978.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "source_id": "5326528",
+      "images": [
+        "/products/pedigree/pedigree-food-tender-bites-small-dog-dry-dog-food-chicken-steak-flavour.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0058496455590",
+          "sku": "5326528"
+        }
+      ],
+      "ingredients_raw": "Ground Whole Grain Corn, Chicken By-Product Meal (Source of Glucosamine & Chondroitin Sulfate), Soybean Meal, Ground Whole Grain Wheat, Meat and Bone Meal, Animal Fat (Source of Omega 6 Fatty Acids) [Preserved with BHA/Citric Acid], Corn Gluten Meal, Natural Flavour, Brewers Rice, Chicken Meal, Glycerin, Salt, Sugar, Monocalcium Phosphate, Potassium Chloride, Calcium Carbonate, Choline Chloride, Phosphoric Acid, DL-Methionine, Dried Peas, Potassium Sorbate (preservative), Zinc Sulfate, Natural Grilled Steak Flavour, Vitamin E Supplement, L-Tryptophan, BHA (preservative), Citric Acid (preservative), Red 40, Yellow 6, Dried Carrots, Niacin Supplement [Vitamin B3], Blue 2, Yellow 5, Copper Sulfate, D-Calcium Pantothenate [Source of Vitamin B5], Sodium Selenite, Potassium Iodide, Vitamin A Supplement, Riboflavin Supplement [Vitamin B2], Vitamin B12 Supplement, Thiamine Mononitrate [Vitamin B1], Vitamin D3 Supplement, Pyridoxine Hydrochloride [Vitamin B6], Folic Acid",
+      "guaranteed_analysis": {
+        "crude_protein_min": 21.0,
+        "crude_fat_min": 11.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 12.0,
+        "omega_6_min": 2.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3450 kcal/kg, 353 kcal/cup"
+    },
+    {
+      "name": "Vitality+ Dry Food For Adult Dogs - Grilled Steak & Vegetable Flavour With Calcium",
+      "brand": "Pedigree",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/pedigree-vitality-dry-food-for-adult-dogs---grilled-steak-and-vegetable-flavour-with-calcium-90937.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "source_id": "5364629",
+      "images": [
+        "/products/pedigree/pedigree-food-vitality-dry-food-for-adult-dogs-grilled-steak-vegetable-flavour-with-calcium.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0058496440510",
+          "sku": "5364629"
+        }
+      ],
+      "ingredients_raw": "Corn, Meat & Bone Meal, Corn Gluten Meal, Animal Fat (Preserved with BHA & Citric Acid), Soybean Meal, Natural Flavor, Chicken By-Product Meal, Dried Plain Beet Pulp, Salt, Caramel Colour, Potassium Chloride, Choline Chloride, DL-Methionine, Dried Peas, Blue 2, Yellow 5, Yellow 6, Zinc Sulfate, Vitamin E Supplement, Niacin Supplement [Vitamin B3], Dried Carrots, Biotin, L-Tryptophan, BHA (preservative), Citric Acid (preservative), Grilled Filet Mignon Flavor, D-Calcium Pantothenate [Source of Vitamin B5], Riboflavin Supplement [Vitamin B2], Pyridoxine Hydrochloride [Vitamin B6], Copper Sulfate, Sodium Selenite, Vitamin A Supplement, Thiamine Mononitrate [Vitamin B1], Vitamin B12 Supplement, Potassium Iodide, Vitamin D3 Supplement, Folic Acid",
+      "guaranteed_analysis": {
+        "crude_protein_min": 21.0,
+        "crude_fat_min": 10.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 12.0,
+        "calcium_min": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3487 kcal/kg, 322 kcal/cup"
+    },
+    {
+      "name": "Vitality+ Dry Food For Adult Dogs - Hearty Beef & Vegetable Flavour With Calcium",
+      "brand": "Pedigree",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/pedigree-vitality-dry-food-for-adult-dogs---hearty-beef-and-vegetable-flavour-with-calcium-28672.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "source_id": "5146218",
+      "images": [
+        "/products/pedigree/pedigree-food-vitality-dry-food-for-adult-dogs-hearty-beef-vegetable-flavour-with-calcium.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0058496368661",
+          "sku": "5146218"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0058496423049",
+          "sku": "5195923"
+        }
+      ],
+      "ingredients_raw": "Corn, Meat & Bone Meal, Corn Gluten Meal, Animal Fat (Preserved with BHA & Citric Acid), Soybean Meal, Natural Flavor, Chicken By-Product Meal, Dried Plain Beet Pulp, Salt, Caramel Colour, Potassium Chloride, Choline Chloride, DL-Methionine, Dried Peas, Blue 2, Yellow 5, Yellow 6, Zinc Sulfate, Vitamin E Supplement, Niacin Supplement [Vitamin B3], Dried Carrots, Biotin, L-Tryptophan, BHA (preservative), Citric Acid (preservative), Beef Flavor, D-Calcium Pantothenate [Source of Vitamin B5], Riboflavin Supplement [Vitamin B2], Pyridoxine Hydrochloride [Vitamin B6], Copper Sulfate, Sodium Selenite, Vitamin A Supplement, Thiamine Mononitrate [Vitamin B1], Vitamin B12 Supplement, Potassium Iodide, Vitamin D3 Supplement, Folic Acid",
+      "guaranteed_analysis": {
+        "crude_protein_min": 21.0,
+        "crude_fat_min": 10.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 12.0,
+        "calcium_min": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3487 kcal/kg, 322 kcal/cup"
+    },
+    {
+      "name": "Vitality+ Dry Food For Adult Dogs - Roasted Chicken & Vegetable Flavour With Calcium",
+      "brand": "Pedigree",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/pedigree-vitality-dry-food-for-adult-dogs---roasted-chicken-and-vegetable-flavour-with-calcium-2131.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "source_id": "5064850",
+      "images": [
+        "/products/pedigree/pedigree-food-vitality-dry-food-for-adult-dogs-roasted-chicken-vegetable-flavour-with-calcium.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0058496025243",
+          "sku": "5064850"
+        }
+      ],
+      "ingredients_raw": "Corn, Meat & Bone Meal, Corn Gluten Meal, Animal Fat (Preserved with BHA & Citric Acid), Soybean Meal, Natural Flavor, Chicken By-Product Meal, Dried Plain Beet Pulp, Salt, Caramel Colour, Potassium Chloride, Choline Chloride, DL-Methionine, Dried Peas, Blue 2, Yellow 5, Yellow 6, Zinc Sulfate, Vitamin E Supplement, Niacin Supplement [Vitamin B3], Dried Carrots, Biotin, L-Tryptophan, BHA (preservative), Citric Acid (preservative), Roasted Chicken Flavour, D-Calcium Pantothenate [Source of Vitamin B5], Riboflavin Supplement [Vitamin B2], Pyridoxine Hydrochloride [Vitamin B6], Copper Sulfate, Sodium Selenite, Vitamin A Supplement, Thiamine Mononitrate [Vitamin B1], Vitamin B12 Supplement, Potassium Iodide, Vitamin D3 Supplement, Folic Acid.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 21.0,
+        "crude_fat_min": 10.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 12.0,
+        "calcium_min": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3487 kcal/kg, 322 kcal/cup"
+    },
+    {
+      "name": "With Marro Bites Pieces Adult Dog Food - Steak & Vegetable",
+      "brand": "Pedigree",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/pedigree-with-marrobites-pieces-adult-dog-food---steak-and-vegetable-83565.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "source_id": "5351496",
+      "images": [
+        "/products/pedigree/pedigree-food-with-marro-bites-pieces-adult-dog-food-steak-vegetable.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0058496467401",
+          "sku": "5351496"
+        }
+      ],
+      "ingredients_raw": "Ground Whole Grain Corn, Meat and Bone Meal, Soybean Meal, Corn Protein Meal, Animal Fat (Source of Omega 6 Fatty Acids [Preserved with BHA and Citric Acid]), Natural Flavour, Dried Plain Beet Pulp, Salt, Cooked Bone Marrow, Potassium Chloride, Calcium Carbonate, Choline Chloride, Dried Peas, DL-Methionine, Zinc Sulfate, Natural Grilled Steak Flavour, Vitamin E Supplement, L-Tryptophan, Red #40, Dried Carrots, Niacin Supplement, Copper Sulfate, Yellow #6, Sodium Selenite, Blue #2, Potassium Iodide, D-Calcium Pantothenate, Yellow #5, Vitamin A Supplement, Riboflavin Supplement (Vitamin B2), Vitamin B12Supplement, Thiamine Mononitrate (Vitamin B1), Vitamin D3 Supplement, Pyridoxine Hydrochloride (Vitamin B6), Folic Acid",
+      "guaranteed_analysis": {
+        "crude_protein_min": 21.0,
+        "crude_fat_min": 10.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 12.0,
+        "omega_6_min": 1.5,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3395 kcal/kg, 321 kcal/cup"
+    },
+    {
+      "name": "Adult Wet Dog Food Choice Cuts in Gravy - Grilled Chicken",
+      "brand": "Pedigree",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/pedigree-adult-wet-dog-food-choice-cuts-in-gravy---grilled-chicken-90939.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "life_stage": "adult",
+      "source_id": "5364644",
+      "images": [
+        "/products/pedigree/pedigree-supplement-adult-wet-dog-food-choice-cuts-in-gravy-grilled-chicken.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0058496466749",
+          "sku": "5364644"
+        }
+      ],
+      "ingredients_raw": "Sufficient Water For Processing, Chicken, Animal Liver, Meat By-Products, Poultry By-Products, Wheat Flour, Wheat Gluten, Dried Plain Beet Pulp, Corn Gluten Meal, Corn Starch, Animal Plasma, Soybean Oil, Calcium Carbonate, Sodium Tripolyphosphate, Salt, Natural Grilled Chicken Flavour, Choline Chloride, Potassium Chloride, Xanthan Gum, Added Colour, Ascorbic Acid (Preservative), Minerals (Magnesium Oxide, Zinc Oxide, Copper Sulfate, Calcium Iodate), Vitamins (Vitamin E Supplement, Thiamine Mononitrate [Vitamin B1], Pyridoxine [Vitamin B6], Vitamin D3 Supplement, Folic Acid).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "843 kcal/kg, 84 kcal/pouch"
+    },
+    {
+      "name": "Adult Wet Dog Food Choice Cuts in Gravy",
+      "brand": "Pedigree",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/pedigree-adult-wet-dog-food-choice-cuts-in-gravy-90922.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "life_stage": "adult",
+      "source_id": "5363894",
+      "images": [
+        "/products/pedigree/pedigree-supplement-adult-wet-dog-food-choice-cuts-in-gravy.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0058496466763",
+          "sku": "5363894"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0058496466725",
+          "sku": "5363905"
+        }
+      ],
+      "ingredients_raw": "Sufficient Water For Processing, Meat By-Products, Animal Liver, Chicken, Wheat Flour, Beef, Enriched Egg Noodles (Semolina, Eggs, Niacin, Ferrous Sulfate, Thiamine Mononitrate, Riboflavin, Folic Acid), Wheat Gluten, Spray Dried Animal Blood Cells, Dried Carrots, Dried Peas, Soybean Oil, Dried Plain Beet Pulp, Corn Gluten Meal, Corn Starch, Calcium Carbonate, Sodium Tripolyphosphate, Salt, Added Colour, Choline Chloride, Potassium Chloride, Xanthan Gum, Ascorbic Acid (Preservative), Minerals (Magnesium Oxide, Zinc Oxide, Copper Sulfate, Calcium Iodate), Vitamins (Vitamin E Supplement, Thiamine Mononitrate [Vitamin B1], Pyridoxine [Vitamin B6], Vitamin D3 Supplement, Folic Acid).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "843 kcal/kg, 84 kcal/pouch"
+    },
+    {
+      "name": "Marrobone Adult Dog Treats Bacon & Cheese Flavour with Real Bone Marrow, Vitamin Enriched",
+      "brand": "Pedigree",
+      "url": "https://www.petsmart.ca/dog/treats/biscuits-cookies-and-bakery-treats/pedigree-marrobone-adult-dog-treats-bacon-and-cheese-flavour-with-real-bone-marrow-vitamin-enriched-17247.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "source_id": "5209422",
+      "images": [
+        "/products/pedigree/pedigree-treat-marrobone-adult-dog-treats-bacon-cheese-flavour-with-real-bone-marrow-vitamin-en.jpg"
+      ],
+      "ingredients_raw": "Wheat Flour, Meat & Bone Meal, Sugar, Natural Flavour, Animal Fat (Preserved With Bha/Bht), Calcium Carbonate, Cooked Beef Bone Marrow, Malted Barley, Salt, Natural Smoke Flavour, Natural Bacon Flavour, Vitamins (Vitamin Supplements [A, B12, D3, E], D-Calcium Pantothenate, Niacin, Riboflavin [Vitamin B2], Pyridoxine Hydrochloride [Vitamin B6], Thiamine Mononitrate [Vitamin B1], Folic Acid), Cheese Powder, Turmeric, Sodium Metabisulfite (A Preservative), Caramel, Iron Oxide.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 12.0,
+        "crude_fat_min": 9.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 12.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3350 kcal/kg, 37 kcal/treat"
+    },
+    {
+      "name": "Marrobone Adult Dog Treats Real Beef Flavour with Real Bone Marrow, Vitamin Enriched",
+      "brand": "Pedigree",
+      "url": "https://www.petsmart.ca/dog/treats/biscuits-cookies-and-bakery-treats/pedigree-marrobone-adult-dog-treats-real-beef-flavour-with-real-bone-marrow-vitamin-enriched-90004.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "source_id": "5366526",
+      "images": [
+        "/products/pedigree/pedigree-treat-marrobone-adult-dog-treats-real-beef-flavour-with-real-bone-marrow-vitamin-enric.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0058496709600",
+          "sku": "5366526"
+        }
+      ],
+      "ingredients_raw": "Wheat Flour, Meat & Bone Meal, Sugar, Natural Flavour, Animal Fat (Preserved With Bha/Bht), Calcium Carbonate, Cooked Bone Marrow, Malted Barley, Salt, Natural Filet Mignon Flavour, Vitamins (Vitamin Supplements [A, B12, D3, E], Folic Acid, D-Calcium Pantothenate, Niacin, Riboflavin [Vitamin B2], Pyridoxine Hydrochloride [Vitamin B6], Thiamine Mononitrate [Vitamin B1]), Sodium Metabisulfite (A Preservative).",
+      "guaranteed_analysis": {
+        "crude_protein_min": 12.0,
+        "crude_fat_min": 9.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 12.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3350 kcal/kg, 37 kcal/treat"
+    },
+    {
+      "name": "Dentastix Dual Flavour Adult Dog Oral Care Dental Treats Rice Flour",
+      "brand": "Pedigree",
+      "url": "https://www.petsmart.ca/dog/treats/dental-treats-and-chews/pedigree-dentastix-dual-flavour-adult-dog-oral-care-dental-treats-83566.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "source_id": "5351195",
+      "images": [
+        "/products/pedigree/pedigree-treat-dentastix-dual-flavour-adult-dog-oral-care-dental-treats-rice-flour.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0058496465889",
+          "sku": "5351195"
+        }
+      ],
+      "ingredients_raw": "Rice Flour, Wheat Starch, Glycerin, Gelatin, Gum Arabic, Natural Poultry Flavour, Calcium Carbonate, Chicken, Cellulose Powder, Sodium Tripolyphosphate, Potassium Chloride, Red #40, Blue #2, Yellow #5, Vitamins (Choline Chloride, d-Calcium Pantothenate, Vitamin B12 Supplement, Folic Acid, Vitamin A Supplement, Niacin, Riboflavin, [Vitamin B2], Pyridoxine Hydrochloride [Vitamin B6], Vitamin D3 Supplement, Thiamine Mononitrate[Vitamin B1], Alpha Tocopherol Acetate [Vitamin E]), Potassium Sorbate (A Preservative), Natural Bacon Flavour, Zinc Sulfate, L-Ascorbyl-2-Polyphosphate [Source of Vitamin C], Green Tea Extract, Turmeric, Iron Oxide",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 1.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 18.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "2780 kcal/kg, 74 kcal/treat"
+    },
+    {
+      "name": "Dentastix Dual Flavour Adult Dog Oral Care Dental Treats Rice Flour",
+      "brand": "Pedigree",
+      "url": "https://www.petsmart.ca/dog/treats/dental-treats-and-chews/pedigree-dentastix-dual-flavour-adult-dog-oral-care-dental-treats-83567.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "source_id": "5351194",
+      "images": [
+        "/products/pedigree/pedigree-treat-dentastix-dual-flavour-adult-dog-oral-care-dental-treats-rice-flour.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0058496465902",
+          "sku": "5351194"
+        }
+      ],
+      "ingredients_raw": "Rice Flour, Wheat Starch, Glycerin, Gelatin, Gum Arabic, Natural Poultry Flavour, Calcium Carbonate, Chicken, Cellulose Powder, Sodium Tripolyphosphate, Potassium Chloride, Red #40, Blue #2, Yellow #5, Vitamins (Choline Chloride, d-Calcium Pantothenate, Vitamin B12 Supplement, Folic Acid, Vitamin A Supplement, Niacin, Riboflavin, [Vitamin B2], Pyridoxine Hydrochloride [Vitamin B6], Vitamin D3 Supplement, Thiamine Mononitrate [Vitamin B1], Alpha Tocopherol Acetate [Vitamin E]), Potassium Sorbate (A Preservative), Natural Bacon Flavour, Zinc Sulfate, L-Ascorbyl-2-Polyphosphate [Source of Vitamin C], Green Tea Extract, Turmeric, Iron Oxide",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 1.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 18.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "2780 kcal/kg, 21 kcal/treat"
+    },
+    {
+      "name": "Dentastix Oral Care Adult Dog Treats for Mini Breed - Original",
+      "brand": "Pedigree",
+      "url": "https://www.petsmart.ca/dog/treats/dental-treats-and-chews/pedigree-dentastix-oral-care-adult-dog-treats-for-mini-breed---original-27108.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "source_id": "5229614",
+      "images": [
+        "/products/pedigree/pedigree-treat-dentastix-oral-care-adult-dog-treats-for-mini-breed-original.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0058496429430",
+          "sku": "5229614"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0058496440558",
+          "sku": "5273867"
+        }
+      ],
+      "ingredients_raw": "Rice Flour, Wheat Starch, Glycerin, Water, Gelatin, Gum Arabic, Calcium Carbonate, Natural Poultry Flavour, Powdered Cellulose, Sodium Tripolyphosphate, Iodized Salt, Potassium Chloride, Vitamins (Choline Chloride, L-Ascorbyl-2-Polyphosphate [Source Of Vitamin C], D-Calcium Pantothenate, Vitamin B12 Supplement, Folic Acid, Vitamin A Supplement, Niacin, Riboflavin Supplement [Vitamin B2], Pyridoxine Hydrochloride [Vitamin B6], Vitamin D3 Supplement, Thiamine Mononitrate [Vitamin B1], Alpha Tocopherol Acetate [Source Of Vitamin E]), Potassium Sorbate, Smoke Flavour, Zinc Sulfate, Green Tea Extract, Turmeric, Iron Oxide, Copper Sulfate",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 1.0,
+        "moisture_max": 18.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "2860 kcal/kg, 21 kcal/treat"
+    },
+    {
+      "name": "Dentastix Oral Care Beef Flavour Adult Dog Treats For Medium Breeds Reduces Plaque & Tartar",
+      "brand": "Pedigree",
+      "url": "https://www.petsmart.ca/dog/treats/dental-treats-and-chews/pedigree-dentastix-oral-care-beef-flavour-adult-dog-treats-for-medium-breeds-reduces-plaque-and-tartar-69585.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "breed_size": "Medium",
+      "source_id": "5280712",
+      "images": [
+        "/products/pedigree/pedigree-treat-dentastix-oral-care-beef-flavour-adult-dog-treats-for-medium-breeds-reduces-plaq.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0058496441616",
+          "sku": "5280712"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0058496442743",
+          "sku": "5280725"
+        }
+      ],
+      "ingredients_raw": "Wheat Flour, Wheat Starch, Corn Flour, Glycerin, Water, Natural Flavour, Gum Arabic, Soy Flour, Sodium Tripolyphosphate, Calcium Carbonate, Cellulose Powder, Gelatin, Colour, Potassium Chloride, Potassium Sorbate (A Preservative), Natural Beef and Smoke Flavours, Carmel, Potassium Sorbate, Zinc Sulphate",
+      "guaranteed_analysis": {
+        "crude_protein_min": 5.5,
+        "crude_fat_min": 0.5,
+        "crude_fat_max": 4.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 18.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "2870 kcal/kg, 47 kcal/treat"
+    },
+    {
+      "name": "Dentastix Oral Care Beef Flavour Adult Dog Treats For Small Breeds Reduces Plaque & Tartar",
+      "brand": "Pedigree",
+      "url": "https://www.petsmart.ca/dog/treats/dental-treats-and-chews/pedigree-dentastix-oral-care-beef-flavour-adult-dog-treats-for-small-breeds-reduces-plaque-and-tartar-69583.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "breed_size": "Small",
+      "source_id": "5280710",
+      "images": [
+        "/products/pedigree/pedigree-treat-dentastix-oral-care-beef-flavour-adult-dog-treats-for-small-breeds-reduces-plaqu.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0058496441739",
+          "sku": "5280710"
+        }
+      ],
+      "ingredients_raw": "Wheat Flour, Wheat Starch, Corn Flour, Glycerin, Water, Natural Flavour, Gum Arabic, Soy Flour, Sodium Tripolyphosphate, Calcium Carbonate, Cellulose Powder, Gelatin, Colour, Potassium Chloride, Potassium Sorbate (A Preservative), Natural Beef and Smoke Flavours, Carmel, Potassium Sorbate, Zinc Sulphate",
+      "guaranteed_analysis": {
+        "crude_protein_min": 5.5,
+        "crude_fat_min": 0.5,
+        "crude_fat_max": 4.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 18.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "2870 kcal/kg, 47 kcal/treat"
+    },
+    {
+      "name": "Dentastix Oral Care Fresh Flavour Adult Dog Treats For Med. Breeds Reduces Plaque & Tartar",
+      "brand": "Pedigree",
+      "url": "https://www.petsmart.ca/dog/treats/dental-treats-and-chews/pedigree-dentastix-oral-care-fresh-flavour-adult-dog-treats-for-med-breeds-reduces-plaque-and-tartar-69584.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "source_id": "5280713",
+      "images": [
+        "/products/pedigree/pedigree-treat-dentastix-oral-care-fresh-flavour-adult-dog-treats-for-med-breeds-reduces-plaque.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0058496443849",
+          "sku": "5280713"
+        }
+      ],
+      "ingredients_raw": "Wheat Flour, Wheat Starch, Corn Flour, Glycerin, Water, Natural Flavour, Gum Arabic, Soy Flour, Sodium Tripolyphosphate, Calcium Carbonate, Cellulose Powder, Gelatin, Colour, Potassium Chloride, Potassium Sorbate (A Preservative), Green Tea Extract, Zinc Sulphate, Eucalyptus Oil",
+      "guaranteed_analysis": {
+        "crude_protein_min": 5.5,
+        "crude_fat_min": 0.5,
+        "crude_fat_max": 4.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 18.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "2870 kcal/kg, 47 kcal/treat"
+    },
+    {
+      "name": "Dentastix Oral Care Fresh Flavour Adult Dog Treats For Small Breeds Reduces Plaque & Tartar",
+      "brand": "Pedigree",
+      "url": "https://www.petsmart.ca/dog/treats/dental-treats-and-chews/pedigree-dentastix-oral-care-fresh-flavour-adult-dog-treats-for-small-breeds-reduces-plaque-and-tartar-84801.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "breed_size": "Small",
+      "source_id": "5356234",
+      "images": [
+        "/products/pedigree/pedigree-treat-dentastix-oral-care-fresh-flavour-adult-dog-treats-for-small-breeds-reduces-plaq.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0058496442156",
+          "sku": "5356234"
+        }
+      ],
+      "ingredients_raw": "Wheat Flour, Wheat Starch, Corn Flour, Glycerin, Water, Natural Flavour, Gum Arabic, Soy Flour, Sodium Tripolyphosphate, Calcium Carbonate, Cellulose Powder, Gelatin, Colour, Potassium Chloride, Potassium Sorbate (A Preservative), Green Tea Extract, Zinc Sulphate, Eucalyptus Oil",
+      "guaranteed_analysis": {
+        "crude_protein_min": 5.5,
+        "crude_fat_min": 0.5,
+        "crude_fat_max": 4.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 18.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "2690 kcal/kg, 42 kcal/treat"
+    },
+    {
+      "name": "Dentastix Oral Care Original Adult Dog Treats For Medium Breeds Reduces Plaque & Tartar",
+      "brand": "Pedigree",
+      "url": "https://www.petsmart.ca/dog/treats/dental-treats-and-chews/pedigree-dentastix-oral-care-original-adult-dog-treats-for-medium-breeds-reduces-plaque-and-tartar-53642.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "breed_size": "Medium",
+      "source_id": "5280711",
+      "images": [
+        "/products/pedigree/pedigree-treat-dentastix-oral-care-original-adult-dog-treats-for-medium-breeds-reduces-plaque-t.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0058496441920",
+          "sku": "5280711"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0058496443467",
+          "sku": "5280714"
+        }
+      ],
+      "ingredients_raw": "Wheat Flour, Wheat Starch, Corn Flour, Glycerin, Water, Natural Flavour, Gum Arabic, Soy Flour, Sodium Tripolyphosphate, Calcium Carbonate, Cellulose Powder, Gelatin, Potassium Chloride, Potassium Sorbate (A Preservative), Zinc Sulphate, Natural & Artificial Smoke Flavour",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 1.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 18.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "2870 kcal/kg, 47 kcal/treat"
+    },
+    {
+      "name": "Dentastix Oral Care Original Adult Dog Treats For Sml. Breeds Reduces Plaque & Tartar",
+      "brand": "Pedigree",
+      "url": "https://www.petsmart.ca/dog/treats/dental-treats-and-chews/pedigree-dentastix-oral-care-original-adult-dog-treats-for-sml-breeds-reduces-plaque-and-tartar-53641.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "source_id": "5280709",
+      "images": [
+        "/products/pedigree/pedigree-treat-dentastix-oral-care-original-adult-dog-treats-for-sml-breeds-reduces-plaque-tart.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0058496442972",
+          "sku": "5280709"
+        }
+      ],
+      "ingredients_raw": "Wheat Flour, Wheat Starch, Corn Flour, Glycerin, Water, Natural Flavour, Gum Arabic, Soy Flour, Sodium Tripolyphosphate, Calcium Carbonate, Cellulose Powder, Gelatin, Potassium Chloride, Potassium Sorbate (A Preservative), Zinc Sulphate, Natural & Artificial Smoke Flavour",
+      "guaranteed_analysis": {
+        "crude_protein_min": 5.5,
+        "crude_fat_min": 0.5,
+        "crude_fat_max": 4.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 18.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "2870 kcal/kg, 47 kcal/treat"
+    },
+    {
+      "name": "Jumbone Adult Dog Treats For Small & Medium Dogs, Real Beef Flavour",
+      "brand": "Pedigree",
+      "url": "https://www.petsmart.ca/dog/treats/soft-and-chewy-treats/pedigree-jumbone-adult-dog-treats-for-small-and-medium-dogs-real-beef-flavour-3784.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "source_id": "5075790",
+      "images": [
+        "/products/pedigree/pedigree-treat-jumbone-adult-dog-treats-for-small-medium-dogs-real-beef-flavour.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0058496024482",
+          "sku": "5075790"
+        }
+      ],
+      "ingredients_raw": "Rice Flour, Glycerin, Sugar, Powdered Cellulose, Wheat Flour, Sodium Caseinate, Natural Poultry Flavour, Sodium Tripolyphosphate, Dried Meat By-Products, Calcium Carbonate, Poassium Chloride, Iodized Salt, Monocalcium Phosphate, Potassium Sorbate (a Preservative), Choline Chloride, Beef Flavour, Zinc Oxide",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.0,
+        "crude_fat_min": 1.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 18.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "2740 kcal/kg, 296 kcal/treat"
+    },
+    {
+      "name": "Jumbone Adult Mini Dog Treats Meaty Centre Beef Flavour",
+      "brand": "Pedigree",
+      "url": "https://www.petsmart.ca/dog/treats/soft-and-chewy-treats/pedigree-jumbone-adult-mini-dog-treats-meaty-centre-beef-flavour-3783.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "source_id": "5173602",
+      "images": [
+        "/products/pedigree/pedigree-treat-jumbone-adult-mini-dog-treats-meaty-centre-beef-flavour.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0058496421779",
+          "sku": "5173602"
+        }
+      ],
+      "ingredients_raw": "rice flour, glycerine, sugar, wheat flour, propylene glycol, cellulose powder, sodium caseinate, natural poultry flavour, calcium carbonate, sodium tripolyphosphate, dried meat by-products, potassium chloride, salt, dicalcium phosphate, potassium sorbate (a preservative), choline chloride, d-calcium pantothenate, vitamin B12 supplement, vitamin A supplement, niacin, riboflavin (vitamin B2), pyridoxine hydrochloride (vitamin B6), vitamin D3 supplement, thiamine mononitrate (vitamin B1), folic acid, DL-alpha tocopherol acetate (source of vitamin E), zinc oxide and copper sulphate",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.0,
+        "crude_fat_min": 1.0,
+        "crude_fat_max": 5.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 18.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "2740 kcal/kg, 53 kcal/treat"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "brand": "Nutrience",
   "website_url": "https://nutrience.com",
-  "scraped_at": "2026-03-08T19:26:05.205640+00:00",
+  "scraped_at": "2026-03-09T13:06:33.493381+00:00",
   "scraper_version": "0.1.0",
   "stats": {
     "product_count": 81,
@@ -22,7 +22,7 @@
       "channel": "retail",
       "product_type": "supplement",
       "product_format": "dry",
-      "ingredients_raw": "Active Ingredients: L-tryptophan, L-theanine, zingiber officinale (ginger root), valeriana officinalis (valerian root), magnesium, passiflora incarnata (passion flower), Thiamine.",
+      "ingredients_raw": "L-tryptophan, L-theanine, zingiber officinale (ginger root), valeriana officinalis (valerian root), magnesium, passiflora incarnata (passion flower), Thiamine., Duck meal, yellow peas, lentils, vegetable glycerin, sunflower oil, tapioca starch, cane molasses, mixed tocopherols, natural flavour.",
       "variants": [
         {
           "size_kg": 0.4,
@@ -41,7 +41,7 @@
       "channel": "retail",
       "product_type": "supplement",
       "product_format": "dry",
-      "ingredients_raw": "Active Ingredients: Omega-3 fatty acids (Schizochytrium spp. algae), Docosahexaenoic acid (DHA), Eicosapentaenoic acid (EPA), Vitamin E, Zinc (zinc oxide), Biotin",
+      "ingredients_raw": "Omega-3 fatty acids (Schizochytrium spp. algae), Docosahexaenoic acid (DHA), Eicosapentaenoic acid (EPA), Vitamin E, Zinc (zinc oxide), Biotin, Herring meal, yellow peas, lentils, vegetable glycerin, flaxseeds, tapioca starch, sunflower oil, salmon meal, fish oil, mixed tocopherols, natural flavour.",
       "variants": [
         {
           "size_kg": 0.4,
@@ -60,7 +60,7 @@
       "channel": "retail",
       "product_type": "supplement",
       "product_format": "dry",
-      "ingredients_raw": "Active Ingredients: Bacillus subtillis, inulin (FOS) (chicory root), curcubita maxima (pumpkin), zingiber officinale (ginger root), pimpinella anisum (aniseed).",
+      "ingredients_raw": "Bacillus subtillis, inulin (FOS) (chicory root), curcubita maxima (pumpkin), zingiber officinale (ginger root), pimpinella anisum (aniseed)., Duck meal, lentils, yellow peas, vegetable glycerin, sunflower oil, tapioca starch, cane molasses, mixed tocopherols, natural flavour.",
       "variants": [
         {
           "size_kg": 0.4,
@@ -79,7 +79,7 @@
       "channel": "retail",
       "product_type": "supplement",
       "product_format": "dry",
-      "ingredients_raw": "Active Ingredients: Glucosamine hydrochloride (shrimp), Methyl sulfonyl methane (MSM), chondroitin sulfate (porcine), perna canaliculus (green lipped mussel), curcuma longa (turmeric root), salmon oil.",
+      "ingredients_raw": "Glucosamine hydrochloride (shrimp), Methyl sulfonyl methane (MSM), chondroitin sulfate (porcine), perna canaliculus (green lipped mussel), curcuma longa (turmeric root), salmon oil., Duck meal, yellow peas, vegetable glycerin, sunflower oil, lentils, tapioca starch, cane molasses, herring meal, gelatin, mixed tocopherols, natural flavour.",
       "variants": [
         {
           "size_kg": 0.4,

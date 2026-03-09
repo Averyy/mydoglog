@@ -1,0 +1,1548 @@
+{
+  "brand": "Nutro",
+  "website_url": "https://www.petsmart.ca",
+  "scraped_at": "2026-03-09T16:02:58.947871+00:00",
+  "scraper_version": "0.1.0",
+  "stats": {
+    "product_count": 46,
+    "by_channel": {
+      "retail": 46
+    },
+    "by_type": {
+      "food": 42,
+      "supplement": 1,
+      "treat": 3
+    }
+  },
+  "products": [
+    {
+      "name": "Limited Ingredient Diet Adult Wet Dog Food - Premium Loaf",
+      "brand": "Nutro",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/nutro-limited-ingredient-diet-adult-wet-dog-food---premium-loaf-125oz-27619.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Limited Ingredient Diet",
+      "life_stage": "adult",
+      "source_id": "5231081",
+      "images": [
+        "/products/nutro/nutro-food-limited-ingredient-diet-adult-wet-dog-food-premium-loaf.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "12.5oz",
+          "upc": "0079105115919",
+          "sku": "5231081"
+        }
+      ],
+      "ingredients_raw": "Species: Dog Brand: Nutro Food Type: Wet Breed Size: All Sizes Life Stage: Adult (1–7 years) Nutritional Benefits: Natural Health Consideration: Natural,Real Meat First,Limited Ingredient Flavor: Turkey & Potato Weight: 12.500 OZ Ingredients: Turkey, Turkey Broth, Whole Potatoes, Turkey Liver, Dried Potatoes, Guar Gum, Sunflower Oil (preserved with Mixed Tocopherols), Carrageenan, Potassium Chloride, Choline Chloride, Calcium Carbonate, Ferrous Sulfate, L–Ascorbyl–2–Polyphosphate, Vitamin E Supplement, Zinc Oxide, Thiamine Mononitrate, Magnesium Sulfate, Copper Proteinate, Sodium Selenite, Manganese Sulfate, D–Calcium Pantothenate, Vitamin A Supplement, Potassium Iodide, Biotin, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.0,
+        "crude_fat_min": 4.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1033 kcal/kg"
+    },
+    {
+      "name": "Natural Choice Adult Wet Dog Food Grain Free Beef & Potato Stew Recipe",
+      "brand": "Nutro",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/nutro-natural-choice-adult-wet-dog-food-grain-free-beef-and-potato-stew-recipe-57607.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Natural Choice",
+      "life_stage": "adult",
+      "source_id": "5299329",
+      "images": [
+        "/products/nutro/nutro-food-natural-choice-adult-wet-dog-food-grain-free-beef-potato-stew-recipe.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0079105128940",
+          "sku": "5299329"
+        }
+      ],
+      "ingredients_raw": "Beef, Chicken Broth, Pork Broth, Potatoes, Chicken, Tomatoes, Beef Liver, Carrots, Pork Plasma, Tapioca Starch, Dried Egg Product, Minerals, Pea Fiber, Salt, Choline Chloride, Dried Tomatoes, Xanthan Gum, Sodium Acid Pyrophosphate, Tetrasodium Pyrophosphate, Sodium Hexametaphosphate, Vitamins",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 3.5,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "914 kcal/kg"
+    },
+    {
+      "name": "Natural Choice Adult Wet Dog Food Grain Free Beef, Sweet Potato & Carrot Recipe",
+      "brand": "Nutro",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/nutro-natural-choice-adult-wet-dog-food-grain-free-beef-sweet-potato-and-carrot-recipe-58266.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Natural Choice",
+      "life_stage": "adult",
+      "source_id": "5300167",
+      "images": [
+        "/products/nutro/nutro-food-natural-choice-adult-wet-dog-food-grain-free-beef-sweet-potato-carrot-recipe.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0079105128995",
+          "sku": "5300167"
+        }
+      ],
+      "ingredients_raw": "Beef, Chicken Broth, Beef Liver, Chicken, Sweet Potatoes, Carrots, Dried Peas, Dried Potatoes, Sunflower Oil (preserved with Mixed Tocopherols), Guar Gum, Flaxseed, Calcium Carbonate, Salt, DL-Methionine, Potassium Chloride, Carrageenan, Dried Yams, Sodium Acid Pyrophosphate, Tetrasodium Pyrophosphate, Natural Flavor, Choline Chloride, Ferrous Sulfate, Sodium Hexametaphosphate, Magnesium Sulfate, Zinc Oxide, Thiamine Mononitrate, Vitamin E Supplement, Copper Proteinate, Sodium Selenite, Manganese Sulfate, D-Calcium Pantothenate, Vitamin A Supplement, Potassium Iodide, Biotin, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.0,
+        "crude_fat_min": 7.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1310 kcal/kg, 465 kcal/can"
+    },
+    {
+      "name": "Natural Choice Adult Wet Dog Food Grain Free Chicken, Carrot & Pea Stew Recipe",
+      "brand": "Nutro",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/nutro-natural-choice-adult-wet-dog-food-grain-free-chicken-carrot-and-pea-stew-recipe-58264.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Natural Choice",
+      "life_stage": "adult",
+      "source_id": "5300165",
+      "images": [
+        "/products/nutro/nutro-food-natural-choice-adult-wet-dog-food-grain-free-chicken-carrot-pea-stew-recipe.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0079105129015",
+          "sku": "5300165"
+        }
+      ],
+      "ingredients_raw": "Chicken, Pork Broth, Chicken Broth, Chicken Liver, Carrots, Peas, Dried Egg Product, Pork Plasma, Dried Peas, Tapioca Starch, Sunflower Oil (preserved with Mixed Tocopherols), Calcium Carbonate, Guar Gum, Salt, Potassium Chloride, Sodium Acid Pyrophosphate, Tetrasodium Pyrophosphate, Tricalcium Phosphate, Xanthan Gum, Natural Flavor, Dried Tomatoes, Magnesium Sulfate, Sodium Hexametaphosphate, Choline Chloride, Ferrous Sulfate, Vitamin E Supplement, Zinc Oxide, Copper Proteinate, D-Calcium Pantothenate, Sodium Selenite, Vitamin A Supplement, Manganese Sulfate, Thiamine Mononitrate, Biotin, Riboflavin Supplement, Potassium Iodide, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "879 kcal/kg, 312 kcal/can"
+    },
+    {
+      "name": "Natural Choice Adult Wet Dog Food Grain Free Chicken, Potato, Carrot & Pea Recipe",
+      "brand": "Nutro",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/nutro-natural-choice-adult-wet-dog-food-grain-free-chicken-potato-carrot-and-pea-recipe-58261.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Natural Choice",
+      "life_stage": "adult",
+      "source_id": "5300012",
+      "images": [
+        "/products/nutro/nutro-food-natural-choice-adult-wet-dog-food-grain-free-chicken-potato-carrot-pea-recipe.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0079105128971",
+          "sku": "5300012"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Broth, Chicken Liver, Potatoes, Carrots, Peas, Dried Peas, Dried Potatoes, Sunflower Oil (preserved with Mixed Tocopherols), Guar Gum, Flaxseed, Salt, DL-Methionine, Potassium Chloride, Carrageenan, Dried Yams, Sodium Acid Pyrophosphate, Tetrasodium Pyrophosphate, Natural Flavor, Calcium Carbonate, Choline Chloride, Ferrous Sulfate, Sodium Hexametaphosphate, Zinc Oxide, Thiamine Mononitrate, Magnesium Sulfate, Vitamin E Supplement, Copper Proteinate, Sodium Selenite, Manganese Sulfate, D-Calcium Pantothenate, Vitamin A Supplement, Potassium Iodide, Biotin, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.5,
+        "crude_fat_min": 6.5,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1178 kcal/kg, 418 kcal/can"
+    },
+    {
+      "name": "Natural Choice Adult Wet Dog Food Grain Free Chunky Beef, Tomato, Carrot & Pea Stew",
+      "brand": "Nutro",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/nutro-natural-choice-adult-wet-dog-food-grain-free-chunky-beef-tomato-carrot-and-pea-stew-58265.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Natural Choice",
+      "life_stage": "adult",
+      "source_id": "5300166",
+      "images": [
+        "/products/nutro/nutro-food-natural-choice-adult-wet-dog-food-grain-free-chunky-beef-tomato-carrot-pea-stew.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0079105129039",
+          "sku": "5300166"
+        }
+      ],
+      "ingredients_raw": "Beef, Pork Broth, Chicken Broth, Beef Liver, Tomatoes, Carrots, Peas, Dried Egg Product, Pork Plasma, Dried Peas, Tapioca Starch, Sunflower Oil (preserved with Mixed Tocopherols), Calcium Carbonate, Guar Gum, Salt, Potassium Chloride, Sodium Acid Pyrophosphate, Tetrasodium Pyrophosphate, Xanthan Gum, Natural Flavor, Dried Tomatoes, Tricalcium Phosphate, Magnesium Sulfate, Sodium Hexametaphosphate, Choline Chloride, Ferrous Sulfate, Vitamin E Supplement, Zinc Oxide, Copper Proteinate, D-Calcium Pantothenate, Sodium Selenite, Vitamin A Supplement, Manganese Sulfate, Thiamine Mononitrate, Biotin, Riboflavin Supplement, Potassium Iodide, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.0,
+        "crude_fat_min": 4.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1012 kcal/kg"
+    },
+    {
+      "name": "Natural Choice Adult Wet Dog Food Grain Free Slow Cooked Chicken Recipe",
+      "brand": "Nutro",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/nutro-natural-choice-adult-wet-dog-food-grain-free-slow-cooked-chicken-recipe-58263.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Natural Choice",
+      "life_stage": "adult",
+      "source_id": "5300014",
+      "images": [
+        "/products/nutro/nutro-food-natural-choice-adult-wet-dog-food-grain-free-slow-cooked-chicken-recipe.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0079105128957",
+          "sku": "5300014"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Broth, Beef Liver, Dried Egg Product, Minerals, Dried Tomatoes, Choline Chloride, Dried Yams, Guar Gum, Carrageenan, Sodium Acid Pyrophosphate, Tetrasodium Pyrophosphate, Salt, Sodium Hexametaphosphate, Vitamins",
+      "guaranteed_analysis": {
+        "crude_protein_min": 10.0,
+        "crude_fat_min": 7.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1226 kcal/kg"
+    },
+    {
+      "name": "Natural Choice Adult Wet Dog Food Grain Free Tender Beef Recipe",
+      "brand": "Nutro",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/nutro-natural-choice-adult-wet-dog-food-grain-free-tender-beef-recipe-58262.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Natural Choice",
+      "life_stage": "adult",
+      "source_id": "5300013",
+      "images": [
+        "/products/nutro/nutro-food-natural-choice-adult-wet-dog-food-grain-free-tender-beef-recipe.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0079105128964",
+          "sku": "5300013"
+        }
+      ],
+      "ingredients_raw": "Beef, Chicken Broth, Chicken, Beef Liver, Dried Egg Product, Minerals, Dried Tomatoes, Choline Chloride, Dried Yams, Guar Gum, Carrageenan, Sodium Acid Pyrophosphate, Tetrasodium Pyrophosphate, Salt, Sodium Hexametaphosphate, Vitamins",
+      "guaranteed_analysis": {
+        "crude_protein_min": 5.0,
+        "crude_fat_min": 6.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1090 kcal/kg"
+    },
+    {
+      "name": "Natural Choice Adult Wet Dog Food Grain Free Tender Chicken, Sweet Potato & Pea Stew Recipe",
+      "brand": "Nutro",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/nutro-natural-choice-adult-wet-dog-food-grain-free-tender-chicken-sweet-potato-and-pea-stew-recipe-57688.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Natural Choice",
+      "life_stage": "adult",
+      "source_id": "5299328",
+      "images": [
+        "/products/nutro/nutro-food-natural-choice-adult-wet-dog-food-grain-free-tender-chicken-sweet-potato-pea-ste.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0079105128933",
+          "sku": "5299328"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Broth, Pork Broth, Chicken Liver, Sweet Potatoes, Peas, Pork Plasma, Tapioca Starch, Pea Fiber, Minerals, Calcium Carbonate, Salt, Dried Tomatoes, Choline Chloride, Xanthan Gum, Sodium Acid Pyrophosphate, Tetrasodium Pyrophosphate, Sodium Hexametaphosphate, Vitamins",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 3.5,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "986 kcal/kg"
+    },
+    {
+      "name": "Natural Choice Heartly Stew Adult Wet Dog Food - Grain Free",
+      "brand": "Nutro",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/nutro-natural-choiceandtrade-heartly-stew-adult-wet-dog-food---grain-free-125oz-27615.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Natural Choice",
+      "life_stage": "adult",
+      "source_id": "5230981",
+      "images": [
+        "/products/nutro/nutro-food-natural-choice-heartly-stew-adult-wet-dog-food-grain-free.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "12.5oz",
+          "upc": "0079105115797",
+          "sku": "5230981"
+        }
+      ],
+      "ingredients_raw": "Species: Dog Brand: Nutro Food Type: Wet Breed Size: All Sizes Life Stage: Adult (1–7 years) Nutritional Benefits: Natural Health Consideration: Natural, Real Meat First, Made in the USA, Grain–Free Flavor: Roasted Turkey, Sweet Potato & Green Bean Stew Weight: 12.500 OZ Ingredients: Turkey, Pork Broth, Chicken Broth, Chicken Liver, Sweet Potatoes, Green Beans, Dried Egg Product, Animal Plasma, Dried Peas, Tapioca Starch, Sunflower Oil (preserved with Mixed Tocopherols), Calcium Carbonate, Guar Gum, Choline Chloride, Salt, Potassium Chloride, Sodium Acid Pyrophosphate, Tetrasodium Pyrophosphate, Tricalcium Phosphate, Xanthan Gum, Natural Flavor, Dried Tomatoes, Magnesium Sulfate, Sodium Hexametaphosphate, Ferrous Sulfate, Vitamin E Supplement, Zinc Oxide, Copper Proteinate, Sodium Selenium, D–Calcium Pantothenate, Manganese Sulfate, Vitamin A Supplement, Thiamine Mononitrate, Potassium Iodide, Biotin, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 10.0,
+        "crude_fat_min": 3.5,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1017 kcal/kg"
+    },
+    {
+      "name": "Natural Choice Premium Loaf Adult Wet Dog Food - Grain Free",
+      "brand": "Nutro",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/nutro-natural-choiceandtrade-premium-loaf-adult-wet-dog-food---grain-free-125oz-27608.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Natural Choice",
+      "life_stage": "adult",
+      "source_id": "5230975",
+      "images": [
+        "/products/nutro/nutro-food-natural-choice-premium-loaf-adult-wet-dog-food-grain-free.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "12.5oz",
+          "upc": "0079105115674",
+          "sku": "5230975"
+        }
+      ],
+      "ingredients_raw": "Species: Dog Brand: Nutro Food Type: Wet Breed Size: All Sizes Life Stage: Adult (1–7 years) Nutritional Benefits: Natural Health Consideration: Natural,Real Meat First,Made in the USA,Grain–Free Flavor: Healthy Turkey, Sweet Potato & Green Bean Weight: 12.500 OZ Ingredients: Turkey, Chicken Broth, Chicken, Chicken Liver, Sweet Potatoes, Green Beans, Dried Peas, Dried Potatoes, Guar Gum, Sunflower Oil (preserved with Mixed Tocopherols), Flaxseed, Calcium Carbonate, Salt, Potassium Chloride, Carrageenan, Dried Yam, DL–Methionine, Choline Chloride, Sodium Acid Pyrophosphate, Tetrasodium Pyrophosphate, Natural Flavor, Magnesium Sulfate, Sodium Hexametaphosphate, Ferrous Sulfate, Thiamine Mononitrate, Zinc Oxide, Vitamin E Supplement, Copper Proteinate, Sodium Selenium, Manganese Sulfate, D–Calcium Pantothenate, Vitamin A Supplement, Potassium Iodide, Biotin, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.0,
+        "crude_fat_min": 7.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1182 kcal/kg"
+    },
+    {
+      "name": "ULTRA Adult Wet Dog Food - Filets in Gravy",
+      "brand": "Nutro",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/nutro-ultraandtrade--adult-wet-dog-food---filets-in-gravy--35-oz-50205.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "NUTRO ULTRA",
+      "life_stage": "adult",
+      "source_id": "5280270",
+      "images": [
+        "/products/nutro/nutro-food-ultra-adult-wet-dog-food-filets-in-gravy.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "3.5 Oz",
+          "upc": "0079105124607",
+          "sku": "5280270"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "3.5 Oz",
+          "upc": "0079105124676",
+          "sku": "5280271"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "3.5 Oz",
+          "upc": "0079105124614",
+          "sku": "5280272"
+        }
+      ],
+      "ingredients_raw": "Chicken, Tomatoes, Chicken Broth, Chicken Liver, Carrots, Peas, Pork Plasma, Basil, Tapioca Starch, Pea Fiber, Potassium Chloride, Salt, Calcium Carbonate, Dried Pork Broth, Choline Chloride, Dried Tomatoes, Xanthan Gum, Sodium Acid Pyrophosphate, Tetrasodium Pyrophosphate, Magnesium Proteinate, Sodium Hexametaphosphate, Manganese Sulfate, Zinc Sulfate, Vitamin E Supplement, D–Calcium Pantothenate, Biotin, Copper Sulfate, Thiamine Mononitrate, Riboflavin Supplement, Potassium Iodide, Vitamin A Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Vitamin D3 Supplement.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.5,
+        "crude_fat_min": 4.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 80.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "986 kcal/kg"
+    },
+    {
+      "name": "ULTRA Adult Wet Dog Food - Pate with Topper",
+      "brand": "Nutro",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/nutro-ultraandtrade--adult-wet-dog-food---pate-with-topper--35-oz-22547.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "sub_brand": "NUTRO ULTRA",
+      "life_stage": "adult",
+      "source_id": "5210292",
+      "images": [
+        "/products/nutro/nutro-supplement-ultra-adult-wet-dog-food-pate-with-topper.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "3.5 Oz",
+          "upc": "0079105113557",
+          "sku": "5210292"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Broth, Chicken Liver, Dried Egg Product, Spinach, Carrageenan, Salt, Dried Blueberries, Dried Apples, Dried Carrots, Calcium Carbonate, Potassium Chloride, Dried Yam, Sunflower Oil (preserved with Mixed Tocopherols), Choline Chloride, Tricalcium Phosphate, Chia Seed, Dried Coconut, Tomato Pomace, Dried Pumpkin, Dried Spinach, Dried Kale, Dried Plain Beet Pulp, Sodium Acid Pyrophosphate, Tetrasodium Pyrophosphate, Xanthan Gum, Magnesium Proteinate, Sodium Hexametaphosphate, Zinc Sulfate, Manganese Sulfate, Guar Gum, Vitamin E Supplement, D-Calcium Pantothenate, Biotin, Thiamine Mononitrate, Copper Sulfate, Riboflavin Supplement, Potassium Iodide, Vitamin A Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Vitamin D3 Supplement.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.0,
+        "crude_fat_min": 6.5,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1210 kcal/kg"
+    },
+    {
+      "name": "ULTRA Bistro Mix Adult Wet Dog Food - Filets in Gravy , 12 Count",
+      "brand": "Nutro",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/nutro-ultraandtrade-bistro-mix-adult-wet-dog-food---filets-in-gravy--12-count-49175.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "NUTRO ULTRA",
+      "life_stage": "adult",
+      "source_id": "5280287",
+      "images": [
+        "/products/nutro/nutro-food-ultra-bistro-mix-adult-wet-dog-food-filets-in-gravy-12-count.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0079105125208",
+          "sku": "5280287"
+        }
+      ],
+      "ingredients_raw": "TENDER BEEF: Beef, Tomatoes, Chicken Broth, Water, Chicken, Beef Liver, Pork Plasma, Basil, Tapioca Starch, Dried Egg Product, Pea Fiber, Calcium Carbonate, Potassium Chloride, Salt, Dried Pork Broth, Choline Chloride, Dried Tomatoes, Xanthan Gum, Sodium Acid Pyrophosphate, Tetrasodium Pyrophosphate, Magnesium Proteinate, Sodium Hexametaphosphate, Manganese Sulfate, Zinc Sulfate, Vitamin E Supplement, D–Calcium Pantothenate, Biotin, Copper Sulfate, Thiamine Mononitrate, Riboflavin Supplement, Potassium Iodide, Vitamin A Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Vitamin D3 Supplement. CHICKEN: Chicken, Tomatoes, Chicken Broth, Chicken Liver, Carrots, Peas, Pork Plasma, Basil, Tapioca Starch, Pea Fiber, Potassium Chloride, Salt, Calcium Carbonate, Dried Pork Broth, Choline Chloride, Dried Tomatoes, Xanthan Gum, Sodium Acid Pyrophosphate, Tetrasodium Pyrophosphate, Magnesium Proteinate, Sodium Hexametaphosphate, Manganese Sulfate, Zinc Sulfate, Vitamin E Supplement, D–Calcium Pantothenate, Biotin, Copper Sulfate, Thiamine Mononitrate, Riboflavin Supplement, Potassium Iodide, Vitamin A Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Vitamin D3 Supplement.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.5,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 80.0,
+        "crude_fat_min": 4.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "914 kcal/kg"
+    },
+    {
+      "name": "ULTRA Senior Wet Dog Food - Pate",
+      "brand": "Nutro",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/nutro-ultraandtrade-senior-wet-dog-food---pate-35-oz-1034.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "NUTRO ULTRA",
+      "life_stage": "senior",
+      "source_id": "5161709",
+      "images": [
+        "/products/nutro/nutro-food-ultra-senior-wet-dog-food-pate.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "3.5 Oz",
+          "upc": "0079105101943",
+          "sku": "5161709"
+        }
+      ],
+      "ingredients_raw": "INGREDIENTS: Chicken, Chicken Liver, Chicken Broth, Spinach, Tomatoes, Carrots, Dried Egg Product, Lamb, Whitefish, Tricalcium Phosphate, Dried Blueberries, Dried Apples, Dried Carrots, Carrageenan, Flaxseed, Potassium Chloride, Calcium Carbonate, Choline Chloride, Sunflower Oil (preserved with Mixed Tocopherols), Chia Seed, Dried Yam, Dried Coconut, Tomato Pomace, Dried Pumpkin, Dried Spinach, Dried Kale, Vitamin E Supplement, Xanthan Gum, Magnesium Proteinate, Salt, Guar Gum, Manganese Sulfate, Zinc Sulfate, Sodium Acid Pyrophosphate, Tetrasodium Pyrophosphate, Sodium Hexametaphosphate, D-Calcium Pantothenate, Biotin, Copper Sulfate, Thiamine Mononitrate, Riboflavin Supplement, Potassium Iodide, Vitamin A Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Vitamin D3 Supplement.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "981 kcal/kg"
+    },
+    {
+      "name": "Limited Ingredient Diet Adult Dry Dog Food - Grain Free, Lamb & Sweet Potato",
+      "brand": "Nutro",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/nutro-limited-ingredient-diet-adult-dry-dog-food---grain-free-lamb-and-sweet-potato-41776.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Limited Ingredient Diet",
+      "life_stage": "adult",
+      "source_id": "5264017",
+      "images": [
+        "/products/nutro/nutro-food-limited-ingredient-diet-adult-dry-dog-food-grain-free-lamb-sweet-potato.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0079105121958",
+          "sku": "5264017"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0079105122764",
+          "sku": "5264018"
+        }
+      ],
+      "ingredients_raw": "Deboned Lamb, Lamb Meal, Chickpeas, Dried Potatoes, Dried Sweet Potatoes, Lentils, Potato Starch, Sunflower Oil (preserved with Mixed Tocopherols), Canola Oil (preserved with Mixed Tocopherols), Potato Protein, Dried Plain Beet Pulp, Potassium Chloride, Natural Flavors, Salt, Choline Chloride, Whole Flaxseed, DL-Methionine, Citric Acid (preservative), Mixed Tocopherols (preservative), Taurine, Ferrous Sulfate, Zinc Oxide, Sodium Selenite, Vitamin E Supplement, L-ascorbyl-2-polyphosphate (source of Vitamin C), Manganese Sulfate, Copper Sulfate, D-Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Potassium Iodide, Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Manganous Oxide, Folic Acid, Rosemary Extract.",
+      "guaranteed_analysis": {
+        "omega_6_max": 20.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3655 kcal/kg"
+    },
+    {
+      "name": "Limited Ingredient Diet Large Breed Adult Dry Dog Food - Grain Free, Lamb & Sweet Potato",
+      "brand": "Nutro",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/nutro-limited-ingredient-diet-large-breed-adult-dry-dog-food---grain-free-lamb-and-sweet-potato-41781.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Limited Ingredient Diet",
+      "life_stage": "adult",
+      "breed_size": "Large",
+      "source_id": "5264021",
+      "images": [
+        "/products/nutro/nutro-food-limited-ingredient-diet-large-breed-adult-dry-dog-food-grain-free-lamb-sweet-pot.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0079105122801",
+          "sku": "5264021"
+        }
+      ],
+      "ingredients_raw": "Deboned Lamb, Lamb Meal (source of Glucosamine and Chondroitin Sulfate), Chickpeas, Dried Potatoes, Dried Sweet Potatoes, Lentils, Potato Starch, Sunflower Oil (preserved with Mixed Tocopherols), Dried Plain Beet Pulp, Canola Oil (preserved with Mixed Tocopherols), Potassium Chloride, Natural Flavors, Potato Protein, Whole Flaxseed, Salt, Choline Chloride, DL–Methionine, Citric Acid (preservative), Mixed Tocopherols (preservative), Taurine, Vitamin E Supplement, Ferrous Sulfate, Zinc Oxide, Sodium Selenite, L–ascorbyl–2–polyphosphate (source of Vitamin C), Manganese Sulfate, Copper Sulfate, D–Calcium Pantothenate, Biotin, Thiamine Mononitrate, (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 20.0,
+        "crude_fat_min": 13.0,
+        "crude_fiber_max": 3.5,
+        "moisture_max": 10.0,
+        "calcium_min": 0.5,
+        "phosphorus_min": 0.4
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3532 kcal/kg, 428 kcal/cup"
+    },
+    {
+      "name": "Limited Ingredient Diet Small Bites Adult Dry Dog Food - Grain Free, Lamb & Sweet Potato",
+      "brand": "Nutro",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/nutro-limited-ingredient-diet-small-bites-adult-dry-dog-food---grain-free-lamb-and-sweet-potato-41777.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Limited Ingredient Diet",
+      "life_stage": "adult",
+      "breed_size": "Small",
+      "source_id": "5264020",
+      "images": [
+        "/products/nutro/nutro-food-limited-ingredient-diet-small-bites-adult-dry-dog-food-grain-free-lamb-sweet-pot.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0079105122788",
+          "sku": "5264020"
+        }
+      ],
+      "ingredients_raw": "Deboned Lamb, Lamb Meal, Chickpeas, Dried Potatoes, Dried Sweet Potatoes, Lentils, Potato Starch, Sunflower Oil (preserved with Mixed Tocopherols), Canola Oil (preserved with Mixed Tocopherols), Potato Protein, Dried Plain Beet Pulp, Potassium Chloride, Natural Flavors, Salt, Choline Chloride, Whole Flaxseed, DL–Methionine, Citric Acid (preservative), Mixed Tocopherols (preservative), Taurine, Ferrous Sulfate, Zinc Oxide, Sodium Selenite, Vitamin E Supplement, L–ascorbyl–2–polyphosphate (source of Vitamin C), Manganese Sulfate, Copper Sulfate, D–Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Potassium Iodide, Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Manganous Oxide, Folic Acid, Rosemary Extract.",
+      "guaranteed_analysis": {
+        "crude_protein_max": 20.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3655 kcal/kg"
+    },
+    {
+      "name": "Natural Choice Adult Dry Dog Food - Chicken & Brown Rice",
+      "brand": "Nutro",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/nutro-natural-choice-adult-dry-dog-food---chicken-and-brown-rice-87156.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Natural Choice",
+      "life_stage": "adult",
+      "source_id": "5358844",
+      "images": [
+        "/products/nutro/nutro-food-natural-choice-adult-dry-dog-food-chicken-brown-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0079105132978",
+          "sku": "5358844"
+        }
+      ],
+      "ingredients_raw": "Chicken, Brewers Rice, Chicken Meal, Whole Grain Brown Rice, Whole Grain Barley, Whole Grain Sorghum, Chicken Fat (preserved with Mixed Tocopherols), Rice Bran, Natural Flavours, Whole Flaxseed, Dried Plain Beet Pulp, Potassium Chloride, Salt, Choline Chloride, DL-Methionine, Citric Acid (preservative), Mixed Tocopherols (preservative), Whole Chia Seed, Dried Coconut, Dried Tomato Pomace, Dried Egg Product, Dried Pumpkin, Dried Kale, Dried Spinach, Vitamin E Supplement, Ferrous Sulfate, Zinc Oxide, L-ascorbyl-2-polyphosphate (source of Vitamin C), Sodium Selenite, Manganese Sulfate, Copper Sulfate, D-Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 22.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 3.5,
+        "moisture_max": 10.0,
+        "calcium_min": 0.5,
+        "phosphorus_min": 0.4,
+        "omega_3_min": 0.2,
+        "omega_6_min": 2.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3646 kcal/kg, 341 kcal/cup"
+    },
+    {
+      "name": "Natural Choice Adult Dry Dog Food - Salmon & Brown Rice",
+      "brand": "Nutro",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/nutro-natural-choice-adult-dry-dog-food---salmon-and-brown-rice-81974.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Natural Choice",
+      "life_stage": "adult",
+      "source_id": "5351546",
+      "images": [
+        "/products/nutro/nutro-food-natural-choice-adult-dry-dog-food-salmon-brown-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0079105131759",
+          "sku": "5351546"
+        }
+      ],
+      "ingredients_raw": "Salmon, Fish Meal, Brown Rice, Barley, Oatmeal, Brewers Rice, Peas, Chicken Fat (preserved with Mixed Tocopherols), Chicken Meal, Dried Plain Beet Pulp, Natural Flavors, Whole Grain Sorghum, Pea Protein, Salt, Potassium Chloride, Choline Chloride, DL–Methionine, Dicalcium Phosphate, Chia Seed, Dried Coconut, Dried Tomato Pomace, Dried Egg Product, Dried Pumpkin, Dried Kale, Dried Spinach, Citric Acid (preservative), Mixed Tocopherols (preservative), Vitamin E Supplement, Ferrous Sulfate, Zinc Oxide, L–Ascorbyl–2–Polyphosphate (source of Vitamin C), Sodium Selenite, Manganese Sulfate, D–Calcium Pantothenate, Copper Sulfate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract.",
+      "guaranteed_analysis": {
+        "crude_protein_max": 24.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3677 kcal/kg"
+    },
+    {
+      "name": "Natural Choice Adult Dry Dog Food - Salmon & Brown Rice, Small Bites",
+      "brand": "Nutro",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/nutro-natural-choice-adult-dry-dog-food---salmon-and-brown-rice-small-bites-81975.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Natural Choice",
+      "life_stage": "adult",
+      "breed_size": "Small",
+      "source_id": "5351547",
+      "images": [
+        "/products/nutro/nutro-food-natural-choice-adult-dry-dog-food-salmon-brown-rice-small-bites.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0079105131742",
+          "sku": "5351547"
+        }
+      ],
+      "ingredients_raw": "Salmon, Fish Meal, Brown Rice, Barley, Oatmeal, Brewers Rice, Peas, Chicken Fat (preserved with Mixed Tocopherols), Chicken Meal, Dried Plain Beet Pulp, Natural Flavors, Whole Grain Sorghum, Pea Protein, Salt, Potassium Chloride, Choline Chloride, DL–Methionine, Dicalcium Phosphate, Chia Seed, Dried Coconut, Dried Tomato Pomace, Dried Egg Product, Dried Pumpkin, Dried Kale, Dried Spinach, Citric Acid (preservative), Mixed Tocopherols (preservative), Vitamin E Supplement, Ferrous Sulfate, Zinc Oxide, L–Ascorbyl–2–Polyphosphate (source of Vitamin C), Sodium Selenite, Manganese Sulfate, D–Calcium Pantothenate, Copper Sulfate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract.",
+      "guaranteed_analysis": {
+        "crude_protein_max": 24.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3677 kcal/kg"
+    },
+    {
+      "name": "Natural Choice Dry Adult Dog Food - Lamb",
+      "brand": "Nutro",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/nutro-natural-choice-dry-adult-dog-food---lamb-87151.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Natural Choice",
+      "life_stage": "adult",
+      "source_id": "5358839",
+      "images": [
+        "/products/nutro/nutro-food-natural-choice-dry-adult-dog-food-lamb.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0079105132985",
+          "sku": "5358839"
+        }
+      ],
+      "ingredients_raw": "Deboned Lamb, Chicken Meal, Brewers Rice, Whole Grain Brown Rice, Rice Bran, Split Peas, Chicken Fat (preserved with Mixed Tocopherols), Natural Flavours, Dried Plain Beet Pulp, Whole Flaxseed, Salt, Choline Chloride, Potassium Chloride, DL-Methionine, Citric Acid (preservative), Mixed Tocopherols (preservative), Whole Chia Seed, Dried Coconut, Dried Tomato Pomace, Dried Egg Product, Dried Pumpkin, Dried Kale, Dried Spinach, Vitamin E Supplement, L-ascorbyl-2-polyphosphate (source of Vitamin C), Ferrous Sulfate, Zinc Oxide, Sodium Selenite, D-Calcium Pantothenate, Manganese Sulfate, Copper Sulfate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 22.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 3.5,
+        "moisture_max": 10.0,
+        "calcium_min": 0.5,
+        "phosphorus_min": 0.4,
+        "omega_3_min": 0.2,
+        "omega_6_min": 2.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3595 kcal/kg, 313 kcal/cup"
+    },
+    {
+      "name": "Natural Choice Healthy Weight Adult Dry Dog Food - Lamb",
+      "brand": "Nutro",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/nutro-natural-choice-healthy-weight-adult-dry-dog-food---lamb-87154.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Natural Choice",
+      "life_stage": "adult",
+      "source_id": "5358842",
+      "images": [
+        "/products/nutro/nutro-food-natural-choice-healthy-weight-adult-dry-dog-food-lamb.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0079105133036",
+          "sku": "5358842"
+        }
+      ],
+      "ingredients_raw": "Deboned Lamb, Chicken Meal, Whole Grain Barley, Rice Bran, Whole Grain Brown Rice, Powdered Cellulose, Split Peas, Whole Grain Sorghum, Pea Protein, Dehydrated Alfalfa Meal, Natural Flavours, Dried Plain Beet Pulp, Chicken Fat (preserved with Mixed Tocopherols), Potassium Chloride, Salt, Choline Chloride, DL-Methionine, Citric Acid (preservative), Mixed Tocopherols (preservative), Whole Chia Seed, Dried Coconut, Dried Tomato Pomace, Dried Egg Product, Dried Pumpkin, Dried Kale, Dried Spinach, Vitamin E Supplement, L-ascorbyl-2-polyphosphate (source of Vitamin C), Ferrous Sulfate, Zinc Oxide, Sodium Selenite, D-Calcium Pantothenate, Manganese Sulfate, Copper Sulfate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 8.0,
+        "crude_fat_max": 12.0,
+        "crude_fiber_max": 11.0,
+        "moisture_max": 10.0,
+        "calcium_min": 0.5,
+        "phosphorus_min": 0.4,
+        "omega_6_min": 2.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3069 kcal/kg, 242 kcal/cup"
+    },
+    {
+      "name": "Natural Choice Large Breed Adult Dry Dog Food - Chicken",
+      "brand": "Nutro",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/nutro-natural-choice-large-breed-adult-dry-dog-food---chicken-87152.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Natural Choice",
+      "life_stage": "adult",
+      "breed_size": "Large",
+      "source_id": "5358840",
+      "images": [
+        "/products/nutro/nutro-food-natural-choice-large-breed-adult-dry-dog-food-chicken.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0079105132992",
+          "sku": "5358840"
+        }
+      ],
+      "ingredients_raw": "Chicken, Whole Grain Brown Rice, Whole Grain Sorghum, Brewers Rice, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Split Peas, Whole Grain Oatmeal, Chicken Fat (preserved with Mixed Tocopherols), Whole Grain Barley, Natural Flavours, Whole Flaxseed, Dried Plain Beet Pulp, Potassium Chloride, Choline Chloride, Salt, DL-Methionine, Citric Acid (preservative), Mixed Tocopherols (preservative), Whole Chia Seed, Dried Coconut, Dried Tomato Pomace, Dried Egg Product, Dried Pumpkin, Dried Kale, Dried Spinach, Vitamin E Supplement, Ferrous Sulfate, Zinc Oxide, L-ascorbyl-2-polyphosphate (source of Vitamin C), Sodium Selenite, Manganese Sulfate, Copper Sulfate, D-Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 20.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 0.5,
+        "phosphorus_min": 0.4,
+        "omega_3_min": 0.2,
+        "omega_6_min": 2.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3617 kcal/kg, 341 kcal/cup"
+    },
+    {
+      "name": "Natural Choice Large Breed Adult Dry Dog Food - Lamb & Brown Rice Flavour",
+      "brand": "Nutro",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/nutro-natural-choice-large-breed-adult-dry-dog-food---lamb-and-brown-rice-flavour-94168.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Natural Choice",
+      "life_stage": "adult",
+      "breed_size": "Large",
+      "source_id": "5373338",
+      "images": [
+        "/products/nutro/nutro-food-natural-choice-large-breed-adult-dry-dog-food-lamb-brown-rice-flavour.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0079105160056",
+          "sku": "5373338"
+        }
+      ],
+      "ingredients_raw": "Deboned Lamb, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Whole Grain Brown Rice, Split Peas, Whole Grain Sorghum, Brewers Rice, Whole Grain Oatmeal, Whole Grain Barley, Chicken Fat (preserved with Mixed Tocopherols), Natural Flavours, Dried Plain Beet Pulp, Whole Flaxseed, Potassium Chloride, Salt, Choline Chloride, DL-Methionine, Citric Acid (preservative), Mixed Tocopherols (preservative), Whole Chia Seed, Dried Coconut, Dried Tomato Pomace, Dried Egg Product, Dried Pumpkin, Dried Kale, Dried Spinach, Vitamin E Supplement, L-ascorbyl-2-polyphosphate (source of Vitamin C), Ferrous Sulfate, Zinc Oxide, Sodium Selenite, D-Calcium Pantothenate, Manganese Sulfate, Copper Sulfate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 20.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 0.5,
+        "phosphorus_min": 0.4,
+        "omega_6_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3612 kcal/kg, 326 kcal/cup"
+    },
+    {
+      "name": "Natural Choice Large Breed Dry Dog Food - Lamb",
+      "brand": "Nutro",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/nutro-natural-choice-large-breed-dry-dog-food---lamb-87155.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Natural Choice",
+      "breed_size": "Large",
+      "source_id": "5358843",
+      "images": [
+        "/products/nutro/nutro-food-natural-choice-large-breed-dry-dog-food-lamb.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0079105133029",
+          "sku": "5358843"
+        }
+      ],
+      "ingredients_raw": "Deboned Lamb, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Whole Grain Brown Rice, Split Peas, Whole Grain Sorghum, Brewers Rice, Whole Grain Oatmeal, Whole Grain Barley, Chicken Fat (preserved with Mixed Tocopherols), Natural Flavours, Dried Plain Beet Pulp, Whole Flaxseed, Potassium Chloride, Salt, Choline Chloride, DL-Methionine, Citric Acid (preservative), Mixed Tocopherols (preservative), Whole Chia Seed, Dried Coconut, Dried Tomato Pomace, Dried Egg Product, Dried Pumpkin, Dried Kale, Dried Spinach, Vitamin E Supplement, L-ascorbyl-2-polyphosphate (source of Vitamin C), Ferrous Sulfate, Zinc Oxide, Sodium Selenite, D-Calcium Pantothenate, Manganese Sulfate, Copper Sulfate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 20.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 0.5,
+        "phosphorus_min": 0.4,
+        "omega_3_min": 0.2,
+        "omega_6_min": 2.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3612 kcal/kg, 326 kcal/cup"
+    },
+    {
+      "name": "Natural Choice Large Breed Puppy Dry Dog Food - Lamb & Brown Rice Flavour",
+      "brand": "Nutro",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/nutro-natural-choice-large-breed-puppy-dry-dog-food---lamb-and-brown-rice-flavour-94169.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Natural Choice",
+      "life_stage": "puppy",
+      "breed_size": "Large",
+      "source_id": "5373339",
+      "images": [
+        "/products/nutro/nutro-food-natural-choice-large-breed-puppy-dry-dog-food-lamb-brown-rice-flavour.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0079105160049",
+          "sku": "5373339"
+        }
+      ],
+      "ingredients_raw": "Deboned Lamb, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Split Peas, Brewers Rice, Rice Bran, Whole Grain Brown Rice, Chicken Fat (preserved with Mixed Tocopherols), Potato Protein, Natural Flavours, Lamb Meal, Dried Plain Beet Pulp, Fish Oil (preserved with Mixed Tocopherols), Salt, Choline Chloride, Potassium Chloride, DL-Methionine, Dicalcium Phosphate, Citric Acid (preservative), Mixed Tocopherols (preservative), Whole Chia Seed, Dried Coconut, Dried Tomato Pomace, Dried Egg Product, Dried Pumpkin, Dried Kale, Dried Spinach, Vitamin E Supplement, Ferrous Sulfate, L-ascorbyl-2 polyphosphate (source of Vitamin C), Zinc Oxide, Sodium Selenite, D-Calcium Pantothenate, Manganese Sulfate, Copper Sulfate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 10.0,
+        "epa_min": 0.05,
+        "dha_min": 0.05,
+        "calcium_min": 1.2,
+        "calcium_max": 1.7,
+        "phosphorus_min": 1.0,
+        "omega_3_min": 0.2,
+        "omega_6_min": 2.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3581 kcal/kg, 330 kcal/cup"
+    },
+    {
+      "name": "Natural Choice Large Breed Senior Dry Dog Food - Chicken",
+      "brand": "Nutro",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/nutro-natural-choice-large-breed-senior-dry-dog-food---chicken-87153.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Natural Choice",
+      "life_stage": "senior",
+      "breed_size": "Large",
+      "source_id": "5358841",
+      "images": [
+        "/products/nutro/nutro-food-natural-choice-large-breed-senior-dry-dog-food-chicken.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0079105133005",
+          "sku": "5358841"
+        }
+      ],
+      "ingredients_raw": "Chicken, Whole Grain Brown Rice, Brewers Rice, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Split Peas, Rice Bran, Whole Grain Sorghum, Chicken Fat (preserved with Mixed Tocopherols), Natural Flavours, Whole Flaxseed, Dried Plain Beet Pulp, Choline Chloride, Potassium Chloride, Salt, DL-Methionine, Citric Acid (preservative), Mixed Tocopherols (preservative), Whole Chia Seed, Dried Coconut, Dried Tomato Pomace, Dried Egg Product, Dried Pumpkin, Dried Kale, Dried Spinach, Vitamin E Supplement, L-ascorbyl-2-polyphosphate (source of Vitamin C), Ferrous Sulfate, Zinc Oxide, Sodium Selenite, D-Calcium Pantothenate, Manganese Sulfate, Copper Sulfate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 22.0,
+        "crude_fat_min": 10.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "omega_3_min": 0.2,
+        "omega_6_min": 2.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3500 kcal/kg, 323 kcal/cup"
+    },
+    {
+      "name": "Natural Choice Puppy Dry Dog Food - Lamb & Brown Rice",
+      "brand": "Nutro",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/nutro-natural-choice-puppy-dry-dog-food---lamb-and-brown-rice-87157.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Natural Choice",
+      "life_stage": "puppy",
+      "source_id": "5359421",
+      "images": [
+        "/products/nutro/nutro-food-natural-choice-puppy-dry-dog-food-lamb-brown-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0079105133012",
+          "sku": "5359421"
+        }
+      ],
+      "ingredients_raw": "Deboned Lamb, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Split Peas, Brewers Rice, Rice Bran, Whole Grain Brown Rice, Chicken Fat (preserved with Mixed Tocopherols), Potato Protein, Natural Flavours, Lamb Meal, Dried Plain Beet Pulp, Fish Oil (preserved with Mixed Tocopherols), Salt, Choline Chloride, Potassium Chloride, DL-Methionine, Dicalcium Phosphate, Citric Acid (preservative), Mixed Tocopherols (preservative), Whole Chia Seed, Dried Coconut, Dried Tomato Pomace, Dried Egg Product, Dried Pumpkin, Dried Kale, Dried Spinach, Vitamin E Supplement, Ferrous Sulfate, L-ascorbyl-2 polyphosphate (source of Vitamin C), Zinc Oxide, Sodium Selenite, D-Calcium Pantothenate, Manganese Sulfate, Copper Sulfate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 10.0,
+        "epa_min": 0.05,
+        "dha_min": 0.05,
+        "calcium_min": 1.2,
+        "calcium_max": 1.7,
+        "phosphorus_min": 1.0,
+        "omega_3_min": 0.2,
+        "omega_6_min": 2.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3581 kcal/kg, 330 kcal/cup"
+    },
+    {
+      "name": "Natural Choice Small Bites Adult Dog Dry Food - Chicken & Brown Rice",
+      "brand": "Nutro",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/nutro-natural-choice-small-bites-adult-dog-dry-food---chicken-and-brown-rice-74578.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Natural Choice",
+      "life_stage": "adult",
+      "breed_size": "Small",
+      "source_id": "5333723",
+      "images": [
+        "/products/nutro/nutro-food-natural-choice-small-bites-adult-dog-dry-food-chicken-brown-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0079105130974",
+          "sku": "5333723"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Meal, Brown Rice, Barley, Oatmeal, Brewers Rice, Peas, Chicken Fat (preserved with Mixed Tocopherols), Dried Plain Beet Pulp, Natural Flavors, Potassium Chloride, Flaxseed, Salt, Choline Chloride, DL–Methionine, Chia Seed, Dried Coconut, Dried Tomato Pomace, Dried Egg Product, Dried Pumpkin, Dried Kale, Dried Spinach, Citric Acid (preservative), Mixed Tocopherols (preservative), Vitamin E Supplement, L–Ascorbyl–2–Polyphosphate (source of Vitamin C), Ferrous Sulfate, Zinc Oxide, Sodium Selenite, D–Calcium Pantothenate, Manganese Sulfate, Copper Sulfate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract.",
+      "guaranteed_analysis": {
+        "crude_protein_max": 24.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3631 kcal/kg"
+    },
+    {
+      "name": "Natural Choice Healthy Aging Senior Dry Dog Food - Chicken & Brown Rice",
+      "brand": "Nutro",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/nutro-natural-choiceandtrade-healthy-aging-senior-dry-dog-food---chicken-and-brown-rice-27642.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Natural Choice",
+      "life_stage": "senior",
+      "source_id": "5231835",
+      "images": [
+        "/products/nutro/nutro-food-natural-choice-healthy-aging-senior-dry-dog-food-chicken-brown-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0079105116640",
+          "sku": "5231835"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Meal, Brown Rice, Barley, Oatmeal, Brewers Rice, Whole Grain Sorghum, Peas, Dried Plain Beet Pulp, Natural Flavors, Chicken Fat (preserved with Mixed Tocopherols), Salt, Fish Oil (preserved with Mixed Tocopherols), Potassium Chloride, Choline Chloride, DL–Methionine, Chia Seed, Dried Coconut, Dried Tomato Pomace, Dried Egg Product, Dried Pumpkin, Dried Kale, Dried Spinach, Citric Acid (preservative), Mixed Tocopherols (preservative), Vitamin E Supplement, L–Ascorbyl–2–Polyphosphate (source of Vitamin C), Ferrous Sulfate, Zinc Oxide, Sodium Selenite, D–Calcium Pantothenate, Manganese Sulfate, Copper Sulfate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract.",
+      "guaranteed_analysis": {
+        "calcium_min": 100.0,
+        "crude_protein_max": 26.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3494 kcal/kg"
+    },
+    {
+      "name": "Natural Choice Large Breed Adult Dry Dog Food - Chicken & Brown Rice",
+      "brand": "Nutro",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/nutro-natural-choiceandtrade-large-breed-adult-dry-dog-food---chicken-and-brown-rice-27659.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Natural Choice",
+      "life_stage": "adult",
+      "breed_size": "Large",
+      "source_id": "5231510",
+      "images": [
+        "/products/nutro/nutro-food-natural-choice-large-breed-adult-dry-dog-food-chicken-brown-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0079105116459",
+          "sku": "5231510"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0079105132954",
+          "sku": "5351510"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Brown Rice, Barley, Oatmeal, Brewers Rice, Peas, Chicken Fat (preserved with Mixed Tocopherols), Dried Plain Beet Pulp, Natural Flavors, Potassium Chloride, Flaxseed, Salt, Choline Chloride, DL–Methionine, Chia Seed, Dried Coconut, Dried Tomato Pomace, Dried Egg Product, Dried Pumpkin, Dried Kale, Dried Spinach, Citric Acid (preservative), Mixed Tocopherols (preservative), Vitamin E Supplement, Ferrous Sulfate, Zinc Oxide, Sodium Selenite, L–Ascorbyl–2–Polyphosphate (source of Vitamin C), Manganese Sulfate, Copper Sulfate, D–Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract.",
+      "guaranteed_analysis": {
+        "crude_protein_max": 22.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3548 kcal/kg"
+    },
+    {
+      "name": "Natural Choice Large Breed Adult Dry Dog Food - Lamb & Brown Rice",
+      "brand": "Nutro",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/nutro-natural-choiceandtrade-large-breed-adult-dry-dog-food---lamb-and-brown-rice-27835.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Natural Choice",
+      "life_stage": "adult",
+      "breed_size": "Large",
+      "source_id": "5351512",
+      "images": [
+        "/products/nutro/nutro-food-natural-choice-large-breed-adult-dry-dog-food-lamb-brown-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0079105132961",
+          "sku": "5351512"
+        }
+      ],
+      "ingredients_raw": "Deboned Lamb, Lamb Meal, Brown Rice, Barley, Oatmeal, Brewers Rice, Peas, Chicken Fat (preserved with Mixed Tocopherols), Dried Plain Beet Pulp, Natural Flavors, Pea Protein, Potassium Chloride, Flaxseed, Salt, Choline Chloride, DL–Methionine, Chia Seed, Dried Coconut, Dried Tomato Pomace, Dried Egg Product, Dried Pumpkin, Dried Kale, Dried Spinach, Citric Acid (preservative), Mixed Tocopherols (preservative), Taurine, Vitamin E Supplement, Ferrous Sulfate, Zinc Oxide, Sodium Selenite, L–Ascorbyl–2–Polyphosphate (source of Vitamin C), Manganese Sulfate, Copper Sulfate, D–Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract.",
+      "guaranteed_analysis": {
+        "crude_protein_max": 22.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3494 kcal/kg"
+    },
+    {
+      "name": "Natural Choice Large Breed Healthy Weight Adult Dry Dog Food - Chicken & Brown Rice",
+      "brand": "Nutro",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/nutro-natural-choiceandtrade-large-breed-healthy-weight-adult-dry-dog-food---chicken-and-brown-rice-27660.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Natural Choice",
+      "life_stage": "adult",
+      "breed_size": "Large",
+      "source_id": "5231512",
+      "images": [
+        "/products/nutro/nutro-food-natural-choice-large-breed-healthy-weight-adult-dry-dog-food-chicken-brown-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0079105116695",
+          "sku": "5231512"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Barley, Brown Rice, Oatmeal, Peas, Powdered Cellulose, Dehydrated Alfalfa Meal, Dried Plain Beet Pulp, Whole Grain Sorghum, Pea Protein, Natural Flavors, Chicken Fat (preserved with Mixed Tocopherols), Potassium Chloride, Salt, Flaxseed, Choline Chloride, DL–Methionine, Chia Seed, Dried Coconut, Dried Tomato Pomace, Dried Egg Product, Dried Pumpkin, Dried Kale, Dried Spinach, Citric Acid (preservative), Mixed Tocopherols (preservative), Vitamin E Supplement, Ferrous Sulfate, Zinc Oxide, Sodium Selenite, L–Ascorbyl–2–Polyphosphate (source of Vitamin C), Manganese Sulfate, Copper Sulfate, D–Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract.",
+      "guaranteed_analysis": {
+        "crude_protein_max": 24.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3167 kcal/kg"
+    },
+    {
+      "name": "Natural Choice Large Breed Puppy Dry Dog Food - Chicken & Brown Rice",
+      "brand": "Nutro",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/nutro-natural-choiceandtrade-large-breed-puppy-dry-dog-food---chicken-and-brown-rice-27658.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Natural Choice",
+      "life_stage": "puppy",
+      "breed_size": "Large",
+      "source_id": "5231509",
+      "images": [
+        "/products/nutro/nutro-food-natural-choice-large-breed-puppy-dry-dog-food-chicken-brown-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0079105116619",
+          "sku": "5231509"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Brown Rice, Barley, Oatmeal, Brewers Rice, Pea Protein, Chicken Fat (preserved with Mixed Tocopherols), Dried Plain Beet Pulp, Natural Flavors, Peas, Salt, Flaxseed, Fish Oil (preserved with Mixed Tocopherols), Potassium Chloride, Choline Chloride, Dicalcium Phosphate, Chia Seed, Dried Coconut, Dried Tomato Pomace, Dried Egg Product, Dried Pumpkin, Dried Kale, Dried Spinach, DL–Methionine, Citric Acid (preservative), Mixed Tocopherols (preservative), Vitamin E Supplement, Ferrous Sulfate, Zinc Oxide, Sodium Selenite, L–Ascorbyl–2–Polyphosphate (source of Vitamin C), Manganese Sulfate, Copper Sulfate, D–Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract.",
+      "guaranteed_analysis": {
+        "dha_min": 100.0,
+        "crude_protein_max": 26.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3604 kcal/kg"
+    },
+    {
+      "name": "Natural Choice Large Breed Puppy Dry Dog Food - Lamb & Brown Rice",
+      "brand": "Nutro",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/nutro-natural-choiceandtrade-large-breed-puppy-dry-dog-food---lamb-and-brown-rice-27667.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Natural Choice",
+      "life_stage": "puppy",
+      "breed_size": "Large",
+      "source_id": "5232058",
+      "images": [
+        "/products/nutro/nutro-food-natural-choice-large-breed-puppy-dry-dog-food-lamb-brown-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0079105116404",
+          "sku": "5232058"
+        }
+      ],
+      "ingredients_raw": "Deboned Lamb, Lamb Meal, Brown Rice, Barley, Oatmeal, Brewers Rice, Peas, Chicken Fat (preserved with Mixed Tocopherols), Pea Protein, Potato Protein, Dried Plain Beet Pulp, Natural Flavors, Potassium Chloride, Fish Oil (preserved with Mixed Tocopherols), Salt, Dicalcium Phosphate, Choline Chloride, DL–Methionine, Chia Seed, Dried Coconut, Dried Tomato Pomace, Dried Egg Product, Dried Pumpkin, Dried Kale, Dried Spinach, Taurine, Citric Acid (preservative), Mixed Tocopherols (preservative), Vitamin E Supplement, Ferrous Sulfate, Zinc Oxide, Sodium Selenite, L–Ascorbyl–2–Polyphosphate (source of Vitamin C), Manganese Sulfate, Copper Sulfate, D–Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract.",
+      "guaranteed_analysis": {
+        "dha_min": 100.0,
+        "crude_protein_max": 26.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3582 kcal/kg"
+    },
+    {
+      "name": "Natural Choice Small Bites Adult Dry Dog Food - Lamb & Brown Rice",
+      "brand": "Nutro",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/nutro-natural-choiceandtrade-small-bites-adult-dry-dog-food---lamb-and-brown-rice-27832.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Natural Choice",
+      "life_stage": "adult",
+      "breed_size": "Small",
+      "source_id": "5231402",
+      "images": [
+        "/products/nutro/nutro-food-natural-choice-small-bites-adult-dry-dog-food-lamb-brown-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0079105116244",
+          "sku": "5231402"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0079105116213",
+          "sku": "5231404"
+        }
+      ],
+      "ingredients_raw": "Deboned Lamb, Lamb Meal, Brown Rice, Barley, Oatmeal, Brewers Rice, Peas, Chicken Fat (preserved with Mixed Tocopherols), Potato Protein, Dried Plain Beet Pulp, Natural Flavors, Pea Protein, Potassium Chloride, Salt, Flaxseed, Choline Chloride, DL–Methionine, Chia Seed, Dried Coconut, Dried Tomato Pomace, Dried Egg Product, Dried Pumpkin, Dried Kale, Dried Spinach, Citric Acid (preservative), Mixed Tocopherols (preservative), Taurine, Vitamin E Supplement, Ferrous Sulfate, Zinc Oxide, Sodium Selenite, L–Ascorbyl–2–Polyphosphate (source of Vitamin C), Manganese Sulfate, Copper Sulfate, D–Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract.",
+      "guaranteed_analysis": {
+        "crude_protein_max": 24.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3611 kcal/kg"
+    },
+    {
+      "name": "Natural Choice Small Breed Adult Dry Dog Food - Chicken & Brown Rice",
+      "brand": "Nutro",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/nutro-natural-choiceandtrade-small-breed-adult-dry-dog-food---chicken-and-brown-rice-42020.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Natural Choice",
+      "life_stage": "adult",
+      "breed_size": "Small",
+      "source_id": "5264116",
+      "images": [
+        "/products/nutro/nutro-food-natural-choice-small-breed-adult-dry-dog-food-chicken-brown-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0079105122177",
+          "sku": "5264116"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Meal, Brown Rice, Barley, Oatmeal, Peas, Brewers Rice, Chicken Fat (preserved with Mixed Tocopherols), Natural Flavors, Dried Plain Beet Pulp, Flaxseed, Salt, Potassium Chloride, Choline Chloride, DL–Methionine, Chia Seed, Dried Coconut, Dried Tomato Pomace, Dried Egg Product, Dried Pumpkin, Dried Kale, Dried Spinach, Citric Acid (preservative), Mixed Tocopherols (preservative), Vitamin E Supplement, L–Ascorbyl–2–Polyphosphate (source of Vitamin C), Ferrous Sulfate, Zinc Oxide, Sodium Selenite, D–Calcium Pantothenate, Manganese Sulfate, Copper Sulfate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract.",
+      "guaranteed_analysis": {
+        "crude_protein_max": 26.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3697 kcal/kg"
+    },
+    {
+      "name": "ULTRA Adult Dry Dog Food - Chicken, Lamb, Salmon",
+      "brand": "Nutro",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/nutro-ultraandtrade-adult-dry-dog-food---chicken-lamb-salmon-2923.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "NUTRO ULTRA",
+      "life_stage": "adult",
+      "source_id": "5168912",
+      "images": [
+        "/products/nutro/nutro-food-ultra-adult-dry-dog-food-chicken-lamb-salmon.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0079105103664",
+          "sku": "5168912"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0079105130431",
+          "sku": "5323440"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0079105132251",
+          "sku": "5351521"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Whole Grain Barley, Whole Grain Brown Rice, Whole Grain Sorghum, Whole Grain Oatmeal, Brewers Rice, Lamb Meal, Pea Protein, Natural Flavors, Salmon Meal, Dried Plain Beet Pulp, Salt, Chicken Fat (preserved with Mixed Tocopherols), Whole Flaxseed, Potassium Chloride, Choline Chloride, Citric Acid (preservative), Mixed Tocopherols (preservative), DL–Methionine, Whole Chia Seed, Dried Coconut, Dried Egg Product, Dried Tomato Pomace, Dried Kale, Dried Pumpkin, Dried Spinach, Dried Blueberries, Dried Apples, Dried Carrots, Ferrous Sulfate, Vitamin E Supplement, Zinc Oxide, Sodium Selenite, L–Ascorbyl–2–Polyphosphate (source of Vitamin C), Manganese Sulfate, Copper Sulfate, D–Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 9.0,
+        "crude_fat_max": 12.5,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.3,
+        "phosphorus_min": 0.9,
+        "omega_3_min": 0.25,
+        "omega_6_min": 2.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3346 kcal/kg"
+    },
+    {
+      "name": "ULTRA Large Breed Adult Dry Dog Food - Chicken, Lamb, Salmon",
+      "brand": "Nutro",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/nutro-ultraandtrade-large-breed-adult-dry-dog-food---chicken-lamb-salmon-2922.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "NUTRO ULTRA",
+      "life_stage": "adult",
+      "breed_size": "Large",
+      "source_id": "5168914",
+      "images": [
+        "/products/nutro/nutro-food-ultra-large-breed-adult-dry-dog-food-chicken-lamb-salmon.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0079105103725",
+          "sku": "5168914"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0079105132244",
+          "sku": "5351520"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Whole Grain Barley, Whole Grain Brown Rice, Brewers Rice, Whole Grain Sorghum, Whole Grain Oatmeal, Chicken Fat (preserved with Mixed Tocopherols), Natural Flavors, Lamb Meal, Salmon Meal, Dried Plain Beet Pulp, Whole Flaxseed, Salt, Potassium Chloride, Choline Chloride, Citric Acid (preservative), Mixed Tocopherols (preservative), Whole Chia Seed, Dried Coconut, Dried Egg Product, Dried Tomato Pomace, Dried Kale, Dried Pumpkin, Dried Spinach, Dried Blueberries, Dried Apples, Dried Carrots, DL-Methionine, Vitamin E Supplement, Ferrous Sulfate, Zinc Oxide, Sodium Selenite, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Manganese Sulfate, Copper Sulfate, D-Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 22.0,
+        "crude_fat_min": 13.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.3,
+        "phosphorus_min": 0.9,
+        "omega_3_min": 0.5,
+        "omega_6_min": 2.6
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3550 kcal/kg"
+    },
+    {
+      "name": "ULTRA Puppy Dry Dog Food - Chicken, Lamb, Salmon",
+      "brand": "Nutro",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/nutro-ultraandtrade-puppy-dry-dog-food---chicken-lamb-salmon-2917.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "NUTRO ULTRA",
+      "life_stage": "puppy",
+      "source_id": "5351261",
+      "images": [
+        "/products/nutro/nutro-food-ultra-puppy-dry-dog-food-chicken-lamb-salmon.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0079105132176",
+          "sku": "5351261"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0079105132220",
+          "sku": "5351279"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0079105132282",
+          "sku": "5351523"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Meal, Whole Grain Barley, Whole Grain Oatmeal, Whole Grain Brown Rice, Chicken Fat (preserved with Mixed Tocopherols), Dried Plain Beet Pulp, Natural Flavors, Lamb Meal, Salmon Meal, Whole Grain Sorghum, Potato Protein, Whole Flaxseed, Pea Protein, Fish Oil (preserved with Mixed Tocopherols), Salt, Potassium Chloride, Choline Chloride, Citric Acid (preservative), Mixed Tocopherols (preservative), Whole Chia Seed, Dried Coconut, Dried Egg Product, Dried Tomato Pomace, Dried Kale, Dried Pumpkin, Dried Spinach, Dried Blueberries, Dried Apples, Dried Carrots, DL–Methionine, Vitamin E Supplement, Ferrous Sulfate, Zinc Oxide, L–Ascorbyl–2–Polyphosphate (source of Vitamin C), Sodium Selenite, Manganese Sulfate, Copper Sulfate, D–Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.0,
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.1,
+        "epa_min": 0.05,
+        "calcium_min": 1.5,
+        "phosphorus_min": 1.0,
+        "omega_3_min": 0.6,
+        "omega_6_min": 3.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3707 kcal/kg, 434 kcal/cup"
+    },
+    {
+      "name": "ULTRA Small Breed Adult Dry Dog Food - Chicken, Lamb, Salmon",
+      "brand": "Nutro",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/nutro-ultraandtrade-small-breed-adult-dry-dog-food---chicken-lamb-salmon-2915.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "NUTRO ULTRA",
+      "life_stage": "adult",
+      "breed_size": "Small",
+      "source_id": "5351282",
+      "images": [
+        "/products/nutro/nutro-food-ultra-small-breed-adult-dry-dog-food-chicken-lamb-salmon.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0079105132138",
+          "sku": "5351282"
+        }
+      ],
+      "ingredients_raw": "fromaround the world. Always trusted partnerships with farmers and suppliers to source highÃ¢ÂÂquality ingredients. NO CHICKEN BY-PRODUCT MEAL, CORN, WHEAT OR SOY* - No chicken by-product meal* - No artificial flavors or colors - No artificial preservatives* - No corn, wheat or soy protein* Healthy Digestion: Natural fiber for healthy digestion. Always high-quality animal protein source as the first ingredient. Always natural ingredients plus vitamins, minerals and other nutrients. Made With Healthy Whole Grains Radiant Skin & Coat: Omega 3 & 6 Fatty Acids for healthy skin & radiant coat. #1 INGREDIENT IS REAL CHICKEN Healthy Teeth & Bones: Calcium and Phosphorus to support healthy teeth and bones. Strong Muscles & Lean Body: High-quality protein to help build strong muscles and a lean body. Always nutrient rich and flavorful recipes, purposefully designed to support whole body health. *Trace amounts may be present due to potential cross-contact during manufacturing. Flavor: Trio of Proteins from Chicken, Lamb, and Salmon Weight: 3.500 LB.~13 Cups Ingredients: Chicken, Chicken Meal, Whole Grain Sorghum, Whole Grain Oatmeal, Whole Grain Brown Rice, Chicken Fat (preserved with Mixed Tocopherols), Lamb Meal, Salmon Meal, Brewers Rice, Dried Plain Beet Pulp, Whole Grain Barley, Natural Flavors, Whole Flaxseed, Salt, Potassium Chloride, Choline Chloride, Citric Acid (preservative), Mixed Tocopherols (preservative), Whole Chia Seed, Dried Coconut, Dried Egg Product, Dried Tomato Pomace, Dried Kale, Dried Pumpkin, Dried Spinach, Dried Blueberries, Dried Apples, Dried Carrots, DL–Methionine, Ferrous Sulfate, Zinc Oxide, Vitamin E Supplement, Sodium Selenite, L–Ascorbyl–2–Polyphosphate (source of Vitamin C), Manganese Sulfate, Copper Sulfate, D–Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.5,
+        "phosphorus_min": 1.0,
+        "omega_3_min": 0.65,
+        "omega_6_min": 3.3
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3731 kcal/kg, 437 kcal/cup"
+    },
+    {
+      "name": "Wholesome Essentials Small Breed Senior Dry Dog Food - Chicken & Brown Rice",
+      "brand": "Nutro",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/nutro-wholesome-essentials-small-breed-senior-dry-dog-food---chicken-and-brown-rice-42022.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Wholesome Essentials",
+      "life_stage": "senior",
+      "breed_size": "Small",
+      "source_id": "5264118",
+      "images": [
+        "/products/nutro/nutro-food-wholesome-essentials-small-breed-senior-dry-dog-food-chicken-brown-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0079105122191",
+          "sku": "5264118"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Meal, Brown Rice, Barley, Oatmeal, Peas, Brewers Rice, Natural Flavors, Dried Plain Beet Pulp, Chicken Fat (preserved with Mixed Tocopherols), Fish Oil (preserved with Mixed Tocopherols), Potassium Chloride, Choline Chloride, DL–Methionine, Salt, Chia Seed, Dried Coconut, Dried Tomato Pomace, Dried Egg Product, Dried Pumpkin, Dried Kale, Dried Spinach, Citric Acid (preservative), Mixed Tocopherols (preservative), Vitamin E Supplement, L–Ascorbyl–2–Polyphosphate (source of Vitamin C), Ferrous Sulfate, Zinc Oxide, Sodium Selenite, D–Calcium Pantothenate, Manganese Sulfate, Copper Sulfate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract.",
+      "guaranteed_analysis": {
+        "calcium_min": 100.0,
+        "crude_protein_max": 28.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3594 kcal/kg"
+    },
+    {
+      "name": "Crunchy Adult Dog Treats - Mixed Berry",
+      "brand": "Nutro",
+      "url": "https://www.petsmart.ca/dog/treats/biscuits-cookies-and-bakery-treats/nutro-crunchy-adult-dog-treats---mixed-berry-77227.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "source_id": "5126429",
+      "images": [
+        "/products/nutro/nutro-treat-crunchy-adult-dog-treats-mixed-berry.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0079105110853",
+          "sku": "5126429"
+        }
+      ],
+      "ingredients_raw": "Whole Brown Rice, Oatmeal, Chicken Meal, Cane Molasses, Sunflower Oil (preserved with mixed Tocopherols), Dried Blueberries, Dried Cranberries, Dried Cherries, Natural Flavors, Preserved with mixed Tocopherols, Rosemary Extract.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 12.0,
+        "crude_fat_min": 6.5,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 11.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3658 kcal/kg"
+    },
+    {
+      "name": "Crunchy Adult Dog Treats - Peanut Butter",
+      "brand": "Nutro",
+      "url": "https://www.petsmart.ca/dog/treats/biscuits-cookies-and-bakery-treats/nutro-crunchy-adult-dog-treats---peanut-butter-79497.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "source_id": "5179896",
+      "images": [
+        "/products/nutro/nutro-treat-crunchy-adult-dog-treats-peanut-butter.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0079105110884",
+          "sku": "5179896"
+        }
+      ],
+      "ingredients_raw": "Whole Brown Rice, Chicken Meal, Oatmeal, Peanut Flour, Peanut Butter, Ground Roasted Peanuts, Cane Molasses, Peanut Oil (preserved with mixed Tocopherols), Natural Flavor, Preserved with mixed Tocopherols, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 19.0,
+        "crude_fat_min": 8.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 11.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3640 kcal/kg"
+    },
+    {
+      "name": "Natural Choice Dry Puppy Dog Food - No GMO",
+      "brand": "Nutro",
+      "url": "https://www.petsmart.ca/dog/treats/dental-treats-and-chews/nutro-natural-choice-dry-puppy-dog-food---no-gmo-74330.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Natural Choice",
+      "life_stage": "puppy",
+      "source_id": "5334338",
+      "images": [
+        "/products/nutro/nutro-treat-natural-choice-dry-puppy-dog-food-no-gmo.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0079105130097",
+          "sku": "5334338"
+        }
+      ],
+      "ingredients_raw": "No Artificial flavours Item Number: 5334338 Brand: Nutro Food Type: Dry Breed Size: All Life Stage: Puppy Flavor: Chicken & Brown Rice Weight: 2.27 kg NUTRITIONAL INFORMATION Ingredients: Chicken, Chicken Meal, Whole Grain Barley, Brewers Rice, Whole Grain Brown Rice, Potato Protein, Chicken Fat (preserved with Mixed Tocopherols), Rice Bran, Natural Flavour, Dried Plain Beet Pulp, Fish Oil (preserved with Mixed Tocopherols), Salt, Potassium Chloride, Choline Chloride, Citric Acid (preservative), Mixed Tocopherols (preservative), Chia Seed, Dried Coconut, Dried Tomato Pomace, Dried Egg Product, Dried Pumpkin, Dried Kale, Dried Spinach, Vitamin E Supplement, Ferrous Sulfate, Zinc Oxide, Sodium Selenite, Ascorbic Acid (Vitamin C), D-Calcium Pantothenate, Manganese Sulfate, Copper Sulfate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Manganous Oxide, Potassium Iodide, Folic Acid, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 3.0,
+        "omega_3_min": 0.2,
+        "moisture_max": 10.0,
+        "omega_6_min": 2.0,
+        "epa_min": 0.05,
+        "dha_min": 0.05,
+        "calcium_min": 1.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3727 kcal/kg, 390 kcal/cup"
+    }
+  ]
+}

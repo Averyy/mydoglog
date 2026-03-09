@@ -16,6 +16,12 @@ from .iams import scrape_iams
 from .acana import scrape_acana
 from .performatrin import scrape_performatrin
 from .authority import scrape_authority
+from .pedigree import scrape_pedigree
+from .nutro import scrape_nutro
+from .wellness import scrape_wellness
+from .stellachewys import scrape_stellachewys
+from .merrick import scrape_merrick
+from .farmina import scrape_farmina
 
 # Registry: key -> (display_name, scrape_function)
 # Each function: (output_dir: Path) -> int (product count)
@@ -40,4 +46,10 @@ SCRAPERS: dict[str, tuple[str, callable]] = {
     "acana": ("Acana/Orijen", scrape_acana),
     "performatrin": ("Performatrin", scrape_performatrin),
     "authority": ("Authority", scrape_authority),
+    "pedigree": ("Pedigree", scrape_pedigree),
+    "nutro": ("Nutro", scrape_nutro),
+    "wellness": ("Wellness", scrape_wellness),
+    "stellachewys": ("Stella & Chewy's", scrape_stellachewys),
+    "merrick": ("Merrick", scrape_merrick),
+    "farmina": ("Farmina", scrape_farmina),
 }

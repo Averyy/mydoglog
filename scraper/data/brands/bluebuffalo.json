@@ -1,7 +1,7 @@
 {
   "brand": "Blue Buffalo",
   "website_url": "https://www.bluebuffalo.com",
-  "scraped_at": "2026-03-08T19:52:49.768362+00:00",
+  "scraped_at": "2026-03-09T03:11:25.993157+00:00",
   "scraper_version": "0.1.0",
   "stats": {
     "product_count": 163,
@@ -368,7 +368,8 @@
       "guaranteed_analysis_basis": "as-fed",
       "images": [
         "/products/blue-buffalo/blue-buffalo-treat-health-bars-crunchy-dog-biscuits-baked-with-banana-and-yogurt.png"
-      ]
+      ],
+      "calorie_content": "3265 kcal/kg, 63 kcal/treat"
     },
     {
       "name": "Health Bars Crunchy Dog Biscuits Baked with Pumpkin and Cinnamon",

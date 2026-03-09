@@ -38,18 +38,18 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
       for (const word of words) {
         const lower = word.toLowerCase()
         const mappedFormat = FORMAT_KEYWORDS[lower]
-        // Strip apostrophes/punctuation for fuzzy matching (hills → hill's)
-        const stripped = word.replace(/['']/g, "")
-        const nameOrBrand = or(
-          sql`replace(lower(${products.name}), '''', '') ILIKE ${"%" + stripped.toLowerCase() + "%"}`,
-          sql`replace(lower(${brands.name}), '''', '') ILIKE ${"%" + stripped.toLowerCase() + "%"}`,
-        )!
         if (mappedFormat) {
-          conditions.push(
-            or(nameOrBrand, sql`${products.format} = ${mappedFormat}`)!,
-          )
+          // Exact format keyword — filter by format only, don't match name
+          conditions.push(sql`${products.format} = ${mappedFormat}`)
         } else {
-          conditions.push(nameOrBrand)
+          // Strip apostrophes/punctuation for fuzzy matching (hills → hill's)
+          const stripped = word.replace(/['']/g, "")
+          conditions.push(
+            or(
+              sql`replace(lower(${products.name}), '''', '') ILIKE ${"%" + stripped.toLowerCase() + "%"}`,
+              sql`replace(lower(${brands.name}), '''', '') ILIKE ${"%" + stripped.toLowerCase() + "%"}`,
+            )!,
+          )
         }
       }
     }

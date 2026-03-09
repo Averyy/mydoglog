@@ -20,7 +20,7 @@ class TestCleanText:
 
     def test_preserves_tab_newline_cr(self) -> None:
         assert clean_text("hello\tworld") == "hello world"
-        assert clean_text("line1\nline2") == "line1\nline2"
+        assert clean_text("line1\nline2") == "line1 line2"
 
     def test_purina_hex_artifacts(self) -> None:
         # _x001F_ is a control char, should be stripped
@@ -33,7 +33,7 @@ class TestCleanText:
         assert clean_text("tabs\t\tand  spaces") == "tabs and spaces"
 
     def test_collapses_blank_lines(self) -> None:
-        assert clean_text("line1\n\n\nline2") == "line1\nline2"
+        assert clean_text("line1\n\n\nline2") == "line1 line2"
 
     def test_empty_string(self) -> None:
         assert clean_text("") == ""

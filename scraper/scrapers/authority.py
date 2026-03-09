@@ -107,8 +107,12 @@ def _extract_rsc_text(html: str) -> str | None:
     PetSmart uses React Server Components. Product data (description,
     ingredients, GA, calories) is embedded in self.__next_f.push([1,"..."])
     script payloads as escaped HTML.
+
+    Prefers chunks that contain actual 'Ingredients:' sections over longer
+    chunks that merely mention the word (e.g. product recommendation widgets).
     """
     best_text = ""
+    best_has_ingredients = False
 
     for m in re.finditer(r'self\.__next_f\.push\(\[1,"(.*?)"\]\)', html):
         payload = m.group(1)
@@ -128,8 +132,14 @@ def _extract_rsc_text(html: str) -> str | None:
         soup = BeautifulSoup(unescaped, "lxml")
         text = soup.get_text(separator="\n", strip=True)
 
-        if len(text) > len(best_text):
+        has_ingredients = bool(re.search(r"Ingredients\s*:", text))
+
+        # Prefer chunks with actual Ingredients: section; among equal, pick longest
+        if (has_ingredients and not best_has_ingredients) or (
+            has_ingredients == best_has_ingredients and len(text) > len(best_text)
+        ):
             best_text = text
+            best_has_ingredients = has_ingredients
 
     return best_text if best_text else None
 

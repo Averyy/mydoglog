@@ -1,6 +1,6 @@
 # Canadian Dog Food Brands — Scraper Reference
 
-Last updated: 2026-03-02
+Last updated: 2026-03-09
 
 ## Scraper Status
 
@@ -22,8 +22,14 @@ Last updated: 2026-03-02
 | Performatrin | 84 | retail | 100% | 100% | 95% | Done |
 | Iams | 23 | retail | 100% | 100% | 100% | Done |
 | Authority | 45 | retail | 100% | 100% | 100% | Done |
+| Pedigree | 29 | retail | 100% | 100% | 100% | Done |
+| Nutro | 46 | retail | 100% | 100% | 100% | Done |
+| Wellness | 72 | retail | 100% | 100% | 100% | Done |
+| Stella & Chewy's | 42 | retail | 100% | 100% | 100% | Done |
+| Merrick | 59 | retail | 100% | 100% | 100% | Done |
+| Farmina | 15 | vet | 100% | 100% | 100% | Done |
 
-**Total scraped:** 1,260 products (100% with ingredients, 97% GA, 95% calories)
+**Total scraped:** 1,528 products (100% with ingredients, 98% GA, 96% calories)
 
 ---
 
@@ -61,19 +67,28 @@ Each scraper file (`scrapers/{brand}.py`) contains the full parsing details. Thi
 | Rayne | `raynenutrition.com` | Shopify | GA from static lookup (InDesign diet pages). Novel proteins: kangaroo, rabbit, crocodilian, BSFL. 12 missing GA (DIAG products by design, treats/rolls use g/1000kcal only). |
 | Authority | `petsmart.ca` | Next.js RSC + JSON-LD | PetSmart private-label. Discovery via XML sitemaps (listing page is unreliable). RSC flight payloads for nutritional data. |
 | Iams | `petsmart.ca` | Next.js RSC + JSON-LD | iams.ca has nutritional data as images — PetSmart has text. Same parsing as Authority. |
+| Farmina | `farmina.com/ca` | PHP SSR | Vet Life canine only (15 products). AJAX listing via POST to `a_prodotti_eshop.php` (Referer + X-Requested-With). GA can be in `div.text1`, `div.text2`, or `div.etichetta`. Calories embedded in GA paragraph or separate "energy value" section. |
+
+### PetSmart.ca RSC Pattern
+
+| Brand | Key Notes |
+|-------|-----------|
+| Pedigree | ~29 products. Same RSC parsing as Authority/Iams. |
+| Nutro | ~46 products. nutro.ca has nutrition as images — PetSmart has text. |
+| Wellness | ~72 products. Simple LID (~6 dry) not on PetSmart, accepted as known gap. |
+| Stella & Chewy's | ~42 products. Discovery via `/featured-brands/stella-and-chewys?page=N`. |
+
+### Manufacturer Sites
+
+| Brand | Site | Stack | Key Notes |
+|-------|------|-------|-----------|
+| Merrick | `merrickpetcare.com/canada` | Drupal 11 SSR | Canada catalog at `/canada/dog-food?page=N`. JSON-LD ItemList for discovery, product data in `<h3>` sections. GA in inline or list format. 59 products. |
 
 ---
 
 ## Not Yet Scraped
 
-| Brand | ~Products | Notes |
-|-------|-----------|-------|
-| Farmina (Vet Life) | ~10 | Vet channel. Italian brand, significant CA vet presence |
-| Pedigree | ~15 | Mass market budget. Mars brand |
-| Wellness | ~50 | Simple LID + Core Digestive Health |
-| Merrick | ~35 | LID line. Nestle/Purina owned |
-| Stella & Chewy's | ~45 | Freeze-dried raw focus |
-| Nutro | ~25 | LID line. Mars brand. Weak CA presence |
+See `docs/todo-new-sources.md` for investigation status and scraper plans.
 
 ---
 

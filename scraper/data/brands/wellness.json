@@ -1,0 +1,2540 @@
+{
+  "brand": "Wellness",
+  "website_url": "https://www.petsmart.ca",
+  "scraped_at": "2026-03-09T16:01:04.668089+00:00",
+  "scraper_version": "0.1.0",
+  "stats": {
+    "product_count": 73,
+    "by_channel": {
+      "retail": 73
+    },
+    "by_type": {
+      "supplement": 14,
+      "food": 54,
+      "treat": 5
+    }
+  },
+  "products": [
+    {
+      "name": "Bowl Boosters Stews Natural Topper for Dogs - 5.5 OZ Carton",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/wellness-bowl-boosters-stews-natural-topper-for-dogs---55-oz-carton-81298.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "sub_brand": "Bowl Boosters",
+      "source_id": "5350430",
+      "images": [
+        "/products/wellness/wellness-supplement-bowl-boosters-stews-natural-topper-for-dogs-5-5-oz-carton.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "5.5 OZ",
+          "upc": "0076344016038",
+          "sku": "5350430"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "5.5 OZ",
+          "upc": "0076344016045",
+          "sku": "5350431"
+        }
+      ],
+      "ingredients_raw": "Turkey Bone Broth, Turkey, Tapioca Starch, Sweet Potatoes, Green Beans, Red Bell Pepper, Salt, Flaxseed Oil, Dried Chicory Root, Zinc Amino Acid Chelate, Sage, Turmeric, Parsley, Vitamin E Supplement",
+      "guaranteed_analysis": {
+        "crude_protein_min": 6.5,
+        "crude_fat_min": 2.5,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 90.0,
+        "omega_6_min": 0.5,
+        "omega_3_min": 0.05
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "633 kcal/kg"
+    },
+    {
+      "name": "Complete Health Adult Wet Dog Food",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/wellness-complete-health-adult-wet-dog-food---natural-1071.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Complete Health",
+      "life_stage": "adult",
+      "source_id": "5153560",
+      "images": [
+        "/products/wellness/wellness-food-complete-health-adult-wet-dog-food.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344088875",
+          "sku": "5153560"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344089162",
+          "sku": "5153561"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344089155",
+          "sku": "5153562"
+        }
+      ],
+      "ingredients_raw": "Turkey, Turkey Broth, Turkey Liver, Ground Barley, Turkey Heart, Sweet Potatoes, Carrots, Ground Flaxseed, Carrageenan, Dried Plain Beet Pulp, Fish Oil (Preserved With Mixed Tocopherols), Guar Gum, Salt, Potassium Chloride, Dried Chicory Root, Dicalcium Phosphate, Sunflower Oil, Choline Chloride, Zinc Proteinate, Iron Proteinate, Vitamin E Supplement, Copper Proteinate, Cobalt Proteinate, Manganese Proteinate, Sodium Selenite, Thiamine Mononitrate, Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Potassium Iodide, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 6.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 78.0,
+        "calcium_min": 0.26,
+        "phosphorus_min": 0.22,
+        "omega_6_min": 0.33
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1258 kcal/kg, 445 kcal/can"
+    },
+    {
+      "name": "Complete Health Senior Wet Dog Food",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/wellness-complete-health-senior-wet-dog-food---natural-1074.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Complete Health",
+      "life_stage": "senior",
+      "source_id": "5153563",
+      "images": [
+        "/products/wellness/wellness-food-complete-health-senior-wet-dog-food.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344089186",
+          "sku": "5153563"
+        }
+      ],
+      "ingredients_raw": "Chicken Broth, Chicken (Source of Glucosamine and Chondroitin Sulfate), Chicken Liver, Whitefish, Ground Barley, Rice Bran, Chicken Hearts, Sweet Potatoes, Carrots, Ground Flaxseed, Carrageenan, Dried Plain Beet Pulp, Guar Gum, Fish Oil (Preserved With Mixed Tocopherols), Potassium Chloride, Salt, Dried Chicory Root, Sunflower Oil, Choline Chloride, Zinc Proteinate, L-ascorbyl-2-polyphosphate, Iron Proteinate, Vitamin E Supplement, Thiamine Mononitrate, Tricalcium Phosphate, L-Carnitine, Copper Proteinate, Cobalt Proteinate, Manganese Proteinate, Sodium Selenite, Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Potassium Iodide, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.0,
+        "crude_fat_min": 4.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 78.0,
+        "dha_min": 0.025,
+        "calcium_min": 0.11,
+        "phosphorus_min": 0.09,
+        "omega_6_min": 0.33
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1038 kcal/kg, 367 kcal/can"
+    },
+    {
+      "name": "CORE All Life Stage Wet Dog Food - Grain Free",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/wellness-core-all-life-stage-wet-dog-food---natural-grain-free-680.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "CORE",
+      "life_stage": "all",
+      "source_id": "5171442",
+      "images": [
+        "/products/wellness/wellness-food-core-all-life-stage-wet-dog-food-grain-free.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344079125",
+          "sku": "5171442"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344079187",
+          "sku": "5180181"
+        }
+      ],
+      "ingredients_raw": "Chicken, Whitefish, Salmon Broth, Chicken Liver, Salmon, Herring, Sweet Potatoes, Chicken Heart, Ground Flaxseed, Dried Plain Beet Pulp, Carrots, Blueberries, Kale, Apples, Parsley, Broccoli, Spinach, Guar Gum, Cassia Gum, Xanthan Gum, Potassium Chloride, Salt, Sunflower Oil, Dried Chicory Root, Yucca Schidigera Extract, Fish Oil (Preserved With Mixed Tocopherols), Choline Chloride, Zinc Proteinate, Iron Proteinate, Thiamine Mononitrate, Vitamin E Supplement, Tricalcium Phosphate, Copper Proteinate, Cobalt Proteinate, Manganese Proteinate, Sodium Selenite, Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Potassium Iodide, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 10.0,
+        "crude_fat_min": 7.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 78.0,
+        "calcium_min": 0.26,
+        "phosphorus_min": 0.22,
+        "omega_6_min": 0.33,
+        "omega_3_min": 0.05
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1319 kcal/kg, 467 kcal/can"
+    },
+    {
+      "name": "CORE Digestive Health All Life Stage Wet Dog Food - Grain Free",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/wellness-core-digestive-health-all-life-stage-wet-dog-food---grain-free-61730.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "CORE Digestive Health",
+      "life_stage": "all",
+      "source_id": "5306049",
+      "images": [
+        "/products/wellness/wellness-food-core-digestive-health-all-life-stage-wet-dog-food-grain-free.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344087014",
+          "sku": "5306049"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344087038",
+          "sku": "5306050"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Broth, Chicken Liver, Whitefish, Dried Ground Peas, Potato Protein, Chicken Heart, Ground Flaxseed, Dried Plain Beet Pulp, Dicalcium Phosphate, Cassia Gum, Xanthan Gum, Fish Oil (Preserved With Mixed Tocopherols), Salt, Potassium Chloride, Apple Powder, Cranberry Powder, Pumpkin Powder, Dried Chicory Root, Sunflower Oil, Choline Chloride, Zinc Proteinate, Vitamin E Supplement, Iron Proteinate, Blueberry Powder, Papaya Powder, Pomegranate Powder, Thiamine Mononitrate, Peppermint Leaf Powder, Cinnamon, Fennel Powder, Copper Proteinate, Cobalt Proteinate, Manganese Proteinate, Sodium Selenite, Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Potassium Iodide, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 12.0,
+        "crude_fat_min": 6.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0,
+        "calcium_min": 0.26,
+        "phosphorus_min": 0.22,
+        "omega_6_min": 0.5,
+        "omega_3_min": 0.1
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1324 kcal/kg, 489 kcal/can"
+    },
+    {
+      "name": "CORE Hearty Cuts All Life Stage Wet Dog Food - Grain Free, Natural",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/wellness-core-hearty-cuts-all-life-stage-wet-dog-food---grain-free-natural-34709.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "CORE",
+      "life_stage": "all",
+      "source_id": "5247400",
+      "images": [
+        "/products/wellness/wellness-food-core-hearty-cuts-all-life-stage-wet-dog-food-grain-free-natural.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344080213",
+          "sku": "5247400"
+        }
+      ],
+      "ingredients_raw": "Beef, Beef Broth, Venison Broth, Beef Liver, Venison, Natural Flavor, Potato Starch, Sweet Potatoes, Dried Egg Product, Green Beans, Guar Gum, Carrots, Apples, Blueberries, Broccoli, Kale, Parsley, Spinach,Salt, Sodium Phosphate, Ground Flaxseed, Potassium Chloride, Canola Oil, Calcium Carbonate, Dried Chicory Root, Yucca Schidigera Extract, Dried Kelp, Choline Chloride, Salmon Oil (Preserved With Mixed Tocopherols), Zinc Proteinate, Iron Proteinate, Thiamine Mononitrate, Tricalcium Phosphate, Vitamin E Supplement, Copper proteinate, Cobalt Proteinate, Manganese Proteinate, Sodium Selenite, Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Potassium Iodide, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "954 kcal/kg, 338 kcal/can"
+    },
+    {
+      "name": "CORE Mini Meals Chunky All Life Stage Wet Dog Food - Grain Free",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/wellness-core-mini-meals-chunky-all-life-stage-wet-dog-food---natural-grain-free-49089.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "CORE",
+      "life_stage": "all",
+      "source_id": "5280374",
+      "images": [
+        "/products/wellness/wellness-food-core-mini-meals-chunky-all-life-stage-wet-dog-food-grain-free.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344166047",
+          "sku": "5280374"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344166054",
+          "sku": "5280385"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Broth, Water Sufficient for Processing, Potato Starch, Chicken Liver, Egg, Tapioca Starch, Natural Flavor, Salt, Tricalcium Phosphate, Sunflower Oil, Guar Gum, Magnesium Sulfate, Vitamins [Vitamin E Supplement, Thiamine Hydrochloride, Niacin, Vitamin A Supplement, Pyridoxine Hydrochloride, d-Calcium Pantothenate, Riboflavin Supplement, Folic Acid, Vitamin D3 Supplement, Biotin, Vitamin B12 Supplement], Potassium Chloride, Choline Chloride, Zinc Amino Acid Chelate, Iron Amino Acid Chelate, Manganese Amino Acid Chelate, Copper Amino Acid Chelate, Sodium Selenite, Potassium Iodide.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1083 kcal/kg, 92 kcal/pouch"
+    },
+    {
+      "name": "CORE Mini Meals Pate All Life Stage Wet Dog Food - Grain Free",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/wellness-core-mini-meals-pate-all-life-stage-wet-dog-food---natural-grain-free-49084.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "CORE",
+      "life_stage": "all",
+      "source_id": "5280369",
+      "images": [
+        "/products/wellness/wellness-food-core-mini-meals-pate-all-life-stage-wet-dog-food-grain-free.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344166009",
+          "sku": "5280369"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344166016",
+          "sku": "5280370"
+        }
+      ],
+      "ingredients_raw": "Beef, Chicken, Chicken Broth, Water Sufficient for Processing, Tuna, Potato Starch, Tapioca Starch, Natural Flavor, Tricalcium Phosphate, Potassium Chloride, Guar Gum, Salt, Locust Bean Gum, Sodium Carbonate, Xanthan Gum, Vitamins [Vitamin E Supplement, Thiamine Hydrochloride, Niacin, Vitamin A Supplement, Pyridoxine Hydrochloride, d-Calcium Pantothenate, Riboflavin Supplement, Folic Acid, Vitamin D3 Supplement, Biotin, Vitamin B12 Supplement], Magnesium Sulfate, Choline Chloride, Zinc Amino Acid Chelate, Iron Amino Acid Chelate, Manganese Amino Acid Chelate, Copper Amino Acid Chelate, Sodium Selenite, Potassium Iodide.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 4.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "972 kcal/kg, 83 kcal/pouch"
+    },
+    {
+      "name": "CORE Mini Meals Shredded All Life Stage Wet Dog Food - Grain Free",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/wellness-core-mini-meals-shredded-all-life-stage-wet-dog-food---natural-grain-free-49086.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "CORE",
+      "life_stage": "all",
+      "source_id": "5280371",
+      "images": [
+        "/products/wellness/wellness-food-core-mini-meals-shredded-all-life-stage-wet-dog-food-grain-free.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344166023",
+          "sku": "5280371"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344166030",
+          "sku": "5280373"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Broth, Water Sufficient for Processing, Potato Starch, Turkey, Chicken Liver, Egg, Tapioca Starch, Natural Flavor, Salt, Tricalcium Phosphate, Sunflower Oil, Guar Gum, Magnesium Sulfate, Vitamins [Vitamin E Supplement, Thiamine Hydrochloride, Niacin, Vitamin A Supplement, Pyridoxine Hydrochloride, d-Calcium Pantothenate, Riboflavin Supplement, Folic Acid, Vitamin D3 Supplement, Biotin, Vitamin B12 Supplement], Potassium Chloride, Choline Chloride, Zinc Amino Acid Chelate, Iron Amino Acid Chelate, Manganese Amino Acid Chelate, Copper Amino Acid Chelate, Sodium Selenite, Potassium Iodide.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1052 kcal/kg, 90 kcal/pouch"
+    },
+    {
+      "name": "Just for Puppy Wet Dog Food",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/wellness-just-for-puppy-wet-dog-food---natural-676.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "life_stage": "puppy",
+      "source_id": "5153544",
+      "images": [
+        "/products/wellness/wellness-food-just-for-puppy-wet-dog-food.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344088851",
+          "sku": "5153544"
+        }
+      ],
+      "ingredients_raw": "Chicken Broth, Chicken, Chicken Liver, Salmon, Ground Barley, Pea Protein, Sweet Potatoes, Chicken Hearts, Carrots, Ground Flaxseed, Carrageenan, Apples, Pears, Bananas, Guar Gum, Canola Oil, Salt, Dicalcium Phosphate, Potassium Chloride, Choline Chloride, Zinc Proteinate, Iron Proteinate, Thiamine Mononitrate, Vitamin E Supplement, Copper Proteinate, Manganese Proteinate, Sodium Selenite, Cobalt Proteinate, Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Potassium Iodide, Vitamin D3 Supplement, Folic Acid",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.0,
+        "crude_fat_min": 6.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 78.0,
+        "dha_min": 0.04
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1156 kcal/kg, 409 kcal/can"
+    },
+    {
+      "name": "Petite Entrees Small All Life Stage Wet Dog Food - Grain Free CHICKEN",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/wellness-petite-entrees-small-all-life-stage-wet-dog-food---grain-free-34704.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "life_stage": "all",
+      "source_id": "5247395",
+      "images": [
+        "/products/wellness/wellness-food-petite-entrees-small-all-life-stage-wet-dog-food-grain-free-chicken.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344190615",
+          "sku": "5247395"
+        }
+      ],
+      "ingredients_raw": "CHICKEN, CHICKEN BROTH, WATER SUFFICIENT FOR PROCESSING, TURKEY, GREEN BEANS, CARROTS, POTATO STARCH, CHICKEN LIVER, EGG, NATURAL FLAVOR, POTASSIUM CHLORIDE, SALT, LOCUST BEAN GUM, SODIUM CARBONATE, TRICALCIUM PHOSPHATE, XANTHAN GUM, GUAR GUM, MAGNESIUM SULFATE, VITAMINS [VITAMINE SUPPLEMENT, THIAMINE HYDROCHLORIDE, NIACIN, VITAMIN A SUPPLEMENT, PYRIDOXINE HYDROCHLORIDE, D-CALCIUM PANTOTHENATE, RIBOFLAVIN SUPPLEMENT, FOLIC ACID, VITAMIN D3 SUPPLEMENT, BIOTIN, VITAMIN B12 SUPPLEMENT], CHOLINE CHLORIDE, MINERALS [ZINC AMINO ACID CHELATE, FERROUS AMINO ACID CHELATE, MANGANESE AMINO ACID CHELATE, COPPER AMINO ACID CHELATE, POTASSIUM IODIDE, SODIUM SELENITE].",
+      "guaranteed_analysis": {
+        "crude_protein_min": 6.5,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 0.5,
+        "moisture_max": 85.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "980 kcal/kg"
+    },
+    {
+      "name": "Petite Entrees Small All Life Stage Wet Dog Food - Grain Free CHICKEN",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/wellness-petite-entrees-small-all-life-stage-wet-dog-food---grain-free-34706.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "life_stage": "all",
+      "source_id": "5247397",
+      "images": [
+        "/products/wellness/wellness-food-petite-entrees-small-all-life-stage-wet-dog-food-grain-free-chicken.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344190646",
+          "sku": "5247397"
+        }
+      ],
+      "ingredients_raw": "CHICKEN, CHICKEN BROTH, WATER SUFFICIENT FOR PROCESSING, BEEF, GREEN BEANS, RED PEPPERS, POTATO STARCH, CHICKEN LIVER, EGG, NATURAL FLAVOR, POTASSIUM CHLORIDE, SALT, LOCUST BEAN GUM, SODIUM CARBONATE, TRICALCIUM PHOSPHATE, XANTHAN GUM, GUAR GUM, MAGNESIUM SULFATE, VITAMINS [VITAMIN E SUPPLEMENT, THIAMINE HYDROCHLORIDE, NIACIN, VITAMIN A SUPPLEMENT, PYRIDOXINE HYDROCHLORIDE, D-CALCIUM PANTOTHENATE, RIBOFLAVIN SUPPLEMENT, FOLIC ACID, VITAMIN D3 SUPPLEMENT, BIOTIN, VITAMIN B12 SUPPLEMENT], CHOLINE CHLORIDE, MINERALS [ZINC AMINO ACID CHELATE, FERROUS AMINO ACID CHELATE, MANGANESE AMINO ACID CHELATE, COPPER AMINO ACID CHELATE, POTASSIUM IODIDE, SODIUM SELENITE].",
+      "guaranteed_analysis": {
+        "crude_protein_min": 6.0,
+        "crude_fat_min": 4.0,
+        "crude_fiber_max": 0.5,
+        "moisture_max": 85.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "830 kcal/kg"
+    },
+    {
+      "name": "Petite Entrees Small All Life Stage Wet Dog Food - Grain Free Chicken",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/wellness-petite-entrees-small-all-life-stage-wet-dog-food---grain-free-34707.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "life_stage": "all",
+      "source_id": "5247398",
+      "images": [
+        "/products/wellness/wellness-food-petite-entrees-small-all-life-stage-wet-dog-food-grain-free-chicken.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344190653",
+          "sku": "5247398"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Broth, Water Sufficient For Processing, Lamb, Venison, White Sweet Potatoes, Carrots, Potato Starch, Chicken Liver, Egg, Natural Flavor, Potassium Chloride, Salt, Locust Bean Gum, Sodium Carbonate, Tricalcium Phosphate, Xanthan Gum, Guar Gum, Magnesium Sulfate, Vitamins [Vitamin E Supplement, Thiamine Hydrochloride, Niacin, Vitamin A Supplement, Pyridoxine Hydrochloride, D-Calcium Pantothenate, Riboflavin Supplement, Folic Acid, Vitamin D3 Supplement, Biotin, Vitamin B12 Supplement], Choline Chloride, Minerals [Zinc Amino Acid Chelate, Ferrous Amino Acid Chelate, Manganese Amino Acid Chelate, Copper Amino Acid Chelate, Potassium Iodide, Sodium Selenite]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 6.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 0.5,
+        "moisture_max": 85.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1020 kcal/kg"
+    },
+    {
+      "name": "Petite Entrees Small Breed Adult Dog Food - Grain Free, Casserole",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/wellness-petite-entrees-small-breed-adult-dog-food---natural-grain-free-casserole-24400.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "life_stage": "adult",
+      "breed_size": "Small",
+      "source_id": "5220094",
+      "images": [
+        "/products/wellness/wellness-food-petite-entrees-small-breed-adult-dog-food-grain-free-casserole.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344090373",
+          "sku": "5220094"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344090403",
+          "sku": "5220185"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Broth, Chicken Liver, Lamb, Peas, White Sweet Potatoes, Tapioca Starch, Natural Flavor, Tricalcium Phosphate, Guar Gum, Potassium Chloride, Salt, Carrageenan, Magnesium Sulfate, Ferrous Glycine Complex, Zinc Glycine Complex, Manganese Glycine Complex, Copper Glycine Complex, Sodium Selenite, Potassium Iodide, Vitamin E Supplement, Niacin, Vitamin A Supplement, Pyridoxine Hydrochloride, D-Calcium Pantothenate, Riboflavin Supplement, Folic Acid, Vitamin B12 Supplement, Vitamin D3 Supplement, Biotin, Thiamine Mononitrate and Zinc Oxide",
+      "guaranteed_analysis": {
+        "crude_protein_min": 6.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1082 kcal/kg"
+    },
+    {
+      "name": "Petite Entrees Small Breed All Life Stage Wet Dog Food - Grain Free, Mini-Filets",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/wellness-petite-entrees-small-breed-all-life-stage-wet-dog-food---natural-grain-free-mini-filets-23876.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "life_stage": "all",
+      "breed_size": "Small",
+      "source_id": "5220090",
+      "images": [
+        "/products/wellness/wellness-food-petite-entrees-small-breed-all-life-stage-wet-dog-food-grain-free-mini-filets.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344090335",
+          "sku": "5220090"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344090342",
+          "sku": "5220091"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344090359",
+          "sku": "5220092"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344090366",
+          "sku": "5220093"
+        }
+      ],
+      "ingredients_raw": "Chicken Broth, Chicken, Dried Egg Product, Tapioca Starch, Pea Protein, Turkey, Green Beans, White Sweet Potatoes, Chicken Liver, Natural Flavor, Tricalcium Phosphate, Salt, Potassium Chloride, Guar Gum, Calcium Sulfate, Magnesium Sulfate, Ferrous Glycine Complex, Zinc Glycine Complex, Manganese Glycine Complex, Copper Glycine Complex, Sodium Selenite, Potassium Iodide, Vitamin E Supplement, Niacin, Vitamin A Supplement, Pyridoxine Hydrochloride, D-Calcium Pantothenate, Riboflavin Supplement, Folic Acid, Vitamin B12 Supplement, Vitamin D3 Supplement, Biotin, Thiamine Mononitrate and Zinc Oxide",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "977 kcal/kg"
+    },
+    {
+      "name": "Protein Bowls Slow-Cooked Meals Adult Wet Dog Food",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/wellness-protein-bowls-slow-cooked-meals-adult-wet-dog-food-94214.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Protein Bowls",
+      "life_stage": "adult",
+      "source_id": "5373432",
+      "images": [
+        "/products/wellness/wellness-food-protein-bowls-slow-cooked-meals-adult-wet-dog-food.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344042167",
+          "sku": "5373432"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344042198",
+          "sku": "5373433"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344042204",
+          "sku": "5373434"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344042129",
+          "sku": "5373545"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344042174",
+          "sku": "5373546"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344042143",
+          "sku": "5373547"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344042136",
+          "sku": "5373548"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344042211",
+          "sku": "5373549"
+        }
+      ],
+      "ingredients_raw": "Turkey, Chicken, Duck, Rice, Cranberries, Peas, Carrots, White Sweet Potatoes, Potato Starch, Turkey Bone Broth, Chicken Bone Broth, Duck Bone Broth, Sugar, Sodium Tripolyphosphate, Tricalcium Phosphate, Marine Microalgae Oil (preserved with mixed tocopherols), Salt, Potassium Chloride, Sage, Dried Chicory Root, Taurine, Kale, Magnesium Sulfate, Thyme, Choline Chloride, Vitamin E Supplement, Zinc Proteinate, Rosemary, Turmeric, Iron Proteinate, Thiamine Mononitrate, Niacin, Vitamin A Supplement, Copper Proteinate, Manganese Proteinate, Pyridoxine Hydrochloride, Sodium Selenite, d–Calcium Pantothenate, Riboflavin Supplement, Folic Acid, Potassium Iodide, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement.",
+      "guaranteed_analysis": {
+        "crude_protein_max": 11.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1424 kcal/kg, 251 kcal/pouch"
+    },
+    {
+      "name": "Stews All Life Stage Wet Dog Food",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/wellness-stews-all-life-stage-wet-dog-food---natural-1065.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "life_stage": "all",
+      "source_id": "5153905",
+      "images": [
+        "/products/wellness/wellness-food-stews-all-life-stage-wet-dog-food.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344017059",
+          "sku": "5153905"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344017158",
+          "sku": "5153906"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344017554",
+          "sku": "5153907"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344017356",
+          "sku": "5155455"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344017257",
+          "sku": "5155456"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344017455",
+          "sku": "5298439"
+        }
+      ],
+      "ingredients_raw": "Turkey Broth, Turkey, Duck, Cranberries, Turkey Liver, Sweet Potatoes, Dried Egg Product, Turkey Heart, Carrots, Natural Flavor, Potato Starch, Potatoes, Green Beans, Guar Gum, Dried Plain Beet Pulp, Sodium Phosphate, Salt, Fish Oil (Preserved With Mixed Tocopherols), Potassium Chloride, Dried Chicory Root, Minerals (Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Sodium Selenite, Cobalt Proteinate, Potassium Iodide), Choline Chloride, Vitamins (Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, d–Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Sunflower Oil, Calcium Carbonate, Rosemary, Sage, Thyme, Tricalcium Phosphate.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 3.5,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 82.0,
+        "calcium_min": 0.11,
+        "phosphorus_min": 0.09
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "971 kcal/kg, 344 kcal/can"
+    },
+    {
+      "name": "Complete Health Adult Dry Dog Food - Beef & Barley",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/wellness-complete-health-adult-dry-dog-food---beef-and-barley-3170.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Complete Health",
+      "life_stage": "adult",
+      "source_id": "5350432",
+      "images": [
+        "/products/wellness/wellness-food-complete-health-adult-dry-dog-food-beef-barley.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344891550",
+          "sku": "5350432"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344891567",
+          "sku": "5350433"
+        }
+      ],
+      "ingredients_raw": "Deboned Beef, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Barley, Brown Rice, Oatmeal, Brewers Dried Yeast, Chicken Fat, Dried Plain Beet Pulp, Flaxseed, Salmon Oil, Natural Flavor, Dried Chicory Root, Potassium Chloride, Taurine, Choline Chloride, Spinach, Broccoli, Vitamin E Supplement, Carrots, Parsley, Apples, Blueberries, Kale, Mixed Tocopherols added to preserve freshness, Niacin, Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Vitamin A Supplement, Iron Proteinate, Ascorbic Acid (Vitamin C), Thiamine Mononitrate, d–Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Riboflavin, Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract. This is a naturally preserved product",
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3519 kcal/kg, 334 kcal/cup"
+    },
+    {
+      "name": "Complete Health Adult Dry Dog Food - Chicken & Oatmeal",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/wellness-complete-health-adult-dry-dog-food---chicken-and-oatmeal-97860.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Complete Health",
+      "life_stage": "adult",
+      "source_id": "5153468",
+      "images": [
+        "/products/wellness/wellness-food-complete-health-adult-dry-dog-food-chicken-oatmeal.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344089049",
+          "sku": "5153468"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344891420",
+          "sku": "5249885"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344088936",
+          "sku": "5352360"
+        }
+      ],
+      "ingredients_raw": "Deboned Chicken, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Oatmeal, Barley, Brown Rice, Peas, Dried Plain Beet Pulp, Chicken Fat, Flaxseed, Natural Flavor, Dried Chicory Root, Potassium Chloride, Choline Chloride, Taurine, Spinach, Broccoli, Vitamin E Supplement, Carrots, Parsley, Apples, Blueberries, Kale, Mixed Tocopherols added to preserve freshness, Niacin, Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Vitamin A Supplement, Iron Proteinate, Ascorbic Acid (Vitamin C), Thiamine Mononitrate, d–Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate,Riboflavin, Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract. This is a naturally preserved product",
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3584 kcal/kg, 427 kcal/cup"
+    },
+    {
+      "name": "Complete Health Adult Dry Dog Food - Grain Free, Chicken & Chicken Meal",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/wellness-complete-health-adult-dry-dog-food---natural-grain-free-chicken-and-chicken-meal-35721.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Complete Health",
+      "life_stage": "adult",
+      "source_id": "5352362",
+      "images": [
+        "/products/wellness/wellness-food-complete-health-adult-dry-dog-food-grain-free-chicken-chicken-meal.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344891574",
+          "sku": "5352362"
+        }
+      ],
+      "ingredients_raw": "INGREDIENTS: Deboned Chicken, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Dried Ground Potatoes, Chickpeas, Peas, Dried Plain Beet Pulp, Chicken Fat, Flaxseed, Natural Flavor, Dried Chicory Root, Taurine, Potassium Chloride, Choline Chloride, Spinach, Broccoli, Vitamin E Supplement, Carrots, Parsley, Apples, Blueberries, Kale, Mixed Tocopherols added to preserve freshness, Niacin, Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Vitamin A Supplement, Iron Proteinate, Ascorbic Acid (Vitamin C), Thiamine Mononitrate, d–Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Riboflavin, Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract. This is a naturally preserved product Manufactured in a facility that also processes grains",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3509 kcal/kg, 390 kcal/cup"
+    },
+    {
+      "name": "Complete Health Adult Dry Dog Food - Grain Free, Lamb & Lamb Meal",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/wellness-complete-health-adult-dry-dog-food---natural-grain-free-lamb-and-lamb-meal-35723.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Complete Health",
+      "life_stage": "adult",
+      "source_id": "5352358",
+      "images": [
+        "/products/wellness/wellness-food-complete-health-adult-dry-dog-food-grain-free-lamb-lamb-meal.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344891581",
+          "sku": "5352358"
+        }
+      ],
+      "ingredients_raw": "INGREDIENTS: Lamb, Lamb Meal (source of Glucosamine and Chondroitin Sulfate), Dried Ground Potatoes, Peas, Chickpeas, Dried Plain Beet Pulp, Flaxseed, Chicken Fat, Whitefish Meal, Natural Flavor, Dried Chicory Root, Taurine, Choline Chloride, Spinach, Broccoli, Vitamin E Supplement, Carrots, Parsley, Apples, Blueberries, Kale, Mixed Tocopherols added to preserve freshness, Niacin, Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Vitamin A Supplement, Iron Proteinate, Ascorbic Acid (Vitamin C), Thiamine Mononitrate, d–Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Riboflavin, Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract. This is a naturally preserved product Manufactured in a facility that also processes grains.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3537 kcal/kg, 421 kcal/cup"
+    },
+    {
+      "name": "Complete Health Adult Dry Dog Food - Whitefish & Sweet Potato",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/wellness-complete-health-adult-dry-dog-food---whitefish-and-sweet-potato-97862.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Complete Health",
+      "life_stage": "adult",
+      "source_id": "5352356",
+      "images": [
+        "/products/wellness/wellness-food-complete-health-adult-dry-dog-food-whitefish-sweet-potato.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344088912",
+          "sku": "5352356"
+        }
+      ],
+      "ingredients_raw": "INGREDIENTS: Whitefish, Barley, Peas, Oatmeal, Whitefish Meal (source of Glucosamine and Chondroitin Sulfate), Sweet Potatoes, Canola Oil, Dried Plain Beet Pulp, Flaxseed, Natural Flavor, Dried Chicory Root, Potassium Chloride, Taurine, Choline Chloride, Spinach, Broccoli, Taurine, Vitamin E Supplement, Carrots, Parsley, Apples, Blueberries, Kale, Mixed Tocopherols added to preserve freshness, Niacin, Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Vitamin A Supplement, Iron Proteinate, Ascorbic Acid (Vitamin C), Thiamine Mononitrate, d–Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Riboflavin, Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract. This is a naturally preserved product",
+      "guaranteed_analysis": {
+        "crude_protein_min": 22.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "taurine_min": 0.09
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3509 kcal/kg, 418 kcal/cup"
+    },
+    {
+      "name": "Complete Health Healthy Weight Small Breed Adult Dry Dog Food - Turkey",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/wellness-complete-health-healthy-weight-small-breed-adult-dry-dog-food---natural-turkey-3164.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Complete Health",
+      "life_stage": "adult",
+      "breed_size": "Small",
+      "source_id": "5165289",
+      "images": [
+        "/products/wellness/wellness-food-complete-health-healthy-weight-small-breed-adult-dry-dog-food-turkey.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344891192",
+          "sku": "5165289"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344891185",
+          "sku": "5165293"
+        }
+      ],
+      "ingredients_raw": "Deboned Turkey, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Barley, Oatmeal, Brown Rice, Oats, Salmon Meal, Dried Plain Beet Pulp, Flaxseed, Chicken Fat, Natural Flavor, Salmon Oil, Dried Chicory Root, Spinach, L–Carnitine, Broccoli, Vitamin E Supplement, Carrots, Parsley, Apples, Blueberries, Kale, Mixed Tocopherols added to preserve freshness, Niacin, Taurine, Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Vitamin A Supplement, Iron Proteinate, Ascorbic Acid (Vitamin C), Thiamine Mononitrate, d–Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Riboflavin, Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract. This is a naturally preserved product",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3470 kcal/kg, 344 kcal/cup"
+    },
+    {
+      "name": "Complete Health Large Breed Adult Dog Food",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/wellness-complete-health-large-breed-adult-dog-food---natural-3161.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Complete Health",
+      "life_stage": "adult",
+      "breed_size": "Large",
+      "source_id": "5153512",
+      "images": [
+        "/products/wellness/wellness-food-complete-health-large-breed-adult-dog-food.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344891130",
+          "sku": "5153512"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344891222",
+          "sku": "5376549"
+        }
+      ],
+      "ingredients_raw": "Deboned Chicken, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Brown Rice, Barley, Peas, Oatmeal, Oats, Dried Plain Beet Pulp, Chicken Fat, Salmon Meal, Natural Flavor, Flaxseed, Dried Chicory Root, Choline Chloride, Spinach, Broccoli, Vitamin E Supplement, Carrots, Parsley, Taurine, Apples, Blueberries, Kale, Mixed Tocopherols added to preserve freshness, Calcium Carbonate, Niacin, Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Vitamin A Supplement, Iron Proteinate, Ascorbic Acid (Vitamin C), Thiamine Mononitrate, d–Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Riboflavin, Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3537 kcal/kg, 350 kcal/cup"
+    },
+    {
+      "name": "Complete Health Large Breed Adult Dry Dog Food - Grain Free, Chicken & Chicken Meal",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/wellness-complete-health-large-breed-adult-dry-dog-food---grain-free-chicken-and-chicken-meal-42028.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Complete Health",
+      "life_stage": "adult",
+      "breed_size": "Large",
+      "source_id": "5264998",
+      "images": [
+        "/products/wellness/wellness-food-complete-health-large-breed-adult-dry-dog-food-grain-free-chicken-chicken-meal.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344891536",
+          "sku": "5264998"
+        }
+      ],
+      "ingredients_raw": "INGREDIENTS: Deboned Chicken, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Peas, Dried Ground Potatoes, Chickpeas, Lentils, Dried Plain Beet Pulp, Flaxseed, Chicken Fat, Natural Flavor, Dried Chicory Root, Taurine, Choline Chloride, Spinach, Broccoli, Vitamin E Supplement, Carrots, Parsley, Apples, Blueberries, Kale, Mixed Tocopherols added to preserve freshness, Niacin, Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Vitamin A Supplement, Iron Proteinate, Ascorbic Acid (Vitamin C), Thiamine Mononitrate, d–Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Riboflavin, Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract. This is a naturally preserved product Manufactured in a facility that also processes grains",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3504 kcal/kg, 406 kcal/cup"
+    },
+    {
+      "name": "Complete Health Large Breed Puppy Food",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/wellness-complete-health-large-breed-puppy-food---natural-3162.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Complete Health",
+      "life_stage": "puppy",
+      "breed_size": "Large",
+      "source_id": "5153510",
+      "images": [
+        "/products/wellness/wellness-food-complete-health-large-breed-puppy-food.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344891154",
+          "sku": "5153510"
+        }
+      ],
+      "ingredients_raw": "Deboned Chicken, Chicken Meal, Peas, Ground Brown Rice, Salmon Meal, Oatmeal, Barley, Oats, Tomato Pomace, Chicken Fat (preserved with Mixed Tocopherols), Ground Flaxseed, Tomatoes, Salmon Oil, Carrots, Natural Chicken Flavor, Salt, Choline Chloride, Spinach, Vitamin E Supplement, Chicory Root Extract, Yucca Shidigera Extract, Taurine, Zinc Proteinate, Mixed Tocopherols added to preserve freshness, Sweet Potatoes, Apples, Blueberries, Zinc Sulfate, Calcium Carbonate, Niacin, Ferrous Sulfate, Iron Proteinate, Vitamin A Supplement, Ascorbic Acid (Vitamin C), Copper Sulfate, Thiamine Mononitrate, Copper Proteinate, Manganese Proteinate, Manganese Sulfate, d-Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Riboflavin, Garlic Powder, Vitamin D3 Supplement, Biotin, Calcium Iodate, Vitamin B12 Supplement, Folic Acid, Dried Lactobacillus plantarum Fermentation Product, Dried Enterococcus faecium Fermentation Product, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product , Rosemary Extract, Green Tea Extract, Spearmint Extract. This is a naturally preserved product",
+      "guaranteed_analysis": {
+        "crude_protein_min": 29.0,
+        "crude_fat_min": 13.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.3,
+        "phosphorus_min": 1.0,
+        "dha_min": 0.1,
+        "omega_6_min": 3.5,
+        "omega_3_min": 0.75,
+        "taurine_min": 0.09
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3533 kcal/kg, 367 kcal/cup"
+    },
+    {
+      "name": "Complete Health Puppy Food - Chicken, Oatmeal & Salmon Meal",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/wellness-complete-health-puppy-food---natural-chicken-oatmeal-and-salmon-meal-3166.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Complete Health",
+      "life_stage": "puppy",
+      "source_id": "5153538",
+      "images": [
+        "/products/wellness/wellness-food-complete-health-puppy-food-chicken-oatmeal-salmon-meal.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344089612",
+          "sku": "5153538"
+        }
+      ],
+      "ingredients_raw": "Deboned Chicken, Chicken Meal, Oatmeal, Ground Barley, Salmon Meal (a Natural Source Of DHA - Docosahexaenoic Acid), Canola Oil (preserved With Mixed Tocopherols, A Natural Source Of Vitamin E), Ground Brown Rice, Tomato Pomace, Rice Bran, Tomatoes, Natural Chicken Flavor, Rye Flour, Carrots, Spinach, Sweet Potatoes, Apples, Blueberries, Ground Millet, Ground Flaxseed, Potassium Chloride, Minerals [Zinc Sulfate, Zinc Proteinate, Iron Proteinate, Ferrous Sulfate, Copper Proteinate, Copper Sulfate, Manganese Proteinate, Manganese Sulfate, Calcium Iodate, Sodium Selenite], Vitamins [Beta-Carotene, Vitamin E Supplement, Ascorbic Acid (Vitamin C), Vitamin A Supplement, Niacin, Calcium Pantothenate, Riboflavin, Vitamin D-3 Supplement, Pyridoxine Hydrochloride, Thiamine Mononitrate, Folic Acid, Biotin, Vitamin B-12 Supplement], Choline Chloride, Calcium Carbonate, Dicalcium Phosphate, Taurine, Mixed Tocopherols (a Natural Preservative), Chicory Root Extract, Garlic, Yucca Schidigera Extract, Green Tea Extract, Dried Lactobacillus Plantarum, Enterococcus Faecium, Lactobacillus Casei, Lactobacillus Acidophilus Fermentation Products",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.0,
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 11.0,
+        "calcium_min": 1.3,
+        "phosphorus_min": 1.0,
+        "omega_6_min": 3.0,
+        "omega_3_min": 1.0,
+        "dha_min": 0.13,
+        "taurine_min": 0.09
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "450 kcal/cup"
+    },
+    {
+      "name": "Complete Health Senior Dry Dog Food - Chicken & Barley",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/wellness-complete-health-senior-dry-dog-food---natural-chicken-and-barley-3168.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Complete Health",
+      "life_stage": "senior",
+      "source_id": "5352359",
+      "images": [
+        "/products/wellness/wellness-food-complete-health-senior-dry-dog-food-chicken-barley.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344088929",
+          "sku": "5352359"
+        }
+      ],
+      "ingredients_raw": "Deboned Chicken, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Oatmeal, Barley, Brown Rice, Peas, Rice, Dried Plain Beet Pulp, Flaxseed, Chicken Fat, Natural Flavor, Dried Chicory Root, Potassium Chloride, Choline Chloride, Taurine, Spinach, Broccoli, Vitamin E Supplement, Carrots, Parsley, Apples, Blueberries, Kale, Mixed Tocopherols added to preserve freshness, Niacin, Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Vitamin A Supplement, Iron Proteinate, Ascorbic Acid (Vitamin C), Thiamine Mononitrate, d–Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Riboflavin, Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract.This is a naturally preserved product",
+      "guaranteed_analysis": {
+        "crude_protein_min": 22.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3494 kcal/kg, 405 kcal/cup"
+    },
+    {
+      "name": "Complete Health Sensitive Skin & Stomach Adult Dry Dog Food - Salmon & Rice",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/wellness-complete-health-sensitive-skin-and-stomach-adult-dry-dog-food---salmon-and-rice-87833.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Complete Health",
+      "life_stage": "adult",
+      "source_id": "5362868",
+      "images": [
+        "/products/wellness/wellness-food-complete-health-sensitive-skin-stomach-adult-dry-dog-food-salmon-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344893370",
+          "sku": "5362868"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344893363",
+          "sku": "5362869"
+        }
+      ],
+      "ingredients_raw": "Salmon, Whitefish Meal (source of Glucosamine and Chondroitin Sulfate), Rice, Oatmeal, Barley, Dried Plain Beet Pulp, Canola Oil, Natural Flavor, Flaxseed, Salmon Oil, Taurine, Dried Chicory Root, Hydrolyzed Yeast, Dried Yeast, Vitamin E Supplement, Choline Chloride, Potassium Chloride, Mixed Tocopherols (added to preserve freshness), Niacin, Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Iron Proteinate, Vitamin A Supplement, Thiamine Mononitrate, Vitamin B5 (d–Calcium Pantothenate), Sodium Selenite, Vitamin B6 (Pyridoxine Hydrochloride), Copper Sulfate, Manganese Sulfate, Riboflavin, Manganese Proteinate, Copper Proteinate, Vitamin B7 (Biotin), Vitamin D3 Supplement, Vitamin B12 Supplement, Vitamin B9 (Folic Acid), Calcium Iodate, Vitamin C (Ascorbic Acid), Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 10.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.5,
+        "phosphorus_min": 1.0,
+        "taurine_min": 0.09
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3438 kcal/kg, 337 kcal/cup"
+    },
+    {
+      "name": "Complete Health Small Breed Adult Dry Dog Food - Grain Free, Turkey, Chicken & Salmon",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/wellness-complete-health-small-breed-adult-dry-dog-food---grain-free-turkey-chicken-and-salmon-42027.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Complete Health",
+      "life_stage": "adult",
+      "breed_size": "Small",
+      "source_id": "5264997",
+      "images": [
+        "/products/wellness/wellness-food-complete-health-small-breed-adult-dry-dog-food-grain-free-turkey-chicken-salmon.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344891529",
+          "sku": "5264997"
+        }
+      ],
+      "ingredients_raw": "Deboned Turkey, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Ground Potatoes, Lentils, Peas, Salmon Meal, Chicken Fat, Dried Plain Beet Pulp, Flaxseed, Salmon Oil, Natural Flavor, Dried Chicory Root, Taurine, Spinach, Broccoli, Vitamin E Supplement, Carrots, Parsley, Apples, Blueberries, Kale, Mixed Tocopherols added to preserve freshness, Niacin, Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Vitamin A Supplement, Iron Proteinate, Ascorbic Acid (Vitamin C), Thiamine Mononitrate, d–Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Riboflavin, Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract. This is a naturally preserved product Manufactured in a facility that also processes grains",
+      "guaranteed_analysis": {
+        "crude_protein_min": 32.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3716 kcal/kg, 505 kcal/cup"
+    },
+    {
+      "name": "Complete Health Small Breed Adult Dry Dog Food",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/wellness-complete-health-small-breed-adult-dry-dog-food---natural-3165.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Complete Health",
+      "life_stage": "adult",
+      "breed_size": "Small",
+      "source_id": "5153514",
+      "images": [
+        "/products/wellness/wellness-food-complete-health-small-breed-adult-dry-dog-food.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344891109",
+          "sku": "5153514"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344891116",
+          "sku": "5153537"
+        }
+      ],
+      "ingredients_raw": "INGREDIENTS: Deboned Turkey, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Oatmeal, Brown Rice, Barley, Salmon Meal, Oats, Chicken Fat, Dried Plain Beet Pulp, Natural Flavor, Flaxseed, Salmon Oil, Dried Chicory Root, Spinach, Broccoli, Vitamin E Supplement, Carrots, Parsley, Apples, Blueberries, Kale, Mixed Tocopherols added to preserve freshness, Niacin, Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Vitamin A Supplement, Iron Proteinate, Taurine, Ascorbic Acid (Vitamin C), Thiamine Mononitrate, d–Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Taurine, Manganese Sulfate, Riboflavin, Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract. This is a naturally preserved product",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3717 kcal/kg, 413 kcal/cup"
+    },
+    {
+      "name": "CORE+ Adult Dry Dog Food - Grain Free, Ocean",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/wellness-core-adult-dry-dog-food---grain-free-ocean-56831.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "CORE+",
+      "life_stage": "adult",
+      "source_id": "5298444",
+      "images": [
+        "/products/wellness/wellness-food-core-adult-dry-dog-food-grain-free-ocean.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344182122",
+          "sku": "5298444"
+        }
+      ],
+      "ingredients_raw": "Whitefish, Herring Meal, Whitefish Meal (source of Glucosamine and Chondroitin Sulfate),Peas, Lentils, Canola Oil, Dried Ground Potatoes, Dried Plain Beet Pulp, Flaxseed, Salmon Meal, Pea Fiber, Natural Flavor, Dried Chicory Root, Taurine, Vitamin E Supplement, Choline Chloride, Spinach, Broccoli, Carrots, Parsley, Apples, Blueberries, Kale, Mixed Tocopherols added to preserve freshness, Vitamin B3 (Niacin), Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Iron Proteinate, Vitamin A Supplement, Vitamin B1 (Thiamine Mononitrate), d–Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Vitamin B2 (Riboflavin), Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Vitamin C (Ascorbic Acid), Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract. This is a naturally preserved product Manufactured in a facility that also processes grains",
+      "guaranteed_analysis": {
+        "glucosamine_min": 100.0,
+        "crude_protein_min": 35.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 6.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.7,
+        "phosphorus_min": 1.2,
+        "taurine_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3635 kcal/kg, 422 kcal/cup"
+    },
+    {
+      "name": "CORE Adult Dry Dog Food - Grain Free, Ocean Formula",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/wellness-core-adult-dry-dog-food---natural-grain-free-ocean-formula-3176.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "CORE",
+      "life_stage": "adult",
+      "source_id": "5171502",
+      "images": [
+        "/products/wellness/wellness-food-core-adult-dry-dog-food-grain-free-ocean-formula.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344884132",
+          "sku": "5171502"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344884378",
+          "sku": "5249047"
+        }
+      ],
+      "ingredients_raw": "Whitefish, Herring Meal, Whitefish Meal (source of Glucosamine and Chondroitin Sulfate), Peas, Lentils, Canola Oil, Dried Ground Potatoes, Dried Plain Beet Pulp, Flaxseed, Salmon Meal, Pea Fiber, Natural Flavor, Dried Chicory Root, Taurine, Vitamin E Supplement, Choline Chloride, Spinach, Broccoli, Carrots, Parsley, Apples, Blueberries, Kale, Mixed Tocopherols added to preserve freshness, Niacin, Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Iron Proteinate, Vitamin A Supplement, Thiamine Mononitrate, d-Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Riboflavin, Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Ascorbic Acid (Vitamin C), Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract. This is a naturally preserved product Manufactured in a facility that also processes grains",
+      "guaranteed_analysis": {
+        "glucosamine_min": 47.0,
+        "crude_protein_min": 34.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 6.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.7,
+        "phosphorus_min": 1.2,
+        "taurine_min": 0.2,
+        "omega_6_min": 3.0,
+        "omega_3_min": 2.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3635 kcal/kg, 422 kcal/cup"
+    },
+    {
+      "name": "CORE Adult Dry Dog Food - Grain Free, Original Formula",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/wellness-core-adult-dry-dog-food---natural-grain-free-original-formula-30372.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "CORE",
+      "life_stage": "adult",
+      "source_id": "5171472",
+      "images": [
+        "/products/wellness/wellness-food-core-adult-dry-dog-food-grain-free-original-formula.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344884088",
+          "sku": "5171472"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344884026",
+          "sku": "5171500"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344884354",
+          "sku": "5249049"
+        }
+      ],
+      "ingredients_raw": "Deboned Turkey, Turkey Meal, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Dried Ground Potatoes, Lentils, Peas, Chicken Fat, Dried Plain Beet Pulp, Flaxseed, Natural Flavor, Dried Chicory Root, Salmon Oil, Taurine, Vitamin E Supplement, Choline Chloride, Spinach, Broccoli, Carrots, Parsley, Apples, Blueberries, Kale, Mixed Tocopherols added to preserve freshness, Niacin, Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Iron Proteinate, Vitamin A Supplement, Thiamine Mononitrate, d–Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Riboflavin, Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Ascorbic Acid (Vitamin C), Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract. This is a naturally preserved product Manufactured in a facility that also processes grains",
+      "guaranteed_analysis": {
+        "crude_protein_min": 34.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3682 kcal/kg, 409 kcal/cup"
+    },
+    {
+      "name": "CORE Adult Dry Dog Food - Grain Free, Wild Game Formula",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/wellness-core-adult-dry-dog-food---natural-grain-free-wild-game-formula-21060.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "CORE",
+      "life_stage": "adult",
+      "source_id": "5249048",
+      "images": [
+        "/products/wellness/wellness-food-core-adult-dry-dog-food-grain-free-wild-game-formula.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344884392",
+          "sku": "5249048"
+        }
+      ],
+      "ingredients_raw": "Duck, Lamb Meal, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Peas, Chickpeas, Lentils, Pea Protein, Chicken Fat, Dried Plain Beet Pulp, Wild Boar, Rabbit, Flaxseed, Natural Flavor, Dried Chicory Root, Taurine, Choline Chloride, Potassium Chloride, Vitamin E Supplement, Spinach, Broccoli, Carrots, Parsley, Apples, Blueberries, Kale, Mixed Tocopherols added to preserve freshness, Niacin, Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Iron Proteinate, Vitamin A Supplement, Thiamine Mononitrate, d–Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Riboflavin, Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Ascorbic Acid (Vitamin C), Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract. This is a naturally preserved product Manufactured in a facility that also processes grains",
+      "guaranteed_analysis": {
+        "crude_protein_min": 34.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3705 kcal/kg, 389 kcal/cup"
+    },
+    {
+      "name": "Core Digestive Health Adult Dry Dog Food - With-Grain, Chicken & Brown Rice",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/wellness-core-digestive-health-adult-dry-dog-food---with-grain-chicken-and-brown-rice-61699.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "CORE Digestive Health",
+      "life_stage": "adult",
+      "source_id": "5306043",
+      "images": [
+        "/products/wellness/wellness-food-core-digestive-health-adult-dry-dog-food-with-grain-chicken-brown-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344898009",
+          "sku": "5306043"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344898023",
+          "sku": "5306047"
+        }
+      ],
+      "ingredients_raw": "Deboned Chicken, Turkey Meal (source of Chondroitin Sulfate), Chicken Meal (source of Glucosamine), Brown Rice, Barley, Oatmeal, Dried Plain Beet Pulp, Chicken Fat, Flaxseed, Pumpkin, Cranberries, Natural Flavor, Salmon Oil, Apples, Inulin, Potassium Chloride, Hydrolyzed Yeast, Taurine, Choline Chloride, Vitamin E Supplement, Papayas, Blueberries, Pomegranates, Mixed Tocopherols added to preserve freshness, Niacin, Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Iron Proteinate, Yucca Schidigera Extract, Vitamin A Supplement, Thiamine Mononitrate, Ground Cinnamon, Ground Fennel, Ground Peppermint, d–Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Riboflavin, Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Ascorbic Acid (Vitamin C), Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract. This is a naturally preserved product",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3664 kcal/kg, 399 kcal/cup"
+    },
+    {
+      "name": "Core Digestive Health Senior Dry Dog Food - Hip & Joint, Chicken",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/wellness-core-digestive-health-senior-dry-dog-food---hip-and-joint-chicken-69211.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "CORE Digestive Health",
+      "life_stage": "senior",
+      "source_id": "5323090",
+      "images": [
+        "/products/wellness/wellness-food-core-digestive-health-senior-dry-dog-food-hip-joint-chicken.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344898108",
+          "sku": "5323090"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344898115",
+          "sku": "5323091"
+        }
+      ],
+      "ingredients_raw": "Deboned Chicken, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Brown Rice, Barley, Rice, Dried Plain Beet Pulp, Flaxseed, Pea Protein, Chicken Fat, Pumpkin, Cranberries, Salmon Oil, Natural Flavor, Apples, Inulin, Potassium Chloride, Hydrolyzed Yeast, Vitamin E Supplement, Taurine, Choline Chloride, L–Carnitine, Papayas, Blueberries, Pomegranates, Mixed Tocopherols added to preserve freshness, Niacin, Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Iron Proteinate, Yucca Schidigera Extract, Vitamin A Supplement, Thiamine Mononitrate, d–Calcium Pantothenate, Ground Cinnamon, Ground Fennel, Ground Peppermint, Sodium Selenite, Pyridoxine Hydrochloride, Riboflavin, Copper Sulfate, Manganese Sulfate, Biotin, Manganese Proteinate, Copper Proteinate, Vitamin D3 Supplement, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Ascorbic Acid (Vitamin C), Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract. This is a naturally preserved product",
+      "guaranteed_analysis": {
+        "crude_protein_min": 27.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3560 kcal/kg, 381 kcal/cup"
+    },
+    {
+      "name": "CORE Digestive Health Small Breed Adult Dry Dog Food - With-Grain, Chicken & Brown Rice",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/wellness-core-digestive-health-small-breed-adult-dry-dog-food---with-grain-chicken-and-brown-rice-61728.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "CORE Digestive Health",
+      "life_stage": "adult",
+      "breed_size": "Small",
+      "source_id": "5306045",
+      "images": [
+        "/products/wellness/wellness-food-core-digestive-health-small-breed-adult-dry-dog-food-with-grain-chicken-brown-ri.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344898030",
+          "sku": "5306045"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344898047",
+          "sku": "5306046"
+        }
+      ],
+      "ingredients_raw": "Deboned Chicken, Chicken Meal (source of Glucosamine), Turkey Meal (source of Chondroitin Sulfate), Brown Rice, Oatmeal, Barley, Dried Plain Beet Pulp, Flaxseed, Chicken Fat, Pumpkin, Cranberries, Salmon Oil, Natural Flavor, Apples, Choline Chloride, Inulin, Hydrolyzed Yeast, Potassium Chloride, Taurine, Vitamin E Supplement, Papayas, Blueberries, Pomegranates, Mixed Tocopherols added to preserve freshness, Niacin, Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Iron Proteinate, Yucca Schidigera Extract, Vitamin A Supplement, Thiamine Mononitrate, Ground Cinnamon, Ground Fennel, Ground Peppermint, d–Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Riboflavin, Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Ascorbic Acid (Vitamin C), Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 33.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3696 kcal/kg, 421 kcal/cup"
+    },
+    {
+      "name": "CORE+ Freeze-Dried Pieces Adult Dry Dog Food - Grain Free, Wild Game",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/wellness-core-freeze-dried-pieces-adult-dry-dog-food---grain-free-wild-game-42024.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "CORE+",
+      "life_stage": "adult",
+      "source_id": "5264827",
+      "images": [
+        "/products/wellness/wellness-food-core-freeze-dried-pieces-adult-dry-dog-food-grain-free-wild-game.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344181057",
+          "sku": "5264827"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344181071",
+          "sku": "5264829"
+        }
+      ],
+      "ingredients_raw": "Duck, Lamb Meal, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Peas, Chickpeas, Lentils, Pea Protein, Chicken Fat, Dried Plain Beet Pulp, Lamb Hearts, Wild Boar, Rabbit, Flaxseed, Natural Flavor, Dried Chicory Root, Taurine, Choline Chloride, Potassium Chloride, Vitamin E Supplement, Spinach, Broccoli, Carrots, Parsley, Apples, Blueberries, Kale, Mixed Tocopherols added to preserve freshness, Vitamin B3 (Niacin), Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Iron Proteinate, Vitamin A Supplement, Vitamin B1 (Thiamine Mononitrate), d–Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Vitamin B2 (Riboflavin), Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Vitamin C (Ascorbic Acid), Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 35.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3705 kcal/kg, 389 kcal/cup"
+    },
+    {
+      "name": "CORE Healthy Weight Small Breed Adult Dry Dog Food - Grain Free",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/wellness-core-healthy-weight-small-breed-adult-dry-dog-food---grain-free-49072.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "CORE",
+      "life_stage": "adult",
+      "breed_size": "Small",
+      "source_id": "5280349",
+      "images": [
+        "/products/wellness/wellness-food-core-healthy-weight-small-breed-adult-dry-dog-food-grain-free.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344884439",
+          "sku": "5280349"
+        }
+      ],
+      "ingredients_raw": "Deboned Turkey, Turkey Meal, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Peas, Lentils, Dried Plain Beet Pulp, Pea Fiber, Flaxseed, Dried Ground Potatoes, Chicken Fat, Natural Flavor, Dried Chicory Root, Salmon Oil, Vitamin E Supplement, Taurine, Choline Chloride, Spinach, Broccoli, Carrots, Parsley, Apples, Blueberries, Kale, L–Carnitine, Spearmint, Mixed Tocopherols added to preserve freshness, Niacin, Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Iron Proteinate, Vitamin A Supplement, Thiamine Mononitrate, d–Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Riboflavin, Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Ascorbic Acid (Vitamin C), Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract.This is a naturally preserved product Manufactured in a facility that also processes grains",
+      "guaranteed_analysis": {
+        "glucosamine_min": 25.0,
+        "crude_protein_min": 34.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3565 kcal/kg, 435 kcal/cup"
+    },
+    {
+      "name": "Core+ High Protein Kibble + Savory Freeze-Dried Pieces - Beef & Barley, Wholesome Grains",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/wellness-core-high-protein-kibble--savory-freeze-dried-pieces---beef-and-barley-wholesome-grains-81300.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "CORE+",
+      "source_id": "5350434",
+      "images": [
+        "/products/wellness/wellness-food-core-high-protein-kibble-savory-freeze-dried-pieces-beef-barley-wholesome-grains.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344884941",
+          "sku": "5350434"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344884958",
+          "sku": "5350435"
+        }
+      ],
+      "ingredients_raw": "Deboned Beef, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Turkey Meal, Brown Rice, Oatmeal, Barley, Brewers Dried Yeast, Chicken Fat, Dried Plain Beet Pulp, Flaxseed, Natural Flavor, Salmon Oil, Potassium Chloride, Taurine, Dried Chicory Root, Vitamin E Supplement, Choline Chloride, Spinach, Broccoli, Carrots, Parsley, Apples, Blueberries, Kale, Mixed Tocopherols added to preserve freshness, Niacin (Vitamin B3), Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Iron Proteinate, Vitamin A Supplement, Thiamine Mononitrate (Vitamin B1), d–Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Riboflavin (Vitamin B2), Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Ascorbic Acid (Vitamin C), Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract. This is a naturally preserved product.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 33.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3681 kcal/kg, 398 kcal/cup"
+    },
+    {
+      "name": "CORE High Protein With-Grain Adult Dry Dog Food - Turkey",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/wellness-core-high-protein-with-grain-adult-dry-dog-food---turkey-56824.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "CORE",
+      "life_stage": "adult",
+      "source_id": "5298494",
+      "images": [
+        "/products/wellness/wellness-food-core-high-protein-with-grain-adult-dry-dog-food-turkey.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344884828",
+          "sku": "5298494"
+        }
+      ],
+      "ingredients_raw": "Deboned Turkey, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Oatmeal, Turkey Meal, Barley, Chicken Fat, Dried Plain Beet Pulp, Flaxseed, Turkey Liver, Turkey Hearts, Natural Flavor, Dried Chicory Root, Salmon Oil, Taurine, Choline Chloride, Potassium Chloride, Vitamin E Supplement, Spinach, Broccoli, Carrots, Parsley, Apples, Blueberries, Kale, Mixed Tocopherols added to preserve freshness, Vitamin B3 (Niacin), Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Iron Proteinate, Vitamin A Supplement, Vitamin B1 (Thiamine Mononitrate), d–Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Vitamin B2 (Riboflavin), Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Vitamin C (Ascorbic Acid), Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 35.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3742 kcal/kg, 427 kcal/cup"
+    },
+    {
+      "name": "CORE+ High Protein With-Grain Adult Dry Dog Food - Turkey & Chicken",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/wellness-core-high-protein-with-grain-adult-dry-dog-food---turkey-and-chicken-56829.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "CORE+",
+      "life_stage": "adult",
+      "source_id": "5298487",
+      "images": [
+        "/products/wellness/wellness-food-core-high-protein-with-grain-adult-dry-dog-food-turkey-chicken.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344182023",
+          "sku": "5298487"
+        }
+      ],
+      "ingredients_raw": "Deboned Turkey, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Oatmeal, Turkey Meal, Barley, Chicken Fat, Dried Plain Beet Pulp, Flaxseed, Turkey Hearts, Turkey Liver, Natural Flavor, Dried Chicory Root, Salmon Oil, Taurine, Choline Chloride, Potassium Chloride, Vitamin E Supplement, Spinach, Broccoli, Carrots, Parsley, Apples, Blueberries, Kale, Mixed Tocopherols added to preserve freshness, Vitamin B3 (Niacin), Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Iron Proteinate, Vitamin A Supplement, Vitamin B1 (Thiamine Mononitrate), d–Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Vitamin B2 (Riboflavin), Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Vitamin C (Ascorbic Acid), Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract. This is a naturally preserved product",
+      "guaranteed_analysis": {
+        "crude_protein_min": 35.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3742 kcal/kg, 427 kcal/cup"
+    },
+    {
+      "name": "CORE+ High Protein With-Grain Small Breed Adult Dry Dog Food - Turkey",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/wellness-core-high-protein-with-grain-small-breed-adult-dry-dog-food---turkey-56828.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "CORE+",
+      "life_stage": "adult",
+      "breed_size": "Small",
+      "source_id": "5298489",
+      "images": [
+        "/products/wellness/wellness-food-core-high-protein-with-grain-small-breed-adult-dry-dog-food-turkey.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344182054",
+          "sku": "5298489"
+        }
+      ],
+      "ingredients_raw": "Deboned Turkey, Turkey Meal, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Oatmeal, Barley, Dried Plain Beet Pulp, Flaxseed, Chicken Fat, Turkey Liver, Turkey Hearts, Salmon Oil, Natural Flavor, Dried Chicory Root, Choline Chloride, Potassium Chloride, Vitamin E Supplement, Taurine, Spinach, Broccoli, Carrots, Parsley, Apples, Blueberries, Kale, Mixed Tocopherols added to preserve freshness, Vitamin B3 (Niacin), Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Iron Proteinate, Vitamin A Supplement, Vitamin B1 (Thiamine Mononitrate), d–Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Vitamin B2 (Riboflavin), Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Vitamin C (Ascorbic Acid), Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 37.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3692 kcal/kg, 473 kcal/cup"
+    },
+    {
+      "name": "CORE+ Kibble + Freeze-Dried Pieces Adult Dry Dog Food - Grain Free, Turkey",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/wellness-core-kibble--freeze-dried-pieces-adult-dry-dog-food---grain-free-turkey-42023.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "CORE+",
+      "life_stage": "adult",
+      "source_id": "5264794",
+      "images": [
+        "/products/wellness/wellness-food-core-kibble-freeze-dried-pieces-adult-dry-dog-food-grain-free-turkey.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344181026",
+          "sku": "5264794"
+        }
+      ],
+      "ingredients_raw": "Deboned Turkey, Turkey Meal, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Dried Ground Potatoes, Lentils, Peas, Chicken Fat, Dried Plain Beet Pulp, Flaxseed, Turkey Liver, Turkey Hearts, Natural Flavor, Dried Chicory Root, Salmon Oil, Taurine, Vitamin E Supplement, Choline Chloride, Spinach, Broccoli, Carrots, Parsley, Apples, Blueberries, Kale, Mixed Tocopherols added to preserve freshness, Vitamin B3 (Niacin), Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Iron Proteinate, Vitamin A Supplement, Vitamin B1 (Thiamine Mononitrate), d–Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Vitamin B2 (Riboflavin), Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Vitamin C (Ascorbic Acid), Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract. This is a naturally preserved product Manufactured in a facility that also processes grains",
+      "guaranteed_analysis": {
+        "crude_protein_min": 35.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3682 kcal/kg, 409 kcal/cup"
+    },
+    {
+      "name": "Core+ Large Breed Adult Dog Food - Original, Wholesome Grains",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/wellness-core-large-breed-adult-dog-food---original-wholesome-grains-81301.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "CORE+",
+      "life_stage": "adult",
+      "breed_size": "Large",
+      "source_id": "5350436",
+      "images": [
+        "/products/wellness/wellness-food-core-large-breed-adult-dog-food-original-wholesome-grains.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344884965",
+          "sku": "5350436"
+        }
+      ],
+      "ingredients_raw": "Deboned Chicken, Chicken Meal (source of Glucosamine), Turkey Meal (source of Chondroitin Sulfate), Barley, Brown Rice, Oatmeal, Brewers Dried Yeast, Dried Plain Beet Pulp, Turkey Hearts, Flaxseed, Chicken Fat, Salmon Oil, Natural Flavor, Turkey Liver, Dried Chicory Root, Taurine, Potassium Chloride, Vitamin E Supplement, Choline Chloride, Spinach, Broccoli, Carrots, Parsley, Apples, Blueberries, Kale, Mixed Tocopherols added to preserve freshness, L–Carnitine, Niacin (Vitamin B3), Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Iron Proteinate, Vitamin A Supplement, Thiamine Mononitrate (Vitamin B1), d–Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Riboflavin (Vitamin B2), Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Ascorbic Acid (Vitamin C), Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract. This is a naturally preserved product.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 33.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3681 kcal/kg, 376 kcal/cup"
+    },
+    {
+      "name": "CORE Large Breed Adult Dry Dog Food - Grain Free",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/wellness-core-large-breed-adult-dry-dog-food---natural-grain-free-21061.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "CORE",
+      "life_stage": "adult",
+      "breed_size": "Large",
+      "source_id": "5249052",
+      "images": [
+        "/products/wellness/wellness-food-core-large-breed-adult-dry-dog-food-grain-free.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344884545",
+          "sku": "5249052"
+        }
+      ],
+      "ingredients_raw": "Deboned Chicken, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Turkey Meal, Lentils, Peas, Dried Ground Potatoes, Dried Plain Beet Pulp, Flaxseed, Chicken Fat, Natural Flavor, Dried Chicory Root, Taurine, Potassium Chloride, Vitamin E Supplement, Spinach, Broccoli, Carrots, Parsley, Apples, Blueberries, Kale, L–Carnitine, Mixed Tocopherols added to preserve freshness, Choline Chloride, Niacin, Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Iron Proteinate, Vitamin A Supplement, Thiamine Mononitrate, d–Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Riboflavin, Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Ascorbic Acid (Vitamin C), Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract. This is a naturally preserved product Manufactured in a facility that also processes grains",
+      "guaranteed_analysis": {
+        "crude_protein_min": 34.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3465 kcal/kg, 336 kcal/cup"
+    },
+    {
+      "name": "CORE Large Breed Puppy Dry Dog Food - Grain Free, Chicken & Turkey",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/wellness-core-large-breed-puppy-dry-dog-food---natural-grain-free-chicken-and-turkey-49074.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "CORE",
+      "life_stage": "puppy",
+      "breed_size": "Large",
+      "source_id": "5280307",
+      "images": [
+        "/products/wellness/wellness-food-core-large-breed-puppy-dry-dog-food-grain-free-chicken-turkey.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344884569",
+          "sku": "5280307"
+        }
+      ],
+      "ingredients_raw": "SUPPORTS HEALTHY SKIN AND COAT with guaranteed levels of omega fatty acids from ingredients such as flaxseed and salmon oil WHOLE BODY HEALTH: Supported by omega fatty acids, antioxidants, glucosamine, probiotics and taurine for a healthy heart Brand: Wellness Core Food Type: Dry Breed Size: Large Life Stage: Puppy Nutritional Option: Grain Free Health Consideration: Brain Development Flavor: Chicken Weight: Available in 12 lb and 24 lb sizes NUTRITIONAL INFORMATION Ingredients: Deboned Chicken, Chicken Meal, Peas, Dried Ground Potatoes, Turkey Meal,Lentils, Ground Flaxseed, Tomato Pomace, Chicken Fat (preserved with Mixed Tocopherols), Salmon Oil, Natural Chicken Flavor, Salt, Potassium Chloride, Vitamin E Supplement, Bananas, Spinach, Broccoli, Carrots, Parsley, Apples, Blueberries, Kale, Sweet Potato, Taurine, Zinc Proteinate, Mixed Tocopherols added to preserve freshness, Zinc Sulfate, Calcium Carbonate, Niacin, Iron Proteinate, Ferrous Sulfate, Vitamin A Supplement, Copper Sulfate, Thiamine Mononitrate, Copper Proteinate, Manganese Proteinate, Manganese Sulfate, d-Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Riboflavin, Biotin, Chicory Root Extract, Yucca Schidigera Extract, Vitamin D3 Supplement, Calcium Iodate, Vitamin B12 Supplement, Folic Acid, Ascorbic Acid (Vitamin C), Dried Lactobacillus plantarum Fermentation Product, Dried Enterococcus faecium Fermentation Product, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract. This is a naturally preserved product.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 35.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 5.5,
+        "moisture_max": 10.0,
+        "dha_min": 0.1,
+        "calcium_min": 1.6,
+        "phosphorus_min": 1.3,
+        "omega_6_min": 3.0,
+        "omega_3_min": 1.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3619 kcal/kg, 387 kcal/cup"
+    },
+    {
+      "name": "CORE Puppy Dry Dog Food - Grain Free",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/wellness-core-puppy-dry-dog-food---natural-grain-free-3173.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "CORE",
+      "life_stage": "puppy",
+      "source_id": "5180155",
+      "images": [
+        "/products/wellness/wellness-food-core-puppy-dry-dog-food-grain-free.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344884194",
+          "sku": "5180155"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344884231",
+          "sku": "5180156"
+        }
+      ],
+      "ingredients_raw": "Deboned Chicken, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Turkey Meal, Potatoes, Lentils, Peas, Chicken Fat, Dried Plain Beet Pulp, Flaxseed, Salmon Oil, Natural Flavor, Salt, Dried Chicory Root, Potassium Chloride, Taurine, Vitamin E Supplement, Choline Chloride, Spinach, Broccoli, Carrots, Parsley, Apples, Blueberries, Kale, Mixed Tocopherols added to preserve freshness, Niacin, Zinc Proteinate, Zinc Sulfate, Ferrous Sulfate, Iron Proteinate, Vitamin A Supplement, Thiamine Mononitrate, Copper Sulfate, d–Calcium Pantothenate, Copper Proteinate, Sodium Selenite, Pyridoxine Hydrochloride, Manganese Sulfate, Riboflavin, Manganese Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Calcium Iodate, Folic Acid, Ascorbic Acid (Vitamin C), Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract. This is a naturally preserved product Manufactured in a facility that also processes grains",
+      "guaranteed_analysis": {
+        "calcium_min": 100.0,
+        "crude_protein_min": 36.0,
+        "dha_min": 50.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3678 kcal/kg, 471 kcal/cup"
+    },
+    {
+      "name": "CORE Reduced Fat Adult Dry Dog Food - Grain Free",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/wellness-core-reduced-fat-adult-dry-dog-food---natural-grain-free-3175.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "CORE",
+      "life_stage": "adult",
+      "source_id": "5249050",
+      "images": [
+        "/products/wellness/wellness-food-core-reduced-fat-adult-dry-dog-food-grain-free.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344884361",
+          "sku": "5249050"
+        }
+      ],
+      "ingredients_raw": "Deboned Turkey, Turkey Meal, Chicken Meal, Potatoes, Peas, Dried Ground Potatoes, Pea Fiber, Tomato Pomace, Chicken Liver, Chicken Fat (preserved with Mixed Tocopherols), Natural Chicken Flavor, Ground Flaxseed, Salmon Oil, Spinach, Vitamin E Supplement, Broccoli, Carrots, Choline Chloride, Parsley, Apples, Blueberries, Kale, Sweet Potatoes, Taurine, Mixed Tocopherols added to preserve freshness, Zinc Proteinate, Zinc Sulfate, Glucosamine Hydrochloride, Chondroitin Sulfate, Calcium Carbonate, Niacin, Ferrous Sulfate, Iron Proteinate, Beta–Carotene, Vitamin A Supplement, Copper Sulfate, Thiamine Mononitrate, Copper Proteinate, Manganese Proteinate, Manganese Sulfate, d–Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Riboflavin, Chicory Root Extract, Yucca Schidigera Extract, Vitamin D3 Supplement, Biotin, Calcium Iodate, Vitamin B12 Supplement, Folic Acid, Ascorbic Acid (Vitamin C), Dried Lactobacillus plantarum Fermentation Product, Dried Enterococcus faecium Fermentation Product, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 33.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3250 kcal/kg, 360 kcal/cup"
+    },
+    {
+      "name": "CORE Senior Dry Dog Food - Grain Free",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/wellness-core-senior-dry-dog-food---natural-grain-free-49071.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "CORE",
+      "life_stage": "senior",
+      "source_id": "5279671",
+      "images": [
+        "/products/wellness/wellness-food-core-senior-dry-dog-food-grain-free.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344884507",
+          "sku": "5279671"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344884538",
+          "sku": "5280316"
+        }
+      ],
+      "ingredients_raw": "Deboned Turkey, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Lentils, Peas, Dried Ground Potatoes, Turkey Meal, Chickpeas, Dried Plain Beet Pulp, Flaxseed, Chicken Fat, Natural Flavor, Salmon Oil, Dried Chicory Root, Taurine, Vitamin E Supplement, Choline Chloride, Spinach, Broccoli, Carrots, Parsley, Apples, Blueberries, Kale, Mixed Tocopherols added to preserve freshness, Niacin, Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Iron Proteinate, Vitamin A Supplement, Thiamine Mononitrate, d–Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Riboflavin, Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Ascorbic Acid (Vitamin C), Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract. This is a naturally preserved product.Manufactured in a facility that also processes grains.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 32.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3573 kcal/kg, 375 kcal/cup"
+    },
+    {
+      "name": "CORE+ Sensitive Skin & Stomach Adult Dry Dog Food - Salmon & Rice",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/wellness-core-sensitive-skin-and-stomach-adult-dry-dog-food---salmon-and-rice-87834.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "CORE+",
+      "life_stage": "adult",
+      "source_id": "5362870",
+      "images": [
+        "/products/wellness/wellness-food-core-sensitive-skin-stomach-adult-dry-dog-food-salmon-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344182184",
+          "sku": "5362870"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344182177",
+          "sku": "5362871"
+        }
+      ],
+      "ingredients_raw": "Salmon, Herring Meal, Rice, Barley, Oatmeal, Whitefish Meal (source of Glucosamine and Chondroitin Sulfate), Dried Plain Beet Pulp, Canola Oil, Flaxseed, Natural Flavor, Salmon Oil, Dried Chicory Root, Potassium Chloride, Hydrolyzed Yeast, Dried Yeast, Taurine, Choline Chloride, Vitamin E Supplement, Mixed Tocopherols (added to preserve freshness), Vitamin B3 (Niacin), Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Iron Proteinate, Vitamin A Supplement, Vitamin B1 (Thiamine Mononitrate), Vitamin B5 (d–Calcium Pantothenate), Sodium Selenite, Vitamin B6 (Pyridoxine Hydrochloride), Copper Sulfate, Manganese Sulfate, Vitamin B2 (Riboflavin), Manganese Proteinate, Copper Proteinate, Vitamin B7 (Biotin), Vitamin D3 Supplement, Vitamin B12 Supplement, Vitamin B9 (Folic Acid), Calcium Iodate, Vitamin C (Ascorbic Acid), Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract.",
+      "guaranteed_analysis": {
+        "glucosamine_min": 100.0,
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 10.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.6,
+        "phosphorus_min": 1.0,
+        "taurine_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3454 kcal/kg, 339 kcal/cup"
+    },
+    {
+      "name": "CORE+ Small Breed Adult Dry Dog Food - Grain Free, Freeze Dried, Turkey",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/wellness-core-small-breed-adult-dry-dog-food---grain-free-freeze-dried-turkey-42025.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "CORE+",
+      "life_stage": "adult",
+      "breed_size": "Small",
+      "source_id": "5264825",
+      "images": [
+        "/products/wellness/wellness-food-core-small-breed-adult-dry-dog-food-grain-free-freeze-dried-turkey.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344181033",
+          "sku": "5264825"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344181040",
+          "sku": "5264826"
+        }
+      ],
+      "ingredients_raw": "Deboned Turkey, Turkey Meal, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Dried Ground Potatoes, Lentils, Peas, Chicken Fat, Dried Plain Beet Pulp, Flaxseed, Turkey Hearts, Turkey Liver, Natural Flavor, Salmon Oil, Dried Chicory Root, Choline Chloride, Taurine, Vitamin E Supplement, Spinach, Broccoli, Carrots, Parsley, Apples, Blueberries, Kale, Spearmint, Mixed Tocopherols added to preserve freshness, Vitamin B3 (Niacin), Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Iron Proteinate, Vitamin A Supplement, Vitamin B1 (Thiamine Mononitrate), d–Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Vitamin B2 (Riboflavin), Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Vitamin C (Ascorbic Acid), Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract. This is a naturally preserved product Manufactured in a facility that also processes grains",
+      "guaranteed_analysis": {
+        "crude_protein_min": 37.0,
+        "glucosamine_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3682 kcal/kg, 409 kcal/cup"
+    },
+    {
+      "name": "CORE Small Breed Adult Dry Dog Food - Grain Free, Original Formula",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/wellness-core-small-breed-adult-dry-dog-food---natural-grain-free-original-formula-3174.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "CORE",
+      "life_stage": "adult",
+      "breed_size": "Small",
+      "source_id": "5180168",
+      "images": [
+        "/products/wellness/wellness-food-core-small-breed-adult-dry-dog-food-grain-free-original-formula.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344884217",
+          "sku": "5180168"
+        }
+      ],
+      "ingredients_raw": "Deboned Turkey, Turkey Meal (source of Glucosamine), Chicken Meal (source of Chondroitin Sulfate), Lentils, Peas, Dried Ground Potatoes, Chicken Fat (preserved with Mixed Tocopherols), Tomato Pomace, Ground Flaxseed, Natural Chicken Flavor, Salmon Oil, Taurine, Choline Chloride, Vitamin E Supplement, Spinach, Broccoli, Carrots, Parsley, Apples, Blueberries, Kale, Spearmint, Zinc Proteinate, Mixed Tocopherols added to preserve freshness, Zinc Sulfate, Calcium Carbonate, Niacin, Iron Proteinate, Ferrous Sulfate, Vitamin A Supplement, Copper Sulfate, Thiamine Mononitrate, Copper Proteinate, Manganese Proteinate, Manganese Sulfate, d-Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Riboflavin, Biotin, Vitamin D3 Supplement, Chicory Root Extract, Yucca Schidigera Extract, Calcium Iodate, Vitamin B12 Supplement, Folic Acid, Ascorbic Acid (Vitamin C), Dried Lactobacillus plantarum Fermentation Product, Dried Enterococcus faecium Fermentation Product, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract",
+      "guaranteed_analysis": {
+        "glucosamine_min": 100.0,
+        "crude_protein_min": 36.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 2.0,
+        "phosphorus_min": 1.3,
+        "taurine_min": 0.2,
+        "omega_6_min": 3.0,
+        "omega_3_min": 0.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3746 kcal/kg, 412 kcal/cup"
+    },
+    {
+      "name": "CORE Small Breed Puppy Food - Grain Free, Turkey & Salmon",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/wellness-core-small-breed-puppy-food---natural-grain-free-turkey-and-salmon-49073.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "CORE",
+      "life_stage": "puppy",
+      "breed_size": "Small",
+      "source_id": "5280351",
+      "images": [
+        "/products/wellness/wellness-food-core-small-breed-puppy-food-grain-free-turkey-salmon.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344884200",
+          "sku": "5280351"
+        }
+      ],
+      "ingredients_raw": "Deboned Turkey, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Peas, Turkey Meal, Salmon Meal, Dried Ground Potatoes, Chicken Fat, Dried Plain Beet Pulp, Flaxseed, Salmon Oil, Natural Flavor, Salt, Dried Chicory Root, Potassium Chloride, Choline Chloride, Vitamin E Supplement, Taurine, Spinach, Broccoli, Carrots, Parsley, Apples, Blueberries, Kale, Spearmint, Mixed Tocopherols added to preserve freshness, Niacin, Zinc Proteinate, Zinc Sulfate, Ferrous Sulfate, Iron Proteinate, Vitamin A Supplement, Thiamine Mononitrate, Copper Sulfate, d–Calcium Pantothenate, Copper Proteinate, Sodium Selenite, Pyridoxine Hydrochloride, Manganese Sulfate, Riboflavin, Manganese Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Calcium Iodate, Folic Acid, Ascorbic Acid (Vitamin C), Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract. This is a naturally preserved product Manufactured in a facility that also processes grains",
+      "guaranteed_analysis": {
+        "calcium_min": 100.0,
+        "crude_protein_min": 38.0,
+        "dha_min": 50.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3782 kcal/kg, 484 kcal/cup"
+    },
+    {
+      "name": "95% All Life Stage Dog Food Topper - Grain Free",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/wellness-95-all-life-stage-dog-food-topper---natural-grain-free-56832.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "sub_brand": "95%",
+      "life_stage": "all",
+      "source_id": "5153555",
+      "images": [
+        "/products/wellness/wellness-supplement-95-all-life-stage-dog-food-topper-grain-free.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344894537",
+          "sku": "5153555"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344894506",
+          "sku": "5153556"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344894520",
+          "sku": "5153565"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344894551",
+          "sku": "5171576"
+        }
+      ],
+      "ingredients_raw": "Chicken, Water Sufficient For Processing, Natural Flavor, Cassia Gum, Carrageenan.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 10.0,
+        "crude_fat_min": 8.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1374 kcal/kg, 514 kcal/can"
+    },
+    {
+      "name": "Bowl Boosters Simply Shreds All Life Stage Dog Food Topper - Grain Free, Chicken & Beef",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/wellness-bowl-boosters-simply-shreds-all-life-stage-dog-food-topper---grain-free-chicken-and-beef-42808.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "sub_brand": "Bowl Boosters",
+      "life_stage": "all",
+      "source_id": "5266170",
+      "images": [
+        "/products/wellness/wellness-supplement-bowl-boosters-simply-shreds-all-life-stage-dog-food-topper-grain-free-chicken-be.jpg"
+      ],
+      "ingredients_raw": "Chicken, Chicken Broth, Water Sufficient For Processing, Beef, Carrots.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 11.0,
+        "crude_fat_min": 0.5,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 90.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "490 kcal/kg, 39 kcal/pouch"
+    },
+    {
+      "name": "Bowl Boosters Simply Shreds All Life Stage Dog Food Topper - Grain Free, Chicken & Liver",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/wellness-bowl-boosters-simply-shreds-all-life-stage-dog-food-topper---grain-free-chicken-and-liver-42809.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "sub_brand": "Bowl Boosters",
+      "life_stage": "all",
+      "source_id": "5266284",
+      "images": [
+        "/products/wellness/wellness-supplement-bowl-boosters-simply-shreds-all-life-stage-dog-food-topper-grain-free-chicken-li.jpg"
+      ],
+      "ingredients_raw": "Chicken, Chicken Broth, Water Sufficient For Processing, Chicken Liver, Broccoli.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 10.0,
+        "crude_fat_min": 0.5,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 90.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "510 kcal/kg, 40 kcal/pouch"
+    },
+    {
+      "name": "Bowl Boosters Simply Shreds All Life Stage Dog Food Topper - Grain Free, Chicken & Salmon",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/wellness-bowl-boosters-simply-shreds-all-life-stage-dog-food-topper---grain-free-chicken-and-salmon-42810.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "sub_brand": "Bowl Boosters",
+      "life_stage": "all",
+      "source_id": "5266325",
+      "images": [
+        "/products/wellness/wellness-supplement-bowl-boosters-simply-shreds-all-life-stage-dog-food-topper-grain-free-chicken-sa.jpg"
+      ],
+      "ingredients_raw": "Chicken, Chicken Broth, Water Sufficient For Processing, Salmon, Pumpkin.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 0.5,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 90.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "530 kcal/kg, 42 kcal/pouch"
+    },
+    {
+      "name": "Bowl Boosters Simply Shreds All Life Stage Dog Food Topper - Grain Free, Tuna & Beef",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/wellness-bowl-boosters-simply-shreds-all-life-stage-dog-food-topper---grain-free-tuna-and-beef-42811.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "sub_brand": "Bowl Boosters",
+      "life_stage": "all",
+      "source_id": "5266326",
+      "images": [
+        "/products/wellness/wellness-supplement-bowl-boosters-simply-shreds-all-life-stage-dog-food-topper-grain-free-tuna-beef.jpg"
+      ],
+      "ingredients_raw": "Tuna, Fish Broth, Water Sufficient For Processing, Beef, Carrots.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 10.0,
+        "crude_fat_min": 0.2,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 90.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "450 kcal/kg, 36 kcal/pouch"
+    },
+    {
+      "name": "CORE Bowl Booster All Life Stage Dog Food Topper - Grain Free, Natural",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/wellness-core-bowl-booster-all-life-stage-dog-food-topper---grain-free-natural-49891.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "sub_brand": "Bowl Boosters",
+      "life_stage": "all",
+      "source_id": "5280346",
+      "images": [
+        "/products/wellness/wellness-supplement-core-bowl-booster-all-life-stage-dog-food-topper-grain-free-natural.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344885245",
+          "sku": "5280346"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344885252",
+          "sku": "5280348"
+        }
+      ],
+      "ingredients_raw": "Turkey Hearts, Mixed Tocopherols added to preserve freshness, Rosemary Extract, Green Tea Extract.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 60.0,
+        "crude_fat_min": 20.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 8.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4400 kcal/kg, 202 kcal/cup"
+    },
+    {
+      "name": "CORE Bowl Boosters All Life Stage Dog Food Topper - Digestive Health, Chicken",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/wellness-core-bowl-boosters-all-life-stage-dog-food-topper---digestive-health-chicken-64974.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "sub_brand": "Bowl Boosters",
+      "life_stage": "all",
+      "source_id": "5306054",
+      "images": [
+        "/products/wellness/wellness-supplement-core-bowl-boosters-all-life-stage-dog-food-topper-digestive-health-chicken.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344885306",
+          "sku": "5306054"
+        }
+      ],
+      "ingredients_raw": "Chicken Hearts, Oats, Pumpkin, Carrots, Apples, Broccoli, Papaya, Celery, Parsnip, Spinach, Cabbage, Dried Chicory Root, Hydrolyzed Yeast, Dried Bacillus Coagulans Fermentation Product, Rosemary Extract, Green Tea Extract.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 35.0,
+        "crude_fat_min": 13.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3667 kcal/kg"
+    },
+    {
+      "name": "CORE Bowl Boosters All Life Stage Dog Food Topper - Heart Health, Chicken",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/wellness-core-bowl-boosters-all-life-stage-dog-food-topper---heart-health-chicken-64975.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "sub_brand": "Bowl Boosters",
+      "life_stage": "all",
+      "source_id": "5306055",
+      "images": [
+        "/products/wellness/wellness-supplement-core-bowl-boosters-all-life-stage-dog-food-topper-heart-health-chicken.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344885290",
+          "sku": "5306055"
+        }
+      ],
+      "ingredients_raw": "Chicken Hearts (source of Taurine), Oats, Cranberries, Blueberries, Flaxseed, Broccoli, Apples, Carrots, Spinach, Kale, L-Carnitine, Rosemary Extract, Green Tea Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 35.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 10.0,
+        "omega_6_min": 3.5,
+        "omega_3_min": 0.7,
+        "taurine_min": 0.3
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3705 kcal/kg"
+    },
+    {
+      "name": "CORE Bowl Boosters All Life Stage Dog Food Topper - Joint Health, Chicken",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/wellness-core-bowl-boosters-all-life-stage-dog-food-topper---joint-health-chicken-64973.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "sub_brand": "Bowl Boosters",
+      "life_stage": "all",
+      "source_id": "5306053",
+      "images": [
+        "/products/wellness/wellness-supplement-core-bowl-boosters-all-life-stage-dog-food-topper-joint-health-chicken.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344885269",
+          "sku": "5306053"
+        }
+      ],
+      "ingredients_raw": "Chicken Hearts (source of Taurine), Oats, Broccoli, Sweet Potatoes, Flaxseed, Apples, Spinach, Whole Eggs, Carrots, Alfalfa, Dried Kelp, Glucosamine Hydrochloride, Chondroitin Sulfate, Turmeric, Rosemary Extract, Green Tea Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 35.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 10.0,
+        "calcium_max": 0.4,
+        "phosphorus_max": 0.7,
+        "omega_6_min": 3.25,
+        "omega_3_min": 0.5,
+        "taurine_min": 0.3
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3792 kcal/kg"
+    },
+    {
+      "name": "CORE Bowl Boosters All Life Stage Dog Food Topper - Skin & Coat Health, Chicken",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/wellness-core-bowl-boosters-all-life-stage-dog-food-topper---skin-and-coat-health-chicken-64976.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "sub_brand": "Bowl Boosters",
+      "life_stage": "all",
+      "source_id": "5306056",
+      "images": [
+        "/products/wellness/wellness-supplement-core-bowl-boosters-all-life-stage-dog-food-topper-skin-coat-health-chicken.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344885276",
+          "sku": "5306056"
+        }
+      ],
+      "ingredients_raw": "Chicken Hearts (source of Biotin), Oats, Whole Eggs (source of Vitamin E), Flaxseed, Coconut Flakes, Apples, Carrots, Broccoli, Cranberries, Sweet Potatoes, Spinach, Rosemary Extract, Green Tea Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 35.0,
+        "crude_fat_min": 20.0,
+        "crude_fiber_max": 2.5,
+        "moisture_max": 10.0,
+        "omega_3_min": 1.0,
+        "omega_6_min": 4.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4189 kcal/kg"
+    },
+    {
+      "name": "Core Bowl Boosters Immune Health Adult Dog Food Topper - Plant",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/wellness-core-bowl-boosters-immune-health-adult-dog-food-topper---plant-69942.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "sub_brand": "Bowl Boosters",
+      "life_stage": "adult",
+      "source_id": "5323087",
+      "images": [
+        "/products/wellness/wellness-supplement-core-bowl-boosters-immune-health-adult-dog-food-topper-plant.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344885337",
+          "sku": "5323087"
+        }
+      ],
+      "ingredients_raw": "Cranberries, Papayas, Carrots, Sweet Potatoes, Blueberries, Puffed Brown Rice, Dried Kelp, Tricalcium Phosphate, Flaxseed, Salt, Taurine, Zinc Sulfate, Vitamin E Supplement, Ferrous Fumarate, Copper Sulfate, d-Calcium Pantothenate, Riboflavin, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Folic Acid",
+      "guaranteed_analysis": {
+        "crude_protein_min": 2.0,
+        "crude_fat_min": 1.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 20.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "2658 kcal/kg"
+    },
+    {
+      "name": "CORE Bowl Boosters Tender All Life Stage Dog Meal Topper - Grain Free, Lamb & Salmon",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/wellness-core-bowl-boosters-tender-all-life-stage-dog-meal-topper---grain-free-lamb-and-salmon-73139.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "sub_brand": "Bowl Boosters",
+      "life_stage": "all",
+      "source_id": "5333056",
+      "images": [
+        "/products/wellness/wellness-supplement-core-bowl-boosters-tender-all-life-stage-dog-meal-topper-grain-free-lamb-salmon.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344885399",
+          "sku": "5333056"
+        }
+      ],
+      "ingredients_raw": "Lamb, Salmon, Chickpeas, Ground Potatoes, Vegetable Glycerin, Guar Gum, Tomato Pomace, Cane Molasses, Salt, Flaxseed, Natural Smoke Flavor, Citric Acid (preservative), Distilled Vinegar, Phosphoric Acid, Chicory Root Extract, Potassium Citrate, Apples, Blueberries, Taurine, Vitamin E Supplement, Choline Chloride, Spinach, Broccoli, Zinc Proteinate, Parsley, Zinc Sulfate, Kale, Carrots, Ferrous Sulfate, Iron Proteinate, Calcium Carbonate, Niacin, Copper Sulfate, Copper Proteinate, Manganese Proteinate, Manganese Sulfate, Vitamin A Supplement, Sodium Selenite, Thiamine Mononitrate, d-Calcium Pantothenate, Pyridoxine Hydrochloride, Riboflavin, Vitamin D3 Supplement, Biotin, Calcium Iodate, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Ascorbic Acid, Mixed Tocopherols added to preserve freshness, Rosemary Extract, Green Tea Extract, Spearmint Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 12.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 30.0,
+        "omega_6_min": 4.0,
+        "omega_3_min": 0.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "2809 kcal/kg, 312 kcal/cup"
+    },
+    {
+      "name": "CORE Bowl Boosters Tender All Life Stage Dog Meal Topper - Grain Free, Turkey & Chicken",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/wellness-core-bowl-boosters-tender-all-life-stage-dog-meal-topper---grain-free-turkey-and-chicken-73138.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "sub_brand": "Bowl Boosters",
+      "life_stage": "all",
+      "source_id": "5333055",
+      "images": [
+        "/products/wellness/wellness-supplement-core-bowl-boosters-tender-all-life-stage-dog-meal-topper-grain-free-turkey-chick.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344885382",
+          "sku": "5333055"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344885375",
+          "sku": "5333057"
+        }
+      ],
+      "ingredients_raw": "Turkey, Chicken, Chickpeas, Ground Potatoes, Vegetable Glycerin, Guar Gum, Tomato Pomace, Cane Molasses, Salt, Flaxseed, Natural Smoke Flavor, Citric Acid (preservative), Distilled Vinegar, Phosphoric Acid, Chicory Root Extract, Potassium Citrate, Apples, Blueberries, Taurine, Vitamin E Supplement, Choline Chloride, Spinach, Broccoli, Zinc Proteinate, Parsley, Zinc Sulfate, Kale, Carrots, Ferrous Sulfate, Iron Proteinate, Calcium Carbonate, Niacin, Copper Sulfate, Copper Proteinate, Manganese Proteinate, Manganese Sulfate, Vitamin A Supplement, Sodium Selenite, Thiamine Mononitrate, d-Calcium Pantothenate, Pyridoxine Hydrochloride, Riboflavin, Vitamin D3 Supplement, Biotin, Calcium Iodate, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Ascorbic Acid, Mixed Tocopherols added to preserve freshness, Rosemary Extract, Green Tea Extract, Spearmint Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 15.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 30.0,
+        "omega_6_min": 4.0,
+        "omega_3_min": 0.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "2876 kcal/kg, 319 kcal/cup"
+    },
+    {
+      "name": "Soft Puppy Bites Dog Treats - Lamb & Salmon",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/treats/soft-and-chewy-treats/wellness-soft-puppy-bites-dog-treats---natural-lamb-and-salmon-77038.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "life_stage": "puppy",
+      "source_id": "5338798",
+      "images": [
+        "/products/wellness/wellness-treat-soft-puppy-bites-dog-treats-lamb-salmon.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344890171",
+          "sku": "5338798"
+        }
+      ],
+      "ingredients_raw": "Lamb, Salmon, Chickpeas, Ground Potatoes, Vegetable Glycerin, Guar Gum, Carrots, Cane Molasses, Salt, Natural Smoke Flavor, Blueberries, Garlic Powder, Flaxseed, Phosphoric Acid, Sweet Potatoes, Apples, Sorbic Acid (a preservative), Mixed Tocopherols added to preserve freshness, Rosemary Extract, Green Tea Extract, Spearmint Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 12.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 30.0,
+        "dha_min": 0.05
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3492 kcal/kg, 6 kcal/treat"
+    },
+    {
+      "name": "The Rewarding Life Dog Treats - Grain Free, Chicken & Lamb",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/treats/soft-and-chewy-treats/wellness-the-rewarding-life-dog-treats---natural-grain-free-chicken-and-lamb-38156.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "source_id": "5255831",
+      "images": [
+        "/products/wellness/wellness-treat-the-rewarding-life-dog-treats-grain-free-chicken-lamb.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344891659",
+          "sku": "5255831"
+        }
+      ],
+      "ingredients_raw": "Chicken, Lamb, Chickpeas, Ground Potatoes, Vegetable Glycerin, Guar Gum, Carrots, Cane Molasses, Salt, Natural Smoke Flavor, Blueberries, Flaxseed, Phosphoric Acid, Sweet Potatoes, Apples, Sorbic Acid (a preservative), Mixed Tocopherols added to preserve freshness, Rosemary Extract, Green Tea Extract, Spearmint Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 15.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 30.0,
+        "omega_6_min": 3.0,
+        "omega_3_min": 0.3
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3481 kcal/kg, 14 kcal/treat"
+    },
+    {
+      "name": "The Rewarding Life Dog Treats - Grain Free, Chicken & Venison",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/treats/soft-and-chewy-treats/wellness-the-rewarding-life-dog-treats---natural-grain-free-chicken-and-venison-38154.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "source_id": "5255829",
+      "images": [
+        "/products/wellness/wellness-treat-the-rewarding-life-dog-treats-grain-free-chicken-venison.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344891628",
+          "sku": "5255829"
+        }
+      ],
+      "ingredients_raw": "Chicken, Venison, Chickpeas, Ground Potatoes, Vegetable Glycerin, Guar Gum, Carrots, Cane Molasses, Salt, Natural Smoke flavour, Blueberries, Flaxseed, Phosphoric Acid, Sweet Potatoes, Apples, Sorbic Acid (a preservative), Mixed Tocopherols added to preserve freshness, Rosemary Extract, Green Tea Extract, Spearmint Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 16.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 30.0,
+        "omega_6_min": 2.5,
+        "omega_3_min": 0.25
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3311 kcal/kg, 11 kcal/treat"
+    },
+    {
+      "name": "The Rewarding Life Dog Treats - Grain Free, Lamb & Salmon",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/treats/soft-and-chewy-treats/wellness-the-rewarding-life-dog-treats---natural-grain-free-lamb-and-salmon-38157.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "source_id": "5255832",
+      "images": [
+        "/products/wellness/wellness-treat-the-rewarding-life-dog-treats-grain-free-lamb-salmon.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344891611",
+          "sku": "5255832"
+        }
+      ],
+      "ingredients_raw": "Lamb, Salmon, Chickpeas, Ground Potatoes, Vegetable Glycerin, Guar Gum, Carrots, Cane Molasses, Salt, Natural Smoke Flavor, Blueberries, Flaxseed, Phosphoric Acid, Sweet Potatoes, Apples, Sorbic Acid (a preservative), Mixed Tocopherols added to preserve freshness, Rosemary Extract, Green Tea Extract, Spearmint Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 12.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 30.0,
+        "dha_min": 0.1,
+        "omega_6_min": 1.25,
+        "omega_3_min": 0.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3492 kcal/kg, 17 kcal/treat"
+    },
+    {
+      "name": "The Rewarding Life Dog Treats - Grain Free, Turkey & Duck",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/treats/soft-and-chewy-treats/wellness-the-rewarding-life-dog-treats---natural-grain-free-turkey-and-duck-38158.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "source_id": "5255833",
+      "images": [
+        "/products/wellness/wellness-treat-the-rewarding-life-dog-treats-grain-free-turkey-duck.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344891666",
+          "sku": "5255833"
+        }
+      ],
+      "ingredients_raw": "Turkey, Duck, Chickpeas, Ground Potatoes, Vegetable Glycerin, Guar Gum, Carrots, Cane Molasses, Salt, Natural Smoke flavour, Blueberries, Flaxseed, Phosphoric Acid, Sweet Potatoes, Apples, Sorbic Acid (a preservative), Mixed Tocopherols added to preserve freshness, Rosemary Extract, Green Tea Extract, Spearmint Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 15.0,
+        "crude_fat_min": 13.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 30.0,
+        "omega_6_min": 5.0,
+        "omega_3_min": 0.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3607 kcal/kg, 13 kcal/treat"
+    }
+  ]
+}
