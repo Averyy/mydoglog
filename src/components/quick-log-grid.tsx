@@ -23,6 +23,7 @@ interface QuickLogGridProps {
 
 export function QuickLogGrid({ dogId, onSelect }: QuickLogGridProps): React.ReactElement {
   const [counts, setCounts] = useState<TodayCounts>({ poop: 0, itch: 0, treat: 0 })
+  const [loading, setLoading] = useState(true)
 
   const fetchCounts = useCallback(async (): Promise<void> => {
     try {
@@ -33,6 +34,8 @@ export function QuickLogGrid({ dogId, onSelect }: QuickLogGridProps): React.Reac
       }
     } catch {
       // Non-critical
+    } finally {
+      setLoading(false)
     }
   }, [dogId])
 
@@ -70,25 +73,37 @@ export function QuickLogGrid({ dogId, onSelect }: QuickLogGridProps): React.Reac
 
   return (
     <div className="grid grid-cols-2 gap-3">
-      {items.map((item) => {
-        const Icon = item.icon
-        return (
-          <button
-            key={item.mode}
-            type="button"
-            onClick={() => onSelect(item.mode)}
-            className="relative flex min-h-[64px] flex-col items-center justify-center gap-1.5 rounded-lg border border-border bg-bg-primary px-4 py-3 text-text-secondary transition-colors hover:border-primary hover:bg-item-active hover:text-primary"
+      {loading ? (
+        Array.from({ length: 4 }).map((_, i) => (
+          <div
+            key={i}
+            className="flex min-h-[64px] flex-col items-center justify-center gap-1.5 rounded-lg border border-border bg-bg-primary px-4 py-3"
           >
-            <Icon className="size-6" />
-            <span className="text-[13px] font-medium">{item.label}</span>
-            {item.count != null && item.count > 0 && (
-              <div className="absolute top-1.5 right-1.5 flex h-4 min-w-4 items-center justify-center rounded-full bg-primary px-1">
-                <span className="text-[10px] font-bold text-background">{item.count}</span>
-              </div>
-            )}
-          </button>
-        )
-      })}
+            <div className="size-6 animate-pulse rounded bg-muted" />
+            <div className="h-[13px] w-16 animate-pulse rounded bg-muted" />
+          </div>
+        ))
+      ) : (
+        items.map((item) => {
+          const Icon = item.icon
+          return (
+            <button
+              key={item.mode}
+              type="button"
+              onClick={() => onSelect(item.mode)}
+              className="relative flex min-h-[64px] flex-col items-center justify-center gap-1.5 rounded-lg border border-border bg-bg-primary px-4 py-3 text-text-secondary transition-colors hover:border-primary hover:bg-item-active hover:text-primary"
+            >
+              <Icon className="size-6" />
+              <span className="text-[13px] font-medium">{item.label}</span>
+              {item.count != null && item.count > 0 && (
+                <div className="absolute top-1.5 right-1.5 flex h-4 min-w-4 items-center justify-center rounded-full bg-primary px-1">
+                  <span className="text-[10px] font-bold text-background">{item.count}</span>
+                </div>
+              )}
+            </button>
+          )
+        })
+      )}
     </div>
   )
 }

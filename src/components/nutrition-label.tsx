@@ -83,7 +83,7 @@ function IngredientItem({ item }: { item: IngredientList }): React.ReactElement 
       <p className="break-words text-[10px] leading-snug text-muted-foreground">
         <span
           ref={textRef}
-          className={cn("inline-block", !expanded && "line-clamp-4")}
+          className={cn("inline-block", !expanded && "line-clamp-3")}
         >
           {item.ingredients}
         </span>

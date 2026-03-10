@@ -147,7 +147,7 @@ export function ProductIngredientList({
                     <span className="text-[10px] text-text-tertiary">Below 1%</span>
                     <div className="h-px flex-1 bg-border" />
                   </div>
-                  <p className="text-[10px] leading-snug text-text-tertiary">
+                  <p className="text-[9px] leading-tight text-text-tertiary">
                     {belowSalt.join(", ")}
                   </p>
                 </>

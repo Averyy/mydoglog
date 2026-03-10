@@ -412,10 +412,11 @@ export function ProductPicker({
                 {Array.from({ length: 6 }).map((_, i) => (
                   <div key={i} className="flex min-h-[48px] items-center gap-3 px-2 py-1.5">
                     <div className="size-10 shrink-0 animate-pulse rounded bg-muted" />
-                    <div className="flex flex-1 flex-col gap-1.5">
-                      <div className="h-3.5 w-3/4 animate-pulse rounded bg-muted" />
+                    <div className="flex flex-1 flex-col gap-0.5">
+                      <div className="h-3.5 animate-pulse rounded bg-muted" style={{ width: `${55 + (i * 17) % 30}%` }} />
                       <div className="h-3 w-1/3 animate-pulse rounded bg-muted" />
                     </div>
+                    <div className="h-5 w-12 animate-pulse rounded-full bg-muted shrink-0" />
                   </div>
                 ))}
               </div>
@@ -436,7 +437,7 @@ export function ProductPicker({
               <CommandEmpty>No products found.</CommandEmpty>
             )}
             {filteredProducts.length > 0 && (
-              <CommandGroup>
+              <CommandGroup className="animate-in fade-in duration-200">
                 {filteredProducts.map((product) => {
                   const imgFailed = failedImages.has(product.id)
                   return (

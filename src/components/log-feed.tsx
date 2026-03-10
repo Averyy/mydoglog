@@ -100,16 +100,6 @@ export function LogFeed({ dogId }: { dogId: string }): React.ReactElement {
     return map
   }, [entries])
 
-  if (loading) {
-    return (
-      <div className="space-y-3">
-        {Array.from({ length: 3 }).map((_, i) => (
-          <div key={i} className="h-12 animate-pulse rounded-lg bg-muted" />
-        ))}
-      </div>
-    )
-  }
-
   if (error) {
     return (
       <div className="text-center space-y-2 py-4">
@@ -121,7 +111,7 @@ export function LogFeed({ dogId }: { dogId: string }): React.ReactElement {
     )
   }
 
-  if (entries.length === 0) {
+  if (!loading && entries.length === 0) {
     return (
       <p className="text-sm text-text-secondary">
         No recent logs. Tap + to start logging.
@@ -131,19 +121,56 @@ export function LogFeed({ dogId }: { dogId: string }): React.ReactElement {
 
   return (
     <div className="space-y-4">
-      {[...grouped.entries()].map(([date, dateEntries]) => (
-        <div key={date} className="space-y-1.5">
-          <h3 className="text-[11px] font-medium uppercase tracking-wider text-text-tertiary">
-            {formatDateHeader(date)}
-          </h3>
-          <div className="space-y-1">
-            {dateEntries.map((entry) => (
-              <LogEntryRow key={entry.id} entry={entry} />
-            ))}
+      {loading ? (
+        <>
+          {/* Today group */}
+          <div className="space-y-1.5">
+            <div className="h-2.5 w-12 animate-pulse rounded bg-muted" />
+            <div className="space-y-1">
+              {Array.from({ length: 3 }).map((_, i) => (
+                <div key={i} className="flex items-center gap-3 rounded-lg border border-border px-3 py-2">
+                  <div className="size-5 animate-pulse rounded bg-muted shrink-0" />
+                  <div className="flex-1 min-w-0 flex items-baseline gap-1.5">
+                    <div className="h-3.5 w-5 animate-pulse rounded bg-muted" />
+                    <div className="h-3 animate-pulse rounded bg-muted" style={{ width: `${60 + (i * 20) % 50}px` }} />
+                  </div>
+                  <div className="h-2.5 w-14 animate-pulse rounded bg-muted shrink-0" />
+                </div>
+              ))}
+            </div>
+          </div>
+          {/* Yesterday group */}
+          <div className="space-y-1.5">
+            <div className="h-2.5 w-20 animate-pulse rounded bg-muted" />
+            <div className="space-y-1">
+              {Array.from({ length: 2 }).map((_, i) => (
+                <div key={i} className="flex items-center gap-3 rounded-lg border border-border px-3 py-2">
+                  <div className="size-5 animate-pulse rounded bg-muted shrink-0" />
+                  <div className="flex-1 min-w-0 flex items-baseline gap-1.5">
+                    <div className="h-3.5 w-5 animate-pulse rounded bg-muted" />
+                    <div className="h-3 animate-pulse rounded bg-muted" style={{ width: `${70 + (i * 30) % 40}px` }} />
+                  </div>
+                  <div className="h-2.5 w-14 animate-pulse rounded bg-muted shrink-0" />
+                </div>
+              ))}
+            </div>
+          </div>
+        </>
+      ) : (
+        [...grouped.entries()].map(([date, dateEntries]) => (
+          <div key={date} className="space-y-1.5">
+            <h3 className="text-[11px] font-medium uppercase tracking-wider text-text-tertiary">
+              {formatDateHeader(date)}
+            </h3>
+            <div className="space-y-1">
+              {dateEntries.map((entry) => (
+                <LogEntryRow key={entry.id} entry={entry} />
+              ))}
           </div>
         </div>
-      ))}
-      {hasMore && (
+      ))
+      )}
+      {!loading && hasMore && (
         <Button
           variant="secondary"
           size="sm"

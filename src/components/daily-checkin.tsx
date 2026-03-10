@@ -450,11 +450,22 @@ export function DailyCheckInContent({
           </AccordionTrigger>
           <AccordionContent>
             {routineLoading ? (
-              <p className="text-xs text-muted-foreground">Loading...</p>
+              <div className="space-y-1.5">
+                {Array.from({ length: 2 }).map((_, i) => (
+                  <div key={i} className="flex items-center gap-3 rounded-md border border-border-light px-3 py-2">
+                    <div className="size-9 animate-pulse rounded-md bg-muted shrink-0" />
+                    <div className="min-w-0 flex-1 space-y-1.5">
+                      <div className="h-3 w-20 animate-pulse rounded bg-muted" />
+                      <div className="h-3.5 w-36 animate-pulse rounded bg-muted" />
+                    </div>
+                    <div className="h-5 w-12 animate-pulse rounded-full bg-muted shrink-0" />
+                  </div>
+                ))}
+              </div>
             ) : !routine || (!routine.plan && routine.medications.length === 0) ? (
               <p className="text-xs text-muted-foreground">No active routine set up.</p>
             ) : (
-              <div className="space-y-3">
+              <div className="space-y-3 animate-in fade-in duration-300">
                 {/* Food & supplement items */}
                 {routine.plan && routine.plan.items.length > 0 && (
                   <div className="space-y-1.5">

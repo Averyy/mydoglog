@@ -29,10 +29,10 @@ const NAV_LINKS: NavItem[] = [
   { label: "Settings", icon: LiaDogSolid, href: "/settings" },
 ]
 
-function resolveHref(link: NavItem, activeDogId: string | null): string | null {
+function resolveHref(link: NavItem, activeDogId: string | null): string {
   if (link.href) return link.href
   if (link.dogHref && activeDogId) return link.dogHref(activeDogId)
-  return null
+  return "/"
 }
 
 export function DesktopNavLinks(): React.ReactElement {
@@ -44,19 +44,6 @@ export function DesktopNavLinks(): React.ReactElement {
       {NAV_LINKS.filter((link) => !link.prominent).map((link) => {
         const href = resolveHref(link, activeDogId)
         const isSettings = link.label === "Settings"
-
-        if (!href) {
-          return (
-            <button
-              key={link.label}
-              type="button"
-              onClick={() => toast.error("Add a dog first")}
-              className="transition-colors hover:text-text-primary"
-            >
-              {link.label}
-            </button>
-          )
-        }
 
         return (
           <Link
@@ -87,17 +74,13 @@ export function BottomNav(): React.ReactElement {
     setLogMode("selector")
   }
 
-  function handleNoDog(): void {
-    toast.error("Add a dog first")
-  }
-
   return (
     <nav className="fixed inset-x-0 bottom-0 z-50 border-t border-border bg-bg-primary md:hidden">
       <div className="mx-auto flex h-16 max-w-lg items-center justify-around">
         {NAV_LINKS.map((link) => {
           const Icon = link.icon
           const href = resolveHref(link, activeDogId)
-          const active = href ? isNavActive(href, pathname) : false
+          const active = isNavActive(href, pathname)
 
           if (link.prominent) {
             return (
@@ -111,20 +94,6 @@ export function BottomNav(): React.ReactElement {
                 <span className="flex size-10 items-center justify-center rounded-full bg-primary text-primary-foreground">
                   <Icon className="size-5" />
                 </span>
-              </button>
-            )
-          }
-
-          if (!href) {
-            return (
-              <button
-                key={link.label}
-                type="button"
-                onClick={handleNoDog}
-                className="flex min-h-[44px] min-w-[44px] flex-col items-center justify-center gap-0.5 text-text-tertiary"
-              >
-                <Icon className="size-5" />
-                <span className="text-[10px] font-medium">{link.label}</span>
               </button>
             )
           }
