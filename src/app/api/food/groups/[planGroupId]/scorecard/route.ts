@@ -124,8 +124,6 @@ export async function PUT(
       planGroupId,
       poopQuality,
       itchSeverity,
-      digestiveImpact: null,
-      itchinessImpact: null,
       notes,
     }
 

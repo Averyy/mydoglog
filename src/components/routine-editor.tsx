@@ -390,7 +390,7 @@ export function RoutineEditorContent({
   }
 
   return (
-    <div className="flex h-full">
+    <div className="flex min-h-0 flex-1">
       {/* ── Form ───────────────────────────────────────────────────────── */}
       <div className="min-w-0 flex-1 space-y-5 overflow-y-auto px-6 pb-6 pt-6 md:pr-6">
       {/* Header (inside scrollable form column) */}
@@ -544,9 +544,13 @@ export function RoutineEditorContent({
       </div>
 
       {/* ── Nutrition sidebar (desktop only) ──────────────────────────── */}
-      <div className="hidden shrink-0 border-l border-border bg-secondary md:flex md:w-[264px] md:items-center md:rounded-r-lg overflow-hidden">
-        <div className="w-full min-w-0 p-4">
-          <NutritionLabel data={nutrition} ingredientLists={ingredientsByProduct} />
+      <div className="hidden shrink-0 border-l border-border bg-secondary md:flex md:w-[264px] md:rounded-r-lg overflow-y-auto">
+        <div className="my-auto w-full min-w-0 px-5 py-8">
+          <NutritionLabel
+            data={nutrition}
+            loading={planItems.some((i) => i.product) && productDetails.size === 0}
+            ingredientLists={ingredientsByProduct}
+          />
         </div>
       </div>
     </div>

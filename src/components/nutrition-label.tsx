@@ -108,6 +108,7 @@ function IngredientItem({ item }: { item: IngredientList }): React.ReactElement 
 
 interface NutritionLabelBaseProps {
   data: ComputedNutrition
+  loading?: boolean
   className?: string
 }
 
@@ -127,8 +128,12 @@ interface ProductVariantProps extends NutritionLabelBaseProps {
 
 type NutritionLabelProps = DailyVariantProps | ProductVariantProps
 
+function Skeleton({ className }: { className?: string }): React.ReactElement {
+  return <div className={cn("animate-pulse rounded bg-muted", className)} />
+}
+
 export function NutritionLabel(props: NutritionLabelProps): React.ReactElement {
-  const { data, className, variant = "daily" } = props
+  const { data, loading, className, variant = "daily" } = props
   const { caloriesPerDay, primaryAnalysis, supplementalAnalysis, productCount } = data
   const isProduct = variant === "product"
 
@@ -173,7 +178,9 @@ export function NutritionLabel(props: NutritionLabelProps): React.ReactElement {
       {/* ── Calories ───────────────────────────────────────────────── */}
       <div className="flex items-baseline justify-between py-[2px]">
         <span className="text-[15px] font-black">Calories</span>
-        {caloriesPerDay !== null ? (
+        {loading ? (
+          <Skeleton className="h-7 w-16" />
+        ) : caloriesPerDay !== null ? (
           <span className="font-mono text-[28px] font-black leading-none tabular-nums">
             {caloriesPerDay.toLocaleString()}
           </span>
@@ -204,7 +211,19 @@ export function NutritionLabel(props: NutritionLabelProps): React.ReactElement {
       {/* ── Primary GA rows ────────────────────────────────────────── */}
       {primaryAnalysis.map((row, i) => (
         <div key={row.key}>
-          <NutrientRow row={row} showGrams={!isProduct} />
+          {loading ? (
+            <div className="flex items-baseline justify-between gap-2 py-[3px]">
+              <span className="text-[13px] font-bold leading-tight">
+                {row.label}
+                <span className="ml-1 text-[11px] font-normal text-muted-foreground">
+                  ({row.qualifier})
+                </span>
+              </span>
+              <Skeleton className="h-4 w-10" />
+            </div>
+          ) : (
+            <NutrientRow row={row} showGrams={!isProduct} />
+          )}
           {i < primaryAnalysis.length - 1 && <ThinRule />}
         </div>
       ))}
@@ -225,22 +244,30 @@ export function NutritionLabel(props: NutritionLabelProps): React.ReactElement {
 
       {/* ── Footer ─────────────────────────────────────────────────── */}
       <ThickBar className="mt-[2px] h-[5px]" />
-      {!isProduct && (
+      {loading ? (
+        <Skeleton className="mt-1 h-3 w-3/4" />
+      ) : !isProduct ? (
         <p className="mt-1 break-words text-[10px] leading-tight text-muted-foreground">
           Per food label guaranteed analysis, as-fed basis.
           {productCount > 1 && ` Weighted average from ${productCount} products.`}
           {caloriesPerDay === null && productCount > 0 && " Add quantities to calculate calories."}
           {productCount === 0 && " Add foods to see nutrition info."}
         </p>
-      )}
-      {isProduct && (
+      ) : (
         <p className="mt-1 break-words text-[10px] leading-tight text-muted-foreground">
           Guaranteed analysis from product label.
         </p>
       )}
 
       {/* ── Ingredients (daily variant only) ───────────────────────── */}
-      {!isProduct && props.ingredientLists && props.ingredientLists.length > 0 && (
+      {loading && !isProduct && (
+        <div className="mt-2 space-y-2">
+          <ThickBar className="h-[3px]" />
+          <Skeleton className="h-3 w-1/2" />
+          <Skeleton className="h-8 w-full" />
+        </div>
+      )}
+      {!loading && !isProduct && props.ingredientLists && props.ingredientLists.length > 0 && (
         <div className="mt-2 space-y-2">
           <ThickBar className="h-[3px]" />
           {props.ingredientLists.map((item) => (

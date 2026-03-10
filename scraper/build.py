@@ -93,7 +93,7 @@ FORM_TYPE_MAP: dict[str, str] = {
 # ---------------------------------------------------------------------------
 
 _UPPERCASE_PREFIXES = re.compile(r"^(DL-|L-|D-)", re.IGNORECASE)
-_LOWERCASE_WORDS = {"and", "or", "of", "for", "with", "in", "a", "the"}
+_LOWERCASE_WORDS = {"and", "or", "of", "for", "with", "in", "the"}
 
 
 def _title_case_word(word: str) -> str:
