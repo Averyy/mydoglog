@@ -9,6 +9,8 @@ export interface NutritionItem {
 
 export interface ComputedNutrition {
   caloriesPerDay: number | null
+  /** Unit label for the calorie value (e.g. "kcal/day", "kcal/cup", "kcal/can"). Only set for product variant. */
+  calorieUnit: string | null
   primaryAnalysis: AnalysisRow[]
   supplementalAnalysis: AnalysisRow[]
   productCount: number
@@ -180,6 +182,88 @@ export function gramsPerServing(
   return (parsed[unit] / parsed.kg) * 1000
 }
 
+// ─── Single-product nutrition ─────────────────────────────────────────────────
+
+/**
+ * Pick the best calorie unit for display based on product type/format.
+ * - Dry food → kcal/cup (fallback kcal/kg)
+ * - Wet food → kcal/can (fallback kcal/kg)
+ * - Treats → kcal/treat or kcal/piece (fallback kcal/kg)
+ */
+function pickCalorieDisplay(
+  parsed: Record<string, number>,
+  productType?: string | null,
+  productFormat?: string | null,
+): { value: number; unit: string } | null {
+  if (Object.keys(parsed).length === 0) return null
+
+  // Treats: prefer per-piece units
+  if (productType === "treat") {
+    for (const unit of ["treat", "piece"] as const) {
+      if (parsed[unit] !== undefined) return { value: Math.round(parsed[unit]), unit: `kcal/${unit}` }
+    }
+    // No per-piece data — fall through to kcal/kg
+  }
+
+  // Wet food: prefer per-can
+  if (productFormat === "wet") {
+    for (const unit of ["can", "pouch"] as const) {
+      if (parsed[unit] !== undefined) return { value: Math.round(parsed[unit]), unit: `kcal/${unit}` }
+    }
+  }
+
+  // Dry food: prefer per-cup
+  if (productFormat === "dry" || !productFormat) {
+    if (parsed.cup !== undefined) return { value: Math.round(parsed.cup), unit: "kcal/cup" }
+  }
+
+  // Fallback: kcal/kg
+  if (parsed.kg !== undefined) return { value: Math.round(parsed.kg), unit: "kcal/kg" }
+
+  // Last resort: first available unit
+  const firstUnit = Object.keys(parsed)[0]
+  return { value: Math.round(parsed[firstUnit]), unit: `kcal/${firstUnit}` }
+}
+
+/** Build ComputedNutrition from a single product's raw GA + calorie data. */
+export function computeProductNutrition(
+  guaranteedAnalysis: Record<string, number> | null,
+  calorieContent: string | null,
+  productType?: string | null,
+  productFormat?: string | null,
+): ComputedNutrition {
+  function buildRow(field: GAFieldDef): AnalysisRow {
+    const value = guaranteedAnalysis?.[field.key] ?? null
+    return {
+      key: field.key,
+      label: field.label,
+      value,
+      gramsPerDay: null,
+      qualifier: field.qualifier,
+      displayUnit: field.displayUnit,
+    }
+  }
+
+  let calorieValue: number | null = null
+  let calorieUnit: string | null = null
+  if (calorieContent) {
+    const parsed = parseCalorieContent(calorieContent)
+    const display = pickCalorieDisplay(parsed, productType, productFormat)
+    if (display) {
+      calorieValue = display.value
+      calorieUnit = display.unit
+    }
+  }
+
+  return {
+    caloriesPerDay: calorieValue,
+    calorieUnit,
+    primaryAnalysis: PRIMARY_GA_FIELDS.map(buildRow),
+    supplementalAnalysis: SUPPLEMENTAL_GA_FIELDS.map(buildRow).filter((r) => r.value !== null),
+    productCount: 1,
+  }
+}
+
 // ─── Computation ──────────────────────────────────────────────────────────────
 
 /** Compute combined nutrition data from an array of food items. */
@@ -240,6 +324,7 @@ export function computeNutrition(items: NutritionItem[]): ComputedNutrition {
 
   return {
     caloriesPerDay: totalCalories,
+    calorieUnit: null,
     primaryAnalysis: PRIMARY_GA_FIELDS.map(computeRow),
     // Only include supplemental rows that have data
     supplementalAnalysis: SUPPLEMENTAL_GA_FIELDS.map(computeRow).filter((r) => r.value !== null),

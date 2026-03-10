@@ -89,6 +89,92 @@ FORM_TYPE_MAP: dict[str, str] = {
 
 
 # ---------------------------------------------------------------------------
+# Ingredient display normalization
+# ---------------------------------------------------------------------------
+
+_UPPERCASE_PREFIXES = re.compile(r"^(DL-|L-|D-)", re.IGNORECASE)
+_LOWERCASE_WORDS = {"and", "or", "of", "for", "with", "in", "a", "the"}
+
+
+def _title_case_word(word: str) -> str:
+    """Title-case a single word, preserving chemical prefixes and vitamin refs."""
+    if word.startswith("(") or word.startswith("["):
+        return word
+    m = _UPPERCASE_PREFIXES.match(word)
+    if m:
+        prefix = m.group(1).upper()
+        rest = word[m.end():]
+        return prefix + rest[:1].upper() + rest[1:].lower() if rest else prefix
+    # Preserve vitamin letter-number refs like B-12, B-7
+    if re.match(r"^[A-Z]-\d", word):
+        return word
+    return word[:1].upper() + word[1:].lower()
+
+
+def title_case_ingredients(raw: str) -> str:
+    """Title-case a raw ingredient string while preserving bracket structure.
+
+    Splits on commas (bracket-aware), title-cases each ingredient, reassembles.
+    """
+    if not raw:
+        return raw
+
+    ingredients: list[str] = []
+    depth = 0
+    current: list[str] = []
+    for ch in raw:
+        if ch in "([":
+            depth += 1
+            current.append(ch)
+        elif ch in ")]":
+            depth = max(0, depth - 1)
+            current.append(ch)
+        elif ch == "," and depth == 0:
+            ingredients.append("".join(current))
+            current = []
+        else:
+            current.append(ch)
+    ingredients.append("".join(current))
+
+    result: list[str] = []
+    for ing in ingredients:
+        stripped = ing.strip()
+        if not stripped:
+            continue
+
+        # Normalize MINERALS [...] / VITAMINS [...] → Minerals (...) / Vitamins (...)
+        bracket_m = re.match(
+            r"^(MINERALS|VITAMINS|Minerals|Vitamins)\s*\[([^\]]*)\](.*)$",
+            stripped,
+            re.IGNORECASE,
+        )
+        if bracket_m:
+            label = bracket_m.group(1).capitalize()
+            contents = bracket_m.group(2)
+            rest = bracket_m.group(3)
+            tc_contents = " ".join(
+                _title_case_word(w) if w.lower() not in _LOWERCASE_WORDS else w.lower()
+                for w in contents.split()
+            )
+            result.append(f"{label} ({tc_contents}){rest}")
+            continue
+
+        # Title-case the ingredient
+        words = stripped.split()
+        tc_words = []
+        for i, w in enumerate(words):
+            if i == 0:
+                tc_words.append(_title_case_word(w))
+            elif w.lower() in _LOWERCASE_WORDS:
+                tc_words.append(w.lower())
+            else:
+                tc_words.append(_title_case_word(w))
+        result.append(" ".join(tc_words))
+
+    return ", ".join(result)
+
+
+# ---------------------------------------------------------------------------
 # Ingredient parsing (bracket-aware comma splitting)
 # ---------------------------------------------------------------------------
 
@@ -147,12 +233,23 @@ class FamiliesLookup:
         # Build case-insensitive member -> (family_name, member_info) lookup
         self._member_lookup: dict[str, tuple[str, dict[str, Any], dict[str, Any]]] = {}
         for family_name, family_data in self.families_raw.items():
-            for member_name, member_info in family_data.get("members", {}).items():
-                self._member_lookup[member_name.lower()] = (
-                    family_name,
-                    family_data,
-                    member_info,
-                )
+            members = family_data.get("members", {})
+            if isinstance(members, list):
+                # Flat list format: ["name1", "name2"]
+                for member_name in members:
+                    self._member_lookup[member_name.lower()] = (
+                        family_name,
+                        family_data,
+                        {},
+                    )
+            else:
+                # Dict format: {"name": {"form": "raw"}}
+                for member_name, member_info in members.items():
+                    self._member_lookup[member_name.lower()] = (
+                        family_name,
+                        family_data,
+                        member_info,
+                    )
 
         # Case-insensitive ambiguous lookup
         self._ambiguous_lookup: dict[str, dict[str, Any]] = {
@@ -329,7 +426,7 @@ def upsert_product(
             channel,
             product.get("life_stage"),
             product.get("health_tags"),
-            product.get("ingredients_raw"),
+            title_case_ingredients(product.get("ingredients_raw", "") or "") or None,
             json.dumps(product.get("guaranteed_analysis")) if product.get("guaranteed_analysis") else None,
             product.get("calorie_content"),
             product.get("images"),

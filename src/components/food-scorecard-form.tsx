@@ -10,8 +10,6 @@ import { Label } from "@/components/ui/label"
 export interface ScorecardData {
   poopQuality: number[] | null
   itchSeverity: number[] | null
-  digestiveImpact: string | null
-  itchinessImpact: string | null
   notes: string | null
 }
 
@@ -36,8 +34,6 @@ export function FoodScorecardForm({
     onSave({
       poopQuality,
       itchSeverity,
-      digestiveImpact: null,
-      itchinessImpact: null,
       notes: notes.trim() || null,
     })
   }

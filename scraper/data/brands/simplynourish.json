@@ -1,0 +1,2233 @@
+{
+  "brand": "Simply Nourish",
+  "website_url": "https://www.petsmart.ca",
+  "scraped_at": "2026-03-10T03:03:02.811605+00:00",
+  "scraper_version": "0.1.0",
+  "stats": {
+    "product_count": 59,
+    "by_channel": {
+      "retail": 59
+    },
+    "by_type": {
+      "food": 52,
+      "supplement": 7
+    }
+  },
+  "products": [
+    {
+      "name": "Adult Wet Dog Food - 10 Oz., Stew",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/simply-nourish-adult-wet-dog-food---10-oz-stew-69207.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "life_stage": "adult",
+      "source_id": "5319727",
+      "images": [
+        "/products/simply-nourish/simply-nourish-food-adult-wet-dog-food-10-oz-stew.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "10 Oz",
+          "upc": "0737257969308",
+          "sku": "5319727"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "10 Oz",
+          "upc": "0737257968592",
+          "sku": "5319728"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Broth, Water Sufficient for Processing, Sweet Potato, Beef, Pasta, Tapioca Starch, Sunflower Oil, Xanthan Gum, Tricalcium Phosphate, Calcium Carbonate, Zinc Amino Acid Chelate, Choline Chloride, Tuna Oil, Vitamin E Supplement, Iron Amino Acid Chelate, Calcium Pantothenate, Manganese Amino Acid Chelate, Thiamine Mononitrate, Vitamin A Supplement, Niacin, Sodium Selenite, Copper Amino Acid Chelate, Pyridoxine Hydrochloride, Riboflavin Supplement, Folic Acid, Potassium Iodide, Vitamin D3 Supplement, Vitamin B12 Supplement",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 1.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 83.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "714 kcal/kg, 203 kcal/can"
+    },
+    {
+      "name": "Adult Wet Dog Food - Beef & Vegetable in Broth",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/simply-nourish-adult-wet-dog-food---beef-and-vegetable-in-broth-10-oz-87303.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "life_stage": "adult",
+      "source_id": "5359750",
+      "images": [
+        "/products/simply-nourish/simply-nourish-food-adult-wet-dog-food-beef-vegetable-in-broth.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "10 oz",
+          "upc": "0196481089587",
+          "sku": "5359750"
+        }
+      ],
+      "ingredients_raw": "Beef, Water, Chicken, Pumpkin, Sweet Potato, Rice, Natural Flavor (Yeast Extract), Potassium Chloride, Choline Chloride, Guar Gum, Magnesium Sulfate, Zinc Amino Acid Complex, Vitamin E Supplement, Calcium Pantothenate, Niacin, Manganese Amino Acid Complex, Vitamin A Supplement, Sodium Selenite, Thiamine Mononitrate, Copper Sulfate, Pyridoxine Hydrochloride, Riboflavin Supplement, Ferrous Sulfate, Vitamin D3 Supplement, Folic Acid, Potassium Iodide, Vitamin B12 Supplement",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 2.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 80.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "974 kcal/kg, 277 kcal/can"
+    },
+    {
+      "name": "Adult Wet Dog Food - Chicken & Vegetable in Broth",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/simply-nourish-adult-wet-dog-food---chicken-and-vegetable-in-broth-10-oz-87304.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "life_stage": "adult",
+      "source_id": "5359751",
+      "images": [
+        "/products/simply-nourish/simply-nourish-food-adult-wet-dog-food-chicken-vegetable-in-broth.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "10 oz",
+          "upc": "0196481089624",
+          "sku": "5359751"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Broth, Carrot, Rice, Spinach, Tricalcium Phosphate, Natural Flavor (Yeast Extract), Potassium Chloride, Guar Gum, Choline Chloride, Magnesium Sulfate, Zinc Amino Acid Complex, Vitamin E Supplement, Calcium Pantothenate, Niacin, Manganese Amino Acid Complex, Sodium Selenite, Vitamin A Supplement, Thiamine Mononitrate, Copper Sulfate, Pyridoxine Hydrochloride, Riboflavin Supplement, Ferrous Sulfate, Vitamin D3 Supplement, Folic Acid, Potassium Iodide, Vitamin B12 Supplement",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 80.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1122 kcal/kg, 319 kcal/can"
+    },
+    {
+      "name": "Adult Wet Dog Food - Duck & Vegetable in Broth",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/simply-nourish-adult-wet-dog-food---duck-and-vegetable-in-broth-10-oz-87305.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "life_stage": "adult",
+      "source_id": "5359752",
+      "images": [
+        "/products/simply-nourish/simply-nourish-food-adult-wet-dog-food-duck-vegetable-in-broth.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "10 oz",
+          "upc": "0196481089617",
+          "sku": "5359752"
+        }
+      ],
+      "ingredients_raw": "Duck, Water, Chicken, Rice, Green Bean, Pumpkin, Potato, Tricalcium Phosphate, Natural Flavor (Yeast Extract), Potassium Chloride, Magnesium Sulfate, Choline Chloride, Guar Gum, Zinc Amino Acid Complex, Vitamin E Supplement, Calcium Pantothenate, Niacin, Manganese Amino Acid Complex, Vitamin A Supplement, Sodium Selenite, Thiamine Mononitrate, Ferrous Sulfate, Copper Sulfate, Pyridoxine Hydrochloride, Riboflavin Supplement, Vitamin D3 Supplement, Folic Acid, Potassium Iodide, Vitamin B12 Supplement",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1114 kcal/kg, 316 kcal/can"
+    },
+    {
+      "name": "Adult Wet Dog Food - Lamb & Vegetable in Broth",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/simply-nourish-adult-wet-dog-food---lamb-and-vegetable-in-broth-10-oz-87306.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "life_stage": "adult",
+      "source_id": "5359753",
+      "images": [
+        "/products/simply-nourish/simply-nourish-food-adult-wet-dog-food-lamb-vegetable-in-broth.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "10 oz",
+          "upc": "0196481089594",
+          "sku": "5359753"
+        }
+      ],
+      "ingredients_raw": "Lamb, Water, Chicken, Green Pea, Carrot, Rice, Natural Flavor (Yeast Extract), Potassium Chloride, Choline Chloride, Guar Gum, Magnesium Sulfate, Zinc Amino Acid Complex, Vitamin E Supplement, Calcium Pantothenate, Niacin, Manganese Amino Acid Complex, Vitamin A Supplement, Sodium Selenite, Thiamine Mononitrate, Copper Sulfate, Pyridoxine Hydrochloride, Riboflavin Supplement, Ferrous Sulfate, Vitamin D3 Supplement, Folic Acid, Potassium Iodide, Vitamin B12 Supplement",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 4.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 80.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1150 kcal/kg, 327 kcal/can"
+    },
+    {
+      "name": "Adult Wet Dog Food - Salmon, Chicken & Rice Stew",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/simply-nourish-adult-wet-dog-food---salmon-chicken-and-rice-stew-10-oz-87302.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "life_stage": "adult",
+      "source_id": "5359749",
+      "images": [
+        "/products/simply-nourish/simply-nourish-food-adult-wet-dog-food-salmon-chicken-rice-stew.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "10 oz",
+          "upc": "0196481089655",
+          "sku": "5359749"
+        }
+      ],
+      "ingredients_raw": "Salmon, Fish Broth, Chicken, Water, Rice, Pumpkin, Carrot, Sweet Potato, Sunflower Seed Oil, Modified Tapioca Starch, Tricalcium Phosphate, Yeast Extract, Potassium Chloride, Calcium Carbonate, Magnesium Sulphate, Xanthan Gum, Choline Chloride, Zinc Amino Acid Chelate, Vitamin E Supplement, Calcium Pantothenate, Ferrous Sulfate, Manganese Amino Acid Chelate, Niacin, Vitamin A Supplement, Thiamine Mononitrate, Copper Sulfate, Sodium Selenite, Riboflavin Supplement, Pyridoxine Hydrochloride, Folic Acid, Potassium Iodide, Vitamin B12 Supplement",
+      "guaranteed_analysis": {
+        "crude_protein_min": 6.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1056 kcal/kg, 300 kcal/can"
+    },
+    {
+      "name": "Gut Health Recipe Adult Dog Food - Chicken & Pumpkin",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/simply-nourish-gut-health-recipe-adult-dog-food---chicken-and-pumpkin-10-oz-80986.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "life_stage": "adult",
+      "source_id": "5348013",
+      "images": [
+        "/products/simply-nourish/simply-nourish-food-gut-health-recipe-adult-dog-food-chicken-pumpkin.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "10 OZ",
+          "upc": "0196481056961",
+          "sku": "5348013"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Broth, Water Sufficient For Processing, Pumpkin, Tapioca Starch, Sunflower Oil, Chicory Root, Salt, Calcium Sulfate, Fish Oil, Fructooligosaccharide, Guar Gum, Vitamin (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-Calcium Pantothenate, Thiamine Mononitrate, Beta-Carotene, Biotin, Vitamin D3 Supplement, Riboflavin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid), Sodium Tripolyphosphate, Minerals (Zinc Oxide, Reduced Iron, Sodium Selenite, Manganese Sulfate, Copper Amino Acid Complex, Potassium Iodide), Turmeric Powder, Choline Chloride, Potassium Chloride, Magnesium Sulfate",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.5,
+        "crude_fat_min": 1.0,
+        "crude_fiber_max": 0.5,
+        "moisture_max": 86.0,
+        "ash_max": 2.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "679 kcal/kg, 192 kcal/can"
+    },
+    {
+      "name": "Hip & Joint Recipe Adult Dog Food - Chicken",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/simply-nourish-hip-and-joint-recipe-adult-dog-food---chicken-10-oz-84641.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "life_stage": "adult",
+      "source_id": "5348195",
+      "images": [
+        "/products/simply-nourish/simply-nourish-food-hip-joint-recipe-adult-dog-food-chicken.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "10 OZ",
+          "upc": "0196481057012",
+          "sku": "5348195"
+        }
+      ],
+      "ingredients_raw": "Chicken (Source of Chondroitin Sulfate), Chicken Broth, Water Sufficient For Processing, Carrots, Green Peas, Shrimp (Source Of Glucosamine), Tapioca Starch, Fish Oil, Calcium Sulfate, Tricalcium Phosphate, Guar Gum, L-Carnitine, Salt, Vitamins (Vitamin A Supplement, Niacin Supplement, D-Calcium Pantothenate, Thiamine Mononitrate, Beta-Carotene, Biotin, Vitamin D3 Supplement, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid), L-Ascorbyl-2-Polyphosphate), Minerals (Zinc Oxide, Reduced Iron, Sodium Selenite, Manganese Sulfate, Amino Acid Complex, Potassium Iodide), Turmeric Powder, Choline Chloride, Potassium Chloride, Magnesium Sulfate",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.5,
+        "crude_fat_min": 1.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 85.0,
+        "ash_max": 2.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "756 kcal/kg, 214 kcal/can"
+    },
+    {
+      "name": "Limited Ingredient Diet Adult Wet Dog Food - Duck & Sweet Potato in Broth",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/simply-nourish-limited-ingredient-diet-adult-wet-dog-food---duck-and-sweet-potato-in-broth-10-oz-87312.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Limited Ingredient Diet",
+      "life_stage": "adult",
+      "source_id": "5360337",
+      "images": [
+        "/products/simply-nourish/simply-nourish-food-limited-ingredient-diet-adult-wet-dog-food-duck-sweet-potato-in-broth.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "10 oz",
+          "upc": "0196481089556",
+          "sku": "5360337"
+        }
+      ],
+      "ingredients_raw": "Duck, Water, Sweet Potato, Potato, Pumpkin, Yeast Extract, Carrageenan, Flaxseed, Blueberries, Cranberries, Tricalcium Phosphate, Guar Gum, Algal Oil, Potassium Chloride, Potassium Carbonate, Xanthan Gum, Zinc Amino Acid Chelate, Choline Chloride, Magnesium Sulphate Heptahydrate, Vitamin E Supplement, Calcium Pantothenate, Manganese Amino Acid Chelate, Niacin, Ferrous Sulfate, Vitamin A Supplement, Thiamine Mononitrate, Copper Sulfate, Sodium Selenite, Pyridoxine Hydrochloride, Riboflavin Supplement, Folic Acid, Vitamin D3, Potassium Iodide, Vitamin B12 Supplement",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1007 kcal/kg, 286 kcal/can"
+    },
+    {
+      "name": "Limited Ingredient Diet Adult Wet Dog Food - Fish & Sweet Potato in Broth",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/simply-nourish-limited-ingredient-diet-adult-wet-dog-food---fish-and-sweet-potato-in-broth-10-oz-87314.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Limited Ingredient Diet",
+      "life_stage": "adult",
+      "source_id": "5360340",
+      "images": [
+        "/products/simply-nourish/simply-nourish-food-limited-ingredient-diet-adult-wet-dog-food-fish-sweet-potato-in-broth.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "10 oz",
+          "upc": "0196481089570",
+          "sku": "5360340"
+        }
+      ],
+      "ingredients_raw": "Whitefish, Fish Broth, Sweet Potato, Carrot, Sunflower Seed Oil, Yeast Extract, Carrageenan, Guar Gum, Chicory Extract, Potassium Chloride, Potassium Carbonate, Xanthan Gum, Zinc Amino Acid Chelate, Choline Chloride, Vitamin E Supplement, Calcium Pantothenate, Manganese Amino Acid Chelate, Niacin, Vitamin A Supplement, Thiamine Mononitrate, Copper Sulfate, Ferrous Sulfate, Pyridoxine Hydrochloride, Riboflavin Supplement, Folic Acid, Vitamin D3, Potassium Iodide, Vitamin B12 Supplement",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.0,
+        "crude_fat_min": 0.8,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 86.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "578 kcal/kg, 164 kcal/can"
+    },
+    {
+      "name": "Limited Ingredient Diet Adult Wet Dog Food - Lamb & Sweet Potato in Broth",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/simply-nourish-limited-ingredient-diet-adult-wet-dog-food---lamb-and-sweet-potato-in-broth-10-oz-87311.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Limited Ingredient Diet",
+      "life_stage": "adult",
+      "source_id": "5360336",
+      "images": [
+        "/products/simply-nourish/simply-nourish-food-limited-ingredient-diet-adult-wet-dog-food-lamb-sweet-potato-in-broth.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "10 oz",
+          "upc": "0196481089563",
+          "sku": "5360336"
+        }
+      ],
+      "ingredients_raw": "Lamb, Water, Sweet Potato, Potato, Lamb Liver, Pumpkin, Green Pea, Yeast Extract, Sunflower Seed Oil, Carrageenan, Flaxseed, Blueberries, Cranberries, Guar Gum, Potassium Chloride, Potassium Carbonate, Xanthan Gum, Choline Chloride, Zinc Amino Acid Chelate, Magnesium Sulphate Heptahydrate, Vitamin E Supplement, Calcium Pantothenate, Manganese Amino Acid Chelate, Niacin, Vitamin A Supplement, Thiamine Mononitrate, Sodium Selenite, Ferrous Sulfate, Pyridoxine Hydrochloride, Riboflavin Supplement, Folic Acid, Vitamin D3, Potassium Iodide, Vitamin B12 Supplement",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1011 kcal/kg, 287 kcal/can"
+    },
+    {
+      "name": "Original Adult Wet Dog Food - 10 Oz., Stew Beef",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/simply-nourish-original-adult-wet-dog-food---10-oz-stew-52677.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Original",
+      "life_stage": "adult",
+      "source_id": "5286659",
+      "images": [
+        "/products/simply-nourish/simply-nourish-food-original-adult-wet-dog-food-10-oz-stew-beef.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "10 Oz",
+          "upc": "0737257825673",
+          "sku": "5286659"
+        }
+      ],
+      "ingredients_raw": "Beef, Beef Broth, Water Sufficient for Processing, Carrots, Peas, Potatoes, Tapioca Starch, Pea Protein, Sunflower Oil, Dried Spinach, Potassium Chloride, Xanthan Gum, Choline Chloride, Salt, Zinc Sulfate, Vitamin E Supplement, Calcium Pantothenate, Niacin, Thiamine Mononitrate, Manganese Sulfate, Vitamin A Supplement, Riboflavin Supplement, Copper Sulfate, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid, Ferrous Sulfate, Potassium Iodide, Sodium Selenite, Vitamin B12 Supplement",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 1.2,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 83.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "678 kcal/kg, 192 kcal/can"
+    },
+    {
+      "name": "Original Adult Wet Dog Food - 10 Oz., Stew Chicken",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/simply-nourish-original-adult-wet-dog-food---10-oz-stew-52741.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Original",
+      "life_stage": "adult",
+      "source_id": "5286374",
+      "images": [
+        "/products/simply-nourish/simply-nourish-food-original-adult-wet-dog-food-10-oz-stew-chicken.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "10 Oz",
+          "upc": "0737257825857",
+          "sku": "5286374"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "10 Oz",
+          "upc": "0737257825840",
+          "sku": "5286465"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Broth, Water Sufficient For Processing, Carrots, Tapioca Starch, Rice, Sunflower Oil, Calcium Lactate, Xanthan Gum, Tricalcium Phosphate, Calcium Carbonate, Zinc Sulfate, Choline Chloride, Vitamin E Supplement, Ferrous Sulfate, Calcium Pantothenate, Niacin, Thiamine Mononitrate, Vitamin A Supplement, Copper Sulfate, Manganese Sulfate, Riboflavin Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Folic Acid, Potassium Iodide, Sodium Selenite, Vitamin B12 Supplement",
+      "guaranteed_analysis": {
+        "crude_protein_min": 10.0,
+        "crude_fat_min": 1.4,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 83.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "787 kcal/kg, 2243 kcal/can"
+    },
+    {
+      "name": "Original Puppy Wet Dog Food - 10 Oz., Stew",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/simply-nourish-original-puppy-wet-dog-food---10-oz-stew-55593.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Original",
+      "life_stage": "puppy",
+      "source_id": "5286471",
+      "images": [
+        "/products/simply-nourish/simply-nourish-food-original-puppy-wet-dog-food-10-oz-stew.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "10 Oz",
+          "upc": "0737257825826",
+          "sku": "5286471"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Broth, Water Sufficient for Processing, Carrots, Rice, Tapioca Starch, Fish Oil (Source of DHA), Spinach, Sunflower Oil, Tricalcium Phosphate, Calcium Carbonate, Salt, Potassium Chloride, Xanthan Gum, Choline Chloride, Zinc Sulfate, Vitamin E Supplement, Ferrous Sulfate, Calcium Pantothenate, Niacin, Thiamine Mononitrate, Copper Sulfate, Vitamin A Supplement, Manganese Sulfate, Riboflavin Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Folic Acid, Potassium Iodide, Sodium Selenite, Vitamin B12 Supplement",
+      "guaranteed_analysis": {
+        "crude_protein_min": 10.0,
+        "crude_fat_min": 1.6,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 83.0,
+        "dha_min": 0.05
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "851 kcal/kg, 241 kcal/can"
+    },
+    {
+      "name": "Puppy Wet Dog Food - Chicken & Vegetable in Broth",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/simply-nourish-puppy-wet-dog-food---chicken-and-vegetable-in-broth-10-oz-87307.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "life_stage": "puppy",
+      "source_id": "5359754",
+      "images": [
+        "/products/simply-nourish/simply-nourish-food-puppy-wet-dog-food-chicken-vegetable-in-broth.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "10 oz",
+          "upc": "0196481089631",
+          "sku": "5359754"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Broth, Carrots, Rice, Tricalcium Phosphate, Spinach, Natural Flavor (Yeast Extract), Potassium Chloride, Salt, Magnesium Sulfate, Algal Oil (Source of Omega 3 Fatty Acid), Guar Gum, Choline Chloride, Zinc Amino Acid Complex, Vitamin E Supplement, Calcium Pantothenate, Manganese Amino Acid Complex, Niacin, Ferrous Sulfate, Vitamin A Supplement, Sodium Selenite, Thiamine Mononitrate, Copper Sulfate, Pyridoxine Hydrochloride, Riboflavin Supplement, Vitamin D3 Supplement, Folic Acid, Potassium Iodide, Vitamin B12 Supplement",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 80.0,
+        "dha_min": 0.01
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1115 kcal/kg, 317 kcal/can"
+    },
+    {
+      "name": "Senior Wet Dog Food - Chicken & Vegetable in Broth",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/simply-nourish-senior-wet-dog-food---chicken-and-vegetable-in-broth-10-oz-87310.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "life_stage": "senior",
+      "source_id": "5360335",
+      "images": [
+        "/products/simply-nourish/simply-nourish-food-senior-wet-dog-food-chicken-vegetable-in-broth.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "10 oz",
+          "upc": "0196481089600",
+          "sku": "5360335"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Broth, Carrots, Rice, Spinach, Tricalcium Phosphate, Natural Flavor (Yeast Extract), Potassium Chloride, Greenshell Mussel Powder (Source of Glucosamine and Chondroitin Sulfate), Guar Gum, Choline Chloride, Magnesium Sulfate, Zinc Amino Acid Complex, Algal Oil (Source of Omega 3 Fatty Acid), Vitamin E Supplement, Calcium Pantothenate, Niacin, Manganese Amino Acid Complex, Sodium Selenite, Vitamin A Supplement, Thiamine Mononitrate, Copper Sulfate, Pyridoxine Hydrochloride, Riboflavin Supplement, Ferrous Sulfate, Vitamin D3 Supplement, Folic Acid, Potassium Iodide, Vitamin B12 Supplement",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 80.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1127 kcal/kg, 320 kcal/can"
+    },
+    {
+      "name": "Skin & Coat Recipe Adult Dog Food - Chicken",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/simply-nourish-skin-and-coat-recipe-adult-dog-food---chicken-10-oz-84640.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "life_stage": "adult",
+      "source_id": "5348014",
+      "images": [
+        "/products/simply-nourish/simply-nourish-food-skin-coat-recipe-adult-dog-food-chicken.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "10 OZ",
+          "upc": "0196481056985",
+          "sku": "5348014"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Broth, Water Sufficient For Processing, Sweet Potato, Tapioca Starch, Sunflower Oil, Salt, Fish Oil, Calcium Sulfate, Tricalcium Phosphate, Guar Gum, Vitamin (Vitamin A Supplement, Niacin Supplement, D-Calcium Pantothenate, Thiamine Mononitrate, Beta-Carotene, Biotin, Vitamin D3 Supplement, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid), Minerals (Zinc Oxide, Reduced Iron, Sodium Selenite, Manganese Sulfate, Copper Amin Acid Complex, Potassium Iodide), Turmeric Powder, Vitamin E Supplement, Choline Chloride, Potassium Chloride, Magnesium Sulfate",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.5,
+        "crude_fat_min": 1.0,
+        "crude_fiber_max": 0.5,
+        "moisture_max": 86.0,
+        "ash_max": 2.0,
+        "omega_6_min": 0.25,
+        "omega_3_min": 0.03
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "694 kcal/kg, 196 kcal/can"
+    },
+    {
+      "name": "Source Adult Wet Dog Food - 10 Oz., Stew",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/simply-nourish-source-adult-wet-dog-food---10-oz-stew-52739.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Source",
+      "life_stage": "adult",
+      "source_id": "5287441",
+      "images": [
+        "/products/simply-nourish/simply-nourish-food-source-adult-wet-dog-food-10-oz-stew.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "10 Oz",
+          "upc": "0737257830226",
+          "sku": "5287441"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "10 Oz",
+          "upc": "0737257827851",
+          "sku": "5287442"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Broth, Water Sufficient for Processing, Sunflower Oil, Turkey, Carrots, Peas, Tapioca Starch, Tricalcium Phosphate, Potassium Chloride, Choline Chloride, Guar Gum, Minerals (Zinc Oxide, Reduced Iron, Sodium Selenite, Manganese Sulfate, Copper Amino Acid Complex, Potassium Iodide), Vitamins (Vitamin E Supplement, Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Calcium Pantothenate, Thiamine Mononitrate, Biotin Supplement, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Beta-Carotene, Folic Acid), Magnesium Sulfate",
+      "guaranteed_analysis": {
+        "crude_protein_min": 10.0,
+        "crude_fat_min": 2.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 83.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "952 kcal/kg, 270 kcal/can"
+    },
+    {
+      "name": "Adult Dog Food - Fish & Brown Rice",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/simply-nourish-adult-dog-food---fish-and-brown-rice-82443.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "source_id": "5348522",
+      "images": [
+        "/products/simply-nourish/simply-nourish-food-adult-dog-food-fish-brown-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0196481057654",
+          "sku": "5348522"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0196481057661",
+          "sku": "5348523"
+        }
+      ],
+      "ingredients_raw": "Deboned Whitefish, Menhaden Fish Meal, Salmon Meal, Brown Rice, Oatmeal, Chicken Fat (Preserved with Mixed Tocopherols), Barley, Pea Fiber, Natural Flavor, Whole Flaxseed, Dicalcium Phosphate, Potassium Chloride, Choline Chloride, Dried Chicory Root, Dried Carrots, Dried Kale, Dried Pumpkin, Dried Blueberries, Sunflower Oil (Preserved with Mixed Tocopherols), Minerals (Zinc Sulfate, Zinc Proteinate, Iron Proteinate, Ferrous Sulfate, Copper Sulfate, Copper Proteinate, Manganese Sulfate, Sodium Selenite, Manganese Proteinate), Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Calcium Iodate, Folic Acid, Vitamin D3 Supplement), Citric Acid (A Preservative), Mixed Tocopherols (A Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 13.0,
+        "crude_fiber_max": 5.5,
+        "moisture_max": 10.0,
+        "calcium_min": 1.5,
+        "phosphorus_min": 1.0,
+        "omega_6_min": 2.0,
+        "omega_3_min": 0.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3420 kcal/kg, 355 kcal/cup"
+    },
+    {
+      "name": "Dry Puppy Food - Salmon & Brown Rice",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/simply-nourish-dry-puppy-food---salmon-and-brown-rice-82445.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "life_stage": "puppy",
+      "source_id": "5348524",
+      "images": [
+        "/products/simply-nourish/simply-nourish-food-dry-puppy-food-salmon-brown-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0196481057685",
+          "sku": "5348524"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0196481057708",
+          "sku": "5348545"
+        }
+      ],
+      "ingredients_raw": "Deboned Salmon (Source Of DHA), Brown Rice, Menhaden Fish Meal, Pea Protein, Oat Groats, Pork Fat (Preserved With Mixed Tocopherols), Salmon Meal, Natural Flavor, Whole Flaxseed, Pea Fiber, Sunflower Oil (Preserved With Mixed Tocopherols), Potassium Chloride, Salt, Dicalcium Phosphate, Dried Chicory Root, Dried Carrot, Dried Kale, Dried Pumpkin, Dried Blueberries, Minerals (Zinc Sulfate, Zinc Proteinate, Iron Proteinate, Ferrous Sulfate, Copper Proteinate, Manganese Sulfate, Sodium Selenite, Manganese Proteinate, Copper Sulfate), Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Calcium Iodate, Folic Acid, Vitamin D3 Supplement), Choline Chloride, Citric Acid (A Preservative), Mixed Tocopherols (A Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 29.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.05,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "omega_6_min": 3.0,
+        "omega_3_min": 0.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3665 kcal/kg, 417 kcal/cup"
+    },
+    {
+      "name": "Large Breed Adult Dog Food - Salmon & Sweet Potato Recipe",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/simply-nourish-large-breed-adult-dog-food---salmon-and-sweet-potato-recipe-82390.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "breed_size": "Large",
+      "source_id": "5349021",
+      "images": [
+        "/products/simply-nourish/simply-nourish-food-large-breed-adult-dog-food-salmon-sweet-potato-recipe.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0196481058811",
+          "sku": "5349021"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0196481059009",
+          "sku": "5349022"
+        }
+      ],
+      "ingredients_raw": "Deboned Salmon, Salmon Meal, Dried Sweet Potatoes, Dried Peas, Dried Lentils, Pea Starch, Canola Oil (Preserved With Mixed Tocopherols), Whole Flaxseed, Natural Flavor, Pea Fiber, Pea Protein, Calcium Phosphate, Dried Chicory Root, Dried Carrots, Dried Kale, Dried Pumpkin, Dried Blueberries, Choline Chloride, Minerals (Potassium Chloride, Zinc Sulfate, Zinc Proteinate, Iron Proteinate, Ferrous Sulfate, Copper Proteinate, Manganese Sulfate, Sodium Selenite, Manganese Proteinate, Copper Sulfate), Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Calcium Iodate, Folic Acid), DL-Methionine, Taurine, Mixed Tocopherols (A Preservative), Citric Acid (A Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 27.0,
+        "crude_fat_min": 12.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.2,
+        "omega_6_min": 1.5,
+        "omega_3_min": 2.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3323 kcal/kg, 328 kcal/cup"
+    },
+    {
+      "name": "Limited Ingredient Diet Adult Dry Dog Food - Lamb & Pea",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/simply-nourish-limited-ingredient-diet-adult-dry-dog-food---lamb-and-pea-52849.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Limited Ingredient Diet",
+      "life_stage": "adult",
+      "source_id": "5286956",
+      "images": [
+        "/products/simply-nourish/simply-nourish-food-limited-ingredient-diet-adult-dry-dog-food-lamb-pea.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257826922",
+          "sku": "5286956"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257827189",
+          "sku": "5286964"
+        }
+      ],
+      "ingredients_raw": "Deboned Lamb, Lamb Meal, Dried Peas, Dried Lentils, Pea Starch, Ground Flaxseed, Canola Oil (Preserved with Mixed Tocopherols), Pea Fiber, Natural Flavor, DL-Methionine, Dried Carrots, Minerals (Zinc Sulfate, Zinc Proteinate, Iron Proteinate, Ferrous Sulfate, Copper Proteinate, Manganese Sulfate, Sodium Selenite, Manganese Proteinate, Copper Sulfate), Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid, Biotin, Vitamin B12 Supplement), Taurine, Potassium Chloride, Mixed Tocopherols (A Preservative), Citric Acid (A Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 6.5,
+        "moisture_max": 10.0,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "omega_6_min": 1.0,
+        "omega_3_min": 0.8
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3390 kcal/kg, 353 kcal/cup"
+    },
+    {
+      "name": "Limited Ingredient Diet Adult Dry Dog Food - Salmon & Sweet Potato",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/simply-nourish-limited-ingredient-diet-adult-dry-dog-food---salmon-and-sweet-potato-52851.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Limited Ingredient Diet",
+      "life_stage": "adult",
+      "source_id": "5348546",
+      "images": [
+        "/products/simply-nourish/simply-nourish-food-limited-ingredient-diet-adult-dry-dog-food-salmon-sweet-potato.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0196481057715",
+          "sku": "5348546"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0196481057692",
+          "sku": "5348547"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0196481057678",
+          "sku": "5348548"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0196481089020",
+          "sku": "5360316"
+        }
+      ],
+      "ingredients_raw": "Deboned Salmon, Salmon Meal, Sweet Potatoes, Lentils, Peas, Pea Starch, Canola Oil (Preserved with Mixed Tocopherols), Whole Flaxseed, Pea Fiber, Natural Flavour, Pea Protein, Monocalcium Phosphate, Dried Chicory Root, Dried Carrots, Dried Kale, Dried Pumpkin, Dried Blueberries, Choline Chloride, Minerals (Zinc Sulfate, Zinc Proteinate, Iron Proteinate, Ferrous Sulfate, Copper Proteinate, Manganese Sulfate, Sodium Selenite, Manganese Proteinate, Copper Sulfate), Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Calcium Iodate, Folic Acid), DL-Methionine, Taurine, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 7.5,
+        "moisture_max": 10.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8,
+        "omega_6_min": 2.3,
+        "omega_3_min": 2.4
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3600 kcal/kg, 430 kcal/cup"
+    },
+    {
+      "name": "Limited Ingredient Diet Senior Dry Dog Food - Salmon & Sweet Potato",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/simply-nourish-limited-ingredient-diet-senior-dry-dog-food---salmon-and-sweet-potato-52856.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Limited Ingredient Diet",
+      "life_stage": "senior",
+      "source_id": "5286978",
+      "images": [
+        "/products/simply-nourish/simply-nourish-food-limited-ingredient-diet-senior-dry-dog-food-salmon-sweet-potato.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257827509",
+          "sku": "5286978"
+        }
+      ],
+      "ingredients_raw": "Deboned Salmon, Dried Sweet Potatoes, Salmon Meal, Dried Peas, Dried Lentils, Ground Flaxseed, Pea Fiber, Natural Flavor, Canola Oil (Preserved With Mixed Tocopherols), Dicalcium Phosphate, DL-Methionine, Dried Carrots, Minerals (Zinc Sulfate, Zinc Proteinate, Iron Proteinate, Ferrous Sulfate, Copper Proteinate, Manganese Sulfate, Sodium Selenite, Manganese Proteinate, Copper Sulfate), Choline Chloride, Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Calcium Iodate, Folic Acid), Taurine, Mixed Tocopherols (A Preservative), Citric Acid (A Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 9.0,
+        "crude_fiber_max": 7.5,
+        "moisture_max": 10.0,
+        "calcium_min": 1.2,
+        "phosphorus_min": 0.9,
+        "omega_6_min": 1.0,
+        "omega_3_min": 0.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3170 kcal/kg, 324 kcal/cup"
+    },
+    {
+      "name": "Limited Ingredient Puppy Food - Salmon & Sweet Potato",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/simply-nourish-limited-ingredient-puppy-food---salmon-and-sweet-potato-82393.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Limited Ingredient Diet",
+      "life_stage": "puppy",
+      "source_id": "5349023",
+      "images": [
+        "/products/simply-nourish/simply-nourish-food-limited-ingredient-puppy-food-salmon-sweet-potato.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0196481058996",
+          "sku": "5349023"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0196481058774",
+          "sku": "5349024"
+        }
+      ],
+      "ingredients_raw": "Deboned Salmon (Source Of DHA), Salmon Meal, Dried Sweet Potatoes, Dried Peas, Dried Lentils, Pea Protein, Canola Oil (Preserved With Mixed Tocopherols), Whole Flaxseed, Natural Flavor, Pea Fiber, Salmon Oil, Pea Starch, Calcium Phosphate, Dried Chicory Root, Dried Carrots, Dried Kale, Dried Pumpkin, Dried Blueberries, Salt, Choline Chloride Minerals (Potassium Chloride, Zinc Sulfate, Zinc Proteinate, Iron Proteinate, Ferrous Sulfate, Copper Proteinate, Manganese Sulfate, Sodium Selenite, Manganese Proteinate, Copper Sulfate), Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement Pyridoxine Hydrochloride, Calcium Iodate, Folic Acid), DL-Methionine, Taurine, Mixed Tocopherols (A Preservative), Citric Acid (A Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 29.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 7.0,
+        "moisture_max": 8.0,
+        "dha_min": 0.05,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "omega_6_min": 2.0,
+        "omega_3_min": 1.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3581 kcal/kg, 373 kcal/cup"
+    },
+    {
+      "name": "Limited Ingredient Small Breed Adult Dog Food - Salmon and Sweet Potato",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/simply-nourish-limited-ingredient-small-breed-adult-dog-food---salmon-and-sweet-potato-82394.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Limited Ingredient Diet",
+      "life_stage": "adult",
+      "breed_size": "Small",
+      "source_id": "5349255",
+      "images": [
+        "/products/simply-nourish/simply-nourish-food-limited-ingredient-small-breed-adult-dog-food-salmon-and-sweet-potato.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0196481058804",
+          "sku": "5349255"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0196481058798",
+          "sku": "5349256"
+        }
+      ],
+      "ingredients_raw": "Deboned Salmon, Salmon Meal, Dried Peas, Dried Sweet Potatoes, Dried Lentils, Pea Starch, Canola Oil (Preserved With Mixed Tocopherols), Pea Protein, Whole Flaxseed, Pea Fiber, Natural Flavor, Dried Chicory Root, Dried Carrots, Dried Kale, Dried Pumpkin, Dried Blueberries, Choline Chloride, Minerals (Potassium Chloride, Zinc Sulfate, Zinc Proteinate, Iron Proteinate, Ferrous Sulfate, Copper Proteinate, Manganese Sulfate, Sodium Selenite, Manganese Proteinate, Copper Sulfate), Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Calcium Iodate, Folic Acid), Dl-Methionine, Taurine, Mixed Tocopherols (A Preservative), Citric Acid 9a Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 8.0,
+        "moisture_max": 8.0,
+        "calcium_min": 1.2,
+        "phosphorus_min": 0.9,
+        "omega_6_min": 1.5,
+        "omega_3_min": 2.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3445 kcal/kg, 373 kcal/cup"
+    },
+    {
+      "name": "Original Adult Dry Dog Food - Chicken, Pea & Potato",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/simply-nourish-original--adult-dry-dog-food---chicken-pea-and-potato-52843.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Original",
+      "life_stage": "adult",
+      "source_id": "5286936",
+      "images": [
+        "/products/simply-nourish/simply-nourish-food-original-adult-dry-dog-food-chicken-pea-potato.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257827455",
+          "sku": "5286936"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257827257",
+          "sku": "5286937"
+        }
+      ],
+      "ingredients_raw": "Deboned Chicken, Chicken Meal, Dried Peas, Dried Potatoes, Chicken Fat (Preserved with Mixed Tocopherols), Ground Flaxseed, Natural Flavor, Pea Fiber, Dicalcium Phosphate, Dried Chicory Root, Dried Carrots, Dried Kale, Dried Pumpkin, Dried Blueberries, Calcium Carbonate, Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid, Biotin, Vitamin B12 Supplement), DL-Methionine, Choline Chloride, Taurine, Potassium Chloride, Minerals (Zinc Sulfate, Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Sulfate, Copper Sulfate, Copper Proteinate, Manganese Proteinate, Calcium Iodate, Sodium Selenite), Mixed Tocopherols & Citric Acid (Preservatives), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 27.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 6.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.2,
+        "phosphorus_min": 0.8,
+        "omega_6_min": 2.0,
+        "omega_3_min": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3643 kcal/kg, 380 kcal/cup"
+    },
+    {
+      "name": "Original Adult Dry Dog Food - Chicken & Brown Rice",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/simply-nourish-original-adult-dry-dog-food---chicken-and-brown-rice-52763.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Original",
+      "life_stage": "adult",
+      "source_id": "5287292",
+      "images": [
+        "/products/simply-nourish/simply-nourish-food-original-adult-dry-dog-food-chicken-brown-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257829909",
+          "sku": "5287292"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257830165",
+          "sku": "5287293"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257830011",
+          "sku": "5287415"
+        }
+      ],
+      "ingredients_raw": "Deboned Chicken, Chicken Meal, Brown Rice, Oatmeal, Barley, Chicken Fat (Preserved with Mixed Tocopherols), Natural Flavor, Whole Flaxseed, Pea Fiber, Potassium Chloride, Dried Chicory Root, Dried Carrots, Dried Kale,Dried Pumpkin, Dried Blueberries, Minerals (Zinc Sulfate, Zinc Proteinate, Iron Proteinate, Ferrous Sulfate, Copper Sulfate, Copper Proteinate, Manganese Sulfate, Sodium Selenite, Manganese Proteinate), Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Calcium Iodate, Folic Acid, Vitamin D3 Supplement), Choline Chloride, DL-Methionine, Citric Acid (A Preservative), Mixed Tocopherols (A Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 13.0,
+        "crude_fiber_max": 5.5,
+        "moisture_max": 10.0,
+        "calcium_min": 1.2,
+        "phosphorus_min": 0.8,
+        "omega_6_min": 2.0,
+        "omega_3_min": 0.3
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3475 kcal/kg, 365 kcal/cup"
+    },
+    {
+      "name": "Original Adult Dry Dog Food - Lamb & Oatmeal",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/simply-nourish-original-adult-dry-dog-food---lamb-and-oatmeal-52836.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Original",
+      "life_stage": "adult",
+      "source_id": "5287506",
+      "images": [
+        "/products/simply-nourish/simply-nourish-food-original-adult-dry-dog-food-lamb-oatmeal.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257829930",
+          "sku": "5287506"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257830097",
+          "sku": "5287507"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257830080",
+          "sku": "5287508"
+        }
+      ],
+      "ingredients_raw": "Deboned Lamb, Oatmeal, Brown Rice, Turkey Meal, Lamb Meal, Barley, Canola Oil (Preserved With Mixed Tocopherols), Natural Flavor, Pea Fiber, Whole Flaxseed, Sunflower Oil (Preserved With Mixed Tocopherols), Potassium Chloride, Dried Chicory Root, Dried Carrots, Dried Kale, Dried Pumpkin, Dried Blueberries, Choline Chloride, Minerals (Zinc Sulfate, Zinc Proteinate, Iron Proteinate, Ferrous Sulfate, Copper Proteinate, Manganese Sulfate, Sodium Selenite, Manganese Proteinate, Copper Sulfate), Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Calcium Iodate, Folic Acid, Vitamin D3 Supplement(), Dl-Methionine, Taurine, Citric Acid (A Preservative), Mixed Tocopherols (A Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 13.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.6,
+        "phosphorus_min": 1.0,
+        "omega_6_min": 1.8
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3663 kcal/kg, 380 kcal/cup"
+    },
+    {
+      "name": "Original Large Breed Adult Dry Dog Food - Chicken & Brown Rice",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/simply-nourish-original-large-breed-adult-dry-dog-food---chicken-and-brown-rice-52837.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Original",
+      "life_stage": "adult",
+      "breed_size": "Large",
+      "source_id": "5287515",
+      "images": [
+        "/products/simply-nourish/simply-nourish-food-original-large-breed-adult-dry-dog-food-chicken-brown-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257829916",
+          "sku": "5287515"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257968691",
+          "sku": "5319721"
+        }
+      ],
+      "ingredients_raw": "Deboned Chicken, Chicken Meal (Source Of Glucosamine And Chondroitin Sulfate), Brown Rice, Oatmeal, Barley, Chicken Fat (Preserved With Mixed Tocopherols), Natural Flavor, Whole Flaxseed, Pea Fiber, Dried Chicory Root, Dried Carrots, Dried Kale, Dried Pumpkin, Dried Blueberries, Potassium Chloride, Minerals (Zinc Sulfate, Zinc Proteinate, Iron Proteinate, Ferrous Sulfate, Copper Sulfate, Copper Proteinate, Manganese Sulfate, Sodium Selenite, Manganese Proteinate), Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Calcium Iodate, Folic Acid, Vitamin D3 Supplement), Choline Chloride, Dried Chicken Cartilage (Source Of Glucosamine And Chondroitin Sulfate), Citric Acid (A Preservative), Mixed Tocopherols (A Preservative), DL-Methionine, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 11.0,
+        "crude_fiber_max": 6.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.1,
+        "phosphorus_min": 0.9,
+        "omega_6_min": 2.0,
+        "omega_3_min": 0.1
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3360 kcal/kg, 350 kcal/cup"
+    },
+    {
+      "name": "Original Large Breed Adult Dry Dog Food - Chicken, Pea & Potato",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/simply-nourish-original-large-breed-adult-dry-dog-food---chicken-pea-and-potato-52844.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Original",
+      "life_stage": "adult",
+      "breed_size": "Large",
+      "source_id": "5286939",
+      "images": [
+        "/products/simply-nourish/simply-nourish-food-original-large-breed-adult-dry-dog-food-chicken-pea-potato.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257826762",
+          "sku": "5286939"
+        }
+      ],
+      "ingredients_raw": "Deboned Chicken, Chicken Meal, Dried Peas, Dried Potatoes, Ground Flaxseed, Pea Fiber, Chicken Fat (Preserved with Mixed Tocopherols), Natural Flavor, Dicalcium Phosphate, Dried Chicory Root, Dried Carrots, Dried Kale, Dried Pumpkin, Dried Blueberries, Dried Chicken Cartilage (Source of Glucosamine & Chondroitin Sulfate), Minerals (Zinc Sulfate, Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Sulfate, Copper Sulfate, Copper Proteinate, Calcium Iodate, Manganese Proteinate, Sodium Selenite), Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid, Biotin, Vitamin B12 Supplement), DL-Methionine, Choline Chloride, Potassium Chloride, Taurine, Mixed Tocopherols & Citric Acid (Preservatives), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 8.5,
+        "moisture_max": 10.0,
+        "calcium_min": 1.1,
+        "phosphorus_min": 1.0,
+        "omega_6_min": 2.0,
+        "omega_3_min": 1.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3461 kcal/kg, 348 kcal/cup"
+    },
+    {
+      "name": "Original Large Breed Puppy Dry Dog Food - Chicken & Brown Rice",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/simply-nourish-original-large-breed-puppy-dry-dog-food---chicken-and-brown-rice-52858.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Original",
+      "life_stage": "puppy",
+      "breed_size": "Large",
+      "source_id": "5287561",
+      "images": [
+        "/products/simply-nourish/simply-nourish-food-original-large-breed-puppy-dry-dog-food-chicken-brown-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257829947",
+          "sku": "5287561"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257829954",
+          "sku": "5287562"
+        }
+      ],
+      "ingredients_raw": "Deboned Chicken , Chicken Meal (Source Of Glucosamine And Chondroitin Sulfate), Brown Rice, Oatmeal, Poultry Fat (Preserved With Mixed Tocopherols), Natural Flavor, Pea Fiber, Whole Flaxseed, Fish Oil (Preserved With Mixed Tocopherols) (Source of DHA), Salt, Potassium Chloride, Sodium Tripolyphosphate, Dried Chicory Root, Dried Carrots, Dried Kale, Dried Pumpkin, Dried Blueberries, L-Threonine, Minerals (Zinc Sulfate, Zinc Proteinate, Iron Proteinate, Ferrous Sulfate, Copper Sulfate, Copper Proteinate, Manganese Sulfate, Sodium Selenite, Manganese Proteinate), Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Calcium Iodate, Folic Acid, Vitamin D3 Supplement), Dried Chicken Cartilage (Source Of Glucosamine And Chondroitin Sulfate), Choline Chloride, Citric Acid (A Preservative), Mixed Tocopherols (A Preservative), DL-Methionine, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 13.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.02,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "omega_6_min": 2.5,
+        "omega_3_min": 0.3
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3450 kcal/kg, 360 kcal/cup"
+    },
+    {
+      "name": "Original Large Breed Senior Dry Dog Food - Chicken & Brown Rice",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/simply-nourish-original-large-breed-senior-dry-dog-food---chicken-and-brown-rice-52847.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Original",
+      "life_stage": "senior",
+      "breed_size": "Large",
+      "source_id": "5287557",
+      "images": [
+        "/products/simply-nourish/simply-nourish-food-original-large-breed-senior-dry-dog-food-chicken-brown-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257829992",
+          "sku": "5287557"
+        }
+      ],
+      "ingredients_raw": "Deboned Chicken, Brown Rice, Oatmeal, Chicken Meal (Source of Glucosamine and Chondroitin Sulfate), Barley, Natural Flavor, Pea Fiber, Chicken Fat (Preserved with Mixed Tocopherols), Whole Flaxseed, Rice Bran, Rye Flour, Potassium Chloride, Dried Chicory Root, Dried Carrots, Dried Kale, Dried Pumpkin, Dried Blueberries, Minerals (Zinc Sulfate, Zinc Proteinate, Iron Proteinate, Ferrous Sulfate, Copper Sulfate, Copper Proteinate, Manganese Sulfate, Sodium Selenite, Manganese Proteinate), Choline Chloride, Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Calcium Iodate, Folic Acid, Vitamin D3 Supplement), Dried Chicken Cartilage (Source of Glucosamine and Chondroitin Sulfate), Citric Acid (A Preservative), Mixed Tocopherols (A Preservative), DL-Methionine, L-Carnitine, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 8.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8,
+        "omega_6_min": 1.4,
+        "omega_3_min": 0.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3330 kcal/kg, 350 kcal/cup"
+    },
+    {
+      "name": "Original Puppy Dry Dog Food - Chicken & Brown Rice",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/simply-nourish-original-puppy-dry-dog-food---chicken-and-brown-rice-52857.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Original",
+      "life_stage": "puppy",
+      "source_id": "5287558",
+      "images": [
+        "/products/simply-nourish/simply-nourish-food-original-puppy-dry-dog-food-chicken-brown-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257830004",
+          "sku": "5287558"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257830042",
+          "sku": "5287559"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257830035",
+          "sku": "5287560"
+        }
+      ],
+      "ingredients_raw": "Deboned Chicken, Chicken Meal, Brown Rice, Oatmeal, Poultry Fat (Preserved With Mixed Tocopherols), Pea Protein, Natural Flavor, Fish Oil (Preserved With Mixed Tocopherols) (Source Of DHA), Whole Flaxseed, Pea Fiber, Salt, Potassium Chloride, Dried Chicory Root, Dried Carrots, Dried Kale, Dried Pumpkin, Dried Blueberries, Minerals (Zinc Sulfate, Zinc Proteinate, Iron Proteinate, Ferrous Sulfate, Copper Sulfate, Copper Proteinate, Manganese Sulfate, Sodium Selenite, Manganese Proteinate), Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Calcium Iodate, Folic Acid, Vitamin D3 Supplement), Citric Acid (A Preservative), Mixed Tocopherols (A Preservative), Choline Chloride, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 29.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.05,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "omega_6_min": 3.2,
+        "omega_3_min": 0.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3595 kcal/kg, 375 kcal/cup"
+    },
+    {
+      "name": "Original Puppy Dry Dog Food - Lamb & Oatmeal",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/simply-nourish-original-puppy-dry-dog-food---lamb-and-oatmeal-87309.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Original",
+      "life_stage": "puppy",
+      "source_id": "5360317",
+      "images": [
+        "/products/simply-nourish/simply-nourish-food-original-puppy-dry-dog-food-lamb-oatmeal.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0196481089037",
+          "sku": "5360317"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0196481089013",
+          "sku": "5360319"
+        }
+      ],
+      "ingredients_raw": "Lamb, Oatmeal, Brown Rice, Turkey Meal, Lamb Meal, Barley, Canola Oil (Preserved with Mixed Tocopherols), Natural Flavor, Whole Flaxseed, Pea Fiber, Salmon Oil, Chicory Root, Dried Carrots, Dried Kale, Dried Pumpkin, Dried Blueberries, Potassium Chloride, Salt, Minerals (Zinc Sulfate, Zinc Proteinate, Iron Proteinate, Ferrous Sulfate, Copper Proteinate, Manganese Sulfate, Sodium Selenite, Manganese Proteinate), Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Calcium Iodate, Folic Acid, Vitamin D3 Supplement), Choline Chloride, DL-Methionine, Taurine, Mixed Tocopherols (A Preservative), Citric Acid (A Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.4,
+        "phosphorus_min": 0.92,
+        "omega_6_min": 2.9,
+        "omega_3_min": 1.1
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3595 kcal/kg, 405 kcal/cup"
+    },
+    {
+      "name": "Original Senior Dry Dog Food - Chicken & Brown Rice",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/simply-nourish-original-senior-dry-dog-food---chicken-and-brown-rice-52874.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Original",
+      "life_stage": "senior",
+      "source_id": "5287564",
+      "images": [
+        "/products/simply-nourish/simply-nourish-food-original-senior-dry-dog-food-chicken-brown-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257829961",
+          "sku": "5287564"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257830103",
+          "sku": "5287595"
+        }
+      ],
+      "ingredients_raw": "Deboned Chicken, Brown Rice, Oatmeal, Chicken Meal (Source of Glucosamine and Chondroitin Sulfate), Barley, Natural Flavor, Chicken Fat (Preserved with Mixed Tocopherols), Pea Fiber, Whole Flaxseed,Rice Bran, Rye Flour, Sunflower Oil (Preserved with Mixed Tocopherols), Potassium Chloride, Dried Chicory Root, Dried Carrots, Dried Kale, Dried Pumpkin, Dried Blueberries, Minerals (Zinc Sulfate, Zinc Proteinate, Iron Proteinate, Ferrous Sulfate, Copper Sulfate, Copper Proteinate, Manganese Sulfate, Sodium Selenite, Manganese Proteinate), Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Calcium Iodate, Folic Acid, Vitamin D3 Supplement), Choline Chloride, DL-Methionine, Citric Acid (A Preservative), Mixed Tocopherols (A Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 8.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8,
+        "omega_6_min": 2.0,
+        "omega_3_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3330 kcal/kg, 350 kcal/cup"
+    },
+    {
+      "name": "Original Small Breed Adult Dry Dog Food - Chicken & Brown Rice",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/simply-nourish-original-small-breed-adult-dry-dog-food---chicken-and-brown-rice-52839.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Original",
+      "life_stage": "adult",
+      "breed_size": "Small",
+      "source_id": "5287518",
+      "images": [
+        "/products/simply-nourish/simply-nourish-food-original-small-breed-adult-dry-dog-food-chicken-brown-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257829923",
+          "sku": "5287518"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257830066",
+          "sku": "5287520"
+        }
+      ],
+      "ingredients_raw": "Deboned Chicken, Chicken Meal (Source Of Glucosamine And Chondroitin Sulfate), Brown Rice, Oatmeal, Poultry Fat (Preserved With Mixed Tocopherols), Natural Flavor, Pea Fiber, Whole Flaxseed, Potassium Chloride, Dried Chicory Root, Dried Carrots, Dried Kale, Dried Pumpkin, Dried Blueberries, Salt, Minerals (Zinc Sulfate, Zinc Proteinate, Iron Proteinate, Ferrous Sulfate, Copper Sulfate, Copper Proteinate, Manganese Sulfate, Sodium Selenite, Manganese Proteinate), Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Calcium Iodate, Folic Acid, Vitamin D3 Supplement), Choline Chloride, DL-Methionine, Citric Acid (A Preservative), Mixed Tocopherols (A Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 6.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8,
+        "omega_6_min": 3.0,
+        "omega_3_min": 0.4
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3515 kcal/kg, 370 kcal/cup"
+    },
+    {
+      "name": "Original Small Breed Adult Dry Dog Food - Chicken, Pea & Potato",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/simply-nourish-original-small-breed-adult-dry-dog-food---chicken-pea-and-potato-52845.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Original",
+      "life_stage": "adult",
+      "breed_size": "Small",
+      "source_id": "5286940",
+      "images": [
+        "/products/simply-nourish/simply-nourish-food-original-small-breed-adult-dry-dog-food-chicken-pea-potato.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257826830",
+          "sku": "5286940"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257826984",
+          "sku": "5286941"
+        }
+      ],
+      "ingredients_raw": "Deboned Chicken, Chicken Meal (Source of Glucosamine and Chondroitin Sulfate), Dried Peas, Dried Potatoes, Ground Flaxseed, Chicken Fat (Preserved with Mixed Tocopherols), Pea Fiber, Natural Flavor, Dicalcium Phosphate, Dried Chicory Root, Dried Carrots, Dried Kale, Dried Pumpkin, Dried Blueberries, Minerals (Calcium Carbonate, Potassium Chloride, Zinc Sulfate, Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Sulfate, Copper Sulfate, Copper Proteinate, Manganese Proteinate, Calcium Iodate, Sodium Selenite), Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid, Biotin, Vitamin B12 Supplement), Choline Chloride, DL-Methionine, Taurine, Mixed Tocopherols & Citric Acid (Preservatives), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.0,
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 6.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.1,
+        "phosphorus_min": 0.8,
+        "omega_6_min": 2.0,
+        "omega_3_min": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3631 kcal/kg, 372 kcal/cup"
+    },
+    {
+      "name": "Original Small Breed Adult Dry Dog Food - Lamb & Brown Rice",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/simply-nourish-original-small-breed-adult-dry-dog-food---lamb-and-brown-rice-52840.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Original",
+      "life_stage": "adult",
+      "breed_size": "Small",
+      "source_id": "5287521",
+      "images": [
+        "/products/simply-nourish/simply-nourish-food-original-small-breed-adult-dry-dog-food-lamb-brown-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257830059",
+          "sku": "5287521"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257830141",
+          "sku": "5287522"
+        }
+      ],
+      "ingredients_raw": "Deboned Lamb, Lamb Meal (Source Of Glucosamine And Chondroitin Sulfate), Brown Rice, Oatmeal, Barley, Turkey Meal (Source Of Glucosamine And Chondroitin Sulfate), Vegetable Oil (Preserved With Mixed Tocopherols), Pea Protein, Natural Flavor, Pea Fiber, Whole Flaxseed, Potassium Chloride, Salt, Dicalcium Phosphate, Dried Chicory Root, Dried Carrots, Dried Kale, Dried Pumpkin, Dried Blueberries, Minerals (Zinc Sulfate, Zinc Proteinate, Iron Proteinate, Ferrous Sulfate, Copper Proteinate, Manganese Sulfate, Sodium Selenite, Manganese Proteinate, Copper Sulfate), Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Calcium Iodate, Folic Acid, Vitamin D3 Supplement), DL-Methionine, Taurine, Citric Acid (A Preservative), Mixed Tocopherols (A Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 13.0,
+        "crude_fiber_max": 5.5,
+        "moisture_max": 10.0,
+        "calcium_min": 1.5,
+        "phosphorus_min": 1.0,
+        "omega_6_min": 2.0,
+        "omega_3_min": 0.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3310 kcal/kg, 345 kcal/cup"
+    },
+    {
+      "name": "Original Small Breed Puppy Dry Dog Food - Chicken & Brown Rice",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/simply-nourish-original-small-breed-puppy-dry-dog-food---chicken-and-brown-rice-52859.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Original",
+      "life_stage": "puppy",
+      "breed_size": "Small",
+      "source_id": "5287563",
+      "images": [
+        "/products/simply-nourish/simply-nourish-food-original-small-breed-puppy-dry-dog-food-chicken-brown-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257830110",
+          "sku": "5287563"
+        }
+      ],
+      "ingredients_raw": "Deboned Chicken, Chicken Meal (Source Of Glucosamine And Chondroitin Sulfate), Brown Rice, Oatmeal, Poultry Fat (Preserved With Mixed Tocopherols), Natural Flavor, Whole Flaxseed, Pea Fiber, Fish Oil (Preserved With Mixed Tocopherols) (Source of DHA), Salt, Potassium Chloride, Dried Chicory Root, Dried Carrots, Dried Kale, Dried Pumpkin, Dried Blueberries, Minerals (Zinc Sulfate, Zinc Proteinate, Iron Proteinate, Ferrous Sulfate, Copper Sulfate, Copper Proteinate, Manganese Sulfate, Sodium Selenite, Manganese Proteinate), Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Calcium Iodate, Folic Acid, Vitamin D3 Supplement), Citric Acid (a Preservative), Mixed Tocopherols (Preservative), L-Threonine, Choline Chloride, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 6.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.05,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "omega_6_min": 3.0,
+        "omega_3_min": 0.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3625 kcal/kg, 380 kcal/cup"
+    },
+    {
+      "name": "Original Small Breed Senior Dry Dog Food - Chicken & Brown Rice",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/simply-nourish-original-small-breed-senior-dry-dog-food---chicken-and-brown-rice-52910.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Original",
+      "life_stage": "senior",
+      "breed_size": "Small",
+      "source_id": "5287596",
+      "images": [
+        "/products/simply-nourish/simply-nourish-food-original-small-breed-senior-dry-dog-food-chicken-brown-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257830028",
+          "sku": "5287596"
+        }
+      ],
+      "ingredients_raw": "Deboned Chicken, Chicken Meal (Source Of Glucosamine And Chondroitin Sulfate), Brown Rice, Oatmeal, Poultry Fat (Preserved With Mixed Tocopherols), Rye Flour, Natural Flavor, Whole Flaxseed, Pea Fiber, Salt, Potassium Chloride, Dried Chicory Root, Dried Carrots, Dried Kale, Dried Pumpkin, Dried Blueberries, Minerals (Zinc Sulfate, Zinc Proteinate, Iron Proteinate, Ferrous Sulfate, Copper Sulfate, Copper Proteinate, Manganese Sulfate, Sodium Selenite, Manganese Proteinate), Dried Chicken Cartilage (Source Of Glucosamine And Chondroitin Sulfate), Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Calcium Iodate, Folic Acid, Vitamin D3 Supplement), Dl-Methionine, Choline Chloride, Citric Acid 9a Preservative), Mixed Tocopherols (A Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 7.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8,
+        "omega_6_min": 2.5,
+        "omega_3_min": 0.4
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3500 kcal/kg, 365 kcal/cup"
+    },
+    {
+      "name": "Original Weight Management Adult Dry Dog Food - Turkey & Brown Rice",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/simply-nourish-original-weight-management-adult-dry-dog-food---turkey-and-brown-rice-52842.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Original",
+      "life_stage": "adult",
+      "source_id": "5287555",
+      "images": [
+        "/products/simply-nourish/simply-nourish-food-original-weight-management-adult-dry-dog-food-turkey-brown-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257829978",
+          "sku": "5287555"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257829985",
+          "sku": "5287556"
+        }
+      ],
+      "ingredients_raw": "Deboned Turkey, Turkey Meal, Brown Rice, Oatmeal, Rye Flour, Dried Peas, Natural Flavor, Chicken Fat (Preserved with Mixed Tocopherols), Whole Flaxseed, Pea Fiber, Oat Fiber, Calcium Carbonate, Dicalcium Phosphate, Potassium Chloride, Dried Chicory Root, Dried Carrots, Dried Kale, Dried Pumpkin, Dried Blueberries, Minerals (Zinc Sulfate, Zinc Proteinate, Iron Proteinate, Ferrous Sulfate, Copper Sulfate, Copper Proteinate, Manganese Sulfate, Sodium Selenite, Manganese Proteinate), Choline Chloride, Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Calcium Iodate, Folic Acid, Vitamin D3 Supplement), Dried Chicken Cartilage, Citric Acid (A Preservative), Mixed Tocopherols (A Preservative), L-Carnitine, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 9.0,
+        "crude_fiber_max": 6.5,
+        "moisture_max": 10.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8,
+        "omega_6_min": 1.1,
+        "omega_3_min": 0.1
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3320 kcal/kg, 345 kcal/cup"
+    },
+    {
+      "name": "Original Weight Management Large Breed Adult Dry Dog Food - Turkey & Brown Rice",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/simply-nourish-original-weight-management-large-breed-adult-dry-dog-food---turkey-and-brown-rice-52838.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Original",
+      "life_stage": "adult",
+      "breed_size": "Large",
+      "source_id": "5287516",
+      "images": [
+        "/products/simply-nourish/simply-nourish-food-original-weight-management-large-breed-adult-dry-dog-food-turkey-brown-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257830073",
+          "sku": "5287516"
+        }
+      ],
+      "ingredients_raw": "Deboned Turkey, Turkey Meal (Source of Glucosamine and Chondroitin Sulfate), Brown Rice, Oatmeal, Dried Peas, Natural Flavor, Rye Flour, Chicken Fat (Preserved with Mixed Tocopherols), Whole Flaxseed, Pea Fiber, Dicalcium Phosphate, Calcium Carbonate, Potassium Chloride, Dried Chicory Root, Dried Carrots, Dried Kale, Dried Pumpkin, Dried Blueberries, Minerals (Zinc Sulfate, Zinc Proteinate, Iron Proteinate, Ferrous Sulfate, Copper Sulfate, Copper Proteinate, Manganese Sulfate, Sodium Selenite, Manganese Proteinate), Choline Chloride, Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Calcium Iodate, Folic Acid, Vitamin D3 Supplement), Dried Chicken Cartilage (Source of Glucosamine and Chondroitin Sulfate), Citric Acid (A Preservative), Mixed Tocopherols (A Preservative), L-Carnitine, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 9.0,
+        "crude_fiber_max": 6.5,
+        "moisture_max": 10.0,
+        "calcium_min": 1.2,
+        "phosphorus_min": 0.9,
+        "omega_6_min": 1.1,
+        "omega_3_min": 0.1
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3330 kcal/kg, 350 kcal/cup"
+    },
+    {
+      "name": "Original Weight Management Small Breed Adult Dry Dog Food - Turkey & Brown Rice",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/simply-nourish-original-weight-management-small-breed-adult-dry-dog-food---turkey-and-brown-rice-52841.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Original",
+      "life_stage": "adult",
+      "breed_size": "Small",
+      "source_id": "5287523",
+      "images": [
+        "/products/simply-nourish/simply-nourish-food-original-weight-management-small-breed-adult-dry-dog-food-turkey-brown-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257830134",
+          "sku": "5287523"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257830127",
+          "sku": "5287524"
+        }
+      ],
+      "ingredients_raw": "Deboned Turkey, Turkey Meal (Source of Glucosamine and Chondroitin Sulfate), Brown Rice, Oatmeal, Pea Fiber, Natural Flavor, Chicken Fat (Preserved with Mixed Tocopherols), Whole Flaxseed, Rye Flour, Dicalcium Phosphate, Potassium Chloride, Dried Chicory Root, Dried Carrots, Dried Kale, Dried Pumpkin, Dried Blueberries, Minerals (Zinc Sulfate, Zinc Proteinate, Iron Proteinate, Ferrous Sulfate, Copper Sulfate, Copper Proteinate, Manganese Sulfate, Sodium Selenite, Manganese Proteinate), Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Calcium Iodate, Folic Acid, Vitamin D3 Supplement), Dried Chicken Cartilage (Source of Glucosamine and Chondroitin Sulfate), Choline Chloride, Citric Acid (A Preservative), Mixed Tocopherols (A Preservative), L-Carnitine, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 10.0,
+        "crude_fiber_max": 5.5,
+        "moisture_max": 10.0,
+        "calcium_min": 1.2,
+        "phosphorus_min": 0.9,
+        "omega_6_min": 1.0,
+        "omega_3_min": 0.08
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3300 kcal/kg, 345 kcal/cup"
+    },
+    {
+      "name": "Source Adult - High Protein, Beef & Grain",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/simply-nourish-source-adult---high-protein-beef-and-grain-82391.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Source",
+      "life_stage": "adult",
+      "source_id": "5348645",
+      "images": [
+        "/products/simply-nourish/simply-nourish-food-source-adult-high-protein-beef-grain.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0196481058064",
+          "sku": "5348645"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0196481058019",
+          "sku": "5348647"
+        }
+      ],
+      "ingredients_raw": "Deboned Beef, Chicken Meal, Potato Protein, Pearled Barley, Oatmeal, Potatoes, Chicken Fat (Preserved With Mixed Tocopherols), Turkey Meal, Tomato Pomace, Peas, Flaxseed, Natural Flavor, Pea Fiber, Salt, Chicory Root, Dried Carrots, Dried Kale, Dried Pumpkin, Dried Blueberries, Choline Chloride, Minerals (Zinc Sulfate, Zinc Proteinate, Iron Proteinate, Ferrous Sulfate, Copper Proteinate, Manganese Sulfate, Sodium Selenite, Manganese Proteinate, Copper Sulfate), Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Calcium Iodate, Folic Acid), Citric Acid (Preservative), Mixed Tocopherols (Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 34.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 6.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8,
+        "omega_6_min": 2.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3580 kcal/kg, 366 kcal/cup"
+    },
+    {
+      "name": "Source Adult - High Protein, Chicken & Grains",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/simply-nourish-source-adult---high-protein-chicken-and-grains-82387.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Source",
+      "life_stage": "adult",
+      "source_id": "5348324",
+      "images": [
+        "/products/simply-nourish/simply-nourish-food-source-adult-high-protein-chicken-grains.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0196481058040",
+          "sku": "5348324"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0196481058033",
+          "sku": "5348650"
+        }
+      ],
+      "ingredients_raw": "Deboned Chicken, Chicken Meal (Source Of Glucosamine), Turkey Meal, Oatmeal, Pearled Barley, Chicken Fat (Preserved With Mixed Tocopherols), Pea Fiber, Tomato Pomace, Natural Flavor, Flaxseed, Peas, Fish Oil (Preserved With Mixed Tocopherols), Salt, Chicory Root, Dried Carrots, Dried Kale, Dried Pumpkin, Dried Blueberries, Minerals (Zinc Sulfate, Zinc Proteinate, Iron Proteinate, Ferrous Sulfate, Copper Proteinate, Manganese Sulfate, Sodium Selenite, Manganese Proteinate, Copper Sulfate), Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Calcium Iodate, Folic Acid), Choline Chloride, Potassium Chloride, Citric Acid (Preservative), Mixed Tocopherols (Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 34.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 7.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8,
+        "omega_6_min": 2.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3500 kcal/kg, 358 kcal/cup"
+    },
+    {
+      "name": "Source Adult - High Protein, Salmon & Grain",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/simply-nourish-source-adult---high-protein-salmon-and-grain-82392.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Source",
+      "life_stage": "adult",
+      "source_id": "5348646",
+      "images": [
+        "/products/simply-nourish/simply-nourish-food-source-adult-high-protein-salmon-grain.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0196481058002",
+          "sku": "5348646"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0196481057999",
+          "sku": "5348648"
+        }
+      ],
+      "ingredients_raw": "Salmon, Fish Meal, Chicken Meal (Source Of Glucosamine), Oatmeal, Pearled Barley, Chicken Fat (Preserved With Mixed Tocopherols), Pea Fiber, Dried Egg Product, Tomato Pomace, Potatoes, Potato Protein, Natural Flavor, Flaxseed, Fish Oil (Preserved With Mixed Tocopherols), Salt, Potassium Chloride, Chicory Root, Dried Carrots, Dried Kale, Dried Pumpkin, Dried Blueberries, Minerals (Zinc Sulfate, Zinc Proteinate, Iron Proteinate, Ferrous Sulfate, Copper Proteinate, Manganese Sulfate, Sodium Selenite, Manganese Proteinate, Copper Sulfate), Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Calcium Iodate, Folic Acid), Choline Chloride, Citric Acid (Preservative), Mixed Tocopherols (Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 34.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 7.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8,
+        "omega_6_min": 2.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3500 kcal/kg, 358 kcal/cup"
+    },
+    {
+      "name": "Source Adult Dry Dog Food - Chicken",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/simply-nourish-source-adult-dry-dog-food---chicken-52866.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Source",
+      "life_stage": "adult",
+      "source_id": "5286995",
+      "images": [
+        "/products/simply-nourish/simply-nourish-food-source-adult-dry-dog-food-chicken.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257827059",
+          "sku": "5286995"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257827011",
+          "sku": "5286996"
+        }
+      ],
+      "ingredients_raw": "Deboned Chicken, Chicken Meal, Turkey Meal, Dried Potatoes, Dried Peas, Ground Flaxseed, Chicken Fat (Preserved with Mixed Tocopherols), Pea Fiber, Dried Egg Product, Natural Flavor, Choline Chloride, Dried Chicory Root, Dried Carrots, Dried Kale, Dried Pumpkin, Dried Blueberries, Minerals (Potassium Chloride, Calcium Carbonate, Zinc Sulfate, Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Sulfate, Copper Sulfate, Copper Proteinate, Manganese Proteinate, Calcium Iodate, Sodium Selenite), DL-Methionine, Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Thiamine Mononitrate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid, Biotin, Vitamin B12 Supplement), Taurine, Salt, Mixed Tocopherols & Citric Acid (Preservatives), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 34.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 5.5,
+        "moisture_max": 10.0,
+        "calcium_min": 1.2,
+        "phosphorus_min": 0.9,
+        "omega_6_min": 2.0,
+        "omega_3_min": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3525 kcal/kg, 367 kcal/cup"
+    },
+    {
+      "name": "Source Adult Dry Dog Food - Lamb, Pork & Boar, Grain Free",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/simply-nourish-source-adult-dry-dog-food---lamb-pork-and-boar-grain-free-52863.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Source",
+      "life_stage": "adult",
+      "source_id": "5286603",
+      "images": [
+        "/products/simply-nourish/simply-nourish-food-source-adult-dry-dog-food-lamb-pork-boar-grain-free.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257825772",
+          "sku": "5286603"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257825734",
+          "sku": "5286604"
+        }
+      ],
+      "ingredients_raw": "Deboned Lamb, Lamb Meal, Pork Meal, Deboned Pork, Pea Protein, Chickpeas, Yellow Peas, Green Lentils, Sunflower Oil (Preserved with Mixed Tocopherols), Natural Flavor, Deboned Boar, Alfalfa, Flaxseed Meal, Dried Chicory Root, Potassium Chloride, Dried Kelp, Dried Apples, Dried Cranberries, Dried Carrots, Vegetable Glycerin, Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement), Choline Chloride, Minerals (Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Sodium Selenite, Calcium Iodate), Mixed Tocopherols (A Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 35.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3489 kcal/kg, 402 kcal/cup"
+    },
+    {
+      "name": "Source Adult Dry Dog Food - Salmon, High-Protein, Grain Free",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/simply-nourish-source-adult-dry-dog-food---salmon-high-protein-grain-free-52861.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Source",
+      "life_stage": "adult",
+      "source_id": "5286601",
+      "images": [
+        "/products/simply-nourish/simply-nourish-food-source-adult-dry-dog-food-salmon-high-protein-grain-free.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257825741",
+          "sku": "5286601"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257825765",
+          "sku": "5286602"
+        }
+      ],
+      "ingredients_raw": "Deboned Whitefish, Whitefish Meal, Menhaden Fish Meal, Yellow Peas, Chickpeas, Deboned Salmon, Sunflower Oil (Preserved with Mixed Tocopherols), Green Lentils, Natural Flavor, Alfalfa, Flaxseed Meal, Dried Chicory Root, Dried Kelp, Dried Apples, Dried Cranberries, Dried Carrots, Vegetable Glycerin, Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid), Minerals (Zinc Proteinate, Iron Proteinate, Potassium Chloride, Copper Proteinate, Manganese Proteinate, Sodium Selenite, Calcium Iodate), Mixed Tocopherols (A Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 35.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.1,
+        "phosphorus_min": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3694 kcal/kg, 422 kcal/cup"
+    },
+    {
+      "name": "Source Puppy - High Protein, Chicken & Grain",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/simply-nourish-source-puppy---high-protein-chicken-and-grain-82386.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Source",
+      "life_stage": "puppy",
+      "source_id": "5348323",
+      "images": [
+        "/products/simply-nourish/simply-nourish-food-source-puppy-high-protein-chicken-grain.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0196481058026",
+          "sku": "5348323"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0196481058057",
+          "sku": "5348649"
+        }
+      ],
+      "ingredients_raw": "Deboned Chicken, Chicken Meal (Source Of Glucosamine), Oatmeal, Pearled Barley, Potato Protein, Chicken Fat (Preserved With Mixed Tocopherols), Turkey Meal, Pea Fiber, Tomato Pomace, Natural Flavor, Flaxseed, Peas, Fish Oil (Preserved With Mixed Tocopherols), Salt, Chicory Root, Dried Carrots, Dried Kale, Dried Pumpkin, Dried Blueberries, Minerals (Zinc Sulfate, Zinc Proteinate, Iron Proteinate, Ferrous Sulfate, Copper Proteinate, Manganese Sulfate, Sodium Selenite, Manganese Proteinate, Copper Sulfate), Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-Calcium Pantothenate, Riboflavin Supplement), Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Calcium Iodate, Folic Acid), Choline Chloride, Potassium Chloride, Citric Acid (Preservative), Mixed Tocopherols (Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "dha_min": 0.05,
+        "crude_protein_min": 36.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 7.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3500 kcal/kg, 358 kcal/cup"
+    },
+    {
+      "name": "Source Senior Dry Dog Food - Chicken",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/simply-nourish-source-senior-dry-dog-food---chicken-52872.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Source",
+      "life_stage": "senior",
+      "source_id": "5287004",
+      "images": [
+        "/products/simply-nourish/simply-nourish-food-source-senior-dry-dog-food-chicken.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0737257826854",
+          "sku": "5287004"
+        }
+      ],
+      "ingredients_raw": "Deboned Chicken, Chicken Meal (Source of Glucosamine & Chondroitin Sulfate), Turkey Meal, Dried Potatoes, Dried Peas, Pea Fiber, Natural Flavor, Ground Flaxseed, Dried Egg Product, Chicken Fat (Preserved with Mixed Tocopherols), Dried Chicory Root, Dried Carrots, Dried Kale, Dried Pumpkin, Dried Blueberries, Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Thiamine Mononitrate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid, Biotin, Vitamin B12 Supplement), DL-Methionine, Minerals (Potassium Chloride, Calcium Carbonate, Zinc Sulfate, Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Sulfate, Copper Sulfate, Copper Proteinate, Manganese Proteinate, Calcium Iodate, Sodium Selenite), Taurine, Choline Chloride, Citric Acid and Mixed Tocopherols (Preservatives), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 34.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 6.5,
+        "moisture_max": 10.0,
+        "calcium_min": 1.2,
+        "phosphorus_min": 0.9,
+        "omega_6_min": 1.75,
+        "omega_3_min": 0.8
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3373 kcal/kg, 339 kcal/cup"
+    },
+    {
+      "name": "Adult Dog Meal Topper - Shreds",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/simply-nourish-adult-dog-meal-topper---shreds-9-oz-84643.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "life_stage": "adult",
+      "source_id": "5348668",
+      "images": [
+        "/products/simply-nourish/simply-nourish-supplement-adult-dog-meal-topper-shreds.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "9 OZ",
+          "upc": "0196481058132",
+          "sku": "5348668"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "9 OZ",
+          "upc": "0196481058125",
+          "sku": "5348669"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Broth",
+      "guaranteed_analysis": {
+        "crude_protein_min": 18.0,
+        "crude_fat_min": 1.0,
+        "crude_fiber_max": 0.5,
+        "ash_max": 2.0,
+        "moisture_max": 78.0,
+        "ash_min": 2.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1133 kcal/kg, 290 kcal/pouch"
+    },
+    {
+      "name": "Bone Broth Meal Complement Adult Dog Food Topper",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/simply-nourish-bone-broth-meal-complement-adult-dog-food-topper-1116-oz-80983.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "life_stage": "adult",
+      "source_id": "5347390",
+      "images": [
+        "/products/simply-nourish/simply-nourish-supplement-bone-broth-meal-complement-adult-dog-food-topper.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "11.16 oz",
+          "upc": "0196481054684",
+          "sku": "5347390"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "11.16 oz",
+          "upc": "0196481054707",
+          "sku": "5347391"
+        }
+      ],
+      "ingredients_raw": "Water, Chicken Bone Broth Concentrate, Natural Flavors, Carrot juice Concentrate, Celery Juice Concentrate",
+      "guaranteed_analysis": {
+        "crude_protein_min": 2.0,
+        "crude_fat_min": 0.05,
+        "crude_fiber_max": 0.5,
+        "moisture_max": 98.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "58 kcal/kg"
+    },
+    {
+      "name": "Homestyle Meal Topper Adult Dog Meal Complement",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/simply-nourish-homestyle-meal-topperandtrade-adult-dog-meal-complement---9-oz-69185.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "life_stage": "adult",
+      "source_id": "5319677",
+      "images": [
+        "/products/simply-nourish/simply-nourish-supplement-homestyle-meal-topper-adult-dog-meal-complement.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "9 oz",
+          "upc": "0737257968936",
+          "sku": "5319677"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "9 oz",
+          "upc": "0737257967090",
+          "sku": "5319679"
+        }
+      ],
+      "ingredients_raw": "Lamb, Water Sufficient for Processing, Sweet Potato, Carrot, Rice, Quinoa, Sunflower Oil, Kale, Potato Starch",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 4.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1542 kcal/kg, 395 kcal/pouch"
+    },
+    {
+      "name": "Original All Life Stage Dog Meal Topper - 3 Oz.,",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/simply-nourish-original-all-life-stage-dog-meal-topper---3-oz-69206.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "sub_brand": "Original",
+      "life_stage": "all",
+      "source_id": "5319723",
+      "images": [
+        "/products/simply-nourish/simply-nourish-supplement-original-all-life-stage-dog-meal-topper-3-oz.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "3 Oz",
+          "upc": "0737257969247",
+          "sku": "5319723"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "3 Oz",
+          "upc": "0737257969223",
+          "sku": "5319724"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Broth, Water Sufficient for Processing, Sweet Potatoes, Peas, Tapioca Starch, Guar Gum",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 0.2,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 88.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "522 kcal/kg, 44 kcal/pouch"
+    },
+    {
+      "name": "Puree Adult Dog Food Topper - Pumpkin",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/simply-nourish-puree-adult-dog-food-topper---pumpkin-3-oz-87313.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "life_stage": "adult",
+      "source_id": "5360339",
+      "images": [
+        "/products/simply-nourish/simply-nourish-supplement-puree-adult-dog-food-topper-pumpkin.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "3 oz",
+          "upc": "0196481089648",
+          "sku": "5360339"
+        }
+      ],
+      "ingredients_raw": "Pumpkin, Water for Processing",
+      "guaranteed_analysis": {
+        "crude_protein_min": 0.1,
+        "crude_fat_min": 0.05,
+        "crude_fiber_max": 3.5,
+        "moisture_max": 93.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "295 kcal/kg, 25 kcal/pouch"
+    },
+    {
+      "name": "Source Dog Meal Topper - Shreds",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/simply-nourish-source-dog-meal-topper---shreds-3-oz-54757.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "sub_brand": "Source",
+      "source_id": "5348198",
+      "images": [
+        "/products/simply-nourish/simply-nourish-supplement-source-dog-meal-topper-shreds.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "3 Oz",
+          "upc": "0196481056992",
+          "sku": "5348198"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "3 Oz",
+          "upc": "0196481056978",
+          "sku": "5348199"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "3 Oz",
+          "upc": "0196481057005",
+          "sku": "5348200"
+        }
+      ],
+      "ingredients_raw": "Turkey, Turkey Broth, Chicken Broth, Chicken, Tapioca Starch, Guar Gum",
+      "guaranteed_analysis": {
+        "crude_protein_min": 11.0,
+        "crude_fat_min": 0.1,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 86.0,
+        "ash_max": 1.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "719 kcal/kg, 61 kcal/pouch"
+    },
+    {
+      "name": "Source Freeze Dried Meal Topper - High Protein",
+      "brand": "Simply Nourish",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/simply-nourish-source-freeze-dried-meal-topper---high-protein-55-oz-80984.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "sub_brand": "Source",
+      "source_id": "5348196",
+      "images": [
+        "/products/simply-nourish/simply-nourish-supplement-source-freeze-dried-meal-topper-high-protein.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "5.5 OZ",
+          "upc": "0196481056954",
+          "sku": "5348196"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "5.5 OZ",
+          "upc": "0196481056947",
+          "sku": "5348197"
+        }
+      ],
+      "ingredients_raw": "Cod, Salmon, Chicken, Tapioca, Pumpkin Seeds, Chicken Liver, Apple, Pumpkin, Natural Flavor, Dicalcium Carbonate, Calcium Carbonate, Mixed Tocopherols, Inulin, Salt, Potassium Chloride, Dried Kelp, Taurine, Zinc Proteinate, Iron Proteinate, Vitamin E Supplement, Copper Proteinate, Manganese Proteinate, D-Calcium Pantothenate, Niacin Supplement, Riboflavin Supplement, Thiamine Hydrochloride, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement, Vitamin B12 Supplement",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 9.0,
+        "moisture_max": 8.0,
+        "omega_6_min": 5.0,
+        "omega_3_min": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3818 kcal/kg, 249 kcal/cup"
+    }
+  ]
+}

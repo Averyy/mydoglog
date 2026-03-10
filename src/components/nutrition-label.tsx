@@ -17,9 +17,11 @@ function ThinRule(): React.ReactElement {
 function NutrientRow({
   row,
   bold = true,
+  showGrams = true,
 }: {
   row: AnalysisRow
   bold?: boolean
+  showGrams?: boolean
 }): React.ReactElement {
   const pctFormatted =
     row.value !== null
@@ -29,7 +31,7 @@ function NutrientRow({
       : "—"
 
   const gramsFormatted =
-    row.gramsPerDay !== null
+    showGrams && row.gramsPerDay !== null
       ? row.gramsPerDay >= 1
         ? `${Math.round(row.gramsPerDay)}g`
         : `${row.gramsPerDay.toFixed(1)}g`
@@ -37,13 +39,13 @@ function NutrientRow({
 
   return (
     <div className="flex items-baseline justify-between gap-2 py-[3px]">
-      <span className={cn("text-[13px] leading-tight", bold && "font-bold")}>
+      <span className={cn("min-w-0 truncate text-[13px] leading-tight", bold && "font-bold")}>
         {row.label}
         <span className="ml-1 text-[11px] font-normal text-muted-foreground">
           ({row.qualifier})
         </span>
       </span>
-      <span className="flex items-baseline gap-1.5 font-mono tabular-nums">
+      <span className="shrink-0 flex items-baseline gap-1.5 font-mono tabular-nums">
         {gramsFormatted && (
           <span className="text-[13px] font-bold">{gramsFormatted}</span>
         )}
@@ -58,7 +60,7 @@ function NutrientRow({
   )
 }
 
-// ─── Main component ──────────────────────────────────────────────────────────
+// ─── Ingredient sub-components ────────────────────────────────────────────────
 
 export interface IngredientList {
   name: string
@@ -77,11 +79,11 @@ function IngredientItem({ item }: { item: IngredientList }): React.ReactElement 
 
   return (
     <div>
-      <p className="text-[11px] font-bold">{item.name}</p>
+      <p className="text-[11px] font-bold truncate">{item.name}</p>
       <p className="break-words text-[10px] leading-snug text-muted-foreground">
         <span
           ref={textRef}
-          className={cn("inline-block", !expanded && "line-clamp-[8]")}
+          className={cn("inline-block", !expanded && "line-clamp-4")}
         >
           {item.ingredients}
         </span>
@@ -102,19 +104,38 @@ function IngredientItem({ item }: { item: IngredientList }): React.ReactElement 
   )
 }
 
-interface NutritionLabelProps {
+// ─── Main component ───────────────────────────────────────────────────────────
+
+interface NutritionLabelBaseProps {
   data: ComputedNutrition
-  ingredientLists?: IngredientList[]
   className?: string
 }
 
-export function NutritionLabel({ data, ingredientLists, className }: NutritionLabelProps): React.ReactElement {
+interface DailyVariantProps extends NutritionLabelBaseProps {
+  variant?: "daily"
+  ingredientLists?: IngredientList[]
+  /** Raw calorie content string — not used for daily variant */
+  calorieContentRaw?: never
+}
+
+interface ProductVariantProps extends NutritionLabelBaseProps {
+  variant: "product"
+  /** Raw calorie content string, displayed as-is below the kcal/kg number */
+  calorieContentRaw?: string | null
+  ingredientLists?: never
+}
+
+type NutritionLabelProps = DailyVariantProps | ProductVariantProps
+
+export function NutritionLabel(props: NutritionLabelProps): React.ReactElement {
+  const { data, className, variant = "daily" } = props
   const { caloriesPerDay, primaryAnalysis, supplementalAnalysis, productCount } = data
+  const isProduct = variant === "product"
 
   return (
     <div
       className={cn(
-        "w-full border-2 border-foreground bg-muted-subtle px-2 pb-2 pt-1",
+        "w-full min-w-0 overflow-hidden border-2 border-foreground bg-muted-subtle px-2 pb-2 pt-1",
         className,
       )}
     >
@@ -128,16 +149,24 @@ export function NutritionLabel({ data, ingredientLists, className }: NutritionLa
 
       <ThickBar className="h-[5px]" />
 
-      {/* ── Daily total ────────────────────────────────────────────── */}
-      <div className="py-[2px] text-[13px]">
-        <span className="font-bold">Daily total</span>
-        {productCount > 0 && (
-          <span className="text-muted-foreground">
-            {" "}
-            · {productCount} item{productCount !== 1 ? "s" : ""}
-          </span>
-        )}
-      </div>
+      {/* ── Context line ─────────────────────────────────────────── */}
+      {!isProduct && (
+        <div className="py-[2px] text-[13px]">
+          <span className="font-bold">Daily total</span>
+          {productCount > 0 && (
+            <span className="text-muted-foreground">
+              {" "}
+              · {productCount} item{productCount !== 1 ? "s" : ""}
+            </span>
+          )}
+        </div>
+      )}
+      {isProduct && (
+        <div className="py-[2px] text-[13px]">
+          <span className="font-bold">Per food label</span>
+          <span className="text-muted-foreground"> · as-fed basis</span>
+        </div>
+      )}
 
       <ThickBar className="h-[7px]" />
 
@@ -154,6 +183,14 @@ export function NutritionLabel({ data, ingredientLists, className }: NutritionLa
           </span>
         )}
       </div>
+      {isProduct && caloriesPerDay !== null && data.calorieUnit && (
+        <p className="text-[10px] text-muted-foreground -mt-0.5">{data.calorieUnit}</p>
+      )}
+      {isProduct && props.calorieContentRaw && (
+        <p className="text-[10px] text-muted-foreground mt-0.5">
+          {props.calorieContentRaw}
+        </p>
+      )}
 
       <ThickBar className="h-[3px]" />
 
@@ -167,7 +204,7 @@ export function NutritionLabel({ data, ingredientLists, className }: NutritionLa
       {/* ── Primary GA rows ────────────────────────────────────────── */}
       {primaryAnalysis.map((row, i) => (
         <div key={row.key}>
-          <NutrientRow row={row} />
+          <NutrientRow row={row} showGrams={!isProduct} />
           {i < primaryAnalysis.length - 1 && <ThinRule />}
         </div>
       ))}
@@ -179,7 +216,7 @@ export function NutritionLabel({ data, ingredientLists, className }: NutritionLa
           <ThickBar className="mt-[2px] h-[3px]" />
           {supplementalAnalysis.map((row, i) => (
             <div key={row.key}>
-              <NutrientRow row={row} bold={false} />
+              <NutrientRow row={row} bold={false} showGrams={!isProduct} />
               {i < supplementalAnalysis.length - 1 && <ThinRule />}
             </div>
           ))}
@@ -188,18 +225,25 @@ export function NutritionLabel({ data, ingredientLists, className }: NutritionLa
 
       {/* ── Footer ─────────────────────────────────────────────────── */}
       <ThickBar className="mt-[2px] h-[5px]" />
-      <p className="mt-1 break-words text-[10px] leading-tight text-muted-foreground">
-        Per food label guaranteed analysis, as-fed basis.
-        {productCount > 1 && ` Weighted average from ${productCount} products.`}
-        {caloriesPerDay === null && productCount > 0 && " Add quantities to calculate calories."}
-        {productCount === 0 && " Add foods to see nutrition info."}
-      </p>
+      {!isProduct && (
+        <p className="mt-1 break-words text-[10px] leading-tight text-muted-foreground">
+          Per food label guaranteed analysis, as-fed basis.
+          {productCount > 1 && ` Weighted average from ${productCount} products.`}
+          {caloriesPerDay === null && productCount > 0 && " Add quantities to calculate calories."}
+          {productCount === 0 && " Add foods to see nutrition info."}
+        </p>
+      )}
+      {isProduct && (
+        <p className="mt-1 break-words text-[10px] leading-tight text-muted-foreground">
+          Guaranteed analysis from product label.
+        </p>
+      )}
 
-      {/* ── Ingredients ──────────────────────────────────────────────── */}
-      {ingredientLists && ingredientLists.length > 0 && (
+      {/* ── Ingredients (daily variant only) ───────────────────────── */}
+      {!isProduct && props.ingredientLists && props.ingredientLists.length > 0 && (
         <div className="mt-2 space-y-2">
           <ThickBar className="h-[3px]" />
-          {ingredientLists.map((item) => (
+          {props.ingredientLists.map((item) => (
             <IngredientItem key={item.name} item={item} />
           ))}
         </div>

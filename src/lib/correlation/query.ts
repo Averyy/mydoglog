@@ -14,7 +14,6 @@ import {
   brands,
   poopLogs,
   itchinessLogs,
-  vomitLogs,
   accidentalExposures,
   medications,
   foodScorecards,
@@ -62,7 +61,6 @@ export async function fetchCorrelationInput(
     treatRows,
     poopRows,
     itchRows,
-    vomitRows,
     exposureRows,
     medicationRows,
     crossReactivityRows,
@@ -155,20 +153,6 @@ export async function fetchCorrelationInput(
           eq(itchinessLogs.dogId, dogId),
           gte(itchinessLogs.date, windowStart),
           lte(itchinessLogs.date, windowEnd),
-        ),
-      ),
-
-    // Vomit logs in window
-    db
-      .select({
-        date: vomitLogs.date,
-      })
-      .from(vomitLogs)
-      .where(
-        and(
-          eq(vomitLogs.dogId, dogId),
-          gte(vomitLogs.date, windowStart),
-          lte(vomitLogs.date, windowEnd),
         ),
       ),
 
@@ -276,8 +260,6 @@ export async function fetchCorrelationInput(
             planGroupId: foodScorecards.planGroupId,
             poopQuality: foodScorecards.poopQuality,
             itchSeverity: foodScorecards.itchSeverity,
-            digestiveImpact: foodScorecards.digestiveImpact,
-            itchinessImpact: foodScorecards.itchinessImpact,
           })
           .from(foodScorecards)
           .where(
@@ -380,7 +362,6 @@ export async function fetchCorrelationInput(
     productIngredientMap,
     poopLogs: poopRows,
     itchinessLogs: itchRows,
-    vomitLogs: vomitRows,
     accidentalExposures: exposureRows,
     medications: medicationRows,
     scorecards: scorecardRows,
@@ -460,8 +441,6 @@ export async function fetchIngredientProductMap(
           productType: product.type ?? "food",
           avgPoopScore: null,
           avgItchScore: null,
-          digestiveImpact: null,
-          itchinessImpact: null,
         })
       }
       result.set(key, entries)

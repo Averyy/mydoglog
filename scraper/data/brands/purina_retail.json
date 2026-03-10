@@ -1,0 +1,3509 @@
+{
+  "brand": "Purina",
+  "website_url": "https://www.petsmart.ca",
+  "scraped_at": "2026-03-10T16:57:04.674508+00:00",
+  "scraper_version": "0.1.0",
+  "stats": {
+    "product_count": 97,
+    "by_channel": {
+      "retail": 97
+    },
+    "by_type": {
+      "food": 81,
+      "supplement": 1,
+      "treat": 15
+    }
+  },
+  "products": [
+    {
+      "name": "Beyond Ground Entrée Adult Wet Dog Food - Alaskan Cod, Salmon & Sweet Potato Recipe",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/beyond-ground-entre-adult-wet-dog-food---alaskan-cod-salmon-and-sweet-potato-recipe-368-g-53872.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Beyond",
+      "life_stage": "adult",
+      "source_id": "5289382",
+      "images": [
+        "/products/purina/purina-food-beyond-ground-entr-e-adult-wet-dog-food-alaskan-cod-salmon-sweet-potato-recipe.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "368 g",
+          "upc": "0055800341020",
+          "sku": "5289382"
+        }
+      ],
+      "ingredients_raw": "Cod, Chicken, Fish Broth, Turkey, Liver, Salmon, Sweet Potatoes, Minerals, Guar Gum, Salt, Carrageenan, Choline Chloride, Vitamins",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1106 kcal/kg, 407 kcal/can"
+    },
+    {
+      "name": "Beyond Wet Dog Food In Gravy - Farm-Raised Beef & Spinach Recipe",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/beyond-wet-dog-food-in-gravy---farm-raised-beef-and-spinach-recipe-354-g-77629.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Beyond",
+      "source_id": "5339583",
+      "images": [
+        "/products/purina/purina-food-beyond-wet-dog-food-in-gravy-farm-raised-beef-spinach-recipe.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "354 g",
+          "upc": "0055800457066",
+          "sku": "5339583"
+        }
+      ],
+      "ingredients_raw": "Beef Broth, Beef, Liver, Wheat Gluten, Chicken, Spinach, Egg Product, Minerals, Guar Gum, Tricalcium Phosphate, Locust Bean Gum, Choline Chloride, Vitamins",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 2.5,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "866 kcal/kg, 319 kcal/can"
+    },
+    {
+      "name": "Beyond Wild Wet Dog Food - Beef, Liver & Lamb Recipe",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/beyond-wild-wet-dog-food---beef-liver-and-lamb-recipe--368-g-90817.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Beyond",
+      "source_id": "5363792",
+      "images": [
+        "/products/purina/purina-food-beyond-wild-wet-dog-food-beef-liver-lamb-recipe.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "368 g",
+          "upc": "0055800483478",
+          "sku": "5363792"
+        }
+      ],
+      "ingredients_raw": "Beef, Beef Broth, Chicken, Liver, Lamb, Chicken Heart, Minerals, Guar Gum, Salt, Carrageenan, Choline Chloride, Calcium Carbonate, Vitamins",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.0,
+        "crude_fat_min": 7.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1220 kcal/kg, 449 kcal/can"
+    },
+    {
+      "name": "Beyond Wild Wet Dog Food - Turkey, Liver & Duck Recipe",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/beyond-wild-wet-dog-food---turkey-liver-and-duck-recipe-368-g-90902.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Beyond",
+      "source_id": "5363846",
+      "images": [
+        "/products/purina/purina-food-beyond-wild-wet-dog-food-turkey-liver-duck-recipe.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "368 g",
+          "upc": "0055800481146",
+          "sku": "5363846"
+        }
+      ],
+      "ingredients_raw": "Turkey, Turkey Broth, Chicken, Liver, Duck, Chicken Liver, Minerals, Chicken Heart, Guar Gum, Salt, Carrageenan, Choline Chloride, Vitamins",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.0,
+        "crude_fat_min": 7.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1169 kcal/kg, 431 kcal/can"
+    },
+    {
+      "name": "ONE Classic Wet Dog Food - Ground Chicken & Brown Rice Entrée",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/purina-one-classic-wet-dog-food---ground-chicken-and-brown-rice-entre-368-g-59945.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Purina ONE",
+      "source_id": "5303627",
+      "images": [
+        "/products/purina/purina-food-one-classic-wet-dog-food-ground-chicken-brown-rice-entr-e.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "368 g",
+          "upc": "0055800409348",
+          "sku": "5303627"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Broth, Liver, Pork Lungs, Brown Rice, Oat Meal, Carrots, Spinach, Egg Product, Minerals, Carrageenan, Guar Gum, Salt, Locust Bean Gum, Vitamins",
+      "guaranteed_analysis": {
+        "glucosamine_min": 100.0,
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 7.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1143 kcal/kg, 421 kcal/can"
+    },
+    {
+      "name": "ONE +Plus Classic Wet Puppy Food - Lamb & Long Grain Rice Entrée",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/purina-one-plus-classic-wet-puppy-food---lamb-and-long-grain-rice-entre-368-g-77625.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Purina ONE",
+      "life_stage": "puppy",
+      "source_id": "5339595",
+      "images": [
+        "/products/purina/purina-food-one-plus-classic-wet-puppy-food-lamb-long-grain-rice-entr-e.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "368 g",
+          "upc": "0055800455574",
+          "sku": "5339595"
+        }
+      ],
+      "ingredients_raw": "Lamb and Chicken Broth, Lamb, Chicken, Liver, Pork Lungs, Fish, Long Grain Rice, Oat Meal, Carrots, Spinach, Egg Product, Minerals, Carrageenan, Guar Gum, Salt, Tricalcium Phosphate, Locust Bean Gum, Choline Chloride, Vitamins",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 7.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1173 kcal/kg, 432 kcal/can"
+    },
+    {
+      "name": "ONE True Instinct Classic Wet Dog Food",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/purina-one-true-instinct-classic-wet-dog-food-368g-59952.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Purina ONE",
+      "source_id": "5303479",
+      "images": [
+        "/products/purina/purina-food-one-true-instinct-classic-wet-dog-food.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "368g",
+          "upc": "0055800408532",
+          "sku": "5303479"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "368g",
+          "upc": "0055800408372",
+          "sku": "5303480"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "368g",
+          "upc": "0055800417688",
+          "sku": "5308193"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "368g",
+          "upc": "0055800431646",
+          "sku": "5326212"
+        }
+      ],
+      "ingredients_raw": "Beef, Chicken, Beef and Chicken Broth, Liver, Pork Lungs, Bison, Minerals, Salt, Carrageenan, Guar Gum, Locust Bean Gum, Choline Chloride, Vitamins",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.0,
+        "crude_fat_min": 8.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1262 kcal/kg, 464 kcal/can"
+    },
+    {
+      "name": "ONE True Instinct Wet Dog Food, Tender Cuts in Gravy with Beef & Bison",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/purina-one-true-instinct-wet-dog-food-tender-cuts-in-gravy-with-beef-and-bison-368-g-77623.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Purina ONE",
+      "source_id": "5339577",
+      "images": [
+        "/products/purina/purina-food-one-true-instinct-wet-dog-food-tender-cuts-in-gravy-with-beef-bison.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "368 g",
+          "upc": "0055800457806",
+          "sku": "5339577"
+        }
+      ],
+      "ingredients_raw": "Beef Broth, Beef, Chicken, Wheat Gluten, Liver, Soy Flour, Bison, Guar Gum, Minerals, Locust Bean Gum, Tricalcium Phosphate, Vitamins, Choline Chloride",
+      "guaranteed_analysis": {
+        "crude_protein_min": 11.0,
+        "crude_fat_min": 3.5,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 80.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1103 kcal/kg, 406 kcal/can"
+    },
+    {
+      "name": "ONE Wet Dog Food Tender Cuts in Gravy - Lamb & Brown Rice Entrée",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/purina-one-wet-dog-food-tender-cuts-in-gravy---lamb-and-brown-rice-entre-368g-59947.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Purina ONE",
+      "source_id": "5303629",
+      "images": [
+        "/products/purina/purina-food-one-wet-dog-food-tender-cuts-in-gravy-lamb-brown-rice-entr-e.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "368g",
+          "upc": "0055800410276",
+          "sku": "5303629"
+        }
+      ],
+      "ingredients_raw": "Lamb and Chicken Broth, Lamb, Wheat Gluten, Pork Lungs, Liver, Chicken, Brown Rice, Soy Flour, Carrots, Spinach, Egg Product, Guar Gum, Minerals, Locust Bean Gum, Tricalcium Phosphate, Vitamins, Choline Chloride",
+      "guaranteed_analysis": {
+        "crude_protein_min": 10.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 80.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "966 kcal/kg, 356 kcal/can"
+    },
+    {
+      "name": "Pro Plan Complete Essentials Adult Wet Dog Food - Classic Pate, Chicken & Rice",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/purina-pro-plan-complete-essentials-adult-wet-dog-food---classic-pate-chicken-and-rice-13-oz-90186.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Pro Plan",
+      "life_stage": "adult",
+      "source_id": "5067191",
+      "images": [
+        "/products/purina/purina-food-pro-plan-complete-essentials-adult-wet-dog-food-classic-pate-chicken-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "13 Oz",
+          "upc": "0038100026743",
+          "sku": "5067191"
+        }
+      ],
+      "ingredients_raw": "Chicken, Water, Liver, Meat By-Products, Rice, Fish, Guar Gum, MINERALS [Potassium Chloride, Zinc Sulfate, Ferrous Sulfate, Copper Sulfate, Manganese Sulfate, Potassium Iodide, Sodium Selenite], Salt, Carrageenan, VITAMINS [Vitamin E Supplement, Niacin (Vitamin B-3), Thiamine Mononitrate (Vitamin B-1), Calcium Pantothenate (Vitamin B-5), Pyridoxine Hydrochloride (Vitamin B-6), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Vitamin A Supplement, Folic Acid (Vitamin B-9), Vitamin D-3 Supplement, Biotin (Vitamin B-7)], Choline Chloride",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.0,
+        "crude_fat_min": 6.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1186 kcal/kg, 437 kcal/can"
+    },
+    {
+      "name": "Pro Plan Complete Essentials Adult Wet Dog Food - Grain Free, Chicken & Carrots",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/purina-pro-plan-complete-essentials-adult-wet-dog-food---grain-free-chicken-and-carrots-13-oz-47254.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Pro Plan",
+      "life_stage": "adult",
+      "source_id": "5191888",
+      "images": [
+        "/products/purina/purina-food-pro-plan-complete-essentials-adult-wet-dog-food-grain-free-chicken-carrots.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "13 oz",
+          "upc": "0038100153364",
+          "sku": "5191888"
+        }
+      ],
+      "ingredients_raw": "Chicken, Water, Liver, Meat By-Products, Carrots, Guar Gum, MINERALS [Potassium Chloride, Zinc Sulfate, Ferrous Sulfate, Copper Sulfate, Manganese Sulfate, Potassium Iodide, Sodium Selenite], Salt, Carrageenan, Fish Oil, VITAMINS [Vitamin E Supplement, Niacin (Vitamin B-3), Thiamine Mononitrate (Vitamin B-1), Calcium Pantothenate (Vitamin B-5), Pyridoxine Hydrochloride (Vitamin B-6), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Vitamin A Supplement, Folic Acid (Vitamin B-9), Vitamin D-3 Supplement, Biotin (Vitamin B-7)], Choline Chloride",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.0,
+        "crude_fat_min": 6.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1230 kcal/kg, 453 kcal/can"
+    },
+    {
+      "name": "Pro Plan Complete Essentials Adult Wet Dog Food - Grain Free, Turkey & Sweet Potato",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/purina-pro-plan-complete-essentials-adult-wet-dog-food---grain-free-turkey-and-sweet-potato-13-oz-47255.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Pro Plan",
+      "life_stage": "adult",
+      "source_id": "5191890",
+      "images": [
+        "/products/purina/purina-food-pro-plan-complete-essentials-adult-wet-dog-food-grain-free-turkey-sweet-potato.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "13 oz",
+          "upc": "0038100153388",
+          "sku": "5191890"
+        }
+      ],
+      "ingredients_raw": "Turkey, Water, Liver, Meat By-Products, Chicken, Sweet Potatoes, Guar Gum, MINERALS [Potassium Chloride, Zinc Sulfate, Ferrous Sulfate, Copper Sulfate, Manganese Sulfate, Potassium Iodide, Sodium Selenite], Salt, Carrageenan, Fish Oil, VITAMINS [Vitamin E Supplement, Niacin (Vitamin B-3), Thiamine Mononitrate (Vitamin B-1), Calcium Pantothenate (Vitamin B-5), Pyridoxine Hydrochloride (Vitamin B-6), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Vitamin A Supplement, Folic Acid (Vitamin B-9), Vitamin D-3 Supplement, Biotin (Vitamin B-7)], Choline Chloride",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.0,
+        "crude_fat_min": 6.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1191 kcal/kg, 438 kcal/can"
+    },
+    {
+      "name": "Pro Plan Complete Essentials Adult Wet Dog Food - In Gravy, Chicken & Vegetables",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/purina-pro-plan-complete-essentials-adult-wet-dog-food---in-gravy-chicken-and-vegetables-13-oz-90190.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Pro Plan",
+      "life_stage": "adult",
+      "source_id": "5098642",
+      "images": [
+        "/products/purina/purina-food-pro-plan-complete-essentials-adult-wet-dog-food-in-gravy-chicken-vegetables.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "13 Oz",
+          "sku": "5098642"
+        }
+      ],
+      "ingredients_raw": "Water, Chicken, Liver, Wheat Gluten, Turkey, Meat By-Products, Carrots, Corn Starch-Modified, Potatoes, Green Beans, MINERALS [Potassium Chloride, Zinc Sulfate, Ferrous Sulfate, Copper Sulfate, Manganese Sulfate, Potassium Iodide, Sodium Selenite], Salt, Tricalcium Phosphate, VITAMINS [Vitamin E Supplement, Niacin (Vitamin B-3), Thiamine Mononitrate (Vitamin B-1), Calcium Pantothenate (Vitamin B-5), Pyridoxine Hydrochloride (Vitamin B-6), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Vitamin A Supplement, Folic Acid (Vitamin B-9), Vitamin D-3 Supplement, Biotin (Vitamin B-7)], Calcium Carbonate, Choline Chloride",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.0,
+        "crude_fat_min": 2.5,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "892 kcal/kg, 398 kcal/can"
+    },
+    {
+      "name": "Pro Plan Complete Essentials Adult Wet Dog Food - Lamb & Vegetables",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/purina-pro-plan-complete-essentials-adult-wet-dog-food---lamb-and-vegetables-13-oz-90187.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Pro Plan",
+      "life_stage": "adult",
+      "source_id": "5067193",
+      "images": [
+        "/products/purina/purina-food-pro-plan-complete-essentials-adult-wet-dog-food-lamb-vegetables.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "13 oz",
+          "upc": "0038100026750",
+          "sku": "5067193"
+        }
+      ],
+      "ingredients_raw": "Water, Lamb, Liver, Wheat Gluten, Chicken, Meat By-Products, Carrots, Corn Starch-Modified, Potatoes, Green Beans, MINERALS [Potassium Chloride, Zinc Sulfate, Ferrous Sulfate, Copper Sulfate, Manganese Sulfate, Potassium Iodide, Sodium Selenite], Tricalcium Phosphate, Salt, VITAMINS [Vitamin E Supplement, Niacin (Vitamin B-3), Thiamine Mononitrate (Vitamin B-1), Calcium Pantothenate (Vitamin B-5), Pyridoxine Hydrochloride (Vitamin B-6), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Vitamin A Supplement, Folic Acid (Vitamin B-9), Vitamin D-3 Supplement, Biotin (Vitamin B-7)], Choline Chloride",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.0,
+        "crude_fat_min": 2.5,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "870 kcal/kg, 320 kcal/can"
+    },
+    {
+      "name": "Pro Plan Complete Essentials Adult Wet Dog Food - Turkey & Vegetables",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/purina-pro-plan-complete-essentials-adult-wet-dog-food---turkey-and-vegetables-13-oz-90188.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Pro Plan",
+      "life_stage": "adult",
+      "source_id": "5067306",
+      "images": [
+        "/products/purina/purina-food-pro-plan-complete-essentials-adult-wet-dog-food-turkey-vegetables.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "13 oz",
+          "upc": "0038100026767",
+          "sku": "5067306"
+        }
+      ],
+      "ingredients_raw": "Water, Turkey, Chicken, Wheat Gluten, Meat By-Products, Liver, Carrots, Potatoes, Green Beans, Corn Starch-Modified, MINERALS [Potassium Chloride, Zinc Sulfate, Ferrous Sulfate, Copper Sulfate, Manganese Sulfate, Potassium Iodide, Sodium Selenite], Tricalcium Phosphate, Salt, Choline Chloride, Calcium Carbonate, VITAMINS [Vitamin E Supplement, Niacin (Vitamin B-3), Thiamine Mononitrate (Vitamin B-1), Calcium Pantothenate (Vitamin B-5), Pyridoxine Hydrochloride (Vitamin B-6), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Vitamin A Supplement, Folic Acid (Vitamin B-9), Vitamin D-3 Supplement, Biotin (Vitamin B-7)]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.0,
+        "crude_fat_min": 2.5,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "858 kcal/kg, 316 kcal/can"
+    },
+    {
+      "name": "Pro Plan Complete Essentials Wet Dog Food - Beef & Rice Entrée",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/purina-pro-plan-complete-essentials-wet-dog-food---beef-and-rice-entre-368-g-71993.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Pro Plan",
+      "source_id": "5329166",
+      "images": [
+        "/products/purina/purina-food-pro-plan-complete-essentials-wet-dog-food-beef-rice-entr-e.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "368 g",
+          "upc": "0055800441768",
+          "sku": "5329166"
+        }
+      ],
+      "ingredients_raw": "Beef, Water, Liver, Meat By-Products, Chicken, Rice, Fish, Minerals [Potassium Chloride, Zinc Sulfate, Ferrous Sulfate, Copper Sulfate, Manganese Sulfate, Potassium Iodide, Sodium Selenite], Guar Gum, Salt, Carrageenan, Vitamins [Vitamin ESupplement, Niacin (Vitamin B-3), Thiamine Mononitrate (Vitamin B-1), Calcium Pantothenate (Vitamin B-5), Pyridoxine Hydrochloride (Vitamin B-6), Riboflavin Supplement (Vitamin B-2), Vitamin B-12 Supplement, Biotin (Vitamin B-7), Folic Acid (Vitamin B-9), Vitamin A Supplement, Vitamin D-3 Supplement], Choline Chloride",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.0,
+        "crude_fat_min": 6.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1218 kcal/kg, 448 kcal/can"
+    },
+    {
+      "name": "Pro Plan Development Puppy Wet Dog Food - Chicken & Rice",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/purina-pro-plan-development-puppy-wet-dog-food---chicken-and-rice-13-oz-2948.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Pro Plan",
+      "life_stage": "puppy",
+      "source_id": "5067364",
+      "images": [
+        "/products/purina/purina-food-pro-plan-development-puppy-wet-dog-food-chicken-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "13 oz",
+          "upc": "0038100026712",
+          "sku": "5067364"
+        }
+      ],
+      "ingredients_raw": "Chicken, Water, Liver, Meat By-Products, Salmon, Rice, MINERALS [Potassium Chloride, Zinc Sulfate, Ferrous Sulfate, Copper Sulfate, Manganese Sulfate, Potassium Iodide, Sodium Selenite], Guar Gum, Salt, Carrageenan, Choline Chloride, VITAMINS [Vitamin E Supplement, Niacin, Thiamine Mononitrate, Calcium Pantothenate, Pyridoxine Hydrochloride, Vitamin B-12 Supplement, Riboflavin Supplement, Vitamin A Supplement, Folic Acid, Vitamin D-3 Supplement, Biotin]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 10.0,
+        "crude_fat_min": 7.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1187 kcal/kg, 437 kcal/can"
+    },
+    {
+      "name": "Pro Plan Senior Adult 7+ Dog Wet Food",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/purina-pro-plan-senior-adult-7-dog-wet-food---13-oz-75547.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Pro Plan",
+      "life_stage": "senior",
+      "source_id": "5308599",
+      "images": [
+        "/products/purina/purina-food-pro-plan-senior-adult-7-dog-wet-food.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "13 Oz",
+          "upc": "0038100190376",
+          "sku": "5308599"
+        }
+      ],
+      "ingredients_raw": "Chicken, Liver, Water, Meat By-Products, Rice, MINERALS [Potassium Chloride, Zinc Sulfate, Ferrous Sulfate, Copper Sulfate, Manganese Sulfate, Potassium Iodide, Sodium Selenite], Guar Gum, Salt, VITAMINS [Vitamin E Supplement, Niacin (Vitamin B-3), Thiamine Mononitrate (Vitamin B-1), Calcium Pantothenate (Vitamin B-5), Pyridoxine Hydrochloride (Vitamin B-6), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Vitamin A Supplement, Folic Acid (Vitamin B-9), Vitamin D-3 Supplement, Biotin (Vitamin B-7)], Carrageenan, Choline Chloride",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.0,
+        "crude_fat_min": 6.5,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1084 kcal/kg, 399 kcal/can"
+    },
+    {
+      "name": "Pro Plan Senior Adult 7+ Wet Dog Food - Chicken & Rice Formula",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/purina-pro-plan-senior-adult-7-wet-dog-food---chicken-and-rice-formula-77621.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Pro Plan",
+      "life_stage": "senior",
+      "source_id": "5339581",
+      "images": [
+        "/products/purina/purina-food-pro-plan-senior-adult-7-wet-dog-food-chicken-rice-formula.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0055800452306",
+          "sku": "5339581"
+        }
+      ],
+      "ingredients_raw": "Chicken, Water, Liver, Meat By-Products, Rice, Minerals, Guar Gum, Salt, Vitamins, Carrageenan, Choline Chloride",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.0,
+        "crude_fat_min": 6.5,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1126 kcal/kg, 415 kcal/can"
+    },
+    {
+      "name": "Pro Plan Sensitive Skin & Stomach Adult Wet Dog Food - Classic Pate, Lamb & Oat Meal",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/purina-pro-plan-sensitive-skin-and-stomach-adult-wet-dog-food---classic-pate-lamb-and-oat-meal-13-oz-76211.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Pro Plan",
+      "life_stage": "adult",
+      "source_id": "5339669",
+      "images": [
+        "/products/purina/purina-food-pro-plan-sensitive-skin-stomach-adult-wet-dog-food-classic-pate-lamb-oat-meal.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "13 oz",
+          "upc": "0038100194978",
+          "sku": "5339669"
+        }
+      ],
+      "ingredients_raw": "Water, Liver, Lamb, Rice, Potato Protein, Oat Meal, Beef, Corn Oil, Minerals [Potassium Chloride, Zinc Sulfate, Ferrous Sulfate, Copper Sulfate, Manganese Sulfate, Potassium Iodide, Sodium Selenite], Inulin, Tricalcium Phosphate, Carrageenan, Locust Bean Gum, Xanthan Gum, Guar Gum, Vitamins [Vitamin E Supplement, Thiamine Mononitrate (Vitamin B-1), Niacin (Vitamin B-3), Calcium Pantothenate (Vitamin B-5), Vitamin A Supplement, Menadione Sodium Bisulfite Complex (Vitamin K), Pyridoxine Hydrochloride (Vitamin B-6), Riboflavin Supplement (Vitamin B-2), Vitamin B-12 Supplement, Biotin (Vitamin B-7), Folic Acid (Vitamin B-9), Vitamin D-3 Supplement], Choline Chloride, Salt",
+      "guaranteed_analysis": {
+        "crude_protein_min": 6.5,
+        "crude_fat_min": 4.5,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1019 kcal/kg, 375 kcal/can"
+    },
+    {
+      "name": "Pro Plan Sensitive Skin & Stomach Adult Wet Dog Food - Classic Pate, Salmon & Rice",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/purina-pro-plan-sensitive-skin-and-stomach-adult-wet-dog-food---classic-pate-salmon-and-rice-13-oz-78535.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Pro Plan",
+      "life_stage": "adult",
+      "source_id": "5343830",
+      "images": [
+        "/products/purina/purina-food-pro-plan-sensitive-skin-stomach-adult-wet-dog-food-classic-pate-salmon-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "13 oz",
+          "upc": "0038100196156",
+          "sku": "5343830"
+        }
+      ],
+      "ingredients_raw": "Water, Fish, Liver, Salmon, Rice, Potato Protein, Oat Meal, Corn Oil, Minerals [Potassium Chloride, Magnesium Sulfate, Zinc Sulfate, Ferrous Sulfate, Copper Sulfate, Manganese Sulfate, Potassium Iodide, Sodium Selenite], Inulin, Carrageenan, Locust Bean Gum, Tricalcium Phosphate, Xanthan Gum, Guar Gum, Choline Chloride, Vitamins [Vitamin E Supplement, Thiamine Mononitrate (Vitamin B-1), Niacin (Vitamin B-3), Calcium Pantothenate (Vitamin B-5), Vitamin A Supplement, Menadione Sodium Bisulfite Complex (Vitamin K), Pyridoxine Hydrochloride (Vitamin B-6), Riboflavin Supplement (Vitamin B-2), Vitamin B-12 Supplement, Biotin (Vitamin B-7), Folic Acid (Vitamin B-9), Vitamin D-3 Supplement]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 6.5,
+        "crude_fat_min": 4.5,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1006 kcal/kg, 370 kcal/can"
+    },
+    {
+      "name": "Pro Plan Small Breed Adult Dog Wet Food - Chicken & Carrots Entree in Gravy",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/purina-pro-plan-small-breed-adult-dog-wet-food---chicken-and-carrots-entree-in-gravy-55-oz-84332.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Pro Plan",
+      "life_stage": "adult",
+      "breed_size": "Small",
+      "source_id": "5353732",
+      "images": [
+        "/products/purina/purina-food-pro-plan-small-breed-adult-dog-wet-food-chicken-carrots-entree-in-gravy.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "5.5 oz",
+          "upc": "0038100102072",
+          "sku": "5353732"
+        }
+      ],
+      "ingredients_raw": "Water, Chicken, Wheat Gluten, Liver, Meat By-Products, Carrots, Brown Rice, Soy Flour, Corn Starch-Modified, MINERALS [Potassium Chloride, Zinc Sulfate, Ferrous Sulfate, Copper Sulfate, Manganese Sulfate, Potassium Iodide, Sodium Selenite], Fish, Tricalcium Phosphate, VITAMINS [Vitamin E Supplement, Niacin (Vitamin B-3), Thiamine Mononitrate (Vitamin B-1), Calcium Pantothenate (Vitamin B-5), Pyridoxine Hydrochloride (Vitamin B-6), Riboflavin Supplement (Vitamin B-2), Vitamin B-12 Supplement, Biotin (Vitamin B-7), Folic Acid (Vitamin B-9), Vitamin A Supplement, Vitamin D-3 Supplement], Choline Chloride, Calcium Carbonate",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.5,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "964 kcal/kg, 150 kcal/can"
+    },
+    {
+      "name": "Pro Plan Specialized Large Breed Adult Wet Dog Food - Chicken & Rice",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/purina-pro-plan-specialized-large-breed-adult-wet-dog-food---chicken-and-rice-13-oz-90191.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Pro Plan",
+      "life_stage": "adult",
+      "breed_size": "Large",
+      "source_id": "5067359",
+      "images": [
+        "/products/purina/purina-food-pro-plan-specialized-large-breed-adult-wet-dog-food-chicken-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "13 oz",
+          "upc": "0038100026781",
+          "sku": "5067359"
+        }
+      ],
+      "ingredients_raw": "Water, Chicken, Liver, Wheat Gluten, Rice, Turkey, Meat By-Products, Corn Starch-Modified, MINERALS [Potassium Chloride, Zinc Sulfate, Ferrous Sulfate, Copper Sulfate, Manganese Sulfate, Potassium Iodide, Sodium Selenite], Tricalcium Phosphate, Salt, VITAMINS [Vitamin E Supplement, Niacin (Vitamin B-3), Thiamine Mononitrate (Vitamin B-1), Calcium Pantothenate (Vitamin B-5), Pyridoxine Hydrochloride (Vitamin B-6), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Vitamin A Supplement, Folic Acid (Vitamin B-9), Vitamin D-3 Supplement, Biotin (Vitamin B-7)], L-Ascorbyl-2-Polyphosphate (Vitamin C), Choline Chloride",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.0,
+        "crude_fat_min": 2.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 82.0,
+        "phosphorus_min": 0.1,
+        "calcium_min": 0.12
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "856 kcal/kg, 315 kcal/can"
+    },
+    {
+      "name": "Pro Plan Specialized Small Breed Wet Dog Food - Beef & Green Beans Entrée",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/purina-pro-plan-specialized-small-breed-wet-dog-food---beef-and-green-beans-entre-156-g-90910.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Pro Plan",
+      "breed_size": "Small",
+      "source_id": "5363855",
+      "images": [
+        "/products/purina/purina-food-pro-plan-specialized-small-breed-wet-dog-food-beef-green-beans-entr-e.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "156 g",
+          "upc": "0055800488718",
+          "sku": "5363855"
+        }
+      ],
+      "ingredients_raw": "Water, Beef, Wheat Gluten, Liver, Meat By-Products, Green Beans, Chicken, Brown Rice, Soy Flour, Corn Starch-Modified, Turkey, Fish, Tricalcium Phosphate, MINERALS [Potassium Chloride, Zinc Sulfate, Ferrous Sulfate, Copper Sulfate, Manganese Sulfate, Potassium Iodide, Sodium Selenite], VITAMINS [Vitamin E Supplement, Niacin (Vitamin B-3), Thiamine Mononitrate (Vitamin B-1), Calcium Pantothenate (Vitamin B-5), Pyridoxine Hydrochloride (Vitamin B-6), Riboflavin Supplement (Vitamin B-2), Vitamin B-12 Supplement, Biotin (Vitamin B-7), Folic Acid (Vitamin B-9), Vitamin A Supplement, Vitamin D-3 Supplement], Choline Chloride, Calcium Carbonate",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.5,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "959 kcal/kg, 149 kcal/can"
+    },
+    {
+      "name": "Pro Plan Weight Management Adult Wet Dog Food - Turkey & Rice",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/purina-pro-plan-weight-management-adult-wet-dog-food---turkey-and-rice-13-oz-2947.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Pro Plan",
+      "life_stage": "adult",
+      "source_id": "5067378",
+      "images": [
+        "/products/purina/purina-food-pro-plan-weight-management-adult-wet-dog-food-turkey-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "13 oz",
+          "upc": "0038100026873",
+          "sku": "5067378"
+        }
+      ],
+      "ingredients_raw": "Water, Turkey, Liver, Wheat Gluten, Chicken, Rice, Corn Starch-modified, Meat By-products, MineralsÃ¢ÂÂ¯[potassium Chloride, Zinc Sulfate, Ferrous Sulfate, Copper Sulfate, Manganese Sulfate, Potassium Iodide, Sodium Selenite], Tricalcium Phosphate, Salt, Choline Chloride, VITAMINS [Vitamin E Supplement, Niacin (Vitamin B-3), Thiamine Mononitrate (Vitamin B-1), Calcium Pantothenate (Vitamin B-5), Pyridoxine Hydrochloride (Vitamin B-6), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Vitamin A Supplement, Folic Acid (Vitamin B-9), Vitamin D-3 Supplement, Biotin (Vitamin B-7)]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.0,
+        "crude_fat_min": 2.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "813 kcal/kg, 299 kcal/can"
+    },
+    {
+      "name": "Beyond Dry Puppy Food - Chicken & Oat Meal Recipe",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/beyond-dry-puppy-food----chicken-and-oat-meal-recipe-83299.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Beyond",
+      "life_stage": "puppy",
+      "source_id": "5326575",
+      "images": [
+        "/products/purina/purina-food-beyond-dry-puppy-food-chicken-oat-meal-recipe.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0055800435460",
+          "sku": "5326575"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0055800465146",
+          "sku": "5351447"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Meal, Rice, Oat Meal, Barley, Beef Fat Preserved with Mixed-Tocopherols, Canola Meal, Dried Yeast, Pea Protein, Dried Egg Product, Natural Flavour, Fish Oil, Pumpkin, Salt, L-Lysine Monohydrochloride, Dried Chicory Root, Potassium Chloride, Minerals [Zinc Sulphate, Ferrous Sulphate, Manganese Sulphate, Copper Sulphate, Calcium Iodate, Sodium Selenite], Calcium Carbonate, Mono and Dicalcium Phosphate, Vitamins [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Thiamine Mononitrate (Vitamin B-1), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Menadione Sodium Bisulphite Complex (Vitamin K), Vitamin D-3 Supplement, Biotin (Vitamin B-7)], Choline Chloride, Taurine, L-Ascorbyl-2-Polyphosphate (Vitamin C), Dried Bacillus Coagulans Fermentation Product, DL-Methionine",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 12.0,
+        "dha_min": 0.08,
+        "phosphorus_min": 0.9,
+        "omega_6_min": 1.6
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3747 kcal/kg"
+    },
+    {
+      "name": "Beyond Simply Dry Dog Food - Farm-Raised Beef, Barley & Free Run Egg",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/beyond-simply-dry-dog-food---farm-raised-beef-barley-and-free-run-egg-71991.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Beyond",
+      "source_id": "5326579",
+      "images": [
+        "/products/purina/purina-food-beyond-simply-dry-dog-food-farm-raised-beef-barley-free-run-egg.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0055800429612",
+          "sku": "5326579"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0055800467638",
+          "sku": "5351446"
+        }
+      ],
+      "ingredients_raw": "Beef, Chicken Meal, Whole Barley, Canola Meal, Pea Starch, Beef Fat Preserved with Mixed-Tocopherols, Cassava Root Flour, Dried Egg Product, Pea Protein, Dried Beet Pulp, Dried Yeast, Natural Flavour, Sunflower Oil, Calcium Carbonate, Potassium Chloride, Salt, Dried Peas, Mono and Dicalcium Phosphate, DL-Methionine, Minerals [Zinc Sulphate, Ferrous Sulphate, Manganese Sulphate, Copper Sulphate, Calcium Iodate, Sodium Selenite], Vitamins [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Thiamine Mononitrate (Vitamin B-1), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Menadione Sodium Bisulphite Complex (Vitamin K), Vitamin D-3 Supplement, Biotin (Vitamin B-7)], Taurine, Choline Chloride, Dried Bacillus Coagulans Fermentation Product",
+      "guaranteed_analysis": {
+        "crude_protein_min": 27.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 12.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3700 kcal/kg"
+    },
+    {
+      "name": "Beyond Simply Dry Dog Food - Farm-Raised Chicken & Whole Barley Recipe",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/beyond-simply-dry-dog-food---farm-raised-chicken-and-whole-barley-recipe-51852.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Beyond",
+      "source_id": "5283643",
+      "images": [
+        "/products/purina/purina-food-beyond-simply-dry-dog-food-farm-raised-chicken-whole-barley-recipe.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0055800329264",
+          "sku": "5283643"
+        }
+      ],
+      "ingredients_raw": "Chicken, Rice, Whole Barley, Canola Meal, Chicken Meal, Whole Oat Meal, Beef Fat Preserved with Mixed-Tocopherols, Natural Flavour, Sunflower Oil, Salt, Calcium Carbonate, Potassium Chloride, Dried Carrots, Vitamins [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Thiamine Mononitrate (Vitamin B-1), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Menadione Sodium Bisulphite Complex (Vitamin K), Vitamin D-3 Supplement, Biotin (Vitamin B-7)], Minerals [Zinc Sulphate, Ferrous Sulphate, Manganese Sulphate, Copper Sulphate, Calcium Iodate, Sodium Selenite], Choline Chloride, Dried Bacillus Coagulans Fermentation Product",
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 12.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8,
+        "omega_6_min": 1.6
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3570 kcal/kg, 411 kcal/cup"
+    },
+    {
+      "name": "Beyond Superfood Blend Dry Dog Food - Wild Caught Salmon, Egg & Pumpkin Recipe",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/beyond-superfood-blend-dry-dog-food---wild-caught-salmon-egg-and-pumpkin-recipe-51853.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Beyond",
+      "source_id": "5283642",
+      "images": [
+        "/products/purina/purina-food-beyond-superfood-blend-dry-dog-food-wild-caught-salmon-egg-pumpkin-recipe.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0055800330512",
+          "sku": "5283642"
+        }
+      ],
+      "ingredients_raw": "Salmon, Rice, Whole Barley, Chicken Meal, Whole Oat Meal, Beef Fat Preserved with Mixed-Tocopherols, Canola Meal, Dried Egg Product, Pea Protein, Dried Yeast, Natural Flavour, Calcium Carbonate, Fish Oil, Pumpkin, Mono and Dicalcium Phosphate, Potassium Chloride, Salt, Minerals [Zinc Sulphate, Ferrous Sulphate, Manganese Sulphate, Copper Sulphate, Calcium Iodate, Sodium Selenite], Vitamins [Vitamin E Supplement, Niacin (Vitamin B-3), Thiamine Mononitrate (Vitamin B-1), Calcium Pantothenate (Vitamin B-5), Vitamin A Supplement, Riboflavin Supplement (Vitamin B-2), Vitamin B-12 Supplement, Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Menadione Sodium Bisulphite Complex (Vitamin K), Biotin (Vitamin B-7), Vitamin D-3 Supplement], L-Lysine Monohydrochloride, Choline Chloride, Dried Bacillus Coagulans Fermentation Product",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 12.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8,
+        "omega_3_min": 0.3,
+        "omega_6_min": 1.6
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3740 kcal/kg, 437 kcal/cup"
+    },
+    {
+      "name": "Beyond Wild Dry Dog Food - Turkey, Egg & Bone Broth Recipe",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/beyond-wild-dry-dog-food---turkey-egg-and-bone-broth-recipe-90904.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "sub_brand": "Beyond",
+      "source_id": "5363849",
+      "images": [
+        "/products/purina/purina-supplement-beyond-wild-dry-dog-food-turkey-egg-bone-broth-recipe.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0055800475138",
+          "sku": "5363849"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0055800475398",
+          "sku": "5364626"
+        }
+      ],
+      "ingredients_raw": "Turkey, Chicken Meal, Pea Starch, Cassava Root Flour, Canola Meal, Dried Egg Product, Beef Fat Preserved with Mixed-Tocopherols, Beet Pulp, Dried Yeast, Beef Bone Broth, Pea Protein, Natural Flavour, Apples, Potassium Chloride, Salt, Taurine, Calcium Carbonate, DL-Methionine, Minerals [Zinc Sulphate, Ferrous Sulphate, Manganese Sulphate, Copper Sulphate, Calcium Iodate, Sodium Selenite], Vitamins [Vitamin E Supplement, Niacin (Vitamin B-3), Thiamine Mononitrate (Vitamin B-1), Calcium Pantothenate (Vitamin B-5), Vitamin A Supplement, Riboflavin Supplement (Vitamin B-2), Vitamin B-12 Supplement, Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Menadione Sodium Bisulphite Complex (Vitamin K), Biotin (Vitamin B-7), Vitamin D-3 Supplement], Choline Chloride",
+      "guaranteed_analysis": {
+        "crude_protein_min": 27.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 12.0,
+        "phosphorus_min": 0.8
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3777 kcal/kg"
+    },
+    {
+      "name": "Dog Chow Complete Adult with Real Chicken Dry Dog Food",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/purina-dog-chow-complete-adult-with-real-chicken-dry-dog-food-76941.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Dog Chow",
+      "life_stage": "adult",
+      "source_id": "5340715",
+      "images": [
+        "/products/purina/purina-food-dog-chow-complete-adult-with-real-chicken-dry-dog-food.webp"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0055800453082",
+          "sku": "5340715"
+        }
+      ],
+      "ingredients_raw": "Whole Grain Corn, Meat And Bone Meal, Corn Gluten Meal, Beef Fat Preserved with Mixed-Tocopherols, Soybean Meal, Poultry By-Product Meal, Chicken, Egg and Chicken Flavour, Whole Grain Wheat, Pork & Poultry Digest, Salt, Calcium Carbonate, Potassium Chloride, Mono and Dicalcium Phosphate, Choline Chloride, L-Lysine Monohydrochloride, Minerals [Zinc Sulphate, Ferrous Sulphate, Manganese Sulphate, Copper Sulphate, Calcium Iodate, Sodium Selenite], Vitamins [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Pyridoxine Hydrochloride (Vitamin B-6), Vitamin B-12 Supplement, Thiamine Mononitrate (Vitamin B-1), Vitamin D-3 Supplement, Riboflavin Supplement (Vitamin B-2), Menadione Sodium Bisulphite Complex (Vitamin K), Folic Acid (Vitamin B-9), Biotin (Vitamin B-7)], Yellow 6, Yellow 5, Red 40, Soybean Oil, Blue 2, Garlic Oil",
+      "guaranteed_analysis": {
+        "crude_protein_min": 21.0,
+        "crude_fat_min": 10.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 12.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3559 kcal/kg, 416 kcal/cup"
+    },
+    {
+      "name": "ONE Microbiome Balance Dry Dog Food - Beef & Rice Formula",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/purina-one-microbiome-balance-dry-dog-food---beef-and-rice-formula-90906.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Purina ONE",
+      "source_id": "5363851",
+      "images": [
+        "/products/purina/purina-food-one-microbiome-balance-dry-dog-food-beef-rice-formula.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0055800476074",
+          "sku": "5363851"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0055800477330",
+          "sku": "5363852"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0055800477460",
+          "sku": "5363853"
+        }
+      ],
+      "ingredients_raw": "Beef, Rice, Corn Protein Meal, Whole Grain Corn, Chicken By-Product Meal, Soybean Meal, Beef Fat Preserved with Mixed-Tocopherols, Oat Meal, Whole Grain Wheat, Natural Flavour, Glycerin, Calcium Carbonate, Mono and Dicalcium Phosphate, Soybean Oil, Dried Chicory Root, Salt, Potassium Chloride, Vegetable Juice (Colour), Dried Peas, Dried Carrots, Vitamins [Vitamin E Supplement, Niacin (Vitamin B-3), Thiamine Mononitrate (Vitamin B-1), Calcium Pantothenate (Vitamin B-5), Vitamin A Supplement, Riboflavin Supplement (Vitamin B-2), Vitamin B-12 Supplement, Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Menadione Sodium Bisulphite Complex (Vitamin K), Biotin (Vitamin B-7), Vitamin D-3 Supplement], Minerals [Zinc Sulphate, Ferrous Sulphate, Manganese Sulphate, Copper Sulphate, Calcium Iodate, Sodium Selenite], Choline Chloride, DL-Methionine, L-Lysine Monohydrochloride",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 12.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8,
+        "omega_6_min": 1.6
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4158 kcal/kg, 405 kcal/cup"
+    },
+    {
+      "name": "ONE Microbiome Balance Dry Dog Food - Chicken & Rice Formula",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/purina-one-microbiome-balance-dry-dog-food---chicken-and-rice-formula-3511.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Purina ONE",
+      "source_id": "5176092",
+      "images": [
+        "/products/purina/purina-food-one-microbiome-balance-dry-dog-food-chicken-rice-formula.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0055800167644",
+          "sku": "5176092"
+        }
+      ],
+      "ingredients_raw": "Chicken, Rice Flour, Corn Protein Meal, Whole Grain Corn, Chicken By-Product Meal, Whole Grain Wheat, Soybean Meal, Beef Fat Preserved with Mixed-Tocopherols, Natural Flavour, Glycerin, Calcium Carbonate, Mono and Dicalcium Phosphate, Dried Chicory Root, Salt, Potassium Chloride, Dried Carrots, Dried Peas, Vegetable Juice (Colour), Vitamins [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Thiamine Mononitrate (Vitamin B-1), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Vitamin D-3 Supplement, Menadione Sodium Bisulphite Complex (Vitamin K), Biotin (Vitamin B-7)], Minerals [Zinc Sulphate, Ferrous Sulphate, Manganese Sulphate, Copper Sulphate, Calcium Iodate, Sodium Selenite], Choline Chloride, DL-Methionine, L-Lysine Monohydrochloride",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 12.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8,
+        "omega_6_min": 1.6
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4004 kcal/kg, 383 kcal/cup"
+    },
+    {
+      "name": "ONE Microbiome Balance Dry Dog Food - Lamb & Rice Formula",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/purina-one-microbiome-balance-dry-dog-food---lamb-and-rice-formula-3512.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Purina ONE",
+      "source_id": "5166841",
+      "images": [
+        "/products/purina/purina-food-one-microbiome-balance-dry-dog-food-lamb-rice-formula.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0055800163790",
+          "sku": "5166841"
+        }
+      ],
+      "ingredients_raw": "Lamb, Rice Flour, Whole Grain Corn, Whole Grain Wheat, Chicken By-Product Meal, Corn Protein Meal, Soybean Meal, Beef Fat Preserved with Mixed-Tocopherols, Glycerin, Natural Flavour, Calcium Carbonate, Mono and Dicalcium Phosphate, Dried Chicory Root, Salt, Soybean Oil, Potassium Chloride, Vegetable Juice (Colour), Dried Carrots, Dried Peas, DL-Methionine, Vitamins [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Thiamine Mononitrate (Vitamin B-1), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Vitamin D-3 Supplement, Menadione Sodium Bisulphite Complex (Vitamin K), Biotin (Vitamin B-7)], Minerals [Zinc Sulphate, Ferrous Sulphate, Manganese Sulphate, Copper Sulphate, Calcium Iodate, Sodium Selenite], Choline Chloride, L-Lysine Monohydrochloride",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 12.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8,
+        "omega_6_min": 1.6
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3862 kcal/kg, 369 kcal/cup"
+    },
+    {
+      "name": "ONE +Plus Healthy Puppy Dry Food Formula- Lamb",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/purina-one-plus-healthy-puppy-dry-food-formula--lamb-42285.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Purina ONE",
+      "life_stage": "puppy",
+      "source_id": "5264848",
+      "images": [
+        "/products/purina/purina-food-one-plus-healthy-puppy-dry-food-formula-lamb.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0055800250278",
+          "sku": "5264848"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0055800446848",
+          "sku": "5289364"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0055800453952",
+          "sku": "5353183"
+        }
+      ],
+      "ingredients_raw": "Lamb, Rice, Corn Protein Meal, Poultry By-Product Meal, Whole Grain Corn, Soybean Meal, Oat Meal, Beef Fat Preserved with Mixed-Tocopherols, Glycerin, Natural Flavour, Mono and Dicalcium Phosphate, Fish Oil, Calcium Carbonate, Salt, Potassium Chloride, Vegetable Juice (Colour), Vitamins [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Thiamine Mononitrate (Vitamin B-1), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Vitamin D-3 Supplement, Menadione Sodium Bisulphite Complex (Vitamin K), Biotin (Vitamin B-7)], Minerals [Zinc Sulphate, Ferrous Sulphate, Manganese Sulphate, Copper Sulphate, Calcium Iodate, Sodium Selenite], Choline Chloride, L-Lysine Monohydrochloride, Garlic Oil",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 12.0,
+        "calcium_min": 1.1,
+        "phosphorus_min": 0.9,
+        "omega_6_min": 1.6
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3835 kcal/kg"
+    },
+    {
+      "name": "ONE +Plus Healthy Weight Dry Dog Food - Turkey",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/purina-one-plus-healthy-weight-dry-dog-food----turkey-7-kg-71979.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Purina ONE",
+      "source_id": "5326576",
+      "images": [
+        "/products/purina/purina-food-one-plus-healthy-weight-dry-dog-food-turkey.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "7 kg",
+          "upc": "0055800414670",
+          "sku": "5326576"
+        }
+      ],
+      "ingredients_raw": "Turkey, Rice Flour, Soybean Meal, Corn Gluten Meal, Chicken By-Product Meal, Oat Meal, Whole Grain Wheat, Corn Germ Meal, Whole Grain Corn, Soybean Germ Meal, Beef Fat Preserved with Mixed-Tocopherols, Glycerin, Natural Flavour, Calcium Carbonate, Salt, Mono and Dicalcium Phosphate, Dried Carrots, Dried Peas, Vegetable Juice (Colour), Potassium Chloride, Vitamins [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Thiamine Mononitrate (Vitamin B-1), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Vitamin D-3 Supplement, Menadione Sodium Bisulphite Complex (Vitamin K), Biotin (Vitamin B-7)], Minerals (Zinc Sulphate, Ferrous Sulphate, Manganese Sulphate, Copper Sulphate, Calcium Iodate, Sodium Selenite), Choline Chloride, L-Lysine Monohydrochloride",
+      "guaranteed_analysis": {
+        "crude_protein_min": 27.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 5.5,
+        "moisture_max": 12.0,
+        "calcium_min": 0.9,
+        "phosphorus_min": 0.7,
+        "omega_6_min": 1.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3400 kcal/kg, 325 kcal/cup"
+    },
+    {
+      "name": "ONE +Plus Large Breed Formula Dry Dog Food - Chicken",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/purina-one-plus-large-breed-formula-dry-dog-food---chicken-77626.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Purina ONE",
+      "breed_size": "Large",
+      "source_id": "5326580",
+      "images": [
+        "/products/purina/purina-food-one-plus-large-breed-formula-dry-dog-food-chicken.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0055800427540",
+          "sku": "5326580"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0055800116550",
+          "sku": "5339665"
+        }
+      ],
+      "ingredients_raw": "Chicken, Rice Flour, Chicken By-Product Meal, Corn Protein Meal, Whole Grain Wheat, Soybean Meal, Whole Grain Corn, Beef Fat Preserved with Mixed-Tocopherols, Soybean Hulls, Oat Meal, Natural Flavour, Glycerin, Mono and Dicalcium Phosphate, Salt, Calcium Carbonate, Potassium Citrate, Dried Peas, Dried Carrots, Vitamins [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Thiamine Mononitrate (Vitamin B-1), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Vitamin D-3 Supplement, Menadione Sodium Bisulphite Complex (Vitamin K), Biotin (Vitamin B-7)], Vegetable Juice (Colour), Minerals [Zinc Sulphate, Ferrous Sulphate, Manganese Sulphate, Copper Sulphate, Calcium Iodate, Sodium Selenite], Choline Chloride, Potassium Chloride, L-Ascorbyl-2-Polyphosphate (Vitamin C), L-Lysine Monohydrochloride",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 12.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8,
+        "omega_6_min": 1.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3898 kcal/kg"
+    },
+    {
+      "name": "ONE +Plus Large Breed Puppy Formula Dry Food - Chicken",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/purina-one-plus-large-breed-puppy-formula-dry-food---chicken-14-kg-58319.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Purina ONE",
+      "life_stage": "puppy",
+      "breed_size": "Large",
+      "source_id": "5298933",
+      "images": [
+        "/products/purina/purina-food-one-plus-large-breed-puppy-formula-dry-food-chicken.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "14 kg",
+          "upc": "0055800378828",
+          "sku": "5298933"
+        }
+      ],
+      "ingredients_raw": "Chicken, Rice Flour, Soybean Meal, Corn Protein Meal, Chicken By-Product Meal, Whole Grain Wheat, Whole Grain Corn, Beef Fat Preserved with Mixed-Tocopherols, Pea Fibre, Natural Flavour, Glycerin, Dried Egg Product, Fish Oil, Mono and Dicalcium Phosphate, Salt, Calcium Carbonate, Dried Carrots, Dried Peas, Vegetable Juice (Colour), Potassium Chloride, Vitamins [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Thiamine Mononitrate (Vitamin B-1), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Vitamin D-3 Supplement, Menadione Sodium Bisulphite Complex (Vitamin K), Biotin (Vitamin B-7)], Minerals [Zinc Sulphate, Ferrous Sulphate, Manganese Sulphate, Copper Sulphate, Calcium Iodate, Sodium Selenite], Potassium Citrate, Choline Chloride, L-Lysine Monohydrochloride",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.0,
+        "crude_fat_min": 13.0,
+        "crude_fiber_max": 6.0,
+        "moisture_max": 12.0,
+        "dha_min": 0.05,
+        "calcium_min": 1.1,
+        "phosphorus_min": 0.9,
+        "omega_6_min": 1.8
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3694 kcal/kg, 353 kcal/cup"
+    },
+    {
+      "name": "ONE +Plus Skin & Coat Dry Dog Food - Salmon",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/purina-one-plus-skin-and-coat-dry-dog-food---salmon-83419.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Purina ONE",
+      "source_id": "5353257",
+      "images": [
+        "/products/purina/purina-food-one-plus-skin-coat-dry-dog-food-salmon.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0055800467928",
+          "sku": "5353257"
+        }
+      ],
+      "ingredients_raw": "Salmon, Rice Flour, Pearled Barley, Oat Meal, Corn Gluten Meal, Chicken By-Product Meal, Beef Fat Preserved with Mixed-Tocopherols, Natural Flavour, Mono And Dicalcium Phosphate, Fish Oil, Salt, Calcium Carbonate, Potassium Chloride, Dried Carrots, Dried Peas, Vitamins [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Thiamine Mononitrate (Vitamin B-1), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Menadione Sodium Bisulphite Complex (Vitamin K), Vitamin D-3 Supplement, Biotin (Vitamin B-7)], Minerals [Zinc Sulphate, Ferrous Sulphate, Manganese Sulphate, Copper Sulphate, Calcium Iodate, Sodium Selenite], Choline Chloride, L-Lysine Monohydrochloride",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 12.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8,
+        "omega_3_min": 0.7,
+        "omega_6_min": 1.6
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4235 kcal/kg, 495 kcal/cup"
+    },
+    {
+      "name": "ONE +Plus Small Breed Formula, Dry Dog Food - Beef",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/purina-one-plus-small-breed-formula-dry-dog-food---beef-42286.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Purina ONE",
+      "breed_size": "Small",
+      "source_id": "5264847",
+      "images": [
+        "/products/purina/purina-food-one-plus-small-breed-formula-dry-dog-food-beef.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0055800249890",
+          "sku": "5264847"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0055800351432",
+          "sku": "5326214"
+        }
+      ],
+      "ingredients_raw": "Beef, Poultry By-Product Meal, Rice, Corn Protein Meal, Whole Grain Corn, Beef Fat Preserved with Mixed-Tocopherols, Soybean Meal, Whole Grain Wheat, Oat Meal, Natural Flavour, Glycerin, Calcium Carbonate, Salt, Potassium Chloride, Mono and Dicalcium Phosphate, Vitamins [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Thiamine Mononitrate (Vitamin B-1), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Vitamin D-3 Supplement, Menadione Sodium Bisulphite Complex (Vitamin K), Biotin (Vitamin B-7)], Choline Chloride, Minerals [Zinc Sulphate, Ferrous Sulphate, Manganese Sulphate, Copper Sulphate, Calcium Iodate, Sodium Selenite], Taurine, Vegetable Juice (Colour), L-Lysine Monohydrochloride, Garlic Oil",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.0,
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 12.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3822 kcal/kg, 365 kcal/cup"
+    },
+    {
+      "name": "ONE True Instinct, Dry Dog Food - Salmon & Tuna",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/purina-one-true-instinct-dry-dog-food----salmon-and-tuna-83420.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Purina ONE",
+      "source_id": "5351449",
+      "images": [
+        "/products/purina/purina-food-one-true-instinct-dry-dog-food-salmon-tuna.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0055800215680",
+          "sku": "5351449"
+        }
+      ],
+      "ingredients_raw": "Salmon, Chicken Meal, Soy Flour, Whole Grain Wheat, Beef Fat Preserved with Mixed-Tocopherols, Whole Grain Corn, Corn Protein Meal, Soy Flakes, Corn Germ Meal, Rice, Tuna, Oat Meal, Glycerin, Natural Flavour, Calcium Carbonate, Soybean Oil, Salt, Fish Oil, Mono and Dicalcium Phosphate, Vegetable Juice (Colour), Vitamins [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Thiamine Mononitrate (Vitamin B-1), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Vitamin D-3 Supplement, Menadione Sodium Bisulphite Complex (Vitamin K), Biotin (Vitamin B-7)], Minerals [Zinc Sulphate, Ferrous Sulphate, Manganese Sulphate, Copper Sulphate, Calcium Iodate, Sodium Selenite], Choline Chloride",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 12.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8,
+        "omega_3_min": 0.5,
+        "omega_6_min": 1.7
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3741 kcal/kg, 338 kcal/cup"
+    },
+    {
+      "name": "ONE True Instinct Dry Dog Food - Beef & Bison",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/purina-one-true-instinct-dry-dog-food---beef-and-bison-71974.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Purina ONE",
+      "source_id": "5326211",
+      "images": [
+        "/products/purina/purina-food-one-true-instinct-dry-dog-food-beef-bison.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0055800431486",
+          "sku": "5326211"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0055800431516",
+          "sku": "5326577"
+        }
+      ],
+      "ingredients_raw": "Beef, Chicken Meal, Soy Flour, Whole Grain Wheat, Beef Fat Preserved with Mixed-Tocopherols, Corn Protein Meal, Whole Grain Corn, Soy Flakes, Canola Meal, Corn Germ Meal, Bison, Rice Flour, Glycerin, Oat Meal, Natural Flavour, Calcium Carbonate, Salt, Soybean Oil, Mono and Dicalcium Phosphate, Vegetable Juice (Colour), Potassium Chloride, Vitamins [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Thiamine Mononitrate (Vitamin B-1), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Vitamin D-3 Supplement, Menadione Sodium Bisulphite Complex (Vitamin K), Biotin (Vitamin B-7)], Minerals [Zinc Sulphate, Ferrous Sulphate, Manganese Sulphate, Copper Sulphate, Calcium Iodate, Sodium Selenite], Choline Chloride",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 12.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3999 kcal/kg"
+    },
+    {
+      "name": "ONE True Instinct Dry Dog Food - Beef & Salmon",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/purina-one-true-instinct-dry-dog-food---beef-and-salmon-172-kg-58318.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Purina ONE",
+      "source_id": "5298932",
+      "images": [
+        "/products/purina/purina-food-one-true-instinct-dry-dog-food-beef-salmon.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "1.72 kg",
+          "upc": "0055800374394",
+          "sku": "5298932"
+        }
+      ],
+      "ingredients_raw": "Beef, Chicken Meal, Soybean Meal, Ground Wheat, Beef Fat Preserved with Mixed-Tocopherols, Corn Protein Meal, Soy Flour, Canola Meal, Corn Germ Meal, Whole Grain Corn, Glycerin, Salmon, Rice, Natural Flavour, Soy Protein Concentrate, Oat Meal, Salt, Soybean Oil, Calcium Carbonate, Vegetable Juice (Colour), Potassium Chloride, Mono and Dicalcium Phosphate, Vitamins [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Thiamine Mononitrate (Vitamin B-1), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Vitamin D-3 Supplement, Menadione Sodium Bisulphite Complex (Vitamin K), Biotin (Vitamin B-7)], Minerals [Zinc Sulphate, Ferrous Sulphate, Manganese Sulphate, Copper Sulphate, Calcium Iodate, Sodium Selenite], Choline Chloride",
+      "guaranteed_analysis": {
+        "crude_protein_min": 32.0,
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 12.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8,
+        "omega_6_min": 1.7
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4096 kcal/kg, 399 kcal/cup"
+    },
+    {
+      "name": "ONE True Instinct Dry Dog Food - Turkey & Venison",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/purina-one-true-instinct-dry-dog-food---turkey-and-venison-31342.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Purina ONE",
+      "source_id": "5237221",
+      "images": [
+        "/products/purina/purina-food-one-true-instinct-dry-dog-food-turkey-venison.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0055800216076",
+          "sku": "5237221"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0055800215970",
+          "sku": "5257454"
+        }
+      ],
+      "ingredients_raw": "Turkey, Chicken Meal, Soy Flour, Beef Fat Preserved with Mixed-Tocopherols, Whole Grain Wheat, Whole Grain Corn, Corn Protein Meal, Soy Flakes, Corn Germ Meal, Glycerin, Venison, Natural Flavour, Oat Meal, Calcium Carbonate, Salt, Mono and Dicalcium Phosphate, Vitamins [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Thiamine Mononitrate (Vitamin B-1), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Vitamin D-3 Supplement, Menadione Sodium Bisulphite Complex (Vitamin K), Biotin (Vitamin B-7)], Vegetable Juice (Colour), Potassium Chloride, Minerals [Zinc Sulphate, Ferrous Sulphate, Manganese Sulphate, Copper Sulphate, Calcium Iodate, Sodium Selenite], Choline Chloride",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 12.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4040 kcal/kg"
+    },
+    {
+      "name": "ONE True Instinct Dry Puppy Food - Chicken & Duck Recipe",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/purina-one-true-instinct-dry-puppy-food---chicken-and-duck-recipe-172-kg-90905.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Purina ONE",
+      "life_stage": "puppy",
+      "source_id": "5363850",
+      "images": [
+        "/products/purina/purina-food-one-true-instinct-dry-puppy-food-chicken-duck-recipe.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "1.72 Kg",
+          "upc": "0055800478726",
+          "sku": "5363850"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Meal, Soybean Meal, Whole Grain Wheat, Beef Fat Preserved with Mixed-Tocopherols, Corn Protein Meal, Corn Germ Meal, Whole Grain Corn, Soy Flour, Duck, Beef Bone Broth, Glycerin, Natural Flavour, Dried Egg Product, Fish Oil, Salt, Calcium Carbonate, Mono and Dicalcium Phosphate, Soybean Oil, Vitamins [Vitamin E Supplement, Niacin (Vitamin B-3), Thiamine Mononitrate (Vitamin B-1), Calcium Pantothenate (Vitamin B-5), Vitamin A Supplement, Riboflavin Supplement (Vitamin B-2), Vitamin B-12 Supplement, Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Menadione Sodium Bisulphite Complex (Vitamin K), Biotin (Vitamin B-7), Vitamin D-3 Supplement], Potassium Chloride, Minerals [Zinc Sulphate, Ferrous Sulphate, Manganese Sulphate, Copper Sulphate, Calcium Iodate, Sodium Selenite], Choline Chloride, Taurine",
+      "guaranteed_analysis": {
+        "dha_min": 0.06,
+        "crude_protein_min": 32.0,
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 12.0,
+        "calcium_min": 1.1,
+        "phosphorus_min": 0.9,
+        "omega_6_min": 1.7
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3881 kcal/kg, 357 kcal/cup"
+    },
+    {
+      "name": "Pro Plan Complete Essentials Shredded Blend Adult Dog Dry Food - Lamb & Rice",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/purina-pro-plan-complete-essentials-shredded-blend-adult-dog-dry-food---lamb-and-rice-84334.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan",
+      "life_stage": "adult",
+      "source_id": "5354045",
+      "images": [
+        "/products/purina/purina-food-pro-plan-complete-essentials-shredded-blend-adult-dog-dry-food-lamb-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100101365",
+          "sku": "5354045"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100130631",
+          "sku": "5354403"
+        }
+      ],
+      "ingredients_raw": "Lamb, Rice, Whole Grain Wheat, Poultry By-Product Meal, Whole Grain Corn, Soybean Meal, Corn Protein Meal, Beef Fat Preserved With Mixed-Tocopherols, Natural Flavor, Dried Beet Pulp, Mono And Dicalcium Phosphate, Dried Egg Product, Glycerin, Soybean Oil, Fish Meal, Wheat Bran, Salt, Calcium Carbonate, Potassium Chloride, MINERALS [Zinc Proteinate, Manganese Proteinate, Ferrous Sulfate, Copper Proteinate, Calcium Iodate, Sodium Selenite], VITAMINS [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Thiamine Mononitrate (Vitamin B-1), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Vitamin D-3 Supplement, Menadione Sodium Bisulfite Complex (Vitamin K), Biotin (Vitamin B-7)], Choline Chloride, L-Lysine Monohydrochloride, Dried Bacillus Coagulans Fermentation Product, L-Ascorbyl-2-Polyphosphate (Vitamin C), Garlic Oil",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 12.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3933 kcal/kg, 390 kcal/cup"
+    },
+    {
+      "name": "Pro Plan Complete Essentials Shredded Blend Adult Dry Dog Food - Chicken & Rice",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/purina-pro-plan-complete-essentials-shredded-blend-adult-dry-dog-food---chicken-and-rice-3022.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan",
+      "life_stage": "adult",
+      "source_id": "5135727",
+      "images": [
+        "/products/purina/purina-food-pro-plan-complete-essentials-shredded-blend-adult-dry-dog-food-chicken-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100130594",
+          "sku": "5135727"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100177667",
+          "sku": "5272611"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100101648",
+          "sku": "5362681"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100101679",
+          "sku": "5362683"
+        }
+      ],
+      "ingredients_raw": "Chicken, Rice, Whole Grain Wheat, Poultry By-Product Meal, Whole Grain Corn, Soybean Meal, Beef Fat Preserved With Mixed-Tocopherols, Corn Protein Meal, Dried Egg Product, Natural Flavor, Dried Beet Pulp, Glycerin, Mono And Dicalcium Phosphate, Wheat Bran, Calcium Carbonate, Fish Meal, Salt, Soybean Oil, Potassium Chloride, MINERALS [Zinc Proteinate, Ferrous Sulfate, Manganese Proteinate, Copper Proteinate, Calcium Iodate, Sodium Selenite], VITAMINS [Vitamin E Supplement, Niacin (Vitamin B-3), Thiamine Mononitrate (Vitamin B-1), Calcium Pantothenate (Vitamin B-5), Vitamin A Supplement, Riboflavin Supplement (Vitamin B-2), Vitamin B-12 Supplement, Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Menadione Sodium Bisulfite Complex (Vitamin K), Biotin (Vitamin B-7), Vitamin D-3 Supplement], Choline Chloride, Dried Bacillus Coagulans Fermentation Product, L-Ascorbyl-2-Polyphosphate (Vitamin C), L-Lysine Monohydrochloride, Garlic Oil",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 12.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3790 kcal/kg, 369 kcal/cup"
+    },
+    {
+      "name": "Pro Plan Complete Essentials Shredded Blend Adult Dry Dog Food - Salmon & Rice",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/purina-pro-plan-complete-essentials-shredded-blend-adult-dry-dog-food---salmon-and-rice-21038.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan",
+      "life_stage": "adult",
+      "source_id": "5209170",
+      "images": [
+        "/products/purina/purina-food-pro-plan-complete-essentials-shredded-blend-adult-dry-dog-food-salmon-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100160515",
+          "sku": "5209170"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100160546",
+          "sku": "5209172"
+        }
+      ],
+      "ingredients_raw": "Salmon, Rice, Whole Grain Wheat, Poultry By-Product Meal, Whole Grain Corn, Soybean Meal, Beef Fat Preserved With Mixed-Tocopherols, Corn Protein Meal, Fish Meal, Natural Flavor, Dried Beet Pulp, Dried Egg Product, Glycerin, Mono And Dicalcium Phosphate, Wheat Bran, Calcium Carbonate, Soybean Oil, Salt, Potassium Chloride, Minerals [Zinc Proteinate, Ferrous Sulfate, Manganese Proteinate, Copper Proteinate, Calcium Iodate, Sodium Selenite], Vitamins [Vitamin E Supplement, Niacin (Vitamin B3), Vitamin A Supplement, Thiamine Mononitrate (Vitamin B-1), Calcium Pantothenate (Vitamin B-5), Riboflavin Supplement (Vitamin B-2), Vitamin B-12 Supplement, Pyridoxine Hydrochloride (Vitamin B-6), Menadione Sodium Bisulfite Complex (Vitamin K), Folic Acid (Vitamin B-9), Biotin (Vitamin B-7), Vitamin D-3 Supplement], Choline Chloride, Dried Bacillus Coagulans Fermentation Product, L-Ascorbyl-2-Polyphosphate (Vitamin C), L-Lysine Monohydrochloride, Garlic Oil",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 12.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3856 kcal/kg, 389 kcal/cup"
+    },
+    {
+      "name": "Pro Plan Complete Essentials Shredded Blend Adult Dry Dog Food - Turkey & Rice",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/purina-pro-plan-complete-essentials-shredded-blend-adult-dry-dog-food---turkey-and-rice-62757.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan",
+      "life_stage": "adult",
+      "source_id": "5308565",
+      "images": [
+        "/products/purina/purina-food-pro-plan-complete-essentials-shredded-blend-adult-dry-dog-food-turkey-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100190734",
+          "sku": "5308565"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100101303",
+          "sku": "5362775"
+        }
+      ],
+      "ingredients_raw": "Turkey, Rice, Whole Grain Wheat, Poultry By-Product Meal, Soybean Meal, Beef Fat Preserved With Mixed-Tocopherols, Corn Gluten Meal, Whole Grain Corn, Dried Egg Product, Fish Meal, Natural Flavor, Glycerin, Wheat Bran, Calcium Carbonate, Salt, Mono And Dicalcium Phosphate, Soybean Oil, Potassium Chloride, MINERALS [Zinc Proteinate, Manganese Proteinate, Ferrous Sulfate, Copper Proteinate, Calcium Iodate, Sodium Selenite], VITAMINS [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Thiamine Mononitrate (Vitamin B-1), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Vitamin D-3 Supplement, Menadione Sodium Bisulfite Complex (Vitamin K), Biotin (Vitamin B-7)], Choline Chloride, L-Ascorbyl-2-Polyphosphate (Vitamin C), Dried Bacillus Coagulans Fermentation Product, L-Lysine Monohydrochloride, Garlic Oil",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 2.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8,
+        "omega_6_min": 1.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4017 kcal/kg, 427 kcal/cup"
+    },
+    {
+      "name": "Pro Plan Complete Essentials Shredded Blend Senior 7+ Dry Dog Food - Chicken & Rice",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/purina-pro-plan-complete-essentials-shredded-blend-senior-7-dry-dog-food---chicken-and-rice-3024.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan",
+      "life_stage": "senior",
+      "source_id": "5153714",
+      "images": [
+        "/products/purina/purina-food-pro-plan-complete-essentials-shredded-blend-senior-7-dry-dog-food-chicken-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100140371",
+          "sku": "5153714"
+        }
+      ],
+      "ingredients_raw": "Chicken, Rice, Poultry By-Product Meal, Soybean Meal, Corn Protein Meal, Whole Grain Corn, Whole Grain Wheat, Beef Fat Preserved With Mixed-Tocopherols, Corn Germ Meal, Barley, Dried Egg Product, Fish Meal, Natural Flavor, Glycerin, Fish Oil, Wheat Bran, Calcium Carbonate, Soybean Oil, Salt, Mono And Dicalcium Phosphate, Potassium Chloride, MINERALS [Zinc Proteinate, Ferrous Sulfate, Manganese Proteinate, Copper Proteinate, Calcium Iodate, Sodium Selenite], VITAMINS [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Thiamine Mononitrate (Vitamin B-1), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Vitamin D-3 Supplement, Menadione Sodium Bisulfite Complex (Vitamin K), Biotin (Vitamin B-7)], Choline Chloride, L-Ascorbyl-2-Polyphosphate (Vitamin C), L-Lysine Monohydrochloride, Dried Bacillus Coagulans Fermentation Product, Dl-Methionine, Garlic Oil",
+      "guaranteed_analysis": {
+        "crude_protein_min": 29.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 12.0,
+        "dha_min": 0.12,
+        "epa_min": 0.14,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3672 kcal/kg, 366 kcal/cup"
+    },
+    {
+      "name": "Pro Plan Development Large Breed Puppy Dry Dog Food - Chicken & Rice",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/purina-pro-plan-development-large-breed-puppy-dry-dog-food---chicken-and-rice-3025.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan",
+      "life_stage": "puppy",
+      "breed_size": "Large",
+      "source_id": "5148006",
+      "images": [
+        "/products/purina/purina-food-pro-plan-development-large-breed-puppy-dry-dog-food-chicken-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100132642",
+          "sku": "5148006"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100132635",
+          "sku": "5148133"
+        }
+      ],
+      "ingredients_raw": "Chicken, Rice, Corn Gluten Meal, Whole Grain Corn, Poultry By-Product Meal, Whole Grain Wheat, Beef Fat Preserved With Mixed-Tocopherols, Pea Fiber, Dried Egg Product, Fish Meal, Natural Flavor, Fish Oil, Soybean Oil, Mono And Dicalcium Phosphate, Salt, Calcium Carbonate, Potassium Chloride, Potassium Citrate, Choline Chloride, L-Lysine Monohydrochloride, Minerals [Zinc Sulfate, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate, Sodium Selenite], Vitamins [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Thiamine Mononitrate (Vitamin B-1), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Menadione Sodium Bisulfite Complex (Vitamin K), Vitamin D-3 Supplement, Biotin (Vitamin B-7)], Garlic Oil",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.0,
+        "crude_fat_max": 13.0,
+        "moisture_max": 12.0,
+        "dha_min": 0.1,
+        "calcium_min": 1.1,
+        "phosphorus_min": 0.9
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3934 kcal/kg, 419 kcal/cup"
+    },
+    {
+      "name": "Pro Plan Development Puppy Dry Dog Food - Chicken & Rice",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/purina-pro-plan-development-puppy-dry-dog-food---chicken-and-rice-3039.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan",
+      "life_stage": "puppy",
+      "source_id": "5109111",
+      "images": [
+        "/products/purina/purina-food-pro-plan-development-puppy-dry-dog-food-chicken-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100113627",
+          "sku": "5109111"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100132703",
+          "sku": "5148147"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100132710",
+          "sku": "5221688"
+        }
+      ],
+      "ingredients_raw": "Chicken, Rice, Poultry By-Product Meal, Corn Protein Meal, Whole Grain Wheat, Beef Fat Preserved With Mixed-Tocopherols, Whole Grain Corn, Corn Germ Meal, Dried Yeast, Fish Meal, Natural Flavor, Dried Egg Product, Fish Oil, Soybean Oil, Mono And Dicalcium Phosphate, Salt, Calcium Carbonate, Potassium Chloride, Choline Chloride, MINERALS [Zinc Sulfate, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate, Sodium Selenite], VITAMINS [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Thiamine Mononitrate (Vitamin B-1), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Menadione Sodium Bisulfite Complex (Vitamin K), Vitamin D-3 Supplement, Biotin (Vitamin B-7)], L-Lysine Monohydrochloride, Garlic Oil",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.0,
+        "crude_fat_min": 18.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 12.0,
+        "dha_min": 0.1,
+        "calcium_min": 1.1,
+        "phosphorus_min": 0.9
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4188 kcal/kg, 456 kcal/cup"
+    },
+    {
+      "name": "Pro Plan Development Puppy Dry Dog Food - Lamb & Rice",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/purina-pro-plan-development-puppy-dry-dog-food---lamb-and-rice-3027.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan",
+      "life_stage": "puppy",
+      "source_id": "5109098",
+      "images": [
+        "/products/purina/purina-food-pro-plan-development-puppy-dry-dog-food-lamb-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100113641",
+          "sku": "5109098"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100132741",
+          "sku": "5320625"
+        }
+      ],
+      "ingredients_raw": "Lamb, rice, poultry by-product meal, corn protein meal, whole grain corn, beef fat preserved with mixed-tocopherols, corn germ meal, oat meal, dried egg product, natural flavor, fish meal, dried beet pulp, fish oil, mono and dicalcium phosphate, calcium carbonate, potassium chloride, soybean oil, salt, L-Lysine monohydrochloride, choline chloride, MINERALS [zinc sulfate, ferrous sulfate, manganese sulfate, copper sulfate, calcium iodate, sodium selenite], VITAMINS [Vitamin E supplement, niacin (Vitamin B-3), Vitamin A supplement, calcium pantothenate (Vitamin B-5), thiamine mononitrate (Vitamin B-1), Vitamin B-12 supplement, riboflavin supplement (Vitamin B-2), pyridoxine hydrochloride (Vitamin B-6), folic acid (Vitamin B-9), menadione sodium bisulfite complex (Vitamin K), Vitamin D-3 supplement, biotin (Vitamin B-7)], dried Bacillus coagulans fermentation product, garlic oil. 0447223",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.0,
+        "crude_fat_min": 18.0,
+        "phosphorus_min": 0.9,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 12.0,
+        "omega_6_min": 1.8,
+        "dha_min": 0.1
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4003 kcal/kg"
+    },
+    {
+      "name": "Pro Plan Development Sensitive Skin & Stomach Large Breed Puppy Dry Dog Food - Salmon & Rice",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/purina-pro-plan-development-sensitive-skin-and-stomach-large-breed-puppy-dry-dog-food---salmon-and-rice-62759.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan",
+      "life_stage": "puppy",
+      "breed_size": "Large",
+      "source_id": "5308567",
+      "images": [
+        "/products/purina/purina-food-pro-plan-development-sensitive-skin-stomach-large-breed-puppy-dry-dog-food-salmo.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100190550",
+          "sku": "5308567"
+        }
+      ],
+      "ingredients_raw": "Salmon, Rice, Barley, Fish Meal, Canola Meal, Oat Meal, Beef Fat Preserved With Mixed-Tocopherols, Dried Yeast, Pea Protein, Salmon Meal, Pea Fiber, Natural Flavor, Sunflower Oil, Fish Oil, Dried Chicory Root, Salt, Mono And Dicalcium Phosphate, Calcium Carbonate, Potassium Citrate, L-Lysine Monohydrochloride, Potassium Chloride, Dl-Methionine, Taurine, Minerals [Zinc Sulfate, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate, Sodium Selenite], Choline Chloride, Vitamins [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Thiamine Mononitrate (Vitamin B-1), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Pyridoxine Hydrochloride, Folic Acid (Vitamin B-9), Menadione Sodium Bisulfite Complex (Vitamin K), Biotin (Vitamin B-7), Vitamin D-3 Supplement], L-Ascorbyl-2-Polyphosphate (Vitamin C)",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.0,
+        "crude_fat_min": 13.0,
+        "crude_fiber_max": 4.75,
+        "moisture_max": 12.0,
+        "epa_min": 0.1,
+        "dha_min": 0.1,
+        "calcium_min": 1.1,
+        "phosphorus_min": 0.9
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3753 kcal/kg, 418 kcal/cup"
+    },
+    {
+      "name": "Pro Plan Development Shredded Blend Puppy Dry Dog Food - Chicken & Rice",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/purina-pro-plan-development-shredded-blend-puppy-dry-dog-food---chicken-and-rice-3000.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan",
+      "life_stage": "puppy",
+      "source_id": "5163286",
+      "images": [
+        "/products/purina/purina-food-pro-plan-development-shredded-blend-puppy-dry-dog-food-chicken-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100142900",
+          "sku": "5163286"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100142894",
+          "sku": "5163311"
+        }
+      ],
+      "ingredients_raw": "Chicken, Rice, Poultry By-Product Meal, Corn Protein Meal, Beef Fat Preserved With Mixed-Tocopherols, Soybean Meal, Whole Grain Wheat, Whole Grain Corn, Corn Germ Meal, Dried Egg Product, Natural Flavor, Dried Yeast, Glycerin, Fish Meal, Fish Oil, Calcium Carbonate, Mono And Dicalcium Phosphate, Soybean Oil, Salt, Potassium Chloride, MINERALS [Zinc Proteinate, Ferrous Sulfate, Manganese Proteinate, Copper Proteinate, Calcium Iodate, Sodium Selenite], Choline Chloride, VITAMINS [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Thiamine Mononitrate (Vitamin B-1), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Vitamin D-3 Supplement, Menadione Sodium Bisulfite Complex (Vitamin K), Biotin (Vitamin B-7)], Dried Bacillus Coagulans Fermentation Product, Garlic Oil",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.0,
+        "crude_fat_min": 18.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 12.0,
+        "dha_min": 0.1,
+        "calcium_min": 1.1,
+        "phosphorus_min": 0.9
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4167 kcal/kg, 406 kcal/cup"
+    },
+    {
+      "name": "Pro Plan Development Small Breed Puppy Dry Dog Food - Chicken & Rice",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/purina-pro-plan-development-small-breed-puppy-dry-dog-food---chicken-and-rice-3035.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan",
+      "life_stage": "puppy",
+      "breed_size": "Small",
+      "source_id": "5109110",
+      "images": [
+        "/products/purina/purina-food-pro-plan-development-small-breed-puppy-dry-dog-food-chicken-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100113689",
+          "sku": "5109110"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100132673",
+          "sku": "5148007"
+        }
+      ],
+      "ingredients_raw": "Chicken, Corn Protein Meal, Poultry By-Product Meal, Rice, Whole Grain Wheat, Beef Fat Preserved With Mixed-Tocopherols, Corn Germ Meal, Dried Egg Product, Natural Flavor, Fish Meal, Fish Oil, Mono And Dicalcium Phosphate, Potassium Chloride, Calcium Carbonate, Salt, Soybean Oil, Choline chloride, MINERALS [Zinc Sulfate, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate, Sodium Selenite], VITAMINS [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Thiamine Mononitrate (Vitamin B-1), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Menadione Sodium Bisulfite Complex (Vitamin K), Vitamin D-3 Supplement, Biotin (Vitamin B-7)], Magnesium Sulfate, Dl-Methionine, Dried Bacillus Coagulans Fermentation Product, L-Lysine Monohydrochloride, Garlic Oil",
+      "guaranteed_analysis": {
+        "crude_protein_min": 33.0,
+        "crude_fat_min": 20.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 12.0,
+        "dha_min": 0.1,
+        "calcium_min": 1.1,
+        "phosphorus_min": 0.9
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4311 kcal/kg, 482 kcal/cup"
+    },
+    {
+      "name": "Pro Plan Dry Dog Food Complete Essentials - Shredded Blend Beef & Rice",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/purina-pro-plan-dry-dog-food-complete-essentials---shredded-blend-beef-and-rice-36889.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan",
+      "source_id": "5221674",
+      "images": [
+        "/products/purina/purina-food-pro-plan-dry-dog-food-complete-essentials-shredded-blend-beef-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0055800404725",
+          "sku": "5221674"
+        }
+      ],
+      "ingredients_raw": "Beef, rice, whole grain wheat, poultry by-product meal, whole grain corn, soybean meal, beef fat preserved with mixed-tocopherols, corn protein meal, fish meal, natural flavor, dried beet pulp, dried egg product, glycerin, mono and dicalcium phosphate, wheat bran, soybean oil, salt, calcium carbonate, potassium chloride, MINERALS [zinc proteinate, manganese proteinate, ferrous sulfate, copper proteinate, calcium iodate, sodium selenite], VITAMINS [Vitamin E supplement, niacin (Vitamin B-3), Vitamin A supplement, calcium pantothenate (Vitamin B-5), thiamine mononitrate (Vitamin B-1), Vitamin B-12 supplement, riboflavin supplement (Vitamin B-2), pyridoxine hydrochloride (Vitamin B-6), folic acid (Vitamin B-9), Vitamin D-3 supplement, menadione sodium bisulfite complex (Vitamin K), biotin (Vitamin B-7)], choline chloride, dried Bacillus coagulans fermentation product, L-ascorbyl-2-polyphosphate (Vitamin C), L-Lysine monohydrochloride, garlic oil",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 12.0,
+        "calcium_min": 1.0,
+        "omega_6_min": 1.5,
+        "phosphorus_min": 0.8
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3859 kcal/kg, 382 kcal/cup"
+    },
+    {
+      "name": "Pro Plan Dry Puppy Food - Development, Sensitive Skin & Stomach - Lamb & Rice Formula",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/purina-pro-plan-dry-puppy-food----development-sensitive-skin-and-stomach---lamb-and-rice-formula-57926.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan",
+      "life_stage": "puppy",
+      "source_id": "5298801",
+      "images": [
+        "/products/purina/purina-food-pro-plan-dry-puppy-food-development-sensitive-skin-stomach-lamb-rice-formula.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100187697",
+          "sku": "5298801"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100187680",
+          "sku": "5366817"
+        }
+      ],
+      "ingredients_raw": "Lamb, Oat Meal, Rice, Fish Meal, Canola Meal, Barley, Beef Fat Preserved With Mixed-Tocopherols, Dried Egg Product, Pea Protein, Dried Yeast, Natural Flavor, Salmon Meal, Sunflower Oil, Dried Chicory Root, Calcium Carbonate, Salt, Fish Oil, L-Lysine Monohydrochloride, Potassium Chloride, Taurine, Mono And Dicalcium Phosphate, Dl-Methionine, Minerals [Zinc Sulfate, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate, Sodium Selenite], Choline Chloride, Vitamins [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Thiamine Mononitrate (Vitamin B-1), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Menadione Sodium Bisulfite Complex (Vitamin K), Vitamin D-3 Supplement, Biotin (Vitamin B-7)], L-Ascorbyl-2-Polyphosphate (Vitamin C)",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.0,
+        "crude_fat_min": 18.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 12.0,
+        "epa_min": 0.1,
+        "dha_min": 0.1,
+        "calcium_min": 1.1,
+        "phosphorus_min": 0.9,
+        "omega_6_min": 1.7
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4071 kcal/kg, 490 kcal/cup"
+    },
+    {
+      "name": "Pro Plan Large Breed Adult Dry Dog Food - Chicken & Rice",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/purina-pro-plan-large-breed-adult-dry-dog-food---chicken-and-rice-3028.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan",
+      "life_stage": "adult",
+      "breed_size": "Large",
+      "source_id": "5148008",
+      "images": [
+        "/products/purina/purina-food-pro-plan-large-breed-adult-dry-dog-food-chicken-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100132529",
+          "sku": "5148008"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100132536",
+          "sku": "5148136"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100180520",
+          "sku": "5283755"
+        }
+      ],
+      "ingredients_raw": "Chicken, Rice, Corn Protein Meal, Whole Grain Wheat, Poultry By-Product Meal, Whole Grain Corn, Barley, Beef Fat Preserved With Mixed-Tocopherols, Corn Germ Meal, Fish Meal, Dried Egg Product, Natural Flavor, Fish Oil, Wheat Bran, Calcium Carbonate, Soybean Oil, Salt, Mono And Dicalcium Phosphate, Potassium Chloride, Potassium Citrate, VITAMINS [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Thiamine Mononitrate (Vitamin B-1), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Menadione Sodium Bisulfite Complex (Vitamin K), Vitamin D-3 Supplement, Biotin (Vitamin B-7)], Choline Chloride, MINERALS [Zinc Sulfate, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate, Sodium Selenite], Taurine, Glucosamine Hydrochloride, L-Ascorbyl-2-Polyphosphate (Vitamin C), Garlic Oil",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 12.0,
+        "epa_min": 0.14,
+        "dha_min": 0.12,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3823 kcal/kg, 407 kcal/cup"
+    },
+    {
+      "name": "Pro Plan Senior Dry Dog Food, Bright Mind - Chicken & Rice",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/purina-pro-plan-senior-dry-dog-food-bright-mind---chicken-and-rice-28239.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan",
+      "life_stage": "senior",
+      "source_id": "5232374",
+      "images": [
+        "/products/purina/purina-food-pro-plan-senior-dry-dog-food-bright-mind-chicken-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100170866",
+          "sku": "5232374"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100170859",
+          "sku": "5306483"
+        }
+      ],
+      "ingredients_raw": "Chicken, Poultry By-Product Meal, Rice, Whole Grain Corn, Corn Gluten Meal, Whole Grain Wheat, Corn Germ Meal, Vegetable Oil (Source of Medium-Chain Triglycerides), Pearled Barley, Fish Meal, Dried Egg Product, Fish Oil, Natural Flavor, L-Arginine, Soybean Oil, Salt, Potassium Chloride, Calcium Carbonate, Vitamins [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Thiamine Mononitrate (Vitamin B-1), Vitamin B-12 Supplement, Thiamine Mononitrate, Riboflavin Supplement (Vitamin B-2), Pyridoxine Hydrochloride (Vitamin B-6), Folic A (Vitamin B-9), Menadione Sodium Bisulfite Complex (Vitamin K), Vitamin D-3 Supplement, Biotin (Vitamin B-7)], Mono and Dicalcium Phosphate,Choline Chloride, Minerals [Zinc Sulfate, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate, Sodium Selenite], L-Ascorbyl-2-Polyphosphate (Vitamin C), Dried Bacillus Coagulans Fermentation Product, Garlic Oil",
+      "guaranteed_analysis": {
+        "crude_protein_min": 29.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 12.0,
+        "epa_min": 0.15,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8,
+        "omega_3_min": 0.45
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3791 kcal/kg"
+    },
+    {
+      "name": "Pro Plan Sensitive Skin & Stomach Adult Dry Dog Food - Lamb & Oat Meal, No Corn, Wheat Soy",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/purina-pro-plan-sensitive-skin-and-stomach-adult-dry-dog-food---lamb-and-oat-meal-no-corn-wheat-soy-36650.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan",
+      "life_stage": "adult",
+      "source_id": "5252901",
+      "images": [
+        "/products/purina/purina-food-pro-plan-sensitive-skin-stomach-adult-dry-dog-food-lamb-oat-meal-no-corn-wheat-s.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100175649",
+          "sku": "5252901"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100175663",
+          "sku": "5252902"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100175670",
+          "sku": "5252903"
+        }
+      ],
+      "ingredients_raw": "Lamb, Oat Meal, Barley, Fish Meal, Canola Meal, Rice, Beef Fat Preserved With Mixed-Tocopherols, Dried Egg Product, Pea Protein, Dried Yeast, Natural Flavor, Fish Oil, Sunflower Oil, Dried Chicory Root, Calcium Carbonate, Salt, L-Lysine Monohydrochloride, Potassium Chloride, Vitamins [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Thiamine Mononitrate (Vitamin B-1), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Menadione Sodium Bisulfite Complex (Vitamin K), Vitamin D-3 Supplement, Biotin (Vitamin B-7)], Minerals [Zinc Sulfate, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate, Sodium Selenite], Choline Chloride, L-Ascorbyl-2-Polyphosphate (Vitamin C)",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 12.0,
+        "epa_min": 0.1,
+        "dha_min": 0.1,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3926 kcal/kg, 528 kcal/cup"
+    },
+    {
+      "name": "Pro Plan Sensitive Skin & Stomach Adult Dry Dog Food - Salmon & Rice, No Corn, Wheat or Soy",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/purina-pro-plan-sensitive-skin-and-stomach-adult-dry-dog-food---salmon-and-rice-no-corn-wheat-or-soy-36648.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan",
+      "life_stage": "adult",
+      "source_id": "5252899",
+      "images": [
+        "/products/purina/purina-food-pro-plan-sensitive-skin-stomach-adult-dry-dog-food-salmon-rice-no-corn-wheat-or.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100175458",
+          "sku": "5252899"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100175526",
+          "sku": "5252900"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100100757",
+          "sku": "5339374"
+        }
+      ],
+      "ingredients_raw": "Salmon, Rice, Barley, Canola Meal, Oat Meal, Fish Meal, Salmon Meal, Beef Fat Preserved With Mixed-Tocopherols, Dried Yeast, Natural Flavor, Sunflower Oil, Fish Oil, Dried Chicory Root, Calcium Carbonate, Salt, Potassium Chloride, L-Lysine Monohydrochloride, VITAMINS [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Thiamine Mononitrate (Vitamin B-1), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Pyridoxine Hydrochloride, Folic Acid (Vitamin B-9), Menadione Sodium Bisulfite Complex (Vitamin K), Biotin (Vitamin B-7), Vitamin D-3 Supplement], Taurine, MINERALS [Zinc Sulfate, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate, Sodium Selenite], Dl-Methionine, Choline Chloride, L-Ascorbyl-2-Polyphosphate (Vitamin C)",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 12.0,
+        "epa_min": 0.1,
+        "dha_min": 0.1,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3903 kcal/kg, 449 kcal/cup"
+    },
+    {
+      "name": "Pro Plan Sensitive Skin & Stomach Adult Dry Dog Food - Turkey & Oat Meal",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/purina-pro-plan-sensitive-skin-and-stomach-adult-dry-dog-food---turkey-and-oat-meal-62756.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan",
+      "life_stage": "adult",
+      "source_id": "5308374",
+      "images": [
+        "/products/purina/purina-food-pro-plan-sensitive-skin-stomach-adult-dry-dog-food-turkey-oat-meal.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100189752",
+          "sku": "5308374"
+        }
+      ],
+      "ingredients_raw": "Turkey, Oat Meal, Barley, Fish Meal, Canola Meal, Rice, Beef Fat Preserved With Mixed-Tocopherols, Dried Egg Product, Pea Protein, Dried Yeast, Natural Flavor, Fish Oil, Chicory Root Inulin, Salt, Calcium Carbonate, L-Lysine Monohydrochloride, Sunflower Oil, Potassium Chloride, VITAMINS [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Thiamine Mononitrate (Vitamin B-1), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Menadione Sodium Bisulfite Complex (Vitamin K), Vitamin D-3 Supplement, Biotin (Vitamin B-7)], DL-Methionine, MINERALS [Zinc Sulfate, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate, Sodium Selenite], Mono And Dicalcium Phosphate, Choline Chloride, L-Ascorbyl-2-Polyphosphate (Vitamin C), Dried Bacillus Coagulans Fermentation Product",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 12.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8,
+        "omega_6_min": 1.7
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3997 kcal/kg, 439 kcal/cup"
+    },
+    {
+      "name": "Pro Plan Sensitive Skin & Stomach Large Breed Adult Dry Dog Food - Salmon & Rice",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/purina-pro-plan-sensitive-skin-and-stomach-large-breed-adult-dry-dog-food---salmon-and-rice-57927.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan",
+      "life_stage": "adult",
+      "breed_size": "Large",
+      "source_id": "5345204",
+      "images": [
+        "/products/purina/purina-food-pro-plan-sensitive-skin-stomach-large-breed-adult-dry-dog-food-salmon-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100100993",
+          "sku": "5345204"
+        }
+      ],
+      "ingredients_raw": "Salmon, Rice, Barley, Oat Meal, Fish Meal, Canola Meal, Salmon Meal, Beef Fat Preserved With Mixed-Tocopherols, Dried Yeast, Natural Flavor, Sunflower Oil, Dried Chicory Root, Salt, Fish Oil, Calcium Carbonate, Potassium Chloride, Vitamins [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Thiamine Mononitrate (Vitamin B-1), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Pyridoxine Hydrochloride, Folic Acid (Vitamin B-9), Menadione Sodium Bisulfite Complex (Vitamin K), Biotin (Vitamin B-7), Vitamin D-3 Supplement], L-Lysine Monohydrochloride, Taurine, Minerals [Zinc Sulfate, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate, Sodium Selenite], Choline Chloride, Dl-Methionine, Potassium Citrate, Glucosamine Hydrochloride, L-Ascorbyl-2-Polyphosphate (Vitamin C)",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 12.0,
+        "epa_min": 0.12,
+        "dha_min": 0.12,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3567 kcal/kg, 404 kcal/cup"
+    },
+    {
+      "name": "Pro Plan Sensitive Skin & Stomach Puppy Dry Dog Food - Salmon & Rice",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/purina-pro-plan-sensitive-skin-and-stomach-puppy-dry-dog-food---salmon-and-rice-57925.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan",
+      "life_stage": "puppy",
+      "source_id": "5298797",
+      "images": [
+        "/products/purina/purina-food-pro-plan-sensitive-skin-stomach-puppy-dry-dog-food-salmon-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100187611",
+          "sku": "5298797"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100187642",
+          "sku": "5298798"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100187659",
+          "sku": "5298799"
+        }
+      ],
+      "ingredients_raw": "Salmon, Rice, Barley, Fish Meal, Canola Meal, Beef Fat Preserved With Mixed-Tocopherols, Dried Yeast, Oat Meal, Pea Protein, Salmon Meal, Natural Flavor, Fish Oil, Sunflower Oil, Dried Chicory Root, Salt, L-Lysine Monohydrochloride, Calcium Carbonate, Potassium Chloride, Dl-Methionine, Taurine, Minerals [Zinc Sulfate, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate, Sodium Selenite], Choline Chloride, Mono And Dicalcium Phosphate, Vitamins [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Thiamine Mononitrate (Vitamin B-1), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Pyridoxine Hydrochloride, Folic Acid (Vitamin B-9), Menadione Sodium Bisulfite Complex (Vitamin K), Biotin (Vitamin B-7), Vitamin D-3 Supplement], L-Ascorbyl-2-Polyphosphate (Vitamin C)",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.0,
+        "crude_fat_min": 18.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 12.0,
+        "epa_min": 0.1,
+        "dha_min": 0.1,
+        "calcium_min": 1.1,
+        "phosphorus_min": 0.9,
+        "omega_6_min": 1.7
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3976 kcal/kg, 479 kcal/cup"
+    },
+    {
+      "name": "Pro Plan Sensitive Skin & Stomach Senior 7+ Dry Dog Food - Salmon & Rice",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/purina-pro-plan-sensitive-skin-and-stomach-senior-7-dry-dog-food---salmon-and-rice-70862.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan",
+      "life_stage": "senior",
+      "source_id": "5308566",
+      "images": [
+        "/products/purina/purina-food-pro-plan-sensitive-skin-stomach-senior-7-dry-dog-food-salmon-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100189684",
+          "sku": "5308566"
+        }
+      ],
+      "ingredients_raw": "Salmon, Rice, Barley, Canola Meal, Fish Meal, Oat Meal, Pea Protein, Beef Fat Preserved With Mixed-Tocopherols, Salmon Meal, Dried Yeast, Natural Flavor, Sunflower Oil, Dried Chicory Root, Calcium Carbonate, Fish Oil, L-Lysine Monohydrochloride, Salt, Potassium Chloride, Minerals [Zinc Proteinate, Manganese Proteinate, Ferrous Sulfate, Copper Proteinate, Calcium Iodate, Sodium Selenite], Vitamins [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Thiamine Mononitrate (Vitamin B-1), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Menadione Sodium Bisulfite Complex (Vitamin K), Biotin (Vitamin B-7), Vitamin D-3 Supplement], Dl-Methionine, Choline Chloride, Glucosamine Hydrochloride, L-Ascorbyl-2-Polyphosphate (Vitamin C)",
+      "guaranteed_analysis": {
+        "crude_protein_min": 29.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 3.5,
+        "moisture_max": 12.0,
+        "dha_min": 0.12,
+        "epa_min": 0.14,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3910 kcal/kg, 429 kcal/cup"
+    },
+    {
+      "name": "Pro Plan Sensitive Skin & Stomach Small Breed Adult Dry Dog Food - Salmon & Rice",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/purina-pro-plan-sensitive-skin-and-stomach-small-breed-adult-dry-dog-food---salmon-and-rice-44356.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan",
+      "life_stage": "adult",
+      "breed_size": "Small",
+      "source_id": "5266806",
+      "images": [
+        "/products/purina/purina-food-pro-plan-sensitive-skin-stomach-small-breed-adult-dry-dog-food-salmon-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100177032",
+          "sku": "5266806"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100100801",
+          "sku": "5345203"
+        }
+      ],
+      "ingredients_raw": "Salmon, Rice, Barley, Canola Meal, Fish Meal, Dried Yeast, Beef Fat Preserved With Mixed-Tocopherols, Oat Meal, Salmon Meal, Pea Protein, Natural Flavor, Sunflower Oil, Fish Oil, Dried Chicory Root, Calcium Carbonate, L-Lysine Monohydrochloride, Salt, VITAMINS [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Thiamine Mononitrate (Vitamin B-1), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Pyridoxine Hydrochloride, Folic Acid (Vitamin B-9), Menadione Sodium Bisulfite Complex (Vitamin K), Biotin (Vitamin B-7), Vitamin D-3 Supplement], Potassium Chloride, MINERALS [Zinc Sulfate, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate, Sodium Selenite], Choline Chloride, L-Ascorbyl-2-Polyphosphate (Vitamin C)",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.0,
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 12.0,
+        "epa_min": 0.1,
+        "dha_min": 0.1,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3807 kcal/kg, 465 kcal/cup"
+    },
+    {
+      "name": "Pro Plan Specialized Shredded Blend Large Breed Adult Dry Dog Food - Chicken & Rice",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/purina-pro-plan-specialized-shredded-blend-large-breed-adult-dry-dog-food---chicken-and-rice-3016.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan",
+      "life_stage": "adult",
+      "breed_size": "Large",
+      "source_id": "5153712",
+      "images": [
+        "/products/purina/purina-food-pro-plan-specialized-shredded-blend-large-breed-adult-dry-dog-food-chicken-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100140340",
+          "sku": "5153712"
+        }
+      ],
+      "ingredients_raw": "Chicken, Rice, Whole Grain Wheat, Poultry By-Product Meal, Soybean Meal, Whole Grain Corn, Corn Protein Meal, Beef Fat Preserved With Mixed-Tocopherols, Barley, Dried Egg Product, Corn Germ Meal, Fish Meal, Natural Flavor, Glycerin, Fish Oil, Calcium Carbonate, Wheat Bran, Soybean Oil, Mono And Dicalcium Phosphate, Salt, Potassium Citrate, MINERALS [Zinc Proteinate, Ferrous Sulfate, Manganese Proteinate, Copper Proteinate, Calcium Iodate, Sodium Selenite], VITAMINS [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Thiamine Mononitrate (Vitamin B-1), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Menadione Sodium Bisulfite Complex (Vitamin K), Vitamin D-3 Supplement, Biotin (Vitamin B-7)], Potassium Chloride, Choline Chloride, L-Lysine Monohydrochloride, Taurine, Dried Bacillus Coagulans Fermentation Product, L-Ascorbyl-2-Polyphosphate (Vitamin C), Garlic Oil",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 12.0,
+        "epa_min": 0.14,
+        "dha_min": 0.12,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3688 kcal/kg, 353 kcal/cup"
+    },
+    {
+      "name": "Pro Plan Specialized Shredded Blend Large Breed Senior 7+ Dry Dog Food - Chicken & Rice",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/purina-pro-plan-specialized-shredded-blend-large-breed-senior-7-dry-dog-food---chicken-and-rice-87820.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan",
+      "life_stage": "senior",
+      "breed_size": "Large",
+      "source_id": "5362781",
+      "images": [
+        "/products/purina/purina-food-pro-plan-specialized-shredded-blend-large-breed-senior-7-dry-dog-food-chicken-ri.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100189257",
+          "sku": "5362781"
+        }
+      ],
+      "ingredients_raw": "Chicken, Rice, Poultry By-Product Meal, Corn Protein Meal, Soybean Meal, Whole Grain Corn, Whole Grain Wheat, Beef Fat Preserved With Mixed-Tocopherols, Corn Germ Meal, Dried Egg Product, Dried Yeast, Natural Flavor, Glycerin, Fish Oil, Calcium Carbonate, Fish Meal, Mono And Dicalcium Phosphate, Soybean Oil, Salt, Inulin, Potassium Chloride, Minerals [Zinc Proteinate, Ferrous Sulfate, Manganese Proteinate, Copper Proteinate, Calcium Iodate, Sodium Selenite], VITAMINS [ Vitamin E Supplement, Niacin (Vitamin B-3), Thiamine Mononitrate (Vitamin B-1), Calcium Pantothenate (Vitamin B-5), Vitamin A Supplement, Riboflavin Supplement (Vitamin B-2), Vitamin B-12 Supplement, Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Menadione Sodium Bisulfite Complex (Vitamin K), Biotin (Vitamin B 7), Vitamin D-3 Supplement], Choline Chloride, L-Lysine Monohydrochloride, Dried Bacillus Coagulans Fermentation Product, L-Ascorbyl-2-Polyphosphate (Vitamin C), Garlic Oil",
+      "guaranteed_analysis": {
+        "crude_protein_min": 29.0,
+        "crude_fat_min": 13.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 12.0,
+        "epa_min": 0.1,
+        "dha_min": 0.1,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3845 kcal/kg, 374 kcal/cup"
+    },
+    {
+      "name": "Pro Plan Specialized Shredded Blend Small Breed Adult Dog Dry Food - Chicken & Rice",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/purina-pro-plan-specialized-shredded-blend-small-breed-adult-dog-dry-food---chicken-and-rice-22906.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan",
+      "life_stage": "adult",
+      "breed_size": "Small",
+      "source_id": "5209167",
+      "images": [
+        "/products/purina/purina-food-pro-plan-specialized-shredded-blend-small-breed-adult-dog-dry-food-chicken-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100160478",
+          "sku": "5209167"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100160508",
+          "sku": "5209168"
+        }
+      ],
+      "ingredients_raw": "Chicken, Rice, Poultry By-Product Meal, Beef Fat Preserved With Mixed-Tocopherols, Corn Protein Meal, Soybean Meal, Whole Grain Corn, Whole Grain Wheat, Corn Germ Meal, Dried Egg Product, Natural Flavor, Dried Yeast, Glycerin,Calcium Carbonate, Wheat Bran, Fish Meal, Salt, Mono And Dicalcium Phosphate, Potassium Chloride, MINERALS [Zinc Proteinate, Manganese Proteinate, Ferrous Sulfate, Copper Proteinate, Calcium Iodate, Sodium Selenite], VITAMINS [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Thiamine Mononitrate (Vitamin B-1), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Vitamin D-3 Supplement, Menadione Sodium Bisulfite Complex (Vitamin K), Biotin (Vitamin B-7)], Choline Chloride, L-Lysine Monohydrochloride, L-Ascorbyl-2-Polyphosphate (Vitamin C), Dried Bacillus Coagulans Fermentation Product, Garlic Oil",
+      "guaranteed_analysis": {
+        "crude_protein_min": 29.0,
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 12.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8,
+        "omega_6_min": 1.7
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4075 kcal/kg, 397 kcal/cup"
+    },
+    {
+      "name": "Pro Plan Specialized Shredded Blend Small Breed Senior 7+ Dry Dog Food - Chicken & Rice",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/purina-pro-plan-specialized-shredded-blend-small-breed-senior-7-dry-dog-food---chicken-and-rice-87821.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan",
+      "life_stage": "senior",
+      "breed_size": "Small",
+      "source_id": "5362782",
+      "images": [
+        "/products/purina/purina-food-pro-plan-specialized-shredded-blend-small-breed-senior-7-dry-dog-food-chicken-ri.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100189196",
+          "sku": "5362782"
+        }
+      ],
+      "ingredients_raw": "Chicken, Rice, Corn Protein Meal, Poultry By-Product Meal, Soybean Meal, Beef Fat Preserved With Mixed-Tocopherols, Whole Grain Corn, Whole Grain Wheat, Corn Germ Meal, Dried Egg Product, Dried Yeast, Natural Flavor, Fish Oil, Glycerin, Mono And Dicalcium Phosphate, Fish Meal, Soybean Oil, Salt, Inulin, Calcium Carbonate, Potassium Chloride, Choline Chloride, MINERALS [Zinc Proteinate, Ferrous Sulfate, Manganese Proteinate, Copper Proteinate, Calcium Iodate, Sodium Selenite], VITAMINS [ Vitamin E Supplement, Niacin (Vitamin B-3), Thiamine Mononitrate (Vitamin B-1), Calcium Pantothenate (Vitamin B-5), Vitamin A Supplement, Riboflavin Supplement (Vitamin B-2), Vitamin B-12 Supplement, Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid, Menadione Sodium Bisulfite Complex (Vitamin K), Biotin (Vitamin B-7), Vitamin D-3 Supplement], L-Lysine Monohydrochloride, Dried Bacillus Coagulans Fermentation Product, L-Ascorbyl-2-Polyphosphate (Vitamin C), Garlic Oil",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 12.0,
+        "epa_min": 0.15,
+        "dha_min": 0.13,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3947 kcal/kg, 19 kcal/cup"
+    },
+    {
+      "name": "Pro Plan Specialized Small Breed Adult Dry Dog Food - Chicken & Rice",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/purina-pro-plan-specialized-small-breed-adult-dry-dog-food---chicken-and-rice-3029.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan",
+      "life_stage": "adult",
+      "breed_size": "Small",
+      "source_id": "5147922",
+      "images": [
+        "/products/purina/purina-food-pro-plan-specialized-small-breed-adult-dry-dog-food-chicken-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100131904",
+          "sku": "5147922"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100131928",
+          "sku": "5148009"
+        }
+      ],
+      "ingredients_raw": "Chicken, Rice, Corn Protein Meal, Poultry By-Product Meal, Whole Grain Corn, Beef Fat Preserved With Mixed-Tocopherols, Corn Germ Meal, Fish Meal, Dried Egg Product, Natural Flavor, Wheat Bran, Mono And Dicalcium Phosphate, Potassium Chloride, L-Lysine Monohydrochloride, Salt, Calcium Carbonate, VITAMINS [Vitamin E Supplement, Niacin (Vitamin B-3), Thiamine Mononitrate (Vitamin B-1),Calcium Pantothenate (Vitamin B-5), Vitamin A Supplement, Riboflavin Supplement (Vitamin B-2), Vitamin B-12 Supplement, Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Menadione Sodium Bisulfite Complex (Vitamin K), Biotin (Vitamin B-7), Vitamin D-3 Supplement], Choline Chloride, MINERALS [Zinc Sulfate, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate, Sodium Selenite], L-Ascorbyl-2-Polyphosphate (Vitamin C), Dried Bacillus Coagulans Fermentation Product, Soybean Oil, Garlic Oil",
+      "guaranteed_analysis": {
+        "crude_protein_min": 29.0,
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 12.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8,
+        "omega_6_min": 1.7
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4053 kcal/kg, 452 kcal/cup"
+    },
+    {
+      "name": "Pro Plan Specialized Toy Breed Adult Dry Dog Food - Chicken & Rice",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/purina-pro-plan-specialized-toy-breed-adult-dry-dog-food---chicken-and-rice-3030.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan",
+      "life_stage": "adult",
+      "source_id": "5141956",
+      "images": [
+        "/products/purina/purina-food-pro-plan-specialized-toy-breed-adult-dry-dog-food-chicken-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100135438",
+          "sku": "5141956"
+        }
+      ],
+      "ingredients_raw": "Chicken, Rice, Corn Protein Meal, Whole Grain Corn, Poultry By-Product Meal, Beef Fat Preserved With Mixed-Tocopherols, Corn Germ Meal, Fish Meal, Dried Egg Product, Natural Flavor, Wheat Bran, Salt, Potassium Chloride, Calcium Carbonate, VITAMINS [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Thiamine Mononitrate (Vitamin B-1), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Menadione Sodium Bisulfite Complex (Vitamin K), Vitamin D-3 Supplement, Biotin (Vitamin B-7)], Choline Chloride, MINERALS [Zinc Sulfate, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate, Sodium Selenite], Mono And Dicalcium Phosphate, L-Lysine Monohydrochloride, Taurine, L-Ascorbyl-2-Polyphosphate (Vitamin C), Dried Bacillus Coagulans Fermentation Product, Garlic Oil",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 12.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8,
+        "omega_6_min": 1.8
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4120 kcal/kg, 481 kcal/cup"
+    },
+    {
+      "name": "Pro Plan Sport Active 27/17 All Life Stage Dry Dog Food - Chicken & Rice",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/purina-pro-plan-sport-active-2717-all-life-stage-dry-dog-food---chicken-and-rice-36888.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan",
+      "life_stage": "all",
+      "source_id": "5222092",
+      "images": [
+        "/products/purina/purina-food-pro-plan-sport-active-27-17-all-life-stage-dry-dog-food-chicken-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100186799",
+          "sku": "5222092"
+        }
+      ],
+      "ingredients_raw": "Chicken, Rice, Whole Grain Wheat, Poultry By-Product Meal, Corn Protein Meal, Beef Fat Preserved With Mixed-Tocopherols, Whole Grain Corn, Corn Germ Meal, Fish Meal, Dried Egg Product, Natural Flavor, Fish Oil, Mono And Dicalcium Phosphate, Potassium Chloride, Salt, Calcium Carbonate, VITAMINS [Vitamin E Supplement, Niacin (Vitamin B-3), Thiamine Mononitrate (Vitamin B-1), Calcium Pantothenate (Vitamin B-5), Vitamin A Supplement, Riboflavin Supplement (Vitamin B-2), Vitamin B-12 Supplement, Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Menadione Sodium Bisulfite Complex (Vitamin K), Biotin (Vitamin B-7), Vitamin D-3 Supplement], Choline Chloride, MINERALS [Zinc Sulfate, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate, Sodium Selenite], L-Lysine Monohydrochloride, DL-Methionine, Dried Bacillus Coagulans Fermentation Product, L-Ascorbyl-2-Polyphosphate (Vitamin C), Garlic Oil",
+      "guaranteed_analysis": {
+        "crude_protein_min": 27.0,
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 12.0,
+        "epa_min": 0.1,
+        "dha_min": 0.1,
+        "calcium_min": 1.1,
+        "phosphorus_min": 0.9,
+        "omega_6_min": 1.7
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4245 kcal/kg, 475 kcal/cup"
+    },
+    {
+      "name": "Pro Plan Sport Active 27/17 Small Bites All Life Stages Dry Dog Food - Lamb & Rice",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/purina-pro-plan-sport-active-2717-small-bites-all-life-stages-dry-dog-food---lamb-and-rice-2997.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan",
+      "life_stage": "all",
+      "source_id": "5159908",
+      "images": [
+        "/products/purina/purina-food-pro-plan-sport-active-27-17-small-bites-all-life-stages-dry-dog-food-lamb-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100143402",
+          "sku": "5159908"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100143358",
+          "sku": "5159909"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100143396",
+          "sku": "5159910"
+        }
+      ],
+      "ingredients_raw": "Lamb, Rice, Corn Protein Meal, Poultry By-Product Meal, Whole Grain Wheat, Beef Fat Preserved With Mixed-Tocopherols, Oat Meal, Barley, Dried Beet Pulp, Fish Meal, Natural Flavor, Mono And Dicalcium Phosphate, Dried Egg Product, Fish Oil, Soybean Oil, Calcium Carbonate, Salt, Potassium Chloride, VITAMINS [Vitamin E Supplement, Niacin (Vitamin B-3), Thiamine Mononitrate (Vitamin B-1), Calcium Pantothenate (Vitamin B-5), Vitamin A Supplement, Riboflavin Supplement (Vitamin B-2), Vitamin B-12 Supplement, Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Menadione Sodium Bisulfite Complex (Vitamin K), Biotin (Vitamin B-7), Vitamin D-3 Supplement], Choline Chloride, MINERALS [Zinc Sulfate, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate, Sodium Selenite], L-Lysine Monohydrochloride, Dried Bacillus Coagulans Fermentation Product, L-Ascorbyl-2-Polyphosphate (Vitamin C), Garlic Oil",
+      "guaranteed_analysis": {
+        "crude_protein_min": 27.0,
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 12.0,
+        "epa_min": 0.1,
+        "dha_min": 0.1,
+        "calcium_min": 1.1,
+        "phosphorus_min": 0.9,
+        "omega_6_min": 1.7
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4236 kcal/kg, 474 kcal/cup"
+    },
+    {
+      "name": "Pro Plan Sport Development 30/20 Puppy Dry Dog Food - Chicken & Rice",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/purina-pro-plan-sport-development-3020-puppy-dry-dog-food---chicken-and-rice-69266.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan",
+      "life_stage": "puppy",
+      "source_id": "5322557",
+      "images": [
+        "/products/purina/purina-food-pro-plan-sport-development-30-20-puppy-dry-dog-food-chicken-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100193735",
+          "sku": "5322557"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100193704",
+          "sku": "5322559"
+        }
+      ],
+      "ingredients_raw": "Chicken, Rice, Poultry By-Product Meal, Corn Protein Meal, Whole Grain Corn, Beef Fat Preserved With Mixed-Tocopherols, Dried Egg Product, Corn Germ Meal, Fish Meal, Natural Flavor, Fish Oil, Soybean Oil, Mono And Dicalcium Phosphate, Calcium Carbonate, Potassium Chloride, Salt, Choline Chloride, VITAMINS [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Thiamine Mononitrate (Vitamin B-1), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Menadione Sodium Bisulfite Complex (Vitamin K), Vitamin D-3 Supplement, Biotin (Vitamin B-7)], MINERALS [Zinc Sulfate, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate, Sodium Selenite], Taurine, Magnesium Sulfate, Dl-Methionine, L-Lysine Monohydrochloride, L-Ascorbyl-2-Polyphosphate (Vitamin C), Garlic Oil",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 20.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 12.0,
+        "dha_min": 0.1,
+        "epa_min": 0.1,
+        "phosphorus_min": 0.9,
+        "calcium_min": 1.1,
+        "omega_6_min": 2.0,
+        "taurine_min": 0.15
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4374 kcal/kg, 472 kcal/cup"
+    },
+    {
+      "name": "Pro Plan Sport Performance 30/20 All Life Stages Dry Dog Food - Chicken & Rice, High-Protein",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/purina-pro-plan-sport-performance-3020-all-life-stages-dry-dog-food---chicken-and-rice-high-protein-3014.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan",
+      "life_stage": "all",
+      "source_id": "1011170",
+      "images": [
+        "/products/purina/purina-food-pro-plan-sport-performance-30-20-all-life-stages-dry-dog-food-chicken-rice-high.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100520296",
+          "sku": "1011170"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100150967",
+          "sku": "5190699"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100150943",
+          "sku": "5190700"
+        }
+      ],
+      "ingredients_raw": "Chicken, Corn Protein Meal, Rice, Beef Fat Preserved With Mixed-Tocopherols, Poultry By-Product Meal, Whole Grain Corn, Corn Germ Meal, Dried Egg Product, Fish Meal, Natural Flavor, Fish Oil, Mono And Dicalcium Phosphate, Calcium Carbonate, Potassium Chloride, Salt, Vitamins [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Thiamine Mononitrate (Vitamin B-1), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Menadione Sodium Bisulfite Complex (Vitamin K), Vitamin D-3 Supplement, Biotin (Vitamin B-7)], Choline Chloride, L-Lysine Monohydrochloride, Magnesium Sulfate, Minerals [Zinc Sulfate, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate, Sodium Selenite], L-Ascorbyl-2-Polyphosphate (Vitamin C), Garlic Oil",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 20.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 12.0,
+        "epa_min": 0.12,
+        "dha_min": 0.12,
+        "calcium_min": 1.1,
+        "phosphorus_min": 0.9,
+        "omega_6_min": 1.9
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4390 kcal/kg, 484 kcal/cup"
+    },
+    {
+      "name": "Pro Plan Sport Performance 30/20 All Life Stages Dry Dog Food - Salmon & Rice",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/purina-pro-plan-sport-performance-3020-all-life-stages-dry-dog-food---salmon-and-rice-21064.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan",
+      "life_stage": "all",
+      "source_id": "5209089",
+      "images": [
+        "/products/purina/purina-food-pro-plan-sport-performance-30-20-all-life-stages-dry-dog-food-salmon-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100160584",
+          "sku": "5209089"
+        }
+      ],
+      "ingredients_raw": "Salmon, Corn Protein Meal, Rice, Poultry By-Product Meal, Whole Grain Corn, Beef Fat Preserved With Mixed-Tocopherols, Corn Germ Meal, Dried Egg Product, Fish Meal, Natural Flavor, Fish Oil, Mono And Dicalcium Phosphate, Calcium Carbonate, Potassium Chloride, Salt, VITAMINS [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Thiamine Mononitrate (Vitamin B-1), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Menadione Sodium Bisulfite Complex (Vitamin K), Biotin (Vitamin B-7), Vitamin D-3 Supplement], Choline Chloride, MINERALS [Zinc Sulfate, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate, Sodium Selenite], L-Lysine Monohydrochloride, L-Ascorbyl-2-Polyphosphate (Vitamin C), Magnesium Sulfate, Garlic Oil",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 20.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 12.0,
+        "epa_min": 0.12,
+        "dha_min": 0.12,
+        "calcium_min": 1.1,
+        "phosphorus_min": 0.9
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4433 kcal/kg, 534 kcal/cup"
+    },
+    {
+      "name": "Pro Plan Weight Management Adult Dry Dog Food - Chicken & Rice",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/purina-pro-plan-weight-management-adult-dry-dog-food---chicken-and-rice-3026.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan",
+      "life_stage": "adult",
+      "source_id": "5148005",
+      "images": [
+        "/products/purina/purina-food-pro-plan-weight-management-adult-dry-dog-food-chicken-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100131881",
+          "sku": "5148005"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100131867",
+          "sku": "5148013"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100131874",
+          "sku": "5148146"
+        }
+      ],
+      "ingredients_raw": "Chicken, Rice, Poultry By-Product Meal, Whole Grain Corn, Corn Protein Meal, Whole Grain Wheat, Corn Germ Meal, Barley, Dried Egg Product, Beef Fat Preserved With Mixed-Tocopherols, Natural Flavor, Fish Meal, Wheat Flour, Calcium Carbonate, Wheat Bran, Salt, Potassium Chloride, Mono And Dicalcium Phosphate, VITAMINS [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Thiamine Mononitrate (Vitamin B-1), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Menadione Sodium Bisulfite Complex (Vitamin K), Vitamin D-3 Supplement, Biotin (Vitamin B-7)], Choline Chloride, MINERALS [Zinc Sulfate, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate, Sodium Selenite], L-Lysine Monohydrochloride, Dried Bacillus Coagulans Fermentation Product, L-Ascorbyl-2-Polyphosphate (Vitamin C), Garlic Oil",
+      "guaranteed_analysis": {
+        "crude_protein_min": 27.0,
+        "crude_fat_min": 9.0,
+        "crude_fat_max": 13.0,
+        "crude_fiber_max": 5.5,
+        "moisture_max": 12.0,
+        "calcium_min": 0.9,
+        "phosphorus_min": 0.7
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3516 kcal/kg, 355 kcal/cup"
+    },
+    {
+      "name": "Pro Plan Weight Management Large Breed Adult Dry Dog Food - Chicken & Rice",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/purina-pro-plan-weight-management-large-breed-adult-dry-dog-food---chicken-and-rice-3032.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan",
+      "life_stage": "adult",
+      "breed_size": "Large",
+      "source_id": "5148142",
+      "images": [
+        "/products/purina/purina-food-pro-plan-weight-management-large-breed-adult-dry-dog-food-chicken-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100132505",
+          "sku": "5148142"
+        }
+      ],
+      "ingredients_raw": "Chicken, Rice, Whole Grain Wheat, Poultry By-Product Meal, Corn Protein Meal, Oat Meal, Barley, Pea Fiber, Fish Meal, Dried Egg Product, Beef Fat Preserved With Mixed-Tocopherols, Natural Flavor, Wheat Bran, Fish Oil, Salt, Calcium Carbonate, Mono And Dicalcium Phosphate, Potassium Chloride, Potassium Citrate, VITAMINS [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Thiamine Mononitrate (Vitamin B-1), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Menadione Sodium Bisulfite Complex (Vitamin K), Vitamin D-3 Supplement, Biotin (Vitamin B-7)], MINERALS [Zinc Sulfate, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate, Sodium Selenite], Choline Chloride, L-Lysine Monohydrochloride, Taurine, Dried Bacillus Coagulans Fermentation Product, L-Ascorbyl-2-Polyphosphate (Vitamin C), Garlic Oil",
+      "guaranteed_analysis": {
+        "crude_protein_min": 27.0,
+        "crude_fat_min": 9.5,
+        "crude_fat_max": 13.5,
+        "crude_fiber_max": 5.5,
+        "moisture_max": 12.0,
+        "epa_min": 0.1,
+        "dha_min": 0.1,
+        "calcium_min": 0.9,
+        "phosphorus_min": 0.7
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3610 kcal/kg, 384 kcal/cup"
+    },
+    {
+      "name": "Pro Plan Weight Management Shredded Blend Adult Dry Dog Food - Chicken & Rice",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/purina-pro-plan-weight-management-shredded-blend-adult-dry-dog-food---chicken-and-rice-3019.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan",
+      "life_stage": "adult",
+      "source_id": "5153876",
+      "images": [
+        "/products/purina/purina-food-pro-plan-weight-management-shredded-blend-adult-dry-dog-food-chicken-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100140265",
+          "sku": "5153876"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0038100140272",
+          "sku": "5153879"
+        }
+      ],
+      "ingredients_raw": "Chicken, Rice, Whole Grain Corn, Poultry By-Product Meal, Corn Germ Meal, Soybean Meal, Whole Grain Wheat, Corn Protein Meal, Wheat Flour, Beef Fat Preserved With Mixed-Tocopherols, Fish Meal, Natural Flavor, Glycerin, Calcium Carbonate, Wheat Bran, Soybean Oil, Salt, Mono And Dicalcium Phosphate, Potassium Chloride, MINERALS [Zinc Proteinate, Ferrous Sulfate, Manganese Proteinate, Copper Proteinate, Calcium Iodate, Sodium Selenite], VITAMINS [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Thiamine Mononitrate (Vitamin B-1), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Vitamin D-3 Supplement, Menadione Sodium Bisulfite Complex (Vitamin K), Biotin (Vitamin B-7)], Choline Chloride, Dl-Methionine, L-Lysine Monohydrochloride, L-Ascorbyl-2-Polyphosphate (Vitamin C), Dried Bacillus Coagulans Fermentation Product, Garlic Oil",
+      "guaranteed_analysis": {
+        "crude_protein_min": 27.0,
+        "crude_fat_min": 9.0,
+        "crude_fat_max": 13.0,
+        "crude_fiber_max": 5.5,
+        "moisture_max": 12.0,
+        "calcium_min": 0.9,
+        "phosphorus_min": 0.7
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3578 kcal/kg, 330 kcal/cup"
+    },
+    {
+      "name": "Puppy Chow with Real Chicken Dry Dog Food",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/purina-puppy-chow-with-real-chicken-dry-dog-food-76942.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Puppy Chow",
+      "life_stage": "puppy",
+      "source_id": "5340717",
+      "images": [
+        "/products/purina/purina-food-puppy-chow-with-real-chicken-dry-dog-food.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0055800453112",
+          "sku": "5340717"
+        }
+      ],
+      "ingredients_raw": "Whole Grain Corn, Chicken By-Product Meal, Corn Gluten Meal, Beef Fat Preserved with Mixed-Tocopherols, Soybean Meal, Barley, Egg and Chicken Flavour, Ground Rice, Chicken, Poultry and Pork Digest, Mono and Dicalcium Phosphate, Calcium Carbonate, Fish Oil, Salt, Potassium Chloride, Soybean Oil, Choline Chloride, Minerals [Zinc Sulphate, Ferrous Sulphate, Manganese Sulphate, Copper Sulphate, Calcium Iodate, Sodium Selenite], L-Lysine Monohydrochloride, Vitamins [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Pyridoxine Hydrochloride (Vitamin B-6), Vitamin B-12 Supplement, Thiamine Mononitrate (Vitamin B-1), Vitamin D-3 Supplement, Riboflavin Supplement (Vitamin B-2), Menadione Sodium Bisulphite Complex (Vitamin K), Folic Acid (Vitamin B-9), Biotin (Vitamin B-7)], Yellow 6, L-Ascorbyl-2-Polyphosphate (Vitamin C), Yellow 5, Dl-Methionine, Red 40, Blue 2, Garlic Oil",
+      "guaranteed_analysis": {
+        "crude_protein_min": 27.5,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 12.0,
+        "dha_min": 0.05,
+        "calcium_min": 1.1,
+        "phosphorus_min": 0.9
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3597 kcal/kg, 414 kcal/cup"
+    },
+    {
+      "name": "Denta Life Activ Fresh Small/Medium Breeds, Dog Treats",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/treats/dental-treats-and-chews/dentalife-activfresh-smallmedium-breeds-dog-treats-84092.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "DentaLife",
+      "source_id": "5354868",
+      "images": [
+        "/products/purina/purina-treat-denta-life-activ-fresh-small-medium-breeds-dog-treats.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0055800362520",
+          "sku": "5354868"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0055800363206",
+          "sku": "5354869"
+        }
+      ],
+      "ingredients_raw": "Acetic Acid, Animal Fat, Calcium Stearate, Citric Acid, Gelatin, Glycerin, Green Tea, Malted Barley Flour, Mixed-Tocopherols, Monocalcium Phosphate, Phosphoric Acid, Poultry By-Product Meal, Rice, Rosemary, Sodium Bicarbonate, Sodium Caseinate, Sodium Chloride, Soy Lecithin, Spearmint, Sugar, Water, Wheat Flour, Wheat Gluten"
+    },
+    {
+      "name": "Denta Life Chews Mini Breeds Dog Treats",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/treats/dental-treats-and-chews/dentalife-chews-mini-breeds-dog-treats-595-g-83117.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "DentaLife",
+      "source_id": "5351501",
+      "images": [
+        "/products/purina/purina-treat-denta-life-chews-mini-breeds-dog-treats.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "595 g",
+          "upc": "0055800272904",
+          "sku": "5351501"
+        }
+      ],
+      "ingredients_raw": "Rice Water, Glycerin, Gelatin, Chicken By-Product Meal, Brewers Dried Yeast, Tricalcium Phosphate, Carrageenan, Phosphoric Acid, Partially Hydrogenated vegetable Oil, Sorbic Acid (a Preservative), Calcium Propionate (a Preservative), BHA (a Preservative), BHT (a Preservative), Calcium Carbonate, Citric Acid. A-5064-C",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.0,
+        "crude_fat_min": 2.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 25.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "2806 kcal/kg, 40 kcal/treat"
+    },
+    {
+      "name": "Denta Life Chews Small/Medium Breeds, Dog Treats",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/treats/dental-treats-and-chews/dentalife-chews-smallmedium-breeds-dog-treats-35357.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "DentaLife",
+      "source_id": "5273866",
+      "images": [
+        "/products/purina/purina-treat-denta-life-chews-small-medium-breeds-dog-treats.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0055800219084",
+          "sku": "5273866"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0055800216496",
+          "sku": "5351502"
+        }
+      ],
+      "ingredients_raw": "Rice, Water, Glycerin, Gelatin, Chicken By-Product Meal, Brewers Dried Yeast, Tricalcium Phosphate, Carrageenan, Phosphoric Acid, Partially Hydrogenated Vegetable Oil, Sorbic Acid (a Preservative), Calcium Propionate (a Preservative), BHA(a Preservative), BHT (a Preservative), Calcium Carbonate, Citric Acid. B-5063-C",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.0,
+        "crude_fat_min": 2.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 25.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "2806 kcal/kg, 70 kcal/treat"
+    },
+    {
+      "name": "Denta Life Daily Oral Care, Dog Treats, Mini Breed",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/treats/dental-treats-and-chews/dentalife-daily-oral-care-dog-treats-mini-breed-42287.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "DentaLife",
+      "source_id": "5264622",
+      "images": [
+        "/products/purina/purina-treat-denta-life-daily-oral-care-dog-treats-mini-breed.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0055800285324",
+          "sku": "5264622"
+        }
+      ],
+      "ingredients_raw": "Rice, Glycerin, Wheat Flour, Sodium Tripolyphosphate, Malted Barley Flour, Chicken By-Product Meal, Mono and Dicalcium Phosphate, Sorbic Acid (a Preservative), Calcium Propionate (a Preservative), Sodium Bicarbonate, BHA (a Preservative), BHT (a Preservative), Calcium Carbonate, Citric Acid",
+      "guaranteed_analysis": {
+        "crude_protein_min": 6.0,
+        "crude_fat_min": 1.5,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 15.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3110 kcal/kg, 25 kcal/treat"
+    },
+    {
+      "name": "Denta Life Daily Oral Care Large Breed Dog Treats",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/treats/dental-treats-and-chews/dentalife-daily-oral-care-large-breed-dog-treats-53693.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "DentaLife",
+      "breed_size": "Large",
+      "source_id": "5280891",
+      "images": [
+        "/products/purina/purina-treat-denta-life-daily-oral-care-large-breed-dog-treats.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0055800317490",
+          "sku": "5280891"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0055800327932",
+          "sku": "5280892"
+        }
+      ],
+      "ingredients_raw": "Rice, Glycerin, Wheat Flour, Sodium Tripolyphosphate, Malted Barley Flour, Chicken By-Product Meal, Mono and Dicalcium Phosphate, Sorbic Acid (a Preservative), Calcium Propionate (a Preservative), Sodium Bicarbonate, BHA (a Preservative), BHT (a Preservative), Calcium Carbonate, Citric Acid",
+      "guaranteed_analysis": {
+        "crude_protein_min": 6.0,
+        "crude_fat_min": 1.5,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 15.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3100 kcal/kg, 100 kcal/treat"
+    },
+    {
+      "name": "Dentalife Daily Oral Care Small/Medium Dental Dog Treat",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/treats/dental-treats-and-chews/dentalife-daily-oral-care-smallmedium-dental-dog-treat-42288.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "DentaLife",
+      "source_id": "5264624",
+      "images": [
+        "/products/purina/purina-treat-dentalife-daily-oral-care-small-medium-dental-dog-treat.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0055800284778",
+          "sku": "5264624"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0055800284938",
+          "sku": "5273865"
+        }
+      ],
+      "ingredients_raw": "Rice, Glycerin, Wheat Flour, Sodium Tripolyphosphate, Malted Barley Flour, Chicken By-Product Meal, Mono and Dicalcium Phosphate, Sorbic Acid (a Preservative), Calcium Propionate (a Preservative), Sodium Bicarbonate, BHA (a Preservative), BHT (a Preservative), Calcium Carbonate, Citric Acid",
+      "guaranteed_analysis": {
+        "crude_protein_min": 6.0,
+        "crude_fat_min": 1.5,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 15.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3110 kcal/kg, 63 kcal/treat"
+    },
+    {
+      "name": "Denta Life Plus Digestive Support, Dog Treats",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/treats/dental-treats-and-chews/dentalife-plus-digestive-support-dog-treats-408-g-84738.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "DentaLife",
+      "source_id": "5350713",
+      "images": [
+        "/products/purina/purina-treat-denta-life-plus-digestive-support-dog-treats.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "408 g",
+          "upc": "0055800469540",
+          "sku": "5350713"
+        }
+      ],
+      "ingredients_raw": "Rice, Wheat Flour, Glycerin, Sodium Tripolyphosphate, Malted Barley Flour, Chicken By-Product Meal, Wheat Gluten, Sugar, Mono and Dicalcium Phosphate, Gelatin, Phosphoric Acid, Sodium Caseinate, Animal Fat Preserved with Mixed-Tocopherols, Salt, Sorbic Acid (A Preservative), Dried Pumpkin, Calcium Propionate (A Preservative), Sodium Bicarbonate, Citric Acid, Vinegar, Dried Lactobacillus Fermentum Fermentation Product, Dried Lactobacillus Delbrueckii Fermentation Product, Tetra Sodium Pyrophosphate, BHA (A Preservative), BHT (A Preservative), Calcium Carbonate, Natural Flavour",
+      "guaranteed_analysis": {
+        "crude_protein_min": 6.0,
+        "crude_fat_min": 1.5,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 15.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3030 kcal/kg, 61 kcal/treat"
+    },
+    {
+      "name": "Denta Life Plus Dog Treats - Immune Support",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/treats/dental-treats-and-chews/dentalife-plus-dog-treats---immune-support-408-g-84739.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "DentaLife",
+      "source_id": "5350714",
+      "images": [
+        "/products/purina/purina-treat-denta-life-plus-dog-treats-immune-support.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "408 g",
+          "upc": "0055800469830",
+          "sku": "5350714"
+        }
+      ],
+      "ingredients_raw": "Rice, Wheat Flour, Glycerin, Sodium Tripolyphosphate, Malted Barley Flour, Chicken By-Product Meal, Wheat Gluten, Vitamin E Supplement, Sugar, Mono and Dicalcium Phosphate, L-Ascorbyl-2-Polyphosphate (Vitamin C), Gelatin, Phosphoric Acid, Sodium Caseinate, Beef Fat Preserved with Mixed-Tocopherols, Salt, Sorbic Acid (A Preservative), Dried Apples, Dried Blueberries, Calcium Propionate (A Preservative), Sodium Bicarbonate, Citric Acid, Vinegar, Tetra Sodium Pyrophosphate, BHA (A Preservative), BHT (A Preservative), Calcium Carbonate, Natural Flavour",
+      "guaranteed_analysis": {
+        "crude_protein_min": 6.0,
+        "crude_fat_min": 1.5,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 15.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3036 kcal/kg, 61 kcal/treat"
+    },
+    {
+      "name": "Beggin' Chew-Rific Dog Treat - Bacon & Cheese",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/treats/jerky-treats/beggin-chew-rific-dog-treat---bacon-and-cheese-86838.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Beggin'",
+      "source_id": "5350712",
+      "images": [
+        "/products/purina/purina-treat-beggin-chew-rific-dog-treat-bacon-cheese.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0055800269614",
+          "sku": "5350712"
+        }
+      ],
+      "ingredients_raw": "Ground Wheat, Corn Starch, Corn Gluten Meal, Water, Wheat Flour, Sugar, Glycerin, Hydrogenated Corn Syrup, Meat, Bacon Fat (Preserved with BHA and Citric Acid), Salt, Animal Fat Preserved with Mixed-Tocopherols, Sorbic Acid (a Preservative), Red 40 Lake, Cheese Powder, Calcium Propionate (a Preservative), Added Colour, Phosphoric Acid, Yellow 5 Lake, Natural and Artificial Smoke Flavours, Yellow 6 Lake, BHA (a Preservative), Citric Acid. H-4240-C",
+      "guaranteed_analysis": {
+        "crude_protein_min": 10.0,
+        "crude_fat_min": 4.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 30.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "2708 kcal/kg, 40 kcal/piece"
+    },
+    {
+      "name": "Beggin' Flavour Stix Adult Dog- Bacon & Peanut Butter",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/treats/soft-and-chewy-treats/beggin-flavour-stix-adult-dog---bacon-and-peanut-butter-81446.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Beggin'",
+      "life_stage": "adult",
+      "source_id": "5350711",
+      "images": [
+        "/products/purina/purina-treat-beggin-flavour-stix-adult-dog-bacon-peanut-butter.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0055800470058",
+          "sku": "5350711"
+        }
+      ],
+      "ingredients_raw": "Pork, Barley, Rice, Ground Wheat, Soybean Meal, Oat Meal, Glycerin, Sugar, Ground Yellow Corn, Corn Protein Meal, Water, Wheat Flour, Soy Flour, Bacon, Soy Protein Concentrate, Wheat Gluten, Salt, Bacon Fat (Preserved With BHA And Citric Acid), Natural Flavour, Phosphoric Acid, Sorbic Acid (A Preservative), Natural Peanut Flavour, Calcium Propionate (A Preservative), Added Colour, Malted Barley Flour, BHA (A Preservative)",
+      "guaranteed_analysis": {
+        "crude_protein_min": 15.0,
+        "crude_fat_min": 3.5,
+        "crude_fiber_max": 3.5,
+        "moisture_max": 27.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "2965 kcal/kg, 43 kcal/treat"
+    },
+    {
+      "name": "Beggin' Flavour Stix Bacon & Cheddar Jack, Dog Treats",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/treats/soft-and-chewy-treats/beggin-flavour-stix-bacon-and-cheddar-jack-dog-treats-708-g-90929.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Beggin'",
+      "source_id": "5363936",
+      "images": [
+        "/products/purina/purina-treat-beggin-flavour-stix-bacon-cheddar-jack-dog-treats.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "708 g",
+          "upc": "0055800479792",
+          "sku": "5363936"
+        }
+      ],
+      "ingredients_raw": "Pork, Barley, Rice, Ground Wheat, Soybean Meal, Oat Meal, Sugar, Glycerin, Ground Yellow Corn, Corn Protein Meal, Wheat Flour, Water, Soy Flour, Bacon, Soy Protein Concentrate, Wheat Gluten, Salt, Bacon Fat (Preserved with BHA and Citric Acid), Natural Flavour, Phosphoric Acid, Sorbic Acid (a Preservative), Natural Smoke Flavour, Calcium Propionate (a Preservative), Added Colour, Dried Cheddar Cheese Powder, Dried Monterey Jack Cheese Powder, Dried Swiss Cheese Powder, Malted Barley Flour",
+      "guaranteed_analysis": {
+        "crude_protein_min": 15.0,
+        "crude_fat_min": 3.5,
+        "crude_fiber_max": 3.5,
+        "moisture_max": 27.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "2856 kcal/kg, 42 kcal/treat"
+    },
+    {
+      "name": "Beggin' Strips Bacon and Cheese Dog Treats",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/treats/soft-and-chewy-treats/beggin-strips-bacon-and-cheese-dog-treats-170-g-52433.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Beggin'",
+      "source_id": "5280912",
+      "images": [
+        "/products/purina/purina-treat-beggin-strips-bacon-and-cheese-dog-treats.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "170 g",
+          "upc": "0055800316394",
+          "sku": "5280912"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "170 g",
+          "upc": "0055800474322",
+          "sku": "5371855"
+        }
+      ],
+      "ingredients_raw": "Pork, Barley, Rice, Ground Wheat, Soybean Meal, Sugar, Ground Yellow Corn, Oat Meal, Corn Protein Meal, Glycerin, Wheat Flour, Water, Soy Flour, Bacon, Soy Protein Concentrate, Wheat Gluten, Salt, Bacon Fat (Preserved with BHA and Citric Acid), Natural Flavour, Phosphoric Acid, Sorbic Acid (a Preservative), Natural Smoke Flavour, Cheese Powder (Source of Cheddar Cheese Flavour), Calcium Propionate (a Preservative), Added Colour, Malted Barley Flour",
+      "guaranteed_analysis": {
+        "crude_protein_min": 15.0,
+        "crude_fiber_max": 3.5,
+        "moisture_max": 27.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "2905 kcal/kg"
+    },
+    {
+      "name": "Beggin' Strips Dog Treat - Bacon Pork",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/treats/soft-and-chewy-treats/beggin-strips-dog-treat---bacon-25720.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Beggin'",
+      "source_id": "1411730",
+      "images": [
+        "/products/purina/purina-treat-beggin-strips-dog-treat-bacon-pork.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0055800520036",
+          "sku": "1411730"
+        }
+      ],
+      "ingredients_raw": "Pork, Barley, Rice, Ground Wheat, Oat Meal, Soybean Meal, Glycerin, Sugar, Corn Gluten Meal, Ground Yellow Corn, Wheat Flour, Water, Soy Flour, Bacon, Soy Protein Concentrate, Wheat Gluten, Salt, Phosphoric Acid, Bacon Fat (Preserved with BHA and Citric Acid), Natural Flavour, Sorbic Acid (a Preservative), Natural Smoke Flavour, Calcium Propionate (a Preservative), Added Colour, Malted Barley Flour",
+      "guaranteed_analysis": {
+        "crude_protein_min": 15.0,
+        "crude_fat_min": 3.5,
+        "crude_fiber_max": 3.5,
+        "moisture_max": 27.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "2995 kcal/kg, 7 kcal/treat"
+    },
+    {
+      "name": "Beggin' Strips Dog Treat - Bacon Pork",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/treats/soft-and-chewy-treats/beggin-strips-dog-treat---bacon-52434.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Beggin'",
+      "source_id": "5280914",
+      "images": [
+        "/products/purina/purina-treat-beggin-strips-dog-treat-bacon-pork.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0055800315618",
+          "sku": "5280914"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0055800316134",
+          "sku": "5280947"
+        }
+      ],
+      "ingredients_raw": "Pork, Barley, Rice, Ground Wheat, Oat Meal, Soybean Meal, Glycerin, Sugar, Corn Gluten Meal, Ground Yellow Corn, Wheat Flour, Water, Soy Flour, Bacon, Soy Protein Concentrate, Wheat Gluten, Salt, Phosphoric Acid, Bacon Fat (Preserved with BHA and Citric Acid), Natural Flavour, Sorbic Acid (a Preservative), Natural Smoke Flavour, Calcium Propionate (a Preservative), Added Colour, Malted Barley Flour",
+      "guaranteed_analysis": {
+        "crude_protein_min": 15.0,
+        "crude_fat_min": 3.5,
+        "crude_fiber_max": 3.5,
+        "moisture_max": 27.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3003 kcal/kg, 36 kcal/treat"
+    },
+    {
+      "name": "ONE True Instinct Dog Treat Bites",
+      "brand": "Purina",
+      "url": "https://www.petsmart.ca/dog/treats/soft-and-chewy-treats/purina-one-true-instinct-dog-treat-bites-53747.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Purina ONE",
+      "source_id": "5289431",
+      "images": [
+        "/products/purina/purina-treat-one-true-instinct-dog-treat-bites.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0055800366924",
+          "sku": "5289431"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0055800365088",
+          "sku": "5289432"
+        }
+      ],
+      "ingredients_raw": "Salmon, Whole Grain Corn, Whole Grain Wheat, Corn Gluten Meal, Soybean Meal, Poultry By-Product Meal, Glycerin, Wheat Flour, Water, Minerals (Salt, Mono and Dicalcium Phosphate, Phosphoric Acid, Potassium Chloride, Zinc Sulphate, Ferrous Sulfate, Manganese Sulphate, Calcium Carbonate, Copper Sulphate, Calcium Iodate, Sodium Selenite), Fish Oil, Tricalcium Phosphate, Sorbic Acid (a Preservative), Beef Fat Naturally Preserved with Vitamin E, Natural Hickory Smoke Flavour, Calcium Propionate (a Preservative), Vitamins (Choline, Vitamin E, Vitamin B-3, Vitamin A, Vitamin B-5, Vitamin B-1, Vitamin B-12, Vitamin B-2, Vitamin B-6, Folic Acid, Vitamin K, Vitamin D-3, Vitamin B-7), Preserved with Mixed-Tocopherols, Amino Acids (L-Lysine Monohydrochloride), BHA (a Preservative), BHT (a Preservative), Citric Acid. A-399918-C",
+      "guaranteed_analysis": {
+        "crude_protein_min": 23.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 24.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "2739 kcal/kg"
+    }
+  ]
+}

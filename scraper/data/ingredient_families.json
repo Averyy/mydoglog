@@ -2,4325 +2,2069 @@
   "families": {
     "alfalfa": {
       "source_group": "vegetable",
-      "members": {
-        "alfalfa": {
-          "form": "raw"
-        },
-        "Alfalfa Nutrient Concentrate": {
-          "form": "concentrate"
-        },
-        "Dehydrated Alfalfa Meal": {
-          "form": "meal"
-        },
-        "Sun Cured Alfalfa": {
-          "form": "dried"
-        },
-        "sun-cured alfalfa": {
-          "form": "dried"
-        },
-        "sun-cured alfalfa meal": {
-          "form": "meal"
-        },
-        "suncured alfalfa": {
-          "form": "dried"
-        },
-        "Direct Dehydrated Alfalfa Pellets": {
-          "form": "dried"
-        },
-        "Alfalfa Meal": {
-          "form": "meal"
-        }
-      },
+      "members": [
+        "alfalfa",
+        "Alfalfa Nutrient Concentrate",
+        "Dehydrated Alfalfa Meal",
+        "Sun Cured Alfalfa",
+        "sun-cured alfalfa",
+        "sun-cured alfalfa meal",
+        "suncured alfalfa",
+        "Direct Dehydrated Alfalfa Pellets",
+        "Alfalfa Meal",
+        "Suncured Alfalfa Meal"
+      ],
       "category": "carb"
     },
     "algae": {
       "source_group": "other",
-      "members": {
-        "algae": {
-          "form": "raw"
-        },
-        "algae (source of DHA)": {
-          "form": "raw"
-        },
-        "Dried Marine Microalgae": {
-          "form": "dried"
-        },
-        "marine algae": {
-          "form": "raw"
-        },
-        "marine microalgae": {
-          "form": "raw"
-        },
-        "Marine Microalgae (source of DHA)": {
-          "form": "raw"
-        },
-        "marine microalgae oil": {
-          "form": "oil"
-        },
-        "spirulina": {
-          "form": "raw"
-        },
-        "algal oil": {
-          "form": "oil"
-        },
-        "Dried Kelp": {
-          "form": "dried"
-        },
-        "Kelp": {
-          "form": "raw"
-        }
-      }
+      "members": [
+        "algae",
+        "algae (source of DHA)",
+        "Dried Marine Microalgae",
+        "marine algae",
+        "marine microalgae",
+        "Marine Microalgae (source of DHA)",
+        "marine microalgae oil",
+        "spirulina",
+        "algal oil",
+        "Algal Oil (Source of Omega 3 Fatty Acid)",
+        "Dried Kelp",
+        "Kelp Meal",
+        "Organic Dried Kelp",
+        "Kelp"
+      ]
     },
     "apple": {
       "source_group": "fruit",
-      "members": {
-        "apple": {
-          "form": "whole"
-        },
-        "apple fibre": {
-          "form": "fiber"
-        },
-        "Apples": {
-          "form": "whole"
-        },
-        "apples*": {
-          "form": "whole"
-        },
-        "Dried Apple": {
-          "form": "dried"
-        },
-        "Dried Apples": {
-          "form": "dried"
-        },
-        "fresh apples": {
-          "form": "raw"
-        },
-        "fresh apples (4%)": {
-          "form": "raw"
-        },
-        "fresh whole apples": {
-          "form": "whole"
-        },
-        "whole apples": {
-          "form": "whole"
-        },
-        "Apple Pomace": {
-          "form": "fiber"
-        },
-        "Dried Apple Fibre": {
-          "form": "fiber"
-        },
-        "Dried Apple Pomace": {
-          "form": "fiber"
-        },
-        "Apple Powder": {
-          "form": "powder"
-        }
-      },
+      "members": [
+        "apple",
+        "apple fibre",
+        "Apples",
+        "apples*",
+        "Dried Apple",
+        "Dried Apples",
+        "fresh apples",
+        "fresh apples (4%)",
+        "fresh whole apples",
+        "whole apples",
+        "Apple Pomace",
+        "Dried Apple Fibre",
+        "Dried Apple Pomace",
+        "Apple Powder",
+        "Apple Cider Vinegar"
+      ],
       "category": "carb"
+    },
+    "annatto": {
+      "source_group": "other",
+      "category": "carb",
+      "members": [
+        "Annatto (color)",
+        "Annatto Extract (color)"
+      ]
+    },
+    "artichoke": {
+      "source_group": "vegetable",
+      "category": "carb",
+      "members": [
+        "Artichokes"
+      ]
     },
     "arctic_char": {
       "source_group": "fish",
-      "members": {
-        "Arctic Char": {
-          "form": "raw"
-        },
-        "raw arctic char": {
-          "form": "raw"
-        }
-      },
+      "members": [
+        "Arctic Char",
+        "raw arctic char"
+      ],
       "category": "protein"
     },
     "avocado": {
       "source_group": "fruit",
-      "members": {
-        "avocado": {
-          "form": "whole"
-        }
-      },
+      "members": [
+        "avocado"
+      ],
       "category": "fat"
     },
     "banana": {
       "source_group": "fruit",
-      "members": {
-        "Banana": {
-          "form": "whole"
-        },
-        "bananas": {
-          "form": "whole"
-        },
-        "Dried banana": {
-          "form": "dried"
-        }
-      },
+      "members": [
+        "Banana",
+        "bananas",
+        "Dried banana"
+      ],
       "category": "carb"
     },
     "barley": {
       "source_group": "grain",
-      "members": {
-        "Barley": {
-          "form": "whole"
-        },
-        "Barley Grass": {
-          "form": "whole"
-        },
-        "barley*": {
-          "form": "whole"
-        },
-        "Cracked Pearled Barley": {
-          "form": "whole"
-        },
-        "dehulled barley": {
-          "form": "whole"
-        },
-        "Ground Barley": {
-          "form": "ground"
-        },
-        "Malted Barley Flour": {
-          "form": "flour"
-        },
-        "pearl barley": {
-          "form": "whole"
-        },
-        "Pearled Barley": {
-          "form": "whole"
-        },
-        "Whole Barley": {
-          "form": "whole"
-        },
-        "Whole Grain Barley": {
-          "form": "whole"
-        },
-        "Malted Barley": {
-          "form": "whole"
-        }
-      },
+      "members": [
+        "Barley",
+        "Barley Grass",
+        "barley*",
+        "Cracked Pearled Barley",
+        "dehulled barley",
+        "Ground Barley",
+        "Malted Barley Flour",
+        "pearl barley",
+        "Pearled Barley",
+        "Whole Barley",
+        "Whole Grain Barley",
+        "Malted Barley"
+      ],
       "category": "carb"
     },
     "bean": {
       "source_group": "legume",
-      "members": {
-        "Black Beans": {
-          "form": "whole"
-        },
-        "fava bean": {
-          "form": "whole"
-        },
-        "fava bean protein": {
-          "form": "concentrate"
-        },
-        "Fava Beans": {
-          "form": "whole"
-        },
-        "fava protein": {
-          "form": "concentrate"
-        },
-        "Navy Beans": {
-          "form": "whole"
-        },
-        "pinto bean flour": {
-          "form": "flour"
-        },
-        "whole navy beans": {
-          "form": "whole"
-        },
-        "whole pinto beans": {
-          "form": "whole"
-        },
-        "black bean": {
-          "form": "whole"
-        }
-      },
+      "members": [
+        "Black Beans",
+        "fava bean",
+        "fava bean protein",
+        "Fava Beans",
+        "fava protein",
+        "Navy Beans",
+        "pinto bean flour",
+        "whole navy beans",
+        "whole pinto beans",
+        "black bean",
+        "Green Bean"
+      ],
       "category": "carb"
     },
     "beef": {
       "source_group": "red_meat",
-      "members": {
-        "Beef": {
-          "form": "raw"
-        },
-        "Beef and Chicken Broth": {
-          "form": "broth"
-        },
-        "beef bone": {
-          "form": "organ"
-        },
-        "beef bone broth": {
-          "form": "broth"
-        },
-        "Beef Broth": {
-          "form": "broth"
-        },
-        "Beef By-Products": {
-          "form": "by_product"
-        },
-        "Beef Fat": {
-          "form": "fat"
-        },
-        "beef fat (2%)": {
-          "form": "fat"
-        },
-        "beef fat (5%)": {
-          "form": "fat"
-        },
-        "Beef Flavor": {
-          "form": "derivative"
-        },
-        "Natural Beef Stew Flavour": {
-          "form": "derivative"
-        },
-        "beef kidney": {
-          "form": "organ"
-        },
-        "Beef Liver": {
-          "form": "organ"
-        },
-        "beef lung": {
-          "form": "organ"
-        },
-        "Beef Meal": {
-          "form": "meal"
-        },
-        "beef meal (13%)": {
-          "form": "meal"
-        },
-        "beef meal (8%)": {
-          "form": "meal"
-        },
-        "beef spleen": {
-          "form": "organ"
-        },
-        "beef tripe": {
-          "form": "organ"
-        },
-        "Beefhide": {
-          "form": "raw"
-        },
-        "Certified Humane Beef": {
-          "form": "raw"
-        },
-        "Certified Humane Beef Liver": {
-          "form": "organ"
-        },
-        "de-boned beef": {
-          "form": "raw"
-        },
-        "Deboned Beef": {
-          "form": "raw"
-        },
-        "Dehydrated Beef (4%)": {
-          "form": "dried"
-        },
-        "dehydrated beef (5%)": {
-          "form": "dried"
-        },
-        "Dried Beef Bone Broth": {
-          "form": "broth"
-        },
-        "freeze-dried beef and liver": {
-          "form": "organ"
-        },
-        "freeze-dried beef liver": {
-          "form": "organ"
-        },
-        "Fresh deboned angus beef": {
-          "form": "raw"
-        },
-        "G.A.P. Step 4 Beef": {
-          "form": "raw"
-        },
-        "G.A.P. Step 4 Beef Bone Broth": {
-          "form": "broth"
-        },
-        "G.A.P. Step 4 Beef Liver": {
-          "form": "organ"
-        },
-        "G.A.P. Step 4 Ground Beef Bone": {
-          "form": "organ"
-        },
-        "Humanely Raised Beef": {
-          "form": "raw"
-        },
-        "Humanely Raised Beef Hearts": {
-          "form": "organ"
-        },
-        "Humanely Raised Beef Kidneys": {
-          "form": "organ"
-        },
-        "Humanely Raised Ground Beef Bone": {
-          "form": "organ"
-        },
-        "Raw beef (13%)": {
-          "form": "raw"
-        },
-        "Raw Beef (16%)": {
-          "form": "raw"
-        },
-        "Raw beef (18.5%)": {
-          "form": "raw"
-        },
-        "raw beef (6%)": {
-          "form": "raw"
-        },
-        "Raw beef (9%)": {
-          "form": "raw"
-        },
-        "Raw Beef Kidney (1%)": {
-          "form": "organ"
-        },
-        "raw beef kidney (1.5%)": {
-          "form": "organ"
-        },
-        "raw beef liver (4%)": {
-          "form": "organ"
-        },
-        "raw beef liver (5%)": {
-          "form": "organ"
-        },
-        "Raw Beef Liver (7%)": {
-          "form": "organ"
-        },
-        "raw beef organs (liver, kidney) (4%)": {
-          "form": "organ"
-        },
-        "Raw Beef Tripe (1%)": {
-          "form": "organ"
-        },
-        "raw beef tripe (1.5%)": {
-          "form": "organ"
-        },
-        "Raw beef": {
-          "form": "raw"
-        },
-        "raw beef kidney": {
-          "form": "organ"
-        },
-        "raw beef liver": {
-          "form": "organ"
-        },
-        "raw beef tripe": {
-          "form": "organ"
-        },
-        "raw beef organs (liver, kidney)": {
-          "form": "organ"
-        },
-        "dehydrated beef": {
-          "form": "dried"
-        },
-        "Natural Top Sirloin Flavour": {
-          "form": "derivative"
-        },
-        "Natural Porterhouse Flavour": {
-          "form": "derivative"
-        },
-        "Natural Prime Rib Flavour": {
-          "form": "derivative"
-        },
-        "Natural New York Strip Flavour": {
-          "form": "derivative"
-        },
-        "Natural Filet Mignon Flavour": {
-          "form": "derivative"
-        },
-        "Beef fat preserved with mixed-tocopherols": {
-          "form": "fat"
-        },
-        "Beef tallow preserved with mixed-tocopherols": {
-          "form": "fat"
-        },
-        "100% Beef": {
-          "form": "raw"
-        },
-        "Beef Heart": {
-          "form": "heart"
-        },
-        "Beef Skin": {
-          "form": "skin"
-        },
-        "Beef Pizzle": {
-          "form": "raw"
-        },
-        "Beef Gelatin": {
-          "form": "gelatin"
-        },
-        "Beef Flavour": {
-          "form": "derivative"
-        },
-        "Collagen from Beefhide": {
-          "form": "derivative"
-        },
-        "Cooked Beef Bone Marrow": {
-          "form": "bone"
-        },
-        "beef cartilage": {
-          "form": "cartilage"
-        },
-        "TENDER BEEF: Beef": {
-          "form": "raw"
-        }
-      },
+      "members": [
+        "Beef",
+        "Beef and Chicken Broth",
+        "beef bone",
+        "beef bone broth",
+        "Beef Broth",
+        "Beef By-Products",
+        "Beef Fat",
+        "beef fat (2%)",
+        "beef fat (5%)",
+        "Beef Flavor",
+        "Natural Beef Stew Flavour",
+        "beef kidney",
+        "Beef Liver",
+        "beef lung",
+        "Beef Meal",
+        "beef meal (13%)",
+        "beef meal (8%)",
+        "beef spleen",
+        "beef tripe",
+        "Beefhide",
+        "Certified Humane Beef",
+        "Certified Humane Beef Liver",
+        "de-boned beef",
+        "Deboned Beef",
+        "Dehydrated Beef (4%)",
+        "dehydrated beef (5%)",
+        "Dried Beef Bone Broth",
+        "freeze-dried beef and liver",
+        "freeze-dried beef liver",
+        "Fresh deboned angus beef",
+        "G.A.P. Step 4 Beef",
+        "G.A.P. Step 4 Beef Bone Broth",
+        "G.A.P. Step 4 Beef Liver",
+        "G.A.P. Step 4 Ground Beef Bone",
+        "Humanely Raised Beef",
+        "Humanely Raised Beef Hearts",
+        "Humanely Raised Beef Kidneys",
+        "Humanely Raised Ground Beef Bone",
+        "Raw beef (13%)",
+        "Raw Beef (16%)",
+        "Raw beef (18.5%)",
+        "raw beef (6%)",
+        "Raw beef (9%)",
+        "Raw Beef Kidney (1%)",
+        "raw beef kidney (1.5%)",
+        "raw beef liver (4%)",
+        "raw beef liver (5%)",
+        "Raw Beef Liver (7%)",
+        "raw beef organs (liver, kidney) (4%)",
+        "Raw Beef Tripe (1%)",
+        "raw beef tripe (1.5%)",
+        "Raw beef",
+        "raw beef kidney",
+        "raw beef liver",
+        "raw beef tripe",
+        "raw beef organs (liver, kidney)",
+        "dehydrated beef",
+        "Natural Top Sirloin Flavour",
+        "Natural Porterhouse Flavour",
+        "Natural Prime Rib Flavour",
+        "Natural New York Strip Flavour",
+        "Natural Filet Mignon Flavour",
+        "Beef fat preserved with mixed-tocopherols",
+        "Beef tallow preserved with mixed-tocopherols",
+        "100% Beef",
+        "Beef Heart",
+        "Beef Skin",
+        "Beef Pizzle",
+        "Beef Gelatin",
+        "Beef Flavour",
+        "Collagen from Beefhide",
+        "Cooked Beef Bone Marrow",
+        "beef cartilage",
+        "TENDER BEEF: Beef",
+        "Freeze-Dried Beef",
+        "Freeze-Dried Beef Kidney",
+        "Freeze-Dried Beef Spleen",
+        "Ground Beef Bone",
+        "Spray Dried Beef Blood Cells",
+        "Beef Fat Naturally Preserved with Vitamin E"
+      ],
       "category": "protein"
     },
     "beet": {
       "source_group": "root",
       "category": "carb",
-      "members": {
-        "Beet Root": {
-          "form": "whole"
-        },
-        "fresh beet greens": {
-          "form": "raw"
-        },
-        "Dehydrated Beets (added for Colour)": {
-          "form": "dried"
-        },
-        "organic beets": {
-          "form": "whole"
-        }
-      }
+      "members": [
+        "Beet Root",
+        "fresh beet greens",
+        "Dehydrated Beets (added for Colour)",
+        "organic beets",
+        "Beet Juice (color)",
+        "Beets",
+        "Dried Beet Root"
+      ]
     },
     "beet_pulp": {
       "source_group": "fiber",
       "category": "fiber",
-      "members": {
-        "Dried Beet Pulp": {
-          "form": "fiber"
-        },
-        "Plain Beet Pulp": {
-          "form": "fiber"
-        },
-        "dried plain beet pulp": {
-          "form": "fiber"
-        },
-        "Dried Plain Bet Pulp": {
-          "form": "fiber"
-        }
-      }
+      "members": [
+        "Beet Pulp",
+        "Dried Beet Pulp",
+        "Plain Beet Pulp",
+        "dried plain beet pulp",
+        "Dried Plain Bet Pulp"
+      ]
     },
     "bison": {
       "source_group": "red_meat",
-      "members": {
-        "Bison": {
-          "form": "raw"
-        },
-        "Buffalo": {
-          "form": "raw"
-        },
-        "deboned bison": {
-          "form": "raw"
-        },
-        "Humanely Raised Bison": {
-          "form": "raw"
-        },
-        "raw bison (2%)": {
-          "form": "raw"
-        },
-        "Roasted Bison": {
-          "form": "raw"
-        },
-        "Water Buffalo": {
-          "form": "raw"
-        }
-      },
+      "members": [
+        "Bison",
+        "Buffalo",
+        "deboned bison",
+        "Humanely Raised Bison",
+        "raw bison (2%)",
+        "Roasted Bison",
+        "Water Buffalo"
+      ],
       "category": "protein"
     },
     "blackberry": {
       "source_group": "fruit",
-      "members": {
-        "blackberries": {
-          "form": "whole"
-        }
-      },
+      "members": [
+        "blackberries"
+      ],
       "category": "carb"
+    },
+    "boar": {
+      "source_group": "exotic",
+      "members": [
+        "Deboned Boar"
+      ],
+      "category": "protein"
     },
     "blueberry": {
       "source_group": "fruit",
-      "members": {
-        "Blueberries": {
-          "form": "whole"
-        },
-        "blueberry": {
-          "form": "whole"
-        },
-        "Dried Blueberries": {
-          "form": "dried"
-        },
-        "Dried Ground Blueberries": {
-          "form": "dried"
-        },
-        "fresh whole blueberries": {
-          "form": "whole"
-        },
-        "Organic Blueberries": {
-          "form": "whole"
-        },
-        "whole blueberries": {
-          "form": "whole"
-        },
-        "blueberry fiber": {
-          "form": "fiber"
-        },
-        "dried blueberry pomace": {
-          "form": "fiber"
-        },
-        "Blueberry Powder": {
-          "form": "powder"
-        }
-      },
+      "members": [
+        "Blueberries",
+        "blueberry",
+        "Dried Blueberries",
+        "Dried Ground Blueberries",
+        "fresh whole blueberries",
+        "Freeze-Dried Blueberries",
+        "Organic Blueberries",
+        "whole blueberries",
+        "blueberry fiber",
+        "dried blueberry pomace",
+        "Blueberry Powder"
+      ],
       "category": "carb"
     },
     "borage": {
       "source_group": "seed",
-      "members": {
-        "borage oil": {
-          "form": "oil"
-        }
-      },
+      "members": [
+        "borage oil"
+      ],
       "category": "fat"
     },
     "broccoli": {
       "source_group": "vegetable",
-      "members": {
-        "broccoli": {
-          "form": "whole"
-        },
-        "Organic Broccoli": {
-          "form": "whole"
-        }
-      },
+      "members": [
+        "broccoli",
+        "Organic Broccoli",
+        "Freeze-Dried Broccoli"
+      ],
       "category": "carb"
     },
     "cabbage": {
       "source_group": "vegetable",
       "category": "carb",
-      "members": {
-        "Cabbage": {
-          "form": "whole"
-        }
-      }
+      "members": [
+        "Cabbage"
+      ]
     },
     "canola": {
       "source_group": "seed",
-      "members": {
-        "Canola Meal": {
-          "form": "meal"
-        },
-        "Canola Oil": {
-          "form": "oil"
-        },
-        "Canola Oil (source of Omega 6 Fatty Acids)": {
-          "form": "oil"
-        },
-        "canola oil ( preserved with mixed tocopherols and citric acid )": {
-          "form": "oil"
-        },
-        "canola oil ( preserved with mixed tocopherols and citric acid )flaxseed": {
-          "form": "oil"
-        },
-        "Canola Oil (preserve with Mixed Tocopherols and Citric Acid)": {
-          "form": "oil"
-        },
-        "Canola Oil (preserved with Mixed Tocopherols and Citric Acid)": {
-          "form": "oil"
-        },
-        "canola oil (preserved with mixed tocopherols)": {
-          "form": "oil"
-        }
-      },
+      "members": [
+        "Canola Meal",
+        "Canola Oil",
+        "Canola Oil (source of Omega 6 Fatty Acids)",
+        "canola oil ( preserved with mixed tocopherols and citric acid )",
+        "canola oil ( preserved with mixed tocopherols and citric acid )flaxseed",
+        "Canola Oil (preserve with Mixed Tocopherols and Citric Acid)",
+        "Canola Oil (preserved with Mixed Tocopherols and Citric Acid)",
+        "canola oil (preserved with mixed tocopherols)",
+        "Canola Oil (Mixed Tocopherols used as a Preservative)",
+        "Canola Oil (preserved with Mixed Tocopherols & Citric Acid)"
+      ],
       "category": "fat"
     },
     "capelin": {
       "source_group": "fish",
-      "members": {
-        "Capelin": {
-          "form": "raw"
-        },
-        "Capelin Broth": {
-          "form": "broth"
-        }
-      },
+      "members": [
+        "Capelin",
+        "Capelin Broth"
+      ],
       "category": "protein"
     },
     "carrageenan": {
       "source_group": "additive",
-      "members": {
-        "Carrageenan": {
-          "form": "raw"
-        },
-        "Kappa-Carrageenan": {
-          "form": "raw"
-        },
-        "Iota-Carrageenan": {
-          "form": "raw"
-        }
-      },
+      "members": [
+        "Carrageenan",
+        "Kappa-Carrageenan",
+        "Iota-Carrageenan"
+      ],
       "category": "additive"
     },
     "carrot": {
       "source_group": "vegetable",
-      "members": {
-        "Carrot": {
-          "form": "whole"
-        },
-        "Carrots": {
-          "form": "whole"
-        },
-        "Carrots (Dried)": {
-          "form": "dried"
-        },
-        "carrots*": {
-          "form": "whole"
-        },
-        "Dried Carrot": {
-          "form": "dried"
-        },
-        "Dried Carrots": {
-          "form": "dried"
-        },
-        "fresh carrots": {
-          "form": "raw"
-        },
-        "fresh whole carrots": {
-          "form": "whole"
-        },
-        "Organic Carrots": {
-          "form": "whole"
-        }
-      },
+      "members": [
+        "Carrot",
+        "Carrots",
+        "Carrots (Dried)",
+        "carrots*",
+        "Dried Carrot",
+        "Dried Carrots",
+        "fresh carrots",
+        "fresh whole carrots",
+        "Organic Carrots",
+        "Carrot juice Concentrate"
+      ],
       "category": "carb"
     },
     "celery": {
       "source_group": "vegetable",
-      "members": {
-        "celery powder": {
-          "form": "ground"
-        },
-        "celery seed powder": {
-          "form": "ground"
-        },
-        "dried celery": {
-          "form": "dried"
-        },
-        "Celery": {
-          "form": "whole"
-        }
-      },
+      "members": [
+        "celery powder",
+        "celery seed powder",
+        "dried celery",
+        "Celery",
+        "Celery Juice Concentrate"
+      ],
       "category": "carb"
     },
     "cherry": {
       "source_group": "fruit",
       "category": "carb",
-      "members": {
-        "Dried Cherries": {
-          "form": "dried"
-        }
-      }
+      "members": [
+        "Dried Cherries",
+        "Cherries"
+      ]
     },
     "chia": {
       "source_group": "seed",
-      "members": {
-        "chia": {
-          "form": "whole"
-        },
-        "Chia Seed": {
-          "form": "whole"
-        },
-        "Chia Seeds": {
-          "form": "whole"
-        },
-        "Whole Chia Seed": {
-          "form": "whole"
-        }
-      },
+      "members": [
+        "chia",
+        "Chia Seed",
+        "Chia Seeds",
+        "Whole Chia Seed",
+        "Ground Chia Seed"
+      ],
       "category": "fat"
     },
     "chicken": {
       "source_group": "poultry",
-      "members": {
-        "100% Animal Welfare Certified Chicken": {
-          "form": "raw"
-        },
-        "Boneless chicken": {
-          "form": "raw"
-        },
-        "Chicken": {
-          "form": "raw"
-        },
-        "Chicken (source of Glucosamine and Chondroitin Sulfate)": {
-          "form": "raw"
-        },
-        "Chicken (Source Of Glucosamine Hydrochloride & Chondroitin Sulfate)": {
-          "form": "raw"
-        },
-        "Chicken (Source Of Glucosamine Hydrochloride And Chondroitin Sulfate)": {
-          "form": "raw"
-        },
-        "chicken bone broth": {
-          "form": "broth"
-        },
-        "Chicken Broth": {
-          "form": "broth"
-        },
-        "Chicken By-Product": {
-          "form": "by_product"
-        },
-        "chicken by-product meal": {
-          "form": "meal"
-        },
-        "Chicken By-Product Meal (source of Glucosamine and Chondroitin Sulfate)": {
-          "form": "meal"
-        },
-        "Chicken By-Product Meal (source of Glucosamine and Chondrotin Sulfate)": {
-          "form": "meal"
-        },
-        "chicken by-products": {
-          "form": "by_product"
-        },
-        "Chicken Byproduct Meal (Source of Glucosamine and Chondroitin Sulfate)": {
-          "form": "meal"
-        },
-        "Chicken Cartilage": {
-          "form": "raw"
-        },
-        "chicken cartilage (a source of chondroitin sulphate)": {
-          "form": "raw"
-        },
-        "chicken cartilage (natural source of glucosamine)": {
-          "form": "raw"
-        },
-        "Chicken Cartilage (source of Chondroitin Sulfate)": {
-          "form": "raw"
-        },
-        "chicken fat": {
-          "form": "fat"
-        },
-        "chicken fat (0.5%)": {
-          "form": "fat"
-        },
-        "chicken fat (1%)": {
-          "form": "fat"
-        },
-        "chicken fat (1.5%)": {
-          "form": "fat"
-        },
-        "chicken fat (2%)": {
-          "form": "fat"
-        },
-        "chicken fat (3%)": {
-          "form": "fat"
-        },
-        "chicken fat (4%)": {
-          "form": "fat"
-        },
-        "chicken fat (6%)": {
-          "form": "fat"
-        },
-        "chicken fat (7%)": {
-          "form": "fat"
-        },
-        "chicken fat (8%)": {
-          "form": "fat"
-        },
-        "Chicken Gizzards": {
-          "form": "organ"
-        },
-        "chicken heart": {
-          "form": "organ"
-        },
-        "Chicken Hearts": {
-          "form": "organ"
-        },
-        "Chicken Liver": {
-          "form": "organ"
-        },
-        "Chicken Liver & Heart": {
-          "form": "organ"
-        },
-        "Chicken Liver and Duck": {
-          "form": "organ"
-        },
-        "Chicken Liver Flavor": {
-          "form": "derivative"
-        },
-        "Chicken Liver Flavour": {
-          "form": "derivative"
-        },
-        "Chicken Meal": {
-          "form": "meal"
-        },
-        "chicken meal (13%)": {
-          "form": "meal"
-        },
-        "chicken meal (14%)": {
-          "form": "meal"
-        },
-        "chicken meal (15%)": {
-          "form": "meal"
-        },
-        "chicken meal (16.5%)": {
-          "form": "meal"
-        },
-        "chicken meal (17%)": {
-          "form": "meal"
-        },
-        "chicken meal (18%)": {
-          "form": "meal"
-        },
-        "chicken meal (19%)": {
-          "form": "meal"
-        },
-        "chicken meal (20%)": {
-          "form": "meal"
-        },
-        "chicken meal (21%)": {
-          "form": "meal"
-        },
-        "Chicken meal (25%)": {
-          "form": "meal"
-        },
-        "chicken meal (9%)": {
-          "form": "meal"
-        },
-        "Chicken Meal (source of Chondroitin Sulfate)": {
-          "form": "meal"
-        },
-        "Chicken Meal (source of Glucosamine and Chondroitin Sulfate)": {
-          "form": "meal"
-        },
-        "Chicken Meal (source of Glucosamine)": {
-          "form": "meal"
-        },
-        "de-boned chicken": {
-          "form": "raw"
-        },
-        "Deboned Chicken": {
-          "form": "raw"
-        },
-        "dehydrated chicken": {
-          "form": "dried"
-        },
-        "dehydrated chicken (4%)": {
-          "form": "dried"
-        },
-        "dehydrated chicken (5%)": {
-          "form": "dried"
-        },
-        "Dehydrated Chicken (7%)": {
-          "form": "dried"
-        },
-        "dehydrated chicken liver": {
-          "form": "organ"
-        },
-        "dehydrated chicken liver (0.5%)": {
-          "form": "organ"
-        },
-        "dehydrated chicken liver (4%)": {
-          "form": "organ"
-        },
-        "Dehydrated Chicken Liver (7%)": {
-          "form": "organ"
-        },
-        "Dried Chicken": {
-          "form": "dried"
-        },
-        "Dried Chicken Cartilage": {
-          "form": "dried"
-        },
-        "Dried Chicken Cartilage (Source Of Glucosamine And Chondroitin Sulfate)": {
-          "form": "dried"
-        },
-        "egg and chicken flavor": {
-          "form": "derivative"
-        },
-        "Egg and Chicken Flavour": {
-          "form": "derivative"
-        },
-        "freeze-dried chicken": {
-          "form": "dried"
-        },
-        "freeze-dried chicken and liver": {
-          "form": "organ"
-        },
-        "freeze-dried chicken liver": {
-          "form": "organ"
-        },
-        "fresh chicken": {
-          "form": "raw"
-        },
-        "Fresh chicken (11%)": {
-          "form": "raw"
-        },
-        "Fresh chicken (13%)": {
-          "form": "raw"
-        },
-        "Fresh chicken (14%)": {
-          "form": "raw"
-        },
-        "Fresh chicken (16%)": {
-          "form": "raw"
-        },
-        "Fresh chicken (17%)": {
-          "form": "raw"
-        },
-        "Fresh chicken (18%)": {
-          "form": "raw"
-        },
-        "fresh chicken (18.5%)": {
-          "form": "raw"
-        },
-        "Fresh chicken (19%)": {
-          "form": "raw"
-        },
-        "Fresh chicken (19.5%)": {
-          "form": "raw"
-        },
-        "Fresh chicken (21%)": {
-          "form": "raw"
-        },
-        "Fresh chicken (22%)": {
-          "form": "raw"
-        },
-        "Fresh chicken (25%)": {
-          "form": "raw"
-        },
-        "Fresh chicken (29%)": {
-          "form": "raw"
-        },
-        "fresh chicken (8%)": {
-          "form": "raw"
-        },
-        "fresh chicken giblets (heart, liver) (4%)": {
-          "form": "organ"
-        },
-        "fresh chicken giblets (heart, liver) (6%)": {
-          "form": "organ"
-        },
-        "fresh chicken giblets (liver, heart) (10%)": {
-          "form": "organ"
-        },
-        "fresh chicken giblets (liver, heart) (4%)": {
-          "form": "organ"
-        },
-        "fresh chicken giblets (liver, heart) (5%)": {
-          "form": "organ"
-        },
-        "fresh chicken giblets (liver, heart) (6%)": {
-          "form": "organ"
-        },
-        "fresh chicken giblets (liver, heart) (6.5%)": {
-          "form": "organ"
-        },
-        "fresh chicken giblets (liver, heart) (7%)": {
-          "form": "organ"
-        },
-        "fresh chicken giblets (liver, heart) (9%)": {
-          "form": "organ"
-        },
-        "Fresh Chicken Giblets (Liver, Heart, Gizzard) (7%)": {
-          "form": "organ"
-        },
-        "fresh chicken giblets (liver, heart, gizzard)(6%)": {
-          "form": "organ"
-        },
-        "Fresh deboned chicken": {
-          "form": "raw"
-        },
-        "G.A.P. Step 2 Chicken": {
-          "form": "raw"
-        },
-        "G.A.P. Step 2 Chicken Bone Broth": {
-          "form": "broth"
-        },
-        "G.A.P. Step 2 Chicken Livers": {
-          "form": "organ"
-        },
-        "G.A.P. Step 2 Chicken Meal": {
-          "form": "meal"
-        },
-        "G.A.P. Step 2 Chicken Necks": {
-          "form": "raw"
-        },
-        "G.A.P. Step 2 Chicken with Ground Bone": {
-          "form": "organ"
-        },
-        "Humanely Raised Chicken": {
-          "form": "raw"
-        },
-        "Hydrolyzed Chicken": {
-          "form": "hydrolyzed",
-          "is_hydrolyzed": true
-        },
-        "Hydrolyzed Chicken Flavor": {
-          "form": "hydrolyzed",
-          "is_hydrolyzed": true
-        },
-        "hydrolyzed chicken giblets": {
-          "form": "hydrolyzed",
-          "is_hydrolyzed": true
-        },
-        "Hydrolyzed Chicken Liver": {
-          "form": "hydrolyzed",
-          "is_hydrolyzed": true
-        },
-        "Chicken with ground bone": {
-          "form": "raw"
-        },
-        "chicken giblets (liver, heart, gizzard)": {
-          "form": "raw"
-        },
-        "fresh chicken giblets (heart, liver)": {
-          "form": "organ"
-        },
-        "fresh chicken giblets (liver, heart)": {
-          "form": "organ"
-        },
-        "fresh chicken giblets (liver, heart, gizzard)": {
-          "form": "organ"
-        },
-        "chicken breast": {
-          "form": "raw"
-        },
-        "Natural Chicken Flavor": {
-          "form": "derivative"
-        },
-        "natural chicken flavour": {
-          "form": "derivative"
-        },
-        "Natural Chicken Liver Flavor": {
-          "form": "derivative"
-        },
-        "Natural Rotisserie Chicken Flavour": {
-          "form": "derivative"
-        },
-        "Natural Grilled Chicken Flavour": {
-          "form": "derivative"
-        },
-        "chicken fat ( preserved with mixed tocopherols and citric acid )": {
-          "form": "fat"
-        },
-        "chicken fat ( preserved with mixed tocopherols, a natural source of vitamin E)": {
-          "form": "fat"
-        },
-        "Chicken Fat (preserved with Mixed Tocopherols and Citric Acid)": {
-          "form": "fat"
-        },
-        "Chicken Fat (preserved with Mixed Tocopherols)": {
-          "form": "fat"
-        },
-        "chicken fat (stabilized with mixed tocopherols, a natural source of vitamin E)": {
-          "form": "fat"
-        },
-        "chicken fat(preserved with mixed tocopherols, a natural source of vitamin E)": {
-          "form": "fat"
-        },
-        "Chicken Livers": {
-          "form": "liver"
-        },
-        "Chicken Hearts And Livers": {
-          "form": "organ"
-        },
-        "Chicken Hearts (source of Biotin)": {
-          "form": "heart"
-        },
-        "Chicken Hearts (source of Taurine)": {
-          "form": "heart"
-        },
-        "Chicken By-Product Meal (Source of Glucosamine & Chondroitin Sulfate)": {
-          "form": "by_product"
-        },
-        "chicken gizzard": {
-          "form": "organ"
-        },
-        "chickenmeal": {
-          "form": "meal"
-        },
-        "Roasted Chicken Flavour": {
-          "form": "derivative"
-        }
-      },
+      "members": [
+        "100% Animal Welfare Certified Chicken",
+        "Boneless chicken",
+        "Chicken",
+        "Chicken (source of Glucosamine and Chondroitin Sulfate)",
+        "Chicken (Source Of Glucosamine Hydrochloride & Chondroitin Sulfate)",
+        "Chicken (Source Of Glucosamine Hydrochloride And Chondroitin Sulfate)",
+        "Chicken (Source of Chondroitin Sulfate)",
+        "chicken bone broth",
+        "Chicken Bone Broth Concentrate",
+        "Chicken Broth",
+        "Chicken By-Product",
+        "chicken by-product meal",
+        "Chicken By-Product Meal (source of Glucosamine and Chondroitin Sulfate)",
+        "chicken by–product meal",
+        "Chicken By-Product Meal (source of Glucosamine and Chondrotin Sulfate)",
+        "chicken by-products",
+        "Chicken Byproduct Meal (Source of Glucosamine and Chondroitin Sulfate)",
+        "Chicken Cartilage",
+        "Dried Chicken Cartilage (Source of Glucosamine & Chondroitin Sulfate)",
+        "chicken cartilage (a source of chondroitin sulphate)",
+        "chicken cartilage (natural source of glucosamine)",
+        "Chicken Cartilage (source of Chondroitin Sulfate)",
+        "chicken fat",
+        "chicken fat (0.5%)",
+        "chicken fat (1%)",
+        "chicken fat (1.5%)",
+        "chicken fat (2%)",
+        "chicken fat (3%)",
+        "chicken fat (4%)",
+        "chicken fat (6%)",
+        "chicken fat (7%)",
+        "chicken fat (8%)",
+        "Chicken Gizzards",
+        "chicken heart",
+        "Chicken Hearts",
+        "Chicken Liver",
+        "Chicken Liver & Heart",
+        "Chicken Liver and Duck",
+        "Chicken Liver Flavor",
+        "Chicken Liver Flavour",
+        "Chicken Meal",
+        "Chicken Meal (Source of Glucosamine & Chondroitin Sulfate)",
+        "chicken meal (13%)",
+        "chicken meal (14%)",
+        "chicken meal (15%)",
+        "chicken meal (16.5%)",
+        "chicken meal (17%)",
+        "chicken meal (18%)",
+        "chicken meal (19%)",
+        "chicken meal (20%)",
+        "chicken meal (21%)",
+        "Chicken meal (25%)",
+        "chicken meal (9%)",
+        "Chicken Meal (source of Chondroitin Sulfate)",
+        "Chicken Meal (source of Glucosamine and Chondroitin Sulfate)",
+        "Chicken Meal (source of Glucosamine)",
+        "de-boned chicken",
+        "Deboned Chicken",
+        "dehydrated chicken",
+        "dehydrated chicken (4%)",
+        "dehydrated chicken (5%)",
+        "Dehydrated Chicken (7%)",
+        "dehydrated chicken liver",
+        "dehydrated chicken liver (0.5%)",
+        "dehydrated chicken liver (4%)",
+        "Dehydrated Chicken Liver (7%)",
+        "Dried Chicken",
+        "Dried Chicken Cartilage",
+        "Dried Chicken Cartilage (Source Of Glucosamine And Chondroitin Sulfate)",
+        "egg and chicken flavor",
+        "Egg and Chicken Flavour",
+        "freeze-dried chicken",
+        "freeze-dried chicken and liver",
+        "freeze-dried chicken liver",
+        "fresh chicken",
+        "Fresh chicken (11%)",
+        "Fresh chicken (13%)",
+        "Fresh chicken (14%)",
+        "Fresh chicken (16%)",
+        "Fresh chicken (17%)",
+        "Fresh chicken (18%)",
+        "fresh chicken (18.5%)",
+        "Fresh chicken (19%)",
+        "Fresh chicken (19.5%)",
+        "Fresh chicken (21%)",
+        "Fresh chicken (22%)",
+        "Fresh chicken (25%)",
+        "Fresh chicken (29%)",
+        "fresh chicken (8%)",
+        "fresh chicken giblets (heart, liver) (4%)",
+        "fresh chicken giblets (heart, liver) (6%)",
+        "fresh chicken giblets (liver, heart) (10%)",
+        "fresh chicken giblets (liver, heart) (4%)",
+        "fresh chicken giblets (liver, heart) (5%)",
+        "fresh chicken giblets (liver, heart) (6%)",
+        "fresh chicken giblets (liver, heart) (6.5%)",
+        "fresh chicken giblets (liver, heart) (7%)",
+        "fresh chicken giblets (liver, heart) (9%)",
+        "Fresh Chicken Giblets (Liver, Heart, Gizzard) (7%)",
+        "fresh chicken giblets (liver, heart, gizzard)(6%)",
+        "Fresh deboned chicken",
+        "G.A.P. Step 2 Chicken",
+        "G.A.P. Step 2 Chicken Bone Broth",
+        "G.A.P. Step 2 Chicken Livers",
+        "G.A.P. Step 2 Chicken Meal",
+        "G.A.P. Step 2 Chicken Necks",
+        "G.A.P. Step 2 Chicken with Ground Bone",
+        "Humanely Raised Chicken",
+        "Hydrolyzed Chicken",
+        "Hydrolyzed Chicken Flavor",
+        "hydrolyzed chicken giblets",
+        "Hydrolyzed Chicken Liver",
+        "Chicken with ground bone",
+        "chicken giblets (liver, heart, gizzard)",
+        "fresh chicken giblets (heart, liver)",
+        "fresh chicken giblets (liver, heart)",
+        "fresh chicken giblets (liver, heart, gizzard)",
+        "chicken breast",
+        "Natural Chicken Flavor",
+        "natural chicken flavour",
+        "Natural Chicken Liver Flavor",
+        "Natural Rotisserie Chicken Flavour",
+        "Natural Grilled Chicken Flavour",
+        "chicken fat ( preserved with mixed tocopherols and citric acid )",
+        "chicken fat ( preserved with mixed tocopherols, a natural source of vitamin E)",
+        "Chicken Fat (preserved with Mixed Tocopherols and Citric Acid)",
+        "Chicken Fat (preserved with Mixed Tocopherols)",
+        "chicken fat (stabilized with mixed tocopherols, a natural source of vitamin E)",
+        "chicken fat(preserved with mixed tocopherols, a natural source of vitamin E)",
+        "Chicken Livers",
+        "Chicken Hearts And Livers",
+        "Chicken Hearts (source of Biotin)",
+        "Chicken Hearts (source of Taurine)",
+        "Chicken By-Product Meal (Source of Glucosamine & Chondroitin Sulfate)",
+        "chicken gizzard",
+        "chickenmeal",
+        "Roasted Chicken Flavour",
+        "Chicken (including Ground Chicken Bone)",
+        "Ground Chicken Bone",
+        "Freeze Dried Chicken (including Ground Chicken Bone)",
+        "Freeze Dried Chicken Heart",
+        "Freeze Dried Chicken Liver",
+        "Freeze-Dried Chicken Heart",
+        "Chicken Fat (preserved with Mixed Tocopherols & Citric Acid)",
+        "Dried Chicken Bone Broth",
+        "Freeze-Dried Chicken Necks",
+        "Chicken Fat (Mixed Tocopherols Used As A Preservative)"
+      ],
       "category": "protein"
     },
     "chickpea": {
       "source_group": "legume",
-      "members": {
-        "chickpeas": {
-          "form": "whole"
-        },
-        "chickpeas*": {
-          "form": "whole"
-        },
-        "dried chickpeas": {
-          "form": "dried"
-        },
-        "Garbanzo Beans": {
-          "form": "whole"
-        },
-        "Garbanzo Beans (Chickpeas)": {
-          "form": "whole"
-        },
-        "Ground Chickpeas": {
-          "form": "ground"
-        },
-        "whole chickpeas": {
-          "form": "whole"
-        },
-        "chickpea fibre": {
-          "form": "fiber"
-        }
-      },
+      "members": [
+        "chickpeas",
+        "chickpeas*",
+        "dried chickpeas",
+        "Garbanzo Beans",
+        "Garbanzo Beans (Chickpeas)",
+        "Ground Chickpeas",
+        "whole chickpeas",
+        "chickpea fibre",
+        "Chickpea Flour"
+      ],
       "category": "carb"
     },
     "chicory": {
       "source_group": "fiber",
-      "members": {
-        "Chicory Root": {
-          "form": "raw"
-        },
-        "Chicory Root Extract": {
-          "form": "extract"
-        },
-        "Chicory Root Inulin": {
-          "form": "extract"
-        },
-        "Dried Chicory Root": {
-          "form": "dried"
-        },
-        "Dried Chicory Root Extract": {
-          "form": "extract"
-        },
-        "chicory": {
-          "form": "raw"
-        },
-        "inulin (FOS) (chicory root)": {
-          "form": "extract"
-        },
-        "dried chicory root (source of inulin)": {
-          "form": "dried"
-        }
-      },
+      "members": [
+        "Chicory Root",
+        "Chicory Root Extract",
+        "Chicory Root Inulin",
+        "Dried Chicory Root",
+        "Dried Chicory Root Extract",
+        "chicory",
+        "inulin (FOS) (chicory root)",
+        "dried chicory root (source of inulin)",
+        "Chicory Extract"
+      ],
       "category": "fiber"
     },
     "clam": {
       "source_group": "mollusk",
-      "members": {
-        "clams": {
-          "form": "raw"
-        }
-      },
+      "members": [
+        "clams"
+      ],
       "category": "protein"
     },
     "cmc": {
       "source_group": "additive",
-      "members": {
-        "Cellulose Gum": {
-          "form": "raw"
-        },
-        "Carboxymethylcellulose": {
-          "form": "raw"
-        }
-      },
+      "members": [
+        "Cellulose Gum",
+        "Carboxymethylcellulose"
+      ],
       "category": "additive"
     },
     "coconut": {
       "source_group": "seed",
-      "members": {
-        "Coconut": {
-          "form": "whole"
-        },
-        "Coconut Meal": {
-          "form": "meal"
-        },
-        "Coconut Oil": {
-          "form": "oil"
-        },
-        "coconut oil (preserved with mixed tocopherols)": {
-          "form": "oil"
-        },
-        "Coconut Flakes": {
-          "form": "whole"
-        },
-        "Dried Coconut": {
-          "form": "dried"
-        },
-        "coconut flour": {
-          "form": "flour"
-        }
-      },
+      "members": [
+        "Coconut",
+        "Coconut Meal",
+        "Coconut Oil",
+        "coconut oil (preserved with mixed tocopherols)",
+        "Coconut Flakes",
+        "Dried Coconut",
+        "coconut flour"
+      ],
       "category": "fat"
     },
     "cod": {
       "source_group": "fish",
-      "members": {
-        "cod": {
-          "form": "raw"
-        },
-        "Cod Broth": {
-          "form": "broth"
-        },
-        "Cod Liver Oil": {
-          "form": "oil"
-        },
-        "Cod Liver Oil 475 mg (Provides Omega-3 Fatty Acids (EPA & DHA) 60 mg)": {
-          "form": "oil"
-        },
-        "Cod Skins": {
-          "form": "derivative"
-        },
-        "de-boned cod": {
-          "form": "raw"
-        },
-        "freeze- dried cod liver": {
-          "form": "organ"
-        },
-        "freeze-dried cod and liver": {
-          "form": "organ"
-        },
-        "freeze-dried cod liver": {
-          "form": "organ"
-        },
-        "Wild-Caught Cod": {
-          "form": "raw"
-        },
-        "ground cod with bones": {
-          "form": "ground"
-        }
-      },
+      "members": [
+        "cod",
+        "Cod Broth",
+        "Cod Liver Oil",
+        "Cod Liver Oil 475 mg (Provides Omega-3 Fatty Acids (EPA & DHA) 60 mg)",
+        "Cod Skins",
+        "de-boned cod",
+        "freeze- dried cod liver",
+        "freeze-dried cod and liver",
+        "freeze-dried cod liver",
+        "Deboned Cod",
+        "Wild-Caught Cod",
+        "ground cod with bones",
+        "Freeze Dried Cod"
+      ],
       "category": "protein"
     },
     "collard": {
       "source_group": "vegetable",
-      "members": {
-        "collard greens": {
-          "form": "whole"
-        }
-      },
+      "members": [
+        "collard greens"
+      ],
       "category": "carb"
     },
     "corn": {
       "source_group": "grain",
-      "members": {
-        "corn": {
-          "form": "whole"
-        },
-        "corn flour": {
-          "form": "flour"
-        },
-        "Corn Germ Meal": {
-          "form": "by_product"
-        },
-        "Corn Gluten Meal": {
-          "form": "meal"
-        },
-        "corn grits": {
-          "form": "ground"
-        },
-        "corn meal": {
-          "form": "meal"
-        },
-        "corn oil": {
-          "form": "oil"
-        },
-        "Corn Protein Concentrate": {
-          "form": "concentrate"
-        },
-        "Corn Protein Meal": {
-          "form": "meal"
-        },
-        "Corn Starch": {
-          "form": "starch"
-        },
-        "Ground Corn": {
-          "form": "ground"
-        },
-        "Ground Whole Grain Corn": {
-          "form": "ground"
-        },
-        "Ground Yellow Corn": {
-          "form": "ground"
-        },
-        "Hydrolyzed Corn Protein": {
-          "form": "hydrolyzed",
-          "is_hydrolyzed": true
-        },
-        "Whole Grain Corn": {
-          "form": "whole"
-        },
-        "Corn Starch-Modified": {
-          "form": "starch"
-        },
-        "modified corn starch": {
-          "form": "starch"
-        },
-        "Corn Syrup": {
-          "form": "derivative"
-        },
-        "High Fructose Corn Syrup": {
-          "form": "derivative"
-        },
-        "Hydrogenated Corn Syrup": {
-          "form": "derivative"
-        }
-      },
+      "members": [
+        "corn",
+        "corn flour",
+        "Corn Germ Meal",
+        "Corn Gluten Meal",
+        "corn grits",
+        "corn meal",
+        "corn oil",
+        "Corn Protein Concentrate",
+        "Corn Protein Meal",
+        "Corn Starch",
+        "Ground Corn",
+        "Ground Whole Grain Corn",
+        "Ground Yellow Corn",
+        "Hydrolyzed Corn Protein",
+        "Whole Grain Corn",
+        "Corn Starch-Modified",
+        "modified corn starch",
+        "Corn Syrup",
+        "High Fructose Corn Syrup",
+        "Hydrogenated Corn Syrup",
+        "Whole Ground Corn",
+        "Whole Corn",
+        "Ground Whole Corn"
+      ],
       "category": "carb"
     },
     "cranberry": {
       "source_group": "fruit",
-      "members": {
-        "Cranberries": {
-          "form": "whole"
-        },
-        "cranberry": {
-          "form": "whole"
-        },
-        "Dried Cranberries": {
-          "form": "dried"
-        },
-        "fresh whole cranberries": {
-          "form": "whole"
-        },
-        "Organic Cranberries": {
-          "form": "whole"
-        },
-        "Pressed Cranberries": {
-          "form": "whole"
-        },
-        "whole cranberries": {
-          "form": "whole"
-        },
-        "dehydrated cranberries": {
-          "form": "dried"
-        },
-        "dried cranberry pomace": {
-          "form": "fiber"
-        },
-        "Cranberry Powder": {
-          "form": "powder"
-        }
-      },
+      "members": [
+        "Cranberries",
+        "cranberry",
+        "Dried Cranberries",
+        "fresh whole cranberries",
+        "Organic Cranberries",
+        "Pressed Cranberries",
+        "whole cranberries",
+        "dehydrated cranberries",
+        "dried cranberry pomace",
+        "Cranberry Powder"
+      ],
       "category": "carb"
     },
     "crocodile": {
       "source_group": "exotic",
-      "members": {
-        "alligator": {
-          "form": "raw"
-        }
-      },
+      "members": [
+        "alligator"
+      ],
       "category": "protein"
     },
     "dairy": {
       "source_group": "dairy",
-      "members": {
-        "casein": {
-          "form": "raw"
-        },
-        "Cheddar Cheese": {
-          "form": "raw"
-        },
-        "Cheddar Cheese Powder": {
-          "form": "raw"
-        },
-        "cheese": {
-          "form": "raw"
-        },
-        "Cheese Powder": {
-          "form": "raw"
-        },
-        "Cheese Powder (source of cheddar cheese flavour)": {
-          "form": "derivative"
-        },
-        "Cheese Powder (source of cheese flavour)": {
-          "form": "derivative"
-        },
-        "cottage cheese": {
-          "form": "raw"
-        },
-        "Dried Cheddar Cheese Powder": {
-          "form": "dried"
-        },
-        "Dried Cheese": {
-          "form": "dried"
-        },
-        "Dried Cultured Milk": {
-          "form": "dried"
-        },
-        "Dried Cultured Skim Milk": {
-          "form": "dried"
-        },
-        "Dried Cultured Whey": {
-          "form": "dried"
-        },
-        "dried hydrolyzed casein": {
-          "form": "hydrolyzed",
-          "is_hydrolyzed": true
-        },
-        "Dried Monterey Jack Cheese Powder": {
-          "form": "dried"
-        },
-        "Dried Skim Milk": {
-          "form": "dried"
-        },
-        "Dried Swiss Cheese Powder": {
-          "form": "dried"
-        },
-        "Dried Whey": {
-          "form": "dried"
-        },
-        "Dried Whey Protein Concentrate": {
-          "form": "concentrate"
-        },
-        "Whey protein concentrate": {
-          "form": "concentrate"
-        },
-        "Yogurt": {
-          "form": "raw"
-        },
-        "bovine colostrum": {
-          "form": "raw"
-        },
-        "Dried Colostrum": {
-          "form": "dried"
-        },
-        "lactose": {
-          "form": "derivative"
-        }
-      },
+      "members": [
+        "casein",
+        "Cheddar Cheese",
+        "Cheddar Cheese Powder",
+        "cheese",
+        "Cheese Powder",
+        "Cheese Powder (source of cheddar cheese flavour)",
+        "Cheese Powder (source of cheese flavour)",
+        "cottage cheese",
+        "Dried Cheddar Cheese Powder",
+        "Dried Cheese",
+        "Dried Cultured Milk",
+        "Dried Cultured Skim Milk",
+        "Dried Cultured Whey",
+        "dried hydrolyzed casein",
+        "Dried Monterey Jack Cheese Powder",
+        "Dried Skim Milk",
+        "Dried Swiss Cheese Powder",
+        "Dried Whey",
+        "Dried Whey Protein Concentrate",
+        "Whey protein concentrate",
+        "Yogurt",
+        "bovine colostrum",
+        "Dried Colostrum",
+        "lactose"
+      ],
       "category": "protein"
     },
     "duck": {
       "source_group": "poultry",
-      "members": {
-        "de-boned duck": {
-          "form": "raw"
-        },
-        "Deboned Duck": {
-          "form": "raw"
-        },
-        "Duck": {
-          "form": "raw"
-        },
-        "duck broth": {
-          "form": "broth"
-        },
-        "duck by-product meal": {
-          "form": "meal"
-        },
-        "duck fat": {
-          "form": "fat"
-        },
-        "duck fat (8%)": {
-          "form": "fat"
-        },
-        "duck liver": {
-          "form": "organ"
-        },
-        "Duck Meal": {
-          "form": "meal"
-        },
-        "duck meal (17%)": {
-          "form": "meal"
-        },
-        "Duck with ground bone": {
-          "form": "organ"
-        },
-        "freeze-dried duck": {
-          "form": "dried"
-        },
-        "freeze-dried duck and liver": {
-          "form": "organ"
-        },
-        "Raw duck (17%)": {
-          "form": "raw"
-        },
-        "raw duck (8.5%)": {
-          "form": "raw"
-        },
-        "raw duck liver (16%)": {
-          "form": "organ"
-        },
-        "raw duck liver (4%)": {
-          "form": "organ"
-        },
-        "Roasted Duck": {
-          "form": "raw"
-        },
-        "raw duck": {
-          "form": "raw"
-        },
-        "raw duck liver": {
-          "form": "organ"
-        },
-        "Duck Bone Broth": {
-          "form": "broth"
-        }
-      },
+      "members": [
+        "de-boned duck",
+        "Deboned Duck",
+        "Duck",
+        "duck broth",
+        "duck by-product meal",
+        "duck fat",
+        "duck fat (8%)",
+        "duck liver",
+        "Duck Meal",
+        "Duck Meal (Source Of Glucosamine)",
+        "duck meal (17%)",
+        "Duck with ground bone",
+        "freeze-dried duck",
+        "freeze-dried duck and liver",
+        "Raw duck (17%)",
+        "raw duck (8.5%)",
+        "raw duck liver (16%)",
+        "raw duck liver (4%)",
+        "Roasted Duck",
+        "raw duck",
+        "raw duck liver",
+        "Duck Bone Broth"
+      ],
       "category": "protein"
     },
     "egg": {
       "source_group": "egg",
-      "members": {
-        "dehydrated egg": {
-          "form": "dried"
-        },
-        "dehydrated egg (4%)": {
-          "form": "dried"
-        },
-        "Dried Egg": {
-          "form": "dried"
-        },
-        "Dried Egg Product": {
-          "form": "dried"
-        },
-        "Dried Egg White": {
-          "form": "dried"
-        },
-        "dried egg whites": {
-          "form": "dried"
-        },
-        "Egg Product": {
-          "form": "raw"
-        },
-        "Egg Product (Dried)": {
-          "form": "dried"
-        },
-        "Egg Whites": {
-          "form": "raw"
-        },
-        "Egg Yolks": {
-          "form": "raw"
-        },
-        "eggs": {
-          "form": "raw"
-        },
-        "eggs (4%)": {
-          "form": "raw"
-        },
-        "fresh egg (4%)": {
-          "form": "raw"
-        },
-        "Fresh Eggs (3%)": {
-          "form": "raw"
-        },
-        "fresh eggs (4%)": {
-          "form": "raw"
-        },
-        "fresh eggs (5%)": {
-          "form": "raw"
-        },
-        "fresh eggs (6%)": {
-          "form": "raw"
-        },
-        "fresh eggs (8%)": {
-          "form": "raw"
-        },
-        "fresh whole eggs": {
-          "form": "whole"
-        },
-        "Humanely Raised Dried Whole Egg": {
-          "form": "dried"
-        },
-        "Spray Dried Egg Product": {
-          "form": "dried"
-        },
-        "Sprayed Dried Egg Product": {
-          "form": "dried"
-        },
-        "whole dried egg": {
-          "form": "dried"
-        },
-        "whole eggs": {
-          "form": "whole"
-        },
-        "fresh egg": {
-          "form": "raw"
-        },
-        "fresh eggs": {
-          "form": "raw"
-        },
-        "Egg": {
-          "form": "whole"
-        },
-        "Whole Eggs (source of Vitamin E)": {
-          "form": "whole"
-        },
-        "Egg (Source of Omega–3 Fatty Acids)": {
-          "form": "whole"
-        },
-        "Enriched Egg Noodles (Semolina, Eggs, Niacin, Ferrous Sulfate, Thiamine Mononitrate, Riboflavin, Folic Acid)": {
-          "form": "whole"
-        }
-      },
+      "members": [
+        "dehydrated egg",
+        "dehydrated egg (4%)",
+        "Dried Egg",
+        "Dried Egg Product",
+        "Dried Egg White",
+        "dried egg whites",
+        "Egg Product",
+        "Egg Product (Dried)",
+        "Egg Whites",
+        "Egg Yolks",
+        "egg yolk",
+        "dried whole eggs",
+        "eggs",
+        "eggs (4%)",
+        "fresh egg (4%)",
+        "Fresh Eggs (3%)",
+        "fresh eggs (4%)",
+        "fresh eggs (5%)",
+        "fresh eggs (6%)",
+        "fresh eggs (8%)",
+        "fresh whole eggs",
+        "Humanely Raised Dried Whole Egg",
+        "Spray Dried Egg Product",
+        "Sprayed Dried Egg Product",
+        "whole dried egg",
+        "whole eggs",
+        "fresh egg",
+        "fresh eggs",
+        "Egg",
+        "Whole Eggs (source of Vitamin E)",
+        "Egg (Source of Omega–3 Fatty Acids)",
+        "Enriched Egg Noodles (Semolina, Eggs, Niacin, Ferrous Sulfate, Thiamine Mononitrate, Riboflavin, Folic Acid)",
+        "Egg White",
+        "Dried Eggs"
+      ],
       "category": "protein"
     },
     "elk": {
       "source_group": "exotic",
-      "members": {
-        "100% naturally-shed elk antler": {
-          "form": "raw"
-        },
-        "ground elk antler": {
-          "form": "ground"
-        }
-      },
+      "members": [
+        "100% naturally-shed elk antler",
+        "ground elk antler"
+      ],
       "category": "protein"
     },
     "fenugreek": {
       "source_group": "legume",
       "category": "carb",
-      "members": {
-        "Fenugreek Seeds": {
-          "form": "whole"
-        },
-        "fenugreek seed": {
-          "form": "whole"
-        }
-      }
+      "members": [
+        "Fenugreek Seeds",
+        "fenugreek seed"
+      ]
     },
     "flaxseed": {
       "source_group": "seed",
-      "members": {
-        "Flax Seed": {
-          "form": "whole"
-        },
-        "Flaxseed": {
-          "form": "whole"
-        },
-        "Flaxseed (source of Omega 3 & 6 Fatty Acids)": {
-          "form": "whole"
-        },
-        "Flaxseed (source of Omega 3 & Omega 6 Fatty Acids)": {
-          "form": "whole"
-        },
-        "Flaxseed (source of Omega 3 and 6 Fatty Acids)": {
-          "form": "whole"
-        },
-        "Flaxseed (source of Omega 3 and Omega 6 Fatty Acids)": {
-          "form": "whole"
-        },
-        "Flaxseed (source of Omega 3 Fatty Acids)": {
-          "form": "whole"
-        },
-        "Flaxseed (source of Omega 6 Fatty Acids)": {
-          "form": "whole"
-        },
-        "Flaxseed Meal": {
-          "form": "meal"
-        },
-        "Flaxseed Oil": {
-          "form": "oil"
-        },
-        "flaxseed*": {
-          "form": "whole"
-        },
-        "Flaxseeds": {
-          "form": "whole"
-        },
-        "Ground Flaxseed": {
-          "form": "ground"
-        },
-        "Ground Flaxseeds": {
-          "form": "ground"
-        },
-        "Ground Whole Flaxseed": {
-          "form": "ground"
-        },
-        "Whole Flaxseed": {
-          "form": "whole"
-        },
-        "ground whole axseed": {
-          "form": "ground"
-        },
-        "Flaxseed Oil (Preserved With Mixed Tocopherols)": {
-          "form": "oil"
-        }
-      },
+      "members": [
+        "Flax Seed",
+        "Flaxseed",
+        "Flaxseed (source of Omega 3 & 6 Fatty Acids)",
+        "Flaxseed (source of Omega 3 & Omega 6 Fatty Acids)",
+        "Flaxseed (source of Omega 3 and 6 Fatty Acids)",
+        "Flaxseed (source of Omega 3 and Omega 6 Fatty Acids)",
+        "Flaxseed (source of Omega 3 Fatty Acids)",
+        "Flaxseed (source of Omega 6 Fatty Acids)",
+        "Flaxseed Meal",
+        "Flaxseed Oil",
+        "flaxseed*",
+        "Flaxseeds",
+        "Ground Flaxseed",
+        "Ground Flaxseeds",
+        "Ground Whole Flaxseed",
+        "Whole Flaxseed",
+        "ground whole axseed",
+        "Flaxseed Oil (Preserved With Mixed Tocopherols)"
+      ],
       "category": "fat"
     },
     "flounder": {
       "source_group": "fish",
-      "members": {
-        "flounder": {
-          "form": "raw"
-        },
-        "raw flounder (4%)": {
-          "form": "raw"
-        },
-        "raw flounder (6%)": {
-          "form": "raw"
-        },
-        "raw flounder (9%)": {
-          "form": "raw"
-        },
-        "raw flounder": {
-          "form": "raw"
-        }
-      },
+      "members": [
+        "flounder",
+        "raw flounder (4%)",
+        "raw flounder (6%)",
+        "raw flounder (9%)",
+        "raw flounder"
+      ],
       "category": "protein"
     },
     "garlic": {
       "source_group": "vegetable",
-      "members": {
-        "Garlic": {
-          "form": "raw"
-        },
-        "Garlic Powder": {
-          "form": "ground"
-        },
-        "garlic  powder": {
-          "form": "ground"
-        },
-        "Garlic Oil": {
-          "form": "oil"
-        },
-        "Dried Garlic": {
-          "form": "dried"
-        },
-        "Garlic Oil. D569922": {
-          "form": "oil"
-        },
-        "Garlic Oil. D849722": {
-          "form": "oil"
-        },
-        "Garlic Oil. D849822": {
-          "form": "oil"
-        },
-        "Garlic Oil. D849922": {
-          "form": "oil"
-        },
-        "Garlic Oil. F868122": {
-          "form": "oil"
-        },
-        "garlic   powder": {
-          "form": "ground"
-        }
-      },
+      "members": [
+        "Garlic",
+        "Garlic Powder",
+        "garlic  powder",
+        "Garlic Oil",
+        "Dried Garlic",
+        "Garlic Oil. D569922",
+        "Garlic Oil. D849722",
+        "Garlic Oil. D849822",
+        "Garlic Oil. D849922",
+        "Garlic Oil. F868122",
+        "garlic   powder"
+      ],
       "category": "carb"
     },
     "ginger": {
       "source_group": "vegetable",
-      "members": {
-        "ginger": {
-          "form": "raw"
-        },
-        "Ginger Root": {
-          "form": "raw"
-        },
-        "ground ginger": {
-          "form": "raw"
-        },
-        "zingiber officinale (ginger root)": {
-          "form": "raw"
-        }
-      },
+      "members": [
+        "ginger",
+        "Ginger Root",
+        "ground ginger",
+        "zingiber officinale (ginger root)",
+        "Dried Ginger"
+      ],
       "category": "carb"
     },
     "goat": {
       "source_group": "red_meat",
-      "members": {
-        "goat": {
-          "form": "raw"
-        },
-        "goat kidney": {
-          "form": "organ"
-        },
-        "goat liver": {
-          "form": "organ"
-        },
-        "goat tripe": {
-          "form": "organ"
-        },
-        "raw goat": {
-          "form": "raw"
-        }
-      },
+      "members": [
+        "goat",
+        "goat kidney",
+        "goat liver",
+        "goat tripe",
+        "raw goat",
+        "Goat Meal (Source of Glucosamine and Chondroitin Sulfate)"
+      ],
       "category": "protein"
     },
     "goose": {
       "source_group": "poultry",
       "category": "protein",
-      "members": {
-        "goose": {
-          "form": "raw"
-        }
-      }
+      "members": [
+        "goose"
+      ]
+    },
+    "guinea_fowl": {
+      "source_group": "poultry",
+      "members": [
+        "Guinea Fowl"
+      ],
+      "category": "protein"
     },
     "green_bean": {
       "source_group": "vegetable",
-      "members": {
-        "Dried Green Beans": {
-          "form": "dried"
-        },
-        "Green Beans": {
-          "form": "whole"
-        },
-        "Green Beans (Dried)": {
-          "form": "dried"
-        },
-        "string beans": {
-          "form": "whole"
-        }
-      },
+      "members": [
+        "Dried Green Beans",
+        "Green Beans",
+        "Green Beans (Dried)",
+        "string beans"
+      ],
       "category": "carb"
     },
     "guar_gum": {
       "source_group": "additive",
-      "members": {
-        "Guar Gum": {
-          "form": "raw"
-        },
-        "organic guar gum": {
-          "form": "raw"
-        }
-      },
+      "members": [
+        "Guar Gum",
+        "organic guar gum"
+      ],
       "category": "additive"
     },
     "guineafowl": {
       "source_group": "poultry",
       "category": "protein",
-      "members": {
-        "guineafowl": {
-          "form": "raw"
-        }
-      }
+      "members": [
+        "guineafowl"
+      ]
     },
     "haddock": {
       "source_group": "fish",
-      "members": {
-        "Haddock": {
-          "form": "raw"
-        }
-      },
+      "members": [
+        "Haddock"
+      ],
       "category": "protein"
     },
     "hake": {
       "source_group": "fish",
-      "members": {
-        "hake": {
-          "form": "raw"
-        },
-        "raw hake (4%)": {
-          "form": "raw"
-        },
-        "raw whole hake (10%)": {
-          "form": "whole"
-        },
-        "raw whole hake (4%)": {
-          "form": "whole"
-        },
-        "raw whole hake (4.5%)": {
-          "form": "whole"
-        },
-        "raw whole hake (5%)": {
-          "form": "whole"
-        },
-        "Raw Whole Hake (7%)": {
-          "form": "whole"
-        },
-        "raw whole hake (8%)": {
-          "form": "whole"
-        },
-        "raw hake": {
-          "form": "raw"
-        },
-        "raw whole hake": {
-          "form": "whole"
-        }
-      },
+      "members": [
+        "hake",
+        "raw hake (4%)",
+        "raw whole hake (10%)",
+        "raw whole hake (4%)",
+        "raw whole hake (4.5%)",
+        "raw whole hake (5%)",
+        "Raw Whole Hake (7%)",
+        "raw whole hake (8%)",
+        "raw hake",
+        "raw whole hake"
+      ],
       "category": "protein"
     },
     "hemp": {
       "source_group": "seed",
-      "members": {
-        "Hemp Seed Oil": {
-          "form": "oil"
-        }
-      },
+      "members": [
+        "Hemp Seed Oil"
+      ],
       "category": "fat"
     },
     "herb": {
       "source_group": "other",
-      "members": {
-        "Cinnamon": {
-          "form": "raw"
-        },
-        "chamomile": {
-          "form": "raw"
-        },
-        "Oregano": {
-          "form": "raw"
-        },
-        "Sage": {
-          "form": "raw"
-        },
-        "thyme": {
-          "form": "raw"
-        },
-        "peppermint": {
-          "form": "raw"
-        },
-        "peppermint leaf": {
-          "form": "raw"
-        },
-        "lavender": {
-          "form": "raw"
-        },
-        "capsicum": {
-          "form": "raw"
-        },
-        "Spearmint": {
-          "form": "raw"
-        },
-        "Spearmint Extract": {
-          "form": "extract"
-        },
-        "fennel": {
-          "form": "raw"
-        },
-        "Fennel Seed": {
-          "form": "raw"
-        },
-        "cayenne": {
-          "form": "raw"
-        },
-        "cardamom": {
-          "form": "raw"
-        },
-        "cloves": {
-          "form": "raw"
-        },
-        "Dandelion": {
-          "form": "raw"
-        },
-        "Dandelion Greens": {
-          "form": "raw"
-        },
-        "marigold": {
-          "form": "raw"
-        },
-        "marigold extract (Tagetes erecta\nL.)": {
-          "form": "extract"
-        },
-        "marigold extract (Tagetes erecta L.)": {
-          "form": "extract"
-        },
-        "paprika": {
-          "form": "raw"
-        },
-        "Paprika (For Colour)": {
-          "form": "raw"
-        },
-        "Paprika (for color)": {
-          "form": "raw"
-        },
-        "Paprika Oleoresin (for colour)": {
-          "form": "extract"
-        }
-      }
+      "members": [
+        "Cinnamon",
+        "chamomile",
+        "Oregano",
+        "Sage",
+        "thyme",
+        "peppermint",
+        "peppermint leaf",
+        "lavender",
+        "capsicum",
+        "Spearmint",
+        "Spearmint Extract",
+        "fennel",
+        "Fennel Seed",
+        "cayenne",
+        "cardamom",
+        "cloves",
+        "Dandelion",
+        "Dandelion Greens",
+        "marigold",
+        "marigold extract (Tagetes erecta\nL.)",
+        "marigold extract (Tagetes erecta L.)",
+        "paprika",
+        "Paprika (For Colour)",
+        "Paprika (for color)",
+        "Paprika Oleoresin (for colour)"
+      ]
     },
     "herring": {
       "source_group": "fish",
-      "members": {
-        "de-boned herring": {
-          "form": "raw"
-        },
-        "deboned herring": {
-          "form": "raw"
-        },
-        "Dehydrated Herring (2%)": {
-          "form": "dried"
-        },
-        "dehydrated herring (4%)": {
-          "form": "dried"
-        },
-        "dehydrated herring (4.5%)": {
-          "form": "dried"
-        },
-        "dehydrated herring (5%)": {
-          "form": "dried"
-        },
-        "Dehydrated Herring (7%)": {
-          "form": "dried"
-        },
-        "herring": {
-          "form": "raw"
-        },
-        "Herring Meal": {
-          "form": "meal"
-        },
-        "herring meal (18%)": {
-          "form": "meal"
-        },
-        "herring meal (2.5%)": {
-          "form": "meal"
-        },
-        "Herring meal (21%)": {
-          "form": "meal"
-        },
-        "herring meal (3%)": {
-          "form": "meal"
-        },
-        "herring meal (4%)": {
-          "form": "meal"
-        },
-        "herring meal (5%)": {
-          "form": "meal"
-        },
-        "herring meal (7%)": {
-          "form": "meal"
-        },
-        "herring meal (9%)": {
-          "form": "meal"
-        },
-        "herring oil (4%)": {
-          "form": "oil"
-        },
-        "Ocean Herring": {
-          "form": "raw"
-        },
-        "raw whole herring (10%)": {
-          "form": "whole"
-        },
-        "Raw whole herring (14%)": {
-          "form": "whole"
-        },
-        "raw whole herring (4%)": {
-          "form": "whole"
-        },
-        "raw whole herring (5%)": {
-          "form": "whole"
-        },
-        "raw whole herring (6%)": {
-          "form": "whole"
-        },
-        "Raw Whole Herring (7%)": {
-          "form": "whole"
-        },
-        "whole herring": {
-          "form": "whole"
-        },
-        "dehydrated herring": {
-          "form": "dried"
-        },
-        "herring oil": {
-          "form": "oil"
-        },
-        "raw whole herring": {
-          "form": "whole"
-        }
-      },
+      "members": [
+        "de-boned herring",
+        "deboned herring",
+        "Dehydrated Herring (2%)",
+        "dehydrated herring (4%)",
+        "dehydrated herring (4.5%)",
+        "dehydrated herring (5%)",
+        "Dehydrated Herring (7%)",
+        "herring",
+        "Herring Meal",
+        "herring meal (18%)",
+        "herring meal (2.5%)",
+        "Herring meal (21%)",
+        "herring meal (3%)",
+        "herring meal (4%)",
+        "herring meal (5%)",
+        "herring meal (7%)",
+        "herring meal (9%)",
+        "herring oil (4%)",
+        "Ocean Herring",
+        "raw whole herring (10%)",
+        "Raw whole herring (14%)",
+        "raw whole herring (4%)",
+        "raw whole herring (5%)",
+        "raw whole herring (6%)",
+        "Raw Whole Herring (7%)",
+        "whole herring",
+        "dehydrated herring",
+        "herring oil",
+        "raw whole herring"
+      ],
       "category": "protein"
     },
     "honey": {
       "source_group": "other",
-      "members": {
-        "honey": {
-          "form": "raw"
-        },
-        "Organic Honey": {
-          "form": "raw"
-        }
-      }
+      "members": [
+        "honey",
+        "Organic Honey"
+      ]
     },
     "kale": {
       "source_group": "vegetable",
-      "members": {
-        "fresh kale": {
-          "form": "raw"
-        },
-        "Kale": {
-          "form": "whole"
-        },
-        "Organic Kale": {
-          "form": "whole"
-        },
-        "Dried Kale": {
-          "form": "dried"
-        }
-      },
+      "members": [
+        "fresh kale",
+        "Kale",
+        "Organic Kale",
+        "Dried Kale",
+        "Freeze-Dried Kale"
+      ],
       "category": "carb"
     },
     "kangaroo": {
       "source_group": "exotic",
-      "members": {
-        "dried kangaroo": {
-          "form": "dried"
-        },
-        "Kangaroo": {
-          "form": "raw"
-        },
-        "kangaroo liver": {
-          "form": "organ"
-        },
-        "Kangaroo Meal": {
-          "form": "meal"
-        }
-      },
+      "members": [
+        "dried kangaroo",
+        "Kangaroo",
+        "kangaroo liver",
+        "Kangaroo Meal"
+      ],
       "category": "protein"
     },
     "lamb": {
       "source_group": "red_meat",
-      "members": {
-        "100% Animal Welfare Certified Lamb": {
-          "form": "raw"
-        },
-        "de-boned lamb": {
-          "form": "raw"
-        },
-        "Deboned Lamb": {
-          "form": "raw"
-        },
-        "dehydrated lamb (5%)": {
-          "form": "dried"
-        },
-        "freeze-dried lamb": {
-          "form": "dried"
-        },
-        "freeze-dried lamb and liver": {
-          "form": "organ"
-        },
-        "G.A.P. Step 4 Ground Lamb Bone": {
-          "form": "organ"
-        },
-        "G.A.P. Step 4 Lamb": {
-          "form": "raw"
-        },
-        "G.A.P. Step 4 Lamb Heart": {
-          "form": "organ"
-        },
-        "G.A.P. Step 4 Lamb Liver": {
-          "form": "organ"
-        },
-        "Lamb": {
-          "form": "raw"
-        },
-        "Lamb and Chicken Broth": {
-          "form": "broth"
-        },
-        "Lamb Broth": {
-          "form": "broth"
-        },
-        "lamb kidney": {
-          "form": "organ"
-        },
-        "lamb liver": {
-          "form": "organ"
-        },
-        "Lamb Meal": {
-          "form": "meal"
-        },
-        "Lamb meal (18%)": {
-          "form": "meal"
-        },
-        "lamb meal (8%)": {
-          "form": "meal"
-        },
-        "lamb tripe": {
-          "form": "organ"
-        },
-        "Raw lamb (21%)": {
-          "form": "raw"
-        },
-        "raw lamb (7%)": {
-          "form": "raw"
-        },
-        "raw lamb (8%)": {
-          "form": "raw"
-        },
-        "Raw Lamb (8.5%)": {
-          "form": "raw"
-        },
-        "raw lamb kidney (1%)": {
-          "form": "organ"
-        },
-        "raw lamb liver (0.5%)": {
-          "form": "organ"
-        },
-        "raw lamb liver (1.5%)": {
-          "form": "organ"
-        },
-        "raw lamb liver (4%)": {
-          "form": "organ"
-        },
-        "raw lamb organs (liver, kidney, tripe) (16%)": {
-          "form": "organ"
-        },
-        "raw lamb tripe (0.5%)": {
-          "form": "organ"
-        },
-        "raw lamb tripe (1%)": {
-          "form": "organ"
-        },
-        "Roasted Lamb": {
-          "form": "raw"
-        },
-        "Raw lamb": {
-          "form": "raw"
-        },
-        "raw lamb kidney": {
-          "form": "organ"
-        },
-        "raw lamb liver": {
-          "form": "organ"
-        },
-        "raw lamb tripe": {
-          "form": "organ"
-        },
-        "raw lamb organs (liver, kidney, tripe)": {
-          "form": "organ"
-        },
-        "lamb bone broth": {
-          "form": "broth"
-        },
-        "dehydrated lamb": {
-          "form": "dried"
-        },
-        "dehydrated mutton": {
-          "form": "dried"
-        },
-        "Natural Lamb Flavor": {
-          "form": "derivative"
-        },
-        "natural lamb flavour": {
-          "form": "derivative"
-        },
-        "Lamb Hearts": {
-          "form": "heart"
-        },
-        "lamb heart": {
-          "form": "heart"
-        },
-        "lamb bone": {
-          "form": "bone"
-        },
-        "lamb spleen": {
-          "form": "organ"
-        },
-        "Lamb Meal (source of Glucosamine and Chondroitin Sulfate)": {
-          "form": "meal"
-        }
-      },
+      "members": [
+        "100% Animal Welfare Certified Lamb",
+        "de-boned lamb",
+        "Deboned Lamb",
+        "dehydrated lamb (5%)",
+        "freeze-dried lamb",
+        "freeze-dried lamb and liver",
+        "G.A.P. Step 4 Ground Lamb Bone",
+        "G.A.P. Step 4 Lamb",
+        "G.A.P. Step 4 Lamb Heart",
+        "G.A.P. Step 4 Lamb Liver",
+        "Lamb",
+        "Lamb and Chicken Broth",
+        "Lamb Broth",
+        "lamb kidney",
+        "lamb liver",
+        "Lamb Meal",
+        "Lamb Meal (Source of Glucosamine & Chondroitin Sulfate)",
+        "Lamb Meal (Source Of Glucosamine)",
+        "Lamb meal (18%)",
+        "lamb meal (8%)",
+        "lamb tripe",
+        "Raw lamb (21%)",
+        "raw lamb (7%)",
+        "raw lamb (8%)",
+        "Raw Lamb (8.5%)",
+        "raw lamb kidney (1%)",
+        "raw lamb liver (0.5%)",
+        "raw lamb liver (1.5%)",
+        "raw lamb liver (4%)",
+        "raw lamb organs (liver, kidney, tripe) (16%)",
+        "raw lamb tripe (0.5%)",
+        "raw lamb tripe (1%)",
+        "Roasted Lamb",
+        "Raw lamb",
+        "raw lamb kidney",
+        "raw lamb liver",
+        "raw lamb tripe",
+        "raw lamb organs (liver, kidney, tripe)",
+        "lamb bone broth",
+        "dehydrated lamb",
+        "dehydrated mutton",
+        "Natural Lamb Flavor",
+        "natural lamb flavour",
+        "Lamb Hearts",
+        "lamb heart",
+        "lamb bone",
+        "lamb spleen",
+        "Lamb Meal (source of Glucosamine and Chondroitin Sulfate)",
+        "Freeze Dried Lamb",
+        "Freeze Dried Lamb Heart",
+        "Freeze Dried Lamb Kidney",
+        "Freeze Dried Lamb Liver",
+        "Freeze Dried Lamb Spleen",
+        "Ground Lamb Bone"
+      ],
       "category": "protein"
     },
     "lentil": {
       "source_group": "legume",
-      "members": {
-        "Dried Lentils": {
-          "form": "dried"
-        },
-        "Green Lentils": {
-          "form": "whole"
-        },
-        "lentils": {
-          "form": "whole"
-        },
-        "red lentils": {
-          "form": "whole"
-        },
-        "whole green lentil": {
-          "form": "whole"
-        },
-        "whole green lentils": {
-          "form": "whole"
-        },
-        "whole lentils": {
-          "form": "whole"
-        },
-        "whole red lentils": {
-          "form": "whole"
-        },
-        "lentil fibre": {
-          "form": "fiber"
-        }
-      },
+      "members": [
+        "Dried Lentils",
+        "Green Lentils",
+        "lentils",
+        "red lentils",
+        "whole green lentil",
+        "whole green lentils",
+        "whole lentils",
+        "whole red lentils",
+        "lentil fibre",
+        "Ground Lentils"
+      ],
       "category": "carb"
     },
     "locust_bean_gum": {
       "source_group": "additive",
-      "members": {
-        "Locust Bean Gum": {
-          "form": "raw"
-        },
-        "Carob Bean Gum": {
-          "form": "raw"
-        }
-      },
+      "members": [
+        "Locust Bean Gum",
+        "Carob Bean Gum"
+      ],
       "category": "additive"
     },
     "mackerel": {
       "source_group": "fish",
-      "members": {
-        "dehydrated mackerel": {
-          "form": "dried"
-        },
-        "dehydrated mackerel (4%)": {
-          "form": "dried"
-        },
-        "dehydrated mackerel (5%)": {
-          "form": "dried"
-        },
-        "mackerel": {
-          "form": "raw"
-        },
-        "mackerel meal": {
-          "form": "meal"
-        },
-        "mackerel meal (7%)": {
-          "form": "meal"
-        },
-        "Ocean Mackerel": {
-          "form": "raw"
-        },
-        "raw whole mackerel (11%)": {
-          "form": "whole"
-        },
-        "raw whole mackerel (5%)": {
-          "form": "whole"
-        },
-        "whole mackerel": {
-          "form": "whole"
-        },
-        "raw whole mackerel": {
-          "form": "whole"
-        }
-      },
+      "members": [
+        "dehydrated mackerel",
+        "dehydrated mackerel (4%)",
+        "dehydrated mackerel (5%)",
+        "mackerel",
+        "mackerel meal",
+        "mackerel meal (7%)",
+        "Ocean Mackerel",
+        "raw whole mackerel (11%)",
+        "raw whole mackerel (5%)",
+        "whole mackerel",
+        "raw whole mackerel",
+        "Mackerel Broth"
+      ],
       "category": "protein"
     },
     "menhaden": {
       "source_group": "fish",
-      "members": {
-        "Menhaden Fish Meal": {
-          "form": "meal"
-        },
-        "Menhaden Fish Meal (source of Omega 3 Fatty Acids)": {
-          "form": "meal"
-        },
-        "Menhaden Fish Oil": {
-          "form": "oil"
-        },
-        "Menhaden Meal": {
-          "form": "meal"
-        },
-        "Ocean Menhaden Fish Meal": {
-          "form": "meal"
-        }
-      },
+      "members": [
+        "Menhaden Fish Meal",
+        "Menhaden Fish Meal (Source of Glucosamine & Chondroitin Sulfate)",
+        "Menhaden Fish Meal (source of Omega 3 Fatty Acids)",
+        "Menhaden Fish Oil",
+        "Menhaden Fish Oil (Preserved with Mixed Tocopherols)",
+        "Menhaden Meal",
+        "Ocean Menhaden Fish Meal"
+      ],
       "category": "protein"
     },
     "millet": {
       "source_group": "grain",
-      "members": {
-        "Millet": {
-          "form": "whole"
-        },
-        "whole millet": {
-          "form": "whole"
-        },
-        "Ground Millet": {
-          "form": "ground"
-        }
-      },
+      "members": [
+        "Millet",
+        "whole millet",
+        "Ground Millet"
+      ],
       "category": "carb"
     },
     "molasses": {
       "source_group": "other",
       "category": "carb",
-      "members": {
-        "Molasses": {
-          "form": "raw"
-        }
-      }
+      "members": [
+        "Molasses"
+      ]
     },
     "mussel": {
       "source_group": "mollusk",
-      "members": {
-        "New Zealand Green Lipped Mussel": {
-          "form": "raw"
-        },
-        "New Zealand Green Mussel": {
-          "form": "raw"
-        },
-        "New Zealand green mussels": {
-          "form": "raw"
-        },
-        "freeze-dried green mussels": {
-          "form": "dried"
-        },
-        "Green Lipped Mussel": {
-          "form": "raw"
-        },
-        "perna canaliculus (green lipped mussel)": {
-          "form": "raw"
-        },
-        "New Zealand green mussel powder": {
-          "form": "powder"
-        }
-      },
+      "members": [
+        "New Zealand Green Lipped Mussel",
+        "New Zealand Green Mussel",
+        "New Zealand green mussels",
+        "freeze-dried green mussels",
+        "Green Lipped Mussel",
+        "perna canaliculus (green lipped mussel)",
+        "New Zealand green mussel powder",
+        "Mussel",
+        "Greenshell Mussel Powder (Source of Glucosamine and Chondroitin Sulfate)"
+      ],
       "category": "protein"
     },
     "oat": {
       "source_group": "grain",
-      "members": {
-        "Ground Oatmeal": {
-          "form": "ground"
-        },
-        "ground oats": {
-          "form": "ground"
-        },
-        "Oat Fiber": {
-          "form": "fiber"
-        },
-        "Oat Fibre": {
-          "form": "fiber"
-        },
-        "Oat Flour": {
-          "form": "flour"
-        },
-        "oat groats": {
-          "form": "whole"
-        },
-        "oat groats (18%)": {
-          "form": "whole"
-        },
-        "oat groats (21%)": {
-          "form": "whole"
-        },
-        "oat groats (25%)": {
-          "form": "whole"
-        },
-        "Oat Hulls": {
-          "form": "fiber"
-        },
-        "Oat Meal": {
-          "form": "meal"
-        },
-        "Oatmeal": {
-          "form": "whole"
-        },
-        "Oats": {
-          "form": "whole"
-        },
-        "oats*": {
-          "form": "whole"
-        },
-        "steel cut oats": {
-          "form": "whole"
-        },
-        "Whole Grain Oats": {
-          "form": "whole"
-        },
-        "Whole Oat Meal": {
-          "form": "meal"
-        },
-        "whole oats": {
-          "form": "whole"
-        },
-        "whole oats (4%)": {
-          "form": "whole"
-        },
-        "whole oats (5%)": {
-          "form": "whole"
-        },
-        "oat bran": {
-          "form": "bran"
-        },
-        "oat ber": {
-          "form": "fiber"
-        },
-        "Whole Grain Oatmeal": {
-          "form": "whole"
-        }
-      },
+      "members": [
+        "Ground Oatmeal",
+        "ground oats",
+        "Oat Fiber",
+        "Oat Fibre",
+        "Oat Flour",
+        "oat groats",
+        "oat groats (18%)",
+        "oat groats (21%)",
+        "oat groats (25%)",
+        "Oat Hulls",
+        "Oat Meal",
+        "Oatmeal",
+        "Oats",
+        "oats*",
+        "steel cut oats",
+        "Whole Grain Oats",
+        "Whole Oat Meal",
+        "whole oats",
+        "whole oats (4%)",
+        "whole oats (5%)",
+        "oat bran",
+        "oat ber",
+        "Whole Grain Oatmeal"
+      ],
       "category": "carb"
     },
     "olive": {
       "source_group": "seed",
-      "members": {
-        "olive oil": {
-          "form": "oil"
-        },
-        "Olive Oil (preserved with Mixed Tocopherols and Citric Acid)": {
-          "form": "oil"
-        }
-      },
+      "members": [
+        "olive oil",
+        "Olive Oil (preserved with Mixed Tocopherols and Citric Acid)"
+      ],
       "category": "fat"
     },
     "onion": {
       "source_group": "vegetable",
       "category": "carb",
-      "members": {
-        "Dried Onion": {
-          "form": "dried"
-        },
-        "onion powder": {
-          "form": "powder"
-        }
-      }
+      "members": [
+        "Dried Onion",
+        "onion powder"
+      ]
     },
     "papaya": {
       "source_group": "fruit",
-      "members": {
-        "papaya": {
-          "form": "whole"
-        },
-        "papayas": {
-          "form": "whole"
-        }
-      },
+      "members": [
+        "papaya",
+        "papayas"
+      ],
       "category": "carb"
     },
     "parsley": {
       "source_group": "vegetable",
-      "members": {
-        "Parsley": {
-          "form": "raw"
-        },
-        "parsley flakes": {
-          "form": "dried"
-        }
-      },
+      "members": [
+        "Parsley",
+        "parsley flakes"
+      ],
       "category": "carb"
     },
     "parsnip": {
       "source_group": "root",
       "category": "carb",
-      "members": {
-        "Parsnip": {
-          "form": "whole"
-        }
-      }
+      "members": [
+        "Parsnip"
+      ]
     },
     "pea": {
       "source_group": "legume",
-      "members": {
-        "Dried Green Peas": {
-          "form": "dried"
-        },
-        "Dried Ground Peas": {
-          "form": "dried"
-        },
-        "Dried Peas": {
-          "form": "dried"
-        },
-        "Field Peas": {
-          "form": "whole"
-        },
-        "Green Peas": {
-          "form": "whole"
-        },
-        "pea fiber": {
-          "form": "fiber"
-        },
-        "Pea Fibre": {
-          "form": "fiber"
-        },
-        "pea flour": {
-          "form": "flour"
-        },
-        "Pea Protein": {
-          "form": "concentrate"
-        },
-        "Pea Starch": {
-          "form": "starch"
-        },
-        "Peas": {
-          "form": "whole"
-        },
-        "Peas (Dried)": {
-          "form": "dried"
-        },
-        "whole green peas": {
-          "form": "whole"
-        },
-        "whole peas": {
-          "form": "whole"
-        },
-        "whole yellow peas": {
-          "form": "whole"
-        },
-        "Yellow Peas": {
-          "form": "whole"
-        },
-        "pois": {
-          "form": "whole"
-        },
-        "fibre de pois": {
-          "form": "fiber"
-        },
-        "Split Peas": {
-          "form": "whole"
-        }
-      },
+      "members": [
+        "Dried Green Peas",
+        "Dried Ground Peas",
+        "Dried Peas",
+        "Field Peas",
+        "Green Pea",
+        "Green Peas",
+        "pea fiber",
+        "Pea Fibre",
+        "pea flour",
+        "Pea Protein",
+        "Pea Starch",
+        "Peas",
+        "Peas (Dried)",
+        "whole green peas",
+        "whole peas",
+        "whole yellow peas",
+        "Yellow Peas",
+        "pois",
+        "fibre de pois",
+        "Split Peas",
+        "Ground Dried Peas"
+      ],
       "category": "carb"
     },
     "peanut": {
       "source_group": "legume",
-      "members": {
-        "Peanut Butter": {
-          "form": "whole"
-        },
-        "Peanuts": {
-          "form": "whole"
-        },
-        "Peanut Flour": {
-          "form": "flour"
-        },
-        "Ground Roasted Peanuts": {
-          "form": "roasted"
-        },
-        "Peanut Oil (preserved with mixed Tocopherols)": {
-          "form": "oil"
-        }
-      },
+      "members": [
+        "Peanut Butter",
+        "Peanuts",
+        "Peanut Flour",
+        "Ground Roasted Peanuts",
+        "Peanut Oil",
+        "Peanut Oil (preserved with mixed Tocopherols)",
+        "Peanut Butter (Peanuts, Palm Oil)",
+        "Partially Defatted Peanut Flour"
+      ],
       "category": "carb"
     },
     "pear": {
       "source_group": "fruit",
-      "members": {
-        "fresh pears": {
-          "form": "raw"
-        },
-        "fresh pears (4%)": {
-          "form": "raw"
-        },
-        "fresh whole pears": {
-          "form": "whole"
-        },
-        "organic pear": {
-          "form": "whole"
-        },
-        "pears": {
-          "form": "whole"
-        },
-        "whole pears": {
-          "form": "whole"
-        },
-        "organic pears": {
-          "form": "raw"
-        }
-      },
+      "members": [
+        "fresh pears",
+        "fresh pears (4%)",
+        "fresh whole pears",
+        "organic pear",
+        "pears",
+        "whole pears",
+        "organic pears"
+      ],
       "category": "carb"
     },
     "pepper": {
       "source_group": "vegetable",
-      "members": {
-        "bell peppers": {
-          "form": "whole"
-        },
-        "Red Bell Pepper": {
-          "form": "whole"
-        },
-        "Red Peppers": {
-          "form": "whole"
-        }
-      },
+      "members": [
+        "bell peppers",
+        "Red Bell Pepper",
+        "Red Peppers"
+      ],
       "category": "carb"
     },
     "perch": {
       "source_group": "fish",
-      "members": {
-        "perch": {
-          "form": "raw"
-        }
-      },
+      "members": [
+        "perch"
+      ],
       "category": "protein"
     },
     "pike": {
       "source_group": "fish",
-      "members": {
-        "northern pike": {
-          "form": "raw"
-        }
-      },
+      "members": [
+        "northern pike"
+      ],
       "category": "protein"
     },
     "pilchard": {
       "source_group": "fish",
-      "members": {
-        "Raw whole pilchard (18%)": {
-          "form": "whole"
-        },
-        "whole pilchard": {
-          "form": "whole"
-        }
-      },
+      "members": [
+        "Raw whole pilchard (18%)",
+        "whole pilchard"
+      ],
       "category": "protein"
     },
     "pineapple": {
       "source_group": "fruit",
-      "members": {
-        "pineapple": {
-          "form": "whole"
-        },
-        "pineapple stem": {
-          "form": "raw"
-        }
-      },
+      "members": [
+        "pineapple",
+        "pineapple stem"
+      ],
       "category": "carb"
     },
     "pollock": {
       "source_group": "fish",
-      "members": {
-        "de-boned Alaskan pollock": {
-          "form": "raw"
-        },
-        "dehydrated pollock (5%)": {
-          "form": "dried"
-        },
-        "Dehydrated Pollock (7%)": {
-          "form": "dried"
-        },
-        "Pollock": {
-          "form": "raw"
-        },
-        "Pollock Broth": {
-          "form": "broth"
-        },
-        "pollock meal (18%)": {
-          "form": "meal"
-        },
-        "pollock meal (5%)": {
-          "form": "meal"
-        },
-        "pollock oil": {
-          "form": "oil"
-        },
-        "pollock oil (0.5%)": {
-          "form": "oil"
-        },
-        "pollock oil (1%)": {
-          "form": "oil"
-        },
-        "Wild-Alaskan Pollock": {
-          "form": "raw"
-        },
-        "Wild-Caught Pollock": {
-          "form": "raw"
-        },
-        "dehydrated pollock": {
-          "form": "dried"
-        },
-        "pollock meal": {
-          "form": "meal"
-        }
-      },
+      "members": [
+        "de-boned Alaskan pollock",
+        "dehydrated pollock (5%)",
+        "Dehydrated Pollock (7%)",
+        "Pollock",
+        "Pollock Broth",
+        "pollock meal (18%)",
+        "pollock meal (5%)",
+        "pollock oil",
+        "pollock oil (0.5%)",
+        "pollock oil (1%)",
+        "Wild-Alaskan Pollock",
+        "Wild-Caught Pollock",
+        "dehydrated pollock",
+        "pollock meal",
+        "Freeze-Dried Pollock"
+      ],
       "category": "protein"
     },
     "pomegranate": {
       "source_group": "fruit",
-      "members": {
-        "pomegranate": {
-          "form": "whole"
-        },
-        "pomegranates": {
-          "form": "whole"
-        }
-      },
+      "members": [
+        "pomegranate",
+        "pomegranates"
+      ],
       "category": "carb"
     },
     "pork": {
       "source_group": "red_meat",
-      "members": {
-        "100% Animal Welfare Certified Pork": {
-          "form": "raw"
-        },
-        "Bacon": {
-          "form": "raw"
-        },
-        "Bacon Fat (preserved with BHA and citric acid)": {
-          "form": "fat"
-        },
-        "de-boned pork": {
-          "form": "raw"
-        },
-        "deboned pork": {
-          "form": "raw"
-        },
-        "dehydrated pork (3.5%)": {
-          "form": "dried"
-        },
-        "Dehydrated Pork Liver (1%)": {
-          "form": "organ"
-        },
-        "dried pork liver": {
-          "form": "organ"
-        },
-        "freeze-dried pork": {
-          "form": "dried"
-        },
-        "G.A.P. Step 1 Pork": {
-          "form": "raw"
-        },
-        "G.A.P. Step 1 Pork Bones": {
-          "form": "raw"
-        },
-        "G.A.P. Step 1 Pork Hearts": {
-          "form": "organ"
-        },
-        "G.A.P. Step 1 Pork Liver": {
-          "form": "organ"
-        },
-        "G.A.P. Step 1 Pork Neck Bones": {
-          "form": "raw"
-        },
-        "Pork": {
-          "form": "raw"
-        },
-        "Pork And Bone Meal": {
-          "form": "meal"
-        },
-        "pork broth": {
-          "form": "broth"
-        },
-        "pork by-products": {
-          "form": "by_product"
-        },
-        "pork digest": {
-          "form": "derivative"
-        },
-        "pork digest (source of collagen)": {
-          "form": "derivative"
-        },
-        "pork fat": {
-          "form": "fat"
-        },
-        "pork fat (11%)": {
-          "form": "fat"
-        },
-        "Pork Fat (4%)": {
-          "form": "fat"
-        },
-        "pork fat (5%)": {
-          "form": "fat"
-        },
-        "pork fat (6%)": {
-          "form": "fat"
-        },
-        "pork fat (7%)": {
-          "form": "fat"
-        },
-        "pork fat (8%)": {
-          "form": "fat"
-        },
-        "Pork Flavor": {
-          "form": "derivative"
-        },
-        "pork heart": {
-          "form": "organ"
-        },
-        "pork kidney": {
-          "form": "organ"
-        },
-        "Pork Liver": {
-          "form": "organ"
-        },
-        "pork liver (3%)": {
-          "form": "organ"
-        },
-        "Pork Liver and Lamb Liver": {
-          "form": "organ"
-        },
-        "Pork Liver Flavor": {
-          "form": "derivative"
-        },
-        "pork lung": {
-          "form": "organ"
-        },
-        "Pork Lungs": {
-          "form": "organ"
-        },
-        "pork meal": {
-          "form": "meal"
-        },
-        "pork meal (10%)": {
-          "form": "meal"
-        },
-        "pork meal (17%)": {
-          "form": "meal"
-        },
-        "pork meal (5%)": {
-          "form": "meal"
-        },
-        "pork meal (7%)": {
-          "form": "meal"
-        },
-        "pork meal (8%)": {
-          "form": "meal"
-        },
-        "Pork Protein Isolate": {
-          "form": "concentrate"
-        },
-        "Raw pork (17%)": {
-          "form": "raw"
-        },
-        "raw pork (4%)": {
-          "form": "raw"
-        },
-        "raw pork (6%)": {
-          "form": "raw"
-        },
-        "raw pork (7%)": {
-          "form": "raw"
-        },
-        "raw pork (8%)": {
-          "form": "raw"
-        },
-        "raw pork (9%)": {
-          "form": "raw"
-        },
-        "raw pork liver (1%)": {
-          "form": "organ"
-        },
-        "raw pork liver (17%)": {
-          "form": "organ"
-        },
-        "raw pork liver (4%)": {
-          "form": "organ"
-        },
-        "raw pork liver (5%)": {
-          "form": "organ"
-        },
-        "raw pork organs (liver, kidney) (5%)": {
-          "form": "organ"
-        },
-        "spray dried pork stock": {
-          "form": "dried"
-        },
-        "Technical Pork Gelatin": {
-          "form": "raw"
-        },
-        "raw pork": {
-          "form": "raw"
-        },
-        "raw pork liver": {
-          "form": "organ"
-        },
-        "dehydrated pork liver": {
-          "form": "dried"
-        },
-        "raw pork organs (liver, kidney)": {
-          "form": "organ"
-        },
-        "natural pork flavor": {
-          "form": "derivative"
-        },
-        "natural pork flavour": {
-          "form": "derivative"
-        },
-        "Pork Gelatin": {
-          "form": "derivative"
-        },
-        "pork plasma": {
-          "form": "derivative"
-        },
-        "pork fat ( preserved with mixed tocopherols and citric acid )": {
-          "form": "fat"
-        },
-        "pork fat (preserved with mixed tocopherols and citric acid)": {
-          "form": "fat"
-        },
-        "pork fat (preserved with mixed tocopherols)": {
-          "form": "fat"
-        },
-        "Natural Bacon Flavour": {
-          "form": "derivative"
-        },
-        "Porcine plasma": {
-          "form": "plasma"
-        },
-        "dried porcine plasma": {
-          "form": "plasma"
-        },
-        "Dried Pork Broth": {
-          "form": "broth"
-        },
-        "Pork Fat Preserved With Mixed Tocopherols": {
-          "form": "fat"
-        },
-        "pork fat (preserved withmixed tocopherols)": {
-          "form": "fat"
-        },
-        "Natural Porcine Flavor": {
-          "form": "derivative"
-        }
-      },
+      "members": [
+        "100% Animal Welfare Certified Pork",
+        "Bacon",
+        "Bacon Fat (preserved with BHA and citric acid)",
+        "de-boned pork",
+        "deboned pork",
+        "dehydrated pork (3.5%)",
+        "Dehydrated Pork Liver (1%)",
+        "dried pork liver",
+        "freeze-dried pork",
+        "G.A.P. Step 1 Pork",
+        "G.A.P. Step 1 Pork Bones",
+        "G.A.P. Step 1 Pork Hearts",
+        "G.A.P. Step 1 Pork Liver",
+        "G.A.P. Step 1 Pork Neck Bones",
+        "Pork",
+        "Pork And Bone Meal",
+        "pork broth",
+        "pork by-products",
+        "pork digest",
+        "pork digest (source of collagen)",
+        "pork fat",
+        "pork fat (11%)",
+        "Pork Fat (4%)",
+        "pork fat (5%)",
+        "pork fat (6%)",
+        "pork fat (7%)",
+        "pork fat (8%)",
+        "Pork Flavor",
+        "pork heart",
+        "pork kidney",
+        "Pork Liver",
+        "pork liver (3%)",
+        "Pork Liver and Lamb Liver",
+        "Pork Liver Flavor",
+        "pork lung",
+        "Pork Lungs",
+        "pork meal",
+        "pork meal (10%)",
+        "pork meal (17%)",
+        "pork meal (5%)",
+        "pork meal (7%)",
+        "pork meal (8%)",
+        "Pork Meal (Source Of Glucosamine And Chondroitin Sulfate)",
+        "Pork Protein Isolate",
+        "Raw pork (17%)",
+        "raw pork (4%)",
+        "raw pork (6%)",
+        "raw pork (7%)",
+        "raw pork (8%)",
+        "raw pork (9%)",
+        "raw pork liver (1%)",
+        "raw pork liver (17%)",
+        "raw pork liver (4%)",
+        "raw pork liver (5%)",
+        "raw pork organs (liver, kidney) (5%)",
+        "spray dried pork stock",
+        "Technical Pork Gelatin",
+        "raw pork",
+        "raw pork liver",
+        "dehydrated pork liver",
+        "raw pork organs (liver, kidney)",
+        "natural pork flavor",
+        "natural pork flavour",
+        "Pork Gelatin",
+        "pork plasma",
+        "pork fat ( preserved with mixed tocopherols and citric acid )",
+        "pork fat (preserved with mixed tocopherols and citric acid)",
+        "pork fat (preserved with mixed tocopherols)",
+        "Natural Bacon Flavour",
+        "Porcine plasma",
+        "dried porcine plasma",
+        "Dried Pork Broth",
+        "Pork Fat Preserved With Mixed Tocopherols",
+        "pork fat (preserved withmixed tocopherols)",
+        "Natural Porcine Flavor",
+        "Pork & Poultry Digest"
+      ],
       "category": "protein"
     },
     "potato": {
       "source_group": "root",
-      "members": {
-        "Burbank Potato": {
-          "form": "whole"
-        },
-        "Dried Potato": {
-          "form": "dried"
-        },
-        "dried potatoes": {
-          "form": "dried"
-        },
-        "Norkotah Potato": {
-          "form": "whole"
-        },
-        "Potato": {
-          "form": "whole"
-        },
-        "potato flour": {
-          "form": "flour"
-        },
-        "Potato Protein": {
-          "form": "concentrate"
-        },
-        "Potato Starch": {
-          "form": "starch"
-        },
-        "Potatoes": {
-          "form": "whole"
-        },
-        "Ground Potatoes": {
-          "form": "ground"
-        },
-        "Dried Ground Potatoes": {
-          "form": "dried"
-        },
-        "Whole Potatoes": {
-          "form": "whole"
-        }
-      },
+      "members": [
+        "Burbank Potato",
+        "Dehydrated Potatoes",
+        "Dried Potato",
+        "Dried Potato Products",
+        "dried potatoes",
+        "Norkotah Potato",
+        "Potato",
+        "potato flour",
+        "Potato Protein",
+        "Potato Starch",
+        "Potatoes",
+        "Ground Potatoes",
+        "Dried Ground Potatoes",
+        "Whole Potatoes",
+        "Whole Dried Potato"
+      ],
       "category": "carb"
     },
     "propylene_glycol": {
       "source_group": "additive",
       "category": "carb",
-      "members": {
-        "propylene glycol": {
-          "form": "raw"
-        }
-      }
+      "members": [
+        "propylene glycol"
+      ]
     },
     "psyllium": {
       "source_group": "fiber",
-      "members": {
-        "psyllium husk": {
-          "form": "fiber"
-        },
-        "psyllium seed husk": {
-          "form": "fiber"
-        },
-        "powdered psyllium seed husk": {
-          "form": "fiber"
-        }
-      },
+      "members": [
+        "psyllium husk",
+        "psyllium seed husk",
+        "powdered psyllium seed husk"
+      ],
       "category": "fiber"
     },
     "pumpkin": {
       "source_group": "fruit",
-      "members": {
-        "dehydrated pumpkin": {
-          "form": "dried"
-        },
-        "Dried Pumpkin": {
-          "form": "dried"
-        },
-        "freeze-dried pumpkin": {
-          "form": "dried"
-        },
-        "fresh whole pumpkin": {
-          "form": "whole"
-        },
-        "Organic Pumpkin": {
-          "form": "whole"
-        },
-        "Organic Pumpkin Seeds": {
-          "form": "whole"
-        },
-        "Pumpkin": {
-          "form": "whole"
-        },
-        "pumpkin seed": {
-          "form": "whole"
-        },
-        "whole pumpkin": {
-          "form": "whole"
-        },
-        "curcubita maxima (pumpkin)": {
-          "form": "raw"
-        },
-        "Pumpkin Powder": {
-          "form": "powder"
-        },
-        "ground pumpkin seed": {
-          "form": "whole"
-        },
-        "ground pumpkin seeds": {
-          "form": "whole"
-        }
-      },
+      "members": [
+        "dehydrated pumpkin",
+        "Dried Pumpkin",
+        "freeze-dried pumpkin",
+        "fresh whole pumpkin",
+        "Organic Pumpkin",
+        "Organic Pumpkin Seeds",
+        "Pumpkin",
+        "pumpkin seed",
+        "whole pumpkin",
+        "curcubita maxima (pumpkin)",
+        "Pumpkin Powder",
+        "ground pumpkin seed",
+        "ground pumpkin seeds",
+        "Pumpkin Seeds",
+        "Pumpkinseeds"
+      ],
       "category": "carb"
     },
     "quail": {
       "source_group": "poultry",
-      "members": {
-        "Quail": {
-          "form": "raw"
-        },
-        "raw quail (4%)": {
-          "form": "raw"
-        },
-        "Roasted Quail": {
-          "form": "raw"
-        },
-        "raw quail": {
-          "form": "raw"
-        }
-      },
+      "members": [
+        "Quail",
+        "raw quail (4%)",
+        "Roasted Quail",
+        "raw quail"
+      ],
       "category": "protein"
     },
     "quinoa": {
       "source_group": "grain",
-      "members": {
-        "Quinoa": {
-          "form": "whole"
-        },
-        "Quinoa Seed": {
-          "form": "whole"
-        },
-        "Quinoa Seeds": {
-          "form": "whole"
-        }
-      },
+      "members": [
+        "Quinoa",
+        "Quinoa Seed",
+        "Quinoa Seeds"
+      ],
       "category": "carb"
     },
     "rabbit": {
       "source_group": "exotic",
-      "members": {
-        "dried rabbit": {
-          "form": "dried"
-        },
-        "Rabbit": {
-          "form": "raw"
-        },
-        "Rabbit Meal": {
-          "form": "meal"
-        }
-      },
+      "members": [
+        "dried rabbit",
+        "Rabbit",
+        "Rabbit Meal"
+      ],
       "category": "protein"
     },
     "raspberry": {
       "source_group": "fruit",
-      "members": {
-        "Raspberries": {
-          "form": "whole"
-        }
-      },
+      "members": [
+        "Raspberries"
+      ],
       "category": "carb"
+    },
+    "redfish": {
+      "source_group": "fish",
+      "members": [
+        "Acadian Redfish"
+      ],
+      "category": "protein"
     },
     "rice": {
       "source_group": "grain",
-      "members": {
-        "Brewers Rice": {
-          "form": "by_product"
-        },
-        "brewers rice flour": {
-          "form": "flour"
-        },
-        "Brown Rice": {
-          "form": "whole"
-        },
-        "Brown Rice Flour": {
-          "form": "flour"
-        },
-        "Ground Brown Rice": {
-          "form": "ground"
-        },
-        "ground rice": {
-          "form": "ground"
-        },
-        "Long Grain Rice": {
-          "form": "whole"
-        },
-        "Rice": {
-          "form": "whole"
-        },
-        "Rice Bran": {
-          "form": "bran"
-        },
-        "Rice Flour": {
-          "form": "flour"
-        },
-        "Rice Gluten": {
-          "form": "gluten"
-        },
-        "Rice Hulls": {
-          "form": "fiber"
-        },
-        "Rice Protein Concentrate": {
-          "form": "concentrate"
-        },
-        "Rice Starch": {
-          "form": "starch"
-        },
-        "white rice": {
-          "form": "whole"
-        },
-        "whole brown rice": {
-          "form": "whole"
-        },
-        "Whole Grain Brown Rice": {
-          "form": "whole"
-        },
-        "Wild Rice": {
-          "form": "whole"
-        },
-        "red rice": {
-          "form": "whole"
-        },
-        "Modified Rice Starch": {
-          "form": "starch"
-        },
-        "Puffed Brown Rice": {
-          "form": "whole"
-        },
-        "brown rice syrup": {
-          "form": "derivative"
-        }
-      },
+      "members": [
+        "Brewers Rice",
+        "brewers rice flour",
+        "Brown Rice",
+        "Brown Rice Flour",
+        "Ground Brown Rice",
+        "ground rice",
+        "Long Grain Rice",
+        "Rice",
+        "Rice Bran",
+        "Rice Flour",
+        "Rice Gluten",
+        "Rice Hulls",
+        "Rice Protein Concentrate",
+        "Rice Starch",
+        "white rice",
+        "whole brown rice",
+        "Whole Grain Brown Rice",
+        "Wild Rice",
+        "red rice",
+        "Modified Rice Starch",
+        "Puffed Brown Rice",
+        "brown rice syrup",
+        "ground white rice",
+        "Rice Syrup",
+        "Rice Pasta (Rice, Water, Ground Tapioca)",
+        "Rice Water"
+      ],
       "category": "carb"
     },
     "rockfish": {
       "source_group": "fish",
-      "members": {
-        "Ocean Rockfish": {
-          "form": "raw"
-        },
-        "raw whole rockfish (4.5%)": {
-          "form": "whole"
-        },
-        "raw whole rockfish (6%)": {
-          "form": "whole"
-        },
-        "rockfish": {
-          "form": "raw"
-        },
-        "sebastes": {
-          "form": "raw"
-        },
-        "raw whole rockfish": {
-          "form": "whole"
-        }
-      },
+      "members": [
+        "Ocean Rockfish",
+        "raw whole rockfish (4.5%)",
+        "raw whole rockfish (6%)",
+        "rockfish",
+        "sebastes",
+        "raw whole rockfish"
+      ],
       "category": "protein"
     },
     "rosemary": {
       "source_group": "vegetable",
-      "members": {
-        "rosemary": {
-          "form": "raw"
-        },
-        "rosemary extract": {
-          "form": "extract"
-        },
-        "rosemary  extract": {
-          "form": "extract"
-        },
-        "rosemary extrac": {
-          "form": "extract"
-        },
-        "dried rosemary": {
-          "form": "dried"
-        },
-        "Oil of Rosemary": {
-          "form": "oil"
-        },
-        "Rosemary Extract)": {
-          "form": "extract"
-        }
-      },
+      "members": [
+        "rosemary",
+        "rosemary extract",
+        "Rosmary Extract",
+        "rosemary  extract",
+        "rosemary extrac",
+        "dried rosemary",
+        "Oil of Rosemary",
+        "Rosemary Extract)"
+      ],
       "category": "carb"
     },
     "rye": {
       "source_group": "grain",
-      "members": {
-        "Rye": {
-          "form": "whole"
-        },
-        "Rye Flour": {
-          "form": "flour"
-        }
-      },
+      "members": [
+        "Rye",
+        "Rye Flour"
+      ],
       "category": "carb"
     },
     "safflower": {
       "source_group": "seed",
-      "members": {
-        "Gamma-Linolenic Acid Safflower Oil": {
-          "form": "oil"
-        },
-        "GLA safflower oil": {
-          "form": "oil"
-        }
-      },
+      "members": [
+        "Gamma-Linolenic Acid Safflower Oil",
+        "GLA safflower oil"
+      ],
       "category": "fat"
     },
     "salmon": {
       "source_group": "fish",
-      "members": {
-        "Boneless/skinless Salmon": {
-          "form": "raw"
-        },
-        "Canadian salmon meal": {
-          "form": "meal"
-        },
-        "Canadian salmon oil": {
-          "form": "oil"
-        },
-        "de-boned salmon": {
-          "form": "raw"
-        },
-        "Deboned Salmon": {
-          "form": "raw"
-        },
-        "Dehydrated Salmon (4%)": {
-          "form": "dried"
-        },
-        "freeze-dried salmon": {
-          "form": "dried"
-        },
-        "hydrolyzed salmon": {
-          "form": "hydrolyzed",
-          "is_hydrolyzed": true
-        },
-        "Raw salmon (19%)": {
-          "form": "raw"
-        },
-        "raw salmon (5%)": {
-          "form": "raw"
-        },
-        "Raw Salmon (7%)": {
-          "form": "raw"
-        },
-        "Salmon": {
-          "form": "raw"
-        },
-        "Salmon Broth": {
-          "form": "broth"
-        },
-        "Salmon Hydrolysate": {
-          "form": "hydrolyzed",
-          "is_hydrolyzed": true
-        },
-        "Salmon Meal": {
-          "form": "meal"
-        },
-        "Salmon Meal (source of Glucosamine and Chondroitin Sulfate)": {
-          "form": "meal"
-        },
-        "Salmon Meal (source of Omega 3 Fatty Acids)": {
-          "form": "meal"
-        },
-        "Salmon Oil": {
-          "form": "oil"
-        },
-        "Salmon Oil (a source of DHA)": {
-          "form": "oil"
-        },
-        "salmon oil (natural source of DHA)": {
-          "form": "oil"
-        },
-        "salmon oil (source of DHA)": {
-          "form": "oil"
-        },
-        "Smoke-Flavored Salmon": {
-          "form": "derivative"
-        },
-        "Wild-Alaskan Salmon Oil": {
-          "form": "oil"
-        },
-        "Wild-Caught Pacific Salmon": {
-          "form": "raw"
-        },
-        "Wild-Caught Salmon": {
-          "form": "raw"
-        },
-        "Raw salmon": {
-          "form": "raw"
-        },
-        "dehydrated salmon": {
-          "form": "raw"
-        },
-        "Salmon Oil (preserved with Mixed Tocopherols and Citric Acid)": {
-          "form": "oil"
-        },
-        "Salmon Oil (Preserved with Mixed Tocopherols)": {
-          "form": "oil"
-        },
-        "Salmon Meal (a Natural Source Of DHA - Docosahexaenoic Acid)": {
-          "form": "meal"
-        },
-        "salmon with ground bone": {
-          "form": "raw"
-        },
-        "whole ground salmon": {
-          "form": "ground"
-        },
-        "Ground salmon with bones": {
-          "form": "ground"
-        }
-      },
+      "members": [
+        "Boneless/skinless Salmon",
+        "Canadian salmon meal",
+        "Canadian salmon oil",
+        "de-boned salmon",
+        "Deboned Salmon",
+        "Deboned Salmon (Source Of DHA)",
+        "Dehydrated Salmon (4%)",
+        "freeze-dried salmon",
+        "hydrolyzed salmon",
+        "Raw salmon (19%)",
+        "raw salmon (5%)",
+        "Raw Salmon (7%)",
+        "Salmon",
+        "Salmon Broth",
+        "Salmon Hydrolysate",
+        "Salmon Meal",
+        "Salmon Meal (Source Of Glucosamine)",
+        "Salmon Meal (source of Glucosamine and Chondroitin Sulfate)",
+        "Salmon Meal (source of Omega 3 Fatty Acids)",
+        "Salmon Oil",
+        "Salmon Oil (a source of DHA)",
+        "salmon oil (natural source of DHA)",
+        "salmon oil (source of DHA)",
+        "Smoke-Flavored Salmon",
+        "Wild-Alaskan Salmon Oil",
+        "Wild-Caught Pacific Salmon",
+        "Wild-Caught Salmon",
+        "Raw salmon",
+        "dehydrated salmon",
+        "Salmon Oil (preserved with Mixed Tocopherols and Citric Acid)",
+        "Salmon Oil (Preserved with Mixed Tocopherols)",
+        "Salmon Meal (a Natural Source Of DHA - Docosahexaenoic Acid)",
+        "salmon with ground bone",
+        "whole ground salmon",
+        "Ground salmon with bones",
+        "Natural Salmon Flavor"
+      ],
       "category": "protein"
     },
     "sardine": {
       "source_group": "fish",
-      "members": {
-        "Dehydrated Sardine (2%)": {
-          "form": "dried"
-        },
-        "dehydrated sardine (3.5%)": {
-          "form": "dried"
-        },
-        "dehydrated sardine (4%)": {
-          "form": "dried"
-        },
-        "dehydrated sardine (4.5%)": {
-          "form": "dried"
-        },
-        "dehydrated sardine (5%)": {
-          "form": "dried"
-        },
-        "Dehydrated Sardine (7%)": {
-          "form": "dried"
-        },
-        "dehydrated sardine": {
-          "form": "dried"
-        },
-        "whole sardine": {
-          "form": "raw"
-        },
-        "Raw whole pilchard": {
-          "form": "raw"
-        }
-      },
+      "members": [
+        "Dehydrated Sardine (2%)",
+        "dehydrated sardine (3.5%)",
+        "dehydrated sardine (4%)",
+        "dehydrated sardine (4.5%)",
+        "dehydrated sardine (5%)",
+        "Dehydrated Sardine (7%)",
+        "dehydrated sardine",
+        "sardine",
+        "sardines",
+        "whole sardine",
+        "Raw whole pilchard",
+        "Sardine Meal (Source of Glucosamine and Chondroitin Sulfate)"
+      ],
       "category": "protein"
     },
     "saskatoon_berry": {
       "source_group": "fruit",
-      "members": {
-        "fresh whole saskatoon berries": {
-          "form": "whole"
-        },
-        "whole saskatoon berries": {
-          "form": "whole"
-        }
-      },
+      "members": [
+        "fresh whole saskatoon berries",
+        "whole saskatoon berries"
+      ],
       "category": "carb"
     },
     "shrimp": {
       "source_group": "crustacean",
-      "members": {
-        "Shrimp Meal": {
-          "form": "meal"
-        },
-        "Shrimp Meal (source of Glucosamine and Chondroitin Sulfate)": {
-          "form": "meal"
-        },
-        "shrimps": {
-          "form": "raw"
-        },
-        "shrimp": {
-          "form": "raw"
-        }
-      },
+      "members": [
+        "Shrimp Meal",
+        "Shrimp Meal (source of Glucosamine and Chondroitin Sulfate)",
+        "shrimps",
+        "shrimp",
+        "Shrimp (Source Of Glucosamine)"
+      ],
       "category": "protein"
     },
     "sole": {
       "source_group": "fish",
-      "members": {
-        "raw whole sole (6%)": {
-          "form": "whole"
-        },
-        "sole": {
-          "form": "raw"
-        },
-        "raw whole sole": {
-          "form": "whole"
-        }
-      },
+      "members": [
+        "raw whole sole (6%)",
+        "sole",
+        "raw whole sole"
+      ],
       "category": "protein"
     },
     "sorghum": {
       "source_group": "grain",
-      "members": {
-        "Grain Sorghum": {
-          "form": "whole"
-        },
-        "ground grain sorghum": {
-          "form": "ground"
-        },
-        "Ground Whole Grain Sorghum": {
-          "form": "ground"
-        },
-        "Milo": {
-          "form": "whole"
-        },
-        "Sorghum": {
-          "form": "whole"
-        },
-        "Sorghum (Milo)": {
-          "form": "whole"
-        },
-        "Whole Grain Sorghum": {
-          "form": "whole"
-        },
-        "whole sorghum": {
-          "form": "whole"
-        }
-      },
+      "members": [
+        "Grain Sorghum",
+        "ground grain sorghum",
+        "Ground Whole Grain Sorghum",
+        "Milo",
+        "Sorghum",
+        "Sorghum (Milo)",
+        "Whole Grain Sorghum",
+        "whole sorghum"
+      ],
       "category": "carb"
     },
     "soy": {
       "source_group": "legume",
-      "members": {
-        "hydrolyzed soy protein": {
-          "form": "hydrolyzed",
-          "is_hydrolyzed": true
-        },
-        "hydrolyzed soy protein isolate": {
-          "form": "hydrolyzed",
-          "is_hydrolyzed": true
-        },
-        "Soy Flakes": {
-          "form": "whole"
-        },
-        "Soy Flour": {
-          "form": "flour"
-        },
-        "Soy Grits": {
-          "form": "ground"
-        },
-        "Soy lecithin": {
-          "form": "whole"
-        },
-        "Soy Protein Concentrate": {
-          "form": "concentrate"
-        },
-        "soy protein isolate": {
-          "form": "concentrate"
-        },
-        "soybean germ meal": {
-          "form": "meal"
-        },
-        "Soybean Hulls": {
-          "form": "fiber"
-        },
-        "Soybean Meal": {
-          "form": "meal"
-        },
-        "Soybean Mill Run": {
-          "form": "whole"
-        },
-        "Soybean Oil": {
-          "form": "oil"
-        }
-      },
+      "members": [
+        "hydrolyzed soy protein",
+        "hydrolyzed soy protein isolate",
+        "Soy Flakes",
+        "Soy Flour",
+        "Soy Grits",
+        "Soy lecithin",
+        "Soy Protein Concentrate",
+        "soy protein isolate",
+        "soybean germ meal",
+        "Soybean Hulls",
+        "Soybean Meal",
+        "Soybean Mill Run",
+        "Soybean Oil"
+      ],
       "category": "carb"
     },
     "spinach": {
       "source_group": "vegetable",
-      "members": {
-        "Dried Spinach": {
-          "form": "dried"
-        },
-        "fresh spinach": {
-          "form": "raw"
-        },
-        "Organic Spinach": {
-          "form": "whole"
-        },
-        "Spinach": {
-          "form": "whole"
-        },
-        "Spinach (Dried)": {
-          "form": "dried"
-        },
-        "organicspinach": {
-          "form": "whole"
-        }
-      },
+      "members": [
+        "Dried Spinach",
+        "fresh spinach",
+        "Organic Spinach",
+        "Spinach",
+        "Spinach (Dried)",
+        "organicspinach"
+      ],
       "category": "carb"
     },
     "squash": {
       "source_group": "fruit",
-      "members": {
-        "butternut squash": {
-          "form": "whole"
-        },
-        "fresh whole butternut squash": {
-          "form": "whole"
-        },
-        "fresh whole butternut squash (4%)": {
-          "form": "whole"
-        },
-        "Organic Butternut Squash": {
-          "form": "whole"
-        },
-        "squash": {
-          "form": "whole"
-        },
-        "whole butternut squash": {
-          "form": "whole"
-        },
-        "organic squash": {
-          "form": "whole"
-        }
-      },
+      "members": [
+        "butternut squash",
+        "fresh whole butternut squash",
+        "fresh whole butternut squash (4%)",
+        "Organic Butternut Squash",
+        "squash",
+        "whole butternut squash",
+        "organic squash",
+        "Yellow Squash"
+      ],
       "category": "carb"
     },
     "sunflower": {
       "source_group": "seed",
-      "members": {
-        "Organic Sunflower Seeds": {
-          "form": "whole"
-        },
-        "Sunflower Lecithin": {
-          "form": "whole"
-        },
-        "Sunflower Oil": {
-          "form": "oil"
-        },
-        "Sunflower Oil (source of Omega 6 Fatty Acids)": {
-          "form": "oil"
-        },
-        "Sunﬂower Oil": {
-          "form": "oil"
-        },
-        "Sunflower Oil (Preserved with Mixed Tocopherols)": {
-          "form": "oil"
-        }
-      },
+      "members": [
+        "Organic Sunflower Seeds",
+        "Sunflower Lecithin",
+        "Sunflower Oil",
+        "Sunflower Oil (source of Omega 6 Fatty Acids)",
+        "Sunﬂower Oil",
+        "Sunflower Oil (Preserved with Mixed Tocopherols)",
+        "Sunflower Seed Oil",
+        "Sunflower Meal"
+      ],
       "category": "fat"
     },
     "sweet_potato": {
       "source_group": "root",
-      "members": {
-        "dehydrated sweet potato": {
-          "form": "dried"
-        },
-        "dehydrated sweet potato (4%)": {
-          "form": "dried"
-        },
-        "dehydrated sweet potato (8%)": {
-          "form": "dried"
-        },
-        "Dried Sweet Potato": {
-          "form": "dried"
-        },
-        "Dried Sweet Potatoes": {
-          "form": "dried"
-        },
-        "Dried Yam": {
-          "form": "dried"
-        },
-        "freeze- dried sweet potatoes": {
-          "form": "dried"
-        },
-        "freeze-dried sweet potatoes": {
-          "form": "dried"
-        },
-        "Sweet Potato": {
-          "form": "whole"
-        },
-        "sweet potato flour": {
-          "form": "flour"
-        },
-        "Sweet Potatoes": {
-          "form": "whole"
-        },
-        "Sweet Potatoes (Dried)": {
-          "form": "dried"
-        },
-        "sweet potatoes*": {
-          "form": "whole"
-        },
-        "White Sweet Potatoes": {
-          "form": "whole"
-        },
-        "Dried Yams": {
-          "form": "dried"
-        }
-      },
+      "members": [
+        "dehydrated sweet potato",
+        "dehydrated sweet potato (4%)",
+        "dehydrated sweet potato (8%)",
+        "Dried Sweet Potato",
+        "Dried Sweet Potatoes",
+        "Dried Yam",
+        "freeze- dried sweet potatoes",
+        "freeze-dried sweet potatoes",
+        "Sweet Potato",
+        "sweet potato flour",
+        "Sweet Potatoes",
+        "Sweet Potatoes (Dried)",
+        "sweet potato starch",
+        "sweet potatoes*",
+        "White Sweet Potatoes",
+        "Dried Yams"
+      ],
       "category": "carb"
     },
     "tapioca": {
       "source_group": "root",
-      "members": {
-        "Cassava Root Flour": {
-          "form": "flour"
-        },
-        "tapioca": {
-          "form": "whole"
-        },
-        "Tapioca Starch": {
-          "form": "starch"
-        },
-        "modified tapioca starch": {
-          "form": "starch"
-        }
-      },
+      "members": [
+        "Cassava Flour",
+        "Cassava Root Flour",
+        "tapioca",
+        "Tapioca Starch",
+        "modified tapioca starch",
+        "Ground Tapioca"
+      ],
       "category": "carb"
-    },
-    "titanium_dioxide": {
-      "source_group": "additive",
-      "members": {
-        "Titanium Dioxide": {
-          "form": "raw"
-        }
-      },
-      "category": "additive"
     },
     "tomato": {
       "source_group": "fruit",
-      "members": {
-        "cherry tomatoes": {
-          "form": "whole"
-        },
-        "tomato": {
-          "form": "whole"
-        },
-        "tomato fibre": {
-          "form": "fiber"
-        },
-        "Tomatoes": {
-          "form": "whole"
-        },
-        "Tomatoes (Dried)": {
-          "form": "dried"
-        },
-        "Tomato Pomace": {
-          "form": "fiber"
-        },
-        "Dried Tomato Pomace": {
-          "form": "fiber"
-        },
-        "Dried Tomato": {
-          "form": "dried"
-        },
-        "Dried Tomatoes": {
-          "form": "dried"
-        },
-        "Tomato Powder": {
-          "form": "powder"
-        }
-      },
+      "members": [
+        "cherry tomatoes",
+        "tomato",
+        "tomato fibre",
+        "Tomatoes",
+        "Tomatoes (Dried)",
+        "Tomato Pomace",
+        "Dried Tomato Pomace",
+        "Dried Tomato",
+        "Dried Tomatoes",
+        "Tomato Powder",
+        "Tomato Paste"
+      ],
       "category": "carb"
     },
     "trout": {
       "source_group": "fish",
-      "members": {
-        "de-boned trout": {
-          "form": "raw"
-        },
-        "rainbow trout": {
-          "form": "raw"
-        },
-        "raw trout (4%)": {
-          "form": "raw"
-        },
-        "trout": {
-          "form": "raw"
-        },
-        "raw trout": {
-          "form": "raw"
-        },
-        "raw steelhead trout": {
-          "form": "raw"
-        }
-      },
+      "members": [
+        "de-boned trout",
+        "rainbow trout",
+        "raw trout (4%)",
+        "trout",
+        "raw trout",
+        "raw steelhead trout",
+        "Deboned Trout"
+      ],
       "category": "protein"
     },
     "tuna": {
       "source_group": "fish",
-      "members": {
-        "Tuna": {
-          "form": "raw"
-        },
-        "Tuna and Amberjack": {
-          "form": "raw"
-        }
-      },
+      "members": [
+        "Tuna",
+        "Tuna and Amberjack",
+        "Tuna Oil"
+      ],
       "category": "protein"
     },
     "turkey": {
       "source_group": "poultry",
-      "members": {
-        "Boneless turkey": {
-          "form": "raw"
-        },
-        "de-boned turkey": {
-          "form": "raw"
-        },
-        "Deboned Turkey": {
-          "form": "raw"
-        },
-        "dehydrated turkey": {
-          "form": "dried"
-        },
-        "Dehydrated Turkey (2%)": {
-          "form": "dried"
-        },
-        "dehydrated turkey (4%)": {
-          "form": "dried"
-        },
-        "dehydrated turkey (5%)": {
-          "form": "dried"
-        },
-        "Fresh turkey": {
-          "form": "raw"
-        },
-        "G.A.P. Step 1 Turkey": {
-          "form": "raw"
-        },
-        "G.A.P. Step 1 Turkey Livers": {
-          "form": "organ"
-        },
-        "G.A.P. Step 1 Turkey with Ground Bone": {
-          "form": "organ"
-        },
-        "G.A.P. Step 2 Turkey Bone Broth": {
-          "form": "broth"
-        },
-        "G.A.P. Step 2 Turkey Gizzards": {
-          "form": "organ"
-        },
-        "G.A.P. Step 2 Turkey Livers": {
-          "form": "organ"
-        },
-        "G.A.P. Step 2 Turkey Necks": {
-          "form": "raw"
-        },
-        "raw turkey (0.5%)": {
-          "form": "raw"
-        },
-        "raw turkey (11%)": {
-          "form": "raw"
-        },
-        "Raw turkey (19%)": {
-          "form": "raw"
-        },
-        "raw turkey (4%)": {
-          "form": "raw"
-        },
-        "raw turkey (4.5%)": {
-          "form": "raw"
-        },
-        "raw turkey (6%)": {
-          "form": "raw"
-        },
-        "Raw Turkey (7%)": {
-          "form": "raw"
-        },
-        "raw turkey (8%)": {
-          "form": "raw"
-        },
-        "raw turkey (9%)": {
-          "form": "raw"
-        },
-        "raw turkey liver (0.5%)": {
-          "form": "organ"
-        },
-        "raw turkey liver (1%)": {
-          "form": "organ"
-        },
-        "raw turkey liver (1.5%)": {
-          "form": "organ"
-        },
-        "Raw Turkey Liver (3%)": {
-          "form": "organ"
-        },
-        "raw turkey liver (4%)": {
-          "form": "organ"
-        },
-        "raw turkey liver (5%)": {
-          "form": "organ"
-        },
-        "raw turkey livers (0.5%)": {
-          "form": "organ"
-        },
-        "raw turkey livers (1%)": {
-          "form": "organ"
-        },
-        "Smoke-Flavored Turkey": {
-          "form": "derivative"
-        },
-        "Turkey": {
-          "form": "raw"
-        },
-        "Turkey (source of Glucosamine and Chondroitin Sulfate)": {
-          "form": "raw"
-        },
-        "turkey bone broth": {
-          "form": "broth"
-        },
-        "Turkey Broth": {
-          "form": "broth"
-        },
-        "Turkey Giblets": {
-          "form": "organ"
-        },
-        "turkey giblets (liver, heart, gizzard)": {
-          "form": "organ"
-        },
-        "Turkey Heart": {
-          "form": "organ"
-        },
-        "Turkey Liver": {
-          "form": "organ"
-        },
-        "Turkey Meal": {
-          "form": "meal"
-        },
-        "turkey meal (2%)": {
-          "form": "meal"
-        },
-        "turkey meal (4%)": {
-          "form": "meal"
-        },
-        "turkey meal (5%)": {
-          "form": "meal"
-        },
-        "turkey meal (6%)": {
-          "form": "meal"
-        },
-        "turkey meal (6.5%)": {
-          "form": "meal"
-        },
-        "turkey meal (7%)": {
-          "form": "meal"
-        },
-        "turkey with ground bone": {
-          "form": "organ"
-        },
-        "raw turkey": {
-          "form": "raw"
-        },
-        "raw turkey liver": {
-          "form": "organ"
-        },
-        "raw turkey livers": {
-          "form": "organ"
-        },
-        "Natural Roasted Turkey Flavour": {
-          "form": "derivative"
-        },
-        "Turkey Hearts": {
-          "form": "heart"
-        },
-        "Turkey Meal (source of Chondroitin Sulfate)": {
-          "form": "meal"
-        },
-        "Turkey Meal (source of Glucosamine)": {
-          "form": "meal"
-        },
-        "turkey gizzard": {
-          "form": "organ"
-        }
-      },
+      "members": [
+        "Boneless turkey",
+        "de-boned turkey",
+        "Deboned Turkey",
+        "dehydrated turkey",
+        "Dehydrated Turkey (2%)",
+        "dehydrated turkey (4%)",
+        "dehydrated turkey (5%)",
+        "Fresh turkey",
+        "G.A.P. Step 1 Turkey",
+        "G.A.P. Step 1 Turkey Livers",
+        "G.A.P. Step 1 Turkey with Ground Bone",
+        "G.A.P. Step 2 Turkey Bone Broth",
+        "G.A.P. Step 2 Turkey Gizzards",
+        "G.A.P. Step 2 Turkey Livers",
+        "G.A.P. Step 2 Turkey Necks",
+        "raw turkey (0.5%)",
+        "raw turkey (11%)",
+        "Raw turkey (19%)",
+        "raw turkey (4%)",
+        "raw turkey (4.5%)",
+        "raw turkey (6%)",
+        "Raw Turkey (7%)",
+        "raw turkey (8%)",
+        "raw turkey (9%)",
+        "raw turkey liver (0.5%)",
+        "raw turkey liver (1%)",
+        "raw turkey liver (1.5%)",
+        "Raw Turkey Liver (3%)",
+        "raw turkey liver (4%)",
+        "raw turkey liver (5%)",
+        "raw turkey livers (0.5%)",
+        "raw turkey livers (1%)",
+        "Smoke-Flavored Turkey",
+        "Turkey",
+        "Turkey (source of Glucosamine and Chondroitin Sulfate)",
+        "turkey bone broth",
+        "Turkey Broth",
+        "Turkey Giblets",
+        "turkey giblets (liver, heart, gizzard)",
+        "Turkey Heart",
+        "Turkey Liver",
+        "Turkey Meal",
+        "Turkey Meal (Source of Glucosamine & Chondroitin Sulfate)",
+        "Turkey Meal (Source Of Glucosamine And Chondroitin Sulfate)",
+        "turkey meal (2%)",
+        "turkey meal (4%)",
+        "turkey meal (5%)",
+        "turkey meal (6%)",
+        "turkey meal (6.5%)",
+        "turkey meal (7%)",
+        "turkey with ground bone",
+        "raw turkey",
+        "raw turkey liver",
+        "raw turkey livers",
+        "Natural Roasted Turkey Flavour",
+        "Turkey Hearts",
+        "Turkey Meal (source of Chondroitin Sulfate)",
+        "Turkey Meal (source of Glucosamine)",
+        "turkey gizzard",
+        "Turkey Gizzards",
+        "Turkey Livers",
+        "Natural Turkey Flavor"
+      ],
       "category": "protein"
     },
     "turmeric": {
       "source_group": "vegetable",
-      "members": {
-        "Turmeric": {
-          "form": "raw"
-        },
-        "turmeric extract": {
-          "form": "extract"
-        },
-        "turmeric root": {
-          "form": "raw"
-        },
-        "curcuma longa (turmeric root)": {
-          "form": "raw"
-        },
-        "curcuma": {
-          "form": "raw"
-        }
-      },
+      "members": [
+        "Turmeric",
+        "Turmeric Powder",
+        "turmeric extract",
+        "turmeric root",
+        "curcuma longa (turmeric root)",
+        "curcuma"
+      ],
       "category": "carb"
     },
     "turnip": {
       "source_group": "vegetable",
-      "members": {
-        "fresh turnip greens": {
-          "form": "raw"
-        }
-      },
+      "members": [
+        "fresh turnip greens"
+      ],
       "category": "carb"
     },
     "venison": {
       "source_group": "red_meat",
-      "members": {
-        "Certified Humane Venison": {
-          "form": "raw"
-        },
-        "de-boned venison": {
-          "form": "raw"
-        },
-        "Roasted Venison": {
-          "form": "raw"
-        },
-        "Venison": {
-          "form": "raw"
-        },
-        "Venison Broth": {
-          "form": "broth"
-        },
-        "Venison By-Products": {
-          "form": "by_product"
-        },
-        "venison kidney": {
-          "form": "organ"
-        },
-        "Venison Liver": {
-          "form": "organ"
-        },
-        "Venison Meal": {
-          "form": "meal"
-        },
-        "venison tripe": {
-          "form": "organ"
-        },
-        "raw venison": {
-          "form": "raw"
-        }
-      },
+      "members": [
+        "Certified Humane Venison",
+        "de-boned venison",
+        "Roasted Venison",
+        "Venison",
+        "Venison Broth",
+        "Venison By-Products",
+        "venison kidney",
+        "Venison Liver",
+        "Venison Meal",
+        "venison tripe",
+        "raw venison",
+        "Venison Meal (Source of Glucosamine and Chondroitin Sulfate)"
+      ],
       "category": "protein"
     },
     "wheat": {
       "source_group": "grain",
-      "members": {
-        "gelatinized wheat flour": {
-          "form": "flour"
-        },
-        "Ground Wheat": {
-          "form": "ground"
-        },
-        "Ground Whole Wheat": {
-          "form": "ground"
-        },
-        "pasta": {
-          "form": "whole"
-        },
-        "spelt": {
-          "form": "whole"
-        },
-        "wheat": {
-          "form": "whole"
-        },
-        "Wheat Bran": {
-          "form": "bran"
-        },
-        "Wheat Flour": {
-          "form": "flour"
-        },
-        "Wheat Germ Meal": {
-          "form": "meal"
-        },
-        "wheat gluten": {
-          "form": "gluten"
-        },
-        "Wheat Starch": {
-          "form": "starch"
-        },
-        "Whole Grain Wheat": {
-          "form": "whole"
-        },
-        "Ground Whole Grain Wheat": {
-          "form": "ground"
-        },
-        "wheat protein": {
-          "form": "concentrate"
-        }
-      },
+      "members": [
+        "gelatinized wheat flour",
+        "Ground Wheat",
+        "Ground Whole Wheat",
+        "pasta",
+        "spelt",
+        "whole spelt",
+        "wheat",
+        "Wheat Bran",
+        "Wheat Flour",
+        "Wheat Germ Meal",
+        "wheat gluten",
+        "Whole Wheat Flour",
+        "Wheat Starch",
+        "Whole Grain Wheat",
+        "Ground Whole Grain Wheat",
+        "wheat protein"
+      ],
       "category": "carb"
     },
     "whitefish": {
       "source_group": "fish",
-      "members": {
-        "blue whiting meal": {
-          "form": "meal"
-        },
-        "blue whiting meal (7%)": {
-          "form": "meal"
-        },
-        "dehydrated blue whiting (4%)": {
-          "form": "dried"
-        },
-        "dehydrated whitefish (4%)": {
-          "form": "dried"
-        },
-        "dehydrated whitefish (5%)": {
-          "form": "dried"
-        },
-        "Ocean Whitefish": {
-          "form": "raw"
-        },
-        "Ocean Whitefish Meal": {
-          "form": "meal"
-        },
-        "White Fish": {
-          "form": "raw"
-        },
-        "white fish meal": {
-          "form": "meal"
-        },
-        "White Fish Oil (1%)": {
-          "form": "oil"
-        },
-        "Whitefish": {
-          "form": "raw"
-        },
-        "Whitefish (source of Omega 3 and 6 Fatty Acids)": {
-          "form": "fat"
-        },
-        "Whitefish Broth": {
-          "form": "broth"
-        },
-        "Whitefish Meal": {
-          "form": "meal"
-        },
-        "whitefish oil (0.5%)": {
-          "form": "oil"
-        },
-        "Whitefish Oil (1%)": {
-          "form": "oil"
-        },
-        "whitefish oil (2%)": {
-          "form": "oil"
-        },
-        "dehydrated whitefish": {
-          "form": "dried"
-        },
-        "dehydrated blue whiting": {
-          "form": "dried"
-        },
-        "white fish oil": {
-          "form": "oil"
-        },
-        "whitefish oil": {
-          "form": "oil"
-        },
-        "Whitefish Meal (source of Glucosamine and Chondroitin Sulfate)": {
-          "form": "meal"
-        }
-      },
+      "members": [
+        "blue whiting meal",
+        "blue whiting meal (7%)",
+        "dehydrated blue whiting (4%)",
+        "dehydrated whitefish (4%)",
+        "dehydrated whitefish (5%)",
+        "Ocean Whitefish",
+        "Ocean Whitefish Meal",
+        "White Fish",
+        "white fish meal",
+        "White Fish Oil (1%)",
+        "Whitefish",
+        "Whitefish (source of Omega 3 and 6 Fatty Acids)",
+        "Whitefish Broth",
+        "Whitefish Meal",
+        "whitefish oil (0.5%)",
+        "Whitefish Oil (1%)",
+        "whitefish oil (2%)",
+        "dehydrated whitefish",
+        "dehydrated blue whiting",
+        "white fish oil",
+        "whitefish oil",
+        "Whitefish Meal (source of Glucosamine and Chondroitin Sulfate)",
+        "Deboned Whitefish"
+      ],
       "category": "protein"
     },
     "wild_boar": {
       "source_group": "red_meat",
-      "members": {
-        "boar heart": {
-          "form": "organ"
-        },
-        "boar liver": {
-          "form": "organ"
-        },
-        "de-boned wild boar": {
-          "form": "raw"
-        },
-        "deboned wild boar": {
-          "form": "raw"
-        },
-        "wild boar": {
-          "form": "raw"
-        },
-        "wild boar heart": {
-          "form": "organ"
-        },
-        "wild boar liver": {
-          "form": "organ"
-        }
-      },
+      "members": [
+        "boar heart",
+        "boar liver",
+        "de-boned wild boar",
+        "deboned wild boar",
+        "wild boar",
+        "wild boar heart",
+        "wild boar liver"
+      ],
       "category": "protein"
     },
     "xanthan_gum": {
       "source_group": "additive",
-      "members": {
-        "Xanthan Gum": {
-          "form": "raw"
-        }
-      },
+      "members": [
+        "Xanthan Gum"
+      ],
       "category": "additive"
     },
     "yeast": {
       "source_group": "other",
-      "members": {
-        "Brewer's Dried Yeast": {
-          "form": "dried"
-        },
-        "Brewers Dried Yeast": {
-          "form": "dried"
-        },
-        "brewer’s yeast": {
-          "form": "raw"
-        },
-        "brewer's yeast": {
-          "form": "raw"
-        },
-        "brewers yeast": {
-          "form": "raw"
-        },
-        "brewer’s dried yeast": {
-          "form": "dried"
-        },
-        "Dried Yeast": {
-          "form": "dried"
-        },
-        "Dried Yeast Extract": {
-          "form": "extract"
-        },
-        "Yeast Culture": {
-          "form": "raw"
-        },
-        "Yeast (S. Cerevisiae)": {
-          "form": "raw"
-        },
-        "yeast extract": {
-          "form": "extract"
-        },
-        "yeast extract (source of MOS)": {
-          "form": "extract"
-        },
-        "hydrolyzed yeast": {
-          "form": "hydrolyzed",
-          "is_hydrolyzed": true
-        },
-        "hydrolyzed yeast (source of betaglucans)": {
-          "form": "hydrolyzed",
-          "is_hydrolyzed": true
-        },
-        "Selenium Yeast": {
-          "form": "raw"
-        },
-        "Dried Brewers Yeast": {
-          "form": "dried"
-        },
-        "Yeast": {
-          "form": "raw"
-        }
-      }
+      "members": [
+        "Brewer's Dried Yeast",
+        "Brewers Dried Yeast",
+        "brewer’s yeast",
+        "brewer's yeast",
+        "brewers yeast",
+        "brewer’s dried yeast",
+        "Dried Yeast",
+        "Dried Yeast Extract",
+        "Yeast Culture",
+        "Yeast (S. Cerevisiae)",
+        "yeast extract",
+        "yeast extract (source of MOS)",
+        "hydrolyzed yeast",
+        "hydrolyzed yeast (source of betaglucans)",
+        "Selenium Yeast",
+        "Dried Brewers Yeast",
+        "Yeast",
+        "Grain Distillers Dried Yeast"
+      ]
     },
     "zucchini": {
       "source_group": "vegetable",
-      "members": {
-        "fresh whole zucchini": {
-          "form": "whole"
-        },
-        "fresh zucchini": {
-          "form": "raw"
-        },
-        "Zucchini": {
-          "form": "whole"
-        }
-      },
+      "members": [
+        "fresh whole zucchini",
+        "fresh zucchini",
+        "Zucchini"
+      ],
       "category": "carb"
+    },
+    "palm": {
+      "source_group": "seed",
+      "members": [
+        "Palm Oil"
+      ]
     }
   },
   "cross_reactivity_groups": {
@@ -4394,7 +2138,37 @@
       ],
       "source_group": "animal"
     },
+    "Dried Vegetable Broth": {
+      "could_be": [
+        "any"
+      ],
+      "source_group": "vegetable"
+    },
+    "Vegetable Stock": {
+      "could_be": [
+        "any"
+      ],
+      "source_group": "vegetable"
+    },
+    "dehydrated fish": {
+      "could_be": [
+        "salmon",
+        "herring",
+        "whitefish",
+        "menhaden"
+      ],
+      "source_group": "fish"
+    },
     "Fish": {
+      "could_be": [
+        "salmon",
+        "herring",
+        "whitefish",
+        "menhaden"
+      ],
+      "source_group": "fish"
+    },
+    "hydrolyzed fish": {
       "could_be": [
         "salmon",
         "herring",
@@ -4650,6 +2424,12 @@
       ],
       "source_group": "unknown"
     },
+    "Natural Flavor (Yeast Extract)": {
+      "could_be": [
+        "yeast"
+      ],
+      "source_group": "other"
+    },
     "Natural Flavor (fish and yeast)": {
       "could_be": [
         "salmon",
@@ -4716,6 +2496,14 @@
         "menhaden"
       ],
       "source_group": "fish"
+    },
+    "Poultry Fat (Preserved With Mixed Tocopherols)": {
+      "could_be": [
+        "chicken",
+        "turkey",
+        "duck"
+      ],
+      "source_group": "poultry"
     },
     "Poultry Broth": {
       "could_be": [
@@ -5194,11 +2982,18 @@
         "pork"
       ],
       "source_group": "red_meat"
+    },
+    "Meat": {
+      "could_be": [
+        "any"
+      ],
+      "source_group": "animal"
     }
   },
   "ignore_patterns": [
     "(?i)^vitamins?\\s*[([:/]",
     "(?i)^minerals?\\s*[([:/]",
+    "(?i)^mineral\\s+mix\\s*[([]",
     "(?i)^trace minerals?\\s*[([]",
     "(?i)^vitamins?(\\s*$|\\.\\s*[A-Z0-9])",
     "(?i)^minerals?\\s*$",
@@ -5236,7 +3031,7 @@
     "(?i)^gelatin\\b",
     "(?i)^(sugar|brown\\s+sugar|cane\\s+(sugar|molasses)|maple\\s+(sugar|syrup)|coconut\\s+glycerin)$",
     "(?i)^mono.?\\s*and\\s*di",
-    "(?i)^water(\\s+sufficient|\\.|$)",
+    "(?i)^water(\\s+(sufficient|for)\\b|\\.|$)",
     "(?i)sufficient.*processing",
     "(?i)^(iodized\\s+)?salt\\b|^sea\\s+salt$",
     "(?i)^(glucosamine|chondroitin|hyaluronic|collagen(?!\\s+from))\\b",
@@ -5272,7 +3067,8 @@
     "(?i)^Natural\\s+&\\s+Artificial",
     "(?i)^hickory\\s+flavou?r",
     "(?i)^and\\s+potato-free\\s+Health",
-    "(?i)^Grain[\\-\\u2013\\u2014]Free\\s+Flavor"
+    "(?i)^Grain[\\-\\u2013\\u2014]Free\\s+Flavor",
+    "(?i)^amino\\s+acids?\\s*\\("
   ],
   "ignore_for_correlation": [
     "(preserved with mixed tocopherols)",
@@ -5282,6 +3078,7 @@
     "Acacia Gum",
     "acide folique (vitamine B9)",
     "aloe vera",
+    "Amino Acid Complex",
     "althea root",
     "antioxidants",
     "artificial colors",
@@ -5294,38 +3091,43 @@
     "botanicals (ginger root, pumpkin, turmeric, carrot, broccoli, apple, cranberry, blueberry, butternut squash, spinach, licorice root, pomegranate, peppermint leaf)",
     "botanicals (ginger root, turmeric, carrot, broccoli, apple, cranberry, blueberry, butternut squash, spinach, licorice root, pomegranate, peppermint leaf)",
     "burdock root",
+    "Calcium Iod",
     "calcium cabonate",
     "canneberges",
     "Canola Oil (preserved With Mixed Tocopherols, A Natural Source Of Vitamin E)",
     "Caramel",
+    "Carob Gum",
     "carbonate de calcium",
     "Carmel",
     "carob",
     "carob powder",
     "carottes",
     "Cellulose Powder",
-    "cellulose powder",
+    "Cholecalciferol",
     "Chaga Mushroom",
     "chlorhydrate de glucosamine",
     "chlorhydrate de pyridoxine (vitamine B6)",
     "chlorure de choline",
     "chlorure de potassium",
     "citrus fiber",
+    "Citrus Pulp",
     "colours",
     "copper lysine complex",
     "COPPERAMINO ACID COMPLEX",
     "Cumin",
-    "CUMIN",
     "Di Calcium Phosphate",
     "Dicacalcium Phosphate",
     "DL-alpha tocopherol acetate (source of vitamin E)",
     "dried black soldier fly larvae",
+    "Dried Aspergillus oryzae Fermentation Extract",
     "Dried Citrus Pulp",
     "dried miscanthus grass",
     "Dried Orange Pulp",
+    "Dried Trichoderma longibrachiatum Fermentation Extract",
     "Eucalyptus Oil",
     "farine de poulet",
     "farine d’avoine",
+    "Fenugreek",
     "Fennel Powder",
     "Ferrous Fumarate",
     "freeze-dried kelp",
@@ -5334,6 +3136,7 @@
     "green tea",
     "green tea extract",
     "Ground Cinnamon",
+    "Ground Limestone",
     "Ground Cumin",
     "Ground Fennel",
     "ground miscanthus grass",
@@ -5361,6 +3164,7 @@
     "Miscanthus Grass",
     "Monodicalcium phosphate",
     "Montmorillonite Clay",
+    "Nicotinic Acid",
     "orge",
     "Papaya Powder",
     "Par Actin",
@@ -5368,6 +3172,7 @@
     "partially hydrogenated canola oil preserved with TBHQ",
     "passiflora incarnata (passion flower)",
     "Passion Flower",
+    "Passionflower",
     "patates douces",
     "Pea-free",
     "Peppermint Leaf Powder",
@@ -5379,7 +3184,6 @@
     "pommes de terre",
     "Real Meat First",
     "Reduced Iron",
-    "REDUCED IRON",
     "Reishi Mushroom",
     "riz brun",
     "rosehip",
@@ -5388,6 +3192,7 @@
     "Rosemary Oil. 2",
     "sarsaparilla root",
     "sel",
+    "Sodium Molybdate",
     "Sodium Acid Pyrophosphate",
     "Sodium Metabisulfite (A Preservative)",
     "Sodium Selenium",
@@ -5402,21 +3207,29 @@
     "sulfate de fer",
     "sulfate de zinc",
     "Sunflower Seed Lecithin",
+    "Sweet Fennel",
     "Tetra Sodium Pyrophosphate",
     "Tetrasodium Pyrophosphate",
     "Tocopherols (Preservative)",
-    "tocopherols (preservative)",
     "Turmeric (spice)",
     "Turmeric Spice",
     "Turmeric Spice. 2",
     "Valerian Root",
     "valeriana officinalis (valerian root)",
     "Vitamin D3Supplement",
+    "Xanthan",
     "Xanthan Gum. 2A26022",
     "xylose",
     "Yucca Shidigera Extract",
     "zedoary",
     "Zinc-Methionine complex",
-    "β-glucans"
+    "β-glucans",
+    "Titanium Dioxide (Color)",
+    "Paprika Extract (Color)",
+    "Caramel (Color)",
+    "Carmine (Color)",
+    "Fruit Juice (color)",
+    "Thiamin Mononitrate",
+    "Titanium Dioxide"
   ]
 }

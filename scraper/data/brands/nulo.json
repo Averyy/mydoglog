@@ -1,0 +1,1376 @@
+{
+  "brand": "Nulo",
+  "website_url": "https://www.petsmart.ca",
+  "scraped_at": "2026-03-10T12:29:28.568143+00:00",
+  "scraper_version": "0.1.0",
+  "stats": {
+    "product_count": 33,
+    "by_channel": {
+      "retail": 33
+    },
+    "by_type": {
+      "food": 31,
+      "supplement": 2
+    }
+  },
+  "products": [
+    {
+      "name": "Gently Cooked Meals Adult Wet Dog Food",
+      "brand": "Nulo",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/nulo-gently-cooked-meals-adult-wet-dog-food---9-oz-81940.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "life_stage": "adult",
+      "source_id": "5350643",
+      "images": [
+        "/products/nulo/nulo-food-gently-cooked-meals-adult-wet-dog-food.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "9 Oz",
+          "upc": "0811939028641",
+          "sku": "5350643"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "9 Oz",
+          "upc": "0811939028504",
+          "sku": "5350644"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "9 Oz",
+          "upc": "0811939028498",
+          "sku": "5350785"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "9 Oz",
+          "upc": "0811939028474",
+          "sku": "5350788"
+        }
+      ],
+      "ingredients_raw": "Duck, Chicken, Brown Rice, Duck Broth, Chicken Broth, Chicken Hearts, Sweet Potato, Quinoa, Carrots, Green Beans, Apples, Sunflower Oil, Dried Egg, Tomato Paste, Flaxseed, Pea Fiber, Cranberries, Tricalcium Phosphate, Salmon Oil, Guar Gum, Potassium Chloride, Apple Cider Vinegar, Choline Chloride, Salt, Magnesium Sulfate, Thyme, Parsley, Iron Amino Acid Chelate, Zinc Amino Acid Chelate, Vitamin E Supplement, Vitamin B1 (Thiamine Mononitrate), Vitamin A Supplement, Turmeric, Vitamin B3 (Niacin), Manganese Amino Acid Chelate, Copper Amino Acid Chelate, Calcium Iodate, Vitamin B5 (Calcium Pantothenate), Vitamin B2 (Riboflavin), Vitamin B12 Supplement, Vitamin B6 (Pyridoxine Hydrochloride), Vitamin D3 (Cholecalciferol), Vitamin B9 (Folic Acid), Vitamin B7 (Biotin)",
+      "guaranteed_analysis": {
+        "crude_protein_min": 10.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 73.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1162 kcal/kg, 296 kcal/pouch"
+    },
+    {
+      "name": "Medal Series All Life Stage Wet Dog Food - No Corn, Wheat & Soy",
+      "brand": "Nulo",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/nulo-medalseries-all-life-stage-wet-dog-food---no-corn-wheat-and-soy-13-oz-37515.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "MedalSeries",
+      "life_stage": "all",
+      "source_id": "5212688",
+      "images": [
+        "/products/nulo/nulo-food-medal-series-all-life-stage-wet-dog-food-no-corn-wheat-soy.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "13 Oz",
+          "upc": "0856161002861",
+          "sku": "5212688"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "13 Oz",
+          "upc": "0856161002878",
+          "sku": "5212689"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "13 Oz",
+          "upc": "0856161002885",
+          "sku": "5212690"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "13 Oz",
+          "upc": "0856161002908",
+          "sku": "5212692"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "13 Oz",
+          "upc": "0811939021451",
+          "sku": "5280985"
+        }
+      ],
+      "ingredients_raw": "Turkey, Turkey Broth, Salmon Broth, Turkey Liver, Cod, Peas, Chickpeas, Pea Fiber, Salmon, Ground Flaxseed, Natural Flavor, Guar Gum, Potassium Chloride, Salt, Agar-Agar, Choline Chloride, Inulin, Zinc Proteinate, Iron Proteinate, Sodium Carbonate, L-Carnitine, Vitamin E Supplement, Copper Proteinate, Manganese Proteinate, Sodium Selenite, Thiamine Mononitrate, Cobalt Proteinate, Niacin Supplement, D-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Potassium Iodide, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid",
+      "guaranteed_analysis": {
+        "crude_protein_min": 10.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 2.5,
+        "moisture_max": 78.0,
+        "omega_6_min": 0.8,
+        "omega_3_min": 0.15
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "950 kcal/kg"
+    },
+    {
+      "name": "Medal Series Puppy Wet Dog Food - High-Protein",
+      "brand": "Nulo",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/nulo-medalseries-puppy-wet-dog-food---high-protein-13-oz-48083.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "MedalSeries",
+      "life_stage": "puppy",
+      "source_id": "5275108",
+      "images": [
+        "/products/nulo/nulo-food-medal-series-puppy-wet-dog-food-high-protein.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "13 Oz",
+          "upc": "0811939021628",
+          "sku": "5275108"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Broth, Salmon Broth, Chicken Liver, Salmon, Lentils, Peas, Chickpeas, Salmon Oil (Preserved With Mixed Tocopherols), Ground Flaxseed, Natural Flavor, Dicalcium Phosphate, Guar Gum, Potassium Chloride, Pumpkin, Cranberries, Blueberries, Salt, Choline Chloride, Agar-Agar, Zinc Proteinate, Iron Proteinate, Sodium Carbonate, Thiamine Mononitrate, Vitamin E Supplement, Copper Proteinate, Manganese Proteinate, Sodium Selenite, Cobalt Proteinate, Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Potassium Iodide, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.5,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 78.0,
+        "dha_min": 0.05
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1093 kcal/kg"
+    },
+    {
+      "name": "Medal Series Small Breed All Life Stages Wet Dog Food",
+      "brand": "Nulo",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/nulo-medalseries-small-breed-all-life-stages-wet-dog-food---55-oz-60840.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "MedalSeries",
+      "life_stage": "all",
+      "breed_size": "Small",
+      "source_id": "5304174",
+      "images": [
+        "/products/nulo/nulo-food-medal-series-small-breed-all-life-stages-wet-dog-food.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "5.5 Oz",
+          "upc": "0811939023653",
+          "sku": "5304174"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "5.5 Oz",
+          "upc": "0811939023639",
+          "sku": "5304225"
+        }
+      ],
+      "ingredients_raw": "Duck, Duck Broth, Turkey Liver, Chickpeas, Dicalcium Phosphate, Ground Lentils, Ground Flaxseed, Guar Gum, Pea Fiber, Potassium Chloride, Salt, Choline Chloride, Agar-Agar, Salmon Oil (Preserved With Mixed Tocopherols), Inulin, Natural Flavor, Zinc Proteinate, Iron Proteinate, Sodium Carbonate, Magnesium Sulfate, L-Carnitine, Vitamin E Supplement, Copper Proteinate, Manganese Proteinate, Sodium Selenite, Thiamine Mononitrate, Cobalt Proteinate, Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Potassium Iodide, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 10.5,
+        "crude_fat_min": 8.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0,
+        "omega_6_min": 0.8,
+        "omega_3_min": 0.1
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1314 kcal/kg, 223 kcal/can"
+    },
+    {
+      "name": "Signature Stews All Life Stage Wet Dog Food - Grain Free",
+      "brand": "Nulo",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/nulo-signature-stews-all-life-stage-wet-dog-food---grain-free-6-oz-77475.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "life_stage": "all",
+      "source_id": "5339365",
+      "images": [
+        "/products/nulo/nulo-food-signature-stews-all-life-stage-wet-dog-food-grain-free.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "6 Oz",
+          "upc": "0811939029228",
+          "sku": "5339365"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "6 Oz",
+          "upc": "0811939029235",
+          "sku": "5339366"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "6 Oz",
+          "upc": "0811939029242",
+          "sku": "5339367"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "6 Oz",
+          "upc": "0811939029259",
+          "sku": "5339368"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Broth, Sweet Potato, Pumpkin, Coconut Oil, Tricalcium Phosphate, Potassium Chloride, Xanthan Gum, Salt, Inulin, Guar Gum, Choline Chloride, Taurine, Salmon Oil, Magnesium Sulfate, Parsley, Iron Amino Acid Chelate, Zinc Amino Acid Chelate, Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate, Thiamine Mononitrate, Vitamin A Supplement, Nicotinic Acid, Manganese Amino Acid Chelate, Copper Amino Acid Chelate, Calcium Iodate, Calcium d-Pantothenate, Riboflavin Supplement, Sodium Selenite, Vitamin B12 Supplement, Pyridoxine Hydrocholoride, Folic Acid, Cholecalciferol, Biotin, Menadione Sodium Bisulfite Complex",
+      "guaranteed_analysis": {
+        "crude_protein_min": 11.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 83.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "875 kcal/kg, 149 kcal/cup"
+    },
+    {
+      "name": "Signature Stews Small Breed All Life Stage Wet Dog Food - Grain Free",
+      "brand": "Nulo",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/nulo-signature-stews-small-breed-all-life-stage-wet-dog-food---grain-free-28-oz-77474.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "life_stage": "all",
+      "breed_size": "Small",
+      "source_id": "5339261",
+      "images": [
+        "/products/nulo/nulo-food-signature-stews-small-breed-all-life-stage-wet-dog-food-grain-free.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "2.8 Oz",
+          "upc": "0811939028689",
+          "sku": "5339261"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "2.8 Oz",
+          "upc": "0811939028696",
+          "sku": "5339262"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "2.8 Oz",
+          "upc": "0811939028702",
+          "sku": "5339263"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Broth, Salmon, Salmon Broth, Pumpkin, Coconut Oil, Tricalcium Phosphate, Potassium Chloride, Xanthan Gum, Salt, Inulin, Guar Gum, Choline Chloride, Taurine, Magnesium Sulfate, Parsley, Iron Amino Acid Chelate, Zinc Amino Acid Chelate, Vitamin E Supplement, Salmon Oil, L-Carnitine, L-Ascorbyl-2-Polyphosphate, Thiamine Mononitrate, Vitamin A Supplement, Nicotinic Acid, Manganese Amino Acid Chelate, Copper Amino Acid Chelate, Calcium Iodate, Calcium d-Pantothenate, Riboflavin Supplement, Sodium Selenite, Vitamin B12 Supplement, Pyridoxine Hydrocholoride, Folic Acid, Cholecalciferol, Biotin, Menadione Sodium Bisulfite Complex",
+      "guaranteed_analysis": {
+        "crude_protein_min": 11.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 83.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "875 kcal/kg, 69 kcal/cup"
+    },
+    {
+      "name": "Medal Series Adult Dog Dry Food - Salmon, Oats & Haddock",
+      "brand": "Nulo",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/nulo-medalseries-adult-dog-dry-food---salmon-oats-and-haddock-58822.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "MedalSeries",
+      "life_stage": "adult",
+      "source_id": "5300079",
+      "images": [
+        "/products/nulo/nulo-food-medal-series-adult-dog-dry-food-salmon-oats-haddock.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0811939025299",
+          "sku": "5300079"
+        }
+      ],
+      "ingredients_raw": "Deboned Salmon, Turkey Meal, Chicken Meal, Oats, Barley, Millet, Chicken Fat (preserved with Mixed Tocopherols & Citric Acid), Ground Flaxseed, Haddock, Acadian Redfish, Spelt, Ground Miscanthus Grass, Natural Flavor, L-Carnitine, Dried Chicory Root, Dried Cherries, Dried Blueberries, Chia Seed, Dried Pumpkin, Dried Apples, Dried Spinach, Taurine, Salt, Potassium Chloride, Coconut Oil, Yeast Culture, Turmeric, Choline Chloride, Calcium Carbonate, Zinc Proteinate, Vitamin E Supplement, Zinc Sulfate, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Iron Proteinate, Niacin Supplement, Ferrous Sulfate, Copper Proteinate, Copper Sulfate, Vitamin A Supplement, Manganese Proteinate, Thiamine Mononitrate, Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Manganous Oxide, Biotin, Dried Bacillus coagulans Fermentation Product, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Sodium Selenite, Calcium Iodate, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "taurine_min": 0.1,
+        "omega_6_min": 3.25,
+        "omega_3_min": 1.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3616 kcal/kg, 427 kcal/cup"
+    },
+    {
+      "name": "Medal Series Adult Dry Dog Food - High-Protein, Chicken",
+      "brand": "Nulo",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/nulo-medalseries-adult-dry-dog-food---high-protein-chicken-18306.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "MedalSeries",
+      "life_stage": "adult",
+      "source_id": "5212676",
+      "images": [
+        "/products/nulo/nulo-food-medal-series-adult-dry-dog-food-high-protein-chicken.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0856161002342",
+          "sku": "5212676"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0856161002779",
+          "sku": "5212685"
+        }
+      ],
+      "ingredients_raw": "Deboned Chicken, Chicken Meal, Turkey Meal, Whole Peas, Sweet Potato, Chicken Fat (Preserved with Mixed Tocopherols and Citric Acid), Lentils, Pea Fiber, Deboned Turkey, Natural Chicken Flavor, Yeast Culture, Salmon Oil, Dried Chicory Root, Potassium Chloride, Dried Carrots, Dried Tomatoes, Dried Blueberries, Dried Apples, Calcium Carbonate, Salt, Fennel, Dandelion, Marigold, Chamomile, Zinc Proteinate, Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (Source of Vitamin C), Iron Proteinate, Niacin, Copper Proteinate, Choline Chloride, Thiamine Mononitrate (Source of Vitamin B1), Calcium Pantothenate, Vitamin A Supplement, Manganous Oxide, Pyridoxine Hydrochloride (Source of Vitamin B6), Sodium Selenite, Riboflavin, Vitamin D3 Supplement, Biotin, Bacillus Coagulans, Vitamin B12 Supplement, Calcium Iodate, Folic Acid and Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 32.0,
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.9,
+        "omega_3_min": 0.4,
+        "omega_6_min": 2.9
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "431 kcal/cup"
+    },
+    {
+      "name": "Medal Series Adult Dry Dog Food - High-Protein, Lamb",
+      "brand": "Nulo",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/nulo-medalseries-adult-dry-dog-food---high-protein-lamb-58936.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "MedalSeries",
+      "life_stage": "adult",
+      "source_id": "5212684",
+      "images": [
+        "/products/nulo/nulo-food-medal-series-adult-dry-dog-food-high-protein-lamb.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0856161002762",
+          "sku": "5212684"
+        }
+      ],
+      "ingredients_raw": "Lamb, Turkey Meal, Chicken Meal, Whole Peas, Sweet Potato, Chicken Fat (Preserved with Mixed Tocopherols and Citric Acid), Lentils, Menhaden Fish Meal, Pea Fiber, Natural Lamb Flavor, Yeast Culture, Dried Chicory Root, Potassium Chloride, Dried Apples, Dried Blueberries, Dried Carrots, Dried Tomatoes, Calcium Carbonate, Salmon Oil, Salt, Marigold, Chamomile, Dandelion, Fennel, Zinc Proteinate, Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (Source of Vitamin C), Iron Proteinate, Niacin, Copper Proteinate, Choline Chloride, Thiamine Mononitrate (Source of Vitamin B1), Calcium Pantothenate, Vitamin A Supplement, Manganous Oxide, Pyridoxine Hydrochloride (Source of Vitamin B6), Sodium Selenite, Riboflavin, Vitamin D3 Supplement, Biotin, Bacillus Coagulans, Vitamin B12 Supplement, Calcium Iodate, Folic Acid and Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 32.0,
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.9,
+        "omega_3_min": 0.5,
+        "omega_6_min": 3.1
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "438 kcal/cup"
+    },
+    {
+      "name": "Medal Series Adult Dry Dog Food - Salmon",
+      "brand": "Nulo",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/nulo-medalseries-adult-dry-dog-food---salmon-58937.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "MedalSeries",
+      "life_stage": "adult",
+      "source_id": "5212534",
+      "images": [
+        "/products/nulo/nulo-food-medal-series-adult-dry-dog-food-salmon.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0856161002311",
+          "sku": "5212534"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0856161002717",
+          "sku": "5212679"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0856161002755",
+          "sku": "5212683"
+        }
+      ],
+      "ingredients_raw": "Deboned Salmon, Turkey Meal, Chicken Meal, Whole Peas, Sweet Potato, Chicken Fat (Preserved with Mixed Tocopherols and Citric Acid), Lentils, Pea Fiber, Deboned Turkey, Natural Salmon Flavor, Pea Fiber, Yeast Culture, Dried Blueberries, Dried Apples, Dried Chicory Root, Dried Tomatoes, Dried Carrots, Salt, Marigold, Chamomile, Dandelion, Fennel, Calcium Carbonate, Choline Chloride, Potassium Chloride, Zinc Proteinate, Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (Source of Vitamin C), Iron Proteinate, Niacin, Copper Proteinate, Thiamine Mononitrate (Source of Vitamin B1), Calcium Pantothenate, Vitamin A Supplement, Manganous Oxide, Pyridoxine Hydrochloride (Source of Vitamin B6), Sodium Selenite, Riboflavin, Vitamin D3 Supplement, Biotin, Bacillus Coagulans, Vitamin B12 Supplement, Calcium Iodate, Folic Acid and Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 32.0,
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.9,
+        "omega_3_min": 0.6,
+        "omega_6_min": 3.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3652 kcal/kg"
+    },
+    {
+      "name": "Medal Series All Life Stages Dry Dog Food - Salmon",
+      "brand": "Nulo",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/nulo-medalseries-all-life-stages-dry-dog-food---salmon-49060.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "MedalSeries",
+      "life_stage": "all",
+      "source_id": "5280917",
+      "images": [
+        "/products/nulo/nulo-food-medal-series-all-life-stages-dry-dog-food-salmon.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0811939022496",
+          "sku": "5280917"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0811939022526",
+          "sku": "5280919"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0811939022465",
+          "sku": "5280921"
+        }
+      ],
+      "ingredients_raw": "Deboned Salmon, Salmon Meal, Yellow Peas, Chickpeas, Canola Oil (preserved with Mixed Tocopherols & Citric Acid), Dried Sweet Potatoes, Green Lentils, Pea Fiber, Natural Salmon Flavor, Calcium Carbonate, Dicalcium Phosphate, Potassium Chloride, Miscanthus Grass, Dried Chicory Root, Salt, Choline Chloride, Vitamin E Supplement, Zinc Proteinate, Zinc Sulfate, Iron Proteinate, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Ferrous Sulfate, Copper Proteinate, Copper Sulfate, Vitamin A Supplement, Manganese Proteinate, Thiamine Mononitrate, Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Manganous Oxide, Biotin, Dried Bacillus coagulans Fermentation Product, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Sodium Selenite, Calcium Iodate, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 5.5,
+        "moisture_max": 10.0,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.1,
+        "omega_6_min": 2.2,
+        "omega_3_min": 1.8
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3558 kcal/kg, 420 kcal/cup"
+    },
+    {
+      "name": "Medal Series All Life Stages Dry Dog Food - Turkey, Grain Free",
+      "brand": "Nulo",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/nulo-medalseries-all-life-stages-dry-dog-food---turkey-grain-free-49059.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "MedalSeries",
+      "life_stage": "all",
+      "source_id": "5280923",
+      "images": [
+        "/products/nulo/nulo-food-medal-series-all-life-stages-dry-dog-food-turkey-grain-free.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0811939022533",
+          "sku": "5280923"
+        }
+      ],
+      "ingredients_raw": "Deboned Turkey, Turkey Meal, Green Lentils, Dried Sweet Potatoes, Yellow Peas, Pea Fiber, Canola Oil (preserved with Mixed Tocopherols & Citric Acid), Chickpeas, Natural Turkey Flavor, Salmon Oil, Calcium Carbonate, Dicalcium Phosphate, Potassium Chloride, Miscanthus Grass, Dried Chicory Root, Salt, Monosodium Phosphate, Choline Chloride, Vitamin E Supplement, Zinc Proteinate, Zinc Sulfate, Iron Proteinate, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Ferrous Sulfate, Copper Proteinate, Copper Sulfate, Vitamin A Supplement, Manganese Proteinate, Thiamine Mononitrate, Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Manganous Oxide, Biotin, Dried Bacillus coagulans Fermentation Product, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Sodium Selenite, Calcium Iodate, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 6.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.1,
+        "omega_6_min": 2.0,
+        "omega_3_min": 0.4
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3476 kcal/kg, 410 kcal/cup"
+    },
+    {
+      "name": "Medal Series Baked & Coated Adult Dry Dog Food - Beef, Pork & Lamb",
+      "brand": "Nulo",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/nulo-medalseries-baked-and-coated-adult-dry-dog-food---beef-pork-and-lamb-69203.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "MedalSeries",
+      "life_stage": "adult",
+      "source_id": "5322843",
+      "images": [
+        "/products/nulo/nulo-food-medal-series-baked-coated-adult-dry-dog-food-beef-pork-lamb.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0811939028030",
+          "sku": "5322843"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0811939028054",
+          "sku": "5322844"
+        }
+      ],
+      "ingredients_raw": "Deboned Beef, Pork Meal, Chickpeas, Lentils, Chicken Fat (preserved with Mixed Tocopherols & Citric Acid), Pea Protein, Sweet Potatoes, Deboned Lamb, Lamb Meal, Ground Flaxseed, Deboned Pork, Natural Flavor, Ground Miscanthus Grass, Dried Egg Product, Beef Bone Broth, Yeast Culture, Potassium Chloride, Salt, Choline Chloride, DL–Methionine, Salmon Oil, Coconut Oil, Dried Blueberries, Dried Pumpkin, Dried Apples, Dried Carrots, Dried Chicory Root, Taurine, Zinc Proteinate, Iron Proteinate, Calcium Carbonate, L–Ascorbyl–2–Polyphosphate (source of Vitamin C), Vitamin E Supplement, Niacin Supplement, Selenium Yeast, Turmeric, Copper Proteinate, Manganese Proteinate, Thiamine Mononitrate, Vitamin A Supplement, Pyridoxine Hydrochloride, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Dried Bacillus coagulans Fermentation Product, Vitamin D3 Supplement, Folic Acid, Calcium Iodate, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 18.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.9,
+        "taurine_min": 0.1
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3770 kcal/kg, 445 kcal/cup"
+    },
+    {
+      "name": "Medal Series Baked & Coated Adult Dry Dog Food - Chicken, Duck & Turkey",
+      "brand": "Nulo",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/nulo-medalseries-baked-and-coated-adult-dry-dog-food---chicken-duck-and-turkey-69198.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "MedalSeries",
+      "life_stage": "adult",
+      "source_id": "5322762",
+      "images": [
+        "/products/nulo/nulo-food-medal-series-baked-coated-adult-dry-dog-food-chicken-duck-turkey.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0811939027972",
+          "sku": "5322762"
+        }
+      ],
+      "ingredients_raw": "Deboned Chicken, Chicken Meal, Chickpeas, Lentils, Sweet Potatoes, Chicken Fat (preserved with Mixed Tocopherols & Citric Acid), Deboned Duck, Ground Flaxseed, Deboned Turkey, Ground Miscanthus Grass, Natural Flavor, Chicken Bone Broth, Yeast Culture, Turkey Meal, Potassium Chloride, Choline Chloride, Salt, DL–Methionine, Salmon Oil, Coconut Oil, Dried Blueberries, Dried Pumpkin, Dried Apples, Dried Carrots, Dried Chicory Root, Taurine, Zinc Proteinate, Iron Proteinate, Calcium Carbonate, L–Ascorbyl–2–Polyphosphate (source of Vitamin C), Vitamin E Supplement, Niacin Supplement, Selenium Yeast, Turmeric, Copper Proteinate, Manganese Proteinate, Thiamine Mononitrate, Vitamin A Supplement, Pyridoxine Hydrochloride, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Dried Bacillus coagulans Fermentation Product, Vitamin D3 Supplement, Folic Acid, Calcium Iodate, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.9,
+        "taurine_min": 0.1
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3806 kcal/kg, 449 kcal/cup"
+    },
+    {
+      "name": "Medal Series Baked & Coated Large Breed Adult Dry Dog Food - Chicken, Turkey, & Duck",
+      "brand": "Nulo",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/nulo-medalseries-baked-and-coated-large-breed-adult-dry-dog-food---chicken-turkey-and-duck-77478.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "MedalSeries",
+      "life_stage": "adult",
+      "breed_size": "Large",
+      "source_id": "5339370",
+      "images": [
+        "/products/nulo/nulo-food-medal-series-baked-coated-large-breed-adult-dry-dog-food-chicken-turkey-duck.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0811939028672",
+          "sku": "5339370"
+        }
+      ],
+      "ingredients_raw": "Deboned Chicken, Chicken Meal, Sweet Potatoes, Chickpeas, Lentils, Turkey Meal, Chicken Fat (preserved with Mixed Tocopherols & Citric Acid), Deboned Turkey, Deboned Duck, Ground Flaxseed, Natural Flavor, Ground Miscanthus Grass, Chicken Bone Broth, Yeast Culture, Potassium Chloride, Dried Pumpkin, Dried Carrots, Salt, Choline Chloride, Dried Chicory Root, DL–Methionine, Dried Blueberries, Dried Apples, Salmon Oil, Coconut Oil, Taurine, L–Carnitine, Zinc Proteinate, Iron Proteinate, Glucosamine Hydrochloride, Chondroitin Sulfate, Calcium Carbonate, Vitamin E Supplement, L–Ascorbyl–2–Polyphosphate (source of Vitamin C), Selenium Yeast, Turmeric, Copper Proteinate, Manganese Proteinate, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Thiamine Mononitrate, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Dried Bacillus coagulans Fermentation Product, Calcium Iodate",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.9,
+        "taurine_min": 0.1,
+        "omega_6_min": 3.25,
+        "omega_3_min": 0.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3550 kcal/kg, 419 kcal/cup"
+    },
+    {
+      "name": "Medal Series Baked & Coated Large Breed Adult Dry Dog Food - Whitefish, Chicken & Turkey",
+      "brand": "Nulo",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/nulo-medalseries-baked-and-coated-large-breed-adult-dry-dog-food---whitefish-chicken-and-turkey-77479.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "MedalSeries",
+      "life_stage": "adult",
+      "breed_size": "Large",
+      "source_id": "5339371",
+      "images": [
+        "/products/nulo/nulo-food-medal-series-baked-coated-large-breed-adult-dry-dog-food-whitefish-chicken-turke.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0811939028665",
+          "sku": "5339371"
+        }
+      ],
+      "ingredients_raw": "Deboned Whitefish, Chicken Meal, Sweet Potatoes, Deboned Chicken, Chickpeas, Lentils, Chicken Fat (preserved with Mixed Tocopherols & Citric Acid), Turkey Meal, Deboned Turkey, Natural Flavor, Ground Miscanthus Grass, Chicken Bone Broth, Ground Flaxseed, Yeast Culture, Potassium Chloride, Dried Pumpkin, Dried Carrots, Salt, Choline Chloride, DL–Methionine, Dried Blueberries, Dried Apples, Salmon Oil, Coconut Oil, Dried Chicory Root, Taurine, L–Carnitine, Zinc Proteinate, Iron Proteinate, Glucosamine Hydrochloride, Chondroitin Sulfate, Calcium Carbonate, Vitamin E Supplement, L–Ascorbyl–2–Polyphosphate (source of Vitamin C), Selenium Yeast, Turmeric, Copper Proteinate, Manganese Proteinate, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Thiamine Mononitrate, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Dried Bacillus coagulans Fermentation Product, Calcium Iod",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.9,
+        "taurine_min": 0.1,
+        "omega_6_min": 3.25,
+        "omega_3_min": 0.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3550 kcal/kg, 419 kcal/cup"
+    },
+    {
+      "name": "Medal Series Baked & Coated Puppy Dry Dog Food - Turkey, Chicken & Duck",
+      "brand": "Nulo",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/nulo-medalseries-baked-and-coated-puppy-dry-dog-food---turkey-chicken-and-duck-70436.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "MedalSeries",
+      "life_stage": "puppy",
+      "source_id": "5326102",
+      "images": [
+        "/products/nulo/nulo-food-medal-series-baked-coated-puppy-dry-dog-food-turkey-chicken-duck.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0811939028061",
+          "sku": "5326102"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0811939028085",
+          "sku": "5326103"
+        }
+      ],
+      "ingredients_raw": "Deboned Turkey, Turkey Meal, Sweet Potatoes, Chickpeas, Lentils, Chicken Meal, Chicken Fat (preserved with Mixed Tocopherols & Citric Acid), Ground Flaxseed, Deboned Chicken, Deboned Duck, Natural Flavor, Ground Miscanthus Grass, Chicken Bone Broth, Yeast Culture, Potassium Chloride, Salmon Oil, Choline Chloride, Salt, DL–Methionine, Coconut Oil, Dried Blueberries, Dried Pumpkin, Dried Apples, Dried Carrots, Dried Chicory Root, Taurine, Zinc Proteinate, Iron Proteinate, Calcium Carbonate, L–Ascorbyl–2–Polyphosphate (source of Vitamin C), Vitamin E Supplement, Niacin Supplement, Selenium Yeast, Turmeric, Copper Proteinate, Manganese Proteinate, Thiamine Mononitrate, Vitamin A Supplement, Pyridoxine Hydrochloride, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Dried Bacillus coagulans Fermentation Product, Vitamin D3 Supplement, Folic Acid, Calcium Iodate, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "taurine_min": 0.1
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3573 kcal/kg, 421 kcal/cup"
+    },
+    {
+      "name": "Medal Series Baked & Coated Small Breed All Life Stages Dry Dog Food - Chicken, Duck & Turkey",
+      "brand": "Nulo",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/nulo-medalseries-baked-and-coated-small-breed-all-life-stages-dry-dog-food---chicken-duck-and-turkey-69214.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "MedalSeries",
+      "life_stage": "all",
+      "breed_size": "Small",
+      "source_id": "5322763",
+      "images": [
+        "/products/nulo/nulo-food-medal-series-baked-coated-small-breed-all-life-stages-dry-dog-food-chicken-duck.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0811939027989",
+          "sku": "5322763"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0811939028009",
+          "sku": "5322842"
+        }
+      ],
+      "ingredients_raw": "Deboned Chicken, Chicken Meal, Chickpeas, Lentils, Sweet Potatoes, Chicken Fat (preserved with Mixed Tocopherols & Citric Acid), Ground Miscanthus Grass, Deboned Duck, Ground Flaxseed, Deboned Turkey, Natural Flavor, Chicken Bone Broth, Yeast Culture, Potassium Chloride, Choline Chloride, Salt, Salmon Oil, DL–Methionine, Coconut Oil, Dried Blueberries, Dried Pumpkin, Dried Apples, Dried Carrots, Dried Chicory Root, Taurine, L–Carnitine, Zinc Proteinate, Iron Proteinate, Calcium Carbonate, L–Ascorbyl–2–Polyphosphate (source of Vitamin C), Vitamin E Supplement, Niacin Supplement, Selenium Yeast, Turmeric, Copper Proteinate, Manganese Proteinate, Thiamine Mononitrate, Vitamin A Supplement, Pyridoxine Hydrochloride, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Dried Bacillus coagulans Fermentation Product, Vitamin D3 Supplement, Folic Acid, Calcium Iodate, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 31.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "taurine_min": 0.1
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3745 kcal/kg, 442 kcal/cup"
+    },
+    {
+      "name": "Medal Series Large Breed Adult Dog Dry Food - Grain Free, Turkey & Peas",
+      "brand": "Nulo",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/nulo-medalseries-large-breed-adult-dog-dry-food---grain-free-turkey-and-peas-22920.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "MedalSeries",
+      "life_stage": "adult",
+      "breed_size": "Large",
+      "source_id": "5212686",
+      "images": [
+        "/products/nulo/nulo-food-medal-series-large-breed-adult-dog-dry-food-grain-free-turkey-peas.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0856161002786",
+          "sku": "5212686"
+        }
+      ],
+      "ingredients_raw": "Deboned Turkey, Chicken Meal, Menhaden Fish Meal, Whole Peas, Sweet Potato, Chicken Fat (Preserved with Mixed Tocopherols and Citric Acid), Lentils, Pea Fiber, Deboned Trout, Natural Turkey Flavor, Yeast Culture, Dried Chicory Root, Potassium Chloride, Dried Tomatoes, Dried Carrots, Dried Apples, Dried Blueberries, Calcium Carbonate, L-Carnitine, Salt, Glucosamine, Chondroitin Sulfate, Fennel, Marigold, Dandelion, Chamomile, Zinc Proteinate, Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (Source of Vitamin C), Iron Proteinate, Niacin, Copper Proteinate, Choline Chloride, Thiamine Mononitrate (Source of Vitamin B1), Calcium Pantothenate, Vitamin A Supplement, Manganous Oxide, Pyridoxine Hydrochloride (Source of Vitamin B6), Sodium Selenite, Riboflavin, Vitamin D3 Supplement, Biotin, Bacillus Coagulans, Vitamin B12 Supplement, Calcium Iodate, Folic Acid and Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 32.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.9,
+        "omega_3_min": 0.5,
+        "omega_6_min": 2.7
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3523 kcal/kg, 416 kcal/cup"
+    },
+    {
+      "name": "Medal Series Large Breed Puppy Dry Dog Food - Salmon",
+      "brand": "Nulo",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/nulo-medalseries-large-breed-puppy-dry-dog-food---salmon-61698.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "MedalSeries",
+      "life_stage": "puppy",
+      "breed_size": "Large",
+      "source_id": "5305711",
+      "images": [
+        "/products/nulo/nulo-food-medal-series-large-breed-puppy-dry-dog-food-salmon.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0811939026593",
+          "sku": "5305711"
+        }
+      ],
+      "ingredients_raw": "Deboned Salmon, Chicken Meal, Turkey Meal, Sweet Potato, Lentils, Whole Peas, Chicken Fat (preserved with Mixed Tocopherols & Citric Acid), Ground Miscanthus Grass, Deboned Chicken, Natural Flavor, Dried Carrots, Dried Apples, Potassium Chloride, Chicken Cartilage, Salt, Salmon Oil, Yeast Culture, DL-Methionine, Monosodium Phosphate, Choline Chloride, Taurine, Dried Blueberries, Dried Spinach, Dried Tomatoes, Dried Egg Product, Calcium Carbonate, Vitamin E Supplement, Dried Chicory Root, Sweet Fennel, Dandelion, Chamomile, Zinc Proteinate, Zinc Sulfate, Iron Proteinate, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Ferrous Sulfate, Copper Proteinate, Copper Sulfate, Vitamin A Supplement, Manganese Proteinate, Thiamine Mononitrate, Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Manganous Oxide, Biotin, Dried Bacillus coagulans Fermentation Product, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Sodium Selenite, Calcium Iodate, Rosemary Extract",
+      "guaranteed_analysis": {
+        "calcium_min": 1.2,
+        "crude_protein_min": 28.0,
+        "crude_fat_min": 13.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.15,
+        "phosphorus_min": 1.0,
+        "taurine_min": 0.2,
+        "omega_6_min": 2.0,
+        "omega_3_min": 0.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3429 kcal/kg, 405 kcal/cup"
+    },
+    {
+      "name": "Medal Series Puppy Dry Dog Food - Turkey",
+      "brand": "Nulo",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/nulo-medalseries-puppy-dry-dog-food---turkey-65004.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "MedalSeries",
+      "life_stage": "puppy",
+      "source_id": "5300300",
+      "images": [
+        "/products/nulo/nulo-food-medal-series-puppy-dry-dog-food-turkey.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0811939025237",
+          "sku": "5300300"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0811939025336",
+          "sku": "5300302"
+        }
+      ],
+      "ingredients_raw": "Deboned Turkey, Turkey Meal, Chicken Meal, Oats, Barley, Millet, Chicken Fat (preserved with Mixed Tocopherols & Citric Acid), Ground Flaxseed, Guinea Fowl, Spelt, Ground Miscanthus Grass, Natural Flavor, Dried Egg Product, Dried Chicory Root, Dried Cherries, Dried Blueberries, Chia Seed, Dried Pumpkin, Dried Apples, Dried Spinach, Choline Chloride, Potassium Chloride, Salmon Oil, Taurine, Salt, Coconut Oil, Yeast Culture, Turmeric, Calcium Carbonate, Zinc Proteinate, Vitamin E Supplement, Zinc Sulfate, L-Ascorbyl-2-Polyphosphate, Iron Proteinate, Niacin Supplement, Ferrous Sulfate, Copper Proteinate, Copper Sulfate, Vitamin A Supplement, Manganese Proteinate, Thiamine Mononitrate, Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Manganous Oxide, Biotin, Dried Bacillus coagulans Fermentation Product, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Sodium Selenite, Calcium Iodate, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "dha_min": 0.05,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "taurine_min": 0.1,
+        "omega_6_min": 3.2,
+        "omega_3_min": 1.3
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3614 kcal/kg, 426 kcal/cup"
+    },
+    {
+      "name": "Medal Series Senior Dry Dog Food - Chicken",
+      "brand": "Nulo",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/nulo-medalseries-senior-dry-dog-food---chicken-18308.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "MedalSeries",
+      "life_stage": "senior",
+      "source_id": "5212687",
+      "images": [
+        "/products/nulo/nulo-food-medal-series-senior-dry-dog-food-chicken.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0856161002793",
+          "sku": "5212687"
+        }
+      ],
+      "ingredients_raw": "Deboned Chicken, Turkey Meal, Menhaden Fish Meal, Whole Peas, Sweet Potato, Chicken Fat (Preserved with Mixed Tocopherols and Citric Acid), Lentils, Pea Fiber, Deboned Trout, Natural Chicken Flavor, Yeast Culture, Salmon Oil, Dried Chicory Root, Potassium Chloride, Dried Carrots, Dried Tomatoes, Dried Blueberries, Dried Apples, Calcium Carbonate, L-Carnitine, Salt, Glucosamine, Chondroitin Sulfate, Fennel, Dandelion, Marigold, Chamomile, Zinc Proteinate, Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (Source of Vitamin C), Iron Proteinate, Niacin, Copper Proteinate, Choline Chloride, Thiamine Mononitrate (Source of Vitamin B1), Calcium Pantothenate, Vitamin A Supplement, Manganous Oxide, Pyridoxine Hydrochloride (Source of Vitamin B6), Sodium Selenite, Riboflavin, Vitamin D3 Supplement, Biotin, Bacillus Coagulans, Vitamin B12 Supplement, Calcium Iodate, Folic Acid and Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.9,
+        "omega_3_min": 0.5,
+        "omega_6_min": 2.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "411 kcal/cup"
+    },
+    {
+      "name": "Medal Series Small Breed Adult Dry Dog Food - Turkey",
+      "brand": "Nulo",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/nulo-medalseries-small-breed-adult-dry-dog-food---turkey-47550.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "MedalSeries",
+      "life_stage": "adult",
+      "breed_size": "Small",
+      "source_id": "5274934",
+      "images": [
+        "/products/nulo/nulo-food-medal-series-small-breed-adult-dry-dog-food-turkey.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0811939021604",
+          "sku": "5274934"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0811939021611",
+          "sku": "5275265"
+        }
+      ],
+      "ingredients_raw": "Deboned Turkey, Turkey Meal, Salmon Meal, Sweet Potatoes, Chickpeas, Chicken Fat (preserved with Mixed Tocopherols & Citric Acid), Green Lentils, Miscanthus Grass, Lamb Meal, Ground Flaxseed, Natural Turkey Flavor, Potassium Chloride, Dried Chicory Root, Salt, Dried Apples, Dried Carrots, Dried Tomatoes, Calcium Carbonate, L-Carnitine, Vitamin E Supplement, Dried Blueberries, Sweet Fennel, Dandelion, Chamomile, Zinc Methionine, Zinc Sulfate, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Iron Proteinate, Niacin Supplement, Ferrous Sulfate, Choline Chloride, Copper Proteinate, Copper Sulfate, Vitamin A Supplement, Manganese Proteinate, Thiamine Mononitrate, Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Manganous Oxide, Biotin, Dried Bacillus coagulans Fermentation Product, Vitamin B12 Supplement, Vitamin D3Supplement, Folic Acid, Sodium Selenite, Calcium Iodate, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 31.5,
+        "crude_fat_min": 18.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "omega_6_min": 3.5,
+        "omega_3_min": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3736 kcal/kg"
+    },
+    {
+      "name": "Medal Series Small Breed All Life Stages Dry Dog Food - Chicken",
+      "brand": "Nulo",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/nulo-medalseries-small-breed-all-life-stages-dry-dog-food---chicken-69298.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "MedalSeries",
+      "life_stage": "all",
+      "breed_size": "Small",
+      "source_id": "5322865",
+      "images": [
+        "/products/nulo/nulo-food-medal-series-small-breed-all-life-stages-dry-dog-food-chicken.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0811939023912",
+          "sku": "5322865"
+        }
+      ],
+      "ingredients_raw": "Deboned Chicken, Chicken Meal, Turkey Meal, Sweet Potatoes, Chickpeas, Lentils, Chicken Fat (preserved with Mixed Tocopherols & Citric Acid), Ground Miscanthus Grass, Deboned Trout, Natural Flavor, Dried Chicory Root, Yeast Culture, Salmon Oil, DL-Methionine, Choline Chloride, Potassium Chloride, Salt, Dried Apples, Dried Carrots, Dried Blueberries, Dried Tomatoes, Taurine, Calcium Carbonate, L-Carnitine, Vitamin E Supplement, Chamomile, Dandelion, Sweet Fennel, Zinc Proteinate, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Zinc Sulfate, Iron Proteinate, Niacin Supplement, Ferrous Sulfate, Copper Proteinate, Copper Sulfate, Vitamin A Supplement, Manganese Proteinate, Thiamine Mononitrate, Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Manganous Oxide, Biotin, Dried Bacillus coagulans Fermentation Product, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Sodium Selenite, Calcium Iodate, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 32.0,
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.05,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "taurine_min": 0.1,
+        "omega_6_min": 2.25,
+        "omega_3_min": 0.3
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3605 kcal/kg, 426 kcal/cup"
+    },
+    {
+      "name": "Medal Series Small Breed All Life Stages Dry Dog Food - Salmon",
+      "brand": "Nulo",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/nulo-medalseries-small-breed-all-life-stages-dry-dog-food---salmon-58823.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "MedalSeries",
+      "life_stage": "all",
+      "breed_size": "Small",
+      "source_id": "5300083",
+      "images": [
+        "/products/nulo/nulo-food-medal-series-small-breed-all-life-stages-dry-dog-food-salmon.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0811939025268",
+          "sku": "5300083"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0811939025275",
+          "sku": "5300084"
+        }
+      ],
+      "ingredients_raw": "Deboned Salmon, Turkey Meal, Chicken Meal, Oats, Barley, Millet, Chicken Fat (preserved with Mixed Tocopherols & Citric Acid), Ground Flaxseed, Haddock, Acadian Redfish, Spelt, Ground Miscanthus Grass, Natural Flavor, L-Carnitine, Dried Chicory Root, Dried Cherries, Dried Blueberries, Chia Seed, Dried Pumpkin, Dried Apples, Dried Spinach, Taurine, Salt, Potassium Chloride, Coconut Oil, Yeast Culture, Turmeric, Choline Chloride, Calcium Carbonate, Zinc Proteinate, Vitamin E Supplement, Zinc Sulfate, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Iron Proteinate, Niacin Supplement, Ferrous Sulfate, Copper Proteinate, Copper Sulfate, Vitamin A Supplement, Manganese Proteinate, Thiamine Mononitrate, Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Manganous Oxide, Biotin, Dried Bacillus coagulans Fermentation Product, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Sodium Selenite, Calcium Iodate, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "taurine_min": 0.1,
+        "omega_6_min": 3.25,
+        "omega_3_min": 1.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3616 kcal/kg, 427 kcal/cup"
+    },
+    {
+      "name": "Medal Series Weight Management Adult Dry Dog Food - Low Fat, Chicken",
+      "brand": "Nulo",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/nulo-medalseries-weight-management-adult-dry-dog-food---low-fat-chicken-49061.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "MedalSeries",
+      "life_stage": "adult",
+      "source_id": "5280874",
+      "images": [
+        "/products/nulo/nulo-food-medal-series-weight-management-adult-dry-dog-food-low-fat-chicken.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0811939022441",
+          "sku": "5280874"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0811939022427",
+          "sku": "5280965"
+        }
+      ],
+      "ingredients_raw": "Deboned Chicken, Chicken Meal, Turkey Meal, Dried Sweet Potatoes, Whole Peas, Chickpeas, Deboned Cod, Miscanthus Grass, Natural Chicken Flavor, Yeast Culture, Chicken Fat (preserved with Mixed Tocopherols & Citric Acid), Potassium Chloride, Dried Chicory Root, Salt, Choline Chloride, Dried Apples, Dried Blueberries, Dried Carrots, Dried Tomatoes, Calcium Carbonate, L-Carnitine, Vitamin E Supplement, Zinc Proteinate, Zinc Sulfate, Sweet Fennel, Dandelion, Chamomile, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Iron Proteinate, Niacin Supplement, Ferrous Sulfate, Copper Proteinate, Copper Sulfate, Vitamin A Supplement, Manganese Proteinate, Thiamine Mononitrate, Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Manganous Oxide, Biotin, Dried Bacillus coagulans Fermentation Product, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Sodium Selenite, Calcium Iodate, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 7.0,
+        "crude_fat_max": 9.0,
+        "crude_fiber_max": 6.5,
+        "moisture_max": 10.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.9,
+        "omega_6_min": 1.4,
+        "omega_3_min": 0.3
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3148 kcal/kg, 371 kcal/cup"
+    },
+    {
+      "name": "Raw+ Adult Dog Food - Freeze Dried, Grain Free, Chicken, Whitefish & Salmon",
+      "brand": "Nulo",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/nulo-raw-adult-dog-food---freeze-dried-grain-free-chicken-whitefish-and-salmon-84664.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "source_id": "5350765",
+      "images": [
+        "/products/nulo/nulo-food-raw-adult-dog-food-freeze-dried-grain-free-chicken-whitefish-salmon.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0810125290008",
+          "sku": "5350765"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0810125290015",
+          "sku": "5350767"
+        }
+      ],
+      "ingredients_raw": "Deboned Chicken, Deboned Whitefish, Sweet Potatoes, Yeast Culture, Chickpeas, Deboned Salmon, Chicken Fat (preserved with Mixed Tocopherols & Citric Acid), Flaxseed, Fenugreek, Dried Chicken Bone Broth, Natural Flavor, Salmon Oil, Ground Miscanthus Grass, Chicken Gizzard, Chicken Liver, Potassium Chloride, Dried Cranberries, Salt, Dried Egg, Dried Blueberries, Dried Beet Root, Dried Bacillus coagulans Fermentation Product, Choline Chloride, Dried Chicory Root, Iron Sulfate, Zinc Sulfate, Vitamin E Supplement, Niacin Supplement, Copper Sulfate, d-Calcium Pantothenate, Manganous Oxide, Sodium Selenite, Riboflavin Supplement, Thiamine Mononitrate, Pyridoxine Hydrochloride, Calcium Iodate, Vitamin B12 Supplement, Vitamin D3 Supplement, Vitamin A Supplement, Folic Acid, Biotin, Mixed Tocopherols (as preservative), Citric Acid (as preservative), Rosemary Extract, Green Tea Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 20.0,
+        "crude_fiber_max": 6.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.9,
+        "taurine_min": 0.2,
+        "omega_6_min": 2.5,
+        "omega_3_min": 0.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4184 kcal/kg, 293 kcal/cup"
+    },
+    {
+      "name": "Raw+ Adult Dog Food - Freeze Dried, Grain Free, Lamb Recipe",
+      "brand": "Nulo",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/nulo-raw-adult-dog-food---freeze-dried-grain-free-lamb-recipe-84663.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "source_id": "5350766",
+      "images": [
+        "/products/nulo/nulo-food-raw-adult-dog-food-freeze-dried-grain-free-lamb-recipe.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0810125290022",
+          "sku": "5350766"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0810125290039",
+          "sku": "5350768"
+        }
+      ],
+      "ingredients_raw": "Deboned Lamb, Sweet Potato, Yeast Culture, Chickpeas, Lamb Liver, Beef Kidney, Beef Liver, Fenugreek, Beef Heart, Ground Flaxseed, Dried Chicken Bone Broth, Natural Flavor, Potassium Chloride, Salmon Oil, Ground Miscanthus Grass, Monocalcium Phosphate, Ground Beef Bone, Deboned Beef, Dried Cranberries, Dried Egg, Salt, Dried Blueberries, Dried Beet Root, Dried Bacillus coagulans Fermentation Product, Choline Chloride, Dried Chicory Root, Iron Sulfate, Zinc Sulfate, Vitamin E Supplement, Niacin Supplement, Copper Sulfate, d-Calcium Pantothenate, Manganous Oxide, Sodium Selenite, Riboflavin Supplement, Thiamine Mononitrate, Pyridoxine Hydrochloride, Calcium Iodate, Vitamin B12 Supplement, Vitamin D3 Supplement, Vitamin A Supplement, Folic Acid, Biotin, Mixed Tocopherols (as preservative), Citric Acid (as preservative), Rosemary Extract, Green Tea Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 20.0,
+        "crude_fiber_max": 6.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.9,
+        "taurine_min": 0.2,
+        "omega_6_min": 1.75,
+        "omega_3_min": 0.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4025 kcal/kg, 282 kcal/cup"
+    },
+    {
+      "name": "Raw Medley Adult Dog Food - Kibble Plus Freeze Dried Pieces, Chicken, Oats & Turkey",
+      "brand": "Nulo",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/nulo-raw-medley-adult-dog-food---kibble-plus-freeze-dried-pieces-chicken-oats-and-turkey-81938.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "source_id": "5350640",
+      "images": [
+        "/products/nulo/nulo-food-raw-medley-adult-dog-food-kibble-plus-freeze-dried-pieces-chicken-oats-turkey.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0811939029020",
+          "sku": "5350640"
+        }
+      ],
+      "ingredients_raw": "Deboned Chicken, Chicken meal, Turkey Meal, Sweet Potato, Oats, Lentils, Chickpeas, Ground Miscanthus Grass, Ground Flaxseed, Chicken Fat (preserved with Mixed Tocopherols & Citric Acid), Deboned Turkey, Deboned Duck, Natural Flavor, Freeze-Dried Chicken, Freeze-Dried Chicken Heart, Salt, Yeast Culture, Freeze-Dried Chicken Liver, Potassium Chloride, Choline Chloride,DL-Methionine, Freeze-Dried Pumpkin, Freeze-Dried Chicken Necks, Freeze-Dried Kale, Freeze-Dried Broccoli, Freeze-Dried Blueberries, Taurine, Dried Chicory Root, Zinc Proteinate, Iron Proteinate, Vitamin E Supplement, Calcium Carbonate, Selenium Yeast, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Copper Proteinate, Manganese Proteinate, Turmeric, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Thiamine Mononitrate, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Dried Bacillus coagulans Fermentation Product, Calcium Iodate, Folic Acid, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.9,
+        "taurine_min": 0.1,
+        "omega_6_min": 2.75,
+        "omega_3_min": 0.85
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3505 kcal/kg, 403 kcal/cup"
+    },
+    {
+      "name": "Raw Medley Adult Dog Food - Kibble Plus Freeze Dried Pieces, Salmon, Sweet Potato & Turkey",
+      "brand": "Nulo",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/nulo-raw-medley-adult-dog-food---kibble-plus-freeze-dried-pieces-salmon-sweet-potato-and-turkey-81939.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "source_id": "5350638",
+      "images": [
+        "/products/nulo/nulo-food-raw-medley-adult-dog-food-kibble-plus-freeze-dried-pieces-salmon-sweet-potato-tu.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0811939029037",
+          "sku": "5350638"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0811939029044",
+          "sku": "5350641"
+        }
+      ],
+      "ingredients_raw": "Deboned Salmon, Sweet Potato, Chicken Meal, Turkey Meal, Oats, Chicken Fat (preserved with Mixed Tocopherols & Citric Acid), Chickpeas, Lentils, Ground Miscanthus Grass, Ground Flaxseed, Deboned Chicken, Deboned Turkey, Natural Flavor, Freeze-Dried Chicken, Freeze-Dried Chicken Heart, Yeast Culture, Freeze-Dried Chicken Liver, Potassium Chloride, Choline Chloride, Salt, DL-Methionine, Freeze-Dried Pumpkin, Freeze-Dried Chicken Necks, Freeze-Dried Kale, Freeze-Dried Broccoli, Freeze-Dried Blueberries, Taurine, Dried Chicory Root, Zinc Proteinate, Iron Proteinate, Vitamin E Supplement, Calcium Carbonate, Selenium Yeast, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Copper Proteinate, Manganese Proteinate, Turmeric, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Thiamine Mononitrate, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Dried Bacillus coagulans Fermentation Product, Calcium Iodate, Folic Acid, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.9,
+        "taurine_min": 0.1,
+        "omega_6_min": 3.0,
+        "omega_3_min": 1.25
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3625 kcal/kg, 417 kcal/cup"
+    },
+    {
+      "name": "Raw Medley Small Breed Adult Dog Food - Kibble Plus Freeze Dried, Turkey, Sweet Potato & Duck",
+      "brand": "Nulo",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/nulo-raw-medley-small-breed-adult-dog-food---kibble-plus-freeze-dried-turkey-sweet-potato-and-duck-81817.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "breed_size": "Small",
+      "source_id": "5350636",
+      "images": [
+        "/products/nulo/nulo-food-raw-medley-small-breed-adult-dog-food-kibble-plus-freeze-dried-turkey-sweet-pota.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0811939029006",
+          "sku": "5350636"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0811939029013",
+          "sku": "5350639"
+        }
+      ],
+      "ingredients_raw": "Deboned Turkey, Turkey Meal, Chicken Meal, Sweet Potato, Oats, Chickpeas, Lentils, Chicken Fat (preserved with Mixed Tocopherols & Citric Acid), Ground Miscanthus Grass, Ground Flaxseed, Deboned Duck, Deboned Chicken, Natural Flavor, Freeze-Dried Chicken, Freeze-Dried Chicken Heart, Yeast Culture, Freeze-Dried Chicken Liver, Potassium Chloride, Choline Chloride, Salt, DL-Methionine, Dried Chicory Root, Freeze-Dried Pumpkin, Freeze-Dried Chicken Necks, Freeze-Dried Kale, Freeze-Dried Broccoli, Freeze-Dried Blueberries, Salmon Oil, Taurine, L-Carnitine, Zinc Proteinate, Iron Proteinate, Vitamin E Supplement, Calcium Carbonate, Selenium Yeast, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Copper Proteinate, Manganese Proteinate, Turmeric, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Thiamine Mononitrate, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Dried Bacillus coagulans Fermentation Product, Calcium Iodate, Folic Acid, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.05,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "taurine_min": 0.1,
+        "omega_6_min": 3.0,
+        "omega_3_min": 0.85
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3571 kcal/kg, 410 kcal/cup"
+    },
+    {
+      "name": "Freeze Dried Raw Dog Food - Grain Free",
+      "brand": "Nulo",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/nulo-freeze-dried-raw-dog-food---grain-free-8-oz-81950.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "source_id": "5351568",
+      "images": [
+        "/products/nulo/nulo-supplement-freeze-dried-raw-dog-food-grain-free.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "8 Oz",
+          "upc": "0810125290671",
+          "sku": "5351568"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "8 Oz",
+          "upc": "0810125290688",
+          "sku": "5351569"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "8 Oz",
+          "upc": "0810125290701",
+          "sku": "5351570"
+        }
+      ],
+      "ingredients_raw": "Lamb, Ground Lamb Bone, Dried Egg, Lamb Liver, Lamb Kidney, Raspberries, Sweet Potatoes, Butternut Squash, Apple Cider Vinegar, Salt, Broccoli, Apples, Green Beans, Blueberries, Carrots, Kale, Spinach, Inulin, Ground Flaxseed, Salmon Oil, Dried Bacillus coagulans Fermentation Product, Dried Kelp, Mixed Tocopherols (as preservative), Zinc Proteinate, Iron Proteinate, Parsley, Potassium Chloride, Copper Proteinate, Manganese Proteinate, Vitamin E Supplement, Sodium Selenite, Vitamin A Supplement, Sodium Selenite, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Calcium Iodate, Vitamin D3 Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 35.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 5.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "5207 kcal/kg, 200 kcal/cup"
+    },
+    {
+      "name": "Medal Series All Life Stage Wet Dog Food Topper - Limited Ingredient",
+      "brand": "Nulo",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/nulo-medalseries-all-life-stage-wet-dog-food-topper---limited-ingredient-28-oz-50203.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "sub_brand": "MedalSeries",
+      "life_stage": "all",
+      "source_id": "5280971",
+      "images": [
+        "/products/nulo/nulo-supplement-medal-series-all-life-stage-wet-dog-food-topper-limited-ingredient.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "2.8 Oz",
+          "upc": "0811939021925",
+          "sku": "5280971"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "2.8 Oz",
+          "upc": "0811939021901",
+          "sku": "5280972"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "2.8 Oz",
+          "upc": "0811939021918",
+          "sku": "5280973"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "2.8 Oz",
+          "upc": "0811939021932",
+          "sku": "5280974"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "2.8 Oz",
+          "upc": "0811939021949",
+          "sku": "5280987"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "2.8 Oz",
+          "upc": "0811939021956",
+          "sku": "5280988"
+        }
+      ],
+      "ingredients_raw": "Mackerel, Mackerel Broth, Chicken, Chicken Broth, Mussel",
+      "guaranteed_analysis": {
+        "crude_protein_min": 10.0,
+        "crude_fat_min": 1.0,
+        "crude_fiber_max": 0.5,
+        "moisture_max": 87.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "552 kcal/kg, 44 kcal/pouch"
+    }
+  ]
+}

@@ -1,0 +1,526 @@
+{
+  "brand": "Canidae",
+  "website_url": "https://www.petsmart.ca",
+  "scraped_at": "2026-03-10T02:48:17.014569+00:00",
+  "scraper_version": "0.1.0",
+  "stats": {
+    "product_count": 15,
+    "by_channel": {
+      "retail": 15
+    },
+    "by_type": {
+      "food": 13,
+      "supplement": 2
+    }
+  },
+  "products": [
+    {
+      "name": "All Life Stage Wet Dog Food - Pate",
+      "brand": "Canidae",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/canidae-all-life-stage-wet-dog-food---pate-13-oz-52934.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "life_stage": "all",
+      "source_id": "5288810",
+      "images": [
+        "/products/canidae/canidae-food-all-life-stage-wet-dog-food-pate.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "13 Oz",
+          "upc": "0640461012138",
+          "sku": "5288810"
+        }
+      ],
+      "ingredients_raw": "Lamb, Lamb Broth, Vegetable Broth, Lamb Liver, Ocean Fish, Brown Rice, Peas, Dried Egg Product, Sodium Tripolyphosphate, Calcium Carbonate, Canola Oil, Sunflower Oil, Potassium Chloride, Salt, Agar-agar, Choline Chloride, Salmon Oil (Preserved with Mixed Tocopherols), Dried Kelp, Dried Cranberries, Yucca Schidigera Extract, Vitamin E Supplement, Zinc Sulfate, Niacin Supplement, Ferrous Sulfate, Thiamine Mononitrate, Zinc Proteinate, Manganese Sulfate, Vitamin A Supplement, L-Ascorbyl-2-Polyphosphate, Iron Proteinate, d-Calcium Pantothenate, Copper Sulfate, Pyridoxine Hydrochloride, Manganese Proteinate, Potassium Iodide, Riboflavin Supplement, Copper Proteinate, Folic Acid, Vitamin D3 Supplement, Cobalt Proteinate, Sodium Selenite, Biotin, Vitamin B12 Supplement, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 6.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0,
+        "omega_6_min": 1.5,
+        "omega_3_min": 0.07
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1340 kcal/kg, 494 kcal/can"
+    },
+    {
+      "name": "All Life Stages Chunky Stew Toppers All Life Stage Wet Dog Food - Chicken & Vegetable",
+      "brand": "Canidae",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/canidae-all-life-stages-chunky-stew-toppers-all-life-stage-wet-dog-food---chicken-and-vegetable-87723.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "sub_brand": "All Life Stages",
+      "life_stage": "all",
+      "source_id": "5362677",
+      "images": [
+        "/products/canidae/canidae-supplement-all-life-stages-chunky-stew-toppers-all-life-stage-wet-dog-food-chicken-vegetabl.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0640461003242",
+          "sku": "5362677"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Bone Broth, Turkey Bone Broth, Chicken Liver, Barley, Natural Flavor, Carrots, Peas, Chicken Heart, Potato Starch, Dried Egg Product, Guar Gum, Ground Flaxseed, Salt, Sodium Phosphate, Rosemary, Taurine, Sage, Thyme",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 83.0,
+        "taurine_min": 0.05
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "841 kcal/kg, 303 kcal/can"
+    },
+    {
+      "name": "All Life Stages Chunky Stew Toppers All Life Stage Wet Dog Food - Multi-Protein & Vegetable",
+      "brand": "Canidae",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/canidae-all-life-stages-chunky-stew-toppers-all-life-stage-wet-dog-food---multi-protein-and-vegetable-87725.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "sub_brand": "All Life Stages",
+      "life_stage": "all",
+      "source_id": "5362679",
+      "images": [
+        "/products/canidae/canidae-supplement-all-life-stages-chunky-stew-toppers-all-life-stage-wet-dog-food-multi-protein-ve.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0640461003280",
+          "sku": "5362679"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Bone Broth, Turkey Bone Broth, Chicken Liver, Carrots, Turkey, Lamb, Salmon, Barley, Natural Flavor, Peas, Tomato Paste, Potato Starch, Dried Egg Product, Chicken Heart, Guar Gum, Ground Flaxseed, Salt, Sodium Phosphate, Rosemary, Taurine, Sage, Thyme",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 83.0,
+        "taurine_min": 0.05
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "918 kcal/kg, 330 kcal/can"
+    },
+    {
+      "name": "Pure All Life Stage Wet Dog Food - Limited Ingredient Diet, Pate",
+      "brand": "Canidae",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/canidae-pureandtrade-all-life-stage-wet-dog-food---limited-ingredient-diet-pate-13-oz-52932.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Pure",
+      "life_stage": "all",
+      "source_id": "5288815",
+      "images": [
+        "/products/canidae/canidae-food-pure-all-life-stage-wet-dog-food-limited-ingredient-diet-pate.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "13 Oz",
+          "upc": "0640461015450",
+          "sku": "5288815"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "13 Oz",
+          "upc": "0640461013272",
+          "sku": "5303927"
+        }
+      ],
+      "ingredients_raw": "Salmon, Fish Broth, Vegetable Stock, Sweet Potatoes, Pea Protein, Peas, Sunflower Oil, Salmon Oil (Preserved with Mixed Tocopherols), Tricalcium Phosphate, Agar-agar, Salt, Potassium Chloride, Sodium Tripolyphosphate, Choline Chloride, Calcium Carbonate, Zinc Sulfate, Vitamin E Supplement, Ferrous Sulfate, Zinc Proteinate, Niacin Supplement, Manganese Sulfate, Thiamine Mononitrate, Iron Proteinate, Copper Sulfate, Vitamin A Supplement, L-Ascorbyl-2-Polyphosphate, Manganese Proteinate, d-Calcium Pantothenate, Potassium Iodide, Pyridoxine Hydrochloride, Copper Proteinate, Riboflavin Supplement, Folic Acid, Cobalt Proteinate, Sodium Selenite, Biotin, Vitamin B12 Supplement, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1102 kcal/kg"
+    },
+    {
+      "name": "All Life Stages Dry Dog Food - Chicken & Ancient Grains",
+      "brand": "Canidae",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/canidae-all-life-stages-dry-dog-food---chicken-and-ancient-grains-86009.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "All Life Stages",
+      "life_stage": "all",
+      "source_id": "5358001",
+      "images": [
+        "/products/canidae/canidae-food-all-life-stages-dry-dog-food-chicken-ancient-grains.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0640461003068",
+          "sku": "5358001"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0640461003099",
+          "sku": "5358003"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Meal (Source Of Glucosamine And Chondroitin Sulfate), Oatmeal, Barley, Whole Grain Sorghum, Millet, Peas, Pork Meal (Source Of Glucosamine And Chondroitin Sulfate), Suncured Alfalfa Meal, Flaxseed, Dried Yeast, Chicken Fat, Salmon Oil, Natural Flavor, Threonine, Salt, Potassium Chloride, Zinc Proteinate, Zinc Sulfate, Ferrous Sulfate, Iron Proteinate, Choline Chloride, Taurine, Tryptophan, Mixed Tocopherols (A Preservative), Vitamin E Supplement, DL-Methionine, L-Ascorbyl-2-Polyphosphate, Niacin Supplement, Copper Sulfate, Vitamin A Supplement, Copper Proteinate, Sodium Selenite, Manganese Sulfate, Manganese Proteinate, Thiamine Mononitrate, D-Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Dried Lactobacillus Acidophilus Fermentation Product, Vitamin B12 Supplement, Calcium Iodate, Folic Acid, Vitamin D3 Supplement, Biotin, Dried Lactobacillus Casei Fermentation Product, Dried Lactobacillus Plantarum Fermentation Extract, Green Tea Extract, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 10.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3359 kcal/kg, 458 kcal/cup"
+    },
+    {
+      "name": "All Life Stages Dry Dog Food - Lamb & Ancient Grains",
+      "brand": "Canidae",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/canidae-all-life-stages-dry-dog-food---lamb-and-ancient-grains-86010.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "All Life Stages",
+      "life_stage": "all",
+      "source_id": "5358004",
+      "images": [
+        "/products/canidae/canidae-food-all-life-stages-dry-dog-food-lamb-ancient-grains.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0640461003105",
+          "sku": "5358004"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0640461003129",
+          "sku": "5358015"
+        }
+      ],
+      "ingredients_raw": "Lamb, Chicken Meal (Source Of Glucosamine And Chondroitin Sulfate), Oatmeal, Barley, Whole Grain Sorghum, Millet, Pork Meal (Source Of Glucosamine And Chondroitin Sulfate), Peas, Brown Rice, Suncured Alfalfa Meal, Flaxseed, Chicken Fat, Dried Yeast, Salmon Oil, Natural Flavor, Salt, Threonine, Potassium Chloride, Choline Chloride, Taurine, Tryptophan, Mixed Tocopherols (A Preservative), Vitamin E Supplement, Zinc Proteinate, Zinc Sulfate, L-Ascorbyl-2-Polyphosphate, Ferrous Sulfate, Iron Proteinate, Niacin Supplement, Copper Sulfate, Vitamin A Supplement, Copper Proteinate, Sodium Selenite, Manganese Sulfate, Manganese Proteinate, Thiamine Mononitrate, D-Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Dried Lactobacillus Acidophilus Fermentation Product, Vitamin B12 Supplement, Calcium Iodate, Folic Acid, Vitamin D3 Supplement, Biotin, Dried Lactobacillus Casei Fermentation Product, Dried Lactobacillus Plantarum Fermentation Product, Green Tea Extract, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 10.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3354 kcal/kg, 458 kcal/cup"
+    },
+    {
+      "name": "All Life Stages Dry Dog Food - Multi-Protein Recipe",
+      "brand": "Canidae",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/canidae-all-life-stages-dry-dog-food---multi-protein-recipe-86008.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "All Life Stages",
+      "life_stage": "all",
+      "source_id": "5357998",
+      "images": [
+        "/products/canidae/canidae-food-all-life-stages-dry-dog-food-multi-protein-recipe.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0640461003020",
+          "sku": "5357998"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0640461003051",
+          "sku": "5358000"
+        }
+      ],
+      "ingredients_raw": "Chicken, Oatmeal, Barley, Whole Grain Sorghum, Millet, Peas, Chicken Meal (Source Of Glucosamine And Chondroitin Sulfate), Flaxseed, Turkey Meal (Source Of Glucosamine And Chondroitin Sulfate), Lamb Meal (Source Of Glucosamine And Chondroitin Sulfate), Fish Meal (Source Of Glucosamine And Chondroitin Sulfate), Rice Bran, Chicken Fat, Dried Yeast, Salmon Oil, Natural Flavor, Threonine, Salt, Potassium Chloride, Choline Chloride, Taurine, Tryptophan, DL-Methionine, Vitamin E Supplement, Zinc Proteinate, Zinc Sulfate, Ferrous Sulfate, L-Ascorbyl-2-Polyphosphate, Iron Proteinate, Niacin Supplement, Mixed Tocopherols (A Preservative), Copper Sulfate, Vitamin A Supplement, Copper Proteinate, Sodium Selenite, Manganese Sulfate, Manganese Proteinate, Thiamine Mononitrate, D-Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Dried Lactobacillus Acidophilus Fermentation Product, Vitamin B12 Supplement, Calcium Iodate, Folic Acid, Vitamin D3 Supplement, Biotin, Dried Lactobacillus Casei Fermentation Product, Dried Lactobacillus Plantarum Fermentation Product, Green Tea Extract, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 10.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3392 kcal/kg, 463 kcal/cup"
+    },
+    {
+      "name": "All Life Stages Dry Dog Food - Salmon & Ancient Grains",
+      "brand": "Canidae",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/canidae-all-life-stages-dry-dog-food---salmon-and-ancient-grains-86011.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "All Life Stages",
+      "life_stage": "all",
+      "source_id": "5358016",
+      "images": [
+        "/products/canidae/canidae-food-all-life-stages-dry-dog-food-salmon-ancient-grains.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0640461003136",
+          "sku": "5358016"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0640461003150",
+          "sku": "5358017"
+        }
+      ],
+      "ingredients_raw": "Salmon, Chicken Meal (Source Of Glucosamine And Chondroitin Sulfate), Oatmeal, Barley, Whole Grain Sorghum, Millet, Brown Rice, White Rice, Peas, Pork Meal (Source Of Glucosamine And Chondroitin Sulfate), Dried Yeast, Suncured Alfalfa Meal, Flaxseed, Turkey Meal (Source Of Glucosamine And Chondroitin Sulfate), Chicken Fat, Natural Flavor, Salmon Oil, Dicalcium Phosphate, Rice Bran, Threonine, Salt, Potassium Chloride, Choline Chloride, Taurine, Vitamin E Supplement, Tryptophan, Mixed Tocopherols (A Preservative), L-Ascorbyl-2-Polyphosphate, Zinc Proteinate, Zinc Sulfate, Ferrous Sulfate, Iron Proteinate, Niacin Supplement, Vitamin A Supplement, Copper Sulfate, Copper Proteinate, Menadione Sodium Bisulfite Complex, Sodium Selenite, Thiamine Mononitrate, D-Calcium Pantothenate, Manganese Sulfate, Manganese Proteinate, Riboflavin Supplement, Pyridoxine Hydrochloride, Dried Lactobacillus Acidophilus Fermentation Product, Vitamin B12 Supplement, Calcium Iodate, Folic Acid, Biotin, Dried Lactobacillus Casei Fermentation Product, Dried Lactobacillus Plantarum Fermentation Product, Green Tea Extract, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 10.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3370 kcal/kg, 460 kcal/cup"
+    },
+    {
+      "name": "All Life Stages High Protein 30/20 All Life Stage Dry Dog Food - Multi-Protein",
+      "brand": "Canidae",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/canidae-all-life-stages-high-protein-3020-all-life-stage-dry-dog-food---multi-protein-87720.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "All Life Stages",
+      "life_stage": "all",
+      "source_id": "5362661",
+      "images": [
+        "/products/canidae/canidae-food-all-life-stages-high-protein-30-20-all-life-stage-dry-dog-food-multi-protein.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0640461003303",
+          "sku": "5362661"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0640461003327",
+          "sku": "5362662"
+        }
+      ],
+      "ingredients_raw": "Chicken, chicken meal (source of glucosamine and chondroitin sulfate), chicken fat, whole grain sorghum, millet, peas, pea protein, dried yeast, turkey meal (source of glucosamine and chondroitin sulfate), oatmeal, flaxseed, lamb meal (source of glucosamine and chondroitin sulfate), canola oil, fish meal (source of glucosamine and chondroitin sulfate), salmon oil, natural flavor, threonine, salt, potassium chloride, choline chloride, taurine, tryptophan, mixed tocopherols (a preservative), potassium chloride, vitamin E supplement, L-ascorbyl-2-polyphosphate, zinc proteinate, zinc sulfate, ferrous sulfate, iron proteinate, niacin supplement, copper sulfate, copper proteinate, vitamin A supplement, sodium selenite, manganese sulfate, thiamine mononitrate,manganese proteinate, d-calcium pantothenate, riboflavin supplement, pyridoxine hydrochloride, dried Lactobacillus acidophilus fermentation product, vitamin B12 supplement, vitamin A supplement, calcium iodate, folic acid, vitamin D3 supplement, biotin, dried Lactobacillus casei fermentation product, dried Lactobacillus plantarum fermentation product, green tea extract, rosemary extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 20.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "omega_6_min": 3.5,
+        "omega_3_min": 0.85,
+        "taurine_min": 0.12
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3924 kcal/kg, 565 kcal/cup"
+    },
+    {
+      "name": "All Life Stages High Protein 30/20 All Life Stage Dry Dog Food - Salmon & Ancient Grains",
+      "brand": "Canidae",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/canidae-all-life-stages-high-protein-3020-all-life-stage-dry-dog-food---salmon-and-ancient-grains-87721.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "All Life Stages",
+      "life_stage": "all",
+      "source_id": "5362663",
+      "images": [
+        "/products/canidae/canidae-food-all-life-stages-high-protein-30-20-all-life-stage-dry-dog-food-salmon-ancient-gr.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0640461003334",
+          "sku": "5362663"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0640461003358",
+          "sku": "5362664"
+        }
+      ],
+      "ingredients_raw": "Salmon, turkey meal (source of glucosamine and chondroitin sulfate), chicken meal (source of glucosamine and chondroitin sulfate), chicken fat, whole grain sorghum, millet, pea protein, dried yeast, peas, oatmeal, flaxseed, canola oil, pork meal (source of glucosamine and chondroitin sulfate), suncured alfalfa meal, salmon oil, natural flavor, threonine, salt, choline chloride, potassium chloride, taurine, vitamin E supplement, tryptophan, mixed tocopherols (a preservative), potassium chloride, L-ascorbyl-2-polyphosphate, zinc proteinate, zinc sulfate, ferrous sulfate, iron proteinate, niacin supplement, copper sulfate, vitamin A supplement, copper proteinate, menadione sodium bisulfite complex, sodium selenite, thiamine mononitrate, d-calcium pantothenate, manganese sulfate, manganese proteinate, riboflavin supplement, pyridoxine hydrochloride, dried Lactobacillus acidophilus fermentation product, vitamin B12 supplement, calcium iodate, folic acid, biotin, dried Lactobacillus casei fermentation product, dried Lactobacillus plantarum fermentation product, green tea extract, rosemary extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 20.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "omega_6_min": 3.5,
+        "omega_3_min": 0.85,
+        "taurine_min": 0.12
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3914 kcal/kg, 564 kcal/cup"
+    },
+    {
+      "name": "Pure Farm To Bowl Adult Dog Food - Pasture-Raised Lamb & Brown Rice Recipe",
+      "brand": "Canidae",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/canidae-pure-farm-to-bowl-adult-dog-food---pasture-raised-lamb-and-brown-rice-recipe-4-lbs-57819.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pure",
+      "life_stage": "adult",
+      "source_id": "5299242",
+      "images": [
+        "/products/canidae/canidae-food-pure-farm-to-bowl-adult-dog-food-pasture-raised-lamb-brown-rice-recipe.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0640461019595",
+          "sku": "5299242"
+        }
+      ],
+      "ingredients_raw": "Lamb, Turkey Meal (Source of Glucosamine and Chondroitin Sulfate), Brown Rice, Whole Grain Sorghum, Oatmeal, Lamb Meal (Source of Glucosamine and Chondroitin Sulfate), Canola Oil, Suncured Alfalfa Meal, Natural Flavor, Potassium Chloride, Salt, Choline Chloride, Taurine, Mixed Tocopherols (Preservative), Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate, Zinc Proteinate, Zinc Sulfate, Ferrous Sulfate, Iron Proteinate, Niacin Supplement, Copper Sulfate, Vitamin A Supplement, Copper Proteinate, Thiamine Mononitrate, Sodium Selenite, d-Calcium Pantothenate, Manganese Sulfate, Manganese Proteinate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Calcium Iodate, Dried Bacillus amyloliquefaciens Fermentation Product, Folic Acid, Vitamin D3 Supplement, Biotin, Green Tea Extract, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.5,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "taurine_min": 0.1,
+        "omega_3_min": 0.6,
+        "omega_6_min": 2.3
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3629 kcal/kg, 523 kcal/cup"
+    },
+    {
+      "name": "Pure Farm to Bowl Adult Dog Food - Wild-Caught Salmon & Barley Recipe",
+      "brand": "Canidae",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/canidae-pure-farm-to-bowl-adult-dog-food---wild-caught-salmon-and-barley-recipe-22-lbs-78512.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pure",
+      "life_stage": "adult",
+      "source_id": "5344564",
+      "images": [
+        "/products/canidae/canidae-food-pure-farm-to-bowl-adult-dog-food-wild-caught-salmon-barley-recipe.jpg"
+      ],
+      "ingredients_raw": "Salmon, Salmon Meal (Source of Glucosamine and Chondroitin Sulfate), Sardine Meal (Source of Glucosamine and Chondroitin Sulfate), Barley, Oatmeal, Whole Grain Sorghum, Millet, Canola Oil, Flaxseed, Natural Flavor, Potassium Chloride, Salt, Taurine, Choline Chloride, Vitamin E Supplement, Mixed Tocopherols (Preservative), L-Ascorbyl-2-Polyphosphate, Zinc Proteinate, Zinc Sulfate, Ferrous Sulfate, Iron Proteinate, Niacin Supplement, Copper Sulfate, Vitamin A Supplement, Copper Proteinate, Menadione Sodium Bisulfite Complex, Thiamine Mononitrate, Sodium Selenite, d-Calcium Pantothenate, Manganese Sulfate, Manganese Proteinate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Calcium Iodate, Dried Bacillus amyloliquefaciens Fermentation Product, Folic Acid, Biotin, Green Tea Extract, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 14.5,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "taurine_min": 0.1,
+        "omega_3_min": 1.0,
+        "omega_6_min": 2.3
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3623 kcal/kg, 521 kcal/cup"
+    },
+    {
+      "name": "Pure Farm To Bowl Adult Dog Food - Wild-Caught Salmon & Sweet Potato Recipe",
+      "brand": "Canidae",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/canidae-pure-farm-to-bowl-adult-dog-food---wild-caught-salmon-and-sweet-potato-recipe-22-lbs-78511.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pure",
+      "life_stage": "adult",
+      "source_id": "5344100",
+      "images": [
+        "/products/canidae/canidae-food-pure-farm-to-bowl-adult-dog-food-wild-caught-salmon-sweet-potato-recipe.jpg"
+      ],
+      "ingredients_raw": "Salmon, Salmon Meal (Source of Glucosamine and Chondroitin Sulfate), Sardine Meal (Source of Glucosamine and Chondroitin Sulfate), Lentils, Sweet Potatoes, Peas, Dried Yeast, Canola Oil, Flaxseed, Garbanzo Beans, Natural Flavor, Choline Chloride, Taurine, Vitamin E Supplement, Mixed Tocopherols (Preservative), Potassium Chloride, L-Ascorbyl-2-Polyphosphate, Zinc Proteinate, Zinc Sulfate, Ferrous Sulfate, Iron Proteinate, Niacin Supplement, Copper Sulfate, Vitamin A Supplement, Copper Proteinate, Menadione Sodium Bisulfite Complex, Thiamine Mononitrate, Sodium Selenite, d-Calcium Pantothenate, Manganese Sulfate, Manganese Proteinate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Calcium Iodate, Dried Bacillus amyloliquefaciens Fermentation Product, Folic Acid, Biotin, Green Tea Extract, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 33.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "taurine_min": 0.1,
+        "omega_3_min": 1.2,
+        "omega_6_min": 2.1
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3546 kcal/kg, 484 kcal/cup"
+    },
+    {
+      "name": "Pure Farm To Bowl Dog Food - Pasture-Raised Lamb and Goat & Venison Meals Recipe",
+      "brand": "Canidae",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/canidae-pure-farm-to-bowl-dog-food---pasture-raised-lamb-and-goat-and-venison-meals-recipe-22-lbs-78524.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pure",
+      "source_id": "5344616",
+      "images": [
+        "/products/canidae/canidae-food-pure-farm-to-bowl-dog-food-pasture-raised-lamb-and-goat-venison-meals-recipe.jpg"
+      ],
+      "ingredients_raw": "Lamb, Lamb Meal (Source of Glucosamine and Chondroitin Sulfate), Lentils, Peas, Potatoes, Dried Yeast, Goat Meal (Source of Glucosamine and Chondroitin Sulfate), Canola Oil, Suncured Alfalfa Meal, Venison Meal (Source of Glucosamine and Chondroitin Sulfate), Flaxseed, Natural Flavor, Choline Chloride, Taurine, Threonine, Salt, Potassium Chloride, DL-Methionine, Mixed Tocopherols (Preservative), Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate, Zinc Proteinate, Zinc Sulfate, Ferrous Sulfate, Iron Proteinate, Tryptophan, Niacin Supplement, Copper Sulfate, Vitamin A Supplement, Copper Proteinate, Thiamine Mononitrate, Sodium Selenite, d-Calcium Pantothenate, Manganese Sulfate, Manganese Proteinate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Calcium Iodate, Dried Bacillus amyloliquefaciens Fermentation Product, Folic Acid, Vitamin D3 Supplement, Biotin, Green Tea Extract, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.5,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "taurine_min": 0.1,
+        "omega_3_min": 1.0,
+        "omega_6_min": 1.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3491 kcal/kg, 503 kcal/cup"
+    },
+    {
+      "name": "Pure Farm To Bowl Puppy Food - Wild-Caught Salmon & Sweet Potato Recipe",
+      "brand": "Canidae",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/canidae-pure-farm-to-bowl-puppy-food---wild-caught-salmon-and-sweet-potato-recipe-81818.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pure",
+      "life_stage": "puppy",
+      "source_id": "5351139",
+      "images": [
+        "/products/canidae/canidae-food-pure-farm-to-bowl-puppy-food-wild-caught-salmon-sweet-potato-recipe.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0640461002757",
+          "sku": "5351139"
+        }
+      ],
+      "ingredients_raw": "Salmon, Salmon Meal (Source of Glucosamine and Chondroitin Sulfate), Lentils, Peas, Chickpeas, Canola Oil, Sweet Potatoes, Sardine Meal (Source of Glucosamine and Chondroitin Sulfate), Flaxseed, Dried Yeast, Natural Flavor, Threonine, Salt, Potassium Chloride, Choline Chloride, Taurine, Vitamin E Supplement, Menhaden Fish Oil, Mixed Tocopherols (Preservative), Tryptophan, L-Ascorbyl-2-Polyphosphate, Zinc Proteinate, Zinc Sulfate, Ferrous Sulfate, Iron Proteinate, Niacin Supplement, Copper Sulfate, Vitamin A Supplement, Copper Proteinate, Menadione Sodium Bisulfite Complex, Sodium Selenite, Thiamine Mononitrate, d-Calcium Pantothenate, Manganese Sulfate, Manganese Proteinate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Calcium Iodate, Dried Bacillus amyloliquefaciens Fermentation Product, Folic Acid, Biotin, Green Tea Extract, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "dha_min": 0.04,
+        "taurine_min": 0.2,
+        "glucosamine_min": 0.01,
+        "omega_3_min": 1.3,
+        "omega_6_min": 2.3
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3620 kcal/kg, 576 kcal/cup"
+    }
+  ]
+}

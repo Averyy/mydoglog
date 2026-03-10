@@ -1,0 +1,1972 @@
+{
+  "brand": "Natural Balance",
+  "website_url": "https://www.petsmart.ca",
+  "scraped_at": "2026-03-10T13:29:09.680104+00:00",
+  "scraper_version": "0.1.0",
+  "stats": {
+    "product_count": 51,
+    "by_channel": {
+      "retail": 51
+    },
+    "by_type": {
+      "food": 46,
+      "treat": 5
+    }
+  },
+  "products": [
+    {
+      "name": "Adult Wet Dog Food - Vegetarian, Vegan",
+      "brand": "Natural Balance",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/natural-balance-adult-wet-dog-food---vegetarian-vegan-30258.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "life_stage": "adult",
+      "source_id": "5235769",
+      "images": [
+        "/products/natural-balance/natural-balance-food-adult-wet-dog-food-vegetarian-vegan.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633065559",
+          "sku": "5235769"
+        }
+      ],
+      "ingredients_raw": "Water for Processing, Brown Rice, Barley, Oat Groats, Canola Oil (Preserved with Mixed Tocopherols), Carrots, Potato Protein, Dried Tomato Pomace, Potatoes, Dehydrated Potatoes, Peas, Dicalcium Phosphate, Natural Flavor, Calcium Carbonate, Carrageenan, Cassia Gum, Minerals (Zinc Proteinate, Zinc Sulfate, Ferrous Sulfate, Iron Proteinate, Copper Sulfate, Copper Proteinate, Manganese Sulfate, Manganese Proteinate, Calcium Iodate, Sodium Selenite), Vitamins (Vitamin E Supplement, Niacin, Thiamine Mononitrate, Vitamin A Supplement, Ascorbic Acid (Vitamin C), D-calcium Pantothenate, Pyridoxine Hydrochloride, Vitamin D2 Supplement, Riboflavin Supplement, Folic Acid, Biotin, Vitamin B12 Supplement), Natural Smoke Flavor, Salt, Potassium Chloride, Choline Chloride, Taurine, Dried Spinach, Parsley, L-carnitine, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 5.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 2.5,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1180 kcal/kg, 400 kcal/cup"
+    },
+    {
+      "name": "Fat Dogs Adult Wet Dog Food - Chicken & Salmon",
+      "brand": "Natural Balance",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/natural-balance-fat-dogs-adult-wet-dog-food---chicken-and-salmon-61707.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "life_stage": "adult",
+      "source_id": "5306467",
+      "images": [
+        "/products/natural-balance/natural-balance-food-fat-dogs-adult-wet-dog-food-chicken-salmon.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633763738",
+          "sku": "5306467"
+        }
+      ],
+      "ingredients_raw": "Chicken Broth, Chicken, Whitefish, Salmon, Carrots, Pea Fiber, Potatoes, Brown Rice, Oat Hulls, Dried Plain Beet Pulp, Dried Tomato Pomace, Blueberries, Cranberries, Ground Flaxseed, Brewers Dried Yeast, Natural Flavor, Potassium Chloride, Agar-Agar, Salt, Minerals (Zinc Amino Acid Proteinate, Iron Amino Acid Proteinate, Copper Amino Acid Proteinate, Manganese Amino Acid Proteinate, Cobalt Amino Acid Proteinate, Potassium Iodide, Sodium Selenite), Taurine, Vitamins (Thiamine Mononitrate, Vitamin E Supplement, Niacin Supplement, D-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Choline Chloride, Dried Spinach, Dried Kelp, L-Carnitine, Sodium Carbonate, Yucca Schidigera Extract, L-Ascorbyl-2-Polyphosphate",
+      "guaranteed_analysis": {
+        "crude_protein_min": 6.0,
+        "crude_fat_min": 2.5,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 80.0,
+        "taurine_min": 0.07,
+        "omega_3_min": 8.0,
+        "omega_6_min": 40.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "765 kcal/kg, 282 kcal/can"
+    },
+    {
+      "name": "Limited Ingredient Diets Adult Wet Dog Food - Grain Free, Bison & Sweet Potato",
+      "brand": "Natural Balance",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/natural-balance-limited-ingredient-diets-adult-wet-dog-food---grain-free-bison-and-sweet-potato-43531.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "L.I.D. Limited Ingredient Diets",
+      "life_stage": "adult",
+      "source_id": "5266486",
+      "images": [
+        "/products/natural-balance/natural-balance-food-limited-ingredient-diets-adult-wet-dog-food-grain-free-bison-sweet-potato.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633431064",
+          "sku": "5266486"
+        }
+      ],
+      "ingredients_raw": "Water (Sufficient for Processing), Buffalo, Sweet Potatoes, Dehydrated Potatoes, Potatoes, Potato Protein, Canola Oil (Preserved with Mixed Tocopherols), Dicalcium Phosphate, Natural Flavor, Salmon Oil (Preserved with Mixed Tocopherols), Vitamins (L-ascorbyl-2-polyphosphate (Source of Vitamin C), Vitamin E Supplement, Thiamine Mononitrate, Niacin, D-calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Vitamin D3 Supplement,vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid), Calcium Carbonate, Guar Gum, Minerals (Zinc Proteinate, Zinc Sulfate, Ferrous Sulfate, Iron Proteinate, Copper Sulfate, Copper Proteinate, Manganese Sulfate, Manganese Proteinate, Calcium Iodate, Sodium Selenite), Salt, Carrageenan, Choline Chloride, Taurine, Potassium Chloride, Dl-methionine, Yucca Schidigera Extract, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 6.5,
+        "crude_fat_min": 4.5,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1125 kcal/kg, 415 kcal/cup"
+    },
+    {
+      "name": "Limited Ingredient Diets Adult Wet Dog Food - Grain Free, Chicken & Sweet Potato",
+      "brand": "Natural Balance",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/natural-balance-limited-ingredient-diets-adult-wet-dog-food---grain-free-chicken-and-sweet-potato-30251.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "L.I.D. Limited Ingredient Diets",
+      "life_stage": "adult",
+      "source_id": "5235770",
+      "images": [
+        "/products/natural-balance/natural-balance-food-limited-ingredient-diets-adult-wet-dog-food-grain-free-chicken-sweet-potato.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633001700",
+          "sku": "5235770"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Broth, Potatoes, Sweet Potatoes, Dehydrated Potatoes, Chicken Liver, Chicken Meal, Canola Oil (Preserved With Mixed Tocopherols), Dicalcium Phosphate, Vitamins (L-Ascorbyl-2-Polyphosphate (Source Of Vitamin C), Vitamin E Supplement, Thiamine Mononitrate, Niacin, D-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Vitamin D3 Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid), Minerals (Zinc Proteinate, Zinc Sulfate, Ferrous Sulfate, Iron Proteinate, Copper Sulfate, Copper Proteinate, Manganese Sulfate, Manganese Proteinate, Calcium Iodate, Sodium Selenite), Calcium Carbonate, Guar Gum, Salt, Natural Smoke Flavor, Carrageenan, Potassium Chloride, Yucca Schidigera Extract, Choline Chloride, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 5.5,
+        "crude_fat_min": 3.5,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1100 kcal/kg, 190 kcal/cup"
+    },
+    {
+      "name": "Limited Ingredient Diets Adult Wet Dog Food - Grain Free, Duck & Potato",
+      "brand": "Natural Balance",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/natural-balance-limited-ingredient-diets-adult-wet-dog-food---grain-free-duck-and-potato-30253.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "L.I.D. Limited Ingredient Diets",
+      "life_stage": "adult",
+      "source_id": "5235773",
+      "images": [
+        "/products/natural-balance/natural-balance-food-limited-ingredient-diets-adult-wet-dog-food-grain-free-duck-potato.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633001540",
+          "sku": "5235773"
+        }
+      ],
+      "ingredients_raw": "Duck, Duck Broth, Potatoes, Dehydrated Potatoes, Potato Protein, Vitamins (L-Ascorbyl-2-Polyphosphate (Source Of Vitamin C), Vitamin E Supplement, Thiamine Mononitrate, Niacin, D-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Vitamin D3 Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid), Dicalcium Phosphate, Calcium Carbonate, Potassium Chloride, Duck Meal, Canola Oil (Preserved With Mixed Tocopherols), Guar Gum, Minerals (Zinc Proteinate, Zinc Sulfate, Ferrous Sulfate, Iron Proteinate, Copper Sulfate, Copper Proteinate, Manganese Sulfate, Manganese Proteinate, Calcium Iodate, Sodium Selenite), Salt, Natural Smoke Flavor, Carrageenan, Yucca Schidigera Extract, Taurine, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 5.0,
+        "crude_fat_min": 4.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1140 kcal/kg, 195 kcal/cup"
+    },
+    {
+      "name": "Limited Ingredient Diets Adult Wet Dog Food - Grain Free, Sweet Potato & Fish",
+      "brand": "Natural Balance",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/natural-balance-limited-ingredient-diets-adult-wet-dog-food---grain-free-sweet-potato-and-fish-30249.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "L.I.D. Limited Ingredient Diets",
+      "life_stage": "adult",
+      "source_id": "5235777",
+      "images": [
+        "/products/natural-balance/natural-balance-food-limited-ingredient-diets-adult-wet-dog-food-grain-free-sweet-potato-fish.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633001564",
+          "sku": "5235777"
+        }
+      ],
+      "ingredients_raw": "Fish Broth, Sweet Potatoes, Potatoes, Salmon, Potato Protein, Fish Meal, Ocean Whitefish, Canola Oil (Preserved With Mixed Tocopherols), Salmon Oil (Preserved With Mixed Tocopherols), Sodium Tripolyphosphate, Vitamins (L-Ascorbyl-2-Polyphosphate (Source Of Vitamin C), Vitamin E Supplement, Thiamine Mononitrate, Niacin, D-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid), Guar Gum, Minerals (Zinc Proteinate, Zinc Sulfate, Ferrous Sulfate, Iron Proteinate, Copper Sulfate, Copper Proteinate, Manganese Sulfate, Manganese Proteinate, Calcium Iodate, Sodium Selenite), Calcium Carbonate, Salt, Potassium Chloride, Choline Chloride, Carrageenan, Yucca Schidigera Extract, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.0,
+        "crude_fat_min": 4.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1115 kcal/kg, 190 kcal/cup"
+    },
+    {
+      "name": "Limited Ingredient Diets Adult Wet Dog Food - Grain Free, Sweet Potato & Venison",
+      "brand": "Natural Balance",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/natural-balance-limited-ingredient-diets-adult-wet-dog-food---grain-free-sweet-potato-and-venison-51281.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "L.I.D. Limited Ingredient Diets",
+      "life_stage": "adult",
+      "source_id": "5273029",
+      "images": [
+        "/products/natural-balance/natural-balance-food-limited-ingredient-diets-adult-wet-dog-food-grain-free-sweet-potato-venison.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633925723",
+          "sku": "5273029"
+        }
+      ],
+      "ingredients_raw": "Sweet Potatoes, Venison Broth, Venison, Potatoes, Potato Protein, Dehydrated Potatoes, Canola Oil (Preserved With Mixed Tocopherols), Salmon Oil (Preserved With Mixed Tocopherols), Natural Flavor, Vitamins (L-Ascorbyl-2-Polyphosphate (Source Of Vitamin C), Vitamin E Supplement, Thiamine Mononitrate, Niacin, D-Calcium Panthothenate, Vitamin A Supplement, Riboflavin Supplement, Vitamin D3 Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid), Venison Meal, Minerals (Zinc Proteinate, Zinc Sulfate, Ferrous Sulfate, Iron Proteinate, Copper Sulfate, Copper Proteinate, Manganese Sulfate, Manganese Proteinate, Calcium Iodate, Sodium Selenite), Guar Gum, Potassium Chloride, Salt, Sodium Tripolyphosphate, Choline Chloride, Carrageenan, Taurine, Yucca Schidigera Extract, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 6.0,
+        "crude_fat_min": 4.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1060 kcal/kg, 180 kcal/cup"
+    },
+    {
+      "name": "Limited Ingredient Diets Adult Wet Dog Food - Lamb & Brown Rice",
+      "brand": "Natural Balance",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/natural-balance-limited-ingredient-diets-adult-wet-dog-food---lamb-and-brown-rice-30261.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "L.I.D. Limited Ingredient Diets",
+      "life_stage": "adult",
+      "source_id": "5235778",
+      "images": [
+        "/products/natural-balance/natural-balance-food-limited-ingredient-diets-adult-wet-dog-food-lamb-brown-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633071130",
+          "sku": "5235778"
+        }
+      ],
+      "ingredients_raw": "Lamb, Lamb Broth, Lamb Liver, Brown Rice, Lamb Meal, Canola Oil (Preserved With Mixed Tocopherols), Vitamins(L-Ascorbyl-2-Polyphosphate (Source Of Vitamin C), Vitamin E Supplement, Thiamine Mononitrate, Niacin, D-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Vitamin D3 Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid), Guar Gum, Potassium Chloride, Natural Smoke Flavor, Minerals(Zinc Proteinate, Zinc Sulfate, Ferrous Sulfate, Iron Proteinate, Copper Sulfate, Copper Proteinate, Manganese Sulfate, Manganese Proteinate, Calcium Iodate, Sodium Selenite), Salt, Dried Kelp, Carrageenan, Parsley Flakes, Taurine, Yucca Schidigera Extract, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 6.5,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1355 kcal/kg, 500 kcal/cup"
+    },
+    {
+      "name": "Limited Ingredient Reserve Adult Wet Dog Food - Duck & Brown Rice",
+      "brand": "Natural Balance",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/natural-balance-limited-ingredient-reserve-adult-wet-dog-food---duck-and-brown-rice-13-oz-81959.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "L.I.D. Limited Ingredient Diets",
+      "life_stage": "adult",
+      "source_id": "5351585",
+      "images": [
+        "/products/natural-balance/natural-balance-food-limited-ingredient-reserve-adult-wet-dog-food-duck-brown-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "13 oz",
+          "upc": "0723633014274",
+          "sku": "5351585"
+        }
+      ],
+      "ingredients_raw": "Duck, Duck Broth, Brown Rice, Canola Oil, Ground Flaxseed, Natural Flavor, Agar-agar, Salt, Potassium Chloride, Minerals (Zinc Proteinate, Iron Proteinate, Copper Proteinate, Cobalt Proteinate, Manganese Proteinate, Sodium Selenite, Potassium Iodide), Dried Kelp, Natural Smoke Flavor, Vitamins (Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, D-calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Taurine, Choline Chloride, Parsley, Yucca Schidigera Extract, Sodium Carbonate",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.0,
+        "crude_fat_min": 7.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0,
+        "taurine_min": 0.05
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1170 kcal/kg, 438 kcal/cup"
+    },
+    {
+      "name": "Specialized Nutrition Digestive & Immune Health Adult Wet Dog Food - Lamb & Rice",
+      "brand": "Natural Balance",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/natural-balance-specialized-nutrition-digestive-and-immune-health-adult-wet-dog-food---lamb-and-rice-87737.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Specialized Nutrition",
+      "life_stage": "adult",
+      "source_id": "5362460",
+      "images": [
+        "/products/natural-balance/natural-balance-food-specialized-nutrition-digestive-immune-health-adult-wet-dog-food-lamb-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633007092",
+          "sku": "5362460"
+        }
+      ],
+      "ingredients_raw": "Lamb, Lamb Broth, Vegetable Broth, Chicken, Chicken Liver, Pumpkin, Brown Rice, Green Beans, Sweet Potato, Natural Flavor, Dried Plain Beet Pulp, Dried Egg Product, Potato Starch, Spinach, Sunflower Oil, Guar Gum, Salt, Sodium Phosphate, Marine Microalgae Oil (Preserved With Mixed Tocopherols), Inulin, Potassium Chloride, Minerals (Zinc Proteinate, Iron Proteinate, Selenium Yeast, Manganese Proteinate, Potassium Iodide), Blueberries, Cranberries, Vitamins (Vitamin E Supplement, Niacin Supplement, d-Calcium Pantothenate, Thiamine Mononitrate, Riboflavin Supplement, Vitamin A Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin D3 Supplement, Folic Acid), Choline Chloride, Taurine, Rosemary, Dicalcium Phosphate, Calcium Carbonate, Thyme, Sage, Yucca Schidigera Extract, L-Ascorbyl-2-Polyphosphate",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.5,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 82.0,
+        "omega_3_min": 0.15,
+        "omega_6_min": 0.6
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1106 kcal/kg, 398 kcal/can"
+    },
+    {
+      "name": "Specialized Nutrition Joint & Muscle Health Adult Wet Dog Food - Chicken & Rice",
+      "brand": "Natural Balance",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/natural-balance-specialized-nutrition-joint-and-muscle-health-adult-wet-dog-food---chicken-and-rice-87736.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Specialized Nutrition",
+      "life_stage": "adult",
+      "source_id": "5362459",
+      "images": [
+        "/products/natural-balance/natural-balance-food-specialized-nutrition-joint-muscle-health-adult-wet-dog-food-chicken-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633007085",
+          "sku": "5362459"
+        }
+      ],
+      "ingredients_raw": "Chicken (Source of Glucosamine and Chondroitin Sulfate), Chicken Bone Broth, Turkey Bone Broth, Chicken Liver, Carrots, Peas, Brown Rice, Turkey, Potatoes, Natural Flavor, Dried Egg Product, Potato Starch, Guar Gum, Salt, Sodium Phosphate, Sunflower Oil, Marine Microalgae Oil (Preserved With Mixed Tocopherols), Potassium Chloride, Minerals (Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Sodium Selenite, Potassium Iodide), Taurine, Vitamins (Vitamin E Supplement, Niacin Supplement, d-Calcium Pantothenate, Thiamine Mononitrate, Riboflavin Supplement, Vitamin A Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin D3 Supplement, Folic Acid), Rosemary, Choline Chloride, Dicalcium Phosphate, Thyme, Sage, L-Carnitine, L-Ascorbyl-2-Polyphosphate",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.5,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 82.0,
+        "omega_3_min": 0.1,
+        "omega_6_min": 0.7
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "925 kcal/kg, 333 kcal/can"
+    },
+    {
+      "name": "Specialized Nutrition Sensitive Skin & Stomach Adult Wet Dog Food - Salmon & Rice",
+      "brand": "Natural Balance",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/natural-balance-specialized-nutrition-sensitive-skin-and-stomach-adult-wet-dog-food---salmon-and-rice-87735.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Specialized Nutrition",
+      "life_stage": "adult",
+      "source_id": "5362458",
+      "images": [
+        "/products/natural-balance/natural-balance-food-specialized-nutrition-sensitive-skin-stomach-adult-wet-dog-food-salmon-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633007078",
+          "sku": "5362458"
+        }
+      ],
+      "ingredients_raw": "Salmon Broth, Whitefish, Salmon, Brown Rice, Chicken, Carrots, Natural Flavor, Dried Plain Beet Pulp, Potatoes, Ground Flaxseed, Pumpkin, Sunflower Oil, Agar-Agar, Inulin, Salt, Potassium Chloride, Minerals (Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Sodium Selenite, Potassium Iodide), Taurine, Organic Dried Kelp, Choline Chloride, Vitamins (Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Folic Acid, Vitamin D3 Supplement), Rosemary, Yucca Schidigera Extract, Dicalcium Phosphate, Magnesium Sulfate, Sage, Thyme, Sodium Carbonate, Marine Microalgae Oil (Preserved With Mixed Tocopherols), L-Ascorbyl-2-Polyphosphate",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 78.0,
+        "omega_3_min": 0.1,
+        "omega_6_min": 0.6
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1115 kcal/kg, 401 kcal/can"
+    },
+    {
+      "name": "Adult Dry Dog Food - Vegetarian",
+      "brand": "Natural Balance",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/natural-balance-adult-dry-dog-food---vegetarian-69199.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "source_id": "5323754",
+      "images": [
+        "/products/natural-balance/natural-balance-food-adult-dry-dog-food-vegetarian.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633014496",
+          "sku": "5323754"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633014502",
+          "sku": "5323766"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633014519",
+          "sku": "5323768"
+        }
+      ],
+      "ingredients_raw": "Brown Rice, Oat Groats, Barley, Peas, Potato Protein, Canola Oil (Preserved With Mixed Tocopherols), Potatoes, Dicalcium Phosphate, Dried Tomato Pomace, Natural Flavor, Calcium Carbonate, Potassium Chloride, Choline Chloride, Taurine, Minerals (Zinc Proteinate, Zinc Sulfate, Ferrous Sulfate, Iron Proteinate, Copper Sulfate, Copper Proteinate, Manganese Sulfate, Manganese Proteinate, Calcium Iodate, Sodium Selenite), Salt, Vitamins (Vitamin E Supplement, Vitamin A Supplement, D-Calcium Pantothenate, Niacin, Riboflavin Supplement, Vitamin D2 Supplement, Vitamin B12 Supplement, Thiamine Mononitrate, Pyridoxine Hydrochloride, Folic Acid, Biotin), Flaxseed, Dried Spinach, Parsley, Cranberries, L-Lysine Monohydrochloride, L-Carnitine, Citric Acid (Used As A Preservative), Mixed Tocopherols (Used As A Preservative), Yucca Schidigera Extract, Dried Kelp, L-Ascorbyl-2-Polyphosphate (Source Of Vitamin C), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 18.0,
+        "crude_fat_min": 8.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "omega_3_min": 0.3,
+        "omega_6_min": 1.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3480 kcal/kg, 365 kcal/cup"
+    },
+    {
+      "name": "Health Protection Adult Dog Dry Food - Lamb, Brown Rice & Pumpkin",
+      "brand": "Natural Balance",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/natural-balance-health-protection-adult-dog-dry-food---lamb-brown-rice-and-pumpkin-87732.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Health Protection",
+      "life_stage": "adult",
+      "source_id": "5362418",
+      "images": [
+        "/products/natural-balance/natural-balance-food-health-protection-adult-dog-dry-food-lamb-brown-rice-pumpkin.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633006668",
+          "sku": "5362418"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633006651",
+          "sku": "5362700"
+        }
+      ],
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8,
+        "taurine_min": 0.18,
+        "omega_3_min": 0.75,
+        "omega_6_min": 2.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3455 kcal/kg, 360 kcal/cup",
+      "ingredients_raw": "Lamb, Lamb Meal (Source of Glucosamine & Chondroitin Sulfate), Brown Rice, Oatmeal, Whole Grain Sorghum, Pearled Barley, Peas, Dried Yeast, Chicken Meal (Source of Glucosamine & Chondroitin Sulfate), Pumpkin, Chicken Fat (Preserved with Mixed Tocopherols), Flaxseed, Dried Plain Beet Pulp, Natural Flavor, Salmon Oil, Dried Chicory Root, Vitamins (Vitamin E Supplement, Ascorbic Acid, Niacin Supplement, Vitamin A Supplement, Thiamine Mononitrate, d-Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, Biotin), Choline Chloride, Potassium Chloride, Minerals (Zinc Proteinate, Zinc Sulfate, Ferrous Sulfate, Iron Proteinate, Copper Sulfate, Copper Proteinate, Sodium Selenite, Manganese Sulfate, Manganese Proteinate, Calcium Iodate), Salt, Taurine, DL-Methionine, Mixed Tocopherols (Preservative), Dried Bacillus coagulans Fermentation Product, Rosemary Extract"
+    },
+    {
+      "name": "Health Protection Adult Dog Dry Food - Salmon, Brown Rice & Pumpkin",
+      "brand": "Natural Balance",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/natural-balance-health-protection-adult-dog-dry-food---salmon-brown-rice-and-pumpkin-87734.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Health Protection",
+      "life_stage": "adult",
+      "source_id": "5362419",
+      "images": [
+        "/products/natural-balance/natural-balance-food-health-protection-adult-dog-dry-food-salmon-brown-rice-pumpkin.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633006637",
+          "sku": "5362419"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633006644",
+          "sku": "5362420"
+        }
+      ],
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8,
+        "taurine_min": 0.18,
+        "omega_3_min": 0.9,
+        "omega_6_min": 2.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3495 kcal/kg, 365 kcal/cup",
+      "ingredients_raw": "Salmon, Menhaden Fish Meal (Source of Glucosamine & Chondroitin Sulfate), Brown Rice, Oatmeal, Whole Grain Sorghum, Chicken Meal (Source of Glucosamine & Chondroitin Sulfate), Pearled Barley, Peas, Pumpkin, Chicken Fat (Preserved with Mixed Tocopherols), Brewers Rice, Flaxseed, Dried Plain Beet Pulp, Natural Flavor, Dried Yeast, Dried Chicory Root, Salmon Oil, Vitamins (Vitamin E Supplement, Ascorbic Acid, Niacin Supplement, Vitamin A Supplement, Menadione Sodium Bisulfite Complex, Thiamine Mononitrate, d-Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Biotin), Choline Chloride, Potassium Chloride, Minerals (Zinc Proteinate, Zinc Sulfate, Ferrous Sulfate, Iron Proteinate, Copper Sulfate, Copper Proteinate, Sodium Selenite, Manganese Sulfate, Manganese Proteinate, Calcium Iodate), Taurine, Salt, DL-Methionine, Mixed Tocopherols (Preservative), Dried Bacillus coagulans Fermentation Product, Rosemary Extract"
+    },
+    {
+      "name": "Health Protection Adult Dry Dog Food - Chicken, Brown Rice & Pumpkin",
+      "brand": "Natural Balance",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/natural-balance-health-protection-adult-dry-dog-food---chicken-brown-rice-and-pumpkin-87741.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Health Protection",
+      "life_stage": "adult",
+      "source_id": "5362666",
+      "images": [
+        "/products/natural-balance/natural-balance-food-health-protection-adult-dry-dog-food-chicken-brown-rice-pumpkin.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633006613",
+          "sku": "5362666"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633006620",
+          "sku": "5362697"
+        }
+      ],
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.7,
+        "taurine_min": 0.18,
+        "omega_3_min": 0.75,
+        "omega_6_min": 2.8
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3502 kcal/kg, 365 kcal/cup",
+      "ingredients_raw": "Chicken, Chicken Meal (Source of Glucosamine & Chondroitin Sulfate), Brown Rice, Oatmeal, Whole Grain Sorghum, Peas, Pearled Barley, Turkey Meal (Source of Glucosamine & Chondroitin Sulfate), Pumpkin, Chicken Fat (Preserved with Mixed Tocopherols), Flaxseed, Dried Plain Beet Pulp, Natural Flavor, Salmon Oil, Dried Chicory Root, Vitamins (Vitamin E Supplement, Ascorbic Acid, Niacin Supplement, Vitamin A Supplement, Thiamine Mononitrate, d-Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, Biotin), Choline Chloride, Taurine, Minerals (Zinc Proteinate, Zinc Sulfate, Ferrous Sulfate, Iron Proteinate, Copper Sulfate, Copper Proteinate, Sodium Selenite, Manganese Sulfate, Manganese Proteinate, Calcium Iodate), Salt, Potassium Chloride, DL-Methionine, Mixed Tocopherols (Preservative), Dried Bacillus coagulans Fermentation Product, Rosemary Extract"
+    },
+    {
+      "name": "Health Protection Puppy Dry Dog Food - Chicken, Brown Rice & Pumpkin",
+      "brand": "Natural Balance",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/natural-balance-health-protection-puppy-dry-dog-food---chicken-brown-rice-and-pumpkin-87742.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Health Protection",
+      "life_stage": "puppy",
+      "source_id": "5362695",
+      "images": [
+        "/products/natural-balance/natural-balance-food-health-protection-puppy-dry-dog-food-chicken-brown-rice-pumpkin.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633006699",
+          "sku": "5362695"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633006705",
+          "sku": "5362696"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Meal (Source of Glucosamine & Chondroitin Sulfate), Turkey Meal (Source of Glucosamine & Chondroitin Sulfate), Brown Rice, Oatmeal, Whole Grain Sorghum, Peas, Chicken Fat (Preserved with Mixed Tocopherols), Pumpkin, Dried Yeast, Pearled Barley, Flaxseed, Dried Plain Beet Pulp, Natural Flavor, Dicalcium Phosphate, Dried Chicory Root, Menhaden Fish Oil, Salt, Vitamins (Vitamin E Supplement, Ascorbic Acid, Niacin Supplement, Vitamin A Supplement, Thiamine Mononitrate, d-Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, Biotin), Choline Chloride, Minerals (Zinc Proteinate, Zinc Sulfate, Ferrous Sulfate, Iron Proteinate, Copper Sulfate, Copper Proteinate, Sodium Selenite, Manganese Sulfate, Manganese Proteinate, Calcium Iodate), Potassium Chloride, Taurine, DL-Methionine, Mixed Tocopherols (Preservative), Dried Bacillus coagulans Fermentation Product, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.3,
+        "phosphorus_min": 1.0,
+        "taurine_min": 0.2,
+        "omega_3_min": 0.8,
+        "omega_6_min": 3.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3614 kcal/kg, 385 kcal/cup"
+    },
+    {
+      "name": "Health Protection Small Breed Adult Dog Dry Food - Chicken, Brown Rice & Pumpkin",
+      "brand": "Natural Balance",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/natural-balance-health-protection-small-breed-adult-dog-dry-food---chicken-brown-rice-and-pumpkin-87733.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Health Protection",
+      "life_stage": "adult",
+      "breed_size": "Small",
+      "source_id": "5362698",
+      "images": [
+        "/products/natural-balance/natural-balance-food-health-protection-small-breed-adult-dog-dry-food-chicken-brown-rice-pumpkin.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633006675",
+          "sku": "5362698"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633006682",
+          "sku": "5362699"
+        }
+      ],
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.7,
+        "taurine_min": 0.18,
+        "omega_3_min": 0.75,
+        "omega_6_min": 2.8
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3502 kcal/kg, 370 kcal/cup",
+      "ingredients_raw": "Chicken, Chicken Meal (Source of Glucosamine & Chondroitin Sulfate), Brown Rice, Oatmeal, Whole Grain Sorghum, Peas, Pearled Barley, Turkey Meal (Source of Glucosamine & Chondroitin Sulfate), Pumpkin, Chicken Fat (Preserved with Mixed Tocopherols), Flaxseed, Dried Plain Beet Pulp, Natural Flavor, Salmon Oil, Dried Chicory Root, Vitamins (Vitamin E Supplement, Ascorbic Acid, Niacin Supplement, Vitamin A Supplement, Thiamine Mononitrate, d-Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, Biotin), Choline Chloride, Taurine, Minerals (Zinc Proteinate, Zinc Sulfate, Ferrous Sulfate, Iron Proteinate, Copper Sulfate, Copper Proteinate, Sodium Selenite, Manganese Sulfate, Manganese Proteinate, Calcium Iodate), Salt, Potassium Chloride, DL-Methionine, Mixed Tocopherols (Preservative), Dried Bacillus coagulans Fermentation Product, Rosemary Extract"
+    },
+    {
+      "name": "Limited Ingredient Diet Adult Dry Dog Food - Grain Free, Sweet Potato & Venison",
+      "brand": "Natural Balance",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/natural-balance-limited-ingredient-diet-adult-dry-dog-food---grain-free-sweet-potato-and-venison-61690.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "L.I.D. Limited Ingredient Diets",
+      "life_stage": "adult",
+      "source_id": "5306477",
+      "images": [
+        "/products/natural-balance/natural-balance-food-limited-ingredient-diet-adult-dry-dog-food-grain-free-sweet-potato-venison.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633429818",
+          "sku": "5306477"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633429832",
+          "sku": "5306478"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633429856",
+          "sku": "5306479"
+        }
+      ],
+      "ingredients_raw": "Sweet Potato, Venison, Pea Protein, Potato Protein, Canola Oil (preserved with mixed tocopherols), Brewers Dried Yeast, Natural Flavor, Dicalcium Phosphate, Menhaden Fish Oil (preserved with mixed tocopherols), Flaxseed, Calcium Carbonate, Dried Potato Products, Salt, DL-Methionine, Taurine, Vitamins (Vitamin E Supplement, Ascorbic Acid (Source of Vitamin C), Niacin, Vitamin A Supplement, Thiamine Mononitrate , d-Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Biotin, Vitamin D3 Supplement), Minerals (Zinc Proteinate, Zinc Sulfate, Ferrous Sulfate, Iron Proteinate, Copper Sulfate, Copper Proteinate, Manganese Sulfate, Manganese Proteinate, Sodium Selenite, Calcium Iodate), Choline Chloride, Rosemary Extract, Green Tea Extract, Spearmint Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 20.0,
+        "crude_fat_min": 10.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 0.8,
+        "phosphorus_min": 0.6,
+        "taurine_min": 0.2,
+        "omega_3_min": 0.5,
+        "omega_6_min": 0.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3340 kcal/kg, 370 kcal/cup"
+    },
+    {
+      "name": "Limited Ingredient Diet Puppy Dry Dog Food - Lamb & Brown Rice",
+      "brand": "Natural Balance",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/natural-balance-limited-ingredient-diet-puppy-dry-dog-food---lamb-and-brown-rice-63732.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "L.I.D. Limited Ingredient Diets",
+      "life_stage": "puppy",
+      "source_id": "5310154",
+      "images": [
+        "/products/natural-balance/natural-balance-food-limited-ingredient-diet-puppy-dry-dog-food-lamb-brown-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633773959",
+          "sku": "5310154"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633773973",
+          "sku": "5310155"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633773850",
+          "sku": "5338172"
+        }
+      ],
+      "ingredients_raw": "Lamb, Brown Rice, Lamb Meal, Brewers Rice, Rice Bran, Brewers Dried Yeast, Sunflower Oil (Preserved with Mixed Tocopherols), Potato Protein, Natural Flavor, Flaxseed, Fish Oil (Preserved with Mixed Tocopherols), Salt, Potassium Chloride, Taurine, Dl- Methionine, L-threonine, Vitamins (Vitamin E Supplement, Niacin Supplement, D-calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Thiamine Mononitrate, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Folic Acid, Biotin, Vitamin B12 Supplement), Minerals (Zinc Proteinate, Zinc Sulfate, Ferrous Sulfate, Iron Proteinate, Copper Sulfate, Copper Proteinate, Manganese Sulfate, Manganese Proteinate, Sodium Selenite, Calcium Iodate), Choline Chloride, L-lysine Monohydrochloride, Rosemary Extract, Green Tea Extract, Spearmint Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 12.5,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "dha_min": 0.08,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "taurine_min": 0.25,
+        "omega_3_min": 0.5,
+        "omega_6_min": 3.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3545 kcal/kg, 365 kcal/cup"
+    },
+    {
+      "name": "Limited Ingredient Diets Adult Dry Dog Food - Chicken & Brown Rice",
+      "brand": "Natural Balance",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/natural-balance-limited-ingredient-diets-adult-dry-dog-food---chicken-and-brown-rice-71971.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "L.I.D. Limited Ingredient Diets",
+      "life_stage": "adult",
+      "source_id": "5323751",
+      "images": [
+        "/products/natural-balance/natural-balance-food-limited-ingredient-diets-adult-dry-dog-food-chicken-brown-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633014489",
+          "sku": "5323751"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Meal, Brown Rice, Brewers Rice, Rice Bran, Chicken Fat (Preserved with Mixed Tocopherols), Tomato Pomace, Brewers Dried Yeast, Natural Flavor, Flaxseed, Salt, DL-Methionine, Taurine, Vitamins (Vitamin E Supplement, Ascorbic Acid, Niacin Supplement, Vitamin A Supplement, Thiamine Mononitrate, d-Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, Biotin), Menhaden Fish Oil (Preserved with Mixed Tocopherols), Minerals (Zinc Proteinate, Zinc Sulfate, Ferrous Sulfate, Iron Proteinate, Copper Sulfate, Copper Proteinate, Sodium Selenite, Manganese Sulfate, Manganese Proteinate, Calcium Iodate), Potassium Chloride, Choline Chloride, Citric Acid (Preservative), Mixed Tocopherols (Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 23.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "calcium_min": 0.8,
+        "phosphorus_min": 0.6,
+        "taurine_min": 0.25,
+        "omega_3_min": 0.3,
+        "omega_6_min": 2.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3445 kcal/kg, 322 kcal/cup"
+    },
+    {
+      "name": "Limited Ingredient Diets Adult Dry Dog Food - Chicken & Sweet Potato",
+      "brand": "Natural Balance",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/natural-balance-limited-ingredient-diets-adult-dry-dog-food---chicken-and-sweet-potato-58807.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "L.I.D. Limited Ingredient Diets",
+      "life_stage": "adult",
+      "source_id": "5299794",
+      "images": [
+        "/products/natural-balance/natural-balance-food-limited-ingredient-diets-adult-dry-dog-food-chicken-sweet-potato.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633777315",
+          "sku": "5299794"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633777339",
+          "sku": "5299960"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633777360",
+          "sku": "5299993"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Meal, Sweet Potatoes, Cassava Flour, Potatoes, Chicken Fat (Preserved with Mixed Tocopherols), Brewers Dried Yeast, Flaxseed, Natural Flavor, Potato Protein, Menhaden Fish Oil (Preserved with Mixed Tocopherols), Salt, Potassium Chloride, Taurine, Dl-methionine, Vitamins (Vitamin E Supplement, Ascorbic Acid (Source of Vitamin C), Niacin, Vitamin A Supplement, Thiamine Mononitrate, D-calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Biotin, Vitamin D3 Supplement ), Choline Chloride, Minerals (Zinc Proteinate, Zinc Sulfate, Ferrous Sulfate, Iron Proteinate, Copper Sulfate, Copper Proteinate, Manganese Sulfate, Manganese Proteinate, Sodium Selenite, Calcium Iodate), Dicalcium Phosphate, Citric Acid (Used As A Preservative), Rosemary Extract, Green Tea Extract, Spearmint Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 15.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.9,
+        "taurine_min": 0.25,
+        "omega_3_min": 1.0,
+        "omega_6_min": 3.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3576 kcal/kg, 387 kcal/cup"
+    },
+    {
+      "name": "Limited Ingredient Diets Adult Dry Dog Food - Duck & Brown Rice",
+      "brand": "Natural Balance",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/natural-balance-limited-ingredient-diets-adult-dry-dog-food---duck-and-brown-rice-71970.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "L.I.D. Limited Ingredient Diets",
+      "life_stage": "adult",
+      "source_id": "5310156",
+      "images": [
+        "/products/natural-balance/natural-balance-food-limited-ingredient-diets-adult-dry-dog-food-duck-brown-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633772907",
+          "sku": "5310156"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633014472",
+          "sku": "5323749"
+        }
+      ],
+      "ingredients_raw": "Duck, Duck Meal, Brown Rice, Brewers Rice, Rice Bran, Canola Oil (Preserved with Mixed Tocopherols), Flaxseed, Brewers Dried Yeast, Natural Flavor, Salt, Potassium Chloride, Choline Chloride, DL-Methionine, Taurine, Vitamins (Vitamin E Supplement, Ascorbic Acid, Niacin Supplement, Vitamin A Supplement, Thiamine Mononitrate, d-Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, Biotin), Minerals (Zinc Proteinate, Zinc Sulfate, Ferrous Sulfate, Iron Proteinate, Copper Sulfate, Copper Proteinate, Sodium Selenite, Manganese Sulfate, Manganese Proteinate, Calcium Iodate), Citric Acid (Preservative), Mixed Tocopherols (Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 21.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "calcium_min": 1.5,
+        "phosphorus_min": 1.0,
+        "taurine_min": 0.25,
+        "omega_3_min": 0.5,
+        "omega_6_min": 2.7
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3285 kcal/kg, 340 kcal/cup"
+    },
+    {
+      "name": "Limited Ingredient Diets Adult Dry Dog Food - Duck & Potato",
+      "brand": "Natural Balance",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/natural-balance-limited-ingredient-diets-adult-dry-dog-food---duck-and-potato-58809.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "L.I.D. Limited Ingredient Diets",
+      "life_stage": "adult",
+      "source_id": "5299939",
+      "images": [
+        "/products/natural-balance/natural-balance-food-limited-ingredient-diets-adult-dry-dog-food-duck-potato.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633777384",
+          "sku": "5299939"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633777414",
+          "sku": "5299985"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633014618",
+          "sku": "5328157"
+        }
+      ],
+      "ingredients_raw": "Duck, Duck Meal, Potatoes, Sweet Potatoes, Tapioca Starch, Brewers Dried Yeast, Canola Oil (Preserved with Mixed Tocopherols), Potato Protein, Flaxseed, Natural Flavor, Salt, Potassium Chloride, Menhaden Fish Oil (Preserved with Mixed Tocopherols), Taurine, DL-Methionine, Choline Chloride, Vitamins (Vitamin E Supplement, Ascorbic Acid, Niacin Supplement, Vitamin A Supplement, Thiamine Mononitrate, d-Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, Biotin), Minerals (Zinc Proteinate, Zinc Sulfate, Ferrous Sulfate, Iron Proteinate, Copper Sulfate, Copper Proteinate, Sodium Selenite, Manganese Sulfate, Manganese Proteinate, Calcium Iodate), Citric Acid (Preservative), Mixed Tocopherols (Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 10.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 0.8,
+        "phosphorus_min": 0.6,
+        "taurine_min": 0.3,
+        "omega_3_min": 0.5,
+        "omega_6_min": 1.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3431 kcal/kg, 370 kcal/cup"
+    },
+    {
+      "name": "Limited Ingredient Diets Adult Dry Dog Food - Lamb & Brown Rice",
+      "brand": "Natural Balance",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/natural-balance-limited-ingredient-diets-adult-dry-dog-food---lamb-and-brown-rice-71969.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "L.I.D. Limited Ingredient Diets",
+      "life_stage": "adult",
+      "source_id": "5299957",
+      "images": [
+        "/products/natural-balance/natural-balance-food-limited-ingredient-diets-adult-dry-dog-food-lamb-brown-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633773911",
+          "sku": "5299957"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633014465",
+          "sku": "5323748"
+        }
+      ],
+      "ingredients_raw": "Lamb, Lamb Meal, Brown Rice, Brewers Rice, Rice Bran, Brewers Dried Yeast, Canola Oil (Preserved with Mixed Tocopherols), Natural Flavor, Salt, Taurine, DL-Methionine, Vitamins (Vitamin E Supplement, Ascorbic Acid, Niacin Supplement, Vitamin A Supplement, Thiamine Mononitrate, d-Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, Biotin), Potassium Chloride, Minerals (Zinc Proteinate, Zinc Sulfate, Ferrous Sulfate, Iron Proteinate, Copper Sulfate, Copper Proteinate, Sodium Selenite, Manganese Sulfate, Manganese Proteinate, Calcium Iodate), Choline Chloride, Citric Acid (Preservative), Mixed Tocopherols (Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 22.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "taurine_min": 0.25,
+        "omega_3_min": 0.12,
+        "omega_6_min": 1.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3600 kcal/kg, 370 kcal/cup"
+    },
+    {
+      "name": "Limited Ingredient Diets Adult Dry Dog Food - Salmon & Brown Rice",
+      "brand": "Natural Balance",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/natural-balance-limited-ingredient-diets-adult-dry-dog-food---salmon-and-brown-rice-58815.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "L.I.D. Limited Ingredient Diets",
+      "life_stage": "adult",
+      "source_id": "5299790",
+      "images": [
+        "/products/natural-balance/natural-balance-food-limited-ingredient-diets-adult-dry-dog-food-salmon-brown-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633778008",
+          "sku": "5299790"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633778022",
+          "sku": "5299956"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633014458",
+          "sku": "5323729"
+        }
+      ],
+      "ingredients_raw": "Salmon, Menhaden Fish Meal, Brown Rice, Brewers Rice, Oat Groats, Rice Bran, Canola Oil (Preserved with Mixed Tocopherols), Flaxseed, Brewers Dried Yeast, Natural Flavor, Salt, Potassium Chloride, Calcium Carbonate, Choline Chloride, DL-Methionine, Taurine, Vitamins (Vitamin E Supplement, Ascorbic Acid, Niacin Supplement, Vitamin A Supplement, Menadione Sodium Bisulfite Complex, Thiamine Mononitrate, d-Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Biotin), Minerals (Zinc Proteinate, Zinc Sulfate, Ferrous Sulfate, Iron Proteinate, Copper Sulfate, Copper Proteinate, Sodium Selenite, Manganese Sulfate, Manganese Proteinate, Calcium Iodate), Citric Acid (Preservative), Mixed Tocopherols (Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.9,
+        "taurine_min": 0.25,
+        "omega_3_min": 1.0,
+        "omega_6_min": 3.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3300 kcal/kg, 340 kcal/cup"
+    },
+    {
+      "name": "Limited Ingredient Diets Adult Dry Dog Food - Salmon & Sweet Potato",
+      "brand": "Natural Balance",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/natural-balance-limited-ingredient-diets-adult-dry-dog-food---salmon-and-sweet-potato-58816.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "L.I.D. Limited Ingredient Diets",
+      "life_stage": "adult",
+      "source_id": "5299936",
+      "images": [
+        "/products/natural-balance/natural-balance-food-limited-ingredient-diets-adult-dry-dog-food-salmon-sweet-potato.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633777483",
+          "sku": "5299936"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633777513",
+          "sku": "5299962"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633777544",
+          "sku": "5299994"
+        }
+      ],
+      "ingredients_raw": "Salmon, Menhaden Fish Meal, Sweet Potatoes, Cassava Flour, Potatoes, Sunflower Oil (Preserved with Mixed Tocopherols), Brewers Dried Yeast, Flaxseed, Natural Flavor, Potato Protein, Salt, Menhaden Fish Oil (Preserved with Mixed Tocopherols), Potassium Chloride, Taurine, Dl-methionine, Vitamins (Vitamin E Supplement, Niacin, D-calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Thiamine Mononitrate, Menadione Sodium Bisulfite Complex, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Folic Acid), Minerals (Zinc Proteinate, Zinc Sulfate, Ferrous Sulfate, Iron Proteinate, Copper Sulfate, Copper Proteinate, Manganese Sulfate, Manganese Proteinate, Sodium Selenite, Calcium Iodate), Choline Chloride, Dicalcium Phosphate, Citric Acid (Used As A Preservative), Rosemary Extract, Green Tea Extract, Spearmint Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 10.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 0.8,
+        "phosphorus_min": 0.6,
+        "taurine_min": 0.3,
+        "omega_3_min": 0.4,
+        "omega_6_min": 2.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3450 kcal/kg, 373 kcal/cup"
+    },
+    {
+      "name": "Limited Ingredient Diets Small Breed Adult Dry Dog Food - Duck & Potato",
+      "brand": "Natural Balance",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/natural-balance-limited-ingredient-diets-small-breed-adult-dry-dog-food---duck-and-potato-58811.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "L.I.D. Limited Ingredient Diets",
+      "life_stage": "adult",
+      "breed_size": "Small",
+      "source_id": "5299940",
+      "images": [
+        "/products/natural-balance/natural-balance-food-limited-ingredient-diets-small-breed-adult-dry-dog-food-duck-potato.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633777780",
+          "sku": "5299940"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633777810",
+          "sku": "5299986"
+        }
+      ],
+      "ingredients_raw": "Duck, Duck Meal, Potatoes, Cassava Flour, Sweet Potatoes, Brewers Dried Yeast, Sunflower Oil (Preserved with Mixed Tocopherols), Potato Protein, Flaxseed, Natural Flavor, Menhaden Fish Oil (Preserved with Mixed Tocopherols), Salt, Potassium Chloride, Taurine, Dl-methionine, Vitamins (Vitamin E Supplement, Ascorbic Acid (Source of Vitamin C), Niacin, Vitamin A Supplement, Thiamine Mononitrate, D-calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Biotin, Vitamin D3 Supplement), Choline Chloride, Minerals (Zinc Proteinate, Zinc Sulfate, Ferrous Sulfate, Iron Proteinate, Copper Sulfate, Copper Proteinate, Manganese Sulfate, Manganese Proteinate, Sodium Selenite, Calcium Iodate), Citric Acid (Used As A Preservative), Rosemary Extract, Green Tea Extract, Spearmint Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 10.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 0.8,
+        "phosphorus_min": 0.6,
+        "taurine_min": 0.3,
+        "omega_3_min": 0.5,
+        "omega_6_min": 1.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3431 kcal/kg, 375 kcal/cup"
+    },
+    {
+      "name": "Limited Ingredient Diets With-Grain Adult Dry Dog Food - Chicken & Brown Rice",
+      "brand": "Natural Balance",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/natural-balance-limited-ingredient-diets-with-grain-adult-dry-dog-food---chicken-and-brown-rice-58802.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "L.I.D. Limited Ingredient Diets",
+      "life_stage": "adult",
+      "source_id": "5299788",
+      "images": [
+        "/products/natural-balance/natural-balance-food-limited-ingredient-diets-with-grain-adult-dry-dog-food-chicken-brown-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633776738",
+          "sku": "5299788"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633775335",
+          "sku": "5299941"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Meal, Brown Rice, Brewers Rice, Rice Bran, Chicken Fat (Preserved with Mixed Tocopherols), Dried Tomato Pomace, Brewers Dried Yeast, Natural Flavor, Flaxseed, Salt, Taurine, Menhaden Fish Oil (Preserved with Mixed Tocopherols), Vitamins (Vitamin E Supplement, Niacin Supplement, D-calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Thiamine Mononitrate, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Folic Acid, Biotin, Vitamin B12 Supplement), Choline Chloride, Dl-methionine, Potassium Chloride, Minerals (Zinc Proteinate, Zinc Sulfate, Ferrous Sulfate, Iron Proteinate, Copper Sulfate, Copper Proteinate, Manganese Sulfate, Manganese Proteinate, Sodium Selenite, Calcium Iodate), Lactic Acid, Citric Acid (Used As A Preservative), Mixed Tocopherols (Used As A Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 23.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "calcium_min": 0.8,
+        "phosphorus_min": 0.6,
+        "taurine_min": 0.25,
+        "omega_3_min": 0.3,
+        "omega_6_min": 2.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3445 kcal/kg, 322 kcal/cup"
+    },
+    {
+      "name": "Limited Ingredient Dry Dog Food, Lamb & Brown Rice Recipe",
+      "brand": "Natural Balance",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/natural-balance-limited-ingredient-dry-dog-food-lamb-and-brown-rice-recipe-96144.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "L.I.D. Limited Ingredient Diets",
+      "source_id": "5377916",
+      "images": [
+        "/products/natural-balance/natural-balance-food-limited-ingredient-dry-dog-food-lamb-brown-rice-recipe.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633007788",
+          "sku": "5377916"
+        }
+      ],
+      "ingredients_raw": "Lamb, Lamb Meal (Source Of Glucosamine), Brown Rice, Brewers Rice, Oatmeal, Dried Yeast, Canola Oil (Preserved with Mixed Tocopherols), Rice Bran, Dried Plain Beet Pulp, Monocalcium Phosphate, Natural Flavor, Potassium Chloride, Salt, DL—Methionine, Tryptophan, Taurine, Minerals (Ferrous Sulfate, Zinc Oxide, Zinc Proteinate, Selenium Yeast, Iron Proteinate, Manganous Oxide, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Potassium Iodide), Calcium Carbonate, Choline Chloride, Vitamins (Vitamin E Supplement, L—Ascorbyl—2—Polyphosphate, Niacin Supplement, d—Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Thiamine Mononitrate, Biotin, Vitamin D3 Supplement, Folic Acid), Mixed Tocopherols (Preservative), Rosmary Extract, Green Tea Extract, Citric Acid (Preservative)",
+      "guaranteed_analysis": {
+        "crude_protein_min": 22.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "taurine_min": 0.25
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3460 kcal/kg, 345 kcal/cup"
+    },
+    {
+      "name": "Limited Ingredient Dry Dog Food, Large Breed Lamb & Brown Rice Recipe",
+      "brand": "Natural Balance",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/natural-balance-limited-ingredient-dry-dog-food-large-breed-lamb-and-brown-rice-recipe-26-lbs-96142.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "L.I.D. Limited Ingredient Diets",
+      "breed_size": "Large",
+      "source_id": "5377684",
+      "images": [
+        "/products/natural-balance/natural-balance-food-limited-ingredient-dry-dog-food-large-breed-lamb-brown-rice-recipe.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633007856",
+          "sku": "5377684"
+        }
+      ],
+      "ingredients_raw": "Lamb, Lamb Meal (Source Of Glucosamine), Brown Rice, Brewers Rice, Oatmeal, Dried Yeast, Canola Oil (Preserved with Mixed Tocopherols), Rice Bran, Dried Plain Beet Pulp, Monocalcium Phosphate, Natural Flavor, Potassium Chloride, Salt, DL—Methionine, Tryptophan, Taurine, Minerals (Ferrous Sulfate, Zinc Oxide, Zinc Proteinate, Selenium Yeast, Iron Proteinate, Manganous Oxide, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Potassium Iodide), Calcium Carbonate, Choline Chloride, Vitamins (Vitamin E Supplement, L—Ascorbyl—2—Polyphosphate, Niacin Supplement, d—Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Thiamine Mononitrate, Biotin, Vitamin D3 Supplement, Folic Acid), Mixed Tocopherols (Preservative), Rosmary Extract, Green Tea Extract, Citric Acid (Preservative)",
+      "guaranteed_analysis": {
+        "crude_protein_min": 22.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "taurine_min": 0.25
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3460 kcal/kg, 345 kcal/cup"
+    },
+    {
+      "name": "Limited Ingredient Dry Dog Food, Vegetarian Recipe with Superfood Blend",
+      "brand": "Natural Balance",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/natural-balance-limited-ingredient-dry-dog-food-vegetarian-recipe-with-superfood-blend-96146.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "L.I.D. Limited Ingredient Diets",
+      "source_id": "5377918",
+      "images": [
+        "/products/natural-balance/natural-balance-food-limited-ingredient-dry-dog-food-vegetarian-recipe-with-superfood-blend.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633007818",
+          "sku": "5377918"
+        }
+      ],
+      "ingredients_raw": "Brown Rice, Oatmeal, Pearled Barley, Peas, Pea Protein, Canola Oil (Preserved with Mixed Tocopherols), Potato Protein, Potatoes, Beet Pulp, Monocalcium Phosphate, Tomato Pomace, Natural Flavor, Calcium Carbonate, DL—Methionine, Flaxseed, Potassium Chloride, Choline Chloride, Salt, Taurine, Minerals (Zinc Proteinate, Zinc Sulfate, Ferrous Sulfate, Iron Proteinate, Copper Sulfate, Copper Proteinate, Sodium Selenite, Manganese Sulfate, Manganese Proteinate, Calcium Iodate), Vitamins (Vitamin E Supplement, Vitamin A Supplement, d—Calcium Pantothenate, Niacin Supplement, Biotin, Riboflavin Supplement, Vitamin D2 Supplement, Vitamin B12 Supplement, Thiamine Mononitrate, Pyridoxine Hydrochloride, Folic Acid), Parsley, Spinach, L—Lysine Monohydrochloride, Cranberries, Mixed Tocopherols (Preservative), L—Carnitine, Dried Kelp, Yucca Schidigera Extract, L—Ascorbyl—2—Polyphosphate, Rosemary Extract, Green Tea Extract, Citric Acid (Preservative)",
+      "guaranteed_analysis": {
+        "crude_protein_min": 18.0,
+        "crude_fat_min": 8.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 0.5,
+        "phosphorus_min": 0.4,
+        "taurine_min": 0.1
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3360 kcal/kg, 335 kcal/cup"
+    },
+    {
+      "name": "Limited Ingredient Grain Free Dry Dog Food, Salmon & Sweet Potato Recipe",
+      "brand": "Natural Balance",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/natural-balance-limited-ingredient-grain-free-dry-dog-food-salmon-and-sweet-potato-recipe-96145.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "L.I.D. Limited Ingredient Diets",
+      "source_id": "5377917",
+      "images": [
+        "/products/natural-balance/natural-balance-food-limited-ingredient-grain-free-dry-dog-food-salmon-sweet-potato-recipe.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633007726",
+          "sku": "5377917"
+        }
+      ],
+      "ingredients_raw": "Salmon, Salmon Meal (Source Of Glucosamine), Sweet Potatoes, Potatoes, Dried Yeast, Tapioca Starch, Dried Plain Beet Pulp, Canola Oil (Preserved With Mixed Tocopherols), Flaxseed, Natural Flavor, Monocalcium Phosphate, Taurine, Choline Chloride, Salt, Potassium Chloride, Minerals (Ferrous Sulfate, Zinc Oxide, Zinc Proteinate, Selenium Yeast, Iron Proteinate, Manganous Oxide, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Potassium Iodide), Calcium Carbonate, Salmon Oil, Vitamins (Vitamin E Supplement, L—Ascorbyl—2—Polyphosphate, Niacin Supplement, d—Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Thiamine Mononitrate, Biotin, Folic Acid), Mixed Tocopherols (Preservative), Rosemary Extract, Green Tea Extract, Citric Acid (Preservative)",
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 10.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "calcium_min": 0.8,
+        "phosphorus_min": 0.6,
+        "taurine_min": 0.25
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3400 kcal/kg, 365 kcal/cup"
+    },
+    {
+      "name": "Limited Ingredient Reserve Grain Free Dry Dog Food, Duck & Potato Recipe",
+      "brand": "Natural Balance",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/natural-balance-limited-ingredient-reserve-grain-free-dry-dog-food-duck-and-potato-recipe-96141.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "L.I.D. Limited Ingredient Diets",
+      "source_id": "5377921",
+      "images": [
+        "/products/natural-balance/natural-balance-food-limited-ingredient-reserve-grain-free-dry-dog-food-duck-potato-recipe.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633007757",
+          "sku": "5377921"
+        }
+      ],
+      "ingredients_raw": "Duck, Duck Meal (Source Of Glucosamine), Potatoes, Sweet Potatoes, Tapioca Starch, Dried Yeast, Canola Oil (Preserved With Mixed Tocopherols), Potato Protein, Flaxseed, Natural Flavor, Salmon Oil, Potassium Chloride, Taurine, Choline Chloride, Minerals (Ferrous Sulfate, Zinc Oxide, Zinc Proteinate, Selenium Yeast, Iron Proteinate, Manganous Oxide, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Potassium Iodide), Calcium Carbonate, Vitamins (Vitamin E Supplement, L—Ascorbyl—2—Polyphosphate, Niacin Supplement, d—Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Thiamine Mononitrate, Biotin, Vitamin D3 Supplement, Folic Acid), Mixed Tocopherols (Preservative), DL—Methionine, Rosemary Extract, Green Tea Extract, Citric Acid (Preservative)",
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 10.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 0.8,
+        "phosphorus_min": 0.6,
+        "taurine_min": 0.3
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3390 kcal/kg, 365 kcal/cup"
+    },
+    {
+      "name": "Limited Ingredient Reserve Grain Free Dry Dog Food, Sweet Potato & Venison Recipe",
+      "brand": "Natural Balance",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/natural-balance-limited-ingredient-reserve-grain-free-dry-dog-food-sweet-potato-and-venison-recipe-96143.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "L.I.D. Limited Ingredient Diets",
+      "source_id": "5377682",
+      "images": [
+        "/products/natural-balance/natural-balance-food-limited-ingredient-reserve-grain-free-dry-dog-food-sweet-potato-venison-recipe.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633007825",
+          "sku": "5377682"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633007849",
+          "sku": "5377915"
+        }
+      ],
+      "ingredients_raw": "Sweet Potatoes, Venison, Potatoes, Pea Protein, Dried Yeast, Canola Oil (Preserved With Mixed Tocopherols), Flaxseed, Potato Protein, Monocalcium Phosphate, Calcium Carbonate, Natural Flavor, Salmon Oil, Threonine, Tryptophan, DL—Methionine, Taurine, Choline Chloride, Salt, Potassium Chloride, Minerals (Ferrous Sulfate, Zinc Oxide, Zinc Proteinate, Selenium Yeast, Iron Proteinate, Manganous Oxide, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Potassium Iodide), Vitamins (Vitamin E Supplement, L—Ascorbyl—2—Polyphosphate, Niacin Supplement, d—Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Thiamine Mononitrate, Biotin, Vitamin D3 Supplement, Folic Acid), Mixed Tocopherols (Preservative), Rosemary Extract, Green Tea Extract, Citric Acid (Preservative)",
+      "guaranteed_analysis": {
+        "crude_protein_min": 20.0,
+        "crude_fat_min": 10.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 0.8,
+        "phosphorus_min": 0.6,
+        "taurine_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3360 kcal/kg, 345 kcal/cup"
+    },
+    {
+      "name": "Limited Ingredient Small Breed Adult Dry Dog Food - Chicken & Sweet Potato",
+      "brand": "Natural Balance",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/natural-balance-limited-ingredient-small-breed-adult-dry-dog-food---chicken-and-sweet-potato-58808.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "L.I.D. Limited Ingredient Diets",
+      "life_stage": "adult",
+      "breed_size": "Small",
+      "source_id": "5299935",
+      "images": [
+        "/products/natural-balance/natural-balance-food-limited-ingredient-small-breed-adult-dry-dog-food-chicken-sweet-potato.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633777971",
+          "sku": "5299935"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633778015",
+          "sku": "5299961"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Meal, Sweet Potatoes, Cassava Flour, Potatoes, Chicken Fat (Preserved with Mixed Tocopherols), Brewers Dried Yeast, Flaxseed, Natural Flavor, Potato Protein, Menhaden Fish Oil (Preserved with Mixed Tocopherols), Salt, Potassium Chloride, Taurine, Dl-methionine, Vitamins (Vitamin E Supplement, Ascorbic Acid (Source of Vitamin C), Niacin, Vitamin A Supplement, Thiamine Mononitrate, D-calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Biotin, Vitamin D3 Supplement ), Choline Chloride, Minerals (Zinc Proteinate, Zinc Sulfate, Ferrous Sulfate, Iron Proteinate, Copper Sulfate, Copper Proteinate, Manganese Sulfate, Manganese Proteinate, Sodium Selenite, Calcium Iodate), Dicalcium Phosphate, Citric Acid (Used As A Preservative), Rosemary Extract, Green Tea Extract, Spearmint Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 10.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 0.8,
+        "phosphorus_min": 0.6,
+        "taurine_min": 0.3,
+        "omega_3_min": 0.4,
+        "omega_6_min": 2.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3576 kcal/kg, 393 kcal/cup"
+    },
+    {
+      "name": "Limited Ingredient Small Breed Adult Dry Dog Food - Salmon & Sweet Potato",
+      "brand": "Natural Balance",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/natural-balance-limited-ingredient-small-breed-adult-dry-dog-food---salmon-and-sweet-potato-58817.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "L.I.D. Limited Ingredient Diets",
+      "life_stage": "adult",
+      "breed_size": "Small",
+      "source_id": "5299937",
+      "images": [
+        "/products/natural-balance/natural-balance-food-limited-ingredient-small-breed-adult-dry-dog-food-salmon-sweet-potato.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633778053",
+          "sku": "5299937"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633778077",
+          "sku": "5299963"
+        }
+      ],
+      "ingredients_raw": "Salmon, Menhaden Fish Meal, Sweet Potatoes, Cassava Flour, Potatoes, Sunflower Oil (Preserved with Mixed Tocopherols), Brewers Dried Yeast, Flaxseed, Natural Flavor, Potato Protein, Salt, Menhaden Fish Oil (Preserved with Mixed Tocopherols), Potassium Chloride, Taurine, Dl-methionine, Vitamins (Vitamin E Supplement, Niacin, D-calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Thiamine Mononitrate, Menadione Sodium Bisulfite Complex, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Folic Acid), Minerals (Zinc Proteinate, Zinc Sulfate, Ferrous Sulfate, Iron Proteinate, Copper Sulfate, Copper Proteinate, Manganese Sulfate, Manganese Proteinate, Sodium Selenite, Calcium Iodate), Choline Chloride, Dicalcium Phosphate, Citric Acid (Used As A Preservative), Rosemary Extract, Green Tea Extract, Spearmint Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 10.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 0.8,
+        "phosphorus_min": 0.6,
+        "taurine_min": 0.3,
+        "omega_3_min": 0.5,
+        "omega_6_min": 2.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3450 kcal/kg, 380 kcal/cup"
+    },
+    {
+      "name": "Limited Ingredient With-Grain Large Breed Adult Dry Dog Food - Lamb & Brown Rice",
+      "brand": "Natural Balance",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/natural-balance-limited-ingredient-with-grain-large-breed-adult-dry-dog-food---lamb-and-brown-rice-58813.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "L.I.D. Limited Ingredient Diets",
+      "life_stage": "adult",
+      "breed_size": "Large",
+      "source_id": "5299959",
+      "images": [
+        "/products/natural-balance/natural-balance-food-limited-ingredient-with-grain-large-breed-adult-dry-dog-food-lamb-brown-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633779258",
+          "sku": "5299959"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633779272",
+          "sku": "5299992"
+        }
+      ],
+      "ingredients_raw": "Lamb, Brown Rice, Lamb Meal, Brewers Rice, Rice Bran, Brewers Dried Yeast, Sunflower Oil (Preserved with Mixed Tocopherols), Natural Flavor, Potassium Chloride, Salt, Choline Chloride, Dl-methionine, Taurine, Vitamins (Vitamin E Supplement, Niacin Supplement, D-calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Thiamine Mononitrate, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Folic Acid, Biotin, Vitamin B12 Supplement), Minerals (Zinc Proteinate, Zinc Sulfate, Ferrous Sulfate, Iron Proteinate, Copper Sulfate, Copper Proteinate, Manganese Sulfate, Manganese Proteinate, Sodium Selenite, Calcium Iodate), Rosemary Extract, Green Tea Extract, Spearmint Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 23.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "taurine_min": 0.25,
+        "omega_3_min": 0.12,
+        "omega_6_min": 2.4
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3600 kcal/kg, 370 kcal/cup"
+    },
+    {
+      "name": "Limited Ingredient With-Grain Small Breed Adult Dry Dog Food - Lamb & Brown Rice",
+      "brand": "Natural Balance",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/natural-balance-limited-ingredient-with-grain-small-breed-adult-dry-dog-food---lamb-and-brown-rice-58814.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "L.I.D. Limited Ingredient Diets",
+      "life_stage": "adult",
+      "breed_size": "Small",
+      "source_id": "5299793",
+      "images": [
+        "/products/natural-balance/natural-balance-food-limited-ingredient-with-grain-small-breed-adult-dry-dog-food-lamb-brown-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633779210",
+          "sku": "5299793"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633779234",
+          "sku": "5299958"
+        }
+      ],
+      "ingredients_raw": "Lamb, Brown Rice, Lamb Meal, Brewers Rice, Rice Bran, Brewers Dried Yeast, Sunflower Oil (Preserved with Mixed Tocopherols), Natural Flavor, Potassium Chloride, Salt, Choline Chloride, Dl-methionine, Taurine, Vitamins (Vitamin E Supplement, Niacin Supplement, D-calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Thiamine Mononitrate, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Folic Acid, Biotin, Vitamin B12 Supplement), Minerals (Zinc Proteinate, Zinc Sulfate, Ferrous Sulfate, Iron Proteinate, Copper Sulfate, Copper Proteinate, Manganese Sulfate, Manganese Proteinate, Sodium Selenite, Calcium Iodate), Rosemary Extract, Green Tea Extract, Spearmint Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 23.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "taurine_min": 0.25,
+        "omega_3_min": 0.12,
+        "omega_6_min": 2.4
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3600 kcal/kg, 370 kcal/cup"
+    },
+    {
+      "name": "Original Ultra Grain Free Adult Dry Dog Food - Gluten Free, Chicken",
+      "brand": "Natural Balance",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/natural-balance-original-ultra-grain-free-adult-dry-dog-food---gluten-free-chicken-52890.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Original Ultra",
+      "life_stage": "adult",
+      "source_id": "5287445",
+      "images": [
+        "/products/natural-balance/natural-balance-food-original-ultra-grain-free-adult-dry-dog-food-gluten-free-chicken.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633774161",
+          "sku": "5287445"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Meal, Lentils, Dried Peas, Egg, Chicken Fat (Preserved With Mixed Tocopherols), Flaxseed, Sweet Potatoes, Pea Starch, Natural Flavor, Pumpkin, Spinach, Dried Tomato Pomace, Menhaden Fish Oil (Preserved With Mixed Tocopherols), Carrots, Cranberries, Apples, Salt, Potassium Chloride, Dicalcium Phosphate, Taurine, Dl-Methionine, Vitamins (Vitamin E Supplement, Ascorbic Acid (Source Of Vitamin C), Niacin, Vitamin A Supplement, Thiamine Mononitrate , D-Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Biotin, Vitamin D3 Supplement), Minerals (Zinc Proteinate, Zinc Sulfate, Ferrous Sulfate, Iron Proteinate, Copper Sulfate, Copper Proteinate, Manganese Sulfate, Sodium Selenite, Calcium Iodate), L-Threonine, Lactic Acid, L-Carnitine, Citric Acid (Used As A Preservative), Yucca Schidigera Extract, Choline Chloride, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 27.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.2,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "taurine_min": 0.25,
+        "omega_3_min": 0.8,
+        "omega_6_min": 2.4
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3637 kcal/kg, 405 kcal/cup"
+    },
+    {
+      "name": "Specialized Nutrition Digestive & Immune Health Adult Dog Dry Food - Lamb & Oatmeal",
+      "brand": "Natural Balance",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/natural-balance-specialized-nutrition-digestive-and-immune-health-adult-dog-dry-food---lamb-and-oatmeal-87727.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Specialized Nutrition",
+      "life_stage": "adult",
+      "source_id": "5362711",
+      "images": [
+        "/products/natural-balance/natural-balance-food-specialized-nutrition-digestive-immune-health-adult-dog-dry-food-lamb-oatmeal.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633007177",
+          "sku": "5362711"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633007184",
+          "sku": "5362712"
+        }
+      ],
+      "ingredients_raw": "Lamb, Chicken Meal (Source of Glucosamine), Oatmeal, Whole Grain Sorghum, Brewers Rice, Dried Yeast, Chickpeas, Pumpkin, Chicken Fat (Preserved with Mixed Tocopherols), Flaxseed, Turkey Meal (Source of Glucosamine), Brown Rice, Sweet Potatoes, Dried Plain Beet Pulp, Chicken, Natural Flavor, Carrots, Spinach, Cranberries, Blueberries, Dried Chicory Root, Malted Barley Flour, Vitamins (Vitamin E Supplement, Ascorbic Acid, Niacin Supplement, Vitamin A Supplement, Thiamine Mononitrate, d-Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, Biotin), Salt, Potassium Chloride, Choline Chloride, Taurine, Minerals (Zinc Proteinate, Zinc Sulfate, Ferrous Sulfate, Iron Proteinate, Copper Sulfate, Copper Proteinate, Sodium Selenite, Manganese Sulfate, Manganese Proteinate, Calcium Iodate), Dried Bacillus coagulans Fermentation Product, Salmon Oil, Mixed Tocopherols (Preservative), L-Ascorbyl-2-polyphosphate, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.7,
+        "taurine_min": 0.2,
+        "omega_3_min": 0.75,
+        "omega_6_min": 2.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3600 kcal/kg, 370 kcal/cup"
+    },
+    {
+      "name": "Specialized Nutrition Digestive & Joint Health Small Breed Adult Dry Dog Food",
+      "brand": "Natural Balance",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/natural-balance-specialized-nutrition-digestive-and-joint-health-small-breed-adult-dry-dog-food-87726.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Specialized Nutrition",
+      "life_stage": "adult",
+      "breed_size": "Small",
+      "source_id": "5362199",
+      "images": [
+        "/products/natural-balance/natural-balance-food-specialized-nutrition-digestive-joint-health-small-breed-adult-dry-dog-food.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633007191",
+          "sku": "5362199"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633007207",
+          "sku": "5362200"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Meal, Oatmeal, Whole Grain Sorghum, Brewers Rice, Chickpeas, Peas, Pumpkin, Chicken Fat (Preserved with Mixed Tocopherols), Turkey Meal, Chicken Bone Broth, Flaxseed, Brown Rice, Sweet Potatoes, Dried Plain Beet Pulp, Natural Flavor, Salmon Oil, Dried Chicory Root, Malted Barley Flour, Vitamins (Vitamin E Supplement, Ascorbic Acid, Niacin Supplement, Vitamin A Supplement, Thiamine Mononitrate, d-Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, Biotin), Choline Chloride, Salt, Potassium Chloride, Taurine, Minerals (Zinc Proteinate, Zinc Sulfate, Ferrous Sulfate, Iron Proteinate, Copper Sulfate, Copper Proteinate, Sodium Selenite, Manganese Sulfate, Manganese Proteinate, Calcium Iodate), Chicken Cartilage, Dried Bacillus coagulans Fermentation Product, Dried Yeast, Mixed Tocopherols (Preservative), L-Carnitine, L-Ascorbyl-2-polyphosphate, Rosemary Extract, Dried Kelp, Spearmint, Parsley",
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.65,
+        "taurine_min": 0.2,
+        "omega_3_min": 0.75,
+        "omega_6_min": 2.75
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3595 kcal/kg, 370 kcal/cup"
+    },
+    {
+      "name": "Specialized Nutrition Joint & Muscle Health Adult Dry Dog Food - Chicken & Oatmeal",
+      "brand": "Natural Balance",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/natural-balance-specialized-nutrition-joint-and-muscle-health-adult-dry-dog-food---chicken-and-oatmeal-87728.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Specialized Nutrition",
+      "life_stage": "adult",
+      "source_id": "5362709",
+      "images": [
+        "/products/natural-balance/natural-balance-food-specialized-nutrition-joint-muscle-health-adult-dry-dog-food-chicken-oatmeal.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633007153",
+          "sku": "5362709"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633007160",
+          "sku": "5362710"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Meal, Oatmeal, Whole Grain Sorghum, Brewers Rice, Peas, Chickpeas, Pumpkin, Chicken Fat (Preserved with Mixed Tocopherols), Turkey Meal, Sweet Potatoes, Chicken Bone Broth, Flaxseed, Brown Rice, Dried Plain Beet Pulp, Natural Flavor, Salmon Oil, Dried Chicory Root, Malted Barley Flour, Vitamins (Vitamin E Supplement, Ascorbic Acid, Niacin Supplement, Vitamin A Supplement, Thiamine Mononitrate, d-Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, Biotin), Choline Chloride, Salt, Potassium Chloride, Taurine, Minerals (Zinc Proteinate, Zinc Sulfate, Ferrous Sulfate, Iron Proteinate, Copper Sulfate, Copper Proteinate, Sodium Selenite, Manganese Sulfate, Manganese Proteinate, Calcium Iodate), Chicken Cartilage, Dried Bacillus coagulans Fermentation Product, Dried Yeast, Mixed Tocopherols (Preservative), L-Carnitine, L-Ascorbyl-2-polyphosphate, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.7,
+        "taurine_min": 0.2,
+        "omega_3_min": 0.75,
+        "omega_6_min": 2.75
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3590 kcal/kg, 370 kcal/cup"
+    },
+    {
+      "name": "Specialized Nutrition Sensitive Skin & Stomach Adult Dry Dog Food - Salmon & Oatmeal",
+      "brand": "Natural Balance",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/natural-balance-specialized-nutrition-sensitive-skin-and-stomach-adult-dry-dog-food---salmon-and-oatmeal-87729.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Specialized Nutrition",
+      "life_stage": "adult",
+      "source_id": "5362707",
+      "images": [
+        "/products/natural-balance/natural-balance-food-specialized-nutrition-sensitive-skin-stomach-adult-dry-dog-food-salmon-oatmeal.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633007139",
+          "sku": "5362707"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633007146",
+          "sku": "5362708"
+        }
+      ],
+      "ingredients_raw": "Salmon, Chicken Meal (Source of Glucosamine), Oatmeal, Whole Grain Sorghum, Brewers Rice, Peas, Chicken Fat (Preserved with Mixed Tocopherols), Dried Yeast, Pumpkin, Chicken Bone Broth, Menhaden Fish Meal, Brown Rice, Sweet Potatoes, Chicken, Dried Plain Beet Pulp, Chickpeas, Flaxseed, Natural Flavor, Dried Chicory Root, Malted Barley Flour, Vitamins (Vitamin E Supplement, Ascorbic Acid, Niacin Supplement, Vitamin A Supplement, Thiamine Mononitrate, d-Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, Biotin), Choline Chloride, Salt, Potassium Chloride, Taurine, Minerals (Zinc Proteinate, Zinc Sulfate, Ferrous Sulfate, Iron Proteinate, Copper Sulfate, Copper Proteinate, Sodium Selenite, Manganese Sulfate, Manganese Proteinate, Calcium Iodate), Dried Bacillus coagulans Fermentation Product, Salmon Oil, Mixed Tocopherols (Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "epa_min": 0.08,
+        "dha_min": 0.08,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.7,
+        "taurine_min": 0.2,
+        "omega_3_min": 0.6,
+        "omega_6_min": 2.8
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3605 kcal/kg, 370 kcal/cup"
+    },
+    {
+      "name": "Ultra Fat Dogs Weight Control Dog Food for Adults Chicken, Salmon, Barley",
+      "brand": "Natural Balance",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/natural-balance-ultra-fat-dogs-weight-control-dog-food-for-adults-chicken-salmon-barley-78509.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "source_id": "5343309",
+      "images": [
+        "/products/natural-balance/natural-balance-food-ultra-fat-dogs-weight-control-dog-food-for-adults-chicken-salmon-barley.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633014373",
+          "sku": "5343309"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633014366",
+          "sku": "5343310"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633014359",
+          "sku": "5343311"
+        }
+      ],
+      "ingredients_raw": "Chicken Meal, Salmon Meal, Chickpeas, Peas, Oat Groats, Pearled Barley, Dried Plain Beet Pulp, Pea Fiber, Dehydrated Alfalfa Meal, Chicken Fat (Preserved With Mixed Tocopherols), Oat Fiber, Pea Protein, Tomato Pomace, Natural Flavor, Salt, Dried Egg Product, Brewers Dried Yeast, Spinach, Parsley, Carrots, Salmon Oil (Preserved With Mixed Tocopherols), Potassium Chloride, Dl-methionine, Taurine, Vitamins (Vitamin E Supplement, Ascorbic Acid, Niacin Supplement, Vitamin A Supplement, Thiamine Mononitrate, d-calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, Biotin), Choline Chloride, Inulin, Minerals (Zinc Proteinate, Zinc Sulfate, Ferrous Sulfate, Iron Proteinate, Copper Sulfate, Copper Proteinate, Sodium Selenite, Manganese Sulfate, Manganese Proteinate, Calcium Iodate), Ascorbic Acid (Source Of Vitamin C), L-carnitine, L-lysine Monohydrochloride, Citric Acid (Preservative), Mixed Tocopherols (Preservative), Yucca Schidigera Extract, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 7.5,
+        "crude_fiber_max": 10.5,
+        "moisture_max": 10.0,
+        "calcium_min": 0.6,
+        "phosphorus_min": 0.5,
+        "taurine_min": 0.25,
+        "omega_3_min": 0.45,
+        "omega_6_min": 2.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3700 kcal/kg, 315 kcal/cup"
+    },
+    {
+      "name": "Vegetarian Small Breed Adult Dog Food - Limited Ingredient",
+      "brand": "Natural Balance",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/natural-balance-vegetarian-small-breed-adult-dog-food---limited-ingredient-74331.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "L.I.D. Limited Ingredient Diets",
+      "life_stage": "adult",
+      "breed_size": "Small",
+      "source_id": "5334339",
+      "images": [
+        "/products/natural-balance/natural-balance-food-vegetarian-small-breed-adult-dog-food-limited-ingredient.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633014168",
+          "sku": "5334339"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633014175",
+          "sku": "5334340"
+        }
+      ],
+      "ingredients_raw": "Brown Rice, Oat Groats, Pearled Barley, Peas, Potato Protein, Canola Oil (Preserved With Mixed Tocopherols), Potatoes, Dicalcium Phosphate, Natural Vegetable Flavor, Tomato Pomace, Dried Vegetable Broth, Calcium Carbonate, Taurine, DL-Methionine, Potassium Chloride, Choline Chloride, Salt, Minerals (Zinc Proteinate, Zinc Sulfate, Ferrous Sulfate, Iron Proteinate, Copper Sulfate, Copper Proteinate, Sodium Selenite, Manganese Sulfate, Manganese Proteinate, Calcium Iodate), Vitamins (Vitamin E Supplement, Vitamin A Supplement, D-Calcium Pantothenate, Niacin Supplement, Biotin, Riboflavin Supplement, Vitamin D2 Supplement, Vitamin B12 Supplement, Thiamine Mononitrate, Pyridoxine Hydrochloride, Folic Acid), Flaxseed, Citric Acid (Preservative), Mixed Tocopherols (Preservative), Parsley, Spinach, L-Lysine Monohydrochloride, Cranberries, L-Carnitine, Kelp Meal, Yucca Schidigera Extract, L-Ascorbyl-2-Polyphosphate, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 18.0,
+        "crude_fat_min": 8.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 0.5,
+        "phosphorus_min": 0.4,
+        "taurine_min": 0.1,
+        "omega_3_min": 0.3,
+        "omega_6_min": 1.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3330 kcal/kg, 315 kcal/cup"
+    },
+    {
+      "name": "Limited Ingredient Grain Free Potato & Duck Dog Treat",
+      "brand": "Natural Balance",
+      "url": "https://www.petsmart.ca/dog/treats/biscuits-cookies-and-bakery-treats/natural-balance-limited-ingredient-grain-free-potato-and-duck-dog-treat-30576.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "L.I.D. Limited Ingredient Diets",
+      "source_id": "5236615",
+      "images": [
+        "/products/natural-balance/natural-balance-treat-limited-ingredient-grain-free-potato-duck-dog-treat.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633612005",
+          "sku": "5236615"
+        }
+      ],
+      "ingredients_raw": "Potatoes, Duck, Potato Protein, Cane Molasses, Canola Oil (Preserved with Mixed Tocopherols), Natural Flavor, Rosemary Extract, Citric Acid (Preservative)",
+      "guaranteed_analysis": {
+        "crude_protein_min": 13.0,
+        "crude_fat_min": 7.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3200 kcal/kg, 30 kcal/treat"
+    },
+    {
+      "name": "Limited Ingredient Grain Free Sweet Potato & Chicken Small Breed Dog Treat",
+      "brand": "Natural Balance",
+      "url": "https://www.petsmart.ca/dog/treats/biscuits-cookies-and-bakery-treats/natural-balance-limited-ingredient-grain-free-sweet-potato-and-chicken-small-breed-dog-treat-30565.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "L.I.D. Limited Ingredient Diets",
+      "breed_size": "Small",
+      "source_id": "5236492",
+      "images": [
+        "/products/natural-balance/natural-balance-treat-limited-ingredient-grain-free-sweet-potato-chicken-small-breed-dog-treat.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633622080",
+          "sku": "5236492"
+        }
+      ],
+      "ingredients_raw": "Potatoes, Sweet Potato, Potato Protein, Chicken Meal, Canola Oil (Preserved with Mixed Tocopherols), Cane Molasses, Chicken, Natural Flavor, Salt, Rosemary Extract, Citric Acid (Preservative)",
+      "guaranteed_analysis": {
+        "crude_protein_min": 13.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3100 kcal/kg, 6 kcal/treat"
+    },
+    {
+      "name": "Limited Ingredient Grain Free Sweet Potato & Fish Dog Treat",
+      "brand": "Natural Balance",
+      "url": "https://www.petsmart.ca/dog/treats/biscuits-cookies-and-bakery-treats/natural-balance-limited-ingredient-grain-free-sweet-potato-and-fish-dog-treat-30577.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "L.I.D. Limited Ingredient Diets",
+      "source_id": "5236616",
+      "images": [
+        "/products/natural-balance/natural-balance-treat-limited-ingredient-grain-free-sweet-potato-fish-dog-treat.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633615006",
+          "sku": "5236616"
+        }
+      ],
+      "ingredients_raw": "Potatoes, Sweet Potato, Potato Protein, Cane Molasses, Canola Oil (Mixed Tocopherols used as a Preservative), Salmon, Fish Meal, Calcium Carbonate, Salt, Natural Flavor, Mixed Tocopherols (Used As A Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 14.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3380 kcal/kg, 8 kcal/treat"
+    },
+    {
+      "name": "Limited Ingredient Grain Free Sweet Potato & Fish Small Breed Dog Treat",
+      "brand": "Natural Balance",
+      "url": "https://www.petsmart.ca/dog/treats/biscuits-cookies-and-bakery-treats/natural-balance-limited-ingredient-grain-free-sweet-potato-and-fish-small-breed-dog-treat-30567.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "L.I.D. Limited Ingredient Diets",
+      "breed_size": "Small",
+      "source_id": "5236494",
+      "images": [
+        "/products/natural-balance/natural-balance-treat-limited-ingredient-grain-free-sweet-potato-fish-small-breed-dog-treat.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633605083",
+          "sku": "5236494"
+        }
+      ],
+      "ingredients_raw": "Potatoes, Sweet Potato, Potato Protein, Cane Molasses, Canola Oil (Mixed Tocopherols used as a Preservative), Salmon, Fish Meal, Calcium Carbonate, Salt, Natural Flavor, Mixed Tocopherols (Used As A Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 14.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3380 kcal/kg, 8 kcal/treat"
+    },
+    {
+      "name": "Rewards Crunchy Biscuit Small Dog Treats - Peanut Butter",
+      "brand": "Natural Balance",
+      "url": "https://www.petsmart.ca/dog/treats/biscuits-cookies-and-bakery-treats/natural-balance-rewards-crunchy-biscuit-small-dog-treats---peanut-butter-75318.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "source_id": "5334109",
+      "images": [
+        "/products/natural-balance/natural-balance-treat-rewards-crunchy-biscuit-small-dog-treats-peanut-butter.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0723633014625",
+          "sku": "5334109"
+        }
+      ],
+      "ingredients_raw": "Brown Rice, Oats, Peanut Butter, Cranberry, Cane Molasses, Oat Fiber, Natural Vegetable Flavor, Peanut Oil, Mixed Tocopherols (Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.5,
+        "crude_fat_min": 4.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3540 kcal/kg, 8 kcal/treat"
+    }
+  ]
+}

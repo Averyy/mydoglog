@@ -1,0 +1,268 @@
+{
+  "brand": "Eukanuba",
+  "website_url": "https://www.petsmart.ca",
+  "scraped_at": "2026-03-10T02:56:10.299244+00:00",
+  "scraper_version": "0.1.0",
+  "stats": {
+    "product_count": 8,
+    "by_channel": {
+      "retail": 8
+    },
+    "by_type": {
+      "food": 8
+    }
+  },
+  "products": [
+    {
+      "name": "Adult Beef & Vegetable Stew Wet Dog Food - 12.5 oz Can",
+      "brand": "Eukanuba",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/eukanuba-adult-beef-and-vegetable-stew-wet-dog-food---125-oz-can-41713.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "life_stage": "adult",
+      "source_id": "5264675",
+      "images": [
+        "/products/eukanuba/eukanuba-food-adult-beef-vegetable-stew-wet-dog-food-12-5-oz-can.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "12.5 oz",
+          "upc": "0030111960016",
+          "sku": "5264675"
+        }
+      ],
+      "ingredients_raw": "Water sufficient for processing, chicken, beef liver, beef, tomato, carrots, pork plasma, peas, wheat flour, pork broth, powdered cellulose, ground flaxseed, guar gum, vegetable oil, sodium tripolyphosphate, natural flavors, calcium carbonate, potassium chloride, xanthan gum, magnesium oxide, choline chloride, trace minerals [zinc oxide, ferrous sulfate, zinc proteinate, copper sulfate, manganous oxide, sodium selenite, calcium iodate], vitamins [DL–alpha tocopherol acetate (source of vitamin E), D–calcium pantothenate, thiamine mononitrate (vitamin B1), vitamin A acetate, niacin supplement, riboflavin supplement, biotin, pyridoxine hydrochloride (vitamin B6), vitamin B12 supplement, folic acid, vitamin D3 supplement]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 4.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 81.3
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "919 kcal/kg, 326 kcal/can"
+    },
+    {
+      "name": "Adult Mixed Grill Chicken & Beef Wet Dog Food - 12.5 oz Can",
+      "brand": "Eukanuba",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/eukanuba-adult-mixed-grill-chicken-and-beef-wet-dog-food---125-oz-can-41715.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "life_stage": "adult",
+      "source_id": "5264677",
+      "images": [
+        "/products/eukanuba/eukanuba-food-adult-mixed-grill-chicken-beef-wet-dog-food-12-5-oz-can.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "12.5 oz",
+          "upc": "0030111960214",
+          "sku": "5264677"
+        }
+      ],
+      "ingredients_raw": "Water sufficient for processing, chicken, beef liver, tomato, beef, carrots, wheat flour, peas, pork plasma, egg product, powdered cellulose, ground flaxseed, vegetable oil, guar gum, sodium tripolyphosphate, calcium carbonate, potassium chloride, natural flavors, xanthan gum, magnesium oxide, trace minerals [zinc oxide, ferrous sulfate, zinc proteinate, copper sulfate, manganous oxide, sodium selenite, calcium iodate], vitamins [DL–alpha tocopherol acetate (source of vitamin E), D–calcium pantothenate, thiamine mononitrate (vitamin B1), niacin supplement, biotin, vitamin A acetate, riboflavin supplement, pyridoxine hydrochloride (vitamin B6), vitamin B12 supplement, folic acid, vitamin D3 supplement]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.9,
+        "crude_fat_min": 3.8,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 80.4
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "930 kcal/kg, 330 kcal/can"
+    },
+    {
+      "name": "Adult With Lamb & Rice Loaf in Gravy Wet Dog Food - 13.2 oz Can",
+      "brand": "Eukanuba",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/eukanuba-adult-with-lamb-and-rice-loaf-in-gravy-wet-dog-food---132-oz-can-41718.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "life_stage": "adult",
+      "source_id": "5264680",
+      "images": [
+        "/products/eukanuba/eukanuba-food-adult-with-lamb-rice-loaf-in-gravy-wet-dog-food-13-2-oz-can.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "13.2 oz",
+          "upc": "0030111960412",
+          "sku": "5264680"
+        }
+      ],
+      "ingredients_raw": "Water, Chicken, Pork Lung, Pork Liver, Chicken Liver, Lamb, Brown Rice, Rice Flour, Carrots, Tomato, Cellulose, Flaxseed, Spinach, Natural Flavors, Carob Gum, Carrageenan, Sodium Tripolyphosphate, Xanthan, Caramel Color, Potassium Chloride, Magnesium Oxide, Vitamin E Supplement, Zinc Oxide, Ferrous Sulfate, Calcium Carbonate, Zinc Proteinate, Copper Sulfate, Thiamine Mononitrate, Biotin, Manganous Oxide, Sodium Selenite, Niacin, d–Calcium Pantothenate, Riboflavin, Calcium Iodate, Vitamin A Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 4.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1086 kcal/kg, 407 kcal/can"
+    },
+    {
+      "name": "Large Breed Adult Dry Dog Food - Chicken",
+      "brand": "Eukanuba",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/eukanubaandtrade-large-breed-adult-dry-dog-food---chicken-73807.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "breed_size": "Large",
+      "source_id": "5334173",
+      "images": [
+        "/products/eukanuba/eukanuba-food-large-breed-adult-dry-dog-food-chicken.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0030111302052",
+          "sku": "5334173"
+        }
+      ],
+      "ingredients_raw": "Chicken, corn, chicken by–product meal, wheat, ground grain sorghum, chicken fat, natural flavors, dried plain beet pulp, egg product, potassium chloride, calcium carbonate, sodium hexametaphosphate, salt, fructooligosaccharides, fish oil, choline chloride, vitamins[DL–alpha tocopherol acetate (source of vitamin E), biotin, D–calcium pantothenate, vitamin A acetate, niacin supplement, pyridoxine hydrochloride (vitamin B6), thiamine mononitrate (vitamin B1), vitamin B12 supplement, riboflavin supplement, vitamin D3 supplement, folic acid], DL–methionine, glucosamine hydrochloride, trace minerals[zinc oxide, ferrous sulfate, copper sulfate, sodium selenite, calcium iodate], manganous oxide, chondroitin sulfate, rosemary extract, preserved with mixed tocopherols and citric acid",
+      "guaranteed_analysis": {
+        "crude_protein_min": 23.0,
+        "crude_fat_min": 13.0,
+        "crude_fiber_max": 3.9,
+        "moisture_max": 10.0,
+        "dha_min": 0.01
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3680 kcal/kg, 331 kcal/cup"
+    },
+    {
+      "name": "Large Breed Adult Dry Dog Food - Lamb & Rice",
+      "brand": "Eukanuba",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/eukanubaandtrade-large-breed-adult-dry-dog-food---lamb-and-rice-73799.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "breed_size": "Large",
+      "source_id": "5334034",
+      "images": [
+        "/products/eukanuba/eukanuba-food-large-breed-adult-dry-dog-food-lamb-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0030111310019",
+          "sku": "5334034"
+        }
+      ],
+      "ingredients_raw": "Lamb, brewers rice, chicken by–product meal, wheat, corn, lamb meal, ground grain sorghum, chicken fat, natural flavors, dried plain beet pulp, egg product, potassium chloride, sodium hexametaphosphate, fructooligosaccharides, salt, fish oil, choline chloride, DL–methionine, vitamins [DL–alpha tocopherol acetate (source of vitamin E), biotin, D–calcium pantothenate, vitamin A acetate, niacin supplement, pyridoxine hydrochloride (vitamin B6), thiamine mononitrate (vitamin B1), vitamin B12 supplement, riboflavin supplement, vitamin D3 supplement, folic acid], glucosamine hydrochloride, trace minerals [zinc oxide, ferrous sulfate, copper sulfate, sodium selenite, calcium iodate], magnesium oxide, chondroitin sulfate, rosemary extract, preserved with mixed tocopherols and citric acid",
+      "guaranteed_analysis": {
+        "crude_protein_min": 22.5,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 3.7,
+        "moisture_max": 10.0,
+        "dha_min": 0.01
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3605 kcal/kg, 346 kcal/cup"
+    },
+    {
+      "name": "Large Breed Puppy Dry Dog Food - Chicken",
+      "brand": "Eukanuba",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/eukanubaandtrade-large-breed-puppy-dry-dog-food---chicken-31849.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "life_stage": "puppy",
+      "breed_size": "Large",
+      "source_id": "5334174",
+      "images": [
+        "/products/eukanuba/eukanuba-food-large-breed-puppy-dry-dog-food-chicken.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0030111302076",
+          "sku": "5334174"
+        }
+      ],
+      "ingredients_raw": "Chicken, chicken by-product meal, corn, wheat, chicken fat, ground grain sorghum, brewers rice, natural flavors, dried plain beet pulp, fish oil, egg product, salt, potassium chloride, dicalcium phosphate, fructooligosaccharides, choline chloride, calcium carbonate, vitamins[DL-alpha tocopherol acetate (source of vitamin E), biotin, D-calcium pantothenate, vitamin A acetate, niacin supplement, pyridoxine hydrochloride (vitamin B6), thiamine mononitrate (vitamin B1), vitamin B12 supplement, riboflavin supplement, vitamin D3 supplement, folic acid], trace minerals[zinc oxide, ferrous sulfate, copper sulfate, sodium selenite, calcium iodate], manganous oxide, rosemary extract, preserved with mixed tocopherols and citric acid",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 3.7,
+        "moisture_max": 10.0,
+        "dha_min": 0.11,
+        "calcium_min": 1.08,
+        "phosphorus_min": 0.94
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3723 kcal/kg, 357 kcal/cup"
+    },
+    {
+      "name": "Large Breed Senior Dry Dog Food - Chicken",
+      "brand": "Eukanuba",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/eukanubaandtrade-large-breed-senior-dry-dog-food---chicken-73818.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "life_stage": "senior",
+      "breed_size": "Large",
+      "source_id": "5334186",
+      "images": [
+        "/products/eukanuba/eukanuba-food-large-breed-senior-dry-dog-food-chicken.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0030111310033",
+          "sku": "5334186"
+        }
+      ],
+      "ingredients_raw": "Chicken, wheat, chicken by-product meal, corn, chicken fat, ground grain sorghum, natural flavors, dried plain beet pulp, vegetable oil, egg product, calcium carbonate, potassium chloride, sodium hexametaphosphate, salt, fructooligosaccharides, fish oil, choline chloride, vitamins [DL-alpha tocopherol acetate (source of vitamin E), biotin, D-calcium pantothenate, vitamin A acetate, niacin supplement, pyridoxine hydrochloride (vitamin B6), thiamine mononitrate (vitamin B1), vitamin B12 supplement, riboflavin supplement, vitamin D3 supplement, folic acid], glucosamine hydrochloride, trace minerals [zinc oxide, ferrous sulfate, copper sulfate, sodium selenite, calcium iodate], magnesium oxide, carotene, chondroitin sulfate, rosemary extract, preserved with mixed tocopherols and citric acid",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 3.9,
+        "moisture_max": 10.0,
+        "dha_min": 0.01
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3626 kcal/kg, 308 kcal/cup"
+    },
+    {
+      "name": "Small Bites Adult Dry Dog Food Chicken",
+      "brand": "Eukanuba",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/eukanubaandtrade-small-bites-adult-dry-dog-food-chicken-32087.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "source_id": "5334185",
+      "images": [
+        "/products/eukanuba/eukanuba-food-small-bites-adult-dry-dog-food-chicken.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0030111310026",
+          "sku": "5334185"
+        }
+      ],
+      "ingredients_raw": "Chicken, chicken by–product meal, corn, wheat, chicken fat, ground grain sorghum, natural flavors, dried plain beet pulp, egg product, potassium chloride, sodium hexametaphosphate, salt, fructooligosaccharides, calcium carbonate, fish oil, choline chloride, vitamins [DL–alpha tocopherol acetate (source of vitamin E), biotin, D–calcium pantothenate, vitamin A acetate, niacin supplement, pyridoxine hydrochloride (vitamin B6), thiamine mononitrate (vitamin B1), vitamin B12 supplement, riboflavin supplement, vitamin D3 supplement, folic acid], glucosamine hydrochloride, trace minerals [zinc oxide, ferrous sulfate, copper sulfate, sodium selenite, calcium iodate], magnesium oxide, chondroitin sulfate, rosemary extract, preserved with mixed tocopherols and citric acid",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 3.8,
+        "moisture_max": 10.0,
+        "dha_min": 0.01
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3826 kcal/kg, 371 kcal/cup"
+    }
+  ]
+}

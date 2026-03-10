@@ -1,6 +1,6 @@
 """Tests for scrapers.purina — Purina parsing logic."""
 
-from scrapers.purina import (
+from scrapers.purina_vet import (
     _clean_response_text,
     _detect_channel,
     _detect_type,

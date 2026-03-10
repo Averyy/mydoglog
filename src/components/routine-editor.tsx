@@ -238,7 +238,7 @@ export function RoutineEditorContent({
       const detail = productDetails.get(item.product.id)
       if (!detail?.rawIngredientString) continue
       result.push({
-        name: item.product.brandName,
+        name: `${item.product.brandName} ${item.product.name}`,
         ingredients: detail.rawIngredientString,
       })
     }
@@ -544,8 +544,8 @@ export function RoutineEditorContent({
       </div>
 
       {/* ── Nutrition sidebar (desktop only) ──────────────────────────── */}
-      <div className="hidden shrink-0 border-l border-border bg-secondary md:flex md:w-[264px] md:items-center md:rounded-r-lg">
-        <div className="p-4">
+      <div className="hidden shrink-0 border-l border-border bg-secondary md:flex md:w-[264px] md:items-center md:rounded-r-lg overflow-hidden">
+        <div className="w-full min-w-0 p-4">
           <NutritionLabel data={nutrition} ingredientLists={ingredientsByProduct} />
         </div>
       </div>

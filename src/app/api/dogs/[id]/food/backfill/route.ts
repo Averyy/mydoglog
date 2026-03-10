@@ -14,8 +14,6 @@ interface BackfillItem {
 interface ScorecardInput {
   poopQuality?: number | number[] | null
   itchSeverity?: number | number[] | null
-  digestiveImpact?: string | null
-  itchinessImpact?: string | null
   notes?: string | null
 }
 
@@ -151,8 +149,6 @@ export async function POST(
       planGroupId,
       poopQuality: poopArr.sort((a, b) => a - b),
       itchSeverity: itchArr.sort((a, b) => a - b),
-      digestiveImpact: null,
-      itchinessImpact: null,
       notes,
     })
 

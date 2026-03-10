@@ -258,9 +258,6 @@ function buildDayOutcome(
         itchLogsForDate.length
       : null
 
-  // Vomit count
-  const vomitCount = input.vomitLogs.filter((l) => l.date === date).length
-
   // Scorecard fallback: only when no poop logs exist
   let scorecardPoopFallback: number | null = null
   if (poopScore == null) {
@@ -301,7 +298,6 @@ function buildDayOutcome(
   return {
     poopScore,
     itchScore,
-    vomitCount,
     scorecardPoopFallback,
     onItchinessMedication,
     onDigestiveMedication,
@@ -434,7 +430,6 @@ interface IngredientAccumulator {
   weightedPoopDenominator: number
   weightedItchNumerator: number
   weightedItchDenominator: number
-  vomitTotal: number
   dayCount: number
   bestPosition: number
   fromTreat: boolean
@@ -474,7 +469,6 @@ export function computeIngredientScores(
   const scoreable = filtered.filter((snap) => {
     if (snap.outcome.poopScore != null) return true
     if (snap.outcome.itchScore != null) return true
-    if (snap.outcome.vomitCount > 0) return true
     if (
       options.includeScorecardFallback &&
       snap.outcome.scorecardPoopFallback != null
@@ -514,7 +508,6 @@ export function computeIngredientScores(
           weightedPoopDenominator: 0,
           weightedItchNumerator: 0,
           weightedItchDenominator: 0,
-          vomitTotal: 0,
           dayCount: 0,
           bestPosition: ing.bestPosition,
           fromTreat: ing.fromTreat,
@@ -599,8 +592,6 @@ export function computeIngredientScores(
       const itchGood = snap.outcome.itchScore != null && snap.outcome.itchScore <= 2
       if (poopGood || itchGood) acc.goodDays++
 
-      acc.vomitTotal += snap.outcome.vomitCount
-
       if (snap.isBackfill) {
         acc.daysWithBackfill++
       } else if (hasEventLog) {
@@ -625,7 +616,6 @@ export function computeIngredientScores(
         : null,
       rawAvgPoopScore: acc.poopCount > 0 ? acc.poopSum / acc.poopCount : null,
       rawAvgItchScore: acc.itchCount > 0 ? acc.itchSum / acc.itchCount : null,
-      vomitCount: acc.vomitTotal,
       badDayCount: acc.badDays,
       goodDayCount: acc.goodDays,
       badPoopDayCount: acc.badPoopDays,
@@ -873,7 +863,6 @@ export function buildBackfillSnapshots(
       outcome: {
         poopScore: avgPoop,
         itchScore: avgItch,
-        vomitCount: 0,
         scorecardPoopFallback: null,
         onItchinessMedication: false,
         onDigestiveMedication: false,
@@ -967,7 +956,6 @@ export function mergeScoresForGI(scores: IngredientScore[]): IngredientScore[] {
       weightedItchScore,
       rawAvgPoopScore,
       rawAvgItchScore,
-      vomitCount: Math.max(...group.map((s) => s.vomitCount)),
       badDayCount: Math.max(...group.map((s) => s.badDayCount)),
       goodDayCount: Math.max(...group.map((s) => s.goodDayCount)),
       badPoopDayCount: Math.max(...group.map((s) => s.badPoopDayCount)),
@@ -1031,7 +1019,6 @@ export function runCorrelation(
     const isScoreable =
       snap.outcome.poopScore != null ||
       snap.outcome.itchScore != null ||
-      snap.outcome.vomitCount > 0 ||
       (options.includeScorecardFallback && snap.outcome.scorecardPoopFallback != null)
     if (isScoreable) {
       scoreableDays++

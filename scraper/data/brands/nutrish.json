@@ -1,0 +1,890 @@
+{
+  "brand": "Rachael Ray Nutrish",
+  "website_url": "https://www.nutrish.com",
+  "scraped_at": "2026-03-10T14:17:51.967116+00:00",
+  "scraper_version": "0.1.0",
+  "stats": {
+    "product_count": 36,
+    "by_channel": {
+      "retail": 36
+    },
+    "by_type": {
+      "food": 28,
+      "treat": 8
+    }
+  },
+  "products": [
+    {
+      "name": "Rachael Ray Nutrish Chicken Paw Pie Wet Dog Food",
+      "brand": "Rachael Ray Nutrish",
+      "url": "https://www.nutrish.com/product/nutrish-chicken-paw-pie-wet-dog-food/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "life_stage": "adult",
+      "ingredients_raw": "Chicken Broth, Chicken, Dried Egg Product, Egg White, Pea Protein, Sweet Potatoes, Green Beans, Pineapple, Ground Tapioca, Dicalcium Phosphate, Natural Flavor, Guar Gum, Potassium Chloride, Choline Chloride, Salt, Calcium Carbonate, Magnesium Sulfate, Fish Oil, Zinc Proteinate, Iron Proteinate, Caramel (Color), Celery Powder, Vitamin E Supplement, L-ascorbyl-2-polyphosphate (Source of Vitamin C), Thiamine Mononitrate, Niacin, Copper Proteinate, Manganese Proteinate, Vitamin A Acetate, Calcium Iodate, Calcium Pantothenate, Sodium Selenite, Riboflavin, Vitamin B12 Supplement, Pyridoxine Hydrochloride (Source of Vitamin B6), Folic Acid, Vitamin D3 Supplement, Biotin, Menadione Sodium Bisulfite Complex (Source of Vitamin K Activity)",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1054 kcal/kg",
+      "images": [
+        "/products/rachael-ray-nutrish/rachael-ray-nutrish-food-rachael-ray-nutrish-chicken-paw-pie-wet-dog-food.png"
+      ]
+    },
+    {
+      "name": "Rachael Ray Nutrish Beef Stroganwoof Wet Dog Food",
+      "brand": "Rachael Ray Nutrish",
+      "url": "https://www.nutrish.com/product/nutrish-beef-stroganwoof-wet-dog-food/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "life_stage": "adult",
+      "ingredients_raw": "Chicken Broth, Beef, Chicken, Dried Egg Product, Pea Protein, Ground Tapioca, Natural Flavor, Egg White, Green Beans, Tomato, Rice Pasta (Rice, Water, Ground Tapioca), Dicalcium Phosphate, Guar Gum, Caramel (Color), Potassium Chloride, Salt, Choline Chloride, Calcium Carbonate, Fish Oil, Zinc Proteinate, Magnesium Sulfate, Iron Proteinate, Celery Powder, Vitamin E Supplement, L-ascorbyl-2-polyphosphate (Source of Vitamin C), Thiamine Mononitrate, Niacin, Copper Proteinate, Manganese Proteinate, Vitamin A Acetate, Calcium Iodate, Calcium Pantothenate, Sodium Selenite, Riboflavin, Vitamin B12 Supplement, Pyridoxine Hydrochloride (Source of Vitamin B6), Folic Acid, Vitamin D3 Supplement, Biotin, Menadione Sodium Bisulfite Complex (Source of Vitamin K Activity)",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1140 kcal/kg",
+      "images": [
+        "/products/rachael-ray-nutrish/rachael-ray-nutrish-food-rachael-ray-nutrish-beef-stroganwoof-wet-dog-food.png"
+      ]
+    },
+    {
+      "name": "Rachael Ray Nutrish Savory Lamb Stew Wet Dog Food",
+      "brand": "Rachael Ray Nutrish",
+      "url": "https://www.nutrish.com/product/nutrish-savory-lamb-stew-wet-dog-food/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "life_stage": "adult",
+      "ingredients_raw": "Chicken Broth, Lamb, Dried Egg Product, Chicken, Egg White, Pea Protein, Ground Tapioca, Natural Flavor, Carrots, Brown Rice, Dicalcium Phosphate, Guar Gum, Potassium Chloride, Spinach, Choline Chloride, Salt, Magnesium Sulfate, Calcium Carbonate, Caramel (Color), Fish Oil, Zinc Proteinate, Iron Proteinate, Celery Powder, Vitamin E Supplement, L-ascorbyl-2-polyphosphate (Source of Vitamin C), Thiamine Mononitrate, Niacin, Copper Proteinate, Manganese Proteinate, Vitamin A Acetate, Calcium Iodate, Calcium Pantothenate, Sodium Selenite, Riboflavin, Vitamin B12 Supplement, Pyridoxine Hydrochloride (Source of Vitamin B6), Folic Acid, Vitamin D3 Supplement, Biotin, Menadione Sodium Bisulfite Complex (Source of Vitamin K Activity)",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1073 kcal/kg",
+      "images": [
+        "/products/rachael-ray-nutrish/rachael-ray-nutrish-food-rachael-ray-nutrish-savory-lamb-stew-wet-dog-food.png"
+      ]
+    },
+    {
+      "name": "Rachael Ray Nutrish Triple Delights Dog Treats With Real Chicken, Bacon and Peanut Butter",
+      "brand": "Rachael Ray Nutrish",
+      "url": "https://www.nutrish.com/product/nutrish-triple-delights-premium-dog-treats-with-real-chicken-bacon-and-peanut-butter/",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "ingredients_raw": "Chicken, Wheat Flour, Corn Flour, Cane Sugar, Palm Oil, Glycerin, Partially Defatted Peanut Flour, Chicken Jerky (Chicken, Ground Chickpeas, Ground Potatoes, Glycerin, Guar Gum, Cane Molasses, Salt, Natural Smoke Flavor, Citric Acid (preservative), Distilled Vinegar, Mixed Tocopherols (preservative), Rosemary Extract ), Peanut Butter (Peanuts, Palm Oil) , Bacon, Guar Gum, Corn Starch, Citric Acid (preservative), Fruit Juice (color), Natural Smoke Flavor, Vinegar, Soy Lecithin, Mixed Tocopherols (preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 12.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 15.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3450 kcal/kg, 30 kcal/treat",
+      "images": [
+        "/products/rachael-ray-nutrish/rachael-ray-nutrish-treat-rachael-ray-nutrish-triple-delights-dog-treats-with-real-chicken-bacon-and-peanu.jpg"
+      ]
+    },
+    {
+      "name": "Rachael Ray Nutrish Triple Delights Dog Treats With Real Beef, Bacon, and Peanut Butter",
+      "brand": "Rachael Ray Nutrish",
+      "url": "https://www.nutrish.com/product/nutrish-triple-delights-premium-dog-treats-with-real-beef-bacon-and-peanut-butter/",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "ingredients_raw": "Beef, Wheat Flour, Glycerin, Sugar, Corn Flour, Palm Oil, Partially Defatted Peanut Flour, Bacon, Peanut Butter (Peanuts, Palm Oil), Spray Dried Beef Blood Cells, Guar Gum, Citric Acid (used as a preservative), Corn Starch, Chickpea Flour, Potato Flour, Vinegar, Natural Smoke Flavor, Mixed Tocopherols (used as a preservative), Cane Molasses, Caramel Color, Salt, Sunflower Lecithin, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 12.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 12.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4205 kcal/kg, 51 kcal/treat",
+      "images": [
+        "/products/rachael-ray-nutrish/rachael-ray-nutrish-treat-rachael-ray-nutrish-triple-delights-dog-treats-with-real-beef-bacon-and-peanut-b.jpg"
+      ]
+    },
+    {
+      "name": "Rachael Ray Nutrish High Protein Beef, Potato & Peas Recipe with Venison & Lamb Dry Dog Food",
+      "brand": "Rachael Ray Nutrish",
+      "url": "https://www.nutrish.com/product/high-protein-beef-dry-dog-food/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "ingredients_raw": "Beef, Chicken Meal, Whole Dried Potato, Natural Pork Flavor, Dried Peas, Pea Starch, Sunflower Meal, Chicken Fat (Preserved with Mixed Tocopherols), Beef Meal, Whole Flaxseed, Pea Protein, Venison, Lamb, Menhaden Fish Meal, Natural Flavor, Salt, Taurine, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (Source of Vitamin C), Niacin Supplement, Vitamin A Supplement, Thiamine Mononitrate , d-Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Biotin, Vitamin D3 Supplement), Choline Chloride, Minerals (Ferrous Sulfate, Zinc Sulfate, Copper Sulfate, Sodium Selenite, Manganese Sulfate, Calcium Iodate), Zinc Sulfate, Lactic Acid, Citric Acid (Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "taurine_min": 0.25,
+        "omega_3_min": 1.0,
+        "omega_6_min": 2.0,
+        "glucosamine_min": 500.0,
+        "chondroitin_min": 100.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3610 kcal/kg, 342 kcal/cup",
+      "images": [
+        "/products/rachael-ray-nutrish/rachael-ray-nutrish-food-rachael-ray-nutrish-high-protein-beef-potato-peas-recipe-with-venison-lamb-dry-d.jpg"
+      ]
+    },
+    {
+      "name": "Rachael Ray Nutrish Grain Free Chicken & Sweet Potato Recipe Dry Dog Food",
+      "brand": "Rachael Ray Nutrish",
+      "url": "https://www.nutrish.com/product/nutrish-grain-free-chicken-sweet-potato-recipe-dry-dog-food/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Zero Grain",
+      "life_stage": "adult",
+      "ingredients_raw": "Chicken, Salmon Meal, Canola Meal, Sweet Potato, Pea Starch, Chicken Fat (Preserved with Mixed Tocopherols), Sunflower Meal, Dried Peas, Potato, Tapioca, Fish Meal, Whole Flaxseed, Salt, Dried Plain Beet Pulp, Chicken Meal, Turkey Meal, Natural Flavor, Taurine, Citric Acid (Preservative), Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (Source of Vitamin C), Niacin Supplement, Vitamin A Supplement, Thiamine Mononitrate, d-Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Biotin, Vitamin D3 Supplement), Minerals (Zinc Sulfate, Ferrous Sulfate, Copper Sulfate, Sodium Selenite, Manganese Sulfate, Calcium Iodate), Choline Chloride, Lactic Acid, Mixed Tocopherols (Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "taurine_min": 0.2,
+        "omega_3_min": 1.0,
+        "omega_6_min": 2.0,
+        "glucosamine_min": 400.0,
+        "chondroitin_min": 200.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3570 kcal/kg, 365 kcal/cup",
+      "images": [
+        "/products/rachael-ray-nutrish/rachael-ray-nutrish-food-rachael-ray-nutrish-grain-free-chicken-sweet-potato-recipe-dry-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Rachael Ray Nutrish Real Chicken & Veggies Recipe Whole Health Blend Chunks in Gravy Wet Dog Food",
+      "brand": "Rachael Ray Nutrish",
+      "url": "https://www.nutrish.com/product/nutrish-chunks-in-gravy-real-chicken-veggies-recipe-wet-dog-food/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "life_stage": "adult",
+      "ingredients_raw": "Chicken Broth, Chicken, Liver, Soy Protein Concentrate, Pumpkin, Peas, Carrots, Brown Rice, Barley, Canola Oil (preserved with Mixed Tocopherols), Dried Eggs, Oat Fiber, Salt, Dried Brewers Yeast, Menhaden Fish Oil (preserved with Mixed Tocopherols), Guar Gum, Calcium Carbonate, Sodium Tripolyphosphate, Potassium Chloride, Minerals (zinc proteinate, zinc sulfate, ferrous sulfate, iron proteinate, copper sulfate, copper proteinate, sodium selenite, manganese sulfate, manganese proteinate, calcium iodate), Vitamins (L-ascorbyl-2-polyphosphate (source of vitamin C), vitamin E supplement, thiamine mononitrate, niacin, d-calcium pantothenate, vitamin A supplement, riboflavin supplement, vitamin D3 supplement, vitamin B12 supplement, pyridoxine hydrochloride, folic acid), Carrageenan, Thiamin Mononitrate, Vitamin E, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 80.0,
+        "calcium_min": 0.25,
+        "phosphorus_min": 0.2,
+        "omega_3_min": 0.15,
+        "omega_6_min": 0.8,
+        "glucosamine_min": 150.0,
+        "chondroitin_min": 400.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "980 kcal/kg, 365 kcal/can",
+      "images": [
+        "/products/rachael-ray-nutrish/rachael-ray-nutrish-food-rachael-ray-nutrish-real-chicken-veggies-recipe-whole-health-blend-chunks-in-gra.jpg"
+      ]
+    },
+    {
+      "name": "Rachael Ray Nutrish Real Turkey, Brown Rice, Peas & Carrots Recipe Whole Health Blend Chunks in Gravy Wet Dog Food",
+      "brand": "Rachael Ray Nutrish",
+      "url": "https://www.nutrish.com/product/nutrish-chunks-in-gravy-real-turkey-brown-rice-peas-carrots-recipe-wet-dog-food/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "life_stage": "adult",
+      "ingredients_raw": "Turkey Broth, Turkey, Chicken, Liver, Pumpkin, Brown Rice, Peas, Soy Protein Concentrate, Carrots, Canola Oil (preserved with Mixed Tocopherols), Barley, Oat Fiber, Dried Egg Product, Salt, Grain Distillers Dried Yeast, Menhaden Fish Oil (preserved with Mixed Tocopherols), Guar Gum, Calcium Carbonate, Sodium Tripolyphosphate, Vitamins (L-ascorbyl-2-polyphosphate (source of vitamin C), vitamin E supplement, thiamine mononitrate, niacin, d-calcium pantothenate, vitamin A supplement, riboflavin supplement, vitamin D3 supplement, vitamin B12 supplement, pyridoxine hydrochloride, folic acid), Minerals (zinc proteinate, zinc sulfate, ferrous sulfate, iron proteinate, copper sulfate, copper proteinate, sodium selenite, manganese sulfate, manganese proteinate, calcium iodate), Carrageenan, Thiamine Mononitrate, Vitamin E Supplement, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 80.0,
+        "calcium_min": 0.25,
+        "phosphorus_min": 0.2,
+        "omega_3_min": 0.15,
+        "omega_6_min": 0.8,
+        "glucosamine_min": 75.0,
+        "chondroitin_min": 200.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "980 kcal/kg, 365 kcal/can",
+      "images": [
+        "/products/rachael-ray-nutrish/rachael-ray-nutrish-food-rachael-ray-nutrish-real-turkey-brown-rice-peas-carrots-recipe-whole-health-blen.jpg"
+      ]
+    },
+    {
+      "name": "Rachael Ray Nutrish Real Beef & Pumpkin Recipe Whole Health Blend Premium Paté Wet Dog Food",
+      "brand": "Rachael Ray Nutrish",
+      "url": "https://www.nutrish.com/product/nutrish-premium-pate-real-beef-pumpkin-recipe-wet-dog-food/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "life_stage": "adult",
+      "ingredients_raw": "Beef, Beef Broth, Pumpkin, Liver, Apples, Barley, Peas, Canola Oil (preserved with mixed tocopherols), Carrots, Vitamins (L-ascorbyl-2-polyphosphate (source of Vitamin C), Vitamin E Supplement, Thiamine Mononitrate, Niacin, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Vitamin D3 Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, folic acid), Guar Gum, Carrageenan, Magnesium Sulfate, Minerals (zinc proteinate, zinc sulfate, ferrous sulfate, iron proteinate, copper sulfate, copper proteinate, sodium selenite, manganese sulfate, manganese proteinate, calcium iodate), Choline Chloride",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1080 kcal/kg, 400 kcal/can",
+      "images": [
+        "/products/rachael-ray-nutrish/rachael-ray-nutrish-food-rachael-ray-nutrish-real-beef-pumpkin-recipe-whole-health-blend-premium-pat-wet.jpg"
+      ]
+    },
+    {
+      "name": "Rachael Ray Nutrish Dish Beef & Brown Rice Recipe with Veggie & Fruit Blend Dry Dog Food",
+      "brand": "Rachael Ray Nutrish",
+      "url": "https://www.nutrish.com/product/nutrish-dish-beef-brown-rice-recipe-with-veggie-fruit-blend-dry-dog-food/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "ingredients_raw": "Beef, Chicken Meal, Brown Rice, Dried Peas, Brewers Rice, Poultry Fat (Preserved with Mixed Tocopherols), Pea Protein, Whole Flaxseed, Natural Flavor, Turkey Meal, Chicken, Dried Apples, Dried Carrots, Salt, Whole Dried Potato, Potassium Chloride, Menhaden Fish Oil (Preserved with Mixed Tocopherols), Vitamins (Vitamin E Supplement, Ascorbic Acid (Source of Vitamin C), Niacin, Vitamin A Supplement, Thiamine Mononitrate , d-Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Biotin, Vitamin D3 Supplement), Dicalcium Phosphate, Minerals (Ferrous Sulfate, Zinc Sulfate, Copper Sulfate, Sodium Selenite, Manganese Sulfate, Calcium Iodate), Taurine, Choline Chloride, Glycerin, Sunflower Oil, Lactic Acid, Brown Sugar, Paprika Extract (Color), Zinc Sulfate, Citric Acid (preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "taurine_min": 0.2,
+        "omega_3_min": 1.1,
+        "omega_6_min": 2.8
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3570 kcal/kg, 350 kcal/cup",
+      "images": [
+        "/products/rachael-ray-nutrish/rachael-ray-nutrish-food-rachael-ray-nutrish-dish-beef-brown-rice-recipe-with-veggie-fruit-blend-dry-dog.jpg"
+      ]
+    },
+    {
+      "name": "Rachael Ray Nutrish Limited Ingredient Lamb Meal & Brown Rice Recipe Dry Dog Food",
+      "brand": "Rachael Ray Nutrish",
+      "url": "https://www.nutrish.com/product/nutrish-limited-ingredient-lamb-meal-brown-rice-recipe-dry-dog-food/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "ingredients_raw": "Lamb Meal, brown rice, brewers rice, peas, pearled barley, grain sorghum, chicken meal, chicken fat (preserved with mixed tocopherols), natural flavor, salt, potassium chloride, Minerals (Zinc Sulfate, Ferrous Sulfate, Copper Sulfate, Sodium Selenite, Manganese Sulfate, Calcium Iodate), Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (Source of Vitamin C), Niacin Supplement, Vitamin A Supplement, Thiamine Mononitrate , d-Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Biotin, Vitamin D3 Supplement), taurine, choline chloride, lactic acid, citric acid (used as a preservative), rosemary extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 20.0,
+        "crude_fat_min": 13.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "omega_6_min": 1.5,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "taurine_min": 0.3,
+        "glucosamine_min": 400.0,
+        "chondroitin_min": 200.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3731 kcal/kg, 323 kcal/cup",
+      "images": [
+        "/products/rachael-ray-nutrish/rachael-ray-nutrish-food-rachael-ray-nutrish-limited-ingredient-lamb-meal-brown-rice-recipe-dry-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Nutrish Chunks In Gravy Gentle Digestion Real Lamb, Pumpkin & Chicken Recipe Wet Dog Food",
+      "brand": "Rachael Ray Nutrish",
+      "url": "https://www.nutrish.com/product/nutrish-chunks-in-gravy-gentle-digestion-real-lamb-pumpkin-chicken-recipe-wet-dog-food/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "life_stage": "adult",
+      "ingredients_raw": "Chicken Broth, Lamb, Pumpkin, Chicken, Liver, Soy Protein Concentrate, Peas, Brown Rice, Carrots, Barley, Canola Oil (Preserved With Mixed Tocopherols), Dried Egg Product, Cane Molasses, Salt, Grain Distillers Dried Yeast, Menhaden Fish Oil (Preserved With Mixed Tocopherols), Guar Gum, Calcium Carbonate, Malted Barley Flour, Sodium Tripolyphosphate, Vitamins (L-Ascorbyl-2-Polyphosphate (Source Of Vitamin C), Vitamin E Supplement, Thiamine Mononitrate, Niacin, D-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Vitamin D3 Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid), Minerals (Zinc Proteinate, Zinc Sulfate, Ferrous Sulfate, Iron Proteinate, Copper Sulfate, Copper Proteinate, Sodium Selenite, Manganese Sulfate, Manganese Proteinate, Calcium Iodate), Carrageenan, Vitamin E Supplement, Thiamine Mononitrate, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 80.0,
+        "calcium_min": 0.25,
+        "phosphorus_min": 0.2,
+        "omega_3_min": 0.15,
+        "omega_6_min": 0.5,
+        "glucosamine_min": 60.0,
+        "chondroitin_min": 200.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "980 kcal/kg, 365 kcal/can",
+      "images": [
+        "/products/rachael-ray-nutrish/rachael-ray-nutrish-food-nutrish-chunks-in-gravy-gentle-digestion-real-lamb-pumpkin-chicken-recipe-wet-do.jpg"
+      ]
+    },
+    {
+      "name": "Rachael Ray Nutrish Everyday Immune Support Chicken, Salmon, Blueberry & Pumpkin Recipe Dry Dog Food",
+      "brand": "Rachael Ray Nutrish",
+      "url": "https://www.nutrish.com/product/nutrish-everyday-immune-support-chicken-salmon-blueberry-pumpkin-recipe-dry-dog-food/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "ingredients_raw": "Chicken, Chicken Meal, Peas, Ground Grain Sorghum, Soybean Meal, Corn, Chicken Fat (Preserved With Mixed Tocopherols), Salmon, Blueberries, Pumpkin, Dried Plain Beet Pulp, Pearled Barley, Natural Flavor, Fish Meal, Cranberry Powder, Carrots, Potatoes, Sweet Potatoes, Dicalcium Phosphate, Salt, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (Source Of Vitamin C), Niacin Supplement, Vitamin A Supplement, Thiamine Mononitrate, D-Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Biotin, Vitamin D3 Supplement), Calcium Carbonate, Vitamin E Supplement, Minerals (Ferrous Sulfate, Zinc Sulfate, Copper Sulfate, Sodium Selenite, Manganese Sulfate, Calcium Iodate), Taurine, Choline Chloride, L-Carnitine, Lactic Acid, Mixed Tocopherols (Preservative), Zinc Sulfate, Citric Acid (Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 23.0,
+        "crude_fat_min": 13.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "omega_6_min": 2.0,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "taurine_min": 0.2,
+        "omega_3_min": 0.2,
+        "l_carnitine_min": 250.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3550 kcal/kg, 325 kcal/cup",
+      "images": [
+        "/products/rachael-ray-nutrish/rachael-ray-nutrish-food-rachael-ray-nutrish-everyday-immune-support-chicken-salmon-blueberry-pumpkin-rec.jpg"
+      ]
+    },
+    {
+      "name": "Rachael Ray Nutrish Burger Bites Beef Recipe With Bison Dog Treats",
+      "brand": "Rachael Ray Nutrish",
+      "url": "https://www.nutrish.com/product/nutrish-burger-bites-beef-recipe-with-bison-dog-treats/",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "ingredients_raw": "Beef, Potatoes, Glycerin, Sugar, Potato Protein, Bison, Salt, Sorbic Acid (a preservative), Natural Smoke Flavor, Sunflower Lecithin, Caramel Color, Citric Acid (a preservative), Mixed Tocopherols (a preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 14.0,
+        "crude_fat_min": 10.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 30.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3090 kcal/kg, 19 kcal/treat",
+      "images": [
+        "/products/rachael-ray-nutrish/rachael-ray-nutrish-treat-rachael-ray-nutrish-burger-bites-beef-recipe-with-bison-dog-treats.png"
+      ]
+    },
+    {
+      "name": "Rachael Ray Nutrish Adult Dry Dog Food Real Chicken & Veggies Recipe",
+      "brand": "Rachael Ray Nutrish",
+      "url": "https://www.nutrish.com/product/nutrish-real-chicken-veggies-recipe-dry-dog-food/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "ingredients_raw": "Chicken, Soybean Meal, Whole Corn, Whole Grain Wheat, Dried Peas, Grain Sorghum, Chicken Fat (Preserved With Mixed Tocopherols), Corn Protein Concentrate, Canola Meal, Carrots, Brown Rice, Dicalcium Phosphate, Calcium Carbonate, Salt, Fish Oil (Preserved With Mixed Tocopherols), Natural Flavor, Malted Barley Flour, Taurine, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (Source Of Vitamin C), Niacin Supplement, Vitamin A Supplement, Thiamine Mononitrate, D-Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Biotin, Vitamin D3 Supplement), Choline Chloride, Minerals (Ferrous Sulfate, Zinc Sulfate, Copper Sulfate, Sodium Selenite, Manganese Sulfate, Calcium Iodate), Lactic Acid, Mixed Tocopherols (Preservative), Carmine (Color), Citric Acid (Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 23.0,
+        "crude_fat_min": 13.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8,
+        "taurine_min": 0.15,
+        "omega_3_min": 0.15,
+        "omega_6_min": 1.75
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3575 kcal/kg, 340 kcal/cup",
+      "aafco_statement": "Rachael Ray Nutrish Real Chicken & Veggies Recipe Dog Food is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for adult maintenance.",
+      "images": [
+        "/products/rachael-ray-nutrish/rachael-ray-nutrish-food-rachael-ray-nutrish-adult-dry-dog-food-real-chicken-veggies-recipe.jpg"
+      ]
+    },
+    {
+      "name": "Rachael Ray Nutrish Dry Dog Food Large Breed Real Beef, Pea & Brown Rice Recipe",
+      "brand": "Rachael Ray Nutrish",
+      "url": "https://www.nutrish.com/product/nutrish-large-breed-real-beef-pea-carrot-brown-rice-recipe-dry-dog-food/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "ingredients_raw": "Beef, Chicken Meal (Source Of Glucosamine And Chondroitin Sulfate), Dried Peas, Soybean Meal, Whole Ground Corn, Pea Starch, Dried Plain Beet Pulp, Chicken Fat (Preserved With Mixed Tocopherols), Carrots, Cranberries, Brown Rice, Salt, Dicalcium Phosphate, Menhaden Fish Oil (Preserved With Mixed Tocopherols), Corn Protein Concentrate, Natural Flavor, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (Source Of Vitamin C), Niacin Supplement, Vitamin A Supplement, Thiamine Mononitrate, D-Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Biotin, Vitamin D3 Supplement), Minerals (Zinc Sulfate, Ferrous Sulfate, Copper Sulfate, Sodium Selenite, Manganese Sulfate, Calcium Iodate), Taurine, Choline Chloride, Lactic Acid, Mixed Tocopherols (Preservative), Citric Acid (Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8,
+        "omega_3_min": 0.25,
+        "omega_6_min": 2.0,
+        "glucosamine_min": 400.0,
+        "chondroitin_min": 400.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3515 kcal/kg, 385 kcal/cup",
+      "aafco_statement": "Rachael Ray Nutrish Large Breed Real Beef, Pea & Brown Rice Recipe Dog Food is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for adult maintenance.",
+      "images": [
+        "/products/rachael-ray-nutrish/rachael-ray-nutrish-food-rachael-ray-nutrish-dry-dog-food-large-breed-real-beef-pea-brown-rice-recipe.jpg"
+      ]
+    },
+    {
+      "name": "Rachael Ray Nutrish Dry Dog Food Puppy, Real Chicken & Brown Rice Recipe",
+      "brand": "Rachael Ray Nutrish",
+      "url": "https://www.nutrish.com/product/nutrish-puppy-real-chicken-brown-rice-dry-dog-food/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "life_stage": "puppy",
+      "ingredients_raw": "Chicken, Chicken Meal, Brown Rice, Soybean Meal, Whole Corn, Chicken Fat (Preserved with Mixed Tocopherols), Peas, Flaxseed, Carrots, Corn Protein Concentrate, Dried Plain Beet Pulp, Dicalcium Phosphate, Salt, Menhaden Fish Oil (Preserved with Mixed Tocopherols), Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (Source of Vitamin C), Niacin Supplement, Vitamin A Supplement, Thiamine Mononitrate, D-Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Biotin, Vitamin D3 Supplement), Natural Flavor, Minerals (Ferrous Sulfate, Zinc Sulfate, Copper Sulfate, Sodium Selenite, Manganese Sulfate, Calcium Iodate), Taurine, Citric Acid (preservative), Choline Chloride, Lactic Acid, Mixed Tocopherols (Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "omega_6_min": 3.0,
+        "dha_min": 0.1,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "taurine_min": 0.2,
+        "omega_3_min": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3685 kcal/kg, 390 kcal/cup",
+      "aafco_statement": "Rachael Ray Nutrish Puppy Real Chicken and Brown Rice Recipe Dog Food is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages, including growth of large size dogs (70lbs. or more as an adult).",
+      "images": [
+        "/products/rachael-ray-nutrish/rachael-ray-nutrish-food-rachael-ray-nutrish-dry-dog-food-puppy-real-chicken-brown-rice-recipe.jpg"
+      ]
+    },
+    {
+      "name": "Rachael Ray Nutrish Adult Dry Dog Food Real Beef, Pea & Brown Rice Recipe",
+      "brand": "Rachael Ray Nutrish",
+      "url": "https://www.nutrish.com/product/nutrish-real-beef-pea-brown-rice-recipe-dry-dog-food/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "ingredients_raw": "Beef, Beef Meal, Soybean Meal, Whole Corn, Grain Sorghum, Dried Peas, Chicken Fat (Preserved With Mixed Tocopherols), Pea Starch, Brown Rice, Dried Plain Beet Pulp, Corn Protein Concentrate, Salt, Carrots, Fish Oil (preserved with Mixed Tocopherols), Malted Barley Flour, Natural Flavor, Taurine, Citric Acid (Preservative), Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (Source of Vitamin C), Niacin Supplement, Vitamin A Supplement, Thiamine Mononitrate , D-Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Biotin, Vitamin D3 Supplement), Minerals (Ferrous Sulfate, Zinc Sulfate, Copper Sulfate, Sodium Selenite, Manganese Sulfate, Calcium Iodate), Choline Chloride, Lactic Acid, Mixed Tocopherols (Preservative), Rosemary Extract, Carmine (Color)",
+      "guaranteed_analysis": {
+        "crude_protein_min": 23.0,
+        "crude_fat_min": 13.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "taurine_min": 0.15,
+        "omega_3_min": 0.15,
+        "omega_6_min": 1.75
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3850 kcal/kg, 365 kcal/cup",
+      "aafco_statement": "Rachael Ray Nutrish Real Beef, Pea & Brown Rice Recipe Dog Food is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for adult maintenance.",
+      "images": [
+        "/products/rachael-ray-nutrish/rachael-ray-nutrish-food-rachael-ray-nutrish-adult-dry-dog-food-real-beef-pea-brown-rice-recipe.jpg"
+      ]
+    },
+    {
+      "name": "Rachael Ray Nutrish Healthy Weight Adult Dry Dog Food Real Turkey, Brown Rice & Venison Recipe",
+      "brand": "Rachael Ray Nutrish",
+      "url": "https://www.nutrish.com/product/nutrish-healthy-weight-real-turkey-brown-rice-venison-recipe-dry-dog-food/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "ingredients_raw": "Turkey, Chicken Meal, Brown Rice, Whole Ground Corn, Soybean Meal, Dried Peas, Pea Starch, Pearled Barley, Turkey Meal, Venison, Dried Plain Beet Pulp, Chicken Fat (Preserved with Mixed Tocopherols), Natural Flavor, Potassium Chloride, Salt, Carrots, Dicalcium Phosphate, Taurine, Vitamins (Vitamin E Supplement, Ascorbic Acid (Source of Vitamin C), Niacin, Vitamin A Supplement, Thiamine Mononitrate, d-Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Biotin, Vitamin D3 Supplement), Choline Chloride, Minerals (Ferrous Sulfate, Zinc Sulfate, Copper Sulfate, Sodium Selenite, Manganese Sulfate, Calcium Iodate), Zinc Sulfate, L-Carnitine , Lactic Acid, Citric Acid (Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 8.0,
+        "crude_fat_max": 11.0,
+        "crude_fiber_max": 6.0,
+        "moisture_max": 11.0,
+        "omega_6_min": 1.8,
+        "calcium_min": 1.1,
+        "phosphorus_min": 0.9,
+        "omega_3_min": 0.15,
+        "l_carnitine_min": 80.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3185 kcal/kg, 280 kcal/cup",
+      "images": [
+        "/products/rachael-ray-nutrish/rachael-ray-nutrish-food-rachael-ray-nutrish-healthy-weight-adult-dry-dog-food-real-turkey-brown-rice-ven.jpg"
+      ]
+    },
+    {
+      "name": "Rachael Ray Nutrish Dish Chicken & Brown Rice Recipe with Veggie & Fruit Blend Dry Dog Food",
+      "brand": "Rachael Ray Nutrish",
+      "url": "https://www.nutrish.com/product/nutrish-dish-chicken-brown-rice-recipe-with-veggie-fruit-blend-dry-dog-food/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "ingredients_raw": "Chicken, Chicken Meal, Dried Peas, Brown Rice, Brewers Rice, Pea Protein, Poultry Fat (Preserved with Mixed Tocopherols), Whole Flaxseed, Dried Plain Beet Pulp, Natural Flavor, Dried Apples, Dried Carrots, Whole Dried Potato, Salt, Dicalcium Phosphate, Vitamins (Vitamin E Supplement, Ascorbic Acid (Source of Vitamin C), Niacin, Vitamin A Supplement, Thiamine Mononitrate , d-Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Biotin, Vitamin D3 Supplement), Potassium Chloride, Menhaden Fish Oil (Preserved with Mixed Tocopherols), Taurine, Minerals (Ferrous Sulfate, Zinc Sulfate, Copper Sulfate, Sodium Selenite, Manganese Sulfate, Calcium Iodate), Choline Chloride, Glycerin, Sunflower Oil, Lactic Acid, Paprika Extract (Color), Brown Sugar, Zinc Sulfate, Citric Acid (preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "taurine_min": 0.2,
+        "omega_3_min": 1.1,
+        "omega_6_min": 2.8
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3540 kcal/kg, 350 kcal/cup",
+      "images": [
+        "/products/rachael-ray-nutrish/rachael-ray-nutrish-food-rachael-ray-nutrish-dish-chicken-brown-rice-recipe-with-veggie-fruit-blend-dry-d.jpg"
+      ]
+    },
+    {
+      "name": "Rachael Ray Nutrish Soup Bones Dog Chews With Real Chicken & Veggies",
+      "brand": "Rachael Ray Nutrish",
+      "url": "https://www.nutrish.com/product/nutrish-soup-bones-dog-chews-with-real-chicken-veggies/",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "ingredients_raw": "Wheat Flour, Vegetable Glycerin, Rice Syrup, Potato Starch, Wheat Gluten, Ground Rice, Chicken Meal, Chicken, Dried Plain Beet Pulp, Chicken Fat (Preserved with Mixed Tocopherols), Carrots, Gelatin, Natural Flavor, Peas, Calcium Carbonate, Phosphoric Acid, Monosodium Phosphate, Potassium Sorbate (Used As A Preservative), Tapioca, Titanium Dioxide (Color), Citric Acid (Used As A Preservative), Mixed Tocopherols (Used As A Preservative), Iron Oxide (Color), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 13.0,
+        "crude_fat_min": 4.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 22.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "2950 kcal/kg, 192 kcal/treat",
+      "images": [
+        "/products/rachael-ray-nutrish/rachael-ray-nutrish-treat-rachael-ray-nutrish-soup-bones-dog-chews-with-real-chicken-veggies.jpg"
+      ]
+    },
+    {
+      "name": "Nutrish Soup Bones Dog Chews With Real Beef & Barley",
+      "brand": "Rachael Ray Nutrish",
+      "url": "https://www.nutrish.com/product/nutrish-soup-bones-dog-chews-with-real-beef-barley/",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "ingredients_raw": "Wheat Flour, Vegetable Glycerin, Rice Syrup, Potato Starch, Wheat Gluten, Ground Rice, Beef, Pearled Barley, Chicken Meal, Dried Plain Beet Pulp, Chicken Fat (Preserved with Mixed Tocopherols), Gelatin, Natural Flavor, Peas, Calcium Carbonate, Phosphoric Acid, Monosodium Phosphate, Potassium Sorbate (Used As A Preservative), Tapioca, Iron Oxide (color), Titanium Dioxide (color), Citric Acid (Used As A Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 13.0,
+        "crude_fat_min": 4.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 22.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "2950 kcal/kg, 192 kcal/treat",
+      "images": [
+        "/products/rachael-ray-nutrish/rachael-ray-nutrish-treat-nutrish-soup-bones-dog-chews-with-real-beef-barley.png"
+      ]
+    },
+    {
+      "name": "Nutrish Soup Bones Minis Dog Chews With Real Beef & Barley",
+      "brand": "Rachael Ray Nutrish",
+      "url": "https://www.nutrish.com/product/nutrish-soup-bones-minis-dog-chews-with-real-beef-barley/",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "ingredients_raw": "Wheat Flour, Vegetable Glycerin, Rice Syrup, Potato Starch, Wheat Gluten, Ground Rice, Beef, Pearled Barley, Chicken Meal, Dried Plain Beet Pulp, Chicken Fat (Mixed Tocopherols Used As A Preservative), Gelatin, Natural Flavor, Peas, Calcium Carbonate, Phosphoric Acid, Monosodium Phosphate, Potassium Sorbate (Used As A Preservative), Tapioca, Iron Oxide (Color), Citric Acid (Used As A Preservative), Titanium Dioxide (Color), Mixed Tocopherols (Used As A Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 13.0,
+        "crude_fat_min": 4.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 22.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "2950 kcal/kg, 71 kcal/treat",
+      "images": [
+        "/products/rachael-ray-nutrish/rachael-ray-nutrish-treat-nutrish-soup-bones-minis-dog-chews-with-real-beef-barley.png"
+      ]
+    },
+    {
+      "name": "Rachael Ray Nutrish Dry Dog Food Small Breed Real Chicken & Veggies Recipe",
+      "brand": "Rachael Ray Nutrish",
+      "url": "https://www.nutrish.com/product/nutrish-small-breed-real-chicken-veggies-dry-dog-food/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "ingredients_raw": "Chicken, Chicken Meal, Soybean Meal, Whole Corn, Grain Sorghum, Chicken Fat (preserved With Mixed Tocopherols), Peas, Brown Rice, Carrots, Menhaden Fish Meal, Malted Barley Flour, Salt, Dicalcium Phosphate, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (Source of Vitamin C), Niacin Supplement, Vitamin A Supplement, Thiamine Mononitrate, D-Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Biotin, Vitamin D3 Supplement), Natural Flavor, Minerals (Ferrous Sulfate, Zinc Sulfate, Copper Sulfate, Sodium Selenite, Manganese Sulfate, Calcium Iodate), Taurine, Citric Acid (Preservative), Choline Chloride, Lactic Acid, Mixed Tocopherols (Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "omega_6_min": 3.5,
+        "dha_min": 0.06,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "taurine_min": 0.25,
+        "omega_3_min": 0.25
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3720 kcal/kg, 395 kcal/cup",
+      "aafco_statement": "Rachael Ray Nutrish Small Breed Real Chicken & Veggies Recipe Dog Food is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for adult maintenance.",
+      "images": [
+        "/products/rachael-ray-nutrish/rachael-ray-nutrish-food-rachael-ray-nutrish-dry-dog-food-small-breed-real-chicken-veggies-recipe.jpg"
+      ]
+    },
+    {
+      "name": "Rachael Ray Nutrish Soup Bones Minis Dog Chews With Real Chicken & Veggies",
+      "brand": "Rachael Ray Nutrish",
+      "url": "https://www.nutrish.com/product/nutrish-soup-bones-minis-dog-chews-with-real-chicken-veggies/",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "ingredients_raw": "Wheat Flour, Vegetable Glycerin, Rice Syrup, Potato Starch, Wheat Gluten, Ground Rice, Chicken, Chicken Meal, Dried Plain Beet Pulp, Chicken Fat (Mixed Tocopherols Used As A Preservative), Carrots, Gelatin, Natural Flavor, Peas, Calcium Carbonate, Phosphoric Acid, Monosodium Phosphate, Potassium Sorbate (Used As A Preservative), Tapioca, Titanium Dioxide (Color), Citric Acid (Used As A Preservative), Mixed Tocopherols (Used As A Preservative), Iron Oxide (Color), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 13.0,
+        "crude_fat_min": 4.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 22.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "2950 kcal/kg, 71 kcal/treat",
+      "images": [
+        "/products/rachael-ray-nutrish/rachael-ray-nutrish-treat-rachael-ray-nutrish-soup-bones-minis-dog-chews-with-real-chicken-veggies.png"
+      ]
+    },
+    {
+      "name": "Rachael Ray Nutrish Grain Free Real Chicken & Apple Recipe Premium Paté Wet Dog Food",
+      "brand": "Rachael Ray Nutrish",
+      "url": "https://www.nutrish.com/product/nutrish-zero-grain-real-chicken-apple-recipe-wet-dog-food/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Zero Grain",
+      "life_stage": "adult",
+      "ingredients_raw": "Chicken, Chicken Broth, Chicken Liver, Apples, Peas, Carrots, Salt, Vitamins (L-Ascorbyl-2-Polyphosphate (Source Of Vitamin C), Vitamin E Supplement, Thiamine Mononitrate, Niacin, D-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Vitamin D3 Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid), Potassium Chloride, Guar Gum, Carrageenan, Minerals (Zinc Proteinate, Zinc Sulfate, Ferrous Sulfate, Iron Proteinate, Copper Sulfate, Copper Proteinate, Sodium Selenite, Manganese Sulfate, Manganese Proteinate, Calcium Iodate)",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 6.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1080 kcal/kg, 400 kcal/can",
+      "images": [
+        "/products/rachael-ray-nutrish/rachael-ray-nutrish-food-rachael-ray-nutrish-grain-free-real-chicken-apple-recipe-premium-pat-wet-dog-foo.jpg"
+      ]
+    },
+    {
+      "name": "Rachael Ray Nutrish Real Beef & Veggies Recipe Whole Health Blend Chunks in Gravy Wet Dog Food",
+      "brand": "Rachael Ray Nutrish",
+      "url": "https://www.nutrish.com/product/nutrish-chunks-in-gravy-real-beef-veggies-recipe-wet-dog-food/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "life_stage": "adult",
+      "ingredients_raw": "Beef Broth, Beef, Chicken, Liver, Soy Protein Concentrate, Pumpkin, Peas, Carrots, Brown Rice, Canola Oil (preserved with Mixed Tocopherols), Barley, Cane Molasses, Dried Eggs, Oat Fiber, Salt, Dried Brewers Yeast, Menhaden Fish Oil (preserved with Mixed Tocopherols), Guar Gum, Calcium Carbonate, Sodium Tripolyphosphate, Potassium Chloride, Minerals (zinc proteinate, zinc sulfate, ferrous sulfate, iron proteinate, copper sulfate, copper proteinate, sodium selenite, manganese sulfate, manganese proteinate, calcium iodate), Vitamins (L-ascorbyl-2-polyphosphate (source of vitamin C), vitamin E supplement, thiamine mononitrate, niacin, d-calcium pantothenate, vitamin A supplement, riboflavin supplement, vitamin D3 supplement, vitamin B12 supplement, pyridoxine hydrochloride, folic acid), Carrageenan, Thiamin Mononitrate, Vitamin E, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 80.0,
+        "calcium_min": 0.25,
+        "phosphorus_min": 0.2,
+        "omega_3_min": 0.2,
+        "omega_6_min": 0.45,
+        "glucosamine_min": 135.0,
+        "chondroitin_min": 200.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "970 kcal/kg, 365 kcal/can",
+      "images": [
+        "/products/rachael-ray-nutrish/rachael-ray-nutrish-food-rachael-ray-nutrish-real-beef-veggies-recipe-whole-health-blend-chunks-in-gravy.jpg"
+      ]
+    },
+    {
+      "name": "Rachael Ray Nutrish Chicken Muttballs Wet Dog Food",
+      "brand": "Rachael Ray Nutrish",
+      "url": "https://www.nutrish.com/product/nutrish-chicken-muttballs-wet-dog-food/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "life_stage": "adult",
+      "ingredients_raw": "Chicken Broth, Chicken, Dried Egg Product, Ground Tapioca, Pea Protein, Carrots, Egg White, Dicalcium Phosphate, Rice Pasta (Rice, Water, Ground Tapioca), Natural Flavor, Guar Gum, Potassium Chloride, Spinach, Salt, Choline Chloride, Calcium Carbonate, Fish Oil, Caramel (Color), Zinc Proteinate, Magnesium Sulfate, Iron Proteinate, Celery Powder, Vitamin E Supplement, L-ascorbyl-2-polyphosphate (Source of Vitamin C), Thiamine Mononitrate, Niacin, Copper Proteinate, Manganese Proteinate, Vitamin A Acetate, Calcium Iodate, Calcium Pantothenate, Sodium Selenite, Riboflavin, Vitamin B12 Supplement, Pyridoxine Hydrochloride (Source of Vitamin B6), Folic Acid, Vitamin D3 Supplement, Biotin, Menadione Sodium Bisulfite Complex (Source of Vitamin K Activity)",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1312 kcal/kg",
+      "images": [
+        "/products/rachael-ray-nutrish/rachael-ray-nutrish-food-rachael-ray-nutrish-chicken-muttballs-wet-dog-food.png"
+      ]
+    },
+    {
+      "name": "Rachael Ray Nutrish Grain Free Salmon & Sweet Potato Recipe Dry Dog Food",
+      "brand": "Rachael Ray Nutrish",
+      "url": "https://www.nutrish.com/product/nutrish-grain-free-salmon-sweet-potato-recipe-dry-dog-food/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Zero Grain",
+      "life_stage": "adult",
+      "ingredients_raw": "Salmon, Chicken Meal, Sweet Potato, Pea Starch, Whole Dried Potato, Canola Meal, Dried Peas, Turkey Meal, Chicken Fat (Preserved with Mixed Tocopherols), Whole Flaxseed, Dried Plain Beet Pulp, Salt, Menhaden Fish Oil (Preserved with Mixed Tocopherols), Natural Flavor, Taurine, Citric Acid (Preservative), Minerals (Zinc Sulfate, Ferrous Sulfate, Copper Sulfate, Sodium Selenite, Manganese Sulfate, Calcium Iodate), Choline Chloride, Vitamins (Vitamin E Supplement, l - ascorbyl - 2 - polyphosphate (Source of Vitamin C), Niacin Supplement, Vitamin A Supplement, Thiamine Mononitrate, d - Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Biotin, Vitamin D3 Supplement), Lactic Acid, Mixed Tocopherols (Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "taurine_min": 0.2,
+        "omega_3_min": 1.0,
+        "omega_6_min": 2.0,
+        "glucosamine_min": 400.0,
+        "chondroitin_min": 200.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3530 kcal/kg, 360 kcal/cup",
+      "images": [
+        "/products/rachael-ray-nutrish/rachael-ray-nutrish-food-rachael-ray-nutrish-grain-free-salmon-sweet-potato-recipe-dry-dog-food.jpg"
+      ]
+    },
+    {
+      "name": "Rachael Ray Nutrish Hearty Beef Stew Wet Dog Food",
+      "brand": "Rachael Ray Nutrish",
+      "url": "https://www.nutrish.com/product/nutrish-hearty-beef-stew-wet-dog-food/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "life_stage": "adult",
+      "ingredients_raw": "Chicken Broth, Beef, Chicken, Dried Egg Product, Egg White, Pea Protein, Natural Flavor, Potato, Carrots, Green Pea, Ground Tapioca, Dicalcium Phosphate, Guar Gum, Caramel (Color), Potassium Chloride, Salt, Choline Chloride, Calcium Carbonate, Fish Oil, Zinc Proteinate, Iron Proteinate, Magnesium Sulfate, Celery Powder, Vitamin E Supplement, L-ascorbyl-2-polyphosphate (Source of Vitamin C), Thiamine Mononitrate, Niacin, Copper Proteinate, Manganese Proteinate, Vitamin A Acetate, Calcium Iodate, Calcium Pantothenate, Sodium Selenite, Riboflavin, Vitamin B12 Supplement, Pyridoxine Hydrochloride (Source of Vitamin B6), Folic Acid, Vitamin D3 Supplement, Biotin, Menadione Sodium Bisulfite Complex (Source of Vitamin K Activity)",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "958 kcal/kg",
+      "images": [
+        "/products/rachael-ray-nutrish/rachael-ray-nutrish-food-rachael-ray-nutrish-hearty-beef-stew-wet-dog-food.png"
+      ]
+    },
+    {
+      "name": "Rachael Ray Nutrish Real Chicken & Apple Recipe Whole Health Blend Premium Paté Wet Dog Food",
+      "brand": "Rachael Ray Nutrish",
+      "url": "https://www.nutrish.com/product/nutrish-premium-pate-real-chicken-apple-recipe-wet-dog-food/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "life_stage": "adult",
+      "ingredients_raw": "Chicken, chicken broth, chicken liver, apples, brown rice, peas, carrots, canola oil, guar gum, carrageenan, vitamins (L-ascorbyl-2-polyphosphate (source of vitamin C), vitamin E supplement, thiamine mononitrate, niacin, d-calcium pantothenate, vitamin A supplement, riboflavin supplement, vitamin D3 supplement, vitamin B12 supplement, pyridoxine hydrochloride, folic acid), minerals (zinc proteinate, zinc sulfate, ferrous sulfate, iron proteinate, copper sulfate, copper proteinate, sodium selenite, manganese sulfate, manganese proteinate, calcium iodate)",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 6.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1120 kcal/kg, 413 kcal/can",
+      "images": [
+        "/products/rachael-ray-nutrish/rachael-ray-nutrish-food-rachael-ray-nutrish-real-chicken-apple-recipe-whole-health-blend-premium-pat-wet.jpg"
+      ]
+    },
+    {
+      "name": "Rachael Ray Nutrish Gentle Digestion Real Chicken, Pumpkin & Salmon Recipe Premium Paté Wet Dog Food",
+      "brand": "Rachael Ray Nutrish",
+      "url": "https://www.nutrish.com/product/nutrish-gentle-digestion-real-chicken-pumpkin-salmon-recipe-wet-dog-food/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "life_stage": "adult",
+      "ingredients_raw": "Chicken, Chicken Broth, Chicken Liver, Pumpkin, Salmon, Brown Rice, Apples, Peas, Carrots, Guar Gum, Canola Oil, Carrageenan, Vitamins (L-Ascorbyl-2-Polyphosphate (Source Of Vitamin C), Vitamin E Supplement, Thiamine Mononitrate, Niacin, D-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Vitamin D3 Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid), Minerals (Zinc Proteinate, Zinc Sulfate, Ferrous Sulfate, Iron Proteinate, Copper Sulfate, Copper Proteinate, Sodium Selenite, Manganese Sulfate, Manganese Proteinate, Calcium Iodate), Choline Chloride",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 6.0,
+        "crude_fiber_max": 2.0,
+        "moisture_min": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1120 kcal/kg, 413 kcal/can",
+      "images": [
+        "/products/rachael-ray-nutrish/rachael-ray-nutrish-food-rachael-ray-nutrish-gentle-digestion-real-chicken-pumpkin-salmon-recipe-premium.jpg"
+      ]
+    },
+    {
+      "name": "Rachael Ray Nutrish Healthy Weight Real Turkey & Pumpkin Recipe Premium Paté Wet Dog Food",
+      "brand": "Rachael Ray Nutrish",
+      "url": "https://www.nutrish.com/product/nutrish-weight-management-real-turkey-pumpkin-recipe-wet-dog-food/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "life_stage": "adult",
+      "ingredients_raw": "Turkey, Turkey Broth, Pumpkin, Liver, Barley, Peas, Carrots, Guar Gum, Vitamins (L-ascorbyl-2-polyphosphate (source of vitamin C), vitamin E supplement, thiamine mononitrate, niacin, d-calcium pantothenate, vitamin A supplement, riboflavin supplement, vitamin D3 supplement, vitamin B12 supplement, pyridoxine hydrochloride, folic acid), Canola Oil (preserved with mixed tocopherols), Carrageenan, Minerals (zinc proteinate, zinc sulfate, ferrous sulfate, iron proteinate, copper sulfate, copper proteinate, sodium selenite, manganese sulfate, manganese proteinate, calcium iodate), L-Carnitine",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 4.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 78.0,
+        "l_carnitine_min": 22.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "967 kcal/kg, 356 kcal/can",
+      "images": [
+        "/products/rachael-ray-nutrish/rachael-ray-nutrish-food-rachael-ray-nutrish-healthy-weight-real-turkey-pumpkin-recipe-premium-pat-wet-do.jpg"
+      ]
+    },
+    {
+      "name": "Rachael Ray Nutrish Adult Dry Dog Food Real Salmon, Veggies & Brown Rice Recipe",
+      "brand": "Rachael Ray Nutrish",
+      "url": "https://www.nutrish.com/product/nutrish-real-salmon-veggies-brown-rice-recipe-dry-dog-food/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "ingredients_raw": "Salmon, Chicken Meal, Ground Whole Corn, Dried Peas, Grain Sorghum, Soybean Meal, Corn Protein Meal, Chicken Fat (preserved With Mixed Tocopherols), Brown Rice, Dried Plain Beet Pulp, Flaxseed, Whole Millet, Dried Carrots, Dicalcium Phosphate, Natural Flavor, Malted Barley Flour, Salt, Calcium Carbonate, Taurine, Choline Chloride, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (Source Of Vitamin C), Niacin Supplement, Vitamin A Supplement, Thiamine Mononitrate, D-Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Biotin, Vitamin D3 Supplement), Minerals (Ferrous Sulfate, Zinc Sulfate, Copper Sulfate, Sodium Selenite, Manganese Sulfate, Calcium Iodate), Zinc Sulfate, Citric Acid (preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "omega_6_min": 3.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8,
+        "taurine_min": 0.2,
+        "omega_3_min": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3620 kcal/kg, 340 kcal/cup",
+      "aafco_statement": "Rachael Ray Nutrish Real Salmon, Veggies & Brown Rice Recipe Dog Food is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for adult maintenance.",
+      "images": [
+        "/products/rachael-ray-nutrish/rachael-ray-nutrish-food-rachael-ray-nutrish-adult-dry-dog-food-real-salmon-veggies-brown-rice-recipe.png"
+      ]
+    },
+    {
+      "name": "Rachael Ray Nutrish Savory Roasters Chicken Recipe Dog Treats",
+      "brand": "Rachael Ray Nutrish",
+      "url": "https://www.nutrish.com/product/nutrish-savory-roasters-chicken-recipe-dog-treats/",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "ingredients_raw": "Chicken, Chickpeas, Potatoes, Glycerin, Sugar, Salt, Sorbic Acid (Used as a Preservative), Natural Smoke Flavor, Sunflower Lecithin, Annatto Extract (Color), Citric Acid (Used as a Preservative), Mixed Tocopherols (Used as a Preservative), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 15.0,
+        "crude_fat_min": 13.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 30.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3210 kcal/kg, 18 kcal/treat",
+      "images": [
+        "/products/rachael-ray-nutrish/rachael-ray-nutrish-treat-rachael-ray-nutrish-savory-roasters-chicken-recipe-dog-treats.png"
+      ]
+    }
+  ]
+}

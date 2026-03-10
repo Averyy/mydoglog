@@ -168,22 +168,15 @@ class TestFamilyStructure:
                 invalid.append((fam_name, sg))
         assert invalid == [], f"Invalid source_groups: {invalid}"
 
-    def test_all_members_have_form(self, families_data: dict) -> None:
-        missing = []
-        for fam_name, fam in families_data["families"].items():
-            for member, info in fam.get("members", {}).items():
-                if "form" not in info:
-                    missing.append(f"{fam_name}/{member}")
-        assert missing == [], f"Members missing form: {missing[:20]}"
-
     def test_no_duplicate_ingredients_across_families(
         self, families_data: dict
     ) -> None:
         seen: dict[str, str] = {}
         dupes = []
         for fam_name, fam in families_data["families"].items():
-            for member in fam.get("members", {}):
-                key = member.lower()
+            members = fam.get("members", [])
+            for member in members:
+                key = member.lower() if isinstance(member, str) else member
                 if key in seen:
                     dupes.append(f"'{member}' in both '{seen[key]}' and '{fam_name}'")
                 seen[key] = fam_name
@@ -219,25 +212,15 @@ class TestCrossReactivity:
 
 
 class TestHydrolyzed:
-    """Hydrolyzed ingredients are correctly flagged."""
-
-    def test_hydrolyzed_ingredients_have_flag(self, families_data: dict) -> None:
-        missing_flag = []
-        for fam_name, fam in families_data["families"].items():
-            for member, info in fam.get("members", {}).items():
-                if "hydrolyz" in member.lower() or "hydrolys" in member.lower():
-                    if not info.get("is_hydrolyzed"):
-                        missing_flag.append(f"{fam_name}/{member}")
-        assert missing_flag == [], (
-            f"Hydrolyzed ingredients missing is_hydrolyzed flag: {missing_flag}"
-        )
+    """Hydrolyzed ingredients exist for key vet diets."""
 
     def test_big3_vet_diets_have_hydrolyzed(self, families_data: dict) -> None:
         """Hill's z/d, Purina HA, Royal Canin HP should have hydrolyzed ingredients."""
-        hydrolyzed_families = set()
+        hydrolyzed_families: set[str] = set()
         for fam_name, fam in families_data["families"].items():
-            for member, info in fam.get("members", {}).items():
-                if info.get("is_hydrolyzed"):
+            for member in fam.get("members", []):
+                name = member if isinstance(member, str) else ""
+                if "hydrolyz" in name.lower() or "hydrolys" in name.lower():
                     hydrolyzed_families.add(fam_name)
 
         # Must have hydrolyzed chicken (z/d, HP) and hydrolyzed soy (HA, z/d low fat)

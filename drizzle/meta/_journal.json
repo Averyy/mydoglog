@@ -36,6 +36,20 @@
       "when": 1772982586729,
       "tag": "0004_quick_ego",
       "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1773088772959,
+      "tag": "0005_lame_madame_web",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1773089701456,
+      "tag": "0006_elite_medusa",
+      "breakpoints": true
     }
   ]
 }

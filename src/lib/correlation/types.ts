@@ -77,7 +77,6 @@ export interface ActiveIngredient {
 export interface DayOutcome {
   poopScore: number | null
   itchScore: number | null
-  vomitCount: number
   scorecardPoopFallback: number | null
   onItchinessMedication: boolean
   onDigestiveMedication: boolean
@@ -106,7 +105,6 @@ export interface IngredientScore {
   weightedItchScore: number | null
   rawAvgPoopScore: number | null
   rawAvgItchScore: number | null
-  vomitCount: number
   badDayCount: number
   goodDayCount: number
   badPoopDayCount: number
@@ -140,8 +138,6 @@ export interface IngredientProductEntry {
   productType: string
   avgPoopScore: number | null
   avgItchScore: number | null
-  digestiveImpact: string | null
-  itchinessImpact: string | null
   /** Original ingredient form key when merged into a family group (e.g. "corn (oil)"). */
   formKey?: string
 }
@@ -209,10 +205,6 @@ export interface RawItchinessLog {
   score: number
 }
 
-export interface RawVomitLog {
-  date: string
-}
-
 export interface RawAccidentalExposure {
   date: string
 }
@@ -226,8 +218,6 @@ export interface RawMedication {
 export interface RawScorecard {
   planGroupId: string
   poopQuality: number[] | null
-  digestiveImpact: string | null
-  itchinessImpact: string | null
   itchSeverity: number[] | null
 }
 
@@ -258,7 +248,6 @@ export interface CorrelationInput {
   productIngredientMap: Map<string, ProductIngredientRecord[]>
   poopLogs: RawPoopLog[]
   itchinessLogs: RawItchinessLog[]
-  vomitLogs: RawVomitLog[]
   accidentalExposures: RawAccidentalExposure[]
   medications: RawMedication[]
   scorecards: RawScorecard[]

@@ -95,12 +95,6 @@ export const quantityUnitEnum = pgEnum("quantity_unit", [
 ])
 
 
-export const itchinessImpactEnum = pgEnum("itchiness_impact", [
-  "better",
-  "no_change",
-  "worse",
-])
-
 
 export const poopColorEnum = pgEnum("poop_color", [
   "brown",
@@ -114,7 +108,6 @@ export const poopColorEnum = pgEnum("poop_color", [
   "white_spots",
 ])
 
-export const vomitTypeEnum = pgEnum("vomit_type", ["vomiting", "regurgitation", "bile"])
 
 export const timeSinceMealEnum = pgEnum("time_since_meal", [
   "lt_30min",
@@ -392,8 +385,6 @@ export const foodScorecards = pgTable(
     planGroupId: text("plan_group_id").notNull(),
     poopQuality: integer("poop_quality").array(),
     itchSeverity: integer("itch_severity").array(),
-    digestiveImpact: itchinessImpactEnum("digestive_impact"),
-    itchinessImpact: itchinessImpactEnum("itchiness_impact"),
     notes: text("notes"),
     createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
   },
@@ -421,24 +412,6 @@ export const poopLogs = pgTable(
   (table) => [index("idx_poop_logs_dog_date").on(table.dogId, table.date)],
 )
 
-export const vomitLogs = pgTable(
-  "vomit_logs",
-  {
-    id: text("id")
-      .primaryKey()
-      .$defaultFn(() => crypto.randomUUID()),
-    dogId: text("dog_id")
-      .notNull()
-      .references(() => dogs.id, { onDelete: "cascade" }),
-    date: date("date").notNull(),
-    datetime: timestamp("datetime", { withTimezone: true }),
-    type: vomitTypeEnum("type"),
-    timeSinceMeal: timeSinceMealEnum("time_since_meal"),
-    notes: text("notes"),
-    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
-  },
-  (table) => [index("idx_vomit_logs_dog_date").on(table.dogId, table.date)],
-)
 
 export const itchinessLogs = pgTable(
   "itchiness_logs",
@@ -551,7 +524,6 @@ export type Dog = typeof dogs.$inferSelect
 export type NewDog = typeof dogs.$inferInsert
 export type FeedingPeriod = typeof feedingPeriods.$inferSelect
 export type PoopLog = typeof poopLogs.$inferSelect
-export type VomitLog = typeof vomitLogs.$inferSelect
 export type ItchinessLog = typeof itchinessLogs.$inferSelect
 export type SymptomLog = typeof symptomLogs.$inferSelect
 export type Medication = typeof medications.$inferSelect

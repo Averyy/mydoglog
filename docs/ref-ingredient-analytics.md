@@ -20,7 +20,7 @@ Skin reactions and GI reactions are **different conditions with different trigge
 
 ### Current Engine State
 
-The engine already computes `weightedPoopScore` and `weightedItchScore` separately per ingredient. But `COMMON_TRIGGERS` in `ingredients.ts` presents Mueller's skin-only data as universal. The reference data and what we surface to the user should diverge based on which symptom channel is active.
+The engine computes `weightedPoopScore` and `weightedItchScore` separately per ingredient. `COMMON_SKIN_TRIGGERS` in `ingredients.ts` correctly presents Mueller's skin-only data and is only shown in the itch context. GI correlations are purely data-driven from the user's own logs.
 
 ---
 
@@ -376,6 +376,11 @@ Our daily check-in already captures appetite and vomiting. **Adding optional muc
 - **`seed` source group** — borage, canola, chia, coconut, flaxseed, hemp, olive, safflower, sunflower. No longer mapped to `other`.
 - **beet / beet_pulp split** — beet (root/carb) has whole beets; beet_pulp (fiber/fiber) has dried/plain beet pulp. Different nutritional roles.
 - **Expanded form_type enum** — `protein_isolate`, `starch`, `fiber`, `gluten` are now proper DB enum values. Previously mapped to `raw`, losing information. `concentrate` → `protein_isolate`.
+- **Volume-weighted position scoring** — each ingredient's position weight is multiplied by its product's share of daily gram intake. A trace ingredient in a 25g topper gets ~4% the weight of the same ingredient in a 600g main food.
+- **Backfill system** — historical feeding periods with scorecard data generate virtual day snapshots. Backfill days outside the daily-log window contribute at 0.5x weight to effective days. Scorecard-only days (no event logs) contribute at 0.25x. Multiple concurrent backfills use gram-weighted average outcomes.
+- **Asymmetric evaluation minimums** — implemented in UI via `needsMoreData()`: good poop scores need 14+ days, good itch scores need 56+ days. Bad signals have no minimum — 3-5 bad days is high-confidence.
+- **`COMMON_SKIN_TRIGGERS`** (Mueller data) only shown in itch context — no `COMMON_GI_TRIGGERS` list (GI correlations are purely data-driven).
+- **Signal mode toggle** — UI supports "Both" (union), "Stool" (GI merged), and "Itch" views with appropriate filtering.
 
 ### Ingredient splitting detection:
 - When multiple ingredients from the same legume family appear in a product (e.g. peas + pea protein + pea starch + pea fiber), the engine tracks `ingredientCount` and `worstPosition` per family key.
@@ -385,15 +390,14 @@ Our daily check-in already captures appetite and vomiting. **Adding optional muc
 ### Remaining TODO:
 
 1. **Fat % from GA data as a GI correlation input** — not just ingredient-level, but product-level fat content
-2. **Asymmetric evaluation minimums** — "bad" verdicts need no minimum (3-5 bad days is enough). "Good" verdicts need 2-4 weeks (GI) or 8 weeks (skin) to confirm absence of problems
 
 ### Already correct (no changes needed):
-- `COMMON_SKIN_TRIGGERS` (Mueller data) only shown in itch context — no `COMMON_GI_TRIGGERS` list (GI correlations are purely data-driven)
 - Fat/oil separation from protein (itch/both view), worst-score merge into parent family (stool view) with per-form breakdown
-- Hydrolyzed flagging
-- Cross-reactivity groups — biologically accurate
-- Position-based weighting for proteins — aligns with ingredient label regulation
+- Hydrolyzed flagging — keys separated as `family (hydrolyzed)`, enzymatically distinct in both GI and itch views
+- Cross-reactivity groups — biologically accurate, with 2+ bad families triggering group flags and 1 bad family generating warnings on related families
+- Position-based weighting for proteins — exponential decay (lambda 0.15), aligns with ingredient label regulation
 - Additive position weight override — carrageenan at position 25 flags in GI track (floor weight 0.5)
+- Ambiguous ingredient handling — ingredients with source group but no family keyed as `sourceGroup (ambiguous)`, warned when related families score poorly
 
 ---
 

@@ -36,6 +36,12 @@ interface ScorecardPageData {
     classifiedByPosition: { position: number; normalizedName: string; family: string | null; sourceGroup: string | null; formType: string | null; isHydrolyzed: boolean }[]
     saltPosition: number | null
   }>
+  productNutrition: Record<string, {
+    guaranteedAnalysis: Record<string, number> | null
+    calorieContent: string | null
+    type: string | null
+    format: string | null
+  }>
 }
 
 export default function FoodPage(): React.ReactElement {
@@ -115,6 +121,15 @@ export default function FoodPage(): React.ReactElement {
         classifiedByPosition,
         saltPosition: pdata.saltPosition,
       })
+    }
+    return map
+  }, [data])
+
+  const productNutritionMap = useMemo(() => {
+    const map = new Map<string, { guaranteedAnalysis: Record<string, number> | null; calorieContent: string | null; type: string | null; format: string | null }>()
+    if (!data?.productNutrition) return map
+    for (const [pid, ndata] of Object.entries(data.productNutrition)) {
+      map.set(pid, ndata)
     }
     return map
   }, [data])
@@ -236,6 +251,7 @@ export default function FoodPage(): React.ReactElement {
                 <div className="pt-3">
                   <ProductIngredientList
                     data={productIngredientDataMap.get(item.productId)}
+                    nutrition={productNutritionMap.get(item.productId)}
                     correlationScores={correlation?.scores ?? []}
                   />
                 </div>
@@ -265,6 +281,7 @@ export default function FoodPage(): React.ReactElement {
                   <div className="pt-3 flex items-center justify-between gap-2">
                     <ProductIngredientList
                       data={productIngredientDataMap.get(item.productId)}
+                      nutrition={productNutritionMap.get(item.productId)}
                       correlationScores={correlation?.scores ?? []}
                     />
                     {group.isBackfill && (

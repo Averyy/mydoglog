@@ -30,7 +30,6 @@ export interface LogStats {
   avgItchScore: number | null
   poopLogCount: number
   itchLogCount: number
-  vomitLogCount: number
   daysWithData: number
 }
 
@@ -51,8 +50,6 @@ export interface ScorecardSummary {
   id: string
   poopQuality: number[] | null
   itchSeverity: number[] | null
-  digestiveImpact: string | null
-  itchinessImpact: string | null
   notes: string | null
 }
 

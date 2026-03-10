@@ -23,7 +23,7 @@
       "channel": "vet",
       "product_type": "food",
       "product_format": "dry",
-      "ingredients_raw": "Dried chickpeas, alligator, dried peas, potato flour, pea protein, natural flavor, sunflower oil, (preserved with mixed tocopherols), coconut oil, calcium carbonate, marine microalgae, fructooligosaccharides, salt, dicalcium phosphate, vitamins, dl-methionine, choline chloride, minerals, taurine, mixed tocopherols, rosemary extract.",
+      "ingredients_raw": "Dried chickpeas, alligator, dried peas, potato flour, pea protein, natural flavor, sunflower oil, (preserved with mixed tocopherols), coconut oil, calcium carbonate, marine microalgae, fructooligosaccharides, salt, dicalcium phosphate, vitamins, dl-methionine, choline chloride, minerals, taurine, mixed tocopherols, rosemary extract",
       "guaranteed_analysis": {
         "crude_protein_min": 20.9,
         "crude_fat_min": 11.7,
@@ -59,7 +59,7 @@
       "channel": "vet",
       "product_type": "treat",
       "product_format": "dry",
-      "ingredients_raw": "Dried banana, potato flour, tapioca starch, vegetable glycerine, dried rabbit, natural flavoring, sodium hexametaphosphate, smoke flavor, citric acid, parsley flakes, buffered vinegar.",
+      "ingredients_raw": "Dried banana, potato flour, tapioca starch, vegetable glycerine, dried rabbit, natural flavoring, sodium hexametaphosphate, smoke flavor, citric acid, parsley flakes, buffered vinegar",
       "guaranteed_analysis": {
         "crude_protein_min": 6.4,
         "crude_fat_min": 1.3,
@@ -94,7 +94,7 @@
       "channel": "vet",
       "product_type": "food",
       "product_format": "dry",
-      "ingredients_raw": "Rabbit, dried chickpeas, dried potatoes, potato protein, potato flour, natural flavor, coconut oil (preserved with mixed tocopherols), canola oil (preserved with mixed tocopherols), dicalcium phosphate, calcium carbonate, marine microalgae, salt, fructooligosaccharides, choline chloride, vitamins and minerals, taurine, mixed tocopherols, rosemary extract.",
+      "ingredients_raw": "Rabbit, dried chickpeas, dried potatoes, potato protein, potato flour, natural flavor, coconut oil (preserved with mixed tocopherols), canola oil (preserved with mixed tocopherols), dicalcium phosphate, calcium carbonate, marine microalgae, salt, fructooligosaccharides, choline chloride, vitamins and minerals, taurine, mixed tocopherols, rosemary extract",
       "guaranteed_analysis": {
         "crude_protein_min": 26.2,
         "crude_fat_min": 13.1,
@@ -159,7 +159,7 @@
       "channel": "vet",
       "product_type": "food",
       "product_format": "dry",
-      "ingredients_raw": "Pork, brown rice, oatmeal, potato flour, pork meal, potato protein, canola oil, tomato pomace, dried pork liver, natural flavor, salt, marine microalgae, dl-methionine, potassium citrate, vitamins, choline chloride, minerals, mixed tocopherols, taurine, rosemary extract.",
+      "ingredients_raw": "Pork, brown rice, oatmeal, potato flour, pork meal, potato protein, canola oil, tomato pomace, dried pork liver, natural flavor, salt, marine microalgae, dl-methionine, potassium citrate, vitamins, choline chloride, minerals, mixed tocopherols, taurine, rosemary extract",
       "guaranteed_analysis": {
         "crude_protein_min": 22.5,
         "crude_fat_min": 13.3,
@@ -195,7 +195,7 @@
       "channel": "vet",
       "product_type": "food",
       "product_format": "wet",
-      "ingredients_raw": "Garbanzo beans, vegetable broth, pea flour, water, dried miscanthus grass, millet, fava bean protein, salt, fava beans, brown rice, calcium carbonate, canola oil, vegetable glycerin, sunflower lecithin, hickory flavor, minerals/vitamins (zinc proteinate, vitamin E supplement, iron proteinate, ferrous sulfate, biotin, copper proteinate, sodium selenite, niacin, D-calcium pantothenate, manganous oxide, riboflavin, vitamin A acetate, thiamine mononitrate, vitamin B12 supplement, pyridoxine hydrochlordie, calcium iodate, vitamin D3 supplement, folic acid), hickory flavor, natural flavor, celery seed powder, fructooligosaccharides, brewers yeast, EDTA, potassium sorbate, sodium benzoate, seasoning, sodium erythrobate.",
+      "ingredients_raw": "Garbanzo beans, vegetable broth, pea flour, water, dried miscanthus grass, millet, fava bean protein, salt, fava beans, brown rice, calcium carbonate, canola oil, vegetable glycerin, sunflower lecithin, hickory flavor, minerals/vitamins (zinc proteinate, vitamin E supplement, iron proteinate, ferrous sulfate, biotin, copper proteinate, sodium selenite, niacin, D-calcium pantothenate, manganous oxide, riboflavin, vitamin A acetate, thiamine mononitrate, vitamin B12 supplement, pyridoxine hydrochlordie, calcium iodate, vitamin D3 supplement, folic acid), hickory flavor, natural flavor, celery seed powder, fructooligosaccharides, brewers yeast, EDTA, potassium sorbate, sodium benzoate, seasoning, sodium erythrobate",
       "guaranteed_analysis": {
         "crude_protein_min": 15.5,
         "crude_fat_min": 7.9,
@@ -227,7 +227,7 @@
       "channel": "vet",
       "product_type": "food",
       "product_format": "wet",
-      "ingredients_raw": "Rabbit, sweet potatoes, garbanzo beans, dried miscanthus grass, water, salt, fava bean protein, brown rice, calcium carbonate, canola oil, vegetable glycerin, sunflower lecithin, dicalcium phosphate, taurine, minerals/vitamins: (zinc proteinate, vitamin E supplement, iron proteinate, ferrous sulfate, biotin, copper proteinate, sodium selenite, niacin, D-calcium pantothenate, manganous oxide, riboflavin, vitamin A acetate, thiamine mononitrate, vitamin B12 supplement, pyridoxine hydrochlordie, calcium iodate, vitamin D3 supplement, folic acid), hickory flavor, natural flavor, celery seed powder, fructoolligosaccharide, brewers yeast, EDTA, potassium sorbate, sodium benzoate, seasoning, sodium erythrobate.",
+      "ingredients_raw": "Rabbit, sweet potatoes, garbanzo beans, dried miscanthus grass, water, salt, fava bean protein, brown rice, calcium carbonate, canola oil, vegetable glycerin, sunflower lecithin, dicalcium phosphate, taurine, minerals/vitamins: (zinc proteinate, vitamin E supplement, iron proteinate, ferrous sulfate, biotin, copper proteinate, sodium selenite, niacin, D-calcium pantothenate, manganous oxide, riboflavin, vitamin A acetate, thiamine mononitrate, vitamin B12 supplement, pyridoxine hydrochlordie, calcium iodate, vitamin D3 supplement, folic acid), hickory flavor, natural flavor, celery seed powder, fructoolligosaccharide, brewers yeast, EDTA, potassium sorbate, sodium benzoate, seasoning, sodium erythrobate",
       "guaranteed_analysis": {
         "crude_protein_min": 13.9,
         "crude_fat_min": 9.7,
@@ -259,7 +259,7 @@
       "channel": "vet",
       "product_type": "food",
       "product_format": "dry",
-      "ingredients_raw": "Rabbit, sweet potato flour, salt, mixed tocopherols, taurine, rosemary extract.",
+      "ingredients_raw": "Rabbit, sweet potato flour, salt, mixed tocopherols, taurine, rosemary extract",
       "calorie_content": "4156 kcal/kg, 192 kcal/cup",
       "images": [
         "/products/rayne/rayne-food-rabbit-diag-freeze-dried-food-for-dogs-and-cats.png"
@@ -281,7 +281,7 @@
       "channel": "vet",
       "product_type": "treat",
       "product_format": "dry",
-      "ingredients_raw": "Dried banana, potato flour, tapioca starch, vegetable glycerine, dried kangaroo, natural flavoring, sodium hexametaphosphate, smoke flavor, citric acid, parsley flakes, buffered vinegar.",
+      "ingredients_raw": "Dried banana, potato flour, tapioca starch, vegetable glycerine, dried kangaroo, natural flavoring, sodium hexametaphosphate, smoke flavor, citric acid, parsley flakes, buffered vinegar",
       "guaranteed_analysis": {
         "crude_protein_min": 7.3,
         "crude_fat_min": 1.4,
@@ -316,7 +316,7 @@
       "channel": "vet",
       "product_type": "food",
       "product_format": "wet",
-      "ingredients_raw": "Water, alligator, dried potatoes, potato protein, dried sweet potatoes, potato starch, natural flavor, miscanthus grass, sunflower oil, dried celery, agar-agar, potassium chloride, marine microalgae oil, inulin, minerals, choline chloride, salt, taurine, vitamins.",
+      "ingredients_raw": "Water, alligator, dried potatoes, potato protein, dried sweet potatoes, potato starch, natural flavor, miscanthus grass, sunflower oil, dried celery, agar-agar, potassium chloride, marine microalgae oil, inulin, minerals, choline chloride, salt, taurine, vitamins",
       "guaranteed_analysis": {
         "crude_protein_min": 7.0,
         "crude_fat_min": 4.3,
@@ -347,7 +347,7 @@
       "channel": "vet",
       "product_type": "treat",
       "product_format": "dry",
-      "ingredients_raw": "Turkey, rice, gelatin, cane molasses, glycerine, marine algae, tomato pomace, blueberries, calcium carbonate, spinach, flaxseed, sunflower oil, potassium citrate, fructooligosaccharides, choline chloride, L-carnitine, mixed tocopherols, taurine, salt, vitamins, minerals, rosemary extract.",
+      "ingredients_raw": "Turkey, rice, gelatin, cane molasses, glycerine, marine algae, tomato pomace, blueberries, calcium carbonate, spinach, flaxseed, sunflower oil, potassium citrate, fructooligosaccharides, choline chloride, L-carnitine, mixed tocopherols, taurine, salt, vitamins, minerals, rosemary extract",
       "guaranteed_analysis": {
         "crude_protein_min": 25.0,
         "crude_fat_min": 10.0,
@@ -376,7 +376,7 @@
       "channel": "vet",
       "product_type": "food",
       "product_format": "wet",
-      "ingredients_raw": "Rabbit, water, potato starch, sunflower oil, dried celery, agar-agar, salt, taurine.",
+      "ingredients_raw": "Rabbit, water, potato starch, sunflower oil, dried celery, agar-agar, salt, taurine",
       "calorie_content": "1051 kcal/kg, 388 kcal/can",
       "images": [
         "/products/rayne/rayne-food-rabbit-diag-canned-pat-for-dogs-and-cats.png"
@@ -398,7 +398,7 @@
       "channel": "vet",
       "product_type": "treat",
       "product_format": "wet",
-      "ingredients_raw": "Rabbit, pea flour, pinto bean flour, pea protein, salt, honey.",
+      "ingredients_raw": "Rabbit, pea flour, pinto bean flour, pea protein, salt, honey",
       "calorie_content": "25 kcal/treat",
       "images": [
         "/products/rayne/rayne-treat-rabbit-meatballs-for-dogs.png"
@@ -420,7 +420,7 @@
       "channel": "vet",
       "product_type": "treat",
       "product_format": "wet",
-      "ingredients_raw": "Kangaroo, pinto bean flour, pea flour, pea protein, salt, honey, L-ascorbyl-2-polyphosphate (source of vitamin C).",
+      "ingredients_raw": "Kangaroo, pinto bean flour, pea flour, pea protein, salt, honey, L-ascorbyl-2-polyphosphate (source of vitamin C)",
       "calorie_content": "22 kcal/treat",
       "images": [
         "/products/rayne/rayne-treat-kangaroo-meatballs-for-dogs.png"
@@ -442,7 +442,7 @@
       "channel": "vet",
       "product_type": "treat",
       "product_format": "dry",
-      "ingredients_raw": "Kangaroo liver.",
+      "ingredients_raw": "Kangaroo liver",
       "guaranteed_analysis": {
         "crude_protein_min": 65.0,
         "crude_fat_min": 10.0,
@@ -471,7 +471,7 @@
       "channel": "vet",
       "product_type": "food",
       "product_format": "dry",
-      "ingredients_raw": "Kangaroo, sweet potato flour, kangaroo liver, salt, mixed tocopherols, taurine, rosemary extract.",
+      "ingredients_raw": "Kangaroo, sweet potato flour, kangaroo liver, salt, mixed tocopherols, taurine, rosemary extract",
       "calorie_content": "3521 kcal/kg, 176 kcal/cup",
       "images": [
         "/products/rayne/rayne-food-kangaroo-diag-freeze-dried-food-for-dogs-and-cats.png"
@@ -493,7 +493,7 @@
       "channel": "vet",
       "product_type": "food",
       "product_format": "wet",
-      "ingredients_raw": "Kangaroo, water, dried sweet potatoes, kangaroo liver, dried potatoes, sunflower oil, agar-agar, dried celery, inulin, potassium chloride, salt, calcium carbonate, choline chloride, taurine, vitamins, minerals.",
+      "ingredients_raw": "Kangaroo, water, dried sweet potatoes, kangaroo liver, dried potatoes, sunflower oil, agar-agar, dried celery, inulin, potassium chloride, salt, calcium carbonate, choline chloride, taurine, vitamins, minerals",
       "guaranteed_analysis": {
         "crude_protein_min": 11.2,
         "crude_fat_min": 2.2,
@@ -524,7 +524,7 @@
       "channel": "vet",
       "product_type": "food",
       "product_format": "wet",
-      "ingredients_raw": "Water, potato protein, sweet potato, dried chickpeas, fava bean protein, quinoa, potatoes, bell peppers, broccoli, black beans, potato starch, green beans, coconut oil, peas, dicalcium phosphate, pumpkin, millet, marine microalgae, natural flavoring, sunflower oil, salt, celery powder, l-threonine, fructooligosaccharide, flaxseed, calcium carbonate, vitamins, l-tryptophan, minerals, DL-methionine, taurine, l-carnitine, choline chloride, l-arginine, mixed tocopherols, rosemary extract.",
+      "ingredients_raw": "Water, potato protein, sweet potato, dried chickpeas, fava bean protein, quinoa, potatoes, bell peppers, broccoli, black beans, potato starch, green beans, coconut oil, peas, dicalcium phosphate, pumpkin, millet, marine microalgae, natural flavoring, sunflower oil, salt, celery powder, l-threonine, fructooligosaccharide, flaxseed, calcium carbonate, vitamins, l-tryptophan, minerals, DL-methionine, taurine, l-carnitine, choline chloride, l-arginine, mixed tocopherols, rosemary extract",
       "guaranteed_analysis": {
         "crude_protein_min": 8.2,
         "crude_fat_min": 3.1,
@@ -555,7 +555,7 @@
       "channel": "vet",
       "product_type": "food",
       "product_format": "dry",
-      "ingredients_raw": "Dried black soldier fly larvae, quinoa, oats, millet, fava bean, fava protein, coconut oil, natural flavor, flaxseed, blueberry fiber, dried pumpkin, dicalcium phosphate, calcium carbonate, marine microalgae oil, salt, threonine, fructooligosaccharide, DL-methionine, choline chloride, minerals, taurine, vitamins, L-carnitine, tryptophan, mixed tocopherols, rosemary extract.",
+      "ingredients_raw": "Dried black soldier fly larvae, quinoa, oats, millet, fava bean, fava protein, coconut oil, natural flavor, flaxseed, blueberry fiber, dried pumpkin, dicalcium phosphate, calcium carbonate, marine microalgae oil, salt, threonine, fructooligosaccharide, DL-methionine, choline chloride, minerals, taurine, vitamins, L-carnitine, tryptophan, mixed tocopherols, rosemary extract",
       "guaranteed_analysis": {
         "crude_protein_min": 23.0,
         "crude_fat_min": 14.7,
@@ -586,7 +586,7 @@
       "channel": "vet",
       "product_type": "food",
       "product_format": "dry",
-      "ingredients_raw": "White Fish, oat groats, millet, potato protein, white fish meal, quinoa, tapioca starch, natural flavors, blueberry fiber, dried pumpkin, flaxseed, brewer's dried yeast, miscanthus grass, sunflower oil, dicalcium phosphate, coconut oil, potassium chloride, marine microalgae oil, calcium carbonate, Dl-methionine, choline chloride, minerals, fructooligosaccharide, vitamins, L-carnitine, taurine, salt, mixed tocopherols, rosemary extract.",
+      "ingredients_raw": "White Fish, oat groats, millet, potato protein, white fish meal, quinoa, tapioca starch, natural flavors, blueberry fiber, dried pumpkin, flaxseed, brewer's dried yeast, miscanthus grass, sunflower oil, dicalcium phosphate, coconut oil, potassium chloride, marine microalgae oil, calcium carbonate, Dl-methionine, choline chloride, minerals, fructooligosaccharide, vitamins, L-carnitine, taurine, salt, mixed tocopherols, rosemary extract",
       "guaranteed_analysis": {
         "crude_protein_min": 30.5,
         "crude_fat_min": 9.0,
@@ -623,7 +623,7 @@
       "channel": "vet",
       "product_type": "food",
       "product_format": "wet",
-      "ingredients_raw": "Rabbit, water, potato starch, agar-agar, dicalcium phosphate, dried celery, marine microalgae oil, inulin, potassium chloride, tricalcium phosphate, sunflower oil, salt, choline chloride, taurin, vitamins and minerals.",
+      "ingredients_raw": "Rabbit, water, potato starch, agar-agar, dicalcium phosphate, dried celery, marine microalgae oil, inulin, potassium chloride, tricalcium phosphate, sunflower oil, salt, choline chloride, taurin, vitamins and minerals",
       "guaranteed_analysis": {
         "crude_protein_min": 9.2,
         "crude_fat_min": 4.7,
@@ -654,7 +654,7 @@
       "channel": "vet",
       "product_type": "supplement",
       "product_format": "wet",
-      "ingredients_raw": "Water, sweet potato, pumpkin seed, pineapple, pumpkin, tomato, natural flavor, spinach, glycine, chia, calcium lactate, guar gum, xylose, choline chloride, vitamin and mineral mixture.",
+      "ingredients_raw": "Water, sweet potato, pumpkin seed, pineapple, pumpkin, tomato, natural flavor, spinach, glycine, chia, calcium lactate, guar gum, xylose, choline chloride, vitamin and mineral mixture",
       "calorie_content": "540 kcal/kg, 22 kcal/pouch",
       "images": [
         "/products/rayne/rayne-supplement-well-stride-good-gravy-veggie-topper-for-dogs.png"
@@ -676,7 +676,7 @@
       "channel": "vet",
       "product_type": "food",
       "product_format": "wet",
-      "ingredients_raw": "Rabbit, water, sweet potatoes, red peppers, tapioca starch, celery powder, marine microalgae, monosodium phosphate, fructooligosaccharides, vitamins and minerals, salt, sunflower oil, choline chloride, taurine.",
+      "ingredients_raw": "Rabbit, water, sweet potatoes, red peppers, tapioca starch, celery powder, marine microalgae, monosodium phosphate, fructooligosaccharides, vitamins and minerals, salt, sunflower oil, choline chloride, taurine",
       "guaranteed_analysis": {
         "crude_protein_min": 7.0,
         "crude_fat_min": 5.4,
@@ -707,7 +707,7 @@
       "channel": "vet",
       "product_type": "food",
       "product_format": "wet",
-      "ingredients_raw": "Kangaroo, Water, Tapioca Starch, Salt, Taurine.",
+      "ingredients_raw": "Kangaroo, Water, Tapioca Starch, Salt, Taurine",
       "calorie_content": "627 kcal/kg, 222 kcal/box",
       "images": [
         "/products/rayne/rayne-food-kangaroo-diag-chunky-stew-for-dogs-and-cats.png"

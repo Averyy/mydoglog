@@ -6,7 +6,8 @@
 - Has been through multiple food trials (see food history below)
 
 ## Current Diet (as of Mar 2026)
-- **Pro Plan Veterinary Diets HA Hydrolyzed Chicken Flavour Canned Canine Formula** — 630g/day (215g x 3 meals), recently increased to 705g/day (235g x 3) around early March
+- **Pro Plan Veterinary Diets HA Hydrolyzed Chicken Flavour Canned Canine Formula** — 630g/day (215g x 3 meals), rolled back from 705g/day (235g x 3)
+- Switching to **Pro Plan Complete Essentials Beef & Rice Entree Classic** on ~Mar 12 (after 3 days on full-dose Zenrelia)
 - **Authority Digestive Support Wet Dog Food Supplement Topper - Pumpkin** — 25-30g per meal, constant across all foods. Removing it noticeably worsens stool.
 - Hydrolyzed treats were cut ~Mar 2 but no improvement after 4 days — treats likely not a factor, can resume
 
@@ -14,12 +15,14 @@
 - **FortiFlora (Enterococcus faecium SF68)** — 1 sachet/day, ~1 year. #1 vet-recommended probiotic. Constant, not a factor in current issues. Note: contains "animal digest" (unspecified protein) — potential confound in strict elimination trials.
 
 ## Current Medication
-- **Zenrelia (ilunocitinib)** 4.25mg/day (half of 8.5mg tablet), DIN: 02552094
+- **Zenrelia (ilunocitinib)** 8.5mg/day (full dose, resumed Mar 9), DIN: 02552094
   - JAK inhibitor for allergic dermatitis
-  - Started at 8.5mg but caused sleepiness, dropped to 4.25mg
-  - Fine all winter at this dose (no itching breakthrough)
+  - Started at 8.5mg (Sep 2025) but caused sleepiness, dropped to 4.25mg (~Oct 2025)
+  - 4.25mg was fine all winter but vet says full dose is correct for his weight — half dose only sufficient in offseason
+  - Resumed full 8.5mg Mar 9 per vet recommendation for allergy season
   - GI side effects (diarrhea, vomiting, nausea) are the #1 reported adverse reaction for this drug
   - Immunosuppressive — affects gut immune function, not just skin
+  - **Cytopoint** is a fallback option — vet will send pricing, no issue switching if needed
 
 ## Current Problem (March 2026)
 - Stool was perfect when HA diet started (months ago), gradually worsened over last few weeks
@@ -40,20 +43,32 @@
 - Treats — removed for 4 days with no improvement, were hydrolyzed anyway
 - Pumpkin topper — has always been part of his diet, helps stool when present
 
-### Recommended Action Plan
+### Action Plan (updated after Mar 9 vet visit)
 1. **Done:** Dropped portion back to 215g x 3, resumed hydrolyzed treats
-2. **Monday vet appointment (Mar 9):** See "Vet Visit Summary" section below
-3. **Wait 2-4 weeks on whatever vet recommends + HA diet, log daily** (poop + itch scores)
-4. **If stable:** Trial beef & rice (Pro Plan Complete Essentials) while staying on allergy medication
-   - Beef gave him score 2 (ideal) in his only trial
-   - If poop stays good and itch doesn't worsen beyond what medication manages, the food allergy was likely environmental all along
-5. **If beef trial succeeds:** He may not need a hydrolyzed diet at all — just environmental allergy management + a food his gut likes
+2. **Done:** Vet visit Mar 9 — see vet visit outcome below
+3. **Mar 9-11:** Full dose Zenrelia (8.5mg) on HA food. Log poop + itch daily. Establishes whether full dose causes GI issues on its own.
+4. **~Mar 12:** Switch to beef & rice (Pro Plan Complete Essentials) while staying on full-dose Zenrelia. Keep pumpkin topper + FortiFlora.
+   - Beef gave him score 2 (ideal) in his only trial (Aug 2025)
+   - Any GI changes after this point are attributable to the food switch, not the Zenrelia dose change
+5. **If beef trial succeeds:** He likely doesn't need HA diet — just environmental allergy management + a food his gut likes
+6. **If itching isn't well controlled on full-dose Zenrelia:** Cytopoint injection is the fallback (vet will send pricing)
 
 ---
 
-## Vet Visit Notes (Monday Mar 9, 2026)
+## Vet Visit Outcome (Mar 9, 2026)
 
-### Facts for the Vet
+### Vet Recommendations
+- **Zenrelia: Go back to full dose (8.5mg/day)** — correct dosage for his weight. Half dose was only sufficient during offseason; allergy season requires full dose.
+- **Cytopoint is an option** — vet will send pricing, no issue switching. Fallback if Zenrelia doesn't control itch or causes too many GI issues.
+- **Food switching is fine** — poop frequency and volume are likely driven by the food + pumpkin, not a medical concern.
+- **Avoid chicken-based diets** — vet recommendation, though current data suggests allergies are environmental not food-based (itching correlates with season, not protein). Beef & rice food has chicken only as 5th ingredient (minor amount).
+- **Duck or egg-based foods as alternatives** — vet suggested these as options, but most are veterinary diets (expensive). Sticking with retail foods for now.
+- **Rectal exam:** Some mucus found, consistent with the recent diarrhea/GI upset. Nothing unexpected.
+- No bloodwork or fecal panel ordered — vet comfortable this is environmental allergies + food tolerance.
+
+### Pre-Visit Notes (for reference)
+
+#### Facts for the Vet
 - On HA hydrolyzed food since September, with pumpkin topper + probiotics powder daily
 - On Zenrelia 4.25mg since October (was 8.5mg, caused sleepiness)
 - Stable all winter — stool 3s, no itch
@@ -138,3 +153,5 @@ Verified ingredients (match Purina.ca source, Mar 2026):
 - **~Early Mar 2026:** Increased portion from 215g to 235g per meal
 - **~Mar 2, 2026:** Cut hydrolyzed treats (no improvement after 4 days)
 - **Mar 6, 2026:** Stool hit 6 with slimy texture (mucus, first time). Front leg licking with bald spots. Vet appointment booked for Monday Mar 9
+- **Mar 9, 2026:** Vet visit. Resumed full-dose Zenrelia (8.5mg/day). Staying on HA food for 3 days to baseline the dose change.
+- **~Mar 12, 2026:** Planned switch to Pro Plan Complete Essentials Beef & Rice Entree Classic

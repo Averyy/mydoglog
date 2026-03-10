@@ -200,7 +200,7 @@ def _parse_ga(soup: BeautifulSoup) -> GuaranteedAnalysis | None:
     #   Dry also uses "Fat content" instead of "Crude fat"
     analysis_div = soup.find("div", class_="analysis")
     if analysis_div:
-        ga: GuaranteedAnalysis = {}
+        ga: dict[str, float] = {}
         for li in analysis_div.find_all("li"):
             li_text = li.get_text(strip=True)
             if not li_text:
@@ -217,25 +217,24 @@ def _parse_ga(soup: BeautifulSoup) -> GuaranteedAnalysis | None:
             value = float(m.group(2))
             # Determine qualifier from text or infer from nutrient type
             if "(min" in li_text.lower():
-                qualifier = "min"
+                suffix = "_min"
             elif "(max" in li_text.lower():
-                qualifier = "max"
+                suffix = "_max"
             elif "moisture" in nutrient or "fiber" in nutrient or "fibre" in nutrient or "ash" in nutrient:
-                qualifier = "max"
+                suffix = "_max"
             else:
-                qualifier = "min"
+                suffix = "_min"
 
-            entry = {"value": value, "unit": "%", "qualifier": qualifier}
             if "crude protein" in nutrient or nutrient == "protein":
-                ga["crude_protein"] = entry
+                ga[f"crude_protein{suffix}"] = value
             elif nutrient in ("crude fat", "fat content", "fat"):
-                ga["crude_fat"] = entry
+                ga[f"crude_fat{suffix}"] = value
             elif "crude fiber" in nutrient or "crude fibre" in nutrient:
-                ga["crude_fiber"] = entry
+                ga[f"crude_fiber{suffix}"] = value
             elif "moisture" in nutrient:
-                ga["moisture"] = entry
+                ga[f"moisture{suffix}"] = value
         if ga:
-            return ga
+            return ga  # type: ignore[return-value]
 
     return None
 

@@ -4,12 +4,13 @@
   "scraped_at": "2026-03-02T00:00:00+00:00",
   "scraper_version": "0.1.0",
   "stats": {
-    "product_count": 6,
+    "product_count": 7,
     "by_channel": {
-      "seed": 6
+      "seed": 7
     },
     "by_type": {
-      "food": 6
+      "food": 6,
+      "treat": 1
     }
   },
   "products": [
@@ -126,6 +127,25 @@
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "570 kcal/kg"
+    },
+    {
+      "name": "Freeze-Dried Beef Liver",
+      "brand": "Whole Food",
+      "url": "",
+      "channel": "seed",
+      "product_type": "treat",
+      "product_format": "dry",
+      "ingredients_raw": "Beef Liver",
+      "life_stage": "all",
+      "images": [],
+      "guaranteed_analysis": {
+        "crude_protein_min": 63.0,
+        "crude_fat_min": 6.0,
+        "crude_fiber_max": 1.3,
+        "moisture_max": 5.3
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3670 kcal/kg, 18 kcal/treat"
     }
   ]
 }

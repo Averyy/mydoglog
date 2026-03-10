@@ -55,7 +55,7 @@ function makeProductIngredients(
 const emptyOutcome: DayOutcome = {
   poopScore: null,
   itchScore: null,
-  vomitCount: 0,
+
   scorecardPoopFallback: null,
   onItchinessMedication: false,
   onDigestiveMedication: false,
@@ -85,7 +85,7 @@ function makeInput(overrides: Partial<CorrelationInput> = {}): CorrelationInput 
     productIngredientMap: new Map(),
     poopLogs: [],
     itchinessLogs: [],
-    vomitLogs: [],
+
     accidentalExposures: [],
     medications: [],
     scorecards: [],
@@ -400,7 +400,7 @@ describe("buildDaySnapshots", () => {
           createdAt: "2024-06-01T00:00:00Z",
         },
       ],
-      scorecards: [{ planGroupId: "plan-1", poopQuality: [4], itchSeverity: null, digestiveImpact: null, itchinessImpact: null }],
+      scorecards: [{ planGroupId: "plan-1", poopQuality: [4], itchSeverity: null,}],
     })
     const snaps = buildDaySnapshots(input, opts)
     expect(snaps[0].outcome.scorecardPoopFallback).toBe(4)
@@ -432,7 +432,7 @@ describe("buildDaySnapshots", () => {
           createdAt: "2024-06-01T00:00:00Z",
         },
       ],
-      scorecards: [{ planGroupId: "plan-1", poopQuality: [5], itchSeverity: null, digestiveImpact: null, itchinessImpact: null }],
+      scorecards: [{ planGroupId: "plan-1", poopQuality: [5], itchSeverity: null,}],
     })
     const snaps = buildDaySnapshots(input, opts)
     expect(snaps[0].outcome.poopScore).toBe(2)
@@ -463,7 +463,7 @@ describe("buildDaySnapshots", () => {
           createdAt: "2024-06-01T00:00:00Z",
         },
       ],
-      scorecards: [{ planGroupId: "plan-1", poopQuality: [3, 5], itchSeverity: null, digestiveImpact: null, itchinessImpact: null }],
+      scorecards: [{ planGroupId: "plan-1", poopQuality: [3, 5], itchSeverity: null,}],
     })
     const snaps = buildDaySnapshots(input, opts)
     expect(snaps[0].outcome.scorecardPoopFallback).toBe(4)
@@ -1559,7 +1559,7 @@ describe("distinct product count", () => {
           durationDays: 10,
           quantity: 2,
           quantityUnit: "cup",
-          scorecard: { planGroupId: "plan-a", poopQuality: [3], itchSeverity: null, digestiveImpact: null, itchinessImpact: null },
+          scorecard: { planGroupId: "plan-a", poopQuality: [3], itchSeverity: null,},
         },
         {
           planGroupId: "plan-b",
@@ -1569,7 +1569,7 @@ describe("distinct product count", () => {
           durationDays: 10,
           quantity: 2,
           quantityUnit: "cup",
-          scorecard: { planGroupId: "plan-b", poopQuality: [4], itchSeverity: null, digestiveImpact: null, itchinessImpact: null },
+          scorecard: { planGroupId: "plan-b", poopQuality: [4], itchSeverity: null,},
         },
       ],
     })
@@ -1605,7 +1605,7 @@ describe("backfill confidence", () => {
           durationDays: 60,
           quantity: 2,
           quantityUnit: "cup",
-          scorecard: { planGroupId: "plan-bf", poopQuality: [3], itchSeverity: null, digestiveImpact: null, itchinessImpact: null },
+          scorecard: { planGroupId: "plan-bf", poopQuality: [3], itchSeverity: null,},
         },
       ],
     })
@@ -1634,7 +1634,7 @@ describe("backfill confidence", () => {
           durationDays: 3,
           quantity: 2,
           quantityUnit: "cup",
-          scorecard: { planGroupId: "plan-bf", poopQuality: [4], itchSeverity: null, digestiveImpact: null, itchinessImpact: null },
+          scorecard: { planGroupId: "plan-bf", poopQuality: [4], itchSeverity: null,},
         },
       ],
     })
@@ -1663,7 +1663,7 @@ describe("backfill confidence", () => {
           durationDays: 10,
           quantity: 2,
           quantityUnit: "cup",
-          scorecard: { planGroupId: "plan-bf", poopQuality: [3], itchSeverity: [2, 4], digestiveImpact: null, itchinessImpact: null },
+          scorecard: { planGroupId: "plan-bf", poopQuality: [3], itchSeverity: [2, 4],},
         },
       ],
     })
@@ -1692,7 +1692,7 @@ describe("backfill confidence", () => {
           durationDays: 30,
           quantity: 2,
           quantityUnit: "cup",
-          scorecard: { planGroupId: "plan-bf", poopQuality: null, itchSeverity: [3], digestiveImpact: null, itchinessImpact: null },
+          scorecard: { planGroupId: "plan-bf", poopQuality: null, itchSeverity: [3],},
         },
       ],
     })
@@ -1721,7 +1721,7 @@ describe("backfill confidence", () => {
           durationDays: 10,
           quantity: 2,
           quantityUnit: "cup",
-          scorecard: { planGroupId: "plan-bf", poopQuality: null, itchSeverity: null, digestiveImpact: null, itchinessImpact: null },
+          scorecard: { planGroupId: "plan-bf", poopQuality: null, itchSeverity: null,},
         },
       ],
     })
@@ -1761,7 +1761,7 @@ describe("backfill confidence", () => {
           durationDays: 30,
           quantity: 2,
           quantityUnit: "cup",
-          scorecard: { planGroupId: "plan-food", poopQuality: [3], itchSeverity: [2], digestiveImpact: null, itchinessImpact: null },
+          scorecard: { planGroupId: "plan-food", poopQuality: [3], itchSeverity: [2],},
         },
         {
           planGroupId: "plan-supp",
@@ -1771,7 +1771,7 @@ describe("backfill confidence", () => {
           durationDays: 11,
           quantity: 1,
           quantityUnit: "scoop",
-          scorecard: { planGroupId: "plan-supp", poopQuality: [3], itchSeverity: [2], digestiveImpact: null, itchinessImpact: null },
+          scorecard: { planGroupId: "plan-supp", poopQuality: [3], itchSeverity: [2],},
         },
       ],
     })
@@ -1826,7 +1826,7 @@ describe("backfill confidence", () => {
           durationDays: 10,
           quantity: 600,
           quantityUnit: "g",
-          scorecard: { planGroupId: "plan-food", poopQuality: [3], itchSeverity: null, digestiveImpact: null, itchinessImpact: null },
+          scorecard: { planGroupId: "plan-food", poopQuality: [3], itchSeverity: null,},
         },
         {
           planGroupId: "plan-topper",
@@ -1836,7 +1836,7 @@ describe("backfill confidence", () => {
           durationDays: 10,
           quantity: 25,
           quantityUnit: "g",
-          scorecard: { planGroupId: "plan-topper", poopQuality: [3], itchSeverity: null, digestiveImpact: null, itchinessImpact: null },
+          scorecard: { planGroupId: "plan-topper", poopQuality: [3], itchSeverity: null,},
         },
       ],
     })
@@ -1874,7 +1874,7 @@ describe("flagCrossReactivity", () => {
       weightedItchScore: null,
       rawAvgPoopScore: 3,
       rawAvgItchScore: null,
-      vomitCount: 0,
+    
       badDayCount: 1,
       goodDayCount: 7,
       badPoopDayCount: 1,
@@ -2103,7 +2103,7 @@ describe("mergeScoresForGI", () => {
       weightedItchScore: null,
       rawAvgPoopScore: 3,
       rawAvgItchScore: null,
-      vomitCount: 0,
+    
       badDayCount: 1,
       goodDayCount: 7,
       badPoopDayCount: 1,

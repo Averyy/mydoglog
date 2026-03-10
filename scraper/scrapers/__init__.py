@@ -1,7 +1,8 @@
 """Dog food scraper registry."""
 
 from .royalcanin import scrape_royalcanin
-from .purina import scrape_purina
+from .purina_vet import scrape_purina_vet
+from .purina_retail import scrape_purina_retail
 from .hills import scrape_hills
 from .rayne import scrape_rayne
 from .gosolutions import scrape_gosolutions
@@ -22,13 +23,22 @@ from .wellness import scrape_wellness
 from .stellachewys import scrape_stellachewys
 from .merrick import scrape_merrick
 from .farmina import scrape_farmina
+from .simplynourish import scrape_simplynourish
+from .naturalbalance import scrape_naturalbalance
+from .instinct import scrape_instinct
+from .nulo import scrape_nulo
+from .canidae import scrape_canidae
+from .eukanuba import scrape_eukanuba
+from .kirkland import scrape_kirkland
+from .nutrish import scrape_nutrish
 
 # Registry: key -> (display_name, scrape_function)
 # Each function: (output_dir: Path) -> int (product count)
 SCRAPERS: dict[str, tuple[str, callable]] = {
     # Phase 1a — Big 3 (verified, ~500 products)
     "royalcanin": ("Royal Canin", scrape_royalcanin),
-    "purina": ("Purina", scrape_purina),
+    "purina_vet": ("Purina (Vet)", scrape_purina_vet),
+    "purina_retail": ("Purina (Retail)", scrape_purina_retail),
     "hills": ("Hill's", scrape_hills),
     # Phase 1b — Group A: HTML parse (confirmed data)
     "rayne": ("Rayne", scrape_rayne),
@@ -52,4 +62,13 @@ SCRAPERS: dict[str, tuple[str, callable]] = {
     "stellachewys": ("Stella & Chewy's", scrape_stellachewys),
     "merrick": ("Merrick", scrape_merrick),
     "farmina": ("Farmina", scrape_farmina),
+    # Phase 2 — New sources
+    "simplynourish": ("Simply Nourish", scrape_simplynourish),
+    "naturalbalance": ("Natural Balance", scrape_naturalbalance),
+    "instinct": ("Instinct", scrape_instinct),
+    "nulo": ("Nulo", scrape_nulo),
+    "canidae": ("Canidae", scrape_canidae),
+    "eukanuba": ("Eukanuba", scrape_eukanuba),
+    "kirkland": ("Kirkland Signature", scrape_kirkland),
+    "nutrish": ("Rachael Ray Nutrish", scrape_nutrish),
 }

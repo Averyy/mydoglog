@@ -1,0 +1,1667 @@
+{
+  "brand": "Purina",
+  "website_url": "https://www.purina.ca",
+  "scraped_at": "2026-03-10T15:26:56.324385+00:00",
+  "scraper_version": "0.1.0",
+  "stats": {
+    "product_count": 48,
+    "by_channel": {
+      "vet": 48
+    },
+    "by_type": {
+      "treat": 4,
+      "food": 37,
+      "supplement": 7
+    }
+  },
+  "products": [
+    {
+      "name": "Pro Plan Veterinary Diets Digestive Health Bites Canine Treats",
+      "brand": "Purina",
+      "url": "https://www.purina.ca/purina-pro-plan-veterinary-diets/dog/treats/digestive-health-bites-canine-treats",
+      "channel": "vet",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan Veterinary Diets",
+      "guaranteed_analysis": {
+        "crude_protein_min": 12.0,
+        "crude_fat_min": 4.0,
+        "crude_fiber_max": 6.0,
+        "moisture_max": 30.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "2636 kcal/kg, 8 kcal/treat",
+      "images": [
+        "/products/purina/purina-treat-pro-plan-veterinary-diets-digestive-health-bites-canine-treats.webp"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "454",
+          "upc": "038100183897"
+        }
+      ],
+      "ingredients_raw": "Chicken, wheat bran, corn gluten meal, ground yellow corn, water, glycerin, wheat flour, ground rice, sugar, dried pumpkin, Vitamin E supplement, salt, malted barley flour, L-ascorbyl-2-polyphosphate (Vitamin C), phosphoric acid, sorbic acid (a preservative), natural hickory smoke flavor, preserved with mixed-tocopherols, calcium propionate (a preservative)",
+      "source_id": "038100183897"
+    },
+    {
+      "name": "Pro Plan Veterinary Diets essentialcare Adult Dry Formula for Dogs",
+      "brand": "Purina",
+      "url": "https://www.purina.ca/purina-pro-plan-veterinary-diets/dog/dry-food/essentialcare-adult-dry-formula-dogs",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Essentialcare",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 12.0,
+        "omega_6_min": 1.5,
+        "epa_min": 0.1,
+        "calcium_min": 1.0,
+        "glucosamine_min": 400.0,
+        "omega_3_min": 0.45
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3680 kcal/kg, 371 kcal/cup",
+      "images": [
+        "/products/purina/purina-food-pro-plan-veterinary-diets-essentialcare-adult-dry-formula-for-dogs.webp"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "3.6",
+          "upc": "055800232076"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "8",
+          "upc": "055800224996"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "16",
+          "upc": "055800225122"
+        }
+      ],
+      "ingredients_raw": "Chicken, Poultry By-Product Meal, Rice, Whole Grain Wheat, Barley, Corn Protein Meal, Animal Fat Preserved with Mixed-Tocopherols, Dried Beet Pulp, Fish Meal, Natural Flavor, Cellulose, Dried Egg Product, Fish Oil, Calcium Carbonate, Potassium Chloride, Vegetable Oil, Salt, Dried Chicory Root, Vitamins [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Thiamine Mononitrate (Vitamin B-1), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Menadione Sodium Bisulfite Complex (Vitamin K), Vitamin D-3 Supplement, Biotin (Vitamin B-7)], Choline Chloride, Mono and Dicalcium Phosphate, Minerals [Zinc Sulfate, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate, Sodium Selenite], Dried Colostrum, L-Carnitine, L-Ascorbyl-2-Polyphosphate (Vitamin C), Soybean Oil, L-Lysine Monohydrochloride, Garlic Oil",
+      "source_id": "055800232076"
+    },
+    {
+      "name": "Pro Plan Veterinary Diets essentialcare Adult Dry Formula for Small Dogs",
+      "brand": "Purina",
+      "url": "https://www.purina.ca/purina-pro-plan-veterinary-diets/dog/dry-food/essentialcare-adult-dry-formula-for-small-dogs",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Essentialcare",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.0,
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 12.0,
+        "omega_6_min": 1.6,
+        "epa_min": 0.1,
+        "dha_min": 0.1,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8,
+        "glucosamine_min": 400.0,
+        "omega_3_min": 0.25
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3746 kcal/kg, 345 kcal/can",
+      "images": [
+        "/products/purina/purina-food-pro-plan-veterinary-diets-essentialcare-adult-dry-formula-for-small-dogs.webp"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "3.6",
+          "upc": "055800248084"
+        }
+      ],
+      "ingredients_raw": "Chicken, Barley, Corn Protein Meal, Rice, Animal Fat Preserved with Mixed-Tocopherols, Corn Germ Meal, Soybean Meal, Poultry By-Product Meal, Dried Beet Pulp, Dried Egg Product, Fish Meal, Glycerin, Natural Flavor, Fish Oil, Salt, Phosphoric Acid, Potassium Chloride, Calcium Carbonate, Mono and Dicalcium Phosphate, Dried Chicory Root, Vitamins [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Thiamine Mononitrate (Vitamin B-1), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Menadione Sodium Bisulfite Complex (Vitamin K), Vitamin D-3 Supplement, Biotin (Vitamin B-7)], Choline Chloride, Minerals [Zinc Sulfate, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate, Sodium Selenite], Dried Colostrum, L-Ascorbyl-2-Polyphosphate (Vitamin C), Taurine, Soybean Oil, DL-Methionine, L-Lysine Monohydrochloride, Garlic Oil",
+      "source_id": "055800248084"
+    },
+    {
+      "name": "Pro Plan Veterinary Diets essentialcare Puppy Canned Formula",
+      "brand": "Purina",
+      "url": "https://www.purina.ca/purina-pro-plan-veterinary-diets/dog/wet-food/essentialcare-puppy-canned-formula",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Essentialcare",
+      "guaranteed_analysis": {
+        "crude_protein_min": 10.0,
+        "crude_fat_min": 7.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 76.0,
+        "dha_min": 0.012
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1336 kcal/kg, 492 kcal/can",
+      "images": [
+        "/products/purina/purina-food-pro-plan-veterinary-diets-essentialcare-puppy-canned-formula.webp"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "368",
+          "upc": "055800473776"
+        }
+      ],
+      "ingredients_raw": "Chicken, Liver, Water, Meat By-Products, Salmon, Minerals, Salt, Guar Gum, Carrageenan, Choline Chloride, Vitamins",
+      "source_id": "055800473776"
+    },
+    {
+      "name": "Pro Plan Veterinary Diets essentialcare Puppy Dry Formula",
+      "brand": "Purina",
+      "url": "https://www.purina.ca/purina-pro-plan-veterinary-diets/dog/dry-food/essentialcare-puppy-dry-formula",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Essentialcare",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.0,
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 12.0,
+        "omega_6_min": 1.7,
+        "epa_min": 0.1,
+        "dha_min": 0.1,
+        "calcium_min": 1.1,
+        "glucosamine_min": 400.0,
+        "omega_3_min": 0.45
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3782 kcal/kg, 388 kcal/cup",
+      "images": [
+        "/products/purina/purina-food-pro-plan-veterinary-diets-essentialcare-puppy-dry-formula.webp"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "3.6",
+          "upc": "055800224736"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "8",
+          "upc": "055800225092"
+        }
+      ],
+      "ingredients_raw": "Chicken, Barley, Oat Meal, Chicken By-Product Meal, Soybean Meal, Rice, Animal Fat Preserved with Mixed-Tocopherols, Corn Protein Meal, Fish Meal, Dried Egg Product, Natural Flavor, Glycerin, Fish Oil, Salt, Mono and Dicalcium Phosphate, Vegetable Oil, Dried Chicory Root, Calcium Carbonate, Potassium Chloride, Dried Colostrum, Vitamins [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Thiamine Mononitrate (Vitamin B-1), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Menadione Sodium Bisulfite Complex (Vitamin K), Vitamin D-3 Supplement, Biotin (Vitamin B-7)], Minerals [Zinc Sulfate, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate, Sodium Selenite], Choline Chloride, L-Ascorbyl-2-Polyphosphate (Vitamin C), Soybean Oil, L-Carnitine, Garlic Oil",
+      "source_id": "055800224736"
+    },
+    {
+      "name": "Pro Plan Veterinary Diets essentialcare Puppy Dry Formula for Large Breeds",
+      "brand": "Purina",
+      "url": "https://www.purina.ca/purina-pro-plan-veterinary-diets/dog/dry-food/essentialcare-puppy-dry-formula-for-large-breeds",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Essentialcare",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.0,
+        "crude_fat_min": 13.0,
+        "crude_fiber_max": 6.0,
+        "moisture_max": 12.0,
+        "omega_6_min": 1.7,
+        "epa_min": 0.1,
+        "dha_min": 0.1,
+        "calcium_min": 1.1,
+        "glucosamine_min": 350.0,
+        "omega_3_min": 0.45
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3595 kcal/kg, 331 kcal/cup",
+      "images": [
+        "/products/purina/purina-food-pro-plan-veterinary-diets-essentialcare-puppy-dry-formula-for-large-breeds.webp"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "8",
+          "upc": "055800222794"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "14",
+          "upc": "055800342386"
+        }
+      ],
+      "ingredients_raw": "Turkey, Rice, Barley, Corn Protein Meal, Soybean Meal, Poultry By-Product Meal, Ground Whole Wheat, Animal Fat Preserved with Mixed-Tocopherols, Pea Fiber, Dried Egg Product, Fish Meal, Natural Flavor, Glycerin, Mono and Dicalcium Phosphate, Fish Oil, Salt, Dried Chicory Root, Calcium Carbonate, Potassium Citrate, Dried Colostrum, Vitamins [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Thiamine Mononitrate (Vitamin B-1), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Menadione Sodium Bisulfite Complex (Vitamin K), Vitamin D-3 Supplement, Biotin (Vitamin B-7)], Choline Chloride, Minerals [Zinc Sulfate, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate, Sodium Selenite], Potassium Chloride, L-Lysine Monohydrochloride, L-Ascorbyl-2-Polyphosphate (Vitamin C), Soybean Oil, Garlic Oil",
+      "source_id": "055800222794"
+    },
+    {
+      "name": "Pro Plan Veterinary Diets essentialcare Senior Dry Formula for Dogs",
+      "brand": "Purina",
+      "url": "https://www.purina.ca/purina-pro-plan-veterinary-diets/dog/dry-food/essentialcare-senior-dry-formula-for-dogs",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Essentialcare",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.0,
+        "crude_fat_min": 13.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 12.0,
+        "omega_6_min": 1.5,
+        "epa_min": 0.1,
+        "calcium_min": 1.0,
+        "glucosamine_min": 600.0,
+        "omega_3_min": 0.25
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3617 kcal/kg, 365 kcal/cup",
+      "images": [
+        "/products/purina/purina-food-pro-plan-veterinary-diets-essentialcare-senior-dry-formula-for-dogs.webp"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "3.6",
+          "upc": "055800380012"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "8",
+          "upc": "055800378958"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "14.1",
+          "upc": "055800379054"
+        }
+      ],
+      "ingredients_raw": "Turkey, Poultry By-Product Meal, Barley, Soybean Meal, Whole Grain Wheat, Rice, Corn Germ Meal, Corn Protein Meal, Vegetable Oil (Source of Medium-Chain Triglycerides), Dried Egg Product, Fish Meal, Natural Flavor, Pea Fiber, Glycerin, Animal Fat Preserved with Mixed-Tocopherols, Fish Oil, Salt, Dried Chicory Root, Calcium Carbonate, Mono and Dicalcium Phosphate, Potassium Chloride, Soybean Oil, L-Carnitine, Dried Colostrum, Vitamins [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Thiamine Mononitrate (Vitamin B-1), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Menadione Sodium Bisulfite Complex (Vitamin K), Vitamin D-3 Supplement, Biotin (Vitamin B-7)], Minerals [Zinc Sulfate, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate, Sodium Selenite], Choline Chloride, L-Ascorbyl-2-Polyphosphate (Vitamin C), L-Lysine Monohydrochloride, Garlic Oil",
+      "source_id": "055800380012"
+    },
+    {
+      "name": "Pro Plan Veterinary Diets essentialcare Adult Weight Management Chicken & Rice Formula in Gravy",
+      "brand": "Purina",
+      "url": "https://www.purina.ca/purina-pro-plan-veterinary-diets/dog/wet-food/essentialcare-adult-weight-management-chicken-rice-formula-in-gravy",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Essentialcare",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.0,
+        "crude_fat_min": 2.0,
+        "crude_fat_max": 4.5,
+        "moisture_max": 82.0,
+        "crude_fiber_max": 1.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "850 kcal/kg, 313 kcal/can",
+      "images": [
+        "/products/purina/purina-food-pro-plan-veterinary-diets-essentialcare-adult-weight-management-chicken-rice-for.webp"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "386",
+          "upc": "055800473486"
+        }
+      ],
+      "ingredients_raw": "Water, Chicken, Liver, Wheat Gluten, Meat By-Products, Corn Starch-Modified, Rice, Minerals, Tricalcium Phosphate, Salt, Choline Chloride, Vitamins",
+      "source_id": "055800473486"
+    },
+    {
+      "name": "Pro Plan Veterinary Supplements Joint Care Medium/Large Canine Supplement",
+      "brand": "Purina",
+      "url": "https://www.purina.ca/purina-pro-plan-veterinary-diets/dog/treats/joint-care-canine-probiotic-supplement-medium-large",
+      "channel": "vet",
+      "product_type": "supplement",
+      "product_format": "dry",
+      "sub_brand": "Therapeutics",
+      "images": [
+        "/products/purina/purina-supplement-pro-plan-veterinary-supplements-joint-care-medium-large-canine-supplement.webp"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "5",
+          "upc": "055800461292"
+        }
+      ],
+      "ingredients_raw": "Glucosamine Hydrochloride, Hydrolyzed Collagen, Chondroitin Sulphate, Omega-3 Fatty Acids, Hyaluronic Acid, Animal Digest, Brewer's Yeast, Citric Acid, Cod Liver Oil, Glycerin, Lecithin, Microcrystalline Cellulose, Natural Bacon Flavour, Silicon Dioxide, Sodium Chloride, Sodium Propionate, Tapioca Starch, Tocopherols, Water",
+      "source_id": "055800461292"
+    },
+    {
+      "name": "Pro Plan Veterinary Diets CC Cardio Care Dry Dog Food Formula",
+      "brand": "Purina",
+      "url": "https://www.purina.ca/purina-pro-plan-veterinary-diets/dog/dry-food/cc-cardio-care-dry-dog-food",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan Veterinary Diets",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 5.5,
+        "moisture_max": 12.5,
+        "ash_max": 9.5,
+        "calcium_min": 0.9,
+        "phosphorus_min": 0.8,
+        "sodium_max": 0.22,
+        "omega_3_min": 0.6,
+        "taurine_min": 0.15
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3672 kcal/kg, 429 kcal/can",
+      "images": [
+        "/products/purina/purina-food-pro-plan-veterinary-diets-cc-cardio-care-dry-dog-food-formula.webp"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "2.72",
+          "upc": "038100102713"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "7.48",
+          "upc": "038100102737 "
+        }
+      ],
+      "ingredients_raw": "Oat meal, corn protein meal, rice, chicken meal, animal fat preserved with mixed-tocopherols, vegetable oil (source of medium-chain triglycerides), cassava root flour, dried beet pulp, potato protein, powdered cellulose, liver flavor, fish meal, fish oil, mono and dicalcium phosphate, natural flavor, calcium carbonate, L-Lysine monohydrochloride, DL-Methionine, potassium chloride, magnesium sulfate, potassium sorbate (a preservative), L-Arginine, salt, Vitamin E supplement, taurine, L-Cysteine, glycine, choline chloride, zinc sulfate, ferrous sulfate, L-ascorbyl-2-polyphosphate (Vitamin C), niacin (Vitamin B-3), manganese sulfate, Vitamin A supplement, soybean oil, calcium pantothenate (Vitamin B-5), thiamine mononitrate (Vitamin B-1), Vitamin B-12 supplement, copper sulfate, riboflavin supplement (Vitamin B-2), pyridoxine hydrochloride (Vitamin B-6), garlic oil, folic acid (Vitamin B-9), menadione sodium bisulfite complex (Vitamin K), calcium iodate, biotin (Vitamin B-7), Vitamin D-3 supplement, sodium selenite",
+      "source_id": "038100102713"
+    },
+    {
+      "name": "Pro Plan Veterinary Diets UR Savory Selects Urinary Support Dog Food Ox/St With Chicken in Gravy",
+      "brand": "Purina",
+      "url": "https://www.purina.ca/purina-pro-plan-veterinary-diets/dog/wet-food/urinary-support-with-chicken-in-gravy",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Pro Plan Veterinary Diets",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.5,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 80.0,
+        "ash_max": 2.25,
+        "calcium_min": 0.16,
+        "phosphorus_min": 0.15
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "947 kcal/kg, 349 kcal/can",
+      "images": [
+        "/products/purina/purina-food-pro-plan-veterinary-diets-ur-savory-selects-urinary-support-dog-food-ox-st-with.webp"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "377",
+          "upc": "038100105189 "
+        }
+      ],
+      "ingredients_raw": "Water, chicken, meat by-products, wheat gluten, liver, rice, soy flour, powdered cellulose, guar gum, locust bean gum",
+      "source_id": "038100105189 "
+    },
+    {
+      "name": "Pro Plan Veterinary Diets CC Cardio Care Wet Dog Food",
+      "brand": "Purina",
+      "url": "https://www.purina.ca/purina-pro-plan-veterinary-diets/dog/wet-food/cardiocare",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Pro Plan Veterinary Diets",
+      "guaranteed_analysis": {
+        "crude_protein_min": 6.0,
+        "crude_fat_min": 4.0,
+        "crude_fiber_max": 3.2,
+        "moisture_max": 78.0,
+        "ash_max": 2.5,
+        "calcium_min": 0.16,
+        "phosphorus_min": 0.15,
+        "sodium_max": 0.065,
+        "taurine_min": 0.09,
+        "omega_3_min": 0.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1016 kcal/kg, 385 kcal/can",
+      "images": [
+        "/products/purina/purina-food-pro-plan-veterinary-diets-cc-cardio-care-wet-dog-food.webp"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "380",
+          "upc": "038100193223 "
+        }
+      ],
+      "ingredients_raw": "Water, meat by-products, chicken, rice, powdered cellulose, dextrose, vegetable oil (source of medium-chain triglycerides), fish oil, dried egg product, L-Lysine monohydrochloride, glycine, DL-Methionine, carrageenan, magnesium sulfate, locust bean gum, potassium chloride, garlic powder, tricalcium phosphate, taurine, Vitamin E supplement, xanthan gum, zinc sulfate, L-carnitine, ferrous sulfate, niacin (Vitamin B-3), thiamine mononitrate (Vitamin B-1), calcium pantothenate (Vitamin B-5), copper sulfate, manganese sulfate, pyridoxine hydrochloride (Vitamin B-6), Vitamin B-12 supplement, riboflavin supplement (Vitamin B-2), Vitamin A supplement, folic acid (Vitamin B-9), Vitamin D-3 supplement, biotin (Vitamin B-7), potassium iodide, sodium selenite",
+      "source_id": "038100193223 "
+    },
+    {
+      "name": "Pro Plan Veterinary Diets UR Savory Selects Urinary Support Dog Food Ox/St With Salmon in Gravy",
+      "brand": "Purina",
+      "url": "https://www.purina.ca/purina-pro-plan-veterinary-diets/dog/wet-food/savory-selects-urinary-salmon-in-gravy",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Pro Plan Veterinary Diets",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.5,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 80.0,
+        "ash_max": 2.25,
+        "calcium_min": 0.16,
+        "phosphorus_min": 0.15
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "929 kcal/kg, 342 kcal/can",
+      "images": [
+        "/products/purina/purina-food-pro-plan-veterinary-diets-ur-savory-selects-urinary-support-dog-food-ox-st-with.webp"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "377",
+          "upc": "038100105202 "
+        }
+      ],
+      "ingredients_raw": "Water, chicken, meat by-products, wheat gluten, liver, rice, soy flour, salmon, powdered cellulose, guar gum, locust bean gum, potassium chloride, tricalcium phosphate, magnesium sulfate, choline chloride, potassium citrate, calcium carbonate, calcium sulfate, Vitamin E supplement, zinc sulfate, niacin (Vitamin B-3), ferrous sulfate, thiamine mononitrate (Vitamin B-1), calcium pantothenate (Vitamin B-5), pyridoxine hydrochloride (Vitamin B-6), copper sulfate, riboflavin supplement (Vitamin B-2), manganese sulfate, Vitamin B-12 supplement, biotin (Vitamin B-7), folic acid (Vitamin B-9), Vitamin A supplement, Vitamin D-3 supplement, potassium iodide, sodium selenite",
+      "source_id": "038100105202 "
+    },
+    {
+      "name": "Pro Plan Veterinary Supplements Joint Care Small/Medium Canine Supplement",
+      "brand": "Purina",
+      "url": "https://www.purina.ca/purina-pro-plan-veterinary-diets/dog/treats/joint-care-canine-probiotic-supplement-small-medium",
+      "channel": "vet",
+      "product_type": "supplement",
+      "product_format": "dry",
+      "sub_brand": "Therapeutics",
+      "images": [
+        "/products/purina/purina-supplement-pro-plan-veterinary-supplements-joint-care-small-medium-canine-supplement.webp"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "2.5",
+          "upc": "055800460776"
+        }
+      ],
+      "ingredients_raw": "Glucosamine Hydrochloride, Hydrolyzed Collagen, Chondroitin Sulphate, Omega-3 Fatty Acids, Hyaluronic Acid, Animal Digest, Brewer's Yeast, Citric Acid, Cod Liver Oil, Glycerin, Lecithin, Microcrystalline Cellulose, Natural Bacon Flavour, Silicon Dioxide, Sodium Chloride, Sodium Propionate, Tapioca Starch, Tocopherols, Water",
+      "source_id": "055800460776"
+    },
+    {
+      "name": "Pro Plan Veterinary Diets HA Hydrolyzed Gentle Snackers",
+      "brand": "Purina",
+      "url": "https://www.purina.ca/purina-pro-plan-veterinary-diets/dog/treats/ha-hydrolyzed-gentle-snackers",
+      "channel": "vet",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan Veterinary Diets",
+      "guaranteed_analysis": {
+        "crude_protein_min": 18.0,
+        "crude_fat_min": 6.0,
+        "crude_fat_max": 9.0,
+        "crude_fiber_max": 3.5,
+        "moisture_max": 12.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3327 kcal/kg, 6 kcal/treat",
+      "images": [
+        "/products/purina/purina-treat-pro-plan-veterinary-diets-ha-hydrolyzed-gentle-snackers.webp"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "227",
+          "upc": "038100102386"
+        }
+      ],
+      "ingredients_raw": "Corn starch, hydrolyzed soy protein isolate, natural flavor, powdered cellulose, partially hydrogenated canola oil preserved with TBHQ, vegetable oil, tricalcium phosphate, dicalcium phosphate, potassium chloride, guar gum, DL-Methionine, choline chloride, calcium carbonate, glycine, taurine, L-Cysteine, magnesium oxide, zinc sulfate, Vitamin E supplement, salt, ferrous sulfate, manganese sulfate, niacin (Vitamin B-3), Vitamin A supplement, copper sulfate, calcium pantothenate (Vitamin B-5), thiamine mononitrate (Vitamin B-1), riboflavin supplement (Vitamin B-2), Vitamin B-12 supplement, pyridoxine hydrochloride (Vitamin B-6), garlic oil, folic acid (Vitamin B-9), Vitamin D-3 supplement, calcium iodate, biotin (Vitamin B-7), menadione sodium bisulfite complex (Vitamin K), sodium selenite",
+      "source_id": "038100102386"
+    },
+    {
+      "name": "Pro Plan Veterinary Diets DRM Dermatologic Management Naturals Dry Canine Formula",
+      "brand": "Purina",
+      "url": "https://www.purina.ca/purina-pro-plan-veterinary-diets/dog/dry-food/drm-dermatologic-management-naturals-dry-canine-formula",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan Veterinary Diets",
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 15.0,
+        "crude_fat_max": 4.0,
+        "moisture_max": 12.0,
+        "ash_max": 9.0,
+        "calcium_min": 1.1,
+        "omega_3_min": 0.8,
+        "omega_6_min": 1.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3665 kcal/kg",
+      "images": [
+        "/products/purina/purina-food-pro-plan-veterinary-diets-drm-dermatologic-management-naturals-dry-canine-formul.webp"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "2.72",
+          "upc": "038100176165"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "11.34",
+          "upc": "038100176189"
+        }
+      ],
+      "ingredients_raw": "Brewers rice, trout, oat meal, pea protein, beef fat preserved with mixed-tocopherols, natural flavor, potato protein, pea fiber, fish oil, mono and dicalcium phosphate, glycerin, calcium carbonate, potassium chloride, salt, L-Lysine monohydrochloride, taurine, Vitamin E supplement, choline chloride, zinc sulfate, L-ascorbyl-2-polyphosphate (Vitamin C), ferrous sulfate, zinc sulfate, manganese sulfate, niacin (Vitamin B-3), Vitamin A supplement, calcium carbonate, beta-Carotene, calcium pantothenate (Vitamin B-5), copper sulfate, thiamine mononitrate (Vitamin B-1), Vitamin B-12 supplement, riboflavin supplement (Vitamin B-2), pyridoxine hydrochloride (Vitamin B-6), folic acid (Vitamin B-9), calcium iodate, menadione sodium bisulfite complex (Vitamin K), Vitamin D-3 supplement, biotin (Vitamin B-7), sodium selenite",
+      "source_id": "038100176165"
+    },
+    {
+      "name": "Pro Plan Veterinary Diets OM Metabolic Response Plus Joint Mobility Dry Dog Food Formula",
+      "brand": "Purina",
+      "url": "https://www.purina.ca/purina-pro-plan-veterinary-diets/dog/dry-food/om-metabolic-response-plus-joint-mobility-dry-dog-food-formula",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan Veterinary Diets",
+      "guaranteed_analysis": {
+        "crude_protein_min": 44.0,
+        "crude_fat_min": 8.0,
+        "crude_fiber_max": 9.0,
+        "moisture_max": 13.0,
+        "glucosamine_max": 450.0,
+        "omega_3_min": 0.8,
+        "glucosamine_min": 1000.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3200 kcal/kg",
+      "images": [
+        "/products/purina/purina-food-pro-plan-veterinary-diets-om-metabolic-response-plus-joint-mobility-dry-dog-food.webp"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "2.72",
+          "upc": "038100100351"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "6.8",
+          "upc": "038100100375"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "10.9",
+          "upc": "038100100382"
+        }
+      ],
+      "ingredients_raw": "Wheat gluten, soy protein concentrate, poultry by-product meal, soybean germ meal, fish meal, pea protein, corn starch, dried beet pulp, powdered cellulose, natural flavor, fish oil, animal fat preserved with mixed-tocopherols, sodium caseinate, dried egg product, gelatin, potassium chloride, soy protein isolate, calcium carbonate, inulin, tricalcium phosphate, salt, Vitamin E supplement, taurine, choline chloride, L-Carnitine, glucosamine hydrochloride, zinc sulfate, ferrous sulfate, niacin (Vitamin B-3), manganese sulfate, Vitamin A supplement, calcium pantothenate (Vitamin B-5), thiamine mononitrate (Vitamin B-1), copper sulfate, Vitamin B-12 supplement, riboflavin supplement (Vitamin B-2), pyridoxine hydrochloride, folic acid (Vitamin B-9), menadione sodium bisulfite complex (Vitamin K), calcium iodate, biotin (Vitamin B-7), Vitamin D-3 supplement, sodium selenite",
+      "source_id": "038100100351"
+    },
+    {
+      "name": "Pro Plan Veterinary Supplements Forti Flora Powdered Probiotic Supplement for Dogs",
+      "brand": "Purina",
+      "url": "https://www.purina.ca/purina-pro-plan-veterinary-diets/dog/supplements/fortiflora-canine-probiotic-supplement",
+      "channel": "vet",
+      "product_type": "supplement",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan Veterinary Diets",
+      "images": [
+        "/products/purina/purina-supplement-pro-plan-veterinary-supplements-forti-flora-powdered-probiotic-supplement-for-do.webp"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "1",
+          "upc": "055800369482"
+        }
+      ],
+      "ingredients_raw": "Enterococcus Faecium SF68, Animal Digest, Brewer's Yeast",
+      "guaranteed_analysis": {
+        "crude_protein_min": 43.0,
+        "crude_fat_min": 10.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 5.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4 kcal/treat",
+      "source_id": "055800369482"
+    },
+    {
+      "name": "Pro Plan Veterinary Supplements Forti Flora PRO Synbiotic Action Powdered Canine Prebiotic & Probiotic Supplement",
+      "brand": "Purina",
+      "url": "https://www.purina.ca/purina-pro-plan-veterinary-diets/dog/supplements/fortiflora-sa-synbiotic-action-canine-probiotic-supplement",
+      "channel": "vet",
+      "product_type": "supplement",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan Veterinary Diets",
+      "images": [
+        "/products/purina/purina-supplement-pro-plan-veterinary-supplements-forti-flora-pro-synbiotic-action-powdered-canine.webp"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "2",
+          "upc": "055800417138"
+        }
+      ],
+      "ingredients_raw": "Psyllium Husk, Enterococcus Lactis SF68, Liver Flavor, Yeast",
+      "source_id": "055800417138"
+    },
+    {
+      "name": "Pro Plan Veterinary Supplements Calming Care Canine Probiotic Supplement",
+      "brand": "Purina",
+      "url": "https://www.purina.ca/purina-pro-plan-veterinary-diets/dog/supplements/calming-care-canine-probiotic-supplement",
+      "channel": "vet",
+      "product_type": "supplement",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan Veterinary Diets",
+      "images": [
+        "/products/purina/purina-supplement-pro-plan-veterinary-supplements-calming-care-canine-probiotic-supplement.webp"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "1",
+          "upc": "055800333100"
+        }
+      ],
+      "ingredients_raw": "Bifidobacterium Longum BL999, Animal Digest, Maltodextrin",
+      "source_id": "055800333100"
+    },
+    {
+      "name": "Pro Plan Veterinary Diets DH Dental Health Dry Canine Formula",
+      "brand": "Purina",
+      "url": "https://www.purina.ca/purina-pro-plan-veterinary-diets/dog/dry-food/dh-dental-health-dry-canine-formula",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan Veterinary Diets",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 12.0,
+        "ash_max": 7.5,
+        "omega_6_min": 1.4,
+        "calcium_min": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3668 kcal/kg",
+      "images": [
+        "/products/purina/purina-food-pro-plan-veterinary-diets-dh-dental-health-dry-canine-formula.webp"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "7.48",
+          "upc": "038100102539"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "11.34",
+          "upc": "055800472380"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "11.3",
+          "upc": "055800472380"
+        }
+      ],
+      "ingredients_raw": "Chicken, chicken meal, rice, ground yellow corn, ground wheat, corn protein meal, animal fat preserved with mixed-tocopherols, dried beet pulp, dried yeast, powdered cellulose, liver flavor, dried egg product, glycerin, salt, potassium chloride, calcium carbonate, phosphoric acid, mono and dicalcium phosphate, Vitamin E supplement, choline chloride, L-Lysine monohydrochloride, L-ascorbyl-2-polyphosphate (Vitamin C), zinc sulfate, ferrous sulfate, niacin (Vitamin B-3), manganese sulfate, potassium sorbate (a preservative), Vitamin A supplement, soybean oil, calcium pantothenate (Vitamin B-5), thiamine mononitrate (Vitamin B-1), Vitamin B-12 supplement, copper sulfate, riboflavin supplement (Vitamin B-2), pyridoxine hydrochloride (Vitamin B-6), garlic oil, folic acid (Vitamin B-9), menadione sodium bisulfite complex (Vitamin K), calcium iodate, biotin (Vitamin B-7), Vitamin D-3 supplement, sodium selenite",
+      "source_id": "038100102539"
+    },
+    {
+      "name": "Pro Plan Veterinary Diets DH Dental Health Small Bites Dry Canine Formula",
+      "brand": "Purina",
+      "url": "https://www.purina.ca/purina-pro-plan-veterinary-diets/dog/dry-food/dh-dental-health-small-bites-dry-canine-formula",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan Veterinary Diets",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 12.0,
+        "omega_6_min": 1.4,
+        "calcium_min": 1.0,
+        "glucosamine_min": 550.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3731 kcal/kg",
+      "images": [
+        "/products/purina/purina-food-pro-plan-veterinary-diets-dh-dental-health-small-bites-dry-canine-formula.webp"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "2.72",
+          "upc": "038100138606"
+        }
+      ],
+      "ingredients_raw": "Chicken, chicken meal, rice, ground yellow corn, ground wheat, corn protein meal, animal fat preserved with mixed-tocopherols, dried beet pulp, powdered cellulose, dried yeast, liver flavor, dried egg product, glycerin, salt, potassium chloride, L-Lysine monohydrochloride, calcium carbonate, phosphoric acid, Vitamin E supplement, mono and dicalcium phosphate, choline chloride, zinc sulfate, L-ascorbyl-2-polyphosphate (Vitamin C), thiamine mononitrate (Vitamin B-1), ferrous sulfate, niacin (Vitamin B-3), manganese sulfate, Vitamin A supplement, potassium sorbate (a preservative), calcium pantothenate (Vitamin B-5), Vitamin B-12 supplement, copper sulfate, riboflavin supplement (Vitamin B-2), pyridoxine hydrochloride (Vitamin B-6), garlic oil, folic acid (Vitamin B-9), menadione sodium bisulfite complex (Vitamin K), calcium iodate, biotin (Vitamin B-7), Vitamin D-3 supplement, sodium selenite",
+      "source_id": "038100138606"
+    },
+    {
+      "name": "Pro Plan Veterinary Diets EN Gastroenteric Canned Canine Formula",
+      "brand": "Purina",
+      "url": "https://www.purina.ca/purina-pro-plan-veterinary-diets/dog/wet-food/en-gastroenteric-canned-canine-formula",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Pro Plan Veterinary Diets",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 2.5,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 75.0,
+        "ash_max": 2.75,
+        "calcium_min": 0.3
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1139 kcal/kg, 432 kcal/can",
+      "images": [
+        "/products/purina/purina-food-pro-plan-veterinary-diets-en-gastroenteric-canned-canine-formula.webp"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "380",
+          "upc": "038100159328"
+        }
+      ],
+      "ingredients_raw": "Meat by-products, water, chicken, barley, rice, soy protein isolate, glycerin, vegetable oil (source of medium-chain triglycerides), tricalcium phosphate, guar gum, inulin, potassium chloride, fish oil, calcium sulfate, Vitamin E supplement, salt, magnesium sulfate, calcium carbonate, L-Lysine monohydrochloride, zinc sulfate, ferrous sulfate, niacin (Vitamin B-3), thiamine mononitrate (Vitamin B-1), copper sulfate, calcium pantothenate (Vitamin B-5), manganese sulfate, pyridoxine hydrochloride (Vitamin B-6), Vitamin B-12 supplement, riboflavin supplement (Vitamin B-2), Vitamin A supplement, folic acid (Vitamin B-9), potassium iodide, Vitamin D-3 supplement, biotin (Vitamin B-7), sodium selenite",
+      "source_id": "038100159328"
+    },
+    {
+      "name": "Pro Plan Veterinary Diets HA Hydrolyzed Chicken Flavour Canned Canine Formula",
+      "brand": "Purina",
+      "url": "https://www.purina.ca/purina-pro-plan-veterinary-diets/dog/wet-food/ha-hydrolyzed-chicken-flavour-canned-canine-formula",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Pro Plan Veterinary Diets",
+      "guaranteed_analysis": {
+        "crude_protein_min": 5.0,
+        "crude_fat_min": 2.0,
+        "crude_fiber_max": 3.5,
+        "moisture_max": 78.0,
+        "ash_max": 3.0,
+        "calcium_min": 0.27
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "905 kcal/kg, 341 kcal/can",
+      "images": [
+        "/products/purina/purina-food-pro-plan-veterinary-diets-ha-hydrolyzed-chicken-flavour-canned-canine-formula.webp"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "376",
+          "upc": "038100179890"
+        }
+      ],
+      "ingredients_raw": "Water, pea starch, hydrolyzed chicken liver, hydrolyzed soy protein isolate, powdered cellulose, dicalcium phosphate, coconut oil, guar gum, potassium chloride, carrageenan, soybean oil, fish oil, choline chloride, magnesium sulfate, salt, taurine, L-Threonine, DL-Methionine, xanthan gum, Vitamin E supplement, L-Cysteine, zinc sulfate, glycine, ferrous sulfate, niacin (Vitamin B-3), Vitamin A supplement, calcium carbonate, copper sulfate, calcium pantothenate (Vitamin B-5), thiamine mononitrate (Vitamin B-1), manganese sulfate, Vitamin B-12 supplement, riboflavin supplement (Vitamin B-2), pyridoxine hydrochloride (Vitamin B-6), folic acid (Vitamin B-9), potassium iodide, menadione sodium bisulfite complex (Vitamin K), Vitamin D-3 supplement, biotin (Vitamin B-7), sodium selenite",
+      "source_id": "038100179890"
+    },
+    {
+      "name": "Pro Plan Veterinary Diets HA Hydrolyzed Vegetarian Dry Canine Formula",
+      "brand": "Purina",
+      "url": "https://www.purina.ca/purina-pro-plan-veterinary-diets/dog/dry-food/ha-hydrolyzed-vegetarian-flavour-dry-canine-formula",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan Veterinary Diets",
+      "guaranteed_analysis": {
+        "crude_protein_min": 18.0,
+        "crude_fat_min": 8.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 11.0,
+        "ash_max": 7.0,
+        "calcium_min": 0.7
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3695 kcal/kg",
+      "images": [
+        "/products/purina/purina-food-pro-plan-veterinary-diets-ha-hydrolyzed-vegetarian-dry-canine-formula.webp"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "2.72",
+          "upc": "038100136671"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "7.48",
+          "upc": "038100172549"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "11.33",
+          "upc": "038100138521"
+        }
+      ],
+      "ingredients_raw": "Corn starch, hydrolyzed soy protein isolate, coconut oil, partially hydrogenated canola oil preserved with TBHQ, powdered cellulose, tricalcium phosphate, dicalcium phosphate, corn oil, potassium chloride, guar gum, choline chloride, calcium carbonate, salt, magnesium oxide, DL-Methionine, taurine, zinc sulfate, Vitamin E supplement, ferrous sulfate, manganese sulfate, soybean oil, niacin (Vitamin B-3), copper sulfate, Vitamin A supplement, calcium pantothenate (Vitamin B-5), thiamine mononitrate (Vitamin B-1), riboflavin supplement (Vitamin B-2), Vitamin B-12 supplement, garlic oil, pyridoxine hydrochloride (Vitamin B-6), calcium iodate, folic acid (Vitamin B-9), Vitamin D-3 supplement, biotin (Vitamin B-7), menadione sodium bisulfite complex (Vitamin K), sodium selenite",
+      "source_id": "038100136671"
+    },
+    {
+      "name": "Pro Plan Veterinary Diets JM Joint Mobility Dry Canine Formula",
+      "brand": "Purina",
+      "url": "https://www.purina.ca/purina-pro-plan-veterinary-diets/dog/dry-food/jm-joint-mobility-dry-canine-formula",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan Veterinary Diets",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 11.0,
+        "ash_max": 8.0,
+        "calcium_min": 1.1,
+        "omega_3_min": 0.85,
+        "glucosamine_min": 1000.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3775 kcal/kg",
+      "images": [
+        "/products/purina/purina-food-pro-plan-veterinary-diets-jm-joint-mobility-dry-canine-formula.webp"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "2.72",
+          "upc": "038100138491"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "7.48",
+          "upc": "038100102492"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "11.3",
+          "upc": "038100102508"
+        }
+      ],
+      "ingredients_raw": "Brewers rice, trout, salmon meal, corn protein meal, poultry by-product meal, dried egg product, oat ber, natural avor, animal fat preserved with mixed-tocopherols, sh oil, chicken, mono and dicalcium phosphate, potassium chloride, Vitamin E supplement, calcium carbonate, salt, choline chloride, glucosamine hydrochloride, zinc sulfate, taurine, L-ascorbyl-2-polyphosphate (Vitamin C), ferrous sulfate, manganese sulfate, copper sulfate, niacin (Vitamin B-3), Vitamin A supplement, calcium pantothenate (Vitamin B-5), thiamine mononitrate (Vitamin B-1), Vitamin B-12 supplement, riboavin supplement (Vitamin B-2), pyridoxine hydrochloride, calcium iodate, folic acid (Vitamin B-9), menadione sodium bisulte complex (Vitamin K), biotin (Vitamin B-7), Vitamin D-3 supplement, sodium selenite",
+      "source_id": "038100138491"
+    },
+    {
+      "name": "Pro Plan Veterinary Diets NF Kidney Function Canned Canine Formula",
+      "brand": "Purina",
+      "url": "https://www.purina.ca/purina-pro-plan-veterinary-diets/dog/wet-food/nf-kidney-function-canned-canine-formula",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Pro Plan Veterinary Diets",
+      "guaranteed_analysis": {
+        "crude_protein_min": 3.8,
+        "crude_fat_min": 5.5,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 74.0,
+        "ash_max": 2.5,
+        "calcium_min": 0.12,
+        "sodium_max": 0.13
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1282 kcal/kg, 483 kcal/can",
+      "images": [
+        "/products/purina/purina-food-pro-plan-veterinary-diets-nf-kidney-function-canned-canine-formula.webp"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "377",
+          "upc": "038100138033"
+        }
+      ],
+      "ingredients_raw": "Water, meat by-products, corn grits, rice, beef, liver, animal fat (preserved with TBHQ and citric acid), calcium sulfate, guar gum, fish oil, carrageenan, locust bean gum, potassium citrate, potassium chloride, magnesium sulfate, choline chloride, natural smoke flavor, Vitamin E supplement, DL-Methionine, zinc sulfate, ferrous sulfate, niacin (Vitamin B-3), thiamine mononitrate (Vitamin B-1), calcium pantothenate (Vitamin B-5), copper sulfate, pyridoxine hydrochloride (Vitamin B-6), manganese sulfate, Vitamin B-12 supplement, riboflavin supplement (Vitamin B-2), Vitamin A supplement, folic acid (Vitamin B-9), Vitamin D-3 supplement, biotin (Vitamin B-7), potassium iodide, sodium selenite",
+      "source_id": "038100138033"
+    },
+    {
+      "name": "Pro Plan Veterinary Diets NF Kidney Function Dry Canine Formula",
+      "brand": "Purina",
+      "url": "https://www.purina.ca/purina-pro-plan-veterinary-diets/dog/dry-food/nf-kidney-function-dry-canine-formula",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan Veterinary Diets",
+      "guaranteed_analysis": {
+        "crude_protein_min": 12.5,
+        "crude_fat_min": 13.0,
+        "crude_fiber_max": 2.5,
+        "moisture_max": 12.0,
+        "ash_max": 5.0,
+        "calcium_min": 0.5,
+        "sodium_max": 0.4
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4091 kcal/kg",
+      "images": [
+        "/products/purina/purina-food-pro-plan-veterinary-diets-nf-kidney-function-dry-canine-formula.webp"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "2.72",
+          "upc": "038100138460"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "7.48",
+          "upc": "038100102546"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "11.3",
+          "upc": "038100102652"
+        }
+      ],
+      "ingredients_raw": "Whole grain corn, rice, dried egg product, animal fat preserved with mixed-tocopherols, sugar, glycerin, liver flavor, dried whey, sodium caseinate, natural flavor, calcium carbonate, vegetable oil, potassium chloride, fish oil, L-Lysine monohydrochloride, salt, potassium citrate, mono and dicalcium phosphate, Vitamin E supplement, choline chloride, zinc sulfate, ferrous sulfate, niacin (Vitamin B-3), manganese sulfate, Vitamin A supplement, calcium pantothenate (Vitamin B-5), thiamine mononitrate (Vitamin B-1), Vitamin B-12 supplement, copper sulfate, riboflavin supplement (Vitamin B-2), pyridoxine hydrochloride (Vitamin B-6), garlic oil, folic acid (Vitamin B-9), menadione sodium bisulfite complex (Vitamin K), calcium iodate, Vitamin D-3 supplement, biotin (Vitamin B-7), sodium selenite",
+      "source_id": "038100138460"
+    },
+    {
+      "name": "Pro Plan Veterinary Diets OM Select Blend Overweight Management Dry Canine Formula",
+      "brand": "Purina",
+      "url": "https://www.purina.ca/purina-pro-plan-veterinary-diets/dog/dry-food/om-select-blend-overweight-management-dry-canine-formula",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan Veterinary Diets",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.0,
+        "crude_fat_min": 5.0,
+        "crude_fat_max": 8.5,
+        "crude_fiber_max": 15.0,
+        "moisture_max": 12.0,
+        "ash_max": 8.5,
+        "calcium_min": 0.8
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "2941 kcal/kg",
+      "images": [
+        "/products/purina/purina-food-pro-plan-veterinary-diets-om-select-blend-overweight-management-dry-canine-formu.webp"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "2.72",
+          "upc": "038100149633"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "7.48",
+          "upc": "038100102515"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "11.3",
+          "upc": "038100102522"
+        }
+      ],
+      "ingredients_raw": "Whole grain corn, soybean meal, soybean germ meal, soybean hulls, soy flour, poultry by-product meal, corn protein meal, pea fiber, natural flavor, powdered cellulose, animal fat preserved with mixed-tocopherols, glycerin, chicken, malted barley flour, tricalcium phosphate, salt, L-Lysine monohydrochloride, mono and dicalcium phosphate, calcium carbonate, zinc proteinate, Vitamin E supplement, choline chloride, DL-Methionine, manganese proteinate, L-Carnitine, ferrous sulfate, niacin (Vitamin B-3), Vitamin A supplement, copper proteinate, soybean oil, calcium pantothenate (Vitamin B-5), thiamine mononitrate (Vitamin B-1), Vitamin B-12 supplement, riboflavin supplement (Vitamin B-2), pyridoxine hydrochloride (Vitamin B-6), garlic oil, folic acid (Vitamin B-9), menadione sodium bisulfite complex (Vitamin K), Vitamin D-3 supplement, calcium iodate, biotin (Vitamin B-7), sodium selenite",
+      "source_id": "038100149633"
+    },
+    {
+      "name": "Pro Plan Veterinary Diets OM Overweight Management Dry Canine Formula",
+      "brand": "Purina",
+      "url": "https://www.purina.ca/purina-pro-plan-veterinary-diets/dog/dry-food/om-overweight-management-dry-canine-formula",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan Veterinary Diets",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 5.0,
+        "crude_fat_max": 8.5,
+        "crude_fiber_max": 16.0,
+        "moisture_max": 12.0,
+        "ash_max": 7.0,
+        "calcium_min": 0.9
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "2950 kcal/kg",
+      "images": [
+        "/products/purina/purina-food-pro-plan-veterinary-diets-om-overweight-management-dry-canine-formula.webp"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "2.72",
+          "upc": "038100138439"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "7.48",
+          "upc": "038100102478"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "11.3",
+          "upc": "038100102485"
+        }
+      ],
+      "ingredients_raw": "Whole grain corn, corn protein meal, soybean hulls, soybean germ meal, soybean meal, pea fiber, wheat gluten, poultry by-product meal, glycerin, natural flavor, powdered cellulose, animal fat preserved with mixed-tocopherols, tricalcium phosphate, salt, calcium carbonate, choline chloride, Vitamin E supplement, zinc sulfate, ferrous sulfate, L-Lysine monohydrochloride, L-Carnitine, manganese sulfate, niacin (Vitamin B-3), Vitamin A supplement, soybean oil, calcium pantothenate (Vitamin B-5), thiamine mononitrate (Vitamin B-1), copper sulfate, Vitamin B-12 supplement, riboflavin supplement (Vitamin B-2), pyridoxine hydrochloride (Vitamin B-6), garlic oil, folic acid (Vitamin B-9), menadione sodium bisulfite complex (Vitamin K), calcium iodate, Vitamin D-3 supplement, biotin (Vitamin B-7), sodium selenite",
+      "source_id": "038100138439"
+    },
+    {
+      "name": "Pro Plan Veterinary Diets OM Overweight Management Canned Canine Formula",
+      "brand": "Purina",
+      "url": "https://www.purina.ca/purina-pro-plan-veterinary-diets/dog/wet-food/om-overweight-management-canned-canine-formula",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Pro Plan Veterinary Diets",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.5,
+        "crude_fat_min": 1.0,
+        "crude_fat_max": 4.0,
+        "crude_fiber_max": 7.0,
+        "moisture_max": 82.0,
+        "ash_max": 2.5,
+        "calcium_min": 0.11
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "2950 kcal/kg, 260 kcal/can",
+      "images": [
+        "/products/purina/purina-food-pro-plan-veterinary-diets-om-overweight-management-canned-canine-formula.webp"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "377",
+          "upc": "038100138088"
+        }
+      ],
+      "ingredients_raw": "Water, chicken, liver, powdered cellulose, rice, soy protein isolate, meat by-products, carrageenan, guar gum, tricalcium phosphate, potassium chloride, calcium sulfate, locust bean gum, magnesium sulfate, Vitamin E supplement, calcium carbonate, zinc sulfate, L-Carnitine, thiamine mononitrate (Vitamin B-1), ferrous sulfate, niacin (Vitamin B-3), copper sulfate, calcium pantothenate (Vitamin B-5), manganese sulfate, pyridoxine hydrochloride (Vitamin B-6), Vitamin B-12 supplement, riboflavin supplement (Vitamin B-2), Vitamin A supplement, potassium iodide, folic acid (Vitamin B-9), Vitamin D-3 supplement, biotin (Vitamin B-7), sodium selenite",
+      "source_id": "038100138088"
+    },
+    {
+      "name": "Pro Plan Veterinary Diets UR Urinary Ox/St Dry Canine Formula",
+      "brand": "Purina",
+      "url": "https://www.purina.ca/purina-pro-plan-veterinary-diets/dog/dry-food/ur-urinary-ox-st-dry-canine-formula",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan Veterinary Diets",
+      "guaranteed_analysis": {
+        "crude_protein_min": 21.0,
+        "crude_fat_min": 9.0,
+        "crude_fiber_max": 6.5,
+        "moisture_max": 12.0,
+        "ash_max": 8.5,
+        "calcium_min": 0.9
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3542 kcal/kg",
+      "images": [
+        "/products/purina/purina-food-pro-plan-veterinary-diets-ur-urinary-ox-st-dry-canine-formula.webp"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "2.72",
+          "upc": "038100171085"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "7.48",
+          "upc": "038100175731"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "11.34",
+          "upc": "038100175748"
+        }
+      ],
+      "ingredients_raw": "Whole grain corn, rice, chicken by-product meal, corn protein meal, animal fat preserved with mixed-tocopherols, powdered cellulose, egg and chicken flavor, glycerin, natural flavor, salt, calcium carbonate, phosphoric acid, potassium chloride, magnesium sulfate, L-Lysine monohydrochloride, zinc proteinate, Vitamin E supplement, choline chloride, potassium citrate, ferrous sulfate, manganese proteinate, niacin (Vitamin B-3), Vitamin A supplement, copper proteinate, calcium pantothenate (Vitamin B-5), thiamine mononitrate (Vitamin B-1), Vitamin B-12 supplement, riboflavin supplement (Vitamin B-2), pyridoxine hydrochloride (Vitamin B-6), folic acid (Vitamin B-9), calcium iodate, menadione sodium bisulfite complex (Vitamin K), biotin (Vitamin B-7), Vitamin D-3 supplement, sodium selenite",
+      "source_id": "038100171085"
+    },
+    {
+      "name": "Pro Plan Veterinary Diets UR Urinary Ox/St Canned Canine Formula",
+      "brand": "Purina",
+      "url": "https://www.purina.ca/purina-pro-plan-veterinary-diets/dog/wet-food/ur-urinary-ox-st-canned-canine-formula",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Pro Plan Veterinary Diets",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.5,
+        "crude_fat_min": 4.5,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 78.0,
+        "ash_max": 2.25,
+        "calcium_min": 0.16
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1041 kcal/kg, 392 kcal/can",
+      "images": [
+        "/products/purina/purina-food-pro-plan-veterinary-diets-ur-urinary-ox-st-canned-canine-formula.webp"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "377",
+          "upc": "038100171481"
+        }
+      ],
+      "ingredients_raw": "Chicken, water, meat by-products, liver, rice, powdered cellulose, guar gum, carrageenan, potassium chloride, magnesium sulfate, natural smoke flavor, potassium citrate, caramel color, calcium sulfate, Vitamin E supplement, thiamine mononitrate (Vitamin B-1), zinc sulfate, ferrous sulfate, niacin (Vitamin B-3), calcium pantothenate (Vitamin B-5), copper sulfate, manganese sulfate, pyridoxine hydrochloride (Vitamin B-6), Vitamin B-12 supplement, riboflavin supplement (Vitamin B-2), Vitamin A supplement, folic acid (Vitamin B-9), Vitamin D-3 supplement, biotin (Vitamin B-7), potassium iodide, sodium selenite",
+      "source_id": "038100171481"
+    },
+    {
+      "name": "Pro Plan Veterinary Diets NC Neuro Care Dry Canine Formula",
+      "brand": "Purina",
+      "url": "https://www.purina.ca/purina-pro-plan-veterinary-diets/dog/dry-food/nc-neurocare-dry-canine-formula",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan Veterinary Diets",
+      "guaranteed_analysis": {
+        "crude_protein_min": 29.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 12.0,
+        "ash_max": 8.0,
+        "epa_min": 0.15,
+        "dha_min": 0.15,
+        "calcium_min": 1.1
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3714 kcal/kg",
+      "images": [
+        "/products/purina/purina-food-pro-plan-veterinary-diets-nc-neuro-care-dry-canine-formula.webp"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "2.72",
+          "upc": "038100171030"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "2.72",
+          "upc": "038100176677"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "11.3",
+          "upc": "038100179067"
+        }
+      ],
+      "ingredients_raw": "Chicken, chicken meal, corn gluten meal, brewers rice, ground yellow corn, ground wheat, vegetable oil (source of medium-chain triglycerides), corn germ meal, barley, glycerin, natural flavor, fish oil, dried egg product, L-Arginine, mono and dicalcium phosphate, wheat bran, fish meal, salt, potassium chloride, calcium carbonate, L-Lysine monohydrochloride, Vitamin E supplement, choline chloride, L-ascorbyl-2-polyphosphate (Vitamin C), zinc sulfate, ferrous sulfate, niacin (Vitamin B-3), Vitamin A supplement, manganese sulfate, thiamine mononitrate (Vitamin B-1), soybean oil, calcium pantothenate (Vitamin B-5), Vitamin B-12 supplement, copper sulfate, riboflavin supplement (Vitamin B-2), pyridoxine hydrochloride (Vitamin B-6), garlic oil, folic acid (Vitamin B-9), menadione sodium bisulfite complex (Vitamin K), calcium iodate, biotin (Vitamin B-7), Vitamin D-3 supplement, sodium selenite",
+      "source_id": "038100171030"
+    },
+    {
+      "name": "Pro Plan Veterinary Diets HA Hydrolyzed Chicken Flavour Dry Canine Formula",
+      "brand": "Purina",
+      "url": "https://www.purina.ca/purina-pro-plan-veterinary-diets/dog/dry-food/ha-hydrolyzed-chicken-flavour-dry-canine-formula",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan Veterinary Diets",
+      "images": [
+        "/products/purina/purina-food-pro-plan-veterinary-diets-ha-hydrolyzed-chicken-flavour-dry-canine-formula.webp"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "2.72",
+          "upc": "038100169815"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "7.48",
+          "upc": "038100170040"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "11.3",
+          "upc": "038100169808"
+        }
+      ],
+      "ingredients_raw": "Corn starch, hydrolyzed soy protein isolate, partially hydrogenated canola oil preserved with TBHQ, coconut oil, powdered cellulose, tricalcium phosphate, corn oil, dicalcium phosphate, hydrolyzed chicken liver, hydrolyzed chicken giblets, potassium chloride, guar gum, choline chloride, calcium carbonate, salt, magnesium oxide, DL-Methionine, taurine, zinc sulfate, Vitamin E supplement, ferrous sulfate, manganese sulfate, soybean oil, niacin (Vitamin B-3), copper sulfate, Vitamin A supplement, calcium pantothenate (Vitamin B-5), thiamine mononitrate (Vitamin B-1), riboflavin supplement (Vitamin B-2), Vitamin B-12 supplement, garlic oil, pyridoxine hydrochloride (Vitamin B-6), calcium iodate, folic acid (Vitamin B-9), Vitamin D-3 supplement, biotin (Vitamin B-7), menadione sodium bisulfite complex (Vitamin K), sodium selenite",
+      "guaranteed_analysis": {
+        "crude_protein_min": 18.0,
+        "crude_fat_min": 9.5,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 11.0,
+        "ash_max": 7.0,
+        "calcium_min": 0.7,
+        "phosphorus_min": 0.6
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3563 kcal/kg, 315 kcal/cup",
+      "source_id": "038100169815"
+    },
+    {
+      "name": "Pro Plan Veterinary Diets EN Gastroenteric Naturals Canned Canine Formula With Added Vitamins & Minerals",
+      "brand": "Purina",
+      "url": "https://www.purina.ca/purina-pro-plan-veterinary-diets/dog/wet-food/en-gastroenteric-naturals-canned-canine-formula-added-vitamins-minerals",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Pro Plan Veterinary Diets",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 2.5,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 74.5,
+        "ash_max": 3.0,
+        "calcium_min": 0.26
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1264 kcal/kg, 480 kcal/can",
+      "images": [
+        "/products/purina/purina-food-pro-plan-veterinary-diets-en-gastroenteric-naturals-canned-canine-formula-with-a.webp"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "380",
+          "upc": "038100172983"
+        }
+      ],
+      "ingredients_raw": "Chicken, water, liver, barley, rice, sweet potatoes, potato protein, coconut oil, oatmeal, glycerin, tricalcium phosphate, guar gum, potassium chloride, salt, natural smoke flavor, fish oil, Vitamin E supplement, L-Lysine monohydrochloride, magnesium sulfate, zinc sulfate, thiamine mononitrate (Vitamin B-1), ferrous sulfate, niacin (Vitamin B-3), copper sulfate, manganese sulfate, calcium pantothenate (Vitamin B-5), pyridoxine hydrochloride (Vitamin B-6), Vitamin B-12 supplement, riboflavin supplement (Vitamin B-2), Vitamin A supplement, potassium iodide, folic acid (Vitamin B-9), Vitamin D-3 supplement, biotin (Vitamin B-7), sodium selenite",
+      "source_id": "038100172983"
+    },
+    {
+      "name": "Pro Plan Veterinary Diets EN Gastroenteric Fiber Balance Dry Canine Formula",
+      "brand": "Purina",
+      "url": "https://www.purina.ca/purina-pro-plan-veterinary-diets/dog/dry-food/en-gastroenteric-fiber-balance-dry-canine-formula",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan Veterinary Diets",
+      "guaranteed_analysis": {
+        "crude_protein_min": 21.0,
+        "crude_fat_min": 10.0,
+        "crude_fiber_max": 10.0,
+        "moisture_max": 12.0,
+        "ash_max": 7.5,
+        "calcium_min": 0.8
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3385 kcal/kg",
+      "images": [
+        "/products/purina/purina-food-pro-plan-veterinary-diets-en-gastroenteric-fiber-balance-dry-canine-formula.webp"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "2.72",
+          "upc": "038100138583"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "7.48",
+          "upc": "038100102294"
+        }
+      ],
+      "ingredients_raw": "Whole grain corn, dried beet pulp, poultry by-product meal, corn protein meal, barley, animal fat preserved with mixed-tocopherols, pea fiber, glycerin, natural flavor, mono and dicalcium phosphate, wheat bran, dried whey, potassium chloride, fish oil, salt, calcium carbonate, L-Lysine monohydrochloride, choline chloride, Vitamin E supplement, zinc sulfate, ferrous sulfate, niacin (Vitamin B-3), manganese sulfate, Vitamin A supplement, calcium pantothenate (Vitamin B-5), thiamine mononitrate (Vitamin B-1), Vitamin B-12 supplement, copper sulfate, riboflavin supplement (Vitamin B-2), pyridoxine hydrochloride (Vitamin B-6), folic acid (Vitamin B-9), menadione sodium bisulfite complex (Vitamin K), calcium iodate, biotin (Vitamin B-7), Vitamin D-3 supplement, sodium selenite",
+      "source_id": "038100138583"
+    },
+    {
+      "name": "Pro Plan Veterinary Diets EN Gastroenteric Naturals Dry Canine Formula With Added Vitamins & Minerals",
+      "brand": "Purina",
+      "url": "https://www.purina.ca/purina-pro-plan-veterinary-diets/dog/dry-food/en-gastroenteric-naturals-dry-canine-formula-added-vitamins-minerals",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan Veterinary Diets",
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 9.5,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 12.0,
+        "ash_max": 8.0,
+        "calcium_min": 1.1
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3796 kcal/kg",
+      "images": [
+        "/products/purina/purina-food-pro-plan-veterinary-diets-en-gastroenteric-naturals-dry-canine-formula-with-adde.webp"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "2.72",
+          "upc": "038100173188"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "11.3",
+          "upc": "038100102379"
+        }
+      ],
+      "ingredients_raw": "Brewers rice, chicken meal, brewers dried yeast, cassava root flour, animal fat preserved with mixed-tocopherols, potato protein, natural flavor, coconut oil, pea protein, glycerin, mono and dicalcium phosphate, potassium chloride, soybean oil, salt, L-Lysine monohydrochloride, dried colostrum, fish oil, calcium carbonate, pumpkin, Vitamin E supplement, zinc proteinate, taurine, choline chloride, DL-Methionine, L-ascorbyl-2-polyphosphate (Vitamin C), ferrous sulfate, manganese proteinate, niacin (Vitamin B-3), Vitamin A supplement, thiamine mononitrate (Vitamin B-1), calcium pantothenate (Vitamin B-5), copper proteinate, riboflavin supplement (Vitamin B-2), Vitamin B-12 supplement, pyridoxine hydrochloride (Vitamin B-6), menadione sodium bisulfite complex (Vitamin K), folic acid (Vitamin B-9), calcium iodate, biotin (Vitamin B-7), Vitamin D-3 supplement, sodium selenite",
+      "source_id": "038100173188"
+    },
+    {
+      "name": "Pro Plan Veterinary Diets EN Gastroenteric Low Fat Dry Canine Formula",
+      "brand": "Purina",
+      "url": "https://www.purina.ca/purina-pro-plan-veterinary-diets/dog/dry-food/en-gastroenteric-low-fat-dry-canine-formula",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan Veterinary Diets",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 9.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 12.0,
+        "ash_max": 8.5,
+        "calcium_min": 0.8
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3550 kcal/kg",
+      "images": [
+        "/products/purina/purina-food-pro-plan-veterinary-diets-en-gastroenteric-low-fat-dry-canine-formula.webp"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "2.72",
+          "upc": "038100175946"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "7.48",
+          "upc": "038100102355"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "11.3",
+          "upc": "038100102362"
+        }
+      ],
+      "ingredients_raw": "Brewers rice, barley, corn protein meal, poultry by-product meal, animal digest, glycerin, animal fat preserved with mixed-tocopherols, calcium carbonate, inulin, potassium chloride, mono and dicalcium phosphate, sodium bicarbonate, salt, L-Lysine monohydrochloride, Vitamin E supplement, zinc proteinate, choline chloride, L-ascorbyl-2-polyphosphate (Vitamin C), ferrous sulfate, manganese proteinate, niacin (Vitamin B-3), thiamine mononitrate (Vitamin B-1), calcium pantothenate (Vitamin B-5), Vitamin A supplement, riboflavin supplement (Vitamin B-2), Vitamin B-12 supplement, copper proteinate, pyridoxine hydrochloride (Vitamin B-6), folic acid (Vitamin B-9), garlic oil, menadione sodium bisulfite complex (Vitamin K), biotin (Vitamin B-7), calcium iodate, Vitamin D-3 supplement, sodium selenite",
+      "source_id": "038100175946"
+    },
+    {
+      "name": "Pro Plan Veterinary Diets EN Gastroenteric Low Fat Canned Canine Formula",
+      "brand": "Purina",
+      "url": "https://www.purina.ca/purina-pro-plan-veterinary-diets/dog/wet-food/en-gastroenteric-low-fat-canned-canine-formula",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Pro Plan Veterinary Diets",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.0,
+        "crude_fat_min": 1.35,
+        "crude_fat_max": 4.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 76.0,
+        "ash_max": 2.75,
+        "calcium_min": 0.16
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "956 kcal/kg, 363 kcal/can",
+      "images": [
+        "/products/purina/purina-food-pro-plan-veterinary-diets-en-gastroenteric-low-fat-canned-canine-formula.webp"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "380",
+          "upc": "038100175991"
+        }
+      ],
+      "ingredients_raw": "Water, meat by-products, rice, barley, soy protein isolate, potato protein, salmon, glycerin, powdered cellulose, guar gum, inulin, calcium sulfate, tricalcium phosphate, potassium chloride, carrageenan, magnesium sulfate, Vitamin E supplement, L-Lysine monohydrochloride, zinc sulfate, niacin (Vitamin B-3), ferrous sulfate, thiamine mononitrate (Vitamin B-1), calcium pantothenate (Vitamin B-5), natural smoke flavor, pyridoxine hydrochloride (Vitamin B-6), copper sulfate, Vitamin B-12 supplement, riboflavin supplement (Vitamin B-2), Vitamin A supplement, manganese sulfate, folic acid (Vitamin B-9), Vitamin D-3 supplement, biotin (Vitamin B-7), potassium iodide, sodium selenite",
+      "source_id": "038100175991"
+    },
+    {
+      "name": "Pro Plan Veterinary Diets HA Hydrolyzed Salmon Flavour Dry Canine Formula",
+      "brand": "Purina",
+      "url": "https://www.purina.ca/purina-pro-plan-veterinary-diets/dog/dry-food/ha-hydrolyzed-salmon-flavour-dry-canine-formula",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan Veterinary Diets",
+      "guaranteed_analysis": {
+        "crude_protein_min": 20.0,
+        "crude_fat_min": 9.5,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 11.5,
+        "ash_max": 7.5,
+        "calcium_min": 1.1
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3506 kcal/kg",
+      "images": [
+        "/products/purina/purina-food-pro-plan-veterinary-diets-ha-hydrolyzed-salmon-flavour-dry-canine-formula.webp"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "2.72",
+          "upc": "038100190093"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "7.48",
+          "upc": "038100190086"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "11.3",
+          "upc": "038100190079"
+        }
+      ],
+      "ingredients_raw": "Corn starch, hydrolyzed soy protein isolate, coconut oil, tricalcium phosphate, partially hydrogenated canola oil preserved with TBHQ, hydrolyzed salmon, powdered cellulose, corn oil, potassium chloride, L-Threonine, guar gum, DL-Methionine, fish oil, choline chloride, calcium carbonate, magnesium oxide, Vitamin E supplement, taurine, zinc sulfate, dicalcium phosphate, salt, ferrous sulfate, manganese sulfate, niacin (Vitamin B-3), soybean oil, Vitamin A supplement, copper sulfate, calcium pantothenate (Vitamin B-5), thiamine mononitrate (Vitamin B-1), Vitamin B-12 supplement, riboflavin supplement (Vitamin B-2), pyridoxine hydrochloride (Vitamin B-6), garlic oil, folic acid (Vitamin B-9), calcium iodate, menadione sodium bisulfite complex (Vitamin K), Vitamin D-3 supplement, biotin (Vitamin B-7), sodium selenite",
+      "source_id": "038100190093"
+    },
+    {
+      "name": "Pro Plan Veterinary Diets EN Gastroenteric Dry Canine Formula",
+      "brand": "Purina",
+      "url": "https://www.purina.ca/purina-pro-plan-veterinary-diets/dog/dry-food/en-gastroenteric-dry-canine-formula",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan Veterinary Diets",
+      "guaranteed_analysis": {
+        "crude_protein_min": 23.0,
+        "crude_fat_min": 10.5,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 12.0,
+        "ash_max": 8.0,
+        "calcium_min": 1.1
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3800 kcal/kg",
+      "images": [
+        "/products/purina/purina-food-pro-plan-veterinary-diets-en-gastroenteric-dry-canine-formula.webp"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "2.72",
+          "upc": "038100138545"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "7.48",
+          "upc": "038100102324"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "11.3",
+          "upc": "038100102331"
+        }
+      ],
+      "ingredients_raw": "Brewers rice, corn protein meal, whole grain corn, chicken meal, animal fat preserved with mixed-tocopherols, coconut oil, mono and dicalcium phosphate, natural avor, wheat bran, potassium chloride, sodium bicarbonate, salt, calcium carbonate, soybean oil, sh oil, L-Lysine monohydrochloride, L-Threonine, Vitamin E supplement, zinc proteinate, choline chloride, dried colostrum, L-ascorbyl-2-polyphosphate (Vitamin C), manganese proteinate, ferrous sulfate, L-Tryptophan, niacin (Vitamin B-3), Vitamin A supplement, copper proteinate, calcium pantothenate (Vitamin B-5), thiamine mononitrate (Vitamin B-1), Vitamin B-12 supplement, riboavin supplement (Vitamin B-2), pyridoxine hydrochloride (Vitamin B-6), garlic oil, folic acid (Vitamin B-9), menadione sodium bisulte complex (Vitamin K), Vitamin D-3 supplement, calcium iodate, biotin (Vitamin B-7), sodium selenite",
+      "source_id": "038100138545"
+    },
+    {
+      "name": "Pro Plan Veterinary Supplements Multi Care Canine",
+      "brand": "Purina",
+      "url": "https://www.purina.ca/purina-pro-plan-veterinary-diets/dog/supplements/multi-care",
+      "channel": "vet",
+      "product_type": "supplement",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan Veterinary Diets",
+      "images": [
+        "/products/purina/purina-supplement-pro-plan-veterinary-supplements-multi-care-canine.webp"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "150",
+          "upc": "055800472700"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "300",
+          "upc": "055800472960"
+        }
+      ],
+      "ingredients_raw": "Psyllium Husk, L-Glutamine, Cod Liver Oil, Vitamin E, Zinc Bisglycinate, Biotin, Bacillus Coagulans, Lactobacillus Fermentum, Lactobacillus Delbrueckii, Animal Digest, Citric Acid, Glycerin, Lecithin, Microcrystalline Cellulose, Mixed-Tocopherols, Natural Flavour, Sodium Chloride, Tapioca Starch, Vinegar, Water, Yeast",
+      "source_id": "055800472700"
+    },
+    {
+      "name": "Pro Plan Veterinary Supplements Forti Flora Canine Probiotic Tablets",
+      "brand": "Purina",
+      "url": "https://www.purina.ca/purina-pro-plan-veterinary-diets/dog/supplements/fortiflora-canine-probiotic-tablets",
+      "channel": "vet",
+      "product_type": "supplement",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan Veterinary Diets",
+      "images": [
+        "/products/purina/purina-supplement-pro-plan-veterinary-supplements-forti-flora-canine-probiotic-tablets.webp"
+      ],
+      "ingredients_raw": "Enterococcus Faecium SF68, Acacia Gum, Chicken Liver Flavour, Hydroxypropyl Cellulose, Magnesium Stearate, Microcrystalline Cellulose",
+      "guaranteed_analysis": {
+        "crude_protein_min": 16.5,
+        "crude_fat_min": 4.5,
+        "crude_fiber_max": 14.0,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "2.90 kcal/treat",
+      "source_id": "055800487452"
+    },
+    {
+      "name": "Pro Plan Veterinary Diets EN Gastroenteric Savory Selects with Chicken in Gravy",
+      "brand": "Purina",
+      "url": "https://www.purina.ca/purina-pro-plan-veterinary-diets/dog/wet-food/en-gastroenteric-savory-selects-chicken",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Pro Plan Veterinary Diets",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 2.5,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 80.0,
+        "ash_max": 2.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "456523 kcal/kg, 404 kcal/can",
+      "images": [
+        "/products/purina/purina-food-pro-plan-veterinary-diets-en-gastroenteric-savory-selects-with-chicken-in-gravy.webp"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "374",
+          "upc": "038100192462"
+        }
+      ],
+      "ingredients_raw": "Water, chicken, meat by-products, wheat gluten, soy flour, turkey, rice, vegetable oil (source of medium-chain triglycerides), tricalcium phosphate, pumpkin, guar gum, inulin, locust bean gum, potassium chloride, salt, Vitamin E supplement, fish oil, choline chloride, zinc sulfate, L-Carnitine, ferrous sulfate, niacin (Vitamin B-3), thiamine mononitrate (Vitamin B-1), calcium pantothenate (Vitamin B-5), copper sulfate, pyridoxine hydrochloride (Vitamin B-6), manganese sulfate, riboflavin supplement (Vitamin B-2), Vitamin B-12 supplement, biotin (Vitamin B-7), folic acid (Vitamin B-9), Vitamin A supplement, potassium iodide, Vitamin D-3 supplement, sodium selenite",
+      "source_id": "038100192462"
+    },
+    {
+      "name": "Pro Plan Veterinary Diets EN Gastroenteric Savory Selects with Lamb in Gravy",
+      "brand": "Purina",
+      "url": "https://www.purina.ca/purina-pro-plan-veterinary-diets/dog/wet-food/en-gastroenteric-savory-selects-lamb",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Pro Plan Veterinary Diets",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 2.5,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 80.0,
+        "ash_max": 2.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "909 kcal/kg, 412 kcal/can",
+      "images": [
+        "/products/purina/purina-food-pro-plan-veterinary-diets-en-gastroenteric-savory-selects-with-lamb-in-gravy.webp"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "374",
+          "upc": "038100192486"
+        }
+      ],
+      "ingredients_raw": "Water, chicken, meat by-products, wheat gluten, soy flour, pumpkin, lamb, rice, tricalcium phosphate, vegetable oil (source of medium-chain triglycerides), guar gum, inulin, locust bean gum, potassium chloride, salt, Vitamin E supplement, fish oil, choline chloride, zinc sulfate, L-Carnitine, ferrous sulfate, niacin (Vitamin B-3), thiamine mononitrate (Vitamin B-1), calcium pantothenate (Vitamin B-5), copper sulfate, pyridoxine hydrochloride (Vitamin B-6), manganese sulfate, riboflavin supplement (Vitamin B-2), Vitamin B-12 supplement, biotin (Vitamin B-7), folic acid (Vitamin B-9), Vitamin A supplement, potassium iodide, Vitamin D-3 supplement, sodium selenite",
+      "source_id": "038100192486"
+    },
+    {
+      "name": "Pro Plan Veterinary Diets Ora Chews Chews",
+      "brand": "Purina",
+      "url": "https://www.purina.ca/purina-pro-plan-veterinary-diets/dog/treats/ora-chews",
+      "channel": "vet",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan Veterinary Diets",
+      "guaranteed_analysis": {
+        "crude_protein_min": 6.0,
+        "crude_fat_min": 1.5,
+        "crude_fat_max": 6.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 15.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "650 kcal/kg",
+      "images": [
+        "/products/purina/purina-treat-pro-plan-veterinary-diets-ora-chews-chews.webp"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "30",
+          "upc": "038100106964 "
+        }
+      ],
+      "ingredients_raw": "Rice, glycerin, wheat flour, sodium tripolyphosphate, malted barley flour, chicken by-product meal, mono and dicalcium phosphate, calcium carbonate, sorbic acid (a preservative), calcium propionate (a preservative), sodium bicarbonate, zinc sulfate, Vitamin E supplement, ferrous sulfate, manganese sulfate, tetra sodium pyrophosphate, copper sulfate, preserved with mixed tocopherols, natural flavor, niacin (Vitamin B-3), calcium iodate, thiamine mononitrate (Vitamin B-1), calcium pantothenate (Vitamin B-5), Vitamin A supplement, riboflavin supplement (Vitamin B-2), Vitamin B-12 supplement, pyridoxine hydrochloride (Vitamin B-6), folic acid (Vitamin B-9), sodium selenite, menadione sodium bisulfite complex (Vitamin K), biotin (Vitamin B-7), Vitamin D-3 supplement",
+      "source_id": "038100106964 "
+    },
+    {
+      "name": "Pro Plan Veterinary Diets Ora Chews Large",
+      "brand": "Purina",
+      "url": "https://www.purina.ca/purina-pro-plan-veterinary-diets/dog/treats/ora-chews-large",
+      "channel": "vet",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Pro Plan Veterinary Diets",
+      "guaranteed_analysis": {
+        "crude_protein_min": 6.0,
+        "crude_fat_min": 1.5,
+        "crude_fat_max": 6.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 15.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "650 kcal/kg",
+      "images": [
+        "/products/purina/purina-treat-pro-plan-veterinary-diets-ora-chews-large.webp"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "30",
+          "upc": "038100107008"
+        }
+      ],
+      "ingredients_raw": "Rice, glycerin, wheat flour, sodium tripolyphosphate, malted barley flour, chicken by-product meal, mono and dicalcium phosphate, calcium carbonate, sorbic acid (a preservative), calcium propionate (a preservative), sodium bicarbonate, zinc sulfate, Vitamin E supplement, ferrous sulfate, manganese sulfate, tetra sodium pyrophosphate, copper sulfate, preserved with mixed tocopherols, natural flavor, niacin (Vitamin B-3), calcium iodate, thiamine mononitrate (Vitamin B-1), calcium pantothenate (Vitamin B-5), Vitamin A supplement, riboflavin supplement (Vitamin B-2), Vitamin B-12 supplement, pyridoxine hydrochloride (Vitamin B-6), folic acid (Vitamin B-9), sodium selenite, menadione sodium bisulfite complex (Vitamin K), biotin (Vitamin B-7), Vitamin D-3 supplement",
+      "source_id": "038100107008"
+    }
+  ]
+}

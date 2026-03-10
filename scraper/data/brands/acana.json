@@ -24,26 +24,10 @@
       "sub_brand": "Premium Pâté",
       "ingredients_raw": "Beef, beef bone broth, lamb broth, beef liver, sweet potatoes, spinach, carrots, natural flavor, pumpkin, guar gum, sunflower oil, dicalcium phosphate, agar-agar, inulin, potassium chloride, fish oil, salt, blueberries, cranberries, minerals (zinc proteinate, iron proteinate, selenium yeast, cobalt proteinate, copper proteinate, manganese proteinate, potassium iodide), marine microalgae oil, vitamins (vitamin E supplement, niacin supplement, D-calcium pantothenate, thiamine mononitrate, riboflavin supplement, vitamin A supplement, vitamin B12 supplement, pyridoxine hydrochloride, biotin, vitamin D3 supplement, folic acid), magnesium sulfate, choline chloride, sodium carbonate, L-ascorbyl-2-polyphosphate (vitamin C), calcium carbonate",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 8.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 5.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 1.5,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 78.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "1118 kcal/kg, 406 kcal/can",
@@ -61,26 +45,10 @@
       "sub_brand": "Premium Pâté",
       "ingredients_raw": "Duck, turkey, duck broth, turkey bone broth, turkey liver, sweet potatoes, spinach, natural flavor, carrots, pumpkin, dicalcium phosphate, guar gum, agar-agar, inulin, potassium chloride, salt, blueberries, cranberries, minerals (zinc proteinate, iron proteinate, selenium yeast, cobalt proteinate, copper proteinate, manganese proteinate, potassium iodide), marine microalgae oil, vitamins (vitamin E supplement, niacin supplement, D-calcium pantothenate, thiamine mononitrate, riboflavin supplement, vitamin A supplement, vitamin B12 supplement, pyridoxine hydrochloride, biotin, vitamin D3 supplement, folic acid), choline chloride, magnesium sulfate, sodium carbonate, calcium carbonate, L-ascorbyl-2 polyphosphate (vitamin C)",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 8.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 5.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 1.5,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 78.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "1127 kcal/kg",
@@ -98,26 +66,10 @@
       "sub_brand": "Premium Pâté",
       "ingredients_raw": "Lamb, lamb broth, beef bone broth, sweet potatoes, salmon, lamb liver, spinach, natural flavor, carrots, pumpkin, sunflower oil, guar gum, agar-agar, inulin, potassium chloride, salt, fish oil, minerals (zinc proteinate, iron proteinate, selenium yeast, cobalt proteinate, copper proteinate, manganese proteinate, potassium iodide), blueberries, cranberries, vitamins (thiamine mononitrate, vitamin E supplement, niacin supplement, D-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin B12 supplement, pyridoxine hydrochloride, biotin, folic acid, vitamin D3 supplement), choline chloride, magnesium sulfate, sodium carbonate, dicalcium phosphate, L-ascorbyl-2-polyphosphate (vitamin C)",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 8.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 6.5,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 1.5,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 78.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 6.5,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "1271 kcal/kg, 461 kcal/can",
@@ -135,26 +87,10 @@
       "sub_brand": "Premium Pâté",
       "ingredients_raw": "Chicken, chicken liver, chicken bone broth, turkey bone broth, chicken hearts, sweet potatoes, turkey, spinach, carrots, natural flavor, pumpkin, fish oil, guar gum, dicalcium phosphate, agar-agar, potassium chloride, salt, minerals (zinc proteinate, iron proteinate, selenium yeast, cobalt proteinate, copper proteinate, manganese proteinate, potassium iodide), inulin, blueberries, cranberries, sunflower oil, vitamins (vitamin E supplement, niacin supplement, D-calcium pantothenate, thiamine mononitrate, riboflavin supplement, vitamin A supplement, vitamin B12 supplement, pyridoxine hydrochloride, biotin, vitamin D3 supplement, folic acid), magnesium sulfate, choline chloride, sodium carbonate, L-ascorbyl-2-polyphosphate (vitamin C), marine microalgae oil, calcium carbonate",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 8.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 6.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 1.5,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 78.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 6.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "1168 kcal/kg, 424 kcal/can",
@@ -171,26 +107,10 @@
       "product_format": "dry",
       "ingredients_raw": "Fresh chicken, chicken meal, whole red lentils, whole green peas, whole chickpeas, fresh chicken giblets (liver, heart), turkey meal, chicken fat, fresh eggs, raw hake, lentil fibre, pea starch, fish oil, whole green lentils, whole yellow peas, herring meal, raw turkey livers, salt, dried kelp, fresh whole apples, fresh whole butternut squash, fresh whole carrots, fresh whole pears, fresh whole pumpkin, fresh whole zucchini, dried chicory root, fresh beet greens, fresh kale, fresh spinach, fresh turnip greens, whole blueberries, whole cranberries, whole saskatoon berries, burdock root, lavender, marshmallow root, milk thistle, rosehips, turmeric",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 29.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 17.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 5.0,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 12.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 29.0,
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 12.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3510 kcal/kg",
@@ -207,26 +127,10 @@
       "product_format": "dry",
       "ingredients_raw": "Fresh chicken, chicken meal, whole red lentils, whole green peas, turkey meal, whole chickpeas, fresh chicken giblets (liver, heart), chicken fat, fresh eggs, raw hake, fish oil, herring meal, whole green lentils, whole yellow peas, lentil fibre, pea starch, raw turkey livers, salt, dried kelp, fresh whole pumpkin, fresh whole butternut squash, fresh whole carrots, fresh whole apples, fresh whole pears, fresh whole zucchini, dried chicory root, fresh kale, fresh spinach, fresh turnip greens, fresh beet greens, whole cranberries, whole blueberries, whole saskatoon berries, turmeric, milk thistle, burdock root, lavender, marshmallow root, rosehips",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 31.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 15.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 6.0,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 12.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 31.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 6.0,
+        "moisture_max": 12.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3375 kcal/kg",
@@ -243,26 +147,10 @@
       "product_format": "dry",
       "ingredients_raw": "Fresh chicken, chicken meal, whole red lentils, whole green peas, whole chickpeas, turkey meal, chicken fat, fresh chicken giblets (liver, heart), fresh egg, raw hake, fish oil, herring meal, whole green lentils, whole yellow peas, lentil fibre, pea starch, raw turkey liver, salt, dried kelp, fresh whole pumpkin, fresh whole butternut squash, fresh whole carrots, fresh whole apples, fresh whole pears, fresh whole zucchini, dried chicory root, fresh kale, fresh spinach, fresh turnip greens, fresh beet greens, whole cranberries, whole blueberries, whole saskatoon berries, turmeric, milk thistle, burdock root, lavender, marshmallow root, rosehips",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 31.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 17.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 5.0,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 12.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 31.0,
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 12.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3510 kcal/kg",
@@ -280,26 +168,10 @@
       "sub_brand": "Chewy Strips",
       "ingredients_raw": "Beef, dehydrated sweet potato, chicken bone broth, honey, pork digest, lecithin, salt, citric acid (preservative), vinegar, marine microalgae oil, mixed tocopherols (preservative), rosemary extract",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 30.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 18.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 2.0,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 20.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 18.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 20.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3450 kcal/kg, 57 kcal/treat",
@@ -317,26 +189,10 @@
       "sub_brand": "Chewy Strips",
       "ingredients_raw": "Chicken, dehydrated cranberries, chicken bone broth, honey, salt, citric acid (preservative), vinegar, mixed tocopherols (preservative), vitamin E supplement, rosemary extract",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 40.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 10.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 1.0,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 20.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 40.0,
+        "crude_fat_min": 10.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 20.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3260 kcal/kg, 46 kcal/treat",
@@ -354,26 +210,10 @@
       "sub_brand": "Chewy Strips",
       "ingredients_raw": "Salmon, dehydrated pumpkin, chicken bone broth, honey, salt, citric acid (preservative), vinegar, mixed tocopherols (preservative), rosemary extract",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 35.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 14.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 2.0,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 20.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 35.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 20.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3340 kcal/kg, 47 kcal/treat",
@@ -391,26 +231,10 @@
       "sub_brand": "Classics",
       "ingredients_raw": "Fresh chicken, chicken meal, pearled barley, whole peas, oat groats, chicken fat, whole oats, chickpea fibre, fish oil, potassium chloride, dried kelp, salt, dried chicory root, fresh whole pumpkin, fresh whole butternut squash, fresh whole carrots, fresh whole apples, fresh whole pears, fresh whole zucchini, fresh kale, fresh spinach, fresh turnip greens, fresh beet greens, whole cranberries, whole blueberries, whole saskatoon berries, turmeric, milk thistle, burdock root, lavender, marshmallow root, rosehips",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 27.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 16.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 5.0,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 12.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 27.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 12.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3443 kcal/kg",
@@ -428,26 +252,10 @@
       "sub_brand": "Classics",
       "ingredients_raw": "Raw beef, lamb meal, pearled barley, whole peas, oat groats, pork fat, pork meal, whole oats, chickpea fibre, raw pork, fish oil, potassium chloride, dried kelp, salt, dried chicory root, fresh whole pumpkin, fresh whole butternut squash, fresh whole carrots, fresh whole apples, fresh whole pears, fresh whole zucchini, fresh kale, fresh spinach, fresh turnip greens, fresh beet greens, whole cranberries, whole blueberries, whole saskatoon berries, turmeric, milk thistle, burdock root, lavender, marshmallow root, rosehips",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 27.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 16.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 5.0,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 12.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 27.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 12.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3425 kcal/kg",
@@ -465,26 +273,10 @@
       "sub_brand": "Classics",
       "ingredients_raw": "Raw salmon, herring meal, pearled barley, whole peas, oat groats, pork fat, whole oats, chickpea fibre, fish oil, calcium carbonate, potassium chloride, dried kelp, salt, dried chicory root, fresh whole pumpkin, fresh whole butternut squash, fresh whole carrots, fresh whole apples, fresh whole pears, fresh whole zucchini, fresh kale, fresh spinach, fresh turnip greens, fresh beet greens, whole cranberries, whole blueberries, whole saskatoon berries, turmeric, milk thistle, burdock root, lavender, marshmallow root, rosehips",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 27.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 16.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 5.0,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 12.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 27.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 12.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3443 kcal/kg",
@@ -501,26 +293,10 @@
       "product_format": "dry",
       "ingredients_raw": "Beef, beef liver, whole mackerel, pumpkin, natural fish flavor, beef bone, beef tripe, beef bone broth, calcium carbonate, beef kidney, organic butternut squash, organic carrots, organic pear, salt, dried chicory root, turmeric, dried kelp, mixed tocopherols (preservative), zinc proteinate, vitamins (vitamin E supplement, niacin, thiamine mononitrate, riboflavin, calcium pantothenate, pyridoxine hydrochloride, folic acid, vitamin B12 supplement), citric acid (preservative), rosemary extract",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 36.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 32.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 5.0,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 5.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 36.0,
+        "crude_fat_min": 32.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 5.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "4330 kcal/kg",
@@ -537,26 +313,10 @@
       "product_format": "dry",
       "ingredients_raw": "Chicken with ground bone, chicken giblets (liver, heart, gizzard), whole herring, pumpkin, natural chicken flavour, chicken bone broth, organic butternut squash, organic carrots, organic pears, calcium carbonate, dried chicory root, turmeric, dried kelp, salt, mixed tocopherols (preservative), vitamins (vitamin E supplement, niacin, thiamine mononitrate, riboflavin, calcium pantothenate, pyridoxine hydrochloride, folic acid, vitamin B12 supplement), minerals (zinc proteinate, copper proteinate), citric acid (preservative), rosemary extrac",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 42.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 28.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 5.0,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 5.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 42.0,
+        "crude_fat_min": 28.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 5.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "4420 kcal/kg",
@@ -573,26 +333,10 @@
       "product_format": "dry",
       "ingredients_raw": "Chicken with ground bone, chicken liver, whole herring, pumpkin, natural chicken flavor, chicken heart, chicken bone broth, organic butternut squash, organic carrots, organic pears, calcium carbonate, dried chicory root, turmeric, dried kelp, salt, mixed tocopherols (preservative), vitamins (vitamin E supplement, niacin, thiamine mononitrate, riboflavin, calcium pantothenate, pyridoxine hydrochloride, folic acid, vitamin B12 supplement), minerals (zinc proteinate, copper proteinate), citric acid (preservative), rosemary extract",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 42.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 28.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 5.0,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 5.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 42.0,
+        "crude_fat_min": 28.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 5.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "4200 kcal/kg",
@@ -609,26 +353,10 @@
       "product_format": "dry",
       "ingredients_raw": "Turkey with ground bone, turkey giblets (liver, heart, gizzard), whole herring, pumpkin, natural flavour, turkey bone broth, organic butternut squash, organic carrots, organic pears, salt, dried chicory root, turmeric, dried kelp, mixed tocopherols (preservative), vitamins (vitamin E supplement, niacin, thiamine mononitrate, riboflavin, calcium pantothenate, pyridoxine hydrochloride, folic acid, vitamin B12 supplement), minerals (zinc proteinate, copper proteinate), citric acid (preservative), rosemary extract",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 43.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 28.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 5.0,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 5.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 43.0,
+        "crude_fat_min": 28.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 5.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "4200 kcal/kg",
@@ -645,26 +373,10 @@
       "product_format": "dry",
       "ingredients_raw": "Duck with ground bone, turkey with ground bone, chicken liver, whole herring, pumpkin, natural fish flavor, chicken heart, turkey giblets (liver, heart, gizzard), calcium carbonate, turkey bone broth, organic butternut squash, organic carrots, organic pear, salt, dried chicory root, turmeric, dried kelp, mixed tocopherols (preservative), vitamins (vitamin E supplement, niacin, thiamine mononitrate, riboflavin, calcium pantothenate, pyridoxine hydrochloride, folic acid, vitamin B12 supplement), minerals (zinc proteinate, copper proteinate), citric acid (preservative), rosemary extract",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 46.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 23.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 5.0,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 5.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 46.0,
+        "crude_fat_min": 23.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 5.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3950 kcal/kg",
@@ -681,26 +393,10 @@
       "product_format": "dry",
       "ingredients_raw": "Beef, beef liver, whole herring, pumpkin, natural fish flavor, beef bone, beef tripe, beef bone broth, calcium carbonate, beef kidney, organic butternut squash, organic carrots, organic pears, dried chicory root, turmeric, dried kelp, mixed tocopherols (preservative), zinc proteinate, salt, vitamins (vitamin E supplement, niacin, thiamine mononitrate, riboflavin, calcium pantothenate, pyridoxine hydrochloride, folic acid, vitamin B12 supplement), citric acid (preservative), rosemary extract",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 38.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 28.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 5.0,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 5.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 38.0,
+        "crude_fat_min": 28.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 5.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "4130 kcal/kg",
@@ -717,26 +413,10 @@
       "product_format": "dry",
       "ingredients_raw": "Duck with ground bone, turkey with ground bone, chicken liver, whole herring, pumpkin, natural fish flavor, chicken heart, turkey giblets (liver, heart, gizzard), calcium carbonate, turkey bone broth, organic butternut squash, organic carrots, organic pears, dried chicory root, turmeric, dried kelp, mixed tocopherols (preservative), vitamins (vitamin E supplement, niacin, thiamine mononitrate, riboflavin, calcium pantothenate, pyridoxine hydrochloride, folic acid, vitamin B12 supplement), minerals (zinc proteinate, copper proteinate), citric acid (preservative), rosemary extract",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 44.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 23.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 5.0,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 5.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 44.0,
+        "crude_fat_min": 23.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 5.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3950 kcal/kg",
@@ -753,26 +433,10 @@
       "product_format": "dry",
       "ingredients_raw": "Turkey with ground bone, turkey giblets (liver, heart, gizzard), whole herring, pumpkin, natural flavor, turkey bone broth, organic butternut squash, organic carrots, organic pears, salt, dried chicory root, turmeric, dried kelp, mixed tocopherols (preservative), vitamins (vitamin E supplement, niacin, thiamine mononitrate, riboflavin, calcium pantothenate, pyridoxine hydrochloride, folic acid, vitamin B12 supplement), minerals (zinc proteinate, copper proteinate), citric acid (preservative), rosemary extract",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 43.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 28.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 5.0,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 5.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 43.0,
+        "crude_fat_min": 28.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 5.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "4200 kcal/kg",
@@ -790,26 +454,10 @@
       "sub_brand": "Healthy Grains",
       "ingredients_raw": "Fresh chicken, chicken meal, oat groats, whole sorghum, whole millet, turkey meal, chicken fat, whole oats, fresh eggs, raw turkey, fresh chicken giblets (heart, liver), ground miscanthus grass, fish oil, raw turkey liver, salt, dried kelp, potassium chloride, fresh whole pumpkin, fresh whole butternut squash, fresh apples, fresh carrots, fresh pears, fresh zucchini, fresh beet greens, fresh kale, fresh spinach, fresh turnip greens, whole cranberries, whole blueberries, whole saskatoon berries, dried chicory root, burdock root, lavender, marshmallow root, milk thistle, rosehips, turmeric root",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 29.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 17.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 4.0,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 12.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 29.0,
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 12.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3510 kcal/kg",
@@ -827,26 +475,10 @@
       "sub_brand": "Healthy Grains",
       "ingredients_raw": "Fresh chicken, chicken meal, oat groats, whole sorghum, whole millet, turkey meal, whole oats, fresh chicken giblets (heart, liver), fresh eggs, raw turkey, chicken fat, ground miscanthus grass, fish oil, raw turkey liver, salt, dried kelp, potassium chloride, fresh whole pumpkin, fresh whole butternut squash, fresh apples, fresh carrots, fresh pears, fresh zucchini, fresh beet greens, fresh kale, fresh spinach, fresh turnip greens, fresh whole cranberries, fresh whole blueberries, fresh whole saskatoon berries, dried chicory root, burdock root, lavender, marshmallow root, milk thistle, rosehips, turmeric root",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 29.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 15.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 5.0,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 12.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 29.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 12.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3375 kcal/kg",
@@ -864,26 +496,10 @@
       "sub_brand": "Healthy Grains",
       "ingredients_raw": "Fresh chicken, chicken meal, oat groats, whole sorghum, whole millet, chicken fat, whole oats, fresh eggs, fresh chicken giblets (heart, liver), turkey meal, herring meal, raw whole herring, ground miscanthus grass, fish oil, raw turkey, raw turkey liver, salt, dried kelp, potassium chloride, fresh whole pumpkin, fresh whole butternut squash, fresh apples, fresh carrots, fresh pears, fresh zucchini, fresh beet greens, fresh kale, fresh spinach, fresh turnip greens, whole cranberries, whole blueberries, whole saskatoon berries, dried chicory root, burdock root, lavender, marshmallow root, milk thistle, rosehips, turmeric root",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 31.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 20.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 5.0,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 12.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 31.0,
+        "crude_fat_min": 20.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 12.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3625 kcal/kg",
@@ -901,26 +517,10 @@
       "sub_brand": "Healthy Grains",
       "ingredients_raw": "Raw beef, beef meal, oat groats, whole sorghum, whole millet, pork meal, pork fat, whole oats, raw pork, raw pork organs (liver, kidney), raw beef organs (liver, kidney), ground miscanthus grass, fish oil, salt, potassium chloride, dried kelp, fresh whole pumpkin, fresh whole butternut squash, fresh apples, fresh carrots, fresh pears, fresh zucchini, fresh beet greens, fresh kale, fresh spinach, fresh turnip greens, whole cranberries, whole blueberries, whole saskatoon berries, dried chicory root, burdock root, lavender, marshmallow root, milk thistle, rosehips, turmeric root",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 29.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 17.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 4.0,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 12.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 29.0,
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 12.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3510 kcal/kg",
@@ -938,26 +538,10 @@
       "sub_brand": "Healthy Grains",
       "ingredients_raw": "Raw salmon, herring meal, oat groats, whole sorghum, pork fat, whole millet, pork meal, pollock meal, whole oats, raw pork, pork liver, ground miscanthus grass, salt, dried kelp, potassium chloride, fresh whole pumpkin, fresh whole butternut squash, fresh whole apples, fresh whole carrots, fresh whole pears, fresh whole zucchini, fresh kale, fresh spinach, fresh turnip greens, fresh beet greens, whole cranberries, whole blueberries, whole saskatoon berries, dried chicory root, burdock root, lavender, marshmallow root, milk thistle, rosehips, turmeric root",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 31.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 20.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 5.0,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 12.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 31.0,
+        "crude_fat_min": 20.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 12.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3625 kcal/kg",
@@ -975,26 +559,10 @@
       "sub_brand": "Healthy Grains",
       "ingredients_raw": "Raw salmon, pollock meal, oat groats, whole sorghum, whole millet, pork fat, herring meal, whole oats, raw whole herring, raw trout, ground miscanthus grass, salt, dried kelp, potassium chloride, fresh whole pumpkin, fresh whole butternut squash, fresh whole apples, fresh whole carrots, fresh whole pears, fresh whole zucchini, fresh kale, fresh spinach, fresh turnip greens, fresh beet greens, whole cranberries, whole blueberries, whole saskatoon berries, dried chicory root, burdock root, lavender, marshmallow root, milk thistle, rosehips, turmeric root",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 29.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 17.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 4.0,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 12.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 29.0,
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 12.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3475 kcal/kg",
@@ -1012,26 +580,10 @@
       "sub_brand": "Highest Protein",
       "ingredients_raw": "Raw lamb, raw duck, fresh eggs, lamb meal, herring meal, turkey meal, whole red lentils, whole chickpeas, whole green peas, chicken fat, raw turkey, raw trout, raw salmon, raw lamb liver, whole green lentils, whole pinto beans, whole yellow peas, fish oil, lentil fibre, pea starch, raw lamb kidney, raw lamb tripe, dried kelp, yeast (s. cerevisiae), fresh whole pumpkin, fresh whole butternut squash, fresh whole carrots, fresh whole apples, fresh whole pears, fresh whole zucchini, fresh kale, fresh spinach, fresh turnip greens, fresh beet greens, whole cranberries, whole blueberries, dried chicory root, turmeric, sarsaparilla root, althea root , rosehips, juniper berries",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 35.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 17.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 4.0,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 12.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 35.0,
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 12.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3510 kcal/kg",
@@ -1049,26 +601,10 @@
       "sub_brand": "Highest Protein",
       "ingredients_raw": "Raw whole herring, raw salmon, raw flounder, herring meal, salmon meal, blue whiting meal, whole red lentils, whole chickpeas, whole green peas, whole green lentils, fish oil, raw whole hake, raw whole rockfish, whole pinto beans, whole yellow peas, pea starch, sunflower oil, lentil fibre, dried kelp, yeast (s. cerevisiae), fresh whole pumpkin, fresh whole butternut squash, fresh whole carrots, fresh whole apples, fresh whole pears, fresh whole zucchini, fresh kale, fresh spinach, fresh turnip greens, fresh beet greens, whole cranberries, whole blueberries, dried chicory root, turmeric, sarsaparilla root, althea root , rosehips, juniper berries",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 35.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 17.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 4.0,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 12.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 35.0,
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 12.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3545 kcal/kg",
@@ -1086,26 +622,10 @@
       "sub_brand": "Highest Protein",
       "ingredients_raw": "Raw beef, raw lamb, raw pork liver, beef meal, lamb meal, pork meal, whole red lentils, whole chickpeas, whole green peas, pork fat, raw pork, raw trout, whole pinto beans, whole green lentils, whole yellow peas, fish oil, raw beef liver, lentil fibre, pea starch, raw beef kidney, raw beef tripe, dried kelp, yeast (s. cerevisiae), salt, fresh whole pumpkin, fresh whole butternut squash, fresh whole carrots, fresh whole apples, fresh whole pears, fresh whole zucchini, fresh kale, fresh spinach, fresh turnip greens, fresh beet greens, whole cranberries, whole blueberries, dried chicory root, turmeric, sarsaparilla root, althea root , rosehips, juniper berries",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 35.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 17.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 4.0,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 12.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 35.0,
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 12.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3493 kcal/kg",
@@ -1123,26 +643,10 @@
       "sub_brand": "Highest Protein",
       "ingredients_raw": "Fresh chicken, raw turkey, fresh chicken giblets (liver, heart, gizzard), chicken meal, herring meal, turkey meal, whole red lentils, whole chickpeas, whole green peas, chicken fat, raw trout, fresh eggs, whole green lentils, whole pinto beans, whole yellow peas, fish oil, lentil fibre, pea starch, raw turkey liver, dried kelp, salt, yeast (s. cerevisiae), fresh whole pumpkin, fresh whole butternut squash, fresh whole carrots, fresh whole apples, fresh whole pears, fresh whole zucchini, fresh kale, fresh spinach, fresh turnip greens, fresh beet greens, whole cranberries, whole blueberries, dried chicory root, turmeric, sarsaparilla root, althea root, rosehips, juniper berries",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 35.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 17.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 4.0,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 12.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 35.0,
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 12.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3545 kcal/kg",
@@ -1160,26 +664,10 @@
       "sub_brand": "Light & Fit",
       "ingredients_raw": "Fresh chicken, chicken meal, whole red lentils, whole green peas, lentil fibre, fresh chicken giblets (liver, heart), turkey meal, fresh eggs, raw hake, whole chickpeas, whole green lentils, whole yellow peas, pea starch, herring meal, chicken fat, fish oil, raw turkey livers, salt, dried kelp, fresh whole pumpkin, fresh whole butternut squash, fresh whole carrots, fresh whole apples, fresh whole pears, fresh whole zucchini, dried chicory root, fresh kale, fresh spinach, fresh turnip greens, fresh beet greens, whole cranberries, whole blueberries, whole saskatoon berries, turmeric, milk thistle, burdock root, lavender, marshmallow root, rosehips",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 35.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 11.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 8.0,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 12.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 35.0,
+        "crude_fat_min": 11.0,
+        "crude_fiber_max": 8.0,
+        "moisture_max": 12.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3070 kcal/kg",
@@ -1197,26 +685,10 @@
       "sub_brand": "Premium Chunks",
       "ingredients_raw": "Beef, beef bone broth, lamb broth, sweet potatoes, beef liver, cranberries, carrots, bison, spinach, dried egg product, natural flavor, guar gum, pumpkin, sodium phosphate, potassium chloride, salt, minerals (zinc proteinate, iron proteinate, selenium yeast, copper proteinate, cobalt proteinate, manganese proteinate, potassium iodide), blueberries, sunflower oil, vitamins (vitamin E supplement, thiamine mononitrate, niacin supplement, calcium pantothenate, vitamin A supplement, riboflavin supplement, biotin, vitamin B12 supplement, pyridoxine hydrochloride, vitamin D3 supplement, folic acid), choline chloride, taurine, fish oil",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 8.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 3.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 2.0,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 82.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 82.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "919 kcal/kg, 334 kcal/can",
@@ -1234,26 +706,10 @@
       "sub_brand": "Premium Chunks",
       "ingredients_raw": "Duck, duck broth, turkey bone broth, sweet potatoes, turkey liver, cranberries, carrots, salmon, dried egg product, spinach, natural flavor, guar gum, pumpkin, salt, sodium phosphate, potassium chloride, dicalcium phosphate, fish oil, minerals (zinc proteinate, iron proteinate, selenium yeast, copper proteinate, cobalt proteinate, manganese proteinate, potassium iodide), blueberries, calcium carbonate, vitamins (thiamine mononitrate, vitamin E supplement, niacin, calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin B12 supplement, pyridoxine hydrochloride, biotin, folic acid, vitamin D3 supplement), choline chloride",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 8.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 4.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 1.0,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 82.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 4.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 82.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "1003 kcal/kg, 364 kcal/can",
@@ -1271,26 +727,10 @@
       "sub_brand": "Premium Chunks",
       "ingredients_raw": "Lamb, lamb broth, beef bone broth, beef liver, sweet potatoes, cranberries, carrots, salmon, spinach, dried egg product, natural flavor, pumpkin, guar gum, sodium phosphate, potassium chloride, calcium carbonate, salt, sunflower oil, dicalcium phosphate, minerals (zinc proteinate, iron proteinate, selenium yeast, copper proteinate, cobalt proteinate, manganese proteinate, potassium iodide), blueberries, vitamins (thiamine mononitrate, vitamin E supplement, niacin, calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin B12 supplement, pyridoxine hydrochloride, biotin, folic acid, vitamin D3 supplement), choline chloride, taurine, fish oil",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 8.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 3.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 1.0,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 82.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 82.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "1140 kcal/kg, 414 kcal/can",
@@ -1308,26 +748,10 @@
       "sub_brand": "Premium Chunks",
       "ingredients_raw": "Pork, pork broth, beef bone broth, pork liver, sweet potatoes, cranberries, carrots, salmon, dried egg product, spinach, natural flavor, bacon, guar gum, fish oil, calcium carbonate, tricalcium phosphate, sunflower oil, pumpkin, sodium phosphate, salt, potassium chloride, minerals (zinc proteinate, iron proteinate, selenium yeast, copper proteinate, cobalt proteinate, manganese proteinate, potassium iodide), blueberries, vitamins (thiamine mononitrate, vitamin E supplement, niacin, calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin B12 supplement, pyridoxine hydrochloride, biotin, folic acid, vitamin D3 supplement), choline chloride, taurine",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 8.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 3.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 2.0,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 82.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 82.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "890 kcal/kg, 323 kcal/can",
@@ -1345,26 +769,10 @@
       "sub_brand": "Premium Chunks",
       "ingredients_raw": "Chicken, chicken bone broth, turkey bone broth, chicken liver, sweet potatoes, cranberries, carrots, dried egg product, spinach, turkey, natural flavor, turkey liver, guar gum, pumpkin, sodium phosphate, salt, potassium chloride, calcium carbonate, minerals (zinc proteinate, iron proteinate, selenium yeast, copper proteinate, manganese proteinate, cobalt proteinate, potassium iodide), blueberries, choline chloride, vitamins (vitamin E supplement, thiamine mononitrate, niacin supplement, calcium pantothenate, vitamin A supplement, riboflavin supplement, biotin, vitamin B12 supplement, pyridoxine hydrochloride, vitamin D3 supplement, folic acid), fish oil",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 8.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 3.5,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 1.5,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 82.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 3.5,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 82.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "960 kcal/kg, 348 kcal/can",
@@ -1382,26 +790,10 @@
       "sub_brand": "Premium Pâté",
       "ingredients_raw": "Chicken, chicken liver, chicken bone broth, sweet potatoes, turkey bone broth, chicken hearts, turkey, herring, dried egg product, carrots, spinach, pumpkin, natural flavor, guar gum, dicalcium phosphate, salt, potassium chloride, agar-agar, blueberries, cranberries, minerals (zinc proteinate, iron proteinate, selenium yeast, copper proteinate, manganese proteinate, potassium iodide), fish oil, vitamins (thiamine supplement, vitamin E supplement, niacin supplement, D-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin B12 supplement, pyridoxine hydrochloride, biotin, folic acid, vitamin D3 supplement), choline chloride, sodium carbonate, calcium carbonate",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 9.5,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 6.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 1.5,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 78.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 9.5,
+        "crude_fat_min": 6.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "1188 kcal/kg, 431 kcal/can",
@@ -1418,26 +810,10 @@
       "product_format": "dry",
       "ingredients_raw": "Fresh chicken, chicken meal, whole red lentils, whole green peas, fresh chicken giblets (liver, heart), fresh eggs, raw hake, fish oil, herring meal, whole chickpeas, pea starch, turkey meal, whole green lentil, whole yellow peas, chicken fat, lentil fibre, raw turkey liver, salt, dried kelp, fresh whole apples, fresh whole butternut squash, fresh whole carrots, fresh whole pears, fresh whole pumpkin, fresh whole zucchini, dried chicory root, fresh kale, fresh spinach, fresh turnip greens, fresh beet greens, whole blueberries, whole cranberries, whole saskatoon berries, burdock root, lavender, marshmallow root, milk thistle, rosehips, turmeric",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 33.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 15.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 6.0,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 12.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 33.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 6.0,
+        "moisture_max": 12.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3375 kcal/kg",
@@ -1454,26 +830,10 @@
       "product_format": "dry",
       "ingredients_raw": "Fresh chicken, chicken meal, whole red lentils, whole green peas, fresh chicken giblets (liver, heart), chicken fat, turkey meal, fresh eggs, raw hake, herring meal, fish oil, whole green lentils, whole chickpeas, whole yellow peas, lentil fibre, pea starch, raw turkey livers, salt, dried kelp, fresh whole pumpkin, fresh whole butternut squash, fresh whole carrots, fresh whole apples, fresh whole pears, fresh whole zucchini, dried chicory root, fresh kale, fresh spinach, fresh turnip greens, fresh beet greens, whole cranberries, whole blueberries, whole saskatoon berries, turmeric, milk thistle, burdock root, lavender, marshmallow root, rosehips",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 33.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 20.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 5.0,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 12.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 33.0,
+        "crude_fat_min": 20.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 12.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3660 kcal/kg",
@@ -1490,26 +850,10 @@
       "product_format": "dry",
       "ingredients_raw": "Fresh chicken, chicken meal, whole red lentils, whole green peas, fresh chicken giblets (liver, heart), chicken fat, turkey meal, fresh eggs, raw hake, herring meal, fish oil, whole green lentils, whole chickpeas, whole yellow peas, lentil fibre, pea starch, raw turkey livers, salt, dried kelp, fresh whole pumpkin, fresh whole butternut squash, fresh whole carrots, fresh whole apples, fresh whole pears, fresh whole zucchini, dried chicory root, fresh kale, fresh spinach, fresh turnip greens, fresh beet greens, whole cranberries, whole blueberries, whole saskatoon berries, turmeric, milk thistle, burdock root, lavender, marshmallow root, rosehips",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 33.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 20.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 5.0,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 12.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 33.0,
+        "crude_fat_min": 20.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 12.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3660 kcal/kg",
@@ -1526,26 +870,10 @@
       "product_format": "dry",
       "ingredients_raw": "Fresh chicken, chicken meal, whole red lentils, whole green peas, turkey meal, whole chickpeas, fresh chicken giblets (liver, heart), lentil fibre, fresh eggs, raw hake, fish oil, herring meal, whole green lentils, whole yellow peas, pea starch, chicken fat, raw turkey livers, dried kelp, fresh whole pumpkin, fresh whole butternut squash, fresh whole carrots, fresh whole apples, fresh whole pears, fresh whole zucchini, dried chicory root, fresh kale, fresh spinach, fresh turnip greens, fresh beet greens, whole cranberries, whole blueberries, whole saskatoon berries, turmeric, milk thistle, burdock root, lavender, marshmallow root, rosehips",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 33.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 14.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 6.0,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 12.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 33.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 6.0,
+        "moisture_max": 12.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3325 kcal/kg",
@@ -1563,26 +891,10 @@
       "sub_brand": "Singles",
       "ingredients_raw": "Raw duck, duck meal, raw duck liver, whole chickpeas, whole lentils, duck fat, dehydrated sweet potato, fresh pears, lentil fibre, fish oil, salt, dried kelp, fresh whole pumpkin, fresh whole butternut squash, dried chicory root, whole cranberries, whole blueberries, turmeric, milk thistle, burdock root, lavender, marshmallow root, rosehips",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 31.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 17.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 6.0,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 12.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 31.0,
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 6.0,
+        "moisture_max": 12.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3405 kcal/kg",
@@ -1600,26 +912,10 @@
       "sub_brand": "Singles",
       "ingredients_raw": "Raw lamb, lamb meal, raw lamb organs (liver, kidney, tripe), whole chickpeas, whole lentils, fish oil, fresh apples, dehydrated sweet potato, lentil fibre, sunflower oil, salt, dried kelp, fresh whole pumpkin, fresh whole butternut squash, dried chicory root, whole cranberries, whole blueberries, turmeric, milk thistle, burdock root, lavender, marshmallow root, rosehips",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 31.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 17.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 6.0,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 12.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 31.0,
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 6.0,
+        "moisture_max": 12.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3405 kcal/kg",
@@ -1637,26 +933,10 @@
       "sub_brand": "Singles",
       "ingredients_raw": "Raw pork, pork meal, raw pork liver, whole chickpeas, whole lentils, pork fat, fresh whole butternut squash, dehydrated sweet potato, lentil fibre, fish oil, dried kelp, salt, fresh whole pumpkin, dried chicory root, whole cranberries, whole blueberries, turmeric, milk thistle, burdock root, lavender, marshmallow root, rosehips",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 31.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 17.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 6.0,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 12.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 31.0,
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 6.0,
+        "moisture_max": 12.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3405 kcal/kg",
@@ -1674,26 +954,10 @@
       "sub_brand": "Sport & Agility",
       "ingredients_raw": "Fresh chicken, chicken meal, whole red lentils, whole green peas, chicken fat, turkey meal, fresh chicken giblets (liver, heart), fresh eggs, raw hake, fish oil, herring meal, whole chickpeas, whole green lentils, whole yellow peas, pea starch, raw turkey liver, salt, dried kelp, fresh whole pumpkin, fresh whole butternut squash, fresh whole carrots, fresh whole apples, fresh whole pears, fresh whole zucchini, dried chicory root, fresh kale, fresh spinach, fresh turnip greens, fresh beet greens, whole cranberries, whole blueberries, whole saskatoon berries, turmeric, milk thistle, burdock root, lavender, marshmallow root, rosehips",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 35.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 22.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 5.0,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 12.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 35.0,
+        "crude_fat_min": 22.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 12.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3725 kcal/kg",
@@ -1711,26 +975,10 @@
       "sub_brand": "Amazing Grains",
       "ingredients_raw": "Fresh chicken, raw turkey, fresh chicken giblets (liver, heart, gizzard), raw whole herring, raw salmon, dehydrated chicken, dehydrated chicken liver, oat groats, whole millet, raw turkey liver, dehydrated salmon, fresh eggs, chicken fat, whole oats, ground whole flaxseed, dehydrated herring, dehydrated turkey, quinoa seed, chia seed, whitefish oil, inulin, fresh whole pumpkin, fresh whole butternut squash, dried kelp, salt, yeast (s. cerevisiae), fresh whole zucchini, fresh whole carrots, fresh whole apples, fresh whole pears, fresh kale, fresh spinach, fresh beet greens, fresh turnip greens, whole cranberries, whole blueberries, dried chicory root, turmeric, sarsaparilla root, althea root, rosehips, juniper berries",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 38.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 18.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 3.5,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 12.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 38.0,
+        "crude_fat_min": 18.0,
+        "crude_fiber_max": 3.5,
+        "moisture_max": 12.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3980 kcal/kg",
@@ -1748,26 +996,10 @@
       "sub_brand": "Amazing Grains",
       "ingredients_raw": "Fresh chicken, raw whole herring, raw whole hake, fresh chicken giblets (liver, heart, gizzard), raw salmon, dehydrated chicken, dehydrated chicken liver, dehydrated herring, oat groats, whole millet, chicken fat, raw turkey, fresh eggs, raw turkey liver, whole oats, dehydrated sardine, quinoa seed, chia seed, whitefish oil, ground whole flaxseed, dried apple fibre, inulin, fresh whole pumpkin, fresh whole butternut squash, dried kelp, salt, yeast (s. cerevisiae), fresh whole zucchini, fresh whole carrots, fresh whole apples, fresh whole pears, fresh kale, fresh spinach, fresh beet greens, fresh turnip greens, whole cranberries, whole blueberries, dried chicory root, turmeric, sarsaparilla root, althea root, rosehips, juniper berries",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 38.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 20.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 3.5,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 12.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 38.0,
+        "crude_fat_min": 20.0,
+        "crude_fiber_max": 3.5,
+        "moisture_max": 12.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "4080 kcal/kg",
@@ -1785,26 +1017,10 @@
       "sub_brand": "Amazing Grains",
       "ingredients_raw": "Raw beef, raw lamb, raw beef liver, raw pork, raw salmon, dehydrated pollock, dehydrated sardine, dehydrated herring, oat groats, whole millet, raw pork liver, raw whole herring, pork fat, dehydrated beef, whole oats, quinoa seed, chia seed, ground whole axseed, sunflower oil, dehydrated pork liver, white fish oil, raw beef kidney, raw beef tripe, inulin, fresh whole pumpkin, fresh whole butternut squash, dried kelp, yeast (s. cerevisiae), fresh whole zucchini, fresh whole carrots, fresh whole apples, fresh whole pears, fresh kale, fresh spinach, fresh beet greens, fresh turnip greens, whole cranberries, whole blueberries, dried chicory root, turmeric, sarsaparilla root, althea root, rosehips, juniper berries",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 38.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 18.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 3.5,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 12.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 38.0,
+        "crude_fat_min": 18.0,
+        "crude_fiber_max": 3.5,
+        "moisture_max": 12.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3920 kcal/kg",
@@ -1822,26 +1038,10 @@
       "sub_brand": "Freeze-Dried",
       "ingredients_raw": "Beef, beef liver, beef tripe, beef kidney, mixed tocopherols (preservative), citric acid (preservative), rosemary extract",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 40.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 40.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 1.0,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 2.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 40.0,
+        "crude_fat_min": 40.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 2.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "5520 kcal/kg, 5 kcal/treat",
@@ -1858,26 +1058,10 @@
       "product_format": "wet",
       "ingredients_raw": "Chicken, chicken liver, chicken bone broth, turkey bone broth, turkey, chicken heart, natural pork flavor, broccoli, carrots, pumpkin, guar gum, agar-agar, salt, potassium chloride, minerals (zinc proteinate, iron proteinate, selenium yeast, copper proteinate, cobalt proteinate, manganese proteinate, potassium iodide), herring oil (preserved with mixed tocopherols), vitamins (vitamin E supplement, thiamine mononitrate, niacin supplement, calcium pantothenate, vitamin A supplement, riboflavin supplement, biotin, vitamin B12 supplement, pyridoxine hydrochloride, vitamin D3 supplement, folic acid), choline chloride, inulin, turmeric, sodium carbonate, magnesium sulfate",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 10.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 7.5,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 1.5,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 78.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 10.0,
+        "crude_fat_min": 7.5,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "1235 kcal/kg, 448 kcal/can",
@@ -1894,26 +1078,10 @@
       "product_format": "wet",
       "ingredients_raw": "Chicken, chicken bone broth, turkey bone broth, chicken liver, dried egg product, chicken heart, quail, carrots, guar gum, natural flavor, salt, herring oil, broccoli, pumpkin, potassium chloride, minerals (zinc proteinate, iron proteinate, selenium yeast, copper proteinate, cobalt proteinate, manganese proteinate, potassium iodide), blueberries, choline chloride, vitamins (vitamin E supplement, thiamine mononitrate, niacin supplement, calcium pantothenate, vitamin A supplement, riboflavin supplement, biotin, vitamin B12 supplement, pyridoxine hydrochloride, vitamin D3 supplement, folic acid), calcium carbonate, inulin, turmeric",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 11.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 4.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 1.5,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 82.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 11.0,
+        "crude_fat_min": 4.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 82.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "977 kcal/kg, 355 kcal/can",
@@ -1931,26 +1099,10 @@
       "sub_brand": "Freeze-Dried",
       "ingredients_raw": "Duck, duck liver, mixed tocopherols (preservative), citric acid (preservative), rosemary extract",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 40.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 40.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 1.0,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 2.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 40.0,
+        "crude_fat_min": 40.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 2.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "5720 kcal/kg, 6 kcal/treat",
@@ -1968,26 +1120,10 @@
       "sub_brand": "Fit & Trim",
       "ingredients_raw": "Fresh chicken, raw whole herring, raw turkey, fresh chicken giblets (liver, heart), raw whole hake, raw whole mackerel, fresh eggs, dehydrated chicken, dehydrated mackerel, dehydrated sardine, dehydrated herring, dehydrated turkey, dehydrated whitefish, lentil fibre, whole pinto beans, whole navy beans, whole chickpeas, whole red lentils, whole green lentils, whole peas, pea starch, raw turkey liver, chicken fat, apple fibre, algae (source of DHA), dried kelp, fresh whole pumpkin, fresh whole butternut squash, fresh whole zucchini, fresh whole carrots, fresh whole apples, fresh whole pears, dried chicory root, fresh kale, fresh spinach, fresh beet greens, fresh turnip greens, whole cranberries, whole blueberries, whole saskatoon berries, turmeric, milk thistle, burdock root, lavender, marshmallow root, rosehips",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 40.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 13.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 8.0,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 12.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 40.0,
+        "crude_fat_min": 13.0,
+        "crude_fiber_max": 8.0,
+        "moisture_max": 12.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3530 kcal/kg",
@@ -2005,26 +1141,10 @@
       "sub_brand": "Freeze-Dried",
       "ingredients_raw": "Lamb, lamb liver, lamb tripe, mixed tocopherols (preservative), citric acid (preservative), rosemary extract",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 35.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 45.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 1.0,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 2.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 35.0,
+        "crude_fat_min": 45.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 2.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "5790 kcal/kg, 6 kcal/treat",
@@ -2041,26 +1161,10 @@
       "product_format": "dry",
       "ingredients_raw": "Fresh chicken, fresh chicken giblets (liver, heart, gizzard), raw turkey, raw salmon, raw whole herring, dehydrated chicken, dehydrated pollock, dehydrated sardine, dehydrated turkey, dehydrated herring, whole red lentils, whole peas, lentil fibre, raw turkey liver, fresh eggs, whole green lentils, whole chickpeas, whole pinto beans, whole navy beans, dried apple fibre, whitefish oil, chicken fat, dehydrated chicken liver, dried kelp, fresh whole pumpkin, fresh whole butternut squash, fresh whole carrots, fresh whole apples, fresh whole pears, fresh whole zucchini, dried chicory root, fresh kale, fresh spinach, fresh turnip greens, fresh beet greens, whole cranberries, whole blueberries, whole saskatoon berries, turmeric, milk thistle, burdock root, lavender, marshmallow root, rosehips",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 38.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 15.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 6.0,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 12.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 38.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 6.0,
+        "moisture_max": 12.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3710 kcal/kg",
@@ -2077,26 +1181,10 @@
       "product_format": "wet",
       "ingredients_raw": "Chicken, turkey, chicken bone broth, turkey bone broth, chicken liver, turkey liver, cod, broccoli, carrots, turkey heart, chicken heart, natural pork flavor, herring, pumpkin, guar gum, agar-agar, salt, potassium chloride, minerals (zinc proteinate, iron proteinate, selenium yeast, copper proteinate, cobalt proteinate, manganese proteinate, potassium iodide), herring oil (preserved with mixed tocopherols), vitamins (thiamine mononitrate, vitamin E supplement, niacin supplement, calcium pantothenate, vitamin A supplement, riboflavin supplement, biotin, vitamin B12 supplement, pyridoxine hydrochloride, vitamin D3 supplement, folic acid), choline chloride, inulin, turmeric, sodium carbonate, magnesium sulfate",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 10.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 7.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 1.5,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 78.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 10.0,
+        "crude_fat_min": 7.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "1231 kcal/kg, 447 kcal/can",
@@ -2113,26 +1201,10 @@
       "product_format": "wet",
       "ingredients_raw": "Chicken, chicken bone broth, turkey bone broth, chicken liver, turkey, dried egg product, chicken heart, herring, turkey liver, carrots, guar gum, mackerel, natural flavor, salt, herring oil, turkey heart, broccoli, pumpkin, potassium chloride, minerals (zinc proteinate, iron proteinate, selenium yeast, copper proteinate, cobalt proteinate, manganese proteinate, potassium iodide), blueberries, calcium carbonate, vitamins (thiamine mononitrate, vitamin E supplement, niacin supplement, calcium pantothenate, vitamin A supplement, riboflavin supplement, biotin, vitamin B12 supplement, pyridoxine hydrochloride, vitamin D3 supplement, folic acid), choline chloride, inulin, turmeric",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 11.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 4.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 1.5,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 82.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 11.0,
+        "crude_fat_min": 4.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 82.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "977 kcal/kg, 355 kcal/can",
@@ -2150,26 +1222,10 @@
       "sub_brand": "Freeze-Dried",
       "ingredients_raw": "Chicken, turkey, turkey giblets (liver, heart, gizzard), chicken giblets (liver, heart, gizzard), flounder, mixed tocopherols (preservative), citric acid (preservative), rosemary extract",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 45.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 35.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 1.0,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 2.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 45.0,
+        "crude_fat_min": 35.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 2.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "5430 kcal/kg, 5 kcal/treat",
@@ -2186,26 +1242,10 @@
       "product_format": "dry",
       "ingredients_raw": "Fresh chicken, raw turkey, fresh chicken giblets (liver, heart), raw whole herring, raw whole hake, fresh eggs, raw turkey liver, dehydrated chicken, dehydrated turkey, dehydrated mackerel, dehydrated sardine, dehydrated herring, whole red lentils, whole chickpeas, whole peas, chicken fat, whole green lentils, whole pinto beans, whole navy beans, lentil fibre, pollock oil, pea starch, dried kelp, fresh whole pumpkin, fresh whole butternut squash, fresh whole zucchini, fresh whole carrots, fresh whole apples, fresh whole pears, dried chicory root, fresh kale, fresh spinach, fresh beet greens, fresh turnip greens, whole cranberries, whole blueberries, whole saskatoon berries, turmeric, milk thistle, burdock root, lavender, marshmallow root, rosehips",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 38.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 18.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 5.0,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 12.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 38.0,
+        "crude_fat_min": 18.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 12.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3860 kcal/kg",
@@ -2222,26 +1262,10 @@
       "product_format": "dry",
       "ingredients_raw": "Fresh chicken, raw turkey, fresh chicken giblets (liver, heart), raw whole hake, raw whole herring, fresh eggs, raw turkey liver, dehydrated chicken, dehydrated mackerel, dehydrated sardine, dehydrated herring, whole red lentils, whole green lentils, whole peas, lentil fibre, whole chickpeas, whole pinto beans, pea starch, dehydrated turkey, chicken fat, whole navy beans, pollock oil, dried kelp, fresh whole pumpkin, fresh whole butternut squash, fresh whole zucchini, fresh whole carrots, fresh whole apples, fresh whole pears, dried chicory root, fresh kale, fresh spinach, fresh beet greens, fresh turnip greens, whole cranberries, whole blueberries, whole saskatoon berries, turmeric, milk thistle, burdock root, lavender, marshmallow root, rosehips",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 38.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 16.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 6.0,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 12.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 38.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 6.0,
+        "moisture_max": 12.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3760 kcal/kg",
@@ -2256,28 +1280,12 @@
       "channel": "retail",
       "product_type": "food",
       "product_format": "wet",
-      "ingredients_raw": "Chicken, chicken liver, chicken heart, mackerel, chicken bone broth, turkey bone broth, broccoli, dried egg product, carrots, sweet potatoes, natural flavor, pumpkin, organic guar gum, dicalcium phosphate, potassium chloride, salt, minerals (zinc amino acid chelate, iron amino acid chelate, selenium yeast, copper amino acid chelate, manganese amino acid chelate, cobalt amino acid chelate, potassium iodide), agar-agar, herring oil (preserved with mixed tocopherols), vitamins (thiamine mononitrate, vitamin E supplement, niacin supplement, D-calcium pantothenate, vitamin A supplement, riboflavin supplement, biotin, vitamin B12 supplement, pyridox",
+      "ingredients_raw": "Chicken, chicken liver, chicken heart, mackerel, chicken bone broth, turkey bone broth, broccoli, dried egg product, carrots, sweet potatoes, natural flavor, pumpkin, organic guar gum, dicalcium phosphate, potassium chloride, salt, minerals (zinc amino acid chelate, iron amino acid chelate, selenium yeast, copper amino acid chelate, manganese amino acid chelate, cobalt amino acid chelate, potassium iodide), agar-agar, herring oil (preserved with mixed tocopherols), vitamins (thiamine mononitrate, vitamin E supplement, niacin supplement, D-calcium pantothenate, vitamin A supplement, riboflavin supplement, biotin, vitamin B12 supplement, pyridoxine hydrochloride, vitamin D3 supplement, folic acid), choline chloride, inulin, turmeric, sodium carbonate, magnesium sulfate",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 11.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 6.5,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 1.5,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 78.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 11.0,
+        "crude_fat_min": 6.5,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "1255 kcal/kg, 455 kcal/can",
@@ -2294,26 +1302,10 @@
       "product_format": "dry",
       "ingredients_raw": "Fresh chicken, raw turkey, fresh chicken giblets (liver, heart), raw whole herring, raw whole hake, fresh eggs, dehydrated chicken, dehydrated turkey, dehydrated mackerel, dehydrated sardine, dehydrated herring, chicken fat, whole red lentils, whole peas, whole green lentils, whole chickpeas, lentil fibre, whole pinto beans, whole navy beans, raw turkey liver, pollock oil, pea starch, dried kelp, fresh whole pumpkin, fresh whole butternut squash, fresh whole zucchini, fresh whole carrots, fresh whole apples, fresh whole pears, dried chicory root, fresh kale, fresh spinach, fresh beet greens, fresh turnip greens, whole cranberries, whole blueberries, whole saskatoon berries, turmeric, milk thistle, burdock root, lavender, marshmallow root, rosehips",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 38.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 20.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 5.0,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 12.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 38.0,
+        "crude_fat_min": 20.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 12.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "4000 kcal/kg",
@@ -2330,26 +1322,10 @@
       "product_format": "wet",
       "ingredients_raw": "Beef, lamb broth, beef bone broth, beef liver, duck, beef kidney, lamb, cod, natural pork flavor, broccoli, carrots, pumpkin, guar gum, agar-agar, potassium chloride, salt, sunflower oil, salmon oil (preserved with mixed tocopherols), minerals (zinc proteinate, iron proteinate, selenium yeast, copper proteinate, manganese proteinate, cobalt proteinate, potassium iodide), vitamins (thiamine mononitrate, vitamin E supplement, niacin supplement, calcium pantothenate, vitamin A supplement, riboflavin supplement, biotin, vitamin B12 supplement, pyridoxine hydrochloride, vitamin D3 supplement, folic acid), choline chloride, inulin, turmeric, sodium carbonate, magnesium sulfate, calcium carbonate",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 10.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 6.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 1.5,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 78.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 10.0,
+        "crude_fat_min": 6.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "1175 kcal/kg, 427 kcal/can",
@@ -2366,26 +1342,10 @@
       "product_format": "wet",
       "ingredients_raw": "Beef, beef bone broth, lamb bone broth, duck, beef kidney, eggs, dried egg whites, lamb liver, lamb, whole sardine, carrots, natural flavor, guar gum, salt, pumpkin, broccoli, blueberries, sunflower oil, salmon oil, choline chloride, vitamins [vitamin E supplement, thiamine mononitrate, niacin, pyridoxine hydrochloride, calcium pantothenate, riboflavin supplement, vitamin A supplement, folic acid, biotin, vitamin B12 supplement, vitamin D3 supplement], minerals [potassium chloride, magnesium sulfate, zinc amino acid chelate, iron amino acid chelate, manganese amino acid chelate, copper amino acid chelate, potassium iodide], inulin, turmeric",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 11.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 5.5,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 1.5,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 82.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 11.0,
+        "crude_fat_min": 5.5,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 82.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "1011 kcal/kg, 337 kcal/can",
@@ -2403,16 +1363,8 @@
       "sub_brand": "Freeze-Dried",
       "ingredients_raw": "Beef liver, lamb liver, wild boar liver, wild boar, lamb, beef, beef kidney, wild boar heart, beef tripe, lamb kidney, lamb tripe, mixed tocopherols (preservative), citric acid (preservative), rosemary extract",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 40.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 40.0,
-          "unit": "%",
-          "qualifier": "min"
-        }
+        "crude_protein_min": 40.0,
+        "crude_fat_min": 40.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "5540 kcal/kg, 6 kcal/treat",
@@ -2429,26 +1381,10 @@
       "product_format": "dry",
       "ingredients_raw": "Fresh chicken, raw turkey, fresh chicken giblets (liver, heart), raw whole herring, raw whole hake, fresh eggs, raw turkey liver, dehydrated chicken, dehydrated turkey, dehydrated mackerel, dehydrated sardine, dehydrated herring, whole red lentils, whole green lentils, whole peas, lentil fibre, whole chickpeas, whole pinto beans, pea starch, pollock oil, chicken fat, whole navy beans, dried kelp, fresh whole pumpkin, fresh whole butternut squash, fresh whole zucchini, fresh whole carrots, fresh whole apples, fresh whole pears, dried chicory root, fresh kale, fresh spinach, fresh beet greens, fresh turnip greens, whole cranberries, whole blueberries, whole saskatoon berries, turmeric, milk thistle, burdock root, lavender, marshmallow root, rosehips",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 38.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 15.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 6.0,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 12.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 38.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 6.0,
+        "moisture_max": 12.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3710 kcal/kg",
@@ -2465,26 +1401,10 @@
       "product_format": "dry",
       "ingredients_raw": "Raw whole pilchard, raw whole mackerel, raw whole hake, raw flounder, raw whole rockfish, raw whole sole, dehydrated mackerel, dehydrated herring, dehydrated pollock, dehydrated sardine, dehydrated blue whiting, herring oil, whole red lentils, whole peas, whole chickpeas, whole green lentils, lentil fibre, whole pinto beans, pea starch, sunflower oil, dried kelp, fresh whole pumpkin, fresh whole butternut squash, fresh whole zucchini, fresh whole carrots, fresh whole apples, fresh whole pears, dried chicory root, fresh kale, fresh spinach, fresh beet greens, fresh turnip greens, whole cranberries, whole blueberries, whole saskatoon berries, turmeric, milk thistle, burdock root, lavender, marshmallow root, rosehips",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 38.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 18.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 5.0,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 12.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 38.0,
+        "crude_fat_min": 18.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 12.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3880 kcal/kg",
@@ -2501,21 +1421,9 @@
       "product_format": "dry",
       "ingredients_raw": "Raw turkey, fresh chicken, raw quail, raw whole hake, raw whole herring, raw turkey liver, fresh chicken giblets (liver, heart), fresh eggs, dehydrated turkey, dehydrated chicken, dehydrated herring, dehydrated chicken liver, dehydrated egg, whole red lentils, whole pinto beans, whole green lentils, chicken fat, whole navy beans, whole chickpeas, lentil fibre, whole peas, pollock oil, pea starch, dried kelp, New Zealand green mussels, fresh whole butternut squash, fresh whole pumpkin, salt, fresh whole apples, fresh whole carrots, fresh whole pears, fresh whole zucchini, dried chicory root, fresh beet greens, fresh kale, fresh spinach, fresh turnip greens, whole cranberries, whole blueberries, whole saskatoon berries, turmeric, milk thistle, burdock root, lavender, marshmallow root, rosehips",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 39.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 18.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "moisture": {
-          "value": 12.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 39.0,
+        "crude_fat_min": 18.0,
+        "moisture_max": 12.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3900 kcal/kg",
@@ -2532,26 +1440,10 @@
       "product_format": "wet",
       "ingredients_raw": "Lamb, beef, lamb broth, beef bone broth, lamb liver, duck, beef kidney, cod, natural pork flavor, broccoli, carrots, pumpkin, guar gum, agar-agar, sunflower oil, salt, potassium chloride, minerals (zinc proteinate, iron proteinate, selenium yeast, copper proteinate, cobalt proteinate, manganese proteinate, potassium iodide), salmon oil (preserved with mixed tocopherols), vitamins (thiamine mononitrate, vitamin E supplement, niacin supplement, calcium pantothenate, vitamin A supplement, riboflavin supplement, biotin, vitamin B12 supplement, pyridoxine hydrochloride, vitamin D3 supplement, folic acid), choline chloride, inulin, turmeric, sodium carbonate, magnesium sulfate",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 10.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 6.5,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 1.5,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 78.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 10.0,
+        "crude_fat_min": 6.5,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "1234 kcal/kg, 448 kcal/can",
@@ -2568,26 +1460,10 @@
       "product_format": "wet",
       "ingredients_raw": "Lamb, lamb bone broth, beef bone broth, fish bone broth, duck, beef, lamb liver, eggs, dried egg whites, beef kidney, whole mackerel, carrots, natural flavor, guar gum, salt, pumpkin, broccoli, blueberries, sunflower oil, salmon oil, choline chloride, vitamins [vitamin E supplement, thiamine mononitrate, niacin, pyridoxine hydrochloride, calcium pantothenate, riboflavin supplement, vitamin A supplement, folic acid, biotin, vitamin B12 supplement, vitamin D3 supplement], minerals [potassium chloride, magnesium sulfate, zinc amino acid chelate, iron amino acid chelate, manganese amino acid chelate, copper amino acid chelate, potassium iodide], inulin, turmeric",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 11.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 5.5,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 1.5,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 82.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 11.0,
+        "crude_fat_min": 5.5,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 82.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "1100 kcal/kg, 399 kcal/can",
@@ -2605,26 +1481,10 @@
       "sub_brand": "Freeze-Dried",
       "ingredients_raw": "Goat, venison, wild boar, duck, lamb, lamb liver, whole mackerel, wild boar liver, goat liver, venison liver, goat kidney, venison kidney, venison tripe, goat tripe, wild boar heart, mixed tocopherols (preservative), citric acid (preservative), rosemary extract",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 40.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 35.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 1.0,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 2.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 40.0,
+        "crude_fat_min": 35.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 2.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "5270 kcal/kg, 5 kcal/treat",
@@ -2641,26 +1501,10 @@
       "product_format": "dry",
       "ingredients_raw": "Raw lamb, raw venison, raw duck, raw arctic char, raw whole pilchard, raw pork, raw duck liver, raw lamb liver, fresh eggs, dehydrated lamb, dehydrated whitefish, dehydrated blue whiting, dehydrated mutton, dehydrated herring, dehydrated mackerel, raw goat, raw pork liver, whole green lentils, whole chickpeas, whole peas, raw steelhead trout, pork fat, whole red lentils, whole pinto beans, lentil fibre, pollock oil, whole navy beans, pea starch, raw lamb kidney, raw lamb tripe, dried kelp, fresh whole pumpkin, fresh whole butternut squash, fresh whole zucchini, fresh whole carrots, fresh whole apples, fresh whole pears, dried chicory root, fresh kale, fresh spinach, fresh beet greens, fresh turnip greens, whole cranberries, whole blueberries, whole saskatoon berries, turmeric, milk thistle, burdock root, lavender, marshmallow root, rosehips",
       "guaranteed_analysis": {
-        "crude_protein": {
-          "value": 40.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fat": {
-          "value": 18.0,
-          "unit": "%",
-          "qualifier": "min"
-        },
-        "crude_fiber": {
-          "value": 5.0,
-          "unit": "%",
-          "qualifier": "max"
-        },
-        "moisture": {
-          "value": 12.0,
-          "unit": "%",
-          "qualifier": "max"
-        }
+        "crude_protein_min": 40.0,
+        "crude_fat_min": 18.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 12.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3860 kcal/kg",

@@ -1,35 +1,44 @@
 # Canadian Dog Food Brands — Scraper Reference
 
-Last updated: 2026-03-09
+Last updated: 2026-03-10
 
 ## Scraper Status
 
 | Brand | Products | Channel | Ingredients | GA | Calories | Status |
 |-------|----------|---------|-------------|-----|----------|--------|
-| Royal Canin | 153 | retail+vet | 100% | 100% | 100% | Done |
-| Purina | 196 | retail+vet | 100% | 97% | 97% | Done |
-| Hill's | 148 | retail+vet | 100% | 100% | 100% | Done |
+| Royal Canin | 154 | retail+vet | 100% | 100% | 100% | Done |
+| Purina (Vet) | 48 | vet | 100% | 90% | 90% | Done |
+| Purina (Retail) | 97 | retail | 100% | 99% | 99% | Done |
+| Hill's | 142 | retail+vet | 100% | 100% | 100% | Done |
 | Go! Solutions | 43 | retail | 100% | 100% | 100% | Done |
 | Now Fresh | 22 | retail | 100% | 100% | 100% | Done |
 | Taste of the Wild | 21 | retail | 100% | 100% | 100% | Done |
-| FirstMate | 53 | retail | 100% | 100% | 100% | Done |
+| FirstMate | 46 | retail | 100% | 100% | 100% | Done |
 | Canadian Naturals | 20 | retail | 100% | 100% | 100% | Done |
-| Nutrience | 76 | retail | 100% | 93% | 92% | Done |
-| Rayne | 24 | vet | 100% | 50% | 100% | Done (static GA lookup) |
-| Acana + Orijen | 60 | retail | 100% | 100% | 100% | Done |
-| Open Farm | 129 | retail | 100% | 91% | 93% | Done |
-| Blue Buffalo | 163 | retail | 100% | 100% | 77% | Done |
-| Performatrin | 84 | retail | 100% | 100% | 95% | Done |
-| Iams | 23 | retail | 100% | 100% | 100% | Done |
-| Authority | 45 | retail | 100% | 100% | 100% | Done |
-| Pedigree | 29 | retail | 100% | 100% | 100% | Done |
+| Nutrience | 81 | retail | 100% | 94% | 94% | Done |
+| Rayne | 24 | vet | 100% | 71% | 100% | Done (static GA lookup) |
+| Acana + Orijen | 73 | retail | 100% | 100% | 100% | Done |
+| Open Farm | 107 | retail | 100% | 97% | 94% | Done |
+| Blue Buffalo | 163 | retail | 100% | 100% | 82% | Done |
+| Performatrin | 97 | retail | 100% | 100% | 90% | Done |
+| Iams | 21 | retail | 100% | 100% | 100% | Done |
+| Authority | 44 | retail | 100% | 100% | 100% | Done |
+| Pedigree | 30 | retail | 100% | 100% | 100% | Done |
 | Nutro | 46 | retail | 100% | 100% | 100% | Done |
-| Wellness | 72 | retail | 100% | 100% | 100% | Done |
+| Wellness | 73 | retail | 100% | 100% | 100% | Done |
 | Stella & Chewy's | 42 | retail | 100% | 100% | 100% | Done |
 | Merrick | 59 | retail | 100% | 100% | 100% | Done |
 | Farmina | 15 | vet | 100% | 100% | 100% | Done |
+| Simply Nourish | 59 | retail | 100% | 100% | 100% | Done |
+| Natural Balance | 51 | retail | 100% | 100% | 100% | Done |
+| Instinct | 37 | retail | 100% | 100% | 100% | Done |
+| Nulo | 33 | retail | 100% | 100% | 100% | Done |
+| Canidae | 15 | retail | 100% | 100% | 100% | Done |
+| Eukanuba | 8 | retail | 100% | 100% | 100% | Done |
+| Kirkland Signature | 10 | retail | 100% | 100% | 100% | Done |
+| Rachael Ray Nutrish | 36 | retail | 100% | 100% | 100% | Done |
 
-**Total scraped:** 1,528 products (100% with ingredients, 98% GA, 96% calories)
+**Total scraped:** 1,717 products (100% with ingredients, 99% GA, 97% calories)
 
 ---
 
@@ -42,7 +51,8 @@ Each scraper file (`scrapers/{brand}.py`) contains the full parsing details. Thi
 | Brand | Site | Stack | Discovery | Key Notes |
 |-------|------|-------|-----------|-----------|
 | Royal Canin | `royalcanin.com/ca` | REST API | POST facets endpoint | All JSON, no HTML parsing. API key in header. |
-| Purina | `purina.ca` | Gatsby + Drupal | Pantheon search API | 8 products use static fallback (DentaLife, ALPO, FortiFlora, etc). 5 vet supplements missing GA/calories (by design). |
+| Purina (Vet) | `purina.ca` | Gatsby + Drupal | Pantheon search API | Vet-channel products only (PPVD, FortiFlora). 5 supplements missing GA/calories (by design). |
+| Purina (Retail) | `petsmart.ca` | Next.js RSC | Multi-brand filter URL | 7 sub-brands (Pro Plan, ONE, Beneful, Beyond, DentaLife, Beggin', Dog Chow/Puppy Chow). Single scrape via brand filter. |
 | Hill's | `hillspet.ca` | Adobe Experience Manager | Sitemap XML | US site fallback for missing data. 36 products use static fallback. Sub-brands: Prescription Diet (vet), Science Diet (retail). |
 
 ### Retail
@@ -77,8 +87,24 @@ Each scraper file (`scrapers/{brand}.py`) contains the full parsing details. Thi
 | Nutro | ~46 products. nutro.ca has nutrition as images — PetSmart has text. |
 | Wellness | ~72 products. Simple LID (~6 dry) not on PetSmart, accepted as known gap. |
 | Stella & Chewy's | ~42 products. Discovery via `/featured-brands/stella-and-chewys?page=N`. |
+| Simply Nourish | ~59 products. PetSmart private label. |
+| Natural Balance | ~51 products. Manufacturer site has ingredients as images — PetSmart only viable source. LID line relevant for digestive tracking. |
+| Instinct | ~37 products. Canadian subset. |
+| Nulo | ~33 products. 3 products with manual data (2 missing GA, 1 missing calories). |
+| Canidae | ~15 products. canidae.com uses BigCommerce + Vue.js (client-side rendered). 1 manual calorie override. |
+| Eukanuba | ~8 products. No featured-brands page — uses search. 1 manual GA/calorie override. |
 
 ### Manufacturer Sites
+
+| Brand | Site | Stack | Key Notes |
+|-------|------|-------|-----------|
+| Rachael Ray Nutrish | `nutrish.com` | WordPress SSR | Bootstrap accordions. Discovery via product sitemap. 36 products. 2 discontinued (Big Life) auto-skipped, 9 variety packs skipped. |
+
+### Grocery / Mass-Market
+
+| Brand | Site | Stack | Key Notes |
+|-------|------|-------|-----------|
+| Kirkland Signature | `costco.com` | SSR HTML | Diamond-manufactured. costco.ca is JS SPA with PDFs — US pages have identical formulas as plain text. 10 products, 1 manual (biscuits from packaging). |
 
 | Brand | Site | Stack | Key Notes |
 |-------|------|-------|-----------|

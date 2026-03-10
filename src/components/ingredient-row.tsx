@@ -200,39 +200,26 @@ export function IngredientRow({
                     <span className="text-text-tertiary">
                       (#{entry.position + 1} — {entry.formKey ? `${entry.formKey.replace(/[()]/g, "")}, ` : ""}{POSITION_LABELS[entry.positionCategory].toLowerCase()})
                     </span>
-                    {(entry.avgPoopScore != null || entry.avgItchScore != null || entry.digestiveImpact || entry.itchinessImpact) && (
+                    {(entry.avgPoopScore != null || entry.avgItchScore != null) && (
                       <span className="text-text-tertiary">
                         {" · "}
-                        {entry.avgPoopScore != null ? (
+                        {entry.avgPoopScore != null && (
                           <span className={entry.avgPoopScore >= 5 ? "text-score-critical" : entry.avgPoopScore >= 4 ? "text-score-fair" : "text-score-good"}>
                             {entry.avgPoopScore} stool
                           </span>
-                        ) : entry.digestiveImpact ? (
-                          <span className={entry.digestiveImpact === "worse" ? "text-score-critical" : entry.digestiveImpact === "better" ? "text-score-good" : ""}>
-                            stool: {entry.digestiveImpact.replace("_", " ")}
-                          </span>
-                        ) : null}
-                        {(entry.avgPoopScore != null || entry.digestiveImpact) && (entry.avgItchScore != null || entry.itchinessImpact) && " · "}
-                        {entry.avgItchScore != null ? (
+                        )}
+                        {entry.avgPoopScore != null && entry.avgItchScore != null && " · "}
+                        {entry.avgItchScore != null && (
                           <span className={entry.avgItchScore >= 4 ? "text-score-critical" : entry.avgItchScore >= 3 ? "text-score-fair" : "text-score-good"}>
                             {entry.avgItchScore} itch
                           </span>
-                        ) : entry.itchinessImpact ? (
-                          <span className={entry.itchinessImpact === "worse" ? "text-score-critical" : entry.itchinessImpact === "better" ? "text-score-good" : ""}>
-                            itch: {entry.itchinessImpact.replace("_", " ")}
-                          </span>
-                        ) : null}
+                        )}
                       </span>
                     )}
                   </div>
                 ))}
               </div>
             </div>
-          )}
-          {score.vomitCount > 0 && (
-            <p className="text-xs text-score-critical">
-              {score.vomitCount} vomit {score.vomitCount === 1 ? "event" : "events"} during exposure
-            </p>
           )}
           <div className="flex flex-wrap gap-x-4 text-[11px] text-text-tertiary">
             <span>Stool: {score.badPoopDayCount} bad / {score.goodPoopDayCount} good</span>

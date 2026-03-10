@@ -1,0 +1,1369 @@
+{
+  "brand": "Instinct",
+  "website_url": "https://www.petsmart.ca",
+  "scraped_at": "2026-03-10T02:58:43.046923+00:00",
+  "scraper_version": "0.1.0",
+  "stats": {
+    "product_count": 37,
+    "by_channel": {
+      "retail": 37
+    },
+    "by_type": {
+      "food": 25,
+      "supplement": 12
+    }
+  },
+  "products": [
+    {
+      "name": "Original All Life Stages Wet Dog Food - Grain Free",
+      "brand": "Instinct",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/instinct-original-all-life-stages-wet-dog-food---grain-free-22464.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Original",
+      "life_stage": "all",
+      "source_id": "5216606",
+      "images": [
+        "/products/instinct/instinct-food-original-all-life-stages-wet-dog-food-grain-free.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949607106",
+          "sku": "5216606"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949607205",
+          "sku": "5216608"
+        }
+      ],
+      "ingredients_raw": "Chicken, Turkey, Chicken Broth, Chicken Liver, Ground Flaxseed, Montmorillonite Clay, Dicalcium Phosphate, Egg Product,Peas, Potassium Chloride, Carrots, Salt, Minerals (Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Sodium Selenite, Cobalt Proteinate, Potassium Iodide), Vitamins (Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Choline Chloride, L-Ascorbyl-2-Polyphosphate, Menhaden Fish Oil (preserved with Mixed Tocopherols), Artichokes, Cranberries, Pumpkin, Tomato, Blueberries, Broccoli, Cabbage, Kale, Parsley",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.5,
+        "crude_fat_min": 8.5,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 78.0,
+        "omega_3_min": 0.2,
+        "omega_6_min": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1342 kcal/kg"
+    },
+    {
+      "name": "Be Natural All Life Stages Dry Dog Food - Salmon & Brown Rice",
+      "brand": "Instinct",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/instinct-be-natural-all-life-stages-dry-dog-food---salmon-and-brown-rice-88034.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Be Natural",
+      "life_stage": "all",
+      "source_id": "5363530",
+      "images": [
+        "/products/instinct/instinct-food-be-natural-all-life-stages-dry-dog-food-salmon-brown-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949652731",
+          "sku": "5363581"
+        }
+      ],
+      "ingredients_raw": "Salmon, Chicken Meal, Oatmeal, Barley, Brown Rice, Chicken Fat (preserved with Mixed Tocopherols), Fish Meal, Sorghum, Salmon Oil (preserved with Mixed Tocopherols), Natural Flavor, Carrots, Salt, Potassium Chloride, Dried Yeast, Apples, Blueberries, Cranberries, Vitamins (Vitamin E Supplement, Niacin Supplement, Thiamine Mononitrate, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, Biotin), Minerals (Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Sodium Selenite, Ethylenediamine Dihydriodide), Choline Chloride, Freeze-Dried Pollock, Yeast Culture, Dried Lactobacillus acidophilus Fermentation Product, Dried Enterococcus faecium Fermentation Product, Dried Aspergillus oryzae Fermentation Extract, Dried Trichoderma longibrachiatum Fermentation Extract, Dried Bacillus subtilis Fermentation Extract, Pumpkin Seeds, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "omega_3_min": 0.4,
+        "omega_6_min": 2.3
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3595 kcal/kg, 396 kcal/cup"
+    },
+    {
+      "name": "Be Natural All Life Stages Dry Dog Food - Lamb & Oatmeal",
+      "brand": "Instinct",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/instinct-be-natural-andtrade-all-life-stages-dry-dog-food---lamb-and-oatmeal-49204.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Be Natural",
+      "life_stage": "all",
+      "source_id": "5279997",
+      "images": [
+        "/products/instinct/instinct-food-be-natural-all-life-stages-dry-dog-food-lamb-oatmeal.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949652885",
+          "sku": "5279997"
+        }
+      ],
+      "ingredients_raw": "Lamb, Chicken Meal, Oatmeal, Barley, Sorghum, Brown Rice, Turkey Meal, Chicken Fat (preserved with Mixed Tocopherols), Millet, Fish Meal, Ground Flaxseed, Natural Flavor, Salt, Carrots, Montmorillonite Clay, Potassium Chloride, Apples, Blueberries, Cranberries, Dried Yeast, Vitamins (Vitamin E Supplement, Niacin Supplement, Thiamine Mononitrate, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, Biotin), Choline Chloride, Minerals (Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Sodium Selenite, Ethylenediamine Dihydriodide), DL Methionine, Freeze-Dried Pollock, Yeast Culture, Dried Lactobacillus acidophilus Fermentation Product, Dried Enterococcus faecium Fermentation Product, Dried Aspergillus oryzae Fermentation Extract, Dried Trichoderma longibrachiatum Fermentation Extract, Dried Bacillus subtilis Fermentation Extract, Pumpkin Seeds, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 15.5,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "omega_3_min": 0.5,
+        "omega_6_min": 2.4
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3710 kcal/kg, 408 kcal/cup"
+    },
+    {
+      "name": "Limited Ingredient Diet Adult Dry Dog Food - Grain Free, Lamb",
+      "brand": "Instinct",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/instinct-limited-ingredient-diet-adult-dry-dog-food---grain-free-lamb-43576.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Limited Ingredient Diet",
+      "life_stage": "adult",
+      "source_id": "5266161",
+      "images": [
+        "/products/instinct/instinct-food-limited-ingredient-diet-adult-dry-dog-food-grain-free-lamb.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949658436",
+          "sku": "5266161"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949658450",
+          "sku": "5266163"
+        }
+      ],
+      "ingredients_raw": "Lamb Meal, Lamb, Tapioca, Peas, Canola Oil (preserved with Mixed Tocopherols and Citric Acid), Pea Protein, Montmorillonite Clay, Natural Flavor, Salt, Potassium Chloride, Minerals (Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Sodium Selenite, Ethylenediamine Dihydriodide), DL-Methionine, Coconut Oil, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate, Niacin Supplement, Thiamine Mononitrate, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, Biotin), Choline Chloride, Freeze Dried Lamb, Pumpkinseeds, Freeze Dried Lamb Liver, Freeze Dried Lamb Spleen, Freeze Dried Lamb Heart, Freeze Dried Lamb Kidney, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 21.5,
+        "crude_fiber_max": 3.5,
+        "moisture_max": 10.0,
+        "omega_3_min": 0.8,
+        "omega_6_min": 2.1
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4315 kcal/kg, 495 kcal/cup"
+    },
+    {
+      "name": "Limited Ingredient Diet Adult Dry Dog Food - Grain Free, Salmon",
+      "brand": "Instinct",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/instinct-limited-ingredient-diet-adult-dry-dog-food---grain-free-salmon-43577.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Limited Ingredient Diet",
+      "life_stage": "adult",
+      "source_id": "5266235",
+      "images": [
+        "/products/instinct/instinct-food-limited-ingredient-diet-adult-dry-dog-food-grain-free-salmon.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949658801",
+          "sku": "5266235"
+        }
+      ],
+      "ingredients_raw": "Salmon Meal, Salmon, Peas, Tapioca, Canola Oil (preserved with Mixed Tocopherols and Citric Acid), Montmorillonite Clay, Natural Flavor, Potassium Chloride, Salt, Choline Chloride, Coconut Oil, Vitamins (L-Ascorbyl-2-Polyphosphate, Vitamin E Supplement, Niacin Supplement, Thiamine Mononitrate, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, Biotin), Minerals (Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Sodium Selenite, Ethylenediamine Dihydriodide), Freeze Dried Cod, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.0,
+        "crude_fat_min": 18.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 10.0,
+        "omega_3_min": 1.3,
+        "omega_6_min": 2.4
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4335 kcal/kg, 493 kcal/cup"
+    },
+    {
+      "name": "Raw Boost Gut Health Kibble + Freeze-Dried Raw Adult Dry Dog Food - Grain Free, Chicken",
+      "brand": "Instinct",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/instinct-raw-boost-gut-health-kibble--freeze-dried-raw-adult-dry-dog-food---grain-free-chicken-53379.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Raw Boost",
+      "life_stage": "adult",
+      "source_id": "5287096",
+      "images": [
+        "/products/instinct/instinct-food-raw-boost-gut-health-kibble-freeze-dried-raw-adult-dry-dog-food-grain-free-chick.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949659013",
+          "sku": "5287096"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Meal, Peas, Tapioca, Canola Oil (preserved with Mixed Tocopherols and Citric Acid), Freeze Dried Chicken (including Ground Chicken Bone), Dried Pumpkin, Sweet Potatoes, Egg Product, Ground Flaxseed, Natural Flavor, Freeze Dried Chicken Liver, Pumpkinseeds, Yeast extract, Salt, Freeze Dried Chicken Heart, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate, Niacin Supplement, Thiamine Mononitrate, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, Biotin), Potassium Chloride, Carrots, Apples, Cranberries, Minerals (Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Sodium Selenite, Ethylenediamine Dihydriodide), Hydrolyzed Yeast, Yeast Culture, Dried Lactobacillus acidophilus Fermentation Product, Dried Enterococcus faecium Fermentation Product, Dried Aspergillus oryzae Fermentation Extract, Dried Trichoderma longibrachiatum Fermentation Extract, Dried Bacillus subtilis Fermentation Extract, Brewers Dried Yeast, Dried Chicory Root, Choline Chloride, Yucca Schidigera Extract, Annatto Extract (color), Apple Cider Vinegar, Montmorillonite Clay, Rosemary Extract, Dried Bacillus coagulans Fermentation Product",
+      "guaranteed_analysis": {
+        "crude_protein_min": 31.0,
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 9.0,
+        "omega_3_min": 0.7,
+        "omega_6_min": 2.3
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4110 kcal/kg, 471 kcal/cup"
+    },
+    {
+      "name": "Raw Boost Kibble + Freeze-Dried Raw All Life Stage Dry Dog Food - Raw, Grain Free, Chicken",
+      "brand": "Instinct",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/instinct-raw-boost-kibble--freeze-dried-raw-all-life-stage-dry-dog-food---raw-grain-free-chicken-44222.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Raw Boost",
+      "life_stage": "all",
+      "source_id": "5362973",
+      "images": [
+        "/products/instinct/instinct-food-raw-boost-kibble-freeze-dried-raw-all-life-stage-dry-dog-food-raw-grain-free-chi.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949656326",
+          "sku": "5363584"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Meal, Peas, Chicken Fat (preserved with Mixed Tocopherols), Tapioca, Dried Yeast, Turkey Meal, Sweet Potatoes, Freeze-Dried Chicken, Ground Flaxseed, Fish Meal, Natural Flavor, Dried Tomato Pomace, Freeze-Dried Chicken Liver, Pumpkin Seeds, Salt, Freeze-Dried Chicken Heart, Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, Thiamine Mononitrate, d-Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, Biotin), Apples, Blueberries, Cranberries, Carrots, Montmorillonite Clay, Miscanthus Grass, Minerals (Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Sodium Selenite, Ethylenediamine Dihydriodide), Potassium Chloride, Choline Chloride, Taurine, Yeast Culture, Dried Lactobacillus acidophilus Fermentation Product, Dried Enterococcus faecium Fermentation Product, Dried Aspergillus oryzae Fermentation Extract, Dried Trichoderma longibrachiatum Fermentation Extract, Dried Bacillus subtilis Fermentation Extract, Salmon Oil, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 32.0,
+        "crude_fat_min": 16.5,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 9.0,
+        "omega_3_min": 0.6,
+        "omega_6_min": 2.8,
+        "taurine_min": 0.1
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3740 kcal/kg, 412 kcal/cup"
+    },
+    {
+      "name": "Raw Boost Kibble + Freeze-Dried Raw All Life Stages Dry Dog Food - Raw, Grain Free, Salmon",
+      "brand": "Instinct",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/instinct-raw-boost-kibble--freeze-dried-raw-all-life-stages-dry-dog-food---raw-grain-free-salmon-53375.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Raw Boost",
+      "life_stage": "all",
+      "source_id": "5287064",
+      "images": [
+        "/products/instinct/instinct-food-raw-boost-kibble-freeze-dried-raw-all-life-stages-dry-dog-food-raw-grain-free-sa.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949656302",
+          "sku": "5287064"
+        }
+      ],
+      "ingredients_raw": "Salmon, Menhaden Fish Meal, Peas, Canola Oil (preserved with Mixed Tocopherols), Tapioca, White Fish Meal, Dried Yeast, Sweet Potatoes, Chickpeas, Freeze-Dried Beef, Natural Flavor, Freeze-Dried Beef Liver, Freeze-Dried Beef Spleen, Pumpkin Seeds, Dried Tomato Pomace, Freeze-Dried Beef Kidney, Montmorillonite Clay, Apples, Blueberries, Carrots, Cranberries, Ground Flaxseed, Miscanthus Grass, Choline Chloride, Minerals (Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Sodium Selenite, Ethylenediamine Dihydriodide), Salt, Vitamins (Vitamin E Supplement, Niacin Supplement, Vitamin A Supplement, Thiamine Mononitrate, d-Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, Biotin), Taurine, Yeast culture, Dried Lactobacillus acidophilus fermentation product, Dried Enterococcus faecium fermentation product, Dried Aspergillus oryzae fermentation extract, Dried Trichoderma longibrachiatum fermentation extract, Dried Bacillus subtilis fermentation extract, Salmon Oil, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 31.5,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 9.0,
+        "omega_3_min": 1.1,
+        "omega_6_min": 2.0,
+        "taurine_min": 0.1
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3719 kcal/kg, 409 kcal/cup"
+    },
+    {
+      "name": "Raw Boost Kibble + Freeze-Dried Raw Small Breed All Life Stages Dry Dog Food - Chicken",
+      "brand": "Instinct",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/instinct-raw-boost-kibble--freeze-dried-raw-small-breed-all-life-stages-dry-dog-food---chicken-27849.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Raw Boost",
+      "life_stage": "all",
+      "breed_size": "Small",
+      "source_id": "5248198",
+      "images": [
+        "/products/instinct/instinct-food-raw-boost-kibble-freeze-dried-raw-small-breed-all-life-stages-dry-dog-food-chick.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949652557",
+          "sku": "5248198"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Meal, Peas, Chicken Fat (preserved with Mixed Tocopherols), Tapioca, Sweet Potatoes, Fish Meal, Turkey Meal, Freeze-Dried Chicken, Chickpeas, Dried Tomato Pomace, Natural Flavor, Ground Flaxseed, Salt, Coconut Oil, Freeze-Dried Chicken Liver, Potassium Chloride, Pumpkin Seeds, Montmorillonite Clay, Freeze-Dried Chicken Heart, Vitamins (Vitamin E Supplement, Niacin Supplement, Thiamine Mononitrate, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, Biotin), Apples, Blueberries, Carrots, Cranberries, Miscanthus Grass, Dried Yeast, Minerals (Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Sodium Selenite, Ethylenediamine Dihydriodide), Choline Chloride, Yeast Culture, Dried Lactobacillus acidophilus Fermentation Product, Dried Enterococcus faecium Fermentation Product, Dried Aspergillus oryzae Fermentation Extract, Dried Trichoderma longibrachiatum Fermentation Extract, Dried Bacillus subtilis Fermentation Extract, Salmon Oil, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 32.0,
+        "crude_fat_min": 18.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 9.0,
+        "calcium_min": 1.8,
+        "phosphorus_min": 1.1,
+        "omega_3_min": 0.5,
+        "omega_6_min": 3.3
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3800 kcal/kg, 419 kcal/cup"
+    },
+    {
+      "name": "Raw Boost Whole Grain Kibble + Freeze-Dried Raw Adult Dry Dog Food - Lamb & Oatmeal",
+      "brand": "Instinct",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/instinct-raw-boost-whole-grain-kibble--freeze-dried-raw-adult-dry-dog-food---lamb-and-oatmeal-57857.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Raw Boost",
+      "life_stage": "adult",
+      "source_id": "5299130",
+      "images": [
+        "/products/instinct/instinct-food-raw-boost-whole-grain-kibble-freeze-dried-raw-adult-dry-dog-food-lamb-oatmeal.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949652977",
+          "sku": "5299130"
+        }
+      ],
+      "ingredients_raw": "Lamb, Chicken Meal, Oatmeal, Barley, Sorghum, Brown Rice, Turkey Meal, Chicken Fat (preserved with Mixed Tocopherols), Millet, Fish Meal, Ground Flaxseed, Freeze-Dried Beef, Natural Flavor, Salt, Carrots, Freeze-Dried Beef Liver, Freeze-Dried Beef Spleen, Pumpkin Seeds, Montmorillonite Clay, Freeze-Dried Beef Kidney, Potassium Chloride, Apples, Blueberries, Cranberries, Miscanthus Grass, Vitamins (Vitamin E Supplement, Niacin Supplement, Thiamine Mononitrate, d-Calcium Pantothenate, Dried Yeast, Vitamin A Supplement, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, Biotin), Choline Chloride, Minerals (Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Sodium Selenite, Ethylenediamine Dihydriodide), DL-Methionine, Freeze-Dried Pollock, Yeast Culture, Dried Lactobacillus acidophilus Fermentation Product, Dried Enterococcus faecium Fermentation Product, Dried Aspergillus oryzae Fermentation Extract, Dried Trichoderma longibrachiatum Fermentation Extract, Dried Bacillus subtilis Fermentation Extract, Salmon Oil, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.5,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "omega_3_min": 0.5,
+        "omega_6_min": 2.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3730 kcal/kg, 411 kcal/cup"
+    },
+    {
+      "name": "Raw Boost Whole Grain Kibble + Freeze-Dried Raw All Life Stages Dry Dog Food - Chicken",
+      "brand": "Instinct",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/instinct-raw-boost-whole-grain-kibble--freeze-dried-raw-all-life-stages-dry-dog-food---chicken-57855.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Raw Boost",
+      "life_stage": "all",
+      "source_id": "5299126",
+      "images": [
+        "/products/instinct/instinct-food-raw-boost-whole-grain-kibble-freeze-dried-raw-all-life-stages-dry-dog-food-chick.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949652847",
+          "sku": "5299126"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Meal, Barley, Sorghum, Oatmeal, Brown Rice, Chicken Fat (preserved with Mixed Tocopherols), Turkey Meal, Freeze-Dried Chicken, Ground Flaxseed, Natural Flavor, Salt, Fish Meal, Freeze-Dried Chicken Liver, Pumpkin Seeds, Carrots, Potassium Chloride, Freeze-Dried Chicken Heart, Vitamins (Vitamin E Supplement, Niacin Supplement, Thiamine Mononitrate, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, Biotin), Apples, Blueberries, Cranberries, Dried Yeast, Montmorillonite Clay, Miscanthus Grass, Choline Chloride, Minerals (Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Sodium Selenite, Ethylenediamine Dihydriodide), Freeze-Dried Pollock, Yeast Culture, Dried Lactobacillus acidophilus Fermentation Product, Dried Enterococcus faecium Fermentation Product, Dried Aspergillus oryzae Fermentation Extract, Dried Trichoderma longibrachiatum Fermentation Extract, Dried Bacillus subtilis Fermentation Extract, Salmon Oil, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.5,
+        "crude_fat_min": 14.5,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "omega_3_min": 0.6,
+        "omega_6_min": 2.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3610 kcal/kg, 397 kcal/cup"
+    },
+    {
+      "name": "Raw Meals Freeze-Dried Adult Dog Dry Food - Grain Free, Alaskan Pollock",
+      "brand": "Instinct",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/instinct-raw-meals-freeze-dried-adult-dog-dry-food---grain-free-alaskan-pollock-77455.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "source_id": "5338213",
+      "images": [
+        "/products/instinct/instinct-food-raw-meals-freeze-dried-adult-dog-dry-food-grain-free-alaskan-pollock.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949614289",
+          "sku": "5338213"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949614562",
+          "sku": "5363525"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949614579",
+          "sku": "5363575"
+        }
+      ],
+      "ingredients_raw": "Pollock, Beef, Beef Liver, Beef Kidney, Beef Spleen, Beef Heart, Pumpkin Seeds, Carrots, Apples, Butternut Squash, Ground Flaxseed, Montmorillonite Clay, Salmon Oil, Ground Miscanthus Grass, Chicory Root, Vitamins (Vitamin E Supplement, Thiamine Mononitrate, Vitamin D3 Supplement), Salt, Potassium Chloride, Choline Chloride, Minerals (Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Sodium Selenite, Ethylenediamine Dihydriodide), Mixed Tocopherols (for freshness), Blueberries, Spinach, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 39.0,
+        "crude_fat_min": 33.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 6.0,
+        "omega_3_min": 1.2,
+        "omega_6_min": 2.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4814 kcal/kg, 262 kcal/cup"
+    },
+    {
+      "name": "Raw Meals Freeze-Dried Adult Dry Dog Food - Grain Free, Beef",
+      "brand": "Instinct",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/instinct-raw-meals-freeze-dried-adult-dry-dog-food---grain-free-beef-57852.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "source_id": "5298753",
+      "images": [
+        "/products/instinct/instinct-food-raw-meals-freeze-dried-adult-dry-dog-food-grain-free-beef.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949614050",
+          "sku": "5298753"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949614524",
+          "sku": "5363526"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949614531",
+          "sku": "5363564"
+        }
+      ],
+      "ingredients_raw": "Beef, Beef Liver, Beef Kidney, Beef Spleen, Pumpkin Seeds, Carrots, Apples, Sweet Potatoes, Butternut Squash, Montmorillonite Clay, Ground Flaxseed, Ground Miscanthus Grass, Salmon Oil, Vitamins (Vitamin E Supplement, Thiamine Mononitrate, Vitamin D3 Supplement), Salt, Tricalcium Phosphate, Potassium Chloride, Minerals (Zinc Proteinate, Copper Proteinate, Manganese Proteinate, Calcium Iodate), Mixed Tocopherols (for freshness), Blueberries, Spinach, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 36.0,
+        "crude_fat_min": 29.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 6.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4534 kcal/kg, 183 kcal/cup"
+    },
+    {
+      "name": "Raw Meals Freeze-Dried Adult Dry Dog Food - Grain Free, Chicken",
+      "brand": "Instinct",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/instinct-raw-meals-freeze-dried-adult-dry-dog-food---grain-free-chicken-57851.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "source_id": "5298750",
+      "images": [
+        "/products/instinct/instinct-food-raw-meals-freeze-dried-adult-dry-dog-food-grain-free-chicken.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949614029",
+          "sku": "5298750"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949614500",
+          "sku": "5363529"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949614517",
+          "sku": "5363577"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Liver, Chicken Heart, Pumpkin Seeds, Carrots, Apples, Sweet Potatoes, Butternut Squash, Montmorillonite Clay, Ground Flaxseed, Ground Miscanthus Grass, Salmon Oil, Vitamins (Vitamin E Supplement, Thiamine Mononitrate, Vitamin D3 Supplement), Potassium Chloride, Tricalcium Phosphate, Salt, Choline Chloride, Minerals (Zinc Proteinate, Copper Proteinate, Manganese Proteinate, Calcium Iodate), DL-Methionine, Mixed Tocopherols (for freshness), Blueberries, Spinach, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 35.0,
+        "crude_fat_min": 33.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 6.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4698 kcal/kg, 191 kcal/cup"
+    },
+    {
+      "name": "Raw Meals Freeze-Dried Adult Dry Dog Food - Grain Free, Lamb",
+      "brand": "Instinct",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/instinct-raw-meals-freeze-dried-adult-dry-dog-food---grain-free-lamb-61493.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "source_id": "5306039",
+      "images": [
+        "/products/instinct/instinct-food-raw-meals-freeze-dried-adult-dry-dog-food-grain-free-lamb.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949614234",
+          "sku": "5306039"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949614548",
+          "sku": "5363527"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949614555",
+          "sku": "5363576"
+        }
+      ],
+      "ingredients_raw": "Lamb, Beef Liver, Beef Kidney, Beef Spleen, Pumpkin Seeds, Carrots, Apples, Sweet Potatoes, Butternut Squash, Montmorillonite Clay, Ground Flaxseed, Ground Miscanthus Grass, Tricalcium Phosphate, Salmon Oil, Vitamins (Vitamin E Supplement, Thiamine Mononitrate, Vitamin D3 Supplement), Salt, Potassium Chloride, Minerals (Zinc Proteinate, Copper Proteinate, Manganese Proteinate, Calcium Iodate), Mixed Tocopherols (for freshness), Blueberries, Spinach, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 36.0,
+        "crude_fat_min": 29.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 6.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4735 kcal/kg, 193 kcal/cup"
+    },
+    {
+      "name": "Raw Meals Freeze-Dried Puppy Dry Dog Food - Raw, Grain Free, Chicken",
+      "brand": "Instinct",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/instinct-raw-meals-freeze-dried-puppy-dry-dog-food---raw-grain-free-chicken-61494.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "life_stage": "puppy",
+      "source_id": "5363528",
+      "images": [
+        "/products/instinct/instinct-food-raw-meals-freeze-dried-puppy-dry-dog-food-raw-grain-free-chicken.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949614586",
+          "sku": "5363528"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949614593",
+          "sku": "5363563"
+        }
+      ],
+      "ingredients_raw": "Chicken, Beef Liver, Beef Spleen, Beef Kidney, Cod, Pumpkin Seeds, Carrots, Apples, Sweet Potatoes, Butternut Squash, Montmorillonite Clay, Ground Miscanthus Grass, Ground Flaxseed, Salmon Oil, Chicory Root, Tricalcium Phosphate, Salt, Vitamins (Vitamin E Supplement, Thiamine Mononitrate, Vitamin D3 Supplement), Potassium Chloride, Minerals (Zinc Proteinate, Copper Proteinate, Manganese Proteinate, Calcium Iodate), Mixed Tocopherols (for freshness), Blueberries, Spinach, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 38.0,
+        "crude_fat_min": 29.0,
+        "crude_fiber_max": 6.0,
+        "moisture_max": 6.0,
+        "dha_min": 0.1,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "omega_3_min": 0.9,
+        "omega_6_min": 4.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4590 kcal/kg, 190 kcal/cup"
+    },
+    {
+      "name": "Raw Boost Whole Grain Kibble + Freeze-Dried Raw All Life Stage Dry Dog Food - Salmon & Rice",
+      "brand": "Instinct",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/instinct-rawboost-whole-grain-kibble--freeze-dried-raw-all-life-stage-dry-dog-food---salmon-and-rice-88044.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Raw Boost",
+      "life_stage": "all",
+      "source_id": "5363556",
+      "images": [
+        "/products/instinct/instinct-food-raw-boost-whole-grain-kibble-freeze-dried-raw-all-life-stage-dry-dog-food-salmon.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949652748",
+          "sku": "5363597"
+        }
+      ],
+      "ingredients_raw": "Salmon, Menhaden Fish Meal, Oatmeal, Barley, Brown Rice, Canola Oil (preserved with Mixed Tocopherols), Salmon Meal, Dehydrated Alfalfa Meal, Ground Flaxseed, Freeze-Dried Beef, Natural Flavor, Freeze-Dried Beef Liver, Freeze-Dried Beef Spleen, Carrots, Montmorillonite Clay, Pumpkin Seeds, Freeze-Dried Beef Kidney, Salt, Blueberries, Apples, Cranberries, Dried Yeast, Miscanthus Grass, Potassium Chloride, Vitamins (Vitamin E Supplement, Niacin Supplement, Thiamine Mononitrate, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, Biotin), Choline Chloride, Minerals (Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Sodium Selenite, Ethylenediamine Dihydriodide), L-Ascorbyl-2-Polyphosphate, Freeze-Dried Pollock, Yeast Culture, Dried Lactobacillus acidophilus Fermentation Product, Dried Enterococcus faecium Fermentation Product, Dried Aspergillus oryzae Fermentation Extract, Dried Trichoderma longibrachiatum Fermentation Extract, Dried Bacillus subtilis Fermentation Extract, Salmon Oil, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.5,
+        "crude_fat_min": 15.5,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "omega_3_min": 1.6,
+        "omega_6_min": 2.3
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3775 kcal/kg, 419 kcal/cup"
+    },
+    {
+      "name": "Raw Boost Whole Grain Kibble + Freeze-Dried Raw Light Recipe All Life Stages Dry Dog Food",
+      "brand": "Instinct",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/instinct-rawboost-whole-grain-kibble--freeze-dried-raw-light-recipe-all-life-stages-dry-dog-food-88039.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Raw Boost",
+      "life_stage": "all",
+      "source_id": "5362971",
+      "images": [
+        "/products/instinct/instinct-food-raw-boost-whole-grain-kibble-freeze-dried-raw-light-recipe-all-life-stages-dry-d.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949653080",
+          "sku": "5363595"
+        }
+      ],
+      "ingredients_raw": "Menhaden Meal, Barley, Chicken, Millet, Brown Rice, Oatmeal, Tomato Pomace, Beet Pulp, Chicken Meal, Citrus Pulp, Freeze-Dried Chicken, Natural Flavor, Carrots, Ground Flaxseed, Freeze-Dried Chicken Liver, Apples, Salt, Pumpkin Seeds, Salmon Oil, Cranberries, Blueberries, Freeze-Dried Chicken Heart, Vitamins (Vitamin E Supplement, Niacin Supplement, Thiamine Mononitrate, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, Biotin), Dried Ginger, Montmorillonite Clay, Miscanthus Grass, Minerals (Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Sodium Selenite, Ethylenediamine Dihydriodide), Choline Chloride, L-Carnitine, Turmeric, Mixed Tocopherols (for freshness), L-Ascorbyl-2-Polyphosphate, Potassium Chloride, Taurine, Yeast Culture, Dried Lactobacillus acidophilus Fermentation Product, Dried Enterococcus faecium Fermentation Product, Dried Aspergillus oryzae Fermentation Extract, Dried Trichoderma longibrachiatum Fermentation Extract, Dried Bacillus subtilis Fermentation Extract, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 7.5,
+        "crude_fiber_max": 7.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.6,
+        "phosphorus_min": 1.0,
+        "omega_3_min": 0.4,
+        "omega_6_min": 2.0,
+        "taurine_min": 0.1
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3090 kcal/kg, 340 kcal/cup"
+    },
+    {
+      "name": "Raw Boost Whole Grain Kibble + Freeze-Dried Raw Puppy Dry Dog Food - Chicken & Brown Rice",
+      "brand": "Instinct",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/instinct-rawboost-whole-grain-kibble--freeze-dried-raw-puppy-dry-dog-food---chicken-and-brown-rice-88042.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Raw Boost",
+      "life_stage": "puppy",
+      "source_id": "5362974",
+      "images": [
+        "/products/instinct/instinct-food-raw-boost-whole-grain-kibble-freeze-dried-raw-puppy-dry-dog-food-chicken-brown-r.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949653035",
+          "sku": "5363596"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Meal, Barley, Turkey Meal, Oatmeal, Brown Rice, Sorghum, Dried Yeast, Chicken Fat (preserved with Mixed Tocopherols), Ground Flaxseed, Freeze-Dried Chicken, Salmon Oil, Natural Flavor, Freeze-Dried Chicken Liver, Salt, Pumpkin Seeds, Freeze-Dried Chicken Heart, Apples, Blueberries, Cranberries, Carrots, Potassium Chloride, Montmorillonite Clay, Miscanthus Grass, Minerals (Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Sodium Selenite, Ethylenediamine Dihydriodide), Choline Chloride, Vitamins (Vitamin E Supplement, Niacin Supplement, Thiamine Mononitrate, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, Biotin), Yeast Culture, Dried Lactobacillus acidophilus Fermentation Product, Dried Enterococcus faecium Fermentation Product, Dried Aspergillus oryzae Fermentation Extract, Dried Trichoderma longibrachiatum Fermentation Extract, Dried Bacillus subtilis Fermentation Extract, Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.1,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "omega_3_min": 1.0,
+        "omega_6_min": 2.5,
+        "taurine_min": 0.1
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3730 kcal/kg, 411 kcal/cup"
+    },
+    {
+      "name": "Healthy Cravings All Life Stages Dog Food Topper - Grain Free, Beef",
+      "brand": "Instinct",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/instinct-healthy-cravings-all-life-stages-dog-food-topper---grain-free-beef-35698.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "life_stage": "all",
+      "source_id": "5248096",
+      "images": [
+        "/products/instinct/instinct-supplement-healthy-cravings-all-life-stages-dog-food-topper-grain-free-beef.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949610007",
+          "sku": "5248096"
+        }
+      ],
+      "ingredients_raw": "Beef Broth, Beef, Chicken, Beef Liver, Eggs, Ground Dried Peas, Natural Flavor, Sodium Phosphate, Guar Gum, Salt, Sodium Carbonate, DL-Methionine",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.0,
+        "crude_fat_min": 2.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "860 kcal/kg"
+    },
+    {
+      "name": "Healthy Cravings All Life Stages Dog Food Topper - Grain Free, Chicken",
+      "brand": "Instinct",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/instinct-healthy-cravings-all-life-stages-dog-food-topper---grain-free-chicken-35699.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "life_stage": "all",
+      "source_id": "5248097",
+      "images": [
+        "/products/instinct/instinct-supplement-healthy-cravings-all-life-stages-dog-food-topper-grain-free-chicken.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949610014",
+          "sku": "5248097"
+        }
+      ],
+      "ingredients_raw": "Chicken Broth, Chicken, Chicken Liver, Eggs, Ground Dried Peas, Natural Flavor, Sodium Phosphate, Guar Gum, Salt, Sodium Carbonate, DL-Methionine",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 2.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "855 kcal/kg"
+    },
+    {
+      "name": "Healthy Cravings All Life Stages Dog Food Topper - Grain Free, Lamb",
+      "brand": "Instinct",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/instinct-healthy-cravings-all-life-stages-dog-food-topper---grain-free-lamb-44227.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "life_stage": "all",
+      "source_id": "5266241",
+      "images": [
+        "/products/instinct/instinct-supplement-healthy-cravings-all-life-stages-dog-food-topper-grain-free-lamb.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949610229",
+          "sku": "5266241"
+        }
+      ],
+      "ingredients_raw": "Lamb Broth, Lamb, Beef, Beef Liver, Eggs, Ground Dried Peas, Natural Flavor, Sodium Phosphate, Guar Gum, Salt, Sodium Carbonate, DL-Methionine",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.5,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1004 kcal/kg"
+    },
+    {
+      "name": "Healthy Cravings All Life Stages Dog Food Topper - Grain Free, Salmon",
+      "brand": "Instinct",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/instinct-healthy-cravings-all-life-stages-dog-food-topper---grain-free-salmon-44226.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "life_stage": "all",
+      "source_id": "5266240",
+      "images": [
+        "/products/instinct/instinct-supplement-healthy-cravings-all-life-stages-dog-food-topper-grain-free-salmon.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949610205",
+          "sku": "5266240"
+        }
+      ],
+      "ingredients_raw": "Salmon Broth, Salmon, Chicken, Chicken Liver, Eggs, Ground Dried Peas, Natural Flavor, Sodium Phosphate, Guar Gum, Salt, Sodium Carbonate, DL-Methionine",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.5,
+        "crude_fat_min": 3.5,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "851 kcal/kg"
+    },
+    {
+      "name": "Raw Boost Mixers Freeze-Dried All Life Stages Dog Food Topper - Raw, Grain Free, Beef",
+      "brand": "Instinct",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/instinct-raw-boost-mixers-freeze-dried-all-life-stages-dog-food-topper---raw-grain-free-beef-31471.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "sub_brand": "Raw Boost",
+      "life_stage": "all",
+      "source_id": "5237678",
+      "images": [
+        "/products/instinct/instinct-supplement-raw-boost-mixers-freeze-dried-all-life-stages-dog-food-topper-raw-grain-free-bee.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949602064",
+          "sku": "5237678"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949602057",
+          "sku": "5238541"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949602040",
+          "sku": "5337401"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949600794",
+          "sku": "5363578"
+        }
+      ],
+      "ingredients_raw": "Beef, Beef Liver, Beef Kidney, Pumpkin Seeds, Beef Spleen, Carrots, Apples, Butternut Squash, Ground Flaxseed, Montmorillonite Clay, Dried Kelp, Broccoli, Mixed Tocopherols (for freshness), Apple Cider Vinegar, Salmon Oil, Rosemary Extract, Blueberries, Dried Chicory Root",
+      "guaranteed_analysis": {
+        "crude_protein_min": 38.0,
+        "crude_fat_min": 26.0,
+        "crude_fiber_max": 15.0,
+        "moisture_max": 6.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4261 kcal/kg, 248 kcal/cup"
+    },
+    {
+      "name": "Raw Boost Mixers Freeze-Dried All Life Stages Dog Food Topper - Raw, Grain Free, Chicken",
+      "brand": "Instinct",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/instinct-raw-boost-mixers-freeze-dried-all-life-stages-dog-food-topper---raw-grain-free-chicken-31470.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "sub_brand": "Raw Boost",
+      "life_stage": "all",
+      "source_id": "5237677",
+      "images": [
+        "/products/instinct/instinct-supplement-raw-boost-mixers-freeze-dried-all-life-stages-dog-food-topper-raw-grain-free-chi.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949602033",
+          "sku": "5237677"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949602026",
+          "sku": "5238540"
+        }
+      ],
+      "ingredients_raw": "Chicken (including Ground Chicken Bone), Chicken Liver, Pumpkinseeds, Chicken Heart, Carrots, Apples, Butternut Squash, Turkey Liver, Turkey Heart, Ground Flaxseed, Montmorillonite Clay, Dried Kelp, Broccoli, Mixed Tocopherols (for freshness), Apple Cider Vinegar, Salmon Oil, Rosemary Extract, Blueberries, Dried Chicory Root",
+      "guaranteed_analysis": {
+        "crude_protein_min": 36.0,
+        "crude_fat_min": 26.0,
+        "crude_fiber_max": 15.0,
+        "moisture_max": 6.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4352 kcal/kg, 244 kcal/cup"
+    },
+    {
+      "name": "Raw Boost Mixers Gut Health All Life Stages Dog Food Topper - Grain Free, Freeze-Dried",
+      "brand": "Instinct",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/instinct-raw-boost-mixers-gut-health-all-life-stages-dog-food-topper---grain-free-freeze-dried-57853.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "sub_brand": "Raw Boost",
+      "life_stage": "all",
+      "source_id": "5279933",
+      "images": [
+        "/products/instinct/instinct-supplement-raw-boost-mixers-gut-health-all-life-stages-dog-food-topper-grain-free-freeze-dr.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949601296",
+          "sku": "5279933"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949601227",
+          "sku": "5298754"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949601173",
+          "sku": "5337400"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949601166",
+          "sku": "5363579"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Liver, Pumpkin Seeds, Chicken Heart, Dried Pumpkin, Sweet Potatoes, Dried Chicory Root, Annatto (color), Apple Cider Vinegar, Mixed Tocopherols (for freshness), Rosemary Extract, Dried Bacillus coagulans Fermentation Product",
+      "guaranteed_analysis": {
+        "crude_protein_min": 36.0,
+        "crude_fat_min": 33.0,
+        "crude_fiber_max": 15.0,
+        "moisture_max": 6.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4556 kcal/kg, 292 kcal/cup"
+    },
+    {
+      "name": "Raw Boost Mixers Multivitamin Freeze-Dried Adult Dog Food Topper - Raw, Grain Free, Beef",
+      "brand": "Instinct",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/instinct-raw-boost-mixers-multivitamin-freeze-dried-adult-dog-food-topper---raw-grain-free-beef-77805.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "sub_brand": "Raw Boost",
+      "life_stage": "adult",
+      "source_id": "5338544",
+      "images": [
+        "/products/instinct/instinct-supplement-raw-boost-mixers-multivitamin-freeze-dried-adult-dog-food-topper-raw-grain-free.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949600640",
+          "sku": "5338544"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949600633",
+          "sku": "5342180"
+        }
+      ],
+      "ingredients_raw": "Beef, Beef Spleen, Beef Kidney, Pumpkinseeds, Sweet Potato, Yeast Culture, Beef Liver, Yellow Squash, Spinach, Montmorillonite Clay, Chia Seeds, Beets, Tricalcium Phosphate, Vitamins (Vitamin E Supplement, Thiamine Mononitrate, Vitamin D3 Supplement), Choline Chloride, Fish Oil, DL-Methionine, Taurine, Salt, Minerals (Zinc Proteinate, Copper Proteinate, Manganese Proteinate, Calcium Iodate), Mixed Tocopherols (for Freshness), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 36.0,
+        "crude_fat_min": 25.0,
+        "crude_fiber_max": 15.0,
+        "moisture_max": 6.0,
+        "epa_min": 0.08,
+        "dha_min": 0.05,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.9,
+        "taurine_min": 0.45
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4244 kcal/kg, 258 kcal/cup"
+    },
+    {
+      "name": "Raw Boost Mixers Skin & Coat Health All Life Stages Dog Food Topper - Raw, Grain Free",
+      "brand": "Instinct",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/instinct-raw-boost-mixers-skin-and-coat-health-all-life-stages-dog-food-topper---raw-grain-free-57854.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "sub_brand": "Raw Boost",
+      "life_stage": "all",
+      "source_id": "5287102",
+      "images": [
+        "/products/instinct/instinct-supplement-raw-boost-mixers-skin-coat-health-all-life-stages-dog-food-topper-raw-grain-free.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949601135",
+          "sku": "5287102"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949601234",
+          "sku": "5299125"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949601128",
+          "sku": "5339451"
+        }
+      ],
+      "ingredients_raw": "Chicken (including Ground Chicken Bone), Chicken Liver, Pumpkinseeds, Chicken Heart, Dried Pumpkin, Sweet Potato, Dried Chicory Root, Annatto (color), Apple Cider Vinegar, Mixed Tocopherols (for freshness), Rosemary Extract, Dried Bacillus coagulans Fermentation Product",
+      "guaranteed_analysis": {
+        "crude_protein_min": 36.0,
+        "crude_fat_min": 30.0,
+        "crude_fiber_max": 15.0,
+        "moisture_max": 6.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4555 kcal/kg, 291 kcal/cup"
+    },
+    {
+      "name": "Raw Boost Mixers Tranquility Freeze-Dried All Life Stages Dog Food Topper-Raw, Grain Free",
+      "brand": "Instinct",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/instinct-raw-boost-mixers-tranquility-freeze-dried-all-life-stages-dog-food-topper-raw-grain-free-77457.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "sub_brand": "Raw Boost",
+      "life_stage": "all",
+      "source_id": "5338214",
+      "images": [
+        "/products/instinct/instinct-supplement-raw-boost-mixers-tranquility-freeze-dried-all-life-stages-dog-food-topper-raw-gr.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949600541",
+          "sku": "5338214"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949600534",
+          "sku": "5342182"
+        }
+      ],
+      "ingredients_raw": "Turkey, Turkey Liver, Pumpkin Seeds, Cherries, Sweet Potato, Yeast Culture, Vitamins (Ascorbic Acid, Vitamin E Supplement, Thiamine Mononitrate, Vitamin D3 Supplement), Choline Chloride, Cod Liver Oil, Minerals (Zinc Proteinate, Copper Proteinate, Manganese Proteinate, Calcium Iodate), Fish Oil, L-Tryptophan, Passionflower, Valerian Root, Mixed Tocopherols (for freshness), Rosemary Extract",
+      "guaranteed_analysis": {
+        "crude_protein_min": 36.0,
+        "crude_fat_min": 20.0,
+        "crude_fiber_max": 15.0,
+        "moisture_max": 6.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4263 kcal/kg, 252 kcal/cup"
+    },
+    {
+      "name": "Raw Boost Shakers Dog Food Topper - Freeze Dried Raw, Grain Free",
+      "brand": "Instinct",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/instinct-rawboost-shakers-dog-food-topper---freeze-dried-raw-grain-free-55-oz-81816.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "sub_brand": "Raw Boost",
+      "source_id": "5350930",
+      "images": [
+        "/products/instinct/instinct-supplement-raw-boost-shakers-dog-food-topper-freeze-dried-raw-grain-free.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "5.5 OZ",
+          "upc": "0769949620242",
+          "sku": "5350930"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "5.5 OZ",
+          "upc": "0769949620228",
+          "sku": "5350932"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "5.5 OZ",
+          "upc": "0769949620259",
+          "sku": "5350934"
+        }
+      ],
+      "ingredients_raw": "Chicken (including Ground Chicken Bone), Chicken Liver, Pumpkin Seeds, Chicken Heart, Carrots, Apples, Butternut Squash, Turkey Liver, Turkey Heart, Ground Flaxseed, Montmorillonite Clay, Dried Kelp, Broccoli, Mixed Tocopherols (for freshness), Apple Cider Vinegar, Salmon Oil, Rosemary Extract, Blueberries, Dried Chicory Root",
+      "guaranteed_analysis": {
+        "crude_protein_min": 36.0,
+        "crude_fat_min": 26.0,
+        "crude_fiber_max": 15.0,
+        "moisture_max": 6.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "4353 kcal/kg"
+    },
+    {
+      "name": "Fresh Raw Meals Adult Frozen Dog Food - Cage-Free Chicken",
+      "brand": "Instinct",
+      "url": "https://www.petsmart.ca/dog/food/fresh-and-frozen-food/instinct-freshraw-meals-adult-frozen-dog-food---cage-free-chicken-91793.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "source_id": "5368611",
+      "images": [
+        "/products/instinct/instinct-food-fresh-raw-meals-adult-frozen-dog-food-cage-free-chicken.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949641018",
+          "sku": "5368611"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949641056",
+          "sku": "5368645"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Gizzards, Chicken Livers, Chicken Hearts, Carrots, Spinach, Blueberries, Apples, Sweet Potatoes, Butternut Squash, Ground Flaxseed, Ground Miscanthus Grass, Montmorillonite Clay, Salmon Oil, Vitamins (Vitamin E Supplement, Thiamine Mononitrate, Vitamin D3 Supplement), Dried Kelp, Potassium Chloride, Choline Chloride, Zinc Proteinate, Manganese Proteinate, Copper Proteinate",
+      "guaranteed_analysis": {
+        "crude_protein_min": 10.0,
+        "crude_fat_min": 6.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 75.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1234 kcal/kg, 277 kcal/cup"
+    },
+    {
+      "name": "Fresh Raw Meals Adult Frozen Dog Food - Cage-Free Turkey",
+      "brand": "Instinct",
+      "url": "https://www.petsmart.ca/dog/food/fresh-and-frozen-food/instinct-freshraw-meals-adult-frozen-dog-food---cage-free-turkey-91794.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "source_id": "5368612",
+      "images": [
+        "/products/instinct/instinct-food-fresh-raw-meals-adult-frozen-dog-food-cage-free-turkey.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949641025",
+          "sku": "5368612"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949641063",
+          "sku": "5368646"
+        }
+      ],
+      "ingredients_raw": "Turkey, Turkey Gizzards, Turkey Livers, Turkey Hearts, Carrots, Spinach, Blueberries, Apples, Sweet Potatoes, Butternut Squash, Ground Flaxseed, Ground Miscanthus Grass, Montmorillonite Clay, Tricalcium Phosphate, Salmon Oil, Vitamins (Vitamin E Supplement, Thiamine Mononitrate, Vitamin D3 Supplement), Dried Kelp, Potassium Chloride, Choline Chloride, Zinc Proteinate, Manganese Proteinate, Copper Proteinate",
+      "guaranteed_analysis": {
+        "crude_protein_min": 11.0,
+        "crude_fat_min": 7.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 72.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1316 kcal/kg, 286 kcal/cup"
+    },
+    {
+      "name": "Fresh Raw Meals Adult Frozen Dog Food - Grass-Fed Beef",
+      "brand": "Instinct",
+      "url": "https://www.petsmart.ca/dog/food/fresh-and-frozen-food/instinct-freshraw-meals-adult-frozen-dog-food---grass-fed-beef-91792.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "source_id": "5368610",
+      "images": [
+        "/products/instinct/instinct-food-fresh-raw-meals-adult-frozen-dog-food-grass-fed-beef.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949641001",
+          "sku": "5368610"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949641049",
+          "sku": "5368614"
+        }
+      ],
+      "ingredients_raw": "Beef, Beef Liver, Beef Kidney, Carrots, Spinach, Blueberries, Apples, Sweet Potatoes, Butternut Squash, Ground Flaxseed, Ground Miscanthus Grass, Montmorillonite Clay, Tricalcium Phosphate, Salmon Oil, Dried Kelp, Vitamins (Vitamin E Supplement, Thiamine Mononitrate, Vitamin D3 Supplement), Zinc Proteinate, Potassium Chloride, Manganese Proteinate",
+      "guaranteed_analysis": {
+        "crude_protein_min": 11.0,
+        "crude_fat_min": 9.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 72.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1480 kcal/kg, 352 kcal/cup"
+    },
+    {
+      "name": "Fresh Raw Meals Adult Frozen Dog Food - Grass-Fed Lamb",
+      "brand": "Instinct",
+      "url": "https://www.petsmart.ca/dog/food/fresh-and-frozen-food/instinct-freshraw-meals-adult-frozen-dog-food---grass-fed-lamb-91795.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "source_id": "5368613",
+      "images": [
+        "/products/instinct/instinct-food-fresh-raw-meals-adult-frozen-dog-food-grass-fed-lamb.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949641032",
+          "sku": "5368613"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949641070",
+          "sku": "5368647"
+        }
+      ],
+      "ingredients_raw": "Lamb, Beef Liver, Beef Heart, Beef Kidney, Carrots, Spinach, Blueberries, Apples, Sweet Potatoes, Butternut Squash, Ground Flaxseed, Ground Miscanthus Grass, Montmorillonite Clay, Tricalcium Phosphate, Salmon Oil, Dried Kelp, Vitamins (Vitamin E Supplement, Thiamine Mononitrate, Vitamin D3 Supplement), Zinc Proteinate, Manganese Proteinate",
+      "guaranteed_analysis": {
+        "crude_protein_min": 11.0,
+        "crude_fat_min": 8.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 73.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1368 kcal/kg, 328 kcal/cup"
+    },
+    {
+      "name": "Raw Bites Adult Frozen Dog Food - Raw, Grain Free, Beef",
+      "brand": "Instinct",
+      "url": "https://www.petsmart.ca/dog/food/fresh-and-frozen-food/instinct-raw-bites-adult-frozen-dog-food---raw-grain-free-beef-68701.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "source_id": "5280016",
+      "images": [
+        "/products/instinct/instinct-food-raw-bites-adult-frozen-dog-food-raw-grain-free-beef.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949630029",
+          "sku": "5280016"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949630012",
+          "sku": "5339530"
+        }
+      ],
+      "ingredients_raw": "Beef, Beef Liver, Beef Kidney, Beef Spleen, Carrots, Apples, Sweet Potatoes, Butternut Squash, Ground Miscanthus Grass, Montmorillonite Clay, Ground Flaxseed, Salmon Oil, Vitamins (Vitamin E Supplement, Thiamine Mononitrate, Vitamin D3 Supplement), Salt, Tricalcium Phosphate, Potassium Chloride, Minerals (Zinc Proteinate, Copper Proteinate, Manganese Proteinate, Calcium Iodate), Blueberries, Spinach",
+      "guaranteed_analysis": {
+        "crude_protein_min": 12.0,
+        "crude_fat_min": 8.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 70.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1523 kcal/kg, 183 kcal/cup"
+    },
+    {
+      "name": "Raw Boost Mixers Skin & Coat Health All Life Stages Frozen Dog Food Topper - Grain Free",
+      "brand": "Instinct",
+      "url": "https://www.petsmart.ca/dog/food/fresh-and-frozen-food/instinct-raw-boost-mixers-skin-and-coat-health-all-life-stages-frozen-dog-food-topper---grain-free-61507.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "sub_brand": "Raw Boost",
+      "life_stage": "all",
+      "source_id": "5306030",
+      "images": [
+        "/products/instinct/instinct-supplement-raw-boost-mixers-skin-coat-health-all-life-stages-frozen-dog-food-topper-grain-f.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0769949632016",
+          "sku": "5306030"
+        }
+      ],
+      "ingredients_raw": "Chicken (including Ground Chicken Bone), Chicken Liver, Pumpkinseeds, Chicken Heart, Cod, Ground Flaxseed, Beet Juice (color), Salmon Oil, Ground Chia Seed, Cranberries, Dried Kelp, Mixed Tocopherols (for freshness), Rosemary Extract",
+      "guaranteed_analysis": {
+        "omega_3_min": 0.6,
+        "crude_protein_min": 15.0,
+        "crude_fat_min": 12.5,
+        "crude_fiber_max": 5.5,
+        "moisture_max": 62.0,
+        "omega_6_min": 3.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1958 kcal/kg, 245 kcal/cup"
+    },
+    {
+      "name": "Raw Patties Adult Frozen Dog Food - Raw, Grain Free",
+      "brand": "Instinct",
+      "url": "https://www.petsmart.ca/dog/food/fresh-and-frozen-food/instinct-raw-patties-adult-frozen-dog-food---raw-grain-free-51805.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "source_id": "5280025",
+      "images": [
+        "/products/instinct/instinct-food-raw-patties-adult-frozen-dog-food-raw-grain-free.jpg"
+      ],
+      "ingredients_raw": "Chicken (including Ground Chicken Bone), Chicken Liver, Chicken Heart, Carrots, Apples,Sweet Potatoes, Butternut Squash, Ground Miscanthus Grass, Montmorillonite Clay, Ground Flaxseed, Salmon Oil, Vitamins (Vitamin E Supplement, Thiamine Mononitrate, Vitamin D3 Supplement), Potassium Chloride, Tricalcium Phosphate, Salt, Choline Chloride, Minerals (Zinc Proteinate, Copper Proteinate, Manganese Proteinate, Calcium Iodate), DL-Methionine, Blueberries, Spinach",
+      "guaranteed_analysis": {
+        "crude_protein_min": 12.0,
+        "crude_fat_min": 9.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 70.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1596 kcal/kg"
+    }
+  ]
+}

@@ -1,0 +1,282 @@
+{
+  "brand": "Kirkland Signature",
+  "website_url": "https://www.costco.ca",
+  "scraped_at": "2026-03-10T13:39:46.508223+00:00",
+  "scraper_version": "0.1.0",
+  "stats": {
+    "product_count": 10,
+    "by_channel": {
+      "retail": 10
+    },
+    "by_type": {
+      "food": 8,
+      "treat": 2
+    }
+  },
+  "products": [
+    {
+      "name": "Kirkland Signature Chicken, Rice & Vegetables Adult Dog Food",
+      "brand": "Kirkland Signature",
+      "url": "https://www.costco.ca/kirkland-signature-chicken%2c-rice-%2526-vegetables-adult-dog-food%2c-18.14-kg-40-lb..product.100380650.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "images": [
+        "/products/kirkland-signature/kirkland-signature-food-kirkland-signature-chicken-rice-vegetables-adult-dog-food.jpg"
+      ],
+      "ingredients_raw": "Chicken, chicken meal, whole grain brown rice, cracked pearled barley, chicken fat (preserved with mixed tocopherols), egg product, dried beet pulp, potatoes, fish meal, flaxseed, natural flavor, dried yeast, millet, potassium chloride, salt, choline chloride, carrots, peas, dried kelp, apples, cranberries, rosemary extract, parsley flakes, dried chicory root, glucosamine hydrochloride, dried Lactobacillus plantarum fermentation product, dried Bacillus subtilis fermentation product, dried Lactobacillus acidophilus fermentation product, dried Enterococcus faecium fermentation product, dried Bifidobacterium animalis fermentation product, vitamin E supplement, iron proteinate, zinc proteinate, copper proteinate, ferrous sulfate, zinc sulfate, manganese sulfate, copper sulfate, potassium iodide, thiamine mononitrate, manganese proteinate, chondroitin sulfate, ascorbic acid, vitamin A supplement, biotin, niacin, calcium pantothenate, sodium selenite, pyridoxine hydrochloride, vitamin B12 supplement, riboflavin, vitamin D supplement, folic acid",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8,
+        "omega_6_min": 2.5,
+        "omega_3_min": 0.4,
+        "glucosamine_min": 300.0,
+        "chondroitin_min": 100.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3754 kcal/kg, 393 kcal/cup"
+    },
+    {
+      "name": "Kirkland Signature Lamb, Rice & Vegetables Adult Dog Food",
+      "brand": "Kirkland Signature",
+      "url": "https://www.costco.ca/kirkland-signature-lamb%2c-rice-%2526-vegetables-adult-dog-food%2c-18.14-kg-40-lb..product.100380667.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "images": [
+        "/products/kirkland-signature/kirkland-signature-food-kirkland-signature-lamb-rice-vegetables-adult-dog-food.jpg"
+      ],
+      "ingredients_raw": "Lamb, lamb meal, whole grain brown rice, ground white rice, rice bran, egg product, peas, pea flour, dried yeast, chicken fat (preserved with mixed tocopherols), cracked pearled barley, dried beet pulp, flaxseed, potatoes, natural flavor, fish meal, millet, potassium chloride, salt, DL-Methionine, choline chloride, taurine, carrots, dried kelp, apples, cranberries, rosemary extract, parsley flakes, dried chicory root, glucosamine hydrochloride, dried Lactobacillus plantarum fermentation product, dried Bacillus subtilis fermentation product, dried Lactobacillus acidophilus fermentation product, dried Enterococcus faecium fermentation product, dried Bifidobacterium animalis fermentation product, vitamin E supplement, iron proteinate, zinc proteinate, copper proteinate, ferrous sulfate, zinc sulfate, manganese sulfate, copper sulfate, potassium iodide, thiamine mononitrate, manganese proteinate, chondroitin sulfate, ascorbic acid, vitamin A supplement, biotin, niacin, calcium pantothenate, sodium selenite, pyridoxine hydrochloride, vitamin B12 supplement, riboflavin, vitamin D3 supplement, folic acid",
+      "guaranteed_analysis": {
+        "crude_protein_min": 23.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "taurine_min": 0.12,
+        "omega_6_min": 2.2,
+        "omega_3_min": 0.4,
+        "glucosamine_min": 300.0,
+        "chondroitin_min": 100.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3653 kcal/kg, 373 kcal/cup"
+    },
+    {
+      "name": "Kirkland Signature Chicken, Rice and Egg Mature Dog Food",
+      "brand": "Kirkland Signature",
+      "url": "https://www.costco.ca/kirkland-signature-chicken%2c-rice-and-egg-mature-dog-food%2c-18.1-kg-40-lb..product.100466284.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "life_stage": "senior",
+      "images": [
+        "/products/kirkland-signature/kirkland-signature-food-kirkland-signature-chicken-rice-and-egg-mature-dog-food.jpg"
+      ],
+      "ingredients_raw": "Chicken, chicken meal, whole grain brown rice, egg product, oatmeal, cracked pearled barley, ground white rice, chicken fat (preserved with mixed tocopherols), dried beet pulp, potatoes, natural chicken flavor, flaxseed, millet, fish meal, potassium chloride, choline chloride, glucosamine hydrochloride, chondroitin sulfate, carrots, peas, dried kelp, apples, cranberries, rosemary extract, parsley flakes, dried chicory root, dried Lactobacillus plantarum fermentation product, dried Bacillus subtilis fermentation product, dried Lactobacillus acidophilus fermentation product, dried Enterococcus faecium fermentation product, dried Bifidobacterium animalis fermentation product, vitamin E supplement, iron proteinate, zinc proteinate, copper proteinate, ferrous sulfate, zinc sulfate, manganese sulfate, copper sulfate, potassium iodide, thiamine mononitrate, manganese proteinate, ascorbic acid, vitamin A supplement, L-Carnitine, biotin, niacin, calcium pantothenate, sodium selenite, pyridoxine hydrochloride, vitamin B 12 supplement, riboflavin, vitamin D3 supplement, folic acid",
+      "guaranteed_analysis": {
+        "crude_protein_min": 27.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 10.0,
+        "calcium_min": 0.9,
+        "phosphorus_min": 0.7,
+        "l_carnitine_min": 30.0,
+        "omega_6_min": 2.2,
+        "omega_3_min": 0.4,
+        "glucosamine_min": 750.0,
+        "chondroitin_min": 250.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3529 kcal/kg, 330 kcal/cup"
+    },
+    {
+      "name": "Kirkland Signature Healthy Weight Dog Food",
+      "brand": "Kirkland Signature",
+      "url": "https://www.costco.ca/kirkland-signature-healthy-weight-dog-food%2c-18.14-kg-40-lb..product.100380664.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "images": [
+        "/products/kirkland-signature/kirkland-signature-food-kirkland-signature-healthy-weight-dog-food.jpg"
+      ],
+      "ingredients_raw": "Chicken meal, brown rice, peas, cracked pearled barley, millet, ground Miscanthus grass, oatmeal, chicken, rice bran, potatoes, dried beet pulp, chicken fat (preserved with mixed tocopherols), natural flavor, flaxseed, fish meal, egg product, potassium chloride, DL-Methionine, choline chloride, taurine, glucosamine hydrochloride, dried chicory root, chondroitin sulfate, L-Carnitine, dried Lactobacillus plantarum fermentation product, dried Bacillus subtilis fermentation product, dried Lactobacillus acidophilus fermentation product, dried Enterococcus faecium fermentation product, dried Bifidobacterium animalis fermentation product, carrots, dried kelp, apples, cranberries, rosemary extract, parsley flakes, vitamin E supplement, iron proteinate, zinc proteinate, copper proteinate, ferrous sulfate, zinc sulfate, manganese sulfate, copper sulfate, potassium iodide, thiamine mononitrate, manganese proteinate, ascorbic acid, vitamin A supplement, biotin, niacin, calcium pantothenate, sodium selenite, pyridoxine hydrochloride, vitamin B12 supplement, riboflavin, vitamin D3 supplement, folic acid",
+      "guaranteed_analysis": {
+        "crude_protein_min": 20.0,
+        "crude_fat_min": 6.0,
+        "crude_fiber_max": 13.0,
+        "moisture_max": 10.0,
+        "taurine_min": 0.12,
+        "l_carnitine_min": 30.0,
+        "omega_6_min": 1.7,
+        "omega_3_min": 0.3,
+        "glucosamine_min": 750.0,
+        "chondroitin_min": 250.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3090 kcal/kg, 275 kcal/cup"
+    },
+    {
+      "name": "Kirkland Signature Nature's Domain Salmon & Sweet Potato Dog Food",
+      "brand": "Kirkland Signature",
+      "url": "https://www.costco.ca/kirkland-signature-nature%e2%80%99s-domain-salmon-%2526-sweet-potato-dog-food%2c-15.87-kg-35-lb.product.100380665.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "life_stage": "all",
+      "images": [
+        "/products/kirkland-signature/kirkland-signature-food-kirkland-signature-nature-s-domain-salmon-sweet-potato-dog-food.jpg"
+      ],
+      "sub_brand": "Nature's Domain",
+      "ingredients_raw": "Salmon, salmon meal, sweet potatoes, potatoes, peas, fish meal, canola oil (preserved with mixed tocopherols), pea flour, dried beet pulp, natural flavor, flaxseed, salmon oil (a source of DHA), salt, potassium chloride, DL-Methionine, dicalcium phosphate, choline chloride, taurine, blueberries, raspberries, tomatoes, dried chicory root, yucca schidigera extract, dried Lactobacillus plantarum fermentation product, dried Bacillus subtilis fermentation product, dried Lactobacillus acidophilus fermentation product, dried Enterococcus faecium fermentation product, dried Bifidobacterium animalis fermentation product, vitamin E supplement, iron proteinate, zinc proteinate, copper proteinate, ferrous sulfate, zinc sulfate, manganese sulfate, copper sulfate, potassium iodide, thiamine mononitrate, manganese proteinate, ascorbic acid (preservative), vitamin A supplement, biotin, niacin, calcium pantothenate, sodium selenite, pyridoxine hydrochloride, vitamin B12 supplement, riboflavin, vitamin D3 supplement, folic acid",
+      "guaranteed_analysis": {
+        "crude_protein_min": 27.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.05,
+        "taurine_min": 0.12,
+        "omega_6_min": 2.6,
+        "omega_3_min": 0.4
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3580 kcal/kg, 406 kcal/cup"
+    },
+    {
+      "name": "Kirkland Signature Nature's Domain Turkey & Ancient Grains Dog Food",
+      "brand": "Kirkland Signature",
+      "url": "https://www.costco.ca/kirkland-signature-nature%e2%80%99s-domain-turkey-%2526-ancient-grains-formula%2c-food-for-dogs%2c-15.87-kg-35-lb..product.4000175612.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "life_stage": "all",
+      "images": [
+        "/products/kirkland-signature/kirkland-signature-food-kirkland-signature-nature-s-domain-turkey-ancient-grains-dog-food.jpg"
+      ],
+      "sub_brand": "Nature's Domain",
+      "ingredients_raw": "Turkey, turkey meal, grain sorghum, cracked pearled barley, brown rice, egg product, dried yeast, canola oil (preserved with mixed tocopherols), quinoa, chia seed, dried beet pulp, natural flavor, flaxseed, salmon oil (a source of DHA), dicalcium phosphate, salt, potassium chloride, DL-Methionine, choline chloride, taurine, dried chicory root, yucca schidigera extract, L-Carnitine, dried Lactobacillus plantarum fermentation product, dried Bacillus subtilis fermentation product, dried Lactobacillus acidophilus fermentation product, dried Enterococcus faecium fermentation product, dried Bifidobacterium animalis fermentation product, vitamin E supplement, iron proteinate, zinc proteinate, copper proteinate, ferrous sulfate, zinc sulfate, copper sulfate, manganese sulfate, potassium iodide, thiamine mononitrate, manganese proteinate, ascorbic acid (preservative), vitamin A supplement, biotin, niacin, calcium pantothenate, sodium selenite, pyridoxine hydrochloride, vitamin B12 supplement, riboflavin, vitamin D3 supplement, folic acid",
+      "guaranteed_analysis": {
+        "crude_protein_min": 27.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.05,
+        "taurine_min": 0.12,
+        "l_carnitine_min": 100.0,
+        "omega_6_min": 2.6,
+        "omega_3_min": 0.4
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3650 kcal/kg, 414 kcal/cup"
+    },
+    {
+      "name": "Kirkland Signature Nature's Domain Puppy Chicken & Pea Dog Food",
+      "brand": "Kirkland Signature",
+      "url": "https://www.costco.ca/kirkland-signature-nature%e2%80%99s-domain-puppy-chicken-%2526-pea-formula%2c-food-for-dogs%2c-9.07-kg-19.9-lb..product.4000135745.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "life_stage": "puppy",
+      "images": [
+        "/products/kirkland-signature/kirkland-signature-food-kirkland-signature-nature-s-domain-puppy-chicken-pea-dog-food.jpg"
+      ],
+      "sub_brand": "Nature's Domain",
+      "ingredients_raw": "Chicken, chicken meal, peas, garbanzo beans, lentils, fava beans, sweet potatoes, chicken fat (preserved with mixed tocopherols), egg product, tomato pomace, natural flavor, flaxseed, salmon oil (a source of DHA), dicalcium phosphate, salt, DL-Methionine, choline chloride, taurine, dried chicory root, tomatoes, blueberries, raspberries, yucca schidigera extract, dried Lactobacillus plantarum fermentation product, dried Bacillus subtilis fermentation product, dried Lactobacillus acidophilus fermentation product, dried Enterococcus faecium fermentation product, dried Bifidobacterium animalis fermentation product, vitamin E supplement, iron proteinate, zinc proteinate, copper proteinate, ferrous sulfate, zinc sulfate, manganese sulfate, copper sulfate, potassium iodide, thiamine mononitrate, manganese proteinate, ascorbic acid, vitamin A supplement, biotin, niacin, calcium pantothenate, sodium selenite, pyridoxine hydrochloride, vitamin B12 supplement, riboflavin, vitamin D3 supplement, folic acid",
+      "guaranteed_analysis": {
+        "crude_protein_min": 27.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "dha_min": 0.05,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "taurine_min": 0.12,
+        "omega_6_min": 2.8,
+        "omega_3_min": 0.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3650 kcal/kg, 414 kcal/cup"
+    },
+    {
+      "name": "Kirkland Signature Nature's Domain Small Breed Salmon & Lentils Dog Food",
+      "brand": "Kirkland Signature",
+      "url": "https://www.costco.ca/kirkland-signature-nature%e2%80%99s-domain-small-dog-breed-salmon-%2526-lentils-formula%2c-9.07-kg-19.9-lb..product.4000135778.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "images": [
+        "/products/kirkland-signature/kirkland-signature-food-kirkland-signature-nature-s-domain-small-breed-salmon-lentils-dog-food.jpg"
+      ],
+      "sub_brand": "Nature's Domain",
+      "ingredients_raw": "Salmon, salmon meal, lentils, chickpeas, peas, pea flour, canola oil (preserved with mixed tocopherols), fava beans, sweet potatoes, tomato pomace, natural flavor, flaxseed, dicalcium phosphate, salmon oil, ginger, salt, DL-Methionine, choline chloride, taurine, blueberries, raspberries, tomatoes, dried chicory root, yucca schidigera extract, dried Lactobacillus plantarum fermentation product, dried Bacillus subtilis fermentation product, dried Lactobacillus acidophilus fermentation product, dried Enterococcus faecium fermentation product, dried Bifidobacterium animalis fermentation product, vitamin E supplement, iron proteinate, zinc proteinate, copper proteinate, ferrous sulfate, zinc sulfate, manganese sulfate, copper sulfate, potassium iodide, thiamine mononitrate, manganese proteinate, ascorbic acid (preservative), vitamin A supplement, biotin, niacin, calcium pantothenate, sodium selenite, pyridoxine hydrochloride, vitamin B12 supplement, riboflavin, vitamin D3 supplement, folic acid",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.05,
+        "taurine_min": 0.12,
+        "omega_6_min": 2.5,
+        "omega_3_min": 0.4
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3640 kcal/kg, 413 kcal/cup"
+    },
+    {
+      "name": "Kirkland Signature Dental Chews Dog Treats",
+      "brand": "Kirkland Signature",
+      "url": "https://www.costco.ca/kirkland-signature-dental-chews-dog-treats%2c-72-count-1.9-kg.product.100504435.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "images": [
+        "/products/kirkland-signature/kirkland-signature-treat-kirkland-signature-dental-chews-dog-treats.jpg"
+      ],
+      "ingredients_raw": "Potato Starch, Soy Protein Isolate, Glycerin, Gelatin, Pea Protein, Natural Flavor, Dried Chicken, Lecithin, Fruit Juice Color, Calcium Carbonate, Parsley, Choline Chloride, Thiamine Mononitrate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Folic Acid, Vitamin A Supplement, Vitamin E Supplement, Biotin, Inositol, Ferrous Carbonate, Magnesium Oxide, Dicalcium Phosphate, Potassium Chloride, Sodium Selenite, Calcium Chloride, Zinc Oxide, Copper Oxide, Manganous Oxide, Sodium Molybdate, Tumeric Color",
+      "guaranteed_analysis": {
+        "crude_protein_min": 33.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 8.0,
+        "moisture_max": 15.0,
+        "calcium_min": 0.25,
+        "calcium_max": 0.5,
+        "phosphorus_min": 0.15
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3235 kcal/kg, 91 kcal/chew"
+    },
+    {
+      "name": "Kirkland Signature Chicken Meal & Rice Formula Dog Biscuits",
+      "brand": "Kirkland Signature",
+      "url": "https://www.costco.ca/kirkland-signature-chicken-meal-%2526-rice-formula-dog-biscuits.product.100479891.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "life_stage": "adult",
+      "images": [
+        "/products/kirkland-signature/kirkland-signature-treat-kirkland-signature-chicken-meal-rice-formula-dog-biscuits.jpg"
+      ],
+      "ingredients_raw": "Whole Wheat Flour, Chicken Meal, Brewers Rice, Brewers Dried Yeast, Beet Pulp, Chicken Fat, Vitamin Mix (Pea Fibre, Calcium Carbonate, Vitamin E Supplement, Niacin Supplement, D-Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Thiamine Mononitrate, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid), Ground Limestone, Potassium Chloride, Choline Chloride, DL-Methionine, Mineral Mix (Ferrous Sulfate, Zinc Proteinate, Zinc Sulfate, Iron Proteinate, Copper Sulfate, Potassium Chloride, Sodium Selenite, Copper Proteinate, Manganese Sulfate, Manganese Proteinate, Mineral Oil, Calcium Iodate), Glucosamine Hydrochloride, Chondroitin Sulfate",
+      "guaranteed_analysis": {
+        "crude_protein_min": 23.0,
+        "crude_fat_min": 4.5,
+        "crude_fiber_max": 3.5,
+        "moisture_max": 11.0,
+        "calcium_min": 1.3,
+        "phosphorus_min": 1.0,
+        "glucosamine_min": 375.0,
+        "chondroitin_min": 35.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3201 kcal/kg, 104 kcal/treat"
+    }
+  ]
+}

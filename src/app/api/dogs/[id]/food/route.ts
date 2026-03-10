@@ -104,8 +104,6 @@ export async function GET(
             id: sc.id,
             poopQuality: sc.poopQuality,
             itchSeverity: sc.itchSeverity,
-            digestiveImpact: sc.digestiveImpact,
-            itchinessImpact: sc.itchinessImpact,
             notes: sc.notes,
           }
         }
