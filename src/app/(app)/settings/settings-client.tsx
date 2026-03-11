@@ -34,8 +34,8 @@ export function SettingsClient({ dogs }: SettingsClientProps): React.ReactElemen
         ) : (
           <div className="mt-4 space-y-3">
             {dogs.map((dog) => (
-              <Card key={dog.id}>
-                <CardContent className="flex items-start justify-between py-5 px-6">
+              <Card key={dog.id} className="py-0 gap-0">
+                <CardContent className="flex items-start justify-between py-4 px-5">
                   <div className="space-y-1">
                     <h3 className="text-lg font-semibold text-foreground">
                       {dog.name}
@@ -44,14 +44,11 @@ export function SettingsClient({ dogs }: SettingsClientProps): React.ReactElemen
                       {[
                         dog.breed,
                         dog.weightKg ? `${dog.weightKg} kg` : null,
-                        dog.location,
+                        dog.environmentEnabled ? "Pollen tracking: On" : null,
                       ]
                         .filter(Boolean)
                         .join(" · ") || "No details"}
                     </p>
-                    {dog.notes && (
-                      <p className="text-sm text-muted-foreground">{dog.notes}</p>
-                    )}
                   </div>
                   <div className="flex gap-2 shrink-0 ml-4">
                     <Button

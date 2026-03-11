@@ -27,12 +27,24 @@ export interface ScoringConstants {
   }
   badDayMultiplier: number
   goodDayMultiplier: number
+  /** Pollen discount applied to bad itch days at high/very high level (3-4). */
+  pollenDiscountHigh: number
+  /** Pollen discount applied to bad itch days at moderate level (2). */
+  pollenDiscountModerate: number
+  /** Minimum days with pollen data to compute seasonal confounding flag. */
+  seasonalConfoundingMinDays: number
+  /** Fraction of bad itch days during high pollen to flag confounding (0-1). */
+  seasonalConfoundingThreshold: number
 }
 
 export const DEFAULT_SCORING_CONSTANTS: ScoringConstants = {
   positionWeights: { lambda: 0.15 },
   badDayMultiplier: 3.0,
   goodDayMultiplier: 1.0,
+  pollenDiscountHigh: 0.4,
+  pollenDiscountModerate: 0.7,
+  seasonalConfoundingMinDays: 14,
+  seasonalConfoundingThreshold: 0.6,
 }
 
 // ---------------------------------------------------------------------------
@@ -78,7 +90,8 @@ export interface DayOutcome {
   poopScore: number | null
   itchScore: number | null
   scorecardPoopFallback: number | null
-  pollenIndex: number | null
+  /** 3-day rolling max of max(pollenLevel, sporeLevel ?? 0). Null when no pollen data. */
+  effectivePollenLevel: number | null
   hasAccidentalExposure: boolean
 }
 
@@ -121,6 +134,7 @@ export interface IngredientScore {
   isAllergenicallyRelevant: boolean
   isSplit: boolean
   distinctProductCount: number
+  itchSeasonallyConfounded: boolean
   crossReactivityGroup?: string
   crossReactivityWarning?: string
   /** When GI-merged from multiple forms, shows per-form scores. */
@@ -213,7 +227,8 @@ export interface RawScorecard {
 
 export interface RawPollenLog {
   date: string
-  pollenIndex: number | null
+  pollenLevel: number
+  sporeLevel: number | null
 }
 
 /** A backfill entry — aggregate historical record with duration + scorecard. */

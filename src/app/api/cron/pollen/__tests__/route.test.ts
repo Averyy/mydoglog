@@ -3,15 +3,34 @@ import { describe, it, expect, vi, beforeEach } from "vitest"
 // Mock the db module before importing the route
 vi.mock("@/lib/db", () => ({
   db: {
-    selectDistinct: vi.fn(() => ({
+    select: vi.fn(() => ({
       from: vi.fn(() => ({
-        where: vi.fn(() => Promise.resolve([])),
+        where: vi.fn(() => ({
+          limit: vi.fn(() => Promise.resolve([])),
+          orderBy: vi.fn(() => ({
+            limit: vi.fn(() => Promise.resolve([])),
+          })),
+        })),
       })),
     })),
+    execute: vi.fn(() => Promise.resolve()),
   },
-  dogs: { location: "location" },
-  pollenLogs: { id: "id", location: "location", date: "date" },
+  dogs: {
+    id: "id",
+    environmentEnabled: "environment_enabled",
+  },
+  dailyPollen: {
+    id: "id",
+    provider: "provider",
+    location: "location",
+    date: "date",
+    source: "source",
+  },
 }))
+
+// Mock fetch
+const mockFetch = vi.fn()
+vi.stubGlobal("fetch", mockFetch)
 
 // Import after mocks
 const { POST } = await import("../route")
@@ -19,11 +38,11 @@ const { POST } = await import("../route")
 describe("POST /api/cron/pollen", () => {
   beforeEach(() => {
     vi.unstubAllEnvs()
+    mockFetch.mockReset()
   })
 
   it("rejects requests without CRON_SECRET", async () => {
     vi.stubEnv("CRON_SECRET", "test-secret")
-    vi.stubEnv("AMBEE_API_KEY", "test-key")
 
     const request = new Request("http://localhost/api/cron/pollen", {
       method: "POST",
@@ -38,7 +57,6 @@ describe("POST /api/cron/pollen", () => {
 
   it("rejects requests with wrong CRON_SECRET", async () => {
     vi.stubEnv("CRON_SECRET", "test-secret")
-    vi.stubEnv("AMBEE_API_KEY", "test-key")
 
     const request = new Request("http://localhost/api/cron/pollen", {
       method: "POST",
@@ -51,7 +69,6 @@ describe("POST /api/cron/pollen", () => {
 
   it("returns 500 when CRON_SECRET not configured", async () => {
     vi.stubEnv("CRON_SECRET", "")
-    // Unset by making it empty string — route checks for falsy
 
     const request = new Request("http://localhost/api/cron/pollen", {
       method: "POST",
@@ -62,9 +79,8 @@ describe("POST /api/cron/pollen", () => {
     expect(response.status).toBe(500)
   })
 
-  it("accepts requests with correct CRON_SECRET", async () => {
+  it("skips when no dogs have pollen tracking enabled", async () => {
     vi.stubEnv("CRON_SECRET", "test-secret")
-    vi.stubEnv("AMBEE_API_KEY", "test-key")
 
     const request = new Request("http://localhost/api/cron/pollen", {
       method: "POST",
@@ -75,7 +91,6 @@ describe("POST /api/cron/pollen", () => {
     expect(response.status).toBe(200)
 
     const data = await response.json()
-    expect(data).toHaveProperty("processed")
-    expect(data).toHaveProperty("skipped")
+    expect(data.status).toBe("skipped")
   })
 })

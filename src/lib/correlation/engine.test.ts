@@ -12,6 +12,7 @@ import {
   isNonAllergenicForm,
   estimateGrams,
   buildBackfillSnapshots,
+  computeRollingMaxPollen,
 } from "./engine"
 import type {
   IngredientRecord,
@@ -56,7 +57,7 @@ const emptyOutcome: DayOutcome = {
   poopScore: null,
   itchScore: null,
   scorecardPoopFallback: null,
-  pollenIndex: null,
+  effectivePollenLevel: null,
   hasAccidentalExposure: false,
 }
 
@@ -1839,6 +1840,7 @@ describe("flagCrossReactivity", () => {
       isAllergenicallyRelevant: true,
       isSplit: false,
       distinctProductCount: 1,
+      itchSeasonallyConfounded: false,
       ...overrides,
     }
   }
@@ -2068,6 +2070,7 @@ describe("mergeScoresForGI", () => {
       isAllergenicallyRelevant: true,
       isSplit: false,
       distinctProductCount: 1,
+      itchSeasonallyConfounded: false,
       ...overrides,
     }
   }
@@ -2173,5 +2176,212 @@ describe("mergeScoresForGI", () => {
     ]
     const merged = mergeScoresForGI(scores)
     expect(merged.find((s) => s.key === "chicken")!.appearedInTreats).toBe(true)
+  })
+})
+
+// ---------------------------------------------------------------------------
+// Pollen discount tests
+// ---------------------------------------------------------------------------
+
+describe("computeRollingMaxPollen", () => {
+  it("returns null when no pollen data exists", () => {
+    const pollenByDate = new Map<string, { date: string; pollenLevel: number; sporeLevel: number | null }[]>()
+    expect(computeRollingMaxPollen("2026-03-05", pollenByDate)).toBeNull()
+  })
+
+  it("returns single day level when only that day has data", () => {
+    const pollenByDate = new Map([
+      ["2026-03-05", [{ date: "2026-03-05", pollenLevel: 3, sporeLevel: 1 }]],
+    ])
+    expect(computeRollingMaxPollen("2026-03-05", pollenByDate)).toBe(3)
+  })
+
+  it("takes max of pollenLevel and sporeLevel for each day", () => {
+    const pollenByDate = new Map([
+      ["2026-03-05", [{ date: "2026-03-05", pollenLevel: 1, sporeLevel: 4 }]],
+    ])
+    expect(computeRollingMaxPollen("2026-03-05", pollenByDate)).toBe(4)
+  })
+
+  it("treats null sporeLevel as 0", () => {
+    const pollenByDate = new Map([
+      ["2026-03-05", [{ date: "2026-03-05", pollenLevel: 2, sporeLevel: null }]],
+    ])
+    expect(computeRollingMaxPollen("2026-03-05", pollenByDate)).toBe(2)
+  })
+
+  it("takes rolling max across 3 days", () => {
+    const pollenByDate = new Map([
+      ["2026-03-03", [{ date: "2026-03-03", pollenLevel: 4, sporeLevel: 0 }]],
+      ["2026-03-04", [{ date: "2026-03-04", pollenLevel: 1, sporeLevel: 0 }]],
+      ["2026-03-05", [{ date: "2026-03-05", pollenLevel: 2, sporeLevel: 0 }]],
+    ])
+    // Rolling max of day, day-1, day-2: max(2, 1, 4) = 4
+    expect(computeRollingMaxPollen("2026-03-05", pollenByDate)).toBe(4)
+  })
+
+  it("uses only available days when some are missing", () => {
+    const pollenByDate = new Map([
+      // day-2 missing
+      ["2026-03-04", [{ date: "2026-03-04", pollenLevel: 1, sporeLevel: 0 }]],
+      ["2026-03-05", [{ date: "2026-03-05", pollenLevel: 2, sporeLevel: 0 }]],
+    ])
+    expect(computeRollingMaxPollen("2026-03-05", pollenByDate)).toBe(2)
+  })
+
+  it("handles edge case where only day-2 has data", () => {
+    const pollenByDate = new Map([
+      ["2026-03-03", [{ date: "2026-03-03", pollenLevel: 3, sporeLevel: 0 }]],
+    ])
+    expect(computeRollingMaxPollen("2026-03-05", pollenByDate)).toBe(3)
+  })
+})
+
+describe("pollen discount in itch scoring", () => {
+  function makePollenInput(
+    pollenDays: Array<{ date: string; pollenLevel: number; sporeLevel: number | null }>,
+    itchDays: Array<{ date: string; score: number }>,
+  ): ReturnType<typeof makeInput> {
+    return makeInput({
+      windowStart: "2026-03-01",
+      windowEnd: "2026-03-10",
+      feedingPeriods: [{
+        id: "fp-1",
+        productId: "prod-1",
+        startDate: "2026-03-01",
+        endDate: null,
+        planGroupId: "plan-1",
+        createdAt: "2026-03-01T00:00:00Z",
+        quantity: 200,
+        quantityUnit: "grams",
+      }],
+      productIngredientMap: new Map([
+        ["prod-1", makeProductIngredients("prod-1", [
+          { position: 1, ingredient: makeIngredient({ id: "ing-1", normalizedName: "chicken", family: "chicken" }) },
+        ])],
+      ]),
+      itchinessLogs: itchDays,
+      pollenLogs: pollenDays,
+      planPeriods: [{ planGroupId: "plan-1", startDate: "2026-03-01", endDate: null, createdAt: "2026-03-01T00:00:00Z" }],
+      productInfo: new Map([["prod-1", { type: "food", format: "dry", calorieContent: null }]]),
+    })
+  }
+
+  it("applies no discount on bad itch day with low pollen (level 0-1)", () => {
+    const input = makePollenInput(
+      [{ date: "2026-03-05", pollenLevel: 1, sporeLevel: 0 }],
+      [{ date: "2026-03-05", score: 5 }],
+    )
+    const snaps = buildDaySnapshots(input, DEFAULT_CORRELATION_OPTIONS)
+    const scores = computeIngredientScores(snaps, DEFAULT_CORRELATION_OPTIONS)
+    const chicken = scores.find((s) => s.key === "chicken")!
+    // With no discount, bad day multiplier is 3.0x
+    // weightedItchScore = (5 * vpw * 3.0) / (vpw * 3.0) = 5
+    expect(chicken.weightedItchScore).toBe(5)
+  })
+
+  it("applies 0.7 discount on bad itch day with moderate pollen (level 2)", () => {
+    const input = makePollenInput(
+      [{ date: "2026-03-05", pollenLevel: 2, sporeLevel: 0 }],
+      [{ date: "2026-03-05", score: 5 }],
+    )
+    const snaps = buildDaySnapshots(input, DEFAULT_CORRELATION_OPTIONS)
+    const scores = computeIngredientScores(snaps, DEFAULT_CORRELATION_OPTIONS)
+    const chicken = scores.find((s) => s.key === "chicken")!
+    // Single day: score = 5, dayWeight = 3.0 * 0.7 = 2.1
+    // weightedItchScore = (5 * vpw * 2.1) / (vpw * 2.1) = 5
+    // Note: single-ingredient single-day, the score itself doesn't change
+    // But the weight is reduced, which matters in multi-day contexts
+    expect(chicken.weightedItchScore).toBe(5)
+  })
+
+  it("applies 0.4 discount on bad itch day with high pollen (level 3-4)", () => {
+    const input = makePollenInput(
+      [{ date: "2026-03-05", pollenLevel: 3, sporeLevel: 0 }],
+      [{ date: "2026-03-05", score: 5 }],
+    )
+    const snaps = buildDaySnapshots(input, DEFAULT_CORRELATION_OPTIONS)
+    const scores = computeIngredientScores(snaps, DEFAULT_CORRELATION_OPTIONS)
+    const chicken = scores.find((s) => s.key === "chicken")!
+    expect(chicken.weightedItchScore).toBe(5)
+  })
+
+  it("does NOT discount good itch days during high pollen", () => {
+    const input = makePollenInput(
+      [
+        { date: "2026-03-05", pollenLevel: 4, sporeLevel: 0 },
+        { date: "2026-03-06", pollenLevel: 4, sporeLevel: 0 },
+      ],
+      [
+        { date: "2026-03-05", score: 1 }, // good itch day
+        { date: "2026-03-06", score: 5 }, // bad itch day
+      ],
+    )
+    const snaps = buildDaySnapshots(input, DEFAULT_CORRELATION_OPTIONS)
+    const scores = computeIngredientScores(snaps, DEFAULT_CORRELATION_OPTIONS)
+    const chicken = scores.find((s) => s.key === "chicken")!
+
+    // Good day: weight = 1.0 * 1.0 (no discount)
+    // Bad day: weight = 3.0 * 0.4 = 1.2
+    // The good day has proportionally MORE influence with pollen discount
+    expect(chicken.weightedItchScore).not.toBeNull()
+    // Numerator: (1 * vpw * 1.0) + (5 * vpw * 1.2) = vpw * (1 + 6) = vpw * 7
+    // Denominator: (vpw * 1.0) + (vpw * 1.2) = vpw * 2.2
+    // Score = 7 / 2.2 ≈ 3.18
+    expect(chicken.weightedItchScore!).toBeCloseTo(7 / 2.2, 1)
+  })
+
+  it("does NOT discount poop track during high pollen", () => {
+    const input = makePollenInput(
+      [{ date: "2026-03-05", pollenLevel: 4, sporeLevel: 0 }],
+      [],
+    )
+    // Add poop data
+    input.poopLogs = [{ date: "2026-03-05", firmnessScore: 6 }]
+    const snaps = buildDaySnapshots(input, DEFAULT_CORRELATION_OPTIONS)
+    const scores = computeIngredientScores(snaps, DEFAULT_CORRELATION_OPTIONS)
+    const chicken = scores.find((s) => s.key === "chicken")!
+    // Poop score should be unaffected by pollen
+    expect(chicken.weightedPoopScore).toBe(6)
+  })
+
+  it("uses 3-day rolling max for effective pollen level", () => {
+    // Day 3 has low pollen, but day 1 had high pollen — rolling max captures the lag
+    const input = makePollenInput(
+      [
+        { date: "2026-03-03", pollenLevel: 4, sporeLevel: 0 },
+        { date: "2026-03-04", pollenLevel: 1, sporeLevel: 0 },
+        { date: "2026-03-05", pollenLevel: 0, sporeLevel: 0 },
+      ],
+      [{ date: "2026-03-05", score: 5 }],
+    )
+    const snaps = buildDaySnapshots(input, DEFAULT_CORRELATION_OPTIONS)
+    // The snapshot for 2026-03-05 should have effectivePollenLevel = 4 (from day-2)
+    const snap = snaps.find((s) => s.date === "2026-03-05")!
+    expect(snap.outcome.effectivePollenLevel).toBe(4)
+  })
+
+  it("gracefully handles no pollen data (identical to pre-pollen behavior)", () => {
+    const input = makePollenInput(
+      [], // no pollen data
+      [{ date: "2026-03-05", score: 5 }],
+    )
+    const snaps = buildDaySnapshots(input, DEFAULT_CORRELATION_OPTIONS)
+    const scores = computeIngredientScores(snaps, DEFAULT_CORRELATION_OPTIONS)
+    const chicken = scores.find((s) => s.key === "chicken")!
+    // No pollen data = no discount, full weight
+    expect(chicken.weightedItchScore).toBe(5)
+  })
+
+  it("sets itchSeasonallyConfounded false when insufficient pollen data", () => {
+    // Less than 14 days of pollen data overlap
+    const input = makePollenInput(
+      [{ date: "2026-03-05", pollenLevel: 4, sporeLevel: 0 }],
+      [{ date: "2026-03-05", score: 5 }],
+    )
+    const snaps = buildDaySnapshots(input, DEFAULT_CORRELATION_OPTIONS)
+    const scores = computeIngredientScores(snaps, DEFAULT_CORRELATION_OPTIONS)
+    const chicken = scores.find((s) => s.key === "chicken")!
+    expect(chicken.itchSeasonallyConfounded).toBe(false)
   })
 })

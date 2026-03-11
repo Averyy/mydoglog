@@ -254,6 +254,52 @@ function indexByDate<T extends { date: string }>(items: T[]): Map<string, T[]> {
   return map
 }
 
+/** Get effective pollen level for a single date: max(pollenLevel, sporeLevel ?? 0). */
+function dailyPollenLevel(
+  pollenByDate: Map<string, CorrelationInput["pollenLogs"]>,
+  date: string,
+): number | null {
+  const rows = pollenByDate.get(date)
+  if (!rows || rows.length === 0) return null
+  const r = rows[0]
+  return Math.max(r.pollenLevel, r.sporeLevel ?? 0)
+}
+
+/** Subtract N days from a YYYY-MM-DD date string. */
+function subtractDays(date: string, n: number): string {
+  const d = new Date(date + "T00:00:00Z")
+  d.setUTCDate(d.getUTCDate() - n)
+  return d.toISOString().slice(0, 10)
+}
+
+/**
+ * Compute 3-day rolling max of effective pollen level (day, day-1, day-2).
+ * Uses available days only — missing days are skipped, not zero-filled.
+ * Returns null if no pollen data exists for any of the 3 days.
+ */
+export function computeRollingMaxPollen(
+  date: string,
+  pollenByDate: Map<string, CorrelationInput["pollenLogs"]>,
+): number | null {
+  const levels: number[] = []
+  for (let i = 0; i < 3; i++) {
+    const d = subtractDays(date, i)
+    const level = dailyPollenLevel(pollenByDate, d)
+    if (level != null) levels.push(level)
+  }
+  return levels.length > 0 ? Math.max(...levels) : null
+}
+
+/**
+ * Compute seasonal confounding flag for an ingredient.
+ * True when enough pollen-observed bad itch days exist AND a high fraction overlap high pollen.
+ */
+function computeSeasonalConfounding(acc: IngredientAccumulator): boolean {
+  const totalPollenDays = acc.highPollenBadItchDays + acc.lowPollenBadItchDays
+  if (totalPollenDays < DEFAULT_SCORING_CONSTANTS.seasonalConfoundingMinDays) return false
+  return acc.highPollenBadItchDays / totalPollenDays > DEFAULT_SCORING_CONSTANTS.seasonalConfoundingThreshold
+}
+
 /** Pre-indexed lookup tables for O(1) per-date access in the day loop. */
 interface DateIndex {
   poopByDate: Map<string, CorrelationInput["poopLogs"]>
@@ -308,9 +354,8 @@ function buildDayOutcome(
     }
   }
 
-  // Pollen
-  const pollenLogs = idx.pollenByDate.get(date)
-  const pollenIndex = pollenLogs?.[0]?.pollenIndex ?? null
+  // Pollen: 3-day rolling max of max(pollenLevel, sporeLevel ?? 0)
+  const effectivePollenLevel = computeRollingMaxPollen(date, idx.pollenByDate)
 
   // Accidental exposure
   const hasAccidentalExposure = idx.exposureDates.has(date)
@@ -319,7 +364,7 @@ function buildDayOutcome(
     poopScore,
     itchScore,
     scorecardPoopFallback,
-    pollenIndex,
+    effectivePollenLevel,
     hasAccidentalExposure,
   }
 }
@@ -462,6 +507,8 @@ interface IngredientAccumulator {
   goodPoopDays: number
   badItchDays: number
   goodItchDays: number
+  highPollenBadItchDays: number
+  lowPollenBadItchDays: number
 }
 
 export function computeIngredientScores(
@@ -534,6 +581,8 @@ export function computeIngredientScores(
           goodPoopDays: 0,
           badItchDays: 0,
           goodItchDays: 0,
+          highPollenBadItchDays: 0,
+          lowPollenBadItchDays: 0,
         }
         accMap.set(ing.key, acc)
       }
@@ -582,14 +631,37 @@ export function computeIngredientScores(
         acc.itchSum += snap.outcome.itchScore
         acc.itchCount++
 
+        const isBadItchDay = snap.outcome.itchScore >= 4
+
+        // Pollen discount: reduce weight of bad itch days during high pollen
+        // Good itch days keep full weight regardless of pollen
+        let pollenDiscount = 1.0
+        if (isBadItchDay && snap.outcome.effectivePollenLevel != null) {
+          if (snap.outcome.effectivePollenLevel >= 3) {
+            pollenDiscount = DEFAULT_SCORING_CONSTANTS.pollenDiscountHigh
+          } else if (snap.outcome.effectivePollenLevel >= 2) {
+            pollenDiscount = DEFAULT_SCORING_CONSTANTS.pollenDiscountModerate
+          }
+        }
+
         // Weighted: itch >= 4 is bad — standard position decay (additives don't cause skin reactions)
-        const dayWeight = snap.outcome.itchScore >= 4
+        const dayWeight = (isBadItchDay
           ? DEFAULT_SCORING_CONSTANTS.badDayMultiplier
-          : DEFAULT_SCORING_CONSTANTS.goodDayMultiplier
+          : DEFAULT_SCORING_CONSTANTS.goodDayMultiplier) * pollenDiscount
         acc.weightedItchNumerator += snap.outcome.itchScore * vpw * dayWeight
         acc.weightedItchDenominator += vpw * dayWeight
 
-        if (snap.outcome.itchScore >= 4) acc.badItchDays++
+        if (isBadItchDay) {
+          acc.badItchDays++
+          // Track pollen overlap for seasonal confounding (only when pollen data exists)
+          if (snap.outcome.effectivePollenLevel != null) {
+            if (snap.outcome.effectivePollenLevel >= 2) {
+              acc.highPollenBadItchDays++
+            } else {
+              acc.lowPollenBadItchDays++
+            }
+          }
+        }
         if (snap.outcome.itchScore <= 2) acc.goodItchDays++
       }
 
@@ -649,6 +721,7 @@ export function computeIngredientScores(
       isAllergenicallyRelevant: !isNonAllergenicForm(acc.formType) && acc.sourceGroup !== "additive",
       isSplit: acc.isSplit,
       distinctProductCount: acc.productIds.size,
+      itchSeasonallyConfounded: computeSeasonalConfounding(acc),
     })
   }
 
@@ -870,7 +943,7 @@ export function buildBackfillSnapshots(
         poopScore: avgPoop,
         itchScore: avgItch,
         scorecardPoopFallback: null,
-        pollenIndex: null,
+        effectivePollenLevel: null,
         hasAccidentalExposure: false,
       },
       isTransitionBuffer: false,
@@ -978,6 +1051,7 @@ export function mergeScoresForGI(scores: IngredientScore[]): IngredientScore[] {
       isAllergenicallyRelevant: true,
       isSplit: group.some((s) => s.isSplit),
       distinctProductCount: group.reduce((sum, s) => sum + s.distinctProductCount, 0),
+      itchSeasonallyConfounded: group.some((s) => s.itchSeasonallyConfounded),
       crossReactivityGroup,
       crossReactivityWarning,
       formBreakdown: group.map((s) => ({

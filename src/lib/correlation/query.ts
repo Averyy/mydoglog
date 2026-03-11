@@ -5,7 +5,6 @@
 
 import {
   db,
-  dogs,
   feedingPeriods,
   treatLogs,
   productIngredients,
@@ -16,10 +15,18 @@ import {
   itchinessLogs,
   accidentalExposures,
   foodScorecards,
-  pollenLogs,
+  dailyPollen,
   ingredientCrossReactivity,
 } from "@/lib/db"
 import { eq, and, gte, lte, sql, asc } from "drizzle-orm"
+import { AEROBIOLOGY_PROVIDER, HAMILTON_LOCATION } from "@/lib/pollen/constants"
+
+/** Shift a YYYY-MM-DD date string by N days. */
+function shiftDate(date: string, days: number): string {
+  const d = new Date(date + "T00:00:00Z")
+  d.setUTCDate(d.getUTCDate() + days)
+  return d.toISOString().slice(0, 10)
+}
 import type { PlanPeriod } from "@/lib/feeding"
 import { resolveIngredientKey, positionCategory, extractFamilyFromKey } from "./engine"
 import type {
@@ -54,7 +61,6 @@ export async function fetchCorrelationInput(
 ): Promise<CorrelationInput> {
   // -- Phase 1: queries that don't depend on other results --
   const [
-    dogRows,
     feedingRows,
     backfillRows,
     treatRows,
@@ -63,12 +69,6 @@ export async function fetchCorrelationInput(
     exposureRows,
     crossReactivityRows,
   ] = await Promise.all([
-    // Dog location
-    db
-      .select({ location: dogs.location })
-      .from(dogs)
-      .where(eq(dogs.id, dogId)),
-
     // Non-backfill feeding periods (for day-by-day correlation)
     db
       .select({
@@ -200,7 +200,6 @@ export async function fetchCorrelationInput(
 
   // -- Phase 2: queries depending on phase 1 results --
   const productIdList = [...allProductIds]
-  const dogLocation = dogRows[0]?.location ?? null
 
   // Fetch product ingredients and scorecards in parallel
   const allPlanGroupIds = new Set(rawFeeding.map((fp) => fp.planGroupId))
@@ -252,22 +251,23 @@ export async function fetchCorrelationInput(
           )
       : Promise.resolve([]),
 
-    // Pollen logs matching dog's location
-    dogLocation != null
-      ? db
-          .select({
-            date: pollenLogs.date,
-            pollenIndex: pollenLogs.pollenIndex,
-          })
-          .from(pollenLogs)
-          .where(
-            and(
-              eq(pollenLogs.location, dogLocation),
-              gte(pollenLogs.date, windowStart),
-              lte(pollenLogs.date, windowEnd),
-            ),
-          )
-      : Promise.resolve([]),
+    // Pollen logs — aerobiology provider only, hardcoded location
+    // Fetch 2 extra days before windowStart for 3-day rolling max lookback
+    db
+      .select({
+        date: dailyPollen.date,
+        pollenLevel: dailyPollen.pollenLevel,
+        sporeLevel: dailyPollen.sporeLevel,
+      })
+      .from(dailyPollen)
+      .where(
+        and(
+          eq(dailyPollen.provider, AEROBIOLOGY_PROVIDER),
+          eq(dailyPollen.location, HAMILTON_LOCATION),
+          gte(dailyPollen.date, shiftDate(windowStart, -2)),
+          lte(dailyPollen.date, windowEnd),
+        ),
+      ),
 
     // Product types + format + calorie content for gram estimation
     productIdList.length > 0
@@ -348,7 +348,8 @@ export async function fetchCorrelationInput(
     scorecards: scorecardRows,
     pollenLogs: pollenRows.map((r) => ({
       date: r.date,
-      pollenIndex: r.pollenIndex != null ? Number(r.pollenIndex) : null,
+      pollenLevel: r.pollenLevel,
+      sporeLevel: r.sporeLevel,
     })),
     planPeriods,
     backfills,

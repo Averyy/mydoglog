@@ -34,9 +34,8 @@ export async function PATCH(
     if (body.birthDate !== undefined) updates.birthDate = body.birthDate || null
     if (body.weightKg !== undefined)
       updates.weightKg = body.weightKg != null ? String(body.weightKg) : null
-    if (body.location !== undefined) updates.location = body.location?.trim() || null
-    if (body.postalCode !== undefined) updates.postalCode = body.postalCode?.trim() || null
-    if (body.notes !== undefined) updates.notes = body.notes?.trim() || null
+    if (body.environmentEnabled !== undefined)
+      updates.environmentEnabled = body.environmentEnabled === true
 
     const [updated] = await db
       .update(dogs)

@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
+import { Checkbox } from "@/components/ui/checkbox"
 import { BirthDatePicker } from "@/components/birth-date-picker"
 import { toast } from "sonner"
 import type { Dog } from "@/lib/db/schema"
@@ -21,11 +22,11 @@ export function DogForm({ dog, onClose }: DogFormProps) {
   const [breed, setBreed] = useState(dog?.breed ?? "")
   const [birthDate, setBirthDate] = useState(dog?.birthDate ?? "")
   const [weightKg, setWeightKg] = useState(dog?.weightKg ?? "")
-  const [location, setLocation] = useState(dog?.location ?? "")
-  const [postalCode, setPostalCode] = useState(dog?.postalCode ?? "")
-  const [notes, setNotes] = useState(dog?.notes ?? "")
+  const [environmentEnabled, setEnvironmentEnabled] = useState(
+    dog?.environmentEnabled ?? false,
+  )
 
-  async function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent): Promise<void> {
     e.preventDefault()
     setLoading(true)
 
@@ -41,9 +42,7 @@ export function DogForm({ dog, onClose }: DogFormProps) {
           breed: breed || null,
           birthDate: birthDate || null,
           weightKg: weightKg ? Number(weightKg) : null,
-          location: location || null,
-          postalCode: postalCode || null,
-          notes: notes || null,
+          environmentEnabled,
         }),
       })
 
@@ -104,34 +103,22 @@ export function DogForm({ dog, onClose }: DogFormProps) {
           onChange={(e) => setWeightKg(e.target.value)}
         />
       </div>
-      <div className="space-y-2">
-        <Label htmlFor="location">Location</Label>
-        <Input
-          id="location"
-          value={location}
-          onChange={(e) => setLocation(e.target.value)}
-          placeholder="City, Province"
+      <div className="flex items-start space-x-3 py-2">
+        <Checkbox
+          id="environmentEnabled"
+          checked={environmentEnabled}
+          onCheckedChange={(checked) =>
+            setEnvironmentEnabled(checked === true)
+          }
         />
-      </div>
-      <div className="space-y-2">
-        <Label htmlFor="postalCode">Postal code</Label>
-        <Input
-          id="postalCode"
-          value={postalCode}
-          onChange={(e) => setPostalCode(e.target.value)}
-          placeholder="e.g. M5V 2T6"
-        />
-        <p className="text-xs text-muted-foreground">
-          For accurate daily pollen counts
-        </p>
-      </div>
-      <div className="space-y-2">
-        <Label htmlFor="notes">Notes</Label>
-        <Input
-          id="notes"
-          value={notes}
-          onChange={(e) => setNotes(e.target.value)}
-        />
+        <div className="space-y-0.5 leading-none">
+          <Label htmlFor="environmentEnabled" className="cursor-pointer">
+            Pollen and mold tracking
+          </Label>
+          <p className="text-xs text-muted-foreground">
+            St. Catharines, ON
+          </p>
+        </div>
       </div>
       <div className="flex justify-end gap-3">
         <Button

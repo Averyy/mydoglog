@@ -344,9 +344,7 @@ export const dogs = pgTable(
     breed: text("breed"),
     birthDate: date("birth_date"),
     weightKg: numeric("weight_kg"),
-    location: text("location"),
-    postalCode: text("postal_code"),
-    notes: text("notes"),
+    environmentEnabled: boolean("environment_enabled").notNull().default(false),
     createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
     updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
   },
@@ -549,20 +547,32 @@ export const medications = pgTable(
   (table) => [index("idx_medications_dog").on(table.dogId)],
 )
 
-export const pollenLogs = pgTable(
-  "pollen_logs",
+export const dailyPollen = pgTable(
+  "daily_pollen",
   {
     id: text("id")
       .primaryKey()
       .$defaultFn(() => crypto.randomUUID()),
+    provider: text("provider").notNull(),
     location: text("location").notNull(),
     date: date("date").notNull(),
-    pollenIndex: numeric("pollen_index"),
-    pollenTypes: jsonb("pollen_types"),
-    sourceApi: text("source_api"),
+    pollenLevel: integer("pollen_level").notNull(),
+    sporeLevel: integer("spore_level"),
+    totalTrees: integer("total_trees"),
+    totalGrasses: integer("total_grasses"),
+    totalWeeds: integer("total_weeds"),
+    topAllergens: jsonb("top_allergens"),
+    source: text("source").notNull(),
+    outOfSeason: boolean("out_of_season").notNull().default(false),
     createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
   },
-  (table) => [index("idx_pollen_logs_location_date").on(table.location, table.date)],
+  (table) => [
+    unique("uq_daily_pollen_provider_location_date").on(
+      table.provider,
+      table.location,
+      table.date,
+    ),
+  ],
 )
 
 // ---------------------------------------------------------------------------

@@ -30,8 +30,8 @@ const NAV_LINKS: NavItem[] = [
   { label: "Home", icon: LiaHomeSolid, href: "/" },
   { label: "Food", icon: LiaUtensilsSolid, dogHref: (id) => `/dogs/${id}/food` },
   { label: "Log", icon: LiaPlusSolid, prominent: true },
-  { label: "Insights", icon: LiaLightbulbSolid, dogHref: (id) => `/dogs/${id}/insights` },
   { label: "Meds", icon: LiaCapsulesSolid, dogHref: (id) => `/dogs/${id}/meds` },
+  { label: "Insights", icon: LiaLightbulbSolid, dogHref: (id) => `/dogs/${id}/insights` },
 ]
 
 function resolveHref(link: NavItem, activeDogId: string | null): string {

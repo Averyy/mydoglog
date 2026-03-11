@@ -31,7 +31,7 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
     }
 
     const body = await request.json()
-    const { name, breed, birthDate, weightKg, location, postalCode, notes } = body
+    const { name, breed, birthDate, weightKg, environmentEnabled } = body
 
     if (!name || typeof name !== "string" || name.trim().length === 0) {
       return NextResponse.json({ error: "Name is required" }, { status: 400 })
@@ -45,9 +45,7 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
         breed: breed?.trim() || null,
         birthDate: birthDate || null,
         weightKg: weightKg != null ? String(weightKg) : null,
-        location: location?.trim() || null,
-        postalCode: postalCode?.trim() || null,
-        notes: notes?.trim() || null,
+        environmentEnabled: environmentEnabled === true,
       })
       .returning()
 
