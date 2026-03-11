@@ -7,11 +7,11 @@ import type { AnalysisRow, ComputedNutrition } from "@/lib/nutrition"
 // ─── Sub-components ───────────────────────────────────────────────────────────
 
 function ThickBar({ className }: { className?: string }): React.ReactElement {
-  return <div className={cn("bg-foreground", className)} />
+  return <div className={cn("bg-foreground dark:bg-text-tertiary", className)} />
 }
 
 function ThinRule(): React.ReactElement {
-  return <div className="border-b border-foreground" />
+  return <div className="border-b border-foreground dark:border-text-tertiary" />
 }
 
 function NutrientRow({
@@ -143,14 +143,14 @@ export function NutritionLabel(props: NutritionLabelProps): React.ReactElement {
   return (
     <div
       className={cn(
-        "w-full min-w-0 overflow-hidden border-2 border-foreground bg-muted-subtle px-2 pb-2 pt-1",
+        "w-full min-w-0 overflow-hidden border-2 border-foreground bg-muted-subtle px-2 pb-2 pt-1 dark:border-text-tertiary dark:text-text-primary",
         className,
       )}
     >
       {/* ── Title ──────────────────────────────────────────────────── */}
       <ThickBar className="h-[7px]" />
       <h3 className={cn(
-        "mt-0.5 font-black tracking-[-0.02em] text-foreground",
+        "mt-0.5 font-black tracking-[-0.02em] text-foreground dark:text-text-primary",
         compact ? "text-[22px] leading-[1.1]" : "text-[32px] leading-[1.05]",
       )}>
         Nutrition{compact ? " " : <br />}Facts

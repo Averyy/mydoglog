@@ -180,7 +180,6 @@ export function TreatLoggerContent({
           onChange={setProduct}
           productType="treat"
           placeholder="Search treats..."
-          inline
           dogId={dogId}
         />
       </div>

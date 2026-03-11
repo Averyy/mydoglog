@@ -3,6 +3,12 @@
 import { useState, useEffect, useMemo, useRef } from "react"
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
 import {
+  Drawer,
+  DrawerContent,
+  DrawerHeader,
+  DrawerTitle,
+} from "@/components/ui/drawer"
+import {
   Command,
   CommandInput,
   CommandList,
@@ -72,8 +78,6 @@ interface ProductPickerProps {
   onChange: (product: ProductSummary | null) => void
   productType?: string
   placeholder?: string
-  /** Render dropdown inline instead of in a portal. Use inside Dialog/Drawer. */
-  inline?: boolean
   /** Enables "Recent" filter chip; fetches recent product IDs for this dog */
   dogId?: string
 }
@@ -83,7 +87,6 @@ export function ProductPicker({
   onChange,
   productType,
   placeholder = "Search products...",
-  inline = false,
   dogId,
 }: ProductPickerProps): React.ReactElement {
   const isMobile = useIsMobile()
@@ -302,188 +305,215 @@ export function ProductPicker({
     setFailedImages((prev) => new Set(prev).add(productId))
   }
 
+  const triggerButton = (
+    <Button
+      variant="outline"
+      role="combobox"
+      aria-expanded={open}
+      className={cn(
+        "w-full justify-between font-normal hover:bg-item-hover-subtle",
+        value ? "h-auto min-h-11 py-1.5 whitespace-normal" : "text-muted-foreground",
+      )}
+      onClick={isMobile ? () => setOpen(true) : undefined}
+    >
+      {value ? (
+        <span className="flex items-start gap-2.5 text-left">
+          {value.imageUrl && !failedImages.has(value.id) && (
+            <span className="size-9 shrink-0 rounded-md bg-muted-subtle">
+              <img
+                src={smallImageUrl(value.imageUrl)}
+                alt=""
+                className="size-full rounded-md object-contain mix-blend-multiply dark:mix-blend-normal"
+                onError={() => handleImageError(value.id)}
+              />
+            </span>
+          )}
+          <span>
+            <span className="block text-sm font-medium">{value.brandName}</span>
+            <span className="block whitespace-normal text-xs text-muted-foreground">
+              {stripBrandPrefix(value.name, value.brandName)}
+            </span>
+          </span>
+        </span>
+      ) : (
+        placeholder
+      )}
+      <ChevronsUpDown className="ml-2 size-4 shrink-0 text-text-tertiary" />
+    </Button>
+  )
+
+  const commandContent = (
+    <Command shouldFilter={false} value={value?.id ?? ""}>
+      <CommandInput
+        placeholder={placeholder}
+        value={query}
+        onValueChange={setQuery}
+        className="h-11"
+      />
+      {(brands.length > 0 || showRecentChip) && (
+        <div ref={filterBarRef} className="flex gap-1.5 overflow-x-auto border-b px-2 py-2">
+          <button
+            type="button"
+            onClick={() => { userClickedFilterRef.current = true; setActiveFilter("all") }}
+            aria-pressed={activeFilter === "all"}
+            {...(activeFilter === "all" ? { "data-active-filter": "" } : {})}
+            className={cn(
+              "shrink-0 rounded-md border px-2.5 py-1 text-xs font-medium transition-colors",
+              activeFilter === "all"
+                ? "border-foreground bg-foreground text-background"
+                : "border-border hover:bg-item-hover",
+            )}
+          >
+            All
+          </button>
+          {showRecentChip && (
+            <button
+              type="button"
+              onClick={() => { userClickedFilterRef.current = true; setActiveFilter("recent") }}
+              aria-pressed={activeFilter === "recent"}
+              {...(activeFilter === "recent" ? { "data-active-filter": "" } : {})}
+              className={cn(
+                "shrink-0 rounded-md border px-2.5 py-1 text-xs font-medium transition-colors",
+                activeFilter === "recent"
+                  ? "border-foreground bg-foreground text-background"
+                  : "border-border hover:bg-item-hover",
+              )}
+            >
+              Recent
+            </button>
+          )}
+          {brands.map((brand) => (
+            <button
+              key={brand.id}
+              type="button"
+              onClick={() => {
+                userClickedFilterRef.current = true
+                setActiveFilter(activeFilter === brand.id ? "all" : brand.id)
+              }}
+              aria-pressed={activeFilter === brand.id}
+              {...(activeFilter === brand.id ? { "data-active-filter": "" } : {})}
+              className={cn(
+                "shrink-0 rounded-md border px-2.5 py-1 text-xs font-medium transition-colors",
+                activeFilter === brand.id
+                  ? "border-foreground bg-foreground text-background"
+                  : "border-border hover:bg-item-hover",
+              )}
+            >
+              {brand.name}
+            </button>
+          ))}
+        </div>
+      )}
+      <CommandList ref={listRef} className={cn("min-h-[200px]", isMobile && "h-[60vh] max-h-[60vh]")}>
+        {loading && (
+          <div className="p-1">
+            {Array.from({ length: 6 }).map((_, i) => (
+              <div key={i} className="flex min-h-[48px] items-center gap-3 px-2 py-1.5">
+                <div className="size-10 shrink-0 animate-pulse rounded bg-muted" />
+                <div className="flex flex-1 flex-col gap-0.5">
+                  <div className="h-3.5 animate-pulse rounded bg-muted" style={{ width: `${55 + (i * 17) % 30}%` }} />
+                  <div className="h-3 w-1/3 animate-pulse rounded bg-muted" />
+                </div>
+                <div className="h-5 w-12 animate-pulse rounded-full bg-muted shrink-0" />
+              </div>
+            ))}
+          </div>
+        )}
+        {!loading && loadError && (
+          <div className="py-6 text-center text-sm text-muted-foreground">
+            Failed to load products.{" "}
+            <button
+              type="button"
+              onClick={fetchProducts}
+              className="text-primary underline underline-offset-2"
+            >
+              Retry
+            </button>
+          </div>
+        )}
+        {!loading && !loadError && filteredProducts.length === 0 && (
+          <CommandEmpty>No products found.</CommandEmpty>
+        )}
+        {filteredProducts.length > 0 && (
+          <CommandGroup className="animate-in fade-in duration-200">
+            {filteredProducts.map((product) => {
+              const imgFailed = failedImages.has(product.id)
+              return (
+                <CommandItem
+                  key={product.id}
+                  value={product.id}
+                  onSelect={() => {
+                    onChange(product)
+                    setOpen(false)
+                    setQuery("")
+                  }}
+                  className="min-h-[48px] gap-3 [content-visibility:auto] [contain-intrinsic-size:auto_48px]"
+                  title={`${product.brandName} — ${product.name}`}
+                >
+                  <div className="flex size-10 shrink-0 items-center justify-center overflow-hidden rounded bg-muted-subtle [&_img]:mix-blend-multiply dark:[&_img]:mix-blend-normal">
+                    {product.imageUrl && !imgFailed ? (
+                      <img
+                        src={smallImageUrl(product.imageUrl)}
+                        alt=""
+                        className="size-full object-cover"
+                        onError={() => handleImageError(product.id)}
+                      />
+                    ) : (
+                      <span className="text-[10px] text-muted-foreground">?</span>
+                    )}
+                  </div>
+                  <div className="flex flex-1 flex-col gap-0.5 truncate">
+                    <span className="truncate text-sm font-medium">
+                      {stripBrandPrefix(product.name, product.brandName)}
+                    </span>
+                    <span className="text-xs text-muted-foreground">
+                      {product.brandName}
+                    </span>
+                  </div>
+                  {product.type && (
+                    <Badge variant="secondary" className="shrink-0 text-[10px]">
+                      {formatType(product.type, product.format, product.calorieContent)}
+                    </Badge>
+                  )}
+                </CommandItem>
+              )
+            })}
+          </CommandGroup>
+        )}
+      </CommandList>
+    </Command>
+  )
+
+  if (isMobile) {
+    return (
+      <>
+        {triggerButton}
+        <Drawer open={open} onOpenChange={setOpen}>
+          <DrawerContent aria-describedby={undefined}>
+            <div className="pb-4" />
+            <DrawerHeader className="sr-only">
+              <DrawerTitle>Select product</DrawerTitle>
+            </DrawerHeader>
+            <div className="flex flex-col px-2 pb-4" data-vaul-no-drag>
+              {commandContent}
+            </div>
+          </DrawerContent>
+        </Drawer>
+      </>
+    )
+  }
+
   return (
     <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger asChild>
-        <Button
-          variant="outline"
-          role="combobox"
-          aria-expanded={open}
-          className={cn(
-            "w-full justify-between font-normal hover:bg-item-hover-subtle",
-            value ? "h-auto min-h-11 py-1.5 whitespace-normal" : "text-muted-foreground",
-          )}
-        >
-          {value ? (
-            <span className="flex items-start gap-2.5 text-left">
-              {value.imageUrl && !failedImages.has(value.id) && (
-                <span className="size-9 shrink-0 rounded-md bg-muted-subtle">
-                  <img
-                    src={smallImageUrl(value.imageUrl)}
-                    alt=""
-                    className="size-full rounded-md object-contain mix-blend-multiply"
-                    onError={() => handleImageError(value.id)}
-                  />
-                </span>
-              )}
-              <span>
-                <span className="block text-sm font-medium">{value.brandName}</span>
-                <span className="block whitespace-normal text-xs text-muted-foreground">
-                  {stripBrandPrefix(value.name, value.brandName)}
-                </span>
-              </span>
-            </span>
-          ) : (
-            placeholder
-          )}
-          <ChevronsUpDown className="ml-2 size-4 shrink-0 text-text-tertiary" />
-        </Button>
+        {triggerButton}
       </PopoverTrigger>
       <PopoverContent
-        className="w-[var(--radix-popover-trigger-width)] p-0"
+        className="w-[var(--radix-popover-trigger-width)] max-w-[calc(100vw-2rem)] p-0"
         align="start"
-        disablePortal={inline && isMobile}
-        onWheel={inline && !isMobile ? (e) => e.stopPropagation() : undefined}
+        onWheel={(e) => e.stopPropagation()}
       >
-        <Command shouldFilter={false} value={value?.id ?? ""}>
-          <CommandInput
-            placeholder={placeholder}
-            value={query}
-            onValueChange={setQuery}
-            className="h-11"
-          />
-          {(brands.length > 0 || showRecentChip) && (
-            <div ref={filterBarRef} className="flex gap-1.5 overflow-x-auto border-b px-2 py-2">
-              <button
-                type="button"
-                onClick={() => { userClickedFilterRef.current = true; setActiveFilter("all") }}
-                aria-pressed={activeFilter === "all"}
-                {...(activeFilter === "all" ? { "data-active-filter": "" } : {})}
-                className={cn(
-                  "shrink-0 rounded-md border px-2.5 py-1 text-xs font-medium transition-colors",
-                  activeFilter === "all"
-                    ? "border-foreground bg-foreground text-background"
-                    : "border-border hover:bg-item-hover",
-                )}
-              >
-                All
-              </button>
-              {showRecentChip && (
-                <button
-                  type="button"
-                  onClick={() => { userClickedFilterRef.current = true; setActiveFilter("recent") }}
-                  aria-pressed={activeFilter === "recent"}
-                  {...(activeFilter === "recent" ? { "data-active-filter": "" } : {})}
-                  className={cn(
-                    "shrink-0 rounded-md border px-2.5 py-1 text-xs font-medium transition-colors",
-                    activeFilter === "recent"
-                      ? "border-foreground bg-foreground text-background"
-                      : "border-border hover:bg-item-hover",
-                  )}
-                >
-                  Recent
-                </button>
-              )}
-              {brands.map((brand) => (
-                <button
-                  key={brand.id}
-                  type="button"
-                  onClick={() => {
-                    userClickedFilterRef.current = true
-                    setActiveFilter(activeFilter === brand.id ? "all" : brand.id)
-                  }}
-                  aria-pressed={activeFilter === brand.id}
-                  {...(activeFilter === brand.id ? { "data-active-filter": "" } : {})}
-                  className={cn(
-                    "shrink-0 rounded-md border px-2.5 py-1 text-xs font-medium transition-colors",
-                    activeFilter === brand.id
-                      ? "border-foreground bg-foreground text-background"
-                      : "border-border hover:bg-item-hover",
-                  )}
-                >
-                  {brand.name}
-                </button>
-              ))}
-            </div>
-          )}
-          <CommandList ref={listRef} className="min-h-[200px]">
-            {loading && (
-              <div className="p-1">
-                {Array.from({ length: 6 }).map((_, i) => (
-                  <div key={i} className="flex min-h-[48px] items-center gap-3 px-2 py-1.5">
-                    <div className="size-10 shrink-0 animate-pulse rounded bg-muted" />
-                    <div className="flex flex-1 flex-col gap-0.5">
-                      <div className="h-3.5 animate-pulse rounded bg-muted" style={{ width: `${55 + (i * 17) % 30}%` }} />
-                      <div className="h-3 w-1/3 animate-pulse rounded bg-muted" />
-                    </div>
-                    <div className="h-5 w-12 animate-pulse rounded-full bg-muted shrink-0" />
-                  </div>
-                ))}
-              </div>
-            )}
-            {!loading && loadError && (
-              <div className="py-6 text-center text-sm text-muted-foreground">
-                Failed to load products.{" "}
-                <button
-                  type="button"
-                  onClick={fetchProducts}
-                  className="text-primary underline underline-offset-2"
-                >
-                  Retry
-                </button>
-              </div>
-            )}
-            {!loading && !loadError && filteredProducts.length === 0 && (
-              <CommandEmpty>No products found.</CommandEmpty>
-            )}
-            {filteredProducts.length > 0 && (
-              <CommandGroup className="animate-in fade-in duration-200">
-                {filteredProducts.map((product) => {
-                  const imgFailed = failedImages.has(product.id)
-                  return (
-                    <CommandItem
-                      key={product.id}
-                      value={product.id}
-                      onSelect={() => {
-                        onChange(product)
-                        setOpen(false)
-                        setQuery("")
-                      }}
-                      className="min-h-[48px] gap-3 [content-visibility:auto] [contain-intrinsic-size:auto_48px]"
-                      title={`${product.brandName} — ${product.name}`}
-                    >
-                      <div className="flex size-10 shrink-0 items-center justify-center overflow-hidden rounded bg-muted-subtle [&_img]:mix-blend-multiply">
-                        {product.imageUrl && !imgFailed ? (
-                          <img
-                            src={smallImageUrl(product.imageUrl)}
-                            alt=""
-                            className="size-full object-cover"
-                            onError={() => handleImageError(product.id)}
-                          />
-                        ) : (
-                          <span className="text-[10px] text-muted-foreground">?</span>
-                        )}
-                      </div>
-                      <div className="flex flex-1 flex-col gap-0.5 truncate">
-                        <span className="truncate text-sm font-medium">
-                          {stripBrandPrefix(product.name, product.brandName)}
-                        </span>
-                        <span className="text-xs text-muted-foreground">
-                          {product.brandName}
-                        </span>
-                      </div>
-                      {product.type && (
-                        <Badge variant="secondary" className="shrink-0 text-[10px]">
-                          {formatType(product.type, product.format, product.calorieContent)}
-                        </Badge>
-                      )}
-                    </CommandItem>
-                  )
-                })}
-              </CommandGroup>
-            )}
-          </CommandList>
-        </Command>
+        {commandContent}
       </PopoverContent>
     </Popover>
   )

@@ -60,6 +60,10 @@ export async function PATCH(
     if (body.urgency !== undefined) updates.urgency = body.urgency
     if (body.notes !== undefined) updates.notes = body.notes?.trim() || null
     if (body.photoUrl !== undefined) updates.photoUrl = body.photoUrl
+    if (body.date !== undefined) updates.date = body.date
+    if (body.datetime !== undefined) {
+      updates.datetime = body.datetime ? new Date(body.datetime) : null
+    }
 
     const [updated] = await db
       .update(poopLogs)

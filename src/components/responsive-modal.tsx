@@ -45,7 +45,7 @@ export function ResponsiveModal({
 
   if (isMobile) {
     return (
-      <Drawer open={open} onOpenChange={onOpenChange} handleOnly>
+      <Drawer open={open} onOpenChange={onOpenChange}>
         <DrawerContent {...(!description ? { "aria-describedby": undefined } : {})}>
           <DrawerHeader>
             <DrawerTitle>{title}</DrawerTitle>

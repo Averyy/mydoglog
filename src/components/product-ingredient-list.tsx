@@ -1,10 +1,11 @@
 "use client"
 
 import { useMemo } from "react"
-import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
+import { ResponsivePopover } from "@/components/responsive-popover"
 import { NutritionLabel } from "@/components/nutrition-label"
 import { computeProductNutrition } from "@/lib/nutrition"
 import { ChevronDown } from "lucide-react"
+import { useIsMobile } from "@/hooks/use-is-mobile"
 
 const INGREDIENT_SCORE_COLORS: Record<number, string> = {
   1: "text-score-excellent-text", 2: "text-score-excellent-text",
@@ -76,6 +77,8 @@ export function ProductIngredientList({
   nutrition?: ProductNutritionData
   correlationScores: IngredientScore[]
 }): React.ReactElement {
+  const isMobile = useIsMobile()
+
   if (!data) {
     return <></>
   }
@@ -98,75 +101,72 @@ export function ProductIngredientList({
   )
 
   return (
-    <Popover>
-      <PopoverTrigger asChild>
+    <ResponsivePopover
+      title="Nutrition"
+      trigger={
         <button
           type="button"
           className="flex items-center gap-1 text-xs text-primary hover:underline underline-offset-2"
         >
-          View nutrition
+          {isMobile ? "Nutrition" : "View nutrition"}
           <ChevronDown className="size-3" />
         </button>
-      </PopoverTrigger>
-      <PopoverContent
-        className="w-auto max-w-[min(90vw,560px)] max-h-[70vh] overflow-y-auto p-0"
-        align="start"
-      >
-        <div className="flex flex-col sm:flex-row">
-          {/* Ingredients list */}
-          <div className="flex-1 p-4">
-            <p className="text-[11px] font-bold uppercase tracking-wide text-muted-foreground mb-2">
-              Ingredients
-            </p>
-            <div className="space-y-1">
-              <ol className="space-y-0.5">
-                {aboveSalt.map((rawName, idx) => {
-                  const position = idx + 1
-                  const classified = data.classifiedByPosition.get(position)
-                  const matchedScore = findScoreForIngredient(classified, correlationScores)
-                  const scoreColor = matchedScore?.weightedPoopScore != null
-                    ? ingredientScoreColor(matchedScore.weightedPoopScore)
-                    : ""
+      }
+    >
+      <div className="flex flex-col sm:flex-row">
+        {/* Ingredients list */}
+        <div className="flex-1 p-4">
+          <p className="text-[11px] font-bold uppercase tracking-wide text-muted-foreground mb-2">
+            Ingredients
+          </p>
+          <div className="space-y-1">
+            <ol className="space-y-0.5">
+              {aboveSalt.map((rawName, idx) => {
+                const position = idx + 1
+                const classified = data.classifiedByPosition.get(position)
+                const matchedScore = findScoreForIngredient(classified, correlationScores)
+                const scoreColor = matchedScore?.weightedPoopScore != null
+                  ? ingredientScoreColor(matchedScore.weightedPoopScore)
+                  : ""
 
-                  return (
-                    <li key={position}>
-                      <div className="flex items-baseline gap-1.5 text-xs text-foreground">
-                        <span className="tabular-nums text-text-tertiary w-5 text-right shrink-0">{position}.</span>
-                        <span className={scoreColor}>
-                          {rawName}
-                        </span>
-                      </div>
-                    </li>
-                  )
-                })}
-              </ol>
-              {belowSalt.length > 0 && (
-                <>
-                  <div className="flex items-center gap-2 my-1.5">
-                    <div className="h-px flex-1 bg-border" />
-                    <span className="text-[10px] text-text-tertiary">Below 1%</span>
-                    <div className="h-px flex-1 bg-border" />
-                  </div>
-                  <p className="text-[9px] leading-tight text-text-tertiary">
-                    {belowSalt.join(", ")}
-                  </p>
-                </>
-              )}
-            </div>
+                return (
+                  <li key={position}>
+                    <div className="flex items-baseline gap-1.5 text-xs text-foreground">
+                      <span className="tabular-nums text-text-tertiary w-5 text-right shrink-0">{position}.</span>
+                      <span className={scoreColor}>
+                        {rawName}
+                      </span>
+                    </div>
+                  </li>
+                )
+              })}
+            </ol>
+            {belowSalt.length > 0 && (
+              <>
+                <div className="flex items-center gap-2 my-1.5">
+                  <div className="h-px flex-1 bg-border" />
+                  <span className="text-[10px] text-text-tertiary">Below 1%</span>
+                  <div className="h-px flex-1 bg-border" />
+                </div>
+                <p className="text-[9px] leading-tight text-text-tertiary">
+                  {belowSalt.join(", ")}
+                </p>
+              </>
+            )}
           </div>
-
-          {/* Nutrition label */}
-          {hasNutrition && (
-            <div className="shrink-0 border-t border-border bg-secondary p-4 sm:flex sm:w-[232px] sm:items-center sm:border-t-0 sm:border-l">
-              <NutritionLabel
-                variant="product"
-                data={nutritionData}
-                calorieContentRaw={nutrition?.calorieContent}
-              />
-            </div>
-          )}
         </div>
-      </PopoverContent>
-    </Popover>
+
+        {/* Nutrition label */}
+        {hasNutrition && (
+          <div className="shrink-0 border-t border-border bg-secondary p-4 sm:flex sm:w-[232px] sm:items-center sm:border-t-0 sm:border-l">
+            <NutritionLabel
+              variant="product"
+              data={nutritionData}
+              calorieContentRaw={nutrition?.calorieContent}
+            />
+          </div>
+        )}
+      </div>
+    </ResponsivePopover>
   )
 }

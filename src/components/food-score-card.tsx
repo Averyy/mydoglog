@@ -31,7 +31,7 @@ export function FoodScoreCard({
           <img
             src={largeImageUrl(imageUrl)}
             alt={productName}
-            className="h-28 w-auto object-contain mix-blend-multiply"
+            className="h-28 w-auto object-contain rounded-md mix-blend-multiply dark:mix-blend-normal"
           />
         ) : (
           <div className="flex h-28 items-center justify-center">

@@ -47,6 +47,7 @@ export async function PATCH(
     const body = await request.json()
     const updates: Record<string, unknown> = {}
 
+    if (body.productId !== undefined) updates.productId = body.productId
     if (body.quantity !== undefined) updates.quantity = body.quantity
     if (body.quantityUnit !== undefined) updates.quantityUnit = body.quantityUnit
     if (body.notes !== undefined) updates.notes = body.notes?.trim() || null

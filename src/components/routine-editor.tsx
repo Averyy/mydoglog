@@ -451,7 +451,6 @@ export function RoutineEditorContent({
             <ProductPicker
               value={item.product}
               onChange={(product) => updatePlanItem(item.key, { product })}
-              inline
               dogId={dogId}
             />
             <div className="flex items-center gap-2">

@@ -62,7 +62,7 @@ export function FoodScorecardForm({
 
       <CollapsibleNotes value={notes} onChange={setNotes} label="Add note" placeholder="Optional observations..." />
 
-      <div className="flex gap-2 pt-4">
+      <div className="flex justify-end gap-2 pt-4">
         <Button onClick={handleSave} disabled={poopQuality == null || itchSeverity == null} className="flex-1">
           Save
         </Button>

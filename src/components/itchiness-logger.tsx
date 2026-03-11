@@ -52,6 +52,8 @@ export function ItchScorePicker({
   const [canScrollLeft, setCanScrollLeft] = useState(false)
   const [canScrollRight, setCanScrollRight] = useState(false)
   const containerRef = useRef<HTMLDivElement | null>(null)
+  const valueRef = useRef(value)
+  valueRef.current = value
 
   const updateScrollState = useCallback((el: HTMLDivElement) => {
     setCanScrollLeft(el.scrollLeft > 2)
@@ -62,12 +64,22 @@ export function ItchScorePicker({
     (el: HTMLDivElement | null) => {
       containerRef.current = el
       if (!el) return
+      // Auto-scroll to pre-selected value on mount
+      if (valueRef.current !== null) {
+        const idx = scores.findIndex((s) => s.score === valueRef.current)
+        const card = el.children[idx] as HTMLElement | undefined
+        if (card) {
+          const cardCenter = card.offsetLeft + card.offsetWidth / 2
+          const scrollTarget = cardCenter - el.clientWidth / 2
+          el.scrollTo({ left: scrollTarget, behavior: "instant" })
+        }
+      }
       updateScrollState(el)
       const ro = new ResizeObserver(() => updateScrollState(el))
       ro.observe(el)
       return () => ro.disconnect()
     },
-    [updateScrollState],
+    [updateScrollState, scores],
   )
 
   function handleSelect(score: number): void {

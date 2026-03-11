@@ -3,13 +3,7 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-} from "@/components/ui/dialog"
+import { ResponsiveModal } from "@/components/responsive-modal"
 import { DogForm } from "@/components/dog-form"
 import { AddDogModal } from "@/components/add-dog-modal"
 import { DeleteDogButton } from "../dogs/delete-button"
@@ -77,19 +71,15 @@ export function SettingsClient({ dogs }: SettingsClientProps): React.ReactElemen
       </section>
 
       {/* Edit Dog Dialog */}
-      <Dialog open={!!editingDog} onOpenChange={(open) => !open && setEditingDog(null)}>
-        <DialogContent>
-          <DialogHeader>
-            <DialogTitle>Edit {editingDog?.name}</DialogTitle>
-            <DialogDescription className="sr-only">
-              Update your dog&apos;s details.
-            </DialogDescription>
-          </DialogHeader>
-          {editingDog && (
-            <DogForm dog={editingDog} onClose={() => setEditingDog(null)} />
-          )}
-        </DialogContent>
-      </Dialog>
+      <ResponsiveModal
+        open={!!editingDog}
+        onOpenChange={(open) => !open && setEditingDog(null)}
+        title={`Edit ${editingDog?.name ?? ""}`}
+      >
+        {editingDog && (
+          <DogForm dog={editingDog} onClose={() => setEditingDog(null)} />
+        )}
+      </ResponsiveModal>
     </div>
   )
 }

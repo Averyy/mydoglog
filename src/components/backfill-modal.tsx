@@ -258,7 +258,6 @@ export function BackfillModal({
               value={product?.product ?? null}
               onChange={handleProductSelected}
               placeholder="Search foods..."
-              inline
               dogId={dogId}
             />
           </div>

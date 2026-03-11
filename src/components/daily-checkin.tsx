@@ -388,7 +388,6 @@ export function DailyCheckInContent({
                 onChange={(p) => p && addTreat(p)}
                 productType="treat"
                 placeholder="Search to add treats..."
-                inline
                 dogId={dogId}
               />
 

@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server"
 import { requireDogOwnership, isNextResponse } from "@/lib/api-helpers"
 import { db, poopLogs, itchinessLogs, treatLogs, products, brands } from "@/lib/db"
-import { eq, desc, and, gte, lte } from "drizzle-orm"
+import { eq, desc, and, gte, lte, sql } from "drizzle-orm"
 import type { LogFeedEntry } from "@/lib/types"
 
 type RouteParams = { params: Promise<{ id: string }> }
@@ -40,6 +40,7 @@ export async function GET(
           date: poopLogs.date,
           datetime: poopLogs.datetime,
           firmnessScore: poopLogs.firmnessScore,
+          notes: poopLogs.notes,
         })
         .from(poopLogs)
         .where(
@@ -57,6 +58,8 @@ export async function GET(
           date: itchinessLogs.date,
           datetime: itchinessLogs.datetime,
           score: itchinessLogs.score,
+          bodyAreas: itchinessLogs.bodyAreas,
+          notes: itchinessLogs.notes,
         })
         .from(itchinessLogs)
         .where(
@@ -73,8 +76,11 @@ export async function GET(
           id: treatLogs.id,
           date: treatLogs.date,
           datetime: treatLogs.datetime,
+          productId: treatLogs.productId,
           productName: products.name,
+          brandId: products.brandId,
           brandName: brands.name,
+          imageUrl: sql<string | null>`${products.imageUrls}[1]`,
           quantity: treatLogs.quantity,
           quantityUnit: treatLogs.quantityUnit,
         })
@@ -98,14 +104,14 @@ export async function GET(
         type: "poop" as const,
         date: r.date,
         datetime: r.datetime?.toISOString() ?? null,
-        data: { firmnessScore: r.firmnessScore },
+        data: { firmnessScore: r.firmnessScore, notes: r.notes },
       })),
       ...itchRows.map((r) => ({
         id: r.id,
         type: "itch" as const,
         date: r.date,
         datetime: r.datetime?.toISOString() ?? null,
-        data: { score: r.score },
+        data: { score: r.score, bodyAreas: r.bodyAreas, notes: r.notes },
       })),
       ...treatRows.map((r) => ({
         id: r.id,
@@ -113,8 +119,11 @@ export async function GET(
         date: r.date,
         datetime: r.datetime?.toISOString() ?? null,
         data: {
+          productId: r.productId,
           productName: r.productName ?? "Unknown treat",
+          brandId: r.brandId,
           brandName: r.brandName,
+          imageUrl: r.imageUrl,
           quantity: r.quantity,
           quantityUnit: r.quantityUnit,
         },

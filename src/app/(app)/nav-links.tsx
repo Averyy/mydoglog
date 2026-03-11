@@ -1,5 +1,6 @@
 "use client"
 
+import { useState, useEffect } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import {
@@ -8,7 +9,10 @@ import {
   LiaPlusSolid,
   LiaDogSolid,
   LiaUtensilsSolid,
+  LiaSunSolid,
+  LiaMoonSolid,
 } from "react-icons/lia"
+import { useTheme } from "next-themes"
 import { cn, isNavActive } from "@/lib/utils"
 import { useActiveDog } from "@/components/active-dog-provider"
 import { toast } from "sonner"
@@ -35,6 +39,27 @@ function resolveHref(link: NavItem, activeDogId: string | null): string {
   return "/"
 }
 
+function ThemeToggle(): React.ReactElement {
+  const { resolvedTheme, setTheme } = useTheme()
+  const [mounted, setMounted] = useState(false)
+  useEffect(() => setMounted(true), [])
+
+  if (!mounted) {
+    return <span className="size-5" />
+  }
+
+  return (
+    <button
+      type="button"
+      onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
+      className="p-1 rounded text-text-tertiary hover:text-text-primary transition-colors"
+      aria-label="Toggle theme"
+    >
+      {resolvedTheme === "dark" ? <LiaSunSolid className="size-5" /> : <LiaMoonSolid className="size-5" />}
+    </button>
+  )
+}
+
 export function DesktopNavLinks(): React.ReactElement {
   const pathname = usePathname()
   const { activeDogId } = useActiveDog()
@@ -58,6 +83,7 @@ export function DesktopNavLinks(): React.ReactElement {
           </Link>
         )
       })}
+      <ThemeToggle />
     </nav>
   )
 }
@@ -89,7 +115,7 @@ export function BottomNav(): React.ReactElement {
                 type="button"
                 onClick={handleLogPress}
                 aria-label="Log"
-                className="flex min-h-[44px] min-w-[44px] flex-col items-center justify-center gap-0.5"
+                className="flex flex-1 min-h-[44px] flex-col items-center justify-center gap-0.5"
               >
                 <span className="flex size-10 items-center justify-center rounded-full bg-primary text-primary-foreground">
                   <Icon className="size-5" />
@@ -103,7 +129,7 @@ export function BottomNav(): React.ReactElement {
               key={link.label}
               href={href}
               className={cn(
-                "flex min-h-[44px] min-w-[44px] flex-col items-center justify-center gap-0.5",
+                "flex flex-1 min-h-[44px] flex-col items-center justify-center gap-0.5",
                 active ? "text-primary" : "text-text-tertiary",
               )}
             >

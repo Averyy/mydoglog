@@ -33,7 +33,7 @@ export function ProductItem({
           <img
             src={smallImageUrl(imageUrl)}
             alt=""
-            className="size-full rounded-md object-contain mix-blend-multiply"
+            className="size-full rounded-md object-contain mix-blend-multiply dark:mix-blend-normal"
           />
         </div>
       ) : (

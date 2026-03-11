@@ -18,11 +18,21 @@ export async function GET(
     const recent = searchParams.get("recent")
 
     if (recent) {
-      // Return N most recent distinct products
+      // Return N most recent distinct products, ordered by last usage
       const limit = Math.min(10, Math.max(1, parseInt(recent)))
-      const recentProducts = await db
+      const distinctSub = db
         .selectDistinctOn([treatLogs.productId], {
           productId: treatLogs.productId,
+          lastUsed: treatLogs.createdAt,
+        })
+        .from(treatLogs)
+        .where(eq(treatLogs.dogId, dogId))
+        .orderBy(treatLogs.productId, desc(treatLogs.createdAt))
+        .as("distinct_treats")
+
+      const recentProducts = await db
+        .select({
+          productId: distinctSub.productId,
           productName: products.name,
           brandName: brands.name,
           brandId: products.brandId,
@@ -32,13 +42,12 @@ export async function GET(
           lifestage: products.lifestage,
           imageUrl: sql<string | null>`${products.imageUrls}[1]`,
           isDiscontinued: products.isDiscontinued,
-          lastUsed: treatLogs.createdAt,
+          lastUsed: distinctSub.lastUsed,
         })
-        .from(treatLogs)
-        .innerJoin(products, eq(treatLogs.productId, products.id))
+        .from(distinctSub)
+        .innerJoin(products, eq(distinctSub.productId, products.id))
         .innerJoin(brands, eq(products.brandId, brands.id))
-        .where(eq(treatLogs.dogId, dogId))
-        .orderBy(treatLogs.productId, desc(treatLogs.createdAt))
+        .orderBy(desc(distinctSub.lastUsed))
         .limit(limit)
 
       return NextResponse.json(recentProducts)

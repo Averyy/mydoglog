@@ -3,7 +3,7 @@
 import { useMemo } from "react"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
-import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
+import { ResponsivePopover } from "@/components/responsive-popover"
 import { ProductIngredientList, type ProductIngredientListData } from "@/components/product-ingredient-list"
 import { NutritionLabel } from "@/components/nutrition-label"
 import { computeNutrition, type NutritionItem } from "@/lib/nutrition"
@@ -68,52 +68,51 @@ export function PastRoutineCard({
   return (
     <Card className="overflow-hidden gap-0 py-0">
       {/* Header: date + scores */}
-      <div className="flex items-center gap-3 px-4 pt-4 pb-3">
-        <div className="min-w-0 flex-1">
+      <div className="flex flex-col gap-2 px-4 pt-4 pb-3 sm:flex-row sm:items-center sm:gap-3">
+        <div className="min-w-0 sm:flex-1">
           <p className="text-sm font-semibold text-foreground">
             {formatDateRange(group.startDate, group.endDate)}
           </p>
         </div>
-        <div className="flex items-center gap-2 shrink-0">
-          <div className="flex items-center gap-1.5 rounded-md bg-score-strip px-2.5 py-1.5">
+        <div className="flex flex-wrap items-center gap-1.5 w-full xs:flex-nowrap sm:w-auto sm:gap-2 sm:shrink-0">
+          <div className="flex basis-[calc(50%-0.1875rem)] flex-1 items-center gap-1.5 rounded-md bg-score-strip px-2 py-1.5 xs:basis-auto">
             <span className={`text-base leading-none font-bold tabular-nums ${avgStool != null ? poopScoreColor(avgStool) : "text-muted-foreground"}`}>
               {avgStool ?? "-"}
             </span>
             <span className="text-xs leading-none font-medium uppercase tracking-wider text-muted-foreground">Stool</span>
           </div>
-          <div className="flex items-center gap-1.5 rounded-md bg-score-strip px-2.5 py-1.5">
+          <div className="flex basis-[calc(50%-0.1875rem)] flex-1 items-center gap-1.5 rounded-md bg-score-strip px-2 py-1.5 xs:basis-auto">
             <span className={`text-base leading-none font-bold tabular-nums ${avgItch != null ? itchScoreColor(avgItch) : "text-muted-foreground"}`}>
               {avgItch ?? "-"}
             </span>
             <span className="text-xs leading-none font-medium uppercase tracking-wider text-muted-foreground">Itch</span>
           </div>
-          <div className="flex items-center gap-1.5 rounded-md bg-score-strip px-2.5 py-1.5">
+          <div className="flex basis-[calc(50%-0.1875rem)] flex-1 items-center gap-1.5 rounded-md bg-score-strip px-2 py-1.5 xs:basis-auto">
             <span className="text-base leading-none font-bold tabular-nums text-muted-foreground">{days}</span>
             <span className="text-xs leading-none font-medium uppercase tracking-wider text-muted-foreground">Days</span>
           </div>
-          <Popover>
-            <PopoverTrigger asChild>
+          <ResponsivePopover
+            title="Combined Nutrition"
+            align="end"
+            contentClassName="p-4"
+            trigger={
               <button
                 type="button"
-                className="flex items-center gap-1.5 rounded-md bg-score-strip px-2.5 py-1.5 hover:bg-item-hover transition-colors"
+                className="flex basis-[calc(50%-0.1875rem)] flex-1 items-center gap-1.5 rounded-md bg-score-strip px-2 py-1.5 hover:bg-item-hover transition-colors xs:basis-auto"
               >
                 <span className="text-base leading-none font-bold tabular-nums text-muted-foreground">
                   {combinedNutrition.caloriesPerDay ?? "-"}
                 </span>
                 <span className="text-xs leading-none font-medium uppercase tracking-wider text-muted-foreground">Cal</span>
               </button>
-            </PopoverTrigger>
-            <PopoverContent
-              className="w-auto max-w-[min(90vw,560px)] max-h-[70vh] overflow-y-auto p-4"
-              align="end"
-            >
-              <NutritionLabel
-                data={combinedNutrition}
-                ingredientLists={ingredientLists}
-                compact
-              />
-            </PopoverContent>
-          </Popover>
+            }
+          >
+            <NutritionLabel
+              data={combinedNutrition}
+              ingredientLists={ingredientLists}
+              compact
+            />
+          </ResponsivePopover>
         </div>
       </div>
 
@@ -127,7 +126,7 @@ export function PastRoutineCard({
                   <img
                     src={smallImageUrl(item.imageUrl)}
                     alt=""
-                    className="size-full rounded-md object-contain mix-blend-multiply"
+                    className="size-full rounded-md object-contain mix-blend-multiply dark:mix-blend-normal"
                   />
                 ) : (
                   <span className="text-[8px] text-muted-foreground">No img</span>

@@ -36,7 +36,6 @@ export function LogActionSheet(): React.ReactElement {
         open={logMode === "selector"}
         onOpenChange={(open) => !open && close()}
         title="New log entry"
-        description="What would you like to log?"
       >
         <div className="py-2">
           {activeDogId && (

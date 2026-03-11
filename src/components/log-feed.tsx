@@ -1,11 +1,13 @@
 "use client"
 
 import { useState, useEffect, useCallback, useMemo } from "react"
-import { LiaCookieBiteSolid, LiaPoopSolid, LiaPawSolid } from "react-icons/lia"
+import { LiaPencilAltSolid } from "react-icons/lia"
+import { PoopIcon, TreatIcon, ItchIcon } from "@/components/themed-log-icons"
 import { format, parseISO, isToday, isYesterday } from "date-fns"
 import { poopScoreColor, itchScoreColor } from "@/components/score-grid"
 import { Button } from "@/components/ui/button"
 import { FECAL_SCORE_LABELS, ITCH_SCORE_LABELS } from "@/lib/labels"
+import { LogEntryEditor } from "@/components/log-entry-editor"
 import type { LogFeedEntry, LogFeedResponse } from "@/lib/types"
 
 function formatTime(datetime: string | null): string | null {
@@ -164,7 +166,7 @@ export function LogFeed({ dogId }: { dogId: string }): React.ReactElement {
             </h3>
             <div className="space-y-1">
               {dateEntries.map((entry) => (
-                <LogEntryRow key={entry.id} entry={entry} />
+                <LogEntryRow key={entry.id} entry={entry} dogId={dogId} onUpdated={() => fetchLogs()} />
               ))}
           </div>
         </div>
@@ -185,42 +187,85 @@ export function LogFeed({ dogId }: { dogId: string }): React.ReactElement {
   )
 }
 
-function LogEntryRow({ entry }: { entry: LogFeedEntry }): React.ReactElement {
+function LogEntryRow({
+  entry,
+  dogId,
+  onUpdated,
+}: {
+  entry: LogFeedEntry
+  dogId: string
+  onUpdated: () => void
+}): React.ReactElement {
+  const [editing, setEditing] = useState(false)
   const time = formatTime(entry.datetime)
+
+  function handleUpdated(): void {
+    onUpdated()
+    window.dispatchEvent(new CustomEvent("log-saved"))
+  }
+
+  const editButton = (
+    <button
+      type="button"
+      onClick={() => setEditing(true)}
+      className="p-1 rounded text-text-tertiary hover:text-text-primary hover:bg-item-hover transition-colors shrink-0"
+      aria-label="Edit log entry"
+    >
+      <LiaPencilAltSolid className="size-4" />
+    </button>
+  )
+
+  const editor = (
+    <LogEntryEditor
+      entry={entry}
+      dogId={dogId}
+      open={editing}
+      onOpenChange={setEditing}
+      onUpdated={handleUpdated}
+    />
+  )
 
   if (entry.type === "poop") {
     const score = entry.data.firmnessScore as number
     return (
-      <div className="flex items-center gap-3 rounded-lg border border-border px-3 py-2">
-        <LiaPoopSolid className="size-5 text-text-tertiary shrink-0" />
-        <div className="flex-1 min-w-0">
-          <span className={`text-sm font-bold tabular-nums ${poopScoreColor(score)}`}>
-            {score}
-          </span>
-          <span className="text-xs text-text-secondary ml-1.5">
-            {FECAL_SCORE_LABELS[score]} stool
-          </span>
+      <>
+        <div className="flex items-center gap-3 rounded-lg border border-border px-3 py-2">
+          <PoopIcon className="size-5 shrink-0" />
+          <div className="flex-1 min-w-0">
+            <span className={`text-sm font-bold tabular-nums ${poopScoreColor(score)}`}>
+              {score}
+            </span>
+            <span className="text-xs text-text-secondary ml-1.5">
+              {FECAL_SCORE_LABELS[score]} stool
+            </span>
+          </div>
+          {time && <span className="text-[11px] text-text-tertiary shrink-0">{time}</span>}
+          {editButton}
         </div>
-        {time && <span className="text-[11px] text-text-tertiary shrink-0">{time}</span>}
-      </div>
+        {editor}
+      </>
     )
   }
 
   if (entry.type === "itch") {
     const score = entry.data.score as number
     return (
-      <div className="flex items-center gap-3 rounded-lg border border-border px-3 py-2">
-        <LiaPawSolid className="size-5 text-text-tertiary shrink-0" />
-        <div className="flex-1 min-w-0">
-          <span className={`text-sm font-bold tabular-nums ${itchScoreColor(score)}`}>
-            {score}
-          </span>
-          <span className="text-xs text-text-secondary ml-1.5">
-            {ITCH_SCORE_LABELS[score]} itch
-          </span>
+      <>
+        <div className="flex items-center gap-3 rounded-lg border border-border px-3 py-2">
+          <ItchIcon className="size-5 shrink-0" />
+          <div className="flex-1 min-w-0">
+            <span className={`text-sm font-bold tabular-nums ${itchScoreColor(score)}`}>
+              {score}
+            </span>
+            <span className="text-xs text-text-secondary ml-1.5">
+              {ITCH_SCORE_LABELS[score]} itch
+            </span>
+          </div>
+          {time && <span className="text-[11px] text-text-tertiary shrink-0">{time}</span>}
+          {editButton}
         </div>
-        {time && <span className="text-[11px] text-text-tertiary shrink-0">{time}</span>}
-      </div>
+        {editor}
+      </>
     )
   }
 
@@ -230,17 +275,21 @@ function LogEntryRow({ entry }: { entry: LogFeedEntry }): React.ReactElement {
   const quantity = entry.data.quantity as number | null
   const quantityUnit = entry.data.quantityUnit as string | null
   return (
-    <div className="flex items-center gap-3 rounded-lg border border-border px-3 py-2">
-      <LiaCookieBiteSolid className="size-5 text-text-tertiary shrink-0" />
-      <div className="flex-1 min-w-0">
-        <span className="text-sm text-text-primary truncate">{brandName ? `${brandName} ${productName}` : productName}</span>
-        {quantity != null && (
-          <span className="text-xs text-text-secondary ml-1.5">
-            ×{quantity}{quantityUnit ? ` ${quantityUnit}` : ""}
-          </span>
-        )}
+    <>
+      <div className="flex items-center gap-3 rounded-lg border border-border px-3 py-2">
+        <TreatIcon className="size-5 shrink-0" />
+        <div className="flex-1 min-w-0 flex items-baseline gap-1.5">
+          <span className="text-sm text-text-secondary truncate">{brandName ? `${brandName} ${productName}` : productName}</span>
+          {quantity != null && (
+            <span className="text-xs text-text-secondary shrink-0">
+              ×{quantity}{quantityUnit ? ` ${quantityUnit}` : ""}
+            </span>
+          )}
+        </div>
+        {time && <span className="text-[11px] text-text-tertiary shrink-0">{time}</span>}
+        {editButton}
       </div>
-      {time && <span className="text-[11px] text-text-tertiary shrink-0">{time}</span>}
-    </div>
+      {editor}
+    </>
   )
 }

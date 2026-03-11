@@ -5,6 +5,8 @@ import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { useActiveDog } from "@/components/active-dog-provider"
 import { QuickLogGrid } from "@/components/quick-log-grid"
 import { LogFeed } from "@/components/log-feed"
+import { LiaSunSolid, LiaMoonSolid } from "react-icons/lia"
+import { useTheme } from "next-themes"
 
 interface DogBasic {
   id: string
@@ -46,15 +48,18 @@ export function DashboardClient({
       )}
 
       {/* Header */}
-      <div>
-        <h1 className="text-[32px] font-bold leading-tight text-text-primary">
-          {activeDog.name}
-        </h1>
-        {activeDog.breed && (
-          <p className="mt-0.5 text-sm text-text-secondary">
-            {activeDog.breed}
-          </p>
-        )}
+      <div className="flex items-start justify-between">
+        <div>
+          <h1 className="text-[32px] font-bold leading-tight text-text-primary">
+            {activeDog.name}
+          </h1>
+          {activeDog.breed && (
+            <p className="mt-0.5 text-sm text-text-secondary">
+              {activeDog.breed}
+            </p>
+          )}
+        </div>
+        <MobileThemeToggle />
       </div>
 
       {/* Quick-log grid */}
@@ -63,10 +68,31 @@ export function DashboardClient({
       {/* Log feed */}
       <div className="space-y-3">
         <p className="text-xs font-medium uppercase tracking-[0.05em] text-text-tertiary">
-          Recent
+          Recent Updates
         </p>
         <LogFeed dogId={activeDog.id} />
       </div>
     </div>
+  )
+}
+
+function MobileThemeToggle(): React.ReactElement {
+  const { resolvedTheme, setTheme } = useTheme()
+  const [mounted, setMounted] = useState(false)
+  useEffect(() => setMounted(true), [])
+
+  if (!mounted) {
+    return <span className="mt-2 size-5 md:hidden" />
+  }
+
+  return (
+    <button
+      type="button"
+      onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
+      className="mt-2 p-1.5 rounded-lg text-text-tertiary hover:text-text-primary hover:bg-item-hover transition-colors md:hidden"
+      aria-label="Toggle theme"
+    >
+      {resolvedTheme === "dark" ? <LiaSunSolid className="size-5" /> : <LiaMoonSolid className="size-5" />}
+    </button>
   )
 }

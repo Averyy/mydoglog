@@ -133,7 +133,7 @@ export function DogForm({ dog, onClose }: DogFormProps) {
           onChange={(e) => setNotes(e.target.value)}
         />
       </div>
-      <div className="flex gap-3">
+      <div className="flex justify-end gap-3">
         <Button
           type="button"
           variant="outline"

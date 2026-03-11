@@ -4,29 +4,33 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+@theme inline {
+  --breakpoint-xs: 440px;
+}
+
 @theme {
-  --color-bg-primary: #FFFFFF;
-  --color-bg-secondary: #F4EDE3;
-  --color-bg-tertiary: #E8DCC8;
-  --color-text-primary: #2E2A27;
-  --color-text-secondary: #6B5D4F;
-  --color-text-tertiary: #8A7A69;
-  --color-accent: #6B8C6F;
-  --color-accent-hover: #5A7A5E;
-  --color-border: #D9CFC3;
-  --color-score-excellent: #6B8C6F;
-  --color-score-good: #8FB896;
-  --color-score-fair: #D4A944;
-  --color-score-poor: #C97C5D;
-  --color-score-critical: #B84A3A;
-  --color-score-excellent-text: #4A6E4E;
-  --color-score-good-text: #4A7A4F;
-  --color-score-fair-text: #9A7A1E;
-  --color-score-poor-text: #A8613D;
-  --color-score-critical-text: #963828;
-  --color-exposure: #B84A3A;
-  --color-medication: #8B7EB8;
-  --color-food-period: #6B8C6F;
+  --color-bg-primary: var(--bg-primary);
+  --color-bg-secondary: var(--bg-secondary);
+  --color-bg-tertiary: var(--bg-tertiary);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-tertiary: var(--text-tertiary);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-border: var(--border);
+  --color-score-excellent: var(--score-excellent);
+  --color-score-good: var(--score-good);
+  --color-score-fair: var(--score-fair);
+  --color-score-poor: var(--score-poor);
+  --color-score-critical: var(--score-critical);
+  --color-score-excellent-text: var(--score-excellent-text);
+  --color-score-good-text: var(--score-good-text);
+  --color-score-fair-text: var(--score-fair-text);
+  --color-score-poor-text: var(--score-poor-text);
+  --color-score-critical-text: var(--score-critical-text);
+  --color-exposure: var(--exposure);
+  --color-medication: var(--medication);
+  --color-food-period: var(--food-period);
 }
 
 @layer base {
@@ -122,6 +126,26 @@
 
 :root {
   --radius: 0.5rem;
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #F4EDE3;
+  --bg-tertiary: #E8DCC8;
+  --text-primary: #2E2A27;
+  --text-secondary: #6B5D4F;
+  --text-tertiary: #8A7A69;
+  --accent-hover: #5A7A5E;
+  --score-excellent: #6B8C6F;
+  --score-good: #8FB896;
+  --score-fair: #D4A944;
+  --score-poor: #C97C5D;
+  --score-critical: #B84A3A;
+  --score-excellent-text: #4A6E4E;
+  --score-good-text: #4A7A4F;
+  --score-fair-text: #9A7A1E;
+  --score-poor-text: #A8613D;
+  --score-critical-text: #963828;
+  --exposure: #B84A3A;
+  --medication: #8B7EB8;
+  --food-period: #6B8C6F;
   --background: #FFFFFF;
   --foreground: #2E2A27;
   --card: #FFFFFF;
@@ -161,13 +185,16 @@
   --icon-poop-bg: #EDE0D4;
   --icon-poop-fg: #7A6041;
   --icon-treat-bg: #FAEDDA;
-  --icon-treat-fg: #C27C4E;
-  --icon-itch-bg: #F5E1DD;
-  --icon-itch-fg: #C25B4A;
+  --icon-treat-fg: #A86520;
+  --icon-itch-bg: #E8E0F0;
+  --icon-itch-fg: #9272B8;
   --icon-checkin-bg: #E5EADE;
   --icon-checkin-fg: #5A7A5E;
   --icon-checkin-empty-bg: #E8DCC8;
   --icon-checkin-empty-fg: #8A7A69;
+  --input-surface: #FFFFFF;
+  --input-surface-hover: #faf8f4;
+  --input-surface-active: #f0ede7;
   --chart-1: #6B8C6F;
   --chart-2: #C27C4E;
   --chart-3: #D4A944;
@@ -184,18 +211,38 @@
 }
 
 .dark {
+  --bg-primary: #1A1814;
+  --bg-secondary: #141210;
+  --bg-tertiary: #2E2A23;
+  --text-primary: #F0EBE3;
+  --text-secondary: rgba(240,235,227,0.7);
+  --text-tertiary: rgba(240,235,227,0.5);
+  --accent-hover: #7DA684;
+  --score-excellent: #8FB896;
+  --score-good: #A8CCA8;
+  --score-fair: #D4A944;
+  --score-poor: #D4966E;
+  --score-critical: #D4685A;
+  --score-excellent-text: #8FB896;
+  --score-good-text: #A8CCA8;
+  --score-fair-text: #D4A944;
+  --score-poor-text: #D4966E;
+  --score-critical-text: #D4685A;
+  --exposure: #D4685A;
+  --medication: #A99BD0;
+  --food-period: #8FB896;
   --background: #1A1814;
-  --foreground: #F0EBE3;
+  --foreground: #D4CFC7;
   --card: #242019;
   --card-foreground: #F0EBE3;
   --popover: #242019;
   --popover-foreground: #F0EBE3;
   --primary: #8FB896;
   --primary-foreground: #1A1814;
-  --secondary: #242019;
-  --secondary-foreground: #F0EBE3;
+  --secondary: #363028;
+  --secondary-foreground: #D4CFC7;
   --muted: #2E2A23;
-  --muted-foreground: rgba(240,235,227,0.6);
+  --muted-foreground: rgba(240,235,227,0.85);
   --accent: #8FB896;
   --accent-foreground: #1A1814;
   --destructive: #D4685A;
@@ -203,7 +250,7 @@
   --input: rgba(240,235,227,0.15);
   --ring: #8FB896;
   --item-hover-subtle: #1f1c17;
-  --item-hover: #242019;
+  --item-hover: #2E2A22;
   --item-active: #2E2A23;
   --secondary-hover: #2E2A23;
   --primary-hover: #7DA684;
@@ -215,7 +262,7 @@
   --ring-destructive-strong: rgba(212,104,90,0.5);
   --foreground-muted-60: #9A9790;
   --border-light: #272520;
-  --muted-subtle: #221f1a;
+  --muted-subtle: #2A2620;
   --score-strip: #2a2518;
   --score-excellent-bg: #22241d;
   --score-fair-bg: #2d2719;
@@ -223,9 +270,9 @@
   --icon-poop-bg: #302820;
   --icon-poop-fg: #C9A882;
   --icon-treat-bg: #2D2618;
-  --icon-treat-fg: #D4966E;
-  --icon-itch-bg: #2A1D18;
-  --icon-itch-fg: #D4685A;
+  --icon-treat-fg: #C07830;
+  --icon-itch-bg: #221E2A;
+  --icon-itch-fg: #C0A0E0;
   --icon-checkin-bg: #22241d;
   --icon-checkin-fg: #8FB896;
   --icon-checkin-empty-bg: #2E2A23;
@@ -277,6 +324,18 @@
   bottom: auto !important;
   transform: none !important;
   width: 100% !important;
+}
+
+/* Nutrition label — always render in light theme to look like a physical FDA label */
+.dark .nutrition-label {
+  --foreground: #2E2A27;
+  --muted-foreground: #6B5D4F;
+  --muted-subtle: #faf8f4;
+  --muted: #E8DCC8;
+  --primary: #6B8C6F;
+  background: var(--muted-subtle);
+  border-color: var(--foreground);
+  color: var(--foreground);
 }
 
 /* Hide scrollbar while allowing scroll */

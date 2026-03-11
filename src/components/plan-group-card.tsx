@@ -3,7 +3,7 @@
 import { useMemo } from "react"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
-import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
+import { ResponsivePopover } from "@/components/responsive-popover"
 import { ProductIngredientList, type ProductIngredientListData } from "@/components/product-ingredient-list"
 import { NutritionLabel } from "@/components/nutrition-label"
 import { computeNutrition, type NutritionItem } from "@/lib/nutrition"
@@ -77,9 +77,9 @@ export function PlanGroupCard({
   return (
     <Card className={`overflow-hidden gap-0 py-0 ${isCurrent ? "border-dashed" : ""}`}>
       {/* Header: label + date | scores | edit */}
-      <div className="flex items-center gap-3 px-4 pt-4 pb-3">
+      <div className="flex flex-col gap-2 px-4 pt-4 pb-3 sm:flex-row sm:items-center sm:gap-3">
         {/* Left: label + date */}
-        <div className="min-w-0 flex-1 self-center">
+        <div className="min-w-0 sm:flex-1">
           {isCurrent ? (
             <p className="text-sm font-semibold text-foreground">
               Current Daily Routine <span className="font-normal text-muted-foreground">({dateLabel})</span>
@@ -96,47 +96,46 @@ export function PlanGroupCard({
           )}
         </div>
 
-        {/* Right: score chips */}
-        <div className="flex items-center gap-2 shrink-0">
-          <div className="flex items-center gap-1.5 rounded-md bg-score-strip px-2.5 py-1.5">
+        {/* Score chips — full width on mobile */}
+        <div className="flex flex-wrap items-center gap-1.5 w-full xs:flex-nowrap sm:w-auto sm:gap-2 sm:shrink-0">
+          <div className="flex basis-[calc(50%-0.1875rem)] flex-1 items-center gap-1.5 rounded-md bg-score-strip px-2 py-1.5 xs:basis-auto">
             <span className={`text-base leading-none font-bold tabular-nums ${avgStool != null ? poopScoreColor(avgStool) : "text-muted-foreground"}`}>
               {avgStool ?? "-"}
             </span>
             <span className="text-xs leading-none font-medium uppercase tracking-wider text-muted-foreground">Stool</span>
           </div>
-          <div className="flex items-center gap-1.5 rounded-md bg-score-strip px-2.5 py-1.5">
+          <div className="flex basis-[calc(50%-0.1875rem)] flex-1 items-center gap-1.5 rounded-md bg-score-strip px-2 py-1.5 xs:basis-auto">
             <span className={`text-base leading-none font-bold tabular-nums ${avgItch != null ? itchScoreColor(avgItch) : "text-muted-foreground"}`}>
               {avgItch ?? "-"}
             </span>
             <span className="text-xs leading-none font-medium uppercase tracking-wider text-muted-foreground">Itch</span>
           </div>
-          <div className="flex items-center gap-1.5 rounded-md bg-score-strip px-2.5 py-1.5">
+          <div className="flex basis-[calc(50%-0.1875rem)] flex-1 items-center gap-1.5 rounded-md bg-score-strip px-2 py-1.5 xs:basis-auto">
             <span className="text-base leading-none font-bold tabular-nums text-muted-foreground">{days}</span>
             <span className="text-xs leading-none font-medium uppercase tracking-wider text-muted-foreground">Days</span>
           </div>
-          <Popover>
-            <PopoverTrigger asChild>
+          <ResponsivePopover
+            title="Combined Nutrition"
+            align="end"
+            contentClassName="p-4"
+            trigger={
               <button
                 type="button"
-                className="flex items-center gap-1.5 rounded-md bg-score-strip px-2.5 py-1.5 hover:bg-item-hover transition-colors"
+                className="flex basis-[calc(50%-0.1875rem)] flex-1 items-center gap-1.5 rounded-md bg-score-strip px-2 py-1.5 hover:bg-item-hover transition-colors xs:basis-auto"
               >
                 <span className="text-base leading-none font-bold tabular-nums text-muted-foreground">
                   {combinedNutrition.caloriesPerDay ?? "-"}
                 </span>
                 <span className="text-xs leading-none font-medium uppercase tracking-wider text-muted-foreground">Cal</span>
               </button>
-            </PopoverTrigger>
-            <PopoverContent
-              className="w-auto max-w-[min(90vw,560px)] max-h-[70vh] overflow-y-auto p-4"
-              align="end"
-            >
-              <NutritionLabel
-                data={combinedNutrition}
-                ingredientLists={ingredientLists}
-                compact
-              />
-            </PopoverContent>
-          </Popover>
+            }
+          >
+            <NutritionLabel
+              data={combinedNutrition}
+              ingredientLists={ingredientLists}
+              compact
+            />
+          </ResponsivePopover>
         </div>
 
         {/* Badges + edit (non-current backfills only) */}
@@ -173,7 +172,7 @@ export function PlanGroupCard({
                   <img
                     src={largeImageUrl(item.imageUrl)}
                     alt=""
-                    className="h-24 w-auto object-contain mix-blend-multiply"
+                    className="h-24 w-auto object-contain rounded-md mix-blend-multiply dark:mix-blend-normal"
                   />
                 ) : (
                   <div className="h-24 flex items-center justify-center">
@@ -207,7 +206,7 @@ export function PlanGroupCard({
         {group.treats.length > 0 && (
           <div className="mt-3">
             <p className="text-[11px] font-medium uppercase tracking-wider text-muted-foreground mb-2">Treats</p>
-            <div className="grid grid-cols-2 gap-2">
+            <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
               {group.treats.map((treat) => (
                 <div key={treat.productId} className="flex items-center gap-2.5 rounded-md border border-border-light px-2.5 py-2">
                   <div className="size-8 shrink-0 rounded bg-muted-subtle flex items-center justify-center">
@@ -215,7 +214,7 @@ export function PlanGroupCard({
                       <img
                         src={smallImageUrl(treat.imageUrl)}
                         alt=""
-                        className="size-full rounded object-contain mix-blend-multiply"
+                        className="size-full rounded object-contain mix-blend-multiply dark:mix-blend-normal"
                       />
                     ) : (
                       <span className="text-[8px] text-muted-foreground">No img</span>
