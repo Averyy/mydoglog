@@ -18,7 +18,7 @@ import {
 } from "@/components/ui/command"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { ChevronsUpDown } from "lucide-react"
+import { LiaSortSolid } from "react-icons/lia"
 import { cn, smallImageUrl } from "@/lib/utils"
 import { useIsMobile } from "@/hooks/use-is-mobile"
 import type { ProductSummary } from "@/lib/types"
@@ -338,7 +338,7 @@ export function ProductPicker({
       ) : (
         placeholder
       )}
-      <ChevronsUpDown className="ml-2 size-4 shrink-0 text-text-tertiary" />
+      <LiaSortSolid className="ml-2 size-4 shrink-0 text-text-tertiary" />
     </Button>
   )
 

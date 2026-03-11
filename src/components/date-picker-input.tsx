@@ -13,7 +13,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover"
-import { CalendarIcon } from "lucide-react"
+import { LiaCalendarAltSolid } from "react-icons/lia"
 import { format, parse, isValid } from "date-fns"
 
 interface DatePickerInputProps {
@@ -108,7 +108,7 @@ export function DatePickerInput({
               size="icon-xs"
               aria-label="Select date"
             >
-              <CalendarIcon />
+              <LiaCalendarAltSolid />
             </InputGroupButton>
           </PopoverTrigger>
           <PopoverContent

@@ -26,7 +26,16 @@ export async function savePhoto(
     .jpeg({ quality: 85 })
     .toBuffer()
 
+  // Validate date format to prevent path traversal
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) {
+    throw new Error("Invalid date format")
+  }
+
   const dir = path.join(PHOTOS_DIR, dogId, date)
+  const resolved = path.resolve(dir)
+  if (!resolved.startsWith(path.resolve(PHOTOS_DIR))) {
+    throw new Error("Invalid path")
+  }
   await fs.mkdir(dir, { recursive: true })
 
   const filename = `${randomUUID()}.jpg`

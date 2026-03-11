@@ -1,40 +1,9 @@
 import { NextRequest, NextResponse } from "next/server"
-import { auth } from "@/lib/auth"
-import { headers } from "next/headers"
-import { db, feedingPeriods, dogs, foodScorecards } from "@/lib/db"
-import { eq, and } from "drizzle-orm"
+import { requirePlanGroupOwnership, isNextResponse } from "@/lib/api-helpers"
+import { db, foodScorecards } from "@/lib/db"
+import { eq } from "drizzle-orm"
 
 type RouteParams = { params: Promise<{ planGroupId: string }> }
-
-async function verifyPlanOwnership(
-  planGroupId: string,
-): Promise<{ userId: string; isBackfill: boolean } | NextResponse> {
-  const session = await auth.api.getSession({ headers: await headers() })
-  if (!session?.user) {
-    return NextResponse.json({ error: "Unauthorized" }, { status: 401 })
-  }
-
-  const [period] = await db
-    .select({ dogId: feedingPeriods.dogId, isBackfill: feedingPeriods.isBackfill })
-    .from(feedingPeriods)
-    .where(eq(feedingPeriods.planGroupId, planGroupId))
-    .limit(1)
-
-  if (!period) {
-    return NextResponse.json({ error: "Not found" }, { status: 404 })
-  }
-
-  const [dog] = await db
-    .select({ id: dogs.id })
-    .from(dogs)
-    .where(and(eq(dogs.id, period.dogId), eq(dogs.ownerId, session.user.id)))
-
-  if (!dog) {
-    return NextResponse.json({ error: "Not found" }, { status: 404 })
-  }
-
-  return { userId: session.user.id, isBackfill: period.isBackfill }
-}
 
 export async function GET(
   _request: NextRequest,
@@ -42,8 +11,8 @@ export async function GET(
 ): Promise<NextResponse> {
   try {
     const { planGroupId } = await params
-    const ownerResult = await verifyPlanOwnership(planGroupId)
-    if (ownerResult instanceof NextResponse) return ownerResult
+    const ownerResult = await requirePlanGroupOwnership(planGroupId)
+    if (isNextResponse(ownerResult)) return ownerResult
 
     const [scorecard] = await db
       .select()
@@ -72,8 +41,8 @@ export async function PUT(
 ): Promise<NextResponse> {
   try {
     const { planGroupId } = await params
-    const ownerResult = await verifyPlanOwnership(planGroupId)
-    if (ownerResult instanceof NextResponse) return ownerResult
+    const ownerResult = await requirePlanGroupOwnership(planGroupId)
+    if (isNextResponse(ownerResult)) return ownerResult
 
     if (!ownerResult.isBackfill) {
       return NextResponse.json(

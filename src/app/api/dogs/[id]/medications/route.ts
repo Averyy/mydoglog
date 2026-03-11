@@ -3,6 +3,7 @@ import { requireDogOwnership, isNextResponse } from "@/lib/api-helpers"
 import { db, medications, medicationProducts, dosingIntervalEnum } from "@/lib/db"
 import { eq, desc } from "drizzle-orm"
 import type { MedicationSummary } from "@/lib/types"
+import { getToday } from "@/lib/utils"
 
 const VALID_INTERVALS = new Set<string>(dosingIntervalEnum.enumValues)
 
@@ -76,7 +77,7 @@ export async function POST(
       )
     }
 
-    const today = new Date().toISOString().split("T")[0]
+    const today = getToday()
 
     const [created] = await db
       .insert(medications)

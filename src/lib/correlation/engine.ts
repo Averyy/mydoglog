@@ -4,6 +4,7 @@
  */
 
 import { resolveActivePlan } from "@/lib/feeding"
+import { capitalize } from "@/lib/utils"
 import { gramsPerServing } from "@/lib/nutrition"
 import type {
   IngredientRecord,
@@ -26,8 +27,9 @@ import { DEFAULT_SCORING_CONSTANTS } from "./types"
 // Helpers
 // ---------------------------------------------------------------------------
 
-/** Average an array of scores, rounding to one decimal. */
+/** Average an array of scores, rounding to one decimal. Returns 0 for empty arrays. */
 export function averageScores(scores: number[]): number {
+  if (scores.length === 0) return 0
   const sum = scores.reduce((a, b) => a + b, 0)
   return Math.round((sum / scores.length) * 10) / 10
 }
@@ -238,12 +240,48 @@ function resolveIngredientsForProducts(
   }))
 }
 
+/** Build a Map from date string to array of items for O(1) date lookups. */
+function indexByDate<T extends { date: string }>(items: T[]): Map<string, T[]> {
+  const map = new Map<string, T[]>()
+  for (const item of items) {
+    const existing = map.get(item.date)
+    if (existing) {
+      existing.push(item)
+    } else {
+      map.set(item.date, [item])
+    }
+  }
+  return map
+}
+
+/** Pre-indexed lookup tables for O(1) per-date access in the day loop. */
+interface DateIndex {
+  poopByDate: Map<string, CorrelationInput["poopLogs"]>
+  itchByDate: Map<string, CorrelationInput["itchinessLogs"]>
+  pollenByDate: Map<string, CorrelationInput["pollenLogs"]>
+  treatByDate: Map<string, CorrelationInput["treatLogs"]>
+  exposureDates: Set<string>
+  scorecardByGroupId: Map<string, CorrelationInput["scorecards"][number]>
+}
+
+function buildDateIndex(input: CorrelationInput): DateIndex {
+  return {
+    poopByDate: indexByDate(input.poopLogs),
+    itchByDate: indexByDate(input.itchinessLogs),
+    pollenByDate: indexByDate(input.pollenLogs),
+    treatByDate: indexByDate(input.treatLogs),
+    exposureDates: new Set(input.accidentalExposures.map((e) => e.date)),
+    scorecardByGroupId: new Map(input.scorecards.map((sc) => [sc.planGroupId, sc])),
+  }
+}
+
 function buildDayOutcome(
   date: string,
   input: CorrelationInput,
+  idx: DateIndex,
 ): DayOutcome {
   // Poop score: average of all logs for this date
-  const poopLogsForDate = input.poopLogs.filter((l) => l.date === date)
+  const poopLogsForDate = idx.poopByDate.get(date) ?? []
   const poopScore =
     poopLogsForDate.length > 0
       ? poopLogsForDate.reduce((sum, l) => sum + l.firmnessScore, 0) /
@@ -251,7 +289,7 @@ function buildDayOutcome(
       : null
 
   // Itch score: average of all logs for this date
-  const itchLogsForDate = input.itchinessLogs.filter((l) => l.date === date)
+  const itchLogsForDate = idx.itchByDate.get(date) ?? []
   const itchScore =
     itchLogsForDate.length > 0
       ? itchLogsForDate.reduce((sum, l) => sum + l.score, 0) /
@@ -263,9 +301,7 @@ function buildDayOutcome(
   if (poopScore == null) {
     const activePlanGroupId = resolveActivePlan(input.planPeriods, date)
     if (activePlanGroupId != null) {
-      const scorecard = input.scorecards.find(
-        (sc) => sc.planGroupId === activePlanGroupId,
-      )
+      const scorecard = idx.scorecardByGroupId.get(activePlanGroupId)
       if (scorecard?.poopQuality != null && scorecard.poopQuality.length > 0) {
         scorecardPoopFallback = averageScores(scorecard.poopQuality)
       }
@@ -273,13 +309,11 @@ function buildDayOutcome(
   }
 
   // Pollen
-  const pollenLog = input.pollenLogs.find((l) => l.date === date)
-  const pollenIndex = pollenLog?.pollenIndex ?? null
+  const pollenLogs = idx.pollenByDate.get(date)
+  const pollenIndex = pollenLogs?.[0]?.pollenIndex ?? null
 
   // Accidental exposure
-  const hasAccidentalExposure = input.accidentalExposures.some(
-    (e) => e.date === date,
-  )
+  const hasAccidentalExposure = idx.exposureDates.has(date)
 
   return {
     poopScore,
@@ -301,8 +335,8 @@ export function buildDaySnapshots(
   const dates = enumerateDates(input.windowStart, input.windowEnd)
   const snapshots: DaySnapshot[] = []
 
-  // Pre-index exposure dates for quick lookup
-  const exposureDates = new Set(input.accidentalExposures.map((e) => e.date))
+  // Pre-index all log arrays by date for O(1) lookups
+  const idx = buildDateIndex(input)
 
   let prevFoodProductIds: Set<string> | null = null
   let transitionCountdown = 0
@@ -320,9 +354,7 @@ export function buildDaySnapshots(
     }
 
     // Collect treat products for this date with gram estimates
-    const treatLogsForDate = input.treatLogs.filter(
-      (t) => t.date === date,
-    )
+    const treatLogsForDate = idx.treatByDate.get(date) ?? []
     const treatProductIds = new Set(treatLogsForDate.map((t) => t.productId))
     for (const t of treatLogsForDate) {
       const info = input.productInfo.get(t.productId)
@@ -352,7 +384,7 @@ export function buildDaySnapshots(
 
     // Exposure buffer: check if any exposure occurred within the last N days
     let isExposureBuffer = false
-    for (const expDate of exposureDates) {
+    for (const expDate of idx.exposureDates) {
       const diff = daysBetween(expDate, date)
       if (diff >= 0 && diff < options.exposureBufferDays) {
         isExposureBuffer = true
@@ -361,7 +393,7 @@ export function buildDaySnapshots(
     }
 
     // Build outcome
-    const outcome = buildDayOutcome(date, input)
+    const outcome = buildDayOutcome(date, input, idx)
 
     snapshots.push({
       date,
@@ -737,10 +769,6 @@ export function flagCrossReactivity(
   }
 
   return result
-}
-
-function capitalize(s: string): string {
-  return s.charAt(0).toUpperCase() + s.slice(1)
 }
 
 // ---------------------------------------------------------------------------

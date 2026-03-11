@@ -8,7 +8,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover"
-import { CalendarIcon } from "lucide-react"
+import { LiaCalendarAltSolid } from "react-icons/lia"
 import { format, parse, isValid } from "date-fns"
 import { type DateRange, type Matcher } from "react-day-picker"
 import { cn } from "@/lib/utils"
@@ -69,7 +69,7 @@ export function DateRangePicker({
             className,
           )}
         >
-          <CalendarIcon className="size-4 shrink-0 text-muted-foreground" />
+          <LiaCalendarAltSolid className="size-4 shrink-0 text-muted-foreground" />
           {fromDate ? (
             toDate_ ? (
               <>

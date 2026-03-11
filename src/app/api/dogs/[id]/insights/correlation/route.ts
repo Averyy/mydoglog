@@ -6,6 +6,7 @@ import { fetchCorrelationInput, fetchIngredientProductMap, buildGiIngredientProd
 import { runCorrelation } from "@/lib/correlation/engine"
 import { DEFAULT_CORRELATION_OPTIONS } from "@/lib/correlation/types"
 import type { IngredientProductEntry } from "@/lib/correlation/types"
+import { getToday } from "@/lib/utils"
 
 type RouteParams = { params: Promise<{ id: string }> }
 
@@ -18,7 +19,7 @@ export async function GET(
     const authResult = await requireDogOwnership(dogId)
     if (isNextResponse(authResult)) return authResult
 
-    const today = new Date().toISOString().split("T")[0]
+    const today = getToday()
 
     // Window = earliest NON-BACKFILL feeding period → today.
     // Backfill dates outside this window are included by buildBackfillSnapshots.

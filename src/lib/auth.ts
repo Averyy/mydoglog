@@ -31,7 +31,7 @@ export const auth = betterAuth({
     requireEmailVerification: false,
   },
 
-  trustedOrigins: ["http://localhost:*", "https://mydoglog.ca"],
+  trustedOrigins: ["http://localhost:3847", "https://mydoglog.ca"],
 
   rateLimit: {
     enabled: true,

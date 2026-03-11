@@ -1,8 +1,8 @@
 import { NextResponse } from "next/server"
 import { requireDogOwnership, isNextResponse } from "@/lib/api-helpers"
 import { db, poopLogs, itchinessLogs, treatLogs } from "@/lib/db"
-import { eq, and } from "drizzle-orm"
-import { sql } from "drizzle-orm"
+import { eq, and, sql } from "drizzle-orm"
+import { getToday } from "@/lib/utils"
 
 type RouteParams = { params: Promise<{ id: string }> }
 
@@ -15,7 +15,7 @@ export async function GET(
     const authResult = await requireDogOwnership(dogId)
     if (isNextResponse(authResult)) return authResult
 
-    const today = new Date().toLocaleDateString("en-CA", { timeZone: "America/Toronto" })
+    const today = getToday()
 
     const [poopCount, itchCount, treatCount] = await Promise.all([
       db

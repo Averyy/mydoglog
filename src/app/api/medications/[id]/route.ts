@@ -1,44 +1,11 @@
 import { NextRequest, NextResponse } from "next/server"
-import { auth } from "@/lib/auth"
-import { headers } from "next/headers"
-import { db, medications, dogs, dosingIntervalEnum } from "@/lib/db"
-import { eq, and } from "drizzle-orm"
+import { requireLogOwnership, isNextResponse } from "@/lib/api-helpers"
+import { db, medications, dosingIntervalEnum } from "@/lib/db"
+import { eq } from "drizzle-orm"
 
 const VALID_INTERVALS = new Set<string>(dosingIntervalEnum.enumValues)
 
 type RouteParams = { params: Promise<{ id: string }> }
-
-/**
- * Verify that the current user owns the medication (medication -> dog -> owner).
- */
-async function verifyMedicationOwnership(
-  medicationId: string,
-): Promise<{ error: NextResponse } | { medication: typeof medications.$inferSelect }> {
-  const session = await auth.api.getSession({ headers: await headers() })
-  if (!session?.user) {
-    return { error: NextResponse.json({ error: "Unauthorized" }, { status: 401 }) }
-  }
-
-  const [med] = await db
-    .select()
-    .from(medications)
-    .where(eq(medications.id, medicationId))
-
-  if (!med) {
-    return { error: NextResponse.json({ error: "Not found" }, { status: 404 }) }
-  }
-
-  const [dog] = await db
-    .select()
-    .from(dogs)
-    .where(and(eq(dogs.id, med.dogId), eq(dogs.ownerId, session.user.id)))
-
-  if (!dog) {
-    return { error: NextResponse.json({ error: "Not found" }, { status: 404 }) }
-  }
-
-  return { medication: med }
-}
 
 interface MedicationPatchBody {
   name?: string
@@ -55,8 +22,8 @@ export async function PATCH(
 ): Promise<NextResponse> {
   try {
     const { id: medicationId } = await params
-    const ownership = await verifyMedicationOwnership(medicationId)
-    if ("error" in ownership) return ownership.error
+    const ownership = await requireLogOwnership(medications, medicationId)
+    if (isNextResponse(ownership)) return ownership
 
     const body = (await request.json()) as MedicationPatchBody
 
@@ -100,8 +67,8 @@ export async function DELETE(
 ): Promise<NextResponse> {
   try {
     const { id: medicationId } = await params
-    const ownership = await verifyMedicationOwnership(medicationId)
-    if ("error" in ownership) return ownership.error
+    const ownership = await requireLogOwnership(medications, medicationId)
+    if (isNextResponse(ownership)) return ownership
 
     await db
       .delete(medications)

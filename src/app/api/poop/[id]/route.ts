@@ -1,39 +1,9 @@
 import { NextRequest, NextResponse } from "next/server"
-import { auth } from "@/lib/auth"
-import { headers } from "next/headers"
-import { db, poopLogs, dogs } from "@/lib/db"
-import { eq, and } from "drizzle-orm"
+import { requireLogOwnership, isNextResponse } from "@/lib/api-helpers"
+import { db, poopLogs } from "@/lib/db"
+import { eq } from "drizzle-orm"
 
 type RouteParams = { params: Promise<{ id: string }> }
-
-async function verifyPoopOwnership(
-  poopId: string,
-): Promise<{ log: typeof poopLogs.$inferSelect } | NextResponse> {
-  const session = await auth.api.getSession({ headers: await headers() })
-  if (!session?.user) {
-    return NextResponse.json({ error: "Unauthorized" }, { status: 401 })
-  }
-
-  const [log] = await db
-    .select()
-    .from(poopLogs)
-    .where(eq(poopLogs.id, poopId))
-
-  if (!log) {
-    return NextResponse.json({ error: "Not found" }, { status: 404 })
-  }
-
-  const [dog] = await db
-    .select({ id: dogs.id })
-    .from(dogs)
-    .where(and(eq(dogs.id, log.dogId), eq(dogs.ownerId, session.user.id)))
-
-  if (!dog) {
-    return NextResponse.json({ error: "Not found" }, { status: 404 })
-  }
-
-  return { log }
-}
 
 export async function PATCH(
   request: NextRequest,
@@ -41,14 +11,14 @@ export async function PATCH(
 ): Promise<NextResponse> {
   try {
     const { id } = await params
-    const ownerResult = await verifyPoopOwnership(id)
-    if (ownerResult instanceof NextResponse) return ownerResult
+    const ownerResult = await requireLogOwnership(poopLogs, id)
+    if (isNextResponse(ownerResult)) return ownerResult
 
     const body = await request.json()
     const updates: Record<string, unknown> = {}
 
     if (body.firmnessScore !== undefined) {
-      if (body.firmnessScore < 1 || body.firmnessScore > 7) {
+      if (!Number.isInteger(body.firmnessScore) || body.firmnessScore < 1 || body.firmnessScore > 7) {
         return NextResponse.json(
           { error: "firmnessScore must be 1-7" },
           { status: 400 },
@@ -87,8 +57,8 @@ export async function DELETE(
 ): Promise<NextResponse> {
   try {
     const { id } = await params
-    const ownerResult = await verifyPoopOwnership(id)
-    if (ownerResult instanceof NextResponse) return ownerResult
+    const ownerResult = await requireLogOwnership(poopLogs, id)
+    if (isNextResponse(ownerResult)) return ownerResult
 
     await db.delete(poopLogs).where(eq(poopLogs.id, id))
 

@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { Card, CardContent } from "@/components/ui/card"
-import { ChevronDown, ExternalLink, Info } from "lucide-react"
+import { LiaChevronDownSolid, LiaExternalLinkAltSolid, LiaInfoCircleSolid } from "react-icons/lia"
 import { COMMON_SKIN_TRIGGERS } from "@/lib/ingredients"
 import { cn } from "@/lib/utils"
 import { IngredientRow, isSuspectItch, type SignalMode } from "@/components/ingredient-row"
@@ -117,7 +117,7 @@ export function IngredientAnalysisSection({
               { value: "itch", label: "Itch" },
             ] as const).map(({ value, label }) => (
               loading ? (
-                <div key={value} className="px-3.5 py-1.5 text-xs font-medium text-muted-foreground/40">
+                <div key={value} className="px-3.5 py-1.5 text-xs font-medium text-foreground-muted-40">
                   {label}
                 </div>
               ) : (
@@ -143,7 +143,7 @@ export function IngredientAnalysisSection({
       {/* Info box */}
       {loading ? (
         <div className="rounded-lg bg-muted px-3 py-2.5">
-          <div className="h-3 w-3/4 animate-pulse rounded bg-muted-foreground/10" />
+          <div className="h-3 w-3/4 animate-pulse rounded bg-muted-foreground-10" />
         </div>
       ) : hasScores ? (
         signalMode === "stool" ? (
@@ -178,7 +178,7 @@ export function IngredientAnalysisSection({
                 rel="noopener noreferrer"
                 className="inline-flex items-center text-text-tertiary hover:text-foreground transition-colors align-text-bottom"
               >
-                <ExternalLink className="size-3" />
+                <LiaExternalLinkAltSolid className="size-3" />
               </a>
             </p>
           </div>
@@ -188,7 +188,7 @@ export function IngredientAnalysisSection({
       {/* Warning banners */}
       {hasScores && allInsufficient && (
         <div className="flex items-start gap-2 rounded-lg bg-score-fair-bg px-3 py-2">
-          <Info className="size-4 shrink-0 text-score-fair mt-0.5" />
+          <LiaInfoCircleSolid className="size-4 shrink-0 text-score-fair mt-0.5" />
           <p className="text-xs text-score-fair">
             Just getting started — keep logging to see patterns
           </p>
@@ -197,7 +197,7 @@ export function IngredientAnalysisSection({
 
       {hasScores && isLowVariance && !allInsufficient && (
         <div className="flex items-start gap-2 rounded-lg bg-score-fair-bg px-3 py-2">
-          <Info className="size-4 shrink-0 text-score-fair mt-0.5" />
+          <LiaInfoCircleSolid className="size-4 shrink-0 text-score-fair mt-0.5" />
           <p className="text-xs text-score-fair">
             All ingredients show similar scores — likely a stable single-diet period.
           </p>
@@ -266,7 +266,7 @@ export function IngredientAnalysisSection({
             onClick={() => setFatsExpanded(!fatsExpanded)}
             className="flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground transition-colors"
           >
-            <ChevronDown
+            <LiaChevronDownSolid
               className={`size-3.5 transition-transform ${fatsExpanded ? "rotate-0" : "-rotate-90"}`}
             />
             Fats & oils ({fatOilScores.length})

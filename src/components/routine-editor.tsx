@@ -14,7 +14,7 @@ import {
 import { ProductPicker } from "@/components/product-picker"
 import { ResponsiveModal } from "@/components/responsive-modal"
 import { NutritionLabel } from "@/components/nutrition-label"
-import { Plus, Trash2 } from "lucide-react"
+import { LiaPlusSolid, LiaTrashAltSolid } from "react-icons/lia"
 import { toast } from "sonner"
 import type { ActivePlan, FeedingPlanItem, ProductSummary } from "@/lib/types"
 import { QUANTITY_UNIT_OPTIONS } from "@/lib/labels"
@@ -365,7 +365,7 @@ export function RoutineEditorContent({
                 className="shrink-0 text-muted-foreground hover:text-destructive"
                 aria-label="Remove item"
               >
-                <Trash2 className="size-4" />
+                <LiaTrashAltSolid className="size-4" />
               </Button>
             </div>
           </div>
@@ -378,7 +378,7 @@ export function RoutineEditorContent({
           onClick={() => setPlanItems((prev) => [...prev, createPlanItem()])}
           className="w-full"
         >
-          <Plus className="size-4" />
+          <LiaPlusSolid className="size-4" />
           Add item
         </Button>
       </div>

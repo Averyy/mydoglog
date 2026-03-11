@@ -2,15 +2,8 @@
 
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-  DialogDescription,
-} from "@/components/ui/dialog"
-import { Info } from "lucide-react"
+import { ResponsiveModal } from "@/components/responsive-modal"
+import { LiaInfoCircleSolid } from "react-icons/lia"
 import { cn } from "@/lib/utils"
 import Image from "next/image"
 
@@ -83,30 +76,29 @@ export function FecalScoreGuide({ className, onSelect }: FecalScoreGuideProps): 
   }
 
   return (
-    <Dialog open={open} onOpenChange={setOpen}>
-      <DialogTrigger asChild>
-        <Button
-          type="button"
-          variant="ghost"
-          size="icon-xs"
-          className={cn("text-muted-foreground", className)}
-          aria-label="Fecal scoring guide"
-        >
-          <Info className="size-4" />
-        </Button>
-      </DialogTrigger>
-      <DialogContent className="max-h-[85vh] max-w-lg overflow-y-auto p-0">
-        <DialogHeader className="sticky top-0 z-10 border-b bg-background px-5 py-4">
-          <DialogTitle className="text-base">
-            Purina Fecal Scoring Chart
-          </DialogTitle>
-          <DialogDescription className="text-xs text-muted-foreground">
-            {onSelect
-              ? "Tap a score to select it. Score 2 is ideal."
-              : "Score 2 is ideal. Based on the Nestlé Purina fecal scoring system."}
-          </DialogDescription>
-        </DialogHeader>
-        <div className="space-y-1.5 px-4 py-4">
+    <>
+      <Button
+        type="button"
+        variant="ghost"
+        size="icon-xs"
+        className={cn("text-muted-foreground", className)}
+        aria-label="Fecal scoring guide"
+        onClick={() => setOpen(true)}
+      >
+        <LiaInfoCircleSolid className="size-4" />
+      </Button>
+      <ResponsiveModal
+        open={open}
+        onOpenChange={setOpen}
+        title="Purina Fecal Scoring Chart"
+        description={
+          onSelect
+            ? "Tap a score to select it. Score 2 is ideal."
+            : "Score 2 is ideal. Based on the Nestlé Purina fecal scoring system."
+        }
+        size="lg"
+      >
+        <div className="space-y-1.5">
           {SCORES.map((s) => {
             const isClickable = !!onSelect
             const Row = isClickable ? "button" : "div"
@@ -155,12 +147,12 @@ export function FecalScoreGuide({ className, onSelect }: FecalScoreGuideProps): 
             )
           })}
         </div>
-        <div className="border-t px-5 py-3">
+        <div className="border-t pt-3 mt-3">
           <p className="text-[10px] text-muted-foreground">
             Source: Nestlé Purina PetCare — Fecal Scoring System. Consult your veterinarian for digestive health concerns.
           </p>
         </div>
-      </DialogContent>
-    </Dialog>
+      </ResponsiveModal>
+    </>
   )
 }

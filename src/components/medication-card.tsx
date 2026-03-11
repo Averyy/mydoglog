@@ -37,7 +37,7 @@ export function MedicationCard({
                 <span>{DOSING_INTERVAL_LABELS[medication.interval] ?? medication.interval}</span>
               )}
             </div>
-            <p className="mt-0.5 text-[11px] text-muted-foreground/60">
+            <p className="mt-0.5 text-[11px] text-foreground-muted-60">
               {format(parseISO(medication.startDate), "MMM d, yyyy")} &mdash; Present
             </p>
           </div>
@@ -65,14 +65,14 @@ export function MedicationCard({
             )}
             {medication.commonSideEffects && (
               <details className="group">
-                <summary className="cursor-pointer text-[11px] font-medium text-muted-foreground/70 hover:text-muted-foreground">
+                <summary className="cursor-pointer text-[11px] font-medium text-foreground-muted-70 hover:text-muted-foreground">
                   Potential side effects
                 </summary>
-                <p className="mt-1 text-[11px] leading-relaxed text-muted-foreground/70">
+                <p className="mt-1 text-[11px] leading-relaxed text-foreground-muted-70">
                   {medication.commonSideEffects}
                 </p>
                 {medication.sideEffectsSources && (
-                  <p className="mt-1 text-[11px] leading-relaxed text-muted-foreground/50">
+                  <p className="mt-1 text-[11px] leading-relaxed text-foreground-muted-50">
                     <MarkdownLinks text={medication.sideEffectsSources} />
                   </p>
                 )}
@@ -86,7 +86,7 @@ export function MedicationCard({
 
   // Past medication — slightly muted, everything behind accordion
   return (
-    <div className="rounded-lg border border-border bg-card/30">
+    <div className="rounded-lg border border-border bg-card-muted">
       <div className="flex items-start gap-3 px-4 py-3">
         <div className="mt-0.5 flex size-9 shrink-0 items-center justify-center rounded-md bg-secondary">
           <Icon className="size-5 text-muted-foreground" />
@@ -136,7 +136,7 @@ export function MedicationCard({
                 </p>
               )}
               {medication.sideEffectsSources && (
-                <p className="mt-1 text-[11px] leading-relaxed text-muted-foreground/70">
+                <p className="mt-1 text-[11px] leading-relaxed text-foreground-muted-70">
                   <MarkdownLinks text={medication.sideEffectsSources} />
                 </p>
               )}

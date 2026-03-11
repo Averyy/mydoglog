@@ -142,14 +142,15 @@ export async function POST(
         | "treat",
     }))
 
-    const created = await db.insert(feedingPeriods).values(rows).returning()
-
-    // Create scorecard (required for backfills)
-    await db.insert(foodScorecards).values({
-      planGroupId,
-      poopQuality: poopArr.sort((a, b) => a - b),
-      itchSeverity: itchArr.sort((a, b) => a - b),
-      notes,
+    const created = await db.transaction(async (tx) => {
+      const inserted = await tx.insert(feedingPeriods).values(rows).returning()
+      await tx.insert(foodScorecards).values({
+        planGroupId,
+        poopQuality: poopArr.sort((a, b) => a - b),
+        itchSeverity: itchArr.sort((a, b) => a - b),
+        notes,
+      })
+      return inserted
     })
 
     return NextResponse.json(

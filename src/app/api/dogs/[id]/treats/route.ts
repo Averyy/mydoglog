@@ -19,7 +19,7 @@ export async function GET(
 
     if (recent) {
       // Return N most recent distinct products, ordered by last usage
-      const limit = Math.min(10, Math.max(1, parseInt(recent)))
+      const limit = Math.min(10, Math.max(1, parseInt(recent, 10) || 5))
       const distinctSub = db
         .selectDistinctOn([treatLogs.productId], {
           productId: treatLogs.productId,

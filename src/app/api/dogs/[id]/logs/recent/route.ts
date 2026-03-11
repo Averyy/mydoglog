@@ -3,6 +3,7 @@ import { requireDogOwnership, isNextResponse } from "@/lib/api-helpers"
 import { db, poopLogs, itchinessLogs, treatLogs, products, brands } from "@/lib/db"
 import { eq, desc, and, gte, lte, sql } from "drizzle-orm"
 import type { LogFeedEntry } from "@/lib/types"
+import { getToday } from "@/lib/utils"
 
 type RouteParams = { params: Promise<{ id: string }> }
 
@@ -28,10 +29,10 @@ export async function GET(
       return NextResponse.json({ error: "Invalid date format" }, { status: 400 })
     }
 
-    const endDate = before ?? new Date().toISOString().split("T")[0]
-    const startDate = new Date(
-      new Date(endDate).getTime() - (days - 1) * 24 * 60 * 60 * 1000,
-    ).toISOString().split("T")[0]
+    const endDate = before ?? getToday()
+    const startDateObj = new Date(endDate + "T12:00:00Z")
+    startDateObj.setUTCDate(startDateObj.getUTCDate() - (days - 1))
+    const startDate = startDateObj.toISOString().split("T")[0]
 
     const [poopRows, itchRows, treatRows] = await Promise.all([
       db

@@ -2,11 +2,12 @@
 
 import { useState } from "react"
 import { Badge } from "@/components/ui/badge"
-import { ChevronRight } from "lucide-react"
+import { LiaChevronRightSolid } from "react-icons/lia"
 import { poopScoreColor, itchScoreColor } from "@/components/score-grid"
 import { COMMON_SKIN_TRIGGERS } from "@/lib/ingredients"
 import { PRODUCT_TYPE_LABELS, NON_FOOD_TYPES } from "@/lib/labels"
 import { POSITION_LABELS } from "@/lib/food-helpers"
+import { capitalize } from "@/lib/utils"
 import type { IngredientScore, IngredientProductEntry } from "@/lib/correlation/types"
 
 export type SignalMode = "both" | "stool" | "itch"
@@ -62,10 +63,6 @@ export function displayIngredientKey(key: string): string {
 
 export function ambiguousHint(key: string): string | null {
   return AMBIGUOUS_DISPLAY_NAMES[key]?.hint ?? null
-}
-
-export function capitalize(s: string): string {
-  return s.charAt(0).toUpperCase() + s.slice(1)
 }
 
 export function IngredientRow({
@@ -135,7 +132,7 @@ export function IngredientRow({
               <span className="text-[10px] font-normal text-muted-foreground ml-0.5">itch</span>
             </span>
           )}
-          <ChevronRight className={`size-3.5 text-muted-foreground transition-transform ${expanded ? "rotate-90" : ""}`} />
+          <LiaChevronRightSolid className={`size-3.5 text-muted-foreground transition-transform ${expanded ? "rotate-90" : ""}`} />
         </div>
       </button>
       {expanded && (

@@ -3,6 +3,7 @@ import { requireDogOwnership, isNextResponse } from "@/lib/api-helpers"
 import { db, feedingPeriods, products, brands, foodScorecards, poopLogs, itchinessLogs, treatLogs } from "@/lib/db"
 import { eq, desc, sql, and, isNull } from "drizzle-orm"
 import type { FeedingPlanGroup, FeedingPlanItem } from "@/lib/types"
+import { getToday } from "@/lib/utils"
 
 type RouteParams = { params: Promise<{ id: string }> }
 
@@ -163,7 +164,7 @@ export async function POST(
       }
     }
 
-    const today = new Date().toISOString().split("T")[0]
+    const today = getToday()
     const planGroupId = crypto.randomUUID()
 
     let startDate: string
@@ -194,9 +195,9 @@ export async function POST(
 
     // If starting_today, handle existing ongoing plans
     if (body.mode === "starting_today") {
-      const yesterday = new Date()
-      yesterday.setDate(yesterday.getDate() - 1)
-      const yesterdayStr = yesterday.toISOString().split("T")[0]
+      const yesterdayDate = new Date()
+      yesterdayDate.setDate(yesterdayDate.getDate() - 1)
+      const yesterdayStr = yesterdayDate.toLocaleDateString("en-CA", { timeZone: "America/Toronto" })
 
       // Find existing ongoing plan group(s) to determine if they have logs
       const ongoingPeriods = await db
@@ -215,8 +216,35 @@ export async function POST(
       // Get distinct plan group IDs
       const ongoingGroupIds = [...new Set(ongoingPeriods.map((p) => p.planGroupId))]
 
-      // Wrap ongoing plan updates + new plan creation in a transaction
-      await db.transaction(async (tx) => {
+      // Wrap ongoing plan updates + new plan creation in a single transaction
+      const rows = body.items.map((item) => ({
+        dogId,
+        productId: item.productId,
+        startDate,
+        endDate,
+        mealSlot: item.mealSlot as
+          | "breakfast"
+          | "lunch"
+          | "dinner"
+          | "snack"
+          | undefined,
+        quantity: item.quantity,
+        quantityUnit: item.quantityUnit as
+          | "can"
+          | "cup"
+          | "g"
+          | "scoop"
+          | "piece"
+          | "tbsp"
+          | "tsp"
+          | "ml"
+          | "treat",
+        planGroupId,
+        planName: body.planName ?? null,
+        isBackfill: false,
+      }))
+
+      const created = await db.transaction(async (tx) => {
         for (const groupId of ongoingGroupIds) {
           const groupPeriod = ongoingPeriods.find((p) => p.planGroupId === groupId)!
 
@@ -245,10 +273,14 @@ export async function POST(
               .where(eq(feedingPeriods.planGroupId, groupId))
           }
         }
+
+        return await tx.insert(feedingPeriods).values(rows).returning()
       })
+
+      return NextResponse.json({ planGroupId, items: created }, { status: 201 })
     }
 
-    // Create feeding period rows for each item
+    // Non-starting_today modes: create feeding period rows
     const rows = body.items.map((item) => ({
       dogId,
       productId: item.productId,

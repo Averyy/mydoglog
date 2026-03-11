@@ -42,11 +42,11 @@ The foundation. 1,260+ products across 16 brands (see `ref-dog-food-canada.md`),
 
 Three entry points, one daily record:
 
-1. **Daily Check-in** — unified form: routine (food + supplements + meds, pre-filled from template), stool score (Purina 1-7), itchiness (1-5), treats. Once a day, confirms what the dog ate and how they did.
+1. **Daily Check-in** — unified form: routine (food + supplements, pre-filled from template), stool score (Purina 1-7), itchiness (1-5), treats. Once a day, confirms what the dog ate and how they did.
 2. **Quick Poop** — 3-second in-the-moment flow: pick score + save. For logging individual events throughout the day.
 3. **Quick Treat** — 3-second flow: pick product + save.
 
-The **routine template** (food + supplements + medications) pre-fills the daily log. On days the user doesn't open the app, the template is the implicit record. Quick entries assume the routine is unchanged.
+The **routine template** (food + supplements) pre-fills the daily log. On days the user doesn't open the app, the template is the implicit record. Quick entries assume the routine is unchanged.
 
 ### Pages
 
@@ -54,12 +54,15 @@ The **routine template** (food + supplements + medications) pre-fills the daily 
 |------|-------|---------|
 | **Home** | `/` | Quick-log grid (check-in, stool, itch, treat) + chronological log feed |
 | **Food** | `/dogs/[id]/food` | Active routine management + food history with inline scorecards |
+| **Meds** | `/dogs/[id]/meds` | Active + past medications, 67-drug catalog picker, dosing intervals |
 | **Insights** | `/dogs/[id]/insights` | Ingredient correlation analysis (GI + skin tracks) |
 | **Settings** | `/settings` | Dog management, account settings |
 
 **Home** shows the quick-log 2x2 grid and a chronological feed of recent manual entries (poop, itch, treat, check-in). No summary stats, no routine preview — just logging and recent history.
 
-**Food** merges routine management and food history into one page. Active plan card at the top (food + supplements + medications + edit routine button). Below: chronological list of past plan groups with inline scorecard display. Active plans derive scores from daily logs. Backfilled periods require mandatory scorecard entry (poop quality range + itch severity range).
+**Food** merges routine management and food history into one page. Active plan card at the top (food + supplements + edit routine button). Below: chronological list of past plan groups with inline scorecard display. Active plans derive scores from daily logs. Backfilled periods require mandatory scorecard entry (poop quality range + itch severity range).
+
+**Meds** shows active medications (no end date) and past medications (has end date, reverse chronological). Add/edit form with searchable 67-drug catalog picker (5 categories: allergy, parasite, GI, pain, steroid) + free-text fallback for unlisted meds. Catalog includes side effects and default dosing intervals.
 
 **Insights** shows ingredient-level correlation results with signal mode toggle (stool/itch/both). Expandable ingredient rows with product cross-reference and cross-reactivity info.
 
@@ -123,7 +126,7 @@ Purina Fecal Scoring Chart (1-7), the de facto North American veterinary standar
 
 ## Phases
 
-See `todo-phases.md` for the living checklist. Phases 0-3.6 (data prep, foundation, core loop, analysis, scorecard simplification, page reorg) are complete. Phase 4 focuses on pollen/weather/seasons, medication tracking, the dashboard timeline, and LLM export. Phase 5 adds pack-based sharing (multi-user access + public read-only links).
+See `todo-phases.md` for the living checklist. Phases 0-3.6 (data prep, foundation, core loop, analysis, scorecard simplification, page reorg) are complete. Phase 4 is in progress — pollen collection and medication tracking (67-drug catalog, dedicated Meds page) are done. Remaining: weather collection, season tracking, dashboard timeline, LLM export, correlation engine medication/season extensions. Phase 5 adds pack-based sharing (multi-user access + public read-only links).
 
 ## Reference Docs
 
@@ -133,7 +136,6 @@ See `todo-phases.md` for the living checklist. Phases 0-3.6 (data prep, foundati
 | `todo-phases.md` | Living implementation checklist |
 | `ref-dog-food-canada.md` | Brand scraper status and technical reference |
 | `ref-ingredient-analytics.md` | Research-backed correlation methodology (two-track model, trigger categories, timelines, confounders) |
-| `todo-medications.md` | Medication catalog spec (52 meds across 5 categories) |
 | `todo-sharing.md` | Pack sharing spec (multi-user access + public links) |
 | `todo-scrapetype.md` | Product type/format split spec |
 | `todo-importexport.md` | Dev-only dog data export/import spec |

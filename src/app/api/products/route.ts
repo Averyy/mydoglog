@@ -22,8 +22,8 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
     const channel = searchParams.get("channel")
     const brandId = searchParams.get("brand_id")
     const includeDiscontinued = searchParams.get("include_discontinued") === "true"
-    const page = Math.max(1, parseInt(searchParams.get("page") ?? "1"))
-    const limit = Math.min(100, Math.max(1, parseInt(searchParams.get("limit") ?? "20")))
+    const page = Math.max(1, parseInt(searchParams.get("page") ?? "1", 10))
+    const limit = Math.min(100, Math.max(1, parseInt(searchParams.get("limit") ?? "20", 10)))
     const offset = (page - 1) * limit
 
     const all = searchParams.get("all") === "true"

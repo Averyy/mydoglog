@@ -4,7 +4,7 @@ import { useMemo } from "react"
 import { ResponsivePopover } from "@/components/responsive-popover"
 import { NutritionLabel } from "@/components/nutrition-label"
 import { computeProductNutrition } from "@/lib/nutrition"
-import { ChevronDown } from "lucide-react"
+import { LiaChevronDownSolid } from "react-icons/lia"
 import { useIsMobile } from "@/hooks/use-is-mobile"
 
 const INGREDIENT_SCORE_COLORS: Record<number, string> = {
@@ -109,7 +109,7 @@ export function ProductIngredientList({
           className="flex items-center gap-1 text-xs text-primary hover:underline underline-offset-2"
         >
           {isMobile ? "Nutrition" : "View nutrition"}
-          <ChevronDown className="size-3" />
+          <LiaChevronDownSolid className="size-3" />
         </button>
       }
     >

@@ -1,45 +1,9 @@
 import { NextRequest, NextResponse } from "next/server"
-import { auth } from "@/lib/auth"
-import { headers } from "next/headers"
-import { db, feedingPeriods, dogs } from "@/lib/db"
+import { requirePlanGroupOwnership, isNextResponse } from "@/lib/api-helpers"
+import { db, feedingPeriods } from "@/lib/db"
 import { eq, and, sql } from "drizzle-orm"
 
 type RouteParams = { params: Promise<{ planGroupId: string }> }
-
-/**
- * Verify that the authenticated user owns the dog associated with
- * the given planGroupId. Returns the userId or an error NextResponse.
- */
-async function verifyPlanOwnership(
-  planGroupId: string,
-): Promise<{ userId: string } | NextResponse> {
-  const session = await auth.api.getSession({ headers: await headers() })
-  if (!session?.user) {
-    return NextResponse.json({ error: "Unauthorized" }, { status: 401 })
-  }
-
-  // Find any feeding period for this planGroupId, then check dog ownership
-  const [period] = await db
-    .select({ dogId: feedingPeriods.dogId })
-    .from(feedingPeriods)
-    .where(eq(feedingPeriods.planGroupId, planGroupId))
-    .limit(1)
-
-  if (!period) {
-    return NextResponse.json({ error: "Not found" }, { status: 404 })
-  }
-
-  const [dog] = await db
-    .select({ id: dogs.id })
-    .from(dogs)
-    .where(and(eq(dogs.id, period.dogId), eq(dogs.ownerId, session.user.id)))
-
-  if (!dog) {
-    return NextResponse.json({ error: "Not found" }, { status: 404 })
-  }
-
-  return { userId: session.user.id }
-}
 
 export async function PATCH(
   request: NextRequest,
@@ -47,8 +11,8 @@ export async function PATCH(
 ): Promise<NextResponse> {
   try {
     const { planGroupId } = await params
-    const ownerResult = await verifyPlanOwnership(planGroupId)
-    if (ownerResult instanceof NextResponse) return ownerResult
+    const ownerResult = await requirePlanGroupOwnership(planGroupId)
+    if (isNextResponse(ownerResult)) return ownerResult
 
     const body = await request.json()
 
@@ -112,17 +76,18 @@ export async function DELETE(
 ): Promise<NextResponse> {
   try {
     const { planGroupId } = await params
-    const ownerResult = await verifyPlanOwnership(planGroupId)
-    if (ownerResult instanceof NextResponse) return ownerResult
+    const ownerResult = await requirePlanGroupOwnership(planGroupId)
+    if (isNextResponse(ownerResult)) return ownerResult
 
-    await db
-      .delete(feedingPeriods)
-      .where(eq(feedingPeriods.planGroupId, planGroupId))
-
-    // Also delete associated scorecard
-    await db.execute(
-      sql`DELETE FROM food_scorecards WHERE plan_group_id = ${planGroupId}`,
-    )
+    // Delete feeding periods and associated scorecard atomically
+    await db.transaction(async (tx) => {
+      await tx
+        .delete(feedingPeriods)
+        .where(eq(feedingPeriods.planGroupId, planGroupId))
+      await tx.execute(
+        sql`DELETE FROM food_scorecards WHERE plan_group_id = ${planGroupId}`,
+      )
+    })
 
     return NextResponse.json({ success: true })
   } catch (error) {

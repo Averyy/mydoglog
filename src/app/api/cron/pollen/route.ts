@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server"
 import { db, dogs, pollenLogs } from "@/lib/db"
 import { sql } from "drizzle-orm"
+import { getToday } from "@/lib/utils"
 
 const AMBEE_API_URL = "https://api.ambeedata.com/latest/pollen/by-place"
 
@@ -44,7 +45,7 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
       )
     }
 
-    const today = new Date().toISOString().split("T")[0]
+    const today = getToday()
 
     // Get unique dog locations
     const locationsResult = await db

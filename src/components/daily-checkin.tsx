@@ -122,8 +122,8 @@ export function DailyCheckInContent({
         if (data.treats?.length > 0) {
           setExistingTreats(data.treats)
         }
-      } catch {
-        // Non-critical
+      } catch (err) {
+        console.error("Failed to load existing check-in data:", err)
       } finally {
         setLoaded(true)
       }
@@ -446,7 +446,7 @@ export function DailyCheckInContent({
                         type="button"
                         onClick={() => toggleBodyArea(area.value)}
                         className={cn(
-                          "rounded-md border px-2.5 py-1.5 text-xs font-medium transition-all",
+                          "rounded-md border px-2.5 py-2.5 text-xs font-medium transition-all min-h-[28px]",
                           "focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-1 outline-none",
                           bodyAreas.includes(area.value)
                             ? "border-primary bg-primary text-primary-foreground"
@@ -532,7 +532,7 @@ export function DailyCheckInContent({
                           type="button"
                           aria-label={`Remove ${treat.productName}`}
                           onClick={() => removeTreat(treat.productId)}
-                          className="shrink-0 rounded-md p-1 text-muted-foreground hover:bg-secondary hover:text-foreground"
+                          className="shrink-0 rounded-md p-2 text-muted-foreground hover:bg-secondary hover:text-foreground min-h-[28px] min-w-[28px] flex items-center justify-center"
                         >
                           <LiaTimesSolid className="size-4" />
                         </button>

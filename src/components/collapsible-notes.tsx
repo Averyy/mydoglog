@@ -4,7 +4,7 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
-import { MessageSquare } from "lucide-react"
+import { LiaCommentAltSolid } from "react-icons/lia"
 
 interface CollapsibleNotesProps {
   value: string
@@ -30,7 +30,7 @@ export function CollapsibleNotes({
         className="h-7 px-2 text-xs text-muted-foreground"
         onClick={() => setOpen(true)}
       >
-        <MessageSquare className="size-3" />
+        <LiaCommentAltSolid className="size-3" />
         {label}
       </Button>
     )

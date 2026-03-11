@@ -20,7 +20,7 @@ import {
 import { DateRangePicker } from "@/components/date-range-picker"
 import { eachDayOfInterval, parseISO } from "date-fns"
 import { toast } from "sonner"
-import { Info } from "lucide-react"
+import { LiaInfoCircleSolid } from "react-icons/lia"
 import type { FeedingPlanGroup, ProductSummary } from "@/lib/types"
 import { QUANTITY_UNIT_OPTIONS, NON_FOOD_TYPES } from "@/lib/labels"
 import { getAvailableUnits } from "@/lib/nutrition"
@@ -282,13 +282,13 @@ export function BackfillModal({
                 />
                 {backfillOverlap && (
                   <p className="flex items-center gap-1.5 text-sm text-score-fair">
-                    <Info className="size-4 shrink-0" />
+                    <LiaInfoCircleSolid className="size-4 shrink-0" />
                     Overlaps with {backfillOverlap}
                   </p>
                 )}
                 {activeLogOverlap && (
                   <p className="flex items-center gap-1.5 text-sm text-muted-foreground">
-                    <Info className="size-4 shrink-0" />
+                    <LiaInfoCircleSolid className="size-4 shrink-0" />
                     Overlapping days with your logging period will use daily logs instead of this scorecard
                   </p>
                 )}

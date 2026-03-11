@@ -90,6 +90,11 @@
   --color-ring-destructive-light: var(--ring-destructive-light);
   --color-ring-destructive-strong: var(--ring-destructive-strong);
   --color-foreground-muted-60: var(--foreground-muted-60);
+  --color-foreground-muted-70: var(--foreground-muted-70);
+  --color-foreground-muted-50: var(--foreground-muted-50);
+  --color-foreground-muted-40: var(--foreground-muted-40);
+  --color-card-muted: var(--card-muted);
+  --color-muted-foreground-10: var(--muted-foreground-10);
   --color-border-light: var(--border-light);
   --color-muted-subtle: var(--muted-subtle);
   --color-score-strip: var(--score-strip);
@@ -176,6 +181,11 @@
   --ring-destructive-light: rgba(184,74,58,0.2);
   --ring-destructive-strong: rgba(184,74,58,0.4);
   --foreground-muted-60: #9B938A;
+  --foreground-muted-70: #8A7F74;
+  --foreground-muted-50: #B5ACA3;
+  --foreground-muted-40: #C5BDB5;
+  --card-muted: rgba(255,255,255,0.3);
+  --muted-foreground-10: rgba(107,93,79,0.1);
   --border-light: #ece7e1;
   --muted-subtle: #faf8f4;
   --score-strip: #fff8ef;
@@ -261,6 +271,11 @@
   --ring-destructive-light: rgba(212,104,90,0.3);
   --ring-destructive-strong: rgba(212,104,90,0.5);
   --foreground-muted-60: #9A9790;
+  --foreground-muted-70: #8A8880;
+  --foreground-muted-50: #6A6860;
+  --foreground-muted-40: #5A5850;
+  --card-muted: rgba(36,32,25,0.3);
+  --muted-foreground-10: rgba(240,235,227,0.1);
   --border-light: #272520;
   --muted-subtle: #2A2620;
   --score-strip: #2a2518;

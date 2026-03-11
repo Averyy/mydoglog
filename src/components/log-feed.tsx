@@ -208,7 +208,7 @@ function LogEntryRow({
     <button
       type="button"
       onClick={() => setEditing(true)}
-      className="p-1 rounded text-text-tertiary hover:text-text-primary hover:bg-item-hover transition-colors shrink-0"
+      className="p-2 rounded text-text-tertiary hover:text-text-primary hover:bg-item-hover transition-colors shrink-0 min-h-[28px] min-w-[28px] flex items-center justify-center"
       aria-label="Edit log entry"
     >
       <LiaPencilAltSolid className="size-4" />

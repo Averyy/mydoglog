@@ -14,7 +14,7 @@ import { RoutineEditor } from "@/components/routine-editor"
 import { BackfillModal } from "@/components/backfill-modal"
 import { ProductIngredientList, type ClassifiedIngredient, type ProductIngredientListData } from "@/components/product-ingredient-list"
 import { formatDateRange, daysInRange, avgFromRange } from "@/lib/food-helpers"
-import { Plus } from "lucide-react"
+import { LiaPlusSolid } from "react-icons/lia"
 import { LiaPenSolid } from "react-icons/lia"
 import type { ActivePlan, FeedingPlanGroup, RoutineData } from "@/lib/types"
 import type { CorrelationResult, IngredientProductEntry } from "@/lib/correlation/types"
@@ -283,7 +283,7 @@ export default function FoodPage(): React.ReactElement {
         <div className="flex items-center gap-3">
           <h2 className="flex-1 text-2xl font-bold text-foreground">Past Foods</h2>
           <Button size="sm" variant="outline" onClick={openBackfill}>
-            <Plus className="size-4" />
+            <LiaPlusSolid className="size-4" />
             Add past food
           </Button>
         </div>
@@ -310,7 +310,7 @@ export default function FoodPage(): React.ReactElement {
           {Array.from({ length: skeletonCounts.foodCards }).map((_, i) => (
             <div key={i} className="min-w-0 basis-[calc(50%-0.375rem)] grow sm:basis-72 sm:max-w-[calc(33.333%-0.5rem)] overflow-hidden rounded-lg border border-border bg-card">
               <div className="flex items-center justify-center bg-muted px-3 py-3">
-                <div className="h-28 w-24 animate-pulse rounded bg-muted-foreground/10" />
+                <div className="h-28 w-24 animate-pulse rounded bg-muted-foreground-10" />
               </div>
               <div className="px-4 pt-3 pb-3 space-y-1">
                 <div className="h-2.5 w-16 animate-pulse rounded bg-muted" />
@@ -401,7 +401,7 @@ export default function FoodPage(): React.ReactElement {
               No food plans yet.
             </p>
             <Button variant="outline" onClick={openBackfill}>
-              <Plus className="size-4" />
+              <LiaPlusSolid className="size-4" />
               Add a past food
             </Button>
           </CardContent>

@@ -8,6 +8,7 @@ import { runCorrelation } from "@/lib/correlation/engine"
 import { findSaltPosition, splitIngredients } from "@/lib/ingredients"
 import { DEFAULT_CORRELATION_OPTIONS } from "@/lib/correlation/types"
 import type { IngredientProductEntry } from "@/lib/correlation/types"
+import { getToday } from "@/lib/utils"
 import { avgFromRange } from "@/lib/food-helpers"
 import type { FeedingPlanGroup, FeedingPlanItem, LogStats } from "@/lib/types"
 
@@ -129,7 +130,7 @@ export async function GET(
     const authResult = await requireDogOwnership(id)
     if (isNextResponse(authResult)) return authResult
 
-    const today = new Date().toISOString().split("T")[0]
+    const today = getToday()
 
     // Fetch all feeding periods with product data
     const rows = await db

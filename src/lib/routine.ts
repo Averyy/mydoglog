@@ -1,6 +1,7 @@
 import { db, feedingPeriods, products, brands } from "@/lib/db"
 import { eq, sql } from "drizzle-orm"
 import { resolveActivePlan, type PlanPeriod } from "@/lib/feeding"
+import { getToday } from "@/lib/utils"
 import type { ActivePlan, FeedingPlanItem } from "@/lib/types"
 
 /**
@@ -11,7 +12,7 @@ import type { ActivePlan, FeedingPlanItem } from "@/lib/types"
 export async function getActivePlanForDog(
   dogId: string,
 ): Promise<ActivePlan | null> {
-  const today = new Date().toISOString().split("T")[0]
+  const today = getToday()
 
   // Single query: fetch all non-backfill periods with product data
   const rows = await db

@@ -27,6 +27,15 @@ export function largeImageUrl(imageUrl: string): string {
   return imageUrl
 }
 
+export function capitalize(s: string): string {
+  return s.charAt(0).toUpperCase() + s.slice(1)
+}
+
+/** Get today's date as YYYY-MM-DD in America/Toronto timezone. */
+export function getToday(): string {
+  return new Date().toLocaleDateString("en-CA", { timeZone: "America/Toronto" })
+}
+
 /** Shared nav active-state check used by bottom nav and desktop nav. */
 export function isNavActive(href: string, pathname: string): boolean {
   if (href === "/") return pathname === "/"

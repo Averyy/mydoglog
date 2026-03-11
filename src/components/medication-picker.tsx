@@ -17,7 +17,7 @@ import {
 } from "@/components/ui/command"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { ChevronsUpDown } from "lucide-react"
+import { LiaSortSolid } from "react-icons/lia"
 import {
   LiaCapsulesSolid,
   LiaSyringeSolid,
@@ -194,7 +194,7 @@ export function MedicationPicker({
       ) : (
         <span className="text-muted-foreground">Select medication...</span>
       )}
-      <ChevronsUpDown className="ml-2 size-4 shrink-0 opacity-50" />
+      <LiaSortSolid className="ml-2 size-4 shrink-0 opacity-50" />
     </Button>
   )
 
@@ -261,7 +261,7 @@ export function MedicationPicker({
                       <p className="text-sm font-medium">{med.name}</p>
                       <p className="text-xs text-muted-foreground">{med.genericName}</p>
                       {med.description && (
-                        <p className="mt-0.5 line-clamp-2 text-[11px] leading-tight text-muted-foreground/70">
+                        <p className="mt-0.5 line-clamp-2 text-[11px] leading-tight text-foreground-muted-70">
                           {med.description}
                         </p>
                       )}
@@ -329,7 +329,7 @@ export function MedicationPicker({
       <>
         <div onClick={() => setOpen(true)}>{trigger}</div>
         <Drawer open={open} onOpenChange={setOpen}>
-          <DrawerContent>
+          <DrawerContent aria-describedby={undefined}>
             <DrawerHeader>
               <DrawerTitle>Select medication</DrawerTitle>
             </DrawerHeader>

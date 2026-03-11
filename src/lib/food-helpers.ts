@@ -1,5 +1,6 @@
 import { differenceInDays, format, parseISO } from "date-fns"
 import { averageScores } from "@/lib/correlation/engine"
+import { getToday } from "@/lib/utils"
 import type { PositionCategory } from "@/lib/correlation/types"
 
 export function formatDateRange(startDate: string, endDate: string | null): string {
@@ -10,7 +11,7 @@ export function formatDateRange(startDate: string, endDate: string | null): stri
 }
 
 export function daysInRange(startDate: string, endDate: string | null): number {
-  const today = new Date().toISOString().split("T")[0]
+  const today = getToday()
   return differenceInDays(parseISO(endDate ?? today), parseISO(startDate)) + 1
 }
 

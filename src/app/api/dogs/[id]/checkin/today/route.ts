@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server"
 import { requireDogOwnership, isNextResponse } from "@/lib/api-helpers"
 import { db, poopLogs, itchinessLogs, treatLogs, products, brands } from "@/lib/db"
 import { and, eq, desc, sql } from "drizzle-orm"
-import { format } from "date-fns"
+import { getToday } from "@/lib/utils"
 
 type RouteParams = { params: Promise<{ id: string }> }
 
@@ -15,7 +15,7 @@ export async function GET(
     const authResult = await requireDogOwnership(dogId)
     if (isNextResponse(authResult)) return authResult
 
-    const today = format(new Date(), "yyyy-MM-dd")
+    const today = getToday()
 
     const [poopRows, itchRows, treatRows] = await Promise.all([
       db

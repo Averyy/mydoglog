@@ -312,7 +312,7 @@ function ItchEditor({
               type="button"
               onClick={() => toggleBodyArea(area.value)}
               className={cn(
-                "rounded-md border px-2.5 py-1.5 text-xs font-medium transition-all",
+                "rounded-md border px-2.5 py-2.5 text-xs font-medium transition-all min-h-[28px]",
                 "focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-1 outline-none",
                 bodyAreas.includes(area.value)
                   ? "border-primary bg-primary text-primary-foreground"
