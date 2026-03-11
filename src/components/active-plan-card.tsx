@@ -4,24 +4,19 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { LiaPlusSolid, LiaPenSolid } from "react-icons/lia"
 import { format, parseISO } from "date-fns"
-import type { ActivePlan, MedicationSummary } from "@/lib/types"
-import { MedicationItem } from "@/components/medication-item"
+import type { ActivePlan } from "@/lib/types"
 import { ProductItem } from "@/components/product-item"
 
 interface ActivePlanCardProps {
   plan: ActivePlan | null
-  medications: MedicationSummary[]
   onEditRoutine: () => void
 }
 
 export function ActivePlanCard({
   plan,
-  medications,
   onEditRoutine,
 }: ActivePlanCardProps) {
-  const hasContent = plan || medications.length > 0
-
-  if (!hasContent) {
+  if (!plan) {
     return (
       <Card className="border-dashed">
         <CardContent className="flex flex-col items-center gap-3 py-8 text-center">
@@ -45,21 +40,15 @@ export function ActivePlanCard({
             <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
               Current routine
             </p>
-            {plan ? (
-              <p className="mt-0.5 text-xs text-muted-foreground">
-                Since {format(parseISO(plan.startDate), "MMM d, yyyy")}
-                {plan.endDate && (
-                  <>
-                    {" "}
-                    &mdash; {format(parseISO(plan.endDate), "MMM d, yyyy")}
-                  </>
-                )}
-              </p>
-            ) : (
-              <p className="mt-0.5 text-xs text-muted-foreground">
-                No food plan &mdash; {medications.length} medication{medications.length !== 1 ? "s" : ""} active
-              </p>
-            )}
+            <p className="mt-0.5 text-xs text-muted-foreground">
+              Since {format(parseISO(plan.startDate), "MMM d, yyyy")}
+              {plan.endDate && (
+                <>
+                  {" "}
+                  &mdash; {format(parseISO(plan.endDate), "MMM d, yyyy")}
+                </>
+              )}
+            </p>
           </div>
           <Button
             variant="ghost"
@@ -73,7 +62,7 @@ export function ActivePlanCard({
         </div>
 
         {/* Food & supplement items */}
-        {plan && plan.items.length > 0 && (
+        {plan.items.length > 0 && (
           <div className="space-y-2">
             {plan.items.map((item) => (
               <ProductItem
@@ -84,20 +73,6 @@ export function ActivePlanCard({
                 quantity={item.quantity}
                 quantityUnit={item.quantityUnit}
                 mealSlot={item.mealSlot}
-              />
-            ))}
-          </div>
-        )}
-
-        {/* Medications section */}
-        {medications.length > 0 && (
-          <div className="space-y-2">
-            {medications.map((med) => (
-              <MedicationItem
-                key={med.id}
-                name={med.name}
-                dosage={med.dosage}
-                reason={med.reason}
               />
             ))}
           </div>

@@ -1,8 +1,10 @@
 import { NextRequest, NextResponse } from "next/server"
 import { requireDogOwnership, isNextResponse } from "@/lib/api-helpers"
-import { db, medications } from "@/lib/db"
+import { db, medications, medicationProducts, dosingIntervalEnum } from "@/lib/db"
 import { eq, desc } from "drizzle-orm"
 import type { MedicationSummary } from "@/lib/types"
+
+const VALID_INTERVALS = new Set<string>(dosingIntervalEnum.enumValues)
 
 type RouteParams = { params: Promise<{ id: string }> }
 
@@ -22,10 +24,16 @@ export async function GET(
         dosage: medications.dosage,
         startDate: medications.startDate,
         endDate: medications.endDate,
-        reason: medications.reason,
+        medicationProductId: medications.medicationProductId,
+        interval: medications.interval,
         notes: medications.notes,
+        dosageForm: medicationProducts.dosageForm,
+        description: medicationProducts.description,
+        commonSideEffects: medicationProducts.commonSideEffects,
+        sideEffectsSources: medicationProducts.sideEffectsSources,
       })
       .from(medications)
+      .leftJoin(medicationProducts, eq(medications.medicationProductId, medicationProducts.id))
       .where(eq(medications.dogId, dogId))
       .orderBy(desc(medications.startDate))
 
@@ -44,7 +52,9 @@ interface MedicationPostBody {
   name: string
   dosage?: string
   startDate?: string
-  reason?: string
+  endDate?: string
+  medicationProductId?: string
+  interval?: string
   notes?: string
 }
 
@@ -68,11 +78,6 @@ export async function POST(
 
     const today = new Date().toISOString().split("T")[0]
 
-    const validReasons = ["itchiness", "digestive", "other"] as const
-    const reason = body.reason && validReasons.includes(body.reason as typeof validReasons[number])
-      ? (body.reason as typeof validReasons[number])
-      : null
-
     const [created] = await db
       .insert(medications)
       .values({
@@ -80,7 +85,9 @@ export async function POST(
         name: body.name.trim(),
         dosage: body.dosage?.trim() || null,
         startDate: body.startDate || today,
-        reason,
+        endDate: body.endDate || null,
+        medicationProductId: body.medicationProductId || null,
+        interval: body.interval && VALID_INTERVALS.has(body.interval) ? body.interval as typeof medications.interval.enumValues[number] : null,
         notes: body.notes?.trim() || null,
       })
       .returning()

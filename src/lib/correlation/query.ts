@@ -15,7 +15,6 @@ import {
   poopLogs,
   itchinessLogs,
   accidentalExposures,
-  medications,
   foodScorecards,
   pollenLogs,
   ingredientCrossReactivity,
@@ -62,7 +61,6 @@ export async function fetchCorrelationInput(
     poopRows,
     itchRows,
     exposureRows,
-    medicationRows,
     crossReactivityRows,
   ] = await Promise.all([
     // Dog location
@@ -167,22 +165,6 @@ export async function fetchCorrelationInput(
           eq(accidentalExposures.dogId, dogId),
           gte(accidentalExposures.date, windowStart),
           lte(accidentalExposures.date, windowEnd),
-        ),
-      ),
-
-    // Medications overlapping the correlation window
-    db
-      .select({
-        startDate: medications.startDate,
-        endDate: medications.endDate,
-        reason: medications.reason,
-      })
-      .from(medications)
-      .where(
-        and(
-          eq(medications.dogId, dogId),
-          lte(medications.startDate, windowEnd),
-          sql`(${medications.endDate} IS NULL OR ${medications.endDate} >= ${windowStart})`,
         ),
       ),
 
@@ -363,7 +345,6 @@ export async function fetchCorrelationInput(
     poopLogs: poopRows,
     itchinessLogs: itchRows,
     accidentalExposures: exposureRows,
-    medications: medicationRows,
     scorecards: scorecardRows,
     pollenLogs: pollenRows.map((r) => ({
       date: r.date,

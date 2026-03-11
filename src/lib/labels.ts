@@ -35,11 +35,33 @@ export const ITCH_SCORE_LABELS: Record<number, string> = {
   5: "Extreme",
 }
 
-/** Human-readable labels for medication reason enum values. */
-export const MEDICATION_REASON_LABELS: Record<string, string> = {
-  itchiness: "Itchiness",
-  digestive: "Digestive",
-  other: "Other",
+/** Human-readable labels for dosing interval enum values. */
+export const DOSING_INTERVAL_LABELS: Record<string, string> = {
+  four_times_daily: "4x daily",
+  three_times_daily: "3x daily",
+  twice_daily: "Twice daily",
+  daily: "Daily",
+  every_other_day: "Every other day",
+  weekly: "Weekly",
+  biweekly: "Every 2 weeks",
+  monthly: "Monthly",
+  every_6_weeks: "Every 6 weeks",
+  every_8_weeks: "Every 8 weeks",
+  every_12_weeks: "Every 12 weeks",
+  every_3_months: "Every 3 months",
+  every_6_months: "Every 6 months",
+  every_8_months: "Every 8 months",
+  annually: "Annually",
+  as_needed: "As needed",
+}
+
+/** Human-readable labels for medication category enum values. */
+export const MEDICATION_CATEGORY_LABELS: Record<string, string> = {
+  allergy: "Allergies",
+  parasite: "Parasite Prevention",
+  gi: "GI / Stomach",
+  pain: "Pain / NSAID",
+  steroid: "Steroids",
 }
 
 /** Shared quantity unit options for feeding/routine editors. */

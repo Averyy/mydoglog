@@ -1,7 +1,7 @@
-import { db, feedingPeriods, products, brands, medications } from "@/lib/db"
-import { eq, sql, desc } from "drizzle-orm"
+import { db, feedingPeriods, products, brands } from "@/lib/db"
+import { eq, sql } from "drizzle-orm"
 import { resolveActivePlan, type PlanPeriod } from "@/lib/feeding"
-import type { ActivePlan, FeedingPlanItem, MedicationSummary } from "@/lib/types"
+import type { ActivePlan, FeedingPlanItem } from "@/lib/types"
 
 /**
  * Fetch the active feeding plan for a dog as of today.
@@ -74,29 +74,4 @@ export async function getActivePlanForDog(
     endDate: activeRows[0].endDate,
     items,
   }
-}
-
-/**
- * Fetch active (not ended) medications for a dog.
- */
-export async function getActiveMedicationsForDog(
-  dogId: string,
-): Promise<MedicationSummary[]> {
-  const rows = await db
-    .select({
-      id: medications.id,
-      name: medications.name,
-      dosage: medications.dosage,
-      startDate: medications.startDate,
-      endDate: medications.endDate,
-      reason: medications.reason,
-      notes: medications.notes,
-    })
-    .from(medications)
-    .where(
-      sql`${medications.dogId} = ${dogId} AND ${medications.endDate} IS NULL`,
-    )
-    .orderBy(desc(medications.startDate))
-
-  return rows
 }

@@ -1,13 +1,15 @@
 import { NextRequest, NextResponse } from "next/server"
 import { auth } from "@/lib/auth"
 import { headers } from "next/headers"
-import { db, medications, dogs } from "@/lib/db"
+import { db, medications, dogs, dosingIntervalEnum } from "@/lib/db"
 import { eq, and } from "drizzle-orm"
+
+const VALID_INTERVALS = new Set<string>(dosingIntervalEnum.enumValues)
 
 type RouteParams = { params: Promise<{ id: string }> }
 
 /**
- * Verify that the current user owns the medication (medication → dog → owner).
+ * Verify that the current user owns the medication (medication -> dog -> owner).
  */
 async function verifyMedicationOwnership(
   medicationId: string,
@@ -42,7 +44,8 @@ interface MedicationPatchBody {
   name?: string
   dosage?: string | null
   endDate?: string | null
-  reason?: string | null
+  medicationProductId?: string | null
+  interval?: string | null
   notes?: string | null
 }
 
@@ -68,12 +71,8 @@ export async function PATCH(
     if (body.dosage !== undefined) updates.dosage = body.dosage?.trim() || null
     if (body.endDate !== undefined) updates.endDate = body.endDate
     if (body.notes !== undefined) updates.notes = body.notes?.trim() || null
-    if (body.reason !== undefined) {
-      const validReasons = ["itchiness", "digestive", "other"] as const
-      updates.reason = body.reason && validReasons.includes(body.reason as typeof validReasons[number])
-        ? body.reason
-        : null
-    }
+    if (body.medicationProductId !== undefined) updates.medicationProductId = body.medicationProductId
+    if (body.interval !== undefined) updates.interval = body.interval && VALID_INTERVALS.has(body.interval) ? body.interval : null
 
     const [updated] = await db
       .update(medications)
@@ -92,7 +91,8 @@ export async function PATCH(
 }
 
 /**
- * DELETE — soft-delete: set endDate to today (not a hard delete — history matters for correlation).
+ * DELETE — hard delete: permanently removes the medication record.
+ * Stopping a medication (soft-delete via endDate) is handled by PATCH.
  */
 export async function DELETE(
   _request: NextRequest,
@@ -103,15 +103,11 @@ export async function DELETE(
     const ownership = await verifyMedicationOwnership(medicationId)
     if ("error" in ownership) return ownership.error
 
-    const today = new Date().toISOString().split("T")[0]
-
-    const [updated] = await db
-      .update(medications)
-      .set({ endDate: today, updatedAt: new Date() })
+    await db
+      .delete(medications)
       .where(eq(medications.id, medicationId))
-      .returning()
 
-    return NextResponse.json(updated)
+    return NextResponse.json({ success: true })
   } catch (error) {
     console.error("Error deleting medication:", error)
     return NextResponse.json(

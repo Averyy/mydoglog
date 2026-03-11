@@ -22,7 +22,6 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 import { CollapsibleNotes } from "@/components/collapsible-notes"
-import { MedicationItem } from "@/components/medication-item"
 import { ProductItem } from "@/components/product-item"
 import { LiaCheckSolid, LiaTimesSolid } from "react-icons/lia"
 import { toast } from "sonner"
@@ -307,7 +306,7 @@ export function DailyCheckInContent({
     ? loggedBadge(treatTotalPieces > 0 ? `${treatTotalPieces} treat${treatTotalPieces !== 1 ? "s" : ""}` : "Treats")
     : noneBadge
 
-  const mealPlanBadge = !routineLoading && routine && (routine.plan || routine.medications.length > 0) ? (
+  const mealPlanBadge = !routineLoading && routine?.plan ? (
     <Badge variant="outline" className="ml-auto mr-2 border-primary text-primary text-[10px]">
       <LiaCheckSolid className="size-3" />
       Normal Routine
@@ -566,7 +565,7 @@ export function DailyCheckInContent({
                   </div>
                 ))}
               </div>
-            ) : !routine || (!routine.plan && routine.medications.length === 0) ? (
+            ) : !routine?.plan ? (
               <p className="text-xs text-muted-foreground">No active routine set up.</p>
             ) : (
               <div className="space-y-3 animate-in fade-in duration-300">
@@ -585,18 +584,6 @@ export function DailyCheckInContent({
                   </div>
                 )}
 
-                {routine.medications.length > 0 && (
-                    <div className="space-y-1.5">
-                      {routine.medications.map((med) => (
-                        <MedicationItem
-                          key={med.id}
-                          name={med.name}
-                          dosage={med.dosage}
-                          reason={med.reason}
-                        />
-                      ))}
-                    </div>
-                )}
               </div>
             )}
           </AccordionContent>

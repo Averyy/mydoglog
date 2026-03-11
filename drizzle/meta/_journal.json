@@ -50,6 +50,13 @@
       "when": 1773089701456,
       "tag": "0006_elite_medusa",
       "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1773430800000,
+      "tag": "0007_medications_feature",
+      "breakpoints": true
     }
   ]
 }

@@ -9,6 +9,7 @@ import {
   LiaPlusSolid,
   LiaDogSolid,
   LiaUtensilsSolid,
+  LiaCapsulesSolid,
   LiaSunSolid,
   LiaMoonSolid,
 } from "react-icons/lia"
@@ -30,7 +31,7 @@ const NAV_LINKS: NavItem[] = [
   { label: "Food", icon: LiaUtensilsSolid, dogHref: (id) => `/dogs/${id}/food` },
   { label: "Log", icon: LiaPlusSolid, prominent: true },
   { label: "Insights", icon: LiaLightbulbSolid, dogHref: (id) => `/dogs/${id}/insights` },
-  { label: "Settings", icon: LiaDogSolid, href: "/settings" },
+  { label: "Meds", icon: LiaCapsulesSolid, dogHref: (id) => `/dogs/${id}/meds` },
 ]
 
 function resolveHref(link: NavItem, activeDogId: string | null): string {
@@ -68,7 +69,6 @@ export function DesktopNavLinks(): React.ReactElement {
     <nav className="flex items-center gap-6 text-sm text-text-secondary">
       {NAV_LINKS.filter((link) => !link.prominent).map((link) => {
         const href = resolveHref(link, activeDogId)
-        const isSettings = link.label === "Settings"
 
         return (
           <Link
@@ -79,10 +79,20 @@ export function DesktopNavLinks(): React.ReactElement {
               isNavActive(href, pathname) && "text-text-primary font-medium",
             )}
           >
-            {isSettings ? <><span className="sr-only">Settings</span><LiaDogSolid className="size-5" /></> : link.label}
+            {link.label}
           </Link>
         )
       })}
+      <Link
+        href="/settings"
+        className={cn(
+          "transition-colors hover:text-text-primary",
+          isNavActive("/settings", pathname) && "text-text-primary font-medium",
+        )}
+      >
+        <span className="sr-only">Settings</span>
+        <LiaDogSolid className="size-5" />
+      </Link>
       <ThemeToggle />
     </nav>
   )

@@ -135,10 +135,45 @@ export const symptomSeverityEnum = pgEnum("symptom_severity", [
   "severe",
 ])
 
-export const medicationReasonEnum = pgEnum("medication_reason", [
-  "itchiness",
-  "digestive",
-  "other",
+export const medicationCategoryEnum = pgEnum("medication_category", [
+  "allergy",
+  "parasite",
+  "gi",
+  "pain",
+  "steroid",
+])
+
+export const dosageFormEnum = pgEnum("dosage_form", [
+  "tablet",
+  "chewable",
+  "capsule",
+  "liquid",
+  "injection",
+  "topical",
+  "spray",
+  "powder",
+  "granules",
+  "gel",
+  "collar",
+])
+
+export const dosingIntervalEnum = pgEnum("dosing_interval", [
+  "four_times_daily",
+  "three_times_daily",
+  "twice_daily",
+  "daily",
+  "every_other_day",
+  "weekly",
+  "biweekly",
+  "monthly",
+  "every_6_weeks",
+  "every_8_weeks",
+  "every_12_weeks",
+  "every_3_months",
+  "every_6_months",
+  "every_8_months",
+  "annually",
+  "as_needed",
 ])
 
 // ---------------------------------------------------------------------------
@@ -473,6 +508,23 @@ export const accidentalExposures = pgTable(
   (table) => [index("idx_exposures_dog_date").on(table.dogId, table.date)],
 )
 
+export const medicationProducts = pgTable("medication_products", {
+  id: text("id")
+    .primaryKey()
+    .$defaultFn(() => crypto.randomUUID()),
+  name: text("name").notNull().unique(),
+  genericName: text("generic_name").notNull(),
+  manufacturer: text("manufacturer"),
+  category: medicationCategoryEnum("category").notNull(),
+  drugClass: text("drug_class"),
+  dosageForm: dosageFormEnum("dosage_form").notNull(),
+  defaultIntervals: dosingIntervalEnum("default_intervals").array().notNull(),
+  description: text("description"),
+  commonSideEffects: text("common_side_effects"),
+  sideEffectsSources: text("side_effects_sources"),
+  createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+})
+
 export const medications = pgTable(
   "medications",
   {
@@ -486,7 +538,10 @@ export const medications = pgTable(
     dosage: text("dosage"),
     startDate: date("start_date").notNull(),
     endDate: date("end_date"),
-    reason: medicationReasonEnum("reason"),
+    medicationProductId: text("medication_product_id").references(
+      () => medicationProducts.id,
+    ),
+    interval: dosingIntervalEnum("interval"),
     notes: text("notes"),
     createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
     updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
@@ -526,5 +581,6 @@ export type FeedingPeriod = typeof feedingPeriods.$inferSelect
 export type PoopLog = typeof poopLogs.$inferSelect
 export type ItchinessLog = typeof itchinessLogs.$inferSelect
 export type SymptomLog = typeof symptomLogs.$inferSelect
+export type MedicationProduct = typeof medicationProducts.$inferSelect
 export type Medication = typeof medications.$inferSelect
 export type FoodScorecard = typeof foodScorecards.$inferSelect

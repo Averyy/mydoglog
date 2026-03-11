@@ -4,7 +4,6 @@ import { useState, useEffect, useRef, useMemo } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import { Separator } from "@/components/ui/separator"
 import {
   Select,
   SelectContent,
@@ -17,8 +16,8 @@ import { ResponsiveModal } from "@/components/responsive-modal"
 import { NutritionLabel } from "@/components/nutrition-label"
 import { Plus, Trash2 } from "lucide-react"
 import { toast } from "sonner"
-import type { ActivePlan, FeedingPlanItem, MedicationSummary, ProductSummary } from "@/lib/types"
-import { QUANTITY_UNIT_OPTIONS, MEDICATION_REASON_LABELS } from "@/lib/labels"
+import type { ActivePlan, FeedingPlanItem, ProductSummary } from "@/lib/types"
+import { QUANTITY_UNIT_OPTIONS } from "@/lib/labels"
 import { computeNutrition, getAvailableUnits, type NutritionItem, type AvailableUnit } from "@/lib/nutrition"
 
 // ─── Local types ─────────────────────────────────────────────────────────────
@@ -32,26 +31,11 @@ interface PlanItem {
   originalId?: string
 }
 
-interface MedicationItem {
-  key: string
-  name: string
-  dosage: string
-  reason: string
-  /** Original medication id (if editing existing item) */
-  originalId?: string
-}
-
 interface ProductDetail {
   guaranteedAnalysis: Record<string, number> | null
   calorieContent: string | null
   rawIngredientString: string | null
 }
-
-// ─── Constants ───────────────────────────────────────────────────────────────
-
-const REASON_OPTIONS = Object.entries(MEDICATION_REASON_LABELS).map(
-  ([value, label]) => ({ value, label }),
-)
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
 
@@ -82,24 +66,6 @@ function createPlanItem(from?: FeedingPlanItem): PlanItem {
     product: null,
     quantity: "",
     quantityUnit: "cup",
-  }
-}
-
-function createMedItem(from?: MedicationSummary): MedicationItem {
-  if (from) {
-    return {
-      key: crypto.randomUUID(),
-      name: from.name,
-      dosage: from.dosage ?? "",
-      reason: from.reason ?? "",
-      originalId: from.id,
-    }
-  }
-  return {
-    key: crypto.randomUUID(),
-    name: "",
-    dosage: "",
-    reason: "",
   }
 }
 
@@ -139,25 +105,18 @@ function quantitiesChanged(
 interface RoutineEditorContentProps {
   dogId: string
   currentPlan: ActivePlan | null
-  currentMedications: MedicationSummary[]
   onSaved: () => void
 }
 
 export function RoutineEditorContent({
   dogId,
   currentPlan,
-  currentMedications,
   onSaved,
 }: RoutineEditorContentProps): React.ReactElement {
   const [planItems, setPlanItems] = useState<PlanItem[]>(() =>
     currentPlan && currentPlan.items.length > 0
       ? currentPlan.items.map((item) => createPlanItem(item))
       : [createPlanItem()],
-  )
-  const [medItems, setMedItems] = useState<MedicationItem[]>(() =>
-    currentMedications.length > 0
-      ? currentMedications.map((m) => createMedItem(m))
-      : [],
   )
   const [saving, setSaving] = useState(false)
 
@@ -273,32 +232,18 @@ export function RoutineEditorContent({
     })
   }
 
-  // ── Medication handlers ───────────────────────────────────────────────
-
-  function updateMedItem(key: string, updates: Partial<MedicationItem>): void {
-    setMedItems((prev) =>
-      prev.map((item) => (item.key === key ? { ...item, ...updates } : item)),
-    )
-  }
-
-  function removeMedItem(key: string): void {
-    setMedItems((prev) => prev.filter((item) => item.key !== key))
-  }
-
   // ── Save logic ────────────────────────────────────────────────────────
 
   async function handleSave(): Promise<void> {
     const validPlanItems = planItems.filter((i) => i.product)
-    const validMedItems = medItems.filter((m) => m.name.trim())
 
-    if (validPlanItems.length === 0 && validMedItems.length === 0 && currentMedications.length === 0) {
-      toast.error("Add at least one food or medication")
+    if (validPlanItems.length === 0) {
+      toast.error("Add at least one food item")
       return
     }
 
     setSaving(true)
     try {
-      // a. Products: structural change → new plan group; quantity-only → PATCH in place
       const isStructural = currentPlan
         ? productsChanged(planItems, currentPlan.items)
         : validPlanItems.length > 0
@@ -349,79 +294,12 @@ export function RoutineEditorContent({
         }
       }
 
-      // b. Medications: diff against current
-      await saveMedications(validMedItems)
-
       toast.success("Routine saved")
       onSaved()
     } catch {
       toast.error("Something went wrong")
     } finally {
       setSaving(false)
-    }
-  }
-
-  async function saveMedications(validMedItems: MedicationItem[]): Promise<void> {
-    const today = new Date().toISOString().split("T")[0]
-    const promises: Promise<Response>[] = []
-
-    // New medications (no originalId)
-    for (const item of validMedItems) {
-      if (!item.originalId) {
-        promises.push(
-          fetch(`/api/dogs/${dogId}/medications`, {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-              name: item.name.trim(),
-              dosage: item.dosage.trim() || undefined,
-              reason: item.reason || undefined,
-            }),
-          }),
-        )
-      }
-    }
-
-    // Modified medications (has originalId, fields changed)
-    for (const item of validMedItems) {
-      if (!item.originalId) continue
-      const orig = currentMedications.find((m) => m.id === item.originalId)
-      if (!orig) continue
-
-      const updates: Record<string, string | null> = {}
-      if (item.name.trim() !== orig.name) updates.name = item.name.trim()
-      if ((item.dosage.trim() || null) !== (orig.dosage || null)) updates.dosage = item.dosage.trim() || null
-      if ((item.reason || null) !== (orig.reason || null)) updates.reason = item.reason || null
-
-      if (Object.keys(updates).length > 0) {
-        promises.push(
-          fetch(`/api/medications/${item.originalId}`, {
-            method: "PATCH",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(updates),
-          }),
-        )
-      }
-    }
-
-    // Removed medications (originalId present in currentMedications but not in validMedItems)
-    const keptIds = new Set(validMedItems.filter((m) => m.originalId).map((m) => m.originalId))
-    for (const med of currentMedications) {
-      if (!keptIds.has(med.id)) {
-        promises.push(
-          fetch(`/api/medications/${med.id}`, {
-            method: "PATCH",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ endDate: today }),
-          }),
-        )
-      }
-    }
-
-    const responses = await Promise.all(promises)
-    const failed = responses.filter((r) => !r.ok)
-    if (failed.length > 0) {
-      throw new Error(`${failed.length} medication update(s) failed`)
     }
   }
 
@@ -432,7 +310,7 @@ export function RoutineEditorContent({
       {/* Header (inside scrollable form column) */}
       <div>
         <h2 className="text-lg font-semibold">Edit routine</h2>
-        <p className="text-sm text-muted-foreground">Set your dog&apos;s daily food, supplements, and medications.</p>
+        <p className="text-sm text-muted-foreground">Set your dog&apos;s daily food and supplements.</p>
       </div>
       {/* ── Food & Supplements ──────────────────────────────────────────── */}
       <div className="space-y-3">
@@ -505,73 +383,6 @@ export function RoutineEditorContent({
         </Button>
       </div>
 
-      <Separator />
-
-      {/* ── Medications ─────────────────────────────────────────────────── */}
-      <div className="space-y-3">
-        <Label className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
-          Medications
-        </Label>
-        {medItems.length === 0 && (
-          <p className="text-sm text-muted-foreground">No active medications</p>
-        )}
-        {medItems.map((item) => (
-          <div key={item.key} className="space-y-2 rounded-lg border p-3">
-            <div className="flex items-center gap-2">
-              <Input
-                placeholder="Medication name"
-                value={item.name}
-                onChange={(e) => updateMedItem(item.key, { name: e.target.value })}
-                className="h-9 min-w-0 flex-1"
-              />
-              <Button
-                type="button"
-                variant="ghost"
-                size="icon-sm"
-                onClick={() => removeMedItem(item.key)}
-                className="shrink-0 text-muted-foreground hover:text-destructive"
-                aria-label="Remove medication"
-              >
-                <Trash2 className="size-4" />
-              </Button>
-            </div>
-            <div className="flex gap-2">
-              <Input
-                placeholder="e.g. 16mg daily"
-                value={item.dosage}
-                onChange={(e) => updateMedItem(item.key, { dosage: e.target.value })}
-                className="h-9 min-w-0 flex-1"
-              />
-              <Select
-                value={item.reason}
-                onValueChange={(v) => updateMedItem(item.key, { reason: v })}
-              >
-                <SelectTrigger size="sm" className="w-28">
-                  <SelectValue placeholder="Reason" />
-                </SelectTrigger>
-                <SelectContent>
-                  {REASON_OPTIONS.map((opt) => (
-                    <SelectItem key={opt.value} value={opt.value}>
-                      {opt.label}
-                    </SelectItem>
-                  ))}
-                </SelectContent>
-              </Select>
-            </div>
-          </div>
-        ))}
-        <Button
-          type="button"
-          variant="outline"
-          size="sm"
-          onClick={() => setMedItems((prev) => [...prev, createMedItem()])}
-          className="w-full"
-        >
-          <Plus className="size-4" />
-          Add medication
-        </Button>
-      </div>
-
       {/* ── Save ────────────────────────────────────────────────────────── */}
       <Button onClick={handleSave} disabled={saving} className="w-full">
         {saving ? "Saving..." : "Save routine"}
@@ -599,7 +410,6 @@ interface RoutineEditorProps {
   onOpenChange: (open: boolean) => void
   dogId: string
   currentPlan: ActivePlan | null
-  currentMedications: MedicationSummary[]
   onSaved: () => void
 }
 
@@ -608,7 +418,6 @@ export function RoutineEditor({
   onOpenChange,
   dogId,
   currentPlan,
-  currentMedications,
   onSaved,
 }: RoutineEditorProps): React.ReactElement {
   function handleSaved(): void {
@@ -621,14 +430,13 @@ export function RoutineEditor({
       open={open}
       onOpenChange={onOpenChange}
       title="Edit routine"
-      description="Set your dog's daily food, supplements, and medications."
+      description="Set your dog's daily food and supplements."
       size="wide"
     >
       {open && (
         <RoutineEditorContent
           dogId={dogId}
           currentPlan={currentPlan}
-          currentMedications={currentMedications}
           onSaved={handleSaved}
         />
       )}

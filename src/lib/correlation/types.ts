@@ -78,8 +78,6 @@ export interface DayOutcome {
   poopScore: number | null
   itchScore: number | null
   scorecardPoopFallback: number | null
-  onItchinessMedication: boolean
-  onDigestiveMedication: boolean
   pollenIndex: number | null
   hasAccidentalExposure: boolean
 }
@@ -146,14 +144,12 @@ export interface CorrelationOptions {
   transitionBufferDays: number
   exposureBufferDays: number
   includeScorecardFallback: boolean
-  excludeMedicationPeriods: boolean
 }
 
 export const DEFAULT_CORRELATION_OPTIONS: CorrelationOptions = {
   transitionBufferDays: 5,
   exposureBufferDays: 5,
   includeScorecardFallback: true,
-  excludeMedicationPeriods: false,
 }
 
 export interface CorrelationResult {
@@ -209,12 +205,6 @@ export interface RawAccidentalExposure {
   date: string
 }
 
-export interface RawMedication {
-  startDate: string
-  endDate: string | null
-  reason: string | null
-}
-
 export interface RawScorecard {
   planGroupId: string
   poopQuality: number[] | null
@@ -249,7 +239,6 @@ export interface CorrelationInput {
   poopLogs: RawPoopLog[]
   itchinessLogs: RawItchinessLog[]
   accidentalExposures: RawAccidentalExposure[]
-  medications: RawMedication[]
   scorecards: RawScorecard[]
   pollenLogs: RawPollenLog[]
   planPeriods: PlanPeriod[]

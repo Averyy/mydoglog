@@ -55,10 +55,7 @@ function makeProductIngredients(
 const emptyOutcome: DayOutcome = {
   poopScore: null,
   itchScore: null,
-
   scorecardPoopFallback: null,
-  onItchinessMedication: false,
-  onDigestiveMedication: false,
   pollenIndex: null,
   hasAccidentalExposure: false,
 }
@@ -87,7 +84,6 @@ function makeInput(overrides: Partial<CorrelationInput> = {}): CorrelationInput 
     itchinessLogs: [],
 
     accidentalExposures: [],
-    medications: [],
     scorecards: [],
     pollenLogs: [],
     planPeriods: [],
@@ -587,35 +583,6 @@ describe("buildDaySnapshots", () => {
     expect(snaps[5].isExposureBuffer).toBe(false) // June 6
   })
 
-  it("sets medication flags correctly", () => {
-    const input = makeInput({
-      windowStart: "2024-06-01",
-      windowEnd: "2024-06-03",
-      medications: [
-        {
-          startDate: "2024-06-01",
-          endDate: "2024-06-02",
-          reason: "itchiness",
-        },
-        {
-          startDate: "2024-06-02",
-          endDate: null,
-          reason: "digestive",
-        },
-      ],
-    })
-    const snaps = buildDaySnapshots(input, opts)
-    // June 1: itchiness only
-    expect(snaps[0].outcome.onItchinessMedication).toBe(true)
-    expect(snaps[0].outcome.onDigestiveMedication).toBe(false)
-    // June 2: both
-    expect(snaps[1].outcome.onItchinessMedication).toBe(true)
-    expect(snaps[1].outcome.onDigestiveMedication).toBe(true)
-    // June 3: itchiness ended, digestive ongoing
-    expect(snaps[2].outcome.onItchinessMedication).toBe(false)
-    expect(snaps[2].outcome.onDigestiveMedication).toBe(true)
-  })
-
   it("days outside feeding period have empty ingredients", () => {
     const input = makeInput({
       windowStart: "2024-06-01",
@@ -955,27 +922,6 @@ describe("computeIngredientScores", () => {
       }),
     ]
     const scores = computeIngredientScores(snapshots, opts)
-    expect(scores[0].dayCount).toBe(1)
-  })
-
-  it("excludes medication periods when option enabled", () => {
-    const snapshots: DaySnapshot[] = [
-      makeSnapshot({
-        date: "2024-06-01",
-        ingredients: [chickenActive],
-        outcome: { ...emptyOutcome, poopScore: 6, onDigestiveMedication: true },
-      }),
-      makeSnapshot({
-        date: "2024-06-02",
-        ingredients: [chickenActive],
-        outcome: { ...emptyOutcome, poopScore: 2 },
-      }),
-    ]
-    const scores = computeIngredientScores(snapshots, {
-      ...opts,
-      excludeMedicationPeriods: true,
-    })
-    expect(scores[0].rawAvgPoopScore).toBe(2)
     expect(scores[0].dayCount).toBe(1)
   })
 

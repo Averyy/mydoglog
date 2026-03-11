@@ -272,20 +272,6 @@ function buildDayOutcome(
     }
   }
 
-  // Medication flags
-  const onItchinessMedication = input.medications.some(
-    (m) =>
-      m.reason === "itchiness" &&
-      m.startDate <= date &&
-      (m.endDate == null || m.endDate >= date),
-  )
-  const onDigestiveMedication = input.medications.some(
-    (m) =>
-      m.reason === "digestive" &&
-      m.startDate <= date &&
-      (m.endDate == null || m.endDate >= date),
-  )
-
   // Pollen
   const pollenLog = input.pollenLogs.find((l) => l.date === date)
   const pollenIndex = pollenLog?.pollenIndex ?? null
@@ -299,8 +285,6 @@ function buildDayOutcome(
     poopScore,
     itchScore,
     scorecardPoopFallback,
-    onItchinessMedication,
-    onDigestiveMedication,
     pollenIndex,
     hasAccidentalExposure,
   }
@@ -456,12 +440,6 @@ export function computeIngredientScores(
   const filtered = snapshots.filter((snap) => {
     if (snap.isTransitionBuffer) return false
     if (snap.isExposureBuffer) return false
-    if (
-      options.excludeMedicationPeriods &&
-      (snap.outcome.onItchinessMedication || snap.outcome.onDigestiveMedication)
-    ) {
-      return false
-    }
     return true
   })
 
@@ -864,8 +842,6 @@ export function buildBackfillSnapshots(
         poopScore: avgPoop,
         itchScore: avgItch,
         scorecardPoopFallback: null,
-        onItchinessMedication: false,
-        onDigestiveMedication: false,
         pollenIndex: null,
         hasAccidentalExposure: false,
       },
@@ -1010,12 +986,6 @@ export function runCorrelation(
   let scoreableDays = 0
   for (const snap of allSnapshots) {
     if (snap.isTransitionBuffer || snap.isExposureBuffer) continue
-    if (
-      options.excludeMedicationPeriods &&
-      (snap.outcome.onItchinessMedication || snap.outcome.onDigestiveMedication)
-    ) {
-      continue
-    }
     const isScoreable =
       snap.outcome.poopScore != null ||
       snap.outcome.itchScore != null ||

@@ -78,8 +78,13 @@ export interface MedicationSummary {
   dosage: string | null
   startDate: string
   endDate: string | null
-  reason: string | null
+  medicationProductId: string | null
+  interval: string | null
   notes: string | null
+  dosageForm: string | null
+  description: string | null
+  commonSideEffects: string | null
+  sideEffectsSources: string | null
 }
 
 export interface LogFeedEntry {
@@ -98,5 +103,4 @@ export interface LogFeedResponse {
 
 export interface RoutineData {
   plan: ActivePlan | null
-  medications: MedicationSummary[]
 }

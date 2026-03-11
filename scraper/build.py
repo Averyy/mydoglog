@@ -776,6 +776,16 @@ def main() -> None:
             if brand_dir.is_dir():
                 _process_brand_images(brand_dir.name)
 
+    # Seed medication products
+    print("\nSeeding medication products...")
+    from seed_medications import seed_medications as _seed_meds
+    med_conn = psycopg2.connect(DATABASE_URL)
+    try:
+        med_count = _seed_meds(med_conn)
+        stats["medication_products"] = med_count
+    finally:
+        med_conn.close()
+
     # Print unknown ingredients to stderr
     if unknown_ingredients:
         print(f"\n--- Unknown ingredients ({len(unknown_ingredients)}) ---", file=sys.stderr)

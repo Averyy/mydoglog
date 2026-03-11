@@ -16,7 +16,7 @@ import { ProductIngredientList, type ClassifiedIngredient, type ProductIngredien
 import { formatDateRange, daysInRange, avgFromRange } from "@/lib/food-helpers"
 import { Plus } from "lucide-react"
 import { LiaPenSolid } from "react-icons/lia"
-import type { ActivePlan, FeedingPlanGroup, MedicationSummary, RoutineData } from "@/lib/types"
+import type { ActivePlan, FeedingPlanGroup, RoutineData } from "@/lib/types"
 import type { CorrelationResult, IngredientProductEntry } from "@/lib/correlation/types"
 import { NON_FOOD_TYPES } from "@/lib/labels"
 
@@ -48,7 +48,6 @@ export default function FoodPage(): React.ReactElement {
 
   // Routine data
   const [activePlan, setActivePlan] = useState<ActivePlan | null>(null)
-  const [activeMedications, setActiveMedications] = useState<MedicationSummary[]>([])
   const [routineEditorOpen, setRoutineEditorOpen] = useState(false)
 
   // Scorecard data
@@ -85,7 +84,6 @@ export default function FoodPage(): React.ReactElement {
       if (routineRes.ok) {
         const routineData: RoutineData = await routineRes.json()
         setActivePlan(routineData.plan)
-        setActiveMedications(routineData.medications)
       } else {
         anyFailed = true
       }
@@ -270,7 +268,6 @@ export default function FoodPage(): React.ReactElement {
       ) : (
         <ActivePlanCard
           plan={activePlan}
-          medications={activeMedications}
           onEditRoutine={() => setRoutineEditorOpen(true)}
         />
       )}
@@ -417,7 +414,6 @@ export default function FoodPage(): React.ReactElement {
         onOpenChange={setRoutineEditorOpen}
         dogId={dogId}
         currentPlan={activePlan}
-        currentMedications={activeMedications}
         onSaved={fetchData}
       />
 
