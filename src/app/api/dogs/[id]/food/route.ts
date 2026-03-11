@@ -55,6 +55,7 @@ export async function GET(
           isBackfill: row.isBackfill,
           approximateDuration: row.approximateDuration,
           items: [],
+          treats: [],
           scorecard: null,
           logStats: null,
         }

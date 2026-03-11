@@ -103,18 +103,31 @@ function createMedItem(from?: MedicationSummary): MedicationItem {
   }
 }
 
-function planItemsChanged(
+/** Returns true if products were added, removed, or swapped (structural change). */
+function productsChanged(
   items: PlanItem[],
   original: FeedingPlanItem[],
 ): boolean {
   const validItems = items.filter((i) => i.product)
   if (validItems.length !== original.length) return true
 
-  // Check if any product/quantity/unit/slot changed
   for (const item of validItems) {
     const orig = original.find((o) => o.id === item.originalId)
     if (!orig) return true
     if (item.product!.id !== orig.productId) return true
+  }
+  return false
+}
+
+/** Returns true if same products but quantities/units differ. */
+function quantitiesChanged(
+  items: PlanItem[],
+  original: FeedingPlanItem[],
+): boolean {
+  const validItems = items.filter((i) => i.product)
+  for (const item of validItems) {
+    const orig = original.find((o) => o.id === item.originalId)
+    if (!orig) continue
     if ((item.quantity || null) !== (orig.quantity || null)) return true
     if (item.quantity && item.quantityUnit !== (orig.quantityUnit ?? "cup")) return true
   }
@@ -285,12 +298,15 @@ export function RoutineEditorContent({
 
     setSaving(true)
     try {
-      // a. Products: check if changed → create new plan group
-      const productsChanged = currentPlan
-        ? planItemsChanged(planItems, currentPlan.items)
+      // a. Products: structural change → new plan group; quantity-only → PATCH in place
+      const isStructural = currentPlan
+        ? productsChanged(planItems, currentPlan.items)
         : validPlanItems.length > 0
+      const isQuantityOnly = !isStructural && currentPlan
+        ? quantitiesChanged(planItems, currentPlan.items)
+        : false
 
-      if (productsChanged && validPlanItems.length > 0) {
+      if (isStructural && validPlanItems.length > 0) {
         const body = {
           mode: "starting_today",
           items: validPlanItems.map((item) => ({
@@ -309,6 +325,26 @@ export function RoutineEditorContent({
         if (!res.ok) {
           const data = await res.json()
           toast.error(data.error ?? "Failed to save plan")
+          return
+        }
+      } else if (isQuantityOnly && currentPlan) {
+        const items = validPlanItems
+          .filter((i) => i.originalId)
+          .map((item) => ({
+            id: item.originalId!,
+            quantity: item.quantity || "1",
+            quantityUnit: item.quantityUnit,
+          }))
+
+        const res = await fetch(`/api/food/groups/${currentPlan.planGroupId}`, {
+          method: "PATCH",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ items }),
+        })
+
+        if (!res.ok) {
+          const data = await res.json()
+          toast.error(data.error ?? "Failed to update quantities")
           return
         }
       }

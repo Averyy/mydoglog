@@ -4,7 +4,8 @@ import type { PositionCategory } from "@/lib/correlation/types"
 
 export function formatDateRange(startDate: string, endDate: string | null): string {
   const start = format(parseISO(startDate), "MMM d, yyyy")
-  if (!endDate) return `Since ${start}`
+  if (!endDate) return `${start} - Today`
+  if (endDate === startDate) return start
   return `${start} - ${format(parseISO(endDate), "MMM d, yyyy")}`
 }
 

@@ -2,7 +2,7 @@
 
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Plus, Settings } from "lucide-react"
+import { LiaPlusSolid, LiaPenSolid } from "react-icons/lia"
 import { format, parseISO } from "date-fns"
 import type { ActivePlan, MedicationSummary } from "@/lib/types"
 import { MedicationItem } from "@/components/medication-item"
@@ -29,7 +29,7 @@ export function ActivePlanCard({
             No active routine
           </p>
           <Button onClick={onEditRoutine} size="sm">
-            <Plus className="size-4" />
+            <LiaPlusSolid className="size-4" />
             Set up routine
           </Button>
         </CardContent>
@@ -67,8 +67,8 @@ export function ActivePlanCard({
             onClick={onEditRoutine}
             className="shrink-0"
           >
-            <Settings className="size-4" />
-            Edit
+            <LiaPenSolid className="size-4" />
+            Edit routine
           </Button>
         </div>
 

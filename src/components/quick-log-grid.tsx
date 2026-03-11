@@ -2,12 +2,12 @@
 
 import { useState, useEffect, useCallback } from "react"
 import {
-  LiaCalendarCheckSolid,
-  LiaCalendarTimesSolid,
-  LiaCookieBiteSolid,
-  LiaPoopSolid,
-  LiaPawSolid,
-} from "react-icons/lia"
+  PoopIcon,
+  TreatIcon,
+  ItchIcon,
+  CalendarCheckIcon,
+  CalendarTimesIcon,
+} from "@/components/themed-log-icons"
 import type { LogMode } from "@/components/active-dog-provider"
 
 interface TodayCounts {
@@ -65,10 +65,10 @@ export function QuickLogGrid({ dogId, onSelect }: QuickLogGridProps): React.Reac
     icon: React.ComponentType<{ className?: string }>
     count: number | null
   }[] = [
-    { mode: "checkin", label: hasCheckin ? "Manage Check-in" : "Daily Check-in", icon: hasCheckin ? LiaCalendarCheckSolid : LiaCalendarTimesSolid, count: totalToday > 0 ? totalToday : null },
-    { mode: "poop", label: "Log Stool", icon: LiaPoopSolid, count: counts.poop },
-    { mode: "itch", label: "Log Itch", icon: LiaPawSolid, count: counts.itch },
-    { mode: "treat", label: "Log Treat", icon: LiaCookieBiteSolid, count: counts.treat },
+    { mode: "checkin", label: hasCheckin ? "Manage Check-in" : "Daily Check-in", icon: hasCheckin ? CalendarCheckIcon : CalendarTimesIcon, count: totalToday > 0 ? totalToday : null },
+    { mode: "poop", label: "Log Stool", icon: PoopIcon, count: counts.poop },
+    { mode: "itch", label: "Log Itch", icon: ItchIcon, count: counts.itch },
+    { mode: "treat", label: "Log Treat", icon: TreatIcon, count: counts.treat },
   ]
 
   return (

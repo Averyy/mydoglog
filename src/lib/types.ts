@@ -12,6 +12,16 @@ export interface ProductSummary {
   calorieContent: string | null
 }
 
+export interface TreatSummary {
+  productId: string
+  productName: string
+  brandName: string
+  imageUrl: string | null
+  logCount: number
+  firstDate: string
+  lastDate: string
+}
+
 export interface FeedingPlanGroup {
   planGroupId: string
   planName: string | null
@@ -20,6 +30,7 @@ export interface FeedingPlanGroup {
   isBackfill: boolean
   approximateDuration: string | null
   items: FeedingPlanItem[]
+  treats: TreatSummary[]
   scorecard: ScorecardSummary | null
   logStats: LogStats | null
 }

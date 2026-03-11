@@ -51,6 +51,37 @@ export async function PATCH(
     if (ownerResult instanceof NextResponse) return ownerResult
 
     const body = await request.json()
+
+    // Per-item quantity updates (from routine editor quantity-only saves)
+    if (Array.isArray(body.items)) {
+      const VALID_UNITS = new Set(["can", "cup", "g", "scoop", "piece", "tbsp", "tsp", "ml", "treat"])
+      type QuantityUnit = "can" | "cup" | "g" | "scoop" | "piece" | "tbsp" | "tsp" | "ml" | "treat"
+      const items: { id: string; quantity: string; quantityUnit: QuantityUnit }[] = []
+      for (const raw of body.items) {
+        if (typeof raw !== "object" || raw === null) continue
+        const id = typeof raw.id === "string" && raw.id.length > 0 ? raw.id : null
+        const quantity = typeof raw.quantity === "string" && /^\d+(\.\d+)?$/.test(raw.quantity) ? raw.quantity : null
+        const quantityUnit = typeof raw.quantityUnit === "string" && VALID_UNITS.has(raw.quantityUnit) ? raw.quantityUnit : null
+        if (!id || !quantity || !quantityUnit) {
+          return NextResponse.json({ error: "Invalid item data" }, { status: 400 })
+        }
+        items.push({ id, quantity, quantityUnit: quantityUnit as QuantityUnit })
+      }
+      if (items.length === 0) {
+        return NextResponse.json({ error: "No valid items" }, { status: 400 })
+      }
+      await Promise.all(
+        items.map((item) =>
+          db
+            .update(feedingPeriods)
+            .set({ quantity: item.quantity, quantityUnit: item.quantityUnit, updatedAt: new Date() })
+            .where(and(eq(feedingPeriods.id, item.id), eq(feedingPeriods.planGroupId, planGroupId))),
+        ),
+      )
+      return NextResponse.json({ success: true })
+    }
+
+    // Uniform update across all periods in the group (backfill editing)
     const updates: Record<string, unknown> = { updatedAt: new Date() }
 
     if (body.planName !== undefined) updates.planName = body.planName

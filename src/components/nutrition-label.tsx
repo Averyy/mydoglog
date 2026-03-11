@@ -115,6 +115,8 @@ interface NutritionLabelBaseProps {
 interface DailyVariantProps extends NutritionLabelBaseProps {
   variant?: "daily"
   ingredientLists?: IngredientList[]
+  /** Show "Nutrition Facts" on a single line with smaller text */
+  compact?: boolean
   /** Raw calorie content string — not used for daily variant */
   calorieContentRaw?: never
 }
@@ -134,6 +136,7 @@ function Skeleton({ className }: { className?: string }): React.ReactElement {
 
 export function NutritionLabel(props: NutritionLabelProps): React.ReactElement {
   const { data, loading, className, variant = "daily" } = props
+  const compact = "compact" in props && props.compact
   const { caloriesPerDay, primaryAnalysis, supplementalAnalysis, productCount } = data
   const isProduct = variant === "product"
 
@@ -146,10 +149,11 @@ export function NutritionLabel(props: NutritionLabelProps): React.ReactElement {
     >
       {/* ── Title ──────────────────────────────────────────────────── */}
       <ThickBar className="h-[7px]" />
-      <h3 className="mt-0.5 text-[32px] font-black leading-[1.05] tracking-[-0.02em] text-foreground">
-        Nutrition
-        <br />
-        Facts
+      <h3 className={cn(
+        "mt-0.5 font-black tracking-[-0.02em] text-foreground",
+        compact ? "text-[22px] leading-[1.1]" : "text-[32px] leading-[1.05]",
+      )}>
+        Nutrition{compact ? " " : <br />}Facts
       </h3>
 
       <ThickBar className="h-[5px]" />

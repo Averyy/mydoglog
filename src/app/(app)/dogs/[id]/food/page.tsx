@@ -5,25 +5,20 @@ import { useParams } from "next/navigation"
 import { useActiveDog } from "@/components/active-dog-provider"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Separator } from "@/components/ui/separator"
 import { FoodScoreCard } from "@/components/food-score-card"
 import { ScoreGrid } from "@/components/score-grid"
 import { ActivePlanCard } from "@/components/active-plan-card"
+import { PlanGroupCard } from "@/components/plan-group-card"
+import { PastRoutineCard } from "@/components/past-routine-card"
 import { RoutineEditor } from "@/components/routine-editor"
 import { BackfillModal } from "@/components/backfill-modal"
 import { ProductIngredientList, type ClassifiedIngredient, type ProductIngredientListData } from "@/components/product-ingredient-list"
 import { formatDateRange, daysInRange, avgFromRange } from "@/lib/food-helpers"
-import { format, parseISO } from "date-fns"
-import { Pencil, Plus } from "lucide-react"
+import { Plus } from "lucide-react"
+import { LiaPenSolid } from "react-icons/lia"
 import type { ActivePlan, FeedingPlanGroup, MedicationSummary, RoutineData } from "@/lib/types"
 import type { CorrelationResult, IngredientProductEntry } from "@/lib/correlation/types"
 import { NON_FOOD_TYPES } from "@/lib/labels"
-
-/** Singularize "1 weeks" → "1 week", leave "2 weeks" as-is. */
-function formatApproximateDuration(raw: string): string {
-  return raw.replace(/^1\s+(\w+)s$/i, "1 $1")
-}
 
 interface ScorecardPageData {
   past: FeedingPlanGroup[]
@@ -192,10 +187,8 @@ export default function FoodPage(): React.ReactElement {
       .sort((a, b) => (b.endDate ?? "9999-12-31").localeCompare(a.endDate ?? "9999-12-31"))
   }, [data])
 
-  // Plan history (non-backfill entries)
-  const planHistory = useMemo((): FeedingPlanGroup[] => {
-    return sortedPast.filter((g) => !g.isBackfill)
-  }, [sortedPast])
+  const pastRoutines = useMemo(() => sortedPast.filter((g) => !g.isBackfill), [sortedPast])
+  const backfillGroups = useMemo(() => sortedPast.filter((g) => g.isBackfill), [sortedPast])
 
   function openBackfill(): void {
     setEditingGroup(null)
@@ -218,16 +211,16 @@ export default function FoodPage(): React.ReactElement {
       <div className="flex items-center gap-3">
         {loading ? (
           <>
-            <div className="h-8 w-16 animate-pulse rounded bg-muted" />
+            <div className="h-8 w-24 animate-pulse rounded bg-muted" />
             <div className="flex-1" />
             <div className="h-8 w-28 animate-pulse rounded-md bg-muted" />
           </>
         ) : (
           <>
             <h1 className="flex-1 text-2xl font-bold text-foreground">Food</h1>
-            <Button size="sm" variant="outline" onClick={openBackfill}>
-              <Plus className="size-4" />
-              Add past food
+            <Button size="sm" variant="outline" onClick={() => setRoutineEditorOpen(true)}>
+              <LiaPenSolid className="size-4" />
+              Edit routine
             </Button>
           </>
         )}
@@ -235,27 +228,45 @@ export default function FoodPage(): React.ReactElement {
 
       {/* Active plan card */}
       {loading ? (
-        <div className="rounded-lg border border-border bg-card py-6 px-6 space-y-4">
-          <div className="flex items-start justify-between gap-3">
-            <div className="space-y-1.5">
-              <div className="h-3 w-24 animate-pulse rounded bg-muted" />
-              <div className="h-3 w-36 animate-pulse rounded bg-muted" />
+        <div className="rounded-lg border border-dashed border-border bg-card overflow-hidden py-0">
+          {/* Header skeleton: title + score chips */}
+          <div className="flex items-center gap-3 px-4 pt-4 pb-3">
+            <div className="min-w-0 flex-1">
+              <div className="h-4 w-56 animate-pulse rounded bg-muted" />
             </div>
-            <div className="h-8 w-16 animate-pulse rounded-md bg-muted" />
-          </div>
-          <div className="space-y-2">
-            {Array.from({ length: skeletonCounts.planItems }).map((_, i) => (
-              <div key={i} className="flex items-center gap-3 rounded-md border border-border-light px-3 py-2">
-                <div className="size-9 animate-pulse rounded-md bg-muted shrink-0" />
-                <div className="min-w-0 flex-1 space-y-1.5">
-                  <div className="h-3 w-20 animate-pulse rounded bg-muted" />
-                  <div className="h-3.5 w-40 animate-pulse rounded bg-muted" />
+            <div className="flex items-center gap-2 shrink-0">
+              {["Stool", "Itch", "Days", "Cal"].map((label) => (
+                <div key={label} className="flex items-center gap-1.5 rounded-md bg-score-strip px-2.5 py-1.5">
+                  <div className="h-4 w-6 animate-pulse rounded bg-muted" />
+                  <span className="text-xs leading-none font-medium uppercase tracking-wider text-muted-foreground">{label}</span>
                 </div>
-                <div className="h-5 w-14 animate-pulse rounded-full bg-muted shrink-0" />
+              ))}
+            </div>
+          </div>
+          {/* Product cards skeleton */}
+          <div className="px-4 pb-4 flex flex-wrap gap-3">
+            {Array.from({ length: skeletonCounts.planItems }).map((_, i) => (
+              <div key={i} className="min-w-0 flex-1 basis-40 rounded-md border border-border-light overflow-hidden">
+                <div className="flex items-center justify-center bg-score-strip px-3 py-2">
+                  <div className="h-24 w-20 animate-pulse rounded bg-muted" />
+                </div>
+                <div className="p-3 space-y-1.5">
+                  <div className="h-2.5 w-16 animate-pulse rounded bg-muted" />
+                  <div className="h-3.5 w-full animate-pulse rounded bg-muted" />
+                  <div className="h-3 w-24 animate-pulse rounded bg-muted mt-1" />
+                </div>
               </div>
             ))}
           </div>
         </div>
+      ) : data?.active ? (
+        <PlanGroupCard
+          group={data.active}
+          isCurrent
+          productIngredientDataMap={productIngredientDataMap}
+          productNutritionMap={productNutritionMap}
+          correlationScores={correlation?.scores ?? []}
+        />
       ) : (
         <ActivePlanCard
           plan={activePlan}
@@ -264,7 +275,39 @@ export default function FoodPage(): React.ReactElement {
         />
       )}
 
-      {/* Food cards */}
+      {/* Past foods heading */}
+      {loading ? (
+        <div className="flex items-center gap-3">
+          <div className="h-8 w-32 animate-pulse rounded bg-muted" />
+          <div className="flex-1" />
+          <div className="h-8 w-28 animate-pulse rounded-md bg-muted" />
+        </div>
+      ) : (
+        <div className="flex items-center gap-3">
+          <h2 className="flex-1 text-2xl font-bold text-foreground">Past Foods</h2>
+          <Button size="sm" variant="outline" onClick={openBackfill}>
+            <Plus className="size-4" />
+            Add past food
+          </Button>
+        </div>
+      )}
+
+      {/* Past routines (non-backfill) */}
+      {!loading && pastRoutines.length > 0 && (
+        <div className="space-y-3 animate-in fade-in duration-300">
+          {pastRoutines.map((group) => (
+            <PastRoutineCard
+              key={group.planGroupId}
+              group={group}
+              productIngredientDataMap={productIngredientDataMap}
+              productNutritionMap={productNutritionMap}
+              correlationScores={correlation?.scores ?? []}
+            />
+          ))}
+        </div>
+      )}
+
+      {/* Backfilled food cards */}
       {loading ? (
         <div className="flex flex-wrap gap-3">
           {Array.from({ length: skeletonCounts.foodCards }).map((_, i) => (
@@ -302,80 +345,59 @@ export default function FoodPage(): React.ReactElement {
             Try again
           </Button>
         </div>
-      ) : hasContent ? (
+      ) : backfillGroups.length > 0 ? (
         <div className="flex flex-wrap gap-3 animate-in fade-in duration-300">
-          {data?.active?.items.map((item) => {
-            const stats = data.active!.logStats
-            const sc = data.active!.scorecard
-            const days = daysInRange(data.active!.startDate, null)
+          {backfillGroups.flatMap((group) => {
+            const stats = group.logStats
+            const sc = group.scorecard
+            const days = daysInRange(group.startDate, group.endDate)
             const avgStool = stats?.avgPoopScore ?? avgFromRange(sc?.poopQuality ?? null)
             const avgItch = stats?.avgItchScore ?? avgFromRange(sc?.itchSeverity ?? null)
-            return (
+            const cards = group.items.map((item) => (
               <FoodScoreCard
                 key={item.id}
                 brandName={item.brandName}
                 productName={item.productName}
                 imageUrl={item.imageUrl}
-                isCurrent
-                dateLabel={formatDateRange(data.active!.startDate, null)}
-                className="min-w-0 basis-72 grow max-w-[calc(33.333%-0.5rem)] border-dashed"
+                dateLabel={formatDateRange(group.startDate, group.endDate)}
+                className="min-w-0 basis-72 grow max-w-[calc(33.333%-0.5rem)]"
               >
                 <div className="-mx-4 bg-score-strip px-4 py-2">
                   <ScoreGrid avgStool={avgStool} avgItch={avgItch} days={days} />
                 </div>
-                <div className="pt-3">
+                <div className="pt-3 flex items-center justify-between gap-2">
                   <ProductIngredientList
                     data={productIngredientDataMap.get(item.productId)}
                     nutrition={productNutritionMap.get(item.productId)}
                     correlationScores={correlation?.scores ?? []}
                   />
+                  <button
+                    type="button"
+                    onClick={() => openEditBackfill(group)}
+                    className="flex shrink-0 items-center gap-1 text-xs text-primary hover:underline underline-offset-2"
+                  >
+                    <LiaPenSolid className="size-3" />
+                    Edit
+                  </button>
                 </div>
               </FoodScoreCard>
-            )
-          })}
-
-          {sortedPast.flatMap((group) =>
-            group.items.map((item) => {
-              const stats = group.logStats
-              const sc = group.scorecard
-              const days = daysInRange(group.startDate, group.endDate)
-              const avgStool = stats?.avgPoopScore ?? avgFromRange(sc?.poopQuality ?? null)
-              const avgItch = stats?.avgItchScore ?? avgFromRange(sc?.itchSeverity ?? null)
-              return (
-                <FoodScoreCard
-                  key={item.id}
-                  brandName={item.brandName}
-                  productName={item.productName}
-                  imageUrl={item.imageUrl}
-                  dateLabel={formatDateRange(group.startDate, group.endDate)}
-                  className="min-w-0 basis-72 grow max-w-[calc(33.333%-0.5rem)]"
-                >
-                  <div className="-mx-4 bg-score-strip px-4 py-2">
-                    <ScoreGrid avgStool={avgStool} avgItch={avgItch} days={days} />
-                  </div>
-                  <div className="pt-3 flex items-center justify-between gap-2">
-                    <ProductIngredientList
-                      data={productIngredientDataMap.get(item.productId)}
-                      nutrition={productNutritionMap.get(item.productId)}
-                      correlationScores={correlation?.scores ?? []}
-                    />
-                    {group.isBackfill && (
-                      <button
-                        type="button"
-                        onClick={() => openEditBackfill(group)}
-                        className="flex shrink-0 items-center gap-1 text-xs text-primary hover:underline underline-offset-2"
-                      >
-                        <Pencil className="size-3" />
-                        Edit
-                      </button>
-                    )}
-                  </div>
-                </FoodScoreCard>
+            ))
+            if (group.treats.length > 0) {
+              cards.push(
+                <div key={`treats-${group.planGroupId}`} className="w-full flex flex-wrap items-center gap-x-3 gap-y-1 px-1 text-xs text-muted-foreground">
+                  <span className="text-[11px] font-medium uppercase tracking-wider">Treats:</span>
+                  {group.treats.map((treat) => (
+                    <span key={treat.productId}>
+                      {treat.brandName} {treat.productName} <span className="text-text-tertiary">({treat.logCount}x)</span>
+                    </span>
+                  ))}
+                </div>
               )
-            }),
-          )}
+            }
+            return cards
+          })}
         </div>
-      ) : (
+      ) : !hasContent ? (
         <Card>
           <CardContent className="py-8 text-center space-y-3">
             <p className="text-sm text-muted-foreground">
@@ -387,55 +409,7 @@ export default function FoodPage(): React.ReactElement {
             </Button>
           </CardContent>
         </Card>
-      )}
-
-      {/* Plan history */}
-      {!loading && planHistory.length > 0 && (
-        <div className="space-y-3 animate-in fade-in duration-300">
-          <h2 className="text-sm font-medium uppercase tracking-wider text-muted-foreground">
-            Plan history
-          </h2>
-          <div className="space-y-2">
-            {planHistory.map((group) => (
-              <Card key={group.planGroupId} className="py-0">
-                <CardContent className="py-4 space-y-2">
-                  <div className="flex items-start justify-between gap-3">
-                    <div className="min-w-0">
-                      <p className="text-sm font-medium">
-                        {format(parseISO(group.startDate), "MMM d, yyyy")}
-                        {group.endDate
-                          ? ` — ${format(parseISO(group.endDate), "MMM d, yyyy")}`
-                          : " — Ongoing"}
-                        {group.isBackfill && group.approximateDuration && (
-                          <span className="text-muted-foreground font-normal">
-                            {" "}({formatApproximateDuration(group.approximateDuration)})
-                          </span>
-                        )}
-                      </p>
-                    </div>
-                    <div className="flex items-center gap-2 shrink-0">
-                      {group.isBackfill && (
-                        <Badge variant="outline" className="text-[10px]">
-                          Backfill
-                        </Badge>
-                      )}
-                    </div>
-                  </div>
-                  <Separator />
-                  <div className="space-y-1">
-                    {group.items.map((item) => (
-                      <p key={item.id} className="text-xs text-muted-foreground">
-                        {item.productName}
-                        {item.quantity && ` — ${item.quantity} ${item.quantityUnit ?? ""}`}
-                      </p>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      )}
+      ) : null}
 
       {/* Routine editor */}
       <RoutineEditor

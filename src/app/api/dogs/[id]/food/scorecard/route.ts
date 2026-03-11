@@ -172,6 +172,7 @@ export async function GET(
           isBackfill: row.isBackfill,
           approximateDuration: row.approximateDuration,
           items: [],
+          treats: [],
           scorecard: null,
           logStats: null,
         }
@@ -200,53 +201,61 @@ export async function GET(
       group.items.push(item)
     }
 
-    // Aggregate ad-hoc treat logs by product (excludes products already in feeding periods)
-    const existingProductIds = new Set(rows.map((r) => r.productId))
+    // Fetch per-date treat logs and bucket into plan groups
     const treatRows = await db
       .select({
         productId: treatLogs.productId,
-        minDate: sql<string>`min(${treatLogs.date})`,
-        maxDate: sql<string>`max(${treatLogs.date})`,
-        logCount: sql<number>`count(*)::int`,
+        date: treatLogs.date,
         productName: products.name,
         brandName: brands.name,
         imageUrl: sql<string | null>`${products.imageUrls}[1]`,
-        productType: products.type,
-        productFormat: products.format,
       })
       .from(treatLogs)
       .innerJoin(products, eq(treatLogs.productId, products.id))
       .innerJoin(brands, eq(products.brandId, brands.id))
       .where(eq(treatLogs.dogId, id))
-      .groupBy(treatLogs.productId, products.name, brands.name, products.imageUrls, products.type, products.format)
+
+    // Sort groups by startDate ascending for chronological bucketing
+    const sortedGroups = [...groupMap.values()].sort((a, b) => a.startDate.localeCompare(b.startDate))
 
     for (const treat of treatRows) {
-      if (existingProductIds.has(treat.productId)) continue
-      const syntheticGroupId = `treat-${treat.productId}`
-      groupMap.set(syntheticGroupId, {
-        planGroupId: syntheticGroupId,
-        planName: null,
-        startDate: treat.minDate,
-        endDate: treat.maxDate,
-        isBackfill: false,
-        approximateDuration: null,
-        items: [
-          {
-            id: syntheticGroupId,
-            productId: treat.productId,
-            productName: treat.productName,
-            brandName: treat.brandName,
-            imageUrl: treat.imageUrl,
-            type: treat.productType,
-            format: treat.productFormat,
-            quantity: null,
-            quantityUnit: null,
-            mealSlot: null,
-          },
-        ],
-        scorecard: null,
-        logStats: null,
-      })
+      // Find the plan group whose date range contains this treat log
+      let targetGroup: FeedingPlanGroup | null = null
+      for (const group of sortedGroups) {
+        const groupEnd = group.endDate ?? today
+        if (treat.date >= group.startDate && treat.date <= groupEnd) {
+          targetGroup = group
+          break
+        }
+      }
+      // Orphan: attach to nearest preceding group
+      if (!targetGroup) {
+        for (let i = sortedGroups.length - 1; i >= 0; i--) {
+          if (sortedGroups[i].startDate <= treat.date) {
+            targetGroup = sortedGroups[i]
+            break
+          }
+        }
+      }
+      if (!targetGroup) continue
+
+      // Aggregate into per-product summary on the group
+      const existing = targetGroup.treats.find((t) => t.productId === treat.productId)
+      if (existing) {
+        existing.logCount++
+        if (treat.date < existing.firstDate) existing.firstDate = treat.date
+        if (treat.date > existing.lastDate) existing.lastDate = treat.date
+      } else {
+        targetGroup.treats.push({
+          productId: treat.productId,
+          productName: treat.productName,
+          brandName: treat.brandName,
+          imageUrl: treat.imageUrl,
+          logCount: 1,
+          firstDate: treat.date,
+          lastDate: treat.date,
+        })
+      }
     }
 
     // Fetch scorecards + batch log stats in parallel
@@ -401,6 +410,9 @@ export async function GET(
     for (const g of allGroups) {
       for (const item of g.items) {
         allProductIds.add(item.productId)
+      }
+      for (const treat of g.treats) {
+        allProductIds.add(treat.productId)
       }
     }
 
