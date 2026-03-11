@@ -26,8 +26,7 @@ export async function GET(
         })
         .from(poopLogs)
         .where(and(eq(poopLogs.dogId, dogId), eq(poopLogs.date, today)))
-        .orderBy(desc(poopLogs.createdAt))
-        .limit(1),
+        .orderBy(desc(poopLogs.createdAt)),
       db
         .select({
           id: itchinessLogs.id,
@@ -37,8 +36,7 @@ export async function GET(
         })
         .from(itchinessLogs)
         .where(and(eq(itchinessLogs.dogId, dogId), eq(itchinessLogs.date, today)))
-        .orderBy(desc(itchinessLogs.createdAt))
-        .limit(1),
+        .orderBy(desc(itchinessLogs.createdAt)),
       db
         .select({
           id: treatLogs.id,
@@ -57,8 +55,8 @@ export async function GET(
     ])
 
     return NextResponse.json({
-      poop: poopRows[0] ?? null,
-      itchiness: itchRows[0] ?? null,
+      poopEntries: poopRows,
+      itchinessEntries: itchRows,
       treats: treatRows,
     })
   } catch (error) {

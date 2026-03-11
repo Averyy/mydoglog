@@ -299,6 +299,9 @@
 .auth-page {
   background: linear-gradient(168deg, #F2EBE0 0%, var(--color-bg-secondary) 45%, #EDE3D3 100%);
 }
+:is(.dark) .auth-page {
+  background: linear-gradient(168deg, #1a1714 0%, var(--color-bg-secondary) 45%, #1a1714 100%);
+}
 
 .auth-card {
   position: relative;

@@ -65,7 +65,7 @@ export function QuickLogGrid({ dogId, onSelect }: QuickLogGridProps): React.Reac
     icon: React.ComponentType<{ className?: string }>
     count: number | null
   }[] = [
-    { mode: "checkin", label: hasCheckin ? "Manage Check-in" : "Daily Check-in", icon: hasCheckin ? CalendarCheckIcon : CalendarTimesIcon, count: totalToday > 0 ? totalToday : null },
+    { mode: "checkin", label: hasCheckin ? "Today's Summary" : "Daily Check-in", icon: hasCheckin ? CalendarCheckIcon : CalendarTimesIcon, count: totalToday > 0 ? totalToday : null },
     { mode: "poop", label: "Log Stool", icon: PoopIcon, count: counts.poop },
     { mode: "itch", label: "Log Itch", icon: ItchIcon, count: counts.itch },
     { mode: "treat", label: "Log Treat", icon: TreatIcon, count: counts.treat },

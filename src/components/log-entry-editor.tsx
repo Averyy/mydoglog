@@ -17,6 +17,17 @@ import { CollapsibleNotes } from "@/components/collapsible-notes"
 import { WhenInput } from "@/components/when-input"
 import { ProductPicker } from "@/components/product-picker"
 import { ResponsiveModal } from "@/components/responsive-modal"
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog"
 import { toast } from "sonner"
 import { format } from "date-fns"
 import { cn } from "@/lib/utils"
@@ -175,22 +186,35 @@ function PoopEditor({
       <FecalScorePickerHorizontal value={score} onChange={setScore} />
       <WhenInput date={date} onDateChange={setDate} time={time} onTimeChange={setTime} />
       <CollapsibleNotes value={notes} onChange={setNotes} label="Stool note" />
-      <div className="flex justify-end gap-2 pt-2">
-        <Button
-          variant="destructive"
-          onClick={handleDelete}
-          disabled={saving || deleting}
-          className=""
-        >
-          {deleting ? "Deleting..." : "Delete"}
+      <div className="flex items-center justify-between pt-4">
+        <Button variant="outline" onClick={onClose} disabled={saving || deleting}>
+          Cancel
         </Button>
-        <Button
-          onClick={handleSave}
-          disabled={saving || deleting || score === null}
-          className=""
-        >
-          {saving ? "Saving..." : "Save"}
-        </Button>
+        <div className="flex items-center gap-6">
+          <AlertDialog>
+            <AlertDialogTrigger asChild>
+              <Button variant="link" size="sm" className="text-destructive px-0" disabled={saving || deleting}>
+                {deleting ? "Deleting..." : "Delete"}
+              </Button>
+            </AlertDialogTrigger>
+            <AlertDialogContent>
+              <AlertDialogHeader>
+                <AlertDialogTitle>Delete stool log?</AlertDialogTitle>
+                <AlertDialogDescription>This entry will be permanently removed.</AlertDialogDescription>
+              </AlertDialogHeader>
+              <AlertDialogFooter>
+                <AlertDialogCancel>Cancel</AlertDialogCancel>
+                <AlertDialogAction variant="destructive" onClick={handleDelete}>Delete</AlertDialogAction>
+              </AlertDialogFooter>
+            </AlertDialogContent>
+          </AlertDialog>
+          <Button
+            onClick={handleSave}
+            disabled={saving || deleting || score === null}
+          >
+            {saving ? "Saving..." : "Save"}
+          </Button>
+        </div>
       </div>
     </div>
   )
@@ -302,22 +326,35 @@ function ItchEditor({
       </div>
       <WhenInput date={date} onDateChange={setDate} time={time} onTimeChange={setTime} />
       <CollapsibleNotes value={notes} onChange={setNotes} label="Itchiness note" />
-      <div className="flex justify-end gap-2 pt-2">
-        <Button
-          variant="destructive"
-          onClick={handleDelete}
-          disabled={saving || deleting}
-          className=""
-        >
-          {deleting ? "Deleting..." : "Delete"}
+      <div className="flex items-center justify-between pt-4">
+        <Button variant="outline" onClick={onClose} disabled={saving || deleting}>
+          Cancel
         </Button>
-        <Button
-          onClick={handleSave}
-          disabled={saving || deleting || score === null}
-          className=""
-        >
-          {saving ? "Saving..." : "Save"}
-        </Button>
+        <div className="flex items-center gap-6">
+          <AlertDialog>
+            <AlertDialogTrigger asChild>
+              <Button variant="link" size="sm" className="text-destructive px-0" disabled={saving || deleting}>
+                {deleting ? "Deleting..." : "Delete"}
+              </Button>
+            </AlertDialogTrigger>
+            <AlertDialogContent>
+              <AlertDialogHeader>
+                <AlertDialogTitle>Delete itch log?</AlertDialogTitle>
+                <AlertDialogDescription>This entry will be permanently removed.</AlertDialogDescription>
+              </AlertDialogHeader>
+              <AlertDialogFooter>
+                <AlertDialogCancel>Cancel</AlertDialogCancel>
+                <AlertDialogAction variant="destructive" onClick={handleDelete}>Delete</AlertDialogAction>
+              </AlertDialogFooter>
+            </AlertDialogContent>
+          </AlertDialog>
+          <Button
+            onClick={handleSave}
+            disabled={saving || deleting || score === null}
+          >
+            {saving ? "Saving..." : "Save"}
+          </Button>
+        </div>
       </div>
     </div>
   )
@@ -461,22 +498,35 @@ function TreatEditor({
         </div>
       </div>
       <WhenInput date={date} onDateChange={setDate} time={time} onTimeChange={setTime} />
-      <div className="flex justify-end gap-2 pt-2">
-        <Button
-          variant="destructive"
-          onClick={handleDelete}
-          disabled={saving || deleting}
-          className=""
-        >
-          {deleting ? "Deleting..." : "Delete"}
+      <div className="flex items-center justify-between pt-4">
+        <Button variant="outline" onClick={onClose} disabled={saving || deleting}>
+          Cancel
         </Button>
-        <Button
-          onClick={handleSave}
-          disabled={saving || deleting || !product}
-          className=""
-        >
-          {saving ? "Saving..." : "Save"}
-        </Button>
+        <div className="flex items-center gap-6">
+          <AlertDialog>
+            <AlertDialogTrigger asChild>
+              <Button variant="link" size="sm" className="text-destructive px-0" disabled={saving || deleting}>
+                {deleting ? "Deleting..." : "Delete"}
+              </Button>
+            </AlertDialogTrigger>
+            <AlertDialogContent>
+              <AlertDialogHeader>
+                <AlertDialogTitle>Delete treat log?</AlertDialogTitle>
+                <AlertDialogDescription>This entry will be permanently removed.</AlertDialogDescription>
+              </AlertDialogHeader>
+              <AlertDialogFooter>
+                <AlertDialogCancel>Cancel</AlertDialogCancel>
+                <AlertDialogAction variant="destructive" onClick={handleDelete}>Delete</AlertDialogAction>
+              </AlertDialogFooter>
+            </AlertDialogContent>
+          </AlertDialog>
+          <Button
+            onClick={handleSave}
+            disabled={saving || deleting || !product}
+          >
+            {saving ? "Saving..." : "Save"}
+          </Button>
+        </div>
       </div>
     </div>
   )

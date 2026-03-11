@@ -46,6 +46,29 @@ interface TreatEntry {
   quantityUnit: string
 }
 
+interface ExistingPoopEntry {
+  id: string
+  firmnessScore: number
+  notes: string | null
+}
+
+interface ExistingItchEntry {
+  id: string
+  score: number
+  bodyAreas: string[] | null
+  notes: string | null
+}
+
+interface ExistingTreatEntry {
+  id: string
+  productId: string
+  productName: string
+  brandName: string
+  imageUrl: string | null
+  quantity: string | null
+  quantityUnit: string | null
+}
+
 export function DailyCheckInContent({
   dogId,
   onSaved,
@@ -54,29 +77,33 @@ export function DailyCheckInContent({
   const [routine, setRoutine] = useState<RoutineData | null>(null)
   const [routineLoading, setRoutineLoading] = useState(true)
 
-  // Stool state
+  // Existing entries (read-only)
+  const [existingPoop, setExistingPoop] = useState<ExistingPoopEntry[]>([])
+  const [existingItch, setExistingItch] = useState<ExistingItchEntry[]>([])
+  const [existingTreats, setExistingTreats] = useState<ExistingTreatEntry[]>([])
+
+  // New entry state (only used when no existing entries for that category)
   const [stoolScore, setStoolScore] = useState<number | null>(null)
   const [stoolNotes, setStoolNotes] = useState("")
-
-  // Itch state
   const [itchScore, setItchScore] = useState<number | null>(null)
   const [bodyAreas, setBodyAreas] = useState<string[]>([])
   const [itchNotes, setItchNotes] = useState("")
-
-  // Treats state
   const [treats, setTreats] = useState<TreatEntry[]>([])
 
-  // Existing check-in IDs for edit-on-reopen
-  const [existingPoopId, setExistingPoopId] = useState<string | null>(null)
-  const [existingItchId, setExistingItchId] = useState<string | null>(null)
-  const [existingTreatIds, setExistingTreatIds] = useState<string[]>([])
-
   const [saving, setSaving] = useState(false)
+  const [loaded, setLoaded] = useState(false)
 
-  const isEditing = existingPoopId !== null || existingItchId !== null || existingTreatIds.length > 0
-  const hasAnything = stoolScore !== null || itchScore !== null || treats.length > 0
+  const hasExistingPoop = existingPoop.length > 0
+  const hasExistingItch = existingItch.length > 0
+  const hasExistingTreats = existingTreats.length > 0
 
-  // Fetch today's existing check-in
+  // Whether the user has entered anything new
+  const hasNewStool = !hasExistingPoop && stoolScore !== null
+  const hasNewItch = !hasExistingItch && itchScore !== null
+  const hasNewTreats = !hasExistingTreats && treats.length > 0
+  const hasAnythingNew = hasNewStool || hasNewItch || hasNewTreats
+
+  // Fetch today's existing entries
   useEffect(() => {
     async function loadExisting(): Promise<void> {
       try {
@@ -85,43 +112,21 @@ export function DailyCheckInContent({
 
         const data = await res.json()
 
-        if (data.poop) {
-          setStoolScore(data.poop.firmnessScore)
-          setStoolNotes(data.poop.notes ?? "")
-          setExistingPoopId(data.poop.id)
+        if (data.poopEntries?.length > 0) {
+          setExistingPoop(data.poopEntries)
         }
 
-        if (data.itchiness) {
-          setItchScore(data.itchiness.score)
-          setBodyAreas(data.itchiness.bodyAreas ?? [])
-          setItchNotes(data.itchiness.notes ?? "")
-          setExistingItchId(data.itchiness.id)
+        if (data.itchinessEntries?.length > 0) {
+          setExistingItch(data.itchinessEntries)
         }
 
         if (data.treats?.length > 0) {
-          // Merge duplicate products by summing quantities
-          const merged = new Map<string, TreatEntry>()
-          for (const t of data.treats as { productId: string; productName: string; brandName: string; imageUrl: string | null; quantity: string | null; quantityUnit: string | null }[]) {
-            const existing = merged.get(t.productId)
-            const qty = Number(t.quantity ?? "1") || 1
-            if (existing) {
-              existing.quantity = String(Number(existing.quantity) + qty)
-            } else {
-              merged.set(t.productId, {
-                productId: t.productId,
-                productName: t.productName,
-                brandName: t.brandName,
-                imageUrl: t.imageUrl,
-                quantity: String(qty),
-                quantityUnit: t.quantityUnit ?? "piece",
-              })
-            }
-          }
-          setTreats(Array.from(merged.values()))
-          setExistingTreatIds(data.treats.map((t: { id: string }) => t.id))
+          setExistingTreats(data.treats)
         }
       } catch {
         // Non-critical
+      } finally {
+        setLoaded(true)
       }
     }
     loadExisting()
@@ -144,7 +149,6 @@ export function DailyCheckInContent({
     }
     load()
   }, [dogId])
-
 
   function toggleBodyArea(area: string): void {
     setBodyAreas((prev) =>
@@ -186,7 +190,7 @@ export function DailyCheckInContent({
   }
 
   async function handleSave(): Promise<void> {
-    if (!hasAnything) return
+    if (!hasAnythingNew) return
     setSaving(true)
 
     const now = new Date()
@@ -194,25 +198,9 @@ export function DailyCheckInContent({
     const nowIso = now.toISOString()
 
     try {
-      // Delete existing entries first if editing
-      const deletePromises: Promise<Response>[] = []
-      if (existingPoopId) {
-        deletePromises.push(fetch(`/api/poop/${existingPoopId}`, { method: "DELETE" }))
-      }
-      if (existingItchId) {
-        deletePromises.push(fetch(`/api/itchiness/${existingItchId}`, { method: "DELETE" }))
-      }
-      for (const treatId of existingTreatIds) {
-        deletePromises.push(fetch(`/api/treats/${treatId}`, { method: "DELETE" }))
-      }
-      if (deletePromises.length > 0) {
-        await Promise.all(deletePromises)
-      }
-
-      // Create new entries
       const promises: Promise<Response>[] = []
 
-      if (stoolScore !== null) {
+      if (hasNewStool) {
         promises.push(
           fetch(`/api/dogs/${dogId}/poop`, {
             method: "POST",
@@ -231,7 +219,7 @@ export function DailyCheckInContent({
         )
       }
 
-      if (itchScore !== null) {
+      if (hasNewItch) {
         promises.push(
           fetch(`/api/dogs/${dogId}/itchiness`, {
             method: "POST",
@@ -247,20 +235,22 @@ export function DailyCheckInContent({
         )
       }
 
-      for (const treat of treats) {
-        promises.push(
-          fetch(`/api/dogs/${dogId}/treats`, {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-              productId: treat.productId,
-              quantity: treat.quantity,
-              quantityUnit: treat.quantityUnit,
-              date: todayStr,
-              datetime: nowIso,
+      if (hasNewTreats) {
+        for (const treat of treats) {
+          promises.push(
+            fetch(`/api/dogs/${dogId}/treats`, {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({
+                productId: treat.productId,
+                quantity: treat.quantity,
+                quantityUnit: treat.quantityUnit,
+                date: todayStr,
+                datetime: nowIso,
+              }),
             }),
-          }),
-        )
+          )
+        }
       }
 
       const results = await Promise.all(promises)
@@ -269,7 +259,7 @@ export function DailyCheckInContent({
       if (failed.length > 0) {
         toast.error(`${failed.length} of ${results.length} entries failed to save`)
       } else {
-        toast.success(isEditing ? "Check-in updated" : "Check-in saved")
+        toast.success("Check-in saved")
         onSaved()
       }
     } catch {
@@ -279,37 +269,43 @@ export function DailyCheckInContent({
     }
   }
 
-  // Badge helpers for accordion triggers
+  // Badge helpers
   const noneBadge = (
     <Badge variant="outline" className="ml-auto mr-2 text-muted-foreground text-[10px]">
       None
     </Badge>
   )
 
-  const stoolBadge = stoolScore !== null ? (
+  const loggedBadge = (label: string): React.ReactElement => (
     <Badge variant="outline" className="ml-auto mr-2 border-primary text-primary text-[10px]">
       <LiaCheckSolid className="size-3" />
-      {FECAL_SCORES.find((s) => s.score === stoolScore)?.label}
+      {label}
     </Badge>
-  ) : noneBadge
+  )
 
-  const itchBadge = itchScore !== null ? (
-    <Badge variant="outline" className="ml-auto mr-2 border-primary text-primary text-[10px]">
-      <LiaCheckSolid className="size-3" />
-      {ITCH_SCORES.find((s) => s.score === itchScore)?.label}
-    </Badge>
-  ) : noneBadge
+  // Stool badge
+  const stoolBadge = hasExistingPoop
+    ? loggedBadge(`${existingPoop.length} logged`)
+    : stoolScore !== null
+      ? loggedBadge(FECAL_SCORES.find((s) => s.score === stoolScore)?.label ?? "")
+      : noneBadge
 
-  const treatTotalPieces = treats.reduce((sum, t) => {
-    if (t.quantityUnit === "piece") return sum + (Number(t.quantity) || 0)
-    return -1
-  }, 0)
-  const treatBadge = treats.length > 0 ? (
-    <Badge variant="outline" className="ml-auto mr-2 border-primary text-primary text-[10px]">
-      <LiaCheckSolid className="size-3" />
-      {treatTotalPieces > 0 ? `${treatTotalPieces} treat${treatTotalPieces !== 1 ? "s" : ""}` : "Treats"}
-    </Badge>
-  ) : noneBadge
+  // Itch badge
+  const itchBadge = hasExistingItch
+    ? loggedBadge(`${existingItch.length} logged`)
+    : itchScore !== null
+      ? loggedBadge(ITCH_SCORES.find((s) => s.score === itchScore)?.label ?? "")
+      : noneBadge
+
+  // Treat badge
+  const allTreats = hasExistingTreats ? existingTreats : treats
+  const allPieces = allTreats.length > 0 && allTreats.every((t) => ("quantityUnit" in t ? t.quantityUnit : null) === "piece")
+  const treatTotalPieces = allPieces
+    ? allTreats.reduce((sum, t) => sum + (Number(t.quantity ?? "1") || 0), 0)
+    : 0
+  const treatBadge = allTreats.length > 0
+    ? loggedBadge(treatTotalPieces > 0 ? `${treatTotalPieces} treat${treatTotalPieces !== 1 ? "s" : ""}` : "Treats")
+    : noneBadge
 
   const mealPlanBadge = !routineLoading && routine && (routine.plan || routine.medications.length > 0) ? (
     <Badge variant="outline" className="ml-auto mr-2 border-primary text-primary text-[10px]">
@@ -318,9 +314,16 @@ export function DailyCheckInContent({
     </Badge>
   ) : null
 
+  // Unique stool scores from existing entries
+  const existingStoolScores = [...new Set(existingPoop.map((p) => p.firmnessScore))].sort((a, b) => a - b)
+  // Unique itch scores from existing entries
+  const existingItchScores = [...new Set(existingItch.map((i) => i.score))].sort((a, b) => a - b)
+  // Unique body areas from existing entries
+  const existingBodyAreas = [...new Set(existingItch.flatMap((i) => i.bodyAreas ?? []))]
+
   return (
     <div className="space-y-4">
-      <Accordion type="single" defaultValue="stool" collapsible>
+      <Accordion type="single" collapsible>
         {/* ── Stool ── */}
         <AccordionItem value="stool">
           <AccordionTrigger className="text-sm font-semibold">
@@ -328,10 +331,45 @@ export function DailyCheckInContent({
             {stoolBadge}
           </AccordionTrigger>
           <AccordionContent>
-            <div className="space-y-2">
-              <FecalScorePickerHorizontal value={stoolScore} onChange={setStoolScore} />
-              <CollapsibleNotes value={stoolNotes} onChange={setStoolNotes} label="Add stool note" />
-            </div>
+            {hasExistingPoop ? (
+              <div className="flex gap-2 overflow-x-auto pb-2 scrollbar-none" data-vaul-no-drag style={{ WebkitOverflowScrolling: "touch", touchAction: "pan-x" }}>
+                {existingStoolScores.map((score) => {
+                  const s = FECAL_SCORES.find((f) => f.score === score)
+                  if (!s) return null
+                  return (
+                    <div
+                      key={s.score}
+                      className="flex w-[144px] shrink-0 flex-col items-start gap-1.5 rounded-lg border bg-item-active p-2"
+                      style={{ borderColor: s.color }}
+                    >
+                      <div className="flex aspect-[3/2] w-full items-center justify-center overflow-hidden rounded-md p-2">
+                        <img
+                          src={`/images/fecal-scores/score${s.score}.png`}
+                          alt={`Score ${s.score}`}
+                          className="max-h-full max-w-full object-contain"
+                        />
+                      </div>
+                      <div className="flex w-full items-center gap-1.5">
+                        <span
+                          className="inline-flex size-5 shrink-0 items-center justify-center rounded-full text-xs font-bold text-white"
+                          style={{ backgroundColor: s.color }}
+                        >
+                          {s.score}
+                        </span>
+                        <span className="text-[11px] font-semibold leading-tight">
+                          {s.label}
+                        </span>
+                      </div>
+                    </div>
+                  )
+                })}
+              </div>
+            ) : (
+              <div className="space-y-2">
+                <FecalScorePickerHorizontal value={stoolScore} onChange={setStoolScore} />
+                <CollapsibleNotes value={stoolNotes} onChange={setStoolNotes} label="Add stool note" />
+              </div>
+            )}
           </AccordionContent>
         </AccordionItem>
 
@@ -342,35 +380,89 @@ export function DailyCheckInContent({
             {itchBadge}
           </AccordionTrigger>
           <AccordionContent>
-            <div className="space-y-4">
-              <ItchScorePicker value={itchScore} onChange={setItchScore} showNone />
-
-              <div className="space-y-2">
-                <Label className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
-                  Affected areas
-                </Label>
-                <div className="flex flex-wrap gap-1.5">
-                  {BODY_AREAS.map((area) => (
-                    <button
-                      key={area.value}
-                      type="button"
-                      onClick={() => toggleBodyArea(area.value)}
-                      className={cn(
-                        "rounded-md border px-2.5 py-1.5 text-xs font-medium transition-all",
-                        "focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-1 outline-none",
-                        bodyAreas.includes(area.value)
-                          ? "border-primary bg-primary text-primary-foreground"
-                          : "border-border hover:bg-secondary",
-                      )}
-                    >
-                      {area.label}
-                    </button>
-                  ))}
+            {hasExistingItch ? (
+              <div className="space-y-3">
+                <div className="flex gap-2 overflow-x-auto pb-2 scrollbar-none" data-vaul-no-drag style={{ WebkitOverflowScrolling: "touch", touchAction: "pan-x" }}>
+                  {existingItchScores.map((score) => {
+                    const s = ITCH_SCORES.find((i) => i.score === score)
+                    if (!s) return null
+                    return (
+                      <div
+                        key={s.score}
+                        className="flex w-[120px] shrink-0 flex-col items-start gap-1.5 rounded-lg border bg-item-active p-2"
+                        style={{ borderColor: s.color }}
+                      >
+                        <div className="flex w-full items-center gap-1.5">
+                          <span
+                            className="inline-flex size-5 shrink-0 items-center justify-center rounded-full text-xs font-bold text-white"
+                            style={{ backgroundColor: s.color }}
+                          >
+                            {s.score}
+                          </span>
+                          <span className="text-[11px] font-semibold leading-tight">
+                            {s.label}
+                          </span>
+                        </div>
+                        <p className="w-full text-left text-[10px] leading-snug text-muted-foreground">
+                          {s.description}
+                        </p>
+                      </div>
+                    )
+                  })}
                 </div>
+                {existingBodyAreas.length > 0 && (
+                  <div className="space-y-2">
+                    <Label className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
+                      Affected areas
+                    </Label>
+                    <div className="flex flex-wrap gap-1.5">
+                      {existingBodyAreas.map((areaValue) => {
+                        const area = BODY_AREAS.find((a) => a.value === areaValue)
+                        if (!area) return null
+                        return (
+                          <span
+                            key={area.value}
+                            className="rounded-md border border-primary bg-primary px-2.5 py-1.5 text-xs font-medium text-primary-foreground"
+                          >
+                            {area.label}
+                          </span>
+                        )
+                      })}
+                    </div>
+                  </div>
+                )}
               </div>
+            ) : (
+              <div className="space-y-4">
+                <ItchScorePicker value={itchScore} onChange={setItchScore} showNone />
 
-              <CollapsibleNotes value={itchNotes} onChange={setItchNotes} label="Add itchiness note" placeholder="Optional observations..." />
-            </div>
+                <div className="space-y-2">
+                  <Label className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
+                    Affected areas
+                  </Label>
+                  <div className="flex flex-wrap gap-1.5">
+                    {BODY_AREAS.map((area) => (
+                      <button
+                        key={area.value}
+                        type="button"
+                        onClick={() => toggleBodyArea(area.value)}
+                        className={cn(
+                          "rounded-md border px-2.5 py-1.5 text-xs font-medium transition-all",
+                          "focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-1 outline-none",
+                          bodyAreas.includes(area.value)
+                            ? "border-primary bg-primary text-primary-foreground"
+                            : "border-border hover:bg-secondary",
+                        )}
+                      >
+                        {area.label}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                <CollapsibleNotes value={itchNotes} onChange={setItchNotes} label="Add itchiness note" placeholder="Optional observations..." />
+              </div>
+            )}
           </AccordionContent>
         </AccordionItem>
 
@@ -381,63 +473,76 @@ export function DailyCheckInContent({
             {treatBadge}
           </AccordionTrigger>
           <AccordionContent>
-            <div className="space-y-4">
-              {/* Search for new treat */}
-              <ProductPicker
-                value={null}
-                onChange={(p) => p && addTreat(p)}
-                productType="treat"
-                placeholder="Search to add treats..."
-                dogId={dogId}
-              />
+            {hasExistingTreats ? (
+              <div className="space-y-1.5">
+                {existingTreats.map((treat) => (
+                  <ProductItem
+                    key={treat.id}
+                    brandName={treat.brandName}
+                    productName={treat.productName}
+                    imageUrl={treat.imageUrl}
+                    quantity={treat.quantity}
+                    quantityUnit={treat.quantityUnit}
+                  />
+                ))}
+              </div>
+            ) : (
+              <div className="space-y-4">
+                <ProductPicker
+                  value={null}
+                  onChange={(p) => p && addTreat(p)}
+                  productType="treat"
+                  placeholder="Search to add treats..."
+                  dogId={dogId}
+                />
 
-              {/* Added treats list */}
-              {treats.length > 0 && (
-                <div className="space-y-1.5">
-                  {treats.map((treat, idx) => (
-                    <ProductItem
-                      key={`${treat.productId}-${idx}`}
-                      brandName={treat.brandName}
-                      productName={treat.productName}
-                      imageUrl={treat.imageUrl}
-                    >
-                      <Input
-                        type="number"
-                        min="0"
-                        step="any"
-                        aria-label={`Quantity for ${treat.productName}`}
-                        value={treat.quantity}
-                        onChange={(e) => updateTreatQuantity(treat.productId, e.target.value)}
-                        className="h-8 w-16 shrink-0 text-center"
-                      />
-                      <Select
-                        value={treat.quantityUnit}
-                        onValueChange={(v) => updateTreatUnit(treat.productId, v)}
+                {treats.length > 0 && (
+                  <div className="space-y-1.5">
+                    {treats.map((treat, idx) => (
+                      <ProductItem
+                        key={`${treat.productId}-${idx}`}
+                        brandName={treat.brandName}
+                        productName={treat.productName}
+                        imageUrl={treat.imageUrl}
                       >
-                        <SelectTrigger size="sm" className="w-[5.5rem] shrink-0" aria-label={`Unit for ${treat.productName}`}>
-                          <SelectValue />
-                        </SelectTrigger>
-                        <SelectContent>
-                          {QUANTITY_UNIT_OPTIONS.map((opt) => (
-                            <SelectItem key={opt.value} value={opt.value}>
-                              {opt.label}
-                            </SelectItem>
-                          ))}
-                        </SelectContent>
-                      </Select>
-                      <button
-                        type="button"
-                        aria-label={`Remove ${treat.productName}`}
-                        onClick={() => removeTreat(treat.productId)}
-                        className="shrink-0 rounded-md p-1 text-muted-foreground hover:bg-secondary hover:text-foreground"
-                      >
-                        <LiaTimesSolid className="size-4" />
-                      </button>
-                    </ProductItem>
-                  ))}
-                </div>
-              )}
-            </div>
+                        <Input
+                          type="number"
+                          min="0"
+                          step="any"
+                          aria-label={`Quantity for ${treat.productName}`}
+                          value={treat.quantity}
+                          onChange={(e) => updateTreatQuantity(treat.productId, e.target.value)}
+                          className="h-8 w-16 shrink-0 text-center"
+                        />
+                        <Select
+                          value={treat.quantityUnit}
+                          onValueChange={(v) => updateTreatUnit(treat.productId, v)}
+                        >
+                          <SelectTrigger size="sm" className="w-[5.5rem] shrink-0" aria-label={`Unit for ${treat.productName}`}>
+                            <SelectValue />
+                          </SelectTrigger>
+                          <SelectContent>
+                            {QUANTITY_UNIT_OPTIONS.map((opt) => (
+                              <SelectItem key={opt.value} value={opt.value}>
+                                {opt.label}
+                              </SelectItem>
+                            ))}
+                          </SelectContent>
+                        </Select>
+                        <button
+                          type="button"
+                          aria-label={`Remove ${treat.productName}`}
+                          onClick={() => removeTreat(treat.productId)}
+                          className="shrink-0 rounded-md p-1 text-muted-foreground hover:bg-secondary hover:text-foreground"
+                        >
+                          <LiaTimesSolid className="size-4" />
+                        </button>
+                      </ProductItem>
+                    ))}
+                  </div>
+                )}
+              </div>
+            )}
           </AccordionContent>
         </AccordionItem>
 
@@ -465,7 +570,6 @@ export function DailyCheckInContent({
               <p className="text-xs text-muted-foreground">No active routine set up.</p>
             ) : (
               <div className="space-y-3 animate-in fade-in duration-300">
-                {/* Food & supplement items */}
                 {routine.plan && routine.plan.items.length > 0 && (
                   <div className="space-y-1.5">
                     {routine.plan.items.map((item) => (
@@ -481,7 +585,6 @@ export function DailyCheckInContent({
                   </div>
                 )}
 
-                {/* Medications */}
                 {routine.medications.length > 0 && (
                     <div className="space-y-1.5">
                       {routine.medications.map((med) => (
@@ -500,14 +603,17 @@ export function DailyCheckInContent({
         </AccordionItem>
       </Accordion>
 
-      {/* Save */}
-      <Button
-        onClick={handleSave}
-        disabled={saving || !hasAnything}
-        className="mt-2 w-full"
-      >
-        {saving ? "Saving..." : isEditing ? "Update check-in" : "Save check-in"}
-      </Button>
+      {/* Save / Close */}
+      {loaded && (
+        <Button
+          onClick={hasAnythingNew ? handleSave : onSaved}
+          disabled={saving}
+          variant={hasAnythingNew ? "default" : "outline"}
+          className="mt-2 w-full"
+        >
+          {saving ? "Saving..." : hasAnythingNew ? "Save check-in" : "Close summary"}
+        </Button>
+      )}
     </div>
   )
 }

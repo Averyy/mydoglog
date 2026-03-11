@@ -148,8 +148,8 @@ def write_brand_json(
     output_path.write_text(json.dumps(envelope, indent=2, ensure_ascii=False))
     logger.info(f"Wrote {len(products)} products to {output_path}")
 
-    # Generate processed images for this brand
-    _process_brand_images(file_slug)
+    # Generate processed images for this brand (auto-remove white backgrounds)
+    _process_brand_images(file_slug, remove_bg=True)
 
 
 # --- Image downloading ---
@@ -249,8 +249,44 @@ def _open_and_convert(img_path: Path) -> Image.Image:
     return img.convert("RGBA" if has_alpha else "RGB")
 
 
-def _process_brand_images(brand_slug: str) -> None:
-    """Generate small+large WebP images for a single brand."""
+def _has_white_background(img: Image.Image, threshold: int = 240, edge_ratio: float = 0.85) -> bool:
+    """Detect if an image has a predominantly white background.
+
+    Samples pixels along all four edges and checks if enough are near-white.
+    """
+    rgba = img.convert("RGBA")
+    w, h = rgba.size
+    if w < 4 or h < 4:
+        return False
+
+    edge_pixels: list[tuple[int, ...]] = []
+    for x in range(w):
+        edge_pixels.append(rgba.getpixel((x, 0)))
+        edge_pixels.append(rgba.getpixel((x, h - 1)))
+    for y in range(h):
+        edge_pixels.append(rgba.getpixel((0, y)))
+        edge_pixels.append(rgba.getpixel((w - 1, y)))
+
+    white_count = sum(
+        1 for p in edge_pixels
+        if p[0] >= threshold and p[1] >= threshold and p[2] >= threshold and p[3] > 200
+    )
+    return white_count / len(edge_pixels) >= edge_ratio
+
+
+def _remove_background(img: Image.Image) -> Image.Image:
+    """Remove background from an image using rembg."""
+    from rembg import remove
+    return remove(img)
+
+
+def _process_brand_images(brand_slug: str, *, remove_bg: bool = False) -> None:
+    """Generate small+large WebP images for a single brand.
+
+    Args:
+        brand_slug: Brand directory name under data/images/
+        remove_bg: If True, auto-detect and remove white backgrounds before resizing.
+    """
     brand_src = IMAGES_DATA_DIR / brand_slug
     if not brand_src.is_dir():
         return
@@ -262,6 +298,7 @@ def _process_brand_images(brand_slug: str) -> None:
 
     small_count = 0
     large_count = 0
+    bg_removed_count = 0
 
     for img_path in brand_src.iterdir():
         if img_path.suffix.lower() not in (".webp", ".png", ".jpg"):
@@ -271,6 +308,10 @@ def _process_brand_images(brand_slug: str) -> None:
 
         try:
             img = _open_and_convert(img_path)
+
+            if remove_bg and _has_white_background(img):
+                img = _remove_background(img)
+                bg_removed_count += 1
 
             small_img = _resize_to_width(img, SMALL_WIDTH)
             small_img.save(small_brand / dest_name, "WEBP", quality=80)
@@ -282,7 +323,8 @@ def _process_brand_images(brand_slug: str) -> None:
         except Exception as e:
             print(f"  Failed to process {img_path.name}: {e}", file=sys.stderr)
 
-    logger.info(f"Generated {small_count} small + {large_count} large images for {brand_slug}")
+    bg_msg = f", {bg_removed_count} backgrounds removed" if bg_removed_count else ""
+    logger.info(f"Generated {small_count} small + {large_count} large images for {brand_slug}{bg_msg}")
 
 
 def _download_brand_images(brand: str, products: list[Product]) -> None:

@@ -84,7 +84,7 @@ export function LogActionSheet(): React.ReactElement {
       <ResponsiveModal
         open={logMode === "checkin"}
         onOpenChange={(open) => !open && close()}
-        title={`${format(new Date(), "EEEE MMM d")} check-in`}
+        title={`${format(new Date(), "EEEE MMM d")}`}
         size="lg"
       >
         {logMode === "checkin" && activeDogId && (
