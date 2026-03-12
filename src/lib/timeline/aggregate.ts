@@ -1,5 +1,6 @@
 import { shiftDate, daysBetween } from "@/lib/date-utils"
-import type { GanttBarData, TimelineDataPoint } from "@/lib/timeline-types"
+import { format } from "date-fns"
+import type { GanttBarData, TimelineDataPoint, TimelineIndividualPoint } from "@/lib/timeline-types"
 
 // --- Pollen ---
 
@@ -137,4 +138,84 @@ export function buildChartData(
     current = shiftDate(current, 1)
   }
   return chartData
+}
+
+// --- Individual data builder (7d mode) ---
+
+interface IndividualLogRow {
+  date: string
+  datetime: Date | null
+}
+
+interface IndividualPoopRow extends IndividualLogRow {
+  firmnessScore: number
+}
+
+interface IndividualItchRow extends IndividualLogRow {
+  score: number
+}
+
+function toTimeString(row: IndividualLogRow): string | null {
+  if (!row.datetime) return null
+  return format(new Date(row.datetime), "h:mm a")
+}
+
+export function buildIndividualData(
+  poopRows: IndividualPoopRow[],
+  itchRows: IndividualItchRow[],
+  dailyPollen: Map<string, number>,
+  rawPollenByDay: Map<string, number>,
+  rawSporeByDay: Map<string, number>,
+): TimelineIndividualPoint[] {
+  // Closure-scoped offset so concurrent requests don't interfere
+  let tsOffset = 0
+  function toTimestamp(row: IndividualLogRow): number {
+    if (row.datetime) return new Date(row.datetime).getTime()
+    // Incrementing ms offset so multiple null-datetime entries on the same day
+    // don't collide (avoids ambiguous x-axis positions in Recharts)
+    return new Date(row.date + "T12:00:00Z").getTime() + (tsOffset++)
+  }
+
+  const points: TimelineIndividualPoint[] = []
+
+  for (const row of poopRows) {
+    const hasPollenData = rawPollenByDay.has(row.date) || rawSporeByDay.has(row.date)
+    points.push({
+      timestamp: toTimestamp(row),
+      date: row.date,
+      time: toTimeString(row),
+      poopScore: row.firmnessScore,
+      itchScore: 0, // default to 0; nulled out below for entries before first real itch log
+      pollenLevel: dailyPollen.get(row.date) ?? null,
+      rawPollenLevel: hasPollenData ? (rawPollenByDay.get(row.date) ?? 0) : null,
+      rawSporeLevel: hasPollenData ? (rawSporeByDay.get(row.date) ?? 0) : null,
+    })
+  }
+
+  for (const row of itchRows) {
+    const hasPollenData = rawPollenByDay.has(row.date) || rawSporeByDay.has(row.date)
+    points.push({
+      timestamp: toTimestamp(row),
+      date: row.date,
+      time: toTimeString(row),
+      poopScore: null,
+      itchScore: row.score,
+      pollenLevel: dailyPollen.get(row.date) ?? null,
+      rawPollenLevel: hasPollenData ? (rawPollenByDay.get(row.date) ?? 0) : null,
+      rawSporeLevel: hasPollenData ? (rawSporeByDay.get(row.date) ?? 0) : null,
+    })
+  }
+
+  points.sort((a, b) => a.timestamp - b.timestamp)
+
+  // Null out itch=0 on poop entries before the first real itch log,
+  // so the itch line starts at its first real value (no vertical drop from 0)
+  const firstItchIdx = points.findIndex((p) => p.poopScore === null && p.itchScore !== null)
+  if (firstItchIdx > 0) {
+    for (let i = 0; i < firstItchIdx; i++) {
+      if (points[i].itchScore === 0) points[i].itchScore = null
+    }
+  }
+
+  return points
 }

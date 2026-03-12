@@ -175,6 +175,14 @@ export function TimelineGantt({
     setTooltip(null)
   }, [])
 
+  // Dismiss tooltip on touch outside (mobile)
+  useEffect(() => {
+    if (!tooltip) return
+    const dismiss = () => setTooltip(null)
+    document.addEventListener("touchstart", dismiss)
+    return () => document.removeEventListener("touchstart", dismiss)
+  }, [tooltip])
+
   // Group bars by category, maintaining order
   const groupedBars = useMemo(() => {
     const grouped = new Map<string, GanttBar[]>()

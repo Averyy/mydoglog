@@ -1,11 +1,12 @@
 "use client"
 
-import { useState, useEffect, useCallback, useMemo, useRef } from "react"
-import { useParams } from "next/navigation"
+import { useState, useEffect, useCallback, useMemo, useRef, Suspense } from "react"
+import { useParams, useSearchParams, useRouter } from "next/navigation"
 import { useActiveDog } from "@/components/active-dog-provider"
 import { IngredientAnalysisSection, type ExtendedCorrelationResult } from "@/components/ingredient-analysis-section"
 import { InsightsTimeline } from "@/components/insights-timeline"
 import { Button } from "@/components/ui/button"
+import { isValidRange } from "@/lib/timeline-types"
 import type { TimelineRange, TimelineData } from "@/lib/timeline-types"
 import type { CorrelationResult, IngredientProductEntry } from "@/lib/correlation/types"
 
@@ -15,19 +16,33 @@ interface InsightsData extends CorrelationResult {
 }
 
 export default function InsightsPage(): React.ReactElement {
+  return (
+    <Suspense fallback={<div className="space-y-6"><h1 className="text-2xl font-bold text-foreground">Insights</h1></div>}>
+      <InsightsPageInner />
+    </Suspense>
+  )
+}
+
+function InsightsPageInner(): React.ReactElement {
   const params = useParams<{ id: string }>()
   const dogId = params.id
+  const router = useRouter()
+  const searchParams = useSearchParams()
   const { setActiveDogId } = useActiveDog()
 
   useEffect(() => { setActiveDogId(dogId) }, [dogId, setActiveDogId])
 
+  const initialRange = searchParams.get("range")
   const [data, setData] = useState<InsightsData | null>(null)
   const [timelineData, setTimelineData] = useState<TimelineData | null>(null)
   const [loading, setLoading] = useState(true)
   const [timelineLoading, setTimelineLoading] = useState(true)
   const [error, setError] = useState(false)
   const [timelineError, setTimelineError] = useState(false)
-  const [timelineRange, setTimelineRange] = useState<TimelineRange>("30d")
+  const [timelineRange, setTimelineRange] = useState<TimelineRange>(
+    isValidRange(initialRange) ? initialRange : "30d",
+  )
+  const [timelineRetry, setTimelineRetry] = useState(0)
 
   // Cache timeline responses by range to avoid re-fetching
   const timelineCacheRef = useRef<Map<TimelineRange, TimelineData>>(new Map())
@@ -96,7 +111,8 @@ export default function InsightsPage(): React.ReactElement {
     const controller = new AbortController()
     fetchTimeline(timelineRange, controller.signal)
     return () => controller.abort()
-  }, [fetchTimeline, timelineRange])
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [fetchTimeline, timelineRange, timelineRetry])
 
   const correlation: ExtendedCorrelationResult | null = useMemo(() => {
     if (!data) return null
@@ -130,10 +146,15 @@ export default function InsightsPage(): React.ReactElement {
           loading={timelineLoading}
           error={timelineError}
           range={timelineRange}
-          onRangeChange={setTimelineRange}
+          onRangeChange={(range) => {
+            setTimelineRange(range)
+            const params = new URLSearchParams(searchParams.toString())
+            params.set("range", range)
+            router.replace(`?${params.toString()}`, { scroll: false })
+          }}
           onRetry={() => {
             timelineCacheRef.current.delete(timelineRange)
-            fetchTimeline(timelineRange)
+            setTimelineRetry((n) => n + 1)
           }}
         />
       </div>

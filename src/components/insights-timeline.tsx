@@ -113,16 +113,16 @@ function TimelineError({ onRetry }: { onRetry?: () => void }): React.ReactElemen
 
 // --- Legend ---
 
-function TimelineLegend(): React.ReactElement {
+function TimelineLegend({ individual }: { individual?: boolean }): React.ReactElement {
   return (
     <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-[11px] text-muted-foreground">
       <div className="flex items-center gap-1.5">
         <div className="h-[3px] w-4 rounded-full" style={{ backgroundColor: "var(--chart-2)" }} />
-        <span>Worst stool</span>
+        <span>{individual ? "Stool" : "Worst stool"}</span>
       </div>
       <div className="flex items-center gap-1.5">
         <div className="h-[3px] w-4 rounded-full" style={{ backgroundColor: "var(--chart-4)", backgroundImage: "repeating-linear-gradient(90deg, transparent, transparent 3px, var(--background) 3px, var(--background) 5px)" }} />
-        <span>Worst itch</span>
+        <span>{individual ? "Itch" : "Worst itch"}</span>
       </div>
       <div className="flex items-center gap-1.5">
         <div className="h-2.5 w-4 rounded-[2px] border border-border-light" style={{ backgroundColor: "var(--pollen-moderate)" }} />
@@ -159,7 +159,9 @@ export function InsightsTimeline({ data, loading, error, range, onRangeChange, o
     )
   }
 
-  if (!data || data.chartData.length === 0) {
+  const hasData = data && (data.mode === "individual" ? data.individualData.length > 0 : data.chartData.length > 0)
+
+  if (!hasData) {
     return (
       <section className="space-y-3">
         <div className="flex items-center justify-between gap-4">
@@ -177,13 +179,16 @@ export function InsightsTimeline({ data, loading, error, range, onRangeChange, o
         <h2 className="text-base font-semibold text-foreground">Timeline</h2>
         <RangeToggle range={range} onRangeChange={onRangeChange} />
       </div>
-      <TimelineLegend />
+      <TimelineLegend individual={data.mode === "individual"} />
 
       {/* Shared scroll container for mobile */}
       <div className={cn("overflow-x-auto scrollbar-none -mx-4 px-4 md:mx-0 md:px-0")}>
         <div className="min-w-[500px] space-y-2">
           <TimelineChart
-            data={data.chartData}
+            data={data.mode === "daily" ? data.chartData : undefined}
+            individualData={data.mode === "individual" ? data.individualData : undefined}
+            dailyPollen={data.mode === "individual" ? data.dailyPollen : undefined}
+            mode={data.mode}
             className="aspect-auto h-[200px] w-full"
           />
           <TimelineGantt

@@ -17,7 +17,7 @@ import { eq, and, gte, lte, min, or, isNull } from "drizzle-orm"
 import { getToday } from "@/lib/utils"
 import { shiftDate } from "@/lib/date-utils"
 import { AEROBIOLOGY_PROVIDER, HAMILTON_LOCATION } from "@/lib/pollen/constants"
-import { isValidRange, RANGE_OFFSETS } from "@/lib/timeline-types"
+import { isValidRange, RANGE_OFFSETS, INDIVIDUAL_RANGES } from "@/lib/timeline-types"
 import type { TimelineRange, GanttBarData } from "@/lib/timeline-types"
 import {
   computeDailyMaxPollen,
@@ -25,7 +25,9 @@ import {
   buildScorecardMap,
   buildBackfillDayMaps,
   buildChartData,
+  buildIndividualData,
 } from "@/lib/timeline/aggregate"
+import { asc } from "drizzle-orm"
 
 type RouteParams = { params: Promise<{ id: string }> }
 
@@ -62,18 +64,30 @@ export async function GET(
       windowStart = shiftDate(today, -(RANGE_OFFSETS[range]!))
     }
 
+    const isIndividual = INDIVIDUAL_RANGES.has(range)
+
     // Fetch all data in parallel
     const [poopRows, itchRows, pollenRows, feedingRows, medRows, scorecardRows] =
       await Promise.all([
         db
-          .select({ date: poopLogs.date, firmnessScore: poopLogs.firmnessScore })
+          .select({
+            date: poopLogs.date,
+            firmnessScore: poopLogs.firmnessScore,
+            ...(isIndividual ? { datetime: poopLogs.datetime } : {}),
+          })
           .from(poopLogs)
-          .where(and(eq(poopLogs.dogId, dogId), gte(poopLogs.date, windowStart), lte(poopLogs.date, today))),
+          .where(and(eq(poopLogs.dogId, dogId), gte(poopLogs.date, windowStart), lte(poopLogs.date, today)))
+          .orderBy(isIndividual ? asc(poopLogs.datetime) : asc(poopLogs.date)),
 
         db
-          .select({ date: itchinessLogs.date, score: itchinessLogs.score })
+          .select({
+            date: itchinessLogs.date,
+            score: itchinessLogs.score,
+            ...(isIndividual ? { datetime: itchinessLogs.datetime } : {}),
+          })
           .from(itchinessLogs)
-          .where(and(eq(itchinessLogs.dogId, dogId), gte(itchinessLogs.date, windowStart), lte(itchinessLogs.date, today))),
+          .where(and(eq(itchinessLogs.dogId, dogId), gte(itchinessLogs.date, windowStart), lte(itchinessLogs.date, today)))
+          .orderBy(isIndividual ? asc(itchinessLogs.datetime) : asc(itchinessLogs.date)),
 
         db
           .select({ date: dailyPollen.date, pollenLevel: dailyPollen.pollenLevel, sporeLevel: dailyPollen.sporeLevel })
@@ -141,30 +155,8 @@ export async function GET(
           .where(and(eq(feedingPeriods.dogId, dogId), eq(feedingPeriods.isBackfill, true))),
       ])
 
-    // --- Aggregate data ---
-    const scorecardMap = buildScorecardMap(scorecardRows)
-    const { backfillPoopByDay, backfillItchByDay } = buildBackfillDayMaps(feedingRows, scorecardMap, windowStart, today)
-
-    const worstPoopByDay = new Map<string, number>()
-    for (const row of poopRows) {
-      const existing = worstPoopByDay.get(row.date)
-      if (existing === undefined || row.firmnessScore > existing) {
-        worstPoopByDay.set(row.date, row.firmnessScore)
-      }
-    }
-
-    const maxItchByDay = new Map<string, number>()
-    for (const row of itchRows) {
-      const existing = maxItchByDay.get(row.date)
-      if (existing === undefined || row.score > existing) {
-        maxItchByDay.set(row.date, row.score)
-      }
-    }
-
-    // Daily max pollen (no rolling window — chart shows day-by-day)
+    // --- Pollen (shared between both modes) ---
     const dailyPollenMap = computeDailyMaxPollen(pollenRows, windowStart, today)
-
-    // Raw pollen/spore maps for tooltip
     const rawPollenByDay = new Map<string, number>()
     const rawSporeByDay = new Map<string, number>()
     for (const row of pollenRows) {
@@ -174,12 +166,43 @@ export async function GET(
       }
     }
 
-    const chartData = buildChartData(
-      windowStart, today,
-      worstPoopByDay, backfillPoopByDay,
-      maxItchByDay, backfillItchByDay,
-      dailyPollenMap, rawPollenByDay, rawSporeByDay,
-    )
+    // --- Build chart data (mode-dependent) ---
+    let chartData: ReturnType<typeof buildChartData> = []
+    let individualData: ReturnType<typeof buildIndividualData> = []
+
+    if (isIndividual) {
+      individualData = buildIndividualData(
+        poopRows as { date: string; datetime: Date | null; firmnessScore: number }[],
+        itchRows as { date: string; datetime: Date | null; score: number }[],
+        dailyPollenMap, rawPollenByDay, rawSporeByDay,
+      )
+    } else {
+      const scorecardMap = buildScorecardMap(scorecardRows)
+      const { backfillPoopByDay, backfillItchByDay } = buildBackfillDayMaps(feedingRows, scorecardMap, windowStart, today)
+
+      const worstPoopByDay = new Map<string, number>()
+      for (const row of poopRows) {
+        const existing = worstPoopByDay.get(row.date)
+        if (existing === undefined || row.firmnessScore > existing) {
+          worstPoopByDay.set(row.date, row.firmnessScore)
+        }
+      }
+
+      const maxItchByDay = new Map<string, number>()
+      for (const row of itchRows) {
+        const existing = maxItchByDay.get(row.date)
+        if (existing === undefined || row.score > existing) {
+          maxItchByDay.set(row.date, row.score)
+        }
+      }
+
+      chartData = buildChartData(
+        windowStart, today,
+        worstPoopByDay, backfillPoopByDay,
+        maxItchByDay, backfillItchByDay,
+        dailyPollenMap, rawPollenByDay, rawSporeByDay,
+      )
+    }
 
     // --- Build Gantt bars ---
     const ganttBars: GanttBarData[] = []
@@ -226,7 +249,10 @@ export async function GET(
     const mergedBars = mergeAdjacentBars(ganttBars)
 
     return NextResponse.json({
+      mode: isIndividual ? "individual" : "daily",
       chartData,
+      individualData,
+      ...(isIndividual ? { dailyPollen: Object.fromEntries(dailyPollenMap) } : {}),
       ganttBars: mergedBars,
       startDate: windowStart,
       endDate: today,
