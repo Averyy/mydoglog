@@ -21,12 +21,7 @@ import {
 import { eq, and, gte, lte, sql, asc } from "drizzle-orm"
 import { AEROBIOLOGY_PROVIDER, HAMILTON_LOCATION } from "@/lib/pollen/constants"
 
-/** Shift a YYYY-MM-DD date string by N days. */
-function shiftDate(date: string, days: number): string {
-  const d = new Date(date + "T00:00:00Z")
-  d.setUTCDate(d.getUTCDate() + days)
-  return d.toISOString().slice(0, 10)
-}
+import { shiftDate } from "@/lib/date-utils"
 import type { PlanPeriod } from "@/lib/feeding"
 import { resolveIngredientKey, positionCategory, extractFamilyFromKey } from "./engine"
 import type {

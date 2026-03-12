@@ -31,6 +31,8 @@
     "react-day-picker": "^9.14.0",
     "react-dom": "19.2.3",
     "react-icons": "^5.6.0",
+    "react-is": "^19.2.4",
+    "recharts": "^3",
     "sharp": "^0.33.0",
     "sonner": "^2.0.7",
     "tailwind-merge": "^3.5.0",

@@ -97,30 +97,10 @@ export function positionCategory(position: number): PositionCategory {
 }
 
 // ---------------------------------------------------------------------------
-// Date utilities
+// Date utilities (re-exported from shared module)
 // ---------------------------------------------------------------------------
 
-function nextDate(dateStr: string): string {
-  const d = new Date(dateStr + "T12:00:00Z")
-  d.setUTCDate(d.getUTCDate() + 1)
-  return d.toISOString().split("T")[0]
-}
-
-function daysBetween(a: string, b: string): number {
-  const da = new Date(a + "T12:00:00Z")
-  const db = new Date(b + "T12:00:00Z")
-  return Math.round((db.getTime() - da.getTime()) / (1000 * 60 * 60 * 24))
-}
-
-function enumerateDates(start: string, end: string): string[] {
-  const dates: string[] = []
-  let current = start
-  while (current <= end) {
-    dates.push(current)
-    current = nextDate(current)
-  }
-  return dates
-}
+import { daysBetween, enumerateDates } from "@/lib/date-utils"
 
 // ---------------------------------------------------------------------------
 // Gram estimation
@@ -1108,7 +1088,9 @@ export function runCorrelation(
     dogId: input.dogId,
     windowStart: input.windowStart,
     windowEnd: input.windowEnd,
-    totalDays: daySnapshots.length,
+    totalDays: allSnapshots.length,
+    loggedDays: daySnapshots.length,
+    backfillDays: backfillSnaps.length,
     scoreableDays,
     totalDistinctProducts: allProductIds.size,
     scores,

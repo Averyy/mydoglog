@@ -308,7 +308,7 @@ export default function FoodPage(): React.ReactElement {
       {loading ? (
         <div className="flex flex-wrap gap-3">
           {Array.from({ length: skeletonCounts.foodCards }).map((_, i) => (
-            <div key={i} className="min-w-0 basis-[calc(50%-0.375rem)] grow sm:basis-72 sm:max-w-[calc(33.333%-0.5rem)] overflow-hidden rounded-lg border border-border bg-card">
+            <div key={i} className="min-w-0 basis-[calc(50%-0.375rem)] grow sm:basis-72 sm:max-w-[calc(33.333%-0.5rem)] lg:basis-56 lg:max-w-[calc(25%-0.5rem)] overflow-hidden rounded-lg border border-border bg-card">
               <div className="flex items-center justify-center bg-muted px-3 py-3">
                 <div className="h-28 w-24 animate-pulse rounded bg-muted-foreground-10" />
               </div>
@@ -357,7 +357,7 @@ export default function FoodPage(): React.ReactElement {
                 productName={item.productName}
                 imageUrl={item.imageUrl}
                 dateLabel={formatDateRange(group.startDate, group.endDate)}
-                className="min-w-0 basis-[calc(50%-0.375rem)] grow sm:basis-72 sm:max-w-[calc(33.333%-0.5rem)]"
+                className="min-w-0 basis-[calc(50%-0.375rem)] grow sm:basis-72 sm:max-w-[calc(33.333%-0.5rem)] lg:basis-56 lg:max-w-[calc(25%-0.5rem)]"
               >
                 <div className="-mx-4 bg-score-strip px-4 py-2">
                   <ScoreGrid avgStool={avgStool} avgItch={avgItch} days={days} />

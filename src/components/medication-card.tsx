@@ -2,7 +2,7 @@
 
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { getDosageFormIcon } from "@/components/medication-picker"
+import { getDosageFormIcon } from "@/lib/medication-utils"
 import { format, parseISO } from "date-fns"
 import { DOSING_INTERVAL_LABELS } from "@/lib/labels"
 import type { MedicationSummary } from "@/lib/types"
@@ -38,7 +38,7 @@ export function MedicationCard({
               )}
             </div>
             <p className="mt-0.5 text-[11px] text-foreground-muted-60">
-              {format(parseISO(medication.startDate), "MMM d, yyyy")} &mdash; Present
+              {format(parseISO(medication.startDate), "MMM d, yyyy")} - Present
             </p>
           </div>
           <div className="mt-0.5 flex shrink-0 items-center gap-3">

@@ -98,12 +98,12 @@ export function IngredientAnalysisSection({
             </>
           ) : (
             <>
-              <h2 className="text-xs font-medium uppercase tracking-[0.05em] text-muted-foreground">
+              <h2 className="text-base font-semibold text-foreground">
                 Ingredient Analysis
               </h2>
               {hasData && (
                 <p className="text-[11px] text-text-tertiary mt-0.5">
-                  Last {correlation.totalDays} days · {correlation.scoreableDays} scoreable
+                  {correlation.loggedDays} logged days · {correlation.backfillDays} backfilled days · {correlation.scoreableDays} scoreable
                 </p>
               )}
             </>

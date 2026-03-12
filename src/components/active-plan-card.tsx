@@ -45,7 +45,7 @@ export function ActivePlanCard({
               {plan.endDate && (
                 <>
                   {" "}
-                  &mdash; {format(parseISO(plan.endDate), "MMM d, yyyy")}
+                  - {format(parseISO(plan.endDate), "MMM d, yyyy")}
                 </>
               )}
             </p>

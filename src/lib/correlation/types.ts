@@ -171,6 +171,8 @@ export interface CorrelationResult {
   windowStart: string
   windowEnd: string
   totalDays: number
+  loggedDays: number
+  backfillDays: number
   scoreableDays: number
   totalDistinctProducts: number
   scores: IngredientScore[]

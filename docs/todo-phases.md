@@ -17,12 +17,7 @@ Living checklist. Update as work progresses.
 
 - [x] Pollen + mold collection — pollen-sparr cron (`POST /api/cron/pollen`), `daily_pollen` table, dual-provider (aerobiology + TWN), batch upsert with actual-over-forecast preference, gap detection/backfill. Correlation engine applies pollen discount to bad itch days (0.4x high, 0.7x moderate), 3-day rolling max, seasonal confounding flag per ingredient. Weather (Open-Meteo temp/humidity) deferred — spore levels already capture freeze-thaw signal.
 - [x] Medication tracking — dedicated `/dogs/[id]/meds` page, 67-drug catalog across 5 categories (allergy, parasite, GI, pain, steroid), searchable picker with free-text fallback, side effects, dosing intervals. Removed from routine editor/daily check-in (standalone page). See commit `a510312`.
-- [ ] Dashboard timeline — unified view combining:
-  - **Time-series graph** (top): poop scores as dots (semantic colors), itch scores, pollen + mold as background overlays, season bands as background shading
-  - **Gantt-style bars** (bottom): food periods, medication periods, supplement periods as horizontal bars showing what was active when
-  - Read together vertically — correlate score changes with food/med/environment/season transitions
-  - **Pollen widget** — show today's pollen + mold levels from TWN on dashboard (data already collected in `daily_pollen`)
-  - **`itchSeasonallyConfounded` display** — engine computes this flag per ingredient, needs UI warning on Insights page
+- [x] Insights charts. Time-series graph: poop scores, itch scores, pollen + mold as background overlays. Gantt-style bars: food periods, medication periods, supplement periods as horizontal bars showing what was active when
 - [ ] LLM export (structured text dump for Claude, "Export for LLM" button on correlations page)
 - [ ] Extend correlation engine: medication on/off comparison (medication is the #1 confounding variable for itch)
 - [ ] Set up cron schedule on deploy — daily 14:00 UTC, `POST /api/cron/pollen` with `Authorization: Bearer $CRON_SECRET`. Until then, run manually.
@@ -45,7 +40,6 @@ Out of scope for initial build. Roughly prioritized.
 - MCP server (Claude queries API routes directly — low effort, high personal value)
 - Weight history (track over time, currently just a single field)
 - Vet export (formatted reports for vet visits — replaces manual `peaches.md` notes)
-- Custom food builder (raw diets, home-cooked, niche brands)
 - General vet/health timeline (vaccinations, vet visits, surgical history)
 - Document uploads (PDFs for vet records, lab results)
 

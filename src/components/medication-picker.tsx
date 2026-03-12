@@ -18,41 +18,13 @@ import {
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { LiaSortSolid } from "react-icons/lia"
-import {
-  LiaCapsulesSolid,
-  LiaSyringeSolid,
-  LiaTintSolid,
-  LiaSprayCanSolid,
-  LiaMortarPestleSolid,
-  LiaRingSolid,
-  LiaPenSolid,
-} from "react-icons/lia"
+import { LiaCapsulesSolid, LiaPenSolid } from "react-icons/lia"
 import { cn } from "@/lib/utils"
 import { useIsMobile } from "@/hooks/use-is-mobile"
 import { MEDICATION_CATEGORY_LABELS } from "@/lib/labels"
 import type { MedicationProduct } from "@/lib/db/schema"
-import type { IconType } from "react-icons"
-
-// ── Dosage form icons ───────────────────────────────────────────────────────
-
-const DOSAGE_FORM_ICONS: Record<string, IconType> = {
-  tablet: LiaCapsulesSolid,
-  chewable: LiaCapsulesSolid,
-  capsule: LiaCapsulesSolid,
-  liquid: LiaTintSolid,
-  injection: LiaSyringeSolid,
-  topical: LiaTintSolid,
-  spray: LiaSprayCanSolid,
-  powder: LiaMortarPestleSolid,
-  granules: LiaMortarPestleSolid,
-  gel: LiaTintSolid,
-  collar: LiaRingSolid,
-}
-
-export function getDosageFormIcon(dosageForm: string | null | undefined): IconType {
-  if (!dosageForm) return LiaCapsulesSolid
-  return DOSAGE_FORM_ICONS[dosageForm] ?? LiaCapsulesSolid
-}
+import { getDosageFormIcon } from "@/lib/medication-utils"
+export { getDosageFormIcon } from "@/lib/medication-utils"
 
 // ── Category filter order ───────────────────────────────────────────────────
 
