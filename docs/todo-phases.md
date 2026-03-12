@@ -17,7 +17,7 @@ Living checklist. Update as work progresses.
 
 - [x] Pollen + mold collection — pollen-sparr cron (`POST /api/cron/pollen`), `daily_pollen` table, dual-provider (aerobiology + TWN), batch upsert with actual-over-forecast preference, gap detection/backfill. Correlation engine applies pollen discount to bad itch days (0.4x high, 0.7x moderate), 3-day rolling max, seasonal confounding flag per ingredient. Weather (Open-Meteo temp/humidity) deferred — spore levels already capture freeze-thaw signal.
 - [x] Medication tracking — dedicated `/dogs/[id]/meds` page, 67-drug catalog across 5 categories (allergy, parasite, GI, pain, steroid), searchable picker with free-text fallback, side effects, dosing intervals. Removed from routine editor/daily check-in (standalone page). See commit `a510312`.
-- [x] Insights charts. Time-series graph: poop scores, itch scores, pollen + mold as background overlays. Gantt-style bars: food periods, medication periods, supplement periods as horizontal bars showing what was active when
+- [x] Insights charts — time-series graph (poop scores, itch scores, pollen + mold background overlays) with selectable range (7d/30d/60d/90d/all), gantt-style bars for food/supplement/medication periods. Shared date-utils and timeline types extracted. Client-side range caching with AbortController.
 - [ ] LLM export (structured text dump for Claude, "Export for LLM" button on correlations page)
 - [ ] Extend correlation engine: medication on/off comparison (medication is the #1 confounding variable for itch)
 - [ ] Set up cron schedule on deploy — daily 14:00 UTC, `POST /api/cron/pollen` with `Authorization: Bearer $CRON_SECRET`. Until then, run manually.
@@ -51,7 +51,9 @@ Out of scope for initial build. Roughly prioritized.
 - ~~Transition wizard~~ — users follow vet guidance
 - ~~Meal-level logging~~ — daily granularity is sufficient
 - ~~Reformulation tracking~~ — rare event, not worth schema complexity
-- ~~Medication database~~ — completed in Phase 4 as medication tracking- ~~Vomiting log UI~~ — rare for current dog, note in daily check-in if needed
+- ~~Medication database~~ — completed in Phase 4 as medication tracking
+- ~~Vomiting log UI~~ — rare for current dog, note in daily check-in if needed
 - ~~Symptom log UI~~ — mucus/blood covered by poop log extension above
 - ~~Accidental exposure log UI~~ — rare events, daily check-in notes suffice
-- ~~Weather tracking~~ - we get all the data we need from pollen/mold tracking
+- ~~Custom food builder~~ — raw diets/home-cooked not needed, commercial products cover all use cases
+- ~~Weather tracking~~ — pollen/mold tracking already captures the relevant environmental signal
