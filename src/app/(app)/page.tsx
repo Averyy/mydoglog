@@ -11,7 +11,7 @@ export default async function DashboardPage(): Promise<React.ReactElement> {
   })
 
   const userDogs = await db
-    .select({ id: dogs.id, name: dogs.name, breed: dogs.breed })
+    .select({ id: dogs.id, name: dogs.name, breed: dogs.breed, slug: dogs.slug })
     .from(dogs)
     .where(eq(dogs.ownerId, session!.user.id))
 

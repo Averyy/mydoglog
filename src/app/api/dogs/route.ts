@@ -3,6 +3,7 @@ import { auth } from "@/lib/auth"
 import { headers } from "next/headers"
 import { db, dogs } from "@/lib/db"
 import { eq } from "drizzle-orm"
+import { sanitizeDogName, validateDogName, generateUniqueSlug } from "@/lib/slug"
 
 export async function GET(): Promise<NextResponse> {
   try {
@@ -37,11 +38,20 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
       return NextResponse.json({ error: "Name is required" }, { status: 400 })
     }
 
+    const sanitizedName = sanitizeDogName(name)
+    const nameError = validateDogName(sanitizedName)
+    if (nameError) {
+      return NextResponse.json({ error: nameError }, { status: 400 })
+    }
+
+    const slug = await generateUniqueSlug(sanitizedName, session.user.id)
+
     const [dog] = await db
       .insert(dogs)
       .values({
         ownerId: session.user.id,
-        name: name.trim(),
+        name: sanitizedName,
+        slug,
         breed: breed?.trim() || null,
         birthDate: birthDate || null,
         weightKg: weightKg != null ? String(weightKg) : null,

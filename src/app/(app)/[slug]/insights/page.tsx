@@ -1,8 +1,8 @@
 "use client"
 
 import { useState, useEffect, useCallback, useMemo, useRef, Suspense } from "react"
-import { useParams, useSearchParams, useRouter } from "next/navigation"
-import { useActiveDog } from "@/components/active-dog-provider"
+import { useSearchParams, useRouter } from "next/navigation"
+import { useDogPage } from "@/components/dog-page-provider"
 import { IngredientAnalysisSection, type ExtendedCorrelationResult } from "@/components/ingredient-analysis-section"
 import { InsightsTimeline } from "@/components/insights-timeline"
 import { Button } from "@/components/ui/button"
@@ -24,13 +24,9 @@ export default function InsightsPage(): React.ReactElement {
 }
 
 function InsightsPageInner(): React.ReactElement {
-  const params = useParams<{ id: string }>()
-  const dogId = params.id
+  const { id: dogId } = useDogPage()
   const router = useRouter()
   const searchParams = useSearchParams()
-  const { setActiveDogId } = useActiveDog()
-
-  useEffect(() => { setActiveDogId(dogId) }, [dogId, setActiveDogId])
 
   const initialRange = searchParams.get("range")
   const [data, setData] = useState<InsightsData | null>(null)

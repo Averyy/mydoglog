@@ -1,8 +1,7 @@
 "use client"
 
 import { useState, useEffect, useCallback } from "react"
-import { useParams } from "next/navigation"
-import { useActiveDog } from "@/components/active-dog-provider"
+import { useDogPage } from "@/components/dog-page-provider"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { MedicationCard } from "@/components/medication-card"
@@ -11,11 +10,7 @@ import { LiaPlusSolid } from "react-icons/lia"
 import type { MedicationSummary } from "@/lib/types"
 
 export default function MedsPage(): React.ReactElement {
-  const params = useParams<{ id: string }>()
-  const dogId = params.id
-  const { setActiveDogId } = useActiveDog()
-
-  useEffect(() => { setActiveDogId(dogId) }, [dogId, setActiveDogId])
+  const { id: dogId } = useDogPage()
 
   const [medications, setMedications] = useState<MedicationSummary[]>([])
   const [loading, setLoading] = useState(true)

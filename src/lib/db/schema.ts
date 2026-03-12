@@ -10,6 +10,7 @@ import {
   text,
   timestamp,
   unique,
+  uniqueIndex,
 } from "drizzle-orm/pg-core"
 
 // ---------------------------------------------------------------------------
@@ -341,6 +342,7 @@ export const dogs = pgTable(
       .notNull()
       .references(() => user.id, { onDelete: "cascade" }),
     name: text("name").notNull(),
+    slug: text("slug").notNull(),
     breed: text("breed"),
     birthDate: date("birth_date"),
     weightKg: numeric("weight_kg"),
@@ -348,7 +350,10 @@ export const dogs = pgTable(
     createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
     updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
   },
-  (table) => [index("idx_dogs_owner").on(table.ownerId)],
+  (table) => [
+    index("idx_dogs_owner").on(table.ownerId),
+    uniqueIndex("idx_dogs_owner_slug").on(table.ownerId, table.slug),
+  ],
 )
 
 // ---------------------------------------------------------------------------

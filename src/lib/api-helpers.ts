@@ -12,6 +12,26 @@ export interface AuthResult {
   dog: Dog
 }
 
+export async function requireDogBySlug(
+  slug: string,
+): Promise<AuthResult | NextResponse> {
+  const session = await auth.api.getSession({ headers: await headers() })
+  if (!session?.user) {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 })
+  }
+
+  const [dog] = await db
+    .select()
+    .from(dogs)
+    .where(and(eq(dogs.slug, slug.toLowerCase()), eq(dogs.ownerId, session.user.id)))
+
+  if (!dog) {
+    return NextResponse.json({ error: "Not found" }, { status: 404 })
+  }
+
+  return { session: session as Session, dog }
+}
+
 export async function requireDogOwnership(
   dogId: string,
 ): Promise<AuthResult | NextResponse> {

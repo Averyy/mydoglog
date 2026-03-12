@@ -8,6 +8,8 @@ export type LogMode = "closed" | "selector" | "poop" | "treat" | "itch" | "check
 interface ActiveDogContextValue {
   activeDogId: string | null
   setActiveDogId: (id: string | null) => void
+  activeDogSlug: string | null
+  setActiveDogSlug: (slug: string | null) => void
   logMode: LogMode
   setLogMode: (mode: LogMode) => void
 }
@@ -20,6 +22,7 @@ export function ActiveDogProvider({
   children: React.ReactNode
 }): React.ReactElement {
   const [activeDogId, setActiveDogId] = useState<string | null>(null)
+  const [activeDogSlug, setActiveDogSlug] = useState<string | null>(null)
   const [logMode, setLogMode] = useState<LogMode>("closed")
 
   // Warm product cache on app load so pickers open instantly
@@ -29,7 +32,7 @@ export function ActiveDogProvider({
 
   return (
     <ActiveDogContext.Provider
-      value={{ activeDogId, setActiveDogId, logMode, setLogMode }}
+      value={{ activeDogId, setActiveDogId, activeDogSlug, setActiveDogSlug, logMode, setLogMode }}
     >
       {children}
     </ActiveDogContext.Provider>

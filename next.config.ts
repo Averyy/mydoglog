@@ -2,12 +2,6 @@ import type { NextConfig } from "next"
 
 const nextConfig: NextConfig = {
   output: "standalone",
-  async redirects() {
-    return [
-      { source: "/dogs/:id/feeding", destination: "/dogs/:id/food", permanent: true },
-      { source: "/dogs/:id/food-scorecard", destination: "/dogs/:id/food", permanent: true },
-    ]
-  },
   async headers() {
     return [
       {

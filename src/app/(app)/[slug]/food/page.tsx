@@ -1,8 +1,7 @@
 "use client"
 
 import { useState, useEffect, useCallback, useMemo } from "react"
-import { useParams } from "next/navigation"
-import { useActiveDog } from "@/components/active-dog-provider"
+import { useDogPage } from "@/components/dog-page-provider"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { FoodScoreCard } from "@/components/food-score-card"
@@ -40,11 +39,7 @@ interface ScorecardPageData {
 }
 
 export default function FoodPage(): React.ReactElement {
-  const params = useParams<{ id: string }>()
-  const dogId = params.id
-  const { setActiveDogId } = useActiveDog()
-
-  useEffect(() => { setActiveDogId(dogId) }, [dogId, setActiveDogId])
+  const { id: dogId } = useDogPage()
 
   // Routine data
   const [activePlan, setActivePlan] = useState<ActivePlan | null>(null)

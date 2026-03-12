@@ -12,6 +12,7 @@ interface DogBasic {
   id: string
   name: string
   breed: string | null
+  slug: string
 }
 
 interface DashboardClientProps {
@@ -22,13 +23,16 @@ export function DashboardClient({
   dogs,
 }: DashboardClientProps): React.ReactElement {
   const [activeDogId, setActiveDogId] = useState(dogs[0]?.id ?? "")
-  const { setActiveDogId: setContextDogId, setLogMode } = useActiveDog()
+  const { setActiveDogId: setContextDogId, setActiveDogSlug: setContextDogSlug, setLogMode } = useActiveDog()
 
   const activeDog = dogs.find((d) => d.id === activeDogId) ?? dogs[0]
 
   useEffect(() => {
-    if (activeDog) setContextDogId(activeDog.id)
-  }, [activeDog, setContextDogId])
+    if (activeDog) {
+      setContextDogId(activeDog.id)
+      setContextDogSlug(activeDog.slug)
+    }
+  }, [activeDog, setContextDogId, setContextDogSlug])
 
   if (!activeDog) return <div />
 

@@ -2,7 +2,8 @@
 
 import { useState } from "react"
 import { Card, CardContent } from "@/components/ui/card"
-import { LiaChevronDownSolid, LiaExternalLinkAltSolid, LiaInfoCircleSolid } from "react-icons/lia"
+import { ChevronDownIcon } from "lucide-react"
+import { LiaExternalLinkAltSolid, LiaInfoCircleSolid } from "react-icons/lia"
 import { COMMON_SKIN_TRIGGERS } from "@/lib/ingredients"
 import { cn } from "@/lib/utils"
 import { IngredientRow, isSuspectItch, type SignalMode } from "@/components/ingredient-row"
@@ -266,7 +267,7 @@ export function IngredientAnalysisSection({
             onClick={() => setFatsExpanded(!fatsExpanded)}
             className="flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground transition-colors"
           >
-            <LiaChevronDownSolid
+            <ChevronDownIcon
               className={`size-3.5 transition-transform ${fatsExpanded ? "rotate-0" : "-rotate-90"}`}
             />
             Fats & oils ({fatOilScores.length})

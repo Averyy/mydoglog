@@ -22,21 +22,21 @@ interface NavItem {
   label: string
   icon: React.ComponentType<{ className?: string; strokeWidth?: number }>
   href?: string
-  dogHref?: (dogId: string) => string
+  dogHref?: (slug: string) => string
   prominent?: boolean
 }
 
 const NAV_LINKS: NavItem[] = [
   { label: "Home", icon: LiaHomeSolid, href: "/" },
-  { label: "Food", icon: LiaUtensilsSolid, dogHref: (id) => `/dogs/${id}/food` },
+  { label: "Food", icon: LiaUtensilsSolid, dogHref: (slug) => `/${slug}/food` },
   { label: "Log", icon: LiaPlusSolid, prominent: true },
-  { label: "Meds", icon: LiaCapsulesSolid, dogHref: (id) => `/dogs/${id}/meds` },
-  { label: "Insights", icon: LiaLightbulbSolid, dogHref: (id) => `/dogs/${id}/insights` },
+  { label: "Meds", icon: LiaCapsulesSolid, dogHref: (slug) => `/${slug}/meds` },
+  { label: "Insights", icon: LiaLightbulbSolid, dogHref: (slug) => `/${slug}/insights` },
 ]
 
-function resolveHref(link: NavItem, activeDogId: string | null): string {
+function resolveHref(link: NavItem, activeDogSlug: string | null): string {
   if (link.href) return link.href
-  if (link.dogHref && activeDogId) return link.dogHref(activeDogId)
+  if (link.dogHref && activeDogSlug) return link.dogHref(activeDogSlug)
   return "/"
 }
 
@@ -63,12 +63,12 @@ function ThemeToggle(): React.ReactElement {
 
 export function DesktopNavLinks(): React.ReactElement {
   const pathname = usePathname()
-  const { activeDogId } = useActiveDog()
+  const { activeDogSlug } = useActiveDog()
 
   return (
     <nav className="flex items-center gap-6 text-sm text-text-secondary">
       {NAV_LINKS.filter((link) => !link.prominent).map((link) => {
-        const href = resolveHref(link, activeDogId)
+        const href = resolveHref(link, activeDogSlug)
 
         return (
           <Link
@@ -100,7 +100,7 @@ export function DesktopNavLinks(): React.ReactElement {
 
 export function BottomNav(): React.ReactElement {
   const pathname = usePathname()
-  const { activeDogId, setLogMode } = useActiveDog()
+  const { activeDogId, activeDogSlug, setLogMode } = useActiveDog()
 
   function handleLogPress(): void {
     if (!activeDogId) {
@@ -115,7 +115,7 @@ export function BottomNav(): React.ReactElement {
       <div className="mx-auto flex h-16 max-w-lg items-center justify-around">
         {NAV_LINKS.map((link) => {
           const Icon = link.icon
-          const href = resolveHref(link, activeDogId)
+          const href = resolveHref(link, activeDogSlug)
           const active = isNavActive(href, pathname)
 
           if (link.prominent) {

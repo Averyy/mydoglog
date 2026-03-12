@@ -3,6 +3,7 @@ import { auth } from "@/lib/auth"
 import { headers } from "next/headers"
 import { db, dogs } from "@/lib/db"
 import { and, eq } from "drizzle-orm"
+import { sanitizeDogName, validateDogName, generateUniqueSlug } from "@/lib/slug"
 
 type RouteParams = { params: Promise<{ id: string }> }
 
@@ -29,7 +30,15 @@ export async function PATCH(
     }
 
     const updates: Record<string, unknown> = { updatedAt: new Date() }
-    if (body.name !== undefined) updates.name = body.name.trim()
+    if (body.name !== undefined) {
+      const sanitizedName = sanitizeDogName(body.name)
+      const nameError = validateDogName(sanitizedName)
+      if (nameError) {
+        return NextResponse.json({ error: nameError }, { status: 400 })
+      }
+      updates.name = sanitizedName
+      updates.slug = await generateUniqueSlug(sanitizedName, session.user.id, id)
+    }
     if (body.breed !== undefined) updates.breed = body.breed?.trim() || null
     if (body.birthDate !== undefined) updates.birthDate = body.birthDate || null
     if (body.weightKg !== undefined)

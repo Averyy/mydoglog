@@ -12,6 +12,7 @@ Living checklist. Update as work progresses.
 - **Phase 3 — Analysis:** Correlation engine (ingredient-level, two-track skin/GI), correlation results page, food scorecard improvements, Insights tab
 - **Phase 3.5 — Scorecard simplification:** Removed redundant scorecard from routine change flow (daily logs already capture this). Made scorecard mandatory for backfills (no skip). Zero-log feeding periods are deleted on routine change instead of kept as empty data. Active plans derive scores from daily logs only.
 - **Phase 3.6 — Page reorganization:** Three-page structure (Home/Food/Insights). Home = quick-log grid + log feed. Food = active routine + food history with inline scorecards. Insights = ingredient correlation analysis. Extracted components: `log-feed.tsx`, `ingredient-analysis-section.tsx`, `ingredient-row.tsx`, `product-ingredient-list.tsx`, `score-grid.tsx`. API routes reorganized under `/food/` and `/insights/`.
+- **Phase 3.7 — Dog URL slugs:** Replaced UUID-based dog page URLs (`/dogs/[id]/food`) with human-readable top-level slugs (`/[slug]/food`). Slug column with per-owner unique index, name validation (letters+spaces, 3-20 chars), reserved name handling, `DogPageProvider` context, `requireDogBySlug` helper. API routes stay on UUID internally.
 
 ## Phase 4: Extended Logging + Visualization
 
@@ -21,6 +22,20 @@ Living checklist. Update as work progresses.
 - [ ] LLM export (structured text dump for Claude, "Export for LLM" button on correlations page)
 - [ ] Extend correlation engine: medication on/off comparison (medication is the #1 confounding variable for itch)
 - [ ] Set up cron schedule on deploy — daily 14:00 UTC, `POST /api/cron/pollen` with `Authorization: Bearer $CRON_SECRET`. Until then, run manually.
+
+## Phase 4.5: Food Transition
+
+See `TODO-food-transition.md` for full spec.
+
+- [ ] Schema: `transitionDays` + `previousPlanGroupId` columns on `feedingPeriods`
+- [ ] Transition quantity math (`computeTransitionSchedule`, formula: `newFraction = day / (N + 1)`)
+- [ ] API: generate per-day feeding period rows with correct transition quantities, clean up orphaned future rows
+- [ ] Routine editor: detect main food change → "Next →" → transition step (0-7 day selector, live quantity preview)
+- [ ] Daily check-in pre-fill: fix `getActivePlanForDog` date filtering, add `targetItems` for editor pre-fill
+- [ ] Food page: "Transitioning — Day X of N" badge on active card, dedup transition rows in history, "End transition" button
+- [ ] Correlation engine: use `transitionDays` for buffer duration, suppress double-buffer at transition end
+- [ ] Gantt chart: single striped transition band (constructed before `mergeAdjacentBars`), `--gantt-transition` token
+- [ ] Fix consumers: food list GET dedup, recent products filter excludes single-day rows
 
 ## Phase 5: Sharing & Pack Access
 
@@ -48,7 +63,7 @@ Out of scope for initial build. Roughly prioritized.
 - ~~iOS app~~ — responsive web works fine
 - ~~Barcode scanning~~ — DB has 1,260+ products, search works
 - ~~URL-based product import~~ — scrapers already exist
-- ~~Transition wizard~~ — users follow vet guidance
+- ~~Transition wizard~~ — replaced by food transition feature (Phase 4.5)
 - ~~Meal-level logging~~ — daily granularity is sufficient
 - ~~Reformulation tracking~~ — rare event, not worth schema complexity
 - ~~Medication database~~ — completed in Phase 4 as medication tracking

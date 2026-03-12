@@ -8,6 +8,7 @@ import { Label } from "@/components/ui/label"
 import { Checkbox } from "@/components/ui/checkbox"
 import { BirthDatePicker } from "@/components/birth-date-picker"
 import { toast } from "sonner"
+import { useActiveDog } from "@/components/active-dog-provider"
 import type { Dog } from "@/lib/db/schema"
 
 interface DogFormProps {
@@ -15,10 +16,16 @@ interface DogFormProps {
   onClose?: () => void
 }
 
+function sanitizeNameInput(raw: string): string {
+  return raw.replace(/[^a-zA-Z ]/g, "").replace(/ +/g, " ").slice(0, 20)
+}
+
 export function DogForm({ dog, onClose }: DogFormProps) {
   const router = useRouter()
+  const { setActiveDogSlug } = useActiveDog()
   const [loading, setLoading] = useState(false)
   const [name, setName] = useState(dog?.name ?? "")
+  const [nameError, setNameError] = useState<string | null>(null)
   const [breed, setBreed] = useState(dog?.breed ?? "")
   const [birthDate, setBirthDate] = useState(dog?.birthDate ?? "")
   const [weightKg, setWeightKg] = useState(dog?.weightKg ?? "")
@@ -26,8 +33,29 @@ export function DogForm({ dog, onClose }: DogFormProps) {
     dog?.environmentEnabled ?? false,
   )
 
+  function handleNameChange(value: string): void {
+    const sanitized = sanitizeNameInput(value)
+    setName(sanitized)
+    if (nameError) {
+      const trimmed = sanitized.trim()
+      if (trimmed.length >= 3) setNameError(null)
+    }
+  }
+
+  function handleNameBlur(): void {
+    const trimmed = name.trim()
+    if (trimmed.length > 0 && trimmed.length < 3) {
+      setNameError("Name must be at least 3 characters")
+    }
+  }
+
   async function handleSubmit(e: React.FormEvent): Promise<void> {
     e.preventDefault()
+    const trimmed = name.trim()
+    if (trimmed.length < 3) {
+      setNameError("Name must be at least 3 characters")
+      return
+    }
     setLoading(true)
 
     const url = dog ? `/api/dogs/${dog.id}` : "/api/dogs"
@@ -46,10 +74,14 @@ export function DogForm({ dog, onClose }: DogFormProps) {
         }),
       })
 
+      const data = await res.json()
       if (!res.ok) {
-        const data = await res.json()
         toast.error(data.error ?? "Failed to save")
         return
+      }
+
+      if (data.slug) {
+        setActiveDogSlug(data.slug)
       }
 
       toast.success(dog ? "Dog updated" : "Dog added")
@@ -73,9 +105,14 @@ export function DogForm({ dog, onClose }: DogFormProps) {
         <Input
           id="name"
           value={name}
-          onChange={(e) => setName(e.target.value)}
+          onChange={(e) => handleNameChange(e.target.value)}
+          onBlur={handleNameBlur}
+          maxLength={20}
           required
         />
+        {nameError && (
+          <p className="text-xs text-destructive">{nameError}</p>
+        )}
       </div>
       <div className="space-y-2">
         <Label htmlFor="breed">Breed</Label>

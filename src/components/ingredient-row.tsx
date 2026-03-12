@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { Badge } from "@/components/ui/badge"
-import { LiaChevronRightSolid } from "react-icons/lia"
+import { ChevronRightIcon } from "lucide-react"
 import { poopScoreColor, itchScoreColor } from "@/components/score-grid"
 import { COMMON_SKIN_TRIGGERS } from "@/lib/ingredients"
 import { PRODUCT_TYPE_LABELS, NON_FOOD_TYPES } from "@/lib/labels"
@@ -132,7 +132,7 @@ export function IngredientRow({
               <span className="text-[10px] font-normal text-muted-foreground ml-0.5">itch</span>
             </span>
           )}
-          <LiaChevronRightSolid className={`size-3.5 text-muted-foreground transition-transform ${expanded ? "rotate-90" : ""}`} />
+          <ChevronRightIcon className={`size-3.5 text-muted-foreground transition-transform ${expanded ? "rotate-90" : ""}`} />
         </div>
       </button>
       {expanded && (
