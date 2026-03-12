@@ -16,7 +16,7 @@ import { DOSING_INTERVAL_LABELS } from "@/lib/labels"
 import { eq, and, gte, lte, min, or, isNull } from "drizzle-orm"
 import { getToday } from "@/lib/utils"
 import { shiftDate } from "@/lib/date-utils"
-import { AEROBIOLOGY_PROVIDER, HAMILTON_LOCATION } from "@/lib/pollen/constants"
+import { AEROBIOLOGY_PROVIDER, TWN_PROVIDER, HAMILTON_LOCATION, NIAGARA_LOCATION } from "@/lib/pollen/constants"
 import { isValidRange, RANGE_OFFSETS, INDIVIDUAL_RANGES } from "@/lib/timeline-types"
 import type { TimelineRange, GanttBarData } from "@/lib/timeline-types"
 import {
@@ -90,11 +90,13 @@ export async function GET(
           .orderBy(isIndividual ? asc(itchinessLogs.datetime) : asc(itchinessLogs.date)),
 
         db
-          .select({ date: dailyPollen.date, pollenLevel: dailyPollen.pollenLevel, sporeLevel: dailyPollen.sporeLevel })
+          .select({ date: dailyPollen.date, provider: dailyPollen.provider, pollenLevel: dailyPollen.pollenLevel, sporeLevel: dailyPollen.sporeLevel })
           .from(dailyPollen)
           .where(and(
-            eq(dailyPollen.provider, AEROBIOLOGY_PROVIDER),
-            eq(dailyPollen.location, HAMILTON_LOCATION),
+            or(
+              and(eq(dailyPollen.provider, AEROBIOLOGY_PROVIDER), eq(dailyPollen.location, HAMILTON_LOCATION)),
+              and(eq(dailyPollen.provider, TWN_PROVIDER), eq(dailyPollen.location, NIAGARA_LOCATION)),
+            ),
             gte(dailyPollen.date, windowStart),
             lte(dailyPollen.date, today),
           )),
@@ -155,11 +157,16 @@ export async function GET(
           .where(and(eq(feedingPeriods.dogId, dogId), eq(feedingPeriods.isBackfill, true))),
       ])
 
-    // --- Pollen (shared between both modes) ---
-    const dailyPollenMap = computeDailyMaxPollen(pollenRows, windowStart, today)
+    // --- Pollen: prefer Aero, fall back to TWN for days without Aero data ---
+    const aeroDates = new Set(pollenRows.filter((r) => r.provider === AEROBIOLOGY_PROVIDER).map((r) => r.date))
+    const dedupedPollenRows = pollenRows.filter(
+      (r) => r.provider === AEROBIOLOGY_PROVIDER || !aeroDates.has(r.date),
+    )
+
+    const dailyPollenMap = computeDailyMaxPollen(dedupedPollenRows, windowStart, today)
     const rawPollenByDay = new Map<string, number>()
     const rawSporeByDay = new Map<string, number>()
-    for (const row of pollenRows) {
+    for (const row of dedupedPollenRows) {
       rawPollenByDay.set(row.date, Math.max(rawPollenByDay.get(row.date) ?? 0, row.pollenLevel))
       if (row.sporeLevel !== null) {
         rawSporeByDay.set(row.date, Math.max(rawSporeByDay.get(row.date) ?? 0, row.sporeLevel))

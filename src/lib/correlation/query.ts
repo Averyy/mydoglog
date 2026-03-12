@@ -18,8 +18,8 @@ import {
   dailyPollen,
   ingredientCrossReactivity,
 } from "@/lib/db"
-import { eq, and, gte, lte, sql, asc } from "drizzle-orm"
-import { AEROBIOLOGY_PROVIDER, HAMILTON_LOCATION } from "@/lib/pollen/constants"
+import { eq, and, gte, lte, sql, asc, or } from "drizzle-orm"
+import { AEROBIOLOGY_PROVIDER, TWN_PROVIDER, HAMILTON_LOCATION, NIAGARA_LOCATION } from "@/lib/pollen/constants"
 
 import { shiftDate } from "@/lib/date-utils"
 import type { PlanPeriod } from "@/lib/feeding"
@@ -246,19 +246,22 @@ export async function fetchCorrelationInput(
           )
       : Promise.resolve([]),
 
-    // Pollen logs — aerobiology provider only, hardcoded location
+    // Pollen logs — prefer Aero, fall back to TWN for days without Aero
     // Fetch 2 extra days before windowStart for 3-day rolling max lookback
     db
       .select({
         date: dailyPollen.date,
+        provider: dailyPollen.provider,
         pollenLevel: dailyPollen.pollenLevel,
         sporeLevel: dailyPollen.sporeLevel,
       })
       .from(dailyPollen)
       .where(
         and(
-          eq(dailyPollen.provider, AEROBIOLOGY_PROVIDER),
-          eq(dailyPollen.location, HAMILTON_LOCATION),
+          or(
+            and(eq(dailyPollen.provider, AEROBIOLOGY_PROVIDER), eq(dailyPollen.location, HAMILTON_LOCATION)),
+            and(eq(dailyPollen.provider, TWN_PROVIDER), eq(dailyPollen.location, NIAGARA_LOCATION)),
+          ),
           gte(dailyPollen.date, shiftDate(windowStart, -2)),
           lte(dailyPollen.date, windowEnd),
         ),
@@ -341,11 +344,12 @@ export async function fetchCorrelationInput(
     itchinessLogs: itchRows,
     accidentalExposures: exposureRows,
     scorecards: scorecardRows,
-    pollenLogs: pollenRows.map((r) => ({
-      date: r.date,
-      pollenLevel: r.pollenLevel,
-      sporeLevel: r.sporeLevel,
-    })),
+    pollenLogs: (() => {
+      const aeroDates = new Set(pollenRows.filter((r) => r.provider === AEROBIOLOGY_PROVIDER).map((r) => r.date))
+      return pollenRows
+        .filter((r) => r.provider === AEROBIOLOGY_PROVIDER || !aeroDates.has(r.date))
+        .map((r) => ({ date: r.date, pollenLevel: r.pollenLevel, sporeLevel: r.sporeLevel }))
+    })(),
     planPeriods,
     backfills,
     crossReactivityGroups: crossReactivityRows.map((r) => ({

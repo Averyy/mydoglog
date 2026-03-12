@@ -36,15 +36,23 @@ export function sortBySignal(scores: IngredientScore[], mode: SignalMode): Ingre
   })
 }
 
+const VALID_SIGNAL_MODES = new Set<string>(["both", "stool", "itch"])
+export function isValidSignalMode(value: string | null | undefined): value is SignalMode {
+  return typeof value === "string" && VALID_SIGNAL_MODES.has(value)
+}
+
 export function IngredientAnalysisSection({
   correlation,
   loading,
+  signalMode,
+  onSignalModeChange,
 }: {
   correlation: ExtendedCorrelationResult | null
   loading: boolean
+  signalMode: SignalMode
+  onSignalModeChange: (mode: SignalMode) => void
 }): React.ReactElement {
   const [fatsExpanded, setFatsExpanded] = useState(true)
-  const [signalMode, setSignalMode] = useState<SignalMode>("both")
 
   const hasData = !loading && correlation && correlation.totalDays > 0
   const hasScores = hasData && correlation.scores.length > 0
@@ -125,7 +133,7 @@ export function IngredientAnalysisSection({
                 <button
                   key={value}
                   type="button"
-                  onClick={() => setSignalMode(value)}
+                  onClick={() => onSignalModeChange(value)}
                   className={cn(
                     "px-3.5 py-1.5 text-xs font-medium transition-colors",
                     signalMode === value

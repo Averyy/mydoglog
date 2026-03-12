@@ -3,7 +3,8 @@
 import { useState, useEffect, useCallback, useMemo, useRef, Suspense } from "react"
 import { useSearchParams, useRouter } from "next/navigation"
 import { useDogPage } from "@/components/dog-page-provider"
-import { IngredientAnalysisSection, type ExtendedCorrelationResult } from "@/components/ingredient-analysis-section"
+import { IngredientAnalysisSection, isValidSignalMode, type ExtendedCorrelationResult } from "@/components/ingredient-analysis-section"
+import type { SignalMode } from "@/components/ingredient-row"
 import { InsightsTimeline } from "@/components/insights-timeline"
 import { Button } from "@/components/ui/button"
 import { isValidRange } from "@/lib/timeline-types"
@@ -35,10 +36,24 @@ function InsightsPageInner(): React.ReactElement {
   const [timelineLoading, setTimelineLoading] = useState(true)
   const [error, setError] = useState(false)
   const [timelineError, setTimelineError] = useState(false)
-  const [timelineRange, setTimelineRange] = useState<TimelineRange>(
-    isValidRange(initialRange) ? initialRange : "30d",
-  )
+  const [timelineRange, setTimelineRange] = useState<TimelineRange>(() => {
+    if (isValidRange(initialRange)) return initialRange
+    if (typeof window !== "undefined") {
+      const stored = localStorage.getItem("insights-range")
+      if (isValidRange(stored)) return stored
+    }
+    return "30d"
+  })
   const [timelineRetry, setTimelineRetry] = useState(0)
+  const [signalMode, setSignalMode] = useState<SignalMode>(() => {
+    const urlMode = searchParams.get("signal")
+    if (isValidSignalMode(urlMode)) return urlMode
+    if (typeof window !== "undefined") {
+      const stored = localStorage.getItem("insights-signal")
+      if (isValidSignalMode(stored)) return stored
+    }
+    return "both"
+  })
 
   // Cache timeline responses by range to avoid re-fetching
   const timelineCacheRef = useRef<Map<TimelineRange, TimelineData>>(new Map())
@@ -144,6 +159,7 @@ function InsightsPageInner(): React.ReactElement {
           range={timelineRange}
           onRangeChange={(range) => {
             setTimelineRange(range)
+            localStorage.setItem("insights-range", range)
             const params = new URLSearchParams(searchParams.toString())
             params.set("range", range)
             router.replace(`?${params.toString()}`, { scroll: false })
@@ -154,7 +170,18 @@ function InsightsPageInner(): React.ReactElement {
           }}
         />
       </div>
-      <IngredientAnalysisSection correlation={correlation} loading={loading} />
+      <IngredientAnalysisSection
+        correlation={correlation}
+        loading={loading}
+        signalMode={signalMode}
+        onSignalModeChange={(mode) => {
+          setSignalMode(mode)
+          localStorage.setItem("insights-signal", mode)
+          const params = new URLSearchParams(searchParams.toString())
+          params.set("signal", mode)
+          router.replace(`?${params.toString()}`, { scroll: false })
+        }}
+      />
     </div>
   )
 }
