@@ -97,45 +97,6 @@ export const quantityUnitEnum = pgEnum("quantity_unit", [
 
 
 
-export const poopColorEnum = pgEnum("poop_color", [
-  "brown",
-  "dark_brown",
-  "black",
-  "red",
-  "orange",
-  "yellow",
-  "green",
-  "grey",
-  "white_spots",
-])
-
-
-export const timeSinceMealEnum = pgEnum("time_since_meal", [
-  "lt_30min",
-  "1_2hr",
-  "3_6hr",
-  "6plus_hr",
-  "empty_stomach",
-])
-
-export const symptomTypeEnum = pgEnum("symptom_type", [
-  "gas",
-  "ear_issue",
-  "scooting",
-  "hot_spot",
-  "grass_eating",
-  "lethargy",
-  "appetite_change",
-  "coat_issue",
-  "other",
-])
-
-export const symptomSeverityEnum = pgEnum("symptom_severity", [
-  "mild",
-  "moderate",
-  "severe",
-])
-
 export const medicationCategoryEnum = pgEnum("medication_category", [
   "allergy",
   "parasite",
@@ -381,7 +342,8 @@ export const feedingPeriods = pgTable(
     planName: text("plan_name"),
     isBackfill: boolean("is_backfill").notNull().default(false),
     approximateDuration: text("approximate_duration"),
-    notes: text("notes"),
+    transitionDays: integer("transition_days"),
+    previousPlanGroupId: text("previous_plan_group_id"),
     createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
     updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
   },
@@ -441,9 +403,6 @@ export const poopLogs = pgTable(
     date: date("date").notNull(),
     datetime: timestamp("datetime", { withTimezone: true }),
     firmnessScore: integer("firmness_score").notNull(),
-    color: poopColorEnum("color"),
-    urgency: boolean("urgency"),
-    photoUrl: text("photo_url"),
     notes: text("notes"),
     createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
   },
@@ -464,51 +423,10 @@ export const itchinessLogs = pgTable(
     datetime: timestamp("datetime", { withTimezone: true }),
     score: integer("score").notNull(),
     bodyAreas: text("body_areas").array(),
-    photoUrl: text("photo_url"),
     notes: text("notes"),
     createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
   },
   (table) => [index("idx_itchiness_logs_dog_date").on(table.dogId, table.date)],
-)
-
-export const symptomLogs = pgTable(
-  "symptom_logs",
-  {
-    id: text("id")
-      .primaryKey()
-      .$defaultFn(() => crypto.randomUUID()),
-    dogId: text("dog_id")
-      .notNull()
-      .references(() => dogs.id, { onDelete: "cascade" }),
-    date: date("date").notNull(),
-    datetime: timestamp("datetime", { withTimezone: true }),
-    type: symptomTypeEnum("type"),
-    severity: symptomSeverityEnum("severity"),
-    photoUrl: text("photo_url"),
-    notes: text("notes"),
-    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
-  },
-  (table) => [index("idx_symptom_logs_dog_date").on(table.dogId, table.date)],
-)
-
-export const accidentalExposures = pgTable(
-  "accidental_exposures",
-  {
-    id: text("id")
-      .primaryKey()
-      .$defaultFn(() => crypto.randomUUID()),
-    dogId: text("dog_id")
-      .notNull()
-      .references(() => dogs.id, { onDelete: "cascade" }),
-    date: date("date").notNull(),
-    datetime: timestamp("datetime", { withTimezone: true }).notNull(),
-    description: text("description"),
-    ingredientIds: text("ingredient_ids").array(),
-    freeTextIngredients: text("free_text_ingredients"),
-    notes: text("notes"),
-    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
-  },
-  (table) => [index("idx_exposures_dog_date").on(table.dogId, table.date)],
 )
 
 export const medicationProducts = pgTable("medication_products", {
@@ -595,7 +513,8 @@ export type NewDog = typeof dogs.$inferInsert
 export type FeedingPeriod = typeof feedingPeriods.$inferSelect
 export type PoopLog = typeof poopLogs.$inferSelect
 export type ItchinessLog = typeof itchinessLogs.$inferSelect
-export type SymptomLog = typeof symptomLogs.$inferSelect
 export type MedicationProduct = typeof medicationProducts.$inferSelect
 export type Medication = typeof medications.$inferSelect
 export type FoodScorecard = typeof foodScorecards.$inferSelect
+export type MealSlot = (typeof mealSlotEnum.enumValues)[number]
+export type QuantityUnit = (typeof quantityUnitEnum.enumValues)[number]

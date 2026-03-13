@@ -13,7 +13,6 @@ import {
   brands,
   poopLogs,
   itchinessLogs,
-  accidentalExposures,
   foodScorecards,
   dailyPollen,
   ingredientCrossReactivity,
@@ -61,7 +60,6 @@ export async function fetchCorrelationInput(
     treatRows,
     poopRows,
     itchRows,
-    exposureRows,
     crossReactivityRows,
   ] = await Promise.all([
     // Non-backfill feeding periods (for day-by-day correlation)
@@ -75,6 +73,7 @@ export async function fetchCorrelationInput(
         createdAt: feedingPeriods.createdAt,
         quantity: feedingPeriods.quantity,
         quantityUnit: feedingPeriods.quantityUnit,
+        transitionDays: feedingPeriods.transitionDays,
       })
       .from(feedingPeriods)
       .where(
@@ -149,20 +148,6 @@ export async function fetchCorrelationInput(
         ),
       ),
 
-    // Accidental exposures in window
-    db
-      .select({
-        date: accidentalExposures.date,
-      })
-      .from(accidentalExposures)
-      .where(
-        and(
-          eq(accidentalExposures.dogId, dogId),
-          gte(accidentalExposures.date, windowStart),
-          lte(accidentalExposures.date, windowEnd),
-        ),
-      ),
-
     // Cross-reactivity groups (cached)
     getCrossReactivityGroups(),
   ])
@@ -177,6 +162,7 @@ export async function fetchCorrelationInput(
     createdAt: r.createdAt.toISOString(),
     quantity: Number(r.quantity),
     quantityUnit: r.quantityUnit!,
+    transitionDays: r.transitionDays,
   }))
 
   // -- Build planPeriods (same grouping as feeding.ts groupPlanPeriods) --
@@ -342,7 +328,6 @@ export async function fetchCorrelationInput(
     productIngredientMap,
     poopLogs: poopRows,
     itchinessLogs: itchRows,
-    accidentalExposures: exposureRows,
     scorecards: scorecardRows,
     pollenLogs: (() => {
       const aeroDates = new Set(pollenRows.filter((r) => r.provider === AEROBIOLOGY_PROVIDER).map((r) => r.date))

@@ -2,6 +2,7 @@ import { db, feedingPeriods, products, brands } from "@/lib/db"
 import { eq, sql } from "drizzle-orm"
 import { resolveActivePlan, type PlanPeriod } from "@/lib/feeding"
 import { getToday } from "@/lib/utils"
+import { shiftDate } from "@/lib/date-utils"
 import type { ActivePlan, FeedingPlanItem } from "@/lib/types"
 
 /**
@@ -27,6 +28,8 @@ export async function getActivePlanForDog(
       quantity: feedingPeriods.quantity,
       quantityUnit: feedingPeriods.quantityUnit,
       mealSlot: feedingPeriods.mealSlot,
+      transitionDays: feedingPeriods.transitionDays,
+      previousPlanGroupId: feedingPeriods.previousPlanGroupId,
       productName: products.name,
       brandName: brands.name,
       imageUrl: sql<string | null>`${products.imageUrls}[1]`,
@@ -52,8 +55,19 @@ export async function getActivePlanForDog(
   const activePlanGroupId = resolveActivePlan(planPeriods, today)
   if (!activePlanGroupId) return null
 
-  const activeRows = rows.filter((r) => r.planGroupId === activePlanGroupId)
+  // Filter to active plan group AND active date range
+  const activeRows = rows.filter((r) => {
+    if (r.planGroupId !== activePlanGroupId) return false
+    if (r.startDate > today) return false
+    if (r.endDate !== null && r.endDate < today) return false
+    return true
+  })
   if (activeRows.length === 0) return null
+
+  // Separate ongoing rows (targetItems) from single-day transition rows
+  const ongoingRows = rows.filter(
+    (r) => r.planGroupId === activePlanGroupId && r.endDate === null,
+  )
 
   const items: FeedingPlanItem[] = activeRows.map((row) => ({
     id: row.id,
@@ -68,11 +82,42 @@ export async function getActivePlanForDog(
     mealSlot: row.mealSlot,
   }))
 
+  const targetItems: FeedingPlanItem[] = ongoingRows.map((row) => ({
+    id: row.id,
+    productId: row.productId,
+    productName: row.productName,
+    brandName: row.brandName,
+    imageUrl: row.imageUrl,
+    type: row.productType,
+    format: row.productFormat,
+    quantity: row.quantity,
+    quantityUnit: row.quantityUnit,
+    mealSlot: row.mealSlot,
+  }))
+
+  // Transition metadata from the ongoing rows (all share the same values)
+  const transitionDays = ongoingRows[0]?.transitionDays ?? null
+  const previousPlanGroupId = ongoingRows[0]?.previousPlanGroupId ?? null
+
+  // Determine if transition is still in progress:
+  // Compute deterministically from earliest startDate + transitionDays
+  const allGroupRows = rows.filter((r) => r.planGroupId === activePlanGroupId)
+  const earliestStart = allGroupRows.reduce(
+    (min, r) => (r.startDate < min ? r.startDate : min),
+    allGroupRows[0].startDate,
+  )
+  const isTransitioning = transitionDays != null && transitionDays > 0
+    && shiftDate(earliestStart, transitionDays) > today
+
   return {
     planGroupId: activeRows[0].planGroupId,
     planName: activeRows[0].planName,
-    startDate: activeRows[0].startDate,
+    startDate: earliestStart,
     endDate: activeRows[0].endDate,
     items,
+    transitionDays,
+    previousPlanGroupId,
+    isTransitioning,
+    targetItems: isTransitioning ? targetItems : undefined,
   }
 }

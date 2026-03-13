@@ -138,6 +138,13 @@ export function PlanGroupCard({
           </ResponsivePopover>
         </div>
 
+        {/* Transition badge */}
+        {isCurrent && group.transitionDays != null && group.transitionDays > 0 && (
+          <Badge variant="outline" className="shrink-0 text-[10px] border-primary text-primary">
+            Transitioning
+          </Badge>
+        )}
+
         {/* Badges + edit (non-current backfills only) */}
         {!isCurrent && group.isBackfill && (
           <div className="flex items-center gap-2 shrink-0">

@@ -92,7 +92,6 @@ export interface DayOutcome {
   scorecardPoopFallback: number | null
   /** 3-day rolling max of max(pollenLevel, sporeLevel ?? 0). Null when no pollen data. */
   effectivePollenLevel: number | null
-  hasAccidentalExposure: boolean
 }
 
 /** Full snapshot for one calendar day. */
@@ -101,7 +100,6 @@ export interface DaySnapshot {
   ingredients: ActiveIngredient[]
   outcome: DayOutcome
   isTransitionBuffer: boolean
-  isExposureBuffer: boolean
   isBackfill: boolean
 }
 
@@ -123,7 +121,6 @@ export interface IngredientScore {
   badItchDayCount: number
   goodItchDayCount: number
   confidence: Confidence
-  exposureFraction: number
   bestPosition: number
   positionCategory: PositionCategory
   appearedInTreats: boolean
@@ -156,13 +153,11 @@ export interface IngredientProductEntry {
 
 export interface CorrelationOptions {
   transitionBufferDays: number
-  exposureBufferDays: number
   includeScorecardFallback: boolean
 }
 
 export const DEFAULT_CORRELATION_OPTIONS: CorrelationOptions = {
   transitionBufferDays: 5,
-  exposureBufferDays: 5,
   includeScorecardFallback: true,
 }
 
@@ -198,6 +193,7 @@ export interface RawFeedingPeriod {
   createdAt: string
   quantity: number
   quantityUnit: string
+  transitionDays?: number | null
 }
 
 export interface RawTreatLog {
@@ -215,10 +211,6 @@ export interface RawPoopLog {
 export interface RawItchinessLog {
   date: string
   score: number
-}
-
-export interface RawAccidentalExposure {
-  date: string
 }
 
 export interface RawScorecard {
@@ -255,7 +247,6 @@ export interface CorrelationInput {
   productIngredientMap: Map<string, ProductIngredientRecord[]>
   poopLogs: RawPoopLog[]
   itchinessLogs: RawItchinessLog[]
-  accidentalExposures: RawAccidentalExposure[]
   scorecards: RawScorecard[]
   pollenLogs: RawPollenLog[]
   planPeriods: PlanPeriod[]

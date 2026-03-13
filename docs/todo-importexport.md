@@ -22,12 +22,7 @@ User-data tables only (product tables are loaded by build.py independently):
 - `itchiness_logs`
 - `treat_logs`
 - `medications`
-- `daily_checkins`
-- `symptom_logs`
-- `vomit_logs`
-- `accidental_exposures`
-- `daily_weather` (when weather feature lands)
-- `daily_pollen` (when weather feature lands)
+- `daily_pollen`
 
 Auth tables (`user`, `session`, `account`, `verification`) are NOT synced — each environment has its own auth.
 

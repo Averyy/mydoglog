@@ -52,7 +52,7 @@ export interface GanttBarData {
   label: string
   startDate: string
   endDate: string
-  category: "food" | "medication" | "supplement"
+  category: "food" | "medication" | "supplement" | "transition"
   meta?: {
     brandName?: string
     quantity?: string
@@ -61,6 +61,10 @@ export interface GanttBarData {
     interval?: string
     dosageForm?: string
     imageUrl?: string
+  }
+  transitionMeta?: {
+    oldFoodName: string
+    newFoodName: string
   }
 }
 

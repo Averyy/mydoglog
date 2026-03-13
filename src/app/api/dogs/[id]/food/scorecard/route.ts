@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server"
 import { requireDogOwnership, isNextResponse } from "@/lib/api-helpers"
 import { db, feedingPeriods, products, brands, foodScorecards, poopLogs, itchinessLogs, treatLogs } from "@/lib/db"
 import { eq, sql, desc } from "drizzle-orm"
-import { resolveActivePlan, type PlanPeriod } from "@/lib/feeding"
+import { resolveActivePlan, buildFeedingGroupMap, type PlanPeriod } from "@/lib/feeding"
 import { fetchCorrelationInput, fetchIngredientProductMap, buildGiIngredientProductMap } from "@/lib/correlation/query"
 import { runCorrelation } from "@/lib/correlation/engine"
 import { findSaltPosition, splitIngredients } from "@/lib/ingredients"
@@ -10,7 +10,7 @@ import { DEFAULT_CORRELATION_OPTIONS } from "@/lib/correlation/types"
 import type { IngredientProductEntry } from "@/lib/correlation/types"
 import { getToday } from "@/lib/utils"
 import { avgFromRange } from "@/lib/food-helpers"
-import type { FeedingPlanGroup, FeedingPlanItem, LogStats } from "@/lib/types"
+import type { FeedingPlanGroup, LogStats } from "@/lib/types"
 
 type RouteParams = { params: Promise<{ id: string }> }
 
@@ -147,6 +147,8 @@ export async function GET(
         quantityUnit: feedingPeriods.quantityUnit,
         mealSlot: feedingPeriods.mealSlot,
         createdAt: feedingPeriods.createdAt,
+        transitionDays: feedingPeriods.transitionDays,
+        previousPlanGroupId: feedingPeriods.previousPlanGroupId,
         productName: products.name,
         brandName: brands.name,
         imageUrl: sql<string | null>`${products.imageUrls}[1]`,
@@ -160,47 +162,7 @@ export async function GET(
       .orderBy(desc(feedingPeriods.startDate), desc(feedingPeriods.createdAt))
 
     // Group by planGroupId
-    const groupMap = new Map<string, FeedingPlanGroup>()
-
-    for (const row of rows) {
-      let group = groupMap.get(row.planGroupId)
-      if (!group) {
-        group = {
-          planGroupId: row.planGroupId,
-          planName: row.planName,
-          startDate: row.startDate,
-          endDate: row.endDate,
-          isBackfill: row.isBackfill,
-          approximateDuration: row.approximateDuration,
-          items: [],
-          treats: [],
-          scorecard: null,
-          logStats: null,
-        }
-        groupMap.set(row.planGroupId, group)
-      }
-
-      if (row.startDate < group.startDate) group.startDate = row.startDate
-      if (!row.endDate || !group.endDate) {
-        group.endDate = null
-      } else if (row.endDate > group.endDate) {
-        group.endDate = row.endDate
-      }
-
-      const item: FeedingPlanItem = {
-        id: row.id,
-        productId: row.productId,
-        productName: row.productName,
-        brandName: row.brandName,
-        imageUrl: row.imageUrl,
-        type: row.productType,
-        format: row.productFormat,
-        quantity: row.quantity,
-        quantityUnit: row.quantityUnit,
-        mealSlot: row.mealSlot,
-      }
-      group.items.push(item)
-    }
+    const groupMap = buildFeedingGroupMap(rows)
 
     // Fetch per-date treat logs and bucket into plan groups
     const treatRows = await db

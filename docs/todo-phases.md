@@ -23,19 +23,18 @@ Living checklist. Update as work progresses.
 - [ ] Extend correlation engine: medication on/off comparison (medication is the #1 confounding variable for itch)
 - [ ] Set up cron schedule on deploy — daily 14:00 UTC, `POST /api/cron/pollen` with `Authorization: Bearer $CRON_SECRET`. Until then, run manually.
 
-## Phase 4.5: Food Transition
+## Phase 4.5: Food Transition ✅ (Complete)
 
-See `TODO-food-transition.md` for full spec.
-
-- [ ] Schema: `transitionDays` + `previousPlanGroupId` columns on `feedingPeriods`
-- [ ] Transition quantity math (`computeTransitionSchedule`, formula: `newFraction = day / (N + 1)`)
-- [ ] API: generate per-day feeding period rows with correct transition quantities, clean up orphaned future rows
-- [ ] Routine editor: detect main food change → "Next →" → transition step (0-7 day selector, live quantity preview)
-- [ ] Daily check-in pre-fill: fix `getActivePlanForDog` date filtering, add `targetItems` for editor pre-fill
-- [ ] Food page: "Transitioning — Day X of N" badge on active card, dedup transition rows in history, "End transition" button
-- [ ] Correlation engine: use `transitionDays` for buffer duration, suppress double-buffer at transition end
-- [ ] Gantt chart: single striped transition band (constructed before `mergeAdjacentBars`), `--gantt-transition` token
-- [ ] Fix consumers: food list GET dedup, recent products filter excludes single-day rows
+- Gradual food transition (0-7 days) when switching main food, with per-day mixed quantity rows
+- `transitionDays` + `previousPlanGroupId` columns on `feedingPeriods`, migration applied
+- `computeTransitionSchedule` pure function with formula `newFraction = day / (N + 1)`
+- Routine editor detects main food change → "Next →" → transition step with live quantity preview
+- `getActivePlanForDog` date filtering fix, `targetItems` for editor pre-fill during active transition
+- Food page: "Transitioning — Day X of N" badge, deduped history, "End transition" button + API
+- Correlation engine uses `transitionDays` for buffer duration, suppresses double-buffer at transition end
+- Gantt chart: single striped transition band with `--gantt-transition` token
+- Shared `buildFeedingGroupMap()` helper extracted to `src/lib/feeding.ts` (food list GET + scorecard dedup)
+- Recent products filter excludes single-day transition rows
 
 ## Phase 5: Sharing & Pack Access
 

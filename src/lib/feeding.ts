@@ -3,6 +3,113 @@
  * No database access — all logic is testable with plain data.
  */
 
+import type { FeedingPlanGroup, FeedingPlanItem } from "@/lib/types"
+
+/** Minimal row shape accepted by buildFeedingGroupMap. */
+export interface FeedingGroupRow {
+  id: string
+  planGroupId: string
+  planName: string | null
+  startDate: string
+  endDate: string | null
+  isBackfill: boolean
+  approximateDuration: string | null
+  productId: string
+  quantity: string | null
+  quantityUnit: string | null
+  mealSlot: string | null
+  transitionDays: number | null
+  previousPlanGroupId: string | null
+  productName: string
+  brandName: string
+  imageUrl: string | null
+  productType: string | null
+  productFormat: string | null
+}
+
+/**
+ * Build a Map<planGroupId, FeedingPlanGroup> from feeding period rows.
+ *
+ * Handles:
+ * - Group initialization with first-seen row
+ * - startDate/endDate merging (earliest start, latest end, null if any ongoing)
+ * - Transition filtering (only ongoing items for groups with transitionDays)
+ * - productId+mealSlot dedup
+ * - transitionFromFoodName resolution across groups
+ */
+export function buildFeedingGroupMap(
+  rows: FeedingGroupRow[],
+): Map<string, FeedingPlanGroup> {
+  const groupMap = new Map<string, FeedingPlanGroup>()
+
+  for (const row of rows) {
+    let group = groupMap.get(row.planGroupId)
+    if (!group) {
+      group = {
+        planGroupId: row.planGroupId,
+        planName: row.planName,
+        startDate: row.startDate,
+        endDate: row.endDate,
+        isBackfill: row.isBackfill,
+        approximateDuration: row.approximateDuration,
+        items: [],
+        treats: [],
+        scorecard: null,
+        logStats: null,
+        transitionDays: row.transitionDays,
+        previousPlanGroupId: row.previousPlanGroupId,
+      }
+      groupMap.set(row.planGroupId, group)
+    }
+
+    // Use earliest startDate, latest endDate for the group
+    if (row.startDate < group.startDate) group.startDate = row.startDate
+    if (!row.endDate || !group.endDate) {
+      group.endDate = null
+    } else if (row.endDate > group.endDate) {
+      group.endDate = row.endDate
+    }
+
+    // For groups with transitions, only include ongoing (endDate IS NULL) items
+    if (group.transitionDays && group.transitionDays > 0 && row.endDate !== null) {
+      continue
+    }
+
+    const item: FeedingPlanItem = {
+      id: row.id,
+      productId: row.productId,
+      productName: row.productName,
+      brandName: row.brandName,
+      imageUrl: row.imageUrl,
+      type: row.productType,
+      format: row.productFormat,
+      quantity: row.quantity,
+      quantityUnit: row.quantityUnit,
+      mealSlot: row.mealSlot,
+    }
+
+    // Dedup: skip if same productId+mealSlot already added
+    if (!group.items.some((existing) => existing.productId === item.productId && existing.mealSlot === item.mealSlot)) {
+      group.items.push(item)
+    }
+  }
+
+  // Resolve transitionFromFoodName for groups with previousPlanGroupId
+  for (const group of groupMap.values()) {
+    if (group.previousPlanGroupId) {
+      const prevGroup = groupMap.get(group.previousPlanGroupId)
+      if (prevGroup && prevGroup.items.length > 0) {
+        const mainFoods = prevGroup.items.filter((i) => i.type === "food")
+        group.transitionFromFoodName = mainFoods.length > 0
+          ? mainFoods.map((i) => i.productName).join(" + ")
+          : prevGroup.items[0].productName
+      }
+    }
+  }
+
+  return groupMap
+}
+
 export interface PlanPeriod {
   planGroupId: string
   startDate: string // YYYY-MM-DD
@@ -52,40 +159,6 @@ export function resolveActivePlan(
   })
 
   return scored[0].planGroupId
-}
-
-/**
- * Group periods by planGroupId and return the group's effective date range.
- * Takes the earliest startDate and latest endDate (null if any period is ongoing).
- */
-export function groupPlanPeriods(
-  periods: PlanPeriod[],
-): Map<string, { startDate: string; endDate: string | null; createdAt: string }> {
-  const groups = new Map<
-    string,
-    { startDate: string; endDate: string | null; createdAt: string }
-  >()
-
-  for (const p of periods) {
-    const existing = groups.get(p.planGroupId)
-    if (!existing) {
-      groups.set(p.planGroupId, {
-        startDate: p.startDate,
-        endDate: p.endDate,
-        createdAt: p.createdAt,
-      })
-    } else {
-      if (p.startDate < existing.startDate) existing.startDate = p.startDate
-      if (!p.endDate || !existing.endDate) {
-        existing.endDate = null
-      } else if (p.endDate > existing.endDate) {
-        existing.endDate = p.endDate
-      }
-      if (p.createdAt > existing.createdAt) existing.createdAt = p.createdAt
-    }
-  }
-
-  return groups
 }
 
 const DURATION_PATTERNS: Array<{ pattern: RegExp; multiplier: number }> = [

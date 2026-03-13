@@ -73,6 +73,11 @@ export function PastRoutineCard({
           <p className="text-sm font-semibold text-foreground">
             {formatDateRange(group.startDate, group.endDate)}
           </p>
+          {group.transitionDays != null && group.transitionDays > 0 && (
+            <p className="text-xs text-muted-foreground">
+              {group.transitionDays}-day transition{group.transitionFromFoodName ? ` from ${group.transitionFromFoodName}` : ""}
+            </p>
+          )}
         </div>
         <div className="flex flex-wrap items-center gap-1.5 w-full xs:flex-nowrap sm:w-auto sm:gap-2 sm:shrink-0">
           <div className="flex basis-[calc(50%-0.1875rem)] flex-1 items-center gap-1.5 rounded-md bg-score-strip px-2 py-1.5 xs:basis-auto">

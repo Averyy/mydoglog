@@ -58,7 +58,6 @@ const emptyOutcome: DayOutcome = {
   itchScore: null,
   scorecardPoopFallback: null,
   effectivePollenLevel: null,
-  hasAccidentalExposure: false,
 }
 
 function makeSnapshot(overrides: Partial<DaySnapshot> = {}): DaySnapshot {
@@ -67,7 +66,6 @@ function makeSnapshot(overrides: Partial<DaySnapshot> = {}): DaySnapshot {
     ingredients: [],
     outcome: { ...emptyOutcome },
     isTransitionBuffer: false,
-    isExposureBuffer: false,
     isBackfill: false,
     ...overrides,
   }
@@ -84,7 +82,6 @@ function makeInput(overrides: Partial<CorrelationInput> = {}): CorrelationInput 
     poopLogs: [],
     itchinessLogs: [],
 
-    accidentalExposures: [],
     scorecards: [],
     pollenLogs: [],
     planPeriods: [],
@@ -566,24 +563,6 @@ describe("buildDaySnapshots", () => {
     expect(snaps[6].isTransitionBuffer).toBe(false) // June 7
   })
 
-  it("marks exposure buffer after accidental exposure", () => {
-    const input = makeInput({
-      windowStart: "2024-06-01",
-      windowEnd: "2024-06-07",
-      accidentalExposures: [{ date: "2024-06-03" }],
-    })
-    const snaps = buildDaySnapshots(
-      input,
-      { ...opts, exposureBufferDays: 3 },
-    )
-    expect(snaps[0].isExposureBuffer).toBe(false) // June 1
-    expect(snaps[1].isExposureBuffer).toBe(false) // June 2
-    expect(snaps[2].isExposureBuffer).toBe(true) // June 3 — exposure day
-    expect(snaps[3].isExposureBuffer).toBe(true) // June 4
-    expect(snaps[4].isExposureBuffer).toBe(true) // June 5
-    expect(snaps[5].isExposureBuffer).toBe(false) // June 6
-  })
-
   it("days outside feeding period have empty ingredients", () => {
     const input = makeInput({
       windowStart: "2024-06-01",
@@ -797,25 +776,6 @@ describe("computeIngredientScores", () => {
     expect(scores[0].excludedDays).toBe(1)
   })
 
-  it("excludes exposure buffer days from scoring", () => {
-    const snapshots: DaySnapshot[] = [
-      makeSnapshot({
-        date: "2024-06-01",
-        ingredients: [chickenActive],
-        outcome: { ...emptyOutcome, poopScore: 6 },
-        isExposureBuffer: true,
-      }),
-      makeSnapshot({
-        date: "2024-06-02",
-        ingredients: [chickenActive],
-        outcome: { ...emptyOutcome, poopScore: 3 },
-      }),
-    ]
-    const scores = computeIngredientScores(snapshots, opts)
-    expect(scores[0].rawAvgPoopScore).toBe(3)
-    expect(scores[0].dayCount).toBe(1)
-  })
-
   it("uses scorecard fallback when poopScore is null", () => {
     const snapshots: DaySnapshot[] = [
       makeSnapshot({
@@ -845,40 +805,6 @@ describe("computeIngredientScores", () => {
     const scores = computeIngredientScores(snapshots, opts)
     expect(scores[0].rawAvgPoopScore).toBe(2)
     expect(scores[0].daysWithEventLogs).toBe(1)
-  })
-
-  it("computes exposureFraction correctly", () => {
-    const riceActive: ActiveIngredient = {
-      key: "rice",
-      ingredientIds: ["ing-2"],
-      productIds: ["prod-a"],
-      bestPosition: 2,
-      worstPosition: 2,
-      ingredientCount: 1,
-      fromTreat: false,
-      formType: null,
-      sourceGroup: null,
-      volumePositionWeight: positionWeight(2),
-    }
-    const snapshots: DaySnapshot[] = [
-      makeSnapshot({
-        date: "2024-06-01",
-        ingredients: [chickenActive, riceActive],
-        outcome: { ...emptyOutcome, poopScore: 3 },
-      }),
-      makeSnapshot({
-        date: "2024-06-02",
-        ingredients: [chickenActive],
-        outcome: { ...emptyOutcome, poopScore: 4 },
-      }),
-    ]
-    const scores = computeIngredientScores(snapshots, opts)
-    const chickenScore = scores.find((s) => s.key === "chicken")!
-    const riceScore = scores.find((s) => s.key === "rice")!
-    // chicken appeared on 2 of 2 scoreable days
-    expect(chickenScore.exposureFraction).toBe(1)
-    // rice appeared on 1 of 2 scoreable days
-    expect(riceScore.exposureFraction).toBe(0.5)
   })
 
   it("computes badDayCount and goodDayCount correctly", () => {
@@ -1829,7 +1755,7 @@ describe("flagCrossReactivity", () => {
       badItchDayCount: 0,
       goodItchDayCount: 0,
       confidence: "medium",
-      exposureFraction: 0.5,
+
       bestPosition: 1,
       positionCategory: "primary",
       appearedInTreats: false,
@@ -2059,7 +1985,7 @@ describe("mergeScoresForGI", () => {
       badItchDayCount: 0,
       goodItchDayCount: 0,
       confidence: "medium",
-      exposureFraction: 0.5,
+
       bestPosition: 1,
       positionCategory: "primary",
       appearedInTreats: false,

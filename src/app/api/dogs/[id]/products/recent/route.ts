@@ -27,7 +27,9 @@ export async function GET(
         SELECT fp.product_id, MAX(COALESCE(fp.end_date, CURRENT_DATE)) AS last_used
         FROM feeding_periods fp
         JOIN products p ON p.id = fp.product_id
-        WHERE fp.dog_id = ${dogId} ${typeFilter}
+        WHERE fp.dog_id = ${dogId}
+          AND (fp.start_date != fp.end_date OR fp.end_date IS NULL)
+          ${typeFilter}
         GROUP BY fp.product_id
 
         UNION ALL

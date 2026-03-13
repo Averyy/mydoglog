@@ -40,8 +40,6 @@ export async function GET(
 
 interface PoopEntry {
   firmnessScore: number
-  color?: string
-  urgency?: boolean
   notes?: string
 }
 
@@ -49,7 +47,6 @@ interface PoopPostBody {
   entries: PoopEntry[]
   date: string
   datetime?: string
-  photoUrl?: string
 }
 
 export async function POST(
@@ -91,9 +88,6 @@ export async function POST(
       date: body.date,
       datetime,
       firmnessScore: entry.firmnessScore,
-      color: entry.color as typeof poopLogs.$inferInsert.color,
-      urgency: entry.urgency ?? null,
-      photoUrl: body.photoUrl ?? null,
       notes: entry.notes?.trim() ?? null,
     }))
 

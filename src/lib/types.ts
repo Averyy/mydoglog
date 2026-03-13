@@ -33,6 +33,9 @@ export interface FeedingPlanGroup {
   treats: TreatSummary[]
   scorecard: ScorecardSummary | null
   logStats: LogStats | null
+  transitionDays?: number | null
+  previousPlanGroupId?: string | null
+  transitionFromFoodName?: string | null
 }
 
 /** Aggregated stats from actual daily logs during a feeding period. */
@@ -70,6 +73,12 @@ export interface ActivePlan {
   startDate: string
   endDate: string | null
   items: FeedingPlanItem[]
+  transitionDays?: number | null
+  previousPlanGroupId?: string | null
+  /** Computed: true when transitionDays > 0 and transition is still in progress. */
+  isTransitioning?: boolean
+  /** Items from the ongoing (post-transition) rows only. */
+  targetItems?: FeedingPlanItem[]
 }
 
 export interface MedicationSummary {

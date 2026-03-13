@@ -116,6 +116,8 @@ export async function GET(
             quantityUnit: feedingPeriods.quantityUnit,
             isBackfill: feedingPeriods.isBackfill,
             planGroupId: feedingPeriods.planGroupId,
+            transitionDays: feedingPeriods.transitionDays,
+            previousPlanGroupId: feedingPeriods.previousPlanGroupId,
           })
           .from(feedingPeriods)
           .innerJoin(products, eq(feedingPeriods.productId, products.id))
@@ -214,12 +216,45 @@ export async function GET(
     // --- Build Gantt bars ---
     const ganttBars: GanttBarData[] = []
 
+    // Track plan groups with transitions to create transition bars
+    const transitionGroups = new Map<string, {
+      transitionDays: number
+      previousPlanGroupId: string
+      startDate: string
+      newFoodNames: string[]
+    }>()
+
     for (const fp of feedingRows) {
       const periodEnd = fp.endDate ?? today
       if (fp.productType === "treat") continue
 
+      // Skip single-day transition rows from Gantt (they'll become a transition bar)
+      if (fp.startDate === fp.endDate && fp.transitionDays && fp.transitionDays > 0) {
+        // Track transition group metadata, keeping the earliest startDate
+        const existing = transitionGroups.get(fp.planGroupId)
+        if (existing) {
+          if (fp.startDate < existing.startDate) existing.startDate = fp.startDate
+        } else if (fp.previousPlanGroupId) {
+          transitionGroups.set(fp.planGroupId, {
+            transitionDays: fp.transitionDays,
+            previousPlanGroupId: fp.previousPlanGroupId,
+            startDate: fp.startDate,
+            newFoodNames: [],
+          })
+        }
+        continue
+      }
+
       const category: "food" | "supplement" =
         fp.productType === "supplement" ? "supplement" : "food"
+
+      // Collect new food names for transition bars
+      if (fp.transitionDays && fp.transitionDays > 0 && fp.endDate === null && category === "food") {
+        const tg = transitionGroups.get(fp.planGroupId)
+        if (tg && !tg.newFoodNames.includes(fp.productName)) {
+          tg.newFoodNames.push(fp.productName)
+        }
+      }
 
       ganttBars.push({
         id: fp.id,
@@ -232,6 +267,33 @@ export async function GET(
           quantity: fp.quantity ?? undefined,
           quantityUnit: fp.quantityUnit ?? undefined,
           imageUrl: fp.imageUrls?.[0] ?? undefined,
+        },
+      })
+    }
+
+    // Create transition bars
+    for (const [planGroupId, tg] of transitionGroups) {
+      // Find old food names from previous plan group
+      const oldFoodNames = feedingRows
+        .filter((fp) =>
+          fp.planGroupId === tg.previousPlanGroupId &&
+          fp.productType === "food" &&
+          fp.startDate !== fp.endDate,
+        )
+        .map((fp) => fp.productName)
+        .filter((name, i, arr) => arr.indexOf(name) === i)
+
+      const transitionEndDate = shiftDate(tg.startDate, tg.transitionDays - 1)
+
+      ganttBars.push({
+        id: `transition-${planGroupId}`,
+        label: `${oldFoodNames.join(" + ")} → ${tg.newFoodNames.join(" + ")}`,
+        startDate: tg.startDate,
+        endDate: transitionEndDate,
+        category: "transition",
+        transitionMeta: {
+          oldFoodName: oldFoodNames.join(" + ") || "Previous food",
+          newFoodName: tg.newFoodNames.join(" + ") || "New food",
         },
       })
     }

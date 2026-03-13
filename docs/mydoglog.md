@@ -109,8 +109,8 @@ See `CLAUDE.md` for development rules and patterns.
 - Users → Dogs → all logging tables
 - **FeedingPeriods** grouped by `plan_group_id` (a routine = a set of concurrent products)
 - **FoodScorecards** attach to plan groups — only used for backfills (mandatory poop+itch ranges). Active plans derive scores from daily logs.
-- **PoopLogs, ItchinessLogs, TreatLogs, VomitLogs, SymptomLogs, Medications, AccidentalExposures** — all have `date` (required) + `datetime` (nullable). 1 entry/day = daily summary, 2+ = individual events.
-- **PollenLogs** — 1 per city per day, auto-collected
+- **PoopLogs, ItchinessLogs, TreatLogs, Medications** — all have `date` (required) + `datetime` (nullable). 1 entry/day = daily summary, 2+ = individual events.
+- **DailyPollen** — 1 per provider per city per day, auto-collected
 
 ### Poop Scoring
 

@@ -100,7 +100,7 @@ export function positionCategory(position: number): PositionCategory {
 // Date utilities (re-exported from shared module)
 // ---------------------------------------------------------------------------
 
-import { daysBetween, enumerateDates } from "@/lib/date-utils"
+import { enumerateDates } from "@/lib/date-utils"
 
 // ---------------------------------------------------------------------------
 // Gram estimation
@@ -286,7 +286,6 @@ interface DateIndex {
   itchByDate: Map<string, CorrelationInput["itchinessLogs"]>
   pollenByDate: Map<string, CorrelationInput["pollenLogs"]>
   treatByDate: Map<string, CorrelationInput["treatLogs"]>
-  exposureDates: Set<string>
   scorecardByGroupId: Map<string, CorrelationInput["scorecards"][number]>
 }
 
@@ -296,7 +295,6 @@ function buildDateIndex(input: CorrelationInput): DateIndex {
     itchByDate: indexByDate(input.itchinessLogs),
     pollenByDate: indexByDate(input.pollenLogs),
     treatByDate: indexByDate(input.treatLogs),
-    exposureDates: new Set(input.accidentalExposures.map((e) => e.date)),
     scorecardByGroupId: new Map(input.scorecards.map((sc) => [sc.planGroupId, sc])),
   }
 }
@@ -337,15 +335,11 @@ function buildDayOutcome(
   // Pollen: 3-day rolling max of max(pollenLevel, sporeLevel ?? 0)
   const effectivePollenLevel = computeRollingMaxPollen(date, idx.pollenByDate)
 
-  // Accidental exposure
-  const hasAccidentalExposure = idx.exposureDates.has(date)
-
   return {
     poopScore,
     itchScore,
     scorecardPoopFallback,
     effectivePollenLevel,
-    hasAccidentalExposure,
   }
 }
 
@@ -401,21 +395,18 @@ export function buildDaySnapshots(
         foodProductIds.size === prevFoodProductIds.size &&
         [...foodProductIds].every((id) => prevFoodProductIds!.has(id))
       if (!sameProducts && foodProductIds.size > 0) {
-        transitionCountdown = options.transitionBufferDays
+        // Suppress double buffer: if new products are subset of old, don't start countdown
+        // (e.g. removing a product isn't a transition)
+        const isSubset = [...foodProductIds].every((id) => prevFoodProductIds!.has(id))
+        if (!isSubset) {
+          // Use feeding period's transitionDays if available, else default
+          const periodTransitionDays = activePeriods.find((fp) => fp.transitionDays != null)?.transitionDays
+          transitionCountdown = periodTransitionDays ?? options.transitionBufferDays
+        }
       }
     }
     const isTransitionBuffer = transitionCountdown > 0
     if (transitionCountdown > 0) transitionCountdown--
-
-    // Exposure buffer: check if any exposure occurred within the last N days
-    let isExposureBuffer = false
-    for (const expDate of idx.exposureDates) {
-      const diff = daysBetween(expDate, date)
-      if (diff >= 0 && diff < options.exposureBufferDays) {
-        isExposureBuffer = true
-        break
-      }
-    }
 
     // Build outcome
     const outcome = buildDayOutcome(date, input, idx)
@@ -425,7 +416,6 @@ export function buildDaySnapshots(
       ingredients,
       outcome,
       isTransitionBuffer,
-      isExposureBuffer,
       isBackfill: false,
     })
 
@@ -498,7 +488,6 @@ export function computeIngredientScores(
   // Filter out excluded days
   const filtered = snapshots.filter((snap) => {
     if (snap.isTransitionBuffer) return false
-    if (snap.isExposureBuffer) return false
     return true
   })
 
@@ -515,7 +504,6 @@ export function computeIngredientScores(
     return false
   })
 
-  const totalScoreableDays = scoreable.length
   const excludedCount = snapshots.length - filtered.length
 
   // Accumulate per ingredient key
@@ -689,8 +677,6 @@ export function computeIngredientScores(
         acc.daysWithScorecardOnly,
         acc.daysWithBackfill,
       ),
-      exposureFraction:
-        totalScoreableDays > 0 ? acc.dayCount / totalScoreableDays : 0,
       bestPosition: acc.bestPosition,
       positionCategory: positionCategory(acc.bestPosition),
       appearedInTreats: acc.fromTreat,
@@ -924,10 +910,8 @@ export function buildBackfillSnapshots(
         itchScore: avgItch,
         scorecardPoopFallback: null,
         effectivePollenLevel: null,
-        hasAccidentalExposure: false,
       },
       isTransitionBuffer: false,
-      isExposureBuffer: false,
       isBackfill: true,
     })
   }
@@ -1020,7 +1004,6 @@ export function mergeScoresForGI(scores: IngredientScore[]): IngredientScore[] {
       badItchDayCount: Math.max(...group.map((s) => s.badItchDayCount)),
       goodItchDayCount: Math.max(...group.map((s) => s.goodItchDayCount)),
       confidence: computeConfidence(daysWithEventLogs, daysWithScorecardOnly, daysWithBackfill),
-      exposureFraction: Math.max(...group.map((s) => s.exposureFraction)),
       bestPosition,
       positionCategory: positionCategory(bestPosition),
       appearedInTreats: group.some((s) => s.appearedInTreats),
@@ -1067,7 +1050,7 @@ export function runCorrelation(
   const allProductIds = new Set<string>()
   let scoreableDays = 0
   for (const snap of allSnapshots) {
-    if (snap.isTransitionBuffer || snap.isExposureBuffer) continue
+    if (snap.isTransitionBuffer) continue
     const isScoreable =
       snap.outcome.poopScore != null ||
       snap.outcome.itchScore != null ||

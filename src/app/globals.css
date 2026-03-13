@@ -125,6 +125,7 @@
   --color-pollen-very-high: var(--pollen-very-high);
   --color-gantt-food-a: var(--gantt-food-a);
   --color-gantt-supplement-a: var(--gantt-supplement-a);
+  --color-gantt-transition: var(--gantt-transition);
   --color-border-grid: var(--border-grid);
   --color-sidebar: var(--sidebar);
   --color-sidebar-foreground: var(--sidebar-foreground);
@@ -223,6 +224,7 @@
   --pollen-very-high: rgba(184, 74, 58, 0.18);
   --gantt-food-a: #6B8C6F;
   --gantt-supplement-a: #A8886A;
+  --gantt-transition: #D4A944;
   --border-grid: rgba(217, 207, 195, 0.30);
   --sidebar: #F4EDE3;
   --sidebar-foreground: #2E2A27;
@@ -320,6 +322,7 @@
   --pollen-very-high: rgba(212, 104, 90, 0.14);
   --gantt-food-a: #8FB896;
   --gantt-supplement-a: #C4A882;
+  --gantt-transition: #D4A944;
   --border-grid: rgba(240, 235, 227, 0.06);
   --sidebar: #242019;
   --sidebar-foreground: #F0EBE3;

@@ -1,7 +1,8 @@
 import { NextRequest, NextResponse } from "next/server"
 import { requirePlanGroupOwnership, isNextResponse } from "@/lib/api-helpers"
 import { db, feedingPeriods } from "@/lib/db"
-import { eq, and, sql } from "drizzle-orm"
+import { eq, and, sql, isNull } from "drizzle-orm"
+import { getToday } from "@/lib/utils"
 
 type RouteParams = { params: Promise<{ planGroupId: string }> }
 
@@ -15,6 +16,38 @@ export async function PATCH(
     if (isNextResponse(ownerResult)) return ownerResult
 
     const body = await request.json()
+
+    // End transition: delete future single-day rows, adjust ongoing row, clear metadata
+    if (body.action === "end_transition") {
+      const today = getToday()
+      await db.transaction(async (tx) => {
+        // Delete future single-day transition rows
+        await tx.execute(
+          sql`DELETE FROM ${feedingPeriods}
+              WHERE ${feedingPeriods.planGroupId} = ${planGroupId}
+                AND ${feedingPeriods.startDate} = ${feedingPeriods.endDate}
+                AND ${feedingPeriods.startDate} >= ${today}`,
+        )
+
+        // Adjust ongoing rows: set startDate to today, clear transition metadata
+        await tx
+          .update(feedingPeriods)
+          .set({
+            startDate: today,
+            transitionDays: null,
+            previousPlanGroupId: null,
+            updatedAt: new Date(),
+          })
+          .where(
+            and(
+              eq(feedingPeriods.planGroupId, planGroupId),
+              isNull(feedingPeriods.endDate),
+            ),
+          )
+      })
+
+      return NextResponse.json({ success: true })
+    }
 
     // Per-item quantity updates (from routine editor quantity-only saves)
     if (Array.isArray(body.items)) {

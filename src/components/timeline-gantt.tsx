@@ -38,12 +38,14 @@ function formatQuantity(quantity: string, unit: string): string {
 
 const CATEGORY_ORDER: Record<string, number> = {
   food: 0,
+  transition: 0, // same row as food
   supplement: 1,
   medication: 2,
 }
 
 const CATEGORY_LABELS: Record<string, string> = {
   food: "Food",
+  transition: "Transition",
   medication: "Medication",
   supplement: "Supplement",
 }
@@ -51,6 +53,7 @@ const CATEGORY_LABELS: Record<string, string> = {
 // Colors per category
 const CATEGORY_COLORS: Record<string, string> = {
   food: "var(--gantt-food-a)",
+  transition: "var(--gantt-transition)",
   medication: "var(--medication)",
   supplement: "var(--gantt-supplement-a)",
 }
@@ -73,6 +76,9 @@ function GanttTooltip({ bar, x, y }: TooltipState): React.ReactElement {
   // Build category + quantity line, e.g. "Food, 1.5 can/day"
   const categoryLine = (() => {
     const label = CATEGORY_LABELS[bar.category] ?? bar.category
+    if (bar.category === "transition" && bar.transitionMeta) {
+      return `${bar.transitionMeta.oldFoodName} → ${bar.transitionMeta.newFoodName}`
+    }
     if (meta?.quantity && meta?.quantityUnit) {
       return `${label}, ${formatQuantity(meta.quantity, meta.quantityUnit)}`
     }
@@ -194,9 +200,11 @@ export function TimelineGantt({
     })
 
     for (const bar of sorted) {
-      const existing = grouped.get(bar.category) ?? []
+      // Transition bars render in the food row
+      const groupKey = bar.category === "transition" ? "food" : bar.category
+      const existing = grouped.get(groupKey) ?? []
       existing.push(bar)
-      grouped.set(bar.category, existing)
+      grouped.set(groupKey, existing)
     }
 
     return grouped
@@ -229,10 +237,28 @@ export function TimelineGantt({
                 onMouseLeave={handleBarLeave}
                 onTouchStart={(e) => handleBarTouch(bar, e)}
               >
-                {/* Background at reduced opacity */}
-                <div className="absolute inset-0 opacity-50" style={{ backgroundColor: color }} />
+                {/* Background — striped for transitions, solid for others */}
+                {bar.category === "transition" ? (
+                  <div
+                    className="absolute inset-0 opacity-60"
+                    style={{
+                      background: `repeating-linear-gradient(
+                        -45deg,
+                        ${color},
+                        ${color} 3px,
+                        transparent 3px,
+                        transparent 6px
+                      )`,
+                    }}
+                  />
+                ) : (
+                  <div className="absolute inset-0 opacity-50" style={{ backgroundColor: color }} />
+                )}
                 {/* Text at full opacity, vertically centered */}
-                <span className="relative truncate px-1.5 text-[10px] font-medium text-white drop-shadow-[0_1px_1px_rgba(0,0,0,0.4)]">
+                <span className={cn(
+                  "relative truncate px-1.5 text-[10px] font-medium text-white drop-shadow-[0_1px_1px_rgba(0,0,0,0.4)]",
+                  bar.category === "transition" && "bg-black/25 rounded-sm",
+                )}>
                   {bar.label}
                 </span>
               </div>

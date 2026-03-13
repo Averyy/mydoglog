@@ -12,11 +12,6 @@ export function daysBetween(a: string, b: string): number {
   return Math.round((db.getTime() - da.getTime()) / (1000 * 60 * 60 * 24))
 }
 
-/** Return the next YYYY-MM-DD date after `date`. */
-export function nextDate(date: string): string {
-  return shiftDate(date, 1)
-}
-
 /** Enumerate all YYYY-MM-DD dates from `start` to `end` inclusive. */
 export function enumerateDates(start: string, end: string): string[] {
   const dates: string[] = []
