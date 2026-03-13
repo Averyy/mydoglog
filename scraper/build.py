@@ -778,7 +778,7 @@ def main() -> None:
     if IMAGES_DATA_DIR.is_dir():
         for brand_dir in sorted(IMAGES_DATA_DIR.iterdir()):
             if brand_dir.is_dir():
-                _process_brand_images(brand_dir.name)
+                _process_brand_images(brand_dir.name, remove_bg=True)
 
     # Seed medication products
     print("\nSeeding medication products...")

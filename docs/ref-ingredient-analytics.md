@@ -52,13 +52,21 @@ Dogs allergic to one protein may react to related ones. Muscle protein allergens
 
 | Group | Families | Biological basis |
 |-------|----------|-----------------|
-| Poultry | chicken, turkey, duck, quail | Galloanserae — shared albumin/IgG proteins |
-| Ruminant | beef, bison, lamb, venison, goat | Bovidae/Cervidae — shared serum albumin |
+| Poultry | chicken, turkey, duck, goose, guinea_fowl, quail | Galloanserae — shared albumin/IgG proteins |
+| Cattle & sheep | beef, bison, dairy, goat, lamb | Bovidae — shared serum albumin (Martin et al., 2004) |
+| Deer & elk | elk, venison | Cervidae — shared serum albumin |
 | Pork | pork, wild_boar | Same species (Sus scrofa) |
-| Finfish | all fish families | Shared parvalbumins |
-| Shellfish | clam, shrimp | Tropomyosin-driven (distinct from finfish) |
+| Finfish | all fish families (19 families) | Shared parvalbumins |
+| Crustacean | shrimp (+ future crab, etc.) | Tropomyosin-driven (distinct from finfish) |
+| Mollusk | clam, mussel | Tropomyosin-driven (distinct from finfish and crustacean) |
+
+The old "Ruminant" group was split into **cattle_sheep**, **deer_elk**, and **pork** to match medically grounded evidence — cattle-sheep cross-reactivity is well-documented (Martin 2004) but deer-cattle cross-reactivity is less established. Goat, elk, and wild boar were reclassified from `exotic` to `red_meat` source group.
+
+The old "Shellfish" group was split into **crustacean** and **mollusk** — these are now distinct DB source groups (`ingredient_source_group` enum) rather than being lumped into `fish`.
 
 Cross-reactivity between chicken and fish clinically demonstrated (Bexley et al., Vet Dermatol 2019). Beef-lamb and beef-dairy cross-reactivity well-documented (Martin et al., Vet Dermatol 2004).
+
+**Ambiguous ingredient resolution:** The engine maps ambiguous source groups to their cross-reactivity groups via `SOURCE_GROUP_TO_CROSS_REACTIVITY` (e.g. `red_meat` → `[cattle_sheep, deer_elk, pork]`). If any family in any of those groups has bad signals, the ambiguous key gets a warning. Single-family groups (e.g. a crustacean group with only shrimp) are filtered out — cross-reactivity needs 2+ families to be meaningful.
 
 ### Fat/Oil Forms
 
@@ -372,8 +380,10 @@ Our daily check-in already captures appetite and vomiting. **Adding optional muc
 - **`category` field** on each family: `protein`, `carb`, `fat`, `fiber`, `vitamin`, `mineral`, `additive` (or null for ambiguous families like yeast/herb/algae). Written to DB `ingredients.category` column via build.py.
 - **`additive` source group** — carrageenan, cmc, guar_gum, xanthan_gum, locust_bean_gum, titanium_dioxide. Position weight override in engine (min floor 0.5 for GI track).
 - **`fiber` source group** — beet_pulp, chicory, psyllium. GI track only — fiber type correlates with stool outcomes.
-- **`vegetable` source group** — alfalfa, broccoli, carrot, celery, collard, garlic, ginger, green_bean, kale, parsley, pepper, rosemary, spinach, tomato, turmeric, turnip, zucchini. No longer mapped to `other`.
+- **`vegetable` source group** — alfalfa, broccoli, carrot, celery, collard, garlic, ginger, green_bean, kale, parsley, pepper, rosemary, spinach, tomato, turmeric, turnip, zucchini, artichoke, cabbage, parsnip. No longer mapped to `other`.
 - **`seed` source group** — borage, canola, chia, coconut, flaxseed, hemp, olive, safflower, sunflower. No longer mapped to `other`.
+- **`crustacean` source group** — shrimp (previously lumped into `fish`). Now a proper DB enum value.
+- **`mollusk` source group** — clam, mussel (previously lumped into `fish`). Now a proper DB enum value.
 - **beet / beet_pulp split** — beet (root/carb) has whole beets; beet_pulp (fiber/fiber) has dried/plain beet pulp. Different nutritional roles.
 - **Expanded form_type enum** — `protein_isolate`, `starch`, `fiber`, `gluten` are now proper DB enum values. Previously mapped to `raw`, losing information. `concentrate` → `protein_isolate`.
 - **Volume-weighted position scoring** — each ingredient's position weight is multiplied by its product's share of daily gram intake. A trace ingredient in a 25g topper gets ~4% the weight of the same ingredient in a 600g main food.
@@ -381,6 +391,12 @@ Our daily check-in already captures appetite and vomiting. **Adding optional muc
 - **Asymmetric evaluation minimums** — implemented in UI via `needsMoreData()`: good poop scores need 14+ days, good itch scores need 56+ days. Bad signals have no minimum — 3-5 bad days is high-confidence.
 - **`COMMON_SKIN_TRIGGERS`** (Mueller data) only shown in itch context — no `COMMON_GI_TRIGGERS` list (GI correlations are purely data-driven).
 - **Signal mode toggle** — UI supports "Both" (union), "Stool" (GI merged), and "Itch" views with appropriate filtering.
+- **Cross-reactivity groups refined** — old "ruminant" split into cattle_sheep, deer_elk, pork based on Martin 2004/Olivry 2022. Old "shellfish" split into crustacean + mollusk (distinct tropomyosin groups). Poultry expanded with goose, guinea_fowl. Groups with <2 families are filtered out.
+- **`hasBadSignal()` helper** — deduplicated threshold logic (weightedScore >= 4.0 or badDayCount/dayCount > 0.3) used across flagCrossReactivity for both confirmed groups and ambiguous keys.
+- **`SOURCE_GROUP_TO_CROSS_REACTIVITY` mapping** — resolves ambiguous source groups (e.g. `red_meat`) to their constituent cross-reactivity groups (`cattle_sheep`, `deer_elk`, `pork`) so warnings aggregate correctly.
+- **`displayGroupName()`** — human-readable labels for cross-reactivity groups (e.g. "cattle_sheep" → "Cattle & sheep") in UI badges and descriptions.
+- **`ignore_patterns`** in ingredient_families.json — regex patterns for scraper artifacts (unicode dash variants, misparses, metadata leaks) that slip through `parse_ingredients` but aren't real ingredient strings.
+- **Orphaned group cleanup** — `build.py` deletes cross-reactivity groups from DB that are no longer in the current set (e.g. old "ruminant", "shellfish", "exotic" groups).
 
 ### Ingredient splitting detection:
 - When multiple ingredients from the same legume family appear in a product (e.g. peas + pea protein + pea starch + pea fiber), the engine tracks `ingredientCount` and `worstPosition` per family key.
@@ -394,10 +410,10 @@ Our daily check-in already captures appetite and vomiting. **Adding optional muc
 ### Already correct (no changes needed):
 - Fat/oil separation from protein (itch/both view), worst-score merge into parent family (stool view) with per-form breakdown
 - Hydrolyzed flagging — keys separated as `family (hydrolyzed)`, enzymatically distinct in both GI and itch views
-- Cross-reactivity groups — biologically accurate, with 2+ bad families triggering group flags and 1 bad family generating warnings on related families
+- Cross-reactivity groups — medically grounded (cattle_sheep, deer_elk, pork, poultry, fish, crustacean, mollusk), with 2+ bad families triggering group flags and 1 bad family generating warnings on related families
 - Position-based weighting for proteins — exponential decay (lambda 0.15), aligns with ingredient label regulation
 - Additive position weight override — carrageenan at position 25 flags in GI track (floor weight 0.5)
-- Ambiguous ingredient handling — ingredients with source group but no family keyed as `sourceGroup (ambiguous)`, warned when related families score poorly
+- Ambiguous ingredient handling — ingredients with source group but no family keyed as `sourceGroup (ambiguous)`, warned when related families score poorly. Ambiguous red_meat keys now correctly aggregate bad signals across all three sub-groups (cattle_sheep, deer_elk, pork) via `SOURCE_GROUP_TO_CROSS_REACTIVITY`.
 
 ---
 

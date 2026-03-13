@@ -1,10 +1,10 @@
 # TODO: LLM Export
 
-> "Export for LLM" button on the dog settings page. Generates a structured markdown document with all the data we have about a dog, designed for pasting into Claude or another LLM to get advice on diet, allergies, and health.
+> "Export for AI" button on the dog settings page. Generates a structured markdown document with all the data we have about a dog, designed for pasting into Claude or another LLM to get advice on diet, allergies, and health.
 
 ## Goal
 
-One-click copy of a comprehensive, well-organized text dump that gives an LLM full context about the dog. The user pastes it into a chat and can ask questions, get advice, brainstorm food trials, etc. We provide the facts — the user provides the questions.
+Comprehensive, well-organized text dump that gives an LLM full context about the dog. The user pastes it into a chat and can ask questions, get advice, brainstorm food trials, etc. We provide the facts — the user provides the questions.
 
 ### Design Principle
 
@@ -16,12 +16,31 @@ Plain text markdown, copied to clipboard. No file download.
 
 **Target audience is an LLM, not a human.** No prose introductions, no section explanations, no "here's what this means" annotations. Just headers, tables, and structured lists. Every token should be data or a label for data. Tables for time-series and multi-field data. Bulleted lists for variable-length reference data (ingredient lists, side effects).
 
+### Output Section Ordering
+
+The sections below are numbered for spec reference. The actual output order is:
+
+1. Preamble (§0)
+2. Scoring Systems & Data Coverage (§13)
+3. Profile (§1)
+4. Current Diet (§2)
+5. Supplements, Toppers & Treats (§3)
+6. Current Medications (§4)
+7. Food History (§5)
+8. Medication History (§6)
+9. Daily Log Table (§7)
+10. Ingredient Correlation Data (§8)
+11. Symptom Averages by Pollen Level (§9)
+12. Links for Further Research (§10)
+13. Cross-Reactivity Groups (§11)
+14. Computed Reference Stats (§12)
+
 ### Sections
 
 #### 0. Preamble
 A short context block at the very top of the export (before scoring systems), something like:
 
-> This is a structured data export from MyDogLog, a dog food and digestive health tracking app. It contains a dog's complete feeding history with ingredient lists, daily stool and itchiness logs, medications, environmental pollen/mold data, and ingredient-level correlation analysis.
+> This is a structured data export from MyDogLog, a dog food and digestive health tracking app. The product database is focused on the Canadian market. It contains a dog's complete feeding history with ingredient lists, daily stool and itchiness logs, medications, environmental pollen/mold data, and ingredient-level correlation analysis.
 >
 > Dogs with food sensitivities or allergies are a multi-variable problem: food ingredients, environmental allergens (pollen, mold, dust mites), medications (which have their own GI/skin side effects), treats, and supplements all interact. Symptoms can be delayed (GI: up to 1-7 days, skin/itch: up to weeks or months), and food allergies and environmental allergies can present with similar symptoms — making them difficult to distinguish without data. This data exists to help untangle those variables.
 >
@@ -32,16 +51,18 @@ A short context block at the very top of the export (before scoring systems), so
 Keep it brief. No instructions on how to respond — just what the data is and why someone would share it.
 
 #### 1. Profile
-- Name, breed, age (computed from birthDate), weight
+- Name, breed, age (computed from birthDate), weight, meals per day
 - Location context if `environmentEnabled` (city, region — for pollen/allergy relevance)
 - Export date (so the LLM knows how current this is)
 
 #### 2. Current Diet
 - Active feeding plan name (if set), start date
-- Each product: brand, full name, type (food/supplement), quantity per meal, unit, meal slot(s)
-- Daily calorie estimate if available
+- Each product: brand, full name, type (food/supplement), format (dry/wet), channel (retail/vet), quantity per meal, unit, meal slot
+- Note: one feeding period row = one product × one meal slot. A product fed at multiple meals appears as separate rows.
+- Daily calorie estimate if computable (note: `calorieContent` is stored as a string like "1,292 kcal/kg" — requires parsing × quantity × meals per day to compute daily total)
 - Full ordered ingredient list per product (from `productIngredients`, position-ordered)
 - Guaranteed analysis per product (protein %, fat %, fiber %, etc.)
+- Ingredient lists are printed in full on first appearance of each unique product. Subsequent references to the same product (e.g., in food history) reference by period number instead of repeating the full list.
 
 #### 3. Supplements, Toppers & Treats
 - Active plan items where product type is supplement/topper: name, quantity, duration
@@ -68,7 +89,8 @@ Table format, one row per feeding period:
 - Avg Poop/Itch for backfill periods: midpoint of scorecard range (e.g., scorecard {3,4} → 3.5)
 
 Below the table, for each period:
-- Full ingredient list per product (ordered by position)
+- Each product: brand, full name, format (dry/wet), channel (retail/vet)
+- Full ingredient list per product (ordered by position) — only on first appearance of each unique product; subsequent periods reference by period number
 - Guaranteed analysis per product
 - Transition info if applicable ("5-day transition from period #4")
 - Treats given during this period (from treat log date overlap, with counts)
@@ -86,8 +108,8 @@ Table format:
 Below the table, for each medication:
 - Known side effects (from medication catalog)
 
-#### 7. Daily Log Table (last 60 days)
-A dense date-indexed table the LLM can scan for patterns. One row per day:
+#### 7. Daily Log Table
+A dense date-indexed table the LLM can scan for patterns. Date range controlled by the timeline dropdown (default: last 6 months). One row per day:
 
 ```
 | Date       | Poop | Itch | Pollen | Food              | Meds           | Notes    |
@@ -103,12 +125,14 @@ A dense date-indexed table the LLM can scan for patterns. One row per day:
 - Meds: active medication(s) with dosage
 - Notes: from poop/itch log notes field, food transition markers ("T:day3")
 - Rows marked `[transition]` during food switch buffer days
-- 60 days balances data volume against context window size
+- Date range controlled by timeline dropdown in the export modal (default: last 6 months)
 
 #### 8. Ingredient Correlation Data
-Two tables: **GI Track** and **Skin/Itch Track** (computed separately by the correlation engine).
+Two tables: **GI Track** (uses `giMergedScores` — form-merged by ingredient family) and **Skin/Itch Track** (uses `scores` — raw, separate forms). Computed separately by the correlation engine.
 
 Header stats: scoreable days, logged days, backfilled days.
+
+Note: Probiotics (products with `type = "probiotic"`) are excluded from correlation. Their ingredients are therapeutic bacterial strains at trace quantities — scores would just mirror whatever primary food they're paired with.
 
 ```
 | Ingredient        | Weighted Score | Raw Avg | Days | Good | Bad | Confidence | Position  | Products | Cross-Reactivity | Seasonally Confounded |
@@ -146,19 +170,20 @@ Dynamic references (per dog):
 - **Medication side effect sources**: pulled from `medication_products.side_effects_sources` for each active/past medication. These are FDA FOI documents, DailyMed labels, and PubMed studies specific to each drug.
 
 #### 11. Cross-Reactivity Groups
-Dogs allergic to one protein may react to related proteins in the same biological group. Pull full table from `ingredientCrossReactivity` (currently 8 rows).
+Dogs allergic to one protein may react to related proteins in the same biological group. Pull all rows from `ingredientCrossReactivity`.
 
 #### 12. Computed Reference Stats
 Factual aggregates:
 - Ingredients present in ALL foods tried (constant across all periods)
 - Ingredients unique to each food period (appeared in only one)
 - Avg poop log entries per day (from days with ≥1 entry)
+- Itch body area frequency: % of itch-logged days each body area was recorded (e.g., "paws: 85%, ears: 30%")
 - Dates where itch score changed >1 point sustained 3+ days, with concurrent food period noted
-- Dates within 7 days of a medication start/stop/dose change, with symptom scores
+- Dates within 7 days of a medication start/stop/dose change, with symptom scores. Note: adjacent medication rows with the same drug name but different dosage are treated as dose change events.
 
 #### 13. Scoring Systems & Data Coverage
 
-This section goes FIRST in the actual export output (before Profile), so the LLM has context for all numbers that follow.
+This section appears second in the output (after Preamble, before Profile) — see Output Section Ordering above. Always included, not toggleable.
 
 ### Data Sources
 - **Logs**: Manually entered by owner in real-time. High confidence.
@@ -203,14 +228,15 @@ Server-side assembly. Queries all relevant tables, formats as markdown string, r
 1. Dog profile
 2. Active feeding plan + items (reuse food route logic)
 3. Past feeding plans + scorecards + logStats (reuse scorecard route logic)
-4. Product details: ingredients (ordered), guaranteed analysis, calories
+4. Product details: ingredients (ordered), guaranteed analysis, calories, format, channel
 5. Treat logs (aggregated by product, with date ranges and counts)
 6. Medications (active + past, with catalog data)
 7. Poop logs (full history for daily table + food period stats)
-8. Itch logs (full history)
+8. Itch logs (full history, including body areas)
 9. Correlation engine output (full run — both GI-merged and allergen tracks)
 10. Pollen data (full history, if environmentEnabled)
-11. Day snapshots from correlation engine (for daily log table + environmental analysis)
+
+**Daily log table (§7):** Build directly from raw poop/itch logs, pollen data, feeding periods, and medications — do NOT depend on `buildDaySnapshots` from the correlation engine. The engine's snapshots lack food names, medication names, and log notes. Cross-reference feeding period date ranges and medication date ranges to populate Food/Meds columns per day.
 
 ### Computed Data (not direct DB queries)
 These require post-processing from raw data:
@@ -222,9 +248,25 @@ These require post-processing from raw data:
 - **Stool frequency**: avg count of poop log entries per day (from days with ≥1 entry)
 
 ### UI
-- Button on the dog's settings card: "Export for LLM"
-- Clicking it: fetches the API, copies result to clipboard, shows success toast
-- No modal, no preview — just copy. The text is too long to preview usefully.
+- Button on the dog's settings card: "Export for AI"
+- Clicking opens a ResponsiveModal (Drawer on mobile, Dialog on desktop) with:
+  - **Timeline dropdown** — controls the date window for the daily log table and correlation engine. Options: Last 30 days, Last 3 months, Last 6 months (default), Last 1 year, All time.
+  - **Section checkboxes** — one per major section, all checked by default. User can uncheck sections they don't want included. Sections:
+    - Profile
+    - Current Diet
+    - Supplements, Toppers & Treats
+    - Current Medications
+    - Food History
+    - Medication History
+    - Daily Log Table
+    - Ingredient Correlation
+    - Pollen & Symptoms (only shown if `environmentEnabled`)
+    - Research Links
+    - Cross-Reactivity Groups
+    - Computed Reference Stats
+  - Scoring Systems & Data Coverage and Preamble are always included (not toggleable) — they provide context the LLM needs to interpret any other section.
+  - **"Copy to Clipboard" button** — fetches the API with selected options, copies result, shows success toast
+- API accepts query params: `timeline` (30d|3m|6m|1y|all) and `exclude` (comma-separated section keys to omit)
 
 ### Performance
 The correlation engine is the heaviest query. Consider:
@@ -242,15 +284,20 @@ The user adds these in their own chat:
 
 ## Definition of Done
 - [ ] `GET /api/dogs/[id]/export/llm` returns well-structured markdown
+- [ ] API accepts `timeline` and `exclude` query params
 - [ ] All sections populated with real data
-- [ ] Ingredient lists included per product (ordered by position)
+- [ ] Ingredient lists included per product (ordered by position), deduplicated across sections
+- [ ] Product format (dry/wet) and channel (retail/vet) included
 - [ ] Nutrition data included per product
 - [ ] Food history table includes pollen + medication columns per period
-- [ ] Daily log table covers last 60 days with all columns
+- [ ] Daily log table covers selected timeline with all columns
 - [ ] Pollen-symptom bucket table populated (if environmentEnabled)
-- [ ] Scoring systems and data coverage section present
-- [ ] "Export for LLM" button on settings page copies to clipboard
-- [ ] Toast confirms copy success
+- [ ] Scoring systems and data coverage section present (always, not toggleable)
+- [ ] Probiotic exclusion noted in correlation section
+- [ ] Body area frequency summary in computed stats
+- [ ] "Export for AI" button on settings page opens section/timeline modal
+- [ ] Modal has timeline dropdown and section checkboxes
+- [ ] Copy to clipboard with success toast
 - [ ] Output is readable and useful when pasted into Claude
 - [ ] `yarn build` passes
 
@@ -259,30 +306,41 @@ The user adds these in their own chat:
 ### Step 1: Export API Route
 Create `src/app/api/dogs/[id]/export/llm/route.ts`. Single GET handler that:
 1. Authenticates + verifies dog ownership
-2. Fetches all data (profile, plans, products, ingredients, logs, meds, correlation, pollen)
-3. Runs correlation engine (reuse `fetchCorrelationInput` + `computeCorrelation`)
-4. Computes cross-reference data (food-med overlap, pollen bucket stats, etc.)
-5. Formats each section as markdown
-6. Returns `{ text: string }`
+2. Parses `timeline` (30d|3m|6m|1y|all, default 6m) and `exclude` (comma-separated section keys) query params
+3. Fetches all data (profile, plans, products, ingredients, logs, meds, correlation, pollen)
+4. Runs correlation engine (reuse `fetchCorrelationInput` + `runCorrelation`) with timeline-derived window
+5. Builds daily log table from raw logs + feeding period/medication date overlap (not from correlation snapshots)
+6. Computes cross-reference data (food-med overlap, pollen bucket stats, body area frequency, dose-change detection, etc.)
+7. Formats each non-excluded section as markdown
+8. Returns `{ text: string }`
 
 ### Step 2: Markdown Formatter
 Create `src/lib/export-llm.ts` — pure function(s) that take the assembled data and return formatted markdown. Keep this separate from the route for testability.
 
 Key formatting functions (one per section):
+- `formatPreamble()`, `formatDataCoverage()`
 - `formatProfile()`, `formatCurrentDiet()`, `formatSupplements()`, `formatMedications()`
 - `formatFoodHistory()`, `formatMedicationHistory()`
 - `formatDailyLogTable()`
-- `formatCorrelationData()` (GI + itch tracks)
+- `formatCorrelationData()` (GI + itch tracks, with probiotic exclusion note)
 - `formatPollenSymptomTable()` (pollen-bucket averages)
-- `formatReferenceStats()`, `formatDataCoverage()`
+- `formatReferenceStats()` (including body area frequency, dose-change proximity)
 
-### Step 3: Settings Page Button
-Add "Export for LLM" button to each dog's card in `settings-client.tsx`. On click: fetch API, copy to clipboard, show toast.
+Product ingredient deduplication: track which product IDs have had their full ingredient list printed. On first appearance, print full list. On subsequent appearances, reference the period number where it was first printed.
+
+### Step 3: Export Modal + Settings Button
+- Add "Export for AI" button to each dog's card in `settings-client.tsx`
+- Create export modal component (ResponsiveModal) with:
+  - Timeline dropdown (30d, 3m, 6m default, 1y, all)
+  - Section checkboxes (all checked by default, Preamble + Scoring always included)
+  - "Copy to Clipboard" button → fetches API with selected options, copies, shows toast
 
 ### Step 4: Test & Polish
 - Test with real data (Peaches)
 - Compare output to `docs/peaches.md` — is anything important missing?
 - Verify daily log table is complete and consistent
 - Check food-medication-pollen cross-references are factually correct
+- Verify ingredient lists are deduplicated correctly
+- Verify excluded sections are actually omitted
 - Paste output into Claude and ask it to analyze — does it have enough data?
 - `yarn build`

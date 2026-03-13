@@ -53,9 +53,9 @@ The **routine template** (food + supplements) pre-fills the daily log. On days t
 | Page | Route | Purpose |
 |------|-------|---------|
 | **Home** | `/` | Quick-log grid (check-in, stool, itch, treat) + chronological log feed |
-| **Food** | `/dogs/[id]/food` | Active routine management + food history with inline scorecards |
-| **Meds** | `/dogs/[id]/meds` | Active + past medications, 67-drug catalog picker, dosing intervals |
-| **Insights** | `/dogs/[id]/insights` | Ingredient correlation analysis (GI + skin tracks) |
+| **Food** | `/[slug]/food` | Active routine management + food history with inline scorecards |
+| **Meds** | `/[slug]/meds` | Active + past medications, 67-drug catalog picker, dosing intervals |
+| **Insights** | `/[slug]/insights` | Ingredient correlation analysis (GI + skin tracks) |
 | **Settings** | `/settings` | Dog management, account settings |
 
 **Home** shows the quick-log 2x2 grid and a chronological feed of recent manual entries (poop, itch, treat, check-in). No summary stats, no routine preview — just logging and recent history.
@@ -64,7 +64,7 @@ The **routine template** (food + supplements) pre-fills the daily log. On days t
 
 **Meds** shows active medications (no end date) and past medications (has end date, reverse chronological). Add/edit form with searchable 67-drug catalog picker (5 categories: allergy, parasite, GI, pain, steroid) + free-text fallback for unlisted meds. Catalog includes side effects and default dosing intervals.
 
-**Insights** shows ingredient-level correlation results with signal mode toggle (stool/itch/both). Expandable ingredient rows with product cross-reference and cross-reactivity info.
+**Insights** shows ingredient-level correlation results with signal mode toggle (stool/itch/both). Expandable ingredient rows with product cross-reference and cross-reactivity info. Includes a timeline visualization of scores over feeding periods.
 
 ### Two-Track Correlation Engine
 
@@ -77,7 +77,7 @@ Results categorized as problem / tolerated / inconclusive per ingredient, with c
 
 ### Dashboard Timeline (Phase 4)
 
-The analytical view that ties everything together — a time-series graph (poop scores, itch scores, temperature, pollen) over Gantt-style bars (food periods, medication periods, supplement periods). Read them together vertically to correlate score changes with food/med/environment/season transitions. This is the view that would have made Peaches' environmental allergy pattern obvious months earlier.
+The analytical view that ties everything together — a time-series graph (poop scores, itch scores, pollen/spore levels) over Gantt-style bars (food periods, medication periods, supplement periods). Read them together vertically to correlate score changes with food/med/environment/season transitions. This is the view that would have made Peaches' environmental allergy pattern obvious months earlier.
 
 ### LLM Export
 
