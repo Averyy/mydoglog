@@ -203,7 +203,10 @@ def _sample_families_data() -> dict[str, Any]:
         ],
         "cross_reactivity_groups": {
             "poultry": ["chicken", "duck", "turkey"],
-            "ruminant": ["beef", "bison", "lamb"],
+            "cattle_sheep": ["beef", "bison", "dairy", "goat", "lamb"],
+            "deer_elk": ["elk", "venison"],
+            "pork": ["pork", "wild_boar"],
+            "fish": ["herring", "salmon"],
         },
     }
 

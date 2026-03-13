@@ -534,7 +534,7 @@ IGNORE_PATTERNS: List[re.Pattern] = [
     re.compile(r"^natural smoke flavo", re.I),
     re.compile(r"^natural smoked flavo", re.I),
     re.compile(r"^natural hickory smoke flavo", re.I),
-    re.compile(r"^natural and artificial", re.I),
+    re.compile(r"^natural\s+(&|and)\s+artificial", re.I),
     re.compile(r"^natural roasted flavor", re.I),
 
     # Miscellaneous non-food
@@ -791,6 +791,137 @@ IGNORE_PATTERNS: List[re.Pattern] = [
     # French terms with smart quotes (U+2019)
     re.compile(r"^farine d[\u2019']avoine$", re.I),
     re.compile(r"^herbe d[\u2019']orge$", re.I),
+
+    # Unicode dash variants for amino acids (en-dash U+2013, em-dash U+2014)
+    re.compile(r"^dl[\u2013\u2014]methionine", re.I),
+    re.compile(r"^l[\u2013\u2014]carnitine", re.I),
+    re.compile(r"^l[\u2013\u2014]threonine", re.I),
+    re.compile(r"^l[\u2013\u2014]lysine", re.I),
+    re.compile(r"^amino acids?\s*\(", re.I),
+    re.compile(r"^copperamino\s*acid", re.I),
+
+    # Unicode dash variant for beta-carotene
+    re.compile(r"^beta[\u2013\u2014\s-]*carot", re.I),
+
+    # Additional colorants
+    re.compile(r"^red\s*#?\d", re.I),
+    re.compile(r"^blue\s*#?\d", re.I),
+    re.compile(r"^artificial colou?rs?$", re.I),
+    re.compile(r"^colou?rs$", re.I),
+    re.compile(r"^antioxidants$", re.I),
+
+    # Additional salts/minerals
+    re.compile(r"^calcium\s+iod", re.I),
+    re.compile(r"^calcium\s+sulfate\s+dihydrate$", re.I),
+    re.compile(r"^di\s*calcium\s+phosphate$", re.I),
+    re.compile(r"^potassium\s+carbonate$", re.I),
+    re.compile(r"^potassium\s+phosphate$", re.I),
+    re.compile(r"^sodium\s+acid\s+pyrophosphate$", re.I),
+    re.compile(r"^sodium\s+metabisulfi", re.I),
+    re.compile(r"^sodium\s+molybdate$", re.I),
+    re.compile(r"^sodium\s+alginate$", re.I),
+    re.compile(r"^tetrasodium\s+pyrophosphate$", re.I),
+    re.compile(r"^ground\s+limestone$", re.I),
+    re.compile(r"^poassium\s+chloride$", re.I),  # typo for potassium
+
+    # Additional vitamins
+    re.compile(r"^cholecalciferol$", re.I),
+    re.compile(r"^nicotinic\s+acid$", re.I),
+    re.compile(r"^thiamin\s+mononitrate$", re.I),
+
+    # Additional preservatives/processing
+    re.compile(r"^propylene\s+glycol$", re.I),
+    re.compile(r"^sorbitol$", re.I),
+    re.compile(r"^xanthan$", re.I),
+
+    # Additional water variants
+    re.compile(r"^water\s+(for|sufficient)", re.I),
+    re.compile(r"^water\s*\(sufficient", re.I),
+
+    # Additional gums
+    re.compile(r"^acacia gum$", re.I),
+    re.compile(r"^carob gum$", re.I),
+
+    # Additional yeast
+    re.compile(r"^yeast$", re.I),
+    re.compile(r"^dried\s+brewers?\s+yeast$", re.I),
+    re.compile(r"^grain\s+distillers?\s+dried\s+yeast$", re.I),
+
+    # Additional fibers/fillers
+    re.compile(r"^cellulose\s+powder$", re.I),
+    re.compile(r"^citrus\s+pulp$", re.I),
+    re.compile(r"^palm\s+oil$", re.I),
+
+    # Additional flavors
+    re.compile(r"^smoke\s+flavou?r$", re.I),
+    re.compile(r"^grilled\s+filet\s+mignon\s+flavo", re.I),
+    re.compile(r"^natural\s+grilled\s+steak\s+flavo", re.I),
+    re.compile(r"^natural\s+poultry\s+flavou?r$", re.I),
+    re.compile(r"^natural\s+porcine\s+flavo", re.I),
+    re.compile(r"^natural\s+flavor\s*\(yeast\s+extract\)", re.I),
+
+    # Additional herbs/spices
+    re.compile(r"^basil$", re.I),
+    re.compile(r"^bay\s+leaves$", re.I),
+    re.compile(r"^cumin$", re.I),
+    re.compile(r"^ground\s+cumin$", re.I),
+    re.compile(r"^ground\s+cinnamon$", re.I),
+    re.compile(r"^ground\s+fennel$", re.I),
+    re.compile(r"^ground\s+peppermint$", re.I),
+    re.compile(r"^sweet\s+fennel$", re.I),
+    re.compile(r"^onion\s+powder$", re.I),
+    re.compile(r"^eucalyptus\s+oil$", re.I),
+    re.compile(r"^lemongrass\s+oil$", re.I),
+    re.compile(r"^spearmint\s+oil$", re.I),
+    re.compile(r"^spearmint\s+extract\b", re.I),  # catches "spearmint extract." with trailing text
+    re.compile(r"^dried\s+ginger$", re.I),
+    re.compile(r"^fenugreek$", re.I),
+    re.compile(r"^chicory\s+extract$", re.I),
+
+    # Additional supplements
+    re.compile(r"^bio\s*perine$", re.I),
+    re.compile(r"^par\s+actin$", re.I),
+    re.compile(r"^animal\s+plasma$", re.I),
+    re.compile(r"^spray\s+dried\s+animal\s+blood", re.I),
+    re.compile(r"^greenshell\s+mussel", re.I),
+    re.compile(r"^algal\s+oil", re.I),
+
+    # Sugar/sweetener
+    re.compile(r"^molasses$", re.I),
+    re.compile(r"^caramel$", re.I),
+    re.compile(r"^carmel$", re.I),  # typo for caramel
+
+    # Additional broth/stock
+    re.compile(r"^dried\s+vegetable\s+broth$", re.I),
+    re.compile(r"^vegetable\s+stock$", re.I),
+
+    # Rosemary variants (typos and trailing text)
+    re.compile(r"^rosemary\s+oil", re.I),
+    re.compile(r"^rosmary\b", re.I),  # typo
+    re.compile(r"^rosemary\s*extrac$", re.I),  # truncated
+    re.compile(r"^rosemary\.\s*contains", re.I),  # trailing disclaimer
+
+    # Kelp variants
+    re.compile(r"^kelp\s+meal$", re.I),
+    re.compile(r"^organic\s+dried\s+kelp$", re.I),
+
+    # Unicode dash by-product
+    re.compile(r"^by[\u2013\u2014]product", re.I),
+
+    # Scraper artifacts (metadata leaking into ingredient lists)
+    re.compile(r"^item\s+number:", re.I),
+    re.compile(r"^made\s+in\s+the\s+usa$", re.I),
+    re.compile(r"^real\s+meat\s+first$", re.I),
+    re.compile(r"^species:\s+dog\b", re.I),
+    re.compile(r"^stella['\u2019]?s?\b", re.I),
+    re.compile(r"^flavors?\s+or\s+preservatives", re.I),
+    re.compile(r"^organ\s+meats\s+and\s+cartilage", re.I),
+    re.compile(r"^\),?\s*chondroitin", re.I),  # leading paren artifacts
+    re.compile(r"^folic\s+acid\),", re.I),  # misparse: vitamin list fragment
+    re.compile(r"^potassium\s+iodide\),", re.I),  # misparse: vitamin list fragment
+    re.compile(r"^l-ascorbyl", re.I),  # vitamin C derivative
+    re.compile(r"^citric\s+acid\s+9a\b", re.I),  # misparse: "Citric Acid (a Preservative)" with OCR error
+    re.compile(r"^amino\s+acid\s+complex$", re.I),  # generic mineral chelate
 ]
 
 
@@ -819,6 +950,18 @@ AMBIGUOUS_MAP: List[Tuple[re.Pattern, Dict[str, Any]]] = [
      {"could_be": ["beef", "pork", "lamb"], "source_group": "mammal"}),
     (re.compile(r"^mutton\s+meal$", re.I),
      {"could_be": ["lamb", "goat"], "source_group": "mammal"}),
+    (re.compile(r"^dehydrated\s+mutton$", re.I),
+     {"could_be": ["lamb", "goat"], "source_group": "mammal"}),
+    (re.compile(r"^meat$", re.I),
+     {"could_be": ["beef", "pork", "lamb"], "source_group": "mammal"}),
+    (re.compile(r"^meat\s*&\s*bone\s+meal$", re.I),
+     {"could_be": ["beef", "pork", "lamb"], "source_group": "mammal"}),
+    (re.compile(r"^dried\s+meat\s+by-?products?$", re.I),
+     {"could_be": ["beef", "pork", "lamb"], "source_group": "mammal"}),
+    (re.compile(r"^-?\s*muscle\s+meat$", re.I),
+     {"could_be": ["beef", "pork", "lamb"], "source_group": "mammal"}),
+    (re.compile(r"^cooked\s+bone\s+marrow$", re.I),
+     {"could_be": ["beef", "pork"], "source_group": "mammal"}),
 
     # Poultry (unspecified)
     (re.compile(r"^poultry\s+by-?product", re.I),
@@ -867,7 +1010,9 @@ AMBIGUOUS_MAP: List[Tuple[re.Pattern, Dict[str, Any]]] = [
      {"could_be": ["salmon", "herring", "whitefish", "menhaden"], "source_group": "fish"}),
     (re.compile(r"^oceanfish$", re.I),
      {"could_be": ["salmon", "herring", "whitefish", "menhaden"], "source_group": "fish"}),
-    (re.compile(r"^hydrolyzed fish protein", re.I),
+    (re.compile(r"^hydrolyzed fish\b", re.I),
+     {"could_be": ["salmon", "herring", "whitefish", "menhaden"], "source_group": "fish"}),
+    (re.compile(r"^dehydrated fish\b", re.I),
      {"could_be": ["salmon", "herring", "whitefish", "menhaden"], "source_group": "fish"}),
 
     # Natural flavor (unknown)
@@ -965,6 +1110,7 @@ def _add_protein_family(
 for kw in ["chicken"]:
     FAMILY_RULES.extend([
         (re.compile(r"\bchicken\b", re.I), "chicken", "poultry", None),
+        (re.compile(r"^chickenmeal$", re.I), "chicken", "poultry", "meal"),  # concatenated typo
     ])
 for kw in ["turkey"]:
     FAMILY_RULES.extend([
@@ -975,6 +1121,8 @@ for kw in ["duck"]:
         (re.compile(r"\bduck\b", re.I), "duck", "poultry", None),
     ])
 FAMILY_RULES.append((re.compile(r"\bquail\b", re.I), "quail", "poultry", None))
+FAMILY_RULES.append((re.compile(r"\bgoose\b", re.I), "goose", "poultry", None))
+FAMILY_RULES.append((re.compile(r"\bguinea\s*fowl\b", re.I), "guinea_fowl", "poultry", None))
 
 # --- Red meat ---
 FAMILY_RULES.append((re.compile(r"\bbeef\b", re.I), "beef", "red_meat", None))
@@ -988,12 +1136,12 @@ FAMILY_RULES.append((re.compile(r"\bpork\b", re.I), "pork", "red_meat", None))
 FAMILY_RULES.append((re.compile(r"\bbacon\b", re.I), "pork", "red_meat", None))
 FAMILY_RULES.append((re.compile(r"\bkangaroo\b", re.I), "kangaroo", "exotic", None))
 FAMILY_RULES.append((re.compile(r"\brabbit\b", re.I), "rabbit", "exotic", None))
-FAMILY_RULES.append((re.compile(r"\bgoat\b", re.I), "goat", "exotic", None))
+FAMILY_RULES.append((re.compile(r"\bgoat\b", re.I), "goat", "red_meat", None))
 FAMILY_RULES.append((re.compile(r"\bcrocodil", re.I), "crocodile", "exotic", None))
 FAMILY_RULES.append((re.compile(r"\balligator\b", re.I), "crocodile", "exotic", None))
-FAMILY_RULES.append((re.compile(r"\belk\b", re.I), "elk", "exotic", None))
-FAMILY_RULES.append((re.compile(r"\bwild\s+boar\b", re.I), "wild_boar", "exotic", None))
-FAMILY_RULES.append((re.compile(r"\bboar\b", re.I), "wild_boar", "exotic", None))
+FAMILY_RULES.append((re.compile(r"\belk\b", re.I), "elk", "red_meat", None))
+FAMILY_RULES.append((re.compile(r"\bwild\s+boar\b", re.I), "wild_boar", "red_meat", None))
+FAMILY_RULES.append((re.compile(r"\bboar\b", re.I), "wild_boar", "red_meat", None))
 
 # --- Fish ---
 FAMILY_RULES.append((re.compile(r"\bsalmon\b", re.I), "salmon", "fish", None))
@@ -1025,9 +1173,11 @@ FAMILY_RULES.append((re.compile(r"\barctic char\b", re.I), "arctic_char", "fish"
 FAMILY_RULES.append((re.compile(r"\bnorthern pike\b", re.I), "pike", "fish", None))
 FAMILY_RULES.append((re.compile(r"\bwalleye\b", re.I), "walleye", "fish", None))
 FAMILY_RULES.append((re.compile(r"\byellow perch\b", re.I), "perch", "fish", None))
-FAMILY_RULES.append((re.compile(r"\bclams?\b", re.I), "clam", "fish", None))
-FAMILY_RULES.append((re.compile(r"\bshrimp", re.I), "shrimp", "fish", None))
+FAMILY_RULES.append((re.compile(r"\bclams?\b", re.I), "clam", "mollusk", None))
+FAMILY_RULES.append((re.compile(r"\bmussels?\b", re.I), "mussel", "mollusk", None))
+FAMILY_RULES.append((re.compile(r"\bshrimp", re.I), "shrimp", "crustacean", None))
 FAMILY_RULES.append((re.compile(r"\bsebastes\b", re.I), "rockfish", "fish", None))
+FAMILY_RULES.append((re.compile(r"\bacadian\s+redfish\b", re.I), "rockfish", "fish", None))
 
 # --- Grains ---
 FAMILY_RULES.append((re.compile(r"\brice\b", re.I), "rice", "grain", None))
@@ -1068,9 +1218,10 @@ FAMILY_RULES.append((re.compile(r"\bsweet\s+potato", re.I), "sweet_potato", "roo
 FAMILY_RULES.append((re.compile(r"\bpotato", re.I), "potato", "root", None))
 FAMILY_RULES.append((re.compile(r"\btapioca\b", re.I), "tapioca", "root", None))
 FAMILY_RULES.append((re.compile(r"\bcassava\b", re.I), "tapioca", "root", None))
+FAMILY_RULES.append((re.compile(r"\bbeets?\b", re.I), "beet", "root", None))
 FAMILY_RULES.append((re.compile(r"\bbeet\s+root$", re.I), "beet", "root", None))
 FAMILY_RULES.append((re.compile(r"\bbeet\s+greens$", re.I), "beet", "root", None))
-FAMILY_RULES.append((re.compile(r"\byam\b", re.I), "sweet_potato", "root", None))
+FAMILY_RULES.append((re.compile(r"\byams?\b", re.I), "sweet_potato", "root", None))
 
 # --- Seeds/Oils ---
 FAMILY_RULES.append((re.compile(r"\bflax\s*seed", re.I), "flaxseed", "seed", None))
@@ -1083,7 +1234,7 @@ FAMILY_RULES.append((re.compile(r"\bcoconut\b", re.I), "coconut", "seed", None))
 FAMILY_RULES.append((re.compile(r"\bsafflower\b", re.I), "safflower", "seed", None))
 FAMILY_RULES.append((re.compile(r"\bchia\b", re.I), "chia", "seed", None))
 FAMILY_RULES.append((re.compile(r"\bhemp\s+seed\b", re.I), "hemp", "seed", None))
-FAMILY_RULES.append((re.compile(r"\bpumpkin\s+seed", re.I), "pumpkin", "fruit", None))
+FAMILY_RULES.append((re.compile(r"\bpumpkin\s*seed", re.I), "pumpkin", "fruit", None))
 FAMILY_RULES.append((re.compile(r"\bborage\s+oil\b", re.I), "borage", "seed", None))
 
 # --- Fruits ---
@@ -1103,18 +1254,23 @@ FAMILY_RULES.append((re.compile(r"\bpapaya", re.I), "papaya", "fruit", None))
 FAMILY_RULES.append((re.compile(r"\bsaskatoon berr", re.I), "saskatoon_berry", "fruit", None))
 FAMILY_RULES.append((re.compile(r"\bpineapple\b", re.I), "pineapple", "fruit", None))
 FAMILY_RULES.append((re.compile(r"\bavocado\b", re.I), "avocado", "fruit", None))
+FAMILY_RULES.append((re.compile(r"\bcherr(?:y|ies)\b", re.I), "cherry", "fruit", None))
 FAMILY_RULES.append((re.compile(r"\bcollard greens\b", re.I), "collard", "vegetable", None))
 FAMILY_RULES.append((re.compile(r"\bbell pepper", re.I), "pepper", "vegetable", None))
 FAMILY_RULES.append((re.compile(r"\bred pepper", re.I), "pepper", "vegetable", None))
 
 # --- Vegetables ---
 FAMILY_RULES.append((re.compile(r"\bcarrot", re.I), "carrot", "vegetable", None))
-FAMILY_RULES.append((re.compile(r"\bspinach\b", re.I), "spinach", "vegetable", None))
+FAMILY_RULES.append((re.compile(r"spinach\b", re.I), "spinach", "vegetable", None))
 FAMILY_RULES.append((re.compile(r"\bbroccoli\b", re.I), "broccoli", "vegetable", None))
 FAMILY_RULES.append((re.compile(r"\bkale\b", re.I), "kale", "vegetable", None))
 FAMILY_RULES.append((re.compile(r"\bzucchini\b", re.I), "zucchini", "vegetable", None))
-FAMILY_RULES.append((re.compile(r"\bgreen\s+bean", re.I), "green_bean", "vegetable", None))
+FAMILY_RULES.append((re.compile(r"\bgreen\s*bean", re.I), "green_bean", "vegetable", None))
+FAMILY_RULES.append((re.compile(r"\bstring\s*bean", re.I), "green_bean", "vegetable", None))
 FAMILY_RULES.append((re.compile(r"\bturnip\b", re.I), "turnip", "vegetable", None))
+FAMILY_RULES.append((re.compile(r"\bartichoke", re.I), "artichoke", "vegetable", None))
+FAMILY_RULES.append((re.compile(r"\bcabbage\b", re.I), "cabbage", "vegetable", None))
+FAMILY_RULES.append((re.compile(r"\bparsnip\b", re.I), "parsnip", "vegetable", None))
 
 # --- Dairy ---
 FAMILY_RULES.append((re.compile(r"\bcheese\b", re.I), "dairy", "dairy", None))
@@ -1358,25 +1514,43 @@ def build_families() -> Dict[str, Any]:
         # 4. Unclassified
         unclassified.append((canonical, count))
 
-    # Build cross-reactivity groups
+    # Build cross-reactivity groups (medically grounded per Martin 2004, Bexley 2017, Olivry 2022)
     cross_reactivity_groups: Dict[str, List[str]] = {
+        "cattle_sheep": sorted([f for f in families if f in ("beef", "bison", "lamb", "goat", "dairy")]),
+        "deer_elk": sorted([f for f in families if f in ("venison", "elk")]),
+        "pork": sorted([f for f in families if f in ("pork", "wild_boar")]),
         "poultry": sorted([f for f in families if families[f]["source_group"] == "poultry"]),
-        "ruminant": sorted([f for f in families if families[f]["source_group"] == "red_meat" and f not in ("pork",)]),
-        "pork": ["pork"],
         "fish": sorted([f for f in families if families[f]["source_group"] == "fish"]),
-        "exotic": sorted([f for f in families if families[f]["source_group"] == "exotic"]),
+        "crustacean": sorted([f for f in families if families[f]["source_group"] == "crustacean"]),
+        "mollusk": sorted([f for f in families if families[f]["source_group"] == "mollusk"]),
     }
-    # Remove empty groups
-    cross_reactivity_groups = {k: v for k, v in cross_reactivity_groups.items() if v}
+    # Remove empty or single-family groups (cross-reactivity needs 2+ families)
+    cross_reactivity_groups = {k: v for k, v in cross_reactivity_groups.items() if len(v) >= 2}
 
     # Sort ignore list
     ignore_list.sort(key=lambda x: x.lower())
+
+    # Regex patterns for scraper artifacts that slip through parse_ingredients
+    # but aren't individual ingredient strings (misparses, concatenated vitamin
+    # lists, metadata leaks). Used by tests to cover edge cases.
+    artifact_patterns = [
+        r"^\)",                              # leading close-paren fragment
+        r"\),\s*\w",                         # mid-string "), <word>" — vitamin list continuation
+        r"^Item Number:",                    # PetSmart metadata
+        r"^Species:\s+Dog",                  # Nutro metadata
+        r"^Made in the USA$",                # marketing text
+        r"^Real Meat First$",               # marketing text
+        r"Stella.*Solutions",               # Stella & Chewy's product line names
+        r"9a Preservative\)",               # OCR error for "(a Preservative)"
+        r"^Amino Acid Complex$",            # generic mineral chelate fragment
+    ]
 
     output = {
         "families": dict(sorted(families.items())),
         "cross_reactivity_groups": cross_reactivity_groups,
         "ambiguous": dict(sorted(ambiguous.items(), key=lambda x: x[0].lower())),
         "ignore_for_correlation": ignore_list,
+        "ignore_patterns": artifact_patterns,
     }
 
     # Print summary to stderr

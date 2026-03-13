@@ -19,6 +19,7 @@ import json
 import logging
 import re
 from collections import Counter, defaultdict
+from collections.abc import Callable
 
 from bs4 import BeautifulSoup
 from wafer import SyncSession
@@ -557,7 +558,7 @@ def parse_product(
     brand_name: str,
     brand_pattern: str | None = None,
     ingredient_overrides: dict[str, str] | None = None,
-    detect_sub_brand: callable | None = None,
+    detect_sub_brand: Callable[[str], str | None] | None = None,
     manual_product_data: dict[str, dict] | None = None,
 ) -> Product | None:
     """Parse a PetSmart product page.
@@ -827,7 +828,7 @@ def scrape_petsmart_brand(
     listing_url: str | None = None,
     brand_pattern: str | None = None,
     ingredient_overrides: dict[str, str] | None = None,
-    detect_sub_brand: callable | None = None,
+    detect_sub_brand: Callable[[str], str | None] | None = None,
     manual_product_data: dict[str, dict] | None = None,
     skip_url_patterns: set[str] | None = None,
     rate_limit: float = 2.0,

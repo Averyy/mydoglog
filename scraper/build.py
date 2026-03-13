@@ -56,16 +56,14 @@ CHANNEL_MAP: dict[str, str] = {
 
 # source_group values allowed by the DB enum
 VALID_SOURCE_GROUPS = {
-    "poultry", "red_meat", "fish", "grain", "legume",
-    "root", "fruit", "dairy", "egg", "other", "additive",
-    "fiber", "vegetable", "seed",
+    "poultry", "red_meat", "fish", "crustacean", "mollusk",
+    "grain", "legume", "root", "fruit", "dairy", "egg",
+    "other", "additive", "fiber", "vegetable", "seed",
 }
 
 SOURCE_GROUP_MAP: dict[str, str] = {
     "exotic": "other",
     "mammal": "red_meat",
-    "mollusk": "fish",
-    "crustacean": "fish",
     "animal": "other",
     "unknown": "other",
 }
@@ -730,6 +728,12 @@ def main() -> None:
         try:
             for group_name, family_list in families.cross_reactivity.items():
                 upsert_cross_reactivity(cur, group_name, family_list)
+            # Delete orphaned groups no longer in the current set
+            valid_group_names = list(families.cross_reactivity.keys())
+            cur.execute(
+                "DELETE FROM ingredient_cross_reactivity WHERE group_name != ALL(%s)",
+                (valid_group_names,),
+            )
             conn.commit()
         except Exception:
             conn.rollback()

@@ -319,7 +319,7 @@ class TestSpotCheck:
         assert unmatched == [], f"Unmatched in Hill's z/d: {unmatched}"
 
     def test_purina_ha(self, lookup: dict, ignore_patterns: list[re.Pattern[str]]) -> None:
-        unmatched = self._check_product_ingredients("purina.json", "HA Hydrolyzed", lookup, ignore_patterns)
+        unmatched = self._check_product_ingredients("purina_vet.json", "HA Hydrolyzed", lookup, ignore_patterns)
         assert unmatched == [], f"Unmatched in Purina HA: {unmatched}"
 
     def test_royalcanin_hp(self, lookup: dict, ignore_patterns: list[re.Pattern[str]]) -> None:

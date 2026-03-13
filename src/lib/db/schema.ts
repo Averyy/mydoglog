@@ -63,6 +63,8 @@ export const ingredientSourceGroupEnum = pgEnum("ingredient_source_group", [
   "poultry",
   "red_meat",
   "fish",
+  "crustacean",
+  "mollusk",
   "grain",
   "legume",
   "root",

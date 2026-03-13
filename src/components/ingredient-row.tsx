@@ -49,10 +49,21 @@ export function scoreBorderColor(score: IngredientScore, mode: SignalMode = "bot
   return "border-l-score-excellent"
 }
 
+const CROSS_REACTIVITY_DISPLAY_NAMES: Record<string, string> = {
+  cattle_sheep: "Cattle & sheep",
+  deer_elk: "Deer & elk",
+}
+
+function displayGroupName(groupName: string): string {
+  return CROSS_REACTIVITY_DISPLAY_NAMES[groupName] ?? capitalize(groupName.replaceAll("_", " "))
+}
+
 export const AMBIGUOUS_DISPLAY_NAMES: Record<string, { label: string; hint: string }> = {
   "poultry (ambiguous)": { label: "Unspecified poultry", hint: "Could be chicken, turkey, or duck" },
-  "red_meat (ambiguous)": { label: "Unspecified red meat", hint: "Could be beef, pork, lamb, bison, or venison" },
+  "red_meat (ambiguous)": { label: "Unspecified red meat", hint: "Could be beef, pork, lamb, bison, venison, goat, elk, or wild boar" },
   "fish (ambiguous)": { label: "Unspecified fish", hint: "Could be salmon, whitefish, herring, etc." },
+  "crustacean (ambiguous)": { label: "Unspecified crustacean", hint: "Could be shrimp, crab, or similar" },
+  "mollusk (ambiguous)": { label: "Unspecified mollusk", hint: "Could be clam, mussel, or similar" },
   "animal (ambiguous)": { label: "Unspecified animal protein", hint: "Species not declared — typically beef, pork, or chicken" },
   "mammal (ambiguous)": { label: "Unspecified mammal", hint: "Could be beef, pork, lamb, or other mammal" },
 }
@@ -102,7 +113,7 @@ export function IngredientRow({
           ) : null}
           {score.crossReactivityGroup && (
             <Badge variant="outline" className="text-score-fair text-[10px] py-0">
-              {score.crossReactivityGroup}
+              {displayGroupName(score.crossReactivityGroup)}
             </Badge>
           )}
           {score.crossReactivityWarning && !score.crossReactivityGroup && (
@@ -144,7 +155,7 @@ export function IngredientRow({
           )}
           {score.crossReactivityGroup && (
             <p className="text-xs text-score-fair">
-              Part of the {score.crossReactivityGroup} cross-reactivity group — multiple proteins in this group show elevated scores
+              Part of the {displayGroupName(score.crossReactivityGroup)} cross-reactivity group — multiple proteins in this group show elevated scores
             </p>
           )}
           {score.isSplit && (

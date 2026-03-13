@@ -1871,6 +1871,47 @@ describe("flagCrossReactivity", () => {
     expect(result.find((s) => s.key === "chicken")!.crossReactivityGroup).toBe("poultry")
     expect(result.find((s) => s.key === "turkey")!.crossReactivityGroup).toBe("poultry")
   })
+
+  it("warns red_meat ambiguous keys across multiple cross-reactivity sub-groups", () => {
+    const cattleSheepGroup: CrossReactivityGroup = {
+      groupName: "cattle_sheep",
+      families: ["beef", "bison", "lamb", "goat", "dairy"],
+    }
+    const deerElkGroup: CrossReactivityGroup = {
+      groupName: "deer_elk",
+      families: ["venison", "elk"],
+    }
+    const porkGroup: CrossReactivityGroup = {
+      groupName: "pork",
+      families: ["pork", "wild_boar"],
+    }
+    const scores: IngredientScore[] = [
+      makeScore({ key: "beef", weightedPoopScore: 5.0, badDayCount: 8, badPoopDayCount: 8, dayCount: 10 }),
+      makeScore({ key: "red_meat (ambiguous)", weightedPoopScore: 3.0, badDayCount: 1, badPoopDayCount: 1, dayCount: 10 }),
+    ]
+    const result = flagCrossReactivity(scores, [cattleSheepGroup, deerElkGroup, porkGroup])
+    const ambiguous = result.find((s) => s.key === "red_meat (ambiguous)")!
+    expect(ambiguous.crossReactivityWarning).toContain("Beef")
+    expect(ambiguous.crossReactivityWarning).toContain("red meat")
+  })
+
+  it("warns red_meat ambiguous when bad family is in deer_elk sub-group", () => {
+    const cattleSheepGroup: CrossReactivityGroup = {
+      groupName: "cattle_sheep",
+      families: ["beef", "bison", "lamb", "goat", "dairy"],
+    }
+    const deerElkGroup: CrossReactivityGroup = {
+      groupName: "deer_elk",
+      families: ["venison", "elk"],
+    }
+    const scores: IngredientScore[] = [
+      makeScore({ key: "venison", weightedPoopScore: 4.5, badDayCount: 6, badPoopDayCount: 6, dayCount: 10 }),
+      makeScore({ key: "red_meat (ambiguous)", weightedPoopScore: 3.0, badDayCount: 1, badPoopDayCount: 1, dayCount: 10 }),
+    ]
+    const result = flagCrossReactivity(scores, [cattleSheepGroup, deerElkGroup])
+    const ambiguous = result.find((s) => s.key === "red_meat (ambiguous)")!
+    expect(ambiguous.crossReactivityWarning).toContain("Venison")
+  })
 })
 
 // ---------------------------------------------------------------------------

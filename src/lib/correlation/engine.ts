@@ -727,6 +727,24 @@ function extractSourceGroupFromAmbiguousKey(key: string): string | null {
   return key.slice(0, -" (ambiguous)".length)
 }
 
+/** Returns true if the score has elevated poop or itch signals. */
+function hasBadSignal(s: IngredientScore): boolean {
+  return (
+    (s.weightedPoopScore != null && s.weightedPoopScore >= 4.0) ||
+    (s.weightedItchScore != null && s.weightedItchScore >= 4.0) ||
+    (s.dayCount > 0 && s.badPoopDayCount / s.dayCount > 0.3) ||
+    (s.dayCount > 0 && s.badItchDayCount / s.dayCount > 0.3)
+  )
+}
+
+/**
+ * Maps source_group values to cross-reactivity group names when they differ.
+ * Must stay in sync with cross_reactivity_groups in scraper/build_families.py.
+ */
+const SOURCE_GROUP_TO_CROSS_REACTIVITY: Record<string, string[]> = {
+  red_meat: ["cattle_sheep", "deer_elk", "pork"],
+}
+
 export function flagCrossReactivity(
   scores: IngredientScore[],
   groups: CrossReactivityGroup[],
@@ -748,12 +766,7 @@ export function flagCrossReactivity(
     const badFamilies = new Set<string>()
     for (const s of matchingScores) {
       const family = extractFamilyFromKey(s.key)!
-      const isBad =
-        (s.weightedPoopScore != null && s.weightedPoopScore >= 4.0) ||
-        (s.weightedItchScore != null && s.weightedItchScore >= 4.0) ||
-        (s.dayCount > 0 && s.badPoopDayCount / s.dayCount > 0.3) ||
-        (s.dayCount > 0 && s.badItchDayCount / s.dayCount > 0.3)
-      if (isBad) badFamilies.add(family)
+      if (hasBadSignal(s)) badFamilies.add(family)
     }
 
     // Confirmed: 2+ families bad → flag with crossReactivityGroup
@@ -772,38 +785,44 @@ export function flagCrossReactivity(
       for (const s of matchingScores) {
         const family = extractFamilyFromKey(s.key)!
         if (family !== badFamily) {
-          s.crossReactivityWarning = `${capitalize(badFamily)} scored poorly \u2014 ${capitalize(family)} is in the same ${group.groupName} family and may cause similar reactions`
+          s.crossReactivityWarning = `${capitalize(badFamily)} scored poorly \u2014 ${capitalize(family)} is in the same ${group.groupName.replaceAll("_", " ")} family and may cause similar reactions`
         }
       }
     }
   }
 
   // Handle ambiguous ingredients: if "poultry (ambiguous)" exists and any
-  // specific poultry family has bad signals, warn the ambiguous key
+  // specific family in a related cross-reactivity group has bad signals, warn
+  // the ambiguous key. Source groups may map to multiple cross-reactivity groups
+  // (e.g. "red_meat" spans cattle_sheep, deer_elk, and pork).
   for (const s of result) {
     const sourceGroup = extractSourceGroupFromAmbiguousKey(s.key)
     if (sourceGroup == null) continue
 
-    // Find any group that matches this source group name
+    // Find all groups whose families overlap with this source group and
+    // collect bad families across all matching groups into a single warning
+    const allBad: IngredientScore[] = []
     for (const group of groups) {
-      if (group.groupName !== sourceGroup) continue
+      if (group.groupName !== sourceGroup && !SOURCE_GROUP_TO_CROSS_REACTIVITY[sourceGroup]?.includes(group.groupName)) continue
 
+      const familySet = new Set(group.families)
       const badInGroup = result.filter((other) => {
         if (isNonAllergenicKey(other.key)) return false
         const family = extractFamilyFromKey(other.key)
-        if (family == null || !new Set(group.families).has(family)) return false
-        return (
-          (other.weightedPoopScore != null && other.weightedPoopScore >= 4.0) ||
-          (other.weightedItchScore != null && other.weightedItchScore >= 4.0) ||
-          (other.dayCount > 0 && other.badPoopDayCount / other.dayCount > 0.3) ||
-          (other.dayCount > 0 && other.badItchDayCount / other.dayCount > 0.3)
-        )
+        if (family == null || !familySet.has(family)) return false
+        return hasBadSignal(other)
       })
+      allBad.push(...badInGroup)
+    }
 
-      if (badInGroup.length > 0) {
-        const badNames = badInGroup.map((b) => capitalize(extractFamilyFromKey(b.key)!)).join(", ")
-        s.crossReactivityWarning = `This could be any ${sourceGroup} protein \u2014 and ${badNames} scored poorly`
-      }
+    if (allBad.length > 0) {
+      const seen = new Set<string>()
+      const badNames = allBad
+        .map((b) => extractFamilyFromKey(b.key))
+        .filter((f): f is string => f != null && !seen.has(f) && (seen.add(f), true))
+        .map((f) => capitalize(f))
+        .join(", ")
+      s.crossReactivityWarning = `This could be any ${sourceGroup.replaceAll("_", " ")} protein \u2014 and ${badNames} scored poorly`
     }
   }
 
