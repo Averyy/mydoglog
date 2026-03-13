@@ -6,6 +6,13 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Checkbox } from "@/components/ui/checkbox"
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select"
 import { BirthDatePicker } from "@/components/birth-date-picker"
 import { toast } from "sonner"
 import { useActiveDog } from "@/components/active-dog-provider"
@@ -29,6 +36,7 @@ export function DogForm({ dog, onClose }: DogFormProps) {
   const [breed, setBreed] = useState(dog?.breed ?? "")
   const [birthDate, setBirthDate] = useState(dog?.birthDate ?? "")
   const [weightKg, setWeightKg] = useState(dog?.weightKg ?? "")
+  const [mealsPerDay, setMealsPerDay] = useState(dog?.mealsPerDay ?? 3)
   const [environmentEnabled, setEnvironmentEnabled] = useState(
     dog?.environmentEnabled ?? false,
   )
@@ -70,6 +78,7 @@ export function DogForm({ dog, onClose }: DogFormProps) {
           breed: breed || null,
           birthDate: birthDate || null,
           weightKg: weightKg ? Number(weightKg) : null,
+          mealsPerDay,
           environmentEnabled,
         }),
       })
@@ -139,6 +148,24 @@ export function DogForm({ dog, onClose }: DogFormProps) {
           value={weightKg}
           onChange={(e) => setWeightKg(e.target.value)}
         />
+      </div>
+      <div className="space-y-2">
+        <Label htmlFor="mealsPerDay">Meals per day</Label>
+        <Select
+          value={String(mealsPerDay)}
+          onValueChange={(v) => setMealsPerDay(Number(v))}
+        >
+          <SelectTrigger className="w-32">
+            <SelectValue />
+          </SelectTrigger>
+          <SelectContent>
+            {[1, 2, 3, 4, 5].map((m) => (
+              <SelectItem key={m} value={String(m)}>
+                {m} meal{m > 1 ? "s" : ""}
+              </SelectItem>
+            ))}
+          </SelectContent>
+        </Select>
       </div>
       <div className="flex items-start space-x-3 py-2">
         <Checkbox

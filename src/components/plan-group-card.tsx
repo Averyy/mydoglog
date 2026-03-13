@@ -7,11 +7,15 @@ import { ResponsivePopover } from "@/components/responsive-popover"
 import { ProductIngredientList, type ProductIngredientListData } from "@/components/product-ingredient-list"
 import { NutritionLabel } from "@/components/nutrition-label"
 import { computeNutrition, type NutritionItem } from "@/lib/nutrition"
+import { computeTransitionSchedule, isMainFoodType, type TransitionItem } from "@/lib/transition"
 import { formatDateRange, daysInRange, avgFromRange } from "@/lib/food-helpers"
-import { smallImageUrl, largeImageUrl } from "@/lib/utils"
+import { shiftDate } from "@/lib/date-utils"
+import { smallImageUrl, largeImageUrl, getToday } from "@/lib/utils"
 import { poopScoreColor, itchScoreColor } from "@/components/score-grid"
 import { LiaPenSolid } from "react-icons/lia"
-import type { FeedingPlanGroup } from "@/lib/types"
+import { ChevronDown } from "lucide-react"
+import { format, parseISO } from "date-fns"
+import type { FeedingPlanGroup, FeedingPlanItem } from "@/lib/types"
 import type { IngredientScore } from "@/lib/correlation/types"
 
 /** Singularize "1 weeks" -> "1 week", leave "2 weeks" as-is. */
@@ -33,6 +37,10 @@ export interface PlanGroupCardProps {
   productIngredientDataMap: Map<string, ProductIngredientListData>
   productNutritionMap: Map<string, ProductNutritionData>
   correlationScores: IngredientScore[]
+  /** Items from the previous plan group, needed to compute transition schedule */
+  previousGroupItems?: FeedingPlanItem[]
+  /** Dog-level meals per day setting */
+  mealsPerDay?: number
 }
 
 export function PlanGroupCard({
@@ -42,6 +50,8 @@ export function PlanGroupCard({
   productIngredientDataMap,
   productNutritionMap,
   correlationScores,
+  previousGroupItems,
+  mealsPerDay = 3,
 }: PlanGroupCardProps): React.ReactElement {
   const stats = group.logStats
   const sc = group.scorecard
@@ -73,6 +83,42 @@ export function PlanGroupCard({
       }
     }).filter((item) => item.ingredients.length > 0)
   }, [group.items, productIngredientDataMap])
+
+  // Transition schedule for the popover
+  const isTransitioning = isCurrent && group.transitionDays != null && group.transitionDays > 0
+  const transitionSchedule = useMemo(() => {
+    if (!isTransitioning || !previousGroupItems) return null
+    const oldItems: TransitionItem[] = previousGroupItems.map((item) => ({
+      productId: item.productId,
+      quantity: item.quantity ?? "0",
+      quantityUnit: item.quantityUnit ?? "cup",
+      mealSlot: item.mealSlot ?? undefined,
+      type: item.type,
+    }))
+    const newItems: TransitionItem[] = group.items.map((item) => ({
+      productId: item.productId,
+      quantity: item.quantity ?? "0",
+      quantityUnit: item.quantityUnit ?? "cup",
+      mealSlot: item.mealSlot ?? undefined,
+      type: item.type,
+    }))
+    return computeTransitionSchedule(oldItems, newItems, group.transitionDays!, group.startDate)
+  }, [isTransitioning, previousGroupItems, group.items, group.transitionDays, group.startDate])
+
+  // Product name lookup for transition display
+  const transitionProductNames = useMemo(() => {
+    if (!transitionSchedule) return new Map<string, string>()
+    const names = new Map<string, string>()
+    for (const item of group.items) {
+      names.set(item.productId, `${item.brandName} ${item.productName}`)
+    }
+    if (previousGroupItems) {
+      for (const item of previousGroupItems) {
+        names.set(item.productId, `${item.brandName} ${item.productName}`)
+      }
+    }
+    return names
+  }, [transitionSchedule, group.items, previousGroupItems])
 
   return (
     <Card className={`overflow-hidden gap-0 py-0 ${isCurrent ? "border-dashed" : ""}`}>
@@ -127,6 +173,7 @@ export function PlanGroupCard({
                   {combinedNutrition.caloriesPerDay ?? "-"}
                 </span>
                 <span className="text-xs leading-none font-medium uppercase tracking-wider text-muted-foreground">Cal</span>
+                <ChevronDown className="-ml-1 size-3 text-muted-foreground" />
               </button>
             }
           >
@@ -136,14 +183,38 @@ export function PlanGroupCard({
               compact
             />
           </ResponsivePopover>
+          {/* Transition schedule dropdown */}
+          {isTransitioning && (
+            transitionSchedule ? (
+              <ResponsivePopover
+                title="Transition Schedule"
+                align="end"
+                contentClassName="p-4"
+                trigger={
+                  <button
+                    type="button"
+                    className="flex basis-[calc(50%-0.1875rem)] flex-1 items-center gap-1.5 rounded-md bg-score-fair-bg px-2 py-1.5 hover:bg-item-hover transition-colors xs:basis-auto"
+                  >
+                    <span className="text-xs leading-none font-medium uppercase tracking-wider text-score-fair-text">Transitioning</span>
+                    <ChevronDown className="-ml-1 size-3 text-score-fair-text" />
+                  </button>
+                }
+              >
+                <TransitionScheduleContent
+                  schedule={transitionSchedule}
+                  transitionDays={group.transitionDays!}
+                  targetItems={group.items}
+                  productNames={transitionProductNames}
+                  mealsPerDay={mealsPerDay}
+                />
+              </ResponsivePopover>
+            ) : (
+              <div className="flex basis-[calc(50%-0.1875rem)] flex-1 items-center gap-1.5 rounded-md bg-score-fair-bg px-2 py-1.5 xs:basis-auto">
+                <span className="text-xs leading-none font-medium uppercase tracking-wider text-score-fair-text">Transitioning</span>
+              </div>
+            )
+          )}
         </div>
-
-        {/* Transition badge */}
-        {isCurrent && group.transitionDays != null && group.transitionDays > 0 && (
-          <Badge variant="outline" className="shrink-0 text-[10px] border-primary text-primary">
-            Transitioning
-          </Badge>
-        )}
 
         {/* Badges + edit (non-current backfills only) */}
         {!isCurrent && group.isBackfill && (
@@ -249,5 +320,126 @@ export function PlanGroupCard({
         )}
       </CardContent>
     </Card>
+  )
+}
+
+// ─── Transition schedule popover content ──────────────────────────────────────
+
+interface TransitionScheduleContentProps {
+  schedule: import("@/lib/transition").TransitionDayRow[]
+  transitionDays: number
+  targetItems: FeedingPlanItem[]
+  productNames: Map<string, string>
+  mealsPerDay: number
+}
+
+function TransitionScheduleContent({
+  schedule,
+  transitionDays,
+  targetItems,
+  productNames,
+  mealsPerDay,
+}: TransitionScheduleContentProps): React.ReactElement {
+  const today = getToday()
+  const afterDate = schedule.length > 0 ? shiftDate(schedule[schedule.length - 1].date, 1) : null
+  const showPerMeal = mealsPerDay > 1
+
+  function perMeal(qty: string): string {
+    return String(Math.round(parseFloat(qty) / mealsPerDay))
+  }
+
+  function roundQty(qty: string): string {
+    return String(Math.round(parseFloat(qty)))
+  }
+
+  return (
+    <div className="min-w-[260px]">
+      <p className="text-sm font-semibold">Transition Schedule</p>
+      <p className="mt-0.5 text-xs text-muted-foreground">
+        {transitionDays}-day gradual mix · {mealsPerDay} meal{mealsPerDay > 1 ? "s" : ""}/day
+      </p>
+      <div className="mt-3 rounded-lg border divide-y text-sm overflow-hidden">
+        {schedule.map((day, idx) => {
+          const isToday = day.date === today
+          return (
+            <div key={day.date} className={`px-3 py-2.5 ${isToday ? "bg-score-excellent-bg" : ""}`}>
+              <div className="flex items-center gap-2 mb-1.5">
+                <span className="text-xs text-muted-foreground">
+                  <span className="font-semibold">Day {idx + 1}:</span> {format(parseISO(day.date), "EEE, MMM d")}
+                </span>
+                {isToday && (
+                  <Badge variant="outline" className="text-[9px] border-primary text-primary px-1.5 py-0">
+                    Today
+                  </Badge>
+                )}
+              </div>
+              <table className="w-full text-xs">
+                <tbody>
+                  {day.items.map((item, i) => (
+                    <tr key={`${item.productId}-${i}`}>
+                      <td className="truncate max-w-0 w-full align-middle text-foreground py-0.5 pr-3">
+                        {productNames.get(item.productId) ?? item.productId}
+                      </td>
+                      <td className="whitespace-nowrap text-right align-middle text-foreground tabular-nums py-0.5">
+                        {roundQty(item.quantity)} {item.quantityUnit}
+                      </td>
+                      {showPerMeal && (
+                        <td className="whitespace-nowrap text-right align-middle text-foreground tabular-nums py-0.5 pl-2.5">
+                          {perMeal(item.quantity)}<span className="text-[10px] text-muted-foreground">/meal</span>
+                        </td>
+                      )}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )
+        })}
+        {/* Day after transition — full new quantities */}
+        {afterDate && (() => {
+          const isToday = afterDate === today
+          const isPast = afterDate < today
+          const newMainItems = targetItems.filter((i) => isMainFoodType(i.type))
+          const newNonMainItems = targetItems.filter((i) => !isMainFoodType(i.type))
+          const allNewItems = [...newMainItems, ...newNonMainItems]
+          return (
+            <div className={`px-3 py-2.5 ${isToday ? "bg-score-excellent-bg" : isPast ? "" : "bg-item-hover"}`}>
+              <div className="flex items-center gap-2 mb-1.5">
+                <span className="text-xs text-foreground-muted-60">
+                  <span className="font-semibold">Day {schedule.length + 1}:</span> {format(parseISO(afterDate), "EEE, MMM d")} (transition complete)
+                </span>
+                {isToday && (
+                  <Badge variant="outline" className="text-[9px] border-primary text-primary px-1.5 py-0">
+                    Today
+                  </Badge>
+                )}
+              </div>
+              <table className="w-full text-xs text-foreground-muted-60">
+                <tbody>
+                  {allNewItems.map((item, i) => {
+                    const dailyQty = item.quantity || "0"
+                    return (
+                      <tr key={`after-${item.productId}-${i}`}>
+                        <td className="truncate max-w-0 w-full align-middle py-0.5 pr-3">
+                          {productNames.get(item.productId) ?? item.productName}
+                        </td>
+                        <td className="whitespace-nowrap text-right align-middle tabular-nums py-0.5">
+                          {roundQty(dailyQty)} {item.quantityUnit}
+                        </td>
+                        {showPerMeal && (
+                          <td className="whitespace-nowrap text-right align-middle tabular-nums py-0.5 pl-2.5">
+                            {perMeal(dailyQty)}<span className="text-[10px]">/meal</span>
+                          </td>
+                        )}
+                      </tr>
+                    )
+                  })}
+                </tbody>
+              </table>
+            </div>
+          )
+        })()}
+      </div>
+    </div>
   )
 }

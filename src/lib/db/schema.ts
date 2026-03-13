@@ -308,6 +308,7 @@ export const dogs = pgTable(
     birthDate: date("birth_date"),
     weightKg: numeric("weight_kg"),
     environmentEnabled: boolean("environment_enabled").notNull().default(false),
+    mealsPerDay: integer("meals_per_day").notNull().default(3),
     createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
     updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
   },

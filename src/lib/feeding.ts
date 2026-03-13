@@ -41,7 +41,10 @@ export function buildFeedingGroupMap(
   rows: FeedingGroupRow[],
 ): Map<string, FeedingPlanGroup> {
   const groupMap = new Map<string, FeedingPlanGroup>()
+  // Track all rows per group for two-pass transition handling
+  const groupRows = new Map<string, FeedingGroupRow[]>()
 
+  // First pass: determine group date ranges
   for (const row of rows) {
     let group = groupMap.get(row.planGroupId)
     if (!group) {
@@ -60,7 +63,10 @@ export function buildFeedingGroupMap(
         previousPlanGroupId: row.previousPlanGroupId,
       }
       groupMap.set(row.planGroupId, group)
+      groupRows.set(row.planGroupId, [])
     }
+
+    groupRows.get(row.planGroupId)!.push(row)
 
     // Use earliest startDate, latest endDate for the group
     if (row.startDate < group.startDate) group.startDate = row.startDate
@@ -69,28 +75,43 @@ export function buildFeedingGroupMap(
     } else if (row.endDate > group.endDate) {
       group.endDate = row.endDate
     }
+  }
 
-    // For groups with transitions, only include ongoing (endDate IS NULL) items
-    if (group.transitionDays && group.transitionDays > 0 && row.endDate !== null) {
-      continue
-    }
+  // Second pass: populate items with transition-aware filtering
+  for (const [planGroupId, group] of groupMap) {
+    const rows = groupRows.get(planGroupId)!
+    // For transition groups, filter to target items (not single-day mixed rows):
+    // - Active (ongoing): only include rows with endDate IS NULL
+    // - Ended: only include rows where startDate !== endDate (former-ongoing rows,
+    //   not single-day transition rows which have startDate === endDate)
+    const hasTransition = group.transitionDays != null && group.transitionDays > 0
+    const isActiveTransition = hasTransition && group.endDate === null
 
-    const item: FeedingPlanItem = {
-      id: row.id,
-      productId: row.productId,
-      productName: row.productName,
-      brandName: row.brandName,
-      imageUrl: row.imageUrl,
-      type: row.productType,
-      format: row.productFormat,
-      quantity: row.quantity,
-      quantityUnit: row.quantityUnit,
-      mealSlot: row.mealSlot,
-    }
+    for (const row of rows) {
+      if (isActiveTransition && row.endDate !== null) {
+        continue
+      }
+      if (hasTransition && !isActiveTransition && row.startDate === row.endDate) {
+        continue
+      }
 
-    // Dedup: skip if same productId+mealSlot already added
-    if (!group.items.some((existing) => existing.productId === item.productId && existing.mealSlot === item.mealSlot)) {
-      group.items.push(item)
+      const item: FeedingPlanItem = {
+        id: row.id,
+        productId: row.productId,
+        productName: row.productName,
+        brandName: row.brandName,
+        imageUrl: row.imageUrl,
+        type: row.productType,
+        format: row.productFormat,
+        quantity: row.quantity,
+        quantityUnit: row.quantityUnit,
+        mealSlot: row.mealSlot,
+      }
+
+      // Dedup: skip if same productId+mealSlot already added
+      if (!group.items.some((existing) => existing.productId === item.productId && existing.mealSlot === item.mealSlot)) {
+        group.items.push(item)
+      }
     }
   }
 

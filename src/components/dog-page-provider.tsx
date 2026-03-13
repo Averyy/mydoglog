@@ -7,6 +7,7 @@ interface DogPageContextValue {
   id: string
   name: string
   slug: string
+  mealsPerDay: number
 }
 
 const DogPageContext = createContext<DogPageContextValue | null>(null)
@@ -15,6 +16,7 @@ export function DogPageProvider({
   id,
   name,
   slug,
+  mealsPerDay,
   children,
 }: DogPageContextValue & { children: React.ReactNode }): React.ReactElement {
   const { setActiveDogId, setActiveDogSlug } = useActiveDog()
@@ -25,7 +27,7 @@ export function DogPageProvider({
   }, [id, slug, setActiveDogId, setActiveDogSlug])
 
   return (
-    <DogPageContext.Provider value={{ id, name, slug }}>
+    <DogPageContext.Provider value={{ id, name, slug, mealsPerDay }}>
       {children}
     </DogPageContext.Provider>
   )

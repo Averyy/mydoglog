@@ -23,6 +23,7 @@ import { computeNutrition, getAvailableUnits, type NutritionItem, type Available
 import { computeTransitionSchedule, isMainFoodType, type TransitionItem } from "@/lib/transition"
 import { getToday } from "@/lib/utils"
 import { shiftDate } from "@/lib/date-utils"
+import { useDogPage } from "@/components/dog-page-provider"
 
 // ─── Local types ─────────────────────────────────────────────────────────────
 
@@ -154,6 +155,7 @@ export function RoutineEditorContent({
   const [saving, setSaving] = useState(false)
   const [view, setView] = useState<EditorView>("edit")
   const [transitionDays, setTransitionDays] = useState(3)
+  const { mealsPerDay } = useDogPage()
 
   // ── Product detail fetching for nutrition label ─────────────────────
 
@@ -428,7 +430,7 @@ export function RoutineEditorContent({
           Gradually mix old and new food to ease the switch.
         </p>
 
-        {/* Day selector */}
+        {/* Transition options */}
         <div className="mt-4">
           <Label className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
             Transition Length
@@ -463,16 +465,22 @@ export function RoutineEditorContent({
                     Day {idx + 1} — {format(parseISO(day.date), "EEE, MMM d")}
                   </div>
                   <div className="space-y-1">
-                    {day.items.map((item, i) => (
-                      <div key={`${item.productId}-${i}`} className="flex items-center justify-between gap-2">
-                        <span className="truncate text-foreground">
-                          {productNames.get(item.productId) ?? item.productId}
-                        </span>
-                        <span className="shrink-0 text-muted-foreground tabular-nums">
-                          {item.quantity} {item.quantityUnit}
-                        </span>
-                      </div>
-                    ))}
+                    {day.items.map((item, i) => {
+                      const perMeal = Math.round((parseFloat(item.quantity) / mealsPerDay) * 100) / 100
+                      return (
+                        <div key={`${item.productId}-${i}`} className="flex items-center justify-between gap-2">
+                          <span className="truncate text-foreground">
+                            {productNames.get(item.productId) ?? item.productId}
+                          </span>
+                          <span className="shrink-0 text-muted-foreground tabular-nums">
+                            {item.quantity} {item.quantityUnit}
+                            {mealsPerDay > 1 && (
+                              <span className="text-xs ml-1">({perMeal}/meal)</span>
+                            )}
+                          </span>
+                        </div>
+                      )
+                    })}
                   </div>
                 </div>
               ))}
@@ -488,16 +496,23 @@ export function RoutineEditorContent({
                       Day {transitionPreview.length + 1} — {format(parseISO(afterDate), "EEE, MMM d")} onwards
                     </div>
                     <div className="space-y-1">
-                      {allNewItems.map((item, i) => (
-                        <div key={`after-${item.product!.id}-${i}`} className="flex items-center justify-between gap-2">
-                          <span className="truncate text-foreground">
-                            {productNames.get(item.product!.id) ?? item.product!.name}
-                          </span>
-                          <span className="shrink-0 text-muted-foreground tabular-nums">
-                            {item.quantity || "1"} {item.quantityUnit}
-                          </span>
-                        </div>
-                      ))}
+                      {allNewItems.map((item, i) => {
+                        const dailyQty = item.quantity || "1"
+                        const perMeal = Math.round((parseFloat(dailyQty) / mealsPerDay) * 100) / 100
+                        return (
+                          <div key={`after-${item.product!.id}-${i}`} className="flex items-center justify-between gap-2">
+                            <span className="truncate text-foreground">
+                              {productNames.get(item.product!.id) ?? item.product!.name}
+                            </span>
+                            <span className="shrink-0 text-muted-foreground tabular-nums">
+                              {dailyQty} {item.quantityUnit}
+                              {mealsPerDay > 1 && (
+                                <span className="text-xs ml-1">({perMeal}/meal)</span>
+                              )}
+                            </span>
+                          </div>
+                        )
+                      })}
                     </div>
                   </div>
                 )

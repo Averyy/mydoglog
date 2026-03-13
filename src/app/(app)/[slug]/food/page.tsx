@@ -39,7 +39,7 @@ interface ScorecardPageData {
 }
 
 export default function FoodPage(): React.ReactElement {
-  const { id: dogId } = useDogPage()
+  const { id: dogId, mealsPerDay } = useDogPage()
 
   // Routine data
   const [activePlan, setActivePlan] = useState<ActivePlan | null>(null)
@@ -259,6 +259,12 @@ export default function FoodPage(): React.ReactElement {
           productIngredientDataMap={productIngredientDataMap}
           productNutritionMap={productNutritionMap}
           correlationScores={correlation?.scores ?? []}
+          mealsPerDay={mealsPerDay}
+          previousGroupItems={
+            data.active.previousPlanGroupId
+              ? data.past.find((g) => g.planGroupId === data.active!.previousPlanGroupId)?.items
+              : undefined
+          }
         />
       ) : (
         <ActivePlanCard

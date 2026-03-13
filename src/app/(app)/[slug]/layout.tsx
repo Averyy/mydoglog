@@ -21,7 +21,7 @@ export default async function SlugLayout({
   const { dog } = result
 
   return (
-    <DogPageProvider id={dog.id} name={dog.name} slug={dog.slug}>
+    <DogPageProvider id={dog.id} name={dog.name} slug={dog.slug} mealsPerDay={dog.mealsPerDay}>
       {children}
     </DogPageProvider>
   )

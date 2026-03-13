@@ -45,6 +45,10 @@ export async function PATCH(
       updates.weightKg = body.weightKg != null ? String(body.weightKg) : null
     if (body.environmentEnabled !== undefined)
       updates.environmentEnabled = body.environmentEnabled === true
+    if (body.mealsPerDay !== undefined) {
+      const mpd = Math.max(1, Math.min(5, Math.round(Number(body.mealsPerDay))))
+      updates.mealsPerDay = mpd
+    }
 
     const [updated] = await db
       .update(dogs)

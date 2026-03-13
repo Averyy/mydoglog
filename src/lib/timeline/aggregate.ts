@@ -4,7 +4,9 @@ import type { GanttBarData, TimelineDataPoint, TimelineIndividualPoint } from "@
 
 // --- Pollen ---
 
-/** Compute daily max pollen level (max of pollen, spore) for each date. */
+/** Compute daily combined environmental level for each date.
+ *  Uses the higher of pollen/spore, bumped up one level when both are elevated (both > 0).
+ *  Capped at 4 (very high). */
 export function computeDailyMaxPollen(
   rows: { date: string; pollenLevel: number; sporeLevel: number | null }[],
   startDate: string,
@@ -13,7 +15,11 @@ export function computeDailyMaxPollen(
   const result = new Map<string, number>()
   for (const row of rows) {
     if (row.date < startDate || row.date > endDate) continue
-    const level = Math.max(row.pollenLevel, row.sporeLevel ?? 0)
+    const pollen = row.pollenLevel
+    const spore = row.sporeLevel ?? 0
+    const base = Math.max(pollen, spore)
+    const bothActive = pollen > 0 && spore > 0
+    const level = Math.min(4, bothActive ? base + 1 : base)
     result.set(row.date, Math.max(result.get(row.date) ?? 0, level))
   }
   return result
