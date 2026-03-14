@@ -19,6 +19,7 @@ import {
 } from "@/lib/db"
 import { eq, and, gte, lte, sql, asc, or } from "drizzle-orm"
 import { AEROBIOLOGY_PROVIDER, TWN_PROVIDER, HAMILTON_LOCATION, NIAGARA_LOCATION } from "@/lib/pollen/constants"
+import { deduplicatePollenRows } from "@/lib/pollen/dedup"
 
 import { shiftDate } from "@/lib/date-utils"
 import type { PlanPeriod } from "@/lib/feeding"
@@ -329,12 +330,8 @@ export async function fetchCorrelationInput(
     poopLogs: poopRows,
     itchinessLogs: itchRows,
     scorecards: scorecardRows,
-    pollenLogs: (() => {
-      const aeroDates = new Set(pollenRows.filter((r) => r.provider === AEROBIOLOGY_PROVIDER).map((r) => r.date))
-      return pollenRows
-        .filter((r) => r.provider === AEROBIOLOGY_PROVIDER || !aeroDates.has(r.date))
-        .map((r) => ({ date: r.date, pollenLevel: r.pollenLevel, sporeLevel: r.sporeLevel }))
-    })(),
+    pollenLogs: deduplicatePollenRows(pollenRows)
+      .map((r) => ({ date: r.date, pollenLevel: r.pollenLevel, sporeLevel: r.sporeLevel })),
     planPeriods,
     backfills,
     crossReactivityGroups: crossReactivityRows.map((r) => ({

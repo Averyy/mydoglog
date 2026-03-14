@@ -1,20 +1,13 @@
 "use client"
 
-import { useState } from "react"
+import { useState, cloneElement } from "react"
 import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog"
+import { ResponsiveModal } from "@/components/responsive-modal"
 import { DogForm } from "@/components/dog-form"
 
 interface AddDogModalProps {
-  trigger?: React.ReactNode
+  trigger?: React.ReactElement<{ onClick?: () => void }>
 }
 
 export function AddDogModal({ trigger }: AddDogModalProps): React.ReactElement {
@@ -26,20 +19,20 @@ export function AddDogModal({ trigger }: AddDogModalProps): React.ReactElement {
     router.refresh()
   }
 
+  const triggerElement = trigger ?? <Button size="lg">Add your dog</Button>
+
   return (
-    <Dialog open={open} onOpenChange={setOpen}>
-      <DialogTrigger asChild>
-        {trigger ?? <Button size="lg">Add your dog</Button>}
-      </DialogTrigger>
-      <DialogContent>
-        <DialogHeader>
-          <DialogTitle>Add a dog</DialogTitle>
-          <DialogDescription className="sr-only">
-            Fill in your dog's details to start tracking.
-          </DialogDescription>
-        </DialogHeader>
+    <>
+      {cloneElement(triggerElement, { onClick: () => setOpen(true) })}
+
+      <ResponsiveModal
+        open={open}
+        onOpenChange={setOpen}
+        title="Add a dog"
+        description="Fill in your dog's details to start tracking."
+      >
         <DogForm onClose={handleClose} />
-      </DialogContent>
-    </Dialog>
+      </ResponsiveModal>
+    </>
   )
 }

@@ -7,6 +7,7 @@ import { ResponsiveModal } from "@/components/responsive-modal"
 import { DogForm } from "@/components/dog-form"
 import { AddDogModal } from "@/components/add-dog-modal"
 import { DeleteDogButton } from "../dogs/delete-button"
+import { ExportLlmModal } from "@/components/export-llm-modal"
 import type { Dog } from "@/lib/db/schema"
 
 interface SettingsClientProps {
@@ -51,6 +52,11 @@ export function SettingsClient({ dogs }: SettingsClientProps): React.ReactElemen
                     </p>
                   </div>
                   <div className="flex gap-2 shrink-0 ml-4">
+                    <ExportLlmModal
+                      dogId={dog.id}
+                      dogName={dog.name}
+                      environmentEnabled={dog.environmentEnabled}
+                    />
                     <Button
                       variant="outline"
                       size="sm"

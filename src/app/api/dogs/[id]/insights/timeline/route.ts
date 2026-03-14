@@ -17,6 +17,7 @@ import { eq, and, gte, lte, min, or, isNull } from "drizzle-orm"
 import { getToday } from "@/lib/utils"
 import { shiftDate } from "@/lib/date-utils"
 import { AEROBIOLOGY_PROVIDER, TWN_PROVIDER, HAMILTON_LOCATION, NIAGARA_LOCATION } from "@/lib/pollen/constants"
+import { deduplicatePollenRows } from "@/lib/pollen/dedup"
 import { isValidRange, RANGE_OFFSETS, INDIVIDUAL_RANGES } from "@/lib/timeline-types"
 import type { TimelineRange, GanttBarData } from "@/lib/timeline-types"
 import {
@@ -160,10 +161,7 @@ export async function GET(
       ])
 
     // --- Pollen: prefer Aero, fall back to TWN for days without Aero data ---
-    const aeroDates = new Set(pollenRows.filter((r) => r.provider === AEROBIOLOGY_PROVIDER).map((r) => r.date))
-    const dedupedPollenRows = pollenRows.filter(
-      (r) => r.provider === AEROBIOLOGY_PROVIDER || !aeroDates.has(r.date),
-    )
+    const dedupedPollenRows = deduplicatePollenRows(pollenRows)
 
     const dailyPollenMap = computeDailyMaxPollen(dedupedPollenRows, windowStart, today)
     const rawPollenByDay = new Map<string, number>()
