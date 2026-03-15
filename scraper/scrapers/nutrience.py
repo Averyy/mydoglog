@@ -37,6 +37,25 @@ from .common import (
 
 logger = logging.getLogger(__name__)
 
+_INGREDIENT_OVERRIDES: dict[str, str] = {
+    "turmeric. vitamins": "turmeric, vitamins",
+    "L-lysine chondroitin sulfate": "L-lysine, chondroitin sulfate",
+    "dreid Bifidobacterium": "dried Bifidobacterium",
+    "vitamin B12supplement": "vitamin B12 supplement",
+    "pyridoxine hydrochloride thiamine mononitrate": "pyridoxine hydrochloride, thiamine mononitrate",
+    "Thiamine.,": "Thiamine,",
+    "aniseed).,": "aniseed),",
+    "salmon oil.,": "salmon oil,",
+    "DLmethionine": "DL-methionine",
+    "L lysine": "L-lysine",
+    "vitamin B 12": "vitamin B12",
+    "vitamin D 3": "vitamin D3",
+    "Bacillus subtillis": "Bacillus subtilis",
+    "curcubita maxima": "cucurbita maxima",
+    "pantothenate calcium": "calcium pantothenate",
+    "L ascorbyl-2-polyphosphate": "L-ascorbyl-2-polyphosphate",
+}
+
 WEBSITE_URL = "https://nutrience.com"
 
 # WooCommerce Store API (public, no auth required)
@@ -482,5 +501,7 @@ def scrape_nutrience(output_dir: Path) -> int:
             if product:
                 products.append(product)
 
-    write_brand_json("Nutrience", WEBSITE_URL, products, output_dir, slug="nutrience")
+    write_brand_json("Nutrience", WEBSITE_URL, products, output_dir, slug="nutrience",
+        ingredient_overrides=_INGREDIENT_OVERRIDES,
+    )
     return len(products)

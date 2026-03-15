@@ -37,8 +37,9 @@ Last updated: 2026-03-10
 | Eukanuba | 8 | retail | 100% | 100% | 100% | Done |
 | Kirkland Signature | 10 | retail | 100% | 100% | 100% | Done |
 | Rachael Ray Nutrish | 36 | retail | 100% | 100% | 100% | Done |
+| Fromm | 113 | retail | 100% | 100% | 100% | Done |
 
-**Total scraped:** 1,717 products (100% with ingredients, 99% GA, 97% calories)
+**Total scraped:** 1,830 products (100% with ingredients, 99% GA, 97% calories)
 
 ---
 
@@ -105,6 +106,7 @@ Each scraper file (`scrapers/{brand}.py`) contains the full parsing details. Thi
 | Brand | Site | Stack | Key Notes |
 |-------|------|-------|-----------|
 | Kirkland Signature | `costco.com` | SSR HTML | Diamond-manufactured. costco.ca is JS SPA with PDFs — US pages have identical formulas as plain text. 10 products, 1 manual (biscuits from packaging). |
+| Fromm | `frommfamily.com` | Umbraco (ASP.NET) + Vue.js | `/sitemap` HTML page for discovery. 113 products (86 food, 22 treats, 5 supplements). Popular premium brand in Canadian independents. |
 
 | Brand | Site | Stack | Key Notes |
 |-------|------|-------|-----------|

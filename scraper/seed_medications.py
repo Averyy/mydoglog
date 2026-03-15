@@ -39,11 +39,13 @@ def seed_medications(conn) -> int:
                 INSERT INTO medication_products (
                     id, name, generic_name, manufacturer, category,
                     drug_class, dosage_form, default_intervals,
-                    description, common_side_effects, side_effects_sources
+                    description, common_side_effects, side_effects_sources,
+                    suppresses_itch, has_gi_side_effects
                 ) VALUES (
                     %s, %s, %s, %s, %s::medication_category,
                     %s, %s::dosage_form, %s::dosing_interval[],
-                    %s, %s, %s
+                    %s, %s, %s,
+                    %s, %s
                 )
                 ON CONFLICT (name) DO UPDATE SET
                     generic_name = EXCLUDED.generic_name,
@@ -54,7 +56,9 @@ def seed_medications(conn) -> int:
                     default_intervals = EXCLUDED.default_intervals,
                     description = EXCLUDED.description,
                     common_side_effects = EXCLUDED.common_side_effects,
-                    side_effects_sources = EXCLUDED.side_effects_sources
+                    side_effects_sources = EXCLUDED.side_effects_sources,
+                    suppresses_itch = EXCLUDED.suppresses_itch,
+                    has_gi_side_effects = EXCLUDED.has_gi_side_effects
                 """,
                 (
                     str(uuid4()),
@@ -68,6 +72,8 @@ def seed_medications(conn) -> int:
                     med.get("description"),
                     med.get("common_side_effects"),
                     med.get("side_effects_sources"),
+                    med.get("suppresses_itch", False),
+                    med.get("has_gi_side_effects", False),
                 ),
             )
             count += 1

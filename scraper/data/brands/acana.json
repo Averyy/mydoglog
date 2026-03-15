@@ -43,7 +43,7 @@
       "product_type": "food",
       "product_format": "wet",
       "sub_brand": "Premium Pâté",
-      "ingredients_raw": "Duck, turkey, duck broth, turkey bone broth, turkey liver, sweet potatoes, spinach, natural flavor, carrots, pumpkin, dicalcium phosphate, guar gum, agar-agar, inulin, potassium chloride, salt, blueberries, cranberries, minerals (zinc proteinate, iron proteinate, selenium yeast, cobalt proteinate, copper proteinate, manganese proteinate, potassium iodide), marine microalgae oil, vitamins (vitamin E supplement, niacin supplement, D-calcium pantothenate, thiamine mononitrate, riboflavin supplement, vitamin A supplement, vitamin B12 supplement, pyridoxine hydrochloride, biotin, vitamin D3 supplement, folic acid), choline chloride, magnesium sulfate, sodium carbonate, calcium carbonate, L-ascorbyl-2 polyphosphate (vitamin C)",
+      "ingredients_raw": "Duck, turkey, duck broth, turkey bone broth, turkey liver, sweet potatoes, spinach, natural flavor, carrots, pumpkin, dicalcium phosphate, guar gum, agar-agar, inulin, potassium chloride, salt, blueberries, cranberries, minerals (zinc proteinate, iron proteinate, selenium yeast, cobalt proteinate, copper proteinate, manganese proteinate, potassium iodide), marine microalgae oil, vitamins (vitamin E supplement, niacin supplement, D-calcium pantothenate, thiamine mononitrate, riboflavin supplement, vitamin A supplement, vitamin B12 supplement, pyridoxine hydrochloride, biotin, vitamin D3 supplement, folic acid), choline chloride, magnesium sulfate, sodium carbonate, calcium carbonate, L-ascorbyl-2-polyphosphate (vitamin C)",
       "guaranteed_analysis": {
         "crude_protein_min": 8.0,
         "crude_fat_min": 5.0,
@@ -311,7 +311,7 @@
       "channel": "retail",
       "product_type": "food",
       "product_format": "dry",
-      "ingredients_raw": "Chicken with ground bone, chicken giblets (liver, heart, gizzard), whole herring, pumpkin, natural chicken flavour, chicken bone broth, organic butternut squash, organic carrots, organic pears, calcium carbonate, dried chicory root, turmeric, dried kelp, salt, mixed tocopherols (preservative), vitamins (vitamin E supplement, niacin, thiamine mononitrate, riboflavin, calcium pantothenate, pyridoxine hydrochloride, folic acid, vitamin B12 supplement), minerals (zinc proteinate, copper proteinate), citric acid (preservative), rosemary extrac",
+      "ingredients_raw": "Chicken with ground bone, chicken giblets (liver, heart, gizzard), whole herring, pumpkin, natural chicken flavour, chicken bone broth, organic butternut squash, organic carrots, organic pears, calcium carbonate, dried chicory root, turmeric, dried kelp, salt, mixed tocopherols (preservative), vitamins (vitamin E supplement, niacin, thiamine mononitrate, riboflavin, calcium pantothenate, pyridoxine hydrochloride, folic acid, vitamin B12 supplement), minerals (zinc proteinate, copper proteinate), citric acid (preservative), rosemary extract",
       "guaranteed_analysis": {
         "crude_protein_min": 42.0,
         "crude_fat_min": 28.0,
@@ -578,7 +578,7 @@
       "product_type": "food",
       "product_format": "dry",
       "sub_brand": "Highest Protein",
-      "ingredients_raw": "Raw lamb, raw duck, fresh eggs, lamb meal, herring meal, turkey meal, whole red lentils, whole chickpeas, whole green peas, chicken fat, raw turkey, raw trout, raw salmon, raw lamb liver, whole green lentils, whole pinto beans, whole yellow peas, fish oil, lentil fibre, pea starch, raw lamb kidney, raw lamb tripe, dried kelp, yeast (s. cerevisiae), fresh whole pumpkin, fresh whole butternut squash, fresh whole carrots, fresh whole apples, fresh whole pears, fresh whole zucchini, fresh kale, fresh spinach, fresh turnip greens, fresh beet greens, whole cranberries, whole blueberries, dried chicory root, turmeric, sarsaparilla root, althea root , rosehips, juniper berries",
+      "ingredients_raw": "Raw lamb, raw duck, fresh eggs, lamb meal, herring meal, turkey meal, whole red lentils, whole chickpeas, whole green peas, chicken fat, raw turkey, raw trout, raw salmon, raw lamb liver, whole green lentils, whole pinto beans, whole yellow peas, fish oil, lentil fibre, pea starch, raw lamb kidney, raw lamb tripe, dried kelp, yeast (s. cerevisiae), fresh whole pumpkin, fresh whole butternut squash, fresh whole carrots, fresh whole apples, fresh whole pears, fresh whole zucchini, fresh kale, fresh spinach, fresh turnip greens, fresh beet greens, whole cranberries, whole blueberries, dried chicory root, turmeric, sarsaparilla root, althea root, rosehips, juniper berries",
       "guaranteed_analysis": {
         "crude_protein_min": 35.0,
         "crude_fat_min": 17.0,
@@ -599,7 +599,7 @@
       "product_type": "food",
       "product_format": "dry",
       "sub_brand": "Highest Protein",
-      "ingredients_raw": "Raw whole herring, raw salmon, raw flounder, herring meal, salmon meal, blue whiting meal, whole red lentils, whole chickpeas, whole green peas, whole green lentils, fish oil, raw whole hake, raw whole rockfish, whole pinto beans, whole yellow peas, pea starch, sunflower oil, lentil fibre, dried kelp, yeast (s. cerevisiae), fresh whole pumpkin, fresh whole butternut squash, fresh whole carrots, fresh whole apples, fresh whole pears, fresh whole zucchini, fresh kale, fresh spinach, fresh turnip greens, fresh beet greens, whole cranberries, whole blueberries, dried chicory root, turmeric, sarsaparilla root, althea root , rosehips, juniper berries",
+      "ingredients_raw": "Raw whole herring, raw salmon, raw flounder, herring meal, salmon meal, blue whiting meal, whole red lentils, whole chickpeas, whole green peas, whole green lentils, fish oil, raw whole hake, raw whole rockfish, whole pinto beans, whole yellow peas, pea starch, sunflower oil, lentil fibre, dried kelp, yeast (s. cerevisiae), fresh whole pumpkin, fresh whole butternut squash, fresh whole carrots, fresh whole apples, fresh whole pears, fresh whole zucchini, fresh kale, fresh spinach, fresh turnip greens, fresh beet greens, whole cranberries, whole blueberries, dried chicory root, turmeric, sarsaparilla root, althea root, rosehips, juniper berries",
       "guaranteed_analysis": {
         "crude_protein_min": 35.0,
         "crude_fat_min": 17.0,
@@ -620,7 +620,7 @@
       "product_type": "food",
       "product_format": "dry",
       "sub_brand": "Highest Protein",
-      "ingredients_raw": "Raw beef, raw lamb, raw pork liver, beef meal, lamb meal, pork meal, whole red lentils, whole chickpeas, whole green peas, pork fat, raw pork, raw trout, whole pinto beans, whole green lentils, whole yellow peas, fish oil, raw beef liver, lentil fibre, pea starch, raw beef kidney, raw beef tripe, dried kelp, yeast (s. cerevisiae), salt, fresh whole pumpkin, fresh whole butternut squash, fresh whole carrots, fresh whole apples, fresh whole pears, fresh whole zucchini, fresh kale, fresh spinach, fresh turnip greens, fresh beet greens, whole cranberries, whole blueberries, dried chicory root, turmeric, sarsaparilla root, althea root , rosehips, juniper berries",
+      "ingredients_raw": "Raw beef, raw lamb, raw pork liver, beef meal, lamb meal, pork meal, whole red lentils, whole chickpeas, whole green peas, pork fat, raw pork, raw trout, whole pinto beans, whole green lentils, whole yellow peas, fish oil, raw beef liver, lentil fibre, pea starch, raw beef kidney, raw beef tripe, dried kelp, yeast (s. cerevisiae), salt, fresh whole pumpkin, fresh whole butternut squash, fresh whole carrots, fresh whole apples, fresh whole pears, fresh whole zucchini, fresh kale, fresh spinach, fresh turnip greens, fresh beet greens, whole cranberries, whole blueberries, dried chicory root, turmeric, sarsaparilla root, althea root, rosehips, juniper berries",
       "guaranteed_analysis": {
         "crude_protein_min": 35.0,
         "crude_fat_min": 17.0,
@@ -1015,7 +1015,7 @@
       "product_type": "food",
       "product_format": "dry",
       "sub_brand": "Amazing Grains",
-      "ingredients_raw": "Raw beef, raw lamb, raw beef liver, raw pork, raw salmon, dehydrated pollock, dehydrated sardine, dehydrated herring, oat groats, whole millet, raw pork liver, raw whole herring, pork fat, dehydrated beef, whole oats, quinoa seed, chia seed, ground whole axseed, sunflower oil, dehydrated pork liver, white fish oil, raw beef kidney, raw beef tripe, inulin, fresh whole pumpkin, fresh whole butternut squash, dried kelp, yeast (s. cerevisiae), fresh whole zucchini, fresh whole carrots, fresh whole apples, fresh whole pears, fresh kale, fresh spinach, fresh beet greens, fresh turnip greens, whole cranberries, whole blueberries, dried chicory root, turmeric, sarsaparilla root, althea root, rosehips, juniper berries",
+      "ingredients_raw": "Raw beef, raw lamb, raw beef liver, raw pork, raw salmon, dehydrated pollock, dehydrated sardine, dehydrated herring, oat groats, whole millet, raw pork liver, raw whole herring, pork fat, dehydrated beef, whole oats, quinoa seed, chia seed, ground whole flaxseed, sunflower oil, dehydrated pork liver, white fish oil, raw beef kidney, raw beef tripe, inulin, fresh whole pumpkin, fresh whole butternut squash, dried kelp, yeast (s. cerevisiae), fresh whole zucchini, fresh whole carrots, fresh whole apples, fresh whole pears, fresh kale, fresh spinach, fresh beet greens, fresh turnip greens, whole cranberries, whole blueberries, dried chicory root, turmeric, sarsaparilla root, althea root, rosehips, juniper berries",
       "guaranteed_analysis": {
         "crude_protein_min": 38.0,
         "crude_fat_min": 18.0,

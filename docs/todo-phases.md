@@ -21,7 +21,7 @@ Living checklist. Update as work progresses.
 - [x] Insights charts — time-series graph (poop scores, itch scores, pollen + mold background overlays) with selectable range (7d/30d/60d/90d/all), gantt-style bars for food/supplement/medication periods. Shared date-utils and timeline types extracted. Client-side range caching with AbortController.
 - [x] LLM export — "Export for AI" button on settings page, structured markdown download with timeline/section controls. API route (`GET /api/dogs/[id]/export/llm`), pure markdown formatter (`src/lib/export-llm.ts`), export modal with timeline dropdown + section checkboxes. Includes: profile, current diet, supplements/treats, medications, food history with ingredient dedup, daily log table, two-track correlation data, pollen-symptom buckets, cross-reactivity groups, research links, computed reference stats (constant/unique ingredients, body area frequency, med-change events, stool frequency).
 - [ ] Extend correlation engine: medication on/off comparison (medication is the #1 confounding variable for itch)
-- [ ] Set up cron schedule on deploy — daily 14:00 UTC, `POST /api/cron/pollen` with `Authorization: Bearer $CRON_SECRET`. Until then, run manually.
+- [x] Set up cron schedule on deploy — GitHub Actions workflow (`.github/workflows/pollen-cron.yml`), daily 14:00 UTC, `POST /api/cron/pollen` with `Authorization: Bearer $CRON_SECRET`.
 
 ## Phase 4.5: Food Transition ✅ (Complete)
 
@@ -47,12 +47,17 @@ See `todo-sharing.md` for full spec.
 - [ ] Pack management UI (list members, remove, invite link)
 - [ ] Public share route (`/share/[token]`) — unauthenticated read-only view, 1hr cache
 
+## Phase 6: Weight, Custom Foods, AI Poop Analysis
+
+- [ ] Weight tracking — historical weight log + trend chart on Insights (see `TODO-weight-tracking.md`)
+- [ ] Custom food entry — user-entered products for brands not in the scraped DB (see `TODO-custom-food-entry.md`)
+- [ ] AI poop photo analysis — photo capture → trained model scores poop automatically (see `TODO-ai-poop-analysis.md`, lowest priority)
+
 ## Future Considerations
 
 Out of scope for initial build. Roughly prioritized.
 
 - MCP server (Claude queries API routes directly — low effort, high personal value)
-- Weight history (track over time, currently just a single field)
 - Vet export (formatted reports for vet visits — replaces manual `peaches.md` notes)
 - General vet/health timeline (vaccinations, vet visits, surgical history)
 - Document uploads (PDFs for vet records, lab results)
@@ -69,5 +74,5 @@ Out of scope for initial build. Roughly prioritized.
 - ~~Vomiting log UI~~ — rare for current dog, note in daily check-in if needed
 - ~~Symptom log UI~~ — mucus/blood covered by poop log extension above
 - ~~Accidental exposure log UI~~ — rare events, daily check-in notes suffice
-- ~~Custom food builder~~ — raw diets/home-cooked not needed, commercial products cover all use cases
+- ~~Custom food builder~~ — replaced by custom food entry (Phase 6, simpler scope: data entry not recipe building)
 - ~~Weather tracking~~ — pollen/mold tracking already captures the relevant environmental signal

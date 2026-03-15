@@ -33,6 +33,13 @@ from .common import (
 
 logger = logging.getLogger(__name__)
 
+_INGREDIENT_OVERRIDES: dict[str, str] = {
+    "fermentation product, ), ": "fermentation product, ",
+    "calcium cabonate": "calcium carbonate",
+    "Bifido bacterium bifidium": "Bifidobacterium bifidium",
+    "DL- methionine": "DL-methionine",
+}
+
 WEBSITE_URL = "https://canadiannaturals.com"
 
 # Supplementary calorie data for products where canadiannaturals.com omits the
@@ -486,5 +493,6 @@ def scrape_canadiannaturals(output_dir: Path) -> int:
         products,
         output_dir,
         slug="canadiannaturals",
+        ingredient_overrides=_INGREDIENT_OVERRIDES,
     )
     return len(products)

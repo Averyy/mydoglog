@@ -55,6 +55,11 @@ def _detect_sub_brand(name: str) -> str | None:
     return None
 
 
+_INGREDIENT_OVERRIDES: dict[str, str] = {
+    "Rosmary": "Rosemary",
+}
+
+
 def scrape_naturalbalance(output_dir: Path) -> int:
     """Scrape all Natural Balance dog products from PetSmart. Returns product count."""
     return scrape_petsmart_brand(
@@ -65,4 +70,5 @@ def scrape_naturalbalance(output_dir: Path) -> int:
         detect_sub_brand=_detect_sub_brand,
         manual_product_data=_MANUAL_PRODUCT_DATA,
         skip_url_patterns=_SKIP_URLS,
+        ingredient_overrides=_INGREDIENT_OVERRIDES,
     )

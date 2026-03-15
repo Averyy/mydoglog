@@ -31,6 +31,7 @@ from .canidae import scrape_canidae
 from .eukanuba import scrape_eukanuba
 from .kirkland import scrape_kirkland
 from .nutrish import scrape_nutrish
+from .fromm import scrape_fromm
 
 # Registry: key -> (display_name, scrape_function)
 # Each function: (output_dir: Path) -> int (product count)
@@ -71,4 +72,5 @@ SCRAPERS: dict[str, tuple[str, callable]] = {
     "eukanuba": ("Eukanuba", scrape_eukanuba),
     "kirkland": ("Kirkland Signature", scrape_kirkland),
     "nutrish": ("Rachael Ray Nutrish", scrape_nutrish),
+    "fromm": ("Fromm", scrape_fromm),
 }

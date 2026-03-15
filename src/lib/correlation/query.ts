@@ -16,12 +16,15 @@ import {
   foodScorecards,
   dailyPollen,
   ingredientCrossReactivity,
+  medications,
+  medicationProducts,
 } from "@/lib/db"
 import { eq, and, gte, lte, sql, asc, or } from "drizzle-orm"
 import { AEROBIOLOGY_PROVIDER, TWN_PROVIDER, HAMILTON_LOCATION, NIAGARA_LOCATION } from "@/lib/pollen/constants"
 import { deduplicatePollenRows } from "@/lib/pollen/dedup"
 
 import { shiftDate } from "@/lib/date-utils"
+import { resolveMedicationFlags } from "@/lib/medications"
 import type { PlanPeriod } from "@/lib/feeding"
 import { resolveIngredientKey, positionCategory, extractFamilyFromKey } from "./engine"
 import type {
@@ -30,6 +33,7 @@ import type {
   IngredientProductEntry,
   RawFeedingPeriod,
   RawBackfill,
+  RawMedicationPeriod,
 } from "./types"
 
 // Cross-reactivity cache — static reference data, 5-minute TTL
@@ -62,6 +66,7 @@ export async function fetchCorrelationInput(
     poopRows,
     itchRows,
     crossReactivityRows,
+    medicationRows,
   ] = await Promise.all([
     // Non-backfill feeding periods (for day-by-day correlation)
     db
@@ -151,6 +156,22 @@ export async function fetchCorrelationInput(
 
     // Cross-reactivity groups (cached)
     getCrossReactivityGroups(),
+
+    // Medications for this dog (all, to derive active periods)
+    db
+      .select({
+        name: medications.name,
+        startDate: medications.startDate,
+        endDate: medications.endDate,
+        medicationProductId: medications.medicationProductId,
+        catalogSuppressesItch: medicationProducts.suppressesItch,
+        catalogHasGiSideEffects: medicationProducts.hasGiSideEffects,
+        customSuppressesItch: medications.suppressesItch,
+        customHasGiSideEffects: medications.hasGiSideEffects,
+      })
+      .from(medications)
+      .leftJoin(medicationProducts, eq(medications.medicationProductId, medicationProducts.id))
+      .where(eq(medications.dogId, dogId)),
   ])
 
   // -- Convert feeding periods to raw format --
@@ -315,6 +336,14 @@ export async function fetchCorrelationInput(
       }
     })
 
+  // -- Build medication periods --
+  const medicationPeriods: RawMedicationPeriod[] = medicationRows.map((r) => ({
+    name: r.name,
+    startDate: r.startDate,
+    endDate: r.endDate,
+    ...resolveMedicationFlags(r),
+  }))
+
   return {
     dogId,
     windowStart,
@@ -339,6 +368,7 @@ export async function fetchCorrelationInput(
       families: r.families,
     })),
     productInfo,
+    medicationPeriods,
   }
 }
 

@@ -3,9 +3,16 @@ import { requireDogOwnership, isNextResponse } from "@/lib/api-helpers"
 import { db, medications, medicationProducts, dosingIntervalEnum } from "@/lib/db"
 import { eq, desc } from "drizzle-orm"
 import type { MedicationSummary } from "@/lib/types"
+import { resolveMedicationFlags } from "@/lib/medications"
 import { getToday } from "@/lib/utils"
 
 const VALID_INTERVALS = new Set<string>(dosingIntervalEnum.enumValues)
+
+function isValidDate(s: string): boolean {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(s)) return false
+  const d = new Date(s + "T00:00:00Z")
+  return d.toISOString().slice(0, 10) === s
+}
 
 type RouteParams = { params: Promise<{ id: string }> }
 
@@ -32,13 +39,31 @@ export async function GET(
         description: medicationProducts.description,
         commonSideEffects: medicationProducts.commonSideEffects,
         sideEffectsSources: medicationProducts.sideEffectsSources,
+        catalogSuppressesItch: medicationProducts.suppressesItch,
+        catalogHasGiSideEffects: medicationProducts.hasGiSideEffects,
+        customSuppressesItch: medications.suppressesItch,
+        customHasGiSideEffects: medications.hasGiSideEffects,
       })
       .from(medications)
       .leftJoin(medicationProducts, eq(medications.medicationProductId, medicationProducts.id))
       .where(eq(medications.dogId, dogId))
       .orderBy(desc(medications.startDate))
 
-    const result: MedicationSummary[] = rows
+    const result: MedicationSummary[] = rows.map((r) => ({
+      id: r.id,
+      name: r.name,
+      dosage: r.dosage,
+      startDate: r.startDate,
+      endDate: r.endDate,
+      medicationProductId: r.medicationProductId,
+      interval: r.interval,
+      notes: r.notes,
+      dosageForm: r.dosageForm,
+      description: r.description,
+      commonSideEffects: r.commonSideEffects,
+      sideEffectsSources: r.sideEffectsSources,
+      ...resolveMedicationFlags(r),
+    }))
     return NextResponse.json(result)
   } catch (error) {
     console.error("Error fetching medications:", error)
@@ -57,6 +82,8 @@ interface MedicationPostBody {
   medicationProductId?: string
   interval?: string
   notes?: string
+  suppressesItch?: boolean
+  hasGiSideEffects?: boolean
 }
 
 export async function POST(
@@ -77,6 +104,13 @@ export async function POST(
       )
     }
 
+    if ((body.startDate && !isValidDate(body.startDate)) || (body.endDate && !isValidDate(body.endDate))) {
+      return NextResponse.json(
+        { error: "Invalid date format (expected YYYY-MM-DD)" },
+        { status: 400 },
+      )
+    }
+
     const today = getToday()
 
     const [created] = await db
@@ -90,6 +124,8 @@ export async function POST(
         medicationProductId: body.medicationProductId || null,
         interval: body.interval && VALID_INTERVALS.has(body.interval) ? body.interval as typeof medications.interval.enumValues[number] : null,
         notes: body.notes?.trim() || null,
+        suppressesItch: !body.medicationProductId ? (body.suppressesItch ?? null) : null,
+        hasGiSideEffects: !body.medicationProductId ? (body.hasGiSideEffects ?? null) : null,
       })
       .returning()
 

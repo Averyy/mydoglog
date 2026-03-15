@@ -34,6 +34,13 @@ from .common import (
 
 logger = logging.getLogger(__name__)
 
+_INGREDIENT_OVERRIDES: dict[str, str] = {
+    "Enriched Egg Noodles (Semolina, Eggs, Niacin, Ferrous Sulfate, Thiamine Mononitrate, Riboflavin, Folic Acid)": (
+        "Enriched Egg Noodles, Semolina, Eggs, Niacin, Ferrous Sulfate, Thiamine Mononitrate, Riboflavin, Folic Acid"
+    ),
+    "Poassium Chloride": "Potassium Chloride",
+}
+
 WEBSITE_URL = "https://www.petsmart.ca"
 
 _LISTING_URL = f"{WEBSITE_URL}/dog/food/f/brand/pedigree"
@@ -517,5 +524,7 @@ def scrape_pedigree(output_dir: Path) -> int:
 
     products = _deduplicate_products(products)
 
-    write_brand_json("Pedigree", WEBSITE_URL, products, output_dir, slug="pedigree")
+    write_brand_json("Pedigree", WEBSITE_URL, products, output_dir, slug="pedigree",
+        ingredient_overrides=_INGREDIENT_OVERRIDES,
+    )
     return len(products)

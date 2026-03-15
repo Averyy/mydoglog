@@ -92,6 +92,8 @@ export interface DayOutcome {
   scorecardPoopFallback: number | null
   /** 3-day rolling max of max(pollenLevel, sporeLevel ?? 0). Null when no pollen data. */
   effectivePollenLevel: number | null
+  onItchSuppressant: boolean
+  onGiSideEffectMed: boolean
 }
 
 /** Full snapshot for one calendar day. */
@@ -132,6 +134,16 @@ export interface IngredientScore {
   isSplit: boolean
   distinctProductCount: number
   itchSeasonallyConfounded: boolean
+  itchMedicationConfounded: boolean
+  poopMedicationConfounded: boolean
+  onMedRawAvgItchScore: number | null
+  offMedRawAvgItchScore: number | null
+  onMedRawAvgPoopScore: number | null
+  offMedRawAvgPoopScore: number | null
+  onItchMedDays: number
+  offItchMedDays: number
+  onGiMedDays: number
+  offGiMedDays: number
   crossReactivityGroup?: string
   crossReactivityWarning?: string
   /** When GI-merged from multiple forms, shows per-form scores. */
@@ -225,6 +237,14 @@ export interface RawPollenLog {
   sporeLevel: number | null
 }
 
+export interface RawMedicationPeriod {
+  name: string
+  startDate: string
+  endDate: string | null
+  suppressesItch: boolean
+  hasGiSideEffects: boolean
+}
+
 /** A backfill entry — aggregate historical record with duration + scorecard. */
 export interface RawBackfill {
   planGroupId: string
@@ -254,4 +274,5 @@ export interface CorrelationInput {
   crossReactivityGroups: CrossReactivityGroup[]
   /** Product ID → product info (type + format + calorie content). Used for gram estimation. */
   productInfo: Map<string, { type: string; format: string; calorieContent: string | null }>
+  medicationPeriods: RawMedicationPeriod[]
 }

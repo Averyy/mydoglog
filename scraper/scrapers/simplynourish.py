@@ -15,6 +15,14 @@ logger = logging.getLogger(__name__)
 # Brand-specific ingredient overrides for PetSmart source data errors
 _INGREDIENT_OVERRIDES: dict[str, str] = {
     "Flaxseed Peas": "Flaxseed, Peas",
+    # Hip & Joint product has extra ) after L-Ascorbyl-2-Polyphosphate
+    "L-Ascorbyl-2-Polyphosphate)": "L-Ascorbyl-2-Polyphosphate",
+    # OCR mangled "(A" → "9a" in preservative annotation
+    "Citric Acid 9a Preservative)": "Citric Acid (A Preservative)",
+    # Empty parens artifact on Vitamin D3 Supplement
+    "Supplement()": "Supplement",
+    # Premature Vitamins block close (Source Puppy)
+    "Riboflavin Supplement), Thiamine": "Riboflavin Supplement, Thiamine",
 }
 
 

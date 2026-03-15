@@ -59,6 +59,8 @@ export function MedicationForm({
   const [currentlyTaking, setCurrentlyTaking] = useState(true)
   const [endDate, setEndDate] = useState("")
   const [notes, setNotes] = useState("")
+  const [suppressesItch, setSuppressesItch] = useState(false)
+  const [hasGiSideEffects, setHasGiSideEffects] = useState(false)
   const [saving, setSaving] = useState(false)
   const [deleting, setDeleting] = useState(false)
 
@@ -81,6 +83,8 @@ export function MedicationForm({
       setCurrentlyTaking(!medication.endDate)
       setEndDate(medication.endDate ?? "")
       setNotes(medication.notes ?? "")
+      setSuppressesItch(medication.suppressesItch)
+      setHasGiSideEffects(medication.hasGiSideEffects)
     } else {
       setPickerValue(null)
       setDosage("")
@@ -89,6 +93,8 @@ export function MedicationForm({
       setCurrentlyTaking(true)
       setEndDate("")
       setNotes("")
+      setSuppressesItch(false)
+      setHasGiSideEffects(false)
     }
   }, [open, medication])
 
@@ -119,6 +125,7 @@ export function MedicationForm({
             interval: interval || null,
             endDate: !currentlyTaking && endDate ? endDate : null,
             notes: notes.trim() || null,
+            ...(pickerValue.medicationProductId == null ? { suppressesItch, hasGiSideEffects } : {}),
           }),
         })
         if (!res.ok) {
@@ -139,6 +146,7 @@ export function MedicationForm({
             startDate: startDate || undefined,
             endDate: !currentlyTaking && endDate ? endDate : undefined,
             notes: notes.trim() || undefined,
+            ...(!pickerValue.medicationProductId ? { suppressesItch, hasGiSideEffects } : {}),
           }),
         })
         if (!res.ok) {
@@ -249,6 +257,29 @@ export function MedicationForm({
             </div>
           )}
         </div>
+
+        {/* Custom med effect flags — only for meds not in catalog */}
+        {pickerValue && pickerValue.medicationProductId == null && (
+          <div className="space-y-2">
+            <Label className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
+              Known effects
+            </Label>
+            <label className="flex items-center gap-2 cursor-pointer">
+              <Checkbox
+                checked={suppressesItch}
+                onCheckedChange={(checked) => setSuppressesItch(!!checked)}
+              />
+              <span className="text-sm">Suppresses itching</span>
+            </label>
+            <label className="flex items-center gap-2 cursor-pointer">
+              <Checkbox
+                checked={hasGiSideEffects}
+                onCheckedChange={(checked) => setHasGiSideEffects(!!checked)}
+              />
+              <span className="text-sm">Has GI side effects</span>
+            </label>
+          </div>
+        )}
 
         {/* Notes */}
         <CollapsibleNotes

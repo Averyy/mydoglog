@@ -13,6 +13,7 @@ import {
   estimateGrams,
   buildBackfillSnapshots,
   computeRollingMaxPollen,
+  annotateMedicationFlags,
 } from "./engine"
 import type {
   IngredientRecord,
@@ -23,6 +24,7 @@ import type {
   IngredientScore,
   CrossReactivityGroup,
   ProductIngredientRecord,
+  RawMedicationPeriod,
 } from "./types"
 import { DEFAULT_CORRELATION_OPTIONS } from "./types"
 
@@ -58,6 +60,8 @@ const emptyOutcome: DayOutcome = {
   itchScore: null,
   scorecardPoopFallback: null,
   effectivePollenLevel: null,
+  onItchSuppressant: false,
+  onGiSideEffectMed: false,
 }
 
 function makeSnapshot(overrides: Partial<DaySnapshot> = {}): DaySnapshot {
@@ -88,6 +92,7 @@ function makeInput(overrides: Partial<CorrelationInput> = {}): CorrelationInput 
     backfills: [],
     crossReactivityGroups: [],
     productInfo: new Map(),
+    medicationPeriods: [],
     ...overrides,
   }
 }
@@ -2350,5 +2355,334 @@ describe("pollen discount in itch scoring", () => {
     const scores = computeIngredientScores(snaps, DEFAULT_CORRELATION_OPTIONS)
     const chicken = scores.find((s) => s.key === "chicken")!
     expect(chicken.itchSeasonallyConfounded).toBe(false)
+  })
+})
+
+// ---------------------------------------------------------------------------
+// Medication confounding
+// ---------------------------------------------------------------------------
+
+describe("annotateMedicationFlags", () => {
+  it("returns both false when no medications", () => {
+    const flags = annotateMedicationFlags("2024-06-01", [])
+    expect(flags.onItchSuppressant).toBe(false)
+    expect(flags.onGiSideEffectMed).toBe(false)
+  })
+
+  it("sets onItchSuppressant when itch-suppressing med is active", () => {
+    const meds: RawMedicationPeriod[] = [{
+      name: "Apoquel",
+      startDate: "2024-06-01",
+      endDate: "2024-06-30",
+      suppressesItch: true,
+      hasGiSideEffects: true,
+    }]
+    const flags = annotateMedicationFlags("2024-06-15", meds)
+    expect(flags.onItchSuppressant).toBe(true)
+    expect(flags.onGiSideEffectMed).toBe(true)
+  })
+
+  it("returns false when date is outside medication period", () => {
+    const meds: RawMedicationPeriod[] = [{
+      name: "Apoquel",
+      startDate: "2024-06-01",
+      endDate: "2024-06-30",
+      suppressesItch: true,
+      hasGiSideEffects: true,
+    }]
+    const flags = annotateMedicationFlags("2024-07-15", meds)
+    expect(flags.onItchSuppressant).toBe(false)
+    expect(flags.onGiSideEffectMed).toBe(false)
+  })
+
+  it("handles open-ended medication (no end date)", () => {
+    const meds: RawMedicationPeriod[] = [{
+      name: "Cytopoint",
+      startDate: "2024-01-01",
+      endDate: null,
+      suppressesItch: true,
+      hasGiSideEffects: false,
+    }]
+    const flags = annotateMedicationFlags("2024-12-31", meds)
+    expect(flags.onItchSuppressant).toBe(true)
+    expect(flags.onGiSideEffectMed).toBe(false)
+  })
+})
+
+describe("medication confounding in scoring", () => {
+  const chickenIng = makeIngredient({ id: "ing-chicken", family: "chicken" })
+  const productA = makeProductIngredients("prod-a", [
+    { position: 1, ingredient: chickenIng },
+  ])
+  const ingredientMap = new Map([["prod-a", productA]])
+  const opts = DEFAULT_CORRELATION_OPTIONS
+
+  function makeMedInput(
+    days: number,
+    onMedDays: number,
+    itchOnMed: number,
+    itchOffMed: number,
+    poopOnMed: number,
+    poopOffMed: number,
+  ): CorrelationInput {
+    const dates: string[] = []
+    const poopLogs: { date: string; firmnessScore: number }[] = []
+    const itchLogs: { date: string; score: number }[] = []
+    for (let i = 0; i < days; i++) {
+      const d = `2024-06-${String(i + 1).padStart(2, "0")}`
+      dates.push(d)
+      const isOnMed = i < onMedDays
+      poopLogs.push({ date: d, firmnessScore: isOnMed ? poopOnMed : poopOffMed })
+      itchLogs.push({ date: d, score: isOnMed ? itchOnMed : itchOffMed })
+    }
+
+    return makeInput({
+      windowStart: dates[0],
+      windowEnd: dates[dates.length - 1],
+      feedingPeriods: [{
+        id: "fp-1",
+        productId: "prod-a",
+        startDate: dates[0],
+        endDate: null,
+        planGroupId: "plan-1",
+        createdAt: "2024-06-01T00:00:00Z",
+        quantity: 2,
+        quantityUnit: "cup",
+      }],
+      productIngredientMap: ingredientMap,
+      poopLogs,
+      itchinessLogs: itchLogs,
+      medicationPeriods: onMedDays > 0 ? [{
+        name: "Apoquel",
+        startDate: dates[0],
+        endDate: dates[onMedDays - 1],
+        suppressesItch: true,
+        hasGiSideEffects: true,
+      }] : [],
+    })
+  }
+
+  it("10 on-med days + 10 off-med days → correct split averages", () => {
+    const input = makeMedInput(20, 10, 1, 3, 5, 2)
+    const snaps = buildDaySnapshots(input, opts)
+    const scores = computeIngredientScores(snaps, opts)
+    const chicken = scores.find((s) => s.key === "chicken")!
+
+    expect(chicken.onMedRawAvgItchScore).toBe(1)
+    expect(chicken.offMedRawAvgItchScore).toBe(3)
+    expect(chicken.onMedRawAvgPoopScore).toBe(5)
+    expect(chicken.offMedRawAvgPoopScore).toBe(2)
+    expect(chicken.onItchMedDays).toBe(10)
+    expect(chicken.offItchMedDays).toBe(10)
+    expect(chicken.onGiMedDays).toBe(10)
+    expect(chicken.offGiMedDays).toBe(10)
+  })
+
+  it("≥50% on-med → confounding flag fires", () => {
+    const input = makeMedInput(20, 10, 1, 3, 5, 2)
+    const snaps = buildDaySnapshots(input, opts)
+    const scores = computeIngredientScores(snaps, opts)
+    const chicken = scores.find((s) => s.key === "chicken")!
+
+    expect(chicken.itchMedicationConfounded).toBe(true)
+    expect(chicken.poopMedicationConfounded).toBe(true)
+  })
+
+  it("<50% on-med → confounding flag does NOT fire", () => {
+    const input = makeMedInput(20, 5, 1, 3, 5, 2)
+    const snaps = buildDaySnapshots(input, opts)
+    const scores = computeIngredientScores(snaps, opts)
+    const chicken = scores.find((s) => s.key === "chicken")!
+
+    expect(chicken.itchMedicationConfounded).toBe(false)
+    expect(chicken.poopMedicationConfounded).toBe(false)
+  })
+
+  it("100% on-med → flag fires, off-med average is null", () => {
+    const input = makeMedInput(10, 10, 1, 0, 5, 0)
+    const snaps = buildDaySnapshots(input, opts)
+    const scores = computeIngredientScores(snaps, opts)
+    const chicken = scores.find((s) => s.key === "chicken")!
+
+    expect(chicken.itchMedicationConfounded).toBe(true)
+    expect(chicken.poopMedicationConfounded).toBe(true)
+    expect(chicken.offMedRawAvgItchScore).toBe(null)
+    expect(chicken.offMedRawAvgPoopScore).toBe(null)
+  })
+
+  it("no medications → all flags false, all splits null", () => {
+    const input = makeMedInput(10, 0, 0, 3, 0, 2)
+    const snaps = buildDaySnapshots(input, opts)
+    const scores = computeIngredientScores(snaps, opts)
+    const chicken = scores.find((s) => s.key === "chicken")!
+
+    expect(chicken.itchMedicationConfounded).toBe(false)
+    expect(chicken.poopMedicationConfounded).toBe(false)
+    expect(chicken.onMedRawAvgItchScore).toBe(null)
+    expect(chicken.onMedRawAvgPoopScore).toBe(null)
+    expect(chicken.onItchMedDays).toBe(0)
+    expect(chicken.onGiMedDays).toBe(0)
+  })
+
+  it("GI merge recomputes confounding from summed day counts", () => {
+    const chickenFatIng = makeIngredient({
+      id: "ing-chicken-fat",
+      normalizedName: "chicken fat",
+      family: "chicken",
+      formType: "fat",
+    })
+    const productWithBoth = makeProductIngredients("prod-both", [
+      { position: 1, ingredient: chickenIng },
+      { position: 5, ingredient: chickenFatIng },
+    ])
+    const map = new Map([["prod-both", productWithBoth]])
+
+    // Both forms present on same days → 50% on-med → confounded
+    const input = makeInput({
+      windowStart: "2024-06-01",
+      windowEnd: "2024-06-20",
+      feedingPeriods: [{
+        id: "fp-1",
+        productId: "prod-both",
+        startDate: "2024-06-01",
+        endDate: null,
+        planGroupId: "plan-1",
+        createdAt: "2024-06-01T00:00:00Z",
+        quantity: 2,
+        quantityUnit: "cup",
+      }],
+      productIngredientMap: map,
+      poopLogs: Array.from({ length: 20 }, (_, i) => ({
+        date: `2024-06-${String(i + 1).padStart(2, "0")}`,
+        firmnessScore: i < 10 ? 5 : 2,
+      })),
+      itchinessLogs: Array.from({ length: 20 }, (_, i) => ({
+        date: `2024-06-${String(i + 1).padStart(2, "0")}`,
+        score: i < 10 ? 1 : 3,
+      })),
+      medicationPeriods: [{
+        name: "Apoquel",
+        startDate: "2024-06-01",
+        endDate: "2024-06-10",
+        suppressesItch: true,
+        hasGiSideEffects: true,
+      }],
+    })
+
+    const snaps = buildDaySnapshots(input, opts)
+    const scores = computeIngredientScores(snaps, opts)
+    const merged = mergeScoresForGI(scores)
+    const chicken = merged.find((s) => s.key === "chicken")!
+
+    // Both forms have 10 on + 10 off, summed: 20 on + 20 off = 50% → confounded
+    expect(chicken.poopMedicationConfounded).toBe(true)
+    expect(chicken.itchMedicationConfounded).toBe(true)
+    // Weighted average splits across forms
+    expect(chicken.onGiMedDays).toBe(20) // 10 from chicken + 10 from chicken (fat)
+    expect(chicken.offGiMedDays).toBe(20)
+  })
+
+  it("GI merge does NOT flag confounding when minority form is on-med", () => {
+    // chicken (fat) = 6 days all on-med, chicken = 20 days all off-med
+    // summed: 6 on + 20 off = 23% → NOT confounded
+    const chickenFatIng = makeIngredient({
+      id: "ing-chicken-fat",
+      normalizedName: "chicken fat",
+      family: "chicken",
+      formType: "fat",
+    })
+
+    const chickenProduct = makeProductIngredients("prod-chicken", [
+      { position: 1, ingredient: chickenIng },
+    ])
+    const fatProduct = makeProductIngredients("prod-fat-treat", [
+      { position: 1, ingredient: chickenFatIng },
+    ])
+    const map = new Map([["prod-chicken", chickenProduct], ["prod-fat-treat", fatProduct]])
+
+    const input = makeInput({
+      windowStart: "2024-06-01",
+      windowEnd: "2024-06-26",
+      feedingPeriods: [{
+        id: "fp-1",
+        productId: "prod-chicken",
+        startDate: "2024-06-01",
+        endDate: null,
+        planGroupId: "plan-1",
+        createdAt: "2024-06-01T00:00:00Z",
+        quantity: 2,
+        quantityUnit: "cup",
+      }],
+      treatLogs: Array.from({ length: 6 }, (_, i) => ({
+        date: `2024-06-${String(i + 21).padStart(2, "0")}`,
+        productId: "prod-fat-treat",
+        quantity: 1,
+        quantityUnit: "treat" as const,
+      })),
+      productIngredientMap: map,
+      poopLogs: Array.from({ length: 26 }, (_, i) => ({
+        date: `2024-06-${String(i + 1).padStart(2, "0")}`,
+        firmnessScore: 3,
+      })),
+      itchinessLogs: Array.from({ length: 26 }, (_, i) => ({
+        date: `2024-06-${String(i + 1).padStart(2, "0")}`,
+        score: 1,
+      })),
+      medicationPeriods: [{
+        name: "Apoquel",
+        startDate: "2024-06-21",
+        endDate: "2024-06-26",
+        suppressesItch: true,
+        hasGiSideEffects: true,
+      }],
+    })
+
+    const snaps = buildDaySnapshots(input, opts)
+    const scores = computeIngredientScores(snaps, opts)
+
+    // Pre-merge: chicken (fat) is confounded (6/6 = 100%), chicken is not (6/26 = 23%)
+    const rawChicken = scores.find((s) => s.key === "chicken")!
+    const rawFat = scores.find((s) => s.key === "chicken (fat)")!
+    expect(rawFat.poopMedicationConfounded).toBe(true)
+    expect(rawChicken.poopMedicationConfounded).toBe(false)
+
+    // Post-merge: summed days = 6 on-med (fat only) + 6 on-med (chicken on those days) + 20 off-med (chicken)
+    // chicken has 26 days total, 6 on-med; chicken fat has 6 days, 6 on-med
+    // sum: 12 on-med, 26 off-med → 31.6% → NOT confounded
+    const merged = mergeScoresForGI(scores)
+    const mergedChicken = merged.find((s) => s.key === "chicken")!
+    expect(mergedChicken.poopMedicationConfounded).toBe(false)
+  })
+
+  it("backfill snapshots annotate medication effects", () => {
+    const input = makeInput({
+      windowStart: "2024-07-01",
+      windowEnd: "2024-07-01",
+      backfills: [{
+        planGroupId: "plan-1",
+        productId: "prod-a",
+        startDate: "2024-05-01",
+        endDate: "2024-05-10",
+        durationDays: 10,
+        quantity: 2,
+        quantityUnit: "cup",
+        scorecard: { planGroupId: "plan-1", poopQuality: [3], itchSeverity: [2] },
+      }],
+      productIngredientMap: ingredientMap,
+      medicationPeriods: [{
+        name: "Zenrelia",
+        startDate: "2024-05-01",
+        endDate: "2024-05-05",
+        suppressesItch: true,
+        hasGiSideEffects: true,
+      }],
+    })
+
+    const snaps = buildBackfillSnapshots(input)
+    const onMedSnaps = snaps.filter((s) => s.outcome.onItchSuppressant)
+    const offMedSnaps = snaps.filter((s) => !s.outcome.onItchSuppressant)
+
+    expect(onMedSnaps.length).toBe(5) // May 1-5
+    expect(offMedSnaps.length).toBe(5) // May 6-10
   })
 })

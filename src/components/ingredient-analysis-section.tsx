@@ -133,6 +133,7 @@ export function IngredientAnalysisSection({
                 <button
                   key={value}
                   type="button"
+                  aria-pressed={signalMode === value}
                   onClick={() => onSignalModeChange(value)}
                   className={cn(
                     "px-3.5 py-1.5 text-xs font-medium transition-colors",
@@ -185,6 +186,7 @@ export function IngredientAnalysisSection({
                 href="https://bmcvetres.biomedcentral.com/articles/10.1186/s12917-016-0633-8"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Source: BMC Veterinary Research"
                 className="inline-flex items-center text-text-tertiary hover:text-foreground transition-colors align-text-bottom"
               >
                 <LiaExternalLinkAltSolid className="size-3" />
@@ -212,6 +214,24 @@ export function IngredientAnalysisSection({
           </p>
         </div>
       )}
+
+      {hasScores && (() => {
+        const allScores = signalMode === "stool" ? correlation!.giMergedScores : correlation!.scores
+        const hasItchConfounding = allScores.some((s) => s.itchMedicationConfounded)
+        const hasPoopConfounding = allScores.some((s) => s.poopMedicationConfounded)
+        if (!hasItchConfounding && !hasPoopConfounding) return null
+        const message = hasItchConfounding && hasPoopConfounding
+          ? "An active medication overlaps with your data. Itch scores may not reflect food reactions, and stool scores may reflect drug side effects."
+          : hasItchConfounding
+            ? "An active itch-suppressing medication overlaps with your data. Itch scores may not reflect food reactions."
+            : "An active medication with known GI side effects overlaps with your data. Stool scores may reflect drug effects."
+        return (
+          <div className="flex items-start gap-2 rounded-lg bg-score-fair-bg px-3 py-2">
+            <LiaInfoCircleSolid className="size-4 shrink-0 text-score-fair mt-0.5" />
+            <p className="text-xs text-score-fair">{message}</p>
+          </div>
+        )
+      })()}
 
       {/* Main card — skeleton rows or real rows */}
       <Card className="overflow-hidden py-0 gap-0">

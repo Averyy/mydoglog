@@ -117,10 +117,18 @@ def write_brand_json(
     output_dir: Path,
     *,
     slug: str | None = None,
+    ingredient_overrides: dict[str, str] | None = None,
 ) -> None:
     """Write scraped products to JSON with metadata envelope."""
     file_slug = slug or brand.lower().replace(" ", "").replace("'", "")
     output_path = output_dir / f"{file_slug}.json"
+
+    # Apply ingredient text fixups before writing
+    for p in products:
+        if p.get("ingredients_raw"):
+            p["ingredients_raw"] = fix_ingredients_raw(
+                p["ingredients_raw"], overrides=ingredient_overrides
+            )
 
     # Download product images before writing JSON
     _download_brand_images(brand, products)
@@ -401,12 +409,112 @@ def clean_text(text: str) -> str:
     # Normalize smart/curly quotes to straight quotes
     text = text.replace("\u2018", "'").replace("\u2019", "'")  # ' '
     text = text.replace("\u201c", '"').replace("\u201d", '"')  # " "
+    # Normalize dashes: en-dash (–) and em-dash (—) → ASCII hyphen
+    text = text.replace("\u2013", "-").replace("\u2014", "-")
+    # Normalize ligatures: ﬂ → fl, ﬁ → fi
+    text = text.replace("\ufb02", "fl").replace("\ufb01", "fi")
     # Strip stray backslashes (encoding artifacts, e.g. "vitamin E\ supplement")
     text = text.replace("\\", "")
     # Insert space at camelCase boundaries (e.g. "CanolaOil" → "Canola Oil")
     text = re.sub(r"([a-z])([A-Z])", r"\1 \2", text)
     # Normalize whitespace: collapse runs, strip (includes \xa0 non-breaking spaces)
     text = re.sub(r"[\s]+", " ", text)
+    # Ensure space after commas (e.g. "Sulfate,Riboflavin" → "Sulfate, Riboflavin")
+    text = re.sub(r",(?!\s)", ", ", text)
+    # Fix space before comma (e.g. "Chicken , Beef" → "Chicken, Beef")
+    text = re.sub(r"\s+,", ",", text)
+    return text.strip()
+
+
+# ---------------------------------------------------------------------------
+# Ingredient text fixups (applied after scraping, before JSON output)
+# ---------------------------------------------------------------------------
+
+# Global ingredient text replacements for known source data errors.
+# Simple string replacements (no regex needed).
+_INGREDIENT_RAW_FIXUPS: dict[str, str] = {
+    # Missing spaces (scraper concatenation bugs)
+    "chickenmeal": "chicken meal",
+    "organicspinach": "organic spinach",
+    "Pumpkinseeds": "Pumpkin Seeds",
+    "guineafowl": "guinea fowl",
+    "ground whole axseed": "ground whole flaxseed",
+    # DL-methionine formatting variants
+    "DLMethionine": "DL-Methionine",
+    "DL methionine": "DL-methionine",
+    "DL- Methionine": "DL-Methionine",
+    # Extra/missing spaces around hyphens
+    "freeze- dried": "freeze-dried",
+    # Missing comma between ingredients
+    "Choline Chloride Dried Chicken Cartilage": "Choline Chloride, Dried Chicken Cartilage",
+    "canola oil ( preserved with mixed tocopherols and citric acid )flaxseed": (
+        "canola oil (preserved with mixed tocopherols and citric acid), flaxseed"
+    ),
+}
+
+# Regex-based fixups requiring word boundaries (ligature bugs, etc.).
+_INGREDIENT_RAW_REGEX_FIXUPS: list[tuple[re.Pattern[str], str]] = [
+    (re.compile(r"\bsh oil\b"), "fish oil"),
+    (re.compile(r"\boat ber\b"), "oat fiber"),
+    (re.compile(r"\bnatural avor\b"), "natural flavor"),
+    (re.compile(r"\briboavin\b"), "riboflavin"),
+    (re.compile(r"\bbisulte\b"), "bisulfite"),
+]
+
+# Regex patterns stripped from the start of ingredients_raw (metadata prefixes).
+_INGREDIENT_PREFIX_PATTERNS: list[re.Pattern[str]] = [
+    # "INGREDIENTS: ..." prefix
+    re.compile(r"^INGREDIENTS:\s*", re.IGNORECASE),
+]
+
+# Regex to detect and strip junk text before "Ingredients:" mid-stream.
+_INGREDIENT_MIDSTREAM_RE = re.compile(r"^.+?Ingredients:\s+", re.DOTALL)
+
+
+def fix_ingredients_raw(
+    text: str,
+    *,
+    overrides: dict[str, str] | None = None,
+) -> str:
+    """Apply global and brand-specific fixups to an ingredients_raw string.
+
+    Call this on every ingredients_raw value before writing to brand JSON.
+    """
+    # Strip metadata prefixes (e.g. "INGREDIENTS: Chicken, ...")
+    for pat in _INGREDIENT_PREFIX_PATTERNS:
+        text = pat.sub("", text)
+
+    # Strip junk before mid-stream "Ingredients:" (product metadata bleed)
+    m = _INGREDIENT_MIDSTREAM_RE.match(text)
+    if m and len(m.group(0)) > 20:
+        text = text[m.end():]
+
+    # Apply global string fixups
+    for bad, good in _INGREDIENT_RAW_FIXUPS.items():
+        text = text.replace(bad, good)
+
+    # Apply regex fixups (word-boundary-aware, e.g. ligature bugs)
+    for pat, replacement in _INGREDIENT_RAW_REGEX_FIXUPS:
+        text = pat.sub(replacement, text)
+
+    # Apply brand-specific overrides
+    if overrides:
+        for bad, good in overrides.items():
+            text = text.replace(bad, good)
+
+    # Strip trailing disclaimers / production codes that aren't ingredients
+    text = re.sub(
+        r"\.\s*This is a naturally preserved product.*$", "", text
+    )
+    text = re.sub(
+        r"\.\s*Contains a source of live \(viable\) naturally occurring microorganisms?$",
+        "",
+        text,
+    )
+    text = re.sub(r"\.\s*Manufactured in a facility.*$", "", text)
+    # Production/lot codes (e.g. "Citric Acid. A-5064-C")
+    text = re.sub(r"\.\s+[A-Z]-\d+-[A-Z]$", "", text)
+
     return text.strip()
 
 

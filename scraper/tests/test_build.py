@@ -1,4 +1,4 @@
-"""Tests for build.py — ingredient parsing, type mapping, families lookup, and idempotency."""
+"""Tests for seed_db.py — ingredient parsing, type mapping, families lookup, and idempotency."""
 
 import json
 from pathlib import Path
@@ -7,7 +7,7 @@ from unittest.mock import MagicMock, call, patch
 
 import pytest
 
-from build import (
+from seed_db import (
     CHANNEL_MAP,
     PRODUCT_TYPE_MAP,
     FamiliesLookup,

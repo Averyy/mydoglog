@@ -13,8 +13,8 @@ MANUAL_PATH = DATA_DIR / "manual_products.json"
 
 VALID_SOURCE_GROUPS = {
     "poultry", "red_meat", "fish", "grain", "legume", "root", "fruit",
-    "vegetable", "dairy", "egg", "seed", "exotic", "other", "mammal",
-    "fiber", "additive", "mollusk", "crustacean", "animal", "unknown",
+    "vegetable", "dairy", "egg", "seed", "other", "mammal",
+    "fiber", "additive", "mollusk", "crustacean", "animal", "insect", "unknown",
 }
 
 VALID_FORMS = {
@@ -87,7 +87,7 @@ def all_product_ingredients() -> set[str]:
 @pytest.fixture(scope="module")
 def ignore_patterns(families_data: dict) -> list[re.Pattern[str]]:
     """Compile ignore patterns from JSON."""
-    return [re.compile(p) for p in families_data.get("ignore_patterns", [])]
+    return [re.compile(p, re.IGNORECASE) for p in families_data.get("ignore_patterns", [])]
 
 
 @pytest.fixture(scope="module")

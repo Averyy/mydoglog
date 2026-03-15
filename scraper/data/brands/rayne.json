@@ -23,7 +23,7 @@
       "channel": "vet",
       "product_type": "food",
       "product_format": "dry",
-      "ingredients_raw": "Dried chickpeas, alligator, dried peas, potato flour, pea protein, natural flavor, sunflower oil, (preserved with mixed tocopherols), coconut oil, calcium carbonate, marine microalgae, fructooligosaccharides, salt, dicalcium phosphate, vitamins, dl-methionine, choline chloride, minerals, taurine, mixed tocopherols, rosemary extract",
+      "ingredients_raw": "Dried chickpeas, alligator, dried peas, potato flour, pea protein, natural flavor, sunflower oil (preserved with mixed tocopherols), coconut oil, calcium carbonate, marine microalgae, fructooligosaccharides, salt, dicalcium phosphate, vitamins, dl-methionine, choline chloride, minerals, taurine, mixed tocopherols, rosemary extract",
       "guaranteed_analysis": {
         "crude_protein_min": 20.9,
         "crude_fat_min": 11.7,
@@ -195,7 +195,7 @@
       "channel": "vet",
       "product_type": "food",
       "product_format": "wet",
-      "ingredients_raw": "Garbanzo beans, vegetable broth, pea flour, water, dried miscanthus grass, millet, fava bean protein, salt, fava beans, brown rice, calcium carbonate, canola oil, vegetable glycerin, sunflower lecithin, hickory flavor, minerals/vitamins (zinc proteinate, vitamin E supplement, iron proteinate, ferrous sulfate, biotin, copper proteinate, sodium selenite, niacin, D-calcium pantothenate, manganous oxide, riboflavin, vitamin A acetate, thiamine mononitrate, vitamin B12 supplement, pyridoxine hydrochlordie, calcium iodate, vitamin D3 supplement, folic acid), hickory flavor, natural flavor, celery seed powder, fructooligosaccharides, brewers yeast, EDTA, potassium sorbate, sodium benzoate, seasoning, sodium erythrobate",
+      "ingredients_raw": "Garbanzo beans, vegetable broth, pea flour, water, dried miscanthus grass, millet, fava bean protein, salt, fava beans, brown rice, calcium carbonate, canola oil, vegetable glycerin, sunflower lecithin, hickory flavor, minerals/vitamins (zinc proteinate, vitamin E supplement, iron proteinate, ferrous sulfate, biotin, copper proteinate, sodium selenite, niacin, D-calcium pantothenate, manganous oxide, riboflavin, vitamin A acetate, thiamine mononitrate, vitamin B12 supplement, pyridoxine hydrochloride, calcium iodate, vitamin D3 supplement, folic acid), natural flavor, celery seed powder, fructooligosaccharides, brewers yeast, EDTA, potassium sorbate, sodium benzoate, seasoning, sodium erythrobate",
       "guaranteed_analysis": {
         "crude_protein_min": 15.5,
         "crude_fat_min": 7.9,
@@ -227,7 +227,7 @@
       "channel": "vet",
       "product_type": "food",
       "product_format": "wet",
-      "ingredients_raw": "Rabbit, sweet potatoes, garbanzo beans, dried miscanthus grass, water, salt, fava bean protein, brown rice, calcium carbonate, canola oil, vegetable glycerin, sunflower lecithin, dicalcium phosphate, taurine, minerals/vitamins: (zinc proteinate, vitamin E supplement, iron proteinate, ferrous sulfate, biotin, copper proteinate, sodium selenite, niacin, D-calcium pantothenate, manganous oxide, riboflavin, vitamin A acetate, thiamine mononitrate, vitamin B12 supplement, pyridoxine hydrochlordie, calcium iodate, vitamin D3 supplement, folic acid), hickory flavor, natural flavor, celery seed powder, fructoolligosaccharide, brewers yeast, EDTA, potassium sorbate, sodium benzoate, seasoning, sodium erythrobate",
+      "ingredients_raw": "Rabbit, sweet potatoes, garbanzo beans, dried miscanthus grass, water, salt, fava bean protein, brown rice, calcium carbonate, canola oil, vegetable glycerin, sunflower lecithin, dicalcium phosphate, taurine, minerals/vitamins: (zinc proteinate, vitamin E supplement, iron proteinate, ferrous sulfate, biotin, copper proteinate, sodium selenite, niacin, D-calcium pantothenate, manganous oxide, riboflavin, vitamin A acetate, thiamine mononitrate, vitamin B12 supplement, pyridoxine hydrochloride, calcium iodate, vitamin D3 supplement, folic acid), hickory flavor, natural flavor, celery seed powder, fructooligosaccharide, brewers yeast, EDTA, potassium sorbate, sodium benzoate, seasoning, sodium erythrobate",
       "guaranteed_analysis": {
         "crude_protein_min": 13.9,
         "crude_fat_min": 9.7,
@@ -623,7 +623,7 @@
       "channel": "vet",
       "product_type": "food",
       "product_format": "wet",
-      "ingredients_raw": "Rabbit, water, potato starch, agar-agar, dicalcium phosphate, dried celery, marine microalgae oil, inulin, potassium chloride, tricalcium phosphate, sunflower oil, salt, choline chloride, taurin, vitamins and minerals",
+      "ingredients_raw": "Rabbit, water, potato starch, agar-agar, dicalcium phosphate, dried celery, marine microalgae oil, inulin, potassium chloride, tricalcium phosphate, sunflower oil, salt, choline chloride, taurine, vitamins and minerals",
       "guaranteed_analysis": {
         "crude_protein_min": 9.2,
         "crude_fat_min": 4.7,

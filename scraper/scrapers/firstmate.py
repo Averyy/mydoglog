@@ -35,6 +35,10 @@ from .common import (
 
 logger = logging.getLogger(__name__)
 
+_INGREDIENT_OVERRIDES: dict[str, str] = {
+    "L-Threonie": "L-Threonine",
+}
+
 WEBSITE_URL = "https://firstmate.com"
 
 # WP REST API endpoints
@@ -473,5 +477,7 @@ def scrape_firstmate(output_dir: Path) -> int:
 
         logger.info(f"Parsed {len(products)} dog food products from {len(entries)} entries")
 
-    write_brand_json("FirstMate", WEBSITE_URL, products, output_dir, slug="firstmate")
+    write_brand_json("FirstMate", WEBSITE_URL, products, output_dir, slug="firstmate",
+        ingredient_overrides=_INGREDIENT_OVERRIDES,
+    )
     return len(products)

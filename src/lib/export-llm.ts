@@ -10,6 +10,7 @@ import type { MedicationSummary } from "@/lib/types"
 export interface ExportMedication extends MedicationSummary {
   category: string | null
   drugClass: string | null
+  // suppressesItch and hasGiSideEffects are inherited from MedicationSummary
 }
 
 // ---------------------------------------------------------------------------
@@ -126,6 +127,7 @@ export type ExportSection =
   | "medication-history"
   | "daily-log"
   | "correlation"
+  | "medication-confounding"
   | "pollen"
   | "links"
   | "cross-reactivity"
@@ -134,7 +136,8 @@ export type ExportSection =
 export const VALID_EXPORT_SECTIONS = new Set<ExportSection>([
   "profile", "current-diet", "supplements", "medications",
   "food-history", "medication-history", "daily-log", "correlation",
-  "pollen", "links", "cross-reactivity", "reference-stats",
+  "medication-confounding", "pollen", "links", "cross-reactivity",
+  "reference-stats",
 ])
 
 export const TIMELINE_OPTIONS = [
@@ -462,7 +465,7 @@ function formatSupplements(data: ExportData, dedup: ProductDedup): string {
     lines.push("### Treats")
     lines.push("")
     for (const [, treat] of allTreats) {
-      lines.push(`- ${treat.name}: ${treat.total} entries logged`)
+      lines.push(`- ${treat.name}: ${treat.total} ${treat.total === 1 ? "entry" : "entries"} logged`)
       const product = data.products.get(treat.productId)
       if (product) {
         const ingLine = dedup.formatIngredients(product, 0)
@@ -501,6 +504,10 @@ function formatCurrentMedications(data: ExportData): string {
     if (med.dosageForm) lines.push(`- Form: ${med.dosageForm}`)
     if (med.description) lines.push(`- Description: ${med.description}`)
     if (med.commonSideEffects) lines.push(`- Known side effects: ${med.commonSideEffects}`)
+    const effects: string[] = []
+    if (med.suppressesItch) effects.push("suppresses itch")
+    if (med.hasGiSideEffects) effects.push("has GI side effects")
+    if (effects.length > 0) lines.push(`- Correlation effects: ${effects.join(", ")}`)
     lines.push("")
   }
 
@@ -752,6 +759,75 @@ function formatScoreTable(scores: IngredientScore[], lines: string[], includeSea
   }
 }
 
+function formatMedicationConfounding(data: ExportData): string {
+  if (!data.correlation) return ""
+
+  const lines: string[] = []
+
+  // Find medications that suppress itch or have GI side effects
+  const itchMeds = data.medications.filter((m) => m.suppressesItch)
+  const giMeds = data.medications.filter((m) => m.hasGiSideEffects)
+
+  if (itchMeds.length === 0 && giMeds.length === 0) return ""
+
+  lines.push("## Medication Confounding Analysis")
+  lines.push("")
+  lines.push("Medications can mask food reactions (itch suppressants) or create false food signals (GI side effects). Scores during active medication periods may not reflect true food sensitivity.")
+  lines.push("")
+
+  if (itchMeds.length > 0) {
+    lines.push("### Itch-Suppressing Medications")
+    for (const med of itchMeds) {
+      lines.push(`- ${med.name}${med.dosage ? ` (${med.dosage})` : ""}: ${formatDateRange(med.startDate, med.endDate)}${med.drugClass ? ` — ${med.drugClass}` : ""}`)
+    }
+    lines.push("")
+  }
+
+  if (giMeds.length > 0) {
+    lines.push("### Medications with GI Side Effects")
+    for (const med of giMeds) {
+      lines.push(`- ${med.name}${med.dosage ? ` (${med.dosage})` : ""}: ${formatDateRange(med.startDate, med.endDate)}${med.drugClass ? ` — ${med.drugClass}` : ""}`)
+    }
+    lines.push("")
+  }
+
+  // On/off score splits table
+  const scores = data.correlation.giMergedScores
+  const splittable = scores.filter((s) =>
+    (s.onMedRawAvgPoopScore != null && s.offMedRawAvgPoopScore != null) ||
+    (s.onMedRawAvgItchScore != null && s.offMedRawAvgItchScore != null),
+  )
+
+  if (splittable.length > 0) {
+    lines.push("### On/Off Medication Score Splits")
+    lines.push("")
+    lines.push("| Ingredient | On-Med Poop | Off-Med Poop | On-Med Itch | Off-Med Itch | Poop Confounded | Itch Confounded |")
+    lines.push("|------------|-------------|--------------|-------------|--------------|-----------------|-----------------|")
+
+    for (const s of splittable) {
+      lines.push(`| ${s.key} | ${round1(s.onMedRawAvgPoopScore)} | ${round1(s.offMedRawAvgPoopScore)} | ${round1(s.onMedRawAvgItchScore)} | ${round1(s.offMedRawAvgItchScore)} | ${s.poopMedicationConfounded ? "yes" : "no"} | ${s.itchMedicationConfounded ? "yes" : "no"} |`)
+    }
+    lines.push("")
+  }
+
+  // Summary
+  const confoundedPoop = scores.filter((s) => s.poopMedicationConfounded)
+  const confoundedItch = scores.filter((s) => s.itchMedicationConfounded)
+  if (confoundedPoop.length > 0 || confoundedItch.length > 0) {
+    lines.push("### Confounding Summary")
+    lines.push("")
+    if (confoundedPoop.length > 0) {
+      lines.push(`- **GI confounded** (≥50% of scored days on GI-affecting med): ${confoundedPoop.map((s) => s.key).join(", ")}`)
+    }
+    if (confoundedItch.length > 0) {
+      lines.push(`- **Itch confounded** (≥50% of scored days on itch suppressant): ${confoundedItch.map((s) => s.key).join(", ")}`)
+    }
+    lines.push("")
+  }
+
+  return lines.join("\n")
+}
+
 function formatPollenSymptomTable(data: ExportData): string {
   const lines: string[] = []
   lines.push("## Symptom Averages by Pollen Level")
@@ -938,6 +1014,11 @@ export function buildExportMarkdown(
 
   if (!excludeSections.has("correlation")) {
     sections.push(formatCorrelationData(data))
+  }
+
+  if (!excludeSections.has("medication-confounding")) {
+    const confoundingSection = formatMedicationConfounding(data)
+    if (confoundingSection) sections.push(confoundingSection)
   }
 
   if (!excludeSections.has("pollen") && data.dog.environmentEnabled) {

@@ -31,6 +31,18 @@ BRAND = "Rachael Ray Nutrish"
 WEBSITE_URL = "https://www.nutrish.com"
 SITEMAP_URL = "https://www.nutrish.com/wp-sitemap-posts-product-1.xml"
 
+_INGREDIENT_OVERRIDES: dict[str, str] = {
+    "Chicken Jerky (Chicken, Ground Chickpeas, Ground Potatoes, Glycerin, Guar Gum, "
+    "Cane Molasses, Salt, Natural Smoke Flavor, Citric Acid (preservative), Distilled "
+    "Vinegar, Mixed Tocopherols (preservative), Rosemary Extract )": (
+        "Chicken Jerky, Chicken, Ground Chickpeas, Ground Potatoes, Glycerin, Guar Gum, "
+        "Cane Molasses, Salt, Natural Smoke Flavor, Citric Acid (preservative), Distilled "
+        "Vinegar, Mixed Tocopherols (preservative), Rosemary Extract"
+    ),
+    "Peanut Butter (Peanuts, Palm Oil)": "Peanut Butter, Peanuts, Palm Oil",
+    "Rice Pasta (Rice, Water, Ground Tapioca)": "Rice Pasta, Rice, Water, Ground Tapioca",
+}
+
 # Slugs containing these are skipped (variety packs, cat products)
 _SKIP_PATTERNS = [
     "variety-pack",
@@ -464,5 +476,8 @@ def scrape_nutrish(output_dir: Path) -> int:
     )
     logger.info(f"Complete: {complete}/{len(products)} products have full nutrition data")
 
-    write_brand_json(BRAND, WEBSITE_URL, products, output_dir, slug="nutrish")
+    write_brand_json(
+        BRAND, WEBSITE_URL, products, output_dir,
+        slug="nutrish", ingredient_overrides=_INGREDIENT_OVERRIDES,
+    )
     return len(products)

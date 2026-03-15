@@ -36,6 +36,11 @@ from .common import (
 
 logger = logging.getLogger(__name__)
 
+_INGREDIENT_OVERRIDES: dict[str, str] = {
+    "PYRIDOXINE HYDROCHLORIDE,( VITAMIN B6)": "PYRIDOXINE HYDROCHLORIDE (VITAMIN B6)",
+    "Folic Acid(Vitamin B-9)": "Folic Acid (Vitamin B-9)",
+}
+
 WEBSITE_URL = "https://www.merrickpetcare.com"
 _LISTING_URL = f"{WEBSITE_URL}/canada/dog-food"
 _ITEMS_PER_PAGE = 12
@@ -492,5 +497,7 @@ def scrape_merrick(output_dir: Path) -> int:
         f"{has_ga}/{len(products)} GA, {has_cal}/{len(products)} calories"
     )
 
-    write_brand_json("Merrick", WEBSITE_URL, products, output_dir, slug="merrick")
+    write_brand_json("Merrick", WEBSITE_URL, products, output_dir, slug="merrick",
+        ingredient_overrides=_INGREDIENT_OVERRIDES,
+    )
     return len(products)

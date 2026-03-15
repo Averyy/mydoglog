@@ -1,76 +1,47 @@
 # New Brand Scrapers — TODO
 
-## PetSmart.ca RSC Pattern
+## Up Next
 
-All use shared `scrapers/petsmart.py` module with wafer-py `SyncSession(rate_limit=2.0)`.
+Prioritized by catalog size, scraping difficulty, and relevance to digestive tracking.
 
-- [x] **Simply Nourish** (59 products) — petsmart.ca only (PetSmart private label). Featured-brands pagination discovery. Done.
-  - Discovery: `https://www.petsmart.ca/featured-brands/simply-nourish/f/pet/dog?page=N`
-- [x] **Natural Balance** (51 products) — petsmart.ca, RSC flight payload. Manufacturer site has ingredients as images only — PetSmart is the only viable source. LID line relevant for digestive tracking. Done. Fixed `%.` GA splitting bug affecting calcium values in 3 Specialized Nutrition products.
-  - Discovery: `https://www.petsmart.ca/featured-brands/natural-balance/f/pet/dog?page=N`
-- [x] **Instinct (Nature's Variety)** (37 products) — instinctpetfood.com has ~104 but ingredients as images. PetSmart RSC for Canadian subset. Done.
-  - Discovery: `https://www.petsmart.ca/featured-brands/instinct/f/pet/dog?page=N`
-- [x] **Nulo** (33 products) — nulo.com is Shopify but PetSmart has the Canadian subset with RSC data. Done. 3 products have manual data (2 missing GA, 1 missing calories) sourced from nulo.com.
-  - Discovery: `https://www.petsmart.ca/featured-brands/nulo/f/pet/dog?page=N`
-- [x] **Canidae** (15 products) — canidae.com uses BigCommerce + Vue.js (ingredients load client-side, not in HTML). Not on Chewy CA. PetSmart is the only viable source. Done. 1 product has manual calorie data, 2 size dupes skipped.
-  - Discovery: `https://www.petsmart.ca/featured-brands/canidae/f/pet/dog?page=N`
-- [x] **Eukanuba** (8 products) — eukanuba.com/ca has data in HTML but PetSmart provides consistent format. No featured-brands page — uses search. Done. 1 product has manual GA/calorie override (PetSmart had wrong min/max labels).
-  - Discovery: `https://www.petsmart.ca/search/f/pet/dog?q=Eukanuba&page=N`
-
-- [x] **Purina (Retail)** (97 products) — petsmart.ca, multi-brand filter URL covering 7 sub-brands (Pro Plan, ONE, Beneful, Beyond, DentaLife, Beggin', Dog Chow/Puppy Chow). Single `scrape_petsmart_brand()` call. Done. 1 manual calorie override (Beggin' Chew-Rific). RSC chunk supplementing for pages where GA is in a separate chunk from ingredients.
-  - Discovery: `https://www.petsmart.ca/dog/f/brand/beggin%27%20strips+beyond+dentalife+purina%20dog%20chow+purina%20one+purina%20pro%20plan+purina%20puppy%20chow?page=N`
-- [ ] **Cesar** (~30 products, ~12-15 unique after removing variety packs) — Mars brand (same parent as Iams, Pedigree, Nutro). Popular wet food. cesar.ca has all nutrition as images (not viable).
-  - Discovery: `https://www.petsmart.ca/featured-brands/cesar/f/pet/dog?page=N`
-
-## Manufacturer Sites
-
-- [x] **Rachael Ray Nutrish** (36 products: 28 food + 8 treats) — nutrish.com. WordPress SSR, Bootstrap accordion structure. Done. 2 discontinued products (Big Life) auto-skipped, 9 variety packs skipped.
-  - Discovery: WordPress product sitemap (`wp-sitemap-posts-product-1.xml`), filters dog products by slug
-  - Product URLs: `/product/{slug}/`
-  - Ingredients: plain text in accordion, GA: `...` separated format, Calories: kcal/kg + kcal/cup
-  - Not on walmart.ca or petsmart.ca in Canada
-- [ ] **Fromm** (~113 dog products) — frommfamily.com. Umbraco CMS, server-rendered HTML. Easy scrape.
-  - Stack: Umbraco (ASP.NET) + Vue.js frontend, Cloudflare CDN
-  - Discovery: `/sitemap` HTML page has all product URLs organized by line/format. Best source (API at `/umbraco/surface/product/ProductFilterSearchNew/` requires Cloudflare cookies)
-  - Product URLs: `/products/dog/{product-line}/{format}/{slug}/`
-  - Ingredients: plain text (ingredients are links but text extractable), GA: standard format ("Crude Protein 24% MIN"), Calories: kcal/kg + kcal/lb + kcal/cup (dry) or kcal/kg + kcal/can (wet)
-  - Vitamin blocks in brackets. ~18 treats, ~4 cracker snacks — filter if needed
-- [ ] **Zignature** (~46 dog food products, 65 total with treats) — zignature.com. WordPress + WooCommerce. Easy scrape. LID specialist, relevant for digestive tracking.
-  - Stack: WordPress + WooCommerce + Elementor Pro, server-rendered
-  - Discovery: WooCommerce Store API at `/wp-json/wc/store/v1/products?per_page=100&_fields=id,name,slug,permalink,type` returns all products in one JSON call
+1. **Zignature** (~46 dog food products, 65 total with treats) — zignature.com. WordPress + WooCommerce. Easy scrape. LID specialist, relevant for digestive tracking / elimination diets.
+  - Stack: WordPress + WooCommerce + Yoast SEO, server-rendered
+  - Discovery: WooCommerce Store API at `/wp-json/wc/store/v1/products?per_page=100&_fields=id,name,slug,permalink,type` returns all 65 products in one JSON call (no pagination needed)
   - Product URLs: `/products/{slug}/`
-  - Ingredients: plain text under "Ingredients" heading, GA: definition list rows, Calories: kcal/kg + kcal/cup in "How to Feed" section
-  - Lines: Original (49), Select Cuts (4), Inception (6), Essence (6)
-- [ ] **Victor** (~31 dog food products) — victorpetfood.com (redirects from victordogfood.com). Drupal SSR. Easy scrape.
-  - Stack: Drupal + Bootstrap 3, server-rendered, no SPA
-  - Discovery: `/products` — all products on single page, no pagination. Client-side filter checkboxes but all in initial HTML
-  - Product URLs: `/products/{slug}/`
-  - Ingredients: plain text under "Full ingredient list", GA: definition lists (`Crude Protein (Min.): 30.0%`), Calories: kcal/kg + kcal/cup inline
-  - Bonus: full "Typical Analysis" table with actual nutrient values beyond GA minimums
+  - Ingredients: plain text under "Ingredients" heading
+  - GA: label/value pairs under "Nutrition" heading. Dry food includes Omega 6/3, Taurine, L-Carnitine, Total Microorganisms beyond standard 4. Wet/treats have standard 4 only.
+  - Calories: `Kcal per KG` + `Kcal per Cup` (dry) / `Kcal per Can` (wet) / `Kcal per Treat` in "How to Feed" section
+  - Gotcha: page content rendered twice (desktop + mobile layout) — grab first occurrence
+  - Lines: Original (~13), Small Bites (5), Select Cuts (4), Inception (3), Essence LIR (3), plus ~18 wet and ~19 treats
+2. **President's Choice (Loblaw)** (~19-25 unique dog food formulas) — loblaws.ca. Highest grocery shelf presence in Canada (Loblaw/No Frills/Superstore). "Sensitive Skin & Stomach" line relevant for digestive tracking.
+  - Stack: Custom SPA ("Bronx" framework, React-based), Akamai Bot Manager
+  - Discovery: Collection page at `https://www.loblaws.ca/en/collection/pc-nutrition-first` SSRs product tiles (names, product codes, URLs) — no browser needed
+  - Product detail: PDPs require Playwright rendering (SPA shell only via HTTP). Full ingredients, GA, and calories present in rendered DOM
+  - BFF API: `api.pcexpress.ca/pcx-bff/api/v1/products/{productCode}` returns 401 (OAuth client_credentials, token flow buried in obfuscated Bronx SPA — not extractable)
+  - Ingredients: plain text after `<strong>Ingredients</strong>:`, GA: `<ul>` list items (6 fields including omega-3/6), Calories: inline `Calorie:XXXX kcal/kg - XXX kcal per cup`
+  - Images: `digital.loblaws.ca/PCX/{productCode}/en/1/{code}_en_front_800.png` — 800x800 PNG, no auth, direct HTTP download
+  - Sub-brands: Nutrition First (~19 formulas), PC Extra Meaty (~3 formulas), Nutrition First wet (stews)
+  - Approach: Playwright DOM scraping (manual JSON file, no automated re-scrape). Small catalog (~25 products) makes one-time Playwright extraction practical.
+3. **Nutram** (~18 dog food, 22 total with treats) — nutram.com. Shopify. Canadian-made (Elmira, ON), solution-based formulas for skin/stomach issues. Widely available in Canadian independents. All dry food only.
+  - Stack: Shopify (Liquid theme), server-rendered HTML
+  - Discovery: `/collections/all-dogs/products.json?limit=250` returns all product handles and metadata. Also `/sitemap_products_1.xml`
+  - Product URLs: `/products/{handle}`
+  - Ingredients: plain text after "Ingredients List" heading (skip marketing blurb before it)
+  - GA: HTML table with protein, fat, fibre, moisture, calcium, phosphorus, omega-3/6, glucosamine
+  - Calories: `CALORIE CONTENT: (calculated metabolizable energy) is X,XXX kcal/kg (XXX kcal/cup)`. 4 dental treats missing calorie data.
+  - Note: Shopify JSON API (`/products/{handle}.json`) only has marketing copy — must scrape HTML pages for nutritional data
+  - Lines: S-series (Sound Balanced Wellness, 9), I-series (Ideal Solution Support, 3), T-series (Total Grain-Free, 6), plus 4 dental treats
 
-## Grocery / Mass-Market
-
-- [x] **Kirkland Signature (Costco)** (10 products) — Diamond-manufactured. costco.ca is a JS-rendered SPA with nutrition in PDFs only. US (costco.com) product pages have identical formulas (verified vs AU) with ingredients/GA/calories as plain text. Biscuit data from packaging photo. Done, verified.
-  - Discovery: hardcoded CA catalog (10 products, variety pack skipped)
-  - Nutrition: costco.com US product detail pages (wafer-py, server-rendered HTML). US repackaged 35lb→25lb but ingredients identical to CA/AU.
-  - Manual: Chicken Meal & Rice Biscuits (US page lacks nutrition data)
-  - Note: Dental Chews has no calorie data on US page
-- [ ] **President's Choice (Loblaw)** (~30-40 dog food products) — loblaws.ca. Custom SPA ("Bronx" framework), Akamai bot protection. Moderate difficulty — needs Playwright.
-  - presidentschoice.ca redirects to pcoptimum.ca (no product pages)
-  - Collection: `https://www.loblaws.ca/en/collection/pc-nutrition-first` (Nutrition First sub-brand, ~19 unique dog formulas)
-  - Additional budget-tier PC products (Extra Meaty, etc.) via search
-  - Product URLs: `/en/{slug}/p/{productCode}_EA`
-  - Ingredients: text in expandable Description section, GA: structured list, Calories: text string (e.g. "3340 kcal/kg - 367 kcal per cup")
-  - API: `api.pcexpress.ca/pcx-bff/api/v1/products/{productCode}` exists but returns 403 (Akamai). Must use Playwright to render SPA
 ## Do It Later
 
-- [ ] **Nutram** (~25-30 products) — nutram.com. Canadian-made, solution-based formulas for skin/stomach. Need to investigate site structure.
-- [ ] **Holistic Select** (~10-15 products) — holisticselect.com. Digestive health is core brand positioning (prebiotics, probiotics, enzymes in every formula).
-- [ ] **Petkind** (~15-20 products) — petkind.com. Green tripe-based formulas targeted at digestive health.
-- [ ] **Horizon (Pulsar/Legacy)** (~15-20 products) — horizonpetfood.com. Canadian (Saskatchewan), probiotics in all formulas.
-- [ ] **Oven-Baked Tradition** (~20-25 products) — ovenbakedtradition.com. Canadian-made (Quebec).
-- [ ] **Carna4** (~6-8 products) — carna4.com. Canadian-made, very small catalog.
+- [ ] **Oven-Baked Tradition** (~20-25 products) — ovenbakedtradition.com. Canadian-made (Quebec). Decent presence in independents and some Pet Valu.
+- [ ] **Horizon (Pulsar/Legacy)** (~15-20 products) — horizonpetfood.com. Canadian (Saskatchewan), probiotics in all formulas. Regional distribution (mainly western Canada).
+- [ ] **Petkind** (~15-20 products) — petkind.com. Canadian (BC). Green tripe-based formulas targeted at digestive health. Niche retailer distribution.
+- [ ] **Holistic Select** (~10-15 products) — holisticselect.com. Digestive health is core brand positioning (prebiotics, probiotics, enzymes in every formula). Limited Canadian shelf space.
 
 ## Skipped
 
 - **Virbac (Veterinary HPM)** — Only 4 products in Canada, GA as images (no text), no calorie data. Not worth scraping.
+- **Victor** (~31 products) — victorpetfood.com. Easy scrape but limited Canadian distribution. Primarily US brand.
+- **Carna4** (~6-8 products) — carna4.com. Canadian-made but catalog too small to justify a scraper.
+- **Cesar** (~5 unique foods + 1 treat after removing 9 variety packs) — petsmart.ca. PetSmart RSC pipeline won't work (nutritional data not in RSC payloads, only in Algolia listing JSON). 2/5 foods missing calories, inconsistent ingredient detail. cesar.ca has nutrition as images only. Too few products with too many data quality issues.

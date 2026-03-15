@@ -40,6 +40,10 @@ from .common import (
 
 logger = logging.getLogger(__name__)
 
+_INGREDIENT_OVERRIDES: dict[str, str] = {
+    "acid.Contains": "acid. Contains",
+}
+
 WEBSITE_URL = "https://www.petsmart.ca"
 
 _LISTING_URL = f"{WEBSITE_URL}/featured-brands/stella-and-chewys"
@@ -614,5 +618,6 @@ def scrape_stellachewys(output_dir: Path) -> int:
         products,
         output_dir,
         slug="stellachewys",
+        ingredient_overrides=_INGREDIENT_OVERRIDES,
     )
     return len(products)

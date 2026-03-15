@@ -895,5 +895,8 @@ def scrape_petsmart_brand(
         f"{has_ga}/{len(products)} GA, {has_cal}/{len(products)} calories"
     )
 
-    write_brand_json(brand_name, WEBSITE_URL, products, output_dir, slug=slug)
+    write_brand_json(
+        brand_name, WEBSITE_URL, products, output_dir,
+        slug=slug, ingredient_overrides=ingredient_overrides,
+    )
     return len(products)

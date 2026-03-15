@@ -43,7 +43,7 @@
       "product_type": "food",
       "product_format": "wet",
       "life_stage": "adult",
-      "ingredients_raw": "Chicken Broth, Beef, Chicken, Dried Egg Product, Pea Protein, Ground Tapioca, Natural Flavor, Egg White, Green Beans, Tomato, Rice Pasta (Rice, Water, Ground Tapioca), Dicalcium Phosphate, Guar Gum, Caramel (Color), Potassium Chloride, Salt, Choline Chloride, Calcium Carbonate, Fish Oil, Zinc Proteinate, Magnesium Sulfate, Iron Proteinate, Celery Powder, Vitamin E Supplement, L-ascorbyl-2-polyphosphate (Source of Vitamin C), Thiamine Mononitrate, Niacin, Copper Proteinate, Manganese Proteinate, Vitamin A Acetate, Calcium Iodate, Calcium Pantothenate, Sodium Selenite, Riboflavin, Vitamin B12 Supplement, Pyridoxine Hydrochloride (Source of Vitamin B6), Folic Acid, Vitamin D3 Supplement, Biotin, Menadione Sodium Bisulfite Complex (Source of Vitamin K Activity)",
+      "ingredients_raw": "Chicken Broth, Beef, Chicken, Dried Egg Product, Pea Protein, Ground Tapioca, Natural Flavor, Egg White, Green Beans, Tomato, Rice Pasta, Rice, Water, Ground Tapioca, Dicalcium Phosphate, Guar Gum, Caramel (Color), Potassium Chloride, Salt, Choline Chloride, Calcium Carbonate, Fish Oil, Zinc Proteinate, Magnesium Sulfate, Iron Proteinate, Celery Powder, Vitamin E Supplement, L-ascorbyl-2-polyphosphate (Source of Vitamin C), Thiamine Mononitrate, Niacin, Copper Proteinate, Manganese Proteinate, Vitamin A Acetate, Calcium Iodate, Calcium Pantothenate, Sodium Selenite, Riboflavin, Vitamin B12 Supplement, Pyridoxine Hydrochloride (Source of Vitamin B6), Folic Acid, Vitamin D3 Supplement, Biotin, Menadione Sodium Bisulfite Complex (Source of Vitamin K Activity)",
       "guaranteed_analysis": {
         "crude_protein_min": 9.0,
         "crude_fat_min": 5.0,
@@ -85,7 +85,7 @@
       "product_type": "treat",
       "product_format": "dry",
       "life_stage": "adult",
-      "ingredients_raw": "Chicken, Wheat Flour, Corn Flour, Cane Sugar, Palm Oil, Glycerin, Partially Defatted Peanut Flour, Chicken Jerky (Chicken, Ground Chickpeas, Ground Potatoes, Glycerin, Guar Gum, Cane Molasses, Salt, Natural Smoke Flavor, Citric Acid (preservative), Distilled Vinegar, Mixed Tocopherols (preservative), Rosemary Extract ), Peanut Butter (Peanuts, Palm Oil) , Bacon, Guar Gum, Corn Starch, Citric Acid (preservative), Fruit Juice (color), Natural Smoke Flavor, Vinegar, Soy Lecithin, Mixed Tocopherols (preservative), Rosemary Extract",
+      "ingredients_raw": "Chicken, Wheat Flour, Corn Flour, Cane Sugar, Palm Oil, Glycerin, Partially Defatted Peanut Flour, Chicken Jerky, Chicken, Ground Chickpeas, Ground Potatoes, Glycerin, Guar Gum, Cane Molasses, Salt, Natural Smoke Flavor, Citric Acid (preservative), Distilled Vinegar, Mixed Tocopherols (preservative), Rosemary Extract, Peanut Butter, Peanuts, Palm Oil, Bacon, Guar Gum, Corn Starch, Citric Acid (preservative), Fruit Juice (color), Natural Smoke Flavor, Vinegar, Soy Lecithin, Mixed Tocopherols (preservative), Rosemary Extract",
       "guaranteed_analysis": {
         "crude_protein_min": 12.0,
         "crude_fat_min": 15.0,
@@ -106,7 +106,7 @@
       "product_type": "treat",
       "product_format": "dry",
       "life_stage": "adult",
-      "ingredients_raw": "Beef, Wheat Flour, Glycerin, Sugar, Corn Flour, Palm Oil, Partially Defatted Peanut Flour, Bacon, Peanut Butter (Peanuts, Palm Oil), Spray Dried Beef Blood Cells, Guar Gum, Citric Acid (used as a preservative), Corn Starch, Chickpea Flour, Potato Flour, Vinegar, Natural Smoke Flavor, Mixed Tocopherols (used as a preservative), Cane Molasses, Caramel Color, Salt, Sunflower Lecithin, Rosemary Extract",
+      "ingredients_raw": "Beef, Wheat Flour, Glycerin, Sugar, Corn Flour, Palm Oil, Partially Defatted Peanut Flour, Bacon, Peanut Butter, Peanuts, Palm Oil, Spray Dried Beef Blood Cells, Guar Gum, Citric Acid (used as a preservative), Corn Starch, Chickpea Flour, Potato Flour, Vinegar, Natural Smoke Flavor, Mixed Tocopherols (used as a preservative), Cane Molasses, Caramel Color, Salt, Sunflower Lecithin, Rosemary Extract",
       "guaranteed_analysis": {
         "crude_protein_min": 12.0,
         "crude_fat_min": 15.0,
@@ -127,7 +127,7 @@
       "product_type": "food",
       "product_format": "dry",
       "life_stage": "adult",
-      "ingredients_raw": "Beef, Chicken Meal, Whole Dried Potato, Natural Pork Flavor, Dried Peas, Pea Starch, Sunflower Meal, Chicken Fat (Preserved with Mixed Tocopherols), Beef Meal, Whole Flaxseed, Pea Protein, Venison, Lamb, Menhaden Fish Meal, Natural Flavor, Salt, Taurine, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (Source of Vitamin C), Niacin Supplement, Vitamin A Supplement, Thiamine Mononitrate , d-Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Biotin, Vitamin D3 Supplement), Choline Chloride, Minerals (Ferrous Sulfate, Zinc Sulfate, Copper Sulfate, Sodium Selenite, Manganese Sulfate, Calcium Iodate), Zinc Sulfate, Lactic Acid, Citric Acid (Preservative), Rosemary Extract",
+      "ingredients_raw": "Beef, Chicken Meal, Whole Dried Potato, Natural Pork Flavor, Dried Peas, Pea Starch, Sunflower Meal, Chicken Fat (Preserved with Mixed Tocopherols), Beef Meal, Whole Flaxseed, Pea Protein, Venison, Lamb, Menhaden Fish Meal, Natural Flavor, Salt, Taurine, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (Source of Vitamin C), Niacin Supplement, Vitamin A Supplement, Thiamine Mononitrate, d-Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Biotin, Vitamin D3 Supplement), Choline Chloride, Minerals (Ferrous Sulfate, Zinc Sulfate, Copper Sulfate, Sodium Selenite, Manganese Sulfate, Calcium Iodate), Zinc Sulfate, Lactic Acid, Citric Acid (Preservative), Rosemary Extract",
       "guaranteed_analysis": {
         "crude_protein_min": 30.0,
         "crude_fat_min": 15.0,
@@ -259,7 +259,7 @@
       "product_type": "food",
       "product_format": "dry",
       "life_stage": "adult",
-      "ingredients_raw": "Beef, Chicken Meal, Brown Rice, Dried Peas, Brewers Rice, Poultry Fat (Preserved with Mixed Tocopherols), Pea Protein, Whole Flaxseed, Natural Flavor, Turkey Meal, Chicken, Dried Apples, Dried Carrots, Salt, Whole Dried Potato, Potassium Chloride, Menhaden Fish Oil (Preserved with Mixed Tocopherols), Vitamins (Vitamin E Supplement, Ascorbic Acid (Source of Vitamin C), Niacin, Vitamin A Supplement, Thiamine Mononitrate , d-Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Biotin, Vitamin D3 Supplement), Dicalcium Phosphate, Minerals (Ferrous Sulfate, Zinc Sulfate, Copper Sulfate, Sodium Selenite, Manganese Sulfate, Calcium Iodate), Taurine, Choline Chloride, Glycerin, Sunflower Oil, Lactic Acid, Brown Sugar, Paprika Extract (Color), Zinc Sulfate, Citric Acid (preservative), Rosemary Extract",
+      "ingredients_raw": "Beef, Chicken Meal, Brown Rice, Dried Peas, Brewers Rice, Poultry Fat (Preserved with Mixed Tocopherols), Pea Protein, Whole Flaxseed, Natural Flavor, Turkey Meal, Chicken, Dried Apples, Dried Carrots, Salt, Whole Dried Potato, Potassium Chloride, Menhaden Fish Oil (Preserved with Mixed Tocopherols), Vitamins (Vitamin E Supplement, Ascorbic Acid (Source of Vitamin C), Niacin, Vitamin A Supplement, Thiamine Mononitrate, d-Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Biotin, Vitamin D3 Supplement), Dicalcium Phosphate, Minerals (Ferrous Sulfate, Zinc Sulfate, Copper Sulfate, Sodium Selenite, Manganese Sulfate, Calcium Iodate), Taurine, Choline Chloride, Glycerin, Sunflower Oil, Lactic Acid, Brown Sugar, Paprika Extract (Color), Zinc Sulfate, Citric Acid (preservative), Rosemary Extract",
       "guaranteed_analysis": {
         "crude_protein_min": 26.0,
         "crude_fat_min": 14.0,
@@ -285,7 +285,7 @@
       "product_type": "food",
       "product_format": "dry",
       "life_stage": "adult",
-      "ingredients_raw": "Lamb Meal, brown rice, brewers rice, peas, pearled barley, grain sorghum, chicken meal, chicken fat (preserved with mixed tocopherols), natural flavor, salt, potassium chloride, Minerals (Zinc Sulfate, Ferrous Sulfate, Copper Sulfate, Sodium Selenite, Manganese Sulfate, Calcium Iodate), Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (Source of Vitamin C), Niacin Supplement, Vitamin A Supplement, Thiamine Mononitrate , d-Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Biotin, Vitamin D3 Supplement), taurine, choline chloride, lactic acid, citric acid (used as a preservative), rosemary extract",
+      "ingredients_raw": "Lamb Meal, brown rice, brewers rice, peas, pearled barley, grain sorghum, chicken meal, chicken fat (preserved with mixed tocopherols), natural flavor, salt, potassium chloride, Minerals (Zinc Sulfate, Ferrous Sulfate, Copper Sulfate, Sodium Selenite, Manganese Sulfate, Calcium Iodate), Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (Source of Vitamin C), Niacin Supplement, Vitamin A Supplement, Thiamine Mononitrate, d-Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Biotin, Vitamin D3 Supplement), taurine, choline chloride, lactic acid, citric acid (used as a preservative), rosemary extract",
       "guaranteed_analysis": {
         "crude_protein_min": 20.0,
         "crude_fat_min": 13.0,
@@ -470,7 +470,7 @@
       "product_type": "food",
       "product_format": "dry",
       "life_stage": "adult",
-      "ingredients_raw": "Beef, Beef Meal, Soybean Meal, Whole Corn, Grain Sorghum, Dried Peas, Chicken Fat (Preserved With Mixed Tocopherols), Pea Starch, Brown Rice, Dried Plain Beet Pulp, Corn Protein Concentrate, Salt, Carrots, Fish Oil (preserved with Mixed Tocopherols), Malted Barley Flour, Natural Flavor, Taurine, Citric Acid (Preservative), Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (Source of Vitamin C), Niacin Supplement, Vitamin A Supplement, Thiamine Mononitrate , D-Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Biotin, Vitamin D3 Supplement), Minerals (Ferrous Sulfate, Zinc Sulfate, Copper Sulfate, Sodium Selenite, Manganese Sulfate, Calcium Iodate), Choline Chloride, Lactic Acid, Mixed Tocopherols (Preservative), Rosemary Extract, Carmine (Color)",
+      "ingredients_raw": "Beef, Beef Meal, Soybean Meal, Whole Corn, Grain Sorghum, Dried Peas, Chicken Fat (Preserved With Mixed Tocopherols), Pea Starch, Brown Rice, Dried Plain Beet Pulp, Corn Protein Concentrate, Salt, Carrots, Fish Oil (preserved with Mixed Tocopherols), Malted Barley Flour, Natural Flavor, Taurine, Citric Acid (Preservative), Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (Source of Vitamin C), Niacin Supplement, Vitamin A Supplement, Thiamine Mononitrate, D-Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Biotin, Vitamin D3 Supplement), Minerals (Ferrous Sulfate, Zinc Sulfate, Copper Sulfate, Sodium Selenite, Manganese Sulfate, Calcium Iodate), Choline Chloride, Lactic Acid, Mixed Tocopherols (Preservative), Rosemary Extract, Carmine (Color)",
       "guaranteed_analysis": {
         "crude_protein_min": 23.0,
         "crude_fat_min": 13.0,
@@ -497,7 +497,7 @@
       "product_type": "food",
       "product_format": "dry",
       "life_stage": "adult",
-      "ingredients_raw": "Turkey, Chicken Meal, Brown Rice, Whole Ground Corn, Soybean Meal, Dried Peas, Pea Starch, Pearled Barley, Turkey Meal, Venison, Dried Plain Beet Pulp, Chicken Fat (Preserved with Mixed Tocopherols), Natural Flavor, Potassium Chloride, Salt, Carrots, Dicalcium Phosphate, Taurine, Vitamins (Vitamin E Supplement, Ascorbic Acid (Source of Vitamin C), Niacin, Vitamin A Supplement, Thiamine Mononitrate, d-Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Biotin, Vitamin D3 Supplement), Choline Chloride, Minerals (Ferrous Sulfate, Zinc Sulfate, Copper Sulfate, Sodium Selenite, Manganese Sulfate, Calcium Iodate), Zinc Sulfate, L-Carnitine , Lactic Acid, Citric Acid (Preservative), Rosemary Extract",
+      "ingredients_raw": "Turkey, Chicken Meal, Brown Rice, Whole Ground Corn, Soybean Meal, Dried Peas, Pea Starch, Pearled Barley, Turkey Meal, Venison, Dried Plain Beet Pulp, Chicken Fat (Preserved with Mixed Tocopherols), Natural Flavor, Potassium Chloride, Salt, Carrots, Dicalcium Phosphate, Taurine, Vitamins (Vitamin E Supplement, Ascorbic Acid (Source of Vitamin C), Niacin, Vitamin A Supplement, Thiamine Mononitrate, d-Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Biotin, Vitamin D3 Supplement), Choline Chloride, Minerals (Ferrous Sulfate, Zinc Sulfate, Copper Sulfate, Sodium Selenite, Manganese Sulfate, Calcium Iodate), Zinc Sulfate, L-Carnitine, Lactic Acid, Citric Acid (Preservative), Rosemary Extract",
       "guaranteed_analysis": {
         "crude_protein_min": 25.0,
         "crude_fat_min": 8.0,
@@ -524,7 +524,7 @@
       "product_type": "food",
       "product_format": "dry",
       "life_stage": "adult",
-      "ingredients_raw": "Chicken, Chicken Meal, Dried Peas, Brown Rice, Brewers Rice, Pea Protein, Poultry Fat (Preserved with Mixed Tocopherols), Whole Flaxseed, Dried Plain Beet Pulp, Natural Flavor, Dried Apples, Dried Carrots, Whole Dried Potato, Salt, Dicalcium Phosphate, Vitamins (Vitamin E Supplement, Ascorbic Acid (Source of Vitamin C), Niacin, Vitamin A Supplement, Thiamine Mononitrate , d-Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Biotin, Vitamin D3 Supplement), Potassium Chloride, Menhaden Fish Oil (Preserved with Mixed Tocopherols), Taurine, Minerals (Ferrous Sulfate, Zinc Sulfate, Copper Sulfate, Sodium Selenite, Manganese Sulfate, Calcium Iodate), Choline Chloride, Glycerin, Sunflower Oil, Lactic Acid, Paprika Extract (Color), Brown Sugar, Zinc Sulfate, Citric Acid (preservative), Rosemary Extract",
+      "ingredients_raw": "Chicken, Chicken Meal, Dried Peas, Brown Rice, Brewers Rice, Pea Protein, Poultry Fat (Preserved with Mixed Tocopherols), Whole Flaxseed, Dried Plain Beet Pulp, Natural Flavor, Dried Apples, Dried Carrots, Whole Dried Potato, Salt, Dicalcium Phosphate, Vitamins (Vitamin E Supplement, Ascorbic Acid (Source of Vitamin C), Niacin, Vitamin A Supplement, Thiamine Mononitrate, d-Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Biotin, Vitamin D3 Supplement), Potassium Chloride, Menhaden Fish Oil (Preserved with Mixed Tocopherols), Taurine, Minerals (Ferrous Sulfate, Zinc Sulfate, Copper Sulfate, Sodium Selenite, Manganese Sulfate, Calcium Iodate), Choline Chloride, Glycerin, Sunflower Oil, Lactic Acid, Paprika Extract (Color), Brown Sugar, Zinc Sulfate, Citric Acid (preservative), Rosemary Extract",
       "guaranteed_analysis": {
         "crude_protein_min": 26.0,
         "crude_fat_min": 14.0,
@@ -711,7 +711,7 @@
       "product_type": "food",
       "product_format": "wet",
       "life_stage": "adult",
-      "ingredients_raw": "Chicken Broth, Chicken, Dried Egg Product, Ground Tapioca, Pea Protein, Carrots, Egg White, Dicalcium Phosphate, Rice Pasta (Rice, Water, Ground Tapioca), Natural Flavor, Guar Gum, Potassium Chloride, Spinach, Salt, Choline Chloride, Calcium Carbonate, Fish Oil, Caramel (Color), Zinc Proteinate, Magnesium Sulfate, Iron Proteinate, Celery Powder, Vitamin E Supplement, L-ascorbyl-2-polyphosphate (Source of Vitamin C), Thiamine Mononitrate, Niacin, Copper Proteinate, Manganese Proteinate, Vitamin A Acetate, Calcium Iodate, Calcium Pantothenate, Sodium Selenite, Riboflavin, Vitamin B12 Supplement, Pyridoxine Hydrochloride (Source of Vitamin B6), Folic Acid, Vitamin D3 Supplement, Biotin, Menadione Sodium Bisulfite Complex (Source of Vitamin K Activity)",
+      "ingredients_raw": "Chicken Broth, Chicken, Dried Egg Product, Ground Tapioca, Pea Protein, Carrots, Egg White, Dicalcium Phosphate, Rice Pasta, Rice, Water, Ground Tapioca, Natural Flavor, Guar Gum, Potassium Chloride, Spinach, Salt, Choline Chloride, Calcium Carbonate, Fish Oil, Caramel (Color), Zinc Proteinate, Magnesium Sulfate, Iron Proteinate, Celery Powder, Vitamin E Supplement, L-ascorbyl-2-polyphosphate (Source of Vitamin C), Thiamine Mononitrate, Niacin, Copper Proteinate, Manganese Proteinate, Vitamin A Acetate, Calcium Iodate, Calcium Pantothenate, Sodium Selenite, Riboflavin, Vitamin B12 Supplement, Pyridoxine Hydrochloride (Source of Vitamin B6), Folic Acid, Vitamin D3 Supplement, Biotin, Menadione Sodium Bisulfite Complex (Source of Vitamin K Activity)",
       "guaranteed_analysis": {
         "crude_protein_min": 9.0,
         "crude_fat_min": 5.0,
@@ -733,7 +733,7 @@
       "product_format": "dry",
       "sub_brand": "Zero Grain",
       "life_stage": "adult",
-      "ingredients_raw": "Salmon, Chicken Meal, Sweet Potato, Pea Starch, Whole Dried Potato, Canola Meal, Dried Peas, Turkey Meal, Chicken Fat (Preserved with Mixed Tocopherols), Whole Flaxseed, Dried Plain Beet Pulp, Salt, Menhaden Fish Oil (Preserved with Mixed Tocopherols), Natural Flavor, Taurine, Citric Acid (Preservative), Minerals (Zinc Sulfate, Ferrous Sulfate, Copper Sulfate, Sodium Selenite, Manganese Sulfate, Calcium Iodate), Choline Chloride, Vitamins (Vitamin E Supplement, l - ascorbyl - 2 - polyphosphate (Source of Vitamin C), Niacin Supplement, Vitamin A Supplement, Thiamine Mononitrate, d - Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Biotin, Vitamin D3 Supplement), Lactic Acid, Mixed Tocopherols (Preservative), Rosemary Extract",
+      "ingredients_raw": "Salmon, Chicken Meal, Sweet Potato, Pea Starch, Whole Dried Potato, Canola Meal, Dried Peas, Turkey Meal, Chicken Fat (Preserved with Mixed Tocopherols), Whole Flaxseed, Dried Plain Beet Pulp, Salt, Menhaden Fish Oil (Preserved with Mixed Tocopherols), Natural Flavor, Taurine, Citric Acid (Preservative), Minerals (Zinc Sulfate, Ferrous Sulfate, Copper Sulfate, Sodium Selenite, Manganese Sulfate, Calcium Iodate), Choline Chloride, Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (Source of Vitamin C), Niacin Supplement, Vitamin A Supplement, Thiamine Mononitrate, d - Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Biotin, Vitamin D3 Supplement), Lactic Acid, Mixed Tocopherols (Preservative), Rosemary Extract",
       "guaranteed_analysis": {
         "crude_protein_min": 26.0,
         "crude_fat_min": 14.0,

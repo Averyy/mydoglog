@@ -7,9 +7,6 @@ Dog food + digestive health tracking app. Next.js monolith (TypeScript, React, B
 ## Critical Rules
 
 - **NEVER apply display-time bandaids for bad source data** — fix in the scraper/build pipeline, not with runtime string manipulation in UI components
-- **NEVER blame external services** for issues. The problem is in THIS codebase
-- **NEVER create mock data or simplified components** unless explicitly told to
-- **NEVER replace existing complex components with simplified versions** — fix the actual problem
 - **ALWAYS run `yarn build`** before considering code changes complete
 - **ALWAYS add explicit types** to function parameters and return types
 - Schema changes require `yarn db:generate` and local migration testing
@@ -61,6 +58,13 @@ Dog food + digestive health tracking app. Next.js monolith (TypeScript, React, B
 - Mobile responsive essential (logging happens on phone in the yard)
 - ALWAYS invoke the `frontend-design` skill for UI work or UI review
 
-## Web Fetching & Research
+## Deploy (VPS)
 
-**ALWAYS use fetchaller MCP tools** (`mcp__fetchaller__*`) instead of WebFetch or WebSearch. Only fallback to `curl` or `httpx` if its raw data or api endpoints. 
+- **Pipeline:** Push to `main` → GitHub Actions builds Docker image → pushes to GHCR → SSHs into VPS → `docker compose pull` + `up -d`
+- **Container startup:** `scripts/docker-start.sh` → waits for Postgres → runs SQL migrations (`drizzle/*.sql`) → runs `python3 scraper/seed_db.py` → starts Next.js
+- **DB seeding:** `scraper/seed_db.py` is a standalone seeder (no PIL/rembg/scraper deps) that upserts all products, ingredients, cross-reactivity, and medications from committed JSON files. Runs automatically on every deploy. `scraper/build.py` is the local-only wrapper that calls `seed_db.py` + processes images.
+- **Env vars on VPS:** `.env` file at `/root/mydoglog/.env` — docker-compose reads it automatically. Required: `POSTGRES_PASSWORD`, `BETTER_AUTH_SECRET`, `CRON_SECRET`
+- **GitHub Actions secrets:** `VPS_HOST`, `VPS_USERNAME`, `VPS_SSH_KEY`, `CRON_SECRET` (must match VPS `.env` — used by pollen cron workflow to call `/api/cron/pollen`)
+- **DB persistence:** `mydoglog_pg_data` named volume survives `docker compose down`
+- **Pollen cron:** GitHub Actions scheduled workflow (`pollen-cron.yml`) calls `POST /api/cron/pollen` with `Bearer $CRON_SECRET` daily at 10am EST. Fetches from `pollen.mydoglog.ca` (pollen-sparr)
+

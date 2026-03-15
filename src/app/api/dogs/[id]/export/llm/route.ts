@@ -19,6 +19,7 @@ import {
 } from "@/lib/db"
 import { eq, and, gte, lte, asc, desc, sql, or } from "drizzle-orm"
 import { getToday } from "@/lib/utils"
+import { resolveMedicationFlags } from "@/lib/medications"
 import { shiftDate, daysBetween } from "@/lib/date-utils"
 import { fetchCorrelationInput } from "@/lib/correlation/query"
 import { runCorrelation } from "@/lib/correlation/engine"
@@ -147,6 +148,10 @@ export async function GET(
           sideEffectsSources: medicationProducts.sideEffectsSources,
           drugClass: medicationProducts.drugClass,
           category: medicationProducts.category,
+          catalogSuppressesItch: medicationProducts.suppressesItch,
+          catalogHasGiSideEffects: medicationProducts.hasGiSideEffects,
+          customSuppressesItch: medications.suppressesItch,
+          customHasGiSideEffects: medications.hasGiSideEffects,
         })
         .from(medications)
         .leftJoin(medicationProducts, eq(medications.medicationProductId, medicationProducts.id))
@@ -512,6 +517,7 @@ export async function GET(
       sideEffectsSources: r.sideEffectsSources,
       category: r.category,
       drugClass: r.drugClass,
+      ...resolveMedicationFlags(r),
     }))
 
     function getMedsForRange(start: string, end: string): string[] {
@@ -534,12 +540,26 @@ export async function GET(
     // Compute log stats per feeding period (using pre-indexed maps)
     // ---------------------------------------------------------------------------
 
+    /** Collect logs from a pre-indexed map for a date range (inclusive). */
+    function collectFromMap<T>(map: Map<string, T[]>, start: string, end: string): T[] {
+      const result: T[] = []
+      let current = start
+      let safety = 0
+      while (current <= end && safety < 3650) {
+        const entries = map.get(current)
+        if (entries) result.push(...entries)
+        current = shiftDate(current, 1)
+        safety++
+      }
+      return result
+    }
+
     function computeLogStats(
       start: string,
       end: string,
     ): { avgPoopScore: number | null; avgItchScore: number | null; daysWithData: number } | null {
-      const poopInRange = allPoopRows.filter((r) => r.date >= start && r.date <= end)
-      const itchInRange = allItchRows.filter((r) => r.date >= start && r.date <= end)
+      const poopInRange = collectFromMap(poopByDate, start, end)
+      const itchInRange = collectFromMap(itchByDate, start, end)
 
       const daysWithPoop = new Set(poopInRange.map((r) => r.date))
       const daysWithItch = new Set(itchInRange.map((r) => r.date))
@@ -584,7 +604,7 @@ export async function GET(
 
       return {
         avgPollen: pollenDays > 0 ? totalPollen / pollenDays : null,
-        highPollenDayPercent: totalDays > 0 ? (highDays / totalDays) * 100 : null,
+        highPollenDayPercent: pollenDays > 0 ? (highDays / totalDays) * 100 : null,
       }
     }
 
@@ -897,14 +917,16 @@ export async function GET(
         }
 
         for (const ev of events) {
-          // Compute 7-day before/after symptom averages
+          // Compute 7-day before/after symptom averages using pre-indexed maps
           const beforeStart = shiftDate(ev.date, -7)
+          const beforeEnd = shiftDate(ev.date, -1)
+          const afterStart = shiftDate(ev.date, 1)
           const afterEnd = shiftDate(ev.date, 7)
 
-          const poopBefore = allPoopRows.filter((r) => r.date >= beforeStart && r.date < ev.date)
-          const poopAfter = allPoopRows.filter((r) => r.date > ev.date && r.date <= afterEnd)
-          const itchBefore = allItchRows.filter((r) => r.date >= beforeStart && r.date < ev.date)
-          const itchAfter = allItchRows.filter((r) => r.date > ev.date && r.date <= afterEnd)
+          const poopBefore = collectFromMap(poopByDate, beforeStart, beforeEnd)
+          const poopAfter = collectFromMap(poopByDate, afterStart, afterEnd)
+          const itchBefore = collectFromMap(itchByDate, beforeStart, beforeEnd)
+          const itchAfter = collectFromMap(itchByDate, afterStart, afterEnd)
 
           medChangeEvents.push({
             date: ev.date,
@@ -935,7 +957,7 @@ export async function GET(
     const actualTrackingDays = timelineDays > 0
       ? timelineDays
       : sortedGroups.length > 0
-        ? daysBetween(sortedGroups[0].startDate, windowEnd)
+        ? daysBetween(sortedGroups[0].startDate, windowEnd) + 1
         : 0
 
     const pollenCoverage = dog.environmentEnabled

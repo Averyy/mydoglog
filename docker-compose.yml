@@ -1,0 +1,53 @@
+# Production docker-compose for mydoglog.ca VPS deployment
+# For local development, use: docker-compose -f docker-compose.dev.yml up
+#
+# On VPS: pulled by GitHub Actions, runs with pre-built image from GHCR
+
+services:
+  db:
+    image: postgres:16
+    container_name: mydoglog-db
+    restart: unless-stopped
+    mem_limit: 512m
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-mydoglog}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?error}
+      POSTGRES_DB: ${POSTGRES_DB:-mydoglog}
+    volumes:
+      - mydoglog_pg_data:/var/lib/postgresql/data
+    ports:
+      - "127.0.0.1:5432:5432"  # Only expose to localhost
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U mydoglog -d mydoglog"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  app:
+    image: ghcr.io/averyy/mydoglog:latest
+    container_name: mydoglog-app
+    restart: unless-stopped
+    mem_limit: 256m
+    environment:
+      DATABASE_URL: postgres://${POSTGRES_USER:-mydoglog}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB:-mydoglog}
+      BETTER_AUTH_SECRET: ${BETTER_AUTH_SECRET:?error}
+      BETTER_AUTH_URL: ${BETTER_AUTH_URL:-https://mydoglog.ca}
+      NEXT_PUBLIC_BETTER_AUTH_URL: ${NEXT_PUBLIC_BETTER_AUTH_URL:-https://mydoglog.ca}
+      CRON_SECRET: ${CRON_SECRET:?error}
+      NODE_ENV: production
+    ports:
+      - "127.0.0.1:3847:3847"  # Only expose to localhost (Caddy proxies)
+    networks:
+      - default
+      - web
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  mydoglog_pg_data:
+
+networks:
+  default:
+  web:
+    external: true

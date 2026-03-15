@@ -29,6 +29,17 @@
         }
       }
     },
+    "anchovy": {
+      "source_group": "fish",
+      "members": {
+        "anchovy": {
+          "form": "raw"
+        },
+        "Anchovy Meal": {
+          "form": "meal"
+        }
+      }
+    },
     "apple": {
       "source_group": "fruit",
       "members": {
@@ -88,6 +99,17 @@
         }
       }
     },
+    "black_soldier_fly": {
+      "source_group": "insect",
+      "members": {
+        "Black Soldier Fly Larva Meal": {
+          "form": "meal"
+        },
+        "dried black soldier fly larvae": {
+          "form": "dried"
+        }
+      }
+    },
     "banana": {
       "source_group": "fruit",
       "members": {
@@ -140,6 +162,12 @@
         },
         "Whole Grain Barley": {
           "form": "whole"
+        },
+        "Barley Flour": {
+          "form": "flour"
+        },
+        "Roasted Barley Flour": {
+          "form": "flour"
         }
       }
     },
@@ -175,6 +203,15 @@
         },
         "whole pinto beans": {
           "form": "whole"
+        },
+        "Kidney Beans": {
+          "form": "whole"
+        },
+        "Pinto Beans": {
+          "form": "whole"
+        },
+        "White Beans": {
+          "form": "whole"
         }
       }
     },
@@ -184,14 +221,8 @@
         "100% Beef": {
           "form": "raw"
         },
-        "and potato-free Health Consideration: Digestion; General Health Flavor: Beef Weight: 13 oz NUTRITIONAL INFORMATION Ingredients: Beef": {
-          "form": "derivative"
-        },
         "Beef": {
           "form": "raw"
-        },
-        "Beef and Chicken Broth": {
-          "form": "broth"
         },
         "beef bone": {
           "form": "organ"
@@ -443,6 +474,22 @@
         }
       }
     },
+    "buckwheat": {
+      "source_group": "grain",
+      "members": {
+        "Buckwheat": {
+          "form": "whole"
+        }
+      }
+    },
+    "cantaloupe": {
+      "source_group": "fruit",
+      "members": {
+        "Cantaloupe": {
+          "form": "whole"
+        }
+      }
+    },
     "canola": {
       "source_group": "seed",
       "members": {
@@ -511,6 +558,14 @@
         }
       }
     },
+    "cauliflower": {
+      "source_group": "vegetable",
+      "members": {
+        "Cauliflower": {
+          "form": "whole"
+        }
+      }
+    },
     "chia": {
       "source_group": "seed",
       "members": {
@@ -535,9 +590,6 @@
       "source_group": "poultry",
       "members": {
         "100% Animal Welfare Certified Chicken": {
-          "form": "raw"
-        },
-        "and Salmon Weight: 3.500 LB.~13 Cups Ingredients: Chicken": {
           "form": "raw"
         },
         "Boneless chicken": {
@@ -588,10 +640,10 @@
         "Chicken Byproduct Meal (Source of Glucosamine and Chondroitin Sulfate)": {
           "form": "meal"
         },
-        "chicken by–product meal": {
-          "form": "meal"
-        },
         "Chicken Cartilage": {
+          "form": "raw"
+        },
+        "Chicken Collagen": {
           "form": "raw"
         },
         "chicken cartilage (a source of chondroitin sulphate)": {
@@ -633,14 +685,11 @@
         "Chicken Liver & Heart": {
           "form": "organ"
         },
-        "Chicken Liver and Duck": {
-          "form": "organ"
-        },
         "Chicken Liver Flavor": {
-          "form": "organ"
+          "form": "derivative"
         },
         "Chicken Liver Flavour": {
-          "form": "organ"
+          "form": "derivative"
         },
         "Chicken Livers": {
           "form": "organ"
@@ -662,9 +711,6 @@
         },
         "Chicken with ground bone": {
           "form": "organ"
-        },
-        "chickenmeal": {
-          "form": "raw"
         },
         "de-boned chicken": {
           "form": "raw"
@@ -692,12 +738,6 @@
         },
         "Dried Chicken Cartilage (Source Of Glucosamine And Chondroitin Sulfate)": {
           "form": "dried"
-        },
-        "egg and chicken flavor": {
-          "form": "derivative"
-        },
-        "Egg and Chicken Flavour": {
-          "form": "derivative"
         },
         "Freeze Dried Chicken (including Ground Chicken Bone)": {
           "form": "organ"
@@ -735,9 +775,6 @@
         "Fresh deboned chicken": {
           "form": "raw"
         },
-        "fromaround the world. Always trusted partnerships with farmers and suppliers to source highÃ¢ÂÂquality ingredients. NO CHICKEN BY-PRODUCT MEAL": {
-          "form": "meal"
-        },
         "G.A.P. Step 2 Chicken": {
           "form": "raw"
         },
@@ -772,32 +809,35 @@
           "form": "hydrolyzed",
           "is_hydrolyzed": true
         },
-        "INGREDIENTS: Chicken": {
-          "form": "raw"
-        },
-        "INGREDIENTS: Deboned Chicken": {
-          "form": "raw"
-        },
-        "minerals and other nutrients. Made With Healthy Whole Grains Radiant Skin & Coat: Omega 3 & 6 Fatty Acids for healthy skin & radiant coat. #1 INGREDIENT IS REAL CHICKEN Healthy Teeth & Bones: Calcium and Phosphorus to support healthy teeth and bones. Strong Muscles & Lean Body: High-quality protein to help build strong muscles and a lean body. Always nutrient rich and flavorful recipes": {
-          "form": "fat"
-        },
         "Natural Flavour (Source of Chicken Flavour)": {
           "form": "derivative"
         },
         "Natural Flavour (Source of Roasted Chicken Flavour)": {
           "form": "derivative"
         },
-        "No Artificial flavours Item Number: 5334338 Brand: Nutro Food Type: Dry Breed Size: All Life Stage: Puppy Flavor: Chicken & Brown Rice Weight: 2.27 kg NUTRITIONAL INFORMATION Ingredients: Chicken": {
-          "form": "bran"
-        },
-        "purposefully designed to support whole body health. *Trace amounts may be present due to potential cross-contact during manufacturing. Flavor: Trio of Proteins from Chicken": {
-          "form": "concentrate"
-        },
         "Roasted Chicken Flavour": {
           "form": "derivative"
         },
-        "WHEAT OR SOY* - No chicken by-product meal* - No artificial flavors or colors - No artificial preservatives* - No corn": {
-          "form": "meal"
+        "Chicken Hearts (source of Biotin)": {
+          "form": "organ"
+        },
+        "Natural Chicken Flavor": {
+          "form": "derivative"
+        },
+        "Natural Chicken Liver Flavor": {
+          "form": "derivative"
+        },
+        "natural chicken flavour": {
+          "form": "derivative"
+        },
+        "Chicken Jerky": {
+          "form": "dried"
+        },
+        "Natural Grilled Chicken Flavour": {
+          "form": "derivative"
+        },
+        "Natural Rotisserie Chicken Flavour": {
+          "form": "derivative"
         }
       }
     },
@@ -809,6 +849,9 @@
         },
         "Chickpea Flour": {
           "form": "flour"
+        },
+        "Chickpea Pasta": {
+          "form": "whole"
         },
         "Chickpeas": {
           "form": "whole"
@@ -879,9 +922,6 @@
         },
         "Freeze Dried Cod": {
           "form": "dried"
-        },
-        "freeze- dried cod liver": {
-          "form": "organ"
         },
         "freeze-dried cod liver": {
           "form": "organ"
@@ -982,14 +1022,6 @@
         }
       }
     },
-    "crocodile": {
-      "source_group": "exotic",
-      "members": {
-        "alligator": {
-          "form": "raw"
-        }
-      }
-    },
     "dairy": {
       "source_group": "dairy",
       "members": {
@@ -1012,6 +1044,9 @@
           "form": "derivative"
         },
         "cottage cheese": {
+          "form": "raw"
+        },
+        "Parmesan Cheese": {
           "form": "raw"
         },
         "Dried Cheddar Cheese Powder": {
@@ -1047,6 +1082,9 @@
         },
         "Dried Whey Protein Concentrate": {
           "form": "concentrate"
+        },
+        "Sodium Caseinate": {
+          "form": "derivative"
         },
         "Whey protein concentrate": {
           "form": "concentrate"
@@ -1133,9 +1171,6 @@
         "Egg": {
           "form": "raw"
         },
-        "Egg (Source of Omega–3 Fatty Acids)": {
-          "form": "fat"
-        },
         "Egg Product": {
           "form": "raw"
         },
@@ -1144,6 +1179,9 @@
         },
         "Egg Whites": {
           "form": "raw"
+        },
+        "Egg Shell Meal": {
+          "form": "meal"
         },
         "egg yolk": {
           "form": "raw"
@@ -1177,6 +1215,12 @@
         },
         "whole eggs": {
           "form": "whole"
+        },
+        "Whole Eggs (source of Vitamin E)": {
+          "form": "whole"
+        },
+        "Egg (Source of Omega-3 Fatty Acids)": {
+          "form": "fat"
         }
       }
     },
@@ -1234,9 +1278,6 @@
           "form": "ground"
         },
         "Ground Flaxseeds": {
-          "form": "ground"
-        },
-        "ground whole axseed": {
           "form": "ground"
         },
         "ground whole flaxseed": {
@@ -1310,9 +1351,6 @@
       "source_group": "poultry",
       "members": {
         "Guinea Fowl": {
-          "form": "raw"
-        },
-        "guineafowl": {
           "form": "raw"
         }
       }
@@ -1400,7 +1438,7 @@
       }
     },
     "kangaroo": {
-      "source_group": "exotic",
+      "source_group": "other",
       "members": {
         "dried kangaroo": {
           "form": "dried"
@@ -1416,14 +1454,19 @@
         }
       }
     },
+    "kiwi": {
+      "source_group": "fruit",
+      "members": {
+        "Kiwifruit": {
+          "form": "whole"
+        }
+      }
+    },
     "lamb": {
       "source_group": "red_meat",
       "members": {
         "100% Animal Welfare Certified Lamb": {
           "form": "raw"
-        },
-        "and potato-free Health Consideration: Skin & Coat; General Health Flavor: Lamb & Salmon Weight: 4.25 oz NUTRITIONAL INFORMATION Ingredients: Lamb": {
-          "form": "derivative"
         },
         "de-boned lamb": {
           "form": "raw"
@@ -1467,14 +1510,8 @@
         "Ground Lamb Bone": {
           "form": "organ"
         },
-        "INGREDIENTS: Lamb": {
-          "form": "raw"
-        },
         "Lamb": {
           "form": "raw"
-        },
-        "Lamb and Chicken Broth": {
-          "form": "broth"
         },
         "lamb bone": {
           "form": "organ"
@@ -1532,6 +1569,12 @@
         },
         "Roasted Lamb": {
           "form": "raw"
+        },
+        "Natural Lamb Flavor": {
+          "form": "derivative"
+        },
+        "natural lamb flavour": {
+          "form": "derivative"
         }
       }
     },
@@ -1546,9 +1589,6 @@
         },
         "Ground Lentils": {
           "form": "ground"
-        },
-        "lentil-free": {
-          "form": "whole"
         },
         "Lentils": {
           "form": "whole"
@@ -1566,6 +1606,14 @@
           "form": "whole"
         },
         "whole red lentils": {
+          "form": "whole"
+        }
+      }
+    },
+    "lettuce": {
+      "source_group": "vegetable",
+      "members": {
+        "Lettuce": {
           "form": "whole"
         }
       }
@@ -1589,6 +1637,14 @@
           "form": "whole"
         },
         "whole mackerel": {
+          "form": "whole"
+        }
+      }
+    },
+    "mango": {
+      "source_group": "fruit",
+      "members": {
+        "Mango": {
           "form": "whole"
         }
       }
@@ -1633,7 +1689,31 @@
     "mussel": {
       "source_group": "mollusk",
       "members": {
+        "freeze-dried green mussels": {
+          "form": "dried"
+        },
+        "Green Lipped Mussel": {
+          "form": "raw"
+        },
+        "Greenshell Mussel Powder (Source of Glucosamine and Chondroitin Sulfate)": {
+          "form": "meal"
+        },
         "Mussel": {
+          "form": "raw"
+        },
+        "New Zealand Green Lipped Mussel": {
+          "form": "raw"
+        },
+        "New Zealand Green Mussel": {
+          "form": "raw"
+        },
+        "New Zealand green mussel powder": {
+          "form": "meal"
+        },
+        "New Zealand green mussels": {
+          "form": "raw"
+        },
+        "perna canaliculus (green lipped mussel)": {
           "form": "raw"
         }
       }
@@ -1646,9 +1726,6 @@
         },
         "ground oats": {
           "form": "ground"
-        },
-        "oat ber": {
-          "form": "whole"
         },
         "Oat Fiber": {
           "form": "fiber"
@@ -1740,9 +1817,6 @@
         "Ground Dried Peas": {
           "form": "dried"
         },
-        "minerals and amino acids. Includes probiotics for digestive health and taurine for heart heath. No peas": {
-          "form": "organ"
-        },
         "Pea Fiber": {
           "form": "fiber"
         },
@@ -1758,9 +1832,6 @@
         "Pea Starch": {
           "form": "starch"
         },
-        "Pea-free": {
-          "form": "whole"
-        },
         "Peas": {
           "form": "whole"
         },
@@ -1774,9 +1845,6 @@
           "form": "whole"
         },
         "whole yellow peas": {
-          "form": "whole"
-        },
-        "Wild Red Food Type: Kibble Breed Size: All Life Stage: All Life Stages except for growth of large size dogs (70 lbs. or more as an adult) Nutritional Benefits: Wholesome grain recipe with no potatoes or legumes. No peas": {
           "form": "whole"
         },
         "Yellow Peas": {
@@ -1795,9 +1863,6 @@
         },
         "Peanut Butter": {
           "form": "whole"
-        },
-        "Peanut Butter (Peanuts, Palm Oil)": {
-          "form": "oil"
         },
         "Peanut Flour": {
           "form": "flour"
@@ -1836,6 +1901,9 @@
         "bell peppers": {
           "form": "whole"
         },
+        "Green Bell Peppers": {
+          "form": "whole"
+        },
         "Red Bell Pepper": {
           "form": "whole"
         },
@@ -1848,6 +1916,14 @@
       "source_group": "fish",
       "members": {
         "perch": {
+          "form": "raw"
+        }
+      }
+    },
+    "pheasant": {
+      "source_group": "poultry",
+      "members": {
+        "Pheasant": {
           "form": "raw"
         }
       }
@@ -1965,10 +2041,17 @@
         "Pork": {
           "form": "raw"
         },
-        "Pork & Poultry Digest": {
-          "form": "derivative"
+        "Ham": {
+          "form": "raw"
+        },
+        "Hydrolyzed Pork Liver": {
+          "form": "hydrolyzed",
+          "is_hydrolyzed": true
         },
         "Pork and Bone Meal": {
+          "form": "meal"
+        },
+        "Pork Meat & Bone Meal": {
           "form": "meal"
         },
         "Pork Broth": {
@@ -1998,11 +2081,8 @@
         "Pork Liver": {
           "form": "organ"
         },
-        "Pork Liver and Lamb Liver": {
-          "form": "organ"
-        },
         "Pork Liver Flavor": {
-          "form": "organ"
+          "form": "derivative"
         },
         "Pork Lung": {
           "form": "organ"
@@ -2015,6 +2095,15 @@
         },
         "Pork Meal (Source Of Glucosamine And Chondroitin Sulfate)": {
           "form": "meal"
+        },
+        "Porcine plasma": {
+          "form": "derivative"
+        },
+        "Pork Gelatin": {
+          "form": "gelatin"
+        },
+        "pork plasma": {
+          "form": "derivative"
         },
         "Pork Protein Isolate": {
           "form": "concentrate"
@@ -2033,6 +2122,12 @@
         },
         "Technical Pork Gelatin": {
           "form": "raw"
+        },
+        "natural pork flavor": {
+          "form": "derivative"
+        },
+        "natural pork flavour": {
+          "form": "derivative"
         }
       }
     },
@@ -2124,9 +2219,6 @@
         },
         "Pumpkin Seeds": {
           "form": "whole"
-        },
-        "Pumpkinseeds": {
-          "form": "whole"
         }
       }
     },
@@ -2159,7 +2251,7 @@
       }
     },
     "rabbit": {
-      "source_group": "exotic",
+      "source_group": "other",
       "members": {
         "dried rabbit": {
           "form": "dried"
@@ -2231,9 +2323,6 @@
         "Rice Hulls": {
           "form": "fiber"
         },
-        "Rice Pasta (Rice, Water, Ground Tapioca)": {
-          "form": "ground"
-        },
         "Rice Protein Concentrate": {
           "form": "concentrate"
         },
@@ -2254,6 +2343,9 @@
         },
         "Whole Grain Brown Rice": {
           "form": "whole"
+        },
+        "Rice Pasta": {
+          "form": "flour"
         }
       }
     },
@@ -2333,9 +2425,6 @@
           "form": "hydrolyzed",
           "is_hydrolyzed": true
         },
-        "INGREDIENTS: Deboned Salmon": {
-          "form": "raw"
-        },
         "Natural Salmon Flavor": {
           "form": "derivative"
         },
@@ -2385,9 +2474,6 @@
         "Smoke-Flavored Salmon": {
           "form": "derivative"
         },
-        "SUPPORTS HEALTHY SKIN AND COAT with guaranteed levels of omega fatty acids from ingredients such as flaxseed and salmon oil WHOLE BODY HEALTH: Supported by omega fatty acids": {
-          "form": "fat"
-        },
         "whole ground salmon": {
           "form": "ground"
         },
@@ -2410,6 +2496,9 @@
         },
         "sardine": {
           "form": "raw"
+        },
+        "Sardine Meal": {
+          "form": "meal"
         },
         "Sardine Meal (Source of Glucosamine and Chondroitin Sulfate)": {
           "form": "meal"
@@ -2545,9 +2634,6 @@
         "Organic Spinach": {
           "form": "whole"
         },
-        "organicspinach": {
-          "form": "whole"
-        },
         "Spinach": {
           "form": "whole"
         }
@@ -2576,6 +2662,14 @@
         }
       }
     },
+    "strawberry": {
+      "source_group": "fruit",
+      "members": {
+        "Strawberries": {
+          "form": "whole"
+        }
+      }
+    },
     "sunflower": {
       "source_group": "seed",
       "members": {
@@ -2599,9 +2693,6 @@
         },
         "Sunflower Seed Oil": {
           "form": "oil"
-        },
-        "Sunﬂower Oil": {
-          "form": "oil"
         }
       }
     },
@@ -2623,19 +2714,10 @@
         "Dried Yams": {
           "form": "dried"
         },
-        "freeze- dried sweet potatoes": {
-          "form": "dried"
-        },
         "freeze-dried sweet potatoes": {
           "form": "dried"
         },
         "Sweet Potato": {
-          "form": "whole"
-        },
-        "Sweet Potato & Green Bean Stew Weight: 12.500 OZ Ingredients: Turkey": {
-          "form": "whole"
-        },
-        "Sweet Potato & Green Bean Weight: 12.500 OZ Ingredients: Turkey": {
           "form": "whole"
         },
         "sweet potato flour": {
@@ -2733,9 +2815,6 @@
         "Tuna": {
           "form": "raw"
         },
-        "Tuna and Amberjack": {
-          "form": "raw"
-        },
         "Tuna Oil": {
           "form": "oil"
         }
@@ -2779,18 +2858,6 @@
         },
         "G.A.P. Step 2 Turkey Necks": {
           "form": "raw"
-        },
-        "Grain–Free Flavor: Healthy Turkey": {
-          "form": "derivative"
-        },
-        "Grain–Free Flavor: Roasted Turkey": {
-          "form": "derivative"
-        },
-        "INGREDIENTS: Deboned Turkey": {
-          "form": "raw"
-        },
-        "Limited Ingredient Flavor: Turkey & Potato Weight: 12.500 OZ Ingredients: Turkey": {
-          "form": "derivative"
         },
         "Natural Turkey Flavor": {
           "form": "derivative"
@@ -2860,6 +2927,15 @@
         },
         "Turkey with ground bone": {
           "form": "organ"
+        },
+        "Natural Roasted Turkey Flavour": {
+          "form": "derivative"
+        },
+        "Grain-Free Flavor: Healthy Turkey": {
+          "form": "derivative"
+        },
+        "Grain-Free Flavor: Roasted Turkey": {
+          "form": "derivative"
         }
       }
     },
@@ -2948,9 +3024,6 @@
         "wheat gluten": {
           "form": "gluten"
         },
-        "wheat or soy protein* Healthy Digestion: Natural fiber for healthy digestion. Always high-quality animal protein source as the first ingredient. Always natural ingredients plus vitamins": {
-          "form": "fiber"
-        },
         "wheat protein": {
           "form": "concentrate"
         },
@@ -2964,6 +3037,9 @@
           "form": "whole"
         },
         "Whole Wheat Flour": {
+          "form": "flour"
+        },
+        "Semolina": {
           "form": "flour"
         }
       }
@@ -2982,9 +3058,6 @@
         },
         "dehydrated whitefish": {
           "form": "dried"
-        },
-        "INGREDIENTS: Whitefish": {
-          "form": "raw"
         },
         "Ocean Whitefish": {
           "form": "raw"
@@ -3009,6 +3082,10 @@
         },
         "Whitefish Broth": {
           "form": "broth"
+        },
+        "Hydrolyzed Whitefish": {
+          "form": "hydrolyzed",
+          "is_hydrolyzed": true
         },
         "Whitefish Meal": {
           "form": "meal"
@@ -3057,6 +3134,14 @@
           "form": "whole"
         }
       }
+    },
+    "crocodilian": {
+      "source_group": "other",
+      "members": {
+        "alligator": {
+          "form": "raw"
+        }
+      }
     }
   },
   "cross_reactivity_groups": {
@@ -3080,10 +3165,12 @@
       "duck",
       "goose",
       "guinea_fowl",
+      "pheasant",
       "quail",
       "turkey"
     ],
     "fish": [
+      "anchovy",
       "arctic_char",
       "capelin",
       "cod",
@@ -3103,20 +3190,33 @@
       "trout",
       "tuna",
       "whitefish"
+    ],
+    "shellfish": [
+      "shrimp",
+      "mussel"
+    ],
+    "arthropod": [
+      "shrimp",
+      "black_soldier_fly"
+    ],
+    "gluten_grains": [
+      "wheat",
+      "barley",
+      "rye"
     ]
   },
   "ambiguous": {
-    "- muscle meat": {
-      "could_be": [
-        "beef",
-        "pork",
-        "lamb"
-      ],
-      "source_group": "mammal"
-    },
     "Animal Digest": {
       "could_be": [
         "any"
+      ],
+      "source_group": "animal"
+    },
+    "Animal Plasma": {
+      "could_be": [
+        "beef",
+        "pork",
+        "chicken"
       ],
       "source_group": "animal"
     },
@@ -3194,8 +3294,7 @@
     },
     "dehydrated mutton": {
       "could_be": [
-        "lamb",
-        "goat"
+        "lamb"
       ],
       "source_group": "mammal"
     },
@@ -3207,6 +3306,20 @@
       ],
       "source_group": "mammal"
     },
+    "Gelatin": {
+      "could_be": [
+        "beef",
+        "pork"
+      ],
+      "source_group": "animal"
+    },
+    "Gelatin (source of Collagen)": {
+      "could_be": [
+        "beef",
+        "pork"
+      ],
+      "source_group": "animal"
+    },
     "Fish": {
       "could_be": [
         "salmon",
@@ -3215,6 +3328,15 @@
         "menhaden"
       ],
       "source_group": "fish"
+    },
+    "Bone Broth": {
+      "could_be": [
+        "beef",
+        "chicken",
+        "pork",
+        "turkey"
+      ],
+      "source_group": "animal"
     },
     "Fish Bone Broth": {
       "could_be": [
@@ -3385,6 +3507,13 @@
       ],
       "source_group": "fish"
     },
+    "Hydrolyzed Collagen": {
+      "could_be": [
+        "beef",
+        "pork"
+      ],
+      "source_group": "animal"
+    },
     "hydrolyzed fish": {
       "could_be": [
         "salmon",
@@ -3467,30 +3596,6 @@
       ],
       "source_group": "mammal"
     },
-    "natural avor": {
-      "could_be": [
-        "any"
-      ],
-      "source_group": "unknown"
-    },
-    "Natural Chicken Flavor": {
-      "could_be": [
-        "chicken"
-      ],
-      "source_group": "poultry"
-    },
-    "natural chicken flavour": {
-      "could_be": [
-        "chicken"
-      ],
-      "source_group": "poultry"
-    },
-    "Natural Chicken Liver Flavor": {
-      "could_be": [
-        "chicken"
-      ],
-      "source_group": "poultry"
-    },
     "natural fish flavor": {
       "could_be": [
         "salmon",
@@ -3555,36 +3660,6 @@
       ],
       "source_group": "unknown"
     },
-    "natural flavors (ONLY FOR MEXICO: including cow milk)": {
-      "could_be": [
-        "any"
-      ],
-      "source_group": "unknown"
-    },
-    "natural flavors (Only for mexico: including pork and poultry)": {
-      "could_be": [
-        "any"
-      ],
-      "source_group": "unknown"
-    },
-    "natural flavors (Only for mexico: including pork, poultry and cow milk)": {
-      "could_be": [
-        "any"
-      ],
-      "source_group": "unknown"
-    },
-    "natural flavors (ONLY FOR MEXICO: including poultry, cow milk, pork)": {
-      "could_be": [
-        "any"
-      ],
-      "source_group": "unknown"
-    },
-    "natural flavors (ONLY FOR MEXICO: including poultry, pork and cow milk)": {
-      "could_be": [
-        "any"
-      ],
-      "source_group": "unknown"
-    },
     "natural flavors (only for Mexico: poultry)": {
       "could_be": [
         "any"
@@ -3608,36 +3683,6 @@
         "any"
       ],
       "source_group": "unknown"
-    },
-    "Natural Lamb Flavor": {
-      "could_be": [
-        "lamb"
-      ],
-      "source_group": "red_meat"
-    },
-    "natural lamb flavour": {
-      "could_be": [
-        "lamb"
-      ],
-      "source_group": "red_meat"
-    },
-    "natural pork flavor": {
-      "could_be": [
-        "pork"
-      ],
-      "source_group": "red_meat"
-    },
-    "natural pork flavour": {
-      "could_be": [
-        "pork"
-      ],
-      "source_group": "red_meat"
-    },
-    "Natural Roasted Turkey Flavour": {
-      "could_be": [
-        "turkey"
-      ],
-      "source_group": "poultry"
     },
     "Ocean Fish": {
       "could_be": [
@@ -3699,12 +3744,142 @@
         "duck"
       ],
       "source_group": "poultry"
+    },
+    "Spray Dried Animal Blood Cells": {
+      "could_be": [
+        "beef",
+        "pork",
+        "chicken"
+      ],
+      "source_group": "animal"
+    },
+    "natural flavors (Only for mexico: including pork and poultry)": {
+      "could_be": [
+        "pork",
+        "chicken",
+        "turkey"
+      ],
+      "source_group": "animal"
+    },
+    "natural flavors (Only for mexico: including pork, poultry and cow milk)": {
+      "could_be": [
+        "pork",
+        "chicken",
+        "dairy"
+      ],
+      "source_group": "animal"
+    },
+    "natural flavors (ONLY FOR MEXICO: including cow milk)": {
+      "could_be": [
+        "dairy"
+      ],
+      "source_group": "dairy"
+    },
+    "natural flavors (ONLY FOR MEXICO: including poultry, cow milk, pork)": {
+      "could_be": [
+        "chicken",
+        "dairy",
+        "pork"
+      ],
+      "source_group": "animal"
+    },
+    "natural flavors (ONLY FOR MEXICO: including poultry, pork and cow milk)": {
+      "could_be": [
+        "chicken",
+        "pork",
+        "dairy"
+      ],
+      "source_group": "animal"
+    },
+    "Chicken Liver and Duck": {
+      "could_be": [
+        "chicken",
+        "duck"
+      ],
+      "source_group": "poultry"
+    },
+    "egg and chicken flavor": {
+      "could_be": [
+        "egg",
+        "chicken"
+      ],
+      "source_group": "animal"
+    },
+    "Egg and Chicken Flavour": {
+      "could_be": [
+        "egg",
+        "chicken"
+      ],
+      "source_group": "animal"
+    },
+    "Beef and Chicken Broth": {
+      "could_be": [
+        "beef",
+        "chicken"
+      ],
+      "source_group": "animal"
+    },
+    "Lamb and Chicken Broth": {
+      "could_be": [
+        "lamb",
+        "chicken"
+      ],
+      "source_group": "animal"
+    },
+    "Pork & Poultry Digest": {
+      "could_be": [
+        "pork",
+        "chicken",
+        "turkey"
+      ],
+      "source_group": "animal"
+    },
+    "Pork Liver and Lamb Liver": {
+      "could_be": [
+        "pork",
+        "lamb"
+      ],
+      "source_group": "red_meat"
+    },
+    "Natural Poultry Flavour": {
+      "could_be": [
+        "chicken",
+        "turkey",
+        "duck"
+      ],
+      "source_group": "poultry"
+    },
+    "Natural Peanut Flavour": {
+      "could_be": [
+        "peanut"
+      ],
+      "source_group": "legume"
+    },
+    "Enriched Egg Noodles": {
+      "could_be": [
+        "wheat",
+        "egg"
+      ],
+      "source_group": "grain"
+    },
+    "Poultry Fat (Preserved With Mixed Tocopherols)": {
+      "could_be": [
+        "chicken",
+        "turkey",
+        "duck"
+      ],
+      "source_group": "poultry"
+    },
+    "Tuna and Amberjack": {
+      "could_be": [
+        "tuna"
+      ],
+      "source_group": "fish"
     }
   },
   "ignore_for_correlation": [
     "(preserved with mixed tocopherols)",
     "(Vitamin B1)",
-    ")",
     "*Upcycled Ingredient",
     "6-Strain Probiotic Blend",
     "A and D3 supplements",
@@ -3717,13 +3892,13 @@
     "alfalfa",
     "Alfalfa Meal",
     "Alfalfa Nutrient Concentrate",
+    "Alfalfa Sprouts",
     "algal oil",
     "Algal Oil (Source of Omega 3 Fatty Acid)",
     "aloe vera",
     "althea root",
     "Amino Acids (L-Lysine Monohydrochloride)",
     "animal fat preserved with mixed-tocopherols",
-    "Animal Plasma",
     "Annatto (color)",
     "Annatto Extract (color)",
     "antioxidants",
@@ -3748,19 +3923,11 @@
     "Beta Carotene",
     "Beta-Carotene",
     "Betaine",
-    "BETA–CAROTENE",
-    "BHA (a Preservative)",
-    "BHA (preservative)",
-    "BHA(a Preservative)",
     "BHT (a Preservative)",
     "Bifido bacterium bifidium thermophilum fermentation product",
     "Bifidobacterium bifidum",
     "Bifidobacterium Longum BL999",
     "Bio Perine",
-    "Biotin",
-    "biotin (Vitamin B-7)",
-    "Biotin (Vitamin B7)",
-    "Black Soldier Fly Larva Meal",
     "Blue #2",
     "Blue 2",
     "blueberry fiber",
@@ -3775,7 +3942,7 @@
     "Brown Sugar",
     "buffered vinegar",
     "burdock root",
-    "by–product meals",
+    "by-product meals",
     "Calcium Ascorbate",
     "Calcium Ascorbate (Vitamin C)",
     "calcium cabonate",
@@ -3786,28 +3953,13 @@
     "Calcium Iod",
     "Calcium Iodate",
     "Calcium Lactate",
-    "Calcium Pantothenate",
-    "Calcium Pantothenate (Source Of Vitamin B5)",
-    "calcium pantothenate (Vitamin B-5)",
-    "Calcium Pantothenate (Vitamin B5)",
     "Calcium Phosphate",
-    "calcium propionate",
-    "Calcium Propionate (a preservative)",
-    "calcium propionate (preservative)",
     "Calcium Stearate",
     "calcium sulfate",
     "calcium sulfate dihydrate",
     "calcium sulphate",
     "Cane Molasses",
     "Cane Sugar",
-    "canola oil ( preserved with mixed tocopherols and citric acid )",
-    "canola oil ( preserved with mixed tocopherols and citric acid )flaxseed",
-    "Canola Oil (Mixed Tocopherols used as a Preservative)",
-    "Canola Oil (preserve with Mixed Tocopherols and Citric Acid)",
-    "Canola Oil (preserved with Mixed Tocopherols & Citric Acid)",
-    "Canola Oil (preserved with Mixed Tocopherols and Citric Acid)",
-    "canola oil (preserved with mixed tocopherols)",
-    "Canola Oil (preserved With Mixed Tocopherols, A Natural Source Of Vitamin E)",
     "capsicum",
     "Caramel",
     "Caramel (Color)",
@@ -3832,16 +3984,6 @@
     "Cellulose Powder",
     "Chaga Mushroom",
     "Chamomile",
-    "chicken fat ( preserved with mixed tocopherols and citric acid )",
-    "chicken fat ( preserved with mixed tocopherols, a natural source of vitamin E)",
-    "Chicken Fat (Mixed Tocopherols Used As A Preservative)",
-    "Chicken Fat (preserved with Mixed Tocopherols & Citric Acid)",
-    "Chicken Fat (preserved with Mixed Tocopherols and Citric Acid)",
-    "Chicken Fat (preserved with Mixed Tocopherols)",
-    "chicken fat (stabilized with mixed tocopherols, a natural source of vitamin E)",
-    "chicken fat(preserved with mixed tocopherols, a natural source of vitamin E)",
-    "Chicken Hearts (source of Biotin)",
-    "Chicken Jerky (Chicken, Ground Chickpeas, Ground Potatoes, Glycerin, Guar Gum, Cane Molasses, Salt, Natural Smoke Flavor, Citric Acid (preservative), Distilled Vinegar, Mixed Tocopherols (preservative), Rosemary Extract )",
     "chicory",
     "Chicory Extract",
     "Chicory Root",
@@ -3849,26 +3991,11 @@
     "Chicory Root Inulin",
     "Cholecalciferol",
     "Choline Chloride",
-    "Choline Chloride Dried Chicken Cartilage (Source Of Glucosamine And Chondroitin Sulfate)",
     "Choline Chloride Minerals (Potassium Chloride, Zinc Sulfate, Zinc Proteinate, Iron Proteinate, Ferrous Sulfate, Copper Proteinate, Manganese Sulfate, Sodium Selenite, Manganese Proteinate, Copper Sulfate)",
     "chondroitin sulfate",
     "chondroitin sulfate (porcine)",
     "chondroitin sulphate",
     "Cinnamon",
-    "citric acid",
-    "Citric Acid (A Preservative)",
-    "Citric Acid (as preservative)",
-    "Citric Acid (preservative)",
-    "Citric Acid (Used As A Preservative)",
-    "Citric Acid 9a Preservative)",
-    "Citric Acid and Mixed Tocopherols",
-    "Citric Acid and Mixed Tocopherols (Preservatives)",
-    "Citric Acid For Freshness",
-    "Citric Acid(Preservative)",
-    "Citric Acid. A-399918-C",
-    "Citric Acid. A-5064-C",
-    "Citric Acid. B-5063-C",
-    "Citric Acid. H-4240-C",
     "citrus fiber",
     "Citrus Pulp",
     "cloves",
@@ -3891,7 +4018,7 @@
     "COPPERAMINO ACID COMPLEX",
     "Corn Starch-Modified",
     "Cumin",
-    "curcubita maxima (pumpkin)",
+    "cucurbita maxima (pumpkin)",
     "curcuma longa (turmeric root)",
     "Cysteine",
     "cystine",
@@ -3917,8 +4044,6 @@
     "DL-alpha tocopherol acetate (source of vitamin E)",
     "DL-Methionine",
     "DLMethionine",
-    "DL–Methionine",
-    "DL—Methionine",
     "Docosahexaenoic acid (DHA)",
     "dreid Bifidobacterium animalis lactis fermentation product",
     "dried apple fibre",
@@ -3941,9 +4066,9 @@
     "dried Bifidobacterium fermentation product",
     "dried Bifidobacterium longum fermentation product",
     "Dried Bifidobacterium longum Fermentation Product (GGut)",
-    "dried black soldier fly larvae",
     "dried blueberry pomace",
     "Dried Brewers Yeast",
+    "Dried Cane Molasses",
     "dried celery",
     "Dried Chicory Root",
     "dried chicory root (source of inulin)",
@@ -3985,10 +4110,8 @@
     "Dried Vegetable Broth",
     "Dried Yeast",
     "Dried Yeast Extract",
-    "d–Calcium Pantothenate",
     "EDTA",
     "Eicosapentaenoic acid (EPA)",
-    "Enriched Egg Noodles (Semolina, Eggs, Niacin, Ferrous Sulfate, Thiamine Mononitrate, Riboflavin, Folic Acid)",
     "Enterococcus Faecium",
     "enterococcus faecium fermentation product",
     "Enterococcus Faecium SF68",
@@ -4012,17 +4135,7 @@
     "Fish Oil (Preserved With Mixed Tocopherols)",
     "Fish Oil (Preserved With Mixed Tocopherols) (Source Of DHA)",
     "Fish Oil (Preserved With Mixed Tocopherols) (Source Of EPA And DHA)",
-    "flavors or preservatives added. Made in the USA. Item Number: 5368764 Brand: Stella & Chewy's",
-    "flavors or preservatives added. Poultry Free Health Consideration: General Health Flavor: Red Meat ⁄ Beef Weight: 1. 3.5 lb 2. 12 cups Ingredients: Beef",
     "Flaxseed Oil (Preserved With Mixed Tocopherols)",
-    "Folic Acid",
-    "folic acid (Vitamin B-9)",
-    "Folic Acid (Vitamin B9)",
-    "Folic Acid and Rosemary Extract",
-    "Folic Acid)",
-    "folic acid. Contains a source of live (viable) naturally occurring microorganisms",
-    "folic acid.Contains a source of live (viable) naturally occurring microorganisms",
-    "freeze-dried green mussels",
     "freeze-dried kelp",
     "Fructooligocaccharide",
     "fructooligosaccharide",
@@ -4035,11 +4148,8 @@
     "Fruit Juice Color",
     "Garlic",
     "Garlic Oil",
-    "garlic oil. 0447223",
     "Garlic Powder",
     "garlic powder and sufficient water for processing",
-    "Gelatin",
-    "Gelatin (source of Collagen)",
     "Ginger",
     "Ginger Root",
     "Glucosamine",
@@ -4052,10 +4162,8 @@
     "Glyceryl Monostearate",
     "glycine",
     "Grain Distillers Dried Yeast",
-    "Green Lipped Mussel",
     "green tea",
     "Green Tea Extract",
-    "Greenshell Mussel Powder (Source of Glucosamine and Chondroitin Sulfate)",
     "Grilled Filet Mignon Flavor",
     "Ground Cinnamon",
     "Ground Cumin",
@@ -4073,7 +4181,6 @@
     "honey",
     "Hyaluronic Acid",
     "Hydrogenated Corn Syrup",
-    "Hydrolyzed Collagen",
     "hydrolyzed yeast",
     "hydrolyzed yeast (source of betaglucans)",
     "Hydroxypropyl Cellulose",
@@ -4089,8 +4196,6 @@
     "Iron Oxide color",
     "Iron Proteinate",
     "Iron Sulfate",
-    "Item Number: 5368827 Brand: Stella & Chewy's",
-    "Item Number: 5368830 Brand: Stella & Chewy's",
     "juniper berries",
     "juniper berry extract",
     "Kelp",
@@ -4098,16 +4203,6 @@
     "L ascorbyl-2-polyphosphate (source of vitamin C)",
     "L lysine",
     "L-arginine",
-    "L-Ascorbyl- 2-Polyphosphate (source of Vitamin C)",
-    "L-ascorbyl-2 polyphosphate",
-    "L-ascorbyl-2 polyphosphate (source of Vitamin C)",
-    "L-ascorbyl-2 polyphosphate (vitamin C)",
-    "L-Ascorbyl-2-Polyphosphate",
-    "L-Ascorbyl-2-Polyphosphate (Source Of Ascorbic Acid)",
-    "L-Ascorbyl-2-Polyphosphate (source of Vitamin C)",
-    "L-Ascorbyl-2-Polyphosphate (Vitamin C)",
-    "L-Ascorbyl-2-Polyphosphate [Source of Vitamin C]",
-    "L-Ascorbyl-2-Polyphosphate)",
     "L-Carnitine",
     "L-Cysteine",
     "L-cystine",
@@ -4143,14 +4238,8 @@
     "licorice root",
     "Lipoic Acid",
     "Locust Bean Gum",
-    "L–Ascorbyl–2–Polyphosphate",
-    "L–Ascorbyl–2–Polyphosphate (source of Vitamin C)",
-    "L–Carnitine",
-    "L–Threonine",
-    "L—Ascorbyl—2—Polyphosphate",
-    "L—Carnitine",
-    "L—Lysine Monohydrochloride",
-    "Made in the USA",
+    "L-Ascorbyl-2-Polyphosphate",
+    "L-Ascorbyl-2-Polyphosphate (source of Vitamin C)",
     "magnesium",
     "Magnesium (Magnesium Gluconate)",
     "magnesium oxide",
@@ -4174,11 +4263,6 @@
     "marigold extract (Tagetes erecta L.)",
     "Marine Microalgae Oil (Preserved With Mixed Tocopherols)",
     "marshmallow root",
-    "menadione dimethylpyridional bisulfite",
-    "menadione sodium bisulfite complex",
-    "Menadione Sodium Bisulfite Complex (Source of Vitamin K Activity)",
-    "menadione sodium bisulfite complex (Vitamin K)",
-    "menadione sodium bisulte complex (Vitamin K)",
     "Menhaden Fish Oil (Preserved with Mixed Tocopherols)",
     "Methyl sulfonyl methane (MSM)",
     "methylsulfonylmethane (MSM)",
@@ -4186,133 +4270,12 @@
     "milk thistle",
     "Mineral Mix (Ferrous Sulfate, Zinc Proteinate, Zinc Sulfate, Iron Proteinate, Copper Sulfate, Potassium Chloride, Sodium Selenite, Copper Proteinate, Manganese Sulfate, Manganese Proteinate, Mineral Oil, Calcium Iodate)",
     "Minerals",
-    "Minerals (Calcium Carbonate, Potassium Chloride, Zinc Sulfate, Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Sulfate, Copper Sulfate, Copper Proteinate, Manganese Proteinate, Calcium Iodate, Sodium Selenite)",
-    "Minerals (Ferrous Sulfate, Choline Chloride, Zinc Oxide, Copper Proteinate, Sodium Selenite, Manganese sulfate, Potassium Iodide)",
-    "Minerals (Ferrous Sulfate, Zinc Oxide, Copper Proteinate, Sodium Selenite, Manganese Sulfate, Potassium Iodide)",
-    "minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganese Sulfate, Calcium Iodate)",
-    "minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganese Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite)",
-    "minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite)",
-    "minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Manganese Sulfate, Calcium Iodate, Sodium Selenite)",
-    "minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Sodium Selenite, Calcium Iodate)",
-    "minerals (Ferrous Sulfate, Zinc Oxide, Manganese Sulfate, Copper Sulfate, Calcium Iodate)",
-    "Minerals (Ferrous Sulfate, Zinc Oxide, Sodium Selenite, Manganese Sulfate, Cooper Sulfate, Potassium Iodide, Manganous Oxide)",
-    "Minerals (Ferrous Sulfate, Zinc Oxide, Sodium Selenite, Manganese Sulfate, Copper Sulfate, Manganous Oxide, Potassium Iodide)",
-    "Minerals (Ferrous Sulfate, Zinc Oxide, Sodium Selenite, Manganese Sulfate, Copper Sulfate, Potassium Iodide, Manganous Oxide)",
-    "Minerals (Ferrous Sulfate, Zinc Oxide, Sodium Selenite, Manganese Sulfate, Manganous Oxide, Potassium Iodide)",
-    "Minerals (Ferrous Sulfate, Zinc Oxide, Zinc Proteinate, Selenium Yeast, Iron Proteinate, Manganous Oxide, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Potassium Iodide)",
-    "Minerals (Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Calcium Carbonate, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate)",
-    "Minerals (Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Copper Sulfate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate)",
-    "Minerals (Ferrous Sulfate, Zinc Sulfate, Copper Sulfate, Sodium Selenite, Manganese Sulfate, Calcium Iodate)",
-    "Minerals (Ferrous Sulphate, Zinc Proteinate, Iron Proteinate, Selenium Yeast, Zinc Oxide, Calcium Carbonate, Copper Sulphate, Manganese Proteinate, Copper Proteinate, Manganous Oxide, Calcium Iodate)",
-    "minerals (ferrous sulphate, zinc proteinate, iron proteinate, selenium yeast, zinc oxide, copper sulphate, manganese proteinate, copper proteinate, manganous oxide, calcium iodate)",
-    "minerals (iron proteinate, copper proteinate, manganese proteinate, zinc proteinate, sodium selenite)",
-    "Minerals (Magnesium Oxide, Zinc Oxide, Copper Sulfate, Calcium Iodate)",
-    "Minerals (Magnesium Sulfate, Zinc Sulfate, Ferrous Sulfate, Copper Sulfate, Manganese Sulfate, Potassium Iodide, Sodium Selenite)",
-    "minerals (Manganese Sulfate, Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Calcium Iodate, Sodium Selenite)",
-    "Minerals (Potassium Chloride, Calcium Carbonate, Zinc Sulfate, Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Sulfate, Copper Sulfate, Copper Proteinate, Manganese Proteinate, Calcium Iodate, Sodium Selenite)",
-    "Minerals (Potassium Chloride, Magnesium Proteinate, Zinc Sulfate, Copper Proteinate, Manganese Sulfate, Copper Sulfate, Potassium Iodide)",
-    "Minerals (Potassium Chloride, Magnesium Proteinate, Zinc Sulfate, Selenium, Copper Proteinate, Manganese Sulfate, Copper Sulfate, Potassium Iodide)",
-    "Minerals (Potassium Chloride, Magnesium Sulfate, Zinc Sulfate, Copper Proteinate, Potassium Iodide, Manganese Sulfate, Selenium, Copper Sulfate)",
-    "Minerals (Potassium Chloride, Zinc Sulfate, Zinc Proteinate, Iron Proteinate, Ferrous Sulfate, Copper Proteinate, Manganese Sulfate, Sodium Selenite, Manganese Proteinate, Copper Sulfate)",
-    "Minerals (Salt, Mono and Dicalcium Phosphate, Phosphoric Acid, Potassium Chloride, Zinc Sulphate, Ferrous Sulfate, Manganese Sulphate, Calcium Carbonate, Copper Sulphate, Calcium Iodate, Sodium Selenite)",
-    "Minerals (Sodium Chloride, Zinc Sulfate, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Sodium Selenite)",
-    "Minerals (Sodium Chloride, Zinc Sulfate, Iron Sulfate, Copper Sulfate, Manganese Sulfate, Sodium Selenite)",
-    "MINERALS (ZINC AMINO ACID CHELATE, IRON AMINO ACID CHELATE, COPPER AMINO ACID CHELATE, MANGANESE AMINO ACID CHELATE, SODIUM SELENITE, COBALT AMINO ACID CHELATE, POTASSIUM IODIDE)",
-    "minerals (zinc amino acid chelate, iron amino acid chelate, selenium yeast, copper amino acid chelate, manganese amino acid chelate, cobalt amino acid chelate, potassium iodide)",
-    "Minerals (Zinc Amino Acid Chelate, Sodium Selenite, Cobalt Amino Acid Chelate, Potassium Iodide)",
-    "Minerals (Zinc Amino Acid Complex, Iron Amino Acid Complex, Manganese Amino Acid Complex, Copper Amino Acid Complex, Potassium Iodate, Cobalt Glucoheptonate, Sodium Selenite)",
-    "Minerals (Zinc Amino Acid Complex, Iron Amino Acid Complex, Sodium Selenite, Manganese Amino Acid Complex, Copper Amino Acid Complex, Calcium Iodate)",
-    "Minerals (Zinc Amino Acid Proteinate, Iron Amino Acid Proteinate, Copper Amino Acid Proteinate, Manganese Amino Acid Proteinate, Cobalt Amino Acid Proteinate, Potassium Iodide, Sodium Selenite)",
-    "Minerals (Zinc Oxide, Ferrous Sulfate, Copper Proteinate, Sodium Selenite, Manganese Sulfate, Potassium Iodide)",
-    "minerals (Zinc Oxide, Ferrous Sulfate, Copper Sulfate, Manganese Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite)",
-    "minerals (Zinc Oxide, Ferrous Sulfate, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite)",
-    "minerals (Zinc Oxide, Ferrous Sulfate, Copper Sulfate, Manganous Oxide, Manganese Sulfate, Calcium Iodate, Sodium Selenite)",
-    "minerals (Zinc Oxide, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate)",
-    "minerals (zinc oxide, ferrous sulfate, manganous oxide, copper sulfate, calcium iodate, sodium selenite)",
-    "minerals (Zinc Oxide, Ferrous Sulfate, Manganous Oxide, Manganese Sulfate, Calcium Iodate, Copper Sulfate, Sodium Selenite)",
-    "Minerals (Zinc oxide, Iron Glycine Complex, Copper Sulfate, Sodium Selenite, Manganese Sulfate, Potassium Iodide)",
-    "minerals (Zinc Oxide, Manganese Sulfate, Ferrous Sulfate, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite)",
-    "minerals (Zinc Oxide, Manganous Oxide, Calcium Iodate, Sodium Selenite)",
-    "Minerals (Zinc Oxide, Reduced Iron, Sodium Selenite, Manganese Sulfate, Amino Acid Complex, Potassium Iodide)",
-    "Minerals (Zinc Oxide, Reduced Iron, Sodium Selenite, Manganese Sulfate, Copper Amin Acid Complex, Potassium Iodide)",
-    "Minerals (Zinc Oxide, Reduced Iron, Sodium Selenite, Manganese Sulfate, Copper Amino Acid Complex, Potassium Iodide)",
-    "minerals (zinc proteinate, copper proteinate)",
-    "Minerals (Zinc Proteinate, Copper Proteinate, Manganese Proteinate, Calcium Iodate)",
-    "minerals (zinc proteinate, ferrous fumarate, copper proteinate, manganese proteinate, potassium iodide)",
-    "minerals (zinc proteinate, ferrous fumarate, sodium selenite, copper proteinate, manganese proteinate, potassium iodide)",
-    "minerals (zinc proteinate, ferrous sulfate, iron proteinate, zinc oxide, copper proteinate, copper sulfate,manganese proteinate, manganous oxide, calcium iodate, sodium selenite)",
-    "Minerals (Zinc Proteinate, Iron Proteinate, Copper Proteinate, Cobalt Proteinate, Manganese Proteinate, Sodium Selenite, Potassium Iodide)",
-    "minerals (zinc proteinate, iron proteinate, copper proteinate, manganese proteinate, calcium iodate, selenium yeast)",
-    "Minerals (Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Sodium Selenite, Calcium Iodate)",
-    "Minerals (Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Sodium Selenite, Cobalt Proteinate, Potassium Iodide)",
-    "Minerals (Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Sodium Selenite, Ethylenediamine Dihydriodide)",
-    "Minerals (Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Sodium Selenite, Potassium Iodide)",
-    "minerals (zinc proteinate, iron proteinate, manganese proteinate, copper proteinate, selenium yeast, calcium iodate)",
-    "minerals (zinc proteinate, iron proteinate, manganese proteinate, copper proteinate, sodium selenite, calcium iodate)",
-    "Minerals (Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Sodium Selenite, Potassium Iodide)",
-    "Minerals (Zinc Proteinate, Iron Proteinate, Potassium Chloride, Copper Proteinate, Manganese Proteinate, Sodium Selenite, Calcium Iodate)",
-    "minerals (zinc proteinate, iron proteinate, selenium yeast, cobalt proteinate, copper proteinate, manganese proteinate, potassium iodide)",
-    "minerals (zinc proteinate, iron proteinate, selenium yeast, copper proteinate, cobalt proteinate, manganese proteinate, potassium iodide)",
-    "minerals (zinc proteinate, iron proteinate, selenium yeast, copper proteinate, manganese proteinate, cobalt proteinate, potassium iodide)",
-    "minerals (zinc proteinate, iron proteinate, selenium yeast, copper proteinate, manganese proteinate, potassium iodide)",
-    "Minerals (Zinc Proteinate, Iron Proteinate, Selenium Yeast, Manganese Proteinate, Potassium Iodide)",
-    "Minerals (Zinc Proteinate, Zinc Sulfate, Ferrous Sulfate, Iron Proteinate, Copper Sulfate, Copper Proteinate, Manganese Sulfate, Manganese Proteinate, Calcium Iodate, Sodium Selenite)",
-    "Minerals (Zinc Proteinate, Zinc Sulfate, Ferrous Sulfate, Iron Proteinate, Copper Sulfate, Copper Proteinate, Manganese Sulfate, Manganese Proteinate, Sodium Selenite, Calcium Iodate)",
-    "Minerals (Zinc Proteinate, Zinc Sulfate, Ferrous Sulfate, Iron Proteinate, Copper Sulfate, Copper Proteinate, Manganese Sulfate, Sodium Selenite, Calcium Iodate)",
-    "Minerals (Zinc Proteinate, Zinc Sulfate, Ferrous Sulfate, Iron Proteinate, Copper Sulfate, Copper Proteinate, Sodium Selenite, Manganese Sulfate, Manganese Proteinate, Calcium Iodate)",
-    "Minerals (Zinc Sulfate, Ferrous Sulfate, Copper Sulfate, Manganese Sulfate, Calcium Carbonate, Sodium Selenite, Calcium Iodate)",
-    "Minerals (Zinc Sulfate, Ferrous Sulfate, Copper Sulfate, Manganese Sulfate, Potassium Iodide, Sodium Selenite)",
-    "Minerals (Zinc Sulfate, Ferrous Sulfate, Copper Sulfate, Manganese Sulfate, Sodium Selenite)",
-    "Minerals (Zinc Sulfate, Ferrous Sulfate, Copper Sulfate, Manganese Sulfate, Sodium Selenite, Calcium Iodate)",
-    "Minerals (Zinc Sulfate, Ferrous Sulfate, Copper Sulfate, Sodium Selenite, Manganese Sulfate, Calcium Iodate)",
-    "Minerals (Zinc Sulfate, Ferrous Sulfate, Copper Sulfate, Zinc Proteinate, Manganese Sulfate, Iron Proteinate, Manganese Proteinate, Copper Proteinate, Sodium Selenite, Calcium Iodate)",
-    "Minerals (Zinc Sulfate, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Sodium Selenite)",
-    "Minerals (Zinc Sulfate, Ferrous Sulfate, Zinc Proteinate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Manganese Proteinate, Manganese Sulfate, Copper Proteinate, Calcium Iodate, Calcium Carbonate)",
-    "Minerals (Zinc Sulfate, Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Sulfate, Copper Sulfate, Copper Proteinate, Calcium Iodate, Manganese Proteinate, Sodium Selenite)",
-    "Minerals (Zinc Sulfate, Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Sulfate, Copper Sulfate, Copper Proteinate, Manganese Proteinate, Calcium Iodate, Sodium Selenite)",
-    "Minerals (Zinc Sulfate, Ferrous Sulfate, Zinc Proteinate, Iron Proteinate, Sodium Selenite, Manganese Proteinate, Manganese Sulfate, Copper Proteinate, Calcium Iodate, Calcium Carbonate)",
-    "minerals (zinc sulfate, zinc proteinate, iron proteinate, ferrous sulfate, copper proteinate, copper sulfate, manganese proteinate, manganous oxide, calcium iodate, sodium selenite)",
-    "Minerals (Zinc Sulfate, Zinc Proteinate, Iron Proteinate, Ferrous Sulfate, Copper Proteinate, Manganese Sulfate, Sodium Selenite, Manganese Proteinate)",
-    "Minerals (Zinc Sulfate, Zinc Proteinate, Iron Proteinate, Ferrous Sulfate, Copper Proteinate, Manganese Sulfate, Sodium Selenite, Manganese Proteinate, Copper Sulfate)",
-    "Minerals (Zinc Sulfate, Zinc Proteinate, Iron Proteinate, Ferrous Sulfate, Copper Sulfate, Copper Proteinate, Manganese Sulfate, Sodium Selenite, Manganese Proteinate)",
-    "minerals (zinc sulfate, zinc proteinate, iron proteinate, ferrous sulphate, copper proteinate, copper sulfate, manganese proteinate, manganous oxide, calcium iodate, sodium selenite)",
-    "Minerals (Zinc Sulphate, Ferrous Sulphate, Copper Sulphate, Zinc Proteinate, Manganese Sulphate, Iron Proteinate, Manganese Proteinate, Copper Proteinate, Sodium Selenite, Calcium Iodate)",
-    "Minerals (Zinc Sulphate, Ferrous Sulphate, Manganese Sulphate, Copper Sulphate, Calcium Iodate, Sodium Selenite)",
-    "MINERALS [iron amino acid complex, zinc amino acid complex, zinc sulfate, sodium selenite, manganese amino acid complex, copper amino acid complex, copper sulfate, potassium iodide, cobalt proteinate, cobalt carbonate]",
-    "minerals [potassium chloride, magnesium sulfate, zinc amino acid chelate, iron amino acid chelate, manganese amino acid chelate, copper amino acid chelate, potassium iodide]",
-    "Minerals [Potassium Chloride, Magnesium Sulfate, Zinc Sulfate, Ferrous Sulfate, Copper Sulfate, Manganese Sulfate, Potassium Iodide, Sodium Selenite]",
-    "MINERALS [Potassium Chloride, Zinc Sulfate, Ferrous Sulfate, Copper Sulfate, Manganese Sulfate, Potassium Iodide, Sodium Selenite]",
-    "MINERALS [ZINC AMINO ACID CHELATE, FERROUS AMINO ACID CHELATE, MANGANESE AMINO ACID CHELATE, COPPER AMINO ACID CHELATE, POTASSIUM IODIDE, SODIUM SELENITE]",
-    "MINERALS [Zinc Amino Acid Complex, Iron Amino Acid Complex, Sodium Selenite, Manganese Amino Acid Complex, Copper Amino Acid Complex, Calcium Iodate]",
-    "minerals [zinc oxide, zinc proteinate, iron proteinate, ferrous sulfate, copper proteinate, copper sulfate, manganese proteinate, manganese oxide, calcium iodate, sodium selenite]",
-    "MINERALS [Zinc Proteinate, Ferrous Sulfate, Manganese Proteinate, Copper Proteinate, Calcium Iodate, Sodium Selenite]",
-    "MINERALS [Zinc Proteinate, Iron Proteinate, Cobalt Proteinate, Copper Proteinate, Manganese Proteinate, Sodium Selenite, Potassium Iodide]",
-    "MINERALS [Zinc Proteinate, Iron Proteinate, Copper Proteinate, Cobalt Proteinate, Manganese Proteinate, Sodium Selenite, Potassium Iodide]",
-    "MINERALS [Zinc Proteinate, Manganese Proteinate, Ferrous Sulfate, Copper Proteinate, Calcium Iodate, Sodium Selenite]",
-    "MINERALS [Zinc Sulfate, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate, Sodium Selenite]",
-    "minerals [zinc sulfate, zinc proteinate, iron proteinate, ferrous sulfate, copper proteinate, copper sulfate, manganese proteinate, manganese oxide, calcium iodate, sodium selenite]",
-    "Minerals [Zinc Sulfate, Zinc Proteinate, Iron Proteinate, Ferrous Sulfate, Copper Proteinate, Copper Sulfate, Manganese Proteinate, Manganese Sulfate, Calcium Iodate, Sodium Selenite]",
-    "minerals [zinc sulfate, zinc proteinate, iron proteinate, ferrous sulfate, copper proteinate, copper sulfate, manganese proteinate, manganous oxide, calcium iodate, sodium selenite]",
-    "Minerals [Zinc Sulphate, Ferrous Sulphate, Manganese Sulphate, Copper Sulphate, Calcium Iodate, Sodium Selenite]",
-    "Minerals(Zinc Proteinate, Zinc Sulfate, Ferrous Sulfate, Iron Proteinate, Copper Sulfate, Copper Proteinate, Manganese Sulfate, Manganese Proteinate, Calcium Iodate, Sodium Selenite)",
-    "minerals/vitamins (zinc proteinate, vitamin E supplement, iron proteinate, ferrous sulfate, biotin, copper proteinate, sodium selenite, niacin, D-calcium pantothenate, manganous oxide, riboflavin, vitamin A acetate, thiamine mononitrate, vitamin B12 supplement, pyridoxine hydrochlordie, calcium iodate, vitamin D3 supplement, folic acid)",
-    "minerals/vitamins: (zinc proteinate, vitamin E supplement, iron proteinate, ferrous sulfate, biotin, copper proteinate, sodium selenite, niacin, D-calcium pantothenate, manganous oxide, riboflavin, vitamin A acetate, thiamine mononitrate, vitamin B12 supplement, pyridoxine hydrochlordie, calcium iodate, vitamin D3 supplement, folic acid)",
+    "minerals/vitamins (zinc proteinate, vitamin E supplement, iron proteinate, ferrous sulfate, biotin, copper proteinate, sodium selenite, niacin, D-calcium pantothenate, manganous oxide, riboflavin, vitamin A acetate, thiamine mononitrate, vitamin B12 supplement, pyridoxine hydrochloride, calcium iodate, vitamin D3 supplement, folic acid)",
+    "minerals/vitamins: (zinc proteinate, vitamin E supplement, iron proteinate, ferrous sulfate, biotin, copper proteinate, sodium selenite, niacin, D-calcium pantothenate, manganous oxide, riboflavin, vitamin A acetate, thiamine mononitrate, vitamin B12 supplement, pyridoxine hydrochloride, calcium iodate, vitamin D3 supplement, folic acid)",
     "Minerals: Zinc Sulfate",
-    "MineralsÃ¢ÂÂ¯[potassium Chloride, Zinc Sulfate, Ferrous Sulfate, Copper Sulfate, Manganese Sulfate, Potassium Iodide, Sodium Selenite]",
+    "Minerals [potassium Chloride, Zinc Sulfate, Ferrous Sulfate, Copper Sulfate, Manganese Sulfate, Potassium Iodide, Sodium Selenite]",
     "Miscanthus Grass",
     "Mixed Tocopherol (preservative)",
-    "mixed tocopherols",
-    "Mixed Tocopherols & Citric Acid (Preservatives)",
-    "Mixed Tocopherols (a natural preservative)",
-    "Mixed Tocopherols (A Preservative)",
-    "Mixed Tocopherols (added to preserve freshness)",
-    "Mixed Tocopherols (as preservative)",
-    "Mixed Tocopherols (for freshness)",
-    "Mixed Tocopherols (preservative)",
-    "Mixed Tocopherols (Used As A Preservative)",
-    "Mixed Tocopherols added to preserve freshness",
-    "Mixed Tocopherols for freshness",
-    "Mixed Tocopherols(Preservative)",
     "Mixed-Tocopherols",
     "modified corn starch",
     "Modified Rice Starch",
@@ -4331,42 +4294,25 @@
     "Natural Filet Mignon Flavor",
     "Natural Filet Mignon Flavour",
     "Natural Flavor (Yeast Extract)",
-    "Natural Grilled Chicken Flavour",
     "Natural Grilled Steak Flavour",
     "Natural Hickory Smoke Flavor",
     "Natural Hickory Smoke Flavour",
     "Natural New York Strip Flavour",
-    "Natural Peanut Flavour",
     "Natural Porcine Flavor",
     "Natural Porterhouse Flavour",
-    "Natural Poultry Flavour",
     "Natural Prime Rib Flavour",
     "Natural Roasted Flavor",
-    "Natural Rotisserie Chicken Flavour",
     "Natural Smoke Flavor",
     "Natural Smoke Flavour",
     "Natural Top Sirloin Flavour",
     "Natural Vegetable Flavor",
-    "New Zealand Green Lipped Mussel",
-    "New Zealand Green Mussel",
-    "New Zealand green mussel powder",
-    "New Zealand green mussels",
-    "Niacin",
-    "niacin (Vitamin B-3)",
-    "Niacin (Vitamin B3)",
-    "Niacin Supplement",
-    "Niacin Supplement (Vitamin B3)",
-    "Niacin Supplement [Vitamin B3]",
     "niacinamide",
     "Nicotinic Acid",
     "Oil of Rosemary",
-    "olive oil",
-    "Olive Oil (preserved with Mixed Tocopherols and Citric Acid)",
     "Omega-3 Fatty Acids",
     "Omega-3 fatty acids (Schizochytrium spp. algae)",
     "onion powder",
     "Oregano",
-    "organ meats and cartilage. Supports whole body health with the right blend of vitamins",
     "Organic Apple Cider Vinegar",
     "Organic Dried Kelp",
     "organic guar gum",
@@ -4392,19 +4338,10 @@
     "peppermint leaf",
     "Peppermint Leaf Powder",
     "Peppermint Oil",
-    "perna canaliculus (green lipped mussel)",
     "Phosphoric Acid",
     "pimpinella anisum (aniseed)",
     "Plain Beet Pulp",
     "Poassium Chloride",
-    "Porcine plasma",
-    "pork fat ( preserved with mixed tocopherols and citric acid )",
-    "pork fat (preserved with mixed tocopherols and citric acid)",
-    "pork fat (preserved with mixed tocopherols)",
-    "pork fat (preserved withmixed tocopherols)",
-    "Pork Fat Preserved With Mixed Tocopherols",
-    "Pork Gelatin",
-    "pork plasma",
     "Potassium Alginate",
     "Potassium Carbonate",
     "Potassium Chloride",
@@ -4412,11 +4349,6 @@
     "potassium iodate",
     "Potassium Iodide",
     "potassium phosphate",
-    "Potassium Sorbate",
-    "Potassium Sorbate (A Preservative)",
-    "Potassium Sorbate (preservative)",
-    "Potassium Sorbate (Used As A Preservative)",
-    "Poultry Fat (Preserved With Mixed Tocopherols)",
     "powdered cellulose",
     "powdered psyllium seed husk",
     "preserved with Citric Acid and Mixed Tocopherols",
@@ -4428,43 +4360,25 @@
     "Preserved with Mixed-Tocopherols",
     "preserved with Phosphoric Acid",
     "probiotics (lactobacillus acidophilus, lactobacillus casei, enterococcus faecium, bifidobacterium thermophilum)",
-    "probiotics and taurine for a healthy heart Brand: Wellness Core Food Type: Dry Breed Size: Large Life Stage: Puppy Nutritional Option: Grain Free Health Consideration: Brain Development Flavor: Chicken Weight: Available in 12 lb and 24 lb sizes NUTRITIONAL INFORMATION Ingredients: Deboned Chicken",
     "propylene glycol",
     "psyllium husk",
     "psyllium seed husk",
     "pyridoxine",
-    "Pyridoxine Hydrochloride",
-    "Pyridoxine Hydrochloride (Source of Vitamin B6)",
-    "pyridoxine hydrochloride (Vitamin B-6)",
-    "Pyridoxine Hydrochloride (Vitamin B6)",
-    "Pyridoxine Hydrochloride [Vitamin B6]",
     "Pyridoxine Hydrocholoride",
     "pyridoxine supplement",
     "Quercetin",
-    "Real Meat First",
     "Red #40",
     "Red 40",
     "Red 40 Lake",
     "REDUCED IRON",
     "Reishi Mushroom",
     "riboavin supplement (Vitamin B-2)",
-    "Riboflavin",
     "Riboflavin (Vitamin B2)",
-    "Riboflavin (Vitamin B2) Vitamin D3 Supplement",
-    "Riboflavin Supplement",
-    "riboflavin supplement (Vitamin B-2)",
-    "Riboflavin Supplement (Vitamin B2)",
-    "Riboflavin Supplement [Vitamin B2]",
-    "Riboﬂavin (Vitamin B2)",
     "rosehips",
     "Rosemary",
     "rosemary extrac",
     "Rosemary Extract",
     "Rosemary Extract)",
-    "Rosemary Oil. 2",
-    "rosemary. Contains a source of live (viable) naturally occurring microorganisms",
-    "rosemary.Contains a source of live (viable) naturally occurring microorga",
-    "rosemary.Contains a source of live (viable) naturally occurring microorganisms",
     "Rosmary Extract",
     "Sage",
     "Salmon Oil (preserved with Mixed Tocopherols and Citric Acid)",
@@ -4475,7 +4389,6 @@
     "sea salt",
     "seasoning",
     "Selenium Yeast",
-    "sh oil",
     "Silicon Dioxide",
     "smoke flavor",
     "Smoke Flavour",
@@ -4487,17 +4400,12 @@
     "Sodium Bicarbonate",
     "sodium bisulfate",
     "sodium carbonate",
-    "Sodium Caseinate",
     "Sodium Chloride",
     "sodium erythrobate",
     "Sodium Hexametaphosphate",
     "Sodium Metabisulfite (A Preservative)",
     "Sodium Molybdate",
     "Sodium Nitrate (For Colour Retention)",
-    "Sodium Nitrite (For Color Retention)",
-    "Sodium Nitrite (For Color Retention). Product Varieties",
-    "Sodium Nitrite (For Colour Retention)",
-    "sodium nitrite (for colour retention) and sufficient water for processing",
     "Sodium Phosphate",
     "Sodium Propionate",
     "Sodium Pyrophosphate",
@@ -4505,23 +4413,9 @@
     "Sodium Selenium",
     "sodium silico aluminate",
     "sodium tripolyphosphate",
-    "Sorbic Acid",
-    "Sorbic Acid (a Preservative)",
-    "Sorbic Acid (Used as a Preservative)",
     "Sorbitol",
     "Spearmint",
-    "Spearmint Extract",
-    "Spearmint Extract. This is a naturally preserved product",
-    "Spearmint Extract. This is a naturally preserved product Manufactured in a facility that also processes grains",
-    "Spearmint Extract. This is a naturally preserved product.Manufactured in a facility that also processes grains",
-    "Spearmint Extract.This is a naturally preserved product",
-    "Spearmint Extract.This is a naturally preserved product Manufactured in a facility that also processes grains",
     "Spearmint Oil",
-    "Species: Dog Brand: Nutro Food Type: Wet Breed Size: All Sizes Life Stage: Adult (1–7 years) Nutritional Benefits: Natural Health Consideration: Natural",
-    "Spray Dried Animal Blood Cells",
-    "Stella & Chewy's Stella's Solutions Food Type: Freeze Dried Breed Size: All Life Stage: All Life Stages Nutritional Option: Grain-Free",
-    "Stella & Chewy's Wild Red",
-    "Stella's Solutions",
     "Sufficient Water For Processing",
     "Sugar",
     "Sun Cured Alfalfa",
@@ -4539,69 +4433,21 @@
     "Thiamin Mononitrate",
     "thiamine",
     "thiamine hydrochloride",
-    "Thiamine Mononitrate",
-    "Thiamine Mononitrate (B1)",
-    "Thiamine Mononitrate (Source of Vitamin B1)",
-    "thiamine mononitrate (Vitamin B-1)",
-    "Thiamine Mononitrate (Vitamin B1)",
-    "Thiamine Mononitrate [Vitamin B1]",
-    "Thiamine Mononitrate and Zinc Oxide",
     "Threonine",
     "Thyme",
     "Titanium Dioxide (Color)",
     "Tocopherols",
     "tocopherols (preservative)",
     "Tomato Pomace",
-    "trace minerals [zinc oxide, ferrous sulfate, copper sulfate, sodium selenite, calcium iodate]",
-    "trace minerals [zinc oxide, ferrous sulfate, manganous oxide, copper sulfate, sodium selenite, calcium iodate]",
-    "trace minerals [zinc oxide, ferrous sulfate, zinc proteinate, copper sulfate, calcium iodate, manganous oxide, sodium selenite]",
-    "trace minerals [zinc oxide, ferrous sulfate, zinc proteinate, copper sulfate, manganous oxide, sodium selenite, calcium iodate]",
-    "trace minerals [zinc oxide, ferrous sulfate, zinc proteinate, manganous oxide, manganese proteinate, copper sulfate, calcium iodate, sodium selenite, copper proteinate]",
-    "trace minerals [zinc oxide, zinc proteinate, ferrous sulfate, copper sulfate, manganese proteinate, manganous oxide, sodium selenite, calcium iodate, copper proteinate]",
-    "trace minerals [zinc proteinate, ferrous sulfate, manganous oxide, sodium selenite, calcium iodate]",
-    "trace minerals [zinc proteinate, manganese proteinate, ferrous sulfate, zinc oxide, manganous oxide, copper sulfate, calcium iodate, sodium selenite, copper proteinate]",
-    "trace minerals [zinc proteinate, manganese proteinate, ferrous sulfate, zinc oxide, manganous oxide, copper sulfate, sodium selenite, calcium iodate, copper proteinate]",
-    "trace minerals [zinc proteinate, manganese proteinate, zinc oxide, ferrous sulfate, manganous oxide, copper sulfate, calcium iodate, sodium selenite, copper proteinate]",
-    "trace minerals [zinc proteinate, manganese proteinate, zinc oxide, ferrous sulfate, manganous oxide, copper sulfate, sodium selenite, calcium iodate, copper proteinate]",
-    "trace minerals [zinc proteinate, zinc oxide, ferrous sulfate, copper sulfate, manganese proteinate, manganous oxide, sodium selenite, calcium iodate, copper proteinate]",
-    "trace minerals [zinc proteinate, zinc oxide, ferrous sulfate, copper sulfate, manganous oxide, sodium selenite, calcium iodate]",
-    "trace minerals [zinc proteinate, zinc oxide, ferrous sulfate, manganese proteinate, copper sulfate, manganous oxide, sodium selenite, calcium iodate, copper proteinate]",
-    "trace minerals [zinc proteinate, zinc oxide, ferrous sulfate, manganese proteinate, manganous oxide, copper sulfate, calcium iodate, sodium selenite, copper proteinate]",
-    "trace minerals [zinc proteinate, zinc oxide, ferrous sulfate, manganese proteinate, manganous oxide, copper sulfate, copper proteinate, calcium iodate]",
-    "trace minerals [zinc proteinate, zinc oxide, ferrous sulfate, manganese proteinate, manganous oxide, copper sulfate, sodium selenite, calcium iodate, copper proteinate]",
-    "trace minerals [zinc proteinate, zinc oxide, ferrous sulfate, manganous oxide, manganese proteinate, copper sulfate, sodium selenite, calcium iodate, copper proteinate]",
-    "trace minerals [zinc proteinate, zinc oxide, manganese proteinate, ferrous sulfate, manganous oxide, copper sulfate, calcium iodate, sodium selenite, copper proteinate]",
-    "trace minerals [zinc proteinate, zinc oxide, manganese proteinate, ferrous sulfate, manganous oxide, copper sulfate, sodium selenite, calcium iodate, copper proteinate]",
-    "trace minerals [zinc proteinate, zinc oxide, manganese proteinate, manganous oxide, copper sulfate, ferrous sulfate, sodium selenite, copper proteinate, calcium iodate]",
-    "trace minerals[zinc oxide, ferrous sulfate, copper sulfate, sodium selenite, calcium iodate]",
-    "trace minerals[zinc oxide, ferrous sulfate, zinc proteinate, copper sulfate, calcium iodate, manganous oxide, sodium selenite]",
-    "trace minerals[zinc oxide, ferrous sulfate, zinc proteinate, copper sulfate, manganous oxide, sodium selenite, calcium iodate]",
-    "trace minerals[zinc oxide, manganese proteinate, ferrous sulfate, copper proteinate, calcium iodate, sodium selenite]",
-    "trace minerals[zinc proteinate, ferrous sulfate, manganous oxide, sodium selenite, calcium iodate]",
-    "trace minerals[zinc proteinate, ferrous sulfate, zinc oxide, manganese proteinate, copper sulfate, manganous oxide, sodium selenite, copper proteinate]",
-    "trace minerals[zinc proteinate, ferrous sulfate, zinc oxide, manganous oxide, sodium selenite, copper sulfate, calcium iodate]",
-    "trace minerals[zinc proteinate, manganese proteinate, ferrous sulfate, zinc oxide, manganous oxide, copper sulfate, sodium selenite, calcium iodate, copper proteinate]",
-    "trace minerals[zinc proteinate, manganese proteinate, ferrous sulfate, zinc oxide, manganous oxide, copper sulfate,calcium iodate, sodium selenite, copper proteinate]",
-    "trace minerals[zinc proteinate, manganese proteinate, zinc oxide, ferrous sulfate, copper sulfate, manganous oxide, sodium selenite, copper proteinate, calcium iodate]",
-    "trace minerals[zinc proteinate, manganese proteinate, zinc oxide, ferrous sulfate, manganous oxide, copper sulfate, sodium selenite, calcium iodate, copper proteinate]",
-    "trace minerals[zinc proteinate, zinc oxide, ferrous sulfate, manganese proteinate, manganous oxide, copper sulfate, calcium iodate, sodium selenite, copper proteinate]",
-    "trace minerals[zinc proteinate, zinc oxide, ferrous sulfate, manganese proteinate, manganous oxide, copper sulfate, sodium selenite, calcium iodate, copper proteinate]",
-    "trace minerals[zinc proteinate, zinc oxide, ferrous sulfate, manganous oxide, manganese proteinate, copper sulfate, sodium selenite, calcium iodate, copper proteinate]",
-    "trace minerals[zinc proteinate, zinc oxide, manganese proteinate, ferrous sulfate, manganous oxide, copper sulfate, sodium selenite, calcium iodate, copper proteinate]",
-    "trace minerals[zinc proteinate, zinc oxide, manganese proteinate, manganous oxide, copper sulfate, ferrous sulfate, sodium selenite, copper proteinate, calcium iodate]",
-    "trace minerals[zinc proteinate, zinc oxide, manganese proteinate,manganous oxide, copper sulfate, ferrous sulfate, sodium selenite,copper proteinate, calcium iodate]",
-    "trace minerals[zinc proteinate,zinc oxide, manganese proteinate, ferrous sulfate, manganous oxide, copper sulfate, calcium iodate, sodium selenite, copper proteinate]",
     "Tricalcium Phosphate",
     "Tryptophan",
-    "Tumeric Color",
+    "Turmeric Color",
     "Turmeric",
     "Turmeric (spice)",
     "turmeric extract",
     "Turmeric Powder",
     "turmeric root",
     "Turmeric Spice",
-    "Turmeric Spice. 2",
-    "turmeric. vitamins (vitamin E supplement, vitamin A supplement, niacin, calcium pantothenate, riboflavin, pyridoxine hydrochloride, thiamine mononitrate, biotin, vitamin B 12 supplement, vitamin D 3 supplement, folic acid)",
     "Valerian Root",
     "valeriana officinalis (valerian root)",
     "vanilla flavour",
@@ -4619,9 +4465,6 @@
     "vegetable oil (source of medium-chain triglycerides)",
     "Vegetable Stock",
     "Vinegar",
-    "Vitamin (Vitamin A Supplement, Niacin Supplement, D-Calcium Pantothenate, Thiamine Mononitrate, Beta-Carotene, Biotin, Vitamin D3 Supplement, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid)",
-    "vitamin (vitamin A, vitamin D3, vitamin E, niacin, vitamin C, inositol, d-calcium pantothenate, thiamine mononitrate, riboflavin, beta carotene, pyridoxine hydrochloride, folic acid, vitamin K, biotin, vitamin B12 supplement)",
-    "Vitamin (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-Calcium Pantothenate, Thiamine Mononitrate, Beta-Carotene, Biotin, Vitamin D3 Supplement, Riboflavin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid)",
     "vitamin A",
     "Vitamin A Acetate",
     "Vitamin A Supplement",
@@ -4635,7 +4478,7 @@
     "Vitamin B2 (Riboflavin)",
     "Vitamin B3 (Niacin)",
     "Vitamin B5 (Calcium Pantothenate)",
-    "Vitamin B5 (d–Calcium Pantothenate)",
+    "Vitamin B5 (d-Calcium Pantothenate)",
     "Vitamin B6 (Pyridoxine Hydrochloride)",
     "Vitamin B7 (Biotin)",
     "Vitamin B9 (Folic Acid)",
@@ -4647,286 +4490,18 @@
     "Vitamin D3",
     "Vitamin D3 (Cholecalciferol)",
     "Vitamin D3 Supplement",
-    "Vitamin D3 Supplement. CHICKEN: Chicken",
     "Vitamin D3Supplement",
     "vitamin E",
     "Vitamin E (A Preservative)",
     "Vitamin E Supplement",
     "Vitamin Mix (Pea Fibre, Calcium Carbonate, Vitamin E Supplement, Niacin Supplement, D-Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Thiamine Mononitrate, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid)",
     "Vitamins",
-    "Vitamins (Ascorbic Acid, Vitamin E Supplement, Thiamine Mononitrate, Vitamin D3 Supplement)",
-    "Vitamins (Choline Chloride, d-Calcium Pantothenate, Vitamin B12 Supplement, Folic Acid, Vitamin A Supplement, Niacin, Riboflavin, [Vitamin B2], Pyridoxine Hydrochloride [Vitamin B6], Vitamin D3 Supplement, Thiamine Mononitrate [Vitamin B1], Alpha Tocopherol Acetate [Vitamin E])",
-    "Vitamins (Choline Chloride, d-Calcium Pantothenate, Vitamin B12 Supplement, Folic Acid, Vitamin A Supplement, Niacin, Riboflavin, [Vitamin B2], Pyridoxine Hydrochloride [Vitamin B6], Vitamin D3 Supplement, Thiamine Mononitrate[Vitamin B1], Alpha Tocopherol Acetate [Vitamin E])",
-    "Vitamins (Choline Chloride, L-Ascorbyl-2-Polyphosphate [Source Of Vitamin C], D-Calcium Pantothenate, Vitamin B12 Supplement, Folic Acid, Vitamin A Supplement, Niacin, Riboflavin Supplement [Vitamin B2], Pyridoxine Hydrochloride [Vitamin B6], Vitamin D3 Supplement, Thiamine Mononitrate [Vitamin B1], Alpha Tocopherol Acetate [Source Of Vitamin E])",
-    "Vitamins (Choline Chloride, Vitamin E Supplement, Biotin, Calcium Pantothenate, Thiamine Mononitrate, Vitamin A Supplement, Vitamin D3 Supplement)",
-    "Vitamins (Choline Chloride, Vitamin E Supplement, D-Calcium Pantothenate, Biotin, Thiamine Mononitrate [Vitamin B1], Vitamin A Supplement, Vitamin D3 Supplement)",
-    "Vitamins (Choline Chloride, Vitamin E Supplement, Thiamine Mononitrate, Calcium Pantothenate, Biotin, Riboflavin Supplement, Vitamin A Supplement, Vitamin D3 Supplement, Vitamin B12 Supplement)",
-    "Vitamins (Choline, Vitamin E, Vitamin B-3, Vitamin A, Vitamin B-5, Vitamin B-1, Vitamin B-12, Vitamin B-2, Vitamin B-6, Folic Acid, Vitamin K, Vitamin D-3, Vitamin B-7)",
-    "Vitamins (D-Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Folic Acid)",
-    "Vitamins (L-Ascorbyl-2-Polyphosphate (Source Of Vitamin C), Vitamin E Supplement, Thiamine Mononitrate, Niacin, D-Calcium Panthothenate, Vitamin A Supplement, Riboflavin Supplement, Vitamin D3 Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid)",
-    "Vitamins (L-Ascorbyl-2-Polyphosphate (Source Of Vitamin C), Vitamin E Supplement, Thiamine Mononitrate, Niacin, D-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid)",
-    "Vitamins (L-Ascorbyl-2-Polyphosphate (Source Of Vitamin C), Vitamin E Supplement, Thiamine Mononitrate, Niacin, D-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Vitamin D3 Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid)",
-    "Vitamins (L-ascorbyl-2-polyphosphate (Source of Vitamin C), Vitamin E Supplement, Thiamine Mononitrate, Niacin, D-calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Vitamin D3 Supplement,vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid)",
-    "Vitamins (L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid)",
-    "vitamins (L-ascorbyl-2-polyphosphate, vitamin E supplement, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, thiamine mononitrate, vitamin B12 supplement, menadione sodium bisulfite complex, pyridoxine hydrochloride, biotin, vitamin D3 supplement, folic acid)",
-    "Vitamins (L-Ascorbyl-2-Polyphosphate, Vitamin E Supplement, Niacin Supplement, Thiamine Mononitrate, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, Biotin)",
-    "Vitamins (Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid)",
-    "Vitamins (Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid)",
-    "vitamins (thiamine mononitrate, vitamin E supplement, niacin supplement, calcium pantothenate, vitamin A supplement, riboflavin supplement, biotin, vitamin B12 supplement, pyridoxine hydrochloride, vitamin D3 supplement, folic acid)",
-    "vitamins (thiamine mononitrate, vitamin E supplement, niacin supplement, D-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin B12 supplement, pyridoxine hydrochloride, biotin, folic acid, vitamin D3 supplement)",
-    "vitamins (thiamine mononitrate, vitamin E supplement, niacin supplement, D-calcium pantothenate, vitamin A supplement, riboflavin supplement, biotin, vitamin B12 supplement, pyridoxine hydrochloride, vitamin D3 supplement, folic acid)",
-    "vitamins (thiamine mononitrate, vitamin E supplement, niacin, calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin B12 supplement, pyridoxine hydrochloride, biotin, folic acid, vitamin D3 supplement)",
-    "vitamins (thiamine supplement, vitamin E supplement, niacin supplement, D-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin B12 supplement, pyridoxine hydrochloride, biotin, folic acid, vitamin D3 supplement)",
-    "Vitamins (Vitamin A Supplement, Niacin Supplement, D-Calcium Pantothenate, Thiamine Mononitrate, Beta-Carotene, Biotin, Vitamin D3 Supplement, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid)",
-    "vitamins (vitamin A supplement, vitamin D3 supplement, vitamin E supplement, niacin, D-calcium pantothenate, riboflavin, thiamine mononitrate, vitamin B12 supplement)",
-    "vitamins (vitamin A supplement, vitamin D3 supplement, vitamin E supplement, niacin, d-calcium pantothenate, thiamine mononitrate, riboflavin, pyridoxine hydrochloride, folic acid, biotin, vitamin B12 supplement)",
-    "vitamins (vitamin A supplement, vitamin D3 supplement, vitamin E supplement, niacin, L-ascorbyl-2-polyphosphate (a source of vitamin C), d-calcium pantothenate, thiamine mononitrate, beta-carotene, riboflavin, pyridoxine hydrochloride, folic acid, biotin, vitamin B12 supplement)",
-    "vitamins (vitamin A supplement, vitamin D3 supplement, vitamin E supplement, niacin,D-calcium pantothenate, riboflavin, thiamine mononitrate, vitamin B12supplement)",
-    "vitamins (Vitamin E Supplement, Ascorbic Acid (source of Vitamin C), L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Vitamin A Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Riboflavin Supplement, Biotin, Menadione Sodium Bisulfite Complex (source of Vitamin K), Folic Acid, Vitamin D3 Supplement)",
-    "Vitamins (Vitamin E Supplement, Ascorbic Acid (Source of Vitamin C), Niacin, Vitamin A Supplement, Thiamine Mononitrate , d-Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Biotin, Vitamin D3 Supplement)",
-    "Vitamins (Vitamin E Supplement, Ascorbic Acid (Source of Vitamin C), Niacin, Vitamin A Supplement, Thiamine Mononitrate, D-calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Biotin, Vitamin D3 Supplement )",
-    "Vitamins (Vitamin E Supplement, Ascorbic Acid (Source of Vitamin C), Niacin, Vitamin A Supplement, Thiamine Mononitrate, D-calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Biotin, Vitamin D3 Supplement)",
-    "vitamins (Vitamin E Supplement, Ascorbic Acid (source of Vitamin C), Thiamine Mononitrate, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Vitamin A Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Riboflavin Supplement, Biotin, Menadione Sodium Bisulfite Complex (source of Vitamin K), Folic Acid, Vitamin D3 Supplement)",
-    "vitamins (vitamin E supplement, ascorbic acid (source of vitamin C), thiamine mononitrate, niacin supplement, calcium pantothenate, vitamin B12 supplement, pyridoxine hydrochloride, biotin, riboflavin supplement, folic acid)",
-    "vitamins (Vitamin E Supplement, Ascorbic Acid (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Pyridoxine Hydrochloride, Calcium Pantothenate, Vitamin B12 Supplement, Riboflavin Supplement, Biotin, Vitamin D3 Supplement, Folic Acid)",
-    "vitamins (Vitamin E Supplement, Ascorbic Acid (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Vitamin A Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Riboflavin Supplement, Biotin, Menadione Sodium Bisulfite Complex (source of Vitamin K), Folic Acid, Vitamin D3 Supplement)",
-    "Vitamins (Vitamin E Supplement, Ascorbic Acid, Calcium Pantothenate, Biotin, Thiamine Mononitrate (source of Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin, Riboflavin Supplement (source of Vitamin B2), Pyridoxine Hydrochloride (source of Vitamin B6), Vitamin D3 Supplement, Folic Acid)",
-    "Vitamins (Vitamin E Supplement, Ascorbic Acid, D-Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Folic Acid)",
-    "Vitamins (Vitamin E Supplement, Ascorbic Acid, D-Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin, Riboflavin (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6),Vitamin D3 Supplement, Folic Acid)",
-    "Vitamins (Vitamin E Supplement, Ascorbic Acid, D-Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Folic Acid)",
-    "Vitamins (Vitamin E Supplement, Ascorbic Acid, Niacin Supplement, Vitamin A Supplement, Menadione Sodium Bisulfite Complex, Thiamine Mononitrate, d-Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Biotin)",
-    "Vitamins (Vitamin E Supplement, Ascorbic Acid, Niacin Supplement, Vitamin A Supplement, Thiamine Mononitrate, d-Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, Biotin)",
-    "Vitamins (Vitamin E Supplement, l - ascorbyl - 2 - polyphosphate (Source of Vitamin C), Niacin Supplement, Vitamin A Supplement, Thiamine Mononitrate, d - Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Biotin, Vitamin D3 Supplement)",
-    "vitamins (vitamin E supplement, L-ascorbyl-2-polyphosphate (a source of vitamin C), niacin, d-calcium pantothenate, vitamin A supplement, thiamine mononitrate, riboflavin, beta-carotene, vitamin B12 supplement, biotin, pyridoxine hydrochloride, vitamin D3 supplement, folic acid)",
-    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Ascorbic Acid (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Riboflavin Supplement, Menadione Sodium Bisulfite Complex (source of Vitamin K), Biotin, Folic Acid, Vitamin D3 Supplement)",
-    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Ascorbic Acid (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin D3 Supplement, Riboflavin Supplement, Folic Acid)",
-    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Ascorbic Acid (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Vitamin A Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Riboflavin Supplement, Biotin, Menadione Sodium Bisulfite Complex (source of Vitamin K), Folic Acid, Vitamin D3 Supplement)",
-    "Vitamins (Vitamin E Supplement, L-ascorbyl-2-polyphosphate (source of Vitamin C), D-Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Folic Acid)",
-    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Calcium Pantothenate, Pyridoxine Hydrochloride, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement)",
-    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Calcium Pantothenate, Vitamin A Supplement, Pyridoxine Hydrochloride, Biotin, Riboflavin Supplement, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement)",
-    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement)",
-    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Pyridoxine Hydrochloride, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement)",
-    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Biotin, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement)",
-    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Biotin, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement, Menadione Sodium Bisulfite Complex (source of Vitamin K))",
-    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Riboflavin Supplement, Folic Acid, Vitamin D3 Supplement)",
-    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Biotin, Vitamin B12 Supplement, Riboflavin Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement)",
-    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Riboflavin Supplement, Folic Acid, Vitamin D3 Supplement, Menadione Sodium Bisulfite Complex (source of Vitamin K))",
-    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Riboflavin Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, Menadione Sodium Bisulfite Complex (source of Vitamin K))",
-    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement)",
-    "Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (Source of Vitamin C), Niacin Supplement, Vitamin A Supplement, Thiamine Mononitrate , d-Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Biotin, Vitamin D3 Supplement)",
-    "Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (Source Of Vitamin C), Niacin Supplement, Vitamin A Supplement, Thiamine Mononitrate, D-Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Biotin, Vitamin D3 Supplement)",
-    "Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin, Calcium Pantothenate, Vitamin A Supplement, Riboflavin, Vitamin B12 Supplement, Thiamine Mononitrate, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid)",
-    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Ascorbic Acid (source of Vitamin C), Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin A Supplement, Biotin, Riboflavin Supplement, Folic Acid, Menadione Sodium Bisulfite Complex (source of Vitamin K), Vitamin D3 Supplement)",
-    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Ascorbic Acid (source of Vitamin C), Niacin Supplement, Vitamin A Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Riboflavin Supplement, Menadione Sodium Bisulfite Complex (source of Vitamin K), Biotin, Folic Acid, Vitamin D3 Supplement)",
-    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Riboflavin Supplement, Folic Acid, Vitamin D3 Supplement)",
-    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement)",
-    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Biotin, Folic Acid, Vitamin D3 Supplement)",
-    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Riboflavin Supplement, Folic Acid)",
-    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Riboflavin Supplement, Folic Acid, Vitamin D3 Supplement)",
-    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Riboflavin Supplement, Menadione Sodium Bisulfite Complex (source of Vitamin K), Folic Acid)",
-    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Riboflavin Supplement, Vitamin D3 Supplement, Folic Acid)",
-    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin D3 Supplement, Riboflavin Supplement, Folic Acid)",
-    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Menadione Sodium Bisulfite Complex (source of Vitamin K), Riboflavin Supplement, Biotin, Folic Acid)",
-    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Menadione Sodium Bisulfite Complex (source of Vitamin K), Pyridoxine Hydrochloride, Calcium Pantothenate, Vitamin B12 Supplement, Riboflavin Supplement, Vitamin D3 Supplement, Folic Acid, Biotin)",
-    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Pyridoxine Hydrochloride, Calcium Pantothenate, Vitamin B12 Supplement, Riboflavin Supplement, Menadione Sodium Bisulfite Complex (source of Vitamin K), Biotin, Vitamin D3 Supplement, Folic Acid)",
-    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Vitamin A Supplement, Calcium Pantothenate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Riboflavin Supplement, Folic Acid)",
-    "vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Pyridoxine Hydrochloride, Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Biotin, Riboflavin Supplement, Vitamin D3 Supplement, Folic Acid)",
-    "Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid)",
-    "Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin, Calcium Pantothenate, Vitamin A Supplement, Riboflavin, Vitamin B12 Supplement, Thiamin Mononitrate, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid)",
-    "Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin, Calcium Pantothenate, Vitamin A Supplement, Riboflavin, Vitamin B12 Supplement, Thiamine Mononitrate, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid)",
-    "Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [source of Vitamin C], Niacin, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin, Vitamin B12 Supplement, Thiamin Mononitrate, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid)",
-    "Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate [Vitamin C], Calcium Pantothenate, Biotin, Thiamine Mononitrate [Vitamin B1], Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement [Vitamin B2], Pyridoxine Hydrochloride [Vitamin B6], Vitamin D3 Supplement, Folic Acid)",
-    "Vitamins (Vitamin E Supplement, L-Ascorbyl-2-polyphosphate, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid)",
-    "vitamins (vitamin E supplement, L-ascorbyl-2-polyphosphate, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, thiamine mononitrate, vitamin B12 supplement, menadione sodium bisulfite complex, pyridoxine hydrochloride, biotin, vitamin D3 supplement, folic acid)",
-    "vitamins (vitamin E supplement, L-ascorbyl-2-polyphosphate, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, thiamine mononitrate, vitamin B12 supplement,menadione sodium bisulfite complex, pyridoxine hydrochloride, biotin, vitamin D3 supplement, folic acid)",
-    "Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate, Niacin Supplement, Thiamine Mononitrate, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, Biotin)",
-    "Vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate, Niacin Supplement, Vitamin A Supplement, D-Calcium Pantothenate, Riboflavin Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Thiamine Mononitrate, Folic Acid, Biotin, Vitamin B12 Supplement)",
-    "Vitamins (Vitamin E Supplement, L—Ascorbyl—2—Polyphosphate, Niacin Supplement, d—Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Thiamine Mononitrate, Biotin, Folic Acid)",
-    "Vitamins (Vitamin E Supplement, L—Ascorbyl—2—Polyphosphate, Niacin Supplement, d—Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Thiamine Mononitrate, Biotin, Vitamin D3 Supplement, Folic Acid)",
-    "vitamins (vitamin E supplement, niacin supplement, D-calcium pantothenate, thiamine mononitrate, riboflavin supplement, vitamin A supplement, vitamin B12 supplement, pyridoxine hydrochloride, biotin, vitamin D3 supplement, folic acid)",
-    "Vitamins (Vitamin E Supplement, Niacin Supplement, D-calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Thiamine Mononitrate, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Folic Acid, Biotin, Vitamin B12 Supplement)",
-    "Vitamins (Vitamin E Supplement, Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Thiamine Mononitrate, Riboflavin Supplement, Beta Carotene, Vitamin B12 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid)",
-    "vitamins (Vitamin E Supplement, Niacin Supplement, Thiamine Mononitrate, Calcium Pantothenate, Pyridoxine Hydrochloride, Vitamin A Supplement, Biotin, Riboflavin Supplement, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement)",
-    "Vitamins (Vitamin E Supplement, Niacin Supplement, Thiamine Mononitrate, d-Calcium Pantothenate, Dried Yeast, Vitamin A Supplement, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, Biotin)",
-    "Vitamins (Vitamin E Supplement, Niacin Supplement, Thiamine Mononitrate, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, Biotin)",
-    "vitamins (Vitamin E Supplement, Niacin Supplement, Thiamine Mononitrate, Pyridoxine Hydrochloride, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Vitamin A Supplement, Folic Acid, Vitamin D3 Supplement)",
-    "vitamins (Vitamin E Supplement, Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Riboflavin Supplement, Folic Acid, Vitamin D3 Supplement)",
-    "Vitamins (Vitamin E Supplement, Niacin Supplement, Vitamin A Supplement, Thiamine Mononitrate, d-Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, Biotin)",
-    "Vitamins (Vitamin E Supplement, Niacin, Calcium Pantothenate, Vitamin A Supplement, Riboflavin, Vitamin B12 Supplement, Thiamine Mononitrate, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid)",
-    "Vitamins (Vitamin E Supplement, Niacin, D-calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Thiamine Mononitrate, Menadione Sodium Bisulfite Complex, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Folic Acid)",
-    "Vitamins (Vitamin E Supplement, Niacin, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin, Vitamin B12 Supplement, Thiamine Mononitrate, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid)",
-    "Vitamins (Vitamin E Supplement, Niacin, Thiamine Mononitrate, Calcium Pantothenate, Pyridoxine Hydrochloride, Vitamin B-12 Supplement, Riboflavin Supplement, Vitamin A Supplement, Folic Acid, Vitamin D-3 Supplement, Biotin)",
-    "vitamins (vitamin E supplement, niacin, thiamine mononitrate, riboflavin, calcium pantothenate, pyridoxine hydrochloride, folic acid, vitamin B12 supplement)",
-    "Vitamins (Vitamin E Supplement, Niacin, Thiamine Mononitrate, Vitamin A Supplement, Ascorbic Acid (Vitamin C), D-calcium Pantothenate, Pyridoxine Hydrochloride, Vitamin D2 Supplement, Riboflavin Supplement, Folic Acid, Biotin, Vitamin B12 Supplement)",
-    "Vitamins (Vitamin E Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid) Minerals (Ferrous Sulfate, Zinc Oxide, Copper Proteinate, Sodium Selenite, Manganese Sulfate, Potassium Iodide)",
-    "Vitamins (Vitamin E Supplement, Thiamine Mononitrate [Vitamin B1], Pyridoxine [Vitamin B6], Vitamin D3 Supplement, Folic Acid)",
-    "vitamins (Vitamin E Supplement, Thiamine Mononitrate, Ascorbic Acid (source of Vitamin C), L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Vitamin A Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Riboflavin Supplement, Menadione Sodium Bisulfite Complex (source of Vitamin K), Biotin, Folic Acid, Vitamin D3 Supplement)",
-    "vitamins (vitamin E supplement, thiamine mononitrate, ascorbic acid (source of vitamin C), niacin supplement, calcium pantothenate, vitamin A supplement, vitamin B12 supplement, pyridoxine hydrochloride, menadione sodium bisulfate complex (source of vitamin K), riboflavin supplement, biotin, folic acid, vitamin D3 supplement)",
-    "vitamins (Vitamin E Supplement, Thiamine Mononitrate, Ascorbic Acid (source of Vitamin C), Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin D3 Supplement, Riboflavin Supplement, Folic Acid)",
-    "vitamins (Vitamin E Supplement, Thiamine Mononitrate, Ascorbic Acid (source of Vitamin C), Niacin Supplement, Pyridoxine Hydrochloride, Calcium Pantothenate, Vitamin B12 Supplement, Riboflavin Supplement, Biotin, Folic Acid)",
-    "vitamins (Vitamin E Supplement, Thiamine Mononitrate, Ascorbic Acid (source of Vitamin C), Niacin Supplement, Pyridoxine Hydrochloride, Menadione Sodium Bisulfite Complex (source of Vitamin K), Calcium Pantothenate, Vitamin B12 Supplement, Riboflavin Supplement, Biotin, Folic Acid, Vitamin D3 Supplement)",
-    "vitamins (Vitamin E Supplement, Thiamine Mononitrate, Ascorbic Acid (source of Vitamin C), Niacin Supplement, Vitamin A Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Riboflavin Supplement, Biotin, Menadione Sodium Bisulfite Complex (source of Vitamin K), Folic Acid, Vitamin D3 Supplement)",
-    "vitamins (vitamin E supplement, thiamine mononitrate, L-Ascorbyl-2-Polyphosphate (source of vitamin C), ascorbic acid (source of vitamin C), niacin supplement, calcium pantothenate, vitamin B12 supplement, pyridoxine hydrochloride, vitamin A supplement, biotin, riboflavin supplement, folic acid, menadione sodium bisulfate complex (source of vitamin K), vitamin D3 supplement)",
-    "vitamins (Vitamin E Supplement, Thiamine Mononitrate, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Ascorbic Acid (source of Vitamin C), Niacin Supplement, Vitamin A Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Riboflavin Supplement, Menadione Sodium Bisulfite Complex (source of Vitamin K), Biotin, Folic Acid, Vitamin D3 Supplement)",
-    "vitamins (Vitamin E Supplement, Thiamine Mononitrate, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Ascorbic Acid (source of Vitamin C), Menadione Sodium Bisulfite Complex (source of Vitamin K), Pyridoxine Hydrochloride, Calcium Pantothenate, Vitamin B12 Supplement, Vitamin A Supplement, Riboflavin Supplement, Folic Acid, Biotin, Vitamin D3 Supplement)",
-    "vitamins (Vitamin E Supplement, Thiamine Mononitrate, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Pyridoxine Hydrochloride, Riboflavin Supplement, Vitamin B12 Supplement, Biotin, Folic Acid, Vitamin D3 Supplement)",
-    "vitamins (Vitamin E Supplement, Thiamine Mononitrate, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Riboflavin Supplement, Menadione Sodium Bisulfite Complex (source of Vitamin K), Folic Acid, Vitamin D3 Supplement)",
-    "vitamins (Vitamin E Supplement, Thiamine Mononitrate, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Riboflavin Supplement, Menadione Sodium Bisulfite Complex (source of Vitamin K), Vitamin D3 Supplement, Folic Acid)",
-    "vitamins (Vitamin E Supplement, Thiamine Mononitrate, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Riboflavin Supplement, Vitamin D3 Supplement, Folic Acid)",
-    "vitamins (Vitamin E Supplement, Thiamine Mononitrate, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Menadione Sodium Bisulfite Complex (source of Vitamin K), Pyridoxine Hydrochloride, Calcium Pantothenate, Vitamin B12 Supplement, Riboflavin Supplement, Biotin, Vitamin D3 Supplement, Folic Acid)",
-    "vitamins (vitamin E supplement, thiamine mononitrate, niacin supplement, calcium pantothenate, vitamin A supplement, riboflavin supplement, biotin, vitamin B12 supplement, pyridoxine hydrochloride, vitamin D3 supplement, folic acid)",
-    "vitamins (Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Riboflavin Supplement, Folic Acid, Vitamin D3 Supplement)",
-    "vitamins (Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Riboflavin Supplement, Vitamin D3 Supplement, Folic Acid)",
-    "Vitamins (Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Folic Acid, Vitamin D3 Supplement)",
-    "Vitamins (Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, D-Calcium Pantothenate, Vitamin A Supplement, Pyridoxine hydrochloride, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid)",
-    "Vitamins (Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, D-Calcium Pantothenate, Vitamin A Supplement, Pyridoxine Hydrochloride, Riboflavin Supplement, Vitamin B12 Supplement, Vitamin D3 Supplement, Folic Acid, Biotin)",
-    "Vitamins (Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Folic Acid)",
-    "Vitamins (Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, D-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid)",
-    "VITAMINS (VITAMIN E SUPPLEMENT, THIAMINE MONONITRATE, NIACIN SUPPLEMENT, d-CALCIUM PANTOTHENATE, VITAMIN A SUPPLEMENT, RIBOFLAVIN SUPPLEMENT, BIOTIN, VITAMIN B12 SUPPLEMENT, PYRIDOXINE HYDROCHLORIDE,( VITAMIN B6), VITAMIN D3 SUPPLEMENT, FOLIC ACID)",
-    "Vitamins (Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, D-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement,Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid)",
-    "Vitamins (Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, d–Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid)",
-    "vitamins (Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, Pyridoxine Hydrochloride, Calcium Pantothenate, Vitamin B12 Supplement, Riboflavin Supplement, Biotin, Vitamin D3 Supplement, Folic Acid)",
-    "vitamins (vitamin E supplement, thiamine mononitrate, niacin, vitamin A supplement, d-calcium pantothenate, pyridoxine hydrochloride, riboflavin, vitamin B12 supplement, vitamin D3 supplement, folic acid)",
-    "vitamins (Vitamin E Supplement, Thiamine Mononitrate, Pyridoxine Hydrochloride, Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Riboflavin Supplement, Biotin, Folic Acid, Vitamin D3 Supplement)",
-    "Vitamins (Vitamin E Supplement, Thiamine Mononitrate, Vitamin D3 Supplement)",
-    "Vitamins (Vitamin E Supplement, Thiamine Nitrate, Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid) Minerals (Ferrous Sulfate, Zinc Oxide, Copper Proteinate, Sodium Selenite, Manganese Sulfate, Potassium Iodide)",
-    "Vitamins (Vitamin E Supplement, Thiamine Nitrate, Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid) Minerals (Ferrous Sulfate, Zinc Oxide, Copper Proteinate, Sodium Selenite, Manganese Sulfate, Potassium Iodide) Choline Chloride",
-    "Vitamins (Vitamin E Supplement, Thiamine Nitrate, Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid) Minerals (Ferrous Sulfate, Zinc Oxide, Copper Proteinate, Sodium Selenite, Manganese Sulfate, Potassium Iodide) Fish Oil",
-    "Vitamins (Vitamin E Supplement, Vitamin A Supplement, D-Calcium Pantothenate, Niacin Supplement, Biotin, Riboflavin Supplement, Vitamin D2 Supplement, Vitamin B12 Supplement, Thiamine Mononitrate, Pyridoxine Hydrochloride, Folic Acid)",
-    "Vitamins (Vitamin E Supplement, Vitamin A Supplement, D-Calcium Pantothenate, Niacin, Riboflavin Supplement, Vitamin D2 Supplement, Vitamin B12 Supplement, Thiamine Mononitrate, Pyridoxine Hydrochloride, Folic Acid, Biotin)",
-    "Vitamins (Vitamin E Supplement, Vitamin A Supplement, d—Calcium Pantothenate, Niacin Supplement, Biotin, Riboflavin Supplement, Vitamin D2 Supplement, Vitamin B12 Supplement, Thiamine Mononitrate, Pyridoxine Hydrochloride, Folic Acid)",
-    "Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-Calcium Pantothenate, Riboflavin Supplement)",
-    "Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-Calcium Pantothenate, Riboflavin Supplement, Thiamin Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid)",
-    "Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement Pyridoxine Hydrochloride, Calcium Iodate, Folic Acid)",
-    "Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Calcium Iodate, Folic Acid)",
-    "Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Calcium Iodate, Folic Acid, Vitamin D3 Supplement(), Dl-Methionine, Taurine, Citric Acid (A Preservative), Mixed Tocopherols (A Preservative), Rosemary Extract",
-    "Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Calcium Iodate, Folic Acid, Vitamin D3 Supplement)",
-    "Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid)",
-    "Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement)",
-    "Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Calcium Iodate, Folic Acid)",
-    "Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid, Biotin, Vitamin B12 Supplement)",
-    "Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-Calcium Pantothenate, Thiamine Mononitrate, Beta-Carotene, Biotin, Vitamin D3 Supplement, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid)",
-    "Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Thiamine Mononitrate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid, Biotin, Vitamin B12 Supplement)",
-    "Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d–Calcium Pantothenate, Thiamine Mononitrate, Beta–Carotene, Biotin, Vitamin D3 Supplement, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid)",
-    "Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, Thiamine Mononitrate, d-Calcium Pantothenate, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, Biotin)",
-    "vitamins (vitamin E supplement, vitamin A supplement, niacin, calcium pantothenate, riboflavin, pyridoxine hydrochloride thiamine mononitrate, biotin, vitamin B 12 supplement, vitamin D 3 supplement, folic acid)",
-    "vitamins (vitamin E supplement, vitamin A supplement, niacin, calcium pantothenate, riboflavin, pyridoxine hydrochloride, thiamine mononitrate, biotin, vitamin B 12 supplement, vitamin D 3 supplement, folic acid)",
-    "Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Calcium Iodate, Vitamin D3 Supplement, Folic Acid)",
-    "Vitamins (Vitamin E Supplement, Vitamin B12 Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Niacin, Vitamin D3 Supplement, Riboflavin Supplement, Folic Acid, Pyridoxine Hydrochloride, Biotin, Thiamine Mononitrate)",
-    "Vitamins (Vitamin E Supplement, Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Calcium Pantothenate, Thiamine Mononitrate, Biotin Supplement, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Beta-Carotene, Folic Acid)",
-    "Vitamins (Vitamin E Supplement, Vitamin B12 Supplement, Vitamin A Supplement, Niacin, Thiamine Mononitrate, Riboflavin Supplement, d-Calcium Pantothenate, Folic Acid, Menadione Sodium Bisulfite Complex, Biotin, Pyridoxine Hydrochloride, Vitamin D3 Supplement)",
-    "vitamins (Vitamin ESupplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement)",
-    "Vitamins (Vitamin Supplements [A, B12, D3, E], D-Calcium Pantothenate, Niacin, Riboflavin [Vitamin B2], Pyridoxine Hydrochloride [Vitamin B6], Thiamine Mononitrate [Vitamin B1], Folic Acid)",
-    "Vitamins (Vitamin Supplements [A, B12, D3, E], Folic Acid, D-Calcium Pantothenate, Niacin, Riboflavin [Vitamin B2], Pyridoxine Hydrochloride [Vitamin B6], Thiamine Mononitrate [Vitamin B1])",
-    "VITAMINS [ Vitamin E Supplement, Niacin (Vitamin B-3), Thiamine Mononitrate (Vitamin B-1), Calcium Pantothenate (Vitamin B-5), Vitamin A Supplement, Riboflavin Supplement (Vitamin B-2), Vitamin B-12 Supplement, Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Menadione Sodium Bisulfite Complex (Vitamin K), Biotin (Vitamin B 7), Vitamin D-3 Supplement]",
-    "VITAMINS [ Vitamin E Supplement, Niacin (Vitamin B-3), Thiamine Mononitrate (Vitamin B-1), Calcium Pantothenate (Vitamin B-5), Vitamin A Supplement, Riboflavin Supplement (Vitamin B-2), Vitamin B-12 Supplement, Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid, Menadione Sodium Bisulfite Complex (Vitamin K), Biotin (Vitamin B-7), Vitamin D-3 Supplement]",
-    "Vitamins [Beta-Carotene, Vitamin E Supplement, Ascorbic Acid (Vitamin C), Vitamin A Supplement, Niacin, Calcium Pantothenate, Riboflavin, Vitamin D-3 Supplement, Pyridoxine Hydrochloride, Thiamine Mononitrate, Folic Acid, Biotin, Vitamin B-12 Supplement]",
-    "vitamins [DL-alpha tocopherol acetate (source of vitamin E), biotin, D-calcium pantothenate, vitamin A acetate, niacin supplement, pyridoxine hydrochloride (vitamin B6), thiamine mononitrate (vitamin B1), vitamin B12 supplement, riboflavin supplement, vitamin D3 supplement, folic acid]",
-    "vitamins [DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), biotin, D-calcium pantothenate, pyridoxine hydrochloride (vitamin B6), vitamin A acetate, niacin supplement, folic acid, thiamine mononitrate (vitamin B1), vitamin B12 supplement, riboflavin supplement, vitamin D3 supplement]",
-    "vitamins [DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), biotin, D-calcium pantothenate, pyridoxine hydrochloride (vitamin B6), vitamin A acetate, riboflavin supplement, niacin supplement, folic acid, vitamin B12 supplement, thiamine mononitrate (vitamin B1), vitamin D3 supplement]",
-    "vitamins [DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), biotin, D-calcium pantothenate, vitamin A acetate, niacin supplement, folic acid, pyridoxine hydrochloride (vitamin B6), vitamin B12 supplement, thiamine mononitrate (vitamin B1), vitamin D3 supplement, riboflavin supplement]",
-    "vitamins [DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), biotin, D-calcium pantothenate, vitamin A acetate, niacin supplement, pyridoxine hydrochloride (vitamin B6), thiamine mononitrate (vitamin B1), vitamin B12 supplement, riboflavin supplement, vitamin D3 supplement, folic acid]",
-    "vitamins [DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), biotin, D-calcium pantothenate, vitamin A acetate, niacin supplement, pyridoxine hydrochloride (vitamin B6), vitamin B12 supplement, thiamine mononitrate (vitamin B1), vitamin D3 supplement, riboflavin supplement, folic acid]",
-    "vitamins [DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), biotin, D-calcium pantothenate, vitamin A acetate, pyridoxine hydrochloride (vitamin B6), folic acid, niacin supplement, vitamin B12 supplement, thiamine mononitrate (vitamin B1), vitamin D3 supplement, riboflavin supplement]",
-    "vitamins [DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), biotin, D-calcium pantothenate, vitamin A acetate, pyridoxine hydrochloride (vitamin B6), niacin supplement, folic acid, thiamine mononitrate (vitamin B1), vitamin B12 supplement, riboflavin supplement, vitamin D3 supplement]",
-    "vitamins [DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), biotin, D-calcium pantothenate, vitamin A acetate, pyridoxine hydrochloride (vitamin B6), niacin supplement, folic acid, vitamin B12 supplement, thiamine mononitrate (vitamin B1), vitamin D3 supplement, riboflavin supplement]",
-    "vitamins [DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), biotin, D-calcium pantothenate, vitamin A acetate, riboflavin supplement, niacin supplement, vitamin B12 supplement, pyridoxine hydrochloride (vitamin B6), thiamine mononitrate (vitamin B1), vitamin D3 supplement, folic acid]",
-    "vitamins [DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), biotin, niacin supplement, D-calcium pantothenate, pyridoxine hydrochloride (vitamin B6), riboflavin supplement, vitamin A acetate, thiamine mononitrate (vitamin B1), folic acid, vitamin B12 supplement, vitamin D3 supplement, menadione sodium bisulfite complex]",
-    "vitamins [DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), niacin supplement, biotin, D-calcium pantothenate, thiamine mononitrate (vitamin B1), riboflavin supplement, pyridoxine hydrochloride (vitamin B6), vitamin B12 supplement, folic acid, vitamin D3 supplement]",
-    "vitamins [DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), niacin supplement, biotin, riboflavin supplement, D-calcium pantothenate, pyridoxine hydrochloride (vitamin B6), thiamine mononitrate (vitamin B1), vitamin A acetate, vitamin B12 supplement, folic acid, vitamin D3 supplement]",
-    "vitamins [DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), niacin supplement, D-calcium pantothenate, biotin, pyridoxine hydrochloride (vitamin B6), riboflavin supplement, thiamine mononitrate (vitamin B1), vitamin A acetate, vitamin B12 supplement, folic acid, vitamin D3 supplement]",
-    "vitamins [DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), niacin supplement, D-calcium pantothenate, biotin, thiamine mononitrate (vitamin B1), riboflavin supplement, pyridoxine hydrochloride (vitamin B6), vitamin B12 supplement, folic acid, vitamin D3 supplement]",
-    "vitamins [DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), niacin supplement, thiamine mononitrate (vitamin B1), D-calcium pantothenate, biotin, riboflavin supplement, pyridoxine hydrochloride (vitamin B6), vitamin B12 supplement, folic acid, vitamin D3 supplement]",
-    "vitamins [DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), thiamine mononitrate (vitamin B1), biotin, niacin supplement, D-calcium pantothenate, riboflavin supplement, pyridoxine hydrochloride (vitamin B6), vitamin B12 supplement, folic acid, vitamin D3 supplement]",
-    "vitamins [DL-alpha tocopherol acetate (source of vitamin E), niacin supplement, biotin, riboflavin supplement, D-calcium pantothenate, thiamine mononitrate (vitamin B1), pyridoxine hydrochloride (vitamin B6), vitamin A acetate, vitamin B12 supplement, folic acid, vitamin D3 supplement]",
-    "vitamins [DL-alpha tocopherol acetate (source of vitamin E), niacin supplement, D-calcium pantothenate, biotin, pyridoxine hydrochloride (vitamin B6), riboflavin supplement, thiamine mononitrate (vitamin B1), vitamin A acetate, folic acid, vitamin B12 supplement, vitamin D3 supplement]",
-    "vitamins [DL-alpha tocopherol acetate (source of vitamin E), niacin supplement, D-calcium pantothenate, biotin, pyridoxine hydrochloride (vitamin B6), riboflavin supplement, thiamine mononitrate (vitamin B1), vitamin A acetate, vitamin B12 supplement, folic acid]",
-    "vitamins [DL-alpha tocopherol acetate (source of vitamin E), niacin supplement, L-ascorbyl-2- polyphosphate (source of vitamin C), D-calcium pantothenate, biotin, pyridoxine hydrochloride (vitamin B6), riboflavin supplement, thiamine mononitrate (vitamin B1), vitamin A acetate, folic acid, vitamin B12 supplement, vitamin D3 supplement]",
-    "vitamins [DL-alpha tocopherol acetate (source of vitamin E), niacin supplement, L-ascorbyl-2-polyphosphate (source of vitamin C), D-calcium pantothenate, biotin, pyridoxine hydrochloride (vitamin B6), riboflavin supplement, thiamine mononitrate (vitamin B1), vitamin A acetate, folic acid, vitamin B12 supplement, menadione sodium bisulfite complex, vitamin D3 supplement]",
-    "vitamins [DL-alpha tocopherol acetate (source of vitamin E), niacin supplement, L-ascorbyl-2-polyphosphate (source of vitamin C), D-calcium pantothenate, biotin, pyridoxine hydrochloride (vitamin B6), riboflavin supplement, thiamine mononitrate (vitamin B1), vitamin A acetate, folic acid, vitamin B12 supplement, vitamin D3 supplement]",
-    "vitamins [DL-alpha tocopherol acetate (source of vitamin E), niacin supplement, L-ascorbyl-2-polyphosphate (source of vitamin C), D-calcium pantothenate, biotin, pyridoxine hydrochloride (vitamin B6), riboflavin supplement, thiamine mononitrate (vitamin B1), vitamin A acetate, vitamin B12 supplement, folic acid, vitamin D3 supplement]",
-    "vitamins [DL-alpha tocopherol acetate (source of vitamin E), niacin supplement, L-ascorbyl-2-polyphosphate (source of vitamin C), D-calcium pantothenate, biotin, pyridoxine hydrochloride (vitamin B6), riboflavin supplement, thiamine mononitrate (vitamin B1), vitamin A acetate, vitamin B12 supplement, folic acid]",
-    "vitamins [DL-alpha tocopherol acetate (source of vitamin E), thiamine mononitrate (vitamin B1), biotin, niacin supplement, D-calcium pantothenate, riboflavin supplement, pyridoxine hydrochloride (vitamin B6), vitamin B12 supplement, folic acid, vitamin D3 supplement]",
-    "vitamins [DL–alpha tocopherol acetate (source of vitamin E), biotin, D–calcium pantothenate, vitamin A acetate, niacin supplement, pyridoxine hydrochloride (vitamin B6), thiamine mononitrate (vitamin B1), vitamin B12 supplement, riboflavin supplement, vitamin D3 supplement, folic acid]",
-    "vitamins [DL–alpha tocopherol acetate (source of vitamin E), D–calcium pantothenate, thiamine mononitrate (vitamin B1), niacin supplement, biotin, vitamin A acetate, riboflavin supplement, pyridoxine hydrochloride (vitamin B6), vitamin B12 supplement, folic acid, vitamin D3 supplement]",
-    "vitamins [DL–alpha tocopherol acetate (source of vitamin E), D–calcium pantothenate, thiamine mononitrate (vitamin B1), vitamin A acetate, niacin supplement, riboflavin supplement, biotin, pyridoxine hydrochloride (vitamin B6), vitamin B12 supplement, folic acid, vitamin D3 supplement]",
-    "vitamins [L-ascorbyl-2-polyphosphate (source of vitamin C), DL-alpha tocopherol acetate (source of vitamin E), niacin supplement, biotin, D-calcium pantothenate, thiamine mononitrate (vitamin B1), riboflavin supplement, pyridoxine hydrochloride (vitamin B6), folic acid, vitamin B12 supplement, vitamin D3 supplement]",
-    "vitamins [L-ascorbyl-2-polyphosphate (source of vitamin C), DL-alpha tocopherol acetate (source of vitamin E), niacin supplement, biotin, D-calcium pantothenate, thiamine mononitrate (vitamin B1), riboflavin supplement, pyridoxine hydrochloride (vitamin B6), vitamin B12 supplement, folic acid, vitamin D3 supplement]",
-    "vitamins [L-ascorbyl-2-polyphosphate (source of vitamin C), DL-alpha tocopherol acetate (source of vitamin E), niacin supplement, D-calcium pantothenate, biotin, pyridoxine hydrochloride (vitamin B6), riboflavin supplement, thiamine mononitrate (vitamin B1), vitamin A acetate, folic acid, vitamin B12 supplement, vitamin D3 supplement]",
-    "vitamins [L-ascorbyl-2-polyphosphate (source of vitamin C), DL-alpha tocopherol acetate (source of vitamin E), niacin supplement, D-calcium pantothenate, biotin, thiamine mononitrate (vitamin B1), pyridoxine hydrochloride (vitamin B6), riboflavin supplement, vitamin B12 supplement, vitamin A acetate, folic acid, vitamin D3 supplement]",
-    "vitamins [L-ascorbyl-2-polyphosphate (source of vitamin C), DL-alpha tocopherol acetate (source of vitamin E), niacin supplement, D-calcium pantothenate, biotin, thiamine mononitrate (vitamin B1), riboflavin supplement, pyridoxine hydrochloride (vitamin B6), vitamin B12 supplement, folic acid, vitamin D3 supplement]",
-    "vitamins [L-ascorbyl-2-polyphosphate (source of vitamin C), DL-alpha tocopherol acetate (source of vitamin E), thiamine mononitrate (vitamin B1), biotin, niacin supplement, D-calcium pantothenate, riboflavin supplement, pyridoxine hydrochloride (vitamin B6), vitamin B12 supplement, folic acid, vitamin D3 supplement, menadione sodium bisulfite complex]",
-    "vitamins [L-ascorbyl-2-polyphosphate (source of vitamin C), DL-alpha tocopherol acetate (source of vitamin E), thiamine mononitrate (vitamin B1), biotin, niacin supplement, D-calcium pantothenate, riboflavin supplement, pyridoxine hydrochloride (vitamin B6), vitamin B12 supplement, folic acid, vitamin D3 supplement]",
-    "vitamins [L-ascorbyl-2-polyphosphate (source of vitamin C), DL-alpha tocopherol acetate (source of vitamin E), thiamine mononitrate (vitamin B1), niacin supplement, biotin, D-calcium pantothenate, riboflavin supplement, pyridoxine hydrochloride (vitamin B6), vitamin B12 supplement, folic acid, vitamin D3 supplement]",
-    "vitamins [L-ascorbyl-2-polyphosphate (source of vitamin C), niacin supplement, DL-alpha tocopherol acetate (source of vitamin E), biotin, D-calcium pantothenate, thiamine mononitrate (vitamin B1), riboflavin supplement, pyridoxine hydrochloride (vitamin B6), vitamin B12 supplement, folic acid, vitamin D3 supplement]",
-    "vitamins [L-ascorbyl-2-polyphosphate (source of vitamin C), niacin supplement, DL-alpha tocopherol acetate (source of vitamin E), vitamin E supplement, D-calcium pantothenate, biotin, pyridoxine hydrochloride (vitamin B6), riboflavin supplement, thiamine mononitrate (vitamin B1), vitamin A acetate, folic acid, vitamin B12 supplement, vitamin D3 supplement]",
-    "vitamins [vitamin E supplement, ascorbic acid (vitamin C), vitamin A supplement, niacin, calcium pantothenate, inositol, riboflavin, pyridoxine hydrochloride, thiamine mononitrate, biotin, vitamin B 12 supplement, vitamin D 3 supplement, folic acid]",
-    "vitamins [vitamin E supplement, DL-alpha tocopherol acetate (source of vitamin E), biotin, D-calcium pantothenate, vitamin A acetate, niacin supplement, pyridoxine hydrochloride (vitamin B6), thiamine mononitrate (vitamin B1), vitamin B12 supplement, riboflavin supplement, vitamin D3 supplement, folic acid]",
-    "VITAMINS [Vitamin E Supplement, Niacin (Vitamin B-3), Thiamine Mononitrate (Vitamin B-1), Calcium Pantothenate (Vitamin B-5), Pyridoxine Hydrochloride (Vitamin B-6), Riboflavin Supplement (Vitamin B-2), Vitamin B-12 Supplement, Biotin (Vitamin B-7), Folic Acid (Vitamin B-9), Vitamin A Supplement, Vitamin D-3 Supplement]",
-    "VITAMINS [Vitamin E Supplement, Niacin (Vitamin B-3), Thiamine Mononitrate (Vitamin B-1), Calcium Pantothenate (Vitamin B-5), Pyridoxine Hydrochloride (Vitamin B-6), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Vitamin A Supplement, Folic Acid (Vitamin B-9), Vitamin D-3 Supplement, Biotin (Vitamin B-7)]",
-    "VITAMINS [Vitamin E Supplement, Niacin (Vitamin B-3), Thiamine Mononitrate (Vitamin B-1), Calcium Pantothenate (Vitamin B-5), Vitamin A Supplement, Riboflavin Supplement (Vitamin B-2), Vitamin B-12 Supplement, Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Menadione Sodium Bisulfite Complex (Vitamin K), Biotin (Vitamin B-7), Vitamin D-3 Supplement]",
-    "Vitamins [Vitamin E Supplement, Niacin (Vitamin B-3), Thiamine Mononitrate (Vitamin B-1), Calcium Pantothenate (Vitamin B-5), Vitamin A Supplement, Riboflavin Supplement (Vitamin B-2), Vitamin B-12 Supplement, Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Menadione Sodium Bisulphite Complex (Vitamin K), Biotin (Vitamin B-7), Vitamin D-3 Supplement]",
-    "VITAMINS [Vitamin E Supplement, Niacin (Vitamin B-3), Thiamine Mononitrate (Vitamin B-1),Calcium Pantothenate (Vitamin B-5), Vitamin A Supplement, Riboflavin Supplement (Vitamin B-2), Vitamin B-12 Supplement, Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Menadione Sodium Bisulfite Complex (Vitamin K), Biotin (Vitamin B-7), Vitamin D-3 Supplement]",
-    "Vitamins [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Pyridoxine Hydrochloride (Vitamin B-6), Vitamin B-12 Supplement, Thiamine Mononitrate (Vitamin B-1), Vitamin D-3 Supplement, Riboflavin Supplement (Vitamin B-2), Menadione Sodium Bisulphite Complex (Vitamin K), Folic Acid (Vitamin B-9), Biotin (Vitamin B-7)]",
-    "Vitamins [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Thiamine Mononitrate (Vitamin B-1), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Menadione Sodium Bisulfite Complex (Vitamin K), Biotin (Vitamin B-7), Vitamin D-3 Supplement]",
-    "Vitamins [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Thiamine Mononitrate (Vitamin B-1), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Menadione Sodium Bisulfite Complex (Vitamin K), Vitamin D-3 Supplement, Biotin (Vitamin B-7)]",
-    "Vitamins [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Thiamine Mononitrate (Vitamin B-1), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Menadione Sodium Bisulphite Complex (Vitamin K), Vitamin D-3 Supplement, Biotin (Vitamin B-7)]",
-    "VITAMINS [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Thiamine Mononitrate (Vitamin B-1), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Vitamin D-3 Supplement, Menadione Sodium Bisulfite Complex (Vitamin K), Biotin (Vitamin B-7)]",
-    "Vitamins [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Thiamine Mononitrate (Vitamin B-1), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Pyridoxine Hydrochloride (Vitamin B-6), Folic Acid (Vitamin B-9), Vitamin D-3 Supplement, Menadione Sodium Bisulphite Complex (Vitamin K), Biotin (Vitamin B-7)]",
-    "Vitamins [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Thiamine Mononitrate (Vitamin B-1), Vitamin B-12 Supplement, Riboflavin Supplement (Vitamin B-2), Pyridoxine Hydrochloride, Folic Acid (Vitamin B-9), Menadione Sodium Bisulfite Complex (Vitamin K), Biotin (Vitamin B-7), Vitamin D-3 Supplement]",
-    "Vitamins [Vitamin E Supplement, Niacin (Vitamin B-3), Vitamin A Supplement, Calcium Pantothenate (Vitamin B-5), Thiamine Mononitrate (Vitamin B-1), Vitamin B-12 Supplement, Thiamine Mononitrate, Riboflavin Supplement (Vitamin B-2), Pyridoxine Hydrochloride (Vitamin B-6), Folic A (Vitamin B-9), Menadione Sodium Bisulfite Complex (Vitamin K), Vitamin D-3 Supplement, Biotin (Vitamin B-7)]",
-    "Vitamins [Vitamin E Supplement, Niacin (Vitamin B3), Vitamin A Supplement, Thiamine Mononitrate (Vitamin B-1), Calcium Pantothenate (Vitamin B-5), Riboflavin Supplement (Vitamin B-2), Vitamin B-12 Supplement, Pyridoxine Hydrochloride (Vitamin B-6), Menadione Sodium Bisulfite Complex (Vitamin K), Folic Acid (Vitamin B-9), Biotin (Vitamin B-7), Vitamin D-3 Supplement]",
-    "VITAMINS [Vitamin E Supplement, Niacin, Thiamine Mononitrate, Calcium Pantothenate, Pyridoxine Hydrochloride, Vitamin B-12 Supplement, Riboflavin Supplement, Vitamin A Supplement, Folic Acid, Vitamin D-3 Supplement, Biotin]",
-    "Vitamins [Vitamin E Supplement, Thiamine Hydrochloride, Niacin, Vitamin A Supplement, Pyridoxine Hydrochloride, d-Calcium Pantothenate, Riboflavin Supplement, Folic Acid, Vitamin D3 Supplement, Biotin, Vitamin B12 Supplement]",
-    "Vitamins [Vitamin E Supplement, Thiamine Mononitrate (Vitamin B-1), Niacin (Vitamin B-3), Calcium Pantothenate (Vitamin B-5), Vitamin A Supplement, Menadione Sodium Bisulfite Complex (Vitamin K), Pyridoxine Hydrochloride (Vitamin B-6), Riboflavin Supplement (Vitamin B-2), Vitamin B-12 Supplement, Biotin (Vitamin B-7), Folic Acid (Vitamin B-9), Vitamin D-3 Supplement]",
-    "VITAMINS [Vitamin E Supplement, Thiamine Mononitrate (Vitamin B-1), Niacin Supplement (Vitamin B-3), Calcium Pantothenate (Vitamin B-5), Vitamin A Supplement (Vitamin B-2), Riboflavin Supplement (Vitamin B-2), Biotin (Vitamin B-7), Vitamin B-12 Supplement, Pyridoxine Hydrochloride (Vitamin B-6), Vitamin D-3 Supplement, Folic Acid (Vitamin B-9)]",
-    "VITAMINS [Vitamin E Supplement, Thiamine Mononitrate (Vitamin B-1), Niacin Supplement (Vitamin B-3), Calcium Pantothenate (Vitamin B-5), Vitamin A Supplement, Pyridoxine Hydrochloride (Vitamin B-6), Riboflavin Supplement (Vitamin B-2), Biotin (Vitamin B-7), Vitamin B-12 Supplement, Vitamin D-3 Supplement, Folic Acid (Vitamin B-9)]",
-    "VITAMINS [Vitamin E Supplement, Thiamine Mononitrate (Vitamin B-1), Niacin Supplement (Vitamin B-3), Calcium Pantothenate (Vitamin B-5), Vitamin A Supplement, Riboflavin Supplement (Vitamin B-2), Biotin (Vitamin B-7), Vitamin B-12 Supplement, Pyridoxine Hydrochloride (Vitamin B-6), Vitamin D-3 Supplement, Folic Acid (Vitamin B-9)]",
-    "VITAMINS [Vitamin E Supplement, Thiamine Mononitrate (Vitamin B-1), Niacin Supplement (Vitamin B-3), Calcium Pantothenate (Vitamin B-5), Vitamin A Supplement, Riboflavin Supplement (Vitamin B-2), Biotin (Vitamin B-7), Vitamin B-12 Supplement, Pyridoxine Hydrochloride (Vitamin B-6), Vitamin D-3 Supplement, Folic Acid(Vitamin B-9)]",
-    "VITAMINS [Vitamin E Supplement, Thiamine Mononitrate (Vitamin B-1), Niacin Supplement (Vitamin B-3),Calcium Pantothenate (Vitamin B-5), Vitamin A Supplement, Riboflavin Supplement (Vitamin B-2), Biotin (Vitamin B-7), Vitamin B-12 Supplement, Pyridoxine Hydrochloride (Vitamin B-6), Vitamin D-3 Supplement, Folic Acid (Vitamin B-9)]",
-    "vitamins [vitamin E supplement, thiamine mononitrate, niacin, pyridoxine hydrochloride, calcium pantothenate, riboflavin supplement, vitamin A supplement, folic acid, biotin, vitamin B12 supplement, vitamin D3 supplement]",
-    "vitamins [vitamin E supplement, vitamin A supplement, niacin, calcium pantothenate, riboflavin, pyridoxine hydrochloride, thiamine mononitrate, biotin, vitamin B 12 supplement, vitamin D 3 supplement, folic acid]",
-    "vitamins [vitamin E supplement, vitamin A supplement, niacin, calcium pantothenate, riboflavin, pyridoxine hydrochloride, thiamine mononitrate, biotin, vitamin B12 supplement, vitamin D3 supplement, folic acid]",
-    "VITAMINS [Vitamin E Supplement, Vitamin B-12 Supplement, Calcium Pantothenate (Vitamin B-5), Vitamin A Supplement, Thiamine Mononitrate (Vitamin B-1), Folic Acid (Vitamin B-9), Riboflavin Supplement (Vitamin B-2), Niacin (Vitamin B-3), Menadione Sodium Bisulfite Complex (Vitamin K), Pyridoxine Hydrochloride (Vitamin B-6), Biotin (Vitamin B-7), Vitamin D-3 Supplement]",
-    "VITAMINS [Vitamin E supplement, Vitamin B-12 supplement, Vitamin A supplement, calcium pantothenate (Vitamin B-5), thiamine mononitrate (Vitamin B-1), folic acid (Vitamin B-9), riboflavin supplement (Vitamin B-2), menadione sodium bisulfite complex (Vitamin K), niacin (Vitamin B-3), pyridoxine hydrochloride (Vitamin B-6), biotin (Vitamin B-7), Vitamin D-3 supplement]",
-    "VITAMINS [Vitamin E Supplement, Vitamin B-12 Supplement, Vitamin A Supplement, Niacin (Vitamin B-3), Thiamine Mononitrate (Vitamin B-1), Calcium Pantothenate (Vitamin B-5), Folic Acid (Vitamin B-9), Riboflavin Supplement (Vitamin B-2), Menadione Sodium Bisulfite Complex (Vitamin K), Pyridoxine Hydrochloride (Vitamin B-6), Biotin (Vitamin B-7), Vitamin D-3 Supplement]",
-    "VITAMINS [Vitamin E supplement, Vitamin B-12 supplement, Vitamin A supplement, niacin (Vitamin B-3), thiamine mononitrate (Vitamin B-1), calcium pantothenate (Vitamin B5), folic acid (Vitamin B-9), riboflavin supplement (Vitamin B-2), menadione sodium bisulfite complex (Vitamin K), pyridoxine hydrochloride (Vitamin B-6), biotin (Vitamin B-7), Vitamin D-3 supplement]",
-    "Vitamins [Vitamin ESupplement, Niacin (Vitamin B-3), Thiamine Mononitrate (Vitamin B-1), Calcium Pantothenate (Vitamin B-5), Pyridoxine Hydrochloride (Vitamin B-6), Riboflavin Supplement (Vitamin B-2), Vitamin B-12 Supplement, Biotin (Vitamin B-7), Folic Acid (Vitamin B-9), Vitamin A Supplement, Vitamin D-3 Supplement]",
-    "VITAMINS [VITAMINE SUPPLEMENT, THIAMINE HYDROCHLORIDE, NIACIN, VITAMIN A SUPPLEMENT, PYRIDOXINE HYDROCHLORIDE, D-CALCIUM PANTOTHENATE, RIBOFLAVIN SUPPLEMENT, FOLIC ACID, VITAMIN D3 SUPPLEMENT, BIOTIN, VITAMIN B12 SUPPLEMENT]",
     "vitamins and minerals",
-    "Vitamins(L-Ascorbyl-2-Polyphosphate (Source Of Vitamin C), Vitamin E Supplement, Thiamine Mononitrate, Niacin, D-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Vitamin D3 Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid)",
     "Vitamins: Vitamin E Supplement",
-    "vitamins[DL-alpha tocopherol acetate (source of vitamin E), biotin, D-calcium pantothenate, vitamin A acetate, niacin supplement, pyridoxine hydrochloride (vitamin B6), thiamine mononitrate (vitamin B1), vitamin B12 supplement, riboflavin supplement, vitamin D3 supplement, folic acid]",
-    "vitamins[DL-alpha tocopherol acetate (source of vitamin E), biotin, D-calcium pantothenate, vitamin A acetate, niacin supplement, pyridoxine hydrochloride (vitamin B6),thiamine mononitrate (vitamin B1), vitamin B12 supplement, riboflavin supplement, vitamin D3 supplement, folic acid]",
-    "vitamins[DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), biotin, D-calcium pantothenate, pyridoxine hydrochloride (vitamin B6), vitamin A acetate, riboflavin supplement, niacin supplement, folic acid, vitamin B12 supplement, thiamine mononitrate (vitamin B1), vitamin D3 supplement]",
-    "vitamins[DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), biotin, D-calcium pantothenate, vitamin A acetate, niacin supplement, folic acid, pyridoxine hydrochloride (vitamin B6), vitamin B12 supplement, thiamine mononitrate (vitamin B1), vitamin D3 supplement, riboflavin supplement]",
-    "vitamins[DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), biotin, D-calcium pantothenate, vitamin A acetate, pyridoxine hydrochloride (vitamin B6), folic acid, niacin supplement, vitamin B12 supplement, thiamine mononitrate (vitamin B1), vitamin D3 supplement, riboflavin supplement]",
-    "vitamins[DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), biotin, D-calcium pantothenate, vitamin A acetate, pyridoxine hydrochloride (vitamin B6), niacin supplement, folic acid, thiamine mononitrate (vitamin B1), vitamin B12 supplement, riboflavin supplement, vitamin D3 supplement]",
-    "vitamins[DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), biotin, D-calcium pantothenate, vitamin A acetate, riboflavin supplement, niacin supplement, vitamin B12 supplement, pyridoxine hydrochloride (vitamin B6), thiamine mononitrate (vitamin B1), vitamin D3 supplement, folic acid]",
-    "vitamins[DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), biotin, niacin supplement, D-calcium pantothenate, pyridoxine hydrochloride (vitamin B6), riboflavin supplement, vitamin A acetate, folic acid, thiamine mononitrate (vitamin B1), vitamin B12 supplement, vitamin D3 supplement, menadione sodium bisulfite complex]",
-    "vitamins[DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), niacin supplement, biotin, riboflavin supplement, D-calcium pantothenate, thiamine mononitrate (vitamin B1), pyridoxine hydrochloride (vitamin B6), vitamin B12 supplement, vitamin A acetate, vitamin D3 supplement, folic acid]",
-    "vitamins[DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), niacin supplement, D-calcium pantothenate, biotin, pyridoxine hydrochloride (vitamin B6), riboflavin supplement, thiamine mononitrate (vitamin B1), vitamin A acetate, folic acid, vitamin B12 supplement, vitamin D3 supplement]",
-    "vitamins[DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), niacin supplement, D-calcium pantothenate, biotin, pyridoxine hydrochloride (vitamin B6), riboflavin supplement, thiamine mononitrate (vitamin B1), vitamin A acetate, vitamin B12 supplement, folic acid, vitamin D3 supplement]",
-    "vitamins[DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), niacin supplement, vitamin B12 supplement, D-calcium pantothenate, biotin, pyridoxine hydrochloride (vitamin B6), riboflavin supplement, thiamine mononitrate (vitamin B1), vitamin A acetate, folic acid, vitamin D3 supplement]",
-    "vitamins[DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), thiamine mononitrate (vitamin B1), niacin supplement, biotin, D-calcium pantothenate, riboflavin supplement, pyridoxine hydrochloride (vitamin B6), vitamin B12 supplement, folic acid, vitamin D3 supplement, menadione sodium bisulfite complex]",
-    "vitamins[DL-alpha tocopherol acetate (source of vitamin E), L-ascorbyl-2-polyphosphate (source of vitamin C), thiamine mononitrate (vitamin B1), niacin supplement, biotin, D-calcium pantothenate, riboflavin supplement, pyridoxine hydrochloride (vitamin B6), vitamin B12 supplement, folic acid, vitamin D3 supplement]",
-    "vitamins[DL-alpha tocopherol acetate (source of vitamin E), niacin supplement, L-ascorbyl-2-polyphosphate (source of vitamin C), D-calcium pantothenate, biotin, pyridoxine hydrochloride (vitamin B6), riboflavin supplement, thiamine mononitrate (vitamin B1), vitamin A acetate, folic acid, vitamin B12 supplement, vitamin D3 supplement]",
-    "vitamins[DL-alpha tocopherol acetate (source of vitamin E), niacin supplement, L-ascorbyl-2-polyphosphate (source of vitamin C), D-calcium pantothenate, biotin, pyridoxine hydrochloride (vitamin B6), riboflavin supplement, thiamine mononitrate (vitamin B1), vitamin A acetate, vitamin B12 supplement, folic acid, vitamin D3 supplement]",
-    "vitamins[DL-alpha tocopherol acetate (source of vitamin E), niacin supplement, L-ascorbyl-2-polyphosphate (source of vitamin C), D-calcium pantothenate, pyridoxine hydrochloride (vitamin B6), thiamine mononitrate (vitamin B1), riboflavin supplement, folic acid, vitamin A acetate, biotin, vitamin D3 supplement, vitamin B12 supplement]",
-    "vitamins[DL-alpha tocopherol acetate (source of vitamin E), niacin supplement,L-ascorbyl-2-polyphosphate (source of vitamin C), D-calcium pantothenate, biotin, pyridoxine hydrochloride (vitamin B6),riboflavin supplement, thiamine mononitrate (vitamin B1), vitamin A acetate, vitamin B12 supplement, folic acid]",
-    "vitamins[DL-alpha tocopherol acetate (source of vitamin E), thiamine mononitrate (vitamin B1), biotin, niacin supplement, D-calcium pantothenate, riboflavin supplement, pyridoxine hydrochloride (vitamin B6), vitamin B12 supplement, folic acid, vitamin D3 supplement]",
-    "vitamins[DL–alpha tocopherol acetate (source of vitamin E), biotin, D–calcium pantothenate, vitamin A acetate, niacin supplement, pyridoxine hydrochloride (vitamin B6), thiamine mononitrate (vitamin B1), vitamin B12 supplement, riboflavin supplement, vitamin D3 supplement, folic acid]",
-    "vitamins[L-ascorbyl-2-polyphosphate (source of vitamin C), DL-alpha tocopherol acetate (source of vitamin E), biotin, D-calcium pantothenate, vitamin A acetate, riboflavin supplement, niacin supplement, vitamin B12 supplement, pyridoxine hydrochloride (vitamin B6), thiamine mononitrate (vitamin B1), vitamin D3 supplement, folic acid, menadione sodium bisulfite complex]",
-    "vitamins[L-ascorbyl-2-polyphosphate (source of vitamin C), DL-alpha tocopherol acetate (source of vitamin E), biotin, D-calcium pantothenate, vitamin A acetate, riboflavin supplement, niacin supplement, vitamin B12 supplement, pyridoxine hydrochloride (vitamin B6), thiamine mononitrate (vitamin B1), vitamin D3 supplement, folic acid]",
-    "vitamins[L-ascorbyl-2-polyphosphate (source of vitamin C), DL-alpha tocopherol acetate (source of vitamin E), niacin supplement, D-calcium pantothenate, biotin, thiamine mononitrate (vitamin B1), riboflavin supplement, pyridoxine hydrochloride (vitamin B6), vitamin B12 supplement, folic acid, vitamin D3 supplement]",
-    "vitamins[L-ascorbyl-2-polyphosphate (source of vitamin C), DL-alpha tocopherol acetate (source of vitamin E), niacin supplement, thiamine mononitrate (vitamin B1), D-calcium pantothenate, biotin, riboflavin supplement, pyridoxine hydrochloride (vitamin B6), vitamin B12 supplement, folic acid, vitamin D3 supplement]",
-    "vitamins[L-ascorbyl-2-polyphosphate (source of vitamin C), DL-alpha tocopherol acetate (source of vitamin E), thiamine mononitrate (vitamin B1), biotin, niacin supplement, D-calcium pantothenate, riboflavin supplement, pyridoxine hydrochloride (vitamin B6), vitamin B12 supplement, folic acid, vitamin D3 supplement]",
-    "vitamins[L-ascorbyl-2-polyphosphate (source of vitamin C), DL-alpha tocopherol acetate (source of vitamin E), thiamine mononitrate (vitamin B1), niacin supplement, biotin, D-calcium pantothenate, riboflavin supplement, pyridoxine hydrochloride (vitamin B6), vitamin B12 supplement, folic acid, vitamin D3 supplement]",
     "Water",
     "Water (Sufficient for Processing)",
     "Water for Processing",
     "Water sufficient for processing",
-    "Whole Eggs (source of Vitamin E)",
     "Xanthan",
     "Xanthan Gum",
     "xylose",
@@ -4960,17 +4535,38 @@
     "Zinc Sulphate",
     "Zinc-Methionine complex",
     "zingiber officinale (ginger root)",
-    "β-glucans"
+    "β-glucans",
+    "Bifidobacterium bifidium thermophilum fermentation product",
+    "dried Bifidobacterium animalis lactis fermentation product",
+    "Rosemary Oil"
   ],
   "ignore_patterns": [
     "^\\)",
-    "\\),\\s*\\w",
-    "^Item Number:",
-    "^Species:\\s+Dog",
-    "^Made in the USA$",
-    "^Real Meat First$",
+    "^\\),\\s*\\w",
     "Stella.*Solutions",
-    "9a Preservative\\)",
-    "^Amino Acid Complex$"
+    "^[Vv]itamins?\\s*[\\[\\(]",
+    "^[Mm]inerals?\\s*[\\[\\(]",
+    "^[Oo]live [Oo]il\\b",
+    "^[Ss]orbic [Aa]cid\\b",
+    "^[Mm]ixed [Tt]ocopherols\\b",
+    "^[Cc]itric [Aa]cid\\b",
+    "^[Pp]otassium [Ss]orbate\\b",
+    "^BHA\\b",
+    "^[Cc]alcium [Pp]ropionate\\b",
+    "^[Ss]odium [Nn]itrite\\b",
+    "^[Tt]hiamine [Mm]ononitrate\\b",
+    "^[Cc]alcium [Pp]antothenate\\b",
+    "^[Pp]yridoxine [Hh]ydrochloride\\b",
+    "^[Rr]iboflavin\\b",
+    "^[Nn]iacin\\b",
+    "^[Bb]iotin\\b",
+    "^[Ff]olic [Aa]cid\\b",
+    "^[Ll]-[Aa]scorbyl",
+    "^[Mm]enadione\\b",
+    "^Chicken Fat\\s*[\\(P]",
+    "^Pork Fat\\s*[\\(P]",
+    "^Canola Oil\\s*\\((?!source)",
+    "^trace minerals\\s*[\\[\\(]",
+    "^Spearmint Extract"
   ]
 }

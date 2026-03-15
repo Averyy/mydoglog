@@ -37,6 +37,16 @@ from .common import (
 
 logger = logging.getLogger(__name__)
 
+_INGREDIENT_OVERRIDES: dict[str, str] = {
+    "Dicacalcium Phosphate": "Dicalcium Phosphate",
+    "Dried Plain Bet Pulp": "Dried Plain Beet Pulp",
+    "L-Thiamine": "L-Threonine",
+    "Citric Acid(Preservative)": "Citric Acid (Preservative)",
+    "Tocopherols(Preservative)": "Tocopherols (Preservative)",
+    "Inulin. Vitamins": "Inulin, Vitamins",
+    "Rosemary Extract)": "Rosemary Extract",
+}
+
 WEBSITE_URL = "https://www.petsmart.ca"
 
 _SITEMAP_URLS = [f"{WEBSITE_URL}/sitemap_{i}.xml" for i in range(5)]
@@ -501,6 +511,7 @@ def scrape_authority(output_dir: Path) -> int:
     products = _deduplicate_products(products)
 
     write_brand_json(
-        "Authority", WEBSITE_URL, products, output_dir, slug="authority"
+        "Authority", WEBSITE_URL, products, output_dir,
+        slug="authority", ingredient_overrides=_INGREDIENT_OVERRIDES,
     )
     return len(products)

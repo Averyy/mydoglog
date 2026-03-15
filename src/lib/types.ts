@@ -94,6 +94,8 @@ export interface MedicationSummary {
   description: string | null
   commonSideEffects: string | null
   sideEffectsSources: string | null
+  suppressesItch: boolean
+  hasGiSideEffects: boolean
 }
 
 export interface LogFeedEntry {

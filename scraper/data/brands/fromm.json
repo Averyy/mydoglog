@@ -1,0 +1,2508 @@
+{
+  "brand": "Fromm",
+  "website_url": "https://frommfamily.com",
+  "scraped_at": "2026-03-14T14:33:14.893504+00:00",
+  "scraper_version": "0.1.0",
+  "stats": {
+    "product_count": 113,
+    "by_channel": {
+      "retail": 113
+    },
+    "by_type": {
+      "food": 86,
+      "treat": 22,
+      "supplement": 5
+    }
+  },
+  "products": [
+    {
+      "name": "Bonnihill Farms Beefi Bowls",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/bonnihill-farms/frozen/beefibowls/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Bonnihill Farms",
+      "ingredients_raw": "Beef, Carrots, Potatoes, Peas, Beef Liver, Parsley, Roasted Barley Flour, Fennel, Minerals [Dicalcium Phosphate, Zinc Sulfate, Magnesium Sulfate, Ferrous Sulfate, Zinc Proteinate, Calcium Carbonate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Calcium Iodate, Manganese Sulfate, Copper Proteinate, Manganese Proteinate], Celery, Sunflower Oil (preserved with mixed tocopherols), Salmon Oil (preserved with mixed tocopherols), Salt, Potassium Chloride, Vitamins [Vitamin E Supplement, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 11.0,
+        "crude_fat_min": 4.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 76.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1012 kcal/kg",
+      "images": [
+        "/products/fromm/fromm-food-bonnihill-farms-beefi-bowls.jpg"
+      ]
+    },
+    {
+      "name": "Bonnihill Farms Chicki Bowls",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/bonnihill-farms/frozen/chickibowls/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Bonnihill Farms",
+      "ingredients_raw": "Chicken, Carrots, Chicken Liver, Potatoes, Peas, Parsley, Fennel, Minerals [Dicalcium Phosphate, Zinc Sulfate, Magnesium Sulfate, Ferrous Sulfate, Zinc Proteinate, Calcium Carbonate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Calcium Iodate, Manganese Sulfate, Copper Proteinate, Manganese Proteinate], Celery, Sunflower Oil (preserved with mixed tocopherols), Salmon Oil (preserved with mixed tocopherols), Salt, Potassium Chloride, Vitamins [Vitamin E Supplement, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 11.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 76.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1058 kcal/kg",
+      "images": [
+        "/products/fromm/fromm-food-bonnihill-farms-chicki-bowls.jpg"
+      ]
+    },
+    {
+      "name": "Bonnihill Farms Turki Bowls",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/bonnihill-farms/frozen/turkibowls/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Bonnihill Farms",
+      "ingredients_raw": "Turkey, Carrots, Potatoes, Peas, Turkey Liver, Pumpkin, Cranberries, Parsley, Fennel, Minerals [Dicalcium Phosphate, Zinc Sulfate, Magnesium Sulfate, Ferrous Sulfate, Zinc Proteinate, Calcium Carbonate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Calcium Iodate, Manganese Sulfate, Copper Proteinate, Manganese Proteinate], Sunflower Oil (preserved with mixed tocopherols), Salmon Oil (preserved with mixed tocopherols), Salt, Potassium Chloride, Vitamins [Vitamin E Supplement, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 11.0,
+        "crude_fat_min": 7.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 76.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1239 kcal/kg",
+      "images": [
+        "/products/fromm/fromm-food-bonnihill-farms-turki-bowls.jpg"
+      ]
+    },
+    {
+      "name": "Classic Puppy",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/classic/dry/classic-puppy/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Classic",
+      "life_stage": "puppy",
+      "ingredients_raw": "Chicken, Chicken Meal, Pearled Barley, Oatmeal, Menhaden Fish Meal, Brown Rice, White Rice, Dried Plain Beet Pulp, Chicken Fat (preserved with mixed tocopherols), Dried Egg Product, Salmon Oil (preserved with mixed tocopherols), Flaxseed, Dried Yeast, Cheese, Chicken Liver, Salt, Vitamins [Potassium Chloride, Choline Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], DL-Methionine, Chicory Root Extract, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Chicken Cartilage, Yucca Schidigera Extract, Sodium Selenite, Sorbic Acid (Preservative), L-Tryptophan, Taurine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3690 kcal/kg, 413 kcal/cup",
+      "aafco_statement": "Fromm Family Classic Puppy Dog Food is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for gestation/lactation and growth, including growth of large size dogs (70 lb. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-classic-puppy.png"
+      ]
+    },
+    {
+      "name": "Classic Adult",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/classic/dry/classic-adult/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Classic",
+      "ingredients_raw": "Chicken, Chicken Meal, Brown Rice, Pearled Barley, Oatmeal, White Rice, Chicken Fat (preserved with mixed tocopherols), Dried Plain Beet Pulp, Menhaden Fish Meal, Dried Egg Product, Cheese, Flaxseed, Dried Yeast, Chicken Liver, Salt, Vitamins [Potassium Chloride, Choline Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Calcium Sulfate, Sorbic Acid (Preservative), Chicory Root Extract, Yucca Schidigera Extract, Sodium Selenite, DL-Methionine, L-Tryptophan, Taurine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "guaranteed_analysis": {
+        "crude_protein_min": 23.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3718 kcal/kg, 409 kcal/cup",
+      "aafco_statement": "Fromm Family Classic Adult Dog Food is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for growth and maintenance, including growth of large size dogs (70 lb. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-classic-adult.png"
+      ]
+    },
+    {
+      "name": "Classic Mature Adult",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/classic/dry/classic-mature-adult/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Classic",
+      "life_stage": "senior",
+      "ingredients_raw": "Chicken, Chicken Meal, Pearled Barley, Brown Rice, White Rice, Oatmeal, Dried Plain Beet Pulp, Chicken Fat (preserved with mixed tocopherols), Cheese, Chicken Liver, Menhaden Fish Meal, Dried Egg Product, Flaxseed, Dried Yeast, Salt, Vitamins [Potassium Chloride, Choline Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Calcium Sulfate, Monocalcium Phosphate, Chicory Root Extract, Yucca Schidigera Extract, Sodium Selenite, DL-Methionine, Sorbic Acid (Preservative), L-Tryptophan, Taurine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "guaranteed_analysis": {
+        "crude_protein_min": 21.0,
+        "crude_fat_min": 11.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3563 kcal/kg, 363 kcal/cup",
+      "aafco_statement": "Fromm Family Classic Mature Adult Dog Food is formulated to meet the nutritional levels established by AAFCO dog nutrient profiles for maintenance.",
+      "images": [
+        "/products/fromm/fromm-food-classic-mature-adult.png"
+      ]
+    },
+    {
+      "name": "Classic Adult Large & Giant Breed",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/classic/dry/classic-adult-large-and-giant-breed/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Classic",
+      "ingredients_raw": "Chicken, Chicken Meal, Pearled Barley, Oatmeal, White Rice, Brown Rice, Dried Plain Beet Pulp, Dried Yeast, Chicken Fat (preserved with mixed tocopherols), Menhaden Fish Meal, Salmon Oil (preserved with mixed tocopherols), Cheese, Dried Egg Product, Flaxseed, Chicken Liver, Salt, Monosodium Phosphate, Chicken Cartilage, Vitamins [Choline Chloride, Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Calcium Sulfate, Chicory Root Extract, Glucosamine Hydrochloride, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Chondroitin Sulfate, Yucca Schidigera Extract, Sodium Selenite, Sorbic Acid (Preservative), Taurine, L-Tryptophan, L-Carnitine, DL-Methionine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.0,
+        "calcium_max": 1.5,
+        "phosphorus_min": 0.8,
+        "phosphorus_max": 1.2
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3547 kcal/kg, 380 kcal/cup",
+      "aafco_statement": "Fromm Family Classic Adult Large & Giant Breed Dog Food is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for maintenance.",
+      "images": [
+        "/products/fromm/fromm-food-classic-adult-large-giant-breed.png"
+      ]
+    },
+    {
+      "name": "Classic Adult Whitefish & Rice Recipe",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/classic/dry/classic-adult-whitefish-and-rice-recipe/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Classic",
+      "ingredients_raw": "Whitefish, Menhaden Fish Meal, White Rice, Pearled Barley, Oatmeal, Brown Rice, Dried Plain Beet Pulp, Pork Fat (preserved with mixed tocopherols), Dried Yeast, Pork Liver, Salmon Oil (preserved with mixed tocopherols), Herring Meal, Dried Egg Product, Flaxseed, Calcium Sulfate, Monocalcium Phosphate, Vitamins [Choline Chloride, Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Salt, Chicory Root Extract, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Yucca Schidigera Extract, Sodium Selenite, Sorbic Acid (Preservative), DL-Methionine, L-Tryptophan, Taurine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "guaranteed_analysis": {
+        "crude_protein_min": 23.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3521 kcal/kg, 377 kcal/cup",
+      "aafco_statement": "Fromm Family Classic Adult Whitefish & Rice Recipe Dog Food is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for maintenance.",
+      "images": [
+        "/products/fromm/fromm-food-classic-adult-whitefish-rice-recipe.png"
+      ]
+    },
+    {
+      "name": "Adult Chicken & Rice Pâté",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/classic/can/adult-chicken-and-rice-pate/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Classic",
+      "ingredients_raw": "Chicken, Chicken Broth, White Rice, Chicken Liver, Potatoes, Dried Plain Beet Pulp, Pearled Barley, Dried Yeast, Salmon Oil (preserved with mixed tocopherols), Minerals [Dicalcium Phosphate, Zinc Sulfate, Magnesium Sulfate, Ferrous Sulfate, Zinc Proteinate, Calcium Carbonate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Calcium Iodate, Manganese Sulfate, Copper Proteinate, Manganese Proteinate], Dried Egg Product, Potassium Chloride, Salt, DL-Methionine, Agar-Agar, Vitamins [Choline Chloride, Vitamin E Supplement, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 6.5,
+        "crude_fat_min": 4.0,
+        "crude_fiber_max": 1.2,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "988 kcal/kg, 350 kcal/can",
+      "aafco_statement": "Fromm Adult Chicken & Rice Pâté Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for growth and maintenance, including growth of large size dogs (70 lb. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-adult-chicken-rice-p-t.png"
+      ]
+    },
+    {
+      "name": "Adult Turkey & Rice Pâté",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/classic/can/adult-turkey-and-rice-pate/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Classic",
+      "ingredients_raw": "Turkey, Turkey Broth, White Rice, Turkey Liver, Potatoes, Dried Plain Beet Pulp, Pearled Barley, Dried Yeast, Salmon Oil (preserved with mixed tocopherols), Minerals [Dicalcium Phosphate, Zinc Sulfate, Magnesium Sulfate, Ferrous Sulfate, Zinc Proteinate, Calcium Carbonate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Calcium Iodate, Manganese Sulfate, Copper Proteinate, Manganese Proteinate], Dried Egg Product, Potassium Chloride, Salt, DL-Methionine, Agar-Agar, Vitamins [Choline Chloride, Vitamin E Supplement, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 6.5,
+        "crude_fat_min": 4.0,
+        "crude_fiber_max": 1.2,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1073 kcal/kg, 380 kcal/can",
+      "aafco_statement": "Fromm Adult Turkey & Rice Pâté Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for growth and maintenance, including growth of large size dogs (70 lb. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-adult-turkey-rice-p-t.png"
+      ]
+    },
+    {
+      "name": "Puppy Chicken & Salmon Pâté",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/classic/can/puppy-chicken-and-salmon-pate/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Classic",
+      "life_stage": "puppy",
+      "ingredients_raw": "Chicken, Chicken Broth, Salmon, Pork Liver, White Rice, Dried Plain Beet Pulp, Pearled Barley, Potatoes, Dried Yeast, Salmon Oil (preserved with mixed tocopherols), Minerals [Dicalcium Phosphate, Zinc Sulfate, Magnesium Sulfate, Ferrous Sulfate, Zinc Proteinate, Calcium Carbonate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Calcium Iodate, Manganese Sulfate, Copper Proteinate, Manganese Proteinate], Dried Egg Product, Potassium Chloride, Salt, Chicken Cartilage, Agar-Agar, DL-Methionine, Vitamins [Vitamin E Supplement, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid], Taurine, Choline Chloride",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 1.2,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1063 kcal/kg, 377 kcal/can",
+      "aafco_statement": "Fromm Puppy Chicken & Salmon Pâté Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for gestation/lactation and growth, including growth of large size dogs (70 lb. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-puppy-chicken-salmon-p-t.png"
+      ]
+    },
+    {
+      "name": "Bacon Blasters Flavor",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/crunchy-os/treats/bacon-blasters-flavor/",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Crunchy Os",
+      "ingredients_raw": "Chickpeas, Peas, Bacon, Potatoes, Pea Starch, Sunflower Oil (preserved with mixed tocopherols), Cheese, Dried Egg Product, Apples, Pork Fat (preserved with mixed tocopherols), Roasted Barley Flour, Tapioca, Natural Flavor, Natural Hickory Smoke Flavor, Mixed Tocopherols (Preservative)",
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 8.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "2 Calories per treat (approximate)",
+      "images": [
+        "/products/fromm/fromm-treat-bacon-blasters-flavor.png"
+      ]
+    },
+    {
+      "name": "Banana Kablammas Flavor",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/crunchy-os/treats/banana-kablammas-flavor/",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Crunchy Os",
+      "ingredients_raw": "Whole Grain Sorghum, Banana, Oatmeal, Pearled Barley, Dried Egg Product, Dried Whey, Brewers Dried Yeast, Sunflower Oil (preserved with mixed tocopherols), Coconut Oil (preserved with mixed tocopherols), Dried Cane Molasses, Natural Flavor, Tapioca, Calcium Carbonate, Cinnamon",
+      "guaranteed_analysis": {
+        "crude_protein_min": 14.0,
+        "crude_fat_min": 9.0,
+        "crude_fiber_max": 6.0,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "2 Calories per treat (approximate)",
+      "images": [
+        "/products/fromm/fromm-treat-banana-kablammas-flavor.png"
+      ]
+    },
+    {
+      "name": "Blueberry Blasts Flavor",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/crunchy-os/treats/blueberry-blasts-flavor/",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Crunchy Os",
+      "ingredients_raw": "Chickpeas, Peas, Chicken, Potatoes, Pea Starch, Chicken Liver, Blueberries, Sunflower Oil (preserved with mixed tocopherols), Dried Egg Product, Tapioca, Natural Flavor, Coconut Oil (preserved with mixed tocopherols), Calcium Sulfate",
+      "guaranteed_analysis": {
+        "crude_protein_min": 22.0,
+        "crude_fat_min": 6.0,
+        "crude_fiber_max": 6.0,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "2 Calories per treat (approximate)",
+      "images": [
+        "/products/fromm/fromm-treat-blueberry-blasts-flavor.png"
+      ]
+    },
+    {
+      "name": "Peanut Butter Jammers Flavor",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/crunchy-os/treats/peanut-butter-jammers-flavor/",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Crunchy Os",
+      "ingredients_raw": "Whole Grain Sorghum, Oatmeal, Pearled Barley, Peanut Butter, Dried Egg Product, Dried Whey, Strawberries, Peanut Flour, Brewers Dried Yeast, Natural Flavor, Tapioca, Blueberries, Peanut Oil (preserved with mixed tocopherols), Calcium Carbonate",
+      "guaranteed_analysis": {
+        "crude_protein_min": 17.0,
+        "crude_fat_min": 10.0,
+        "crude_fiber_max": 6.0,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "2 Calories per treat (approximate)",
+      "images": [
+        "/products/fromm/fromm-treat-peanut-butter-jammers-flavor.png"
+      ]
+    },
+    {
+      "name": "Pot Roast Punchers Flavor",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/crunchy-os/treats/pot-roast-punchers-flavor/",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Crunchy Os",
+      "ingredients_raw": "Whole Grain Sorghum, Beef, Pork Liver, Oatmeal, Pearled Barley, Potatoes, Sweet Potatoes, Dried Egg Product, Sunflower Oil (preserved with mixed tocopherols), Carrots, Celery, Natural Flavor, Pork Fat (preserved with mixed tocopherols), Tapioca, Calcium Carbonate",
+      "guaranteed_analysis": {
+        "crude_protein_min": 18.0,
+        "crude_fat_min": 8.0,
+        "crude_fiber_max": 6.0,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "2 Calories per treat (approximate)",
+      "images": [
+        "/products/fromm/fromm-treat-pot-roast-punchers-flavor.png"
+      ]
+    },
+    {
+      "name": "Pumpkin Kran POW Flavor",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/crunchy-os/treats/pumpkin-kran-pow-flavor/",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Crunchy Os",
+      "ingredients_raw": "Chickpeas, Peas, Turkey, Pumpkin, Potatoes, Pea Starch, Cranberries, Sunflower Oil (preserved with mixed tocopherols), Dried Egg Product, Natural Flavor, Tapioca, Coconut Oil (preserved with mixed tocopherols), Calcium Sulfate",
+      "guaranteed_analysis": {
+        "crude_protein_min": 23.0,
+        "crude_fat_min": 7.0,
+        "crude_fiber_max": 6.0,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "2 Calories per treat (approximate)",
+      "images": [
+        "/products/fromm/fromm-treat-pumpkin-kran-pow-flavor.png"
+      ]
+    },
+    {
+      "name": "Slammon Smoked Salmon Flavor",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/crunchy-os/treats/slammon-smoked-salmon-flavor/",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Crunchy Os",
+      "ingredients_raw": "Whole Grain Sorghum, Salmon, Oatmeal, Pearled Barley, Dried Egg Product, Dried Whey, Sweet Potatoes, Brewers Dried Yeast, Sunflower Oil (preserved with mixed tocopherols), Natural Hickory Smoke Flavor, Coconut Oil (preserved with mixed tocopherols), Tapioca, Calcium Carbonate",
+      "guaranteed_analysis": {
+        "crude_protein_min": 20.0,
+        "crude_fat_min": 9.0,
+        "crude_fiber_max": 6.0,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "2 Calories per treat (approximate)",
+      "images": [
+        "/products/fromm/fromm-treat-slammon-smoked-salmon-flavor.png"
+      ]
+    },
+    {
+      "name": "Smokin' Cheese Plosions Flavor",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/crunchy-os/treats/smokin-cheeseplosions-flavor/",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Crunchy Os",
+      "ingredients_raw": "Chickpeas, Peas, Pork, Pork Liver, Potatoes, Pea Starch, Sunflower Oil (preserved with mixed tocopherols), Cheese, Dried Egg Product, Tapioca, Natural Hickory Smoke Flavor, Coconut Oil (preserved with mixed tocopherols), Calcium Sulfate",
+      "guaranteed_analysis": {
+        "crude_protein_min": 23.0,
+        "crude_fat_min": 7.0,
+        "crude_fiber_max": 6.0,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "2 Calories per treat (approximate)",
+      "images": [
+        "/products/fromm/fromm-treat-smokin-cheese-plosions-flavor.png"
+      ]
+    },
+    {
+      "name": "Betty's Biscuits & Gravy",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/diner/can/breakfast-bettys-biscuits-and-gravy/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Diner",
+      "ingredients_raw": "Pork, Pork Broth, Beef Broth, Eggs, Potatoes, Tapioca Starch, Dried Whey, White Rice, Brown Rice, Xanthan Gum, Salmon Oil (preserved with mixed tocopherols), Fennel, Minerals [Dicalcium Phosphate, Calcium Carbonate, Zinc Sulfate, Magnesium Sulfate, Ferrous Sulfate, Zinc Proteinate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Calcium Iodate, Manganese Sulfate, Copper Proteinate, Manganese Proteinate], Salt, Potassium Chloride, Gelatin, Natural Hickory Smoke Flavor, Vitamins [Vitamin E Supplement, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid], Brewers Dried Yeast, Choline Chloride",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "858 kcal/kg, 304 kcal/can",
+      "aafco_statement": "Fromm Diner Breakfast Betty's Biscuits & Gravy Pork & Eggs Recipe in Gravy Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages, including growth of large size dogs (70 lbs. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-betty-s-biscuits-gravy.png"
+      ]
+    },
+    {
+      "name": "Maddie's Morning Hash",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/diner/can/breakfast-maddies-morning-hash/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Diner",
+      "ingredients_raw": "Beef, Sweet Potatoes, Potatoes, Beef Broth, Pork Broth, Eggs, Pork, Tapioca Starch, Peas, Salt, Salmon Oil (preserved with mixed tocopherols), Parsley, Fennel, Roasted Barley Flour, Minerals [Dicalcium Phosphate, Zinc Sulfate, Magnesium Sulfate, Ferrous Sulfate, Zinc Proteinate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Calcium Iodate, Manganese Sulfate, Copper Proteinate, Manganese Proteinate], Vitamins [Potassium Chloride, Vitamin E Supplement, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.5,
+        "crude_fat_min": 4.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 76.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1021 kcal/kg, 362 kcal/can",
+      "aafco_statement": "Fromm Diner Breakfast Maddie's Morning Hash Beef & Sweet Potato Recipe Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages, including growth of large size dogs (70 lbs. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-maddie-s-morning-hash.png"
+      ]
+    },
+    {
+      "name": "Sam's Steak & Eggs",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/diner/can/breakfast-sams-steak-and-eggs/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Diner",
+      "ingredients_raw": "Beef, Beef Broth, Bone Broth, Potatoes, Eggs, Tapioca Starch, Salmon Oil (preserved with mixed tocopherols), Minerals [Dicalcium Phosphate, Zinc Sulfate, Magnesium Sulfate, Ferrous Sulfate, Zinc Proteinate, Calcium Carbonate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Calcium Iodate, Manganese Sulfate, Copper Proteinate, Manganese Proteinate], Xanthan Gum, Roasted Barley Flour, Natural Hickory Smoke Flavor, Vitamins [Vitamin E Supplement, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 1.5,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 85.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "588 kcal/kg, 208 kcal/can",
+      "aafco_statement": "Fromm Diner Breakfast Sam's Steak & Eggs Beef & Eggs in Gravy Recipe Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages, including growth of large size dogs (70 lbs. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-sam-s-steak-eggs.png"
+      ]
+    },
+    {
+      "name": "Charlie's Chicken Pot Pie Pâté",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/diner/can/classics-charlies-chicken-pot-pie-pate/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Diner",
+      "ingredients_raw": "Chicken, Chicken Broth, Potatoes, Pearled Barley, Carrots, Celery, Peas, Parsley, Minerals [Dicalcium Phosphate, Zinc Sulfate, Magnesium Sulfate, Ferrous Sulfate, Zinc Proteinate, Calcium Carbonate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Calcium Iodate, Manganese Sulfate, Copper Proteinate, Manganese Proteinate], Xanthan Gum, Turmeric, Locust Bean Gum, Salt, Vitamins [Potassium Chloride, Vitamin E Supplement, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.0,
+        "crude_fat_min": 4.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "971 kcal/kg, 344 kcal/can",
+      "aafco_statement": "Fromm Diner Classics Charlie's Chicken Pot Pie Pâté Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for all life stages, including growth of large size dogs (70 lbs. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-charlie-s-chicken-pot-pie-p-t.png"
+      ]
+    },
+    {
+      "name": "Milo's Meatloaf Pâté",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/diner/can/classics-milos-meatloaf-pate/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Diner",
+      "ingredients_raw": "Pork, Pork Broth, Beef Broth, Beef, Pearled Barley, Potatoes, Carrots, Peas, Parsley, Tomato Paste, Dried Egg Product, Minerals [Dicalcium Phosphate, Zinc Sulfate, Magnesium Sulfate, Ferrous Sulfate, Zinc Proteinate, Calcium Carbonate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Calcium Iodate, Manganese Sulfate, Copper Proteinate, Magnesium Proteinate], Fennel, Xanthan Gum, Turmeric, Locust Bean Gum, Salt, Vitamins [Potassium Chloride, Vitamin E Supplement, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.5,
+        "crude_fat_min": 5.5,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1055 kcal/kg, 374 kcal/can",
+      "aafco_statement": "Fromm Diner Classics Milo's Meatloaf Pâté Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for all life stages, including growth of large size dogs (70 lbs. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-milo-s-meatloaf-p-t.png"
+      ]
+    },
+    {
+      "name": "Paula's Chicken & Pumpkin Pâté",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/diner/can/classics-paulas-chicken-and-pumpkin-pate/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Diner",
+      "ingredients_raw": "Chicken, Chicken Broth, Pumpkin, Chicken Liver, White Rice, Miscanthus Grass, Flaxseed, Chicory Root Extract, Sunflower Oil (preserved with mixed tocopherols), Salmon Oil (preserved with mixed tocopherols), Minerals [Dicalcium Phosphate, Zinc Sulfate, Magnesium Sulfate, Ferrous Sulfate, Zinc Proteinate, Calcium Carbonate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Calcium Iodate, Manganese Sulfate, Copper Proteinate, Manganese Proteinate], Xanthan Gum, Potassium Chloride, Salt, Locust Bean Gum, Vitamins [Vitamin E Supplement, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.0,
+        "crude_fat_min": 4.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "988 kcal/kg, 350 kcal/can",
+      "aafco_statement": "Fromm Diner Classics Paula's Chicken & Pumpkin Pâté Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for all life stages, including growth of large size dogs (70 lbs. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-paula-s-chicken-pumpkin-p-t.png"
+      ]
+    },
+    {
+      "name": "Bella's Beef Barkundy Stew",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/diner/can/favorites-bellas-beef-barkundy-stew/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Diner",
+      "ingredients_raw": "Beef, Beef Broth, Pork Broth, Potatoes, Beef Liver, Carrots, Tomato Paste, Dried Egg Product, Tapioca Starch, Pork, Peas, Parsley, Barley Flour, Salt, Salmon Oil (preserved with mixed tocopherols), Xanthan Gum, Ginger, Minerals [Dicalcium Phosphate, Zinc Sulfate, Magnesium Sulfate, Ferrous Sulfate, Zinc Proteinate, Calcium Carbonate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Calcium Iodate, Manganese Sulfate, Copper Proteinate, Manganese Proteinate], Potassium Chloride, Turmeric, Vitamins [Vitamin E Supplement, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "735 kcal/kg, 260 kcal/can",
+      "aafco_statement": "Fromm Diner Favorites Bella's Beef Barkundy Stew Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for all life stages, including growth of large size dogs (70 lbs. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-bella-s-beef-barkundy-stew.png"
+      ]
+    },
+    {
+      "name": "Bud's Beef & Broccoli Stew",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/diner/can/favorites-buds-beef-broccoli-stew/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Diner",
+      "ingredients_raw": "Beef, Beef Broth, Pork Broth, Broccoli, Beef Liver, White Rice, Dried Egg Product, Peas, Pork, Sunflower Oil (preserved with mixed tocopherols), Ginger, Xanthan Gum, Salt, Minerals [Dicalcium Phosphate, Zinc Sulfate, Magnesium Sulfate, Ferrous Sulfate, Zinc Proteinate, Calcium Carbonate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Calcium Iodate, Manganese Sulfate, Copper Proteinate, Manganese Proteinate], Potassium Chloride, Turmeric, Vitamins [Vitamin E Supplement, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "765 kcal/kg, 271 kcal/can",
+      "aafco_statement": "Fromm Diner Favorites Bud's Beef & Broccoli Stew Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for all life stages, including growth of large size dogs (70 lbs. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-bud-s-beef-broccoli-stew.png"
+      ]
+    },
+    {
+      "name": "Louie's Chicken & Pasta Stew",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/diner/can/favorites-louies-chicken-pasta-stew/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Diner",
+      "ingredients_raw": "Chicken, Chicken Broth, Turkey Broth, Chickpea Pasta, Chickpea Flour, Dried Egg Product, Chicken Liver, Pea Protein, Green Beans, Peas, Sunflower Oil (preserved with mixed tocopherols), Xanthan Gum, Salt, Minerals [Dicalcium Phosphate, Zinc Sulfate, Magnesium Sulfate, Ferrous Sulfate, Zinc Proteinate, Calcium Carbonate, Copper Sulfate, Sodium Selenite, Calcium Iodate, Manganese Sulfate, Copper Proteinate, Manganese Proteinate], Natural Flavor, Potassium Chloride, Turmeric, Parsley, Vitamins [Vitamin E Supplement, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "803 kcal/kg, 285 kcal/can",
+      "aafco_statement": "Fromm Diner Favorites Louie's Chicken & Pasta Stew Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for all life stages, including growth of large size dogs (70 lbs. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-louie-s-chicken-pasta-stew.png"
+      ]
+    },
+    {
+      "name": "Chicken Canine Bleu Entrée in Gravy",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/diner/can/specials-chicken-canine-bleu/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Diner",
+      "ingredients_raw": "Chicken, Chicken Broth, Pork Broth, Potatoes, Carrots, Pearled Barley, Ham, Peas, Cheese, Sunflower Oil (preserved with mixed tocopherols), Minerals [Dicalcium Phosphate, Zinc Sulfate, Magnesium Sulfate, Ferrous Sulfate, Zinc Proteinate, Calcium Carbonate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Calcium Iodate, Manganese Sulfate, Copper Proteinate, Manganese Proteinate], Xanthan Gum, Natural Hickory Smoke Flavor, Salt, Vitamins [Potassium Chloride, Vitamin E Supplement, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid, Choline Chloride]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 1.5,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 84.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "639 kcal/kg, 226 kcal/can",
+      "aafco_statement": "Fromm Diner Specials Chicken Canine Bleu Entrée in Gravy Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for all life stages, including growth of large size dogs (70 lbs. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-chicken-canine-bleu-entr-e-in-gravy.png"
+      ]
+    },
+    {
+      "name": "Slow-Cooked Pulled Pork Entrée in Gravy",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/diner/can/specials-slow-cooked-pulled-pork/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Diner",
+      "ingredients_raw": "Pork, Pork Broth, Potatoes, Green Beans, Apples, Tomato Paste, Sunflower Oil (preserved with mixed tocopherols), Minerals [Dicalcium Phosphate, Zinc Sulfate, Magnesium Sulfate, Ferrous Sulfate, Zinc Proteinate, Calcium Carbonate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Calcium Iodate, Manganese Sulfate, Copper Proteinate, Manganese Proteinate], Xanthan Gum, Natural Hickory Smoke Flavor, Vitamins [Vitamin E Supplement, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid, Choline Chloride]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 84.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "707 kcal/kg, 250 kcal/can",
+      "aafco_statement": "Fromm Diner Specials Slow-Cooked Pulled Pork Entrée in Gravy Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for all life stages, including growth of large size dogs (70 lbs. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-slow-cooked-pulled-pork-entr-e-in-gravy.png"
+      ]
+    },
+    {
+      "name": "Beef Frittata Veg Recipe",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/four-star/dry/beef-frittata-veg-recipe/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Four-Star",
+      "ingredients_raw": "Beef, Dried Egg Product, Beef Broth, Lentils, Peas, Pork Meat & Bone Meal, Pork, Potatoes, Sweet Potatoes, Dried Tomato Pomace, Pork Fat (preserved with mixed tocopherols), Beef Liver, Pork Liver, Chickpeas, Salmon Oil (preserved with mixed tocopherols), Pea Protein, Pea Flour, Cheese, Flaxseed, Celery, Carrots, Apples, Broccoli, Natural Flavor, Vitamins [Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate], Chicory Root Extract, Salt, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Cranberries, Yucca Schidigera Extract, Sorbic Acid (Preservative), Blueberries, Sodium Selenite, Taurine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 18.0,
+        "crude_fiber_max": 6.5,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3765 kcal/kg, 399 kcal/cup",
+      "aafco_statement": "Fromm Four-Star Nutritionals Beef Frittata Veg Recipe Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for all life stages, including growth of large size dogs (70 lb. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-beef-frittata-veg-recipe.png"
+      ]
+    },
+    {
+      "name": "Chicken À La Veg Recipe",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/four-star/dry/chicken-a-la-veg-recipe/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Four-Star",
+      "ingredients_raw": "Chicken, Chicken Broth, Chicken Meal, Oatmeal, Pearled Barley, Sweet Potatoes, Brown Rice, White Rice, Menhaden Fish Meal, Whole Oats, Dried Egg Product, Dried Tomato Pomace, Chicken Fat (preserved with mixed tocopherols), Salmon Oil (preserved with mixed tocopherols), Whole Barley, Millet, Cheese, Flaxseed, Potatoes, Dried Yeast, Chicken Liver, Carrots, Apples, Broccoli, Celery, Salt, Monosodium Phosphate, Vitamins [Choline Chloride, Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Chicory Root Extract, Chicken Cartilage, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Calcium Carbonate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Sorbic Acid (Preservative), Cranberries, Yucca Schidigera Extract, Blueberries, Sodium Selenite, Taurine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 5.5,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3706 kcal/kg, 389 kcal/cup",
+      "aafco_statement": "Fromm Four-Star Nutritionals Chicken À La Veg Recipe Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for all life stages, including growth of large size dogs (70 lb. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-chicken-la-veg-recipe.png"
+      ]
+    },
+    {
+      "name": "Chicken au Frommage Recipe",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/four-star/dry/chicken-au-frommage-recipe/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Four-Star",
+      "ingredients_raw": "Chicken, Chicken Meal, Chickpeas, Lentils, Peas, Potatoes, Sweet Potatoes, Dried Egg Product, Dried Tomato Pomace, Chicken Fat (preserved with mixed tocopherols), Cheese, Flaxseed, Salmon Oil (preserved with mixed tocopherols), Chicken Liver, Pears, Apples, Broccoli, Potassium Chloride, Salt, Calcium Sulfate, Monocalcium Phosphate, Vitamins [Choline Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Olive Oil (preserved with mixed tocopherols), Chicory Root Extract, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Cranberries, Yucca Schidigera Extract, Sorbic Acid (Preservative), Taurine, Blueberries, Sodium Selenite, Parsley, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 6.5,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3702 kcal/kg, 392 kcal/cup",
+      "aafco_statement": "Fromm Four-Star Nutritionals Chicken Au Frommage Recipe Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for all life stages, including growth of large size dogs (70 lbs. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-chicken-au-frommage-recipe.png"
+      ]
+    },
+    {
+      "name": "Duck À La Veg Recipe",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/four-star/dry/duck-a-la-veg-recipe/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Four-Star",
+      "ingredients_raw": "Duck, Duck Meal, Chicken, Oatmeal, Brown Rice, Pearled Barley, White Rice, Chicken Meal, Sweet Potatoes, Chicken Fat (preserved with mixed tocopherols), Dried Tomato Pomace, Dried Egg Product, Millet, Whole Oats, Whole Barley, Salmon Oil (preserved with mixed tocopherols), Dried Yeast, Cheese, Flaxseed, Chicken Liver, Carrots, Apples, Broccoli, Cauliflower, Salt, Monosodium Phosphate, Vitamins [Choline Chloride, Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Chicory Root Extract, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Cranberries, Sorbic Acid (Preservative), Yucca Schidigera Extract, Blueberries, Sodium Selenite, Taurine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 5.5,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3652 kcal/kg, 387 kcal/cup",
+      "aafco_statement": "Fromm Four-Star Nutritionals Duck À La Veg Recipe Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for all life stages, including growth of large size dogs (70 lb. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-duck-la-veg-recipe.png"
+      ]
+    },
+    {
+      "name": "Game Bird Recipe",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/four-star/dry/game-bird-recipe/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Four-Star",
+      "ingredients_raw": "Turkey, Duck Meal, Turkey Broth, Lentils, Chickpeas, Peas, Potatoes, Turkey Liver, Chicken Meal, Pea Flour, Dried Tomato Pomace, Chicken Fat (preserved with mixed tocopherols), Dried Egg Product, Pea Protein, Salmon Oil (preserved with mixed tocopherols), Goose, Chicken, Sweet Potatoes, Flaxseed, Cheese, Pheasant, Quail, Duck, Pumpkin, Carrots, Apples, Broccoli, Natural Flavor, Potassium Chloride, Salt, Monosodium Phosphate, Chicory Root Extract, Vitamins [Choline Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Cranberries, Yucca Schidigera Extract, Sorbic Acid (Preservative), Blueberries, Sodium Selenite, Taurine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "guaranteed_analysis": {
+        "crude_protein_min": 29.0,
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 6.5,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3709 kcal/kg, 393 kcal/cup",
+      "aafco_statement": "Fromm Four-Star Nutritionals Game Bird Recipe Dog Food is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for all life stages, including growth of large size dogs (70 lb. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-game-bird-recipe.png"
+      ]
+    },
+    {
+      "name": "Hasen Duckenpfeffer",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/four-star/dry/hasen-duckenpfeffer/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Four-Star",
+      "ingredients_raw": "Rabbit, Duck, Pork, Pork Meat & Bone Meal, Chickpeas, Lentils, Peas, Potatoes, Pea Flour, Pork Liver, Pork Fat (preserved with mixed tocopherols), Dried Egg Product, Dried Tomato Pomace, Duck Meal, Pea Protein, Salmon Oil (preserved with mixed tocopherols), Rabbit Meal, Cheese, Flaxseed, Carrots, Apples, Broccoli, Alfalfa Sprouts, Natural Flavor, Vitamins [Potassium Chloride, Choline Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Salt, Chicory Root Extract, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Cranberries, Yucca Schidigera Extract, Sorbic Acid (Preservative), Sodium Selenite, Blueberries, Taurine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.0,
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 6.5,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3729 kcal/kg, 395 kcal/cup",
+      "aafco_statement": "Fromm Four-Star Nutritionals Hasen Duckenpfeffer Recipe Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for all life stages, including growth of large size dogs (70 lb. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-hasen-duckenpfeffer.png"
+      ]
+    },
+    {
+      "name": "Highlander Beef, Oats, 'n Barley Recipe",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/four-star/dry/highlander-beef-oats-n-barley-recipe/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Four-Star",
+      "ingredients_raw": "Beef, Beef Broth, Lamb Meal, Haddock, Whole Oats, Dried Egg Product, Whole Barley, Oatmeal, Potatoes, Pearled Barley, Pumpkin, Dried Tomato Pomace, Chicken Fat (preserved with mixed tocopherols), Beef Liver, Sweet Potatoes, Salmon Oil (preserved with mixed tocopherols), Chicken, Cheese, Chicken Liver, Flaxseed, Celery, Carrots, Apples, Broccoli, Vitamins [Potassium Chloride, Choline Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Chicory Root Extract, Salt, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Sorbic Acid (Preservative), Cranberries, Yucca Schidigera Extract, Taurine, Blueberries, Sodium Selenite, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "guaranteed_analysis": {
+        "crude_protein_min": 27.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 5.5,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3696 kcal/kg, 388 kcal/cup",
+      "aafco_statement": "Fromm Four-Star Nutritionals Highlander Beef, Oats, 'n Barley Recipe Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for all life stages, including growth of large size dogs (70 lb. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-highlander-beef-oats-n-barley-recipe.png"
+      ]
+    },
+    {
+      "name": "Lamb & Lentil Recipe",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/four-star/dry/lamb-and-lentil-recipe/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Four-Star",
+      "ingredients_raw": "Lamb, Lamb Meal, Lentils, Chickpeas, Peas, Dried Egg Product, Pea Flour, Dried Tomato Pomace, Pork Fat (preserved with mixed tocopherols), Pork Liver, Lamb Liver, Salmon Oil (preserved with mixed tocopherols), Cheese, Flaxseed, Carrots, Apples, Broccoli, Cauliflower, Natural Flavor, Potassium Chloride, Salt, Vitamins [Choline Chloride, Vitamin E Supplement, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Chicory Root Extract, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Cranberries, Yucca Schidigera Extract, Sorbic Acid (Preservative), Blueberries, Taurine, Sodium Selenite, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "guaranteed_analysis": {
+        "crude_protein_min": 29.0,
+        "crude_fat_min": 18.0,
+        "crude_fiber_max": 6.5,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3757 kcal/kg, 398 kcal/cup",
+      "aafco_statement": "Fromm Four-Star Nutritionals Lamb & Lentil Recipe Dog Food is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for all life stages, including growth of large size dogs (70 lb. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-lamb-lentil-recipe.png"
+      ]
+    },
+    {
+      "name": "Pork & Applesauce Recipe",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/four-star/dry/pork-and-applesauce-recipe/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Four-Star",
+      "ingredients_raw": "Pork, Pork Meat & Bone Meal, Oatmeal, Pearled Barley, Pork Liver, Brown Rice, White Rice, Dried Tomato Pomace, Pork Fat (preserved with mixed tocopherols), Dried Egg Product, Peas, Potatoes, Apples, Sweet Potatoes, Salmon Oil (preserved with mixed tocopherols), Pea Protein, Flaxseed, Cheese, Carrots, Broccoli, Potassium Chloride, Salt, Monosodium Phosphate, Vitamins [Choline Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Chicory Root Extract, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Cranberries, Yucca Schidigera Extract, Sodium Selenite, Sorbic Acid (Preservative), Blueberries, Taurine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 5.5,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3613 kcal/kg, 379 kcal/cup",
+      "aafco_statement": "Fromm Four-Star Nutritionals Pork & Applesauce Formula Dog Food is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for all life stages, including growth of large size dogs (70 lb. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-pork-applesauce-recipe.png"
+      ]
+    },
+    {
+      "name": "Pork & Peas Recipe",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/four-star/dry/pork-and-peas-recipe/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Four-Star",
+      "ingredients_raw": "Pork, Peas, Pork Broth, Chickpeas, Pork Meat & Bone Meal, Pea Flour, Pork Fat (preserved with mixed tocopherols), Dried Egg Product, Sweet Potatoes, Dried Tomato Pomace, Pork Liver, Pea Protein, Salmon Oil (preserved with mixed tocopherols), Cheese, Flaxseed, Cantaloupe, Pineapple, Mango, Carrots, Apples, Natural Flavor, Vitamins [Potassium Chloride, Choline Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Salt, Monosodium Phosphate, Chicory Root Extract, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Cranberries, Yucca Schidigera Extract, Sorbic Acid (Preservative), Sodium Selenite, Coconut Oil (preserved with mixed tocopherols), Blueberries, Taurine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "guaranteed_analysis": {
+        "crude_protein_min": 29.0,
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 6.5,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3695 kcal/kg, 392 kcal/cup",
+      "aafco_statement": "Fromm Four-Star Nutritionals Pork & Peas Recipe Dog Food is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for all life stages, including growth of large size dogs (70 lb. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-pork-peas-recipe.png"
+      ]
+    },
+    {
+      "name": "Rancherosa",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/four-star/dry/rancherosa/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Four-Star",
+      "ingredients_raw": "Beef, Lamb Meal, Pork, Pinto Beans, Potatoes, Chickpeas, Lentils, Peas, Dried Egg Product, Trout, Pork Meat & Bone Meal, Dried Tomato Pomace, Pork Liver, Pork Fat (preserved with mixed tocopherols), Salmon Oil (preserved with mixed tocopherols), Lamb, Butternut Squash, Flaxseed, Alfalfa Meal, Pumpkin, Vitamins [Potassium Chloride, Choline Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Monosodium Phosphate, Salt, Chicory Root Extract, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Cranberries, Yucca Schidigera Extract, Sodium Selenite, Chicken Cartilage, Taurine, Sorbic Acid (Preservative), Blueberries, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 6.5,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3626 kcal/kg, 384 kcal/cup",
+      "aafco_statement": "Fromm Four-Star Nutritionals Rancherosa Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for all life stages, including growth of large size dogs (70 lbs. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-rancherosa.png"
+      ]
+    },
+    {
+      "name": "Salmon À La Veg Recipe",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/four-star/dry/salmon-a-la-veg-recipe/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Four-Star",
+      "ingredients_raw": "Salmon, Salmon Meal, Fish Broth, Oatmeal, Brown Rice, Pearled Barley, Chicken Fat (preserved with mixed tocopherols), Dried Egg Product, Whole Oats, White Rice, Dried Tomato Pomace, Salmon Oil (preserved with mixed tocopherols), Millet, Sweet Potatoes, Potatoes, Chicken, Herring Meal, Whole Barley, Dried Yeast, Cheese, Flaxseed, Chicken Liver, Carrots, Apples, Broccoli, Celery, Monocalcium Phosphate, Calcium Sulfate, Vitamins [Choline Chloride, Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Salt, Chicory Root Extract, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate, Sodium Selenite], Sorbic Acid (Preservative), Cranberries, Yucca Schidigera Extract, Blueberries, Taurine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 5.5,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3761 kcal/kg, 395 kcal/cup",
+      "aafco_statement": "Fromm Four-Star Nutritionals Salmon À La Veg Recipe Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for all life stages, including growth of large size dogs (70 lb. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-salmon-la-veg-recipe.png"
+      ]
+    },
+    {
+      "name": "Salmon Tunalini Recipe",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/four-star/dry/salmon-tunalini-recipe/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Four-Star",
+      "ingredients_raw": "Salmon, Salmon Meal, Peas, Lentils, Pinto Beans, Potatoes, Chicken Fat (preserved with mixed tocopherols), Dried Tomato Pomace, Tuna, Dried Egg Product, Chicken Liver, Chickpeas, Salmon Oil (preserved with mixed tocopherols), Sardine Meal, Flaxseed, Cheese, Monocalcium Phosphate, Calcium Sulfate, Zucchini, Carrots, Apples, Broccoli, Natural Flavor, Potassium Chloride, Salt, Vitamins [Choline Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Niacin Supplement, Riboflavin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Folic Acid, Thiamine Mononitrate], Chicory Root Extract, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Cranberries, Yucca Schidigera Extract, Sodium Selenite, Sorbic Acid (Preservative), Blueberries, Taurine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 6.5,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3658 kcal/kg, 388 kcal/cup",
+      "aafco_statement": "Fromm Four-Star Nutritionals Salmon Tunalini Recipe Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for all life stages, including growth of large size dogs (70 lb. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-salmon-tunalini-recipe.png"
+      ]
+    },
+    {
+      "name": "Surf & Turf Recipe",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/four-star/dry/surf-and-turf-recipe/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Four-Star",
+      "ingredients_raw": "Salmon, Fish Broth, Chicken, Salmon Meal, Duck Meal, Lentils, Chickpeas, Peas, Potatoes, Chicken Fat (preserved with mixed tocopherols), Sweet Potatoes, Pea Flour, Dried Tomato Pomace, Dried Egg Product, Pea Protein, Salmon Oil (preserved with mixed tocopherols), Herring Meal, Flaxseed, Cheese, Chicken Liver, Carrots, Apples, Broccoli, Celery, Natural Flavor, Salt, Potassium Chloride, Chicory Root Extract, Vitamins [Choline Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Cranberries, Yucca Schidigera Extract, Sorbic Acid (Preservative), Blueberries, Sodium Selenite, Taurine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 18.0,
+        "crude_fiber_max": 6.5,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3789 kcal/kg, 402 kcal/cup",
+      "aafco_statement": "Fromm Four-Star Nutritionals Surf & Turf Recipe Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for all life stages, including growth of large size dogs (70 lb. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-surf-turf-recipe.png"
+      ]
+    },
+    {
+      "name": "Trout & Whitefish Recipe",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/four-star/dry/trout-and-whitefish-recipe/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Four-Star",
+      "ingredients_raw": "Trout, Whitefish, Salmon Meal, Dried Egg Product, Menhaden Fish Meal, Whole Barley, Whole Oats, Brown Rice, Oatmeal, Pearled Barley, Pork Liver, Pork Fat (preserved with mixed tocopherols), Dried Tomato Pomace, Salmon Oil (preserved with mixed tocopherols), Dried Yeast, Miscanthus Grass, Flaxseed, Broccoli, Apples, Vitamins [Choline Chloride, Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Chicory Root Extract, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Salt, Cranberries, Sodium Selenite, Yucca Schidigera Extract, Sorbic Acid (Preservative), Taurine, Blueberries, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "guaranteed_analysis": {
+        "crude_protein_min": 27.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 6.0,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3706 kcal/kg, 389 kcal/cup",
+      "aafco_statement": "Fromm Four-Star Nutritionals Trout & Whitefish Recipe Dog Food is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for all life stages, including growth of large size dogs (70 lb. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-trout-whitefish-recipe.png"
+      ]
+    },
+    {
+      "name": "Whitefish & Potato Recipe",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/four-star/dry/whitefish-and-potato-recipe/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Four-Star",
+      "ingredients_raw": "Whitefish, Fish Broth, Menhaden Fish Meal, Sweet Potatoes, Potatoes, Brown Rice, Pearled Barley, Oatmeal, White Rice, Dried Egg Product, Millet, Peas, Dried Tomato Pomace, Whole Oats, Whole Barley, Pork Liver, Salmon Oil (preserved with mixed tocopherols), Pork Fat (preserved with mixed tocopherols), Herring Meal, Flaxseed, Cheese, Carrots, Apples, Broccoli, Celery, Calcium Sulfate, Monocalcium Phosphate, Monosodium Phosphate, Vitamins [Potassium Chloride, Choline Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Chicory Root Extract, Salt, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Cranberries, Yucca Schidigera Extract, Sorbic Acid (Preservative), Taurine, Blueberries, Sodium Selenite, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "guaranteed_analysis": {
+        "crude_protein_min": 23.0,
+        "crude_fat_min": 11.0,
+        "crude_fiber_max": 5.5,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3446 kcal/kg, 362 kcal/cup",
+      "aafco_statement": "Fromm Four-Star Nutritionals Whitefish & Potato Formula Dog Food is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for all life stages, including growth of large size dogs (70 lb. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-whitefish-potato-recipe.png"
+      ]
+    },
+    {
+      "name": "Zealambder Recipe",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/four-star/dry/zealambder-recipe/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Four-Star",
+      "ingredients_raw": "Lamb, Whole Oats, Whole Barley, Dried Egg Product, Oat Groats, Pearled Barley, Lamb Meal, Salmon Meal, Dried Tomato Pomace, Lamb Liver, Pork Liver, Pork Fat (preserved with mixed tocopherols), Salmon Oil (preserved with mixed tocopherols), Venison, Pumpkin, Flaxseed, Alfalfa Meal, Kiwifruit, Apples, Broccoli, Carrots, Alfalfa Sprouts, Vitamins [Potassium Chloride, Choline Chloride, Ascorbic Acid, Vitamin E Supplement, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Chicory Root Extract, New Zealand Green Mussels, Salt, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Taurine, Cranberries, Yucca Schidigera Extract, Sodium Selenite, Sorbic Acid (Preservative), Blueberries, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 6.0,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3681 kcal/kg, 386 kcal/cup",
+      "aafco_statement": "Fromm Four-Star Nutritionals Zealambder Recipe Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for all life stages, including growth of large size dogs (70 lb. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-zealambder-recipe.png"
+      ]
+    },
+    {
+      "name": "Shredded Beef in Gravy Entrée",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/four-star/can/shredded-beef-in-gravy-entree/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Four-Star",
+      "ingredients_raw": "Beef, Beef Broth, Potatoes, Carrots, Green Beans, Peas, Pinto Beans, Kidney Beans, White Beans, Tomato Paste, Sunflower Oil (preserved with mixed tocopherols), Salmon Oil (preserved with mixed tocopherols), Minerals [Dicalcium Phosphate, Zinc Sulfate, Magnesium Sulfate, Ferrous Sulfate, Zinc Proteinate, Calcium Carbonate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Calcium Iodate, Manganese Sulfate, Copper Proteinate, Manganese Proteinate], Xanthan Gum, Salt, Vitamins [Potassium Chloride, Vitamin E Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Biotin, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid, Choline Chloride]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.0,
+        "crude_fat_min": 2.5,
+        "crude_fiber_max": 1.2,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "735 kcal/kg, 250 kcal/can",
+      "aafco_statement": "Fromm Four-Star Nutritionals Shredded Beef in Gravy Entrée Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages, including growth of large size dogs (70 lbs. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-shredded-beef-in-gravy-entr-e.png"
+      ]
+    },
+    {
+      "name": "Shredded Chicken in Gravy Entrée",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/four-star/can/shredded-chicken-in-gravy-entree/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Four-Star",
+      "ingredients_raw": "Chicken Broth, Chicken, Potatoes, Carrots, Green Beans, Peas, Pinto Beans, Kidney Beans, White Beans, Salmon Oil (preserved with mixed tocopherols), Tomato Paste, Minerals [Dicalcium Phosphate, Zinc Sulfate, Magnesium Sulfate, Ferrous Sulfate, Zinc Proteinate, Calcium Carbonate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Calcium Iodate, Manganese Sulfate, Copper Proteinate, Manganese Proteinate], Xanthan Gum, Salt, Vitamins [Potassium Chloride, Vitamin E Supplement, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid, Choline Chloride]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.0,
+        "crude_fat_min": 2.0,
+        "crude_fiber_max": 1.2,
+        "moisture_max": 84.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "637 kcal/kg, 228 kcal/can",
+      "aafco_statement": "Fromm Four-Star Nutritionals Shredded Chicken in Gravy Entrée Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages, including growth of large size dogs (70 lbs. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-shredded-chicken-in-gravy-entr-e.png"
+      ]
+    },
+    {
+      "name": "Shredded Pork in Gravy Entrée",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/four-star/can/shredded-pork-in-gravy-entree/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Four-Star",
+      "ingredients_raw": "Pork Broth, Pork, Potatoes, Carrots, Green Beans, Peas, Pinto Beans, Kidney Beans, White Beans, Salmon Oil (preserved with mixed tocopherols), Tomato Paste, Minerals [Dicalcium Phosphate, Zinc Sulfate, Magnesium Sulfate, Ferrous Sulfate, Zinc Proteinate, Calcium Carbonate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Calcium Iodate, Manganese Sulfate, Copper Proteinate, Manganese Proteinate], Xanthan Gum, Salt, Vitamins [Potassium Chloride, Vitamin E Supplement, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid, Choline Chloride]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.0,
+        "crude_fat_min": 3.5,
+        "crude_fiber_max": 1.2,
+        "moisture_max": 84.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "747 kcal/kg, 258 kcal/can",
+      "aafco_statement": "Fromm Four-Star Nutritionals Shredded Pork in Gravy Entrée Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages, including growth of large size dogs (70 lbs. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-shredded-pork-in-gravy-entr-e.png"
+      ]
+    },
+    {
+      "name": "Shredded Turkey in Gravy Entrée",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/four-star/can/shredded-turkey-in-gravy-entree/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Four-Star",
+      "ingredients_raw": "Turkey, Turkey Broth, Potatoes, Carrots, Green Beans, Peas, Pinto Beans, Kidney Beans, White Beans, Tomato Paste, Salmon Oil (preserved with mixed tocopherols), Sunflower Oil (preserved with mixed tocopherols), Minerals [Dicalcium Phosphate, Zinc Sulfate, Magnesium Sulfate, Ferrous Sulfate, Zinc Proteinate, Calcium Carbonate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Calcium Iodate, Manganese Sulfate, Copper Proteinate, Manganese Proteinate], Xanthan Gum, Salt, Vitamins [Potassium Chloride, Vitamin E Supplement, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid, Choline Chloride]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 2.5,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "743 kcal/kg, 252 kcal/can",
+      "aafco_statement": "Fromm Four-Star Nutritionals Shredded Turkey in Gravy Entrée Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages, including growth of large size dogs (70 lbs. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-shredded-turkey-in-gravy-entr-e.png"
+      ]
+    },
+    {
+      "name": "Chicken with Peas and Carrots Recipe",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/four-star/treats/chicken-with-peas-and-carrots-recipe/",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Four-Star",
+      "ingredients_raw": "Chicken, Pea Flour, Potato Flour, Tapioca Starch, Whole Peas, Chicken Fat (preserved with mixed tocopherols), Dried Tomato Pomace, Cranberries, Sweet Potatoes, Carrots, Apples, Split Peas, Green Beans, Green Bell Peppers, Celery, Beets, Parsley, Lettuce, Spinach",
+      "guaranteed_analysis": {
+        "crude_protein_min": 12.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 12.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "12 Calories per treat (approximate)",
+      "images": [
+        "/products/fromm/fromm-treat-chicken-with-peas-and-carrots-recipe.png"
+      ]
+    },
+    {
+      "name": "Lamb with Cranberry Recipe",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/four-star/treats/lamb-with-cranberry-recipe/",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Four-Star",
+      "ingredients_raw": "Lamb, Pea Flour, Potato Flour, Tapioca Starch, Whole Peas, Chicken Fat (preserved with mixed tocopherols), Dried Tomato Pomace, Cranberries, Sweet Potatoes, Carrots, Apples, Split Peas, Green Beans, Green Bell Peppers, Celery, Beets, Parsley, Lettuce, Spinach",
+      "guaranteed_analysis": {
+        "crude_protein_min": 12.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 12.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "12 Calories per treat (approximate)",
+      "images": [
+        "/products/fromm/fromm-treat-lamb-with-cranberry-recipe.png"
+      ]
+    },
+    {
+      "name": "Parmesan Cheese Recipe",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/four-star/treats/parmesan-cheese-recipe/",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Four-Star",
+      "ingredients_raw": "Parmesan Cheese, Pea Flour, Potato Flour, Tapioca Starch, Whole Peas, Chicken Fat (preserved with mixed tocopherols), Dried Tomato Pomace, Cranberries, Sweet Potatoes, Carrots, Apples, Split Peas, Green Beans, Green Bell Peppers, Celery, Beets, Oregano, Parsley, Lettuce, Spinach",
+      "guaranteed_analysis": {
+        "crude_protein_min": 12.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 12.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "12 Calories per treat (approximate)",
+      "images": [
+        "/products/fromm/fromm-treat-parmesan-cheese-recipe.png"
+      ]
+    },
+    {
+      "name": "Salmon with Sweet Potato Recipe",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/four-star/treats/salmon-with-sweet-potato-recipe/",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Four-Star",
+      "ingredients_raw": "Salmon, Pea Flour, Potato Flour, Tapioca Starch, Whole Peas, Chicken Fat (preserved with mixed tocopherols), Dried Tomato Pomace, Cranberries, Sweet Potatoes, Carrots, Apples, Split Peas, Green Beans, Green Bell Peppers, Celery, Beets, Parsley, Lettuce, Spinach",
+      "guaranteed_analysis": {
+        "crude_protein_min": 12.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 12.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "12 Calories per treat (approximate)",
+      "images": [
+        "/products/fromm/fromm-treat-salmon-with-sweet-potato-recipe.png"
+      ]
+    },
+    {
+      "name": "Beef, Vegetable, & Rice Stew",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/frommbalaya/can/beef-vegetable-and-rice-stew/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Frommbalaya",
+      "ingredients_raw": "Beef, Beef Broth, Pork Broth, Pork, Potatoes, Carrots, White Rice, Peas, Dried Egg Product, Xanthan Gum, Salt, Salmon Oil (preserved with mixed tocopherols), Roasted Barley Flour, Minerals [Dicalcium Phosphate, Zinc Sulfate, Magnesium Sulfate, Ferrous Sulfate, Zinc Proteinate, Calcium Carbonate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Calcium Iodate, Manganese Sulfate, Copper Proteinate, Manganese Proteinate], Vitamins [Potassium Chloride, Vitamin E Supplement, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.0,
+        "crude_fat_min": 3.5,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "789 kcal/kg, 280 kcal/can",
+      "aafco_statement": "Frommbalaya Beef, Vegetable, & Rice Stew Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for all life stages, including growth of large size dogs (70 lbs. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-beef-vegetable-rice-stew.png"
+      ]
+    },
+    {
+      "name": "Chicken, Vegetable, & Rice Stew",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/frommbalaya/can/chicken-vegetable-and-rice-stew/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Frommbalaya",
+      "ingredients_raw": "Chicken, Chicken Broth, Turkey Broth, Potatoes, Carrots, White Rice, Peas, Dried Egg Product, Tapioca Starch, Xanthan Gum, Salmon Oil (preserved with mixed tocopherols), Salt, Minerals [Dicalcium Phosphate, Zinc Sulfate, Magnesium Sulfate, Ferrous Sulfate, Zinc Proteinate, Calcium Carbonate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Calcium Iodate, Manganese Sulfate, Copper Proteinate, Manganese Proteinate], Vitamins [Potassium Chloride, Vitamin E Supplement, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.0,
+        "crude_fat_min": 3.5,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "786 kcal/kg, 279 kcal/can",
+      "aafco_statement": "Frommbalaya Chicken, Vegetable, & Rice Stew Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for all life stages, including growth of large size dogs (70 lbs. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-chicken-vegetable-rice-stew.png"
+      ]
+    },
+    {
+      "name": "Lamb, Vegetable, & Rice Stew",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/frommbalaya/can/lamb-vegetable-and-rice-stew/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Frommbalaya",
+      "ingredients_raw": "Lamb, Pork Broth, Beef Broth, Pork, Potatoes, Carrots, White Rice, Peas, Dried Egg Product, Tapioca Starch, Salmon Oil (preserved with mixed tocopherols), Xanthan Gum, Salt, Minerals [Dicalcium Phosphate, Zinc Sulfate, Magnesium Sulfate, Ferrous Sulfate, Zinc Proteinate, Calcium Carbonate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Calcium Iodate, Manganese Sulfate, Copper Proteinate, Manganese Proteinate], Potassium Chloride, Roasted Barley Flour, Vitamins [Vitamin E Supplement, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.0,
+        "crude_fat_min": 4.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "863 kcal/kg, 306 kcal/can",
+      "aafco_statement": "Frommbalaya Lamb, Vegetable, & Rice Stew Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for all life stages, including growth of large size dogs (70 lbs. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-lamb-vegetable-rice-stew.png"
+      ]
+    },
+    {
+      "name": "Pork, Vegetable, & Rice Stew",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/frommbalaya/can/pork-vegetable-and-rice-stew/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Frommbalaya",
+      "ingredients_raw": "Pork, Pork Broth, Beef Broth, Potatoes, Carrots, White Rice, Peas, Dried Egg Product, Tapioca Starch, Salmon Oil (preserved with mixed tocopherols), Roasted Barley Flour, Xanthan Gum, Salt, Calcium Carbonate, Minerals [Dicalcium Phosphate, Zinc Sulfate, Magnesium Sulfate, Ferrous Sulfate, Zinc Proteinate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Calcium Iodate, Manganese Sulfate, Copper Proteinate, Manganese Proteinate], Vitamins [Potassium Chloride, Vitamin E Supplement, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "785 kcal/kg, 278 kcal/can",
+      "aafco_statement": "Frommbalaya Pork, Vegetable, & Rice Stew Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for all life stages, including growth of large size dogs (70 lbs. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-pork-vegetable-rice-stew.png"
+      ]
+    },
+    {
+      "name": "Turkey, Vegetable, & Rice Stew",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/frommbalaya/can/turkey-vegetable-and-rice-stew/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Frommbalaya",
+      "ingredients_raw": "Turkey, Turkey Broth, Chicken Broth, Potatoes, Carrots, Peas, White Rice, Dried Egg Product, Xanthan Gum, Roasted Barley Flour, Salt, Salmon Oil (preserved with mixed tocopherols), Minerals [Dicalcium Phosphate, Zinc Sulfate, Magnesium Sulfate, Ferrous Sulfate, Zinc Proteinate, Calcium Carbonate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Calcium Iodate, Manganese Sulfate, Copper Proteinate, Manganese Proteinate], Vitamins [Potassium Chloride, Vitamin E Supplement, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.0,
+        "crude_fat_min": 3.5,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "788 kcal/kg, 279 kcal/can",
+      "aafco_statement": "Frommbalaya Turkey, Vegetable, & Rice Stew Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for all life stages, including growth of large size dogs (70 lbs. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-turkey-vegetable-rice-stew.png"
+      ]
+    },
+    {
+      "name": "Hearty Stew with Beef Sausage",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/frommbo-gumbo/can/hearty-stew-with-beef-sausage/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Frommbo Gumbo",
+      "ingredients_raw": "Beef, Bone Broth, Beef Broth, Potatoes, Carrots, Pinto Beans, Green Beans, Tomato Paste, Dried Egg Product, Tapioca Starch, Parsley, Xanthan Gum, Roasted Barley Flour, Pork, Peas, Minerals [Dicalcium Phosphate, Zinc Sulfate, Magnesium Sulfate, Ferrous Sulfate, Zinc Proteinate, Calcium Carbonate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Calcium Iodate, Manganese Sulfate, Copper Proteinate, Manganese Proteinate], Salmon Oil (preserved with mixed tocopherols), Salt, Turmeric, Vitamins [Potassium Chloride, Vitamin E Supplement, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.0,
+        "crude_fat_min": 3.5,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "893 kcal/kg, 316 kcal/can",
+      "images": [
+        "/products/fromm/fromm-food-hearty-stew-with-beef-sausage.png"
+      ]
+    },
+    {
+      "name": "Hearty Stew with Chicken Sausage",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/frommbo-gumbo/can/hearty-stew-with-chicken-sausage/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Frommbo Gumbo",
+      "ingredients_raw": "Chicken, Bone Broth, Chicken Broth, Potatoes, Carrots, Pinto Beans, Green Beans, Tomato Paste, Dried Egg Product, Tapioca Starch, Parsley, Xanthan Gum, Peas, Minerals [Dicalcium Phosphate, Zinc Sulfate, Magnesium Sulfate, Ferrous Sulfate, Zinc Proteinate, Calcium Carbonate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Calcium Iodate, Manganese Sulfate, Copper Proteinate, Manganese Proteinate], Salmon Oil (preserved with mixed tocopherols), Salt, Turmeric, Vitamins [Potassium Chloride, Vitamin E Supplement, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.0,
+        "crude_fat_min": 2.5,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "771 kcal/kg, 273 kcal/can",
+      "images": [
+        "/products/fromm/fromm-food-hearty-stew-with-chicken-sausage.png"
+      ]
+    },
+    {
+      "name": "Hearty Stew with Pork Sausage",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/frommbo-gumbo/can/hearty-stew-with-pork-sausage/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Frommbo Gumbo",
+      "ingredients_raw": "Pork, Bone Broth, Pork Broth, Potatoes, Carrots, Pinto Beans, Green Beans, Tomato Paste, Pork Liver, Dried Egg Product, Peas, Tapioca Starch, Parsley, Xanthan Gum, Minerals [Dicalcium Phosphate, Zinc Sulfate, Magnesium Sulfate, Ferrous Sulfate, Zinc Proteinate, Calcium Carbonate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Calcium Iodate, Manganese Sulfate, Copper Proteinate, Manganese Proteinate], Salmon Oil (preserved with mixed tocopherols), Salt, Roasted Barley Flour, Turmeric, Vitamins [Potassium Chloride, Vitamin E Supplement, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.0,
+        "crude_fat_min": 4.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "889 kcal/kg, 315 kcal/can",
+      "images": [
+        "/products/fromm/fromm-food-hearty-stew-with-pork-sausage.png"
+      ]
+    },
+    {
+      "name": "Adult Gold",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/gold/dry/adult-gold/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Gold",
+      "ingredients_raw": "Chicken, Chicken Meal, Chicken Broth, Oatmeal, Pearled Barley, Brown Rice, Chicken Fat (preserved with mixed tocopherols), Menhaden Fish Meal, Dried Tomato Pomace, Whole Oats, White Rice, Dried Egg Product, Whole Barley, Chicken Liver, Potatoes, Dried Yeast, Cheese, Flaxseed, Salmon Oil (preserved with mixed tocopherols), Salt, Carrots, Duck, Lamb, Sweet Potatoes, Celery, Alfalfa Meal, Monocalcium Phosphate, Vitamins [Choline Chloride, Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Chicory Root Extract, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Sorbic Acid (Preservative), Yucca Schidigera Extract, L-Tryptophan, Taurine, DL-Methionine, Sodium Selenite, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 5.5,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3735 kcal/kg, 418 kcal/cup",
+      "aafco_statement": "Fromm Family Adult Gold Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for growth and maintenance, including growth of large size dogs (70 lb. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-adult-gold.png"
+      ]
+    },
+    {
+      "name": "Adult Gold with Ancient Grains",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/gold/dry/adult-gold-ancient-grains/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Gold",
+      "ingredients_raw": "Chicken, Chicken Meal, Whole Grain Sorghum, Chicken Broth, Whole Barley, Whole Oats, Pearled Barley, Chicken Fat (preserved with mixed tocopherols), Menhaden Fish Meal, Dried Tomato Pomace, Dried Egg Product, Dried Yeast, Buckwheat, Spelt, Millet, Chicken Liver, Cheese, Salmon Oil (preserved with mixed tocopherols), Quinoa, Flaxseed, Salt, Carrots, Duck, Lamb, Sweet Potatoes, Celery, Monocalcium Phosphate, Vitamins [Choline Chloride, Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Chicory Root Extract, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Sorbic Acid (Preservative), Yucca Schidigera Extract, L-Tryptophan, Taurine, DL-Methionine, Sodium Selenite, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 6.0,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3702 kcal/kg, 400 kcal/cup",
+      "aafco_statement": "Fromm Family Adult Gold with Ancient Grains Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for growth and maintenance, including growth of large size dogs (70 lb. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-adult-gold-with-ancient-grains.png"
+      ]
+    },
+    {
+      "name": "Gold Coast Weight Management",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/gold/dry/gold-coast-weight-management/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Gold",
+      "ingredients_raw": "Whitefish, Salmon Meal, Lentils, Peas, Chickpeas, Pea Starch, Potatoes, Dried Tomato Pomace, Chicken Liver, Sweet Potatoes, Flaxseed, Salmon Oil (preserved with mixed tocopherols), Chicken Fat (preserved with mixed tocopherols), Salmon, Calcium Sulfate, Monocalcium Phosphate, Dried Egg Product, Pea Fiber, Cheese, Alfalfa Meal, Carrots, Vitamins [Choline Chloride, Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Dried Yeast, Celery, Salt, Taurine, Chicory Root Extract, Sorbic Acid (Preservative), Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate, Sodium Selenite], Yucca Schidigera Extract, L-Carnitine, DL-Methionine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 10.0,
+        "crude_fiber_max": 8.0,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3297 kcal/kg, 330 kcal/cup",
+      "aafco_statement": "Fromm Family Gold Coast Weight Management Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for maintenance.",
+      "images": [
+        "/products/fromm/fromm-food-gold-coast-weight-management.png"
+      ]
+    },
+    {
+      "name": "Heartland Gold Adult",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/gold/dry/heartland-gold-adult/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Gold",
+      "ingredients_raw": "Beef, Pork Meat & Bone Meal, Lentils, Peas, Chickpeas, Potatoes, Dried Tomato Pomace, Pea Flour, Pork Liver, Pork Fat (preserved with mixed tocopherols), Salmon Oil (preserved with mixed tocopherols), Dried Egg Product, Flaxseed, Cheese, Dried Yeast, Lamb, Alfalfa Meal, Celery, Salt, Vitamins [Choline Chloride, Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Carrots, Chicory Root Extract, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Yucca Schidigera Extract, Taurine, Sodium Selenite, Sorbic Acid (Preservative), L-Tryptophan, DL-Methionine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 6.0,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3637 kcal/kg, 378 kcal/cup",
+      "aafco_statement": "Fromm Family Heartland Gold Adult Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for growth and maintenance, except for growth of large size dogs (70 lb. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-heartland-gold-adult.png"
+      ]
+    },
+    {
+      "name": "Heartland Gold Large Breed Adult",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/gold/dry/heartland-gold-large-breed-adult/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Gold",
+      "breed_size": "large",
+      "ingredients_raw": "Beef, Pork Meat & Bone Meal, Lentils, Peas, Chickpeas, Pea Flour, Potatoes, Dried Tomato Pomace, Pork Liver, Dried Egg Product, Flaxseed, Pork Fat (preserved with mixed tocopherols), Salmon Oil (preserved with mixed tocopherols), Sweet Potatoes, Cheese, Dried Yeast, Lamb, Alfalfa Meal, Celery, Salt, Carrots, Vitamins [Choline Chloride, Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Monosodium Phosphate, Chicory Root Extract, Taurine, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Yucca Schidigera Extract, Sodium Selenite, Sorbic Acid (Preservative), L-Tryptophan, DL-Methionine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 6.0,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3462 kcal/kg, 350 kcal/cup",
+      "aafco_statement": "Fromm Family Heartland Gold Large Breed Adult Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for growth and maintenance, including growth of large size dogs (70 lb. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-heartland-gold-large-breed-adult.png"
+      ]
+    },
+    {
+      "name": "Heartland Gold Large Breed Puppy",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/gold/dry/heartland-gold-large-breed-puppy/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Gold",
+      "life_stage": "puppy",
+      "breed_size": "large",
+      "ingredients_raw": "Beef, Pork Meat & Bone Meal, Lentils, Peas, Chickpeas, Potatoes, Dried Tomato Pomace, Pork, Dried Egg Product, Pork Liver, Pea Flour, Pork Fat (preserved with mixed tocopherols), Salmon Oil (preserved with mixed tocopherols), Flaxseed, Dried Yeast, Cheese, Sweet Potatoes, Lamb, Alfalfa Meal, Celery, Carrots, Calcium Carbonate, Vitamins [Choline Chloride, Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Salt, Chicory Root Extract, Taurine, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Proteinate, Calcium Iodate], Yucca Schidigera Extract, Sodium Selenite, Sorbic Acid (Preservative), L-Tryptophan, DL-Methionine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 6.0,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3583 kcal/kg, 373 kcal/cup",
+      "aafco_statement": "Fromm Family Heartland Gold Large Breed Puppy Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for gestation/lactation and growth, including growth of large size dogs (70 lb. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-heartland-gold-large-breed-puppy.png"
+      ]
+    },
+    {
+      "name": "Heartland Gold Puppy",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/gold/dry/heartland-gold-puppy/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Gold",
+      "life_stage": "puppy",
+      "ingredients_raw": "Beef, Pork Meat & Bone Meal, Peas, Lentils, Chickpeas, Potatoes, Pork, Dried Egg Product, Pea Flour, Dried Tomato Pomace, Pork Liver, Pork Fat (preserved with mixed tocopherols), Salmon Oil (preserved with mixed tocopherols), Flaxseed, Cheese, Dried Yeast, Lamb, Alfalfa Meal, Celery, Carrots, Salt, Vitamins [Choline Chloride, Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Taurine, Chicory Root Extract, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Yucca Schidigera Extract, Sodium Selenite, Sorbic Acid (Preservative), L-Tryptophan, DL-Methionine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "guaranteed_analysis": {
+        "crude_protein_min": 27.0,
+        "crude_fat_min": 18.0,
+        "crude_fiber_max": 6.0,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3757 kcal/kg, 402 kcal/cup",
+      "aafco_statement": "Fromm Family Heartland Gold Puppy Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for gestation/lactation and growth, except for growth of large size dogs (70 lb. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-heartland-gold-puppy.png"
+      ]
+    },
+    {
+      "name": "Large Breed Adult Gold",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/gold/dry/large-breed-adult-gold/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Gold",
+      "breed_size": "large",
+      "ingredients_raw": "Chicken, Chicken Meal, Chicken Broth, Oatmeal, Pearled Barley, Brown Rice, White Rice, Dried Tomato Pomace, Whole Oats, Whole Barley, Menhaden Fish Meal, Chicken Liver, Dried Egg Product, Chicken Fat (preserved with mixed tocopherols), Potatoes, Cheese, Flaxseed, Salmon Oil (preserved with mixed tocopherols), Dried Yeast, Carrots, Salt, Duck, Lamb, Sweet Potatoes, Celery, Alfalfa Meal, Monosodium Phosphate, Vitamins [Choline Chloride, Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Calcium Sulfate, Chicory Root Extract, Taurine, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Sorbic Acid (Preservative), Yucca Schidigera Extract, DL-Methionine, Sodium Selenite, L-Tryptophan, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "guaranteed_analysis": {
+        "crude_protein_min": 23.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 5.5,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3561 kcal/kg, 377 kcal/cup",
+      "aafco_statement": "Fromm Family Large Breed Adult Gold Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for growth and maintenance, including growth of large size dogs (70 lb. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-large-breed-adult-gold.png"
+      ]
+    },
+    {
+      "name": "Large Breed Puppy Gold",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/gold/dry/large-breed-puppy-gold/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Gold",
+      "life_stage": "puppy",
+      "breed_size": "large",
+      "ingredients_raw": "Chicken, Chicken Meal, Chicken Broth, Oatmeal, Pearled Barley, Brown Rice, Potatoes, Menhaden Fish Meal, Dried Tomato Pomace, Chicken Fat (preserved with mixed tocopherols), Dried Egg Product, Chicken Liver, Whole Oats, Dried Yeast, Flaxseed, Whole Barley, Cheese, Salmon Oil (preserved with mixed tocopherols), Salt, Carrots, Duck, Lamb, Sweet Potatoes, Celery, Alfalfa Meal, Vitamins [Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Monosodium Phosphate, DL-Methionine, Chicory Root Extract, Calcium Sulfate, Taurine, Choline Chloride, Chicken Cartilage, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Sorbic Acid (Preservative), Yucca Schidigera Extract, L-Tryptophan, Sodium Selenite, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 5.5,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3625 kcal/kg, 384 kcal/cup",
+      "aafco_statement": "Fromm Family Large Breed Puppy Gold Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for gestation/lactation and growth, including growth of large size dogs (70 lb. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-large-breed-puppy-gold.png"
+      ]
+    },
+    {
+      "name": "Large Breed Weight Management Gold",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/gold/dry/large-breed-weight-management-gold/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Gold",
+      "breed_size": "large",
+      "ingredients_raw": "Turkey Liver, Turkey Broth, Chicken Meal, Oatmeal, Pearled Barley, Dried Tomato Pomace, Brown Rice, White Rice, Whitefish, Menhaden Fish Meal, Whole Oats, Whole Barley, Millet, Flaxseed, Dried Egg Product, Chicken Fat (preserved with mixed tocopherols), Salmon Oil (preserved with mixed tocopherols), Miscanthus Grass, Oat Hulls, Potatoes, Dried Yeast, Cheese, Carrots, Sweet Potatoes, Celery, Salt, Vitamins [Potassium Chloride, Choline Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Taurine, Chicory Root Extract, Alfalfa Meal, Sorbic Acid (Preservative), Calcium Sulfate, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Chicken Cartilage, L-Carnitine, Yucca Schidigera Extract, Sodium Selenite, L-Tryptophan, DL-Methionine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 10.0,
+        "crude_fiber_max": 10.0,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3347 kcal/kg, 315 kcal/cup",
+      "aafco_statement": "Fromm Family Large Breed Weight Management Gold Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for maintenance.",
+      "images": [
+        "/products/fromm/fromm-food-large-breed-weight-management-gold.png"
+      ]
+    },
+    {
+      "name": "Puppy Gold",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/gold/dry/puppy-gold/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Gold",
+      "life_stage": "puppy",
+      "ingredients_raw": "Chicken, Chicken Meal, Chicken Broth, Oatmeal, Pearled Barley, Menhaden Fish Meal, Brown Rice, Chicken Fat (preserved with mixed tocopherols), Dried Tomato Pomace, Potatoes, Dried Egg Product, Whole Oats, Salmon Oil (preserved with mixed tocopherols), Dried Yeast, Whole Barley, Chicken Liver, Cheese, Flaxseed, Carrots, Duck, Lamb, Sweet Potatoes, Salt, Celery, Dehydrated Alfalfa Meal, Vitamins [Choline Chloride, Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Monosodium Phosphate, DL-Methionine, Dried Chicory Root, Taurine, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Chicken Cartilage, Sorbic Acid (Preservative), L-Tryptophan, Yucca Schidigera Extract, Sodium Selenite, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "guaranteed_analysis": {
+        "crude_protein_min": 27.0,
+        "crude_fat_min": 18.0,
+        "crude_fiber_max": 5.5,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3849 kcal/kg, 420 kcal/cup",
+      "aafco_statement": "Fromm Family Puppy Gold Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for gestation/lactation and growth, including growth of large size dogs (70 lb. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-puppy-gold.png"
+      ]
+    },
+    {
+      "name": "Reduced Activity & Senior Gold",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/gold/dry/reduced-activity-and-senior-gold/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Gold",
+      "life_stage": "senior",
+      "ingredients_raw": "Chicken, Chicken Meal, Chicken Broth, Oat Groats, Pearled Barley, Brown Rice, Potatoes, Millet, Dried Tomato Pomace, Menhaden Fish Meal, Whole Oats, Chicken Liver, White Rice, Whole Barley, Salmon Oil (preserved with mixed tocopherols), Chicken Fat (preserved with mixed tocopherols), Dried Yeast, Cheese, Flaxseed, Dried Egg Product, Salt, Carrots, Duck, Lamb, Sweet Potatoes, Celery, Alfalfa Meal, Chicken Cartilage, Monosodium Phosphate, Vitamins [Choline Chloride, Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Chicory Root Extract, Yucca Schidigera Extract, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Sorbic Acid (Preservative), Taurine, L-Tryptophan, DL-Methionine, Sodium Selenite, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "guaranteed_analysis": {
+        "crude_protein_min": 23.0,
+        "crude_fat_min": 11.0,
+        "crude_fiber_max": 5.5,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3475 kcal/kg, 368 kcal/cup",
+      "aafco_statement": "Fromm Family Reduced Activity & Senior Gold Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for maintenance.",
+      "images": [
+        "/products/fromm/fromm-food-reduced-activity-senior-gold.png"
+      ]
+    },
+    {
+      "name": "Small Breed Adult Gold",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/gold/dry/small-breed-adult-gold/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Gold",
+      "breed_size": "small",
+      "ingredients_raw": "Chicken, Chicken Meal, Oatmeal, Pearled Barley, Chicken Broth, Brown Rice, Menhaden Fish Meal, Chicken Fat (preserved with mixed tocopherols), Dried Tomato Pomace, Dried Egg Product, Whole Oats, Salmon Oil (preserved with mixed tocopherols), Whole Barley, Dried Yeast, Chicken Liver, Cheese, Flaxseed, White Rice, Potatoes, Carrots, Salt, Duck, Lamb, Sweet Potatoes, Celery, Alfalfa Meal, Monosodium Phosphate, Vitamins [Choline Chloride, Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Taurine, Chicory Root Extract, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Yucca Schidigera Extract, Sorbic Acid (Preservative), DL-Methionine, L-Tryptophan, Sodium Selenite, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 5.5,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3797 kcal/kg, 425 kcal/cup",
+      "aafco_statement": "Fromm Family Small Breed Adult Gold Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for growth and maintenance, including growth of large size dogs (70 lbs. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-small-breed-adult-gold.png"
+      ]
+    },
+    {
+      "name": "Weight Management Gold",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/gold/dry/weight-management-gold/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Gold",
+      "ingredients_raw": "Turkey Liver, Chicken Meal, Turkey Broth, Oatmeal, Pearled Barley, Menhaden Fish Meal, Whole Oats, Dried Tomato Pomace, Whitefish, Whole Barley, Brown Rice, Millet, White Rice, Oat Hulls, Flaxseed, Pea Fiber, Dried Yeast, Salmon Oil (preserved with mixed tocopherols), Chicken Fat (preserved with mixed tocopherols), Dried Egg Product, Potatoes, Salt, Sweet Potatoes, Carrots, Celery, Cheese, Alfalfa Meal, Vitamins [Choline Chloride, Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Taurine, Chicory Root Extract, Sorbic Acid (Preservative), Monosodium Phosphate, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Yucca Schidigera Extract, L-Carnitine, DL-Methionine, L-Tryptophan, Sodium Selenite, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 10.0,
+        "crude_fiber_max": 10.0,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3241 kcal/kg, 334 kcal/cup",
+      "aafco_statement": "Fromm Family Weight Management Gold Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for maintenance.",
+      "images": [
+        "/products/fromm/fromm-food-weight-management-gold.png"
+      ]
+    },
+    {
+      "name": "Digestive Supplement Pâté",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/nutritionals/can/digestive-dog-food-supplement-pate/",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "sub_brand": "Nutritionals",
+      "ingredients_raw": "Chicken, Pumpkin, Chicken Broth, Apples, Chicken Liver, White Rice, Dried Plain Beet Pulp, Miscanthus Grass, Dried Chicory Root, Sunflower Oil (preserved with mixed tocopherols), Salmon Oil (preserved with mixed tocopherols), Dried Yeast, Flaxseed, Potassium Chloride, Xanthan Gum, Agar-Agar, Salt, Minerals [Dicalcium Phosphate, Zinc Sulfate, Magnesium Sulfate, Ferrous Sulfate, Zinc Proteinate, Calcium Carbonate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Calcium Iodate, Manganese Sulfate, Copper Proteinate, Manganese Proteinate], Vitamins [Vitamin E Supplement, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.0,
+        "crude_fat_min": 2.5,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 78.0,
+        "omega_3_min": 0.4,
+        "omega_6_min": 1.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "823 kcal/kg, 303 kcal/can",
+      "images": [
+        "/products/fromm/fromm-supplement-digestive-supplement-p-t.png"
+      ]
+    },
+    {
+      "name": "Mobility Supplement Pâté",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/nutritionals/can/mobility-dog-food-supplement-pate/",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "sub_brand": "Nutritionals",
+      "ingredients_raw": "Chicken, Chicken Bone Broth, Chicken Liver, Brown Rice, Flaxseed, Glucosamine Hydrochloride, Chondroitin Sulfate, Salmon Oil (preserved with mixed tocopherols), New Zealand Green Mussels, Egg Shell Meal, Fennel, Xanthan Gum, Agar-Agar, Chicken Cartilage, Turmeric, Salt, Potassium Chloride, Minerals [Dicalcium Phosphate, Zinc Sulfate, Magnesium Sulfate, Ferrous Sulfate, Zinc Proteinate, Calcium Carbonate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Calcium Iodate, Manganese Sulfate, Copper Proteinate, Manganese Proteinate], Vitamins [Vitamin E Supplement, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0,
+        "omega_3_min": 0.3,
+        "omega_6_min": 1.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1005 kcal/kg, 370 kcal/can",
+      "images": [
+        "/products/fromm/fromm-supplement-mobility-supplement-p-t.png"
+      ]
+    },
+    {
+      "name": "Immunity Supplement Pâté",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/nutritionals/can/immunity-dog-food-supplement-pate/",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "sub_brand": "Nutritionals",
+      "ingredients_raw": "Chicken, Chicken Broth, Salmon, Brown Rice, Cranberries, Blueberries, Chicken Liver, Carrots, Salmon Oil (preserved with mixed tocopherols), Flaxseed, Turmeric, Ascorbic Acid, Cinnamon, Yucca Schidigera Extract, Dried Egg Product, Xanthan Gum, Agar-Agar, Potassium Chloride, Salt, Minerals [Dicalcium Phosphate, Zinc Sulfate, Magnesium Sulfate, Ferrous Sulfate, Zinc Proteinate, Calcium Carbonate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Calcium Iodate, Manganese Sulfate, Copper Proteinate, Manganese Proteinate], Vitamins [Vitamin E Supplement, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.0,
+        "crude_fat_min": 3.5,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 78.0,
+        "omega_3_min": 0.4,
+        "omega_6_min": 0.8
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "950 kcal/kg, 350 kcal/can",
+      "images": [
+        "/products/fromm/fromm-supplement-immunity-supplement-p-t.png"
+      ]
+    },
+    {
+      "name": "Chicken Formula Digestive Support Supplement",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/nutritionals/can/chicken-formula/",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "sub_brand": "Nutritionals",
+      "ingredients_raw": "Chicken, Chicken Broth, Chicken Liver, White Rice, Pumpkin, Miscanthus Grass, Flaxseed, Chicory Root Extract, Salmon Oil (preserved with mixed tocopherols), Sunflower Oil (preserved with mixed tocopherols), Minerals [Dicalcium Phosphate, Zinc Sulfate, Magnesium Sulfate, Ferrous Sulfate, Zinc Proteinate, Calcium Carbonate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Calcium Iodate, Manganese Sulfate, Copper Proteinate, Manganese Proteinate], Potassium Chloride, Xanthan Gum, Agar-Agar, Salt, Vitamins [Vitamin E Supplement, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1076 kcal/kg, 372 kcal/can",
+      "images": [
+        "/products/fromm/fromm-supplement-chicken-formula-digestive-support-supplement.png"
+      ]
+    },
+    {
+      "name": "Whitefish Formula Digestive Support Supplement",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/nutritionals/can/whitefish-formula/",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "sub_brand": "Nutritionals",
+      "ingredients_raw": "Whitefish, Fish Broth, Potatoes, Pumpkin, Miscanthus Grass, Sunflower Oil (preserved with mixed tocopherols), Natural Flavor, Chicory Root Extract, Salmon Oil (preserved with mixed tocopherols), Minerals [Dicalcium Phosphate, Zinc Sulfate, Magnesium Sulfate, Ferrous Sulfate, Zinc Proteinate, Calcium Carbonate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Calcium Iodate, Manganese Sulfate, Copper Proteinate, Manganese Proteinate], Salt, Potassium Chloride, Xanthan Gum, Agar-Agar, Vitamins [Choline Chloride, Vitamin E Supplement, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "881 kcal/kg, 305 kcal/can",
+      "images": [
+        "/products/fromm/fromm-supplement-whitefish-formula-digestive-support-supplement.png"
+      ]
+    },
+    {
+      "name": "Sensitive Skin & Stomach Complete Dog Food Pâté",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/nutritionals/can/sensitive-skin-and-stomach-supplement-pate/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Nutritionals",
+      "ingredients_raw": "Salmon, Salmon Broth, Pumpkin, Pork Liver, Apples, Whole Oats, Brown Rice, Miscanthus Grass, Psyllium Seed Husk, Dried Plain Beet Pulp, Salmon Oil (preserved with mixed tocopherols), Dried Lactobacillus acidophilus Fermentation Product, Xanthan Gum, Agar-Agar, Potassium Chloride, Salt, Minerals [Dicalcium Phosphate, Zinc Sulfate, Magnesium Sulfate, Ferrous Sulfate, Zinc Proteinate, Calcium Carbonate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Calcium Iodate, Manganese Sulfate, Copper Proteinate, Manganese Proteinate], Vitamins [Vitamin E Supplement, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.0,
+        "crude_fat_min": 2.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 78.0,
+        "omega_3_min": 0.4,
+        "omega_6_min": 0.8
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "914 kcal/kg, 337 kcal/can",
+      "aafco_statement": "Fromm Family Nutritionals Sensitive Skin and Stomach Complete Dog Food Pâté is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages, including growth of large size dogs (70 lb. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-sensitive-skin-stomach-complete-dog-food-p-t.png"
+      ]
+    },
+    {
+      "name": "Digestive Functional Dog Treats",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/nutritionals/treats/digestive-functional-dog-treats/",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Nutritionals",
+      "ingredients_raw": "Pumpkin, White Rice, Brown Rice, Tapioca Starch, Dried Egg Product, Xanthan Gum, Gelatin, Psyllium Seed Husk, Miscanthus Grass, Flaxseed, Salt, Dried Chicory Root, Fennel, L-Carnitine",
+      "guaranteed_analysis": {
+        "crude_protein_min": 10.0,
+        "crude_fat_min": 4.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "omega_3_min": 0.5,
+        "omega_6_min": 1.6
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "2 Calories per treat (approximate)",
+      "images": [
+        "/products/fromm/fromm-treat-digestive-functional-dog-treats.png"
+      ]
+    },
+    {
+      "name": "Immunity Functional Dog Treats",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/nutritionals/treats/immunity-functional-dog-treats/",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Nutritionals",
+      "ingredients_raw": "White Rice, Brown Rice, Tapioca Starch, Salmon, Dried Egg Product, Cranberries, Blueberries, Carrots, Gelatin, Flaxseed, Xanthan Gum, Salmon Oil (preserved with mixed tocopherols), Salt, Yucca Schidigera Extract, Turmeric, Vitamin E Supplement, Citric Acid (Preservative), Cinnamon, Ascorbic Acid",
+      "guaranteed_analysis": {
+        "crude_protein_min": 13.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "omega_3_min": 0.3,
+        "omega_6_min": 1.6
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3 Calories per treat (approximate)",
+      "images": [
+        "/products/fromm/fromm-treat-immunity-functional-dog-treats.png"
+      ]
+    },
+    {
+      "name": "Mobility Functional Dog Treats",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/nutritionals/treats/mobility-functional-dog-treats/",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Nutritionals",
+      "ingredients_raw": "White Rice, Brown Rice, Tapioca Starch, Chicken Bone Broth, Cheese, Dried Egg Product, Chicken Collagen, Xanthan Gum, Chicken Cartilage, Natural Hickory Smoke Flavor, Salt, Egg Shell Meal, Glucosamine Hydrochloride, Chondroitin Sulfate, New Zealand Green Mussels, Yucca Schidigera Extract, Vitamin E Supplement",
+      "guaranteed_analysis": {
+        "crude_protein_min": 11.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 10.0,
+        "omega_3_min": 0.1,
+        "omega_6_min": 1.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3 Calories per treat (approximate)",
+      "images": [
+        "/products/fromm/fromm-treat-mobility-functional-dog-treats.png"
+      ]
+    },
+    {
+      "name": "Sensitive Skin & Stomach Salmon & Whole Oats Recipe",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/nutritionals/dry/sensitive-skin-and-stomach-dry/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Nutritionals",
+      "ingredients_raw": "Hydrolyzed Salmon, Menhaden Fish Meal, Whole Oats, Pearled Barley, Brown Rice, Pumpkin, Dried Plain Beet Pulp, Pork Fat (preserved with mixed tocopherols), Hydrolyzed Whitefish, Dried Yeast, Hydrolyzed Pork Liver, Salmon Oil (preserved with mixed tocopherols), Dried Egg Product, Flaxseed, Ground Miscanthus Grass, Psyllium Seed Husk, Natural Flavor, Apples, Calcium Sulfate, Monocalcium Phosphate, Potassium Chloride, Salt, Vitamins [Choline Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Dried Chicory Root, Fennel, Dried Lactobacillus acidophilus Fermentation Product, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Yucca Schidigera Extract, Sodium Selenite, Sorbic Acid (Preservative), DL-Methionine, L-Tryptophan, Taurine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 7.0,
+        "moisture_max": 10.0,
+        "omega_3_min": 0.8,
+        "omega_6_min": 2.4
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3465 kcal/kg, 336 kcal/cup",
+      "aafco_statement": "Fromm Family Nutritionals Sensitive Skin & Stomach Salmon & Whole Oats Recipe Complete Dog Food is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages, including growth of large size dogs (70 lb. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-sensitive-skin-stomach-salmon-whole-oats-recipe.png"
+      ]
+    },
+    {
+      "name": "Digestive Support Low Fat Chicken & Oatmeal Recipe",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/nutritionals/dry/digestive-support-low-fat-chicken-oatmeal-recipe/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Nutritionals",
+      "ingredients_raw": "Hydrolyzed Chicken, Chicken Meal, Oatmeal, Pearled Barley, White Rice, Brown Rice, Dried Plain Beet Pulp, Hydrolyzed Chicken Liver, Menhaden Fish Meal, Pumpkin, Dried Yeast, Natural Flavor, Chicken Fat (preserved with mixed tocopherols), Salmon Oil (preserved with mixed tocopherols), Dried Egg Product, Flaxseed, Salt, Potassium Chloride, Psyllium Seed Husk, Vitamins [Choline Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Dried Chicory Root, Dried Lactobacillus acidophilus Fermentation Product, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Calcium Sulfate, Monocalcium Phosphate, Sorbic Acid (Preservative), Sodium Selenite, Fennel, Yucca Schidigera Extract, Taurine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 7.0,
+        "crude_fat_max": 9.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3326 kcal/kg, 329 kcal/cup",
+      "images": [
+        "/products/fromm/fromm-food-digestive-support-low-fat-chicken-oatmeal-recipe.png"
+      ]
+    },
+    {
+      "name": "Mobility Chicken & Whole Oats Recipe",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/nutritionals/dry/mobility-chicken-whole-oats-recipe/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Nutritionals",
+      "ingredients_raw": "Chicken, Chicken Meal, Whole Oats, Whole Barley, Brown Rice, Bone Broth, Sorghum, Dried Yeast, Salmon Meal, Salmon Oil (preserved with mixed tocopherols), Chicken Fat (preserved with mixed tocopherols), Dried Egg Product, Flaxseed, Cheese, Natural Flavor, Chicken Liver, Salt, Potassium Chloride, Egg Shell Meal, Monosodium Phosphate, Chicken Cartilage, Vitamins [Choline Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Gelatin, Calcium Sulfate, Cranberries, Blueberries, New Zealand Green Mussels, Glucosamine Hydrochloride, Dried Chicory Root, Turmeric, Olive Oil (preserved with mixed tocopherols), Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate, Sodium Selenite], Yucca Schidigera Extract, Chondroitin Sulfate, Sorbic Acid (Preservative), Taurine, DL-Methionine, L-Tryptophan, L-Carnitine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 13.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "omega_3_min": 0.8,
+        "omega_6_min": 2.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3538 kcal/kg, 389 kcal/cup",
+      "aafco_statement": "Fromm Family Nutritionals Mobility Chicken & Whole Oats Recipe Complete Dog Food is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages, including growth of large size dogs (70 lb. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-mobility-chicken-whole-oats-recipe.png"
+      ]
+    },
+    {
+      "name": "Beef & Barley Pâté",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/pate/can/beef-and-barley-pate/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Pâté",
+      "ingredients_raw": "Beef, Beef Broth, Beef Liver, Whole Barley, Potatoes, Carrots, Peas, Pork, Tomato Paste, Minerals [Dicalcium Phosphate, Zinc Sulfate, Magnesium Sulfate, Ferrous Sulfate, Zinc Proteinate, Calcium Carbonate, Iron Proteinate, Sodium Selenite, Calcium Iodate, Manganese Sulfate, Copper Proteinate, Manganese Proteinate], Salmon Oil (preserved with mixed tocopherols), Agar-Agar, Potassium Chloride, Salt, Xanthan Gum, Vitamins [Vitamin E Supplement, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "945 kcal/kg, 327 kcal/can",
+      "aafco_statement": "Fromm Beef & Barley Pâté Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for all life stages, except for growth of large size dogs (70 lbs. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-beef-barley-p-t.png"
+      ]
+    },
+    {
+      "name": "Beef & Sweet Potato Pâté",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/pate/can/beef-and-sweet-potato-pate/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Pâté",
+      "ingredients_raw": "Beef, Beef Broth, Beef Liver, Sweet Potatoes, Lentils, Carrots, Potatoes, Peas, Tomato Paste, Salmon Oil (preserved with mixed tocopherols), Calcium Sulfate, Minerals [Dicalcium Phosphate, Zinc Sulfate, Magnesium Sulfate, Ferrous Sulfate, Zinc Proteinate, Calcium Carbonate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Calcium Iodate, Manganese Sulfate, Copper Proteinate, Manganese Proteinate], Agar-Agar, Salt, Potassium Chloride, Xanthan Gum, Vitamins [Vitamin E Supplement, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.0,
+        "crude_fat_min": 4.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "940 kcal/kg, 325 kcal/can",
+      "aafco_statement": "Fromm Beef & Sweet Potato Pâté Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages, including growth of large size dogs (70 lbs. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-beef-sweet-potato-p-t.png"
+      ]
+    },
+    {
+      "name": "Chicken Pâté",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/pate/can/chicken-pate/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Pâté",
+      "ingredients_raw": "Chicken, Chicken Broth, Chicken Liver, Potatoes, Carrots, Flaxseed, Peas, Tomato Paste, Dried Egg Product, Minerals [Dicalcium Phosphate, Zinc Sulfate, Magnesium Sulfate, Ferrous Sulfate, Zinc Proteinate, Calcium Carbonate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Calcium Iodate, Manganese Sulfate, Copper Proteinate, Manganese Proteinate], Salmon Oil (preserved with mixed tocopherols), Agar-Agar, Xanthan Gum, Salt, Vitamins [Potassium Chloride, Vitamin E Supplement, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.0,
+        "crude_fat_min": 6.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1134 kcal/kg, 392 kcal/can",
+      "aafco_statement": "Fromm Chicken Pâté Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages, including growth of large size dogs (70 lb. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-chicken-p-t.png"
+      ]
+    },
+    {
+      "name": "Chicken & Duck Pâté",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/pate/can/chicken-and-duck-pate/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Pâté",
+      "ingredients_raw": "Chicken, Chicken Broth, Duck, Chicken Liver, Potatoes, Carrots, Flaxseed, Peas, Tomato Paste, Dried Egg Product, Minerals [Dicalcium Phosphate, Zinc Sulfate, Magnesium Sulfate, Ferrous Sulfate, Zinc Proteinate, Calcium Carbonate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Calcium Iodate, Manganese Sulfate, Copper Proteinate, Manganese Proteinate], Agar-Agar, Salt, Potassium Chloride, Xanthan Gum, Vitamins [Vitamin E Supplement, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.0,
+        "crude_fat_min": 6.5,
+        "crude_fiber_max": 1.2,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1088 kcal/kg, 376 kcal/can",
+      "aafco_statement": "Fromm Pâté Chicken & Duck Pâté Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages, including growth of large size dogs (70 lb. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-chicken-duck-p-t.png"
+      ]
+    },
+    {
+      "name": "Chicken & Rice Pâté",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/pate/can/chicken-and-rice-pate/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Pâté",
+      "ingredients_raw": "Chicken, Chicken Broth, Chicken Liver, Brown Rice, Carrots, Peas, Broccoli, Tomato Paste, Salmon Oil (preserved with mixed tocopherols), Minerals [Dicalcium Phosphate, Zinc Sulfate, Magnesium Sulfate, Ferrous Sulfate, Zinc Proteinate, Calcium Carbonate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Calcium Iodate, Manganese Sulfate, Copper Proteinate, Manganese Proteinate], Potassium Chloride, Salt, Agar-Agar, Xanthan Gum, Vitamins [Vitamin E Supplement, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 10.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1040 kcal/kg, 360 kcal/can",
+      "aafco_statement": "Fromm Pâté Chicken & Rice Pâté Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages, including growth of large size dogs (70 lbs. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-chicken-rice-p-t.png"
+      ]
+    },
+    {
+      "name": "Chicken & Sweet Potato Pâté",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/pate/can/chicken-and-sweet-potato-pate/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Pâté",
+      "ingredients_raw": "Chicken, Chicken Broth, Chicken Liver, Sweet Potatoes, Lentils, Carrots, Potatoes, Peas, Tomato Paste, Salmon Oil (preserved with mixed tocopherols), Minerals [Dicalcium Phosphate, Zinc Sulfate, Magnesium Sulfate, Ferrous Sulfate, Zinc Proteinate, Calcium Carbonate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Calcium Iodate, Manganese Sulfate, Copper Proteinate, Manganese Proteinate], Agar-Agar, Salt, Potassium Chloride, Xanthan Gum, Vitamins [Vitamin E Supplement, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 10.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 1.2,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "998 kcal/kg, 345 kcal/can",
+      "aafco_statement": "Fromm Pâté Chicken & Sweet Potato Pâté Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages, including growth of large size dogs (70 lbs. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-chicken-sweet-potato-p-t.png"
+      ]
+    },
+    {
+      "name": "Duck À La Veg Pâté",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/pate/can/duck-a-la-veg-pate/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Pâté",
+      "ingredients_raw": "Duck, Duck Broth, Turkey, Sweet Potatoes, Turkey Liver, Lentils, Carrots, Broccoli, Apples, Salmon Oil (preserved with mixed tocopherols), Calcium Sulfate, Minerals [Dicalcium Phosphate, Zinc Sulfate, Magnesium Sulfate, Ferrous Sulfate, Zinc Proteinate, Calcium Carbonate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Calcium Iodate, Manganese Sulfate, Copper Proteinate, Manganese Proteinate], Blueberries, Cranberries, Agar-Agar, Xanthan Gum, Salt, Vitamins [Potassium Chloride, Vitamin E Supplement, Niacin Supplement, D-Calcium Pantothenate, Riboflavin Supplement, Vitamin A Acetate, Biotin, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.0,
+        "crude_fat_min": 6.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1145 kcal/kg, 395 kcal/can",
+      "aafco_statement": "Fromm Duck À La Veg Pâté Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for all life stages, including growth of large size dogs (70 lbs. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-duck-la-veg-p-t.png"
+      ]
+    },
+    {
+      "name": "Lamb Pâté",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/pate/can/lamb-pate/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Pâté",
+      "ingredients_raw": "Lamb, Lamb Broth, Lamb Liver, Pearled Barley, Potatoes, Carrots, Pork, Peas, Tomato Paste, Minerals [Dicalcium Phosphate, Zinc Sulfate, Magnesium Sulfate, Ferrous Sulfate, Zinc Proteinate, Calcium Carbonate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Calcium Iodate, Manganese Sulfate, Copper Proteinate, Manganese Proteinate], Salmon Oil (preserved with mixed tocopherols), Agar-Agar, Salt, Xanthan Gum, Vitamins [Potassium Chloride, Vitamin E Supplement, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 7.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1107 kcal/kg, 383 kcal/can",
+      "aafco_statement": "Fromm Lamb Pâté Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for all life stages, including growth of large size dogs (70 lbs. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-lamb-p-t.png"
+      ]
+    },
+    {
+      "name": "Lamb & Sweet Potato Pâté",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/pate/can/lamb-and-sweet-potato-pate/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Pâté",
+      "ingredients_raw": "Lamb, Lamb Broth, Lamb Liver, Sweet Potatoes, Lentils, Potatoes, Carrots, Peas, Tomato Paste, Minerals [Dicalcium Phosphate, Zinc Sulfate, Magnesium Sulfate, Ferrous Sulfate, Zinc Proteinate, Calcium Carbonate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Calcium Iodate, Manganese Sulfate, Copper Proteinate, Manganese Proteinate], Calcium Sulfate, Salmon Oil (preserved with mixed tocopherols), Agar-Agar, Salt, Potassium Chloride, Xanthan Gum, Vitamins [Vitamin E Supplement, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.5,
+        "crude_fat_min": 7.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1066 kcal/kg, 369 kcal/can",
+      "aafco_statement": "Fromm Lamb & Sweet Potato Pâté Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages, including growth of large size dogs (70 lbs. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-lamb-sweet-potato-p-t.png"
+      ]
+    },
+    {
+      "name": "Salmon & Chicken Pâté",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/pate/can/salmon-and-chicken-pate/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Pâté",
+      "ingredients_raw": "Salmon, Chicken, Chicken Broth, Chicken Liver, Potatoes, Carrots, Flaxseed, Peas, Tomato Paste, Dried Egg Product, Minerals [Dicalcium Phosphate, Zinc Sulfate, Magnesium Sulfate, Ferrous Sulfate, Zinc Proteinate, Calcium Carbonate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Calcium Iodate, Manganese Sulfate, Copper Proteinate, Manganese Proteinate], Salt, Potassium Chloride, Xanthan Gum, Locust Bean Gum, Vitamins [Vitamin E Supplement, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.0,
+        "crude_fat_min": 6.0,
+        "crude_fiber_max": 1.2,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1053 kcal/kg, 364 kcal/can",
+      "aafco_statement": "Fromm Salmon & Chicken Pâté Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages, except for growth of large size dogs (70 lbs. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-salmon-chicken-p-t.png"
+      ]
+    },
+    {
+      "name": "Seafood Medley Pâté",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/pate/can/seafood-medley-pate/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Pâté",
+      "ingredients_raw": "Salmon, Fish Broth, Whitefish, Tuna, Lentils, Carrots, Potatoes, Sweet Potatoes, Peas, Tomato Paste, Salt, Potassium Chloride, Salmon Oil (preserved with mixed tocopherols), Minerals [Dicalcium Phosphate, Zinc Sulfate, Magnesium Sulfate, Ferrous Sulfate, Zinc Proteinate, Calcium Carbonate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Calcium Iodate, Manganese Sulfate, Copper Proteinate, Manganese Proteinate], Locust Bean Gum, Xanthan Gum, Vitamins [Vitamin E Supplement, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "974 kcal/kg, 337 kcal/can",
+      "aafco_statement": "Fromm Seafood Medley Pâté Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages, except for growth of large size dogs (70 lbs. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-seafood-medley-p-t.png"
+      ]
+    },
+    {
+      "name": "Turkey Pâté",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/pate/can/turkey-pate/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Pâté",
+      "ingredients_raw": "Turkey, Turkey Broth, Turkey Liver, Pearled Barley, Potatoes, Carrots, Peas, Tomato Paste, Minerals [Dicalcium Phosphate, Zinc Sulfate, Magnesium Sulfate, Ferrous Sulfate, Zinc Proteinate, Calcium Carbonate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Calcium Iodate, Manganese Sulfate, Copper Proteinate, Manganese Proteinate], Salmon Oil (preserved with mixed tocopherols), Agar-Agar, Xanthan Gum, Salt, Vitamins [Potassium Chloride, Vitamin E Supplement, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 7.0,
+        "crude_fat_min": 5.5,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1028 kcal/kg, 355 kcal/can",
+      "aafco_statement": "Fromm Turkey Pâté Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages, except for growth of large size dogs (70 lbs. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-turkey-p-t.png"
+      ]
+    },
+    {
+      "name": "Turkey, Duck, & Sweet Potato Pâté",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/pate/can/turkey-duck-and-sweet-potato-pate/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Pâté",
+      "ingredients_raw": "Turkey, Turkey Broth, Duck, Turkey Liver, Sweet Potatoes, Lentils, Potatoes, Carrots, Peas, Tomato Paste, Salmon Oil (preserved with mixed tocopherols), Minerals [Dicalcium Phosphate, Zinc Sulfate, Magnesium Sulfate, Ferrous Sulfate, Zinc Proteinate, Calcium Carbonate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Calcium Iodate, Manganese Sulfate, Copper Proteinate, Manganese Proteinate], Agar-Agar, Salt, Potassium Chloride, Xanthan Gum, Vitamins [Vitamin E Supplement, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 1.2,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1090 kcal/kg, 377 kcal/can",
+      "aafco_statement": "Fromm Pâté Turkey, Duck, & Sweet Potato Pâté Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages, including growth of large size dogs (70 lbs. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-turkey-duck-sweet-potato-p-t.png"
+      ]
+    },
+    {
+      "name": "Turkey & Pumpkin Pâté",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/pate/can/turkey-and-pumpkin-pate/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Pâté",
+      "ingredients_raw": "Turkey, Turkey Broth, Turkey Liver, Chickpeas, Pumpkin, Carrots, Sweet Potatoes, Peas, Tomato Paste, Salmon Oil (preserved with mixed tocopherols), Minerals [Dicalcium Phosphate, Zinc Sulfate, Magnesium Sulfate, Ferrous Sulfate, Zinc Proteinate, Calcium Carbonate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Calcium Iodate, Manganese Sulfate, Copper Proteinate, Manganese Proteinate], Agar-Agar, Salt, Xanthan Gum, Vitamins [Potassium Chloride, Vitamin E Supplement, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.5,
+        "crude_fat_min": 6.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1139 kcal/kg, 394 kcal/can",
+      "aafco_statement": "Fromm Pâté Turkey & Pumpkin Pâté Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages, including growth of large size dogs (70 lbs. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-turkey-pumpkin-p-t.png"
+      ]
+    },
+    {
+      "name": "Venison & Beef Pâté",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/pate/can/venison-and-beef-pate/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Pâté",
+      "ingredients_raw": "Beef Broth, Venison, Beef, Beef Liver, Whole Barley, Potatoes, Carrots, Peas, Pork, Tomato Paste, Salt, Potassium Chloride, Minerals [Dicalcium Phosphate, Zinc Sulfate, Magnesium Sulfate, Ferrous Sulfate, Zinc Proteinate, Calcium Carbonate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Calcium Iodate, Manganese Sulfate, Copper Proteinate, Manganese Proteinate], Xanthan Gum, Locust Bean Gum, Vitamins [Vitamin E Supplement, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "909 kcal/kg, 314 kcal/can",
+      "aafco_statement": "Fromm Venison & Beef Pâté Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for all life stages, except for growth of large size dogs (70 lbs. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-venison-beef-p-t.png"
+      ]
+    },
+    {
+      "name": "Venison & Lentil Pâté",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/pate/can/venison-and-lentil-pate/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Pâté",
+      "ingredients_raw": "Venison, Venison Broth, Beef, Beef Liver, Lentils, Sweet Potatoes, Carrots, Potatoes, Peas, Tomato Paste, Salmon Oil (preserved with mixed tocopherols), Minerals [Dicalcium Phosphate, Zinc Sulfate, Magnesium Sulfate, Ferrous Sulfate, Zinc Proteinate, Calcium Carbonate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Calcium Iodate, Manganese Sulfate, Copper Proteinate, Manganese Proteinate], Xanthan Gum, Agar-Agar, Salt, Vitamins [Potassium Chloride, Vitamin E Supplement, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.0,
+        "crude_fat_min": 4.0,
+        "crude_fiber_max": 1.2,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "979 kcal/kg, 339 kcal/can",
+      "aafco_statement": "Fromm Venison & Lentil Pâté Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages, except for growth of large size dogs (70 lbs. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-venison-lentil-p-t.png"
+      ]
+    },
+    {
+      "name": "Whitefish & Lentil Pâté",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/pate/can/whitefish-and-lentil-pate/",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Pâté",
+      "ingredients_raw": "Whitefish, Fish Broth, Lentils, Salmon Oil (preserved with mixed tocopherols), Sweet Potatoes, Carrots, Potatoes, Peas, Tomato Paste, Salt, Potassium Chloride, Minerals [Dicalcium Phosphate, Zinc Sulfate, Magnesium Sulfate, Ferrous Sulfate, Zinc Proteinate, Calcium Carbonate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Calcium Iodate, Manganese Sulfate, Copper Proteinate, Manganese Proteinate], Xanthan Gum, Locust Bean Gum, Vitamins [Vitamin E Supplement, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid]",
+      "guaranteed_analysis": {
+        "crude_protein_min": 10.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 1.2,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "887 kcal/kg, 307 kcal/can",
+      "aafco_statement": "Fromm Whitefish & Lentil Pâté Food for Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages, except for growth of large size dogs (70 lbs. or more as an adult).",
+      "images": [
+        "/products/fromm/fromm-food-whitefish-lentil-p-t.png"
+      ]
+    },
+    {
+      "name": "Banana Peanut Buster Flavor",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/popetts/cracker-snacks/banana-peanut-buster-flavor/",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Popetts",
+      "ingredients_raw": "Wheat Flour, Banana, Peanut Butter, Dried Egg Product, Salt, Brewers Dried Yeast, Mixed Tocopherols (Preservative)",
+      "guaranteed_analysis": {
+        "crude_protein_min": 18.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 6.0,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3 Calories per treat (approximate)",
+      "images": [
+        "/products/fromm/fromm-treat-banana-peanut-buster-flavor.png"
+      ]
+    },
+    {
+      "name": "Chompy Cheese Flavor",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/popetts/cracker-snacks/chompy-cheese-flavor/",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Popetts",
+      "ingredients_raw": "Wheat Flour, Cheese, Salt, Brewers Dried Yeast, Garlic Powder",
+      "guaranteed_analysis": {
+        "crude_protein_min": 18.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "2 Calories per treat (approximate)",
+      "images": [
+        "/products/fromm/fromm-treat-chompy-cheese-flavor.png"
+      ]
+    },
+    {
+      "name": "Crispy-Airy Cranberry Flavor",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/popetts/cracker-snacks/crispy-airy-cranberry-flavor/",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Popetts",
+      "ingredients_raw": "Wheat Flour, Cranberries, Liver, Salt, Garlic Powder",
+      "guaranteed_analysis": {
+        "crude_protein_min": 18.0,
+        "crude_fat_min": 2.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "2 Calories per treat (approximate)",
+      "images": [
+        "/products/fromm/fromm-treat-crispy-airy-cranberry-flavor.png"
+      ]
+    },
+    {
+      "name": "Kickin' Chicken Liver Flavor",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/popetts/cracker-snacks/kickin-chicken-liver-flavor/",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Popetts",
+      "ingredients_raw": "Wheat Flour, Chicken Liver, Salt, Garlic Powder",
+      "guaranteed_analysis": {
+        "crude_protein_min": 18.0,
+        "crude_fat_min": 2.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "2 Calories per treat (approximate)",
+      "images": [
+        "/products/fromm/fromm-treat-kickin-chicken-liver-flavor.png"
+      ]
+    },
+    {
+      "name": "Tenderollies Bac'n Chedd-a-Rollie Flavor",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/tenderollies/treats/bac-n-chedd-a-rollie-flavor/",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Tenderollies",
+      "ingredients_raw": "Brown Rice, Pearled Barley, White Rice, Vegetable Glycerin, Tapioca Starch, Bacon, Pea Protein, Pork Fat (preserved with mixed tocopherols), Cheese, Natural Hickory Smoke Flavor, Sorbic Acid (Preservative), Phosphoric Acid, Salt, Citric Acid (Preservative), Mixed Tocopherols (Preservative)",
+      "guaranteed_analysis": {
+        "crude_protein_min": 10.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 27.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "2 Calories per treat (approximate)",
+      "images": [
+        "/products/fromm/fromm-treat-tenderollies-bac-n-chedd-a-rollie-flavor.png"
+      ]
+    },
+    {
+      "name": "Tenderollies Beef-a-Rollie Flavor",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/tenderollies/treats/beef-a-rollie-flavor/",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Tenderollies",
+      "ingredients_raw": "Beef, Brown Rice, Pearled Barley, White Rice, Vegetable Glycerin, Tapioca Starch, Pea Protein, Pork Fat (preserved with mixed tocopherols), Natural Hickory Smoke Flavor, Sorbic Acid (Preservative), Phosphoric Acid, Roasted Barley Flour, Salt, Citric Acid (Preservative), Mixed Tocopherols (Preservative)",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.0,
+        "crude_fat_min": 4.5,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 25.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "2 Calories per treat (approximate)",
+      "images": [
+        "/products/fromm/fromm-treat-tenderollies-beef-a-rollie-flavor.png"
+      ]
+    },
+    {
+      "name": "Tenderollies Chick-a-Rollie Flavor",
+      "brand": "Fromm",
+      "url": "https://frommfamily.com/products/dog/tenderollies/treats/chick-a-rollie-flavor/",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Tenderollies",
+      "ingredients_raw": "Chicken, Chickpeas, Yellow Peas, Tapioca Starch, Vegetable Glycerin, Pea Protein, Potatoes, Chicken Fat (preserved with mixed tocopherols), Phosphoric Acid, Salt, Sorbic Acid (Preservative), Citric Acid (Preservative), Mixed Tocopherols (Preservative)",
+      "guaranteed_analysis": {
+        "crude_protein_min": 14.0,
+        "crude_fat_min": 6.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 25.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "2 Calories per treat (approximate)",
+      "images": [
+        "/products/fromm/fromm-treat-tenderollies-chick-a-rollie-flavor.png"
+      ]
+    }
+  ]
+}

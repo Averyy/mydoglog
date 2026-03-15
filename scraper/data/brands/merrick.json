@@ -49,7 +49,7 @@
       "product_type": "food",
       "product_format": "dry",
       "sub_brand": "Limited Ingredient Diet",
-      "ingredients_raw": "INGREDIENTS: Deboned Salmon, Salmon Meal, Brown Rice, Oat Meal, Barley, Sweet Potatoes, Canola Oil, Potato Protein, Natural Flavor, Flaxseed, Miscanthus Grass, Dried Yeast, Potassium Chloride, Salt, Choline Chloride, MINERALS [Zinc Amino Acid Complex, Iron Amino Acid Complex, Sodium Selenite, Manganese Amino Acid Complex, Copper Amino Acid Complex, Calcium Iodate], DL-Methionine, Sunflower Oil, Taurine, VITAMINS [Vitamin E Supplement, Vitamin B-12 Supplement, Vitamin A Supplement, Niacin (Vitamin B-3), Thiamine Mononitrate (Vitamin B-1), Calcium Pantothenate (Vitamin B-5), Folic Acid (Vitamin B-9), Riboflavin Supplement (Vitamin B-2), Menadione Sodium Bisulfite Complex (Vitamin K), Pyridoxine Hydrochloride (Vitamin B-6), Biotin (Vitamin B-7), Vitamin D-3 Supplement], Preserved With Mixed Tocopherols",
+      "ingredients_raw": "Deboned Salmon, Salmon Meal, Brown Rice, Oat Meal, Barley, Sweet Potatoes, Canola Oil, Potato Protein, Natural Flavor, Flaxseed, Miscanthus Grass, Dried Yeast, Potassium Chloride, Salt, Choline Chloride, MINERALS [Zinc Amino Acid Complex, Iron Amino Acid Complex, Sodium Selenite, Manganese Amino Acid Complex, Copper Amino Acid Complex, Calcium Iodate], DL-Methionine, Sunflower Oil, Taurine, VITAMINS [Vitamin E Supplement, Vitamin B-12 Supplement, Vitamin A Supplement, Niacin (Vitamin B-3), Thiamine Mononitrate (Vitamin B-1), Calcium Pantothenate (Vitamin B-5), Folic Acid (Vitamin B-9), Riboflavin Supplement (Vitamin B-2), Menadione Sodium Bisulfite Complex (Vitamin K), Pyridoxine Hydrochloride (Vitamin B-6), Biotin (Vitamin B-7), Vitamin D-3 Supplement], Preserved With Mixed Tocopherols",
       "guaranteed_analysis": {
         "crude_protein_min": 24.0,
         "crude_fat_min": 14.0,
@@ -331,7 +331,7 @@
       "product_type": "food",
       "product_format": "wet",
       "sub_brand": "Slow-Cooked BBQ",
-      "ingredients_raw": "Deboned Pork, Beef Broth, Vegetable Broth, Pork Liver, Dried Egg Product, Potatoes, Carrots, Natural Porcine Flavor, Potato Starch, Guar Gum, Calcium Carbonate, Dried Tomato, Salt, Sunflower Oil, Fruit Juice Color, Sodium Phosphate, Potassium Chloride, Cane Molasses, Fish Oil (Preserved With Mixed Tocopherols), Flaxseed Oil, Natural Smoke Flavor, MINERALS [Zinc Proteinate, Iron Proteinate, Copper Proteinate, Cobalt Proteinate, Manganese Proteinate, Sodium Selenite, Potassium Iodide], Apple Cider vinegar, VITAMINS [Vitamin E Supplement, Thiamine Mononitrate (Vitamin B-1), Niacin Supplement (Vitamin B-3), Calcium Pantothenate (Vitamin B-5), Vitamin A Supplement (Vitamin B-2), Riboflavin Supplement (Vitamin B-2), Biotin (Vitamin B-7), Vitamin B-12 Supplement, Pyridoxine Hydrochloride (Vitamin B-6), Vitamin D-3 Supplement, Folic Acid (Vitamin B-9)], Choline Chloride, Magnesium Sulfate",
+      "ingredients_raw": "Deboned Pork, Beef Broth, Vegetable Broth, Pork Liver, Dried Egg Product, Potatoes, Carrots, Natural Porcine Flavor, Potato Starch, Guar Gum, Calcium Carbonate, Dried Tomato, Salt, Sunflower Oil, Fruit Juice Color, Sodium Phosphate, Potassium Chloride, Cane Molasses, Fish Oil (Preserved With Mixed Tocopherols), Flaxseed Oil, Natural Smoke Flavor, MINERALS [Zinc Proteinate, Iron Proteinate, Copper Proteinate, Cobalt Proteinate, Manganese Proteinate, Sodium Selenite, Potassium Iodide], Apple Cider vinegar, VITAMINS [Vitamin E Supplement, Thiamine Mononitrate (Vitamin B-1), Niacin Supplement (Vitamin B-3), Calcium Pantothenate (Vitamin B-5), Vitamin A Supplement, Riboflavin Supplement (Vitamin B-2), Biotin (Vitamin B-7), Vitamin B-12 Supplement, Pyridoxine Hydrochloride (Vitamin B-6), Vitamin D-3 Supplement, Folic Acid (Vitamin B-9)], Choline Chloride, Magnesium Sulfate",
       "guaranteed_analysis": {
         "crude_protein_min": 8.0,
         "crude_fat_min": 1.5,
@@ -352,7 +352,7 @@
       "product_type": "food",
       "product_format": "wet",
       "sub_brand": "Slow-Cooked BBQ",
-      "ingredients_raw": "Deboned Chicken, Chicken Broth, Turkey Broth, Potatoes, Spinach, Dried Egg Product, Natural Flavor, Potato Starch, Guar Gum, Salt, Dried Tomato, Fruit Juice Color, Sunflower Oil, Fish Oil (Preserved With Mixed Tocopherols), Sodium Phosphate, Calcium Carbonate, Potassium Chloride, Natural Smoke Flavor, MINERALS [Zinc Proteinate, Iron Proteinate, Copper Proteinate, Cobalt Proteinate, Manganese Proteinate, Sodium Selenite, Potassium Iodide], VITAMINS [Vitamin E Supplement, Thiamine Mononitrate (Vitamin B-1), Niacin Supplement (Vitamin B-3),Calcium Pantothenate (Vitamin B-5), Vitamin A Supplement, Riboflavin Supplement (Vitamin B-2), Biotin (Vitamin B-7), Vitamin B-12 Supplement, Pyridoxine Hydrochloride (Vitamin B-6), Vitamin D-3 Supplement, Folic Acid (Vitamin B-9)], Cane Molasses, Cumin, Choline Chloride, Magnesium Sulfate",
+      "ingredients_raw": "Deboned Chicken, Chicken Broth, Turkey Broth, Potatoes, Spinach, Dried Egg Product, Natural Flavor, Potato Starch, Guar Gum, Salt, Dried Tomato, Fruit Juice Color, Sunflower Oil, Fish Oil (Preserved With Mixed Tocopherols), Sodium Phosphate, Calcium Carbonate, Potassium Chloride, Natural Smoke Flavor, MINERALS [Zinc Proteinate, Iron Proteinate, Copper Proteinate, Cobalt Proteinate, Manganese Proteinate, Sodium Selenite, Potassium Iodide], VITAMINS [Vitamin E Supplement, Thiamine Mononitrate (Vitamin B-1), Niacin Supplement (Vitamin B-3), Calcium Pantothenate (Vitamin B-5), Vitamin A Supplement, Riboflavin Supplement (Vitamin B-2), Biotin (Vitamin B-7), Vitamin B-12 Supplement, Pyridoxine Hydrochloride (Vitamin B-6), Vitamin D-3 Supplement, Folic Acid (Vitamin B-9)], Cane Molasses, Cumin, Choline Chloride, Magnesium Sulfate",
       "guaranteed_analysis": {
         "crude_protein_min": 8.0,
         "crude_fat_min": 2.0,
@@ -615,7 +615,7 @@
       "product_format": "wet",
       "sub_brand": "Lil' Plates",
       "breed_size": "small",
-      "ingredients_raw": "DEBONED TURKEY, TURKEY BROTH, CHICKEN BROTH, CHICKEN LIVER, DEBONED CHICKEN, DRIED EGG WHITES, POTATO STARCH, SWEET POTATOES, CARROTS, GREEN BEANS, APPLES, PEAS, POTATOES, GUAR GUM, TRICALCIUM PHOSPHATE, SUNFLOWER OIL, SODIUM PHOSPHATE, SALT, NATURAL FLAVOR, POTASSIUM CHLORIDE, MINERALS (ZINC AMINO ACID CHELATE, IRON AMINO ACID CHELATE, COPPER AMINO ACID CHELATE, MANGANESE AMINO ACID CHELATE, SODIUM SELENITE, COBALT AMINO ACID CHELATE, POTASSIUM IODIDE), VITAMINS (VITAMIN E SUPPLEMENT, THIAMINE MONONITRATE, NIACIN SUPPLEMENT, d-CALCIUM PANTOTHENATE, VITAMIN A SUPPLEMENT, RIBOFLAVIN SUPPLEMENT, BIOTIN, VITAMIN B12 SUPPLEMENT, PYRIDOXINE HYDROCHLORIDE,( VITAMIN B6), VITAMIN D3 SUPPLEMENT, FOLIC ACID), CHOLINE CHLORIDE, XANTHAN GUM",
+      "ingredients_raw": "DEBONED TURKEY, TURKEY BROTH, CHICKEN BROTH, CHICKEN LIVER, DEBONED CHICKEN, DRIED EGG WHITES, POTATO STARCH, SWEET POTATOES, CARROTS, GREEN BEANS, APPLES, PEAS, POTATOES, GUAR GUM, TRICALCIUM PHOSPHATE, SUNFLOWER OIL, SODIUM PHOSPHATE, SALT, NATURAL FLAVOR, POTASSIUM CHLORIDE, MINERALS (ZINC AMINO ACID CHELATE, IRON AMINO ACID CHELATE, COPPER AMINO ACID CHELATE, MANGANESE AMINO ACID CHELATE, SODIUM SELENITE, COBALT AMINO ACID CHELATE, POTASSIUM IODIDE), VITAMINS (VITAMIN E SUPPLEMENT, THIAMINE MONONITRATE, NIACIN SUPPLEMENT, d-CALCIUM PANTOTHENATE, VITAMIN A SUPPLEMENT, RIBOFLAVIN SUPPLEMENT, BIOTIN, VITAMIN B12 SUPPLEMENT, PYRIDOXINE HYDROCHLORIDE (VITAMIN B6), VITAMIN D3 SUPPLEMENT, FOLIC ACID), CHOLINE CHLORIDE, XANTHAN GUM",
       "guaranteed_analysis": {
         "crude_protein_min": 8.0,
         "crude_fat_min": 3.5,
@@ -700,7 +700,7 @@
       "product_type": "treat",
       "product_format": "dry",
       "sub_brand": "Fresh Kisses",
-      "ingredients_raw": "Tapioca Starch, Pea Starch, Vegetable Glycerin, Water, Gelatin, Natural Flavor, Fruit Juice Color, Coconut Oil, Sunflower Seed Lecithin, Turmeric Spice, Peppermint Oil, Lemongrass Oil, Rosemary Oil. 2",
+      "ingredients_raw": "Tapioca Starch, Pea Starch, Vegetable Glycerin, Water, Gelatin, Natural Flavor, Fruit Juice Color, Coconut Oil, Sunflower Seed Lecithin, Turmeric Spice, Peppermint Oil, Lemongrass Oil, Rosemary Oil",
       "guaranteed_analysis": {
         "crude_protein_min": 13.0,
         "crude_fat_min": 0.5,
@@ -721,7 +721,7 @@
       "product_type": "treat",
       "product_format": "dry",
       "sub_brand": "Fresh Kisses",
-      "ingredients_raw": "Tapioca Starch, Pea Starch, Vegetable Glycerin, Water, Gelatin, Natural Flavor, Fruit Juice Color, Coconut Oil, Sunflower Seed Lecithin, Turmeric Spice, Peppermint Oil, Lemongrass Oil, Rosemary Oil. 2",
+      "ingredients_raw": "Tapioca Starch, Pea Starch, Vegetable Glycerin, Water, Gelatin, Natural Flavor, Fruit Juice Color, Coconut Oil, Sunflower Seed Lecithin, Turmeric Spice, Peppermint Oil, Lemongrass Oil, Rosemary Oil",
       "guaranteed_analysis": {
         "crude_protein_min": 13.0,
         "crude_fat_min": 0.5,
@@ -742,7 +742,7 @@
       "product_type": "treat",
       "product_format": "dry",
       "sub_brand": "Fresh Kisses",
-      "ingredients_raw": "Tapioca Starch, Pea Starch, Vegetable Glycerin, Water, Gelatin, Natural Flavor, Fruit Juice Color, Coconut Oil, Sunflower Seed Lecithin, Turmeric Spice, Peppermint Oil, Lemongrass Oil, Rosemary Oil. 2",
+      "ingredients_raw": "Tapioca Starch, Pea Starch, Vegetable Glycerin, Water, Gelatin, Natural Flavor, Fruit Juice Color, Coconut Oil, Sunflower Seed Lecithin, Turmeric Spice, Peppermint Oil, Lemongrass Oil, Rosemary Oil",
       "guaranteed_analysis": {
         "crude_protein_min": 13.0,
         "crude_fat_min": 0.5,
@@ -763,7 +763,7 @@
       "product_type": "treat",
       "product_format": "dry",
       "sub_brand": "Fresh Kisses",
-      "ingredients_raw": "Tapioca Starch, Pea Starch, Vegetable Glycerin, Water, Gelatin, Natural Flavor, Fruit Juice Color, Coconut Oil, Sunflower Seed Lecithin, Turmeric Spice, Peppermint Oil, Lemongrass Oil, Rosemary Oil. 2",
+      "ingredients_raw": "Tapioca Starch, Pea Starch, Vegetable Glycerin, Water, Gelatin, Natural Flavor, Fruit Juice Color, Coconut Oil, Sunflower Seed Lecithin, Turmeric Spice, Peppermint Oil, Lemongrass Oil, Rosemary Oil",
       "guaranteed_analysis": {
         "crude_protein_min": 13.0,
         "crude_fat_min": 0.5,
@@ -784,7 +784,7 @@
       "product_type": "treat",
       "product_format": "dry",
       "sub_brand": "Fresh Kisses",
-      "ingredients_raw": "Tapioca Starch, Pea Starch, Vegetable Glycerin, Water, Gelatin, Natural Flavor, Sunflower Seed Lecithin, Peppermint, Spearmint Oil, Turmeric Spice. 2",
+      "ingredients_raw": "Tapioca Starch, Pea Starch, Vegetable Glycerin, Water, Gelatin, Natural Flavor, Sunflower Seed Lecithin, Peppermint, Spearmint Oil, Turmeric Spice",
       "guaranteed_analysis": {
         "crude_protein_min": 13.0,
         "crude_fat_min": 0.5,
@@ -805,7 +805,7 @@
       "product_type": "treat",
       "product_format": "dry",
       "sub_brand": "Fresh Kisses",
-      "ingredients_raw": "Tapioca Starch, Pea Starch, Vegetable Glycerin, Water, Gelatin, Natural Flavor, Sunflower Seed Lecithin, Peppermint, Spearmint Oil, Turmeric Spice. 2",
+      "ingredients_raw": "Tapioca Starch, Pea Starch, Vegetable Glycerin, Water, Gelatin, Natural Flavor, Sunflower Seed Lecithin, Peppermint, Spearmint Oil, Turmeric Spice",
       "guaranteed_analysis": {
         "crude_protein_min": 13.0,
         "crude_fat_min": 0.5,
@@ -826,7 +826,7 @@
       "product_type": "treat",
       "product_format": "dry",
       "sub_brand": "Fresh Kisses",
-      "ingredients_raw": "Tapioca Starch, Pea Starch, Vegetable Glycerin, Water, Gelatin, Natural Flavor, Sunflower Seed Lecithin, Peppermint, Spearmint Oil, Turmeric Spice. 2",
+      "ingredients_raw": "Tapioca Starch, Pea Starch, Vegetable Glycerin, Water, Gelatin, Natural Flavor, Sunflower Seed Lecithin, Peppermint, Spearmint Oil, Turmeric Spice",
       "guaranteed_analysis": {
         "crude_protein_min": 13.0,
         "crude_fat_min": 0.5,
@@ -1234,7 +1234,7 @@
       "product_type": "food",
       "product_format": "wet",
       "sub_brand": "Grain Free",
-      "ingredients_raw": "Deboned Turkey, Chicken Broth, Duck, Chicken, Turkey Broth, Dried Egg Product, Sweet Potatoes, Carrots, Green Beans, Apples, Natural Flavor, Agar-Agar, Guar Gum, Salt, Potato Protein, Potato Starch, Flaxseed Oil, Potassium Chloride, Flaxseed Meal, MINERALS [Zinc Proteinate, Iron Proteinate, Copper Proteinate, Cobalt Proteinate, Manganese Proteinate, Sodium Selenite, Potassium Iodide], Magnesium Sulfate, VITAMINS [Vitamin E Supplement, Thiamine Mononitrate (Vitamin B-1), Niacin Supplement (Vitamin B-3), Calcium Pantothenate (Vitamin B-5), Vitamin A Supplement, Riboflavin Supplement (Vitamin B-2), Biotin (Vitamin B-7), Vitamin B-12 Supplement, Pyridoxine Hydrochloride (Vitamin B-6), Vitamin D-3 Supplement, Folic Acid(Vitamin B-9)], Rosemary, Sage, Thyme, Sodium Phosphate, Choline Chloride, Yucca Schidigera Extract, Calcium Carbonate",
+      "ingredients_raw": "Deboned Turkey, Chicken Broth, Duck, Chicken, Turkey Broth, Dried Egg Product, Sweet Potatoes, Carrots, Green Beans, Apples, Natural Flavor, Agar-Agar, Guar Gum, Salt, Potato Protein, Potato Starch, Flaxseed Oil, Potassium Chloride, Flaxseed Meal, MINERALS [Zinc Proteinate, Iron Proteinate, Copper Proteinate, Cobalt Proteinate, Manganese Proteinate, Sodium Selenite, Potassium Iodide], Magnesium Sulfate, VITAMINS [Vitamin E Supplement, Thiamine Mononitrate (Vitamin B-1), Niacin Supplement (Vitamin B-3), Calcium Pantothenate (Vitamin B-5), Vitamin A Supplement, Riboflavin Supplement (Vitamin B-2), Biotin (Vitamin B-7), Vitamin B-12 Supplement, Pyridoxine Hydrochloride (Vitamin B-6), Vitamin D-3 Supplement, Folic Acid (Vitamin B-9)], Rosemary, Sage, Thyme, Sodium Phosphate, Choline Chloride, Yucca Schidigera Extract, Calcium Carbonate",
       "guaranteed_analysis": {
         "crude_protein_min": 8.0,
         "crude_fat_min": 5.0,
@@ -1341,7 +1341,7 @@
       "product_format": "dry",
       "sub_brand": "Grain Free",
       "life_stage": "puppy",
-      "ingredients_raw": "Deboned beef, chicken meal, sweet potatoes, potatoes, peas, natural flavor, turkey meal, chicken fat, pea protein, miscanthus grass, dried yeast, salmon oil, flaxseed, potassium chloride, salt, choline chloride, MINERALS [zinc amino acid complex, iron amino acid complex, sodium selenite, manganese amino acid complex, copper amino acid complex, calcium iodate], apples, blueberries, DLMethionine, sunflower oil, taurine, VITAMINS [Vitamin E supplement, Vitamin B-12 supplement, Vitamin A supplement, niacin (Vitamin B-3), thiamine mononitrate (Vitamin B-1), calcium pantothenate (Vitamin B5), folic acid (Vitamin B-9), riboflavin supplement (Vitamin B-2), menadione sodium bisulfite complex (Vitamin K), pyridoxine hydrochloride (Vitamin B-6), biotin (Vitamin B-7), Vitamin D-3 supplement], mixed tocopherols for freshness",
+      "ingredients_raw": "Deboned beef, chicken meal, sweet potatoes, potatoes, peas, natural flavor, turkey meal, chicken fat, pea protein, miscanthus grass, dried yeast, salmon oil, flaxseed, potassium chloride, salt, choline chloride, MINERALS [zinc amino acid complex, iron amino acid complex, sodium selenite, manganese amino acid complex, copper amino acid complex, calcium iodate], apples, blueberries, DL-Methionine, sunflower oil, taurine, VITAMINS [Vitamin E supplement, Vitamin B-12 supplement, Vitamin A supplement, niacin (Vitamin B-3), thiamine mononitrate (Vitamin B-1), calcium pantothenate (Vitamin B5), folic acid (Vitamin B-9), riboflavin supplement (Vitamin B-2), menadione sodium bisulfite complex (Vitamin K), pyridoxine hydrochloride (Vitamin B-6), biotin (Vitamin B-7), Vitamin D-3 supplement], mixed tocopherols for freshness",
       "guaranteed_analysis": {
         "crude_protein_min": 28.0,
         "crude_fat_min": 15.0,

@@ -33,6 +33,11 @@ from .common import (
 
 logger = logging.getLogger(__name__)
 
+_INGREDIENT_OVERRIDES: dict[str, str] = {
+    "Cooper Sulfate": "Copper Sulfate",
+    "Chondrotin Sulfate": "Chondroitin Sulfate",
+}
+
 WEBSITE_URL = "https://www.petsmart.ca"
 
 _LISTING_URL = f"{WEBSITE_URL}/dog/food/f/brand/iams"
@@ -445,5 +450,8 @@ def scrape_iams(output_dir: Path) -> int:
             if product:
                 products.append(product)
 
-    write_brand_json("Iams", WEBSITE_URL, products, output_dir, slug="iams")
+    write_brand_json(
+        "Iams", WEBSITE_URL, products, output_dir,
+        slug="iams", ingredient_overrides=_INGREDIENT_OVERRIDES,
+    )
     return len(products)

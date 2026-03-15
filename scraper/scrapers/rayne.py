@@ -39,6 +39,12 @@ from .common import (
 
 logger = logging.getLogger(__name__)
 
+_INGREDIENT_OVERRIDES: dict[str, str] = {
+    "sunflower oil, (preserved with mixed tocopherols)": "sunflower oil (preserved with mixed tocopherols)",
+    "fructoolligosaccharide": "fructooligosaccharide",
+    "pyridoxine hydrochlordie": "pyridoxine hydrochloride",
+}
+
 PRODUCTS_URL = "https://raynenutrition.com/products.json"
 WEBSITE_URL = "https://raynenutrition.com"
 
@@ -609,5 +615,7 @@ def scrape_rayne(output_dir: Path) -> int:
             else:
                 logger.warning(f"Failed to parse: {shopify_product.get('title', '?')}")
 
-    write_brand_json("Rayne", WEBSITE_URL, products, output_dir, slug="rayne")
+    write_brand_json("Rayne", WEBSITE_URL, products, output_dir, slug="rayne",
+        ingredient_overrides=_INGREDIENT_OVERRIDES,
+    )
     return len(products)

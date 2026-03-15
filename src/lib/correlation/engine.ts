@@ -20,6 +20,7 @@ import type {
   PositionCategory,
   ProductIngredientRecord,
   RawBackfill,
+  RawMedicationPeriod,
 } from "./types"
 import { DEFAULT_SCORING_CONSTANTS } from "./types"
 
@@ -299,6 +300,23 @@ function buildDateIndex(input: CorrelationInput): DateIndex {
   }
 }
 
+/** Check if any medication with the given flag overlaps a date. */
+export function annotateMedicationFlags(
+  date: string,
+  medicationPeriods: RawMedicationPeriod[],
+): { onItchSuppressant: boolean; onGiSideEffectMed: boolean } {
+  let onItchSuppressant = false
+  let onGiSideEffectMed = false
+  for (const med of medicationPeriods) {
+    if (med.startDate <= date && (med.endDate == null || med.endDate >= date)) {
+      if (med.suppressesItch) onItchSuppressant = true
+      if (med.hasGiSideEffects) onGiSideEffectMed = true
+      if (onItchSuppressant && onGiSideEffectMed) break
+    }
+  }
+  return { onItchSuppressant, onGiSideEffectMed }
+}
+
 function buildDayOutcome(
   date: string,
   input: CorrelationInput,
@@ -335,11 +353,16 @@ function buildDayOutcome(
   // Pollen: 3-day rolling max of max(pollenLevel, sporeLevel ?? 0)
   const effectivePollenLevel = computeRollingMaxPollen(date, idx.pollenByDate)
 
+  // Medication flags
+  const medFlags = annotateMedicationFlags(date, input.medicationPeriods)
+
   return {
     poopScore,
     itchScore,
     scorecardPoopFallback,
     effectivePollenLevel,
+    onItchSuppressant: medFlags.onItchSuppressant,
+    onGiSideEffectMed: medFlags.onGiSideEffectMed,
   }
 }
 
@@ -479,6 +502,15 @@ interface IngredientAccumulator {
   goodItchDays: number
   highPollenBadItchDays: number
   lowPollenBadItchDays: number
+  // Medication on/off split accumulators
+  onItchMedItchSum: number
+  onItchMedItchCount: number
+  offItchMedItchSum: number
+  offItchMedItchCount: number
+  onGiMedPoopSum: number
+  onGiMedPoopCount: number
+  offGiMedPoopSum: number
+  offGiMedPoopCount: number
 }
 
 export function computeIngredientScores(
@@ -551,6 +583,14 @@ export function computeIngredientScores(
           goodItchDays: 0,
           highPollenBadItchDays: 0,
           lowPollenBadItchDays: 0,
+          onItchMedItchSum: 0,
+          onItchMedItchCount: 0,
+          offItchMedItchSum: 0,
+          offItchMedItchCount: 0,
+          onGiMedPoopSum: 0,
+          onGiMedPoopCount: 0,
+          offGiMedPoopSum: 0,
+          offGiMedPoopCount: 0,
         }
         accMap.set(ing.key, acc)
       }
@@ -642,6 +682,27 @@ export function computeIngredientScores(
       const itchGood = snap.outcome.itchScore != null && snap.outcome.itchScore <= 2
       if (poopGood || itchGood) acc.goodDays++
 
+      // Medication on/off split accumulation
+      if (effectivePoop != null) {
+        if (snap.outcome.onGiSideEffectMed) {
+          acc.onGiMedPoopSum += effectivePoop
+          acc.onGiMedPoopCount++
+        } else {
+          acc.offGiMedPoopSum += effectivePoop
+          acc.offGiMedPoopCount++
+        }
+      }
+
+      if (snap.outcome.itchScore != null) {
+        if (snap.outcome.onItchSuppressant) {
+          acc.onItchMedItchSum += snap.outcome.itchScore
+          acc.onItchMedItchCount++
+        } else {
+          acc.offItchMedItchSum += snap.outcome.itchScore
+          acc.offItchMedItchCount++
+        }
+      }
+
       if (snap.isBackfill) {
         acc.daysWithBackfill++
       } else if (hasEventLog) {
@@ -688,6 +749,18 @@ export function computeIngredientScores(
       isSplit: acc.isSplit,
       distinctProductCount: acc.productIds.size,
       itchSeasonallyConfounded: computeSeasonalConfounding(acc),
+      itchMedicationConfounded: acc.onItchMedItchCount > 0 &&
+        acc.onItchMedItchCount / (acc.onItchMedItchCount + acc.offItchMedItchCount) >= 0.5,
+      poopMedicationConfounded: acc.onGiMedPoopCount > 0 &&
+        acc.onGiMedPoopCount / (acc.onGiMedPoopCount + acc.offGiMedPoopCount) >= 0.5,
+      onMedRawAvgItchScore: acc.onItchMedItchCount > 0 ? acc.onItchMedItchSum / acc.onItchMedItchCount : null,
+      offMedRawAvgItchScore: acc.offItchMedItchCount > 0 ? acc.offItchMedItchSum / acc.offItchMedItchCount : null,
+      onMedRawAvgPoopScore: acc.onGiMedPoopCount > 0 ? acc.onGiMedPoopSum / acc.onGiMedPoopCount : null,
+      offMedRawAvgPoopScore: acc.offGiMedPoopCount > 0 ? acc.offGiMedPoopSum / acc.offGiMedPoopCount : null,
+      onItchMedDays: acc.onItchMedItchCount,
+      offItchMedDays: acc.offItchMedItchCount,
+      onGiMedDays: acc.onGiMedPoopCount,
+      offGiMedDays: acc.offGiMedPoopCount,
     })
   }
 
@@ -743,6 +816,10 @@ function hasBadSignal(s: IngredientScore): boolean {
  */
 const SOURCE_GROUP_TO_CROSS_REACTIVITY: Record<string, string[]> = {
   red_meat: ["cattle_sheep", "deer_elk", "pork"],
+  dairy: ["cattle_sheep"],
+  crustacean: ["shellfish", "arthropod"],
+  mollusk: ["shellfish"],
+  grain: ["gluten_grains"],
 }
 
 export function flagCrossReactivity(
@@ -921,6 +998,8 @@ export function buildBackfillSnapshots(
     const avgItch = itchDenominator > 0 ? itchNumerator / itchDenominator : null
     if (avgPoop == null && avgItch == null) continue
 
+    const medFlags = annotateMedicationFlags(date, input.medicationPeriods)
+
     snapshots.push({
       date: `backfill:${date}`,
       ingredients,
@@ -929,6 +1008,8 @@ export function buildBackfillSnapshots(
         itchScore: avgItch,
         scorecardPoopFallback: null,
         effectivePollenLevel: null,
+        onItchSuppressant: medFlags.onItchSuppressant,
+        onGiSideEffectMed: medFlags.onGiSideEffectMed,
       },
       isTransitionBuffer: false,
       isBackfill: true,
@@ -1009,6 +1090,38 @@ export function mergeScoresForGI(scores: IngredientScore[]): IngredientScore[] {
     const crossReactivityGroup = group.find((s) => s.crossReactivityGroup)?.crossReactivityGroup
     const crossReactivityWarning = group.find((s) => s.crossReactivityWarning)?.crossReactivityWarning
 
+    // Medication confounding: sum day counts across forms and recompute flags
+    // Using sum (not max) because each form tracks distinct days independently.
+    // Using some() would let a 6-day treat flag a 473-day protein family.
+    const totalOnItchMedDays = group.reduce((sum, s) => sum + s.onItchMedDays, 0)
+    const totalOffItchMedDays = group.reduce((sum, s) => sum + s.offItchMedDays, 0)
+    const totalOnGiMedDays = group.reduce((sum, s) => sum + s.onGiMedDays, 0)
+    const totalOffGiMedDays = group.reduce((sum, s) => sum + s.offGiMedDays, 0)
+
+    // Weighted average for on/off splits (weighted by day count per form)
+    let onMedPoopSum = 0, onMedPoopCount = 0
+    let offMedPoopSum = 0, offMedPoopCount = 0
+    let onMedItchSum = 0, onMedItchCount = 0
+    let offMedItchSum = 0, offMedItchCount = 0
+    for (const s of group) {
+      if (s.onMedRawAvgPoopScore != null) {
+        onMedPoopSum += s.onMedRawAvgPoopScore * s.onGiMedDays
+        onMedPoopCount += s.onGiMedDays
+      }
+      if (s.offMedRawAvgPoopScore != null) {
+        offMedPoopSum += s.offMedRawAvgPoopScore * s.offGiMedDays
+        offMedPoopCount += s.offGiMedDays
+      }
+      if (s.onMedRawAvgItchScore != null) {
+        onMedItchSum += s.onMedRawAvgItchScore * s.onItchMedDays
+        onMedItchCount += s.onItchMedDays
+      }
+      if (s.offMedRawAvgItchScore != null) {
+        offMedItchSum += s.offMedRawAvgItchScore * s.offItchMedDays
+        offMedItchCount += s.offItchMedDays
+      }
+    }
+
     merged.push({
       key: family,
       dayCount,
@@ -1034,6 +1147,18 @@ export function mergeScoresForGI(scores: IngredientScore[]): IngredientScore[] {
       isSplit: group.some((s) => s.isSplit),
       distinctProductCount: group.reduce((sum, s) => sum + s.distinctProductCount, 0),
       itchSeasonallyConfounded: group.some((s) => s.itchSeasonallyConfounded),
+      itchMedicationConfounded: totalOnItchMedDays > 0 &&
+        totalOnItchMedDays / (totalOnItchMedDays + totalOffItchMedDays) >= 0.5,
+      poopMedicationConfounded: totalOnGiMedDays > 0 &&
+        totalOnGiMedDays / (totalOnGiMedDays + totalOffGiMedDays) >= 0.5,
+      onMedRawAvgItchScore: onMedItchCount > 0 ? onMedItchSum / onMedItchCount : null,
+      offMedRawAvgItchScore: offMedItchCount > 0 ? offMedItchSum / offMedItchCount : null,
+      onMedRawAvgPoopScore: onMedPoopCount > 0 ? onMedPoopSum / onMedPoopCount : null,
+      offMedRawAvgPoopScore: offMedPoopCount > 0 ? offMedPoopSum / offMedPoopCount : null,
+      onItchMedDays: totalOnItchMedDays,
+      offItchMedDays: totalOffItchMedDays,
+      onGiMedDays: totalOnGiMedDays,
+      offGiMedDays: totalOffGiMedDays,
       crossReactivityGroup,
       crossReactivityWarning,
       formBreakdown: group.map((s) => ({

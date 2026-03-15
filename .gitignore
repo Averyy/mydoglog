@@ -60,3 +60,6 @@ scraper/.chewy_cookies/
 # screenshots from dev
 *.png
 !src/**/*.png
+
+# backups
+backups/

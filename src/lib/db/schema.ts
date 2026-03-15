@@ -446,6 +446,8 @@ export const medicationProducts = pgTable("medication_products", {
   description: text("description"),
   commonSideEffects: text("common_side_effects"),
   sideEffectsSources: text("side_effects_sources"),
+  suppressesItch: boolean("suppresses_itch").notNull().default(false),
+  hasGiSideEffects: boolean("has_gi_side_effects").notNull().default(false),
   createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
 })
 
@@ -467,6 +469,8 @@ export const medications = pgTable(
     ),
     interval: dosingIntervalEnum("interval"),
     notes: text("notes"),
+    suppressesItch: boolean("suppresses_itch"),
+    hasGiSideEffects: boolean("has_gi_side_effects"),
     createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
     updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
   },
