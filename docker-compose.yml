@@ -37,6 +37,12 @@ services:
       NODE_ENV: production
     ports:
       - "127.0.0.1:3847:3847"  # Only expose to localhost (Caddy proxies)
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://localhost:3847/ || exit 1"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 30s
     networks:
       - default
       - web
