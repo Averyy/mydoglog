@@ -98,6 +98,7 @@ export function ProductPicker({
   const [activeFilter, setActiveFilter] = useState<string>("all")
   const [recentProductIds, setRecentProductIds] = useState<string[]>([])
   const [failedImages, setFailedImages] = useState<Set<string>>(new Set())
+  const [renderLimit, setRenderLimit] = useState(200)
   const listRef = useRef<HTMLDivElement>(null)
   const filterBarRef = useRef<HTMLDivElement>(null)
   /** True when the user manually clicked a filter chip (skip auto-scroll) */
@@ -257,6 +258,11 @@ export function ProductPicker({
     return list
   }, [allProducts, activeFilter, recentProductIds, query])
 
+  // Reset render limit when filter/query changes
+  useEffect(() => {
+    setRenderLimit(200)
+  }, [activeFilter, query])
+
   // Derive brands from loaded products — no separate fetch needed
   const brands = useMemo(() => {
     const map = new Map<string, { name: string; count: number }>()
@@ -299,6 +305,17 @@ export function ProductPicker({
       if (stripped.length > 0) return stripped
     }
     return name
+  }
+
+  const visibleProducts = filteredProducts.slice(0, renderLimit)
+  const hasMore = filteredProducts.length > renderLimit
+
+  function handleListScroll(e: React.UIEvent<HTMLDivElement>): void {
+    if (!hasMore) return
+    const el = e.currentTarget
+    if (el.scrollTop + el.clientHeight >= el.scrollHeight - 200) {
+      setRenderLimit((prev) => prev + 200)
+    }
   }
 
   function handleImageError(productId: string): void {
@@ -404,7 +421,7 @@ export function ProductPicker({
           ))}
         </div>
       )}
-      <CommandList ref={listRef} className={cn("min-h-[200px]", isMobile && "h-[60vh] max-h-[60vh]")}>
+      <CommandList ref={listRef} onScroll={handleListScroll} className={cn("min-h-[200px]", isMobile && "h-[60vh] max-h-[60vh]")}>
         {loading && (
           <div className="p-1">
             {Array.from({ length: 6 }).map((_, i) => (
@@ -434,9 +451,9 @@ export function ProductPicker({
         {!loading && !loadError && filteredProducts.length === 0 && (
           <CommandEmpty>No products found.</CommandEmpty>
         )}
-        {filteredProducts.length > 0 && (
+        {visibleProducts.length > 0 && (
           <CommandGroup className="animate-in fade-in duration-200">
-            {filteredProducts.map((product) => {
+            {visibleProducts.map((product) => {
               const imgFailed = failedImages.has(product.id)
               return (
                 <CommandItem

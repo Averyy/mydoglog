@@ -19,7 +19,16 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "MyDogLog",
   description: "Structured health monitoring for food-sensitive dogs",
-  icons: { icon: "/favicon.ico" },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "48x48" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
+  },
+  manifest: "/site.webmanifest",
+  appleWebApp: { title: "MyDogLog" },
 }
 
 export default function RootLayout({

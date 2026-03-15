@@ -23,7 +23,7 @@
       "product_format": "wet",
       "ingredients_raw": "Chicken",
       "life_stage": "all",
-      "images": [],
+      "images": ["/products/whole-food/whole-food-food-boiled-chicken-breast.png"],
       "guaranteed_analysis": {
         "crude_protein_min": 30.5,
         "crude_fat_min": 3.2,
@@ -42,7 +42,7 @@
       "product_format": "wet",
       "ingredients_raw": "White Rice",
       "life_stage": "all",
-      "images": [],
+      "images": ["/products/whole-food/whole-food-food-cooked-white-rice.png"],
       "guaranteed_analysis": {
         "crude_protein_min": 2.7,
         "crude_fat_min": 0.3,
@@ -61,7 +61,7 @@
       "product_format": "wet",
       "ingredients_raw": "Carrots",
       "life_stage": "all",
-      "images": [],
+      "images": ["/products/whole-food/whole-food-food-cooked-carrots.png"],
       "guaranteed_analysis": {
         "crude_protein_min": 0.8,
         "crude_fat_min": 0.2,
@@ -80,7 +80,7 @@
       "product_format": "wet",
       "ingredients_raw": "Broccoli",
       "life_stage": "all",
-      "images": [],
+      "images": ["/products/whole-food/whole-food-food-cooked-broccoli.png"],
       "guaranteed_analysis": {
         "crude_protein_min": 2.4,
         "crude_fat_min": 0.4,
@@ -99,7 +99,7 @@
       "product_format": "wet",
       "ingredients_raw": "Banana",
       "life_stage": "all",
-      "images": [],
+      "images": ["/products/whole-food/whole-food-food-banana.png"],
       "guaranteed_analysis": {
         "crude_protein_min": 1.1,
         "crude_fat_min": 0.3,
@@ -118,7 +118,7 @@
       "product_format": "wet",
       "ingredients_raw": "Blueberries",
       "life_stage": "all",
-      "images": [],
+      "images": ["/products/whole-food/whole-food-food-blueberries.png"],
       "guaranteed_analysis": {
         "crude_protein_min": 0.7,
         "crude_fat_min": 0.3,
@@ -137,7 +137,7 @@
       "product_format": "dry",
       "ingredients_raw": "Beef Liver",
       "life_stage": "all",
-      "images": [],
+      "images": ["/products/whole-food/whole-food-treat-freeze-dried-beef-liver.png"],
       "guaranteed_analysis": {
         "crude_protein_min": 63.0,
         "crude_fat_min": 6.0,
