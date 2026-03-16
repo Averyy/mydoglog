@@ -54,9 +54,9 @@ The engine's `buildBackfillSnapshots` currently skips ALL dates within the non-b
 
 **Required fix:** Change the skip condition from "date is in daily window" to "date has an actual daily snapshot with real log data." Dates within the window that have no logs should fall through to backfill snapshot processing. This is a small, targeted change — the skip logic exists to prevent backfill data from overriding real logs, and that invariant is preserved.
 
-### No dismiss option
+### Skip days
 
-The banner has no dismiss/skip action — the only way to clear it is to backfill. This keeps the data complete. The banner is non-intrusive enough (single line between grid and feed) that it won't be annoying, and missing data genuinely hurts correlation quality.
+Some days you genuinely can't recall (dog was with a sitter, too long ago, etc.). The banner has a "Skip" action that marks selected days as intentionally ignored. Skipped days are excluded from correlation entirely — they don't hurt data quality because the engine knows to ignore them, unlike silent gaps which dilute confidence.
 
 ## API
 
@@ -70,6 +70,7 @@ Returns unlogged dates within the last 14 days that have an active feeding perio
 3. Filter to dates covered by a feeding period (using `resolveActivePlan` logic)
 4. Exclude dates that have any `poopLogs` entry
 5. Exclude dates that already have backfill feeding periods covering them
+6. Exclude dates marked as skipped in `skipped_days`
 
 **Response:**
 ```json
@@ -109,6 +110,26 @@ Creates backfill feeding periods + scorecard for gap dates.
    - Create a `foodScorecard` with the provided `poopQuality` and `itchSeverity` arrays
 5. Return created plan group IDs
 
+### `POST /api/dogs/[id]/gaps/skip`
+
+Marks dates as intentionally skipped (can't remember, dog was with sitter, etc.).
+
+**Request body:**
+```json
+{
+  "dates": ["2026-03-11", "2026-03-12"]
+}
+```
+
+**Behavior:**
+1. Validate dates are legitimate gaps
+2. Insert rows into `skipped_days` table (dogId, date) with ON CONFLICT ignore
+3. Correlation engine excludes these dates entirely
+
+### Schema addition
+
+New `skipped_days` table: `id`, `dog_id` (FK → dogs), `date`, `created_at`. Unique constraint on (dog_id, date).
+
 ## UI
 
 ### Banner Component
@@ -116,7 +137,8 @@ Creates backfill feeding periods + scorecard for gap dates.
 - Placement: between QuickLogGrid and LogFeed on Home
 - Only renders when gaps exist (fetched via `GET /gaps`)
 - Shows count and date range: "You have 3 unlogged days (Mar 11–13)"
-- Single action: **"Backfill"** button (no dismiss — the only way to clear the banner is to backfill)
+- Two actions: **"Backfill"** button and **"Skip"** button
+- Skip marks selected days as intentionally ignored (can't remember, dog was with a sitter, etc.) — these days are excluded from correlation and won't show in the banner again
 - Per-dog: only shows gaps for the currently selected dog tab
 
 ### Backfill Modal
