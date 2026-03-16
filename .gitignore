@@ -57,10 +57,10 @@ scraper/**/__pycache__/
 # scraper cookies
 scraper/.chewy_cookies/
 
-# screenshots from dev
+# screenshots from dev (allow PNGs in src/ and public/)
 *.png
 !src/**/*.png
-!public/web-app-manifest-*.png
+!public/**/*.png
 
 # backups
 backups/
