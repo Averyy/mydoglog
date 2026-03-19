@@ -227,6 +227,7 @@ function LogEntryRow({
 
   if (entry.type === "poop") {
     const score = entry.data.firmnessScore as number
+    const notes = entry.data.notes as string | null
     return (
       <>
         <div className="flex items-center gap-3 rounded-lg border border-border px-3 py-2">
@@ -238,6 +239,9 @@ function LogEntryRow({
             <span className="text-xs text-text-secondary ml-1.5">
               {FECAL_SCORE_LABELS[score]} stool
             </span>
+            {notes && (
+              <span className="text-xs text-text-tertiary ml-1">({notes})</span>
+            )}
           </div>
           {time && <span className="text-[11px] text-text-tertiary shrink-0">{time}</span>}
           {editButton}
@@ -249,6 +253,7 @@ function LogEntryRow({
 
   if (entry.type === "itch") {
     const score = entry.data.score as number
+    const notes = entry.data.notes as string | null
     return (
       <>
         <div className="flex items-center gap-3 rounded-lg border border-border px-3 py-2">
@@ -260,6 +265,9 @@ function LogEntryRow({
             <span className="text-xs text-text-secondary ml-1.5">
               {ITCH_SCORE_LABELS[score]} itch
             </span>
+            {notes && (
+              <span className="text-xs text-text-tertiary ml-1">({notes})</span>
+            )}
           </div>
           {time && <span className="text-[11px] text-text-tertiary shrink-0">{time}</span>}
           {editButton}
