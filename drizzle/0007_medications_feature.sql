@@ -20,9 +20,6 @@ CREATE TABLE "medication_products" (
 	CONSTRAINT "medication_products_name_unique" UNIQUE("name")
 );--> statement-breakpoint
 
--- Nuke existing medication records (will be re-added via new Meds page)
-DELETE FROM medications;--> statement-breakpoint
-
 -- Add new columns to medications
 ALTER TABLE "medications" ADD COLUMN "medication_product_id" text;--> statement-breakpoint
 ALTER TABLE "medications" ADD COLUMN "interval" "dosing_interval";--> statement-breakpoint
