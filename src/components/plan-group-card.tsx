@@ -86,6 +86,7 @@ export function PlanGroupCard({
 
   // Transition schedule for the popover
   const isTransitioning = isCurrent && group.transitionDays != null && group.transitionDays > 0
+    && shiftDate(group.startDate, group.transitionDays) > getToday()
   const transitionSchedule = useMemo(() => {
     if (!isTransitioning || !previousGroupItems) return null
     const oldItems: TransitionItem[] = previousGroupItems.map((item) => ({

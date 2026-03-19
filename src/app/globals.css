@@ -220,8 +220,8 @@
   --chart-5: #C97C5D;
   --pollen-low: rgba(107, 140, 111, 0.12);
   --pollen-moderate: rgba(212, 169, 68, 0.15);
-  --pollen-high: rgba(192, 90, 65, 0.22);
-  --pollen-very-high: rgba(184, 74, 58, 0.18);
+  --pollen-high: rgba(205, 116, 86, 0.16);
+  --pollen-very-high: rgba(189, 68, 52, 0.20);
   --gantt-food-a: #6B8C6F;
   --gantt-supplement-a: #A8886A;
   --gantt-transition: #D4A944;
@@ -318,8 +318,8 @@
   --chart-5: #D4966E;
   --pollen-low: rgba(143, 184, 150, 0.10);
   --pollen-moderate: rgba(212, 185, 50, 0.14);
-  --pollen-high: rgba(200, 95, 75, 0.26);
-  --pollen-very-high: rgba(212, 104, 90, 0.14);
+  --pollen-high: rgba(215, 142, 104, 0.14);
+  --pollen-very-high: rgba(216, 98, 82, 0.16);
   --gantt-food-a: #8FB896;
   --gantt-supplement-a: #C4A882;
   --gantt-transition: #D4A944;
