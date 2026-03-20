@@ -344,6 +344,9 @@ export async function GET(
       items: { productId: string; quantity: string; quantityUnit: string; mealSlot: string | null }[]
     }>()
 
+    // First pass: collect rows per group and merge date ranges
+    const groupRawRows = new Map<string, typeof allFeedingRows>()
+
     for (const row of allFeedingRows) {
       let group = planGroupOrder.get(row.planGroupId)
       if (!group) {
@@ -358,7 +361,10 @@ export async function GET(
           items: [],
         }
         planGroupOrder.set(row.planGroupId, group)
+        groupRawRows.set(row.planGroupId, [])
       }
+
+      groupRawRows.get(row.planGroupId)!.push(row)
 
       // Merge date ranges
       if (row.startDate < group.startDate) group.startDate = row.startDate
@@ -367,18 +373,33 @@ export async function GET(
       } else if (row.endDate > group.endDate) {
         group.endDate = row.endDate
       }
+    }
 
-      // Deduplicate items by productId + mealSlot
-      const existing = group.items.some(
-        (i) => i.productId === row.productId && i.mealSlot === row.mealSlot,
-      )
-      if (!existing) {
-        group.items.push({
-          productId: row.productId,
-          quantity: row.quantity,
-          quantityUnit: row.quantityUnit,
-          mealSlot: row.mealSlot,
-        })
+    // Second pass: populate items with transition-aware filtering
+    // Matches buildFeedingGroupMap logic — skip single-day transition blend rows
+    for (const [planGroupId, group] of planGroupOrder) {
+      const rows = groupRawRows.get(planGroupId)!
+      const hasTransition = group.transitionDays != null && group.transitionDays > 0
+      const isActiveTransition = hasTransition && group.endDate === null
+
+      for (const row of rows) {
+        // Active transition: only include ongoing (endDate IS NULL) target rows
+        if (isActiveTransition && row.endDate !== null) continue
+        // Ended transition: skip single-day transition blend rows
+        if (hasTransition && !isActiveTransition && row.startDate === row.endDate) continue
+
+        // Deduplicate items by productId + mealSlot
+        const existing = group.items.some(
+          (i) => i.productId === row.productId && i.mealSlot === row.mealSlot,
+        )
+        if (!existing) {
+          group.items.push({
+            productId: row.productId,
+            quantity: row.quantity,
+            quantityUnit: row.quantityUnit,
+            mealSlot: row.mealSlot,
+          })
+        }
       }
     }
 
@@ -454,18 +475,18 @@ export async function GET(
     for (const r of allItchRows) allLogDates.add(r.date)
 
     for (const date of allLogDates) {
-      // Foods
+      // Foods: use individual feeding rows for accurate per-day resolution
+      // (group-level items exclude transition blend rows; individual rows have
+      //  correct date ranges for transition single-day vs ongoing rows)
       const foodNames: string[] = []
       const seenFoods = new Set<string>()
-      for (const group of sortedGroups) {
-        const end = group.endDate ?? today
-        if (group.startDate <= date && end >= date) {
-          for (const item of group.items) {
-            const product = productMap.get(item.productId)
-            if (product && product.type === "food" && !seenFoods.has(product.name)) {
-              seenFoods.add(product.name)
-              foodNames.push(product.name)
-            }
+      for (const row of allFeedingRows) {
+        const rowEnd = row.endDate ?? today
+        if (row.startDate <= date && rowEnd >= date) {
+          const product = productMap.get(row.productId)
+          if (product && product.type === "food" && !seenFoods.has(product.name)) {
+            seenFoods.add(product.name)
+            foodNames.push(product.name)
           }
         }
       }
