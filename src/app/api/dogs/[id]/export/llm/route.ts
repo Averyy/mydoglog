@@ -162,6 +162,7 @@ export async function GET(
       db
         .select({
           date: poopLogs.date,
+          datetime: poopLogs.datetime,
           firmnessScore: poopLogs.firmnessScore,
           notes: poopLogs.notes,
         })
@@ -173,12 +174,13 @@ export async function GET(
             lte(poopLogs.date, windowEnd),
           ),
         )
-        .orderBy(desc(poopLogs.date)),
+        .orderBy(desc(poopLogs.date), asc(poopLogs.datetime)),
 
       // Itch logs in window
       db
         .select({
           date: itchinessLogs.date,
+          datetime: itchinessLogs.datetime,
           score: itchinessLogs.score,
           bodyAreas: itchinessLogs.bodyAreas,
           notes: itchinessLogs.notes,
@@ -191,7 +193,7 @@ export async function GET(
             lte(itchinessLogs.date, windowEnd),
           ),
         )
-        .orderBy(desc(itchinessLogs.date)),
+        .orderBy(desc(itchinessLogs.date), asc(itchinessLogs.datetime)),
 
       // Treat logs in window
       db

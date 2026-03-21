@@ -64,3 +64,7 @@ scraper/.chewy_cookies/
 
 # backups
 backups/
+
+# personal dog docs / exports
+docs/peaches.md
+docs/Peaches-*-Export*.md

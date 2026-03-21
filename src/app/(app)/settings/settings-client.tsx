@@ -10,6 +10,21 @@ import { DeleteDogButton } from "../dogs/delete-button"
 import { ExportLlmModal } from "@/components/export-llm-modal"
 import type { Dog } from "@/lib/db/schema"
 
+function formatAge(birthDate: string): string {
+  const birth = new Date(birthDate + "T00:00:00")
+  const now = new Date()
+  let years = now.getFullYear() - birth.getFullYear()
+  let months = now.getMonth() - birth.getMonth()
+  if (now.getDate() < birth.getDate()) months--
+  if (months < 0) {
+    years--
+    months += 12
+  }
+  if (years < 1) return `${months}mo`
+  if (months === 0) return `${years}y`
+  return `${years}y ${months}mo`
+}
+
 interface SettingsClientProps {
   dogs: Dog[]
 }
@@ -44,6 +59,7 @@ export function SettingsClient({ dogs }: SettingsClientProps): React.ReactElemen
                     <p className="text-sm text-muted-foreground">
                       {[
                         dog.breed,
+                        dog.birthDate ? formatAge(dog.birthDate) : null,
                         dog.weightKg ? `${dog.weightKg} kg` : null,
                         dog.environmentEnabled ? "Pollen tracking: On" : null,
                       ]
