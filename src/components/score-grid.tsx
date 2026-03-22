@@ -1,5 +1,5 @@
 const POOP_SCORE_COLORS: Record<number, string> = {
-  1: "text-score-excellent", 2: "text-score-excellent",
+  1: "text-score-poor", 2: "text-score-excellent",
   3: "text-score-good", 4: "text-score-fair",
   5: "text-score-fair", 6: "text-score-poor",
   7: "text-score-critical",
