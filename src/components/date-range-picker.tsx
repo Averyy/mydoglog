@@ -12,6 +12,7 @@ import { LiaCalendarAltSolid } from "react-icons/lia"
 import { format, parse, isValid } from "date-fns"
 import { type DateRange, type Matcher } from "react-day-picker"
 import { cn } from "@/lib/utils"
+import { useIsMobile } from "@/hooks/use-is-mobile"
 
 interface DateRangePickerProps {
   from: string
@@ -42,6 +43,7 @@ export function DateRangePicker({
   modifiers,
   modifiersClassNames,
 }: DateRangePickerProps): React.ReactElement {
+  const isMobile = useIsMobile()
   const fromDate = toDate(from)
   const toDate_ = toDate(to)
 
@@ -90,7 +92,7 @@ export function DateRangePicker({
           defaultMonth={defaultMonth ?? fromDate}
           selected={range}
           onSelect={handleSelect}
-          numberOfMonths={2}
+          numberOfMonths={isMobile ? 1 : 2}
           captionLayout="dropdown"
           disabled={disabled}
           modifiers={modifiers}

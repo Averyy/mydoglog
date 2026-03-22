@@ -15,6 +15,7 @@ import {
 } from "@/components/ui/popover"
 import { LiaCalendarAltSolid } from "react-icons/lia"
 import { format, parse, isValid } from "date-fns"
+import { useIsMobile } from "@/hooks/use-is-mobile"
 
 interface DatePickerInputProps {
   value: string
@@ -46,6 +47,7 @@ export function DatePickerInput({
   placeholder = "Pick a date",
   className,
 }: DatePickerInputProps): React.ReactElement {
+  const isMobile = useIsMobile()
   const [open, setOpen] = useState(false)
   const [month, setMonth] = useState<Date | undefined>(undefined)
   const [displayValue, setDisplayValue] = useState("")
@@ -92,8 +94,10 @@ export function DatePickerInput({
       <InputGroupInput
         value={displayValue}
         placeholder={placeholder}
-        onChange={handleInputChange}
-        onKeyDown={(e) => {
+        onChange={isMobile ? undefined : handleInputChange}
+        readOnly={isMobile}
+        onClick={isMobile ? () => setOpen(true) : undefined}
+        onKeyDown={isMobile ? undefined : (e) => {
           if (e.key === "ArrowDown") {
             e.preventDefault()
             setOpen(true)

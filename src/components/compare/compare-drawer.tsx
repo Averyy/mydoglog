@@ -43,7 +43,7 @@ export function CompareDrawer({
 
   return (
     <Drawer open={open} onOpenChange={(o) => { if (!o) onClose() }}>
-      <DrawerContent className="data-[vaul-drawer-direction=bottom]:max-h-[96vh]" aria-describedby={undefined}>
+      <DrawerContent className="data-[vaul-drawer-direction=bottom]:max-h-[90vh]" aria-describedby={undefined}>
         <DrawerHeader className="sr-only">
           <DrawerTitle>{title}</DrawerTitle>
         </DrawerHeader>

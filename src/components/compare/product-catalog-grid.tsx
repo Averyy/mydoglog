@@ -327,7 +327,7 @@ export function ProductCatalogGrid({
           {hasMore && (
             <div ref={sentinelRef} className="h-1" />
           )}
-          <p className="pb-36 text-center text-xs text-muted-foreground">
+          <p className="text-center text-xs text-muted-foreground">
             {filteredProducts.length} products
           </p>
         </>

@@ -17,7 +17,6 @@ interface CompareTrayProps {
   selectedMedications: MedicationProduct[]
   onRemove: (id: string) => void
   onCompare: () => void
-  onClear: () => void
 }
 
 export function CompareTray({
@@ -26,7 +25,6 @@ export function CompareTray({
   selectedMedications,
   onRemove,
   onCompare,
-  onClear,
 }: CompareTrayProps): React.ReactElement {
   const [failedImages, setFailedImages] = useState<Set<string>>(new Set())
   const items = mode === "food" ? selectedProducts : selectedMedications
@@ -54,34 +52,33 @@ export function CompareTray({
               const med = item as MedicationProduct
               const Icon = getDosageFormIcon(med.dosageForm)
               return (
-                <div
+                <button
+                  type="button"
                   key={med.id}
-                  className="relative flex h-12 items-center gap-1.5 rounded-md border border-border bg-bg-primary px-1.5"
+                  onClick={() => onRemove(med.id)}
+                  aria-label={`Remove ${med.name}`}
+                  className="relative flex h-12 cursor-pointer items-center gap-1.5 rounded-md border border-border bg-bg-primary px-1.5 transition-colors hover:bg-item-hover"
                 >
                   <div className="flex size-8 shrink-0 items-center justify-center rounded bg-secondary">
                     <Icon className="size-4 text-muted-foreground" />
                   </div>
-                  <div className="min-w-0 flex-1">
+                  <div className="min-w-0 flex-1 text-left">
                     <p className="truncate text-[11px] font-medium leading-tight">{med.name}</p>
                     <p className="truncate text-[10px] text-muted-foreground">{med.genericName}</p>
                   </div>
-                  <button
-                    type="button"
-                    onClick={() => onRemove(med.id)}
-                    aria-label={`Remove ${med.name}`}
-                    className="-mr-1 flex size-8 shrink-0 items-center justify-center rounded-full text-muted-foreground transition-colors hover:bg-item-hover hover:text-foreground"
-                  >
-                    <LiaTimesSolid className="size-3" />
-                  </button>
-                </div>
+                  <LiaTimesSolid className="-mr-0.5 size-3 shrink-0 text-muted-foreground" />
+                </button>
               )
             }
 
             const product = item as ProductSummary
             return (
-              <div
+              <button
+                type="button"
                 key={product.id}
-                className="relative flex h-12 items-center gap-1.5 rounded-md border border-border bg-bg-primary px-1.5"
+                onClick={() => onRemove(product.id)}
+                aria-label={`Remove ${product.name}`}
+                className="relative flex h-12 cursor-pointer items-center gap-1.5 rounded-md border border-border bg-bg-primary px-1.5 transition-colors hover:bg-item-hover"
               >
                 <div className="flex size-8 shrink-0 items-center justify-center overflow-hidden rounded bg-muted-subtle">
                   {product.imageUrl && !failedImages.has(product.id) ? (
@@ -95,34 +92,20 @@ export function CompareTray({
                     <span className="text-[8px] text-muted-foreground">?</span>
                   )}
                 </div>
-                <div className="min-w-0 flex-1">
+                <div className="min-w-0 flex-1 text-left">
                   <p className="truncate text-[10px] text-muted-foreground">{product.brandName}</p>
                   <p className="truncate text-[11px] font-medium leading-tight">
                     {stripBrandPrefix(product.name, product.brandName)}
                   </p>
                 </div>
-                <button
-                  type="button"
-                  onClick={() => onRemove(product.id)}
-                  aria-label={`Remove ${product.name}`}
-                  className="-mr-1 flex size-8 shrink-0 items-center justify-center rounded-full text-muted-foreground transition-colors hover:bg-item-hover hover:text-foreground"
-                >
-                  <LiaTimesSolid className="size-3" />
-                </button>
-              </div>
+                <LiaTimesSolid className="-mr-0.5 size-3 shrink-0 text-muted-foreground" />
+              </button>
             )
           })}
         </div>
 
         {/* Actions */}
-        <div className="flex shrink-0 items-center gap-2">
-          <button
-            type="button"
-            onClick={onClear}
-            className="text-xs text-muted-foreground hover:text-foreground"
-          >
-            Clear
-          </button>
+        <div className="flex shrink-0 items-center">
           <Button
             variant="default"
             size="sm"

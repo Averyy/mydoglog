@@ -123,17 +123,6 @@ export function CompareClient(): React.ReactElement {
 
   // ── Shared actions ────────────────────────────────────────────────────
 
-  const clearAll = useCallback(() => {
-    if (mode === "food") {
-      setSelectedProducts([])
-      setPendingFoodIds([])
-    } else {
-      setSelectedMedications([])
-      setPendingMedIds([])
-    }
-    setCompareOpen(false)
-  }, [mode])
-
   const handleRemove = useCallback((id: string) => {
     if (mode === "food") {
       removeProduct(id)
@@ -225,49 +214,51 @@ export function CompareClient(): React.ReactElement {
       </div>
 
       {/* Mode-specific catalog */}
-      {mode === "food" ? (
-        <ProductCatalogGrid
-          selectedIds={foodIds}
-          onToggle={toggleProduct}
-          onProductsLoaded={(products) => {
-            if (pendingFoodIds.length > 0) {
-              const matched = pendingFoodIds
-                .map((id) => products.find((p) => p.id === id))
-                .filter((p): p is ProductSummary => !!p)
-              if (matched.length > 0) {
-                setSelectedProducts((prev) => {
-                  const existingIds = new Set(prev.map((p) => p.id))
-                  const newProducts = matched.filter((p) => !existingIds.has(p.id))
-                  return [...prev, ...newProducts]
-                })
+      <div className={currentIds.length > 0 ? "pb-40 md:pb-24" : undefined}>
+        {mode === "food" ? (
+          <ProductCatalogGrid
+            selectedIds={foodIds}
+            onToggle={toggleProduct}
+            onProductsLoaded={(products) => {
+              if (pendingFoodIds.length > 0) {
+                const matched = pendingFoodIds
+                  .map((id) => products.find((p) => p.id === id))
+                  .filter((p): p is ProductSummary => !!p)
+                if (matched.length > 0) {
+                  setSelectedProducts((prev) => {
+                    const existingIds = new Set(prev.map((p) => p.id))
+                    const newProducts = matched.filter((p) => !existingIds.has(p.id))
+                    return [...prev, ...newProducts]
+                  })
+                }
+                setPendingFoodIds([])
               }
-              setPendingFoodIds([])
-            }
-          }}
-          maxCompare={MAX_COMPARE}
-        />
-      ) : (
-        <MedicationCatalogTable
-          selectedIds={medIds}
-          onToggle={toggleMedication}
-          onMedicationsLoaded={(meds) => {
-            if (pendingMedIds.length > 0) {
-              const matched = pendingMedIds
-                .map((id) => meds.find((m) => m.id === id))
-                .filter((m): m is MedicationProduct => !!m)
-              if (matched.length > 0) {
-                setSelectedMedications((prev) => {
-                  const existingIds = new Set(prev.map((m) => m.id))
-                  const newMeds = matched.filter((m) => !existingIds.has(m.id))
-                  return [...prev, ...newMeds]
-                })
+            }}
+            maxCompare={MAX_COMPARE}
+          />
+        ) : (
+          <MedicationCatalogTable
+            selectedIds={medIds}
+            onToggle={toggleMedication}
+            onMedicationsLoaded={(meds) => {
+              if (pendingMedIds.length > 0) {
+                const matched = pendingMedIds
+                  .map((id) => meds.find((m) => m.id === id))
+                  .filter((m): m is MedicationProduct => !!m)
+                if (matched.length > 0) {
+                  setSelectedMedications((prev) => {
+                    const existingIds = new Set(prev.map((m) => m.id))
+                    const newMeds = matched.filter((m) => !existingIds.has(m.id))
+                    return [...prev, ...newMeds]
+                  })
+                }
+                setPendingMedIds([])
               }
-              setPendingMedIds([])
-            }
-          }}
-          maxCompare={MAX_COMPARE}
-        />
-      )}
+            }}
+            maxCompare={MAX_COMPARE}
+          />
+        )}
+      </div>
 
       {/* Compare tray */}
       {currentIds.length > 0 && (
@@ -277,7 +268,6 @@ export function CompareClient(): React.ReactElement {
           selectedMedications={selectedMedications}
           onRemove={mode === "food" ? removeProduct : removeMedication}
           onCompare={openCompare}
-          onClear={clearAll}
         />
       )}
 

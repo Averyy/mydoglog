@@ -17,7 +17,7 @@ export function MedCompareColumnHeader({
   const Icon = getDosageFormIcon(medication.dosageForm)
 
   return (
-    <div className="flex items-center justify-center gap-2 px-4 py-2">
+    <div className="flex items-center justify-center gap-2 px-1 py-2">
       <div className="relative shrink-0">
         <div className="flex size-10 items-center justify-center rounded-md bg-secondary sm:size-12">
           <Icon className="size-5 text-muted-foreground" />

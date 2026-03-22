@@ -17,7 +17,7 @@ export function CompareColumnHeader({
   const [imgFailed, setImgFailed] = useState(false)
 
   return (
-    <div className="flex items-center justify-center gap-2 px-4 py-2">
+    <div className="flex items-center justify-center gap-2 px-1 py-2">
       {/* Image + X */}
       <div className="relative shrink-0">
         <div className="flex size-10 items-center justify-center overflow-hidden rounded-md bg-muted-subtle sm:size-12">
