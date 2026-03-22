@@ -27,6 +27,15 @@ export function largeImageUrl(imageUrl: string): string {
   return imageUrl
 }
 
+/** Strip redundant brand name prefix from a product name for compact display. */
+export function stripBrandPrefix(name: string, brandName: string): string {
+  if (name.toLowerCase().startsWith(brandName.toLowerCase())) {
+    const stripped = name.slice(brandName.length).replace(/^[\s\-–—]+/, "")
+    if (stripped.length > 0) return stripped
+  }
+  return name
+}
+
 export function capitalize(s: string): string {
   return s.charAt(0).toUpperCase() + s.slice(1)
 }

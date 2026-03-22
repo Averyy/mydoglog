@@ -1,7 +1,7 @@
 {
   "brand": "Purina",
   "website_url": "https://www.purina.ca",
-  "scraped_at": "2026-03-10T15:26:56.324385+00:00",
+  "scraped_at": "2026-03-22T13:14:32.141004+00:00",
   "scraper_version": "0.1.0",
   "stats": {
     "product_count": 48,
@@ -398,7 +398,7 @@
           "upc": "038100105189 "
         }
       ],
-      "ingredients_raw": "Water, chicken, meat by-products, wheat gluten, liver, rice, soy flour, powdered cellulose, guar gum, locust bean gum",
+      "ingredients_raw": "Water, chicken, meat by-products, wheat gluten, liver, rice, soy flour, powdered cellulose, guar gum, locust bean gum,",
       "source_id": "038100105189 "
     },
     {
@@ -554,7 +554,7 @@
           "upc": "038100176189"
         }
       ],
-      "ingredients_raw": "Brewers rice, trout, oat meal, pea protein, beef fat preserved with mixed-tocopherols, natural flavor, potato protein, pea fiber, fish oil, mono and dicalcium phosphate, glycerin, calcium carbonate, potassium chloride, salt, L-Lysine monohydrochloride, taurine, Vitamin E supplement, choline chloride, zinc sulfate, L-ascorbyl-2-polyphosphate (Vitamin C), ferrous sulfate, manganese sulfate, niacin (Vitamin B-3), Vitamin A supplement, beta-Carotene, calcium pantothenate (Vitamin B-5), copper sulfate, thiamine mononitrate (Vitamin B-1), Vitamin B-12 supplement, riboflavin supplement (Vitamin B-2), pyridoxine hydrochloride (Vitamin B-6), folic acid (Vitamin B-9), calcium iodate, menadione sodium bisulfite complex (Vitamin K), Vitamin D-3 supplement, biotin (Vitamin B-7), sodium selenite",
+      "ingredients_raw": "Brewers rice, trout, oat meal, pea protein, beef fat preserved with mixed-tocopherols, natural flavor, potato protein, pea fiber, fish oil, mono and dicalcium phosphate, glycerin, calcium carbonate, potassium chloride, salt, L-Lysine monohydrochloride, taurine, Vitamin E supplement, choline chloride, zinc sulfate, L-ascorbyl-2-polyphosphate (Vitamin C), ferrous sulfate, zinc sulfate, manganese sulfate, niacin (Vitamin B-3), Vitamin A supplement, calcium carbonate, beta-Carotene, calcium pantothenate (Vitamin B-5), copper sulfate, thiamine mononitrate (Vitamin B-1), Vitamin B-12 supplement, riboflavin supplement (Vitamin B-2), pyridoxine hydrochloride (Vitamin B-6), folic acid (Vitamin B-9), calcium iodate, menadione sodium bisulfite complex (Vitamin K), Vitamin D-3 supplement, biotin (Vitamin B-7), sodium selenite",
       "source_id": "038100176165"
     },
     {
@@ -1619,7 +1619,7 @@
         "moisture_max": 15.0
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "650 kcal/kg",
+      "calorie_content": "2975 kcal/kg, 95 kcal/treat",
       "images": [
         "/products/purina/purina-treat-pro-plan-veterinary-diets-ora-chews-chews.webp"
       ],
@@ -1630,7 +1630,7 @@
           "upc": "038100106964 "
         }
       ],
-      "ingredients_raw": "Rice, glycerin, wheat flour, sodium tripolyphosphate, malted barley flour, chicken by-product meal, mono and dicalcium phosphate, calcium carbonate, sorbic acid (a preservative), calcium propionate (a preservative), sodium bicarbonate, zinc sulfate, Vitamin E supplement, ferrous sulfate, manganese sulfate, tetra sodium pyrophosphate, copper sulfate, preserved with mixed tocopherols, natural flavor, niacin (Vitamin B-3), calcium iodate, thiamine mononitrate (Vitamin B-1), calcium pantothenate (Vitamin B-5), Vitamin A supplement, riboflavin supplement (Vitamin B-2), Vitamin B-12 supplement, pyridoxine hydrochloride (Vitamin B-6), folic acid (Vitamin B-9), sodium selenite, menadione sodium bisulfite complex (Vitamin K), biotin (Vitamin B-7), Vitamin D-3 supplement",
+      "ingredients_raw": "Rice, glycerin, wheat flour, sodium tripolyphosphate, malted barley flour, chicken by-product meal, mono and dicalcium phosphate, calcium carbonate, sorbic acid (a preservative), calcium propionate (a preservative), sodium bicarbonate, zinc sulfate, Vitamin E supplement, ferrous sulfate, manganese sulfate, tetra sodium pyrophosphate, copper sulfate, preserved with mixed tocopherols, natural flavor, niacin (Vitamin B-3), calcium iodate, thiamine mononitrate (Vitamin B-1), calcium pantothenate (Vitamin B-5), Vitamin A supplement, riboflavin supplement (Vitamin B-2), Vitamin B-12 supplement, pyridoxine hydrochloride (Vitamin B-6), folic acid (Vitamin B-9), sodium selenite, menadione sodium bisulfite complex (Vitamin K), biotin (Vitamin B-7), Vitamin D-3 supplement.",
       "source_id": "038100106964 "
     },
     {
@@ -1649,7 +1649,7 @@
         "moisture_max": 15.0
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "650 kcal/kg",
+      "calorie_content": "2975 kcal/kg, 95 kcal/treat",
       "images": [
         "/products/purina/purina-treat-pro-plan-veterinary-diets-ora-chews-large.webp"
       ],
@@ -1660,7 +1660,7 @@
           "upc": "038100107008"
         }
       ],
-      "ingredients_raw": "Rice, glycerin, wheat flour, sodium tripolyphosphate, malted barley flour, chicken by-product meal, mono and dicalcium phosphate, calcium carbonate, sorbic acid (a preservative), calcium propionate (a preservative), sodium bicarbonate, zinc sulfate, Vitamin E supplement, ferrous sulfate, manganese sulfate, tetra sodium pyrophosphate, copper sulfate, preserved with mixed tocopherols, natural flavor, niacin (Vitamin B-3), calcium iodate, thiamine mononitrate (Vitamin B-1), calcium pantothenate (Vitamin B-5), Vitamin A supplement, riboflavin supplement (Vitamin B-2), Vitamin B-12 supplement, pyridoxine hydrochloride (Vitamin B-6), folic acid (Vitamin B-9), sodium selenite, menadione sodium bisulfite complex (Vitamin K), biotin (Vitamin B-7), Vitamin D-3 supplement",
+      "ingredients_raw": "Rice, glycerin, wheat flour, sodium tripolyphosphate, malted barley flour, chicken by-product meal, mono and dicalcium phosphate, calcium carbonate, sorbic acid (a preservative), calcium propionate (a preservative), sodium bicarbonate, zinc sulfate, Vitamin E supplement, ferrous sulfate, manganese sulfate, tetra sodium pyrophosphate, copper sulfate, preserved with mixed tocopherols, natural flavor, niacin (Vitamin B-3), calcium iodate, thiamine mononitrate (Vitamin B-1), calcium pantothenate (Vitamin B-5), Vitamin A supplement, riboflavin supplement (Vitamin B-2), Vitamin B-12 supplement, pyridoxine hydrochloride (Vitamin B-6), folic acid (Vitamin B-9), sodium selenite, menadione sodium bisulfite complex (Vitamin K), biotin (Vitamin B-7), Vitamin D-3 supplement.",
       "source_id": "038100107008"
     }
   ]

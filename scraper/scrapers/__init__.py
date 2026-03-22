@@ -3,7 +3,8 @@
 from .royalcanin import scrape_royalcanin
 from .purina_vet import scrape_purina_vet
 from .purina_retail import scrape_purina_retail
-from .hills import scrape_hills
+from .hills_retail import scrape_hills_retail
+from .hills_vet import scrape_hills_vet
 from .rayne import scrape_rayne
 from .gosolutions import scrape_gosolutions
 from .nowfresh import scrape_nowfresh
@@ -40,7 +41,8 @@ SCRAPERS: dict[str, tuple[str, callable]] = {
     "royalcanin": ("Royal Canin", scrape_royalcanin),
     "purina_vet": ("Purina (Vet)", scrape_purina_vet),
     "purina_retail": ("Purina (Retail)", scrape_purina_retail),
-    "hills": ("Hill's", scrape_hills),
+    "hills_retail": ("Hill's (Retail)", scrape_hills_retail),
+    "hills_vet": ("Hill's (Vet)", scrape_hills_vet),
     # Phase 1b — Group A: HTML parse (confirmed data)
     "rayne": ("Rayne", scrape_rayne),
     "gosolutions": ("Go! Solutions", scrape_gosolutions),

@@ -65,15 +65,13 @@ export interface ExportFeedingPeriod {
 
 export interface ExportDailyRow {
   date: string
-  poopScores: number[]
+  poopEntries: { score: number; time: string | null; note: string | null }[]
   avgPoop: number | null
-  itchScores: number[]
+  itchEntries: { score: number; time: string | null; bodyAreas: string[]; note: string | null }[]
   avgItch: number | null
-  itchBodyAreas: string[]
   effectivePollen: number | null
   foodNames: string[]
   meds: string[]
-  notes: string[]
   isTransition: boolean
 }
 
@@ -352,12 +350,6 @@ function formatScoringAndCoverage(data: ExportData): string {
     lines.push(`- Scoreable days (used in correlation): ${c.scoreableDays}`)
     lines.push(`- Transition buffer: ${c.options.transitionBufferDays}-day default after food switches (excluded from correlation)`)
 
-    // Confidence distribution
-    const confDist = { high: 0, medium: 0, low: 0, insufficient: 0 }
-    for (const s of c.giMergedScores) {
-      confDist[s.confidence]++
-    }
-    lines.push(`- Correlation confidence distribution: ${confDist.high} high, ${confDist.medium} medium, ${confDist.low} low, ${confDist.insufficient} insufficient`)
   }
 
   if (data.pollenCoverage) {
@@ -377,7 +369,7 @@ function formatProfile(data: ExportData): string {
   lines.push("")
   lines.push(`- Name: ${d.name}`)
   if (d.breed) lines.push(`- Breed: ${d.breed}`)
-  if (d.birthDate) lines.push(`- Age: ${computeAge(d.birthDate, data.exportDate)}`)
+  if (d.birthDate) lines.push(`- Born: ${formatShortDate(d.birthDate)} (${computeAge(d.birthDate, data.exportDate)})`)
   if (d.weightKg) lines.push(`- Weight: ${d.weightKg} kg`)
   lines.push(`- Meals per day: ${d.mealsPerDay}`)
   if (d.environmentEnabled) {
@@ -589,6 +581,7 @@ function formatFoodHistory(data: ExportData, dedup: ProductDedup): string {
       if (ingLine) lines.push(ingLine)
       const gaLine = dedup.formatGA(product)
       if (gaLine) lines.push(gaLine)
+      if (product.calorieContent) lines.push(`  - Calories: ${product.calorieContent}`)
     }
 
     if (period.transitionDays && period.previousPeriodNumber !== null) {
@@ -652,26 +645,39 @@ function formatDailyLogTable(data: ExportData): string {
     return lines.join("\n")
   }
 
-  lines.push("| Date | Poop | Itch | Pollen | Food | Meds | Notes |")
-  lines.push("|------|------|------|--------|------|------|-------|")
+  lines.push("| Date | Poop | Itch | Pollen | Food | Meds |")
+  lines.push("|------|------|------|--------|------|------|")
 
   // Already sorted newest first from the API
   for (const row of data.dailyLog) {
-    const poopStr = row.poopScores.length > 1
-      ? row.poopScores.join(",")
-      : (row.avgPoop !== null ? round1(row.avgPoop) : "—")
-    const itchStr = row.itchScores.length > 1
-      ? row.itchScores.join(",")
-      : (row.avgItch !== null ? round1(row.avgItch) : "—")
+    const poopStr = row.poopEntries.length > 0
+      ? row.poopEntries.map((e) => {
+          const parts: string[] = []
+          if (e.time) parts.push(e.time)
+          if (e.note) parts.push(e.note)
+          return parts.length > 0 ? `${e.score} (${parts.join(", ")})` : `${e.score}`
+        }).join(", ")
+      : "—"
+    const itchStr = row.itchEntries.length > 0
+      ? row.itchEntries.map((e) => {
+          const parts: string[] = []
+          if (e.time) parts.push(e.time)
+          if (e.bodyAreas.length > 0) parts.push(e.bodyAreas.join("+"))
+          if (e.note) parts.push(e.note)
+          return parts.length > 0 ? `${e.score} (${parts.join(", ")})` : `${e.score}`
+        }).join(", ")
+      : "—"
     const pollenStr = row.effectivePollen !== null ? row.effectivePollen.toString() : "—"
     const foodStr = row.foodNames.map(shortProductName).join(", ") || "—"
     const medsStr = row.meds.join(", ") || "—"
-    const notesArr: string[] = [...row.notes]
-    if (row.isTransition) notesArr.unshift("[transition]")
-    if (row.itchBodyAreas.length > 0) notesArr.push(`areas: ${row.itchBodyAreas.join(",")}`)
-    const notesStr = notesArr.join("; ") || ""
+    const dateStr = row.isTransition ? `${row.date} (transition day)` : row.date
 
-    lines.push(`| ${row.date} | ${poopStr} | ${itchStr} | ${pollenStr} | ${foodStr} | ${medsStr} | ${notesStr} |`)
+    lines.push(`| ${dateStr} | ${poopStr} | ${itchStr} | ${pollenStr} | ${foodStr} | ${medsStr} |`)
+  }
+
+  if (data.dailyLog.some((r) => r.isTransition)) {
+    lines.push("")
+    lines.push("Transition days = food switch buffer where old and new food overlap. Excluded from ingredient correlation.")
   }
 
   return lines.join("\n")
@@ -715,11 +721,11 @@ function formatScoreTable(scores: IngredientScore[], lines: string[], includeSea
   })
 
   const header = includeSeasonalColumn
-    ? "| Ingredient | Weighted Score | Raw Avg | Days | Good | Bad | Confidence | Position | Products | Cross-Reactivity | Seasonally Confounded |"
-    : "| Ingredient | Weighted Score | Raw Avg | Days | Good | Bad | Confidence | Position | Products | Cross-Reactivity |"
+    ? "| Ingredient | Weighted Score | Raw Avg | Good | Bad | Data | Position | Products | Cross-Reactivity | Seasonally Confounded |"
+    : "| Ingredient | Weighted Score | Raw Avg | Good | Bad | Data | Position | Products | Cross-Reactivity |"
   const divider = includeSeasonalColumn
-    ? "|------------|----------------|---------|------|------|-----|------------|----------|----------|------------------|-----------------------|"
-    : "|------------|----------------|---------|------|------|-----|------------|----------|----------|------------------|"
+    ? "|------------|----------------|---------|------|-----|------|----------|----------|------------------|-----------------------|"
+    : "|------------|----------------|---------|------|-----|------|----------|----------|------------------|"
 
   lines.push(header)
   lines.push(divider)
@@ -733,12 +739,14 @@ function formatScoreTable(scores: IngredientScore[], lines: string[], includeSea
       : round2(s.rawAvgPoopScore)
     const good = includeSeasonalColumn ? s.goodItchDayCount : s.goodPoopDayCount
     const bad = includeSeasonalColumn ? s.badItchDayCount : s.badPoopDayCount
+    const est = s.daysWithScorecardOnly + s.daysWithBackfill
+    const dataStr = `${s.daysWithEventLogs} logged / ${est} est. / ${s.dayCount} total`
     const crossReact = s.crossReactivityGroup ?? "—"
     const seasonal = includeSeasonalColumn ? (s.itchSeasonallyConfounded ? "yes" : "no") : ""
 
     const row = includeSeasonalColumn
-      ? `| ${s.key} | ${wScore} | ${rawAvg} | ${s.dayCount} | ${good} | ${bad} | ${s.confidence} | ${s.positionCategory} | ${s.distinctProductCount} | ${crossReact} | ${seasonal} |`
-      : `| ${s.key} | ${wScore} | ${rawAvg} | ${s.dayCount} | ${good} | ${bad} | ${s.confidence} | ${s.positionCategory} | ${s.distinctProductCount} | ${crossReact} |`
+      ? `| ${s.key} | ${wScore} | ${rawAvg} | ${good} | ${bad} | ${dataStr} | ${s.positionCategory} | ${s.distinctProductCount} | ${crossReact} | ${seasonal} |`
+      : `| ${s.key} | ${wScore} | ${rawAvg} | ${good} | ${bad} | ${dataStr} | ${s.positionCategory} | ${s.distinctProductCount} | ${crossReact} |`
 
     lines.push(row)
   }
@@ -1000,16 +1008,16 @@ export function buildExportMarkdown(
     sections.push(formatCurrentMedications(data))
   }
 
+  if (!excludeSections.has("daily-log")) {
+    sections.push(formatDailyLogTable(data))
+  }
+
   if (!excludeSections.has("food-history")) {
     sections.push(formatFoodHistory(data, dedup))
   }
 
   if (!excludeSections.has("medication-history")) {
     sections.push(formatMedicationHistory(data))
-  }
-
-  if (!excludeSections.has("daily-log")) {
-    sections.push(formatDailyLogTable(data))
   }
 
   if (!excludeSections.has("correlation")) {

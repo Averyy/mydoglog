@@ -80,17 +80,17 @@ export default function LoginPage(): React.ReactElement {
               {loading ? "Logging in..." : "Log in"}
             </Button>
           </form>
-        </div>
 
-        <p className="mt-6 text-center text-sm text-text-secondary">
-          Don&apos;t have an account?{" "}
-          <Link
-            href="/signup"
-            className="font-medium text-accent hover:text-accent-hover"
-          >
-            Sign up
-          </Link>
-        </p>
+          <p className="mt-5 text-center text-sm text-text-secondary">
+            Don&apos;t have an account?{" "}
+            <Link
+              href="/signup"
+              className="font-medium text-primary hover:text-primary-hover"
+            >
+              Sign up
+            </Link>
+          </p>
+        </div>
       </div>
     </main>
   )

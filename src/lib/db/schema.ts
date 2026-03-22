@@ -227,6 +227,7 @@ export const products = pgTable(
     healthTags: text("health_tags").array(),
     rawIngredientString: text("raw_ingredient_string"),
     guaranteedAnalysis: jsonb("guaranteed_analysis"),
+    guaranteedAnalysisBasis: text("guaranteed_analysis_basis"),
     calorieContent: text("calorie_content"),
     imageUrls: text("image_urls").array(),
     manufacturerUrl: text("manufacturer_url"),
@@ -448,6 +449,7 @@ export const medicationProducts = pgTable("medication_products", {
   sideEffectsSources: text("side_effects_sources"),
   suppressesItch: boolean("suppresses_itch").notNull().default(false),
   hasGiSideEffects: boolean("has_gi_side_effects").notNull().default(false),
+  learnMoreUrl: text("learn_more_url"),
   createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
 })
 

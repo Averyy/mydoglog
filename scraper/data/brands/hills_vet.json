@@ -1,0 +1,2372 @@
+{
+  "brand": "Hill's",
+  "website_url": "https://www.hillspet.ca",
+  "scraped_at": "2026-03-22T13:58:37.846242+00:00",
+  "scraper_version": "0.1.0",
+  "stats": {
+    "product_count": 61,
+    "by_channel": {
+      "vet": 61
+    },
+    "by_type": {
+      "food": 57,
+      "treat": 4
+    }
+  },
+  "products": [
+    {
+      "name": "c/d Multicare Chicken & Vegetable Stew Dog Food Wet Food",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-cd-multicare-chicken-vegetable-stew-urinary-care-canned",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 23.2,
+        "crude_fat_min": 18.4,
+        "crude_fiber_max": 5.0,
+        "calcium_min": 0.89,
+        "phosphorus_min": 0.54,
+        "potassium_min": 1.0,
+        "sodium_min": 0.28,
+        "omega_3_min": 0.8
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Water, Chicken, Pork Liver, Carrots, Rice, Green Peas, Corn Starch, Powdered Cellulose, Soybean Oil, Hydrolyzed Chicken Flavor, Chicken Liver Flavor, Potassium Alginate, Wheat Gluten, Calcium Chloride, Guar Gum, Dicalcium Phosphate, Flaxseed, Potassium Citrate, Fish Oil, Calcium Lactate, Calcium Gluconate, vitamins (Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Riboflavin Supplement, Vitamin D3 Supplement, Folic Acid), Sodium Tripolyphosphate, Choline Chloride, Taurine, minerals (Zinc Oxide, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate), L-Carnitine, Beta-Carotene.",
+      "calorie_content": "751 kcal/kg, 266 kcal/can",
+      "health_tags": [
+        "urinary_health"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-food-c-d-multicare-chicken-vegetable-stew-dog-food-wet-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.354,
+          "size_description": "12.5 oz",
+          "sku": "052742075082"
+        }
+      ],
+      "source_id": "052742075082"
+    },
+    {
+      "name": "c/d Multicare Chicken Flavor Dog Food Wet Food",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-cd-multicare-urinary-care-canned",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.3,
+        "crude_fat_min": 16.6,
+        "crude_fiber_max": 3.1,
+        "calcium_min": 0.65,
+        "phosphorus_min": 0.47,
+        "potassium_min": 0.93,
+        "sodium_min": 0.29,
+        "omega_3_min": 0.84
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Water, Beef By-Products, Chicken, Rice, Whole Grain Corn, Pork Liver, Soybean Oil, Powdered Cellulose, Soybean Mill Run, Fish Oil, Calcium Sulfate, Potassium Citrate, Potassium Chloride, Choline Chloride, vitamins (Vitamin E Supplement, Thiamine Mononitrate, Pyridoxine Hydrochloride, Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Riboflavin Supplement, Biotin, Folic Acid, Vitamin D3 Supplement), Flaxseed, Iodized Salt, Dicalcium Phosphate, Calcium Carbonate, Taurine, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganese Sulfate, Calcium Iodate), L-Carnitine, Beta-Carotene.",
+      "health_tags": [
+        "urinary_health"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-food-c-d-multicare-chicken-flavor-dog-food-wet-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.369,
+          "size_description": "13 oz",
+          "sku": "052742081397"
+        }
+      ],
+      "source_id": "052742081397",
+      "calorie_content": "1214 kcal/kg, 448 kcal/can"
+    },
+    {
+      "name": "c/d Multicare Chicken Flavor Dog Food",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-cd-multicare-urinary-care-dry",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 22.2,
+        "crude_fat_min": 16.5,
+        "crude_fiber_max": 1.5,
+        "calcium_min": 0.62,
+        "phosphorus_min": 0.57,
+        "potassium_min": 0.7,
+        "sodium_min": 0.24,
+        "omega_3_min": 0.81
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Whole Grain Corn, Brewers Rice, Chicken Meal, Chicken Fat, Corn Protein Meal, Soybean Meal, Egg Product, Chicken Liver Flavor, Soybean Oil, Flaxseed, Pork Liver Flavor, Lactic Acid, L-Lysine, Calcium Sulfate, Fish Oil, Potassium Chloride, Iodized Salt, Choline Chloride, Potassium Citrate, vitamins (Vitamin E Supplement, Niacin Supplement, Thiamine Mononitrate, Calcium Pantothenate, Pyridoxine Hydrochloride, Vitamin A Supplement, Biotin, Riboflavin Supplement, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement), Taurine, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Mixed Tocopherols for freshness, L-Carnitine, Natural Flavors, Beta-Carotene.",
+      "calorie_content": "3820 kcal/kg, 379 kcal/cup",
+      "health_tags": [
+        "urinary_health"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-food-c-d-multicare-chicken-flavor-dog-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 12.47,
+          "size_description": "27.5 lb",
+          "sku": "052742074993"
+        }
+      ],
+      "source_id": "052742074993"
+    },
+    {
+      "name": "d/d Duck Formula Wet Dog Food Wet Food",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-dd-duck-skin-care-canned",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 17.2,
+        "crude_fat_min": 16.4,
+        "crude_fiber_max": 3.0,
+        "calcium_min": 0.92,
+        "phosphorus_min": 0.62,
+        "potassium_min": 0.98,
+        "sodium_min": 0.39,
+        "epa_min": 0.252,
+        "omega_3_min": 1.08,
+        "omega_6_min": 5.28,
+        "l_carnitine_min": 25.0
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Water, Duck, Potatoes, Duck Liver, Potato Starch, Soybean Oil, Fish Oil, Powdered Cellulose, Dicalcium Phosphate, Calcium Carbonate, Iodized Salt, DL-Methionine, Potassium Chloride, vitamins (Vitamin E Supplement, Thiamine Mononitrate, Ascorbic Acid (source of Vitamin C), Niacin Supplement, Pyridoxine Hydrochloride, Calcium Pantothenate, Vitamin B12 Supplement, Riboflavin Supplement, Biotin, Folic Acid), Choline Chloride, L-Tryptophan, minerals (Zinc Oxide, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate), Taurine, Beta-Carotene.",
+      "calorie_content": "1049 kcal/kg, 387 kcal/can",
+      "health_tags": [
+        "digestive_health",
+        "skin_coat"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-food-d-d-duck-formula-wet-dog-food-wet-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.369,
+          "size_description": "13 oz",
+          "sku": "052742077352"
+        }
+      ],
+      "source_id": "052742077352"
+    },
+    {
+      "name": "d/d Potato & Salmon Recipe Dry Dog Food",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-dd-potato-salmon-skin-care-dry",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 18.5,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 3.4,
+        "calcium_min": 0.85,
+        "phosphorus_min": 0.65,
+        "potassium_min": 0.95,
+        "sodium_min": 0.39,
+        "epa_min": 0.197,
+        "omega_3_min": 0.94,
+        "omega_6_min": 3.64,
+        "l_carnitine_min": 6.3
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Potatoes, Potato Starch, Salmon, Potato Protein, Soybean Oil, Coconut Oil, Powdered Cellulose, Pork Liver Flavor, Dicalcium Phosphate, Lactic Acid, Potassium Chloride, Fish Oil, Glyceryl Monostearate, Iodized Salt, Choline Chloride, Calcium Carbonate, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Calcium Pantothenate, Pyridoxine Hydrochloride, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement), DL-Methionine, Taurine, Magnesium Oxide, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Mixed Tocopherols for freshness, Natural Flavors, Beta-Carotene.",
+      "calorie_content": "3643 kcal/kg, 372 kcal/cup",
+      "health_tags": [
+        "digestive_health",
+        "skin_coat"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-food-d-d-potato-salmon-recipe-dry-dog-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 7.98,
+          "size_description": "17.6 lb",
+          "sku": "052742074177"
+        }
+      ],
+      "source_id": "052742074177"
+    },
+    {
+      "name": "d/d Potato & Duck Recipe Dog Food",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-dd-potato-duck-skin-care-dry",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 18.5,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 3.3,
+        "calcium_min": 0.85,
+        "phosphorus_min": 0.58,
+        "potassium_min": 0.95,
+        "sodium_min": 0.37,
+        "epa_min": 0.221,
+        "omega_3_min": 0.9,
+        "omega_6_min": 3.35,
+        "l_carnitine_min": 0.0
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Potatoes, Potato Starch, Duck, Potato Protein, Soybean Oil, Coconut Oil, Powdered Cellulose, Pork Liver Flavor, Dicalcium Phosphate, Lactic Acid, Fish Oil, Potassium Chloride, Glyceryl Monostearate, Calcium Carbonate, Iodized Salt, Choline Chloride, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Calcium Pantothenate, Pyridoxine Hydrochloride, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement), DL-Methionine, Taurine, Magnesium Oxide, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Mixed Tocopherols for freshness, Natural Flavors, Beta-Carotene.",
+      "calorie_content": "3651 kcal/kg, 373 kcal/cup",
+      "health_tags": [
+        "digestive_health",
+        "skin_coat"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-food-d-d-potato-duck-recipe-dog-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 7.98,
+          "size_description": "17.6 lb",
+          "sku": "052742074122"
+        }
+      ],
+      "source_id": "052742074122"
+    },
+    {
+      "name": "d/d Potato & Venison Recipe Wet Dog Food Wet Food",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-dd-venison-skin-care-canned",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 19.9,
+        "crude_fat_min": 16.5,
+        "crude_fiber_max": 2.8,
+        "calcium_min": 0.79,
+        "phosphorus_min": 0.61,
+        "potassium_min": 0.92,
+        "sodium_min": 0.31,
+        "epa_min": 0.233,
+        "omega_3_min": 1.1,
+        "omega_6_min": 2.98,
+        "l_carnitine_min": 46.1
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Water, Potatoes, Venison Liver, Potato Starch, Venison, Venison By-Products, Coconut Oil, Soybean Oil, Powdered Cellulose, Potato Protein, Fish Oil, Dicalcium Phosphate, Glycine, Cysteine, Potassium Citrate, Calcium Carbonate, Choline Chloride, Dextrose, Iodized Salt, DL-Methionine, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Ascorbic Acid (source of Vitamin C), Niacin Supplement, Vitamin A Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Riboflavin Supplement, Menadione Sodium Bisulfite Complex (source of Vitamin K), Biotin, Folic Acid, Vitamin D3 Supplement), L-Lysine, Taurine, Magnesium Oxide, minerals (Zinc Oxide, Ferrous Sulfate, Copper Sulfate, Manganous Oxide, Manganese Sulfate, Calcium Iodate, Sodium Selenite), Beta-Carotene.",
+      "calorie_content": "1060 kcal/kg, 391 kcal/can",
+      "health_tags": [
+        "digestive_health",
+        "skin_coat"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-food-d-d-potato-venison-recipe-wet-dog-food-wet-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.369,
+          "size_description": "13 oz",
+          "sku": "052742077253"
+        }
+      ],
+      "source_id": "052742077253"
+    },
+    {
+      "name": "d/d Potato & Venison Recipe Dry Dog Food",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-dd-potato-venison-skin-care-dry",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 18.5,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 3.3,
+        "calcium_min": 0.9,
+        "phosphorus_min": 0.61,
+        "potassium_min": 0.95,
+        "sodium_min": 0.37,
+        "omega_3_min": 0.9,
+        "omega_6_min": 3.38
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Potatoes, Potato Starch, Venison, Potato Protein, Soybean Oil, Coconut Oil, Powdered Cellulose, Pork Liver Flavor, Dicalcium Phosphate, Lactic Acid, Fish Oil, Potassium Chloride, Glyceryl Monostearate, Calcium Carbonate, Iodized Salt, Choline Chloride, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Calcium Pantothenate, Pyridoxine Hydrochloride, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement), DL-Methionine, Taurine, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Mixed Tocopherols for freshness, Magnesium Oxide, Natural Flavors, Beta-Carotene.",
+      "calorie_content": "3636 kcal/kg, 371 kcal/cup",
+      "health_tags": [
+        "digestive_health",
+        "skin_coat"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-food-d-d-potato-venison-recipe-dry-dog-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 7.98,
+          "size_description": "17.6 lb",
+          "sku": "052742074030"
+        }
+      ],
+      "source_id": "052742074030"
+    },
+    {
+      "name": "d/d Salmon Formula Wet Dog Food Wet Food",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-dd-salmon-skin-care-canned",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 18.9,
+        "crude_fat_min": 16.2,
+        "crude_fiber_max": 1.9,
+        "calcium_min": 0.82,
+        "phosphorus_min": 0.73,
+        "potassium_min": 0.99,
+        "sodium_min": 0.25,
+        "epa_min": 0.346,
+        "omega_3_min": 1.89,
+        "omega_6_min": 4.46,
+        "l_carnitine_min": 10.5
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Water, Salmon, Potatoes, Potato Starch, Potato Protein, Soybean Oil, Dicalcium Phosphate, Fish Oil, Powdered Cellulose, Potassium Citrate, Choline Chloride, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Vitamin A Supplement, Calcium Pantothenate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Riboflavin Supplement, Folic Acid), Iodized Salt, DL-Methionine, Taurine, L-Tryptophan, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganese Sulfate, Calcium Iodate), L-Lysine, Magnesium Oxide, Beta-Carotene.",
+      "health_tags": [
+        "digestive_health",
+        "skin_coat"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-food-d-d-salmon-formula-wet-dog-food-wet-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.369,
+          "size_description": "13 oz",
+          "sku": "052742077338"
+        }
+      ],
+      "source_id": "052742077338",
+      "calorie_content": "1098 kcal/kg, 405 kcal/can"
+    },
+    {
+      "name": "a/d with Chicken Wet Dog/Cat Food Wet Food",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-ad-urgent-care-canned",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 43.9,
+        "crude_fat_min": 31.0,
+        "crude_fiber_max": 0.1,
+        "calcium_min": 1.25,
+        "phosphorus_min": 1.16,
+        "potassium_min": 1.19,
+        "sodium_min": 0.89,
+        "taurine_min": 0.66,
+        "omega_3_min": 2.45,
+        "omega_6_min": 6.74
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Turkey giblets, water, pork liver, chicken, corn flour, spray dried pork stock, fish oil, calcium carbonate, chicken liver flavor, natural flavor, sodium tripolyphosphate, potassium chloride, dicalcium phosphate, guar gum, taurine, vitamins (vitamin E supplement, ascorbic acid (source of vitamin C), thiamine mononitrate, niacin supplement, calcium pantothenate, vitamin B12 supplement, pyridoxine hydrochloride, biotin, riboflavin supplement, folic acid), potassium citrate, choline chloride, magnesium oxide, minerals (ferrous sulfate, zinc oxide, copper sulfate, manganese sulfate, calcium iodate), beta-carotene.",
+      "health_tags": [
+        "diabetes",
+        "digestive_health",
+        "liver_health"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-food-a-d-with-chicken-wet-dog-cat-food-wet-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.156,
+          "size_description": "5.5 oz",
+          "sku": "052742077314"
+        }
+      ],
+      "source_id": "052742077314"
+    },
+    {
+      "name": "Gastrointestinal Biome Dry Dog Food",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-gastrointestinal-biome-digestive-care-dry",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 21.0,
+        "crude_fat_min": 12.6,
+        "crude_fiber_max": 7.4,
+        "calcium_min": 1.16,
+        "phosphorus_min": 0.67,
+        "potassium_min": 0.99,
+        "sodium_min": 0.39,
+        "taurine_min": 0.13,
+        "omega_6_min": 3.48
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Chicken, Cracked Pearled Barley, Brewers Rice, Corn Protein Meal, Whole Grain Corn, Whole Grain Oats, Ground Pecan Shells, Chicken Liver Flavor, Chicken Fat, Powdered Cellulose, Flaxseed, Dried Beet Pulp, Pork Liver Flavor, Dried Citrus Pulp, Soybean Oil, Fish Oil, Calcium Carbonate, Dicalcium Phosphate, Lactic Acid, Potassium Chloride, Pumpkin, Pressed Cranberries, L-Lysine, Iodized Salt, Choline Chloride, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Biotin, Folic Acid, Vitamin D3 Supplement), Ginger, Psyllium Seed Husk, L-Threonine, Taurine, L-Tryptophan, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Mixed Tocopherols for freshness, Natural Flavors, Beta-Carotene.",
+      "calorie_content": "3327 kcal/kg, 330 kcal/cup",
+      "health_tags": [
+        "digestive_health"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-food-gastrointestinal-biome-dry-dog-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 7.26,
+          "size_description": "16 lb",
+          "sku": "052742075105"
+        }
+      ],
+      "source_id": "052742075105"
+    },
+    {
+      "name": "Gastrointestinal Biome Wet Dog Food Wet Food",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-gastrointestinal-biome-chicken-vegetable-stew-digestive-care-canned",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.3,
+        "crude_fat_min": 15.1,
+        "crude_fiber_max": 7.3,
+        "calcium_min": 1.08,
+        "phosphorus_min": 0.57,
+        "potassium_min": 0.95,
+        "sodium_min": 0.35,
+        "taurine_min": 0.14,
+        "omega_6_min": 3.19
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Chicken Broth, Chicken, Pork Liver, Carrots, Rice, Rice Starch, Spinach, Ground Pecan Shells, Oat Fiber, Wheat Gluten, Hydrolyzed Chicken Flavor, Flaxseed, Soybean Oil, Dried Citrus Pulp, Dried Beet Pulp, Potassium Alginate, Whole Grain Barley, Fish Oil, Calcium Chloride, Pumpkin, Pressed Cranberries, Powdered Cellulose, Dicalcium Phosphate, Guar Gum, Calcium Lactate, Calcium Gluconate, Choline Chloride, Potassium Citrate, Sodium Tripolyphosphate, Fructooligosaccharides (FOS), vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Riboflavin Supplement, Vitamin D3 Supplement, Folic Acid), Ginger, Psyllium Seed Husk, Taurine, L-Threonine, L-Tryptophan, Magnesium Oxide, minerals (Zinc Oxide, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate).",
+      "health_tags": [
+        "digestive_health"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-food-gastrointestinal-biome-wet-dog-food-wet-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.354,
+          "size_description": "12.5 oz",
+          "sku": "052742077154"
+        }
+      ],
+      "source_id": "052742077154",
+      "calorie_content": "811 kcal/kg, 287 kcal/can"
+    },
+    {
+      "name": "i/d Chicken Flavor Dog Food",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-id-digestive-care-dry",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.2,
+        "crude_fat_min": 13.6,
+        "crude_fiber_max": 2.0,
+        "calcium_min": 0.87,
+        "phosphorus_min": 0.6,
+        "potassium_min": 0.85,
+        "sodium_min": 0.38,
+        "taurine_min": 0.12,
+        "omega_6_min": 2.93
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Chicken, Cracked Pearled Barley, Brown Rice, Brewers Rice, Whole Grain Corn, Corn Protein Meal, Chicken Fat, Chicken Meal, Egg Product, Chicken Liver Flavor, Pork Liver Flavor, Ground Pecan Shells, Lactic Acid, Potassium Chloride, Flaxseed, Dried Beet Pulp, Calcium Carbonate, Dried Citrus Pulp, L-Lysine, Choline Chloride, Fish Oil, Iodized Salt, Pressed Cranberries, L-Threonine, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Calcium Pantothenate, Vitamin A Supplement, Pyridoxine Hydrochloride, Biotin, Riboflavin Supplement, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement), L-Tryptophan, Taurine, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), DL-Methionine, Mixed Tocopherols for freshness, Natural Flavors, Magnesium Oxide, Beta-Carotene.",
+      "calorie_content": "3589 kcal/kg, 356 kcal/cup",
+      "health_tags": [
+        "critical_care",
+        "digestive_health"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-food-i-d-chicken-flavor-dog-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 3.86,
+          "size_description": "8.5 lb",
+          "sku": "052742078465"
+        }
+      ],
+      "source_id": "052742078465"
+    },
+    {
+      "name": "i/d Chicken & Vegetable Stew Dog Food Wet Food",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-id-chicken-vegetable-stew-digestive-care-canned",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.4,
+        "crude_fat_min": 15.8,
+        "crude_fiber_max": 1.9,
+        "calcium_min": 0.93,
+        "phosphorus_min": 0.73,
+        "potassium_min": 1.02,
+        "sodium_min": 0.46,
+        "taurine_min": 0.13,
+        "omega_6_min": 3.0
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Water, Chicken, Pork Liver, Carrots, Rice Starch, Rice, Potato Starch, Hydrolyzed Chicken Flavor, Dextrose, Egg Whites, Potassium Alginate, Soybean Oil, Ground Pecan Shells, Brewers Dried Yeast, Sugar, Calcium Chloride, Flaxseed, Dried Beet Pulp, L-Lysine, Dried Citrus Pulp, Guar Gum, Potassium Citrate, Dicalcium Phosphate, Fish Oil, Calcium Lactate, Calcium Gluconate, Monosodium Phosphate, Sodium Tripolyphosphate, vitamins (Vitamin E Supplement, Thiamine Mononitrate, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Riboflavin Supplement, Menadione Sodium Bisulfite Complex (source of Vitamin K), Folic Acid, Vitamin D3 Supplement), Choline Chloride, Pressed Cranberries, L-Threonine, Magnesium Oxide, Taurine, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganese Sulfate, Calcium Iodate).",
+      "health_tags": [
+        "critical_care",
+        "digestive_health"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-food-i-d-chicken-vegetable-stew-dog-food-wet-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.354,
+          "size_description": "12.5 oz",
+          "sku": "052742078403"
+        }
+      ],
+      "source_id": "052742078403",
+      "calorie_content": "780 kcal/kg, 276 kcal/can"
+    },
+    {
+      "name": "i/d Turkey Recipe Dog Food Wet Food",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-id-digestive-care-canned",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 27.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 1.6,
+        "calcium_min": 0.94,
+        "phosphorus_min": 0.75,
+        "potassium_min": 0.92,
+        "sodium_min": 0.38,
+        "taurine_min": 0.12,
+        "omega_6_min": 4.08
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Water, Turkey, Pork Liver, Brewers Rice, Whole Grain Corn, Egg Product, Cracked Pearled Barley, Rice, Hydrolyzed Chicken Flavor, Ground Pecan Shells, Potassium Chloride, Flaxseed, Dried Beet Pulp, Dried Citrus Pulp, Iodized Salt, vitamins (Vitamin E Supplement, Ascorbic Acid (source of Vitamin C), L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Vitamin A Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Riboflavin Supplement, Biotin, Menadione Sodium Bisulfite Complex (source of Vitamin K), Folic Acid, Vitamin D3 Supplement), Fish Oil, Pressed Cranberries, L-Tryptophan, Choline Chloride, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganese Sulfate, Calcium Iodate), Taurine, Magnesium Oxide, Thiamine Hydrochloride, Beta-Carotene.",
+      "health_tags": [
+        "critical_care",
+        "digestive_health"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-food-i-d-turkey-recipe-dog-food-wet-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.369,
+          "size_description": "13 oz",
+          "sku": "052742078557"
+        }
+      ],
+      "source_id": "052742078557",
+      "calorie_content": "1016 kcal/kg, 375 kcal/can"
+    },
+    {
+      "name": "i/d Puppy Chicken Flavor Food",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-id-puppy-chicken-flavor-digestive-care-dry",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.2,
+        "crude_fat_min": 20.1,
+        "crude_fiber_max": 2.1,
+        "calcium_min": 1.1,
+        "phosphorus_min": 0.9,
+        "potassium_min": 0.95,
+        "sodium_min": 0.4,
+        "omega_3_min": 0.59,
+        "omega_6_min": 3.92
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Chicken, Cracked Pearled Barley, Brewers Rice, Pea Protein, Chicken Fat, Chicken Meal, Whole Grain Corn, Egg Product, Corn Protein Meal, Chicken Liver Flavor, Pork Liver Flavor, Ground Pecan Shells, Lactic Acid, Flaxseed, Dried Beet Pulp, Dried Citrus Pulp, Potassium Chloride, Choline Chloride, Fish Oil, Iodized Salt, Dicalcium Phosphate, Calcium Carbonate, Pressed Cranberries, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Calcium Pantothenate, Vitamin A Supplement, Pyridoxine Hydrochloride, Biotin, Riboflavin Supplement, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement), minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Taurine, L-Threonine, DL-Methionine, L-Tryptophan, Mixed Tocopherols for freshness, Natural Flavors, Beta-Carotene.",
+      "calorie_content": "3857 kcal/kg, 405 kcal/cup",
+      "health_tags": [
+        "critical_care",
+        "digestive_health"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-food-i-d-puppy-chicken-flavor-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 3.86,
+          "size_description": "8.5 lb",
+          "sku": "052742081892"
+        }
+      ],
+      "source_id": "052742081892"
+    },
+    {
+      "name": "i/d Puppy with Turkey Dog Food Wet Food",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-id-puppy-turkey-digestive-care-canned",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.3,
+        "crude_fat_min": 18.3,
+        "crude_fiber_max": 1.4,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.09,
+        "potassium_min": 0.8,
+        "sodium_min": 0.42,
+        "omega_3_min": 0.39,
+        "omega_6_min": 4.56
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Water, Turkey, Pork Liver, Rice, Egg Product, Whole Grain Corn, Hydrolyzed Chicken Flavor, Ground Pecan Shells, Chicken Fat, Dicalcium Phosphate, Dried Beet Pulp, Potassium Chloride, Flaxseed, Dried Citrus Pulp, Monosodium Phosphate, vitamins (Vitamin E Supplement, Ascorbic Acid (source of Vitamin C), L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Vitamin A Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Riboflavin Supplement, Biotin, Menadione Sodium Bisulfite Complex (source of Vitamin K), Folic Acid, Vitamin D3 Supplement), Iodized Salt, Pressed Cranberries, Fish Oil, L-Tryptophan, Choline Chloride, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganese Sulfate, Calcium Iodate), Magnesium Oxide, Taurine, Thiamine Hydrochloride, Beta-Carotene.",
+      "calorie_content": "1079 kcal/kg, 398 kcal/can",
+      "health_tags": [
+        "critical_care",
+        "digestive_health"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-food-i-d-puppy-with-turkey-dog-food-wet-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.369,
+          "size_description": "13 oz",
+          "sku": "052742082004"
+        }
+      ],
+      "source_id": "052742082004"
+    },
+    {
+      "name": "i/d Low Fat Rice, Vegetable and Chicken Stew Dog Food Wet Food",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-id-low-fat-rice-vegetable-chicken-stew-digestive-care-canned",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 22.9,
+        "crude_fat_min": 9.2,
+        "crude_fiber_max": 1.8,
+        "calcium_min": 0.91,
+        "phosphorus_min": 0.61,
+        "potassium_min": 0.96,
+        "sodium_min": 0.47,
+        "taurine_min": 0.13,
+        "epa_min": 0.024,
+        "omega_3_min": 0.56,
+        "omega_6_min": 2.48,
+        "l_carnitine_min": 345.1
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Water, Pork Liver, Rice, Carrots, Chicken, Corn Starch, Sugar, Dextrose, Egg Whites, Hydrolyzed Chicken Flavor, Soybean Oil, Potassium Alginate, Calcium Chloride, Ground Pecan Shells, Flaxseed, Ginger, Dried Beet Pulp, Guar Gum, Dried Citrus Pulp, Potassium Citrate, Monosodium Phosphate, L-Lysine, Sodium Tripolyphosphate, vitamins (Vitamin E Supplement, Thiamine Mononitrate, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Riboflavin Supplement, Menadione Sodium Bisulfite Complex (source of Vitamin K), Folic Acid, Vitamin D3 Supplement), Calcium Lactate, Calcium Gluconate, Pressed Cranberries, Choline Chloride, Magnesium Oxide, Taurine, minerals (Zinc Oxide, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate), L-Carnitine.",
+      "calorie_content": "1788 kcal/kg, 279 kcal/can",
+      "health_tags": [
+        "diabetes",
+        "digestive_health",
+        "urinary_health"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-food-i-d-low-fat-rice-vegetable-and-chicken-stew-dog-food-wet-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.156,
+          "size_description": "5.5 oz",
+          "sku": "052742077017"
+        }
+      ],
+      "source_id": "052742077017"
+    },
+    {
+      "name": "i/d Low Fat Original Flavor Dog Food Wet Food",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-id-low-fat-digestive-care-canned",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.2,
+        "crude_fat_min": 7.8,
+        "crude_fiber_max": 2.8,
+        "calcium_min": 0.78,
+        "phosphorus_min": 0.61,
+        "potassium_min": 0.95,
+        "sodium_min": 0.5,
+        "taurine_min": 0.12,
+        "epa_min": 0.016,
+        "omega_3_min": 0.64,
+        "omega_6_min": 2.45,
+        "l_carnitine_min": 350.6
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Water, Rice, Pork Liver, Turkey Giblets, Pork By-Products, Whole Grain Corn, Dried Beet Pulp, Egg Whites, Flaxseed, Ground Pecan Shells, Chicken Liver Flavor, Soybean Oil, Dicalcium Phosphate, Potassium Chloride, Ginger, Calcium Carbonate, Iodized Salt, Dried Citrus Pulp, vitamins (Vitamin E Supplement, Thiamine Mononitrate, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Menadione Sodium Bisulfite Complex (source of Vitamin K), Pyridoxine Hydrochloride, Calcium Pantothenate, Vitamin B12 Supplement, Riboflavin Supplement, Biotin, Vitamin D3 Supplement, Folic Acid), Pressed Cranberries, Choline Chloride, Magnesium Oxide, Taurine, minerals (Zinc Oxide, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate), L-Carnitine, Beta-Carotene.",
+      "health_tags": [
+        "diabetes",
+        "digestive_health",
+        "urinary_health"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-food-i-d-low-fat-original-flavor-dog-food-wet-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.369,
+          "size_description": "13 oz",
+          "sku": "052742080277"
+        }
+      ],
+      "source_id": "052742080277",
+      "calorie_content": "889 kcal/kg, 328 kcal/can"
+    },
+    {
+      "name": "i/d Low Fat Dry Dog Food",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-id-low-fat-digestive-care-dry",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.1,
+        "crude_fat_min": 7.5,
+        "crude_fiber_max": 1.8,
+        "calcium_min": 0.85,
+        "phosphorus_min": 0.64,
+        "potassium_min": 0.92,
+        "sodium_min": 0.45,
+        "taurine_min": 0.13,
+        "epa_min": 0.002,
+        "omega_3_min": 0.68,
+        "omega_6_min": 1.78,
+        "l_carnitine_min": 339.6
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Brewers Rice, Corn Gluten Meal, Chicken Meal, Chicken By-Product Meal, Hydrolyzed Chicken Flavor, Flaxseed, Chicken Fat, Ground Pecan Shells, Pork Liver Flavor, Lactic Acid, Fish Flavor, Ginger, Dried Beet Pulp, Iodized Salt, Potassium Citrate, Dried Citrus Pulp, Potassium Chloride, Choline Chloride, Calcium Sulfate, Dicalcium Phosphate, Glyceryl Monostearate, vitamins (Vitamin E Supplement, Thiamine Mononitrate, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Pyridoxine Hydrochloride, Riboflavin Supplement, Vitamin B12 Supplement, Biotin, Folic Acid, Vitamin D3 Supplement), Pressed Cranberries, L-Lysine, Taurine, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Magnesium Oxide, Mixed Tocopherols for freshness, Natural Flavors, L-Carnitine, Beta-Carotene.",
+      "calorie_content": "3311 kcal/kg, 300 kcal/cup",
+      "health_tags": [
+        "diabetes",
+        "digestive_health",
+        "urinary_health"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-food-i-d-low-fat-dry-dog-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 3.86,
+          "size_description": "8.5 lb",
+          "sku": "052742074344"
+        }
+      ],
+      "source_id": "052742074344"
+    },
+    {
+      "name": "j/d Wet Dog Food Wet Food",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-jd-joint-care-canned",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 19.5,
+        "crude_fat_min": 18.1,
+        "crude_fiber_max": 4.1,
+        "calcium_min": 0.81,
+        "phosphorus_min": 0.58,
+        "potassium_min": 0.74,
+        "sodium_min": 0.27,
+        "taurine_min": 0.11,
+        "omega_6_min": 2.68,
+        "epa_min": 0.552,
+        "omega_3_min": 3.74,
+        "l_carnitine_min": 339.3
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Water, Rice, Pork Liver, Pork By-Products, Lamb, Flaxseed, Whole Grain Corn, Cracked Pearled Barley, Fish Oil, Soybean Meal, Powdered Cellulose, Soybean Oil, Chicken Liver Flavor, Dicalcium Phosphate, Calcium Carbonate, Egg Product, Potassium Chloride, vitamins (Vitamin E Supplement, Thiamine Mononitrate, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Ascorbic Acid (source of Vitamin C), Menadione Sodium Bisulfite Complex (source of Vitamin K), Pyridoxine Hydrochloride, Calcium Pantothenate, Vitamin B12 Supplement, Vitamin A Supplement, Riboflavin Supplement, Folic Acid, Biotin, Vitamin D3 Supplement), Iodized Salt, Choline Chloride, L-Lysine, Taurine, minerals (Zinc Oxide, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate), Glucosamine Hydrochloride, Chondroitin Sulfate, L-Carnitine, Beta-Carotene.",
+      "health_tags": [
+        "heart_health",
+        "joint_health",
+        "skin_coat"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-food-j-d-wet-dog-food-wet-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.369,
+          "size_description": "13 oz",
+          "sku": "052742075167"
+        }
+      ],
+      "source_id": "052742075167",
+      "calorie_content": "1274 kcal/kg, 470 kcal/can"
+    },
+    {
+      "name": "j/d Dry Dog Food",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-jd-joint-care-dry",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 20.0,
+        "crude_fat_min": 15.9,
+        "crude_fiber_max": 4.1,
+        "calcium_min": 0.7,
+        "phosphorus_min": 0.6,
+        "potassium_min": 0.7,
+        "sodium_min": 0.2,
+        "taurine_min": 0.11,
+        "omega_6_min": 2.95,
+        "epa_min": 0.411,
+        "omega_3_min": 3.6,
+        "l_carnitine_min": 324.3
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Whole Grain Wheat, Whole Grain Corn, Flaxseed, Chicken Meal, Corn Protein Meal, Chicken Fat, Chicken Liver Flavor, Fish Oil, Powdered Cellulose, Lactic Acid, Pork Liver Flavor, Potassium Chloride, L-Lysine, Calcium Carbonate, Choline Chloride, Iodized Salt, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement), L-Threonine, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Taurine, L-Tryptophan, Glucosamine Hydrochloride, Mixed Tocopherols for freshness, L-Carnitine, Natural Flavors, Chondroitin Sulfate, Beta-Carotene.",
+      "calorie_content": "3670 kcal/kg, 364 kcal/cup",
+      "health_tags": [
+        "heart_health",
+        "joint_health",
+        "skin_coat"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-food-j-d-dry-dog-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 3.86,
+          "size_description": "8.5 lb",
+          "sku": "052742074061"
+        }
+      ],
+      "source_id": "052742074061"
+    },
+    {
+      "name": "k/d Chicken & Vegetable Stew Dog Food Wet Food",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-kd-chicken-vegetable-stew-kidney-care-canned",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 16.1,
+        "crude_fat_min": 25.0,
+        "crude_fiber_max": 3.0,
+        "calcium_min": 0.79,
+        "phosphorus_min": 0.3,
+        "potassium_min": 0.88,
+        "sodium_min": 0.15,
+        "omega_3_min": 1.7
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Water, Chicken, Carrots, Rice, Chicken Fat, Pork Liver, Rice Starch, Dextrose, Green Peas, Egg Whites, Sugar, Dried Beet Pulp, Flaxseed, Fish Oil, Hydrolyzed Chicken Flavor, Potassium Alginate, Powdered Cellulose, Calcium Lactate, Calcium Gluconate, Natural Flavor, Brewers Dried Yeast, Potassium Citrate, Guar Gum, Betaine, L-Lysine, Whole Grain Oats, vitamins (Vitamin E Supplement, Ascorbic Acid (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Vitamin A Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Riboflavin Supplement, Biotin, Menadione Sodium Bisulfite Complex (source of Vitamin K), Folic Acid, Vitamin D3 Supplement), Fructooligosaccharides (FOS), Choline Chloride, Calcium Chloride, Dicalcium Phosphate, Taurine, Magnesium Oxide, L-Threonine, Monosodium Phosphate, L-Carnitine, L-Tryptophan, minerals (Zinc Oxide, Ferrous Sulfate, Copper Sulfate, Manganese Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Beta-Carotene, Calcium Carbonate.",
+      "calorie_content": "994 kcal/kg, 352 kcal/can",
+      "health_tags": [
+        "kidney_health",
+        "liver_health"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-food-k-d-chicken-vegetable-stew-dog-food-wet-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.354,
+          "size_description": "12.5 oz",
+          "sku": "052742078380"
+        }
+      ],
+      "source_id": "052742078380"
+    },
+    {
+      "name": "k/d with Chicken Dog Food Wet Food",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-kd-kidney-care-canned",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 15.7,
+        "crude_fat_min": 26.1,
+        "crude_fiber_max": 3.5,
+        "calcium_min": 0.79,
+        "phosphorus_min": 0.27,
+        "potassium_min": 0.9,
+        "sodium_min": 0.18,
+        "omega_3_min": 2.53
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Water, Corn Starch, Pork Liver, Chicken, Chicken Fat, Dextrose, Flaxseed, Chicken Liver Flavor, Dried Beet Pulp, Fish Oil, Powdered Cellulose, Calcium Carbonate, Egg Whites, L-Lysine, Potassium Citrate, Potassium Chloride, Betaine, DL-Methionine, Whole Grain Oats, Choline Chloride, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Ascorbic Acid (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Vitamin A Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Riboflavin Supplement, Biotin, Menadione Sodium Bisulfite Complex (source of Vitamin K), Folic Acid, Vitamin D3 Supplement), Fructooligosaccharides (FOS), minerals (Ferrous Sulfate, Zinc Oxide, Manganese Sulfate, Copper Sulfate, Calcium Iodate), Magnesium Oxide, L-Threonine, Taurine, Sodium Tripolyphosphate, L-Carnitine, Iodized Salt, L-Tryptophan, Beta-Carotene.",
+      "health_tags": [
+        "kidney_health",
+        "liver_health"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-food-k-d-with-chicken-dog-food-wet-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.369,
+          "size_description": "13 oz",
+          "sku": "052742077673"
+        }
+      ],
+      "source_id": "052742077673",
+      "calorie_content": "1173 kcal/kg, 433 kcal/can"
+    },
+    {
+      "name": "k/d Beef & Vegetable Stew Dog Food Wet Food",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-kd-beef-vegetable-stew-kidney-care-canned",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 15.8,
+        "crude_fat_min": 23.8,
+        "crude_fiber_max": 3.5,
+        "calcium_min": 0.77,
+        "phosphorus_min": 0.31,
+        "potassium_min": 0.99,
+        "sodium_min": 0.17,
+        "omega_3_min": 1.35
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Water, Beef, Carrots, Pork Liver, Rice, Chicken Fat, Rice Starch, Dextrose, Green Peas, Sugar, Hydrolyzed Chicken Flavor, Powdered Cellulose, Fish Oil, Dried Beet Pulp, Flaxseed, Egg Whites, Potassium Alginate, Caramel color, Calcium Lactate, Calcium Gluconate, Natural Flavor, Potassium Citrate, Brewers Dried Yeast, Choline Chloride, Guar Gum, Betaine, Soybean Oil, L-Lysine, Whole Grain Oats, vitamins (Vitamin E Supplement, Thiamine Mononitrate, Ascorbic Acid (source of Vitamin C), Niacin Supplement, Vitamin A Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Riboflavin Supplement, Biotin, Menadione Sodium Bisulfite Complex (source of Vitamin K), Folic Acid, Vitamin D3 Supplement), Fructooligosaccharides (FOS), Calcium Chloride, Dicalcium Phosphate, Monosodium Phosphate, Magnesium Oxide, L-Threonine, L-Arginine, Taurine, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganese Sulfate, Calcium Iodate), L-Tryptophan, L-Carnitine, Beta-Carotene, Calcium Carbonate.",
+      "calorie_content": "1008 kcal/kg, 357 kcal/can",
+      "health_tags": [
+        "kidney_health",
+        "liver_health"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-food-k-d-beef-vegetable-stew-dog-food-wet-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.354,
+          "size_description": "12.5 oz",
+          "sku": "052742078427"
+        }
+      ],
+      "source_id": "052742078427"
+    },
+    {
+      "name": "k/d with Chicken Dog Food",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-kd-current-kidney-care-dry",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 15.6,
+        "crude_fat_min": 21.1,
+        "crude_fiber_max": 1.5,
+        "calcium_min": 0.79,
+        "phosphorus_min": 0.29,
+        "potassium_min": 0.75,
+        "sodium_min": 0.17,
+        "omega_3_min": 0.85
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Brewers Rice, Chicken Fat, Brown Rice, Whole Grain Sorghum, Chicken, Dried Beet Pulp, Egg Product, Hydrolyzed Chicken Flavor, Corn Protein Meal, Fish Oil, Pork Liver Flavor, Calcium Carbonate, Lactic Acid, Soybean Oil, L-Lysine, Potassium Chloride, Betaine, Whole Grain Oats, DL-Methionine, Fructooligosaccharides (FOS), vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Calcium Pantothenate, Pyridoxine Hydrochloride, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement), Potassium Citrate, Choline Chloride, L-Threonine, Iodized Salt, Taurine, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), L-Tryptophan, L-Carnitine, Magnesium Oxide, Mixed Tocopherols for freshness, Natural Flavors, Beta-Carotene.",
+      "calorie_content": "3991 kcal/kg, 419 kcal/cup",
+      "health_tags": [
+        "kidney_health",
+        "liver_health"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-food-k-d-with-chicken-dog-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 3.86,
+          "size_description": "8.5 lb",
+          "sku": "052742074283"
+        }
+      ],
+      "source_id": "052742074283"
+    },
+    {
+      "name": "l/d Chicken Flavor Wet Dog Food Wet Food",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-ld-liver-care-canned",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 17.8,
+        "crude_fat_min": 24.4,
+        "crude_fiber_max": 3.2,
+        "calcium_min": 0.84,
+        "phosphorus_min": 0.62,
+        "potassium_min": 0.93,
+        "sodium_min": 0.22,
+        "omega_3_min": 1.5,
+        "omega_6_min": 6.64
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Water, Rice, Soybean Meal, Chicken Fat, Soybean Oil, Corn Starch, Egg Product, Chicken Liver Flavor, Powdered Cellulose, Fish Oil, Dicalcium Phosphate, Dried Beet Pulp, Corn Protein Meal, Natural Flavor, Choline Chloride, Potassium Chloride, Calcium Carbonate, L-Threonine, vitamins (Vitamin E Supplement, Thiamine Mononitrate, Ascorbic Acid (source of Vitamin C), L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Vitamin A Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Riboflavin Supplement, Menadione Sodium Bisulfite Complex (source of Vitamin K), Biotin, Folic Acid, Vitamin D3 Supplement), Iodized Salt, L-Lysine, Taurine, L-Arginine, Magnesium Oxide, L-Carnitine, minerals (Zinc Oxide, Ferrous Sulfate, Manganous Oxide, Manganese Sulfate, Calcium Iodate, Copper Sulfate, Sodium Selenite), L-Tryptophan, Rice Protein Concentrate, Beta-Carotene.",
+      "calorie_content": "1531 kcal/kg, 565 kcal/can",
+      "health_tags": [
+        "liver_health"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-food-l-d-chicken-flavor-wet-dog-food-wet-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.369,
+          "size_description": "13 oz",
+          "sku": "052742082950"
+        }
+      ],
+      "source_id": "052742082950"
+    },
+    {
+      "name": "l/d Chicken Flavor Dog Food",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-ld-liver-care-dry",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 18.1,
+        "crude_fat_min": 23.9,
+        "crude_fiber_max": 3.0,
+        "calcium_min": 0.94,
+        "phosphorus_min": 0.69,
+        "potassium_min": 0.99,
+        "sodium_min": 0.18,
+        "omega_3_min": 1.11,
+        "omega_6_min": 4.66
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Brewers Rice, Chicken, Chicken Fat, Egg Product, Soybean Meal, Flaxseed, Powdered Cellulose, Chicken Liver Flavor, Dicalcium Phosphate, Lactic Acid, Soybean Oil, Potassium Chloride, Dried Beet Pulp, Glyceryl Monostearate, Calcium Carbonate, DL-Methionine, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Riboflavin Supplement, Folic Acid, Vitamin D3 Supplement, Menadione Sodium Bisulfite Complex (source of Vitamin K)), Fish Oil, Choline Chloride, Iodized Salt, L-Lysine, L-Arginine, Taurine, minerals (Zinc Oxide, Manganous Oxide, Calcium Iodate, Sodium Selenite), L-Tryptophan, L-Carnitine, Mixed Tocopherols for freshness, Natural Flavors, Beta-Carotene.",
+      "calorie_content": "4040 kcal/kg, 424 kcal/cup",
+      "health_tags": [
+        "liver_health"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-food-l-d-chicken-flavor-dog-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 7.98,
+          "size_description": "17.6 lb",
+          "sku": "052742075174"
+        }
+      ],
+      "source_id": "052742075174"
+    },
+    {
+      "name": "Metabolic Lamb Meal & Rice Formula Dry Dog Food",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-metabolic-lamb-weight-management-dry",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 27.3,
+        "crude_fat_min": 11.3,
+        "crude_fiber_max": 13.4,
+        "calcium_min": 1.15,
+        "phosphorus_min": 0.79,
+        "potassium_min": 0.86,
+        "sodium_min": 0.37,
+        "l_carnitine_min": 409.7
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Lamb Meal, Brewers Rice, Whole Grain Sorghum, Corn Protein Meal, Powdered Cellulose, Whole Grain Wheat, Soybean Meal, Dried Tomato Pomace, Flaxseed, Dried Beet Pulp, Carrots, Coconut Oil, Chicken Liver Flavor, Lactic Acid, Chicken Fat, Pork Liver Flavor, L-Lysine, Potassium Chloride, Soybean Oil, DL-Methionine, Iodized Salt, Lipoic Acid, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement), Taurine, Choline Chloride, minerals (Manganese Sulfate, Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Calcium Iodate, Sodium Selenite), Mixed Tocopherols for freshness, Natural Flavors, L-Carnitine, Beta-Carotene.",
+      "calorie_content": "3073 kcal/kg, 253 kcal/cup",
+      "health_tags": [
+        "diabetes",
+        "weight_management"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-food-metabolic-lamb-meal-rice-formula-dry-dog-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 7.98,
+          "size_description": "17.6 lb",
+          "sku": "052742080154"
+        }
+      ],
+      "source_id": "052742080154"
+    },
+    {
+      "name": "Metabolic Vegetable & Beef Stew Dog Food Wet Food",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-metabolic-vegetable-beef-stew-weight-management-canned",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 29.4,
+        "crude_fat_min": 13.1,
+        "crude_fiber_max": 12.9,
+        "calcium_min": 0.91,
+        "phosphorus_min": 0.64,
+        "potassium_min": 0.97,
+        "sodium_min": 0.38,
+        "l_carnitine_min": 342.2
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Water, Pork Liver, Carrots, Green Peas, Powdered Cellulose, Beef, Rice, Corn Starch, Wheat Gluten, Dried Tomato Pomace, Flaxseed, Hydrolyzed Chicken Flavor, Coconut Oil, Potassium Alginate, Whole Grain Barley, Calcium Chloride, Caramel color, Fish Oil, Dicalcium Phosphate, Guar Gum, Lipoic Acid, vitamins (Vitamin E Supplement, Ascorbic Acid (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Pyridoxine Hydrochloride, Calcium Pantothenate, Vitamin B12 Supplement, Riboflavin Supplement, Biotin, Vitamin D3 Supplement, Folic Acid), Calcium Lactate, Calcium Gluconate, Sodium Tripolyphosphate, Potassium Citrate, Leucine, Taurine, Iodized Salt, L-Lysine, minerals (Zinc Oxide, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate), L-Carnitine, Beta-Carotene.",
+      "calorie_content": "737 kcal/kg, 261 kcal/can",
+      "health_tags": [
+        "diabetes",
+        "weight_management"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-food-metabolic-vegetable-beef-stew-dog-food-wet-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.354,
+          "size_description": "12.5 oz",
+          "sku": "052742078533"
+        }
+      ],
+      "source_id": "052742078533"
+    },
+    {
+      "name": "Metabolic Chicken Flavor Dog Food",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-metabolic-weight-management-dry",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.4,
+        "crude_fat_min": 11.6,
+        "crude_fiber_max": 12.0,
+        "calcium_min": 1.06,
+        "phosphorus_min": 0.76,
+        "potassium_min": 0.89,
+        "sodium_min": 0.3,
+        "l_carnitine_min": 304.7
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Whole Grain Wheat, Whole Grain Corn, Chicken Meal, Corn Protein Meal, Soybean Meal, Powdered Cellulose, Soybean Mill Run, Dried Beet Pulp, Dried Tomato Pomace, Carrots, Hydrolyzed Chicken Flavor, Chicken Fat, Flaxseed, Coconut Oil, Lactic Acid, DL-Methionine, Potassium Chloride, Iodized Salt, L-Lysine, Lipoic Acid, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement), Choline Chloride, minerals (Manganese Sulfate, Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Calcium Iodate, Sodium Selenite), Taurine, L-Carnitine, Mixed Tocopherols for freshness, Natural Flavors, Beta-Carotene.",
+      "calorie_content": "3145 kcal/kg, 259 kcal/cup",
+      "health_tags": [
+        "diabetes",
+        "weight_management"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-food-metabolic-chicken-flavor-dog-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 7.98,
+          "size_description": "17.6 lb",
+          "sku": "052742078335"
+        }
+      ],
+      "source_id": "052742078335"
+    },
+    {
+      "name": "Metabolic Chicken Flavor Wet Dog Food Wet Food",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-metabolic-weight-management-canned",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 27.7,
+        "crude_fat_min": 13.9,
+        "crude_fiber_max": 15.2,
+        "calcium_min": 0.71,
+        "phosphorus_min": 0.6,
+        "potassium_min": 0.81,
+        "sodium_min": 0.41,
+        "l_carnitine_min": 276.1
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Water, Pork Liver, Whole Grain Corn, Chicken, Powdered Cellulose, Rice, Pork By-Products, Flaxseed, Dried Tomato Pomace, Egg Whites, Coconut Oil, Calcium Carbonate, Potassium Chloride, DL-Methionine, Carrots, Lipoic Acid, Sodium Tripolyphosphate, vitamins (Vitamin E Supplement, Ascorbic Acid (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Vitamin A Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Riboflavin Supplement, Biotin, Menadione Sodium Bisulfite Complex (source of Vitamin K), Folic Acid, Vitamin D3 Supplement), Leucine, Iodized Salt, Taurine, minerals (Zinc Oxide, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate), L-Carnitine, Beta-Carotene.",
+      "calorie_content": "902 kcal/kg, 333 kcal/can",
+      "health_tags": [
+        "diabetes",
+        "weight_management"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-food-metabolic-chicken-flavor-wet-dog-food-wet-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.369,
+          "size_description": "13 oz",
+          "sku": "052742078571"
+        }
+      ],
+      "source_id": "052742078571"
+    },
+    {
+      "name": "Metabolic Vegetable & Chicken Stew Dog Food Wet Food",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-metabolic-vegetable-chicken-stew-weight-management-canned",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 29.0,
+        "crude_fat_min": 11.4,
+        "crude_fiber_max": 11.6,
+        "calcium_min": 0.99,
+        "phosphorus_min": 0.65,
+        "potassium_min": 0.98,
+        "sodium_min": 0.45,
+        "taurine_min": 0.13,
+        "dha_min": 0.129,
+        "epa_min": 0.135,
+        "omega_3_min": 1.33,
+        "omega_6_min": 1.89
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Water, Pork Liver, Carrots, Green Peas, Rice, Powdered Cellulose, Corn Starch, Wheat Gluten, Chicken, Flaxseed, Dried Tomato Pomace, Hydrolyzed Chicken Flavor, Coconut Oil, Potassium Alginate, Calcium Chloride, Natural Flavor, Fish Oil, Dicalcium Phosphate, Guar Gum, Lipoic Acid, Calcium Lactate, Calcium Gluconate, Sodium Tripolyphosphate, vitamins (Vitamin E Supplement, Thiamine Mononitrate, Ascorbic Acid (source of Vitamin C), Niacin Supplement, Pyridoxine Hydrochloride, Menadione Sodium Bisulfite Complex (source of Vitamin K), Calcium Pantothenate, Vitamin B12 Supplement, Riboflavin Supplement, Biotin, Folic Acid, Vitamin D3 Supplement), L-Lysine, Potassium Citrate, Iodized Salt, Taurine, minerals (Zinc Oxide, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate), L-Carnitine, Beta-Carotene.",
+      "health_tags": [
+        "diabetes",
+        "weight_management"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-food-metabolic-vegetable-chicken-stew-dog-food-wet-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.354,
+          "size_description": "12.5 oz",
+          "sku": "052742081373"
+        }
+      ],
+      "source_id": "052742081373",
+      "calorie_content": "701 kcal/kg, 248 kcal/can"
+    },
+    {
+      "name": "Metabolic Weight + j/d Chicken Flavor Dry Dog Food",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-metabolic-mobility-weight-management-dry",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.2,
+        "crude_fat_min": 13.6,
+        "crude_fiber_max": 14.1,
+        "calcium_min": 0.9,
+        "phosphorus_min": 0.69,
+        "potassium_min": 0.98,
+        "sodium_min": 0.38,
+        "l_carnitine_min": 324.1
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Chicken Meal, Brewers Rice, Flaxseed, Soybean Meal, Whole Grain Corn, Soybean Mill Run, Powdered Cellulose, Wheat Gluten, Dried Tomato Pomace, Carrots, Chicken Liver Flavor, Fish Oil, Coconut Oil, Dried Beet Pulp, Lactic Acid, Pork Liver Flavor, DL-Methionine, Iodized Salt, Potassium Chloride, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Pyridoxine Hydrochloride, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement), Lipoic Acid, Choline Chloride, L-Lysine, Taurine, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Glucosamine Hydrochloride, Mixed Tocopherols for freshness, Natural Flavors, L-Carnitine, Chondroitin Sulfate, Beta-Carotene.",
+      "calorie_content": "3173 kcal/kg, 288 kcal/cup",
+      "health_tags": [
+        "diabetes",
+        "joint_health",
+        "weight_management"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-food-metabolic-weight-j-d-chicken-flavor-dry-dog-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 6.8,
+          "size_description": "15 lb",
+          "sku": "052742078328"
+        }
+      ],
+      "source_id": "052742078328"
+    },
+    {
+      "name": "Metabolic Weight + j/d Vegetable & Tuna Stew Dog Food Wet Food",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-metabolic-mobility-vegetables-tuna-stew-weight-management-canned",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.5,
+        "crude_fat_min": 15.3,
+        "crude_fiber_max": 16.4,
+        "calcium_min": 0.8,
+        "phosphorus_min": 0.56,
+        "potassium_min": 0.96,
+        "sodium_min": 0.38,
+        "l_carnitine_min": 505.8
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Water, Pork Liver, Carrots, Powdered Cellulose, Spinach, Corn Starch, Tuna, Flaxseed, Egg Whites, Dried Tomato Pomace, Fish Oil, Chicken Liver Flavor, Rice, Potassium Alginate, Wheat Gluten, Hydrolyzed Chicken Flavor, Coconut Oil, Calcium Chloride, Guar Gum, Dicalcium Phosphate, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Riboflavin Supplement, Folic Acid, Vitamin D3 Supplement), DL-Methionine, Calcium Lactate, Calcium Gluconate, Lipoic Acid, Monosodium Phosphate, L-Lysine, Taurine, Choline Chloride, Sodium Tripolyphosphate, Chondroitin Sulfate, L-Carnitine, Glucosamine Hydrochloride, minerals (Zinc Oxide, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate).",
+      "health_tags": [
+        "diabetes",
+        "joint_health",
+        "skin_coat",
+        "weight_management"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-food-metabolic-weight-j-d-vegetable-tuna-stew-dog-food-wet-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.354,
+          "size_description": "12.5 oz",
+          "sku": "052742077093"
+        }
+      ],
+      "source_id": "052742077093",
+      "calorie_content": "636 kcal/kg, 225 kcal/can"
+    },
+    {
+      "name": "ONC Care Chicken & Vegetable Stew Dog Food Wet Food",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-onc-on-care-chicken-stew-restorative-care-canned",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 32.4,
+        "crude_fat_min": 24.2,
+        "crude_fiber_max": 2.2,
+        "calcium_min": 0.87,
+        "phosphorus_min": 0.65,
+        "potassium_min": 0.75,
+        "sodium_min": 0.35,
+        "taurine_min": 0.2,
+        "omega_3_min": 1.67,
+        "l_carnitine_min": 452.3
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Chicken Broth, Pork Liver, Chicken, Carrots, Green Peas, Rice, Rice Starch, Wheat Gluten, Soybean Oil, Hydrolyzed Chicken Flavor, Chicken Liver Flavor, Fish Oil, Potassium Alginate, Ground Pecan Shells, Coconut Oil, Calcium Chloride, Chicken Fat, Egg Product, Flaxseed, Dried Beet Pulp, Dried Citrus Pulp, Guar Gum, Dicalcium Phosphate, Calcium Lactate, Calcium Gluconate, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin D3 Supplement, Riboflavin Supplement, Folic Acid), Monosodium Phosphate, Pressed Cranberries, Choline Chloride, Taurine, Sodium Tripolyphosphate, Magnesium Oxide, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganese Sulfate, Calcium Iodate), L-Tryptophan, Natural Flavors, L-Carnitine, Beta-Carotene.",
+      "images": [
+        "/products/hill-s/hill-s-food-onc-care-chicken-vegetable-stew-dog-food-wet-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.354,
+          "size_description": "12.5 oz",
+          "sku": "052742077116"
+        }
+      ],
+      "source_id": "052742077116",
+      "calorie_content": "910 kcal/kg, 322 kcal/can"
+    },
+    {
+      "name": "ONC Care with Chicken Dry Dog Food",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-onc-on-care-chicken-restorative-care-dry",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 30.8,
+        "crude_fat_min": 26.3,
+        "crude_fiber_max": 2.4,
+        "calcium_min": 0.92,
+        "phosphorus_min": 0.62,
+        "potassium_min": 0.85,
+        "sodium_min": 0.36,
+        "taurine_min": 0.13,
+        "omega_3_min": 1.26,
+        "l_carnitine_min": 402.5
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Chicken, Whole Grain Wheat, Corn Gluten Meal, Chicken Fat, Hydrolyzed Chicken Liver, Soybean Meal, Brown Rice, Cracked Pearled Barley, Egg Product, Chicken Liver Flavor, Coconut Oil, Fish Oil, Ground Pecan Shells, Pork Liver Flavor, Lactic Acid, Calcium Carbonate, Potassium Citrate, Flaxseed, Dried Beet Pulp, Dried Citrus Pulp, Carrots, Iodized Salt, DL-Methionine, Pressed Cranberries, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement), Choline Chloride, L-Tryptophan, Natural Flavors, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Taurine, Mixed Tocopherols for freshness, L-Carnitine, Beta-Carotene.",
+      "calorie_content": "4158 kcal/kg, 483 kcal/cup",
+      "images": [
+        "/products/hill-s/hill-s-food-onc-care-with-chicken-dry-dog-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 2.72,
+          "size_description": "6 lb",
+          "sku": "052742075235"
+        }
+      ],
+      "source_id": "052742075235"
+    },
+    {
+      "name": "t/d Chicken Flavor Dry Dog Food",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-td-dental-care-dry",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 18.3,
+        "crude_fat_min": 16.5,
+        "crude_fiber_max": 10.8,
+        "calcium_min": 0.63,
+        "phosphorus_min": 0.45,
+        "potassium_min": 0.76,
+        "sodium_min": 0.25,
+        "omega_3_min": 0.24,
+        "omega_6_min": 3.83
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Brewers Rice, Whole Grain Corn, Chicken By-Product Meal, Powdered Cellulose, Chicken Fat, Soybean Mill Run, Egg Product, Hydrolyzed Chicken Flavor, Soybean Oil, Lactic Acid, Potassium Chloride, Calcium Sulfate, Iodized Salt, L-Lysine, vitamins (Vitamin ESupplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement), Choline Chloride, DL-Methionine, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Dicalcium Phosphate, Taurine, Mixed Tocopherols for freshness, Natural Flavors, Beta-Carotene.",
+      "calorie_content": "3468 kcal/kg, 246 kcal/cup",
+      "images": [
+        "/products/hill-s/hill-s-food-t-d-chicken-flavor-dry-dog-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 6.8,
+          "size_description": "15 lb",
+          "sku": "052742401607"
+        }
+      ],
+      "source_id": "052742401607"
+    },
+    {
+      "name": "t/d Small Bites Chicken Flavor Dry Dog Food",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-td-small-bites-dental-care-dry",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 18.3,
+        "crude_fat_min": 16.5,
+        "crude_fiber_max": 10.8,
+        "calcium_min": 0.63,
+        "phosphorus_min": 0.45,
+        "potassium_min": 0.76,
+        "sodium_min": 0.25,
+        "omega_3_min": 0.24,
+        "omega_6_min": 3.83
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Brewers Rice, Whole Grain Corn, Chicken By-Product Meal, Powdered Cellulose, Chicken Fat, Soybean Mill Run, Egg Product, Hydrolyzed Chicken Flavor, Soybean Oil, Lactic Acid, Potassium Chloride, Calcium Sulfate, Iodized Salt, L-Lysine, vitamins (Vitamin ESupplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement), Choline Chloride, DL-Methionine, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Dicalcium Phosphate, Taurine, Mixed Tocopherols for freshness, Natural Flavors, Beta-Carotene.",
+      "calorie_content": "3468 kcal/kg, 246 kcal/cup",
+      "health_tags": [
+        "digestive_health"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-food-t-d-small-bites-chicken-flavor-dry-dog-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 6.8,
+          "size_description": "15 lb",
+          "sku": "052742650807"
+        }
+      ],
+      "source_id": "052742650807"
+    },
+    {
+      "name": "u/d Dry Dog Food",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-ud-urinary-care-dry",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 13.8,
+        "crude_fat_min": 20.7,
+        "crude_fiber_max": 0.9,
+        "calcium_min": 0.64,
+        "phosphorus_min": 0.32,
+        "potassium_min": 0.68,
+        "sodium_min": 0.22,
+        "omega_3_min": 1.37
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Brewers Rice, Corn Starch, Whole Grain Corn, Chicken Fat, Egg Product, Flaxseed, Potato Protein, Chicken Liver Flavor, Lactic Acid, Calcium Carbonate, Potassium Citrate, Dicalcium Phosphate, L-Lysine, Iodized Salt, vitamins (Vitamin E Supplement, Niacin Supplement, Thiamine Mononitrate, Pyridoxine Hydrochloride, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Vitamin A Supplement, Folic Acid, Vitamin D3 Supplement), Potassium Chloride, DL-Methionine, Choline Chloride, Taurine, Magnesium Oxide, minerals (Zinc Oxide, Ferrous Sulfate, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), L-Carnitine, Mixed Tocopherols for freshness, Natural Flavors, Beta-Carotene.",
+      "calorie_content": "3986 kcal/kg, 429 kcal/cup",
+      "health_tags": [
+        "kidney_health",
+        "liver_health",
+        "urinary_health"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-food-u-d-dry-dog-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 12.47,
+          "size_description": "27.5 lb",
+          "sku": "052742075181"
+        }
+      ],
+      "source_id": "052742075181"
+    },
+    {
+      "name": "u/d Chicken Flavor Wet Dog Food Wet Food",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-ud-urinary-care-canned",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 13.8,
+        "crude_fat_min": 26.4,
+        "crude_fiber_max": 2.3,
+        "calcium_min": 0.63,
+        "phosphorus_min": 0.31,
+        "potassium_min": 0.68,
+        "sodium_min": 0.28,
+        "omega_3_min": 0.47
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Water, Corn Starch, Egg Product, Chicken Fat, Pork Liver, Sugar, Rice, Powdered Cellulose, Flaxseed, Calcium Carbonate, Potassium Citrate, Potassium Chloride, vitamins (Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, Pyridoxine Hydrochloride, Calcium Pantothenate, Vitamin B12 Supplement, Riboflavin Supplement, Biotin, Vitamin D3 Supplement, Folic Acid), Monosodium Phosphate, L-Lysine, DL-Methionine, Choline Chloride, Magnesium Oxide, Iodized Salt, Taurine, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganese Sulfate, Calcium Iodate), L-Carnitine, Beta-Carotene.",
+      "calorie_content": "1379 kcal/kg, 509 kcal/can",
+      "health_tags": [
+        "kidney_health",
+        "liver_health",
+        "urinary_health"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-food-u-d-chicken-flavor-wet-dog-food-wet-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.369,
+          "size_description": "13 oz",
+          "sku": "052742077178"
+        }
+      ],
+      "source_id": "052742077178"
+    },
+    {
+      "name": "w/d Multi-Benefit Vegetable & Chicken Stew Dog Food Wet Food",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-wd-vegetable-chicken-stew-glucose-management-canned",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 21.2,
+        "crude_fat_min": 10.1,
+        "crude_fiber_max": 14.1,
+        "calcium_min": 0.91,
+        "phosphorus_min": 0.6,
+        "potassium_min": 0.95,
+        "sodium_min": 0.33,
+        "l_carnitine_min": 403.9
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Water, Pork Liver, Carrots, Rice, Powdered Cellulose, Green Peas, Corn Starch, Chicken, Hydrolyzed Chicken Flavor, Soybean Oil, Potassium Alginate, Wheat Gluten, Chicken Fat, Calcium Chloride, Guar Gum, Dicalcium Phosphate, Monosodium Phosphate, Calcium Lactate, Calcium Gluconate, Potassium Citrate, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Pyridoxine Hydrochloride, Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Biotin, Riboflavin Supplement, Vitamin D3 Supplement, Folic Acid), Choline Chloride, L-Lysine, L-Threonine, Taurine, Magnesium Oxide, minerals (Zinc Oxide, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate), L-Carnitine, Beta-Carotene.",
+      "calorie_content": "568 kcal/kg, 201 kcal/can",
+      "health_tags": [
+        "diabetes",
+        "digestive_health",
+        "urinary_health",
+        "weight_management"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-food-w-d-multi-benefit-vegetable-chicken-stew-dog-food-wet-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.354,
+          "size_description": "12.5 oz",
+          "sku": "052742077291"
+        }
+      ],
+      "source_id": "052742077291"
+    },
+    {
+      "name": "w/d Multi-Benefit Chicken Flavor Wet Dog Food Wet Food",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-wd-glucose-management-canned",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 19.2,
+        "crude_fat_min": 11.2,
+        "crude_fiber_max": 14.0,
+        "calcium_min": 0.72,
+        "phosphorus_min": 0.52,
+        "potassium_min": 0.88,
+        "sodium_min": 0.31,
+        "l_carnitine_min": 422.9
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Water, Pork Liver, Whole Grain Corn, Chicken, Cracked Pearled Barley, Powdered Cellulose, Chicken Liver Flavor, Flaxseed, Egg Product, Calcium Carbonate, Potassium Chloride, vitamins (Vitamin E Supplement, Thiamine Mononitrate, Ascorbic Acid (source of Vitamin C), Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin D3 Supplement, Riboflavin Supplement, Folic Acid), Iodized Salt, Choline Chloride, DL-Methionine, Potassium Citrate, Taurine, L-Tryptophan, minerals (Zinc Oxide, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate), L-Carnitine, Beta-Carotene.",
+      "calorie_content": "827 kcal/kg, 305 kcal/can",
+      "health_tags": [
+        "diabetes",
+        "digestive_health",
+        "urinary_health",
+        "weight_management"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-food-w-d-multi-benefit-chicken-flavor-wet-dog-food-wet-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.369,
+          "size_description": "13 oz",
+          "sku": "052742078656"
+        }
+      ],
+      "source_id": "052742078656"
+    },
+    {
+      "name": "w/d Multi-Benefit Dry Dog Food",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-wd-glucose-management-dry",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 20.4,
+        "crude_fat_min": 11.8,
+        "crude_fiber_max": 14.4,
+        "calcium_min": 0.79,
+        "phosphorus_min": 0.62,
+        "potassium_min": 0.79,
+        "sodium_min": 0.26,
+        "l_carnitine_min": 517.2
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Whole Grain Wheat, Powdered Cellulose, Chicken Meal, Whole Grain Corn, Corn Protein Meal, Dried Beet Pulp, Cracked Pearled Barley, Chicken Fat, Whole Grain Oats, Chicken Liver Flavor, Pork Liver Flavor, Lactic Acid, Soybean Oil, Caramel color, Flaxseed, Choline Chloride, Potassium Chloride, Glyceryl Monostearate, Potassium Citrate, Iodized Salt, L-Lysine, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement), L-Tryptophan, Calcium Carbonate, DL-Methionine, Taurine, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), L-Carnitine, Mixed Tocopherols for freshness, Natural Flavors, Beta-Carotene.",
+      "calorie_content": "3087 kcal/kg, 254 kcal/cup",
+      "health_tags": [
+        "diabetes",
+        "digestive_health",
+        "urinary_health",
+        "weight_management"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-food-w-d-multi-benefit-dry-dog-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 12.47,
+          "size_description": "27.5 lb",
+          "sku": "052742077062"
+        }
+      ],
+      "source_id": "052742077062"
+    },
+    {
+      "name": "z/d Hydrolyzed Chicken Flavor Dog Food Wet Food",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-zd-food-sensitivities-canned",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 21.2,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 4.8,
+        "calcium_min": 0.83,
+        "phosphorus_min": 0.59,
+        "potassium_min": 0.85,
+        "sodium_min": 0.31,
+        "epa_min": 0.165,
+        "omega_3_min": 1.21,
+        "omega_6_min": 4.03,
+        "l_carnitine_min": 20.4
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Water, Hydrolyzed Chicken Liver, Corn Starch, Ground Pecan Shells, Soybean Oil, Flaxseed, Dried Beet Pulp, Dried Citrus Pulp, Fish Oil, Dicalcium Phosphate, Powdered Cellulose, Coconut Oil, Calcium Carbonate, Pressed Cranberries, Potassium Chloride, DL-Methionine, Iodized Salt, Choline Chloride, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin D3 Supplement, Riboflavin Supplement, Folic Acid), Potassium Citrate, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganese Sulfate, Calcium Iodate), L-Tryptophan, Magnesium Oxide, Taurine, Beta-Carotene.",
+      "health_tags": [
+        "digestive_health",
+        "skin_coat"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-food-z-d-hydrolyzed-chicken-flavor-dog-food-wet-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.369,
+          "size_description": "13 oz",
+          "sku": "052742080130"
+        }
+      ],
+      "source_id": "052742080130",
+      "calorie_content": "967 kcal/kg, 357 kcal/can"
+    },
+    {
+      "name": "z/d Hydrolyzed Chicken Flavor Dog Food",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-zd-food-sensitivities-dry",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 20.1,
+        "crude_fat_min": 14.5,
+        "crude_fiber_max": 6.4,
+        "calcium_min": 0.86,
+        "phosphorus_min": 0.6,
+        "potassium_min": 0.69,
+        "sodium_min": 0.3,
+        "epa_min": 0.179,
+        "omega_3_min": 1.23,
+        "omega_6_min": 3.32,
+        "l_carnitine_min": 0.0
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Corn Starch, Hydrolyzed Chicken Liver, Hydrolyzed Chicken, Ground Pecan Shells, Powdered Cellulose, Flaxseed, Dried Beet Pulp, Hydrolyzed Chicken Flavor, Soybean Oil, Dried Citrus Pulp, Dicalcium Phosphate, Lactic Acid, Coconut Oil, Fish Oil, Calcium Carbonate, Pressed Cranberries, Glyceryl Monostearate, DL-Methionine, Potassium Chloride, Iodized Salt, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement), L-Tryptophan, Choline Chloride, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Magnesium Oxide, Mixed Tocopherols for freshness, Natural Flavors, Beta-Carotene.",
+      "calorie_content": "3505 kcal/kg, 348 kcal/cup",
+      "health_tags": [
+        "digestive_health",
+        "skin_coat"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-food-z-d-hydrolyzed-chicken-flavor-dog-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 3.63,
+          "size_description": "8 lb",
+          "sku": "052742079691"
+        }
+      ],
+      "source_id": "052742079691"
+    },
+    {
+      "name": "z/d Small Bites Hydrolyzed Chicken Flavor Dog Food",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-zd-small-bites-food-sensitivities-dry",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 20.1,
+        "crude_fat_min": 14.6,
+        "crude_fiber_max": 6.4,
+        "calcium_min": 0.86,
+        "phosphorus_min": 0.61,
+        "potassium_min": 0.69,
+        "sodium_min": 0.3,
+        "epa_min": 0.179,
+        "omega_3_min": 1.23,
+        "omega_6_min": 3.32,
+        "l_carnitine_min": 0.0
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Corn Starch, Hydrolyzed Chicken Liver, Hydrolyzed Chicken, Ground Pecan Shells, Powdered Cellulose, Flaxseed, Dried Beet Pulp, Hydrolyzed Chicken Flavor, Soybean Oil, Dried Citrus Pulp, Dicalcium Phosphate, Lactic Acid, Coconut Oil, Fish Oil, Calcium Carbonate, Pressed Cranberries, Glyceryl Monostearate, DL-Methionine, Potassium Chloride, Iodized Salt, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement), L-Tryptophan, Choline Chloride, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Magnesium Oxide, Mixed Tocopherols for freshness, Natural Flavors, Beta-Carotene.",
+      "calorie_content": "3504 kcal/kg, 397 kcal/cup",
+      "health_tags": [
+        "digestive_health",
+        "skin_coat"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-food-z-d-small-bites-hydrolyzed-chicken-flavor-dog-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 3.18,
+          "size_description": "7 lb",
+          "sku": "052742080161"
+        }
+      ],
+      "source_id": "052742080161"
+    },
+    {
+      "name": "Derm Complete Rice & Egg Recipe Wet Dog Food Wet Food",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-derm-complete-skin-care-canned",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 20.0,
+        "crude_fat_min": 16.8,
+        "crude_fiber_max": 1.3,
+        "calcium_min": 0.8,
+        "phosphorus_min": 0.55,
+        "potassium_min": 0.7,
+        "sodium_min": 0.36,
+        "omega_3_min": 1.88,
+        "omega_6_min": 3.76
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Water, Brewers Rice, Rice Protein Concentrate, Egg Product, Soybean Oil, Coconut Oil, Flaxseed, Fish Oil, Hydrolyzed Chicken Flavor, Rice, Dried Beet Pulp, Calcium Carbonate, Monosodium Phosphate, Locust Bean Gum, Potassium Chloride, Carrageenan, L-Lysine, Choline Chloride, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Ascorbic Acid (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Riboflavin Supplement, Menadione Sodium Bisulfite Complex (source of Vitamin K), Biotin, Folic Acid, Vitamin D3 Supplement), Lipoic Acid, Guar Gum, Taurine, Green Peas, Carrots, Cranberries, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganese Sulfate, Calcium Iodate), Natural Flavors, Magnesium Oxide, Thiamine Hydrochloride, Apples, Broccoli, Zucchini, Mixed Tocopherols for freshness, Beta-Carotene.",
+      "calorie_content": "1214 kcal/kg, 448 kcal/can",
+      "health_tags": [
+        "digestive_health",
+        "skin_coat"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-food-derm-complete-rice-egg-recipe-wet-dog-food-wet-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.369,
+          "size_description": "13 oz",
+          "sku": "052742077215"
+        }
+      ],
+      "source_id": "052742077215"
+    },
+    {
+      "name": "Derm Complete Rice & Egg Recipe Dry Dog Food",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-derm-complete-reg-bites-skin-care-dry",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 17.3,
+        "crude_fat_min": 17.4,
+        "crude_fiber_max": 1.4,
+        "calcium_min": 0.62,
+        "phosphorus_min": 0.54,
+        "potassium_min": 0.85,
+        "sodium_min": 0.22,
+        "epa_min": 0.39,
+        "omega_3_min": 2.0,
+        "omega_6_min": 4.56,
+        "l_carnitine_min": 0.0
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Brown Rice, Brewers Rice, Egg Product, Rice Protein Concentrate, Soybean Oil, Flaxseed, Hydrolyzed Chicken Flavor, Dried Beet Pulp, Fish Oil, Coconut Oil, Lactic Acid, Dicalcium Phosphate, Potassium Chloride, Calcium Carbonate, Lipoic Acid, Iodized Salt, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement), Green Peas, Taurine, Apples, Cranberries, Choline Chloride, Carrots, DL-Methionine, Natural Flavors, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Mixed Tocopherols for freshness, Broccoli, Beta-Carotene.",
+      "calorie_content": "3816 kcal/kg, 389 kcal/cup",
+      "health_tags": [
+        "digestive_health",
+        "skin_coat"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-food-derm-complete-rice-egg-recipe-dry-dog-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 2.95,
+          "size_description": "6.5 lb",
+          "sku": "052742074252"
+        }
+      ],
+      "source_id": "052742074252"
+    },
+    {
+      "name": "Derm Complete Puppy Rice & Egg Recipe Dry Dog Food",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-derm-complete-puppy-original-skin-care-dry",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 22.5,
+        "crude_fat_min": 20.2,
+        "crude_fiber_max": 1.4,
+        "calcium_min": 1.1,
+        "phosphorus_min": 0.9,
+        "potassium_min": 0.81,
+        "sodium_min": 0.5,
+        "epa_min": 0.321,
+        "omega_3_min": 1.74,
+        "omega_6_min": 5.93,
+        "l_carnitine_min": 0.0
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Brown Rice, Rice Protein Concentrate, Egg Product, Soybean Oil, Hydrolyzed Chicken Flavor, Dried Beet Pulp, Coconut Oil, Flaxseed, Fish Oil, Dicalcium Phosphate, Calcium Carbonate, Lactic Acid, Sodium Tripolyphosphate, Potassium Chloride, L-Lysine, Calcium Sulfate, L-Threonine, Choline Chloride, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Biotin, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement), Green Peas, Apples, Cranberries, Iodized Salt, Taurine, Carrots, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Natural Flavors, Mixed Tocopherols for freshness, Broccoli, Beta-Carotene.",
+      "calorie_content": "3868 kcal/kg, 406 kcal/cup",
+      "health_tags": [
+        "digestive_health",
+        "skin_coat"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-food-derm-complete-puppy-rice-egg-recipe-dry-dog-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 6.49,
+          "size_description": "14.3 lb",
+          "sku": "052742075204"
+        }
+      ],
+      "source_id": "052742075204"
+    },
+    {
+      "name": "c/d Multicare + Metabolic Weight Dry Dog Food",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-cd-multicare-metabolicy-urinary-care-dry",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.3,
+        "crude_fat_min": 12.6,
+        "crude_fiber_max": 15.1,
+        "calcium_min": 0.66,
+        "phosphorus_min": 0.45,
+        "potassium_min": 0.66,
+        "sodium_min": 0.28,
+        "l_carnitine_min": 364.7
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Brewers Rice, Corn Protein Meal, Powdered Cellulose, Pea Fiber, Chicken Meal, Dried Tomato Pomace, Soybean Oil, Chicken Liver Flavor, Coconut Oil, Pork Liver Flavor, Flaxseed, Lactic Acid, Potassium Citrate, L-Lysine, Fish Oil, Calcium Carbonate, Carrots, Choline Chloride, DL-Methionine, Glyceryl Monostearate, Iodized Salt, vitamins (Vitamin E Supplement, Niacin Supplement, Thiamine Mononitrate, Pyridoxine Hydrochloride, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Vitamin A Supplement, Folic Acid, Vitamin D3 Supplement), Lipoic Acid, L-Tryptophan, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Taurine, Mixed Tocopherols for freshness, Natural Flavors, L-Carnitine, Green Peas, Apples, Cranberries, Beta-Carotene, Broccoli.",
+      "calorie_content": "3147 kcal/kg, 277 kcal/cup",
+      "health_tags": [
+        "diabetes",
+        "urinary_health",
+        "weight_management"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-food-c-d-multicare-metabolic-weight-dry-dog-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 11.11,
+          "size_description": "24.5 lb",
+          "sku": "052742080147"
+        }
+      ],
+      "source_id": "052742080147"
+    },
+    {
+      "name": "z/d Low Fat Hydrolyzed Soy Recipe Dry Dog Food",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-zd-low-fat-hydrolysed-soy-food-sensitivities-dry",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 27.0,
+        "crude_fat_min": 7.4,
+        "crude_fiber_max": 4.5,
+        "calcium_min": 0.8,
+        "phosphorus_min": 0.55,
+        "potassium_min": 0.85,
+        "sodium_min": 0.38,
+        "epa_min": 0.084,
+        "omega_3_min": 0.6,
+        "omega_6_min": 2.07,
+        "l_carnitine_min": 350.0
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Corn Starch, Hydrolyzed Soy Protein, Powdered Cellulose, Dicalcium Phosphate, Soybean Oil, Hydrolyzed Chicken Flavor, Ground Pecan Shells, Coconut Oil, Lactic Acid, Potassium Chloride, Flaxseed, Glyceryl Monostearate, Dried Beet Pulp, Dried Citrus Pulp, DL-Methionine, Fish Oil, Choline Chloride, Calcium Sulfate, Pressed Cranberries, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Pyridoxine Hydrochloride, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement), Calcium Carbonate, Iodized Salt, Taurine, Magnesium Oxide, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), L-Tryptophan, Mixed Tocopherols for freshness, Natural Flavors, L-Carnitine, Beta-Carotene.",
+      "calorie_content": "3198 kcal/kg, 317 kcal/cup",
+      "health_tags": [
+        "digestive_health",
+        "skin_coat",
+        "urinary_health"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-food-z-d-low-fat-hydrolyzed-soy-recipe-dry-dog-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 3.63,
+          "size_description": "8 lb",
+          "sku": "052742075242"
+        }
+      ],
+      "source_id": "052742075242"
+    },
+    {
+      "name": "z/d Low Fat Hydrolyzed Soy Recipe Wet Dog Food Wet Food",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-zd-low-fat-hydrolysed-soy-food-sensitivities-canned",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 29.9,
+        "crude_fat_min": 9.4,
+        "crude_fiber_max": 1.3,
+        "calcium_min": 0.9,
+        "phosphorus_min": 0.72,
+        "potassium_min": 0.99,
+        "sodium_min": 0.37,
+        "epa_min": 0.065,
+        "omega_3_min": 0.75,
+        "omega_6_min": 3.38,
+        "l_carnitine_min": 305.2
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Water, corn starch, hydrolyzed soy protein, soybean oil, dicalcium phosphate, hydrolyzed chicken flavor, ground pecan shells, coconut oil, potassium chloride, flaxseed, dried beet pulp, vitamins (vitamin E supplement, thiamine mononitrate, ascorbic acid (source of vitamin C), niacin supplement, calcium pantothenate, vitamin A supplement, vitamin B12 supplement, pyridoxine hydrochloride, menadione sodium bisulfate complex (source of vitamin K), riboflavin supplement, biotin, folic acid, vitamin D3 supplement), choline chloride, dried citrus pulp, fish oil, pressed cranberries, magnesium oxide, taurine, monosodium phosphate, minerals (zinc oxide, ferrous sulfate, manganous oxide, copper sulfate, calcium iodate, sodium selenite), L-carnitine, beta-carotene.",
+      "calorie_content": "927 kcal/kg, 342 kcal/can",
+      "health_tags": [
+        "digestive_health",
+        "skin_coat",
+        "urinary_health"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-food-z-d-low-fat-hydrolyzed-soy-recipe-wet-dog-food-wet-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.369,
+          "size_description": "13 oz",
+          "sku": "052742077277"
+        }
+      ],
+      "source_id": "052742077277"
+    },
+    {
+      "name": "c/d Multicare Low Fat Vegetables & Turkey Stew Dog Food Wet Food",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-cd-multicare-low-fat-vegetables-turkey-stew-urinary-care-canned",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 23.2,
+        "crude_fat_min": 8.2,
+        "crude_fiber_max": 4.0,
+        "calcium_min": 0.93,
+        "phosphorus_min": 0.63,
+        "potassium_min": 1.01,
+        "sodium_min": 0.28,
+        "omega_3_min": 0.51
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Water, Pork Liver, Carrots, Rice Starch, Green Peas, Turkey, Rice, Potato Starch, Whole Grain Barley, Dextrose, Pea Protein, Wheat Gluten, Powdered Cellulose, Sugar, Brewers Dried Yeast, Chicken Liver Flavor, Potassium Alginate, Chicken Fat, Fish Oil, Calcium Chloride, Hydrolyzed Chicken Flavor, Potassium Citrate, Guar Gum, Soybean Oil, Dicalcium Phosphate, Choline Chloride, Calcium Sulfate, vitamins (Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Riboflavin Supplement, Folic Acid, Vitamin D3 Supplement), Iodized Salt, Taurine, Sodium Tripolyphosphate, L-Lysine, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganese Sulfate, Calcium Iodate), Magnesium Oxide, Glucosamine Hydrochloride, L-Carnitine, Calcium Carbonate.",
+      "calorie_content": "785 kcal/kg, 278 kcal/can",
+      "health_tags": [
+        "urinary_health"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-food-c-d-multicare-low-fat-vegetables-turkey-stew-dog-food-wet-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.354,
+          "size_description": "12.5 oz",
+          "sku": "052742077239"
+        }
+      ],
+      "source_id": "052742077239"
+    },
+    {
+      "name": "c/d Multicare Low Fat Dog Food",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-cd-multicare-low-fat-chicken-urinary-care-dry",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 22.0,
+        "crude_fat_min": 7.3,
+        "crude_fiber_max": 0.9,
+        "calcium_min": 0.69,
+        "phosphorus_min": 0.58,
+        "potassium_min": 0.7,
+        "sodium_min": 0.24,
+        "omega_3_min": 0.45
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Brewers Rice, Cracked Pearled Barley, Whole Grain Corn, Corn Protein Meal, Chicken Meal, Hydrolyzed Chicken Flavor, Chicken Fat, Pork Liver Flavor, Lactic Acid, Egg Product, Fish Flavor, Flaxseed, Fish Oil, Calcium Sulfate, Glyceryl Monostearate, Potassium Chloride, Potassium Citrate, Iodized Salt, Choline Chloride, L-Lysine, vitamins (Vitamin E Supplement, Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Riboflavin Supplement, Folic Acid, Vitamin D3 Supplement), Taurine, Dicalcium Phosphate, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), L-Tryptophan, Mixed Tocopherols for freshness, Natural Flavors, L-Carnitine, Beta-Carotene.",
+      "calorie_content": "3378 kcal/kg, 335 kcal/cup",
+      "health_tags": [
+        "urinary_health"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-food-c-d-multicare-low-fat-dog-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 3.86,
+          "size_description": "8.5 lb",
+          "sku": "052742075273"
+        }
+      ],
+      "source_id": "052742075273"
+    },
+    {
+      "name": "Hypoallergenic Dog Treats",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-hypo-treats-digestive-care-treats",
+      "channel": "vet",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 17.7,
+        "crude_fat_min": 11.5,
+        "crude_fiber_max": 4.9,
+        "calcium_min": 0.67,
+        "phosphorus_min": 0.58,
+        "potassium_min": 0.61,
+        "sodium_min": 0.19
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Corn Starch, Hydrolyzed Chicken Liver, Powdered Cellulose, Soybean Oil, Dicalcium Phosphate, Calcium Carbonate, Potassium Chloride, Glyceryl Monostearate, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Riboflavin Supplement, Folic Acid, Vitamin D3 Supplement), DL-Methionine, Iodized Salt, Choline Chloride, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Taurine, Mixed Tocopherols for freshness, Natural Flavors, Beta-Carotene.",
+      "health_tags": [
+        "diabetes",
+        "digestive_health",
+        "skin_coat"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-treat-hypoallergenic-dog-treats.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.34,
+          "size_description": "12 oz",
+          "sku": "052742014555"
+        }
+      ],
+      "source_id": "052742014555",
+      "calorie_content": "3483 kcal/kg"
+    },
+    {
+      "name": "Dog Treats",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-treats-dental-care-treats",
+      "channel": "vet",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 15.4,
+        "crude_fat_min": 7.1,
+        "crude_fiber_max": 16.3,
+        "calcium_min": 0.63,
+        "potassium_min": 0.72,
+        "sodium_min": 0.11
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Whole Grain Corn, Whole Grain Wheat, Soybean Mill Run, Powdered Cellulose, Chicken Liver Flavor, Chicken By-Product Meal, Soybean Oil, Pork Protein Isolate, Egg Product, Calcium Carbonate, Potassium Chloride, Choline Chloride, Caramel color, vitamins (Vitamin E Supplement, Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Riboflavin Supplement, Folic Acid, Vitamin D3 Supplement), minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Sodium Selenite, Calcium Iodate), Iron Oxide color, Mixed Tocopherols for freshness, Natural Flavors.",
+      "health_tags": [
+        "diabetes",
+        "digestive_health",
+        "kidney_health",
+        "liver_health",
+        "urinary_health"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-treat-dog-treats.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.312,
+          "size_description": "11 oz",
+          "sku": "052742014517"
+        }
+      ],
+      "source_id": "052742014517",
+      "calorie_content": "2840 kcal/kg"
+    },
+    {
+      "name": "Soft Baked Dog Treats",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-soft-baked-treat-aging-care-treats",
+      "channel": "vet",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 15.0,
+        "crude_fat_min": 11.5,
+        "crude_fiber_max": 5.0,
+        "ash_max": 3.8,
+        "calcium_min": 0.32,
+        "phosphorus_min": 0.23,
+        "potassium_min": 0.64,
+        "sodium_min": 0.16,
+        "taurine_min": 0.0,
+        "omega_3_min": 1.04,
+        "l_carnitine_min": 592.2
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Chicken, Potatoes, Wheat Flour, Cane Molasses, Glycerin, Yellow Peas, Dried Beet Pulp, Chicken Fat, Pork Gelatin, Fish Oil, Lactic Acid, Natural Flavor, Flaxseed, Chicken Liver Flavor, Mixed Tocopherols for freshness, Citric Acid for Freshness, L-Carnitine, Rosemary Extract.",
+      "health_tags": [
+        "critical_care",
+        "diabetes",
+        "digestive_health",
+        "heart_health",
+        "joint_health",
+        "kidney_health",
+        "liver_health",
+        "skin_coat",
+        "urinary_health",
+        "weight_management"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-treat-soft-baked-dog-treats.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.34,
+          "size_description": "12 oz",
+          "sku": "052742014258"
+        }
+      ],
+      "source_id": "052742014258",
+      "calorie_content": "3207 kcal/kg"
+    },
+    {
+      "name": "Metabolic Weight Management Dog Treats",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-metabolic-healthy-weight-glucose-management-treats",
+      "channel": "vet",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 21.5,
+        "crude_fat_min": 10.8,
+        "crude_fiber_max": 3.8,
+        "calcium_min": 0.82,
+        "phosphorus_min": 0.64,
+        "potassium_min": 0.68,
+        "sodium_min": 0.31
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Wheat Flour, Whole Grain Wheat, Chicken Meal, Dried Tomato Pomace, Rice, Oat Fiber, Flaxseed, Coconut Oil, Egg Product, Pork Liver Flavor, Canola Oil, Chicken Fat, Carrots, Iodized Salt, Potassium Chloride, Brewers Dried Yeast, Mixed Tocopherols for freshness, Citric Acid for Freshness, Rosemary Extract.",
+      "health_tags": [
+        "diabetes",
+        "digestive_health",
+        "joint_health",
+        "urinary_health",
+        "weight_management"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-treat-metabolic-weight-management-dog-treats.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.34,
+          "size_description": "12 oz",
+          "sku": "052742014531"
+        }
+      ],
+      "source_id": "052742014531",
+      "calorie_content": "3427 kcal/kg"
+    },
+    {
+      "name": "Multi-Organ Complex Support",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-multi-organ-multi-organ-care-dry",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 19.2,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 3.6,
+        "calcium_min": 0.7,
+        "phosphorus_min": 0.47,
+        "potassium_min": 0.85,
+        "sodium_min": 0.26,
+        "copper_min": 7.5,
+        "taurine_min": 0.13,
+        "epa_min": 0.28,
+        "omega_3_min": 1.39,
+        "l_carnitine_min": 450.3
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Brewers Rice, Whole Grain Corn, Chicken, Whole Grain Wheat, Soybean Meal, Cracked Pearled Barley, Pea Fiber, Egg Product, Chicken Liver Flavor, Flaxseed, Coconut Oil, Pork Liver Flavor, Soybean Oil, Fish Oil, Lactic Acid, Calcium Carbonate, Potassium Citrate, Carrots, Dried Tomato Pomace, Dried Citrus Pulp, Betaine, Spinach, Whole Grain Oats, L-Lysine, Choline Chloride, Fructooligosaccharides (FOS), Iodized Salt, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Riboflavin Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement, Menadione Sodium Bisulfite Complex (source of Vitamin K)), DL-Methionine, Potassium Chloride, Dicalcium Phosphate, Taurine, minerals (Zinc Oxide, Manganese Sulfate, Ferrous Sulfate, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Natural Flavors, L-Tryptophan, Mixed Tocopherols for freshness, L-Carnitine, Beta-Carotene.",
+      "calorie_content": "3495 kcal/kg, 347 kcal/cup",
+      "health_tags": [
+        "heart_health",
+        "kidney_health"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-food-multi-organ-complex-support.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 3.86,
+          "size_description": "8.5 lb",
+          "sku": "052742082141"
+        }
+      ],
+      "source_id": "052742082141"
+    },
+    {
+      "name": "Multi-Organ Complex Support Wet Food",
+      "brand": "Hill's",
+      "url": "https://www.hillspet.ca/en-ca/dog-food/prescription-diet-multi-organ-turkey-veg-stew-multi-organ-care-canned",
+      "channel": "vet",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Prescription Diet",
+      "guaranteed_analysis": {
+        "crude_protein_min": 19.2,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 4.2,
+        "calcium_min": 0.8,
+        "phosphorus_min": 0.4,
+        "potassium_min": 0.99,
+        "sodium_min": 0.22,
+        "copper_min": 7.5,
+        "epa_min": 0.25,
+        "omega_3_min": 1.33,
+        "l_carnitine_min": 316.9
+      },
+      "guaranteed_analysis_basis": "dry-matter",
+      "ingredients_raw": "Water, Carrots, Rice, Turkey Giblets, Pork Liver, Green Peas, Rice Starch, Turkey, Dextrose, Sugar, Powdered Cellulose, Egg Product, Flaxseed, Hydrolyzed Chicken Flavor, Wheat Gluten, Chicken Liver Flavor, Coconut Oil, Fish Oil, Potassium Alginate, Calcium Lactate, Calcium Gluconate, Potassium Citrate, Betaine, Dried Tomato Pomace, Dried Citrus Pulp, Guar Gum, L-Lysine, Spinach, Whole Grain Oats, Choline Chloride, Fructooligosaccharides (FOS), Calcium Chloride, Dicalcium Phosphate, vitamins (Vitamin E Supplement, Thiamine Mononitrate, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Riboflavin Supplement, Menadione Sodium Bisulfite Complex (source of Vitamin K), Vitamin D3 Supplement, Folic Acid), Sodium Tripolyphosphate, Taurine, Magnesium Oxide, minerals (Zinc Oxide, Manganese Sulfate, Ferrous Sulfate, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), L-Threonine, L-Carnitine, Natural Flavors, Calcium Carbonate.",
+      "calorie_content": "766 kcal/kg, 271 kcal/can",
+      "health_tags": [
+        "heart_health",
+        "kidney_health"
+      ],
+      "images": [
+        "/products/hill-s/hill-s-food-multi-organ-complex-support-wet-food.png"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.354,
+          "size_description": "12.5 oz",
+          "sku": "052742085685"
+        }
+      ],
+      "source_id": "052742085685"
+    }
+  ]
+}

@@ -121,13 +121,16 @@ class TestParseCalorieContent:
     def test_rejects_ga_text_in_calorie_field(self) -> None:
         """API sometimes populates calorie_content with GA text instead of actual
         calorie data (e.g. product 1480 — GI High Fiber Loaf In Sauce).
-        The parser must reject this because the text lacks 'kcal'."""
+        The parser must reject this because the text lacks 'kcal'.
+        Full GA text includes 'mg/kg' values that normalize_calorie_content
+        would mis-parse as kcal/kg if not pre-filtered."""
         detail = {
             "composition": [{
                 "calorie_content": (
                     "Crude Protein (min.)3.96%,\u00a0Crude Fat (min.)1.21%,"
                     "\u00a0Crude Fiber (min.)1.3%,\u00a0Crude Fiber (max.)3.8%,"
-                    "\u00a0Moisture (max.)78.0%"
+                    "\u00a0Moisture (max.)78.0%,\u00a0Vitamin E (min.)95\u00a0IU/kg,"
+                    "\u00a0Ascorbic acid* (min.)52\u00a0mg/kg."
                 )
             }]
         }

@@ -1,7 +1,7 @@
 {
   "brand": "Authority",
   "website_url": "https://www.petsmart.ca",
-  "scraped_at": "2026-03-09T03:23:08.824643+00:00",
+  "scraped_at": "2026-03-22T14:26:20.302874+00:00",
   "scraper_version": "0.1.0",
   "stats": {
     "product_count": 44,
@@ -200,7 +200,7 @@
           "sku": "5278698"
         }
       ],
-      "ingredients_raw": "Beef Broth, Beef, Beef Liver, Chicken, Rice, Dried Egg Product, Potato Starch, Wheat Gluten, Canola Oil, Corn Starch, Guar Gum, Dried Plain Beet Pulp, Natural Flavor, Calcium Carbonate, Salt, Sodium Phosphate, Potassium Chloride, Vitamins (Vitamin E Supplement, Thiamine Nitrate, Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Oxide, Copper Proteinate, Sodium Selenite, Manganese Sulfate, Potassium Iodide), Choline Chloride",
+      "ingredients_raw": "Beef Broth, Beef, Beef Liver, Chicken, Rice, Dried Egg Product, Potato Starch, Wheat Gluten, Canola Oil, Corn Starch, Guar Gum, Dried Plain Beet Pulp, Natural Flavor, Calcium Carbonate, Salt, Sodium Phosphate, Potassium Chloride, Vitamins (Vitamin E Supplement, Thiamine Nitrate, Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid) Minerals (Ferrous Sulfate, Zinc Oxide, Copper Proteinate, Sodium Selenite, Manganese Sulfate, Potassium Iodide), Choline Chloride",
       "guaranteed_analysis": {
         "crude_protein_min": 8.0,
         "crude_fat_min": 4.5,
@@ -245,7 +245,7 @@
           "sku": "5278701"
         }
       ],
-      "ingredients_raw": "Turkey Broth, Turkey, Chicken, Chicken Liver, Brewers Rice, Canola Oil, Rice Flour, Dried Plain Beet Pulp, Dried Egg Product, Guar Gum, Potassium Chloride, Carrageenan, Salt, Vitamins (Vitamin E Supplement, Thiamine Nitrate, Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Oxide, Copper Proteinate, Sodium Selenite, Manganese Sulfate, Potassium Iodide), Choline Chloride",
+      "ingredients_raw": "Turkey Broth, Turkey, Chicken, Chicken Liver, Brewers Rice, Canola Oil, Rice Flour, Dried Plain Beet Pulp, Dried Egg Product, Guar Gum, Potassium Chloride, Carrageenan, Salt, Vitamins (Vitamin E Supplement, Thiamine Nitrate, Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid) Minerals (Ferrous Sulfate, Zinc Oxide, Copper Proteinate, Sodium Selenite, Manganese Sulfate, Potassium Iodide) Choline Chloride",
       "guaranteed_analysis": {
         "crude_protein_min": 8.0,
         "crude_fat_min": 4.5,
@@ -279,7 +279,7 @@
           "sku": "5278684"
         }
       ],
-      "ingredients_raw": "Chicken, Chicken Broth, Chicken Liver, Dried Ground Peas, Brewers Rice, Rice Gluten, Dried Egg Product, Menhaden Fish Oil, Dried Plain Beet Pulp, Guar Gum, Natural Flavor, Dicalcium Phosphate, Potassium Chloride, Salt, Carrageenan, Vitamins (Vitamin E Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Oxide, Copper Proteinate, Sodium Selenite, Manganese Sulfate, Potassium Iodide), Choline Chloride, L-Ascorbyl-2-Polyphosphate, Canola Oil",
+      "ingredients_raw": "Chicken, Chicken Broth, Chicken Liver, Dried Ground Peas, Brewers Rice, Rice Gluten, Dried Egg Product, Menhaden Fish Oil, Dried Plain Beet Pulp, Guar Gum, Natural Flavor, Dicalcium Phosphate, Potassium Chloride, Salt, Carrageenan, Vitamins (Vitamin E Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid) Minerals (Ferrous Sulfate, Zinc Oxide, Copper Proteinate, Sodium Selenite, Manganese Sulfate, Potassium Iodide), Choline Chloride, L-Ascorbyl-2-Polyphosphate, Canola Oil",
       "guaranteed_analysis": {
         "crude_protein_min": 10.0,
         "crude_fat_min": 5.0,
@@ -315,7 +315,7 @@
           "sku": "5278708"
         }
       ],
-      "ingredients_raw": "Chicken Broth, Chicken, Chicken Liver, Brewers Rice, Dried Plain Beet Pulp, Rice Flour, Rice Gluten, Dried Egg Product, Guar Gum, Carrageenan, Potassium Chloride, Salt, Canola Oil, Choline Chloride, Vitamins (Vitamin E Supplement, Thiamine Nitrate, Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Minerals (Ferrous Sulfate, Zinc Oxide, Copper Proteinate, Sodium Selenite, Manganese Sulfate, Potassium Iodide), Fish Oil",
+      "ingredients_raw": "Chicken Broth, Chicken, Chicken Liver, Brewers Rice, Dried Plain Beet Pulp, Rice Flour, Rice Gluten, Dried Egg Product, Guar Gum, Carrageenan, Potassium Chloride, Salt, Canola Oil, Choline Chloride, Vitamins (Vitamin E Supplement, Thiamine Nitrate, Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid) Minerals (Ferrous Sulfate, Zinc Oxide, Copper Proteinate, Sodium Selenite, Manganese Sulfate, Potassium Iodide) Fish Oil",
       "guaranteed_analysis": {
         "crude_protein_min": 6.0,
         "crude_fat_min": 3.5,
@@ -736,7 +736,7 @@
         "moisture_max": 10.0,
         "epa_min": 0.05,
         "dha_min": 0.1,
-        "calcium_min": 2.0,
+        "calcium_min": 0.2,
         "phosphorus_min": 1.0,
         "omega_6_min": 3.0,
         "omega_3_min": 0.8
@@ -944,7 +944,7 @@
           "sku": "5278896"
         }
       ],
-      "ingredients_raw": "Deboned Chicken, Chicken Meal, Brown Rice, Corn, Corn Gluten Meal, Soybean Meal, Chicken Fat (Preserved With Mixed Tocopherols), Dried Plain Beet Pulp, Natural Flavor, Fish Oil (Preserved With Mixed Tocopherols), Dicalcium Phosphate, Canola Oil, Dried Egg Product, Oatmeal, Potassium Chloride, Salt, Sodium Hexametaphosphate, Minerals (Zinc Sulfate, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Sodium Selenite), Inulin, Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Calcium Iodate, Folic Acid), Choline Chloride, Citric Acid (A Preservative), Mixed Tocopherols (A Preservative), Rosemary Extract",
+      "ingredients_raw": "Deboned Chicken, Chicken Meal, Brown Rice, Corn, Corn Gluten Meal, Soybean Meal, Chicken Fat (Preserved With Mixed Tocopherols), Dried Plain Beet Pulp, Natural Flavor, Fish Oil (Preserved With Mixed Tocopherols), Dicalcium Phosphate, Canola Oil, Dried Egg Product, Oatmeal, Potassium Chloride, Salt Sodium Hexametaphosphate Minerals (Zinc Sulfate Ferrous Sulfate Manganese Sulfate Copper Sulfate Sodium Selenite) Inulin Vitamins (Vitamin E Supplement Vitamin A Supplement Niacin Supplement d-Calcium Pantothenate Riboflavin Supplement Thiamine Mononitrate Biotin Vitamin B12 Supplement Pyridoxine Hydrochloride Vitamin D3 Supplement Calcium Iodate Folic Acid) Choline Chloride Citric Acid (A Preservative) Mixed Tocopherols (A Preservative) Rosemary Extract",
       "guaranteed_analysis": {
         "crude_protein_min": 29.0,
         "crude_fat_min": 16.0,
@@ -1071,7 +1071,7 @@
           "sku": "5278890"
         }
       ],
-      "ingredients_raw": "Deboned Chicken, Chicken Meal, Brown Rice, Corn, Corn Gluten Meal, Soybean Meal, Chicken Fat (Preserved With Mixed Tocopherols), Dried Plain Beet Pulp, Natural Flavor, Fish Oil (Preserved With Mixed Tocopherols), Dicalcium Phosphate, Canola Oil, Dried Egg Product, Oatmeal, Potassium Chloride, Salt, Sodium Hexametaphosphate, Minerals (Zinc Sulfate, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Sodium Selenite), Inulin, Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Calcium Iodate, Folic Acid), Choline Chloride, Citric Acid (A Preservative), Mixed Tocopherols (A Preservative), Rosemary Extract",
+      "ingredients_raw": "Deboned Chicken, Chicken Meal, Brown Rice, Corn, Corn Gluten Meal, Soybean Meal, Chicken Fat (Preserved With Mixed Tocopherols), Dried Plain Beet Pulp, Natural Flavor, Fish Oil (Preserved With Mixed Tocopherols), Dicalcium Phosphate, Canola Oil, Dried Egg Product, Oatmeal, Potassium Chloride, Salt, Sodium Hexametaphosphate, Minerals: Zinc Sulfate, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Sodium Selenite, Inulin, Vitamins: Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Calcium Iodate, Folic Acid, Choline Chloride, Citric Acid (A Preservative), Mixed Tocopherols (A Preservative), Rosemary Extract",
       "guaranteed_analysis": {
         "crude_protein_min": 28.5,
         "crude_fat_min": 18.0,

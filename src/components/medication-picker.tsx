@@ -24,27 +24,12 @@ import { useIsMobile } from "@/hooks/use-is-mobile"
 import { MEDICATION_CATEGORY_LABELS } from "@/lib/labels"
 import type { MedicationProduct } from "@/lib/db/schema"
 import { getDosageFormIcon } from "@/lib/medication-utils"
+import { fetchMedicationCatalog } from "@/lib/medication-cache"
 export { getDosageFormIcon } from "@/lib/medication-utils"
 
 // ── Category filter order ───────────────────────────────────────────────────
 
 const CATEGORY_ORDER = ["allergy", "parasite", "gi", "pain", "steroid"] as const
-
-// ── Module-level cache ──────────────────────────────────────────────────────
-
-let catalogCache: { items: MedicationProduct[]; at: number } | null = null
-const CACHE_TTL = 5 * 60 * 1000
-
-async function fetchCatalog(): Promise<MedicationProduct[]> {
-  if (catalogCache && Date.now() - catalogCache.at < CACHE_TTL) {
-    return catalogCache.items
-  }
-  const res = await fetch("/api/medication-products")
-  if (!res.ok) throw new Error("Failed to fetch medication catalog")
-  const items: MedicationProduct[] = await res.json()
-  catalogCache = { items, at: Date.now() }
-  return items
-}
 
 // ── Types ───────────────────────────────────────────────────────────────────
 
@@ -78,7 +63,7 @@ export function MedicationPicker({
   const filterBarRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    fetchCatalog()
+    fetchMedicationCatalog()
       .then(setCatalog)
       .catch(() => {})
       .finally(() => setLoading(false))

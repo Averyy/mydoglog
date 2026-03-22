@@ -115,3 +115,12 @@ export interface LogFeedResponse {
 export interface RoutineData {
   plan: ActivePlan | null
 }
+
+/** Full product detail for comparison — includes GA, ingredients, and health tags. */
+export interface ProductDetail extends ProductSummary {
+  healthTags: string[] | null
+  guaranteedAnalysis: Record<string, number> | null
+  guaranteedAnalysisBasis: string | null
+  rawIngredientString: string | null
+  ingredients: { normalizedName: string; position: number }[]
+}

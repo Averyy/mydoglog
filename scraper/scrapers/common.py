@@ -257,10 +257,14 @@ def _open_and_convert(img_path: Path) -> Image.Image:
     return img.convert("RGBA" if has_alpha else "RGB")
 
 
-def _has_white_background(img: Image.Image, threshold: int = 240, edge_ratio: float = 0.85) -> bool:
-    """Detect if an image has a predominantly white background.
+def _has_solid_background(
+    img: Image.Image, edge_ratio: float = 0.85, max_std: float = 25.0
+) -> bool:
+    """Detect if an image has a solid-colored background (white, grey, etc.).
 
-    Samples pixels along all four edges and checks if enough are near-white.
+    Samples pixels along all four edges and checks if they are uniform enough
+    (low standard deviation) and opaque. Catches white, grey, and other
+    solid studio backdrops.
     """
     rgba = img.convert("RGBA")
     w, h = rgba.size
@@ -275,11 +279,25 @@ def _has_white_background(img: Image.Image, threshold: int = 240, edge_ratio: fl
         edge_pixels.append(rgba.getpixel((0, y)))
         edge_pixels.append(rgba.getpixel((w - 1, y)))
 
-    white_count = sum(
-        1 for p in edge_pixels
-        if p[0] >= threshold and p[1] >= threshold and p[2] >= threshold and p[3] > 200
-    )
-    return white_count / len(edge_pixels) >= edge_ratio
+    # Filter to opaque pixels only
+    opaque = [p for p in edge_pixels if p[3] > 200]
+    if len(opaque) / len(edge_pixels) < edge_ratio:
+        return False  # Already has transparency — no removal needed
+
+    # Check if edge colors are uniform (low spread = solid background)
+    r_vals = [p[0] for p in opaque]
+    g_vals = [p[1] for p in opaque]
+    b_vals = [p[2] for p in opaque]
+
+    if len(r_vals) < 2:
+        return False
+
+    from statistics import stdev
+    r_std = stdev(r_vals)
+    g_std = stdev(g_vals)
+    b_std = stdev(b_vals)
+
+    return r_std < max_std and g_std < max_std and b_std < max_std
 
 
 def _remove_background(img: Image.Image) -> Image.Image:
@@ -317,7 +335,7 @@ def _process_brand_images(brand_slug: str, *, remove_bg: bool = False) -> None:
         try:
             img = _open_and_convert(img_path)
 
-            if remove_bg and _has_white_background(img):
+            if remove_bg and _has_solid_background(img):
                 img = _remove_background(img)
                 bg_removed_count += 1
 
@@ -420,7 +438,8 @@ def clean_text(text: str) -> str:
     # Normalize whitespace: collapse runs, strip (includes \xa0 non-breaking spaces)
     text = re.sub(r"[\s]+", " ", text)
     # Ensure space after commas (e.g. "Sulfate,Riboflavin" → "Sulfate, Riboflavin")
-    text = re.sub(r",(?!\s)", ", ", text)
+    # But preserve digit,digit thousands separators (e.g. "3,290 kcal/kg")
+    text = re.sub(r",(?!\s)(?!\d{1,3}(?:\D|$))", ", ", text)
     # Fix space before comma (e.g. "Chicken , Beef" → "Chicken, Beef")
     text = re.sub(r"\s+,", ",", text)
     return text.strip()
@@ -560,6 +579,135 @@ _MIN_KEYWORDS = ["(min.)", "(min)", "minimum", "min.", "min"]
 _MAX_KEYWORDS = ["(max.)", "(max)", "maximum", "max.", "max"]
 
 
+# GA field patterns for text-based parsing — ordered with longer/more-specific FIRST
+GA_TEXT_PATTERNS: list[tuple[str, str]] = [
+    (r"omega[\s\-\u2013]*6\s+fatty\s+acid", "omega_6"),
+    (r"omega[\s\-\u2013]*6", "omega_6"),
+    (r"omega[\s\-\u2013]*3\s+fatty\s+acid", "omega_3"),
+    (r"omega[\s\-\u2013]*3", "omega_3"),
+    (r"crude\s+protein", "crude_protein"),
+    (r"crude\s+fat", "crude_fat"),
+    (r"crude\s+fib[re]+", "crude_fiber"),
+    (r"\bprotein\b", "crude_protein"),
+    (r"\bfat\b", "crude_fat"),
+    (r"\bfib[re]+\b", "crude_fiber"),
+    (r"moisture", "moisture"),
+    (r"\bash\b", "ash"),
+    (r"calcium", "calcium"),
+    (r"phosphorus", "phosphorus"),
+    (r"glucosamine", "glucosamine"),
+    (r"chondroitin", "chondroitin"),
+    (r"taurine", "taurine"),
+    (r"\bdha\b", "dha"),
+    (r"\bepa\b", "epa"),
+    (r"l-carnitine", "l_carnitine"),
+]
+
+
+def parse_ga_text(text: str) -> GuaranteedAnalysis | None:
+    """Parse guaranteed analysis from plain text.
+
+    Handles multiple formats:
+    - One value per line: "Crude Protein (min) 26.0%"
+    - Comma/semicolon-separated: "Crude Protein (Min) 4.0%, Crude Fat (Min) 1.5%"
+    - Jammed/no-separator: "Crude Protein (min) 10.0%Crude Fat (min) 2.00%"
+    - Missing '%' sign on core fields: "Moisture (max) 10.0"
+
+    Scopes to the "Guaranteed Analysis" section when present to avoid
+    matching marketing copy (e.g. "feed up to 50% more food").
+    """
+    ga: dict[str, float] = {}
+    _MAX_BY_DEFAULT = {"ash", "crude_fiber", "moisture"}
+
+    # Scope to GA section
+    ga_start = re.search(
+        r"Guaranteed\s+Analysis\s*:?",
+        text,
+        re.IGNORECASE,
+    )
+    if ga_start:
+        text = text[ga_start.start():]
+        ga_end = re.search(
+            r"\n\s*(?:Feeding|Calori[ce]|Directions|Transition|AAFCO|Pregnant|Nursing|Amount)",
+            text,
+            re.IGNORECASE,
+        )
+        if ga_end:
+            text = text[:ga_end.start()]
+
+    # Fix jammed GA formats (no separators between fields)
+    text = re.sub(r"Analysis(?=Crude|Moisture)", "Analysis\n", text, flags=re.IGNORECASE)
+    text = re.sub(r"\(MIN\)\s*%\s*([\d.]+)", r"\1% MIN", text)
+    text = re.sub(r"\(MAX\)\s*%\s*([\d.]+)", r"\1% MAX", text)
+    text = re.sub(r"(\d\s*%)(?=[A-Z](?!IN\b|AX\b))", r"\1\n", text)
+    text = re.sub(r"(MIN|MAX)(?=[A-Z])", r"\1\n", text)
+    text = re.sub(r"((?:mg|IU|CFU)[\u2044/](?:kg|lb))(?=[A-Z*])", r"\1\n", text)
+
+    segments: list[str] = []
+    for line in text.split("\n"):
+        line = line.strip()
+        if not line:
+            continue
+        pct_count = len(re.findall(r"\d*\.?\d+\s*%", line))
+        if pct_count > 1:
+            parts = re.split(r"[,;]\s*(?=[A-Z*])", line)
+            if len(parts) < pct_count:
+                normalized = re.sub(
+                    r"(%\.?\s*(?:MIN|MAX|min\.|max\.)?)\s+(?=[A-Z*])",
+                    r"\1\n",
+                    line,
+                )
+                parts = [p.strip() for p in normalized.split("\n") if p.strip()]
+            segments.extend(parts)
+        else:
+            segments.append(line)
+
+    for segment in segments:
+        segment = segment.strip()
+        if not segment:
+            continue
+
+        segment_lower = segment.lower()
+
+        for pattern, field_base in GA_TEXT_PATTERNS:
+            if not re.search(pattern, segment_lower):
+                continue
+
+            is_max = bool(re.search(r"\bmax\b", segment_lower))
+            is_min = bool(re.search(r"\bmin\b", segment_lower))
+
+            if not is_max and not is_min:
+                if "not more than" in segment_lower:
+                    is_max = True
+                elif "not less than" in segment_lower:
+                    is_min = True
+
+            if not is_max and not is_min:
+                is_max = field_base in _MAX_BY_DEFAULT
+                is_min = not is_max
+
+            suffix = "_max" if is_max else "_min"
+
+            val_match = re.search(r"(\d*\.?\d+)\s*%", segment)
+            if not val_match and field_base in _MAX_BY_DEFAULT | {
+                "crude_protein",
+                "crude_fat",
+            }:
+                fallback = re.search(
+                    r"(?:min|max)\.?\)?\s+(\d*\.?\d+)(?!\s*mg)",
+                    segment,
+                    re.IGNORECASE,
+                )
+                if fallback:
+                    val_match = fallback
+            if val_match:
+                ga[f"{field_base}{suffix}"] = float(val_match.group(1))
+
+            break
+
+    return ga if ga else None  # type: ignore[return-value]
+
+
 def parse_ga_html_table(html: str) -> GuaranteedAnalysis:
     """Parse a guaranteed analysis HTML table into structured data.
 
@@ -687,9 +835,9 @@ def _extract_ga_value(text: str) -> tuple[float, bool] | None:
     Returns (value, is_mg_kg) or None if no number found.
     """
     is_mg_kg = bool(re.search(r"mg\s*/\s*kg", text, re.IGNORECASE))
-    m = re.search(r"(\d+[\d,]*\.?\d*)\s*(?:%|mg)", text)
+    m = re.search(r"(\d*[\d,]*\.?\d+)\s*(?:%|mg)", text)
     if not m:
-        m = re.search(r"(\d+[\d,]*\.?\d*)", text)
+        m = re.search(r"(\d*[\d,]*\.?\d+)", text)
     if m:
         value = float(m.group(1).replace(",", ""))
         return (value, is_mg_kg)
@@ -731,6 +879,10 @@ def normalize_calorie_content(raw: str) -> str | None:
         return None
 
     raw_clean = raw.replace(",", "").lower()
+    # Treat period-as-thousands-separator: "3.721 kcal" → "3721 kcal"
+    # A digit, period, then exactly 3 digits followed by a non-digit is never a
+    # real decimal in calorie values (no food is 3.721 kcal/kg).
+    raw_clean = re.sub(r"(\d)\.(\d{3})(?=\D)", r"\1\2", raw_clean)
 
     # Match kcal, cal, kilocalories — and tolerate mg/kg typos for kg extraction
     _CAL = r"(?:kcals?|kilocalories?|cal)"

@@ -14,28 +14,25 @@ Living checklist. Update as work progresses.
 
 ## Remaining (lowest effort first)
 
-### 1. Gap Backfill Banner
-Fully specced in `TODO-gap-backfill.md`. Persistent banner on Home surfacing unlogged days, single backfill flow reusing existing scorecard pickers. Two new API routes, one new component, one correlation engine fix.
+### 1. Vet Visit Logging
+See `TODO-vet-visits.md`. Replaces daily check-in (redundant) and weight tracking. New `vet_visit_logs` table, multi-select reason chips, visit history on Dog page. Weight captured at each visit. Quick-log grid becomes: Stool → Itch → Treat → Vet Visit.
 
-### 2. Weight Tracking
-See `TODO-weight-tracking.md`. New `weight_logs` table, two API routes, weight chart on Insights (reuses existing chart infra), optional field on check-in.
-
-### 3. MCP Server
+### 2. MCP Server
 Claude queries existing API routes directly. No new UI, no new data — just an MCP wrapper over what already exists.
 
-### 4. Custom Food Entry
+### 3. Custom Food Entry
 See `TODO-custom-food-entry.md`. New table, ingredient parsing with AAFCO family matching, product search integration, CRUD UI. Medium effort — ingredient parsing is the tricky part.
 
-### 5. Sharing & Pack Access
-See `TODO-sharing.md`. Schema migration (`pack_members` table, drop `ownerId`), auth helper swap across all routes, invite system, pack management UI, public share route. Touches every API route.
+### 4. Public Share Link
+See `TODO-public-share.md`. Read-only public link per dog. Catch-all `/share/[token]/[...path]` route renders same page components with `isPublicView` context hiding edit UI. API auth blocks writes. One migration, one context, one route. Full multi-user pack access deferred to `TODO-sharing.md`.
 
-### 6. Vet Export
+### 5. Vet Export
 Formatted reports for vet visits. Depends on having enough data/features in place. Moderate effort — mostly formatting/layout.
 
-### 7. AI Poop Photo Analysis
+### 6. AI Poop Photo Analysis
 See `TODO-ai-poop-analysis.md`. Lowest priority, highest effort. Photo capture, dataset collection, model training (3,500+ labeled images), ONNX inference integration.
 
-### 8. General Vet/Health Timeline + Document Uploads
+### 7. General Vet/Health Timeline + Document Uploads
 Vaccinations, vet visits, surgical history, PDF uploads. New schema, new UI, lowest priority.
 
 ---

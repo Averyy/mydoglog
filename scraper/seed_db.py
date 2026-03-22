@@ -331,14 +331,14 @@ def upsert_product(cur, brand_id: str, product: dict[str, Any], scraped_from: st
         INSERT INTO products (
             id, brand_id, name, type, format, channel, lifestage,
             health_tags, raw_ingredient_string, guaranteed_analysis,
-            calorie_content, image_urls, manufacturer_url,
-            variants_json, scraped_from, scraped_at,
+            guaranteed_analysis_basis, calorie_content, image_urls,
+            manufacturer_url, variants_json, scraped_from, scraped_at,
             is_discontinued, updated_at
         ) VALUES (
             %s, %s, %s, %s, %s, %s, %s,
             %s, %s, %s,
             %s, %s, %s,
-            %s, %s, %s,
+            %s, %s, %s, %s,
             false, NOW()
         )
         ON CONFLICT ON CONSTRAINT uq_product_name_brand DO UPDATE SET
@@ -349,6 +349,7 @@ def upsert_product(cur, brand_id: str, product: dict[str, Any], scraped_from: st
             health_tags = EXCLUDED.health_tags,
             raw_ingredient_string = EXCLUDED.raw_ingredient_string,
             guaranteed_analysis = EXCLUDED.guaranteed_analysis,
+            guaranteed_analysis_basis = EXCLUDED.guaranteed_analysis_basis,
             calorie_content = EXCLUDED.calorie_content,
             image_urls = EXCLUDED.image_urls,
             manufacturer_url = EXCLUDED.manufacturer_url,
@@ -366,6 +367,7 @@ def upsert_product(cur, brand_id: str, product: dict[str, Any], scraped_from: st
             product.get("health_tags"),
             title_case_ingredients(product.get("ingredients_raw", "") or "") or None,
             json.dumps(product.get("guaranteed_analysis")) if product.get("guaranteed_analysis") else None,
+            product.get("guaranteed_analysis_basis"),
             product.get("calorie_content"),
             product.get("images"),
             product.get("url"),
@@ -489,12 +491,12 @@ def seed_medications(conn) -> int:
                     id, name, generic_name, manufacturer, category,
                     drug_class, dosage_form, default_intervals,
                     description, common_side_effects, side_effects_sources,
-                    suppresses_itch, has_gi_side_effects
+                    suppresses_itch, has_gi_side_effects, learn_more_url
                 ) VALUES (
                     %s, %s, %s, %s, %s::medication_category,
                     %s, %s::dosage_form, %s::dosing_interval[],
                     %s, %s, %s,
-                    %s, %s
+                    %s, %s, %s
                 )
                 ON CONFLICT (name) DO UPDATE SET
                     generic_name = EXCLUDED.generic_name,
@@ -507,7 +509,8 @@ def seed_medications(conn) -> int:
                     common_side_effects = EXCLUDED.common_side_effects,
                     side_effects_sources = EXCLUDED.side_effects_sources,
                     suppresses_itch = EXCLUDED.suppresses_itch,
-                    has_gi_side_effects = EXCLUDED.has_gi_side_effects
+                    has_gi_side_effects = EXCLUDED.has_gi_side_effects,
+                    learn_more_url = EXCLUDED.learn_more_url
                 """,
                 (
                     str(uuid4()),
@@ -523,6 +526,7 @@ def seed_medications(conn) -> int:
                     med.get("side_effects_sources"),
                     med.get("suppresses_itch", False),
                     med.get("has_gi_side_effects", False),
+                    med.get("learn_more_url"),
                 ),
             )
             count += 1

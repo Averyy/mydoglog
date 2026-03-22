@@ -24,6 +24,7 @@ export async function GET(
         healthTags: products.healthTags,
         rawIngredientString: products.rawIngredientString,
         guaranteedAnalysis: products.guaranteedAnalysis,
+        guaranteedAnalysisBasis: products.guaranteedAnalysisBasis,
         calorieContent: products.calorieContent,
         imageUrls: products.imageUrls,
         manufacturerUrl: products.manufacturerUrl,

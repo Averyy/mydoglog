@@ -237,8 +237,13 @@ def _parse_calorie_content(detail: dict) -> str | None:
         if cal_text:
             # Strip common prefix "Calorie content:"
             cal_text = re.sub(r"^calorie\s+content\s*:\s*", "", cal_text, flags=re.IGNORECASE)
-            result = normalize_calorie_content(clean_text(cal_text))
-            # Validate: must contain kcal (rejects GA text that leaked into calorie field)
+            cleaned = clean_text(cal_text)
+            # Reject GA text that leaked into calorie field (e.g. product 1480).
+            # Real calorie strings contain "kcal" or "kilocalorie"; GA text only
+            # has "%" and "mg/kg" which normalize_calorie_content would mis-parse.
+            if not re.search(r"kcal|kilocalorie", cleaned, re.IGNORECASE):
+                continue
+            result = normalize_calorie_content(cleaned)
             if result and "kcal" in result:
                 return result
     return None

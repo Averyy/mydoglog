@@ -1,0 +1,3063 @@
+{
+  "brand": "Hill's",
+  "website_url": "https://www.petsmart.ca",
+  "scraped_at": "2026-03-22T13:57:01.272434+00:00",
+  "scraper_version": "0.1.0",
+  "stats": {
+    "product_count": 87,
+    "by_channel": {
+      "retail": 87
+    },
+    "by_type": {
+      "food": 74,
+      "supplement": 4,
+      "treat": 9
+    }
+  },
+  "products": [
+    {
+      "name": "Science Diet 7+ Senior Wet Dog Food - Beef & Barley",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/hills-science-diet-7-senior-wet-dog-food---beef-and-barley-13-oz-91864.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Science Diet",
+      "life_stage": "senior",
+      "source_id": "5117275",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-7-senior-wet-dog-food-beef-barley.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "13 oz",
+          "upc": "0052742705606",
+          "sku": "5117275"
+        }
+      ],
+      "ingredients_raw": "Water, Beef, Cracked Pearled Barley, Whole Grain Corn, Pork Liver, Corn Gluten Meal, Dried Whey, Dried Beet Pulp, Chicken Liver Flavor, Soybean Oil, Calcium Carbonate, Dicalcium Phosphate, Potassium Chloride, Iodized Salt, Choline Chloride, vitamins (Vitamin E Supplement, Thiamine Mononitrate, Ascorbic Acid (source of Vitamin C), Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Riboflavin Supplement, Vitamin D3 Supplement, Folic Acid), L-Lysine, minerals (Zinc Oxide, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate), Taurine, Beta-Carotene",
+      "calorie_content": "376 kcal/13 oz (370g) can",
+      "guaranteed_analysis": {
+        "crude_protein_min": 21.5,
+        "crude_fat_min": 12.1,
+        "crude_fiber_max": 2.0,
+        "ash_max": 6.0,
+        "calcium_min": 0.85,
+        "phosphorus_min": 0.54,
+        "potassium_min": 0.83,
+        "sodium_min": 0.27,
+        "omega_3_min": 0.29,
+        "omega_6_min": 3.11
+      },
+      "guaranteed_analysis_basis": "dry-matter"
+    },
+    {
+      "name": "Science Diet 7+ Senior Wet Dog Food - Chicken & Barley",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/hills-science-diet-7-senior-wet-dog-food---chicken-and-barley-13-oz-2737.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Science Diet",
+      "life_stage": "senior",
+      "source_id": "5117277",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-7-senior-wet-dog-food-chicken-barley.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "13 oz",
+          "upc": "0052742705507",
+          "sku": "5117277"
+        }
+      ],
+      "ingredients_raw": "Water, Chicken, Cracked Pearled Barley, Pork Liver, Whole Grain Corn, Dried Whey, Dried Beet Pulp, Corn Gluten Meal, Chicken Liver Flavor, Soybean Oil, Flaxseed, Calcium Carbonate, Potassium Chloride, Choline Chloride, Iodized Salt, vitamins (Vitamin E Supplement, Thiamine Mononitrate, Ascorbic Acid (source of Vitamin C), Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Riboflavin Supplement, Vitamin D3 Supplement, Folic Acid), Dicalcium Phosphate, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), L-Tryptophan, Beta-Carotene",
+      "calorie_content": "375 kcal / 13 oz (370 g) Can",
+      "guaranteed_analysis": {
+        "crude_protein_min": 22.1,
+        "crude_fat_min": 14.3,
+        "crude_fiber_max": 2.0,
+        "ash_max": 6.5,
+        "calcium_min": 1.02,
+        "potassium_min": 0.92,
+        "sodium_min": 0.32,
+        "omega_3_min": 0.44,
+        "omega_6_min": 4.2
+      },
+      "guaranteed_analysis_basis": "dry-matter"
+    },
+    {
+      "name": "Science Diet Adult Dog Wet Food - Salmon & Barley Entree",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/hills-science-diet-adult-dog-wet-food---salmon-and-barley-entree-13-oz-82318.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Science Diet",
+      "life_stage": "adult",
+      "source_id": "5351199",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-adult-dog-wet-food-salmon-barley-entree.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "13 oz",
+          "upc": "0052742068671",
+          "sku": "5351199"
+        }
+      ],
+      "ingredients_raw": "Water, Salmon, Cracked Pearled Barley, Whole Grain Corn, Beef By-Products, Pork Liver, Soybean Meal, Chicken, Dried Whey, Soybean Oil, Chicken Liver Flavor, Calcium Carbonate, Choline Chloride, Iodized Salt, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Menadione Sodium Bisulfite Complex (source of Vitamin K), Riboflavin Supplement, Biotin, Folic Acid), Potassium Chloride, minerals (Zinc Oxide, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate), Beta-Carotene",
+      "guaranteed_analysis": {
+        "moisture_max": 78.0,
+        "crude_protein_min": 3.7,
+        "crude_fat_min": 1.5,
+        "crude_fiber_max": 1.5,
+        "ash_max": 2.8
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "369 kcal / 13 oz (370 g)"
+    },
+    {
+      "name": "Science Diet Adult Entree Dog Food - Chicken & Beef",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/hills-science-diet-adult-entree-dog-food---chicken-and-beef-83459.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Science Diet",
+      "life_stage": "adult",
+      "source_id": "5353049",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-adult-entree-dog-food-chicken-beef.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742704005",
+          "sku": "5353049"
+        }
+      ],
+      "ingredients_raw": "Water, Chicken, Beef, Beef By-Products, Pork Liver, Rice, Cracked Pearled Barley, Whole Grain Corn, Corn Gluten Meal, Chicken Liver Flavor, Soybean Oil, Calcium Carbonate, Dicalcium Phosphate, Potassium Chloride, Choline Chloride, Iodized Salt, vitamins (Vitamin E Supplement, Thiamine Mononitrate, Ascorbic Acid (source of Vitamin C), Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin D3 Supplement, Riboflavin Supplement, Folic Acid), L-Lysine, minerals (Zinc Oxide, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate), Beta-Carotene",
+      "calorie_content": "1039 kcal/kg",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.4,
+        "crude_fat_min": 19.8,
+        "crude_fiber_max": 1.5,
+        "ash_max": 7.0,
+        "calcium_min": 1.29,
+        "phosphorus_min": 0.68,
+        "potassium_min": 0.87,
+        "sodium_min": 0.39,
+        "omega_3_min": 0.39,
+        "omega_6_min": 0.0
+      },
+      "guaranteed_analysis_basis": "dry-matter"
+    },
+    {
+      "name": "Science Diet Adult Perfect Weight Wet Dog Food - Chicken & Vegetable",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/hills-science-diet-adult-perfect-weight-wet-dog-food---chicken-and-vegetable-77237.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Science Diet",
+      "life_stage": "adult",
+      "source_id": "5340286",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-adult-perfect-weight-wet-dog-food-chicken-vegetable.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742297507",
+          "sku": "5340286"
+        }
+      ],
+      "ingredients_raw": "Chicken Broth, Chicken, Turkey Giblets, Green Beans, Carrots, Green Peas, Potato Starch, Egg Whites, Oat Fiber, Powdered Cellulose, Dried Tomato Pomace, Dried Beet Pulp, Pea Protein, Flaxseed, Coconut Oil, Chicken Liver Flavor, Dicalcium Phosphate, Carrageenan, Choline Chloride, Iodized Salt, DL-Methionine, Dried Apple Pomace, vitamins (Vitamin E Supplement, Ascorbic Acid (source of Vitamin C), L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Vitamin A Supplement, Calcium Pantothenate, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Riboflavin Supplement, Biotin, Vitamin D3 Supplement, Menadione Sodium Bisulfite Complex (source of Vitamin K), Folic Acid), Potassium Chloride, L-Lysine, Calcium Carbonate, Taurine, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganese Sulfate, Calcium Iodate), L-Carnitine, Beta-Carotene",
+      "guaranteed_analysis": {
+        "moisture_max": 78.0,
+        "crude_protein_min": 5.5,
+        "crude_fat_min": 2.0,
+        "crude_fiber_max": 4.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "247 kcal/can"
+    },
+    {
+      "name": "Science Diet Adult Wet Dog Food - Beef & Barley",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/hills-science-diet-adult-wet-dog-food---beef-and-barley-13-oz-2731.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Science Diet",
+      "life_stage": "adult",
+      "source_id": "5117274",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-adult-wet-dog-food-beef-barley.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "13 oz",
+          "upc": "0052742703909",
+          "sku": "5117274"
+        }
+      ],
+      "ingredients_raw": "Water, Beef, Pork Liver, Whole Grain Corn, Cracked Pearled Barley, Chicken Liver Flavor, Soybean Oil, Dried Beet Pulp, Calcium Carbonate, Chicken Fat, Dicalcium Phosphate, Potassium Chloride, Choline Chloride, Iodized Salt, vitamins (Vitamin E Supplement, Thiamine Mononitrate, Ascorbic Acid (source of Vitamin C), Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin D3 Supplement, Riboflavin Supplement, Folic Acid), minerals (Zinc Oxide, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate), Beta-Carotene",
+      "calorie_content": "406 kcals / 13 oz (370 g)can",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.5,
+        "crude_fat_min": 14.2,
+        "crude_fiber_max": 1.9,
+        "ash_max": 6.1,
+        "calcium_min": 0.82,
+        "phosphorus_min": 0.55,
+        "potassium_min": 0.71,
+        "sodium_min": 0.38,
+        "omega_3_min": 0.38,
+        "omega_6_min": 3.01
+      },
+      "guaranteed_analysis_basis": "dry-matter"
+    },
+    {
+      "name": "Science Diet Adult Wet Dog Food - Chicken & Barley",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/hills-science-diet-adult-wet-dog-food---chicken-and-barley-13-oz-91863.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Science Diet",
+      "life_stage": "adult",
+      "source_id": "5117271",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-adult-wet-dog-food-chicken-barley.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "13 oz",
+          "upc": "0052742703701",
+          "sku": "5117271"
+        }
+      ],
+      "ingredients_raw": "Water, Chicken, Pork Liver, Whole Grain Corn, Cracked Pearled Barley, Beef By-Products, Soybean Meal, Chicken Liver Flavor, Dried Whey, Soybean Oil, Calcium Carbonate, Iodized Salt, Potassium Chloride, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Menadione Sodium Bisulfite Complex (source of Vitamin K), Pyridoxine Hydrochloride, Calcium Pantothenate, Vitamin B12 Supplement, Riboflavin Supplement, Vitamin D3 Supplement, Folic Acid, Biotin), Choline Chloride, minerals (Zinc Oxide, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate), Beta-Carotene",
+      "calorie_content": "369 kcal / 13 oz (370 g) Can",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.7,
+        "crude_fat_min": 16.7,
+        "crude_fiber_max": 1.0,
+        "ash_max": 5.9,
+        "calcium_min": 0.86,
+        "phosphorus_min": 0.67,
+        "potassium_min": 0.88,
+        "sodium_min": 0.34,
+        "omega_3_min": 0.43,
+        "omega_6_min": 5.21
+      },
+      "guaranteed_analysis_basis": "dry-matter"
+    },
+    {
+      "name": "Science Diet Healthy Cuisine Adult 7+ Wet Dog Food",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/hills-science-diet-healthy-cuisine-adult-7-wet-dog-food---125-oz-77238.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Science Diet",
+      "life_stage": "adult",
+      "source_id": "5340287",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-healthy-cuisine-adult-7-wet-dog-food.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "12.5 oz",
+          "sku": "5340287"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "12.5 oz",
+          "sku": "5340289"
+        }
+      ],
+      "ingredients_raw": "Beef Broth, Red Bell Pepper, Beef, Carrots, Pork Liver, Rice, Green Peas, Rice Starch, Chicken, Chicken Liver Flavor, Powdered Cellulose, Whole Grain Barley, Soybean Oil, Dried Beet Pulp, Flaxseed, Potassium Alginate, Calcium Chloride, Wheat Gluten, Dicalcium Phosphate, Guar Gum, Calcium Lactate, Calcium Gluconate, Monosodium Phosphate, Choline Chloride, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Riboflavin Supplement, Vitamin D3 Supplement, Folic Acid), Sodium Tripolyphosphate, minerals (Zinc Oxide, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate)",
+      "guaranteed_analysis": {
+        "moisture_max": 84.0,
+        "crude_protein_min": 3.0,
+        "crude_fat_min": 1.8,
+        "crude_fiber_max": 2.5,
+        "ash_max": 2.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "257 kcal/can"
+    },
+    {
+      "name": "Science Diet Healthy Cuisine Adult Wet Dog Food - Braised Beef, Carrots & Peas",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/hills-science-diet-healthy-cuisine-adult-wet-dog-food---braised-beef-carrots-and-peas-125-oz-91865.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Science Diet",
+      "life_stage": "adult",
+      "source_id": "5337799",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-healthy-cuisine-adult-wet-dog-food-braised-beef-carrots-peas.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "12.5 oz",
+          "upc": "0052742007250",
+          "sku": "5337799"
+        }
+      ],
+      "ingredients_raw": "Beef Broth, Beef, Red Bell Pepper, Carrots, Green Peas, Pork Liver, Rice, Rice Starch, Chicken, Wheat Gluten, Powdered Cellulose, Chicken Liver Flavor, Soybean Oil, Dried Beet Pulp, Whole Grain Barley, Potassium Alginate, Flaxseed, Calcium Chloride, Chicken Fat, Dicalcium Phosphate, Guar Gum, Calcium Lactate, Calcium Gluconate, Monosodium Phosphate, Choline Chloride, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin D3 Supplement, Riboflavin Supplement, Folic Acid), Sodium Tripolyphosphate, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganese Sulfate, Calcium Iodate), Beta-Carotene",
+      "guaranteed_analysis": {
+        "crude_protein_min": 4.0,
+        "crude_fat_min": 2.5,
+        "crude_fiber_max": 2.5,
+        "calcium_min": 0.22,
+        "phosphorus_min": 0.13,
+        "taurine_min": 0.01,
+        "omega_3_min": 0.15,
+        "omega_6_min": 0.69
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "Protein                                       4.0%        5.6%        26.3%        7.1 g                 100 kcal"
+    },
+    {
+      "name": "Science Diet Healthy Cuisine Adult Wet Dog Food - Roasted Chicken, Carrots & Spinach",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/hills-science-diet-healthy-cuisine-adult-wet-dog-food---roasted-chicken-carrots-and-spinach-125-oz-75577.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Science Diet",
+      "life_stage": "adult",
+      "source_id": "5337801",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-healthy-cuisine-adult-wet-dog-food-roasted-chicken-carrots-spinach.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "12.5 oz",
+          "upc": "0052742007236",
+          "sku": "5337801"
+        }
+      ],
+      "ingredients_raw": "Chicken Broth, Chicken, Pork Liver, Carrots, Rice, Green Peas, Rice Starch, Spinach, Chicken Liver Flavor, Soybean Oil, Flaxseed, Potassium Alginate, Powdered Cellulose, Wheat Gluten, Calcium Chloride, Guar Gum, Dicalcium Phosphate, Calcium Lactate, Calcium Gluconate, Sodium Tripolyphosphate, Fish Oil, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin D3 Supplement, Riboflavin Supplement, Folic Acid), Choline Chloride, L-Lysine, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganese Sulfate, Calcium Iodate), Beta-Carotene",
+      "guaranteed_analysis": {
+        "crude_protein_min": 4.0,
+        "crude_fat_min": 2.5,
+        "crude_fiber_max": 2.5,
+        "calcium_min": 0.18,
+        "phosphorus_min": 0.12,
+        "omega_3_min": 0.24,
+        "omega_6_min": 0.92
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "Protein                                       4.0%        5.3%        27.4%        7.2 g                 100 kcal"
+    },
+    {
+      "name": "Science Diet Perfect Digestion Adult Wet Dog Food - Chicken, Vegetable & Rice Stew",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/hills-science-diet-perfect-digestion-adult-wet-dog-food---chicken-vegetable-and-rice-stew-128-oz-75575.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Science Diet",
+      "life_stage": "adult",
+      "source_id": "5337797",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-perfect-digestion-adult-wet-dog-food-chicken-vegetable-rice-stew.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "12.8 oz",
+          "upc": "0052742041445",
+          "sku": "5337797"
+        }
+      ],
+      "ingredients_raw": "Chicken Broth, Chicken, Pork Liver, Carrots, Rice, Rice Starch, Green Peas, Chicken Liver flavour, Potassium Alginate, Ground Pecan Shells, Chicken Fat, Calcium Chloride, Flaxseed, Dried Beet Pulp, Dried Citrus Pulp, Guar Gum, Fish Oil, Dicalcium Phosphate, Oat Fiber, Pumpkin, Calcium Lactate, Calcium Gluconate, Sodium Tripolyphosphate, Choline Chloride, Pressed Cranberries, vitamins (Vitamin E Supplement, Thiamine Mononitrate, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Riboflavin Supplement, Vitamin D3 Supplement, Folic Acid), Magnesium Oxide, Taurine, minerals (Zinc Oxide, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate)",
+      "guaranteed_analysis": {
+        "crude_protein_min": 3.5,
+        "crude_fat_min": 1.2,
+        "crude_fiber_max": 1.5,
+        "calcium_min": 0.18,
+        "phosphorus_min": 0.12,
+        "omega_3_min": 0.1,
+        "omega_6_min": 0.44
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "Protein                                       3.5%        4.9%        25.7%        6.4 g                 100 kcal"
+    },
+    {
+      "name": "Science Diet Perfect Digestion Chicken & Rice Entree Adult Dog Wet Food",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/hills-science-diet-perfect-digestion-chicken-and-rice-entree-adult-dog-wet-food---128-oz-82352.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Science Diet",
+      "life_stage": "adult",
+      "source_id": "5351536",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-perfect-digestion-chicken-rice-entree-adult-dog-wet-food.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "12.8 oz",
+          "upc": "0052742068510",
+          "sku": "5351536"
+        }
+      ],
+      "ingredients_raw": "Chicken Broth, Green Beans, Chicken, Turkey, Carrots, Rice, Pork Liver, Potato Starch, Hydrolyzed Chicken Flavor, Egg Product, Ground Pecan Shells, Potassium Chloride, Fish Oil, Dicalcium Phosphate, Flaxseed, Dried Beet Pulp, Locust Bean Gum, Dried Citrus Pulp, Carrageenan, Disodium Phosphate, Choline Chloride, Pumpkin, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Ascorbic Acid (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Vitamin A Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Riboflavin Supplement, Biotin, Menadione Sodium Bisulfite Complex (source of Vitamin K), Folic Acid, Vitamin D3 Supplement), Pressed Cranberries, Magnesium Oxide, Guar Gum, Taurine, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganese Sulfate, Calcium Iodate), Beta-Carotene",
+      "calorie_content": "372 kcal / 12.8 oz ((363 g) Can",
+      "guaranteed_analysis": {
+        "crude_protein_min": 26.9,
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 2.6,
+        "calcium_min": 0.87,
+        "phosphorus_min": 0.79,
+        "potassium_min": 1.16,
+        "sodium_min": 0.36,
+        "omega_3_min": 0.62,
+        "omega_6_min": 2.93
+      },
+      "guaranteed_analysis_basis": "dry-matter"
+    },
+    {
+      "name": "Science Diet Perfect Weight Adult Dog Wet Food - Hearty Vegetables & Salmon Stew",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/hills-science-diet-perfect-weight-adult-dog-wet-food---hearty-vegetables-and-salmon-stew-125-oz-82322.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Science Diet",
+      "life_stage": "adult",
+      "source_id": "5351203",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-perfect-weight-adult-dog-wet-food-hearty-vegetables-salmon-stew.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "12.5 oz",
+          "upc": "0052742069814",
+          "sku": "5351203"
+        }
+      ],
+      "ingredients_raw": "Chicken Broth, Pork Liver, Carrots, Salmon, Green Peas, Rice, Corn Starch, Powdered Cellulose, Oat Fiber, Whole Grain Barley, Dried Tomato Pomace, Natural Flavor, Wheat Gluten, Flaxseed, Coconut Oil, Potassium Alginate, Calcium Chloride, Dicalcium Phosphate, Soybean Oil, Calcium Sulfate, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Menadione Sodium Bisulfite Complex (source of Vitamin K), Riboflavin Supplement, Biotin, Folic Acid), Guar Gum, Sodium Tripolyphosphate, Potassium Citrate, Lipoic Acid, Magnesium Oxide, L-Lysine, Choline Chloride, Taurine, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganese Sulfate, Calcium Iodate), L-Carnitine, Calcium Carbonate",
+      "calorie_content": "259 kcal / 12.5 oz (354 g) can",
+      "guaranteed_analysis": {
+        "crude_protein_min": 29.3,
+        "crude_fat_min": 12.3,
+        "crude_fiber_max": 10.8,
+        "calcium_min": 0.99,
+        "phosphorus_min": 0.74,
+        "potassium_min": 0.93,
+        "sodium_min": 0.33,
+        "omega_3_min": 1.22,
+        "omega_6_min": 2.19
+      },
+      "guaranteed_analysis_basis": "dry-matter"
+    },
+    {
+      "name": "Science Diet Perfect Weight Adult Wet Dog Food - Vegetable & Chicken Stew",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/hills-science-diet-perfect-weight-adult-wet-dog-food---vegetable-and-chicken-stew-125-oz-33939.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Science Diet",
+      "life_stage": "adult",
+      "source_id": "5246994",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-perfect-weight-adult-wet-dog-food-vegetable-chicken-stew.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "12.5 oz",
+          "upc": "0052742002019",
+          "sku": "5246994"
+        }
+      ],
+      "ingredients_raw": "Chicken Broth, Pork Liver, Carrots, Green Peas, Powdered Cellulose, Rice Starch, Chicken, Rice, Spinach, Wheat Gluten, Dried Tomato Pomace, Flaxseed, Chicken Liver Flavor, Coconut Oil, Potassium Alginate, Fish Oil, Calcium Chloride, Natural Flavor, Guar Gum, Dicalcium Phosphate, Lipoic Acid, Calcium Lactate, Calcium Gluconate, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Pyridoxine Hydrochloride, Calcium Pantothenate, Vitamin B12 Supplement, Riboflavin Supplement, Menadione Sodium Bisulfite Complex (source of Vitamin K), Biotin, Vitamin D3 Supplement, Folic Acid), Sodium Tripolyphosphate, Potassium Citrate, Taurine, Iodized Salt, L-Lysine, minerals (Zinc Oxide, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate), L-Carnitine, Beta-Carotene",
+      "guaranteed_analysis": {
+        "moisture_max": 83.5,
+        "crude_protein_min": 4.3,
+        "crude_fat_min": 1.6,
+        "crude_fiber_max": 4.0,
+        "ash_min": 0.7,
+        "calcium_min": 0.12
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "247 kcal/can"
+    },
+    {
+      "name": "Science Diet Perfect Weight & Joint Support Adult Wet Dog Food - Vegetable & Tuna",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/hills-science-diet-perfect-weight-and-joint-support-adult-wet-dog-food---vegetable-and-tuna-125-oz-82321.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Science Diet",
+      "life_stage": "adult",
+      "source_id": "5351202",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-perfect-weight-joint-support-adult-wet-dog-food-vegetable-tuna.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "12.5 oz",
+          "upc": "0052742068374",
+          "sku": "5351202"
+        }
+      ],
+      "ingredients_raw": "Chicken Broth, Pork Liver, Carrots, Powdered Cellulose, Corn Starch, Green Peas, Tuna, Wheat Gluten, Dried Tomato Pomace, Soybean Oil, Hydrolyzed Chicken Flavor, Chicken Liver Flavor, Rice, Potassium Alginate, Coconut Oil, Fish Oil, Flaxseed, Calcium Chloride, Guar Gum, Dicalcium Phosphate, Potassium Chloride, Calcium Lactate, Calcium Gluconate, Monosodium Phosphate, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Ascorbic Acid (source of Vitamin C), Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin A Supplement, Biotin, Riboflavin Supplement, Folic Acid, Menadione Sodium Bisulfite Complex (source of Vitamin K), Vitamin D3 Supplement), Sodium Tripolyphosphate, Choline Chloride, Taurine, L-Carnitine, minerals (Zinc Oxide, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate), Beta-Carotene",
+      "calorie_content": "220 kcal / 12.5 oz (354 g) can",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.5,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 14.1,
+        "calcium_min": 0.8,
+        "phosphorus_min": 0.62,
+        "potassium_min": 1.14,
+        "sodium_min": 0.39,
+        "omega_3_min": 1.63,
+        "omega_6_min": 3.47
+      },
+      "guaranteed_analysis_basis": "dry-matter"
+    },
+    {
+      "name": "Science Diet Puppy Wet Dog Food - Chicken & Barley",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/hills-science-diet-puppy-wet-dog-food---chicken-and-barley-13-oz-2745.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Science Diet",
+      "life_stage": "puppy",
+      "source_id": "5117278",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-puppy-wet-dog-food-chicken-barley.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "13 oz",
+          "upc": "0052742703602",
+          "sku": "5117278"
+        }
+      ],
+      "ingredients_raw": "Water, Chicken, Whole Grain Corn, Cracked Pearled Barley, Pork Liver, Soybean Meal, Hydrolyzed Chicken Flavor, Dicalcium Phosphate, Ground Pecan Shells, Iodized Salt, Fish Oil, Flaxseed, Dried Beet Pulp, Dried Citrus Pulp, Choline Chloride, Potassium Chloride, vitamins (Vitamin E Supplement, Thiamine Mononitrate, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Ascorbic Acid (source of Vitamin C), Niacin Supplement, Vitamin A Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Riboflavin Supplement, Menadione Sodium Bisulfite Complex (source of Vitamin K), Biotin, Folic Acid, Vitamin D3 Supplement), Pressed Cranberries, Taurine, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganese Sulfate, Calcium Iodate), Beta-Carotene",
+      "guaranteed_analysis": {
+        "moisture_max": 71.0,
+        "crude_protein_min": 7.0,
+        "crude_fat_min": 4.5,
+        "crude_fiber_max": 1.5,
+        "ash_max": 3.4
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "495 Kcal / 13 oz (370 g) Can"
+    },
+    {
+      "name": "Science Diet Puppy Wet Dog Food - Chicken & Rice Stew",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/hills-science-diet-puppy-wet-dog-food---chicken-and-rice-stew-125-oz-76220.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Science Diet",
+      "life_stage": "puppy",
+      "source_id": "5339744",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-puppy-wet-dog-food-chicken-rice-stew.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "12.5 oz",
+          "upc": "0052742060217",
+          "sku": "5339744"
+        }
+      ],
+      "ingredients_raw": "Chicken Broth, Chicken, Pork Liver, Rice, Carrots, Green Peas, Rice Starch, Chicken Fat, Wheat Gluten, Hydrolyzed Chicken Flavor, Calcium Chloride, Potassium Alginate, Ground Pecan Shells, Dicalcium Phosphate, Calcium Sulfate, Sodium Tripolyphosphate, Flaxseed, Dried Beet Pulp, Dried Citrus Pulp, Guar Gum, Fish Oil, Potassium Citrate, vitamins (Vitamin E Supplement, Thiamine Mononitrate, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Menadione Sodium Bisulfite Complex (source of Vitamin K), Pyridoxine Hydrochloride, Calcium Pantothenate, Vitamin B12 Supplement, Riboflavin Supplement, Biotin, Vitamin D3 Supplement, Folic Acid), Pressed Cranberries, Choline Chloride, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganese Sulfate, Calcium Iodate), Taurine, Magnesium Oxide, Thiamine Hydrochloride, L-Threonine, Calcium Carbonate, Beta-Carotene",
+      "guaranteed_analysis": {
+        "crude_protein_min": 4.5,
+        "crude_fat_min": 2.5,
+        "crude_fiber_max": 2.5,
+        "calcium_min": 0.36,
+        "phosphorus_min": 0.22,
+        "dha_min": 0.014,
+        "omega_3_min": 0.11,
+        "omega_6_min": 0.75
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "Protein 4.5 %  6.5 % 29.9 % 7.1 g / 100 kcal"
+    },
+    {
+      "name": "Science Diet Savory Stew 7+ Senior Wet Dog Food - Beef & Vegetable",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/hills-science-diet-savory-stew-7-senior-wet-dog-food---beef-and-vegetable-128-oz-2764.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Science Diet",
+      "life_stage": "senior",
+      "source_id": "5166491",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-savory-stew-7-senior-wet-dog-food-beef-vegetable.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "12.8 oz",
+          "upc": "0052742143408",
+          "sku": "5166491"
+        }
+      ],
+      "ingredients_raw": "Water, Beef, Pork Liver, Brown Rice, Carrots, Modified Rice Starch, Wheat Flour, Potato Starch, Dried Beet Pulp, Dextrose, Egg Whites, Potatoes, Chicken Fat, Green Peas, Spinach, Flaxseed, Pork Plasma, Hydrolyzed Chicken Flavor, Potassium Chloride, Tricalcium Phosphate, Caramel color, Soybean Oil, Guar Gum, Calcium Carbonate, vitamins (Vitamin E Supplement, Ascorbic Acid (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin D3 Supplement, Riboflavin Supplement, Folic Acid), Choline Chloride, minerals (Ferrous Sulfate, Zinc Oxide, Copper Proteinate, Manganese Sulfate, Potassium Iodide), Sodium Pyrophosphate, Disodium Phosphate, Sodium Hexametaphosphate, L-Carnitine, L-Lysine, Magnesium Oxide, Taurine, Beta-Carotene",
+      "guaranteed_analysis": {
+        "moisture_max": 82.0,
+        "crude_protein_min": 3.5,
+        "crude_fat_min": 2.2,
+        "crude_fiber_max": 2.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "319 kcal/can"
+    },
+    {
+      "name": "Science Diet Savory Stew 7+ Senior Wet Dog Food - Chicken & Vegetable",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/hills-science-diet-savory-stew-7-senior-wet-dog-food---chicken-and-vegetable-128-oz-91862.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Science Diet",
+      "life_stage": "senior",
+      "source_id": "5166487",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-savory-stew-7-senior-wet-dog-food-chicken-vegetable.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "12.8 oz",
+          "upc": "0052742143309",
+          "sku": "5166487"
+        }
+      ],
+      "ingredients_raw": "Water, Chicken, Pork Liver, Brown Rice, Carrots, Rice Starch, Wheat Flour, Potato Starch, Dried Beet Pulp, Pork Plasma, Potatoes, Dextrose, Green Peas, Spinach, Chicken Fat, Chicken Liver Flavor, Calcium Carbonate, Flaxseed, Soybean Oil, Potassium Chloride, Guar Gum, Titanium Dioxide color, Choline Chloride, Sodium Pyrophosphate, Disodium Phosphate, Sodium Hexametaphosphate, minerals (Ferrous Sulfate, Zinc Oxide, Copper Proteinate, Manganese Sulfate, Potassium Iodide), vitamins (Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin D3 Supplement, Riboflavin Supplement, Folic Acid), L-Carnitine, L-Lysine, Taurine, Caramel color",
+      "guaranteed_analysis": {
+        "moisture_max": 82.0,
+        "crude_protein_min": 4.0,
+        "crude_fat_min": 2.8,
+        "crude_fiber_max": 1.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "322 kcal/can"
+    },
+    {
+      "name": "Science Diet Savory Stew Adult Wet Dog Food - Beef & Vegetable",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/hills-science-diet-savory-stew-adult-wet-dog-food---beef-and-vegetable-128-oz-91861.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Science Diet",
+      "life_stage": "adult",
+      "source_id": "5166485",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-savory-stew-adult-wet-dog-food-beef-vegetable.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "12.8 oz",
+          "upc": "0052742143101",
+          "sku": "5166485"
+        }
+      ],
+      "ingredients_raw": "Water, Beef, Pork Liver, Brown Rice, Carrots, Rice Starch, Wheat Flour, Potato Starch, Dried Beet Pulp, Pork Plasma, Potatoes, Dextrose, Chicken Fat, Green Peas, Spinach, Chicken Liver Flavor, Calcium Carbonate, Flaxseed, Soybean Oil, Potassium Chloride, Caramel color, Guar Gum, Sodium Pyrophosphate, Disodium Phosphate, Sodium Hexametaphosphate, minerals (Ferrous Sulfate, Zinc Oxide, Copper Proteinate, Manganese Sulfate, Potassium Iodide), Choline Chloride, vitamins (Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin D3 Supplement, Riboflavin Supplement, Folic Acid), L-Lysine, Taurine, Iron Oxide color",
+      "guaranteed_analysis": {
+        "moisture_max": 82.0,
+        "crude_protein_min": 4.0,
+        "crude_fat_min": 2.5,
+        "crude_fiber_max": 2.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "330 kcal/can"
+    },
+    {
+      "name": "Science Diet Savory Stew Adult Wet Dog Food - Chicken & Vegetable",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/hills-science-diet-savory-stew-adult-wet-dog-food---chicken-and-vegetable-128-oz-2762.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Science Diet",
+      "life_stage": "adult",
+      "source_id": "5166494",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-savory-stew-adult-wet-dog-food-chicken-vegetable.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "12.8 oz",
+          "upc": "0052742143002",
+          "sku": "5166494"
+        }
+      ],
+      "ingredients_raw": "Water, Chicken, Pork Liver, Brown Rice, Carrots, Modified Rice Starch, Wheat Flour, Potato Starch, Dried Beet Pulp, Dextrose, Egg Whites, Potatoes, Chicken Fat, Green Peas, Spinach, Pork Plasma, Hydrolyzed Chicken Flavor, Soybean Oil, Potassium Chloride, Tricalcium Phosphate, Calcium Carbonate, Guar Gum, minerals (Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Sodium Selenite, Cobalt Proteinate, Potassium Iodide), vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Ascorbic Acid (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin D3 Supplement, Riboflavin Supplement, Folic Acid), Choline Chloride, Sodium Pyrophosphate, Disodium Phosphate, Sodium Hexametaphosphate, L-Lysine, Magnesium Oxide, Taurine, Caramel color, Beta-Carotene",
+      "guaranteed_analysis": {
+        "moisture_max": 82.0,
+        "crude_protein_min": 4.0,
+        "crude_fat_min": 2.0,
+        "crude_fiber_max": 1.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "841"
+    },
+    {
+      "name": "Science Diet Savory Stew Puppy Wet Dog Food - Chicken & Vegetables",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/hills-science-diet-savory-stew-puppy-wet-dog-food---chicken-and-vegetables-128-oz-34795.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Science Diet",
+      "life_stage": "puppy",
+      "source_id": "5166489",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-savory-stew-puppy-wet-dog-food-chicken-vegetables.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "12.8 oz",
+          "upc": "0052742142807",
+          "sku": "5166489"
+        }
+      ],
+      "ingredients_raw": "Water, Chicken, Pork Liver, Brown Rice, Wheat Flour, Carrots, Modified Rice Starch, Potato Starch, Dried Beet Pulp, Pork Plasma, Potatoes, Dextrose, Green Peas, Tricalcium Phosphate, Chicken Liver Flavor, Spinach, Soybean Oil, Calcium Carbonate, Potassium Chloride, Guar Gum, Fish Oil, Choline Chloride, Sodium Pyrophosphate, Disodium Phosphate, Sodium Hexametaphosphate, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin D3 Supplement, Riboflavin Supplement, Folic Acid), minerals (Ferrous Sulfate, Zinc Oxide, Copper Proteinate, Manganese Sulfate, Potassium Iodide), L-Lysine, Taurine, Caramel color",
+      "guaranteed_analysis": {
+        "moisture_max": 82.0,
+        "crude_protein_min": 5.0,
+        "crude_fat_min": 2.0,
+        "crude_fiber_max": 1.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "851"
+    },
+    {
+      "name": "Science Diet Senior Vitality 7+ Senior Wet Dog Food - Chicken & Vegetable Stew",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/hills-science-diet-senior-vitality-7-senior-wet-dog-food---chicken-and-vegetable-stew-125-oz-75576.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Science Diet",
+      "life_stage": "senior",
+      "source_id": "5337798",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-senior-vitality-7-senior-wet-dog-food-chicken-vegetable-stew.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "12.5 oz",
+          "upc": "0052742011899",
+          "sku": "5337798"
+        }
+      ],
+      "ingredients_raw": "Chicken Broth, Chicken, Pork Liver, Rice, Carrots, Rice Starch, Green Peas, Dextrose, Egg Product, Sugar, Soybean Oil, Chicken Liver Flavor, Hydrolyzed Chicken Liver, Potassium Alginate, Calcium Chloride, Powdered Cellulose, Flaxseed, Choline Chloride, Fish Oil, Guar Gum, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Riboflavin Supplement, Vitamin D3 Supplement, Folic Acid), Dried Tomato Pomace, Dried Citrus Pulp, Spinach, Monosodium Phosphate, Dicalcium Phosphate, Calcium Lactate, Calcium Gluconate, Lipoic Acid, Sodium Tripolyphosphate, Magnesium Oxide, Taurine, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganese Sulfate, Calcium Iodate), L-Carnitine, Natural Flavors",
+      "guaranteed_analysis": {
+        "crude_protein_min": 3.0,
+        "crude_fat_min": 2.0,
+        "crude_fiber_max": 2.0,
+        "calcium_min": 0.18,
+        "phosphorus_min": 0.12,
+        "omega_3_min": 0.17,
+        "omega_6_min": 0.76
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "Protein                                       3.0%        4.6%        22.2%        5.6 g                 100 kcal"
+    },
+    {
+      "name": "Science Diet Sensitive Stomach & Skin Adult Dog Wet Food - Chicken & Vegetable Stew",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/hills-science-diet-sensitive-stomach-and-skin-adult-dog-wet-food---chicken-and-vegetable-stew-125-oz-82320.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Science Diet",
+      "life_stage": "adult",
+      "source_id": "5351201",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-sensitive-stomach-skin-adult-dog-wet-food-chicken-vegetable-stew.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "12.5 oz",
+          "upc": "0052742068534",
+          "sku": "5351201"
+        }
+      ],
+      "ingredients_raw": "Chicken Broth, Chicken, Pork Liver, Carrots, Rice, Turkey, Rice Starch, Chicken Liver Flavor, Green Peas, Natural Flavor, Dried Beet Pulp, Flaxseed, Potassium Alginate, Calcium Chloride, Soybean Oil, Guar Gum, Dicalcium Phosphate, Calcium Lactate, Calcium Gluconate, Sodium Tripolyphosphate, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Riboflavin Supplement, Vitamin D3 Supplement, Folic Acid), Magnesium Oxide, Taurine, minerals (Zinc Oxide, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate)",
+      "calorie_content": "280 kcal / 12.5 oz (354 g) can",
+      "guaranteed_analysis": {
+        "crude_protein_min": 28.7,
+        "crude_fat_min": 18.6,
+        "crude_fiber_max": 1.6,
+        "calcium_min": 0.88,
+        "phosphorus_min": 0.69,
+        "potassium_min": 0.86,
+        "sodium_min": 0.38,
+        "omega_3_min": 0.77,
+        "omega_6_min": 3.87
+      },
+      "guaranteed_analysis_basis": "dry-matter"
+    },
+    {
+      "name": "Science Diet Sensitive Stomach & Skin Adult Wet Dog Food - Salmon & Vegetable",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/hills-science-diet-sensitive-stomach-and-skin-adult-wet-dog-food---salmon-and-vegetable-128-oz-91860.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Science Diet",
+      "life_stage": "adult",
+      "source_id": "5210069",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-sensitive-stomach-skin-adult-wet-dog-food-salmon-vegetable.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "12.8 oz",
+          "upc": "0052742304502",
+          "sku": "5210069"
+        }
+      ],
+      "ingredients_raw": "Chicken Broth, Salmon, Carrots, Turkey, Potatoes, Green Beans, Potato Starch, Pea Protein, Sugar, Egg Whites, Chicken Fat, Dried Whey, Dried Beet Pulp, Soybean Oil, Chicken Liver Flavor, Dicalcium Phosphate, Carrageenan, Choline Chloride, Iodized Salt, Dried Apple Pomace, vitamins (Vitamin E Supplement, Ascorbic Acid (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Menadione Sodium Bisulfite Complex (source of Vitamin K), Pyridoxine Hydrochloride, Calcium Pantothenate, Vitamin B12 Supplement, Riboflavin Supplement, Vitamin A Supplement, Biotin, Folic Acid), Taurine, minerals (Zinc Oxide, Ferrous Sulfate, Copper Sulfate, Manganese Sulfate, Manganous Oxide, Calcium Iodate)",
+      "guaranteed_analysis": {
+        "moisture_max": 78.0,
+        "crude_protein_min": 4.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "309 kcal/can"
+    },
+    {
+      "name": "Science Diet Sensitive Stomach & Skin Adult Wet Dog Food - Turkey & Rice",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/hills-science-diet-sensitive-stomach-and-skin-adult-wet-dog-food---turkey-and-rice-125-oz-68835.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Science Diet",
+      "life_stage": "adult",
+      "source_id": "5286296",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-sensitive-stomach-skin-adult-wet-dog-food-turkey-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "12.5 oz",
+          "upc": "0052742021041",
+          "sku": "5286296"
+        }
+      ],
+      "ingredients_raw": "Chicken Broth, Turkey, Carrots, Pork Liver, Rice, Chicken, Rice Starch, Spinach, Green Peas, Chicken Liver Flavor, Flaxseed, Soybean Oil, Potassium Alginate, Powdered Cellulose, Calcium Chloride, Guar Gum, Dicalcium Phosphate, Calcium Lactate, Calcium Gluconate, L-Lysine, Monosodium Phosphate, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Riboflavin Supplement, Vitamin D3 Supplement, Folic Acid), Sodium Tripolyphosphate, Choline Chloride, Magnesium Oxide, Taurine, minerals (Zinc Oxide, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate)",
+      "guaranteed_analysis": {
+        "moisture_max": 86.0,
+        "crude_protein_min": 2.8,
+        "crude_fat_min": 1.9,
+        "crude_fiber_max": 2.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "253 kcal/can"
+    },
+    {
+      "name": "Science Diet Sensitive Stomach & Skin Puppy Wet Dog Food - Salmon & Vegetable Stew",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/hills-science-diet-sensitive-stomach-and-skin-puppy-wet-dog-food---salmon-and-vegetable-stew-125-oz-82319.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Science Diet",
+      "life_stage": "puppy",
+      "source_id": "5351200",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-sensitive-stomach-skin-puppy-wet-dog-food-salmon-vegetable-stew.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "12.5 oz",
+          "upc": "0052742069487",
+          "sku": "5351200"
+        }
+      ],
+      "ingredients_raw": "Chicken Broth, Pork Liver, Salmon, Carrots, Rice Starch, Rice, Chicken Fat, Potato Protein, Green Peas, Egg Whites, Potato Starch, Soybean Oil, Chicken Liver Flavor, Hydrolyzed Chicken Flavor, Dried Beet Pulp, Egg Yolks, Potassium Alginate, Calcium Chloride, Brewers Dried Yeast, Dicalcium Phosphate, Monosodium Phosphate, Potassium Citrate, Calcium Sulfate, Guar Gum, Sodium Tripolyphosphate, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Riboflavin Supplement, Folic Acid), minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Manganese Sulfate, Calcium Iodate, Sodium Selenite), Choline Chloride, Taurine, Magnesium Oxide, Thiamine Hydrochloride, Calcium Carbonate",
+      "calorie_content": "309 kcal / 12.5 oz (354 g) can",
+      "guaranteed_analysis": {
+        "crude_protein_min": 31.5,
+        "crude_fat_min": 21.6,
+        "crude_fiber_max": 1.1,
+        "calcium_min": 1.21,
+        "phosphorus_min": 1.04,
+        "potassium_min": 0.93,
+        "sodium_min": 0.6,
+        "dha_min": 0.222,
+        "omega_3_min": 1.0,
+        "omega_6_min": 4.92
+      },
+      "guaranteed_analysis_basis": "dry-matter"
+    },
+    {
+      "name": "Science Diet 7+ Senior Dry Dog Food - Chicken, Barley & Brown Rice Chicken Meal",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/hills-science-diet-7-senior-dry-dog-food---chicken-barley-and-brown-rice-650.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Science Diet",
+      "life_stage": "senior",
+      "source_id": "5182759",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-7-senior-dry-dog-food-chicken-barley-brown-rice-chicken-meal.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742204208",
+          "sku": "5182759"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742020495",
+          "sku": "5286676"
+        }
+      ],
+      "ingredients_raw": "Chicken Meal, Cracked Pearled Barley, Brown Rice, Whole Grain Wheat, Whole Grain Corn, Whole Grain Sorghum, Whole Grain Oats, Chicken Fat, Dried Beet Pulp, Chicken Liver Flavor, Corn Gluten Meal, Soybean Oil, Lactic Acid, Potassium Chloride, Flaxseed, Calcium Carbonate, Iodized Salt, L-Lysine, Choline Chloride, DL-Methionine, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement), minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Taurine, Oat Fiber, L-Carnitine, Mixed Tocopherols for freshness, Natural Flavors, Beta-Carotene, Apples, Broccoli, Carrots, Cranberries, Green Peas",
+      "guaranteed_analysis": {
+        "moisture_max": 10.0,
+        "crude_protein_min": 15.5,
+        "crude_fat_min": 10.5,
+        "crude_fiber_max": 4.0,
+        "omega_6_min": 2.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3619 kcal/kg, 359 kcal/cup"
+    },
+    {
+      "name": "Science Diet 7+ Senior Dry Dog Food - Chicken, Barley & Brown Rice Chicken Meal",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/hills-science-diet-7-senior-dry-dog-food---chicken-barley-and-brown-rice-90027.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Science Diet",
+      "life_stage": "senior",
+      "source_id": "5364789",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-7-senior-dry-dog-food-chicken-barley-brown-rice-chicken-meal.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742073569",
+          "sku": "5364789"
+        }
+      ],
+      "ingredients_raw": "Chicken Meal, Cracked Pearled Barley, Brown Rice, Whole Grain Wheat, Whole Grain Corn, Whole Grain Sorghum, Whole Grain Oats, Chicken Fat, Dried Beet Pulp, Chicken Liver Flavor, Corn Gluten Meal, Soybean Oil, Lactic Acid, Potassium Chloride, Flaxseed, Calcium Carbonate, Iodized Salt, L-Lysine, Choline Chloride, DL-Methionine, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin ASupplement, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement), minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Taurine, Oat Fiber, L-Carnitine, Mixed Tocopherols for freshness, Natural Flavors, Beta-Carotene, Apples, Broccoli, Carrots, Cranberries, Green Peas",
+      "guaranteed_analysis": {
+        "moisture_max": 10.0,
+        "crude_protein_min": 15.5,
+        "crude_fat_min": 10.5,
+        "crude_fiber_max": 4.0,
+        "omega_6_min": 2.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3619 kcal/kg, 359 kcal/cup"
+    },
+    {
+      "name": "Science Diet Adult Dog Dry Food - Salmon & Brown Rice Recipe",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/hills-science-diet-adult-dog-dry-food---salmon-and-brown-rice-recipe-82339.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Science Diet",
+      "life_stage": "adult",
+      "source_id": "5351451",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-adult-dog-dry-food-salmon-brown-rice-recipe.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742068602",
+          "sku": "5351451"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742068619",
+          "sku": "5351452"
+        }
+      ],
+      "ingredients_raw": "Salmon, Cracked Pearled Barley, Brown Rice, Whole Grain Corn, Chicken Meal, Soybean Meal, Corn Protein Meal, Whole Grain Sorghum, Chicken Fat, Flaxseed, Chicken Liver Flavor, Pea Fiber, Dried Beet Pulp, Soybean Oil, Lactic Acid, Pork Liver Flavor, Calcium Carbonate, Potassium Chloride, Iodized Salt, Choline Chloride, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement), Taurine, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Mixed Tocopherols for freshness, Natural Flavors, Beta-Carotene",
+      "calorie_content": "358",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 15.5,
+        "crude_fiber_max": 3.7,
+        "calcium_min": 0.99,
+        "phosphorus_min": 0.71,
+        "potassium_min": 0.85,
+        "sodium_min": 0.36,
+        "omega_3_min": 1.25,
+        "omega_6_min": 3.73
+      },
+      "guaranteed_analysis_basis": "dry-matter"
+    },
+    {
+      "name": "Science Diet Adult Dry Dog Food - Chicken & Barley Chicken",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/hills-science-diet-adult-dry-dog-food---chicken-and-barley-644.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Science Diet",
+      "life_stage": "adult",
+      "source_id": "1011039",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-adult-dry-dog-food-chicken-barley-chicken.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742817804",
+          "sku": "1011039"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742020419",
+          "sku": "5286304"
+        }
+      ],
+      "ingredients_raw": "Chicken, Cracked Pearled Barley, Whole Grain Wheat, Whole Grain Corn, Whole Grain Sorghum, Corn Gluten Meal, Soybean Meal, Chicken Fat, Brewers Rice, Chicken Liver Flavor, Chicken Meal, Dried Beet Pulp, Soybean Oil, Pork Flavor, Lactic Acid, Calcium Carbonate, Flaxseed, Potassium Chloride, Choline Chloride, Iodized Salt, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement), Taurine, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Oat Fiber, Mixed Tocopherols for freshness, Natural Flavors, Beta-Carotene, Apples, Broccoli, Carrots, Cranberries, Green Peas",
+      "guaranteed_analysis": {
+        "moisture_max": 10.0,
+        "crude_protein_min": 20.5,
+        "crude_fat_min": 12.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3619 kcal/kg, 359 kcal/cup"
+    },
+    {
+      "name": "Science Diet Adult Dry Dog Food - Chicken & Barley Chicken",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/hills-science-diet-adult-dry-dog-food---chicken-and-barley-90020.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Science Diet",
+      "life_stage": "adult",
+      "source_id": "5364780",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-adult-dry-dog-food-chicken-barley-chicken.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742073798",
+          "sku": "5364780"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742073866",
+          "sku": "5364785"
+        }
+      ],
+      "ingredients_raw": "Chicken, Whole Grain Wheat, Cracked Pearled Barley, Whole Grain Sorghum, Whole Grain Corn, Corn Gluten Meal, Chicken Meal, Chicken Fat, Chicken Liver Flavor, Dried Beet Pulp, Soybean Oil, Pork Flavor, Lactic Acid, Flaxseed, Potassium Chloride, Choline Chloride, Iodized Salt, Calcium Carbonate, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement), minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Taurine, Oat Fiber, Mixed Tocopherols for freshness, Natural Flavors, Beta-Carotene, Apples, Broccoli, Carrots, Cranberries, Green Peas",
+      "guaranteed_analysis": {
+        "moisture_max": 10.0,
+        "crude_protein_min": 20.5,
+        "crude_fat_min": 12.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3619 kcal/kg, 359 kcal/cup"
+    },
+    {
+      "name": "Science Diet Adult Dry Dog Food - Lamb & Brown Rice",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/hills-science-diet-adult-dry-dog-food---lamb-and-brown-rice-649.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Science Diet",
+      "life_stage": "adult",
+      "source_id": "5154795",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-adult-dry-dog-food-lamb-brown-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742855608",
+          "sku": "5154795"
+        }
+      ],
+      "ingredients_raw": "Lamb Meal, Brown Rice, Brewers Rice, Whole Grain Sorghum, Whole Grain Wheat, Corn Gluten Meal, Chicken Fat, Cracked Pearled Barley, Chicken Liver Flavor, Dried Beet Pulp, Soybean Oil, Flaxseed, Lactic Acid, Pork Liver Flavor, Potassium Chloride, Iodized Salt, L-Lysine, Choline Chloride, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement), Calcium Carbonate, Taurine, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Mixed Tocopherols for freshness, Natural Flavors, Beta-Carotene",
+      "guaranteed_analysis": {
+        "moisture_max": 10.0,
+        "crude_protein_min": 19.5,
+        "crude_fat_min": 12.5,
+        "crude_fiber_max": 3.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3721 kcal/kg, 369 kcal/cup"
+    },
+    {
+      "name": "Science Diet Health Mobility Adult Dog Food",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/hills-science-diet-health-mobility-adult-dog-food-3380.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Science Diet",
+      "life_stage": "adult",
+      "source_id": "5154438",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-health-mobility-adult-dog-food.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742921952",
+          "sku": "5154438"
+        }
+      ],
+      "ingredients_raw": "Chicken Meal, Brewers Rice, Whole Grain Sorghum, Brown Rice, Whole Grain Wheat, Cracked Pearled Barley, Soybean Meal, Dried Beet Pulp, Chicken Fat, Chicken Liver Flavor, Soybean Oil, Corn Gluten Meal, Fish Oil, Flaxseed, Lactic Acid, Pork Liver Flavor, Potassium Chloride, Choline Chloride, DL-Methionine, Iodized Salt, Calcium Carbonate, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement), minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Taurine, L-Lysine, Oat Fiber, Mixed Tocopherols for freshness, Natural Flavors, L-Carnitine, Beta-Carotene, Apples, Broccoli, Carrots, Cranberries, Green Peas",
+      "guaranteed_analysis": {
+        "crude_protein_min": 17.0,
+        "crude_fat_min": 10.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 10.0,
+        "omega_3_min": 1.0,
+        "epa_min": 0.2,
+        "glucosamine_min": 250,
+        "chondroitin_min": 750
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3617 kcal/kg, 359 kcal/cup"
+    },
+    {
+      "name": "Science Diet Healthy Mobility Large Breed Adult Dry Dog Food - Chicken Meal, Rice & Barley",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/hills-science-diet-healthy-mobility-large-breed-adult-dry-dog-food---chicken-meal-rice-and-barley-651.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Science Diet",
+      "life_stage": "adult",
+      "breed_size": "Large",
+      "source_id": "5154830",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-healthy-mobility-large-breed-adult-dry-dog-food-chicken-meal-rice-b.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742923505",
+          "sku": "5154830"
+        }
+      ],
+      "ingredients_raw": "Chicken Meal, Cracked Pearled Barley, Brown Rice, Brewers Rice, Whole Grain Wheat, Whole Grain Sorghum, Dried Beet Pulp, Soybean Meal, Chicken Fat, Corn Protein Meal, Chicken Liver Flavor, Soybean Oil, Fish Oil, Flaxseed, Lactic Acid, Pork Liver Flavor, Potassium Chloride, DL-Methionine, Iodized Salt, Calcium Carbonate, Choline Chloride, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement), L-Lysine, Taurine, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Mixed Tocopherols for freshness, Natural Flavors, L-Carnitine, Beta-Carotene",
+      "calorie_content": "361 kcal/cup",
+      "guaranteed_analysis": {
+        "crude_protein_min": 21.9,
+        "crude_fat_min": 14.8,
+        "crude_fiber_max": 2.3,
+        "calcium_min": 0.92,
+        "phosphorus_min": 0.68,
+        "potassium_min": 0.86,
+        "sodium_min": 0.31,
+        "omega_3_min": 1.3,
+        "omega_6_min": 3.79,
+        "glucosamine_min": 609.0,
+        "chondroitin_min": 1026.0,
+        "l_carnitine_min": 328.1
+      },
+      "guaranteed_analysis_basis": "dry-matter"
+    },
+    {
+      "name": "Science Diet Large Breed 6+ Senior Dry Dog Food - Chicken Recipe",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/hills-science-diet-large-breed-6-senior-dry-dog-food---chicken-recipe-90953.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Science Diet",
+      "life_stage": "senior",
+      "breed_size": "Large",
+      "source_id": "5364776",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-large-breed-6-senior-dry-dog-food-chicken-recipe.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742073651",
+          "sku": "5364776"
+        }
+      ],
+      "ingredients_raw": "Chicken Meal, Cracked Pearled Barley, Brewers Rice, Whole Grain Wheat, Whole Grain Corn, Whole Grain Sorghum, Whole Grain Oats, Chicken Fat, Dried Beet Pulp, Soybean Meal, Chicken Liver Flavor, Soybean Oil, Lactic Acid, Flaxseed, Potassium Chloride, Calcium Carbonate, Iodized Salt, Choline Chloride, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement), L-Lysine, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Taurine, DL-Methionine, Oat Fiber, Mixed Tocopherols for freshness, Natural Flavors, L-Carnitine, Beta-Carotene, Apples, Broccoli, Carrots, Cranberries, Green Peas",
+      "guaranteed_analysis": {
+        "moisture_max": 9.5,
+        "crude_protein_min": 16.0,
+        "crude_fat_min": 11.0,
+        "crude_fiber_max": 4.0,
+        "calcium_min": 0.7,
+        "omega_6_min": 2.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3619 kcal/kg, 359 kcal/cup"
+    },
+    {
+      "name": "Science Diet Large Breed Adult Dry Dog Food - Chicken & Barley",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/hills-science-diet-large-breed-adult-dry-dog-food---chicken-and-barley-90023.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Science Diet",
+      "life_stage": "adult",
+      "breed_size": "Large",
+      "source_id": "5364784",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-large-breed-adult-dry-dog-food-chicken-barley.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742073736",
+          "sku": "5364784"
+        }
+      ],
+      "ingredients_raw": "Chicken, Whole Grain Wheat, Cracked Pearled Barley, Whole Grain Sorghum, Whole Grain Corn, Corn Gluten Meal, Chicken Meal, Chicken Fat, Chicken Liver Flavor, Dried Beet Pulp, Soybean Oil, Pork Flavor, Lactic Acid, Flaxseed, Potassium Chloride, Choline Chloride, Iodized Salt, Calcium Carbonate, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement), minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Taurine, Oat Fiber, Mixed Tocopherols for freshness, Natural Flavors, Beta-Carotene, Apples, Broccoli, Carrots, Cranberries, Green Peas",
+      "guaranteed_analysis": {
+        "moisture_max": 10.0,
+        "crude_protein_min": 20.5,
+        "crude_fat_min": 12.0,
+        "crude_fiber_min": 3.0,
+        "omega_6_min": 2.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3635 kcal/kg, 361 kcal/cup"
+    },
+    {
+      "name": "Science Diet Large Breed Adult Dry Dog Food - Lamb & Brown Rice",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/hills-science-diet-large-breed-adult-dry-dog-food---lamb-and-brown-rice-90024.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Science Diet",
+      "life_stage": "adult",
+      "breed_size": "Large",
+      "source_id": "5364775",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-large-breed-adult-dry-dog-food-lamb-brown-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742071879",
+          "sku": "5364775"
+        }
+      ],
+      "ingredients_raw": "Lamb Meal, Brown Rice, Whole Grain Wheat, Brewers Rice, Corn Gluten Meal, Whole Grain Sorghum, Cracked Pearled Barley, Chicken Fat, Chicken Liver Flavor, Soybean Oil, Dried Beet Pulp, Lactic Acid, Potassium Chloride, Flaxseed, Iodized Salt, Choline Chloride, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement), Calcium Carbonate, L-Lysine, Taurine, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), L-Carnitine, Mixed Tocopherols for freshness, Natural Flavors, Beta-Carotene",
+      "guaranteed_analysis": {
+        "moisture_max": 9.5,
+        "crude_protein_min": 19.5,
+        "crude_fat_min": 12.5,
+        "calcium_min": 0.8
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3721 kcal/kg, 369 kcal/cup"
+    },
+    {
+      "name": "Science Diet Large Breed Puppy Dry Dog Food - Chicken & Oat",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/hills-science-diet-large-breed-puppy-dry-dog-food---chicken-and-oat-90470.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Science Diet",
+      "life_stage": "puppy",
+      "breed_size": "Large",
+      "source_id": "5364783",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-large-breed-puppy-dry-dog-food-chicken-oat.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742072203",
+          "sku": "5364783"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742072135",
+          "sku": "5364798"
+        }
+      ],
+      "ingredients_raw": "Chicken, Brown Rice, Whole Grain Oats, Chicken Meal, Cracked Pearled Barley, Chicken Fat, Pea Protein, Brewers Rice, Whole Grain Wheat, Soybean Meal, Whole Grain Corn, Chicken Liver Flavor, Ground Pecan Shells, Lactic Acid, Pork Liver Flavor, Dicalcium Phosphate, Flaxseed, Dried Beet Pulp, Fish Oil, Iodized Salt, Dried Citrus Pulp, Potassium Chloride, Choline Chloride, Pressed Cranberries, Calcium Carbonate, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement), DL-Methionine, L-Threonine, Taurine, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), L-Tryptophan, Mixed Tocopherols for freshness, Natural Flavors, L-Carnitine, Beta-Carotene",
+      "guaranteed_analysis": {
+        "moisture_max": 10.0,
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 11.0,
+        "crude_fiber_max": 3.0,
+        "calcium_min": 0.8
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "Protein 24.2 % 26.3 % 6.7 g / 100 kcal"
+    },
+    {
+      "name": "Science Diet Large Breed Puppy Dry Dog Food - Lamb & Brown Rice",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/hills-science-diet-large-breed-puppy-dry-dog-food---lamb-and-brown-rice-90472.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Science Diet",
+      "life_stage": "puppy",
+      "breed_size": "Large",
+      "source_id": "5364790",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-large-breed-puppy-dry-dog-food-lamb-brown-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742072180",
+          "sku": "5364790"
+        }
+      ],
+      "ingredients_raw": "Lamb Meal, Brown Rice, Cracked Pearled Barley, Whole Grain Oats, Chicken Fat, Pea Protein, Whole Grain Wheat, Brewers Rice, Wheat Gluten, Hydrolyzed Chicken Flavor, Soybean Meal, Egg Product, Ground Pecan Shells, Lactic Acid, Pork Liver Flavor, Soybean Oil, Flaxseed, Dried Beet Pulp, Dried Citrus Pulp, Fish Oil, Potassium Chloride, Iodized Salt, L-Lysine, Choline Chloride, Pressed Cranberries, L-Threonine, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement), Taurine, Sodium Tripolyphosphate, DL-Methionine, L-Tryptophan, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Mixed Tocopherols for freshness, Natural Flavors, L-Carnitine, Beta-Carotene",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.7,
+        "crude_fat_min": 16.4,
+        "crude_fiber_max": 2.2,
+        "calcium_min": 1.05,
+        "phosphorus_min": 0.84
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "Protein 25.7 % 27.9 % 6.9 g / 100 kcal"
+    },
+    {
+      "name": "Science Diet Light Adult Dry Dog Food - Chicken & Barley",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/hills-science-diet-light-adult-dry-dog-food---chicken-and-barley-53091.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Science Diet",
+      "life_stage": "adult",
+      "source_id": "5286299",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-light-adult-dry-dog-food-chicken-barley.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742022147",
+          "sku": "5286299"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742022192",
+          "sku": "5286679"
+        }
+      ],
+      "ingredients_raw": "Chicken Meal, Cracked Pearled Barley, Pea Fiber, Whole Grain Wheat, Whole Grain Corn, Corn Gluten Meal, Whole Grain Sorghum, Powdered Cellulose, Chicken Liver Flavor, Soybean Oil, Dried Beet Pulp, Flaxseed, Lactic Acid, Pork Flavor, Potassium Chloride, L-Lysine, Iodized Salt, Choline Chloride, Calcium Carbonate, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement), minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Taurine, Oat Fiber, Mixed Tocopherols for freshness, L-Carnitine, Natural Flavors, Beta-Carotene, Apples, Broccoli, Carrots, Cranberries, Green Peas",
+      "guaranteed_analysis": {
+        "moisture_max": 10.5,
+        "crude_protein_min": 20.0,
+        "crude_fat_min": 5.5,
+        "crude_fiber_max": 14.0,
+        "omega_6_min": 1.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3619 kcal/kg, 359 kcal/cup"
+    },
+    {
+      "name": "Science Diet Light Large Breed Adult Dry Dog Food - Chicken & Barley",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/hills-science-diet-light-large-breed-adult-dry-dog-food---chicken-and-barley-53092.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Science Diet",
+      "life_stage": "adult",
+      "breed_size": "Large",
+      "source_id": "5286681",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-light-large-breed-adult-dry-dog-food-chicken-barley.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742022215",
+          "sku": "5286681"
+        }
+      ],
+      "ingredients_raw": "Chicken Meal, Cracked Pearled Barley, Pea Fiber, Whole Grain Wheat, Whole Grain Corn, Corn Gluten Meal, Whole Grain Sorghum, Powdered Cellulose, Chicken Liver Flavor, Soybean Oil, Dried Beet Pulp, Flaxseed, Lactic Acid, Pork Liver Flavor, Potassium Chloride, L-Lysine, Iodized Salt, Choline Chloride, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Biotin, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement), Calcium Carbonate, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Taurine, Oat Fiber, Mixed Tocopherols for freshness, L-Carnitine, Natural Flavors, Beta-Carotene, Apples, Broccoli, Carrots, Cranberries, Green Peas",
+      "guaranteed_analysis": {
+        "moisture_max": 10.5,
+        "crude_protein_min": 20.0,
+        "crude_fat_min": 5.5,
+        "crude_fiber_max": 14.0,
+        "omega_6_min": 1.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "2961 kcal/kg, 243 kcal/cup"
+    },
+    {
+      "name": "Science Diet Light Small Breed Adult Dry Dog Food - Chicken Meal & Barley",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/hills-science-diet-light-small-breed-adult-dry-dog-food---chicken-meal-and-barley-668.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Science Diet",
+      "life_stage": "adult",
+      "breed_size": "Small",
+      "source_id": "5151447",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-light-small-breed-adult-dry-dog-food-chicken-meal-barley.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742910109",
+          "sku": "5151448"
+        }
+      ],
+      "ingredients_raw": "Chicken Meal, Cracked Pearled Barley, Pea Fiber, Brown Rice, Whole Grain Corn, Corn Protein Meal, Powdered Cellulose, Whole Grain Oats, Soybean Meal, Whole Grain Sorghum, Brewers Rice, Chicken Liver Flavor, Soybean Oil, Pea Protein, Dried Beet Pulp, Flaxseed, Lactic Acid, Pork Liver Flavor, Potassium Chloride, Calcium Carbonate, Iodized Salt, Fructooligosaccharides (FOS), vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement), Choline Chloride, L-Lysine, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Taurine, Mixed Tocopherols for freshness, Natural Flavors, L-Carnitine, Beta-Carotene",
+      "guaranteed_analysis": {
+        "crude_protein_min": 20.5,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 14.0,
+        "calcium_min": 0.97,
+        "phosphorus_min": 0.63
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "261 kcal per 8 oz cup"
+    },
+    {
+      "name": "Science Diet Oral Care Adult Dry Dog Food - Chicken, Brown Rice & Barley",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/hills-science-diet-oral-care-adult-dry-dog-food---chicken-brown-rice-and-barley-658.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Science Diet",
+      "life_stage": "adult",
+      "source_id": "5141768",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-oral-care-adult-dry-dog-food-chicken-brown-rice-barley.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742928258",
+          "sku": "5141768"
+        }
+      ],
+      "ingredients_raw": "Chicken, Whole Grain Wheat, Powdered Cellulose, Brown Rice, Whole Grain Corn, Corn Gluten Meal, Chicken Fat, Cracked Pearled Barley, Chicken Meal, Whole Grain Sorghum, Wheat Gluten, Chicken Liver Flavor, Soybean Mill Run, Pork Liver Flavor, Soybean Oil, Lactic Acid, Fish Oil, Potassium Chloride, Calcium Carbonate, Iodized Salt, Choline Chloride, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement), Dicalcium Phosphate, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Taurine, Oat Fiber, Mixed Tocopherols for freshness, Natural Flavors, Beta-Carotene, Apples, Broccoli, Carrots, Cranberries, Green Peas",
+      "guaranteed_analysis": {
+        "moisture_max": 10.0,
+        "crude_protein_min": 20.0,
+        "crude_fat_min": 11.0,
+        "crude_fiber_max": 12.0,
+        "omega_6_min": 2.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3709 kcal/kg, 347 kcal/cup"
+    },
+    {
+      "name": "Science Diet Oral Care Small & Mini Adult Dog Dry Food - Chicken, Rice & Barley",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/hills-science-diet-oral-care-small-and-mini-adult-dog-dry-food---chicken-rice-and-barley-76207.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Science Diet",
+      "life_stage": "adult",
+      "source_id": "5339415",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-oral-care-small-mini-adult-dog-dry-food-chicken-rice-barley.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742060699",
+          "sku": "5339415"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742060705",
+          "sku": "5339416"
+        }
+      ],
+      "ingredients_raw": "Chicken, Whole Grain Wheat, Powdered Cellulose, Brown Rice, Whole Grain Corn, Corn Gluten Meal, Chicken Fat, Cracked Pearled Barley, Chicken Meal, Whole Grain Sorghum, Wheat Gluten, Chicken Liver Flavor, Soybean Mill Run, Pork Liver Flavor, Soybean Oil, Lactic Acid, Fish Oil, Potassium Chloride, Dicalcium Phosphate, Calcium Carbonate, Iodized Salt, Choline Chloride, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement), minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Taurine, Oat Fiber, Mixed Tocopherols for freshness, Natural Flavors, Beta-Carotene, Apples, Broccoli, Carrots, Cranberries, Green Peas",
+      "guaranteed_analysis": {
+        "crude_protein_min": 20.0,
+        "crude_fat_min": 11.0,
+        "crude_fiber_max": 13.0,
+        "calcium_min": 0.87,
+        "phosphorus_min": 0.64
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "Kcal Per 8 oz Cup 272"
+    },
+    {
+      "name": "Science Diet Perfect Digestion 7+ Senior Dry Dog Food - Chicken, Whole Oats & Brown Rice",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/hills-science-diet-perfect-digestion-7-senior-dry-dog-food---chicken-whole-oats-and-brown-rice-61512.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Science Diet",
+      "life_stage": "senior",
+      "source_id": "5305853",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-perfect-digestion-7-senior-dry-dog-food-chicken-whole-oats-brown-ri.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742041346",
+          "sku": "5305853"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742041384",
+          "sku": "5305855"
+        }
+      ],
+      "ingredients_raw": "Chicken, Cracked Pearled Barley, Whole Grain Oats, Brown Rice, Brewers Rice, Whole Grain Corn, Corn Protein Meal, Chicken Meal, Chicken Fat, Chicken Liver Flavor, Pork Liver Flavor, Soybean Oil, Ground Pecan Shells, Lactic Acid, Potassium Chloride, Flaxseed, Dried Beet Pulp, Calcium Carbonate, Dried Citrus Pulp, Iodized Salt, Dicalcium Phosphate, Choline Chloride, Pressed Cranberries, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement), Pumpkin, Fish Oil, DL-Methionine, Taurine, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Mixed Tocopherols for freshness, Natural Flavors, L-Carnitine, Beta-Carotene",
+      "guaranteed_analysis": {
+        "crude_fiber_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3559 kcal/kg"
+    },
+    {
+      "name": "Science Diet Perfect Digestion 7+ Senior Dry Dog Food - Small Bites, Chicken",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/hills-science-diet-perfect-digestion-7-senior-dry-dog-food---small-bites-chicken-61786.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Science Diet",
+      "life_stage": "senior",
+      "source_id": "5305857",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-perfect-digestion-7-senior-dry-dog-food-small-bites-chicken.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742041377",
+          "sku": "5305857"
+        }
+      ],
+      "ingredients_raw": "Chicken, Cracked Pearled Barley, Whole Grain Oats, Brown Rice, Brewers Rice, Whole Grain Corn, Corn Gluten Meal, Chicken Meal, Chicken Fat, Chicken Liver flavour, Pork Liver flavour, Soybean Oil, Ground Pecan Shells, Lactic Acid, Potassium Chloride, Flaxseed, Dried Beet Pulp, Calcium Carbonate, Dried Citrus Pulp, Iodized Salt, Dicalcium Phosphate, Choline Chloride, Pressed Cranberries, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement), Pumpkin, Fish Oil, DL-Methionine, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Taurine, Mixed Tocopherols for freshness, Natural flavours, L-Carnitine, Beta-Carotene",
+      "calorie_content": "3559 kcal/kg",
+      "guaranteed_analysis": {
+        "crude_protein_min": 21.1,
+        "crude_fat_min": 12.8,
+        "crude_fiber_max": 2.2,
+        "calcium_min": 0.91,
+        "phosphorus_min": 0.65,
+        "potassium_min": 0.84,
+        "sodium_min": 0.33,
+        "omega_3_min": 0.51,
+        "omega_6_min": 3.79,
+        "glucosamine_min": 286.0,
+        "chondroitin_min": 802.0,
+        "l_carnitine_min": 350.8
+      },
+      "guaranteed_analysis_basis": "dry-matter"
+    },
+    {
+      "name": "Science Diet Perfect Digestion Adult Dry Dog Food - Chicken & Brown Rice",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/hills-science-diet-perfect-digestion-adult-dry-dog-food---chicken-and-brown-rice-59971.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Science Diet",
+      "life_stage": "adult",
+      "source_id": "5303197",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-perfect-digestion-adult-dry-dog-food-chicken-brown-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742038292",
+          "sku": "5303197"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742038285",
+          "sku": "5303198"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742038278",
+          "sku": "5303199"
+        }
+      ],
+      "ingredients_raw": "Chicken, Cracked Pearled Barley, Brown Rice, Brewers Rice, Whole Grain Oats, Whole Grain Corn, Corn Gluten Meal, Chicken Meal, Chicken Fat, Chicken Liver flavour, Pork Liver flavour, Ground Pecan Shells, Soybean Oil, Lactic Acid, Potassium Chloride, Flaxseed, Dried Beet Pulp, Dried Citrus Pulp, Iodized Salt, Choline Chloride, Calcium Carbonate, Dicalcium Phosphate, Fish Oil, Pressed Cranberries, Pumpkin, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement), minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Taurine, Mixed Tocopherols for freshness, Natural flavours, Beta-Carotene",
+      "guaranteed_analysis": {
+        "moisture_max": 10.0,
+        "crude_protein_min": 20.0,
+        "crude_fat_min": 11.0,
+        "crude_fiber_max": 4.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3709 kcal/kg, 347 kcal/cup"
+    },
+    {
+      "name": "Science Diet Perfect Digestion Adult Dry Dog Food - Salmon, Brown Rice & Whole Oats",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/hills-science-diet-perfect-digestion-adult-dry-dog-food---salmon-brown-rice-and-whole-oats-61516.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Science Diet",
+      "life_stage": "adult",
+      "source_id": "5305848",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-perfect-digestion-adult-dry-dog-food-salmon-brown-rice-whole-oats.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742041421",
+          "sku": "5305848"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742041391",
+          "sku": "5305849"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742041414",
+          "sku": "5305856"
+        }
+      ],
+      "ingredients_raw": "Salmon, Cracked Pearled Barley, Whole Grain Oats, Brown Rice, Whole Grain Corn, Corn Gluten Meal, Chicken Meal, Chicken Fat, Chicken Liver flavour, Pork Liver flavour, Ground Pecan Shells, Lactic Acid, Potassium Chloride, Flaxseed, Dried Beet Pulp, Dried Citrus Pulp, Soybean Oil, Calcium Carbonate, Choline Chloride, Iodized Salt, Dicalcium Phosphate, Pressed Cranberries, Pumpkin, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement), Taurine, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Mixed Tocopherols for freshness, Natural flavours, Beta-Carotene",
+      "calorie_content": "3662 kcal/kg",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 2.3,
+        "calcium_min": 0.84,
+        "phosphorus_min": 0.71,
+        "potassium_min": 0.8,
+        "sodium_min": 0.4,
+        "omega_3_min": 0.52,
+        "omega_6_min": 3.19
+      },
+      "guaranteed_analysis_basis": "dry-matter"
+    },
+    {
+      "name": "Science Diet Perfect Digestion Large Breed Adult Dry Dog Food - Chicken & Brown Rice",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/hills-science-diet-perfect-digestion-large-breed-adult-dry-dog-food---chicken-and-brown-rice-61514.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Science Diet",
+      "life_stage": "adult",
+      "breed_size": "Large",
+      "source_id": "5305851",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-perfect-digestion-large-breed-adult-dry-dog-food-chicken-brown-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742041339",
+          "sku": "5305851"
+        }
+      ],
+      "ingredients_raw": "Chicken, Cracked Pearled Barley, Brown Rice, Brewers Rice, Whole Grain Oats, Whole Grain Corn, Corn Gluten Meal, Chicken Meal, Chicken Fat, Chicken Liver flavour, Pork Liver flavour, Ground Pecan Shells, Soybean Oil, Lactic Acid, Potassium Chloride, Flaxseed, Dried Beet Pulp, Dried Citrus Pulp, Iodized Salt, Choline Chloride, Calcium Carbonate, Dicalcium Phosphate, Fish Oil, Pressed Cranberries, Pumpkin, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement), minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Taurine, Mixed Tocopherols for freshness, Natural flavours, Beta-Carotene",
+      "calorie_content": "3620 kcal/kg",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.1,
+        "crude_fat_min": 14.3,
+        "crude_fiber_max": 2.1,
+        "calcium_min": 0.95,
+        "phosphorus_min": 0.75,
+        "potassium_min": 0.96,
+        "sodium_min": 0.37,
+        "omega_3_min": 0.52,
+        "omega_6_min": 3.66,
+        "glucosamine_min": 464.0,
+        "chondroitin_min": 1179.0,
+        "l_carnitine_min": 20.6
+      },
+      "guaranteed_analysis_basis": "dry-matter"
+    },
+    {
+      "name": "Science Diet Perfect Digestion Small & Mini Adult Dog Dry Food - Chicken & Brown Rice Recipe",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/hills-science-diet-perfect-digestion-small-and-mini-adult-dog-dry-food---chicken-and-brown-rice-recipe-82349.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Science Diet",
+      "life_stage": "adult",
+      "source_id": "5351476",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-perfect-digestion-small-mini-adult-dog-dry-food-chicken-brown-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742068886",
+          "sku": "5351476"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742068879",
+          "sku": "5351477"
+        }
+      ],
+      "ingredients_raw": "Chicken, Brown Rice, Cracked Pearled Barley, Brewers Rice, Corn Protein Meal, Whole Grain Corn, Chicken Meal, Chicken Fat, Whole Grain Oats, Soybean Meal, Chicken Liver Flavor, Pork Liver Flavor, Soybean Oil, Ground Pecan Shells, Lactic Acid, Flaxseed, Dried Beet Pulp, Dried Citrus Pulp, Potassium Chloride, Choline Chloride, Fish Oil, Pressed Cranberries, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement), Pumpkin, Iodized Salt, Calcium Carbonate, Taurine, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Mixed Tocopherols for freshness, Natural Flavors, Beta-Carotene",
+      "guaranteed_analysis": {
+        "crude_fiber_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "347"
+    },
+    {
+      "name": "Science Diet Perfect Digestion Small Bites Adult Dry Dog Food - Chicken, Whole Oats & Rice",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/hills-science-diet-perfect-digestion-small-bites-adult-dry-dog-food---chicken-whole-oats-and-rice-61773.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Science Diet",
+      "life_stage": "adult",
+      "source_id": "5305850",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-perfect-digestion-small-bites-adult-dry-dog-food-chicken-whole-oats.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742041285",
+          "sku": "5305850"
+        }
+      ],
+      "ingredients_raw": "Chicken, Cracked Pearled Barley, Brown Rice, Brewers Rice, Whole Grain Oats, Whole Grain Corn, Corn Gluten Meal, Chicken Meal, Chicken Fat, Chicken Liver Flavor, Pork Liver Flavor, Ground Pecan Shells, Soybean Oil, Lactic Acid, Potassium Chloride, Flaxseed, Dried Beet Pulp, Dried Citrus Pulp, Iodized Salt, Choline Chloride, Calcium Carbonate, Dicalcium Phosphate, Fish Oil, Pressed Cranberries, Pumpkin, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement), minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Taurine, Mixed Tocopherols for freshness, Natural Flavors, Beta-Carotene",
+      "calorie_content": "3620 kcal/kg",
+      "guaranteed_analysis": {
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 14.5,
+        "crude_fiber_max": 2.1,
+        "moisture_max": 10.0
+      },
+      "guaranteed_analysis_basis": "as-fed"
+    },
+    {
+      "name": "Science Diet Perfect Weight Adult Dry Dog Food - Chicken",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/hills-science-diet-perfect-weight-adult-dry-dog-food---chicken-21059.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Science Diet",
+      "life_stage": "adult",
+      "source_id": "5210085",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-perfect-weight-adult-dry-dog-food-chicken.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742297200",
+          "sku": "5210085"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742060538",
+          "sku": "5339219"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742060545",
+          "sku": "5339222"
+        }
+      ],
+      "ingredients_raw": "Chicken, Cracked Pearled Barley, Brown Rice, Pea Fiber, Corn Protein Meal, Chicken Meal, Dried Tomato Pomace, Oat Fiber, Chicken Liver Flavor, Flaxseed, Dried Beet Pulp, Coconut Oil, Pork Liver Flavor, Lactic Acid, Potassium Chloride, L-Lysine, DL-Methionine, Carrots, Iodized Salt, Lipoic Acid, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement), Choline Chloride, minerals (Manganese Sulfate, Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Calcium Iodate, Sodium Selenite), Taurine, Mixed Tocopherols for freshness, Natural Flavors, L-Carnitine, Beta-Carotene",
+      "guaranteed_analysis": {
+        "moisture_max": 10.0,
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 8.0,
+        "crude_fiber_max": 5.0,
+        "ash_max": 8.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "298"
+    },
+    {
+      "name": "Science Diet Perfect Weight & Joint Support Adult Dry Dog Food - Chicken & Brown Rice",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/hills-science-diet-perfect-weight-and-joint-support-adult-dry-dog-food---chicken-and-brown-rice-76218.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Science Diet",
+      "life_stage": "adult",
+      "source_id": "5339740",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-perfect-weight-joint-support-adult-dry-dog-food-chicken-brown-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742060491",
+          "sku": "5339740"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742060507",
+          "sku": "5339741"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742060514",
+          "sku": "5339742"
+        }
+      ],
+      "ingredients_raw": "Chicken, Brown Rice, Chicken Meal, Corn Protein Meal, Powdered Cellulose, Pea Fiber, Brewers Rice, Whole Grain Corn, Dried Tomato Pomace, Soybean Meal, Soybean Oil, Hydrolyzed Chicken Flavor, Coconut Oil, Fish Oil, Flaxseed, Lactic Acid, Pork Liver Flavor, L-Lysine, Potassium Chloride, Carrots, Iodized Salt, DL-Methionine, Choline Chloride, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement), Taurine, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Calcium Carbonate, Mixed Tocopherols for freshness, Natural Flavors, L-Carnitine, Beta-Carotene",
+      "guaranteed_analysis": {
+        "moisture_max": 10.0,
+        "crude_protein_min": 23.0,
+        "crude_fat_min": 10.5,
+        "crude_fiber_max": 4.0,
+        "ash_max": 8.0,
+        "omega_3_min": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "327"
+    },
+    {
+      "name": "Science Diet Perfect Weight & Joint Support Large Breed Adult Dry Dog Food - Chicken & Rice",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/hills-science-diet-perfect-weight-and-joint-support-large-breed-adult-dry-dog-food---chicken-and-rice-76219.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Science Diet",
+      "life_stage": "adult",
+      "breed_size": "Large",
+      "source_id": "5339743",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-perfect-weight-joint-support-large-breed-adult-dry-dog-food-chicken.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742060521",
+          "sku": "5339743"
+        }
+      ],
+      "ingredients_raw": "Chicken, Brown Rice, Chicken Meal, Corn Gluten Meal, Powdered Cellulose, Pea Fiber, Brewers Rice, Whole Grain Corn, Dried Tomato Pomace, Soybean Meal, Carrots, Soybean Oil, Hydrolyzed Chicken Flavor, Coconut Oil, Fish Oil, Flaxseed, Lactic Acid, Pork Liver Flavor, L-Lysine, Potassium Chloride, Iodized Salt, DL-Methionine, Choline Chloride, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement), Taurine, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Calcium Carbonate, Mixed Tocopherols for freshness, Natural Flavors, L-Carnitine, Beta-Carotene",
+      "guaranteed_analysis": {
+        "crude_protein_min": 23.0,
+        "crude_fat_min": 10.5,
+        "crude_fiber_min": 4.0,
+        "ash_max": 8.0,
+        "epa_min": 0.2,
+        "omega_3_min": 1.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "300"
+    },
+    {
+      "name": "Science Diet Perfect Weight Large Breed Adult Dry Dog Food - Chicken",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/hills-science-diet-perfect-weight-large-breed-adult-dry-dog-food---chicken-57936.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Science Diet",
+      "life_stage": "adult",
+      "breed_size": "Large",
+      "source_id": "5339223",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-perfect-weight-large-breed-adult-dry-dog-food-chicken.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742060583",
+          "sku": "5339223"
+        }
+      ],
+      "ingredients_raw": "Chicken, Cracked Pearled Barley, Brown Rice, Pea Fiber, Corn Protein Meal, Chicken Meal, Dried Tomato Pomace, Oat Fiber, Chicken Liver Flavor, Flaxseed, Dried Beet Pulp, Coconut Oil, Pork Liver Flavor, Lactic Acid, Potassium Chloride, L-Lysine, DL-Methionine, Carrots, Iodized Salt, Lipoic Acid, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement), Choline Chloride, minerals (Manganese Sulfate, Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Calcium Iodate, Sodium Selenite), Taurine, Mixed Tocopherols for freshness, Natural Flavors, L-Carnitine, Beta-Carotene",
+      "guaranteed_analysis": {
+        "moisture_max": 10.0,
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 8.0,
+        "crude_fiber_max": 13.0,
+        "ash_max": 8.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "289"
+    },
+    {
+      "name": "Science Diet Puppy Dry Dog Food - Chicken & Brown Rice",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/hills-science-diet-puppy-dry-dog-food---chicken-and-brown-rice-626.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Science Diet",
+      "life_stage": "puppy",
+      "source_id": "5137707",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-puppy-dry-dog-food-chicken-brown-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742713304",
+          "sku": "5137707"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742936604",
+          "sku": "5154730"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742060187",
+          "sku": "5339217"
+        }
+      ],
+      "ingredients_raw": "Chicken, Brown Rice, Whole Grain Wheat, Chicken Meal, Chicken Fat, Whole Grain Corn, Whole Grain Oats, Pea Protein, Soybean Meal, Hydrolyzed Chicken Flavor, Ground Pecan Shells, Dicalcium Phosphate, Lactic Acid, Pork Liver Flavor, Soybean Oil, Iodized Salt, Flaxseed, Dried Beet Pulp, Dried Citrus Pulp, Potassium Chloride, Fish Oil, Choline Chloride, Pressed Cranberries, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement), L-Threonine, DL-Methionine, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Taurine, Mixed Tocopherols for freshness, Natural Flavors, L-Tryptophan, Beta-Carotene",
+      "guaranteed_analysis": {
+        "moisture_max": 10.0,
+        "crude_protein_min": 23.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 5.0,
+        "dha_min": 0.02
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "393"
+    },
+    {
+      "name": "Science Diet Puppy Dry Dog Food - Lamb Meal & Brown Rice",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/hills-science-diet-puppy-dry-dog-food---lamb-meal-and-brown-rice-76215.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Science Diet",
+      "life_stage": "puppy",
+      "source_id": "5339614",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-puppy-dry-dog-food-lamb-meal-brown-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742059815",
+          "sku": "5339614"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742059389",
+          "sku": "5339735"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742059396",
+          "sku": "5339736"
+        }
+      ],
+      "ingredients_raw": "Lamb Meal, Brown Rice, Chicken, Chicken Fat, Whole Grain Oats, Whole Grain Corn, Pea Protein, Brewers Rice, Soybean Meal, Cracked Pearled Barley, Egg Product, Wheat Gluten, Hydrolyzed Chicken Flavor, Ground Pecan Shells, Lactic Acid, Dicalcium Phosphate, Pork Liver Flavor, Soybean Oil, Flaxseed, Dried Beet Pulp, Dried Citrus Pulp, Fish Oil, Iodized Salt, Potassium Chloride, Sodium Tripolyphosphate, Potassium Citrate, Pressed Cranberries, Choline Chloride, DL-Methionine, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement), Taurine, L-Lysine, L-Threonine, Calcium Carbonate, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), L-Tryptophan, Mixed Tocopherols for freshness, Natural Flavors, Beta-Carotene",
+      "guaranteed_analysis": {
+        "moisture_max": 10.0,
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 15.5,
+        "crude_fiber_max": 4.0,
+        "ash_max": 10.5,
+        "dha_min": 0.03
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "385 / kcal per 8 oz cup"
+    },
+    {
+      "name": "Science Diet Senior Vitality Adult 7+ Dry Dog Food - Chicken & Rice",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/hills-science-diet-senior-vitality-adult-7-dry-dog-food---chicken-and-rice-43163.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Science Diet",
+      "life_stage": "senior",
+      "source_id": "5267967",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-senior-vitality-adult-7-dry-dog-food-chicken-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742012056",
+          "sku": "5267967"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742012070",
+          "sku": "5267968"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742012087",
+          "sku": "5267969"
+        }
+      ],
+      "ingredients_raw": "Chicken, Brown Rice, Cracked Pearled Barley, Whole Grain Corn, Egg Product, Yellow Peas, Pea Protein, Chicken Liver Flavor, Corn Protein Meal, Flaxseed, Chicken Fat, Pork Liver Flavor, Soybean Oil, Lactic Acid, Calcium Carbonate, Carrots, Dried Tomato Pomace, Dried Citrus Pulp, Spinach, Fish Oil, Iodized Salt, Potassium Chloride, Dicalcium Phosphate, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement), Lipoic Acid, Choline Chloride, Taurine, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Natural Flavors, L-Tryptophan, Mixed Tocopherols for freshness, L-Carnitine, Beta-Carotene",
+      "guaranteed_analysis": {
+        "moisture_max": 10.0,
+        "crude_protein_min": 17.0,
+        "crude_fat_min": 10.5,
+        "crude_fiber_max": 3.5,
+        "ash_max": 8.5,
+        "omega_6_min": 1.7
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "359 kcal per 8oz cup"
+    },
+    {
+      "name": "Science Diet Senior Vitality Small & Mini 7+ Senior Dry Dog Food - Chicken & Rice",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/hills-science-diet-senior-vitality-small-and-mini-7-senior-dry-dog-food---chicken-and-rice-90480.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Science Diet",
+      "life_stage": "senior",
+      "source_id": "5364801",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-senior-vitality-small-mini-7-senior-dry-dog-food-chicken-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742073675",
+          "sku": "5364801"
+        }
+      ],
+      "ingredients_raw": "Chicken, Brewers Rice, Yellow Peas, Cracked Pearled Barley, Whole Grain Oats, Whole Grain Corn, Egg Product, Chicken Fat, Chicken Liver Flavor, Corn Gluten Meal, Soybean Oil, Flaxseed, Pork Liver Flavor, Lactic Acid, L-Lysine, Potassium Chloride, Calcium Carbonate, Dicalcium Phosphate, Carrots, Dried Tomato Pomace, Dried Citrus Pulp, Spinach, Fish Oil, Iodized Salt, Lipoic Acid, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement), Choline Chloride, Taurine, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Natural Flavors, L-Tryptophan, Mixed Tocopherols for freshness, L-Carnitine, Beta-Carotene",
+      "guaranteed_analysis": {
+        "moisture_max": 10.0,
+        "crude_protein_min": 19.0,
+        "crude_fat_min": 11.0,
+        "crude_fiber_max": 3.0,
+        "omega_3_min": 0.4
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3649 kcal/kg, 341 kcal/cup"
+    },
+    {
+      "name": "Science Diet Senior Vitality Small & Mini Adult 7+ Dry Dog Food - Chicken & Rice",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/hills-science-diet-senior-vitality-small-and-mini-adult-7-dry-dog-food---chicken-and-rice-43162.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Science Diet",
+      "life_stage": "senior",
+      "source_id": "5267965",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-senior-vitality-small-mini-adult-7-dry-dog-food-chicken-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742012032",
+          "sku": "5267965"
+        }
+      ],
+      "ingredients_raw": "Chicken, Brewers Rice, Yellow Peas, Cracked Pearled Barley, Whole Grain Oats, Whole Grain Corn, Egg Product, Chicken Fat, Chicken Liver Flavor, Corn Protein Meal, Soybean Oil, Flaxseed, Pork Liver Flavor, Lactic Acid, L-Lysine, Potassium Chloride, Calcium Carbonate, Dicalcium Phosphate, Carrots, Dried Tomato Pomace, Dried Citrus Pulp, Spinach, Fish Oil, Iodized Salt, Lipoic Acid, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement), Choline Chloride, Taurine, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Natural Flavors, L-Tryptophan, Mixed Tocopherols for freshness, L-Carnitine, Beta-Carotene",
+      "guaranteed_analysis": {
+        "moisture_max": 10.0,
+        "crude_protein_min": 18.1,
+        "crude_fat_min": 10.8,
+        "crude_fiber_max": 3.0,
+        "ash_max": 8.2,
+        "omega_6_min": 1.7
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "341–Kcal per 8 oz. Cup"
+    },
+    {
+      "name": "Science Diet Sensitive Stomach & Skin Adult Dry Dog Food - Alaskan Pollock",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/hills-science-diet-sensitive-stomach-and-skin-adult-dry-dog-food---alaskan-pollock-76217.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Science Diet",
+      "life_stage": "adult",
+      "source_id": "5339738",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-sensitive-stomach-skin-adult-dry-dog-food-alaskan-pollock.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742059143",
+          "sku": "5339738"
+        }
+      ],
+      "ingredients_raw": "Pollock Meal, Cracked Pearled Barley, Dried Black Soldier Fly Larvae, Whole Grain Corn, Whole Grain Sorghum, Corn Starch, Chicken Fat, Pea Protein, Soybean Oil, Dried Beet Pulp, Hydrolyzed Chicken Flavor, Corn Protein Meal, Lactic Acid, Potassium Chloride, Fish Flavor, Choline Chloride, Flaxseed, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Biotin, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement), Iodized Salt, Taurine, Mixed Tocopherols for freshness, Oat Fiber, Natural Flavors, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Beta-Carotene, Apples, Broccoli, Carrots, Cranberries, Green Peas",
+      "guaranteed_analysis": {
+        "moisture_max": 10.0,
+        "crude_protein_min": 22.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 4.0,
+        "ash_max": 9.0,
+        "omega_3_min": 0.2,
+        "omega_6_min": 3.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "385"
+    },
+    {
+      "name": "Science Diet Sensitive Stomach & Skin Adult Dry Dog Food - Chicken & Barley Chicken",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/hills-science-diet-sensitive-stomach-and-skin-adult-dry-dog-food---chicken-and-barley-570.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Science Diet",
+      "life_stage": "adult",
+      "source_id": "5242066",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-sensitive-stomach-skin-adult-dry-dog-food-chicken-barley-chicken.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742001821",
+          "sku": "5242066"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Meal, Yellow Peas, Cracked Pearled Barley, Brown Rice, Brewers Rice, Whole Grain Sorghum, Egg Product, Chicken Fat, Soybean Oil, Dried Beet Pulp, Chicken Liver Flavor, Lactic Acid, Flaxseed, Pork Liver Flavor, Potassium Chloride, Iodized Salt, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement), Choline Chloride, Taurine, Mixed Tocopherols for freshness, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Natural Flavors, Beta-Carotene",
+      "calorie_content": "391",
+      "guaranteed_analysis": {
+        "crude_protein_min": 24.8,
+        "crude_fat_min": 16.7,
+        "crude_fiber_max": 1.5,
+        "calcium_min": 0.95,
+        "phosphorus_min": 0.78,
+        "potassium_min": 0.87,
+        "sodium_min": 0.35,
+        "omega_3_min": 0.68,
+        "omega_6_min": 4.77,
+        "glucosamine_min": 882.0,
+        "chondroitin_min": 1501.0,
+        "l_carnitine_min": 16.5
+      },
+      "guaranteed_analysis_basis": "dry-matter"
+    },
+    {
+      "name": "Science Diet Sensitive Stomach & Skin Adult Dry Dog Food - Grain Free, Chicken & Potato",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/hills-science-diet-sensitive-stomach-and-skin-adult-dry-dog-food---grain-free-chicken-and-potato-52376.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Science Diet",
+      "life_stage": "adult",
+      "source_id": "5286616",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-sensitive-stomach-skin-adult-dry-dog-food-grain-free-chicken-potato.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742022109",
+          "sku": "5286616"
+        }
+      ],
+      "ingredients_raw": "Chicken, Yellow Peas, Potatoes, Potato Starch, Chicken Meal, Chicken Fat, Pea Protein, Chicken Liver Flavor, Egg Product, Dried Beet Pulp, Soybean Oil, Flaxseed, Lactic Acid, Powdered Cellulose, Pork Liver Flavor, Calcium Sulfate, Iodized Salt, Choline Chloride, Potassium Chloride, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement), Taurine, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Mixed Tocopherols for freshness, Natural Flavors, Beta-Carotene",
+      "guaranteed_analysis": {
+        "moisture_max": 10.0,
+        "crude_protein_min": 21.0,
+        "crude_fat_min": 13.0,
+        "crude_fiber_max": 4.0,
+        "ash_max": 8.0,
+        "omega_3_min": 0.3,
+        "omega_6_min": 2.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "407"
+    },
+    {
+      "name": "Science Diet Sensitive Stomach & Skin Large Breed Adult Dry Dog Food - Chicken & Barley",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/hills-science-diet-sensitive-stomach-and-skin-large-breed-adult-dry-dog-food---chicken-and-barley-57937.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Science Diet",
+      "life_stage": "adult",
+      "breed_size": "Large",
+      "source_id": "5298853",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-sensitive-stomach-skin-large-breed-adult-dry-dog-food-chicken-barle.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742033204",
+          "sku": "5298853"
+        }
+      ],
+      "ingredients_raw": "Chicken, Chicken Meal, Yellow Peas, Cracked Pearled Barley, Brown Rice, Brewers Rice, Whole Grain Sorghum, Egg Product, Chicken Fat, Soybean Oil, Dried Beet Pulp, Chicken Liver Flavor, Lactic Acid, Flaxseed, Pork Liver Flavor, Potassium Chloride, Iodized Salt, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement), Choline Chloride, Taurine, Mixed Tocopherols for freshness, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Natural Flavors, Beta-Carotene",
+      "guaranteed_analysis": {
+        "moisture_max": 10.0,
+        "crude_protein_min": 20.0,
+        "crude_fat_min": 13.0,
+        "crude_fiber_max": 4.0,
+        "ash_max": 7.5,
+        "omega_3_min": 0.3,
+        "omega_6_min": 2.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "393"
+    },
+    {
+      "name": "Science Diet Sensitive Stomach & Skin Puppy Dry Dog Food - Salmon & Brown Rice",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/hills-science-diet-sensitive-stomach-and-skin-puppy-dry-dog-food---salmon-and-brown-rice-82342.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Science Diet",
+      "life_stage": "puppy",
+      "source_id": "5351454",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-sensitive-stomach-skin-puppy-dry-dog-food-salmon-brown-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742068688",
+          "sku": "5351454"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742068695",
+          "sku": "5351475"
+        }
+      ],
+      "ingredients_raw": "Salmon, Chicken Meal, Cracked Pearled Barley, Brown Rice, Brewers Rice, Chicken Fat, Pea Protein, Corn Protein Meal, Soybean Meal, Dried Beet Pulp, Hydrolyzed Chicken Flavor, Pork Liver Flavor, Flaxseed, Lactic Acid, Soybean Oil, Potassium Chloride, Fish Oil, Iodized Salt, L-Threonine, Choline Chloride, Dicalcium Phosphate, Calcium Carbonate, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Biotin, Folic Acid, Vitamin D3 Supplement), Taurine, DL-Methionine, L-Tryptophan, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Mixed Tocopherols for freshness, Natural Flavors, Beta-Carotene",
+      "guaranteed_analysis": {
+        "moisture_max": 10.0,
+        "crude_protein_min": 25.0,
+        "crude_fat_min": 15.5,
+        "crude_fiber_max": 4.0,
+        "ash_max": 9.0,
+        "dha_min": 0.05,
+        "omega_6_min": 1.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "405"
+    },
+    {
+      "name": "Science Diet Sensitive Stomach & Skin Small & Mini Adult Dog Dry Food - Chicken & Rice",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/hills-science-diet-sensitive-stomach-and-skin-small-and-mini-adult-dog-dry-food---chicken-and-rice-34696.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Science Diet",
+      "life_stage": "adult",
+      "source_id": "5246949",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-sensitive-stomach-skin-small-mini-adult-dog-dry-food-chicken-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742007038",
+          "sku": "5246949"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742007045",
+          "sku": "5246950"
+        }
+      ],
+      "ingredients_raw": "Chicken, Brewers Rice, Chicken Meal, Yellow Peas, Cracked Pearled Barley, Whole Grain Sorghum, Egg Product, Chicken Fat, Soybean Oil, Brown Rice, Dried Beet Pulp, Chicken Liver Flavor, Lactic Acid, Pork Liver Flavor, Potassium Chloride, Flaxseed, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement), Iodized Salt, Choline Chloride, Taurine, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Mixed Tocopherols for freshness, Natural Flavors, Beta-Carotene",
+      "guaranteed_analysis": {
+        "moisture_max": 10.0,
+        "crude_protein_min": 21.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 4.0,
+        "ash_max": 7.7,
+        "omega_3_min": 0.2,
+        "omega_6_min": 2.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "380"
+    },
+    {
+      "name": "Science Diet Small & Mini 11+ Senior Dry Dog Food - Chicken & Brown Rice",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/hills-science-diet-small-and-mini-11-senior-dry-dog-food---chicken-and-brown-rice-18756.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Science Diet",
+      "life_stage": "senior",
+      "source_id": "5203793",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-small-mini-11-senior-dry-dog-food-chicken-brown-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742253305",
+          "sku": "5203793"
+        }
+      ],
+      "ingredients_raw": "Chicken Meal, Cracked Pearled Barley, Brewers Rice, Whole Grain Wheat, Whole Grain Corn, Whole Grain Sorghum, Whole Grain Oats, Chicken Fat, Dried Beet Pulp, Soybean Meal, Chicken Liver Flavor, Soybean Oil, Lactic Acid, Flaxseed, Potassium Chloride, Calcium Carbonate, Iodized Salt, Choline Chloride, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement), L-Lysine, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Taurine, DL-Methionine, Oat Fiber, Mixed Tocopherols for freshness, Natural Flavors, L-Carnitine, Beta-Carotene, Apples, Broccoli, Carrots, Cranberries, Green Peas",
+      "guaranteed_analysis": {
+        "moisture_max": 10.0,
+        "crude_protein_min": 18.0,
+        "crude_fat_min": 11.0,
+        "crude_fiber_max": 4.0,
+        "omega_3_min": 0.9,
+        "omega_6_min": 3.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3709 kcal/kg, 347 kcal/cup"
+    },
+    {
+      "name": "Science Diet Small & Mini 7+ Senior Dry Dog Food - Chicken & Brown Rice Chicken",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/hills-science-diet-small-and-mini-7-senior-dry-dog-food---chicken-and-brown-rice-655.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Science Diet",
+      "life_stage": "senior",
+      "source_id": "5151445",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-small-mini-7-senior-dry-dog-food-chicken-brown-rice-chicken.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742909806",
+          "sku": "5151445"
+        }
+      ],
+      "ingredients_raw": "Chicken, Brown Rice, Whole Grain Wheat, Whole Grain Corn, Soybean Mill Run, Whole Grain Sorghum, Chicken Meal, Brewers Rice, Chicken Fat, Soybean Meal, Chicken Liver Flavor, Flaxseed, Pork Liver Flavor, Lactic Acid, Soybean Oil, Potassium Chloride, Iodized Salt, Lipoic Acid, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement), Pumpkin, Choline Chloride, L-Lysine, Calcium Carbonate, DL-Methionine, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Dicalcium Phosphate, Taurine, Mixed Tocopherols for freshness, Natural Flavors, L-Carnitine, Beta-Carotene",
+      "guaranteed_analysis": {
+        "moisture_max": 10.0,
+        "crude_protein_min": 15.5,
+        "crude_fat_min": 10.0,
+        "crude_fiber_max": 6.0,
+        "omega_6_min": 2.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3709 kcal/kg, 347 kcal/cup"
+    },
+    {
+      "name": "Science Diet Small & Mini 7+ Senior Dry Dog Food - Chicken & Brown Rice Chicken Meal",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/hills-science-diet-small-and-mini-7-senior-dry-dog-food---chicken-and-brown-rice-90015.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Science Diet",
+      "life_stage": "senior",
+      "source_id": "5364781",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-small-mini-7-senior-dry-dog-food-chicken-brown-rice-chicken-meal.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742073774",
+          "sku": "5364781"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742073859",
+          "sku": "5364820"
+        }
+      ],
+      "ingredients_raw": "Chicken Meal, Cracked Pearled Barley, Brown Rice, Brewers Rice, Whole Grain Wheat, Whole Grain Corn, Chicken Fat, Whole Grain Sorghum, Soybean Mill Run, Flaxseed, Chicken Liver Flavor, Soybean Oil, Pea Fiber, Soybean Meal, Pork Liver Flavor, Lactic Acid, Green Peas, Calcium Carbonate, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement), Apples, Potassium Chloride, Cranberries, Lipoic Acid, Iodized Salt, Carrots, Choline Chloride, Broccoli, Taurine, L-Lysine, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Mixed Tocopherols for freshness, Natural Flavors, L-Carnitine, Beta-Carotene",
+      "guaranteed_analysis": {
+        "moisture_max": 10.0,
+        "crude_protein_min": 15.5,
+        "crude_fat_min": 10.0,
+        "crude_fiber_max": 6.0,
+        "omega_6_min": 2.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3709 kcal/kg, 347 kcal/cup"
+    },
+    {
+      "name": "Science Diet Small & Mini Adult Dry Dog Food - Chicken & Brown Rice",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/hills-science-diet-small-and-mini-adult-dry-dog-food---chicken-and-brown-rice-90471.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Science Diet",
+      "life_stage": "adult",
+      "source_id": "5364788",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-small-mini-adult-dry-dog-food-chicken-brown-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742076263",
+          "sku": "5364788"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742076270",
+          "sku": "5364803"
+        }
+      ],
+      "ingredients_raw": "Chicken Meal, Brewers Rice, Whole Grain Wheat, Soybean Meal, Whole Grain Sorghum, Chicken Fat, Cracked Pearled Barley, Whole Grain Corn, Chicken Liver Flavor, Pork Liver Flavor, Flaxseed, Lactic Acid, Soybean Oil, Green Peas, Apples, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement), Cranberries, Potassium Chloride, L-Lysine, Iodized Salt, Carrots, Choline Chloride, Broccoli, Taurine, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Mixed Tocopherols for freshness, Natural Flavors, L-Carnitine, Beta-Carotene",
+      "guaranteed_analysis": {
+        "moisture_max": 10.0,
+        "crude_protein_min": 20.0,
+        "crude_fat_min": 12.5,
+        "crude_fiber_max": 4.0,
+        "omega_6_min": 2.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3709 kcal/kg, 347 kcal/cup"
+    },
+    {
+      "name": "Science Diet Small & Mini Adult Dry Dog Food - Lamb Meal & Brown Rice",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/hills-science-diet-small-and-mini-adult-dry-dog-food---lamb-meal-and-brown-rice-90487.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Science Diet",
+      "life_stage": "adult",
+      "source_id": "5364818",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-small-mini-adult-dry-dog-food-lamb-meal-brown-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742076317",
+          "sku": "5364818"
+        }
+      ],
+      "ingredients_raw": "Lamb Meal, Brown Rice, Brewers Rice, Whole Grain Corn, Wheat Gluten, Whole Grain Wheat, Chicken Fat, Whole Grain Sorghum, Cracked Pearled Barley, Pea Protein, Chicken Liver Flavor, Dried Beet Pulp, Soybean Oil, Lactic Acid, Potassium Chloride, Pork Liver Flavor, Flaxseed, Calcium Carbonate, L-Lysine, Iodized Salt, DL-Methionine, Choline Chloride, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement), Pumpkin, Taurine, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Mixed Tocopherols for freshness, Natural Flavors, L-Tryptophan, L-Threonine, Beta-Carotene",
+      "guaranteed_analysis": {
+        "moisture_max": 9.5,
+        "crude_protein_min": 20.0,
+        "crude_fat_min": 13.5,
+        "crude_fiber_max": 3.0,
+        "calcium_min": 0.8
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3709 kcal/kg, 347 kcal/cup"
+    },
+    {
+      "name": "Science Diet Small & Mini Puppy Dry Dog Food - Chicken & Brown Rice",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/hills-science-diet-small-and-mini-puppy-dry-dog-food---chicken-and-brown-rice-618.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Science Diet",
+      "life_stage": "puppy",
+      "source_id": "5151374",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-small-mini-puppy-dry-dog-food-chicken-brown-rice.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742909400",
+          "sku": "5151374"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742060255",
+          "sku": "5339215"
+        }
+      ],
+      "ingredients_raw": "Chicken, Whole Grain Oats, Brown Rice, Chicken Meal, Chicken Fat, Pea Protein, Whole Grain Corn, Cracked Pearled Barley, Soybean Meal, Chicken Liver Flavor, Corn Protein Meal, Pork Liver Flavor, Dicalcium Phosphate, Ground Pecan Shells, Lactic Acid, Soybean Oil, Flaxseed, Dried Beet Pulp, Fish Oil, Dried Citrus Pulp, Calcium Carbonate, Iodized Salt, Potassium Chloride, Sodium Tripolyphosphate, Choline Chloride, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement), Pressed Cranberries, L-Threonine, L-Lysine, DL-Methionine, L-Tryptophan, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Taurine, Mixed Tocopherols for freshness, Natural Flavors, Beta-Carotene",
+      "guaranteed_analysis": {
+        "moisture_max": 10.0,
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 4.0,
+        "ash_max": 10.0,
+        "dha_min": 0.05
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "Protein 24 %  26.6 % 28.9 % 7 g / 100 kcal"
+    },
+    {
+      "name": "Science Diet Small Bites 7+ Senior Dry Dog Food - Chicken Recipe",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/dry-food/hills-science-diet-small-bites-7-senior-dry-dog-food---chicken-recipe-628.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Science Diet",
+      "life_stage": "senior",
+      "source_id": "5182760",
+      "images": [
+        "/products/hill-s/hill-s-food-science-diet-small-bites-7-senior-dry-dog-food-chicken-recipe.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742204307",
+          "sku": "5182760"
+        }
+      ],
+      "ingredients_raw": "Chicken Meal, Cracked Pearled Barley, Brown Rice, Whole Grain Wheat, Whole Grain Corn, Whole Grain Sorghum, Whole Grain Oats, Chicken Fat, Dried Beet Pulp, Chicken Liver Flavor, Corn Gluten Meal, Soybean Oil, Lactic Acid, Pork Flavor, Potassium Chloride, Calcium Carbonate, Flaxseed, Iodized Salt, Choline Chloride, L-Lysine, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement), minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Taurine, DL-Methionine, Oat Fiber, L-Carnitine, Mixed Tocopherols for freshness, Natural Flavors, Beta-Carotene, Apples, Broccoli, Carrots, Cranberries, Green Peas",
+      "guaranteed_analysis": {
+        "moisture_max": 10.0,
+        "crude_protein_min": 15.5,
+        "crude_fat_min": 10.5,
+        "crude_fiber_max": 4.0,
+        "omega_6_min": 2.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3567"
+    },
+    {
+      "name": "Science Diet Healthy Cuisine Adult Wet Dog Food Topper - Chicken & Vegetable",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/hills-science-diet-healthy-cuisine-adult-wet-dog-food-topper---chicken-and-vegetable-28-oz-90508.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "sub_brand": "Science Diet",
+      "life_stage": "adult",
+      "source_id": "5367290",
+      "images": [
+        "/products/hill-s/hill-s-supplement-science-diet-healthy-cuisine-adult-wet-dog-food-topper-chicken-vegetable.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "2.8 oz",
+          "upc": "0052742075570",
+          "sku": "5367290"
+        }
+      ],
+      "ingredients_raw": "Chicken Broth, Chicken, Pork Liver, Carrots, Rice, Green Peas, Rice Starch, Spinach, Soybean Oil, Hydrolyzed Chicken Flavor, Chicken Liver Flavor, Flaxseed, Powdered Cellulose, Potassium Alginate, Wheat Gluten, Calcium Chloride, Guar Gum, Dicalcium Phosphate, Calcium Lactate, Calcium Gluconate, Fish Oil, Sodium Tripolyphosphate, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin D3 Supplement, Riboflavin Supplement, Folic Acid), Choline Chloride, L-Lysine, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganese Sulfate, Calcium Iodate), Beta-Carotene",
+      "guaranteed_analysis": {
+        "crude_fiber_max": 84.0,
+        "ash_max": 2.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "65 Kcal / 2.8 oz (79 g) pouch"
+    },
+    {
+      "name": "Science Diet Healthy Cuisine Senior 7+ Wet Dog Food Topper - Chicken & Vegetable",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/hills-science-diet-healthy-cuisine-senior-7-wet-dog-food-topper---chicken-and-vegetable-28-oz-90509.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "sub_brand": "Science Diet",
+      "life_stage": "senior",
+      "source_id": "5367291",
+      "images": [
+        "/products/hill-s/hill-s-supplement-science-diet-healthy-cuisine-senior-7-wet-dog-food-topper-chicken-vegetable.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "2.8 oz",
+          "upc": "0052742075914",
+          "sku": "5367291"
+        }
+      ],
+      "ingredients_raw": "Chicken Broth, Chicken, Carrots, Pork Liver, Rice, Green Peas, Rice Starch, Spinach, Dried Beet Pulp, Powdered Cellulose, Hydrolyzed Chicken Flavor, Chicken Liver Flavor, Potassium Alginate, Soybean Oil, Chicken Fat, Calcium Chloride, Guar Gum, Dicalcium Phosphate, Wheat Gluten, Monosodium Phosphate, Calcium Lactate, Calcium Gluconate, Choline Chloride, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Riboflavin Supplement, Vitamin D3 Supplement, Folic Acid), Flaxseed, Sodium Tripolyphosphate, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganese Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite)",
+      "guaranteed_analysis": {
+        "moisture_max": 84.0,
+        "crude_protein_min": 3.0,
+        "crude_fat_min": 1.0,
+        "crude_fiber_max": 1.5,
+        "ash_max": 2.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "57 Kcal / 2.8 oz (79 g) pouch"
+    },
+    {
+      "name": "Science Diet Perfect Weight Adult Wet Dog Food Topper - Vegetables & Salmon",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/hills-science-diet-perfect-weight-adult-wet-dog-food-topper---vegetables-and-salmon-28-oz-90507.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "sub_brand": "Science Diet",
+      "life_stage": "adult",
+      "source_id": "5367289",
+      "images": [
+        "/products/hill-s/hill-s-supplement-science-diet-perfect-weight-adult-wet-dog-food-topper-vegetables-salmon.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "2.8 oz",
+          "upc": "0052742076591",
+          "sku": "5367289"
+        }
+      ],
+      "ingredients_raw": "Chicken Broth, Pork Liver, Carrots, Salmon, Green Peas, Rice, Corn Starch, Powdered Cellulose, Oat Fiber, Whole Grain Barley, Dried Tomato Pomace, Natural Flavor, Wheat Gluten, Flaxseed, Coconut Oil, Potassium Alginate, Calcium Chloride, Soybean Oil, Dicalcium Phosphate, Calcium Sulfate, Guar Gum, Sodium Tripolyphosphate, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Riboflavin Supplement, Menadione Sodium Bisulfite Complex (source of Vitamin K), Folic Acid), Potassium Citrate, Lipoic Acid, Magnesium Oxide, L-Lysine, Taurine, minerals (Zinc Oxide, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate), L-Carnitine, Calcium Carbonate, Choline Chloride",
+      "guaranteed_analysis": {
+        "moisture_max": 84.0,
+        "crude_protein_min": 3.0,
+        "crude_fat_min": 1.0,
+        "crude_fiber_max": 1.5,
+        "ash_max": 2.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "59 kcal / 2.8 oz (79 g) Pouch"
+    },
+    {
+      "name": "Science Diet Sensitive Stomach & Skin Adult Wet Dog Food Topper - Turkey & Vegetables",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/hills-science-diet-sensitive-stomach-and-skin-adult-wet-dog-food-topper---turkey-and-vegetables-28-oz-90506.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "sub_brand": "Science Diet",
+      "life_stage": "adult",
+      "source_id": "5367288",
+      "images": [
+        "/products/hill-s/hill-s-supplement-science-diet-sensitive-stomach-skin-adult-wet-dog-food-topper-turkey-vegetables.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "2.8 oz",
+          "upc": "0052742076577",
+          "sku": "5367288"
+        }
+      ],
+      "ingredients_raw": "Chicken Broth, Turkey, Carrots, Pork Liver, Rice, Chicken, Rice Starch, Spinach, Green Peas, Hydrolyzed Chicken Flavor, Flaxseed, Soybean Oil, Potassium Alginate, Powdered Cellulose, Calcium Chloride, Guar Gum, Dicalcium Phosphate, Calcium Lactate, Calcium Gluconate, L-Lysine, Monosodium Phosphate, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Riboflavin Supplement, Vitamin D3 Supplement, Folic Acid), Sodium Tripolyphosphate, Choline Chloride, Magnesium Oxide, Taurine, minerals (Zinc Oxide, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate)",
+      "guaranteed_analysis": {
+        "moisture_max": 84.0,
+        "crude_protein_min": 3.0,
+        "crude_fat_min": 1.0,
+        "crude_fiber_max": 1.5,
+        "ash_max": 2.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "57 kcal / 2.8 oz (79 g) Pouch"
+    },
+    {
+      "name": "Science Diet Soft Baked Dog Treat - Natural, Grain Free, Beef & Sweet Potato",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/treats/biscuits-cookies-and-bakery-treats/hills-science-diet-soft-baked-dog-treat---natural-grain-free-beef-and-sweet-potato-18789.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Science Diet",
+      "source_id": "5202877",
+      "images": [
+        "/products/hill-s/hill-s-treat-science-diet-soft-baked-dog-treat-natural-grain-free-beef-sweet-potato.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742244907",
+          "sku": "5202877"
+        }
+      ],
+      "ingredients_raw": "Peas, Beef, Potatoes, Glycerin, Carrots, Sweet Potatoes, Cane Molasses, Chicken Fat, Technical Pork Gelatin, Caramel color, Natural Flavors, Mixed Tocopherols for freshness",
+      "guaranteed_analysis": {
+        "moisture_max": 18.0,
+        "crude_protein_min": 7.0,
+        "crude_fat_min": 6.0,
+        "crude_fiber_max": 5.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "12 kcal/treat"
+    },
+    {
+      "name": "Science Diet Soft Baked Dog Treat - Natural, Grain Free, Duck & Pumpkin",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/treats/biscuits-cookies-and-bakery-treats/hills-science-diet-soft-baked-dog-treat---natural-grain-free-duck-and-pumpkin-66467.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Science Diet",
+      "source_id": "5202878",
+      "images": [
+        "/products/hill-s/hill-s-treat-science-diet-soft-baked-dog-treat-natural-grain-free-duck-pumpkin.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742245003",
+          "sku": "5202878"
+        }
+      ],
+      "ingredients_raw": "Peas, Duck, Potatoes, Glycerin, Cane Molasses, Chicken Fat, Pumpkin, Technical Pork Gelatin, Natural Flavors, Mixed Tocopherols for freshness",
+      "guaranteed_analysis": {
+        "moisture_max": 18.0,
+        "crude_protein_min": 7.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 5.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "11 kcal/treat"
+    },
+    {
+      "name": "Science Diet Soft Baked Naturals Dog Treat - Grain Free, Chicken & Carrots",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/treats/biscuits-cookies-and-bakery-treats/hills-science-diet-soft-baked-naturals-dog-treat---grain-free-chicken-and-carrots-59942.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Science Diet",
+      "source_id": "5303608",
+      "images": [
+        "/products/hill-s/hill-s-treat-science-diet-soft-baked-naturals-dog-treat-grain-free-chicken-carrots.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742244808",
+          "sku": "5303608"
+        }
+      ],
+      "ingredients_raw": "Peas, Chicken, Potatoes, Glycerin, Carrots, Cane Molasses, Chicken Fat, Technical Pork Gelatin, Natural Flavors, Mixed Tocopherols for freshness",
+      "guaranteed_analysis": {
+        "moisture_max": 18.0,
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 7.0,
+        "crude_fiber_max": 5.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "12 kcal/treat"
+    },
+    {
+      "name": "Science Diet Jerky Strips Dog Treat",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/treats/jerky-treats/hills-science-diet-jerky-strips-dog-treat---71-oz-2609.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Science Diet",
+      "source_id": "5179861",
+      "images": [
+        "/products/hill-s/hill-s-treat-science-diet-jerky-strips-dog-treat.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "7.1 oz",
+          "upc": "0052742187600",
+          "sku": "5179861"
+        }
+      ],
+      "ingredients_raw": "Beef, Whole Grain Oats, Wheat Flour, Wheat Starch, Glycerin, Dextrose, Flaxseed, Chicken Fat, Cane Molasses, Water, Pork Gelatin, Citric Acid for freshness, Chicken Liver Flavor, Salt, Beef Flavor, Natural Flavors, Caramel color, Mixed Tocopherols for freshness, Rosemary Extract",
+      "guaranteed_analysis": {
+        "moisture_max": 25.0,
+        "crude_protein_min": 9.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 2.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3061 kcal/kg, 16 kcal/treat"
+    },
+    {
+      "name": "Science Diet Mini Jerky Strips Dog Treat",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/treats/jerky-treats/hills-science-diet-mini-jerky-strips-dog-treat---71-oz-2636.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Science Diet",
+      "source_id": "5181654",
+      "images": [
+        "/products/hill-s/hill-s-treat-science-diet-mini-jerky-strips-dog-treat.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "7.1 oz",
+          "upc": "0052742187402",
+          "sku": "5181654"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "7.1 oz",
+          "upc": "0052742187501",
+          "sku": "5181655"
+        }
+      ],
+      "ingredients_raw": "Chicken, Whole Grain Oats, Wheat Flour, Wheat Starch, Glycerin, Dextrose, Flaxseed, Chicken Fat, Cane Molasses, Water, Pork Gelatin, Citric Acid for freshness, Chicken Liver Flavor, Salt, Chicken Flavor, Natural Flavors, Mixed Tocopherols for freshness, Rosemary Extract",
+      "guaranteed_analysis": {
+        "moisture_max": 25.0,
+        "crude_protein_min": 9.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 2.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3061 kcal/kg, 16 kcal/treat"
+    },
+    {
+      "name": "Science Diet Flexi-Stix Jerky Dog Treat - Natural, Beef",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/treats/soft-and-chewy-treats/hills-science-diet-flexi-stix-jerky-dog-treat---natural-beef-31421.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Science Diet",
+      "source_id": "5238133",
+      "images": [
+        "/products/hill-s/hill-s-treat-science-diet-flexi-stix-jerky-dog-treat-natural-beef.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742368207",
+          "sku": "5238133"
+        }
+      ],
+      "ingredients_raw": "Beef, Whole Grain Oats, Wheat Flour, Wheat Starch, Glycerin, Dextrose, Flaxseed, Chicken Fat, Cane Molasses, Pork Gelatin, Chicken Cartilage (source of Glucosamine Hydrochloride and Chondroitin Sulfate), Natural Flavor, Water, Citric Acid for Freshness, Salt, Chicken Flavor, Beef Flavor, Caramel color, Natural Smoke Flavor, Mixed Tocopherols for freshness, Rosemary Extract",
+      "guaranteed_analysis": {
+        "moisture_max": 25.0,
+        "crude_protein_min": 9.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 2.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3240 kcal/kg"
+    },
+    {
+      "name": "Science Diet Flexi-Stix Jerky Dog Treat - Natural, Turkey",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/treats/soft-and-chewy-treats/hills-science-diet-flexi-stix-jerky-dog-treat---natural-turkey-30860.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Science Diet",
+      "source_id": "5237820",
+      "images": [
+        "/products/hill-s/hill-s-treat-science-diet-flexi-stix-jerky-dog-treat-natural-turkey.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742368009",
+          "sku": "5237820"
+        }
+      ],
+      "ingredients_raw": "Turkey, Whole Grain Oats, Wheat Flour, Wheat Starch, Glycerin, Dextrose, Flaxseed, Chicken Fat, Cane Molasses, Pork Gelatin, Chicken Cartilage (source of Glucosamine Hydrochloride and Chondroitin Sulfate), Water, Natural Flavor, Chicken Flavor, Citric Acid for Freshness, Salt, Natural Smoke Flavor, Mixed Tocopherols for freshness, Rosemary Extract",
+      "guaranteed_analysis": {
+        "moisture_max": 25.0,
+        "crude_protein_min": 9.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 2.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "3170 kcal/kg"
+    },
+    {
+      "name": "Science Diet Soft Savories Dog Treat - Natural, Peanut Butter & Banana",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/treats/soft-and-chewy-treats/hills-science-diet-soft-savories-dog-treat---natural-peanut-butter-and-banana-66469.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Science Diet",
+      "source_id": "5221586",
+      "images": [
+        "/products/hill-s/hill-s-treat-science-diet-soft-savories-dog-treat-natural-peanut-butter-banana.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742336008",
+          "sku": "5221586"
+        }
+      ],
+      "ingredients_raw": "Potatoes, Wheat Flour, Peanut Butter, Cane Molasses, Glycerin, Chicken Fat, Peanuts, Bananas, Peas, Technical Pork Gelatin, Natural Flavor, Dried Skimmed Milk, Citric Acid for Freshness, Lactic Acid, Mixed Tocopherols for freshness",
+      "guaranteed_analysis": {
+        "moisture_max": 22.0,
+        "crude_protein_min": 10.0,
+        "crude_fat_min": 8.0,
+        "crude_fiber_max": 4.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "27 kcal/treat"
+    },
+    {
+      "name": "Soft & Chewy Training Treats - Chicken",
+      "brand": "Hill's",
+      "url": "https://www.petsmart.ca/dog/treats/training-treats/hills-soft-and-chewy-training-treats---chicken-78336.html",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "sub_brand": "Science Diet",
+      "source_id": "5343017",
+      "images": [
+        "/products/hill-s/hill-s-treat-soft-chewy-training-treats-chicken.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0052742187907",
+          "sku": "5343017"
+        }
+      ],
+      "ingredients_raw": "Chicken, Whole Grain Oats, Wheat Flour, Wheat Starch, Glycerin, Dextrose, Flaxseed, Water, Cane Molasses, Chicken Fat, Pork Gelatin, Citric Acid for freshness, Chicken Liver Flavor, Salt, Chicken Flavor, Natural Flavors, Mixed Tocopherols for freshness, Rosemary Extract",
+      "guaranteed_analysis": {
+        "moisture_max": 25.0,
+        "crude_protein_min": 9.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 2.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "2 kcal/treat"
+    }
+  ]
+}

@@ -7,9 +7,9 @@ from scrapers.iams import (
     _detect_type,
     _detect_sub_brand,
     _parse_calories,
-    _parse_ga,
     _parse_ingredients,
 )
+from scrapers.common import parse_ga_text as _parse_ga
 
 
 # --- _detect_type / _detect_format ---

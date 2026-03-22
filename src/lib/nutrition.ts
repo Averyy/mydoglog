@@ -29,7 +29,7 @@ export interface AnalysisRow {
 
 // ─── GA field definitions ─────────────────────────────────────────────────────
 
-interface GAFieldDef {
+export interface GAFieldDef {
   key: string
   label: string
   qualifier: "min" | "max"
@@ -37,7 +37,7 @@ interface GAFieldDef {
   group: "primary" | "supplemental"
 }
 
-const GA_FIELDS: GAFieldDef[] = [
+export const GA_FIELDS: GAFieldDef[] = [
   { key: "crude_protein_min", label: "Crude Protein", qualifier: "min", displayUnit: "%", group: "primary" },
   { key: "crude_fat_min", label: "Crude Fat", qualifier: "min", displayUnit: "%", group: "primary" },
   { key: "crude_fiber_max", label: "Crude Fiber", qualifier: "max", displayUnit: "%", group: "primary" },

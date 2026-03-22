@@ -2,7 +2,7 @@ name: Daily Pollen Sync
 
 on:
   schedule:
-    - cron: '0 14 * * *'  # Daily at 14:00 UTC (10:00 AM EST)
+    - cron: '30 12 * * *'  # Daily at 12:30 UTC (30min after pollen-sparr scrapes)
   workflow_dispatch:
 
 jobs:

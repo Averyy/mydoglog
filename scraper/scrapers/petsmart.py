@@ -30,33 +30,13 @@ from .common import (
     Variant,
     clean_text,
     normalize_calorie_content,
+    parse_ga_text as parse_ga,
     write_brand_json,
 )
 
 logger = logging.getLogger(__name__)
 
 WEBSITE_URL = "https://www.petsmart.ca"
-
-# GA field patterns — ordered with longer/more-specific patterns FIRST
-GA_PATTERNS: list[tuple[str, str]] = [
-    (r"omega[\s-]*6\s+fatty\s+acid", "omega_6"),
-    (r"omega[\s-]*6", "omega_6"),
-    (r"omega[\s-]*3\s+fatty\s+acid", "omega_3"),
-    (r"omega[\s-]*3", "omega_3"),
-    (r"crude\s+protein", "crude_protein"),
-    (r"crude\s+fat", "crude_fat"),
-    (r"crude\s+fib[re]+", "crude_fiber"),
-    (r"moisture", "moisture"),
-    (r"\bash\b", "ash"),
-    (r"calcium", "calcium"),
-    (r"phosphorus", "phosphorus"),
-    (r"glucosamine", "glucosamine"),
-    (r"chondroitin", "chondroitin"),
-    (r"taurine", "taurine"),
-    (r"\bdha\b", "dha"),
-    (r"\bepa\b", "epa"),
-    (r"l-carnitine", "l_carnitine"),
-]
 
 
 # ---------------------------------------------------------------------------
@@ -253,6 +233,94 @@ def extract_rsc_text(html: str) -> str | None:
     return best_text if best_text else None
 
 
+def detect_flavor_variants(html: str) -> list[str]:
+    """Detect flavor variants from PetSmart radio buttons.
+
+    Returns list of flavor names (e.g. ["Beef", "Chicken", "Lamb & Sweet Potato"]).
+    Empty list if no flavor selectors found.
+    """
+    import html as html_mod
+
+    flavors: list[str] = []
+    for m in re.finditer(
+        r'data-testid="variant-base-flavor-[^"]*"[^>]*>\s*'
+        r'<span[^>]*class="variant-base__label-text"[^>]*>([^<]+)</span>',
+        html,
+    ):
+        # Decode HTML entities (e.g. &amp; -> &) since we're parsing raw HTML
+        flavor = html_mod.unescape(m.group(1).strip())
+        if flavor and flavor not in flavors:
+            flavors.append(flavor)
+    return flavors
+
+
+def extract_rsc_texts_by_flavor(
+    html: str, flavors: list[str]
+) -> dict[str, str]:
+    """Extract per-flavor RSC nutritional text from a multi-flavor page.
+
+    Each RSC chunk on a multi-flavor page contains a Flavor field
+    (e.g. "Flavor: Chicken") that we match against the detected flavors.
+
+    Returns {flavor_name: rsc_text} for each matched flavor.
+    """
+    # Collect all nutritional RSC chunks
+    chunks: list[str] = []
+    for m in re.finditer(r'self\.__next_f\.push\(\[1,"(.*?)"\]\)', html):
+        payload = m.group(1)
+        if "ngredient" not in payload and "uaranteed" not in payload:
+            continue
+        try:
+            unescaped = payload.encode().decode("unicode_escape")
+        except (UnicodeDecodeError, ValueError):
+            continue
+        soup = BeautifulSoup(unescaped, "lxml")
+        text = soup.get_text(separator="\n", strip=True)
+        if text and re.search(r"Ingredients\s*:", text):
+            chunks.append(text)
+
+    # Match each chunk to a flavor via "Flavor: <name>" in the text
+    flavor_lower = {f.lower(): f for f in flavors}
+    result: dict[str, str] = {}
+    unmatched_chunks: list[str] = []
+    for text in chunks:
+        fm = re.search(r"Flavor:\s*(.+)", text)
+        if fm:
+            chunk_flavor = fm.group(1).strip().lower()
+            if chunk_flavor in flavor_lower:
+                result[flavor_lower[chunk_flavor]] = text
+                continue
+        unmatched_chunks.append(text)
+
+    # Second pass: match unmatched chunks by primary protein (first word of
+    # flavor name). Handles PetSmart typos like "Turkey & Sweet Poato".
+    if unmatched_chunks:
+        unmatched_flavors = [f for f in flavors if f not in result]
+        for text in unmatched_chunks:
+            fm = re.search(r"Flavor:\s*(.+)", text)
+            chunk_flavor = fm.group(1).strip().lower() if fm else ""
+            for fl_name in unmatched_flavors:
+                primary = fl_name.split("&")[0].split(",")[0].strip().lower()
+                if primary and primary in chunk_flavor:
+                    result[fl_name] = text
+                    unmatched_flavors.remove(fl_name)
+                    break
+
+    # Last resort: match flavor name in description (e.g. "Chicken Pate")
+    if len(result) < len(flavors):
+        for text in unmatched_chunks:
+            if text in result.values():
+                continue
+            for fl_name in flavors:
+                if fl_name not in result and re.search(
+                    rf"\b{re.escape(fl_name)}\s+Pate\b", text, re.IGNORECASE
+                ):
+                    result[fl_name] = text
+                    break
+
+    return result
+
+
 # ---------------------------------------------------------------------------
 # Nutritional parsing
 # ---------------------------------------------------------------------------
@@ -340,85 +408,6 @@ def clean_ingredients(
     text = re.sub(r"[.\s]+\d*[A-Z]\d{4,}[A-Z]?$", "", text)
     return text.strip().rstrip(".,;")
 
-
-def parse_ga(text: str) -> GuaranteedAnalysis | None:
-    """Parse GA from RSC payload text."""
-    ga: dict[str, float] = {}
-    _MAX_BY_DEFAULT = {"ash", "crude_fiber", "moisture"}
-
-    # Fix PetSmart jammed GA formats (no separators between fields)
-    # "GUARANTEED ANALYSISCrude" or "Guaranteed AnalysisCrude"
-    text = re.sub(r"Analysis(?=Crude|Moisture)", "Analysis\n", text, flags=re.IGNORECASE)
-    # "(MIN) % 30.00" -> "30.00% MIN" (percent before number)
-    text = re.sub(r"\(MIN\)\s*%\s*([\d.]+)", r"\1% MIN", text)
-    text = re.sub(r"\(MAX\)\s*%\s*([\d.]+)", r"\1% MAX", text)
-    # "30%Crude" or "10.0%Crude" -> add newline (percent jammed to next field)
-    # Don't split "30% MIN" or "30% MAX" — only when followed by field names
-    text = re.sub(r"(\d%)(?=[A-Z](?!IN\b|AX\b))", r"\1\n", text)
-    # "MINCrude" or "MAXCrude" -> add newline
-    text = re.sub(r"(MIN|MAX)(?=[A-Z])", r"\1\n", text)
-
-    segments: list[str] = []
-    for line in text.split("\n"):
-        line = line.strip()
-        if not line:
-            continue
-        pct_count = len(re.findall(r"\d+\.?\d*\s*%", line))
-        if pct_count > 1:
-            # Split on comma/semicolon before uppercase
-            parts = re.split(r"[,;]\s*(?=[A-Z*])", line)
-            if len(parts) < pct_count:
-                # Split on GA field boundaries in all-on-one-line format.
-                # Insert newlines after: "% MIN/MAX/min./max." or "N %" before uppercase
-                # Allow optional period after % (e.g. "2.00%. MIN")
-                normalized = re.sub(
-                    r"(%\.?\s*(?:MIN|MAX|min\.|max\.)?)\s+(?=[A-Z*])",
-                    r"\1\n",
-                    line,
-                )
-                parts = [p.strip() for p in normalized.split("\n") if p.strip()]
-            segments.extend(parts)
-        else:
-            segments.append(line)
-
-    for segment in segments:
-        segment = segment.strip()
-        if not segment:
-            continue
-
-        segment_lower = segment.lower()
-
-        for pattern, field_base in GA_PATTERNS:
-            if not re.search(pattern, segment_lower):
-                continue
-
-            is_max = bool(re.search(r"\bmax\b", segment_lower))
-            is_min = bool(re.search(r"\bmin\b", segment_lower))
-
-            if not is_max and not is_min:
-                is_max = field_base in _MAX_BY_DEFAULT
-                is_min = not is_max
-
-            suffix = "_max" if is_max else "_min"
-
-            val_match = re.search(r"(\d+\.?\d*)\s*%", segment)
-            if not val_match and field_base in _MAX_BY_DEFAULT | {
-                "crude_protein",
-                "crude_fat",
-            }:
-                fallback = re.search(
-                    r"(?:min|max)\.?\)?\s+(\d+\.?\d*)(?!\s*mg)",
-                    segment,
-                    re.IGNORECASE,
-                )
-                if fallback:
-                    val_match = fallback
-            if val_match:
-                ga[f"{field_base}{suffix}"] = float(val_match.group(1))
-
-            break
-
-    return ga if ga else None  # type: ignore[return-value]
 
 
 def _fix_reversed_units(raw: str) -> str:
@@ -509,6 +498,8 @@ def detect_format(url: str, name: str, product_type: str) -> str:
 
     if "canned-food" in url_lower or "wet" in name_lower:
         return "wet"
+    if "frozen" in url_lower or "frozen" in name_lower:
+        return "wet"
     if "food-toppers" in url_lower or "topper" in name_lower:
         return "wet"
     if "stew" in name_lower or "broth" in name_lower:
@@ -549,6 +540,53 @@ def detect_breed_size(name: str) -> str | None:
 # ---------------------------------------------------------------------------
 # Product parsing
 # ---------------------------------------------------------------------------
+
+
+def _parse_description_tab_nutrition(
+    soup: BeautifulSoup,
+) -> tuple[str | None, str | None]:
+    """Extract ingredients and calorie content from the Description tab HTML.
+
+    Some PetSmart product pages (esp. wet food) embed nutritional data inline
+    in the Description tab as <p><b>Ingredients: </b>...</p> instead of in
+    RSC payloads. This is a fallback when RSC extraction comes up empty.
+
+    Returns (ingredients, calorie_content) — either may be None.
+    """
+    desc_tab = soup.find(attrs={"data-testid": "product-description-tab"})
+    if not desc_tab:
+        return None, None
+
+    ingredients: str | None = None
+    calorie_content: str | None = None
+
+    for bold in desc_tab.find_all("b"):
+        label = bold.get_text(strip=True).lower()
+        # Get the text after the <b> tag within the same <p>
+        parent = bold.parent
+        if not parent:
+            continue
+        full_text = parent.get_text(strip=True)
+        # Strip the label prefix
+        value = re.sub(
+            r"^" + re.escape(bold.get_text(strip=True)) + r"\s*",
+            "",
+            full_text,
+        ).strip()
+        if not value:
+            continue
+
+        if label.startswith("ingredients") and not ingredients:
+            value = clean_text(value)
+            if len(value) > 10:
+                ingredients = value
+
+        if label.startswith("caloric content") and not calorie_content:
+            cal = normalize_calorie_content(clean_text(value))
+            if cal:
+                calorie_content = cal
+
+    return ingredients, calorie_content
 
 
 def parse_product(
@@ -715,6 +753,20 @@ def parse_product(
         cal = parse_calories(rsc_text)
         if cal:
             product["calorie_content"] = cal
+
+    # Fallback: check Description tab HTML for inline ingredients/calories.
+    # Some products (esp. wet food) have nutritional data as <b>Label: </b>
+    # inside the description tab instead of RSC payloads.
+    if "ingredients_raw" not in product or "calorie_content" not in product:
+        desc_ing, desc_cal = _parse_description_tab_nutrition(soup)
+        if desc_ing and "ingredients_raw" not in product:
+            product["ingredients_raw"] = clean_ingredients(
+                desc_ing, overrides=ingredient_overrides
+            )
+            logger.info(f"  Description tab fallback: ingredients for {name}")
+        if desc_cal and "calorie_content" not in product:
+            product["calorie_content"] = desc_cal
+            logger.info(f"  Description tab fallback: calories for {name}")
 
     # Apply manual data overrides (fixes bad source data or fills missing fields)
     if manual_product_data:

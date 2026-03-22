@@ -13,7 +13,8 @@
     "common_side_effects": "Vomiting/nausea (6.9% vs 4.2% placebo), Otitis externa (6.3%), Hematuria (4.9%), Anorexia (4.2%), Diarrhea (4.2% vs 10.4% placebo), Crystalluria (3.5%), Lethargy (3.5%), Upset stomach/flatulence/bloating (2.1%). Lab: leukopenia, elevated ALT/AST. Safety study: demodicosis at 5X dose",
     "side_effects_sources": "[FDA NADA 141-596 FOI](https://animaldrugsatfda.fda.gov/adafda/app/search/public/document/downloadFoi/18155) (n=144 treated vs n=144 placebo, 28 days)",
     "suppresses_itch": true,
-    "has_gi_side_effects": true
+    "has_gi_side_effects": true,
+    "learn_more_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4926fcfa-20a0-46d8-aca2-53ae88332a31"
   },
   {
     "name": "Zenrelia",
@@ -29,7 +30,8 @@
     "common_side_effects": "Vomiting/nausea (15.5–22.1%), Diarrhea (12.6–19.9%), Lethargy (12.1–12.2%), Otitis externa (3.9–10.5%), Anorexia (4.9–9.4%), Dermal growths (1.5–8.8%), Elevated liver enzymes (3.9–5.5%), UTI (5.5–6.3%)",
     "side_effects_sources": "[FDA NADA 141-585 FOI](https://animaldrugsatfda.fda.gov/adafda/app/search/public/document/downloadFoi/15865) (n=181+206, 112 days)",
     "suppresses_itch": true,
-    "has_gi_side_effects": true
+    "has_gi_side_effects": true,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/ilunocitinib"
   },
   {
     "name": "Apoquel",
@@ -46,7 +48,8 @@
     "common_side_effects": "Pyoderma (12.0%), Dermal lumps (12.0%), Otitis (9.9%), Vomiting (2.3–9.2%), Diarrhea (2.3–6.0%), Histiocytoma (3.9%), Cystitis (3.5%), Anorexia (1.4–3.2%), Lethargy (1.8–2.8%)",
     "side_effects_sources": "[FDA NADA 141-345 FOI](https://animaldrugsatfda.fda.gov/adafda/app/search/public/document/downloadFoi/902) (n=283, up to 112 days); [DailyMed label](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=275a2c51-9679-4f42-b8cc-21b04369a056)",
     "suppresses_itch": true,
-    "has_gi_side_effects": true
+    "has_gi_side_effects": true,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/oclacitinib"
   },
   {
     "name": "Cytopoint",
@@ -64,7 +67,8 @@
     "common_side_effects": "Adverse events at rates similar to placebo — no drug-attributable percentages. EMA: anaphylaxis/facial swelling (rare)",
     "side_effects_sources": "[Michels et al. 2016 Vet Dermatol](https://pubmed.ncbi.nlm.nih.gov/27647569/) (efficacy, n=211); [EMA EPAR](https://www.ema.europa.eu/en/medicines/veterinary/EPAR/cytopoint)",
     "suppresses_itch": true,
-    "has_gi_side_effects": false
+    "has_gi_side_effects": false,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/lokivetmab"
   },
   {
     "name": "Atopica",
@@ -80,7 +84,8 @@
     "common_side_effects": "Vomiting (30.9%), Diarrhea (20.0%), Otitis externa (6.8%), UTI (3.8%), Anorexia (3.0%), Lethargy (2.3%), Gingival hyperplasia (2.3%), Lymphadenopathy (2.3%)",
     "side_effects_sources": "[FDA NADA 141-218 FOI](https://animaldrugsatfda.fda.gov/adafda/app/search/public/document/downloadFoi/749) (n=265)",
     "suppresses_itch": true,
-    "has_gi_side_effects": true
+    "has_gi_side_effects": true,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/cyclosporine-oral"
   },
   {
     "name": "Cortavance",
@@ -96,7 +101,8 @@
     "common_side_effects": "One transient local reaction (1/54, 1.9%) — aggravated erythema, resolved by Day 7. No systemic adverse effects. HPA axis suppression at 3–5X dose (reversible)",
     "side_effects_sources": "[EMA EPAR](https://www.ema.europa.eu/en/medicines/veterinary/EPAR/cortavance) (n=54, 7 days)",
     "suppresses_itch": true,
-    "has_gi_side_effects": false
+    "has_gi_side_effects": false,
+    "learn_more_url": "https://www.drugs.com/vet/cortavance-topical-spray-solution-can.html"
   },
   {
     "name": "Genesis Spray",
@@ -114,7 +120,8 @@
     "common_side_effects": "Polyuria (5.3%), Polydipsia (5.3%), Polyphagia (1.8%), Local reactions/sneezing/watery eyes (≤3.6% — pooled across both groups)",
     "side_effects_sources": "[FDA NADA 141-210 FOI](https://animaldrugsatfda.fda.gov/adafda/app/search/public/document/downloadFoi/734) (n=57, 28 days)",
     "suppresses_itch": true,
-    "has_gi_side_effects": false
+    "has_gi_side_effects": false,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/triamcinolone-acetonide-topical"
   },
   {
     "name": "Diphenhydramine (Benadryl)",
@@ -131,7 +138,8 @@
     "common_side_effects": "Sedation/drowsiness (common), Dry mouth (common), Urinary retention (uncommon), GI upset (uncommon)",
     "side_effects_sources": "[VCA monograph](https://vcahospitals.com/know-your-pet/diphenhydramine)",
     "suppresses_itch": true,
-    "has_gi_side_effects": false
+    "has_gi_side_effects": false,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/diphenhydramine"
   },
   {
     "name": "Hydroxyzine (Atarax)",
@@ -148,7 +156,8 @@
     "common_side_effects": "Sedation/drowsiness (common), Fine tremors at high doses (uncommon), GI upset (uncommon)",
     "side_effects_sources": "[VCA monograph](https://vcahospitals.com/know-your-pet/hydroxyzine)",
     "suppresses_itch": true,
-    "has_gi_side_effects": false
+    "has_gi_side_effects": false,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/hydroxyzine"
   },
   {
     "name": "Cetirizine (Zyrtec)",
@@ -165,7 +174,8 @@
     "common_side_effects": "Sedation/drowsiness (uncommon — 2nd-gen, less sedating), Vomiting (rare), Hypersalivation (rare)",
     "side_effects_sources": "[VCA monograph](https://vcahospitals.com/know-your-pet/cetirizine)",
     "suppresses_itch": true,
-    "has_gi_side_effects": false
+    "has_gi_side_effects": false,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/cetirizine"
   },
   {
     "name": "Temaril-P",
@@ -182,7 +192,8 @@
     "common_side_effects": "Sedation/drowsiness (common), Polydipsia/polyuria (common with prolonged use), Increased appetite (expected — prednisolone component)",
     "side_effects_sources": "[DailyMed label](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9de07d0d-44df-47da-b4b7-24f5fc803b46)",
     "suppresses_itch": true,
-    "has_gi_side_effects": true
+    "has_gi_side_effects": true,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/trimeprazine---prednisolone"
   },
   {
     "name": "Ketoconazole",
@@ -199,7 +210,8 @@
     "common_side_effects": "Lack of appetite, Vomiting, Diarrhea, Liver toxicity (requires monitoring — liver enzymes every 2-3 months), Lightened coat color with prolonged use",
     "side_effects_sources": "[VCA monograph](https://vcahospitals.com/know-your-pet/ketoconazole)",
     "suppresses_itch": false,
-    "has_gi_side_effects": true
+    "has_gi_side_effects": true,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/ketoconazole"
   },
   {
     "name": "Itraconazole (Sporanox)",
@@ -215,7 +227,60 @@
     "common_side_effects": "Lack of appetite, Vomiting, Weight loss, Liver toxicity (requires monitoring)",
     "side_effects_sources": "[VCA monograph](https://vcahospitals.com/know-your-pet/itraconazole)",
     "suppresses_itch": false,
-    "has_gi_side_effects": true
+    "has_gi_side_effects": true,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/itraconazole"
+  },
+  {
+    "name": "Tacrolimus (Protopic)",
+    "generic_name": "tacrolimus",
+    "manufacturer": null,
+    "category": "allergy",
+    "drug_class": "topical calcineurin inhibitor",
+    "dosage_form": "topical",
+    "default_intervals": [
+      "twice_daily",
+      "daily"
+    ],
+    "description": "Topical immunosuppressive ointment for localized allergic dermatitis (ears, face, paws). No systemic immunosuppression at topical doses. Wear gloves when applying. Do not allow licking of application site for 30 minutes after application.",
+    "common_side_effects": "Mild irritation/redness at application site (common, usually transient), Itching at application site (uncommon). No adverse effects reported in RCT (n=12). Serious (rare per VCA): allergic reaction, weakness, decreased appetite, fever/infection",
+    "side_effects_sources": "[Marsella et al. 2004 Vet Dermatol](https://pubmed.ncbi.nlm.nih.gov/15500481/) (RCT, n=12 dogs with atopic dermatitis, no adverse effects reported); [VCA monograph](https://vcahospitals.com/know-your-pet/tacrolimus)",
+    "suppresses_itch": true,
+    "has_gi_side_effects": false,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/tacrolimus"
+  },
+  {
+    "name": "Fluconazole (Diflucan)",
+    "generic_name": "fluconazole",
+    "manufacturer": null,
+    "category": "allergy",
+    "drug_class": "antifungal",
+    "dosage_form": "tablet",
+    "default_intervals": [
+      "daily"
+    ],
+    "description": "Triazole antifungal for yeast and fungal infections including dermatophytosis and systemic mycoses. Also available as liquid suspension.",
+    "common_side_effects": "Decreased appetite (common), Vomiting (common), Diarrhea/soft stools (common), Hepatotoxicity/elevated liver enzymes (uncommon — monitor with long-term use)",
+    "side_effects_sources": "[KuKanich et al. 2020 J Vet Pharmacol Ther](https://pubmed.ncbi.nlm.nih.gov/32656792/) (multicenter, n=37 dogs with fungal disease); [VCA monograph](https://vcahospitals.com/know-your-pet/fluconazole)",
+    "suppresses_itch": false,
+    "has_gi_side_effects": true,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/fluconazole"
+  },
+  {
+    "name": "Terbinafine (Lamisil)",
+    "generic_name": "terbinafine",
+    "manufacturer": null,
+    "category": "allergy",
+    "drug_class": "antifungal",
+    "dosage_form": "tablet",
+    "default_intervals": [
+      "daily"
+    ],
+    "description": "Allylamine antifungal primarily for dermatophytosis (ringworm) and other skin fungal infections. Give with food. Requires baseline liver panel and periodic monitoring with long-term use.",
+    "common_side_effects": "Vomiting (uncommon), Decreased appetite (uncommon), Diarrhea (uncommon), Excessive panting (uncommon), Elevated liver enzymes (uncommon — monitor long-term)",
+    "side_effects_sources": "[VCA monograph](https://vcahospitals.com/know-your-pet/terbinafine) (notes limited veterinary studies); [VIN/Veterinary Partner](https://veterinarypartner.vin.com/)",
+    "suppresses_itch": false,
+    "has_gi_side_effects": true,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/terbinafine"
   },
   {
     "name": "Simparica Trio",
@@ -231,7 +296,8 @@
     "common_side_effects": "Vomiting (14.3%), Diarrhea (13.2%), Lethargy (8.5%), Anorexia (5.1%), Polyuria (3.7%), Polydipsia (2.2%), Hyperactivity (2.2%)",
     "side_effects_sources": "[DailyMed label](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0f83bcf4-7e89-479f-a980-4cb40456ee78) (n=272)",
     "suppresses_itch": false,
-    "has_gi_side_effects": false
+    "has_gi_side_effects": false,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/moxidectin--sarolaner--pyrantel"
   },
   {
     "name": "Simparica",
@@ -247,7 +313,8 @@
     "common_side_effects": "Vomiting (0.95%), Diarrhea (0.63%), Lethargy (0.32%)",
     "side_effects_sources": "[DailyMed label](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=91fc9ba1-35e6-4e37-8c37-c5e40699bd5b) (n=315)",
     "suppresses_itch": false,
-    "has_gi_side_effects": false
+    "has_gi_side_effects": false,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/sarolaner"
   },
   {
     "name": "NexGard",
@@ -263,7 +330,8 @@
     "common_side_effects": "Vomiting (4.1%), Dry/flaky skin (3.1%), Diarrhea (3.1%), Lethargy (1.7%), Anorexia (1.2%)",
     "side_effects_sources": "[DailyMed label](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e10f7434-d00c-44de-af79-7b0886b2e948) (FDA NADA 141-406, n=415)",
     "suppresses_itch": false,
-    "has_gi_side_effects": false
+    "has_gi_side_effects": false,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/afoxolaner"
   },
   {
     "name": "NexGard PLUS",
@@ -279,7 +347,8 @@
     "common_side_effects": "Diarrhea (6.7%), Vomiting (4.5%), Lethargy (2.2%), Itching (2.2%), Dermatitis (1.5%)",
     "side_effects_sources": "[DailyMed label](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1eb7bc46-cac9-47d2-bbdc-6801690dfbc4) (FDA NADA 141-554, n=134, 330 days)",
     "suppresses_itch": false,
-    "has_gi_side_effects": false
+    "has_gi_side_effects": false,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/afoxolanermoxidectinpyrantel"
   },
   {
     "name": "NexGard Spectra",
@@ -295,7 +364,8 @@
     "common_side_effects": "Vomiting, diarrhea, lethargy, anorexia, pruritus (each uncommon, 0.1–1%)",
     "side_effects_sources": "[EMA EPAR](https://www.ema.europa.eu/en/medicines/veterinary/EPAR/nexgard-spectra)",
     "suppresses_itch": false,
-    "has_gi_side_effects": false
+    "has_gi_side_effects": false,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/milbemycin-oxime--afoxolaner"
   },
   {
     "name": "Bravecto",
@@ -311,7 +381,8 @@
     "common_side_effects": "Vomiting (7.1%), Decreased appetite (6.7%), Lethargy (5.4%), Diarrhea (4.9%), Polydipsia (1.8%), Flatulence (1.3%)",
     "side_effects_sources": "[DailyMed label](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1fcbf232-cfd4-481e-ba9b-6251b7b468d7) (FDA NADA 141-426, n=224, 182 days)",
     "suppresses_itch": false,
-    "has_gi_side_effects": false
+    "has_gi_side_effects": false,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/fluralaner"
   },
   {
     "name": "Credelio",
@@ -327,7 +398,8 @@
     "common_side_effects": "Weight loss (1.5%), Elevated BUN (1.0%), Polyuria (1.0%), Diarrhea (1.0%)",
     "side_effects_sources": "[DailyMed label](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=427f2ebc-ce24-452b-bbb3-43d4ef8b63b0) (n=198)",
     "suppresses_itch": false,
-    "has_gi_side_effects": false
+    "has_gi_side_effects": false,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/lotilaner"
   },
   {
     "name": "Credelio Plus",
@@ -343,7 +415,8 @@
     "common_side_effects": "Diarrhea (8.8%), Vomiting (8.2%), Anorexia (5.0%), Lethargy (3.1%)",
     "side_effects_sources": "[Health Canada product monograph](https://pdf.hres.ca/dpd_pm/00064937.PDF) (US field study, n=159); [EMA EPAR](https://www.ema.europa.eu/en/medicines/veterinary/EPAR/credelio-plus)",
     "suppresses_itch": false,
-    "has_gi_side_effects": false
+    "has_gi_side_effects": false,
+    "learn_more_url": "https://www.drugs.com/vet/credelio-plus-225-mg-8-44-mg-can.html"
   },
   {
     "name": "Credelio Quattro",
@@ -359,7 +432,8 @@
     "common_side_effects": "Diarrhea w/ or w/o blood (11.0%), Vomiting (9.4%), Lethargy (6.3%), Anorexia (5.8%), Dermatitis (5.2%), Weight loss (3.1%)",
     "side_effects_sources": "[DailyMed label](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ad403eb7-0c03-4bda-9698-3757860043cf) (FDA NADA 141-581, n=191, 330 days)",
     "suppresses_itch": false,
-    "has_gi_side_effects": false
+    "has_gi_side_effects": false,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/lotilaner--moxidectin--praziquantel--pyrantel"
   },
   {
     "name": "Revolution",
@@ -375,7 +449,8 @@
     "common_side_effects": "Vomiting, diarrhea, lethargy, salivation (each ≤0.5% of dogs and cats combined)",
     "side_effects_sources": "[DailyMed label](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8032a1ae-d192-4514-80f1-9a3b50dc2155) (n=1,743 dogs+cats)",
     "suppresses_itch": false,
-    "has_gi_side_effects": false
+    "has_gi_side_effects": false,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/selamectin"
   },
   {
     "name": "Advantage Multi",
@@ -391,7 +466,8 @@
     "common_side_effects": "Pruritus (14.8%), Residue at site (7.0%), Medicinal odor (3.9%), Hyperactivity (0.8%), Lethargy (0.8%), Inappetence (0.8%)",
     "side_effects_sources": "[DailyMed label](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3fc1a42b-6576-4890-aa0c-5c0eb903c85a) (HW-negative dogs, n=128)",
     "suppresses_itch": false,
-    "has_gi_side_effects": false
+    "has_gi_side_effects": false,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/moxidectin--imidacloprid-topical"
   },
   {
     "name": "K9 Advantix II",
@@ -407,7 +483,8 @@
     "common_side_effects": "Skin irritation/redness at site, scratching, lethargy, vomiting (all uncommon — no clinical trial %)",
     "side_effects_sources": "[EPA product label](https://www3.epa.gov/pesticides/chem_search/ppls/011556-00143-20220214.pdf)",
     "suppresses_itch": false,
-    "has_gi_side_effects": false
+    "has_gi_side_effects": false,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/imidacloprid-permethrin-and-pyriproxyfen"
   },
   {
     "name": "Frontline Plus",
@@ -423,7 +500,8 @@
     "common_side_effects": "Application-site irritation (uncommon). Very rarely: lethargy, vomiting, diarrhea",
     "side_effects_sources": "[EPA product label](https://www3.epa.gov/pesticides/chem_search/ppls/065331-00005-20151119.pdf)",
     "suppresses_itch": false,
-    "has_gi_side_effects": false
+    "has_gi_side_effects": false,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/fipronil/(s)-methoprene"
   },
   {
     "name": "Seresto",
@@ -439,7 +517,8 @@
     "common_side_effects": "Application-site reactions: itching, redness, slight hair loss. Uncommon but more serious: neurologic symptoms",
     "side_effects_sources": "[EPA review](https://www.epa.gov/pets/seresto-pet-collar-review)",
     "suppresses_itch": false,
-    "has_gi_side_effects": false
+    "has_gi_side_effects": false,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/imidacloprid-with-flumethrin-serestor-collar"
   },
   {
     "name": "Heartgard Plus",
@@ -455,7 +534,8 @@
     "common_side_effects": "Vomiting or diarrhea within 24hrs (1.1% of administered doses — not per dog)",
     "side_effects_sources": "[DailyMed label](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=595a4883-6b37-4190-9579-a2c7ca4738eb)",
     "suppresses_itch": false,
-    "has_gi_side_effects": false
+    "has_gi_side_effects": false,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/ivermectin--pyrantel"
   },
   {
     "name": "Interceptor Plus",
@@ -471,7 +551,8 @@
     "common_side_effects": "Vomiting, diarrhea, lethargy, ataxia, anorexia (reported — no specific field trial %)",
     "side_effects_sources": "[DailyMed label](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=86b367e3-64e5-4c44-9961-6caea5d12e75)",
     "suppresses_itch": false,
-    "has_gi_side_effects": false
+    "has_gi_side_effects": false,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/milbemycin-oxime--praziquantel"
   },
   {
     "name": "ProHeart 6",
@@ -487,7 +568,8 @@
     "common_side_effects": "Anaphylaxis (uncommon), vomiting, diarrhea, lethargy (post-market)",
     "side_effects_sources": "[DailyMed label](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ec3ba375-9519-4a3d-afe3-eda451bb3488)",
     "suppresses_itch": false,
-    "has_gi_side_effects": false
+    "has_gi_side_effects": false,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/moxidectin-injectable"
   },
   {
     "name": "ProHeart 12",
@@ -503,7 +585,8 @@
     "common_side_effects": "Vomiting (25.3%), Lethargy (15.5%), Diarrhea (14.5%), Anorexia (13.8%), Seizures (3.4%), Hepatopathy (2.7%), Hypersalivation (2.4%), Anaphylactoid reactions (2.0%)",
     "side_effects_sources": "[DailyMed label](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e856da36-f717-4645-8841-27460cf87d91) (n=297, 605 days)",
     "suppresses_itch": false,
-    "has_gi_side_effects": false
+    "has_gi_side_effects": false,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/moxidectin-injectable"
   },
   {
     "name": "Bravecto Quantum",
@@ -519,7 +602,8 @@
     "common_side_effects": "Lethargy (4.9%), Decreased appetite (4.4%), Vomiting (4.0%), Diarrhea (2.7%), Elevated liver enzymes (2.7%), Pruritus (1.8%), Injection site lumps (1.3%), Seizures (0.9%)",
     "side_effects_sources": "[DailyMed label](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=82f1fc7c-41f1-4a1d-8117-6d8eb9d0b54f) (FDA NADA 141-599, n=225, 455 days)",
     "suppresses_itch": false,
-    "has_gi_side_effects": false
+    "has_gi_side_effects": false,
+    "learn_more_url": "https://www.drugs.com/vet/bravecto-quantum.html"
   },
   {
     "name": "Drontal Plus",
@@ -535,7 +619,8 @@
     "common_side_effects": "No drug-related side effects in field study (n=103). Lab studies: vomiting and soft stool at 5X dose",
     "side_effects_sources": "[DailyMed label](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9ccf3782-220d-4e8e-95d0-8e79a9a909ae)",
     "suppresses_itch": false,
-    "has_gi_side_effects": false
+    "has_gi_side_effects": false,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/praziquantelpyrantel-pamoatefebantel"
   },
   {
     "name": "Panacur",
@@ -551,7 +636,8 @@
     "common_side_effects": "Vomiting (~1%, 3/240 dogs). Prolonged off-label use: pancytopenia/bone marrow hypoplasia (12 reports as of Oct 2023)",
     "side_effects_sources": "[DailyMed label](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=68790921-c3e3-4d99-b406-fe55b5549636); [FDA Dear Vet letter Apr 2024](https://www.fda.gov/animal-veterinary/product-safety-information/dear-veterinarian-letter-regarding-adverse-events-associated-extra-label-use-fenbendazole-dogs)",
     "suppresses_itch": false,
-    "has_gi_side_effects": false
+    "has_gi_side_effects": false,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/fenbendazole"
   },
   {
     "name": "Metronidazole",
@@ -567,7 +653,8 @@
     "common_side_effects": "Nausea/anorexia (common), Hypersalivation (common — bitter taste), Vomiting (common), Significant fecal microbiome dysbiosis lasting 4+ weeks. Neurotoxicity at high doses — ataxia, nystagmus, head tilt, seizures (uncommon, dose-dependent >60 mg/kg/day)",
     "side_effects_sources": "[Pilla et al. 2020 JVIM](https://pubmed.ncbi.nlm.nih.gov/32856349/) (microbiome); [VCA monograph](https://vcahospitals.com/know-your-pet/metronidazole)",
     "suppresses_itch": false,
-    "has_gi_side_effects": true
+    "has_gi_side_effects": true,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/metronidazole"
   },
   {
     "name": "Cerenia",
@@ -583,7 +670,8 @@
     "common_side_effects": "Hypersalivation (common), Vomiting unrelated to motion (common), Lethargy (uncommon), Injection-site pain on subcutaneous administration (common)",
     "side_effects_sources": "[FDA NADA 141-262 FOI](https://animaldrugsatfda.fda.gov/adafda/app/search/public/document/downloadFoi/816) (motion sickness); [VCA monograph](https://vcahospitals.com/know-your-pet/maropitant-citrate)",
     "suppresses_itch": false,
-    "has_gi_side_effects": true
+    "has_gi_side_effects": true,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/maropitant-citrate"
   },
   {
     "name": "Metoclopramide",
@@ -600,7 +688,8 @@
     "common_side_effects": "Restlessness/hyperactivity (uncommon), Extrapyramidal signs — muscle spasms, twitching (uncommon, dose-dependent), Drowsiness (uncommon), Constipation (uncommon)",
     "side_effects_sources": "[VCA monograph](https://vcahospitals.com/know-your-pet/metoclopramide)",
     "suppresses_itch": false,
-    "has_gi_side_effects": true
+    "has_gi_side_effects": true,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/metoclopramide"
   },
   {
     "name": "Famotidine",
@@ -617,7 +706,8 @@
     "common_side_effects": "Vomiting (rare), Diarrhea (rare), Decreased appetite (rare)",
     "side_effects_sources": "[VCA monograph](https://vcahospitals.com/know-your-pet/famotidine)",
     "suppresses_itch": false,
-    "has_gi_side_effects": true
+    "has_gi_side_effects": true,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/famotidine"
   },
   {
     "name": "Omeprazole",
@@ -633,7 +723,8 @@
     "common_side_effects": "GI adverse effects (2 dogs with GI signs: one with diarrhea+hematochezia, one with nausea→vomiting→diarrhea), Hypergastrinemia — elevated gastrin in 100% of dogs by day 30 (clinically silent)",
     "side_effects_sources": "[Gil-Vicente et al. 2024 Animals](https://pubmed.ncbi.nlm.nih.gov/38672316/) (60-day trial; methods: n=8 omeprazole group, AE section: 2/11)",
     "suppresses_itch": false,
-    "has_gi_side_effects": true
+    "has_gi_side_effects": true,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/omeprazole"
   },
   {
     "name": "Sucralfate",
@@ -651,7 +742,8 @@
     "common_side_effects": "Constipation (~2% — extrapolated from human data). Essentially no systemic side effects — not absorbed. Primary concern is drug interactions (binds other meds — separate by 2hrs)",
     "side_effects_sources": "[VCA monograph](https://vcahospitals.com/know-your-pet/sucralfate)",
     "suppresses_itch": false,
-    "has_gi_side_effects": true
+    "has_gi_side_effects": true,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/sucralfate"
   },
   {
     "name": "Misoprostol",
@@ -669,7 +761,8 @@
     "common_side_effects": "Diarrhea (common, dose-dependent — most frequent adverse effect), Abdominal cramping (common), Vomiting (common), Abortion in pregnant animals (contraindicated)",
     "side_effects_sources": "[VCA monograph](https://vcahospitals.com/know-your-pet/misoprostol); [Johnston et al. 1995 JAVMA](https://pubmed.ncbi.nlm.nih.gov/7891360/)",
     "suppresses_itch": false,
-    "has_gi_side_effects": true
+    "has_gi_side_effects": true,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/misoprostol"
   },
   {
     "name": "Budesonide",
@@ -685,7 +778,8 @@
     "common_side_effects": "Polydipsia (common), Excessive panting (common), Polyuria (common), Increased appetite (common), Lethargy (uncommon), Elevated ALP/ALT (common)",
     "side_effects_sources": "[Dye et al. 2013 JVIM](https://pubmed.ncbi.nlm.nih.gov/24112400/) (RCT, n=40 total)",
     "suppresses_itch": true,
-    "has_gi_side_effects": true
+    "has_gi_side_effects": true,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/budesonide"
   },
   {
     "name": "Azathioprine",
@@ -702,7 +796,8 @@
     "common_side_effects": "Hepatotoxicity/elevated ALT (15%), Bone marrow suppression — leukopenia, thrombocytopenia, anemia (8.3%), Anorexia (common), Vomiting (common), Diarrhea (common), Acute pancreatitis (uncommon)",
     "side_effects_sources": "[Wallisch & Trepanier 2015 JVIM](https://pubmed.ncbi.nlm.nih.gov/25641386/) (52 dogs enrolled; different subsets had different follow-up); [Eberhardy et al. 2022 Vet Derm](https://pubmed.ncbi.nlm.nih.gov/36000613/) (n=41, alternate-day: hepatotox 4.9%)",
     "suppresses_itch": false,
-    "has_gi_side_effects": true
+    "has_gi_side_effects": true,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/azathioprine"
   },
   {
     "name": "Tylosin",
@@ -719,7 +814,8 @@
     "common_side_effects": "Bitter taste (primary practical issue — requires capsule), Mild GI upset (rare), Fecal microbiome shifts (documented). Diarrhea commonly recurs after discontinuation",
     "side_effects_sources": "[Kilpinen et al. 2011 Acta Vet Scand](https://pubmed.ncbi.nlm.nih.gov/21489311/) (n=27); [Manchester et al. 2019 JVIM](https://pubmed.ncbi.nlm.nih.gov/31674054/) (microbiome, n=16)",
     "suppresses_itch": false,
-    "has_gi_side_effects": true
+    "has_gi_side_effects": true,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/tylosin"
   },
   {
     "name": "Ondansetron",
@@ -736,7 +832,8 @@
     "common_side_effects": "Sedation/drowsiness (uncommon), Constipation (uncommon), Transient liver enzyme elevation (rare)",
     "side_effects_sources": "[VCA monograph](https://vcahospitals.com/know-your-pet/ondansetron); [Foth et al. 2021 BMC Vet Res](https://pubmed.ncbi.nlm.nih.gov/34154584/) (n=16, no AEs reported)",
     "suppresses_itch": false,
-    "has_gi_side_effects": true
+    "has_gi_side_effects": true,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/ondansetron"
   },
   {
     "name": "Sulfasalazine",
@@ -753,7 +850,8 @@
     "common_side_effects": "GI upset — nausea, vomiting, diarrhea (common), Keratoconjunctivitis sicca/dry eye (common with prolonged use — requires Schirmer test monitoring), Cholestatic jaundice (rare)",
     "side_effects_sources": "[VCA monograph](https://vcahospitals.com/know-your-pet/sulfasalazine)",
     "suppresses_itch": false,
-    "has_gi_side_effects": true
+    "has_gi_side_effects": true,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/sulfasalazine"
   },
   {
     "name": "Mesalamine",
@@ -769,7 +867,8 @@
     "common_side_effects": "GI upset (expected — same active moiety as sulfasalazine), KCS/dry eye with prolonged use (requires Schirmer test monitoring), Nephrotoxicity (rare)",
     "side_effects_sources": "[MSD Vet Manual — IBD drugs](https://www.msdvetmanual.com/pharmacology/systemic-pharmacotherapeutics-of-the-digestive-system/drugs-used-to-treat-inflammatory-bowel-disease-in-monogastric-animals)",
     "suppresses_itch": false,
-    "has_gi_side_effects": true
+    "has_gi_side_effects": true,
+    "learn_more_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ba1e3bd4-fbe0-46a5-961e-167ccb09672c"
   },
   {
     "name": "Loperamide",
@@ -786,7 +885,8 @@
     "common_side_effects": "Constipation (common — expected effect), Bloat/GI distension (uncommon), Sedation (uncommon in normal dogs; severe in MDR1-mutant breeds — contraindicated). CNS toxicity in MDR1 breeds — ataxia, mydriasis, coma",
     "side_effects_sources": "[VCA monograph](https://vcahospitals.com/know-your-pet/loperamide); [Neff, Mealey et al. 2004 PNAS](https://pubmed.ncbi.nlm.nih.gov/15289602/) (multi-breed MDR1 frequency)",
     "suppresses_itch": false,
-    "has_gi_side_effects": true
+    "has_gi_side_effects": true,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/loperamide"
   },
   {
     "name": "Pancrelipase",
@@ -802,7 +902,8 @@
     "common_side_effects": "Oral bleeding (reported — resolves with dose reduction), Diarrhea (uncommon — dose-related), Vomiting (uncommon), Perioral irritation from enzyme contact (uncommon)",
     "side_effects_sources": "[Rutz et al. 2002 JAVMA](https://pubmed.ncbi.nlm.nih.gov/12494968/) (3 EPI dogs with oral bleeding)",
     "suppresses_itch": false,
-    "has_gi_side_effects": true
+    "has_gi_side_effects": true,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/pancrelipase"
   },
   {
     "name": "Clavamox",
@@ -818,7 +919,8 @@
     "common_side_effects": "Vomiting (common), Diarrhea (common), Anorexia (uncommon)",
     "side_effects_sources": "[VCA monograph](https://vcahospitals.com/know-your-pet/amoxicillin)",
     "suppresses_itch": false,
-    "has_gi_side_effects": true
+    "has_gi_side_effects": true,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/amoxicillin"
   },
   {
     "name": "Cephalexin",
@@ -835,7 +937,8 @@
     "common_side_effects": "Vomiting (common), Diarrhea (common), Anorexia (uncommon)",
     "side_effects_sources": "[VCA monograph](https://vcahospitals.com/know-your-pet/cephalexin)",
     "suppresses_itch": false,
-    "has_gi_side_effects": true
+    "has_gi_side_effects": true,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/cephalexin"
   },
   {
     "name": "Cefpodoxime (Simplicef)",
@@ -851,7 +954,8 @@
     "common_side_effects": "Vomiting (common), Diarrhea (common), Decreased appetite (uncommon)",
     "side_effects_sources": "[VCA monograph](https://vcahospitals.com/know-your-pet/cefpodoxime)",
     "suppresses_itch": false,
-    "has_gi_side_effects": true
+    "has_gi_side_effects": true,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/cefpodoxime"
   },
   {
     "name": "Clindamycin (Antirobe)",
@@ -867,7 +971,8 @@
     "common_side_effects": "Vomiting (common), Diarrhea (common), Anorexia (uncommon)",
     "side_effects_sources": "[VCA monograph](https://vcahospitals.com/know-your-pet/clindamycin)",
     "suppresses_itch": false,
-    "has_gi_side_effects": true
+    "has_gi_side_effects": true,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/clindamycin"
   },
   {
     "name": "Convenia",
@@ -883,7 +988,8 @@
     "common_side_effects": "Vomiting (common), Diarrhea (common), Lethargy (uncommon), Anorexia (uncommon). Single injection with 14-day duration — side effects cannot be stopped once administered",
     "side_effects_sources": "[VCA monograph](https://vcahospitals.com/know-your-pet/cefovecin)",
     "suppresses_itch": false,
-    "has_gi_side_effects": true
+    "has_gi_side_effects": true,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/cefovecin"
   },
   {
     "name": "Enrofloxacin (Baytril)",
@@ -899,7 +1005,130 @@
     "common_side_effects": "Vomiting (common), Diarrhea (common), Anorexia (uncommon), Retinal toxicity at high doses (rare — avoid in cats)",
     "side_effects_sources": "[VCA monograph](https://vcahospitals.com/know-your-pet/enrofloxacin)",
     "suppresses_itch": false,
-    "has_gi_side_effects": true
+    "has_gi_side_effects": true,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/enrofloxacin"
+  },
+  {
+    "name": "Chlorambucil (Leukeran)",
+    "generic_name": "chlorambucil",
+    "manufacturer": "Aspen Global",
+    "category": "gi",
+    "drug_class": "alkylating agent",
+    "dosage_form": "tablet",
+    "default_intervals": [
+      "daily",
+      "every_other_day"
+    ],
+    "description": "Alkylating immunosuppressant for refractory IBD when azathioprine or steroids are insufficient. Also used for lymphoma and immune-mediated diseases. Hazardous drug — always wear gloves when handling. Give with food. Do not crush or split tablets. Requires regular CBC monitoring.",
+    "common_side_effects": "Bone marrow suppression — neutropenia, thrombocytopenia, anemia (dose-dependent, requires monitoring), GI upset — vomiting, diarrhea, anorexia (common), Hepatotoxicity (uncommon), Hair coat changes/alopecia (uncommon)",
+    "side_effects_sources": "[Viviano 2022 Vet Clin North Am](https://pubmed.ncbi.nlm.nih.gov/35379498/) (review of immunosuppressives in dogs/cats); [VCA monograph](https://vcahospitals.com/know-your-pet/chlorambucil)",
+    "suppresses_itch": false,
+    "has_gi_side_effects": true,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/chlorambucil"
+  },
+  {
+    "name": "Mycophenolate (CellCept)",
+    "generic_name": "mycophenolate mofetil",
+    "manufacturer": "Genentech/Roche",
+    "category": "gi",
+    "drug_class": "immunosuppressant",
+    "dosage_form": "capsule",
+    "default_intervals": [
+      "twice_daily"
+    ],
+    "description": "Selective immunosuppressant (inhibits T and B lymphocyte proliferation) for IBD and immune-mediated diseases. Increasingly used as second-line alternative to azathioprine. Give on empty stomach. Wear gloves when handling. Requires regular CBC and biochemistry monitoring.",
+    "common_side_effects": "GI adverse events (24.4% — diarrhea, vomiting, anorexia most common), Neutropenia (4%), Anemia (4%), Thrombocytopenia (4%), Dermatologic — papillomas, pyoderma (1.5%), Lethargy (common)",
+    "side_effects_sources": "[Fukushima et al. 2021 JVIM](https://pubmed.ncbi.nlm.nih.gov/34231261/) (retrospective, n=131 dogs with immune-mediated disease); [VCA monograph](https://vcahospitals.com/know-your-pet/mycophenolate-mofetil)",
+    "suppresses_itch": false,
+    "has_gi_side_effects": true,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/mycophenolate-mofetil"
+  },
+  {
+    "name": "Cholestyramine (Questran)",
+    "generic_name": "cholestyramine",
+    "manufacturer": null,
+    "category": "gi",
+    "drug_class": "bile acid sequestrant",
+    "dosage_form": "powder",
+    "default_intervals": [
+      "twice_daily"
+    ],
+    "description": "Bile acid sequestrant for bile acid diarrhea and treatment-refractory chronic diarrhea. Binds bile acids in the intestine, preventing colonic irritation. Also used for certain toxicoses. Give with food. May impair absorption of fat-soluble vitamins (A, D, E, K) with long-term use — separate from other medications by 1-2 hours.",
+    "common_side_effects": "Constipation (common — expected effect, from human/class data), Fat-soluble vitamin malabsorption with prolonged use (A, D, E, K — class effect), Palatability issues — gritty texture (mix with food). Limited canine-specific adverse effect data",
+    "side_effects_sources": "[Toresson et al. 2021 Canine Med Genet](https://pubmed.ncbi.nlm.nih.gov/33468234/) (2 dogs with bile acid diarrhea — no adverse effects reported)",
+    "suppresses_itch": false,
+    "has_gi_side_effects": true,
+    "learn_more_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=362ddd91-a63f-4ec6-841a-75785dd208c8"
+  },
+  {
+    "name": "Ursodiol (Actigall)",
+    "generic_name": "ursodiol",
+    "manufacturer": null,
+    "category": "gi",
+    "drug_class": "bile acid reducer",
+    "dosage_form": "capsule",
+    "default_intervals": [
+      "daily"
+    ],
+    "description": "Ursodeoxycholic acid for gallbladder and bile-related liver diseases — mucocele, cholestasis, chronic hepatitis. Promotes bile flow, reduces hepatotoxic bile salts, and has immunomodulatory effects in the liver. Give with food. Very well tolerated.",
+    "common_side_effects": "Nausea (occasional), Diarrhea (uncommon), No serious side effects documented in dogs or cats in clinical testing",
+    "side_effects_sources": "[Allan et al. 2021 JVIM](https://pubmed.ncbi.nlm.nih.gov/34714561/) (n=13 medically treated dogs with cholelithiasis); [VCA monograph](https://vcahospitals.com/know-your-pet/ursodiol); [VIN/Veterinary Partner](https://veterinarypartner.vin.com/default.aspx?pid=19239&catId=154455&id=4951429)",
+    "suppresses_itch": false,
+    "has_gi_side_effects": true,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/ursodiol"
+  },
+  {
+    "name": "Mirtazapine (Remeron)",
+    "generic_name": "mirtazapine",
+    "manufacturer": null,
+    "category": "gi",
+    "drug_class": "appetite stimulant",
+    "dosage_form": "tablet",
+    "default_intervals": [
+      "daily",
+      "every_other_day"
+    ],
+    "description": "Tetracyclic antidepressant used as appetite stimulant and anti-nausea agent. Commonly prescribed alongside GI disease treatment for dogs with weight loss or inappetence. Also available as transdermal (Mirataz — FDA-approved for cats only). CONTRAINDICATED with MAOIs (amitraz/Mitaban). Do not stop abruptly.",
+    "common_side_effects": "Drowsiness/sedation (uncommon), Increased appetite (expected/desired effect), Vomiting (uncommon). Serotonin syndrome signs at higher doses: vocalization, agitation, muscle tremors, incoordination. No adverse effects observed in prospective placebo-controlled trial (n=25)",
+    "side_effects_sources": "[Theodoro et al. 2025 Animals](https://pubmed.ncbi.nlm.nih.gov/40941333/) (retrospective n=107 + prospective placebo-controlled n=25 dogs, no AEs observed); [VCA monograph](https://vcahospitals.com/know-your-pet/mirtazapine)",
+    "suppresses_itch": false,
+    "has_gi_side_effects": true,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/mirtazapine"
+  },
+  {
+    "name": "Entyce",
+    "generic_name": "capromorelin",
+    "manufacturer": "Elanco",
+    "category": "gi",
+    "drug_class": "ghrelin receptor agonist",
+    "dosage_form": "liquid",
+    "default_intervals": [
+      "daily"
+    ],
+    "description": "The only FDA-approved appetite stimulant for dogs. Ghrelin receptor agonist that triggers hunger signals in the hypothalamus. Liquid form administered via oral syringe. Use with caution in dogs with liver disease, renal insufficiency, cardiac disease, or diabetes.",
+    "common_side_effects": "Diarrhea (7.0% vs 6.8% placebo), Vomiting (6.4% vs 5.5% placebo), Polydipsia (4.1%), Elevated BUN (4.1%), Hypersalivation (2.3%), Abdominal discomfort (1.2%), Flatulence (1.2%), Nausea (1.2%)",
+    "side_effects_sources": "[FDA NADA 141-457 DailyMed label](https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=0a403b74-72be-4f90-a069-d747caea1247) (n=171 treated vs n=73 placebo, 4 days)",
+    "suppresses_itch": false,
+    "has_gi_side_effects": true,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/capromorelin"
+  },
+  {
+    "name": "Cisapride",
+    "generic_name": "cisapride",
+    "manufacturer": null,
+    "category": "gi",
+    "drug_class": "prokinetic",
+    "dosage_form": "capsule",
+    "default_intervals": [
+      "twice_daily",
+      "three_times_daily"
+    ],
+    "description": "Prokinetic that enhances GI motility for gastroparesis, reflux, and constipation. Compounding pharmacy only — withdrawn from human market due to cardiac arrhythmia risk. Use with caution in dogs with heart disease.",
+    "common_side_effects": "Vomiting (uncommon), Diarrhea/GI discomfort (uncommon), Excessive drooling (uncommon). At high doses: incoordination, muscle twitches, agitation, seizures",
+    "side_effects_sources": "[MSD Veterinary Manual](https://www.msdvetmanual.com/pharmacology/systemic-pharmacotherapeutics-of-the-digestive-system/gastrointestinal-prokinetic-drugs-used-in-monogastric-animals) (notes no adverse reactions reported in clinical veterinary use); [VCA monograph](https://vcahospitals.com/know-your-pet/cisapride)",
+    "suppresses_itch": false,
+    "has_gi_side_effects": true,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/cisapride"
   },
   {
     "name": "Metacam",
@@ -915,7 +1144,8 @@
     "common_side_effects": "Vomiting (16.7–29.4%), Diarrhea/soft stool (6.3–13.8%), Inappetence (2.8–4.2%), GI ulceration (rare — at 3–5X dose), Elevated liver enzymes (rare)",
     "side_effects_sources": "[FDA NADA 141-213 FOI](https://animaldrugsatfda.fda.gov/adafda/app/search/public/document/downloadFoi/736) (Study #1 n=109 treated, Study #2 n=48 treated); [DailyMed label](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c27c35d7-07e1-47d4-97cd-ed1fb17750ce)",
     "suppresses_itch": false,
-    "has_gi_side_effects": true
+    "has_gi_side_effects": true,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/meloxicam"
   },
   {
     "name": "Rimadyl",
@@ -932,7 +1162,8 @@
     "common_side_effects": "Vomiting (3.1%), Diarrhea (3.1%), Inappetence (1.6%), Elevated ALP (7.8%), Elevated ALT (5.4%). Post-market: hepatic toxicity (rare — ~25% of hepatic AE reports involved Labradors), GI ulceration (rare), IMHA (rare)",
     "side_effects_sources": "[DailyMed label](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dbc05493-d1cc-4c00-be6b-d1e3352273fd) (OA n=129 vs n=132 placebo; postop n=148 vs n=149 placebo)",
     "suppresses_itch": false,
-    "has_gi_side_effects": true
+    "has_gi_side_effects": true,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/carprofen"
   },
   {
     "name": "Previcox",
@@ -948,7 +1179,8 @@
     "common_side_effects": "Vomiting (3.9%), Decreased appetite (2.3%), Diarrhea (0.8%), Lethargy (0.8%). GI ulceration rare at supratherapeutic doses",
     "side_effects_sources": "[FDA NADA 141-230 FOI](https://animaldrugsatfda.fda.gov/adafda/app/search/public/document/downloadFoi/768) (n=128 treated vs n=121 etodolac)",
     "suppresses_itch": false,
-    "has_gi_side_effects": true
+    "has_gi_side_effects": true,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/firocoxib"
   },
   {
     "name": "Deramaxx",
@@ -964,7 +1196,8 @@
     "common_side_effects": "Postop (3–4 mg/kg): Vomiting (10.5%), Diarrhea (5.7%), Hematochezia (3.8%), Hematuria (1.9%), Elevated ALT (2.9%). OA (1–2 mg/kg): Vomiting (2.9%), Diarrhea (2.9%)",
     "side_effects_sources": "[FDA NADA 141-203 FOI](https://animaldrugsatfda.fda.gov/adafda/app/search/public/document/downloadFoi/717) (postop n=105); [FDA NADA 141-203 OA supplement FOI](https://animaldrugsatfda.fda.gov/adafda/app/search/public/document/downloadFoi/718) (OA n=105+104)",
     "suppresses_itch": false,
-    "has_gi_side_effects": true
+    "has_gi_side_effects": true,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/deracoxib"
   },
   {
     "name": "Onsior",
@@ -980,7 +1213,8 @@
     "common_side_effects": "Diarrhea/soft stool (5.0%), Vomiting (5.0%), Decreased appetite (2.5%), Weight loss (0.8%). Post-market (foreign): elevated liver enzymes, hepatic necrosis, and death reported with long-term use",
     "side_effects_sources": "[EMA EPAR](https://www.ema.europa.eu/en/medicines/veterinary/EPAR/onsior) (n=119 treated, n=120 control)",
     "suppresses_itch": false,
-    "has_gi_side_effects": true
+    "has_gi_side_effects": true,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/robenacoxib"
   },
   {
     "name": "Galliprant",
@@ -996,7 +1230,8 @@
     "common_side_effects": "Vomiting (17.0% vs 6.3% placebo), Diarrhea/soft stool (12.1% vs 9.0%), Anorexia (6.4% vs 4.9%), Lethargy (4.3% vs 1.4%), Buccal ulcer (0.7%), IMHA (0.7%)",
     "side_effects_sources": "[FDA NADA 141-455 FOI](https://animaldrugsatfda.fda.gov/adafda/app/search/public/document/downloadFoi/941) (n=141+144); [EMA EPAR](https://www.ema.europa.eu/en/medicines/veterinary/EPAR/galliprant)",
     "suppresses_itch": false,
-    "has_gi_side_effects": true
+    "has_gi_side_effects": true,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/grapiprant"
   },
   {
     "name": "Librela",
@@ -1012,7 +1247,8 @@
     "common_side_effects": "UTI (11.1%), Bacterial skin infection (8.1%), Dermatitis (7.4%), Dermal mass (5.9%), Erythema (4.4%), Injection site pain (3.0%). Post-market: neurologic events (ataxia, seizures, paresis, paralysis), musculoskeletal adverse events, death/euthanasia (reported)",
     "side_effects_sources": "[FDA NADA 141-562 FOI](https://animaldrugsatfda.fda.gov/adafda/app/search/public/document/downloadFoi/13959) (n=135 treated vs n=137 control); [FDA Dear Vet letter Dec 2024](https://www.fda.gov/animal-veterinary/product-safety-information/dear-veterinarian-letter-notifying-veterinarians-about-adverse-events-reported-dogs-treated-librela)",
     "suppresses_itch": false,
-    "has_gi_side_effects": false
+    "has_gi_side_effects": false,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/bedinvetmab"
   },
   {
     "name": "Gabapentin",
@@ -1030,7 +1266,8 @@
     "common_side_effects": "Sedation (46% overall; more likely at doses >30 mg/kg), Agitation (24%), Ataxia (18%), Increased activity (14%), Aggression (6–8%), Increased appetite (6%), Diarrhea (4%)",
     "side_effects_sources": "[Kirby-Madden et al. 2024 Animals](https://pubmed.ncbi.nlm.nih.gov/38791679/) (n=50); not FDA-approved for dogs",
     "suppresses_itch": false,
-    "has_gi_side_effects": false
+    "has_gi_side_effects": false,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/gabapentin"
   },
   {
     "name": "Tramadol",
@@ -1048,7 +1285,8 @@
     "common_side_effects": "Sedation (common), Nausea/vomiting (common), Constipation (common), Diarrhea (common), Anxiety/agitation (uncommon). Serotonin syndrome risk with SSRIs/MAOIs (rare)",
     "side_effects_sources": "[Donati et al. 2021 Vet Anaesth Analg](https://pubmed.ncbi.nlm.nih.gov/33745825/) (systematic review, 26 RCTs); not FDA-approved for dogs",
     "suppresses_itch": false,
-    "has_gi_side_effects": true
+    "has_gi_side_effects": true,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/tramadol"
   },
   {
     "name": "Prednisone",
@@ -1066,7 +1304,8 @@
     "common_side_effects": "Increased water consumption (common — 55% reported filling bowl 2x+ as often by day 5), Polyphagia (~47% by day 14), Panting (~50% by day 14), Urinary accidents (23% by day 5, 35% by day 14), Behavioral changes — anxiety, aggression, lethargy (26–36% by day 14), Muscle wasting (chronic use), Steroid hepatopathy/elevated ALP (chronic use), Skin thinning (chronic use), Iatrogenic Cushing's (chronic use)",
     "side_effects_sources": "[Gober & Hillier 2023 BMC Vet Res](https://pubmed.ncbi.nlm.nih.gov/37488543/) (n=31 prospective owner survey); [Elkholly et al. 2020 Front Vet Sci](https://pubmed.ncbi.nlm.nih.gov/32923470/) (VetCompass, n=3,000)",
     "suppresses_itch": true,
-    "has_gi_side_effects": true
+    "has_gi_side_effects": true,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/prednisoloneprednisone"
   },
   {
     "name": "Prednisolone",
@@ -1084,7 +1323,8 @@
     "common_side_effects": "Same active metabolite as prednisone — identical side effect profile. Polydipsia/polyuria (common), Polyphagia (common), Panting (common), Urinary accidents (common), Behavioral changes (common), Muscle wasting (chronic use), Steroid hepatopathy/elevated ALP (chronic use)",
     "side_effects_sources": "[Gober & Hillier 2023 BMC Vet Res](https://pubmed.ncbi.nlm.nih.gov/37488543/) (study used both prednisone and prednisolone)",
     "suppresses_itch": true,
-    "has_gi_side_effects": true
+    "has_gi_side_effects": true,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/prednisoloneprednisone"
   },
   {
     "name": "Dexamethasone",
@@ -1101,6 +1341,7 @@
     "common_side_effects": "~5X more potent than prednisone — same side effect categories (PU/PD, polyphagia, panting, behavioral changes) at proportionally lower doses. Immunosuppression, GI ulceration risk, adrenal suppression",
     "side_effects_sources": "[MSD Vet Manual — corticosteroids](https://www.msdvetmanual.com/pharmacology/inflammation/corticosteroids-in-animals) (potency table); [VCA monograph](https://vcahospitals.com/know-your-pet/dexamethasone) (general side effects)",
     "suppresses_itch": true,
-    "has_gi_side_effects": true
+    "has_gi_side_effects": true,
+    "learn_more_url": "https://vcahospitals.com/know-your-pet/dexamethasone"
   }
 ]

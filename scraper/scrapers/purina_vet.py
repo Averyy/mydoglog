@@ -116,6 +116,19 @@ _FALLBACK_DATA: dict[str, tuple[str | None, GuaranteedAnalysis | None, str | Non
     ),
 }
 
+# --- Corrections for products where purina.ca has WRONG data (not missing) ---
+# These override parsed values unconditionally.
+# Last verified: 2026-03-22
+_CORRECTIONS: dict[str, dict[str, str]] = {
+    # Source: purina.ca rendered page (calorie section updated but Gatsby API still has old 650 kcal/kg)
+    "purina-pro-plan-veterinary-diets/dog/treats/ora-chews-large": {
+        "calorie_content": "2975 kcal/kg, 95 kcal/treat",
+    },
+    "purina-pro-plan-veterinary-diets/dog/treats/ora-chews": {
+        "calorie_content": "2975 kcal/kg, 95 kcal/treat",
+    },
+}
+
 
 # Trailing Purina product/lot codes — e.g. "C458920", "A850923.", "B251921C"
 # Always at the very end of the ingredient string, after a period.
@@ -537,8 +550,12 @@ def _parse_html_fallback(html: str) -> dict:
                 result["guaranteed_analysis"] = ga
             break
 
-    # Find calorie content
-    cal = normalize_calorie_content(clean_text(text))
+    # Find calorie content — strip product codes first to prevent
+    # codes like "A456523" from being parsed as kcal/kg values.
+    cal_text = _PRODUCT_CODE_RE.sub("", clean_text(text))
+    # Also strip inline product codes not preceded by a period (e.g. "...selenite. A456523 Calorie Content...")
+    cal_text = re.sub(r"[A-Z]\d{5,}[A-Z]?\b", "", cal_text)
+    cal = normalize_calorie_content(cal_text)
     if cal and "kcal" in cal:
         result["calorie_content"] = cal
 
@@ -623,8 +640,17 @@ def _parse_product(
         if fallback.get("calorie_content") and not product.get("calorie_content"):
             product["calorie_content"] = fallback["calorie_content"]
 
-    # Static fallback for products where purina.ca has no data
+    # Corrections for products where purina.ca has WRONG data
     url_key = url_path.lstrip("/")
+    if url_key in _CORRECTIONS:
+        for field, value in _CORRECTIONS[url_key].items():
+            if field == "calorie_content":
+                product[field] = normalize_calorie_content(value) or value
+            else:
+                product[field] = value  # type: ignore[literal-required]
+            logger.info(f"  Applied correction for {field}: {product['name']}")
+
+    # Static fallback for products where purina.ca has no data
     if url_key in _FALLBACK_DATA:
         fb_ing, fb_ga, fb_cal = _FALLBACK_DATA[url_key]
         if fb_ing:

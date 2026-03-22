@@ -1,22 +1,22 @@
 {
   "brand": "Wellness",
   "website_url": "https://www.petsmart.ca",
-  "scraped_at": "2026-03-09T16:01:04.668089+00:00",
+  "scraped_at": "2026-03-22T18:32:51.122526+00:00",
   "scraper_version": "0.1.0",
   "stats": {
-    "product_count": 73,
+    "product_count": 101,
     "by_channel": {
-      "retail": 73
+      "retail": 101
     },
     "by_type": {
-      "supplement": 14,
-      "food": 54,
+      "supplement": 19,
+      "food": 77,
       "treat": 5
     }
   },
   "products": [
     {
-      "name": "Bowl Boosters Stews Natural Topper for Dogs - 5.5 OZ Carton",
+      "name": "Bowl Boosters Stews Natural Topper for Dogs - 5.5 OZ Carton Chicken & Pumpkin",
       "brand": "Wellness",
       "url": "https://www.petsmart.ca/dog/food/canned-food/wellness-bowl-boosters-stews-natural-topper-for-dogs---55-oz-carton-81298.html",
       "channel": "retail",
@@ -24,22 +24,48 @@
       "product_format": "wet",
       "sub_brand": "Bowl Boosters",
       "source_id": "5350430",
-      "images": [
-        "/products/wellness/wellness-supplement-bowl-boosters-stews-natural-topper-for-dogs-5-5-oz-carton.jpg"
-      ],
       "variants": [
         {
           "size_kg": 0.0,
-          "size_description": "5.5 OZ",
+          "size_description": "",
           "upc": "0076344016038",
           "sku": "5350430"
-        },
+        }
+      ],
+      "images": [
+        "/products/wellness/wellness-supplement-bowl-boosters-stews-natural-topper-for-dogs-5-5-oz-carton-chicken-pumpkin.jpg"
+      ],
+      "ingredients_raw": "Chicken Bone Broth, Chicken, Tapioca Starch, Pumpkin, Green Beans, Sweet Potatoes, Red Bell Pepper, Salt, Flaxseed Oil, Dried Chicory Root, Zinc Amino Acid Chelate, Turmeric, Parsley, Vitamin E Supplement",
+      "guaranteed_analysis": {
+        "crude_protein_min": 3.5,
+        "crude_fat_min": 4.5,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 90.0,
+        "omega_6_min": 0.07,
+        "omega_3_min": 0.02
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "690 kcal/kg"
+    },
+    {
+      "name": "Bowl Boosters Stews Natural Topper for Dogs - 5.5 OZ Carton Turkey & Sweet Potato",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/wellness-bowl-boosters-stews-natural-topper-for-dogs---55-oz-carton-81298.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "sub_brand": "Bowl Boosters",
+      "source_id": "5350431",
+      "variants": [
         {
           "size_kg": 0.0,
-          "size_description": "5.5 OZ",
+          "size_description": "",
           "upc": "0076344016045",
           "sku": "5350431"
         }
+      ],
+      "images": [
+        "/products/wellness/wellness-supplement-bowl-boosters-stews-natural-topper-for-dogs-5-5-oz-carton-turkey-sweet-potato.jpg"
       ],
       "ingredients_raw": "Turkey Bone Broth, Turkey, Tapioca Starch, Sweet Potatoes, Green Beans, Red Bell Pepper, Salt, Flaxseed Oil, Dried Chicory Root, Zinc Amino Acid Chelate, Sage, Turmeric, Parsley, Vitamin E Supplement",
       "guaranteed_analysis": {
@@ -54,7 +80,75 @@
       "calorie_content": "633 kcal/kg"
     },
     {
-      "name": "Complete Health Adult Wet Dog Food",
+      "name": "Complete Health Adult Wet Dog Food Lamb & Sweet Potato",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/wellness-complete-health-adult-wet-dog-food---natural-1071.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Complete Health",
+      "life_stage": "adult",
+      "source_id": "5153561",
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344089162",
+          "sku": "5153561"
+        }
+      ],
+      "images": [
+        "/products/wellness/wellness-food-complete-health-adult-wet-dog-food-lamb-sweet-potato.jpg"
+      ],
+      "ingredients_raw": "Lamb, Lamb Broth, Whitefish, Ground Barley, Sweet Potatoes, Potato Protein, Carrots, Carrageenan, Sunflower Oil, Dried Plain Beet Pulp, Ground Flaxseed, Guar Gum, Fish Oil (Preserved With Mixed Tocopherols), Salt, Potassium Chloride, Dried Chicory Root, Choline Chloride, Zinc Proteinate, Iron Proteinate, Vitamin E Supplement, Thiamine Mononitrate, Magnesium Sulfate, Tricalcium Phosphate, Copper Proteinate, Cobalt Proteinate, Manganese Proteinate, Sodium Selenite, Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Potassium Iodide, Vitamin D3 Supplement, Folic Acid.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 7.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 78.0,
+        "calcium_min": 0.11,
+        "phosphorus_min": 0.09,
+        "omega_6_min": 0.33
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1278 kcal/kg, 452 kcal/can"
+    },
+    {
+      "name": "Complete Health Adult Wet Dog Food Chicken & Sweet Potato",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/wellness-complete-health-adult-wet-dog-food---natural-1071.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Complete Health",
+      "life_stage": "adult",
+      "source_id": "5153562",
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344089155",
+          "sku": "5153562"
+        }
+      ],
+      "images": [
+        "/products/wellness/wellness-food-complete-health-adult-wet-dog-food-chicken-sweet-potato.jpg"
+      ],
+      "ingredients_raw": "Chicken, Chicken Broth, Whitefish, Ground Barley, Chicken Liver, Sweet Potatoes, Carrots, Carrageenan, Chicken Heart, Ground Flaxseed, Dried Plain Beet Pulp, Guar Gum, Fish Oil (Preserved With Mixed Tocopherols), Salt, Potassium Chloride, Dried Chicory Root, Sunflower Oil, Choline Chloride, Zinc Proteinate, Iron Proteinate, Thiamine Mononitrate, Tricalcium Phosphate, Vitamin E Supplement, Copper Proteinate, Cobalt Proteinate, Manganese Proteinate, Sodium Selenite, Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Potassium Iodide, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 78.0,
+        "calcium_min": 0.11,
+        "phosphorus_min": 0.09,
+        "omega_6_min": 0.33
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1087 kcal/kg, 385 kcal/can"
+    },
+    {
+      "name": "Complete Health Adult Wet Dog Food Turkey & Sweet Potato",
       "brand": "Wellness",
       "url": "https://www.petsmart.ca/dog/food/canned-food/wellness-complete-health-adult-wet-dog-food---natural-1071.html",
       "channel": "retail",
@@ -63,30 +157,18 @@
       "sub_brand": "Complete Health",
       "life_stage": "adult",
       "source_id": "5153560",
-      "images": [
-        "/products/wellness/wellness-food-complete-health-adult-wet-dog-food.jpg"
-      ],
       "variants": [
         {
           "size_kg": 0.0,
           "size_description": "",
           "upc": "0076344088875",
           "sku": "5153560"
-        },
-        {
-          "size_kg": 0.0,
-          "size_description": "",
-          "upc": "0076344089162",
-          "sku": "5153561"
-        },
-        {
-          "size_kg": 0.0,
-          "size_description": "",
-          "upc": "0076344089155",
-          "sku": "5153562"
         }
       ],
-      "ingredients_raw": "Turkey, Turkey Broth, Turkey Liver, Ground Barley, Turkey Heart, Sweet Potatoes, Carrots, Ground Flaxseed, Carrageenan, Dried Plain Beet Pulp, Fish Oil (Preserved With Mixed Tocopherols), Guar Gum, Salt, Potassium Chloride, Dried Chicory Root, Dicalcium Phosphate, Sunflower Oil, Choline Chloride, Zinc Proteinate, Iron Proteinate, Vitamin E Supplement, Copper Proteinate, Cobalt Proteinate, Manganese Proteinate, Sodium Selenite, Thiamine Mononitrate, Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Potassium Iodide, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid",
+      "images": [
+        "/products/wellness/wellness-food-complete-health-adult-wet-dog-food-turkey-sweet-potato.jpg"
+      ],
+      "ingredients_raw": "Turkey, Turkey Broth, Turkey Liver, Ground Barley, Turkey Heart, Sweet Potatoes, Carrots, Ground Flaxseed, Carrageenan, Dried Plain Beet Pulp, Fish Oil (Preserved With Mixed Tocopherols), Guar Gum, Salt, Potassium Chloride, Dried Chicory Root, Dicalcium Phosphate, Sunflower Oil, Choline Chloride, Zinc Proteinate, Iron Proteinate, Vitamin E Supplement, Copper Proteinate, Cobalt Proteinate, Manganese Proteinate, Sodium Selenite, Thiamine Mononitrate, Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Potassium Iodide, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid.",
       "guaranteed_analysis": {
         "crude_protein_min": 8.0,
         "crude_fat_min": 6.0,
@@ -120,7 +202,7 @@
           "sku": "5153563"
         }
       ],
-      "ingredients_raw": "Chicken Broth, Chicken (Source of Glucosamine and Chondroitin Sulfate), Chicken Liver, Whitefish, Ground Barley, Rice Bran, Chicken Hearts, Sweet Potatoes, Carrots, Ground Flaxseed, Carrageenan, Dried Plain Beet Pulp, Guar Gum, Fish Oil (Preserved With Mixed Tocopherols), Potassium Chloride, Salt, Dried Chicory Root, Sunflower Oil, Choline Chloride, Zinc Proteinate, L-ascorbyl-2-polyphosphate, Iron Proteinate, Vitamin E Supplement, Thiamine Mononitrate, Tricalcium Phosphate, L-Carnitine, Copper Proteinate, Cobalt Proteinate, Manganese Proteinate, Sodium Selenite, Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Potassium Iodide, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid",
+      "ingredients_raw": "Chicken Broth, Chicken (Source of Glucosamine and Chondroitin Sulfate), Chicken Liver, Whitefish, Ground Barley, Rice Bran, Chicken Hearts, Sweet Potatoes, Carrots, Ground Flaxseed, Carrageenan, Dried Plain Beet Pulp, Guar Gum, Fish Oil (Preserved With Mixed Tocopherols), Potassium Chloride, Salt, Dried Chicory Root, Sunflower Oil, Choline Chloride, Zinc Proteinate, L-ascorbyl-2-polyphosphate, Iron Proteinate, Vitamin E Supplement, Thiamine Mononitrate, Tricalcium Phosphate, L-Carnitine, Copper Proteinate, Cobalt Proteinate, Manganese Proteinate, Sodium Selenite, Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Potassium Iodide, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid.",
       "guaranteed_analysis": {
         "crude_protein_min": 7.0,
         "crude_fat_min": 4.0,
@@ -135,7 +217,42 @@
       "calorie_content": "1038 kcal/kg, 367 kcal/can"
     },
     {
-      "name": "CORE All Life Stage Wet Dog Food - Grain Free",
+      "name": "CORE All Life Stage Wet Dog Food - Grain Free Beef, Venison & Lamb",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/wellness-core-all-life-stage-wet-dog-food---natural-grain-free-680.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "CORE",
+      "life_stage": "all",
+      "source_id": "5180181",
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344079187",
+          "sku": "5180181"
+        }
+      ],
+      "images": [
+        "/products/wellness/wellness-food-core-all-life-stage-wet-dog-food-grain-free-beef-venison-lamb.jpg"
+      ],
+      "ingredients_raw": "Beef, Beef Broth, Venison, Beef Liver, Lamb, Chicken, Pork Liver, Ground Flaxseed, Carrageenan, Dried Plain Beet Pulp, Guar Gum, Fish Oil (Preserved With Mixed Tocopherols), Carrots, Sweet Potatoes, Kale, Broccoli, Spinach, Parsley, Apples, Blueberries, Potassium Chloride, Salt, Dried Chicory Root, Dried Kelp, Yucca Schidigera Extract, Sunflower Oil, Choline Chloride, Zinc Proteinate, Iron Proteinate, Vitamin E Supplement, Tricalcium Phosphate, Copper Proteinate, Cobalt Proteinate, Manganese Proteinate, Sodium Selenite, Thiamine Mononitrate, Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Potassium Iodide, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 12.0,
+        "crude_fat_min": 7.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 78.0,
+        "calcium_min": 0.11,
+        "phosphorus_min": 0.09,
+        "omega_6_min": 0.33,
+        "omega_3_min": 0.05
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1377 kcal/kg, 487 kcal/can"
+    },
+    {
+      "name": "CORE All Life Stage Wet Dog Food - Grain Free Salmon, Whitefish & Herring",
       "brand": "Wellness",
       "url": "https://www.petsmart.ca/dog/food/canned-food/wellness-core-all-life-stage-wet-dog-food---natural-grain-free-680.html",
       "channel": "retail",
@@ -144,24 +261,18 @@
       "sub_brand": "CORE",
       "life_stage": "all",
       "source_id": "5171442",
-      "images": [
-        "/products/wellness/wellness-food-core-all-life-stage-wet-dog-food-grain-free.jpg"
-      ],
       "variants": [
         {
           "size_kg": 0.0,
           "size_description": "",
           "upc": "0076344079125",
           "sku": "5171442"
-        },
-        {
-          "size_kg": 0.0,
-          "size_description": "",
-          "upc": "0076344079187",
-          "sku": "5180181"
         }
       ],
-      "ingredients_raw": "Chicken, Whitefish, Salmon Broth, Chicken Liver, Salmon, Herring, Sweet Potatoes, Chicken Heart, Ground Flaxseed, Dried Plain Beet Pulp, Carrots, Blueberries, Kale, Apples, Parsley, Broccoli, Spinach, Guar Gum, Cassia Gum, Xanthan Gum, Potassium Chloride, Salt, Sunflower Oil, Dried Chicory Root, Yucca Schidigera Extract, Fish Oil (Preserved With Mixed Tocopherols), Choline Chloride, Zinc Proteinate, Iron Proteinate, Thiamine Mononitrate, Vitamin E Supplement, Tricalcium Phosphate, Copper Proteinate, Cobalt Proteinate, Manganese Proteinate, Sodium Selenite, Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Potassium Iodide, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement",
+      "images": [
+        "/products/wellness/wellness-food-core-all-life-stage-wet-dog-food-grain-free-salmon-whitefish-herring.jpg"
+      ],
+      "ingredients_raw": "Chicken, Whitefish, Salmon Broth, Chicken Liver, Salmon, Herring, Sweet Potatoes, Chicken Heart, Ground Flaxseed, Dried Plain Beet Pulp, Carrots, Blueberries, Kale, Apples, Parsley, Broccoli, Spinach, Guar Gum, Cassia Gum, Xanthan Gum, Potassium Chloride, Salt, Sunflower Oil, Dried Chicory Root, Yucca Schidigera Extract, Fish Oil (Preserved With Mixed Tocopherols), Choline Chloride, Zinc Proteinate, Iron Proteinate, Thiamine Mononitrate, Vitamin E Supplement, Tricalcium Phosphate, Copper Proteinate, Cobalt Proteinate, Manganese Proteinate, Sodium Selenite, Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Potassium Iodide, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement.",
       "guaranteed_analysis": {
         "crude_protein_min": 10.0,
         "crude_fat_min": 7.0,
@@ -176,7 +287,7 @@
       "calorie_content": "1319 kcal/kg, 467 kcal/can"
     },
     {
-      "name": "CORE Digestive Health All Life Stage Wet Dog Food - Grain Free",
+      "name": "CORE Digestive Health All Life Stage Wet Dog Food - Grain Free Chicken",
       "brand": "Wellness",
       "url": "https://www.petsmart.ca/dog/food/canned-food/wellness-core-digestive-health-all-life-stage-wet-dog-food---grain-free-61730.html",
       "channel": "retail",
@@ -185,24 +296,18 @@
       "sub_brand": "CORE Digestive Health",
       "life_stage": "all",
       "source_id": "5306049",
-      "images": [
-        "/products/wellness/wellness-food-core-digestive-health-all-life-stage-wet-dog-food-grain-free.jpg"
-      ],
       "variants": [
         {
           "size_kg": 0.0,
           "size_description": "",
           "upc": "0076344087014",
           "sku": "5306049"
-        },
-        {
-          "size_kg": 0.0,
-          "size_description": "",
-          "upc": "0076344087038",
-          "sku": "5306050"
         }
       ],
-      "ingredients_raw": "Chicken, Chicken Broth, Chicken Liver, Whitefish, Dried Ground Peas, Potato Protein, Chicken Heart, Ground Flaxseed, Dried Plain Beet Pulp, Dicalcium Phosphate, Cassia Gum, Xanthan Gum, Fish Oil (Preserved With Mixed Tocopherols), Salt, Potassium Chloride, Apple Powder, Cranberry Powder, Pumpkin Powder, Dried Chicory Root, Sunflower Oil, Choline Chloride, Zinc Proteinate, Vitamin E Supplement, Iron Proteinate, Blueberry Powder, Papaya Powder, Pomegranate Powder, Thiamine Mononitrate, Peppermint Leaf Powder, Cinnamon, Fennel Powder, Copper Proteinate, Cobalt Proteinate, Manganese Proteinate, Sodium Selenite, Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Potassium Iodide, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid",
+      "images": [
+        "/products/wellness/wellness-food-core-digestive-health-all-life-stage-wet-dog-food-grain-free-chicken.jpg"
+      ],
+      "ingredients_raw": "Chicken, Chicken Broth, Chicken Liver, Whitefish, Dried Ground Peas, Potato Protein, Chicken Heart, Ground Flaxseed, Dried Plain Beet Pulp, Dicalcium Phosphate, Cassia Gum, Xanthan Gum, Fish Oil (Preserved With Mixed Tocopherols), Salt, Potassium Chloride, Apple Powder, Cranberry Powder, Pumpkin Powder, Dried Chicory Root, Sunflower Oil, Choline Chloride, Zinc Proteinate, Vitamin E Supplement, Iron Proteinate, Blueberry Powder, Papaya Powder, Pomegranate Powder, Thiamine Mononitrate, Peppermint Leaf Powder, Cinnamon, Fennel Powder, Copper Proteinate, Cobalt Proteinate, Manganese Proteinate, Sodium Selenite, Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Potassium Iodide, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid.",
       "guaranteed_analysis": {
         "crude_protein_min": 12.0,
         "crude_fat_min": 6.0,
@@ -215,6 +320,41 @@
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "1324 kcal/kg, 489 kcal/can"
+    },
+    {
+      "name": "CORE Digestive Health All Life Stage Wet Dog Food - Grain Free Beef",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/wellness-core-digestive-health-all-life-stage-wet-dog-food---grain-free-61730.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "CORE Digestive Health",
+      "life_stage": "all",
+      "source_id": "5306050",
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344087038",
+          "sku": "5306050"
+        }
+      ],
+      "images": [
+        "/products/wellness/wellness-food-core-digestive-health-all-life-stage-wet-dog-food-grain-free-beef.jpg"
+      ],
+      "ingredients_raw": "Beef, Beef Broth, Whitefish, Pork Liver, Potato Protein, Dried Ground Peas, Ground Flaxseed, Dried Plain Beet Pulp, Cassia Gum, Xanthan Gum, Dicalcium Phosphate, Fish Oil (Preserved With Mixed Tocopherols), Sunflower Oil, Salt, Potassium Chloride, Apple Powder, Cranberry Powder, Pumpkin Powder, Dried Chicory Root, Choline Chloride, Zinc Proteinate, Vitamin E Supplement, Iron Proteinate, Blueberry Powder, Papaya Powder, Pomegranate Powder, Thiamine Mononitrate, Peppermint Leaf Powder, Cinnamon, Fennel Powder, Copper Proteinate, Cobalt Proteinate, Manganese Proteinate, Sodium Selenite, Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Potassium Iodide, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 12.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0,
+        "calcium_min": 0.26,
+        "phosphorus_min": 0.22,
+        "omega_6_min": 0.5,
+        "omega_3_min": 0.1
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1158 kcal/kg, 427 kcal/can"
     },
     {
       "name": "CORE Hearty Cuts All Life Stage Wet Dog Food - Grain Free, Natural",
@@ -237,7 +377,7 @@
           "sku": "5247400"
         }
       ],
-      "ingredients_raw": "Beef, Beef Broth, Venison Broth, Beef Liver, Venison, Natural Flavor, Potato Starch, Sweet Potatoes, Dried Egg Product, Green Beans, Guar Gum, Carrots, Apples, Blueberries, Broccoli, Kale, Parsley, Spinach, Salt, Sodium Phosphate, Ground Flaxseed, Potassium Chloride, Canola Oil, Calcium Carbonate, Dried Chicory Root, Yucca Schidigera Extract, Dried Kelp, Choline Chloride, Salmon Oil (Preserved With Mixed Tocopherols), Zinc Proteinate, Iron Proteinate, Thiamine Mononitrate, Tricalcium Phosphate, Vitamin E Supplement, Copper proteinate, Cobalt Proteinate, Manganese Proteinate, Sodium Selenite, Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Potassium Iodide, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid",
+      "ingredients_raw": "Beef, Beef Broth, Venison Broth, Beef Liver, Venison, Natural Flavor, Potato Starch, Sweet Potatoes, Dried Egg Product, Green Beans, Guar Gum, Carrots, Apples, Blueberries, Broccoli, Kale, Parsley, Spinach, Salt, Sodium Phosphate, Ground Flaxseed, Potassium Chloride, Canola Oil, Calcium Carbonate, Dried Chicory Root, Yucca Schidigera Extract, Dried Kelp, Choline Chloride, Salmon Oil (Preserved With Mixed Tocopherols), Zinc Proteinate, Iron Proteinate, Thiamine Mononitrate, Tricalcium Phosphate, Vitamin E Supplement, Copper proteinate, Cobalt Proteinate, Manganese Proteinate, Sodium Selenite, Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Potassium Iodide, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid.",
       "guaranteed_analysis": {
         "crude_protein_min": 9.0,
         "crude_fat_min": 3.0,
@@ -248,7 +388,7 @@
       "calorie_content": "954 kcal/kg, 338 kcal/can"
     },
     {
-      "name": "CORE Mini Meals Chunky All Life Stage Wet Dog Food - Grain Free",
+      "name": "CORE Mini Meals Chunky All Life Stage Wet Dog Food - Grain Free Chicken & Liver",
       "brand": "Wellness",
       "url": "https://www.petsmart.ca/dog/food/canned-food/wellness-core-mini-meals-chunky-all-life-stage-wet-dog-food---natural-grain-free-49089.html",
       "channel": "retail",
@@ -257,24 +397,18 @@
       "sub_brand": "CORE",
       "life_stage": "all",
       "source_id": "5280374",
-      "images": [
-        "/products/wellness/wellness-food-core-mini-meals-chunky-all-life-stage-wet-dog-food-grain-free.jpg"
-      ],
       "variants": [
         {
           "size_kg": 0.0,
           "size_description": "",
           "upc": "0076344166047",
           "sku": "5280374"
-        },
-        {
-          "size_kg": 0.0,
-          "size_description": "",
-          "upc": "0076344166054",
-          "sku": "5280385"
         }
       ],
-      "ingredients_raw": "Chicken, Chicken Broth, Water Sufficient for Processing, Potato Starch, Chicken Liver, Egg, Tapioca Starch, Natural Flavor, Salt, Tricalcium Phosphate, Sunflower Oil, Guar Gum, Magnesium Sulfate, Vitamins [Vitamin E Supplement, Thiamine Hydrochloride, Niacin, Vitamin A Supplement, Pyridoxine Hydrochloride, d-Calcium Pantothenate, Riboflavin Supplement, Folic Acid, Vitamin D3 Supplement, Biotin, Vitamin B12 Supplement], Potassium Chloride, Choline Chloride, Zinc Amino Acid Chelate, Iron Amino Acid Chelate, Manganese Amino Acid Chelate, Copper Amino Acid Chelate, Sodium Selenite, Potassium Iodide",
+      "images": [
+        "/products/wellness/wellness-food-core-mini-meals-chunky-all-life-stage-wet-dog-food-grain-free-chicken-liver.jpg"
+      ],
+      "ingredients_raw": "Chicken, Chicken Broth, Water Sufficient for Processing, Potato Starch, Chicken Liver, Egg, Tapioca Starch, Natural Flavor, Salt, Tricalcium Phosphate, Sunflower Oil, Guar Gum, Magnesium Sulfate, Vitamins [Vitamin E Supplement, Thiamine Hydrochloride, Niacin, Vitamin A Supplement, Pyridoxine Hydrochloride, d-Calcium Pantothenate, Riboflavin Supplement, Folic Acid, Vitamin D3 Supplement, Biotin, Vitamin B12 Supplement], Potassium Chloride, Choline Chloride, Zinc Amino Acid Chelate, Iron Amino Acid Chelate, Manganese Amino Acid Chelate, Copper Amino Acid Chelate, Sodium Selenite, Potassium Iodide.",
       "guaranteed_analysis": {
         "crude_protein_min": 8.0,
         "crude_fat_min": 3.0,
@@ -285,7 +419,38 @@
       "calorie_content": "1083 kcal/kg, 92 kcal/pouch"
     },
     {
-      "name": "CORE Mini Meals Pate All Life Stage Wet Dog Food - Grain Free",
+      "name": "CORE Mini Meals Chunky All Life Stage Wet Dog Food - Grain Free Chicken & Tuna",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/wellness-core-mini-meals-chunky-all-life-stage-wet-dog-food---natural-grain-free-49089.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "CORE",
+      "life_stage": "all",
+      "source_id": "5280385",
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344166054",
+          "sku": "5280385"
+        }
+      ],
+      "images": [
+        "/products/wellness/wellness-food-core-mini-meals-chunky-all-life-stage-wet-dog-food-grain-free-chicken-tuna.jpg"
+      ],
+      "ingredients_raw": "Chicken, Chicken Broth, Water Sufficient for Processing, Potato Starch, Tuna, Chicken Liver, Egg, Tapioca Starch, Natural Flavor, Salt, Tricalcium Phosphate, Sunflower Oil, Guar Gum, Magnesium Sulfate, Vitamins [Vitamin E Supplement, Thiamine Hydrochloride, Niacin, Vitamin A Supplement, Pyridoxine Hydrochloride, d-Calcium Pantothenate, Riboflavin Supplement, Folic Acid, Vitamin D3 Supplement, Biotin, Vitamin B12 Supplement], Potassium Chloride, Choline Chloride, Zinc Amino Acid Chelate, Iron Amino Acid Chelate, Manganese Amino Acid Chelate, Copper Amino Acid Chelate, Sodium Selenite, Potassium Iodide.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 2.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "918 kcal/kg, 78 kcal/pouch"
+    },
+    {
+      "name": "CORE Mini Meals Pate All Life Stage Wet Dog Food - Grain Free Chicken",
       "brand": "Wellness",
       "url": "https://www.petsmart.ca/dog/food/canned-food/wellness-core-mini-meals-pate-all-life-stage-wet-dog-food---natural-grain-free-49084.html",
       "channel": "retail",
@@ -294,16 +459,38 @@
       "sub_brand": "CORE",
       "life_stage": "all",
       "source_id": "5280369",
-      "images": [
-        "/products/wellness/wellness-food-core-mini-meals-pate-all-life-stage-wet-dog-food-grain-free.jpg"
-      ],
       "variants": [
         {
           "size_kg": 0.0,
           "size_description": "",
           "upc": "0076344166009",
           "sku": "5280369"
-        },
+        }
+      ],
+      "images": [
+        "/products/wellness/wellness-food-core-mini-meals-pate-all-life-stage-wet-dog-food-grain-free-chicken.jpg"
+      ],
+      "ingredients_raw": "Chicken, Chicken Broth, Water Sufficient for Processing, Natural Flavor, Potato Starch, Tapioca Starch, Tricalcium Phosphate, Potassium Chloride, Guar Gum, Salt, Locust Bean Gum, Sodium Carbonate, Xanthan Gum, Vitamins [Vitamin E Supplement, Thiamine Hydrochloride, Niacin, Vitamin A Supplement, Pyridoxine Hydrochloride, d-Calcium Pantothenate, Riboflavin Supplement, Folic Acid, Vitamin D3 Supplement, Biotin, Vitamin B12 Supplement], Magnesium Sulfate, Choline Chloride, Zinc Amino Acid Chelate, Iron Amino Acid Chelate, Manganese Amino Acid Chelate, Copper Amino Acid Chelate, Sodium Selenite, Potassium Iodide.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 4.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1201 kcal/kg, 102 kcal/pouch"
+    },
+    {
+      "name": "CORE Mini Meals Pate All Life Stage Wet Dog Food - Grain Free Beef & Chicken",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/wellness-core-mini-meals-pate-all-life-stage-wet-dog-food---natural-grain-free-49084.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "CORE",
+      "life_stage": "all",
+      "source_id": "5280370",
+      "variants": [
         {
           "size_kg": 0.0,
           "size_description": "",
@@ -311,7 +498,10 @@
           "sku": "5280370"
         }
       ],
-      "ingredients_raw": "Beef, Chicken, Chicken Broth, Water Sufficient for Processing, Tuna, Potato Starch, Tapioca Starch, Natural Flavor, Tricalcium Phosphate, Potassium Chloride, Guar Gum, Salt, Locust Bean Gum, Sodium Carbonate, Xanthan Gum, Vitamins [Vitamin E Supplement, Thiamine Hydrochloride, Niacin, Vitamin A Supplement, Pyridoxine Hydrochloride, d-Calcium Pantothenate, Riboflavin Supplement, Folic Acid, Vitamin D3 Supplement, Biotin, Vitamin B12 Supplement], Magnesium Sulfate, Choline Chloride, Zinc Amino Acid Chelate, Iron Amino Acid Chelate, Manganese Amino Acid Chelate, Copper Amino Acid Chelate, Sodium Selenite, Potassium Iodide",
+      "images": [
+        "/products/wellness/wellness-food-core-mini-meals-pate-all-life-stage-wet-dog-food-grain-free-beef-chicken.jpg"
+      ],
+      "ingredients_raw": "Beef, Chicken, Chicken Broth, Water Sufficient for Processing, Tuna, Potato Starch, Tapioca Starch, Natural Flavor, Tricalcium Phosphate, Potassium Chloride, Guar Gum, Salt, Locust Bean Gum, Sodium Carbonate, Xanthan Gum, Vitamins [Vitamin E Supplement, Thiamine Hydrochloride, Niacin, Vitamin A Supplement, Pyridoxine Hydrochloride, d-Calcium Pantothenate, Riboflavin Supplement, Folic Acid, Vitamin D3 Supplement, Biotin, Vitamin B12 Supplement], Magnesium Sulfate, Choline Chloride, Zinc Amino Acid Chelate, Iron Amino Acid Chelate, Manganese Amino Acid Chelate, Copper Amino Acid Chelate, Sodium Selenite, Potassium Iodide.",
       "guaranteed_analysis": {
         "crude_protein_min": 8.0,
         "crude_fat_min": 4.0,
@@ -322,7 +512,38 @@
       "calorie_content": "972 kcal/kg, 83 kcal/pouch"
     },
     {
-      "name": "CORE Mini Meals Shredded All Life Stage Wet Dog Food - Grain Free",
+      "name": "CORE Mini Meals Shredded All Life Stage Wet Dog Food - Grain Free Chicken & Lamb",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/wellness-core-mini-meals-shredded-all-life-stage-wet-dog-food---natural-grain-free-49086.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "CORE",
+      "life_stage": "all",
+      "source_id": "5280373",
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344166030",
+          "sku": "5280373"
+        }
+      ],
+      "images": [
+        "/products/wellness/wellness-food-core-mini-meals-shredded-all-life-stage-wet-dog-food-grain-free-chicken-lamb.jpg"
+      ],
+      "ingredients_raw": "Chicken, Chicken Broth, Water Sufficient for Processing, Potato Starch, Lamb, Chicken Liver, Tapioca Starch, Egg, Natural Flavor, Salt, Tricalcium Phosphate, Sunflower Oil, Guar Gum, Magnesium Sulfate, Vitamins [Vitamin E Supplement, Thiamine Hydrochloride, Niacin, Vitamin A Supplement, Pyridoxine Hydrochloride, d-Calcium Pantothenate, Riboflavin Supplement, Folic Acid, Vitamin D3 Supplement, Biotin, Vitamin B12 Supplement], Potassium Chloride, Choline Chloride, Zinc Amino Acid Chelate, Iron Amino Acid Chelate, Manganese Amino Acid Chelate, Copper Amino Acid Chelate, Sodium Selenite, Potassium Iodide.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 3.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1020 kcal/kg, 87 kcal/pouch"
+    },
+    {
+      "name": "CORE Mini Meals Shredded All Life Stage Wet Dog Food - Grain Free Chicken & Turkey",
       "brand": "Wellness",
       "url": "https://www.petsmart.ca/dog/food/canned-food/wellness-core-mini-meals-shredded-all-life-stage-wet-dog-food---natural-grain-free-49086.html",
       "channel": "retail",
@@ -331,24 +552,18 @@
       "sub_brand": "CORE",
       "life_stage": "all",
       "source_id": "5280371",
-      "images": [
-        "/products/wellness/wellness-food-core-mini-meals-shredded-all-life-stage-wet-dog-food-grain-free.jpg"
-      ],
       "variants": [
         {
           "size_kg": 0.0,
           "size_description": "",
           "upc": "0076344166023",
           "sku": "5280371"
-        },
-        {
-          "size_kg": 0.0,
-          "size_description": "",
-          "upc": "0076344166030",
-          "sku": "5280373"
         }
       ],
-      "ingredients_raw": "Chicken, Chicken Broth, Water Sufficient for Processing, Potato Starch, Turkey, Chicken Liver, Egg, Tapioca Starch, Natural Flavor, Salt, Tricalcium Phosphate, Sunflower Oil, Guar Gum, Magnesium Sulfate, Vitamins [Vitamin E Supplement, Thiamine Hydrochloride, Niacin, Vitamin A Supplement, Pyridoxine Hydrochloride, d-Calcium Pantothenate, Riboflavin Supplement, Folic Acid, Vitamin D3 Supplement, Biotin, Vitamin B12 Supplement], Potassium Chloride, Choline Chloride, Zinc Amino Acid Chelate, Iron Amino Acid Chelate, Manganese Amino Acid Chelate, Copper Amino Acid Chelate, Sodium Selenite, Potassium Iodide",
+      "images": [
+        "/products/wellness/wellness-food-core-mini-meals-shredded-all-life-stage-wet-dog-food-grain-free-chicken-turkey.jpg"
+      ],
+      "ingredients_raw": "Chicken, Chicken Broth, Water Sufficient for Processing, Potato Starch, Turkey, Chicken Liver, Egg, Tapioca Starch, Natural Flavor, Salt, Tricalcium Phosphate, Sunflower Oil, Guar Gum, Magnesium Sulfate, Vitamins [Vitamin E Supplement, Thiamine Hydrochloride, Niacin, Vitamin A Supplement, Pyridoxine Hydrochloride, d-Calcium Pantothenate, Riboflavin Supplement, Folic Acid, Vitamin D3 Supplement, Biotin, Vitamin B12 Supplement], Potassium Chloride, Choline Chloride, Zinc Amino Acid Chelate, Iron Amino Acid Chelate, Manganese Amino Acid Chelate, Copper Amino Acid Chelate, Sodium Selenite, Potassium Iodide.",
       "guaranteed_analysis": {
         "crude_protein_min": 8.0,
         "crude_fat_min": 3.0,
@@ -409,7 +624,7 @@
           "sku": "5247395"
         }
       ],
-      "ingredients_raw": "CHICKEN, CHICKEN BROTH, WATER SUFFICIENT FOR PROCESSING, TURKEY, GREEN BEANS, CARROTS, POTATO STARCH, CHICKEN LIVER, EGG, NATURAL FLAVOR, POTASSIUM CHLORIDE, SALT, LOCUST BEAN GUM, SODIUM CARBONATE, TRICALCIUM PHOSPHATE, XANTHAN GUM, GUAR GUM, MAGNESIUM SULFATE, VITAMINS [VITAMIN E SUPPLEMENT, THIAMINE HYDROCHLORIDE, NIACIN, VITAMIN A SUPPLEMENT, PYRIDOXINE HYDROCHLORIDE, D-CALCIUM PANTOTHENATE, RIBOFLAVIN SUPPLEMENT, FOLIC ACID, VITAMIN D3 SUPPLEMENT, BIOTIN, VITAMIN B12 SUPPLEMENT], CHOLINE CHLORIDE, MINERALS [ZINC AMINO ACID CHELATE, FERROUS AMINO ACID CHELATE, MANGANESE AMINO ACID CHELATE, COPPER AMINO ACID CHELATE, POTASSIUM IODIDE, SODIUM SELENITE]",
+      "ingredients_raw": "CHICKEN, CHICKEN BROTH, WATER SUFFICIENT FOR PROCESSING, TURKEY, GREEN BEANS, CARROTS, POTATO STARCH, CHICKEN LIVER, EGG, NATURAL FLAVOR, POTASSIUM CHLORIDE, SALT, LOCUST BEAN GUM, SODIUM CARBONATE, TRICALCIUM PHOSPHATE, XANTHAN GUM, GUAR GUM, MAGNESIUM SULFATE, VITAMINS [VITAMINE SUPPLEMENT, THIAMINE HYDROCHLORIDE, NIACIN, VITAMIN A SUPPLEMENT, PYRIDOXINE HYDROCHLORIDE, D-CALCIUM PANTOTHENATE, RIBOFLAVIN SUPPLEMENT, FOLIC ACID, VITAMIN D3 SUPPLEMENT, BIOTIN, VITAMIN B12 SUPPLEMENT], CHOLINE CHLORIDE, MINERALS [ZINC AMINO ACID CHELATE, FERROUS AMINO ACID CHELATE, MANGANESE AMINO ACID CHELATE, COPPER AMINO ACID CHELATE, POTASSIUM IODIDE, SODIUM SELENITE].",
       "guaranteed_analysis": {
         "crude_protein_min": 6.5,
         "crude_fat_min": 5.0,
@@ -439,7 +654,7 @@
           "sku": "5247397"
         }
       ],
-      "ingredients_raw": "CHICKEN, CHICKEN BROTH, WATER SUFFICIENT FOR PROCESSING, BEEF, GREEN BEANS, RED PEPPERS, POTATO STARCH, CHICKEN LIVER, EGG, NATURAL FLAVOR, POTASSIUM CHLORIDE, SALT, LOCUST BEAN GUM, SODIUM CARBONATE, TRICALCIUM PHOSPHATE, XANTHAN GUM, GUAR GUM, MAGNESIUM SULFATE, VITAMINS [VITAMIN E SUPPLEMENT, THIAMINE HYDROCHLORIDE, NIACIN, VITAMIN A SUPPLEMENT, PYRIDOXINE HYDROCHLORIDE, D-CALCIUM PANTOTHENATE, RIBOFLAVIN SUPPLEMENT, FOLIC ACID, VITAMIN D3 SUPPLEMENT, BIOTIN, VITAMIN B12 SUPPLEMENT], CHOLINE CHLORIDE, MINERALS [ZINC AMINO ACID CHELATE, FERROUS AMINO ACID CHELATE, MANGANESE AMINO ACID CHELATE, COPPER AMINO ACID CHELATE, POTASSIUM IODIDE, SODIUM SELENITE]",
+      "ingredients_raw": "CHICKEN, CHICKEN BROTH, WATER SUFFICIENT FOR PROCESSING, BEEF, GREEN BEANS, RED PEPPERS, POTATO STARCH, CHICKEN LIVER, EGG, NATURAL FLAVOR, POTASSIUM CHLORIDE, SALT, LOCUST BEAN GUM, SODIUM CARBONATE, TRICALCIUM PHOSPHATE, XANTHAN GUM, GUAR GUM, MAGNESIUM SULFATE, VITAMINS [VITAMIN E SUPPLEMENT, THIAMINE HYDROCHLORIDE, NIACIN, VITAMIN A SUPPLEMENT, PYRIDOXINE HYDROCHLORIDE, D-CALCIUM PANTOTHENATE, RIBOFLAVIN SUPPLEMENT, FOLIC ACID, VITAMIN D3 SUPPLEMENT, BIOTIN, VITAMIN B12 SUPPLEMENT], CHOLINE CHLORIDE, MINERALS [ZINC AMINO ACID CHELATE, FERROUS AMINO ACID CHELATE, MANGANESE AMINO ACID CHELATE, COPPER AMINO ACID CHELATE, POTASSIUM IODIDE, SODIUM SELENITE].",
       "guaranteed_analysis": {
         "crude_protein_min": 6.0,
         "crude_fat_min": 4.0,
@@ -480,7 +695,7 @@
       "calorie_content": "1020 kcal/kg"
     },
     {
-      "name": "Petite Entrees Small Breed Adult Dog Food - Grain Free, Casserole",
+      "name": "Petite Entrees Small Breed Adult Dog Food - Grain Free, Casserole Chicken",
       "brand": "Wellness",
       "url": "https://www.petsmart.ca/dog/food/canned-food/wellness-petite-entrees-small-breed-adult-dog-food---natural-grain-free-casserole-24400.html",
       "channel": "retail",
@@ -488,24 +703,25 @@
       "product_format": "wet",
       "life_stage": "adult",
       "breed_size": "Small",
-      "source_id": "5220094",
-      "images": [
-        "/products/wellness/wellness-food-petite-entrees-small-breed-adult-dog-food-grain-free-casserole.jpg"
-      ],
-      "variants": [
-        {
-          "size_kg": 0.0,
-          "size_description": "",
-          "upc": "0076344090373",
-          "sku": "5220094"
-        },
-        {
-          "size_kg": 0.0,
-          "size_description": "",
-          "upc": "0076344090403",
-          "sku": "5220185"
-        }
-      ],
+      "ingredients_raw": "Chicken, Chicken Broth, Chicken Liver, Green Beans, Carrots, Tapioca Starch, Natural Flavor, Tricalcium Phosphate, Guar Gum, Potassium Chloride, Salt, Carrageenan, Magnesium Sulfate, Ferrous Glycine Complex, Zinc Glycine Complex, Manganese Glycine Complex, Copper Glycine Complex, Sodium Selenite, Potassium Iodide, Vitamin E Supplement, Niacin, Vitamin A Supplement, Pyridoxine Hydrochloride, D-Calcium Pantothenate, Riboflavin Supplement, Folic Acid, Vitamin B12 Supplement, Vitamin D3 Supplement, Biotin, Thiamine Mononitrate and Zinc Oxide",
+      "guaranteed_analysis": {
+        "crude_protein_min": 6.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1057 kcal/kg"
+    },
+    {
+      "name": "Petite Entrees Small Breed Adult Dog Food - Grain Free, Casserole Lamb",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/wellness-petite-entrees-small-breed-adult-dog-food---natural-grain-free-casserole-24400.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "life_stage": "adult",
+      "breed_size": "Small",
       "ingredients_raw": "Chicken, Chicken Broth, Chicken Liver, Lamb, Peas, White Sweet Potatoes, Tapioca Starch, Natural Flavor, Tricalcium Phosphate, Guar Gum, Potassium Chloride, Salt, Carrageenan, Magnesium Sulfate, Ferrous Glycine Complex, Zinc Glycine Complex, Manganese Glycine Complex, Copper Glycine Complex, Sodium Selenite, Potassium Iodide, Vitamin E Supplement, Niacin, Vitamin A Supplement, Pyridoxine Hydrochloride, D-Calcium Pantothenate, Riboflavin Supplement, Folic Acid, Vitamin B12 Supplement, Vitamin D3 Supplement, Biotin, Thiamine Mononitrate and Zinc Oxide",
       "guaranteed_analysis": {
         "crude_protein_min": 6.0,
@@ -517,7 +733,7 @@
       "calorie_content": "1082 kcal/kg"
     },
     {
-      "name": "Petite Entrees Small Breed All Life Stage Wet Dog Food - Grain Free, Mini-Filets",
+      "name": "Petite Entrees Small Breed All Life Stage Wet Dog Food - Grain Free, Mini-Filets Chicken",
       "brand": "Wellness",
       "url": "https://www.petsmart.ca/dog/food/canned-food/wellness-petite-entrees-small-breed-all-life-stage-wet-dog-food---natural-grain-free-mini-filets-23876.html",
       "channel": "retail",
@@ -525,36 +741,25 @@
       "product_format": "wet",
       "life_stage": "all",
       "breed_size": "Small",
-      "source_id": "5220090",
-      "images": [
-        "/products/wellness/wellness-food-petite-entrees-small-breed-all-life-stage-wet-dog-food-grain-free-mini-filets.jpg"
-      ],
-      "variants": [
-        {
-          "size_kg": 0.0,
-          "size_description": "",
-          "upc": "0076344090335",
-          "sku": "5220090"
-        },
-        {
-          "size_kg": 0.0,
-          "size_description": "",
-          "upc": "0076344090342",
-          "sku": "5220091"
-        },
-        {
-          "size_kg": 0.0,
-          "size_description": "",
-          "upc": "0076344090359",
-          "sku": "5220092"
-        },
-        {
-          "size_kg": 0.0,
-          "size_description": "",
-          "upc": "0076344090366",
-          "sku": "5220093"
-        }
-      ],
+      "ingredients_raw": "Chicken Broth, Chicken, Dried Egg Product, Tapioca Starch, Pea Protein, Carrots, Red Peppers, Chicken Liver, Natural Flavor, Tricalcium Phosphate, Salt, Potassium Chloride, Guar Gum, Calcium Sulfate, Magnesium Sulfate, Ferrous Glycine Complex, Zinc Glycine Complex, Manganese Glycine Complex, Copper Glycine Complex, Sodium Selenite, Potassium Iodide, Vitamin E Supplement, Niacin, Vitamin A Supplement, Pyridoxine Hydrochloride, D-Calcium Pantothenate, Riboflavin Supplement, Folic Acid, Vitamin B12 Supplement, Vitamin D3 Supplement, Biotin, Thiamine Mononitrate and Zinc Oxide",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 2.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "967 kcal/kg"
+    },
+    {
+      "name": "Petite Entrees Small Breed All Life Stage Wet Dog Food - Grain Free, Mini-Filets Turkey",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/wellness-petite-entrees-small-breed-all-life-stage-wet-dog-food---natural-grain-free-mini-filets-23876.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "life_stage": "all",
+      "breed_size": "Small",
       "ingredients_raw": "Chicken Broth, Chicken, Dried Egg Product, Tapioca Starch, Pea Protein, Turkey, Green Beans, White Sweet Potatoes, Chicken Liver, Natural Flavor, Tricalcium Phosphate, Salt, Potassium Chloride, Guar Gum, Calcium Sulfate, Magnesium Sulfate, Ferrous Glycine Complex, Zinc Glycine Complex, Manganese Glycine Complex, Copper Glycine Complex, Sodium Selenite, Potassium Iodide, Vitamin E Supplement, Niacin, Vitamin A Supplement, Pyridoxine Hydrochloride, D-Calcium Pantothenate, Riboflavin Supplement, Folic Acid, Vitamin B12 Supplement, Vitamin D3 Supplement, Biotin, Thiamine Mononitrate and Zinc Oxide",
       "guaranteed_analysis": {
         "crude_protein_min": 8.0,
@@ -566,7 +771,45 @@
       "calorie_content": "977 kcal/kg"
     },
     {
-      "name": "Protein Bowls Slow-Cooked Meals Adult Wet Dog Food",
+      "name": "Petite Entrees Small Breed All Life Stage Wet Dog Food - Grain Free, Mini-Filets Beef",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/wellness-petite-entrees-small-breed-all-life-stage-wet-dog-food---natural-grain-free-mini-filets-23876.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "life_stage": "all",
+      "breed_size": "Small",
+      "ingredients_raw": "Chicken Broth, Chicken, Dried Egg Product, Tapioca Starch, Pea Protein, Beef, Carrots, Red Peppers, Chicken Liver, Natural Flavor, Tricalcium Phosphate, Salt, Potassium Chloride, Guar Gum, Calcium Sulfate, Magnesium Sulfate, Ferrous Glycine Complex, Zinc Glycine Complex, Manganese Glycine Complex, Copper Glycine Complex, Sodium Selenite, Potassium Iodide, Vitamin E Supplement, Niacin, Vitamin A Supplement, Pyridoxine Hydrochloride, D-Calcium Pantothenate, Riboflavin Supplement, Folic Acid, Vitamin B12 Supplement, Vitamin D3 Supplement, Biotin, Thiamine Mononitrate and Zinc Oxide",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 2.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "954 kcal/kg"
+    },
+    {
+      "name": "Petite Entrees Small Breed All Life Stage Wet Dog Food - Grain Free, Mini-Filets Chicken & Beef",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/wellness-petite-entrees-small-breed-all-life-stage-wet-dog-food---natural-grain-free-mini-filets-23876.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "life_stage": "all",
+      "breed_size": "Small",
+      "ingredients_raw": "Chicken Broth, Chicken, Dried Egg Product, Tapioca Starch, Pea Protein, Beef, Carrots, Green Beans, Chicken Liver, Natural Flavor, Tricalcium Phosphate, Salt, Potassium Chloride, Guar Gum, Calcium Sulfate, Magnesium Sulfate, Ferrous Glycine Complex, Zinc Glycine Complex, Manganese Glycine Complex, Copper Glycine Complex, Sodium Selenite, Potassium Iodide, Vitamin E Supplement, Niacin, Vitamin A Supplement, Pyridoxine Hydrochloride, D-Calcium Pantothenate, Riboflavin Supplement, Folic Acid, Vitamin B12 Supplement, Vitamin D3 Supplement, Biotin, Thiamine Mononitrate and Zinc Oxide",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 2.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 82.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "940 kcal/kg"
+    },
+    {
+      "name": "Protein Bowls Slow-Cooked Meals Adult Wet Dog Food Chicken & Potato",
       "brand": "Wellness",
       "url": "https://www.petsmart.ca/dog/food/canned-food/wellness-protein-bowls-slow-cooked-meals-adult-wet-dog-food-94214.html",
       "channel": "retail",
@@ -574,110 +817,304 @@
       "product_format": "wet",
       "sub_brand": "Protein Bowls",
       "life_stage": "adult",
-      "source_id": "5373432",
-      "images": [
-        "/products/wellness/wellness-food-protein-bowls-slow-cooked-meals-adult-wet-dog-food.jpg"
-      ],
-      "variants": [
-        {
-          "size_kg": 0.0,
-          "size_description": "",
-          "upc": "0076344042167",
-          "sku": "5373432"
-        },
-        {
-          "size_kg": 0.0,
-          "size_description": "",
-          "upc": "0076344042198",
-          "sku": "5373433"
-        },
-        {
-          "size_kg": 0.0,
-          "size_description": "",
-          "upc": "0076344042204",
-          "sku": "5373434"
-        },
-        {
-          "size_kg": 0.0,
-          "size_description": "",
-          "upc": "0076344042129",
-          "sku": "5373545"
-        },
-        {
-          "size_kg": 0.0,
-          "size_description": "",
-          "upc": "0076344042174",
-          "sku": "5373546"
-        },
-        {
-          "size_kg": 0.0,
-          "size_description": "",
-          "upc": "0076344042143",
-          "sku": "5373547"
-        },
-        {
-          "size_kg": 0.0,
-          "size_description": "",
-          "upc": "0076344042136",
-          "sku": "5373548"
-        },
-        {
-          "size_kg": 0.0,
-          "size_description": "",
-          "upc": "0076344042211",
-          "sku": "5373549"
-        }
-      ],
-      "ingredients_raw": "Turkey, Chicken, Duck, Rice, Cranberries, Peas, Carrots, White Sweet Potatoes, Potato Starch, Turkey Bone Broth, Chicken Bone Broth, Duck Bone Broth, Sugar, Sodium Tripolyphosphate, Tricalcium Phosphate, Marine Microalgae Oil (preserved with mixed tocopherols), Salt, Potassium Chloride, Sage, Dried Chicory Root, Taurine, Kale, Magnesium Sulfate, Thyme, Choline Chloride, Vitamin E Supplement, Zinc Proteinate, Rosemary, Turmeric, Iron Proteinate, Thiamine Mononitrate, Niacin, Vitamin A Supplement, Copper Proteinate, Manganese Proteinate, Pyridoxine Hydrochloride, Sodium Selenite, d-Calcium Pantothenate, Riboflavin Supplement, Folic Acid, Potassium Iodide, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement",
+      "ingredients_raw": "Chicken, Rice, Chicken Liver, Chicken Bone Broth, Potatoes, Peas, Potato Starch, Carrots, Celery, Sodium Tripolyphosphate, Tricalcium Phosphate, Marine Microalgae Oil (preserved with mixed tocopherols), Coconut Milk, Salt, Potassium Chloride, Dried Chicory Root, Taurine, Thyme, Magnesium Sulfate, Parsley, Choline Chloride, Vitamin E Supplement, Zinc Proteinate, Turmeric, Cumin, Iron Proteinate, Thiamine Mononitrate, Niacin, Vitamin A Supplement, Copper Proteinate, Manganese Proteinate, Pyridoxine Hydrochloride, d-Calcium Pantothenate, Riboflavin Supplement, Sodium Selenite, Folic Acid, Potassium Iodide, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement.",
       "guaranteed_analysis": {
-        "crude_protein_max": 11.0
+        "crude_protein_min": 11.0,
+        "crude_fat_min": 9.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 70.0,
+        "calcium_min": 0.25,
+        "phosphorus_min": 0.2,
+        "taurine_min": 0.1,
+        "omega_6_min": 0.4,
+        "omega_3_min": 0.08
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1612 kcal/kg, 284 kcal/pouch"
+    },
+    {
+      "name": "Protein Bowls Slow-Cooked Meals Adult Wet Dog Food Chicken & Quinoa",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/wellness-protein-bowls-slow-cooked-meals-adult-wet-dog-food-94214.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Protein Bowls",
+      "life_stage": "adult",
+      "ingredients_raw": "Chicken, Rice, Quinoa, Chicken Liver, Pumpkin, Chicken Bone Broth, Yellow Bell Peppers, Peas, Potato Starch, Carrots, Sodium Tripolyphosphate, Tricalcium Phosphate, Salt, Potassium Chloride, Sage, Dried Chicory Root, Taurine, Magnesium Sulfate, Thyme, Parsley, Choline Chloride, Vitamin E Supplement, Zinc Proteinate, Rosemary, Turmeric, Iron Proteinate, Thiamine Mononitrate, Niacin, Vitamin A Supplement, Copper Proteinate, Manganese Proteinate, Pyridoxine Hydrochloride, d-Calcium Pantothenate, Riboflavin Supplement, Sodium Selenite, Folic Acid, Potassium Iodide, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 10.0,
+        "crude_fat_min": 7.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 70.0,
+        "calcium_min": 0.25,
+        "phosphorus_min": 0.2,
+        "taurine_min": 0.1,
+        "omega_6_min": 0.4,
+        "omega_3_min": 0.08
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1359 kcal/kg, 239 kcal/pouch"
+    },
+    {
+      "name": "Protein Bowls Slow-Cooked Meals Adult Wet Dog Food Beef",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/wellness-protein-bowls-slow-cooked-meals-adult-wet-dog-food-94214.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Protein Bowls",
+      "life_stage": "adult",
+      "ingredients_raw": "Beef, Beef Liver, Rice, Red Bell Peppers, Eggs, Beef Bone Broth, Quinoa, Potato Starch, Peas, Carrots, Sodium Tripolyphosphate, Salt, Potassium Chloride, Tricalcium Phosphate, Dried Chicory Root, Taurine, Thyme, Magnesium Sulfate, Parsley, Choline Chloride, Cumin, Vitamin E Supplement, Zinc Proteinate, Iron Proteinate, Thiamine Mononitrate, Vitamin A Supplement, Niacin, Copper Proteinate, Manganese Proteinate, Sodium Selenite, Pyridoxine Hydrochloride, d-Calcium Pantothenate, Riboflavin Supplement, Folic Acid, Potassium Iodide, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 11.0,
+        "crude_fat_min": 7.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 70.0,
+        "calcium_min": 0.25,
+        "phosphorus_min": 0.2,
+        "taurine_min": 0.1,
+        "omega_6_min": 0.2,
+        "omega_3_min": 0.08
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1258 kcal/kg, 221 kcal/pouch"
+    },
+    {
+      "name": "Protein Bowls Slow-Cooked Meals Adult Wet Dog Food Beef & Potato",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/wellness-protein-bowls-slow-cooked-meals-adult-wet-dog-food-94214.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Protein Bowls",
+      "life_stage": "adult",
+      "ingredients_raw": "Beef, Rice, Beef Liver, Beef Bone Broth, Potatoes, Green Beans, Peas, Red Bell Peppers, Potato Starch, Carrots, Sunflower Oil, Sodium Tripolyphosphate, Salt, Potassium Chloride, Tricalcium Phosphate, Dried Chicory Root, Taurine, Marine Microalgae Oil (preserved with mixed tocopherols), Thyme, Magnesium Sulfate, Choline Chloride, Cumin, Vitamin E Supplement, Zinc Proteinate, Iron Proteinate, Thiamine Mononitrate, Niacin, Copper Proteinate, Manganese Proteinate, Vitamin A Supplement, Pyridoxine Hydrochloride, Sodium Selenite, d-Calcium Pantothenate, Riboflavin Supplement, Folic Acid, Potassium Iodide, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 10.0,
+        "crude_fat_min": 6.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 70.0,
+        "calcium_min": 0.25,
+        "phosphorus_min": 0.2,
+        "taurine_min": 0.1,
+        "omega_6_min": 0.4,
+        "omega_3_min": 0.08
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1322 kcal/kg, 233 kcal/pouch"
+    },
+    {
+      "name": "Protein Bowls Slow-Cooked Meals Adult Wet Dog Food Turkey & Cranberry",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/wellness-protein-bowls-slow-cooked-meals-adult-wet-dog-food-94214.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Protein Bowls",
+      "life_stage": "adult",
+      "ingredients_raw": "Turkey, Chicken, Duck, Rice, Cranberries, Peas, Carrots, White Sweet Potatoes, Potato Starch, Turkey Bone Broth, Chicken Bone Broth, Duck Bone Broth, Sugar, Sodium Tripolyphosphate, Tricalcium Phosphate, Marine Microalgae Oil (preserved with mixed tocopherols), Salt, Potassium Chloride, Sage, Dried Chicory Root, Taurine, Kale, Magnesium Sulfate, Thyme, Choline Chloride, Vitamin E Supplement, Zinc Proteinate, Rosemary, Turmeric, Iron Proteinate, Thiamine Mononitrate, Niacin, Vitamin A Supplement, Copper Proteinate, Manganese Proteinate, Pyridoxine Hydrochloride, Sodium Selenite, d-Calcium Pantothenate, Riboflavin Supplement, Folic Acid, Potassium Iodide, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 11.0,
+        "crude_fat_min": 7.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 70.0,
+        "calcium_min": 0.25,
+        "phosphorus_min": 0.2,
+        "taurine_min": 0.1,
+        "omega_6_min": 0.4,
+        "omega_3_min": 0.08
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "1424 kcal/kg, 251 kcal/pouch"
     },
     {
-      "name": "Stews All Life Stage Wet Dog Food",
+      "name": "Protein Bowls Slow-Cooked Meals Adult Wet Dog Food Salmon & Whitefish",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/wellness-protein-bowls-slow-cooked-meals-adult-wet-dog-food-94214.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Protein Bowls",
+      "life_stage": "adult",
+      "ingredients_raw": "Salmon, Whitefish, Tuna, Rice, Chicken, Red Bell Peppers, Yellow Bell Peppers, Fish Bone Broth, Potato Starch, Tricalcium Phosphate, Salt, Potassium Chloride, Dried Chicory Root, Taurine, Magnesium Sulfate, Sodium Tripolyphosphate, Parsley, Dill, Choline Chloride, Vitamin E Supplement, Zinc Proteinate, Iron Proteinate, Vitamin A Supplement, Anise Seed, Copper Proteinate, Manganese Proteinate, Thiamine Mononitrate, Niacin, Riboflavin Supplement, d-Calcium Pantothenate, Biotin, Pyridoxine Hydrochloride, Potassium Iodide, Folic Acid, Vitamin B12 Supplement.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 12.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 70.0,
+        "calcium_min": 0.25,
+        "phosphorus_min": 0.2,
+        "taurine_min": 0.1,
+        "omega_6_min": 0.4,
+        "omega_3_min": 0.08
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1289 kcal/kg, 227 kcal/pouch"
+    },
+    {
+      "name": "Protein Bowls Slow-Cooked Meals Adult Wet Dog Food Lamb & Rice",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/wellness-protein-bowls-slow-cooked-meals-adult-wet-dog-food-94214.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Protein Bowls",
+      "life_stage": "adult",
+      "ingredients_raw": "Lamb, Rice, Red Rice, Lamb Bone Broth, Peas, Carrots, Red Bell Peppers, Yellow Bell Peppers, Potato Starch, Sunflower Oil, Sodium Tripolyphosphate, Tricalcium Phosphate, Potassium Chloride, Salt, Dried Chicory Root, Taurine, Marine Microalgae Oil (preserved with mixed tocopherols), Magnesium Sulfate, Choline Chloride, Parsley, Thyme, Rosemary, Vitamin E Supplement, Zinc Proteinate, Iron Proteinate, Thiamine Mononitrate, Vitamin A Supplement, Niacin, Copper Proteinate, Manganese Proteinate, Sodium Selenite, Pyridoxine Hydrochloride, d-Calcium Pantothenate, Riboflavin Supplement, Folic Acid, Biotin, Potassium Iodide, Vitamin B12 Supplement, Vitamin D3 Supplement.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 10.0,
+        "crude_fat_min": 8.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 70.0,
+        "calcium_min": 0.25,
+        "phosphorus_min": 0.2,
+        "taurine_min": 0.1,
+        "omega_6_min": 0.4,
+        "omega_3_min": 0.04
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1519 kcal/kg, 267 kcal/pouch"
+    },
+    {
+      "name": "Protein Bowls Slow-Cooked Meals Adult Wet Dog Food Duck & Sweet Potato",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/wellness-protein-bowls-slow-cooked-meals-adult-wet-dog-food-94214.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "Protein Bowls",
+      "life_stage": "adult",
+      "ingredients_raw": "Duck, Duck Liver, Rice, Sweet Potatoes, Duck Bone Broth, Cranberries, Potato Starch, Sugar, Sodium Tripolyphosphate, Tricalcium Phosphate, Salt, Potassium Chloride, Parsley, Dried Chicory Root, Taurine, Magnesium Sulfate, Thyme, Choline Chloride, Allspice, Vitamin E Supplement, Zinc Proteinate, Iron Proteinate, Thiamine Mononitrate, Vitamin A Supplement, Niacin, Copper Proteinate, Manganese Proteinate, Pyridoxine Hydrochloride, Sodium Selenite, d-Calcium Pantothenate, Riboflavin Supplement, Folic Acid, Potassium Iodide, Biotin, Vitamin B12 Supplement, Vitamin D3 Supplement.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 11.0,
+        "crude_fat_min": 6.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 70.0,
+        "calcium_min": 0.25,
+        "phosphorus_min": 0.2,
+        "taurine_min": 0.1,
+        "omega_6_min": 0.4,
+        "omega_3_min": 0.04
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1568 kcal/kg, 276 kcal/pouch"
+    },
+    {
+      "name": "Stews All Life Stage Wet Dog Food Chicken",
       "brand": "Wellness",
       "url": "https://www.petsmart.ca/dog/food/canned-food/wellness-stews-all-life-stage-wet-dog-food---natural-1065.html",
       "channel": "retail",
       "product_type": "food",
       "product_format": "wet",
       "life_stage": "all",
-      "source_id": "5153905",
-      "images": [
-        "/products/wellness/wellness-food-stews-all-life-stage-wet-dog-food.jpg"
-      ],
+      "ingredients_raw": "Chicken, Chicken Broth, Water Sufficient for Processing, Chicken Liver, Dried Egg Product, Peas, Carrots, Potatoes, Potato Starch, Natural Flavor, Chicken Heart, Guar Gum, Red Peppers, Dried Plain Beet Pulp, Celery, Sodium Phosphate, Salt, Fish Oil (Preserved With Mixed Tocopherols), Potassium Chloride, Dried Chicory Root, Minerals (Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Sodium Selenite, Cobalt Proteinate, Potassium Iodide), Choline Chloride, Vitamins (Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Sunflower Oil, Rosemary, Sage, Thyme, Tricalcium Phosphate.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 4.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 82.0,
+        "calcium_min": 0.11,
+        "phosphorus_min": 0.09,
+        "omega_6_min": 0.27
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "945 kcal/kg, 335 kcal/can"
+    },
+    {
+      "name": "Stews All Life Stage Wet Dog Food Beef",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/wellness-stews-all-life-stage-wet-dog-food---natural-1065.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "life_stage": "all",
+      "ingredients_raw": "Beef, Beef Broth, Water Sufficient for Processing, Beef Liver, Carrots, Potatoes, Peas, Dried Egg Product, Natural Flavor, Potato Starch, Guar Gum, Dried Plain Beet Pulp, Sodium Phosphate, Salt, Fish Oil (Preserved with Mixed Tocopherols), Potassium Chloride, Tricalcium Phosphate, Calcium Carbonate, Dried Chicory Root, Minerals (Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Sodium Selenite, Cobalt Proteinate, Potassium Iodide), Choline Chloride, Vitamins (Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Sunflower Oil, Rosemary, Sage, Thyme, Magnesium Sulfate.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 3.5,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 82.0,
+        "calcium_min": 0.11,
+        "phosphorus_min": 0.09,
+        "omega_6_min": 0.27
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "943 kcal/kg, 334 kcal/can"
+    },
+    {
+      "name": "Stews All Life Stage Wet Dog Food Lamb & Beef",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/wellness-stews-all-life-stage-wet-dog-food---natural-1065.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "life_stage": "all",
+      "ingredients_raw": "Lamb Broth, Lamb, Beef, Beef Liver, Brown Rice, Apples, Carrots, Spinach, Dried Egg Product, Natural Flavor, Guar Gum, Dried Plain Beet Pulp, Sodium Phosphate, Salt, Fish Oil (Preserved With Mixed Tocopherols), Potassium Chloride, Calcium Carbonate, Dried Chicory Root, Minerals (Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Sodium Selenite, Cobalt Proteinate, Potassium Iodide), Sunflower Oil, Choline Chloride, Vitamins (Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Mint, Rosemary, Sage, Thyme, Tricalcium Phosphate.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 5.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 82.0,
+        "calcium_min": 0.11,
+        "phosphorus_min": 0.09,
+        "omega_6_min": 0.27
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1050 kcal/kg, 372 kcal/can"
+    },
+    {
+      "name": "Stews All Life Stage Wet Dog Food Turkey & Duck",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/wellness-stews-all-life-stage-wet-dog-food---natural-1065.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "life_stage": "all",
+      "ingredients_raw": "Turkey Broth, Turkey, Duck, Cranberries, Turkey Liver, Sweet Potatoes, Dried Egg Product, Turkey Heart, Carrots, Natural Flavor, Potato Starch, Potatoes, Green Beans, Guar Gum, Dried Plain Beet Pulp, Sodium Phosphate, Salt, Fish Oil (Preserved With Mixed Tocopherols), Potassium Chloride, Dried Chicory Root, Minerals (Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Sodium Selenite, Cobalt Proteinate, Potassium Iodide), Choline Chloride, Vitamins (Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Sunflower Oil, Calcium Carbonate, Rosemary, Sage, Thyme, Tricalcium Phosphate.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 3.5,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 82.0,
+        "calcium_min": 0.11,
+        "phosphorus_min": 0.09,
+        "omega_6_min": 0.27
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "971 kcal/kg, 344 kcal/can"
+    },
+    {
+      "name": "Stews All Life Stage Wet Dog Food Turkey",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/wellness-stews-all-life-stage-wet-dog-food---natural-1065.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "life_stage": "all",
+      "ingredients_raw": "Turkey, Turkey Broth, Water Sufficient for Processing, Turkey Liver, Carrots, Barley, Dried Egg Product, Turkey Heart, Celery, Natural Flavor, Guar Gum, Dried Plain Beet Pulp, Sodium Phosphate, Salt, Fish Oil (Preserved With Mixed Tocopherols), Potassium Chloride, Dried Chicory Root, Minerals (Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Sodium Selenite, Cobalt Proteinate, Potassium Iodide), Choline Chloride, Vitamins (Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Sunflower Oil, Rosemary, Sage, Thyme, Tricalcium Phosphate.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 3.5,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 82.0,
+        "calcium_min": 0.11,
+        "phosphorus_min": 0.09,
+        "omega_6_min": 0.27
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "936 kcal/kg, 331 kcal/can"
+    },
+    {
+      "name": "Stews All Life Stage Wet Dog Food Venison & Salmon",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/wellness-stews-all-life-stage-wet-dog-food---natural-1065.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "life_stage": "all",
+      "source_id": "5298439",
       "variants": [
-        {
-          "size_kg": 0.0,
-          "size_description": "",
-          "upc": "0076344017059",
-          "sku": "5153905"
-        },
-        {
-          "size_kg": 0.0,
-          "size_description": "",
-          "upc": "0076344017158",
-          "sku": "5153906"
-        },
-        {
-          "size_kg": 0.0,
-          "size_description": "",
-          "upc": "0076344017554",
-          "sku": "5153907"
-        },
-        {
-          "size_kg": 0.0,
-          "size_description": "",
-          "upc": "0076344017356",
-          "sku": "5155455"
-        },
-        {
-          "size_kg": 0.0,
-          "size_description": "",
-          "upc": "0076344017257",
-          "sku": "5155456"
-        },
         {
           "size_kg": 0.0,
           "size_description": "",
@@ -685,17 +1122,18 @@
           "sku": "5298439"
         }
       ],
-      "ingredients_raw": "Turkey Broth, Turkey, Duck, Cranberries, Turkey Liver, Sweet Potatoes, Dried Egg Product, Turkey Heart, Carrots, Natural Flavor, Potato Starch, Potatoes, Green Beans, Guar Gum, Dried Plain Beet Pulp, Sodium Phosphate, Salt, Fish Oil (Preserved With Mixed Tocopherols), Potassium Chloride, Dried Chicory Root, Minerals (Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Sodium Selenite, Cobalt Proteinate, Potassium Iodide), Choline Chloride, Vitamins (Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Sunflower Oil, Calcium Carbonate, Rosemary, Sage, Thyme, Tricalcium Phosphate",
+      "images": [
+        "/products/wellness/wellness-food-stews-all-life-stage-wet-dog-food-venison-salmon.jpg"
+      ],
+      "ingredients_raw": "Venison Broth, Venison, Beef Liver, Salmon, Carrots, Potatoes, Dried Egg Whites, Potato Starch, Natural Flavor, Guar Gum, Pea Fiber, Dried Egg Product, Apples, Sodium Phosphate, Potassium Chloride, Minerals (Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Sodium Selenite, Cobalt Proteinate, Potassium Iodide), Choline Chloride, Vitamins (Thiamine Mononitrate, Vitamin E Supplement, Niacin Supplement, d-Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid), Rosemary, Sage, Thyme",
       "guaranteed_analysis": {
         "crude_protein_min": 8.0,
         "crude_fat_min": 3.5,
         "crude_fiber_max": 1.0,
-        "moisture_max": 82.0,
-        "calcium_min": 0.11,
-        "phosphorus_min": 0.09
+        "moisture_max": 82.0
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "971 kcal/kg, 344 kcal/can"
+      "calorie_content": "938 kcal/kg, 332 kcal/can"
     },
     {
       "name": "Complete Health Adult Dry Dog Food - Beef & Barley",
@@ -726,7 +1164,15 @@
       ],
       "ingredients_raw": "Deboned Beef, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Barley, Brown Rice, Oatmeal, Brewers Dried Yeast, Chicken Fat, Dried Plain Beet Pulp, Flaxseed, Salmon Oil, Natural Flavor, Dried Chicory Root, Potassium Chloride, Taurine, Choline Chloride, Spinach, Broccoli, Vitamin E Supplement, Carrots, Parsley, Apples, Blueberries, Kale, Mixed Tocopherols added to preserve freshness, Niacin, Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Vitamin A Supplement, Iron Proteinate, Ascorbic Acid (Vitamin C), Thiamine Mononitrate, d-Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Riboflavin, Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract",
       "guaranteed_analysis": {
-        "crude_protein_min": 24.0
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 0.9,
+        "phosphorus_min": 0.7,
+        "taurine_min": 0.09,
+        "omega_6_min": 2.4,
+        "omega_3_min": 0.8
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3519 kcal/kg, 334 kcal/cup"
@@ -766,7 +1212,15 @@
       ],
       "ingredients_raw": "Deboned Chicken, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Oatmeal, Barley, Brown Rice, Peas, Dried Plain Beet Pulp, Chicken Fat, Flaxseed, Natural Flavor, Dried Chicory Root, Potassium Chloride, Choline Chloride, Taurine, Spinach, Broccoli, Vitamin E Supplement, Carrots, Parsley, Apples, Blueberries, Kale, Mixed Tocopherols added to preserve freshness, Niacin, Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Vitamin A Supplement, Iron Proteinate, Ascorbic Acid (Vitamin C), Thiamine Mononitrate, d-Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Riboflavin, Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract",
       "guaranteed_analysis": {
-        "crude_protein_min": 24.0
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 11.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 0.8,
+        "phosphorus_min": 0.6,
+        "taurine_min": 0.09,
+        "omega_6_min": 2.4,
+        "omega_3_min": 0.6
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3584 kcal/kg, 427 kcal/cup"
@@ -794,7 +1248,15 @@
       ],
       "ingredients_raw": "Deboned Chicken, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Dried Ground Potatoes, Chickpeas, Peas, Dried Plain Beet Pulp, Chicken Fat, Flaxseed, Natural Flavor, Dried Chicory Root, Taurine, Potassium Chloride, Choline Chloride, Spinach, Broccoli, Vitamin E Supplement, Carrots, Parsley, Apples, Blueberries, Kale, Mixed Tocopherols added to preserve freshness, Niacin, Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Vitamin A Supplement, Iron Proteinate, Ascorbic Acid (Vitamin C), Thiamine Mononitrate, d-Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Riboflavin, Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract",
       "guaranteed_analysis": {
-        "crude_protein_min": 26.0
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 11.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 0.8,
+        "phosphorus_min": 0.6,
+        "taurine_min": 0.09,
+        "omega_6_min": 3.0,
+        "omega_3_min": 0.75
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3509 kcal/kg, 390 kcal/cup"
@@ -822,7 +1284,15 @@
       ],
       "ingredients_raw": "Lamb, Lamb Meal (source of Glucosamine and Chondroitin Sulfate), Dried Ground Potatoes, Peas, Chickpeas, Dried Plain Beet Pulp, Flaxseed, Chicken Fat, Whitefish Meal, Natural Flavor, Dried Chicory Root, Taurine, Choline Chloride, Spinach, Broccoli, Vitamin E Supplement, Carrots, Parsley, Apples, Blueberries, Kale, Mixed Tocopherols added to preserve freshness, Niacin, Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Vitamin A Supplement, Iron Proteinate, Ascorbic Acid (Vitamin C), Thiamine Mononitrate, d-Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Riboflavin, Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract",
       "guaranteed_analysis": {
-        "crude_protein_min": 26.0
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 5.5,
+        "moisture_max": 10.0,
+        "calcium_min": 1.4,
+        "phosphorus_min": 1.0,
+        "taurine_min": 0.09,
+        "omega_6_min": 2.25,
+        "omega_3_min": 1.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3537 kcal/kg, 421 kcal/cup"
@@ -848,7 +1318,7 @@
           "sku": "5352356"
         }
       ],
-      "ingredients_raw": "Whitefish, Barley, Peas, Oatmeal, Whitefish Meal (source of Glucosamine and Chondroitin Sulfate), Sweet Potatoes, Canola Oil, Dried Plain Beet Pulp, Flaxseed, Natural Flavor, Dried Chicory Root, Potassium Chloride, Taurine, Choline Chloride, Spinach, Broccoli, Vitamin E Supplement, Carrots, Parsley, Apples, Blueberries, Kale, Mixed Tocopherols added to preserve freshness, Niacin, Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Vitamin A Supplement, Iron Proteinate, Ascorbic Acid (Vitamin C), Thiamine Mononitrate, d-Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Riboflavin, Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract",
+      "ingredients_raw": "Whitefish, Barley, Peas, Oatmeal, Whitefish Meal (source of Glucosamine and Chondroitin Sulfate), Sweet Potatoes, Canola Oil, Dried Plain Beet Pulp, Flaxseed, Natural Flavor, Dried Chicory Root, Potassium Chloride, Taurine, Choline Chloride, Spinach, Broccoli, Taurine, Vitamin E Supplement, Carrots, Parsley, Apples, Blueberries, Kale, Mixed Tocopherols added to preserve freshness, Niacin, Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Vitamin A Supplement, Iron Proteinate, Ascorbic Acid (Vitamin C), Thiamine Mononitrate, d-Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Riboflavin, Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract",
       "guaranteed_analysis": {
         "crude_protein_min": 22.0,
         "crude_fat_min": 12.0,
@@ -856,7 +1326,9 @@
         "moisture_max": 10.0,
         "calcium_min": 1.2,
         "phosphorus_min": 1.0,
-        "taurine_min": 0.09
+        "taurine_min": 0.09,
+        "omega_6_min": 3.0,
+        "omega_3_min": 1.5
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3509 kcal/kg, 418 kcal/cup"
@@ -891,7 +1363,15 @@
       ],
       "ingredients_raw": "Deboned Turkey, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Barley, Oatmeal, Brown Rice, Oats, Salmon Meal, Dried Plain Beet Pulp, Flaxseed, Chicken Fat, Natural Flavor, Salmon Oil, Dried Chicory Root, Spinach, L-Carnitine, Broccoli, Vitamin E Supplement, Carrots, Parsley, Apples, Blueberries, Kale, Mixed Tocopherols added to preserve freshness, Niacin, Taurine, Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Vitamin A Supplement, Iron Proteinate, Ascorbic Acid (Vitamin C), Thiamine Mononitrate, d-Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Riboflavin, Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract",
       "guaranteed_analysis": {
-        "crude_protein_min": 28.0
+        "crude_protein_min": 28.0,
+        "crude_fat_min": 10.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.3,
+        "phosphorus_min": 0.9,
+        "taurine_min": 0.09,
+        "omega_6_min": 3.25,
+        "omega_3_min": 0.75
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3470 kcal/kg, 344 kcal/cup"
@@ -924,9 +1404,17 @@
           "sku": "5376549"
         }
       ],
-      "ingredients_raw": "Deboned Chicken, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Brown Rice, Barley, Peas, Oatmeal, Oats, Dried Plain Beet Pulp, Chicken Fat, Salmon Meal, Natural Flavor, Flaxseed, Dried Chicory Root, Choline Chloride, Spinach, Broccoli, Vitamin E Supplement, Carrots, Parsley, Taurine, Apples, Blueberries, Kale, Mixed Tocopherols added to preserve freshness, Calcium Carbonate, Niacin, Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Vitamin A Supplement, Iron Proteinate, Ascorbic Acid (Vitamin C), Thiamine Mononitrate, d-Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Riboflavin, Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract",
+      "ingredients_raw": "Deboned Chicken, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Brown Rice, Barley, Peas, Oatmeal, Oats, Dried Plain Beet Pulp, Chicken Fat, Salmon Meal, Natural Flavor, Flaxseed, Dried Chicory Root, Choline Chloride, Spinach, Broccoli, Vitamin E Supplement, Carrots, Parsley, Taurine, Apples, Blueberries, Kale, Mixed Tocopherols added to preserve freshness, Calcium Carbonate, Niacin, Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Vitamin A Supplement, Iron Proteinate, Ascorbic Acid (Vitamin C), Thiamine Mononitrate, d-Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Riboflavin, Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract.",
       "guaranteed_analysis": {
-        "crude_protein_min": 26.0
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 11.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.1,
+        "phosphorus_min": 0.8,
+        "taurine_min": 0.09,
+        "omega_6_min": 2.0,
+        "omega_3_min": 0.75
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3537 kcal/kg, 350 kcal/cup"
@@ -955,7 +1443,15 @@
       ],
       "ingredients_raw": "Deboned Chicken, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Peas, Dried Ground Potatoes, Chickpeas, Lentils, Dried Plain Beet Pulp, Flaxseed, Chicken Fat, Natural Flavor, Dried Chicory Root, Taurine, Choline Chloride, Spinach, Broccoli, Vitamin E Supplement, Carrots, Parsley, Apples, Blueberries, Kale, Mixed Tocopherols added to preserve freshness, Niacin, Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Vitamin A Supplement, Iron Proteinate, Ascorbic Acid (Vitamin C), Thiamine Mononitrate, d-Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Riboflavin, Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract",
       "guaranteed_analysis": {
-        "crude_protein_min": 30.0
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 11.0,
+        "crude_fiber_max": 6.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.3,
+        "phosphorus_min": 1.0,
+        "taurine_min": 0.09,
+        "omega_6_min": 2.75,
+        "omega_3_min": 0.75
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3504 kcal/kg, 406 kcal/cup"
@@ -1058,7 +1554,15 @@
       ],
       "ingredients_raw": "Deboned Chicken, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Oatmeal, Barley, Brown Rice, Peas, Rice, Dried Plain Beet Pulp, Flaxseed, Chicken Fat, Natural Flavor, Dried Chicory Root, Potassium Chloride, Choline Chloride, Taurine, Spinach, Broccoli, Vitamin E Supplement, Carrots, Parsley, Apples, Blueberries, Kale, Mixed Tocopherols added to preserve freshness, Niacin, Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Vitamin A Supplement, Iron Proteinate, Ascorbic Acid (Vitamin C), Thiamine Mononitrate, d-Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Riboflavin, Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract",
       "guaranteed_analysis": {
-        "crude_protein_min": 22.0
+        "crude_protein_min": 22.0,
+        "crude_fat_min": 10.0,
+        "crude_fiber_max": 4.25,
+        "moisture_max": 10.0,
+        "calcium_min": 0.6,
+        "phosphorus_min": 0.6,
+        "taurine_min": 0.09,
+        "omega_6_min": 2.4,
+        "omega_3_min": 0.8
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3494 kcal/kg, 405 kcal/cup"
@@ -1090,7 +1594,7 @@
           "sku": "5362869"
         }
       ],
-      "ingredients_raw": "Salmon, Whitefish Meal (source of Glucosamine and Chondroitin Sulfate), Rice, Oatmeal, Barley, Dried Plain Beet Pulp, Canola Oil, Natural Flavor, Flaxseed, Salmon Oil, Taurine, Dried Chicory Root, Hydrolyzed Yeast, Dried Yeast, Vitamin E Supplement, Choline Chloride, Potassium Chloride, Mixed Tocopherols (added to preserve freshness), Niacin, Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Iron Proteinate, Vitamin A Supplement, Thiamine Mononitrate, Vitamin B5 (d-Calcium Pantothenate), Sodium Selenite, Vitamin B6 (Pyridoxine Hydrochloride), Copper Sulfate, Manganese Sulfate, Riboflavin, Manganese Proteinate, Copper Proteinate, Vitamin B7 (Biotin), Vitamin D3 Supplement, Vitamin B12 Supplement, Vitamin B9 (Folic Acid), Calcium Iodate, Vitamin C (Ascorbic Acid), Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract",
+      "ingredients_raw": "Salmon, Whitefish Meal (source of Glucosamine and Chondroitin Sulfate), Rice, Oatmeal, Barley, Dried Plain Beet Pulp, Canola Oil, Natural Flavor, Flaxseed, Salmon Oil, Taurine, Dried Chicory Root, Hydrolyzed Yeast, Dried Yeast, Vitamin E Supplement, Choline Chloride, Potassium Chloride, Mixed Tocopherols (added to preserve freshness), Niacin, Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Iron Proteinate, Vitamin A Supplement, Thiamine Mononitrate, Vitamin B5 (d-Calcium Pantothenate), Sodium Selenite, Vitamin B6 (Pyridoxine Hydrochloride), Copper Sulfate, Manganese Sulfate, Riboflavin, Manganese Proteinate, Copper Proteinate, Vitamin B7 (Biotin), Vitamin D3 Supplement, Vitamin B12 Supplement, Vitamin B9 (Folic Acid), Calcium Iodate, Vitamin C (Ascorbic Acid), Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract.",
       "guaranteed_analysis": {
         "crude_protein_min": 24.0,
         "crude_fat_min": 10.0,
@@ -1098,7 +1602,9 @@
         "moisture_max": 10.0,
         "calcium_min": 1.5,
         "phosphorus_min": 1.0,
-        "taurine_min": 0.09
+        "taurine_min": 0.09,
+        "omega_6_min": 2.25,
+        "omega_3_min": 1.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3438 kcal/kg, 337 kcal/cup"
@@ -1127,7 +1633,15 @@
       ],
       "ingredients_raw": "Deboned Turkey, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Ground Potatoes, Lentils, Peas, Salmon Meal, Chicken Fat, Dried Plain Beet Pulp, Flaxseed, Salmon Oil, Natural Flavor, Dried Chicory Root, Taurine, Spinach, Broccoli, Vitamin E Supplement, Carrots, Parsley, Apples, Blueberries, Kale, Mixed Tocopherols added to preserve freshness, Niacin, Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Vitamin A Supplement, Iron Proteinate, Ascorbic Acid (Vitamin C), Thiamine Mononitrate, d-Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Riboflavin, Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract",
       "guaranteed_analysis": {
-        "crude_protein_min": 32.0
+        "crude_protein_min": 32.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.4,
+        "phosphorus_min": 1.0,
+        "taurine_min": 0.09,
+        "omega_6_min": 3.5,
+        "omega_3_min": 1.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3716 kcal/kg, 505 kcal/cup"
@@ -1160,9 +1674,17 @@
           "sku": "5153537"
         }
       ],
-      "ingredients_raw": "Deboned Turkey, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Oatmeal, Brown Rice, Barley, Salmon Meal, Oats, Chicken Fat, Dried Plain Beet Pulp, Natural Flavor, Flaxseed, Salmon Oil, Dried Chicory Root, Spinach, Broccoli, Vitamin E Supplement, Carrots, Parsley, Apples, Blueberries, Kale, Mixed Tocopherols added to preserve freshness, Niacin, Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Vitamin A Supplement, Iron Proteinate, Taurine, Ascorbic Acid (Vitamin C), Thiamine Mononitrate, d-Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Riboflavin, Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract",
+      "ingredients_raw": "Deboned Turkey, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Oatmeal, Brown Rice, Barley, Salmon Meal, Oats, Chicken Fat, Dried Plain Beet Pulp, Natural Flavor, Flaxseed, Salmon Oil, Dried Chicory Root, Spinach, Broccoli, Vitamin E Supplement, Carrots, Parsley, Apples, Blueberries, Kale, Mixed Tocopherols added to preserve freshness, Niacin, Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Vitamin A Supplement, Iron Proteinate, Taurine, Ascorbic Acid (Vitamin C), Thiamine Mononitrate, d-Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Taurine, Manganese Sulfate, Riboflavin, Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract",
       "guaranteed_analysis": {
-        "crude_protein_min": 28.0
+        "crude_protein_min": 28.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.3,
+        "phosphorus_min": 0.9,
+        "taurine_min": 0.09,
+        "omega_6_min": 4.0,
+        "omega_3_min": 0.75
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3717 kcal/kg, 413 kcal/cup"
@@ -1190,14 +1712,15 @@
       ],
       "ingredients_raw": "Whitefish, Herring Meal, Whitefish Meal (source of Glucosamine and Chondroitin Sulfate), Peas, Lentils, Canola Oil, Dried Ground Potatoes, Dried Plain Beet Pulp, Flaxseed, Salmon Meal, Pea Fiber, Natural Flavor, Dried Chicory Root, Taurine, Vitamin E Supplement, Choline Chloride, Spinach, Broccoli, Carrots, Parsley, Apples, Blueberries, Kale, Mixed Tocopherols added to preserve freshness, Vitamin B3 (Niacin), Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Iron Proteinate, Vitamin A Supplement, Vitamin B1 (Thiamine Mononitrate), d-Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Vitamin B2 (Riboflavin), Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Vitamin C (Ascorbic Acid), Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract",
       "guaranteed_analysis": {
-        "glucosamine_min": 100.0,
         "crude_protein_min": 35.0,
         "crude_fat_min": 14.0,
         "crude_fiber_max": 6.0,
         "moisture_max": 10.0,
         "calcium_min": 1.7,
         "phosphorus_min": 1.2,
-        "taurine_min": 0.2
+        "taurine_min": 0.2,
+        "omega_6_min": 3.0,
+        "omega_3_min": 2.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3635 kcal/kg, 422 kcal/cup"
@@ -1231,7 +1754,6 @@
       ],
       "ingredients_raw": "Whitefish, Herring Meal, Whitefish Meal (source of Glucosamine and Chondroitin Sulfate), Peas, Lentils, Canola Oil, Dried Ground Potatoes, Dried Plain Beet Pulp, Flaxseed, Salmon Meal, Pea Fiber, Natural Flavor, Dried Chicory Root, Taurine, Vitamin E Supplement, Choline Chloride, Spinach, Broccoli, Carrots, Parsley, Apples, Blueberries, Kale, Mixed Tocopherols added to preserve freshness, Niacin, Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Iron Proteinate, Vitamin A Supplement, Thiamine Mononitrate, d-Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Riboflavin, Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Ascorbic Acid (Vitamin C), Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract",
       "guaranteed_analysis": {
-        "glucosamine_min": 47.0,
         "crude_protein_min": 34.0,
         "crude_fat_min": 14.0,
         "crude_fiber_max": 6.0,
@@ -1280,7 +1802,15 @@
       ],
       "ingredients_raw": "Deboned Turkey, Turkey Meal, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Dried Ground Potatoes, Lentils, Peas, Chicken Fat, Dried Plain Beet Pulp, Flaxseed, Natural Flavor, Dried Chicory Root, Salmon Oil, Taurine, Vitamin E Supplement, Choline Chloride, Spinach, Broccoli, Carrots, Parsley, Apples, Blueberries, Kale, Mixed Tocopherols added to preserve freshness, Niacin, Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Iron Proteinate, Vitamin A Supplement, Thiamine Mononitrate, d-Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Riboflavin, Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Ascorbic Acid (Vitamin C), Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract",
       "guaranteed_analysis": {
-        "crude_protein_min": 34.0
+        "crude_protein_min": 34.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "calcium_min": 1.5,
+        "phosphorus_min": 1.0,
+        "taurine_min": 0.2,
+        "omega_6_min": 3.5,
+        "omega_3_min": 0.5
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3682 kcal/kg, 409 kcal/cup"
@@ -1308,7 +1838,15 @@
       ],
       "ingredients_raw": "Duck, Lamb Meal, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Peas, Chickpeas, Lentils, Pea Protein, Chicken Fat, Dried Plain Beet Pulp, Wild Boar, Rabbit, Flaxseed, Natural Flavor, Dried Chicory Root, Taurine, Choline Chloride, Potassium Chloride, Vitamin E Supplement, Spinach, Broccoli, Carrots, Parsley, Apples, Blueberries, Kale, Mixed Tocopherols added to preserve freshness, Niacin, Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Iron Proteinate, Vitamin A Supplement, Thiamine Mononitrate, d-Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Riboflavin, Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Ascorbic Acid (Vitamin C), Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract",
       "guaranteed_analysis": {
-        "crude_protein_min": 34.0
+        "crude_protein_min": 34.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 6.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.6,
+        "phosphorus_min": 1.1,
+        "taurine_min": 0.2,
+        "omega_6_min": 4.0,
+        "omega_3_min": 1.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3705 kcal/kg, 389 kcal/cup"
@@ -1342,7 +1880,15 @@
       ],
       "ingredients_raw": "Deboned Chicken, Turkey Meal (source of Chondroitin Sulfate), Chicken Meal (source of Glucosamine), Brown Rice, Barley, Oatmeal, Dried Plain Beet Pulp, Chicken Fat, Flaxseed, Pumpkin, Cranberries, Natural Flavor, Salmon Oil, Apples, Inulin, Potassium Chloride, Hydrolyzed Yeast, Taurine, Choline Chloride, Vitamin E Supplement, Papayas, Blueberries, Pomegranates, Mixed Tocopherols added to preserve freshness, Niacin, Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Iron Proteinate, Yucca Schidigera Extract, Vitamin A Supplement, Thiamine Mononitrate, Ground Cinnamon, Ground Fennel, Ground Peppermint, d-Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Riboflavin, Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Ascorbic Acid (Vitamin C), Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract",
       "guaranteed_analysis": {
-        "crude_protein_min": 30.0
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.2,
+        "phosphorus_min": 0.9,
+        "taurine_min": 0.2,
+        "omega_6_min": 3.0,
+        "omega_3_min": 1.5
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3664 kcal/kg, 399 kcal/cup"
@@ -1376,7 +1922,15 @@
       ],
       "ingredients_raw": "Deboned Chicken, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Brown Rice, Barley, Rice, Dried Plain Beet Pulp, Flaxseed, Pea Protein, Chicken Fat, Pumpkin, Cranberries, Salmon Oil, Natural Flavor, Apples, Inulin, Potassium Chloride, Hydrolyzed Yeast, Vitamin E Supplement, Taurine, Choline Chloride, L-Carnitine, Papayas, Blueberries, Pomegranates, Mixed Tocopherols added to preserve freshness, Niacin, Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Iron Proteinate, Yucca Schidigera Extract, Vitamin A Supplement, Thiamine Mononitrate, d-Calcium Pantothenate, Ground Cinnamon, Ground Fennel, Ground Peppermint, Sodium Selenite, Pyridoxine Hydrochloride, Riboflavin, Copper Sulfate, Manganese Sulfate, Biotin, Manganese Proteinate, Copper Proteinate, Vitamin D3 Supplement, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Ascorbic Acid (Vitamin C), Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract",
       "guaranteed_analysis": {
-        "crude_protein_min": 27.0
+        "crude_protein_min": 27.0,
+        "crude_fat_min": 10.0,
+        "crude_fiber_max": 3.5,
+        "moisture_max": 10.0,
+        "calcium_min": 0.8,
+        "phosphorus_min": 0.6,
+        "taurine_min": 0.2,
+        "omega_6_min": 2.25,
+        "omega_3_min": 0.6
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3560 kcal/kg, 381 kcal/cup"
@@ -1409,9 +1963,17 @@
           "sku": "5306046"
         }
       ],
-      "ingredients_raw": "Deboned Chicken, Chicken Meal (source of Glucosamine), Turkey Meal (source of Chondroitin Sulfate), Brown Rice, Oatmeal, Barley, Dried Plain Beet Pulp, Flaxseed, Chicken Fat, Pumpkin, Cranberries, Salmon Oil, Natural Flavor, Apples, Choline Chloride, Inulin, Hydrolyzed Yeast, Potassium Chloride, Taurine, Vitamin E Supplement, Papayas, Blueberries, Pomegranates, Mixed Tocopherols added to preserve freshness, Niacin, Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Iron Proteinate, Yucca Schidigera Extract, Vitamin A Supplement, Thiamine Mononitrate, Ground Cinnamon, Ground Fennel, Ground Peppermint, d-Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Riboflavin, Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Ascorbic Acid (Vitamin C), Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract",
+      "ingredients_raw": "Deboned Chicken, Chicken Meal (source of Glucosamine), Turkey Meal (source of Chondroitin Sulfate), Brown Rice, Oatmeal, Barley, Dried Plain Beet Pulp, Flaxseed, Chicken Fat, Pumpkin, Cranberries, Salmon Oil, Natural Flavor, Apples, Choline Chloride, Inulin, Hydrolyzed Yeast, Potassium Chloride, Taurine, Vitamin E Supplement, Papayas, Blueberries, Pomegranates, Mixed Tocopherols added to preserve freshness, Niacin, Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Iron Proteinate, Yucca Schidigera Extract, Vitamin A Supplement, Thiamine Mononitrate, Ground Cinnamon, Ground Fennel, Ground Peppermint, d-Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Riboflavin, Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Ascorbic Acid (Vitamin C), Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract.",
       "guaranteed_analysis": {
-        "crude_protein_min": 33.0
+        "crude_protein_min": 33.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.6,
+        "phosphorus_min": 1.1,
+        "taurine_min": 0.2,
+        "omega_6_min": 3.5,
+        "omega_3_min": 1.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3696 kcal/kg, 421 kcal/cup"
@@ -1443,9 +2005,17 @@
           "sku": "5264829"
         }
       ],
-      "ingredients_raw": "Duck, Lamb Meal, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Peas, Chickpeas, Lentils, Pea Protein, Chicken Fat, Dried Plain Beet Pulp, Lamb Hearts, Wild Boar, Rabbit, Flaxseed, Natural Flavor, Dried Chicory Root, Taurine, Choline Chloride, Potassium Chloride, Vitamin E Supplement, Spinach, Broccoli, Carrots, Parsley, Apples, Blueberries, Kale, Mixed Tocopherols added to preserve freshness, Vitamin B3 (Niacin), Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Iron Proteinate, Vitamin A Supplement, Vitamin B1 (Thiamine Mononitrate), d-Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Vitamin B2 (Riboflavin), Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Vitamin C (Ascorbic Acid), Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract",
+      "ingredients_raw": "Duck, Lamb Meal, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Peas, Chickpeas, Lentils, Pea Protein, Chicken Fat, Dried Plain Beet Pulp, Lamb Hearts, Wild Boar, Rabbit, Flaxseed, Natural Flavor, Dried Chicory Root, Taurine, Choline Chloride, Potassium Chloride, Vitamin E Supplement, Spinach, Broccoli, Carrots, Parsley, Apples, Blueberries, Kale, Mixed Tocopherols added to preserve freshness, Vitamin B3 (Niacin), Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Iron Proteinate, Vitamin A Supplement, Vitamin B1 (Thiamine Mononitrate), d-Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Vitamin B2 (Riboflavin), Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Vitamin C (Ascorbic Acid), Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract.",
       "guaranteed_analysis": {
-        "crude_protein_min": 35.0
+        "crude_protein_min": 35.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 6.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.6,
+        "phosphorus_min": 1.1,
+        "taurine_min": 0.2,
+        "omega_6_min": 4.0,
+        "omega_3_min": 1.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3705 kcal/kg, 389 kcal/cup"
@@ -1474,8 +2044,15 @@
       ],
       "ingredients_raw": "Deboned Turkey, Turkey Meal, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Peas, Lentils, Dried Plain Beet Pulp, Pea Fiber, Flaxseed, Dried Ground Potatoes, Chicken Fat, Natural Flavor, Dried Chicory Root, Salmon Oil, Vitamin E Supplement, Taurine, Choline Chloride, Spinach, Broccoli, Carrots, Parsley, Apples, Blueberries, Kale, L-Carnitine, Spearmint, Mixed Tocopherols added to preserve freshness, Niacin, Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Iron Proteinate, Vitamin A Supplement, Thiamine Mononitrate, d-Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Riboflavin, Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Ascorbic Acid (Vitamin C), Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract",
       "guaranteed_analysis": {
-        "glucosamine_min": 25.0,
-        "crude_protein_min": 34.0
+        "crude_protein_min": 34.0,
+        "crude_fat_min": 13.0,
+        "crude_fiber_max": 7.5,
+        "moisture_max": 10.0,
+        "calcium_min": 1.6,
+        "phosphorus_min": 1.1,
+        "taurine_min": 0.2,
+        "omega_6_min": 3.5,
+        "omega_3_min": 1.25
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3565 kcal/kg, 435 kcal/cup"
@@ -1508,7 +2085,15 @@
       ],
       "ingredients_raw": "Deboned Beef, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Turkey Meal, Brown Rice, Oatmeal, Barley, Brewers Dried Yeast, Chicken Fat, Dried Plain Beet Pulp, Flaxseed, Natural Flavor, Salmon Oil, Potassium Chloride, Taurine, Dried Chicory Root, Vitamin E Supplement, Choline Chloride, Spinach, Broccoli, Carrots, Parsley, Apples, Blueberries, Kale, Mixed Tocopherols added to preserve freshness, Niacin (Vitamin B3), Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Iron Proteinate, Vitamin A Supplement, Thiamine Mononitrate (Vitamin B1), d-Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Riboflavin (Vitamin B2), Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Ascorbic Acid (Vitamin C), Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract",
       "guaranteed_analysis": {
-        "crude_protein_min": 33.0
+        "crude_protein_min": 33.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.5,
+        "phosphorus_min": 1.0,
+        "taurine_min": 0.2,
+        "omega_6_min": 2.7,
+        "omega_3_min": 0.9
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3681 kcal/kg, 398 kcal/cup"
@@ -1534,9 +2119,17 @@
           "sku": "5298494"
         }
       ],
-      "ingredients_raw": "Deboned Turkey, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Oatmeal, Turkey Meal, Barley, Chicken Fat, Dried Plain Beet Pulp, Flaxseed, Turkey Liver, Turkey Hearts, Natural Flavor, Dried Chicory Root, Salmon Oil, Taurine, Choline Chloride, Potassium Chloride, Vitamin E Supplement, Spinach, Broccoli, Carrots, Parsley, Apples, Blueberries, Kale, Mixed Tocopherols added to preserve freshness, Vitamin B3 (Niacin), Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Iron Proteinate, Vitamin A Supplement, Vitamin B1 (Thiamine Mononitrate), d-Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Vitamin B2 (Riboflavin), Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Vitamin C (Ascorbic Acid), Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract",
+      "ingredients_raw": "Deboned Turkey, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Oatmeal, Turkey Meal, Barley, Chicken Fat, Dried Plain Beet Pulp, Flaxseed, Turkey Liver, Turkey Hearts, Natural Flavor, Dried Chicory Root, Salmon Oil, Taurine, Choline Chloride, Potassium Chloride, Vitamin E Supplement, Spinach, Broccoli, Carrots, Parsley, Apples, Blueberries, Kale, Mixed Tocopherols added to preserve freshness, Vitamin B3 (Niacin), Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Iron Proteinate, Vitamin A Supplement, Vitamin B1 (Thiamine Mononitrate), d-Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Vitamin B2 (Riboflavin), Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Vitamin C (Ascorbic Acid), Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract.",
       "guaranteed_analysis": {
-        "crude_protein_min": 35.0
+        "crude_protein_min": 35.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "calcium_min": 1.5,
+        "phosphorus_min": 1.0,
+        "taurine_min": 0.2,
+        "omega_6_min": 4.5,
+        "omega_3_min": 1.25
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3742 kcal/kg, 427 kcal/cup"
@@ -1564,7 +2157,15 @@
       ],
       "ingredients_raw": "Deboned Turkey, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Oatmeal, Turkey Meal, Barley, Chicken Fat, Dried Plain Beet Pulp, Flaxseed, Turkey Hearts, Turkey Liver, Natural Flavor, Dried Chicory Root, Salmon Oil, Taurine, Choline Chloride, Potassium Chloride, Vitamin E Supplement, Spinach, Broccoli, Carrots, Parsley, Apples, Blueberries, Kale, Mixed Tocopherols added to preserve freshness, Vitamin B3 (Niacin), Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Iron Proteinate, Vitamin A Supplement, Vitamin B1 (Thiamine Mononitrate), d-Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Vitamin B2 (Riboflavin), Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Vitamin C (Ascorbic Acid), Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract",
       "guaranteed_analysis": {
-        "crude_protein_min": 35.0
+        "crude_protein_min": 35.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "calcium_min": 1.5,
+        "phosphorus_min": 1.0,
+        "taurine_min": 0.2,
+        "omega_6_min": 4.5,
+        "omega_3_min": 1.25
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3742 kcal/kg, 427 kcal/cup"
@@ -1591,9 +2192,17 @@
           "sku": "5298489"
         }
       ],
-      "ingredients_raw": "Deboned Turkey, Turkey Meal, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Oatmeal, Barley, Dried Plain Beet Pulp, Flaxseed, Chicken Fat, Turkey Liver, Turkey Hearts, Salmon Oil, Natural Flavor, Dried Chicory Root, Choline Chloride, Potassium Chloride, Vitamin E Supplement, Taurine, Spinach, Broccoli, Carrots, Parsley, Apples, Blueberries, Kale, Mixed Tocopherols added to preserve freshness, Vitamin B3 (Niacin), Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Iron Proteinate, Vitamin A Supplement, Vitamin B1 (Thiamine Mononitrate), d-Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Vitamin B2 (Riboflavin), Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Vitamin C (Ascorbic Acid), Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract",
+      "ingredients_raw": "Deboned Turkey, Turkey Meal, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Oatmeal, Barley, Dried Plain Beet Pulp, Flaxseed, Chicken Fat, Turkey Liver, Turkey Hearts, Salmon Oil, Natural Flavor, Dried Chicory Root, Choline Chloride, Potassium Chloride, Vitamin E Supplement, Taurine, Spinach, Broccoli, Carrots, Parsley, Apples, Blueberries, Kale, Mixed Tocopherols added to preserve freshness, Vitamin B3 (Niacin), Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Iron Proteinate, Vitamin A Supplement, Vitamin B1 (Thiamine Mononitrate), d-Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Vitamin B2 (Riboflavin), Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Vitamin C (Ascorbic Acid), Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract.",
       "guaranteed_analysis": {
-        "crude_protein_min": 37.0
+        "crude_protein_min": 37.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.5,
+        "phosphorus_min": 1.1,
+        "taurine_min": 0.2,
+        "omega_6_min": 4.25,
+        "omega_3_min": 1.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3692 kcal/kg, 473 kcal/cup"
@@ -1621,7 +2230,15 @@
       ],
       "ingredients_raw": "Deboned Turkey, Turkey Meal, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Dried Ground Potatoes, Lentils, Peas, Chicken Fat, Dried Plain Beet Pulp, Flaxseed, Turkey Liver, Turkey Hearts, Natural Flavor, Dried Chicory Root, Salmon Oil, Taurine, Vitamin E Supplement, Choline Chloride, Spinach, Broccoli, Carrots, Parsley, Apples, Blueberries, Kale, Mixed Tocopherols added to preserve freshness, Vitamin B3 (Niacin), Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Iron Proteinate, Vitamin A Supplement, Vitamin B1 (Thiamine Mononitrate), d-Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Vitamin B2 (Riboflavin), Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Vitamin C (Ascorbic Acid), Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract",
       "guaranteed_analysis": {
-        "crude_protein_min": 35.0
+        "crude_protein_min": 35.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 4.5,
+        "moisture_max": 10.0,
+        "calcium_min": 1.5,
+        "phosphorus_min": 1.0,
+        "taurine_min": 0.2,
+        "omega_6_min": 3.5,
+        "omega_3_min": 0.5
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3682 kcal/kg, 409 kcal/cup"
@@ -1650,7 +2267,15 @@
       ],
       "ingredients_raw": "Deboned Chicken, Chicken Meal (source of Glucosamine), Turkey Meal (source of Chondroitin Sulfate), Barley, Brown Rice, Oatmeal, Brewers Dried Yeast, Dried Plain Beet Pulp, Turkey Hearts, Flaxseed, Chicken Fat, Salmon Oil, Natural Flavor, Turkey Liver, Dried Chicory Root, Taurine, Potassium Chloride, Vitamin E Supplement, Choline Chloride, Spinach, Broccoli, Carrots, Parsley, Apples, Blueberries, Kale, Mixed Tocopherols added to preserve freshness, L-Carnitine, Niacin (Vitamin B3), Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Iron Proteinate, Vitamin A Supplement, Thiamine Mononitrate (Vitamin B1), d-Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Riboflavin (Vitamin B2), Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Ascorbic Acid (Vitamin C), Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract",
       "guaranteed_analysis": {
-        "crude_protein_min": 33.0
+        "crude_protein_min": 33.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.5,
+        "phosphorus_min": 1.0,
+        "taurine_min": 0.2,
+        "omega_6_min": 2.5,
+        "omega_3_min": 0.7
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3681 kcal/kg, 376 kcal/cup"
@@ -1679,7 +2304,15 @@
       ],
       "ingredients_raw": "Deboned Chicken, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Turkey Meal, Lentils, Peas, Dried Ground Potatoes, Dried Plain Beet Pulp, Flaxseed, Chicken Fat, Natural Flavor, Dried Chicory Root, Taurine, Potassium Chloride, Vitamin E Supplement, Spinach, Broccoli, Carrots, Parsley, Apples, Blueberries, Kale, L-Carnitine, Mixed Tocopherols added to preserve freshness, Choline Chloride, Niacin, Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Iron Proteinate, Vitamin A Supplement, Thiamine Mononitrate, d-Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Riboflavin, Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Ascorbic Acid (Vitamin C), Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract",
       "guaranteed_analysis": {
-        "crude_protein_min": 34.0
+        "crude_protein_min": 34.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 6.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.3,
+        "phosphorus_min": 0.9,
+        "taurine_min": 0.2,
+        "omega_6_min": 3.0,
+        "omega_3_min": 1.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3465 kcal/kg, 336 kcal/cup"
@@ -1713,8 +2346,8 @@
         "crude_fiber_max": 5.5,
         "moisture_max": 10.0,
         "dha_min": 0.1,
-        "calcium_min": 1.6,
-        "phosphorus_min": 1.3,
+        "calcium_max": 1.6,
+        "phosphorus_max": 1.3,
         "omega_6_min": 3.0,
         "omega_3_min": 1.5
       },
@@ -1750,9 +2383,16 @@
       ],
       "ingredients_raw": "Deboned Chicken, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Turkey Meal, Potatoes, Lentils, Peas, Chicken Fat, Dried Plain Beet Pulp, Flaxseed, Salmon Oil, Natural Flavor, Salt, Dried Chicory Root, Potassium Chloride, Taurine, Vitamin E Supplement, Choline Chloride, Spinach, Broccoli, Carrots, Parsley, Apples, Blueberries, Kale, Mixed Tocopherols added to preserve freshness, Niacin, Zinc Proteinate, Zinc Sulfate, Ferrous Sulfate, Iron Proteinate, Vitamin A Supplement, Thiamine Mononitrate, Copper Sulfate, d-Calcium Pantothenate, Copper Proteinate, Sodium Selenite, Pyridoxine Hydrochloride, Manganese Sulfate, Riboflavin, Manganese Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Calcium Iodate, Folic Acid, Ascorbic Acid (Vitamin C), Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract",
       "guaranteed_analysis": {
-        "calcium_min": 100.0,
         "crude_protein_min": 36.0,
-        "dha_min": 50.0
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 5.5,
+        "moisture_max": 10.0,
+        "dha_min": 0.1,
+        "calcium_min": 1.5,
+        "phosphorus_min": 1.0,
+        "taurine_min": 0.2,
+        "omega_6_min": 3.5,
+        "omega_3_min": 1.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3678 kcal/kg, 471 kcal/cup"
@@ -1778,9 +2418,16 @@
           "sku": "5249050"
         }
       ],
-      "ingredients_raw": "Deboned Turkey, Turkey Meal, Chicken Meal, Potatoes, Peas, Dried Ground Potatoes, Pea Fiber, Tomato Pomace, Chicken Liver, Chicken Fat (preserved with Mixed Tocopherols), Natural Chicken Flavor, Ground Flaxseed, Salmon Oil, Spinach, Vitamin E Supplement, Broccoli, Carrots, Choline Chloride, Parsley, Apples, Blueberries, Kale, Sweet Potatoes, Taurine, Mixed Tocopherols added to preserve freshness, Zinc Proteinate, Zinc Sulfate, Glucosamine Hydrochloride, Chondroitin Sulfate, Calcium Carbonate, Niacin, Ferrous Sulfate, Iron Proteinate, Beta-Carotene, Vitamin A Supplement, Copper Sulfate, Thiamine Mononitrate, Copper Proteinate, Manganese Proteinate, Manganese Sulfate, d-Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Riboflavin, Chicory Root Extract, Yucca Schidigera Extract, Vitamin D3 Supplement, Biotin, Calcium Iodate, Vitamin B12 Supplement, Folic Acid, Ascorbic Acid (Vitamin C), Dried Lactobacillus plantarum Fermentation Product, Dried Enterococcus faecium Fermentation Product, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract",
+      "ingredients_raw": "Deboned Turkey, Turkey Meal, Chicken Meal, Potatoes, Peas, Dried Ground Potatoes, Pea Fiber, Tomato Pomace, Chicken Liver, Chicken Fat (preserved with Mixed Tocopherols), Natural Chicken Flavor, Ground Flaxseed, Salmon Oil, Spinach, Vitamin E Supplement, Broccoli, Carrots, Choline Chloride, Parsley, Apples, Blueberries, Kale, Sweet Potatoes, Taurine, Mixed Tocopherols added to preserve freshness, Zinc Proteinate, Zinc Sulfate, Glucosamine Hydrochloride, Chondroitin Sulfate, Calcium Carbonate, Niacin, Ferrous Sulfate, Iron Proteinate, Beta-Carotene, Vitamin A Supplement, Copper Sulfate, Thiamine Mononitrate, Copper Proteinate, Manganese Proteinate, Manganese Sulfate, d-Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Riboflavin, Chicory Root Extract, Yucca Schidigera Extract, Vitamin D3 Supplement, Biotin, Calcium Iodate, Vitamin B12 Supplement, Folic Acid, Ascorbic Acid (Vitamin C), Dried Lactobacillus plantarum Fermentation Product, Dried Enterococcus faecium Fermentation Product, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract.",
       "guaranteed_analysis": {
-        "crude_protein_min": 33.0
+        "crude_protein_min": 33.0,
+        "crude_fat_min": 10.0,
+        "crude_fiber_max": 8.5,
+        "moisture_max": 10.0,
+        "calcium_max": 1.9,
+        "phosphorus_max": 1.3,
+        "omega_6_min": 2.2,
+        "omega_3_min": 0.4
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3250 kcal/kg, 360 kcal/cup"
@@ -1814,7 +2461,15 @@
       ],
       "ingredients_raw": "Deboned Turkey, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Lentils, Peas, Dried Ground Potatoes, Turkey Meal, Chickpeas, Dried Plain Beet Pulp, Flaxseed, Chicken Fat, Natural Flavor, Salmon Oil, Dried Chicory Root, Taurine, Vitamin E Supplement, Choline Chloride, Spinach, Broccoli, Carrots, Parsley, Apples, Blueberries, Kale, Mixed Tocopherols added to preserve freshness, Niacin, Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Iron Proteinate, Vitamin A Supplement, Thiamine Mononitrate, d-Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Riboflavin, Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Ascorbic Acid (Vitamin C), Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract",
       "guaranteed_analysis": {
-        "crude_protein_min": 32.0
+        "crude_protein_min": 32.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.0,
+        "phosphorus_min": 0.8,
+        "taurine_min": 0.2,
+        "omega_6_min": 3.25,
+        "omega_3_min": 1.25
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3573 kcal/kg, 375 kcal/cup"
@@ -1846,16 +2501,17 @@
           "sku": "5362871"
         }
       ],
-      "ingredients_raw": "Salmon, Herring Meal, Rice, Barley, Oatmeal, Whitefish Meal (source of Glucosamine and Chondroitin Sulfate), Dried Plain Beet Pulp, Canola Oil, Flaxseed, Natural Flavor, Salmon Oil, Dried Chicory Root, Potassium Chloride, Hydrolyzed Yeast, Dried Yeast, Taurine, Choline Chloride, Vitamin E Supplement, Mixed Tocopherols (added to preserve freshness), Vitamin B3 (Niacin), Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Iron Proteinate, Vitamin A Supplement, Vitamin B1 (Thiamine Mononitrate), Vitamin B5 (d-Calcium Pantothenate), Sodium Selenite, Vitamin B6 (Pyridoxine Hydrochloride), Copper Sulfate, Manganese Sulfate, Vitamin B2 (Riboflavin), Manganese Proteinate, Copper Proteinate, Vitamin B7 (Biotin), Vitamin D3 Supplement, Vitamin B12 Supplement, Vitamin B9 (Folic Acid), Calcium Iodate, Vitamin C (Ascorbic Acid), Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract",
+      "ingredients_raw": "Salmon, Herring Meal, Rice, Barley, Oatmeal, Whitefish Meal (source of Glucosamine and Chondroitin Sulfate), Dried Plain Beet Pulp, Canola Oil, Flaxseed, Natural Flavor, Salmon Oil, Dried Chicory Root, Potassium Chloride, Hydrolyzed Yeast, Dried Yeast, Taurine, Choline Chloride, Vitamin E Supplement, Mixed Tocopherols (added to preserve freshness), Vitamin B3 (Niacin), Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Iron Proteinate, Vitamin A Supplement, Vitamin B1 (Thiamine Mononitrate), Vitamin B5 (d-Calcium Pantothenate), Sodium Selenite, Vitamin B6 (Pyridoxine Hydrochloride), Copper Sulfate, Manganese Sulfate, Vitamin B2 (Riboflavin), Manganese Proteinate, Copper Proteinate, Vitamin B7 (Biotin), Vitamin D3 Supplement, Vitamin B12 Supplement, Vitamin B9 (Folic Acid), Calcium Iodate, Vitamin C (Ascorbic Acid), Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract.",
       "guaranteed_analysis": {
-        "glucosamine_min": 100.0,
         "crude_protein_min": 30.0,
         "crude_fat_min": 10.0,
         "crude_fiber_max": 4.0,
         "moisture_max": 10.0,
         "calcium_min": 1.6,
         "phosphorus_min": 1.0,
-        "taurine_min": 0.2
+        "taurine_min": 0.2,
+        "omega_6_min": 2.5,
+        "omega_3_min": 1.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3454 kcal/kg, 339 kcal/cup"
@@ -1891,7 +2547,14 @@
       "ingredients_raw": "Deboned Turkey, Turkey Meal, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Dried Ground Potatoes, Lentils, Peas, Chicken Fat, Dried Plain Beet Pulp, Flaxseed, Turkey Hearts, Turkey Liver, Natural Flavor, Salmon Oil, Dried Chicory Root, Choline Chloride, Taurine, Vitamin E Supplement, Spinach, Broccoli, Carrots, Parsley, Apples, Blueberries, Kale, Spearmint, Mixed Tocopherols added to preserve freshness, Vitamin B3 (Niacin), Zinc Proteinate, Ferrous Sulfate, Zinc Sulfate, Iron Proteinate, Vitamin A Supplement, Vitamin B1 (Thiamine Mononitrate), d-Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Copper Sulfate, Manganese Sulfate, Vitamin B2 (Riboflavin), Manganese Proteinate, Copper Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Folic Acid, Calcium Iodate, Vitamin C (Ascorbic Acid), Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract",
       "guaranteed_analysis": {
         "crude_protein_min": 37.0,
-        "glucosamine_min": 0.2
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.5,
+        "phosphorus_min": 1.0,
+        "taurine_min": 0.2,
+        "omega_6_min": 3.0,
+        "omega_3_min": 0.5
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3682 kcal/kg, 409 kcal/cup"
@@ -1920,13 +2583,12 @@
       ],
       "ingredients_raw": "Deboned Turkey, Turkey Meal (source of Glucosamine), Chicken Meal (source of Chondroitin Sulfate), Lentils, Peas, Dried Ground Potatoes, Chicken Fat (preserved with Mixed Tocopherols), Tomato Pomace, Ground Flaxseed, Natural Chicken Flavor, Salmon Oil, Taurine, Choline Chloride, Vitamin E Supplement, Spinach, Broccoli, Carrots, Parsley, Apples, Blueberries, Kale, Spearmint, Zinc Proteinate, Mixed Tocopherols added to preserve freshness, Zinc Sulfate, Calcium Carbonate, Niacin, Iron Proteinate, Ferrous Sulfate, Vitamin A Supplement, Copper Sulfate, Thiamine Mononitrate, Copper Proteinate, Manganese Proteinate, Manganese Sulfate, d-Calcium Pantothenate, Sodium Selenite, Pyridoxine Hydrochloride, Riboflavin, Biotin, Vitamin D3 Supplement, Chicory Root Extract, Yucca Schidigera Extract, Calcium Iodate, Vitamin B12 Supplement, Folic Acid, Ascorbic Acid (Vitamin C), Dried Lactobacillus plantarum Fermentation Product, Dried Enterococcus faecium Fermentation Product, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract",
       "guaranteed_analysis": {
-        "glucosamine_min": 100.0,
         "crude_protein_min": 36.0,
         "crude_fat_min": 15.0,
         "crude_fiber_max": 5.0,
         "moisture_max": 10.0,
-        "calcium_min": 2.0,
-        "phosphorus_min": 1.3,
+        "calcium_max": 2.0,
+        "phosphorus_max": 1.3,
         "taurine_min": 0.2,
         "omega_6_min": 3.0,
         "omega_3_min": 0.5
@@ -1958,15 +2620,22 @@
       ],
       "ingredients_raw": "Deboned Turkey, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Peas, Turkey Meal, Salmon Meal, Dried Ground Potatoes, Chicken Fat, Dried Plain Beet Pulp, Flaxseed, Salmon Oil, Natural Flavor, Salt, Dried Chicory Root, Potassium Chloride, Choline Chloride, Vitamin E Supplement, Taurine, Spinach, Broccoli, Carrots, Parsley, Apples, Blueberries, Kale, Spearmint, Mixed Tocopherols added to preserve freshness, Niacin, Zinc Proteinate, Zinc Sulfate, Ferrous Sulfate, Iron Proteinate, Vitamin A Supplement, Thiamine Mononitrate, Copper Sulfate, d-Calcium Pantothenate, Copper Proteinate, Sodium Selenite, Pyridoxine Hydrochloride, Manganese Sulfate, Riboflavin, Manganese Proteinate, Biotin, Vitamin D3 Supplement, Yucca Schidigera Extract, Vitamin B12 Supplement, Calcium Iodate, Folic Acid, Ascorbic Acid (Vitamin C), Dried Enterococcus faecium Fermentation Product, Dried Bacillus licheniformis Fermentation Product, Dried Bacillus subtilis Fermentation Product, Rosemary Extract, Green Tea Extract, Spearmint Extract",
       "guaranteed_analysis": {
-        "calcium_min": 100.0,
         "crude_protein_min": 38.0,
-        "dha_min": 50.0
+        "crude_fat_min": 17.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.1,
+        "calcium_min": 1.7,
+        "phosphorus_min": 1.1,
+        "taurine_min": 0.2,
+        "omega_6_min": 4.5,
+        "omega_3_min": 1.5
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3782 kcal/kg, 484 kcal/cup"
     },
     {
-      "name": "95% All Life Stage Dog Food Topper - Grain Free",
+      "name": "95% All Life Stage Dog Food Topper - Grain Free Turkey",
       "brand": "Wellness",
       "url": "https://www.petsmart.ca/dog/food/food-toppers/wellness-95-all-life-stage-dog-food-topper---natural-grain-free-56832.html",
       "channel": "retail",
@@ -1975,36 +2644,80 @@
       "sub_brand": "95%",
       "life_stage": "all",
       "source_id": "5153555",
-      "images": [
-        "/products/wellness/wellness-supplement-95-all-life-stage-dog-food-topper-grain-free.jpg"
-      ],
       "variants": [
         {
           "size_kg": 0.0,
           "size_description": "",
           "upc": "0076344894537",
           "sku": "5153555"
-        },
+        }
+      ],
+      "images": [
+        "/products/wellness/wellness-supplement-95-all-life-stage-dog-food-topper-grain-free-turkey.jpg"
+      ],
+      "ingredients_raw": "Turkey, Water Sufficient For Processing, Natural Flavor, Cassia Gum, Carrageenan",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.0,
+        "crude_fat_min": 9.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1334 kcal/kg, 499 kcal/can"
+    },
+    {
+      "name": "95% All Life Stage Dog Food Topper - Grain Free Beef",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/wellness-95-all-life-stage-dog-food-topper---natural-grain-free-56832.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "sub_brand": "95%",
+      "life_stage": "all",
+      "source_id": "5153556",
+      "variants": [
         {
           "size_kg": 0.0,
           "size_description": "",
           "upc": "0076344894506",
           "sku": "5153556"
-        },
+        }
+      ],
+      "images": [
+        "/products/wellness/wellness-supplement-95-all-life-stage-dog-food-topper-grain-free-beef.jpg"
+      ],
+      "ingredients_raw": "Beef, Water Sufficient For Processing, Natural Flavor, Cassia Gum, Carrageenan",
+      "guaranteed_analysis": {
+        "crude_protein_min": 9.0,
+        "crude_fat_min": 9.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "1413 kcal/kg, 528 kcal/can"
+    },
+    {
+      "name": "95% All Life Stage Dog Food Topper - Grain Free Chicken",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/wellness-95-all-life-stage-dog-food-topper---natural-grain-free-56832.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "sub_brand": "95%",
+      "life_stage": "all",
+      "source_id": "5153565",
+      "variants": [
         {
           "size_kg": 0.0,
           "size_description": "",
           "upc": "0076344894520",
           "sku": "5153565"
-        },
-        {
-          "size_kg": 0.0,
-          "size_description": "",
-          "upc": "0076344894551",
-          "sku": "5171576"
         }
       ],
-      "ingredients_raw": "Chicken, Water Sufficient For Processing, Natural Flavor, Cassia Gum, Carrageenan",
+      "images": [
+        "/products/wellness/wellness-supplement-95-all-life-stage-dog-food-topper-grain-free-chicken.jpg"
+      ],
+      "ingredients_raw": "Chicken, Water Sufficient For Processing, Natural Flavor, Cassia Gum, Carrageenan.",
       "guaranteed_analysis": {
         "crude_protein_min": 10.0,
         "crude_fat_min": 8.0,
@@ -2013,6 +2726,37 @@
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "1374 kcal/kg, 514 kcal/can"
+    },
+    {
+      "name": "95% All Life Stage Dog Food Topper - Grain Free Lamb",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/wellness-95-all-life-stage-dog-food-topper---natural-grain-free-56832.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "sub_brand": "95%",
+      "life_stage": "all",
+      "source_id": "5171576",
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0076344894551",
+          "sku": "5171576"
+        }
+      ],
+      "images": [
+        "/products/wellness/wellness-supplement-95-all-life-stage-dog-food-topper-grain-free-lamb.jpg"
+      ],
+      "ingredients_raw": "Lamb, Water Sufficient For Processing, Natural Flavor, Cassia Gum, Carrageenan",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 2.5,
+        "moisture_max": 78.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "2059 kcal/kg, 770 kcal/can"
     },
     {
       "name": "Bowl Boosters Simply Shreds All Life Stage Dog Food Topper - Grain Free, Chicken & Beef",
@@ -2027,7 +2771,7 @@
       "images": [
         "/products/wellness/wellness-supplement-bowl-boosters-simply-shreds-all-life-stage-dog-food-topper-grain-free-chicken-be.jpg"
       ],
-      "ingredients_raw": "Chicken, Chicken Broth, Water Sufficient For Processing, Beef, Carrots",
+      "ingredients_raw": "Chicken, Chicken Broth, Water Sufficient For Processing, Beef, Carrots.",
       "guaranteed_analysis": {
         "crude_protein_min": 11.0,
         "crude_fat_min": 0.5,
@@ -2050,7 +2794,7 @@
       "images": [
         "/products/wellness/wellness-supplement-bowl-boosters-simply-shreds-all-life-stage-dog-food-topper-grain-free-chicken-li.jpg"
       ],
-      "ingredients_raw": "Chicken, Chicken Broth, Water Sufficient For Processing, Chicken Liver, Broccoli",
+      "ingredients_raw": "Chicken, Chicken Broth, Water Sufficient For Processing, Chicken Liver, Broccoli.",
       "guaranteed_analysis": {
         "crude_protein_min": 10.0,
         "crude_fat_min": 0.5,
@@ -2073,7 +2817,7 @@
       "images": [
         "/products/wellness/wellness-supplement-bowl-boosters-simply-shreds-all-life-stage-dog-food-topper-grain-free-chicken-sa.jpg"
       ],
-      "ingredients_raw": "Chicken, Chicken Broth, Water Sufficient For Processing, Salmon, Pumpkin",
+      "ingredients_raw": "Chicken, Chicken Broth, Water Sufficient For Processing, Salmon, Pumpkin.",
       "guaranteed_analysis": {
         "crude_protein_min": 8.0,
         "crude_fat_min": 0.5,
@@ -2096,7 +2840,7 @@
       "images": [
         "/products/wellness/wellness-supplement-bowl-boosters-simply-shreds-all-life-stage-dog-food-topper-grain-free-tuna-beef.jpg"
       ],
-      "ingredients_raw": "Tuna, Fish Broth, Water Sufficient For Processing, Beef, Carrots",
+      "ingredients_raw": "Tuna, Fish Broth, Water Sufficient For Processing, Beef, Carrots.",
       "guaranteed_analysis": {
         "crude_protein_min": 10.0,
         "crude_fat_min": 0.2,
@@ -2107,7 +2851,7 @@
       "calorie_content": "450 kcal/kg, 36 kcal/pouch"
     },
     {
-      "name": "CORE Bowl Booster All Life Stage Dog Food Topper - Grain Free, Natural",
+      "name": "CORE Bowl Booster All Life Stage Dog Food Topper - Grain Free, Natural Turkey",
       "brand": "Wellness",
       "url": "https://www.petsmart.ca/dog/food/food-toppers/wellness-core-bowl-booster-all-life-stage-dog-food-topper---grain-free-natural-49891.html",
       "channel": "retail",
@@ -2115,25 +2859,7 @@
       "product_format": "wet",
       "sub_brand": "Bowl Boosters",
       "life_stage": "all",
-      "source_id": "5280346",
-      "images": [
-        "/products/wellness/wellness-supplement-core-bowl-booster-all-life-stage-dog-food-topper-grain-free-natural.jpg"
-      ],
-      "variants": [
-        {
-          "size_kg": 0.0,
-          "size_description": "",
-          "upc": "0076344885245",
-          "sku": "5280346"
-        },
-        {
-          "size_kg": 0.0,
-          "size_description": "",
-          "upc": "0076344885252",
-          "sku": "5280348"
-        }
-      ],
-      "ingredients_raw": "Turkey Hearts, Mixed Tocopherols added to preserve freshness, Rosemary Extract, Green Tea Extract",
+      "ingredients_raw": "Turkey Hearts, Mixed Tocopherols added to preserve freshness, Rosemary Extract, Green Tea Extract.",
       "guaranteed_analysis": {
         "crude_protein_min": 60.0,
         "crude_fat_min": 20.0,
@@ -2142,6 +2868,25 @@
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "4400 kcal/kg, 202 kcal/cup"
+    },
+    {
+      "name": "CORE Bowl Booster All Life Stage Dog Food Topper - Grain Free, Natural Beef",
+      "brand": "Wellness",
+      "url": "https://www.petsmart.ca/dog/food/food-toppers/wellness-core-bowl-booster-all-life-stage-dog-food-topper---grain-free-natural-49891.html",
+      "channel": "retail",
+      "product_type": "supplement",
+      "product_format": "wet",
+      "sub_brand": "Bowl Boosters",
+      "life_stage": "all",
+      "ingredients_raw": "Beef, Mixed Tocopherols added to preserve freshness, Rosemary Extract, Green Tea Extract.",
+      "guaranteed_analysis": {
+        "crude_protein_min": 45.0,
+        "crude_fat_min": 35.0,
+        "crude_fiber_max": 5.5,
+        "moisture_max": 8.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "5192 kcal/kg, 239 kcal/cup"
     },
     {
       "name": "CORE Bowl Boosters All Life Stage Dog Food Topper - Digestive Health, Chicken",
@@ -2164,7 +2909,7 @@
           "sku": "5306054"
         }
       ],
-      "ingredients_raw": "Chicken Hearts, Oats, Pumpkin, Carrots, Apples, Broccoli, Papaya, Celery, Parsnip, Spinach, Cabbage, Dried Chicory Root, Hydrolyzed Yeast, Dried Bacillus Coagulans Fermentation Product, Rosemary Extract, Green Tea Extract",
+      "ingredients_raw": "Chicken Hearts, Oats, Pumpkin, Carrots, Apples, Broccoli, Papaya, Celery, Parsnip, Spinach, Cabbage, Dried Chicory Root, Hydrolyzed Yeast, Dried Bacillus Coagulans Fermentation Product, Rosemary Extract, Green Tea Extract.",
       "guaranteed_analysis": {
         "crude_protein_min": 35.0,
         "crude_fat_min": 13.0,

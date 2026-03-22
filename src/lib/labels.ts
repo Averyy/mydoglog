@@ -64,6 +64,12 @@ export const MEDICATION_CATEGORY_LABELS: Record<string, string> = {
   steroid: "Steroids",
 }
 
+/** Search keyword → product format mapping for search-based format filtering. */
+export const FORMAT_KEYWORDS: Record<string, string> = {
+  can: "wet", cans: "wet", wet: "wet", canned: "wet",
+  dry: "dry", kibble: "dry", kibbles: "dry", bag: "dry", bags: "dry",
+}
+
 /** Shared quantity unit options for feeding/routine editors. */
 export const QUANTITY_UNIT_OPTIONS = [
   { value: "cup", label: "cup" },

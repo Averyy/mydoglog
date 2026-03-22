@@ -1,7 +1,7 @@
 {
   "brand": "Stella & Chewy's",
   "website_url": "https://www.petsmart.ca",
-  "scraped_at": "2026-03-09T16:23:55.776525+00:00",
+  "scraped_at": "2026-03-22T14:16:03.533393+00:00",
   "scraper_version": "0.1.0",
   "stats": {
     "product_count": 42,
@@ -37,9 +37,12 @@
           "sku": "5368746"
         }
       ],
-      "ingredients_raw": "BEEF, CHICKEN, BEEF BROTH, CHICKEN BROTH, TAPIOCA, SUNFLOWER OIL, SALT, POTASSIUM CHLORIDE, CHOLINE CHLORIDE, VITAMIN E SUPPLEMENT, MAGNESIUM SULFATE, TAURINE, TURMERIC, SALMON OIL, ZINC OXIDE, REDUCED IRON, SODIUM SELENITE, VITAMIN B12 SUPPLEMENT, MANGANESE SULFATE, NIACIN SUPPLEMENT, d-CALCIUM PANTOTHENATE, THIAMINE MONONITRATE, VITAMIN A SUPPLEMENT, COPPER AMINO ACID COMPLEX, BIOTIN, RIBOFLAVIN SUPPLEMENT, PYRIDOXINE HYDROCHLORIDE, POTASSIUM IODIDE, BETA-CAROTENE, FOLIC ACID",
+      "ingredients_raw": "BEEF, CHICKEN, BEEF BROTH, CHICKEN BROTH, TAPIOCA, SUNFLOWER OIL, SALT, POTASSIUM CHLORIDE, CHOLINE CHLORIDE, VITAMIN E SUPPLEMENT, MAGNESIUM SULFATE, TAURINE, TURMERIC, SALMON OIL, ZINC OXIDE, REDUCED IRON, SODIUM SELENITE, VITAMIN B12 SUPPLEMENT, MANGANESE SULFATE, NIACIN SUPPLEMENT, d-CALCIUM PANTOTHENATE, THIAMINE MONONITRATE, VITAMIN A SUPPLEMENT, COPPERAMINO ACID COMPLEX, BIOTIN, RIBOFLAVIN SUPPLEMENT, PYRIDOXINE HYDROCHLORIDE, POTASSIUM IODIDE, BETA-CAROTENE, FOLIC ACID.",
       "guaranteed_analysis": {
-        "crude_protein_max": 10.0
+        "crude_protein_min": 10.0,
+        "crude_fat_min": 2.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 83.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "922 kcal/kg"
@@ -66,9 +69,12 @@
           "sku": "5368747"
         }
       ],
-      "ingredients_raw": "CHICKEN, CHICKEN BROTH, TAPIOCA, SUNFLOWER OIL, TRICALCIUM PHOSPHATE, SALT, POTASSIUM CHLORIDE, CHOLINE CHLORIDE, VITAMIN E SUPPLEMENT, MAGNESIUM SULFATE, TAURINE, TURMERIC, SALMON OIL, ZINC OXIDE, REDUCED IRON, SODIUM SELENITE, MANGANESE SULFATE, VITAMIN B12 SUPPLEMENT, COPPER AMINO ACID COMPLEX, NIACIN SUPPLEMENT, d-CALCIUM PANTOTHENATE, THIAMINE MONONITRATE, VITAMIN A SUPPLEMENT, BIOTIN, RIBOFLAVIN SUPPLEMENT, PYRIDOXINE HYDROCHLORIDE, POTASSIUM IODIDE, BETA-CAROTENE, FOLIC ACID",
+      "ingredients_raw": "CHICKEN, CHICKEN BROTH, TAPIOCA, SUNFLOWER OIL, TRICALCIUM PHOSPHATE, SALT, POTASSIUM CHLORIDE, CHOLINE CHLORIDE, VITAMIN E SUPPLEMENT, MAGNESIUM SULFATE, TAURINE, TURMERIC, SALMON OIL, ZINC OXIDE, REDUCED IRON, SODIUM SELENITE, MANGANESE SULFATE, VITAMIN B12 SUPPLEMENT, COPPER AMINO ACID COMPLEX, NIACIN SUPPLEMENT, d-CALCIUM PANTOTHENATE, THIAMINE MONONITRATE, VITAMIN A SUPPLEMENT, BIOTIN, RIBOFLAVIN SUPPLEMENT, PYRIDOXINE HYDROCHLORIDE, POTASSIUM IODIDE, BETA-CAROTENE, FOLIC ACID.",
       "guaranteed_analysis": {
-        "crude_protein_max": 10.0
+        "crude_protein_min": 10.0,
+        "crude_fat_min": 2.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 83.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "890 kcal/kg"
@@ -95,9 +101,12 @@
           "sku": "5368749"
         }
       ],
-      "ingredients_raw": "CHICKEN, CHICKEN BROTH, DUCK, TAPIOCA, SUNFLOWER OIL, SALT, TRICALCIUM PHOSPHATE, POTASSIUM CHLORIDE, CHOLINE CHLORIDE, VITAMIN E SUPPLEMENT, TAURINE, TURMERIC, SALMON OIL, ZINC OXIDE, MAGNESIUM SULFATE, REDUCED IRON, SODIUM SELENITE, VITAMIN B12 SUPPLEMENT, MANGANESE SULFATE, COPPER AMINO ACID COMPLEX, NIACIN SUPPLEMENT, d-CALCIUM PANTOTHENATE, THIAMINE MONONITRATE, VITAMIN A SUPPLEMENT, BIOTIN, RIBOFLAVIN SUPPLEMENT, PYRIDOXINE HYDROCHLORIDE, POTASSIUM IODIDE, BETA-CAROTENE, FOLIC ACID",
+      "ingredients_raw": "CHICKEN, CHICKEN BROTH, DUCK, TAPIOCA, SUNFLOWER OIL, SALT, TRICALCIUM PHOSPHATE, POTASSIUM CHLORIDE, CHOLINE CHLORIDE, VITAMIN E SUPPLEMENT, TAURINE, TURMERIC, SALMON OIL, ZINC OXIDE, MAGNESIUM SULFATE, REDUCED IRON, SODIUM SELENITE, VITAMIN B12 SUPPLEMENT, MANGANESE SULFATE, COPPER AMINO ACID COMPLEX, NIACIN SUPPLEMENT, d-CALCIUM PANTOTHENATE, THIAMINE MONONITRATE, VITAMIN A SUPPLEMENT, BIOTIN, RIBOFLAVIN SUPPLEMENT, PYRIDOXINE HYDROCHLORIDE, POTASSIUM IODIDE, BETA-CAROTENE, FOLIC ACID.",
       "guaranteed_analysis": {
-        "crude_protein_max": 10.0
+        "crude_protein_min": 10.0,
+        "crude_fat_min": 2.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 83.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "964 kcal/kg"
@@ -135,7 +144,7 @@
           "sku": "5368742"
         }
       ],
-      "ingredients_raw": "Chicken with ground bone, chicken liver, chicken gizzard, pumpkin seed, organic cranberries, organic spinach, organic broccoli, organic beets, organic carrots, organic squash, organic blueberries, fenugreek seed, potassium chloride, dried kelp, sodium phosphate, tocopherols (preservative), choline chloride, salt, dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, zinc proteinate, iron proteinate, taurine, calcium carbonate, vitamin E supplement, thiamine mononitrate, copper proteinate, manganese proteinate, sodium selenite, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin D3 supplement, vitamin B12 supplement, pyridoxine hydrochloride, folic acid",
+      "ingredients_raw": "Chicken with ground bone, chicken liver, chicken gizzard, pumpkin seed, organic cranberries, organic spinach, organic broccoli, organic beets, organic carrots, organic squash, organic blueberries, fenugreek seed, potassium chloride, dried kelp, sodium phosphate, tocopherols (preservative), choline chloride, salt, dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, zinc proteinate, iron proteinate, taurine, calcium carbonate, vitamin E supplement, thiamine mononitrate, copper proteinate, manganese proteinate, sodium selenite, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin D3 supplement, vitamin B12 supplement, pyridoxine hydrochloride, folic acid. Contains a source of live (viable) naturally occurring microorganisms.",
       "guaranteed_analysis": {
         "crude_protein_min": 48.0,
         "crude_fat_min": 28.0,
@@ -178,10 +187,12 @@
           "sku": "5368792"
         }
       ],
-      "ingredients_raw": "Lamb, lamb liver, lamb spleen, lamb heart, lamb kidney, lamb bone, pumpkin seed, organic cranberries, organic spinach, organic broccoli, organic beets, organic carrots, organic squash, organic blueberries, fenugreek seed, potassium chloride, dried kelp, sodium phosphate, tocopherols (preservative), choline chloride, dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, zinc proteinate, iron proteinate, taurine, calcium carbonate, vitamin E supplement, thiamine mononitrate, copper proteinate, manganese proteinate, sodium selenite, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin D3 supplement, vitamin B12 supplement, pyridoxine hydrochloride, folic acid",
+      "ingredients_raw": "Lamb, lamb liver, lamb spleen, lamb heart, lamb kidney, lamb bone, pumpkin seed, organic cranberries, organic spinach, organic broccoli, organic beets, organic carrots, organic squash, organic blueberries, fenugreek seed, potassium chloride, dried kelp, sodium phosphate, tocopherols (preservative), choline chloride, dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, zinc proteinate, iron proteinate, taurine, calcium carbonate, vitamin E supplement, thiamine mononitrate, copper proteinate, manganese proteinate, sodium selenite, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin D3 supplement, vitamin B12 supplement, pyridoxine hydrochloride, folic acid. Contains a source of live (viable) naturally occurring microorganisms.",
       "guaranteed_analysis": {
-        "taurine_min": 95.0,
-        "crude_protein_max": 34.0
+        "crude_protein_min": 34.0,
+        "crude_fat_min": 34.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 5.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "5270 kcal/kg"
@@ -213,10 +224,12 @@
           "sku": "5368787"
         }
       ],
-      "ingredients_raw": "Duck with ground bone, turkey, turkey liver, turkey heart, goose, turkey gizzard, pumpkin seed, organic cranberries, organic spinach, organic broccoli, organic beets, organic carrots, organic squash, organic blueberries, fenugreek seed, potassium chloride, dried kelp, sodium phosphate, tocopherols (preservative), choline chloride, salt, dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, zinc proteinate, iron proteinate, taurine, calcium carbonate, vitamin E supplement, thiamine mononitrate, copper proteinate, manganese proteinate, sodium selenite, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin D3 supplement, vitamin B12 supplement, pyridoxine hydrochloride, folic acid",
+      "ingredients_raw": "Duck with ground bone, turkey, turkey liver, turkey heart, goose, turkey gizzard, pumpkin seed, organic cranberries, organic spinach, organic broccoli, organic beets, organic carrots, organic squash, organic blueberries, fenugreek seed, potassium chloride, dried kelp, sodium phosphate, tocopherols (preservative), choline chloride, salt, dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, zinc proteinate, iron proteinate, taurine, calcium carbonate, vitamin E supplement, thiamine mononitrate, copper proteinate, manganese proteinate, sodium selenite, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin D3 supplement, vitamin B12 supplement, pyridoxine hydrochloride, folic acid. Contains a source of live (viable) naturally occurring microorganisms.",
       "guaranteed_analysis": {
-        "taurine_min": 95.0,
-        "crude_protein_max": 38.0
+        "crude_protein_min": 38.0,
+        "crude_fat_min": 30.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 5.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "5370 kcal/kg"
@@ -254,7 +267,7 @@
           "sku": "5368713"
         }
       ],
-      "ingredients_raw": "Beef, beef heart, beef kidney, beef tripe, beef liver, beef bone, pumpkin seed, organic cranberries, organic spinach, organic broccoli, organic beets, organic carrots, organic squash, organic blueberries, fenugreek seed, potassium chloride, dried kelp, sodium phosphate, tocopherols (preservative), choline chloride, dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, zinc proteinate, iron proteinate, taurine, calcium carbonate, vitamin E supplement, thiamine mononitrate, copper proteinate, manganese proteinate, sodium selenite, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin D3 supplement, vitamin B12 supplement, pyridoxine hydrochloride, folic acid",
+      "ingredients_raw": "Beef, beef heart, beef kidney, beef tripe, beef liver, beef bone, pumpkin seed, organic cranberries, organic spinach, organic broccoli, organic beets, organic carrots, organic squash, organic blueberries, fenugreek seed, potassium chloride, dried kelp, sodium phosphate, tocopherols (preservative), choline chloride, dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, zinc proteinate, iron proteinate, taurine, calcium carbonate, vitamin E supplement, thiamine mononitrate, copper proteinate, manganese proteinate, sodium selenite, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin D3 supplement, vitamin B12 supplement, pyridoxine hydrochloride, folic acid. Contains a source of live (viable) naturally occurring microorganisms.",
       "guaranteed_analysis": {
         "crude_protein_min": 41.0,
         "crude_fat_min": 35.0,
@@ -287,8 +300,10 @@
       ],
       "ingredients_raw": "Beef, whole ground salmon, beef liver, beef heart, beef bone, pumpkin seed, organic cranberries, organic spinach, organic broccoli, organic beets, organic carrots, organic squash, organic blueberries, fenugreek seed, potassium chloride, dried kelp, sodium phosphate, tocopherols (preservative), choline chloride, dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, zinc proteinate, iron proteinate, taurine, calcium carbonate, vitamin E supplement, thiamine mononitrate, copper proteinate, manganese proteinate, sodium selenite, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin B12 supplement, pyridoxine hydrochloride, folic acid",
       "guaranteed_analysis": {
-        "taurine_min": 95.0,
-        "crude_protein_max": 45.0
+        "crude_protein_min": 45.0,
+        "crude_fat_min": 34.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 5.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "5104 kcal/kg"
@@ -320,7 +335,7 @@
           "sku": "5368778"
         }
       ],
-      "ingredients_raw": "Turkey with ground bone, turkey liver, turkey gizzard, pumpkin seed, organic cranberries, organic spinach, organic broccoli, organic beets, organic carrots, organic squash, organic blueberries, salt, fenugreek seed, potassium chloride, dried kelp, sodium phosphate, tocopherols (preservative), choline chloride, dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, zinc proteinate, iron proteinate, taurine, calcium carbonate, vitamin E supplement, thiamine mononitrate, copper proteinate, manganese proteinate, sodium selenite, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin D3 supplement, vitamin B12 supplement, pyridoxine hydrochloride, folic acid",
+      "ingredients_raw": "Turkey with ground bone, turkey liver, turkey gizzard, pumpkin seed, organic cranberries, organic spinach, organic broccoli, organic beets, organic carrots, organic squash, organic blueberries, salt, fenugreek seed, potassium chloride, dried kelp, sodium phosphate, tocopherols (preservative), choline chloride, dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, zinc proteinate, iron proteinate, taurine, calcium carbonate, vitamin E supplement, thiamine mononitrate, copper proteinate, manganese proteinate, sodium selenite, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin D3 supplement, vitamin B12 supplement, pyridoxine hydrochloride, folic acid. Contains a source of live (viable) naturally occurring microorganisms.",
       "guaranteed_analysis": {
         "crude_protein_min": 40.0,
         "crude_fat_min": 36.0,
@@ -351,7 +366,7 @@
           "sku": "5368864"
         }
       ],
-      "ingredients_raw": "Beef, salmon with ground bone, beef kidney, beef liver, beef tripe, pumpkin seed, organic cranberries, organic spinach, organic broccoli, organic beets, organic carrots, organic squash, organic blueberries, sunflower oil, fenugreek seed, chia seed, New Zealand green mussel powder, potassium chloride, dried kelp, sodium phosphate, tocopherols (preservative), choline chloride, L-Carnitine, turmeric, salt, dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, zinc proteinate, iron proteinate, taurine, calcium carbonate, tricalcium phosphate, vitamin E supplement, thiamine mononitrate, copper proteinate, manganese proteinate, sodium selenite, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin B12 supplement, pyridoxine hydrochloride, folic acid",
+      "ingredients_raw": "Beef, salmon with ground bone, beef kidney, beef liver, beef tripe, pumpkin seed, organic cranberries, organic spinach, organic broccoli, organic beets, organic carrots, organic squash, organic blueberries, sunflower oil, fenugreek seed, chia seed, New Zealand green mussel powder, potassium chloride, dried kelp, sodium phosphate, tocopherols (preservative), choline chloride, L-Carnitine, turmeric, salt, dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, zinc proteinate, iron proteinate, taurine, calcium carbonate, tricalcium phosphate, vitamin E supplement, thiamine mononitrate, copper proteinate, manganese proteinate, sodium selenite, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin B12 supplement, pyridoxine hydrochloride, folic acid. Contains a source of live (viable) naturally occurring microorganisms.",
       "guaranteed_analysis": {
         "crude_protein_min": 46.0,
         "crude_fat_min": 34.5,
@@ -387,8 +402,13 @@
       ],
       "ingredients_raw": "Chicken, turkey, chicken meal, sweet potato, tapioca, natural chicken flavor, chicken liver, chicken fat (preserved with mixed tocopherols), tomato pomace, turkey meal, quail, guinea fowl, goose, duck, chicken gizzards, pumpkin, chia seed, ground pumpkin seeds, organic cranberries, organic spinach, organic broccoli, organic beets, organic carrots, organic squash, organic blueberries, potassium chloride, salt, salmon oil, taurine, chicken cartilage, dried kelp, magnesium proteinate, thiamine mononitrate, vitamin E supplement, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin B12 supplement, vitamin D3 supplement, pyridoxine hydrochloride, folic acid, zinc proteinate, iron proteinate, copper proteinate, manganese proteinate, calcium iodate, sodium selenite, L-Threonine, tocopherols (preservative), dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, rosemary",
       "guaranteed_analysis": {
-        "taurine_min": 93.0,
-        "omega_6_max": 36.0
+        "crude_protein_min": 36.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 12.0,
+        "omega_6_min": 3.5,
+        "omega_3_min": 0.35,
+        "taurine_min": 0.2
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3804 kcal/kg"
@@ -422,8 +442,13 @@
       ],
       "ingredients_raw": "Beef, pork, pork meal, sweet potato, tapioca, beef liver, natural pork flavor, pork fat (preserved with mixed tocopherols), lamb meal, ground flaxseed, tomato pomace, lamb, bison, venison, goat, beef kidney, beef tripe, pumpkin, organic broccoli, organic beets, organic carrots, organic squash, organic cranberries, organic spinach, organic blueberries, ground pumpkin seeds, chia seed, beef bone, potassium chloride, salt, choline chloride, salmon oil, taurine, beef cartilage, dried kelp, thiamine mononitrate, vitamin E supplement, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin B12 supplement, vitamin D3 supplement, pyridoxine hydrochloride, folic acid, L-Threonine, zinc proteinate, iron proteinate, copper proteinate, manganese proteinate, calcium iodate, sodium selenite, magnesium proteinate, tocopherols (preservative), dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, rosemary",
       "guaranteed_analysis": {
-        "taurine_min": 90.0,
-        "omega_6_max": 36.0
+        "crude_protein_min": 36.0,
+        "crude_fat_min": 17.5,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 12.0,
+        "omega_6_min": 1.75,
+        "omega_3_min": 0.5,
+        "taurine_min": 0.2
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3892 kcal/kg"
@@ -457,8 +482,13 @@
       ],
       "ingredients_raw": "Trout, whitefish, whitefish meal, sweet potato, tapioca, salmon, sunflower oil, salmon meal, natural fish flavor, tomato pomace, ground flaxseed, cod, mackerel, herring, pumpkin, ground pumpkin seed, chia seed, organic cranberries, organic spinach, organic broccoli, organic beets, organic squash, organic blueberries, dicalcium phosphate, calcium carbonate, salt, potassium chloride, cod liver oil, salmon oil, choline chloride, taurine, gelatin, dried kelp, thiamine mononitrate, L-Threonine, vitamin E supplement, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin B12 supplement, pyridoxine hydrochloride, folic acid, zinc proteinate, iron proteinate, copper proteinate, manganese proteinate, calcium iodate, sodium selenite, tocopherols (preservative), dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, rosemary",
       "guaranteed_analysis": {
-        "taurine_min": 86.0,
-        "omega_6_max": 30.0
+        "crude_protein_min": 30.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 12.0,
+        "omega_6_min": 3.0,
+        "omega_3_min": 1.5,
+        "taurine_min": 0.2
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3635 kcal/kg"
@@ -486,8 +516,13 @@
       ],
       "ingredients_raw": "Chicken, turkey, chicken meal, sweet potato, tapioca, natural chicken flavor, chicken fat (preserved with mixed tocopherols), chicken liver, tomato pomace, turkey meal, quail, guinea fowl, goose, duck, chicken gizzards, pumpkin, ground pumpkin seeds, chia seed, organic cranberries, organic spinach, organic broccoli, organic beets, organic carrots, organic squash, organic blueberries, potassium chloride, salt, magnesium proteinate, salmon oil, taurine, chicken cartilage, L-Threonine, dried kelp, thiamine mononitrate, vitamin E supplement, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin B12 supplement, vitamin D3 supplement, pyridoxine hydrochloride, folic acid, zinc proteinate, iron proteinate, copper proteinate, manganese proteinate, calcium iodate, sodium selenite, tocopherols (preservative), dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, rosemary",
       "guaranteed_analysis": {
-        "taurine_min": 92.0,
-        "omega_6_max": 35.0
+        "crude_protein_min": 35.0,
+        "crude_fat_min": 15.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 12.0,
+        "omega_6_min": 3.5,
+        "omega_3_min": 0.35,
+        "taurine_min": 0.2
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3703 kcal/kg"
@@ -519,7 +554,7 @@
           "sku": "5368710"
         }
       ],
-      "ingredients_raw": "Beef, pork, pork meal, sweet potato, tapioca, beef liver, natural pork flavor, pork fat (preserved with mixed tocopherols), lamb meal, ground flaxseed, tomato pomace, lamb, bison, venison, goat, beef kidney, beef tripe, pumpkin, organic broccoli, organic beets, organic carrots, organic squash, organic cranberries, organic spinach, organic blueberries, ground pumpkin seeds, chia seed, beef bone, potassium chloride, salt, choline chloride, salmon oil, taurine, beef cartilage, dried kelp, thiamine mononitrate, vitamin E supplement, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin B12 supplement, vitamin D3 supplement, pyridoxine hydrochloride, folic acid, L-Threonine, zinc proteinate, iron proteinate, copper proteinate, manganese proteinate, calcium iodate, sodium selenite, tocopherols (preservative), magnesium proteinate, dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, rosemary",
+      "ingredients_raw": "Beef, pork, pork meal, sweet potato, tapioca, beef liver, natural pork flavor, pork fat (preserved withmixed tocopherols), lamb meal, ground flaxseed, tomato pomace, lamb, bison, venison, goat, beef kidney, beef tripe, pumpkin, organic broccoli, organic beets, organic carrots, organic squash, organic cranberries, organic spinach, organic blueberries, ground pumpkin seeds, chia seed, beef bone, potassium chloride, salt, choline chloride, salmon oil, taurine, beef cartilage, dried kelp, thiamine mononitrate, vitamin E supplement, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin B12 supplement, vitamin D3 supplement, pyridoxine hydrochloride, folic acid, L-Threonine, zinc proteinate, iron proteinate, copper proteinate, manganese proteinate, calcium iodate, sodium selenite, tocopherols (preservative), magnesium proteinate, dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, rosemary",
       "guaranteed_analysis": {
         "crude_protein_min": 35.0,
         "crude_fat_min": 16.5,
@@ -589,7 +624,13 @@
       ],
       "ingredients_raw": "Beef, pork, pork meal, barley, oatmeal, ground flaxseed, natural pork flavor, beef liver, pork fat (preserved with mixed tocopherols), lamb, bison, venison, goat, beef kidney, beef tripe, tomato pomace, pumpkin, organic broccoli, organic beets, organic carrots, organic squash, organic spinach, organic blueberries, ground pumpkin seeds, chia seed, beef bone, potassium chloride, salt, choline chloride, taurine, salmon oil, beef cartilage, calcium carbonate, dried kelp, thiamine mononitrate, vitamin E supplement, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin B12 supplement, vitamin D3 supplement, pyridoxine hydrochloride, folic acid, choline chloride, zinc proteinate, iron proteinate, copper proteinate, manganese proteinate, calcium iodate, sodium selenite, tocopherols (preservative), dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, rosemary",
       "guaranteed_analysis": {
-        "omega_6_max": 35.0
+        "crude_protein_min": 35.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 12.0,
+        "omega_6_min": 1.75,
+        "omega_3_min": 0.5,
+        "taurine_min": 0.2
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3735 kcal/kg"
@@ -617,7 +658,10 @@
       ],
       "ingredients_raw": "Beef bone broth, squash, pumpkin, tapioca, gelatin, ginger, turmeric, cinnamon",
       "guaranteed_analysis": {
-        "crude_protein_max": 1.0
+        "crude_protein_min": 1.0,
+        "crude_fat_min": 0.1,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 97.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "170 kcal/kg"
@@ -643,9 +687,12 @@
           "sku": "5368728"
         }
       ],
-      "ingredients_raw": "Chicken bone broth, squash, pumpkin, tapioca starch, gelatin, ginger, turmeric, cinnamon",
+      "ingredients_raw": "Chicken bone broth, squash, pumpkin, tapioca starch, gelatin, ginger, turmeric, cinnamon.",
       "guaranteed_analysis": {
-        "crude_protein_max": 3.0
+        "crude_protein_min": 3.0,
+        "crude_fat_min": 0.05,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 96.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "213 kcal/kg"
@@ -671,10 +718,13 @@
           "sku": "5368862"
         }
       ],
-      "ingredients_raw": "Bacon, Pork Heart, Pork Liver, Pork Kidney, Egg (Source of Omega-3 Fatty Acids), Dried Cheese, Tocopherols (Preservative), Natural Bacon Flavor, Dried Bacillus coagulans Fermentation Product",
+      "ingredients_raw": "Bacon, Pork Heart, Pork Liver, Pork Kidney, Egg (Source of Omega-3 Fatty Acids), Dried Cheese, Tocopherols (Preservative), Natural Bacon Flavor, Dried Bacillus coagulans Fermentation Product. Contains a source of live (viable) naturally occurring microorganisms.",
       "guaranteed_analysis": {
-        "calcium_min": 100.0,
-        "crude_protein_max": 42.0
+        "crude_protein_min": 42.0,
+        "crude_fat_min": 40.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 5.0,
+        "omega_3_min": 0.3
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "5518 kcal/kg"
@@ -700,9 +750,12 @@
           "sku": "5368825"
         }
       ],
-      "ingredients_raw": "Bacon, pork, pork liver, beef liver, beef kidney, beef, natural bacon flavor, tocopherols (preservative)",
+      "ingredients_raw": "Bacon, pork, pork liver, beef liver, beef kidney, beef, natural bacon flavor, tocopherols (preservative).",
       "guaranteed_analysis": {
-        "crude_protein_max": 38.0
+        "crude_protein_min": 38.0,
+        "crude_fat_min": 34.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 5.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "4760 kcal/kg"
@@ -728,10 +781,12 @@
           "sku": "5368783"
         }
       ],
-      "ingredients_raw": "Beef, beef heart, beef kidney, beef tripe, beef liver, beef bone, pumpkin seed, organic cranberries, organic spinach, organic broccoli, organic beets, organic carrots, organic squash, organic blueberries, fenugreek seed, potassium chloride, dried kelp, sodium phosphate, tocopherols (preservative), choline chloride, dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, zinc proteinate, iron proteinate, taurine, calcium carbonate, vitamin E supplement, thiamine mononitrate, copper proteinate, manganese proteinate, sodium selenite, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin D3 supplement, vitamin B12 supplement, pyridoxine hydrochloride, folic acid",
+      "ingredients_raw": "Beef, beef heart, beef kidney, beef tripe, beef liver, beef bone, pumpkin seed, organic cranberries, organic spinach, organic broccoli, organic beets, organic carrots, organic squash, organic blueberries, fenugreek seed, potassium chloride, dried kelp, sodium phosphate, tocopherols (preservative), choline chloride, dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, zinc proteinate, iron proteinate, taurine, calcium carbonate, vitamin E supplement, thiamine mononitrate, copper proteinate, manganese proteinate, sodium selenite, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin D3 supplement, vitamin B12 supplement, pyridoxine hydrochloride, folic acid. Contains a source of live (viable) naturally occurring microorganisms.",
       "guaranteed_analysis": {
-        "taurine_min": 95.0,
-        "crude_protein_max": 41.0
+        "crude_protein_min": 41.0,
+        "crude_fat_min": 35.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 5.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "4940 kcal/kg"
@@ -757,10 +812,12 @@
           "sku": "5368784"
         }
       ],
-      "ingredients_raw": "Chicken with ground bone, chicken liver, chicken gizzard, pumpkin seed, organic cranberries, organic spinach, organic broccoli, organic beets, organic carrots, organic squash, organic blueberries, fenugreek seed, potassium chloride, dried kelp, sodium phosphate, tocopherols (preservative), choline chloride, salt, dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, zinc proteinate, iron proteinate, taurine, calcium carbonate, vitamin E supplement, thiamine mononitrate, copper proteinate, manganese proteinate, sodium selenite, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin D3 supplement, vitamin B12 supplement, pyridoxine hydrochloride, folic acid",
+      "ingredients_raw": "Chicken with ground bone, chicken liver, chicken gizzard, pumpkin seed, organic cranberries, organic spinach, organic broccoli, organic beets, organic carrots, organic squash, organic blueberries, fenugreek seed, potassium chloride, dried kelp, sodium phosphate, tocopherols (preservative), choline chloride, salt, dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, zinc proteinate, iron proteinate, taurine, calcium carbonate, vitamin E supplement, thiamine mononitrate, copper proteinate, manganese proteinate, sodium selenite, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin D3 supplement, vitamin B12 supplement, pyridoxine hydrochloride, folic acid. Contains a source of live (viable) naturally occurring microorganisms.",
       "guaranteed_analysis": {
-        "taurine_min": 95.0,
-        "crude_protein_max": 48.0
+        "crude_protein_min": 48.0,
+        "crude_fat_min": 28.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 5.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "4420 kcal/kg"
@@ -804,7 +861,7 @@
           "sku": "5368870"
         }
       ],
-      "ingredients_raw": "Chicken with ground bone, chicken liver, chicken gizzard, pumpkin seed, organic cranberries, organic spinach, organic broccoli, organic beets, organic carrots, organic squash, organic blueberries, fenugreek seed, potassium chloride, dried kelp, sodium phosphate, tocopherols (preservative), choline chloride, salt, dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, zinc proteinate, iron proteinate, taurine, calcium carbonate, vitamin E supplement, thiamine mononitrate, copper proteinate, manganese proteinate, sodium selenite, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin D3 supplement, vitamin B12 supplement, pyridoxine hydrochloride, folic acid",
+      "ingredients_raw": "Chicken with ground bone, chicken liver, chicken gizzard, pumpkin seed, organic cranberries, organic spinach, organic broccoli, organic beets, organic carrots, organic squash, organic blueberries, fenugreek seed, potassium chloride, dried kelp, sodium phosphate, tocopherols (preservative), choline chloride, salt, dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, zinc proteinate, iron proteinate, taurine, calcium carbonate, vitamin E supplement, thiamine mononitrate, copper proteinate, manganese proteinate, sodium selenite, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin D3 supplement, vitamin B12 supplement, pyridoxine hydrochloride, folic acid. Contains a source of live (viable) naturally occurring microorganisms.",
       "guaranteed_analysis": {
         "crude_protein_min": 48.0,
         "crude_fat_min": 28.0,
@@ -841,10 +898,12 @@
           "sku": "5368794"
         }
       ],
-      "ingredients_raw": "Lamb, lamb liver, lamb spleen, lamb heart, lamb kidney, lamb bone, pumpkin seed, organic cranberries, organic spinach, organic broccoli, organic beets, organic carrots, organic squash, organic blueberries, fenugreek seed, potassium chloride, dried kelp, sodium phosphate, tocopherols (preservative), choline chloride, dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, zinc proteinate, iron proteinate, taurine, calcium carbonate, vitamin E supplement, thiamine mononitrate, copper proteinate, manganese proteinate, sodium selenite, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin D3 supplement, vitamin B12 supplement, pyridoxine hydrochloride, folic acid",
+      "ingredients_raw": "Lamb, lamb liver, lamb spleen, lamb heart, lamb kidney, lamb bone, pumpkin seed, organic cranberries, organic spinach, organic broccoli, organic beets, organic carrots, organic squash, organic blueberries, fenugreek seed, potassium chloride, dried kelp, sodium phosphate, tocopherols (preservative), choline chloride, dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, zinc proteinate, iron proteinate, taurine, calcium carbonate, vitamin E supplement, thiamine mononitrate, copper proteinate, manganese proteinate, sodium selenite, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin D3 supplement, vitamin B12 supplement, pyridoxine hydrochloride, folic acid. Contains a source of live (viable) naturally occurring microorganisms.",
       "guaranteed_analysis": {
-        "taurine_min": 95.0,
-        "crude_protein_max": 34.0
+        "crude_protein_min": 34.0,
+        "crude_fat_min": 34.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 5.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "5270 kcal/kg"
@@ -876,10 +935,12 @@
           "sku": "5368789"
         }
       ],
-      "ingredients_raw": "Duck with ground bone, turkey, turkey liver, turkey heart, goose, turkey gizzard, pumpkin seed, organic cranberries, organic spinach, organic broccoli, organic beets, organic carrots, organic squash, organic blueberries, fenugreek seed, potassium chloride, dried kelp, sodium phosphate, tocopherols (preservative), choline chloride, salt, dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, zinc proteinate, iron proteinate, taurine, calcium carbonate, vitamin E supplement, thiamine mononitrate, copper proteinate, manganese proteinate, sodium selenite, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin D3 supplement, vitamin B12 supplement, pyridoxine hydrochloride, folic acid",
+      "ingredients_raw": "Duck with ground bone, turkey, turkey liver, turkey heart, goose, turkey gizzard, pumpkin seed, organic cranberries, organic spinach, organic broccoli, organic beets, organic carrots, organic squash, organic blueberries, fenugreek seed, potassium chloride, dried kelp, sodium phosphate, tocopherols (preservative), choline chloride, salt, dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, zinc proteinate, iron proteinate, taurine, calcium carbonate, vitamin E supplement, thiamine mononitrate, copper proteinate, manganese proteinate, sodium selenite, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin D3 supplement, vitamin B12 supplement, pyridoxine hydrochloride, folic acid. Contains a source of live (viable) naturally occurring microorganisms.",
       "guaranteed_analysis": {
-        "taurine_min": 95.0,
-        "crude_protein_max": 38.0
+        "crude_protein_min": 38.0,
+        "crude_fat_min": 30.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 5.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "5370 kcal/kg"
@@ -911,7 +972,7 @@
           "sku": "5368815"
         }
       ],
-      "ingredients_raw": "Ground salmon with bones, ground cod with bones, cod liver oil, pumpkin seed, organic cranberries, organic spinach, organic broccoli, organic beets, organic carrots, organic squash, organic blueberries, fenugreek seed, tocopherols (preservative), salt, dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product",
+      "ingredients_raw": "Ground salmon with bones, ground cod with bones, cod liver oil, pumpkin seed, organic cranberries, organic spinach, organic broccoli, organic beets, organic carrots, organic squash, organic blueberries, fenugreek seed, tocopherols (preservative), salt, dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product. Contains a source of live (viable) naturally occurring microorganisms.",
       "guaranteed_analysis": {
         "crude_protein_min": 50.0,
         "crude_fat_min": 22.0,
@@ -960,7 +1021,7 @@
           "sku": "5368873"
         }
       ],
-      "ingredients_raw": "Beef, beef heart, beef kidney, beef tripe, beef liver, beef bone, pumpkin seed, organic cranberries, organic spinach, organic broccoli, organic beets, organic carrots, organic squash, organic blueberries, fenugreek seed, potassium chloride, dried kelp, sodium phosphate, tocopherols (preservative), choline chloride, dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, zinc proteinate, iron proteinate, taurine, calcium carbonate, vitamin E supplement, thiamine mononitrate, copper proteinate, manganese proteinate, sodium selenite, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin D3 supplement, vitamin B12 supplement, pyridoxine hydrochloride, folic acid",
+      "ingredients_raw": "Beef, beef heart, beef kidney, beef tripe, beef liver, beef bone, pumpkin seed, organic cranberries, organic spinach, organic broccoli, organic beets, organic carrots, organic squash, organic blueberries, fenugreek seed, potassium chloride, dried kelp, sodium phosphate, tocopherols (preservative), choline chloride, dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, zinc proteinate, iron proteinate, taurine, calcium carbonate, vitamin E supplement, thiamine mononitrate, copper proteinate, manganese proteinate, sodium selenite, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin D3 supplement, vitamin B12 supplement, pyridoxine hydrochloride, folic acid. Contains a source of live (viable) naturally occurring microorganisms.",
       "guaranteed_analysis": {
         "crude_protein_min": 41.0,
         "crude_fat_min": 35.0,
@@ -991,9 +1052,12 @@
           "sku": "5368865"
         }
       ],
-      "ingredients_raw": "Beef, whole ground salmon, beef liver, beef heart, beef bone, pumpkin seed, organic cranberries, organic spinach, organic broccoli, organic beets, organic carrots, organic squash, organic blueberries, fenugreek seed, potassium chloride, dried kelp, sodium phosphate, tocopherols (preservative), choline chloride, dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, zinc proteinate, iron proteinate, taurine, calcium carbonate, vitamin E supplement, thiamine mononitrate, copper proteinate, manganese proteinate, sodium selenite, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin B12 supplement, pyridoxine hydrochloride, folic acid",
+      "ingredients_raw": "Beef, whole ground salmon, beef liver, beef heart, beef bone, pumpkin seed, organic cranberries, organic spinach, organic broccoli, organic beets, organic carrots, organic squash, organic blueberries, fenugreek seed, potassium chloride, dried kelp, sodium phosphate, tocopherols (preservative), choline chloride, dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, zinc proteinate, iron proteinate, taurine, calcium carbonate, vitamin E supplement, thiamine mononitrate, copper proteinate, manganese proteinate, sodium selenite, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin B12 supplement, pyridoxine hydrochloride, folic acid. Contains a source of live (viable) naturally occurring microorganisms.",
       "guaranteed_analysis": {
-        "crude_protein_max": 45.0
+        "crude_protein_min": 45.0,
+        "crude_fat_min": 34.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 5.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "5140 kcal/kg"
@@ -1031,7 +1095,7 @@
           "sku": "5368781"
         }
       ],
-      "ingredients_raw": "Turkey with ground bone, turkey liver, turkey gizzard, pumpkin seed, organic cranberries, organic spinach, organic broccoli, organic beets, organic carrots, organic squash, organic blueberries, salt, fenugreek seed, potassium chloride, dried kelp, sodium phosphate, tocopherols (preservative), choline chloride, dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, zinc proteinate, iron proteinate, taurine, calcium carbonate, vitamin E supplement, thiamine mononitrate, copper proteinate, manganese proteinate, sodium selenite, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin D3 supplement, vitamin B12 supplement, pyridoxine hydrochloride, folic acid",
+      "ingredients_raw": "Turkey with ground bone, turkey liver, turkey gizzard, pumpkin seed, organic cranberries, organic spinach, organic broccoli, organic beets, organic carrots, organic squash, organic blueberries, salt, fenugreek seed, potassium chloride, dried kelp, sodium phosphate, tocopherols (preservative), choline chloride, dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, zinc proteinate, iron proteinate, taurine, calcium carbonate, vitamin E supplement, thiamine mononitrate, copper proteinate, manganese proteinate, sodium selenite, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin D3 supplement, vitamin B12 supplement, pyridoxine hydrochloride, folic acid. Contains a source of live (viable) naturally occurring microorganisms.",
       "guaranteed_analysis": {
         "crude_protein_min": 40.0,
         "crude_fat_min": 36.0,
@@ -1102,9 +1166,12 @@
           "sku": "5368729"
         }
       ],
-      "ingredients_raw": "Beef, Chicken, Beef Broth, Chicken Broth, Tapioca, Sunflower Oil, Salt, Potassium Chloride, Choline Chloride, Vitamin E Supplement, Magnesium Sulfate, Taurine, Zinc Oxide, Reduced Iron, Sodium Selenite, Vitamin B12 Supplement, Manganese Sulfate, Niacin Supplement, d-Calcium Pantothenate, Thiamine Mononitrate, Vitamin A Supplement, Copper Amino Acid Complex, Biotin, Riboflavin Supplement, Pyridoxine Hydrochloride, Potassium Iodide, Beta-Carotene, Folic Acid",
+      "ingredients_raw": "Beef, Chicken, Beef Broth, Chicken Broth, Tapioca, Sunflower Oil, Salt, Potassium Chloride, Choline Chloride, Vitamin E Supplement, Magnesium Sulfate, Taurine, Zinc Oxide, Reduced Iron, Sodium Selenite, Vitamin B12 Supplement, Manganese Sulfate, Niacin Supplement, d-Calcium Pantothenate, Thiamine Mononitrate, Vitamin A Supplement, Copper Amino Acid Complex, Biotin, Riboflavin Supplement, Pyridoxine Hydrochloride, Potassium Iodide, Beta-Carotene, Folic Acid.",
       "guaranteed_analysis": {
-        "crude_protein_max": 10.0
+        "crude_protein_min": 10.0,
+        "crude_fat_min": 2.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 83.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "920 kcal/kg"
@@ -1130,9 +1197,12 @@
           "sku": "5368866"
         }
       ],
-      "ingredients_raw": "Beef, Beef Broth, Lamb Broth, Lamb, Sunflower Oil, Tapioca, Salt, Potassium Chloride, Minerals (Zinc Oxide, Reduced Iron, Sodium Selenite, Manganese Sulfate, Copper Amino Acid Complex, Potassium Iodide), Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Thiamine Mononitrate, Beta-Carotene, Biotin, Vitamin D3 Supplement, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid), Choline Chloride, Magnesium Sulfate, Taurine",
+      "ingredients_raw": "Beef, Beef Broth, Lamb Broth, Lamb, Sunflower Oil, Tapioca, Salt, Potassium Chloride, Minerals (Zinc Oxide, Reduced Iron, Sodium Selenite, Manganese Sulfate, Copper Amino Acid Complex, Potassium Iodide), Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Thiamine Mononitrate, Beta-Carotene, Biotin, Vitamin D3 Supplement, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid), Choline Chloride, Magnesium Sulfate, Taurine.",
       "guaranteed_analysis": {
-        "crude_protein_max": 10.0
+        "crude_protein_min": 10.0,
+        "crude_fat_min": 2.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 83.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "1057 kcal/kg"
@@ -1158,9 +1228,12 @@
           "sku": "5368867"
         }
       ],
-      "ingredients_raw": "Beef, Beef Broth, Fish Broth, Salmon, Sunflower Oil, Tapioca, Salt, Potassium Chloride, Minerals (Zinc Oxide, Reduced Iron, Sodium Selenite, Manganese Sulfate, Copper Amino Acid Complex, Potassium Iodide), Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Thiamine Mononitrate, Beta-Carotene, Biotin, Vitamin D3 Supplement, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid), Choline Chloride, Magnesium Sulfate, Taurine",
+      "ingredients_raw": "Beef, Beef Broth, Fish Broth, Salmon, Sunflower Oil, Tapioca, Salt, Potassium Chloride, Minerals (Zinc Oxide, Reduced Iron, Sodium Selenite, Manganese Sulfate, Copper Amino Acid Complex, Potassium Iodide), Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Thiamine Mononitrate, Beta-Carotene, Biotin, Vitamin D3 Supplement, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid), Choline Chloride, Magnesium Sulfate, Taurine.",
       "guaranteed_analysis": {
-        "crude_protein_max": 10.0
+        "crude_protein_min": 10.0,
+        "crude_fat_min": 2.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 83.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "997 kcal/kg"
@@ -1186,9 +1259,12 @@
           "sku": "5368730"
         }
       ],
-      "ingredients_raw": "Chicken, Chicken Broth, Tapioca, Sunflower Oil, Tricalcium Phosphate, Salt, Potassium Chloride, Choline Chloride, Vitamin E Supplement, Magnesium Sulfate, Taurine, Zinc Oxide, Reduced Iron, Sodium Selenite, Manganese Sulfate, Vitamin B12 Supplement, Copper Amino Acid Complex, Niacin Supplement, d-Calcium Pantothenate, Thiamine Mononitrate, Vitamin A Supplement, Biotin, Riboflavin Supplement, Pyridoxine Hydrochloride, Potassium Iodide, Beta-Carotene, Folic Acid",
+      "ingredients_raw": "Chicken, Chicken Broth, Tapioca, Sunflower Oil, Tricalcium Phosphate, Salt, Potassium Chloride, Choline Chloride, Vitamin E Supplement, Magnesium Sulfate, Taurine, Zinc Oxide, Reduced Iron, Sodium Selenite, Manganese Sulfate, Vitamin B12 Supplement, Copper Amino Acid Complex, Niacin Supplement, d-Calcium Pantothenate, Thiamine Mononitrate, Vitamin A Supplement, Biotin, Riboflavin Supplement, Pyridoxine Hydrochloride, Potassium Iodide, Beta-Carotene, Folic Acid.",
       "guaranteed_analysis": {
-        "crude_protein_max": 10.0
+        "crude_protein_min": 10.0,
+        "crude_fat_min": 2.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 83.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "889 kcal/kg"
@@ -1220,11 +1296,12 @@
           "sku": "5368828"
         }
       ],
-      "ingredients_raw": "Beef, beef kidney, beef liver, coconut flour, pumpkin, flaxseed, pineapple stem, choline chloride, egg yolks, papaya, pineapple, avocado, dandelion greens, tocopherols (preservative), fenugreek seed, dried chicory root (source of inulin), dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, sodium phosphate, zinc proteinate, dried kelp, iron proteinate, taurine, calcium carbonate, vitamin E supplement, thiamine mononitrate, copper proteinate, manganese proteinate, sodium selenite, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin D3 supplement, vitamin B12 supplement, pyridoxine hydrochloride, folic acid",
+      "ingredients_raw": "Beef, beef kidney, beef liver, coconut flour, pumpkin, flaxseed, pineapple stem, choline chloride, egg yolks, papaya, pineapple, avocado, dandelion greens, tocopherols (preservative), fenugreek seed, dried chicory root (source of inulin), dried Pediococcus acidilactici fermentation product, dried Lactobacillus acidophilus fermentation product, dried Bifidobacterium longum fermentation product, dried Bacillus coagulans fermentation product, sodium phosphate, zinc proteinate, dried kelp, iron proteinate, taurine, calcium carbonate, vitamin E supplement, thiamine mononitrate, copper proteinate, manganese proteinate, sodium selenite, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin D3 supplement, vitamin B12 supplement, pyridoxine hydrochloride, folic acid. Contains a source of live (viable) naturally occurring microorganisms.",
       "guaranteed_analysis": {
         "crude_protein_min": 36.0,
         "crude_fiber_max": 5.0,
-        "moisture_max": 5.0
+        "moisture_max": 5.0,
+        "crude_fiber_min": 0.5
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "4513 kcal/kg, 200 kcal/cup"
@@ -1256,7 +1333,7 @@
           "sku": "5368869"
         }
       ],
-      "ingredients_raw": "Lamb, salmon, lamb heart, lamb liver, sunflower oil (preserved with mixed tocopherols), coconut flour, fenugreek seed, potassium chloride, pineapple stem, calcium carbonate, flaxseed, choline chloride, pineapple, tocopherols (preservative), sodium phosphate, zinc proteinate, dried kelp, iron proteinate, taurine, calcium carbonate, vitamin E supplement, thiamine mononitrate, copper proteinate, manganese proteinate, sodium selenite, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin D3 supplement, vitamin B12 supplement, pyridoxine hydrochloride, biotin, folic acid",
+      "ingredients_raw": "Lamb, salmon, lamb heart, lamb liver, sunflower oil (preserved with mixed tocopherols), coconut flour, fenugreek seed, potassium chloride, pineapple stem, calcium carbonate, flaxseed, choline chloride, pineapple, tocopherols (preservative), sodium phosphate, zinc proteinate, dried kelp, iron proteinate, taurine, calcium carbonate, vitamin E supplement, thiamine mononitrate, copper proteinate, manganese proteinate, sodium selenite, niacin supplement, d-calcium pantothenate, riboflavin supplement, vitamin A supplement, vitamin D3 supplement, vitamin B12 supplement, pyridoxine hydrochloride, biotin, folic acid.",
       "guaranteed_analysis": {
         "crude_protein_min": 32.0,
         "crude_fat_min": 32.0,
@@ -1296,7 +1373,10 @@
       ],
       "ingredients_raw": "Chicken, duck, coconut glycerin, gelatin, salt, distilled vinegar, citric acid (a preservative), mixed tocopherols (preservative)",
       "guaranteed_analysis": {
-        "crude_protein_max": 40.0
+        "crude_protein_min": 40.0,
+        "crude_fat_min": 20.0,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 22.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "4158 kcal/kg"
@@ -1327,9 +1407,12 @@
           "sku": "5368760"
         }
       ],
-      "ingredients_raw": "Bacon, beef, oatmeal, barley, sorghum, millet, brown rice, vegetable glycerin, brown rice syrup, salt, natural hickory smoke flavor, dried cultured whey, natural flavor, citric acid (preservative), distilled vinegar, gelatin, mixed tocopherols (preservative), rosemary extract",
+      "ingredients_raw": "Bacon, beef, oatmeal, barley, sorghum, millet, brown rice, vegetable glycerin, brown rice syrup, salt, natural hickory smoke flavor, dried cultured whey, natural flavor, citric acid (preservative), distilled vinegar, gelatin, mixed tocopherols (preservative), rosemary extract.",
       "guaranteed_analysis": {
-        "crude_protein_max": 8.0
+        "crude_protein_min": 8.0,
+        "crude_fat_min": 7.0,
+        "crude_fiber_max": 3.5,
+        "moisture_max": 23.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3217 kcal/kg"
@@ -1361,7 +1444,10 @@
       ],
       "ingredients_raw": "Beef Heart",
       "guaranteed_analysis": {
-        "crude_protein_max": 64.0
+        "crude_protein_min": 67.0,
+        "crude_fat_min": 7.0,
+        "crude_fiber_max": 1.0,
+        "moisture_max": 8.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3480 kcal/kg"
@@ -1386,9 +1472,12 @@
           "sku": "5368871"
         }
       ],
-      "ingredients_raw": "Beef, beef liver, beef kidney, sodium alginate, tocopherols (preservative)",
+      "ingredients_raw": "Beef, beef liver, beef kidney, sodium alginate, tocopherols (preservative).",
       "guaranteed_analysis": {
-        "crude_protein_max": 40.0
+        "crude_protein_min": 40.0,
+        "crude_fat_min": 31.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 5.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "4561 kcal/kg"
@@ -1437,9 +1526,12 @@
           "sku": "5368857"
         }
       ],
-      "ingredients_raw": "Chicken, chicken liver, chicken gizzard, sodium alginate, tocopherols (preservative)",
+      "ingredients_raw": "Chicken, chicken liver, chicken gizzard, sodium alginate, tocopherols (preservative).",
       "guaranteed_analysis": {
-        "crude_protein_max": 40.0
+        "crude_protein_min": 40.0,
+        "crude_fat_min": 26.0,
+        "crude_fiber_max": 5.0,
+        "moisture_max": 5.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "4165 kcal/kg"

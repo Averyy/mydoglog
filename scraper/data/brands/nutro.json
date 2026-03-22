@@ -1,7 +1,7 @@
 {
   "brand": "Nutro",
   "website_url": "https://www.petsmart.ca",
-  "scraped_at": "2026-03-09T16:02:58.947871+00:00",
+  "scraped_at": "2026-03-22T14:24:02.561349+00:00",
   "scraper_version": "0.1.0",
   "stats": {
     "product_count": 46,
@@ -36,7 +36,7 @@
           "sku": "5231081"
         }
       ],
-      "ingredients_raw": "Turkey, Turkey Broth, Whole Potatoes, Turkey Liver, Dried Potatoes, Guar Gum, Sunflower Oil (preserved with Mixed Tocopherols), Carrageenan, Potassium Chloride, Choline Chloride, Calcium Carbonate, Ferrous Sulfate, L-Ascorbyl-2-Polyphosphate, Vitamin E Supplement, Zinc Oxide, Thiamine Mononitrate, Magnesium Sulfate, Copper Proteinate, Sodium Selenite, Manganese Sulfate, D-Calcium Pantothenate, Vitamin A Supplement, Potassium Iodide, Biotin, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement",
+      "ingredients_raw": "Turkey, Turkey Broth, Whole Potatoes, Turkey Liver, Dried Potatoes, Guar Gum, Sunflower Oil (preserved with Mixed Tocopherols), Carrageenan, Potassium Chloride, Choline Chloride, Calcium Carbonate, Ferrous Sulfate, L-Ascorbyl-2-Polyphosphate, Vitamin E Supplement, Zinc Oxide, Thiamine Mononitrate, Magnesium Sulfate, Copper Proteinate, Sodium Selenite, Manganese Sulfate, D-Calcium Pantothenate, Vitamin A Supplement, Potassium Iodide, Biotin, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement.",
       "guaranteed_analysis": {
         "crude_protein_min": 7.0,
         "crude_fat_min": 4.0,
@@ -315,7 +315,7 @@
           "sku": "5230981"
         }
       ],
-      "ingredients_raw": "Turkey, Pork Broth, Chicken Broth, Chicken Liver, Sweet Potatoes, Green Beans, Dried Egg Product, Animal Plasma, Dried Peas, Tapioca Starch, Sunflower Oil (preserved with Mixed Tocopherols), Calcium Carbonate, Guar Gum, Choline Chloride, Salt, Potassium Chloride, Sodium Acid Pyrophosphate, Tetrasodium Pyrophosphate, Tricalcium Phosphate, Xanthan Gum, Natural Flavor, Dried Tomatoes, Magnesium Sulfate, Sodium Hexametaphosphate, Ferrous Sulfate, Vitamin E Supplement, Zinc Oxide, Copper Proteinate, Sodium Selenium, D-Calcium Pantothenate, Manganese Sulfate, Vitamin A Supplement, Thiamine Mononitrate, Potassium Iodide, Biotin, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement",
+      "ingredients_raw": "Turkey, Pork Broth, Chicken Broth, Chicken Liver, Sweet Potatoes, Green Beans, Dried Egg Product, Animal Plasma, Dried Peas, Tapioca Starch, Sunflower Oil (preserved with Mixed Tocopherols), Calcium Carbonate, Guar Gum, Choline Chloride, Salt, Potassium Chloride, Sodium Acid Pyrophosphate, Tetrasodium Pyrophosphate, Tricalcium Phosphate, Xanthan Gum, Natural Flavor, Dried Tomatoes, Magnesium Sulfate, Sodium Hexametaphosphate, Ferrous Sulfate, Vitamin E Supplement, Zinc Oxide, Copper Proteinate, Sodium Selenium, D-Calcium Pantothenate, Manganese Sulfate, Vitamin A Supplement, Thiamine Mononitrate, Potassium Iodide, Biotin, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement.",
       "guaranteed_analysis": {
         "crude_protein_min": 10.0,
         "crude_fat_min": 3.5,
@@ -346,7 +346,7 @@
           "sku": "5230975"
         }
       ],
-      "ingredients_raw": "Turkey, Chicken Broth, Chicken, Chicken Liver, Sweet Potatoes, Green Beans, Dried Peas, Dried Potatoes, Guar Gum, Sunflower Oil (preserved with Mixed Tocopherols), Flaxseed, Calcium Carbonate, Salt, Potassium Chloride, Carrageenan, Dried Yam, DL-Methionine, Choline Chloride, Sodium Acid Pyrophosphate, Tetrasodium Pyrophosphate, Natural Flavor, Magnesium Sulfate, Sodium Hexametaphosphate, Ferrous Sulfate, Thiamine Mononitrate, Zinc Oxide, Vitamin E Supplement, Copper Proteinate, Sodium Selenium, Manganese Sulfate, D-Calcium Pantothenate, Vitamin A Supplement, Potassium Iodide, Biotin, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement",
+      "ingredients_raw": "Turkey, Chicken Broth, Chicken, Chicken Liver, Sweet Potatoes, Green Beans, Dried Peas, Dried Potatoes, Guar Gum, Sunflower Oil (preserved with Mixed Tocopherols), Flaxseed, Calcium Carbonate, Salt, Potassium Chloride, Carrageenan, Dried Yam, DL-Methionine, Choline Chloride, Sodium Acid Pyrophosphate, Tetrasodium Pyrophosphate, Natural Flavor, Magnesium Sulfate, Sodium Hexametaphosphate, Ferrous Sulfate, Thiamine Mononitrate, Zinc Oxide, Vitamin E Supplement, Copper Proteinate, Sodium Selenium, Manganese Sulfate, D-Calcium Pantothenate, Vitamin A Supplement, Potassium Iodide, Biotin, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement.",
       "guaranteed_analysis": {
         "crude_protein_min": 9.0,
         "crude_fat_min": 7.0,
@@ -389,7 +389,7 @@
           "sku": "5280272"
         }
       ],
-      "ingredients_raw": "Chicken, Tomatoes, Chicken Broth, Chicken Liver, Carrots, Peas, Pork Plasma, Basil, Tapioca Starch, Pea Fiber, Potassium Chloride, Salt, Calcium Carbonate, Dried Pork Broth, Choline Chloride, Dried Tomatoes, Xanthan Gum, Sodium Acid Pyrophosphate, Tetrasodium Pyrophosphate, Magnesium Proteinate, Sodium Hexametaphosphate, Manganese Sulfate, Zinc Sulfate, Vitamin E Supplement, D-Calcium Pantothenate, Biotin, Copper Sulfate, Thiamine Mononitrate, Riboflavin Supplement, Potassium Iodide, Vitamin A Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Vitamin D3 Supplement",
+      "ingredients_raw": "Chicken, Tomatoes, Chicken Broth, Chicken Liver, Carrots, Peas, Pork Plasma, Basil, Tapioca Starch, Pea Fiber, Potassium Chloride, Salt, Calcium Carbonate, Dried Pork Broth, Choline Chloride, Dried Tomatoes, Xanthan Gum, Sodium Acid Pyrophosphate, Tetrasodium Pyrophosphate, Magnesium Proteinate, Sodium Hexametaphosphate, Manganese Sulfate, Zinc Sulfate, Vitamin E Supplement, D-Calcium Pantothenate, Biotin, Copper Sulfate, Thiamine Mononitrate, Riboflavin Supplement, Potassium Iodide, Vitamin A Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Vitamin D3 Supplement.",
       "guaranteed_analysis": {
         "crude_protein_min": 8.5,
         "crude_fat_min": 4.0,
@@ -420,7 +420,7 @@
           "sku": "5210292"
         }
       ],
-      "ingredients_raw": "Chicken, Chicken Broth, Chicken Liver, Dried Egg Product, Spinach, Carrageenan, Salt, Dried Blueberries, Dried Apples, Dried Carrots, Calcium Carbonate, Potassium Chloride, Dried Yam, Sunflower Oil (preserved with Mixed Tocopherols), Choline Chloride, Tricalcium Phosphate, Chia Seed, Dried Coconut, Tomato Pomace, Dried Pumpkin, Dried Spinach, Dried Kale, Dried Plain Beet Pulp, Sodium Acid Pyrophosphate, Tetrasodium Pyrophosphate, Xanthan Gum, Magnesium Proteinate, Sodium Hexametaphosphate, Zinc Sulfate, Manganese Sulfate, Guar Gum, Vitamin E Supplement, D-Calcium Pantothenate, Biotin, Thiamine Mononitrate, Copper Sulfate, Riboflavin Supplement, Potassium Iodide, Vitamin A Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Vitamin D3 Supplement",
+      "ingredients_raw": "Chicken, Chicken Broth, Chicken Liver, Dried Egg Product, Spinach, Carrageenan, Salt, Dried Blueberries, Dried Apples, Dried Carrots, Calcium Carbonate, Potassium Chloride, Dried Yam, Sunflower Oil (preserved with Mixed Tocopherols), Choline Chloride, Tricalcium Phosphate, Chia Seed, Dried Coconut, Tomato Pomace, Dried Pumpkin, Dried Spinach, Dried Kale, Dried Plain Beet Pulp, Sodium Acid Pyrophosphate, Tetrasodium Pyrophosphate, Xanthan Gum, Magnesium Proteinate, Sodium Hexametaphosphate, Zinc Sulfate, Manganese Sulfate, Guar Gum, Vitamin E Supplement, D-Calcium Pantothenate, Biotin, Thiamine Mononitrate, Copper Sulfate, Riboflavin Supplement, Potassium Iodide, Vitamin A Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Vitamin D3 Supplement.",
       "guaranteed_analysis": {
         "crude_protein_min": 9.0,
         "crude_fat_min": 6.5,
@@ -429,6 +429,37 @@
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "1210 kcal/kg"
+    },
+    {
+      "name": "ULTRA Bistro Mix Adult Wet Dog Food - Filets in Gravy, 12 Count",
+      "brand": "Nutro",
+      "url": "https://www.petsmart.ca/dog/food/canned-food/nutro-ultraandtrade-bistro-mix-adult-wet-dog-food---filets-in-gravy--12-count-49175.html",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "wet",
+      "sub_brand": "NUTRO ULTRA",
+      "life_stage": "adult",
+      "source_id": "5280287",
+      "images": [
+        "/products/nutro/nutro-food-ultra-bistro-mix-adult-wet-dog-food-filets-in-gravy-12-count.jpg"
+      ],
+      "variants": [
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0079105125208",
+          "sku": "5280287"
+        }
+      ],
+      "ingredients_raw": "TENDER BEEF: Beef, Tomatoes, Chicken Broth, Water, Chicken, Beef Liver, Pork Plasma, Basil, Tapioca Starch, Dried Egg Product, Pea Fiber, Calcium Carbonate, Potassium Chloride, Salt, Dried Pork Broth, Choline Chloride, Dried Tomatoes, Xanthan Gum, Sodium Acid Pyrophosphate, Tetrasodium Pyrophosphate, Magnesium Proteinate, Sodium Hexametaphosphate, Manganese Sulfate, Zinc Sulfate, Vitamin E Supplement, D-Calcium Pantothenate, Biotin, Copper Sulfate, Thiamine Mononitrate, Riboflavin Supplement, Potassium Iodide, Vitamin A Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Vitamin D3 Supplement",
+      "guaranteed_analysis": {
+        "crude_protein_min": 8.5,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 80.0,
+        "crude_fat_min": 4.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "914 kcal/kg"
     },
     {
       "name": "ULTRA Senior Wet Dog Food - Pate",
@@ -451,7 +482,7 @@
           "sku": "5161709"
         }
       ],
-      "ingredients_raw": "Chicken, Chicken Liver, Chicken Broth, Spinach, Tomatoes, Carrots, Dried Egg Product, Lamb, Whitefish, Tricalcium Phosphate, Dried Blueberries, Dried Apples, Dried Carrots, Carrageenan, Flaxseed, Potassium Chloride, Calcium Carbonate, Choline Chloride, Sunflower Oil (preserved with Mixed Tocopherols), Chia Seed, Dried Yam, Dried Coconut, Tomato Pomace, Dried Pumpkin, Dried Spinach, Dried Kale, Vitamin E Supplement, Xanthan Gum, Magnesium Proteinate, Salt, Guar Gum, Manganese Sulfate, Zinc Sulfate, Sodium Acid Pyrophosphate, Tetrasodium Pyrophosphate, Sodium Hexametaphosphate, D-Calcium Pantothenate, Biotin, Copper Sulfate, Thiamine Mononitrate, Riboflavin Supplement, Potassium Iodide, Vitamin A Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Vitamin D3 Supplement",
+      "ingredients_raw": "Chicken, Chicken Liver, Chicken Broth, Spinach, Tomatoes, Carrots, Dried Egg Product, Lamb, Whitefish, Tricalcium Phosphate, Dried Blueberries, Dried Apples, Dried Carrots, Carrageenan, Flaxseed, Potassium Chloride, Calcium Carbonate, Choline Chloride, Sunflower Oil (preserved with Mixed Tocopherols), Chia Seed, Dried Yam, Dried Coconut, Tomato Pomace, Dried Pumpkin, Dried Spinach, Dried Kale, Vitamin E Supplement, Xanthan Gum, Magnesium Proteinate, Salt, Guar Gum, Manganese Sulfate, Zinc Sulfate, Sodium Acid Pyrophosphate, Tetrasodium Pyrophosphate, Sodium Hexametaphosphate, D-Calcium Pantothenate, Biotin, Copper Sulfate, Thiamine Mononitrate, Riboflavin Supplement, Potassium Iodide, Vitamin A Supplement, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Vitamin D3 Supplement.",
       "guaranteed_analysis": {
         "crude_protein_min": 8.0,
         "crude_fat_min": 5.0,
@@ -488,9 +519,16 @@
           "sku": "5264018"
         }
       ],
-      "ingredients_raw": "Deboned Lamb, Lamb Meal, Chickpeas, Dried Potatoes, Dried Sweet Potatoes, Lentils, Potato Starch, Sunflower Oil (preserved with Mixed Tocopherols), Canola Oil (preserved with Mixed Tocopherols), Potato Protein, Dried Plain Beet Pulp, Potassium Chloride, Natural Flavors, Salt, Choline Chloride, Whole Flaxseed, DL-Methionine, Citric Acid (preservative), Mixed Tocopherols (preservative), Taurine, Ferrous Sulfate, Zinc Oxide, Sodium Selenite, Vitamin E Supplement, L-ascorbyl-2-polyphosphate (source of Vitamin C), Manganese Sulfate, Copper Sulfate, D-Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Potassium Iodide, Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Manganous Oxide, Folic Acid, Rosemary Extract",
+      "ingredients_raw": "Deboned Lamb, Lamb Meal, Chickpeas, Dried Potatoes, Dried Sweet Potatoes, Lentils, Potato Starch, Sunflower Oil (preserved with Mixed Tocopherols), Canola Oil (preserved with Mixed Tocopherols), Potato Protein, Dried Plain Beet Pulp, Potassium Chloride, Natural Flavors, Salt, Choline Chloride, Whole Flaxseed, DL-Methionine, Citric Acid (preservative), Mixed Tocopherols (preservative), Taurine, Ferrous Sulfate, Zinc Oxide, Sodium Selenite, Vitamin E Supplement, L-ascorbyl-2-polyphosphate (source of Vitamin C), Manganese Sulfate, Copper Sulfate, D-Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Potassium Iodide, Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Manganous Oxide, Folic Acid, Rosemary Extract.",
       "guaranteed_analysis": {
-        "omega_6_max": 20.0
+        "crude_protein_min": 20.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 3.5,
+        "moisture_max": 10.0,
+        "calcium_min": 0.5,
+        "phosphorus_min": 0.4,
+        "omega_3_min": 0.42,
+        "omega_6_min": 2.13
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3655 kcal/kg"
@@ -517,14 +555,16 @@
           "sku": "5264021"
         }
       ],
-      "ingredients_raw": "Deboned Lamb, Lamb Meal (source of Glucosamine and Chondroitin Sulfate), Chickpeas, Dried Potatoes, Dried Sweet Potatoes, Lentils, Potato Starch, Sunflower Oil (preserved with Mixed Tocopherols), Dried Plain Beet Pulp, Canola Oil (preserved with Mixed Tocopherols), Potassium Chloride, Natural Flavors, Potato Protein, Whole Flaxseed, Salt, Choline Chloride, DL-Methionine, Citric Acid (preservative), Mixed Tocopherols (preservative), Taurine, Vitamin E Supplement, Ferrous Sulfate, Zinc Oxide, Sodium Selenite, L-ascorbyl-2-polyphosphate (source of Vitamin C), Manganese Sulfate, Copper Sulfate, D-Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract",
+      "ingredients_raw": "Deboned Lamb, Lamb Meal (source of Glucosamine and Chondroitin Sulfate), Chickpeas, Dried Potatoes, Dried Sweet Potatoes, Lentils, Potato Starch, Sunflower Oil (preserved with Mixed Tocopherols), Dried Plain Beet Pulp, Canola Oil (preserved with Mixed Tocopherols), Potassium Chloride, Natural Flavors, Potato Protein, Whole Flaxseed, Salt, Choline Chloride, DL-Methionine, Citric Acid (preservative), Mixed Tocopherols (preservative), Taurine, Vitamin E Supplement, Ferrous Sulfate, Zinc Oxide, Sodium Selenite, L-ascorbyl-2-polyphosphate (source of Vitamin C), Manganese Sulfate, Copper Sulfate, D-Calcium Pantothenate, Biotin, Thiamine Mononitrate, (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract.",
       "guaranteed_analysis": {
         "crude_protein_min": 20.0,
         "crude_fat_min": 13.0,
         "crude_fiber_max": 3.5,
         "moisture_max": 10.0,
         "calcium_min": 0.5,
-        "phosphorus_min": 0.4
+        "phosphorus_min": 0.4,
+        "omega_3_min": 0.19,
+        "omega_6_min": 1.86
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3532 kcal/kg, 428 kcal/cup"
@@ -551,9 +591,16 @@
           "sku": "5264020"
         }
       ],
-      "ingredients_raw": "Deboned Lamb, Lamb Meal, Chickpeas, Dried Potatoes, Dried Sweet Potatoes, Lentils, Potato Starch, Sunflower Oil (preserved with Mixed Tocopherols), Canola Oil (preserved with Mixed Tocopherols), Potato Protein, Dried Plain Beet Pulp, Potassium Chloride, Natural Flavors, Salt, Choline Chloride, Whole Flaxseed, DL-Methionine, Citric Acid (preservative), Mixed Tocopherols (preservative), Taurine, Ferrous Sulfate, Zinc Oxide, Sodium Selenite, Vitamin E Supplement, L-ascorbyl-2-polyphosphate (source of Vitamin C), Manganese Sulfate, Copper Sulfate, D-Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Potassium Iodide, Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Manganous Oxide, Folic Acid, Rosemary Extract",
+      "ingredients_raw": "Deboned Lamb, Lamb Meal, Chickpeas, Dried Potatoes, Dried Sweet Potatoes, Lentils, Potato Starch, Sunflower Oil (preserved with Mixed Tocopherols), Canola Oil (preserved with Mixed Tocopherols), Potato Protein, Dried Plain Beet Pulp, Potassium Chloride, Natural Flavors, Salt, Choline Chloride, Whole Flaxseed, DL-Methionine, Citric Acid (preservative), Mixed Tocopherols (preservative), Taurine, Ferrous Sulfate, Zinc Oxide, Sodium Selenite, Vitamin E Supplement, L-ascorbyl-2-polyphosphate (source of Vitamin C), Manganese Sulfate, Copper Sulfate, D-Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Potassium Iodide, Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Manganous Oxide, Folic Acid, Rosemary Extract.",
       "guaranteed_analysis": {
-        "crude_protein_max": 20.0
+        "crude_protein_min": 20.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 3.5,
+        "moisture_max": 10.0,
+        "calcium_min": 0.5,
+        "phosphorus_min": 0.4,
+        "omega_3_min": 0.23,
+        "omega_6_min": 2.27
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3655 kcal/kg"
@@ -614,9 +661,16 @@
           "sku": "5351546"
         }
       ],
-      "ingredients_raw": "Salmon, Fish Meal, Brown Rice, Barley, Oatmeal, Brewers Rice, Peas, Chicken Fat (preserved with Mixed Tocopherols), Chicken Meal, Dried Plain Beet Pulp, Natural Flavors, Whole Grain Sorghum, Pea Protein, Salt, Potassium Chloride, Choline Chloride, DL-Methionine, Dicalcium Phosphate, Chia Seed, Dried Coconut, Dried Tomato Pomace, Dried Egg Product, Dried Pumpkin, Dried Kale, Dried Spinach, Citric Acid (preservative), Mixed Tocopherols (preservative), Vitamin E Supplement, Ferrous Sulfate, Zinc Oxide, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Sodium Selenite, Manganese Sulfate, D-Calcium Pantothenate, Copper Sulfate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract",
+      "ingredients_raw": "Salmon, Fish Meal, Brown Rice, Barley, Oatmeal, Brewers Rice, Peas, Chicken Fat (preserved with Mixed Tocopherols), Chicken Meal, Dried Plain Beet Pulp, Natural Flavors, Whole Grain Sorghum, Pea Protein, Salt, Potassium Chloride, Choline Chloride, DL-Methionine, Dicalcium Phosphate, Chia Seed, Dried Coconut, Dried Tomato Pomace, Dried Egg Product, Dried Pumpkin, Dried Kale, Dried Spinach, Citric Acid (preservative), Mixed Tocopherols (preservative), Vitamin E Supplement, Ferrous Sulfate, Zinc Oxide, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Sodium Selenite, Manganese Sulfate, D-Calcium Pantothenate, Copper Sulfate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract.",
       "guaranteed_analysis": {
-        "crude_protein_max": 24.0
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 3.5,
+        "moisture_max": 10.0,
+        "calcium_min": 0.5,
+        "phosphorus_min": 0.4,
+        "omega_3_min": 0.2,
+        "omega_6_min": 2.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3677 kcal/kg"
@@ -643,9 +697,16 @@
           "sku": "5351547"
         }
       ],
-      "ingredients_raw": "Salmon, Fish Meal, Brown Rice, Barley, Oatmeal, Brewers Rice, Peas, Chicken Fat (preserved with Mixed Tocopherols), Chicken Meal, Dried Plain Beet Pulp, Natural Flavors, Whole Grain Sorghum, Pea Protein, Salt, Potassium Chloride, Choline Chloride, DL-Methionine, Dicalcium Phosphate, Chia Seed, Dried Coconut, Dried Tomato Pomace, Dried Egg Product, Dried Pumpkin, Dried Kale, Dried Spinach, Citric Acid (preservative), Mixed Tocopherols (preservative), Vitamin E Supplement, Ferrous Sulfate, Zinc Oxide, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Sodium Selenite, Manganese Sulfate, D-Calcium Pantothenate, Copper Sulfate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract",
+      "ingredients_raw": "Salmon, Fish Meal, Brown Rice, Barley, Oatmeal, Brewers Rice, Peas, Chicken Fat (preserved with Mixed Tocopherols), Chicken Meal, Dried Plain Beet Pulp, Natural Flavors, Whole Grain Sorghum, Pea Protein, Salt, Potassium Chloride, Choline Chloride, DL-Methionine, Dicalcium Phosphate, Chia Seed, Dried Coconut, Dried Tomato Pomace, Dried Egg Product, Dried Pumpkin, Dried Kale, Dried Spinach, Citric Acid (preservative), Mixed Tocopherols (preservative), Vitamin E Supplement, Ferrous Sulfate, Zinc Oxide, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Sodium Selenite, Manganese Sulfate, D-Calcium Pantothenate, Copper Sulfate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract.",
       "guaranteed_analysis": {
-        "crude_protein_max": 24.0
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 3.5,
+        "moisture_max": 10.0,
+        "calcium_min": 0.5,
+        "phosphorus_min": 0.4,
+        "omega_3_min": 0.2,
+        "omega_6_min": 2.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3677 kcal/kg"
@@ -778,7 +839,7 @@
           "sku": "5373338"
         }
       ],
-      "ingredients_raw": "Deboned Lamb, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Whole Grain Brown Rice, Split Peas, Whole Grain Sorghum, Brewers Rice, Whole Grain Oatmeal, Whole Grain Barley, Chicken Fat (preserved with Mixed Tocopherols), Natural Flavours, Dried Plain Beet Pulp, Whole Flaxseed, Potassium Chloride, Salt, Choline Chloride, DL-Methionine, Citric Acid (preservative), Mixed Tocopherols (preservative), Whole Chia Seed, Dried Coconut, Dried Tomato Pomace, Dried Egg Product, Dried Pumpkin, Dried Kale, Dried Spinach, Vitamin E Supplement, L-ascorbyl-2-polyphosphate (source of Vitamin C), Ferrous Sulfate, Zinc Oxide, Sodium Selenite, D-Calcium Pantothenate, Manganese Sulfate, Copper Sulfate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract",
+      "ingredients_raw": "Deboned Lamb, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Whole Grain Brown Rice, Split Peas, Whole Grain Sorghum, Brewers Rice, Whole Grain Oatmeal, Whole Grain Barley, Chicken Fat (preserved with Mixed Tocopherols), Natural Flavours, Dried Plain Beet Pulp, Whole Flaxseed, Potassium Chloride, Salt, Choline Chloride, DL-Methionine, Citric Acid (preservative), Mixed Tocopherols (preservative), Whole Chia Seed, Dried Coconut, Dried Tomato Pomace, Dried Egg Product, Dried Pumpkin, Dried Kale, Dried Spinach, Vitamin E Supplement, L-ascorbyl-2-polyphosphate (source of Vitamin C), Ferrous Sulfate, Zinc Oxide, Sodium Selenite, D-Calcium Pantothenate, Manganese Sulfate, Copper Sulfate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract.",
       "guaranteed_analysis": {
         "crude_protein_min": 20.0,
         "crude_fat_min": 12.0,
@@ -786,7 +847,8 @@
         "moisture_max": 10.0,
         "calcium_min": 0.5,
         "phosphorus_min": 0.4,
-        "omega_6_min": 0.2
+        "omega_3_min": 0.2,
+        "omega_6_min": 2.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3612 kcal/kg, 326 kcal/cup"
@@ -812,7 +874,7 @@
           "sku": "5358843"
         }
       ],
-      "ingredients_raw": "Deboned Lamb, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Whole Grain Brown Rice, Split Peas, Whole Grain Sorghum, Brewers Rice, Whole Grain Oatmeal, Whole Grain Barley, Chicken Fat (preserved with Mixed Tocopherols), Natural Flavours, Dried Plain Beet Pulp, Whole Flaxseed, Potassium Chloride, Salt, Choline Chloride, DL-Methionine, Citric Acid (preservative), Mixed Tocopherols (preservative), Whole Chia Seed, Dried Coconut, Dried Tomato Pomace, Dried Egg Product, Dried Pumpkin, Dried Kale, Dried Spinach, Vitamin E Supplement, L-ascorbyl-2-polyphosphate (source of Vitamin C), Ferrous Sulfate, Zinc Oxide, Sodium Selenite, D-Calcium Pantothenate, Manganese Sulfate, Copper Sulfate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract",
+      "ingredients_raw": "Deboned Lamb, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Whole Grain Brown Rice, Split Peas, Whole Grain Sorghum, Brewers Rice, Whole Grain Oatmeal, Whole Grain Barley, Chicken Fat (preserved with Mixed Tocopherols), Natural Flavours, Dried Plain Beet Pulp, Whole Flaxseed, Potassium Chloride, Salt, Choline Chloride, DL-Methionine, Citric Acid (preservative), Mixed Tocopherols (preservative), Whole Chia Seed, Dried Coconut, Dried Tomato Pomace, Dried Egg Product, Dried Pumpkin, Dried Kale, Dried Spinach, Vitamin E Supplement, L-ascorbyl-2-polyphosphate (source of Vitamin C), Ferrous Sulfate, Zinc Oxide, Sodium Selenite, D-Calcium Pantothenate, Manganese Sulfate, Copper Sulfate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract.",
       "guaranteed_analysis": {
         "crude_protein_min": 20.0,
         "crude_fat_min": 12.0,
@@ -848,7 +910,7 @@
           "sku": "5373339"
         }
       ],
-      "ingredients_raw": "Deboned Lamb, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Split Peas, Brewers Rice, Rice Bran, Whole Grain Brown Rice, Chicken Fat (preserved with Mixed Tocopherols), Potato Protein, Natural Flavours, Lamb Meal, Dried Plain Beet Pulp, Fish Oil (preserved with Mixed Tocopherols), Salt, Choline Chloride, Potassium Chloride, DL-Methionine, Dicalcium Phosphate, Citric Acid (preservative), Mixed Tocopherols (preservative), Whole Chia Seed, Dried Coconut, Dried Tomato Pomace, Dried Egg Product, Dried Pumpkin, Dried Kale, Dried Spinach, Vitamin E Supplement, Ferrous Sulfate, L-ascorbyl-2-polyphosphate (source of Vitamin C), Zinc Oxide, Sodium Selenite, D-Calcium Pantothenate, Manganese Sulfate, Copper Sulfate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract",
+      "ingredients_raw": "Deboned Lamb, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Split Peas, Brewers Rice, Rice Bran, Whole Grain Brown Rice, Chicken Fat (preserved with Mixed Tocopherols), Potato Protein, Natural Flavours, Lamb Meal, Dried Plain Beet Pulp, Fish Oil (preserved with Mixed Tocopherols), Salt, Choline Chloride, Potassium Chloride, DL-Methionine, Dicalcium Phosphate, Citric Acid (preservative), Mixed Tocopherols (preservative), Whole Chia Seed, Dried Coconut, Dried Tomato Pomace, Dried Egg Product, Dried Pumpkin, Dried Kale, Dried Spinach, Vitamin E Supplement, Ferrous Sulfate, L-ascorbyl-2 polyphosphate (source of Vitamin C), Zinc Oxide, Sodium Selenite, D-Calcium Pantothenate, Manganese Sulfate, Copper Sulfate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract.",
       "guaranteed_analysis": {
         "crude_protein_min": 26.0,
         "crude_fat_min": 14.0,
@@ -920,7 +982,7 @@
           "sku": "5359421"
         }
       ],
-      "ingredients_raw": "Deboned Lamb, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Split Peas, Brewers Rice, Rice Bran, Whole Grain Brown Rice, Chicken Fat (preserved with Mixed Tocopherols), Potato Protein, Natural Flavours, Lamb Meal, Dried Plain Beet Pulp, Fish Oil (preserved with Mixed Tocopherols), Salt, Choline Chloride, Potassium Chloride, DL-Methionine, Dicalcium Phosphate, Citric Acid (preservative), Mixed Tocopherols (preservative), Whole Chia Seed, Dried Coconut, Dried Tomato Pomace, Dried Egg Product, Dried Pumpkin, Dried Kale, Dried Spinach, Vitamin E Supplement, Ferrous Sulfate, L-ascorbyl-2-polyphosphate (source of Vitamin C), Zinc Oxide, Sodium Selenite, D-Calcium Pantothenate, Manganese Sulfate, Copper Sulfate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract",
+      "ingredients_raw": "Deboned Lamb, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Split Peas, Brewers Rice, Rice Bran, Whole Grain Brown Rice, Chicken Fat (preserved with Mixed Tocopherols), Potato Protein, Natural Flavours, Lamb Meal, Dried Plain Beet Pulp, Fish Oil (preserved with Mixed Tocopherols), Salt, Choline Chloride, Potassium Chloride, DL-Methionine, Dicalcium Phosphate, Citric Acid (preservative), Mixed Tocopherols (preservative), Whole Chia Seed, Dried Coconut, Dried Tomato Pomace, Dried Egg Product, Dried Pumpkin, Dried Kale, Dried Spinach, Vitamin E Supplement, Ferrous Sulfate, L-ascorbyl-2 polyphosphate (source of Vitamin C), Zinc Oxide, Sodium Selenite, D-Calcium Pantothenate, Manganese Sulfate, Copper Sulfate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract",
       "guaranteed_analysis": {
         "crude_protein_min": 26.0,
         "crude_fat_min": 14.0,
@@ -959,9 +1021,16 @@
           "sku": "5333723"
         }
       ],
-      "ingredients_raw": "Chicken, Chicken Meal, Brown Rice, Barley, Oatmeal, Brewers Rice, Peas, Chicken Fat (preserved with Mixed Tocopherols), Dried Plain Beet Pulp, Natural Flavors, Potassium Chloride, Flaxseed, Salt, Choline Chloride, DL-Methionine, Chia Seed, Dried Coconut, Dried Tomato Pomace, Dried Egg Product, Dried Pumpkin, Dried Kale, Dried Spinach, Citric Acid (preservative), Mixed Tocopherols (preservative), Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Ferrous Sulfate, Zinc Oxide, Sodium Selenite, D-Calcium Pantothenate, Manganese Sulfate, Copper Sulfate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract",
+      "ingredients_raw": "Chicken, Chicken Meal, Brown Rice, Barley, Oatmeal, Brewers Rice, Peas, Chicken Fat (preserved with Mixed Tocopherols), Dried Plain Beet Pulp, Natural Flavors, Potassium Chloride, Flaxseed, Salt, Choline Chloride, DL-Methionine, Chia Seed, Dried Coconut, Dried Tomato Pomace, Dried Egg Product, Dried Pumpkin, Dried Kale, Dried Spinach, Citric Acid (preservative), Mixed Tocopherols (preservative), Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Ferrous Sulfate, Zinc Oxide, Sodium Selenite, D-Calcium Pantothenate, Manganese Sulfate, Copper Sulfate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract.",
       "guaranteed_analysis": {
-        "crude_protein_max": 24.0
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 3.5,
+        "moisture_max": 10.0,
+        "calcium_min": 0.5,
+        "phosphorus_min": 0.4,
+        "omega_3_min": 0.2,
+        "omega_6_min": 2.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3631 kcal/kg"
@@ -987,10 +1056,16 @@
           "sku": "5231835"
         }
       ],
-      "ingredients_raw": "Chicken, Chicken Meal, Brown Rice, Barley, Oatmeal, Brewers Rice, Whole Grain Sorghum, Peas, Dried Plain Beet Pulp, Natural Flavors, Chicken Fat (preserved with Mixed Tocopherols), Salt, Fish Oil (preserved with Mixed Tocopherols), Potassium Chloride, Choline Chloride, DL-Methionine, Chia Seed, Dried Coconut, Dried Tomato Pomace, Dried Egg Product, Dried Pumpkin, Dried Kale, Dried Spinach, Citric Acid (preservative), Mixed Tocopherols (preservative), Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Ferrous Sulfate, Zinc Oxide, Sodium Selenite, D-Calcium Pantothenate, Manganese Sulfate, Copper Sulfate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract",
+      "ingredients_raw": "Chicken, Chicken Meal, Brown Rice, Barley, Oatmeal, Brewers Rice, Whole Grain Sorghum, Peas, Dried Plain Beet Pulp, Natural Flavors, Chicken Fat (preserved with Mixed Tocopherols), Salt, Fish Oil (preserved with Mixed Tocopherols), Potassium Chloride, Choline Chloride, DL-Methionine, Chia Seed, Dried Coconut, Dried Tomato Pomace, Dried Egg Product, Dried Pumpkin, Dried Kale, Dried Spinach, Citric Acid (preservative), Mixed Tocopherols (preservative), Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Ferrous Sulfate, Zinc Oxide, Sodium Selenite, D-Calcium Pantothenate, Manganese Sulfate, Copper Sulfate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract.",
       "guaranteed_analysis": {
-        "calcium_min": 100.0,
-        "crude_protein_max": 26.0
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "omega_3_min": 0.2,
+        "omega_6_min": 2.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3494 kcal/kg"
@@ -1023,9 +1098,16 @@
           "sku": "5351510"
         }
       ],
-      "ingredients_raw": "Chicken, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Brown Rice, Barley, Oatmeal, Brewers Rice, Peas, Chicken Fat (preserved with Mixed Tocopherols), Dried Plain Beet Pulp, Natural Flavors, Potassium Chloride, Flaxseed, Salt, Choline Chloride, DL-Methionine, Chia Seed, Dried Coconut, Dried Tomato Pomace, Dried Egg Product, Dried Pumpkin, Dried Kale, Dried Spinach, Citric Acid (preservative), Mixed Tocopherols (preservative), Vitamin E Supplement, Ferrous Sulfate, Zinc Oxide, Sodium Selenite, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Manganese Sulfate, Copper Sulfate, D-Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract",
+      "ingredients_raw": "Chicken, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Brown Rice, Barley, Oatmeal, Brewers Rice, Peas, Chicken Fat (preserved with Mixed Tocopherols), Dried Plain Beet Pulp, Natural Flavors, Potassium Chloride, Flaxseed, Salt, Choline Chloride, DL-Methionine, Chia Seed, Dried Coconut, Dried Tomato Pomace, Dried Egg Product, Dried Pumpkin, Dried Kale, Dried Spinach, Citric Acid (preservative), Mixed Tocopherols (preservative), Vitamin E Supplement, Ferrous Sulfate, Zinc Oxide, Sodium Selenite, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Manganese Sulfate, Copper Sulfate, D-Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract.",
       "guaranteed_analysis": {
-        "crude_protein_max": 22.0
+        "crude_protein_min": 22.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 0.5,
+        "phosphorus_min": 0.4,
+        "omega_3_min": 0.2,
+        "omega_6_min": 2.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3548 kcal/kg"
@@ -1052,9 +1134,16 @@
           "sku": "5351512"
         }
       ],
-      "ingredients_raw": "Deboned Lamb, Lamb Meal, Brown Rice, Barley, Oatmeal, Brewers Rice, Peas, Chicken Fat (preserved with Mixed Tocopherols), Dried Plain Beet Pulp, Natural Flavors, Pea Protein, Potassium Chloride, Flaxseed, Salt, Choline Chloride, DL-Methionine, Chia Seed, Dried Coconut, Dried Tomato Pomace, Dried Egg Product, Dried Pumpkin, Dried Kale, Dried Spinach, Citric Acid (preservative), Mixed Tocopherols (preservative), Taurine, Vitamin E Supplement, Ferrous Sulfate, Zinc Oxide, Sodium Selenite, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Manganese Sulfate, Copper Sulfate, D-Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract",
+      "ingredients_raw": "Deboned Lamb, Lamb Meal, Brown Rice, Barley, Oatmeal, Brewers Rice, Peas, Chicken Fat (preserved with Mixed Tocopherols), Dried Plain Beet Pulp, Natural Flavors, Pea Protein, Potassium Chloride, Flaxseed, Salt, Choline Chloride, DL-Methionine, Chia Seed, Dried Coconut, Dried Tomato Pomace, Dried Egg Product, Dried Pumpkin, Dried Kale, Dried Spinach, Citric Acid (preservative), Mixed Tocopherols (preservative), Taurine, Vitamin E Supplement, Ferrous Sulfate, Zinc Oxide, Sodium Selenite, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Manganese Sulfate, Copper Sulfate, D-Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract.",
       "guaranteed_analysis": {
-        "crude_protein_max": 22.0
+        "crude_protein_min": 22.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 0.5,
+        "phosphorus_min": 0.4,
+        "omega_3_min": 0.2,
+        "omega_6_min": 2.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3494 kcal/kg"
@@ -1081,9 +1170,16 @@
           "sku": "5231512"
         }
       ],
-      "ingredients_raw": "Chicken, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Barley, Brown Rice, Oatmeal, Peas, Powdered Cellulose, Dehydrated Alfalfa Meal, Dried Plain Beet Pulp, Whole Grain Sorghum, Pea Protein, Natural Flavors, Chicken Fat (preserved with Mixed Tocopherols), Potassium Chloride, Salt, Flaxseed, Choline Chloride, DL-Methionine, Chia Seed, Dried Coconut, Dried Tomato Pomace, Dried Egg Product, Dried Pumpkin, Dried Kale, Dried Spinach, Citric Acid (preservative), Mixed Tocopherols (preservative), Vitamin E Supplement, Ferrous Sulfate, Zinc Oxide, Sodium Selenite, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Manganese Sulfate, Copper Sulfate, D-Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract",
+      "ingredients_raw": "Chicken, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Barley, Brown Rice, Oatmeal, Peas, Powdered Cellulose, Dehydrated Alfalfa Meal, Dried Plain Beet Pulp, Whole Grain Sorghum, Pea Protein, Natural Flavors, Chicken Fat (preserved with Mixed Tocopherols), Potassium Chloride, Salt, Flaxseed, Choline Chloride, DL-Methionine, Chia Seed, Dried Coconut, Dried Tomato Pomace, Dried Egg Product, Dried Pumpkin, Dried Kale, Dried Spinach, Citric Acid (preservative), Mixed Tocopherols (preservative), Vitamin E Supplement, Ferrous Sulfate, Zinc Oxide, Sodium Selenite, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Manganese Sulfate, Copper Sulfate, D-Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract.",
       "guaranteed_analysis": {
-        "crude_protein_max": 24.0
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 8.0,
+        "crude_fat_max": 12.0,
+        "crude_fiber_max": 11.0,
+        "moisture_max": 10.0,
+        "calcium_min": 0.5,
+        "phosphorus_min": 0.4,
+        "omega_6_min": 2.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3167 kcal/kg"
@@ -1110,10 +1206,19 @@
           "sku": "5231509"
         }
       ],
-      "ingredients_raw": "Chicken, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Brown Rice, Barley, Oatmeal, Brewers Rice, Pea Protein, Chicken Fat (preserved with Mixed Tocopherols), Dried Plain Beet Pulp, Natural Flavors, Peas, Salt, Flaxseed, Fish Oil (preserved with Mixed Tocopherols), Potassium Chloride, Choline Chloride, Dicalcium Phosphate, Chia Seed, Dried Coconut, Dried Tomato Pomace, Dried Egg Product, Dried Pumpkin, Dried Kale, Dried Spinach, DL-Methionine, Citric Acid (preservative), Mixed Tocopherols (preservative), Vitamin E Supplement, Ferrous Sulfate, Zinc Oxide, Sodium Selenite, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Manganese Sulfate, Copper Sulfate, D-Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract",
+      "ingredients_raw": "Chicken, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Brown Rice, Barley, Oatmeal, Brewers Rice, Pea Protein, Chicken Fat (preserved with Mixed Tocopherols), Dried Plain Beet Pulp, Natural Flavors, Peas, Salt, Flaxseed, Fish Oil (preserved with Mixed Tocopherols), Potassium Chloride, Choline Chloride, Dicalcium Phosphate, Chia Seed, Dried Coconut, Dried Tomato Pomace, Dried Egg Product, Dried Pumpkin, Dried Kale, Dried Spinach, DL-Methionine, Citric Acid (preservative), Mixed Tocopherols (preservative), Vitamin E Supplement, Ferrous Sulfate, Zinc Oxide, Sodium Selenite, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Manganese Sulfate, Copper Sulfate, D-Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract.",
       "guaranteed_analysis": {
-        "dha_min": 100.0,
-        "crude_protein_max": 26.0
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 10.0,
+        "epa_min": 0.05,
+        "dha_min": 0.05,
+        "calcium_min": 1.2,
+        "calcium_max": 1.7,
+        "phosphorus_min": 1.0,
+        "omega_3_min": 0.2,
+        "omega_6_min": 2.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3604 kcal/kg"
@@ -1140,10 +1245,19 @@
           "sku": "5232058"
         }
       ],
-      "ingredients_raw": "Deboned Lamb, Lamb Meal, Brown Rice, Barley, Oatmeal, Brewers Rice, Peas, Chicken Fat (preserved with Mixed Tocopherols), Pea Protein, Potato Protein, Dried Plain Beet Pulp, Natural Flavors, Potassium Chloride, Fish Oil (preserved with Mixed Tocopherols), Salt, Dicalcium Phosphate, Choline Chloride, DL-Methionine, Chia Seed, Dried Coconut, Dried Tomato Pomace, Dried Egg Product, Dried Pumpkin, Dried Kale, Dried Spinach, Taurine, Citric Acid (preservative), Mixed Tocopherols (preservative), Vitamin E Supplement, Ferrous Sulfate, Zinc Oxide, Sodium Selenite, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Manganese Sulfate, Copper Sulfate, D-Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract",
+      "ingredients_raw": "Deboned Lamb, Lamb Meal, Brown Rice, Barley, Oatmeal, Brewers Rice, Peas, Chicken Fat (preserved with Mixed Tocopherols), Pea Protein, Potato Protein, Dried Plain Beet Pulp, Natural Flavors, Potassium Chloride, Fish Oil (preserved with Mixed Tocopherols), Salt, Dicalcium Phosphate, Choline Chloride, DL-Methionine, Chia Seed, Dried Coconut, Dried Tomato Pomace, Dried Egg Product, Dried Pumpkin, Dried Kale, Dried Spinach, Taurine, Citric Acid (preservative), Mixed Tocopherols (preservative), Vitamin E Supplement, Ferrous Sulfate, Zinc Oxide, Sodium Selenite, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Manganese Sulfate, Copper Sulfate, D-Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract.",
       "guaranteed_analysis": {
-        "dha_min": 100.0,
-        "crude_protein_max": 26.0
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 10.0,
+        "dha_min": 0.05,
+        "epa_min": 0.05,
+        "calcium_min": 1.2,
+        "calcium_max": 1.7,
+        "phosphorus_min": 1.0,
+        "omega_3_min": 0.2,
+        "omega_6_min": 2.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3582 kcal/kg"
@@ -1176,9 +1290,16 @@
           "sku": "5231404"
         }
       ],
-      "ingredients_raw": "Deboned Lamb, Lamb Meal, Brown Rice, Barley, Oatmeal, Brewers Rice, Peas, Chicken Fat (preserved with Mixed Tocopherols), Potato Protein, Dried Plain Beet Pulp, Natural Flavors, Pea Protein, Potassium Chloride, Salt, Flaxseed, Choline Chloride, DL-Methionine, Chia Seed, Dried Coconut, Dried Tomato Pomace, Dried Egg Product, Dried Pumpkin, Dried Kale, Dried Spinach, Citric Acid (preservative), Mixed Tocopherols (preservative), Taurine, Vitamin E Supplement, Ferrous Sulfate, Zinc Oxide, Sodium Selenite, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Manganese Sulfate, Copper Sulfate, D-Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract",
+      "ingredients_raw": "Deboned Lamb, Lamb Meal, Brown Rice, Barley, Oatmeal, Brewers Rice, Peas, Chicken Fat (preserved with Mixed Tocopherols), Potato Protein, Dried Plain Beet Pulp, Natural Flavors, Pea Protein, Potassium Chloride, Salt, Flaxseed, Choline Chloride, DL-Methionine, Chia Seed, Dried Coconut, Dried Tomato Pomace, Dried Egg Product, Dried Pumpkin, Dried Kale, Dried Spinach, Citric Acid (preservative), Mixed Tocopherols (preservative), Taurine, Vitamin E Supplement, Ferrous Sulfate, Zinc Oxide, Sodium Selenite, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Manganese Sulfate, Copper Sulfate, D-Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract.",
       "guaranteed_analysis": {
-        "crude_protein_max": 24.0
+        "crude_protein_min": 24.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 3.5,
+        "moisture_max": 10.0,
+        "calcium_min": 0.5,
+        "phosphorus_min": 0.4,
+        "omega_3_min": 0.2,
+        "omega_6_min": 2.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3611 kcal/kg"
@@ -1205,9 +1326,16 @@
           "sku": "5264116"
         }
       ],
-      "ingredients_raw": "Chicken, Chicken Meal, Brown Rice, Barley, Oatmeal, Peas, Brewers Rice, Chicken Fat (preserved with Mixed Tocopherols), Natural Flavors, Dried Plain Beet Pulp, Flaxseed, Salt, Potassium Chloride, Choline Chloride, DL-Methionine, Chia Seed, Dried Coconut, Dried Tomato Pomace, Dried Egg Product, Dried Pumpkin, Dried Kale, Dried Spinach, Citric Acid (preservative), Mixed Tocopherols (preservative), Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Ferrous Sulfate, Zinc Oxide, Sodium Selenite, D-Calcium Pantothenate, Manganese Sulfate, Copper Sulfate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract",
+      "ingredients_raw": "Chicken, Chicken Meal, Brown Rice, Barley, Oatmeal, Peas, Brewers Rice, Chicken Fat (preserved with Mixed Tocopherols), Natural Flavors, Dried Plain Beet Pulp, Flaxseed, Salt, Potassium Chloride, Choline Chloride, DL-Methionine, Chia Seed, Dried Coconut, Dried Tomato Pomace, Dried Egg Product, Dried Pumpkin, Dried Kale, Dried Spinach, Citric Acid (preservative), Mixed Tocopherols (preservative), Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Ferrous Sulfate, Zinc Oxide, Sodium Selenite, D-Calcium Pantothenate, Manganese Sulfate, Copper Sulfate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract.",
       "guaranteed_analysis": {
-        "crude_protein_max": 26.0
+        "crude_protein_min": 26.0,
+        "crude_fat_min": 16.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 10.0,
+        "calcium_min": 0.5,
+        "phosphorus_min": 0.4,
+        "omega_3_min": 0.2,
+        "omega_6_min": 2.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3697 kcal/kg"
@@ -1245,7 +1373,7 @@
           "sku": "5351521"
         }
       ],
-      "ingredients_raw": "Chicken, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Whole Grain Barley, Whole Grain Brown Rice, Whole Grain Sorghum, Whole Grain Oatmeal, Brewers Rice, Lamb Meal, Pea Protein, Natural Flavors, Salmon Meal, Dried Plain Beet Pulp, Salt, Chicken Fat (preserved with Mixed Tocopherols), Whole Flaxseed, Potassium Chloride, Choline Chloride, Citric Acid (preservative), Mixed Tocopherols (preservative), DL-Methionine, Whole Chia Seed, Dried Coconut, Dried Egg Product, Dried Tomato Pomace, Dried Kale, Dried Pumpkin, Dried Spinach, Dried Blueberries, Dried Apples, Dried Carrots, Ferrous Sulfate, Vitamin E Supplement, Zinc Oxide, Sodium Selenite, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Manganese Sulfate, Copper Sulfate, D-Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract",
+      "ingredients_raw": "Chicken, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Whole Grain Barley, Whole Grain Brown Rice, Whole Grain Sorghum, Whole Grain Oatmeal, Brewers Rice, Lamb Meal, Pea Protein, Natural Flavors, Salmon Meal, Dried Plain Beet Pulp, Salt, Chicken Fat (preserved with Mixed Tocopherols), Whole Flaxseed, Potassium Chloride, Choline Chloride, Citric Acid (preservative), Mixed Tocopherols (preservative), DL-Methionine, Whole Chia Seed, Dried Coconut, Dried Egg Product, Dried Tomato Pomace, Dried Kale, Dried Pumpkin, Dried Spinach, Dried Blueberries, Dried Apples, Dried Carrots, Ferrous Sulfate, Vitamin E Supplement, Zinc Oxide, Sodium Selenite, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Manganese Sulfate, Copper Sulfate, D-Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract.",
       "guaranteed_analysis": {
         "crude_protein_min": 26.0,
         "crude_fat_min": 9.0,
@@ -1288,7 +1416,7 @@
           "sku": "5351520"
         }
       ],
-      "ingredients_raw": "Chicken, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Whole Grain Barley, Whole Grain Brown Rice, Brewers Rice, Whole Grain Sorghum, Whole Grain Oatmeal, Chicken Fat (preserved with Mixed Tocopherols), Natural Flavors, Lamb Meal, Salmon Meal, Dried Plain Beet Pulp, Whole Flaxseed, Salt, Potassium Chloride, Choline Chloride, Citric Acid (preservative), Mixed Tocopherols (preservative), Whole Chia Seed, Dried Coconut, Dried Egg Product, Dried Tomato Pomace, Dried Kale, Dried Pumpkin, Dried Spinach, Dried Blueberries, Dried Apples, Dried Carrots, DL-Methionine, Vitamin E Supplement, Ferrous Sulfate, Zinc Oxide, Sodium Selenite, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Manganese Sulfate, Copper Sulfate, D-Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract",
+      "ingredients_raw": "Chicken, Chicken Meal (source of Glucosamine and Chondroitin Sulfate), Whole Grain Barley, Whole Grain Brown Rice, Brewers Rice, Whole Grain Sorghum, Whole Grain Oatmeal, Chicken Fat (preserved with Mixed Tocopherols), Natural Flavors, Lamb Meal, Salmon Meal, Dried Plain Beet Pulp, Whole Flaxseed, Salt, Potassium Chloride, Choline Chloride, Citric Acid (preservative), Mixed Tocopherols (preservative), Whole Chia Seed, Dried Coconut, Dried Egg Product, Dried Tomato Pomace, Dried Kale, Dried Pumpkin, Dried Spinach, Dried Blueberries, Dried Apples, Dried Carrots, DL-Methionine, Vitamin E Supplement, Ferrous Sulfate, Zinc Oxide, Sodium Selenite, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Manganese Sulfate, Copper Sulfate, D-Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract.",
       "guaranteed_analysis": {
         "crude_protein_min": 22.0,
         "crude_fat_min": 13.0,
@@ -1335,7 +1463,7 @@
           "sku": "5351523"
         }
       ],
-      "ingredients_raw": "Chicken, Chicken Meal, Whole Grain Barley, Whole Grain Oatmeal, Whole Grain Brown Rice, Chicken Fat (preserved with Mixed Tocopherols), Dried Plain Beet Pulp, Natural Flavors, Lamb Meal, Salmon Meal, Whole Grain Sorghum, Potato Protein, Whole Flaxseed, Pea Protein, Fish Oil (preserved with Mixed Tocopherols), Salt, Potassium Chloride, Choline Chloride, Citric Acid (preservative), Mixed Tocopherols (preservative), Whole Chia Seed, Dried Coconut, Dried Egg Product, Dried Tomato Pomace, Dried Kale, Dried Pumpkin, Dried Spinach, Dried Blueberries, Dried Apples, Dried Carrots, DL-Methionine, Vitamin E Supplement, Ferrous Sulfate, Zinc Oxide, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Sodium Selenite, Manganese Sulfate, Copper Sulfate, D-Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract",
+      "ingredients_raw": "Chicken, Chicken Meal, Whole Grain Barley, Whole Grain Oatmeal, Whole Grain Brown Rice, Chicken Fat (preserved with Mixed Tocopherols), Dried Plain Beet Pulp, Natural Flavors, Lamb Meal, Salmon Meal, Whole Grain Sorghum, Potato Protein, Whole Flaxseed, Pea Protein, Fish Oil (preserved with Mixed Tocopherols), Salt, Potassium Chloride, Choline Chloride, Citric Acid (preservative), Mixed Tocopherols (preservative), Whole Chia Seed, Dried Coconut, Dried Egg Product, Dried Tomato Pomace, Dried Kale, Dried Pumpkin, Dried Spinach, Dried Blueberries, Dried Apples, Dried Carrots, DL-Methionine, Vitamin E Supplement, Ferrous Sulfate, Zinc Oxide, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Sodium Selenite, Manganese Sulfate, Copper Sulfate, D-Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract.",
       "guaranteed_analysis": {
         "crude_protein_min": 28.0,
         "crude_fat_min": 17.0,
@@ -1373,7 +1501,7 @@
           "sku": "5351282"
         }
       ],
-      "ingredients_raw": "Chicken, Chicken Meal, Whole Grain Sorghum, Whole Grain Oatmeal, Whole Grain Brown Rice, Chicken Fat (preserved with Mixed Tocopherols), Lamb Meal, Salmon Meal, Brewers Rice, Dried Plain Beet Pulp, Whole Grain Barley, Natural Flavors, Whole Flaxseed, Salt, Potassium Chloride, Choline Chloride, Citric Acid (preservative), Mixed Tocopherols (preservative), Whole Chia Seed, Dried Coconut, Dried Egg Product, Dried Tomato Pomace, Dried Kale, Dried Pumpkin, Dried Spinach, Dried Blueberries, Dried Apples, Dried Carrots, DL-Methionine, Ferrous Sulfate, Zinc Oxide, Vitamin E Supplement, Sodium Selenite, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Manganese Sulfate, Copper Sulfate, D-Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract",
+      "ingredients_raw": "Chicken, Chicken Meal, Whole Grain Sorghum, Whole Grain Oatmeal, Whole Grain Brown Rice, Chicken Fat (preserved with Mixed Tocopherols), Lamb Meal, Salmon Meal, Brewers Rice, Dried Plain Beet Pulp, Whole Grain Barley, Natural Flavors, Whole Flaxseed, Salt, Potassium Chloride, Choline Chloride, Citric Acid (preservative), Mixed Tocopherols (preservative), Whole Chia Seed, Dried Coconut, Dried Egg Product, Dried Tomato Pomace, Dried Kale, Dried Pumpkin, Dried Spinach, Dried Blueberries, Dried Apples, Dried Carrots, DL-Methionine, Ferrous Sulfate, Zinc Oxide, Vitamin E Supplement, Sodium Selenite, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Manganese Sulfate, Copper Sulfate, D-Calcium Pantothenate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract.",
       "guaranteed_analysis": {
         "crude_protein_min": 26.0,
         "crude_fat_min": 17.0,
@@ -1409,10 +1537,16 @@
           "sku": "5264118"
         }
       ],
-      "ingredients_raw": "Chicken, Chicken Meal, Brown Rice, Barley, Oatmeal, Peas, Brewers Rice, Natural Flavors, Dried Plain Beet Pulp, Chicken Fat (preserved with Mixed Tocopherols), Fish Oil (preserved with Mixed Tocopherols), Potassium Chloride, Choline Chloride, DL-Methionine, Salt, Chia Seed, Dried Coconut, Dried Tomato Pomace, Dried Egg Product, Dried Pumpkin, Dried Kale, Dried Spinach, Citric Acid (preservative), Mixed Tocopherols (preservative), Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Ferrous Sulfate, Zinc Oxide, Sodium Selenite, D-Calcium Pantothenate, Manganese Sulfate, Copper Sulfate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract",
+      "ingredients_raw": "Chicken, Chicken Meal, Brown Rice, Barley, Oatmeal, Peas, Brewers Rice, Natural Flavors, Dried Plain Beet Pulp, Chicken Fat (preserved with Mixed Tocopherols), Fish Oil (preserved with Mixed Tocopherols), Potassium Chloride, Choline Chloride, DL-Methionine, Salt, Chia Seed, Dried Coconut, Dried Tomato Pomace, Dried Egg Product, Dried Pumpkin, Dried Kale, Dried Spinach, Citric Acid (preservative), Mixed Tocopherols (preservative), Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Ferrous Sulfate, Zinc Oxide, Sodium Selenite, D-Calcium Pantothenate, Manganese Sulfate, Copper Sulfate, Biotin, Thiamine Mononitrate (Vitamin B1), Vitamin B12 Supplement, Vitamin A Supplement, Niacin Supplement, Riboflavin Supplement (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Potassium Iodide, Manganous Oxide, Folic Acid, Rosemary Extract.",
       "guaranteed_analysis": {
-        "calcium_min": 100.0,
-        "crude_protein_max": 28.0
+        "crude_protein_min": 28.0,
+        "crude_fat_min": 14.0,
+        "crude_fiber_max": 3.5,
+        "moisture_max": 10.0,
+        "calcium_min": 1.2,
+        "phosphorus_min": 1.0,
+        "omega_3_min": 0.2,
+        "omega_6_min": 2.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "3594 kcal/kg"
@@ -1437,7 +1571,7 @@
           "sku": "5126429"
         }
       ],
-      "ingredients_raw": "Whole Brown Rice, Oatmeal, Chicken Meal, Cane Molasses, Sunflower Oil (preserved with mixed Tocopherols), Dried Blueberries, Dried Cranberries, Dried Cherries, Natural Flavors, Preserved with mixed Tocopherols, Rosemary Extract",
+      "ingredients_raw": "Whole Brown Rice, Oatmeal, Chicken Meal, Cane Molasses, Sunflower Oil (preserved with mixed Tocopherols), Dried Blueberries, Dried Cranberries, Dried Cherries, Natural Flavors, Preserved with mixed Tocopherols, Rosemary Extract.",
       "guaranteed_analysis": {
         "crude_protein_min": 12.0,
         "crude_fat_min": 6.5,

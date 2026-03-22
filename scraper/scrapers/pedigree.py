@@ -31,6 +31,7 @@ from .common import (
     normalize_calorie_content,
     write_brand_json,
 )
+from .common import parse_ga_text as parse_ga
 
 logger = logging.getLogger(__name__)
 
@@ -57,27 +58,6 @@ _CALORIE_FALLBACKS: dict[str, str] = {
     "21899": "884 kcal/kg, 557 kcal/can",    # Choice Cuts Chicken
     "3783": "2740 kcal/kg, 53 kcal/treat",   # Jumbone Mini
 }
-
-# GA field patterns — ordered with longer/more-specific patterns FIRST
-_GA_PATTERNS: list[tuple[str, str]] = [
-    (r"omega[\s-]*6\s+fatty\s+acid", "omega_6"),
-    (r"omega[\s-]*6", "omega_6"),
-    (r"omega[\s-]*3\s+fatty\s+acid", "omega_3"),
-    (r"omega[\s-]*3", "omega_3"),
-    (r"crude\s+protein", "crude_protein"),
-    (r"crude\s+fat", "crude_fat"),
-    (r"crude\s+fib[re]+", "crude_fiber"),
-    (r"moisture", "moisture"),
-    (r"ash", "ash"),
-    (r"calcium", "calcium"),
-    (r"phosphorus", "phosphorus"),
-    (r"glucosamine", "glucosamine"),
-    (r"chondroitin", "chondroitin"),
-    (r"taurine", "taurine"),
-    (r"\bdha\b", "dha"),
-    (r"\bepa\b", "epa"),
-    (r"l-carnitine", "l_carnitine"),
-]
 
 
 def _fetch_product_urls(session: SyncSession) -> list[str]:
@@ -188,69 +168,6 @@ def _parse_ingredients(text: str) -> str | None:
 
     return None
 
-
-def _parse_ga(text: str) -> GuaranteedAnalysis | None:
-    """Parse GA from RSC payload text.
-
-    Handles multiple formats:
-    - One value per line: "Crude Protein (min) 26.0%"
-    - Comma-separated single line
-    - Semicolon-separated single line
-    Also tolerates missing '%' sign and filters out mg/kg values.
-    """
-    ga: dict[str, float] = {}
-    _MAX_BY_DEFAULT = {"ash", "crude_fiber", "moisture"}
-
-    segments: list[str] = []
-    for line in text.split("\n"):
-        line = line.strip()
-        if not line:
-            continue
-        pct_count = len(re.findall(r"\d+\.?\d*\s*%", line))
-        if pct_count > 1:
-            parts = re.split(r"[,;]\s*(?=[A-Z*])", line)
-            segments.extend(parts)
-        else:
-            segments.append(line)
-
-    for segment in segments:
-        segment = segment.strip()
-        if not segment:
-            continue
-
-        segment_lower = segment.lower()
-
-        for pattern, field_base in _GA_PATTERNS:
-            if not re.search(pattern, segment_lower):
-                continue
-
-            is_max = bool(re.search(r"\bmax\b", segment_lower))
-            is_min = bool(re.search(r"\bmin\b", segment_lower))
-
-            if not is_max and not is_min:
-                is_max = field_base in _MAX_BY_DEFAULT
-                is_min = not is_max
-
-            suffix = "_max" if is_max else "_min"
-
-            val_match = re.search(r"(\d+\.?\d*)\s*%", segment)
-            if not val_match and field_base in _MAX_BY_DEFAULT | {
-                "crude_protein",
-                "crude_fat",
-            }:
-                fallback = re.search(
-                    r"(?:min|max)\.?\)?\s+(\d+\.?\d*)(?!\s*mg)",
-                    segment,
-                    re.IGNORECASE,
-                )
-                if fallback:
-                    val_match = fallback
-            if val_match:
-                ga[f"{field_base}{suffix}"] = float(val_match.group(1))
-
-            break
-
-    return ga if ga else None  # type: ignore[return-value]
 
 
 def _parse_calories(text: str) -> str | None:
@@ -436,7 +353,7 @@ def _parse_product(url: str, html: str) -> Product | None:
         if ingredients:
             product["ingredients_raw"] = ingredients
 
-        ga = _parse_ga(rsc_text)
+        ga = parse_ga(rsc_text)
         if ga:
             product["guaranteed_analysis"] = ga
             product["guaranteed_analysis_basis"] = "as-fed"

@@ -19,57 +19,21 @@ import {
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { LiaSortSolid } from "react-icons/lia"
-import { cn, smallImageUrl } from "@/lib/utils"
+import { cn, smallImageUrl, stripBrandPrefix } from "@/lib/utils"
 import { useIsMobile } from "@/hooks/use-is-mobile"
 import type { ProductSummary } from "@/lib/types"
-import { PRODUCT_TYPE_LABELS } from "@/lib/labels"
+import { PRODUCT_TYPE_LABELS, FORMAT_KEYWORDS } from "@/lib/labels"
 import { parseCalorieContent } from "@/lib/nutrition"
+import {
+  prefetchProducts,
+  getCacheKey,
+  getCached,
+  getInflight,
+  deleteCache,
+  isCacheValid,
+} from "@/lib/product-cache"
 
-// ── Module-level cache ──────────────────────────────────────────────────────
-
-interface CacheEntry {
-  items: ProductSummary[]
-  timestamp: number
-}
-
-const productCache = new Map<string, CacheEntry>()
-const CACHE_TTL = 2 * 60 * 1000 // 2 minutes
-
-function getCacheKey(productType?: string): string {
-  return productType ?? "__all__"
-}
-
-/** In-flight fetch promises to avoid duplicate requests */
-const inflight = new Map<string, Promise<ProductSummary[]>>()
-
-/** Prefetch products into the module-level cache. Safe to call multiple times. */
-export function prefetchProducts(productType?: string): void {
-  const cacheKey = getCacheKey(productType)
-  const cached = productCache.get(cacheKey)
-  if (cached && Date.now() - cached.timestamp < CACHE_TTL) return
-  if (inflight.has(cacheKey)) return
-
-  const params = new URLSearchParams({ all: "true" })
-  if (productType) params.set("type", productType)
-
-  const promise = fetch(`/api/products?${params}`)
-    .then((r) => {
-      if (!r.ok) throw new Error(`Products fetch failed: ${r.status}`)
-      return r.json()
-    })
-    .then((data: { items: ProductSummary[] }) => {
-      const items = data.items ?? []
-      productCache.set(cacheKey, { items, timestamp: Date.now() })
-      inflight.delete(cacheKey)
-      return items
-    })
-    .catch(() => {
-      inflight.delete(cacheKey)
-      return [] as ProductSummary[]
-    })
-
-  inflight.set(cacheKey, promise)
-}
+export { prefetchProducts }
 
 // ── Types ───────────────────────────────────────────────────────────────────
 
@@ -108,9 +72,9 @@ export function ProductPicker({
   function fetchProducts(): void {
     setLoading(true)
     setLoadError(false)
-    productCache.delete(getCacheKey(productType))
+    deleteCache(getCacheKey(productType))
     prefetchProducts(productType)
-    const promise = inflight.get(getCacheKey(productType))
+    const promise = getInflight(getCacheKey(productType))
     if (promise) {
       promise
         .then((items) => {
@@ -173,17 +137,16 @@ export function ProductPicker({
   // Fetch all products (with cache) + brands on mount
   useEffect(() => {
     const cacheKey = getCacheKey(productType)
-    const cached = productCache.get(cacheKey)
 
-    if (cached && Date.now() - cached.timestamp < CACHE_TTL) {
-      setAllProducts(cached.items)
+    if (isCacheValid(cacheKey)) {
+      setAllProducts(getCached(cacheKey)!.items)
       setLoading(false)
     } else {
       // Reuse in-flight prefetch if one exists, otherwise start a new fetch
-      const existing = inflight.get(cacheKey)
+      const existing = getInflight(cacheKey)
       const promise = existing ?? (() => {
         prefetchProducts(productType)
-        return inflight.get(cacheKey)!
+        return getInflight(cacheKey)!
       })()
 
       promise
@@ -218,25 +181,26 @@ export function ProductPicker({
   }, [open, loadError, productType])
 
   // Client-side filtering
+  // When the user is actively searching, escape out of "recent" filter
+  // so results aren't limited to just their recent products
+  const effectiveFilter = (query.trim() && activeFilter === "recent") ? "all" : activeFilter
+
   const filteredProducts = useMemo(() => {
     let list = allProducts
 
     // Apply filter
-    if (activeFilter === "recent") {
+    if (effectiveFilter === "recent") {
+      const productMap = new Map(list.map((p) => [p.id, p]))
       list = recentProductIds
-        .map((id) => list.find((p) => p.id === id))
+        .map((id) => productMap.get(id))
         .filter((p): p is ProductSummary => !!p)
-    } else if (activeFilter !== "all") {
+    } else if (effectiveFilter !== "all") {
       // brandId filter
-      list = list.filter((p) => p.brandId === activeFilter)
+      list = list.filter((p) => p.brandId === effectiveFilter)
     }
 
     // Apply text search
     if (query.trim()) {
-      const FORMAT_KEYWORDS: Record<string, string> = {
-        can: "wet", cans: "wet", wet: "wet", canned: "wet",
-        dry: "dry", kibble: "dry", kibbles: "dry", bag: "dry", bags: "dry",
-      }
       const terms = query
         .toLowerCase()
         .split(/\s+/)
@@ -256,7 +220,7 @@ export function ProductPicker({
     }
 
     return list
-  }, [allProducts, activeFilter, recentProductIds, query])
+  }, [allProducts, effectiveFilter, recentProductIds, query])
 
   // Reset render limit when filter/query changes
   useEffect(() => {
@@ -297,14 +261,6 @@ export function ProductPicker({
     if (type === "treat") return "Treat"
     if (type === "supplement") return "Supplement"
     return PRODUCT_TYPE_LABELS[type] ?? type
-  }
-
-  function stripBrandPrefix(name: string, brandName: string): string {
-    if (name.toLowerCase().startsWith(brandName.toLowerCase())) {
-      const stripped = name.slice(brandName.length).replace(/^[\s\-–—]+/, "")
-      if (stripped.length > 0) return stripped
-    }
-    return name
   }
 
   const visibleProducts = filteredProducts.slice(0, renderLimit)
@@ -372,11 +328,11 @@ export function ProductPicker({
           <button
             type="button"
             onClick={() => { userClickedFilterRef.current = true; setActiveFilter("all") }}
-            aria-pressed={activeFilter === "all"}
-            {...(activeFilter === "all" ? { "data-active-filter": "" } : {})}
+            aria-pressed={effectiveFilter === "all"}
+            {...(effectiveFilter === "all" ? { "data-active-filter": "" } : {})}
             className={cn(
               "shrink-0 rounded-md border px-2.5 py-1 text-xs font-medium transition-colors",
-              activeFilter === "all"
+              effectiveFilter === "all"
                 ? "border-foreground bg-foreground text-background"
                 : "border-border hover:bg-item-hover",
             )}
@@ -387,11 +343,11 @@ export function ProductPicker({
             <button
               type="button"
               onClick={() => { userClickedFilterRef.current = true; setActiveFilter("recent") }}
-              aria-pressed={activeFilter === "recent"}
-              {...(activeFilter === "recent" ? { "data-active-filter": "" } : {})}
+              aria-pressed={effectiveFilter === "recent"}
+              {...(effectiveFilter === "recent" ? { "data-active-filter": "" } : {})}
               className={cn(
                 "shrink-0 rounded-md border px-2.5 py-1 text-xs font-medium transition-colors",
-                activeFilter === "recent"
+                effectiveFilter === "recent"
                   ? "border-foreground bg-foreground text-background"
                   : "border-border hover:bg-item-hover",
               )}
@@ -407,11 +363,11 @@ export function ProductPicker({
                 userClickedFilterRef.current = true
                 setActiveFilter(activeFilter === brand.id ? "all" : brand.id)
               }}
-              aria-pressed={activeFilter === brand.id}
-              {...(activeFilter === brand.id ? { "data-active-filter": "" } : {})}
+              aria-pressed={effectiveFilter === brand.id}
+              {...(effectiveFilter === brand.id ? { "data-active-filter": "" } : {})}
               className={cn(
                 "shrink-0 rounded-md border px-2.5 py-1 text-xs font-medium transition-colors",
-                activeFilter === brand.id
+                effectiveFilter === brand.id
                   ? "border-foreground bg-foreground text-background"
                   : "border-border hover:bg-item-hover",
               )}
@@ -472,6 +428,7 @@ export function ProductPicker({
                       <img
                         src={smallImageUrl(product.imageUrl)}
                         alt=""
+                        loading="lazy"
                         className="size-full object-cover"
                         onError={() => handleImageError(product.id)}
                       />

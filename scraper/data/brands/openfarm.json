@@ -3602,7 +3602,7 @@
         "dha_min": 0.11,
         "calcium_min": 1.2,
         "phosphorus_min": 1.0,
-        "omega_6_min": 50.0,
+        "omega_6_min": 1.25,
         "omega_3_min": 0.4,
         "taurine_min": 0.2
       },

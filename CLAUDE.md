@@ -41,6 +41,7 @@ Dog food + digestive health tracking app. Next.js monolith (TypeScript, React, B
 - Refer to `docs/ref-dog-food-canada.md` for brand list and scraper details
 - Refer to `docs/ref-mar2026-myvetstore-pricing.md` for vet store product ground truth
 - Refer to `scraper/data/ingredient_families.json` for ingredient normalization (AAFCO names, families/aliases)
+- Refer to `docs/ref-medications.md` for medication catalog process (adding, verifying, sourcing, learn more URLs)
 
 ## Testing
 

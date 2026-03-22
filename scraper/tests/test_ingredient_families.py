@@ -315,7 +315,7 @@ class TestSpotCheck:
         pytest.fail(f"Product containing '{product_name_contains}' not found in {brand_file}")
 
     def test_hills_zd(self, lookup: dict, ignore_patterns: list[re.Pattern[str]]) -> None:
-        unmatched = self._check_product_ingredients("hills.json", "z/d", lookup, ignore_patterns)
+        unmatched = self._check_product_ingredients("hills_vet.json", "z/d", lookup, ignore_patterns)
         assert unmatched == [], f"Unmatched in Hill's z/d: {unmatched}"
 
     def test_purina_ha(self, lookup: dict, ignore_patterns: list[re.Pattern[str]]) -> None:

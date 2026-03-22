@@ -35,6 +35,12 @@ from .common import (
     normalize_calorie_content,
     write_brand_json,
 )
+from .common import parse_ga_text as parse_ga
+from .petsmart import (
+    detect_flavor_variants as _detect_flavor_variants,
+    extract_rsc_text as _extract_rsc_text_shared,
+    extract_rsc_texts_by_flavor as _extract_rsc_texts_by_flavor,
+)
 
 logger = logging.getLogger(__name__)
 
@@ -42,27 +48,6 @@ WEBSITE_URL = "https://www.petsmart.ca"
 
 _LISTING_URL = f"{WEBSITE_URL}/dog/food/f/brand/wellness"
 _SITEMAP_URLS = [f"{WEBSITE_URL}/sitemap_{i}.xml" for i in range(5)]
-
-# GA field patterns — ordered with longer/more-specific patterns FIRST
-_GA_PATTERNS: list[tuple[str, str]] = [
-    (r"omega[\s-]*6\s+fatty\s+acid", "omega_6"),
-    (r"omega[\s-]*6", "omega_6"),
-    (r"omega[\s-]*3\s+fatty\s+acid", "omega_3"),
-    (r"omega[\s-]*3", "omega_3"),
-    (r"crude\s+protein", "crude_protein"),
-    (r"crude\s+fat", "crude_fat"),
-    (r"crude\s+fib[re]+", "crude_fiber"),
-    (r"moisture", "moisture"),
-    (r"ash", "ash"),
-    (r"calcium", "calcium"),
-    (r"phosphorus", "phosphorus"),
-    (r"glucosamine", "glucosamine"),
-    (r"chondroitin", "chondroitin"),
-    (r"taurine", "taurine"),
-    (r"\bdha\b", "dha"),
-    (r"\bepa\b", "epa"),
-    (r"l-carnitine", "l_carnitine"),
-]
 
 
 def _fetch_product_urls(session: SyncSession) -> list[str]:
@@ -142,45 +127,16 @@ def _parse_json_ld_products(soup: BeautifulSoup) -> list[dict]:
 def _extract_rsc_text(html: str) -> str | None:
     """Extract nutritional text from Next.js RSC flight payloads.
 
-    Prefers chunks that contain actual 'Ingredients:' sections over longer
-    chunks that merely mention the word (e.g. product recommendation widgets).
+    Uses the shared petsmart.py implementation which supplements the primary
+    chunk with GA/calorie data from other chunks when missing.
     """
-    best_text = ""
-    best_has_ingredients = False
-
-    for m in re.finditer(r'self\.__next_f\.push\(\[1,"(.*?)"\]\)', html):
-        payload = m.group(1)
-        if (
-            "ngredient" not in payload
-            and "uaranteed" not in payload
-            and "NUTRITIONAL" not in payload
-        ):
-            continue
-
-        try:
-            unescaped = payload.encode().decode("unicode_escape")
-        except (UnicodeDecodeError, ValueError):
-            continue
-
-        soup = BeautifulSoup(unescaped, "lxml")
-        text = soup.get_text(separator="\n", strip=True)
-
-        has_ingredients = bool(re.search(r"Ingredients\s*:", text))
-
-        # Prefer chunks with actual Ingredients: section; among equal, pick longest
-        if (has_ingredients and not best_has_ingredients) or (
-            has_ingredients == best_has_ingredients and len(text) > len(best_text)
-        ):
-            best_text = text
-            best_has_ingredients = has_ingredients
-
-    return best_text if best_text else None
+    return _extract_rsc_text_shared(html)
 
 
 def _parse_ingredients(text: str) -> str | None:
     """Extract ingredients from RSC payload text."""
     m = re.search(
-        r"Ingredients\s*:?\s*\n(.*?)(?:\n\s*(?:Guaranteed|Caloric|Feeding|Directions|AAFCO)|$)",
+        r"Ingredients\s*:\s*\n(.*?)(?:\n\s*(?:Guaranteed|Caloric|Feeding|Directions|AAFCO)|$)",
         text,
         re.IGNORECASE | re.DOTALL,
     )
@@ -198,62 +154,6 @@ def _parse_ingredients(text: str) -> str | None:
 
     return None
 
-
-def _parse_ga(text: str) -> GuaranteedAnalysis | None:
-    """Parse GA from RSC payload text."""
-    ga: dict[str, float] = {}
-    _MAX_BY_DEFAULT = {"ash", "crude_fiber", "moisture"}
-
-    segments: list[str] = []
-    for line in text.split("\n"):
-        line = line.strip()
-        if not line:
-            continue
-        pct_count = len(re.findall(r"\d+\.?\d*\s*%", line))
-        if pct_count > 1:
-            parts = re.split(r"[,;]\s*(?=[A-Z*])", line)
-            segments.extend(parts)
-        else:
-            segments.append(line)
-
-    for segment in segments:
-        segment = segment.strip()
-        if not segment:
-            continue
-
-        segment_lower = segment.lower()
-
-        for pattern, field_base in _GA_PATTERNS:
-            if not re.search(pattern, segment_lower):
-                continue
-
-            is_max = bool(re.search(r"\bmax\b", segment_lower))
-            is_min = bool(re.search(r"\bmin\b", segment_lower))
-
-            if not is_max and not is_min:
-                is_max = field_base in _MAX_BY_DEFAULT
-                is_min = not is_max
-
-            suffix = "_max" if is_max else "_min"
-
-            val_match = re.search(r"(\d+\.?\d*)\s*%", segment)
-            if not val_match and field_base in _MAX_BY_DEFAULT | {
-                "crude_protein",
-                "crude_fat",
-            }:
-                fallback = re.search(
-                    r"(?:min|max)\.?\)?\s+(\d+\.?\d*)(?!\s*mg)",
-                    segment,
-                    re.IGNORECASE,
-                )
-                if fallback:
-                    val_match = fallback
-            if val_match:
-                ga[f"{field_base}{suffix}"] = float(val_match.group(1))
-
-            break
-
-    return ga if ga else None  # type: ignore[return-value]
 
 
 def _parse_calories(text: str) -> str | None:
@@ -373,8 +273,13 @@ def _detect_breed_size(name: str) -> str | None:
     return None
 
 
-def _parse_product(url: str, html: str) -> Product | None:
-    """Parse a Wellness product page from PetSmart."""
+def _parse_products(url: str, html: str) -> list[Product]:
+    """Parse a Wellness product page from PetSmart.
+
+    Returns multiple products when the page has flavor variants (e.g. 95% line
+    with Chicken, Beef, Lamb, Turkey flavors on one page). Each flavor gets its
+    own Product with distinct name, ingredients, GA, and calories.
+    """
     soup = BeautifulSoup(html, "lxml")
 
     ld_products = _parse_json_ld_products(soup)
@@ -389,7 +294,7 @@ def _parse_product(url: str, html: str) -> Product | None:
         if h1:
             name = h1.get_text(strip=True)
     if not name:
-        return None
+        return []
 
     name = clean_text(name)
 
@@ -417,26 +322,32 @@ def _parse_product(url: str, html: str) -> Product | None:
         page_brand = brand_match.group(1).strip().lower()
         if "wellness" not in page_brand:
             logger.info(f"  Skipping non-Wellness product (brand={brand_match.group(1).strip()}): {name}")
-            return None
+            return []
 
     # Filter out cat products
     if re.search(r"\bcat\b", name, re.IGNORECASE) and "catch" not in name.lower():
         logger.info(f"  Skipping cat product: {name}")
-        return None
+        return []
     if "/cat/" in url.lower():
         logger.info(f"  Skipping cat product: {name}")
-        return None
+        return []
 
     # Skip variety packs
     name_lower = name.lower()
     url_lower = url.lower()
     if "variety pack" in name_lower or "variety-pack" in url_lower:
         logger.info(f"  Skipping variety pack: {name}")
-        return None
+        return []
     if "multi value pack" in name_lower or "multipack" in name_lower:
         logger.info(f"  Skipping multi-pack: {name}")
-        return None
+        return []
 
+    # Detect flavor variants — if multiple flavors, split into separate products
+    flavors = _detect_flavor_variants(html)
+    if len(flavors) > 1:
+        return _parse_multi_flavor(url, html, soup, name, ld_products, flavors)
+
+    # Single-flavor product (standard path)
     product: Product = {
         "name": name,
         "brand": "Wellness",
@@ -503,7 +414,7 @@ def _parse_product(url: str, html: str) -> Product | None:
         if ingredients:
             product["ingredients_raw"] = ingredients
 
-        ga = _parse_ga(rsc_text)
+        ga = parse_ga(rsc_text)
         if ga:
             product["guaranteed_analysis"] = ga
             product["guaranteed_analysis_basis"] = "as-fed"
@@ -512,7 +423,95 @@ def _parse_product(url: str, html: str) -> Product | None:
         if cal:
             product["calorie_content"] = cal
 
-    return product
+    return [product]
+
+
+def _parse_multi_flavor(
+    url: str,
+    html: str,
+    soup: BeautifulSoup,
+    base_name: str,
+    ld_products: list[dict],
+    flavors: list[str],
+) -> list[Product]:
+    """Split a multi-flavor PetSmart page into separate products.
+
+    Each flavor gets its own Product with:
+    - Name suffixed with flavor (e.g. "95% ... Grain Free Chicken")
+    - Its own ingredients, GA, and calorie data from flavor-specific RSC chunk
+    - Matched JSON-LD variant (SKU/UPC) via Item Number in RSC text
+    """
+    flavor_texts = _extract_rsc_texts_by_flavor(html, flavors)
+    if not flavor_texts:
+        logger.warning(f"  Multi-flavor page but no per-flavor RSC data: {base_name}")
+        return []
+
+    # Build SKU -> JSON-LD mapping for per-flavor variant assignment
+    sku_to_ld: dict[str, dict] = {}
+    for ld_item in ld_products:
+        sku = ld_item.get("sku")
+        if sku:
+            sku_to_ld[str(sku)] = ld_item
+
+    products: list[Product] = []
+    for flavor, rsc_text in flavor_texts.items():
+        product: Product = {
+            "name": f"{base_name} {flavor}",
+            "brand": "Wellness",
+            "url": url,
+            "channel": "retail",
+            "product_type": _detect_type(url, base_name),
+            "product_format": _detect_format(url, base_name),
+        }
+
+        sub_brand = _detect_sub_brand(base_name)
+        if sub_brand:
+            product["sub_brand"] = sub_brand
+
+        life_stage = _detect_life_stage(base_name)
+        if life_stage:
+            product["life_stage"] = life_stage
+
+        breed_size = _detect_breed_size(base_name)
+        if breed_size:
+            product["breed_size"] = breed_size
+
+        # Match this flavor to its JSON-LD entry via Item Number in RSC text
+        item_match = re.search(r"Item Number:\s*(\d+)", rsc_text)
+        if item_match:
+            sku = item_match.group(1)
+            product["source_id"] = sku
+            ld_item = sku_to_ld.get(sku)
+            if ld_item:
+                gtin = ld_item.get("gtin13")
+                variant: Variant = {"size_kg": 0.0, "size_description": ""}
+                if gtin:
+                    variant["upc"] = gtin
+                variant["sku"] = sku
+                product["variants"] = [variant]
+
+                img = ld_item.get("image")
+                if isinstance(img, str) and img.startswith("http"):
+                    product["images"] = [img]
+
+        # Extract nutritional data from this flavor's RSC text
+        ingredients = _parse_ingredients(rsc_text)
+        if ingredients:
+            product["ingredients_raw"] = ingredients
+
+        ga = parse_ga(rsc_text)
+        if ga:
+            product["guaranteed_analysis"] = ga
+            product["guaranteed_analysis_basis"] = "as-fed"
+
+        cal = _parse_calories(rsc_text)
+        if cal:
+            product["calorie_content"] = cal
+
+        products.append(product)
+        logger.info(f"  Multi-flavor: {product['name']}")
+
+    return products
 
 
 def _primary_protein(ingredients_raw: str) -> str | None:
@@ -537,12 +536,15 @@ def _deduplicate_products(products: list[Product]) -> list[Product]:
        Same name + different ingredients -> append primary protein to disambiguate.
     2. Size-variant dupes — different names but same (life_stage, breed_size,
        format, sub_brand, product_type, ingredients) -> keep shortest name.
+
+    Uses object identity (id()) not URLs, since multi-flavor pages produce
+    multiple products sharing the same URL.
     """
     # Pass 1: exact name duplicates
     name_counts = Counter(p["name"] for p in products)
     duped_names = {n for n, c in name_counts.items() if c > 1}
 
-    skip_urls: set[str] = set()
+    skip_ids: set[int] = set()
     if duped_names:
         groups: dict[str, list[Product]] = {}
         for p in products:
@@ -553,7 +555,7 @@ def _deduplicate_products(products: list[Product]) -> list[Product]:
             ingredients = [_normalize_ing(p.get("ingredients_raw", "")) for p in group]
             if len(set(ingredients)) == 1:
                 for p in group[1:]:
-                    skip_urls.add(p["url"])
+                    skip_ids.add(id(p))
                     logger.info(f"  Skipping name duplicate: {base_name} ({p['url']})")
             else:
                 for p in group:
@@ -561,7 +563,7 @@ def _deduplicate_products(products: list[Product]) -> list[Product]:
                     if protein:
                         p["name"] = f"{base_name} {protein}"
 
-    products = [p for p in products if p["url"] not in skip_urls]
+    products = [p for p in products if id(p) not in skip_ids]
 
     # Pass 2: size-variant duplicates (same product identity + ingredients)
     identity_groups: dict[tuple, list[Product]] = defaultdict(list)
@@ -579,7 +581,7 @@ def _deduplicate_products(products: list[Product]) -> list[Product]:
         )
         identity_groups[key].append(p)
 
-    skip_urls = set()
+    skip_ids = set()
     for key, group in identity_groups.items():
         if len(group) <= 1:
             continue
@@ -587,13 +589,13 @@ def _deduplicate_products(products: list[Product]) -> list[Product]:
         group.sort(key=lambda p: len(p["name"]))
         keep = group[0]
         for p in group[1:]:
-            skip_urls.add(p["url"])
+            skip_ids.add(id(p))
             logger.info(
                 f"  Skipping size variant: {p['name']} "
                 f"(keeping {keep['name']})"
             )
 
-    return [p for p in products if p["url"] not in skip_urls]
+    return [p for p in products if id(p) not in skip_ids]
 
 
 def scrape_wellness(output_dir: Path) -> int:
@@ -609,9 +611,8 @@ def scrape_wellness(output_dir: Path) -> int:
                 logger.warning(f"Failed to fetch {url}: {resp.status_code}")
                 continue
 
-            product = _parse_product(url, resp.text)
-            if product:
-                products.append(product)
+            parsed = _parse_products(url, resp.text)
+            products.extend(parsed)
 
     # Warn about products missing ingredients but keep them
     for p in products:

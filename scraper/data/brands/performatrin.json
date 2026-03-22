@@ -1863,7 +1863,8 @@
         "moisture_max": 10.0,
         "dha_min": 0.2,
         "taurine_min": 0.2,
-        "omega_6_min": 1.5
+        "omega_6_min": 1.5,
+        "omega_3_min": 1.1
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "388 kcal/cup",

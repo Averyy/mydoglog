@@ -99,17 +99,17 @@ export default function SignupPage(): React.ReactElement {
               {loading ? "Creating account..." : "Create account"}
             </Button>
           </form>
-        </div>
 
-        <p className="mt-6 text-center text-sm text-text-secondary">
-          Already have an account?{" "}
-          <Link
-            href="/login"
-            className="font-medium text-accent hover:text-accent-hover"
-          >
-            Log in
-          </Link>
-        </p>
+          <p className="mt-5 text-center text-sm text-text-secondary">
+            Already have an account?{" "}
+            <Link
+              href="/login"
+              className="font-medium text-primary hover:text-primary-hover"
+            >
+              Log in
+            </Link>
+          </p>
+        </div>
       </div>
     </main>
   )

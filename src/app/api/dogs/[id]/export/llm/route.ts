@@ -43,6 +43,29 @@ import {
 
 type RouteParams = { params: Promise<{ id: string }> }
 
+/** Format a Date as compact time string, e.g. "2:18am". */
+function formatTime(dt: Date): string {
+  // Use EST/EDT (America/Toronto) — users log in local time and expect local output.
+  // Intl resolves DST automatically.
+  const parts = new Intl.DateTimeFormat("en-US", {
+    hour: "numeric",
+    minute: "2-digit",
+    hour12: true,
+    timeZone: "America/Toronto",
+  }).formatToParts(dt)
+  const hourStr = parts.find((p) => p.type === "hour")?.value ?? "12"
+  const minuteStr = parts.find((p) => p.type === "minute")?.value ?? "00"
+  const dayPeriod = parts.find((p) => p.type === "dayPeriod")?.value?.toLowerCase() ?? "am"
+  return `${hourStr}:${minuteStr}${dayPeriod}`
+}
+
+/** Format a date string as compact "Mar 10" for inline display. */
+function formatCompactDate(date: string): string {
+  const d = new Date(date + "T00:00:00Z")
+  const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+  return `${months[d.getUTCMonth()]} ${d.getUTCDate()}`
+}
+
 /** Parse raw ingredient string and truncate at salt (below 1% line). */
 function getRawIngredients(raw: string | null): string[] | null {
   if (!raw) return null
@@ -552,7 +575,12 @@ export async function GET(
           const label = med.dosage ? `${med.name} ${med.dosage}` : med.name
           if (!seen.has(label)) {
             seen.add(label)
-            result.push(label)
+            const clipStart = med.startDate > start ? med.startDate : start
+            const clipEnd = med.endDate === null ? null : (med.endDate < end ? med.endDate : end)
+            const dateRange = clipEnd === null
+              ? `${formatCompactDate(clipStart)}–present`
+              : `${formatCompactDate(clipStart)}–${formatCompactDate(clipEnd)}`
+            result.push(`${label} (${dateRange})`)
           }
         }
       }
@@ -699,10 +727,10 @@ export async function GET(
     const sortedDates = [...allLogDates].sort((a, b) => b.localeCompare(a)) // newest first
 
     for (const date of sortedDates) {
-      const poopEntries = poopByDate.get(date) ?? []
-      const itchEntries = itchByDate.get(date) ?? []
-      const poopScores = poopEntries.map((r) => r.firmnessScore)
-      const itchScores = itchEntries.map((r) => r.score)
+      const poopRows = poopByDate.get(date) ?? []
+      const itchRows = itchByDate.get(date) ?? []
+      const poopScores = poopRows.map((r) => r.firmnessScore)
+      const itchScores = itchRows.map((r) => r.score)
       const avgPoop = poopScores.length > 0
         ? poopScores.reduce((a, b) => a + b, 0) / poopScores.length
         : null
@@ -710,34 +738,24 @@ export async function GET(
         ? itchScores.reduce((a, b) => a + b, 0) / itchScores.length
         : null
 
-      const bodyAreas: string[] = []
-      for (const entry of itchEntries) {
-        if (entry.bodyAreas) {
-          for (const area of entry.bodyAreas) {
-            if (!bodyAreas.includes(area)) bodyAreas.push(area)
-          }
-        }
-      }
-
-      const notes: string[] = []
-      for (const entry of poopEntries) {
-        if (entry.notes) notes.push(entry.notes)
-      }
-      for (const entry of itchEntries) {
-        if (entry.notes) notes.push(entry.notes)
-      }
-
       dailyLog.push({
         date,
-        poopScores,
+        poopEntries: poopRows.map((r) => ({
+          score: r.firmnessScore,
+          time: r.datetime ? formatTime(r.datetime) : null,
+          note: r.notes ?? null,
+        })),
         avgPoop,
-        itchScores,
+        itchEntries: itchRows.map((r) => ({
+          score: r.score,
+          time: r.datetime ? formatTime(r.datetime) : null,
+          bodyAreas: r.bodyAreas ?? [],
+          note: r.notes ?? null,
+        })),
         avgItch,
-        itchBodyAreas: bodyAreas,
         effectivePollen: effectivePollenMap.get(date) ?? null,
         foodNames: foodNamesByDate.get(date) ?? [],
         meds: medsByDate.get(date) ?? [],
-        notes,
         isTransition: transitionDates.has(date),
       })
     }

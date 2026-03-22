@@ -1,7 +1,7 @@
 {
   "brand": "Pedigree",
   "website_url": "https://www.petsmart.ca",
-  "scraped_at": "2026-03-09T15:07:07.053977+00:00",
+  "scraped_at": "2026-03-22T14:29:26.162410+00:00",
   "scraper_version": "0.1.0",
   "stats": {
     "product_count": 30,
@@ -95,7 +95,7 @@
           "sku": "5289291"
         }
       ],
-      "ingredients_raw": "Chicken, Sufficient Water For Processing, Meat By-Products, Animal Liver, Brewers Rice, Beef, Minerals (Potassium Chloride, Magnesium Proteinate, Zinc Sulfate, Copper Proteinate, Manganese Sulfate, Copper Sulfate, Potassium Iodide), Sodium Tripolyphosphate, Added Color, Carrageenan, Dried Yam, Natural Smoke Flavor, Guar Gum, Vitamins (Choline Chloride, Vitamin E Supplement, Biotin, Calcium Pantothenate, Thiamine Mononitrate, Vitamin A Supplement, Vitamin D3 Supplement), Xanthan Gum, Natural Filet Mignon Flavor, Sodium Nitrite (For Color Retention)",
+      "ingredients_raw": "Chicken, Sufficient Water For Processing, Meat By-Products, Animal Liver, Brewers Rice, Beef, Minerals (Potassium Chloride, Magnesium Proteinate, Zinc Sulfate, Copper Proteinate, Manganese Sulfate, Copper Sulfate, Potassium Iodide), Sodium Tripolyphosphate, Added Color, Carrageenan, Dried Yam, Natural Smoke Flavor, Guar Gum, Vitamins (Choline Chloride, Vitamin E Supplement, Biotin, Calcium Pantothenate, Thiamine Mononitrate, Vitamin A Supplement, Vitamin D3 Supplement), Xanthan Gum, Natural Filet Mignon Flavor, Sodium Nitrite (For Color Retention). Product Varieties",
       "guaranteed_analysis": {
         "crude_protein_min": 8.0,
         "crude_fat_min": 6.0,
@@ -447,7 +447,7 @@
           "sku": "5064850"
         }
       ],
-      "ingredients_raw": "Corn, Meat & Bone Meal, Corn Gluten Meal, Animal Fat (Preserved with BHA & Citric Acid), Soybean Meal, Natural Flavor, Chicken By-Product Meal, Dried Plain Beet Pulp, Salt, Caramel Colour, Potassium Chloride, Choline Chloride, DL-Methionine, Dried Peas, Blue 2, Yellow 5, Yellow 6, Zinc Sulfate, Vitamin E Supplement, Niacin Supplement [Vitamin B3], Dried Carrots, Biotin, L-Tryptophan, BHA (preservative), Citric Acid (preservative), Roasted Chicken Flavour, D-Calcium Pantothenate [Source of Vitamin B5], Riboflavin Supplement [Vitamin B2], Pyridoxine Hydrochloride [Vitamin B6], Copper Sulfate, Sodium Selenite, Vitamin A Supplement, Thiamine Mononitrate [Vitamin B1], Vitamin B12 Supplement, Potassium Iodide, Vitamin D3 Supplement, Folic Acid",
+      "ingredients_raw": "Corn, Meat & Bone Meal, Corn Gluten Meal, Animal Fat (Preserved with BHA & Citric Acid), Soybean Meal, Natural Flavor, Chicken By-Product Meal, Dried Plain Beet Pulp, Salt, Caramel Colour, Potassium Chloride, Choline Chloride, DL-Methionine, Dried Peas, Blue 2, Yellow 5, Yellow 6, Zinc Sulfate, Vitamin E Supplement, Niacin Supplement [Vitamin B3], Dried Carrots, Biotin, L-Tryptophan, BHA (preservative), Citric Acid (preservative), Roasted Chicken Flavour, D-Calcium Pantothenate [Source of Vitamin B5], Riboflavin Supplement [Vitamin B2], Pyridoxine Hydrochloride [Vitamin B6], Copper Sulfate, Sodium Selenite, Vitamin A Supplement, Thiamine Mononitrate [Vitamin B1], Vitamin B12 Supplement, Potassium Iodide, Vitamin D3 Supplement, Folic Acid.",
       "guaranteed_analysis": {
         "crude_protein_min": 21.0,
         "crude_fat_min": 10.0,
@@ -478,7 +478,7 @@
           "sku": "5351496"
         }
       ],
-      "ingredients_raw": "Ground Whole Grain Corn, Meat and Bone Meal, Soybean Meal, Corn Protein Meal, Animal Fat (Source of Omega 6 Fatty Acids [Preserved with BHA and Citric Acid]), Natural Flavour, Dried Plain Beet Pulp, Salt, Cooked Bone Marrow, Potassium Chloride, Calcium Carbonate, Choline Chloride, Dried Peas, DL-Methionine, Zinc Sulfate, Natural Grilled Steak Flavour, Vitamin E Supplement, L-Tryptophan, Red #40, Dried Carrots, Niacin Supplement, Copper Sulfate, Yellow #6, Sodium Selenite, Blue #2, Potassium Iodide, D-Calcium Pantothenate, Yellow #5, Vitamin A Supplement, Riboflavin Supplement (Vitamin B2), Vitamin B12 Supplement, Thiamine Mononitrate (Vitamin B1), Vitamin D3 Supplement, Pyridoxine Hydrochloride (Vitamin B6), Folic Acid",
+      "ingredients_raw": "Ground Whole Grain Corn, Meat and Bone Meal, Soybean Meal, Corn Protein Meal, Animal Fat (Source of Omega 6 Fatty Acids [Preserved with BHA and Citric Acid]), Natural Flavour, Dried Plain Beet Pulp, Salt, Cooked Bone Marrow, Potassium Chloride, Calcium Carbonate, Choline Chloride, Dried Peas, DL-Methionine, Zinc Sulfate, Natural Grilled Steak Flavour, Vitamin E Supplement, L-Tryptophan, Red #40, Dried Carrots, Niacin Supplement, Copper Sulfate, Yellow #6, Sodium Selenite, Blue #2, Potassium Iodide, D-Calcium Pantothenate, Yellow #5, Vitamin A Supplement, Riboflavin Supplement (Vitamin B2), Vitamin B12Supplement, Thiamine Mononitrate (Vitamin B1), Vitamin D3 Supplement, Pyridoxine Hydrochloride (Vitamin B6), Folic Acid",
       "guaranteed_analysis": {
         "crude_protein_min": 21.0,
         "crude_fat_min": 10.0,
@@ -511,7 +511,7 @@
           "sku": "5364644"
         }
       ],
-      "ingredients_raw": "Sufficient Water For Processing, Chicken, Animal Liver, Meat By-Products, Poultry By-Products, Wheat Flour, Wheat Gluten, Dried Plain Beet Pulp, Corn Gluten Meal, Corn Starch, Animal Plasma, Soybean Oil, Calcium Carbonate, Sodium Tripolyphosphate, Salt, Natural Grilled Chicken Flavour, Choline Chloride, Potassium Chloride, Xanthan Gum, Added Colour, Ascorbic Acid (Preservative), Minerals (Magnesium Oxide, Zinc Oxide, Copper Sulfate, Calcium Iodate), Vitamins (Vitamin E Supplement, Thiamine Mononitrate [Vitamin B1], Pyridoxine [Vitamin B6], Vitamin D3 Supplement, Folic Acid)",
+      "ingredients_raw": "Sufficient Water For Processing, Chicken, Animal Liver, Meat By-Products, Poultry By-Products, Wheat Flour, Wheat Gluten, Dried Plain Beet Pulp, Corn Gluten Meal, Corn Starch, Animal Plasma, Soybean Oil, Calcium Carbonate, Sodium Tripolyphosphate, Salt, Natural Grilled Chicken Flavour, Choline Chloride, Potassium Chloride, Xanthan Gum, Added Colour, Ascorbic Acid (Preservative), Minerals (Magnesium Oxide, Zinc Oxide, Copper Sulfate, Calcium Iodate), Vitamins (Vitamin E Supplement, Thiamine Mononitrate [Vitamin B1], Pyridoxine [Vitamin B6], Vitamin D3 Supplement, Folic Acid).",
       "guaranteed_analysis": {
         "crude_protein_min": 8.0,
         "crude_fat_min": 3.0,
@@ -547,7 +547,7 @@
           "sku": "5363905"
         }
       ],
-      "ingredients_raw": "Sufficient Water For Processing, Meat By-Products, Animal Liver, Chicken, Wheat Flour, Beef, Enriched Egg Noodles, Semolina, Eggs, Niacin, Ferrous Sulfate, Thiamine Mononitrate, Riboflavin, Folic Acid, Wheat Gluten, Spray Dried Animal Blood Cells, Dried Carrots, Dried Peas, Soybean Oil, Dried Plain Beet Pulp, Corn Gluten Meal, Corn Starch, Calcium Carbonate, Sodium Tripolyphosphate, Salt, Added Colour, Choline Chloride, Potassium Chloride, Xanthan Gum, Ascorbic Acid (Preservative), Minerals (Magnesium Oxide, Zinc Oxide, Copper Sulfate, Calcium Iodate), Vitamins (Vitamin E Supplement, Thiamine Mononitrate [Vitamin B1], Pyridoxine [Vitamin B6], Vitamin D3 Supplement, Folic Acid)",
+      "ingredients_raw": "Sufficient Water For Processing, Meat By-Products, Animal Liver, Chicken, Wheat Flour, Beef, Enriched Egg Noodles, Semolina, Eggs, Niacin, Ferrous Sulfate, Thiamine Mononitrate, Riboflavin, Folic Acid, Wheat Gluten, Spray Dried Animal Blood Cells, Dried Carrots, Dried Peas, Soybean Oil, Dried Plain Beet Pulp, Corn Gluten Meal, Corn Starch, Calcium Carbonate, Sodium Tripolyphosphate, Salt, Added Colour, Choline Chloride, Potassium Chloride, Xanthan Gum, Ascorbic Acid (Preservative), Minerals (Magnesium Oxide, Zinc Oxide, Copper Sulfate, Calcium Iodate), Vitamins (Vitamin E Supplement, Thiamine Mononitrate [Vitamin B1], Pyridoxine [Vitamin B6], Vitamin D3 Supplement, Folic Acid).",
       "guaranteed_analysis": {
         "crude_protein_min": 8.0,
         "crude_fat_min": 3.0,
@@ -569,7 +569,7 @@
       "images": [
         "/products/pedigree/pedigree-treat-marrobone-adult-dog-treats-bacon-cheese-flavour-with-real-bone-marrow-vitamin-en.jpg"
       ],
-      "ingredients_raw": "Wheat Flour, Meat & Bone Meal, Sugar, Natural Flavour, Animal Fat (Preserved With Bha/Bht), Calcium Carbonate, Cooked Beef Bone Marrow, Malted Barley, Salt, Natural Smoke Flavour, Natural Bacon Flavour, Vitamins (Vitamin Supplements [A, B12, D3, E], D-Calcium Pantothenate, Niacin, Riboflavin [Vitamin B2], Pyridoxine Hydrochloride [Vitamin B6], Thiamine Mononitrate [Vitamin B1], Folic Acid), Cheese Powder, Turmeric, Sodium Metabisulfite (A Preservative), Caramel, Iron Oxide",
+      "ingredients_raw": "Wheat Flour, Meat & Bone Meal, Sugar, Natural Flavour, Animal Fat (Preserved With Bha/Bht), Calcium Carbonate, Cooked Beef Bone Marrow, Malted Barley, Salt, Natural Smoke Flavour, Natural Bacon Flavour, Vitamins (Vitamin Supplements [A, B12, D3, E], D-Calcium Pantothenate, Niacin, Riboflavin [Vitamin B2], Pyridoxine Hydrochloride [Vitamin B6], Thiamine Mononitrate [Vitamin B1], Folic Acid), Cheese Powder, Turmeric, Sodium Metabisulfite (A Preservative), Caramel, Iron Oxide.",
       "guaranteed_analysis": {
         "crude_protein_min": 12.0,
         "crude_fat_min": 9.0,
@@ -599,7 +599,7 @@
           "sku": "5366526"
         }
       ],
-      "ingredients_raw": "Wheat Flour, Meat & Bone Meal, Sugar, Natural Flavour, Animal Fat (Preserved With Bha/Bht), Calcium Carbonate, Cooked Bone Marrow, Malted Barley, Salt, Natural Filet Mignon Flavour, Vitamins (Vitamin Supplements [A, B12, D3, E], Folic Acid, D-Calcium Pantothenate, Niacin, Riboflavin [Vitamin B2], Pyridoxine Hydrochloride [Vitamin B6], Thiamine Mononitrate [Vitamin B1]), Sodium Metabisulfite (A Preservative)",
+      "ingredients_raw": "Wheat Flour, Meat & Bone Meal, Sugar, Natural Flavour, Animal Fat (Preserved With Bha/Bht), Calcium Carbonate, Cooked Bone Marrow, Malted Barley, Salt, Natural Filet Mignon Flavour, Vitamins (Vitamin Supplements [A, B12, D3, E], Folic Acid, D-Calcium Pantothenate, Niacin, Riboflavin [Vitamin B2], Pyridoxine Hydrochloride [Vitamin B6], Thiamine Mononitrate [Vitamin B1]), Sodium Metabisulfite (A Preservative).",
       "guaranteed_analysis": {
         "crude_protein_min": 12.0,
         "crude_fat_min": 9.0,
@@ -629,7 +629,7 @@
           "sku": "5351195"
         }
       ],
-      "ingredients_raw": "Rice Flour, Wheat Starch, Glycerin, Gelatin, Gum Arabic, Natural Poultry Flavour, Calcium Carbonate, Chicken, Cellulose Powder, Sodium Tripolyphosphate, Potassium Chloride, Red #40, Blue #2, Yellow #5, Vitamins (Choline Chloride, d-Calcium Pantothenate, Vitamin B12 Supplement, Folic Acid, Vitamin A Supplement, Niacin, Riboflavin (Vitamin B2), Pyridoxine Hydrochloride [Vitamin B6], Vitamin D3 Supplement, Thiamine Mononitrate (Vitamin B1), Alpha Tocopherol Acetate [Vitamin E]), Potassium Sorbate (A Preservative), Natural Bacon Flavour, Zinc Sulfate, L-Ascorbyl-2-Polyphosphate [Source of Vitamin C], Green Tea Extract, Turmeric, Iron Oxide",
+      "ingredients_raw": "Rice Flour, Wheat Starch, Glycerin, Gelatin, Gum Arabic, Natural Poultry Flavour, Calcium Carbonate, Chicken, Cellulose Powder, Sodium Tripolyphosphate, Potassium Chloride, Red #40, Blue #2, Yellow #5, Vitamins (Choline Chloride, d-Calcium Pantothenate, Vitamin B12 Supplement, Folic Acid, Vitamin A Supplement, Niacin, Riboflavin, [Vitamin B2], Pyridoxine Hydrochloride [Vitamin B6], Vitamin D3 Supplement, Thiamine Mononitrate[Vitamin B1], Alpha Tocopherol Acetate [Vitamin E]), Potassium Sorbate (A Preservative), Natural Bacon Flavour, Zinc Sulfate, L-Ascorbyl-2-Polyphosphate [Source of Vitamin C], Green Tea Extract, Turmeric, Iron Oxide",
       "guaranteed_analysis": {
         "crude_protein_min": 8.0,
         "crude_fat_min": 1.0,
@@ -659,7 +659,7 @@
           "sku": "5351194"
         }
       ],
-      "ingredients_raw": "Rice Flour, Wheat Starch, Glycerin, Gelatin, Gum Arabic, Natural Poultry Flavour, Calcium Carbonate, Chicken, Cellulose Powder, Sodium Tripolyphosphate, Potassium Chloride, Red #40, Blue #2, Yellow #5, Vitamins (Choline Chloride, d-Calcium Pantothenate, Vitamin B12 Supplement, Folic Acid, Vitamin A Supplement, Niacin, Riboflavin (Vitamin B2), Pyridoxine Hydrochloride [Vitamin B6], Vitamin D3 Supplement, Thiamine Mononitrate [Vitamin B1], Alpha Tocopherol Acetate [Vitamin E]), Potassium Sorbate (A Preservative), Natural Bacon Flavour, Zinc Sulfate, L-Ascorbyl-2-Polyphosphate [Source of Vitamin C], Green Tea Extract, Turmeric, Iron Oxide",
+      "ingredients_raw": "Rice Flour, Wheat Starch, Glycerin, Gelatin, Gum Arabic, Natural Poultry Flavour, Calcium Carbonate, Chicken, Cellulose Powder, Sodium Tripolyphosphate, Potassium Chloride, Red #40, Blue #2, Yellow #5, Vitamins (Choline Chloride, d-Calcium Pantothenate, Vitamin B12 Supplement, Folic Acid, Vitamin A Supplement, Niacin, Riboflavin, [Vitamin B2], Pyridoxine Hydrochloride [Vitamin B6], Vitamin D3 Supplement, Thiamine Mononitrate [Vitamin B1], Alpha Tocopherol Acetate [Vitamin E]), Potassium Sorbate (A Preservative), Natural Bacon Flavour, Zinc Sulfate, L-Ascorbyl-2-Polyphosphate [Source of Vitamin C], Green Tea Extract, Turmeric, Iron Oxide",
       "guaranteed_analysis": {
         "crude_protein_min": 8.0,
         "crude_fat_min": 1.0,
@@ -699,6 +699,7 @@
       "guaranteed_analysis": {
         "crude_protein_min": 8.0,
         "crude_fat_min": 1.0,
+        "crude_fiber_max": 4.5,
         "moisture_max": 18.0
       },
       "guaranteed_analysis_basis": "as-fed",
@@ -731,7 +732,7 @@
           "sku": "5280725"
         }
       ],
-      "ingredients_raw": "Wheat Flour, Wheat Starch, Corn Flour, Glycerin, Water, Natural Flavour, Gum Arabic, Soy Flour, Sodium Tripolyphosphate, Calcium Carbonate, Cellulose Powder, Gelatin, Colour, Potassium Chloride, Potassium Sorbate (A Preservative), Natural Beef and Smoke Flavours, Caramel, Potassium Sorbate, Zinc Sulphate",
+      "ingredients_raw": "Wheat Flour, Wheat Starch, Corn Flour, Glycerin, Water, Natural Flavour, Gum Arabic, Soy Flour, Sodium Tripolyphosphate, Calcium Carbonate, Cellulose Powder, Gelatin, Colour, Potassium Chloride, Potassium Sorbate (A Preservative), Natural Beef and Smoke Flavours, Carmel, Potassium Sorbate, Zinc Sulphate",
       "guaranteed_analysis": {
         "crude_protein_min": 5.5,
         "crude_fat_min": 0.5,
@@ -763,7 +764,7 @@
           "sku": "5280710"
         }
       ],
-      "ingredients_raw": "Wheat Flour, Wheat Starch, Corn Flour, Glycerin, Water, Natural Flavour, Gum Arabic, Soy Flour, Sodium Tripolyphosphate, Calcium Carbonate, Cellulose Powder, Gelatin, Colour, Potassium Chloride, Potassium Sorbate (A Preservative), Natural Beef and Smoke Flavours, Caramel, Potassium Sorbate, Zinc Sulphate",
+      "ingredients_raw": "Wheat Flour, Wheat Starch, Corn Flour, Glycerin, Water, Natural Flavour, Gum Arabic, Soy Flour, Sodium Tripolyphosphate, Calcium Carbonate, Cellulose Powder, Gelatin, Colour, Potassium Chloride, Potassium Sorbate (A Preservative), Natural Beef and Smoke Flavours, Carmel, Potassium Sorbate, Zinc Sulphate",
       "guaranteed_analysis": {
         "crude_protein_min": 5.5,
         "crude_fat_min": 0.5,

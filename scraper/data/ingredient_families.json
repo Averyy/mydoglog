@@ -643,6 +643,9 @@
         "Chicken Cartilage": {
           "form": "raw"
         },
+        "Chicken Cartilage (source of Glucosamine Hydrochloride and Chondroitin Sulfate)": {
+          "form": "raw"
+        },
         "Chicken Collagen": {
           "form": "raw"
         },
@@ -684,6 +687,9 @@
         },
         "Chicken Liver & Heart": {
           "form": "organ"
+        },
+        "Chicken Flavor": {
+          "form": "derivative"
         },
         "Chicken Liver Flavor": {
           "form": "derivative"
@@ -1072,6 +1078,9 @@
           "form": "dried"
         },
         "Dried Skim Milk": {
+          "form": "dried"
+        },
+        "Dried Skimmed Milk": {
           "form": "dried"
         },
         "Dried Swiss Cheese Powder": {
@@ -2084,6 +2093,9 @@
         "Pork Liver Flavor": {
           "form": "derivative"
         },
+        "Pork Liver flavour": {
+          "form": "derivative"
+        },
         "Pork Lung": {
           "form": "organ"
         },
@@ -2345,6 +2357,9 @@
           "form": "whole"
         },
         "Rice Pasta": {
+          "form": "flour"
+        },
+        "Rice Pasta (Rice, Water, Ground Tapioca)": {
           "form": "flour"
         }
       }
@@ -4436,6 +4451,7 @@
     "Threonine",
     "Thyme",
     "Titanium Dioxide (Color)",
+    "Titanium Dioxide color",
     "Tocopherols",
     "tocopherols (preservative)",
     "Tomato Pomace",

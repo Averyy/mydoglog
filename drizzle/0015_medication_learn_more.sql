@@ -1,0 +1,1 @@
+ALTER TABLE "medication_products" ADD COLUMN "learn_more_url" text;

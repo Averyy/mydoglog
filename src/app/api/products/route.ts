@@ -1,18 +1,7 @@
 import { NextRequest, NextResponse } from "next/server"
 import { db, products, brands } from "@/lib/db"
 import { and, eq, or, sql, count } from "drizzle-orm"
-
-const FORMAT_KEYWORDS: Record<string, string> = {
-  can: "wet",
-  cans: "wet",
-  wet: "wet",
-  canned: "wet",
-  dry: "dry",
-  kibble: "dry",
-  kibbles: "dry",
-  bag: "dry",
-  bags: "dry",
-}
+import { FORMAT_KEYWORDS } from "@/lib/labels"
 
 export async function GET(request: NextRequest): Promise<NextResponse> {
   try {
@@ -44,10 +33,11 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
         } else {
           // Strip apostrophes/punctuation for fuzzy matching (hills → hill's)
           const stripped = word.replace(/['']/g, "")
+          const escaped = stripped.toLowerCase().replace(/[%_\\]/g, "\\$&")
           conditions.push(
             or(
-              sql`replace(lower(${products.name}), '''', '') ILIKE ${"%" + stripped.toLowerCase() + "%"}`,
-              sql`replace(lower(${brands.name}), '''', '') ILIKE ${"%" + stripped.toLowerCase() + "%"}`,
+              sql`replace(lower(${products.name}), '''', '') ILIKE ${"%" + escaped + "%"}`,
+              sql`replace(lower(${brands.name}), '''', '') ILIKE ${"%" + escaped + "%"}`,
             )!,
           )
         }
@@ -87,7 +77,9 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
         .where(where)
         .orderBy(products.name)
 
-      return NextResponse.json({ items })
+      return NextResponse.json({ items }, {
+        headers: { "Cache-Control": "public, s-maxage=3600, stale-while-revalidate=86400" },
+      })
     }
 
     const [items, [totalResult]] = await Promise.all([
