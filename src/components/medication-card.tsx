@@ -40,6 +40,9 @@ export function MedicationCard({
             <p className="mt-0.5 text-[11px] text-foreground-muted-60">
               {format(parseISO(medication.startDate), "MMM d, yyyy")} - Present
             </p>
+            {medication.notes && (
+              <p className="mt-0.5 text-[11px] text-foreground-muted-60">{medication.notes}</p>
+            )}
           </div>
           <div className="mt-0.5 flex shrink-0 items-center gap-3">
             <Badge className="bg-primary text-primary-foreground text-[10px]">
@@ -106,6 +109,9 @@ export function MedicationCard({
               <> &mdash; {format(parseISO(medication.endDate), "MMM d, yyyy")}</>
             )}
           </p>
+          {medication.notes && (
+            <p className="mt-0.5 text-[11px] text-muted-foreground">{medication.notes}</p>
+          )}
         </div>
         <Button
           variant="ghost"

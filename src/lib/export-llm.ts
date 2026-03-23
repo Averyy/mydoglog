@@ -496,6 +496,7 @@ function formatCurrentMedications(data: ExportData): string {
     if (med.dosageForm) lines.push(`- Form: ${med.dosageForm}`)
     if (med.description) lines.push(`- Description: ${med.description}`)
     if (med.commonSideEffects) lines.push(`- Known side effects: ${med.commonSideEffects}`)
+    if (med.notes) lines.push(`- Notes: ${med.notes}`)
     const effects: string[] = []
     if (med.suppressesItch) effects.push("suppresses itch")
     if (med.hasGiSideEffects) effects.push("has GI side effects")
@@ -608,8 +609,8 @@ function formatMedicationHistory(data: ExportData): string {
     return lines.join("\n")
   }
 
-  lines.push("| Medication | Dosage | Interval | Dates | Days | Category |")
-  lines.push("|------------|--------|----------|-------|------|----------|")
+  lines.push("| Medication | Dosage | Interval | Dates | Days | Category | Notes |")
+  lines.push("|------------|--------|----------|-------|------|----------|-------|")
 
   // Sort oldest first
   const sorted = [...data.medications].sort((a, b) => a.startDate.localeCompare(b.startDate))
@@ -617,7 +618,7 @@ function formatMedicationHistory(data: ExportData): string {
   for (const med of sorted) {
     const endDate = med.endDate ?? data.exportDate
     const days = daysBetweenInclusive(med.startDate, endDate)
-    lines.push(`| ${med.name} | ${med.dosage ?? "—"} | ${formatInterval(med.interval) || "—"} | ${formatDateRange(med.startDate, med.endDate)} | ${days} | ${med.category ?? "—"} |`)
+    lines.push(`| ${med.name} | ${med.dosage ?? "—"} | ${formatInterval(med.interval) || "—"} | ${formatDateRange(med.startDate, med.endDate)} | ${days} | ${med.category ?? "—"} | ${med.notes ?? "—"} |`)
   }
 
   lines.push("")
