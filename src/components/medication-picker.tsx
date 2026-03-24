@@ -88,14 +88,22 @@ export function MedicationPicker({
       list = list.filter((m) => m.category === activeFilter)
     }
 
-    // Apply text search
+    // Apply text search (strip apostrophes so "hills" matches "hill's",
+    // strip slashes from haystack when query has none so "zd" matches "z/d")
     if (query.trim()) {
-      const q = query.toLowerCase()
+      const strip = (s: string): string => s.toLowerCase().replace(/'/g, "")
+      const q = strip(query)
+      const qNoSlash = q.replace(/\//g, "")
+      const hasSlash = q.includes("/")
+      const matches = (hay: string): boolean => {
+        const h = strip(hay)
+        return h.includes(q) || (!hasSlash && h.replace(/\//g, "").includes(qNoSlash))
+      }
       list = list.filter(
         (m) =>
-          m.name.toLowerCase().includes(q) ||
-          m.genericName.toLowerCase().includes(q) ||
-          (m.drugClass?.toLowerCase().includes(q) ?? false),
+          matches(m.name) ||
+          matches(m.genericName) ||
+          (m.drugClass ? matches(m.drugClass) : false),
       )
     }
 

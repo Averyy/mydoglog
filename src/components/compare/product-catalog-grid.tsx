@@ -163,9 +163,14 @@ export function ProductCatalogGrid({
         list = list.filter((p) => formatFilters.some((f) => p.format === f))
       }
       if (textTerms.length > 0) {
+        const strip = (s: string): string => s.toLowerCase().replace(/'/g, "")
+        const normalizedTerms = textTerms.map(strip)
         list = list.filter((p) => {
-          const haystack = `${p.name} ${p.brandName}`.toLowerCase()
-          return textTerms.every((t) => haystack.includes(t))
+          const haystack = strip(`${p.name} ${p.brandName}`)
+          const haystackNoSlash = haystack.replace(/\//g, "")
+          return normalizedTerms.every((t) =>
+            haystack.includes(t) || (!t.includes("/") && haystackNoSlash.includes(t)),
+          )
         })
       }
     }
