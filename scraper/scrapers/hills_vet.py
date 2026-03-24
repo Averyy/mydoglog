@@ -49,42 +49,77 @@ US_BASE_URL = "https://www.hillspet.com"
 #   "calorie_content", "ingredients_raw", "guaranteed_analysis", "name"
 
 _FALLBACK_DATA: dict[str, dict] = {
-    # --- WET FOOD (vet) — Source: hillspet.ca (par conserve values)
+    # --- WET FOOD (vet) — As-fed GA from can label images (hillspet.ca carousel)
+    # Products with label images have full GA + calorie_content.
+    # Products without label images have calorie_content only.
     "prescription-diet-cd-multicare-urinary-care-canned": {
-        "calorie_content": "448 kcal/can",
+        "calorie_content": "1210 kcal/kg, 448 kcal/can",
+        "guaranteed_analysis": {"crude_protein_min": 5.5, "crude_fat_min": 3.0, "crude_fiber_max": 2.0, "moisture_max": 78.0},
+    },
+    "prescription-diet-dd-duck-skin-care-canned": {
+        "calorie_content": "1046 kcal/kg, 387 kcal/can",
+        "guaranteed_analysis": {"crude_protein_min": 3.0, "crude_fat_min": 2.5, "crude_fiber_max": 1.5, "moisture_max": 78.0},
+    },
+    "prescription-diet-dd-venison-skin-care-canned": {
+        "calorie_content": "1057 kcal/kg, 391 kcal/can",
+        "guaranteed_analysis": {"crude_protein_min": 3.0, "crude_fat_min": 2.0, "crude_fiber_max": 2.0, "moisture_max": 78.0},
     },
     "prescription-diet-dd-salmon-skin-care-canned": {
         "calorie_content": "405 kcal/can",
     },
     "prescription-diet-gastrointestinal-biome-chicken-vegetable-stew-digestive-care-canned": {
-        "calorie_content": "287 kcal/can",
+        "calorie_content": "808 kcal/kg, 296 kcal/can",
+        "guaranteed_analysis": {"crude_protein_min": 3.0, "crude_fat_min": 1.5, "crude_fiber_max": 3.0, "moisture_max": 82.0},
     },
     "prescription-diet-id-chicken-vegetable-stew-digestive-care-canned": {
-        "calorie_content": "276 kcal/can",
+        "calorie_content": "780 kcal/kg, 276 kcal/can",
+        "guaranteed_analysis": {"crude_protein_min": 3.0, "crude_fat_min": 1.0, "crude_fiber_max": 1.0, "moisture_max": 84.0},
     },
     "prescription-diet-id-digestive-care-canned": {
-        "calorie_content": "375 kcal/can",
+        "calorie_content": "1013 kcal/kg, 375 kcal/can",
+        "guaranteed_analysis": {"crude_protein_min": 5.0, "crude_fat_min": 2.0, "crude_fiber_max": 1.5, "moisture_max": 78.0},
+    },
+    "prescription-diet-id-puppy-turkey-digestive-care-canned": {
+        "calorie_content": "1076 kcal/kg, 398 kcal/can",
+        "guaranteed_analysis": {"crude_protein_min": 6.0, "crude_fat_min": 2.8, "crude_fiber_max": 1.5, "moisture_max": 78.0},
     },
     "prescription-diet-id-low-fat-digestive-care-canned": {
-        "calorie_content": "328 kcal/can",
+        "calorie_content": "887 kcal/kg, 328 kcal/can",
+        "guaranteed_analysis": {"crude_protein_min": 4.0, "crude_fat_min": 0.75, "crude_fiber_max": 3.5, "moisture_max": 78.0},
     },
     "prescription-diet-jd-joint-care-canned": {
-        "calorie_content": "470 kcal/can",
+        "calorie_content": "1294 kcal/kg, 479 kcal/can",
+        "guaranteed_analysis": {"crude_protein_min": 4.2, "crude_fat_min": 3.5, "crude_fiber_max": 3.0, "moisture_max": 74.0},
     },
     "prescription-diet-kd-kidney-care-canned": {
-        "calorie_content": "433 kcal/can",
+        "calorie_content": "1169 kcal/kg, 433 kcal/can",
+        "guaranteed_analysis": {"crude_protein_min": 2.0, "crude_fat_min": 4.5, "crude_fiber_max": 3.0, "moisture_max": 77.0},
+    },
+    "prescription-diet-kd-beef-vegetable-stew-kidney-care-canned": {
+        "calorie_content": "990 kcal/kg, 350 kcal/can",
+        "guaranteed_analysis": {"crude_protein_min": 2.0, "crude_fat_min": 3.5, "crude_fiber_max": 2.0, "moisture_max": 83.0},
     },
     "prescription-diet-metabolic-vegetable-chicken-stew-weight-management-canned": {
-        "calorie_content": "248 kcal/can",
+        "calorie_content": "700 kcal/kg, 248 kcal/can",
+        "guaranteed_analysis": {"crude_protein_min": 5.0, "crude_fat_min": 2.0, "crude_fiber_max": 4.0, "moisture_max": 84.0},
     },
     "prescription-diet-metabolic-mobility-vegetables-tuna-stew-weight-management-canned": {
-        "calorie_content": "225 kcal/can",
+        "calorie_content": "635 kcal/kg, 225 kcal/can",
+        "guaranteed_analysis": {"crude_protein_min": 3.0, "crude_fat_min": 0.7, "crude_fiber_max": 6.0, "moisture_max": 86.0},
     },
     "prescription-diet-onc-on-care-chicken-stew-restorative-care-canned": {
         "calorie_content": "322 kcal/can",
     },
     "prescription-diet-zd-food-sensitivities-canned": {
         "calorie_content": "357 kcal/can",
+    },
+    "prescription-diet-derm-complete-skin-care-canned": {
+        "calorie_content": "1211 kcal/kg, 448 kcal/can",
+        "guaranteed_analysis": {"crude_protein_min": 4.0, "crude_fat_min": 3.0, "crude_fiber_max": 2.0, "moisture_max": 75.5},
+    },
+    "prescription-diet-zd-low-fat-hydrolysed-soy-food-sensitivities-canned": {
+        "calorie_content": "925 kcal/kg, 342 kcal/can",
+        "guaranteed_analysis": {"crude_protein_min": 5.5, "crude_fat_min": 0.5, "crude_fiber_max": 2.0, "moisture_max": 78.0},
     },
     # --- TREATS (vet) — Source: myvetstore.ca (Wilson's Animal Hospital) ---
     # Calorie values calculated from caloric basis (g/100kcal) + as-fed %,
@@ -606,7 +641,7 @@ def scrape_hills_vet(output_dir: Path) -> int:
         if fb.get("name"):
             product["name"] = fb["name"]
             filled_any = True
-        if fb.get("calorie_content") and not product.get("calorie_content"):
+        if fb.get("calorie_content"):
             cal = normalize_calorie_content(fb["calorie_content"])
             if cal:
                 product["calorie_content"] = cal
@@ -614,7 +649,8 @@ def scrape_hills_vet(output_dir: Path) -> int:
         if fb.get("ingredients_raw") and not product.get("ingredients_raw"):
             product["ingredients_raw"] = fb["ingredients_raw"]
             filled_any = True
-        if fb.get("guaranteed_analysis") and not product.get("guaranteed_analysis"):
+        # As-fed GA from label images overrides scraped dry-matter GA
+        if fb.get("guaranteed_analysis"):
             product["guaranteed_analysis"] = fb["guaranteed_analysis"]
             product["guaranteed_analysis_basis"] = "as-fed"
             filled_any = True
