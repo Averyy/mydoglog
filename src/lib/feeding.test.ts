@@ -141,6 +141,103 @@ describe("resolveActivePlan", () => {
     ]
     expect(resolveActivePlan(periods, "2024-06-15")).toBe("single")
   })
+
+  // -- endDatetime boundary tests --
+
+  it("excludes plan ending today when datetime is after endDatetime", () => {
+    const periods: PlanPeriod[] = [{
+      ...base,
+      planGroupId: "old",
+      endDate: "2024-06-15",
+      endDatetime: "2024-06-15T14:00:00Z",
+      createdAt: "2024-01-01T00:00:00Z",
+    }]
+    expect(resolveActivePlan(periods, "2024-06-15", "2024-06-15T15:00:00Z")).toBe(null)
+  })
+
+  it("includes plan ending today when datetime is before endDatetime", () => {
+    const periods: PlanPeriod[] = [{
+      ...base,
+      planGroupId: "old",
+      endDate: "2024-06-15",
+      endDatetime: "2024-06-15T14:00:00Z",
+      createdAt: "2024-01-01T00:00:00Z",
+    }]
+    expect(resolveActivePlan(periods, "2024-06-15", "2024-06-15T13:00:00Z")).toBe("old")
+  })
+
+  it("ignores endDatetime when datetime param not provided", () => {
+    const periods: PlanPeriod[] = [{
+      ...base,
+      planGroupId: "old",
+      endDate: "2024-06-15",
+      endDatetime: "2024-06-15T14:00:00Z",
+      createdAt: "2024-01-01T00:00:00Z",
+    }]
+    expect(resolveActivePlan(periods, "2024-06-15")).toBe("old")
+  })
+
+  it("ignores endDatetime when query date is not the end date", () => {
+    const periods: PlanPeriod[] = [{
+      ...base,
+      planGroupId: "old",
+      endDate: "2024-06-15",
+      endDatetime: "2024-06-15T14:00:00Z",
+      createdAt: "2024-01-01T00:00:00Z",
+    }]
+    // Querying June 14 (not the end date) — endDatetime should not affect it
+    expect(resolveActivePlan(periods, "2024-06-14", "2024-06-14T20:00:00Z")).toBe("old")
+  })
+
+  // -- startDatetime boundary tests --
+
+  it("excludes plan starting today when datetime is before startDatetime", () => {
+    const periods: PlanPeriod[] = [{
+      ...base,
+      planGroupId: "new",
+      startDate: "2024-06-15",
+      startDatetime: "2024-06-15T14:01:00Z",
+      endDate: null,
+      createdAt: "2024-06-15T14:01:00Z",
+    }]
+    expect(resolveActivePlan(periods, "2024-06-15", "2024-06-15T13:00:00Z")).toBe(null)
+  })
+
+  it("includes plan starting today when datetime is after startDatetime", () => {
+    const periods: PlanPeriod[] = [{
+      ...base,
+      planGroupId: "new",
+      startDate: "2024-06-15",
+      startDatetime: "2024-06-15T14:01:00Z",
+      endDate: null,
+      createdAt: "2024-06-15T14:01:00Z",
+    }]
+    expect(resolveActivePlan(periods, "2024-06-15", "2024-06-15T15:00:00Z")).toBe("new")
+  })
+
+  it("same-day switch: old plan excluded, new plan selected", () => {
+    const periods: PlanPeriod[] = [
+      {
+        ...base,
+        planGroupId: "old",
+        endDate: "2024-06-15",
+        endDatetime: "2024-06-15T14:00:00Z",
+        createdAt: "2024-01-01T00:00:00Z",
+      },
+      {
+        ...base,
+        planGroupId: "new",
+        startDate: "2024-06-15",
+        startDatetime: "2024-06-15T14:01:00Z",
+        endDate: null,
+        createdAt: "2024-06-15T14:01:00Z",
+      },
+    ]
+    // After transition: old excluded, new selected
+    expect(resolveActivePlan(periods, "2024-06-15", "2024-06-15T15:00:00Z")).toBe("new")
+    // Before transition: new excluded, old selected
+    expect(resolveActivePlan(periods, "2024-06-15", "2024-06-15T13:00:00Z")).toBe("old")
+  })
 })
 
 describe("parseDuration", () => {

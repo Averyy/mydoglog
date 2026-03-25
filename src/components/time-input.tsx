@@ -48,17 +48,18 @@ export function TimeInput({
   onChange,
   className,
 }: TimeInputProps): React.ReactElement {
-  const displayValue = value ? snapToNearest30(value) : undefined
+  const displayValue = value ? snapToNearest30(value) : "none"
 
   return (
     <Select
-      value={displayValue ?? ""}
-      onValueChange={(v) => onChange(v || null)}
+      value={displayValue}
+      onValueChange={(v) => onChange(v === "none" ? null : (v || null))}
     >
       <SelectTrigger className={cn("bg-background", className)}>
         <SelectValue placeholder="Time" />
       </SelectTrigger>
       <SelectContent className="max-h-60">
+        <SelectItem value="none" className="text-muted-foreground">No time</SelectItem>
         {TIME_OPTIONS.map((opt) => (
           <SelectItem key={opt.value} value={opt.value}>
             {opt.label}

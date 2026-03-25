@@ -265,11 +265,13 @@ export default function FoodPage(): React.ReactElement {
               ? data.past.find((g) => g.planGroupId === data.active!.previousPlanGroupId)?.items
               : undefined
           }
+          onDatesChanged={fetchData}
         />
       ) : (
         <ActivePlanCard
           plan={activePlan}
           onEditRoutine={() => setRoutineEditorOpen(true)}
+          onDatesChanged={fetchData}
         />
       )}
 
@@ -300,6 +302,7 @@ export default function FoodPage(): React.ReactElement {
               productIngredientDataMap={productIngredientDataMap}
               productNutritionMap={productNutritionMap}
               correlationScores={correlation?.scores ?? []}
+              onDatesChanged={fetchData}
             />
           ))}
         </div>

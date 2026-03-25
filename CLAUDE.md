@@ -28,6 +28,7 @@ Dog food + digestive health tracking app. Next.js monolith (TypeScript, React, B
 - Poop uses Purina 1-7 fecal scoring everywhere (PoopLog AND FoodScorecard). Score 2 = ideal.
 - **Supplements/toppers are small quantities** (~25-30g/meal). Their scorecard scores are essentially weighted averages of the primary foods they're paired with, not independent signals. Interpret topper scores as "present during" not "caused by."
 - **Probiotics are excluded from ingredient correlation** — their ingredients are therapeutic (bacterial strains), not nutritional triggers. At trace quantities their scores just mirror paired foods. Products with `type = "probiotic"` are skipped in the correlation engine.
+- **Same-day food switches** — when "no transition" is used, old plan gets `endDate=today, endDatetime=now`, new plan gets `startDate=today, startDatetime=now+1min`. Log attribution (scorecard stats, treat bucketing) uses time-based boundary filtering on the shared date. `resolveActivePlan` is also time-aware. Logs without `datetime` fall back to date-only (attributed to both plans on the shared date). Multi-day transitions remain date-only.
 - **Responsive containers** — shadcn Drawer (slide-up) on mobile, Dialog (modal) on desktop. Same content component shared between both.
 - **Routine template** pre-fills daily log. Inactive days use the template as the implicit record for correlation.
 

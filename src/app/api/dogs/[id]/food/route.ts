@@ -25,7 +25,9 @@ export async function GET(
         planGroupId: feedingPeriods.planGroupId,
         planName: feedingPeriods.planName,
         startDate: feedingPeriods.startDate,
+        startDatetime: feedingPeriods.startDatetime,
         endDate: feedingPeriods.endDate,
+        endDatetime: feedingPeriods.endDatetime,
         isBackfill: feedingPeriods.isBackfill,
         approximateDuration: feedingPeriods.approximateDuration,
         productId: feedingPeriods.productId,
@@ -161,13 +163,17 @@ export async function POST(
 
     // If starting_today, handle existing ongoing plans
     if (body.mode === "starting_today") {
-      const yesterdayDate = new Date()
-      yesterdayDate.setDate(yesterdayDate.getDate() - 1)
-      const yesterdayStr = yesterdayDate.toLocaleDateString("en-CA", { timeZone: "America/Toronto" })
-
       const transitionDays = typeof body.transitionDays === "number"
         ? Math.max(0, Math.min(7, Math.round(body.transitionDays)))
         : 0
+
+      // No transition: old plan ends today at this exact time (time-based cutoff).
+      // Multi-day transition: old plan ends yesterday (date-based, transition rows cover today onward).
+      const now = new Date()
+      const oldPlanEndDate = transitionDays > 0 ? shiftDate(today, -1) : today
+      const oldPlanEndDatetime = transitionDays > 0 ? null : now
+      // New plan starts 1 minute after old plan ends to avoid overlap
+      const newPlanStartDatetime = transitionDays > 0 ? null : new Date(now.getTime() + 60_000)
 
       // Find existing ongoing plan group(s) with product details for transition
       const ongoingPeriods = await db
@@ -249,6 +255,7 @@ export async function POST(
         dogId,
         productId: item.productId,
         startDate: ongoingStartDate,
+        startDatetime: newPlanStartDatetime,
         endDate: endDate as string | null,
         mealSlot: item.mealSlot as MealSlot | undefined,
         quantity: item.quantity,
@@ -277,11 +284,11 @@ export async function POST(
             .select({ count: sql<number>`count(*)` })
             .from(
               sql`(
-                SELECT 1 FROM ${poopLogs} WHERE ${poopLogs.dogId} = ${dogId} AND ${poopLogs.date} >= ${groupPeriod.startDate} AND ${poopLogs.date} <= ${yesterdayStr}
+                SELECT 1 FROM ${poopLogs} WHERE ${poopLogs.dogId} = ${dogId} AND ${poopLogs.date} >= ${groupPeriod.startDate} AND ${poopLogs.date} <= ${oldPlanEndDate}
                 UNION ALL
-                SELECT 1 FROM ${itchinessLogs} WHERE ${itchinessLogs.dogId} = ${dogId} AND ${itchinessLogs.date} >= ${groupPeriod.startDate} AND ${itchinessLogs.date} <= ${yesterdayStr}
+                SELECT 1 FROM ${itchinessLogs} WHERE ${itchinessLogs.dogId} = ${dogId} AND ${itchinessLogs.date} >= ${groupPeriod.startDate} AND ${itchinessLogs.date} <= ${oldPlanEndDate}
                 UNION ALL
-                SELECT 1 FROM ${treatLogs} WHERE ${treatLogs.dogId} = ${dogId} AND ${treatLogs.date} >= ${groupPeriod.startDate} AND ${treatLogs.date} <= ${yesterdayStr}
+                SELECT 1 FROM ${treatLogs} WHERE ${treatLogs.dogId} = ${dogId} AND ${treatLogs.date} >= ${groupPeriod.startDate} AND ${treatLogs.date} <= ${oldPlanEndDate}
               ) AS logs`,
             )
 
@@ -290,10 +297,10 @@ export async function POST(
             await tx.delete(foodScorecards).where(eq(foodScorecards.planGroupId, groupId))
             await tx.delete(feedingPeriods).where(eq(feedingPeriods.planGroupId, groupId))
           } else {
-            // Has logs or is referenced by transition — end-date as yesterday
+            // Has logs or is referenced by transition — end-date old plan
             await tx
               .update(feedingPeriods)
-              .set({ endDate: yesterdayStr, updatedAt: new Date() })
+              .set({ endDate: oldPlanEndDate, endDatetime: oldPlanEndDatetime, updatedAt: new Date() })
               .where(
                 and(
                   eq(feedingPeriods.planGroupId, groupId),

@@ -75,6 +75,7 @@ export async function fetchCorrelationInput(
         productId: feedingPeriods.productId,
         startDate: feedingPeriods.startDate,
         endDate: feedingPeriods.endDate,
+        endDatetime: feedingPeriods.endDatetime,
         planGroupId: feedingPeriods.planGroupId,
         createdAt: feedingPeriods.createdAt,
         quantity: feedingPeriods.quantity,
@@ -180,6 +181,7 @@ export async function fetchCorrelationInput(
     productId: r.productId,
     startDate: r.startDate,
     endDate: r.endDate,
+    endDatetime: r.endDatetime?.toISOString() ?? null,
     planGroupId: r.planGroupId,
     createdAt: r.createdAt.toISOString(),
     quantity: Number(r.quantity),
@@ -192,6 +194,7 @@ export async function fetchCorrelationInput(
     planGroupId: r.planGroupId,
     startDate: r.startDate,
     endDate: r.endDate,
+    endDatetime: r.endDatetime,
     createdAt: r.createdAt,
   }))
 

@@ -15,6 +15,7 @@ import { poopScoreColor, itchScoreColor } from "@/components/score-grid"
 import { LiaPenSolid } from "react-icons/lia"
 import { ChevronDown } from "lucide-react"
 import { format, parseISO } from "date-fns"
+import { EditPlanDates } from "@/components/edit-plan-dates"
 import type { FeedingPlanGroup, FeedingPlanItem } from "@/lib/types"
 import type { IngredientScore } from "@/lib/correlation/types"
 
@@ -41,6 +42,7 @@ export interface PlanGroupCardProps {
   previousGroupItems?: FeedingPlanItem[]
   /** Dog-level meals per day setting */
   mealsPerDay?: number
+  onDatesChanged?: () => void
 }
 
 export function PlanGroupCard({
@@ -52,6 +54,7 @@ export function PlanGroupCard({
   correlationScores,
   previousGroupItems,
   mealsPerDay = 3,
+  onDatesChanged,
 }: PlanGroupCardProps): React.ReactElement {
   const stats = group.logStats
   const sc = group.scorecard
@@ -128,8 +131,18 @@ export function PlanGroupCard({
         {/* Left: label + date */}
         <div className="min-w-0 sm:flex-1">
           {isCurrent ? (
-            <p className="text-sm font-semibold text-foreground">
+            <p className="text-sm font-semibold text-foreground flex items-center gap-1">
               Current Daily Routine <span className="font-normal text-muted-foreground">({dateLabel})</span>
+              {onDatesChanged && (
+                <EditPlanDates
+                  planGroupId={group.planGroupId}
+                  startDate={group.startDate}
+                  startDatetime={group.startDatetime}
+                  endDate={group.endDate}
+                  endDatetime={group.endDatetime}
+                  onSaved={onDatesChanged}
+                />
+              )}
             </p>
           ) : (
             <p className="text-[11px] text-text-tertiary">

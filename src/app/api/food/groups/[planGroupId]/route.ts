@@ -78,20 +78,64 @@ export async function PATCH(
       return NextResponse.json({ success: true })
     }
 
-    // Uniform update across all periods in the group (backfill editing)
+    // Uniform update across all periods in the group
     const updates: Record<string, unknown> = { updatedAt: new Date() }
+    const hasDateChanges = body.startDate !== undefined || body.endDate !== undefined
+      || body.startDatetime !== undefined || body.endDatetime !== undefined
+
+    const isValidDate = (v: unknown): boolean =>
+      typeof v === "string" && /^\d{4}-\d{2}-\d{2}$/.test(v) && !isNaN(Date.parse(v))
 
     if (body.planName !== undefined) updates.planName = body.planName
-    if (body.startDate !== undefined) updates.startDate = body.startDate
-    if (body.endDate !== undefined) updates.endDate = body.endDate
+    if (body.startDate !== undefined) {
+      if (!isValidDate(body.startDate)) {
+        return NextResponse.json({ error: "Invalid startDate" }, { status: 400 })
+      }
+      updates.startDate = body.startDate
+    }
+    if (body.startDatetime !== undefined) {
+      if (body.startDatetime && isNaN(new Date(body.startDatetime).getTime())) {
+        return NextResponse.json({ error: "Invalid startDatetime" }, { status: 400 })
+      }
+      updates.startDatetime = body.startDatetime ? new Date(body.startDatetime) : null
+    }
+    if (body.endDate !== undefined) {
+      if (body.endDate !== null && !isValidDate(body.endDate)) {
+        return NextResponse.json({ error: "Invalid endDate" }, { status: 400 })
+      }
+      updates.endDate = body.endDate
+    }
+    if (body.endDatetime !== undefined) {
+      if (body.endDatetime && isNaN(new Date(body.endDatetime).getTime())) {
+        return NextResponse.json({ error: "Invalid endDatetime" }, { status: 400 })
+      }
+      updates.endDatetime = body.endDatetime ? new Date(body.endDatetime) : null
+    }
+    // Validate date ordering when both are provided
+    const effectiveStart = (updates.startDate as string | undefined) ?? body.startDate
+    const effectiveEnd = (updates.endDate as string | null | undefined) ?? body.endDate
+    if (effectiveStart && effectiveEnd && effectiveEnd < effectiveStart) {
+      return NextResponse.json({ error: "endDate must be on or after startDate" }, { status: 400 })
+    }
+
     if (body.productId !== undefined) updates.productId = body.productId
     if (body.quantity !== undefined) updates.quantity = body.quantity
     if (body.quantityUnit !== undefined) updates.quantityUnit = body.quantityUnit
 
+    // When changing dates/datetimes, only update ongoing rows (not single-day
+    // transition schedule rows where startDate === endDate) to avoid destroying
+    // the transition schedule.
+    const whereCondition = hasDateChanges
+      ? and(
+          eq(feedingPeriods.planGroupId, planGroupId),
+          sql`(${feedingPeriods.startDate} != ${feedingPeriods.endDate} OR ${feedingPeriods.endDate} IS NULL)`,
+        )
+      : eq(feedingPeriods.planGroupId, planGroupId)
+
     await db
       .update(feedingPeriods)
       .set(updates)
-      .where(eq(feedingPeriods.planGroupId, planGroupId))
+      .where(whereCondition)
 
     return NextResponse.json({ success: true })
   } catch (error) {

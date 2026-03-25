@@ -4,18 +4,21 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { LiaPlusSolid, LiaPenSolid } from "react-icons/lia"
 import { format, parseISO } from "date-fns"
+import { EditPlanDates } from "@/components/edit-plan-dates"
 import type { ActivePlan } from "@/lib/types"
 import { ProductItem } from "@/components/product-item"
 
 interface ActivePlanCardProps {
   plan: ActivePlan | null
   onEditRoutine: () => void
+  onDatesChanged?: () => void
 }
 
 export function ActivePlanCard({
   plan,
   onEditRoutine,
-}: ActivePlanCardProps) {
+  onDatesChanged,
+}: ActivePlanCardProps): React.ReactElement {
   if (!plan) {
     return (
       <Card className="border-dashed">
@@ -40,13 +43,23 @@ export function ActivePlanCard({
             <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
               Current routine
             </p>
-            <p className="mt-0.5 text-xs text-muted-foreground">
+            <p className="mt-0.5 text-xs text-muted-foreground flex items-center gap-1">
               Since {format(parseISO(plan.startDate), "MMM d, yyyy")}
               {plan.endDate && (
                 <>
                   {" "}
                   - {format(parseISO(plan.endDate), "MMM d, yyyy")}
                 </>
+              )}
+              {onDatesChanged && (
+                <EditPlanDates
+                  planGroupId={plan.planGroupId}
+                  startDate={plan.startDate}
+                  startDatetime={plan.startDatetime}
+                  endDate={plan.endDate}
+                  endDatetime={plan.endDatetime}
+                  onSaved={onDatesChanged}
+                />
               )}
             </p>
           </div>

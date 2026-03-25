@@ -26,7 +26,9 @@ export interface FeedingPlanGroup {
   planGroupId: string
   planName: string | null
   startDate: string
+  startDatetime: string | null
   endDate: string | null
+  endDatetime: string | null
   isBackfill: boolean
   approximateDuration: string | null
   items: FeedingPlanItem[]
@@ -71,7 +73,9 @@ export interface ActivePlan {
   planGroupId: string
   planName: string | null
   startDate: string
+  startDatetime: string | null
   endDate: string | null
+  endDatetime: string | null
   items: FeedingPlanItem[]
   transitionDays?: number | null
   previousPlanGroupId?: string | null

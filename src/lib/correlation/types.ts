@@ -201,6 +201,7 @@ export interface RawFeedingPeriod {
   productId: string
   startDate: string
   endDate: string | null
+  endDatetime?: string | null
   planGroupId: string
   createdAt: string
   quantity: number

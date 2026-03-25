@@ -338,7 +338,9 @@ export const feedingPeriods = pgTable(
       .notNull()
       .references(() => products.id),
     startDate: date("start_date").notNull(),
+    startDatetime: timestamp("start_datetime", { withTimezone: true }),
     endDate: date("end_date"),
+    endDatetime: timestamp("end_datetime", { withTimezone: true }),
     mealSlot: mealSlotEnum("meal_slot"),
     quantity: numeric("quantity").notNull(),
     quantityUnit: quantityUnitEnum("quantity_unit").notNull(),

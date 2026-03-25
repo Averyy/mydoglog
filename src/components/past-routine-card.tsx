@@ -11,6 +11,7 @@ import { formatDateRange, daysInRange, avgFromRange } from "@/lib/food-helpers"
 import { smallImageUrl } from "@/lib/utils"
 import { poopScoreColor, itchScoreColor } from "@/components/score-grid"
 import { LiaPenSolid } from "react-icons/lia"
+import { EditPlanDates } from "@/components/edit-plan-dates"
 import type { FeedingPlanGroup } from "@/lib/types"
 import type { IngredientScore } from "@/lib/correlation/types"
 
@@ -27,6 +28,7 @@ export interface PastRoutineCardProps {
   productNutritionMap: Map<string, ProductNutritionData>
   correlationScores: IngredientScore[]
   onEditBackfill?: (group: FeedingPlanGroup) => void
+  onDatesChanged?: () => void
 }
 
 export function PastRoutineCard({
@@ -35,6 +37,7 @@ export function PastRoutineCard({
   productNutritionMap,
   correlationScores,
   onEditBackfill,
+  onDatesChanged,
 }: PastRoutineCardProps): React.ReactElement {
   const stats = group.logStats
   const sc = group.scorecard
@@ -70,8 +73,18 @@ export function PastRoutineCard({
       {/* Header: date + scores */}
       <div className="flex flex-col gap-2 px-4 pt-4 pb-3 sm:flex-row sm:items-center sm:gap-3">
         <div className="min-w-0 sm:flex-1">
-          <p className="text-sm font-semibold text-foreground">
+          <p className="text-sm font-semibold text-foreground flex items-center gap-1">
             {formatDateRange(group.startDate, group.endDate)}
+            {onDatesChanged && (
+              <EditPlanDates
+                planGroupId={group.planGroupId}
+                startDate={group.startDate}
+                startDatetime={group.startDatetime}
+                endDate={group.endDate}
+                endDatetime={group.endDatetime}
+                onSaved={onDatesChanged}
+              />
+            )}
           </p>
           {group.transitionDays != null && group.transitionDays > 0 && (
             <p className="text-xs text-muted-foreground">

@@ -22,7 +22,9 @@ export async function getActivePlanForDog(
       planGroupId: feedingPeriods.planGroupId,
       planName: feedingPeriods.planName,
       startDate: feedingPeriods.startDate,
+      startDatetime: feedingPeriods.startDatetime,
       endDate: feedingPeriods.endDate,
+      endDatetime: feedingPeriods.endDatetime,
       createdAt: feedingPeriods.createdAt,
       productId: feedingPeriods.productId,
       quantity: feedingPeriods.quantity,
@@ -48,11 +50,13 @@ export async function getActivePlanForDog(
   const planPeriods: PlanPeriod[] = rows.map((p) => ({
     planGroupId: p.planGroupId,
     startDate: p.startDate,
+    startDatetime: p.startDatetime?.toISOString() ?? null,
     endDate: p.endDate,
+    endDatetime: p.endDatetime?.toISOString() ?? null,
     createdAt: p.createdAt.toISOString(),
   }))
 
-  const activePlanGroupId = resolveActivePlan(planPeriods, today)
+  const activePlanGroupId = resolveActivePlan(planPeriods, today, new Date().toISOString())
   if (!activePlanGroupId) return null
 
   // Filter to active plan group AND active date range
@@ -102,10 +106,11 @@ export async function getActivePlanForDog(
   // Determine if transition is still in progress:
   // Compute deterministically from earliest startDate + transitionDays
   const allGroupRows = rows.filter((r) => r.planGroupId === activePlanGroupId)
-  const earliestStart = allGroupRows.reduce(
-    (min, r) => (r.startDate < min ? r.startDate : min),
-    allGroupRows[0].startDate,
+  const earliestRow = allGroupRows.reduce(
+    (best, r) => (r.startDate < best.startDate ? r : best),
+    allGroupRows[0],
   )
+  const earliestStart = earliestRow.startDate
   const isTransitioning = transitionDays != null && transitionDays > 0
     && shiftDate(earliestStart, transitionDays) > today
 
@@ -113,7 +118,9 @@ export async function getActivePlanForDog(
     planGroupId: activeRows[0].planGroupId,
     planName: activeRows[0].planName,
     startDate: earliestStart,
+    startDatetime: earliestRow.startDatetime?.toISOString() ?? null,
     endDate: activeRows[0].endDate,
+    endDatetime: activeRows[0].endDatetime?.toISOString() ?? null,
     items,
     transitionDays,
     previousPlanGroupId,

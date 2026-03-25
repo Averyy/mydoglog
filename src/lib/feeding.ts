@@ -11,7 +11,9 @@ export interface FeedingGroupRow {
   planGroupId: string
   planName: string | null
   startDate: string
+  startDatetime: Date | null
   endDate: string | null
+  endDatetime: Date | null
   isBackfill: boolean
   approximateDuration: string | null
   productId: string
@@ -52,7 +54,9 @@ export function buildFeedingGroupMap(
         planGroupId: row.planGroupId,
         planName: row.planName,
         startDate: row.startDate,
+        startDatetime: row.startDatetime?.toISOString() ?? null,
         endDate: row.endDate,
+        endDatetime: row.endDatetime?.toISOString() ?? null,
         isBackfill: row.isBackfill,
         approximateDuration: row.approximateDuration,
         items: [],
@@ -68,12 +72,23 @@ export function buildFeedingGroupMap(
 
     groupRows.get(row.planGroupId)!.push(row)
 
-    // Use earliest startDate, latest endDate for the group
-    if (row.startDate < group.startDate) group.startDate = row.startDate
+    // Use earliest startDate, latest endDate for the group (with datetime sync)
+    const rowStartDt = row.startDatetime?.toISOString() ?? null
+    if (row.startDate < group.startDate) {
+      group.startDate = row.startDate
+      group.startDatetime = rowStartDt
+    } else if (row.startDate === group.startDate && rowStartDt && (!group.startDatetime || rowStartDt < group.startDatetime)) {
+      group.startDatetime = rowStartDt
+    }
+    const rowEndDt = row.endDatetime?.toISOString() ?? null
     if (!row.endDate || !group.endDate) {
       group.endDate = null
+      group.endDatetime = null
     } else if (row.endDate > group.endDate) {
       group.endDate = row.endDate
+      group.endDatetime = rowEndDt
+    } else if (row.endDate === group.endDate && rowEndDt && (!group.endDatetime || rowEndDt > group.endDatetime)) {
+      group.endDatetime = rowEndDt
     }
   }
 
@@ -135,11 +150,13 @@ export interface PlanPeriod {
   planGroupId: string
   startDate: string // YYYY-MM-DD
   endDate: string | null // YYYY-MM-DD or null = ongoing
+  startDatetime?: string | null // ISO timestamp — exact start for same-day transitions
+  endDatetime?: string | null // ISO timestamp — exact cutoff for same-day transitions
   createdAt: string // ISO timestamp for tie-breaking
 }
 
 /**
- * Resolve which plan is active for a given date.
+ * Resolve which plan is active for a given date (and optional time).
  *
  * Priority order:
  * 1. Single-day plan (startDate === endDate === date) — most specific
@@ -147,14 +164,25 @@ export interface PlanPeriod {
  * 3. Ongoing plan (startDate <= date, no endDate) — open-ended
  *
  * Within each tier, the most recently created plan wins ties.
+ *
+ * When `datetime` is provided, time-based boundary filtering applies:
+ * - If a period has `startDatetime` on the start date, exclude if datetime < startDatetime
+ * - If a period has `endDatetime` on the end date, exclude if datetime > endDatetime
+ * This handles same-day "no transition" food switches.
  */
 export function resolveActivePlan(
   periods: PlanPeriod[],
   date: string,
+  datetime?: string | null,
 ): string | null {
   const candidates = periods.filter((p) => {
     if (p.startDate > date) return false
     if (p.endDate && p.endDate < date) return false
+    // Time-based boundary filtering for same-day transitions
+    if (datetime) {
+      if (p.startDate === date && p.startDatetime && datetime < p.startDatetime) return false
+      if (p.endDate === date && p.endDatetime && datetime > p.endDatetime) return false
+    }
     return true
   })
 

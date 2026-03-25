@@ -17,7 +17,9 @@ type RouteParams = { params: Promise<{ id: string }> }
 interface DateRange {
   key: string
   startDate: string
+  startDatetime: string | null // ISO timestamp — boundary filter on start date
   endDate: string
+  endDatetime: string | null // ISO timestamp — boundary filter on end date
 }
 
 /**
@@ -32,8 +34,18 @@ async function batchAggregateLogStats(
   if (ranges.length === 0) return new Map()
 
   const rangeValues = ranges.map(
-    (r) => sql`(${r.key}, ${r.startDate}::date, ${r.endDate}::date)`,
+    (r) => sql`(${r.key}, ${r.startDate}::date, ${r.startDatetime}::timestamptz, ${r.endDate}::date, ${r.endDatetime}::timestamptz)`,
   )
+
+  // Boundary-day time filter fragments (inline, no dynamic column names).
+  // On the start/end date, exclude logs whose datetime falls outside the plan's
+  // startDatetime/endDatetime. Logs without datetime (NULL) are always included.
+  const poopBoundary = sql.raw(`
+        AND (r.range_start_dt IS NULL OR p.date != r.range_start OR p.datetime IS NULL OR p.datetime >= r.range_start_dt)
+        AND (r.range_end_dt IS NULL OR p.date != r.range_end OR p.datetime IS NULL OR p.datetime <= r.range_end_dt)`)
+  const itchBoundary = sql.raw(`
+        AND (r.range_start_dt IS NULL OR i.date != r.range_start OR i.datetime IS NULL OR i.datetime >= r.range_start_dt)
+        AND (r.range_end_dt IS NULL OR i.date != r.range_end OR i.datetime IS NULL OR i.datetime <= r.range_end_dt)`)
 
   const result = await db.execute<{
     range_key: string
@@ -43,7 +55,7 @@ async function batchAggregateLogStats(
     itch_count: number
     days_with_data: number
   }>(sql`
-    WITH ranges(range_key, range_start, range_end) AS (
+    WITH ranges(range_key, range_start, range_start_dt, range_end, range_end_dt) AS (
       VALUES ${sql.join(rangeValues, sql`, `)}
     ),
     poop_agg AS (
@@ -52,6 +64,7 @@ async function batchAggregateLogStats(
         count(*)::int AS cnt
       FROM ranges r
       JOIN ${poopLogs} p ON p.dog_id = ${dogId} AND p.date >= r.range_start AND p.date <= r.range_end
+        ${poopBoundary}
       GROUP BY r.range_key
     ),
     itch_agg AS (
@@ -60,6 +73,7 @@ async function batchAggregateLogStats(
         count(*)::int AS cnt
       FROM ranges r
       JOIN ${itchinessLogs} i ON i.dog_id = ${dogId} AND i.date >= r.range_start AND i.date <= r.range_end
+        ${itchBoundary}
       GROUP BY r.range_key
     ),
     days_agg AS (
@@ -67,9 +81,11 @@ async function batchAggregateLogStats(
       FROM (
         SELECT r.range_key, p.date AS log_date FROM ranges r
           JOIN ${poopLogs} p ON p.dog_id = ${dogId} AND p.date >= r.range_start AND p.date <= r.range_end
+            ${poopBoundary}
         UNION ALL
         SELECT r.range_key, i.date FROM ranges r
           JOIN ${itchinessLogs} i ON i.dog_id = ${dogId} AND i.date >= r.range_start AND i.date <= r.range_end
+            ${itchBoundary}
       ) sub
       GROUP BY range_key
     )
@@ -139,7 +155,9 @@ export async function GET(
         planGroupId: feedingPeriods.planGroupId,
         planName: feedingPeriods.planName,
         startDate: feedingPeriods.startDate,
+        startDatetime: feedingPeriods.startDatetime,
         endDate: feedingPeriods.endDate,
+        endDatetime: feedingPeriods.endDatetime,
         isBackfill: feedingPeriods.isBackfill,
         approximateDuration: feedingPeriods.approximateDuration,
         productId: feedingPeriods.productId,
@@ -169,6 +187,7 @@ export async function GET(
       .select({
         productId: treatLogs.productId,
         date: treatLogs.date,
+        datetime: treatLogs.datetime,
         productName: products.name,
         brandName: brands.name,
         imageUrl: sql<string | null>`${products.imageUrls}[1]`,
@@ -183,13 +202,17 @@ export async function GET(
 
     for (const treat of treatRows) {
       // Find the plan group whose date range contains this treat log
+      // On boundary days with datetime, use time-based filtering
+      const treatIso = treat.datetime?.toISOString() ?? null
       let targetGroup: FeedingPlanGroup | null = null
       for (const group of sortedGroups) {
         const groupEnd = group.endDate ?? today
-        if (treat.date >= group.startDate && treat.date <= groupEnd) {
-          targetGroup = group
-          break
-        }
+        if (treat.date < group.startDate || treat.date > groupEnd) continue
+        // Boundary-day time check: skip if log is outside the plan's time window
+        if (treatIso && treat.date === group.startDate && group.startDatetime && treatIso < group.startDatetime) continue
+        if (treatIso && treat.date === groupEnd && group.endDatetime && treatIso > group.endDatetime) continue
+        targetGroup = group
+        break
       }
       // Orphan: attach to nearest preceding group
       if (!targetGroup) {
@@ -229,7 +252,9 @@ export async function GET(
     const logRanges: DateRange[] = nonBackfillGroups.map((g) => ({
       key: g.planGroupId,
       startDate: g.startDate,
+      startDatetime: g.startDatetime,
       endDate: g.endDate ?? today,
+      endDatetime: g.endDatetime,
     }))
 
     const [, logStatsMap] = await Promise.all([
@@ -274,10 +299,12 @@ export async function GET(
       .map((r) => ({
         planGroupId: r.planGroupId,
         startDate: r.startDate,
+        startDatetime: r.startDatetime?.toISOString() ?? null,
         endDate: r.endDate,
+        endDatetime: r.endDatetime?.toISOString() ?? null,
         createdAt: r.createdAt.toISOString(),
       }))
-    const activePlanGroupId = resolveActivePlan(planPeriods, today)
+    const activePlanGroupId = resolveActivePlan(planPeriods, today, new Date().toISOString())
 
     // Categorize
     let active: FeedingPlanGroup | null = null
