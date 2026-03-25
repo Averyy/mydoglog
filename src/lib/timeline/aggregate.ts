@@ -27,9 +27,7 @@ export function computeDailyMaxPollen(
 
 // --- Gantt bar merging ---
 
-/** Merge adjacent bars with the same label + category + dosage where gap <= 1 day.
- *  Bars from different plan groups are only merged if they don't overlap on the same date
- *  (overlapping = same-day food transition, should stay separate). */
+/** Merge adjacent bars with the same label + category + dosage where gap <= 1 day. */
 export function mergeAdjacentBars(bars: GanttBarData[]): GanttBarData[] {
   const sorted = [...bars].sort((a, b) => {
     if (a.category !== b.category) return a.category.localeCompare(b.category)
@@ -40,16 +38,12 @@ export function mergeAdjacentBars(bars: GanttBarData[]): GanttBarData[] {
   const merged: GanttBarData[] = []
   for (const bar of sorted) {
     const last = merged[merged.length - 1]
-    const gap = last ? daysBetween(last.endDate, bar.startDate) : Infinity
-    const diffPlanGroup = last?.meta?.planGroupId && bar.meta?.planGroupId
-      && last.meta.planGroupId !== bar.meta.planGroupId
     if (
       last &&
       last.label === bar.label &&
       last.category === bar.category &&
       last.meta?.dosage === bar.meta?.dosage &&
-      gap <= 1 &&
-      !(diffPlanGroup && gap <= 0) // block merge when different plan groups overlap on same date
+      daysBetween(last.endDate, bar.startDate) <= 1
     ) {
       last.endDate = bar.endDate > last.endDate ? bar.endDate : last.endDate
     } else {

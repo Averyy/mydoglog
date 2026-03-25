@@ -109,7 +109,6 @@ export async function GET(
             productId: feedingPeriods.productId,
             startDate: feedingPeriods.startDate,
             endDate: feedingPeriods.endDate,
-            endDatetime: feedingPeriods.endDatetime,
             productName: products.name,
             productType: products.type,
             imageUrls: products.imageUrls,
@@ -224,11 +223,7 @@ export async function GET(
     }>()
 
     for (const fp of feedingRows) {
-      // For same-day transitions (endDatetime exists), trim the Gantt bar back 1 day
-      // so the new food bar is visible instead of hidden behind the old one
-      const periodEnd = fp.endDatetime && fp.endDate
-        ? shiftDate(fp.endDate, -1)
-        : (fp.endDate ?? today)
+      const periodEnd = fp.endDate ?? today
       if (fp.productType === "treat") continue
 
       // Skip single-day transition rows from Gantt (they'll become a transition bar)
