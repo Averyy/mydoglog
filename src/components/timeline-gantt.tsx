@@ -154,7 +154,7 @@ export function TimelineGantt({
   endDate,
   className,
 }: TimelineGanttProps): React.ReactElement {
-  const totalDays = daysBetween(startDate, endDate)
+  const totalDays = daysBetween(startDate, endDate) + 1
   const [tooltip, setTooltip] = useState<TooltipState | null>(null)
   const containerRef = useRef<HTMLDivElement>(null)
   const [mounted, setMounted] = useState(false)
