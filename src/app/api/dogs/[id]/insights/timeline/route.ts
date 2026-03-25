@@ -265,6 +265,7 @@ export async function GET(
           quantity: fp.quantity ?? undefined,
           quantityUnit: fp.quantityUnit ?? undefined,
           imageUrl: fp.imageUrls?.[0] ?? undefined,
+          planGroupId: fp.planGroupId,
         },
       })
     }

@@ -61,6 +61,7 @@ export interface GanttBarData {
     interval?: string
     dosageForm?: string
     imageUrl?: string
+    planGroupId?: string
   }
   transitionMeta?: {
     oldFoodName: string

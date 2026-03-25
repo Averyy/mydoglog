@@ -27,7 +27,7 @@ export function computeDailyMaxPollen(
 
 // --- Gantt bar merging ---
 
-/** Merge adjacent bars with the same label + category + dosage where gap <= 1 day. */
+/** Merge adjacent bars with the same label + category + dosage + plan group where gap <= 1 day. */
 export function mergeAdjacentBars(bars: GanttBarData[]): GanttBarData[] {
   const sorted = [...bars].sort((a, b) => {
     if (a.category !== b.category) return a.category.localeCompare(b.category)
@@ -43,6 +43,7 @@ export function mergeAdjacentBars(bars: GanttBarData[]): GanttBarData[] {
       last.label === bar.label &&
       last.category === bar.category &&
       last.meta?.dosage === bar.meta?.dosage &&
+      (!last.meta?.planGroupId || !bar.meta?.planGroupId || last.meta.planGroupId === bar.meta.planGroupId) &&
       daysBetween(last.endDate, bar.startDate) <= 1
     ) {
       last.endDate = bar.endDate > last.endDate ? bar.endDate : last.endDate
