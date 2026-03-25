@@ -60,7 +60,10 @@ async function batchAggregateLogStats(
     ),
     poop_agg AS (
       SELECT r.range_key,
-        round(avg(p.firmness_score)::numeric, 1) AS avg_score,
+        round(
+          (sum(p.firmness_score * CASE WHEN p.firmness_score >= 5 THEN 3.0 ELSE 1.0 END)
+           / sum(CASE WHEN p.firmness_score >= 5 THEN 3.0 ELSE 1.0 END))::numeric, 1
+        ) AS avg_score,
         count(*)::int AS cnt
       FROM ranges r
       JOIN ${poopLogs} p ON p.dog_id = ${dogId} AND p.date >= r.range_start AND p.date <= r.range_end
@@ -69,7 +72,10 @@ async function batchAggregateLogStats(
     ),
     itch_agg AS (
       SELECT r.range_key,
-        round(avg(i.score)::numeric, 1) AS avg_score,
+        round(
+          (sum(i.score * CASE WHEN i.score >= 4 THEN 3.0 ELSE 1.0 END)
+           / sum(CASE WHEN i.score >= 4 THEN 3.0 ELSE 1.0 END))::numeric, 1
+        ) AS avg_score,
         count(*)::int AS cnt
       FROM ranges r
       JOIN ${itchinessLogs} i ON i.dog_id = ${dogId} AND i.date >= r.range_start AND i.date <= r.range_end
