@@ -29,6 +29,14 @@
         }
       }
     },
+    "allspice": {
+      "source_group": "vegetable",
+      "members": {
+        "Allspice": {
+          "form": "ground"
+        }
+      }
+    },
     "anchovy": {
       "source_group": "fish",
       "members": {
@@ -37,6 +45,14 @@
         },
         "Anchovy Meal": {
           "form": "meal"
+        }
+      }
+    },
+    "anise": {
+      "source_group": "vegetable",
+      "members": {
+        "Anise Seed": {
+          "form": "seed"
         }
       }
     },
@@ -897,6 +913,9 @@
         "Coconut Meal": {
           "form": "meal"
         },
+        "Coconut Milk": {
+          "form": "raw"
+        },
         "Coconut Oil": {
           "form": "oil"
         },
@@ -1099,6 +1118,14 @@
           "form": "concentrate"
         },
         "Yogurt": {
+          "form": "raw"
+        }
+      }
+    },
+    "dill": {
+      "source_group": "vegetable",
+      "members": {
+        "Dill": {
           "form": "raw"
         }
       }
@@ -1695,6 +1722,14 @@
         }
       }
     },
+    "mint": {
+      "source_group": "vegetable",
+      "members": {
+        "Mint": {
+          "form": "raw"
+        }
+      }
+    },
     "mussel": {
       "source_group": "mollusk",
       "members": {
@@ -1916,7 +1951,13 @@
         "Red Bell Pepper": {
           "form": "whole"
         },
+        "Red Bell Peppers": {
+          "form": "whole"
+        },
         "Red Peppers": {
+          "form": "whole"
+        },
+        "Yellow Bell Peppers": {
           "form": "whole"
         }
       }

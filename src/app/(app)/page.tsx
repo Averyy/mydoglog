@@ -1,5 +1,6 @@
 import { auth } from "@/lib/auth"
 import { headers } from "next/headers"
+import { redirect } from "next/navigation"
 import { db, dogs } from "@/lib/db"
 import { eq } from "drizzle-orm"
 import { DashboardClient } from "./dashboard-client"
@@ -10,10 +11,14 @@ export default async function DashboardPage(): Promise<React.ReactElement> {
     headers: await headers(),
   })
 
+  if (!session?.user) {
+    redirect("/login")
+  }
+
   const userDogs = await db
     .select({ id: dogs.id, name: dogs.name, breed: dogs.breed, slug: dogs.slug })
     .from(dogs)
-    .where(eq(dogs.ownerId, session!.user.id))
+    .where(eq(dogs.ownerId, session.user.id))
 
   if (userDogs.length === 0) {
     return (

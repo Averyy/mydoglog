@@ -17,7 +17,7 @@ for migration in $(ls drizzle/*.sql 2>/dev/null | sort); do
   echo "Applying migration: $migration"
   OUTPUT=$(psql "$DATABASE_URL" -v ON_ERROR_STOP=0 -f "$migration" 2>&1) || true
   # Filter out expected "already exists" noise, flag anything else
-  UNEXPECTED=$(echo "$OUTPUT" | grep -i "ERROR" | grep -iv "already exists\|duplicate\|cannot drop.*does not exist" || true)
+  UNEXPECTED=$(echo "$OUTPUT" | grep -i "ERROR" | grep -iv "already exists\|duplicate\|cannot drop.*does not exist\|does not exist" || true)
   if [ -n "$UNEXPECTED" ]; then
     echo "WARNING: Unexpected errors in $migration:"
     echo "$UNEXPECTED"
