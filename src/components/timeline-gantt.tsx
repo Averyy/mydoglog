@@ -214,14 +214,29 @@ export function TimelineGantt({
 
   return (
     <div ref={containerRef} className={cn("ml-4 mr-2 space-y-1", className)}>
-      {Array.from(groupedBars.entries()).map(([category, categoryBars]) => (
+      {Array.from(groupedBars.entries()).map(([category, categoryBars]) => {
+        // Detect bars whose visual end overlaps with a later bar's start (same-day boundary).
+        // Trim the earlier bar by 1 day so both bars are visible with a gap.
+        const trimEnd = new Set<number>()
+        for (let i = 0; i < categoryBars.length; i++) {
+          const iEnd = clampDate(categoryBars[i].endDate, startDate, endDate)
+          const iStart = clampDate(categoryBars[i].startDate, startDate, endDate)
+          for (let j = i + 1; j < categoryBars.length; j++) {
+            const jStart = clampDate(categoryBars[j].startDate, startDate, endDate)
+            if (jStart === iEnd && iStart < jStart) { trimEnd.add(i); break }
+            if (jStart > iEnd) break
+          }
+        }
+
+        return (
         <div key={category} className="relative h-[18px] rounded-sm overflow-hidden">
           {categoryBars.map((bar, idx) => {
             const barStart = clampDate(bar.startDate, startDate, endDate)
             const barEnd = clampDate(bar.endDate, startDate, endDate)
             const leftPct = (daysBetween(startDate, barStart) / totalDays) * 100
             // +1 because endDate is inclusive (a bar on Mar 9–Mar 9 spans 1 full day)
-            const widthPct = Math.max(((daysBetween(barStart, barEnd) + 1) / totalDays) * 100, 1)
+            const dayCount = daysBetween(barStart, barEnd) + 1 - (trimEnd.has(idx) ? 1 : 0)
+            const widthPct = Math.max((dayCount / totalDays) * 100, 1)
             const color = CATEGORY_COLORS[category] ?? "var(--muted)"
 
             return (
@@ -265,7 +280,8 @@ export function TimelineGantt({
             )
           })}
         </div>
-      ))}
+        )
+      })}
 
       {mounted && tooltip && <GanttTooltip {...tooltip} />}
     </div>
