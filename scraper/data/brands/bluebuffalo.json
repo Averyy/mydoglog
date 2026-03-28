@@ -1,16 +1,16 @@
 {
   "brand": "Blue Buffalo",
   "website_url": "https://www.bluebuffalo.com",
-  "scraped_at": "2026-03-09T03:11:25.993157+00:00",
+  "scraped_at": "2026-03-28T00:11:20.281482+00:00",
   "scraper_version": "0.1.0",
   "stats": {
-    "product_count": 163,
+    "product_count": 168,
     "by_channel": {
-      "retail": 163
+      "retail": 168
     },
     "by_type": {
-      "treat": 44,
-      "food": 119
+      "treat": 48,
+      "food": 120
     }
   },
   "products": [
@@ -94,6 +94,49 @@
       ]
     },
     {
+      "name": "Bits Plus Soft & Chewy Training Treats Chicken Recipe with Digestion + Immune Support",
+      "brand": "Blue Buffalo",
+      "url": "https://www.bluebuffalo.com/en-ca/dog-treats/blue/blue-bits-plus-chicken-digestions",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "ingredients_raw": "Chicken, Oatmeal, Brown Rice, Pea Protein, Potatoes, Cane Sugar, Vegetable Glycerin, Flaxseed, Pumpkin, Dried Plain Beet Pulp (source of Soluble Fibre), Fish Oil, Natural Flavour, Natural Smoke Flavour, Lactic Acid, Salt, Dried Cultured Whey, Dicalcium Phosphate, Calcium Carbonate, Potassium Chloride, Fructooligosaccharides, DL-Methionine, preserved with Mixed Tocopherols, Choline Chloride, Zinc Amino Acid Chelate, Zinc Sulfate, Ferrous Sulfate, Vitamin E Supplement, Iron Amino Acid Chelate, Niacin (Vitamin B3), Calcium Pantothenate (Vitamin B5), Copper Sulfate, Biotin (Vitamin B7), Vitamin A Supplement, Copper Amino Acid Chelate, Manganese Sulfate, Manganese Amino Acid Chelate, Thiamine Mononitrate (Vitamin B1), Riboflavin (Vitamin B2), Vitamin D3 Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride (Vitamin B6), Calcium Iodate, Folic Acid (Vitamin B9), Sodium Selenite",
+      "guaranteed_analysis": {
+        "crude_protein_min": 13.0,
+        "crude_fat_min": 8.5,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 25.0,
+        "crude_fiber_min": 1.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "images": [
+        "/products/blue-buffalo/blue-buffalo-treat-bits-plus-soft-chewy-training-treats-chicken-recipe-with-digestion-immune-suppor.png"
+      ],
+      "calorie_content": "3025 kcal/kg, 4.50 kcal/treat"
+    },
+    {
+      "name": "Bits Plus Soft & Chewy Training Treats Salmon Recipe with Skin & Coat + Immune Support",
+      "brand": "Blue Buffalo",
+      "url": "https://www.bluebuffalo.com/en-ca/dog-treats/blue/blue-bits-plus-salmon-skincoat",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "ingredients_raw": "Salmon, Oatmeal, Brown Rice, Pea Protein, Potatoes, Cane Sugar, Vegetable Glycerin, Canola Oil (source of Omega 6 Fatty Acids), Flaxseed (source of Omega 3 Fatty Acids), Dried Plain Beet Pulp, Gelatin, Natural Flavour, Lactic Acid, Salt, Natural Smoke Flavour, Dried Cultured Whey, Dicalcium Phosphate, Calcium Carbonate, Potassium Chloride, DL-Methionine, preserved with Mixed Tocopherols, Choline Chloride, Zinc Amino Acid Chelate, Zinc Sulfate, Ferrous Sulfate, Vitamin E Supplement, Iron Amino Acid Chelate, Niacin (Vitamin B3), Calcium Pantothenate (Vitamin B5), Copper Sulfate, Biotin (Vitamin B7), Vitamin A Supplement, Copper Amino Acid Chelate, Manganese Sulfate, Manganese Amino Acid Chelate, Thiamine Mononitrate (Vitamin B1), Riboflavin (Vitamin B2), Vitamin D3 Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride (Vitamin B6), Calcium Iodate, Folic Acid (Vitamin B9), Sodium Selenite",
+      "guaranteed_analysis": {
+        "crude_protein_min": 13.5,
+        "crude_fat_min": 9.5,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 25.0,
+        "omega_3_min": 0.9,
+        "omega_6_min": 1.5
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "images": [
+        "/products/blue-buffalo/blue-buffalo-treat-bits-plus-soft-chewy-training-treats-salmon-recipe-with-skin-coat-immune-support.png"
+      ],
+      "calorie_content": "3094 kcal/kg, 4.30 kcal/treat"
+    },
+    {
       "name": "Dental Chews Dog Dental Chews Large Size, Dogs 50 lbs. and Up",
       "brand": "Blue Buffalo",
       "url": "https://www.bluebuffalo.com/en-ca/dog-treats/blue/blue-dental-chews-large",
@@ -113,8 +156,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "images": [
         "/products/blue-buffalo/blue-buffalo-treat-dental-chews-dog-dental-chews-large-size-dogs-50-lbs-and-up.png"
-      ],
-      "calorie_content": "3076 kcal/kg"
+      ]
     },
     {
       "name": "Dental Chews Dog Dental Chews Medium Size, Dogs 20-50 lbs.",
@@ -653,8 +695,7 @@
       "guaranteed_analysis_basis": "as-fed",
       "images": [
         "/products/blue-buffalo/blue-buffalo-treat-top-chews-jerky-treats-chicken-jerky-recipe.png"
-      ],
-      "calorie_content": "3138 kcal/kg, 65 kcal/treat"
+      ]
     },
     {
       "name": "True Chews Premium Jerky Cuts Made with Real Chicken and Duck",
@@ -789,6 +830,44 @@
         "/products/blue-buffalo/blue-buffalo-treat-true-chews-premium-treats-chicken-pot-pie-recipe.png"
       ],
       "calorie_content": "3000 kcal/kg, 40 kcal/treat"
+    },
+    {
+      "name": "True Chews Minis Premium Jerky Cuts With Real Chicken",
+      "brand": "Blue Buffalo",
+      "url": "https://www.bluebuffalo.com/en-ca/dog-treats/true-chews/true-chews-minis-chicken-jerky-cuts",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "ingredients_raw": "Chicken, Vegetable Glycerin, Potatoes, Dried Cultured Whey, Salt, Natural Smoke Flavor, Lactic Acid, preserved with Mixed Tocopherols, Paprika Oleoresin (for color), Natural Flavor",
+      "guaranteed_analysis": {
+        "crude_protein_min": 23.0,
+        "crude_fat_min": 12.0,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 28.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "images": [
+        "/products/blue-buffalo/blue-buffalo-treat-true-chews-minis-premium-jerky-cuts-with-real-chicken.png"
+      ]
+    },
+    {
+      "name": "True Chews Minis Chicken Pot Pie Recipe",
+      "brand": "Blue Buffalo",
+      "url": "https://www.bluebuffalo.com/en-ca/dog-treats/true-chews/true-chews-minis-chicken-pot-pie",
+      "channel": "retail",
+      "product_type": "treat",
+      "product_format": "dry",
+      "ingredients_raw": "Chicken, Potatoes, Vegetable Glycerin, Dried Cultured Whey, Natural Flavor, Salt, Lactic Acid, preserved with Mixed Tocopherols, Paprika Oleoresin (for color)",
+      "guaranteed_analysis": {
+        "crude_protein_min": 16.0,
+        "crude_fat_min": 9.0,
+        "crude_fiber_max": 6.0,
+        "moisture_max": 25.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "images": [
+        "/products/blue-buffalo/blue-buffalo-treat-true-chews-minis-chicken-pot-pie-recipe.png"
+      ]
     },
     {
       "name": "Wilderness Trail Treats High-Protein Dog Training Treats Wild Bits Chicken Recipe",
@@ -1141,7 +1220,7 @@
       "product_format": "dry",
       "sub_brand": "Basics",
       "life_stage": "senior",
-      "ingredients_raw": "Deboned Turkey, Oatmeal, Brown Rice, Potatoes, Peas, Turkey Meal, Pea Fiber, Dried Yeast, Canola Oil (source of Omega 6 Fatty Acids), Pea Protein, Natural Flavor, Fish Oil (source of DHA-Docosahexaenoic Acid), Calcium Carbonate, Dicalcium Phosphate, Potassium Chloride, Choline Chloride, DL-Methionine, Pumpkin, Dried Chicory Root, Salt, Flaxseed (source of Omega 3 Fatty Acids), Alfalfa Nutrient Concentrate, Direct Dehydrated Alfalfa Pellets, L-Lysine, Taurine, Vitamin E Supplement, preserved with Mixed Tocopherols, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Glucosamine Hydrochloride, Zinc Amino Acid Chelate, Zinc Sulfate, Vegetable Juice for color, Ferrous Sulfate, Chondroitin Sulfate, Iron Amino Acid Chelate, Blueberries, Cranberries, Barley Grass, Parsley, Turmeric, Dried Kelp, Yucca Schidigera Extract, Niacin (Vitamin B3), Calcium Pantothenate (Vitamin B5), Copper Sulfate, Biotin (Vitamin B7), Vitamin A Supplement, Copper Amino Acid Chelate, Manganese Sulfate, Manganese Amino Acid Chelate, Thiamine Mononitrate (Vitamin B1), Riboflavin (Vitamin B2), Vitamin D3 Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride (Vitamin B6), Calcium Iodate, Dried Enterococcus faecium fermentation product, Dried Lactobacillus acidophilus fermentation product, Dried Aspergillus niger fermentation extract, Dried Trichoderma longibrachiatum fermentation extract, Dried Bacillus subtilis fermentation extract, Folic Acid (Vitamin B9), Sodium Selenite, Oil of Rosemary",
+      "ingredients_raw": "Deboned Turkey, Oatmeal, Brown Rice, Potatoes, Peas, Turkey Meal, Pea Fiber, Dried Yeast, Canola Oil (source of Omega 6 Fatty Acids), Pea Protein, Natural Flavor, Fish Oil (source of DHA-Docosahexaenoic Acid), Calcium Carbonate, Dicalcium Phosphate, Potassium Chloride, Choline Chloride, DL-Methionine, Pumpkin, Dried Chicory Root, Salt, Flaxseed (source of Omega 3 Fatty Acids), Alfalfa Nutrient Concentrate, Direct Dehydrated Alfalfa Pellets, L-Lysine, Taurine, Vitamin E Supplement, preserved with Mixed Tocopherols, L-Ascorbyl- 2-Polyphosphate (source of Vitamin C), Glucosamine Hydrochloride, Zinc Amino Acid Chelate, Zinc Sulfate, Vegetable Juice for color, Ferrous Sulfate, Chondroitin Sulfate, Iron Amino Acid Chelate, Blueberries, Cranberries, Barley Grass, Parsley, Turmeric, Dried Kelp, Yucca Schidigera Extract, Niacin (Vitamin B3), Calcium Pantothenate (Vitamin B5), Copper Sulfate, Biotin (Vitamin B7), Vitamin A Supplement, Copper Amino Acid Chelate, Manganese Sulfate, Manganese Amino Acid Chelate, Thiamine Mononitrate (Vitamin B1), Riboflavin (Vitamin B2), Vitamin D3 Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride (Vitamin B6), Calcium Iodate, Dried Enterococcus faecium fermentation product, Dried Lactobacillus acidophilus fermentation product, Dried Aspergillus niger fermentation extract, Dried Trichoderma longibrachiatum fermentation extract, Dried Bacillus subtilis fermentation extract, Folic Acid (Vitamin B9), Sodium Selenite, Oil of Rosemary",
       "guaranteed_analysis": {
         "crude_protein_min": 18.0,
         "crude_fat_min": 10.0,
@@ -1486,7 +1565,7 @@
       "product_format": "dry",
       "sub_brand": "Life Protection",
       "life_stage": "adult",
-      "ingredients_raw": "Deboned Chicken, Chicken Meal, Brown Rice, Oatmeal, Barley, Peas, Pea Starch, Chicken Fat (preserved with Mixed Tocopherols), Natural Flavour, Miscanthus Grass, Dried Tomato Pomace, Flaxseed (source of Omega 6 Fatty Acids), Fish Meal (source of Omega 3 Fatty Acids), Dried Yeast, Fish Oil (source of EPA-Eicosapentaenoic Acid), Potassium Citrate, Salt, Direct Dehydrated Alfalfa Pellets, Dried Chicory Root, Dicalcium Phosphate, Alfalfa Nutrient Concentrate, Calcium Carbonate, Choline Chloride, Potassium Chloride, Taurine, DL-Methionine, L-Threonine, preserved with Mixed Tocopherols, Vitamin E Supplement, Glucosamine Hydrochloride, Dried Sweet Potatoes, Carrots, L-Carnitine, Zinc Amino Acid Chelate, Zinc Sulfate, Vegetable Juice for colour, Ferrous Sulfate, Iron Amino Acid Chelate, Blueberries, Cranberries, Barley Grass, Parsley, Turmeric, Dried Kelp, Yucca Schidigera Extract, Niacin (Vitamin B3), Calcium Pantothenate (Vitamin B5), L-Ascorbyl-2-Polyphosphate (source of Vitamin C), L-Lysine, Copper Sulfate, Biotin (Vitamin B7), Vitamin A Supplement, Copper Amino Acid Chelate, Manganese Sulfate, Chondroitin Sulfate, Manganese Amino Acid Chelate, Thiamine Mononitrate (Vitamin B1), Riboflavin (Vitamin B2), Vitamin D3 Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride (Vitamin B6), Calcium Iodate, Folic Acid (Vitamin B9), Sodium Selenite, Oil of Rosemary",
+      "ingredients_raw": "Deboned Chicken, Chicken Meal, Brown Rice, Oatmeal, Barley, Peas, Pea Starch, Chicken Fat (preserved with Mixed Tocopherols), Natural Flavour, Miscanthus Grass, Dried Tomato Pomace, Flaxseed (source of Omega 6 Fatty Acids), Fish Meal (source of Omega 3 Fatty Acids), Dried Yeast, Fish Oil (source of EPA- Eicosapentaenoic Acid), Potassium Citrate, Salt, Direct Dehydrated Alfalfa Pellets, Dried Chicory Root, Dicalcium Phosphate, Alfalfa Nutrient Concentrate, Calcium Carbonate, Choline Chloride, Potassium Chloride, Taurine, DL-Methionine, L-Threonine, preserved with Mixed Tocopherols, Vitamin E Supplement, Glucosamine Hydrochloride, Dried Sweet Potatoes, Carrots, L-Carnitine, Zinc Amino Acid Chelate, Zinc Sulfate, Vegetable Juice for colour, Ferrous Sulfate, Iron Amino Acid Chelate, Blueberries, Cranberries, Barley Grass, Parsley, Turmeric, Dried Kelp, Yucca Schidigera Extract, Niacin (Vitamin B3), Calcium Pantothenate (Vitamin B5), L-Ascorbyl-2-Polyphosphate (source of Vitamin C), L-Lysine, Copper Sulfate, Biotin (Vitamin B7), Vitamin A Supplement, Copper Amino Acid Chelate, Manganese Sulfate, Chondroitin Sulfate, Manganese Amino Acid Chelate, Thiamine Mononitrate (Vitamin B1), Riboflavin (Vitamin B2), Vitamin D3 Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride (Vitamin B6), Calcium Iodate, Folic Acid (Vitamin B9), Sodium Selenite, Oil of Rosemary",
       "guaranteed_analysis": {
         "crude_protein_min": 22.0,
         "crude_fat_min": 12.0,
@@ -1611,7 +1690,7 @@
       "product_format": "dry",
       "sub_brand": "Life Protection",
       "life_stage": "puppy",
-      "ingredients_raw": "Deboned Chicken, Chicken Meal, Brown Rice, Oatmeal, Barley, Menhaden Fish Meal (source of Omega 3 Fatty Acids), Peas, Chicken Fat (preserved with Mixed Tocopherols), Flaxseed (source of Omega 6 Fatty Acids), Natural Flavour, Dried Tomato Pomace, Dried Egg Product, Pea Protein, Fish Oil (source of ARA-Arachidonic Acid and DHA-Docosahexaenoic Acid), Salt, Potassium Chloride, Choline Chloride, Dehydrated Alfalfa Meal, Dicalcium Phosphate, Potatoes, Dried Chicory Root, Pea Fibre, Alfalfa Nutrient Concentrate, Calcium Carbonate, DL-Methionine, preserved with Mixed Tocopherols, Vitamin E Supplement, Sweet Potatoes, Carrots, Garlic, Zinc Amino Acid Chelate, Zinc Sulfate, Vegetable juice for Colour, Ferrous Sulfate, Iron Amino Acid Chelate, Blueberries, Cranberries, Barley Grass, Parsley, Turmeric, Dried Kelp, Yucca Schidigera Extract, Niacin (Vitamin B3), Calcium Pantothenate (Vitamin B5), L-Carnitine, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), L-Lysine, Copper Sulfate, Biotin (Vitamin B7), Vitamin A Supplement, Copper Amino Acid Chelate, Manganese Sulfate, Taurine, Manganese Amino Acid Chelate, Thiamine Mononitrate (Vitamin B1), Riboflavin (Vitamin B2), Vitamin D3 Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride (Vitamin B6), Calcium Iodate, Dried Yeast, Dried Enterococcus faecium fermentation product, Dried Lactobacillus acidophilus fermentation product, Dried Aspergillus niger fermentation extract, Dried Trichoderma longibrachiatum fermentation extract, Dried Bacillus subtilis fermentation extract, Folic Acid (Vitamin B9), Sodium Selenite, Oil of Rosemary",
+      "ingredients_raw": "Deboned Chicken, Chicken Meal, Brown Rice, Oatmeal, Barley, Menhaden Fish Meal (source of Omega 3 Fatty Acids), Peas, Chicken Fat (preserved with Mixed Tocopherols), Flaxseed (source of Omega 6 Fatty Acids), Natural Flavour, Dried Tomato Pomace, Dried Egg Product, Pea Protein, Fish Oil (source of ARA-Arachidonic Acid and DHA-Docosahexaenoic Acid), Salt, Potassium Chloride, Choline Chloride, Dehydrated Alfalfa Meal, Dicalcium Phosphate, Potatoes, Dried Chicory Root, Pea Fibre, Alfalfa Nutrient Concentrate, Calcium Carbonate, DL-Methionine, preserved with Mixed Tocopherols, Vitamin E Supplement, Sweet Potatoes, Carrots, Garlic, Zinc Amino Acid Chelate, Zinc Sulfate, Vegetable juice for Colour, Ferrous Sulfate, Iron Amino Acid Chelate, Blueberries, Cranberries, Barley Grass, Parsley, Turmeric, Dried Kelp, Yucca Schidigera Extract, Niacin (Vitamin B3), Calcium Pantothenate (Vitamin B5), L-Carnitine, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), L-Lysine, Copper Sulfate, Biotin (Vitamin B7), Vitamin A Supplement, Copper Amino Acid Chelate, Manganese Sulfate, Taurine, Manganese Amino Acid Chelate, Thiamine Mononitrate (Vitamin B1), Riboflavin (Vitamin B2) Vitamin D3 Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride (Vitamin B6), Calcium Iodate, Dried Yeast, Dried Enterococcus faecium fermentation product, Dried Lactobacillus acidophilus fermentation product, Dried Aspergillus niger fermentation extract, Dried Trichoderma longibrachiatum fermentation extract, Dried Bacillus subtilis fermentation extract, Folic Acid (Vitamin B9), Sodium Selenite, Oil of Rosemary",
       "guaranteed_analysis": {
         "crude_protein_min": 27.0,
         "crude_fat_min": 16.0,
@@ -2061,6 +2140,32 @@
       "images": [
         "/products/blue-buffalo/blue-buffalo-food-wilderness-beef-with-wholesome-grains-recipe.png"
       ]
+    },
+    {
+      "name": "Wilderness Chicken-Free Lamb Recipe",
+      "brand": "Blue Buffalo",
+      "url": "https://www.bluebuffalo.com/en-ca/dry-dog-food/wilderness/adult-chicken-free-lamb-recipe",
+      "channel": "retail",
+      "product_type": "food",
+      "product_format": "dry",
+      "sub_brand": "Wilderness",
+      "life_stage": "adult",
+      "ingredients_raw": "Deboned Lamb, Beef Meal, Salmon Meal (source of Omega 3 Fatty Acids), Barley, Oatmeal, Peas, Pea Protein, Canola Oil (source of Omega 6 Fatty Acids), Flaxseed, Natural Flavour, Dried Yeast, Dried Tomato Pomace, Direct Dehydrated Alfalfa Pellets, DL-Methionine, Potatoes, Dried Chicory Root, Potassium Chloride, Pea Fibre, Alfalfa Nutrient Concentrate, Calcium Carbonate, L-Threonine, Salt, Choline Chloride, preserved with Mixed Tocopherols, Dried Sweet Potatoes, Carrots, Zinc Amino Acid Chelate, Zinc Sulfate, Vegetable Juice for colour, Taurine, Ferrous Sulfate, Vitamin E Supplement, Iron Amino Acid Chelate, Blueberries, Cranberries, Barley Grass, Parsley, Turmeric, Dried Kelp, Yucca Schidigera Extract, Niacin (Vitamin B3), Calcium Pantothenate (Vitamin B5), Copper Sulfate, Biotin (Vitamin B7), L-Ascorbyl-2-Polyphosphate (Vitamin C), L-Lysine, L-Carnitine, Vitamin A Supplement, Copper Amino Acid Chelate, Manganese Sulfate, Manganese Amino Acid Chelate, Glucosamine Hydrochloride, Thiamine Mononitrate (Vitamin B1), Riboflavin (Vitamin B2), Vitamin D3 Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride (Vitamin B6), Calcium Iodate, Folic Acid (Vitamin B9), Sodium Selenite, Oil of Rosemary",
+      "guaranteed_analysis": {
+        "crude_protein_min": 33.0,
+        "crude_fat_min": 15.0,
+        "moisture_max": 100.0,
+        "calcium_min": 14.0,
+        "phosphorus_min": 9.0,
+        "omega_3_min": 12.0,
+        "glucosamine_min": 400.0
+      },
+      "guaranteed_analysis_basis": "as-fed",
+      "aafco_statement": "Blue Buffalo Wilderness Nature's Evolutionary Diet with Lamb and Life Source Bits for Adult Dogs is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for maintenance.",
+      "images": [
+        "/products/blue-buffalo/blue-buffalo-food-wilderness-chicken-free-lamb-recipe.png"
+      ],
+      "calorie_content": "422 kcal/cup"
     },
     {
       "name": "Wilderness Grain-Free Chicken Recipe",
@@ -2686,7 +2791,7 @@
       "product_format": "wet",
       "sub_brand": "Basics",
       "life_stage": "adult",
-      "ingredients_raw": "Lamb, Lamb Broth, Potatoes, Flaxseed (source of Omega 3 and 6 Fatty Acids), Pea Protein, Sunflower Oil (source of Omega 6 Fatty Acids), Guar Gum, Fish Oil (source of Omega 3 Fatty Acids), Pumpkin, Carrageenan, Cassia Gum, Potassium Chloride, Salt, Cranberries, Blueberries, Mixed Tocopherols, Choline Chloride, Zinc Amino Acid Chelate, Iron Amino Acid Chelate, Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Copper Amino Acid Chelate, Manganese Amino Acid Chelate, Sodium Selenite, Thiamine Mononitrate (Vitamin B1), Cobalt Amino Acid Chelate, Niacin Supplement (Vitamin B3), Calcium Pantothenate (Vitamin B5), Vitamin A Supplement, Riboflavin Supplement (Vitamin B2), Biotin (Vitamin B7), Vitamin B12 Supplement, Potassium Iodide, Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Folic Acid (Vitamin B9)",
+      "ingredients_raw": "Lamb, Lamb Broth, Potatoes, Flaxseed (source of Omega 3 and 6 Fatty Acids), Pea Protein, Sunflower Oil (source of Omega 6 Fatty Acids), Guar Gum, Fish Oil (source of Omega 3 Fatty Acids), Pumpkin, Carrageenan, Cassia Gum, Potassium Chloride, Salt, Cranberries, Blueberries, Mixed Tocopherols, Choline Chloride, Zinc Amino Acid Chelate, Iron Amino Acid Chelate, Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Copper Amino Acid Chelate, Manganese Amino Acid Chelate, Sodium Selenite, Thiamine Mononitrate (Vitamin B1), Cobalt Amino Acid Chelate, Niacin Supplement (Vitamin B3), Calcium Pantothenate (Vitamin B5), Vitamin A Supplement, Riboflavin Supplement (Vitamin B2), Biotin (Vitamin B7), Vitamin B12 Supplement, Potassium Iodide, Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Folic Acid (Vitamin B9)",
       "guaranteed_analysis": {
         "crude_protein_min": 7.0,
         "crude_fat_min": 7.0,
@@ -2846,7 +2951,8 @@
       "aafco_statement": "BLUE Divine Delights Filet Mignon Flavour in Savoury Juices is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for maintenance.",
       "images": [
         "/products/blue-buffalo/blue-buffalo-food-delights-small-breed-adult-dog-filet-mignon-flavour-in-savoury-juices-wet-food.png"
-      ]
+      ],
+      "calorie_content": "1145 kcal/kg, 114 kcal/tray"
     },
     {
       "name": "Delights Small Breed Adult Dog Grilled Chicken Flavour in Savoury Juices Wet Food",
@@ -2867,7 +2973,8 @@
       "aafco_statement": "BLUE Divine Delights Grilled Chicken Flavour in Savoury Juices is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for maintenance.",
       "images": [
         "/products/blue-buffalo/blue-buffalo-food-delights-small-breed-adult-dog-grilled-chicken-flavour-in-savoury-juices-wet-foo.png"
-      ]
+      ],
+      "calorie_content": "1146 kcal/kg, 115 kcal/tray"
     },
     {
       "name": "Delights Small Breed Adult Dog New York Strip Flavour in Hearty Gravy Wet Food",
@@ -2910,7 +3017,8 @@
       "aafco_statement": "BLUE Divine Delights Porterhouse Flavour in Savoury Juices is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for maintenance.",
       "images": [
         "/products/blue-buffalo/blue-buffalo-food-delights-small-breed-adult-dog-porterhouse-flavour-in-savoury-juices-wet-food.png"
-      ]
+      ],
+      "calorie_content": "1145 kcal/kg, 114 kcal/tray"
     },
     {
       "name": "Delights Small Breed Adult Dog Prime Rib Flavour in Hearty Gravy Wet Food",
@@ -2953,7 +3061,8 @@
       "aafco_statement": "BLUE Divine Delights Roasted Turkey Flavour in Savoury Juices is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for maintenance.",
       "images": [
         "/products/blue-buffalo/blue-buffalo-food-delights-small-breed-adult-dog-roasted-turkey-flavour-in-savoury-juices-wet-food.png"
-      ]
+      ],
+      "calorie_content": "1143 kcal/kg, 114 kcal/tray"
     },
     {
       "name": "Delights Small Breed Adult Dog Rotisserie Chicken Flavour in Hearty Gravy Wet Food",
@@ -2996,7 +3105,8 @@
       "aafco_statement": "BLUE Divine Delights Top Sirloin Flavour in Savoury Juices is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for maintenance.",
       "images": [
         "/products/blue-buffalo/blue-buffalo-food-delights-small-breed-adult-dog-top-sirloin-flavour-in-savoury-juices-wet-food.png"
-      ]
+      ],
+      "calorie_content": "1145 kcal/kg, 114 kcal/tray"
     },
     {
       "name": "Blue's Stew Hunter's Stew Wet Food",
@@ -3249,7 +3359,7 @@
       "product_type": "food",
       "product_format": "wet",
       "life_stage": "adult",
-      "ingredients_raw": "Chicken, Chicken Broth, Carrots, Brown Rice, Peas, Ground Barley, Oatmeal, Sweet Potatoes, Fish Oil, Guar Gum, Potassium Chloride, Salt, Carrageenan, Cassia Gum, Flaxseed, Blueberries, Cranberries, L-Carnitine, Choline Chloride, Zinc Amino Acid Chelate, Iron Amino Acid Chelate, Vitamin E Supplement, Copper Amino Acid Chelate, Manganese Amino Acid Chelate, Sodium Selenite, Thiamine Mononitrate (Vitamin B1), Cobalt Amino Acid Chelate, Niacin Supplement (Vitamin B3), Calcium Pantothenate (Vitamin B5), Vitamin A Supplement, Riboflavin Supplement (Vitamin B2), Biotin (Vitamin B7), Vitamin B12 Supplement, Potassium Iodide, Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Folic Acid (Vitamin B9), preserved with Mixed Tocopherols",
+      "ingredients_raw": "Chicken, Chicken Broth, Carrots, Brown Rice, Peas, Ground Barley, Oatmeal, Sweet Potatoes, Fish Oil, Guar Gum, Potassium Chloride, Salt, Carrageenan, Cassia Gum, Flaxseed, Blueberries, Cranberries, L-Carnitine, Choline Chloride, Zinc Amino Acid Chelate, Iron Amino Acid Chelate, Choline Chloride, Vitamin E Supplement, Copper Amino Acid Chelate, Manganese Amino Acid Chelate, Sodium Selenite, Thiamine Mononitrate (Vitamin B1), Cobalt Amino Acid Chelate, Niacin Supplement (Vitamin B3), Calcium Pantothenate (Vitamin B5), Vitamin A Supplement, Riboflavin Supplement (Vitamin B2), Biotin (Vitamin B7), Vitamin B12 Supplement, Potassium Iodide, Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Folic Acid (Vitamin B9), preserved with Mixed Tocopherols",
       "guaranteed_analysis": {
         "crude_protein_min": 9.0,
         "crude_fat_min": 7.5,
@@ -3274,7 +3384,7 @@
       "product_type": "food",
       "product_format": "wet",
       "life_stage": "puppy",
-      "ingredients_raw": "Chicken, Chicken Broth, Chicken Liver, Carrots, Peas, Pea Flour, Sweet Potatoes, Brown Rice, Barley, Fish Oil (source of DHA-Docosahexaenoic Acid), Oatmeal, Flaxseed (source of Omega 3 and 6 Fatty Acids), Guar Gum, Di Calcium Phosphate, Potassium Chloride, Salt, Cassia Gum, Carrageenan, Cranberries, Blueberries, Choline Chloride, Zinc Amino Acid Chelate, Iron Amino Acid Chelate, Vitamin E Supplement, Copper Amino Acid Chelate, Manganese Amino Acid Chelate, Sodium Selenite, Thiamine Mononitrate (Vitamin B1), Cobalt Amino Acid Chelate, Niacin Supplement (Vitamin B3), Calcium Pantothenate (Vitamin B5), Vitamin A Supplement, Riboflavin Supplement (Vitamin B2), Biotin (Vitamin B7), Vitamin B12 Supplement, Potassium Iodide, Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Folic Acid (Vitamin B9), preserved with Mixed Tocopherols",
+      "ingredients_raw": "Chicken, Chicken Broth, Chicken Liver, Carrots, Peas, Pea Flour, Sweet Potatoes, Brown Rice, Barley, Fish Oil (source of DHA-Docosahexanoic Acid), Oatmeal, Flaxseed (source of Omega 3 and 6 Fatty Acids), Guar Gum, Di Calcium Phosphate, Potassium Chloride, Salt, Cassia Gum, Carrageenan, Cranberries, Blueberries, Choline Chloride, Zinc Amino Acid Chelate, Iron Amino Acid Chelate, Vitamin E Supplement, Copper Amino Acid Chelate, Manganese Amino Acid Chelate, Sodium Selenite, Thiamine Mononitrate (Vitamin B1), Cobalt Amino Acid Chelate, Niacin Supplement (Vitamin B3), Calcium Pantothenate (Vitamin B5), Vitamin A Supplement, Riboflavin Supplement (Vitamin B2), Biotin (Vitamin B7), Vitamin B12 Supplement, Potassium Iodide, Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Folic Acid (Vitamin B9), preserved with Mixed Tocopherols",
       "guaranteed_analysis": {
         "crude_protein_min": 9.0,
         "crude_fat_min": 0.9,
@@ -3539,7 +3649,7 @@
       "product_format": "wet",
       "sub_brand": "True Solutions",
       "life_stage": "adult",
-      "ingredients_raw": "Chicken, Chicken Broth, Whitefish, Chicken Liver, Potatoes, Pea Flour, Pea Protein, Natural Flavour, Dried Plain Beet Pulp, Oatmeal, Brown Rice, Barley, Flaxseed, Carrageenan, Apples, Carrots, Peas, Potassium Chloride, Guar Gum, Fructooligosaccharide, Salt, DL-Methionine, Choline Chloride, Vitamin E Supplement, Calcium Carbonate, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Zinc Amino Acid Chelate, Iron Amino Acid Chelate, Thiamine Mononitrate (Vitamin B1), Copper Amino Acid Chelate, Manganese Amino Acid Chelate, Sodium Selenite, Cobalt Amino Acid Chelate, Niacin Supplement (Vitamin B3), Calcium Pantothenate (Vitamin B5), Vitamin A Supplement, Riboflavin Supplement (Vitamin B2), Biotin (Vitamin B7), Vitamin B12 Supplement, Potassium Iodide, Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Folic Acid (Vitamin B9)",
+      "ingredients_raw": "Chicken, Chicken Broth, Whitefish, Chicken Liver, Potatoes, Pea Flour, Pea Protein, Natural Flavour, Dried Plain Beet Pulp, Oatmeal, Brown Rice, Barley, Flaxseed, Carrageenan, Apples, Carrots, Peas, Potassium Chloride, Guar Gum, Fructooligocaccharide, Salt, DL-Methionine, Choline Chloride, Vitamin E Supplement, Calcium Carbonate, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Zinc Amino Acid Chelate, Iron Amino Acid Chelate, Thiamine Mononitrate (Vitamin B1), Copper Amino Acid Chelate, Manganese Amino Acid Chelate, Sodium Selenite, Cobalt Amino Acid Chelate, Niacin Supplement (Vitamin B3), Calcium Pantothenate (Vitamin B5), Vitamin A Supplement, Riboflavin Supplement (Vitamin B2), Biotin (Vitamin B7), Vitamin B12 Supplement, Potassium Iodide, Pyridoxine Hydrochloride (Vitamin B6), Vitamin D3 Supplement, Folic Acid (Vitamin B9)",
       "guaranteed_analysis": {
         "crude_protein_min": 7.5,
         "crude_fat_min": 3.0,
@@ -3841,7 +3951,8 @@
       "aafco_statement": "BLUE Wilderness Trail Trays Chicken Grill is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for maintenance.",
       "images": [
         "/products/blue-buffalo/blue-buffalo-food-wilderness-trail-trays-chicken-grill-wet-food.png"
-      ]
+      ],
+      "calorie_content": "1208 kcal/kg, 120 kcal/bowl"
     },
     {
       "name": "Wilderness Trail Trays Duck Grill Wet Food",
@@ -3863,7 +3974,8 @@
       "aafco_statement": "BLUE Wilderness Trail Trays Duck Grill is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for maintenance.",
       "images": [
         "/products/blue-buffalo/blue-buffalo-food-wilderness-trail-trays-duck-grill-wet-food.png"
-      ]
+      ],
+      "calorie_content": "1244 kcal/kg, 123 kcal/bowl"
     },
     {
       "name": "Wilderness Trail Trays Turkey Grill Wet Food",
@@ -3885,7 +3997,8 @@
       "aafco_statement": "BLUE Wilderness Trail Trays Turkey Grill is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for maintenance.",
       "images": [
         "/products/blue-buffalo/blue-buffalo-food-wilderness-trail-trays-turkey-grill-wet-food.png"
-      ]
+      ],
+      "calorie_content": "1246 kcal/kg, 124 kcal/bowl"
     },
     {
       "name": "Wilderness Trail Tubs Chicken Stew Wet Food",
@@ -3907,7 +4020,8 @@
       "aafco_statement": "BLUE Wilderness Trail Tubs Chicken Stew is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for maintenance.",
       "images": [
         "/products/blue-buffalo/blue-buffalo-food-wilderness-trail-tubs-chicken-stew-wet-food.png"
-      ]
+      ],
+      "calorie_content": "879 kcal/kg, 199 kcal/tub"
     },
     {
       "name": "Wilderness Trout and Chicken Grill Wet Food",

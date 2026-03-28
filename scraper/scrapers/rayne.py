@@ -187,12 +187,13 @@ _GA_DATA: dict[str, tuple[GuaranteedAnalysis, str | None] | tuple[GuaranteedAnal
         },
         "994 kcal/kg, 367 kcal/can",
     ),
-    # Source: diet page /vc008m-7
+    # Source: diet page /vc008m-7 + dogfoodreviews.com (moisture)
     "rabbit-maint-canine-cans-1": (
         {
             "crude_protein_min": 9.2,
             "crude_fat_min": 4.7,
             "crude_fiber_max": 0.01,
+            "moisture_max": 78.0,
             "calcium_min": 0.33,
             "phosphorus_min": 0.30,
             "taurine_min": 0.08,
@@ -243,11 +244,13 @@ _GA_DATA: dict[str, tuple[GuaranteedAnalysis, str | None] | tuple[GuaranteedAnal
         None,
     ),
     # Source: diet page /vc008M-9
+    # Source: diet page /vc008m-stew + dogfoodreviews.com (moisture)
     "rabbit-maint-canine-stew": (
         {
             "crude_protein_min": 7.0,
             "crude_fat_min": 5.4,
             "crude_fiber_max": 0.44,
+            "moisture_max": 78.0,
             "calcium_min": 0.34,
             "phosphorus_min": 0.29,
             "taurine_min": 0.06,

@@ -23,13 +23,13 @@ New `vet_visit_logs` table:
 | `dog_id` | text | FK → dogs |
 | `date` | date | Visit date |
 | `weight_kg` | numeric | Nullable — weight taken at visit |
-| `reasons` | jsonb (string[]) | Multi-select visit reasons |
+| `reasons` | jsonb (string[]) | Multi-select visit reasons, can be empty `[]` |
 | `notes` | text | Nullable — freeform summary |
 | `created_at` | timestamp | Default now |
 
 ## Visit Reasons
 
-Multi-select toggle chips (same UX pattern as itch body areas):
+Multi-select toggle chips (same UX pattern as itch body areas). **Reasons are optional** — a visit can be just a weight entry with no reasons selected (e.g. quick weigh-in during a pill pickup).
 
 - Annual checkup
 - Vaccines
@@ -42,6 +42,7 @@ Multi-select toggle chips (same UX pattern as itch body areas):
 - Injury
 - Surgery
 - Follow-up
+- Rx pickup
 - Other
 
 ## API Routes
@@ -64,11 +65,14 @@ Multi-select toggle chips (same UX pattern as itch body areas):
 - Tap to expand full notes
 - Edit/delete support
 
-## Weight Tracking (derived)
+## Weight Tracking (derived from vet visits)
 
-- Weight chart on Insights page can pull from `vet_visit_logs.weight_kg` later
-- No separate `weight_logs` table needed unless home weigh-ins become a thing
-- Keep existing `weight` column on `dogs` table updated from latest vet visit weight
+- **Auto-update `dogs.weight`**: on vet visit save, if `weight_kg` is provided, update `dogs.weight` to the new value
+- **Weight history chart on Insights page**: line chart pulling all `vet_visit_logs` rows where `weight_kg IS NOT NULL`, sorted by date. Same date range controls as existing timeline.
+- **Weight trend indicator on dog profile**: gaining / stable / losing based on last 2+ data points
+- **Units**: store as kg, convert from lbs in UI if user preference (display toggle, not a setting initially — just show both: "12.3 kg (27.1 lbs)")
+- **No separate `weight_logs` table** — vet visits are the sole weight data source unless home weigh-ins become a feature later
+- **Correlation integration (future)**: weight change rate as a visual overlay on the food timeline, not a correlation engine input initially
 
 ## Migration
 

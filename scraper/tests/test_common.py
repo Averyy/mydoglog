@@ -130,9 +130,10 @@ class TestNormalizeCalorieContent:
     def test_empty_returns_none(self) -> None:
         assert normalize_calorie_content("") is None
 
-    def test_unparseable_returns_stripped(self) -> None:
-        result = normalize_calorie_content("  some random text  ")
-        assert result == "some random text"
+    def test_unparseable_returns_none(self) -> None:
+        assert normalize_calorie_content("  some random text  ") is None
+        assert normalize_calorie_content("787") is None
+        assert normalize_calorie_content("Protein 4.0% 5.6% 26.3% 7.1 g 100 kcal") is None
 
     def test_treat_serving(self) -> None:
         result = normalize_calorie_content("3,200 kcal/kg, 38 kcal/treat")

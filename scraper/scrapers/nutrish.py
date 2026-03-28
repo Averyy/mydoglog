@@ -245,13 +245,15 @@ def _parse_ga_dots(text: str) -> GuaranteedAnalysis:
             # Actually, skip this — it's not a standard GA field
             continue
 
-        # Determine suffix
-        if is_max:
+        # Determine suffix — AAFCO convention fields always use their
+        # standard suffix regardless of source label (e.g. moisture is
+        # always _max even if source says "Min.")
+        if field_base in _MAX_BY_DEFAULT:
+            suffix = "_max"
+        elif is_max:
             suffix = "_max"
         elif is_min:
             suffix = "_min"
-        elif field_base in _MAX_BY_DEFAULT:
-            suffix = "_max"
         else:
             suffix = "_min"
 

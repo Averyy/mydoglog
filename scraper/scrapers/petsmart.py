@@ -448,6 +448,9 @@ def parse_calories(text: str) -> str | None:
     for line in text.split("\n"):
         line_lower = line.strip().lower()
         if ("calori" in line_lower or "kcal" in line_lower) and "kcal" in line_lower:
+            # Skip GA table rows (e.g. "Protein 4.0% 5.6% ... 100 kcal")
+            if len(re.findall(r"\d+\.?\d*\s*%", line)) >= 2:
+                continue
             normalized = normalize_calorie_content(_fix_reversed_units(line.strip()))
             if normalized:
                 return normalized

@@ -40,6 +40,17 @@ def _detect_sub_brand(name: str) -> str | None:
     return None
 
 
+# Manual fallback data for products where PetSmart RSC is missing data.
+# Source: PetSmart.ca product pages. Last verified: 2026-03-27.
+_FALLBACK_DATA: dict[str, dict] = {
+    # PetSmart.ca 87305
+    "duck-and-vegetable-in-broth": {
+        "calorie_content": "1114 kcal/kg, 316 kcal/can",
+        "guaranteed_analysis": {"crude_protein_min": 8.0, "crude_fat_min": 5.0, "crude_fiber_max": 1.0, "moisture_max": 80.0},
+    },
+}
+
+
 def scrape_simplynourish(output_dir: Path) -> int:
     """Scrape all Simply Nourish dog products from PetSmart. Returns product count."""
     return scrape_petsmart_brand(
@@ -49,4 +60,5 @@ def scrape_simplynourish(output_dir: Path) -> int:
         brand_slug="simply-nourish",
         ingredient_overrides=_INGREDIENT_OVERRIDES,
         detect_sub_brand=_detect_sub_brand,
+        manual_product_data=_FALLBACK_DATA,
     )

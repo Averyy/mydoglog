@@ -19,7 +19,7 @@ from pathlib import Path
 from bs4 import BeautifulSoup
 from wafer import SyncSession
 
-from .common import Product, write_brand_json
+from .common import Product, apply_fallback_data, write_brand_json
 from .petsmart import scrape_petsmart_brand
 
 logger = logging.getLogger(__name__)
@@ -29,7 +29,7 @@ HILLS_CA_BASE = "https://www.hillspet.ca/en-ca/dog-food/"
 # Manual fallback data for products where neither PetSmart RSC nor Hill's CA
 # have the data. Sourced from Chewy.ca, PawDiet.com, hillspet.ca packaging.
 # Key: PetSmart URL substring. Last verified: 2026-03-22.
-_MANUAL_PRODUCT_DATA: dict[str, dict] = {
+_FALLBACK_DATA: dict[str, dict] = {
     # --- Dry food with dead Hill's CA pages ---
     # Source: Chewy.ca (dp/1000074875, dp/1000034574)
     "health-mobility-adult-dog-food-3380": {
@@ -61,6 +61,92 @@ _MANUAL_PRODUCT_DATA: dict[str, dict] = {
     # Source: Chewy.com (dp/121612) — 12.5 oz (354g) can
     "healthy-cuisine-adult-7-wet-dog-food---125-oz-77238": {
         "calorie_content": "257 kcal/can",
+    },
+    # --- Wet food as-fed GA + calories — Source: Chewy.com. Last verified: 2026-03-27 ---
+    # 13 oz entrée cans
+    # Chewy dp/30017
+    "7-senior-wet-dog-food---beef-and-barley-13-oz-91864": {
+        "guaranteed_analysis": {"crude_protein_min": 4.6, "crude_fat_min": 2.0, "crude_fiber_max": 1.5, "moisture_max": 78.0, "ash_min": 2.0},
+    },
+    # Chewy dp/34135
+    "7-senior-wet-dog-food---chicken-and-barley-13-oz-2737": {
+        "calorie_content": "375 kcal/can",
+        "guaranteed_analysis": {"crude_protein_min": 4.7, "crude_fat_min": 2.0, "crude_fiber_max": 1.5, "moisture_max": 78.0},
+    },
+    # Chewy dp/30008
+    "adult-entree-dog-food---chicken-and-beef-83459": {
+        "guaranteed_analysis": {"crude_protein_min": 4.0, "crude_fat_min": 3.0, "crude_fiber_max": 1.5, "moisture_max": 78.0, "ash_max": 3.3},
+    },
+    # Chewy dp/34150
+    "adult-wet-dog-food---beef-and-barley-13-oz-2731": {
+        "guaranteed_analysis": {"crude_protein_min": 5.0, "crude_fat_min": 2.5, "crude_fiber_max": 1.5, "moisture_max": 78.0, "ash_min": 2.5},
+    },
+    # Petco.com — Chewy only had dry-matter GA
+    "adult-wet-dog-food---chicken-and-barley-13-oz-91863": {
+        "calorie_content": "369 kcal/can",
+        "guaranteed_analysis": {"crude_protein_min": 4.5, "crude_fat_min": 2.0, "crude_fiber_max": 1.5, "moisture_max": 78.0, "ash_max": 2.7},
+    },
+    # Chewy dp/1103798
+    "adult-dog-wet-food---salmon-and-barley-entree-13-oz-82318": {
+        "calorie_content": "369 kcal/can",
+    },
+    # Chewy dp/30004
+    "puppy-wet-dog-food---chicken-and-barley-13-oz-2745": {
+        "calorie_content": "1339 kcal/kg",
+    },
+    # 12.5/12.8 oz cuisine/stew cans
+    # Chewy dp/121610
+    "healthy-cuisine-adult-wet-dog-food---braised-beef-carrots-and-peas-125-oz-91865": {
+        "calorie_content": "305 kcal/can",
+        "guaranteed_analysis": {"crude_protein_min": 4.0, "crude_fat_min": 2.5, "crude_fiber_max": 2.5, "moisture_max": 84.0, "ash_min": 2.0},
+    },
+    # Chewy dp/121607
+    "healthy-cuisine-adult-wet-dog-food---roasted-chicken-carrots-and-spinach-125-oz-75577": {
+        "guaranteed_analysis": {"crude_protein_min": 4.0, "crude_fat_min": 2.5, "crude_fiber_max": 2.5, "moisture_max": 85.0, "ash_min": 2.0},
+    },
+    # Chewy dp/1104158
+    "perfect-digestion-chicken-and-rice-entree-adult-dog-wet-food---128-oz-82352": {
+        "guaranteed_analysis": {"crude_protein_min": 4.7, "crude_fat_min": 2.3, "crude_fiber_max": 1.5, "moisture_max": 78.0},
+    },
+    # Petland.ca — Perfect Digestion Chicken Veg Rice Stew (not on Chewy)
+    "perfect-digestion-adult-wet-dog-food---chicken-vegetable-and-rice-stew-128-oz-75575": {
+        "calorie_content": "767 kcal/kg, 278 kcal/can",
+        "guaranteed_analysis": {"crude_protein_min": 3.5, "crude_fat_min": 1.2, "crude_fiber_max": 1.5, "moisture_max": 84.0},
+    },
+    # PetSupermarket.com PSI10558 — Perfect Weight Salmon Stew (not on Chewy)
+    "perfect-weight-adult-dog-wet-food---hearty-vegetables-and-salmon-stew-125-oz-82322": {
+        "calorie_content": "259 kcal/can",
+        "guaranteed_analysis": {"crude_protein_min": 4.0, "crude_fat_min": 1.5, "crude_fiber_max": 4.0, "moisture_max": 84.0},
+    },
+    # Chewy dp/1104206
+    "perfect-weight-and-joint-support-adult-wet-dog-food---vegetable-and-tuna-125-oz-82321": {
+        "guaranteed_analysis": {"crude_protein_min": 3.0, "crude_fat_min": 0.7, "crude_fiber_max": 3.0, "moisture_max": 86.0},
+    },
+    # Chewy dp/37917
+    "savory-stew-puppy-wet-dog-food---chicken-and-vegetables-128-oz-34795": {
+        "calorie_content": "323 kcal/can",
+    },
+    # Chewy dp/804078
+    "puppy-wet-dog-food---chicken-and-rice-stew-125-oz-76220": {
+        "guaranteed_analysis": {"crude_protein_min": 4.5, "crude_fat_min": 2.5, "crude_fiber_max": 2.5, "moisture_max": 82.0},
+    },
+    # Chewy dp/136822
+    "senior-vitality-7-senior-wet-dog-food---chicken-and-vegetable-stew-125-oz-75576": {
+        "calorie_content": "286 kcal/can",
+        "guaranteed_analysis": {"crude_protein_min": 3.0, "crude_fat_min": 2.0, "crude_fiber_max": 2.0, "moisture_max": 85.0},
+    },
+    # Chewy dp/1104110
+    "sensitive-stomach-and-skin-adult-dog-wet-food---chicken-and-vegetable-stew-125-oz-82320": {
+        "guaranteed_analysis": {"crude_protein_min": 3.0, "crude_fat_min": 1.5, "crude_fiber_max": 1.5, "moisture_max": 84.0},
+    },
+    # Chewy dp/1103918
+    "sensitive-stomach-and-skin-puppy-wet-dog-food---salmon-and-vegetable-stew-125-oz-82319": {
+        "guaranteed_analysis": {"crude_protein_min": 4.5, "crude_fat_min": 2.4, "crude_fiber_max": 1.5, "moisture_max": 83.0},
+    },
+    # --- Dry food missing calories — Source: Chewy.com ---
+    # Chewy dp/30001
+    "small-and-mini-adult-dry-dog-food---chicken-and-brown-rice-90471": {
+        "calorie_content": "357 kcal/cup",
     },
     # --- Treats — Hill's CA has no kcal values ---
     # Sources: hillspet.ca (packaging text), Chewy.ca
@@ -299,31 +385,10 @@ def _supplement_from_hills_ca(products: list[Product]) -> int:
             if filled:
                 supplemented += 1
 
-    # Apply manual fallback data for products still missing after Hill's CA
-    manual_filled = 0
-    for product in products:
-        if product.get("guaranteed_analysis") and product.get("calorie_content"):
-            continue
-        ps_url = product.get("url", "")
-        for ps_pattern, fields in _MANUAL_PRODUCT_DATA.items():
-            if ps_pattern in ps_url:
-                filled = False
-                if fields.get("guaranteed_analysis") and not product.get("guaranteed_analysis"):
-                    product["guaranteed_analysis"] = fields["guaranteed_analysis"]
-                    product["guaranteed_analysis_basis"] = fields.get(
-                        "guaranteed_analysis_basis", "as-fed"
-                    )
-                    filled = True
-                if fields.get("calorie_content") and not product.get("calorie_content"):
-                    product["calorie_content"] = fields["calorie_content"]
-                    filled = True
-                if filled:
-                    supplemented += 1
-                    manual_filled += 1
-                    logger.info(f"  Manual: filled {product['name'][:50]}")
-                break
-    if manual_filled:
-        logger.info(f"  Manual fallback filled {manual_filled} products")
+    # Apply fallback data — override_ga=True because Hill's CA provides
+    # dry-matter GA which we intentionally replace with verified as-fed GA
+    # from Chewy/Petco/PetSupermarket sources.
+    supplemented += apply_fallback_data(products, _FALLBACK_DATA, override_ga=True)
 
     if supplemented:
         logger.info(f"  Total supplemented: {supplemented} products")

@@ -33,6 +33,7 @@ from wafer import SyncSession
 from .common import (
     GuaranteedAnalysis,
     Product,
+    apply_fallback_data,
     clean_text,
     write_brand_json,
 )
@@ -399,6 +400,20 @@ def _parse_product(url: str, html: str) -> Product | None:
     return product
 
 
+# Manual fallback data for products where petvalu.ca doesn't have calories.
+# Source: petsupermarket.com. Last verified: 2026-03-27.
+_FALLBACK_DATA: dict[str, dict] = {
+    # petsupermarket.com PSI08733
+    "FCM06362": {
+        "calorie_content": "4800 kcal/kg, 274 kcal/cup",
+    },
+    # petsupermarket.com PSI08732
+    "FCM06360": {
+        "calorie_content": "4800 kcal/kg, 35 kcal/patty",
+    },
+}
+
+
 def scrape_performatrin(output_dir: Path) -> int:
     """Scrape all Performatrin dog food products. Returns product count."""
     with SyncSession(rate_limit=1.0) as session:
@@ -415,6 +430,8 @@ def scrape_performatrin(output_dir: Path) -> int:
             product = _parse_product(url, resp.text)
             if product:
                 products.append(product)
+
+    apply_fallback_data(products, _FALLBACK_DATA)
 
     write_brand_json(
         "Performatrin", WEBSITE_URL, products, output_dir, slug="performatrin"

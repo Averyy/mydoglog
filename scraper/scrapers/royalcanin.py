@@ -25,6 +25,7 @@ from .common import (
     Product,
     Variant,
     _GA_LABEL_MAP,
+    apply_fallback_data,
     clean_text,
     normalize_calorie_content,
     write_brand_json,
@@ -464,6 +465,16 @@ def _parse_product(listing_item: dict, detail: dict) -> Product:
     return product
 
 
+# Manual fallback data for products where the RC API doesn't return calories.
+# Source: royalcanin.com/us product pages. Last verified: 2026-03-27.
+_FALLBACK_DATA: dict[str, dict] = {
+    # royalcanin.com/us gastrointestinal-high-fiber-loaf-in-sauce-1480
+    "GASTROINTESTINAL HIGH FIBER loaf in sauce": {
+        "calorie_content": "852 kcal/kg, 328 kcal/can",
+    },
+}
+
+
 def scrape_royalcanin(output_dir: Path) -> int:
     """Scrape all Royal Canin Canada dog products. Returns product count."""
     with SyncSession(rate_limit=0.5) as session:
@@ -496,6 +507,8 @@ def scrape_royalcanin(output_dir: Path) -> int:
                 continue
             seen_names.add(name_key)
             products.append(product)
+
+    apply_fallback_data(products, _FALLBACK_DATA)
 
     write_brand_json("Royal Canin", WEBSITE_URL, products, output_dir, slug="royalcanin")
     return len(products)

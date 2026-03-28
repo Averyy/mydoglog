@@ -1,17 +1,17 @@
 {
   "brand": "Fromm",
   "website_url": "https://frommfamily.com",
-  "scraped_at": "2026-03-14T14:33:14.893504+00:00",
+  "scraped_at": "2026-03-27T22:45:33.315538+00:00",
   "scraper_version": "0.1.0",
   "stats": {
-    "product_count": 113,
+    "product_count": 111,
     "by_channel": {
-      "retail": 113
+      "retail": 111
     },
     "by_type": {
       "food": 86,
       "treat": 22,
-      "supplement": 5
+      "supplement": 3
     }
   },
   "products": [
@@ -87,7 +87,7 @@
       "product_format": "dry",
       "sub_brand": "Classic",
       "life_stage": "puppy",
-      "ingredients_raw": "Chicken, Chicken Meal, Pearled Barley, Oatmeal, Menhaden Fish Meal, Brown Rice, White Rice, Dried Plain Beet Pulp, Chicken Fat (preserved with mixed tocopherols), Dried Egg Product, Salmon Oil (preserved with mixed tocopherols), Flaxseed, Dried Yeast, Cheese, Chicken Liver, Salt, Vitamins [Potassium Chloride, Choline Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], DL-Methionine, Chicory Root Extract, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Chicken Cartilage, Yucca Schidigera Extract, Sodium Selenite, Sorbic Acid (Preservative), L-Tryptophan, Taurine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "ingredients_raw": "Chicken, Chicken Meal, Pearled Barley, Oatmeal, Menhaden Fish Meal, Brown Rice, White Rice, Dried Plain Beet Pulp, Chicken Fat (preserved with mixed tocopherols), Dried Egg Product, Salmon Oil (preserved with mixed tocopherols), Flaxseed, Dried Yeast, Cheese, Chicken Liver, Salt, Vitamins [Potassium Chloride, Choline Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], DL-Methionine, Chicory Root Extract, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Chicken Cartilage, Yucca Schidigera Extract, Sodium Selenite, Sorbic Acid (Preservative), L-Tryptophan, Taurine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product.",
       "guaranteed_analysis": {
         "crude_protein_min": 28.0,
         "crude_fat_min": 14.0,
@@ -109,7 +109,7 @@
       "product_type": "food",
       "product_format": "dry",
       "sub_brand": "Classic",
-      "ingredients_raw": "Chicken, Chicken Meal, Brown Rice, Pearled Barley, Oatmeal, White Rice, Chicken Fat (preserved with mixed tocopherols), Dried Plain Beet Pulp, Menhaden Fish Meal, Dried Egg Product, Cheese, Flaxseed, Dried Yeast, Chicken Liver, Salt, Vitamins [Potassium Chloride, Choline Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Calcium Sulfate, Sorbic Acid (Preservative), Chicory Root Extract, Yucca Schidigera Extract, Sodium Selenite, DL-Methionine, L-Tryptophan, Taurine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "ingredients_raw": "Chicken, Chicken Meal, Brown Rice, Pearled Barley, Oatmeal, White Rice, Chicken Fat (preserved with mixed tocopherols), Dried Plain Beet Pulp, Menhaden Fish Meal, Dried Egg Product, Cheese, Flaxseed, Dried Yeast, Chicken Liver, Salt, Vitamins [Potassium Chloride, Choline Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Calcium Sulfate, Sorbic Acid (Preservative), Chicory Root Extract, Yucca Schidigera Extract, Sodium Selenite, DL-Methionine, L-Tryptophan, Taurine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product.",
       "guaranteed_analysis": {
         "crude_protein_min": 23.0,
         "crude_fat_min": 15.0,
@@ -132,7 +132,7 @@
       "product_format": "dry",
       "sub_brand": "Classic",
       "life_stage": "senior",
-      "ingredients_raw": "Chicken, Chicken Meal, Pearled Barley, Brown Rice, White Rice, Oatmeal, Dried Plain Beet Pulp, Chicken Fat (preserved with mixed tocopherols), Cheese, Chicken Liver, Menhaden Fish Meal, Dried Egg Product, Flaxseed, Dried Yeast, Salt, Vitamins [Potassium Chloride, Choline Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Calcium Sulfate, Monocalcium Phosphate, Chicory Root Extract, Yucca Schidigera Extract, Sodium Selenite, DL-Methionine, Sorbic Acid (Preservative), L-Tryptophan, Taurine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "ingredients_raw": "Chicken, Chicken Meal, Pearled Barley, Brown Rice, White Rice, Oatmeal, Dried Plain Beet Pulp, Chicken Fat (preserved with mixed tocopherols), Cheese, Chicken Liver, Menhaden Fish Meal, Dried Egg Product, Flaxseed, Dried Yeast, Salt, Vitamins [Potassium Chloride, Choline Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Calcium Sulfate, Monocalcium Phosphate, Chicory Root Extract, Yucca Schidigera Extract, Sodium Selenite, DL-Methionine, Sorbic Acid (Preservative), L-Tryptophan, Taurine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product.",
       "guaranteed_analysis": {
         "crude_protein_min": 21.0,
         "crude_fat_min": 11.0,
@@ -154,7 +154,7 @@
       "product_type": "food",
       "product_format": "dry",
       "sub_brand": "Classic",
-      "ingredients_raw": "Chicken, Chicken Meal, Pearled Barley, Oatmeal, White Rice, Brown Rice, Dried Plain Beet Pulp, Dried Yeast, Chicken Fat (preserved with mixed tocopherols), Menhaden Fish Meal, Salmon Oil (preserved with mixed tocopherols), Cheese, Dried Egg Product, Flaxseed, Chicken Liver, Salt, Monosodium Phosphate, Chicken Cartilage, Vitamins [Choline Chloride, Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Calcium Sulfate, Chicory Root Extract, Glucosamine Hydrochloride, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Chondroitin Sulfate, Yucca Schidigera Extract, Sodium Selenite, Sorbic Acid (Preservative), Taurine, L-Tryptophan, L-Carnitine, DL-Methionine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "ingredients_raw": "Chicken, Chicken Meal, Pearled Barley, Oatmeal, White Rice, Brown Rice, Dried Plain Beet Pulp, Dried Yeast, Chicken Fat (preserved with mixed tocopherols), Menhaden Fish Meal, Salmon Oil (preserved with mixed tocopherols), Cheese, Dried Egg Product, Flaxseed, Chicken Liver, Salt, Monosodium Phosphate, Chicken Cartilage, Vitamins [Choline Chloride, Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Calcium Sulfate, Chicory Root Extract, Glucosamine Hydrochloride, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Chondroitin Sulfate, Yucca Schidigera Extract, Sodium Selenite, Sorbic Acid (Preservative), Taurine, L-Tryptophan, L-Carnitine, DL-Methionine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product.",
       "guaranteed_analysis": {
         "crude_protein_min": 24.0,
         "crude_fat_min": 12.0,
@@ -180,7 +180,7 @@
       "product_type": "food",
       "product_format": "dry",
       "sub_brand": "Classic",
-      "ingredients_raw": "Whitefish, Menhaden Fish Meal, White Rice, Pearled Barley, Oatmeal, Brown Rice, Dried Plain Beet Pulp, Pork Fat (preserved with mixed tocopherols), Dried Yeast, Pork Liver, Salmon Oil (preserved with mixed tocopherols), Herring Meal, Dried Egg Product, Flaxseed, Calcium Sulfate, Monocalcium Phosphate, Vitamins [Choline Chloride, Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Salt, Chicory Root Extract, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Yucca Schidigera Extract, Sodium Selenite, Sorbic Acid (Preservative), DL-Methionine, L-Tryptophan, Taurine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "ingredients_raw": "Whitefish, Menhaden Fish Meal, White Rice, Pearled Barley, Oatmeal, Brown Rice, Dried Plain Beet Pulp, Pork Fat (preserved with mixed tocopherols), Dried Yeast, Pork Liver, Salmon Oil (preserved with mixed tocopherols), Herring Meal, Dried Egg Product, Flaxseed, Calcium Sulfate, Monocalcium Phosphate, Vitamins [Choline Chloride, Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Salt, Chicory Root Extract, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Yucca Schidigera Extract, Sodium Selenite, Sorbic Acid (Preservative), DL-Methionine, L-Tryptophan, Taurine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product.",
       "guaranteed_analysis": {
         "crude_protein_min": 23.0,
         "crude_fat_min": 12.0,
@@ -277,7 +277,7 @@
         "moisture_max": 10.0
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "2 Calories per treat (approximate)",
+      "calorie_content": "2 kcal/treat",
       "images": [
         "/products/fromm/fromm-treat-bacon-blasters-flavor.png"
       ]
@@ -298,7 +298,7 @@
         "moisture_max": 10.0
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "2 Calories per treat (approximate)",
+      "calorie_content": "2 kcal/treat",
       "images": [
         "/products/fromm/fromm-treat-banana-kablammas-flavor.png"
       ]
@@ -319,7 +319,7 @@
         "moisture_max": 10.0
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "2 Calories per treat (approximate)",
+      "calorie_content": "2 kcal/treat",
       "images": [
         "/products/fromm/fromm-treat-blueberry-blasts-flavor.png"
       ]
@@ -340,7 +340,7 @@
         "moisture_max": 10.0
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "2 Calories per treat (approximate)",
+      "calorie_content": "2 kcal/treat",
       "images": [
         "/products/fromm/fromm-treat-peanut-butter-jammers-flavor.png"
       ]
@@ -361,7 +361,7 @@
         "moisture_max": 10.0
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "2 Calories per treat (approximate)",
+      "calorie_content": "2 kcal/treat",
       "images": [
         "/products/fromm/fromm-treat-pot-roast-punchers-flavor.png"
       ]
@@ -382,7 +382,7 @@
         "moisture_max": 10.0
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "2 Calories per treat (approximate)",
+      "calorie_content": "2 kcal/treat",
       "images": [
         "/products/fromm/fromm-treat-pumpkin-kran-pow-flavor.png"
       ]
@@ -403,7 +403,7 @@
         "moisture_max": 10.0
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "2 Calories per treat (approximate)",
+      "calorie_content": "2 kcal/treat",
       "images": [
         "/products/fromm/fromm-treat-slammon-smoked-salmon-flavor.png"
       ]
@@ -424,7 +424,7 @@
         "moisture_max": 10.0
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "2 Calories per treat (approximate)",
+      "calorie_content": "2 kcal/treat",
       "images": [
         "/products/fromm/fromm-treat-smokin-cheese-plosions-flavor.png"
       ]
@@ -679,7 +679,7 @@
       "product_type": "food",
       "product_format": "dry",
       "sub_brand": "Four-Star",
-      "ingredients_raw": "Beef, Dried Egg Product, Beef Broth, Lentils, Peas, Pork Meat & Bone Meal, Pork, Potatoes, Sweet Potatoes, Dried Tomato Pomace, Pork Fat (preserved with mixed tocopherols), Beef Liver, Pork Liver, Chickpeas, Salmon Oil (preserved with mixed tocopherols), Pea Protein, Pea Flour, Cheese, Flaxseed, Celery, Carrots, Apples, Broccoli, Natural Flavor, Vitamins [Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate], Chicory Root Extract, Salt, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Cranberries, Yucca Schidigera Extract, Sorbic Acid (Preservative), Blueberries, Sodium Selenite, Taurine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "ingredients_raw": "Beef, Dried Egg Product, Beef Broth, Lentils, Peas, Pork Meat & Bone Meal, Pork, Potatoes, Sweet Potatoes, Dried Tomato Pomace, Pork Fat (preserved with mixed tocopherols), Beef Liver, Pork Liver, Chickpeas, Salmon Oil (preserved with mixed tocopherols), Pea Protein, Pea Flour, Cheese, Flaxseed, Celery, Carrots, Apples, Broccoli, Natural Flavor, Vitamins [Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate], Chicory Root Extract, Salt, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Cranberries, Yucca Schidigera Extract, Sorbic Acid (Preservative), Blueberries, Sodium Selenite, Taurine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product.",
       "guaranteed_analysis": {
         "crude_protein_min": 30.0,
         "crude_fat_min": 18.0,
@@ -701,7 +701,7 @@
       "product_type": "food",
       "product_format": "dry",
       "sub_brand": "Four-Star",
-      "ingredients_raw": "Chicken, Chicken Broth, Chicken Meal, Oatmeal, Pearled Barley, Sweet Potatoes, Brown Rice, White Rice, Menhaden Fish Meal, Whole Oats, Dried Egg Product, Dried Tomato Pomace, Chicken Fat (preserved with mixed tocopherols), Salmon Oil (preserved with mixed tocopherols), Whole Barley, Millet, Cheese, Flaxseed, Potatoes, Dried Yeast, Chicken Liver, Carrots, Apples, Broccoli, Celery, Salt, Monosodium Phosphate, Vitamins [Choline Chloride, Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Chicory Root Extract, Chicken Cartilage, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Calcium Carbonate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Sorbic Acid (Preservative), Cranberries, Yucca Schidigera Extract, Blueberries, Sodium Selenite, Taurine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "ingredients_raw": "Chicken, Chicken Broth, Chicken Meal, Oatmeal, Pearled Barley, Sweet Potatoes, Brown Rice, White Rice, Menhaden Fish Meal, Whole Oats, Dried Egg Product, Dried Tomato Pomace, Chicken Fat (preserved with mixed tocopherols), Salmon Oil (preserved with mixed tocopherols), Whole Barley, Millet, Cheese, Flaxseed, Potatoes, Dried Yeast, Chicken Liver, Carrots, Apples, Broccoli, Celery, Salt, Monosodium Phosphate, Vitamins [Choline Chloride, Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Chicory Root Extract, Chicken Cartilage, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Calcium Carbonate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Sorbic Acid (Preservative), Cranberries, Yucca Schidigera Extract, Blueberries, Sodium Selenite, Taurine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product.",
       "guaranteed_analysis": {
         "crude_protein_min": 24.0,
         "crude_fat_min": 15.0,
@@ -723,7 +723,7 @@
       "product_type": "food",
       "product_format": "dry",
       "sub_brand": "Four-Star",
-      "ingredients_raw": "Chicken, Chicken Meal, Chickpeas, Lentils, Peas, Potatoes, Sweet Potatoes, Dried Egg Product, Dried Tomato Pomace, Chicken Fat (preserved with mixed tocopherols), Cheese, Flaxseed, Salmon Oil (preserved with mixed tocopherols), Chicken Liver, Pears, Apples, Broccoli, Potassium Chloride, Salt, Calcium Sulfate, Monocalcium Phosphate, Vitamins [Choline Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Olive Oil (preserved with mixed tocopherols), Chicory Root Extract, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Cranberries, Yucca Schidigera Extract, Sorbic Acid (Preservative), Taurine, Blueberries, Sodium Selenite, Parsley, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "ingredients_raw": "Chicken, Chicken Meal, Chickpeas, Lentils, Peas, Potatoes, Sweet Potatoes, Dried Egg Product, Dried Tomato Pomace, Chicken Fat (preserved with mixed tocopherols), Cheese, Flaxseed, Salmon Oil (preserved with mixed tocopherols), Chicken Liver, Pears, Apples, Broccoli, Potassium Chloride, Salt, Calcium Sulfate, Monocalcium Phosphate, Vitamins [Choline Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Olive Oil (preserved with mixed tocopherols), Chicory Root Extract, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Cranberries, Yucca Schidigera Extract, Sorbic Acid (Preservative), Taurine, Blueberries, Sodium Selenite, Parsley, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product.",
       "guaranteed_analysis": {
         "crude_protein_min": 26.0,
         "crude_fat_min": 16.0,
@@ -745,7 +745,7 @@
       "product_type": "food",
       "product_format": "dry",
       "sub_brand": "Four-Star",
-      "ingredients_raw": "Duck, Duck Meal, Chicken, Oatmeal, Brown Rice, Pearled Barley, White Rice, Chicken Meal, Sweet Potatoes, Chicken Fat (preserved with mixed tocopherols), Dried Tomato Pomace, Dried Egg Product, Millet, Whole Oats, Whole Barley, Salmon Oil (preserved with mixed tocopherols), Dried Yeast, Cheese, Flaxseed, Chicken Liver, Carrots, Apples, Broccoli, Cauliflower, Salt, Monosodium Phosphate, Vitamins [Choline Chloride, Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Chicory Root Extract, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Cranberries, Sorbic Acid (Preservative), Yucca Schidigera Extract, Blueberries, Sodium Selenite, Taurine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "ingredients_raw": "Duck, Duck Meal, Chicken, Oatmeal, Brown Rice, Pearled Barley, White Rice, Chicken Meal, Sweet Potatoes, Chicken Fat (preserved with mixed tocopherols), Dried Tomato Pomace, Dried Egg Product, Millet, Whole Oats, Whole Barley, Salmon Oil (preserved with mixed tocopherols), Dried Yeast, Cheese, Flaxseed, Chicken Liver, Carrots, Apples, Broccoli, Cauliflower, Salt, Monosodium Phosphate, Vitamins [Choline Chloride, Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Chicory Root Extract, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Cranberries, Sorbic Acid (Preservative), Yucca Schidigera Extract, Blueberries, Sodium Selenite, Taurine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product.",
       "guaranteed_analysis": {
         "crude_protein_min": 24.0,
         "crude_fat_min": 15.0,
@@ -767,7 +767,7 @@
       "product_type": "food",
       "product_format": "dry",
       "sub_brand": "Four-Star",
-      "ingredients_raw": "Turkey, Duck Meal, Turkey Broth, Lentils, Chickpeas, Peas, Potatoes, Turkey Liver, Chicken Meal, Pea Flour, Dried Tomato Pomace, Chicken Fat (preserved with mixed tocopherols), Dried Egg Product, Pea Protein, Salmon Oil (preserved with mixed tocopherols), Goose, Chicken, Sweet Potatoes, Flaxseed, Cheese, Pheasant, Quail, Duck, Pumpkin, Carrots, Apples, Broccoli, Natural Flavor, Potassium Chloride, Salt, Monosodium Phosphate, Chicory Root Extract, Vitamins [Choline Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Cranberries, Yucca Schidigera Extract, Sorbic Acid (Preservative), Blueberries, Sodium Selenite, Taurine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "ingredients_raw": "Turkey, Duck Meal, Turkey Broth, Lentils, Chickpeas, Peas, Potatoes, Turkey Liver, Chicken Meal, Pea Flour, Dried Tomato Pomace, Chicken Fat (preserved with mixed tocopherols), Dried Egg Product, Pea Protein, Salmon Oil (preserved with mixed tocopherols), Goose, Chicken, Sweet Potatoes, Flaxseed, Cheese, Pheasant, Quail, Duck, Pumpkin, Carrots, Apples, Broccoli, Natural Flavor, Potassium Chloride, Salt, Monosodium Phosphate, Chicory Root Extract, Vitamins [Choline Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Cranberries, Yucca Schidigera Extract, Sorbic Acid (Preservative), Blueberries, Sodium Selenite, Taurine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product.",
       "guaranteed_analysis": {
         "crude_protein_min": 29.0,
         "crude_fat_min": 17.0,
@@ -789,7 +789,7 @@
       "product_type": "food",
       "product_format": "dry",
       "sub_brand": "Four-Star",
-      "ingredients_raw": "Rabbit, Duck, Pork, Pork Meat & Bone Meal, Chickpeas, Lentils, Peas, Potatoes, Pea Flour, Pork Liver, Pork Fat (preserved with mixed tocopherols), Dried Egg Product, Dried Tomato Pomace, Duck Meal, Pea Protein, Salmon Oil (preserved with mixed tocopherols), Rabbit Meal, Cheese, Flaxseed, Carrots, Apples, Broccoli, Alfalfa Sprouts, Natural Flavor, Vitamins [Potassium Chloride, Choline Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Salt, Chicory Root Extract, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Cranberries, Yucca Schidigera Extract, Sorbic Acid (Preservative), Sodium Selenite, Blueberries, Taurine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "ingredients_raw": "Rabbit, Duck, Pork, Pork Meat & Bone Meal, Chickpeas, Lentils, Peas, Potatoes, Pea Flour, Pork Liver, Pork Fat (preserved with mixed tocopherols), Dried Egg Product, Dried Tomato Pomace, Duck Meal, Pea Protein, Salmon Oil (preserved with mixed tocopherols), Rabbit Meal, Cheese, Flaxseed, Carrots, Apples, Broccoli, Alfalfa Sprouts, Natural Flavor, Vitamins [Potassium Chloride, Choline Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Salt, Chicory Root Extract, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Cranberries, Yucca Schidigera Extract, Sorbic Acid (Preservative), Sodium Selenite, Blueberries, Taurine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product.",
       "guaranteed_analysis": {
         "crude_protein_min": 28.0,
         "crude_fat_min": 17.0,
@@ -811,7 +811,7 @@
       "product_type": "food",
       "product_format": "dry",
       "sub_brand": "Four-Star",
-      "ingredients_raw": "Beef, Beef Broth, Lamb Meal, Haddock, Whole Oats, Dried Egg Product, Whole Barley, Oatmeal, Potatoes, Pearled Barley, Pumpkin, Dried Tomato Pomace, Chicken Fat (preserved with mixed tocopherols), Beef Liver, Sweet Potatoes, Salmon Oil (preserved with mixed tocopherols), Chicken, Cheese, Chicken Liver, Flaxseed, Celery, Carrots, Apples, Broccoli, Vitamins [Potassium Chloride, Choline Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Chicory Root Extract, Salt, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Sorbic Acid (Preservative), Cranberries, Yucca Schidigera Extract, Taurine, Blueberries, Sodium Selenite, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "ingredients_raw": "Beef, Beef Broth, Lamb Meal, Haddock, Whole Oats, Dried Egg Product, Whole Barley, Oatmeal, Potatoes, Pearled Barley, Pumpkin, Dried Tomato Pomace, Chicken Fat (preserved with mixed tocopherols), Beef Liver, Sweet Potatoes, Salmon Oil (preserved with mixed tocopherols), Chicken, Cheese, Chicken Liver, Flaxseed, Celery, Carrots, Apples, Broccoli, Vitamins [Potassium Chloride, Choline Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Chicory Root Extract, Salt, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Sorbic Acid (Preservative), Cranberries, Yucca Schidigera Extract, Taurine, Blueberries, Sodium Selenite, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product.",
       "guaranteed_analysis": {
         "crude_protein_min": 27.0,
         "crude_fat_min": 16.0,
@@ -833,7 +833,7 @@
       "product_type": "food",
       "product_format": "dry",
       "sub_brand": "Four-Star",
-      "ingredients_raw": "Lamb, Lamb Meal, Lentils, Chickpeas, Peas, Dried Egg Product, Pea Flour, Dried Tomato Pomace, Pork Fat (preserved with mixed tocopherols), Pork Liver, Lamb Liver, Salmon Oil (preserved with mixed tocopherols), Cheese, Flaxseed, Carrots, Apples, Broccoli, Cauliflower, Natural Flavor, Potassium Chloride, Salt, Vitamins [Choline Chloride, Vitamin E Supplement, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Chicory Root Extract, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Cranberries, Yucca Schidigera Extract, Sorbic Acid (Preservative), Blueberries, Taurine, Sodium Selenite, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "ingredients_raw": "Lamb, Lamb Meal, Lentils, Chickpeas, Peas, Dried Egg Product, Pea Flour, Dried Tomato Pomace, Pork Fat (preserved with mixed tocopherols), Pork Liver, Lamb Liver, Salmon Oil (preserved with mixed tocopherols), Cheese, Flaxseed, Carrots, Apples, Broccoli, Cauliflower, Natural Flavor, Potassium Chloride, Salt, Vitamins [Choline Chloride, Vitamin E Supplement, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Chicory Root Extract, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Cranberries, Yucca Schidigera Extract, Sorbic Acid (Preservative), Blueberries, Taurine, Sodium Selenite, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product.",
       "guaranteed_analysis": {
         "crude_protein_min": 29.0,
         "crude_fat_min": 18.0,
@@ -855,7 +855,7 @@
       "product_type": "food",
       "product_format": "dry",
       "sub_brand": "Four-Star",
-      "ingredients_raw": "Pork, Pork Meat & Bone Meal, Oatmeal, Pearled Barley, Pork Liver, Brown Rice, White Rice, Dried Tomato Pomace, Pork Fat (preserved with mixed tocopherols), Dried Egg Product, Peas, Potatoes, Apples, Sweet Potatoes, Salmon Oil (preserved with mixed tocopherols), Pea Protein, Flaxseed, Cheese, Carrots, Broccoli, Potassium Chloride, Salt, Monosodium Phosphate, Vitamins [Choline Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Chicory Root Extract, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Cranberries, Yucca Schidigera Extract, Sodium Selenite, Sorbic Acid (Preservative), Blueberries, Taurine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "ingredients_raw": "Pork, Pork Meat & Bone Meal, Oatmeal, Pearled Barley, Pork Liver, Brown Rice, White Rice, Dried Tomato Pomace, Pork Fat (preserved with mixed tocopherols), Dried Egg Product, Peas, Potatoes, Apples, Sweet Potatoes, Salmon Oil (preserved with mixed tocopherols), Pea Protein, Flaxseed, Cheese, Carrots, Broccoli, Potassium Chloride, Salt, Monosodium Phosphate, Vitamins [Choline Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Chicory Root Extract, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Cranberries, Yucca Schidigera Extract, Sodium Selenite, Sorbic Acid (Preservative), Blueberries, Taurine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product.",
       "guaranteed_analysis": {
         "crude_protein_min": 24.0,
         "crude_fat_min": 14.0,
@@ -877,7 +877,7 @@
       "product_type": "food",
       "product_format": "dry",
       "sub_brand": "Four-Star",
-      "ingredients_raw": "Pork, Peas, Pork Broth, Chickpeas, Pork Meat & Bone Meal, Pea Flour, Pork Fat (preserved with mixed tocopherols), Dried Egg Product, Sweet Potatoes, Dried Tomato Pomace, Pork Liver, Pea Protein, Salmon Oil (preserved with mixed tocopherols), Cheese, Flaxseed, Cantaloupe, Pineapple, Mango, Carrots, Apples, Natural Flavor, Vitamins [Potassium Chloride, Choline Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Salt, Monosodium Phosphate, Chicory Root Extract, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Cranberries, Yucca Schidigera Extract, Sorbic Acid (Preservative), Sodium Selenite, Coconut Oil (preserved with mixed tocopherols), Blueberries, Taurine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "ingredients_raw": "Pork, Peas, Pork Broth, Chickpeas, Pork Meat & Bone Meal, Pea Flour, Pork Fat (preserved with mixed tocopherols), Dried Egg Product, Sweet Potatoes, Dried Tomato Pomace, Pork Liver, Pea Protein, Salmon Oil (preserved with mixed tocopherols), Cheese, Flaxseed, Cantaloupe, Pineapple, Mango, Carrots, Apples, Natural Flavor, Vitamins [Potassium Chloride, Choline Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Salt, Monosodium Phosphate, Chicory Root Extract, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Cranberries, Yucca Schidigera Extract, Sorbic Acid (Preservative), Sodium Selenite, Coconut Oil (preserved with mixed tocopherols), Blueberries, Taurine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product.",
       "guaranteed_analysis": {
         "crude_protein_min": 29.0,
         "crude_fat_min": 17.0,
@@ -899,7 +899,7 @@
       "product_type": "food",
       "product_format": "dry",
       "sub_brand": "Four-Star",
-      "ingredients_raw": "Beef, Lamb Meal, Pork, Pinto Beans, Potatoes, Chickpeas, Lentils, Peas, Dried Egg Product, Trout, Pork Meat & Bone Meal, Dried Tomato Pomace, Pork Liver, Pork Fat (preserved with mixed tocopherols), Salmon Oil (preserved with mixed tocopherols), Lamb, Butternut Squash, Flaxseed, Alfalfa Meal, Pumpkin, Vitamins [Potassium Chloride, Choline Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Monosodium Phosphate, Salt, Chicory Root Extract, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Cranberries, Yucca Schidigera Extract, Sodium Selenite, Chicken Cartilage, Taurine, Sorbic Acid (Preservative), Blueberries, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "ingredients_raw": "Beef, Lamb Meal, Pork, Pinto Beans, Potatoes, Chickpeas, Lentils, Peas, Dried Egg Product, Trout, Pork Meat & Bone Meal, Dried Tomato Pomace, Pork Liver, Pork Fat (preserved with mixed tocopherols), Salmon Oil (preserved with mixed tocopherols), Lamb, Butternut Squash, Flaxseed, Alfalfa Meal, Pumpkin, Vitamins [Potassium Chloride, Choline Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Monosodium Phosphate, Salt, Chicory Root Extract, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Cranberries, Yucca Schidigera Extract, Sodium Selenite, Chicken Cartilage, Taurine, Sorbic Acid (Preservative), Blueberries, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product.",
       "guaranteed_analysis": {
         "crude_protein_min": 28.0,
         "crude_fat_min": 16.0,
@@ -921,7 +921,7 @@
       "product_type": "food",
       "product_format": "dry",
       "sub_brand": "Four-Star",
-      "ingredients_raw": "Salmon, Salmon Meal, Fish Broth, Oatmeal, Brown Rice, Pearled Barley, Chicken Fat (preserved with mixed tocopherols), Dried Egg Product, Whole Oats, White Rice, Dried Tomato Pomace, Salmon Oil (preserved with mixed tocopherols), Millet, Sweet Potatoes, Potatoes, Chicken, Herring Meal, Whole Barley, Dried Yeast, Cheese, Flaxseed, Chicken Liver, Carrots, Apples, Broccoli, Celery, Monocalcium Phosphate, Calcium Sulfate, Vitamins [Choline Chloride, Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Salt, Chicory Root Extract, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate, Sodium Selenite], Sorbic Acid (Preservative), Cranberries, Yucca Schidigera Extract, Blueberries, Taurine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "ingredients_raw": "Salmon, Salmon Meal, Fish Broth, Oatmeal, Brown Rice, Pearled Barley, Chicken Fat (preserved with mixed tocopherols), Dried Egg Product, Whole Oats, White Rice, Dried Tomato Pomace, Salmon Oil (preserved with mixed tocopherols), Millet, Sweet Potatoes, Potatoes, Chicken, Herring Meal, Whole Barley, Dried Yeast, Cheese, Flaxseed, Chicken Liver, Carrots, Apples, Broccoli, Celery, Monocalcium Phosphate, Calcium Sulfate, Vitamins [Choline Chloride, Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Salt, Chicory Root Extract, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate, Sodium Selenite], Sorbic Acid (Preservative), Cranberries, Yucca Schidigera Extract, Blueberries, Taurine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product.",
       "guaranteed_analysis": {
         "crude_protein_min": 25.0,
         "crude_fat_min": 16.0,
@@ -943,7 +943,7 @@
       "product_type": "food",
       "product_format": "dry",
       "sub_brand": "Four-Star",
-      "ingredients_raw": "Salmon, Salmon Meal, Peas, Lentils, Pinto Beans, Potatoes, Chicken Fat (preserved with mixed tocopherols), Dried Tomato Pomace, Tuna, Dried Egg Product, Chicken Liver, Chickpeas, Salmon Oil (preserved with mixed tocopherols), Sardine Meal, Flaxseed, Cheese, Monocalcium Phosphate, Calcium Sulfate, Zucchini, Carrots, Apples, Broccoli, Natural Flavor, Potassium Chloride, Salt, Vitamins [Choline Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Niacin Supplement, Riboflavin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Folic Acid, Thiamine Mononitrate], Chicory Root Extract, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Cranberries, Yucca Schidigera Extract, Sodium Selenite, Sorbic Acid (Preservative), Blueberries, Taurine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "ingredients_raw": "Salmon, Salmon Meal, Peas, Lentils, Pinto Beans, Potatoes, Chicken Fat (preserved with mixed tocopherols), Dried Tomato Pomace, Tuna, Dried Egg Product, Chicken Liver, Chickpeas, Salmon Oil (preserved with mixed tocopherols), Sardine Meal, Flaxseed, Cheese, Monocalcium Phosphate, Calcium Sulfate, Zucchini, Carrots, Apples, Broccoli, Natural Flavor, Potassium Chloride, Salt, Vitamins [Choline Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Niacin Supplement, Riboflavin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Folic Acid, Thiamine Mononitrate], Chicory Root Extract, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Cranberries, Yucca Schidigera Extract, Sodium Selenite, Sorbic Acid (Preservative), Blueberries, Taurine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product.",
       "guaranteed_analysis": {
         "crude_protein_min": 28.0,
         "crude_fat_min": 16.0,
@@ -965,7 +965,7 @@
       "product_type": "food",
       "product_format": "dry",
       "sub_brand": "Four-Star",
-      "ingredients_raw": "Salmon, Fish Broth, Chicken, Salmon Meal, Duck Meal, Lentils, Chickpeas, Peas, Potatoes, Chicken Fat (preserved with mixed tocopherols), Sweet Potatoes, Pea Flour, Dried Tomato Pomace, Dried Egg Product, Pea Protein, Salmon Oil (preserved with mixed tocopherols), Herring Meal, Flaxseed, Cheese, Chicken Liver, Carrots, Apples, Broccoli, Celery, Natural Flavor, Salt, Potassium Chloride, Chicory Root Extract, Vitamins [Choline Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Cranberries, Yucca Schidigera Extract, Sorbic Acid (Preservative), Blueberries, Sodium Selenite, Taurine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "ingredients_raw": "Salmon, Fish Broth, Chicken, Salmon Meal, Duck Meal, Lentils, Chickpeas, Peas, Potatoes, Chicken Fat (preserved with mixed tocopherols), Sweet Potatoes, Pea Flour, Dried Tomato Pomace, Dried Egg Product, Pea Protein, Salmon Oil (preserved with mixed tocopherols), Herring Meal, Flaxseed, Cheese, Chicken Liver, Carrots, Apples, Broccoli, Celery, Natural Flavor, Salt, Potassium Chloride, Chicory Root Extract, Vitamins [Choline Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Cranberries, Yucca Schidigera Extract, Sorbic Acid (Preservative), Blueberries, Sodium Selenite, Taurine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product.",
       "guaranteed_analysis": {
         "crude_protein_min": 30.0,
         "crude_fat_min": 18.0,
@@ -987,7 +987,7 @@
       "product_type": "food",
       "product_format": "dry",
       "sub_brand": "Four-Star",
-      "ingredients_raw": "Trout, Whitefish, Salmon Meal, Dried Egg Product, Menhaden Fish Meal, Whole Barley, Whole Oats, Brown Rice, Oatmeal, Pearled Barley, Pork Liver, Pork Fat (preserved with mixed tocopherols), Dried Tomato Pomace, Salmon Oil (preserved with mixed tocopherols), Dried Yeast, Miscanthus Grass, Flaxseed, Broccoli, Apples, Vitamins [Choline Chloride, Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Chicory Root Extract, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Salt, Cranberries, Sodium Selenite, Yucca Schidigera Extract, Sorbic Acid (Preservative), Taurine, Blueberries, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "ingredients_raw": "Trout, Whitefish, Salmon Meal, Dried Egg Product, Menhaden Fish Meal, Whole Barley, Whole Oats, Brown Rice, Oatmeal, Pearled Barley, Pork Liver, Pork Fat (preserved with mixed tocopherols), Dried Tomato Pomace, Salmon Oil (preserved with mixed tocopherols), Dried Yeast, Miscanthus Grass, Flaxseed, Broccoli, Apples, Vitamins [Choline Chloride, Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Chicory Root Extract, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Salt, Cranberries, Sodium Selenite, Yucca Schidigera Extract, Sorbic Acid (Preservative), Taurine, Blueberries, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product.",
       "guaranteed_analysis": {
         "crude_protein_min": 27.0,
         "crude_fat_min": 16.0,
@@ -1009,7 +1009,7 @@
       "product_type": "food",
       "product_format": "dry",
       "sub_brand": "Four-Star",
-      "ingredients_raw": "Whitefish, Fish Broth, Menhaden Fish Meal, Sweet Potatoes, Potatoes, Brown Rice, Pearled Barley, Oatmeal, White Rice, Dried Egg Product, Millet, Peas, Dried Tomato Pomace, Whole Oats, Whole Barley, Pork Liver, Salmon Oil (preserved with mixed tocopherols), Pork Fat (preserved with mixed tocopherols), Herring Meal, Flaxseed, Cheese, Carrots, Apples, Broccoli, Celery, Calcium Sulfate, Monocalcium Phosphate, Monosodium Phosphate, Vitamins [Potassium Chloride, Choline Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Chicory Root Extract, Salt, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Cranberries, Yucca Schidigera Extract, Sorbic Acid (Preservative), Taurine, Blueberries, Sodium Selenite, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "ingredients_raw": "Whitefish, Fish Broth, Menhaden Fish Meal, Sweet Potatoes, Potatoes, Brown Rice, Pearled Barley, Oatmeal, White Rice, Dried Egg Product, Millet, Peas, Dried Tomato Pomace, Whole Oats, Whole Barley, Pork Liver, Salmon Oil (preserved with mixed tocopherols), Pork Fat (preserved with mixed tocopherols), Herring Meal, Flaxseed, Cheese, Carrots, Apples, Broccoli, Celery, Calcium Sulfate, Monocalcium Phosphate, Monosodium Phosphate, Vitamins [Potassium Chloride, Choline Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Chicory Root Extract, Salt, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Cranberries, Yucca Schidigera Extract, Sorbic Acid (Preservative), Taurine, Blueberries, Sodium Selenite, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product.",
       "guaranteed_analysis": {
         "crude_protein_min": 23.0,
         "crude_fat_min": 11.0,
@@ -1031,7 +1031,7 @@
       "product_type": "food",
       "product_format": "dry",
       "sub_brand": "Four-Star",
-      "ingredients_raw": "Lamb, Whole Oats, Whole Barley, Dried Egg Product, Oat Groats, Pearled Barley, Lamb Meal, Salmon Meal, Dried Tomato Pomace, Lamb Liver, Pork Liver, Pork Fat (preserved with mixed tocopherols), Salmon Oil (preserved with mixed tocopherols), Venison, Pumpkin, Flaxseed, Alfalfa Meal, Kiwifruit, Apples, Broccoli, Carrots, Alfalfa Sprouts, Vitamins [Potassium Chloride, Choline Chloride, Ascorbic Acid, Vitamin E Supplement, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Chicory Root Extract, New Zealand Green Mussels, Salt, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Taurine, Cranberries, Yucca Schidigera Extract, Sodium Selenite, Sorbic Acid (Preservative), Blueberries, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "ingredients_raw": "Lamb, Whole Oats, Whole Barley, Dried Egg Product, Oat Groats, Pearled Barley, Lamb Meal, Salmon Meal, Dried Tomato Pomace, Lamb Liver, Pork Liver, Pork Fat (preserved with mixed tocopherols), Salmon Oil (preserved with mixed tocopherols), Venison, Pumpkin, Flaxseed, Alfalfa Meal, Kiwifruit, Apples, Broccoli, Carrots, Alfalfa Sprouts, Vitamins [Potassium Chloride, Choline Chloride, Ascorbic Acid, Vitamin E Supplement, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Chicory Root Extract, New Zealand Green Mussels, Salt, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Taurine, Cranberries, Yucca Schidigera Extract, Sodium Selenite, Sorbic Acid (Preservative), Blueberries, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product.",
       "guaranteed_analysis": {
         "crude_protein_min": 26.0,
         "crude_fat_min": 16.0,
@@ -1149,7 +1149,7 @@
         "moisture_max": 12.0
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "12 Calories per treat (approximate)",
+      "calorie_content": "12 kcal/treat",
       "images": [
         "/products/fromm/fromm-treat-chicken-with-peas-and-carrots-recipe.png"
       ]
@@ -1170,7 +1170,7 @@
         "moisture_max": 12.0
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "12 Calories per treat (approximate)",
+      "calorie_content": "12 kcal/treat",
       "images": [
         "/products/fromm/fromm-treat-lamb-with-cranberry-recipe.png"
       ]
@@ -1191,7 +1191,7 @@
         "moisture_max": 12.0
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "12 Calories per treat (approximate)",
+      "calorie_content": "12 kcal/treat",
       "images": [
         "/products/fromm/fromm-treat-parmesan-cheese-recipe.png"
       ]
@@ -1212,7 +1212,7 @@
         "moisture_max": 12.0
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "12 Calories per treat (approximate)",
+      "calorie_content": "12 kcal/treat",
       "images": [
         "/products/fromm/fromm-treat-salmon-with-sweet-potato-recipe.png"
       ]
@@ -1398,7 +1398,7 @@
       "product_type": "food",
       "product_format": "dry",
       "sub_brand": "Gold",
-      "ingredients_raw": "Chicken, Chicken Meal, Chicken Broth, Oatmeal, Pearled Barley, Brown Rice, Chicken Fat (preserved with mixed tocopherols), Menhaden Fish Meal, Dried Tomato Pomace, Whole Oats, White Rice, Dried Egg Product, Whole Barley, Chicken Liver, Potatoes, Dried Yeast, Cheese, Flaxseed, Salmon Oil (preserved with mixed tocopherols), Salt, Carrots, Duck, Lamb, Sweet Potatoes, Celery, Alfalfa Meal, Monocalcium Phosphate, Vitamins [Choline Chloride, Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Chicory Root Extract, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Sorbic Acid (Preservative), Yucca Schidigera Extract, L-Tryptophan, Taurine, DL-Methionine, Sodium Selenite, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "ingredients_raw": "Chicken, Chicken Meal, Chicken Broth, Oatmeal, Pearled Barley, Brown Rice, Chicken Fat (preserved with mixed tocopherols), Menhaden Fish Meal, Dried Tomato Pomace, Whole Oats, White Rice, Dried Egg Product, Whole Barley, Chicken Liver, Potatoes, Dried Yeast, Cheese, Flaxseed, Salmon Oil (preserved with mixed tocopherols), Salt, Carrots, Duck, Lamb, Sweet Potatoes, Celery, Alfalfa Meal, Monocalcium Phosphate, Vitamins [Choline Chloride, Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Chicory Root Extract, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Sorbic Acid (Preservative), Yucca Schidigera Extract, L-Tryptophan, Taurine, DL-Methionine, Sodium Selenite, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product.",
       "guaranteed_analysis": {
         "crude_protein_min": 25.0,
         "crude_fat_min": 16.0,
@@ -1420,7 +1420,7 @@
       "product_type": "food",
       "product_format": "dry",
       "sub_brand": "Gold",
-      "ingredients_raw": "Chicken, Chicken Meal, Whole Grain Sorghum, Chicken Broth, Whole Barley, Whole Oats, Pearled Barley, Chicken Fat (preserved with mixed tocopherols), Menhaden Fish Meal, Dried Tomato Pomace, Dried Egg Product, Dried Yeast, Buckwheat, Spelt, Millet, Chicken Liver, Cheese, Salmon Oil (preserved with mixed tocopherols), Quinoa, Flaxseed, Salt, Carrots, Duck, Lamb, Sweet Potatoes, Celery, Monocalcium Phosphate, Vitamins [Choline Chloride, Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Chicory Root Extract, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Sorbic Acid (Preservative), Yucca Schidigera Extract, L-Tryptophan, Taurine, DL-Methionine, Sodium Selenite, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "ingredients_raw": "Chicken, Chicken Meal, Whole Grain Sorghum, Chicken Broth, Whole Barley, Whole Oats, Pearled Barley, Chicken Fat (preserved with mixed tocopherols), Menhaden Fish Meal, Dried Tomato Pomace, Dried Egg Product, Dried Yeast, Buckwheat, Spelt, Millet, Chicken Liver, Cheese, Salmon Oil (preserved with mixed tocopherols), Quinoa, Flaxseed, Salt, Carrots, Duck, Lamb, Sweet Potatoes, Celery, Monocalcium Phosphate, Vitamins [Choline Chloride, Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Chicory Root Extract, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Sorbic Acid (Preservative), Yucca Schidigera Extract, L-Tryptophan, Taurine, DL-Methionine, Sodium Selenite, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product.",
       "guaranteed_analysis": {
         "crude_protein_min": 26.0,
         "crude_fat_min": 16.0,
@@ -1442,7 +1442,7 @@
       "product_type": "food",
       "product_format": "dry",
       "sub_brand": "Gold",
-      "ingredients_raw": "Whitefish, Salmon Meal, Lentils, Peas, Chickpeas, Pea Starch, Potatoes, Dried Tomato Pomace, Chicken Liver, Sweet Potatoes, Flaxseed, Salmon Oil (preserved with mixed tocopherols), Chicken Fat (preserved with mixed tocopherols), Salmon, Calcium Sulfate, Monocalcium Phosphate, Dried Egg Product, Pea Fiber, Cheese, Alfalfa Meal, Carrots, Vitamins [Choline Chloride, Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Dried Yeast, Celery, Salt, Taurine, Chicory Root Extract, Sorbic Acid (Preservative), Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate, Sodium Selenite], Yucca Schidigera Extract, L-Carnitine, DL-Methionine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "ingredients_raw": "Whitefish, Salmon Meal, Lentils, Peas, Chickpeas, Pea Starch, Potatoes, Dried Tomato Pomace, Chicken Liver, Sweet Potatoes, Flaxseed, Salmon Oil (preserved with mixed tocopherols), Chicken Fat (preserved with mixed tocopherols), Salmon, Calcium Sulfate, Monocalcium Phosphate, Dried Egg Product, Pea Fiber, Cheese, Alfalfa Meal, Carrots, Vitamins [Choline Chloride, Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Dried Yeast, Celery, Salt, Taurine, Chicory Root Extract, Sorbic Acid (Preservative), Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate, Sodium Selenite], Yucca Schidigera Extract, L-Carnitine, DL-Methionine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product.",
       "guaranteed_analysis": {
         "crude_protein_min": 25.0,
         "crude_fat_min": 10.0,
@@ -1464,7 +1464,7 @@
       "product_type": "food",
       "product_format": "dry",
       "sub_brand": "Gold",
-      "ingredients_raw": "Beef, Pork Meat & Bone Meal, Lentils, Peas, Chickpeas, Potatoes, Dried Tomato Pomace, Pea Flour, Pork Liver, Pork Fat (preserved with mixed tocopherols), Salmon Oil (preserved with mixed tocopherols), Dried Egg Product, Flaxseed, Cheese, Dried Yeast, Lamb, Alfalfa Meal, Celery, Salt, Vitamins [Choline Chloride, Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Carrots, Chicory Root Extract, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Yucca Schidigera Extract, Taurine, Sodium Selenite, Sorbic Acid (Preservative), L-Tryptophan, DL-Methionine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "ingredients_raw": "Beef, Pork Meat & Bone Meal, Lentils, Peas, Chickpeas, Potatoes, Dried Tomato Pomace, Pea Flour, Pork Liver, Pork Fat (preserved with mixed tocopherols), Salmon Oil (preserved with mixed tocopherols), Dried Egg Product, Flaxseed, Cheese, Dried Yeast, Lamb, Alfalfa Meal, Celery, Salt, Vitamins [Choline Chloride, Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Carrots, Chicory Root Extract, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Yucca Schidigera Extract, Taurine, Sodium Selenite, Sorbic Acid (Preservative), L-Tryptophan, DL-Methionine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product.",
       "guaranteed_analysis": {
         "crude_protein_min": 24.0,
         "crude_fat_min": 16.0,
@@ -1487,7 +1487,7 @@
       "product_format": "dry",
       "sub_brand": "Gold",
       "breed_size": "large",
-      "ingredients_raw": "Beef, Pork Meat & Bone Meal, Lentils, Peas, Chickpeas, Pea Flour, Potatoes, Dried Tomato Pomace, Pork Liver, Dried Egg Product, Flaxseed, Pork Fat (preserved with mixed tocopherols), Salmon Oil (preserved with mixed tocopherols), Sweet Potatoes, Cheese, Dried Yeast, Lamb, Alfalfa Meal, Celery, Salt, Carrots, Vitamins [Choline Chloride, Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Monosodium Phosphate, Chicory Root Extract, Taurine, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Yucca Schidigera Extract, Sodium Selenite, Sorbic Acid (Preservative), L-Tryptophan, DL-Methionine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "ingredients_raw": "Beef, Pork Meat & Bone Meal, Lentils, Peas, Chickpeas, Pea Flour, Potatoes, Dried Tomato Pomace, Pork Liver, Dried Egg Product, Flaxseed, Pork Fat (preserved with mixed tocopherols), Salmon Oil (preserved with mixed tocopherols), Sweet Potatoes, Cheese, Dried Yeast, Lamb, Alfalfa Meal, Celery, Salt, Carrots, Vitamins [Choline Chloride, Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Monosodium Phosphate, Chicory Root Extract, Taurine, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Yucca Schidigera Extract, Sodium Selenite, Sorbic Acid (Preservative), L-Tryptophan, DL-Methionine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product.",
       "guaranteed_analysis": {
         "crude_protein_min": 24.0,
         "crude_fat_min": 12.0,
@@ -1511,7 +1511,7 @@
       "sub_brand": "Gold",
       "life_stage": "puppy",
       "breed_size": "large",
-      "ingredients_raw": "Beef, Pork Meat & Bone Meal, Lentils, Peas, Chickpeas, Potatoes, Dried Tomato Pomace, Pork, Dried Egg Product, Pork Liver, Pea Flour, Pork Fat (preserved with mixed tocopherols), Salmon Oil (preserved with mixed tocopherols), Flaxseed, Dried Yeast, Cheese, Sweet Potatoes, Lamb, Alfalfa Meal, Celery, Carrots, Calcium Carbonate, Vitamins [Choline Chloride, Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Salt, Chicory Root Extract, Taurine, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Proteinate, Calcium Iodate], Yucca Schidigera Extract, Sodium Selenite, Sorbic Acid (Preservative), L-Tryptophan, DL-Methionine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "ingredients_raw": "Beef, Pork Meat & Bone Meal, Lentils, Peas, Chickpeas, Potatoes, Dried Tomato Pomace, Pork, Dried Egg Product, Pork Liver, Pea Flour, Pork Fat (preserved with mixed tocopherols), Salmon Oil (preserved with mixed tocopherols), Flaxseed, Dried Yeast, Cheese, Sweet Potatoes, Lamb, Alfalfa Meal, Celery, Carrots, Vitamins [Choline Chloride, Potassium Chloride, Vitamin E Supplement, Ascorbic Acid], Calcium Carbonate, Vitamins [Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Salt, Chicory Root Extract, Taurine, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Proteinate, Calcium Iodate], Yucca Schidigera Extract, Sodium Selenite, Sorbic Acid (Preservative), L-Tryptophan, DL-Methionine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product.",
       "guaranteed_analysis": {
         "crude_protein_min": 26.0,
         "crude_fat_min": 14.0,
@@ -1534,7 +1534,7 @@
       "product_format": "dry",
       "sub_brand": "Gold",
       "life_stage": "puppy",
-      "ingredients_raw": "Beef, Pork Meat & Bone Meal, Peas, Lentils, Chickpeas, Potatoes, Pork, Dried Egg Product, Pea Flour, Dried Tomato Pomace, Pork Liver, Pork Fat (preserved with mixed tocopherols), Salmon Oil (preserved with mixed tocopherols), Flaxseed, Cheese, Dried Yeast, Lamb, Alfalfa Meal, Celery, Carrots, Salt, Vitamins [Choline Chloride, Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Taurine, Chicory Root Extract, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Yucca Schidigera Extract, Sodium Selenite, Sorbic Acid (Preservative), L-Tryptophan, DL-Methionine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "ingredients_raw": "Beef, Pork Meat & Bone Meal, Peas, Lentils, Chickpeas, Potatoes, Pork, Dried Egg Product, Pea Flour, Dried Tomato Pomace, Pork Liver, Pork Fat (preserved with mixed tocopherols), Salmon Oil (preserved with mixed tocopherols), Flaxseed, Cheese, Dried Yeast, Lamb, Alfalfa Meal, Celery, Carrots, Salt, Vitamins [Choline Chloride, Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Taurine, Chicory Root Extract, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Yucca Schidigera Extract, Sodium Selenite, Sorbic Acid (Preservative), L-Tryptophan, DL-Methionine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product.",
       "guaranteed_analysis": {
         "crude_protein_min": 27.0,
         "crude_fat_min": 18.0,
@@ -1557,7 +1557,7 @@
       "product_format": "dry",
       "sub_brand": "Gold",
       "breed_size": "large",
-      "ingredients_raw": "Chicken, Chicken Meal, Chicken Broth, Oatmeal, Pearled Barley, Brown Rice, White Rice, Dried Tomato Pomace, Whole Oats, Whole Barley, Menhaden Fish Meal, Chicken Liver, Dried Egg Product, Chicken Fat (preserved with mixed tocopherols), Potatoes, Cheese, Flaxseed, Salmon Oil (preserved with mixed tocopherols), Dried Yeast, Carrots, Salt, Duck, Lamb, Sweet Potatoes, Celery, Alfalfa Meal, Monosodium Phosphate, Vitamins [Choline Chloride, Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Calcium Sulfate, Chicory Root Extract, Taurine, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Sorbic Acid (Preservative), Yucca Schidigera Extract, DL-Methionine, Sodium Selenite, L-Tryptophan, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "ingredients_raw": "Chicken, Chicken Meal, Chicken Broth, Oatmeal, Pearled Barley, Brown Rice, White Rice, Dried Tomato Pomace, Whole Oats, Whole Barley, Menhaden Fish Meal, Chicken Liver, Dried Egg Product, Chicken Fat (preserved with mixed tocopherols), Potatoes, Cheese, Flaxseed, Salmon Oil (preserved with mixed tocopherols), Dried Yeast, Carrots, Salt, Duck, Lamb, Sweet Potatoes, Celery, Alfalfa Meal, Monosodium Phosphate, Vitamins [Choline Chloride, Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Calcium Sulfate, Chicory Root Extract, Taurine, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Sorbic Acid (Preservative), Yucca Schidigera Extract, DL-Methionine, Sodium Selenite, L-Tryptophan, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product.",
       "guaranteed_analysis": {
         "crude_protein_min": 23.0,
         "crude_fat_min": 12.0,
@@ -1581,7 +1581,7 @@
       "sub_brand": "Gold",
       "life_stage": "puppy",
       "breed_size": "large",
-      "ingredients_raw": "Chicken, Chicken Meal, Chicken Broth, Oatmeal, Pearled Barley, Brown Rice, Potatoes, Menhaden Fish Meal, Dried Tomato Pomace, Chicken Fat (preserved with mixed tocopherols), Dried Egg Product, Chicken Liver, Whole Oats, Dried Yeast, Flaxseed, Whole Barley, Cheese, Salmon Oil (preserved with mixed tocopherols), Salt, Carrots, Duck, Lamb, Sweet Potatoes, Celery, Alfalfa Meal, Vitamins [Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Monosodium Phosphate, DL-Methionine, Chicory Root Extract, Calcium Sulfate, Taurine, Choline Chloride, Chicken Cartilage, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Sorbic Acid (Preservative), Yucca Schidigera Extract, L-Tryptophan, Sodium Selenite, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "ingredients_raw": "Chicken, Chicken Meal, Chicken Broth, Oatmeal, Pearled Barley, Brown Rice, Potatoes, Menhaden Fish Meal, Dried Tomato Pomace, Chicken Fat (preserved with mixed tocopherols), Dried Egg Product, Chicken Liver, Whole Oats, Dried Yeast, Flaxseed, Whole Barley, Cheese, Salmon Oil (preserved with mixed tocopherols), Salt, Carrots, Duck, Lamb, Sweet Potatoes, Celery, Alfalfa Meal, Vitamins [Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Monosodium Phosphate, DL-Methionine, Chicory Root Extract, Calcium Sulfate, Taurine, Choline Chloride, Chicken Cartilage, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Sorbic Acid (Preservative), Yucca Schidigera Extract, L-Tryptophan, Sodium Selenite, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product.",
       "guaranteed_analysis": {
         "crude_protein_min": 26.0,
         "crude_fat_min": 14.0,
@@ -1604,7 +1604,7 @@
       "product_format": "dry",
       "sub_brand": "Gold",
       "breed_size": "large",
-      "ingredients_raw": "Turkey Liver, Turkey Broth, Chicken Meal, Oatmeal, Pearled Barley, Dried Tomato Pomace, Brown Rice, White Rice, Whitefish, Menhaden Fish Meal, Whole Oats, Whole Barley, Millet, Flaxseed, Dried Egg Product, Chicken Fat (preserved with mixed tocopherols), Salmon Oil (preserved with mixed tocopherols), Miscanthus Grass, Oat Hulls, Potatoes, Dried Yeast, Cheese, Carrots, Sweet Potatoes, Celery, Salt, Vitamins [Potassium Chloride, Choline Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Taurine, Chicory Root Extract, Alfalfa Meal, Sorbic Acid (Preservative), Calcium Sulfate, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Chicken Cartilage, L-Carnitine, Yucca Schidigera Extract, Sodium Selenite, L-Tryptophan, DL-Methionine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "ingredients_raw": "Turkey Liver, Turkey Broth, Chicken Meal, Oatmeal, Pearled Barley, Dried Tomato Pomace, Brown Rice, White Rice, Whitefish, Menhaden Fish Meal, Whole Oats, Whole Barley, Millet, Flaxseed, Dried Egg Product, Chicken Fat (preserved with mixed tocopherols), Salmon Oil (preserved with mixed tocopherols), Miscanthus Grass, Oat Hulls, Potatoes, Dried Yeast, Cheese, Carrots, Sweet Potatoes, Celery, Salt, Vitamins [Potassium Chloride, Choline Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Taurine, Chicory Root Extract, Alfalfa Meal, Sorbic Acid (Preservative), Calcium Sulfate, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Chicken Cartilage, L-Carnitine, Yucca Schidigera Extract, Sodium Selenite, L-Tryptophan, DL-Methionine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product.",
       "guaranteed_analysis": {
         "crude_protein_min": 24.0,
         "crude_fat_min": 10.0,
@@ -1627,7 +1627,7 @@
       "product_format": "dry",
       "sub_brand": "Gold",
       "life_stage": "puppy",
-      "ingredients_raw": "Chicken, Chicken Meal, Chicken Broth, Oatmeal, Pearled Barley, Menhaden Fish Meal, Brown Rice, Chicken Fat (preserved with mixed tocopherols), Dried Tomato Pomace, Potatoes, Dried Egg Product, Whole Oats, Salmon Oil (preserved with mixed tocopherols), Dried Yeast, Whole Barley, Chicken Liver, Cheese, Flaxseed, Carrots, Duck, Lamb, Sweet Potatoes, Salt, Celery, Dehydrated Alfalfa Meal, Vitamins [Choline Chloride, Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Monosodium Phosphate, DL-Methionine, Dried Chicory Root, Taurine, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Chicken Cartilage, Sorbic Acid (Preservative), L-Tryptophan, Yucca Schidigera Extract, Sodium Selenite, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "ingredients_raw": "Chicken, Chicken Meal, Chicken Broth, Oatmeal, Pearled Barley, Menhaden Fish Meal, Brown Rice, Chicken Fat (preserved with mixed tocopherols), Dried Tomato Pomace, Potatoes, Dried Egg Product, Whole Oats, Salmon Oil (preserved with mixed tocopherols), Dried Yeast, Whole Barley, Chicken Liver, Cheese, Flaxseed, Carrots, Duck, Lamb, Sweet Potatoes, Salt, Celery, Dehydrated Alfalfa Meal, Vitamins [Choline Chloride, Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Monosodium Phosphate, DL-Methionine, Dried Chicory Root, Taurine, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Chicken Cartilage, Sorbic Acid (Preservative), L-Tryptophan, Yucca Schidigera Extract, Sodium Selenite, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product.",
       "guaranteed_analysis": {
         "crude_protein_min": 27.0,
         "crude_fat_min": 18.0,
@@ -1650,7 +1650,7 @@
       "product_format": "dry",
       "sub_brand": "Gold",
       "life_stage": "senior",
-      "ingredients_raw": "Chicken, Chicken Meal, Chicken Broth, Oat Groats, Pearled Barley, Brown Rice, Potatoes, Millet, Dried Tomato Pomace, Menhaden Fish Meal, Whole Oats, Chicken Liver, White Rice, Whole Barley, Salmon Oil (preserved with mixed tocopherols), Chicken Fat (preserved with mixed tocopherols), Dried Yeast, Cheese, Flaxseed, Dried Egg Product, Salt, Carrots, Duck, Lamb, Sweet Potatoes, Celery, Alfalfa Meal, Chicken Cartilage, Monosodium Phosphate, Vitamins [Choline Chloride, Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Chicory Root Extract, Yucca Schidigera Extract, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Sorbic Acid (Preservative), Taurine, L-Tryptophan, DL-Methionine, Sodium Selenite, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "ingredients_raw": "Chicken, Chicken Meal, Chicken Broth, Oat Groats, Pearled Barley, Brown Rice, Potatoes, Millet, Dried Tomato Pomace, Menhaden Fish Meal, Whole Oats, Chicken Liver, White Rice, Whole Barley, Salmon Oil (preserved with mixed tocopherols), Chicken Fat (preserved with mixed tocopherols), Dried Yeast, Cheese, Flaxseed, Dried Egg Product, Salt, Carrots, Duck, Lamb, Sweet Potatoes, Celery, Alfalfa Meal, Chicken Cartilage, Monosodium Phosphate, Vitamins [Choline Chloride, Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Chicory Root Extract, Yucca Schidigera Extract, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Sorbic Acid (Preservative), Taurine, L-Tryptophan, DL-Methionine, Sodium Selenite, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product.",
       "guaranteed_analysis": {
         "crude_protein_min": 23.0,
         "crude_fat_min": 11.0,
@@ -1673,7 +1673,7 @@
       "product_format": "dry",
       "sub_brand": "Gold",
       "breed_size": "small",
-      "ingredients_raw": "Chicken, Chicken Meal, Oatmeal, Pearled Barley, Chicken Broth, Brown Rice, Menhaden Fish Meal, Chicken Fat (preserved with mixed tocopherols), Dried Tomato Pomace, Dried Egg Product, Whole Oats, Salmon Oil (preserved with mixed tocopherols), Whole Barley, Dried Yeast, Chicken Liver, Cheese, Flaxseed, White Rice, Potatoes, Carrots, Salt, Duck, Lamb, Sweet Potatoes, Celery, Alfalfa Meal, Monosodium Phosphate, Vitamins [Choline Chloride, Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Taurine, Chicory Root Extract, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Yucca Schidigera Extract, Sorbic Acid (Preservative), DL-Methionine, L-Tryptophan, Sodium Selenite, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "ingredients_raw": "Chicken, Chicken Meal, Oatmeal, Pearled Barley, Chicken Broth, Brown Rice, Menhaden Fish Meal, Chicken Fat (preserved with mixed tocopherols), Dried Tomato Pomace, Dried Egg Product, Whole Oats, Salmon Oil (preserved with mixed tocopherols), Whole Barley, Dried Yeast, Chicken Liver, Cheese, Flaxseed, White Rice, Potatoes, Carrots, Salt, Duck, Lamb, Sweet Potatoes, Celery, Alfalfa Meal, Monosodium Phosphate, Vitamins [Choline Chloride, Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Taurine, Chicory Root Extract, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Yucca Schidigera Extract, Sorbic Acid (Preservative), DL-Methionine, L-Tryptophan, Sodium Selenite, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product.",
       "guaranteed_analysis": {
         "crude_protein_min": 26.0,
         "crude_fat_min": 17.0,
@@ -1695,7 +1695,7 @@
       "product_type": "food",
       "product_format": "dry",
       "sub_brand": "Gold",
-      "ingredients_raw": "Turkey Liver, Chicken Meal, Turkey Broth, Oatmeal, Pearled Barley, Menhaden Fish Meal, Whole Oats, Dried Tomato Pomace, Whitefish, Whole Barley, Brown Rice, Millet, White Rice, Oat Hulls, Flaxseed, Pea Fiber, Dried Yeast, Salmon Oil (preserved with mixed tocopherols), Chicken Fat (preserved with mixed tocopherols), Dried Egg Product, Potatoes, Salt, Sweet Potatoes, Carrots, Celery, Cheese, Alfalfa Meal, Vitamins [Choline Chloride, Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Taurine, Chicory Root Extract, Sorbic Acid (Preservative), Monosodium Phosphate, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Yucca Schidigera Extract, L-Carnitine, DL-Methionine, L-Tryptophan, Sodium Selenite, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "ingredients_raw": "Turkey Liver, Chicken Meal, Turkey Broth, Oatmeal, Pearled Barley, Menhaden Fish Meal, Whole Oats, Dried Tomato Pomace, Whitefish, Whole Barley, Brown Rice, Millet, White Rice, Oat Hulls, Flaxseed, Pea Fiber, Dried Yeast, Salmon Oil (preserved with mixed tocopherols), Chicken Fat (preserved with mixed tocopherols), Dried Egg Product, Potatoes, Salt, Sweet Potatoes, Carrots, Celery, Cheese, Alfalfa Meal, Vitamins [Choline Chloride, Potassium Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Taurine, Chicory Root Extract, Sorbic Acid (Preservative), Monosodium Phosphate, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Yucca Schidigera Extract, L-Carnitine, DL-Methionine, L-Tryptophan, Sodium Selenite, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product.",
       "guaranteed_analysis": {
         "crude_protein_min": 25.0,
         "crude_fat_min": 10.0,
@@ -1779,48 +1779,6 @@
       ]
     },
     {
-      "name": "Chicken Formula Digestive Support Supplement",
-      "brand": "Fromm",
-      "url": "https://frommfamily.com/products/dog/nutritionals/can/chicken-formula/",
-      "channel": "retail",
-      "product_type": "supplement",
-      "product_format": "wet",
-      "sub_brand": "Nutritionals",
-      "ingredients_raw": "Chicken, Chicken Broth, Chicken Liver, White Rice, Pumpkin, Miscanthus Grass, Flaxseed, Chicory Root Extract, Salmon Oil (preserved with mixed tocopherols), Sunflower Oil (preserved with mixed tocopherols), Minerals [Dicalcium Phosphate, Zinc Sulfate, Magnesium Sulfate, Ferrous Sulfate, Zinc Proteinate, Calcium Carbonate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Calcium Iodate, Manganese Sulfate, Copper Proteinate, Manganese Proteinate], Potassium Chloride, Xanthan Gum, Agar-Agar, Salt, Vitamins [Vitamin E Supplement, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid]",
-      "guaranteed_analysis": {
-        "crude_protein_min": 9.0,
-        "crude_fat_min": 5.0,
-        "crude_fiber_max": 3.0,
-        "moisture_max": 78.0
-      },
-      "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "1076 kcal/kg, 372 kcal/can",
-      "images": [
-        "/products/fromm/fromm-supplement-chicken-formula-digestive-support-supplement.png"
-      ]
-    },
-    {
-      "name": "Whitefish Formula Digestive Support Supplement",
-      "brand": "Fromm",
-      "url": "https://frommfamily.com/products/dog/nutritionals/can/whitefish-formula/",
-      "channel": "retail",
-      "product_type": "supplement",
-      "product_format": "wet",
-      "sub_brand": "Nutritionals",
-      "ingredients_raw": "Whitefish, Fish Broth, Potatoes, Pumpkin, Miscanthus Grass, Sunflower Oil (preserved with mixed tocopherols), Natural Flavor, Chicory Root Extract, Salmon Oil (preserved with mixed tocopherols), Minerals [Dicalcium Phosphate, Zinc Sulfate, Magnesium Sulfate, Ferrous Sulfate, Zinc Proteinate, Calcium Carbonate, Copper Sulfate, Iron Proteinate, Sodium Selenite, Calcium Iodate, Manganese Sulfate, Copper Proteinate, Manganese Proteinate], Salt, Potassium Chloride, Xanthan Gum, Agar-Agar, Vitamins [Choline Chloride, Vitamin E Supplement, Niacin Supplement, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Thiamine Mononitrate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Folic Acid]",
-      "guaranteed_analysis": {
-        "crude_protein_min": 8.0,
-        "crude_fat_min": 3.0,
-        "crude_fiber_max": 3.0,
-        "moisture_max": 78.0
-      },
-      "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "881 kcal/kg, 305 kcal/can",
-      "images": [
-        "/products/fromm/fromm-supplement-whitefish-formula-digestive-support-supplement.png"
-      ]
-    },
-    {
       "name": "Sensitive Skin & Stomach Complete Dog Food Pâté",
       "brand": "Fromm",
       "url": "https://frommfamily.com/products/dog/nutritionals/can/sensitive-skin-and-stomach-supplement-pate/",
@@ -1862,7 +1820,7 @@
         "omega_6_min": 1.6
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "2 Calories per treat (approximate)",
+      "calorie_content": "2 kcal/treat",
       "images": [
         "/products/fromm/fromm-treat-digestive-functional-dog-treats.png"
       ]
@@ -1885,7 +1843,7 @@
         "omega_6_min": 1.6
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "3 Calories per treat (approximate)",
+      "calorie_content": "3 kcal/treat",
       "images": [
         "/products/fromm/fromm-treat-immunity-functional-dog-treats.png"
       ]
@@ -1908,7 +1866,7 @@
         "omega_6_min": 1.5
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "3 Calories per treat (approximate)",
+      "calorie_content": "3 kcal/treat",
       "images": [
         "/products/fromm/fromm-treat-mobility-functional-dog-treats.png"
       ]
@@ -1916,12 +1874,12 @@
     {
       "name": "Sensitive Skin & Stomach Salmon & Whole Oats Recipe",
       "brand": "Fromm",
-      "url": "https://frommfamily.com/products/dog/nutritionals/dry/sensitive-skin-and-stomach-dry/",
+      "url": "https://frommfamily.com/products/dog/nutritionals/dry/sensitive-skin-and-stomach/",
       "channel": "retail",
       "product_type": "food",
       "product_format": "dry",
       "sub_brand": "Nutritionals",
-      "ingredients_raw": "Hydrolyzed Salmon, Menhaden Fish Meal, Whole Oats, Pearled Barley, Brown Rice, Pumpkin, Dried Plain Beet Pulp, Pork Fat (preserved with mixed tocopherols), Hydrolyzed Whitefish, Dried Yeast, Hydrolyzed Pork Liver, Salmon Oil (preserved with mixed tocopherols), Dried Egg Product, Flaxseed, Ground Miscanthus Grass, Psyllium Seed Husk, Natural Flavor, Apples, Calcium Sulfate, Monocalcium Phosphate, Potassium Chloride, Salt, Vitamins [Choline Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Dried Chicory Root, Fennel, Dried Lactobacillus acidophilus Fermentation Product, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Yucca Schidigera Extract, Sodium Selenite, Sorbic Acid (Preservative), DL-Methionine, L-Tryptophan, Taurine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "ingredients_raw": "Hydrolyzed Salmon, Menhaden Fish Meal, Whole Oats, Pearled Barley, Brown Rice, Pumpkin, Dried Plain Beet Pulp, Pork Fat (preserved with mixed tocopherols), Hydrolyzed Whitefish, Dried Yeast, Hydrolyzed Pork Liver, Salmon Oil (preserved with mixed tocopherols), Dried Egg Product, Flaxseed, Ground Miscanthus Grass, Psyllium Seed Husk, Natural Flavor, Apples, Calcium Sulfate, Monocalcium Phosphate, Potassium Chloride, Salt, Vitamins [Choline Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Dried Chicory Root, Fennel, Dried Lactobacillus acidophilus Fermentation Product, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Yucca Schidigera Extract, Sodium Selenite, Sorbic Acid (Preservative), DL-Methionine, L-Tryptophan, Taurine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus plantarum Fermentation Product.",
       "guaranteed_analysis": {
         "crude_protein_min": 24.0,
         "crude_fat_min": 12.0,
@@ -1945,7 +1903,7 @@
       "product_type": "food",
       "product_format": "dry",
       "sub_brand": "Nutritionals",
-      "ingredients_raw": "Hydrolyzed Chicken, Chicken Meal, Oatmeal, Pearled Barley, White Rice, Brown Rice, Dried Plain Beet Pulp, Hydrolyzed Chicken Liver, Menhaden Fish Meal, Pumpkin, Dried Yeast, Natural Flavor, Chicken Fat (preserved with mixed tocopherols), Salmon Oil (preserved with mixed tocopherols), Dried Egg Product, Flaxseed, Salt, Potassium Chloride, Psyllium Seed Husk, Vitamins [Choline Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Dried Chicory Root, Dried Lactobacillus acidophilus Fermentation Product, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Calcium Sulfate, Monocalcium Phosphate, Sorbic Acid (Preservative), Sodium Selenite, Fennel, Yucca Schidigera Extract, Taurine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "ingredients_raw": "Hydrolyzed Chicken, Chicken Meal, Oatmeal, Pearled Barley, White Rice, Brown Rice, Dried Plain Beet Pulp, Hydrolyzed Chicken Liver, Menhaden Fish Meal, Pumpkin, Dried Yeast, Natural Flavor, Chicken Fat (preserved with mixed tocopherols), Salmon Oil (preserved with mixed tocopherols), Dried Egg Product, Flaxseed, Salt, Potassium Chloride, Psyllium Seed Husk, Vitamins [Choline Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Dried Chicory Root, Dried Lactobacillus acidophilus Fermentation Product, Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate], Calcium Sulfate, Monocalcium Phosphate, Sorbic Acid (Preservative), Sodium Selenite, Fennel, Yucca Schidigera Extract, Taurine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus plantarum Fermentation Product.",
       "guaranteed_analysis": {
         "crude_protein_min": 24.0,
         "crude_fat_min": 7.0,
@@ -1967,7 +1925,7 @@
       "product_type": "food",
       "product_format": "dry",
       "sub_brand": "Nutritionals",
-      "ingredients_raw": "Chicken, Chicken Meal, Whole Oats, Whole Barley, Brown Rice, Bone Broth, Sorghum, Dried Yeast, Salmon Meal, Salmon Oil (preserved with mixed tocopherols), Chicken Fat (preserved with mixed tocopherols), Dried Egg Product, Flaxseed, Cheese, Natural Flavor, Chicken Liver, Salt, Potassium Chloride, Egg Shell Meal, Monosodium Phosphate, Chicken Cartilage, Vitamins [Choline Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Gelatin, Calcium Sulfate, Cranberries, Blueberries, New Zealand Green Mussels, Glucosamine Hydrochloride, Dried Chicory Root, Turmeric, Olive Oil (preserved with mixed tocopherols), Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate, Sodium Selenite], Yucca Schidigera Extract, Chondroitin Sulfate, Sorbic Acid (Preservative), Taurine, DL-Methionine, L-Tryptophan, L-Carnitine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product",
+      "ingredients_raw": "Chicken, Chicken Meal, Whole Oats, Whole Barley, Brown Rice, Bone Broth, Sorghum, Dried Yeast, Salmon Meal, Salmon Oil (preserved with mixed tocopherols), Chicken Fat (preserved with mixed tocopherols), Dried Egg Product, Flaxseed, Cheese, Natural Flavor, Chicken Liver, Salt, Potassium Chloride, Egg Shell Meal, Monosodium Phosphate, Chicken Cartilage, Vitamins [Choline Chloride, Vitamin E Supplement, Ascorbic Acid, Calcium Carbonate, Riboflavin Supplement, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Thiamine Mononitrate, Folic Acid], Gelatin, Calcium Sulfate, Cranberries, Blueberries, New Zealand Green Mussels, Glucosamine Hydrochloride, Dried Chicory Root, Turmeric, Olive Oil (preserved with mixed tocopherols), Minerals [Zinc Sulfate, Manganese Sulfate, Ferrous Sulfate, Magnesium Sulfate, Zinc Proteinate, Iron Proteinate, Manganese Proteinate, Copper Sulfate, Magnesium Proteinate, Copper Proteinate, Calcium Iodate, Sodium Selenite], Yucca Schidigera Extract, Chondroitin Sulfate, Sorbic Acid (Preservative), Taurine, DL-Methionine, L-Tryptophan, L-Carnitine, Dried Lactobacillus casei Fermentation Product, Dried Lactobacillus reuteri Fermentation Product, Dried Lactobacillus acidophilus Fermentation Product, Dried Lactobacillus plantarum Fermentation Product.",
       "guaranteed_analysis": {
         "crude_protein_min": 26.0,
         "crude_fat_min": 13.0,
@@ -2373,7 +2331,7 @@
         "moisture_max": 10.0
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "3 Calories per treat (approximate)",
+      "calorie_content": "3 kcal/treat",
       "images": [
         "/products/fromm/fromm-treat-banana-peanut-buster-flavor.png"
       ]
@@ -2394,7 +2352,7 @@
         "moisture_max": 10.0
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "2 Calories per treat (approximate)",
+      "calorie_content": "2 kcal/treat",
       "images": [
         "/products/fromm/fromm-treat-chompy-cheese-flavor.png"
       ]
@@ -2415,7 +2373,7 @@
         "moisture_max": 10.0
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "2 Calories per treat (approximate)",
+      "calorie_content": "2 kcal/treat",
       "images": [
         "/products/fromm/fromm-treat-crispy-airy-cranberry-flavor.png"
       ]
@@ -2436,7 +2394,7 @@
         "moisture_max": 10.0
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "2 Calories per treat (approximate)",
+      "calorie_content": "2 kcal/treat",
       "images": [
         "/products/fromm/fromm-treat-kickin-chicken-liver-flavor.png"
       ]
@@ -2457,7 +2415,7 @@
         "moisture_max": 27.0
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "2 Calories per treat (approximate)",
+      "calorie_content": "2 kcal/treat",
       "images": [
         "/products/fromm/fromm-treat-tenderollies-bac-n-chedd-a-rollie-flavor.png"
       ]
@@ -2478,7 +2436,7 @@
         "moisture_max": 25.0
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "2 Calories per treat (approximate)",
+      "calorie_content": "2 kcal/treat",
       "images": [
         "/products/fromm/fromm-treat-tenderollies-beef-a-rollie-flavor.png"
       ]
@@ -2499,7 +2457,7 @@
         "moisture_max": 25.0
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "2 Calories per treat (approximate)",
+      "calorie_content": "2 kcal/treat",
       "images": [
         "/products/fromm/fromm-treat-tenderollies-chick-a-rollie-flavor.png"
       ]

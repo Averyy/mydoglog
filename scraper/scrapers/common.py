@@ -884,9 +884,9 @@ def normalize_calorie_content(raw: str) -> str | None:
     # real decimal in calorie values (no food is 3.721 kcal/kg).
     raw_clean = re.sub(r"(\d)\.(\d{3})(?=\D)", r"\1\2", raw_clean)
 
-    # Match kcal, cal, kilocalories — and tolerate mg/kg typos for kg extraction
-    _CAL = r"(?:kcals?|kilocalories?|cal)"
-    _CAL_KG = r"(?:kcals?|kilocalories?|cal|mg)"
+    # Match kcal, cal, calories, kilocalories — and tolerate mg/kg typos for kg extraction
+    _CAL = r"(?:kcals?|kilocalories?|calories?|cals?)"
+    _CAL_KG = r"(?:kcals?|kilocalories?|calories?|cals?|mg)"
 
     # Extract kcal/kg — number immediately before or near kg/kilogram
     kg_match = re.search(
@@ -949,7 +949,57 @@ def normalize_calorie_content(raw: str) -> str | None:
         else:
             parts.append(f"{int(val)} kcal/{cup_unit}")
 
-    return ", ".join(parts) if parts else raw.strip()
+    if not parts:
+        return None
+    return ", ".join(parts)
+
+
+def apply_fallback_data(
+    products: list[Product],
+    fallback_data: dict[str, dict],
+    *,
+    override_ga: bool = False,
+    match_field: str = "url",
+) -> int:
+    """Apply manual fallback data to products missing GA or calories.
+
+    Args:
+        products: List of products to update in-place.
+        fallback_data: URL-pattern-keyed dict with optional keys:
+            calorie_content, guaranteed_analysis, guaranteed_analysis_basis.
+        override_ga: If True, replace existing GA with fallback GA (used when
+            replacing dry-matter GA with verified as-fed GA from Chewy).
+            If False, only fill GA when product has none.
+        match_field: Product field to match URL patterns against.
+
+    Returns number of products filled.
+    """
+    filled = 0
+    for product in products:
+        match_value = product.get(match_field, "")
+        for pattern, fields in fallback_data.items():
+            if pattern not in match_value:
+                continue
+            changed = False
+            if fields.get("guaranteed_analysis"):
+                if override_ga or not product.get("guaranteed_analysis"):
+                    product["guaranteed_analysis"] = fields["guaranteed_analysis"]
+                    product["guaranteed_analysis_basis"] = fields.get(
+                        "guaranteed_analysis_basis", "as-fed"
+                    )
+                    changed = True
+            if fields.get("calorie_content") and not product.get("calorie_content"):
+                cal = normalize_calorie_content(fields["calorie_content"])
+                if cal:
+                    product["calorie_content"] = cal
+                    changed = True
+            if changed:
+                filled += 1
+                logger.info(f"  Fallback: filled {product['name'][:50]}")
+            break
+    if filled:
+        logger.info(f"  Fallback filled {filled} products")
+    return filled
 
 
 # --- Chewy.com helpers ---

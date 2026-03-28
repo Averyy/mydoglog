@@ -1,7 +1,7 @@
 {
   "brand": "Hill's",
   "website_url": "https://www.petsmart.ca",
-  "scraped_at": "2026-03-22T13:57:01.272434+00:00",
+  "scraped_at": "2026-03-27T22:13:24.961038+00:00",
   "scraper_version": "0.1.0",
   "stats": {
     "product_count": 87,
@@ -37,20 +37,15 @@
         }
       ],
       "ingredients_raw": "Water, Beef, Cracked Pearled Barley, Whole Grain Corn, Pork Liver, Corn Gluten Meal, Dried Whey, Dried Beet Pulp, Chicken Liver Flavor, Soybean Oil, Calcium Carbonate, Dicalcium Phosphate, Potassium Chloride, Iodized Salt, Choline Chloride, vitamins (Vitamin E Supplement, Thiamine Mononitrate, Ascorbic Acid (source of Vitamin C), Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Riboflavin Supplement, Vitamin D3 Supplement, Folic Acid), L-Lysine, minerals (Zinc Oxide, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate), Taurine, Beta-Carotene",
-      "calorie_content": "376 kcal/13 oz (370g) can",
       "guaranteed_analysis": {
-        "crude_protein_min": 21.5,
-        "crude_fat_min": 12.1,
-        "crude_fiber_max": 2.0,
-        "ash_max": 6.0,
-        "calcium_min": 0.85,
-        "phosphorus_min": 0.54,
-        "potassium_min": 0.83,
-        "sodium_min": 0.27,
-        "omega_3_min": 0.29,
-        "omega_6_min": 3.11
+        "crude_protein_min": 4.6,
+        "crude_fat_min": 2.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0,
+        "ash_min": 2.0
       },
-      "guaranteed_analysis_basis": "dry-matter"
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "354 kcal/can"
     },
     {
       "name": "Science Diet 7+ Senior Wet Dog Food - Chicken & Barley",
@@ -74,19 +69,14 @@
         }
       ],
       "ingredients_raw": "Water, Chicken, Cracked Pearled Barley, Pork Liver, Whole Grain Corn, Dried Whey, Dried Beet Pulp, Corn Gluten Meal, Chicken Liver Flavor, Soybean Oil, Flaxseed, Calcium Carbonate, Potassium Chloride, Choline Chloride, Iodized Salt, vitamins (Vitamin E Supplement, Thiamine Mononitrate, Ascorbic Acid (source of Vitamin C), Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Riboflavin Supplement, Vitamin D3 Supplement, Folic Acid), Dicalcium Phosphate, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), L-Tryptophan, Beta-Carotene",
-      "calorie_content": "375 kcal / 13 oz (370 g) Can",
       "guaranteed_analysis": {
-        "crude_protein_min": 22.1,
-        "crude_fat_min": 14.3,
-        "crude_fiber_max": 2.0,
-        "ash_max": 6.5,
-        "calcium_min": 1.02,
-        "potassium_min": 0.92,
-        "sodium_min": 0.32,
-        "omega_3_min": 0.44,
-        "omega_6_min": 4.2
+        "crude_protein_min": 4.7,
+        "crude_fat_min": 2.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0
       },
-      "guaranteed_analysis_basis": "dry-matter"
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "375 kcal/can"
     },
     {
       "name": "Science Diet Adult Dog Wet Food - Salmon & Barley Entree",
@@ -118,7 +108,7 @@
         "ash_max": 2.8
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "369 kcal / 13 oz (370 g)"
+      "calorie_content": "369 kcal/can"
     },
     {
       "name": "Science Diet Adult Entree Dog Food - Chicken & Beef",
@@ -144,18 +134,13 @@
       "ingredients_raw": "Water, Chicken, Beef, Beef By-Products, Pork Liver, Rice, Cracked Pearled Barley, Whole Grain Corn, Corn Gluten Meal, Chicken Liver Flavor, Soybean Oil, Calcium Carbonate, Dicalcium Phosphate, Potassium Chloride, Choline Chloride, Iodized Salt, vitamins (Vitamin E Supplement, Thiamine Mononitrate, Ascorbic Acid (source of Vitamin C), Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin D3 Supplement, Riboflavin Supplement, Folic Acid), L-Lysine, minerals (Zinc Oxide, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate), Beta-Carotene",
       "calorie_content": "1039 kcal/kg",
       "guaranteed_analysis": {
-        "crude_protein_min": 25.4,
-        "crude_fat_min": 19.8,
+        "crude_protein_min": 4.0,
+        "crude_fat_min": 3.0,
         "crude_fiber_max": 1.5,
-        "ash_max": 7.0,
-        "calcium_min": 1.29,
-        "phosphorus_min": 0.68,
-        "potassium_min": 0.87,
-        "sodium_min": 0.39,
-        "omega_3_min": 0.39,
-        "omega_6_min": 0.0
+        "moisture_max": 78.0,
+        "ash_max": 3.3
       },
-      "guaranteed_analysis_basis": "dry-matter"
+      "guaranteed_analysis_basis": "as-fed"
     },
     {
       "name": "Science Diet Adult Perfect Weight Wet Dog Food - Chicken & Vegetable",
@@ -210,20 +195,15 @@
         }
       ],
       "ingredients_raw": "Water, Beef, Pork Liver, Whole Grain Corn, Cracked Pearled Barley, Chicken Liver Flavor, Soybean Oil, Dried Beet Pulp, Calcium Carbonate, Chicken Fat, Dicalcium Phosphate, Potassium Chloride, Choline Chloride, Iodized Salt, vitamins (Vitamin E Supplement, Thiamine Mononitrate, Ascorbic Acid (source of Vitamin C), Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin D3 Supplement, Riboflavin Supplement, Folic Acid), minerals (Zinc Oxide, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate), Beta-Carotene",
-      "calorie_content": "406 kcals / 13 oz (370 g)can",
       "guaranteed_analysis": {
-        "crude_protein_min": 25.5,
-        "crude_fat_min": 14.2,
-        "crude_fiber_max": 1.9,
-        "ash_max": 6.1,
-        "calcium_min": 0.82,
-        "phosphorus_min": 0.55,
-        "potassium_min": 0.71,
-        "sodium_min": 0.38,
-        "omega_3_min": 0.38,
-        "omega_6_min": 3.01
+        "crude_protein_min": 5.0,
+        "crude_fat_min": 2.5,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0,
+        "ash_min": 2.5
       },
-      "guaranteed_analysis_basis": "dry-matter"
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "363 kcal/can"
     },
     {
       "name": "Science Diet Adult Wet Dog Food - Chicken & Barley",
@@ -247,20 +227,15 @@
         }
       ],
       "ingredients_raw": "Water, Chicken, Pork Liver, Whole Grain Corn, Cracked Pearled Barley, Beef By-Products, Soybean Meal, Chicken Liver Flavor, Dried Whey, Soybean Oil, Calcium Carbonate, Iodized Salt, Potassium Chloride, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Menadione Sodium Bisulfite Complex (source of Vitamin K), Pyridoxine Hydrochloride, Calcium Pantothenate, Vitamin B12 Supplement, Riboflavin Supplement, Vitamin D3 Supplement, Folic Acid, Biotin), Choline Chloride, minerals (Zinc Oxide, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate), Beta-Carotene",
-      "calorie_content": "369 kcal / 13 oz (370 g) Can",
       "guaranteed_analysis": {
-        "crude_protein_min": 26.7,
-        "crude_fat_min": 16.7,
-        "crude_fiber_max": 1.0,
-        "ash_max": 5.9,
-        "calcium_min": 0.86,
-        "phosphorus_min": 0.67,
-        "potassium_min": 0.88,
-        "sodium_min": 0.34,
-        "omega_3_min": 0.43,
-        "omega_6_min": 5.21
+        "crude_protein_min": 4.5,
+        "crude_fat_min": 2.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0,
+        "ash_max": 2.7
       },
-      "guaranteed_analysis_basis": "dry-matter"
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "369 kcal/can"
     },
     {
       "name": "Science Diet Healthy Cuisine Adult 7+ Wet Dog Food",
@@ -324,14 +299,11 @@
         "crude_protein_min": 4.0,
         "crude_fat_min": 2.5,
         "crude_fiber_max": 2.5,
-        "calcium_min": 0.22,
-        "phosphorus_min": 0.13,
-        "taurine_min": 0.01,
-        "omega_3_min": 0.15,
-        "omega_6_min": 0.69
+        "moisture_max": 84.0,
+        "ash_min": 2.0
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "Protein                                       4.0%        5.6%        26.3%        7.1 g                 100 kcal"
+      "calorie_content": "305 kcal/can"
     },
     {
       "name": "Science Diet Healthy Cuisine Adult Wet Dog Food - Roasted Chicken, Carrots & Spinach",
@@ -359,13 +331,11 @@
         "crude_protein_min": 4.0,
         "crude_fat_min": 2.5,
         "crude_fiber_max": 2.5,
-        "calcium_min": 0.18,
-        "phosphorus_min": 0.12,
-        "omega_3_min": 0.24,
-        "omega_6_min": 0.92
+        "moisture_max": 85.0,
+        "ash_min": 2.0
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "Protein                                       4.0%        5.3%        27.4%        7.2 g                 100 kcal"
+      "calorie_content": "263 kcal/can"
     },
     {
       "name": "Science Diet Perfect Digestion Adult Wet Dog Food - Chicken, Vegetable & Rice Stew",
@@ -393,13 +363,10 @@
         "crude_protein_min": 3.5,
         "crude_fat_min": 1.2,
         "crude_fiber_max": 1.5,
-        "calcium_min": 0.18,
-        "phosphorus_min": 0.12,
-        "omega_3_min": 0.1,
-        "omega_6_min": 0.44
+        "moisture_max": 84.0
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "Protein                                       3.5%        4.9%        25.7%        6.4 g                 100 kcal"
+      "calorie_content": "278 kcal/can"
     },
     {
       "name": "Science Diet Perfect Digestion Chicken & Rice Entree Adult Dog Wet Food",
@@ -423,19 +390,14 @@
         }
       ],
       "ingredients_raw": "Chicken Broth, Green Beans, Chicken, Turkey, Carrots, Rice, Pork Liver, Potato Starch, Hydrolyzed Chicken Flavor, Egg Product, Ground Pecan Shells, Potassium Chloride, Fish Oil, Dicalcium Phosphate, Flaxseed, Dried Beet Pulp, Locust Bean Gum, Dried Citrus Pulp, Carrageenan, Disodium Phosphate, Choline Chloride, Pumpkin, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Ascorbic Acid (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Vitamin A Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Riboflavin Supplement, Biotin, Menadione Sodium Bisulfite Complex (source of Vitamin K), Folic Acid, Vitamin D3 Supplement), Pressed Cranberries, Magnesium Oxide, Guar Gum, Taurine, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganese Sulfate, Calcium Iodate), Beta-Carotene",
-      "calorie_content": "372 kcal / 12.8 oz ((363 g) Can",
       "guaranteed_analysis": {
-        "crude_protein_min": 26.9,
-        "crude_fat_min": 17.0,
-        "crude_fiber_max": 2.6,
-        "calcium_min": 0.87,
-        "phosphorus_min": 0.79,
-        "potassium_min": 1.16,
-        "sodium_min": 0.36,
-        "omega_3_min": 0.62,
-        "omega_6_min": 2.93
+        "crude_protein_min": 4.7,
+        "crude_fat_min": 2.3,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 78.0
       },
-      "guaranteed_analysis_basis": "dry-matter"
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "372 kcal/can"
     },
     {
       "name": "Science Diet Perfect Weight Adult Dog Wet Food - Hearty Vegetables & Salmon Stew",
@@ -459,19 +421,14 @@
         }
       ],
       "ingredients_raw": "Chicken Broth, Pork Liver, Carrots, Salmon, Green Peas, Rice, Corn Starch, Powdered Cellulose, Oat Fiber, Whole Grain Barley, Dried Tomato Pomace, Natural Flavor, Wheat Gluten, Flaxseed, Coconut Oil, Potassium Alginate, Calcium Chloride, Dicalcium Phosphate, Soybean Oil, Calcium Sulfate, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Menadione Sodium Bisulfite Complex (source of Vitamin K), Riboflavin Supplement, Biotin, Folic Acid), Guar Gum, Sodium Tripolyphosphate, Potassium Citrate, Lipoic Acid, Magnesium Oxide, L-Lysine, Choline Chloride, Taurine, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganese Sulfate, Calcium Iodate), L-Carnitine, Calcium Carbonate",
-      "calorie_content": "259 kcal / 12.5 oz (354 g) can",
       "guaranteed_analysis": {
-        "crude_protein_min": 29.3,
-        "crude_fat_min": 12.3,
-        "crude_fiber_max": 10.8,
-        "calcium_min": 0.99,
-        "phosphorus_min": 0.74,
-        "potassium_min": 0.93,
-        "sodium_min": 0.33,
-        "omega_3_min": 1.22,
-        "omega_6_min": 2.19
+        "crude_protein_min": 4.0,
+        "crude_fat_min": 1.5,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 84.0
       },
-      "guaranteed_analysis_basis": "dry-matter"
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "259 kcal/can"
     },
     {
       "name": "Science Diet Perfect Weight Adult Wet Dog Food - Vegetable & Chicken Stew",
@@ -528,19 +485,14 @@
         }
       ],
       "ingredients_raw": "Chicken Broth, Pork Liver, Carrots, Powdered Cellulose, Corn Starch, Green Peas, Tuna, Wheat Gluten, Dried Tomato Pomace, Soybean Oil, Hydrolyzed Chicken Flavor, Chicken Liver Flavor, Rice, Potassium Alginate, Coconut Oil, Fish Oil, Flaxseed, Calcium Chloride, Guar Gum, Dicalcium Phosphate, Potassium Chloride, Calcium Lactate, Calcium Gluconate, Monosodium Phosphate, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Ascorbic Acid (source of Vitamin C), Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin A Supplement, Biotin, Riboflavin Supplement, Folic Acid, Menadione Sodium Bisulfite Complex (source of Vitamin K), Vitamin D3 Supplement), Sodium Tripolyphosphate, Choline Chloride, Taurine, L-Carnitine, minerals (Zinc Oxide, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate), Beta-Carotene",
-      "calorie_content": "220 kcal / 12.5 oz (354 g) can",
       "guaranteed_analysis": {
-        "crude_protein_min": 28.5,
-        "crude_fat_min": 14.0,
-        "crude_fiber_max": 14.1,
-        "calcium_min": 0.8,
-        "phosphorus_min": 0.62,
-        "potassium_min": 1.14,
-        "sodium_min": 0.39,
-        "omega_3_min": 1.63,
-        "omega_6_min": 3.47
+        "crude_protein_min": 3.0,
+        "crude_fat_min": 0.7,
+        "crude_fiber_max": 3.0,
+        "moisture_max": 86.0
       },
-      "guaranteed_analysis_basis": "dry-matter"
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "220 kcal/can"
     },
     {
       "name": "Science Diet Puppy Wet Dog Food - Chicken & Barley",
@@ -572,7 +524,7 @@
         "ash_max": 3.4
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "495 Kcal / 13 oz (370 g) Can"
+      "calorie_content": "1339 kcal/kg"
     },
     {
       "name": "Science Diet Puppy Wet Dog Food - Chicken & Rice Stew",
@@ -600,14 +552,10 @@
         "crude_protein_min": 4.5,
         "crude_fat_min": 2.5,
         "crude_fiber_max": 2.5,
-        "calcium_min": 0.36,
-        "phosphorus_min": 0.22,
-        "dha_min": 0.014,
-        "omega_3_min": 0.11,
-        "omega_6_min": 0.75
+        "moisture_max": 82.0
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "Protein 4.5 %  6.5 % 29.9 % 7.1 g / 100 kcal"
+      "calorie_content": "908 kcal/kg"
     },
     {
       "name": "Science Diet Savory Stew 7+ Senior Wet Dog Food - Beef & Vegetable",
@@ -731,7 +679,7 @@
         "crude_fiber_max": 1.5
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "841"
+      "calorie_content": "327 kcal/can"
     },
     {
       "name": "Science Diet Savory Stew Puppy Wet Dog Food - Chicken & Vegetables",
@@ -762,7 +710,7 @@
         "crude_fiber_max": 1.5
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "851"
+      "calorie_content": "323 kcal/can"
     },
     {
       "name": "Science Diet Senior Vitality 7+ Senior Wet Dog Food - Chicken & Vegetable Stew",
@@ -790,13 +738,10 @@
         "crude_protein_min": 3.0,
         "crude_fat_min": 2.0,
         "crude_fiber_max": 2.0,
-        "calcium_min": 0.18,
-        "phosphorus_min": 0.12,
-        "omega_3_min": 0.17,
-        "omega_6_min": 0.76
+        "moisture_max": 85.0
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "Protein                                       3.0%        4.6%        22.2%        5.6 g                 100 kcal"
+      "calorie_content": "286 kcal/can"
     },
     {
       "name": "Science Diet Sensitive Stomach & Skin Adult Dog Wet Food - Chicken & Vegetable Stew",
@@ -820,19 +765,14 @@
         }
       ],
       "ingredients_raw": "Chicken Broth, Chicken, Pork Liver, Carrots, Rice, Turkey, Rice Starch, Chicken Liver Flavor, Green Peas, Natural Flavor, Dried Beet Pulp, Flaxseed, Potassium Alginate, Calcium Chloride, Soybean Oil, Guar Gum, Dicalcium Phosphate, Calcium Lactate, Calcium Gluconate, Sodium Tripolyphosphate, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Riboflavin Supplement, Vitamin D3 Supplement, Folic Acid), Magnesium Oxide, Taurine, minerals (Zinc Oxide, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate)",
-      "calorie_content": "280 kcal / 12.5 oz (354 g) can",
       "guaranteed_analysis": {
-        "crude_protein_min": 28.7,
-        "crude_fat_min": 18.6,
-        "crude_fiber_max": 1.6,
-        "calcium_min": 0.88,
-        "phosphorus_min": 0.69,
-        "potassium_min": 0.86,
-        "sodium_min": 0.38,
-        "omega_3_min": 0.77,
-        "omega_6_min": 3.87
+        "crude_protein_min": 3.0,
+        "crude_fat_min": 1.5,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 84.0
       },
-      "guaranteed_analysis_basis": "dry-matter"
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "280 kcal/can"
     },
     {
       "name": "Science Diet Sensitive Stomach & Skin Adult Wet Dog Food - Salmon & Vegetable",
@@ -863,7 +803,7 @@
         "crude_fiber_max": 1.0
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "309 kcal/can"
+      "calorie_content": "280 kcal/can"
     },
     {
       "name": "Science Diet Sensitive Stomach & Skin Adult Wet Dog Food - Turkey & Rice",
@@ -918,20 +858,14 @@
         }
       ],
       "ingredients_raw": "Chicken Broth, Pork Liver, Salmon, Carrots, Rice Starch, Rice, Chicken Fat, Potato Protein, Green Peas, Egg Whites, Potato Starch, Soybean Oil, Chicken Liver Flavor, Hydrolyzed Chicken Flavor, Dried Beet Pulp, Egg Yolks, Potassium Alginate, Calcium Chloride, Brewers Dried Yeast, Dicalcium Phosphate, Monosodium Phosphate, Potassium Citrate, Calcium Sulfate, Guar Gum, Sodium Tripolyphosphate, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Riboflavin Supplement, Folic Acid), minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Manganese Sulfate, Calcium Iodate, Sodium Selenite), Choline Chloride, Taurine, Magnesium Oxide, Thiamine Hydrochloride, Calcium Carbonate",
-      "calorie_content": "309 kcal / 12.5 oz (354 g) can",
       "guaranteed_analysis": {
-        "crude_protein_min": 31.5,
-        "crude_fat_min": 21.6,
-        "crude_fiber_max": 1.1,
-        "calcium_min": 1.21,
-        "phosphorus_min": 1.04,
-        "potassium_min": 0.93,
-        "sodium_min": 0.6,
-        "dha_min": 0.222,
-        "omega_3_min": 1.0,
-        "omega_6_min": 4.92
+        "crude_protein_min": 4.5,
+        "crude_fat_min": 2.4,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 83.0
       },
-      "guaranteed_analysis_basis": "dry-matter"
+      "guaranteed_analysis_basis": "as-fed",
+      "calorie_content": "309 kcal/can"
     },
     {
       "name": "Science Diet 7+ Senior Dry Dog Food - Chicken, Barley & Brown Rice Chicken Meal",
@@ -942,17 +876,11 @@
       "product_format": "dry",
       "sub_brand": "Science Diet",
       "life_stage": "senior",
-      "source_id": "5182759",
+      "source_id": "5286676",
       "images": [
         "/products/hill-s/hill-s-food-science-diet-7-senior-dry-dog-food-chicken-barley-brown-rice-chicken-meal.jpg"
       ],
       "variants": [
-        {
-          "size_kg": 0.0,
-          "size_description": "",
-          "upc": "0052742204208",
-          "sku": "5182759"
-        },
         {
           "size_kg": 0.0,
           "size_description": "",
@@ -969,7 +897,7 @@
         "omega_6_min": 2.5
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "3619 kcal/kg, 359 kcal/cup"
+      "calorie_content": "3550 kcal/kg, 352 kcal/cup"
     },
     {
       "name": "Science Diet 7+ Senior Dry Dog Food - Chicken, Barley & Brown Rice Chicken Meal",
@@ -1001,7 +929,7 @@
         "omega_6_min": 2.5
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "3619 kcal/kg, 359 kcal/cup"
+      "calorie_content": "3550 kcal/kg, 352 kcal/cup"
     },
     {
       "name": "Science Diet Adult Dog Dry Food - Salmon & Brown Rice Recipe",
@@ -1031,7 +959,6 @@
         }
       ],
       "ingredients_raw": "Salmon, Cracked Pearled Barley, Brown Rice, Whole Grain Corn, Chicken Meal, Soybean Meal, Corn Protein Meal, Whole Grain Sorghum, Chicken Fat, Flaxseed, Chicken Liver Flavor, Pea Fiber, Dried Beet Pulp, Soybean Oil, Lactic Acid, Pork Liver Flavor, Calcium Carbonate, Potassium Chloride, Iodized Salt, Choline Chloride, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement), Taurine, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Mixed Tocopherols for freshness, Natural Flavors, Beta-Carotene",
-      "calorie_content": "358",
       "guaranteed_analysis": {
         "crude_protein_min": 25.0,
         "crude_fat_min": 15.5,
@@ -1043,7 +970,8 @@
         "omega_3_min": 1.25,
         "omega_6_min": 3.73
       },
-      "guaranteed_analysis_basis": "dry-matter"
+      "guaranteed_analysis_basis": "dry-matter",
+      "calorie_content": "3612 kcal/kg, 358 kcal/cup"
     },
     {
       "name": "Science Diet Adult Dry Dog Food - Chicken & Barley Chicken",
@@ -1079,7 +1007,7 @@
         "crude_fat_min": 12.0
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "3619 kcal/kg, 359 kcal/cup"
+      "calorie_content": "3675 kcal/kg, 365 kcal/cup"
     },
     {
       "name": "Science Diet Adult Dry Dog Food - Chicken & Barley Chicken",
@@ -1115,7 +1043,7 @@
         "crude_fat_min": 12.0
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "3619 kcal/kg, 359 kcal/cup"
+      "calorie_content": "3675 kcal/kg, 365 kcal/cup"
     },
     {
       "name": "Science Diet Adult Dry Dog Food - Lamb & Brown Rice",
@@ -1146,7 +1074,7 @@
         "crude_fiber_max": 3.0
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "3721 kcal/kg, 369 kcal/cup"
+      "calorie_content": "3719 kcal/kg, 369 kcal/cup"
     },
     {
       "name": "Science Diet Health Mobility Adult Dog Food",
@@ -1255,7 +1183,7 @@
         "omega_6_min": 2.5
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "3619 kcal/kg, 359 kcal/cup"
+      "calorie_content": "3550 kcal/kg, 352 kcal/cup"
     },
     {
       "name": "Science Diet Large Breed Adult Dry Dog Food - Chicken & Barley",
@@ -1288,7 +1216,7 @@
         "omega_6_min": 2.5
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "3635 kcal/kg, 361 kcal/cup"
+      "calorie_content": "3675 kcal/kg, 365 kcal/cup"
     },
     {
       "name": "Science Diet Large Breed Adult Dry Dog Food - Lamb & Brown Rice",
@@ -1359,7 +1287,7 @@
         "calcium_min": 0.8
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "Protein 24.2 % 26.3 % 6.7 g / 100 kcal"
+      "calorie_content": "3628 kcal/kg"
     },
     {
       "name": "Science Diet Large Breed Puppy Dry Dog Food - Lamb & Brown Rice",
@@ -1392,7 +1320,7 @@
         "phosphorus_min": 0.84
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "Protein 25.7 % 27.9 % 6.9 g / 100 kcal"
+      "calorie_content": "3742 kcal/kg"
     },
     {
       "name": "Science Diet Light Adult Dry Dog Food - Chicken & Barley",
@@ -1430,7 +1358,7 @@
         "omega_6_min": 1.5
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "3619 kcal/kg, 359 kcal/cup"
+      "calorie_content": "2961 kcal/kg, 243 kcal/cup"
     },
     {
       "name": "Science Diet Light Large Breed Adult Dry Dog Food - Chicken & Barley",
@@ -1487,7 +1415,7 @@
           "sku": "5151448"
         }
       ],
-      "ingredients_raw": "Chicken Meal, Cracked Pearled Barley, Pea Fiber, Brown Rice, Whole Grain Corn, Corn Protein Meal, Powdered Cellulose, Whole Grain Oats, Soybean Meal, Whole Grain Sorghum, Brewers Rice, Chicken Liver Flavor, Soybean Oil, Pea Protein, Dried Beet Pulp, Flaxseed, Lactic Acid, Pork Liver Flavor, Potassium Chloride, Calcium Carbonate, Iodized Salt, Fructooligosaccharides (FOS), vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement), Choline Chloride, L-Lysine, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Taurine, Mixed Tocopherols for freshness, Natural Flavors, L-Carnitine, Beta-Carotene",
+      "ingredients_raw": "Chicken Meal, Cracked Pearled Barley, Pea Fiber, Brown Rice, Whole Grain Corn, Corn Protein Meal, Powdered Cellulose, Whole Grain Oats, Soybean Meal, Whole Grain Sorghum, Brewers Rice, Chicken Liver Flavor, Soybean Oil, Pea Protein, Dried Beet Pulp, Flaxseed, Lactic Acid, Pork Liver Flavor, Potassium Chloride, Calcium Carbonate, Iodized Salt, Fructooligosaccharides (FOS), vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Calcium Pantothenate, Vitamin A Supplement, Riboflavin Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement), Choline Chloride, L-Lysine, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Taurine, Mixed Tocopherols for freshness, Natural Flavors, L-Carnitine, Beta-Carotene. 5151447",
       "guaranteed_analysis": {
         "crude_protein_min": 20.5,
         "crude_fat_min": 5.0,
@@ -1496,7 +1424,7 @@
         "phosphorus_min": 0.63
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "261 kcal per 8 oz cup"
+      "calorie_content": "261 kcal/can"
     },
     {
       "name": "Science Diet Oral Care Adult Dry Dog Food - Chicken, Brown Rice & Barley",
@@ -1528,7 +1456,7 @@
         "omega_6_min": 2.5
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "3709 kcal/kg, 347 kcal/cup"
+      "calorie_content": "3426 kcal/kg, 272 kcal/cup"
     },
     {
       "name": "Science Diet Oral Care Small & Mini Adult Dog Dry Food - Chicken, Rice & Barley",
@@ -1566,7 +1494,7 @@
         "phosphorus_min": 0.64
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "Kcal Per 8 oz Cup 272"
+      "calorie_content": "3472 kcal/kg, 276 kcal/cup"
     },
     {
       "name": "Science Diet Perfect Digestion 7+ Senior Dry Dog Food - Chicken, Whole Oats & Brown Rice",
@@ -1682,7 +1610,7 @@
         "crude_fiber_max": 4.0
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "3709 kcal/kg, 347 kcal/cup"
+      "calorie_content": "3607 kcal/kg, 368 kcal/cup"
     },
     {
       "name": "Science Diet Perfect Digestion Adult Dry Dog Food - Salmon, Brown Rice & Whole Oats",
@@ -1804,7 +1732,7 @@
         "crude_fiber_max": 10.0
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "347"
+      "calorie_content": "3709 kcal/kg, 347 kcal/cup"
     },
     {
       "name": "Science Diet Perfect Digestion Small Bites Adult Dry Dog Food - Chicken, Whole Oats & Rice",
@@ -1879,7 +1807,7 @@
         "ash_max": 8.5
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "298"
+      "calorie_content": "3189 kcal/kg, 298 kcal/cup"
     },
     {
       "name": "Science Diet Perfect Weight & Joint Support Adult Dry Dog Food - Chicken & Brown Rice",
@@ -1924,7 +1852,7 @@
         "omega_3_min": 1.0
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "327"
+      "calorie_content": "3204 kcal/kg, 327 kcal/cup"
     },
     {
       "name": "Science Diet Perfect Weight & Joint Support Large Breed Adult Dry Dog Food - Chicken & Rice",
@@ -1958,7 +1886,7 @@
         "omega_3_min": 1.0
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "300"
+      "calorie_content": "3204 kcal/kg, 300 kcal/cup"
     },
     {
       "name": "Science Diet Perfect Weight Large Breed Adult Dry Dog Food - Chicken",
@@ -1991,7 +1919,7 @@
         "ash_max": 8.5
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "289"
+      "calorie_content": "3189 kcal/kg, 289 kcal/cup"
     },
     {
       "name": "Science Diet Puppy Dry Dog Food - Chicken & Brown Rice",
@@ -2035,7 +1963,7 @@
         "dha_min": 0.02
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "393"
+      "calorie_content": "3747 kcal/kg, 393 kcal/cup"
     },
     {
       "name": "Science Diet Puppy Dry Dog Food - Lamb Meal & Brown Rice",
@@ -2080,7 +2008,7 @@
         "dha_min": 0.03
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "385 / kcal per 8 oz cup"
+      "calorie_content": "3773 kcal/kg, 385 kcal/cup"
     },
     {
       "name": "Science Diet Senior Vitality Adult 7+ Dry Dog Food - Chicken & Rice",
@@ -2125,7 +2053,7 @@
         "omega_6_min": 1.7
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "359 kcal per 8oz cup"
+      "calorie_content": "3619 kcal/kg, 359 kcal/cup"
     },
     {
       "name": "Science Diet Senior Vitality Small & Mini 7+ Senior Dry Dog Food - Chicken & Rice",
@@ -2190,7 +2118,7 @@
         "omega_6_min": 1.7
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "341–Kcal per 8 oz. Cup"
+      "calorie_content": "3649 kcal/kg, 341 kcal/cup"
     },
     {
       "name": "Science Diet Sensitive Stomach & Skin Adult Dry Dog Food - Alaskan Pollock",
@@ -2224,7 +2152,7 @@
         "omega_6_min": 3.0
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "385"
+      "calorie_content": "3774 kcal/kg, 385 kcal/cup"
     },
     {
       "name": "Science Diet Sensitive Stomach & Skin Adult Dry Dog Food - Chicken & Barley Chicken",
@@ -2248,7 +2176,6 @@
         }
       ],
       "ingredients_raw": "Chicken, Chicken Meal, Yellow Peas, Cracked Pearled Barley, Brown Rice, Brewers Rice, Whole Grain Sorghum, Egg Product, Chicken Fat, Soybean Oil, Dried Beet Pulp, Chicken Liver Flavor, Lactic Acid, Flaxseed, Pork Liver Flavor, Potassium Chloride, Iodized Salt, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Thiamine Mononitrate, Vitamin A Supplement, Calcium Pantothenate, Riboflavin Supplement, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement), Choline Chloride, Taurine, Mixed Tocopherols for freshness, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Natural Flavors, Beta-Carotene",
-      "calorie_content": "391",
       "guaranteed_analysis": {
         "crude_protein_min": 24.8,
         "crude_fat_min": 16.7,
@@ -2263,7 +2190,8 @@
         "chondroitin_min": 1501.0,
         "l_carnitine_min": 16.5
       },
-      "guaranteed_analysis_basis": "dry-matter"
+      "guaranteed_analysis_basis": "dry-matter",
+      "calorie_content": "3732 kcal/kg, 391 kcal/cup"
     },
     {
       "name": "Science Diet Sensitive Stomach & Skin Adult Dry Dog Food - Grain Free, Chicken & Potato",
@@ -2297,7 +2225,7 @@
         "omega_6_min": 2.5
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "407"
+      "calorie_content": "3776 kcal/kg, 407 kcal/cup"
     },
     {
       "name": "Science Diet Sensitive Stomach & Skin Large Breed Adult Dry Dog Food - Chicken & Barley",
@@ -2332,7 +2260,7 @@
         "omega_6_min": 2.5
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "393"
+      "calorie_content": "3747 kcal/kg, 393 kcal/cup"
     },
     {
       "name": "Science Diet Sensitive Stomach & Skin Puppy Dry Dog Food - Salmon & Brown Rice",
@@ -2372,7 +2300,7 @@
         "omega_6_min": 1.5
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "405"
+      "calorie_content": "3857 kcal/kg, 405 kcal/cup"
     },
     {
       "name": "Science Diet Sensitive Stomach & Skin Small & Mini Adult Dog Dry Food - Chicken & Rice",
@@ -2412,7 +2340,7 @@
         "omega_6_min": 2.5
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "380"
+      "calorie_content": "3747 kcal/kg, 393 kcal/cup"
     },
     {
       "name": "Science Diet Small & Mini 11+ Senior Dry Dog Food - Chicken & Brown Rice",
@@ -2445,7 +2373,7 @@
         "omega_6_min": 3.0
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "3709 kcal/kg, 347 kcal/cup"
+      "calorie_content": "3807 kcal/kg, 378 kcal/cup"
     },
     {
       "name": "Science Diet Small & Mini 7+ Senior Dry Dog Food - Chicken & Brown Rice Chicken",
@@ -2477,7 +2405,7 @@
         "omega_6_min": 2.5
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "3709 kcal/kg, 347 kcal/cup"
+      "calorie_content": "3619 kcal/kg, 359 kcal/cup"
     },
     {
       "name": "Science Diet Small & Mini 7+ Senior Dry Dog Food - Chicken & Brown Rice Chicken Meal",
@@ -2515,7 +2443,7 @@
         "omega_6_min": 2.5
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "3709 kcal/kg, 347 kcal/cup"
+      "calorie_content": "3619 kcal/kg, 359 kcal/cup"
     },
     {
       "name": "Science Diet Small & Mini Adult Dry Dog Food - Chicken & Brown Rice",
@@ -2553,7 +2481,7 @@
         "omega_6_min": 2.5
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "3709 kcal/kg, 347 kcal/cup"
+      "calorie_content": "357 kcal/cup"
     },
     {
       "name": "Science Diet Small & Mini Adult Dry Dog Food - Lamb Meal & Brown Rice",
@@ -2585,7 +2513,7 @@
         "calcium_min": 0.8
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "3709 kcal/kg, 347 kcal/cup"
+      "calorie_content": "3647 kcal/kg, 372 kcal/cup"
     },
     {
       "name": "Science Diet Small & Mini Puppy Dry Dog Food - Chicken & Brown Rice",
@@ -2624,7 +2552,7 @@
         "dha_min": 0.05
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "Protein 24 %  26.6 % 28.9 % 7 g / 100 kcal"
+      "calorie_content": "3780 kcal/kg"
     },
     {
       "name": "Science Diet Small Bites 7+ Senior Dry Dog Food - Chicken Recipe",
@@ -2656,7 +2584,7 @@
         "omega_6_min": 2.5
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "3567"
+      "calorie_content": "3550 kcal/kg, 352 kcal/cup"
     },
     {
       "name": "Science Diet Healthy Cuisine Adult Wet Dog Food Topper - Chicken & Vegetable",
@@ -2685,7 +2613,7 @@
         "ash_max": 2.5
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "65 Kcal / 2.8 oz (79 g) pouch"
+      "calorie_content": "810 kcal/kg"
     },
     {
       "name": "Science Diet Healthy Cuisine Senior 7+ Wet Dog Food Topper - Chicken & Vegetable",
@@ -2717,7 +2645,7 @@
         "ash_max": 2.5
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "57 Kcal / 2.8 oz (79 g) pouch"
+      "calorie_content": "707 kcal/kg"
     },
     {
       "name": "Science Diet Perfect Weight Adult Wet Dog Food Topper - Vegetables & Salmon",
@@ -2749,7 +2677,7 @@
         "ash_max": 2.5
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "59 kcal / 2.8 oz (79 g) Pouch"
+      "calorie_content": "734 kcal/kg"
     },
     {
       "name": "Science Diet Sensitive Stomach & Skin Adult Wet Dog Food Topper - Turkey & Vegetables",
@@ -2781,7 +2709,7 @@
         "ash_max": 2.5
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "57 kcal / 2.8 oz (79 g) Pouch"
+      "calorie_content": "708 kcal/kg"
     },
     {
       "name": "Science Diet Soft Baked Dog Treat - Natural, Grain Free, Beef & Sweet Potato",

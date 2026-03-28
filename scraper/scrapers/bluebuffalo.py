@@ -33,6 +33,7 @@ from wafer import SyncSession
 from .common import (
     GuaranteedAnalysis,
     Product,
+    apply_fallback_data,
     chewy_ingredients_match,
     clean_text,
     normalize_calorie_content,
@@ -608,6 +609,57 @@ def _fill_missing_from_chewy(
     return filled
 
 
+# Manual fallback data for products where Blue Buffalo + Chewy can't provide calories/GA.
+# Source: Chewy.com GA tables. Last verified: 2026-03-27.
+_FALLBACK_DATA: dict[str, dict] = {
+    # Chewy dp/141542
+    "blue-delights-filet-mignon-savoury-juices": {
+        "calorie_content": "1145 kcal/kg, 114 kcal/tray",
+        "guaranteed_analysis": {"crude_protein_min": 8.0, "crude_fat_min": 6.0, "crude_fiber_max": 1.5, "moisture_max": 78.0},
+    },
+    # Chewy dp/141544
+    "blue-delights-grilled-chicken-savoury-juices": {
+        "calorie_content": "1146 kcal/kg, 115 kcal/tray",
+        "guaranteed_analysis": {"crude_protein_min": 8.0, "crude_fat_min": 6.0, "crude_fiber_max": 1.5, "moisture_max": 78.0},
+    },
+    # Chewy dp/141551
+    "blue-delights-porterhouse-savoury-juices": {
+        "calorie_content": "1145 kcal/kg, 114 kcal/tray",
+        "guaranteed_analysis": {"crude_protein_min": 8.0, "crude_fat_min": 6.0, "crude_fiber_max": 1.5, "moisture_max": 78.0},
+    },
+    # Chewy dp/141553
+    "blue-delights-roasted-turkey-savoury-juices": {
+        "calorie_content": "1143 kcal/kg, 114 kcal/tray",
+        "guaranteed_analysis": {"crude_protein_min": 8.0, "crude_fat_min": 6.0, "crude_fiber_max": 1.5, "moisture_max": 78.0},
+    },
+    # Chewy dp/141560
+    "blue-delights-top-sirloin-savoury-juices": {
+        "calorie_content": "1145 kcal/kg, 114 kcal/tray",
+        "guaranteed_analysis": {"crude_protein_min": 8.0, "crude_fat_min": 6.0, "crude_fiber_max": 1.5, "moisture_max": 78.0},
+    },
+    # Source: bluebuffalo.com/en-ca. Last verified: 2026-03-27.
+    "wilderness/trail-trays-chicken": {
+        "calorie_content": "1208 kcal/kg, 120 kcal/bowl",
+    },
+    # Source: Instacart product label text
+    "wilderness/trail-trays-duck": {
+        "calorie_content": "1244 kcal/kg, 123 kcal/bowl",
+    },
+    # Source: bluebuffalo.com/en-ca
+    "wilderness/trail-trays-turkey": {
+        "calorie_content": "1246 kcal/kg, 124 kcal/bowl",
+    },
+    # Source: bluebuffalo.com/en-ca
+    "wilderness/trail-tubs-chicken": {
+        "calorie_content": "879 kcal/kg, 199 kcal/tub",
+    },
+    # Source: PetSmart.com
+    "adult-chicken-free-lamb-recipe": {
+        "calorie_content": "422 kcal/cup",
+    },
+}
+
+
 def scrape_bluebuffalo(output_dir: Path) -> int:
     """Scrape all Blue Buffalo dog food products. Returns product count."""
     with SyncSession(rate_limit=1.0) as session:
@@ -633,6 +685,8 @@ def scrape_bluebuffalo(output_dir: Path) -> int:
         rate_limit=1.0, browser_solver=solver, cache_dir=".chewy_cookies"
     ) as chewy_session:
         _fill_missing_from_chewy(products, chewy_session)
+
+    apply_fallback_data(products, _FALLBACK_DATA)
 
     write_brand_json(
         "Blue Buffalo", WEBSITE_URL, products, output_dir, slug="bluebuffalo"

@@ -110,8 +110,35 @@ _FALLBACK_DATA: dict[str, dict] = {
     "prescription-diet-onc-on-care-chicken-stew-restorative-care-canned": {
         "calorie_content": "322 kcal/can",
     },
+    # --- Wet food as-fed GA — Source: Chewy.com GA tables. Last verified: 2026-03-27 ---
+    # Chewy dp/108995 (New formula)
+    "prescription-diet-id-low-fat-rice-vegetable-chicken-stew-digestive-care-canned": {
+        "guaranteed_analysis": {"crude_protein_min": 3.5, "crude_fat_min": 1.0, "crude_fat_max": 3.0, "crude_fiber_max": 1.5, "moisture_max": 82.0},
+    },
+    # Chewy dp/110403
+    "prescription-diet-kd-chicken-vegetable-stew-kidney-care-canned": {
+        "guaranteed_analysis": {"crude_protein_min": 2.0, "crude_fat_min": 3.5, "crude_fiber_max": 2.0, "moisture_max": 83.0},
+    },
+    # Chewy dp/54529
+    "prescription-diet-ld-liver-care-canned": {
+        "guaranteed_analysis": {"crude_protein_min": 4.5, "crude_fat_min": 5.5, "crude_fiber_max": 2.0, "moisture_max": 78.0},
+    },
+    # Chewy dp/118605
+    "prescription-diet-wd-vegetable-chicken-stew-glucose-management-canned": {
+        "guaranteed_analysis": {"crude_protein_min": 3.2, "crude_fat_min": 1.6, "crude_fiber_max": 4.0, "moisture_max": 84.0},
+    },
+    # Chewy dp/54547
     "prescription-diet-zd-food-sensitivities-canned": {
         "calorie_content": "357 kcal/can",
+        "guaranteed_analysis": {"crude_protein_min": 3.0, "crude_fat_min": 2.0, "crude_fiber_max": 2.5, "moisture_max": 78.0},
+    },
+    # Chewy dp/1104142
+    "prescription-diet-cd-multicare-low-fat-vegetables-turkey-stew-urinary-care-canned": {
+        "guaranteed_analysis": {"crude_protein_min": 3.0, "crude_fat_min": 0.7, "crude_fat_max": 4.0, "crude_fiber_max": 2.5, "moisture_max": 82.0},
+    },
+    # Chewy dp/1714718
+    "prescription-diet-multi-organ-turkey-veg-stew-multi-organ-care-canned": {
+        "guaranteed_analysis": {"crude_protein_min": 2.0, "crude_fat_min": 1.0, "crude_fiber_max": 2.5, "moisture_max": 84.0},
     },
     "prescription-diet-derm-complete-skin-care-canned": {
         "calorie_content": "1211 kcal/kg, 448 kcal/can",
@@ -649,7 +676,7 @@ def scrape_hills_vet(output_dir: Path) -> int:
         if fb.get("ingredients_raw") and not product.get("ingredients_raw"):
             product["ingredients_raw"] = fb["ingredients_raw"]
             filled_any = True
-        # As-fed GA from label images overrides scraped dry-matter GA
+        # As-fed GA from label images / Chewy overrides scraped dry-matter GA
         if fb.get("guaranteed_analysis"):
             product["guaranteed_analysis"] = fb["guaranteed_analysis"]
             product["guaranteed_analysis_basis"] = "as-fed"

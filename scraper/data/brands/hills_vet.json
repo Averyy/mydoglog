@@ -1,7 +1,7 @@
 {
   "brand": "Hill's",
   "website_url": "https://www.hillspet.ca",
-  "scraped_at": "2026-03-22T13:58:37.846242+00:00",
+  "scraped_at": "2026-03-27T22:47:55.088143+00:00",
   "scraper_version": "0.1.0",
   "stats": {
     "product_count": 61,
@@ -433,7 +433,7 @@
         "moisture_max": 82.0
       },
       "guaranteed_analysis_basis": "as-fed",
-      "ingredients_raw": "Chicken Broth, Chicken, Pork Liver, Carrots, Rice, Rice Starch, Spinach, Ground Pecan Shells, Oat Fiber, Wheat Gluten, Hydrolyzed Chicken Flavor, Flaxseed, Soybean Oil, Dried Citrus Pulp, Dried Beet Pulp, Potassium Alginate, Whole Grain Barley, Fish Oil, Calcium Chloride, Pumpkin, Pressed Cranberries, Powdered Cellulose, Dicalcium Phosphate, Guar Gum, Calcium Lactate, Calcium Gluconate, Choline Chloride, Potassium Citrate, Sodium Tripolyphosphate, Fructooligosaccharides (FOS), vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Riboflavin Supplement, Vitamin D3 Supplement, Folic Acid), Ginger, Psyllium Seed Husk, Taurine, L-Threonine, L-Tryptophan, Magnesium Oxide, minerals (Zinc Oxide, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate), Beta-Carotene.",
+      "ingredients_raw": "Chicken Broth, Chicken, Pork Liver, Carrots, Rice, Rice Starch, Spinach, Ground Pecan Shells, Oat Fiber, Wheat Gluten, Hydrolyzed Chicken Flavor, Flaxseed, Soybean Oil, Dried Citrus Pulp, Dried Beet Pulp, Potassium Alginate, Whole Grain Barley, Fish Oil, Calcium Chloride, Pumpkin, Pressed Cranberries, Powdered Cellulose, Dicalcium Phosphate, Guar Gum, Calcium Lactate, Calcium Gluconate, Choline Chloride, Potassium Citrate, Sodium Tripolyphosphate, Fructooligosaccharides (FOS), vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Riboflavin Supplement, Vitamin D3 Supplement, Folic Acid), Ginger, Psyllium Seed Husk, Taurine, L-Threonine, L-Tryptophan, Magnesium Oxide, minerals (Zinc Oxide, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate).",
       "health_tags": [
         "digestive_health"
       ],
@@ -634,20 +634,13 @@
       "product_format": "wet",
       "sub_brand": "Prescription Diet",
       "guaranteed_analysis": {
-        "crude_protein_min": 22.9,
-        "crude_fat_min": 9.2,
-        "crude_fiber_max": 1.8,
-        "calcium_min": 0.91,
-        "phosphorus_min": 0.61,
-        "potassium_min": 0.96,
-        "sodium_min": 0.47,
-        "taurine_min": 0.13,
-        "epa_min": 0.024,
-        "omega_3_min": 0.56,
-        "omega_6_min": 2.48,
-        "l_carnitine_min": 345.1
+        "crude_protein_min": 3.5,
+        "crude_fat_min": 1.0,
+        "crude_fat_max": 3.0,
+        "crude_fiber_max": 1.5,
+        "moisture_max": 82.0
       },
-      "guaranteed_analysis_basis": "dry-matter",
+      "guaranteed_analysis_basis": "as-fed",
       "ingredients_raw": "Water, Pork Liver, Rice, Carrots, Chicken, Corn Starch, Sugar, Dextrose, Egg Whites, Hydrolyzed Chicken Flavor, Soybean Oil, Potassium Alginate, Calcium Chloride, Ground Pecan Shells, Flaxseed, Ginger, Dried Beet Pulp, Guar Gum, Dried Citrus Pulp, Potassium Citrate, Monosodium Phosphate, L-Lysine, Sodium Tripolyphosphate, vitamins (Vitamin E Supplement, Thiamine Mononitrate, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Riboflavin Supplement, Menadione Sodium Bisulfite Complex (source of Vitamin K), Folic Acid, Vitamin D3 Supplement), Calcium Lactate, Calcium Gluconate, Pressed Cranberries, Choline Chloride, Magnesium Oxide, Taurine, minerals (Zinc Oxide, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate), L-Carnitine.",
       "calorie_content": "1788 kcal/kg, 279 kcal/can",
       "health_tags": [
@@ -828,16 +821,12 @@
       "product_format": "wet",
       "sub_brand": "Prescription Diet",
       "guaranteed_analysis": {
-        "crude_protein_min": 16.1,
-        "crude_fat_min": 25.0,
-        "crude_fiber_max": 3.0,
-        "calcium_min": 0.79,
-        "phosphorus_min": 0.3,
-        "potassium_min": 0.88,
-        "sodium_min": 0.15,
-        "omega_3_min": 1.7
+        "crude_protein_min": 2.0,
+        "crude_fat_min": 3.5,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 83.0
       },
-      "guaranteed_analysis_basis": "dry-matter",
+      "guaranteed_analysis_basis": "as-fed",
       "ingredients_raw": "Water, Chicken, Carrots, Rice, Chicken Fat, Pork Liver, Rice Starch, Dextrose, Green Peas, Egg Whites, Sugar, Dried Beet Pulp, Flaxseed, Fish Oil, Hydrolyzed Chicken Flavor, Potassium Alginate, Powdered Cellulose, Calcium Lactate, Calcium Gluconate, Natural Flavor, Brewers Dried Yeast, Potassium Citrate, Guar Gum, Betaine, L-Lysine, Whole Grain Oats, vitamins (Vitamin E Supplement, Ascorbic Acid (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Vitamin A Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Riboflavin Supplement, Biotin, Menadione Sodium Bisulfite Complex (source of Vitamin K), Folic Acid, Vitamin D3 Supplement), Fructooligosaccharides (FOS), Choline Chloride, Calcium Chloride, Dicalcium Phosphate, Taurine, Magnesium Oxide, L-Threonine, Monosodium Phosphate, L-Carnitine, L-Tryptophan, minerals (Zinc Oxide, Ferrous Sulfate, Copper Sulfate, Manganese Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), Beta-Carotene, Calcium Carbonate.",
       "calorie_content": "994 kcal/kg, 352 kcal/can",
       "health_tags": [
@@ -968,17 +957,12 @@
       "product_format": "wet",
       "sub_brand": "Prescription Diet",
       "guaranteed_analysis": {
-        "crude_protein_min": 17.8,
-        "crude_fat_min": 24.4,
-        "crude_fiber_max": 3.2,
-        "calcium_min": 0.84,
-        "phosphorus_min": 0.62,
-        "potassium_min": 0.93,
-        "sodium_min": 0.22,
-        "omega_3_min": 1.5,
-        "omega_6_min": 6.64
+        "crude_protein_min": 4.5,
+        "crude_fat_min": 5.5,
+        "crude_fiber_max": 2.0,
+        "moisture_max": 78.0
       },
-      "guaranteed_analysis_basis": "dry-matter",
+      "guaranteed_analysis_basis": "as-fed",
       "ingredients_raw": "Water, Rice, Soybean Meal, Chicken Fat, Soybean Oil, Corn Starch, Egg Product, Chicken Liver Flavor, Powdered Cellulose, Fish Oil, Dicalcium Phosphate, Dried Beet Pulp, Corn Protein Meal, Natural Flavor, Choline Chloride, Potassium Chloride, Calcium Carbonate, L-Threonine, vitamins (Vitamin E Supplement, Thiamine Mononitrate, Ascorbic Acid (source of Vitamin C), L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Vitamin A Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Riboflavin Supplement, Menadione Sodium Bisulfite Complex (source of Vitamin K), Biotin, Folic Acid, Vitamin D3 Supplement), Iodized Salt, L-Lysine, Taurine, L-Arginine, Magnesium Oxide, L-Carnitine, minerals (Zinc Oxide, Ferrous Sulfate, Manganous Oxide, Manganese Sulfate, Calcium Iodate, Copper Sulfate, Sodium Selenite), L-Tryptophan, Rice Protein Concentrate, Beta-Carotene.",
       "calorie_content": "1531 kcal/kg, 565 kcal/can",
       "health_tags": [
@@ -1513,16 +1497,12 @@
       "product_format": "wet",
       "sub_brand": "Prescription Diet",
       "guaranteed_analysis": {
-        "crude_protein_min": 21.2,
-        "crude_fat_min": 10.1,
-        "crude_fiber_max": 14.1,
-        "calcium_min": 0.91,
-        "phosphorus_min": 0.6,
-        "potassium_min": 0.95,
-        "sodium_min": 0.33,
-        "l_carnitine_min": 403.9
+        "crude_protein_min": 3.2,
+        "crude_fat_min": 1.6,
+        "crude_fiber_max": 4.0,
+        "moisture_max": 84.0
       },
-      "guaranteed_analysis_basis": "dry-matter",
+      "guaranteed_analysis_basis": "as-fed",
       "ingredients_raw": "Water, Pork Liver, Carrots, Rice, Powdered Cellulose, Green Peas, Corn Starch, Chicken, Hydrolyzed Chicken Flavor, Soybean Oil, Potassium Alginate, Wheat Gluten, Chicken Fat, Calcium Chloride, Guar Gum, Dicalcium Phosphate, Monosodium Phosphate, Calcium Lactate, Calcium Gluconate, Potassium Citrate, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Pyridoxine Hydrochloride, Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Biotin, Riboflavin Supplement, Vitamin D3 Supplement, Folic Acid), Choline Chloride, L-Lysine, L-Threonine, Taurine, Magnesium Oxide, minerals (Zinc Oxide, Ferrous Sulfate, Manganese Sulfate, Copper Sulfate, Calcium Iodate), L-Carnitine, Beta-Carotene.",
       "calorie_content": "568 kcal/kg, 201 kcal/can",
       "health_tags": [
@@ -1630,19 +1610,12 @@
       "product_format": "wet",
       "sub_brand": "Prescription Diet",
       "guaranteed_analysis": {
-        "crude_protein_min": 21.2,
-        "crude_fat_min": 16.0,
-        "crude_fiber_max": 4.8,
-        "calcium_min": 0.83,
-        "phosphorus_min": 0.59,
-        "potassium_min": 0.85,
-        "sodium_min": 0.31,
-        "epa_min": 0.165,
-        "omega_3_min": 1.21,
-        "omega_6_min": 4.03,
-        "l_carnitine_min": 20.4
+        "crude_protein_min": 3.0,
+        "crude_fat_min": 2.0,
+        "crude_fiber_max": 2.5,
+        "moisture_max": 78.0
       },
-      "guaranteed_analysis_basis": "dry-matter",
+      "guaranteed_analysis_basis": "as-fed",
       "ingredients_raw": "Water, Hydrolyzed Chicken Liver, Corn Starch, Ground Pecan Shells, Soybean Oil, Flaxseed, Dried Beet Pulp, Dried Citrus Pulp, Fish Oil, Dicalcium Phosphate, Powdered Cellulose, Coconut Oil, Calcium Carbonate, Pressed Cranberries, Potassium Chloride, DL-Methionine, Iodized Salt, Choline Chloride, vitamins (Vitamin E Supplement, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Vitamin D3 Supplement, Riboflavin Supplement, Folic Acid), Potassium Citrate, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganese Sulfate, Calcium Iodate), L-Tryptophan, Magnesium Oxide, Taurine, Beta-Carotene.",
       "health_tags": [
         "digestive_health",
@@ -1976,16 +1949,13 @@
       "product_format": "wet",
       "sub_brand": "Prescription Diet",
       "guaranteed_analysis": {
-        "crude_protein_min": 23.2,
-        "crude_fat_min": 8.2,
-        "crude_fiber_max": 4.0,
-        "calcium_min": 0.93,
-        "phosphorus_min": 0.63,
-        "potassium_min": 1.01,
-        "sodium_min": 0.28,
-        "omega_3_min": 0.51
+        "crude_protein_min": 3.0,
+        "crude_fat_min": 0.7,
+        "crude_fat_max": 4.0,
+        "crude_fiber_max": 2.5,
+        "moisture_max": 82.0
       },
-      "guaranteed_analysis_basis": "dry-matter",
+      "guaranteed_analysis_basis": "as-fed",
       "ingredients_raw": "Water, Pork Liver, Carrots, Rice Starch, Green Peas, Turkey, Rice, Potato Starch, Whole Grain Barley, Dextrose, Pea Protein, Wheat Gluten, Powdered Cellulose, Sugar, Brewers Dried Yeast, Chicken Liver Flavor, Potassium Alginate, Chicken Fat, Fish Oil, Calcium Chloride, Hydrolyzed Chicken Flavor, Potassium Citrate, Guar Gum, Soybean Oil, Dicalcium Phosphate, Choline Chloride, Calcium Sulfate, vitamins (Vitamin E Supplement, Thiamine Mononitrate, Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Riboflavin Supplement, Folic Acid, Vitamin D3 Supplement), Iodized Salt, Taurine, Sodium Tripolyphosphate, L-Lysine, minerals (Ferrous Sulfate, Zinc Oxide, Copper Sulfate, Manganese Sulfate, Calcium Iodate), Magnesium Oxide, Glucosamine Hydrochloride, L-Carnitine, Calcium Carbonate.",
       "calorie_content": "785 kcal/kg, 278 kcal/can",
       "health_tags": [
@@ -2251,19 +2221,12 @@
       "product_format": "wet",
       "sub_brand": "Prescription Diet",
       "guaranteed_analysis": {
-        "crude_protein_min": 19.2,
-        "crude_fat_min": 12.0,
-        "crude_fiber_max": 4.2,
-        "calcium_min": 0.8,
-        "phosphorus_min": 0.4,
-        "potassium_min": 0.99,
-        "sodium_min": 0.22,
-        "copper_min": 7.5,
-        "epa_min": 0.25,
-        "omega_3_min": 1.33,
-        "l_carnitine_min": 316.9
+        "crude_protein_min": 2.0,
+        "crude_fat_min": 1.0,
+        "crude_fiber_max": 2.5,
+        "moisture_max": 84.0
       },
-      "guaranteed_analysis_basis": "dry-matter",
+      "guaranteed_analysis_basis": "as-fed",
       "ingredients_raw": "Water, Carrots, Rice, Turkey Giblets, Pork Liver, Green Peas, Rice Starch, Turkey, Dextrose, Sugar, Powdered Cellulose, Egg Product, Flaxseed, Hydrolyzed Chicken Flavor, Wheat Gluten, Chicken Liver Flavor, Coconut Oil, Fish Oil, Potassium Alginate, Calcium Lactate, Calcium Gluconate, Potassium Citrate, Betaine, Dried Tomato Pomace, Dried Citrus Pulp, Guar Gum, L-Lysine, Spinach, Whole Grain Oats, Choline Chloride, Fructooligosaccharides (FOS), Calcium Chloride, Dicalcium Phosphate, vitamins (Vitamin E Supplement, Thiamine Mononitrate, L-Ascorbyl-2-Polyphosphate (source of Vitamin C), Niacin Supplement, Calcium Pantothenate, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Biotin, Riboflavin Supplement, Menadione Sodium Bisulfite Complex (source of Vitamin K), Vitamin D3 Supplement, Folic Acid), Sodium Tripolyphosphate, Taurine, Magnesium Oxide, minerals (Zinc Oxide, Manganese Sulfate, Ferrous Sulfate, Copper Sulfate, Manganous Oxide, Calcium Iodate, Sodium Selenite), L-Threonine, L-Carnitine, Natural Flavors, Calcium Carbonate.",
       "calorie_content": "766 kcal/kg, 271 kcal/can",
       "health_tags": [

@@ -1,7 +1,7 @@
 {
   "brand": "Simply Nourish",
   "website_url": "https://www.petsmart.ca",
-  "scraped_at": "2026-03-10T03:03:02.811605+00:00",
+  "scraped_at": "2026-03-27T23:41:56.112120+00:00",
   "scraper_version": "0.1.0",
   "stats": {
     "product_count": 59,
@@ -134,7 +134,8 @@
       "guaranteed_analysis": {
         "crude_protein_min": 8.0,
         "crude_fat_min": 5.0,
-        "crude_fiber_max": 1.0
+        "crude_fiber_max": 1.0,
+        "moisture_max": 80.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "1114 kcal/kg, 316 kcal/can"
@@ -219,7 +220,7 @@
           "sku": "5348013"
         }
       ],
-      "ingredients_raw": "Chicken, Chicken Broth, Water Sufficient For Processing, Pumpkin, Tapioca Starch, Sunflower Oil, Chicory Root, Salt, Calcium Sulfate, Fish Oil, Fructooligosaccharide, Guar Gum, Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-Calcium Pantothenate, Thiamine Mononitrate, Beta-Carotene, Biotin, Vitamin D3 Supplement, Riboflavin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid), Sodium Tripolyphosphate, Minerals (Zinc Oxide, Reduced Iron, Sodium Selenite, Manganese Sulfate, Copper Amino Acid Complex, Potassium Iodide), Turmeric Powder, Choline Chloride, Potassium Chloride, Magnesium Sulfate",
+      "ingredients_raw": "Chicken, Chicken Broth, Water Sufficient For Processing, Pumpkin, Tapioca Starch, Sunflower Oil, Chicory Root, Salt, Calcium Sulfate, Fish Oil, Fructooligosaccharide, Guar Gum, Vitamin (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-Calcium Pantothenate, Thiamine Mononitrate, Beta-Carotene, Biotin, Vitamin D3 Supplement, Riboflavin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid), Sodium Tripolyphosphate, Minerals (Zinc Oxide, Reduced Iron, Sodium Selenite, Manganese Sulfate, Copper Amino Acid Complex, Potassium Iodide), Turmeric Powder, Choline Chloride, Potassium Chloride, Magnesium Sulfate",
       "guaranteed_analysis": {
         "crude_protein_min": 8.5,
         "crude_fat_min": 1.0,
@@ -535,7 +536,7 @@
           "sku": "5348014"
         }
       ],
-      "ingredients_raw": "Chicken, Chicken Broth, Water Sufficient For Processing, Sweet Potato, Tapioca Starch, Sunflower Oil, Salt, Fish Oil, Calcium Sulfate, Tricalcium Phosphate, Guar Gum, Vitamins (Vitamin A Supplement, Niacin Supplement, D-Calcium Pantothenate, Thiamine Mononitrate, Beta-Carotene, Biotin, Vitamin D3 Supplement, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid), Minerals (Zinc Oxide, Reduced Iron, Sodium Selenite, Manganese Sulfate, Copper Amino Acid Complex, Potassium Iodide), Turmeric Powder, Vitamin E Supplement, Choline Chloride, Potassium Chloride, Magnesium Sulfate",
+      "ingredients_raw": "Chicken, Chicken Broth, Water Sufficient For Processing, Sweet Potato, Tapioca Starch, Sunflower Oil, Salt, Fish Oil, Calcium Sulfate, Tricalcium Phosphate, Guar Gum, Vitamin (Vitamin A Supplement, Niacin Supplement, D-Calcium Pantothenate, Thiamine Mononitrate, Beta-Carotene, Biotin, Vitamin D3 Supplement, Riboflavin Supplement, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid), Minerals (Zinc Oxide, Reduced Iron, Sodium Selenite, Manganese Sulfate, Copper Amin Acid Complex, Potassium Iodide), Turmeric Powder, Vitamin E Supplement, Choline Chloride, Potassium Chloride, Magnesium Sulfate",
       "guaranteed_analysis": {
         "crude_protein_min": 8.5,
         "crude_fat_min": 1.0,
@@ -861,7 +862,7 @@
           "sku": "5349024"
         }
       ],
-      "ingredients_raw": "Deboned Salmon (Source Of DHA), Salmon Meal, Dried Sweet Potatoes, Dried Peas, Dried Lentils, Pea Protein, Canola Oil (Preserved With Mixed Tocopherols), Whole Flaxseed, Natural Flavor, Pea Fiber, Salmon Oil, Pea Starch, Calcium Phosphate, Dried Chicory Root, Dried Carrots, Dried Kale, Dried Pumpkin, Dried Blueberries, Salt, Choline Chloride, Minerals (Potassium Chloride, Zinc Sulfate, Zinc Proteinate, Iron Proteinate, Ferrous Sulfate, Copper Proteinate, Manganese Sulfate, Sodium Selenite, Manganese Proteinate, Copper Sulfate), Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Calcium Iodate, Folic Acid), DL-Methionine, Taurine, Mixed Tocopherols (A Preservative), Citric Acid (A Preservative), Rosemary Extract",
+      "ingredients_raw": "Deboned Salmon (Source Of DHA), Salmon Meal, Dried Sweet Potatoes, Dried Peas, Dried Lentils, Pea Protein, Canola Oil (Preserved With Mixed Tocopherols), Whole Flaxseed, Natural Flavor, Pea Fiber, Salmon Oil, Pea Starch, Calcium Phosphate, Dried Chicory Root, Dried Carrots, Dried Kale, Dried Pumpkin, Dried Blueberries, Salt, Choline Chloride Minerals (Potassium Chloride, Zinc Sulfate, Zinc Proteinate, Iron Proteinate, Ferrous Sulfate, Copper Proteinate, Manganese Sulfate, Sodium Selenite, Manganese Proteinate, Copper Sulfate), Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement Pyridoxine Hydrochloride, Calcium Iodate, Folic Acid), DL-Methionine, Taurine, Mixed Tocopherols (A Preservative), Citric Acid (A Preservative), Rosemary Extract",
       "guaranteed_analysis": {
         "crude_protein_min": 29.0,
         "crude_fat_min": 16.0,
@@ -1039,7 +1040,7 @@
           "sku": "5287508"
         }
       ],
-      "ingredients_raw": "Deboned Lamb, Oatmeal, Brown Rice, Turkey Meal, Lamb Meal, Barley, Canola Oil (Preserved With Mixed Tocopherols), Natural Flavor, Pea Fiber, Whole Flaxseed, Sunflower Oil (Preserved With Mixed Tocopherols), Potassium Chloride, Dried Chicory Root, Dried Carrots, Dried Kale, Dried Pumpkin, Dried Blueberries, Choline Chloride, Minerals (Zinc Sulfate, Zinc Proteinate, Iron Proteinate, Ferrous Sulfate, Copper Proteinate, Manganese Sulfate, Sodium Selenite, Manganese Proteinate, Copper Sulfate), Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Calcium Iodate, Folic Acid, Vitamin D3 Supplement), Dl-Methionine, Taurine, Citric Acid (A Preservative), Mixed Tocopherols (A Preservative), Rosemary Extract",
+      "ingredients_raw": "Deboned Lamb, Oatmeal, Brown Rice, Turkey Meal, Lamb Meal, Barley, Canola Oil (Preserved With Mixed Tocopherols), Natural Flavor, Pea Fiber, Whole Flaxseed, Sunflower Oil (Preserved With Mixed Tocopherols), Potassium Chloride, Dried Chicory Root, Dried Carrots, Dried Kale, Dried Pumpkin, Dried Blueberries, Choline Chloride, Minerals (Zinc Sulfate, Zinc Proteinate, Iron Proteinate, Ferrous Sulfate, Copper Proteinate, Manganese Sulfate, Sodium Selenite, Manganese Proteinate, Copper Sulfate), Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Calcium Iodate, Folic Acid, Vitamin D3 Supplement, Dl-Methionine, Taurine, Citric Acid (A Preservative), Mixed Tocopherols (A Preservative), Rosemary Extract",
       "guaranteed_analysis": {
         "crude_protein_min": 25.0,
         "crude_fat_min": 13.0,
@@ -1843,9 +1844,15 @@
           "size_description": "",
           "upc": "0737257825734",
           "sku": "5286604"
+        },
+        {
+          "size_kg": 0.0,
+          "size_description": "",
+          "upc": "0196481127579",
+          "sku": "5374224"
         }
       ],
-      "ingredients_raw": "Deboned Lamb, Lamb Meal, Pork Meal, Deboned Pork, Pea Protein, Chickpeas, Yellow Peas, Green Lentils, Sunflower Oil (Preserved with Mixed Tocopherols), Natural Flavor, Deboned Boar, Alfalfa, Flaxseed Meal, Dried Chicory Root, Potassium Chloride, Dried Kelp, Dried Apples, Dried Cranberries, Dried Carrots, Vegetable Glycerin, Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Folic Acid, Vitamin D3 Supplement), Choline Chloride, Minerals (Zinc Proteinate, Iron Proteinate, Copper Proteinate, Manganese Proteinate, Sodium Selenite, Calcium Iodate), Mixed Tocopherols (A Preservative), Rosemary Extract",
+      "ingredients_raw": "Deboned Lamb, Pork Meal, Pea Protein, Chicken Meal, Chickpeas, Dried Peas, Dried Lentils, Deboned Pork, Canola Oil (Preserved with Mixed Tocopherols), Deboned Boar, Natural Flavor, Alfalfa, Flaxseed, Dicalcium Phosphate, Dried Chicory Root, Potassium Chloride, Dried Kelp, Dried Apples, Dried Cranberries, Dried Carrots, Minerals (Zinc Sulfate, Zinc Proteinate, Iron Proteinate, Ferrous Sulfate, Copper Proteinate, Manganese Sulfate, Sodium Selenite, Manganese Proteinate, Copper Sulfate), Choline Chloride, Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, d-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Calcium Iodate, Folic Acid), Mixed Tocopherols (A Preservative), Citric Acid (A Preservative), Rosemary Extract",
       "guaranteed_analysis": {
         "crude_protein_min": 35.0,
         "crude_fat_min": 14.0,
@@ -1855,7 +1862,7 @@
         "phosphorus_min": 1.0
       },
       "guaranteed_analysis_basis": "as-fed",
-      "calorie_content": "3489 kcal/kg, 402 kcal/cup"
+      "calorie_content": "3458 kcal/kg, 414 kcal/cup"
     },
     {
       "name": "Source Adult Dry Dog Food - Salmon, High-Protein, Grain Free",
@@ -1925,11 +1932,11 @@
       ],
       "ingredients_raw": "Deboned Chicken, Chicken Meal (Source Of Glucosamine), Oatmeal, Pearled Barley, Potato Protein, Chicken Fat (Preserved With Mixed Tocopherols), Turkey Meal, Pea Fiber, Tomato Pomace, Natural Flavor, Flaxseed, Peas, Fish Oil (Preserved With Mixed Tocopherols), Salt, Chicory Root, Dried Carrots, Dried Kale, Dried Pumpkin, Dried Blueberries, Minerals (Zinc Sulfate, Zinc Proteinate, Iron Proteinate, Ferrous Sulfate, Copper Proteinate, Manganese Sulfate, Sodium Selenite, Manganese Proteinate, Copper Sulfate), Vitamins (Vitamin E Supplement, Vitamin A Supplement, Niacin Supplement, D-Calcium Pantothenate, Riboflavin Supplement, Thiamine Mononitrate, Biotin, Vitamin B12 Supplement, Pyridoxine Hydrochloride, Vitamin D3 Supplement, Calcium Iodate, Folic Acid), Choline Chloride, Potassium Chloride, Citric Acid (Preservative), Mixed Tocopherols (Preservative), Rosemary Extract",
       "guaranteed_analysis": {
-        "dha_min": 0.05,
         "crude_protein_min": 36.0,
         "crude_fat_min": 15.0,
         "crude_fiber_max": 7.0,
         "moisture_max": 10.0,
+        "dha_min": 0.05,
         "calcium_min": 1.2,
         "phosphorus_min": 1.0
       },
@@ -1999,12 +2006,11 @@
       ],
       "ingredients_raw": "Chicken, Chicken Broth",
       "guaranteed_analysis": {
-        "crude_protein_min": 18.0,
+        "crude_protein_min": 24.0,
         "crude_fat_min": 1.0,
         "crude_fiber_max": 0.5,
         "ash_max": 2.0,
-        "moisture_max": 78.0,
-        "ash_min": 2.5
+        "moisture_max": 74.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "1133 kcal/kg, 290 kcal/pouch"
@@ -2182,11 +2188,11 @@
       ],
       "ingredients_raw": "Turkey, Turkey Broth, Chicken Broth, Chicken, Tapioca Starch, Guar Gum",
       "guaranteed_analysis": {
-        "crude_protein_min": 11.0,
-        "crude_fat_min": 0.1,
-        "crude_fiber_max": 1.0,
-        "moisture_max": 86.0,
-        "ash_max": 1.5
+        "crude_protein_min": 10.0,
+        "crude_fat_min": 1.5,
+        "crude_fiber_max": 0.5,
+        "moisture_max": 85.0,
+        "ash_max": 2.0
       },
       "guaranteed_analysis_basis": "as-fed",
       "calorie_content": "719 kcal/kg, 61 kcal/pouch"
