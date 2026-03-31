@@ -120,6 +120,7 @@ export function DatePickerInput({
             align="end"
             alignOffset={-8}
             sideOffset={10}
+            onFocusOutside={(e) => e.preventDefault()}
           >
             <Calendar
               mode="single"

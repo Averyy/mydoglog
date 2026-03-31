@@ -58,6 +58,39 @@ const CATEGORY_COLORS: Record<string, string> = {
   supplement: "var(--gantt-supplement-a)",
 }
 
+const ROW_HEIGHT = 18
+const ROW_GAP = 2
+
+/** Assign each bar to a lane so overlapping bars don't share the same row. */
+function assignLanes(bars: GanttBar[], timelineStart: string, timelineEnd: string): number[] {
+  const laneLast: { start: string; end: string }[] = []
+  const assignment: number[] = []
+
+  for (const bar of bars) {
+    const barStart = clampDate(bar.startDate, timelineStart, timelineEnd)
+    const barEnd = clampDate(bar.endDate, timelineStart, timelineEnd)
+    let placed = false
+    for (let lane = 0; lane < laneLast.length; lane++) {
+      const prev = laneLast[lane]
+      // Shares boundary date: only allow if the previous bar spans >1 day
+      // (trimEnd will shorten it by 1 day to create a visual gap)
+      const canTrim = prev.start < prev.end
+      if (barStart > prev.end || (barStart === prev.end && canTrim)) {
+        laneLast[lane] = { start: barStart, end: barEnd }
+        assignment.push(lane)
+        placed = true
+        break
+      }
+    }
+    if (!placed) {
+      laneLast.push({ start: barStart, end: barEnd })
+      assignment.push(laneLast.length - 1)
+    }
+  }
+
+  return assignment
+}
+
 // --- Tooltip ---
 
 interface TooltipState {
@@ -215,22 +248,41 @@ export function TimelineGantt({
   return (
     <div ref={containerRef} className={cn("ml-4 mr-2 space-y-1", className)}>
       {Array.from(groupedBars.entries()).map(([category, categoryBars]) => {
+        // Filter out bars clamped to a single day when a longer bar starts on the same date
+        // (redundant tail ends from a previous period peeking into the window)
+        const visibleBars = categoryBars.filter((bar) => {
+          const s = clampDate(bar.startDate, startDate, endDate)
+          const e = clampDate(bar.endDate, startDate, endDate)
+          if (s !== e) return true
+          return !categoryBars.some((other) =>
+            other !== bar &&
+            clampDate(other.startDate, startDate, endDate) <= s &&
+            clampDate(other.endDate, startDate, endDate) > e,
+          )
+        })
+
+        const lanes = assignLanes(visibleBars, startDate, endDate)
+        const laneCount = lanes.length > 0 ? Math.max(...lanes) + 1 : 1
+
         // Detect bars whose visual end overlaps with a later bar's start (same-day boundary).
         // Trim the earlier bar by 1 day so both bars are visible with a gap.
         const trimEnd = new Set<number>()
-        for (let i = 0; i < categoryBars.length; i++) {
-          const iEnd = clampDate(categoryBars[i].endDate, startDate, endDate)
-          const iStart = clampDate(categoryBars[i].startDate, startDate, endDate)
-          for (let j = i + 1; j < categoryBars.length; j++) {
-            const jStart = clampDate(categoryBars[j].startDate, startDate, endDate)
+        for (let i = 0; i < visibleBars.length; i++) {
+          const iEnd = clampDate(visibleBars[i].endDate, startDate, endDate)
+          const iStart = clampDate(visibleBars[i].startDate, startDate, endDate)
+          for (let j = i + 1; j < visibleBars.length; j++) {
+            const jStart = clampDate(visibleBars[j].startDate, startDate, endDate)
             if (jStart === iEnd && iStart < jStart) { trimEnd.add(i); break }
             if (jStart > iEnd) break
           }
         }
 
+        const totalHeight = laneCount * ROW_HEIGHT + (laneCount - 1) * ROW_GAP
+
         return (
-        <div key={category} className="relative h-[18px] rounded-sm overflow-hidden">
-          {categoryBars.map((bar, idx) => {
+        <div key={category} className="relative rounded-sm overflow-hidden" style={{ height: `${totalHeight}px` }}>
+          {visibleBars.map((bar, idx) => {
+            const lane = lanes[idx]
             const barStart = clampDate(bar.startDate, startDate, endDate)
             const barEnd = clampDate(bar.endDate, startDate, endDate)
             const leftPct = (daysBetween(startDate, barStart) / totalDays) * 100
@@ -242,10 +294,12 @@ export function TimelineGantt({
             return (
               <div
                 key={bar.id + "-" + idx}
-                className="absolute top-0 h-full flex items-center rounded-[3px] overflow-hidden cursor-default"
+                className="absolute flex items-center rounded-[3px] overflow-hidden cursor-default"
                 style={{
                   left: `${leftPct}%`,
                   width: `calc(${widthPct}% - 4px)`,
+                  top: `${lane * (ROW_HEIGHT + ROW_GAP)}px`,
+                  height: `${ROW_HEIGHT}px`,
                 }}
                 onMouseEnter={(e) => handleBarHover(bar, e)}
                 onMouseMove={(e) => handleBarHover(bar, e)}
