@@ -238,6 +238,33 @@ describe("resolveActivePlan", () => {
     // Before transition: new excluded, old selected
     expect(resolveActivePlan(periods, "2024-06-15", "2024-06-15T13:00:00Z")).toBe("old")
   })
+
+  it("same-instant switch: no gap between old and new plan", () => {
+    // Both plans share the same boundary datetime — the newer plan wins via createdAt
+    const periods: PlanPeriod[] = [
+      {
+        ...base,
+        planGroupId: "old",
+        endDate: "2024-06-15",
+        endDatetime: "2024-06-15T14:00:00Z",
+        createdAt: "2024-01-01T00:00:00Z",
+      },
+      {
+        ...base,
+        planGroupId: "new",
+        startDate: "2024-06-15",
+        startDatetime: "2024-06-15T14:00:00Z",
+        endDate: null,
+        createdAt: "2024-06-15T14:00:00Z",
+      },
+    ]
+    // At the exact boundary: both candidates — old wins (tier 2 date-range > tier 1 ongoing)
+    expect(resolveActivePlan(periods, "2024-06-15", "2024-06-15T14:00:00Z")).toBe("old")
+    // 1 second after: old excluded (datetime > endDatetime), new selected
+    expect(resolveActivePlan(periods, "2024-06-15", "2024-06-15T14:00:01Z")).toBe("new")
+    // Before switch: new excluded, old selected
+    expect(resolveActivePlan(periods, "2024-06-15", "2024-06-15T13:59:59Z")).toBe("old")
+  })
 })
 
 describe("parseDuration", () => {

@@ -172,8 +172,9 @@ export async function POST(
       const now = new Date()
       const oldPlanEndDate = transitionDays > 0 ? shiftDate(today, -1) : today
       const oldPlanEndDatetime = transitionDays > 0 ? null : now
-      // New plan starts 1 minute after old plan ends to avoid overlap
-      const newPlanStartDatetime = transitionDays > 0 ? null : new Date(now.getTime() + 60_000)
+      // New plan starts at the same instant — resolveActivePlan picks the newer
+      // plan via createdAt tiebreaker, so no gap where neither plan is active.
+      const newPlanStartDatetime = transitionDays > 0 ? null : now
 
       // Find existing ongoing plan group(s) with product details for transition
       const ongoingPeriods = await db
