@@ -3,17 +3,22 @@ import { db, dogs, dailyPollen } from "@/lib/db"
 import { eq, and, sql, desc } from "drizzle-orm"
 import { getToday } from "@/lib/utils"
 import {
-  HAMILTON_LOCATION_ID,
-  HAMILTON_LOCATION,
-  AEROBIOLOGY_PROVIDER,
-  VALID_SOURCES,
+  POLLEN_SPARR_BASE,
+  POLLEN_LAT,
+  POLLEN_LNG,
+  POLLEN_BACKFILL_START,
+  POLLEN_MAX_READINGS,
+  makeLocationSlug,
 } from "@/lib/pollen/constants"
 
-const POLLEN_SPARR_BASE = "https://pollen.mydoglog.ca"
-const BACKFILL_START = "2026-02-23" // earliest data available in pollen-sparr
-const MAX_READINGS = 1000 // sanity cap on readings per provider
-
 const DATE_REGEX = /^\d{4}-\d{2}-\d{2}$/
+
+interface PollenSparrSpecies {
+  name: string
+  scientific_name: string | null
+  type: string
+  level: number | null
+}
 
 interface PollenSparrReading {
   location_id: number
@@ -26,33 +31,36 @@ interface PollenSparrReading {
   total_weeds: number | null
   total_spores: number | null
   out_of_season: number
-  species: Array<{
-    name: string
-    scientific_name: string | null
-    type: string
-    level: number | null
-  }> | string[]
+  species: Array<PollenSparrSpecies> | string[]
 }
 
-interface ProviderConfig {
-  locationId: number
+interface PollenSparrLocation {
+  id: number
+  provider: string
+  external_id: string
+  name: string
+  province: string
+  lat: number
+  lng: number
+  distance_km?: number
+}
+
+interface ActiveStation {
+  id: number
   provider: string
   locationSlug: string
 }
 
-const PROVIDERS: ProviderConfig[] = [
-  { locationId: HAMILTON_LOCATION_ID, provider: AEROBIOLOGY_PROVIDER, locationSlug: HAMILTON_LOCATION },
-]
-
-function validateReading(reading: PollenSparrReading): boolean {
-  if (!DATE_REGEX.test(reading.date)) return false
-  if (typeof reading.pollen_level !== "number") return false
-  if (!VALID_SOURCES.has(reading.source)) return false
+function validateReading(reading: unknown): reading is PollenSparrReading {
+  if (typeof reading !== "object" || reading === null) return false
+  const r = reading as Record<string, unknown>
+  if (typeof r.date !== "string" || !DATE_REGEX.test(r.date)) return false
+  if (typeof r.pollen_level !== "number") return false
   return true
 }
 
 function mapTopAllergens(
-  species: PollenSparrReading["species"],
+  species: PollenSparrReading["species"] | undefined,
 ): Array<{ name: string; scientificName: string | null; type: string; level: number | null }> {
   if (!Array.isArray(species) || species.length === 0) return []
   return species
@@ -73,6 +81,24 @@ function mapTopAllergens(
     })
 }
 
+async function resolveNearestStation(): Promise<ActiveStation> {
+  const url = `${POLLEN_SPARR_BASE}/api/nearest?lat=${POLLEN_LAT}&lng=${POLLEN_LNG}`
+  const response = await fetch(url)
+  if (!response.ok) {
+    throw new Error(`nearest lookup failed: HTTP ${response.status}`)
+  }
+  const body = (await response.json()) as { location?: PollenSparrLocation }
+  const loc = body?.location
+  if (!loc || typeof loc.id !== "number" || typeof loc.provider !== "string") {
+    throw new Error("nearest lookup returned no usable location")
+  }
+  return {
+    id: loc.id,
+    provider: loc.provider,
+    locationSlug: makeLocationSlug(loc.name, loc.province),
+  }
+}
+
 async function getLastDate(provider: string, location: string): Promise<string | null> {
   const [row] = await db
     .select({ date: dailyPollen.date })
@@ -88,33 +114,57 @@ async function getLastDate(provider: string, location: string): Promise<string |
   return row?.date ?? null
 }
 
-async function fetchAndUpsert(config: ProviderConfig, today: string): Promise<{ status: string; processed: number; skipped: number }> {
-  const lastDate = await getLastDate(config.provider, config.locationSlug)
-  const fromDate = lastDate ?? BACKFILL_START
+async function fetchAndUpsert(
+  station: ActiveStation,
+  today: string,
+): Promise<{ status: string; provider: string; location: string; processed: number; skipped: number }> {
+  const lastDate = await getLastDate(station.provider, station.locationSlug)
+  const fromDate = lastDate ?? POLLEN_BACKFILL_START
 
-  const url = `${POLLEN_SPARR_BASE}/api/locations/${config.locationId}/readings?from=${fromDate}&to=${today}`
+  const url = `${POLLEN_SPARR_BASE}/api/locations/${station.id}/readings?from=${fromDate}&to=${today}`
   const response = await fetch(url)
 
   if (!response.ok) {
-    return { status: `error: HTTP ${response.status}`, processed: 0, skipped: 0 }
+    return {
+      status: `error: HTTP ${response.status}`,
+      provider: station.provider,
+      location: station.locationSlug,
+      processed: 0,
+      skipped: 0,
+    }
   }
 
-  const body = await response.json() as { readings?: PollenSparrReading[] } | PollenSparrReading[]
-  const readings = Array.isArray(body) ? body : (body.readings ?? [])
+  const body = (await response.json()) as { readings?: unknown[] } | unknown[]
+  const rawReadings: unknown[] = Array.isArray(body)
+    ? body
+    : Array.isArray(body?.readings)
+      ? body.readings
+      : []
 
-  if (readings.length === 0) {
-    return { status: "ok", processed: 0, skipped: 0 }
+  if (rawReadings.length === 0) {
+    return {
+      status: "ok",
+      provider: station.provider,
+      location: station.locationSlug,
+      processed: 0,
+      skipped: 0,
+    }
   }
 
-  if (readings.length > MAX_READINGS) {
-    return { status: `error: too many readings (${readings.length})`, processed: 0, skipped: 0 }
+  if (rawReadings.length > POLLEN_MAX_READINGS) {
+    return {
+      status: `error: too many readings (${rawReadings.length})`,
+      provider: station.provider,
+      location: station.locationSlug,
+      processed: 0,
+      skipped: 0,
+    }
   }
 
-  // Validate and collect rows
-  const validRows: Array<{ row: typeof dailyPollen.$inferInsert; source: string }> = []
+  const validRows: Array<{ row: typeof dailyPollen.$inferInsert }> = []
   let skipped = 0
 
-  for (const reading of readings) {
+  for (const reading of rawReadings) {
     if (!validateReading(reading)) {
       skipped++
       continue
@@ -122,8 +172,8 @@ async function fetchAndUpsert(config: ProviderConfig, today: string): Promise<{ 
 
     validRows.push({
       row: {
-        provider: config.provider,
-        location: config.locationSlug,
+        provider: station.provider,
+        location: station.locationSlug,
         date: reading.date,
         pollenLevel: reading.pollen_level,
         sporeLevel: reading.total_spores ?? null,
@@ -131,22 +181,29 @@ async function fetchAndUpsert(config: ProviderConfig, today: string): Promise<{ 
         totalGrasses: reading.total_grasses ?? null,
         totalWeeds: reading.total_weeds ?? null,
         topAllergens: mapTopAllergens(reading.species),
-        source: reading.source,
+        source: typeof reading.source === "string" ? reading.source : "unknown",
         outOfSeason: reading.out_of_season === 1,
       },
-      source: reading.source,
     })
   }
 
   if (validRows.length === 0) {
-    return { status: "ok", processed: 0, skipped }
+    return {
+      status: "ok",
+      provider: station.provider,
+      location: station.locationSlug,
+      processed: 0,
+      skipped,
+    }
   }
 
-  // Batch upsert: build multi-row VALUES clause
   const valuesClauses = validRows.map(({ row }) =>
     sql`(gen_random_uuid()::text, ${row.provider}, ${row.location}, ${row.date}, ${row.pollenLevel}, ${row.sporeLevel}, ${row.totalTrees}, ${row.totalGrasses}, ${row.totalWeeds}, ${JSON.stringify(row.topAllergens)}::jsonb, ${row.source}, ${row.outOfSeason}, now())`,
   )
 
+  // Prefer "actual" over forecast/today/etc. when re-upserting — actual readings
+  // never get overwritten by anything else. The "actual" label is the one stable
+  // source value we depend on; all other source strings flow through as-is.
   await db.execute(sql`
     INSERT INTO daily_pollen (
       id, provider, location, date, pollen_level, spore_level,
@@ -164,7 +221,13 @@ async function fetchAndUpsert(config: ProviderConfig, today: string): Promise<{ 
       out_of_season = CASE WHEN daily_pollen.source = 'actual' AND EXCLUDED.source != 'actual' THEN daily_pollen.out_of_season ELSE EXCLUDED.out_of_season END
   `)
 
-  return { status: "ok", processed: validRows.length, skipped }
+  return {
+    status: "ok",
+    provider: station.provider,
+    location: station.locationSlug,
+    processed: validRows.length,
+    skipped,
+  }
 }
 
 function formatError(reason: unknown): string {
@@ -174,7 +237,6 @@ function formatError(reason: unknown): string {
 
 export async function POST(request: NextRequest): Promise<NextResponse> {
   try {
-    // Verify CRON_SECRET
     const authHeader = request.headers.get("authorization")
     const cronSecret = process.env.CRON_SECRET
 
@@ -189,7 +251,6 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
       return NextResponse.json({ error: "Unauthorized" }, { status: 401 })
     }
 
-    // Check if any dog has environmentEnabled
     const [enabledDog] = await db
       .select({ id: dogs.id })
       .from(dogs)
@@ -202,18 +263,32 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
 
     const today = getToday()
 
-    // Fetch each configured provider in parallel
-    const results = await Promise.allSettled(
-      PROVIDERS.map((config) => fetchAndUpsert(config, today)),
-    )
+    let station: ActiveStation
+    try {
+      station = await resolveNearestStation()
+    } catch (error) {
+      return NextResponse.json(
+        { status: `error: ${formatError(error)}`, processed: 0, skipped: 0 },
+        { status: 502 },
+      )
+    }
 
-    const [aeroResult] = results
+    let result: Awaited<ReturnType<typeof fetchAndUpsert>>
+    try {
+      result = await fetchAndUpsert(station, today)
+    } catch (error) {
+      result = {
+        status: `error: ${formatError(error)}`,
+        provider: station.provider,
+        location: station.locationSlug,
+        processed: 0,
+        skipped: 0,
+      }
+    }
 
     return NextResponse.json({
-      pollenAero:
-        aeroResult.status === "fulfilled"
-          ? aeroResult.value
-          : { status: `error: ${formatError(aeroResult.reason)}`, processed: 0, skipped: 0 },
+      station: { provider: station.provider, location: station.locationSlug, id: station.id },
+      result,
     })
   } catch (error) {
     console.error("Pollen cron error:", error)

@@ -24,7 +24,6 @@ import { shiftDate, daysBetween } from "@/lib/date-utils"
 import { fetchCorrelationInput } from "@/lib/correlation/query"
 import { runCorrelation } from "@/lib/correlation/engine"
 import { DEFAULT_CORRELATION_OPTIONS } from "@/lib/correlation/types"
-import { AEROBIOLOGY_PROVIDER, HAMILTON_LOCATION } from "@/lib/pollen/constants"
 import { deduplicatePollenRows } from "@/lib/pollen/dedup"
 import {
   buildExportMarkdown,
@@ -244,7 +243,8 @@ export async function GET(
         ? db.select().from(ingredientCrossReactivity)
         : Promise.resolve([]),
 
-      // Pollen data in window (with 2-day lookback for rolling max)
+      // Pollen data in window (with 2-day lookback for rolling max).
+      // No provider/location filter — dedup picks the active station downstream.
       db
         .select({
           date: dailyPollen.date,
@@ -256,8 +256,6 @@ export async function GET(
         .from(dailyPollen)
         .where(
           and(
-            eq(dailyPollen.provider, AEROBIOLOGY_PROVIDER),
-            eq(dailyPollen.location, HAMILTON_LOCATION),
             gte(dailyPollen.date, shiftDate(windowStart, -2)),
             lte(dailyPollen.date, windowEnd),
           ),

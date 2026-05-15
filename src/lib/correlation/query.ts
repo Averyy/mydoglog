@@ -20,7 +20,6 @@ import {
   medicationProducts,
 } from "@/lib/db"
 import { eq, and, gte, lte, sql, asc } from "drizzle-orm"
-import { AEROBIOLOGY_PROVIDER, HAMILTON_LOCATION } from "@/lib/pollen/constants"
 import { deduplicatePollenRows } from "@/lib/pollen/dedup"
 
 import { shiftDate } from "@/lib/date-utils"
@@ -257,20 +256,19 @@ export async function fetchCorrelationInput(
           )
       : Promise.resolve([]),
 
-    // Pollen logs — Aerobiology Hamilton
-    // Fetch 2 extra days before windowStart for 3-day rolling max lookback
+    // Pollen logs — whichever station is currently active (resolved by dedup).
+    // Fetch 2 extra days before windowStart for 3-day rolling max lookback.
     db
       .select({
         date: dailyPollen.date,
         provider: dailyPollen.provider,
+        location: dailyPollen.location,
         pollenLevel: dailyPollen.pollenLevel,
         sporeLevel: dailyPollen.sporeLevel,
       })
       .from(dailyPollen)
       .where(
         and(
-          eq(dailyPollen.provider, AEROBIOLOGY_PROVIDER),
-          eq(dailyPollen.location, HAMILTON_LOCATION),
           gte(dailyPollen.date, shiftDate(windowStart, -2)),
           lte(dailyPollen.date, windowEnd),
         ),
