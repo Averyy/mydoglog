@@ -4,11 +4,8 @@ import { eq, and, sql, desc } from "drizzle-orm"
 import { getToday } from "@/lib/utils"
 import {
   HAMILTON_LOCATION_ID,
-  TWN_NIAGARA_LOCATION_ID,
   HAMILTON_LOCATION,
-  NIAGARA_LOCATION,
   AEROBIOLOGY_PROVIDER,
-  TWN_PROVIDER,
   VALID_SOURCES,
 } from "@/lib/pollen/constants"
 
@@ -45,7 +42,6 @@ interface ProviderConfig {
 
 const PROVIDERS: ProviderConfig[] = [
   { locationId: HAMILTON_LOCATION_ID, provider: AEROBIOLOGY_PROVIDER, locationSlug: HAMILTON_LOCATION },
-  { locationId: TWN_NIAGARA_LOCATION_ID, provider: TWN_PROVIDER, locationSlug: NIAGARA_LOCATION },
 ]
 
 function validateReading(reading: PollenSparrReading): boolean {
@@ -206,22 +202,18 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
 
     const today = getToday()
 
-    // Fetch both providers in parallel
+    // Fetch each configured provider in parallel
     const results = await Promise.allSettled(
       PROVIDERS.map((config) => fetchAndUpsert(config, today)),
     )
 
-    const [aeroResult, twnResult] = results
+    const [aeroResult] = results
 
     return NextResponse.json({
       pollenAero:
         aeroResult.status === "fulfilled"
           ? aeroResult.value
           : { status: `error: ${formatError(aeroResult.reason)}`, processed: 0, skipped: 0 },
-      pollenTwn:
-        twnResult.status === "fulfilled"
-          ? twnResult.value
-          : { status: `error: ${formatError(twnResult.reason)}`, processed: 0, skipped: 0 },
     })
   } catch (error) {
     console.error("Pollen cron error:", error)

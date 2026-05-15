@@ -37,6 +37,17 @@ const NAV_LINKS: NavItem[] = [
   { label: "Insights", icon: LiaLightbulbSolid, dogHref: (slug) => `/${slug}/insights` },
 ]
 
+// Top-level routes that own the URL prefix but are not dog slugs
+const RESERVED_PREFIXES = new Set(["", "login", "signup", "settings", "dogs", "api", "test-inputs"])
+
+/** Extract dog slug from current pathname when on a /[slug]/* route. */
+function useUrlSlug(): string | null {
+  const pathname = usePathname()
+  const first = pathname.split("/")[1] ?? ""
+  if (RESERVED_PREFIXES.has(first)) return null
+  return first
+}
+
 function resolveHref(link: NavItem, activeDogSlug: string | null): string {
   if (link.href) return link.href
   if (link.dogHref && activeDogSlug) return link.dogHref(activeDogSlug)
@@ -67,11 +78,13 @@ function ThemeToggle(): React.ReactElement {
 export function DesktopNavLinks(): React.ReactElement {
   const pathname = usePathname()
   const { activeDogSlug } = useActiveDog()
+  const urlSlug = useUrlSlug()
+  const slug = urlSlug ?? activeDogSlug
 
   return (
     <nav className="flex items-center gap-8 text-sm text-text-secondary">
       {NAV_LINKS.filter((link) => !link.prominent).map((link) => {
-        const href = resolveHref(link, activeDogSlug)
+        const href = resolveHref(link, slug)
 
         return (
           <Link
@@ -87,7 +100,7 @@ export function DesktopNavLinks(): React.ReactElement {
         )
       })}
       <Link
-        href={activeDogSlug ? `/${activeDogSlug}/compare` : "/"}
+        href={slug ? `/${slug}/compare` : "/"}
         className={cn(
           "transition-colors hover:text-text-primary",
           pathname.endsWith("/compare") && "text-text-primary font-medium",
@@ -134,6 +147,8 @@ function MenuThemeToggle(): React.ReactElement {
 export function BottomNav(): React.ReactElement {
   const pathname = usePathname()
   const { activeDogId, activeDogSlug, setLogMode } = useActiveDog()
+  const urlSlug = useUrlSlug()
+  const slug = urlSlug ?? activeDogSlug
   const [menuOpen, setMenuOpen] = useState(false)
   const [mounted, setMounted] = useState(false)
   useEffect(() => setMounted(true), [])
@@ -147,10 +162,10 @@ export function BottomNav(): React.ReactElement {
   }
 
   const homeHref = "/"
-  const foodHref = activeDogSlug ? `/${activeDogSlug}/food` : "/"
-  const insightsHref = activeDogSlug ? `/${activeDogSlug}/insights` : "/"
-  const medsHref = activeDogSlug ? `/${activeDogSlug}/meds` : "/"
-  const compareHref = activeDogSlug ? `/${activeDogSlug}/compare` : "/"
+  const foodHref = slug ? `/${slug}/food` : "/"
+  const insightsHref = slug ? `/${slug}/insights` : "/"
+  const medsHref = slug ? `/${slug}/meds` : "/"
+  const compareHref = slug ? `/${slug}/compare` : "/"
 
   return (
     <nav className="fixed inset-x-0 bottom-0 z-50 border-t border-border bg-bg-primary md:hidden">

@@ -19,8 +19,8 @@ import {
   medications,
   medicationProducts,
 } from "@/lib/db"
-import { eq, and, gte, lte, sql, asc, or } from "drizzle-orm"
-import { AEROBIOLOGY_PROVIDER, TWN_PROVIDER, HAMILTON_LOCATION, NIAGARA_LOCATION } from "@/lib/pollen/constants"
+import { eq, and, gte, lte, sql, asc } from "drizzle-orm"
+import { AEROBIOLOGY_PROVIDER, HAMILTON_LOCATION } from "@/lib/pollen/constants"
 import { deduplicatePollenRows } from "@/lib/pollen/dedup"
 
 import { shiftDate } from "@/lib/date-utils"
@@ -257,7 +257,7 @@ export async function fetchCorrelationInput(
           )
       : Promise.resolve([]),
 
-    // Pollen logs — prefer Aero, fall back to TWN for days without Aero
+    // Pollen logs — Aerobiology Hamilton
     // Fetch 2 extra days before windowStart for 3-day rolling max lookback
     db
       .select({
@@ -269,10 +269,8 @@ export async function fetchCorrelationInput(
       .from(dailyPollen)
       .where(
         and(
-          or(
-            and(eq(dailyPollen.provider, AEROBIOLOGY_PROVIDER), eq(dailyPollen.location, HAMILTON_LOCATION)),
-            and(eq(dailyPollen.provider, TWN_PROVIDER), eq(dailyPollen.location, NIAGARA_LOCATION)),
-          ),
+          eq(dailyPollen.provider, AEROBIOLOGY_PROVIDER),
+          eq(dailyPollen.location, HAMILTON_LOCATION),
           gte(dailyPollen.date, shiftDate(windowStart, -2)),
           lte(dailyPollen.date, windowEnd),
         ),

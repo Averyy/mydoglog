@@ -17,14 +17,14 @@ import {
   dailyPollen,
   ingredientCrossReactivity,
 } from "@/lib/db"
-import { eq, and, gte, lte, asc, desc, sql, or } from "drizzle-orm"
+import { eq, and, gte, lte, asc, desc, sql } from "drizzle-orm"
 import { getToday } from "@/lib/utils"
 import { resolveMedicationFlags } from "@/lib/medications"
 import { shiftDate, daysBetween } from "@/lib/date-utils"
 import { fetchCorrelationInput } from "@/lib/correlation/query"
 import { runCorrelation } from "@/lib/correlation/engine"
 import { DEFAULT_CORRELATION_OPTIONS } from "@/lib/correlation/types"
-import { AEROBIOLOGY_PROVIDER, TWN_PROVIDER, HAMILTON_LOCATION, NIAGARA_LOCATION } from "@/lib/pollen/constants"
+import { AEROBIOLOGY_PROVIDER, HAMILTON_LOCATION } from "@/lib/pollen/constants"
 import { deduplicatePollenRows } from "@/lib/pollen/dedup"
 import {
   buildExportMarkdown,
@@ -256,10 +256,8 @@ export async function GET(
         .from(dailyPollen)
         .where(
           and(
-            or(
-              and(eq(dailyPollen.provider, AEROBIOLOGY_PROVIDER), eq(dailyPollen.location, HAMILTON_LOCATION)),
-              and(eq(dailyPollen.provider, TWN_PROVIDER), eq(dailyPollen.location, NIAGARA_LOCATION)),
-            ),
+            eq(dailyPollen.provider, AEROBIOLOGY_PROVIDER),
+            eq(dailyPollen.location, HAMILTON_LOCATION),
             gte(dailyPollen.date, shiftDate(windowStart, -2)),
             lte(dailyPollen.date, windowEnd),
           ),

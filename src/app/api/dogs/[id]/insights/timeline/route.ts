@@ -16,7 +16,7 @@ import { DOSING_INTERVAL_LABELS } from "@/lib/labels"
 import { eq, and, gte, lte, min, or, isNull } from "drizzle-orm"
 import { getToday } from "@/lib/utils"
 import { shiftDate } from "@/lib/date-utils"
-import { AEROBIOLOGY_PROVIDER, TWN_PROVIDER, HAMILTON_LOCATION, NIAGARA_LOCATION } from "@/lib/pollen/constants"
+import { AEROBIOLOGY_PROVIDER, HAMILTON_LOCATION } from "@/lib/pollen/constants"
 import { deduplicatePollenRows } from "@/lib/pollen/dedup"
 import { isValidRange, RANGE_OFFSETS, INDIVIDUAL_RANGES } from "@/lib/timeline-types"
 import type { TimelineRange, GanttBarData } from "@/lib/timeline-types"
@@ -94,10 +94,8 @@ export async function GET(
           .select({ date: dailyPollen.date, provider: dailyPollen.provider, pollenLevel: dailyPollen.pollenLevel, sporeLevel: dailyPollen.sporeLevel })
           .from(dailyPollen)
           .where(and(
-            or(
-              and(eq(dailyPollen.provider, AEROBIOLOGY_PROVIDER), eq(dailyPollen.location, HAMILTON_LOCATION)),
-              and(eq(dailyPollen.provider, TWN_PROVIDER), eq(dailyPollen.location, NIAGARA_LOCATION)),
-            ),
+            eq(dailyPollen.provider, AEROBIOLOGY_PROVIDER),
+            eq(dailyPollen.location, HAMILTON_LOCATION),
             gte(dailyPollen.date, windowStart),
             lte(dailyPollen.date, today),
           )),
@@ -160,7 +158,7 @@ export async function GET(
           .where(and(eq(feedingPeriods.dogId, dogId), eq(feedingPeriods.isBackfill, true))),
       ])
 
-    // --- Pollen: prefer Aero, fall back to TWN for days without Aero data ---
+    // --- Pollen: dedupe across providers (no-op with a single provider today) ---
     const dedupedPollenRows = deduplicatePollenRows(pollenRows)
 
     const dailyPollenMap = computeDailyMaxPollen(dedupedPollenRows, windowStart, today)
