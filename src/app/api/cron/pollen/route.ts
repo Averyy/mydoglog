@@ -3,7 +3,6 @@ import { db, dogs, dailyPollen } from "@/lib/db"
 import { eq, and, sql, desc } from "drizzle-orm"
 import { getToday } from "@/lib/utils"
 import {
-  POLLEN_SPARR_BASE,
   POLLEN_LAT,
   POLLEN_LNG,
   POLLEN_BACKFILL_START,
@@ -11,13 +10,33 @@ import {
   makeLocationSlug,
 } from "@/lib/pollen/constants"
 
+const DEFAULT_BASE_URL = "https://api.pawpollen.com"
+
+function getBaseUrl(): string {
+  return process.env.POLLEN_SPARR_BASE_URL ?? DEFAULT_BASE_URL
+}
+
+function getApiKey(): string {
+  return process.env.POLLEN_SPARR_API_KEY ?? ""
+}
+
 const DATE_REGEX = /^\d{4}-\d{2}-\d{2}$/
+
+type Bucket = "trees" | "grasses" | "weeds" | "spores"
+const BUCKETS: ReadonlyArray<Bucket> = ["trees", "grasses", "weeds", "spores"]
 
 interface PollenSparrSpecies {
   name: string
   scientific_name: string | null
-  type: string
   level: number | null
+  raw_count?: number | null
+  provider_code?: string | null
+  extras?: Record<string, unknown> | null
+}
+
+interface PollenSparrCategory {
+  level: number | null
+  species?: PollenSparrSpecies[]
 }
 
 interface PollenSparrReading {
@@ -25,13 +44,10 @@ interface PollenSparrReading {
   date: string
   provider: string
   source: string
-  pollen_level: number
-  total_trees: number | null
-  total_grasses: number | null
-  total_weeds: number | null
-  total_spores: number | null
-  out_of_season: number
-  species: Array<PollenSparrSpecies> | string[]
+  data_type: string
+  scale_basis: string
+  overall_level: number | null
+  categories: Partial<Record<Bucket, PollenSparrCategory>> | null
 }
 
 interface PollenSparrLocation {
@@ -39,10 +55,15 @@ interface PollenSparrLocation {
   provider: string
   external_id: string
   name: string
-  province: string
+  country_code: string
+  region: string
   lat: number
   lng: number
+  status?: string | null
+  last_reading_date?: string | null
   distance_km?: number
+  data_type?: string
+  scale_basis?: string
 }
 
 interface ActiveStation {
@@ -51,51 +72,80 @@ interface ActiveStation {
   locationSlug: string
 }
 
+type FlattenedAllergen = {
+  name: string
+  scientificName: string | null
+  type: Bucket
+  level: number | null
+}
+
+function pollenSparrFetch(path: string): Promise<Response> {
+  return fetch(`${getBaseUrl()}${path}`, {
+    headers: {
+      "X-API-Key": getApiKey(),
+      Accept: "application/json",
+    },
+  })
+}
+
 function validateReading(reading: unknown): reading is PollenSparrReading {
   if (typeof reading !== "object" || reading === null) return false
   const r = reading as Record<string, unknown>
   if (typeof r.date !== "string" || !DATE_REGEX.test(r.date)) return false
-  if (typeof r.pollen_level !== "number") return false
+  if (r.overall_level !== null && typeof r.overall_level !== "number") return false
+  if (r.categories !== null && (typeof r.categories !== "object" || Array.isArray(r.categories))) {
+    return false
+  }
   return true
 }
 
-function mapTopAllergens(
-  species: PollenSparrReading["species"] | undefined,
-): Array<{ name: string; scientificName: string | null; type: string; level: number | null }> {
-  if (!Array.isArray(species) || species.length === 0) return []
-  return species
-    .filter((s) => {
-      if (typeof s === "string") return true
-      return s.level != null && s.level > 0
-    })
-    .map((s) => {
-      if (typeof s === "string") {
-        return { name: s, scientificName: null, type: "pollen", level: null }
-      }
-      return {
+function getBucketLevel(
+  categories: PollenSparrReading["categories"],
+  bucket: Bucket,
+): number | null {
+  const cat = categories?.[bucket]
+  if (!cat) return null
+  return typeof cat.level === "number" ? cat.level : null
+}
+
+function flattenAllergens(
+  categories: PollenSparrReading["categories"],
+): FlattenedAllergen[] {
+  if (!categories) return []
+  const out: FlattenedAllergen[] = []
+  for (const bucket of BUCKETS) {
+    const cat = categories[bucket]
+    if (!cat || !Array.isArray(cat.species)) continue
+    for (const s of cat.species) {
+      if (s.level == null || s.level <= 0) continue
+      out.push({
         name: s.name,
-        scientificName: s.scientific_name,
-        type: s.type,
+        scientificName: s.scientific_name ?? null,
+        type: bucket,
         level: s.level,
-      }
-    })
+      })
+    }
+  }
+  return out
 }
 
 async function resolveNearestStation(): Promise<ActiveStation> {
-  const url = `${POLLEN_SPARR_BASE}/api/nearest?lat=${POLLEN_LAT}&lng=${POLLEN_LNG}`
-  const response = await fetch(url)
+  // Default sort is `tier_then_distance` so results[0] is the closest measured
+  // station (preferred), falling back to modelled if no measured is in range.
+  const url = `/api/nearest?lat=${POLLEN_LAT}&lng=${POLLEN_LNG}`
+  const response = await pollenSparrFetch(url)
   if (!response.ok) {
     throw new Error(`nearest lookup failed: HTTP ${response.status}`)
   }
-  const body = (await response.json()) as { location?: PollenSparrLocation }
-  const loc = body?.location
+  const body = (await response.json()) as { results?: PollenSparrLocation[] }
+  const loc = body?.results?.[0]
   if (!loc || typeof loc.id !== "number" || typeof loc.provider !== "string") {
     throw new Error("nearest lookup returned no usable location")
   }
   return {
     id: loc.id,
     provider: loc.provider,
-    locationSlug: makeLocationSlug(loc.name, loc.province),
+    locationSlug: makeLocationSlug(loc.name, loc.region),
   }
 }
 
@@ -121,8 +171,8 @@ async function fetchAndUpsert(
   const lastDate = await getLastDate(station.provider, station.locationSlug)
   const fromDate = lastDate ?? POLLEN_BACKFILL_START
 
-  const url = `${POLLEN_SPARR_BASE}/api/locations/${station.id}/readings?from=${fromDate}&to=${today}`
-  const response = await fetch(url)
+  const url = `/api/locations/${station.id}/readings?from=${fromDate}&to=${today}`
+  const response = await pollenSparrFetch(url)
 
   if (!response.ok) {
     return {
@@ -134,12 +184,8 @@ async function fetchAndUpsert(
     }
   }
 
-  const body = (await response.json()) as { readings?: unknown[] } | unknown[]
-  const rawReadings: unknown[] = Array.isArray(body)
-    ? body
-    : Array.isArray(body?.readings)
-      ? body.readings
-      : []
+  const body = (await response.json()) as { readings?: unknown[] }
+  const rawReadings: unknown[] = Array.isArray(body?.readings) ? body.readings : []
 
   if (rawReadings.length === 0) {
     return {
@@ -175,14 +221,14 @@ async function fetchAndUpsert(
         provider: station.provider,
         location: station.locationSlug,
         date: reading.date,
-        pollenLevel: reading.pollen_level,
-        sporeLevel: reading.total_spores ?? null,
-        totalTrees: reading.total_trees ?? null,
-        totalGrasses: reading.total_grasses ?? null,
-        totalWeeds: reading.total_weeds ?? null,
-        topAllergens: mapTopAllergens(reading.species),
+        pollenLevel: reading.overall_level ?? 0,
+        sporeLevel: getBucketLevel(reading.categories, "spores"),
+        totalTrees: getBucketLevel(reading.categories, "trees"),
+        totalGrasses: getBucketLevel(reading.categories, "grasses"),
+        totalWeeds: getBucketLevel(reading.categories, "weeds"),
+        topAllergens: flattenAllergens(reading.categories),
         source: typeof reading.source === "string" ? reading.source : "unknown",
-        outOfSeason: reading.out_of_season === 1,
+        outOfSeason: false,
       },
     })
   }
@@ -249,6 +295,13 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
 
     if (authHeader !== `Bearer ${cronSecret}`) {
       return NextResponse.json({ error: "Unauthorized" }, { status: 401 })
+    }
+
+    if (!getApiKey()) {
+      return NextResponse.json(
+        { error: "POLLEN_SPARR_API_KEY not configured" },
+        { status: 500 },
+      )
     }
 
     const [enabledDog] = await db

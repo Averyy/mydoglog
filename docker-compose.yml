@@ -34,6 +34,8 @@ services:
       BETTER_AUTH_URL: ${BETTER_AUTH_URL:-https://mydoglog.ca}
       NEXT_PUBLIC_BETTER_AUTH_URL: ${NEXT_PUBLIC_BETTER_AUTH_URL:-https://mydoglog.ca}
       CRON_SECRET: ${CRON_SECRET:?error}
+      POLLEN_SPARR_BASE_URL: ${POLLEN_SPARR_BASE_URL:-http://pollen-sparr:6500}
+      POLLEN_SPARR_API_KEY: ${POLLEN_SPARR_API_KEY:?error}
       NODE_ENV: production
     ports:
       - "127.0.0.1:3847:3847"  # Only expose to localhost (Caddy proxies)
